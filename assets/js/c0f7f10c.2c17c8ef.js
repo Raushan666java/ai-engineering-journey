@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-12-bhakti-yoga-md-c0f.json
-const site_docs_courses_bhagavad_gita_12_bhakti_yoga_md_c0f_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/12-bhakti-yoga","title":"Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home","description":"\\"You do not need to become perfect before you love. Love is not the reward at the end of the road — love is the road itself.\\"","source":"@site/docs/courses/bhagavad-gita/12-bhakti-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/12-bhakti-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/12-bhakti-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":13,"frontMatter":{"id":"12-bhakti-yoga","slug":"/bhagavad-gita/12-bhakti-yoga","title":"Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home","sidebar_label":"Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home","sidebar_position":13},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body","permalink":"/ai-engineering-journey/bhagavad-gita/11-vishvarupa-darshana-yoga"},"next":{"title":"Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower","permalink":"/ai-engineering-journey/bhagavad-gita/13-kshetra-kshetrajna-yoga"}}');
+const site_docs_courses_bhagavad_gita_12_bhakti_yoga_md_c0f_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/12-bhakti-yoga","title":"Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home","description":"\\"You do not need to become perfect before you love. Love is not the reward at the end of the road — love is the road itself.\\"","source":"@site/docs/courses/bhagavad-gita/12-bhakti-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/12-bhakti-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/12-bhakti-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":12,"frontMatter":{"id":"12-bhakti-yoga","slug":"/bhagavad-gita/12-bhakti-yoga","title":"Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home","sidebar_label":"Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home","sidebar_position":12},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body","permalink":"/ai-engineering-journey/bhagavad-gita/11-vishvarupa-darshana-yoga"},"next":{"title":"Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower","permalink":"/ai-engineering-journey/bhagavad-gita/13-kshetra-kshetrajna-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/12-bhakti-yoga',
 	title: 'Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home',
 	sidebar_label: 'Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home',
-	sidebar_position: 13
+	sidebar_position: 12
 };
 const contentTitle = 'Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home';
 
@@ -182,6 +182,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Devotion Ladder",
   "id": "typescript-tool-devotion-ladder",
   "level": 2
@@ -221,7 +225,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"You do not need to become perfect before you love. Love is not the reward at the end of the road — love is the road itself.\"\r\n— The Osho Way"
+        children: "\"You do not need to become perfect before you love. Love is not the reward at the end of the road — love is the road itself.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "The battlefield has gone quiet. Krishna has spoken eleven chapters of fire: about duty, about the deathless Self, about the vision of cosmic form that made Arjuna's hair stand on end. And now, after all that thunder, Arjuna asks a simple question. Not about philosophy, not about strategy. He asks: \"Which is the better Yogi — the one who worships You with love, or the one who meditates on the formless, the invisible, the unmanifested?\" (12.1)"
@@ -392,7 +396,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.1 — The Question That Comes from the Heart"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nएवं सततयुक्ता ये भक्तास्त्वां पर्युपासते |\r\nये चाप्यक्षरमव्यक्तं तेषां के योगवित्तमाः |"
+        children: "अर्जुन उवाच |\nएवं सततयुक्ता ये भक्तास्त्वां पर्युपासते |\nये चाप्यक्षरमव्यक्तं तेषां के योगवित्तमाः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -413,7 +417,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.2 — The Best in Union Are the Lovers"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nमय्यावेश्य मनो ये मां नित्ययुक्ता उपासते |\r\nश्रद्धया परयोपेताः ते मे युक्ततमा मताः |"
+        children: "श्रीभगवानुवाच |\nमय्यावेश्य मनो ये मां नित्ययुक्ता उपासते |\nश्रद्धया परयोपेताः ते मे युक्ततमा मताः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -434,7 +438,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.3 — The Unmanifested That Cannot Be Pointed To"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ये त्वक्षरमनिर्देश्यमव्यक्तं पर्युपासते |\r\nसर्वत्रगमचिन्त्यञ्च कूटस्थमचलन्ध्रुवम् |"
+        children: "ये त्वक्षरमनिर्देश्यमव्यक्तं पर्युपासते |\nसर्वत्रगमचिन्त्यञ्च कूटस्थमचलन्ध्रुवम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -453,7 +457,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.4 — Restrained Senses, Even Mind, Welfare of All"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सन्नियम्येन्द्रियग्रामं सर्वत्र समबुद्धयः |\r\nते प्राप्नुवन्ति मामेव सर्वभूतहिते रताः |"
+        children: "सन्नियम्येन्द्रियग्रामं सर्वत्र समबुद्धयः |\nते प्राप्नुवन्ति मामेव सर्वभूतहिते रताः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -474,7 +478,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.5 — The Hard Road of the Formless"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम् |\r\nअव्यक्ता हि गतिर्दुःखं देहवद्भिरवाप्यते |"
+        children: "क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम् |\nअव्यक्ता हि गतिर्दुःखं देहवद्भिरवाप्यते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -495,7 +499,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.6 — Renouncing All in Me, Meditating With One Point"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ये तु सर्वाणि कर्माणि मयि संन्यस्य मत्परः |\r\nअनन्येनैव योगेन मां ध्यायन्त उपासते |"
+        children: "ये तु सर्वाणि कर्माणि मयि संन्यस्य मत्परः |\nअनन्येनैव योगेन मां ध्यायन्त उपासते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -516,7 +520,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.7 — The Beloved Lifts You From the Ocean"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तेषामहं समुद्धर्ता मृत्युसंसारसागरात् |\r\nभवामि नचिरात्पार्थ मय्यावेशितचेतसाम् |"
+        children: "तेषामहं समुद्धर्ता मृत्युसंसारसागरात् |\nभवामि नचिरात्पार्थ मय्यावेशितचेतसाम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -537,7 +541,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.8 — Fix the Mind, Dwell in Me"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मय्येव मन आधत्स्व मयि बुद्धिं निवेशय |\r\nनिवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः |"
+        children: "मय्येव मन आधत्स्व मयि बुद्धिं निवेशय |\nनिवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -556,7 +560,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.9 — If You Cannot, Practice"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अथ चित्तं समाधातुं न शक्नोषि मयि स्थिरम् |\r\nअभ्यासयोगेन ततो मामिच्छाप्तुं धनञ्जय |"
+        children: "अथ चित्तं समाधातुं न शक्नोषि मयि स्थिरम् |\nअभ्यासयोगेन ततो मामिच्छाप्तुं धनञ्जय |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -575,7 +579,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.10 — If Not Even Practice, Act for Me"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अभ्यासेऽप्यसमर्थोऽसि मत्कर्मपरमो भव |\r\nमदर्थमपि कर्माणि कुर्वन्सिद्धिमवाप्स्यसि |"
+        children: "अभ्यासेऽप्यसमर्थोऽसि मत्कर्मपरमो भव |\nमदर्थमपि कर्माणि कुर्वन्सिद्धिमवाप्स्यसि |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -594,7 +598,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.11 — The Easiest: Renounce the Fruits"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अथैतदप्यशक्तोऽसि कर्तुं मद्योगमाश्रितः |\r\nसर्वकर्मफलत्यागं ततः कुरु यतात्मवान् |"
+        children: "अथैतदप्यशक्तोऽसि कर्तुं मद्योगमाश्रितः |\nसर्वकर्मफलत्यागं ततः कुरु यतात्मवान् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -607,6 +611,10 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Osho Darshan:"
+      }), " The master meets the student where he stands: if you cannot fix the mind on God, then at least renounce the fruit. Even partial surrender works. Osho notes the kindness of this step-down: the Gita does not demand perfection; it offers a ladder. The key word is \"taking refuge\" — you are not asked to be strong alone; you are asked to lean on the whole. Leaning is not weakness; it is wisdom."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
       }), " The fourth rung is the most practical teaching ever given to a working human being: do what you must, but let go of the result. Osho says this is the real liberation — not renouncing the world, but renouncing the ", (0,jsx_runtime.jsx)(_components.em, {
         children: "demand"
       }), " the world makes on you: the demand for a guaranteed outcome. When the fruits are renounced, desire loses its handle on the mind, and the mind, no longer bribed or threatened, becomes calm of its own accord. Note the order of the ladder: even the highest meditation is finally served by this simple, radical letting-go of results."]
@@ -615,8 +623,20 @@ function _createMdxContent(props) {
       children: "Shloka 12.12 — Knowledge, Then Meditation, Then Renunciation, Then Peace"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते |\r\nध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम् |"
+        children: "श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते |\nध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम् |"
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " śreyo hi jñānamabhyāsāj jñānād dhyānaṃ viśiṣyate . dhyānāt karmaphalatyāgas tyāgāc chāntir anantaram"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " \"Better than mere knowledge is practice; better than practice is meditation; better than meditation is renunciation of the fruits of action — from renunciation comes peace immediately.\""]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " This is the Gita's hierarchy of spiritual effort: knowledge, practice, meditation, renunciation — and the summit is peace. Osho notes that the peace does not come from renunciation of action but from renunciation of fruit — and the word \"immediately\" is the promise: when you stop clinging to outcomes, peace does not arrive after a delay; it is the natural state that was always there, now uncovered."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Transliteration:"
@@ -636,7 +656,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.13 — He Who Hates No Creature"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च |\r\nनिर्ममो निरहङ्कारः समदुःखसुखः क्षमी |"
+        children: "अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च |\nनिर्ममो निरहङ्कारः समदुःखसुखः क्षमी |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -657,7 +677,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.14 — Content, Steady, Dedicated"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सन्तुष्टः सततं योगी यतात्मा दृढनिश्चयः |\r\nमय्यर्पितमनोबुद्धिर्यो मद्भक्तः स मे प्रियः |"
+        children: "सन्तुष्टः सततं योगी यतात्मा दृढनिश्चयः |\nमय्यर्पितमनोबुद्धिर्यो मद्भक्तः स मे प्रियः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -678,7 +698,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.15 — Neither Agitating Nor Agitated"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः |\r\nहर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः |"
+        children: "यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः |\nहर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -692,12 +712,18 @@ function _createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Osho Darshan:"
       }), " A remarkable double condition: the devotee does not disturb the world, and the world does not disturb him. Osho sees this as the definition of true harmlessness — it is not merely that you refrain from hurting; it is that your very presence gives rest, because you are no longer vibrating with demand. And because he is free from the four waves — elation, resentment, fear, worry — the world's praise and blame wash over him like weather over a mountain. The mountain is not indifferent; it is simply too deep to be moved by storms. That is the peace of the one who is dear."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "For the Engineer:"
+        }), " \"Not disturbing the world\" is the engineering principle of minimal impact: your code should not create new problems while solving existing ones. \"The world not disturbing you\" is the ability to absorb production incidents without panic — the SRE's calm during an outage is the devotee's equanimity in a different form. Both require the same skill: watching the storm without becoming it. The engineer who panics during an outage makes the outage worse; the engineer who watches calmly sees the solution faster. This is not mysticism; it is the neuroscience of stress response under pressure."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "shloka-1216--wantless-pure-expert-unconcerned",
       children: "Shloka 12.16 — Wantless, Pure, Expert, Unconcerned"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अनपेक्षः शुचिर्दक्ष उदासीनो गतव्यथः |\r\nसर्वारम्भपरित्यागी यो मद्भक्तः स मे प्रियः |"
+        children: "अनपेक्षः शुचिर्दक्ष उदासीनो गतव्यथः |\nसर्वारम्भपरित्यागी यो मद्भक्तः स मे प्रियः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -707,6 +733,10 @@ function _createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Translation:"
       }), " \"He who is free from wants, pure, skilled, unconcerned, free from pain, renouncing all new undertakings — that devotee of Mine who is thus, is dear to Me.\""]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " \"Renouncing all new undertakings\" is not inaction — it is the end of the ego's hunger for novelty, for achievement, for becoming. The skilled devotee acts when the action is called for, but does not manufacture projects to feed the sense of self. Osho's insight: the most dangerous attachment is not to old things but to new ambitions — the ego lives in the future, and renouncing new undertakings is renouncing the ego's favorite hiding place."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Osho Darshan:"
@@ -720,7 +750,25 @@ function _createMdxContent(props) {
       children: "Shloka 12.17 — Beyond Joy, Hate, Grief, Desire"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यो न हृष्यति न द्वेष्टि न शोचति न काङ्क्षति |\r\nशुभाशुभपरित्यागी भक्तिमान्यः स मे प्रियः |"
+        children: "यो न हृष्यति न द्वेष्टि न शोचति न काङ्क्षति |\nशुभाशुभपरित्यागी भक्तिमान्यः स मे प्रियः |"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " yo na hṛṣyati na dveṣṭi na śocati na kāṅkṣati . śubhāśubhaparityāgī bhaktimānyaḥ sa me priyaḥ"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " \"He who neither rejoices nor hates, nor grieves nor desires, having renounced good and evil — that devotee of Mine is dear to Me.\""]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " \"Renounced good and evil\" is the most dangerous phrase in the chapter — dangerous because it is so easily misunderstood. Osho is clear: this is not moral indifference; it is the end of the ego's habit of sorting experience into \"mine\" and \"not mine.\" The devotee still acts wisely, but no longer clings to the label of \"good\" or recoils from the label of \"evil.\" When you stop sorting, you see reality directly — and direct seeing is the beginning of wisdom."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "For the Engineer:"
+        }), " \"Renounced good and evil\" in engineering terms: stop labeling code as \"good\" or \"bad\" and start seeing it as \"working\" or \"not working for this context.\" The best code review is the one that sees the code without the emotional charge of \"who wrote this.\" When you renounce the good-evil label, you can see the actual behavior of the system — and that is what debugging requires."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -741,7 +789,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.18 — Equal to Friend and Foe"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "समः शत्रौ च मित्रे च तथा मानापमानयोः |\r\nशीतोष्णसुखदुःखेषु समः सङ्गविवर्जितः |"
+        children: "समः शत्रौ च मित्रे च तथा मानापमानयोः |\nशीतोष्णसुखदुःखेषु समः सङ्गविवर्जितः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -757,12 +805,18 @@ function _createMdxContent(props) {
       }), " The pairs keep multiplying — friend/foe, honor/dishonor, cold/heat, pleasure/pain — and Osho says that is the point: the world is made of pairs, and the devotee has stepped behind the pair-maker. Equality here is not indifference; it is a deeper taste, the taste of the witness who knows both flavors of the same salt. \"Free from attachment\" — ", (0,jsx_runtime.jsx)(_components.em, {
         children: "sanga-vivarjita"
       }), " — is the secret of the equality: you can remain equal to the pairs only when nothing of yours is invested in either side. Unattached, nothing can buy you; nothing can insult you; the world has lost its power to hook."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "For the Engineer:"
+        }), " \"Equal to friend and foe\" is the code review principle: review the code, not the person. \"Equal to honor and dishonor\" is the production incident principle: debug the system, not the blame. \"Free from attachment\" is the deployment principle: ship the feature, then let the metrics speak. The devotee's equanimity is the SRE's calm during a page-3 outage."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "shloka-1219--silence-contentment-the-homeless-heart",
       children: "Shloka 12.19 — Silence, Contentment, the Homeless Heart"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तुल्यनिन्दास्तुतिर्मौनी सन्तुष्टो येन केनचित् |\r\nअनिकेतः स्थिरमतिर्भक्तिमान्मे प्रियो नरः |"
+        children: "तुल्यनिन्दास्तुतिर्मौनी सन्तुष्टो येन केनचित् |\nअनिकेतः स्थिरमतिर्भक्तिमान्मे प्रियो नरः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -787,7 +841,7 @@ function _createMdxContent(props) {
       children: "Shloka 12.20 — The Immortal Dharma and Its Followers"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ये तु धर्म्यामृतमिदं यथोक्तं पर्युपासते |\r\nश्रद्दधाना मत्परमा भक्तास्तेऽतीव मे प्रियाः |"
+        children: "ये तु धर्म्यामृतमिदं यथोक्तं पर्युपासते |\nश्रद्दधाना मत्परमा भक्तास्तेऽतीव मे प्रियाः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -892,13 +946,121 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Compassion Science and Loving-Kindness Meditation"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Chapter 12 is the Gita's shortest chapter and its most heart-centered — the portrait of the devotee (12.13-12.20). Modern ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "compassion science"
+        }), " (Lutz et al., 2008) and ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "loving-kindness meditation"
+        }), " (Fredrickson et al., 2008) show that the qualities Krishna describes — friendliness, compassion, equanimity, no \"mine\" — are not just virtues but trainable neural states that produce measurable well-being improvements."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Hating no creature, friendly, compassionate (12.13)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Loving-kindness meditation (Fredrickson et al., 2008)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "7 weeks of loving-kindness practice increases positive emotions, social connection, and vagal tone — the body's relaxation response"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Equal to friend and foe (12.18)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Equanimity research (Desbordes et al., 2015)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Equanimity is not indifference but balanced awareness — the brain's threat response is reduced while compassion remains active"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "No \"mine,\" no ego (12.13)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Self-distancing (Kross et al., 2014)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Viewing the self from a third-person perspective reduces emotional reactivity and improves decision-making — the Gita's \"no mine\" is a cognitive technique"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The unagitated devotee (12.15-12.17)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Vagal tone (Porges, 2011)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "High vagal tone correlates with emotional regulation, social engagement, and calm presence — the physiological marker of the \"unagitated\" devotee"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Renunciation of fruits brings peace immediately (12.12)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Letting go research (Hayes et al., 2006)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Acceptance and Commitment Therapy shows that psychological flexibility — willingness to experience discomfort without avoidance — produces immediate well-being gains"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The devotee who hates no creature (12.13)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Compassion cultivation (Lutz et al., 2008)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Long-term compassion meditation practice changes brain structure: increased activity in the insula and temporal-parietal junction — the neural substrates of empathy and perspective-taking"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Being alike in pleasure and pain (12.14)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Emotional granularity (Barrett, 2006)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The ability to differentiate emotions finely — not just \"bad\" but specifically \"frustrated\" or \"disappointed\" — correlates with better regulation. The devotee's equanimity is not suppression but refined emotional awareness"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Forgiving, satisfied, self-controlled (12.13-12.14)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Distress tolerance (Simons & Gaher, 2005)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The capacity to endure emotional distress without impulsive reaction — a core predictor of long-term well-being and relationship stability"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " For one week, practice the loving-kindness meditation: silently wish \"may you be happy\" to five people each day — a friend, a neutral person, a difficult person, yourself, and all beings. Notice whether the quality of your attention shifts by the end of the week. This is the devotee's portrait in action."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Practical Bridge:"
+        }), " In engineering, the devotee's qualities translate directly to team dynamics. \"Hating no creature\" (12.13) means engaging with every teammate — including the difficult ones — without aversion. \"Equal to friend and foe\" (12.18) means reviewing code with the same standards whether it is written by a friend or a stranger. \"No mine\" (12.13) means sharing credit without grasping. These are not soft skills; they are the hard skills of effective collaboration."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The devotee's portrait of Chapter 12 is the fulfillment of Chapter 2's sthitaprajna (2.54-2.72) — the same equanimity, the same non-reactivity, the same stability. Chapter 2 describes it as wisdom; Chapter 12 describes it as love. They are the same state seen from different angles. Chapter 9's secret knowledge (9.1-9.4) is the intellectual path to this same state; Chapter 12 is the emotional path. Chapter 13's recognition of the field and the knower (13.1-13.4) is the structural understanding; Chapter 12 is the felt experience. The four paths — knowledge, action, meditation, and love — converge here. This convergence is not accidental; the Gita's architecture is deliberate. Each chapter adds a facet to the same diamond, and Chapter 12 is the facet that catches the most light because it is the most human — love is the language the heart understands without translation."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Why This Matters:"
+        }), " Chapter 12 is the Gita's most accessible chapter for modern readers because it speaks the language of relationships — friendliness, compassion, equanimity, \"dear to Me.\" These are not abstract virtues; they are the daily skills of effective collaboration, emotional regulation, and team leadership."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[Arjuna's question: which way of worship is best?] --> B{The two roads}\r\n    B -->|Formless path| C[Hard for embodied beings]\r\n    B -->|Path of love| D[Fix mind on the beloved]\r\n    D --> E[Practice when the mind wanders]\r\n    E --> F[Act as offering when practice fails]\r\n    F --> G[Renounce the fruits of all action]\r\n    G --> H[Peace follows immediately]\r\n    H --> I[The devotee: hate none, befriend all]\r\n    I --> J[Equality in praise and blame]\r\n    J --> K[Silent, content, homeless, steady]\r\n    K --> L[Exceedingly dear to the divine]\r\n    style L fill:#4446e8,color:#fff\r\n    style B fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[Arjuna's question: which way of worship is best?] --> B{The two roads}\n    B -->|Formless path| C[Hard for embodied beings]\n    B -->|Path of love| D[Fix mind on the beloved]\n    D --> E[Practice when the mind wanders]\n    E --> F[Act as offering when practice fails]\n    F --> G[Renounce the fruits of all action]\n    G --> H[Peace follows immediately]\n    H --> I[The devotee: hate none, befriend all]\n    I --> J[Equality in praise and blame]\n    J --> K[Silent, content, homeless, steady]\n    K --> L[Exceedingly dear to the divine]\n    style L fill:#4446e8,color:#fff\n    style B fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -906,7 +1068,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root((Bhakti Yoga))\r\n    Arjuna's question\r\n      Manifest worship vs formless\r\n    Krishna's verdict\r\n      Lovers are the best in union\r\n    The graded ladder\r\n      Fix the mind\r\n      Practice\r\n      Act as offering\r\n      Renounce fruits\r\n      Peace follows\r\n    The portrait of the devotee\r\n      Hates no creature\r\n      Friendly and compassionate\r\n      Free from ego and mine\r\n      Balanced in pleasure and pain\r\n      Not agitating the world\r\n      Praise and blame equal\r\n      Silent and content\r\n      Homeless and steady\r\n    The closing promise\r\n      Immortal dharma\r\n      Exceedingly dear\n"
+        children: "mindmap\n  root((Bhakti Yoga))\n    Arjuna's question\n      Manifest worship vs formless\n    Krishna's verdict\n      Lovers are the best in union\n    The graded ladder\n      Fix the mind\n      Practice\n      Act as offering\n      Renounce fruits\n      Peace follows\n    The portrait of the devotee\n      Hates no creature\n      Friendly and compassionate\n      Free from ego and mine\n      Balanced in pleasure and pain\n      Not agitating the world\n      Praise and blame equal\n      Silent and content\n      Homeless and steady\n    The closing promise\n      Immortal dharma\n      Exceedingly dear\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1007,67 +1169,53 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q3. Which verse promises \"peace follows immediately\" after a certain practice?"
+        children: "Q3. Krishna's devotee portrait (12.13-12.20) describes qualities like friendliness, compassion, and equanimity. How does modern compassion science (Lutz et al., 2008) explain why these qualities produce well-being?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. 12.8 — fixing the mind"
+        children: "a. They don't — compassion is a weakness"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. 12.12 — renunciation of the fruits of action"
+        children: "b. Loving-kindness meditation increases positive emotions, social connection, and vagal tone (the body's relaxation response) — the devotee's qualities are not just virtues but trainable neural states"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. 12.15 — not agitating the world"
+        children: "c. They only work in religious communities"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. 12.20 — following the immortal dharma"
+        children: "d. They are genetic traits that cannot be learned"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
       "data-qid": "bg12-q3",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
         children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        })
+        }), " Fredrickson et al. (2008) showed that 7 weeks of loving-kindness practice increases positive emotions, social connection, and vagal tone. Lutz et al. (2008) found that compassion training activates brain regions associated with empathy and emotional regulation. The devotee's portrait is not just spiritual advice — it is a description of trainable neural states that produce measurable well-being improvements."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q4. In the portrait of the devotee (12.13–12.20), which pair of qualities appears FIRST?"
+        children: "Q5. Chapter 12 is the shortest chapter in the Gita. Why is the shortest chapter also the most transformative, and what does this say about the relationship between simplicity and depth?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Silence and contentment"
+        children: "a. The shortest chapter is the least important"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Praise and blame held equal"
+        children: "b. Simplicity is the hallmark of the deepest truth — the devotee's portrait requires no philosophy, no argument, just the qualities of the heart. The shortest chapter is the most transformative because it bypasses the intellect and speaks directly to the being"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Hating no creature, being friendly and compassionate"
+        children: "c. Krishna ran out of things to say"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Homelessness and steady mind"
+        children: "d. The shorter the chapter, the less true it is"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
-      "data-qid": "bg12-q4",
+      "data-qid": "bg12-q5",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
         children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: c."
-        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer: b."
+        }), " The brevity of Chapter 12 is itself a teaching: the deepest truth is simple. The devotee's portrait (12.13-12.20) requires no philosophical argument — just friendliness, compassion, equanimity. This simplicity is why it is transformative: it bypasses the intellect's tendency to complicate and speaks directly to the being's capacity to love."]
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q5. What does the word \"aniketa\" (homeless) signify in 12.19, in the Osho reading?"
-      })
-    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. That the devotee must wander as a beggar"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. That the devotee's home is presence itself, not a place or role"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. That the devotee has been exiled from his kingdom"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. That the devotee avoids all human contact"
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+    }), "\n- a. That the devotee must wander as a beggar\n- b. That the devotee's home is presence itself, not a place or role\n- c. That the devotee has been exiled from his kingdom\n- d. That the devotee avoids all human contact\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
       "data-qid": "bg12-q5",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
@@ -1118,13 +1266,30 @@ function _createMdxContent(props) {
           children: "TypeScript exercise."
         }), " Extend the tool below so that each of the three \"if you cannot\" rungs (practice, offering, renunciation) accepts a list of personal excuses, and the tool gently turns each excuse into an Osho-style reframe instead of a verdict."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The devotion ladder in learning:"
+        }), " When you cannot master a concept directly (12.8), practice it repeatedly (12.9). When practice fails, teach it to someone else (12.10 — offering). When even that fails, let go of needing to master it (12.12 — renunciation). The ladder is a learning strategy, not just a spiritual one."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Compassion in code review:"
+        }), " The devotee's portrait (12.13-12.20) — friendliness, compassion, no \"mine\" — is the foundation of constructive code review. When you review without ego, the code improves and the relationship strengthens."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Equanimity in deployment:"
+        }), " Deploy with full effort but without attachment to the outcome. If it works, celebrate. If it fails, debug. Either way, the equanimity of the devotee (12.18) keeps you functional."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-devotion-ladder",
       children: "TypeScript Tool: Devotion Ladder"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/**\r\n * Devotion Ladder — Chapter 12, Bhakti Yoga\r\n *\r\n * Krishna's graded path (12.8-12.12) says: if you cannot fix the mind,\r\n * practice; if not practice, act as offering; if not even that, renounce\r\n * the fruits. This tool takes a modern seeker's confession of current\r\n * practice and returns the next honest rung, in the spirit of the chapter:\r\n * no judgement, only the next step toward peace.\r\n */\r\n\r\ninterface PracticeProfile {\r\n  name: string;\r\n  canStillMind: boolean;   // 12.8 — can you rest the mind in the beloved?\r\n  canPractice: boolean;    // 12.9 — can you practice daily, however weakly?\r\n  canOfferWork: boolean;   // 12.10 — can you act as if work is an offering?\r\n  canDropFruits: boolean;  // 12.11 — can you renounce the results of action?\r\n}\r\n\r\ninterface LadderRung {\r\n  shloka: string;\r\n  title: string;\r\n  instruction: string;\r\n  oshoNudge: string;\r\n}\r\n\r\nconst LADDER: LadderRung[] = [\r\n  {\r\n    shloka: \"12.8\",\r\n    title: \"Fix the mind\",\r\n    instruction: \"Place mind and intellect in the beloved alone.\",\r\n    oshoNudge: \"No effort here, only love. Ask: who am I thinking for?\"\r\n  },\r\n  {\r\n    shloka: \"12.9\",\r\n    title: \"Constant practice\",\r\n    instruction: \"Bring the wandering mind back, a thousand times.\",\r\n    oshoNudge: \"The mind is a puppy, not an enemy. Patience is the yoga.\"\r\n  },\r\n  {\r\n    shloka: \"12.10\",\r\n    title: \"Action as offering\",\r\n    instruction: \"Do your work as a gift, not as a contract.\",\r\n    oshoNudge: \"You cannot always meditate, but you always work. Offer it.\"\r\n  },\r\n  {\r\n    shloka: \"12.11\",\r\n    title: \"Renounce the fruits\",\r\n    instruction: \"Act with full care and zero demand on the outcome.\",\r\n    oshoNudge: \"Letting go of the result is the easiest rung — and the one that brings peace at once.\"\r\n  }\r\n];\r\n\r\nfunction nextRung(profile: PracticeProfile): LadderRung {\r\n  if (profile.canStillMind) return LADDER[0];\r\n  if (profile.canPractice) return LADDER[1];\r\n  if (profile.canOfferWork) return LADDER[2];\r\n  return LADDER[3];\r\n}\r\n\r\nfunction showPath(profile: PracticeProfile): string[] {\r\n  const start = LADDER.indexOf(nextRung(profile));\r\n  const lines: string[] = [];\r\n  for (let i = start; i < LADDER.length; i++) {\r\n    lines.push(`${LADDER[i].shloka} ${LADDER[i].title} — ${LADDER[i].instruction}`);\r\n  }\r\n  return lines;\r\n}\r\n\r\nconst arjuna: PracticeProfile = {\r\n  name: \"Modern Arjuna\",\r\n  canStillMind: false,\r\n  canPractice: false,\r\n  canOfferWork: true,\r\n  canDropFruits: false,\r\n};\r\n\r\nconsole.log(`Next rung for ${arjuna.name}: ${nextRung(arjuna).shloka} — ${nextRung(arjuna).title}`);\r\nconsole.log(nextRung(arjuna).oshoNudge);\r\nconsole.log(\"Full path from here:\", showPath(arjuna).join(\" | \"));\n"
+        children: "/**\n * Devotion Ladder — Compassion Science Edition\n * Based on Bhakti Yoga (Gita 12.8-12.12) and compassion\n * science (Lutz et al., 2008): the qualities of the devotee\n * are trainable neural states. The graded path maps to the\n * neuroscience of skill acquisition — from explicit effort\n * to automatic expression.\n *\n * Run: npx ts-node devotion-ladder.ts\n */\n\ninterface PracticeProfile {\n  name: string;\n  canStillMind: boolean;\n  canPractice: boolean;\n  canOfferWork: boolean;\n  canDropFruits: boolean;\n  weeklyCompassionMinutes: number;  // loving-kindness practice\n  vagalToneScore: number;           // 0–10: emotional regulation proxy\n}\n\ninterface LadderRung {\n  shloka: string;\n  title: string;\n  instruction: string;\n  neuroscience: string;\n}\n\nconst LADDER: LadderRung[] = [\n  {\n    shloka: '12.8',\n    title: 'Fix the mind',\n    instruction: 'Place mind and intellect in the beloved alone.',\n    neuroscience: 'Default mode network suppression — the brain quiets self-referential processing (Brewer et al., 2011)'\n  },\n  {\n    shloka: '12.9',\n    title: 'Constant practice',\n    instruction: 'Bring the wandering mind back, a thousand times.',\n    neuroscience: 'Neuroplasticity — each return strengthens prefrontal attention networks (Lazar et al., 2005)'\n  },\n  {\n    shloka: '12.10',\n    title: 'Action as offering',\n    instruction: 'Do your work as a gift, not as a contract.',\n    neuroscience: 'Oxytocin release — acts of giving activate the bonding system (Kosfeld et al., 2005)'\n  },\n  {\n    shloka: '12.11',\n    title: 'Renounce the fruits',\n    instruction: 'Act with full care and zero demand on the outcome.',\n    neuroscience: 'Psychological flexibility — acceptance of outcomes reduces anxiety (Hayes et al., 2006)'\n  }\n];\n\nfunction nextRung(profile: PracticeProfile): LadderRung {\n  if (profile.canStillMind) return LADDER[0];\n  if (profile.canPractice) return LADDER[1];\n  if (profile.canOfferWork) return LADDER[2];\n  return LADDER[3];\n}\n\nfunction compassionIndex(profile: PracticeProfile): number {\n  const practiceScore = Math.min(5, Math.round(profile.weeklyCompassionMinutes / 10));\n  const vagalScore = profile.vagalToneScore;\n  return Math.min(10, Math.round(practiceScore * 0.5 + vagalScore * 0.5));\n}\n\nfunction showPath(profile: PracticeProfile): string[] {\n  const start = LADDER.indexOf(nextRung(profile));\n  return LADDER.slice(start).map((r) => `${r.shloka} ${r.title} — ${r.neuroscience}`);\n}\n\nconst arjuna: PracticeProfile = {\n  name: 'Modern Arjuna',\n  canStillMind: false,\n  canPractice: false,\n  canOfferWork: true,\n  canDropFruits: false,\n  weeklyCompassionMinutes: 20,\n  vagalToneScore: 5\n};\n\nconst rung = nextRung(arjuna);\nconst compassion = compassionIndex(arjuna);\n\nconsole.log('=== Devotion Ladder ===');\nconsole.log(`Next rung for ${arjuna.name}: ${rung.shloka} — ${rung.title}`);\nconsole.log(`Instruction: ${rung.instruction}`);\nconsole.log(`Neuroscience: ${rung.neuroscience}`);\nconsole.log(`Compassion index: ${compassion}/10`);\nconsole.log(`Full path: ${showPath(arjuna).join(' → ')}`);\n"
       })
     })]
   });

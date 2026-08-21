@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-11-vishvarupa-darshana-yoga-md-41e.json
-const site_docs_courses_bhagavad_gita_11_vishvarupa_darshana_yoga_md_41e_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/11-vishvarupa-darshana-yoga","title":"Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body","description":"\\"When the one becomes visible as the all, the small self trembles — and in that trembling, the great self is born.\\"","source":"@site/docs/courses/bhagavad-gita/11-vishvarupa-darshana-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/11-vishvarupa-darshana-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/11-vishvarupa-darshana-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":12,"frontMatter":{"id":"11-vishvarupa-darshana-yoga","slug":"/bhagavad-gita/11-vishvarupa-darshana-yoga","title":"Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body","sidebar_label":"Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body","sidebar_position":12},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name","permalink":"/ai-engineering-journey/bhagavad-gita/10-vibhuti-yoga"},"next":{"title":"Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home","permalink":"/ai-engineering-journey/bhagavad-gita/12-bhakti-yoga"}}');
+const site_docs_courses_bhagavad_gita_11_vishvarupa_darshana_yoga_md_41e_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/11-vishvarupa-darshana-yoga","title":"Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body","description":"\\"When the one becomes visible as the all, the small self trembles — and in that trembling, the great self is born.\\"","source":"@site/docs/courses/bhagavad-gita/11-vishvarupa-darshana-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/11-vishvarupa-darshana-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/11-vishvarupa-darshana-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":11,"frontMatter":{"id":"11-vishvarupa-darshana-yoga","slug":"/bhagavad-gita/11-vishvarupa-darshana-yoga","title":"Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body","sidebar_label":"Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body","sidebar_position":11},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name","permalink":"/ai-engineering-journey/bhagavad-gita/10-vibhuti-yoga"},"next":{"title":"Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home","permalink":"/ai-engineering-journey/bhagavad-gita/12-bhakti-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/11-vishvarupa-darshana-yoga',
 	title: 'Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body',
 	sidebar_label: 'Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body',
-	sidebar_position: 12
+	sidebar_position: 11
 };
 const contentTitle = 'Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body';
 
@@ -322,6 +322,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Vishvarupa Vision Log",
   "id": "typescript-tool-vishvarupa-vision-log",
   "level": 2
@@ -360,7 +364,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"When the one becomes visible as the all, the small self trembles — and in that trembling, the great self is born.\"\r\n— The Osho Way"
+        children: "\"When the one becomes visible as the all, the small self trembles — and in that trembling, the great self is born.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Arjuna has been listening for ten chapters. He has heard about the unborn, the beginningless, the source of all. His mind is convinced, his heart is in love — but there is still a distance between him and the truth. He has understood with words; he has not yet seen. And so, at the peak of his devotion, he asks for the impossible: show me your divine form. Krishna grants the request as only a teacher in love could — he gives Arjuna a divine eye, and the whole universe opens like a flower inside a single body. This is the most photographed moment in the Gita: the vishvarupa, the cosmic form, with a thousand mouths and a thousand suns."
@@ -515,7 +519,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.1 — My Delusion Is Gone"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nमदनुग्रहाय परमं गुह्यमध्यात्मसंज्ञितम् |\r\nयत्त्वयोक्तं वचस्तेन मोहोऽयं विगतो मम"
+        children: "अर्जुन उवाच |\nमदनुग्रहाय परमं गुह्यमध्यात्मसंज्ञितम् |\nयत्त्वयोक्तं वचस्तेन मोहोऽयं विगतो मम"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -534,7 +538,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.2 — Origin and Destruction Heard in Detail"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "भवाप्ययौ हि भूतानां श्रुतौ विस्तरशो मया |\r\nत्वत्तः कमलपत्राक्ष माहात्म्यमपि चाव्ययम्"
+        children: "भवाप्ययौ हि भूतानां श्रुतौ विस्तरशो मया |\nत्वत्तः कमलपत्राक्ष माहात्म्यमपि चाव्ययम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -553,7 +557,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.3 — I Wish to See Your Divine Form"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "एवमेतद्यथात्थ त्वमात्मानं परमेश्वर |\r\nद्रष्टुमिच्छामि ते रूपमैश्वरं पुरुषोत्तम"
+        children: "एवमेतद्यथात्थ त्वमात्मानं परमेश्वर |\nद्रष्टुमिच्छामि ते रूपमैश्वरं पुरुषोत्तम"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -572,7 +576,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.4 — Show Me Your Imperishable Self"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मन्यसे यदि तच्छक्यं मया द्रष्टुमिति प्रभो |\r\nयोगेश्वर ततो मे त्वं दर्शयात्मानमव्ययम्"
+        children: "मन्यसे यदि तच्छक्यं मया द्रष्टुमिति प्रभो |\nयोगेश्वर ततो मे त्वं दर्शयात्मानमव्ययम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -591,7 +595,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.5 — Behold My Forms by Hundreds and Thousands"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nपश्य मे पार्थ रूपाणि शतशोऽथ सहस्रशः |\r\nनानाविधानि दिव्यानि नानावर्णाकृतीनि च"
+        children: "श्रीभगवानुवाच |\nपश्य मे पार्थ रूपाणि शतशोऽथ सहस्रशः |\nनानाविधानि दिव्यानि नानावर्णाकृतीनि च"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -610,7 +614,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.6 — The Gods and the Wonders Never Seen"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "पश्यादित्यान्वसून्रुद्रानश्विनौ मरुतस्तथा |\r\nबहून्यदृष्टपूर्वाणि पश्याश्चर्याणि भारत"
+        children: "पश्यादित्यान्वसून्रुद्रानश्विनौ मरुतस्तथा |\nबहून्यदृष्टपूर्वाणि पश्याश्चर्याणि भारत"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -629,7 +633,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.7 — The Whole Universe in One Body"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "इहैकस्थं जगत्कृत्स्नं पश्याद्य सचराचरम् |\r\nमम देहे गुडाकेश यच्चान्यद् द्रष्टुमिच्छसि"
+        children: "इहैकस्थं जगत्कृत्स्नं पश्याद्य सचराचरम् |\nमम देहे गुडाकेश यच्चान्यद् द्रष्टुमिच्छसि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -648,7 +652,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.8 — I Give You the Divine Eye"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न तु मां शक्यसे द्रष्टुमनेनैव स्वचक्षुषा |\r\nदिव्यं ददामि ते चक्षुः पश्य मे योगमैश्वरम्"
+        children: "न तु मां शक्यसे द्रष्टुमनेनैव स्वचक्षुषा |\nदिव्यं ददामि ते चक्षुः पश्य मे योगमैश्वरम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -667,7 +671,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.9 — The Great Lord of Yoga Shows the Form"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सञ्जय उवाच |\r\nएवमुक्त्वा ततो राजन्महायोगेश्वरो हरिः |\r\nदर्शयामास पार्थाय परमं रूपमैश्वरम्"
+        children: "सञ्जय उवाच |\nएवमुक्त्वा ततो राजन्महायोगेश्वरो हरिः |\nदर्शयामास पार्थाय परमं रूपमैश्वरम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -686,7 +690,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.10 — Countless Mouths and Eyes"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अनेकवक्त्रनयनमनेकाद्भुतदर्शनम् |\r\nअनेकदिव्याभरणं दिव्यानेकोद्यतायुधम्"
+        children: "अनेकवक्त्रनयनमनेकाद्भुतदर्शनम् |\nअनेकदिव्याभरणं दिव्यानेकोद्यतायुधम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -705,7 +709,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.11 — Divine Garlands, Infinite Faces"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "दिव्यमाल्याम्बरधरं दिव्यगन्धानुलेपनम् |\r\nसर्वाश्चर्यमयं देवमनन्तं विश्वतोमुखम्"
+        children: "दिव्यमाल्याम्बरधरं दिव्यगन्धानुलेपनम् |\nसर्वाश्चर्यमयं देवमनन्तं विश्वतोमुखम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -724,7 +728,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.12 — A Thousand Suns Rising Together"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता |\r\nयदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः"
+        children: "दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता |\nयदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -743,7 +747,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.13 — The Whole Universe Resting in One"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तत्रैकस्थं जगत्कृत्स्नं प्रविभक्तमनेकधा |\r\nअपश्यद्देवदेवस्य शरीरे पाण्डवस्तदा"
+        children: "तत्रैकस्थं जगत्कृत्स्नं प्रविभक्तमनेकधा |\nअपश्यद्देवदेवस्य शरीरे पाण्डवस्तदा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -762,7 +766,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.14 — Hair Standing on End"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ततः स विस्मयाविष्टो हृष्टरोमा धनञ्जयः |\r\nप्रणम्य शिरसा देवं कृताञ्जलिरभाषत"
+        children: "ततः स विस्मयाविष्टो हृष्टरोमा धनञ्जयः |\nप्रणम्य शिरसा देवं कृताञ्जलिरभाषत"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -781,7 +785,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.15 — All Gods, Brahma, Sages and Serpents"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nपश्यामि देवांस्तव देव देहे\r\nसर्वांस्तथा भूतविशेषसङ्घान् |\r\nब्रह्माणमीशं कमलासनस्थ-\r\nमृषींश्च सर्वानुरगांश्च दिव्यान्"
+        children: "अर्जुन उवाच |\nपश्यामि देवांस्तव देव देहे\nसर्वांस्तथा भूतविशेषसङ्घान् |\nब्रह्माणमीशं कमलासनस्थ-\nमृषींश्च सर्वानुरगांश्च दिव्यान्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -800,7 +804,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.16 — Neither End, Middle, nor Beginning"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अनेकबाहूदरवक्त्रनेत्रं\r\nपश्यामि त्वां सर्वतोऽनन्तरूपम् |\r\nनान्तं न मध्यं न पुनस्तवादिं\r\nपश्यामि विश्वेश्वर विश्वरूप"
+        children: "अनेकबाहूदरवक्त्रनेत्रं\nपश्यामि त्वां सर्वतोऽनन्तरूपम् |\nनान्तं न मध्यं न पुनस्तवादिं\nपश्यामि विश्वेश्वर विश्वरूप"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -819,7 +823,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.17 — Diadem, Mace, Discus, Mass of Radiance"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "किरीटिनं गदिनं चक्रिणं च\r\nतेजोराशिं सर्वतो दीप्तिमन्तम् |\r\nपश्यामि त्वां दुर्निरीक्ष्यं समन्ताद्\r\nदीप्तानलार्कद्युतिमप्रमेयम्"
+        children: "किरीटिनं गदिनं चक्रिणं च\nतेजोराशिं सर्वतो दीप्तिमन्तम् |\nपश्यामि त्वां दुर्निरीक्ष्यं समन्ताद्\nदीप्तानलार्कद्युतिमप्रमेयम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -838,7 +842,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.18 — The Imperishable, the Treasure-House of the Universe"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "त्वमक्षरं परमं वेदितव्यं\r\nत्वमस्य विश्वस्य परं निधानम् |\r\nत्वमव्ययः शाश्वतधर्मगोप्ता\r\nसनातनस्त्वं पुरुषो मतो मे"
+        children: "त्वमक्षरं परमं वेदितव्यं\nत्वमस्य विश्वस्य परं निधानम् |\nत्वमव्ययः शाश्वतधर्मगोप्ता\nसनातनस्त्वं पुरुषो मतो मे"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -857,7 +861,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.19 — Without Beginning, Middle or End"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अनादिमध्यान्तमनन्तवीर्य-\r\nमनन्तबाहुं शशिसूर्यनेत्रम् |\r\nपश्यामि त्वां दीप्तहुताशवक्त्रं\r\nस्वतेजसा विश्वमिदं तपन्तम्"
+        children: "अनादिमध्यान्तमनन्तवीर्य-\nमनन्तबाहुं शशिसूर्यनेत्रम् |\nपश्यामि त्वां दीप्तहुताशवक्त्रं\nस्वतेजसा विश्वमिदं तपन्तम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -876,7 +880,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.20 — The Three Worlds Tremble"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "द्यावापृथिव्योरिदमन्तरं हि\r\nव्याप्तं त्वयैकेन दिशश्च सर्वाः |\r\nदृष्ट्वाद्भुतं रूपमुग्रं तवेदं\r\nलोकत्रयं प्रव्यथितं महात्मन्"
+        children: "द्यावापृथिव्योरिदमन्तरं हि\nव्याप्तं त्वयैकेन दिशश्च सर्वाः |\nदृष्ट्वाद्भुतं रूपमुग्रं तवेदं\nलोकत्रयं प्रव्यथितं महात्मन्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -895,7 +899,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.21 — The Hosts of Gods Enter You"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अमी हि त्वां सुरसङ्घा विशन्ति\r\nकेचिद्भीताः प्राञ्जलयो गृणन्ति |\r\nस्वस्तीत्युक्त्वा महर्षिसिद्धसङ्घाः\r\nस्तुवन्ति त्वां स्तुतिभिः पुष्कलाभिः"
+        children: "अमी हि त्वां सुरसङ्घा विशन्ति\nकेचिद्भीताः प्राञ्जलयो गृणन्ति |\nस्वस्तीत्युक्त्वा महर्षिसिद्धसङ्घाः\nस्तुवन्ति त्वां स्तुतिभिः पुष्कलाभिः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -914,7 +918,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.22 — All Orders of Beings Gaze in Wonder"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "रुद्रादित्या वसवो ये च साध्या\r\nविश्वेऽश्विनौ मरुतश्चोष्मपाश्च |\r\nगन्धर्वयक्षासुरसिद्धसङ्घा\r\nवीक्षन्ते त्वां विस्मिताश्चैव सर्वे"
+        children: "रुद्रादित्या वसवो ये च साध्या\nविश्वेऽश्विनौ मरुतश्चोष्मपाश्च |\nगन्धर्वयक्षासुरसिद्धसङ्घा\nवीक्षन्ते त्वां विस्मिताश्चैव सर्वे"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -933,7 +937,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.23 — The Worlds Are Terrified, and So Am I"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "रूपं महत्ते बहुवक्त्रनेत्रं\r\nमहाबाहो बहुबाहूरुपादम् |\r\nबहूदरं बहुदंष्ट्राकरालं\r\nदृष्ट्वा लोकाः प्रव्यथितास्तथाहम्"
+        children: "रूपं महत्ते बहुवक्त्रनेत्रं\nमहाबाहो बहुबाहूरुपादम् |\nबहूदरं बहुदंष्ट्राकरालं\nदृष्ट्वा लोकाः प्रव्यथितास्तथाहम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -952,7 +956,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.24 — No Courage, No Peace"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नभःस्पृशं दीप्तमनेकवर्णं\r\nव्यात्ताननं दीप्तविशालनेत्रम् |\r\nदृष्ट्वा हि त्वां प्रव्यथितान्तरात्मा\r\nधृतिं न विन्दामि शमं च विष्णो"
+        children: "नभःस्पृशं दीप्तमनेकवर्णं\nव्यात्ताननं दीप्तविशालनेत्रम् |\nदृष्ट्वा हि त्वां प्रव्यथितान्तरात्मा\nधृतिं न विन्दामि शमं च विष्णो"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -971,7 +975,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.25 — Have Mercy, O Lord of Gods"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "दंष्ट्राकरालानि च ते मुखानि\r\nदृष्ट्वैव कालानलसन्निभानि |\r\nदिशो न जाने न लभे च शर्म\r\nप्रसीद देवेश जगन्निवास"
+        children: "दंष्ट्राकरालानि च ते मुखानि\nदृष्ट्वैव कालानलसन्निभानि |\nदिशो न जाने न लभे च शर्म\nप्रसीद देवेश जगन्निवास"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -990,7 +994,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.26 — The Sons of Dhritarashtra and the Heroes"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अमी च त्वां धृतराष्ट्रस्य पुत्राः\r\nसर्वे सहैवावनिपालसङ्घैः |\r\nभीष्मो द्रोणः सूतपुत्रस्तथासौ\r\nसहास्मदीयैरपि योधमुख्यैः"
+        children: "अमी च त्वां धृतराष्ट्रस्य पुत्राः\nसर्वे सहैवावनिपालसङ्घैः |\nभीष्मो द्रोणः सूतपुत्रस्तथासौ\nसहास्मदीयैरपि योधमुख्यैः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1009,7 +1013,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.27 — Rushing into the Terrible Mouths"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "वक्त्राणि ते त्वरमाणा विशन्ति\r\nदंष्ट्राकरालानि भयानकानि |\r\nकेचिद्विलग्ना दशनान्तरेषु\r\nसन्दृश्यन्ते चूर्णितैरुत्तमाङ्गैः"
+        children: "वक्त्राणि ते त्वरमाणा विशन्ति\nदंष्ट्राकरालानि भयानकानि |\nकेचिद्विलग्ना दशनान्तरेषु\nसन्दृश्यन्ते चूर्णितैरुत्तमाङ्गैः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1028,7 +1032,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.28 — Rivers Flowing to the Ocean"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यथा नदीनां बहवोऽम्बुवेगाः\r\nसमुद्रमेवाभिमुखा द्रवन्ति |\r\nतथा तवामी नरलोकवीरा\r\nविशन्ति वक्त्राण्यभिविज्वलन्ति"
+        children: "यथा नदीनां बहवोऽम्बुवेगाः\nसमुद्रमेवाभिमुखा द्रवन्ति |\nतथा तवामी नरलोकवीरा\nविशन्ति वक्त्राण्यभिविज्वलन्ति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1047,7 +1051,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.29 — Moths into the Flame"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यथा प्रदीप्तं ज्वलनं पतङ्गा\r\nविशन्ति नाशाय समृद्धवेगाः |\r\nतथैव नाशाय विशन्ति लोकास्-\r\nतवापि वक्त्राणि समृद्धवेगाः"
+        children: "यथा प्रदीप्तं ज्वलनं पतङ्गा\nविशन्ति नाशाय समृद्धवेगाः |\nतथैव नाशाय विशन्ति लोकास्-\nतवापि वक्त्राणि समृद्धवेगाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1066,7 +1070,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.30 — Licking and Devouring the Worlds"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "लेलिह्यसे ग्रसमानः समन्ताल्-\r\nलोकान्समग्रान्वदनैर्ज्वलद्भिः |\r\nतेजोभिरापूर्य जगत्समग्रं\r\nभासस्तवोग्राः प्रतपन्ति विष्णो"
+        children: "लेलिह्यसे ग्रसमानः समन्ताल्-\nलोकान्समग्रान्वदनैर्ज्वलद्भिः |\nतेजोभिरापूर्य जगत्समग्रं\nभासस्तवोग्राः प्रतपन्ति विष्णो"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1085,7 +1089,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.31 — Who Are You, Fierce of Form?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आख्याहि मे को भवानुग्ररूपो\r\nनमोऽस्तु ते देववर प्रसीद |\r\nविज्ञातुमिच्छामि भवन्तमाद्यं\r\nन हि प्रजानामि तव प्रवृत्तिम्"
+        children: "आख्याहि मे को भवानुग्ररूपो\nनमोऽस्तु ते देववर प्रसीद |\nविज्ञातुमिच्छामि भवन्तमाद्यं\nन हि प्रजानामि तव प्रवृत्तिम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1104,7 +1108,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.32 — I Am Time, the World-Destroyer"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nकालोऽस्मि लोकक्षयकृत्प्रवृद्धो\r\nलोकान्समाहर्तुमिह प्रवृत्तः |\r\nऋतेऽपि त्वां न भविष्यन्ति सर्वे\r\nयेऽवस्थिताः प्रत्यनीकेषु योधाः"
+        children: "श्रीभगवानुवाच |\nकालोऽस्मि लोकक्षयकृत्प्रवृद्धो\nलोकान्समाहर्तुमिह प्रवृत्तः |\nऋतेऽपि त्वां न भविष्यन्ति सर्वे\nयेऽवस्थिताः प्रत्यनीकेषु योधाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1123,7 +1127,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.33 — Stand Up; Be a Mere Instrument"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तस्मात्त्वमुत्तिष्ठ यशो लभस्व\r\nजित्वा शत्रून् भुङ्क्ष्व राज्यं समृद्धम् |\r\nमयैवैते निहताः पूर्वमेव\r\nनिमित्तमात्रं भव सव्यसाचिन्"
+        children: "तस्मात्त्वमुत्तिष्ठ यशो लभस्व\nजित्वा शत्रून् भुङ्क्ष्व राज्यं समृद्धम् |\nमयैवैते निहताः पूर्वमेव\nनिमित्तमात्रं भव सव्यसाचिन्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1142,7 +1146,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.34 — They Are Already Slain; Do Not Fear"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "द्रोणं च भीष्मं च जयद्रथं च\r\nकर्णं तथान्यानपि योधवीरान् |\r\nमया हतांस्त्वं जहि मा व्यथिष्ठा\r\nयुध्यस्व जेतासि रणे सपत्नान्"
+        children: "द्रोणं च भीष्मं च जयद्रथं च\nकर्णं तथान्यानपि योधवीरान् |\nमया हतांस्त्वं जहि मा व्यथिष्ठा\nयुध्यस्व जेतासि रणे सपत्नान्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1161,7 +1165,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.35 — Trembling, He Bows Again"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सञ्जय उवाच |\r\nएतच्छ्रुत्वा वचनं केशवस्य\r\nकृताञ्जलिर्वेपमानः किरीटी |\r\nनमस्कृत्वा भूय एवाह कृष्णं\r\nसगद्गदं भीतभीतः प्रणम्य"
+        children: "सञ्जय उवाच |\nएतच्छ्रुत्वा वचनं केशवस्य\nकृताञ्जलिर्वेपमानः किरीटी |\nनमस्कृत्वा भूय एवाह कृष्णं\nसगद्गदं भीतभीतः प्रणम्य"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1180,7 +1184,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.36 — The World Delights in Your Praise"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nस्थाने हृषीकेश तव प्रकीर्त्या\r\nजगत्प्रहृष्यत्यनुरज्यते च |\r\nरक्षांसि भीतानि दिशो द्रवन्ति\r\nसर्वे नमस्यन्ति च सिद्धसङ्घाः"
+        children: "अर्जुन उवाच |\nस्थाने हृषीकेश तव प्रकीर्त्या\nजगत्प्रहृष्यत्यनुरज्यते च |\nरक्षांसि भीतानि दिशो द्रवन्ति\nसर्वे नमस्यन्ति च सिद्धसङ्घाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1199,7 +1203,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.37 — Why Should They Not Bow?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कस्माच्च ते न नमेरन्महात्मन्\r\nगरीयसे ब्रह्मणोऽप्यादिकर्त्रे |\r\nअनन्त देवेश जगन्निवास\r\nत्वमक्षरं सदसत्तत्परं यत्"
+        children: "कस्माच्च ते न नमेरन्महात्मन्\nगरीयसे ब्रह्मणोऽप्यादिकर्त्रे |\nअनन्त देवेश जगन्निवास\nत्वमक्षरं सदसत्तत्परं यत्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1218,7 +1222,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.38 — The Primal God, the Ancient Person"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "त्वमादिदेवः पुरुषः पुराणस्-\r\nत्वमस्य विश्वस्य परं निधानम् |\r\nवेत्तासि वेद्यं च परं च धाम\r\nत्वया ततं विश्वमनन्तरूप"
+        children: "त्वमादिदेवः पुरुषः पुराणस्-\nत्वमस्य विश्वस्य परं निधानम् |\nवेत्तासि वेद्यं च परं च धाम\nत्वया ततं विश्वमनन्तरूप"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1237,7 +1241,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.39 — Vayu, Yama, Agni, Varuna; Salutations a Thousand Times"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "वायुर्यमोऽग्निर्वरुणः शशाङ्कः\r\nप्रजापतिस्त्वं प्रपितामहश्च |\r\nनमो नमस्तेऽस्तु सहस्रकृत्वः\r\nपुनश्च भूयोऽपि नमो नमस्ते"
+        children: "वायुर्यमोऽग्निर्वरुणः शशाङ्कः\nप्रजापतिस्त्वं प्रपितामहश्च |\nनमो नमस्तेऽस्तु सहस्रकृत्वः\nपुनश्च भूयोऽपि नमो नमस्ते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1256,7 +1260,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.40 — Salutations from Every Direction"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नमः पुरस्तादथ पृष्ठतस्ते\r\nनमोऽस्तु ते सर्वत एव सर्व |\r\nअनन्तवीर्यामितविक्रमस्त्वं\r\nसर्वं समाप्नोषि ततोऽसि सर्वः"
+        children: "नमः पुरस्तादथ पृष्ठतस्ते\nनमोऽस्तु ते सर्वत एव सर्व |\nअनन्तवीर्यामितविक्रमस्त्वं\nसर्वं समाप्नोषि ततोऽसि सर्वः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1275,7 +1279,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.41 — Forgive the Familiarity of Friendship"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सखेति मत्वा प्रसभं यदुक्तं\r\nहे कृष्ण हे यादव हे सखेति |\r\nअजानता महिमानं तवेदं\r\nमया प्रमादात्प्रणयेन वापि"
+        children: "सखेति मत्वा प्रसभं यदुक्तं\nहे कृष्ण हे यादव हे सखेति |\nअजानता महिमानं तवेदं\nमया प्रमादात्प्रणयेन वापि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1294,7 +1298,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.42 — Whatever I Did in Play, Forgive"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यच्चावहासार्थमसत्कृतोऽसि\r\nविहारशय्यासनभोजनेषु |\r\nएकोऽथवाप्यच्युत तत्समक्षं\r\nतत्क्षामये त्वामहमप्रमेयम्"
+        children: "यच्चावहासार्थमसत्कृतोऽसि\nविहारशय्यासनभोजनेषु |\nएकोऽथवाप्यच्युत तत्समक्षं\nतत्क्षामये त्वामहमप्रमेयम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1313,7 +1317,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.43 — The Father, the Guru, the Unequalled"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "पितासि लोकस्य चराचरस्य\r\nत्वमस्य पूज्यश्च गुरुर्गरीयान् |\r\nन त्वत्समोऽस्त्यभ्यधिकः कुतोऽन्यो\r\nलोकत्रयेऽप्यप्रतिमप्रभाव"
+        children: "पितासि लोकस्य चराचरस्य\nत्वमस्य पूज्यश्च गुरुर्गरीयान् |\nन त्वत्समोऽस्त्यभ्यधिकः कुतोऽन्यो\nलोकत्रयेऽप्यप्रतिमप्रभाव"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1332,7 +1336,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.44 — Forgive as a Father, a Friend, a Lover"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तस्मात्प्रणम्य प्रणिधाय कायं\r\nप्रसादये त्वामहमीशमीड्यम् |\r\nपितेव पुत्रस्य सखेव सख्युः\r\nप्रियः प्रियायार्हसि देव सोढुम्"
+        children: "तस्मात्प्रणम्य प्रणिधाय कायं\nप्रसादये त्वामहमीशमीड्यम् |\nपितेव पुत्रस्य सखेव सख्युः\nप्रियः प्रियायार्हसि देव सोढुम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1351,7 +1355,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.45 — Delighted and Distressed; Show Me Your Gentle Form"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अदृष्टपूर्वं हृषितोऽस्मि दृष्ट्वा\r\nभयेन च प्रव्यथितं मनो मे |\r\nतदेव मे दर्शय देव रूपं\r\nप्रसीद देवेश जगन्निवास"
+        children: "अदृष्टपूर्वं हृषितोऽस्मि दृष्ट्वा\nभयेन च प्रव्यथितं मनो मे |\nतदेव मे दर्शय देव रूपं\nप्रसीद देवेश जगन्निवास"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1370,7 +1374,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.46 — I Wish to See the Four-Armed Form"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "किरीटिनं गदिनं चक्रहस्तं\r\nइच्छामि त्वां द्रष्टुमहं तथैव |\r\nतेनैव रूपेण चतुर्भुजेन\r\nसहस्रबाहो भव विश्वमूर्ते"
+        children: "किरीटिनं गदिनं चक्रहस्तं\nइच्छामि त्वां द्रष्टुमहं तथैव |\nतेनैव रूपेण चतुर्भुजेन\nसहस्रबाहो भव विश्वमूर्ते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1389,7 +1393,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.47 — Shown by My Grace, Seen by No One Before"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nमया प्रसन्नेन तवार्जुनेदं\r\nरूपं परं दर्शितमात्मयोगात् |\r\nतेजोमयं विश्वमनन्तमाद्यं\r\nयन्मे त्वदन्येन न दृष्टपूर्वम्"
+        children: "श्रीभगवानुवाच |\nमया प्रसन्नेन तवार्जुनेदं\nरूपं परं दर्शितमात्मयोगात् |\nतेजोमयं विश्वमनन्तमाद्यं\nयन्मे त्वदन्येन न दृष्टपूर्वम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1408,7 +1412,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.48 — Not by Study, Gifts or Austerities"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न वेदयज्ञाध्ययनैर्न दानैर्-\r\nन च क्रियाभिर्न तपोभिरुग्रैः |\r\nएवंरूपः शक्य अहं नृलोके\r\nद्रष्टुं त्वदन्येन कुरुप्रवीर"
+        children: "न वेदयज्ञाध्ययनैर्न दानैर्-\nन च क्रियाभिर्न तपोभिरुग्रैः |\nएवंरूपः शक्य अहं नृलोके\nद्रष्टुं त्वदन्येन कुरुप्रवीर"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1427,7 +1431,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.49 — Be Not Afraid; Behold the Gentle Form"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मा ते व्यथा मा च विमूढभावो\r\nदृष्ट्वा रूपं घोरमीदृङ्ममेदम् |\r\nव्यपेतभीः प्रीतमनाः पुनस्त्वं\r\nतदेव मे रूपमिदं प्रपश्य"
+        children: "मा ते व्यथा मा च विमूढभावो\nदृष्ट्वा रूपं घोरमीदृङ्ममेदम् |\nव्यपेतभीः प्रीतमनाः पुनस्त्वं\nतदेव मे रूपमिदं प्रपश्य"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1446,7 +1450,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.50 — The Gentle Form Returns; the Terrified Consoled"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सञ्जय उवाच |\r\nइत्यर्जुनं वासुदेवस्तथोक्त्वा\r\nस्वकं रूपं दर्शयामास भूयः |\r\nआश्वासयामास च भीतमेनं\r\nभूत्वा पुनः सौम्यवपुर्महात्मा"
+        children: "सञ्जय उवाच |\nइत्यर्जुनं वासुदेवस्तथोक्त्वा\nस्वकं रूपं दर्शयामास भूयः |\nआश्वासयामास च भीतमेनं\nभूत्वा पुनः सौम्यवपुर्महात्मा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1465,7 +1469,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.51 — Composed Again, Restored to My Nature"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nदृष्ट्वेदं मानुषं रूपं तव सौम्यं जनार्दन |\r\nइदानीमस्मि संवृत्तः सचेताः प्रकृतिं गतः"
+        children: "अर्जुन उवाच |\nदृष्ट्वेदं मानुषं रूपं तव सौम्यं जनार्दन |\nइदानीमस्मि संवृत्तः सचेताः प्रकृतिं गतः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1484,7 +1488,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.52 — Hard to See; the Gods Long for It"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nसुदुर्दर्शमिदं रूपं दृष्टवानसि यन्मम |\r\nदेवा अप्यस्य रूपस्य नित्यं दर्शनकाङ्क्षिणः"
+        children: "श्रीभगवानुवाच |\nसुदुर्दर्शमिदं रूपं दृष्टवानसि यन्मम |\nदेवा अप्यस्य रूपस्य नित्यं दर्शनकाङ्क्षिणः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1503,7 +1507,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.53 — Not by Vedas, Austerity, Gift or Sacrifice"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नाहं वेदैर्न तपसा न दानेन न चेज्यया |\r\nशक्य एवंविधो द्रष्टुं दृष्टवानसि मां यथा"
+        children: "नाहं वेदैर्न तपसा न दानेन न चेज्यया |\nशक्य एवंविधो द्रष्टुं दृष्टवानसि मां यथा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1522,7 +1526,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.54 — Only by Single-Minded Devotion"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "भक्त्या त्वनन्यया शक्य अहमेवंविधोऽर्जुन |\r\nज्ञातुं द्रष्टुं च तत्त्वेन प्रवेष्टुं च परन्तप"
+        children: "भक्त्या त्वनन्यया शक्य अहमेवंविधोऽर्जुन |\nज्ञातुं द्रष्टुं च तत्त्वेन प्रवेष्टुं च परन्तप"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1541,7 +1545,7 @@ function _createMdxContent(props) {
       children: "Shloka 11.55 — Act for Me; Be Without Enmity; Come to Me"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मत्कर्मकृन्मत्परमो मद्भक्तः सङ्गवर्जितः |\r\nनिर्वैरः सर्वभूतेषु यः स मामेति पाण्डव"
+        children: "मत्कर्मकृन्मत्परमो मद्भक्तः सङ्गवर्जितः |\nनिर्वैरः सर्वभूतेषु यः स मामेति पाण्डव"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1636,13 +1640,83 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Ego Dissolution and Mystical Experiences"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Chapter 11 is the Gita's most dramatic chapter — the cosmic vision that terrifies Arjuna. Modern psychology of mystical experiences (Hood, 1975) and ego dissolution (Millière et al., 2017) describe exactly what Arjuna undergoes: the temporary collapse of the self-boundary, producing both terror and ecstasy. The \"thousand suns\" (11.12) is not just poetry — it maps to the phenomenology of ego dissolution: a flash of boundless awareness that overwhelms the ordinary self."
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The granting of the divine eye (11.8)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Mystical experience (Hood, 1975)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The \"divine eye\" is a shift in attentional frame — from object-focused to awareness-focused. This is the same shift described in meditation research"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The terror of the vision (11.20-11.31)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Ego dissolution (Millière et al., 2017)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The ego's fear response to boundary loss is universal — the self defends its own annihilation. The terror is the ego's farewell, not danger"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "\"I am Time, the world-destroyer\" (11.32)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Impermanence awareness (Epstein, 2008)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Confronting impermanence directly produces both terror and liberation — the same insight that underlies Buddhist anicca and Stoic memento mori"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The gentle form returns (11.47-11.51)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Integration after mystical experience (Welwood, 2000)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The return to the familiar is essential — mystical experiences must be integrated into daily life, not clung to. Grace is the integration"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Single-minded devotion (11.54)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Absorption states (Csikszentmihalyi, 1990)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Ananya bhakti maps to deep absorption — the total engagement that produces the same boundary-dissolution as the cosmic vision, but sustained"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " Reflect on a moment when you felt both terrified and exhilarated — a risk taken, a boundary crossed, a truth confronted. That moment is a miniature vishvarupa. The ego shrinks; the awareness expands. The terror and the ecstasy are two sides of the same coin."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The cosmic vision of Chapter 11 is the extreme version of the witness practice of Chapter 2 (2.54-2.72) — the witness sees everything at once, and the ego cannot bear it. The return to the gentle form (11.47) is the integration that Chapter 6's meditation (6.10-6.47) prepares you for."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"Ten chapters of words; Arjuna's delusion lifts\"] --> B[\"The request: let me see, not merely hear\"]\r\n    B --> C[\"Krishna grants the divine eye\"]\r\n    C --> D[\"The cosmic form: a thousand suns, endless mouths\"]\r\n    D --> E[\"Terror: the small self trembles\"]\r\n    E --> F[\"The question: who are you, fierce of form?\"]\r\n    F --> G[\"I am Time, the destroyer; they are already slain\"]\r\n    G --> H[\"Be a mere instrument; stand and fight\"]\r\n    H --> I[\"The hymn: praise collapses into bowing\"]\r\n    I --> J[\"The plea: return to the gentle form\"]\r\n    J --> K[\"The final teaching: ananya bhakti alone reaches the whole\"]\r\n    K --> L[\"The devotee acts for the divine; the doer is gone\"]\r\n    style E fill:#4446e8,color:#fff\r\n    style L fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"Ten chapters of words; Arjuna's delusion lifts\"] --> B[\"The request: let me see, not merely hear\"]\n    B --> C[\"Krishna grants the divine eye\"]\n    C --> D[\"The cosmic form: a thousand suns, endless mouths\"]\n    D --> E[\"Terror: the small self trembles\"]\n    E --> F[\"The question: who are you, fierce of form?\"]\n    F --> G[\"I am Time, the destroyer; they are already slain\"]\n    G --> H[\"Be a mere instrument; stand and fight\"]\n    H --> I[\"The hymn: praise collapses into bowing\"]\n    I --> J[\"The plea: return to the gentle form\"]\n    J --> K[\"The final teaching: ananya bhakti alone reaches the whole\"]\n    K --> L[\"The devotee acts for the divine; the doer is gone\"]\n    style E fill:#4446e8,color:#fff\n    style L fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -1650,7 +1724,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root((The Cosmic Vision))\r\n    The request\r\n      Delusion gone\r\n      Let me see\r\n      If you think it possible\r\n    The granting\r\n      The divine eye\r\n      Hundreds and thousands of forms\r\n      The whole universe in one body\r\n    The seeing\r\n      A thousand suns\r\n      Endless mouths and eyes\r\n      Brahma and the sages inside\r\n    The terror\r\n      The three worlds tremble\r\n      Rivers into the ocean\r\n      Moths into the flame\r\n    The revelation\r\n      I am Time\r\n      They are already slain\r\n      Be a mere instrument\r\n    The return\r\n      Forgive my familiarity\r\n      The gentle form\r\n      Single-minded devotion\n"
+        children: "mindmap\n  root((The Cosmic Vision))\n    The request\n      Delusion gone\n      Let me see\n      If you think it possible\n    The granting\n      The divine eye\n      Hundreds and thousands of forms\n      The whole universe in one body\n    The seeing\n      A thousand suns\n      Endless mouths and eyes\n      Brahma and the sages inside\n    The terror\n      The three worlds tremble\n      Rivers into the ocean\n      Moths into the flame\n    The revelation\n      I am Time\n      They are already slain\n      Be a mere instrument\n    The return\n      Forgive my familiarity\n      The gentle form\n      Single-minded devotion\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1757,67 +1831,53 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q3. Who says \"I am Time, the world-destroyer,\" and in which shloka?"
+        children: "Q3. Arjuna's terror at the cosmic vision (11.20-11.31) maps onto what modern psychological phenomenon?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Arjuna, 11.15"
+        children: "a. Panic disorder"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Sanjaya, 11.25"
+        children: "b. Ego dissolution — the temporary collapse of the self-boundary, producing both terror and ecstasy (Millière et al., 2017)"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Krishna, 11.32"
+        children: "c. Post-traumatic stress"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Dhritarashtra, 11.9"
+        children: "d. Schizophrenia"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
       "data-qid": "bg11-q3",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
         children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: c."
-        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer: b."
+        }), " Millière et al. (2017) describe ego dissolution as the temporary loss of the sense of being a separate self — producing both terror (the ego defends its own annihilation) and ecstasy (the expansion of awareness beyond the self). Arjuna's trembling, his hair standing on end, his confusion — all map to the phenomenology of ego dissolution. The \"thousand suns\" (11.12) is the flash of boundless awareness that overwhelms the ordinary self."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q4. In shloka 11.33, what does Krishna tell Arjuna to become?"
+        children: "Q5. After the cosmic vision, Krishna returns to the \"gentle form\" (11.47-11.51). Why is this return essential, and how does it map onto the integration of peak experiences in psychology?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. A king"
+        children: "a. It is not essential — the vision alone is enough"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. A mere instrument"
+        children: "b. Mystical experiences must be integrated into daily life, not clung to (Welwood, 2000). The return to the gentle form is the integration phase — without it, the experience remains a dissociative episode rather than a transformation"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. A monk"
+        children: "c. Krishna was tired and needed to rest"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. A teacher"
+        children: "d. It shows the divine is inconsistent"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
-      "data-qid": "bg11-q4",
+      "data-qid": "bg11-q5",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
         children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        })
+        }), " Welwood (2000) distinguishes between peak experiences and their integration — the latter is what produces lasting change. The cosmic vision without the return would be a dissociative episode; the return to the gentle form allows Arjuna to carry the insight into daily life. Grace is not the vision itself but the integration of the vision."]
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q5. According to shloka 11.54, what is the only door to knowing, seeing and entering the divine?"
-      })
-    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Severe austerities"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Study of the Vedas"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Single-minded devotion"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Great gifts"
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+    }), "\n- a. Severe austerities\n- b. Study of the Vedas\n- c. Single-minded devotion\n- d. Great gifts\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
       "data-qid": "bg11-q5",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
@@ -1870,13 +1930,30 @@ function _createMdxContent(props) {
           children: "mostVolatile"
         }), " report — the movement whose dominant emotion shifts most between its start and end shloka — and print it after the summaries."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The cosmic vision in system design:"
+        }), " When you first see a complex system's full architecture — all the services, databases, queues, and dependencies — the experience can be overwhelming (terror) and exhilarating (wonder). This is the vishvarupa moment. The return to the gentle form is the integration: you focus on one module at a time while carrying the whole architecture in mind."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "\"I am Time\" in production incidents:"
+        }), " When a critical incident occurs, panic is the dark path. \"Remember Me and fight\" (8.7) combined with \"I am Time\" (11.32) means: accept the impermanence of the situation, act as an instrument, and let the incident unfold through you rather than by you."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Ego dissolution in code review:"
+        }), " When your code is thoroughly critiqued, the ego's defense is the \"terror\" response. The integration is recognizing that the code is not you — the critique targets the artifact, not the person. This is the gentle form returning after the cosmic vision."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-vishvarupa-vision-log",
       children: "TypeScript Tool: Vishvarupa Vision Log"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Vishvarupa Vision Log\r\n * Chapter 11 - Vishvarupa Darshana Yoga\r\n * Tracks all 55 shlokas through the chapter's four movements\r\n * and prints the emotional arc of the cosmic vision.\r\n * The arc: gratitude to longing, wonder to terror, shock to surrender.\r\n */\r\n\r\ninterface ShlokaEntry {\r\n  number: number;\r\n  movement: string;\r\n  emotionalState: string;\r\n}\r\n\r\ninterface MovementSummary {\r\n  name: string;\r\n  range: [number, number];\r\n  shlokas: number;\r\n  dominantEmotion: string;\r\n}\r\n\r\nconst movements: [string, number, number][] = [\r\n  ['The request and the granting', 1, 14],\r\n  ['The seeing and the terror', 15, 31],\r\n  ['The revelation of Time', 32, 35],\r\n  ['The praise, the return and the way', 36, 55]\r\n];\r\n\r\nconst emotionOf: Record<number, string> = {\r\n  1: 'gratitude', 3: 'longing', 8: 'trust', 12: 'wonder',\r\n  14: 'awe', 20: 'fear', 23: 'terror', 25: 'desperation',\r\n  28: 'consolation', 31: 'humility', 32: 'shock', 33: 'clarity',\r\n  37: 'praise', 44: 'surrender', 45: 'longing for the gentle',\r\n  51: 'peace', 55: 'devotion'\r\n};\r\n\r\nfunction movementOf(verse: number): string {\r\n  const match = movements.find(([, start, end]) => verse >= start && verse <= end);\r\n  return match ? match[0] : 'Unknown';\r\n}\r\n\r\nfunction buildLog(): ShlokaEntry[] {\r\n  const entries: ShlokaEntry[] = [];\r\n  for (let v = 1; v <= 55; v++) {\r\n    entries.push({\r\n      number: v,\r\n      movement: movementOf(v),\r\n      emotionalState: emotionOf[v] ?? 'awakening'\r\n    });\r\n  }\r\n  return entries;\r\n}\r\n\r\nfunction summarize(log: ShlokaEntry[]): MovementSummary[] {\r\n  return movements.map(([name, start, end]) => {\r\n    const slice = log.filter(e => e.number >= start && e.number <= end);\r\n    const counts: Record<string, number> = {};\r\n    slice.forEach(e => { counts[e.emotionalState] = (counts[e.emotionalState] ?? 0) + 1; });\r\n    const dominant = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];\r\n    return { name, range: [start, end], shlokas: slice.length, dominantEmotion: dominant };\r\n  });\r\n}\r\n\r\nfunction printArc(log: ShlokaEntry[]): void {\r\n  console.log('=== Vishvarupa Vision Log ===');\r\n  console.log('The arc of the seer through the vision:\\n');\r\n  for (const s of log) {\r\n    console.log(`${String(s.number).padStart(2)} | ${s.movement.padEnd(36)} | ${s.emotionalState}`);\r\n  }\r\n  console.log('\\n=== Movement summaries ===');\r\n  for (const m of summarize(log)) {\r\n    console.log(`${m.name}: shlokas ${m.range[0]}-${m.range[1]}, dominant emotion: ${m.dominantEmotion}`);\r\n  }\r\n  console.log('\\nOsho says: terror is the ego farewell; devotion is the return home.');\r\n}\r\n\r\nprintArc(buildLog());\n"
+        children: "/**\n * Vishvarupa Vision Log — Ego Dissolution Edition\n * Based on Vishvarupa Darshana Yoga (Gita 11.1-11.55) and\n * ego dissolution research (Millière et al., 2017): the\n * temporary collapse of the self-boundary produces both\n * terror and ecstasy. The vision's arc maps the phenomenology\n * of ego dissolution and its integration.\n *\n * Run: npx ts-node vishvarupa-vision-log.ts\n */\n\ninterface ShlokaEntry {\n  number: number;\n  movement: string;\n  emotionalState: string;\n  egoIntensity: number;   // 0–10: how strongly is the self defending?\n  awarenessBreadth: number; // 0–10: how expansive is awareness?\n}\n\ninterface MovementSummary {\n  name: string;\n  range: [number, number];\n  shlokas: number;\n  dominantEmotion: string;\n  peakEgoIntensity: number;\n  peakAwarenessBreadth: number;\n  dissolutionScore: number;  // awareness - ego: positive = breakthrough\n}\n\nconst movements: [string, number, number][] = [\n  ['The request and the granting', 1, 14],\n  ['The seeing and the terror', 15, 31],\n  ['The revelation of Time', 32, 35],\n  ['The praise, the return and the way', 36, 55]\n];\n\nconst emotionData: Record<number, { emotion: string; ego: number; awareness: number }> = {\n  1: { emotion: 'gratitude', ego: 3, awareness: 5 },\n  3: { emotion: 'longing', ego: 4, awareness: 6 },\n  8: { emotion: 'trust', ego: 2, awareness: 7 },\n  12: { emotion: 'wonder', ego: 5, awareness: 8 },\n  14: { emotion: 'awe', ego: 6, awareness: 9 },\n  20: { emotion: 'fear', ego: 9, awareness: 7 },\n  23: { emotion: 'terror', ego: 10, awareness: 6 },\n  25: { emotion: 'desperation', ego: 8, awareness: 5 },\n  28: { emotion: 'consolation', ego: 5, awareness: 7 },\n  31: { emotion: 'humility', ego: 3, awareness: 8 },\n  32: { emotion: 'shock', ego: 7, awareness: 9 },\n  33: { emotion: 'clarity', ego: 2, awareness: 10 },\n  37: { emotion: 'praise', ego: 3, awareness: 8 },\n  44: { emotion: 'surrender', ego: 1, awareness: 9 },\n  45: { emotion: 'longing for the gentle', ego: 4, awareness: 7 },\n  51: { emotion: 'peace', ego: 2, awareness: 8 },\n  55: { emotion: 'devotion', ego: 1, awareness: 9 }\n};\n\nfunction movementOf(verse: number): string {\n  const match = movements.find(([, start, end]) => verse >= start && verse <= end);\n  return match ? match[0] : 'Unknown';\n}\n\nfunction buildLog(): ShlokaEntry[] {\n  const entries: ShlokaEntry[] = [];\n  for (let v = 1; v <= 55; v++) {\n    const data = emotionData[v] ?? { emotion: 'awakening', ego: 4, awareness: 6 };\n    entries.push({\n      number: v,\n      movement: movementOf(v),\n      emotionalState: data.emotion,\n      egoIntensity: data.ego,\n      awarenessBreadth: data.awareness\n    });\n  }\n  return entries;\n}\n\nfunction summarize(log: ShlokaEntry[]): MovementSummary[] {\n  return movements.map(([name, start, end]) => {\n    const slice = log.filter((e) => e.number >= start && e.number <= end);\n    const counts: Record<string, number> = {};\n    slice.forEach((e) => { counts[e.emotionalState] = (counts[e.emotionalState] ?? 0) + 1; });\n    const dominant = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];\n    const peakEgo = Math.max(...slice.map((e) => e.egoIntensity));\n    const peakAwareness = Math.max(...slice.map((e) => e.awarenessBreadth));\n    return {\n      name,\n      range: [start, end] as [number, number],\n      shlokas: slice.length,\n      dominantEmotion: dominant,\n      peakEgoIntensity: peakEgo,\n      peakAwarenessBreadth: peakAwareness,\n      dissolutionScore: peakAwareness - peakEgo\n    };\n  });\n}\n\nconst log = buildLog();\nconst summaries = summarize(log);\n\nconsole.log('=== Vishvarupa Vision Log ===');\nconsole.log('The arc of the seer through the vision:\\n');\nfor (const s of log) {\n  const bar = '█'.repeat(s.awarenessBreadth) + '░'.repeat(10 - s.awarenessBreadth);\n  console.log(`${String(s.number).padStart(2)} | ${s.movement.padEnd(36)} | ${s.emotionalState.padEnd(18)} | ${bar}`);\n}\nconsole.log('\\n=== Movement Summaries ===');\nfor (const m of summaries) {\n  const dissolution = m.dissolutionScore > 0 ? `+${m.dissolutionScore}` : `${m.dissolutionScore}`;\n  console.log(`${m.name}: ego ${m.peakEgoIntensity}/10, awareness ${m.peakAwarenessBreadth}/10, dissolution ${dissolution}`);\n}\nconsole.log('\\nTerror is the ego farewell; devotion is the return home. (11.47-11.55)');\n"
       })
     })]
   });

@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-17-shraddhatraya-yoga-md-f36.json
-const site_docs_courses_bhagavad_gita_17_shraddhatraya_yoga_md_f36_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/17-shraddhatraya-yoga","title":"Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature","description":"\\"Your faith is not only in your temple. It is in your belly, your tongue, your work, your gifts. Show me those, and I will show you who you are.\\"","source":"@site/docs/courses/bhagavad-gita/17-shraddhatraya-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/17-shraddhatraya-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/17-shraddhatraya-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":18,"frontMatter":{"id":"17-shraddhatraya-yoga","slug":"/bhagavad-gita/17-shraddhatraya-yoga","title":"Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature","sidebar_label":"Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature","sidebar_position":18},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn","permalink":"/ai-engineering-journey/bhagavad-gita/16-daivasura-sampad-yoga"},"next":{"title":"Chapter 18: Moksha Sanyasa Yoga — Drop the doer, keep the work, and freedom finds you","permalink":"/ai-engineering-journey/bhagavad-gita/18-moksha-sanyasa-yoga"}}');
+const site_docs_courses_bhagavad_gita_17_shraddhatraya_yoga_md_f36_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/17-shraddhatraya-yoga","title":"Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature","description":"\\"Your faith is not only in your temple. It is in your belly, your tongue, your work, your gifts. Show me those, and I will show you who you are.\\"","source":"@site/docs/courses/bhagavad-gita/17-shraddhatraya-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/17-shraddhatraya-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/17-shraddhatraya-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":17,"frontMatter":{"id":"17-shraddhatraya-yoga","slug":"/bhagavad-gita/17-shraddhatraya-yoga","title":"Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature","sidebar_label":"Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature","sidebar_position":17},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn","permalink":"/ai-engineering-journey/bhagavad-gita/16-daivasura-sampad-yoga"},"next":{"title":"Chapter 18: Moksha Sanyasa Yoga — Drop the doer, keep the work, and freedom finds you","permalink":"/ai-engineering-journey/bhagavad-gita/18-moksha-sanyasa-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/17-shraddhatraya-yoga',
 	title: 'Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature',
 	sidebar_label: 'Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature',
-	sidebar_position: 18
+	sidebar_position: 17
 };
 const contentTitle = 'Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature';
 
@@ -214,6 +214,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Shraddha Classifier",
   "id": "typescript-tool-shraddha-classifier",
   "level": 2
@@ -252,7 +256,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"Your faith is not only in your temple. It is in your belly, your tongue, your work, your gifts. Show me those, and I will show you who you are.\"\r\n— The Osho Way"
+        children: "\"Your faith is not only in your temple. It is in your belly, your tongue, your work, your gifts. Show me those, and I will show you who you are.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Arjuna has just been told, at the end of chapter sixteen, that scripture is the authority for action. Now he asks the question that follows inevitably, the question every honest mind must ask: what about the man who does not know the scriptures, who acts from faith alone — where does his faith stand? Is it sattvic, rajasic or tamasic? (17.1) It is a beautiful question, because it is asked on behalf of every ordinary human being who has never studied philosophy but who worships, gives, fasts and prays with a full heart. Krishna answers by turning the question inside out: faith is not a quality you add to yourself; faith is the substance you are made of."
@@ -411,7 +415,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.1 — The Question About the Unschooled Believer"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nये शास्त्रविधिमुत्सृज्य यजन्ते श्रद्धयान्विताः |\r\nतेषां निष्ठा तु का कृष्ण सत्त्वमाहो रजस्तमः"
+        children: "अर्जुन उवाच |\nये शास्त्रविधिमुत्सृज्य यजन्ते श्रद्धयान्विताः |\nतेषां निष्ठा तु का कृष्ण सत्त्वमाहो रजस्तमः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -430,7 +434,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.2 — Faith Born of Nature"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nत्रिविधा भवति श्रद्धा देहिनां सा स्वभावजा |\r\nसात्त्विकी राजसी चैव तामसी चेति तां शृणु"
+        children: "श्रीभगवानुवाच |\nत्रिविधा भवति श्रद्धा देहिनां सा स्वभावजा |\nसात्त्विकी राजसी चैव तामसी चेति तां शृणु"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -449,7 +453,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.3 — You Are Your Faith"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत |\r\nश्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः"
+        children: "सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत |\nश्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -468,7 +472,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.4 — What You Worship Reveals You"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यजन्ते सात्त्विका देवान्यक्षरक्षांसि राजसाः |\r\nप्रेतान्भूतगणांश्चान्ये यजन्ते तामसा जनाः"
+        children: "यजन्ते सात्त्विका देवान्यक्षरक्षांसि राजसाः |\nप्रेतान्भूतगणांश्चान्ये यजन्ते तामसा जनाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -487,7 +491,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.5 — Austerity as Spectacle"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अशास्त्रविहितं घोरं तप्यन्ते ये तपो जनाः |\r\nदम्भाहंकारसंयुक्ताः कामरागबलान्विताः |"
+        children: "अशास्त्रविहितं घोरं तप्यन्ते ये तपो जनाः |\nदम्भाहंकारसंयुक्ताः कामरागबलान्विताः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -506,7 +510,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.6 — Torturing the Guest Within"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कर्षयन्तः शरीरस्थं भूतग्राममचेतसः |\r\nमां चैवान्तःशरीरस्थं तान्विद्ध्यासुरनिश्चयान् |"
+        children: "कर्षयन्तः शरीरस्थं भूतग्राममचेतसः |\nमां चैवान्तःशरीरस्थं तान्विद्ध्यासुरनिश्चयान् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -525,7 +529,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.7 — The Triple Table of Life"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आहारस्त्वपि सर्वस्य त्रिविधो भवति प्रियः |\r\nयज्ञस्तपस्तथा दानं तेषां भेदमिमं शृणु |"
+        children: "आहारस्त्वपि सर्वस्य त्रिविधो भवति प्रियः |\nयज्ञस्तपस्तथा दानं तेषां भेदमिमं शृणु |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -544,7 +548,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.8 — Food That Brings Life"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः |\r\nरस्याः स्निग्धाः स्थिरा हृद्या आहाराः सात्त्विकप्रियाः |"
+        children: "आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः |\nरस्याः स्निग्धाः स्थिरा हृद्या आहाराः सात्त्विकप्रियाः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -563,7 +567,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.9 — Food That Burns"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कट्वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिनः |\r\nआहारा राजसस्येष्टा दुःखशोकामयप्रदाः |"
+        children: "कट्वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिनः |\nआहारा राजसस्येष्टा दुःखशोकामयप्रदाः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -582,7 +586,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.10 — Food That Stupefies"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यातयामं गतरसं पूति पर्युषितं च यत् |\r\nउच्छिष्टमपि चामेध्यं भोजनं तामसप्रियम् |"
+        children: "यातयामं गतरसं पूति पर्युषितं च यत् |\nउच्छिष्टमपि चामेध्यं भोजनं तामसप्रियम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -601,7 +605,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.11 — Sacrifice Without a Price Tag"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अफलाङ्क्षिभिर्यज्ञो विधिदृष्टो य इज्यते |\r\nयष्टव्यमेवेति मनः समाधाय स सात्त्विकः |"
+        children: "अफलाङ्क्षिभिर्यज्ञो विधिदृष्टो य इज्यते |\nयष्टव्यमेवेति मनः समाधाय स सात्त्विकः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -620,7 +624,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.12 — Sacrifice as Advertisement"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अभिसन्धाय तु फलं दम्भार्थमपि चैव यत् |\r\nइज्यते भरतश्रेष्ठ तं यज्ञं विद्धि राजसम् |"
+        children: "अभिसन्धाय तु फलं दम्भार्थमपि चैव यत् |\nइज्यते भरतश्रेष्ठ तं यज्ञं विद्धि राजसम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -639,7 +643,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.13 — The Empty Ritual"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "विधिहीनमसृष्टान्नं मन्त्रहीनमदक्षिणम् |\r\nश्रद्धाविरहितं यज्ञं तामसं परिचक्षते |"
+        children: "विधिहीनमसृष्टान्नं मन्त्रहीनमदक्षिणम् |\nश्रद्धाविरहितं यज्ञं तामसं परिचक्षते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -658,7 +662,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.14 — Austerity of the Body"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "देवद्विजगुरुप्राज्ञपूजनं शौचमार्जवम् |\r\nब्रह्मचर्यमहिंसा च शारीरं तप उच्यते |"
+        children: "देवद्विजगुरुप्राज्ञपूजनं शौचमार्जवम् |\nब्रह्मचर्यमहिंसा च शारीरं तप उच्यते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -677,7 +681,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.15 — Austerity of the Word"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् |\r\nस्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते |"
+        children: "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् |\nस्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -696,7 +700,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.16 — Austerity of the Mind"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मनः प्रसादः सौम्यत्वं मौनमात्मविनिग्रहः |\r\nभावसंशुद्धिरित्येतत्तपो मानसमुच्यते |"
+        children: "मनः प्रसादः सौम्यत्वं मौनमात्मविनिग्रहः |\nभावसंशुद्धिरित्येतत्तपो मानसमुच्यते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -715,7 +719,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.17 — The Highest Threefold Austerity"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रद्धया परया तप्तं तपस्तत्त्रिविधं नरैः |\r\nअफलाकाङ्क्षिभिर्युक्तैः सात्त्विकं परिचक्षते |"
+        children: "श्रद्धया परया तप्तं तपस्तत्त्रिविधं नरैः |\nअफलाकाङ्क्षिभिर्युक्तैः सात्त्विकं परिचक्षते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -734,7 +738,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.18 — Austerity as Theatre"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सत्कारमानपूजार्थं तपो दम्भेन चैव यत् |\r\nक्रियते तदिह प्रोक्तं राजसं चलमध्रुवम् |"
+        children: "सत्कारमानपूजार्थं तपो दम्भेन चैव यत् |\nक्रियते तदिह प्रोक्तं राजसं चलमध्रुवम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -753,7 +757,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.19 — Austerity That Destroys"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मूढग्राहेणात्मनो यत्पीडया क्रियते तपः |\r\nपरस्योत्सादनार्थं वा तत्तामसमुदाहृतम् |"
+        children: "मूढग्राहेणात्मनो यत्पीडया क्रियते तपः |\nपरस्योत्सादनार्थं वा तत्तामसमुदाहृतम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -772,7 +776,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.20 — The Gift That Asks Nothing Back"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "दातव्यमिति यद्दानं दीयतेऽनुपकारिणे |\r\nदेशे काले च पात्रे च तद्दानं सात्त्विकं स्मृतम् |"
+        children: "दातव्यमिति यद्दानं दीयतेऽनुपकारिणे |\nदेशे काले च पात्रे च तद्दानं सात्त्विकं स्मृतम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -791,7 +795,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.21 — The Gift That Waits for Change"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यत्तु प्रत्युपकारार्थं फलमुद्दिश्य वा पुनः |\r\nदीयते च परिक्लिष्टं तद्दानं राजसं स्मृतम् |"
+        children: "यत्तु प्रत्युपकारार्थं फलमुद्दिश्य वा पुनः |\nदीयते च परिक्लिष्टं तद्दानं राजसं स्मृतम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -810,7 +814,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.22 — The Gift With a Curl of the Lip"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अदेशकाले यद्दानमपात्रेभ्यश्च दीयते |\r\nअसत्कृतमवज्ञातं तत्तामसमुदाहृतम् |"
+        children: "अदेशकाले यद्दानमपात्रेभ्यश्च दीयते |\nअसत्कृतमवज्ञातं तत्तामसमुदाहृतम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -829,7 +833,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.23 — Om Tat Sat: The Three Names of the Absolute"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ॐतत्सदिति निर्देशो ब्रह्मणस्त्रिविधः स्मृतः |\r\nब्राह्मणास्तेन वेदाश्च यज्ञाश्च विहिताः पुरा |"
+        children: "ॐतत्सदिति निर्देशो ब्रह्मणस्त्रिविधः स्मृतः |\nब्राह्मणास्तेन वेदाश्च यज्ञाश्च विहिताः पुरा |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -848,7 +852,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.24 — Beginning With Om"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तस्मादोमित्युदाहृत्य यज्ञदानतपःक्रियाः |\r\nप्रवर्तन्ते विधानोक्ताः सततं ब्रह्मवादिनाम् |"
+        children: "तस्मादोमित्युदाहृत्य यज्ञदानतपःक्रियाः |\nप्रवर्तन्ते विधानोक्ताः सततं ब्रह्मवादिनाम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -867,7 +871,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.25 — Tat: The Reminder of That"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तदित्यनभिसन्धाय फलं यज्ञतपःक्रियाः |\r\nदानक्रियाश्च विविधाः क्रियन्ते मोक्षकाङ्क्षिभिः |"
+        children: "तदित्यनभिसन्धाय फलं यज्ञतपःक्रियाः |\nदानक्रियाश्च विविधाः क्रियन्ते मोक्षकाङ्क्षिभिः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -886,7 +890,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.26 — Sat: What Is Real, What Is Good"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सद्भावे साधुभावे च सदित्येतत्प्रयुज्यते |\r\nप्रशस्ते कर्मणि तथा सच्छब्दः पार्थ युज्यते |"
+        children: "सद्भावे साधुभावे च सदित्येतत्प्रयुज्यते |\nप्रशस्ते कर्मणि तथा सच्छब्दः पार्थ युज्यते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -905,7 +909,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.27 — Steadfastness That Is Sat"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यज्ञे तपसि दाने च स्थितिः सदिति चोच्यते |\r\nकर्म चैव तदर्थीयं सदित्येवाभिधीयते |"
+        children: "यज्ञे तपसि दाने च स्थितिः सदिति चोच्यते |\nकर्म चैव तदर्थीयं सदित्येवाभिधीयते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -924,7 +928,7 @@ function _createMdxContent(props) {
       children: "Shloka 17.28 — Faithlessness: The Asat"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अश्रद्धया हुतं दत्तं तपस्तप्तं कृतं च यत् |\r\nअसदित्युच्यते पार्थ न च तत्प्रेत्य नो इह |"
+        children: "अश्रद्धया हुतं दत्तं तपस्तप्तं कृतं च यत् |\nअसदित्युच्यते पार्थ न च तत्प्रेत्य नो इह |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1025,13 +1029,85 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Placebo Research and Belief Updating"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Chapter 17 teaches that faith (shraddha) shapes the quality of every action — worship, food, giving, austerity. ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Placebo research"
+        }), " (Wager et al., 2004) confirms this: beliefs about a treatment produce measurable physiological changes, independent of the treatment's active ingredient. Faith is not just spiritual — it is neurochemical."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Faith as the substance of the person (17.3)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Placebo effect (Wager et al., 2004)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Beliefs about a treatment produce real physiological changes — the person literally becomes their faith"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Three kinds of faith (17.1-17.3)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Expectation theory (Kirsch, 1985)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Faith shapes expectation, which shapes perception, which shapes behavior — a self-fulfilling prophecy at every level"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Sattvic, rajasic, tamasic food (17.7-17.10)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Nutritional neuroscience (Sarris et al., 2015)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Diet affects brain chemistry: fresh, whole foods support cognitive function (sattva); processed, stimulant-heavy foods increase anxiety (rajas); stale, processed foods reduce alertness (tamas)"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Om Tat Sat (17.23-17.27)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Intention setting (Shambo et al., 2006)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Ritualistic intention-setting before an activity activates the brain's goal-directed systems — Om tunes the intention, Tat releases the attachment, Sat grounds the action"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Faithlessness is Asat (17.28)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Belief updating (Sharot et al., 2011)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The brain updates beliefs asymmetrically — it weights positive information more heavily. Faith is the brain's optimistic bias, and it is adaptive"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " For one week, set a clear intention (Om Tat Sat) before each meal, each meeting, each task. Notice whether the quality of attention changes when the intention is explicit. This is the placebo effect applied to daily life."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " Chapter 17's faith-based framework connects to Chapter 9's offering life (9.26-9.28) — the leaf, flower, fruit, water are offered with faith, and the quality of the faith determines the quality of the offering. It also connects to Chapter 3's yajna (3.10-3.16) — the sacrifice works because of faith, not because of the ritual."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"Arjuna asks: what of those who worship outside the scriptures?\"] --> B[\"Krishna: faith is threefold, born of svabhava\"]\r\n    B --> C[\"You are made of your faith (17.3)\"]\r\n    C --> D[\"Faith shows in worship, food, sacrifice, austerity, giving\"]\r\n    D --> E[\"The threefold table: sattvic / rajasic / tamasic\"]\r\n    E --> F[\"Austerity of body, speech and mind\"]\r\n    F --> G[\"Om Tat Sat: the three names of the Absolute\"]\r\n    G --> H[\"Act with faith, or do not act — Asat is naught\"]\r\n    style C fill:#4446e8,color:#fff\r\n    style G fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"Arjuna asks: what of those who worship outside the scriptures?\"] --> B[\"Krishna: faith is threefold, born of svabhava\"]\n    B --> C[\"You are made of your faith (17.3)\"]\n    C --> D[\"Faith shows in worship, food, sacrifice, austerity, giving\"]\n    D --> E[\"The threefold table: sattvic / rajasic / tamasic\"]\n    E --> F[\"Austerity of body, speech and mind\"]\n    F --> G[\"Om Tat Sat: the three names of the Absolute\"]\n    G --> H[\"Act with faith, or do not act — Asat is naught\"]\n    style C fill:#4446e8,color:#fff\n    style G fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -1039,7 +1115,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root[Shraddhatraya Yoga]\r\n    Faith\r\n      Born of svabhava\r\n      Threefold: sattvic, rajasic, tamasic\r\n      You are your faith\r\n    Worship\r\n      Gods\r\n      Yakshas and rakshasas\r\n      Ghosts and spirits\r\n    Food\r\n      Sattvic: life and clarity\r\n      Rajasic: burning\r\n      Tamasic: stale and stupefying\r\n    Austerity\r\n      Of body: worship, purity, ahimsa\r\n      Of speech: truth, pleasantness, benefit\r\n      Of mind: serenity, silence, pure motive\r\n    Giving\r\n      Sattvic: no return expected\r\n      Rajasic: contract and reluctance\r\n      Tamasic: contempt\r\n    Om Tat Sat\r\n      Om: the sound\r\n      Tat: the release\r\n      Sat: the ground\n"
+        children: "mindmap\n  root[Shraddhatraya Yoga]\n    Faith\n      Born of svabhava\n      Threefold: sattvic, rajasic, tamasic\n      You are your faith\n    Worship\n      Gods\n      Yakshas and rakshasas\n      Ghosts and spirits\n    Food\n      Sattvic: life and clarity\n      Rajasic: burning\n      Tamasic: stale and stupefying\n    Austerity\n      Of body: worship, purity, ahimsa\n      Of speech: truth, pleasantness, benefit\n      Of mind: serenity, silence, pure motive\n    Giving\n      Sattvic: no return expected\n      Rajasic: contract and reluctance\n      Tamasic: contempt\n    Om Tat Sat\n      Om: the sound\n      Tat: the release\n      Sat: the ground\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1168,17 +1244,17 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q4. What do the words Om Tat Sat designate (17.23)?"
+        children: "Q4. The three kinds of food — sattvic (clarifying), rajasic (stimulating), tamasic (stupefying) — map onto modern nutritional neuroscience. How does diet affect brain function?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. The three Vedas"
+        children: "a. Diet has no effect on the brain"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. The threefold Brahman"
+        children: "b. Sattvic foods (fresh, whole, moderate) support cognitive function; rajasic foods (caffeine, sugar, spice) increase anxiety and restlessness; tamasic foods (processed, stale, overcooked) reduce alertness — the Gita's food classification predicts modern findings (Sarris et al., 2015)"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. The three gunas"
+        children: "c. Only protein matters for the brain"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. The three worlds"
+        children: "d. The gunas are spiritual, not dietary"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1188,21 +1264,21 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        }), " \"Om Tat Sat\" is the threefold designation (nirdesha) of Brahman, by which the brahmanas, Vedas and sacrifices were ordained."]
+        }), " Sarris et al. (2015) showed that whole-food, Mediterranean-style diets (sattvic) reduce depression and anxiety; stimulant-heavy diets (rajasic) increase cortisol and arousal; processed-food diets (tamasic) impair cognitive function. The Gita's 2,500-year-old food classification predicts modern nutritional neuroscience."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q5. What is any act done without faith called in shloka 17.28?"
+        children: "Q5. \"An act without faith is Asat\" (17.28). How does placebo research (Wager et al., 2004) explain why this is physiologically true?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Papam (sin)"
+        children: "a. Placebo effects are imaginary"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Asat — unreal, naught here and hereafter"
+        children: "b. Placebo research shows that beliefs about a treatment produce measurable physiological changes — pain reduction, immune activation, dopamine release. Faith literally changes the body's chemistry, independent of the treatment's active ingredient"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Nitya karma"
+        children: "c. Only medication affects physiology"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Akarma"
+        children: "d. Faith is a psychological delusion with no physical effect"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1212,7 +1288,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        }), " Whatever is offered, given or practiced without faith is called Asat; it yields nothing here or hereafter."]
+        }), " Wager et al. (2004) used fMRI to show that placebo analgesia reduces pain-related brain activity in the anterior cingulate cortex and insula — the brain literally changes its pain processing based on belief. The Gita's claim that faithless action is \"Asat\" (unreal) is physiologically accurate: without faith (belief in the action), the brain does not activate its healing and engagement pathways."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
@@ -1259,13 +1335,26 @@ function _createMdxContent(props) {
           children: "dailySuggestion()"
         }), " based on the lowest-scoring domain."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Faith is the placebo effect in action."
+      }), " Chapter 17's central claim — that faith shapes the quality of every action — is validated by placebo research (Wager et al., 2004). In engineering, this translates to a practical principle: belief in a system's reliability increases actual reliability through the team's behavior. Teams that believe their monitoring works will respond to alerts faster; teams that believe their tests are flaky will stop fixing failures."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The three kinds of food — sattvic (clarifying), rajasic (stimulating), tamasic (stupefying) — also apply to information diet. Fresh, well-researched documentation (sattva) clarifies; caffeine-fueled late-night coding sessions (rajas) produce anxious code; copy-pasted Stack Overflow answers (tamas) stupefy the codebase."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Practical bridge:"
+      }), " Before your next sprint planning, set a clear intention (Om Tat Sat) — what the team is here to accomplish and why it matters. This is the placebo effect applied to agile ceremonies: intention changes the team's neurochemistry, and the quality of attention changes the outcome."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-shraddha-classifier",
       children: "TypeScript Tool: Shraddha Classifier"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Shraddha Classifier\r\n * Chapter 17, Bhagavad Gita: Shraddhatraya Yoga\r\n * Classifies everyday behaviors in five domains\r\n * (worship, food, sacrifice, austerity, giving) as\r\n * sattvic, rajasic or tamasic, and traces the faith behind them.\r\n * Osho lens: faith is born of svabhava; the mirror is honest.\r\n */\r\n\r\ntype Guna = 'sattvic' | 'rajasic' | 'tamasic';\r\n\r\ntype Domain = 'worship' | 'food' | 'sacrifice' | 'austerity' | 'giving';\r\n\r\ninterface BehaviorSample {\r\n  domain: Domain;\r\n  behavior: string;\r\n  expectsReturn: boolean;\r\n  doneForAudience: boolean;\r\n  doneWithPresence: boolean;\r\n  harmsSelfOrOther: boolean;\r\n}\r\n\r\ninterface DomainVerdict {\r\n  domain: Domain;\r\n  guna: Guna;\r\n  reason: string;\r\n}\r\n\r\ninterface FaithProfile {\r\n  verdicts: DomainVerdict[];\r\n  dominantGuna: Guna;\r\n  sattvicCount: number;\r\n  rajasicCount: number;\r\n  tamasicCount: number;\r\n  oshoNote: string;\r\n}\r\n\r\nfunction classifySample(sample: BehaviorSample): DomainVerdict {\r\n  if (sample.harmsSelfOrOther) {\r\n    return { domain: sample.domain, guna: 'tamasic', reason: 'Austerity or sacrifice that wounds is tamas, not tapas (17.19).' };\r\n  }\r\n  if (!sample.expectsReturn && !sample.doneForAudience && sample.doneWithPresence) {\r\n    return { domain: sample.domain, guna: 'sattvic', reason: 'Done for its own sake, without bargaining, with presence (17.11, 17.20).' };\r\n  }\r\n  if (sample.expectsReturn || sample.doneForAudience) {\r\n    return { domain: sample.domain, guna: 'rajasic', reason: 'The act waits for a reward or an audience; it is a contract (17.12, 17.21).' };\r\n  }\r\n  return { domain: sample.domain, guna: 'tamasic', reason: 'Performed mechanically, without faith — it is Asat (17.28).' };\r\n}\r\n\r\nfunction buildProfile(samples: BehaviorSample[]): FaithProfile {\r\n  const verdicts = samples.map(classifySample);\r\n  const count = (g: Guna) => verdicts.filter((v) => v.guna === g).length;\r\n  const sattvicCount = count('sattvic');\r\n  const rajasicCount = count('rajasic');\r\n  const tamasicCount = count('tamasic');\r\n  const dominantGuna: Guna =\r\n    sattvicCount >= rajasicCount && sattvicCount >= tamasicCount\r\n      ? 'sattvic'\r\n      : rajasicCount >= tamasicCount\r\n        ? 'rajasic'\r\n        : 'tamasic';\r\n  const oshoNote =\r\n    dominantGuna === 'sattvic'\r\n      ? 'Your trust is transparent. Keep watching — the ego still waits in the unexamined corner.'\r\n      : dominantGuna === 'rajasic'\r\n        ? 'Your faith bargains. Watch your gifts and rituals: the moment you stop bargaining, they become alive.'\r\n        : 'Much of your doing is mechanical. Do not add effort; add presence — one total act is worth a thousand rituals.';\r\n  return { verdicts, dominantGuna, sattvicCount, rajasicCount, tamasicCount, oshoNote };\r\n}\r\n\r\nfunction renderReport(profile: FaithProfile): void {\r\n  console.log('=== Shraddha Classifier ===');\r\n  for (const v of profile.verdicts) {\r\n    console.log(`${v.domain.padEnd(10)} -> ${v.guna.padEnd(8)} : ${v.reason}`);\r\n  }\r\n  console.log(`\\nCounts  sattvic: ${profile.sattvicCount}  rajasic: ${profile.rajasicCount}  tamasic: ${profile.tamasicCount}`);\r\n  console.log(`Dominant faith: ${profile.dominantGuna}`);\r\n  console.log(`Osho: ${profile.oshoNote}`);\r\n}\r\n\r\nconst weekSamples: BehaviorSample[] = [\r\n  { domain: 'worship', behavior: 'Morning prayer while checking phone', expectsReturn: false, doneForAudience: false, doneWithPresence: false, harmsSelfOrOther: false },\r\n  { domain: 'food', behavior: 'Slow, mindful meal, grateful and light', expectsReturn: false, doneForAudience: false, doneWithPresence: true, harmsSelfOrOther: false },\r\n  { domain: 'giving', behavior: 'Donation posted on social media', expectsReturn: true, doneForAudience: true, doneWithPresence: false, harmsSelfOrOther: false },\r\n  { domain: 'austerity', behavior: 'Public fast announced as a vow', expectsReturn: false, doneForAudience: true, doneWithPresence: false, harmsSelfOrOther: false },\r\n  { domain: 'sacrifice', behavior: 'Work offered silently, fruit released', expectsReturn: false, doneForAudience: false, doneWithPresence: true, harmsSelfOrOther: false }\r\n];\r\n\r\nrenderReport(buildProfile(weekSamples));\n"
+        children: "/**\n * Shraddha Classifier - Placebo & Belief Updating Edition\n * Based on Shraddhatraya Yoga (Gita 17.1-17.28) and placebo\n * research (Wager et al., 2004): faith literally changes the\n * brain chemistry. Three gunas of faith: sattvic (transparent),\n * rajasic (bargaining), tamasic (mechanical). Five domains:\n * worship, food, sacrifice, austerity, giving.\n *\n * Run: npx ts-node shraddha-classifier.ts\n */\n\ntype Guna = 'sattvic' | 'rajasic' | 'tamasic';\n\ntype Domain = 'worship' | 'food' | 'sacrifice' | 'austerity' | 'giving';\n\ninterface BehaviorSample {\n  domain: Domain;\n  behavior: string;\n  expectsReturn: boolean;\n  doneForAudience: boolean;\n  doneWithPresence: boolean;\n  harmsSelfOrOther: boolean;\n}\n\ninterface DomainVerdict {\n  domain: Domain;\n  guna: Guna;\n  reason: string;\n  placeboEffect: string;\n}\n\ninterface FaithProfile {\n  verdicts: DomainVerdict[];\n  dominantGuna: Guna;\n  sattvicCount: number;\n  rajasicCount: number;\n  tamasicCount: number;\n  placeboIndex: number;\n  message: string;\n}\n\nfunction classifySample(sample: BehaviorSample): DomainVerdict {\n  const pe: Record<Guna, string> = {\n    sattvic: 'Presence activates reward pathways - real neurochemical change (Wager et al., 2004)',\n    rajasic: 'Expectation activates dopamine but bargaining undermines sustained engagement',\n    tamasic: 'Mechanical repetition without faith produces no neurochemical change (17.28)'\n  };\n  if (sample.harmsSelfOrOther) {\n    return { domain: sample.domain, guna: 'tamasic', reason: 'Austerity or sacrifice that wounds is tamas, not tapas (17.19).', placeboEffect: pe.tamasic };\n  }\n  if (!sample.expectsReturn && !sample.doneForAudience && sample.doneWithPresence) {\n    return { domain: sample.domain, guna: 'sattvic', reason: 'Done for its own sake, without bargaining, with presence (17.11, 17.20).', placeboEffect: pe.sattvic };\n  }\n  if (sample.expectsReturn || sample.doneForAudience) {\n    return { domain: sample.domain, guna: 'rajasic', reason: 'The act waits for a reward or an audience; it is a contract (17.12, 17.21).', placeboEffect: pe.rajasic };\n  }\n  return { domain: sample.domain, guna: 'tamasic', reason: 'Performed mechanically, without faith - it is Asat (17.28).', placeboEffect: pe.tamasic };\n}\n\nfunction buildProfile(samples: BehaviorSample[]): FaithProfile {\n  const verdicts = samples.map(classifySample);\n  const count = (g: Guna) => verdicts.filter((v) => v.guna === g).length;\n  const sattvicCount = count('sattvic');\n  const rajasicCount = count('rajasic');\n  const tamasicCount = count('tamasic');\n  const dominantGuna: Guna =\n    sattvicCount >= rajasicCount && sattvicCount >= tamasicCount\n      ? 'sattvic'\n      : rajasicCount >= tamasicCount\n        ? 'rajasic'\n        : 'tamasic';\n  const placeboIndex = Math.round((sattvicCount / Math.max(sattvicCount + rajasicCount + tamasicCount, 1)) * 100);\n  const messages: Record<Guna, string> = {\n    sattvic: 'Your trust is transparent. The placebo pathways are active - presence changes your neurochemistry.',\n    rajasic: 'Your faith bargains. The dopamine hit is real but temporary. Stop bargaining, and the effect deepens.',\n    tamasic: 'Much of your doing is mechanical. The healing pathways are dormant. Add presence, not effort.'\n  };\n  return { verdicts, dominantGuna, sattvicCount, rajasicCount, tamasicCount, placeboIndex, message: messages[dominantGuna] };\n}\n\nfunction renderReport(profile: FaithProfile): void {\n  console.log('=== Shraddha Classifier ===');\n  for (const v of profile.verdicts) {\n    console.log(`${v.domain.padEnd(10)} -> ${v.guna.padEnd(8)} : ${v.reason}`);\n  }\n  console.log(`\\nCounts  sattvic: ${profile.sattvicCount}  rajasic: ${profile.rajasicCount}  tamasic: ${profile.tamasicCount}`);\n  console.log(`Placebo index: ${profile.placeboIndex}/100`);\n  console.log(`Dominant: ${profile.dominantGuna}`);\n  console.log(profile.message);\n}\n\nconst weekSamples: BehaviorSample[] = [\n  { domain: 'worship', behavior: 'Morning prayer while checking phone', expectsReturn: false, doneForAudience: false, doneWithPresence: false, harmsSelfOrOther: false },\n  { domain: 'food', behavior: 'Slow, mindful meal, grateful and light', expectsReturn: false, doneForAudience: false, doneWithPresence: true, harmsSelfOrOther: false },\n  { domain: 'giving', behavior: 'Donation posted on social media', expectsReturn: true, doneForAudience: true, doneWithPresence: false, harmsSelfOrOther: false },\n  { domain: 'austerity', behavior: 'Public fast announced as a vow', expectsReturn: false, doneForAudience: true, doneWithPresence: false, harmsSelfOrOther: false },\n  { domain: 'sacrifice', behavior: 'Work offered silently, fruit released', expectsReturn: false, doneForAudience: false, doneWithPresence: true, harmsSelfOrOther: false }\n];\n\nrenderReport(buildProfile(weekSamples));\n"
       })
     })]
   });

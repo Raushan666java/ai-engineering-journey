@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-10-vibhuti-yoga-md-6cc.json
-const site_docs_courses_bhagavad_gita_10_vibhuti_yoga_md_6cc_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/10-vibhuti-yoga","title":"Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name","description":"\\"The whole world is God\'s signature — learn to read the handwriting, and every face becomes a letter of the divine.\\"","source":"@site/docs/courses/bhagavad-gita/10-vibhuti-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/10-vibhuti-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/10-vibhuti-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":11,"frontMatter":{"id":"10-vibhuti-yoga","slug":"/bhagavad-gita/10-vibhuti-yoga","title":"Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name","sidebar_label":"Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name","sidebar_position":11},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret","permalink":"/ai-engineering-journey/bhagavad-gita/09-rajavidya-rajaguhya-yoga"},"next":{"title":"Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body","permalink":"/ai-engineering-journey/bhagavad-gita/11-vishvarupa-darshana-yoga"}}');
+const site_docs_courses_bhagavad_gita_10_vibhuti_yoga_md_6cc_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/10-vibhuti-yoga","title":"Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name","description":"\\"The whole world is God\'s signature — learn to read the handwriting, and every face becomes a letter of the divine.\\"","source":"@site/docs/courses/bhagavad-gita/10-vibhuti-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/10-vibhuti-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/10-vibhuti-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":10,"frontMatter":{"id":"10-vibhuti-yoga","slug":"/bhagavad-gita/10-vibhuti-yoga","title":"Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name","sidebar_label":"Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name","sidebar_position":10},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret","permalink":"/ai-engineering-journey/bhagavad-gita/09-rajavidya-rajaguhya-yoga"},"next":{"title":"Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body","permalink":"/ai-engineering-journey/bhagavad-gita/11-vishvarupa-darshana-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/10-vibhuti-yoga',
 	title: 'Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name',
 	sidebar_label: 'Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name',
-	sidebar_position: 11
+	sidebar_position: 10
 };
 const contentTitle = 'Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name';
 
@@ -270,6 +270,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Vibhuti Lens",
   "id": "typescript-tool-vibhuti-lens",
   "level": 2
@@ -308,7 +312,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"The whole world is God's signature — learn to read the handwriting, and every face becomes a letter of the divine.\"\r\n— The Osho Way"
+        children: "\"The whole world is God's signature — learn to read the handwriting, and every face becomes a letter of the divine.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "This is the chapter where Krishna stops teaching and starts pointing. For nine chapters he has been speaking about the supreme — the unborn, the beginningless, the formless. Now Arjuna, who is still a man of this world, wants to know: if you are all that, then where do I look? How do I recognise you in the marketplace of ordinary life? Krishna answers with a list that reads like a love letter to creation: I am the sun among lights, the ocean among lakes, the peepul among trees, the Ganga among rivers. Do not search for me on some far shore, he says. Search in the excellence of everything that is."
@@ -459,7 +463,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.1 — Listen Once More, O Mighty-Armed"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nभूय एव महाबाहो शृणु मे परमं वचः |\r\nयत्तेऽहं प्रीयमाणाय वक्ष्यामि हितकाम्यया"
+        children: "श्रीभगवानुवाच |\nभूय एव महाबाहो शृणु मे परमं वचः |\nयत्तेऽहं प्रीयमाणाय वक्ष्यामि हितकाम्यया"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -478,7 +482,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.2 — Neither Gods nor Sages Know My Origin"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न मे विदुः सुरगणाः प्रभवं न महर्षयः |\r\nअहमादिर्हि देवानां महर्षीणां च सर्वशः"
+        children: "न मे विदुः सुरगणाः प्रभवं न महर्षयः |\nअहमादिर्हि देवानां महर्षीणां च सर्वशः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -497,7 +501,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.3 — The Undeluded Man Is Freed from All Sin"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यो मामजमनादिं च वेत्ति लोकमहेश्वरम् |\r\nअसम्मूढः स मर्त्येषु सर्वपापैः प्रमुच्यते"
+        children: "यो मामजमनादिं च वेत्ति लोकमहेश्वरम् |\nअसम्मूढः स मर्त्येषु सर्वपापैः प्रमुच्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -516,7 +520,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.4 — The Qualities That Flow from Me"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "बुद्धिर्ज्ञानमसम्मोहः क्षमा सत्यं दमः शमः |\r\nसुखं दुःखं भवोऽभावो भयं चाभयमेव च"
+        children: "बुद्धिर्ज्ञानमसम्मोहः क्षमा सत्यं दमः शमः |\nसुखं दुःखं भवोऽभावो भयं चाभयमेव च"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -535,7 +539,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.5 — Non-Injury, Equanimity, Contentment"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अहिंसा समता तुष्टिस्तपो दानं यशोऽयशः |\r\nभवन्ति भावा भूतानां मत्त एव पृथग्विधाः"
+        children: "अहिंसा समता तुष्टिस्तपो दानं यशोऽयशः |\nभवन्ति भावा भूतानां मत्त एव पृथग्विधाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -554,7 +558,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.6 — The Seven Sages and the Four Manus"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "महर्षयः सप्त पूर्वे चत्वारो मनवस्तथा |\r\nमद्भावा मानसा जाता येषां लोक इमाः प्रजाः"
+        children: "महर्षयः सप्त पूर्वे चत्वारो मनवस्तथा |\nमद्भावा मानसा जाता येषां लोक इमाः प्रजाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -573,7 +577,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.7 — He Who Knows the Vibhuti and the Yoga"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "एतां विभूतिं योगं च मम यो वेत्ति तत्त्वतः |\r\nसोऽविकम्पेन योगेन युज्यते नात्र संशयः"
+        children: "एतां विभूतिं योगं च मम यो वेत्ति तत्त्वतः |\nसोऽविकम्पेन योगेन युज्यते नात्र संशयः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -592,7 +596,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.8 — I Am the Source of All"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते |\r\nइति मत्वा भजन्ते मां बुधा भावसमन्विताः"
+        children: "अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते |\nइति मत्वा भजन्ते मां बुधा भावसमन्विताः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -611,7 +615,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.9 — They Speak of Me and Are Delighted"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम् |\r\nकथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च"
+        children: "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम् |\nकथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -630,7 +634,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.10 — I Give the Yoga of Understanding"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तेषां सततयुक्तानां भजतां प्रीतिपूर्वकम् |\r\nददामि बुद्धियोगं तं येन मामुपयान्ति ते"
+        children: "तेषां सततयुक्तानां भजतां प्रीतिपूर्वकम् |\nददामि बुद्धियोगं तं येन मामुपयान्ति ते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -649,7 +653,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.11 — The Lamp of Knowledge in the Darkness"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तेषामेवानुकम्पार्थमहमज्ञानजं तमः |\r\nनाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता"
+        children: "तेषामेवानुकम्पार्थमहमज्ञानजं तमः |\nनाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -668,7 +672,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.12 — Arjuna's Praise: Thou Art the Supreme Brahman"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nपरं ब्रह्म परं धाम पवित्रं परमं भवान् |\r\nपुरुषं शाश्वतं दिव्यमादिदेवमजं विभुम्"
+        children: "अर्जुन उवाच |\nपरं ब्रह्म परं धाम पवित्रं परमं भवान् |\nपुरुषं शाश्वतं दिव्यमादिदेवमजं विभुम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -687,7 +691,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.13 — Narada, Asita, Devala and Vyasa Declare It"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आहुस्त्वामृषयः सर्वे देवर्षिर्नारदस्तथा |\r\nअसितो देवलो व्यासः स्वयं चैव ब्रवीषि मे"
+        children: "आहुस्त्वामृषयः सर्वे देवर्षिर्नारदस्तथा |\nअसितो देवलो व्यासः स्वयं चैव ब्रवीषि मे"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -706,7 +710,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.14 — I Believe All That You Say"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सर्वमेतदृतं मन्ये यन्मां वदसि केशव |\r\nन हि ते भगवन्व्यक्तिं विदुर्देवा न दानवाः"
+        children: "सर्वमेतदृतं मन्ये यन्मां वदसि केशव |\nन हि ते भगवन्व्यक्तिं विदुर्देवा न दानवाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -725,7 +729,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.15 — You Alone Know Yourself"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "स्वयमेवात्मनात्मानं वेत्थ त्वं पुरुषोत्तम |\r\nभूतभावन भूतेश देवदेव जगत्पते"
+        children: "स्वयमेवात्मनात्मानं वेत्थ त्वं पुरुषोत्तम |\nभूतभावन भूतेश देवदेव जगत्पते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -744,7 +748,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.16 — Tell Me of Your Divine Glories"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "वक्तुमर्हस्यशेषेण दिव्या ह्यात्मविभूतयः |\r\nयाभिर्विभूतिभिर्लोकानिमांस्त्वं व्याप्य तिष्ठसि"
+        children: "वक्तुमर्हस्यशेषेण दिव्या ह्यात्मविभूतयः |\nयाभिर्विभूतिभिर्लोकानिमांस्त्वं व्याप्य तिष्ठसि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -763,7 +767,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.17 — In What Aspects Are You to Be Thought Of?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कथं विद्यामहं योगिंस्त्वां सदा परिचिन्तयन् |\r\nकेषु केषु च भावेषु चिन्त्योऽसि भगवन्मया"
+        children: "कथं विद्यामहं योगिंस्त्वां सदा परिचिन्तयन् |\nकेषु केषु च भावेषु चिन्त्योऽसि भगवन्मया"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -782,7 +786,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.18 — My Thirst Is Not Satisfied"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "विस्तरेणात्मनो योगं विभूतिं च जनार्दन |\r\nभूयः कथय तृप्तिर्हि शृण्वतो नास्ति मेऽमृतम्"
+        children: "विस्तरेणात्मनो योगं विभूतिं च जनार्दन |\nभूयः कथय तृप्तिर्हि शृण्वतो नास्ति मेऽमृतम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -801,7 +805,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.19 — The Endless Glories, Told Briefly"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nहन्त ते कथयिष्यामि दिव्या ह्यात्मविभूतयः |\r\nप्राधान्यतः कुरुश्रेष्ठ नास्त्यन्तो विस्तरस्य मे"
+        children: "श्रीभगवानुवाच |\nहन्त ते कथयिष्यामि दिव्या ह्यात्मविभूतयः |\nप्राधान्यतः कुरुश्रेष्ठ नास्त्यन्तो विस्तरस्य मे"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -820,7 +824,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.20 — I Am the Self in All Hearts"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अहमात्मा गुडाकेश सर्वभूताशयस्थितः |\r\nअहमादिश्च मध्यं च भूतानामन्त एव च"
+        children: "अहमात्मा गुडाकेश सर्वभूताशयस्थितः |\nअहमादिश्च मध्यं च भूतानामन्त एव च"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -839,7 +843,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.21 — Vishnu, the Sun, Marichi, the Moon"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आदित्यानामहं विष्णुर्ज्योतिषां रविरंशुमान् |\r\nमरीचिर्मरुतामस्मि नक्षत्राणामहं शशी"
+        children: "आदित्यानामहं विष्णुर्ज्योतिषां रविरंशुमान् |\nमरीचिर्मरुतामस्मि नक्षत्राणामहं शशी"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -858,7 +862,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.22 — Sama Veda, Indra, Mind, Consciousness"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "वेदानां सामवेदोऽस्मि देवानामस्मि वासवः |\r\nइन्द्रियाणां मनश्चास्मि भूतानामस्मि चेतना"
+        children: "वेदानां सामवेदोऽस्मि देवानामस्मि वासवः |\nइन्द्रियाणां मनश्चास्मि भूतानामस्मि चेतना"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -877,7 +881,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.23 — Shankara, Kubera, Fire, Mount Meru"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "रुद्राणां शङ्करश्चास्मि वित्तेशो यक्षरक्षसाम् |\r\nवसूनां पावकश्चास्मि मेरुः शिखरिणामहम्"
+        children: "रुद्राणां शङ्करश्चास्मि वित्तेशो यक्षरक्षसाम् |\nवसूनां पावकश्चास्मि मेरुः शिखरिणामहम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -896,7 +900,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.24 — Brihaspati, Skanda, the Ocean"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "पुरोधसां च मुख्यं मां विद्धि पार्थ बृहस्पतिम् |\r\nसेनानीनामहं स्कन्दः सरसामस्मि सागरः"
+        children: "पुरोधसां च मुख्यं मां विद्धि पार्थ बृहस्पतिम् |\nसेनानीनामहं स्कन्दः सरसामस्मि सागरः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -915,7 +919,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.25 — Bhrigu, Om, Japa, the Himalayas"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "महर्षीणां भृगुरहं गिरामस्म्येकमक्षरम् |\r\nयज्ञानां जपयज्ञोऽस्मि स्थावराणां हिमालयः"
+        children: "महर्षीणां भृगुरहं गिरामस्म्येकमक्षरम् |\nयज्ञानां जपयज्ञोऽस्मि स्थावराणां हिमालयः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -934,7 +938,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.26 — The Ashvattha, Narada, Kapila"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अश्वत्थः सर्ववृक्षाणां देवर्षीणां च नारदः |\r\nगन्धर्वाणां चित्ररथः सिद्धानां कपिलो मुनिः"
+        children: "अश्वत्थः सर्ववृक्षाणां देवर्षीणां च नारदः |\nगन्धर्वाणां चित्ररथः सिद्धानां कपिलो मुनिः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -953,7 +957,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.27 — Ucchaisravas, Airavata, the King"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "उच्चैःश्रवसमश्वानां विद्धि माममृतोद्भवम् |\r\nऐरावतं गजेन्द्राणां नराणां च नराधिपम्"
+        children: "उच्चैःश्रवसमश्वानां विद्धि माममृतोद्भवम् |\nऐरावतं गजेन्द्राणां नराणां च नराधिपम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -972,7 +976,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.28 — Vajra, Kamadhenu, Kandarpa, Vasuki"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आयुधानामहं वज्रं धेनूनामस्मि कामधुक् |\r\nप्रजनश्चास्मि कन्दर्पः सर्पाणामस्मि वासुकिः"
+        children: "आयुधानामहं वज्रं धेनूनामस्मि कामधुक् |\nप्रजनश्चास्मि कन्दर्पः सर्पाणामस्मि वासुकिः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -991,7 +995,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.29 — Ananta, Varuna, Aryaman, Yama"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अनन्तश्चास्मि नागानां वरुणो यादसामहम् |\r\nपितॄणामर्यमा चास्मि यमः संयमतामहम्"
+        children: "अनन्तश्चास्मि नागानां वरुणो यादसामहम् |\nपितॄणामर्यमा चास्मि यमः संयमतामहम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1010,7 +1014,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.30 — Prahlada, Time, the Lion, Garuda"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "प्रह्लादश्चास्मि दैत्यानां कालः कलयतामहम् |\r\nमृगाणां च मृगेन्द्रोऽहं वैनतेयश्च पक्षिणाम्"
+        children: "प्रह्लादश्चास्मि दैत्यानां कालः कलयतामहम् |\nमृगाणां च मृगेन्द्रोऽहं वैनतेयश्च पक्षिणाम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1029,7 +1033,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.31 — Wind, Rama, the Shark, the Ganga"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "पवनः पवतामस्मि रामः शस्त्रभृतामहम् |\r\nझषाणां मकरश्चास्मि स्रोतसामस्मि जाह्नवी"
+        children: "पवनः पवतामस्मि रामः शस्त्रभृतामहम् |\nझषाणां मकरश्चास्मि स्रोतसामस्मि जाह्नवी"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1048,7 +1052,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.32 — Beginning, Middle and End; the Science of the Self"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सर्गाणामादिरन्तश्च मध्यं चैवाहमर्जुन |\r\nअध्यात्मविद्या विद्यानां वादः प्रवदतामहम्"
+        children: "सर्गाणामादिरन्तश्च मध्यं चैवाहमर्जुन |\nअध्यात्मविद्या विद्यानां वादः प्रवदतामहम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1067,7 +1071,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.33 — The Letter A, the Dvandva, Time, the All-Faced"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अक्षराणामकारोऽस्मि द्वन्द्वः सामासिकस्य च |\r\nअहमेवाक्षयः कालो धाताहं विश्वतोमुखः"
+        children: "अक्षराणामकारोऽस्मि द्वन्द्वः सामासिकस्य च |\nअहमेवाक्षयः कालो धाताहं विश्वतोमुखः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1086,7 +1090,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.34 — Death, Fame, Speech, Memory, Forbearance"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मृत्युः सर्वहरश्चाहमुद्भवश्च भविष्यताम् |\r\nकीर्तिः श्रीर्वाक्च नारीणां स्मृतिर्मेधा धृतिः क्षमा"
+        children: "मृत्युः सर्वहरश्चाहमुद्भवश्च भविष्यताम् |\nकीर्तिः श्रीर्वाक्च नारीणां स्मृतिर्मेधा धृतिः क्षमा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1105,7 +1109,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.35 — Brihatsaman, Gayatri, Margashirsha, Spring"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "बृहत्साम तथा साम्नां गायत्री छन्दसामहम् |\r\nमासानां मार्गशीर्षोऽहमृतूनां कुसुमाकरः"
+        children: "बृहत्साम तथा साम्नां गायत्री छन्दसामहम् |\nमासानां मार्गशीर्षोऽहमृतूनां कुसुमाकरः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1124,7 +1128,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.36 — Gambling, Splendour, Victory, Determination"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "द्यूतं छलयतामस्मि तेजस्तेजस्विनामहम् |\r\nजयोऽस्मि व्यवसायोऽस्मि सत्त्वं सत्त्ववतामहम्"
+        children: "द्यूतं छलयतामस्मि तेजस्तेजस्विनामहम् |\nजयोऽस्मि व्यवसायोऽस्मि सत्त्वं सत्त्ववतामहम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1143,7 +1147,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.37 — Vasudeva, Arjuna, Vyasa, Usanas"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "वृष्णीनां वासुदेवोऽस्मि पाण्डवानां धनञ्जयः |\r\nमुनीनामप्यहं व्यासः कवीनामुशना कविः"
+        children: "वृष्णीनां वासुदेवोऽस्मि पाण्डवानां धनञ्जयः |\nमुनीनामप्यहं व्यासः कवीनामुशना कविः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1162,7 +1166,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.38 — The Sceptre, Statesmanship, Silence, Knowledge"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "दण्डो दमयतामस्मि नीतिरस्मि जिगीषताम् |\r\nमौनं चैवास्मि गुह्यानां ज्ञानं ज्ञानवतामहम्"
+        children: "दण्डो दमयतामस्मि नीतिरस्मि जिगीषताम् |\nमौनं चैवास्मि गुह्यानां ज्ञानं ज्ञानवतामहम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1181,7 +1185,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.39 — The Seed of All Beings"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यच्चापि सर्वभूतानां बीजं तदहमर्जुन |\r\nन तदस्ति विना यत्स्यान्मया भूतं चराचरम्"
+        children: "यच्चापि सर्वभूतानां बीजं तदहमर्जुन |\nन तदस्ति विना यत्स्यान्मया भूतं चराचरम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1200,7 +1204,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.40 — There Is No End to the Glories"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नान्तोऽस्ति मम दिव्यानां विभूतीनां परन्तप |\r\nएष तूद्देशतः प्रोक्तो विभूतेर्विस्तरो मया"
+        children: "नान्तोऽस्ति मम दिव्यानां विभूतीनां परन्तप |\nएष तूद्देशतः प्रोक्तो विभूतेर्विस्तरो मया"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1219,7 +1223,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.41 — Every Glory Is a Fragment of My Splendour"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा |\r\nतत्तदेवावगच्छ त्वं मम तेजोंऽशसम्भवम्"
+        children: "यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा |\nतत्तदेवावगच्छ त्वं मम तेजोंऽशसम्भवम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1238,7 +1242,7 @@ function _createMdxContent(props) {
       children: "Shloka 10.42 — The Whole World Supported by One Part"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अथवा बहुनैतेन किं ज्ञातेन तवार्जुन |\r\nविष्टभ्याहमिदं कृत्स्नमेकांशेन स्थितो जगत्"
+        children: "अथवा बहुनैतेन किं ज्ञातेन तवार्जुन |\nविष्टभ्याहमिदं कृत्स्नमेकांशेन स्थितो जगत्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1333,13 +1337,77 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Awe Research and the Broaden-and-Build Theory"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Chapter 10 is Krishna's catalogue of divine glories — the sun, the moon, the Ganga, the lion, the letter A. The Gita's teaching is that recognizing excellence in the world steadies the seeker (10.7-10.8). ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Awe research"
+        }), " (Keltner & Haidt, 2003) confirms this: experiencing awe — the feeling of being in the presence of something vast that challenges your existing mental models — broadens attention and builds lasting psychological resources (Fredrickson, 2001)."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Recognizing the glories (10.7)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Awe experience (Keltner & Haidt, 2003)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Awe broadens attention and reduces self-focus — the same effect Krishna promises for knowing the vibhutis"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The one source of all qualities (10.4-10.5)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Categorical perception (Rosch, 1975)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The mind groups diverse phenomena into categories — Krishna's list teaches the mind to see the one category behind all categories"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The lamp lit from within (10.10-10.11)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Insight problem-solving (Kounios & Beeman, 2009)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Understanding is given, not forced — the brain's \"aha\" moment comes when attention is relaxed and receptive, not when it is strained"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Nothing exists outside the one (10.39)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Systems thinking (Senge, 1990)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Seeing the one in the many is the foundation of systems thinking — every element is connected to the whole"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " For seven days, keep a \"vibhuti diary\" — note one moment of excellence you observe each day (a beautiful sunrise, a kind word, a clever solution). At the end of the week, review the list and notice whether your attention has shifted from what's wrong to what's excellent. This is the broaden-and-build effect in action."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The vibhuti listing of Chapter 10 is the practical application of Chapter 7's jnana-vijnana distinction (7.2) — knowing the glories is jnana; recognizing them as faces of the one is vijnana."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"The promise: listen once more, beloved 10.1\"] --> B[\"Neither gods nor sages know the origin 10.2-10.3\"]\r\n    B --> C[\"The qualities flow from the one source 10.4-10.5\"]\r\n    C --> D[\"The lamp of knowledge in the darkness 10.10-10.11\"]\r\n    D --> E[\"Arjuna's praise and his question: in what forms do I think of you 10.12-10.18\"]\r\n    E --> F[\"The enumeration begins: sun, moon, mind, ocean 10.19-10.28\"]\r\n    F --> G[\"The list widens: time, death, spring, silence 10.29-10.38\"]\r\n    G --> H[\"The seed: nothing exists without the one 10.39-10.41\"]\r\n    H --> I[\"The dissolution: one fragment supports the whole world 10.42\"]\r\n    I --> J[\"The eye is ready for the cosmic vision: chapter 11\"]\r\n    style F fill:#4446e8,color:#fff\r\n    style I fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"The promise: listen once more, beloved 10.1\"] --> B[\"Neither gods nor sages know the origin 10.2-10.3\"]\n    B --> C[\"The qualities flow from the one source 10.4-10.5\"]\n    C --> D[\"The lamp of knowledge in the darkness 10.10-10.11\"]\n    D --> E[\"Arjuna's praise and his question: in what forms do I think of you 10.12-10.18\"]\n    E --> F[\"The enumeration begins: sun, moon, mind, ocean 10.19-10.28\"]\n    F --> G[\"The list widens: time, death, spring, silence 10.29-10.38\"]\n    G --> H[\"The seed: nothing exists without the one 10.39-10.41\"]\n    H --> I[\"The dissolution: one fragment supports the whole world 10.42\"]\n    I --> J[\"The eye is ready for the cosmic vision: chapter 11\"]\n    style F fill:#4446e8,color:#fff\n    style I fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -1347,7 +1415,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root[Vibhuti Yoga]\r\n    The promise\r\n      The supreme word\r\n      Spoken to the beloved\r\n      The source of all\r\n    The qualities\r\n      Intellect and wisdom\r\n      Forgiveness and truth\r\n      Fear and fearlessness\r\n    The question\r\n      Arjuna's praise\r\n      In what forms are you thought of\r\n      Tell me of your glories\r\n    The glories\r\n      Sun among lights\r\n      Ocean among lakes\r\n      Himalaya among mountains\r\n      Ganga among rivers\r\n      Letter A among letters\r\n      Time among reckoners\r\n    The root\r\n      The seed of all beings\r\n      Nothing exists without me\r\n    The dissolution\r\n      No end to the glories\r\n      One fragment supports the world\r\n      The list is burnt\r\n    The next step\r\n      The cosmic vision of chapter 11\n"
+        children: "mindmap\n  root[Vibhuti Yoga]\n    The promise\n      The supreme word\n      Spoken to the beloved\n      The source of all\n    The qualities\n      Intellect and wisdom\n      Forgiveness and truth\n      Fear and fearlessness\n    The question\n      Arjuna's praise\n      In what forms are you thought of\n      Tell me of your glories\n    The glories\n      Sun among lights\n      Ocean among lakes\n      Himalaya among mountains\n      Ganga among rivers\n      Letter A among letters\n      Time among reckoners\n    The root\n      The seed of all beings\n      Nothing exists without me\n    The dissolution\n      No end to the glories\n      One fragment supports the world\n      The list is burnt\n    The next step\n      The cosmic vision of chapter 11\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1464,17 +1532,17 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q4. Which of these is a vibhuti (glory) mentioned by Krishna in chapter 10?"
+        children: "Q4. Krishna lists diverse vibhutis — the sun, the moon, the Ganga, the lion, the letter A. What is the psychological function of this long enumeration, and how does it relate to awe research (Keltner & Haidt, 2003)?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. The peacock among birds and silver among metals"
+        children: "a. It is poetic filler with no psychological function"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. The Sama Veda among the Vedas and the mind among the senses"
+        children: "b. Each listing triggers a micro-awe response — the broadening of attention that comes from recognizing excellence. The enumeration trains the brain to see the one in the many"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. The lion among beasts and the Ganga among rivers"
+        children: "c. It is meant to overwhelm the listener into submission"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Both b and c"
+        children: "d. It only matters for religious devotion, not psychology"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1483,13 +1551,33 @@ function _createMdxContent(props) {
         children: "Show Answer"
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: d."
-        }), " Krishna names the Sama Veda among Vedas and the mind among senses (10.22), and the lion among beasts (10.30) and the Ganga among rivers (10.31)."]
+          children: "Answer: b."
+        }), " Keltner & Haidt (2003) define awe as the response to perceived vastness that challenges existing schemas. Each vibhuti listing triggers a micro-awe: the mind encounters something excellent (the sun, the Ganga) and briefly expands its model of reality. The enumeration is not filler — it is a systematic training of the attention to recognize the one source behind all diverse excellences."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q5. In shloka 10.39, what does Krishna say is the seed of all beings?"
+        children: "Q5. Krishna says \"I am the seed of all beings\" (10.39). How does this relate to systems thinking in modern organizational theory?"
       })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a. It is a religious claim with no organizational parallel"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b. Systems thinking (Senge, 1990) shows that every element in an organization is connected to the whole — the \"seed\" is the shared purpose that gives rise to all components. Seeing the one in the many is the foundation of systemic leadership"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c. It means Krishna is the CEO of the universe"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d. It is a metaphor for基因 inheritance"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "bg10-q5",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer: b."
+        }), " Senge's systems thinking (1990) shows that organizational behavior emerges from the relationships between components, not from the components themselves. Krishna's \"seed of all beings\" (10.39) is the shared purpose or organizing principle that gives rise to the whole system. The vibhuti lens — seeing the one source in all diverse manifestations — is the perceptual foundation of systems thinking."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "a. Time"
@@ -1551,13 +1639,30 @@ function _createMdxContent(props) {
           children: "TypeScript exercise:"
         }), " Extend the Vibhuti Lens — add a second category of your own design (for example, \"city glories\" with metro, library, bridge), and add a function that counts how many distinct categories you recognised in a week and prints an Osho-style insight when the count crosses a threshold."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The vibhuti lens in code review:"
+        }), " When you review code, practice seeing the one excellence behind many manifestations — the same architectural principle expressed in different modules. This is the vibhuti lens applied to software design."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Awe and creativity:"
+        }), " Research shows that awe broadens attention (Keltner & Haidt, 2003). Before brainstorming, spend 2 minutes observing something excellent in your environment — a well-designed API, a clean algorithm, a beautiful sunset. This primes the brain for creative connection."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Systems thinking as vibhuti recognition:"
+        }), " Seeing the one source in all diverse system components is the vibhuti lens applied to distributed systems — every microservice, every database, every API is a fragment of the same architectural whole."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-vibhuti-lens",
       children: "TypeScript Tool: Vibhuti Lens"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Vibhuti Lens\r\n * Based on Vibhuti Yoga (Gita 10.1-10.42): Krishna teaches\r\n * Arjuna to recognise the divine in the excellence of everything.\r\n * This tool catalogues the chapter's glories by category and\r\n * matches them against the ordinary observations of a single\r\n * day, so the reader can train the eye to see the one in the many.\r\n */\r\n\r\ninterface Vibhuti {\r\n  category: string;\r\n  glory: string;\r\n  shlokaRef: string;\r\n  keywords: string[];\r\n}\r\n\r\ninterface DayObservation {\r\n  time: string;\r\n  note: string;\r\n}\r\n\r\ninterface MatchResult {\r\n  vibhuti: Vibhuti;\r\n  observation: DayObservation;\r\n}\r\n\r\ninterface VibhutiReport {\r\n  observationsAnalyzed: number;\r\n  matches: MatchResult[];\r\n  categoriesRecognised: number;\r\n  eyesTrained: boolean;\r\n  message: string;\r\n}\r\n\r\nconst VIBHUTIS: Vibhuti[] = [\r\n  { category: 'Sky', glory: 'The radiant sun among lights', shlokaRef: '10.21', keywords: ['sun', 'sunrise', 'sunset', 'light', 'daylight'] },\r\n  { category: 'Water', glory: 'The Ganga among rivers', shlokaRef: '10.31', keywords: ['river', 'rain', 'ocean', 'sea', 'stream', 'water'] },\r\n  { category: 'Land', glory: 'The Himalaya among mountains', shlokaRef: '10.25', keywords: ['mountain', 'hill', 'peak', 'summit', 'rock'] },\r\n  { category: 'Mind', glory: 'The mind among senses', shlokaRef: '10.22', keywords: ['thought', 'idea', 'mind', 'focus', 'memory'] },\r\n  { category: 'Virtue', glory: 'Forgiveness and truth', shlokaRef: '10.4', keywords: ['forgive', 'honest', 'truth', 'patient', 'kind'] },\r\n  { category: 'Power', glory: 'Victory and determination', shlokaRef: '10.36', keywords: ['win', 'victory', 'determined', 'effort', 'practice'] },\r\n  { category: 'Silence', glory: 'Silence among secrets', shlokaRef: '10.38', keywords: ['silence', 'quiet', 'still', 'peace', 'calm'] }\r\n];\r\n\r\nfunction findMatches(observations: DayObservation[]): MatchResult[] {\r\n  const matches: MatchResult[] = [];\r\n  for (const observation of observations) {\r\n    const lower = observation.note.toLowerCase();\r\n    for (const vibhuti of VIBHUTIS) {\r\n      if (vibhuti.keywords.some((kw) => lower.includes(kw))) {\r\n        matches.push({ vibhuti, observation });\r\n        break;\r\n      }\r\n    }\r\n  }\r\n  return matches;\r\n}\r\n\r\nfunction buildReport(observations: DayObservation[]): VibhutiReport {\r\n  const matches = findMatches(observations);\r\n  const categoriesRecognised = new Set(matches.map((m) => m.vibhuti.category)).size;\r\n  const eyesTrained = categoriesRecognised >= 4;\r\n  return {\r\n    observationsAnalyzed: observations.length,\r\n    matches,\r\n    categoriesRecognised,\r\n    eyesTrained,\r\n    message: eyesTrained\r\n      ? 'The eye is opening: you recognised the one in many forms today. The glories are no longer a list; they are a language.'\r\n      : 'Few glories recognised today. The divine is not hiding — the eye is simply not yet trained. Keep pausing, keep naming.'\r\n  };\r\n}\r\n\r\nconst today: DayObservation[] = [\r\n  { time: '07:10', note: 'The sunrise split the clouds and light flooded the street.' },\r\n  { time: '12:40', note: 'A colleague forgave a careless mistake with complete patience.' },\r\n  { time: '18:05', note: 'I sat in silence on the balcony and watched the river below.' },\r\n  { time: '21:30', note: 'Two hours of focused practice on the new framework; no distractions.' }\r\n];\r\n\r\nconst report = buildReport(today);\r\nconsole.log('=== Vibhuti Lens ===');\r\nconsole.log(`Observations: ${report.observationsAnalyzed}`);\r\nconsole.log(`Categories recognised: ${report.categoriesRecognised}`);\r\nfor (const match of report.matches) {\r\n  console.log(`- ${match.observation.time}: ${match.vibhuti.glory} (${match.vibhuti.shlokaRef})`);\r\n}\r\nconsole.log(report.message);\n"
+        children: "/**\n * Vibhuti Lens — Awe Research Edition\n * Based on Vibhuti Yoga (Gita 10.1-10.42) and awe research\n * (Keltner & Haidt, 2003): experiencing awe broadens attention\n * and builds psychological resources. The vibhuti lens trains\n * the brain to recognize the one source behind all diverse\n * excellences — the foundation of systems thinking.\n *\n * Run: npx ts-node vibhuti-lens.ts\n */\n\ninterface Vibhuti {\n  category: string;\n  glory: string;\n  shlokaRef: string;\n  keywords: string[];\n}\n\ninterface DayObservation {\n  time: string;\n  note: string;\n  aweLevel: number;  // 0–10: how much awe did this trigger?\n}\n\ninterface MatchResult {\n  vibhuti: Vibhuti;\n  observation: DayObservation;\n}\n\ninterface VibhutiReport {\n  observationsAnalyzed: number;\n  matches: MatchResult[];\n  categoriesRecognised: number;\n  averageAwe: number;\n  broadenEffect: boolean;   // does the awe broaden attention?\n  systemsThinking: boolean; // can you see the one in the many?\n  message: string;\n}\n\nconst VIBHUTIS: Vibhuti[] = [\n  { category: 'Sky', glory: 'The radiant sun among lights', shlokaRef: '10.21', keywords: ['sun', 'sunrise', 'sunset', 'light', 'daylight'] },\n  { category: 'Water', glory: 'The Ganga among rivers', shlokaRef: '10.31', keywords: ['river', 'rain', 'ocean', 'sea', 'stream', 'water'] },\n  { category: 'Land', glory: 'The Himalaya among mountains', shlokaRef: '10.25', keywords: ['mountain', 'hill', 'peak', 'summit', 'rock'] },\n  { category: 'Mind', glory: 'The mind among senses', shlokaRef: '10.22', keywords: ['thought', 'idea', 'mind', 'focus', 'memory'] },\n  { category: 'Virtue', glory: 'Forgiveness and truth', shlokaRef: '10.4', keywords: ['forgive', 'honest', 'truth', 'patient', 'kind'] },\n  { category: 'Power', glory: 'Victory and determination', shlokaRef: '10.36', keywords: ['win', 'victory', 'determined', 'effort', 'practice'] },\n  { category: 'Silence', glory: 'Silence among secrets', shlokaRef: '10.38', keywords: ['silence', 'quiet', 'still', 'peace', 'calm'] }\n];\n\nfunction findMatches(observations: DayObservation[]): MatchResult[] {\n  const matches: MatchResult[] = [];\n  for (const obs of observations) {\n    const lower = obs.note.toLowerCase();\n    for (const vibhuti of VIBHUTIS) {\n      if (vibhuti.keywords.some((kw) => lower.includes(kw))) {\n        matches.push({ vibhuti, observation: obs });\n        break;\n      }\n    }\n  }\n  return matches;\n}\n\nfunction buildReport(observations: DayObservation[]): VibhutiReport {\n  const matches = findMatches(observations);\n  const categoriesRecognised = new Set(matches.map((m) => m.vibhuti.category)).size;\n  const averageAwe = Math.round(observations.reduce((s, o) => s + o.aweLevel, 0) / observations.length * 10) / 10;\n  const broadenEffect = averageAwe >= 5;   // Keltner: awe broadens attention at moderate+ levels\n  const systemsThinking = categoriesRecognised >= 4; // seeing the one in many categories\n\n  return {\n    observationsAnalyzed: observations.length,\n    matches,\n    categoriesRecognised,\n    averageAwe,\n    broadenEffect,\n    systemsThinking,\n    message: systemsThinking\n      ? `Awe score ${averageAwe}/10: the eye is opening. You recognised the one in ${categoriesRecognised} forms today. The glories are no longer a list; they are a language. (10.7)`\n      : `Awe score ${averageAwe}/10: few glories recognised today. The divine is not hiding — the eye is simply not yet trained. Keep pausing, keep naming. (10.8)`\n  };\n}\n\nconst today: DayObservation[] = [\n  { time: '07:10', note: 'The sunrise split the clouds and light flooded the street.', aweLevel: 8 },\n  { time: '12:40', note: 'A colleague forgave a careless mistake with complete patience.', aweLevel: 6 },\n  { time: '18:05', note: 'I sat in silence on the balcony and watched the river below.', aweLevel: 7 },\n  { time: '21:30', note: 'Two hours of focused practice on the new framework; no distractions.', aweLevel: 5 }\n];\n\nconst report = buildReport(today);\nconsole.log('=== Vibhuti Lens ===');\nconsole.log(`Observations: ${report.observationsAnalyzed} | Categories: ${report.categoriesRecognised} | Avg awe: ${report.averageAwe}/10`);\nconsole.log(`Broaden effect: ${report.broadenEffect ? 'YES' : 'not yet'} | Systems thinking: ${report.systemsThinking ? 'YES' : 'developing'}`);\nfor (const match of report.matches) {\n  console.log(`  ${match.observation.time}: ${match.vibhuti.glory} (${match.vibhuti.shlokaRef})`);\n}\nconsole.log(report.message);\n"
       })
     })]
   });

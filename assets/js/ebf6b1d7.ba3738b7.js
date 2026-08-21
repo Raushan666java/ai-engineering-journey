@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-06-dhyana-yoga-md-ebf.json
-const site_docs_courses_bhagavad_gita_06_dhyana_yoga_md_ebf_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/06-dhyana-yoga","title":"Chapter 6: Dhyana Yoga — The Art of Meditation","description":"\\"The mind is a lamp; meditation is the windless place. Nothing needs to be added to the flame — only the wind must leave.\\"","source":"@site/docs/courses/bhagavad-gita/06-dhyana-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/06-dhyana-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/06-dhyana-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":7,"frontMatter":{"id":"06-dhyana-yoga","slug":"/bhagavad-gita/06-dhyana-yoga","title":"Chapter 6: Dhyana Yoga — The Art of Meditation","sidebar_label":"Chapter 6: Dhyana Yoga — The Art of Meditation","sidebar_position":7},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action","permalink":"/ai-engineering-journey/bhagavad-gita/05-karma-sanyasa-yoga"},"next":{"title":"Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing","permalink":"/ai-engineering-journey/bhagavad-gita/07-jnana-vijnana-yoga"}}');
+const site_docs_courses_bhagavad_gita_06_dhyana_yoga_md_ebf_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/06-dhyana-yoga","title":"Chapter 6: Dhyana Yoga — The Art of Meditation","description":"\\"The mind is a lamp; meditation is the windless place. Nothing needs to be added to the flame — only the wind must leave.\\"","source":"@site/docs/courses/bhagavad-gita/06-dhyana-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/06-dhyana-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/06-dhyana-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":6,"frontMatter":{"id":"06-dhyana-yoga","slug":"/bhagavad-gita/06-dhyana-yoga","title":"Chapter 6: Dhyana Yoga — The Art of Meditation","sidebar_label":"Chapter 6: Dhyana Yoga — The Art of Meditation","sidebar_position":6},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action","permalink":"/ai-engineering-journey/bhagavad-gita/05-karma-sanyasa-yoga"},"next":{"title":"Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing","permalink":"/ai-engineering-journey/bhagavad-gita/07-jnana-vijnana-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/06-dhyana-yoga',
 	title: 'Chapter 6: Dhyana Yoga — The Art of Meditation',
 	sidebar_label: 'Chapter 6: Dhyana Yoga — The Art of Meditation',
-	sidebar_position: 7
+	sidebar_position: 6
 };
 const contentTitle = 'Chapter 6: Dhyana Yoga — The Art of Meditation';
 
@@ -290,6 +290,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Still-Lamp Meditation Logger",
   "id": "typescript-tool-still-lamp-meditation-logger",
   "level": 2
@@ -328,7 +332,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"The mind is a lamp; meditation is the windless place. Nothing needs to be added to the flame — only the wind must leave.\"\r\n— The Osho Way"
+        children: "\"The mind is a lamp; meditation is the windless place. Nothing needs to be added to the flame — only the wind must leave.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "After five chapters of preparation, the Gita now teaches the inner art itself. Chapter 5 ended with a promise — the sage sits, the breath is leveled, the gaze rests between the brows. Now Chapter 6 opens the door: this is dhyana, meditation, the direct meeting of the mind with the Self. And the first surprise is how practical Krishna is. He does not speak of mystical trances or impossible feats. He speaks of the seat, the posture, the food you eat, the hours you sleep, the thoughts you rehearse. Meditation, in this chapter, is not a miracle; it is a science of daily living with a lamp inside."
@@ -505,7 +509,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.1 — The Doer Without Dependency"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nअनाश्रितः कर्मफलं कार्यं कर्म करोति यः |\r\nस संन्यासी च योगी च न निरग्निर्न चाक्रियः"
+        children: "श्रीभगवानुवाच |\nअनाश्रितः कर्मफलं कार्यं कर्म करोति यः |\nस संन्यासी च योगी च न निरग्निर्न चाक्रियः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -524,7 +528,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.2 — Yoga Is Renunciation of Thoughts"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यं संन्यासमिति प्राहुर्योगं तं विद्धि पाण्डव |\r\nन ह्यसंन्यस्तसङ्कल्पो योगी भवति कश्चन"
+        children: "यं संन्यासमिति प्राहुर्योगं तं विद्धि पाण्डव |\nन ह्यसंन्यस्तसङ्कल्पो योगी भवति कश्चन"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -543,7 +547,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.3 — Action First, Stillness After"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आरुरुक्षोर्मुनेर्योगं कर्म कारणमुच्यते |\r\nयोगारूढस्य तस्यैव शमः कारणमुच्यते"
+        children: "आरुरुक्षोर्मुनेर्योगं कर्म कारणमुच्यते |\nयोगारूढस्य तस्यैव शमः कारणमुच्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -562,7 +566,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.4 — Attached to Neither — Yoga Attained"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यदा हि नेन्द्रियार्थेषु न कर्मस्वनुषज्जते |\r\nसर्वसङ्कल्पसंन्यासी योगारूढस्तदोच्यते"
+        children: "यदा हि नेन्द्रियार्थेषु न कर्मस्वनुषज्जते |\nसर्वसङ्कल्पसंन्यासी योगारूढस्तदोच्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -581,7 +585,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.5 — Raise Yourself by Yourself"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "उद्धरेदात्मनात्मानं नात्मानमवसादयेत् |\r\nआत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः"
+        children: "उद्धरेदात्मनात्मानं नात्मानमवसादयेत् |\nआत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -600,7 +604,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.6 — The Self as Friend and Foe"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "बन्धुरात्मात्मनस्तस्य येनात्मैवात्मना जितः |\r\nअनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत्"
+        children: "बन्धुरात्मात्मनस्तस्य येनात्मैवात्मना जितः |\nअनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -619,7 +623,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.7 — Balanced in Cold and Heat"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "जितात्मनः प्रशान्तस्य परमात्मा समाहितः |\r\nशीतोष्णसुखदुःखेषु तथा मानापमानयोः"
+        children: "जितात्मनः प्रशान्तस्य परमात्मा समाहितः |\nशीतोष्णसुखदुःखेषु तथा मानापमानयोः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -638,7 +642,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.8 — The Clod, the Stone, and Gold"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ज्ञानविज्ञानतृप्तात्मा कूटस्थो विजितेन्द्रियः |\r\nयुक्त इत्युच्यते योगी समलोष्टाश्मकाञ्चनः"
+        children: "ज्ञानविज्ञानतृप्तात्मा कूटस्थो विजितेन्द्रियः |\nयुक्त इत्युच्यते योगी समलोष्टाश्मकाञ्चनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -657,7 +661,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.9 — The Same Mind to All"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु |\r\nसाधुष्वपि च पापेषु समबुद्धिर्विशिष्यते"
+        children: "सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु |\nसाधुष्वपि च पापेषु समबुद्धिर्विशिष्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -676,7 +680,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.10 — Solitude of the Single One"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "योगी युञ्जीत सततमात्मानं रहसि स्थितः |\r\nएकाकी यतचित्तात्मा निराशीरपरिग्रहः"
+        children: "योगी युञ्जीत सततमात्मानं रहसि स्थितः |\nएकाकी यतचित्तात्मा निराशीरपरिग्रहः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -695,7 +699,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.11 — The Firm Seat"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "शुचौ देशे प्रतिष्ठाप्य स्थिरमासनमात्मनः |\r\nनात्युच्छ्रितं नातिनीचं चैलाजिनकुशोत्तरम्"
+        children: "शुचौ देशे प्रतिष्ठाप्य स्थिरमासनमात्मनः |\nनात्युच्छ्रितं नातिनीचं चैलाजिनकुशोत्तरम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -714,7 +718,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.12 — The One-Pointed Mind"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तत्रैकाग्रं मनः कृत्वा यतचित्तेन्द्रियक्रियः |\r\nउपविश्यासने युञ्ज्याद्योगमात्मविशुद्धये"
+        children: "तत्रैकाग्रं मनः कृत्वा यतचित्तेन्द्रियक्रियः |\nउपविश्यासने युञ्ज्याद्योगमात्मविशुद्धये"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -733,7 +737,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.13 — The Erect Posture"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "समं कायशिरोग्रीवं धारयन्नचलं स्थिरः |\r\nसम्प्रेक्ष्य नासिकाग्रं स्वं दिशश्चानवलोकयन्"
+        children: "समं कायशिरोग्रीवं धारयन्नचलं स्थिरः |\nसम्प्रेक्ष्य नासिकाग्रं स्वं दिशश्चानवलोकयन्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -752,7 +756,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.14 — Serene, Fearless, Firm"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "प्रशान्तात्मा विगतभीर्ब्रह्मचारिव्रते स्थितः |\r\nमनः संयम्य मच्चित्तो युक्त आसीत मत्परः"
+        children: "प्रशान्तात्मा विगतभीर्ब्रह्मचारिव्रते स्थितः |\nमनः संयम्य मच्चित्तो युक्त आसीत मत्परः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -771,7 +775,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.15 — Peace That Ends in Liberation"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "युञ्जन्नेवं सदात्मानं योगी नियतमानसः |\r\nशान्तिं निर्वाणपरमां मत्संस्थामधिगच्छति"
+        children: "युञ्जन्नेवं सदात्मानं योगी नियतमानसः |\nशान्तिं निर्वाणपरमां मत्संस्थामधिगच्छति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -790,7 +794,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.16 — Neither Starving Nor Stuffed"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नात्यश्नतस्तु योगोऽस्ति न चैकान्तमनश्नतः |\r\nन चातिस्वप्नशीलस्य जाग्रतो नैव चार्जुन"
+        children: "नात्यश्नतस्तु योगोऽस्ति न चैकान्तमनश्नतः |\nन चातिस्वप्नशीलस्य जाग्रतो नैव चार्जुन"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -809,7 +813,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.17 — The Golden Mean Destroys Pain"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु |\r\nयुक्तस्वप्नावबोधस्य योगो भवति दुःखहा"
+        children: "युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु |\nयुक्तस्वप्नावबोधस्य योगो भवति दुःखहा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -828,7 +832,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.18 — The Mind Resting in the Self"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यदा विनियतं चित्तमात्मन्येवावतिष्ठते |\r\nनिःस्पृहः सर्वकामेभ्यो युक्त इत्युच्यते तदा"
+        children: "यदा विनियतं चित्तमात्मन्येवावतिष्ठते |\nनिःस्पृहः सर्वकामेभ्यो युक्त इत्युच्यते तदा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -847,7 +851,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.19 — The Lamp in the Windless Place"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यथा दीपो निवातस्थो नेङ्गते सोपमा स्मृता |\r\nयोगिनो यतचित्तस्य युञ्जतो योगमात्मनः"
+        children: "यथा दीपो निवातस्थो नेङ्गते सोपमा स्मृता |\nयोगिनो यतचित्तस्य युञ्जतो योगमात्मनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -866,7 +870,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.20 — Seeing the Self by the Self"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यत्रोपरमते चित्तं निरुद्धं योगसेवया |\r\nयत्र चैवात्मनात्मानं पश्यन्नात्मनि तुष्यति"
+        children: "यत्रोपरमते चित्तं निरुद्धं योगसेवया |\nयत्र चैवात्मनात्मानं पश्यन्नात्मनि तुष्यति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -885,7 +889,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.21 — The Bliss Beyond the Senses"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सुखमात्यन्तिकं यत्तद् बुद्धिग्राह्यमतीन्द्रियम् |\r\nवेत्ति यत्र न चैवायं स्थितश्चलति तत्त्वतः"
+        children: "सुखमात्यन्तिकं यत्तद् बुद्धिग्राह्यमतीन्द्रियम् |\nवेत्ति यत्र न चैवायं स्थितश्चलति तत्त्वतः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -904,7 +908,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.22 — The Gain Above All Gains"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यं लब्ध्वा चापरं लाभं मन्यते नाधिकं ततः |\r\nयस्मिन्स्थितो न दुःखेन गुरुणापि विचाल्यते"
+        children: "यं लब्ध्वा चापरं लाभं मन्यते नाधिकं ततः |\nयस्मिन्स्थितो न दुःखेन गुरुणापि विचाल्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -923,7 +927,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.23 — Severance from Pain"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तं विद्याद् दुःखसंयोगवियोगं योगसंज्ञितम् |\r\nस निश्चयेन योक्तव्यो योगोऽनिर्विण्णचेतसा"
+        children: "तं विद्याद् दुःखसंयोगवियोगं योगसंज्ञितम् |\nस निश्चयेन योक्तव्यो योगोऽनिर्विण्णचेतसा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -942,7 +946,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.24 — Desires Released Without Reserve"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सङ्कल्पप्रभवान्कामांस्त्यक्त्वा सर्वानशेषतः |\r\nमनसैवेन्द्रियग्रामं विनियम्य समन्ततः"
+        children: "सङ्कल्पप्रभवान्कामांस्त्यक्त्वा सर्वानशेषतः |\nमनसैवेन्द्रियग्रामं विनियम्य समन्ततः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -961,7 +965,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.25 — Little by Little"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया |\r\nआत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत्"
+        children: "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया |\nआत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -980,7 +984,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.26 — The Bull Called Mind"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम् |\r\nततस्ततो नियम्यैतदात्मन्येव वशं नयेत्"
+        children: "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम् |\nततस्ततो नियम्यैतदात्मन्येव वशं नयेत्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -999,7 +1003,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.27 — Supreme Bliss Comes to the Serene"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "प्रशान्तमनसं ह्येनं योगिनं सुखमुत्तमम् |\r\nउपैति शान्तरजसं ब्रह्मभूतमकल्मषम्"
+        children: "प्रशान्तमनसं ह्येनं योगिनं सुखमुत्तमम् |\nउपैति शान्तरजसं ब्रह्मभूतमकल्मषम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1018,7 +1022,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.28 — The Infinite Joy of Contact"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "युञ्जन्नेवं सदात्मानं योगी विगतकल्मषः |\r\nसुखेन ब्रह्मसंस्पर्शमत्यन्तं सुखमश्नुते"
+        children: "युञ्जन्नेवं सदात्मानं योगी विगतकल्मषः |\nसुखेन ब्रह्मसंस्पर्शमत्यन्तं सुखमश्नुते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1037,7 +1041,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.29 — All Beings in the Self"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि |\r\nईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः"
+        children: "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि |\nईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1056,7 +1060,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.30 — Never Lost to Each Other"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति |\r\nतस्याहं न प्रणश्यामि स च मे न प्रणश्यति"
+        children: "यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति |\nतस्याहं न प्रणश्यामि स च मे न प्रणश्यति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1075,7 +1079,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.31 — Abiding in Me Whatever He Does"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सर्वभूतस्थितं यो मां भजत्येकत्वमास्थितः |\r\nसर्वथा वर्तमानोऽपि स योगी मयि वर्तते"
+        children: "सर्वभूतस्थितं यो मां भजत्येकत्वमास्थितः |\nसर्वथा वर्तमानोऽपि स योगी मयि वर्तते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1094,7 +1098,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.32 — The Highest Yogi"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आत्मौपम्येन सर्वत्र समं पश्यति योऽर्जुन |\r\nसुखं वा यदि वा दुःखं स योगी परमो मतः"
+        children: "आत्मौपम्येन सर्वत्र समं पश्यति योऽर्जुन |\nसुखं वा यदि वा दुःखं स योगी परमो मतः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1113,7 +1117,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.33 — The Mind Is Restless"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nयोऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन |\r\nएतस्याहं न पश्यामि चञ्चलत्वात्स्थितिं स्थिराम्"
+        children: "अर्जुन उवाच |\nयोऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन |\nएतस्याहं न पश्यामि चञ्चलत्वात्स्थितिं स्थिराम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1132,7 +1136,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.34 — Hard to Hold as the Wind"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद् दृढम् |\r\nतस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्"
+        children: "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद् दृढम् |\nतस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1151,7 +1155,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.35 — Practice and Dispassion"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nअसंशयं महाबाहो मनो दुर्निग्रहं चलम् |\r\nअभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते"
+        children: "श्रीभगवानुवाच |\nअसंशयं महाबाहो मनो दुर्निग्रहं चलम् |\nअभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1170,7 +1174,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.36 — The Self-Controlled One Attains"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "असंयतात्मना योगो दुष्प्राप इति मे मतिः |\r\nवश्यात्मना तु यतता शक्योऽवाप्तुमुपायतः"
+        children: "असंयतात्मना योगो दुष्प्राप इति मे मतिः |\nवश्यात्मना तु यतता शक्योऽवाप्तुमुपायतः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1189,7 +1193,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.37 — The Fallen Striver's Question"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nअयतिः श्रद्धयोपेतो योगाच्चलितमानसः |\r\nअप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति"
+        children: "अर्जुन उवाच |\nअयतिः श्रद्धयोपेतो योगाच्चलितमानसः |\nअप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1208,7 +1212,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.38 — Not Torn Apart Like a Cloud"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कच्चिन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति |\r\nअप्रतिष्ठो महाबाहो विमूढो ब्रह्मणः पथि"
+        children: "कच्चिन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति |\nअप्रतिष्ठो महाबाहो विमूढो ब्रह्मणः पथि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1227,7 +1231,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.39 — Only You Can Cut This Doubt"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषतः |\r\nत्वदन्यः संशयस्यास्य छेत्ता न ह्युपपद्यते"
+        children: "एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषतः |\nत्वदन्यः संशयस्यास्य छेत्ता न ह्युपपद्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1246,7 +1250,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.40 — No Destruction for the Good"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nपार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते |\r\nन हि कल्याणकृत्कश्चिद् दुर्गतिं तात गच्छति"
+        children: "श्रीभगवानुवाच |\nपार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते |\nन हि कल्याणकृत्कश्चिद् दुर्गतिं तात गच्छति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1265,7 +1269,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.41 — Reborn in a Pure House"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "प्राप्य पुण्यकृतां लोकानुषित्वा शाश्वतीः समाः |\r\nशुचीनां श्रीमतां गेहे योगभ्रष्टोऽभिजायते"
+        children: "प्राप्य पुण्यकृतां लोकानुषित्वा शाश्वतीः समाः |\nशुचीनां श्रीमतां गेहे योगभ्रष्टोऽभिजायते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1284,7 +1288,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.42 — The Family of Yogis"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अथवा योगिनामेव कुले भवति धीमताम् |\r\nएतद्धि दुर्लभतरं लोके जन्म यदीदृशम्"
+        children: "अथवा योगिनामेव कुले भवति धीमताम् |\nएतद्धि दुर्लभतरं लोके जन्म यदीदृशम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1303,7 +1307,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.43 — The Knowledge Carried Over"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम् |\r\nयतते च ततो भूयः संसिद्धौ कुरुनन्दन"
+        children: "तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम् |\nयतते च ततो भूयः संसिद्धौ कुरुनन्दन"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1322,7 +1326,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.44 — Borne On by Former Practice"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "पूर्वाभ्यासेन तेनैव ह्रियते ह्यवशोऽपि सः |\r\nजिज्ञासुरपि योगस्य शब्दब्रह्मातिवर्तते"
+        children: "पूर्वाभ्यासेन तेनैव ह्रियते ह्यवशोऽपि सः |\nजिज्ञासुरपि योगस्य शब्दब्रह्मातिवर्तते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1341,7 +1345,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.45 — The Long Road of Many Births"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "प्रयत्नाद्यतमानस्तु योगी संशुद्धकिल्बिषः |\r\nअनेकजन्मसंसिद्धस्ततो याति परां गतिम्"
+        children: "प्रयत्नाद्यतमानस्तु योगी संशुद्धकिल्बिषः |\nअनेकजन्मसंसिद्धस्ततो याति परां गतिम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1360,7 +1364,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.46 — Be a Yogi, Arjuna"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तपस्विभ्योऽधिको योगी ज्ञानिभ्योऽपि मतोऽधिकः |\r\nकर्मिभ्यश्चाधिको योगी तस्माद्योगी भवार्जुन"
+        children: "तपस्विभ्योऽधिको योगी ज्ञानिभ्योऽपि मतोऽधिकः |\nकर्मिभ्यश्चाधिको योगी तस्माद्योगी भवार्जुन"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1379,7 +1383,7 @@ function _createMdxContent(props) {
       children: "Shloka 6.47 — The Most United of All"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "योगिनामपि सर्वेषां मद्गतेनान्तरात्मना |\r\nश्रद्धावान्भजते यो मां स मे युक्ततमो मतः"
+        children: "योगिनामपि सर्वेषां मद्गतेनान्तरात्मना |\nश्रद्धावान्भजते यो मां स मे युक्ततमो मतः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1490,13 +1494,95 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Meditation Neuroscience and the Default Mode Network"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Chapter 6 is the Gita's meditation manual. Modern neuroscience confirms its core claims: meditation suppresses the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "default mode network"
+        }), " (DMN) — the brain's \"wandering mind\" circuit (Brewer et al., 2011) — and strengthens the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "attention networks"
+        }), " that keep the mind focused. The \"wind-mind\" that Arjuna describes (6.34) is the DMN: the brain's default state is rumination, and meditation is the practice of overriding it."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The seat and posture (6.11–6.13)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Proprioceptive feedback (Farb et al., 2015)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Physical posture affects mental state — a stable seat creates a stable mind through body-brain feedback loops"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Moderation in food and sleep (6.16–6.17)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Circadian rhythm research (Czeisler, 1999)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Sleep deprivation increases DMN activity and emotional reactivity — the Gita's moderation advice is neurologically precise"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The wind-mind (6.34)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Default mode network (Raichle, 2001)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The DMN activates during mind-wandering and deactivates during focused attention — meditation literally quiets the \"wind\""
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Practice and dispassion (6.35)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Neuroplasticity (Lazar et al., 2005)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "8 weeks of meditation thickens the prefrontal cortex (attention) and shrinks the amygdala (reactivity) — the two hands that hold the wind"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The fallen yogi is never lost (6.40–6.44)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Skill retention (Anderson, 1982)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Procedural memory is never fully lost — the neural pathways created by meditation practice persist even after long breaks"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Bliss beyond the senses (6.21)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Default mode suppression → positive affect (Keng et al., 2011)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "When the DMN quiets, experienced meditators report positive affect — the \"supreme bliss\" of 6.21 correlates with reduced self-referential processing"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " Set a timer for 10 minutes. Sit with a straight spine (6.12). Focus on the breath. When the mind wanders (it will — this is the DMN activating), gently bring it back. Count how many times you return. This number is your \"practice score\" — every return strengthens the attention network. The Gita's promise (6.40): no effort is ever lost."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The meditation of Chapter 6 builds on the witness practice of Chapter 2 (2.54–2.72) and the desire-ladder of Chapter 3 (3.42). The witness observes; the ladder climbs; Chapter 6 teaches the technique of sitting still while the climbing happens."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"Arjuna: renunciation or action — which is better?\"] --> B[\"Krishna: both are the same summit — the sannyasi acts without dependence\"]\r\n    B --> C[\"The yogi raises himself by himself\"]\r\n    C --> D[\"The technology: clean seat, straight spine, one-pointed mind\"]\r\n    D --> E[\"Moderation in food, sleep, and effort\"]\r\n    E --> F[\"The lamp in the windless place: the mind rests in the Self\"]\r\n    F --> G[\"Bliss beyond the senses; the gain above all gains\"]\r\n    G --> H[\"The vision: the Self in all beings, all beings in the Self\"]\r\n    H --> I[\"Arjuna's doubt: the mind is hard to hold as the wind\"]\r\n    I --> J[\"Practice and dispassion — the two hands that hold the wind\"]\r\n    J --> K[\"The promise: no good effort is ever lost\"]\r\n    K --> L[\"The most united: the inner self merged in love\"]\r\n    style E fill:#4446e8,color:#fff\r\n    style L fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"Arjuna: renunciation or action — which is better?\"] --> B[\"Krishna: both are the same summit — the sannyasi acts without dependence\"]\n    B --> C[\"The yogi raises himself by himself\"]\n    C --> D[\"The technology: clean seat, straight spine, one-pointed mind\"]\n    D --> E[\"Moderation in food, sleep, and effort\"]\n    E --> F[\"The lamp in the windless place: the mind rests in the Self\"]\n    F --> G[\"Bliss beyond the senses; the gain above all gains\"]\n    G --> H[\"The vision: the Self in all beings, all beings in the Self\"]\n    H --> I[\"Arjuna's doubt: the mind is hard to hold as the wind\"]\n    I --> J[\"Practice and dispassion — the two hands that hold the wind\"]\n    J --> K[\"The promise: no good effort is ever lost\"]\n    K --> L[\"The most united: the inner self merged in love\"]\n    style E fill:#4446e8,color:#fff\n    style L fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -1504,7 +1590,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root[(Dhyana Yoga)]\r\n    Who is the yogi\r\n      Acts without dependence\r\n      Renounces thoughts\r\n      Raises himself by himself\r\n      Equal mind to all\r\n    The technology\r\n      Solitude and the single one\r\n      The firm seat\r\n      The erect posture\r\n      Moderation in food and sleep\r\n    The method\r\n      One-pointed mind\r\n      The lamp in the windless place\r\n      Little by little\r\n      The repeated return\r\n    The fruits\r\n      The gain above all gains\r\n      Severance from pain\r\n      The Self in all beings\r\n      The mutual promise\r\n    The two doubts\r\n      The mind like the wind\r\n      Practice and dispassion\r\n      The fallen yogi is never lost\r\n      Effort is seed\r\n    The crown\r\n      Be a yogi, Arjuna\r\n      The most united is the lover\n"
+        children: "mindmap\n  root[(Dhyana Yoga)]\n    Who is the yogi\n      Acts without dependence\n      Renounces thoughts\n      Raises himself by himself\n      Equal mind to all\n    The technology\n      Solitude and the single one\n      The firm seat\n      The erect posture\n      Moderation in food and sleep\n    The method\n      One-pointed mind\n      The lamp in the windless place\n      Little by little\n      The repeated return\n    The fruits\n      The gain above all gains\n      Severance from pain\n      The Self in all beings\n      The mutual promise\n    The two doubts\n      The mind like the wind\n      Practice and dispassion\n      The fallen yogi is never lost\n      Effort is seed\n    The crown\n      Be a yogi, Arjuna\n      The most united is the lover\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1607,75 +1693,51 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q3. According to Shloka 6.35, by what two means is the restless mind restrained?"
+        children: "Q3. Krishna says the mind is \"hard to restrain, as the wind\" (6.34). Modern neuroscience identifies this \"wind\" as the default mode network. What does this mean for meditation practice?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Fasting and silence"
+        children: "a. Meditation is impossible for most people because the DMN is too strong"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Practice and dispassion"
+        children: "b. The mind-wandering is normal — every return of attention strengthens the attention network. The practice is the returning, not the staying"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Ritual and pilgrimage"
+        children: "c. The DMN should be destroyed through extreme asceticism"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Fear and discipline"
+        children: "d. Only advanced meditators can quiet the DMN"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
       "data-qid": "bg6-q3",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
         children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        })
+        }), " Brewer et al. (2011) found that experienced meditators show reduced DMN activity — but this comes through practice, not force. Every time the mind wanders and you bring it back, you strengthen the prefrontal attention network and weaken the DMN's pull. The \"wind\" is not the enemy; the practice of returning is the path. This is Krishna's \"practice and dispassion\" (6.35)."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q4. In Shloka 6.16, Yoga is said to be impossible for which of these?"
+        children: "Q5. Krishna says the fallen yogi is \"never lost\" (6.40–6.44). How does this map onto skill retention in cognitive science?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. One who eats too much"
+        children: "a. It doesn't — skills are always lost if not practiced"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. One who does not eat at all"
+        children: "b. Procedural memory is never fully lost — neural pathways created by practice persist even after long breaks. The meditation practice of last year still benefits you today"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. One who sleeps too much"
+        children: "c. It is only a安慰 promise with no scientific basis"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. All of the above"
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
-      className: "tp-qa-card",
-      "data-qid": "bg6-q4",
-      children: [(0,jsx_runtime.jsx)(_components.summary, {
-        children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: d."
-        })
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q5. What does Krishna say about the one who falls from Yoga (Shlokas 6.40-6.44)?"
-      })
-    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. He is destroyed like a torn cloud"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Nothing good is lost; he is carried on by his former practice"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. He must start again from the very beginning"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. He is banished from the path forever"
+        children: "d. The fallen yogi must start completely from scratch"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
       "data-qid": "bg6-q5",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
         children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        })
+        }), " Anderson (1982) showed that procedural skills (riding a bike, playing an instrument) are stored in the cerebellum and basal ganglia and are never fully lost. The neural pathways created by meditation practice persist — even a single session creates measurable changes in brain structure (Lazar et al., 2005). Krishna's promise is neurologically accurate: no effort is ever lost."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
@@ -1722,13 +1784,30 @@ function _createMdxContent(props) {
           children: "twoHandsReport"
         }), " that combines practice consistency with dispassion, testing Krishna's claim in 6.35 that both hands together hold the mind."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Deep work and dhyana:"
+        }), " The meditation of Chapter 6 is the prototype of deep work (Newport, 2016). The clean seat, the straight spine, the one-pointed mind — these are the same conditions required for flow-state coding. Create a \"meditation seat\" for your coding: clean desk, no notifications, one task."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The return counter for debugging:"
+        }), " When you're debugging and your mind wanders to the weekend, gently return to the code. Each return strengthens the attention network. The \"wind-mind\" (6.34) is the same force that distracts you during code review."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "No effort is ever lost (6.40):"
+        }), " The time you spent learning a framework that was later deprecated was not wasted. The neural pathways of learning persist. The framework may be gone; the understanding remains."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-still-lamp-meditation-logger",
       children: "TypeScript Tool: Still-Lamp Meditation Logger"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Still-Lamp Meditation Logger\r\n * Based on Dhyana Yoga (Chapter 6 of the Bhagavad Gita):\r\n * the mind is a lamp, meditation is the windless place —\r\n * the flame is steady by nature, only the winds must leave.\r\n * Tracks daily sittings and wanderings, then reports your\r\n * steadiness index. Osho's lens: count the returns, not the failures.\r\n */\r\n\r\ninterface Sitting {\r\n  date: string;\r\n  durationMinutes: number;\r\n  wanders: number;      // how many times the mind wandered away\r\n  returns: number;      // how many times you brought it home\r\n  windLevel: number;    // 0-10, how stormy the mind felt\r\n  moderated: boolean;   // was food/sleep/effort kept in the middle today?\r\n}\r\n\r\ninterface SteadinessReport {\r\n  sittings: number;\r\n  totalMinutes: number;\r\n  totalReturns: number;\r\n  returnRate: number;       // returns per wandering\r\n  averageWind: number;      // 0-10\r\n  steadinessIndex: number;  // 0-100\r\n  verdict: string;\r\n}\r\n\r\nconst MAX_WIND = 10;\r\n\r\nfunction sittingSteadiness(s: Sitting): number {\r\n  const returnFactor = s.returns > 0 ? Math.min(1, s.returns / Math.max(1, s.wanders)) : 0;\r\n  const windFactor = 1 - s.windLevel / MAX_WIND;\r\n  const moderationBonus = s.moderated ? 0.1 : 0;\r\n  const raw = (0.5 * returnFactor + 0.4 * windFactor + moderationBonus) * 100;\r\n  return Math.max(0, Math.min(100, Math.round(raw)));\r\n}\r\n\r\nfunction analyzeWeek(sittings: Sitting[]): SteadinessReport {\r\n  const total = sittings.length;\r\n  const totalMinutes = sittings.reduce((s, x) => s + x.durationMinutes, 0);\r\n  const totalReturns = sittings.reduce((s, x) => s + x.returns, 0);\r\n  const totalWanders = sittings.reduce((s, x) => s + x.wanders, 0);\r\n  const avgWind = sittings.reduce((s, x) => s + x.windLevel, 0) / total;\r\n  const index = Math.round(sittings.reduce((s, x) => s + sittingSteadiness(x), 0) / total);\r\n\r\n  let verdict = 'windy: the flame flickers, and that is only the weather, not the lamp.';\r\n  if (index >= 75) verdict = 'windless: the lamp rests in its own shelter.';\r\n  else if (index >= 50) verdict = 'half-sheltered: the flame steadies, but the winds still visit.';\r\n\r\n  return {\r\n    sittings: total,\r\n    totalMinutes,\r\n    totalReturns,\r\n    returnRate: totalWanders > 0 ? Math.round((totalReturns / totalWanders) * 100) / 100 : 0,\r\n    averageWind: Math.round(avgWind * 10) / 10,\r\n    steadinessIndex: index,\r\n    verdict\r\n  };\r\n}\r\n\r\nfunction runDemo(): void {\r\n  const week: Sitting[] = [\r\n    { date: '2026-08-20', durationMinutes: 10, wanders: 12, returns: 11, windLevel: 6, moderated: true },\r\n    { date: '2026-08-21', durationMinutes: 12, wanders: 9, returns: 9, windLevel: 4, moderated: true },\r\n    { date: '2026-08-22', durationMinutes: 8, wanders: 14, returns: 12, windLevel: 7, moderated: false },\r\n    { date: '2026-08-23', durationMinutes: 15, wanders: 8, returns: 8, windLevel: 3, moderated: true }\r\n  ];\r\n\r\n  const report = analyzeWeek(week);\r\n  console.log('=== Still-Lamp Meditation Logger ===');\r\n  console.log(`Sittings: ${report.sittings}`);\r\n  console.log(`Total minutes: ${report.totalMinutes}`);\r\n  console.log(`Total returns: ${report.totalReturns}`);\r\n  console.log(`Return rate: ${report.returnRate} returns per wander`);\r\n  console.log(`Average wind: ${report.averageWind}/10`);\r\n  console.log(`Steadiness index: ${report.steadinessIndex}/100`);\r\n  console.log(`Verdict: ${report.verdict}`);\r\n}\r\n\r\nrunDemo();\n"
+        children: "/**\n * Still-Lamp Meditation Logger — DMN Neuroscience Edition\n * Based on Dhyana Yoga (Gita 6.10–6.47) and meditation\n * neuroscience: the default mode network (DMN) is the\n * brain's \"wind-mind\" (6.34); meditation suppresses it\n * and strengthens attention networks (Brewer et al., 2011).\n *\n * Tracks: sessions, wanders, returns, DMN proxy score,\n * and the neuroplasticity trajectory over time.\n *\n * Run: npx ts-node still-lamp-meditation-logger.ts\n */\n\ninterface Sitting {\n  date: string;\n  durationMinutes: number;\n  wanders: number;\n  returns: number;\n  windLevel: number;        // 0–10: subjective DMN intensity\n  moderated: boolean;       // food/sleep/effort in balance (6.16–6.17)\n  focusQuality: number;     // 0–10: how deep was the attention?\n}\n\ninterface SteadinessReport {\n  sittings: number;\n  totalMinutes: number;\n  totalReturns: number;\n  returnRate: number;\n  averageWind: number;\n  dmnSuppressionIndex: number;  // 0–100: how well the DMN is being quieted\n  neuroplasticityScore: number; // cumulative benefit over time\n  verdict: string;\n}\n\nfunction sittingSteadiness(s: Sitting, weekIndex: number): number {\n  const returnFactor = s.returns > 0 ? Math.min(1, s.returns / Math.max(1, s.wanders)) : 0;\n  const windFactor = 1 - s.windLevel / 10;\n  const focusFactor = s.focusQuality / 10;\n  const moderationBonus = s.moderated ? 0.1 : 0;\n  // Neuroplasticity: later sessions benefit from earlier practice\n  const plasticityBonus = Math.min(0.15, weekIndex * 0.02);\n  const raw = (0.35 * returnFactor + 0.3 * windFactor + 0.2 * focusFactor + moderationBonus + plasticityBonus) * 100;\n  return Math.max(0, Math.min(100, Math.round(raw)));\n}\n\nfunction analyzeWeek(sittings: Sitting[]): SteadinessReport {\n  const total = sittings.length;\n  const totalMinutes = sittings.reduce((s, x) => s + x.durationMinutes, 0);\n  const totalReturns = sittings.reduce((s, x) => s + x.returns, 0);\n  const totalWanders = sittings.reduce((s, x) => s + x.wanders, 0);\n  const avgWind = sittings.reduce((s, x) => s + x.windLevel, 0) / total;\n  const dmnSuppressionIndex = Math.round(sittings.reduce((s, x, i) => s + sittingSteadiness(x, i), 0) / total);\n\n  // Neuroplasticity: cumulative benefit — each session adds to the previous\n  const neuroplasticityScore = Math.min(100, Math.round(\n    sittings.reduce((cumulative, s, i) => {\n      const sessionBenefit = (s.focusQuality * 2 + s.returns) * (1 + i * 0.1);\n      return cumulative + sessionBenefit;\n    }, 0) / total\n  ));\n\n  let verdict: string;\n  if (dmnSuppressionIndex >= 75) {\n    verdict = 'The lamp rests in its own shelter. DMN activity is low; attention networks are strong. (6.18)';\n  } else if (dmnSuppressionIndex >= 50) {\n    verdict = 'Half-sheltered: the flame steadies, but the winds still visit. Keep practising — neuroplasticity is building. (6.35)';\n  } else {\n    verdict = 'Windy: the DMN is active, and that is only the weather, not the lamp. Count the returns — each one is a neural pathway strengthening. (6.26)';\n  }\n\n  return {\n    sittings: total,\n    totalMinutes,\n    totalReturns,\n    returnRate: totalWanders > 0 ? Math.round((totalReturns / totalWanders) * 100) / 100 : 0,\n    averageWind: Math.round(avgWind * 10) / 10,\n    dmnSuppressionIndex,\n    neuroplasticityScore,\n    verdict\n  };\n}\n\nconst week: Sitting[] = [\n  { date: '2026-08-20', durationMinutes: 10, wanders: 12, returns: 11, windLevel: 6, moderated: true, focusQuality: 5 },\n  { date: '2026-08-21', durationMinutes: 12, wanders: 9, returns: 9, windLevel: 4, moderated: true, focusQuality: 6 },\n  { date: '2026-08-22', durationMinutes: 8, wanders: 14, returns: 12, windLevel: 7, moderated: false, focusQuality: 4 },\n  { date: '2026-08-23', durationMinutes: 15, wanders: 8, returns: 8, windLevel: 3, moderated: true, focusQuality: 7 },\n  { date: '2026-08-24', durationMinutes: 10, wanders: 7, returns: 7, windLevel: 3, moderated: true, focusQuality: 8 }\n];\n\nconst report = analyzeWeek(week);\n\nconsole.log('=== Still-Lamp Meditation Logger ===');\nconsole.log(`Sessions: ${report.sittings} | Total: ${report.totalMinutes} min`);\nconsole.log(`Returns: ${report.totalReturns} | Return rate: ${report.returnRate}`);\nconsole.log(`Avg DMN intensity: ${report.averageWind}/10`);\nconsole.log(`DMN suppression: ${report.dmnSuppressionIndex}/100 | Neuroplasticity: ${report.neuroplasticityScore}/100`);\nconsole.log(`Verdict: ${report.verdict}`);\n"
       })
     })]
   });

@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-08-akshara-brahma-yoga-md-995.json
-const site_docs_courses_bhagavad_gita_08_akshara_brahma_yoga_md_995_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/08-akshara-brahma-yoga","title":"Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute","description":"\\"Death is not the end of life; it is the truth of life surfacing. The question is not whether you will die — it is which thought you will be wearing when you arrive.\\"","source":"@site/docs/courses/bhagavad-gita/08-akshara-brahma-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/08-akshara-brahma-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/08-akshara-brahma-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":9,"frontMatter":{"id":"08-akshara-brahma-yoga","slug":"/bhagavad-gita/08-akshara-brahma-yoga","title":"Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute","sidebar_label":"Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute","sidebar_position":9},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing","permalink":"/ai-engineering-journey/bhagavad-gita/07-jnana-vijnana-yoga"},"next":{"title":"Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret","permalink":"/ai-engineering-journey/bhagavad-gita/09-rajavidya-rajaguhya-yoga"}}');
+const site_docs_courses_bhagavad_gita_08_akshara_brahma_yoga_md_995_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/08-akshara-brahma-yoga","title":"Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute","description":"\\"Death is not the end of life; it is the truth of life surfacing. The question is not whether you will die — it is which thought you will be wearing when you arrive.\\"","source":"@site/docs/courses/bhagavad-gita/08-akshara-brahma-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/08-akshara-brahma-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/08-akshara-brahma-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":8,"frontMatter":{"id":"08-akshara-brahma-yoga","slug":"/bhagavad-gita/08-akshara-brahma-yoga","title":"Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute","sidebar_label":"Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute","sidebar_position":8},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing","permalink":"/ai-engineering-journey/bhagavad-gita/07-jnana-vijnana-yoga"},"next":{"title":"Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret","permalink":"/ai-engineering-journey/bhagavad-gita/09-rajavidya-rajaguhya-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/08-akshara-brahma-yoga',
 	title: 'Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute',
 	sidebar_label: 'Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute',
-	sidebar_position: 9
+	sidebar_position: 8
 };
 const contentTitle = 'Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute';
 
@@ -214,6 +214,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Last Thought Forecaster",
   "id": "typescript-tool-last-thought-forecaster",
   "level": 2
@@ -252,7 +256,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"Death is not the end of life; it is the truth of life surfacing. The question is not whether you will die — it is which thought you will be wearing when you arrive.\"\r\n— The Osho Way"
+        children: "\"Death is not the end of life; it is the truth of life surfacing. The question is not whether you will die — it is which thought you will be wearing when you arrive.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "For the first time in this middle stretch of the Gita, Arjuna speaks — and he asks seven questions in two verses. What is Brahman? What is adhyatma? What is karma? What is adhibhuta? What is adhidaiva? Who is adhiyajna in this body? And how are You to be known at the hour of departure? Osho reads these as the questions of a man who has suddenly understood that the war he is about to fight will not be the last battle. Arjuna is asking about the final battle — the one every human being fights alone, at the end. This chapter is the Gita's great teaching on death."
@@ -415,7 +419,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.1 — Arjuna's Seven Questions"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nकिं तद् ब्रह्म किमध्यात्मं किं कर्म पुरुषोत्तम |\r\nअधिभूतं च किं प्रोक्तमधिदैवं किमुच्यते"
+        children: "अर्जुन उवाच |\nकिं तद् ब्रह्म किमध्यात्मं किं कर्म पुरुषोत्तम |\nअधिभूतं च किं प्रोक्तमधिदैवं किमुच्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -434,7 +438,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.2 — And How Are You Known at the End?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अधियज्ञः कथं कोऽत्र देहेऽस्मिन्मधुसूदन |\r\nप्रयाणकाले च कथं ज्ञेयोऽसि नियतात्मभिः"
+        children: "अधियज्ञः कथं कोऽत्र देहेऽस्मिन्मधुसूदन |\nप्रयाणकाले च कथं ज्ञेयोऽसि नियतात्मभिः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -453,7 +457,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.3 — The Imperishable Brahman"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nअक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते |\r\nभूतभावोद्भवकरो विसर्गः कर्मसंज्ञितः"
+        children: "श्रीभगवानुवाच |\nअक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते |\nभूतभावोद्भवकरो विसर्गः कर्मसंज्ञितः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -472,7 +476,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.4 — The Perishable, the Person, and the Sacrifice"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अधिभूतं क्षरो भावः पुरुषश्चाधिदैवतम् |\r\nअधियज्ञोऽहमेवात्र देहे देहभृतां वर"
+        children: "अधिभूतं क्षरो भावः पुरुषश्चाधिदैवतम् |\nअधियज्ञोऽहमेवात्र देहे देहभृतां वर"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -491,7 +495,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.5 — The Last Remembrance"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम् |\r\nयः प्रयाति स मद्भावं याति नास्त्यत्र संशयः"
+        children: "अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम् |\nयः प्रयाति स मद्भावं याति नास्त्यत्र संशयः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -510,7 +514,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.6 — What You Think, You Become"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम् |\r\nतं तमेवैति कौन्तेय सदा तद्भावभावितः"
+        children: "यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम् |\nतं तमेवैति कौन्तेय सदा तद्भावभावितः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -529,7 +533,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.7 — Remember Me — and Fight"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च |\r\nमय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयः (orसंशयम्)"
+        children: "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च |\nमय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयः (orसंशयम्)"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -548,7 +552,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.8 — The Mind That Does Not Wander"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अभ्यासयोगयुक्तेन चेतसा नान्यगामिना |\r\nपरमं पुरुषं दिव्यं याति पार्थानुचिन्तयन्"
+        children: "अभ्यासयोगयुक्तेन चेतसा नान्यगामिना |\nपरमं पुरुषं दिव्यं याति पार्थानुचिन्तयन्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -567,7 +571,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.9 — Meditating on the Minutest"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कविं पुराणमनुशासितार-\r\nमणोरणीयंसमनुस्मरेद्यः |\r\nसर्वस्य धातारमचिन्त्यरूप-\r\nमादित्यवर्णं तमसः परस्तात्"
+        children: "कविं पुराणमनुशासितार-\nमणोरणीयंसमनुस्मरेद्यः |\nसर्वस्य धातारमचिन्त्यरूप-\nमादित्यवर्णं तमसः परस्तात्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -586,7 +590,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.10 — Between the Brows"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "प्रयाणकाले मनसाऽचलेन\r\nभक्त्या युक्तो योगबलेन चैव |\r\nभ्रुवोर्मध्ये प्राणमावेश्य सम्यक्\r\nस तं परं पुरुषमुपैति दिव्यम्"
+        children: "प्रयाणकाले मनसाऽचलेन\nभक्त्या युक्तो योगबलेन चैव |\nभ्रुवोर्मध्ये प्राणमावेश्य सम्यक्\nस तं परं पुरुषमुपैति दिव्यम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -605,7 +609,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.11 — The Goal of All Austerity"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यदक्षरं वेदविदो वदन्ति\r\nविशन्ति यद्यतयो वीतरागाः |\r\nयदिच्छन्तो ब्रह्मचर्यं चरन्ति\r\nतत्ते पदं संग्रहेण प्रवक्ष्ये"
+        children: "यदक्षरं वेदविदो वदन्ति\nविशन्ति यद्यतयो वीतरागाः |\nयदिच्छन्तो ब्रह्मचर्यं चरन्ति\nतत्ते पदं संग्रहेण प्रवक्ष्ये"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -624,7 +628,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.12 — All Gates Closed"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च |\r\nमूध्न्यार्धायात्मनः प्राणमास्थितो योगधारणाम्"
+        children: "सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च |\nमूध्न्यार्धायात्मनः प्राणमास्थितो योगधारणाम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -643,7 +647,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.13 — The Single Syllable Om"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन् |\r\nयः प्रयाति त्यजन्देहं स याति परमां गतिम्"
+        children: "ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन् |\nयः प्रयाति त्यजन्देहं स याति परमां गतिम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -662,7 +666,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.14 — Easily Attainable"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अनन्यचेताः सततं यो मां स्मरति नित्यशः |\r\nतस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः"
+        children: "अनन्यचेताः सततं यो मां स्मरति नित्यशः |\nतस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -681,7 +685,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.15 — No Return"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मामुपेत्य पुनर्जन्म दुःखालयमशाश्वतम् |\r\nनाप्नुवन्ति महात्मानः संसिद्धिं परमां गताः"
+        children: "मामुपेत्य पुनर्जन्म दुःखालयमशाश्वतम् |\nनाप्नुवन्ति महात्मानः संसिद्धिं परमां गताः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -700,7 +704,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.16 — Even Brahma's World Returns"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन |\r\nमामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते"
+        children: "आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन |\nमामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -719,7 +723,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.17 — The Day and Night of Brahma"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सहस्रयुगपर्यन्तमहर्यद् ब्रह्मणो विदुः |\r\nरात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः"
+        children: "सहस्रयुगपर्यन्तमहर्यद् ब्रह्मणो विदुः |\nरात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -738,7 +742,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.18 — The Unmanifested Breathes"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अव्यक्ताद् व्यक्तयः सर्वाः प्रभवन्त्यहरागमे |\r\nरात्र्यागमे प्रलीयन्ते तत्रैवाव्यक्तसंज्ञके"
+        children: "अव्यक्ताद् व्यक्तयः सर्वाः प्रभवन्त्यहरागमे |\nरात्र्यागमे प्रलीयन्ते तत्रैवाव्यक्तसंज्ञके"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -757,7 +761,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.19 — The Helpless Multitude"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते |\r\nरात्र्यागमेऽवशः पार्थ प्रभवत्यहरागमे"
+        children: "भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते |\nरात्र्यागमेऽवशः पार्थ प्रभवत्यहरागमे"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -776,7 +780,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.20 — The Other, Higher Unmanifested"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातनः |\r\nयः स सर्वेषु भूतेषु नश्यत्सु न विनश्यति"
+        children: "परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातनः |\nयः स सर्वेषु भूतेषु नश्यत्सु न विनश्यति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -795,7 +799,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.21 — My Highest Abode"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम् |\r\nयं प्राप्य न निवर्तन्ते तद्धाम परमं मम"
+        children: "अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम् |\nयं प्राप्य न निवर्तन्ते तद्धाम परमं मम"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -814,7 +818,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.22 — Attainable by Single Devotion"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्यया |\r\nयस्यान्तःस्थानि भूतानि येन सर्वमिदं ततम्"
+        children: "पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्यया |\nयस्यान्तःस्थानि भूतानि येन सर्वमिदं ततम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -833,7 +837,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.23 — The Two Departure Times"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिनः |\r\nप्रयाता यान्ति तं कालं वक्ष्यामि भरतर्षभ"
+        children: "यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिनः |\nप्रयाता यान्ति तं कालं वक्ष्यामि भरतर्षभ"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -852,7 +856,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.24 — The Bright Path"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अग्निर्जोतिरहः शुक्लः षण्मासा उत्तरायणम् |\r\nतत्र प्रयाता गच्छन्ति ब्रह्म ब्रह्मविदो जनाः"
+        children: "अग्निर्जोतिरहः शुक्लः षण्मासा उत्तरायणम् |\nतत्र प्रयाता गच्छन्ति ब्रह्म ब्रह्मविदो जनाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -871,7 +875,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.25 — The Dark Path"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम् |\r\nतत्र चान्द्रमसं ज्योतिर्योगी प्राप्य निवर्तते"
+        children: "धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम् |\nतत्र चान्द्रमसं ज्योतिर्योगी प्राप्य निवर्तते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -890,7 +894,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.26 — The Two Eternal Paths"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते |\r\nएकया यात्यनावृत्तिमन्ययावर्तते पुनः"
+        children: "शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते |\nएकया यात्यनावृत्तिमन्ययावर्तते पुनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -909,7 +913,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.27 — No Yogi Is Deluded"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नैते सृती पार्थ जानन्योगी मुह्यति कश्चन |\r\nतस्मात्सर्वेषु कालेषु योगयुक्तो भवार्जुन"
+        children: "नैते सृती पार्थ जानन्योगी मुह्यति कश्चन |\nतस्मात्सर्वेषु कालेषु योगयुक्तो भवार्जुन"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -928,7 +932,7 @@ function _createMdxContent(props) {
       children: "Shloka 8.28 — Beyond All Merit"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "वेदेषु यज्ञेषु तपःसु चैव\r\nदानेषु यत्पुण्यफलं प्रदिष्टम् |\r\nअत्येति तत्सर्वमिदं विदित्वा\r\nयोगी परं स्थानमुपैति चाद्यम्"
+        children: "वेदेषु यज्ञेषु तपःसु चैव\nदानेषु यत्पुण्यफलं प्रदिष्टम् |\nअत्येति तत्सर्वमिदं विदित्वा\nयोगी परं स्थानमुपैति चाद्यम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1039,13 +1043,77 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Terror Management Theory and Mindfulness of Death"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Chapter 8 is the Gita's teaching on death — not as a distant event but as a lens for living. ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Terror management theory"
+        }), " (Greenberg, Pyszczynski & Solomon, 1986) shows that awareness of mortality shapes behavior: when reminded of death, people cling to worldviews and self-esteem structures. Krishna's teaching reverses this — instead of clinging, he teaches acceptance through daily practice (8.5-8.7). The \"last thought\" is not a deathbed accident but the accumulated result of how you spent your attention."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The law of the last thought (8.6)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Cognitive rehearsal (Ericsson, 1993)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "What you practice most becomes automatic at the end. Expert performance research shows that peak behavior is the summary of years of practice — the Gita applies this to death"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Remember Me and fight (8.7)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Mindfulness-Based Stress Reduction (Kabat-Zinn, 1990)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Combining present-moment awareness with action is the same formula MBSR teaches — awareness during activity, not just during meditation"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The bright path vs. dark path (8.24-8.26)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Approach vs. avoidance motivation (Elliot, 2006)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The two paths map to two fundamental motivational systems: approaching growth (bright) or avoiding discomfort (dark). The direction you face in life determines where you end"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The imperishable (8.3)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Post-traumatic growth (Tedeschi & Calhoun, 2004)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Those who integrate death awareness into daily life report higher well-being, not lower — the Gita's death meditation produces growth, not fear"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " Write one sentence about how you spent today. Then ask: if this were the last thought I ever had, would it be enough? Not as guilt — as data. The answer tells you where to redirect attention tomorrow."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The \"last thought\" of 8.5-8.7 connects directly to the desire-ladder of 3.42 and the DMN suppression of Chapter 6. What you dwell on (8.6) is what you practise (6.35), and what you practise shapes the ladder you climb (3.42)."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"Arjuna's seven questions\"] --> B[\"Krishna's seven answers\"]\r\n    B --> C[\"The law of the last thought\"]\r\n    C --> D[\"Remember Me - and fight\"]\r\n    D --> E[\"The yoga of practice: one-pointed mind\"]\r\n    E --> F[\"Closing the gates, fixing the breath\"]\r\n    F --> G[\"Om: the single syllable\"]\r\n    G --> H[\"The imperishable abode: no return\"]\r\n    H --> I[\"The bright path: awareness\"]\r\n    I --> J[\"The dark path: sleep\"]\r\n    J --> K[\"The yogi surpasses all merit\"]\r\n    K --> L[\"The Supreme Primeval Abode\"]\r\n    style L fill:#4446e8,color:#fff\r\n    style H fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"Arjuna's seven questions\"] --> B[\"Krishna's seven answers\"]\n    B --> C[\"The law of the last thought\"]\n    C --> D[\"Remember Me - and fight\"]\n    D --> E[\"The yoga of practice: one-pointed mind\"]\n    E --> F[\"Closing the gates, fixing the breath\"]\n    F --> G[\"Om: the single syllable\"]\n    G --> H[\"The imperishable abode: no return\"]\n    H --> I[\"The bright path: awareness\"]\n    I --> J[\"The dark path: sleep\"]\n    J --> K[\"The yogi surpasses all merit\"]\n    K --> L[\"The Supreme Primeval Abode\"]\n    style L fill:#4446e8,color:#fff\n    style H fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -1053,7 +1121,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root[Akshara Brahma Yoga]\r\n    The seven questions\r\n      What is Brahman\r\n      What is adhyatma\r\n      What is karma\r\n      Adhibhuta and adhidaiva\r\n      Adhiyajna in the body\r\n    The last thought\r\n      Constant dwelling\r\n      Remember and fight\r\n      The summary of a life\r\n    The practice\r\n      One-pointed mind\r\n      Closing the gates\r\n      Om and the breath\r\n      Single-hearted devotion\r\n    The cosmos\r\n      Day and night of Brahma\r\n      The two unmanifested\r\n      The abode of no return\r\n    The two paths\r\n      Bright path of light\r\n      Dark path of smoke\r\n      Non-return and return\n"
+        children: "mindmap\n  root[Akshara Brahma Yoga]\n    The seven questions\n      What is Brahman\n      What is adhyatma\n      What is karma\n      Adhibhuta and adhidaiva\n      Adhiyajna in the body\n    The last thought\n      Constant dwelling\n      Remember and fight\n      The summary of a life\n    The practice\n      One-pointed mind\n      Closing the gates\n      Om and the breath\n      Single-hearted devotion\n    The cosmos\n      Day and night of Brahma\n      The two unmanifested\n      The abode of no return\n    The two paths\n      Bright path of light\n      Dark path of smoke\n      Non-return and return\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1098,17 +1166,17 @@ function _createMdxContent(props) {
       children: "Chapter Quiz"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q1. How many questions does Arjuna ask Krishna in 8.1-8.2?"
+        children: "Q1. Krishna says \"whatever state you constantly dwell in, that you shall meet at the hour of death\" (8.6). How does this map onto cognitive science research on expertise and peak performance?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Three"
+        children: "a. It doesn't — death is unrelated to skill"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Five"
+        children: "b. Ericsson's research (1993) shows that expert performance is the automatic expression of years of practice — the \"last thought\" is the mind's automatic state, shaped by what you rehearsed most. The dying brain executes its strongest neural pattern"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Seven"
+        children: "c. It means only meditation counts as practice"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Ten"
+        children: "d. It is a religious claim with no scientific parallel"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1117,22 +1185,22 @@ function _createMdxContent(props) {
         children: "Show Answer"
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: c."
-        }), " Arjuna asks seven questions — 8.1-8.2."]
+          children: "Answer: b."
+        }), " Ericsson's deliberate practice research shows that peak performance is the automatic expression of deeply rehearsed patterns. The Gita's \"last thought\" is the same principle applied to death: the mind's dominant pattern — shaped by how you spent your attention — becomes automatic when the body fails. This is why 8.7 says \"remember Me at all times\" — the practice must be continuous, not last-minute."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q2. According to 8.3, what is Brahman?"
+        children: "Q2. The two paths of 8.24-8.26 — the bright path of fire/light/day and the dark path of smoke/night — map onto two fundamental motivational systems in psychology. What are they?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. The sacred syllable Om"
+        children: "a. Fear and greed"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. The imperishable Supreme"
+        children: "b. Approach motivation (toward growth) and avoidance motivation (away from discomfort) — the direction you face in life determines which path you walk"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. The sun"
+        children: "c. Introversion and extroversion"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. The sacrifice"
+        children: "d. Conscious and unconscious"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1142,7 +1210,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        }), " Brahman is the imperishable, the Supreme — 8.3."]
+        }), " Elliot (2006) distinguishes approach motivation (moving toward goals, growth, learning) from avoidance motivation (moving away from threats, discomfort, failure). The bright path (fire, light, day) is approach — moving toward awareness. The dark path (smoke, night) is avoidance — moving away from discomfort. The Gita's teaching: the direction you face in daily life determines where you end."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
@@ -1259,13 +1327,30 @@ function _createMdxContent(props) {
           children: "goalThought"
         }), " to the tool below and have it compute how many minutes per week of practice you would need to make your goal thought overtake the dominant one within thirty days."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The last thought in architecture:"
+        }), " The system you build under time pressure reveals what you truly value — speed, correctness, beauty, or simplicity. The \"last thought\" of your architecture is the trade-off you make when the deadline is tomorrow."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Mindfulness in incident response:"
+        }), " \"Remember Me and fight\" (8.7) is the formula for on-call: stay aware (remember) while acting (fight). Panic is the dark path; calm action is the bright path."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The two paths in career choices:"
+        }), " Every career decision is a step on either the bright path (learning, growth, challenge) or the dark path (comfort, avoidance, easy money). The direction compounds over years."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-last-thought-forecaster",
       children: "TypeScript Tool: Last Thought Forecaster"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Last Thought Forecaster\r\n * Based on Chapter 8 (Akshara Brahma Yoga).\r\n * Krishna teaches that whatever state you constantly dwell in\r\n * becomes the state you meet at the end (8.5-8.7).\r\n * This tool logs your dominant daily thoughts and forecasts\r\n * which one you are rehearsing for your final hour -\r\n * and which path, bright or dark, it places you on.\r\n */\r\n\r\ninterface ThoughtLogEntry {\r\n  date: string;\r\n  thought: string;\r\n  minutes: number;\r\n}\r\n\r\ninterface ThoughtStat {\r\n  thought: string;\r\n  totalMinutes: number;\r\n  share: number;\r\n}\r\n\r\ninterface Forecast {\r\n  likelyLastThought: string;\r\n  share: number;\r\n  path: 'bright' | 'dark';\r\n  message: string;\r\n}\r\n\r\nconst BRIGHT_MARKERS = ['aware', 'breath', 'witness', 'love', 'still', 'presence', 'gratitude'];\r\nconst DARK_MARKERS = ['fear', 'anger', 'possess', 'revenge', 'worry', 'escape', 'jealous'];\r\n\r\nfunction aggregate(entries: ThoughtLogEntry[]): ThoughtStat[] {\r\n  const totals = new Map<string, number>();\r\n  for (const entry of entries) {\r\n    totals.set(entry.thought, (totals.get(entry.thought) ?? 0) + entry.minutes);\r\n  }\r\n  const total = [...totals.values()].reduce((a, b) => a + b, 0);\r\n  return [...totals.entries()]\r\n    .map(([thought, totalMinutes]) => ({ thought, totalMinutes, share: totalMinutes / total }))\r\n    .sort((a, b) => b.totalMinutes - a.totalMinutes);\r\n}\r\n\r\nfunction forecast(stats: ThoughtStat[]): Forecast {\r\n  const dominant = stats[0];\r\n  const isBright = BRIGHT_MARKERS.some(m => dominant.thought.toLowerCase().includes(m));\r\n  const isDark = DARK_MARKERS.some(m => dominant.thought.toLowerCase().includes(m));\r\n  const path: 'bright' | 'dark' = isDark ? 'dark' : 'bright';\r\n  return {\r\n    likelyLastThought: dominant.thought,\r\n    share: Math.round(dominant.share * 100),\r\n    path,\r\n    message: path === 'bright'\r\n      ? 'The thought you practice daily will meet you at the end as a friend. Keep practicing it.'\r\n      : 'This thought is rehearsing your return. The witness can watch it - and loosen its grip.'\r\n  };\r\n}\r\n\r\nfunction runDemo(): void {\r\n  const log: ThoughtLogEntry[] = [\r\n    { date: '2026-08-14', thought: 'worry about the interview', minutes: 120 },\r\n    { date: '2026-08-14', thought: 'breath awareness', minutes: 30 },\r\n    { date: '2026-08-15', thought: 'fear of failure', minutes: 90 },\r\n    { date: '2026-08-15', thought: 'love for family', minutes: 45 },\r\n    { date: '2026-08-16', thought: 'worry about the interview', minutes: 150 }\r\n  ];\r\n  const stats = aggregate(log);\r\n  const result = forecast(stats);\r\n  console.log('=== Last Thought Forecaster ===');\r\n  console.log(`Dominant thoughts analyzed: ${stats.length}`);\r\n  for (const s of stats) {\r\n    console.log(`${s.thought} | ${s.totalMinutes} min | ${Math.round(s.share * 100)}%`);\r\n  }\r\n  console.log('');\r\n  console.log(`Likely last thought: \"${result.likelyLastThought}\" (${result.share}%)`);\r\n  console.log(`Path: ${result.path === 'bright' ? 'the path of light - no return' : 'the path of smoke - return'}`);\r\n  console.log(`Osho: ${result.message}`);\r\n}\r\n\r\nrunDemo();\n"
+        children: "/**\n * Last Thought Forecaster — Terror Management Edition\n * Based on Akshara Brahma Yoga (Gita 8.5-8.7) and terror\n * management theory (Greenberg, 1986): awareness of mortality\n * shapes behavior. The \"last thought\" is not a deathbed\n * accident but the accumulated result of daily attention.\n * Forecasts which mental pattern you are rehearsing.\n *\n * Run: npx ts-node last-thought-forecaster.ts\n */\n\ninterface ThoughtLogEntry {\n  date: string;\n  thought: string;\n  minutes: number;\n  isApproach: boolean;   // bright path: moving toward growth\n  isAvoidance: boolean;  // dark path: moving away from discomfort\n}\n\ninterface ThoughtStat {\n  thought: string;\n  totalMinutes: number;\n  share: number;\n  path: 'bright' | 'dark';\n}\n\ninterface Forecast {\n  likelyLastThought: string;\n  share: number;\n  path: 'bright' | 'dark';\n  mortalityIntegration: number;  // 0–10: how well death awareness is woven into daily life\n  message: string;\n}\n\nfunction aggregate(entries: ThoughtLogEntry[]): ThoughtStat[] {\n  const totals = new Map<string, { minutes: number; path: 'bright' | 'dark' }>();\n  for (const e of entries) {\n    const prev = totals.get(e.thought) ?? { minutes: 0, path: 'bright' };\n    totals.set(e.thought, {\n      minutes: prev.minutes + e.minutes,\n      path: e.isAvoidance ? 'dark' : 'bright'\n    });\n  }\n  const total = [...totals.values()].reduce((s, v) => s + v.minutes, 0);\n  return [...totals.entries()]\n    .map(([thought, v]) => ({\n      thought,\n      totalMinutes: v.minutes,\n      share: v.minutes / total,\n      path: v.path\n    }))\n    .sort((a, b) => b.totalMinutes - a.totalMinutes);\n}\n\nfunction forecast(stats: ThoughtStat[], dailyMindfulnessMin: number): Forecast {\n  const dominant = stats[0];\n  // Mortality integration: combining daily awareness practice with approach motivation\n  const mindfulnessScore = Math.min(10, Math.round(dailyMindfulnessMin / 3));\n  const approachShare = stats.filter((s) => s.path === 'bright').reduce((s, v) => s + v.share, 0);\n  const mortalityIntegration = Math.round((mindfulnessScore * 0.6 + approachShare * 10 * 0.4));\n\n  return {\n    likelyLastThought: dominant.thought,\n    share: Math.round(dominant.share * 100),\n    path: dominant.path,\n    mortalityIntegration,\n    message: dominant.path === 'bright'\n      ? `You are rehearsing the bright path. Death awareness at ${mortalityIntegration}/10 — your practice is integrating. (8.24)`\n      : `This thought is rehearsing your return. Increase mindfulness minutes to integrate death awareness into daily life. (8.6)`\n  };\n}\n\nconst log: ThoughtLogEntry[] = [\n  { date: '2026-08-18', thought: 'worry about the interview', minutes: 120, isApproach: false, isAvoidance: true },\n  { date: '2026-08-18', thought: 'breath awareness', minutes: 30, isApproach: true, isAvoidance: false },\n  { date: '2026-08-19', thought: 'fear of failure', minutes: 90, isApproach: false, isAvoidance: true },\n  { date: '2026-08-19', thought: 'love for family', minutes: 45, isApproach: true, isAvoidance: false },\n  { date: '2026-08-20', thought: 'worry about the interview', minutes: 150, isApproach: false, isAvoidance: true }\n];\n\nconst stats = aggregate(log);\nconst result = forecast(stats, 10);\n\nconsole.log('=== Last Thought Forecaster ===');\nconsole.log(`Thoughts analyzed: ${stats.length}`);\nfor (const s of stats) {\n  console.log(`  ${s.path === 'bright' ? '[BRIGHT]' : '[DARK]  '} ${s.thought} | ${s.totalMinutes} min | ${Math.round(s.share * 100)}%`);\n}\nconsole.log('');\nconsole.log(`Likely last thought: \"${result.likelyLastThought}\" (${result.share}%)`);\nconsole.log(`Path: ${result.path === 'bright' ? 'Bright — no return (8.24)' : 'Dark — return (8.26)'}`);\nconsole.log(`Mortality integration: ${result.mortalityIntegration}/10`);\nconsole.log(result.message);\n"
       })
     })]
   });

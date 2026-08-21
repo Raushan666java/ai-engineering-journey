@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-09-rajavidya-rajaguhya-yoga-md-1d0.json
-const site_docs_courses_bhagavad_gita_09_rajavidya_rajaguhya_yoga_md_1d0_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/09-rajavidya-rajaguhya-yoga","title":"Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret","description":"\\"The greatest secret is not a secret at all. It is the one truth so obvious that you have been overlooking it your whole life: everything is divine.\\"","source":"@site/docs/courses/bhagavad-gita/09-rajavidya-rajaguhya-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/09-rajavidya-rajaguhya-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/09-rajavidya-rajaguhya-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":10,"frontMatter":{"id":"09-rajavidya-rajaguhya-yoga","slug":"/bhagavad-gita/09-rajavidya-rajaguhya-yoga","title":"Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret","sidebar_label":"Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret","sidebar_position":10},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute","permalink":"/ai-engineering-journey/bhagavad-gita/08-akshara-brahma-yoga"},"next":{"title":"Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name","permalink":"/ai-engineering-journey/bhagavad-gita/10-vibhuti-yoga"}}');
+const site_docs_courses_bhagavad_gita_09_rajavidya_rajaguhya_yoga_md_1d0_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/09-rajavidya-rajaguhya-yoga","title":"Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret","description":"\\"The greatest secret is not a secret at all. It is the one truth so obvious that you have been overlooking it your whole life: everything is divine.\\"","source":"@site/docs/courses/bhagavad-gita/09-rajavidya-rajaguhya-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/09-rajavidya-rajaguhya-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/09-rajavidya-rajaguhya-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":9,"frontMatter":{"id":"09-rajavidya-rajaguhya-yoga","slug":"/bhagavad-gita/09-rajavidya-rajaguhya-yoga","title":"Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret","sidebar_label":"Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret","sidebar_position":9},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute","permalink":"/ai-engineering-journey/bhagavad-gita/08-akshara-brahma-yoga"},"next":{"title":"Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name","permalink":"/ai-engineering-journey/bhagavad-gita/10-vibhuti-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/09-rajavidya-rajaguhya-yoga',
 	title: 'Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret',
 	sidebar_label: 'Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret',
-	sidebar_position: 10
+	sidebar_position: 9
 };
 const contentTitle = 'Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret';
 
@@ -238,6 +238,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Offering Ledger",
   "id": "typescript-tool-offering-ledger",
   "level": 2
@@ -276,7 +280,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"The greatest secret is not a secret at all. It is the one truth so obvious that you have been overlooking it your whole life: everything is divine.\"\r\n— The Osho Way"
+        children: "\"The greatest secret is not a secret at all. It is the one truth so obvious that you have been overlooking it your whole life: everything is divine.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Krishna now speaks the most intimate chapter of the Gita. He calls it the kingly science and the kingly secret — the greatest of secrets — and he speaks it not to a crowd, not to a priest, but to one man who has stopped envying and started listening. The Sanskrit word for the qualification is anasuyave: to the one who does not cavil, who does not find fault. Osho says: the deepest truth cannot be received by a jealous heart. The door to the royal secret is not intelligence — it is a certain generosity of spirit, a readiness to be amazed."
@@ -439,7 +443,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.1 — The Greatest Secret"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nइदं तु ते गुह्यतमं प्रवक्ष्याम्यनसूयवे |\r\nज्ञानं विज्ञानसहितं यज्ज्ञात्वा मोक्ष्यसेऽशुभात्"
+        children: "श्रीभगवानुवाच |\nइदं तु ते गुह्यतमं प्रवक्ष्याम्यनसूयवे |\nज्ञानं विज्ञानसहितं यज्ज्ञात्वा मोक्ष्यसेऽशुभात्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -458,7 +462,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.2 — The Kingly Science"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "राजविद्या राजगुह्यं पवित्रमिदमुत्तमम् |\r\nप्रत्यक्षावगमं धर्म्यं सुसुखं कर्तुमव्ययम्"
+        children: "राजविद्या राजगुह्यं पवित्रमिदमुत्तमम् |\nप्रत्यक्षावगमं धर्म्यं सुसुखं कर्तुमव्ययम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -477,7 +481,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.3 — The Faithless Return"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अश्रद्दधानाः पुरुषा धर्मस्यास्य परन्तप |\r\nअप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि"
+        children: "अश्रद्दधानाः पुरुषा धर्मस्यास्य परन्तप |\nअप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -496,7 +500,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.4 — Pervaded, Yet Not Dwelled In"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मया ततमिदं सर्वं जगदव्यक्तमूर्तिना |\r\nमत्स्थानि सर्वभूतानि न चाहं तेष्ववस्थितः"
+        children: "मया ततमिदं सर्वं जगदव्यक्तमूर्तिना |\nमत्स्थानि सर्वभूतानि न चाहं तेष्ववस्थितः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -515,7 +519,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.5 — The Divine Mystery"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न च मत्स्थानि भूतानि पश्य मे योगमैश्वरम् |\r\nभूतभृन्न च भूतस्थो ममात्मा भूतभावनः"
+        children: "न च मत्स्थानि भूतानि पश्य मे योगमैश्वरम् |\nभूतभृन्न च भूतस्थो ममात्मा भूतभावनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -534,7 +538,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.6 — The Wind in the Sky"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यथाकाशस्थितो नित्यं वायुः सर्वत्रगो महान् |\r\nतथा सर्वाणि भूतानि मत्स्थानीत्युपधारय"
+        children: "यथाकाशस्थितो नित्यं वायुः सर्वत्रगो महान् |\nतथा सर्वाणि भूतानि मत्स्थानीत्युपधारय"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -553,7 +557,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.7 — The Breathing of the Kalpa"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सर्वभूतानि कौन्तेय प्रकृतिं यान्ति मामिकाम् |\r\nकल्पक्षये पुनस्तानि कल्पादौ विसृजाम्यहम्"
+        children: "सर्वभूतानि कौन्तेय प्रकृतिं यान्ति मामिकाम् |\nकल्पक्षये पुनस्तानि कल्पादौ विसृजाम्यहम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -572,7 +576,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.8 — Again and Again"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "प्रकृतिं स्वामवष्टभ्य विसृजामि पुनः पुनः |\r\nभूतग्राममिमं कृत्स्नमवशं प्रकृतेर्वशात्"
+        children: "प्रकृतिं स्वामवष्टभ्य विसृजामि पुनः पुनः |\nभूतग्राममिमं कृत्स्नमवशं प्रकृतेर्वशात्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -591,7 +595,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.9 — The Indifferent Witness"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न च मां तानि कर्माणि निबध्नन्ति धनञ्जय |\r\nउदासीनवदासीनमसक्तं तेषु कर्मसु"
+        children: "न च मां तानि कर्माणि निबध्नन्ति धनञ्जय |\nउदासीनवदासीनमसक्तं तेषु कर्मसु"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -610,7 +614,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.10 — Nature Works, I Watch"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मयाध्यक्षेण प्रकृतिः सूयते सचराचरम् |\r\nहेतुनानेन कौन्तेय जगद्विपरिवर्तते"
+        children: "मयाध्यक्षेण प्रकृतिः सूयते सचराचरम् |\nहेतुनानेन कौन्तेय जगद्विपरिवर्तते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -629,7 +633,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.11 — The Fool's Contempt"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम् |\r\nपरं भावमजानन्तो मम भूतमहेश्वरम्"
+        children: "अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम् |\nपरं भावमजानन्तो मम भूतमहेश्वरम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -648,7 +652,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.12 — Vain Hopes, Vain Works"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मोघाशा मोघकर्माणो मोघज्ञाना विचेतसः |\r\nराक्षसीमासुरीं चैव प्रकृतिं मोहिनीं श्रिताः"
+        children: "मोघाशा मोघकर्माणो मोघज्ञाना विचेतसः |\nराक्षसीमासुरीं चैव प्रकृतिं मोहिनीं श्रिताः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -667,7 +671,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.13 — The Great Souls"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "महात्मानस्तु मां पार्थ दैवीं प्रकृतिमाश्रिताः |\r\nभजन्त्यनन्यमनसो ज्ञात्वा भूतादिमव्ययम्"
+        children: "महात्मानस्तु मां पार्थ दैवीं प्रकृतिमाश्रिताः |\nभजन्त्यनन्यमनसो ज्ञात्वा भूतादिमव्ययम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -686,7 +690,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.14 — Always Glorifying"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सततं कीर्तयन्तो मां यतन्तश्च दृढव्रताः |\r\nनमस्यन्तश्च मां भक्त्या नित्ययुक्ता उपासते"
+        children: "सततं कीर्तयन्तो मां यतन्तश्च दृढव्रताः |\nनमस्यन्तश्च मां भक्त्या नित्ययुक्ता उपासते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -705,7 +709,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.15 — The Wisdom-Sacrifice"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ज्ञानयज्ञेन चाप्यन्ये यजन्तो मामुपासते |\r\nएकत्वेन पृथक्त्वेन बहुधा विश्वतोमुखम्"
+        children: "ज्ञानयज्ञेन चाप्यन्ये यजन्तो मामुपासते |\nएकत्वेन पृथक्त्वेन बहुधा विश्वतोमुखम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -724,7 +728,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.16 — I Am the Sacrifice"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अहं क्रतुरहं यज्ञः स्वधाहमहमौषधम् |\r\nमन्त्रोऽहमहमेवाज्यमहमग्निरहं हुतम्"
+        children: "अहं क्रतुरहं यज्ञः स्वधाहमहमौषधम् |\nमन्त्रोऽहमहमेवाज्यमहमग्निरहं हुतम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -743,7 +747,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.17 — Father, Mother, Grandfather"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "पिताहमस्य जगतो माता धाता पितामहः |\r\nवेद्यं पवित्रमोंकार ऋक्साम यजुरेव च"
+        children: "पिताहमस्य जगतो माता धाता पितामहः |\nवेद्यं पवित्रमोंकार ऋक्साम यजुरेव च"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -762,7 +766,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.18 — The Twelve Names"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत् |\r\nप्रभवः प्रलयः स्थानं निधानं बीजमव्ययम्"
+        children: "गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत् |\nप्रभवः प्रलयः स्थानं निधानं बीजमव्ययम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -781,7 +785,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.19 — I Am the Heat and the Rain"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तपाम्यहमहं वर्षं निगृह्णाम्युत्सृजामि च |\r\nअमृतं चैव मृत्युश्च सदसच्चाहमर्जुन"
+        children: "तपाम्यहमहं वर्षं निगृह्णाम्युत्सृजामि च |\nअमृतं चैव मृत्युश्च सदसच्चाहमर्जुन"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -800,7 +804,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.20 — The Heaven-Seekers"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "त्रैविद्या मां सोमपाः पूतपापा\r\nयज्ञैरिष्ट्वा स्वर्गतिं प्रार्थयन्ते |\r\nते पुण्यमासाद्य सुरेन्द्रलोक-\r\nमश्नन्ति दिव्यान्दिवि देवभोगान्"
+        children: "त्रैविद्या मां सोमपाः पूतपापा\nयज्ञैरिष्ट्वा स्वर्गतिं प्रार्थयन्ते |\nते पुण्यमासाद्य सुरेन्द्रलोक-\nमश्नन्ति दिव्यान्दिवि देवभोगान्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -819,7 +823,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.21 — The Exhausted Merit"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ते तं भुक्त्वा स्वर्गलोकं विशालं\r\nक्षीणे पुण्ये मर्त्यलोकं विशन्ति |\r\nएवं त्रयीधर्ममनुप्रपन्ना\r\nगतागतं कामकामा लभन्ते"
+        children: "ते तं भुक्त्वा स्वर्गलोकं विशालं\nक्षीणे पुण्ये मर्त्यलोकं विशन्ति |\nएवं त्रयीधर्ममनुप्रपन्ना\nगतागतं कामकामा लभन्ते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -838,7 +842,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.22 — I Carry Their Yoga and Kshema"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते |\r\nतेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्"
+        children: "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते |\nतेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -857,7 +861,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.23 — Even the Worshippers of Other Gods"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "येऽप्यन्यदेवता भक्ता यजन्ते श्रद्धयान्विताः |\r\nतेऽपि मामेव कौन्तेय यजन्त्यविधिपूर्वकम्"
+        children: "येऽप्यन्यदेवता भक्ता यजन्ते श्रद्धयान्विताः |\nतेऽपि मामेव कौन्तेय यजन्त्यविधिपूर्वकम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -876,7 +880,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.24 — The Enjoyer of All Sacrifices"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अहं हि सर्वयज्ञानां भोक्ता च प्रभुरेव च |\r\nन तु मामभिजानन्ति तत्त्वेनातश्च्यवन्ति ते"
+        children: "अहं हि सर्वयज्ञानां भोक्ता च प्रभुरेव च |\nन तु मामभिजानन्ति तत्त्वेनातश्च्यवन्ति ते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -895,7 +899,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.25 — You Become What You Worship"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यान्ति देवव्रता देवान्पितॄन्यान्ति पितृव्रताः |\r\nभूतानि यान्ति भूतेज्या यान्ति मद्याजिनोऽपि माम्"
+        children: "यान्ति देवव्रता देवान्पितॄन्यान्ति पितृव्रताः |\nभूतानि यान्ति भूतेज्या यान्ति मद्याजिनोऽपि माम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -914,7 +918,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.26 — A Leaf, a Flower, a Fruit, Water"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति |\r\nतदहं भक्त्युपहृतमश्नामि प्रयतात्मनः"
+        children: "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति |\nतदहं भक्त्युपहृतमश्नामि प्रयतात्मनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -933,7 +937,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.27 — Whatever You Do, Offer It"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यत्करोषि यदश्नासि यज्जुहोषि ददासि यत् |\r\nयत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम्"
+        children: "यत्करोषि यदश्नासि यज्जुहोषि ददासि यत् |\nयत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -952,7 +956,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.28 — Freed From Good and Evil"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "शुभाशुभफलैरेवं मोक्ष्यसे कर्मबन्धनैः |\r\nसंन्यासयोगयुक्तात्मा विमुक्तो मामुपैष्यसि"
+        children: "शुभाशुभफलैरेवं मोक्ष्यसे कर्मबन्धनैः |\nसंन्यासयोगयुक्तात्मा विमुक्तो मामुपैष्यसि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -971,7 +975,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.29 — Equal to All"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "समोऽहं सर्वभूतेषु न मे द्वेष्योऽस्ति न प्रियः |\r\nये भजन्ति तु मां भक्त्या मयि ते तेषु चाप्यहम्"
+        children: "समोऽहं सर्वभूतेषु न मे द्वेष्योऽस्ति न प्रियः |\nये भजन्ति तु मां भक्त्या मयि ते तेषु चाप्यहम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -990,7 +994,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.30 — Even the Worst of Sinners"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अपि चेत्सुदुराचारो भजते मामनन्यभाक् |\r\nसाधुरेव स मन्तव्यः सम्यग्व्यवसितो हि सः"
+        children: "अपि चेत्सुदुराचारो भजते मामनन्यभाक् |\nसाधुरेव स मन्तव्यः सम्यग्व्यवसितो हि सः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1009,7 +1013,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.31 — My Devotee Never Perishes"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति |\r\nकौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति"
+        children: "क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति |\nकौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1028,7 +1032,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.32 — No Sinful Birth Can Bar"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मां हि पार्थ व्यपाश्रित्य येऽपि स्युः पापयोनयः |\r\nस्त्रियो वैश्यास्तथा शूद्रास्तेऽपि यान्ति परां गतिम्"
+        children: "मां हि पार्थ व्यपाश्रित्य येऽपि स्युः पापयोनयः |\nस्त्रियो वैश्यास्तथा शूद्रास्तेऽपि यान्ति परां गतिम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1047,7 +1051,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.33 — This Impermanent World"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "किं पुनर्ब्राह्मणाः पुण्या भक्ता राजर्षयस्तथा |\r\nअनित्यमसुखं लोकमिमं प्राप्य भजस्व माम्"
+        children: "किं पुनर्ब्राह्मणाः पुण्या भक्ता राजर्षयस्तथा |\nअनित्यमसुखं लोकमिमं प्राप्य भजस्व माम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1066,7 +1070,7 @@ function _createMdxContent(props) {
       children: "Shloka 9.34 — Fix Your Mind on Me"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु |\r\nमामेवैष्यसि युक्त्वैवमात्मानं मत्परायणः"
+        children: "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु |\nमामेवैष्यसि युक्त्वैवमात्मानं मत्परायणः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1177,13 +1181,87 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Oxytocin, Attachment Theory, and the Offering Life"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Chapter 9 is the Gita's love chapter — Krishna as father, mother, friend, seed, the one who accepts a leaf, a flower, a fruit. The science of ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "oxytocin"
+        }), " (Kosfeld et al., 2005) and ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "attachment theory"
+        }), " (Bowlby, 1969) explains why offering works: acts of devotion activate the brain's bonding system, releasing oxytocin and creating a felt sense of connection. The Gita's \"offering life\" is not just spiritual — it is neurochemical."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Offer a leaf, a flower (9.26)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Oxytocin release (Kosfeld et al., 2005)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Small acts of giving activate the bonding hormone. The Gita's \"small offering\" is a neurochemical trigger for connection"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The one who does not cavil (9.1)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Secure attachment (Bowlby, 1969)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The qualification for receiving the secret is non-envy — a securely attached person who can receive without defending. Envy is insecure attachment projected outward"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Father, mother, friend (9.17-9.18)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Internal working model (Bowlby, 1988)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The divine as multiple relationship figures maps to the brain's internal working model — the template for all relationships. Seeing the divine in all rewrites the template"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Heaven-seekers return (9.20-9.21)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Hedonic adaptation (Brickman & Campbell, 1971)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Pleasure adapts; heaven becomes ordinary. The Gita's warning maps to the \"hedonic treadmill\" — the pleasure-seeker is always returning because pleasure never satisfies"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The worst sinner becomes righteous (9.30)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Neuroplasticity (Doidge, 2007)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The brain rewires in response to new patterns. Single-hearted devotion creates new neural pathways that override old ones — the \"sinner\" literally becomes a different person"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " For one week, offer one small thing daily with full attention — a glass of water, a kind word, a piece of work. Notice whether the quality of the offering changes your felt sense of connection. This is the oxytocin experiment."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The offering life of Chapter 9 is the practical fulfillment of Chapter 3's yajna (3.10-3.16) and Chapter 5's lotus leaf (5.10). The cycle of giving was introduced as duty in ch3, refined as non-attachment in ch5, and now culminates as love in ch9."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"The kingly secret: knowledge with realization\"] --> B[\"The qualification: a heart without envy\"]\r\n    B --> C[\"The paradox: all rests in Me, I in none\"]\r\n    C --> D[\"The wind in the sky: rest, untouched\"]\r\n    D --> E[\"The indifferent witness presides\"]\r\n    E --> F[\"Fools despise the human form\"]\r\n    F --> G[\"Great souls worship with single mind\"]\r\n    G --> H[\"The divine is father, mother, goal, friend\"]\r\n    H --> I[\"Heaven-seekers return; devotees are carried\"]\r\n    I --> J[\"A leaf, a flower, a fruit, water\"]\r\n    J --> K[\"Whatever you do - offer it\"]\r\n    K --> L[\"The turning is the arrival: come to Me\"]\r\n    style L fill:#4446e8,color:#fff\r\n    style I fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"The kingly secret: knowledge with realization\"] --> B[\"The qualification: a heart without envy\"]\n    B --> C[\"The paradox: all rests in Me, I in none\"]\n    C --> D[\"The wind in the sky: rest, untouched\"]\n    D --> E[\"The indifferent witness presides\"]\n    E --> F[\"Fools despise the human form\"]\n    F --> G[\"Great souls worship with single mind\"]\n    G --> H[\"The divine is father, mother, goal, friend\"]\n    H --> I[\"Heaven-seekers return; devotees are carried\"]\n    I --> J[\"A leaf, a flower, a fruit, water\"]\n    J --> K[\"Whatever you do - offer it\"]\n    K --> L[\"The turning is the arrival: come to Me\"]\n    style L fill:#4446e8,color:#fff\n    style I fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -1191,7 +1269,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root[Raja Vidya Raja Guhya Yoga]\r\n    The secret\r\n      Kingly science\r\n      Directly realizable\r\n      Without envy\r\n    The paradox\r\n      All rests in Me\r\n      I rest in none\r\n      The wind in the sky\r\n    The divine as all\r\n      Father and mother\r\n      Goal and witness\r\n      Sacrifice and fire\r\n      The imperishable seed\r\n    The two ways\r\n      Fools despise\r\n      Great souls worship\r\n      Heaven-seekers return\r\n    The offering life\r\n      Leaf, flower, fruit, water\r\n      Whatever you do, offer it\r\n      Freed from good and evil\r\n    The open door\r\n      Equal to all\r\n      The saved sinner\r\n      No birth is barred\r\n      Think, love, act, bow\n"
+        children: "mindmap\n  root[Raja Vidya Raja Guhya Yoga]\n    The secret\n      Kingly science\n      Directly realizable\n      Without envy\n    The paradox\n      All rests in Me\n      I rest in none\n      The wind in the sky\n    The divine as all\n      Father and mother\n      Goal and witness\n      Sacrifice and fire\n      The imperishable seed\n    The two ways\n      Fools despise\n      Great souls worship\n      Heaven-seekers return\n    The offering life\n      Leaf, flower, fruit, water\n      Whatever you do, offer it\n      Freed from good and evil\n    The open door\n      Equal to all\n      The saved sinner\n      No birth is barred\n      Think, love, act, bow\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1284,17 +1362,17 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q3. Which of the following is NOT named as Krishna in 9.16-9.19?"
+        children: "Q3. Krishna names himself as father, mother, grandfather, goal, witness, friend, seed (9.16-9.19). What psychological function does this multiplicity serve — why not just one relationship?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. The fire and the oblation"
+        children: "a. It is poetic exaggeration with no psychological function"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. The witness and the friend"
+        children: "b. The brain's internal working model (Bowlby, 1988) stores relationship templates from multiple figures — by claiming all roles, the divine rewrites the entire template, not just one relationship"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. The worshipper"
+        children: "c. It means the divine is confused about identity"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Immortality and death"
+        children: "d. It is meant to confuse the worshipper"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1303,22 +1381,22 @@ function _createMdxContent(props) {
         children: "Show Answer"
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: c."
-        }), " The worshipper is not named; Krishna is the rite, the fire, the oblation, the goal, the witness, the friend, immortality and death — 9.16-9.19."]
+          children: "Answer: b."
+        }), " Bowlby's internal working model theory shows that our relational patterns are built from multiple attachment figures — parents, mentors, peers. Each figure contributes a different template (safety, guidance, challenge, acceptance). By claiming all roles, the divine rewrites the entire internal working model, not just one relationship. This is why the Gita's devotion produces such deep psychological transformation."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q4. What happens to the heaven-seekers in 9.20-9.21?"
+        children: "Q4. The heaven-seekers \"return when merit is exhausted\" (9.20-9.21). How does this map onto the hedonic treadmill in psychology?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. They stay in heaven forever"
+        children: "a. It doesn't — heaven and psychology are unrelated"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. They return to the world of mortals when their merit is exhausted"
+        children: "b. Hedonic adaptation (Brickman & Campbell, 1971) shows that pleasure returns to baseline — the heaven-seeker's joy fades, and they return to craving. The treadmill is the mechanism of return"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. They become gods"
+        children: "c. Heaven-seekers are punished for being selfish"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. They merge with Brahman"
+        children: "d. The hedonic treadmill says pleasure is permanent"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1328,7 +1406,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        }), " Enjoying the vast heaven, they return when merit is exhausted — 9.20-9.21."]
+        }), " Brickman's hedonic treadmill research shows that both positive and negative events produce temporary shifts in well-being that return to baseline. The Gita's heaven-seekers enjoy vast pleasure (9.20), but when it fades, they return (9.21). The treadmill is not punishment — it is the nature of pleasure-based motivation. The offering life (9.26-9.27) escapes the treadmill because it is not pleasure-seeking but connection-seeking."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
@@ -1397,13 +1475,30 @@ function _createMdxContent(props) {
           children: "dailyGoal"
         }), " field to the tool below that counts how many consecutive days you have reached the threshold of offered actions, and have it print a \"turning streak\" — the Gita says the turning is soon (kshipram); let the tool show you your own."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The offering in code:"
+        }), " When you write a function and let it go — without attachment to whether it gets merged, praised, or rewritten — you are practising the offering life of 9.27. The quality of the offering is in the attention, not the outcome."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Open-source as yajna:"
+        }), " Contributing to open-source without expecting credit or return is the modern leaf-flower-fruit-water offering (9.26). The act of giving freely rewires the brain's bonding system (oxytocin) and breaks the hedonic treadmill of career advancement."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The non-envy qualification (9.1):"
+        }), " The best engineering teams are those where members can celebrate each other's contributions without envy. Non-envy is not just a spiritual virtue — it is the foundation of psychological safety."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-offering-ledger",
       children: "TypeScript Tool: Offering Ledger"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Offering Ledger\r\n * Based on Chapter 9 (Raja Vidya Raja Guhya Yoga).\r\n * Shloka 9.27: whatever you do, whatever you eat, whatever\r\n * you give - make it an offering. This ledger logs daily\r\n * actions and computes how free you are from the bonds of\r\n * their results, following the promise of 9.28.\r\n */\r\n\r\ninterface ActionEntry {\r\n  date: string;\r\n  action: string;\r\n  attached: boolean; // done for a reward\r\n  offered: boolean;  // done as an offering\r\n}\r\n\r\ninterface DaySummary {\r\n  date: string;\r\n  totalActions: number;\r\n  offeredActions: number;\r\n  attachmentScore: number; // 0-10, how tightly results are held\r\n}\r\n\r\ninterface FreedomReport {\r\n  daysAnalyzed: number;\r\n  overallAttachmentScore: number;\r\n  isFree: boolean;\r\n  message: string;\r\n}\r\n\r\nfunction summarizeDay(entries: ActionEntry[]): DaySummary | null {\r\n  if (entries.length === 0) return null;\r\n  const date = entries[0].date;\r\n  const offeredActions = entries.filter(e => e.offered).length;\r\n  const attachedActions = entries.filter(e => e.attached).length;\r\n  const attachmentScore = Math.round((attachedActions / entries.length) * 10);\r\n  return { date, totalActions: entries.length, offeredActions, attachmentScore };\r\n}\r\n\r\nfunction analyze(entries: ActionEntry[]): FreedomReport {\r\n  const byDate = new Map<string, ActionEntry[]>();\r\n  for (const entry of entries) {\r\n    const list = byDate.get(entry.date) ?? [];\r\n    list.push(entry);\r\n    byDate.set(entry.date, list);\r\n  }\r\n  const days = [...byDate.values()].map(summarizeDay).filter((d): d is DaySummary => d !== null);\r\n  const overall = Math.round(\r\n    days.reduce((sum, d) => sum + d.attachmentScore, 0) / Math.max(1, days.length)\r\n  );\r\n  const isFree = overall <= 3;\r\n  return {\r\n    daysAnalyzed: days.length,\r\n    overallAttachmentScore: overall,\r\n    isFree,\r\n    message: isFree\r\n      ? 'You have loosened the bonds of good and evil fruits. The offering life is carrying you now.'\r\n      : 'The ledger still shows grasping. Offer the same actions, and the chain will loosen - soon (kshipram).'\r\n  };\r\n}\r\n\r\nfunction runDemo(): void {\r\n  const log: ActionEntry[] = [\r\n    { date: '2026-08-17', action: 'prepared breakfast', attached: false, offered: true },\r\n    { date: '2026-08-17', action: 'wrote report for boss', attached: true, offered: false },\r\n    { date: '2026-08-17', action: 'phoned mother', attached: false, offered: true },\r\n    { date: '2026-08-18', action: 'cleaned the room', attached: false, offered: true },\r\n    { date: '2026-08-18', action: 'practiced meditation', attached: false, offered: true }\r\n  ];\r\n  const report = analyze(log);\r\n  console.log('=== Offering Ledger ===');\r\n  console.log(`Days analyzed: ${report.daysAnalyzed}`);\r\n  console.log(`Overall attachment score: ${report.overallAttachmentScore}/10`);\r\n  console.log(`Status: ${report.isFree ? 'liberated from results' : 'still bound to results'}`);\r\n  console.log('');\r\n  console.log(`Osho: ${report.message}`);\r\n}\r\n\r\nrunDemo();\n"
+        children: "/**\n * Offering Ledger — Oxytocin & Attachment Theory Edition\n * Based on Raja Vidya Raja Guhya Yoga (Gita 9.26-9.28) and\n * attachment theory (Bowlby, 1969): acts of devotion activate\n * the brain's bonding system (oxytocin), creating felt\n * connection. The offering life is neurochemical, not just\n * spiritual.\n *\n * Run: npx ts-node offering-ledger.ts\n */\n\ninterface ActionEntry {\n  date: string;\n  action: string;\n  attached: boolean;      // done for a reward\n  offered: boolean;       // done as an offering\n  withDevotion: boolean;  // done with full attention and love\n  relatedness: number;    // 0–10: felt sense of connection to others during the act\n}\n\ninterface DaySummary {\n  date: string;\n  totalActions: number;\n  offeredActions: number;\n  attachmentScore: number;\n  oxytocinIndex: number;   // proxy: offering + devotion + relatedness\n}\n\ninterface FreedomReport {\n  daysAnalyzed: number;\n  overallAttachmentScore: number;\n  averageOxytocinIndex: number;\n  isFree: boolean;\n  message: string;\n}\n\nfunction summarizeDay(entries: ActionEntry[]): DaySummary | null {\n  if (entries.length === 0) return null;\n  const date = entries[0].date;\n  const offered = entries.filter((e) => e.offered).length;\n  const attached = entries.filter((e) => e.attached).length;\n  const attachmentScore = Math.round((attached / entries.length) * 10);\n\n  // Oxytocin proxy: offering + devotion + relatedness\n  const avgRelatedness = entries.reduce((s, e) => s + e.relatedness, 0) / entries.length;\n  const devotionCount = entries.filter((e) => e.withDevotion).length;\n  const oxytocinIndex = Math.round(\n    (offered / entries.length) * 4 +\n    (devotionCount / entries.length) * 3 +\n    (avgRelatedness / 10) * 3\n  );\n\n  return { date, totalActions: entries.length, offeredActions: offered, attachmentScore, oxytocinIndex };\n}\n\nfunction analyze(entries: ActionEntry[]): FreedomReport {\n  const byDate = new Map<string, ActionEntry[]>();\n  for (const e of entries) {\n    const list = byDate.get(e.date) ?? [];\n    list.push(e);\n    byDate.set(e.date, list);\n  }\n  const days = [...byDate.values()].map(summarizeDay).filter((d): d is DaySummary => d !== null);\n  const overall = Math.round(days.reduce((s, d) => s + d.attachmentScore, 0) / Math.max(1, days.length));\n  const avgOxytocin = Math.round(days.reduce((s, d) => s + d.oxytocinIndex, 0) / Math.max(1, days.length));\n  const isFree = overall <= 3;\n\n  return {\n    daysAnalyzed: days.length,\n    overallAttachmentScore: overall,\n    averageOxytocinIndex: avgOxytocin,\n    isFree,\n    message: isFree\n      ? `The bonds of results are loosening. Oxytocin index ${avgOxytocin}/10 — the offering life is rewiring your bonding system. (9.28)`\n      : `Attachment score ${overall}/10 — the ledger still shows grasping. Offer the same actions with devotion, and the chain will loosen. (9.27)`\n  };\n}\n\nconst log: ActionEntry[] = [\n  { date: '2026-08-17', action: 'prepared breakfast for family', attached: false, offered: true, withDevotion: true, relatedness: 8 },\n  { date: '2026-08-17', action: 'wrote report for boss', attached: true, offered: false, withDevotion: false, relatedness: 3 },\n  { date: '2026-08-17', action: 'phoned mother', attached: false, offered: true, withDevotion: true, relatedness: 9 },\n  { date: '2026-08-18', action: 'cleaned the room', attached: false, offered: true, withDevotion: false, relatedness: 2 },\n  { date: '2026-08-18', action: 'mentored junior engineer', attached: false, offered: true, withDevotion: true, relatedness: 7 }\n];\n\nconst report = analyze(log);\n\nconsole.log('=== Offering Ledger ===');\nconsole.log(`Days: ${report.daysAnalyzed} | Attachment: ${report.overallAttachmentScore}/10 | Oxytocin: ${report.averageOxytocinIndex}/10`);\nconsole.log(`Status: ${report.isFree ? 'Liberated from results' : 'Still bound to results'}`);\nconsole.log(report.message);\n"
       })
     })]
   });

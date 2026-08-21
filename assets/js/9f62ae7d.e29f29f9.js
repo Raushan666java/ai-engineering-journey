@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-04-jnana-karma-sanyasa-yoga-md-9f6.json
-const site_docs_courses_bhagavad_gita_04_jnana_karma_sanyasa_yoga_md_9f6_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/04-jnana-karma-sanyasa-yoga","title":"Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom","description":"\\"You are not asked to leave action behind. You are asked to light a fire inside action — the fire of knowledge.\\"","source":"@site/docs/courses/bhagavad-gita/04-jnana-karma-sanyasa-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/04-jnana-karma-sanyasa-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/04-jnana-karma-sanyasa-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":5,"frontMatter":{"id":"04-jnana-karma-sanyasa-yoga","slug":"/bhagavad-gita/04-jnana-karma-sanyasa-yoga","title":"Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom","sidebar_label":"Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom","sidebar_position":5},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 3: Karma Yoga — Action Without Attachment","permalink":"/ai-engineering-journey/bhagavad-gita/03-karma-yoga"},"next":{"title":"Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action","permalink":"/ai-engineering-journey/bhagavad-gita/05-karma-sanyasa-yoga"}}');
+const site_docs_courses_bhagavad_gita_04_jnana_karma_sanyasa_yoga_md_9f6_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/04-jnana-karma-sanyasa-yoga","title":"Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom","description":"\\"You are not asked to leave action behind. You are asked to light a fire inside action — the fire of knowledge.\\"","source":"@site/docs/courses/bhagavad-gita/04-jnana-karma-sanyasa-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/04-jnana-karma-sanyasa-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/04-jnana-karma-sanyasa-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":4,"frontMatter":{"id":"04-jnana-karma-sanyasa-yoga","slug":"/bhagavad-gita/04-jnana-karma-sanyasa-yoga","title":"Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom","sidebar_label":"Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom","sidebar_position":4},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 3: Karma Yoga — Action Without Attachment","permalink":"/ai-engineering-journey/bhagavad-gita/03-karma-yoga"},"next":{"title":"Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action","permalink":"/ai-engineering-journey/bhagavad-gita/05-karma-sanyasa-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/04-jnana-karma-sanyasa-yoga',
 	title: 'Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom',
 	sidebar_label: 'Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom',
-	sidebar_position: 5
+	sidebar_position: 4
 };
 const contentTitle = 'Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom';
 
@@ -270,6 +270,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Karma Binding Analyzer",
   "id": "typescript-tool-karma-binding-analyzer",
   "level": 2
@@ -308,7 +312,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"You are not asked to leave action behind. You are asked to light a fire inside action — the fire of knowledge.\"\r\n— The Osho Way"
+        children: "\"You are not asked to leave action behind. You are asked to light a fire inside action — the fire of knowledge.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Krishna has stopped arguing about whether Arjuna should fight. Now he opens the deepest door: what is action, really? He tells Arjuna that this yoga is ancient — it passed from the sun to Manu to Ikshvaku, through a chain of masters and disciples, and it has been lost in the world because people kept the technique and dropped the transmission. And then Krishna says something that turns the whole Gita on its head: whenever dharma declines, he is born again. Not as a theology lesson about incarnations, but as a living law of inner life — whenever your inner dharma declines, awareness is born again in you."
@@ -475,7 +479,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.1 — The Ancient Teaching"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nइमं विवस्वते योगं प्रोक्तवानहमव्ययम् |\r\nविवस्वान्मनवे प्राह मनुरिक्ष्वाकवेऽब्रवीत्"
+        children: "श्रीभगवानुवाच |\nइमं विवस्वते योगं प्रोक्तवानहमव्ययम् |\nविवस्वान्मनवे प्राह मनुरिक्ष्वाकवेऽब्रवीत्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -494,7 +498,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.2 — The Lost Yoga"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "एवं परम्पराप्राप्तिमं राजर्षयो विदुः |\r\nस कालेनेह महता योगो नष्टः परन्तप"
+        children: "एवं परम्पराप्राप्तिमं राजर्षयो विदुः |\nस कालेनेह महता योगो नष्टः परन्तप"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -513,7 +517,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.3 — The Supreme Secret"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "स एवायं मया तेऽद्य योगः प्रोक्तः पुरातनः |\r\nभक्तोऽसि मे सखा चेति रहस्यं ह्येतदुत्तमम्"
+        children: "स एवायं मया तेऽद्य योगः प्रोक्तः पुरातनः |\nभक्तोऽसि मे सखा चेति रहस्यं ह्येतदुत्तमम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -532,7 +536,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.4 — Arjuna's Honest Doubt"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nअपरं भवतो जन्म परं जन्म विवस्वतः |\r\nकथमेतद्विजानीयां त्वमादौ प्रोक्तवानिति"
+        children: "अर्जुन उवाच |\nअपरं भवतो जन्म परं जन्म विवस्वतः |\nकथमेतद्विजानीयां त्वमादौ प्रोक्तवानिति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -551,7 +555,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.5 — The Many Births"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nबहूनि मे व्यतीतानि जन्मानि तव चार्जुन |\r\nतान्यहं वेद सर्वाणि न त्वं वेत्थ परन्तप"
+        children: "श्रीभगवानुवाच |\nबहूनि मे व्यतीतानि जन्मानि तव चार्जुन |\nतान्यहं वेद सर्वाणि न त्वं वेत्थ परन्तप"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -570,7 +574,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.6 — The Unborn Is Born"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अजोऽपि सन्नव्ययात्मा भूतानामीश्वरोऽपि सन् |\r\nप्रकृतिं स्वामधिष्ठाय सम्भवाम्यात्ममायया"
+        children: "अजोऽपि सन्नव्ययात्मा भूतानामीश्वरोऽपि सन् |\nप्रकृतिं स्वामधिष्ठाय सम्भवाम्यात्ममायया"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -589,7 +593,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.7 — Whenever Dharma Declines"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत |\r\nअभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्"
+        children: "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत |\nअभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -608,7 +612,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.8 — Born Age After Age"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "परित्राणाय साधूनां विनाशाय च दुष्कृताम् |\r\nधर्मसंस्थापनार्थाय सम्भवामि युगे युगे"
+        children: "परित्राणाय साधूनां विनाशाय च दुष्कृताम् |\nधर्मसंस्थापनार्थाय सम्भवामि युगे युगे"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -627,7 +631,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.9 — Knowing the Divine Birth and Action"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "जन्म कर्म च मे दिव्यमेवं यो वेत्ति तत्त्वतः |\r\nत्यक्त्वा देहं पुनर्जन्म नैति मामेति सोऽर्जुन"
+        children: "जन्म कर्म च मे दिव्यमेवं यो वेत्ति तत्त्वतः |\nत्यक्त्वा देहं पुनर्जन्म नैति मामेति सोऽर्जुन"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -646,7 +650,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.10 — The Many Who Have Crossed"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "वीतरागभयक्रोधा मन्मया मामुपाश्रिताः |\r\nबहवो ज्ञानतपसा पूता मद्भावमागताः"
+        children: "वीतरागभयक्रोधा मन्मया मामुपाश्रिताः |\nबहवो ज्ञानतपसा पूता मद्भावमागताः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -665,7 +669,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.11 — As You Come, So You Are Met"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ये यथा मां प्रपद्यन्ते तांस्तथैव भजाम्यहम् |\r\nमम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः"
+        children: "ये यथा मां प्रपद्यन्ते तांस्तथैव भजाम्यहम् |\nमम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -684,7 +688,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.12 — The Quick Fruits of Desire"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "काङ्क्षन्तः कर्मणां सिद्धिं यजन्त इह देवताः |\r\nक्षिप्रं हि मानुषे लोके सिद्धिर्भवति कर्मजा"
+        children: "काङ्क्षन्तः कर्मणां सिद्धिं यजन्त इह देवताः |\nक्षिप्रं हि मानुषे लोके सिद्धिर्भवति कर्मजा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -703,7 +707,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.13 — The Fourfold Order and the Non-Doer"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "चातुर्वर्ण्यं मया सृष्टं गुणकर्मविभागशः |\r\nतस्य कर्तारमपि मां विद्ध्यकर्तारमव्ययम्"
+        children: "चातुर्वर्ण्यं मया सृष्टं गुणकर्मविभागशः |\nतस्य कर्तारमपि मां विद्ध्यकर्तारमव्ययम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -722,7 +726,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.14 — Untainted by Action"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न मां कर्माणि लिम्पन्ति न मे कर्मफले स्पृहा |\r\nइति मां योऽभिजानाति कर्मभिर्न स बध्यते"
+        children: "न मां कर्माणि लिम्पन्ति न मे कर्मफले स्पृहा |\nइति मां योऽभिजानाति कर्मभिर्न स बध्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -741,7 +745,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.15 — The Ancient Seekers Acted"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "एवं ज्ञात्वा कृतं कर्म पूर्वैरपि मुमुक्षुभिः |\r\nकुरु कर्मैव तस्मात्त्वं पूर्वैः पूर्वतरं कृतम्"
+        children: "एवं ज्ञात्वा कृतं कर्म पूर्वैरपि मुमुक्षुभिः |\nकुरु कर्मैव तस्मात्त्वं पूर्वैः पूर्वतरं कृतम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -760,7 +764,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.16 — Even the Wise Are Confused"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "किं कर्म किमकर्मेति कवयोऽप्यत्र मोहिताः |\r\nतत्ते कर्म प्रवक्ष्यामि यज्ज्ञात्वा मोक्ष्यसेऽशुभात्"
+        children: "किं कर्म किमकर्मेति कवयोऽप्यत्र मोहिताः |\nतत्ते कर्म प्रवक्ष्यामि यज्ज्ञात्वा मोक्ष्यसेऽशुभात्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -779,7 +783,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.17 — The Three Kinds of Karma"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कर्मणो ह्यपि बोद्धव्यं बोद्धव्यं च विकर्मणः |\r\nअकर्मणश्च बोद्धव्यं गहना कर्मणो गतिः"
+        children: "कर्मणो ह्यपि बोद्धव्यं बोद्धव्यं च विकर्मणः |\nअकर्मणश्च बोद्धव्यं गहना कर्मणो गतिः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -798,7 +802,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.18 — Inaction in Action"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः |\r\nस बुद्धिमान्मनुष्येषु स युक्तः कृत्स्नकर्मकृत्"
+        children: "कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः |\nस बुद्धिमान्मनुष्येषु स युक्तः कृत्स्नकर्मकृत्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -817,7 +821,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.19 — The Sage of Burnt Undertakings"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यस्य सर्वे समारम्भाः कामसङ्कल्पवर्जिताः |\r\nज्ञानाग्निदग्धकर्माणं तमाहुः पण्डितं बुधाः"
+        children: "यस्य सर्वे समारम्भाः कामसङ्कल्पवर्जिताः |\nज्ञानाग्निदग्धकर्माणं तमाहुः पण्डितं बुधाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -836,7 +840,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.20 — Ever Content, Depending on Nothing"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः |\r\nकर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः"
+        children: "त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः |\nकर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -855,7 +859,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.21 — The Body Acts, the Self Does Not"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "निराशीर्यतचित्तात्मा त्यक्तसर्वपरिग्रहः |\r\nशारीरं केवलं कर्म कुर्वन्नाप्नोति किल्बिषम्"
+        children: "निराशीर्यतचित्तात्मा त्यक्तसर्वपरिग्रहः |\nशारीरं केवलं कर्म कुर्वन्नाप्नोति किल्बिषम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -874,7 +878,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.22 — Even in Success and Failure"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः |\r\nसमः सिद्धावसिद्धौ च कृत्वापि न निबध्यते"
+        children: "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः |\nसमः सिद्धावसिद्धौ च कृत्वापि न निबध्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -893,7 +897,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.23 — Actions That Dissolve"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "गतसङ्गस्य मुक्तस्य ज्ञानावस्थितचेतसः |\r\nयज्ञायाचरतः कर्म समग्रं प्रविलीयते"
+        children: "गतसङ्गस्य मुक्तस्य ज्ञानावस्थितचेतसः |\nयज्ञायाचरतः कर्म समग्रं प्रविलीयते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -912,7 +916,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.24 — All Is Brahman"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ब्रह्मार्पणं ब्रह्म हविर्ब्रह्माग्नौ ब्रह्मणा हुतम् |\r\nब्रह्मैव तेन गन्तव्यं ब्रह्मकर्मसमाधिना"
+        children: "ब्रह्मार्पणं ब्रह्म हविर्ब्रह्माग्नौ ब्रह्मणा हुतम् |\nब्रह्मैव तेन गन्तव्यं ब्रह्मकर्मसमाधिना"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -931,7 +935,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.25 — Two Kinds of Offering"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "दैवमेवापरे यज्ञं योगिनः पर्युपासते |\r\nब्रह्माग्नावपरे यज्ञं यज्ञेनैवोपजुह्वति"
+        children: "दैवमेवापरे यज्ञं योगिनः पर्युपासते |\nब्रह्माग्नावपरे यज्ञं यज्ञेनैवोपजुह्वति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -950,7 +954,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.26 — Senses and Sense-Objects as Sacrifice"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रोत्रादीनीन्द्रियाण्यन्ये संयमाग्निषु जुह्वति |\r\nशब्दादीन्विषयानन्य इन्द्रियाग्निषु जुह्वति"
+        children: "श्रोत्रादीनीन्द्रियाण्यन्ये संयमाग्निषु जुह्वति |\nशब्दादीन्विषयानन्य इन्द्रियाग्निषु जुह्वति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -969,7 +973,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.27 — All Functions Offered"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सर्वाणीन्द्रियकर्माणि प्राणकर्माणि चापरे |\r\nआत्मसंयमयोगाग्नौ जुह्वति ज्ञानदीपिते"
+        children: "सर्वाणीन्द्रियकर्माणि प्राणकर्माणि चापरे |\nआत्मसंयमयोगाग्नौ जुह्वति ज्ञानदीपिते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -988,7 +992,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.28 — Wealth, Austerity, Study as Sacrifice"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "द्रव्ययज्ञास्तपोयज्ञा योगयज्ञास्तथापरे |\r\nस्वाध्यायज्ञानयज्ञाश्च यतयः संशितव्रताः"
+        children: "द्रव्ययज्ञास्तपोयज्ञा योगयज्ञास्तथापरे |\nस्वाध्यायज्ञानयज्ञाश्च यतयः संशितव्रताः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1007,7 +1011,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.29 — Breath in Breath"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अपाने जुह्वति प्राणं प्राणेऽपानं तथापरे |\r\nप्राणापानगती रुद्ध्वा प्राणायामपरायणाः"
+        children: "अपाने जुह्वति प्राणं प्राणेऽपानं तथापरे |\nप्राणापानगती रुद्ध्वा प्राणायामपरायणाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1026,7 +1030,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.30 — Regulated Food, Offering to Offerings"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अपरे नियताहाराः प्राणान्प्राणेषु जुह्वति |\r\nसर्वेऽप्येते यज्ञविदो यज्ञक्षपितकल्मषाः"
+        children: "अपरे नियताहाराः प्राणान्प्राणेषु जुह्वति |\nसर्वेऽप्येते यज्ञविदो यज्ञक्षपितकल्मषाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1045,7 +1049,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.31 — The Nectar of the Remnant"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यज्ञशिष्टामृतभुजो यान्ति ब्रह्म सनातनम् |\r\nनायं लोकोऽस्त्ययज्ञस्य कुतोऽन्यः कुरुसत्तम"
+        children: "यज्ञशिष्टामृतभुजो यान्ति ब्रह्म सनातनम् |\nनायं लोकोऽस्त्ययज्ञस्य कुतोऽन्यः कुरुसत्तम"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1064,7 +1068,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.32 — Born of Action, Know Them All"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "एवं बहुविधा यज्ञा वितता ब्रह्मणो मुखे |\r\nकर्मजान्विद्धि तान्सर्वानेवं ज्ञात्वा विमोक्ष्यसे"
+        children: "एवं बहुविधा यज्ञा वितता ब्रह्मणो मुखे |\nकर्मजान्विद्धि तान्सर्वानेवं ज्ञात्वा विमोक्ष्यसे"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1083,7 +1087,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.33 — Knowledge Surpasses All Sacrifices"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप |\r\nसर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते"
+        children: "श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप |\nसर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1102,7 +1106,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.34 — Prostration, Question, Service"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया |\r\nउपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः"
+        children: "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया |\nउपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1121,7 +1125,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.35 — No More Delusion"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यज्ज्ञात्वा न पुनर्मोहमेवं यास्यसि पाण्डव |\r\nयेन भूतान्यशेषेण द्रक्ष्यस्यात्मन्यथो मयि"
+        children: "यज्ज्ञात्वा न पुनर्मोहमेवं यास्यसि पाण्डव |\nयेन भूतान्यशेषेण द्रक्ष्यस्यात्मन्यथो मयि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1140,7 +1144,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.36 — The Raft of Knowledge"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अपि चेदसि पापेभ्यः सर्वेभ्यः पापकृत्तमः |\r\nसर्वं ज्ञानप्लवेनैव वृजिनं सन्तरिष्यसि"
+        children: "अपि चेदसि पापेभ्यः सर्वेभ्यः पापकृत्तमः |\nसर्वं ज्ञानप्लवेनैव वृजिनं सन्तरिष्यसि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1159,7 +1163,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.37 — Fire Burns Fuel"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन |\r\nज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा"
+        children: "यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन |\nज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1178,7 +1182,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.38 — Nothing Purer Than Knowledge"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न हि ज्ञानेन सदृशं पवित्रमिह विद्यते |\r\nतत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति"
+        children: "न हि ज्ञानेन सदृशं पवित्रमिह विद्यते |\nतत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1197,7 +1201,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.39 — Faith, Devotion, Restraint"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रद्धावाँल्लभते ज्ञानं तत्परः संयतेन्द्रियः |\r\nज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति"
+        children: "श्रद्धावाँल्लभते ज्ञानं तत्परः संयतेन्द्रियः |\nज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1216,7 +1220,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.40 — The Doubting Soul Is Lost"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अज्ञश्चाश्रद्दधानश्च संशयात्मा विनश्यति |\r\nनायं लोकोऽस्ति न परो न सुखं संशयात्मनः"
+        children: "अज्ञश्चाश्रद्दधानश्च संशयात्मा विनश्यति |\nनायं लोकोऽस्ति न परो न सुखं संशयात्मनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1235,7 +1239,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.41 — The Self-Possessed Are Not Bound"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "योगसंन्यस्तकर्माणं ज्ञानसञ्छिन्नसंशयम् |\r\nआत्मवन्तं न कर्माणि निबध्नन्ति धनञ्जय"
+        children: "योगसंन्यस्तकर्माणं ज्ञानसञ्छिन्नसंशयम् |\nआत्मवन्तं न कर्माणि निबध्नन्ति धनञ्जय"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1254,7 +1258,7 @@ function _createMdxContent(props) {
       children: "Shloka 4.42 — The Sword of Knowledge"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तस्मादज्ञानसम्भूतं हृत्स्थं ज्ञानासिनात्मनः |\r\nछित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत"
+        children: "तस्मादज्ञानसम्भूतं हृत्स्थं ज्ञानासिनात्मनः |\nछित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1345,13 +1349,79 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Embodied Cognition and the Somatic Marker Hypothesis"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Chapter 4's central paradox — \"inaction in action\" (4.18) — finds its scientific parallel in ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "embodied cognition"
+        }), " (Varela, Thompson, & Rosch, 1991): the body does not merely execute the mind's commands; it participates in cognition itself. The \"doer\" who dissolves in 4.20 is the same construct that Antonio Damasio's ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "somatic marker hypothesis"
+        }), " (1994) challenges: decisions are not made by a rational agent alone but by the body's accumulated wisdom encoding past outcomes as bodily signals."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Inaction in action (4.18)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Automaticity (Shiffrin & Schneider, 1977)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Expert action feels like \"no one is doing it\" — the expert surgeon's hands move without deliberation. This is the Gita's \"inaction in action\" — the body knows, the ego steps back"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The doer dissolves (4.20)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Libet experiment (1983)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Brain readiness potential precedes conscious \"decision\" by 500ms — the act begins before the doer claims it. The Gita's insight: the doer is a post-hoc narrator"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Knowledge as fire (4.37)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Insight problem-solving (Kounios & Beeman, 2009)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The \"aha moment\" activates the right anterior temporal cortex — knowledge literally \"burns\" old neural pathways and creates new ones"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The descent of awareness (4.7)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Mirror neurons (Rizzolatti, 2004)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Awareness spreads through example, not instruction — the \"avatar\" mechanism is neurological. One awakened person catalyzes awakening in others"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " Perform a familiar task (making coffee, typing a password) while asking: \"Who is doing this?\" Notice that the body completes the task before the mind can answer. This gap — between the act and the claim of authorship — is the Gita's \"inaction in action\" (4.18). The doer arrives after the deed."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The paradox of 4.18 (inaction in action) resolves the dilemma of Chapter 3 (should I act or not?). See also Chapter 13's field-knower distinction for the ontological foundation: the knower acts through the field but is not the field."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"Arjuna: how can you have taught the ancient yoga?\"] --> B[\"Krishna: many births; I remember, you forget\"]\r\n    B --> C[\"The law of descent: whenever dharma declines, awareness is reborn\"]\r\n    C --> D[\"The mystery: what is action, inaction, forbidden action\"]\r\n    D --> E[\"The paradox: inaction in action; the doer dissolves\"]\r\n    E --> F[\"The ladder of sacrifices: senses, breath, wealth, study\"]\r\n    F --> G[\"The knowledge sacrifice is supreme; all action ends in knowing\"]\r\n    G --> H[\"Prostration, questioning, service: receive from one who sees\"]\r\n    H --> I[\"The fire of knowledge burns karma like fuel\"]\r\n    I --> J[\"The sword: cut the doubt, take refuge in yoga, arise\"]\r\n    style E fill:#4446e8,color:#fff\r\n    style J fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"Arjuna: how can you have taught the ancient yoga?\"] --> B[\"Krishna: many births; I remember, you forget\"]\n    B --> C[\"The law of descent: whenever dharma declines, awareness is reborn\"]\n    C --> D[\"The mystery: what is action, inaction, forbidden action\"]\n    D --> E[\"The paradox: inaction in action; the doer dissolves\"]\n    E --> F[\"The ladder of sacrifices: senses, breath, wealth, study\"]\n    F --> G[\"The knowledge sacrifice is supreme; all action ends in knowing\"]\n    G --> H[\"Prostration, questioning, service: receive from one who sees\"]\n    H --> I[\"The fire of knowledge burns karma like fuel\"]\n    I --> J[\"The sword: cut the doubt, take refuge in yoga, arise\"]\n    style E fill:#4446e8,color:#fff\n    style J fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -1359,7 +1429,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root[(Jnana-Karma-Sanyasa Yoga)]\r\n    The transmission\r\n      Sun to Manu to Ikshvaku\r\n      Lost in time\r\n      Given to the devoted friend\r\n    The descent\r\n      The unborn is born\r\n      Dharma declines, awareness descends\r\n      Known in truth, no rebirth\r\n    The mystery of action\r\n      Inaction in action\r\n      Desires and designs burnt\r\n      Ever content, depending on nothing\r\n    The sacrifices\r\n      Senses in restraint\r\n      Breath in breath\r\n      Wealth, study, austerity\r\n      Knowledge sacrifice supreme\r\n    The fire and the sword\r\n      Raft of knowledge\r\n      Fire burns fuel\r\n      Faith, devotion, restraint\r\n      Cut doubt, arise\n"
+        children: "mindmap\n  root[(Jnana-Karma-Sanyasa Yoga)]\n    The transmission\n      Sun to Manu to Ikshvaku\n      Lost in time\n      Given to the devoted friend\n    The descent\n      The unborn is born\n      Dharma declines, awareness descends\n      Known in truth, no rebirth\n    The mystery of action\n      Inaction in action\n      Desires and designs burnt\n      Ever content, depending on nothing\n    The sacrifices\n      Senses in restraint\n      Breath in breath\n      Wealth, study, austerity\n      Knowledge sacrifice supreme\n    The fire and the sword\n      Raft of knowledge\n      Fire burns fuel\n      Faith, devotion, restraint\n      Cut doubt, arise\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1438,123 +1508,51 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q2. In Shloka 4.7, Krishna says he manifests himself whenever —"
+        children: "Q2. Krishna says he manifests whenever dharma declines (4.7). How does this \"descent of awareness\" map onto how good ideas spread in organizations?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. A great sage is born"
+        children: "a. Good ideas spread through official memos and policy changes"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. A temple is consecrated"
+        children: "b. Awareness descends through embodied example — one person's transformed behavior catalyzes change in others, like mirror neurons firing"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Dharma declines and adharma rises"
+        children: "c. Good ideas spread through competition between departments"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. A new yuga begins"
+        children: "d. Awareness descends only through formal education"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
       "data-qid": "bg4-q2",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
         children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: c."
-        })
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q3. What is the core paradox taught in Shloka 4.18?"
-      })
-    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Action is always better than inaction"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. One can see inaction in action and action in inaction"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Inaction is never possible for humans"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. The wise perform only mental actions"
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
-      className: "tp-qa-card",
-      "data-qid": "bg4-q3",
-      children: [(0,jsx_runtime.jsx)(_components.summary, {
-        children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        })
+        }), " Mirror neuron research (Rizzolatti, 2004) shows that observing transformed behavior activates the same neural circuits in the observer as in the actor. The Gita's \"avatar\" mechanism is neurological: awareness spreads through example, not instruction. The engineer who writes clean code without being asked teaches more than the manager who sends a policy email."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q4. Which sacrifice does Krishna call supreme in Shloka 4.33?"
+        children: "Q5. Krishna says knowledge burns actions \"like fuel in a blazing fire\" (4.37). What does this mean in practical terms?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. The sacrifice of wealth"
+        children: "a. Past mistakes are literally erased from memory"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. The sacrifice of austerity"
+        children: "b. Understanding the root cause of a pattern dissolves its power to repeat — the neural pathways that encoded the old reaction are overwritten by new insight"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. The sacrifice of knowledge"
+        children: "c. Knowledge is a punishment for past wrongs"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. The sacrifice of study only"
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
-      className: "tp-qa-card",
-      "data-qid": "bg4-q4",
-      children: [(0,jsx_runtime.jsx)(_components.summary, {
-        children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: c."
-        })
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q5. In Shloka 4.37, what happens to actions in the fire of knowledge?"
-      })
-    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. They are stored for a later life"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. They are turned to ashes, like fuel in a blazing fire"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. They are carried forward into the next birth"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. They become divine and are recorded in heaven"
+        children: "d. Actions have no consequences once knowledge is gained"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
       "data-qid": "bg4-q5",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
         children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        })
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q6. What does Krishna command Arjuna to do with the doubt born of ignorance in Shloka 4.42?"
-      })
-    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Meditate on it until it dissolves by itself"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Ask the sages to explain it again"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Cut it with the sword of knowledge, take refuge in yoga, and arise"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Surrender it to the gods in sacrifice"
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
-      className: "tp-qa-card",
-      "data-qid": "bg4-q6",
-      children: [(0,jsx_runtime.jsx)(_components.summary, {
-        children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: c."
-        })
+        }), " Insight problem-solving research (Kounios & Beeman, 2009) shows that the \"aha moment\" creates new neural connections that bypass old patterns. When you truly understand why you keep making the same architectural mistake, the mistake loses its power — not because the past is erased, but because the future is rewired. The fire of knowledge does not destroy karma; it transforms the karmic pattern."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "exercises",
@@ -1575,13 +1573,30 @@ function _createMdxContent(props) {
           children: "offeringScore"
         }), ", that measures how many daily actions you performed as gifts. Plot the week and check whether offering and binding move in opposite directions."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Inaction in action (4.18):"
+        }), " The expert developer's hands move before the mind deliberates — autocomplete, refactoring instincts, pattern recognition. This is not laziness but mastery: the body has learned what the mind once struggled with. The ego steps back; the code flows."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The descent of awareness in teams:"
+        }), " When one team member starts writing clean code, testing thoroughly, and documenting clearly, others follow — not because of policy but because of mirror neurons. Be the avatar in your codebase."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cutting doubt with the sword (4.42):"
+        }), " When you're stuck on a problem, stop analyzing and act. Write a test, sketch a diagram, prototype something. Knowledge cuts doubt through action, not more thinking."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-karma-binding-analyzer",
       children: "TypeScript Tool: Karma Binding Analyzer"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Karma Binding Analyzer\r\n * Based on Jnana-Karma-Sanyasa Yoga (Chapter 4 of the Bhagavad Gita):\r\n * actions bind when the doer claims them; the fire of knowledge\r\n * burns the claim and leaves the action free.\r\n * Osho's lens: watch the doer, not the deed.\r\n */\r\n\r\ninterface DailyAction {\r\n  date: string;\r\n  name: string;\r\n  expectationOfResult: number; // 0-10\r\n  egoInvolvement: number;      // 0-10\r\n  fearOfFailure: number;       // 0-10\r\n  awarenessLevel: number;      // 0-10\r\n}\r\n\r\ninterface BindingReport {\r\n  totalActions: number;\r\n  averageBinding: number;       // 0-100\r\n  jnanaFireScore: number;       // 0-100\r\n  status: string;\r\n  oshoGuidance: string;\r\n}\r\n\r\nconst BINDING_WEIGHTS = { expectation: 0.4, ego: 0.35, fear: 0.25 };\r\n\r\nfunction bindingScore(action: DailyAction): number {\r\n  const raw =\r\n    action.expectationOfResult * BINDING_WEIGHTS.expectation +\r\n    action.egoInvolvement * BINDING_WEIGHTS.ego +\r\n    action.fearOfFailure * BINDING_WEIGHTS.fear;\r\n  return Math.min(100, Math.round(raw * 10));\r\n}\r\n\r\nfunction jnanaFire(binding: number, awareness: number): number {\r\n  return Math.max(0, Math.min(100, Math.round(awareness * 10 - binding * 0.5)));\r\n}\r\n\r\nfunction analyzeBindings(actions: DailyAction[]): BindingReport {\r\n  const totalActions = actions.length;\r\n  const avgBinding = Math.round(actions.reduce((s, a) => s + bindingScore(a), 0) / totalActions);\r\n  const avgAwareness = actions.reduce((s, a) => s + a.awarenessLevel, 0) / totalActions;\r\n  const jnanaFireScore = jnanaFire(avgBinding, avgAwareness);\r\n\r\n  let status = 'bound';\r\n  let oshoGuidance =\r\n    'The doer is loud in you. Watch the claiming hand; do not argue with it, just see it.';\r\n  if (jnanaFireScore >= 70) {\r\n    status = 'burning bright';\r\n    oshoGuidance = 'Your fire is lit. Act, but do not collect. The work itself is the worship.';\r\n  } else if (jnanaFireScore >= 40) {\r\n    status = 'kindling';\r\n    oshoGuidance = 'The wood is gathered. Increase awareness; drop one expectation a day.';\r\n  }\r\n\r\n  return { totalActions, averageBinding: avgBinding, jnanaFireScore, status, oshoGuidance };\r\n}\r\n\r\nfunction runDemo(): void {\r\n  const week: DailyAction[] = [\r\n    { date: '2026-08-18', name: 'Project review', expectationOfResult: 8, egoInvolvement: 7, fearOfFailure: 5, awarenessLevel: 4 },\r\n    { date: '2026-08-18', name: 'Morning tea', expectationOfResult: 1, egoInvolvement: 0, fearOfFailure: 0, awarenessLevel: 9 },\r\n    { date: '2026-08-19', name: 'Interview prep', expectationOfResult: 9, egoInvolvement: 8, fearOfFailure: 8, awarenessLevel: 5 }\r\n  ];\r\n\r\n  const report = analyzeBindings(week);\r\n  console.log('=== Karma Binding Analyzer ===');\r\n  console.log(`Actions analyzed: ${report.totalActions}`);\r\n  console.log(`Average binding: ${report.averageBinding}/100`);\r\n  console.log(`Jnana fire score: ${report.jnanaFireScore}/100`);\r\n  console.log(`Status: ${report.status}`);\r\n  console.log(`Osho guidance: ${report.oshoGuidance}`);\r\n}\r\n\r\nrunDemo();\n"
+        children: "/**\n * Karma Binding Analyzer — Embodied Cognition Edition\n * Based on Jnana-Karma-Sanyasa Yoga (Gita 4.16–4.20) and\n * embodied cognition (Varela et al., 1991): the body participates\n * in cognition; the \"doer\" is a post-hoc narrator (Libet, 1983).\n * Measures: expectation, ego, fear, awareness, and the gap\n * between automaticity and conscious claiming.\n *\n * Run: npx ts-node karma-binding-analyzer.ts\n */\n\ninterface DailyAction {\n  date: string;\n  name: string;\n  expectationOfResult: number; // 0–10\n  egoInvolvement: number;      // 0–10\n  fearOfFailure: number;       // 0–10\n  awarenessLevel: number;      // 0–10\n  automaticity: number;        // 0–10: how much did the body \"know\" before the mind?\n  doerArrival: 'during' | 'after' | 'never';  // when did the ego claim the act?\n}\n\ninterface BindingReport {\n  totalActions: number;\n  averageBinding: number;\n  jnanaFireScore: number;\n  automaticityScore: number;\n  doerTiming: { during: number; after: number; never: number };\n  status: string;\n  oshoGuidance: string;\n}\n\nconst BINDING_WEIGHTS = { expectation: 0.3, ego: 0.3, fear: 0.2, automaticity: 0.2 };\n\nfunction bindingScore(action: DailyAction): number {\n  const raw =\n    action.expectationOfResult * BINDING_WEIGHTS.expectation +\n    action.egoInvolvement * BINDING_WEIGHTS.ego +\n    action.fearOfFailure * BINDING_WEIGHTS.fear;\n  return Math.min(100, Math.round(raw * 10));\n}\n\nfunction jnanaFire(binding: number, awareness: number, automaticity: number): number {\n  // Knowledge fire: high awareness + high automaticity (body knows) - high binding (ego claims)\n  return Math.max(0, Math.min(100, Math.round((awareness * 4 + automaticity * 3) - binding * 0.5)));\n}\n\nfunction analyzeBindings(actions: DailyAction[]): BindingReport {\n  const totalActions = actions.length;\n  const avgBinding = Math.round(actions.reduce((s, a) => s + bindingScore(a), 0) / totalActions);\n  const avgAwareness = actions.reduce((s, a) => s + a.awarenessLevel, 0) / totalActions;\n  const avgAutomaticity = actions.reduce((s, a) => s + a.automaticity, 0) / totalActions;\n  const jnanaFireScore = jnanaFire(avgBinding, avgAwareness, avgAutomaticity);\n\n  const doerTiming = {\n    during: actions.filter((a) => a.doerArrival === 'during').length,\n    after: actions.filter((a) => a.doerArrival === 'after').length,\n    never: actions.filter((a) => a.doerArrival === 'never').length\n  };\n\n  let status: string;\n  let oshoGuidance: string;\n  if (jnanaFireScore >= 70) {\n    status = 'burning bright';\n    oshoGuidance = 'The fire of knowledge is lit. The body acts, the ego arrives late or not at all. This is 4.18 in action.';\n  } else if (jnanaFireScore >= 40) {\n    status = 'kindling';\n    oshoGuidance = 'The wood is gathered. Increase awareness of automaticity — notice when the body knows before the mind claims.';\n  } else {\n    status = 'bound';\n    oshoGuidance = 'The doer is loud. Watch the claiming hand; do not argue with it, just see it (4.20).';\n  }\n\n  return { totalActions, averageBinding: avgBinding, jnanaFireScore, automaticityScore: Math.round(avgAutomaticity * 10), doerTiming, status, oshoGuidance };\n}\n\nconst week: DailyAction[] = [\n  { date: '2026-08-18', name: 'Project review', expectationOfResult: 8, egoInvolvement: 7, fearOfFailure: 5, awarenessLevel: 4, automaticity: 3, doerArrival: 'during' },\n  { date: '2026-08-18', name: 'Morning tea', expectationOfResult: 1, egoInvolvement: 0, fearOfFailure: 0, awarenessLevel: 9, automaticity: 9, doerArrival: 'never' },\n  { date: '2026-08-19', name: 'Interview prep', expectationOfResult: 9, egoInvolvement: 8, fearOfFailure: 8, awarenessLevel: 5, automaticity: 2, doerArrival: 'during' },\n  { date: '2026-08-19', name: 'Debugging session', expectationOfResult: 3, egoInvolvement: 2, fearOfFailure: 1, awarenessLevel: 7, automaticity: 8, doerArrival: 'after' },\n  { date: '2026-08-20', name: 'Code review', expectationOfResult: 5, egoInvolvement: 6, fearOfFailure: 3, awarenessLevel: 6, automaticity: 5, doerArrival: 'during' }\n];\n\nconst report = analyzeBindings(week);\n\nconsole.log('=== Karma Binding Analyzer ===');\nconsole.log(`Actions: ${report.totalActions} | Binding: ${report.averageBinding}/100 | Jnana fire: ${report.jnanaFireScore}/100`);\nconsole.log(`Automaticity: ${report.automaticityScore}/100`);\nconsole.log(`Doer timing: during ${report.doerTiming.during}, after ${report.doerTiming.after}, never ${report.doerTiming.never}`);\nconsole.log(`Status: ${report.status}`);\nconsole.log(`Guidance: ${report.oshoGuidance}`);\n"
       })
     })]
   });

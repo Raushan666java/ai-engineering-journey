@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-05-karma-sanyasa-yoga-md-2c4.json
-const site_docs_courses_bhagavad_gita_05_karma_sanyasa_yoga_md_2c4_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/05-karma-sanyasa-yoga","title":"Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action","description":"\\"The renunciation you really need is not of action — it is of the claim. The world keeps flowing; only the clutching can stop.\\"","source":"@site/docs/courses/bhagavad-gita/05-karma-sanyasa-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/05-karma-sanyasa-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/05-karma-sanyasa-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":6,"frontMatter":{"id":"05-karma-sanyasa-yoga","slug":"/bhagavad-gita/05-karma-sanyasa-yoga","title":"Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action","sidebar_label":"Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action","sidebar_position":6},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom","permalink":"/ai-engineering-journey/bhagavad-gita/04-jnana-karma-sanyasa-yoga"},"next":{"title":"Chapter 6: Dhyana Yoga — The Art of Meditation","permalink":"/ai-engineering-journey/bhagavad-gita/06-dhyana-yoga"}}');
+const site_docs_courses_bhagavad_gita_05_karma_sanyasa_yoga_md_2c4_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/05-karma-sanyasa-yoga","title":"Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action","description":"\\"The renunciation you really need is not of action — it is of the claim. The world keeps flowing; only the clutching can stop.\\"","source":"@site/docs/courses/bhagavad-gita/05-karma-sanyasa-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/05-karma-sanyasa-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/05-karma-sanyasa-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":5,"frontMatter":{"id":"05-karma-sanyasa-yoga","slug":"/bhagavad-gita/05-karma-sanyasa-yoga","title":"Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action","sidebar_label":"Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action","sidebar_position":5},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom","permalink":"/ai-engineering-journey/bhagavad-gita/04-jnana-karma-sanyasa-yoga"},"next":{"title":"Chapter 6: Dhyana Yoga — The Art of Meditation","permalink":"/ai-engineering-journey/bhagavad-gita/06-dhyana-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/05-karma-sanyasa-yoga',
 	title: 'Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action',
 	sidebar_label: 'Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action',
-	sidebar_position: 6
+	sidebar_position: 5
 };
 const contentTitle = 'Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action';
 
@@ -218,6 +218,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Lotus Leaf Witness Tracker",
   "id": "typescript-tool-lotus-leaf-witness-tracker",
   "level": 2
@@ -256,7 +260,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"The renunciation you really need is not of action — it is of the claim. The world keeps flowing; only the clutching can stop.\"\r\n— The Osho Way"
+        children: "\"The renunciation you really need is not of action — it is of the claim. The world keeps flowing; only the clutching can stop.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Arjuna is confused, and his confusion is beautiful. Just moments ago, Krishna praised action; now he speaks of renunciation. Two opposites, and Arjuna has the courage to say: \"Tell me conclusively — which of the two is better?\" He wants certainty, one road, a final answer. This is the eternal demand of the mind: give me the one true path, and let me walk it without confusion. And Krishna gives an answer that is no answer in the old style: both roads arrive at the same summit, but there is one that suits the living human being better — action that carries renunciation inside it."
@@ -423,7 +427,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.1 — Arjuna's Question"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nसंन्यासं कर्मणां कृष्ण पुनर्योगं च शंससि |\r\nयच्छ्रेय एतयोरेकं तन्मे ब्रूहि सुनिश्चितम्"
+        children: "अर्जुन उवाच |\nसंन्यासं कर्मणां कृष्ण पुनर्योगं च शंससि |\nयच्छ्रेय एतयोरेकं तन्मे ब्रूहि सुनिश्चितम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -442,7 +446,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.2 — Both Reach the Same Summit"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nसंन्यासः कर्मयोगश्च निःश्रेयसकरावुभौ |\r\nतयोस्तु कर्मसंन्यासात्कर्मयोगो विशिष्यते"
+        children: "श्रीभगवानुवाच |\nसंन्यासः कर्मयोगश्च निःश्रेयसकरावुभौ |\nतयोस्तु कर्मसंन्यासात्कर्मयोगो विशिष्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -461,7 +465,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.3 — The Perpetual Sannyasi"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ज्ञेयः स नित्यसंन्यासी यो न द्वेष्टि न काङ्क्षति |\r\nनिर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते"
+        children: "ज्ञेयः स नित्यसंन्यासी यो न द्वेष्टि न काङ्क्षति |\nनिर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -480,7 +484,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.4 — Children See Two, the Wise See One"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "साङ्ख्ययोगौ पृथग्बालाः प्रवदन्ति न पण्डिताः |\r\nएकमप्यास्थितः सम्यगुभयोर्विन्दते फलम्"
+        children: "साङ्ख्ययोगौ पृथग्बालाः प्रवदन्ति न पण्डिताः |\nएकमप्यास्थितः सम्यगुभयोर्विन्दते फलम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -499,7 +503,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.5 — The Same Summit"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यत्साङ्ख्यैः प्राप्यते स्थानं तद्योगैरपि गम्यते |\r\nएकं साङ्ख्यं च योगं च यः पश्यति स पश्यति"
+        children: "यत्साङ्ख्यैः प्राप्यते स्थानं तद्योगैरपि गम्यते |\nएकं साङ्ख्यं च योगं च यः पश्यति स पश्यति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -518,7 +522,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.6 — Renunciation Is Hard Without Action-Yoga"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "संन्यासस्तु महाबाहो दुःखमाप्तुमयोगतः |\r\nयोगयुक्तो मुनिर्ब्रह्म नचिरेणाधिगच्छति"
+        children: "संन्यासस्तु महाबाहो दुःखमाप्तुमयोगतः |\nयोगयुक्तो मुनिर्ब्रह्म नचिरेणाधिगच्छति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -537,7 +541,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.7 — The Untainted Worker"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "योगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः |\r\nसर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते"
+        children: "योगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः |\nसर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -556,7 +560,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.8 — \"I Do Nothing At All\""
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नैव किञ्चित्करोमीति युक्तो मन्येत तत्त्ववित् |\r\nपश्यञ्शृण्वन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपञ्श्वसन्"
+        children: "नैव किञ्चित्करोमीति युक्तो मन्येत तत्त्ववित् |\nपश्यञ्शृण्वन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपञ्श्वसन्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -575,7 +579,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.9 — The Senses Do Their Work"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "प्रलपन्विसृजन्गृह्णन्नुन्मिषन्निमिषन्नपि |\r\nइन्द्रियाणीन्द्रियार्थेषु वर्तन्त इति धारयन्"
+        children: "प्रलपन्विसृजन्गृह्णन्नुन्मिषन्निमिषन्नपि |\nइन्द्रियाणीन्द्रियार्थेषु वर्तन्त इति धारयन्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -594,7 +598,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.10 — The Lotus Leaf"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः |\r\nलिप्यते न स पापेन पद्मपत्रमिवाम्भसा"
+        children: "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः |\nलिप्यते न स पापेन पद्मपत्रमिवाम्भसा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -613,7 +617,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.11 — Action for Purification"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि |\r\nयोगिनः कर्म कुर्वन्ति सङ्गं त्यक्त्वात्मशुद्धये"
+        children: "कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि |\nयोगिनः कर्म कुर्वन्ति सङ्गं त्यक्त्वात्मशुद्धये"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -632,7 +636,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.12 — The Attached Are Bound"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "युक्तः कर्मफलं त्यक्त्वा शान्तिमाप्नोति नैष्ठिकीम् |\r\nअयुक्तः कामकारेण फले सक्तो निबध्यते"
+        children: "युक्तः कर्मफलं त्यक्त्वा शान्तिमाप्नोति नैष्ठिकीम् |\nअयुक्तः कामकारेण फले सक्तो निबध्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -651,7 +655,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.13 — The Nine-Gated City"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सर्वकर्माणि मनसा संन्यस्यास्ते सुखं वशी |\r\nनवद्वारे पुरे देही नैव कुर्वन्न कारयन्"
+        children: "सर्वकर्माणि मनसा संन्यस्यास्ते सुखं वशी |\nनवद्वारे पुरे देही नैव कुर्वन्न कारयन्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -670,7 +674,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.14 — Nature Acts, Not the Lord"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभुः |\r\nन कर्मफलसंयोगं स्वभावस्तु प्रवर्तते"
+        children: "न कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभुः |\nन कर्मफलसंयोगं स्वभावस्तु प्रवर्तते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -689,7 +693,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.15 — Ignorance Covers Knowledge"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नादत्ते कस्यचित्पापं न चैव सुकृतं विभुः |\r\nअज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तवः"
+        children: "नादत्ते कस्यचित्पापं न चैव सुकृतं विभुः |\nअज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तवः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -708,7 +712,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.16 — Knowledge Dawns Like the Sun"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ज्ञानेन तु तदज्ञानं येषां नाशितमात्मनः |\r\nतेषामादित्यवज्ज्ञानं प्रकाशयति तत्परम्"
+        children: "ज्ञानेन तु तदज्ञानं येषां नाशितमात्मनः |\nतेषामादित्यवज्ज्ञानं प्रकाशयति तत्परम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -727,7 +731,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.17 — Intellect Absorbed in That"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तद्बुद्धयस्तदात्मानस्तन्निष्ठास्तत्परायणाः |\r\nगच्छन्त्यपुनरावृत्तिं ज्ञाननिर्धूतकल्मषाः |"
+        children: "तद्बुद्धयस्तदात्मानस्तन्निष्ठास्तत्परायणाः |\nगच्छन्त्यपुनरावृत्तिं ज्ञाननिर्धूतकल्मषाः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -746,7 +750,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.18 — The Equal Eye"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "विद्याविनयसम्पन्ने ब्राह्मणे गवि हस्तिनि |\r\nशुनि चैव श्वपाके च पण्डिताः समदर्शिनः"
+        children: "विद्याविनयसम्पन्ने ब्राह्मणे गवि हस्तिनि |\nशुनि चैव श्वपाके च पण्डिताः समदर्शिनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -765,7 +769,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.19 — Birth Conquered Here"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "इहैव तैर्जितः सर्गो येषां साम्ये स्थितं मनः |\r\nनिर्दोषं हि समं ब्रह्म तस्माद् ब्रह्मणि ते स्थिताः"
+        children: "इहैव तैर्जितः सर्गो येषां साम्ये स्थितं मनः |\nनिर्दोषं हि समं ब्रह्म तस्माद् ब्रह्मणि ते स्थिताः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -784,7 +788,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.20 — Neither Rejoicing Nor Grieving"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम् |\r\nस्थिरबुद्धिरसम्मूढो ब्रह्मविद् ब्रह्मणि स्थितः"
+        children: "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम् |\nस्थिरबुद्धिरसम्मूढो ब्रह्मविद् ब्रह्मणि स्थितः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -803,7 +807,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.21 — Happiness in the Self"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम् |\r\nस ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्नुते"
+        children: "बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम् |\nस ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्नुते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -822,7 +826,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.22 — Contact-Pleasures Are Pain-Seeds"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ये हि संस्पर्शजा भोगा दुःखयोनय एव ते |\r\nआद्यन्तवन्तः कौन्तेय न तेषु रमते बुधः"
+        children: "ये हि संस्पर्शजा भोगा दुःखयोनय एव ते |\nआद्यन्तवन्तः कौन्तेय न तेषु रमते बुधः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -841,7 +845,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.23 — Withstand Desire and Anger"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "शक्नोतीहैव यः सोढुं प्राक्शरीरविमोक्षणात् |\r\nकामक्रोधोद्भवं वेगं स युक्तः स सुखी नरः"
+        children: "शक्नोतीहैव यः सोढुं प्राक्शरीरविमोक्षणात् |\nकामक्रोधोद्भवं वेगं स युक्तः स सुखी नरः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -860,7 +864,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.24 — Happy Within, Illumined Within"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः |\r\nस योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति"
+        children: "योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः |\nस योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -879,7 +883,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.25 — The Rishis Who Attain"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "लभन्ते ब्रह्मनिर्वाणमृषयः क्षीणकल्मषाः |\r\nछिन्नद्वैधा यतात्मानः सर्वभूतहिते रताः"
+        children: "लभन्ते ब्रह्मनिर्वाणमृषयः क्षीणकल्मषाः |\nछिन्नद्वैधा यतात्मानः सर्वभूतहिते रताः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -898,7 +902,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.26 — Nirvana On All Sides"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कामक्रोधवियुक्तानां यतीनां यतचेतसाम् |\r\nअभितो ब्रह्मनिर्वाणं वर्तते विदितात्मनाम्"
+        children: "कामक्रोधवियुक्तानां यतीनां यतचेतसाम् |\nअभितो ब्रह्मनिर्वाणं वर्तते विदितात्मनाम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -917,7 +921,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.27 — The Posture of Meditation"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "स्पर्शान्कृत्वा बहिर्बाह्यांश्चक्षुश्चैवान्तरे भ्रुवोः |\r\nप्राणापानौ समौ कृत्वा नासाभ्यन्तरचारिणौ"
+        children: "स्पर्शान्कृत्वा बहिर्बाह्यांश्चक्षुश्चैवान्तरे भ्रुवोः |\nप्राणापानौ समौ कृत्वा नासाभ्यन्तरचारिणौ"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -936,7 +940,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.28 — Always Free"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यतेन्द्रियमनोबुद्धिर्मुनिर्मोक्षपरायणः |\r\nविगतेच्छाभयक्रोधो यः सदा मुक्त एव सः"
+        children: "यतेन्द्रियमनोबुद्धिर्मुनिर्मोक्षपरायणः |\nविगतेच्छाभयक्रोधो यः सदा मुक्त एव सः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -955,7 +959,7 @@ function _createMdxContent(props) {
       children: "Shloka 5.29 — The Friend of All Beings"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम् |\r\nसुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति"
+        children: "भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम् |\nसुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1056,13 +1060,77 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Cognitive Load Theory and the Lotus Leaf"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Chapter 5's central image — acting in the world without being touched, like a lotus leaf in water (5.10) — maps onto ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "cognitive load theory"
+        }), " (Sweller, 1988): the mind has finite processing capacity, and attachment to results consumes working memory. The \"lotus leaf\" is not emotional detachment but efficient cognitive processing — acting fully while keeping working memory free for the task itself."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The perpetual sannyasi (5.3)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Choice architecture (Thaler & Sunstein, 2008)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The \"nudge\" is internal: arranging your environment so the right action is the default. The renouncer doesn't resist temptation; he designs it away"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "I do nothing at all (5.8)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Flow state (Csikszentmihalyi, 1990)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "In flow, the sense of agency dissolves — the climber does not decide each grip; the climb happens. This is the Gita's \"I do nothing\""
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The lotus leaf (5.10)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Cognitive load reduction (Sweller, 1988)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Attachment adds extraneous cognitive load — worry about outcomes consumes working memory. Dropping attachment frees cognitive resources for the task"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The equal eye (5.18)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Implicit bias reduction (Greenwald, 1998)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Training the mind to see the same Self in all beings is the deepest form of bias reduction — not suppressing stereotypes but dissolving the category system that creates them"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " For one task this week, remove all outcome expectations. Don't check metrics, don't think about praise or blame. Just do the task fully and let the result be. Notice whether the quality of the act changes when the cognitive load of outcome-worry is removed. This is the lotus leaf experiment."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The lotus leaf (5.10) is the practical expression of Chapter 2's sthitaprajna (2.54–2.72) and Chapter 6's lamp in the windless place (6.18–6.23). The same image — untouched presence — appears in three different metaphors across three chapters."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"Arjuna: renunciation or action — which is better?\"] --> B[\"Krishna: both lead to the same summit; action-yoga is superior for the living\"]\r\n    B --> C[\"The perpetual sannyasi: neither hates nor craves\"]\r\n    C --> D[\"The witness: I do nothing at all — seeing, hearing, touching\"]\r\n    D --> E[\"The lotus leaf: in the water, not wetted\"]\r\n    E --> F[\"The nine-gated city: the embodied one rests\"]\r\n    F --> G[\"Nature acts; ignorance covers the sun; knowledge dawns\"]\r\n    G --> H[\"The equal eye: scholar, cow, dog, outcaste — one Self\"]\r\n    H --> I[\"Withstand desire and anger; be happy within\"]\r\n    I --> J[\"Know the friend of all beings — and peace arrives\"]\r\n    style E fill:#4446e8,color:#fff\r\n    style J fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"Arjuna: renunciation or action — which is better?\"] --> B[\"Krishna: both lead to the same summit; action-yoga is superior for the living\"]\n    B --> C[\"The perpetual sannyasi: neither hates nor craves\"]\n    C --> D[\"The witness: I do nothing at all — seeing, hearing, touching\"]\n    D --> E[\"The lotus leaf: in the water, not wetted\"]\n    E --> F[\"The nine-gated city: the embodied one rests\"]\n    F --> G[\"Nature acts; ignorance covers the sun; knowledge dawns\"]\n    G --> H[\"The equal eye: scholar, cow, dog, outcaste — one Self\"]\n    H --> I[\"Withstand desire and anger; be happy within\"]\n    I --> J[\"Know the friend of all beings — and peace arrives\"]\n    style E fill:#4446e8,color:#fff\n    style J fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -1070,7 +1138,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root[(Karma-Sanyasa Yoga)]\r\n    The question\r\n      Which is better\r\n      Both reach the summit\r\n      Action-yoga superior\r\n    The inner renunciation\r\n      Neither hate nor crave\r\n      One path, one fruit\r\n      Work first, then stillness\r\n    The witness\r\n      I do nothing at all\r\n      Senses move among objects\r\n      Lotus leaf on water\r\n      Nine-gated city\r\n    Nature and knowledge\r\n      The Lord creates no agency\r\n      Ignorance covers the sun\r\n      Knowledge dawns like day\r\n      The equal eye\r\n    The free one\r\n      Withstanding desire and anger\r\n      Happy, playing, lit within\r\n      The rishis who attain\r\n      The friend of all beings\n"
+        children: "mindmap\n  root[(Karma-Sanyasa Yoga)]\n    The question\n      Which is better\n      Both reach the summit\n      Action-yoga superior\n    The inner renunciation\n      Neither hate nor crave\n      One path, one fruit\n      Work first, then stillness\n    The witness\n      I do nothing at all\n      Senses move among objects\n      Lotus leaf on water\n      Nine-gated city\n    Nature and knowledge\n      The Lord creates no agency\n      Ignorance covers the sun\n      Knowledge dawns like day\n      The equal eye\n    The free one\n      Withstanding desire and anger\n      Happy, playing, lit within\n      The rishis who attain\n      The friend of all beings\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1173,99 +1241,51 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q3. What does the knower of truth think in Shloka 5.8?"
+        children: "Q3. Krishna says the knower of truth thinks \"I do nothing at all\" (5.8). How does this map onto the psychology of flow states?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. \"I have conquered all my senses\""
+        children: "a. It means the wise person is lazy and inactive"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. \"I do nothing at all\""
+        children: "b. In flow, the sense of agency dissolves — the act happens through you rather than by you, which is the same as \"I do nothing at all\""
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. \"I must renounce the world\""
+        children: "c. It means the wise person denies responsibility"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. \"I am the greatest of yogis\""
+        children: "d. It is a metaphor for sleep"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
       "data-qid": "bg5-q3",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
         children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        })
+        }), " Csikszentmihalyi's flow research (1990) shows that in deep engagement, the sense of a separate \"doer\" dissolves — the musician does not decide each note; the music happens. The Gita's \"I do nothing at all\" (5.8) is not denial but a description of the flow state: awareness without a claimant, action without an actor."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q4. In Shloka 5.10, the one who acts without attachment is compared to —"
+        children: "Q5. The \"equal eye\" of 5.18 (seeing the same Self in a scholar, cow, dog, and outcaste) seems impractical. How does this actually work in a modern team?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. A flame in the wind"
+        children: "a. It doesn't — everyone should be treated exactly the same regardless of role"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. A lotus leaf untouched by water"
+        children: "b. It means recognizing the same capacity for growth, suffering, and contribution in every person — not ignoring role differences but seeing through them to the shared potential"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. A tree in a storm"
+        children: "c. It means ignoring all differences and pretending hierarchy doesn't exist"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. A lamp in a temple"
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
-      className: "tp-qa-card",
-      "data-qid": "bg5-q4",
-      children: [(0,jsx_runtime.jsx)(_components.summary, {
-        children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: b."
-        })
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q5. Which creatures does the sage look upon with an equal eye in Shloka 5.18?"
-      })
-    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Only fellow humans"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Only the learned"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. A brahmin, a cow, an elephant, a dog, and an outcaste"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Only sages and kings"
+        children: "d. It is a spiritual ideal with no practical application"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
       "data-qid": "bg5-q5",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
         children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: c."
-        })
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q6. What does one attain by knowing Krishna as the friend of all beings (Shloka 5.29)?"
-      })
-    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Wealth"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Victory in battle"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Peace"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Long life"
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
-      className: "tp-qa-card",
-      "data-qid": "bg5-q6",
-      children: [(0,jsx_runtime.jsx)(_components.summary, {
-        children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: c."
-        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer: b."
+        }), " The equal eye is not egalitarianism but depth perception — seeing the same Self (capacity for growth, awareness, contribution) in every person while still acknowledging role differences. In a team, this means: the intern and the CTO share the same potential; neither is reduced to their title. This is the foundation of psychological safety (Edmondson, 1999)."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "exercises",
@@ -1286,13 +1306,30 @@ function _createMdxContent(props) {
           children: "dvandvaLog"
         }), " — pairs of opposites experienced each day (success/failure, praise/blame) with a witnessScore for each. Report which pair binds you most, and connect it to 5.3."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The lotus leaf in code review:"
+        }), " When a reviewer critiques your code, notice whether you feel the \"soak\" — defensiveness, shame, anger. The lotus leaf response: receive the feedback fully, let it inform the code, and do not let it touch the self. The code is not you."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cognitive load and attachment:"
+        }), " Worrying about whether your PR will be approved consumes working memory that could be used for writing better code. Drop the outcome expectation; focus on the act. This is not indifference but efficiency."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The equal eye in cross-functional work:"
+        }), " The designer, the PM, the QA engineer, the intern — each sees a different facet of the same product. Seeing the same Self in each role means valuing their perspective as deeply as your own."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-lotus-leaf-witness-tracker",
       children: "TypeScript Tool: Lotus Leaf Witness Tracker"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Lotus Leaf Witness Tracker\r\n * Based on Karma-Sanyasa Yoga (Chapter 5 of the Bhagavad Gita):\r\n * the sage lives in the world like a lotus leaf on water —\r\n * fully supported, not wetted. Actions, claims, and cravings\r\n * are logged; the tracker reports your lotus-leaf score.\r\n * Osho's lens: renunciation is a state, not a robe.\r\n */\r\n\r\ninterface SenseContact {\r\n  date: string;\r\n  sense: 'sight' | 'sound' | 'touch' | 'taste' | 'smell' | 'thought';\r\n  object: string;\r\n  grasping: number;    // 0-10, how much you wanted to hold it\r\n  aversion: number;    // 0-10, how much you wanted to push it away\r\n  witnessed: boolean;  // were you aware while it happened?\r\n}\r\n\r\ninterface LotusReport {\r\n  contactsLogged: number;\r\n  witnessedRatio: number;   // 0-1\r\n  averageGrasping: number;  // 0-10\r\n  averageAversion: number;  // 0-10\r\n  lotusLeafScore: number;   // 0-100\r\n  verdict: string;\r\n}\r\n\r\nconst WITNESS_WEIGHT = 0.5;\r\nconst GRASP_WEIGHT = 0.3;\r\nconst AVERSION_WEIGHT = 0.2;\r\n\r\nfunction contactClutching(contact: SenseContact): number {\r\n  return Math.min(10, contact.grasping + contact.aversion);\r\n}\r\n\r\nfunction lotusLeafScore(contact: SenseContact): number {\r\n  const awareness = contact.witnessed ? WITNESS_WEIGHT : 0;\r\n  const clutching = (contactClutching(contact) / 10) * (GRASP_WEIGHT + AVERSION_WEIGHT);\r\n  return Math.max(0, Math.min(100, Math.round((awareness + (1 - clutching)) * 100)));\r\n}\r\n\r\nfunction analyzeWeek(contacts: SenseContact[]): LotusReport {\r\n  const total = contacts.length;\r\n  const witnessed = contacts.filter(c => c.witnessed).length;\r\n  const avgGrasp = contacts.reduce((s, c) => s + c.grasping, 0) / total;\r\n  const avgAversion = contacts.reduce((s, c) => s + c.aversion, 0) / total;\r\n  const score = Math.round(contacts.reduce((s, c) => s + lotusLeafScore(c), 0) / total);\r\n\r\n  let verdict = 'soaked: the water is on you because the grabbing is in you.';\r\n  if (score >= 75) verdict = 'leaf-like: you float on the pond, and nothing wets you.';\r\n  else if (score >= 50) verdict = 'half-leaf: you dry quickly, but the tilt is not yet yours.';\r\n\r\n  return {\r\n    contactsLogged: total,\r\n    witnessedRatio: witnessed / total,\r\n    averageGrasping: Math.round(avgGrasp * 10) / 10,\r\n    averageAversion: Math.round(avgAversion * 10) / 10,\r\n    lotusLeafScore: score,\r\n    verdict\r\n  };\r\n}\r\n\r\nfunction runDemo(): void {\r\n  const week: SenseContact[] = [\r\n    { date: '2026-08-18', sense: 'sight', object: 'phone screen', grasping: 7, aversion: 0, witnessed: true },\r\n    { date: '2026-08-18', sense: 'sound', object: 'criticism', grasping: 0, aversion: 8, witnessed: false },\r\n    { date: '2026-08-19', sense: 'taste', object: 'evening snack', grasping: 6, aversion: 0, witnessed: true },\r\n    { date: '2026-08-19', sense: 'thought', object: 'old regret', grasping: 0, aversion: 6, witnessed: false }\r\n  ];\r\n\r\n  const report = analyzeWeek(week);\r\n  console.log('=== Lotus Leaf Witness Tracker ===');\r\n  console.log(`Contacts logged: ${report.contactsLogged}`);\r\n  console.log(`Witnessed ratio: ${report.witnessedRatio}`);\r\n  console.log(`Average grasping: ${report.averageGrasping}/10`);\r\n  console.log(`Average aversion: ${report.averageAversion}/10`);\r\n  console.log(`Lotus leaf score: ${report.lotusLeafScore}/100`);\r\n  console.log(`Verdict: ${report.verdict}`);\r\n}\r\n\r\nrunDemo();\n"
+        children: "/**\n * Lotus Leaf Witness Tracker — Cognitive Load Edition\n * Based on Karma-Sanyasa Yoga (Gita 5.10–5.13) and\n * cognitive load theory (Sweller, 1988): attachment to\n * outcomes consumes working memory. The lotus leaf acts\n * fully while keeping cognitive resources free.\n *\n * Tracks: sense contacts, witness activation, and the\n * cognitive load ratio (task-focused vs outcome-focused).\n *\n * Run: npx ts-node lotus-leaf-tracker.ts\n */\n\ninterface SenseContact {\n  date: string;\n  sense: string;\n  object: string;\n  grasping: number;      // 0–10: how much did you want to hold/avoid?\n  aversion: number;      // 0–10: how much did you push away?\n  witnessed: boolean;    // did awareness observe the contact?\n  cognitiveLoad: number; // 0–10: how much mental bandwidth did this consume?\n  lotusLeaf: boolean;    // did the contact \"stick\" or slide off?\n}\n\ninterface LotusReport {\n  contactsLogged: number;\n  witnessedRatio: number;\n  averageGrasping: number;\n  averageAversion: number;\n  averageCognitiveLoad: number;\n  lotusLeafScore: number;   // 0–100\n  cognitiveEfficiency: number; // % of contacts where lotus held\n  verdict: string;\n}\n\nconst WITNESS_WEIGHT = 0.4;\nconst GRASP_WEIGHT = 0.25;\nconst AVERSION_WEIGHT = 0.15;\nconst LOAD_WEIGHT = 0.2;\n\nfunction contactClutching(contact: SenseContact): number {\n  return Math.min(10, contact.grasping + contact.aversion);\n}\n\nfunction lotusLeafScore(contact: SenseContact): number {\n  const awareness = contact.witnessed ? WITNESS_WEIGHT : 0;\n  const clutching = (contactClutching(contact) / 10) * (GRASP_WEIGHT + AVERSION_WEIGHT);\n  const loadPenalty = (contact.cognitiveLoad / 10) * LOAD_WEIGHT;\n  return Math.max(0, Math.min(100, Math.round((awareness + (1 - clutching - loadPenalty)) * 100)));\n}\n\nfunction analyzeWeek(contacts: SenseContact[]): LotusReport {\n  const total = contacts.length;\n  const witnessed = contacts.filter((c) => c.witnessed).length;\n  const avgGrasp = contacts.reduce((s, c) => s + c.grasping, 0) / total;\n  const avgAversion = contacts.reduce((s, c) => s + c.aversion, 0) / total;\n  const avgLoad = contacts.reduce((s, c) => s + c.cognitiveLoad, 0) / total;\n  const score = Math.round(contacts.reduce((s, c) => s + lotusLeafScore(c), 0) / total);\n  const lotusCount = contacts.filter((c) => c.lotusLeaf).length;\n  const cognitiveEfficiency = Math.round((lotusCount / total) * 100);\n\n  let verdict: string;\n  if (score >= 75) {\n    verdict = 'Leaf-like: you float on the pond, and nothing wets you. Cognitive load is low; action is free. (5.10)';\n  } else if (score >= 50) {\n    verdict = 'Half-leaf: you dry quickly, but the tilt is not yet yours. Reduce grasping to free working memory. (5.13)';\n  } else {\n    verdict = 'Soaked: the water is on you because the grabbing is in you. Return to the witness practice. (5.8)';\n  }\n\n  return {\n    contactsLogged: total,\n    witnessedRatio: Math.round((witnessed / total) * 100) / 100,\n    averageGrasping: Math.round(avgGrasp * 10) / 10,\n    averageAversion: Math.round(avgAversion * 10) / 10,\n    averageCognitiveLoad: Math.round(avgLoad * 10) / 10,\n    lotusLeafScore: score,\n    cognitiveEfficiency,\n    verdict\n  };\n}\n\nconst week: SenseContact[] = [\n  { date: '2026-08-18', sense: 'sight', object: 'phone notification', grasping: 7, aversion: 0, witnessed: true, cognitiveLoad: 6, lotusLeaf: false },\n  { date: '2026-08-18', sense: 'sound', object: 'criticism from manager', grasping: 0, aversion: 8, witnessed: false, cognitiveLoad: 9, lotusLeaf: false },\n  { date: '2026-08-19', sense: 'thought', object: 'old regret', grasping: 0, aversion: 6, witnessed: true, cognitiveLoad: 4, lotusLeaf: true },\n  { date: '2026-08-19', sense: 'sight', object: 'beautiful sunset', grasping: 3, aversion: 0, witnessed: true, cognitiveLoad: 1, lotusLeaf: true },\n  { date: '2026-08-20', sense: 'sound', object: 'praise from peer', grasping: 5, aversion: 0, witnessed: true, cognitiveLoad: 3, lotusLeaf: true },\n  { date: '2026-08-20', sense: 'thought', object: 'worry about deadline', grasping: 0, aversion: 7, witnessed: false, cognitiveLoad: 8, lotusLeaf: false }\n];\n\nconst report = analyzeWeek(week);\n\nconsole.log('=== Lotus Leaf Witness Tracker ===');\nconsole.log(`Contacts: ${report.contactsLogged} | Witnessed: ${report.witnessedRatio * 100}%`);\nconsole.log(`Avg grasping: ${report.averageGrasping}/10 | Avg aversion: ${report.averageAversion}/10`);\nconsole.log(`Avg cognitive load: ${report.averageCognitiveLoad}/10`);\nconsole.log(`Lotus leaf score: ${report.lotusLeafScore}/100 | Cognitive efficiency: ${report.cognitiveEfficiency}%`);\nconsole.log(`Verdict: ${report.verdict}`);\n"
       })
     })]
   });

@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-14-gunatraya-vibhaga-yoga-md-12f.json
-const site_docs_courses_bhagavad_gita_14_gunatraya_vibhaga_yoga_md_12f_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/14-gunatraya-vibhaga-yoga","title":"Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather","description":"\\"Stop praying for good weather. You are not the weather — you are the sky. Watch the clouds, and they will pass.\\"","source":"@site/docs/courses/bhagavad-gita/14-gunatraya-vibhaga-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/14-gunatraya-vibhaga-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/14-gunatraya-vibhaga-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":15,"frontMatter":{"id":"14-gunatraya-vibhaga-yoga","slug":"/bhagavad-gita/14-gunatraya-vibhaga-yoga","title":"Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather","sidebar_label":"Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather","sidebar_position":15},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower","permalink":"/ai-engineering-journey/bhagavad-gita/13-kshetra-kshetrajna-yoga"},"next":{"title":"Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky","permalink":"/ai-engineering-journey/bhagavad-gita/15-purushottama-yoga"}}');
+const site_docs_courses_bhagavad_gita_14_gunatraya_vibhaga_yoga_md_12f_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/14-gunatraya-vibhaga-yoga","title":"Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather","description":"\\"Stop praying for good weather. You are not the weather — you are the sky. Watch the clouds, and they will pass.\\"","source":"@site/docs/courses/bhagavad-gita/14-gunatraya-vibhaga-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/14-gunatraya-vibhaga-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/14-gunatraya-vibhaga-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":14,"frontMatter":{"id":"14-gunatraya-vibhaga-yoga","slug":"/bhagavad-gita/14-gunatraya-vibhaga-yoga","title":"Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather","sidebar_label":"Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather","sidebar_position":14},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower","permalink":"/ai-engineering-journey/bhagavad-gita/13-kshetra-kshetrajna-yoga"},"next":{"title":"Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky","permalink":"/ai-engineering-journey/bhagavad-gita/15-purushottama-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/14-gunatraya-vibhaga-yoga',
 	title: 'Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather',
 	sidebar_label: 'Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather',
-	sidebar_position: 15
+	sidebar_position: 14
 };
 const contentTitle = 'Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather';
 
@@ -210,6 +210,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Guna Balance Analyzer",
   "id": "typescript-tool-guna-balance-analyzer",
   "level": 2
@@ -248,7 +252,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"Stop praying for good weather. You are not the weather — you are the sky. Watch the clouds, and they will pass.\"\r\n— The Osho Way"
+        children: "\"Stop praying for good weather. You are not the weather — you are the sky. Watch the clouds, and they will pass.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "The battlefield has become a classroom. In the thirteenth chapter Krishna gave Arjuna the map of the field, kshetra, and its knower, kshetrajna. Now he goes one layer deeper: what threads weave the field itself? The answer is the gunas — sattva, rajas and tamas — three energies that spin every thought, every ambition, every sleep, every silence. This chapter is psychology before psychology existed: a complete diagnostic system of the inner weather, written five thousand years ago and still sharper than most modern manuals."
@@ -397,7 +401,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.1 — The Best of All Knowledge"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nपरं भूयः प्रवक्ष्यामि ज्ञानानां ज्ञानमुत्तमम् |\r\nयज्ज्ञात्वा मुनयः सर्वे परां सिद्धिमितो गताः"
+        children: "श्रीभगवानुवाच |\nपरं भूयः प्रवक्ष्यामि ज्ञानानां ज्ञानमुत्तमम् |\nयज्ज्ञात्वा मुनयः सर्वे परां सिद्धिमितो गताः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -416,7 +420,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.2 — Unity with Me: Beyond Creation and Dissolution"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "इदं ज्ञानमुपाश्रित्य मम साधर्म्यमागताः |\r\nसर्गेऽपि नोपजायन्ते प्रलये न व्यथन्ति च"
+        children: "इदं ज्ञानमुपाश्रित्य मम साधर्म्यमागताः |\nसर्गेऽपि नोपजायन्ते प्रलये न व्यथन्ति च"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -435,7 +439,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.3 — The Great Womb and the Seed I Place"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मम योनिर्महद् ब्रह्म तस्मिन्गर्भं दधाम्यहम् |\r\nसम्भवः सर्वभूतानां ततो भवति भारत"
+        children: "मम योनिर्महद् ब्रह्म तस्मिन्गर्भं दधाम्यहम् |\nसम्भवः सर्वभूतानां ततो भवति भारत"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -454,7 +458,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.4 — Father of Every Form"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सर्वयोनिषु कौन्तेय मूर्तयः सम्भवन्ति याः |\r\nतासां ब्रह्म महद्योनिरहं बीजप्रदः पिता"
+        children: "सर्वयोनिषु कौन्तेय मूर्तयः सम्भवन्ति याः |\nतासां ब्रह्म महद्योनिरहं बीजप्रदः पिता"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -473,7 +477,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.5 — The Three Gunas That Bind"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सत्त्वं रजस्तम इति गुणाः प्रकृतिसम्भवाः |\r\nनिबध्नन्ति महाबाहो देहे देहिनमव्ययम्"
+        children: "सत्त्वं रजस्तम इति गुणाः प्रकृतिसम्भवाः |\nनिबध्नन्ति महाबाहो देहे देहिनमव्ययम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -492,7 +496,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.6 — Sattva: The Golden Fetter"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् |\r\nसुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ"
+        children: "तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् |\nसुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -511,7 +515,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.7 — Rajas: The Fire of Thirst"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् |\r\nतन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम्"
+        children: "रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् |\nतन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -530,7 +534,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.8 — Tamas: The Fog of Delusion"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् |\r\nप्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत"
+        children: "तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् |\nप्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -549,7 +553,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.9 — Each Guna, Its Own Fetter"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सत्त्वं सुखे सञ्जयति रजः कर्मणि भारत |\r\nज्ञानमावृत्य तु तमः प्रमादे सञ्जयत्युत"
+        children: "सत्त्वं सुखे सञ्जयति रजः कर्मणि भारत |\nज्ञानमावृत्य तु तमः प्रमादे सञ्जयत्युत"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -568,7 +572,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.10 — The Wheel of Dominance"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "रजस्तमश्चाभिभूय सत्त्वं भवति भारत |\r\nरजः सत्त्वं तमश्चैव तमः सत्त्वं रजस्तथा"
+        children: "रजस्तमश्चाभिभूय सत्त्वं भवति भारत |\nरजः सत्त्वं तमश्चैव तमः सत्त्वं रजस्तथा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -587,7 +591,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.11 — The Wisdom-Light at Every Gate"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सर्वद्वारेषु देहेऽस्मिन्प्रकाश उपजायते |\r\nज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत"
+        children: "सर्वद्वारेषु देहेऽस्मिन्प्रकाश उपजायते |\nज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -606,7 +610,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.12 — When Rajas Rules"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "लोभः प्रवृत्तिरारम्भः कर्मणामशमः स्पृहा |\r\nरजस्येतानि जायन्ते विवृद्धे भरतर्षभ"
+        children: "लोभः प्रवृत्तिरारम्भः कर्मणामशमः स्पृहा |\nरजस्येतानि जायन्ते विवृद्धे भरतर्षभ"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -625,7 +629,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.13 — When Tamas Rules"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अप्रकाशोऽप्रवृत्तिश्च प्रमादो मोह एव च |\r\nतमस्येतानि जायन्ते विवृद्धे कुरुनन्दन"
+        children: "अप्रकाशोऽप्रवृत्तिश्च प्रमादो मोह एव च |\nतमस्येतानि जायन्ते विवृद्धे कुरुनन्दन"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -644,7 +648,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.14 — Dying in Sattva: The Spotless Worlds"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यदा सत्त्वे प्रवृद्धे तु प्रलयं याति देहभृत् |\r\nतदोत्तमविदां लोकानमलान्प्रतिपद्यते"
+        children: "यदा सत्त्वे प्रवृद्धे तु प्रलयं याति देहभृत् |\nतदोत्तमविदां लोकानमलान्प्रतिपद्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -663,7 +667,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.15 — Dying in Rajas and Tamas"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "रजसि प्रलयं गत्वा कर्मसङ्गिषु जायते |\r\nतथा प्रलीनस्तमसि मूढयोनिषु जायते"
+        children: "रजसि प्रलयं गत्वा कर्मसङ्गिषु जायते |\nतथा प्रलीनस्तमसि मूढयोनिषु जायते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -682,7 +686,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.16 — Fruits of the Three Gunas"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कर्मणः सुकृतस्याहुः सात्त्विकं निर्मलं फलम् |\r\nरजसस्तु फलं दुःखमज्ञानं तमसः फलम्"
+        children: "कर्मणः सुकृतस्याहुः सात्त्विकं निर्मलं फलम् |\nरजसस्तु फलं दुःखमज्ञानं तमसः फलम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -701,7 +705,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.17 — From Sattva Knowledge; From Rajas Greed"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च |\r\nप्रमादमोहौ तमसो भवतोऽज्ञानमेव च"
+        children: "सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च |\nप्रमादमोहौ तमसो भवतोऽज्ञानमेव च"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -720,7 +724,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.18 — Upward, Middle, Downward"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ऊर्ध्वं गच्छन्ति सत्त्वस्था मध्ये तिष्ठन्ति राजसाः |\r\nजघन्यगुणवृत्तिस्था अधो गच्छन्ति तामसाः"
+        children: "ऊर्ध्वं गच्छन्ति सत्त्वस्था मध्ये तिष्ठन्ति राजसाः |\nजघन्यगुणवृत्तिस्था अधो गच्छन्ति तामसाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -739,7 +743,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.19 — The Seer Who Sees No Doer"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नान्यं गुणेभ्यः कर्तारं यदा द्रष्टानुपश्यति |\r\nगुणेभ्यश्च परं वेत्ति मद्भावं सोऽधिगच्छति"
+        children: "नान्यं गुणेभ्यः कर्तारं यदा द्रष्टानुपश्यति |\nगुणेभ्यश्च परं वेत्ति मद्भावं सोऽधिगच्छति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -758,7 +762,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.20 — Beyond the Three: Immortal"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "गुणानेतानतीत्य त्रीन्देही देहसमुद्भवान् |\r\nजन्ममृत्युजरादुःखैर्विमुक्तोऽमृतमश्नुते"
+        children: "गुणानेतानतीत्य त्रीन्देही देहसमुद्भवान् |\nजन्ममृत्युजरादुःखैर्विमुक्तोऽमृतमश्नुते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -777,7 +781,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.21 — Arjuna's Question: The Marks of the Transcender"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nकैर्लिङ्गैस्त्रीन्गुणानेतानतीतो भवति प्रभो |\r\nकिमाचारः कथं चैतांस्त्रीन्गुणानतिवर्तते"
+        children: "अर्जुन उवाच |\nकैर्लिङ्गैस्त्रीन्गुणानेतानतीतो भवति प्रभो |\nकिमाचारः कथं चैतांस्त्रीन्गुणानतिवर्तते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -796,7 +800,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.22 — Neither Hating Nor Longing"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nप्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव |\r\nन द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति"
+        children: "श्रीभगवानुवाच |\nप्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव |\nन द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -815,7 +819,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.23 — Seated Like One Unconcerned"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "उदासीनवदासीनो गुणैर्यो न विचाल्यते |\r\nगुणा वर्तन्त इत्येवं योऽवतिष्ठति नेङ्गते"
+        children: "उदासीनवदासीनो गुणैर्यो न विचाल्यते |\nगुणा वर्तन्त इत्येवं योऽवतिष्ठति नेङ्गते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -834,7 +838,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.24 — Same in Pleasure and Pain, Clod and Gold"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "समदुःखसुखः स्वस्थः समलोष्टाश्मकाञ्चनः |\r\nतुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुतिः"
+        children: "समदुःखसुखः स्वस्थः समलोष्टाश्मकाञ्चनः |\nतुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुतिः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -853,7 +857,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.25 — Honor and Dishonor, Friend and Foe"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मानापमानयोस्तुल्यस्तुल्यो मित्रारिपक्षयोः |\r\nसर्वारम्भपरित्यागी गुणातीतः स उच्यते"
+        children: "मानापमानयोस्तुल्यस्तुल्यो मित्रारिपक्षयोः |\nसर्वारम्भपरित्यागी गुणातीतः स उच्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -872,7 +876,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.26 — Unswerving Devotion Crosses All"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मां च योऽव्यभिचारेण भक्तियोगेन सेवते |\r\nस गुणान्समतीत्यैतान्ब्रह्मभूयाय कल्पते"
+        children: "मां च योऽव्यभिचारेण भक्तियोगेन सेवते |\nस गुणान्समतीत्यैतान्ब्रह्मभूयाय कल्पते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -891,7 +895,7 @@ function _createMdxContent(props) {
       children: "Shloka 14.27 — The Foundation of Brahman Itself"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ब्रह्मणो हि प्रतिष्ठाहममृतस्याव्ययस्य च |\r\nशाश्वतस्य च धर्मस्य सुखस्यैकान्तिकस्य च"
+        children: "ब्रह्मणो हि प्रतिष्ठाहममृतस्याव्ययस्य च |\nशाश्वतस्य च धर्मस्य सुखस्यैकान्तिकस्य च"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -978,13 +982,85 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Temperament Research and Regulatory Focus"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Chapter 14 classifies all of nature into three gunas — sattva (clarity), rajas (activity), tamas (inertia). ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Temperament research"
+        }), " (Kagan, 1994) shows that humans are born with stable temperamental biases that map loosely onto the gunas: some are naturally reactive (rajas), some naturally calm (sattva), some naturally slow-to-respond (tamas). The Gita's teaching is not to eliminate the gunas but to transcend identification with them."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Sattva binds through happiness and knowledge (14.6)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Regulatory focus — promotion (Higgins, 1997)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Sattva-oriented people pursue growth and advancement — the promotion focus. The \"golden fetter\" is that promotion focus can become addictive"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Rajas binds through craving and action (14.7)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Regulatory focus — prevention (Higgins, 1997)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Rajas-oriented people act to avoid loss — the prevention focus. Craving is the pursuit of relief, not pleasure"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Tamas binds through delusion and laziness (14.8)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Learned helplessness (Seligman, 1975)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Tamas maps to the state where action seems futile — the fog that prevents initiation. It is not laziness but the nervous system's shutdown response"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The gunatita — beyond the gunas (14.22-14.25)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Self-determination theory (Deci & Ryan, 1985)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The one who transcends the gunas has moved from extrinsic motivation (rajas/tamas) through intrinsic motivation (sattva) to autonomous motivation — action that is freely chosen, not driven"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Yerkes-Dodson law"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Optimal arousal (Yerkes & Dodson, 1908)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Too much sattva (calm) produces under-arousal; too much rajas (stress) produces over-arousal. The gunatita finds the optimal zone"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " For one week, track your dominant guna three times daily (morning, afternoon, night). At the end of the week, review: which guna dominated? Was there a pattern? The watching itself begins to loosen the guna's grip."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The guna framework of Chapter 14 is the psychological foundation for Chapter 12's devotee portrait (12.13-12.20) — the devotee is the one who has transcended the gunas. It also connects to Chapter 3's action-yoga (3.1-3.20) — the gunas explain why action feels the way it does."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"Krishna declares the supreme knowledge of the three gunas\"] --> B[\"Sattva: clarity; binds by happiness and knowledge\"]\r\n    A --> C[\"Rajas: thirst; binds by action\"]\r\n    A --> D[\"Tamas: fog; binds by negligence and sleep\"]\r\n    B --> E[\"The wheel of dominance: the gunas alternate in every mind\"]\r\n    C --> E\r\n    D --> E\r\n    E --> F[\"Arjuna asks: what are the marks of the one who has crossed?\"]\r\n    F --> G[\"The marks: neither hating nor longing; unconcerned; clod and gold equal\"]\r\n    G --> H[\"The way across: unswerving devotion and the witness's vision\"]\r\n    H --> I[\"The gunatita: fit to be Brahman; the foundation of immortality\"]\r\n    style G fill:#4446e8,color:#fff\r\n    style H fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"Krishna declares the supreme knowledge of the three gunas\"] --> B[\"Sattva: clarity; binds by happiness and knowledge\"]\n    A --> C[\"Rajas: thirst; binds by action\"]\n    A --> D[\"Tamas: fog; binds by negligence and sleep\"]\n    B --> E[\"The wheel of dominance: the gunas alternate in every mind\"]\n    C --> E\n    D --> E\n    E --> F[\"Arjuna asks: what are the marks of the one who has crossed?\"]\n    F --> G[\"The marks: neither hating nor longing; unconcerned; clod and gold equal\"]\n    G --> H[\"The way across: unswerving devotion and the witness's vision\"]\n    H --> I[\"The gunatita: fit to be Brahman; the foundation of immortality\"]\n    style G fill:#4446e8,color:#fff\n    style H fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -992,7 +1068,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root[Gunatraya Vibhaga Yoga: the three gunas]\r\n    Sattva\r\n      Light and clarity\r\n      Binds by happiness\r\n      Binds by knowledge\r\n    Rajas\r\n      Thirst and ambition\r\n      Binds by action\r\n      The fruit is pain\r\n    Tamas\r\n      Fog and delusion\r\n      Binds by neglect and sleep\r\n      The fruit is ignorance\r\n    The witness\r\n      Neither hates nor longs\r\n      Clod and gold equal\r\n      Seated like one unconcerned\r\n    The crossing\r\n      Unswerving devotion\r\n      Seeing the one beyond the gunas\r\n      Immortal freedom\n"
+        children: "mindmap\n  root[Gunatraya Vibhaga Yoga: the three gunas]\n    Sattva\n      Light and clarity\n      Binds by happiness\n      Binds by knowledge\n    Rajas\n      Thirst and ambition\n      Binds by action\n      The fruit is pain\n    Tamas\n      Fog and delusion\n      Binds by neglect and sleep\n      The fruit is ignorance\n    The witness\n      Neither hates nor longs\n      Clod and gold equal\n      Seated like one unconcerned\n    The crossing\n      Unswerving devotion\n      Seeing the one beyond the gunas\n      Immortal freedom\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1085,17 +1161,17 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q3. Greed, activity, restlessness and longing arise when which guna is predominant?"
+        children: "Q3. The three gunas map onto three motivational systems in psychology. Rajas (craving, activity) most closely resembles which of these?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Sattva"
+        children: "a. Intrinsic motivation"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Rajas"
+        children: "b. Extrinsic motivation driven by loss-avoidance — the prevention focus (Higgins, 1997)"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Tamas"
+        children: "c. Amotivation"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. None of the three"
+        children: "d. Self-determined motivation"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1105,45 +1181,21 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        }), " Rajas — 14.12 lists these marks when rajas is predominant."]
+        }), " Higgins' regulatory focus theory (1997) distinguishes promotion focus (pursuing gains — sattva) from prevention focus (avoiding losses — rajas). Rajas-driven behavior is not pure pleasure-seeking but loss-avoidance — the craving is the fear of missing out, the activity is the avoidance of falling behind."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q4. How is the one who has transcended the gunas seated, according to 14.23?"
+        children: "Q5. The gunatita (14.22-14.25) \"neither hates nor longs\" — how does this relate to Yerkes-Dodson law (1908)?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. In constant prayer and austerity"
+        children: "a. It doesn't — the Yerkes-Dodson law is about arousal, not emotion"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Like one unconcerned, unmoved by the gunas, knowing that the gunas alone act"
+        children: "b. Yerkes-Dodson shows that performance peaks at moderate arousal — too much sattva (calm) produces under-arousal, too much rajas (stress) produces over-arousal. The gunatita finds the optimal zone"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. In a state of permanent sleep"
+        children: "c. The gunatita is always in a state of high arousal"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Leading all undertakings of the world"
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
-      className: "tp-qa-card",
-      "data-qid": "bg14-q4",
-      children: [(0,jsx_runtime.jsx)(_components.summary, {
-        children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: b."
-        }), " 14.23 — \"Seated like one unconcerned, unmoved by the gunas, he stands firm knowing that the gunas alone act — he does not stir.\""]
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q5. When light, activity and delusion are present, how does the gunatita relate to them (14.22)?"
-      })
-    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. He hates them and drives them away"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. He welcomes them as divine gifts"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. He neither hates them when present, nor longs for them when absent"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. He worships them as the three gods"
+        children: "d. Yerkes-Dodson says all arousal is bad"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1152,32 +1204,8 @@ function _createMdxContent(props) {
         children: "Show Answer"
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: c."
-        }), " 14.22 — \"he neither hates them, nor longs for them when they are absent\" — hate and longing are two sides of the same coin."]
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q6. What does Krishna declare himself to be in the final verse 14.27?"
-      })
-    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. The supreme guna among the three"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. The abode of Brahman, the immortal and immutable, of eternal dharma and absolute bliss"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. The seed of all sorrows"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. A teacher among many teachers"
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
-      className: "tp-qa-card",
-      "data-qid": "bg14-q6",
-      children: [(0,jsx_runtime.jsx)(_components.summary, {
-        children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        }), " 14.27 — \"For I am the abode of Brahman, the immortal and immutable, of eternal dharma and of absolute bliss.\""]
+        }), " Yerkes & Dodson (1908) found that performance follows an inverted U-curve with arousal: too little produces boredom (tamas), too much produces anxiety (rajas), and the optimal zone is moderate alertness. The gunatita — neither hating nor longing — is the person who has found this optimal zone."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "exercises",
@@ -1196,13 +1224,30 @@ function _createMdxContent(props) {
           children: "Extend the TypeScript tool:"
         }), " Add a third function to the Guna Balance Analyzer that computes a \"gunatita score\" — a day where no guna signal appears at all (pure witnessing) counts as crossing. Run it on a week of honest entries and see how often your sky is clear."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Knowing your guna in team dynamics:"
+        }), " Sattva-oriented engineers prefer clean design and deep thinking. Rajas-oriented engineers prefer speed and shipping. Tamas-oriented engineers procrastinate on hard tasks. Knowing your dominant guna helps you design your workday — deep work when sattva is high, shallow tasks when rajas drives."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The golden fetter of sattva (14.6):"
+        }), " The trap of sattva is that clarity and knowledge become identity — \"I am the one who sees clearly.\" This pride is the subtlest obstacle to growth. Notice when sattva becomes self-congratulation."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The gunatita in production incidents:"
+        }), " The gunatita neither panics (rajas) nor freezes (tamas) nor ignores (sattva's denial). They observe the situation clearly and act without attachment — the optimal response."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-guna-balance-analyzer",
       children: "TypeScript Tool: Guna Balance Analyzer"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Guna Balance Analyzer - Chapter 14: the three gunas\r\n * Scores journal entries for sattva, rajas and tamas,\r\n * names the dominant weather, and reminds the witness\r\n * that the sky is never the weather. Osho: watch, don't fight.\r\n */\r\n\r\ninterface DayEntry { hour: number; text: string; }\r\n\r\ninterface GunaSignal { guna: 'sattva' | 'rajas' | 'tamas'; keywords: string[]; }\r\n\r\ninterface GunaBalance {\r\n  counts: Record<'sattva' | 'rajas' | 'tamas', number>;\r\n  dominant: 'sattva' | 'rajas' | 'tamas';\r\n  isGunatita: boolean;\r\n  oshoNote: string;\r\n}\r\n\r\nconst signals: GunaSignal[] = [\r\n  { guna: 'sattva', keywords: ['clear', 'calm', 'grateful', 'focused', 'light', 'peace', 'insight', 'love'] },\r\n  { guna: 'rajas', keywords: ['greed', 'restless', 'rush', 'ambition', 'crave', 'busy', 'anxious', 'hurry'] },\r\n  { guna: 'tamas', keywords: ['lazy', 'sleep', 'dull', 'stuck', 'numb', 'avoid', 'scrolled', 'procrastinate'] }\r\n];\r\n\r\nfunction countGuna(text: string, guna: 'sattva' | 'rajas' | 'tamas'): number {\r\n  const signal = signals.find(s => s.guna === guna);\r\n  if (!signal) return 0;\r\n  return signal.keywords.filter(k => text.toLowerCase().includes(k)).length;\r\n}\r\n\r\nfunction analyzeDay(entries: DayEntry[]): GunaBalance {\r\n  const counts = { sattva: 0, rajas: 0, tamas: 0 };\r\n  for (const entry of entries) {\r\n    counts.sattva += countGuna(entry.text, 'sattva');\r\n    counts.rajas += countGuna(entry.text, 'rajas');\r\n    counts.tamas += countGuna(entry.text, 'tamas');\r\n  }\r\n  const order: ('sattva' | 'rajas' | 'tamas')[] = ['sattva', 'rajas', 'tamas'];\r\n  const dominant = order.reduce((a, b) => (counts[b] > counts[a] ? b : a));\r\n  const isGunatita = counts.sattva === 0 && counts.rajas === 0 && counts.tamas === 0;\r\n  const notes: Record<'sattva' | 'rajas' | 'tamas', string> = {\r\n    sattva: 'Clarity has come. But even purity binds when it becomes pride - the golden cage.',\r\n    rajas: 'The fire of thirst is burning. Do not fight the fire; watch it, and it loses its grip.',\r\n    tamas: 'The fog is thick. Never mistake this sleep for peace; light the lamp of watching.'\r\n  };\r\n  return {\r\n    counts,\r\n    dominant,\r\n    isGunatita,\r\n    oshoNote: isGunatita\r\n      ? 'No weather found. The witness is not the weather - the sky is clear because you stopped claiming it.'\r\n      : notes[dominant]\r\n  };\r\n}\r\n\r\nfunction runDemo(): void {\r\n  const day: DayEntry[] = [\r\n    { hour: 9, text: 'Woke up lazy, scrolled for an hour, felt numb and heavy.' },\r\n    { hour: 13, text: 'Rush to meet the deadline; ambitious but anxious and restless.' },\r\n    { hour: 20, text: 'Evening walk felt clear and calm; grateful for the sky.' }\r\n  ];\r\n  const balance = analyzeDay(day);\r\n  console.log('=== Guna Balance Analyzer ===');\r\n  console.log(`Sattva: ${balance.counts.sattva} | Rajas: ${balance.counts.rajas} | Tamas: ${balance.counts.tamas}`);\r\n  console.log(`Dominant weather: ${balance.dominant} | Gunatita: ${balance.isGunatita}`);\r\n  console.log(`Osho: ${balance.oshoNote}`);\r\n}\r\n\r\nrunDemo();\n"
+        children: "/**\n * Guna Balance Analyzer — Regulatory Focus Edition\n * Based on Gunatraya Vibhaga Yoga (Gita 14.5-14.27) and\n * regulatory focus theory (Higgins, 1997): sattva maps to\n * promotion focus (pursuing gains), rajas to prevention\n * focus (avoiding losses), tamas to disengagement. The\n * gunatita has transcended identification with any guna.\n *\n * Run: npx ts-node guna-balance-analyzer.ts\n */\n\ninterface DayEntry {\n  hour: number;\n  text: string;\n}\n\ninterface GunaSignal {\n  guna: 'sattva' | 'rajas' | 'tamas';\n  keywords: string[];\n  regulatoryFocus: string;\n}\n\ninterface GunaBalance {\n  counts: { sattva: number; rajas: number; tamas: number };\n  dominant: 'sattva' | 'rajas' | 'tamas';\n  isGunatita: boolean;\n  regulatoryProfile: string;\n  message: string;\n}\n\nconst signals: GunaSignal[] = [\n  { guna: 'sattva', keywords: ['calm', 'clear', 'grateful', 'peaceful', 'focused', 'aware', 'present'], regulatoryFocus: 'Promotion focus — pursuing growth and learning (Higgins, 1997)' },\n  { guna: 'rajas', keywords: ['greed', 'restless', 'rush', 'ambition', 'crave', 'busy', 'anxious', 'hurry'], regulatoryFocus: 'Prevention focus — avoiding loss and falling behind (Higgins, 1997)' },\n  { guna: 'tamas', keywords: ['lazy', 'sleep', 'dull', 'stuck', 'numb', 'avoid', 'scrolled', 'procrastinate'], regulatoryFocus: 'Disengagement — the nervous system shutdown response (Seligman, 1975)' }\n];\n\nfunction countGuna(text: string, guna: 'sattva' | 'rajas' | 'tamas'): number {\n  const signal = signals.find((s) => s.guna === guna);\n  if (!signal) return 0;\n  return signal.keywords.filter((k) => text.toLowerCase().includes(k)).length;\n}\n\nfunction analyzeDay(entries: DayEntry[]): GunaBalance {\n  const counts = { sattva: 0, rajas: 0, tamas: 0 };\n  for (const entry of entries) {\n    counts.sattva += countGuna(entry.text, 'sattva');\n    counts.rajas += countGuna(entry.text, 'rajas');\n    counts.tamas += countGuna(entry.text, 'tamas');\n  }\n  const order: ('sattva' | 'rajas' | 'tamas')[] = ['sattva', 'rajas', 'tamas'];\n  const dominant = order.reduce((a, b) => (counts[b] > counts[a] ? b : a));\n  const isGunatita = counts.sattva === 0 && counts.rajas === 0 && counts.tamas === 0;\n\n  const regulatoryProfile = isGunatita\n    ? 'Autonomous motivation — action freely chosen, not driven by any guna (Deci & Ryan, 1985)'\n    : signals.find((s) => s.guna === dominant)?.regulatoryFocus ?? '';\n\n  const messages: Record<'sattva' | 'rajas' | 'tamas', string> = {\n    sattva: 'Clarity has come. But even purity binds when it becomes pride — the golden cage. (14.6)',\n    rajas: 'The fire of craving is burning. Do not fight it; watch it, and it loses its grip. (14.7)',\n    tamas: 'The fog is thick. Never mistake this sleep for peace; light the lamp of watching. (14.8)'\n  };\n\n  return {\n    counts,\n    dominant,\n    isGunatita,\n    regulatoryProfile,\n    message: isGunatita\n      ? 'No weather found. The witness has crossed the gunas — autonomous motivation, freely chosen. (14.22-14.25)'\n      : messages[dominant]\n  };\n}\n\nconst day: DayEntry[] = [\n  { hour: 9, text: 'Woke up lazy, scrolled for an hour, felt numb and heavy.' },\n  { hour: 13, text: 'Rush to meet the deadline; ambitious but anxious and restless.' },\n  { hour: 20, text: 'Evening walk felt clear and calm; grateful for the sky.' }\n];\n\nconst balance = analyzeDay(day);\n\nconsole.log('=== Guna Balance Analyzer ===');\nconsole.log(`Sattva: ${balance.counts.sattva} | Rajas: ${balance.counts.rajas} | Tamas: ${balance.counts.tamas}`);\nconsole.log(`Dominant: ${balance.dominant} | Gunatita: ${balance.isGunatita}`);\nconsole.log(`Regulatory profile: ${balance.regulatoryProfile}`);\nconsole.log(balance.message);\n"
       })
     })]
   });

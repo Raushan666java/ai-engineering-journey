@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-02-sankhya-yoga-md-a00.json
-const site_docs_courses_bhagavad_gita_02_sankhya_yoga_md_a00_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/02-sankhya-yoga","title":"Chapter 2: Sankhya Yoga — The Wisdom of the Seer","description":"\\"Krishna begins where all real teaching begins: not with comfort, but with the truth that you have never died.\\"","source":"@site/docs/courses/bhagavad-gita/02-sankhya-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/02-sankhya-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/02-sankhya-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":3,"frontMatter":{"id":"02-sankhya-yoga","slug":"/bhagavad-gita/02-sankhya-yoga","title":"Chapter 2: Sankhya Yoga — The Wisdom of the Seer","sidebar_label":"Chapter 2: Sankhya Yoga — The Wisdom of the Seer","sidebar_position":3},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior","permalink":"/ai-engineering-journey/bhagavad-gita/01-vishada-yoga"},"next":{"title":"Chapter 3: Karma Yoga — Action Without Attachment","permalink":"/ai-engineering-journey/bhagavad-gita/03-karma-yoga"}}');
+const site_docs_courses_bhagavad_gita_02_sankhya_yoga_md_a00_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/02-sankhya-yoga","title":"Chapter 2: Sankhya Yoga — The Wisdom of the Seer","description":"\\"Krishna begins where all real teaching begins: not with comfort, but with the truth that you have never died.\\"","source":"@site/docs/courses/bhagavad-gita/02-sankhya-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/02-sankhya-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/02-sankhya-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"id":"02-sankhya-yoga","slug":"/bhagavad-gita/02-sankhya-yoga","title":"Chapter 2: Sankhya Yoga — The Wisdom of the Seer","sidebar_label":"Chapter 2: Sankhya Yoga — The Wisdom of the Seer","sidebar_position":2},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior","permalink":"/ai-engineering-journey/bhagavad-gita/01-vishada-yoga"},"next":{"title":"Chapter 3: Karma Yoga — Action Without Attachment","permalink":"/ai-engineering-journey/bhagavad-gita/03-karma-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/02-sankhya-yoga',
 	title: 'Chapter 2: Sankhya Yoga — The Wisdom of the Seer',
 	sidebar_label: 'Chapter 2: Sankhya Yoga — The Wisdom of the Seer',
-	sidebar_position: 3
+	sidebar_position: 2
 };
 const contentTitle = 'Chapter 2: Sankhya Yoga — The Wisdom of the Seer';
 
@@ -390,6 +390,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Samatva Monitor",
   "id": "typescript-tool-samatva-monitor",
   "level": 2
@@ -399,6 +403,7 @@ function _createMdxContent(props) {
     blockquote: "blockquote",
     code: "code",
     details: "details",
+    em: "em",
     h1: "h1",
     h2: "h2",
     h3: "h3",
@@ -428,7 +433,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"Krishna begins where all real teaching begins: not with comfort, but with the truth that you have never died.\"\r\n— The Osho Way"
+        children: "\"Krishna begins where all real teaching begins: not with comfort, but with the truth that you have never died.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Arjuna sits on the floor of the chariot, weaponless, tearful, finished. And Krishna — the friend, the charioteer, the whole of the Gita in human form — begins to speak. He does not begin with a consolation. He begins with a shock: \"You grieve for those who should not be grieved for, yet you speak words of wisdom.\" In one line, Krishna does what no therapist would dare: he refuses the tears. Not because the tears are wrong, but because they are aimed at the wrong target. Arjuna is weeping over bodies; the teaching will show him that the body was never the point."
@@ -581,7 +586,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.1 — Krishna Sees the Tears"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सञ्जय उवाच |\r\nतं तथा कृपयाविष्टमश्रुपूर्णाकुलेक्षणम् |\r\nविषीदन्तमिदं वाक्यमुवाच मधुसूदनः"
+        children: "सञ्जय उवाच |\nतं तथा कृपयाविष्टमश्रुपूर्णाकुलेक्षणम् |\nविषीदन्तमिदं वाक्यमुवाच मधुसूदनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -600,7 +605,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.2 — Whence This Weakness?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nकुतस्त्वा कश्मलमिदं विषमे समुपस्थितम् |\r\nअनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन"
+        children: "श्रीभगवानुवाच |\nकुतस्त्वा कश्मलमिदं विषमे समुपस्थितम् |\nअनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -619,7 +624,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.3 — Do Not Yield to Impotence"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते |\r\nक्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप"
+        children: "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते |\nक्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -638,7 +643,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.4 — How Can I Fight Bhishma and Drona?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nकथं भीष्ममहं सङ्ख्ये द्रोणं च मधुसूदन |\r\nइषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन"
+        children: "अर्जुन उवाच |\nकथं भीष्ममहं सङ्ख्ये द्रोणं च मधुसूदन |\nइषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -657,7 +662,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.5 — Alms Are Better Than Slaying Teachers"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "गुरूनहत्वा हि महानुभावान्\r\nश्रेयो भोक्तुं भैक्ष्यमपीह लोके |\r\nहत्वार्थकामांस्तु गुरूनिहैव\r\nभुञ्जीय भोगान् रुधिरप्रदिग्धान्"
+        children: "गुरूनहत्वा हि महानुभावान्\nश्रेयो भोक्तुं भैक्ष्यमपीह लोके |\nहत्वार्थकामांस्तु गुरूनिहैव\nभुञ्जीय भोगान् रुधिरप्रदिग्धान्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -676,7 +681,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.6 — We Do Not Know Which Is Better"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न चैतद्विद्मः कतरन्नो गरीयो\r\nयद्वा जयेम यदि वा नो जयेयुः |\r\nयानेव हत्वा न जिजीविषामस्-\r\nतेऽवस्थिताः प्रमुखे धार्तराष्ट्राः"
+        children: "न चैतद्विद्मः कतरन्नो गरीयो\nयद्वा जयेम यदि वा नो जयेयुः |\nयानेव हत्वा न जिजीविषामस्-\nतेऽवस्थिताः प्रमुखे धार्तराष्ट्राः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -695,7 +700,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.7 — I Am Your Disciple; Teach Me"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कार्पण्यदोषोपहतस्वभावः\r\nपृच्छामि त्वां धर्मसम्मूढचेताः |\r\nयच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे\r\nशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्"
+        children: "कार्पण्यदोषोपहतस्वभावः\nपृच्छामि त्वां धर्मसम्मूढचेताः |\nयच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे\nशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -714,7 +719,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.8 — No Kingdom Can Remove This Sorrow"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न हि प्रपश्यामि ममापनुद्याद्\r\nयच्छोकमुच्छोषणमिन्द्रियाणाम् |\r\nअवाप्य भूमावसपत्नमृद्धं\r\nराज्यं सुराणामपि चाधिपत्यम्"
+        children: "न हि प्रपश्यामि ममापनुद्याद्\nयच्छोकमुच्छोषणमिन्द्रियाणाम् |\nअवाप्य भूमावसपत्नमृद्धं\nराज्यं सुराणामपि चाधिपत्यम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -733,7 +738,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.9 — I Will Not Fight"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सञ्जय उवाच |\r\nएवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप |\r\nन योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह"
+        children: "सञ्जय उवाच |\nएवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप |\nन योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -752,7 +757,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.10 — Krishna Smiles"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तमुवाच हृषीकेशः प्रहसन्निव भारत |\r\nसेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः"
+        children: "तमुवाच हृषीकेशः प्रहसन्निव भारत |\nसेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -771,7 +776,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.11 — You Grieve for What Should Not Be Grieved"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nअशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे |\r\nगतासूनगतासूंश्च नानुशोचन्ति पण्डिताः"
+        children: "श्रीभगवानुवाच |\nअशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे |\nगतासूनगतासूंश्च नानुशोचन्ति पण्डिताः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -790,7 +795,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.12 — Never Was There a Time When I Was Not"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः |\r\nन चैव न भविष्यामः सर्वे वयमतः परम्"
+        children: "न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः |\nन चैव न भविष्यामः सर्वे वयमतः परम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -809,7 +814,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.13 — Childhood, Youth, Old Age, and Another Body"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा |\r\nतथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति"
+        children: "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा |\nतथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -828,7 +833,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.14 — Heat and Cold, Pleasure and Pain"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः |\r\nआगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत"
+        children: "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः |\nआगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -847,7 +852,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.15 — Fit for Immortality"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ |\r\nसमदुःखसुखं धीरं सोऽमृतत्वाय कल्पते"
+        children: "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ |\nसमदुःखसुखं धीरं सोऽमृतत्वाय कल्पते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -866,7 +871,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.16 — The Unreal Has No Being"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नासतो विद्यते भावो नाभावो विद्यते सतः |\r\nउभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः"
+        children: "नासतो विद्यते भावो नाभावो विद्यते सतः |\nउभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -885,7 +890,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.17 — Know That Which Pervades All as Indestructible"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अविनाशि तु तद्विद्धि येन सर्वमिदं ततम् |\r\nविनाशमव्ययस्यास्य न कश्चित्कर्तुमर्हति"
+        children: "अविनाशि तु तद्विद्धि येन सर्वमिदं ततम् |\nविनाशमव्ययस्यास्य न कश्चित्कर्तुमर्हति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -904,7 +909,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.18 — The Bodies Have an End; Fight"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अन्तवन्त इमे देहा नित्यस्योक्ताः शरीरिणः |\r\nअनाशिनोऽप्रमेयस्य तस्माद्युध्यस्व भारत"
+        children: "अन्तवन्त इमे देहा नित्यस्योक्ताः शरीरिणः |\nअनाशिनोऽप्रमेयस्य तस्माद्युध्यस्व भारत"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -923,7 +928,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.19 — The Self Neither Kills Nor Is Killed"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम् |\r\nउभौ तौ न विजानीतो नायं हन्ति न हन्यते"
+        children: "य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम् |\nउभौ तौ न विजानीतो नायं हन्ति न हन्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -942,7 +947,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.20 — Not Born, Not Dying, Ancient and Eternal"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न जायते म्रियते वा कदाचिन्\r\nनायं भूत्वा भविता वा न भूयः |\r\nअजो नित्यः शाश्वतोऽयं पुराणो\r\nन हन्यते हन्यमाने शरीरे"
+        children: "न जायते म्रियते वा कदाचिन्\nनायं भूत्वा भविता वा न भूयः |\nअजो नित्यः शाश्वतोऽयं पुराणो\nन हन्यते हन्यमाने शरीरे"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -961,7 +966,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.21 — How Can He Kill, Who Knows?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "वेदाविनाशिनं नित्यं य एनमजमव्ययम् |\r\nकथं स पुरुषः पार्थ कं घातयति हन्ति कम्"
+        children: "वेदाविनाशिनं नित्यं य एनमजमव्ययम् |\nकथं स पुरुषः पार्थ कं घातयति हन्ति कम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -980,7 +985,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.22 — As a Man Casts Off Worn-Out Clothes"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "वासांसि जीर्णानि यथा विहाय\r\nनवानि गृह्णाति नरोऽपराणि |\r\nतथा शरीराणि विहाय जीर्णा-\r\nन्यन्यानि संयाति नवानि देही"
+        children: "वासांसि जीर्णानि यथा विहाय\nनवानि गृह्णाति नरोऽपराणि |\nतथा शरीराणि विहाय जीर्णा-\nन्यन्यानि संयाति नवानि देही"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -999,7 +1004,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.23 — Weapons, Fire, Water, Wind"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः |\r\nन चैनं क्लेदयन्त्यापो न शोषयति मारुतः"
+        children: "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः |\nन चैनं क्लेदयन्त्यापो न शोषयति मारुतः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1018,7 +1023,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.24 — Eternal, All-Pervading, Immovable"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च |\r\nनित्यः सर्वगतः स्थाणुरचलोऽयं सनातनः"
+        children: "अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च |\nनित्यः सर्वगतः स्थाणुरचलोऽयं सनातनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1037,7 +1042,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.25 — Unmanifest, Unthinkable, Unchangeable"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते |\r\nतस्मादेवं विदित्वैनं नानुशोचितुमर्हसि"
+        children: "अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते |\nतस्मादेवं विदित्वैनं नानुशोचितुमर्हसि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1056,7 +1061,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.26 — Even If It Were Born and Died"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम् |\r\nतथापि त्वं महाबाहो नैवं शोचितुमर्हसि"
+        children: "अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम् |\nतथापि त्वं महाबाहो नैवं शोचितुमर्हसि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1075,7 +1080,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.27 — Death Is Certain for the Born"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च |\r\nतस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि"
+        children: "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च |\nतस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1094,7 +1099,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.28 — Unmanifest Before and After"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत |\r\nअव्यक्तनिधनान्येव तत्र का परिदेवना"
+        children: "अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत |\nअव्यक्तनिधनान्येव तत्र का परिदेवना"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1113,7 +1118,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.29 — One Sees It as a Wonder"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आश्चर्यवत्पश्यति कश्चिदेन-\r\nमाश्चर्यवद्वदति तथैव चान्यः |\r\nआश्चर्यवच्चैनमन्यः शृणोति\r\nश्रुत्वाप्येनं वेद न चैव कश्चित्"
+        children: "आश्चर्यवत्पश्यति कश्चिदेन-\nमाश्चर्यवद्वदति तथैव चान्यः |\nआश्चर्यवच्चैनमन्यः शृणोति\nश्रुत्वाप्येनं वेद न चैव कश्चित्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1132,7 +1137,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.30 — The Indweller Is Ever Indestructible"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "देही नित्यमवध्योऽयं देहे सर्वस्य भारत |\r\nतस्मात्सर्वाणि भूतानि न त्वं शोचितुमर्हसि"
+        children: "देही नित्यमवध्योऽयं देहे सर्वस्य भारत |\nतस्मात्सर्वाणि भूतानि न त्वं शोचितुमर्हसि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1151,7 +1156,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.31 — Your Own Dharma"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि |\r\nधर्म्याद्धि युद्धाच्छ्रेयोऽन्यत्क्षत्रियस्य न विद्यते"
+        children: "स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि |\nधर्म्याद्धि युद्धाच्छ्रेयोऽन्यत्क्षत्रियस्य न विद्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1170,7 +1175,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.32 — An Open Door to Heaven"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम् |\r\nसुखिनः क्षत्रियाः पार्थ लभन्ते युद्धमीदृशम्"
+        children: "यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम् |\nसुखिनः क्षत्रियाः पार्थ लभन्ते युद्धमीदृशम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1189,7 +1194,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.33 — If You Refuse the Righteous War"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अथ चेत्त्वमिमं धर्म्यं संग्रामं न करिष्यसि |\r\nततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि"
+        children: "अथ चेत्त्वमिमं धर्म्यं संग्रामं न करिष्यसि |\nततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1208,7 +1213,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.34 — Dishonour Is Worse Than Death"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम् |\r\nसम्भावितस्य चाकीर्तिर्मरणादतिरिच्यते"
+        children: "अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम् |\nसम्भावितस्य चाकीर्तिर्मरणादतिरिच्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1227,7 +1232,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.35 — They Will Think You Withdrew in Fear"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "भयाद्रणादुपरतं मंस्यन्ते त्वां महारथाः |\r\nयेषां च त्वं बहुमतो भूत्वा यास्यसि लाघवम्"
+        children: "भयाद्रणादुपरतं मंस्यन्ते त्वां महारथाः |\nयेषां च त्वं बहुमतो भूत्वा यास्यसि लाघवम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1246,7 +1251,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.36 — They Will Speak Unutterable Words"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अवाच्यवादांश्च बहून्वदिष्यन्ति तवाहिताः |\r\nनिन्दन्तस्तव सामर्थ्यं ततो दुःखतरं नु किम्"
+        children: "अवाच्यवादांश्च बहून्वदिष्यन्ति तवाहिताः |\nनिन्दन्तस्तव सामर्थ्यं ततो दुःखतरं नु किम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1265,7 +1270,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.37 — Slain, Heaven; Victorious, the Earth"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "हतो वा प्राप्स्यसि स्वर्गं जित्वा वा भोक्ष्यसे महीम् |\r\nतस्मादुत्तिष्ठ कौन्तेय युद्धाय कृतनिश्चयः"
+        children: "हतो वा प्राप्स्यसि स्वर्गं जित्वा वा भोक्ष्यसे महीम् |\nतस्मादुत्तिष्ठ कौन्तेय युद्धाय कृतनिश्चयः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1284,7 +1289,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.38 — Make Pleasure and Pain the Same"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ |\r\nततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि"
+        children: "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ |\nततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1303,7 +1308,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.39 — The Wisdom of Sankhya and the Wisdom of Yoga"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "एषा तेऽभिहिता साङ्ख्ये बुद्धिर्योगे त्विमां शृणु |\r\nबुद्ध्या युक्तो यया पार्थ कर्मबन्धं प्रहास्यसि"
+        children: "एषा तेऽभिहिता साङ्ख्ये बुद्धिर्योगे त्विमां शृणु |\nबुद्ध्या युक्तो यया पार्थ कर्मबन्धं प्रहास्यसि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1322,7 +1327,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.40 — No Effort Is Lost on This Path"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते |\r\nस्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्"
+        children: "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते |\nस्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1341,7 +1346,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.41 — One-Pointed Determination"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "व्यवसायात्मिका बुद्धिरेकेह कुरुनन्दन |\r\nबहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम्"
+        children: "व्यवसायात्मिका बुद्धिरेकेह कुरुनन्दन |\nबहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1360,7 +1365,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.42 — The Flowery Words of the Unwise"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यामिमां पुष्पितां वाचं प्रवदन्त्यविपश्चितः |\r\nवेदवादरताः पार्थ नान्यदस्तीति वादिनः"
+        children: "यामिमां पुष्पितां वाचं प्रवदन्त्यविपश्चितः |\nवेदवादरताः पार्थ नान्यदस्तीति वादिनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1379,7 +1384,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.43 — Full of Desires, Heaven-Bound"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कामात्मानः स्वर्गपरा जन्मकर्मफलप्रदाम् |\r\nक्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति"
+        children: "कामात्मानः स्वर्गपरा जन्मकर्मफलप्रदाम् |\nक्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1398,7 +1403,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.44 — No Firm Reason in the Attached"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "भोगैश्वर्यप्रसक्तानां तयापहृतचेतसाम् |\r\nव्यवसायात्मिका बुद्धिः समाधौ न विधीयते"
+        children: "भोगैश्वर्यप्रसक्तानां तयापहृतचेतसाम् |\nव्यवसायात्मिका बुद्धिः समाधौ न विधीयते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1417,7 +1422,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.45 — Beyond the Three Gunas"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन |\r\nनिर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान्"
+        children: "त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन |\nनिर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1436,7 +1441,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.46 — As Much Use as a Well in a Flood"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यावानर्थ उदपाने सर्वतः सम्प्लुतोदके |\r\nतावान्सर्वेषु वेदेषु ब्राह्मणस्य विजानतः"
+        children: "यावानर्थ उदपाने सर्वतः सम्प्लुतोदके |\nतावान्सर्वेषु वेदेषु ब्राह्मणस्य विजानतः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1455,7 +1460,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.47 — Your Right Is to Action Alone"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन |\r\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि"
+        children: "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन |\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1474,7 +1479,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.48 — Evenness of Mind Is Called Yoga"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय |\r\nसिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते"
+        children: "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय |\nसिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1493,7 +1498,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.49 — Action Is Far Lower Than the Yoga of Wisdom"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय |\r\nबुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः"
+        children: "दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय |\nबुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1512,7 +1517,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.50 — Yoga Is Skill in Action"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते |\r\nतस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम्"
+        children: "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते |\nतस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1531,7 +1536,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.51 — The Wise Abandon the Fruits"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः |\r\nजन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम्"
+        children: "कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः |\nजन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1550,7 +1555,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.52 — Beyond the Mire of Delusion"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति |\r\nतदा गन्तासि निर्वेदं श्रोतव्यस्य श्रुतस्य च"
+        children: "यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति |\nतदा गन्तासि निर्वेदं श्रोतव्यस्य श्रुतस्य च"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1569,7 +1574,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.53 — Steady in the Self"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला |\r\nसमाधावचला बुद्धिस्तदा योगमवाप्स्यसि"
+        children: "श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला |\nसमाधावचला बुद्धिस्तदा योगमवाप्स्यसि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1588,7 +1593,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.54 — What Is the Steady-Wisdomed Man Like?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nस्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव |\r\nस्थितधीः किं प्रभाषेत किमासीत व्रजेत किम्"
+        children: "अर्जुन उवाच |\nस्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव |\nस्थितधीः किं प्रभाषेत किमासीत व्रजेत किम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1607,7 +1612,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.55 — Satisfied in the Self"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nप्रजहाति यदा कामान्सर्वान्पार्थ मनोगतान् |\r\nआत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते"
+        children: "श्रीभगवानुवाच |\nप्रजहाति यदा कामान्सर्वान्पार्थ मनोगतान् |\nआत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1626,7 +1631,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.56 — Unshaken in Adversity, Unhankering in Joy"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः |\r\nवीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते"
+        children: "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः |\nवीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1645,7 +1650,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.57 — Without Attachment Everywhere"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम् |\r\nनाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता"
+        children: "यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम् |\nनाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1664,7 +1669,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.58 — Like the Tortoise Withdrawing Its Limbs"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः |\r\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता"
+        children: "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः |\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1683,7 +1688,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.59 — The Taste Departs on Seeing the Supreme"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "विषया विनिवर्तन्ते निराहारस्य देहिनः |\r\nरसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते"
+        children: "विषया विनिवर्तन्ते निराहारस्य देहिनः |\nरसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1702,7 +1707,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.60 — The Turbulent Senses Carry Away the Mind"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः |\r\nइन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः"
+        children: "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः |\nइन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1721,7 +1726,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.61 — Restrained Senses, Intent on Me"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तानि सर्वाणि संयम्य युक्त आसीत मत्परः |\r\nवशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता"
+        children: "तानि सर्वाणि संयम्य युक्त आसीत मत्परः |\nवशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1740,7 +1745,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.62 — From Thinking of Objects Comes Attachment"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते |\r\nसङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते"
+        children: "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते |\nसङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1759,7 +1764,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.63 — From Anger, Delusion; From Delusion, Ruin"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "क्रोधाद्भवति सम्मोहः सम्मोहात्स्मृतिविभ्रमः |\r\nस्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति"
+        children: "क्रोधाद्भवति सम्मोहः सम्मोहात्स्मृतिविभ्रमः |\nस्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1778,7 +1783,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.64 — Free from Attraction and Repulsion"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "रागद्वेषविमुक्तैस्तु विषयानिन्द्रियैश्चरन् | (or वियुक्तैस्तु)\r\nआत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति"
+        children: "रागद्वेषविमुक्तैस्तु विषयानिन्द्रियैश्चरन् | (or वियुक्तैस्तु)\nआत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1797,7 +1802,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.65 — In That Peace All Sorrow Ends"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "प्रसादे सर्वदुःखानां हानिरस्योपजायते |\r\nप्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते"
+        children: "प्रसादे सर्वदुःखानां हानिरस्योपजायते |\nप्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1816,7 +1821,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.66 — No Wisdom Without Yoga"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना |\r\nन चाभावयतः शान्तिरशान्तस्य कुतः सुखम्"
+        children: "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना |\nन चाभावयतः शान्तिरशान्तस्य कुतः सुखम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1835,7 +1840,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.67 — The Wind Carries Away the Boat"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते |\r\nतदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि"
+        children: "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते |\nतदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1854,7 +1859,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.68 — Whose Senses Are Restrained, His Wisdom Is Steady"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः |\r\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता"
+        children: "तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः |\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1873,7 +1878,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.69 — What Is Night for All Beings"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "या निशा सर्वभूतानां तस्यां जागर्ति संयमी |\r\nयस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः"
+        children: "या निशा सर्वभूतानां तस्यां जागर्ति संयमी |\nयस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1892,7 +1897,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.70 — The Ocean and the Rivers"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आपूर्यमाणमचलप्रतिष्ठं\r\nसमुद्रमापः प्रविशन्ति यद्वत् |\r\nतद्वत्कामा यं प्रविशन्ति सर्वे\r\nस शान्तिमाप्नोति न कामकामी"
+        children: "आपूर्यमाणमचलप्रतिष्ठं\nसमुद्रमापः प्रविशन्ति यद्वत् |\nतद्वत्कामा यं प्रविशन्ति सर्वे\nस शान्तिमाप्नोति न कामकामी"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1911,7 +1916,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.71 — Abandoning All Desires"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः |\r\nनिर्ममो निरहङ्कारः स शान्तिमधिगच्छति"
+        children: "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः |\nनिर्ममो निरहङ्कारः स शान्तिमधिगच्छति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1930,7 +1935,7 @@ function _createMdxContent(props) {
       children: "Shloka 2.72 — This Is the Brahmic State"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति |\r\nस्थित्वास्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति"
+        children: "एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति |\nस्थित्वास्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -2009,13 +2014,89 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Dual-Process Theory and the Witness"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Krishna's teaching maps almost exactly onto what cognitive scientists call ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "dual-process theory"
+        }), " (Kahneman, 2011): System 1 is fast, automatic, reactive — the senses, the brooding mind, the chain of desire (2.62–2.63). System 2 is slow, deliberate, reflective — the buddhi, the one-pointed intellect (2.41). But the Gita adds a ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "third"
+        }), " layer that Western psychology only hints at: the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "witness"
+        }), " (sakshi), the awareness that observes both systems without being either. Neuroscience locates this in the default mode network's capacity for meta-awareness — the ability to notice that you are thinking."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Sthitaprajna (steady wisdom)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Emotional regulation (Gross, 2002)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Not suppression but reappraisal — the sage reinterprets events rather than reacting to them"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Samatva (evenness)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Equanimity research (Desbordes, 2015)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "fMRI shows experienced meditators maintain prefrontal activation during emotional stimuli — the brain's \"witness\" lights up"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The chain: dwelling → attachment → desire → anger"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Rumination science (Nolen-Hoeksema, 2004)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Repetitive thinking amplifies negative affect — the Gita's chain is empirically validated"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The tortoise withdrawing senses"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Sensory gating (Preston, 2007)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The brain actively filters irrelevant stimuli — the tortoise is not withdrawal but efficient attention"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "\"You have a right to action alone\""
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Self-determination theory (Deci & Ryan)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Intrinsic motivation thrives when outcomes are detached — the science of autonomous action"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " For one day, track your \"System 1\" moments — automatic reactions to emails, news, notifications. Then track \"System 2\" moments — deliberate choices you made despite the impulse. At day's end, count the ratio. The Gita's claim: you can shift the ratio by practising the witness — noticing the reaction without acting on it. This is not suppression; it is the creation of a gap between stimulus and response (Viktor Frankl's insight, which the Gita anticipated by two millennia)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The chain of bondage (2.62–2.63) is the psychological engine that drives Arjuna's crisis in Chapter 1. See also Chapter 3's ladder of ascent (3.42) — senses → mind → buddhi → Self — for the same map presented as an action plan rather than a warning."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"Arjuna's tears: I will not fight 2.1-2.10\"] --> B[\"Krishna's smile and first shock\"]\r\n    B --> C[\"The immortal atman: never born, never dies 2.11-2.30\"]\r\n    C --> D[\"Duty and the even mind: samatva 2.31-2.48\"]\r\n    D --> E[\"Beyond ritual: the one-pointed buddhi 2.39-2.53\"]\r\n    E --> F[\"The question: what is the steady-wisdomed man 2.54\"]\r\n    F --> G[\"The chain of desire and its breaking 2.62-2.67\"]\r\n    G --> H[\"The ocean of peace: desires enter, the sage is unmoved 2.70\"]\r\n    H --> I[\"The Brahmic state: oneness in this life 2.72\"]\r\n    style C fill:#4446e8,color:#fff\r\n    style I fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"Arjuna's tears: I will not fight 2.1-2.10\"] --> B[\"Krishna's smile and first shock\"]\n    B --> C[\"The immortal atman: never born, never dies 2.11-2.30\"]\n    C --> D[\"Duty and the even mind: samatva 2.31-2.48\"]\n    D --> E[\"Beyond ritual: the one-pointed buddhi 2.39-2.53\"]\n    E --> F[\"The question: what is the steady-wisdomed man 2.54\"]\n    F --> G[\"The chain of desire and its breaking 2.62-2.67\"]\n    G --> H[\"The ocean of peace: desires enter, the sage is unmoved 2.70\"]\n    H --> I[\"The Brahmic state: oneness in this life 2.72\"]\n    style C fill:#4446e8,color:#fff\n    style I fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -2023,7 +2104,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root[Sankhya Yoga: The Wisdom of the Seer]\r\n    The awakening\r\n      The rebuke\r\n      The smile\r\n      The surrender of the disciple\r\n    The immortal self\r\n      Never born, never dies\r\n      Casting off worn-out clothes\r\n      Weapons cannot cut it\r\n      The indweller of all\r\n    The practical yoga\r\n      Your own dharma\r\n      Samatva: pleasure and pain equal\r\n      Yoga is skill in action\r\n      Action without attachment to fruit\r\n    Beyond scripture\r\n      The flowery words of the unwise\r\n      A well in a flood\r\n      The one-pointed determination\r\n    The steady-wisdomed man\r\n      Desires cast off\r\n      The tortoise withdrawing\r\n      The ocean receiving rivers\r\n      The Brahmic state\n"
+        children: "mindmap\n  root[Sankhya Yoga: The Wisdom of the Seer]\n    The awakening\n      The rebuke\n      The smile\n      The surrender of the disciple\n    The immortal self\n      Never born, never dies\n      Casting off worn-out clothes\n      Weapons cannot cut it\n      The indweller of all\n    The practical yoga\n      Your own dharma\n      Samatva: pleasure and pain equal\n      Yoga is skill in action\n      Action without attachment to fruit\n    Beyond scripture\n      The flowery words of the unwise\n      A well in a flood\n      The one-pointed determination\n    The steady-wisdomed man\n      Desires cast off\n      The tortoise withdrawing\n      The ocean receiving rivers\n      The Brahmic state\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -2164,17 +2245,17 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q5. In shlokas 2.62–2.63, what is the chain of bondage that begins with dwelling on objects?"
+        children: "Q5. The chain in 2.62–2.63 (dwelling → attachment → desire → anger → delusion → ruin) maps onto modern rumination research. Where does the chain first become breakable?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Dwelling, attachment, desire, anger, delusion, loss of memory, ruin"
+        children: "a. At the point of anger, because anger is the most visible"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Desire, anger, greed, violence"
+        children: "b. At the first link — dwelling on the object — because awareness of brooding prevents attachment from forming"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Attachment, possession, fear, envy"
+        children: "c. At delusion, because that is when discrimination is lost"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Pleasure, craving, disappointment, sorrow"
+        children: "d. The chain cannot be broken; it runs automatically"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -2183,22 +2264,22 @@ function _createMdxContent(props) {
         children: "Show Answer"
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: a."
-        }), " Dwelling on objects grows attachment; attachment grows desire; desire grows anger; anger grows delusion; delusion destroys memory, discrimination, and finally the man."]
+          children: "Answer: b."
+        }), " Osho says the chain is avoidable at the first link (2.63 commentary). Modern rumination research confirms: catching repetitive thinking early reduces its emotional amplification by 60–70% (Nolen-Hoeksema, 2004). The practice of meditation is precisely this: watching the brooding before it becomes attachment."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q6. What is the final promise of the chapter in shloka 2.72?"
+        children: "Q6. Krishna says the wise man is \"like the deep ocean\" (2.70) — rivers enter but it is not stirred. What psychological capacity does this metaphor describe?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. The wise will live a thousand years"
+        children: "a. Emotional suppression — not feeling anything"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Established in the Brahmic state even at the end of life, one attains oneness with Brahman"
+        children: "b. Equanimity — feeling fully while maintaining a stable centre that absorbs emotional turbulence"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. The Pandavas will win the war"
+        children: "c. Indifference — not caring about outcomes"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Arjuna will never feel sorrow again"
+        children: "d. dissociation — separating from reality"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -2208,7 +2289,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        }), " The Brahmic state brings freedom from delusion, and even the last hour is not too late to enter it."]
+        }), " The ocean metaphor describes equanimity — the capacity to receive emotional input without losing stability. Desbordes (2015) found that experienced meditators show reduced amygdala activation but preserved prefrontal engagement — they feel but are not overwhelmed. The ocean is not empty; it is full and still. The man of samatva does not feel less; he holds more."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "exercises",
@@ -2227,13 +2308,30 @@ function _createMdxContent(props) {
           children: "TypeScript exercise:"
         }), " Extend the Samatva Monitor — add a \"desire-river\" tracker that logs the desires that arrive during the day (2.70) and reports how many stirred you versus how many passed through you like rivers through an ocean."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Equanimity in on-call:"
+        }), " When the alert fires at 3 AM, notice the System 1 panic (2.62: dwelling → attachment → anger). The sthitaprajna engineer acknowledges the alert without being consumed by it — feeling the urgency while maintaining the clarity to diagnose."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Skill in action (2.50):"
+        }), " The flow state in coding — where the act is its own reward, where debugging is not a chore but a puzzle — is the Gita's yoga of skill. Act for the act's sake; the best code emerges when the ego steps back."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The garment metaphor for code:"
+        }), " Your code is not you. When it is deprecated, refactored, or rewritten, the witness — your understanding of the problem — remains. The form changes; the knowledge does not."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-samatva-monitor",
       children: "TypeScript Tool: Samatva Monitor"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Samatva Monitor\r\n * Based on Sankhya Yoga (Gita 2.14, 2.38, 2.48): the wise\r\n * remain even in pleasure and pain, gain and loss, victory\r\n * and defeat. This tool scores daily events on four pairs\r\n * and reports your samatva — your evenness of mind.\r\n */\r\n\r\ninterface LifeEvent {\r\n  date: string;\r\n  event: string;\r\n  tone: 'pleasure' | 'pain' | 'gain' | 'loss' | 'victory' | 'defeat';\r\n  reactionStrength: number; // 0-10, how strongly you reacted\r\n  witnessed: boolean;       // were you aware of the reaction?\r\n}\r\n\r\ninterface PairScore {\r\n  pair: string;\r\n  events: number;\r\n  totalReaction: number;\r\n  witnessedCount: number;\r\n  samatva: number; // 0-10, higher is more even\r\n}\r\n\r\ninterface SamatvaReport {\r\n  eventsAnalyzed: number;\r\n  overallSamatva: number;\r\n  pairs: PairScore[];\r\n  verdict: string;\r\n}\r\n\r\nconst PAIRS: Array<[string, LifeEvent['tone'][]]> = [\r\n  ['pleasure-pain', ['pleasure', 'pain']],\r\n  ['gain-loss', ['gain', 'loss']],\r\n  ['victory-defeat', ['victory', 'defeat']]\r\n];\r\n\r\nfunction computePair(events: LifeEvent[], tones: LifeEvent['tone'][]): PairScore {\r\n  const relevant = events.filter((e) => tones.includes(e.tone));\r\n  const totalReaction = relevant.reduce((sum, e) => sum + e.reactionStrength, 0);\r\n  const witnessedCount = relevant.filter((e) => e.witnessed).length;\r\n  const avgReaction = relevant.length === 0 ? 0 : totalReaction / relevant.length;\r\n  const witnessFactor = relevant.length === 0 ? 1 : witnessedCount / relevant.length;\r\n  const samatva = Math.max(0, Math.min(10, Math.round((10 - avgReaction) * (0.5 + 0.5 * witnessFactor))));\r\n  return { pair: tones.join('/'), events: relevant.length, totalReaction, witnessedCount, samatva };\r\n}\r\n\r\nfunction analyze(events: LifeEvent[]): SamatvaReport {\r\n  const pairs: PairScore[] = PAIRS.map(([name, tones]) => computePair(events, tones));\r\n  const overallSamatva = Math.round(pairs.reduce((sum, p) => sum + p.samatva, 0) / pairs.length);\r\n  const verdict = overallSamatva >= 7\r\n    ? 'The ocean is unmoved: desires enter you without stirring the waters. Samatva holds.'\r\n    : overallSamatva >= 4\r\n    ? 'The rivers are many but the sea is learning stillness. Increase your witnessing.'\r\n    : 'The weathercock is turning with every wind. Return to 2.48: balance is yoga, and it is built one moment at a time.';\r\n  return { eventsAnalyzed: events.length, overallSamatva, pairs, verdict };\r\n}\r\n\r\nconst week: LifeEvent[] = [\r\n  { date: '2026-08-12', event: 'promotion confirmed', tone: 'victory', reactionStrength: 9, witnessed: false },\r\n  { date: '2026-08-13', event: 'friend cancelled plans', tone: 'loss', reactionStrength: 4, witnessed: true },\r\n  { date: '2026-08-14', event: 'saw a beautiful sunset', tone: 'pleasure', reactionStrength: 3, witnessed: true },\r\n  { date: '2026-08-15', event: 'argued at work', tone: 'pain', reactionStrength: 7, witnessed: false },\r\n  { date: '2026-08-16', event: 'won a small bet', tone: 'victory', reactionStrength: 2, witnessed: true },\r\n  { date: '2026-08-17', event: 'missed the deadline', tone: 'defeat', reactionStrength: 6, witnessed: true }\r\n];\r\n\r\nconst report = analyze(week);\r\nconsole.log('=== Samatva Monitor ===');\r\nconsole.log(`Events analyzed: ${report.eventsAnalyzed}`);\r\nconsole.log(`Overall samatva: ${report.overallSamatva}/10`);\r\nfor (const p of report.pairs) {\r\n  console.log(`- ${p.pair}: events ${p.events}, reaction ${p.totalReaction}, witnessed ${p.witnessedCount}, samatva ${p.samatva}/10`);\r\n}\r\nconsole.log(`Verdict: ${report.verdict}`);\n"
+        children: "/**\n * Samatva Monitor — Dual-Process Equanimity Tracker\n * Based on Sankhya Yoga (Gita 2.14, 2.38, 2.48) and\n * Kahneman's dual-process theory: System 1 (automatic,\n * reactive) vs System 2 (deliberate, reflective).\n * The Gita adds a third: the witness — awareness that\n * observes both systems without being either.\n *\n * Measures: reaction intensity, witness activation,\n * equanimity ratio, and the gap between stimulus and response.\n *\n * Run: npx ts-node samatva-monitor.ts\n */\n\ninterface LifeEvent {\n  date: string;\n  event: string;\n  tone: 'pleasure' | 'pain' | 'gain' | 'loss' | 'victory' | 'defeat';\n  reactionStrength: number;   // 0–10: how strongly did you react?\n  system1Reaction: string;    // automatic response\n  system2Choice?: string;     // deliberate response (if any)\n  witnessActivated: boolean;  // did awareness observe the reaction?\n  gapSeconds?: number;        // time between stimulus and response (0 = instant reaction)\n}\n\ninterface PairScore {\n  pair: string;\n  events: number;\n  avgReaction: number;\n  witnessRate: number;       // 0–1\n  avgGap: number;            // seconds\n  equanimity: number;        // 0–10\n}\n\ninterface SamatvaReport {\n  eventsAnalyzed: number;\n  overallEquanimity: number;\n  pairs: PairScore[];\n  system1Ratio: number;      // % of events with only System 1\n  system2Ratio: number;      // % of events with System 2 active\n  witnessRatio: number;      // % of events with witness active\n  verdict: string;\n}\n\nconst PAIRS: Array<[string, LifeEvent['tone'][]]> = [\n  ['pleasure-pain', ['pleasure', 'pain']],\n  ['gain-loss', ['gain', 'loss']],\n  ['victory-defeat', ['victory', 'defeat']]\n];\n\nfunction computePair(events: LifeEvent[], tones: LifeEvent['tone'][]): PairScore {\n  const relevant = events.filter((e) => tones.includes(e.tone));\n  const totalReaction = relevant.reduce((sum, e) => sum + e.reactionStrength, 0);\n  const witnessCount = relevant.filter((e) => e.witnessActivated).length;\n  const avgReaction = relevant.length === 0 ? 0 : totalReaction / relevant.length;\n  const witnessRate = relevant.length === 0 ? 0 : witnessCount / relevant.length;\n  const avgGap = relevant.length === 0\n    ? 0\n    : relevant.reduce((sum, e) => sum + (e.gapSeconds ?? 0), 0) / relevant.length;\n\n  // Equanimity: high when reaction is low, witness is high, and gap is large\n  const reactionFactor = 1 - avgReaction / 10;\n  const gapFactor = Math.min(1, avgGap / 30);  // 30 seconds = full gap factor\n  const equanimity = Math.round((reactionFactor * 0.4 + witnessRate * 0.3 + gapFactor * 0.3) * 10);\n\n  return {\n    pair: tones.join('/'),\n    events: relevant.length,\n    avgReaction: Math.round(avgReaction * 10) / 10,\n    witnessRate: Math.round(witnessRate * 100) / 100,\n    avgGap: Math.round(avgGap),\n    equanimity: Math.min(10, equanimity)\n  };\n}\n\nfunction analyze(events: LifeEvent[]): SamatvaReport {\n  const pairs = PAIRS.map(([name, tones]) => computePair(events, tones));\n  const overallEquanimity = Math.round(pairs.reduce((sum, p) => sum + p.equanimity, 0) / pairs.length);\n\n  const withSystem2 = events.filter((e) => e.system2Choice).length;\n  const withWitness = events.filter((e) => e.witnessActivated).length;\n  const system1Only = events.filter((e) => !e.system2Choice && !e.witnessActivated).length;\n\n  const system1Ratio = Math.round((system1Only / events.length) * 100);\n  const system2Ratio = Math.round((withSystem2 / events.length) * 100);\n  const witnessRatio = Math.round((withWitness / events.length) * 100);\n\n  let verdict: string;\n  if (overallEquanimity >= 7) {\n    verdict = 'The ocean is unmoved: desires enter you without stirring the waters. The witness is established. (2.70)';\n  } else if (overallEquanimity >= 4) {\n    verdict = 'The rivers are many but the sea is learning stillness. Increase the gap between stimulus and response. (2.48)';\n  } else {\n    verdict = 'The weathercock turns with every wind. Return to the practice: notice System 1, activate System 2, rest in the witness. (2.62)';\n  }\n\n  return {\n    eventsAnalyzed: events.length,\n    overallEquanimity,\n    pairs,\n    system1Ratio,\n    system2Ratio,\n    witnessRatio,\n    verdict\n  };\n}\n\nconst week: LifeEvent[] = [\n  { date: '2026-08-12', event: 'promotion confirmed', tone: 'victory', reactionStrength: 9, system1Reaction: 'immediate elation, told everyone', witnessActivated: false, gapSeconds: 0 },\n  { date: '2026-08-13', event: 'friend cancelled plans', tone: 'loss', reactionStrength: 4, system1Reaction: 'mild disappointment', system2Choice: 'understood — they may be busy', witnessActivated: true, gapSeconds: 15 },\n  { date: '2026-08-14', event: 'saw a beautiful sunset', tone: 'pleasure', reactionStrength: 3, system1Reaction: 'quiet appreciation', witnessActivated: true, gapSeconds: 5 },\n  { date: '2026-08-15', event: 'argued at work', tone: 'pain', reactionStrength: 7, system1Reaction: 'anger, defensiveness', system2Choice: 'paused, asked clarifying question', witnessActivated: true, gapSeconds: 20 },\n  { date: '2026-08-16', event: 'won a small bet', tone: 'victory', reactionStrength: 2, system1Reaction: 'brief smile', witnessActivated: true, gapSeconds: 2 },\n  { date: '2026-08-17', event: 'missed the deadline', tone: 'defeat', reactionStrength: 6, system1Reaction: 'blame, self-criticism', system2Choice: 'noted what to adjust tomorrow', witnessActivated: true, gapSeconds: 30 }\n];\n\nconst report = analyze(week);\n\nconsole.log('=== Samatva Monitor ===');\nconsole.log(`Events: ${report.eventsAnalyzed} | Overall equanimity: ${report.overallEquanimity}/10`);\nconsole.log(`System 1 only: ${report.system1Ratio}% | System 2: ${report.system2Ratio}% | Witness: ${report.witnessRatio}%`);\nconsole.log('');\nfor (const p of report.pairs) {\n  console.log(`${p.pair}: avg reaction ${p.avgReaction}/10 | witness ${p.witnessRate * 100}% | avg gap ${p.avgGap}s | equanimity ${p.equanimity}/10`);\n}\nconsole.log('');\nconsole.log(`Verdict: ${report.verdict}`);\n"
       })
     })]
   });

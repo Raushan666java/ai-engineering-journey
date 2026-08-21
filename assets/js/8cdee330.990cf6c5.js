@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-15-purushottama-yoga-md-8cd.json
-const site_docs_courses_bhagavad_gita_15_purushottama_yoga_md_8cd_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/15-purushottama-yoga","title":"Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky","description":"\\"The tree of life grows upside down. Climb it and you fall; cut it, and you are already at the top.\\"","source":"@site/docs/courses/bhagavad-gita/15-purushottama-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/15-purushottama-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/15-purushottama-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":16,"frontMatter":{"id":"15-purushottama-yoga","slug":"/bhagavad-gita/15-purushottama-yoga","title":"Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky","sidebar_label":"Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky","sidebar_position":16},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather","permalink":"/ai-engineering-journey/bhagavad-gita/14-gunatraya-vibhaga-yoga"},"next":{"title":"Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn","permalink":"/ai-engineering-journey/bhagavad-gita/16-daivasura-sampad-yoga"}}');
+const site_docs_courses_bhagavad_gita_15_purushottama_yoga_md_8cd_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/15-purushottama-yoga","title":"Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky","description":"\\"The tree of life grows upside down. Climb it and you fall; cut it, and you are already at the top.\\"","source":"@site/docs/courses/bhagavad-gita/15-purushottama-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/15-purushottama-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/15-purushottama-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":15,"frontMatter":{"id":"15-purushottama-yoga","slug":"/bhagavad-gita/15-purushottama-yoga","title":"Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky","sidebar_label":"Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky","sidebar_position":15},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather","permalink":"/ai-engineering-journey/bhagavad-gita/14-gunatraya-vibhaga-yoga"},"next":{"title":"Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn","permalink":"/ai-engineering-journey/bhagavad-gita/16-daivasura-sampad-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/15-purushottama-yoga',
 	title: 'Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky',
 	sidebar_label: 'Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky',
-	sidebar_position: 16
+	sidebar_position: 15
 };
 const contentTitle = 'Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky';
 
@@ -182,6 +182,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Purushottama Path Tracker",
   "id": "typescript-tool-purushottama-path-tracker",
   "level": 2
@@ -220,7 +224,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"The tree of life grows upside down. Climb it and you fall; cut it, and you are already at the top.\"\r\n— The Osho Way"
+        children: "\"The tree of life grows upside down. Climb it and you fall; cut it, and you are already at the top.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "This is Krishna's most mysterious teaching, and Osho reads it as his most intimate one. In the fourteenth chapter Krishna described the three gunas that weave the mind. Now he lifts the curtain on the whole show: the entire universe, he says, is a giant inverted peepul tree — its root above, its branches below, its leaves the Vedic hymns. Traditional theology would call this cosmology. Osho calls it a mirror. Look into it and you will not see galaxies; you will see the root system of your own desires, growing upward into the sky of the divine and downward into the soil of your habits."
@@ -373,7 +377,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.1 — The Inverted Tree"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम् |\r\nछन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित्"
+        children: "श्रीभगवानुवाच |\nऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम् |\nछन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -392,7 +396,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.2 — Branches of Desire, Roots of Action"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अधश्चोर्ध्वं प्रसृतास्तस्य शाखा\r\nगुणप्रवृद्धा विषयप्रवालाः |\r\nअधश्च मूलान्यनुसन्ततानि\r\nकर्मानुबन्धीनि मनुष्यलोके"
+        children: "अधश्चोर्ध्वं प्रसृतास्तस्य शाखा\nगुणप्रवृद्धा विषयप्रवालाः |\nअधश्च मूलान्यनुसन्ततानि\nकर्मानुबन्धीनि मनुष्यलोके"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -411,7 +415,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.3 — Cut It with the Axe of Non-Attachment"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न रूपमस्येह तथोपलभ्यते\r\nनान्तो न चादिर्न च सम्प्रतिष्ठा |\r\nअश्वत्थमेनं सुविरूढमूलं\r\nअसङ्गशस्त्रेण दृढेन छित्त्वा"
+        children: "न रूपमस्येह तथोपलभ्यते\nनान्तो न चादिर्न च सम्प्रतिष्ठा |\nअश्वत्थमेनं सुविरूढमूलं\nअसङ्गशस्त्रेण दृढेन छित्त्वा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -430,7 +434,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.4 — Seek the Goal Where None Return"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ततः पदं तत्परिमार्गितव्यं\r\nयस्मिन्गता न निवर्तन्ति भूयः |\r\nतमेव चाद्यं पुरुषं प्रपद्ये |\r\nयतः प्रवृत्तिः प्रसृता पुराणी"
+        children: "ततः पदं तत्परिमार्गितव्यं\nयस्मिन्गता न निवर्तन्ति भूयः |\nतमेव चाद्यं पुरुषं प्रपद्ये |\nयतः प्रवृत्तिः प्रसृता पुराणी"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -449,7 +453,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.5 — The Undeluded Reach the Eternal Goal"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "निर्मानमोहा जितसङ्गदोषा\r\nअध्यात्मनित्या विनिवृत्तकामाः |\r\nद्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञैर्-\r\nगच्छन्त्यमूढाः पदमव्ययं तत्"
+        children: "निर्मानमोहा जितसङ्गदोषा\nअध्यात्मनित्या विनिवृत्तकामाः |\nद्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञैर्-\nगच्छन्त्यमूढाः पदमव्ययं तत्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -468,7 +472,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.6 — The Light No Sun Can Illuminate"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न तद्भासयते सूर्यो न शशाङ्को न पावकः |\r\nयद्गत्वा न निवर्तन्ते तद्धाम परमं मम"
+        children: "न तद्भासयते सूर्यो न शशाङ्को न पावकः |\nयद्गत्वा न निवर्तन्ते तद्धाम परमं मम"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -487,7 +491,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.7 — An Eternal Fragment in the World of Life"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ममैवांशो जीवलोके जीवभूतः सनातनः |\r\nमनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति"
+        children: "ममैवांशो जीवलोके जीवभूतः सनातनः |\nमनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -506,7 +510,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.8 — Carried Like Scent on the Wind"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः |\r\nगृहीत्वैतानि संयाति वायुर्गन्धानिवाशयात्"
+        children: "शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः |\nगृहीत्वैतानि संयाति वायुर्गन्धानिवाशयात्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -525,7 +529,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.9 — Enjoying Through the Gates of Sense"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रोत्रं चक्षुः स्पर्शनं च रसनं घ्राणमेव च |\r\nअधिष्ठाय मनश्चायं विषयानुपसेवते"
+        children: "श्रोत्रं चक्षुः स्पर्शनं च रसनं घ्राणमेव च |\nअधिष्ठाय मनश्चायं विषयानुपसेवते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -544,7 +548,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.10 — The Eye of Knowledge Sees What the Deluded Miss"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "उत्क्रामन्तं स्थितं वापि भुञ्जानं वा गुणान्वितम् |\r\nविमूढा नानुपश्यन्ति पश्यन्ति ज्ञानचक्षुषः"
+        children: "उत्क्रामन्तं स्थितं वापि भुञ्जानं वा गुणान्वितम् |\nविमूढा नानुपश्यन्ति पश्यन्ति ज्ञानचक्षुषः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -558,12 +562,18 @@ function _createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Osho Darshan:"
       }), " The soul does everything yet remains invisible — like the screen behind a movie, present in every frame and seen in none. The deluded watch only the movie; the wise watch the screen and the movie together. Osho's point: the eye of knowledge is not a special gift; it is attention turned back on itself. Seeing the seer is the second birth — the first birth gave you a body; the second gives you the one who wears it."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "For the Engineer:"
+        }), " The invisible actor is the operating system: it runs every process but appears in none of them. The deluded developer watches only the application; the wise architect watches the application and the infrastructure together. Seeing the infrastructure is the \"second birth\" of engineering maturity — you stop seeing features and start seeing systems."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "shloka-1511--striving-yogis-see-the-unrefined-do-not",
       children: "Shloka 15.11 — Striving Yogis See; the Unrefined Do Not"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यतन्तो योगिनश्चैनं पश्यन्त्यात्मन्यवस्थितम् |\r\nयतन्तोऽप्यकृतात्मानो नैनं पश्यन्त्यचेतसः"
+        children: "यतन्तो योगिनश्चैनं पश्यन्त्यात्मन्यवस्थितम् |\nयतन्तोऽप्यकृतात्मानो नैनं पश्यन्त्यचेतसः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -582,7 +592,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.12 — The Light in Sun, Moon and Fire"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यदादित्यगतं तेजो जगद्भासयतेऽखिलम् |\r\nयच्चन्द्रमसि यच्चाग्नौ तत्तेजो विद्धि मामकम्"
+        children: "यदादित्यगतं तेजो जगद्भासयतेऽखिलम् |\nयच्चन्द्रमसि यच्चाग्नौ तत्तेजो विद्धि मामकम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -601,7 +611,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.13 — Permeating Earth, Nourishing Herbs"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "गामाविश्य च भूतानि धारयाम्यहमोजसा |\r\nपुष्णामि चौषधीः सर्वाः सोमो भूत्वा रसात्मकः"
+        children: "गामाविश्य च भूतानि धारयाम्यहमोजसा |\nपुष्णामि चौषधीः सर्वाः सोमो भूत्वा रसात्मकः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -620,7 +630,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.14 — The Fire That Digests Fourfold Food"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः |\r\nप्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम्"
+        children: "अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः |\nप्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -634,12 +644,18 @@ function _createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Osho Darshan:"
       }), " Even your digestion is the divine at work — there is no gap between the sacred and the mundane; the stomach is a temple too, and the whole body is a field of the divine's labor. Osho loves this descent: from the root of the universe to the fire in your belly in four verses. The teaching is not climbing away from life; it is finding the divine at the bottom of life, in the very process of being fed. When the highest is recognized in the humblest act, worship is no longer something you do — it is something you are."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Practical Bridge:"
+        }), " This verse has a direct implication for engineering practice: the divine is not only in the architecture but in the debugging, the testing, the refactoring. When you recognize that the same intelligence that runs the cosmos also runs your ability to trace a bug, the mundane act of debugging becomes sacred. This is not metaphor; it is a shift in attention that changes the quality of the work itself."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "shloka-1515--seated-in-every-heart",
       children: "Shloka 15.15 — Seated in Every Heart"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सर्वस्य चाहं हृदि सन्निविष्टो\r\nमत्तः स्मृतिर्ज्ञानमपोहनञ्च |\r\nवेदैश्च सर्वैरहमेव वेद्यो\r\nवेदान्तकृद्वेदविदेव चाहम्"
+        children: "सर्वस्य चाहं हृदि सन्निविष्टो\nमत्तः स्मृतिर्ज्ञानमपोहनञ्च |\nवेदैश्च सर्वैरहमेव वेद्यो\nवेदान्तकृद्वेदविदेव चाहम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -658,7 +674,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.16 — Two Purushas: Perishable and Imperishable"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "द्वाविमौ पुरुषौ लोके क्षरश्चाक्षर एव च |\r\nक्षरः सर्वाणि भूतानि कूटस्थोऽक्षर उच्यते"
+        children: "द्वाविमौ पुरुषौ लोके क्षरश्चाक्षर एव च |\nक्षरः सर्वाणि भूतानि कूटस्थोऽक्षर उच्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -677,7 +693,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.17 — The Supreme Person Who Sustains the Three Worlds"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "उत्तमः पुरुषस्त्वन्यः परमात्मेत्युधाहृतः |\r\nयो लोकत्रयमाविश्य बिभर्त्यव्यय ईश्वरः"
+        children: "उत्तमः पुरुषस्त्वन्यः परमात्मेत्युधाहृतः |\nयो लोकत्रयमाविश्य बिभर्त्यव्यय ईश्वरः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -696,7 +712,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.18 — Declared Purushottama in World and Veda"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः |\r\nअतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः"
+        children: "यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः |\nअतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -709,13 +725,17 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Osho Darshan:"
+      }), " This is the Gita's most compressed statement of the highest truth: the divine is not the changing nor the unchanging but the consciousness that witnesses both. Osho would say: you are not the body (perishable), not the soul (imperishable), but the awareness that sees both — and that awareness is what the Gita calls Purushottama. It is not far away; it is the nearest of the near, closer than your own breath. The name \"Supreme Person\" is a finger pointing at the moon: do not worship the finger."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
       }), " The third is not a bigger version of the two; it is the transcending itself. Purushottama is not a title you add to the collection; it is the word for what remains when every name has been dropped — including the name \"beyond\". Osho's warning at this peak: even your finest concepts — the witness, the changeless, the inner self — are rungs of the ladder, not the roof. Use them to climb, then leave them on the ground. The name Purushottama points past every position, including this very sentence."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "shloka-1519--knowing-all-worshipping-with-ones-whole-being",
       children: "Shloka 15.19 — Knowing All, Worshipping with One's Whole Being"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यो मामेवमसम्मूढो जानाति पुरुषोत्तमम् |\r\nस सर्वविद्भजति मां सर्वभावेन भारत"
+        children: "यो मामेवमसम्मूढो जानाति पुरुषोत्तमम् |\nस सर्वविद्भजति मां सर्वभावेन भारत"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -734,7 +754,7 @@ function _createMdxContent(props) {
       children: "Shloka 15.20 — The Most Secret Teaching: Wisdom Completed"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "इति गुह्यतमं शास्त्रमिदमुक्तं मयानघ |\r\nएतद्बुद्ध्वा बुद्धिमान्स्यात्कृतकृत्यश्च भारत"
+        children: "इति गुह्यतमं शास्त्रमिदमुक्तं मयानघ |\nएतद्बुद्ध्वा बुद्धिमान्स्यात्कृतकृत्यश्च भारत"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -829,13 +849,107 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Acceptance and Commitment Therapy and Non-Attachment"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Chapter 15's central image is the inverted tree (15.1) — samsara — cut by the axe of non-attachment (asanga-shastra, 15.3). ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Acceptance and Commitment Therapy"
+        }), " (ACT, Hayes et al., 1993) is built on the same principle: psychological suffering comes not from pain itself but from attachment to thoughts and feelings. ACT teaches psychological flexibility — the ability to hold thoughts lightly while acting according to values."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The inverted tree (15.1)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Experiential avoidance (Hayes et al., 1996)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The tree's downward branches represent the mind's tendency to avoid discomfort — the root system of desires growing upward into avoidance"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The axe of non-attachment (15.3)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Cognitive defusion (Hayes et al., 2006)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Non-attachment is not detachment but holding thoughts lightly — the axe cuts the tree's claim on you, not your engagement with life"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The abode of no return (15.6)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Values-based living (Wilson & DuFrene, 2009)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The \"abode\" is not a place but a mode of living — when you act from values rather than avoidance, you stop the cycle of return"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The jiva carries mind and senses (15.7-15.11)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Habit formation (Wood & Neal, 2007)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The \"carrying from body to body\" maps to habit loops that persist across contexts — the same habit pattern expressed in different life situations"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Purushottama — beyond both (15.16-15.18)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Self-as-context (Hayes et al., 2006)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "ACT's \"self-as-context\" is the observing self that is neither the changing thoughts nor the fixed identity — the same as Purushottama, beyond both perishable and imperishable"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The purifying contact with the self (15.12-15.15)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Insight meditation (Lutz et al., 2004)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Contact with the self \"within the cave\" (15.11) maps to the focus/open-monitoring meditation cycle — sustained attention creates the conditions for insight into the nature of awareness itself"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " For one week, practice the ACT \"leaves on a stream\" exercise: when a thought arises, imagine placing it on a leaf and watching it float down a stream. Do not push the thought away; do not cling to it. Just watch. This is the axe of non-attachment in action."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Practical Bridge:"
+        }), " In engineering, the inverted tree maps to legacy code that grows downward into technical debt. The \"root in heaven\" (15.1) is the original clean architecture; the \"branches below\" are the hacks, workarounds, and copy-pasted patches that have accumulated. The axe of non-attachment is not deleting the code but changing your relationship to it — watching the anxiety it produces without being driven by it. This is cognitive defusion applied to codebase management."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The inverted tree of Chapter 15 connects to Chapter 2's description of the self as unborn and eternal (2.20) — the \"abode\" beyond the tree is the same unchanging awareness. Chapter 7's knowledge of the field (7.1-7.6) is the intellectual recognition of the tree; Chapter 15 is the experiential practice of cutting it."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The non-attachment of Chapter 15 (15.3) is the same practice described in Chapter 2 as sthitaprajna (2.54-2.72), Chapter 5 as the lotus leaf (5.10), and Chapter 6 as the windless lamp (6.18-6.23). Each chapter gives a different metaphor for the same psychological skill. The \"Purushottama\" (15.16-15.18) is the same \"Supreme Self\" described in Chapter 7 as the source of all (7.12) and in Chapter 9 as the secret knowledge (9.1-9.4). Chapter 15 is where the Gita names what all chapters point to. The naming is not the thing — the axe is not the tree, the image is not the territory — but without the name, the seeker cannot find the territory. This is the Gita's paradox: use the map, but do not mistake it for the land."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Why This Matters:"
+        }), " Chapter 15 gives the Gita its most powerful image — the upside-down tree — and its most practical tool — the axe of non-attachment. The inverted tree maps to every system that grows in the wrong direction: legacy code, bad habits, dysfunctional organizations. The axe is not destruction but a change in relationship to the system. This is the Gita's contribution to modern psychology: you do not need to destroy the pattern; you need to stop identifying with it."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"The asvattha tree: root above, branches below\"] --> B[\"Nourished by the gunas; buds are sense objects\"]\r\n    B --> C[\"Roots of action reach into the world of men\"]\r\n    C --> D[\"Cut the tree with the strong axe of non-attachment\"]\r\n    D --> E[\"Seek the abode where none return: the self-luminous goal\"]\r\n    E --> F[\"The jiva: an eternal fragment carrying mind and senses\"]\r\n    F --> G[\"The immanent presence: sun, moon, fire, earth, heart\"]\r\n    G --> H[\"Two purushas: the perishable and the imperishable\"]\r\n    H --> I[\"Purushottama: beyond both, sustaining the three worlds\"]\r\n    I --> J[\"Knowing this, all is accomplished: krtakrtya\"]\r\n    style D fill:#4446e8,color:#fff\r\n    style I fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"The asvattha tree: root above, branches below\"] --> B[\"Nourished by the gunas; buds are sense objects\"]\n    B --> C[\"Roots of action reach into the world of men\"]\n    C --> D[\"Cut the tree with the strong axe of non-attachment\"]\n    D --> E[\"Seek the abode where none return: the self-luminous goal\"]\n    E --> F[\"The jiva: an eternal fragment carrying mind and senses\"]\n    F --> G[\"The immanent presence: sun, moon, fire, earth, heart\"]\n    G --> H[\"Two purushas: the perishable and the imperishable\"]\n    H --> I[\"Purushottama: beyond both, sustaining the three worlds\"]\n    I --> J[\"Knowing this, all is accomplished: krtakrtya\"]\n    style D fill:#4446e8,color:#fff\n    style I fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -843,7 +957,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root[Purushottama Yoga: the upside-down tree]\r\n    The tree\r\n      Root above in Brahman\r\n      Branches below in desires\r\n      Leaves are the Vedic hymns\r\n    The axe\r\n      Non-attachment\r\n      Cut the mirage\r\n      Then seek the abode\r\n    The journey of the jiva\r\n      An eternal fragment of the divine\r\n      Carries mind and senses\r\n      Like fragrance on the wind\r\n    The immanent light\r\n      Sun, moon and fire\r\n      Earth and all herbs\r\n      The fire of digestion\r\n      Seated in every heart\r\n    The supreme person\r\n      Perishable and imperishable\r\n      Purushottama beyond both\r\n      No return; all accomplished\n"
+        children: "mindmap\n  root[Purushottama Yoga: the upside-down tree]\n    The tree\n      Root above in Brahman\n      Branches below in desires\n      Leaves are the Vedic hymns\n    The axe\n      Non-attachment\n      Cut the mirage\n      Then seek the abode\n    The journey of the jiva\n      An eternal fragment of the divine\n      Carries mind and senses\n      Like fragrance on the wind\n    The immanent light\n      Sun, moon and fire\n      Earth and all herbs\n      The fire of digestion\n      Seated in every heart\n    The supreme person\n      Perishable and imperishable\n      Purushottama beyond both\n      No return; all accomplished\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -938,17 +1052,17 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q3. According to 15.6, what illumines the supreme abode where none return?"
+        children: "Q3. The axe of non-attachment (15.3) cuts the tree of samsara. How does this relate to Acceptance and Commitment Therapy (ACT, Hayes et al., 1993)?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. The sun and the moon together"
+        children: "a. It doesn't — ACT is a modern therapy with no ancient parallel"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. A thousand lamps of knowledge"
+        children: "b. ACT teaches psychological flexibility — holding thoughts lightly while acting according to values. Non-attachment is not detachment but holding thoughts without being controlled by them — the same axe"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Nothing — neither sun, nor moon, nor fire; it is self-luminous"
+        children: "c. ACT says attachment is good"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. The light of the stars"
+        children: "d. Non-attachment means not caring about anything"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -957,46 +1071,22 @@ function _createMdxContent(props) {
         children: "Show Answer"
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: c."
-        }), " 15.6 — \"Neither the sun illumines that place, nor the moon, nor fire\" — the abode is its own light."]
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q4. How does the soul carry its mind and senses when leaving a body, according to 15.8?"
-      })
-    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. As a ship carries its cargo"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. As the wind carries fragrance from a flower"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. As a bird carries its wings"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. As water carries the earth"
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
-      className: "tp-qa-card",
-      "data-qid": "bg15-q4",
-      children: [(0,jsx_runtime.jsx)(_components.summary, {
-        children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        }), " 15.8 — it takes them and goes \"as the wind carries fragrance from its seat in the flowers.\""]
+        }), " Hayes et al. (1993) developed ACT on the principle that psychological suffering comes from experiential avoidance — trying to suppress unwanted thoughts. The axe of non-attachment (15.3) cuts the tree's claim on you, not your engagement with life. Both ACT and the Gita teach: you cannot stop thoughts from arising, but you can change your relationship to them."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q5. What are the two purushas described in 15.16?"
+        children: "Q5. Krishna describes the \"jiva\" carrying mind and senses from body to body \"as the wind carries fragrance\" (15.8). How does this map onto habit formation research (Wood & Neal, 2007)?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Krishna and Arjuna"
+        children: "a. It doesn't — habits die with the body"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. The perishable — all beings — and the imperishable, the unchanging Kutastha"
+        children: "b. Habit research shows that behavioral patterns persist across contexts — the same habit loop (cue-routine-reward) expresses itself in different life situations, just as the jiva carries its patterns from body to body"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. The sun and the moon"
+        children: "c. The jiva is the soul, not habits"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. The body and the mind"
+        children: "d. Habits are only physical, not carried across contexts"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1006,7 +1096,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        }), " 15.16 — \"All beings are the perishable; the unchanging Kutastha is called the imperishable.\""]
+        }), " Wood & Neal (2007) show that habits are context-dependent cue-triggered behaviors that persist until deliberately changed. The \"jiva carrying mind and senses\" (15.8) is the same phenomenon described metaphorically — the habit patterns you build in one context carry into the next, creating what the Gita calls \"birth after birth\" of the same patterns."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
@@ -1049,13 +1139,30 @@ function _createMdxContent(props) {
           children: "Extend the TypeScript tool:"
         }), " Add a third function to the Purushottama Path Tracker that computes the \"Purushottama index\" — the ratio of abode-glimpses (witnessing) to bud-signals (craving) in a week — and prints a verdict: tree-climber, axe-bearer, or dweller of the abode. Run it on two honest weeks and compare."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The inverted tree in codebases:"
+        }), " Your codebase is an inverted tree — the root (architecture decisions) is hidden above, the branches (features) grow downward into the soil of user needs. Cut the wrong root (bad architecture) and the whole tree falls. The axe of non-attachment means being willing to rewrite the root without clinging to the original design."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Habit loops in debugging (15.8):"
+        }), " The same debugging patterns carry from project to project — \"the wind carries fragrance.\" When you notice the same bug type appearing across different codebases, you are seeing the jiva's habit patterns. Breaking the loop requires the axe of conscious attention."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Purushottama in system design (15.16-15.18):"
+        }), " Beyond the changing code (perishable) and the stable architecture (imperishable) stands the system's purpose — Purushottama. Designing from purpose, not from pattern, produces systems that endure."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-purushottama-path-tracker",
       children: "TypeScript Tool: Purushottama Path Tracker"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Purushottama Path Tracker - Chapter 15: the upside-down tree\r\n * Maps a week of observations onto the tree of samsara:\r\n * buds (craving), roots (habit), branches (gunas), leaves (knowledge),\r\n * and the two events that matter: the axe (non-attachment)\r\n * and the abode (no return). Osho: stop climbing; start watching.\r\n */\r\n\r\ninterface DayObservation { date: string; note: string; }\r\n\r\ninterface TreePart {\r\n  part: 'bud' | 'root' | 'branch' | 'leaf' | 'axe' | 'abode';\r\n  keywords: string[];\r\n  meaning: string;\r\n}\r\n\r\ninterface PathReport {\r\n  counts: Record<string, number>;\r\n  dominantPart: string;\r\n  axeCount: number;\r\n  abodeCount: number;\r\n  oshoLine: string;\r\n}\r\nconst treeParts: TreePart[] = [\r\n  { part: 'bud', keywords: ['crave', 'must have', 'lust', 'obsess'], meaning: 'A bud of desire: promising, never fulfilling.' },\r\n  { part: 'root', keywords: ['same habit', 'automatic', 'routine', 'pattern'], meaning: 'A root of karma in the world of action.' },\r\n  { part: 'branch', keywords: ['angry', 'greedy', 'sleepy', 'restless'], meaning: 'A branch nourished by the gunas.' },\r\n  { part: 'leaf', keywords: ['read', 'study', 'learned', 'verses'], meaning: 'A leaf: scripture and study - useful, not the tree.' },\r\n  { part: 'axe', keywords: ['let go', 'detached', 'released', 'refused'], meaning: 'The axe of non-attachment: the cut that matters.' },\r\n  { part: 'abode', keywords: ['witness', 'inner calm', 'beyond', 'still'], meaning: 'A glimpse of the abode where none return.' }\r\n];\r\nfunction classifyNote(note: string): TreePart {\r\n  const line = note.toLowerCase();\r\n  let best = treeParts[0];\r\n  for (const part of treeParts) {\r\n    if (part.keywords.some(k => line.includes(k))) best = part;\r\n  }\r\n  return best;\r\n}\r\nfunction buildReport(week: DayObservation[]): PathReport {\r\n  const counts: Record<string, number> = {};\r\n  for (const part of treeParts) counts[part.part] = 0;\r\n  for (const day of week) {\r\n    const part = classifyNote(day.note);\r\n    counts[part.part]++;\r\n  }\r\n  const dominantPart = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];\r\n  const oshoLine = counts['abode'] > 0\r\n    ? 'You have touched the abode where none return. The tree no longer owns you.'\r\n    : counts['axe'] > 0\r\n      ? 'The axe is in your hand. Cut once more, and the tree falls on its own.'\r\n      : 'You are still climbing the upside-down tree. Stop climbing; start watching.';\r\n  return { counts, dominantPart, axeCount: counts['axe'], abodeCount: counts['abode'], oshoLine };\r\n}\r\nfunction runDemo(): void {\r\n  const week: DayObservation[] = [\r\n    { date: 'Mon', note: 'Craved junk food the whole day; obsessed about a gadget.' },\r\n    { date: 'Tue', note: 'Same old routine, automatic; repeated the same mistake.' },\r\n    { date: 'Wed', note: 'Read the Gita chapter; the verses felt clear.' },\r\n    { date: 'Thu', note: 'Let go of a grudge; refused to argue; felt detached and free.' },\r\n    { date: 'Fri', note: 'Witnessed my anger rising and passing; inner calm all evening.' }\r\n  ];\r\n  const report = buildReport(week);\r\n  console.log('=== Purushottama Path Tracker ===');\r\n  console.log(`Buds: ${report.counts['bud']} | Roots: ${report.counts['root']} | Branches: ${report.counts['branch']}`);\r\n  console.log(`Leaves: ${report.counts['leaf']} | Axe: ${report.axeCount} | Abode: ${report.abodeCount}`);\r\n  console.log(`Dominant part: ${report.dominantPart}`);\r\n  console.log(`Osho: ${report.oshoLine}`);\r\n}\r\nrunDemo();\n"
+        children: "/**\n * Purushottama Path Tracker — ACT & Habit Research Edition\n * Based on Purushottama Yoga (Gita 15.1-15.20) and ACT\n * (Hayes et al., 1993): the axe of non-attachment cuts the\n * tree of samsara — not by force but by changing your\n * relationship to thoughts. The inverted tree maps to\n * habit loops that persist across contexts (Wood & Neal, 2007).\n *\n * Run: npx ts-node purushottama-path-tracker.ts\n */\n\ninterface DayObservation {\n  date: string;\n  note: string;\n}\n\ninterface TreePart {\n  part: 'bud' | 'root' | 'branch' | 'leaf' | 'axe' | 'abode';\n  keywords: string[];\n  meaning: string;\n  actParallel: string;\n}\n\ninterface PathReport {\n  counts: Record<string, number>;\n  dominantPart: string;\n  axeCount: number;\n  abodeCount: number;\n  purushottamaIndex: number; // ratio of witnessing to craving\n  message: string;\n}\n\nconst treeParts: TreePart[] = [\n  { part: 'bud', keywords: ['crave', 'must have', 'lust', 'obsess'], meaning: 'A bud of desire: promising, never fulfilling.', actParallel: 'Experiential avoidance — trying to satisfy cravings that never satisfy (Hayes et al., 1996)' },\n  { part: 'root', keywords: ['same habit', 'automatic', 'routine', 'pattern'], meaning: 'A root of karma in the world of action.', actParallel: 'Habit loops that persist across contexts (Wood & Neal, 2007)' },\n  { part: 'branch', keywords: ['angry', 'greedy', 'sleepy', 'restless'], meaning: 'A branch nourished by the gunas.', actParallel: 'Emotional responses conditioned by past learning (Hayes et al., 2006)' },\n  { part: 'leaf', keywords: ['read', 'study', 'learned', 'verses'], meaning: 'A leaf: scripture and study — useful, not the tree.', actParallel: 'Cognitive content — thoughts about thoughts (defusion target)' },\n  { part: 'axe', keywords: ['let go', 'detached', 'released', 'refused'], meaning: 'The axe of non-attachment: the cut that matters.', actParallel: 'Cognitive defusion — holding thoughts lightly (Hayes et al., 2006)' },\n  { part: 'abode', keywords: ['witness', 'inner calm', 'beyond', 'still'], meaning: 'A glimpse of the abode where none return.', actParallel: 'Self-as-context — the observing self beyond thoughts (Hayes et al., 2006)' }\n];\n\nfunction classifyNote(note: string): TreePart {\n  const line = note.toLowerCase();\n  let best = treeParts[0];\n  for (const part of treeParts) {\n    if (part.keywords.some((k) => line.includes(k))) best = part;\n  }\n  return best;\n}\n\nfunction buildReport(week: DayObservation[]): PathReport {\n  const counts: Record<string, number> = {};\n  for (const part of treeParts) counts[part.part] = 0;\n  for (const day of week) {\n    const part = classifyNote(day.note);\n    counts[part.part]++;\n  }\n  const dominantPart = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];\n  const totalCraving = (counts['bud'] ?? 0) + (counts['root'] ?? 0) + (counts['branch'] ?? 0);\n  const totalWitnessing = (counts['axe'] ?? 0) + (counts['abode'] ?? 0);\n  const purushottamaIndex = totalCraving > 0\n    ? Math.round((totalWitnessing / (totalWitnessing + totalCraving)) * 100)\n    : 100;\n\n  const messages: Record<string, string> = {\n    abode: 'You have touched the abode where none return. The tree no longer owns you. (15.6)',\n    axe: 'The axe is in your hand. Cut once more, and the tree falls on its own. (15.3)',\n    bud: 'Still climbing the upside-down tree. The buds promise but never fulfill. (15.1)',\n    root: 'Habit roots run deep — the same patterns across contexts. The axe cuts here. (15.8)',\n    branch: 'The gunas nourish the branches. Watch them without feeding them. (15.2)',\n    leaf: 'Scripture is the leaf, not the tree. Use it, but do not mistake it for the source. (15.1)'\n  };\n\n  return {\n    counts,\n    dominantPart,\n    axeCount: counts['axe'] ?? 0,\n    abodeCount: counts['abode'] ?? 0,\n    purushottamaIndex,\n    message: messages[dominantPart] ?? 'The tree is vast. Start watching.'\n  };\n}\n\nconst week: DayObservation[] = [\n  { date: 'Mon', note: 'Craved junk food the whole day; obsessed about a gadget.' },\n  { date: 'Tue', note: 'Same old routine, automatic; repeated the same mistake.' },\n  { date: 'Wed', note: 'Read the Gita chapter; the verses felt clear.' },\n  { date: 'Thu', note: 'Let go of a grudge; refused to argue; felt detached and free.' },\n  { date: 'Fri', note: 'Witnessed my anger rising and passing; inner calm all evening.' }\n];\n\nconst report = buildReport(week);\n\nconsole.log('=== Purushottama Path Tracker ===');\nconsole.log(`Buds: ${report.counts['bud']} | Roots: ${report.counts['root']} | Branches: ${report.counts['branch']}`);\nconsole.log(`Leaves: ${report.counts['leaf']} | Axe: ${report.axeCount} | Abode: ${report.abodeCount}`);\nconsole.log(`Dominant: ${report.dominantPart} | Purushottama index: ${report.purushottamaIndex}%`);\nconsole.log(report.message);\n"
       })
     })]
   });

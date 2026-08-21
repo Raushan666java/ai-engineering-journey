@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-16-daivasura-sampad-yoga-md-f3f.json
-const site_docs_courses_bhagavad_gita_16_daivasura_sampad_yoga_md_f3f_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/16-daivasura-sampad-yoga","title":"Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn","description":"\\"Do not ask whether you are divine or demonic. Ask what you are feeding — because that is what you will become.\\"","source":"@site/docs/courses/bhagavad-gita/16-daivasura-sampad-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/16-daivasura-sampad-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/16-daivasura-sampad-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":17,"frontMatter":{"id":"16-daivasura-sampad-yoga","slug":"/bhagavad-gita/16-daivasura-sampad-yoga","title":"Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn","sidebar_label":"Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn","sidebar_position":17},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky","permalink":"/ai-engineering-journey/bhagavad-gita/15-purushottama-yoga"},"next":{"title":"Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature","permalink":"/ai-engineering-journey/bhagavad-gita/17-shraddhatraya-yoga"}}');
+const site_docs_courses_bhagavad_gita_16_daivasura_sampad_yoga_md_f3f_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/16-daivasura-sampad-yoga","title":"Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn","description":"\\"Do not ask whether you are divine or demonic. Ask what you are feeding — because that is what you will become.\\"","source":"@site/docs/courses/bhagavad-gita/16-daivasura-sampad-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/16-daivasura-sampad-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/16-daivasura-sampad-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":16,"frontMatter":{"id":"16-daivasura-sampad-yoga","slug":"/bhagavad-gita/16-daivasura-sampad-yoga","title":"Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn","sidebar_label":"Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn","sidebar_position":16},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky","permalink":"/ai-engineering-journey/bhagavad-gita/15-purushottama-yoga"},"next":{"title":"Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature","permalink":"/ai-engineering-journey/bhagavad-gita/17-shraddhatraya-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/16-daivasura-sampad-yoga',
 	title: 'Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn',
 	sidebar_label: 'Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn',
-	sidebar_position: 17
+	sidebar_position: 16
 };
 const contentTitle = 'Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn';
 
@@ -198,6 +198,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Daivi-Asuri Profiler",
   "id": "typescript-tool-daivi-asuri-profiler",
   "level": 2
@@ -236,7 +240,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"Do not ask whether you are divine or demonic. Ask what you are feeding — because that is what you will become.\"\r\n— The Osho Way"
+        children: "\"Do not ask whether you are divine or demonic. Ask what you are feeding — because that is what you will become.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "The chariot stands still between two armies, and Krishna, having spoken of the divine and the perishable in the fifteenth chapter, now does something unexpected: he gives Arjuna a list. Twenty-six qualities that belong to a divine endowment, and six that belong to a demonic one. On the surface it looks like a moral catalogue, the kind of thing a schoolmaster would write on a blackboard. But look again. Krishna is not teaching Arjuna what is good and what is bad — Arjuna, a prince raised in the royal court, knows that perfectly well. Krishna is showing Arjuna what is alive and what is dead in him. The Gita has moved from cosmology to psychology. Chapter sixteen is not theology; it is the anatomy of your own mind."
@@ -391,7 +395,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.1 — The Twenty-Six Graces"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nअभयं सत्त्वसंशुद्धिर्ज्ञानयोगव्यवस्थितिः |\r\nदानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम्"
+        children: "श्रीभगवानुवाच |\nअभयं सत्त्वसंशुद्धिर्ज्ञानयोगव्यवस्थितिः |\nदानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -410,7 +414,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.2 — The Quiet Virtues"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अहिंसा सत्यमक्रोधस्त्यागः शान्तिरपैशुनम् |\r\nदया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम्"
+        children: "अहिंसा सत्यमक्रोधस्त्यागः शान्तिरपैशुनम् |\nदया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -429,7 +433,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.3 — The Crown of the Divine"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तेजः क्षमा धृतिः शौचमद्रोहो नातिमानिता |\r\nभवन्ति सम्पदं दैवीमभिजातस्य भारत"
+        children: "तेजः क्षमा धृतिः शौचमद्रोहो नातिमानिता |\nभवन्ति सम्पदं दैवीमभिजातस्य भारत"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -448,7 +452,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.4 — The Six Demons"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "दम्भो दर्पोऽभिमानश्च क्रोधः पारुष्यमेव च |\r\nअज्ञानं चाभिजातस्य पार्थ सम्पदमासुरीम्"
+        children: "दम्भो दर्पोऽभिमानश्च क्रोधः पारुष्यमेव च |\nअज्ञानं चाभिजातस्य पार्थ सम्पदमासुरीम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -467,7 +471,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.5 — The Two Roads and a Reassurance"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "दैवी सम्पद्विमोक्षाय निबन्धायासुरी मता |\r\nमा शुचः सम्पदं दैवीमभिजातोऽसि पाण्डव"
+        children: "दैवी सम्पद्विमोक्षाय निबन्धायासुरी मता |\nमा शुचः सम्पदं दैवीमभिजातोऽसि पाण्डव"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -486,7 +490,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.6 — Two Currents in Creation"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "द्वौ भूतसर्गौ लोकेऽस्मिन्दैव आसुर एव च |\r\nदैवो विस्तरशः प्रोक्त आसुरं पार्थ मे शृणु"
+        children: "द्वौ भूतसर्गौ लोकेऽस्मिन्दैव आसुर एव च |\nदैवो विस्तरशः प्रोक्त आसुरं पार्थ मे शृणु"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -505,7 +509,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.7 — Blindness to Action and Inaction"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "प्रवृत्तिं च निवृत्तिं च जना न विदुरासुराः |\r\nन शौचं नापि चाचारो न सत्यं तेषु विद्यते"
+        children: "प्रवृत्तिं च निवृत्तिं च जना न विदुरासुराः |\nन शौचं नापि चाचारो न सत्यं तेषु विद्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -524,7 +528,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.8 — The Atheist's Creed"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "असत्यमप्रतिष्ठं ते जगदाहुरनीश्वरम् |\r\nअपरस्परसम्भूतं किमन्यत्कामहैतुकम्"
+        children: "असत्यमप्रतिष्ठं ते जगदाहुरनीश्वरम् |\nअपरस्परसम्भूतं किमन्यत्कामहैतुकम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -543,7 +547,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.9 — The Logic That Destroys"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "एतां दृष्टिमवष्टभ्य नष्टात्मानोऽल्पबुद्धयः |\r\nप्रभवन्त्युग्रकर्माणः क्षयाय जगतोऽहिताः |"
+        children: "एतां दृष्टिमवष्टभ्य नष्टात्मानोऽल्पबुद्धयः |\nप्रभवन्त्युग्रकर्माणः क्षयाय जगतोऽहिताः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -562,7 +566,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.10 — Insatiable Desire"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "काममाश्रित्य दुष्पूरं दम्भमानमदान्विताः |\r\nमोहाद्गृहीत्वासद्ग्राहान्प्रवर्तन्तेऽशुचिव्रताः |"
+        children: "काममाश्रित्य दुष्पूरं दम्भमानमदान्विताः |\nमोहाद्गृहीत्वासद्ग्राहान्प्रवर्तन्तेऽशुचिव्रताः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -581,7 +585,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.11 — Cares That End Only With Death"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "चिन्तामपरिमेयां च प्रलयान्तामुपाश्रिताः |\r\nकामोपभोगपरमा एतावदिति निश्चिताः"
+        children: "चिन्तामपरिमेयां च प्रलयान्तामुपाश्रिताः |\nकामोपभोगपरमा एतावदिति निश्चिताः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -600,7 +604,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.12 — Hopes as Chains"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आशापाशशतैर्बद्धाः कामक्रोधपरायणाः |\r\nईहन्ते कामभोगार्थमन्यायेनार्थसञ्चयान् |"
+        children: "आशापाशशतैर्बद्धाः कामक्रोधपरायणाः |\nईहन्ते कामभोगार्थमन्यायेनार्थसञ्चयान् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -619,7 +623,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.13 — The Inventory of Mine"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "इदमद्य मया लब्धमिमं प्राप्स्ये मनोरथम् |\r\nइदमस्तीदमपि मे भविष्यति पुनर्धनम् |"
+        children: "इदमद्य मया लब्धमिमं प्राप्स्ये मनोरथम् |\nइदमस्तीदमपि मे भविष्यति पुनर्धनम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -638,7 +642,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.14 — The Little God"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "असौ मया हतः शत्रुर्हनिष्ये चापरानपि |\r\nईश्वरोऽहमहं भोगी सिद्धोऽहं बलवान्सुखी"
+        children: "असौ मया हतः शत्रुर्हनिष्ये चापरानपि |\nईश्वरोऽहमहं भोगी सिद्धोऽहं बलवान्सुखी"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -657,7 +661,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.15 — The Wealthy Boast"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आढ्योऽभिजनवानस्मि कोऽन्योऽस्ति सदृशो मया |\r\nयक्ष्ये दास्यामि मोदिष्य इत्यज्ञानविमोहिताः |"
+        children: "आढ्योऽभिजनवानस्मि कोऽन्योऽस्ति सदृशो मया |\nयक्ष्ये दास्यामि मोदिष्य इत्यज्ञानविमोहिताः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -676,7 +680,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.16 — Falling Into the Foul Hell"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अनेकचित्तविभ्रान्ता मोहजालसमावृताः |\r\nप्रसक्ताः कामभोगेषु पतन्ति नरकेऽशुचौ |"
+        children: "अनेकचित्तविभ्रान्ता मोहजालसमावृताः |\nप्रसक्ताः कामभोगेषु पतन्ति नरकेऽशुचौ |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -695,7 +699,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.17 — Sacrifice as Theatre"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आत्मसम्भाविताः स्तब्धा धनमानमदान्विताः |\r\nयजन्ते नामयज्ञैस्ते दम्भेनाविधिपूर्वकम् |"
+        children: "आत्मसम्भाविताः स्तब्धा धनमानमदान्विताः |\nयजन्ते नामयज्ञैस्ते दम्भेनाविधिपूर्वकम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -714,7 +718,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.18 — Hatred in the Name of the Self"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अहंकारं बलं दर्पं कामं क्रोधं च संश्रिताः |\r\nमामात्मपरदेहेषु प्रद्विषन्तोऽभ्यसूयकाः |"
+        children: "अहंकारं बलं दर्पं कामं क्रोधं च संश्रिताः |\nमामात्मपरदेहेषु प्रद्विषन्तोऽभ्यसूयकाः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -733,7 +737,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.19 — The Womb of the Cruel"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तानहं द्विषतः क्रुरान्संसारेषु नराधमान् |\r\nक्षिपाम्यजस्रमशुभानासुरीष्वेव योनिषु |"
+        children: "तानहं द्विषतः क्रुरान्संसारेषु नराधमान् |\nक्षिपाम्यजस्रमशुभानासुरीष्वेव योनिषु |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -752,7 +756,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.20 — Birth After Birth, Farther and Farther"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आसुरीं योनिमापन्ना मूढा जन्मनि जन्मनि |\r\nमामप्राप्यैव कौन्तेय ततो यान्त्यधमां गतिम् |"
+        children: "आसुरीं योनिमापन्ना मूढा जन्मनि जन्मनि |\nमामप्राप्यैव कौन्तेय ततो यान्त्यधमां गतिम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -771,7 +775,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.21 — The Three Gates"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः |\r\nकामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत्"
+        children: "त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः |\nकामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -790,7 +794,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.22 — Walking Out of the Gates"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "एतैर्विमुक्तः कौन्तेय तमोद्वारैस्त्रिभिर्नरः |\r\nआचरत्यात्मनः श्रेयस्ततो याति परां गतिम् |"
+        children: "एतैर्विमुक्तः कौन्तेय तमोद्वारैस्त्रिभिर्नरः |\nआचरत्यात्मनः श्रेयस्ततो याति परां गतिम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -809,7 +813,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.23 — Desire Without a Compass"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यः शास्त्रविधिमुत्सृज्य वर्तते कामकारतः |\r\nन स सिद्धिमवाप्नोति न सुखं न परां गतिम् |"
+        children: "यः शास्त्रविधिमुत्सृज्य वर्तते कामकारतः |\nन स सिद्धिमवाप्नोति न सुखं न परां गतिम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -828,7 +832,7 @@ function _createMdxContent(props) {
       children: "Shloka 16.24 — The Scripture as Mirror"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ |\r\nज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि |"
+        children: "तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ |\nज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -929,13 +933,85 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Dark Triad and Moral Foundations Theory"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Chapter 16 catalogs 26 divine qualities and 6 demonic ones. The demonic qualities — hypocrisy, arrogance, anger, cruelty — map directly onto the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "dark triad"
+        }), " (Paulhus & Williams, 2002): narcissism (inflated self-importance), Machiavellianism (manipulation), and psychopathy (lack of empathy). The Gita's psychological taxonomy predates modern personality science by 2,500 years."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The 26 divine qualities (16.1-16.3)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Moral foundations theory (Haidt, 2012)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The divine qualities map to Haidt's moral foundations: care, fairness, loyalty, authority, sanctity. The \"divine\" is morally integrated"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The 6 demonic qualities (16.4)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Dark triad (Paulhus & Williams, 2002)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Hypocrisy, arrogance, cruelty map to narcissism, Machiavellianism, psychopathy — the personality disorders of moral disintegration"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "\"I am the lord\" (16.13-16.17)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Narcissistic grandiosity (Campbell et al., 2002)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The inflated ego's claim to ownership is the hallmark of narcissistic personality — the false self that believes it is the source"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The three gates (16.21)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Impulse control research (Logue, 1995)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Desire, anger, greed as the three self-destructive impulses map to the delay discounting literature — the inability to defer gratification"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The way out: watching (16.23-16.24)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Mindfulness-Based Relapse Prevention (Bowen et al., 2014)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Watching the demonic qualities without acting on them is the same mechanism used in addiction recovery — awareness breaks the automaticity of destructive patterns"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " For one week, notice the three gates (16.21) — desire, anger, greed — as they arise. Do not suppress them; just watch. Notice how watching changes the impulse. This is the Gita's prescription for the demonic qualities — not moral judgment but psychological awareness."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The demonic qualities of Chapter 16 are the extreme version of the guna-driven behavior of Chapter 14. The gunatita (14.22-14.25) has transcended all three gunas; the demonic person is identified with tamas and rajas, mistaking them for the self."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"Krishna opens the mirror: 26 divine qualities\"] --> B[\"6 demonic qualities named\"]\r\n    B --> C[\"Two currents: liberation or bondage\"]\r\n    C --> D[\"The materialist creed: no truth, no God\"]\r\n    D --> E[\"Insatiable desire and the inflated ego\"]\r\n    E --> F[\"The fall: bewilderment and the impure hell\"]\r\n    F --> G[\"The three gates: desire, anger, greed\"]\r\n    G --> H[\"The way out: watch, abandon, act\"]\r\n    H --> I[\"Shastra as compass: knowing, then acting\"]\r\n    style G fill:#4446e8,color:#fff\r\n    style H fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"Krishna opens the mirror: 26 divine qualities\"] --> B[\"6 demonic qualities named\"]\n    B --> C[\"Two currents: liberation or bondage\"]\n    C --> D[\"The materialist creed: no truth, no God\"]\n    D --> E[\"Insatiable desire and the inflated ego\"]\n    E --> F[\"The fall: bewilderment and the impure hell\"]\n    F --> G[\"The three gates: desire, anger, greed\"]\n    G --> H[\"The way out: watch, abandon, act\"]\n    H --> I[\"Shastra as compass: knowing, then acting\"]\n    style G fill:#4446e8,color:#fff\n    style H fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -943,7 +1019,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root[Daivasura Sampad Yoga]\r\n    Divine endowment\r\n      Fearlessness\r\n      Purity of heart\r\n      Charity and self-control\r\n      Compassion and gentleness\r\n      Vigour and forgiveness\r\n      Modesty and steadiness\r\n    Demonic endowment\r\n      Hypocrisy\r\n      Arrogance and self-conceit\r\n      Anger and harshness\r\n      Ignorance\r\n    Anatomy of the asuric mind\r\n      Materialist creed\r\n      Insatiable desire\r\n      Worry without end\r\n      The inflated I\r\n      Fall into delusion\r\n    The three gates\r\n      Desire\r\n      Anger\r\n      Greed\r\n    The way out\r\n      The witness\r\n      Shastra as mirror\r\n      Act with knowing\n"
+        children: "mindmap\n  root[Daivasura Sampad Yoga]\n    Divine endowment\n      Fearlessness\n      Purity of heart\n      Charity and self-control\n      Compassion and gentleness\n      Vigour and forgiveness\n      Modesty and steadiness\n    Demonic endowment\n      Hypocrisy\n      Arrogance and self-conceit\n      Anger and harshness\n      Ignorance\n    Anatomy of the asuric mind\n      Materialist creed\n      Insatiable desire\n      Worry without end\n      The inflated I\n      Fall into delusion\n    The three gates\n      Desire\n      Anger\n      Greed\n    The way out\n      The witness\n      Shastra as mirror\n      Act with knowing\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1048,17 +1124,17 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q3. What are the three gates of hell named in shloka 16.21?"
+        children: "Q3. The three gates of hell — desire, anger, greed (16.21) — map onto what modern psychological concept?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Pride, envy, sloth"
+        children: "a. The three primary emotions"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Lust, anger, greed"
+        children: "b. The dark triad: narcissism (inflated self), Machiavellianism (manipulation), psychopathy (lack of empathy)"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Fear, doubt, hatred"
+        children: "c. Impulse control failure — the inability to defer gratification across three domains: reward-seeking, threat-avoidance, and resource-hoarding"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Sleep, food, gossip"
+        children: "d. The three gunas in disguise"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1067,48 +1143,34 @@ function _createMdxContent(props) {
         children: "Show Answer"
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: b."
-        }), " Kama (desire), krodha (anger) and lobha (greed) are the three gates destructive of the self."]
+          children: "Answer: c."
+        }), " Logue (1995) and others show that self-destructive impulses operate across three domains: reward-seeking (desire/kama), threat-avoidance (anger/krodha), and resource-hoarding (greed/lobha). The Gita's three gates map to the three fundamental impulse-control failures that psychologists study. The prescription — watching (16.23) — is the same mechanism used in relapse prevention."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q4. How does the Osho-style reading interpret the demonic endowment?"
+        children: "Q5. Krishna says the demonic person declares \"I am the lord, I am the enjoyer\" (16.13-16.17). How does this map onto narcissistic personality research?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. As a fixed race of evil souls"
+        children: "a. It doesn't — narcissism is a modern concept"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. As unexamined patterns of the ego present in every mind"
+        children: "b. Narcissistic grandiosity (Campbell et al., 2002) involves inflated self-importance, entitlement, and exploitation of others — the exact traits Krishna describes in the \"inflated I\" of 16.13-16.17"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. As a punishment from God"
+        children: "c. All confident people are narcissistic"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. As the karma of past lives only"
+        children: "d. Narcissism is a mental illness, not a spiritual quality"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
-      "data-qid": "bg16-q4",
+      "data-qid": "bg16-q5",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
         children: "Show Answer"
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        }), " The demonic is the psychology of unconsciousness — what happens to desire when it is never looked at; it is a current in every person."]
+        }), " Campbell et al. (2002) define narcissistic grandiosity as the belief in one's specialness and entitlement. Krishna's description — \"I am the lord, I am the enjoyer, I am powerful, I am noble\" (16.13-16.17) — is a textbook portrait of narcissistic personality. The Gita's insight: this inflation is not strength but the most impoverished state, because it is identification with the false self."]
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q5. What does Krishna tell Arjuna in shloka 16.5?"
-      })
-    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. That he is doomed by his doubts"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. That he is born with the divine endowment and should not grieve"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. That he must leave the battlefield"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. That he will lose the war"
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+    }), "\n- a. That he is doomed by his doubts\n- b. That he is born with the divine endowment and should not grieve\n- c. That he must leave the battlefield\n- d. That he will lose the war\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
       "data-qid": "bg16-q5",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
@@ -1163,13 +1225,26 @@ function _createMdxContent(props) {
           children: "qualityOfDay()"
         }), " suggestion based on the dominant asuri pattern."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "The dark triad in code review."
+      }), " Krishna's description of the demonic personality — arrogance, cruelty, manipulation — is an exact match for Paulhus & Williams' (2002) dark triad. In engineering culture, you will encounter this pattern: the colleague who hoards information for leverage, the lead who takes credit for others' work, the manager who punishes those below while flattering those above."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The Gita's diagnostic is precise: the demonic is not a fixed personality type but an unconscious pattern — desire that has never been watched. The three gates (16.21) — desire, anger, greed — are the self-destructive impulses that every person carries. The prescription is not moral judgment but psychological awareness (16.23): watch the pattern, and it loses its grip."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Practical bridge:"
+      }), " In your next code review, notice the three gates in yourself — the desire to be right, the anger at criticism, the greed for recognition. Watch them without acting. This is the Gita's prescription for the demonic — and it works in the office as well as in the ashram."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-daivi-asuri-profiler",
       children: "TypeScript Tool: Daivi-Asuri Profiler"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Daivi-Asuri Profiler\r\n * Chapter 16, Bhagavad Gita: Daivasura Sampad Yoga\r\n * Scores a week of self-observations against the 26 divine and\r\n * 6 demonic endowments (16.1-16.4).\r\n * Osho lens: neither list is a verdict; both are mirrors.\r\n */\r\n\r\ninterface Quality {\r\n  key: string;\r\n  label: string;\r\n  kind: 'daivi' | 'asuri';\r\n}\r\n\r\ninterface DailyObservation {\r\n  date: string;\r\n  daiviKeys: string[];\r\n  asuriKeys: string[];\r\n}\r\n\r\ninterface ProfileResult {\r\n  days: number;\r\n  daiviScore: number;\r\n  asuriScore: number;\r\n  dominant: 'daivi' | 'asuri' | 'balanced';\r\n  strongestDaivi: string;\r\n  strongestAsuri: string;\r\n  oshoNote: string;\r\n}\r\n\r\nconst QUALITIES: Quality[] = [\r\n  { key: 'fearlessness', label: 'Fearlessness', kind: 'daivi' },\r\n  { key: 'purity', label: 'Purity of heart', kind: 'daivi' },\r\n  { key: 'steadfastness', label: 'Steadfastness in knowledge', kind: 'daivi' },\r\n  { key: 'charity', label: 'Charity', kind: 'daivi' },\r\n  { key: 'selfControl', label: 'Self-control', kind: 'daivi' },\r\n  { key: 'sacrifice', label: 'Sacrifice', kind: 'daivi' },\r\n  { key: 'study', label: 'Study of scriptures', kind: 'daivi' },\r\n  { key: 'austerity', label: 'Austerity', kind: 'daivi' },\r\n  { key: 'straightforwardness', label: 'Straightforwardness', kind: 'daivi' },\r\n  { key: 'ahimsa', label: 'Non-violence', kind: 'daivi' },\r\n  { key: 'truth', label: 'Truthfulness', kind: 'daivi' },\r\n  { key: 'noAnger', label: 'Freedom from anger', kind: 'daivi' },\r\n  { key: 'renunciation', label: 'Renunciation', kind: 'daivi' },\r\n  { key: 'peace', label: 'Peacefulness', kind: 'daivi' },\r\n  { key: 'noSlander', label: 'Absence of slander', kind: 'daivi' },\r\n  { key: 'compassion', label: 'Compassion', kind: 'daivi' },\r\n  { key: 'nonCovetousness', label: 'Non-covetousness', kind: 'daivi' },\r\n  { key: 'gentleness', label: 'Gentleness', kind: 'daivi' },\r\n  { key: 'modesty', label: 'Modesty', kind: 'daivi' },\r\n  { key: 'steadiness', label: 'Steadiness of mind', kind: 'daivi' },\r\n  { key: 'vigour', label: 'Vigour', kind: 'daivi' },\r\n  { key: 'forgiveness', label: 'Forgiveness', kind: 'daivi' },\r\n  { key: 'fortitude', label: 'Fortitude', kind: 'daivi' },\r\n  { key: 'cleanliness', label: 'Purity of body and mind', kind: 'daivi' },\r\n  { key: 'noMalice', label: 'Absence of malice', kind: 'daivi' },\r\n  { key: 'noPride', label: 'Absence of over-pride', kind: 'daivi' },\r\n  { key: 'hypocrisy', label: 'Hypocrisy', kind: 'asuri' },\r\n  { key: 'arrogance', label: 'Arrogance', kind: 'asuri' },\r\n  { key: 'conceit', label: 'Self-conceit', kind: 'asuri' },\r\n  { key: 'anger', label: 'Anger', kind: 'asuri' },\r\n  { key: 'harshness', label: 'Harshness', kind: 'asuri' },\r\n  { key: 'ignorance', label: 'Ignorance', kind: 'asuri' }\r\n];\r\n\r\nfunction scoreWeek(observations: DailyObservation[]): ProfileResult {\r\n  const daiviCount = new Map<string, number>();\r\n  const asuriCount = new Map<string, number>();\r\n  for (const day of observations) {\r\n    for (const key of day.daiviKeys) daiviCount.set(key, (daiviCount.get(key) ?? 0) + 1);\r\n    for (const key of day.asuriKeys) asuriCount.set(key, (asuriCount.get(key) ?? 0) + 1);\r\n  }\r\n  const daiviScore = [...daiviCount.values()].reduce((a, b) => a + b, 0);\r\n  const asuriScore = [...asuriCount.values()].reduce((a, b) => a + b, 0);\r\n  const strongestDaivi = labelOf(maxKey(daiviCount));\r\n  const strongestAsuri = labelOf(maxKey(asuriCount));\r\n  const dominant: ProfileResult['dominant'] =\r\n    daiviScore > asuriScore ? 'daivi' : daiviScore < asuriScore ? 'asuri' : 'balanced';\r\n  const oshoNote =\r\n    dominant === 'asuri'\r\n      ? 'Your demonic current is loud this week. Do not fight it; watch it. What is seen burns out.'\r\n      : dominant === 'daivi'\r\n        ? 'Awareness is rising. Remember: the moment you believe you are good, the demonic grows in the unexamined corner. Keep watching.'\r\n        : 'A knife-edge balance. One honest hour of witnessing will tip it toward light.';\r\n  return { days: observations.length, daiviScore, asuriScore, dominant, strongestDaivi, strongestAsuri, oshoNote };\r\n\r\n  function maxKey(map: Map<string, number>): string {\r\n    let best = ''; let bestCount = 0;\r\n    for (const [k, v] of map) if (v > bestCount) { best = k; bestCount = v; }\r\n    return best;\r\n  }\r\n  function labelOf(key: string): string {\r\n    return QUALITIES.find((q) => q.key === key)?.label ?? 'none observed';\r\n  }\r\n}\r\n\r\nconst week: DailyObservation[] = [\r\n  { date: '2026-08-18', daiviKeys: ['fearlessness', 'truth'], asuriKeys: ['arrogance'] },\r\n  { date: '2026-08-19', daiviKeys: ['compassion', 'noAnger'], asuriKeys: ['anger'] },\r\n  { date: '2026-08-20', daiviKeys: ['fortitude'], asuriKeys: ['conceit', 'ignorance'] }\r\n];\r\n\r\nconst report = scoreWeek(week);\r\nconsole.log('=== Daivi-Asuri Profiler ===');\r\nconsole.log(`Days observed: ${report.days}`);\r\nconsole.log(`Daivi score: ${report.daiviScore} | Asuri score: ${report.asuriScore}`);\r\nconsole.log(`Strongest divine trace: ${report.strongestDaivi}`);\r\nconsole.log(`Strongest demonic trace: ${report.strongestAsuri}`);\r\nconsole.log(`Dominant current: ${report.dominant}`);\r\nconsole.log(`Osho: ${report.oshoNote}`);\n"
+        children: "/**\n * Daivi-Asuri Profiler — Dark Triad & Moral Foundations Edition\n * Based on Daivasura Sampad Yoga (Gita 16.1-16.24) and the\n * dark triad (Paulhus & Williams, 2002): narcissism,\n * Machiavellianism, psychopathy. The 26 divine and 6 demonic\n * endowments map to moral foundations (Haidt, 2012): care,\n * fairness, loyalty, authority, sanctity.\n *\n * Run: npx ts-node daivi-asuri-profiler.ts\n */\n\ninterface Quality {\n  key: string;\n  label: string;\n  kind: 'daivi' | 'asuri';\n  darkTriad?: string;\n  moralFoundation?: string;\n}\n\ninterface DayObservation {\n  date: string;\n  daiviKeys: string[];\n  asuriKeys: string[];\n}\n\ninterface ProfileResult {\n  days: number;\n  daiviScore: number;\n  asuriScore: number;\n  dominant: 'daivi' | 'asuri' | 'balanced';\n  darkTriadScore: number;\n  moralFoundationScore: number;\n  strongestDaivi: string;\n  strongestAsuri: string;\n  message: string;\n}\n\nconst QUALITIES: Quality[] = [\n  { key: 'fearlessness', label: 'Fearlessness', kind: 'daivi', moralFoundation: 'authority' },\n  { key: 'purity', label: 'Purity of heart', kind: 'daivi', moralFoundation: 'sanctity' },\n  { key: 'steadfastness', label: 'Steadfastness in knowledge', kind: 'daivi', moralFoundation: 'authority' },\n  { key: 'charity', label: 'Charity', kind: 'daivi', moralFoundation: 'care' },\n  { key: 'selfControl', label: 'Self-control', kind: 'daivi', moralFoundation: 'authority' },\n  { key: 'sacrifice', label: 'Sacrifice', kind: 'daivi', moralFoundation: 'sanctity' },\n  { key: 'study', label: 'Study of scriptures', kind: 'daivi', moralFoundation: 'authority' },\n  { key: 'austerity', label: 'Austerity', kind: 'daivi', moralFoundation: 'sanctity' },\n  { key: 'straightforwardness', label: 'Straightforwardness', kind: 'daivi', moralFoundation: 'fairness' },\n  { key: 'ahimsa', label: 'Non-violence', kind: 'daivi', moralFoundation: 'care' },\n  { key: 'truth', label: 'Truthfulness', kind: 'daivi', moralFoundation: 'fairness' },\n  { key: 'noAnger', label: 'Freedom from anger', kind: 'daivi', moralFoundation: 'care' },\n  { key: 'renunciation', label: 'Renunciation', kind: 'daivi', moralFoundation: 'sanctity' },\n  { key: 'peace', label: 'Peacefulness', kind: 'daivi', moralFoundation: 'care' },\n  { key: 'noSlander', label: 'Absence of slander', kind: 'daivi', moralFoundation: 'fairness' },\n  { key: 'compassion', label: 'Compassion', kind: 'daivi', moralFoundation: 'care' },\n  { key: 'nonCovetousness', label: 'Non-covetousness', kind: 'daivi', moralFoundation: 'fairness' },\n  { key: 'gentleness', label: 'Gentleness', kind: 'daivi', moralFoundation: 'care' },\n  { key: 'modesty', label: 'Modesty', kind: 'daivi', moralFoundation: 'authority' },\n  { key: 'steadiness', label: 'Steadiness of mind', kind: 'daivi', moralFoundation: 'authority' },\n  { key: 'vigour', label: 'Vigour', kind: 'daivi', moralFoundation: 'care' },\n  { key: 'forgiveness', label: 'Forgiveness', kind: 'daivi', moralFoundation: 'fairness' },\n  { key: 'fortitude', label: 'Fortitude', kind: 'daivi', moralFoundation: 'authority' },\n  { key: 'cleanliness', label: 'Purity of body and mind', kind: 'daivi', moralFoundation: 'sanctity' },\n  { key: 'noMalice', label: 'Absence of malice', kind: 'daivi', moralFoundation: 'care' },\n  { key: 'noPride', label: 'Absence of over-pride', kind: 'daivi', moralFoundation: 'authority' },\n  { key: 'hypocrisy', label: 'Hypocrisy', kind: 'asuri', darkTriad: 'Machiavellianism', moralFoundation: 'fairness' },\n  { key: 'arrogance', label: 'Arrogance', kind: 'asuri', darkTriad: 'narcissism', moralFoundation: 'authority' },\n  { key: 'conceit', label: 'Self-conceit', kind: 'asuri', darkTriad: 'narcissism', moralFoundation: 'authority' },\n  { key: 'anger', label: 'Anger', kind: 'asuri', darkTriad: 'psychopathy', moralFoundation: 'care' },\n  { key: 'harshness', label: 'Harshness', kind: 'asuri', darkTriad: 'psychopathy', moralFoundation: 'care' },\n  { key: 'ignorance', label: 'Ignorance', kind: 'asuri', darkTriad: 'psychopathy', moralFoundation: 'care' }\n];\n\nfunction scoreWeek(observations: DayObservation[]): ProfileResult {\n  const daiviCount = new Map<string, number>();\n  const asuriCount = new Map<string, number>();\n  for (const day of observations) {\n    for (const key of day.daiviKeys) daiviCount.set(key, (daiviCount.get(key) ?? 0) + 1);\n    for (const key of day.asuriKeys) asuriCount.set(key, (asuriCount.get(key) ?? 0) + 1);\n  }\n  const daiviScore = [...daiviCount.values()].reduce((a, b) => a + b, 0);\n  const asuriScore = [...asuriCount.values()].reduce((a, b) => a + b, 0);\n  const darkTriadScore = Math.round((asuriScore / Math.max(daiviScore + asuriScore, 1)) * 100);\n  const moralFoundationScore = Math.round((daiviScore / Math.max(daiviScore + asuriScore, 1)) * 100);\n  const strongestDaivi = labelOf(maxKey(daiviCount));\n  const strongestAsuri = labelOf(maxKey(asuriCount));\n  const dominant: ProfileResult['dominant'] =\n    daiviScore > asuriScore ? 'daivi' : daiviScore < asuriScore ? 'asuri' : 'balanced';\n\n  const messages: Record<ProfileResult['dominant'], string> = {\n    asuri: 'The demonic patterns are active — the three gates are open (16.21). Watch them without acting; that is the beginning of freedom.',\n    daivi: 'The divine endowments are rising. But the moment you believe you are good, the demonic grows in the unexamined corner. Keep watching.',\n    balanced: 'A knife-edge balance. One honest hour of witnessing will tip it toward light.'\n  };\n\n  return { days: observations.length, daiviScore, asuriScore, dominant, darkTriadScore, moralFoundationScore, strongestDaivi, strongestAsuri, message: messages[dominant] };\n\n  function maxKey(map: Map<string, number>): string {\n    let best = ''; let bestCount = 0;\n    for (const [k, v] of map) if (v > bestCount) { best = k; bestCount = v; }\n    return best;\n  }\n  function labelOf(key: string): string {\n    return QUALITIES.find((q) => q.key === key)?.label ?? 'none observed';\n  }\n}\n\nconst week: DayObservation[] = [\n  { date: '2026-08-18', daiviKeys: ['fearlessness', 'truth'], asuriKeys: ['arrogance'] },\n  { date: '2026-08-19', daiviKeys: ['compassion', 'noAnger'], asuriKeys: ['anger'] },\n  { date: '2026-08-20', daiviKeys: ['fortitude'], asuriKeys: ['conceit', 'ignorance'] }\n];\n\nconst report = scoreWeek(week);\nconsole.log('=== Daivi-Asuri Profiler ===');\nconsole.log(`Days observed: ${report.days}`);\nconsole.log(`Daivi: ${report.daiviScore} | Asuri: ${report.asuriScore}`);\nconsole.log(`Dark Triad: ${report.darkTriadScore}/100 | Moral Foundations: ${report.moralFoundationScore}/100`);\nconsole.log(`Strongest divine: ${report.strongestDaivi} | Strongest demonic: ${report.strongestAsuri}`);\nconsole.log(`Dominant: ${report.dominant}`);\nconsole.log(report.message);\n"
       })
     })]
   });

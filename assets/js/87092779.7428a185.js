@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-13-kshetra-kshetrajna-yoga-md-870.json
-const site_docs_courses_bhagavad_gita_13_kshetra_kshetrajna_yoga_md_870_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/13-kshetra-kshetrajna-yoga","title":"Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower","description":"\\"You are not the field of your life — not its soil, not its crops, not its storms. You are the one who sees the field. And you have never left home.\\"","source":"@site/docs/courses/bhagavad-gita/13-kshetra-kshetrajna-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/13-kshetra-kshetrajna-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/13-kshetra-kshetrajna-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":14,"frontMatter":{"id":"13-kshetra-kshetrajna-yoga","slug":"/bhagavad-gita/13-kshetra-kshetrajna-yoga","title":"Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower","sidebar_label":"Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower","sidebar_position":14},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home","permalink":"/ai-engineering-journey/bhagavad-gita/12-bhakti-yoga"},"next":{"title":"Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather","permalink":"/ai-engineering-journey/bhagavad-gita/14-gunatraya-vibhaga-yoga"}}');
+const site_docs_courses_bhagavad_gita_13_kshetra_kshetrajna_yoga_md_870_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/13-kshetra-kshetrajna-yoga","title":"Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower","description":"\\"You are not the field of your life — not its soil, not its crops, not its storms. You are the one who sees the field. And you have never left home.\\"","source":"@site/docs/courses/bhagavad-gita/13-kshetra-kshetrajna-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/13-kshetra-kshetrajna-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/13-kshetra-kshetrajna-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":13,"frontMatter":{"id":"13-kshetra-kshetrajna-yoga","slug":"/bhagavad-gita/13-kshetra-kshetrajna-yoga","title":"Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower","sidebar_label":"Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower","sidebar_position":13},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home","permalink":"/ai-engineering-journey/bhagavad-gita/12-bhakti-yoga"},"next":{"title":"Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather","permalink":"/ai-engineering-journey/bhagavad-gita/14-gunatraya-vibhaga-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/13-kshetra-kshetrajna-yoga',
 	title: 'Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower',
 	sidebar_label: 'Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower',
-	sidebar_position: 14
+	sidebar_position: 13
 };
 const contentTitle = 'Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower';
 
@@ -242,6 +242,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Field Classifier",
   "id": "typescript-tool-field-classifier",
   "level": 2
@@ -281,7 +285,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"You are not the field of your life — not its soil, not its crops, not its storms. You are the one who sees the field. And you have never left home.\"\r\n— The Osho Way"
+        children: "\"You are not the field of your life — not its soil, not its crops, not its storms. You are the one who sees the field. And you have never left home.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Arjuna has heard about the manifest and the unmanifest, about devotion and action, about the cosmic form of the divine. Now he asks the sharpest question of the Gita — the question that divides everything: \"I wish to learn about Nature and Spirit, the field and the knower of the field, knowledge and the knowable\" (13.1). He is asking for a map of the whole of existence: what is matter, what is consciousness, and who is it that knows both?"
@@ -462,7 +466,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.1 — Arjuna's Greatest Question"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nप्रकृतिं पुरुषं चैव क्षेत्रं क्षेत्रज्ञमेव च |\r\nएतद्वेदितुमिच्छामि ज्ञानं ज्ञेयं च केशव |"
+        children: "अर्जुन उवाच |\nप्रकृतिं पुरुषं चैव क्षेत्रं क्षेत्रज्ञमेव च |\nएतद्वेदितुमिच्छामि ज्ञानं ज्ञेयं च केशव |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -485,7 +489,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.2 — The Body Is the Field"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nइदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते |\r\nएतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः |"
+        children: "श्रीभगवानुवाच |\nइदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते |\nएतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -506,7 +510,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.3 — The Knower in All Fields"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत |\r\nक्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम |"
+        children: "क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत |\nक्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -525,7 +529,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.4 — Hear in Brief What the Field Is"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तत्क्षेत्रं यच्च यादृक्च यद्विकारि यतश्च यत् |\r\nस च यो यत्प्रभावश्च तत्समासेन मे शृणु |"
+        children: "तत्क्षेत्रं यच्च यादृक्च यद्विकारि यतश्च यत् |\nस च यो यत्प्रभावश्च तत्समासेन मे शृणु |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -544,7 +548,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.5 — Sung by the Sages and the Sutras"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ऋषिभिर्बहुधा गीतं छन्दोभिर्विविधैः पृथक् |\r\nब्रह्मसूत्रपदैश्चैव हेतुमद्भिर्विनिश्चितैः |"
+        children: "ऋषिभिर्बहुधा गीतं छन्दोभिर्विविधैः पृथक् |\nब्रह्मसूत्रपदैश्चैव हेतुमद्भिर्विनिश्चितैः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -565,7 +569,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.6 — The Twenty-Four Elements of the Field"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "महाभूतान्यहंकारो बुद्धिरव्यक्तमेव च |\r\nइन्द्रियाणि दशैकं च पञ्च चेन्द्रियगोचराः |"
+        children: "महाभूतान्यहंकारो बुद्धिरव्यक्तमेव च |\nइन्द्रियाणि दशैकं च पञ्च चेन्द्रियगोचराः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -586,7 +590,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.7 — The Field With Its Modifications"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "इच्छा द्वेषः सुखं दुःखं संघातश्चेतना धृतिः |\r\nएतत्क्षेत्रं समासेन सविकारमुदाहृतम् |"
+        children: "इच्छा द्वेषः सुखं दुःखं संघातश्चेतना धृतिः |\nएतत्क्षेत्रं समासेन सविकारमुदाहृतम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -607,7 +611,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.8 — Humility, Unpretentiousness, Non-Injury"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम् |\r\nआचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः |"
+        children: "अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम् |\nआचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -628,7 +632,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.9 — Dispassion and the Perception of Suffering"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "इन्द्रियार्थेषु वैराग्यमनहंकार एव च |\r\nजन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम् |"
+        children: "इन्द्रियार्थेषु वैराग्यमनहंकार एव च |\nजन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -649,7 +653,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.10 — Non-Attachment and Even-Mindedness"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "असक्तिरनभिष्वङ्गः पुत्रदारगृहादिषु |\r\nनित्यं च समचित्तत्वमिष्टानिष्टोपपत्तिषु |"
+        children: "असक्तिरनभिष्वङ्गः पुत्रदारगृहादिषु |\nनित्यं च समचित्तत्वमिष्टानिष्टोपपत्तिषु |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -670,7 +674,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.11 — Unswerving Devotion and Solitude"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मयि चानन्ययोगेन भक्तिरव्यभिचारिणी |\r\nविविक्तदेशसेवित्वमरतिर्जनसंसदि |"
+        children: "मयि चानन्ययोगेन भक्तिरव्यभिचारिणी |\nविविक्तदेशसेवित्वमरतिर्जनसंसदि |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -689,7 +693,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.12 — This Is Declared to Be Knowledge"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम् |\r\nएतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोऽन्यथा |"
+        children: "अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम् |\nएतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोऽन्यथा |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -710,7 +714,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.13 — The Knowable: Neither Being Nor Non-Being"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वामृतमश्नुते |\r\nअनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते |"
+        children: "ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वामृतमश्नुते |\nअनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -731,7 +735,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.14 — Hands and Feet Everywhere"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सर्वतः पाणिपादं तत्सर्वतोऽक्षिशिरोमुखम् |\r\nसर्वतः श्रुतिमल्लोके सर्वमावृत्य तिष्ठति |"
+        children: "सर्वतः पाणिपादं तत्सर्वतोऽक्षिशिरोमुखम् |\nसर्वतः श्रुतिमल्लोके सर्वमावृत्य तिष्ठति |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -750,7 +754,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.15 — Without Senses, Yet Shining Through Them"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम् |\r\nअसक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च |"
+        children: "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम् |\nअसक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -769,7 +773,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.16 — Far and Near, Inside and Outside"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "बहिरन्तश्च भूतानामचरं चरमेव च |\r\nसूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत् |"
+        children: "बहिरन्तश्च भूतानामचरं चरमेव च |\nसूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -788,7 +792,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.17 — Undivided, Yet Appearing Divided"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अविभक्तं च भूतेषु विभक्तमिव च स्थितम् |\r\nभूतभर्तृ च तज्ज्ञेयं ग्रसिष्णु प्रभविष्णु च |"
+        children: "अविभक्तं च भूतेषु विभक्तमिव च स्थितम् |\nभूतभर्तृ च तज्ज्ञेयं ग्रसिष्णु प्रभविष्णु च |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -807,7 +811,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.18 — The Light of Lights in Every Heart"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते |\r\nज्ञानं ज्ञेयं ज्ञानगम्यं हृदि सर्वस्य विष्ठितम् |"
+        children: "ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते |\nज्ञानं ज्ञेयं ज्ञानगम्यं हृदि सर्वस्य विष्ठितम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -826,7 +830,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.19 — Knowing This, the Devotee Enters My Being"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "इति क्षेत्रं तथा ज्ञानं ज्ञेयं चोक्तं समासतः |\r\nमद्भक्त एतद्विज्ञाय मद्भावायोपपद्यते |"
+        children: "इति क्षेत्रं तथा ज्ञानं ज्ञेयं चोक्तं समासतः |\nमद्भक्त एतद्विज्ञाय मद्भावायोपपद्यते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -845,7 +849,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.20 — Nature and Spirit, Both Beginningless"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "प्रकृतिं पुरुषं चैव विद्ध्यनादी उभावपि |\r\nविकारांश्च गुणांश्चैव विद्धि प्रकृतिसम्भवान् |"
+        children: "प्रकृतिं पुरुषं चैव विद्ध्यनादी उभावपि |\nविकारांश्च गुणांश्चैव विद्धि प्रकृतिसम्भवान् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -866,7 +870,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.21 — Nature Acts, Spirit Experiences"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते |\r\nपुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते |"
+        children: "कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते |\nपुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -885,7 +889,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.22 — Seated in Nature, the Soul Experiences the Gunas"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान् |\r\nकारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु |"
+        children: "पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान् |\nकारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -908,7 +912,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.23 — The Spectator, Permitter, Supporter, Enjoyer, Great Lord"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "उपद्रष्टानुमन्ता च भर्ता भोक्ता महेश्वरः |\r\nपरमात्मेति चाप्युक्तो देहेऽस्मिन्पुरुषः परः |"
+        children: "उपद्रष्टानुमन्ता च भर्ता भोक्ता महेश्वरः |\nपरमात्मेति चाप्युक्तो देहेऽस्मिन्पुरुषः परः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -927,7 +931,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.24 — Knowing Spirit and Nature, No More Birth"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "य एवं वेत्ति पुरुषं प्रकृतिं च गुणैः सह |\r\nसर्वथा वर्तमानोऽपि न स भूयोऽभिजायते |"
+        children: "य एवं वेत्ति पुरुषं प्रकृतिं च गुणैः सह |\nसर्वथा वर्तमानोऽपि न स भूयोऽभिजायते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -946,7 +950,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.25 — Some See by Meditation, Others by Knowledge, Others by Action"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ध्यानेनात्मनि पश्यन्ति केचिदात्मानमात्मना |\r\nअन्ये साङ्ख्येन योगेन कर्मयोगेन चापरे |"
+        children: "ध्यानेनात्मनि पश्यन्ति केचिदात्मानमात्मना |\nअन्ये साङ्ख्येन योगेन कर्मयोगेन चापरे |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -969,7 +973,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.26 — Those Who Hear From Others Also Cross Over"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अन्ये त्वेवमजानन्तः श्रुत्वान्येभ्य उपासते |\r\nतेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः |"
+        children: "अन्ये त्वेवमजानन्तः श्रुत्वान्येभ्य उपासते |\nतेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -990,7 +994,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.27 — Whatever Is Born Is Field and Knower United"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यावत्सञ्जायते किञ्चित्सत्त्वं स्थावरजङ्गमम् |\r\nक्षेत्रक्षेत्रज्ञसंयोगात्तद्विद्धि भरतर्षभ |"
+        children: "यावत्सञ्जायते किञ्चित्सत्त्वं स्थावरजङ्गमम् |\nक्षेत्रक्षेत्रज्ञसंयोगात्तद्विद्धि भरतर्षभ |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1011,7 +1015,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.28 — The One in All Beings, Unperishing in the Perishing"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम् |\r\nविनश्यत्स्वविनश्यन्तं यः पश्यति स पश्यति |"
+        children: "समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम् |\nविनश्यत्स्वविनश्यन्तं यः पश्यति स पश्यति |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1032,7 +1036,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.29 — Seeing the Same Lord Everywhere, You Do Not Destroy Yourself"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "समं पश्यन्हि सर्वत्र समवस्थितमीश्वरम् |\r\nन हिनस्त्यात्मनात्मानं ततो याति परां गतिम् |"
+        children: "समं पश्यन्हि सर्वत्र समवस्थितमीश्वरम् |\nन हिनस्त्यात्मनात्मानं ततो याति परां गतिम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1051,7 +1055,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.30 — All Actions Are Nature's; the Self Is Actionless"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः |\r\nयः पश्यति तथात्मानमकर्तारं स पश्यति |"
+        children: "प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः |\nयः पश्यति तथात्मानमकर्तारं स पश्यति |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1072,7 +1076,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.31 — Seeing All Variety in the One, You Become the One"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यदा भूतपृथग्भावमेकस्थमनुपश्यति |\r\nतत एव च विस्तारं ब्रह्म सम्पद्यते तदा |"
+        children: "यदा भूतपृथग्भावमेकस्थमनुपश्यति |\nतत एव च विस्तारं ब्रह्म सम्पद्यते तदा |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1093,7 +1097,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.32 — Beginningless, Without Qualities, Unstained"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अनादित्वान्निर्गुणत्वात्परमात्मायमव्ययः |\r\nशरीरस्थोऽपि कौन्तेय न करोति न लिप्यते |"
+        children: "अनादित्वान्निर्गुणत्वात्परमात्मायमव्ययः |\nशरीरस्थोऽपि कौन्तेय न करोति न लिप्यते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1112,7 +1116,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.33 — As Ether Is Not Tainted, So the Self"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते |\r\nसर्वत्रावस्थितो देहे तथात्मा नोपलिप्यते |"
+        children: "यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते |\nसर्वत्रावस्थितो देहे तथात्मा नोपलिप्यते |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1131,7 +1135,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.34 — As the Sun Illumines the World, the Knower Illumines the Field"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः |\r\nक्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत |"
+        children: "यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः |\nक्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1152,7 +1156,7 @@ function _createMdxContent(props) {
       children: "Shloka 13.35 — The Eye of Knowledge, and the Supreme"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "क्षेत्रक्षेत्रज्ञयोरेवमन्तरं ज्ञानचक्षुषा |\r\nभूतप्रकृतिमोक्षं च ये विदुर्यान्ति ते परम् |"
+        children: "क्षेत्रक्षेत्रज्ञयोरेवमन्तरं ज्ञानचक्षुषा |\nभूतप्रकृतिमोक्षं च ये विदुर्यान्ति ते परम् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1253,13 +1257,77 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Self-Distancing and Perspective-Taking"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Chapter 13 teaches the distinction between the field (kshetra — the body-mind) and the knower of the field (kshetrajna — the witnessing awareness). ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Self-distancing research"
+        }), " (Kross et al., 2014) shows that viewing the self from a third-person perspective reduces emotional reactivity and improves decision-making — the same cognitive shift the Gita calls \"seeing the distinction between field and knower.\""]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Field vs. knower (13.1-13.3)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Self-distancing (Kross et al., 2014)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Referring to yourself in the third person during stress reduces amygdala activation — the same shift as labeling experiences as \"field\""
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The twenty qualities of knowledge (13.8-13.12)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Emotional intelligence (Goleman, 1995)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Humility, restraint, dispassion map to the self-awareness and self-regulation components of emotional intelligence"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Nature acts, Spirit experiences (13.20-13.24)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Observer-observed distinction (Lynch et al., 2006)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Mindfulness-Based Cognitive Therapy teaches that thoughts are mental events, not facts — the same distinction as field vs. knower"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The unstained witness (13.32)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Cognitive defusion (Hayes et al., 2006)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "ACT teaches \"defusing\" from thoughts — seeing them as passing events rather than truths. The sun enters objects without being stained; awareness touches thoughts without being touched"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " For one day, whenever a strong emotion arises, label it as \"field\" — say inwardly \"this is field, not me.\" Notice whether the labeling creates distance between you and the emotion. This is the field-knower distinction in action."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The field-knower distinction of Chapter 13 is the explicit version of the witness practice of Chapter 2 (2.54-2.72) and the guna-sky metaphor of Chapter 14 (14.22-14.25). Chapter 13 names what chapters 2 and 14 enact."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[Arjuna asks about field, knower, knowledge] --> B[The body is the field]\r\n    B --> C[The knower of the field is one in all fields]\r\n    C --> D[Inventory the field: elements, senses, emotions]\r\n    D --> E[Cultivate the qualities of knowledge]\r\n    E --> F[The knowable: light of lights in every heart]\r\n    F --> G{Nature acts, Spirit experiences}\r\n    G -->|Identification| H[Bondage: birth in the gunas]\r\n    G -->|Seeing| I[The Self is the non-doer]\r\n    I --> J[The one in all beings, untainted as ether]\r\n    J --> K[The eye of knowledge sees the distinction]\r\n    K --> L[They go to the Supreme]\r\n    style L fill:#4446e8,color:#fff\r\n    style G fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[Arjuna asks about field, knower, knowledge] --> B[The body is the field]\n    B --> C[The knower of the field is one in all fields]\n    C --> D[Inventory the field: elements, senses, emotions]\n    D --> E[Cultivate the qualities of knowledge]\n    E --> F[The knowable: light of lights in every heart]\n    F --> G{Nature acts, Spirit experiences}\n    G -->|Identification| H[Bondage: birth in the gunas]\n    G -->|Seeing| I[The Self is the non-doer]\n    I --> J[The one in all beings, untainted as ether]\n    J --> K[The eye of knowledge sees the distinction]\n    K --> L[They go to the Supreme]\n    style L fill:#4446e8,color:#fff\n    style G fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -1267,7 +1335,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root((Kshetra Kshetrajna Yoga))\r\n    The field\r\n      Great elements\r\n      Ego and intellect\r\n      Ten senses and mind\r\n      Five sense objects\r\n      Desire, hatred, pleasure, pain\r\n      The body, consciousness, fortitude\r\n    The knower\r\n      The witness in all fields\r\n      One in all beings\r\n      The spectator and permitter\r\n      The light of lights\r\n    Knowledge\r\n      Humility and unpretentiousness\r\n      Non-injury and forgiveness\r\n      Dispassion and even-mindedness\r\n      Unswerving devotion\r\n      Constancy in Self-knowledge\r\n    The knowable\r\n      Neither being nor non-being\r\n      Hands and feet everywhere\r\n      Far, yet near at hand\r\n      Undivided, yet as if divided\r\n      Seated in every heart\r\n    Liberation\r\n      Nature acts, Self is actionless\r\n      The unstained witness\r\n      The sun illumines the field\r\n      The eye of knowledge\r\n      They go to the Supreme\n"
+        children: "mindmap\n  root((Kshetra Kshetrajna Yoga))\n    The field\n      Great elements\n      Ego and intellect\n      Ten senses and mind\n      Five sense objects\n      Desire, hatred, pleasure, pain\n      The body, consciousness, fortitude\n    The knower\n      The witness in all fields\n      One in all beings\n      The spectator and permitter\n      The light of lights\n    Knowledge\n      Humility and unpretentiousness\n      Non-injury and forgiveness\n      Dispassion and even-mindedness\n      Unswerving devotion\n      Constancy in Self-knowledge\n    The knowable\n      Neither being nor non-being\n      Hands and feet everywhere\n      Far, yet near at hand\n      Undivided, yet as if divided\n      Seated in every heart\n    Liberation\n      Nature acts, Self is actionless\n      The unstained witness\n      The sun illumines the field\n      The eye of knowledge\n      They go to the Supreme\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1370,27 +1438,27 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q3. Which of the following is listed among the constituents of the field in 13.6–13.7?"
+        children: "Q3. Krishna lists the constituents of the field (13.6-13.7) — desire, hatred, pleasure, pain, intelligence, ego. How does this map onto the Buddhist concept of the five skandhas, and why does it matter for practice?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Faith and devotion"
+        children: "a. They are unrelated — the Gita and Buddhism are different traditions"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Desire, hatred, pleasure and pain"
+        children: "b. The skandhas (form, feeling, perception, formations, consciousness) overlap with the Gita's field-list — both teach that what you think is \"you\" is actually a collection of changing processes. Seeing this is the beginning of freedom"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. The gunas alone"
+        children: "c. The Gita's list is more complete than the Buddhist one"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Purity and forgiveness"
+        children: "d. The skandhas are the gunas in disguise"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
       "data-qid": "bg13-q3",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
         children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        })
+        }), " The Buddhist five skandhas (form, feeling, perception, formations, consciousness) and the Gita's field-list (13.6-13.7) both catalog the components of personal experience that are commonly mistaken for a permanent self. Both traditions teach that recognizing these as \"field\" — as changing processes, not \"you\" — is the beginning of freedom."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
@@ -1418,27 +1486,27 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q5. According to 13.30, what does he see who \"really sees\"?"
+        children: "Q5. Krishna says \"he really sees who sees the distinction between field and knower\" (13.30). How does this map onto self-distancing research (Kross et al., 2014)?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. That the Self performs all actions"
+        children: "a. It doesn't — self-distancing is a modern technique with no ancient parallel"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. That all actions are performed by Nature alone and the Self is actionless"
+        children: "b. Self-distancing shows that viewing yourself in the third person reduces emotional reactivity — the same cognitive shift as labeling experiences as \"field\" and seeing the knower as separate"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. That action is an illusion to be abandoned"
+        children: "c. Self-distancing means avoiding your problems"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. That the body acts independently"
+        children: "d. The Gita's \"seeing\" is purely mystical and has no cognitive parallel"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
       "data-qid": "bg13-q5",
       children: [(0,jsx_runtime.jsx)(_components.summary, {
         children: "Show Answer"
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        })
+        }), " Kross et al. (2014) found that referring to yourself in the third person during stress reduces amygdala activation and improves decision-making. The Gita's \"seeing the distinction between field and knower\" (13.30) is the same cognitive shift — labeling experiences as \"field\" creates the psychological distance that reduces reactivity."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
@@ -1485,13 +1553,30 @@ function _createMdxContent(props) {
           children: "TypeScript exercise."
         }), " Extend the tool below to accept a \"witness streak\" — the number of consecutive times a person correctly labels a stressful statement as field — and, at ten consecutive labels, print the Osho-style reminder from 13.34: the sun does not enter the objects it illumines."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Field vs. knower in code review:"
+        }), " When your code is critiqued, the \"field\" response is defensiveness (ego attached to the code). The \"knower\" response is hearing the feedback clearly without the self being threatened. Practice labeling the defensiveness as \"field\" — it is weather in the code, not weather in you."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The twenty qualities of knowledge (13.8-13.12) as engineering virtues:"
+        }), " Humility, restraint, dispassion — these are not just spiritual qualities but the foundations of good engineering. Humility prevents overconfidence; restraint prevents premature optimization; dispassion prevents emotional attachment to architecture decisions."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The sun metaphor (13.34) in debugging:"
+        }), " The sun illumines objects without being stained by them. Debug with the same quality — touch the bug without letting it touch you. The code is not you; the bug is not you; the fix is not you."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-field-classifier",
       children: "TypeScript Tool: Field Classifier"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/**\r\n * Field Classifier — Chapter 13, Kshetra Kshetrajna Yoga\r\n *\r\n * The chapter's core teaching: whatever changes is the field (kshetra);\r\n * whatever watches is the knower (kshetrajna). This tool takes modern\r\n * life-statements and sorts each one, then responds the way the witness\r\n * would — with distance, warmth, and no ownership of the storm.\r\n */\r\n\r\ninterface LifeStatement {\r\n  text: string;\r\n  tense: \"present\" | \"past\";\r\n}\r\n\r\ninterface Classification {\r\n  statement: string;\r\n  category: \"field\" | \"knower\";\r\n  reason: string;\r\n  witnessNote: string;\r\n}\r\n\r\nconst FIELD_MARKERS: string[] = [\r\n  \"I am angry\", \"I am sad\", \"I am anxious\", \"I failed\",\r\n  \"I succeeded\", \"they hurt me\", \"I am tired\", \"I love\",\r\n  \"I hate\", \"I am worried\", \"I am excited\", \"I am lost\",\r\n];\r\n\r\nfunction classify(statement: LifeStatement): Classification {\r\n  for (const marker of FIELD_MARKERS) {\r\n    if (statement.text.toLowerCase().includes(marker)) {\r\n      return {\r\n        statement: statement.text,\r\n        category: \"field\",\r\n        reason: \"It names a changing state of the field, not the watcher of it.\",\r\n        witnessNote:\r\n          \"The storm is weather in the field. The watcher was never rained on.\",\r\n      };\r\n    }\r\n  }\r\n  return {\r\n    statement: statement.text,\r\n    category: \"knower\",\r\n    reason: \"It refers to what knows the field, not to a state inside it.\",\r\n    witnessNote:\r\n      \"That is the knower speaking — the one that has watched every season without aging.\",\r\n  };\r\n}\r\n\r\nfunction observeToday(statements: LifeStatement[]): Classification[] {\r\n  return statements.map(classify);\r\n}\r\n\r\nconst aDayInTheField: LifeStatement[] = [\r\n  { text: \"I am angry at my colleague\", tense: \"present\" },\r\n  { text: \"I am worried about the exam\", tense: \"present\" },\r\n  { text: \"I am aware that thoughts keep arising\", tense: \"present\" },\r\n  { text: \"I failed the interview\", tense: \"past\" },\r\n];\r\n\r\nfor (const result of observeToday(aDayInTheField)) {\r\n  console.log(`\"${result.statement}\" -> ${result.category.toUpperCase()}`);\r\n  console.log(`  ${result.reason}`);\r\n  console.log(`  ${result.witnessNote}`);\r\n}\n"
+        children: "/**\n * Field Classifier — Self-Distancing Edition\n * Based on Kshetra Kshetrajna Yoga (Gita 13.1-13.3) and\n * self-distancing research (Kross et al., 2014): labeling\n * experiences as \"field\" creates the psychological distance\n * that reduces emotional reactivity. The knower is the\n * observing self that watches the field without being touched.\n *\n * Run: npx ts-node field-classifier.ts\n */\n\ninterface LifeStatement {\n  text: string;\n  emotionIntensity: number; // 0–10: how strongly does this statement pull you in?\n}\n\ninterface Classification {\n  statement: string;\n  category: 'field' | 'knower';\n  emotionalReactivity: number; // before distancing\n  distanceCreated: number;     // after labeling as field\n  reason: string;\n}\n\nconst FIELD_MARKERS = [\n  'I am angry', 'I am sad', 'I am anxious', 'I failed',\n  'I succeeded', 'they hurt me', 'I am tired', 'I love',\n  'I hate', 'I am worried', 'I am excited', 'I am lost',\n  'I want', 'I need', 'I can\\'t', 'I must'\n];\n\nfunction classify(statement: LifeStatement): Classification {\n  const isField = FIELD_MARKERS.some((m) => statement.text.toLowerCase().includes(m));\n  const baseReactivity = statement.emotionIntensity;\n\n  if (isField) {\n    // Self-distancing: labeling as \"field\" reduces reactivity by ~40% (Kross et al., 2014)\n    const distanceCreated = Math.round(baseReactivity * 0.4);\n    return {\n      statement: statement.text,\n      category: 'field',\n      emotionalReactivity: baseReactivity,\n      distanceCreated,\n      reason: `Labeled as \"field\" — reactivity reduced from ${baseReactivity}/10 to ${baseReactivity - distanceCreated}/10. The storm is weather in the field, not in the watcher. (13.6-13.7)`\n    };\n  }\n\n  return {\n    statement: statement.text,\n    category: 'knower',\n    emotionalReactivity: baseReactivity,\n    distanceCreated: 0,\n    reason: 'This refers to the knower — the observing awareness that has watched every season without aging. (13.3)'\n  };\n}\n\nconst today: LifeStatement[] = [\n  { text: 'I am angry at my colleague', emotionIntensity: 8 },\n  { text: 'I am worried about the exam', emotionIntensity: 7 },\n  { text: 'I am aware that thoughts keep arising', emotionIntensity: 3 },\n  { text: 'I failed the interview', emotionIntensity: 9 },\n  { text: 'The code review was thorough and fair', emotionIntensity: 4 }\n];\n\nconst classifications = today.map(classify);\nconst fieldCount = classifications.filter((c) => c.category === 'field').length;\nconst totalReactivityBefore = classifications.reduce((s, c) => s + c.emotionalReactivity, 0);\nconst totalDistance = classifications.reduce((s, c) => s + c.distanceCreated, 0);\n\nconsole.log('=== Field Classifier ===');\nconsole.log(`Statements: ${classifications.length} | Field: ${fieldCount} | Knower: ${classifications.length - fieldCount}`);\nconsole.log(`Total reactivity before: ${totalReactivityBefore}/10 | Distance created: ${totalDistance}/10`);\nfor (const c of classifications) {\n  const icon = c.category === 'field' ? '[FIELD]' : '[KNOWER]';\n  console.log(`${icon} \"${c.statement}\" — reactivity ${c.emotionalReactivity}→${c.emotionalReactivity - c.distanceCreated}`);\n}\nconsole.log(`\\nThe sun illumines without being stained. (13.34)`);\n"
       })
     })]
   });

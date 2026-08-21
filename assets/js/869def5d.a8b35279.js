@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-03-karma-yoga-md-869.json
-const site_docs_courses_bhagavad_gita_03_karma_yoga_md_869_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/03-karma-yoga","title":"Chapter 3: Karma Yoga — Action Without Attachment","description":"\\"The world is bound by action, except when action is performed as sacrifice.\\"","source":"@site/docs/courses/bhagavad-gita/03-karma-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/03-karma-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/03-karma-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":4,"frontMatter":{"id":"03-karma-yoga","slug":"/bhagavad-gita/03-karma-yoga","title":"Chapter 3: Karma Yoga — Action Without Attachment","sidebar_label":"Chapter 3: Karma Yoga — Action Without Attachment","sidebar_position":4},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 2: Sankhya Yoga — The Wisdom of the Seer","permalink":"/ai-engineering-journey/bhagavad-gita/02-sankhya-yoga"},"next":{"title":"Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom","permalink":"/ai-engineering-journey/bhagavad-gita/04-jnana-karma-sanyasa-yoga"}}');
+const site_docs_courses_bhagavad_gita_03_karma_yoga_md_869_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/03-karma-yoga","title":"Chapter 3: Karma Yoga — Action Without Attachment","description":"\\"The world is bound by action, except when action is performed as sacrifice.\\"","source":"@site/docs/courses/bhagavad-gita/03-karma-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/03-karma-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/03-karma-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":3,"frontMatter":{"id":"03-karma-yoga","slug":"/bhagavad-gita/03-karma-yoga","title":"Chapter 3: Karma Yoga — Action Without Attachment","sidebar_label":"Chapter 3: Karma Yoga — Action Without Attachment","sidebar_position":3},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 2: Sankhya Yoga — The Wisdom of the Seer","permalink":"/ai-engineering-journey/bhagavad-gita/02-sankhya-yoga"},"next":{"title":"Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom","permalink":"/ai-engineering-journey/bhagavad-gita/04-jnana-karma-sanyasa-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/03-karma-yoga',
 	title: 'Chapter 3: Karma Yoga — Action Without Attachment',
 	sidebar_label: 'Chapter 3: Karma Yoga — Action Without Attachment',
-	sidebar_position: 4
+	sidebar_position: 3
 };
 const contentTitle = 'Chapter 3: Karma Yoga — Action Without Attachment';
 
@@ -274,6 +274,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Desire Logger",
   "id": "typescript-tool-desire-logger",
   "level": 2
@@ -283,6 +287,7 @@ function _createMdxContent(props) {
     blockquote: "blockquote",
     code: "code",
     details: "details",
+    em: "em",
     h1: "h1",
     h2: "h2",
     h3: "h3",
@@ -312,7 +317,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"The world is bound by action, except when action is performed as sacrifice.\"\r\n— The Osho Way"
+        children: "\"The world is bound by action, except when action is performed as sacrifice.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Chapter 2 ended with the portrait of the sthitaprajna, the man of steady wisdom. Arjuna has heard the whole theory of the immortal self and the even mind. Now he asks the question that every listener asks at this point: if wisdom is so great, why does the teaching keep pushing me toward war? Chapter 3, Karma Yoga, is Krishna's full answer — the yoga of action. It is the chapter that rescues the seeker from the temptation of withdrawal and places him back in the world with a new way of acting: act, fully and completely, but with the knot of \"mine\" untied from the act. This chapter is the bridge from the theory of the self (Sankhya) to the practice of living (Karma Yoga), and it contains some of the most practical verses in the entire Gita."
@@ -431,7 +436,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.1 — Why Do You Push Me Into This Dreadful Work?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन |\r\nतत्किं कर्मणि घोरे मां नियोजयसि केशव"
+        children: "अर्जुन उवाच |\nज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन |\nतत्किं कर्मणि घोरे मां नियोजयसि केशव"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -450,7 +455,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.2 — Tell Me One Way, Clearly"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे |\r\nतदेकं वद निश्चित्य येन श्रेयोऽहमाप्नुयाम्"
+        children: "व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे |\nतदेकं वद निश्चित्य येन श्रेयोऽहमाप्नुयाम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -469,7 +474,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.3 — The Two-Fold Path"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nलोकेऽस्मिन्द्विविधा निष्ठा पुरा प्रोक्ता मयानघ |\r\nज्ञानयोगेन साङ्ख्यानां कर्मयोगेन योगिनाम्"
+        children: "श्रीभगवानुवाच |\nलोकेऽस्मिन्द्विविधा निष्ठा पुरा प्रोक्ता मयानघ |\nज्ञानयोगेन साङ्ख्यानां कर्मयोगेन योगिनाम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -488,7 +493,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.4 — Not by Not Acting"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न कर्मणामनारम्भान्नैष्कर्म्यं पुरुषोऽश्नुते |\r\nन च संन्यसनादेव सिद्धिं समधिगच्छति"
+        children: "न कर्मणामनारम्भान्नैष्कर्म्यं पुरुषोऽश्नुते |\nन च संन्यसनादेव सिद्धिं समधिगच्छति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -507,7 +512,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.5 — No One Can Sit Still Even for a Moment"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत् |\r\nकार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः"
+        children: "न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत् |\nकार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -526,7 +531,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.6 — The Hypocrite With the Restrained Senses"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कर्मेन्द्रियाणि संयम्य य आस्ते मनसा स्मरन् |\r\nइन्द्रियार्थान्विमूढात्मा मिथ्याचारः स उच्यते"
+        children: "कर्मेन्द्रियाणि संयम्य य आस्ते मनसा स्मरन् |\nइन्द्रियार्थान्विमूढात्मा मिथ्याचारः स उच्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -545,7 +550,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.7 — The Superior Man Who Acts With Restrained Mind"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यस्त्विन्द्रियाणि मनसा नियम्यारभतेऽर्जुन |\r\nकर्मेन्द्रियैः कर्मयोगमसक्तः स विशिष्यते"
+        children: "यस्त्विन्द्रियाणि मनसा नियम्यारभतेऽर्जुन |\nकर्मेन्द्रियैः कर्मयोगमसक्तः स विशिष्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -564,7 +569,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.8 — Do Your Prescribed Work"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः |\r\nशरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः"
+        children: "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः |\nशरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -583,7 +588,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.9 — The World Is Bound by Action, Except Sacrifice"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः |\r\nतदर्थं कर्म कौन्तेय मुक्तसङ्गः समाचर"
+        children: "यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः |\nतदर्थं कर्म कौन्तेय मुक्तसङ्गः समाचर"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -602,7 +607,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.10 — The Wheel of Creation"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सहयज्ञाः प्रजाः सृष्ट्वा पुरोवाच प्रजापतिः |\r\nअनेन प्रसविष्यध्वमेष वोऽस्त्विष्टकामधुक्"
+        children: "सहयज्ञाः प्रजाः सृष्ट्वा पुरोवाच प्रजापतिः |\nअनेन प्रसविष्यध्वमेष वोऽस्त्विष्टकामधुक्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -621,7 +626,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.11 — Nourish the Gods, and They Nourish You"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "देवान्भावयतानेन ते देवा भावयन्तु वः |\r\nपरस्परं भावयन्तः श्रेयः परमवाप्स्यथ"
+        children: "देवान्भावयतानेन ते देवा भावयन्तु वः |\nपरस्परं भावयन्तः श्रेयः परमवाप्स्यथ"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -640,7 +645,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.12 — The Thief Who Takes Without Giving"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "इष्टान्भोगान्हि वो देवा दास्यन्ते यज्ञभाविताः |\r\nतैर्दत्तानप्रदायैभ्यो यो भुङ्क्ते स्तेन एव सः"
+        children: "इष्टान्भोगान्हि वो देवा दास्यन्ते यज्ञभाविताः |\nतैर्दत्तानप्रदायैभ्यो यो भुङ्क्ते स्तेन एव सः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -659,7 +664,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.13 — Released From All Sins"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः |\r\nभुञ्जते ते त्वघं पापा ये पचन्त्यात्मकारणात्"
+        children: "यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः |\nभुञ्जते ते त्वघं पापा ये पचन्त्यात्मकारणात्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -678,7 +683,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.14 — From Food, Beings; From Sacrifice, Rain"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः |\r\nयज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः"
+        children: "अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः |\nयज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -697,7 +702,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.15 — Action Is Born of Brahman"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कर्म ब्रह्मोद्भवं विद्धि ब्रह्माक्षरसमुद्भवम् |\r\nतस्मात्सर्वगतं ब्रह्म नित्यं यज्ञे प्रतिष्ठितम्"
+        children: "कर्म ब्रह्मोद्भवं विद्धि ब्रह्माक्षरसमुद्भवम् |\nतस्मात्सर्वगतं ब्रह्म नित्यं यज्ञे प्रतिष्ठितम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -716,7 +721,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.16 — He Who Does Not Turn the Wheel Lives in Vain"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः |\r\nअघायुरिन्द्रियारामो मोघं पार्थ स जीवति"
+        children: "एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः |\nअघायुरिन्द्रियारामो मोघं पार्थ स जीवति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -735,7 +740,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.17 — The Man Who Is Satisfied in the Self"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यस्त्वात्मरतिरेव स्यादात्मतृप्तश्च मानवः |\r\nआत्मन्येव च सन्तुष्टस्तस्य कार्यं न विद्यते"
+        children: "यस्त्वात्मरतिरेव स्यादात्मतृप्तश्च मानवः |\nआत्मन्येव च सन्तुष्टस्तस्य कार्यं न विद्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -754,7 +759,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.18 — Nothing Done, Nothing Not Done"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नैव तस्य कृतेनार्थो नाकृतेनेह कश्चन |\r\nन चास्य सर्वभूतेषु कश्चिदर्थव्यपाश्रयः"
+        children: "नैव तस्य कृतेनार्थो नाकृतेनेह कश्चन |\nन चास्य सर्वभूतेषु कश्चिदर्थव्यपाश्रयः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -773,7 +778,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.19 — Action Performed Without Attachment"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तस्मादसक्तः सततं कार्यं कर्म समाचर |\r\nअसक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः"
+        children: "तस्मादसक्तः सततं कार्यं कर्म समाचर |\nअसक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -792,7 +797,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.20 — Janaka and the Holding Together of the World"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कर्मणैव हि संसिद्धिमास्थिता जनकादयः |\r\nलोकसंग्रहमेवापि सम्पश्यन्कर्तुमर्हसि"
+        children: "कर्मणैव हि संसिद्धिमास्थिता जनकादयः |\nलोकसंग्रहमेवापि सम्पश्यन्कर्तुमर्हसि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -811,7 +816,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.21 — As the Best Do, So Do Others"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः |\r\nस यत्प्रमाणं कुरुते लोकस्तदनुवर्तते"
+        children: "यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः |\nस यत्प्रमाणं कुरुते लोकस्तदनुवर्तते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -830,7 +835,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.22 — Nothing to Gain, Yet Still Acting"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न मे पार्थास्ति कर्तव्यं त्रिषु लोकेषु किञ्चन |\r\nनानवाप्तमवाप्तव्यं वर्त एव च कर्मणि"
+        children: "न मे पार्थास्ति कर्तव्यं त्रिषु लोकेषु किञ्चन |\nनानवाप्तमवाप्तव्यं वर्त एव च कर्मणि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -849,7 +854,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.23 — If I Ceased to Act"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यदि ह्यहं न वर्तेयं जातु कर्मण्यतन्द्रितः |\r\nमम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः"
+        children: "यदि ह्यहं न वर्तेयं जातु कर्मण्यतन्द्रितः |\nमम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -868,7 +873,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.24 — The Worlds Would Fall"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "उत्सीदेयुरिमे लोका न कुर्यां कर्म चेदहम् |\r\nसङ्करस्य च कर्ता स्यामुपहन्यामिमाः प्रजाः"
+        children: "उत्सीदेयुरिमे लोका न कुर्यां कर्म चेदहम् |\nसङ्करस्य च कर्ता स्यामुपहन्यामिमाः प्रजाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -887,7 +892,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.25 — As the Ignorant Act, the Wise Act Too"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सक्ताः कर्मण्यविद्वांसो यथा कुर्वन्ति भारत |\r\nकुर्याद्विद्वांस्तथासक्तश्चिकीर्षुर्लोकसंग्रहम्"
+        children: "सक्ताः कर्मण्यविद्वांसो यथा कुर्वन्ति भारत |\nकुर्याद्विद्वांस्तथासक्तश्चिकीर्षुर्लोकसंग्रहम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -906,7 +911,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.26 — Do Not Confuse the Ignorant"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न बुद्धिभेदं जनयेदज्ञानां कर्मसङ्गिनाम् |\r\nयोजयेत्सर्वकर्माणि विद्वान्युक्तः समाचरन्"
+        children: "न बुद्धिभेदं जनयेदज्ञानां कर्मसङ्गिनाम् |\nयोजयेत्सर्वकर्माणि विद्वान्युक्तः समाचरन्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -925,7 +930,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.27 — The Gunas Act, the Ego Claims"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः |\r\nअहङ्कारविमूढात्मा कर्ताहमिति मन्यते"
+        children: "प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः |\nअहङ्कारविमूढात्मा कर्ताहमिति मन्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -944,7 +949,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.28 — The Knower of the Gunas Does Not Get Attached"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तत्त्ववित्तु महाबाहो गुणकर्मविभागयोः |\r\nगुणा गुणेषु वर्तन्त इति मत्वा न सज्जते"
+        children: "तत्त्ववित्तु महाबाहो गुणकर्मविभागयोः |\nगुणा गुणेषु वर्तन्त इति मत्वा न सज्जते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -963,7 +968,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.29 — The Deluded Are Attached to the Gunas"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "प्रकृतेर्गुणसम्मूढाः सज्जन्ते गुणकर्मसु |\r\nतानकृत्स्नविदो मन्दान्कृत्स्नविन्न विचालयेत्"
+        children: "प्रकृतेर्गुणसम्मूढाः सज्जन्ते गुणकर्मसु |\nतानकृत्स्नविदो मन्दान्कृत्स्नविन्न विचालयेत्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -982,7 +987,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.30 — Surrender All Actions to Me"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा |\r\nनिराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः"
+        children: "मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा |\nनिराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1001,7 +1006,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.31 — Those Who Follow This Teaching"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ये मे मतमिदं नित्यमनुतिष्ठन्ति मानवाः |\r\nश्रद्धावन्तोऽनसूयन्तो मुच्यन्ते तेऽपि कर्मभिः"
+        children: "ये मे मतमिदं नित्यमनुतिष्ठन्ति मानवाः |\nश्रद्धावन्तोऽनसूयन्तो मुच्यन्ते तेऽपि कर्मभिः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1020,7 +1025,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.32 — Those Who Reject This Teaching"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ये त्वेतदभ्यसूयन्तो नानुतिष्ठन्ति मे मतम् |\r\nसर्वज्ञानविमूढांस्तान्विद्धि नष्टानचेतसः"
+        children: "ये त्वेतदभ्यसूयन्तो नानुतिष्ठन्ति मे मतम् |\nसर्वज्ञानविमूढांस्तान्विद्धि नष्टानचेतसः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1039,7 +1044,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.33 — Even the Wise Act According to Their Nature"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सदृशं चेष्टते स्वस्याः प्रकृतेर्ज्ञानवानपि |\r\nप्रकृतिं यान्ति भूतानि निग्रहः किं करिष्यति"
+        children: "सदृशं चेष्टते स्वस्याः प्रकृतेर्ज्ञानवानपि |\nप्रकृतिं यान्ति भूतानि निग्रहः किं करिष्यति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1058,7 +1063,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.34 — Attraction and Repulsion, the Two Enemies"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "इन्द्रियस्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ |\r\nतयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ"
+        children: "इन्द्रियस्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ |\nतयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1077,7 +1082,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.35 — One's Own Dharma, Though Imperfect"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् |\r\nस्वधर्मे निधनं श्रेयः परधर्मो भयावहः"
+        children: "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् |\nस्वधर्मे निधनं श्रेयः परधर्मो भयावहः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1096,7 +1101,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.36 — What Drives a Man to Sin?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nअथ केन प्रयुक्तोऽयं पापं चरति पूरुषः |\r\nअनिच्छन्नपि वार्ष्णेय बलादिव नियोजितः"
+        children: "अर्जुन उवाच |\nअथ केन प्रयुक्तोऽयं पापं चरति पूरुषः |\nअनिच्छन्नपि वार्ष्णेय बलादिव नियोजितः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1115,7 +1120,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.37 — Desire and Anger, the All-Devouring Enemy"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nकाम एष क्रोध एष रजोगुणसमुद्भवः |\r\nमहाशनो महापाप्मा विद्ध्येनमिह वैरिणम्"
+        children: "श्रीभगवानुवाच |\nकाम एष क्रोध एष रजोगुणसमुद्भवः |\nमहाशनो महापाप्मा विद्ध्येनमिह वैरिणम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1134,7 +1139,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.38 — Smoke, Mirror, Womb: The Three Covers"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "धूमेनाव्रियते वह्निर्यथादर्शो मलेन च |\r\nयथोल्बेनावृतो गर्भस्तथा तेनेदमावृतम्"
+        children: "धूमेनाव्रियते वह्निर्यथादर्शो मलेन च |\nयथोल्बेनावृतो गर्भस्तथा तेनेदमावृतम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1153,7 +1158,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.39 — The Eternal Enemy in the Form of Desire"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आवृतं ज्ञानमेतेन ज्ञानिनो नित्यवैरिणा |\r\nकामरूपेण कौन्तेय दुष्पूरेणानलेन च"
+        children: "आवृतं ज्ञानमेतेन ज्ञानिनो नित्यवैरिणा |\nकामरूपेण कौन्तेय दुष्पूरेणानलेन च"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1172,7 +1177,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.40 — The Seat of the Enemy"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "इन्द्रियाणि मनो बुद्धिरस्याधिष्ठानमुच्यते |\r\nएतैर्विमोहयत्येष ज्ञानमावृत्य देहिनम्"
+        children: "इन्द्रियाणि मनो बुद्धिरस्याधिष्ठानमुच्यते |\nएतैर्विमोहयत्येष ज्ञानमावृत्य देहिनम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1191,7 +1196,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.41 — Slay the Sinner, Source of All Ill"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तस्मात्त्वमिन्द्रियाण्यादौ नियम्य भरतर्षभ |\r\nपाप्मानं प्रजहि ह्येनं ज्ञानविज्ञाननाशनम्"
+        children: "तस्मात्त्वमिन्द्रियाण्यादौ नियम्य भरतर्षभ |\nपाप्मानं प्रजहि ह्येनं ज्ञानविज्ञाननाशनम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1210,7 +1215,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.42 — The Ladder: Senses, Mind, Intellect, and Beyond"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः |\r\nमनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः"
+        children: "इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः |\nमनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1229,7 +1234,7 @@ function _createMdxContent(props) {
       children: "Shloka 3.43 — Knowing That Beyond the Intellect"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "एवं बुद्धेः परं बुद्ध्वा संस्तभ्यात्मानमात्मना |\r\nजघन्यं शत्रुं महावाहो कामरूपं दुरासदम्"
+        children: "एवं बुद्धेः परं बुद्ध्वा संस्तभ्यात्मानमात्मना |\nजघन्यं शत्रुं महावाहो कामरूपं दुरासदम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1308,13 +1313,101 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Self-Determination Theory and the Yajna Cycle"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Krishna's argument for action maps directly onto ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Self-Determination Theory"
+        }), " (Deci & Ryan, 1985): human motivation thrives when three needs are met — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "autonomy"
+        }), " (acting from one's own nature), ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "competence"
+        }), " (acting skillfully), and ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "relatedness"
+        }), " (acting for the whole). The Gita's yajna cycle (3.10–3.15) is a model of relatedness: action feeds the whole, the whole feeds you. The \"greedy thief\" (3.12) violates all three — no autonomy (driven by desire), no competence (grasping without skill), no relatedness (taking without giving)."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "No one can avoid action (3.5)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Activity is a biological imperative (Ryan & Deci)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Even \"inaction\" is an action — the brain consumes 20% of energy doing nothing. The gunas drive action as必然 as gravity drives falling"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The hypocrite (3.6)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Cognitive dissonance (Festinger, 1957)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Body still + mind churning = maximum dissonance. The mind rebels against the restraint, producing exactly the opposite of peace"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Lokasangraha (3.20–3.25)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Prosocial motivation (Batson, 2011)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Acting for the whole activates the brain's reward centres more powerfully than acting for self — the \"helper's high\" is neurological"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The gunas act, ego claims (3.27)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Libet experiment (1983)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Brain activity precedes conscious decision by 300–500ms — the \"doer\" arrives after the act has already begun. The Gita's insight is empirically validated"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Desire and anger as one enemy (3.37)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Dual-process theory: System 1 hijack"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Desire and anger are the same reward-prediction system (dopaminergic pathways) — anger is blocked desire. They share neural circuitry"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The ladder of 3.42"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Hierarchical processing (Mesulam, 1998)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The brain processes stimuli in layers: sensory cortex → association cortex → prefrontal cortex → meta-awareness. The Gita's ladder mirrors the brain's architecture"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " For one day, track every moment when you acted against your own better judgment. Don't judge — just count. This is the hypocrite's territory (3.6). Then, for the next day, track every moment when you acted ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "for"
+        }), " something larger than yourself — helping a colleague, writing clean code for the next team. Notice which day felt more alive. The Gita's claim: the second day aligns with the yajna cycle and produces energy rather than draining it."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The ladder of 3.42 (senses → mind → intellect → Self) appears in Chapter 2 as the portrait of the sthitaprajna (2.54–2.72) and in Chapter 13 as the field-knower distinction. The same map is drawn three times — as aspiration (ch2), as action plan (ch3), and as ontology (ch13)."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"Arjuna's question: why push me into action if knowledge is higher 3.1-3.2\"]\r\n    B[\"The two-fold path: jnana for the contemplative, karma for the active 3.3\"]\r\n    C[\"No one escapes action; the hypocrite sits still and dreams 3.5-3.6\"]\r\n    D[\"The wheel of sacrifice: beings, food, rain, action, the Imperishable 3.10-3.15\"]\r\n    E[\"Lokasangraha: the wise act to hold the world together 3.20-3.26\"]\r\n    F[\"The gunas act; the ego claims; surrender all actions without fever 3.27-3.30\"]\r\n    G[\"Desire and anger: the all-devouring enemy in the three seats 3.37-3.40\"]\r\n    H[\"The ladder: senses, mind, intellect, and the Self beyond 3.42\"]\r\n    I[\"Slay desire from the height of the witness 3.43\"]\r\n    style D fill:#4446e8,color:#fff\r\n    style I fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"Arjuna's question: why push me into action if knowledge is higher 3.1-3.2\"]\n    B[\"The two-fold path: jnana for the contemplative, karma for the active 3.3\"]\n    C[\"No one escapes action; the hypocrite sits still and dreams 3.5-3.6\"]\n    D[\"The wheel of sacrifice: beings, food, rain, action, the Imperishable 3.10-3.15\"]\n    E[\"Lokasangraha: the wise act to hold the world together 3.20-3.26\"]\n    F[\"The gunas act; the ego claims; surrender all actions without fever 3.27-3.30\"]\n    G[\"Desire and anger: the all-devouring enemy in the three seats 3.37-3.40\"]\n    H[\"The ladder: senses, mind, intellect, and the Self beyond 3.42\"]\n    I[\"Slay desire from the height of the witness 3.43\"]\n    style D fill:#4446e8,color:#fff\n    style I fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -1322,7 +1415,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root[Karma Yoga: Action Without Attachment]\r\n    The riddle\r\n      Knowledge versus action\r\n      No one escapes action\r\n      The hypocrite with the stilled body\r\n    The wheel of sacrifice\r\n      Beings from food, food from rain\r\n      Rain from sacrifice, sacrifice from action\r\n      The thief who takes without giving\r\n      The cow of plenty\r\n    Lokasangraha\r\n      Janaka attained through action\r\n      The example of the best\r\n      The worlds would fall without action\r\n    The surrender\r\n      The gunas act, the ego claims\r\n      Offer all actions to the whole\r\n      Without hope, without mine, without fever\r\n    The inner enemy\r\n      Desire and anger born of rajas\r\n      Fire, smoke, mirror, womb\r\n      The three seats: senses, mind, intellect\r\n      The ladder and the Self beyond\n"
+        children: "mindmap\n  root[Karma Yoga: Action Without Attachment]\n    The riddle\n      Knowledge versus action\n      No one escapes action\n      The hypocrite with the stilled body\n    The wheel of sacrifice\n      Beings from food, food from rain\n      Rain from sacrifice, sacrifice from action\n      The thief who takes without giving\n      The cow of plenty\n    Lokasangraha\n      Janaka attained through action\n      The example of the best\n      The worlds would fall without action\n    The surrender\n      The gunas act, the ego claims\n      Offer all actions to the whole\n      Without hope, without mine, without fever\n    The inner enemy\n      Desire and anger born of rajas\n      Fire, smoke, mirror, womb\n      The three seats: senses, mind, intellect\n      The ladder and the Self beyond\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1391,17 +1484,17 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q2. What does Krishna call the man who restrains his organs of action while his mind dwells on sense objects?"
+        children: "Q2. Krishna calls the man who restrains his body while his mind dwells on objects a \"hypocrite\" (3.6). How does this map onto modern psychology?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. A sage"
+        children: "a. It maps onto social anxiety — fear of others' judgment"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. A renouncer"
+        children: "b. It maps onto cognitive dissonance — the conflict between outward behavior and inner state produces exactly the opposite of peace"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. A hypocrite"
+        children: "c. It maps onto depression — the body's refusal to move"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. A yogi"
+        children: "d. It maps onto flow states — the body is still while the mind is absorbed"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1410,22 +1503,22 @@ function _createMdxContent(props) {
         children: "Show Answer"
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: c."
-        }), " Mithyacara — a counterfeit — because suppression is not renunciation; the mind carries the bazaar inside it."]
+          children: "Answer: b."
+        }), " Festinger's cognitive dissonance theory (1957) shows that suppressing a behavior while the impulse remains creates psychological tension greater than either acting or genuinely renouncing. The Gita's \"hypocrite\" is the person who creates maximum internal friction by restraining the body without restraining the mind. The solution (3.7) is to act with the mind restrained — resolving the dissonance through integrated action."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q3. According to shloka 3.12, what is the man who enjoys what is given without offering back to the whole?"
+        children: "Q3. According to 3.12, the man who takes from the whole without giving back is a \"thief.\" How does this principle apply to a modern engineer's relationship with open-source software?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. A miser"
+        children: "a. Using open-source without contributing back is literally theft"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. A thief"
+        children: "b. It is not theft but it is a missed opportunity for the yajna cycle — contributing back (code, docs, bug reports) completes the cycle and generates energy"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. An ascetic"
+        children: "c. Open-source is irrelevant to the Gita's teaching"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. A renouncer"
+        children: "d. The Gita opposes all technology"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1435,7 +1528,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        }), " Stena — a thief — because he takes from the whole without returning the gift of existence."]
+        }), " The Gita's \"thief\" is not a legal category but a description of broken reciprocity (3.12 commentary). The yajna cycle — mutual nourishment — applies to open-source: the project nourishes you; contributing back nourishes the project. The engineer who takes without giving breaks the wheel. The one who contributes — even small fixes — keeps the cycle alive and receives the \"helper's high\" that prosocial behavior generates."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
@@ -1526,13 +1619,34 @@ function _createMdxContent(props) {
           children: "TypeScript exercise:"
         }), " Extend the Desire Logger — add a \"sacrifice score\" for each day (3.9–3.13): count acts done for the whole versus acts done for the ego alone, and report the daily ratio."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The yajna cycle in code:"
+        }), " Every time you write documentation, contribute to open-source, or mentor a junior, you complete the yajna cycle (3.10–3.15). The project nourishes you; you nourish the project. Breaking this cycle is what the Gita calls theft (3.12)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Lokasangraha in team leadership:"
+        }), " Leading a team is lokasangraha — the holding together of the world (3.20). The team functions because you act, and your action holds the fabric. When you withdraw, the web frays."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The gunas in code review:"
+        }), " When you review code and feel \"I am the expert\" — that is the ego claiming authorship (3.27). The gunas of the codebase (its patterns, its debts, its architecture) produced the code; you are the instrument of correction, not the author of judgment."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The ladder of 3.42 in debugging:"
+        }), " When a bug triggers frustration (senses), trace it upward: the thought about the bug (mind), the analysis of the bug (intellect), and the awareness that watches all three (Self). The Self does not get frustrated; it observes frustration."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-desire-logger",
       children: "TypeScript Tool: Desire Logger"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Desire Logger\r\n * Based on Karma Yoga (Gita 3.37, 3.40, 3.42): the inner enemy\r\n * is desire, seated in the senses, the mind and the intellect.\r\n * The ladder of ascent climbs to the Self beyond the intellect.\r\n * This tool logs desires as they arise and tracks at which\r\n * level of the ladder you caught them.\r\n */\r\n\r\ntype Seat = 'senses' | 'mind' | 'intellect' | 'witness';\r\n\r\ninterface DesireEvent {\r\n  date: string;\r\n  desire: string;\r\n  seat: Seat;        // where you first noticed it\r\n  followed: boolean; // did you act on it?\r\n  caught: boolean;   // did awareness catch it before action?\r\n}\r\n\r\ninterface DesireStats {\r\n  total: number;\r\n  bySeat: Record<Seat, number>;\r\n  followedCount: number;\r\n  caughtCount: number;\r\n  catchRate: number;\r\n  witnessCount: number;\r\n}\r\n\r\ninterface DesireReport {\r\n  stats: DesireStats;\r\n  ladderProgress: string;\r\n  verdict: string;\r\n}\r\n\r\nconst SEATS: Seat[] = ['senses', 'mind', 'intellect', 'witness'];\r\n\r\nfunction analyze(events: DesireEvent[]): DesireReport {\r\n  const total = events.length;\r\n  const bySeat: Record<Seat, number> = { senses: 0, mind: 0, intellect: 0, witness: 0 };\r\n  events.forEach((e) => bySeat[e.seat]++);\r\n  const followedCount = events.filter((e) => e.followed).length;\r\n  const caughtCount = events.filter((e) => e.caught).length;\r\n  const witnessCount = events.filter((e) => e.seat === 'witness').length;\r\n  const catchRate = total === 0 ? 0 : Math.round((caughtCount / total) * 100);\r\n\r\n  let verdict: string;\r\n  if (witnessCount > 0 && catchRate >= 70) {\r\n    verdict = 'The witness is awake: desires are caught at the highest rung. The enemy loses its strength.';\r\n  } else if (catchRate >= 50) {\r\n    verdict = 'The ladder is being climbed: most desires are caught before action. Keep ascending.';\r\n  } else {\r\n    verdict = 'Desires are still reaching the hands. Return to 3.42 and practise the climb: senses, mind, intellect, witness.';\r\n  }\r\n\r\n  const ladderProgress = bySeat.senses > bySeat.mind && bySeat.mind > bySeat.intellect\r\n    ? 'Desires are seen earliest at the senses and latest at the intellect — the normal descending order.'\r\n    : 'The seat of first noticing is shifting upward — awareness is taking the higher rungs.';\r\n\r\n  return {\r\n    stats: { total, bySeat, followedCount, caughtCount, catchRate, witnessCount },\r\n    ladderProgress,\r\n    verdict\r\n  };\r\n}\r\n\r\nconst day: DesireEvent[] = [\r\n  { date: '2026-08-18', desire: 'sugar', seat: 'senses', followed: false, caught: true },\r\n  { date: '2026-08-18', desire: 'revenge on a rude email', seat: 'mind', followed: false, caught: true },\r\n  { date: '2026-08-18', desire: 'praise from the manager', seat: 'intellect', followed: false, caught: false },\r\n  { date: '2026-08-19', desire: 'one more episode', seat: 'senses', followed: true, caught: false },\r\n  { date: '2026-08-19', desire: 'being seen as generous', seat: 'witness', followed: false, caught: true }\r\n];\r\n\r\nconst report = analyze(day);\r\nconsole.log('=== Desire Logger ===');\r\nconsole.log(`Desires logged: ${report.stats.total}`);\r\nconsole.log(`By seat: senses ${report.stats.bySeat.senses}, mind ${report.stats.bySeat.mind}, intellect ${report.stats.bySeat.intellect}, witness ${report.stats.bySeat.witness}`);\r\nconsole.log(`Followed: ${report.stats.followedCount} | Caught: ${report.stats.caughtCount} | Catch rate: ${report.stats.catchRate}%`);\r\nconsole.log(`Ladder: ${report.ladderProgress}`);\r\nconsole.log(`Verdict: ${report.verdict}`);\n"
+        children: "/**\n * Desire Logger — SDT-Based Action Profiler\n * Based on Karma Yoga (Gita 3.37, 3.40, 3.42) and\n * Self-Determination Theory (Deci & Ryan, 1985):\n * motivation thrives when autonomy, competence, and\n * relatedness are met. The Gita's yajna cycle is a\n * model of relatedness; the hypocrite (3.6) violates\n * all three needs.\n *\n * Tracks: desires, the seat they arise in (3.42 ladder),\n * whether they were acted on, and whether the action\n * met SDT needs.\n *\n * Run: npx ts-node desire-logger.ts\n */\n\ntype Seat = 'senses' | 'mind' | 'intellect' | 'witness';\n\ninterface DesireEvent {\n  date: string;\n  desire: string;\n  seat: Seat;\n  followed: boolean;\n  caught: boolean;\n  sdtNeeds: {\n    autonomy: boolean;    // acted from own nature?\n    competence: boolean;  // acted skillfully?\n    relatedness: boolean; // acted for the whole?\n  };\n}\n\ninterface DesireStats {\n  total: number;\n  bySeat: Record<Seat, number>;\n  followedCount: number;\n  caughtCount: number;\n  catchRate: number;\n  witnessCount: number;\n  sdtScore: { autonomy: number; competence: number; relatedness: number; overall: number };\n}\n\ninterface DesireReport {\n  stats: DesireStats;\n  ladderProgress: string;\n  sacrificeScore: number;  // acts for the whole vs acts for ego\n  verdict: string;\n}\n\nfunction analyze(events: DesireEvent[]): DesireReport {\n  const total = events.length;\n  const bySeat: Record<Seat, number> = { senses: 0, mind: 0, intellect: 0, witness: 0 };\n  events.forEach((e) => bySeat[e.seat]++);\n\n  const followedCount = events.filter((e) => e.followed).length;\n  const caughtCount = events.filter((e) => e.caught).length;\n  const witnessCount = events.filter((e) => e.seat === 'witness').length;\n  const catchRate = total === 0 ? 0 : Math.round((caughtCount / total) * 100);\n\n  // SDT scoring\n  const autonomy = events.filter((e) => e.sdtNeeds.autonomy).length;\n  const competence = events.filter((e) => e.sdtNeeds.competence).length;\n  const relatedness = events.filter((e) => e.sdtNeeds.relatedness).length;\n  const sdtScore = {\n    autonomy: Math.round((autonomy / total) * 100),\n    competence: Math.round((competence / total) * 100),\n    relatedness: Math.round((relatedness / total) * 100),\n    overall: Math.round(((autonomy + competence + relatedness) / (total * 3)) * 100)\n  };\n\n  // Sacrifice score: acts for the whole (relatedness) vs ego alone\n  const sacrificeScore = total === 0 ? 0 : Math.round((relatedness / total) * 100);\n\n  let verdict: string;\n  if (witnessCount > 0 && catchRate >= 70 && sdtScore.overall >= 70) {\n    verdict = 'The witness is awake, desires are caught early, and action meets all three SDT needs. The yajna cycle is complete. (3.9, 3.30)';\n  } else if (catchRate >= 50) {\n    verdict = 'The ladder is being climbed: most desires are caught before action. Increase relatedness — act for the whole more often. (3.20)';\n  } else {\n    verdict = 'Desires are still reaching the hands. Return to 3.42 and practise the climb: senses, mind, intellect, witness.';\n  }\n\n  const ladderProgress = bySeat.senses > bySeat.mind && bySeat.mind > bySeat.intellect\n    ? 'Normal descending order: desires seen earliest at senses, latest at intellect.'\n    : 'The seat of first noticing is shifting upward — awareness is climbing the ladder.';\n\n  return {\n    stats: { total, bySeat, followedCount, caughtCount, catchRate, witnessCount, sdtScore },\n    ladderProgress,\n    sacrificeScore,\n    verdict\n  };\n}\n\nconst week: DesireEvent[] = [\n  { date: '2026-08-18', desire: 'sugar craving', seat: 'senses', followed: false, caught: true, sdtNeeds: { autonomy: true, competence: true, relatedness: false } },\n  { date: '2026-08-18', desire: 'revenge on rude email', seat: 'mind', followed: false, caught: true, sdtNeeds: { autonomy: true, competence: true, relatedness: true } },\n  { date: '2026-08-18', desire: 'praise from manager', seat: 'intellect', followed: false, caught: false, sdtNeeds: { autonomy: false, competence: true, relatedness: false } },\n  { date: '2026-08-19', desire: 'one more episode', seat: 'senses', followed: true, caught: false, sdtNeeds: { autonomy: false, competence: false, relatedness: false } },\n  { date: '2026-08-19', desire: 'being seen as generous', seat: 'witness', followed: false, caught: true, sdtNeeds: { autonomy: true, competence: true, relatedness: true } },\n  { date: '2026-08-20', desire: 'skip meeting to code', seat: 'mind', followed: false, caught: true, sdtNeeds: { autonomy: true, competence: true, relatedness: false } },\n  { date: '2026-08-20', desire: 'help junior debug', seat: 'witness', followed: true, caught: true, sdtNeeds: { autonomy: true, competence: true, relatedness: true } }\n];\n\nconst report = analyze(week);\n\nconsole.log('=== Desire Logger (SDT Edition) ===');\nconsole.log(`Desires: ${report.stats.total} | Catch rate: ${report.stats.catchRate}%`);\nconsole.log(`By seat: senses ${report.stats.bySeat.senses}, mind ${report.stats.bySeat.mind}, intellect ${report.stats.bySeat.intellect}, witness ${report.stats.bySeat.witness}`);\nconsole.log(`SDT: autonomy ${report.stats.sdtScore.autonomy}% | competence ${report.stats.sdtScore.competence}% | relatedness ${report.stats.sdtScore.relatedness}% | overall ${report.stats.sdtScore.overall}%`);\nconsole.log(`Sacrifice score: ${report.sacrificeScore}% (acts for the whole)`);\nconsole.log(`Ladder: ${report.ladderProgress}`);\nconsole.log(`Verdict: ${report.verdict}`);\n"
       })
     })]
   });

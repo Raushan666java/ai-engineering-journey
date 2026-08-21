@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-index-md-c98.json
-const site_docs_courses_bhagavad_gita_index_md_c98_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/index","title":"The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan","description":"\\"The Gita is not a book — it is a battlefield. And inside every seeker there is an Arjuna who is ready to ask the question.\\"","source":"@site/docs/courses/bhagavad-gita/index.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita","permalink":"/ai-engineering-journey/bhagavad-gita","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"id":"index","slug":"/bhagavad-gita","title":"The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan","sidebar_label":"The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan","sidebar_position":1},"sidebar":"course-bhagavad-gita","next":{"title":"Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior","permalink":"/ai-engineering-journey/bhagavad-gita/01-vishada-yoga"}}');
+const site_docs_courses_bhagavad_gita_index_md_c98_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/index","title":"The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan","description":"\\"The Gita is not a book — it is a battlefield. And inside every seeker there is an Arjuna who is ready to ask the question.\\"","source":"@site/docs/courses/bhagavad-gita/index.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita","permalink":"/ai-engineering-journey/bhagavad-gita","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":19,"frontMatter":{"id":"index","slug":"/bhagavad-gita","title":"The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan","sidebar_label":"The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan","sidebar_position":19},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 18: Moksha Sanyasa Yoga — Drop the doer, keep the work, and freedom finds you","permalink":"/ai-engineering-journey/bhagavad-gita/18-moksha-sanyasa-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita',
 	title: 'The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan',
 	sidebar_label: 'The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan',
-	sidebar_position: 1
+	sidebar_position: 19
 };
 const contentTitle = 'The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan';
 
@@ -134,7 +134,7 @@ function _createMdxContent(props) {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "\"The Gita is not a book — it is a battlefield. And inside every seeker there is an Arjuna who is ready to ask the question.\""
-        }), "\r\n— The Osho Way"]
+        }), "\n— The Osho Way"]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "The Gita is 701 verses, and this course gives you every one of them — complete Devanagari text, IAST transliteration, an original English translation, and an Osho-style darshan for each shloka. No key verses, no selections, no shortcuts: the entire scripture, verse by verse, through the lens that Osho opened — the Gita as a manual for inner transformation rather than a theology to be believed."
@@ -636,7 +636,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"Chapter 1: Arjuna's crisis\"] --> B[\"Chapters 2-6: Karma Yoga\"]\r\n    B --> C[\"Action without attachment\"]\r\n    C --> D[\"Chapters 7-12: Bhakti Yoga\"]\r\n    D --> E[\"Love becomes the path\"]\r\n    E --> F[\"Chapters 13-18: Jnana Yoga\"]\r\n    F --> G[\"Awareness completes the circle\"]\r\n    G --> H[\"Chapter 18: Surrender — the Gita lets go of itself\"]\r\n    style A fill:#4446e8,color:#fff\r\n    style H fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"Chapter 1: Arjuna's crisis\"] --> B[\"Chapters 2-6: Karma Yoga\"]\n    B --> C[\"Action without attachment\"]\n    C --> D[\"Chapters 7-12: Bhakti Yoga\"]\n    D --> E[\"Love becomes the path\"]\n    E --> F[\"Chapters 13-18: Jnana Yoga\"]\n    F --> G[\"Awareness completes the circle\"]\n    G --> H[\"Chapter 18: Surrender — the Gita lets go of itself\"]\n    style A fill:#4446e8,color:#fff\n    style H fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "The Gita is one teaching with three faces:"
@@ -659,7 +659,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root((The Complete Gita))\r\n    Karma — Chapters 1-6\r\n      Crisis as the door\r\n      Action without attachment\r\n      Renunciation within action\r\n      Meditation as practice\r\n    Bhakti — Chapters 7-12\r\n      The royal secret\r\n      The cosmic vision\r\n      Love as the shortest path\r\n    Jnana — Chapters 13-18\r\n      Field and knower\r\n      The three gunas\r\n      The supreme person\r\n      Liberation and surrender\n"
+        children: "mindmap\n  root((The Complete Gita))\n    Karma — Chapters 1-6\n      Crisis as the door\n      Action without attachment\n      Renunciation within action\n      Meditation as practice\n    Bhakti — Chapters 7-12\n      The royal secret\n      The cosmic vision\n      Love as the shortest path\n    Jnana — Chapters 13-18\n      Field and knower\n      The three gunas\n      The supreme person\n      Liberation and surrender\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "how-each-chapter-is-built",

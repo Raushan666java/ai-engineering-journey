@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-01-vishada-yoga-md-48e.json
-const site_docs_courses_bhagavad_gita_01_vishada_yoga_md_48e_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/01-vishada-yoga","title":"Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior","description":"\\"The bow falls from the greatest warrior\'s hand — and that falling is the first step of the whole Gita.\\"","source":"@site/docs/courses/bhagavad-gita/01-vishada-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/01-vishada-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/01-vishada-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"id":"01-vishada-yoga","slug":"/bhagavad-gita/01-vishada-yoga","title":"Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior","sidebar_label":"Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior","sidebar_position":2},"sidebar":"course-bhagavad-gita","previous":{"title":"The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan","permalink":"/ai-engineering-journey/bhagavad-gita"},"next":{"title":"Chapter 2: Sankhya Yoga — The Wisdom of the Seer","permalink":"/ai-engineering-journey/bhagavad-gita/02-sankhya-yoga"}}');
+const site_docs_courses_bhagavad_gita_01_vishada_yoga_md_48e_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/01-vishada-yoga","title":"Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior","description":"\\"The bow falls from the greatest warrior\'s hand — and that falling is the first step of the whole Gita.\\"","source":"@site/docs/courses/bhagavad-gita/01-vishada-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/01-vishada-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/01-vishada-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"id":"01-vishada-yoga","slug":"/bhagavad-gita/01-vishada-yoga","title":"Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior","sidebar_label":"Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior","sidebar_position":1},"sidebar":"course-bhagavad-gita","next":{"title":"Chapter 2: Sankhya Yoga — The Wisdom of the Seer","permalink":"/ai-engineering-journey/bhagavad-gita/02-sankhya-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/01-vishada-yoga',
 	title: 'Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior',
 	sidebar_label: 'Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior',
-	sidebar_position: 2
+	sidebar_position: 1
 };
 const contentTitle = 'Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior';
 
@@ -290,8 +290,12 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
-  "value": "TypeScript Tool: Bow-Drop Detector",
-  "id": "typescript-tool-bow-drop-detector",
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
+  "value": "TypeScript Tool: Crisis Intensity Scorer",
+  "id": "typescript-tool-crisis-intensity-scorer",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -328,7 +332,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"The bow falls from the greatest warrior's hand — and that falling is the first step of the whole Gita.\"\r\n— The Osho Way"
+        children: "\"The bow falls from the greatest warrior's hand — and that falling is the first step of the whole Gita.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "This is not a chapter about war. It is a chapter about what happens inside a man when everything he believed in stands up in front of him and says: look at me. Arjuna, the greatest archer of his age, arrives at Kurukshetra with his brothers, his teachers, his uncles, his grandfather — and then he cannot lift his bow. His body trembles, his mouth dries, his skin burns, and the Gandiva slips from his hand. Before a single arrow is shot, the battlefield has already claimed its first casualty: Arjuna's sense of who he is."
@@ -477,7 +481,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.1 — The Blind King's Question"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "धृतराष्ट्र उवाच |\r\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः |\r\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय"
+        children: "धृतराष्ट्र उवाच |\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः |\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -496,7 +500,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.2 — The First Report"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सञ्जय उवाच |\r\nदृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा |\r\nआचार्यमुपसंगम्य राजा वचनमब्रवीत्"
+        children: "सञ्जय उवाच |\nदृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा |\nआचार्यमुपसंगम्य राजा वचनमब्रवीत्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -515,7 +519,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.3 — The Disciple's Army"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् |\r\nव्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता"
+        children: "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् |\nव्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -534,7 +538,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.4 — The Heroes of the Pandava Side"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि |\r\nयुयुधानो विराटश्च द्रुपदश्च महारथः"
+        children: "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि |\nयुयुधानो विराटश्च द्रुपदश्च महारथः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -553,7 +557,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.5 — More Names of the Enemy"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् |\r\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुंगवः"
+        children: "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् |\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुंगवः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -572,7 +576,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.6 — The Great Chariot Warriors"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् |\r\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः"
+        children: "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् |\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -591,7 +595,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.7 — The Count on Our Side"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम |\r\nनायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते"
+        children: "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम |\nनायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -610,7 +614,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.8 — The Grandsire and the Teachers"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः |\r\nअश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च"
+        children: "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः |\nअश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -629,7 +633,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.9 — Many Others, Ready to Die"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः |\r\nनानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः"
+        children: "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः |\nनानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -648,7 +652,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.10 — The Limit of Strength"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम् |\r\nपर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्"
+        children: "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम् |\nपर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -667,7 +671,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.11 — Protect Bhishma Alone"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अयनेषु च सर्वेषु यथाभागमवस्थिताः |\r\nभीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि"
+        children: "अयनेषु च सर्वेषु यथाभागमवस्थिताः |\nभीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -686,7 +690,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.12 — The Lion's Roar"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तस्य सञ्जनयन्हर्षं कुरुवृद्धः पितामहः |\r\nसिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान् |"
+        children: "तस्य सञ्जनयन्हर्षं कुरुवृद्धः पितामहः |\nसिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान् |"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -705,7 +709,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.13 — The Tumultuous Sound"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः |\r\nसहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत्"
+        children: "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः |\nसहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -724,7 +728,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.14 — The White Horses and the Divine Conches"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ |\r\nमाधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः"
+        children: "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ |\nमाधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -743,7 +747,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.15 — Panchajanya, Devadatta, and Paundra"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "पाञ्चजन्यं हृषीकेशो देवदत्तं धनञ्जयः |\r\nपौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः"
+        children: "पाञ्चजन्यं हृषीकेशो देवदत्तं धनञ्जयः |\nपौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -762,7 +766,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.16 — The King's Anantavijaya"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः |\r\nनकुलः सहदेवश्च सुघोषमणिपुष्पकौ"
+        children: "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः |\nनकुलः सहदेवश्च सुघोषमणिपुष्पकौ"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -781,7 +785,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.17 — The Unconquered Satyaki"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "काश्यश्च परमेष्वासः शिखण्डी च महारथः |\r\nधृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः"
+        children: "काश्यश्च परमेष्वासः शिखण्डी च महारथः |\nधृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -800,7 +804,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.18 — The Blowing of the Pandava Conches"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते |\r\nसौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक्"
+        children: "द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते |\nसौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -819,7 +823,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.19 — The Sound That Rent Hearts"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत् |\r\nनभश्च पृथिवीं चैव तुमुलोऽभ्यनुनादयन् (or लोव्यनु)"
+        children: "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत् |\nनभश्च पृथिवीं चैव तुमुलोऽभ्यनुनादयन् (or लोव्यनु)"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -838,7 +842,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.20 — The Bow Is Raised"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अथ व्यवस्थितान्दृष्ट्वा धार्तराष्ट्रान् कपिध्वजः |\r\nप्रवृत्ते शस्त्रसम्पाते धनुरुद्यम्य पाण्डवः |\r\nहृषीकेशं तदा वाक्यमिदमाह महीपते"
+        children: "अथ व्यवस्थितान्दृष्ट्वा धार्तराष्ट्रान् कपिध्वजः |\nप्रवृत्ते शस्त्रसम्पाते धनुरुद्यम्य पाण्डवः |\nहृषीकेशं तदा वाक्यमिदमाह महीपते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -857,7 +861,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.21 — Place the Chariot Between the Armies"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अर्जुन उवाच |\r\nसेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत"
+        children: "अर्जुन उवाच |\nसेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -876,7 +880,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.22 — Let Me See"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान् |\r\nकैर्मया सह योद्धव्यमस्मिन् रणसमुद्यमे"
+        children: "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान् |\nकैर्मया सह योद्धव्यमस्मिन् रणसमुद्यमे"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -895,7 +899,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.23 — Those Who Please the Evil-Minded"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः |\r\nधार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः"
+        children: "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः |\nधार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -914,7 +918,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.24 — The Chariot Is Placed"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सञ्जय उवाच |\r\nएवमुक्तो हृषीकेशो गुडाकेशेन भारत |\r\nसेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम्"
+        children: "सञ्जय उवाच |\nएवमुक्तो हृषीकेशो गुडाकेशेन भारत |\nसेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -933,7 +937,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.25 — Behold the Kurus Gathered"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम् |\r\nउवाच पार्थ पश्यैतान्समवेतान्कुरूनिति"
+        children: "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम् |\nउवाच पार्थ पश्यैतान्समवेतान्कुरूनिति"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -952,7 +956,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.26 — Fathers, Grandfathers, Teachers"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तत्रापश्यत्स्थितान्पार्थः पितॄनथ पितामहान् |\r\nआचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा"
+        children: "तत्रापश्यत्स्थितान्पार्थः पितॄनथ पितामहान् |\nआचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -971,7 +975,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.27 — Filled with Deep Pity"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि |\r\nतान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्"
+        children: "श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि |\nतान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -990,7 +994,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.28 — Arjuna Speaks in Sorrow"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कृपया परयाविष्टो विषीदन्निदमब्रवीत् |\r\nअर्जुन उवाच |\r\nदृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्"
+        children: "कृपया परयाविष्टो विषीदन्निदमब्रवीत् |\nअर्जुन उवाच |\nदृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1009,7 +1013,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.29 — The Body Speaks First"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सीदन्ति मम गात्राणि मुखं च परिशुष्यति |\r\nवेपथुश्च शरीरे मे रोमहर्षश्च जायते"
+        children: "सीदन्ति मम गात्राणि मुखं च परिशुष्यति |\nवेपथुश्च शरीरे मे रोमहर्षश्च जायते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1028,7 +1032,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.30 — The Gandiva Slips"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते |\r\nन च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः"
+        children: "गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते |\nन च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1047,7 +1051,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.31 — Adverse Omens"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "निमित्तानि च पश्यामि विपरीतानि केशव |\r\nन च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे"
+        children: "निमित्तानि च पश्यामि विपरीतानि केशव |\nन च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1066,7 +1070,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.32 — What Is Victory Worth?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च |\r\nकिं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा"
+        children: "न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च |\nकिं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1085,7 +1089,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.33 — Those for Whose Sake We Desired"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च |\r\nत इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च"
+        children: "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च |\nत इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1104,7 +1108,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.34 — Teachers, Fathers, Sons"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "आचार्याः पितरः पुत्रास्तथैव च पितामहाः |\r\nमातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा"
+        children: "आचार्याः पितरः पुत्रास्तथैव च पितामहाः |\nमातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1123,7 +1127,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.35 — Even for the Three Worlds"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन |\r\nअपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते"
+        children: "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन |\nअपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1142,7 +1146,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.36 — Only Sin Will Accrue"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन |\r\nपापमेवाश्रयेदस्मान्हत्वैतानाततायिनः"
+        children: "निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन |\nपापमेवाश्रयेदस्मान्हत्वैतानाततायिनः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1161,7 +1165,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.37 — How Can We Be Happy?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान् |\r\nस्वजनं हि कथं हत्वा सुखिनः स्याम माधव"
+        children: "तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान् |\nस्वजनं हि कथं हत्वा सुखिनः स्याम माधव"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1180,7 +1184,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.38 — Blinded by Greed"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यद्यप्येते न पश्यन्ति लोभोपहतचेतसः |\r\nकुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्"
+        children: "यद्यप्येते न पश्यन्ति लोभोपहतचेतसः |\nकुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1199,7 +1203,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.39 — Why Should We Not Turn Back?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम् |\r\nकुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन"
+        children: "कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम् |\nकुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1218,7 +1222,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.40 — The Family Dharma Is Destroyed"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः |\r\nधर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत"
+        children: "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः |\nधर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1237,7 +1241,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.41 — The Corruption of the Women"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः |\r\nस्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः"
+        children: "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः |\nस्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1256,7 +1260,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.42 — The Ancestors Fall"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सङ्करो नरकायैव कुलघ्नानां कुलस्य च |\r\nपतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः"
+        children: "सङ्करो नरकायैव कुलघ्नानां कुलस्य च |\nपतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1275,7 +1279,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.43 — The Eternal Rites Destroyed"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः |\r\nउत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः"
+        children: "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः |\nउत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1294,7 +1298,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.44 — The Inevitable Dwelling in Hell"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन |\r\nनरके नियतं वासो भवतीत्यनुशुश्रुम (or नरकेऽनियतं)"
+        children: "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन |\nनरके नियतं वासो भवतीत्यनुशुश्रुम (or नरकेऽनियतं)"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1313,7 +1317,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.45 — Alas, What a Great Sin"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अहो बत महत्पापं कर्तुं व्यवसिता वयम् |\r\nयद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः"
+        children: "अहो बत महत्पापं कर्तुं व्यवसिता वयम् |\nयद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1332,7 +1336,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.46 — Better to Be Killed Unresisting"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः |\r\nधार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्"
+        children: "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः |\nधार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1351,7 +1355,7 @@ function _createMdxContent(props) {
       children: "Shloka 1.47 — The Bow Is Cast Away"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "सञ्जय उवाच |\r\nएवमुक्त्वार्जुनः सङ्ख्ये रथोपस्थ उपाविशत् |\r\nविसृज्य सशरं चापं शोकसंविग्नमानसः"
+        children: "सञ्जय उवाच |\nएवमुक्त्वार्जुनः सङ्ख्ये रथोपस्थ उपाविशत् |\nविसृज्य सशरं चापं शोकसंविग्नमानसः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1430,13 +1434,77 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Crisis Psychology and Loss Aversion"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Arjuna's collapse is not a literary device. It is a documented psychological response. Daniel Kahneman and Amos Tversky's prospect theory (1979) demonstrated that losses are felt approximately twice as intensely as equivalent gains — a phenomenon called ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "loss aversion"
+        }), ". Arjuna is not weighing victory against defeat; he is weighing the loss of his loved ones against the gain of a kingdom. By every empirical measure, the loss overwhelms the gain. His paralysis is not weakness; it is the predictable output of a brain wired to avoid catastrophic loss."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Vishada (sorrow)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Acute stress response (fight-flight-freeze)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Arjuna's trembling, dry mouth, and skin burning match the DSM-5 criteria for acute stress反应 — the body's honest refusal before the mind confabulates reasons"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "\"I will not fight\""
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Choice paralysis (Iyengar & Lepper, 2000)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "When options conflict with deep values, the default action is inaction — Arjuna's freeze is the same mechanism that paralyzes engineers facing ethical dilemmas"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Seeing faces of loved ones"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "In-group bias (Tajfel, 1979)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The abstraction \"enemy\" collapses when faces appear — this is the contact hypothesis in reverse; proximity to the out-group dissolves the category"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "\"What is victory worth?\""
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Hedonic treadmill (Brickman & Campbell, 1971)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Arjuna intuits what psychology confirms: the satisfaction of winning is temporary, but the cost of killing is permanent"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " The next time you face a decision that makes you freeze — a hard conversation, a risky code deployment, a moral dilemma — notice the bodily signals first. Name them: \"My chest is tight. My mind is racing.\" Then ask: \"What loss am I afraid of?\" The naming activates the prefrontal cortex, which dampens the amygdala's alarm. This is the same mechanism Krishna will teach in Chapter 2: see the change, then see the unchanging behind it."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The six crisis symptoms mapped here (anxiety, attachment-confusion, identity loss, fear of results, paralysis, flight desire) will be scored quantitatively in the TypeScript tool at the end of this chapter. See also Chapter 2's sthitaprajna portrait (2.54–2.72) for the antidote to each symptom — the mind that is unmoved by the pairs of opposites."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"The blind king's question 1.1\"] --> B[\"The counting of heroes 1.2-1.11\"]\r\n    B --> C[\"The conches of both armies 1.12-1.19\"]\r\n    C --> D[\"Arjuna asks for the chariot between the armies 1.20-1.23\"]\r\n    D --> E[\"Seeing the faces of his own people 1.24-1.27\"]\r\n    E --> F[\"The body collapses: trembling, burning, falling bow 1.28-1.30\"]\r\n    F --> G[\"The existential question: what is victory worth 1.31-1.35\"]\r\n    G --> H[\"The refusal: I will not fight 1.36-1.47\"]\r\n    H --> I[\"The bow is cast away; the silence begins\"]\r\n    I --> J[\"Krishna's first word: chapter 2\"]\r\n    style F fill:#4446e8,color:#fff\r\n    style I fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"The blind king's question 1.1\"] --> B[\"The counting of heroes 1.2-1.11\"]\n    B --> C[\"The conches of both armies 1.12-1.19\"]\n    C --> D[\"Arjuna asks for the chariot between the armies 1.20-1.23\"]\n    D --> E[\"Seeing the faces of his own people 1.24-1.27\"]\n    E --> F[\"The body collapses: trembling, burning, falling bow 1.28-1.30\"]\n    F --> G[\"The existential question: what is victory worth 1.31-1.35\"]\n    G --> H[\"The refusal: I will not fight 1.36-1.47\"]\n    H --> I[\"The bow is cast away; the silence begins\"]\n    I --> J[\"Krishna's first word: chapter 2\"]\n    style F fill:#4446e8,color:#fff\n    style I fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -1444,7 +1512,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root[Arjuna Vishada Yoga]\r\n    The field\r\n      Two armies\r\n      Names of heroes\r\n      Conches and drums\r\n    The seeing\r\n      Fathers and grandfathers\r\n      Teachers and uncles\r\n      Friends on both sides\r\n    The body\r\n      Limbs giving way\r\n      Mouth drying\r\n      Gandiva slipping\r\n      Skin burning\r\n    The mind\r\n      Reeling thoughts\r\n      Adverse omens\r\n      Fear of the result\r\n    The questions\r\n      What is victory worth\r\n      What is a kingdom for\r\n      Better to die unarmed\r\n    The surrender\r\n      Casting away the bow\r\n      Sitting down in sorrow\r\n      The silence before the Gita\n"
+        children: "mindmap\n  root[Arjuna Vishada Yoga]\n    The field\n      Two armies\n      Names of heroes\n      Conches and drums\n    The seeing\n      Fathers and grandfathers\n      Teachers and uncles\n      Friends on both sides\n    The body\n      Limbs giving way\n      Mouth drying\n      Gandiva slipping\n      Skin burning\n    The mind\n      Reeling thoughts\n      Adverse omens\n      Fear of the result\n    The questions\n      What is victory worth\n      What is a kingdom for\n      Better to die unarmed\n    The surrender\n      Casting away the bow\n      Sitting down in sorrow\n      The silence before the Gita\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1561,17 +1629,17 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q4. Which of these is NOT a bodily symptom of Arjuna's collapse described in the chapter?"
+        children: "Q4. Modern psychology would classify Arjuna's bodily symptoms (1.29–1.30) as an acute stress response. What does this tell us about the Gita's view of the body?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. His mouth dries up"
+        children: "a. The body is unreliable and must be overcome by willpower"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. His skin burns"
+        children: "b. The body is a more honest reporter than the mind — it refuses before the ego can justify"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. He becomes cold and sleepy"
+        children: "c. Bodily symptoms are irrelevant to spiritual transformation"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. The Gandiva slips from his hand"
+        children: "d. Only the mind matters; the body is an illusion"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1580,8 +1648,8 @@ function _createMdxContent(props) {
         children: "Show Answer"
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: c."
-        }), " He never becomes cold and sleepy; his limbs give way, his mouth dries, his skin burns, he trembles, and the bow slips (1.29–1.30)."]
+          children: "Answer: b."
+        }), " Osho reads 1.29–1.30 as the body's honest refusal — \"the body speaks before the mind confesses.\" Modern research confirms this: the autonomic nervous system responds to moral conflict before conscious deliberation. Arjuna's trembling is not weakness; it is the organism's truthful report that something is deeply wrong."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
@@ -1609,17 +1677,17 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q6. How does the chapter of 47 shlokas end?"
+        children: "Q6. If you applied the Osho reading to a modern engineering decision — say, deploying code you know will harm users — how would Arjuna's refusal map?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. The conches sound and the first arrow is shot"
+        children: "a. Refusing to deploy is always the right choice, as Arjuna refused to fight"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Arjuna, sorrowful, casts away his bow and sits down on the chariot seat"
+        children: "b. The refusal is not the endpoint but the beginning — it creates the space for a deeper question: \"What kind of engineer do I want to be?\""
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. Krishna speaks the first verse of the Gita"
+        children: "c. Arjuna was wrong to refuse, and engineers should always deploy regardless of consequences"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Sanjaya closes his eyes and the vision ends"
+        children: "d. The parallel does not apply because engineering decisions are never life-and-death"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1629,7 +1697,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        }), " Arjuna casts away his bow and arrows and sits down, overwhelmed by sorrow (1.47)."]
+        }), " Arjuna's \"I will not fight\" is not an answer — it is the first honest question of the Gita (1.32–1.35). Similarly, the engineer who refuses to deploy harmful code has not solved the problem; they have created the space for a deeper inquiry into what the code is for, who it serves, and what duty demands. The refusal is the door, not the destination."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "exercises",
@@ -1646,15 +1714,32 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "TypeScript exercise:"
-        }), " Extend the Bow-Drop Detector — add a seventh symptom of your own design, and add a method that prints a daily \"silence score\" based on how many entries show no signals of crisis at all, as the quiet before the teaching."]
+        }), " Extend the Crisis Intensity Scorer — add a seventh symptom of your own design, and add a method that prints a daily \"silence score\" based on how many entries show no signals of crisis at all, as the quiet before the teaching."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Decision-making under ethical pressure:"
+        }), " When a product decision conflicts with user welfare, notice your body's signals before your mind rationalizes. The trembling is data."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The \"I will not fight\" moment:"
+        }), " Every engineer eventually faces a deployment they know is wrong. Arjuna's refusal is not cowardice — it is the beginning of professional integrity. The question is not \"should I refuse?\" but \"what deeper question does this refusal open?\""]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Loss aversion in technical debt:"
+        }), " You will avoid deleting legacy code because of loss aversion — the pain of losing working code outweighs the gain of clean architecture. Name the bias, then act."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "typescript-tool-bow-drop-detector",
-      children: "TypeScript Tool: Bow-Drop Detector"
+      id: "typescript-tool-crisis-intensity-scorer",
+      children: "TypeScript Tool: Crisis Intensity Scorer"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Bow-Drop Detector\r\n * Based on Arjuna Vishada Yoga (Gita 1.1-1.47): the moment\r\n * the Gandiva slips from the hand, the old identity collapses\r\n * and the question begins. This tool maps journal entries to\r\n * the six crisis symptoms of the chapter and reports whether\r\n * the bow is still held, or has already fallen.\r\n */\r\n\r\ninterface JournalEntry {\r\n  date: string;\r\n  text: string;\r\n}\r\n\r\ninterface Symptom {\r\n  key: 'anxiety' | 'attachmentConfusion' | 'identityLoss' |\r\n        'fearOfResults' | 'paralysis' | 'flightDesire';\r\n  label: string;\r\n  shlokaRef: string;\r\n  keywords: string[];\r\n}\r\n\r\ninterface SymptomScore {\r\n  symptom: Symptom;\r\n  hits: number;\r\n  severity: number; // 0-10\r\n  oshoNote: string;\r\n}\r\n\r\ninterface BowDropReport {\r\n  entriesAnalyzed: number;\r\n  totalSignals: number;\r\n  dominant: string;\r\n  bowDropped: boolean;\r\n  scores: SymptomScore[];\r\n  finalMessage: string;\r\n}\r\n\r\nconst SYMPTOMS: Symptom[] = [\r\n  { key: 'anxiety', label: 'Anxiety: dry mouth, trembling limbs',\r\n    shlokaRef: '1.29 - seedanti gatraani', keywords: ['anxious', 'trembling', 'panic', 'fear', 'nervous', 'sweat'] },\r\n  { key: 'attachmentConfusion', label: 'Attachment-confusion: mine vs right',\r\n    shlokaRef: '1.31-1.35 - svajana', keywords: ['family', 'friend', 'teacher', 'loved', 'guilt', 'hurt them'] },\r\n  { key: 'identityLoss', label: 'Identity loss: who am I now',\r\n    shlokaRef: '1.28 - dṛṣṭvemaṃ svajanaṃ', keywords: ['who am i', 'identity', 'role', 'meaning', 'lost myself', 'empty'] },\r\n  { key: 'fearOfResults', label: 'Fear of results: what is victory worth',\r\n    shlokaRef: '1.32 - na kāṅkṣe vijayaṃ', keywords: ['what is the point', 'no reward', 'futile', 'worthless', 'why try'] },\r\n  { key: 'paralysis', label: 'Paralysis: cannot move or decide',\r\n    shlokaRef: '1.30 - na śaknomyavasthātuṃ', keywords: ['stuck', 'cannot decide', 'frozen', 'no way', 'blocked'] },\r\n  { key: 'flightDesire', label: 'Flight: run away, give it all up',\r\n    shlokaRef: '1.46 - kṣemataraṃ bhavet', keywords: ['quit', 'run away', 'give up', 'escape', 'leave everything'] }\r\n];\r\n\r\nconst OSHO_NOTES: Record<string, string> = {\r\n  anxiety: 'The body is honest before the mind is. Do not suppress the trembling; listen to what it refuses to do.',\r\n  attachmentConfusion: 'Mine is the deepest word of the crisis. The question is not who is right, but who you love.',\r\n  identityLoss: 'The old self is collapsing. Do not rush to rebuild it; emptiness is the doorway.',\r\n  fearOfResults: 'The goal is dissolving because the soul is asking for a deeper goal. Let the old prize fall.',\r\n  paralysis: 'Standing still is not failure. The feet that cannot move are learning to see first.',\r\n  flightDesire: 'To run is to carry the battlefield inside you. Sit down; the bow has fallen; now you can listen.'\r\n};\r\n\r\nfunction analyzeEntries(entries: JournalEntry[]): BowDropReport {\r\n  const scores: SymptomScore[] = SYMPTOMS.map((symptom) => {\r\n    let hits = 0;\r\n    for (const entry of entries) {\r\n      const lower = entry.text.toLowerCase();\r\n      hits += symptom.keywords.filter((kw) => lower.includes(kw)).length;\r\n    }\r\n    return { symptom, hits, severity: Math.min(10, hits), oshoNote: OSHO_NOTES[symptom.key] };\r\n  });\r\n\r\n  const totalSignals = scores.reduce((sum, s) => sum + s.hits, 0);\r\n  const dominant = scores.reduce((best, s) => (s.hits > best.hits ? s : best), scores[0]);\r\n  const bowDropped = totalSignals >= 4;\r\n\r\n  return {\r\n    entriesAnalyzed: entries.length,\r\n    totalSignals,\r\n    dominant: dominant.symptom.label,\r\n    bowDropped,\r\n    scores: scores.sort((a, b) => b.hits - a.hits),\r\n    finalMessage: bowDropped\r\n      ? 'The bow has dropped. You are in Vishada Yoga: empty, honest, ready. The teaching can begin.'\r\n      : 'The bow is still in your hand. There is no crisis yet — and without crisis, no door opens.'\r\n  };\r\n}\r\n\r\nconst journal: JournalEntry[] = [\r\n  { date: '2026-08-18', text: 'The interview is tomorrow and I am trembling, nervous, panicking.' },\r\n  { date: '2026-08-19', text: 'If I take this job I will have to hurt my family. Guilt everywhere.' },\r\n  { date: '2026-08-19', text: 'Who am I now? The career I built feels empty and meaningless.' }\r\n];\r\n\r\nconst report = analyzeEntries(journal);\r\nconsole.log('=== Bow-Drop Detector ===');\r\nconsole.log(`Entries: ${report.entriesAnalyzed} | Signals: ${report.totalSignals}`);\r\nconsole.log(`Dominant: ${report.dominant}`);\r\nconsole.log(`Bow dropped: ${report.bowDropped}`);\r\nfor (const score of report.scores) {\r\n  console.log(`- ${score.symptom.label} (${score.symptom.shlokaRef}) severity ${score.severity}/10`);\r\n  console.log(`  Osho: ${score.oshoNote}`);\r\n}\r\nconsole.log(report.finalMessage);\n"
+        children: "/**\n * Crisis Intensity Scorer\n * Based on Vishada Yoga (Gita 1.1–1.47) and Kahneman & Tversky's\n * prospect theory (1979): loss aversion explains why Arjuna's\n * paralysis is predictable, not pathological. This tool scores\n * journal entries against six evidence-based crisis dimensions,\n * weighted by loss-aversion research (losses hit ~2× harder than\n * equivalent gains), and reports whether the \"bow has dropped.\"\n *\n * Run: npx ts-node crisis-intensity-scorer.ts\n */\n\ninterface JournalEntry {\n  date: string;\n  text: string;\n}\n\ninterface CrisisDimension {\n  key: string;\n  label: string;\n  shlokaRef: string;\n  indicators: string[];\n  weight: number;        // loss-aversion weighting (1.0 = neutral, 2.0 = loss-domain)\n  scientificBasis: string;\n}\n\ninterface DimensionScore {\n  dimension: CrisisDimension;\n  rawHits: number;\n  weightedScore: number;\n  intensity: number;     // 0–10\n  evidenceNote: string;\n}\n\ninterface CrisisReport {\n  entriesAnalyzed: number;\n  totalIntensity: number;\n  dominantDimension: string;\n  bowDropped: boolean;\n  lossAversionRatio: number;\n  scores: DimensionScore[];\n  recommendation: string;\n}\n\nconst DIMENSIONS: CrisisDimension[] = [\n  {\n    key: 'bodilyRefusal',\n    label: 'Somatic markers: body refuses before mind confesses',\n    shlokaRef: '1.29–1.30',\n    indicators: ['trembling', 'panic', 'sweat', 'chest tight', 'can\\'t breathe', 'shaking', 'nausea'],\n    weight: 1.5,\n    scientificBasis: 'Damasio somatic marker hypothesis: bodily signals precede and guide decision-making'\n  },\n  {\n    key: 'lossGrief',\n    label: 'Loss aversion: the pain of losing what is loved',\n    shlokaRef: '1.31–1.35',\n    indicators: ['family', 'friend', 'loved', 'guilt', 'hurt them', 'lose them', 'death'],\n    weight: 2.0,\n    scientificBasis: 'Kahneman prospect theory: losses felt 2× as intensely as equivalent gains'\n  },\n  {\n    key: 'identityDissolution',\n    label: 'Identity crisis: the old self collapses',\n    shlokaRef: '1.28',\n    indicators: ['who am i', 'identity', 'role', 'meaning', 'lost myself', 'empty', 'pointless'],\n    weight: 1.8,\n    scientificBasis: 'Oyserman identity-based motivation: identity threat causes paralysis'\n  },\n  {\n    key: 'goalDissolution',\n    label: 'Goal abandonment: the prize loses its meaning',\n    shlokaRef: '1.32–1.35',\n    indicators: ['what is the point', 'no reward', 'futile', 'worthless', 'why try', 'nothing matters'],\n    weight: 1.3,\n    scientificBasis: 'Self-determination theory: extrinsic goals lose motivational power under threat'\n  },\n  {\n    key: 'actionParalysis',\n    label: 'Behavioral freeze: cannot move or decide',\n    shlokaRef: '1.30',\n    indicators: ['stuck', 'cannot decide', 'frozen', 'no way', 'blocked', 'inaction', 'freeze'],\n    weight: 1.7,\n    scientificBasis: 'Fight-flight-freeze response: freeze is the autonomic system\\'s third option under threat'\n  },\n  {\n    key: 'escapeUrge',\n    label: 'Flight response: the wish to abandon everything',\n    shlokaRef: '1.46',\n    indicators: ['quit', 'run away', 'give up', 'escape', 'leave', 'abandon', 'disappear'],\n    weight: 1.4,\n    scientificBasis: ' avoidance coping (Lazarus & Folkman): escape is the default when threat exceeds resources'\n  }\n];\n\nfunction scoreEntry(entry: JournalEntry): DimensionScore[] {\n  const lower = entry.text.toLowerCase();\n  return DIMENSIONS.map((dim) => {\n    const hits = dim.indicators.filter((ind) => lower.includes(ind)).length;\n    const weightedScore = hits * dim.weight;\n    const intensity = Math.min(10, Math.round(weightedScore * 2));\n    return {\n      dimension: dim,\n      rawHits: hits,\n      weightedScore,\n      intensity,\n      evidenceNote: `${dim.scientificBasis} (weight: ${dim.weight})`\n    };\n  });\n}\n\nfunction analyzeCrisis(entries: JournalEntry[]): CrisisReport {\n  const allScores = entries.flatMap(scoreEntry);\n  const byDim = DIMENSIONS.map((dim) => {\n    const dimScores = allScores.filter((s) => s.dimension.key === dim.key);\n    const totalWeighted = dimScores.reduce((sum, s) => sum + s.weightedScore, 0);\n    const avgIntensity = dimScores.length === 0\n      ? 0\n      : Math.round(dimScores.reduce((sum, s) => sum + s.intensity, 0) / dimScores.length);\n    return {\n      dimension: dim,\n      rawHits: dimScores.reduce((sum, s) => sum + s.rawHits, 0),\n      weightedScore: totalWeighted,\n      intensity: avgIntensity,\n      evidenceNote: dim.scientificBasis\n    };\n  });\n\n  const totalIntensity = byDim.reduce((sum, s) => sum + s.intensity, 0);\n  const dominant = byDim.reduce((best, s) => (s.intensity > best.intensity ? s : best), byDim[0]);\n\n  // Loss aversion ratio: loss-domain dimensions (lossGrief, identityDissolution, goalDissolution)\n  // vs gain-domain dimensions (all others)\n  const lossDomain = byDim.filter((s) => ['lossGrief', 'identityDissolution', 'goalDissolution'].includes(s.dimension.key));\n  const gainDomain = byDim.filter((s) => !['lossGrief', 'identityDissolution', 'goalDissolution'].includes(s.dimension.key));\n  const lossTotal = lossDomain.reduce((sum, s) => sum + s.weightedScore, 0);\n  const gainTotal = gainDomain.reduce((sum, s) => sum + s.weightedScore, 0);\n  const lossAversionRatio = gainTotal === 0 ? Infinity : Math.round((lossTotal / gainTotal) * 100) / 100;\n\n  const bowDropped = totalIntensity >= 20;\n\n  let recommendation: string;\n  if (bowDropped && lossAversionRatio > 1.5) {\n    recommendation = 'The bow has dropped, and loss aversion dominates. The crisis is real — the old identity is collapsing. Sit with it. Do not rebuild the old self; let the emptiness teach. (See 2.11: the wise grieve not for what was never real.)';\n  } else if (bowDropped) {\n    recommendation = 'The bow has dropped. Multiple dimensions are active. The teaching can begin — but first, watch without acting. (See 1.47: Arjuna sat down. That sitting is the first step.)';\n  } else if (totalIntensity >= 10) {\n    recommendation = 'The bow is straining. Some symptoms are present but the collapse is not total. Investigate: which dimension dominates? That is where the door is. (See 3.37: the enemy is desire — trace it to its seat.)';\n  } else {\n    recommendation = 'The bow is steady. No crisis is active — which means no door has opened yet. The Gita begins when the old certainty cracks. (See 1.21: Arjuna asked to see both sides. Maybe the crisis is already there, just unheard.)';\n  }\n\n  return {\n    entriesAnalyzed: entries.length,\n    totalIntensity,\n    dominantDimension: dominant.dimension.label,\n    bowDropped,\n    lossAversionRatio,\n    scores: byDim.sort((a, b) => b.intensity - a.intensity),\n    recommendation\n  };\n}\n\n// Demo: a week of engineering-related journal entries\nconst journal: JournalEntry[] = [\n  { date: '2026-08-18', text: 'The interview is tomorrow and I am trembling, nervous, panicking.' },\n  { date: '2026-08-19', text: 'If I take this job I will have to leave my team. Guilt about hurting them.' },\n  { date: '2026-08-19', text: 'Who am I now? The identity I built as a senior engineer feels empty.' },\n  { date: '2026-08-20', text: 'What is the point of this promotion? Nothing matters if I lose my family.' },\n  { date: '2026-08-21', text: 'I am stuck. Cannot decide. Frozen. No way forward.' },\n  { date: '2026-08-22', text: 'I want to quit everything and disappear.' }\n];\n\nconst report = analyzeCrisis(journal);\n\nconsole.log('=== Crisis Intensity Scorer ===');\nconsole.log(`Entries: ${report.entriesAnalyzed} | Total intensity: ${report.totalIntensity}/60`);\nconsole.log(`Dominant: ${report.dominantDimension}`);\nconsole.log(`Bow dropped: ${report.bowDropped}`);\nconsole.log(`Loss aversion ratio: ${report.lossAversionRatio} (losses vs gains)`);\nconsole.log('');\nconsole.log('Dimension breakdown:');\nfor (const s of report.scores) {\n  console.log(`  ${s.dimension.label} (${s.dimension.shlokaRef})`);\n  console.log(`    Intensity: ${s.intensity}/10 | Weighted: ${s.weightedScore}`);\n  console.log(`    Evidence: ${s.evidenceNote}`);\n}\nconsole.log('');\nconsole.log(`Recommendation: ${report.recommendation}`);\n"
       })
     })]
   });

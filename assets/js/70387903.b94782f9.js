@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-07-jnana-vijnana-yoga-md-703.json
-const site_docs_courses_bhagavad_gita_07_jnana_vijnana_yoga_md_703_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/07-jnana-vijnana-yoga","title":"Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing","description":"\\"Knowledge is a map; realization is the mountain itself. You can study the map your whole life and still never climb a single step.\\"","source":"@site/docs/courses/bhagavad-gita/07-jnana-vijnana-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/07-jnana-vijnana-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/07-jnana-vijnana-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":8,"frontMatter":{"id":"07-jnana-vijnana-yoga","slug":"/bhagavad-gita/07-jnana-vijnana-yoga","title":"Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing","sidebar_label":"Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing","sidebar_position":8},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 6: Dhyana Yoga — The Art of Meditation","permalink":"/ai-engineering-journey/bhagavad-gita/06-dhyana-yoga"},"next":{"title":"Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute","permalink":"/ai-engineering-journey/bhagavad-gita/08-akshara-brahma-yoga"}}');
+const site_docs_courses_bhagavad_gita_07_jnana_vijnana_yoga_md_703_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/07-jnana-vijnana-yoga","title":"Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing","description":"\\"Knowledge is a map; realization is the mountain itself. You can study the map your whole life and still never climb a single step.\\"","source":"@site/docs/courses/bhagavad-gita/07-jnana-vijnana-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/07-jnana-vijnana-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/07-jnana-vijnana-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":7,"frontMatter":{"id":"07-jnana-vijnana-yoga","slug":"/bhagavad-gita/07-jnana-vijnana-yoga","title":"Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing","sidebar_label":"Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing","sidebar_position":7},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 6: Dhyana Yoga — The Art of Meditation","permalink":"/ai-engineering-journey/bhagavad-gita/06-dhyana-yoga"},"next":{"title":"Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute","permalink":"/ai-engineering-journey/bhagavad-gita/08-akshara-brahma-yoga"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/bhagavad-gita/07-jnana-vijnana-yoga',
 	title: 'Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing',
 	sidebar_label: 'Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing',
-	sidebar_position: 8
+	sidebar_position: 7
 };
 const contentTitle = 'Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing';
 
@@ -222,6 +222,10 @@ const toc = [{
   "id": "exercises",
   "level": 2
 }, {
+  "value": "For the Engineer",
+  "id": "for-the-engineer",
+  "level": 3
+}, {
   "value": "TypeScript Tool: Vijnana Realization Checker",
   "id": "typescript-tool-vijnana-realization-checker",
   "level": 2
@@ -260,7 +264,7 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "\"Knowledge is a map; realization is the mountain itself. You can study the map your whole life and still never climb a single step.\"\r\n— The Osho Way"
+        children: "\"Knowledge is a map; realization is the mountain itself. You can study the map your whole life and still never climb a single step.\"\n— The Osho Way"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "The war is about to begin, and yet the real battle has moved inside. Krishna has spent six chapters clearing the ground: act without attachment, meditate without clinging, make your whole life a yoga. Now, without Arjuna even asking, Krishna opens the deepest door. That is the first surprise of this chapter — no question from Arjuna, no crisis, no protest. The disciple is silent, and in that silence the master speaks. The deepest truths never come to those who demand them; they come to those who have become still enough to receive them."
@@ -423,7 +427,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.1 — The Promise of Full Knowledge"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "श्रीभगवानुवाच |\r\nमय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः |\r\nअसंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु"
+        children: "श्रीभगवानुवाच |\nमय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः |\nअसंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -442,7 +446,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.2 — Knowledge With Realization"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ज्ञानं तेऽहं सविज्ञानमिदं वक्ष्याम्यशेषतः |\r\nयज्ज्ञात्वा नेह भूयोऽन्यज्ज्ञातव्यमवशिष्यते"
+        children: "ज्ञानं तेऽहं सविज्ञानमिदं वक्ष्याम्यशेषतः |\nयज्ज्ञात्वा नेह भूयोऽन्यज्ज्ञातव्यमवशिष्यते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -461,7 +465,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.3 — The Rarity of True Seekers"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मनुष्याणां सहस्रेषु कश्चिद्यतति सिद्धये |\r\nयततामपि सिद्धानां कश्चिन्मां वेत्ति तत्त्वतः"
+        children: "मनुष्याणां सहस्रेषु कश्चिद्यतति सिद्धये |\nयततामपि सिद्धानां कश्चिन्मां वेत्ति तत्त्वतः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -480,7 +484,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.4 — The Eightfold Lower Nature"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "भूमिरापोऽनलो वायुः खं मनो बुद्धिरेव च |\r\nअहंकार इतीयं मे भिन्ना प्रकृतिरष्टधा"
+        children: "भूमिरापोऽनलो वायुः खं मनो बुद्धिरेव च |\nअहंकार इतीयं मे भिन्ना प्रकृतिरष्टधा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -499,7 +503,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.5 — The Higher Nature: The Life-Element"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अपरेयमितस्त्वन्यां प्रकृतिं विद्धि मे पराम् |\r\nजीवभूतां महाबाहो ययेदं धार्यते जगत्"
+        children: "अपरेयमितस्त्वन्यां प्रकृतिं विद्धि मे पराम् |\nजीवभूतां महाबाहो ययेदं धार्यते जगत्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -518,7 +522,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.6 — The Source and the Dissolution"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "एतद्योनीनि भूतानि सर्वाणीत्युपधारय |\r\nअहं कृत्स्नस्य जगतः प्रभवः प्रलयस्तथा"
+        children: "एतद्योनीनि भूतानि सर्वाणीत्युपधारय |\nअहं कृत्स्नस्य जगतः प्रभवः प्रलयस्तथा"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -537,7 +541,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.7 — The Thread and the Jewels"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय |\r\nमयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव"
+        children: "मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय |\nमयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -556,7 +560,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.8 — The Taste in Water"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "रसोऽहमप्सु कौन्तेय प्रभास्मि शशिसूर्ययोः |\r\nप्रणवः सर्ववेदेषु शब्दः खे पौरुषं नृषु"
+        children: "रसोऽहमप्सु कौन्तेय प्रभास्मि शशिसूर्ययोः |\nप्रणवः सर्ववेदेषु शब्दः खे पौरुषं नृषु"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -575,7 +579,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.9 — The Fragrance of the Earth"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "पुण्यो गन्धः पृथिव्यां च तेजश्चास्मि विभावसौ |\r\nजीवनं सर्वभूतेषु तपश्चास्मि तपस्विषु"
+        children: "पुण्यो गन्धः पृथिव्यां च तेजश्चास्मि विभावसौ |\nजीवनं सर्वभूतेषु तपश्चास्मि तपस्विषु"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -594,7 +598,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.10 — The Eternal Seed"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "बीजं मां सर्वभूतानां विद्धि पार्थ सनातनम् |\r\nबुद्धिर्बुद्धिमतामस्मि तेजस्तेजस्विनामहम्"
+        children: "बीजं मां सर्वभूतानां विद्धि पार्थ सनातनम् |\nबुद्धिर्बुद्धिमतामस्मि तेजस्तेजस्विनामहम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -613,7 +617,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.11 — Strength Without Lust"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "बलं बलवतां चाहं कामरागविवर्जितम् |\r\nधर्माविरुद्धो भूतेषु कामोऽस्मि भरतर्षभ"
+        children: "बलं बलवतां चाहं कामरागविवर्जितम् |\nधर्माविरुद्धो भूतेषु कामोऽस्मि भरतर्षभ"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -632,7 +636,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.12 — The Gunas and the Uncontained"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "ये चैव सात्त्विका भावा राजसास्तामसाश्च ये |\r\nमत्त एवेति तान्विद्धि न त्वहं तेषु ते मयि"
+        children: "ये चैव सात्त्विका भावा राजसास्तामसाश्च ये |\nमत्त एवेति तान्विद्धि न त्वहं तेषु ते मयि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -651,7 +655,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.13 — The Veil of the Three Gunas"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "त्रिभिर्गुणमयैर्भावैरेभिः सर्वमिदं जगत् |\r\nमोहितं नाभिजानाति मामेभ्यः परमव्ययम्"
+        children: "त्रिभिर्गुणमयैर्भावैरेभिः सर्वमिदं जगत् |\nमोहितं नाभिजानाति मामेभ्यः परमव्ययम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -670,7 +674,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.14 — Maya: The Divine Illusion"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "दैवी ह्येषा गुणमयी मम माया दुरत्यया |\r\nमामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते"
+        children: "दैवी ह्येषा गुणमयी मम माया दुरत्यया |\nमामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -689,7 +693,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.15 — The Four That Do Not Come"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "न मां दुष्कृतिनो मूढाः प्रपद्यन्ते नराधमाः |\r\nमाययापहृतज्ञाना आसुरं भावमाश्रिताः"
+        children: "न मां दुष्कृतिनो मूढाः प्रपद्यन्ते नराधमाः |\nमाययापहृतज्ञाना आसुरं भावमाश्रिताः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -708,7 +712,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.16 — The Four Kinds of Worshippers"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "चतुर्विधा भजन्ते मां जनाः सुकृतिनोऽर्जुन |\r\nआर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ"
+        children: "चतुर्विधा भजन्ते मां जनाः सुकृतिनोऽर्जुन |\nआर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -727,7 +731,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.17 — The Wise One Excels"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "तेषां ज्ञानी नित्ययुक्त एकभक्तिर्विशिष्यते |\r\nप्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः"
+        children: "तेषां ज्ञानी नित्ययुक्त एकभक्तिर्विशिष्यते |\nप्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -746,7 +750,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.18 — The Wise One Is My Self"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "उदाराः सर्व एवैते ज्ञानी त्वात्मैव मे मतम् |\r\nआस्थितः स हि युक्तात्मा मामेवानुत्तमां गतिम्"
+        children: "उदाराः सर्व एवैते ज्ञानी त्वात्मैव मे मतम् |\nआस्थितः स हि युक्तात्मा मामेवानुत्तमां गतिम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -765,7 +769,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.19 — At the End of Many Births"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते |\r\nवासुदेवः सर्वमिति स महात्मा सुदुर्लभः"
+        children: "बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते |\nवासुदेवः सर्वमिति स महात्मा सुदुर्लभः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -784,7 +788,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.20 — The Stolen Wisdom of Desires"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "कामैस्तैस्तैर्हृतज्ञानाः प्रपद्यन्तेऽन्यदेवताः |\r\nतं तं नियममास्थाय प्रकृत्या नियताः स्वया"
+        children: "कामैस्तैस्तैर्हृतज्ञानाः प्रपद्यन्तेऽन्यदेवताः |\nतं तं नियममास्थाय प्रकृत्या नियताः स्वया"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -803,7 +807,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.21 — Faith Is Given, Not Taken"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "यो यो यां यां तनुं भक्तः श्रद्धयार्चितुमिच्छति |\r\nतस्य तस्याचलां श्रद्धां तामेव विदधाम्यहम्"
+        children: "यो यो यां यां तनुं भक्तः श्रद्धयार्चितुमिच्छति |\nतस्य तस्याचलां श्रद्धां तामेव विदधाम्यहम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -822,7 +826,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.22 — The Granted Desire"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "स तया श्रद्धया युक्तस्तस्याराधनमीहते |\r\nलभते च ततः कामान्मयैव विहितान्हि तान्"
+        children: "स तया श्रद्धया युक्तस्तस्याराधनमीहते |\nलभते च ततः कामान्मयैव विहितान्हि तान्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -841,7 +845,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.23 — Small Minds, Small Fruits"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अन्तवत्तु फलं तेषां तद्भवत्यल्पमेधसाम् |\r\nदेवान्देवयजो यान्ति मद्भक्ता यान्ति मामपि"
+        children: "अन्तवत्तु फलं तेषां तद्भवत्यल्पमेधसाम् |\nदेवान्देवयजो यान्ति मद्भक्ता यान्ति मामपि"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -860,7 +864,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.24 — The Unmanifest in the Manifest"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "अव्यक्तं व्यक्तिमापन्नं मन्यन्ते मामबुद्धयः |\r\nपरं भावमजानन्तो ममाव्ययमनुत्तमम्"
+        children: "अव्यक्तं व्यक्तिमापन्नं मन्यन्ते मामबुद्धयः |\nपरं भावमजानन्तो ममाव्ययमनुत्तमम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -879,7 +883,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.25 — Veiled by Yoga-Maya"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "नाहं प्रकाशः सर्वस्य योगमायासमावृतः |\r\nमूढोऽयं नाभिजानाति लोको मामजमव्ययम्"
+        children: "नाहं प्रकाशः सर्वस्य योगमायासमावृतः |\nमूढोऽयं नाभिजानाति लोको मामजमव्ययम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -898,7 +902,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.26 — I Know All; No One Knows Me"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "वेदाहं समतीतानि वर्तमानानि चार्जुन |\r\nभविष्याणि च भूतानि मां तु वेद न कश्चन"
+        children: "वेदाहं समतीतानि वर्तमानानि चार्जुन |\nभविष्याणि च भूतानि मां तु वेद न कश्चन"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -917,7 +921,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.27 — The Delusion of the Pairs"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "इच्छाद्वेषसमुत्थेन द्वन्द्वमोहेन भारत |\r\nसर्वभूतानि सम्मोहं सर्गे यान्ति परन्तप"
+        children: "इच्छाद्वेषसमुत्थेन द्वन्द्वमोहेन भारत |\nसर्वभूतानि सम्मोहं सर्गे यान्ति परन्तप"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -936,7 +940,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.28 — Sins Ended, Vows Firm"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "येषां त्वन्तगतं पापं जनानां पुण्यकर्मणाम् |\r\nते द्वन्द्वमोहनिर्मुक्ता भजन्ते मां दृढव्रताः"
+        children: "येषां त्वन्तगतं पापं जनानां पुण्यकर्मणाम् |\nते द्वन्द्वमोहनिर्मुक्ता भजन्ते मां दृढव्रताः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -955,7 +959,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.29 — Freedom From Old Age and Death"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "जरामरणमोक्षाय मामाश्रित्य यतन्ति ये |\r\nते ब्रह्म तद्विदुः कृत्स्नमध्यात्मं कर्म चाखिलम्"
+        children: "जरामरणमोक्षाय मामाश्रित्य यतन्ति ये |\nते ब्रह्म तद्विदुः कृत्स्नमध्यात्मं कर्म चाखिलम्"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -974,7 +978,7 @@ function _createMdxContent(props) {
       children: "Shloka 7.30 — Knowing Me at the Final Hour"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "साधिभूताधिदैवं मां साधियज्ञं च ये विदुः |\r\nप्रयाणकालेऽपि च मां ते विदुर्युक्तचेतसः"
+        children: "साधिभूताधिदैवं मां साधियज्ञं च ये विदुः |\nप्रयाणकालेऽपि च मां ते विदुर्युक्तचेतसः"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
@@ -1085,13 +1089,77 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Science Note — Predictive Processing and Interoception"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Chapter 7 distinguishes jnana (head knowledge) from vijnana (embodied realization). Modern cognitive science calls this distinction ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "predictive processing"
+        }), " (Clark, 2013): the brain constantly generates predictions about the body and world, and vijnana arises when these predictions are updated by direct experience, not just information. The Gita's \"jnana with vijnana\" (7.2) is the difference between reading about riding a bicycle and actually riding one — the brain's predictive model changes only through embodied contact."]
+      }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "Gita Concept"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Modern Science"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "Key Insight"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "Jnana vs vijnana (7.2)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Predictive processing (Clark, 2013)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Information updates predictions weakly; direct experience updates them strongly. The Gita's insistence on vijnana is neuroscience-accurate"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The eightfold lower nature (7.4)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Embodied cognition (Varela, 1991)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Mind, intellect, and ego are not abstract — they emerge from the body's interaction with the world. The Gita's list maps to the brain's interoceptive, proprioceptive, and exteroceptive systems"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The guna veil (7.13)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Predictive bias (Hohwy, 2013)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "The gunas are the brain's priors — colored expectations that filter all incoming data. The veil is not mystical; it is the brain's tendency to confirm its own predictions"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "The final hour (7.29-7.30)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Terror management theory (Greenberg, 1986)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "How you live determines what you cling to at death. Those who live in awareness have a \"secure base\" (Bowlby, 1969) that makes death a transition, not a terror"
+            })]
+          })]
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This:"
+        }), " For one week, track the gap between what you \"know\" about a skill and what you can actually do. Write down 5 things you know intellectually (jnana) and 5 things you can demonstrate in practice (vijnana). The gap is your vijnana deficit — and the only remedy is doing, not reading."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-Reference:"
+      }), " The jnana-vijnana distinction echoes throughout the Gita — the ladder of 3.42 (mind over body, intellect over mind, the Self over all) and the lotus leaf of 5.10 (knowing vs. being untouched). Chapter 7 names what the earlier chapters enacted."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "the-inner-journey",
       children: "The Inner Journey"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "flowchart TB\r\n    A[\"Arjuna listens in silence\"] --> B[\"Krishna promises jnana with vijnana\"]\r\n    B --> C[\"The eightfold lower nature\"]\r\n    C --> D[\"The higher nature: the witness\"]\r\n    D --> E[\"The guna veil colors everything\"]\r\n    E --> F[\"Maya: the illusion woven of the gunas\"]\r\n    F --> G[\"Four kinds of seekers\"]\r\n    G --> H[\"The wise one surpasses all\"]\r\n    H --> I[\"The pairs of opposites: desire and aversion\"]\r\n    I --> J[\"The steadfast mind knows at the final hour\"]\r\n    J --> K[\"Vijnana: the realization that transforms\"]\r\n    style K fill:#4446e8,color:#fff\r\n    style C fill:#eef0ff,color:#1a1b23\n"
+        children: "flowchart TB\n    A[\"Arjuna listens in silence\"] --> B[\"Krishna promises jnana with vijnana\"]\n    B --> C[\"The eightfold lower nature\"]\n    C --> D[\"The higher nature: the witness\"]\n    D --> E[\"The guna veil colors everything\"]\n    E --> F[\"Maya: the illusion woven of the gunas\"]\n    F --> G[\"Four kinds of seekers\"]\n    G --> H[\"The wise one surpasses all\"]\n    H --> I[\"The pairs of opposites: desire and aversion\"]\n    I --> J[\"The steadfast mind knows at the final hour\"]\n    J --> K[\"Vijnana: the realization that transforms\"]\n    style K fill:#4446e8,color:#fff\n    style C fill:#eef0ff,color:#1a1b23\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "a-mind-map",
@@ -1099,7 +1167,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-mermaid",
-        children: "mindmap\r\n  root[Jnana-Vijnana Yoga]\r\n    Two natures\r\n      Eightfold lower nature\r\n      Higher life-nature\r\n      The witness\r\n    The veil\r\n      Three gunas\r\n      Maya\r\n      Pairs of opposites\r\n    The seekers\r\n      The distressed\r\n      The curious\r\n      The merchant\r\n      The wise\r\n    The essence\r\n      Taste in water\r\n      Light in sun and moon\r\n      Om in the Vedas\r\n      Eternal seed\r\n    The promise\r\n      Steadfast mind\r\n      The final hour\r\n      Full realization\n"
+        children: "mindmap\n  root[Jnana-Vijnana Yoga]\n    Two natures\n      Eightfold lower nature\n      Higher life-nature\n      The witness\n    The veil\n      Three gunas\n      Maya\n      Pairs of opposites\n    The seekers\n      The distressed\n      The curious\n      The merchant\n      The wise\n    The essence\n      Taste in water\n      Light in sun and moon\n      Om in the Vedas\n      Eternal seed\n    The promise\n      Steadfast mind\n      The final hour\n      Full realization\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary",
@@ -1192,17 +1260,17 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q3. Which of the following makes up the eightfold lower nature in 7.4?"
+        children: "Q3. Krishna says maya is \"divine and gunamayi, hard to cross\" (7.14). Modern cognitive science calls this the brain's \"predictive priors\" — colored expectations that filter all incoming data. Why is this hard to overcome through logic alone?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. Earth, water, fire, air, ether, mind, intellect and egoism"
+        children: "a. Because logic is weak and maya is strong"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. The five senses, the body, the breath and the soul"
+        children: "b. Because priors are unconsciously held — you cannot argue with a filter you don't know you're wearing. Only direct experience (vijnana) can update deep priors"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. The four Vedas and the four goals of life"
+        children: "c. Because the gunas don't exist in modern psychology"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. Sattva, rajas, tamas and their five modifications"
+        children: "d. Because maya is a supernatural force that defies logic"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1211,22 +1279,22 @@ function _createMdxContent(props) {
         children: "Show Answer"
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Answer: a."
-        }), " Earth, water, fire, air, ether, mind, intellect and egoism — 7.4."]
+          children: "Answer: b."
+        }), " Hohwy (2013) shows that the brain's priors are maintained below conscious awareness — you cannot reason your way out of a bias you don't perceive. The Gita's solution — surrender and refuge (7.14) — bypasses the rational mind and allows direct experience to update the priors. This is why vijnana (realization) is superior to jnana (knowledge)."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Q4. How is maya described in 7.14, and how is it crossed?"
+        children: "Q4. The four kinds of worshippers (7.16-7.19) — the distressed, the curious, the merchant, the wise — map onto stages of psychological development. How does the Gita's ranking relate to self-determination theory (Deci & Ryan, 1985)?"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "a. It is weak and dissolves by logic"
+        children: "a. It doesn't — the Gita and SDT are unrelated"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "b. Divine, woven of the gunas, hard to cross; crossed by those who take refuge in Me alone"
+        children: "b. The distressed seek safety (deficiency motivation), the merchant seeks achievement (extrinsic), the wise seek understanding (intrinsic) — the Gita's hierarchy matches SDT's progression from deficiency to growth motivation"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "c. It ends automatically at death"
+        children: "c. The Gita ranks them by social status"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "d. It is crossed by accumulating merit"
+        children: "d. SDT says all motivation is equally valuable"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
       className: "tp-qa-card",
@@ -1236,7 +1304,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Answer: b."
-        }), " Maya is divine and gunamayi, hard to cross; those who take refuge cross it — 7.14."]
+        }), " Deci & Ryan's SDT distinguishes deficiency motivation (acting from lack) from growth motivation (acting from intrinsic interest). The distressed worshipper acts from deficiency (fear, suffering), the merchant from extrinsic reward, the wise from intrinsic understanding. The Gita's hierarchy (7.19: \"the wise one is the best\") aligns with SDT's finding that intrinsic motivation produces deeper well-being and more stable behavior."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
@@ -1303,13 +1371,30 @@ function _createMdxContent(props) {
           children: "The final-hour practice:"
         }), " Extend the Vijnana Realization Checker below — add a \"lastThought\" field to the study log and have the tool forecast which topic would dominate your final hour if you stopped practicing today. Let the forecast guide your next week of practice."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "for-the-engineer",
+      children: "For the Engineer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Jnana vs vijnana in code review:"
+        }), " You can read about clean code (jnana) but only writing and maintaining code teaches you what clean actually means (vijnana). The engineer who has never debugged a production incident \"knows\" about monitoring but has not realized it."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The guna veil in code review:"
+        }), " Your priors about \"good code\" are colored by your experience — a functional programmer sees monads where an imperative programmer sees control flow. Recognizing the guna-veil means acknowledging that your code review is filtered through your own priors."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The final hour in production:"
+        }), " How you write code in calm times determines how you respond in incidents. The \"last thought\" of your system is the architecture you built when there was no pressure."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "typescript-tool-vijnana-realization-checker",
       children: "TypeScript Tool: Vijnana Realization Checker"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/*\r\n * Vijnana Realization Checker\r\n * Based on Chapter 7 (Jnana-Vijnana Yoga).\r\n * Jnana is knowing about something; vijnana is realizing it.\r\n * The tool scans a learner's study log and separates borrowed\r\n * knowledge (jnana) from lived realization (vijnana),\r\n * following Krishna's promise in 7.1-7.3: among thousands\r\n * who study, one strives; among strivers, one realizes.\r\n */\r\n\r\ninterface StudyLogEntry {\r\n  topic: string;\r\n  studyHours: number;\r\n  practiceSessions: number;\r\n  daysSincePractice: number;\r\n}\r\n\r\ninterface RealizationReport {\r\n  topic: string;\r\n  kind: 'jnana' | 'vijnana';\r\n  reason: string;\r\n}\r\n\r\nconst PRACTICE_THRESHOLD = 5;\r\nconst RECENCY_LIMIT_DAYS = 7;\r\n\r\nfunction classify(entry: StudyLogEntry): RealizationReport {\r\n  const practiced = entry.practiceSessions >= PRACTICE_THRESHOLD;\r\n  const stillFresh = entry.daysSincePractice <= RECENCY_LIMIT_DAYS;\r\n  if (practiced && stillFresh) {\r\n    return {\r\n      topic: entry.topic,\r\n      kind: 'vijnana',\r\n      reason: 'You have practiced this recently; it lives in your hands, not just in your head.'\r\n    };\r\n  }\r\n  return {\r\n    topic: entry.topic,\r\n    kind: 'jnana',\r\n    reason: 'You know about it, but realization needs recent practice. The map is not the mountain.'\r\n  };\r\n}\r\n\r\nfunction summarize(entries: StudyLogEntry[]): void {\r\n  const reports = entries.map(classify);\r\n  const realized = reports.filter(r => r.kind === 'vijnana').length;\r\n  console.log('=== Vijnana Realization Checker ===');\r\n  console.log(`Topics analyzed: ${reports.length}`);\r\n  console.log(`Realized (vijnana): ${realized}`);\r\n  console.log(`Known only (jnana): ${reports.length - realized}`);\r\n  console.log('');\r\n  for (const report of reports) {\r\n    console.log(`[${report.kind.toUpperCase()}] ${report.topic}`);\r\n    console.log(`   ${report.reason}`);\r\n  }\r\n  console.log('');\r\n  console.log(realized === 0\r\n    ? 'Among thousands who study, one strives; among strivers, one realizes. Be that one.'\r\n    : 'What you have realized cannot be taken from you. It is the eternal seed.');\r\n}\r\n\r\nfunction runDemo(): void {\r\n  const log: StudyLogEntry[] = [\r\n    { topic: 'Non-attachment', studyHours: 12, practiceSessions: 8, daysSincePractice: 2 },\r\n    { topic: 'The witness (sakshi)', studyHours: 20, practiceSessions: 3, daysSincePractice: 40 },\r\n    { topic: 'Breath awareness', studyHours: 6, practiceSessions: 30, daysSincePractice: 0 },\r\n    { topic: 'The gunas', studyHours: 15, practiceSessions: 2, daysSincePractice: 25 }\r\n  ];\r\n  summarize(log);\r\n}\r\n\r\nrunDemo();\n"
+        children: "/**\n * Vijnana Realization Checker — Predictive Processing Edition\n * Based on Jnana-Vijnana Yoga (Gita 7.1-7.3) and predictive\n * processing theory (Clark, 2013): jnana updates predictions\n * weakly; vijnana (embodied practice) updates them strongly.\n * Tracks the gap between intellectual knowledge and lived\n * realization across topics.\n *\n * Run: npx ts-node vijnana-realization-checker.ts\n */\n\ninterface StudyLogEntry {\n  topic: string;\n  studyHours: number;\n  practiceSessions: number;\n  daysSincePractice: number;\n  canDemonstrate: boolean;   // vijnana: can you show, not just tell?\n  confidence: number;        // 0–10: how confident are you in this skill?\n}\n\ninterface RealizationReport {\n  topic: string;\n  kind: 'jnana' | 'vijnana';\n  confidenceGap: number;     // difference between self-assessed and demonstrated\n  reason: string;\n}\n\nconst PRACTICE_THRESHOLD = 5;\nconst RECENCY_LIMIT_DAYS = 7;\n\nfunction classify(entry: StudyLogEntry): RealizationReport {\n  const practiced = entry.practiceSessions >= PRACTICE_THRESHOLD;\n  const stillFresh = entry.daysSincePractice <= RECENCY_LIMIT_DAYS;\n  const demonstrated = entry.canDemonstrate;\n\n  if (practiced && stillFresh && demonstrated) {\n    return {\n      topic: entry.topic,\n      kind: 'vijnana',\n      confidenceGap: 0,\n      reason: 'Embodied knowledge: you can demonstrate this, not just describe it. The brain\\'s predictive model has been updated by direct experience. (7.2)'\n    };\n  }\n\n  const gap = entry.canDemonstrate ? 0 : entry.confidence;\n  return {\n    topic: entry.topic,\n    kind: 'jnana',\n    confidenceGap: gap,\n    reason: gap > 5\n      ? `High confidence but no demonstration — the classic jnana trap. You know about it but cannot show it. Practice to close the gap. (7.1)`\n      : `You know about it, but realization needs recent practice. The map is not the mountain. (7.2)`\n  };\n}\n\nfunction summarize(entries: StudyLogEntry[]): void {\n  const reports = entries.map(classify);\n  const realized = reports.filter((r) => r.kind === 'vijnana').length;\n  const avgGap = Math.round(reports.reduce((s, r) => s + r.confidenceGap, 0) / reports.length);\n\n  console.log('=== Vijnana Realization Checker ===');\n  console.log(`Topics: ${reports.length} | Realized: ${realized} | Known only: ${reports.length - realized}`);\n  console.log(`Average confidence gap: ${avgGap}/10`);\n  console.log('');\n  for (const report of reports) {\n    const icon = report.kind === 'vijnana' ? '[VIJNANA]' : '[JNANA]  ';\n    console.log(`${icon} ${report.topic}`);\n    console.log(`   ${report.reason}`);\n  }\n  console.log('');\n  console.log(realized === 0\n    ? 'Among thousands who study, one strives; among strivers, one realizes. Be that one. (7.3)'\n    : 'What you have realized cannot be taken from you. It is the eternal seed. (7.2)');\n}\n\nconst log: StudyLogEntry[] = [\n  { topic: 'Non-attachment', studyHours: 12, practiceSessions: 8, daysSincePractice: 2, canDemonstrate: true, confidence: 7 },\n  { topic: 'The witness (sakshi)', studyHours: 20, practiceSessions: 3, daysSincePractice: 40, canDemonstrate: false, confidence: 8 },\n  { topic: 'Breath awareness', studyHours: 6, practiceSessions: 30, daysSincePractice: 0, canDemonstrate: true, confidence: 6 },\n  { topic: 'The gunas', studyHours: 15, practiceSessions: 2, daysSincePractice: 25, canDemonstrate: false, confidence: 9 }\n];\n\nsummarize(log);\n"
       })
     })]
   });

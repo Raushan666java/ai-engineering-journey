@@ -3,7 +3,7 @@ id: 06-dhyana-yoga
 slug: /bhagavad-gita/06-dhyana-yoga
 title: "Chapter 6: Dhyana Yoga — The Art of Meditation"
 sidebar_label: "Chapter 6: Dhyana Yoga — The Art of Meditation"
-sidebar_position: 7
+sidebar_position: 6
 ---
 # Chapter 6: Dhyana Yoga — The Art of Meditation
 
@@ -605,6 +605,23 @@ Karma, jnana, bhakti — all three merge in this chapter like rivers. Karma appe
 | **The two doubts and the promise** | 6.33-6.45 | The wind-mind is held by practice and dispassion; the fallen yogi is never lost — effort is seed |
 | **The crown of love** | 6.46-6.47 | Be a yogi; and among yogis, the most united is the one whose inner self merges in love |
 
+> **Science Note — Meditation Neuroscience and the Default Mode Network**
+>
+> Chapter 6 is the Gita's meditation manual. Modern neuroscience confirms its core claims: meditation suppresses the **default mode network** (DMN) — the brain's "wandering mind" circuit (Brewer et al., 2011) — and strengthens the **attention networks** that keep the mind focused. The "wind-mind" that Arjuna describes (6.34) is the DMN: the brain's default state is rumination, and meditation is the practice of overriding it.
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | The seat and posture (6.11–6.13) | Proprioceptive feedback (Farb et al., 2015) | Physical posture affects mental state — a stable seat creates a stable mind through body-brain feedback loops |
+> | Moderation in food and sleep (6.16–6.17) | Circadian rhythm research (Czeisler, 1999) | Sleep deprivation increases DMN activity and emotional reactivity — the Gita's moderation advice is neurologically precise |
+> | The wind-mind (6.34) | Default mode network (Raichle, 2001) | The DMN activates during mind-wandering and deactivates during focused attention — meditation literally quiets the "wind" |
+> | Practice and dispassion (6.35) | Neuroplasticity (Lazar et al., 2005) | 8 weeks of meditation thickens the prefrontal cortex (attention) and shrinks the amygdala (reactivity) — the two hands that hold the wind |
+> | The fallen yogi is never lost (6.40–6.44) | Skill retention (Anderson, 1982) | Procedural memory is never fully lost — the neural pathways created by meditation practice persist even after long breaks |
+> | Bliss beyond the senses (6.21) | Default mode suppression → positive affect (Keng et al., 2011) | When the DMN quiets, experienced meditators report positive affect — the "supreme bliss" of 6.21 correlates with reduced self-referential processing |
+>
+> **Try This:** Set a timer for 10 minutes. Sit with a straight spine (6.12). Focus on the breath. When the mind wanders (it will — this is the DMN activating), gently bring it back. Count how many times you return. This number is your "practice score" — every return strengthens the attention network. The Gita's promise (6.40): no effort is ever lost.
+
+**Cross-Reference:** The meditation of Chapter 6 builds on the witness practice of Chapter 2 (2.54–2.72) and the desire-ladder of Chapter 3 (3.42). The witness observes; the ladder climbs; Chapter 6 teaches the technique of sitting still while the climbing happens.
+
 ## The Inner Journey
 
 ```mermaid
@@ -704,40 +721,28 @@ mindmap
 **Answer: b.**
 </details>
 
-**Q3. According to Shloka 6.35, by what two means is the restless mind restrained?**
+**Q3. Krishna says the mind is "hard to restrain, as the wind" (6.34). Modern neuroscience identifies this "wind" as the default mode network. What does this mean for meditation practice?**
 
-- a. Fasting and silence
-- b. Practice and dispassion
-- c. Ritual and pilgrimage
-- d. Fear and discipline
+- a. Meditation is impossible for most people because the DMN is too strong
+- b. The mind-wandering is normal — every return of attention strengthens the attention network. The practice is the returning, not the staying
+- c. The DMN should be destroyed through extreme asceticism
+- d. Only advanced meditators can quiet the DMN
 
 <details class="tp-qa-card" data-qid="bg6-q3"><summary>Show Answer</summary>
 
-**Answer: b.**
+**Answer: b.** Brewer et al. (2011) found that experienced meditators show reduced DMN activity — but this comes through practice, not force. Every time the mind wanders and you bring it back, you strengthen the prefrontal attention network and weaken the DMN's pull. The "wind" is not the enemy; the practice of returning is the path. This is Krishna's "practice and dispassion" (6.35).
 </details>
 
-**Q4. In Shloka 6.16, Yoga is said to be impossible for which of these?**
+**Q5. Krishna says the fallen yogi is "never lost" (6.40–6.44). How does this map onto skill retention in cognitive science?**
 
-- a. One who eats too much
-- b. One who does not eat at all
-- c. One who sleeps too much
-- d. All of the above
-
-<details class="tp-qa-card" data-qid="bg6-q4"><summary>Show Answer</summary>
-
-**Answer: d.**
-</details>
-
-**Q5. What does Krishna say about the one who falls from Yoga (Shlokas 6.40-6.44)?**
-
-- a. He is destroyed like a torn cloud
-- b. Nothing good is lost; he is carried on by his former practice
-- c. He must start again from the very beginning
-- d. He is banished from the path forever
+- a. It doesn't — skills are always lost if not practiced
+- b. Procedural memory is never fully lost — neural pathways created by practice persist even after long breaks. The meditation practice of last year still benefits you today
+- c. It is only a安慰 promise with no scientific basis
+- d. The fallen yogi must start completely from scratch
 
 <details class="tp-qa-card" data-qid="bg6-q5"><summary>Show Answer</summary>
 
-**Answer: b.**
+**Answer: b.** Anderson (1982) showed that procedural skills (riding a bike, playing an instrument) are stored in the cerebellum and basal ganglia and are never fully lost. The neural pathways created by meditation practice persist — even a single session creates measurable changes in brain structure (Lazar et al., 2005). Krishna's promise is neurologically accurate: no effort is ever lost.
 </details>
 
 **Q6. According to Shloka 6.47, who is the most united among all Yogis?**
@@ -758,44 +763,57 @@ mindmap
 2. **The return-counter (analysis):** For seven days, sit for ten minutes daily and count every time the mind wanders away and you bring it back. Keep a daily tally and plot the trend. Reflect with 6.26: which of those returns felt like failure — and which were, in fact, the practice itself?
 3. **Extend the tool (TypeScript):** Build on the Still-Lamp Logger below by adding a `vairagyaScore` — a daily dispassion rating (0-10) for how easily you released attachments — and a `twoHandsReport` that combines practice consistency with dispassion, testing Krishna's claim in 6.35 that both hands together hold the mind.
 
+### For the Engineer
+
+- **Deep work and dhyana:** The meditation of Chapter 6 is the prototype of deep work (Newport, 2016). The clean seat, the straight spine, the one-pointed mind — these are the same conditions required for flow-state coding. Create a "meditation seat" for your coding: clean desk, no notifications, one task.
+- **The return counter for debugging:** When you're debugging and your mind wanders to the weekend, gently return to the code. Each return strengthens the attention network. The "wind-mind" (6.34) is the same force that distracts you during code review.
+- **No effort is ever lost (6.40):** The time you spent learning a framework that was later deprecated was not wasted. The neural pathways of learning persist. The framework may be gone; the understanding remains.
+
 ## TypeScript Tool: Still-Lamp Meditation Logger
 
 ```typescript
-/*
- * Still-Lamp Meditation Logger
- * Based on Dhyana Yoga (Chapter 6 of the Bhagavad Gita):
- * the mind is a lamp, meditation is the windless place —
- * the flame is steady by nature, only the winds must leave.
- * Tracks daily sittings and wanderings, then reports your
- * steadiness index. Osho's lens: count the returns, not the failures.
+/**
+ * Still-Lamp Meditation Logger — DMN Neuroscience Edition
+ * Based on Dhyana Yoga (Gita 6.10–6.47) and meditation
+ * neuroscience: the default mode network (DMN) is the
+ * brain's "wind-mind" (6.34); meditation suppresses it
+ * and strengthens attention networks (Brewer et al., 2011).
+ *
+ * Tracks: sessions, wanders, returns, DMN proxy score,
+ * and the neuroplasticity trajectory over time.
+ *
+ * Run: npx ts-node still-lamp-meditation-logger.ts
  */
 
 interface Sitting {
   date: string;
   durationMinutes: number;
-  wanders: number;      // how many times the mind wandered away
-  returns: number;      // how many times you brought it home
-  windLevel: number;    // 0-10, how stormy the mind felt
-  moderated: boolean;   // was food/sleep/effort kept in the middle today?
+  wanders: number;
+  returns: number;
+  windLevel: number;        // 0–10: subjective DMN intensity
+  moderated: boolean;       // food/sleep/effort in balance (6.16–6.17)
+  focusQuality: number;     // 0–10: how deep was the attention?
 }
 
 interface SteadinessReport {
   sittings: number;
   totalMinutes: number;
   totalReturns: number;
-  returnRate: number;       // returns per wandering
-  averageWind: number;      // 0-10
-  steadinessIndex: number;  // 0-100
+  returnRate: number;
+  averageWind: number;
+  dmnSuppressionIndex: number;  // 0–100: how well the DMN is being quieted
+  neuroplasticityScore: number; // cumulative benefit over time
   verdict: string;
 }
 
-const MAX_WIND = 10;
-
-function sittingSteadiness(s: Sitting): number {
+function sittingSteadiness(s: Sitting, weekIndex: number): number {
   const returnFactor = s.returns > 0 ? Math.min(1, s.returns / Math.max(1, s.wanders)) : 0;
-  const windFactor = 1 - s.windLevel / MAX_WIND;
+  const windFactor = 1 - s.windLevel / 10;
+  const focusFactor = s.focusQuality / 10;
   const moderationBonus = s.moderated ? 0.1 : 0;
-  const raw = (0.5 * returnFactor + 0.4 * windFactor + moderationBonus) * 100;
+  // Neuroplasticity: later sessions benefit from earlier practice
+  const plasticityBonus = Math.min(0.15, weekIndex * 0.02);
+  const raw = (0.35 * returnFactor + 0.3 * windFactor + 0.2 * focusFactor + moderationBonus + plasticityBonus) * 100;
   return Math.max(0, Math.min(100, Math.round(raw)));
 }
 
@@ -805,11 +823,24 @@ function analyzeWeek(sittings: Sitting[]): SteadinessReport {
   const totalReturns = sittings.reduce((s, x) => s + x.returns, 0);
   const totalWanders = sittings.reduce((s, x) => s + x.wanders, 0);
   const avgWind = sittings.reduce((s, x) => s + x.windLevel, 0) / total;
-  const index = Math.round(sittings.reduce((s, x) => s + sittingSteadiness(x), 0) / total);
+  const dmnSuppressionIndex = Math.round(sittings.reduce((s, x, i) => s + sittingSteadiness(x, i), 0) / total);
 
-  let verdict = 'windy: the flame flickers, and that is only the weather, not the lamp.';
-  if (index >= 75) verdict = 'windless: the lamp rests in its own shelter.';
-  else if (index >= 50) verdict = 'half-sheltered: the flame steadies, but the winds still visit.';
+  // Neuroplasticity: cumulative benefit — each session adds to the previous
+  const neuroplasticityScore = Math.min(100, Math.round(
+    sittings.reduce((cumulative, s, i) => {
+      const sessionBenefit = (s.focusQuality * 2 + s.returns) * (1 + i * 0.1);
+      return cumulative + sessionBenefit;
+    }, 0) / total
+  ));
+
+  let verdict: string;
+  if (dmnSuppressionIndex >= 75) {
+    verdict = 'The lamp rests in its own shelter. DMN activity is low; attention networks are strong. (6.18)';
+  } else if (dmnSuppressionIndex >= 50) {
+    verdict = 'Half-sheltered: the flame steadies, but the winds still visit. Keep practising — neuroplasticity is building. (6.35)';
+  } else {
+    verdict = 'Windy: the DMN is active, and that is only the weather, not the lamp. Count the returns — each one is a neural pathway strengthening. (6.26)';
+  }
 
   return {
     sittings: total,
@@ -817,29 +848,26 @@ function analyzeWeek(sittings: Sitting[]): SteadinessReport {
     totalReturns,
     returnRate: totalWanders > 0 ? Math.round((totalReturns / totalWanders) * 100) / 100 : 0,
     averageWind: Math.round(avgWind * 10) / 10,
-    steadinessIndex: index,
+    dmnSuppressionIndex,
+    neuroplasticityScore,
     verdict
   };
 }
 
-function runDemo(): void {
-  const week: Sitting[] = [
-    { date: '2026-08-20', durationMinutes: 10, wanders: 12, returns: 11, windLevel: 6, moderated: true },
-    { date: '2026-08-21', durationMinutes: 12, wanders: 9, returns: 9, windLevel: 4, moderated: true },
-    { date: '2026-08-22', durationMinutes: 8, wanders: 14, returns: 12, windLevel: 7, moderated: false },
-    { date: '2026-08-23', durationMinutes: 15, wanders: 8, returns: 8, windLevel: 3, moderated: true }
-  ];
+const week: Sitting[] = [
+  { date: '2026-08-20', durationMinutes: 10, wanders: 12, returns: 11, windLevel: 6, moderated: true, focusQuality: 5 },
+  { date: '2026-08-21', durationMinutes: 12, wanders: 9, returns: 9, windLevel: 4, moderated: true, focusQuality: 6 },
+  { date: '2026-08-22', durationMinutes: 8, wanders: 14, returns: 12, windLevel: 7, moderated: false, focusQuality: 4 },
+  { date: '2026-08-23', durationMinutes: 15, wanders: 8, returns: 8, windLevel: 3, moderated: true, focusQuality: 7 },
+  { date: '2026-08-24', durationMinutes: 10, wanders: 7, returns: 7, windLevel: 3, moderated: true, focusQuality: 8 }
+];
 
-  const report = analyzeWeek(week);
-  console.log('=== Still-Lamp Meditation Logger ===');
-  console.log(`Sittings: ${report.sittings}`);
-  console.log(`Total minutes: ${report.totalMinutes}`);
-  console.log(`Total returns: ${report.totalReturns}`);
-  console.log(`Return rate: ${report.returnRate} returns per wander`);
-  console.log(`Average wind: ${report.averageWind}/10`);
-  console.log(`Steadiness index: ${report.steadinessIndex}/100`);
-  console.log(`Verdict: ${report.verdict}`);
-}
+const report = analyzeWeek(week);
 
-runDemo();
+console.log('=== Still-Lamp Meditation Logger ===');
+console.log(`Sessions: ${report.sittings} | Total: ${report.totalMinutes} min`);
+console.log(`Returns: ${report.totalReturns} | Return rate: ${report.returnRate}`);
+console.log(`Avg DMN intensity: ${report.averageWind}/10`);
+console.log(`DMN suppression: ${report.dmnSuppressionIndex}/100 | Neuroplasticity: ${report.neuroplasticityScore}/100`);
+console.log(`Verdict: ${report.verdict}`);
 ```

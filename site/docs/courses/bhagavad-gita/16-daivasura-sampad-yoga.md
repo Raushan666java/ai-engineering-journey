@@ -3,7 +3,7 @@ id: 16-daivasura-sampad-yoga
 slug: /bhagavad-gita/16-daivasura-sampad-yoga
 title: "Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn"
 sidebar_label: "Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn"
-sidebar_position: 17
+sidebar_position: 16
 ---
 # Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn
 
@@ -344,6 +344,22 @@ This chapter is a practical bridge between the gunas of chapter fourteen and the
 | **The three gates** | 16.21–16.22 | Desire, anger and greed are one enemy in three masks — the only abandonment that works is watching |
 | **Shastra as mirror** | 16.23–16.24 | Scripture is a lens for seeing your conditioning, and the teaching ends in action, not withdrawal |
 
+> **Science Note — Dark Triad and Moral Foundations Theory**
+>
+> Chapter 16 catalogs 26 divine qualities and 6 demonic ones. The demonic qualities — hypocrisy, arrogance, anger, cruelty — map directly onto the **dark triad** (Paulhus & Williams, 2002): narcissism (inflated self-importance), Machiavellianism (manipulation), and psychopathy (lack of empathy). The Gita's psychological taxonomy predates modern personality science by 2,500 years.
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | The 26 divine qualities (16.1-16.3) | Moral foundations theory (Haidt, 2012) | The divine qualities map to Haidt's moral foundations: care, fairness, loyalty, authority, sanctity. The "divine" is morally integrated |
+> | The 6 demonic qualities (16.4) | Dark triad (Paulhus & Williams, 2002) | Hypocrisy, arrogance, cruelty map to narcissism, Machiavellianism, psychopathy — the personality disorders of moral disintegration |
+> | "I am the lord" (16.13-16.17) | Narcissistic grandiosity (Campbell et al., 2002) | The inflated ego's claim to ownership is the hallmark of narcissistic personality — the false self that believes it is the source |
+> | The three gates (16.21) | Impulse control research (Logue, 1995) | Desire, anger, greed as the three self-destructive impulses map to the delay discounting literature — the inability to defer gratification |
+> | The way out: watching (16.23-16.24) | Mindfulness-Based Relapse Prevention (Bowen et al., 2014) | Watching the demonic qualities without acting on them is the same mechanism used in addiction recovery — awareness breaks the automaticity of destructive patterns |
+>
+> **Try This:** For one week, notice the three gates (16.21) — desire, anger, greed — as they arise. Do not suppress them; just watch. Notice how watching changes the impulse. This is the Gita's prescription for the demonic qualities — not moral judgment but psychological awareness.
+
+**Cross-Reference:** The demonic qualities of Chapter 16 are the extreme version of the guna-driven behavior of Chapter 14. The gunatita (14.22-14.25) has transcended all three gunas; the demonic person is identified with tamas and rajas, mistaking them for the self.
+
 ## The Inner Journey
 
 ```mermaid
@@ -436,29 +452,29 @@ mindmap
 **Answer: b.** They declare the world asatya (without truth), apratishtha (without basis), anishvara (without God), born of mutual union and desire.
 </details>
 
-**Q3. What are the three gates of hell named in shloka 16.21?**
-- a. Pride, envy, sloth
-- b. Lust, anger, greed
-- c. Fear, doubt, hatred
-- d. Sleep, food, gossip
+**Q3. The three gates of hell — desire, anger, greed (16.21) — map onto what modern psychological concept?**
+
+- a. The three primary emotions
+- b. The dark triad: narcissism (inflated self), Machiavellianism (manipulation), psychopathy (lack of empathy)
+- c. Impulse control failure — the inability to defer gratification across three domains: reward-seeking, threat-avoidance, and resource-hoarding
+- d. The three gunas in disguise
 
 <details class="tp-qa-card" data-qid="bg16-q3"><summary>Show Answer</summary>
 
-**Answer: b.** Kama (desire), krodha (anger) and lobha (greed) are the three gates destructive of the self.
+**Answer: c.** Logue (1995) and others show that self-destructive impulses operate across three domains: reward-seeking (desire/kama), threat-avoidance (anger/krodha), and resource-hoarding (greed/lobha). The Gita's three gates map to the three fundamental impulse-control failures that psychologists study. The prescription — watching (16.23) — is the same mechanism used in relapse prevention.
 </details>
 
-**Q4. How does the Osho-style reading interpret the demonic endowment?**
-- a. As a fixed race of evil souls
-- b. As unexamined patterns of the ego present in every mind
-- c. As a punishment from God
-- d. As the karma of past lives only
+**Q5. Krishna says the demonic person declares "I am the lord, I am the enjoyer" (16.13-16.17). How does this map onto narcissistic personality research?**
 
-<details class="tp-qa-card" data-qid="bg16-q4"><summary>Show Answer</summary>
+- a. It doesn't — narcissism is a modern concept
+- b. Narcissistic grandiosity (Campbell et al., 2002) involves inflated self-importance, entitlement, and exploitation of others — the exact traits Krishna describes in the "inflated I" of 16.13-16.17
+- c. All confident people are narcissistic
+- d. Narcissism is a mental illness, not a spiritual quality
 
-**Answer: b.** The demonic is the psychology of unconsciousness — what happens to desire when it is never looked at; it is a current in every person.
+<details class="tp-qa-card" data-qid="bg16-q5"><summary>Show Answer</summary>
+
+**Answer: b.** Campbell et al. (2002) define narcissistic grandiosity as the belief in one's specialness and entitlement. Krishna's description — "I am the lord, I am the enjoyer, I am powerful, I am noble" (16.13-16.17) — is a textbook portrait of narcissistic personality. The Gita's insight: this inflation is not strength but the most impoverished state, because it is identification with the false self.
 </details>
-
-**Q5. What does Krishna tell Arjuna in shloka 16.5?**
 - a. That he is doomed by his doubts
 - b. That he is born with the divine endowment and should not grieve
 - c. That he must leave the battlefield
@@ -486,24 +502,37 @@ mindmap
 2. **The three-gates watch**: for three days, note every moment desire, anger or greed arose — not to suppress them, but to watch them. Write what you saw in each episode.
 3. **TypeScript exercise**: extend the Profiler with a `trend()` method that compares two weeks of scores and reports whether the daivi score is rising, and add a `qualityOfDay()` suggestion based on the dominant asuri pattern.
 
+### For the Engineer
+
+**The dark triad in code review.** Krishna's description of the demonic personality — arrogance, cruelty, manipulation — is an exact match for Paulhus & Williams' (2002) dark triad. In engineering culture, you will encounter this pattern: the colleague who hoards information for leverage, the lead who takes credit for others' work, the manager who punishes those below while flattering those above.
+
+The Gita's diagnostic is precise: the demonic is not a fixed personality type but an unconscious pattern — desire that has never been watched. The three gates (16.21) — desire, anger, greed — are the self-destructive impulses that every person carries. The prescription is not moral judgment but psychological awareness (16.23): watch the pattern, and it loses its grip.
+
+**Practical bridge:** In your next code review, notice the three gates in yourself — the desire to be right, the anger at criticism, the greed for recognition. Watch them without acting. This is the Gita's prescription for the demonic — and it works in the office as well as in the ashram.
+
 ## TypeScript Tool: Daivi-Asuri Profiler
 
 ```typescript
-/*
- * Daivi-Asuri Profiler
- * Chapter 16, Bhagavad Gita: Daivasura Sampad Yoga
- * Scores a week of self-observations against the 26 divine and
- * 6 demonic endowments (16.1-16.4).
- * Osho lens: neither list is a verdict; both are mirrors.
+/**
+ * Daivi-Asuri Profiler — Dark Triad & Moral Foundations Edition
+ * Based on Daivasura Sampad Yoga (Gita 16.1-16.24) and the
+ * dark triad (Paulhus & Williams, 2002): narcissism,
+ * Machiavellianism, psychopathy. The 26 divine and 6 demonic
+ * endowments map to moral foundations (Haidt, 2012): care,
+ * fairness, loyalty, authority, sanctity.
+ *
+ * Run: npx ts-node daivi-asuri-profiler.ts
  */
 
 interface Quality {
   key: string;
   label: string;
   kind: 'daivi' | 'asuri';
+  darkTriad?: string;
+  moralFoundation?: string;
 }
 
-interface DailyObservation {
+interface DayObservation {
   date: string;
   daiviKeys: string[];
   asuriKeys: string[];
@@ -514,47 +543,49 @@ interface ProfileResult {
   daiviScore: number;
   asuriScore: number;
   dominant: 'daivi' | 'asuri' | 'balanced';
+  darkTriadScore: number;
+  moralFoundationScore: number;
   strongestDaivi: string;
   strongestAsuri: string;
-  oshoNote: string;
+  message: string;
 }
 
 const QUALITIES: Quality[] = [
-  { key: 'fearlessness', label: 'Fearlessness', kind: 'daivi' },
-  { key: 'purity', label: 'Purity of heart', kind: 'daivi' },
-  { key: 'steadfastness', label: 'Steadfastness in knowledge', kind: 'daivi' },
-  { key: 'charity', label: 'Charity', kind: 'daivi' },
-  { key: 'selfControl', label: 'Self-control', kind: 'daivi' },
-  { key: 'sacrifice', label: 'Sacrifice', kind: 'daivi' },
-  { key: 'study', label: 'Study of scriptures', kind: 'daivi' },
-  { key: 'austerity', label: 'Austerity', kind: 'daivi' },
-  { key: 'straightforwardness', label: 'Straightforwardness', kind: 'daivi' },
-  { key: 'ahimsa', label: 'Non-violence', kind: 'daivi' },
-  { key: 'truth', label: 'Truthfulness', kind: 'daivi' },
-  { key: 'noAnger', label: 'Freedom from anger', kind: 'daivi' },
-  { key: 'renunciation', label: 'Renunciation', kind: 'daivi' },
-  { key: 'peace', label: 'Peacefulness', kind: 'daivi' },
-  { key: 'noSlander', label: 'Absence of slander', kind: 'daivi' },
-  { key: 'compassion', label: 'Compassion', kind: 'daivi' },
-  { key: 'nonCovetousness', label: 'Non-covetousness', kind: 'daivi' },
-  { key: 'gentleness', label: 'Gentleness', kind: 'daivi' },
-  { key: 'modesty', label: 'Modesty', kind: 'daivi' },
-  { key: 'steadiness', label: 'Steadiness of mind', kind: 'daivi' },
-  { key: 'vigour', label: 'Vigour', kind: 'daivi' },
-  { key: 'forgiveness', label: 'Forgiveness', kind: 'daivi' },
-  { key: 'fortitude', label: 'Fortitude', kind: 'daivi' },
-  { key: 'cleanliness', label: 'Purity of body and mind', kind: 'daivi' },
-  { key: 'noMalice', label: 'Absence of malice', kind: 'daivi' },
-  { key: 'noPride', label: 'Absence of over-pride', kind: 'daivi' },
-  { key: 'hypocrisy', label: 'Hypocrisy', kind: 'asuri' },
-  { key: 'arrogance', label: 'Arrogance', kind: 'asuri' },
-  { key: 'conceit', label: 'Self-conceit', kind: 'asuri' },
-  { key: 'anger', label: 'Anger', kind: 'asuri' },
-  { key: 'harshness', label: 'Harshness', kind: 'asuri' },
-  { key: 'ignorance', label: 'Ignorance', kind: 'asuri' }
+  { key: 'fearlessness', label: 'Fearlessness', kind: 'daivi', moralFoundation: 'authority' },
+  { key: 'purity', label: 'Purity of heart', kind: 'daivi', moralFoundation: 'sanctity' },
+  { key: 'steadfastness', label: 'Steadfastness in knowledge', kind: 'daivi', moralFoundation: 'authority' },
+  { key: 'charity', label: 'Charity', kind: 'daivi', moralFoundation: 'care' },
+  { key: 'selfControl', label: 'Self-control', kind: 'daivi', moralFoundation: 'authority' },
+  { key: 'sacrifice', label: 'Sacrifice', kind: 'daivi', moralFoundation: 'sanctity' },
+  { key: 'study', label: 'Study of scriptures', kind: 'daivi', moralFoundation: 'authority' },
+  { key: 'austerity', label: 'Austerity', kind: 'daivi', moralFoundation: 'sanctity' },
+  { key: 'straightforwardness', label: 'Straightforwardness', kind: 'daivi', moralFoundation: 'fairness' },
+  { key: 'ahimsa', label: 'Non-violence', kind: 'daivi', moralFoundation: 'care' },
+  { key: 'truth', label: 'Truthfulness', kind: 'daivi', moralFoundation: 'fairness' },
+  { key: 'noAnger', label: 'Freedom from anger', kind: 'daivi', moralFoundation: 'care' },
+  { key: 'renunciation', label: 'Renunciation', kind: 'daivi', moralFoundation: 'sanctity' },
+  { key: 'peace', label: 'Peacefulness', kind: 'daivi', moralFoundation: 'care' },
+  { key: 'noSlander', label: 'Absence of slander', kind: 'daivi', moralFoundation: 'fairness' },
+  { key: 'compassion', label: 'Compassion', kind: 'daivi', moralFoundation: 'care' },
+  { key: 'nonCovetousness', label: 'Non-covetousness', kind: 'daivi', moralFoundation: 'fairness' },
+  { key: 'gentleness', label: 'Gentleness', kind: 'daivi', moralFoundation: 'care' },
+  { key: 'modesty', label: 'Modesty', kind: 'daivi', moralFoundation: 'authority' },
+  { key: 'steadiness', label: 'Steadiness of mind', kind: 'daivi', moralFoundation: 'authority' },
+  { key: 'vigour', label: 'Vigour', kind: 'daivi', moralFoundation: 'care' },
+  { key: 'forgiveness', label: 'Forgiveness', kind: 'daivi', moralFoundation: 'fairness' },
+  { key: 'fortitude', label: 'Fortitude', kind: 'daivi', moralFoundation: 'authority' },
+  { key: 'cleanliness', label: 'Purity of body and mind', kind: 'daivi', moralFoundation: 'sanctity' },
+  { key: 'noMalice', label: 'Absence of malice', kind: 'daivi', moralFoundation: 'care' },
+  { key: 'noPride', label: 'Absence of over-pride', kind: 'daivi', moralFoundation: 'authority' },
+  { key: 'hypocrisy', label: 'Hypocrisy', kind: 'asuri', darkTriad: 'Machiavellianism', moralFoundation: 'fairness' },
+  { key: 'arrogance', label: 'Arrogance', kind: 'asuri', darkTriad: 'narcissism', moralFoundation: 'authority' },
+  { key: 'conceit', label: 'Self-conceit', kind: 'asuri', darkTriad: 'narcissism', moralFoundation: 'authority' },
+  { key: 'anger', label: 'Anger', kind: 'asuri', darkTriad: 'psychopathy', moralFoundation: 'care' },
+  { key: 'harshness', label: 'Harshness', kind: 'asuri', darkTriad: 'psychopathy', moralFoundation: 'care' },
+  { key: 'ignorance', label: 'Ignorance', kind: 'asuri', darkTriad: 'psychopathy', moralFoundation: 'care' }
 ];
 
-function scoreWeek(observations: DailyObservation[]): ProfileResult {
+function scoreWeek(observations: DayObservation[]): ProfileResult {
   const daiviCount = new Map<string, number>();
   const asuriCount = new Map<string, number>();
   for (const day of observations) {
@@ -563,17 +594,20 @@ function scoreWeek(observations: DailyObservation[]): ProfileResult {
   }
   const daiviScore = [...daiviCount.values()].reduce((a, b) => a + b, 0);
   const asuriScore = [...asuriCount.values()].reduce((a, b) => a + b, 0);
+  const darkTriadScore = Math.round((asuriScore / Math.max(daiviScore + asuriScore, 1)) * 100);
+  const moralFoundationScore = Math.round((daiviScore / Math.max(daiviScore + asuriScore, 1)) * 100);
   const strongestDaivi = labelOf(maxKey(daiviCount));
   const strongestAsuri = labelOf(maxKey(asuriCount));
   const dominant: ProfileResult['dominant'] =
     daiviScore > asuriScore ? 'daivi' : daiviScore < asuriScore ? 'asuri' : 'balanced';
-  const oshoNote =
-    dominant === 'asuri'
-      ? 'Your demonic current is loud this week. Do not fight it; watch it. What is seen burns out.'
-      : dominant === 'daivi'
-        ? 'Awareness is rising. Remember: the moment you believe you are good, the demonic grows in the unexamined corner. Keep watching.'
-        : 'A knife-edge balance. One honest hour of witnessing will tip it toward light.';
-  return { days: observations.length, daiviScore, asuriScore, dominant, strongestDaivi, strongestAsuri, oshoNote };
+
+  const messages: Record<ProfileResult['dominant'], string> = {
+    asuri: 'The demonic patterns are active — the three gates are open (16.21). Watch them without acting; that is the beginning of freedom.',
+    daivi: 'The divine endowments are rising. But the moment you believe you are good, the demonic grows in the unexamined corner. Keep watching.',
+    balanced: 'A knife-edge balance. One honest hour of witnessing will tip it toward light.'
+  };
+
+  return { days: observations.length, daiviScore, asuriScore, dominant, darkTriadScore, moralFoundationScore, strongestDaivi, strongestAsuri, message: messages[dominant] };
 
   function maxKey(map: Map<string, number>): string {
     let best = ''; let bestCount = 0;
@@ -585,7 +619,7 @@ function scoreWeek(observations: DailyObservation[]): ProfileResult {
   }
 }
 
-const week: DailyObservation[] = [
+const week: DayObservation[] = [
   { date: '2026-08-18', daiviKeys: ['fearlessness', 'truth'], asuriKeys: ['arrogance'] },
   { date: '2026-08-19', daiviKeys: ['compassion', 'noAnger'], asuriKeys: ['anger'] },
   { date: '2026-08-20', daiviKeys: ['fortitude'], asuriKeys: ['conceit', 'ignorance'] }
@@ -594,9 +628,9 @@ const week: DailyObservation[] = [
 const report = scoreWeek(week);
 console.log('=== Daivi-Asuri Profiler ===');
 console.log(`Days observed: ${report.days}`);
-console.log(`Daivi score: ${report.daiviScore} | Asuri score: ${report.asuriScore}`);
-console.log(`Strongest divine trace: ${report.strongestDaivi}`);
-console.log(`Strongest demonic trace: ${report.strongestAsuri}`);
-console.log(`Dominant current: ${report.dominant}`);
-console.log(`Osho: ${report.oshoNote}`);
+console.log(`Daivi: ${report.daiviScore} | Asuri: ${report.asuriScore}`);
+console.log(`Dark Triad: ${report.darkTriadScore}/100 | Moral Foundations: ${report.moralFoundationScore}/100`);
+console.log(`Strongest divine: ${report.strongestDaivi} | Strongest demonic: ${report.strongestAsuri}`);
+console.log(`Dominant: ${report.dominant}`);
+console.log(report.message);
 ```

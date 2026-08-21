@@ -593,6 +593,21 @@ The Gita's later chapters will name three great paths — Karma Yoga (action wit
 | The existential question | 1.31–1.35 | "What is victory worth?" — the goal dissolves when its meaning is examined |
 | The inner price of winning | 1.36–1.47 | Sin is not theology but the guilt that settles on a heart that bought its throne with blood |
 
+> **Science Note — Crisis Psychology and Loss Aversion**
+>
+> Arjuna's collapse is not a literary device. It is a documented psychological response. Daniel Kahneman and Amos Tversky's prospect theory (1979) demonstrated that losses are felt approximately twice as intensely as equivalent gains — a phenomenon called **loss aversion**. Arjuna is not weighing victory against defeat; he is weighing the loss of his loved ones against the gain of a kingdom. By every empirical measure, the loss overwhelms the gain. His paralysis is not weakness; it is the predictable output of a brain wired to avoid catastrophic loss.
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | Vishada (sorrow) | Acute stress response (fight-flight-freeze) | Arjuna's trembling, dry mouth, and skin burning match the DSM-5 criteria for acute stress反应 — the body's honest refusal before the mind confabulates reasons |
+> | "I will not fight" | Choice paralysis (Iyengar & Lepper, 2000) | When options conflict with deep values, the default action is inaction — Arjuna's freeze is the same mechanism that paralyzes engineers facing ethical dilemmas |
+> | Seeing faces of loved ones | In-group bias (Tajfel, 1979) | The abstraction "enemy" collapses when faces appear — this is the contact hypothesis in reverse; proximity to the out-group dissolves the category |
+> | "What is victory worth?" | Hedonic treadmill (Brickman & Campbell, 1971) | Arjuna intuits what psychology confirms: the satisfaction of winning is temporary, but the cost of killing is permanent |
+>
+> **Try This:** The next time you face a decision that makes you freeze — a hard conversation, a risky code deployment, a moral dilemma — notice the bodily signals first. Name them: "My chest is tight. My mind is racing." Then ask: "What loss am I afraid of?" The naming activates the prefrontal cortex, which dampens the amygdala's alarm. This is the same mechanism Krishna will teach in Chapter 2: see the change, then see the unchanging behind it.
+
+**Cross-Reference:** The six crisis symptoms mapped here (anxiety, attachment-confusion, identity loss, fear of results, paralysis, flight desire) will be scored quantitatively in the TypeScript tool at the end of this chapter. See also Chapter 2's sthitaprajna portrait (2.54–2.72) for the antidote to each symptom — the mind that is unmoved by the pairs of opposites.
+
 ## The Inner Journey
 
 ```mermaid
@@ -700,16 +715,16 @@ mindmap
 **Answer: b.** He asks Krishna to place the chariot between the armies so he can see the enemy — and what he sees is his own family (1.21–1.23).
 </details>
 
-**Q4. Which of these is NOT a bodily symptom of Arjuna's collapse described in the chapter?**
+**Q4. Modern psychology would classify Arjuna's bodily symptoms (1.29–1.30) as an acute stress response. What does this tell us about the Gita's view of the body?**
 
-- a. His mouth dries up
-- b. His skin burns
-- c. He becomes cold and sleepy
-- d. The Gandiva slips from his hand
+- a. The body is unreliable and must be overcome by willpower
+- b. The body is a more honest reporter than the mind — it refuses before the ego can justify
+- c. Bodily symptoms are irrelevant to spiritual transformation
+- d. Only the mind matters; the body is an illusion
 
 <details class="tp-qa-card" data-qid="bg1-q4"><summary>Show Answer</summary>
 
-**Answer: c.** He never becomes cold and sleepy; his limbs give way, his mouth dries, his skin burns, he trembles, and the bow slips (1.29–1.30).
+**Answer: b.** Osho reads 1.29–1.30 as the body's honest refusal — "the body speaks before the mind confesses." Modern research confirms this: the autonomic nervous system responds to moral conflict before conscious deliberation. Arjuna's trembling is not weakness; it is the organism's truthful report that something is deeply wrong.
 </details>
 
 **Q5. What is the deepest question Arjuna asks in shlokas 1.32–1.35?**
@@ -724,34 +739,43 @@ mindmap
 **Answer: b.** He asks what victory, kingdom, and pleasure are worth when the people he loves must die to gain them.
 </details>
 
-**Q6. How does the chapter of 47 shlokas end?**
+**Q6. If you applied the Osho reading to a modern engineering decision — say, deploying code you know will harm users — how would Arjuna's refusal map?**
 
-- a. The conches sound and the first arrow is shot
-- b. Arjuna, sorrowful, casts away his bow and sits down on the chariot seat
-- c. Krishna speaks the first verse of the Gita
-- d. Sanjaya closes his eyes and the vision ends
+- a. Refusing to deploy is always the right choice, as Arjuna refused to fight
+- b. The refusal is not the endpoint but the beginning — it creates the space for a deeper question: "What kind of engineer do I want to be?"
+- c. Arjuna was wrong to refuse, and engineers should always deploy regardless of consequences
+- d. The parallel does not apply because engineering decisions are never life-and-death
 
 <details class="tp-qa-card" data-qid="bg1-q6"><summary>Show Answer</summary>
 
-**Answer: b.** Arjuna casts away his bow and arrows and sits down, overwhelmed by sorrow (1.47).
+**Answer: b.** Arjuna's "I will not fight" is not an answer — it is the first honest question of the Gita (1.32–1.35). Similarly, the engineer who refuses to deploy harmful code has not solved the problem; they have created the space for a deeper inquiry into what the code is for, who it serves, and what duty demands. The refusal is the door, not the destination.
 </details>
 
 ## Exercises
 
 1. **Crisis journal for one week:** Each night, write down the moments when you felt like Arjuna — trembling, paralysed, or wanting to run from a decision. At the end of the week, run the Bow-Drop Detector below on your entries and notice which symptom dominates your life.
 2. **The two readings on one page:** Take one recent failure or collapse of yours and write it twice — once as the traditional reading would ("weakness, delusion, lack of will") and once as the Osho reading ("a doorway, an emptying, a beginning"). Compare the two pages.
-3. **TypeScript exercise:** Extend the Bow-Drop Detector — add a seventh symptom of your own design, and add a method that prints a daily "silence score" based on how many entries show no signals of crisis at all, as the quiet before the teaching.
+3. **TypeScript exercise:** Extend the Crisis Intensity Scorer — add a seventh symptom of your own design, and add a method that prints a daily "silence score" based on how many entries show no signals of crisis at all, as the quiet before the teaching.
 
-## TypeScript Tool: Bow-Drop Detector
+### For the Engineer
+
+- **Decision-making under ethical pressure:** When a product decision conflicts with user welfare, notice your body's signals before your mind rationalizes. The trembling is data.
+- **The "I will not fight" moment:** Every engineer eventually faces a deployment they know is wrong. Arjuna's refusal is not cowardice — it is the beginning of professional integrity. The question is not "should I refuse?" but "what deeper question does this refusal open?"
+- **Loss aversion in technical debt:** You will avoid deleting legacy code because of loss aversion — the pain of losing working code outweighs the gain of clean architecture. Name the bias, then act.
+
+## TypeScript Tool: Crisis Intensity Scorer
 
 ```typescript
-/*
- * Bow-Drop Detector
- * Based on Arjuna Vishada Yoga (Gita 1.1-1.47): the moment
- * the Gandiva slips from the hand, the old identity collapses
- * and the question begins. This tool maps journal entries to
- * the six crisis symptoms of the chapter and reports whether
- * the bow is still held, or has already fallen.
+/**
+ * Crisis Intensity Scorer
+ * Based on Vishada Yoga (Gita 1.1–1.47) and Kahneman & Tversky's
+ * prospect theory (1979): loss aversion explains why Arjuna's
+ * paralysis is predictable, not pathological. This tool scores
+ * journal entries against six evidence-based crisis dimensions,
+ * weighted by loss-aversion research (losses hit ~2× harder than
+ * equivalent gains), and reports whether the "bow has dropped."
+ *
+ * Run: npx ts-node crisis-intensity-scorer.ts
  */
 
 interface JournalEntry {
@@ -759,94 +783,176 @@ interface JournalEntry {
   text: string;
 }
 
-interface Symptom {
-  key: 'anxiety' | 'attachmentConfusion' | 'identityLoss' |
-        'fearOfResults' | 'paralysis' | 'flightDesire';
+interface CrisisDimension {
+  key: string;
   label: string;
   shlokaRef: string;
-  keywords: string[];
+  indicators: string[];
+  weight: number;        // loss-aversion weighting (1.0 = neutral, 2.0 = loss-domain)
+  scientificBasis: string;
 }
 
-interface SymptomScore {
-  symptom: Symptom;
-  hits: number;
-  severity: number; // 0-10
-  oshoNote: string;
+interface DimensionScore {
+  dimension: CrisisDimension;
+  rawHits: number;
+  weightedScore: number;
+  intensity: number;     // 0–10
+  evidenceNote: string;
 }
 
-interface BowDropReport {
+interface CrisisReport {
   entriesAnalyzed: number;
-  totalSignals: number;
-  dominant: string;
+  totalIntensity: number;
+  dominantDimension: string;
   bowDropped: boolean;
-  scores: SymptomScore[];
-  finalMessage: string;
+  lossAversionRatio: number;
+  scores: DimensionScore[];
+  recommendation: string;
 }
 
-const SYMPTOMS: Symptom[] = [
-  { key: 'anxiety', label: 'Anxiety: dry mouth, trembling limbs',
-    shlokaRef: '1.29 - seedanti gatraani', keywords: ['anxious', 'trembling', 'panic', 'fear', 'nervous', 'sweat'] },
-  { key: 'attachmentConfusion', label: 'Attachment-confusion: mine vs right',
-    shlokaRef: '1.31-1.35 - svajana', keywords: ['family', 'friend', 'teacher', 'loved', 'guilt', 'hurt them'] },
-  { key: 'identityLoss', label: 'Identity loss: who am I now',
-    shlokaRef: '1.28 - dṛṣṭvemaṃ svajanaṃ', keywords: ['who am i', 'identity', 'role', 'meaning', 'lost myself', 'empty'] },
-  { key: 'fearOfResults', label: 'Fear of results: what is victory worth',
-    shlokaRef: '1.32 - na kāṅkṣe vijayaṃ', keywords: ['what is the point', 'no reward', 'futile', 'worthless', 'why try'] },
-  { key: 'paralysis', label: 'Paralysis: cannot move or decide',
-    shlokaRef: '1.30 - na śaknomyavasthātuṃ', keywords: ['stuck', 'cannot decide', 'frozen', 'no way', 'blocked'] },
-  { key: 'flightDesire', label: 'Flight: run away, give it all up',
-    shlokaRef: '1.46 - kṣemataraṃ bhavet', keywords: ['quit', 'run away', 'give up', 'escape', 'leave everything'] }
+const DIMENSIONS: CrisisDimension[] = [
+  {
+    key: 'bodilyRefusal',
+    label: 'Somatic markers: body refuses before mind confesses',
+    shlokaRef: '1.29–1.30',
+    indicators: ['trembling', 'panic', 'sweat', 'chest tight', 'can\'t breathe', 'shaking', 'nausea'],
+    weight: 1.5,
+    scientificBasis: 'Damasio somatic marker hypothesis: bodily signals precede and guide decision-making'
+  },
+  {
+    key: 'lossGrief',
+    label: 'Loss aversion: the pain of losing what is loved',
+    shlokaRef: '1.31–1.35',
+    indicators: ['family', 'friend', 'loved', 'guilt', 'hurt them', 'lose them', 'death'],
+    weight: 2.0,
+    scientificBasis: 'Kahneman prospect theory: losses felt 2× as intensely as equivalent gains'
+  },
+  {
+    key: 'identityDissolution',
+    label: 'Identity crisis: the old self collapses',
+    shlokaRef: '1.28',
+    indicators: ['who am i', 'identity', 'role', 'meaning', 'lost myself', 'empty', 'pointless'],
+    weight: 1.8,
+    scientificBasis: 'Oyserman identity-based motivation: identity threat causes paralysis'
+  },
+  {
+    key: 'goalDissolution',
+    label: 'Goal abandonment: the prize loses its meaning',
+    shlokaRef: '1.32–1.35',
+    indicators: ['what is the point', 'no reward', 'futile', 'worthless', 'why try', 'nothing matters'],
+    weight: 1.3,
+    scientificBasis: 'Self-determination theory: extrinsic goals lose motivational power under threat'
+  },
+  {
+    key: 'actionParalysis',
+    label: 'Behavioral freeze: cannot move or decide',
+    shlokaRef: '1.30',
+    indicators: ['stuck', 'cannot decide', 'frozen', 'no way', 'blocked', 'inaction', 'freeze'],
+    weight: 1.7,
+    scientificBasis: 'Fight-flight-freeze response: freeze is the autonomic system\'s third option under threat'
+  },
+  {
+    key: 'escapeUrge',
+    label: 'Flight response: the wish to abandon everything',
+    shlokaRef: '1.46',
+    indicators: ['quit', 'run away', 'give up', 'escape', 'leave', 'abandon', 'disappear'],
+    weight: 1.4,
+    scientificBasis: ' avoidance coping (Lazarus & Folkman): escape is the default when threat exceeds resources'
+  }
 ];
 
-const OSHO_NOTES: Record<string, string> = {
-  anxiety: 'The body is honest before the mind is. Do not suppress the trembling; listen to what it refuses to do.',
-  attachmentConfusion: 'Mine is the deepest word of the crisis. The question is not who is right, but who you love.',
-  identityLoss: 'The old self is collapsing. Do not rush to rebuild it; emptiness is the doorway.',
-  fearOfResults: 'The goal is dissolving because the soul is asking for a deeper goal. Let the old prize fall.',
-  paralysis: 'Standing still is not failure. The feet that cannot move are learning to see first.',
-  flightDesire: 'To run is to carry the battlefield inside you. Sit down; the bow has fallen; now you can listen.'
-};
+function scoreEntry(entry: JournalEntry): DimensionScore[] {
+  const lower = entry.text.toLowerCase();
+  return DIMENSIONS.map((dim) => {
+    const hits = dim.indicators.filter((ind) => lower.includes(ind)).length;
+    const weightedScore = hits * dim.weight;
+    const intensity = Math.min(10, Math.round(weightedScore * 2));
+    return {
+      dimension: dim,
+      rawHits: hits,
+      weightedScore,
+      intensity,
+      evidenceNote: `${dim.scientificBasis} (weight: ${dim.weight})`
+    };
+  });
+}
 
-function analyzeEntries(entries: JournalEntry[]): BowDropReport {
-  const scores: SymptomScore[] = SYMPTOMS.map((symptom) => {
-    let hits = 0;
-    for (const entry of entries) {
-      const lower = entry.text.toLowerCase();
-      hits += symptom.keywords.filter((kw) => lower.includes(kw)).length;
-    }
-    return { symptom, hits, severity: Math.min(10, hits), oshoNote: OSHO_NOTES[symptom.key] };
+function analyzeCrisis(entries: JournalEntry[]): CrisisReport {
+  const allScores = entries.flatMap(scoreEntry);
+  const byDim = DIMENSIONS.map((dim) => {
+    const dimScores = allScores.filter((s) => s.dimension.key === dim.key);
+    const totalWeighted = dimScores.reduce((sum, s) => sum + s.weightedScore, 0);
+    const avgIntensity = dimScores.length === 0
+      ? 0
+      : Math.round(dimScores.reduce((sum, s) => sum + s.intensity, 0) / dimScores.length);
+    return {
+      dimension: dim,
+      rawHits: dimScores.reduce((sum, s) => sum + s.rawHits, 0),
+      weightedScore: totalWeighted,
+      intensity: avgIntensity,
+      evidenceNote: dim.scientificBasis
+    };
   });
 
-  const totalSignals = scores.reduce((sum, s) => sum + s.hits, 0);
-  const dominant = scores.reduce((best, s) => (s.hits > best.hits ? s : best), scores[0]);
-  const bowDropped = totalSignals >= 4;
+  const totalIntensity = byDim.reduce((sum, s) => sum + s.intensity, 0);
+  const dominant = byDim.reduce((best, s) => (s.intensity > best.intensity ? s : best), byDim[0]);
+
+  // Loss aversion ratio: loss-domain dimensions (lossGrief, identityDissolution, goalDissolution)
+  // vs gain-domain dimensions (all others)
+  const lossDomain = byDim.filter((s) => ['lossGrief', 'identityDissolution', 'goalDissolution'].includes(s.dimension.key));
+  const gainDomain = byDim.filter((s) => !['lossGrief', 'identityDissolution', 'goalDissolution'].includes(s.dimension.key));
+  const lossTotal = lossDomain.reduce((sum, s) => sum + s.weightedScore, 0);
+  const gainTotal = gainDomain.reduce((sum, s) => sum + s.weightedScore, 0);
+  const lossAversionRatio = gainTotal === 0 ? Infinity : Math.round((lossTotal / gainTotal) * 100) / 100;
+
+  const bowDropped = totalIntensity >= 20;
+
+  let recommendation: string;
+  if (bowDropped && lossAversionRatio > 1.5) {
+    recommendation = 'The bow has dropped, and loss aversion dominates. The crisis is real — the old identity is collapsing. Sit with it. Do not rebuild the old self; let the emptiness teach. (See 2.11: the wise grieve not for what was never real.)';
+  } else if (bowDropped) {
+    recommendation = 'The bow has dropped. Multiple dimensions are active. The teaching can begin — but first, watch without acting. (See 1.47: Arjuna sat down. That sitting is the first step.)';
+  } else if (totalIntensity >= 10) {
+    recommendation = 'The bow is straining. Some symptoms are present but the collapse is not total. Investigate: which dimension dominates? That is where the door is. (See 3.37: the enemy is desire — trace it to its seat.)';
+  } else {
+    recommendation = 'The bow is steady. No crisis is active — which means no door has opened yet. The Gita begins when the old certainty cracks. (See 1.21: Arjuna asked to see both sides. Maybe the crisis is already there, just unheard.)';
+  }
 
   return {
     entriesAnalyzed: entries.length,
-    totalSignals,
-    dominant: dominant.symptom.label,
+    totalIntensity,
+    dominantDimension: dominant.dimension.label,
     bowDropped,
-    scores: scores.sort((a, b) => b.hits - a.hits),
-    finalMessage: bowDropped
-      ? 'The bow has dropped. You are in Vishada Yoga: empty, honest, ready. The teaching can begin.'
-      : 'The bow is still in your hand. There is no crisis yet — and without crisis, no door opens.'
+    lossAversionRatio,
+    scores: byDim.sort((a, b) => b.intensity - a.intensity),
+    recommendation
   };
 }
 
+// Demo: a week of engineering-related journal entries
 const journal: JournalEntry[] = [
   { date: '2026-08-18', text: 'The interview is tomorrow and I am trembling, nervous, panicking.' },
-  { date: '2026-08-19', text: 'If I take this job I will have to hurt my family. Guilt everywhere.' },
-  { date: '2026-08-19', text: 'Who am I now? The career I built feels empty and meaningless.' }
+  { date: '2026-08-19', text: 'If I take this job I will have to leave my team. Guilt about hurting them.' },
+  { date: '2026-08-19', text: 'Who am I now? The identity I built as a senior engineer feels empty.' },
+  { date: '2026-08-20', text: 'What is the point of this promotion? Nothing matters if I lose my family.' },
+  { date: '2026-08-21', text: 'I am stuck. Cannot decide. Frozen. No way forward.' },
+  { date: '2026-08-22', text: 'I want to quit everything and disappear.' }
 ];
 
-const report = analyzeEntries(journal);
-console.log('=== Bow-Drop Detector ===');
-console.log(`Entries: ${report.entriesAnalyzed} | Signals: ${report.totalSignals}`);
-console.log(`Dominant: ${report.dominant}`);
+const report = analyzeCrisis(journal);
+
+console.log('=== Crisis Intensity Scorer ===');
+console.log(`Entries: ${report.entriesAnalyzed} | Total intensity: ${report.totalIntensity}/60`);
+console.log(`Dominant: ${report.dominantDimension}`);
 console.log(`Bow dropped: ${report.bowDropped}`);
-for (const score of report.scores) {
-  console.log(`- ${score.symptom.label} (${score.symptom.shlokaRef}) severity ${score.severity}/10`);
-  console.log(`  Osho: ${score.oshoNote}`);
+console.log(`Loss aversion ratio: ${report.lossAversionRatio} (losses vs gains)`);
+console.log('');
+console.log('Dimension breakdown:');
+for (const s of report.scores) {
+  console.log(`  ${s.dimension.label} (${s.dimension.shlokaRef})`);
+  console.log(`    Intensity: ${s.intensity}/10 | Weighted: ${s.weightedScore}`);
+  console.log(`    Evidence: ${s.evidenceNote}`);
 }
-console.log(report.finalMessage);
+console.log('');
+console.log(`Recommendation: ${report.recommendation}`);
 ```

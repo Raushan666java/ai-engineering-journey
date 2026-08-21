@@ -538,6 +538,21 @@ The Gita's three great paths — karma (action), bhakti (love), jnana (knowledge
 | **The inventory of sacrifice** | 4.25-4.33 | Every offering is born of action; all rivers end in the ocean of knowledge |
 | **Doubt, faith, and the sword** | 4.34-4.42 | Doubt as residence ruins; doubt as a question opens; knowledge cuts the knot, then you arise |
 
+> **Science Note — Embodied Cognition and the Somatic Marker Hypothesis**
+>
+> Chapter 4's central paradox — "inaction in action" (4.18) — finds its scientific parallel in **embodied cognition** (Varela, Thompson, & Rosch, 1991): the body does not merely execute the mind's commands; it participates in cognition itself. The "doer" who dissolves in 4.20 is the same construct that Antonio Damasio's **somatic marker hypothesis** (1994) challenges: decisions are not made by a rational agent alone but by the body's accumulated wisdom encoding past outcomes as bodily signals.
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | Inaction in action (4.18) | Automaticity (Shiffrin & Schneider, 1977) | Expert action feels like "no one is doing it" — the expert surgeon's hands move without deliberation. This is the Gita's "inaction in action" — the body knows, the ego steps back |
+> | The doer dissolves (4.20) | Libet experiment (1983) | Brain readiness potential precedes conscious "decision" by 500ms — the act begins before the doer claims it. The Gita's insight: the doer is a post-hoc narrator |
+> | Knowledge as fire (4.37) | Insight problem-solving (Kounios & Beeman, 2009) | The "aha moment" activates the right anterior temporal cortex — knowledge literally "burns" old neural pathways and creates new ones |
+> | The descent of awareness (4.7) | Mirror neurons (Rizzolatti, 2004) | Awareness spreads through example, not instruction — the "avatar" mechanism is neurological. One awakened person catalyzes awakening in others |
+>
+> **Try This:** Perform a familiar task (making coffee, typing a password) while asking: "Who is doing this?" Notice that the body completes the task before the mind can answer. This gap — between the act and the claim of authorship — is the Gita's "inaction in action" (4.18). The doer arrives after the deed.
+
+**Cross-Reference:** The paradox of 4.18 (inaction in action) resolves the dilemma of Chapter 3 (should I act or not?). See also Chapter 13's field-knower distinction for the ontological foundation: the knower acts through the field but is not the field.
+
 ## The Inner Journey
 
 ```mermaid
@@ -617,64 +632,28 @@ mindmap
 **Answer: b.**
 </details>
 
-**Q2. In Shloka 4.7, Krishna says he manifests himself whenever —**
+**Q2. Krishna says he manifests whenever dharma declines (4.7). How does this "descent of awareness" map onto how good ideas spread in organizations?**
 
-- a. A great sage is born
-- b. A temple is consecrated
-- c. Dharma declines and adharma rises
-- d. A new yuga begins
+- a. Good ideas spread through official memos and policy changes
+- b. Awareness descends through embodied example — one person's transformed behavior catalyzes change in others, like mirror neurons firing
+- c. Good ideas spread through competition between departments
+- d. Awareness descends only through formal education
 
 <details class="tp-qa-card" data-qid="bg4-q2"><summary>Show Answer</summary>
 
-**Answer: c.**
+**Answer: b.** Mirror neuron research (Rizzolatti, 2004) shows that observing transformed behavior activates the same neural circuits in the observer as in the actor. The Gita's "avatar" mechanism is neurological: awareness spreads through example, not instruction. The engineer who writes clean code without being asked teaches more than the manager who sends a policy email.
 </details>
 
-**Q3. What is the core paradox taught in Shloka 4.18?**
+**Q5. Krishna says knowledge burns actions "like fuel in a blazing fire" (4.37). What does this mean in practical terms?**
 
-- a. Action is always better than inaction
-- b. One can see inaction in action and action in inaction
-- c. Inaction is never possible for humans
-- d. The wise perform only mental actions
-
-<details class="tp-qa-card" data-qid="bg4-q3"><summary>Show Answer</summary>
-
-**Answer: b.**
-</details>
-
-**Q4. Which sacrifice does Krishna call supreme in Shloka 4.33?**
-
-- a. The sacrifice of wealth
-- b. The sacrifice of austerity
-- c. The sacrifice of knowledge
-- d. The sacrifice of study only
-
-<details class="tp-qa-card" data-qid="bg4-q4"><summary>Show Answer</summary>
-
-**Answer: c.**
-</details>
-
-**Q5. In Shloka 4.37, what happens to actions in the fire of knowledge?**
-
-- a. They are stored for a later life
-- b. They are turned to ashes, like fuel in a blazing fire
-- c. They are carried forward into the next birth
-- d. They become divine and are recorded in heaven
+- a. Past mistakes are literally erased from memory
+- b. Understanding the root cause of a pattern dissolves its power to repeat — the neural pathways that encoded the old reaction are overwritten by new insight
+- c. Knowledge is a punishment for past wrongs
+- d. Actions have no consequences once knowledge is gained
 
 <details class="tp-qa-card" data-qid="bg4-q5"><summary>Show Answer</summary>
 
-**Answer: b.**
-</details>
-
-**Q6. What does Krishna command Arjuna to do with the doubt born of ignorance in Shloka 4.42?**
-
-- a. Meditate on it until it dissolves by itself
-- b. Ask the sages to explain it again
-- c. Cut it with the sword of knowledge, take refuge in yoga, and arise
-- d. Surrender it to the gods in sacrifice
-
-<details class="tp-qa-card" data-qid="bg4-q6"><summary>Show Answer</summary>
-
-**Answer: c.**
+**Answer: b.** Insight problem-solving research (Kounios & Beeman, 2009) shows that the "aha moment" creates new neural connections that bypass old patterns. When you truly understand why you keep making the same architectural mistake, the mistake loses its power — not because the past is erased, but because the future is rewired. The fire of knowledge does not destroy karma; it transforms the karmic pattern.
 </details>
 
 ## Exercises
@@ -683,35 +662,48 @@ mindmap
 2. **The inaction-in-action experiment (analysis):** For one day, split your activities into three columns: actions done with the doer (claiming and expecting), actions done without the doer (flowing), and inner action hidden in outer stillness (worry while idle). Count the hours in each column and study the result — where does your binding energy actually live?
 3. **Extend the tool (TypeScript):** Take the Karma Binding Analyzer below and add a new field, `offeringScore`, that measures how many daily actions you performed as gifts. Plot the week and check whether offering and binding move in opposite directions.
 
+### For the Engineer
+
+- **Inaction in action (4.18):** The expert developer's hands move before the mind deliberates — autocomplete, refactoring instincts, pattern recognition. This is not laziness but mastery: the body has learned what the mind once struggled with. The ego steps back; the code flows.
+- **The descent of awareness in teams:** When one team member starts writing clean code, testing thoroughly, and documenting clearly, others follow — not because of policy but because of mirror neurons. Be the avatar in your codebase.
+- **Cutting doubt with the sword (4.42):** When you're stuck on a problem, stop analyzing and act. Write a test, sketch a diagram, prototype something. Knowledge cuts doubt through action, not more thinking.
+
 ## TypeScript Tool: Karma Binding Analyzer
 
 ```typescript
-/*
- * Karma Binding Analyzer
- * Based on Jnana-Karma-Sanyasa Yoga (Chapter 4 of the Bhagavad Gita):
- * actions bind when the doer claims them; the fire of knowledge
- * burns the claim and leaves the action free.
- * Osho's lens: watch the doer, not the deed.
+/**
+ * Karma Binding Analyzer — Embodied Cognition Edition
+ * Based on Jnana-Karma-Sanyasa Yoga (Gita 4.16–4.20) and
+ * embodied cognition (Varela et al., 1991): the body participates
+ * in cognition; the "doer" is a post-hoc narrator (Libet, 1983).
+ * Measures: expectation, ego, fear, awareness, and the gap
+ * between automaticity and conscious claiming.
+ *
+ * Run: npx ts-node karma-binding-analyzer.ts
  */
 
 interface DailyAction {
   date: string;
   name: string;
-  expectationOfResult: number; // 0-10
-  egoInvolvement: number;      // 0-10
-  fearOfFailure: number;       // 0-10
-  awarenessLevel: number;      // 0-10
+  expectationOfResult: number; // 0–10
+  egoInvolvement: number;      // 0–10
+  fearOfFailure: number;       // 0–10
+  awarenessLevel: number;      // 0–10
+  automaticity: number;        // 0–10: how much did the body "know" before the mind?
+  doerArrival: 'during' | 'after' | 'never';  // when did the ego claim the act?
 }
 
 interface BindingReport {
   totalActions: number;
-  averageBinding: number;       // 0-100
-  jnanaFireScore: number;       // 0-100
+  averageBinding: number;
+  jnanaFireScore: number;
+  automaticityScore: number;
+  doerTiming: { during: number; after: number; never: number };
   status: string;
   oshoGuidance: string;
 }
 
-const BINDING_WEIGHTS = { expectation: 0.4, ego: 0.35, fear: 0.25 };
+const BINDING_WEIGHTS = { expectation: 0.3, ego: 0.3, fear: 0.2, automaticity: 0.2 };
 
 function bindingScore(action: DailyAction): number {
   const raw =
@@ -721,45 +713,54 @@ function bindingScore(action: DailyAction): number {
   return Math.min(100, Math.round(raw * 10));
 }
 
-function jnanaFire(binding: number, awareness: number): number {
-  return Math.max(0, Math.min(100, Math.round(awareness * 10 - binding * 0.5)));
+function jnanaFire(binding: number, awareness: number, automaticity: number): number {
+  // Knowledge fire: high awareness + high automaticity (body knows) - high binding (ego claims)
+  return Math.max(0, Math.min(100, Math.round((awareness * 4 + automaticity * 3) - binding * 0.5)));
 }
 
 function analyzeBindings(actions: DailyAction[]): BindingReport {
   const totalActions = actions.length;
   const avgBinding = Math.round(actions.reduce((s, a) => s + bindingScore(a), 0) / totalActions);
   const avgAwareness = actions.reduce((s, a) => s + a.awarenessLevel, 0) / totalActions;
-  const jnanaFireScore = jnanaFire(avgBinding, avgAwareness);
+  const avgAutomaticity = actions.reduce((s, a) => s + a.automaticity, 0) / totalActions;
+  const jnanaFireScore = jnanaFire(avgBinding, avgAwareness, avgAutomaticity);
 
-  let status = 'bound';
-  let oshoGuidance =
-    'The doer is loud in you. Watch the claiming hand; do not argue with it, just see it.';
+  const doerTiming = {
+    during: actions.filter((a) => a.doerArrival === 'during').length,
+    after: actions.filter((a) => a.doerArrival === 'after').length,
+    never: actions.filter((a) => a.doerArrival === 'never').length
+  };
+
+  let status: string;
+  let oshoGuidance: string;
   if (jnanaFireScore >= 70) {
     status = 'burning bright';
-    oshoGuidance = 'Your fire is lit. Act, but do not collect. The work itself is the worship.';
+    oshoGuidance = 'The fire of knowledge is lit. The body acts, the ego arrives late or not at all. This is 4.18 in action.';
   } else if (jnanaFireScore >= 40) {
     status = 'kindling';
-    oshoGuidance = 'The wood is gathered. Increase awareness; drop one expectation a day.';
+    oshoGuidance = 'The wood is gathered. Increase awareness of automaticity — notice when the body knows before the mind claims.';
+  } else {
+    status = 'bound';
+    oshoGuidance = 'The doer is loud. Watch the claiming hand; do not argue with it, just see it (4.20).';
   }
 
-  return { totalActions, averageBinding: avgBinding, jnanaFireScore, status, oshoGuidance };
+  return { totalActions, averageBinding: avgBinding, jnanaFireScore, automaticityScore: Math.round(avgAutomaticity * 10), doerTiming, status, oshoGuidance };
 }
 
-function runDemo(): void {
-  const week: DailyAction[] = [
-    { date: '2026-08-18', name: 'Project review', expectationOfResult: 8, egoInvolvement: 7, fearOfFailure: 5, awarenessLevel: 4 },
-    { date: '2026-08-18', name: 'Morning tea', expectationOfResult: 1, egoInvolvement: 0, fearOfFailure: 0, awarenessLevel: 9 },
-    { date: '2026-08-19', name: 'Interview prep', expectationOfResult: 9, egoInvolvement: 8, fearOfFailure: 8, awarenessLevel: 5 }
-  ];
+const week: DailyAction[] = [
+  { date: '2026-08-18', name: 'Project review', expectationOfResult: 8, egoInvolvement: 7, fearOfFailure: 5, awarenessLevel: 4, automaticity: 3, doerArrival: 'during' },
+  { date: '2026-08-18', name: 'Morning tea', expectationOfResult: 1, egoInvolvement: 0, fearOfFailure: 0, awarenessLevel: 9, automaticity: 9, doerArrival: 'never' },
+  { date: '2026-08-19', name: 'Interview prep', expectationOfResult: 9, egoInvolvement: 8, fearOfFailure: 8, awarenessLevel: 5, automaticity: 2, doerArrival: 'during' },
+  { date: '2026-08-19', name: 'Debugging session', expectationOfResult: 3, egoInvolvement: 2, fearOfFailure: 1, awarenessLevel: 7, automaticity: 8, doerArrival: 'after' },
+  { date: '2026-08-20', name: 'Code review', expectationOfResult: 5, egoInvolvement: 6, fearOfFailure: 3, awarenessLevel: 6, automaticity: 5, doerArrival: 'during' }
+];
 
-  const report = analyzeBindings(week);
-  console.log('=== Karma Binding Analyzer ===');
-  console.log(`Actions analyzed: ${report.totalActions}`);
-  console.log(`Average binding: ${report.averageBinding}/100`);
-  console.log(`Jnana fire score: ${report.jnanaFireScore}/100`);
-  console.log(`Status: ${report.status}`);
-  console.log(`Osho guidance: ${report.oshoGuidance}`);
-}
+const report = analyzeBindings(week);
 
-runDemo();
+console.log('=== Karma Binding Analyzer ===');
+console.log(`Actions: ${report.totalActions} | Binding: ${report.averageBinding}/100 | Jnana fire: ${report.jnanaFireScore}/100`);
+console.log(`Automaticity: ${report.automaticityScore}/100`);
+console.log(`Doer timing: during ${report.doerTiming.during}, after ${report.doerTiming.after}, never ${report.doerTiming.never}`);
+console.log(`Status: ${report.status}`);
+console.log(`Guidance: ${report.oshoGuidance}`);
 ```

@@ -371,6 +371,22 @@ This chapter sits exactly where the karma, bhakti and jnana frames of the Gita m
 | The marks of the crosser | 14.22–14.25 | Neither hating nor longing; clod and gold equal; scoreboard abandoned |
 | The way across | 14.26–14.27 | Unswerving devotion; the ground beneath all grounds |
 
+> **Science Note — Temperament Research and Regulatory Focus**
+>
+> Chapter 14 classifies all of nature into three gunas — sattva (clarity), rajas (activity), tamas (inertia). **Temperament research** (Kagan, 1994) shows that humans are born with stable temperamental biases that map loosely onto the gunas: some are naturally reactive (rajas), some naturally calm (sattva), some naturally slow-to-respond (tamas). The Gita's teaching is not to eliminate the gunas but to transcend identification with them.
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | Sattva binds through happiness and knowledge (14.6) | Regulatory focus — promotion (Higgins, 1997) | Sattva-oriented people pursue growth and advancement — the promotion focus. The "golden fetter" is that promotion focus can become addictive |
+> | Rajas binds through craving and action (14.7) | Regulatory focus — prevention (Higgins, 1997) | Rajas-oriented people act to avoid loss — the prevention focus. Craving is the pursuit of relief, not pleasure |
+> | Tamas binds through delusion and laziness (14.8) | Learned helplessness (Seligman, 1975) | Tamas maps to the state where action seems futile — the fog that prevents initiation. It is not laziness but the nervous system's shutdown response |
+> | The gunatita — beyond the gunas (14.22-14.25) | Self-determination theory (Deci & Ryan, 1985) | The one who transcends the gunas has moved from extrinsic motivation (rajas/tamas) through intrinsic motivation (sattva) to autonomous motivation — action that is freely chosen, not driven |
+> | Yerkes-Dodson law | Optimal arousal (Yerkes & Dodson, 1908) | Too much sattva (calm) produces under-arousal; too much rajas (stress) produces over-arousal. The gunatita finds the optimal zone |
+>
+> **Try This:** For one week, track your dominant guna three times daily (morning, afternoon, night). At the end of the week, review: which guna dominated? Was there a pattern? The watching itself begins to loosen the guna's grip.
+
+**Cross-Reference:** The guna framework of Chapter 14 is the psychological foundation for Chapter 12's devotee portrait (12.13-12.20) — the devotee is the one who has transcended the gunas. It also connects to Chapter 3's action-yoga (3.1-3.20) — the gunas explain why action feels the way it does.
+
 ## The Inner Journey
 
 ```mermaid
@@ -462,52 +478,28 @@ mindmap
 **Answer: a.** Sattva — 14.6 says it binds by attachment to happiness and by attachment to knowledge, the golden fetter.
 </details>
 
-**Q3. Greed, activity, restlessness and longing arise when which guna is predominant?**
+**Q3. The three gunas map onto three motivational systems in psychology. Rajas (craving, activity) most closely resembles which of these?**
 
-- a. Sattva
-- b. Rajas
-- c. Tamas
-- d. None of the three
+- a. Intrinsic motivation
+- b. Extrinsic motivation driven by loss-avoidance — the prevention focus (Higgins, 1997)
+- c. Amotivation
+- d. Self-determined motivation
 
 <details class="tp-qa-card" data-qid="bg14-q3"><summary>Show Answer</summary>
 
-**Answer: b.** Rajas — 14.12 lists these marks when rajas is predominant.
+**Answer: b.** Higgins' regulatory focus theory (1997) distinguishes promotion focus (pursuing gains — sattva) from prevention focus (avoiding losses — rajas). Rajas-driven behavior is not pure pleasure-seeking but loss-avoidance — the craving is the fear of missing out, the activity is the avoidance of falling behind.
 </details>
 
-**Q4. How is the one who has transcended the gunas seated, according to 14.23?**
+**Q5. The gunatita (14.22-14.25) "neither hates nor longs" — how does this relate to Yerkes-Dodson law (1908)?**
 
-- a. In constant prayer and austerity
-- b. Like one unconcerned, unmoved by the gunas, knowing that the gunas alone act
-- c. In a state of permanent sleep
-- d. Leading all undertakings of the world
-
-<details class="tp-qa-card" data-qid="bg14-q4"><summary>Show Answer</summary>
-
-**Answer: b.** 14.23 — "Seated like one unconcerned, unmoved by the gunas, he stands firm knowing that the gunas alone act — he does not stir."
-</details>
-
-**Q5. When light, activity and delusion are present, how does the gunatita relate to them (14.22)?**
-
-- a. He hates them and drives them away
-- b. He welcomes them as divine gifts
-- c. He neither hates them when present, nor longs for them when absent
-- d. He worships them as the three gods
+- a. It doesn't — the Yerkes-Dodson law is about arousal, not emotion
+- b. Yerkes-Dodson shows that performance peaks at moderate arousal — too much sattva (calm) produces under-arousal, too much rajas (stress) produces over-arousal. The gunatita finds the optimal zone
+- c. The gunatita is always in a state of high arousal
+- d. Yerkes-Dodson says all arousal is bad
 
 <details class="tp-qa-card" data-qid="bg14-q5"><summary>Show Answer</summary>
 
-**Answer: c.** 14.22 — "he neither hates them, nor longs for them when they are absent" — hate and longing are two sides of the same coin.
-</details>
-
-**Q6. What does Krishna declare himself to be in the final verse 14.27?**
-
-- a. The supreme guna among the three
-- b. The abode of Brahman, the immortal and immutable, of eternal dharma and absolute bliss
-- c. The seed of all sorrows
-- d. A teacher among many teachers
-
-<details class="tp-qa-card" data-qid="bg14-q6"><summary>Show Answer</summary>
-
-**Answer: b.** 14.27 — "For I am the abode of Brahman, the immortal and immutable, of eternal dharma and of absolute bliss."
+**Answer: b.** Yerkes & Dodson (1908) found that performance follows an inverted U-curve with arousal: too little produces boredom (tamas), too much produces anxiety (rajas), and the optimal zone is moderate alertness. The gunatita — neither hating nor longing — is the person who has found this optimal zone.
 </details>
 
 ## Exercises
@@ -516,37 +508,55 @@ mindmap
 2. **The gold and the clod:** For one day, treat praise and criticism you receive as the weather report they are. Write down each event and your inner reaction, then underline the moments where you stayed the sky.
 3. **Extend the TypeScript tool:** Add a third function to the Guna Balance Analyzer that computes a "gunatita score" — a day where no guna signal appears at all (pure witnessing) counts as crossing. Run it on a week of honest entries and see how often your sky is clear.
 
+### For the Engineer
+
+- **Knowing your guna in team dynamics:** Sattva-oriented engineers prefer clean design and deep thinking. Rajas-oriented engineers prefer speed and shipping. Tamas-oriented engineers procrastinate on hard tasks. Knowing your dominant guna helps you design your workday — deep work when sattva is high, shallow tasks when rajas drives.
+- **The golden fetter of sattva (14.6):** The trap of sattva is that clarity and knowledge become identity — "I am the one who sees clearly." This pride is the subtlest obstacle to growth. Notice when sattva becomes self-congratulation.
+- **The gunatita in production incidents:** The gunatita neither panics (rajas) nor freezes (tamas) nor ignores (sattva's denial). They observe the situation clearly and act without attachment — the optimal response.
+
 ## TypeScript Tool: Guna Balance Analyzer
 
 ```typescript
-/*
- * Guna Balance Analyzer - Chapter 14: the three gunas
- * Scores journal entries for sattva, rajas and tamas,
- * names the dominant weather, and reminds the witness
- * that the sky is never the weather. Osho: watch, don't fight.
+/**
+ * Guna Balance Analyzer — Regulatory Focus Edition
+ * Based on Gunatraya Vibhaga Yoga (Gita 14.5-14.27) and
+ * regulatory focus theory (Higgins, 1997): sattva maps to
+ * promotion focus (pursuing gains), rajas to prevention
+ * focus (avoiding losses), tamas to disengagement. The
+ * gunatita has transcended identification with any guna.
+ *
+ * Run: npx ts-node guna-balance-analyzer.ts
  */
 
-interface DayEntry { hour: number; text: string; }
+interface DayEntry {
+  hour: number;
+  text: string;
+}
 
-interface GunaSignal { guna: 'sattva' | 'rajas' | 'tamas'; keywords: string[]; }
+interface GunaSignal {
+  guna: 'sattva' | 'rajas' | 'tamas';
+  keywords: string[];
+  regulatoryFocus: string;
+}
 
 interface GunaBalance {
-  counts: Record<'sattva' | 'rajas' | 'tamas', number>;
+  counts: { sattva: number; rajas: number; tamas: number };
   dominant: 'sattva' | 'rajas' | 'tamas';
   isGunatita: boolean;
-  oshoNote: string;
+  regulatoryProfile: string;
+  message: string;
 }
 
 const signals: GunaSignal[] = [
-  { guna: 'sattva', keywords: ['clear', 'calm', 'grateful', 'focused', 'light', 'peace', 'insight', 'love'] },
-  { guna: 'rajas', keywords: ['greed', 'restless', 'rush', 'ambition', 'crave', 'busy', 'anxious', 'hurry'] },
-  { guna: 'tamas', keywords: ['lazy', 'sleep', 'dull', 'stuck', 'numb', 'avoid', 'scrolled', 'procrastinate'] }
+  { guna: 'sattva', keywords: ['calm', 'clear', 'grateful', 'peaceful', 'focused', 'aware', 'present'], regulatoryFocus: 'Promotion focus — pursuing growth and learning (Higgins, 1997)' },
+  { guna: 'rajas', keywords: ['greed', 'restless', 'rush', 'ambition', 'crave', 'busy', 'anxious', 'hurry'], regulatoryFocus: 'Prevention focus — avoiding loss and falling behind (Higgins, 1997)' },
+  { guna: 'tamas', keywords: ['lazy', 'sleep', 'dull', 'stuck', 'numb', 'avoid', 'scrolled', 'procrastinate'], regulatoryFocus: 'Disengagement — the nervous system shutdown response (Seligman, 1975)' }
 ];
 
 function countGuna(text: string, guna: 'sattva' | 'rajas' | 'tamas'): number {
-  const signal = signals.find(s => s.guna === guna);
+  const signal = signals.find((s) => s.guna === guna);
   if (!signal) return 0;
-  return signal.keywords.filter(k => text.toLowerCase().includes(k)).length;
+  return signal.keywords.filter((k) => text.toLowerCase().includes(k)).length;
 }
 
 function analyzeDay(entries: DayEntry[]): GunaBalance {
@@ -559,33 +569,39 @@ function analyzeDay(entries: DayEntry[]): GunaBalance {
   const order: ('sattva' | 'rajas' | 'tamas')[] = ['sattva', 'rajas', 'tamas'];
   const dominant = order.reduce((a, b) => (counts[b] > counts[a] ? b : a));
   const isGunatita = counts.sattva === 0 && counts.rajas === 0 && counts.tamas === 0;
-  const notes: Record<'sattva' | 'rajas' | 'tamas', string> = {
-    sattva: 'Clarity has come. But even purity binds when it becomes pride - the golden cage.',
-    rajas: 'The fire of thirst is burning. Do not fight the fire; watch it, and it loses its grip.',
-    tamas: 'The fog is thick. Never mistake this sleep for peace; light the lamp of watching.'
+
+  const regulatoryProfile = isGunatita
+    ? 'Autonomous motivation — action freely chosen, not driven by any guna (Deci & Ryan, 1985)'
+    : signals.find((s) => s.guna === dominant)?.regulatoryFocus ?? '';
+
+  const messages: Record<'sattva' | 'rajas' | 'tamas', string> = {
+    sattva: 'Clarity has come. But even purity binds when it becomes pride — the golden cage. (14.6)',
+    rajas: 'The fire of craving is burning. Do not fight it; watch it, and it loses its grip. (14.7)',
+    tamas: 'The fog is thick. Never mistake this sleep for peace; light the lamp of watching. (14.8)'
   };
+
   return {
     counts,
     dominant,
     isGunatita,
-    oshoNote: isGunatita
-      ? 'No weather found. The witness is not the weather - the sky is clear because you stopped claiming it.'
-      : notes[dominant]
+    regulatoryProfile,
+    message: isGunatita
+      ? 'No weather found. The witness has crossed the gunas — autonomous motivation, freely chosen. (14.22-14.25)'
+      : messages[dominant]
   };
 }
 
-function runDemo(): void {
-  const day: DayEntry[] = [
-    { hour: 9, text: 'Woke up lazy, scrolled for an hour, felt numb and heavy.' },
-    { hour: 13, text: 'Rush to meet the deadline; ambitious but anxious and restless.' },
-    { hour: 20, text: 'Evening walk felt clear and calm; grateful for the sky.' }
-  ];
-  const balance = analyzeDay(day);
-  console.log('=== Guna Balance Analyzer ===');
-  console.log(`Sattva: ${balance.counts.sattva} | Rajas: ${balance.counts.rajas} | Tamas: ${balance.counts.tamas}`);
-  console.log(`Dominant weather: ${balance.dominant} | Gunatita: ${balance.isGunatita}`);
-  console.log(`Osho: ${balance.oshoNote}`);
-}
+const day: DayEntry[] = [
+  { hour: 9, text: 'Woke up lazy, scrolled for an hour, felt numb and heavy.' },
+  { hour: 13, text: 'Rush to meet the deadline; ambitious but anxious and restless.' },
+  { hour: 20, text: 'Evening walk felt clear and calm; grateful for the sky.' }
+];
 
-runDemo();
+const balance = analyzeDay(day);
+
+console.log('=== Guna Balance Analyzer ===');
+console.log(`Sattva: ${balance.counts.sattva} | Rajas: ${balance.counts.rajas} | Tamas: ${balance.counts.tamas}`);
+console.log(`Dominant: ${balance.dominant} | Gunatita: ${balance.isGunatita}`);
+console.log(`Regulatory profile: ${balance.regulatoryProfile}`);
+console.log(balance.message);
 ```

@@ -539,6 +539,21 @@ The Gita's three paths are now converging. Karma Yoga taught action without atta
 | The seed of all beings | 10.39, 10.41 | Nothing exists outside the one; every glory is a fragment, and the fragment points to the whole |
 | The dissolution of the list | 10.40, 10.42 | The map is burnt after the journey; one fragment supports the world, and the infinite remains unspoken |
 
+> **Science Note — Awe Research and the Broaden-and-Build Theory**
+>
+> Chapter 10 is Krishna's catalogue of divine glories — the sun, the moon, the Ganga, the lion, the letter A. The Gita's teaching is that recognizing excellence in the world steadies the seeker (10.7-10.8). **Awe research** (Keltner & Haidt, 2003) confirms this: experiencing awe — the feeling of being in the presence of something vast that challenges your existing mental models — broadens attention and builds lasting psychological resources (Fredrickson, 2001).
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | Recognizing the glories (10.7) | Awe experience (Keltner & Haidt, 2003) | Awe broadens attention and reduces self-focus — the same effect Krishna promises for knowing the vibhutis |
+> | The one source of all qualities (10.4-10.5) | Categorical perception (Rosch, 1975) | The mind groups diverse phenomena into categories — Krishna's list teaches the mind to see the one category behind all categories |
+> | The lamp lit from within (10.10-10.11) | Insight problem-solving (Kounios & Beeman, 2009) | Understanding is given, not forced — the brain's "aha" moment comes when attention is relaxed and receptive, not when it is strained |
+> | Nothing exists outside the one (10.39) | Systems thinking (Senge, 1990) | Seeing the one in the many is the foundation of systems thinking — every element is connected to the whole |
+>
+> **Try This:** For seven days, keep a "vibhuti diary" — note one moment of excellence you observe each day (a beautiful sunrise, a kind word, a clever solution). At the end of the week, review the list and notice whether your attention has shifted from what's wrong to what's excellent. This is the broaden-and-build effect in action.
+
+**Cross-Reference:** The vibhuti listing of Chapter 10 is the practical application of Chapter 7's jnana-vijnana distinction (7.2) — knowing the glories is jnana; recognizing them as faces of the one is vijnana.
+
 ## The Inner Journey
 
 ```mermaid
@@ -649,19 +664,29 @@ mindmap
 **Answer: b.** To them he gives the yoga of understanding (buddhiyoga) by which they come to him (10.10), and he destroys their darkness with the lamp of knowledge (10.11).
 </details>
 
-**Q4. Which of these is a vibhuti (glory) mentioned by Krishna in chapter 10?**
+**Q4. Krishna lists diverse vibhutis — the sun, the moon, the Ganga, the lion, the letter A. What is the psychological function of this long enumeration, and how does it relate to awe research (Keltner & Haidt, 2003)?**
 
-- a. The peacock among birds and silver among metals
-- b. The Sama Veda among the Vedas and the mind among the senses
-- c. The lion among beasts and the Ganga among rivers
-- d. Both b and c
+- a. It is poetic filler with no psychological function
+- b. Each listing triggers a micro-awe response — the broadening of attention that comes from recognizing excellence. The enumeration trains the brain to see the one in the many
+- c. It is meant to overwhelm the listener into submission
+- d. It only matters for religious devotion, not psychology
 
 <details class="tp-qa-card" data-qid="bg10-q4"><summary>Show Answer</summary>
 
-**Answer: d.** Krishna names the Sama Veda among Vedas and the mind among senses (10.22), and the lion among beasts (10.30) and the Ganga among rivers (10.31).
+**Answer: b.** Keltner & Haidt (2003) define awe as the response to perceived vastness that challenges existing schemas. Each vibhuti listing triggers a micro-awe: the mind encounters something excellent (the sun, the Ganga) and briefly expands its model of reality. The enumeration is not filler — it is a systematic training of the attention to recognize the one source behind all diverse excellences.
 </details>
 
-**Q5. In shloka 10.39, what does Krishna say is the seed of all beings?**
+**Q5. Krishna says "I am the seed of all beings" (10.39). How does this relate to systems thinking in modern organizational theory?**
+
+- a. It is a religious claim with no organizational parallel
+- b. Systems thinking (Senge, 1990) shows that every element in an organization is connected to the whole — the "seed" is the shared purpose that gives rise to all components. Seeing the one in the many is the foundation of systemic leadership
+- c. It means Krishna is the CEO of the universe
+- d. It is a metaphor for基因 inheritance
+
+<details class="tp-qa-card" data-qid="bg10-q5"><summary>Show Answer</summary>
+
+**Answer: b.** Senge's systems thinking (1990) shows that organizational behavior emerges from the relationships between components, not from the components themselves. Krishna's "seed of all beings" (10.39) is the shared purpose or organizing principle that gives rise to the whole system. The vibhuti lens — seeing the one source in all diverse manifestations — is the perceptual foundation of systems thinking.
+</details>
 
 - a. Time
 - b. The five elements
@@ -691,16 +716,24 @@ mindmap
 2. **The two readings on one page:** Choose one everyday object — a river, a tree, a language, a sport — and write two short paragraphs about it: first as an ordinary thing, then as a vibhuti, a face of the one. Notice how the second paragraph changes your attention while you write it.
 3. **TypeScript exercise:** Extend the Vibhuti Lens — add a second category of your own design (for example, "city glories" with metro, library, bridge), and add a function that counts how many distinct categories you recognised in a week and prints an Osho-style insight when the count crosses a threshold.
 
+### For the Engineer
+
+- **The vibhuti lens in code review:** When you review code, practice seeing the one excellence behind many manifestations — the same architectural principle expressed in different modules. This is the vibhuti lens applied to software design.
+- **Awe and creativity:** Research shows that awe broadens attention (Keltner & Haidt, 2003). Before brainstorming, spend 2 minutes observing something excellent in your environment — a well-designed API, a clean algorithm, a beautiful sunset. This primes the brain for creative connection.
+- **Systems thinking as vibhuti recognition:** Seeing the one source in all diverse system components is the vibhuti lens applied to distributed systems — every microservice, every database, every API is a fragment of the same architectural whole.
+
 ## TypeScript Tool: Vibhuti Lens
 
 ```typescript
-/*
- * Vibhuti Lens
- * Based on Vibhuti Yoga (Gita 10.1-10.42): Krishna teaches
- * Arjuna to recognise the divine in the excellence of everything.
- * This tool catalogues the chapter's glories by category and
- * matches them against the ordinary observations of a single
- * day, so the reader can train the eye to see the one in the many.
+/**
+ * Vibhuti Lens — Awe Research Edition
+ * Based on Vibhuti Yoga (Gita 10.1-10.42) and awe research
+ * (Keltner & Haidt, 2003): experiencing awe broadens attention
+ * and builds psychological resources. The vibhuti lens trains
+ * the brain to recognize the one source behind all diverse
+ * excellences — the foundation of systems thinking.
+ *
+ * Run: npx ts-node vibhuti-lens.ts
  */
 
 interface Vibhuti {
@@ -713,6 +746,7 @@ interface Vibhuti {
 interface DayObservation {
   time: string;
   note: string;
+  aweLevel: number;  // 0–10: how much awe did this trigger?
 }
 
 interface MatchResult {
@@ -724,7 +758,9 @@ interface VibhutiReport {
   observationsAnalyzed: number;
   matches: MatchResult[];
   categoriesRecognised: number;
-  eyesTrained: boolean;
+  averageAwe: number;
+  broadenEffect: boolean;   // does the awe broaden attention?
+  systemsThinking: boolean; // can you see the one in the many?
   message: string;
 }
 
@@ -740,11 +776,11 @@ const VIBHUTIS: Vibhuti[] = [
 
 function findMatches(observations: DayObservation[]): MatchResult[] {
   const matches: MatchResult[] = [];
-  for (const observation of observations) {
-    const lower = observation.note.toLowerCase();
+  for (const obs of observations) {
+    const lower = obs.note.toLowerCase();
     for (const vibhuti of VIBHUTIS) {
       if (vibhuti.keywords.some((kw) => lower.includes(kw))) {
-        matches.push({ vibhuti, observation });
+        matches.push({ vibhuti, observation: obs });
         break;
       }
     }
@@ -755,31 +791,36 @@ function findMatches(observations: DayObservation[]): MatchResult[] {
 function buildReport(observations: DayObservation[]): VibhutiReport {
   const matches = findMatches(observations);
   const categoriesRecognised = new Set(matches.map((m) => m.vibhuti.category)).size;
-  const eyesTrained = categoriesRecognised >= 4;
+  const averageAwe = Math.round(observations.reduce((s, o) => s + o.aweLevel, 0) / observations.length * 10) / 10;
+  const broadenEffect = averageAwe >= 5;   // Keltner: awe broadens attention at moderate+ levels
+  const systemsThinking = categoriesRecognised >= 4; // seeing the one in many categories
+
   return {
     observationsAnalyzed: observations.length,
     matches,
     categoriesRecognised,
-    eyesTrained,
-    message: eyesTrained
-      ? 'The eye is opening: you recognised the one in many forms today. The glories are no longer a list; they are a language.'
-      : 'Few glories recognised today. The divine is not hiding — the eye is simply not yet trained. Keep pausing, keep naming.'
+    averageAwe,
+    broadenEffect,
+    systemsThinking,
+    message: systemsThinking
+      ? `Awe score ${averageAwe}/10: the eye is opening. You recognised the one in ${categoriesRecognised} forms today. The glories are no longer a list; they are a language. (10.7)`
+      : `Awe score ${averageAwe}/10: few glories recognised today. The divine is not hiding — the eye is simply not yet trained. Keep pausing, keep naming. (10.8)`
   };
 }
 
 const today: DayObservation[] = [
-  { time: '07:10', note: 'The sunrise split the clouds and light flooded the street.' },
-  { time: '12:40', note: 'A colleague forgave a careless mistake with complete patience.' },
-  { time: '18:05', note: 'I sat in silence on the balcony and watched the river below.' },
-  { time: '21:30', note: 'Two hours of focused practice on the new framework; no distractions.' }
+  { time: '07:10', note: 'The sunrise split the clouds and light flooded the street.', aweLevel: 8 },
+  { time: '12:40', note: 'A colleague forgave a careless mistake with complete patience.', aweLevel: 6 },
+  { time: '18:05', note: 'I sat in silence on the balcony and watched the river below.', aweLevel: 7 },
+  { time: '21:30', note: 'Two hours of focused practice on the new framework; no distractions.', aweLevel: 5 }
 ];
 
 const report = buildReport(today);
 console.log('=== Vibhuti Lens ===');
-console.log(`Observations: ${report.observationsAnalyzed}`);
-console.log(`Categories recognised: ${report.categoriesRecognised}`);
+console.log(`Observations: ${report.observationsAnalyzed} | Categories: ${report.categoriesRecognised} | Avg awe: ${report.averageAwe}/10`);
+console.log(`Broaden effect: ${report.broadenEffect ? 'YES' : 'not yet'} | Systems thinking: ${report.systemsThinking ? 'YES' : 'developing'}`);
 for (const match of report.matches) {
-  console.log(`- ${match.observation.time}: ${match.vibhuti.glory} (${match.vibhuti.shlokaRef})`);
+  console.log(`  ${match.observation.time}: ${match.vibhuti.glory} (${match.vibhuti.shlokaRef})`);
 }
 console.log(report.message);
 ```

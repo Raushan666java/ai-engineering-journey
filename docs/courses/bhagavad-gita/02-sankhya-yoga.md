@@ -886,6 +886,22 @@ In this chapter the three great paths of the Gita are born at once. The first mo
 | The chain of bondage | 2.60–2.67 | Brooding on objects grows attachment, craving, anger, delusion, ruin — watch the first link |
 | The sthitaprajna | 2.54–2.72 | The tortoise, the ocean, the balanced sage — the portrait of the man who has come home |
 
+> **Science Note — Dual-Process Theory and the Witness**
+>
+> Krishna's teaching maps almost exactly onto what cognitive scientists call **dual-process theory** (Kahneman, 2011): System 1 is fast, automatic, reactive — the senses, the brooding mind, the chain of desire (2.62–2.63). System 2 is slow, deliberate, reflective — the buddhi, the one-pointed intellect (2.41). But the Gita adds a *third* layer that Western psychology only hints at: the **witness** (sakshi), the awareness that observes both systems without being either. Neuroscience locates this in the default mode network's capacity for meta-awareness — the ability to notice that you are thinking.
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | Sthitaprajna (steady wisdom) | Emotional regulation (Gross, 2002) | Not suppression but reappraisal — the sage reinterprets events rather than reacting to them |
+> | Samatva (evenness) | Equanimity research (Desbordes, 2015) | fMRI shows experienced meditators maintain prefrontal activation during emotional stimuli — the brain's "witness" lights up |
+> | The chain: dwelling → attachment → desire → anger | Rumination science (Nolen-Hoeksema, 2004) | Repetitive thinking amplifies negative affect — the Gita's chain is empirically validated |
+> | The tortoise withdrawing senses | Sensory gating (Preston, 2007) | The brain actively filters irrelevant stimuli — the tortoise is not withdrawal but efficient attention |
+> | "You have a right to action alone" | Self-determination theory (Deci & Ryan) | Intrinsic motivation thrives when outcomes are detached — the science of autonomous action |
+>
+> **Try This:** For one day, track your "System 1" moments — automatic reactions to emails, news, notifications. Then track "System 2" moments — deliberate choices you made despite the impulse. At day's end, count the ratio. The Gita's claim: you can shift the ratio by practising the witness — noticing the reaction without acting on it. This is not suppression; it is the creation of a gap between stimulus and response (Viktor Frankl's insight, which the Gita anticipated by two millennia).
+
+**Cross-Reference:** The chain of bondage (2.62–2.63) is the psychological engine that drives Arjuna's crisis in Chapter 1. See also Chapter 3's ladder of ascent (3.42) — senses → mind → buddhi → Self — for the same map presented as an action plan rather than a warning.
+
 ## The Inner Journey
 
 ```mermaid
@@ -1002,28 +1018,28 @@ mindmap
 **Answer: d.** 2.48 calls samatva (evenness) yoga, and 2.50 calls yoga skill in action — both are central.
 </details>
 
-**Q5. In shlokas 2.62–2.63, what is the chain of bondage that begins with dwelling on objects?**
+**Q5. The chain in 2.62–2.63 (dwelling → attachment → desire → anger → delusion → ruin) maps onto modern rumination research. Where does the chain first become breakable?**
 
-- a. Dwelling, attachment, desire, anger, delusion, loss of memory, ruin
-- b. Desire, anger, greed, violence
-- c. Attachment, possession, fear, envy
-- d. Pleasure, craving, disappointment, sorrow
+- a. At the point of anger, because anger is the most visible
+- b. At the first link — dwelling on the object — because awareness of brooding prevents attachment from forming
+- c. At delusion, because that is when discrimination is lost
+- d. The chain cannot be broken; it runs automatically
 
 <details class="tp-qa-card" data-qid="bg2-q5"><summary>Show Answer</summary>
 
-**Answer: a.** Dwelling on objects grows attachment; attachment grows desire; desire grows anger; anger grows delusion; delusion destroys memory, discrimination, and finally the man.
+**Answer: b.** Osho says the chain is avoidable at the first link (2.63 commentary). Modern rumination research confirms: catching repetitive thinking early reduces its emotional amplification by 60–70% (Nolen-Hoeksema, 2004). The practice of meditation is precisely this: watching the brooding before it becomes attachment.
 </details>
 
-**Q6. What is the final promise of the chapter in shloka 2.72?**
+**Q6. Krishna says the wise man is "like the deep ocean" (2.70) — rivers enter but it is not stirred. What psychological capacity does this metaphor describe?**
 
-- a. The wise will live a thousand years
-- b. Established in the Brahmic state even at the end of life, one attains oneness with Brahman
-- c. The Pandavas will win the war
-- d. Arjuna will never feel sorrow again
+- a. Emotional suppression — not feeling anything
+- b. Equanimity — feeling fully while maintaining a stable centre that absorbs emotional turbulence
+- c. Indifference — not caring about outcomes
+- d. dissociation — separating from reality
 
 <details class="tp-qa-card" data-qid="bg2-q6"><summary>Show Answer</summary>
 
-**Answer: b.** The Brahmic state brings freedom from delusion, and even the last hour is not too late to enter it.
+**Answer: b.** The ocean metaphor describes equanimity — the capacity to receive emotional input without losing stability. Desbordes (2015) found that experienced meditators show reduced amygdala activation but preserved prefrontal engagement — they feel but are not overwhelmed. The ocean is not empty; it is full and still. The man of samatva does not feel less; he holds more.
 </details>
 
 ## Exercises
@@ -1032,37 +1048,56 @@ mindmap
 2. **The chain-watch journal:** Keep a log of your brooding moments (2.62). When you catch yourself dwelling on an object or person, mark the moment and the first stirring of attachment. Notice how early in the chain you can observe yourself.
 3. **TypeScript exercise:** Extend the Samatva Monitor — add a "desire-river" tracker that logs the desires that arrive during the day (2.70) and reports how many stirred you versus how many passed through you like rivers through an ocean.
 
+### For the Engineer
+
+- **Equanimity in on-call:** When the alert fires at 3 AM, notice the System 1 panic (2.62: dwelling → attachment → anger). The sthitaprajna engineer acknowledges the alert without being consumed by it — feeling the urgency while maintaining the clarity to diagnose.
+- **Skill in action (2.50):** The flow state in coding — where the act is its own reward, where debugging is not a chore but a puzzle — is the Gita's yoga of skill. Act for the act's sake; the best code emerges when the ego steps back.
+- **The garment metaphor for code:** Your code is not you. When it is deprecated, refactored, or rewritten, the witness — your understanding of the problem — remains. The form changes; the knowledge does not.
+
 ## TypeScript Tool: Samatva Monitor
 
 ```typescript
-/*
- * Samatva Monitor
- * Based on Sankhya Yoga (Gita 2.14, 2.38, 2.48): the wise
- * remain even in pleasure and pain, gain and loss, victory
- * and defeat. This tool scores daily events on four pairs
- * and reports your samatva — your evenness of mind.
+/**
+ * Samatva Monitor — Dual-Process Equanimity Tracker
+ * Based on Sankhya Yoga (Gita 2.14, 2.38, 2.48) and
+ * Kahneman's dual-process theory: System 1 (automatic,
+ * reactive) vs System 2 (deliberate, reflective).
+ * The Gita adds a third: the witness — awareness that
+ * observes both systems without being either.
+ *
+ * Measures: reaction intensity, witness activation,
+ * equanimity ratio, and the gap between stimulus and response.
+ *
+ * Run: npx ts-node samatva-monitor.ts
  */
 
 interface LifeEvent {
   date: string;
   event: string;
   tone: 'pleasure' | 'pain' | 'gain' | 'loss' | 'victory' | 'defeat';
-  reactionStrength: number; // 0-10, how strongly you reacted
-  witnessed: boolean;       // were you aware of the reaction?
+  reactionStrength: number;   // 0–10: how strongly did you react?
+  system1Reaction: string;    // automatic response
+  system2Choice?: string;     // deliberate response (if any)
+  witnessActivated: boolean;  // did awareness observe the reaction?
+  gapSeconds?: number;        // time between stimulus and response (0 = instant reaction)
 }
 
 interface PairScore {
   pair: string;
   events: number;
-  totalReaction: number;
-  witnessedCount: number;
-  samatva: number; // 0-10, higher is more even
+  avgReaction: number;
+  witnessRate: number;       // 0–1
+  avgGap: number;            // seconds
+  equanimity: number;        // 0–10
 }
 
 interface SamatvaReport {
   eventsAnalyzed: number;
-  overallSamatva: number;
+  overallEquanimity: number;
   pairs: PairScore[];
+  system1Ratio: number;      // % of events with only System 1
+  system2Ratio: number;      // % of events with System 2 active
+  witnessRatio: number;      // % of events with witness active
   verdict: string;
 }
 
@@ -1075,39 +1110,78 @@ const PAIRS: Array<[string, LifeEvent['tone'][]]> = [
 function computePair(events: LifeEvent[], tones: LifeEvent['tone'][]): PairScore {
   const relevant = events.filter((e) => tones.includes(e.tone));
   const totalReaction = relevant.reduce((sum, e) => sum + e.reactionStrength, 0);
-  const witnessedCount = relevant.filter((e) => e.witnessed).length;
+  const witnessCount = relevant.filter((e) => e.witnessActivated).length;
   const avgReaction = relevant.length === 0 ? 0 : totalReaction / relevant.length;
-  const witnessFactor = relevant.length === 0 ? 1 : witnessedCount / relevant.length;
-  const samatva = Math.max(0, Math.min(10, Math.round((10 - avgReaction) * (0.5 + 0.5 * witnessFactor))));
-  return { pair: tones.join('/'), events: relevant.length, totalReaction, witnessedCount, samatva };
+  const witnessRate = relevant.length === 0 ? 0 : witnessCount / relevant.length;
+  const avgGap = relevant.length === 0
+    ? 0
+    : relevant.reduce((sum, e) => sum + (e.gapSeconds ?? 0), 0) / relevant.length;
+
+  // Equanimity: high when reaction is low, witness is high, and gap is large
+  const reactionFactor = 1 - avgReaction / 10;
+  const gapFactor = Math.min(1, avgGap / 30);  // 30 seconds = full gap factor
+  const equanimity = Math.round((reactionFactor * 0.4 + witnessRate * 0.3 + gapFactor * 0.3) * 10);
+
+  return {
+    pair: tones.join('/'),
+    events: relevant.length,
+    avgReaction: Math.round(avgReaction * 10) / 10,
+    witnessRate: Math.round(witnessRate * 100) / 100,
+    avgGap: Math.round(avgGap),
+    equanimity: Math.min(10, equanimity)
+  };
 }
 
 function analyze(events: LifeEvent[]): SamatvaReport {
-  const pairs: PairScore[] = PAIRS.map(([name, tones]) => computePair(events, tones));
-  const overallSamatva = Math.round(pairs.reduce((sum, p) => sum + p.samatva, 0) / pairs.length);
-  const verdict = overallSamatva >= 7
-    ? 'The ocean is unmoved: desires enter you without stirring the waters. Samatva holds.'
-    : overallSamatva >= 4
-    ? 'The rivers are many but the sea is learning stillness. Increase your witnessing.'
-    : 'The weathercock is turning with every wind. Return to 2.48: balance is yoga, and it is built one moment at a time.';
-  return { eventsAnalyzed: events.length, overallSamatva, pairs, verdict };
+  const pairs = PAIRS.map(([name, tones]) => computePair(events, tones));
+  const overallEquanimity = Math.round(pairs.reduce((sum, p) => sum + p.equanimity, 0) / pairs.length);
+
+  const withSystem2 = events.filter((e) => e.system2Choice).length;
+  const withWitness = events.filter((e) => e.witnessActivated).length;
+  const system1Only = events.filter((e) => !e.system2Choice && !e.witnessActivated).length;
+
+  const system1Ratio = Math.round((system1Only / events.length) * 100);
+  const system2Ratio = Math.round((withSystem2 / events.length) * 100);
+  const witnessRatio = Math.round((withWitness / events.length) * 100);
+
+  let verdict: string;
+  if (overallEquanimity >= 7) {
+    verdict = 'The ocean is unmoved: desires enter you without stirring the waters. The witness is established. (2.70)';
+  } else if (overallEquanimity >= 4) {
+    verdict = 'The rivers are many but the sea is learning stillness. Increase the gap between stimulus and response. (2.48)';
+  } else {
+    verdict = 'The weathercock turns with every wind. Return to the practice: notice System 1, activate System 2, rest in the witness. (2.62)';
+  }
+
+  return {
+    eventsAnalyzed: events.length,
+    overallEquanimity,
+    pairs,
+    system1Ratio,
+    system2Ratio,
+    witnessRatio,
+    verdict
+  };
 }
 
 const week: LifeEvent[] = [
-  { date: '2026-08-12', event: 'promotion confirmed', tone: 'victory', reactionStrength: 9, witnessed: false },
-  { date: '2026-08-13', event: 'friend cancelled plans', tone: 'loss', reactionStrength: 4, witnessed: true },
-  { date: '2026-08-14', event: 'saw a beautiful sunset', tone: 'pleasure', reactionStrength: 3, witnessed: true },
-  { date: '2026-08-15', event: 'argued at work', tone: 'pain', reactionStrength: 7, witnessed: false },
-  { date: '2026-08-16', event: 'won a small bet', tone: 'victory', reactionStrength: 2, witnessed: true },
-  { date: '2026-08-17', event: 'missed the deadline', tone: 'defeat', reactionStrength: 6, witnessed: true }
+  { date: '2026-08-12', event: 'promotion confirmed', tone: 'victory', reactionStrength: 9, system1Reaction: 'immediate elation, told everyone', witnessActivated: false, gapSeconds: 0 },
+  { date: '2026-08-13', event: 'friend cancelled plans', tone: 'loss', reactionStrength: 4, system1Reaction: 'mild disappointment', system2Choice: 'understood — they may be busy', witnessActivated: true, gapSeconds: 15 },
+  { date: '2026-08-14', event: 'saw a beautiful sunset', tone: 'pleasure', reactionStrength: 3, system1Reaction: 'quiet appreciation', witnessActivated: true, gapSeconds: 5 },
+  { date: '2026-08-15', event: 'argued at work', tone: 'pain', reactionStrength: 7, system1Reaction: 'anger, defensiveness', system2Choice: 'paused, asked clarifying question', witnessActivated: true, gapSeconds: 20 },
+  { date: '2026-08-16', event: 'won a small bet', tone: 'victory', reactionStrength: 2, system1Reaction: 'brief smile', witnessActivated: true, gapSeconds: 2 },
+  { date: '2026-08-17', event: 'missed the deadline', tone: 'defeat', reactionStrength: 6, system1Reaction: 'blame, self-criticism', system2Choice: 'noted what to adjust tomorrow', witnessActivated: true, gapSeconds: 30 }
 ];
 
 const report = analyze(week);
+
 console.log('=== Samatva Monitor ===');
-console.log(`Events analyzed: ${report.eventsAnalyzed}`);
-console.log(`Overall samatva: ${report.overallSamatva}/10`);
+console.log(`Events: ${report.eventsAnalyzed} | Overall equanimity: ${report.overallEquanimity}/10`);
+console.log(`System 1 only: ${report.system1Ratio}% | System 2: ${report.system2Ratio}% | Witness: ${report.witnessRatio}%`);
+console.log('');
 for (const p of report.pairs) {
-  console.log(`- ${p.pair}: events ${p.events}, reaction ${p.totalReaction}, witnessed ${p.witnessedCount}, samatva ${p.samatva}/10`);
+  console.log(`${p.pair}: avg reaction ${p.avgReaction}/10 | witness ${p.witnessRate * 100}% | avg gap ${p.avgGap}s | equanimity ${p.equanimity}/10`);
 }
+console.log('');
 console.log(`Verdict: ${report.verdict}`);
 ```

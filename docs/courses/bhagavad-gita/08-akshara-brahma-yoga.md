@@ -392,6 +392,21 @@ This chapter is where the three paths braid together. Abhyasa — constant pract
 | **The breathing cosmos** | 8.17-8.19 | The universe breathes in days of Brahma; you breathe in seconds — same breath, same source |
 | **The two paths** | 8.23-8.28 | The bright path and the dark path are directions of daily living, not just addresses after death |
 
+> **Science Note — Terror Management Theory and Mindfulness of Death**
+>
+> Chapter 8 is the Gita's teaching on death — not as a distant event but as a lens for living. **Terror management theory** (Greenberg, Pyszczynski & Solomon, 1986) shows that awareness of mortality shapes behavior: when reminded of death, people cling to worldviews and self-esteem structures. Krishna's teaching reverses this — instead of clinging, he teaches acceptance through daily practice (8.5-8.7). The "last thought" is not a deathbed accident but the accumulated result of how you spent your attention.
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | The law of the last thought (8.6) | Cognitive rehearsal (Ericsson, 1993) | What you practice most becomes automatic at the end. Expert performance research shows that peak behavior is the summary of years of practice — the Gita applies this to death |
+> | Remember Me and fight (8.7) | Mindfulness-Based Stress Reduction (Kabat-Zinn, 1990) | Combining present-moment awareness with action is the same formula MBSR teaches — awareness during activity, not just during meditation |
+> | The bright path vs. dark path (8.24-8.26) | Approach vs. avoidance motivation (Elliot, 2006) | The two paths map to two fundamental motivational systems: approaching growth (bright) or avoiding discomfort (dark). The direction you face in life determines where you end |
+> | The imperishable (8.3) | Post-traumatic growth (Tedeschi & Calhoun, 2004) | Those who integrate death awareness into daily life report higher well-being, not lower — the Gita's death meditation produces growth, not fear |
+>
+> **Try This:** Write one sentence about how you spent today. Then ask: if this were the last thought I ever had, would it be enough? Not as guilt — as data. The answer tells you where to redirect attention tomorrow.
+
+**Cross-Reference:** The "last thought" of 8.5-8.7 connects directly to the desire-ladder of 3.42 and the DMN suppression of Chapter 6. What you dwell on (8.6) is what you practise (6.35), and what you practise shapes the ladder you climb (3.42).
+
 ## The Inner Journey
 
 ```mermaid
@@ -463,26 +478,28 @@ mindmap
 
 ## Chapter Quiz
 
-**Q1. How many questions does Arjuna ask Krishna in 8.1-8.2?**
-- a. Three
-- b. Five
-- c. Seven
-- d. Ten
+**Q1. Krishna says "whatever state you constantly dwell in, that you shall meet at the hour of death" (8.6). How does this map onto cognitive science research on expertise and peak performance?**
+
+- a. It doesn't — death is unrelated to skill
+- b. Ericsson's research (1993) shows that expert performance is the automatic expression of years of practice — the "last thought" is the mind's automatic state, shaped by what you rehearsed most. The dying brain executes its strongest neural pattern
+- c. It means only meditation counts as practice
+- d. It is a religious claim with no scientific parallel
 
 <details class="tp-qa-card" data-qid="bg8-q1"><summary>Show Answer</summary>
 
-**Answer: c.** Arjuna asks seven questions — 8.1-8.2.
+**Answer: b.** Ericsson's deliberate practice research shows that peak performance is the automatic expression of deeply rehearsed patterns. The Gita's "last thought" is the same principle applied to death: the mind's dominant pattern — shaped by how you spent your attention — becomes automatic when the body fails. This is why 8.7 says "remember Me at all times" — the practice must be continuous, not last-minute.
 </details>
 
-**Q2. According to 8.3, what is Brahman?**
-- a. The sacred syllable Om
-- b. The imperishable Supreme
-- c. The sun
-- d. The sacrifice
+**Q2. The two paths of 8.24-8.26 — the bright path of fire/light/day and the dark path of smoke/night — map onto two fundamental motivational systems in psychology. What are they?**
+
+- a. Fear and greed
+- b. Approach motivation (toward growth) and avoidance motivation (away from discomfort) — the direction you face in life determines which path you walk
+- c. Introversion and extroversion
+- d. Conscious and unconscious
 
 <details class="tp-qa-card" data-qid="bg8-q2"><summary>Show Answer</summary>
 
-**Answer: b.** Brahman is the imperishable, the Supreme — 8.3.
+**Answer: b.** Elliot (2006) distinguishes approach motivation (moving toward goals, growth, learning) from avoidance motivation (moving away from threats, discomfort, failure). The bright path (fire, light, day) is approach — moving toward awareness. The dark path (smoke, night) is avoidance — moving away from discomfort. The Gita's teaching: the direction you face in daily life determines where you end.
 </details>
 
 **Q3. According to 8.6, what determines the state one reaches at death?**
@@ -535,87 +552,106 @@ mindmap
 2. **The two paths in one week:** For one week, note each morning which direction you set: the bright path (awareness, presence, gratitude) or the dark path (worry, sleepwalking, escape). Count them honestly — the count is your current latitude.
 3. **Extend the Last Thought Forecaster:** Add a `goalThought` to the tool below and have it compute how many minutes per week of practice you would need to make your goal thought overtake the dominant one within thirty days.
 
+### For the Engineer
+
+- **The last thought in architecture:** The system you build under time pressure reveals what you truly value — speed, correctness, beauty, or simplicity. The "last thought" of your architecture is the trade-off you make when the deadline is tomorrow.
+- **Mindfulness in incident response:** "Remember Me and fight" (8.7) is the formula for on-call: stay aware (remember) while acting (fight). Panic is the dark path; calm action is the bright path.
+- **The two paths in career choices:** Every career decision is a step on either the bright path (learning, growth, challenge) or the dark path (comfort, avoidance, easy money). The direction compounds over years.
+
 ## TypeScript Tool: Last Thought Forecaster
 
 ```typescript
-/*
- * Last Thought Forecaster
- * Based on Chapter 8 (Akshara Brahma Yoga).
- * Krishna teaches that whatever state you constantly dwell in
- * becomes the state you meet at the end (8.5-8.7).
- * This tool logs your dominant daily thoughts and forecasts
- * which one you are rehearsing for your final hour -
- * and which path, bright or dark, it places you on.
+/**
+ * Last Thought Forecaster — Terror Management Edition
+ * Based on Akshara Brahma Yoga (Gita 8.5-8.7) and terror
+ * management theory (Greenberg, 1986): awareness of mortality
+ * shapes behavior. The "last thought" is not a deathbed
+ * accident but the accumulated result of daily attention.
+ * Forecasts which mental pattern you are rehearsing.
+ *
+ * Run: npx ts-node last-thought-forecaster.ts
  */
 
 interface ThoughtLogEntry {
   date: string;
   thought: string;
   minutes: number;
+  isApproach: boolean;   // bright path: moving toward growth
+  isAvoidance: boolean;  // dark path: moving away from discomfort
 }
 
 interface ThoughtStat {
   thought: string;
   totalMinutes: number;
   share: number;
+  path: 'bright' | 'dark';
 }
 
 interface Forecast {
   likelyLastThought: string;
   share: number;
   path: 'bright' | 'dark';
+  mortalityIntegration: number;  // 0–10: how well death awareness is woven into daily life
   message: string;
 }
 
-const BRIGHT_MARKERS = ['aware', 'breath', 'witness', 'love', 'still', 'presence', 'gratitude'];
-const DARK_MARKERS = ['fear', 'anger', 'possess', 'revenge', 'worry', 'escape', 'jealous'];
-
 function aggregate(entries: ThoughtLogEntry[]): ThoughtStat[] {
-  const totals = new Map<string, number>();
-  for (const entry of entries) {
-    totals.set(entry.thought, (totals.get(entry.thought) ?? 0) + entry.minutes);
+  const totals = new Map<string, { minutes: number; path: 'bright' | 'dark' }>();
+  for (const e of entries) {
+    const prev = totals.get(e.thought) ?? { minutes: 0, path: 'bright' };
+    totals.set(e.thought, {
+      minutes: prev.minutes + e.minutes,
+      path: e.isAvoidance ? 'dark' : 'bright'
+    });
   }
-  const total = [...totals.values()].reduce((a, b) => a + b, 0);
+  const total = [...totals.values()].reduce((s, v) => s + v.minutes, 0);
   return [...totals.entries()]
-    .map(([thought, totalMinutes]) => ({ thought, totalMinutes, share: totalMinutes / total }))
+    .map(([thought, v]) => ({
+      thought,
+      totalMinutes: v.minutes,
+      share: v.minutes / total,
+      path: v.path
+    }))
     .sort((a, b) => b.totalMinutes - a.totalMinutes);
 }
 
-function forecast(stats: ThoughtStat[]): Forecast {
+function forecast(stats: ThoughtStat[], dailyMindfulnessMin: number): Forecast {
   const dominant = stats[0];
-  const isBright = BRIGHT_MARKERS.some(m => dominant.thought.toLowerCase().includes(m));
-  const isDark = DARK_MARKERS.some(m => dominant.thought.toLowerCase().includes(m));
-  const path: 'bright' | 'dark' = isDark ? 'dark' : 'bright';
+  // Mortality integration: combining daily awareness practice with approach motivation
+  const mindfulnessScore = Math.min(10, Math.round(dailyMindfulnessMin / 3));
+  const approachShare = stats.filter((s) => s.path === 'bright').reduce((s, v) => s + v.share, 0);
+  const mortalityIntegration = Math.round((mindfulnessScore * 0.6 + approachShare * 10 * 0.4));
+
   return {
     likelyLastThought: dominant.thought,
     share: Math.round(dominant.share * 100),
-    path,
-    message: path === 'bright'
-      ? 'The thought you practice daily will meet you at the end as a friend. Keep practicing it.'
-      : 'This thought is rehearsing your return. The witness can watch it - and loosen its grip.'
+    path: dominant.path,
+    mortalityIntegration,
+    message: dominant.path === 'bright'
+      ? `You are rehearsing the bright path. Death awareness at ${mortalityIntegration}/10 — your practice is integrating. (8.24)`
+      : `This thought is rehearsing your return. Increase mindfulness minutes to integrate death awareness into daily life. (8.6)`
   };
 }
 
-function runDemo(): void {
-  const log: ThoughtLogEntry[] = [
-    { date: '2026-08-14', thought: 'worry about the interview', minutes: 120 },
-    { date: '2026-08-14', thought: 'breath awareness', minutes: 30 },
-    { date: '2026-08-15', thought: 'fear of failure', minutes: 90 },
-    { date: '2026-08-15', thought: 'love for family', minutes: 45 },
-    { date: '2026-08-16', thought: 'worry about the interview', minutes: 150 }
-  ];
-  const stats = aggregate(log);
-  const result = forecast(stats);
-  console.log('=== Last Thought Forecaster ===');
-  console.log(`Dominant thoughts analyzed: ${stats.length}`);
-  for (const s of stats) {
-    console.log(`${s.thought} | ${s.totalMinutes} min | ${Math.round(s.share * 100)}%`);
-  }
-  console.log('');
-  console.log(`Likely last thought: "${result.likelyLastThought}" (${result.share}%)`);
-  console.log(`Path: ${result.path === 'bright' ? 'the path of light - no return' : 'the path of smoke - return'}`);
-  console.log(`Osho: ${result.message}`);
-}
+const log: ThoughtLogEntry[] = [
+  { date: '2026-08-18', thought: 'worry about the interview', minutes: 120, isApproach: false, isAvoidance: true },
+  { date: '2026-08-18', thought: 'breath awareness', minutes: 30, isApproach: true, isAvoidance: false },
+  { date: '2026-08-19', thought: 'fear of failure', minutes: 90, isApproach: false, isAvoidance: true },
+  { date: '2026-08-19', thought: 'love for family', minutes: 45, isApproach: true, isAvoidance: false },
+  { date: '2026-08-20', thought: 'worry about the interview', minutes: 150, isApproach: false, isAvoidance: true }
+];
 
-runDemo();
+const stats = aggregate(log);
+const result = forecast(stats, 10);
+
+console.log('=== Last Thought Forecaster ===');
+console.log(`Thoughts analyzed: ${stats.length}`);
+for (const s of stats) {
+  console.log(`  ${s.path === 'bright' ? '[BRIGHT]' : '[DARK]  '} ${s.thought} | ${s.totalMinutes} min | ${Math.round(s.share * 100)}%`);
+}
+console.log('');
+console.log(`Likely last thought: "${result.likelyLastThought}" (${result.share}%)`);
+console.log(`Path: ${result.path === 'bright' ? 'Bright — no return (8.24)' : 'Dark — return (8.26)'}`);
+console.log(`Mortality integration: ${result.mortalityIntegration}/10`);
+console.log(result.message);
 ```

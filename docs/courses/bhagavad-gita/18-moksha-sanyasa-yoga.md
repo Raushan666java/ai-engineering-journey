@@ -938,6 +938,22 @@ Chapter eighteen is the synthesis of the three yogas. Karma yoga: the five cause
 | The Final Surrender | 18.56–18.66 | All action given to the whole; the great assurance: "I will free you — do not grieve" |
 | The Transmission | 18.67–18.78 | The secret shared, the listener freed, the witness shaken — and victory where the two are one |
 
+> **Science Note — Eudaimonic Well-Being and Post-Conventional Morality**
+>
+> Chapter 18 is the Gita's culmination — the full teaching compressed into its essence. The central promise is liberation (moksha) through action without attachment. **Eudaimonic well-being research** (Deci & Ryan, 1985) shows that well-being comes not from pleasure but from autonomous action aligned with one's deepest values — the same formula the Gita teaches.
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | Renunciation of attachment, not action (18.1-18.11) | Self-determination theory (Deci & Ryan, 1985) | Well-being comes from autonomous action — freely chosen, not driven by external pressure or internal compulsion. This is the Gita's "renounce attachment" |
+> | Svadharma — one's own duty (18.45-18.48) | Optimal functioning (Maslow, 1968) | Self-actualization comes from aligning work with one's nature — the same as svadharma. Your own flawed dharma is better than another's perfect one |
+> | The five causes of action (18.14-18.15) | Systems thinking (Senge, 1990) | The five causes map to a systems view of action — body, agent, organs, divine, and the interaction between them. No single cause is the "doer" |
+> | The final surrender (18.66) | Post-conventional morality (Kohlberg, 1981) | The highest moral stage — universal ethical principles — transcends rules and roles. The Gita's surrender to the divine is the same transcendence of conventional morality |
+> | "I will free you — do not grieve" (18.66) | Secure attachment (Bowlby, 1969) | The divine's promise maps to the secure attachment figure's guarantee: "I am here; you are safe." This security enables autonomous action |
+>
+> **Try This:** For one day, practice "satatam" (18.58) — keep the mind pointed at the whole while the hands do their usual work. At the end of the day, note whether effort, tiredness, and worry have changed. This is the Gita's final experiment.
+
+**Cross-Reference:** Chapter 18 synthesizes the entire Gita — the action-yoga of Chapter 3, the knowledge-yoga of Chapter 4, the renunciation-yoga of Chapter 5, the meditation-yoga of Chapter 6, the devotion-yoga of Chapter 12, and the surrender of Chapter 9. The final verse (18.78) declares that where Krishna and Arjuna are together, there is victory — the inner whole joined to the outer doer.
+
 ## The Inner Journey
 
 ```mermaid
@@ -1064,26 +1080,28 @@ mindmap
 **Answer: c.** Work ordained by one's own nature (svabhāva) brings no kilbiṣa — no sin — while imitating another's dharma betrays one's nature.
 </details>
 
-**Q4. What is the sattvic pleasure according to 18.37?**
-- a. Sweet at first and sweet at the end
-- b. Like poison at first and like nectar at the end
-- c. Like nectar at first and like poison at the end
-- d. Delusion at both ends
+**Q4. The sattvic pleasure is "like poison at first, like nectar at the end" (18.37). This maps directly onto which well-being framework?**
+
+- a. The hedonic treadmill
+- b. Eudaimonic well-being (Deci & Ryan, 1985) — autonomous action aligned with one's deepest values feels difficult at first (discipline, delayed gratification) but produces lasting fulfillment, unlike hedonic pleasure which fades
+- c. The peak-end rule
+- d. Positive psychology's broaden-and-build theory
 
 <details class="tp-qa-card" data-qid="bg18-q4"><summary>Show Answer</summary>
 
-**Answer: b.** The sattvic pleasure, born of one's own inner clarity, is like poison at the first taste — like discipline — and nectar in the end.
+**Answer: b.** Deci & Ryan's self-determination theory distinguishes hedonic pleasure (short-term, external rewards) from eudaimonic well-being (long-term, autonomous alignment with values). The Gita's sattvic pleasure — poison first (discipline), nectar later (fulfillment) — is the eudaimonic path. Hedonic pleasure (like nectar first, poison later — 18.38) is the rajasic and tamasic trap.
 </details>
 
-**Q5. According to 18.66, what does Krishna promise the one who abandons all dharmas and takes refuge in Him alone?**
-- a. Victory in every battle of this life
-- b. Wealth, power and a long life
-- c. Liberation from all sins — "do not grieve"
-- d. Knowledge of all the scriptures
+**Q5. "I will liberate you from all sins — do not grieve" (18.66) is the Gita's final promise. How does this map onto secure attachment theory (Bowlby, 1969)?**
+
+- a. It doesn't — religion and psychology are separate
+- b. Secure attachment provides a "safe base" from which to explore autonomously. The divine's promise ("I will free you") functions as the secure base — knowing you are held allows you to act without fear, which is exactly what the Gita teaches
+- c. It is only a psychological安慰剂
+- d. Attachment theory is about childhood, not spirituality
 
 <details class="tp-qa-card" data-qid="bg18-q5"><summary>Show Answer</summary>
 
-**Answer: c.** "I will liberate you from all sins — do not grieve" (mokṣayiṣyāmi mā śucaḥ) is the great assurance of the Gita's final surrender.
+**Answer: b.** Bowlby (1969) showed that secure attachment provides a "safe base" for autonomous exploration. The divine's promise — "I will free you" — is the ultimate secure base. When you know you are held by something larger, you can act freely without fear of failure. This is the Gita's entire teaching compressed into one verse: surrender to the whole, and action becomes effortless.
 </details>
 
 **Q6. How does Arjuna's last line (18.73) describe his state after the teaching?**
@@ -1102,14 +1120,28 @@ mindmap
 2. Build your personal svadharma map: list the work you do in a typical week; beside each, mark whether it arises from your own nature or from borrowed expectation. Choose one borrowed work and consciously offer it back this week — either by declining it or by re-doing it from your own center.
 3. Hold a full day of satatam practice: one day in which the mind is deliberately kept pointed at the whole while the hands do all their usual work — and record the difference in your experience of effort, tiredness and worry at the end of the day.
 
+### For the Engineer
+
+**Svadharma is your engineering identity.** Chapter 18's central teaching — "one's own dharma, though flawed, is better than another's dharma, however well performed" (18.47) — is the Gita's answer to imposter syndrome. You are not meant to be a copy of someone else's engineering path. Your svadharma is your unique combination of skills, temperament, and interest.
+
+The five causes of action (18.14-18.15) — body, agent, organs, divine, interaction — are a systems-level view of software development. No single person is "the doer" of a feature; the codebase, the team, the infrastructure, the user, and the context all contribute. Seeing this dissolves the ego's claim to credit and blame.
+
+The final surrender (18.66) — "I will free you" — maps to the engineering principle of graceful degradation: when you cannot control everything, you design for resilience. The Gita's surrender is not passivity but the ultimate resilience strategy: align with the whole, and the whole carries you.
+
+**Practical bridge:** This week, try the five-causes meditation on one engineering decision. List the five causes — your body (health, energy), your agent (intention), your organs (skills, tools), the divine (context, luck), and the interaction (team, codebase). Notice how the "doer" dissolves into a system. This is the Gita's final teaching applied to engineering practice.
+
 ## TypeScript Tool: Karma Action Analyzer
 
 ```typescript
 /**
- * Karma Action Analyzer
- * Chapter 18 (Moksha Sanyasa Yoga) - a practical tool to classify any action
- * by the five causes (18.14) and the guna of the agent (18.26-18.28),
- * then predict whether it leads toward nishkama karma or bondage.
+ * Karma Action Analyzer - Eudaimonic Well-Being Edition
+ * Based on Moksha Sanyasa Yoga (Gita 18.1-18.78) and
+ * self-determination theory (Deci & Ryan, 1985): well-being
+ * comes from autonomous action aligned with values, not from
+ * pleasure or external rewards. The five causes (18.14) map
+ * to a systems view of action. Svadharma (18.45-18.48) is
+ * the engineering of optimal functioning.
+ *
  * Run: npx ts-node karma-action-analyzer.ts
  */
 
@@ -1125,7 +1157,8 @@ interface ActionReport {
   name: string;
   causes: FiveCauses;
   guna: "sattvic" | "rajasic" | "tamasic";
-  attachment: number;  // 0 = renounced, 10 = fully clinging
+  attachment: number;
+  eudaimonicIndex: number; // 0-100, higher = more autonomous alignment
   verdict: string;
 }
 
@@ -1146,21 +1179,26 @@ function classifyAgent(drive: string, fruit: number, steadiness: number): GunaKe
 function analyze(name: string, causes: FiveCauses, drive: string, fruit: number, steadiness: number): ActionReport {
   const guna = classifyAgent(drive, fruit, steadiness);
   const attachment = fruit;
+  const eudaimonicIndex = Math.round(
+    (guna === "sattvic" ? 70 : guna === "rajasic" ? 40 : 10) +
+    (drive === "duty" ? 30 : drive === "result" ? 10 : 0) -
+    (attachment * 3)
+  );
   const verdict =
     guna === "sattvic" && attachment === 0
-      ? "Nishkama karma: actionless in the midst of action - the fire without smoke."
+      ? "Nishkama karma: actionless in the midst of action - the fire without smoke. Eudaimonic peak."
       : guna === "tamasic"
         ? "Bondage: the action is run by the sleep of the agent. Begin with one small, whole act."
         : "Partial freedom: keep the work, drop the fruit - renounce in the mind, not in the act.";
-  return { name, causes, guna, attachment, verdict };
+  return { name, causes, guna, attachment, eudaimonicIndex, verdict };
 }
 
 function printReport(report: ActionReport): void {
   console.log(`Action: ${report.name}`);
   console.log(`Five causes -> body: ${report.causes.body} | doer: ${report.causes.speaker} | instruments: ${report.causes.organs.join(", ")}`);
   console.log(`Separate agent: ${report.causes.agent} | divine: ${report.causes.divine}`);
-  console.log(`Guna of the agent: ${report.guna} (traits: ${GunaTraits[report.guna].join("; ")})`);
-  console.log(`Attachment to fruit: ${report.attachment}/10`);
+  console.log(`Guna: ${report.guna} (traits: ${GunaTraits[report.guna].join("; ")})`);
+  console.log(`Attachment: ${report.attachment}/10 | Eudaimonic index: ${report.eudaimonicIndex}/100`);
   console.log(`Verdict: ${report.verdict}`);
   console.log("-".repeat(72));
 }

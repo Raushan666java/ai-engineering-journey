@@ -3,7 +3,7 @@ id: 09-rajavidya-rajaguhya-yoga
 slug: /bhagavad-gita/09-rajavidya-rajaguhya-yoga
 title: "Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret"
 sidebar_label: "Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret"
-sidebar_position: 10
+sidebar_position: 9
 ---
 # Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret
 
@@ -460,6 +460,22 @@ This chapter is the crown of the bhakti movement of the Gita (chapters 7-12), bu
 | **The offering life** | 9.26-9.28 | A leaf offered totally outweighs a mountain hoarded; give everything, owe nothing |
 | **The open door** | 9.29-9.34 | Equal to all, intimate with the devoted; the turning is the arrival, for anyone |
 
+> **Science Note — Oxytocin, Attachment Theory, and the Offering Life**
+>
+> Chapter 9 is the Gita's love chapter — Krishna as father, mother, friend, seed, the one who accepts a leaf, a flower, a fruit. The science of **oxytocin** (Kosfeld et al., 2005) and **attachment theory** (Bowlby, 1969) explains why offering works: acts of devotion activate the brain's bonding system, releasing oxytocin and creating a felt sense of connection. The Gita's "offering life" is not just spiritual — it is neurochemical.
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | Offer a leaf, a flower (9.26) | Oxytocin release (Kosfeld et al., 2005) | Small acts of giving activate the bonding hormone. The Gita's "small offering" is a neurochemical trigger for connection |
+> | The one who does not cavil (9.1) | Secure attachment (Bowlby, 1969) | The qualification for receiving the secret is non-envy — a securely attached person who can receive without defending. Envy is insecure attachment projected outward |
+> | Father, mother, friend (9.17-9.18) | Internal working model (Bowlby, 1988) | The divine as multiple relationship figures maps to the brain's internal working model — the template for all relationships. Seeing the divine in all rewrites the template |
+> | Heaven-seekers return (9.20-9.21) | Hedonic adaptation (Brickman & Campbell, 1971) | Pleasure adapts; heaven becomes ordinary. The Gita's warning maps to the "hedonic treadmill" — the pleasure-seeker is always returning because pleasure never satisfies |
+> | The worst sinner becomes righteous (9.30) | Neuroplasticity (Doidge, 2007) | The brain rewires in response to new patterns. Single-hearted devotion creates new neural pathways that override old ones — the "sinner" literally becomes a different person |
+>
+> **Try This:** For one week, offer one small thing daily with full attention — a glass of water, a kind word, a piece of work. Notice whether the quality of the offering changes your felt sense of connection. This is the oxytocin experiment.
+
+**Cross-Reference:** The offering life of Chapter 9 is the practical fulfillment of Chapter 3's yajna (3.10-3.16) and Chapter 5's lotus leaf (5.10). The cycle of giving was introduced as duty in ch3, refined as non-attachment in ch5, and now culminates as love in ch9.
+
 ## The Inner Journey
 
 ```mermaid
@@ -556,26 +572,28 @@ mindmap
 **Answer: a.** All beings rest in Me, yet I do not dwell in them — 9.4-9.5.
 </details>
 
-**Q3. Which of the following is NOT named as Krishna in 9.16-9.19?**
-- a. The fire and the oblation
-- b. The witness and the friend
-- c. The worshipper
-- d. Immortality and death
+**Q3. Krishna names himself as father, mother, grandfather, goal, witness, friend, seed (9.16-9.19). What psychological function does this multiplicity serve — why not just one relationship?**
+
+- a. It is poetic exaggeration with no psychological function
+- b. The brain's internal working model (Bowlby, 1988) stores relationship templates from multiple figures — by claiming all roles, the divine rewrites the entire template, not just one relationship
+- c. It means the divine is confused about identity
+- d. It is meant to confuse the worshipper
 
 <details class="tp-qa-card" data-qid="bg9-q3"><summary>Show Answer</summary>
 
-**Answer: c.** The worshipper is not named; Krishna is the rite, the fire, the oblation, the goal, the witness, the friend, immortality and death — 9.16-9.19.
+**Answer: b.** Bowlby's internal working model theory shows that our relational patterns are built from multiple attachment figures — parents, mentors, peers. Each figure contributes a different template (safety, guidance, challenge, acceptance). By claiming all roles, the divine rewrites the entire internal working model, not just one relationship. This is why the Gita's devotion produces such deep psychological transformation.
 </details>
 
-**Q4. What happens to the heaven-seekers in 9.20-9.21?**
-- a. They stay in heaven forever
-- b. They return to the world of mortals when their merit is exhausted
-- c. They become gods
-- d. They merge with Brahman
+**Q4. The heaven-seekers "return when merit is exhausted" (9.20-9.21). How does this map onto the hedonic treadmill in psychology?**
+
+- a. It doesn't — heaven and psychology are unrelated
+- b. Hedonic adaptation (Brickman & Campbell, 1971) shows that pleasure returns to baseline — the heaven-seeker's joy fades, and they return to craving. The treadmill is the mechanism of return
+- c. Heaven-seekers are punished for being selfish
+- d. The hedonic treadmill says pleasure is permanent
 
 <details class="tp-qa-card" data-qid="bg9-q4"><summary>Show Answer</summary>
 
-**Answer: b.** Enjoying the vast heaven, they return when merit is exhausted — 9.20-9.21.
+**Answer: b.** Brickman's hedonic treadmill research shows that both positive and negative events produce temporary shifts in well-being that return to baseline. The Gita's heaven-seekers enjoy vast pleasure (9.20), but when it fades, they return (9.21). The treadmill is not punishment — it is the nature of pleasure-based motivation. The offering life (9.26-9.27) escapes the treadmill because it is not pleasure-seeking but connection-seeking.
 </details>
 
 **Q5. What does Krishna accept in 9.26, and from whom?**
@@ -606,35 +624,47 @@ mindmap
 2. **The small offering practice:** For one week, once a day, offer something small and total — a leaf found on a walk, a glass of water placed with attention, a flower. Do not tell anyone. Watch how the small practice changes the size of your attention.
 3. **Extend the Offering Ledger:** Add a `dailyGoal` field to the tool below that counts how many consecutive days you have reached the threshold of offered actions, and have it print a "turning streak" — the Gita says the turning is soon (kshipram); let the tool show you your own.
 
+### For the Engineer
+
+- **The offering in code:** When you write a function and let it go — without attachment to whether it gets merged, praised, or rewritten — you are practising the offering life of 9.27. The quality of the offering is in the attention, not the outcome.
+- **Open-source as yajna:** Contributing to open-source without expecting credit or return is the modern leaf-flower-fruit-water offering (9.26). The act of giving freely rewires the brain's bonding system (oxytocin) and breaks the hedonic treadmill of career advancement.
+- **The non-envy qualification (9.1):** The best engineering teams are those where members can celebrate each other's contributions without envy. Non-envy is not just a spiritual virtue — it is the foundation of psychological safety.
+
 ## TypeScript Tool: Offering Ledger
 
 ```typescript
-/*
- * Offering Ledger
- * Based on Chapter 9 (Raja Vidya Raja Guhya Yoga).
- * Shloka 9.27: whatever you do, whatever you eat, whatever
- * you give - make it an offering. This ledger logs daily
- * actions and computes how free you are from the bonds of
- * their results, following the promise of 9.28.
+/**
+ * Offering Ledger — Oxytocin & Attachment Theory Edition
+ * Based on Raja Vidya Raja Guhya Yoga (Gita 9.26-9.28) and
+ * attachment theory (Bowlby, 1969): acts of devotion activate
+ * the brain's bonding system (oxytocin), creating felt
+ * connection. The offering life is neurochemical, not just
+ * spiritual.
+ *
+ * Run: npx ts-node offering-ledger.ts
  */
 
 interface ActionEntry {
   date: string;
   action: string;
-  attached: boolean; // done for a reward
-  offered: boolean;  // done as an offering
+  attached: boolean;      // done for a reward
+  offered: boolean;       // done as an offering
+  withDevotion: boolean;  // done with full attention and love
+  relatedness: number;    // 0–10: felt sense of connection to others during the act
 }
 
 interface DaySummary {
   date: string;
   totalActions: number;
   offeredActions: number;
-  attachmentScore: number; // 0-10, how tightly results are held
+  attachmentScore: number;
+  oxytocinIndex: number;   // proxy: offering + devotion + relatedness
 }
 
 interface FreedomReport {
   daysAnalyzed: number;
   overallAttachmentScore: number;
+  averageOxytocinIndex: number;
   isFree: boolean;
   message: string;
 }
@@ -642,50 +672,57 @@ interface FreedomReport {
 function summarizeDay(entries: ActionEntry[]): DaySummary | null {
   if (entries.length === 0) return null;
   const date = entries[0].date;
-  const offeredActions = entries.filter(e => e.offered).length;
-  const attachedActions = entries.filter(e => e.attached).length;
-  const attachmentScore = Math.round((attachedActions / entries.length) * 10);
-  return { date, totalActions: entries.length, offeredActions, attachmentScore };
+  const offered = entries.filter((e) => e.offered).length;
+  const attached = entries.filter((e) => e.attached).length;
+  const attachmentScore = Math.round((attached / entries.length) * 10);
+
+  // Oxytocin proxy: offering + devotion + relatedness
+  const avgRelatedness = entries.reduce((s, e) => s + e.relatedness, 0) / entries.length;
+  const devotionCount = entries.filter((e) => e.withDevotion).length;
+  const oxytocinIndex = Math.round(
+    (offered / entries.length) * 4 +
+    (devotionCount / entries.length) * 3 +
+    (avgRelatedness / 10) * 3
+  );
+
+  return { date, totalActions: entries.length, offeredActions: offered, attachmentScore, oxytocinIndex };
 }
 
 function analyze(entries: ActionEntry[]): FreedomReport {
   const byDate = new Map<string, ActionEntry[]>();
-  for (const entry of entries) {
-    const list = byDate.get(entry.date) ?? [];
-    list.push(entry);
-    byDate.set(entry.date, list);
+  for (const e of entries) {
+    const list = byDate.get(e.date) ?? [];
+    list.push(e);
+    byDate.set(e.date, list);
   }
   const days = [...byDate.values()].map(summarizeDay).filter((d): d is DaySummary => d !== null);
-  const overall = Math.round(
-    days.reduce((sum, d) => sum + d.attachmentScore, 0) / Math.max(1, days.length)
-  );
+  const overall = Math.round(days.reduce((s, d) => s + d.attachmentScore, 0) / Math.max(1, days.length));
+  const avgOxytocin = Math.round(days.reduce((s, d) => s + d.oxytocinIndex, 0) / Math.max(1, days.length));
   const isFree = overall <= 3;
+
   return {
     daysAnalyzed: days.length,
     overallAttachmentScore: overall,
+    averageOxytocinIndex: avgOxytocin,
     isFree,
     message: isFree
-      ? 'You have loosened the bonds of good and evil fruits. The offering life is carrying you now.'
-      : 'The ledger still shows grasping. Offer the same actions, and the chain will loosen - soon (kshipram).'
+      ? `The bonds of results are loosening. Oxytocin index ${avgOxytocin}/10 — the offering life is rewiring your bonding system. (9.28)`
+      : `Attachment score ${overall}/10 — the ledger still shows grasping. Offer the same actions with devotion, and the chain will loosen. (9.27)`
   };
 }
 
-function runDemo(): void {
-  const log: ActionEntry[] = [
-    { date: '2026-08-17', action: 'prepared breakfast', attached: false, offered: true },
-    { date: '2026-08-17', action: 'wrote report for boss', attached: true, offered: false },
-    { date: '2026-08-17', action: 'phoned mother', attached: false, offered: true },
-    { date: '2026-08-18', action: 'cleaned the room', attached: false, offered: true },
-    { date: '2026-08-18', action: 'practiced meditation', attached: false, offered: true }
-  ];
-  const report = analyze(log);
-  console.log('=== Offering Ledger ===');
-  console.log(`Days analyzed: ${report.daysAnalyzed}`);
-  console.log(`Overall attachment score: ${report.overallAttachmentScore}/10`);
-  console.log(`Status: ${report.isFree ? 'liberated from results' : 'still bound to results'}`);
-  console.log('');
-  console.log(`Osho: ${report.message}`);
-}
+const log: ActionEntry[] = [
+  { date: '2026-08-17', action: 'prepared breakfast for family', attached: false, offered: true, withDevotion: true, relatedness: 8 },
+  { date: '2026-08-17', action: 'wrote report for boss', attached: true, offered: false, withDevotion: false, relatedness: 3 },
+  { date: '2026-08-17', action: 'phoned mother', attached: false, offered: true, withDevotion: true, relatedness: 9 },
+  { date: '2026-08-18', action: 'cleaned the room', attached: false, offered: true, withDevotion: false, relatedness: 2 },
+  { date: '2026-08-18', action: 'mentored junior engineer', attached: false, offered: true, withDevotion: true, relatedness: 7 }
+];
 
-runDemo();
+const report = analyze(log);
+
+console.log('=== Offering Ledger ===');
+console.log(`Days: ${report.daysAnalyzed} | Attachment: ${report.overallAttachmentScore}/10 | Oxytocin: ${report.averageOxytocinIndex}/10`);
+console.log(`Status: ${report.isFree ? 'Liberated from results' : 'Still bound to results'}`);
+console.log(report.message);
 ```

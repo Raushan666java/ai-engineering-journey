@@ -537,6 +537,23 @@ Keep the three lenses together as you read. The Sankhya framework of chapter 2 g
 | The surrender of action | 3.30 | Offer all actions to the whole, free from hope and possession, without fever |
 | The inner enemy | 3.36–3.43 | Desire and anger, born of rajas, cover knowledge; the ladder climbs senses, mind, intellect, and beyond to the Self |
 
+> **Science Note — Self-Determination Theory and the Yajna Cycle**
+>
+> Krishna's argument for action maps directly onto **Self-Determination Theory** (Deci & Ryan, 1985): human motivation thrives when three needs are met — **autonomy** (acting from one's own nature), **competence** (acting skillfully), and **relatedness** (acting for the whole). The Gita's yajna cycle (3.10–3.15) is a model of relatedness: action feeds the whole, the whole feeds you. The "greedy thief" (3.12) violates all three — no autonomy (driven by desire), no competence (grasping without skill), no relatedness (taking without giving).
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | No one can avoid action (3.5) | Activity is a biological imperative (Ryan & Deci) | Even "inaction" is an action — the brain consumes 20% of energy doing nothing. The gunas drive action as必然 as gravity drives falling |
+> | The hypocrite (3.6) | Cognitive dissonance (Festinger, 1957) | Body still + mind churning = maximum dissonance. The mind rebels against the restraint, producing exactly the opposite of peace |
+> | Lokasangraha (3.20–3.25) | Prosocial motivation (Batson, 2011) | Acting for the whole activates the brain's reward centres more powerfully than acting for self — the "helper's high" is neurological |
+> | The gunas act, ego claims (3.27) | Libet experiment (1983) | Brain activity precedes conscious decision by 300–500ms — the "doer" arrives after the act has already begun. The Gita's insight is empirically validated |
+> | Desire and anger as one enemy (3.37) | Dual-process theory: System 1 hijack | Desire and anger are the same reward-prediction system (dopaminergic pathways) — anger is blocked desire. They share neural circuitry |
+> | The ladder of 3.42 | Hierarchical processing (Mesulam, 1998) | The brain processes stimuli in layers: sensory cortex → association cortex → prefrontal cortex → meta-awareness. The Gita's ladder mirrors the brain's architecture |
+>
+> **Try This:** For one day, track every moment when you acted against your own better judgment. Don't judge — just count. This is the hypocrite's territory (3.6). Then, for the next day, track every moment when you acted *for* something larger than yourself — helping a colleague, writing clean code for the next team. Notice which day felt more alive. The Gita's claim: the second day aligns with the yajna cycle and produces energy rather than draining it.
+
+**Cross-Reference:** The ladder of 3.42 (senses → mind → intellect → Self) appears in Chapter 2 as the portrait of the sthitaprajna (2.54–2.72) and in Chapter 13 as the field-knower distinction. The same map is drawn three times — as aspiration (ch2), as action plan (ch3), and as ontology (ch13).
+
 ## The Inner Journey
 
 ```mermaid
@@ -617,28 +634,28 @@ mindmap
 **Answer: b.** The gunas of prakriti drive everyone to action, so the question is only how you act — not whether.
 </details>
 
-**Q2. What does Krishna call the man who restrains his organs of action while his mind dwells on sense objects?**
+**Q2. Krishna calls the man who restrains his body while his mind dwells on objects a "hypocrite" (3.6). How does this map onto modern psychology?**
 
-- a. A sage
-- b. A renouncer
-- c. A hypocrite
-- d. A yogi
+- a. It maps onto social anxiety — fear of others' judgment
+- b. It maps onto cognitive dissonance — the conflict between outward behavior and inner state produces exactly the opposite of peace
+- c. It maps onto depression — the body's refusal to move
+- d. It maps onto flow states — the body is still while the mind is absorbed
 
 <details class="tp-qa-card" data-qid="bg3-q2"><summary>Show Answer</summary>
 
-**Answer: c.** Mithyacara — a counterfeit — because suppression is not renunciation; the mind carries the bazaar inside it.
+**Answer: b.** Festinger's cognitive dissonance theory (1957) shows that suppressing a behavior while the impulse remains creates psychological tension greater than either acting or genuinely renouncing. The Gita's "hypocrite" is the person who creates maximum internal friction by restraining the body without restraining the mind. The solution (3.7) is to act with the mind restrained — resolving the dissonance through integrated action.
 </details>
 
-**Q3. According to shloka 3.12, what is the man who enjoys what is given without offering back to the whole?**
+**Q3. According to 3.12, the man who takes from the whole without giving back is a "thief." How does this principle apply to a modern engineer's relationship with open-source software?**
 
-- a. A miser
-- b. A thief
-- c. An ascetic
-- d. A renouncer
+- a. Using open-source without contributing back is literally theft
+- b. It is not theft but it is a missed opportunity for the yajna cycle — contributing back (code, docs, bug reports) completes the cycle and generates energy
+- c. Open-source is irrelevant to the Gita's teaching
+- d. The Gita opposes all technology
 
 <details class="tp-qa-card" data-qid="bg3-q3"><summary>Show Answer</summary>
 
-**Answer: b.** Stena — a thief — because he takes from the whole without returning the gift of existence.
+**Answer: b.** The Gita's "thief" is not a legal category but a description of broken reciprocity (3.12 commentary). The yajna cycle — mutual nourishment — applies to open-source: the project nourishes you; contributing back nourishes the project. The engineer who takes without giving breaks the wheel. The one who contributes — even small fixes — keeps the cycle alive and receives the "helper's high" that prosocial behavior generates.
 </details>
 
 **Q4. What is lokasangraha?**
@@ -683,16 +700,30 @@ mindmap
 2. **The ladder climb:** When you feel desire or anger rising (3.37), practise the climb of 3.42 in the moment: feel the sensation (senses), watch the thought about it (mind), question the thought (intellect), and rest in the witness of all three (the Self beyond).
 3. **TypeScript exercise:** Extend the Desire Logger — add a "sacrifice score" for each day (3.9–3.13): count acts done for the whole versus acts done for the ego alone, and report the daily ratio.
 
+### For the Engineer
+
+- **The yajna cycle in code:** Every time you write documentation, contribute to open-source, or mentor a junior, you complete the yajna cycle (3.10–3.15). The project nourishes you; you nourish the project. Breaking this cycle is what the Gita calls theft (3.12).
+- **Lokasangraha in team leadership:** Leading a team is lokasangraha — the holding together of the world (3.20). The team functions because you act, and your action holds the fabric. When you withdraw, the web frays.
+- **The gunas in code review:** When you review code and feel "I am the expert" — that is the ego claiming authorship (3.27). The gunas of the codebase (its patterns, its debts, its architecture) produced the code; you are the instrument of correction, not the author of judgment.
+- **The ladder of 3.42 in debugging:** When a bug triggers frustration (senses), trace it upward: the thought about the bug (mind), the analysis of the bug (intellect), and the awareness that watches all three (Self). The Self does not get frustrated; it observes frustration.
+
 ## TypeScript Tool: Desire Logger
 
 ```typescript
-/*
- * Desire Logger
- * Based on Karma Yoga (Gita 3.37, 3.40, 3.42): the inner enemy
- * is desire, seated in the senses, the mind and the intellect.
- * The ladder of ascent climbs to the Self beyond the intellect.
- * This tool logs desires as they arise and tracks at which
- * level of the ladder you caught them.
+/**
+ * Desire Logger — SDT-Based Action Profiler
+ * Based on Karma Yoga (Gita 3.37, 3.40, 3.42) and
+ * Self-Determination Theory (Deci & Ryan, 1985):
+ * motivation thrives when autonomy, competence, and
+ * relatedness are met. The Gita's yajna cycle is a
+ * model of relatedness; the hypocrite (3.6) violates
+ * all three needs.
+ *
+ * Tracks: desires, the seat they arise in (3.42 ladder),
+ * whether they were acted on, and whether the action
+ * met SDT needs.
+ *
+ * Run: npx ts-node desire-logger.ts
  */
 
 type Seat = 'senses' | 'mind' | 'intellect' | 'witness';
@@ -700,9 +731,14 @@ type Seat = 'senses' | 'mind' | 'intellect' | 'witness';
 interface DesireEvent {
   date: string;
   desire: string;
-  seat: Seat;        // where you first noticed it
-  followed: boolean; // did you act on it?
-  caught: boolean;   // did awareness catch it before action?
+  seat: Seat;
+  followed: boolean;
+  caught: boolean;
+  sdtNeeds: {
+    autonomy: boolean;    // acted from own nature?
+    competence: boolean;  // acted skillfully?
+    relatedness: boolean; // acted for the whole?
+  };
 }
 
 interface DesireStats {
@@ -712,58 +748,78 @@ interface DesireStats {
   caughtCount: number;
   catchRate: number;
   witnessCount: number;
+  sdtScore: { autonomy: number; competence: number; relatedness: number; overall: number };
 }
 
 interface DesireReport {
   stats: DesireStats;
   ladderProgress: string;
+  sacrificeScore: number;  // acts for the whole vs acts for ego
   verdict: string;
 }
-
-const SEATS: Seat[] = ['senses', 'mind', 'intellect', 'witness'];
 
 function analyze(events: DesireEvent[]): DesireReport {
   const total = events.length;
   const bySeat: Record<Seat, number> = { senses: 0, mind: 0, intellect: 0, witness: 0 };
   events.forEach((e) => bySeat[e.seat]++);
+
   const followedCount = events.filter((e) => e.followed).length;
   const caughtCount = events.filter((e) => e.caught).length;
   const witnessCount = events.filter((e) => e.seat === 'witness').length;
   const catchRate = total === 0 ? 0 : Math.round((caughtCount / total) * 100);
 
+  // SDT scoring
+  const autonomy = events.filter((e) => e.sdtNeeds.autonomy).length;
+  const competence = events.filter((e) => e.sdtNeeds.competence).length;
+  const relatedness = events.filter((e) => e.sdtNeeds.relatedness).length;
+  const sdtScore = {
+    autonomy: Math.round((autonomy / total) * 100),
+    competence: Math.round((competence / total) * 100),
+    relatedness: Math.round((relatedness / total) * 100),
+    overall: Math.round(((autonomy + competence + relatedness) / (total * 3)) * 100)
+  };
+
+  // Sacrifice score: acts for the whole (relatedness) vs ego alone
+  const sacrificeScore = total === 0 ? 0 : Math.round((relatedness / total) * 100);
+
   let verdict: string;
-  if (witnessCount > 0 && catchRate >= 70) {
-    verdict = 'The witness is awake: desires are caught at the highest rung. The enemy loses its strength.';
+  if (witnessCount > 0 && catchRate >= 70 && sdtScore.overall >= 70) {
+    verdict = 'The witness is awake, desires are caught early, and action meets all three SDT needs. The yajna cycle is complete. (3.9, 3.30)';
   } else if (catchRate >= 50) {
-    verdict = 'The ladder is being climbed: most desires are caught before action. Keep ascending.';
+    verdict = 'The ladder is being climbed: most desires are caught before action. Increase relatedness — act for the whole more often. (3.20)';
   } else {
     verdict = 'Desires are still reaching the hands. Return to 3.42 and practise the climb: senses, mind, intellect, witness.';
   }
 
   const ladderProgress = bySeat.senses > bySeat.mind && bySeat.mind > bySeat.intellect
-    ? 'Desires are seen earliest at the senses and latest at the intellect — the normal descending order.'
-    : 'The seat of first noticing is shifting upward — awareness is taking the higher rungs.';
+    ? 'Normal descending order: desires seen earliest at senses, latest at intellect.'
+    : 'The seat of first noticing is shifting upward — awareness is climbing the ladder.';
 
   return {
-    stats: { total, bySeat, followedCount, caughtCount, catchRate, witnessCount },
+    stats: { total, bySeat, followedCount, caughtCount, catchRate, witnessCount, sdtScore },
     ladderProgress,
+    sacrificeScore,
     verdict
   };
 }
 
-const day: DesireEvent[] = [
-  { date: '2026-08-18', desire: 'sugar', seat: 'senses', followed: false, caught: true },
-  { date: '2026-08-18', desire: 'revenge on a rude email', seat: 'mind', followed: false, caught: true },
-  { date: '2026-08-18', desire: 'praise from the manager', seat: 'intellect', followed: false, caught: false },
-  { date: '2026-08-19', desire: 'one more episode', seat: 'senses', followed: true, caught: false },
-  { date: '2026-08-19', desire: 'being seen as generous', seat: 'witness', followed: false, caught: true }
+const week: DesireEvent[] = [
+  { date: '2026-08-18', desire: 'sugar craving', seat: 'senses', followed: false, caught: true, sdtNeeds: { autonomy: true, competence: true, relatedness: false } },
+  { date: '2026-08-18', desire: 'revenge on rude email', seat: 'mind', followed: false, caught: true, sdtNeeds: { autonomy: true, competence: true, relatedness: true } },
+  { date: '2026-08-18', desire: 'praise from manager', seat: 'intellect', followed: false, caught: false, sdtNeeds: { autonomy: false, competence: true, relatedness: false } },
+  { date: '2026-08-19', desire: 'one more episode', seat: 'senses', followed: true, caught: false, sdtNeeds: { autonomy: false, competence: false, relatedness: false } },
+  { date: '2026-08-19', desire: 'being seen as generous', seat: 'witness', followed: false, caught: true, sdtNeeds: { autonomy: true, competence: true, relatedness: true } },
+  { date: '2026-08-20', desire: 'skip meeting to code', seat: 'mind', followed: false, caught: true, sdtNeeds: { autonomy: true, competence: true, relatedness: false } },
+  { date: '2026-08-20', desire: 'help junior debug', seat: 'witness', followed: true, caught: true, sdtNeeds: { autonomy: true, competence: true, relatedness: true } }
 ];
 
-const report = analyze(day);
-console.log('=== Desire Logger ===');
-console.log(`Desires logged: ${report.stats.total}`);
+const report = analyze(week);
+
+console.log('=== Desire Logger (SDT Edition) ===');
+console.log(`Desires: ${report.stats.total} | Catch rate: ${report.stats.catchRate}%`);
 console.log(`By seat: senses ${report.stats.bySeat.senses}, mind ${report.stats.bySeat.mind}, intellect ${report.stats.bySeat.intellect}, witness ${report.stats.bySeat.witness}`);
-console.log(`Followed: ${report.stats.followedCount} | Caught: ${report.stats.caughtCount} | Catch rate: ${report.stats.catchRate}%`);
+console.log(`SDT: autonomy ${report.stats.sdtScore.autonomy}% | competence ${report.stats.sdtScore.competence}% | relatedness ${report.stats.sdtScore.relatedness}% | overall ${report.stats.sdtScore.overall}%`);
+console.log(`Sacrifice score: ${report.sacrificeScore}% (acts for the whole)`);
 console.log(`Ladder: ${report.ladderProgress}`);
 console.log(`Verdict: ${report.verdict}`);
 ```

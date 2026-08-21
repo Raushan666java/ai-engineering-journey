@@ -3,7 +3,7 @@ id: index
 slug: /bhagavad-gita
 title: "The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan"
 sidebar_label: "The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan"
-sidebar_position: 1
+sidebar_position: 19
 ---
 # The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan
 

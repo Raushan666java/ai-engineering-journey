@@ -763,6 +763,22 @@ All three paths of the Gita converge on this chapter's final verse. Karma Yoga a
 | The way back | 11.47–11.51 | Grace cannot be earned; the gentle form returns as the everyday door to the vision |
 | The final key | 11.52–11.55 | Ananya bhakti — single-minded devotion alone knows, sees and enters the whole |
 
+> **Science Note — Ego Dissolution and Mystical Experiences**
+>
+> Chapter 11 is the Gita's most dramatic chapter — the cosmic vision that terrifies Arjuna. Modern psychology of mystical experiences (Hood, 1975) and ego dissolution (Millière et al., 2017) describe exactly what Arjuna undergoes: the temporary collapse of the self-boundary, producing both terror and ecstasy. The "thousand suns" (11.12) is not just poetry — it maps to the phenomenology of ego dissolution: a flash of boundless awareness that overwhelms the ordinary self.
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | The granting of the divine eye (11.8) | Mystical experience (Hood, 1975) | The "divine eye" is a shift in attentional frame — from object-focused to awareness-focused. This is the same shift described in meditation research |
+> | The terror of the vision (11.20-11.31) | Ego dissolution (Millière et al., 2017) | The ego's fear response to boundary loss is universal — the self defends its own annihilation. The terror is the ego's farewell, not danger |
+> | "I am Time, the world-destroyer" (11.32) | Impermanence awareness (Epstein, 2008) | Confronting impermanence directly produces both terror and liberation — the same insight that underlies Buddhist anicca and Stoic memento mori |
+> | The gentle form returns (11.47-11.51) | Integration after mystical experience (Welwood, 2000) | The return to the familiar is essential — mystical experiences must be integrated into daily life, not clung to. Grace is the integration |
+> | Single-minded devotion (11.54) | Absorption states (Csikszentmihalyi, 1990) | Ananya bhakti maps to deep absorption — the total engagement that produces the same boundary-dissolution as the cosmic vision, but sustained |
+>
+> **Try This:** Reflect on a moment when you felt both terrified and exhilarated — a risk taken, a boundary crossed, a truth confronted. That moment is a miniature vishvarupa. The ego shrinks; the awareness expands. The terror and the ecstasy are two sides of the same coin.
+
+**Cross-Reference:** The cosmic vision of Chapter 11 is the extreme version of the witness practice of Chapter 2 (2.54-2.72) — the witness sees everything at once, and the ego cannot bear it. The return to the gentle form (11.47) is the integration that Chapter 6's meditation (6.10-6.47) prepares you for.
+
 ## The Inner Journey
 
 ```mermaid
@@ -857,29 +873,29 @@ mindmap
 **Answer: b.**
 </details>
 
-**Q3. Who says "I am Time, the world-destroyer," and in which shloka?**
-- a. Arjuna, 11.15
-- b. Sanjaya, 11.25
-- c. Krishna, 11.32
-- d. Dhritarashtra, 11.9
+**Q3. Arjuna's terror at the cosmic vision (11.20-11.31) maps onto what modern psychological phenomenon?**
+
+- a. Panic disorder
+- b. Ego dissolution — the temporary collapse of the self-boundary, producing both terror and ecstasy (Millière et al., 2017)
+- c. Post-traumatic stress
+- d. Schizophrenia
 
 <details class="tp-qa-card" data-qid="bg11-q3"><summary>Show Answer</summary>
 
-**Answer: c.**
+**Answer: b.** Millière et al. (2017) describe ego dissolution as the temporary loss of the sense of being a separate self — producing both terror (the ego defends its own annihilation) and ecstasy (the expansion of awareness beyond the self). Arjuna's trembling, his hair standing on end, his confusion — all map to the phenomenology of ego dissolution. The "thousand suns" (11.12) is the flash of boundless awareness that overwhelms the ordinary self.
 </details>
 
-**Q4. In shloka 11.33, what does Krishna tell Arjuna to become?**
-- a. A king
-- b. A mere instrument
-- c. A monk
-- d. A teacher
+**Q5. After the cosmic vision, Krishna returns to the "gentle form" (11.47-11.51). Why is this return essential, and how does it map onto the integration of peak experiences in psychology?**
 
-<details class="tp-qa-card" data-qid="bg11-q4"><summary>Show Answer</summary>
+- a. It is not essential — the vision alone is enough
+- b. Mystical experiences must be integrated into daily life, not clung to (Welwood, 2000). The return to the gentle form is the integration phase — without it, the experience remains a dissociative episode rather than a transformation
+- c. Krishna was tired and needed to rest
+- d. It shows the divine is inconsistent
 
-**Answer: b.**
+<details class="tp-qa-card" data-qid="bg11-q5"><summary>Show Answer</summary>
+
+**Answer: b.** Welwood (2000) distinguishes between peak experiences and their integration — the latter is what produces lasting change. The cosmic vision without the return would be a dissociative episode; the return to the gentle form allows Arjuna to carry the insight into daily life. Grace is not the vision itself but the integration of the vision.
 </details>
-
-**Q5. According to shloka 11.54, what is the only door to knowing, seeing and entering the divine?**
 - a. Severe austerities
 - b. Study of the Vedas
 - c. Single-minded devotion
@@ -907,21 +923,32 @@ mindmap
 2. **Analysis exercise — the instrument test:** Pick one current responsibility and perform it for a day as "nimittamatram" — a mere instrument. Observe how the action changes when ownership of results is released, and note what remains of your old fear.
 3. **TypeScript exercise — extend the Vision Log:** Modify the Vishvarupa Vision Log below to add a `mostVolatile` report — the movement whose dominant emotion shifts most between its start and end shloka — and print it after the summaries.
 
+### For the Engineer
+
+- **The cosmic vision in system design:** When you first see a complex system's full architecture — all the services, databases, queues, and dependencies — the experience can be overwhelming (terror) and exhilarating (wonder). This is the vishvarupa moment. The return to the gentle form is the integration: you focus on one module at a time while carrying the whole architecture in mind.
+- **"I am Time" in production incidents:** When a critical incident occurs, panic is the dark path. "Remember Me and fight" (8.7) combined with "I am Time" (11.32) means: accept the impermanence of the situation, act as an instrument, and let the incident unfold through you rather than by you.
+- **Ego dissolution in code review:** When your code is thoroughly critiqued, the ego's defense is the "terror" response. The integration is recognizing that the code is not you — the critique targets the artifact, not the person. This is the gentle form returning after the cosmic vision.
+
 ## TypeScript Tool: Vishvarupa Vision Log
 
 ```typescript
-/*
- * Vishvarupa Vision Log
- * Chapter 11 - Vishvarupa Darshana Yoga
- * Tracks all 55 shlokas through the chapter's four movements
- * and prints the emotional arc of the cosmic vision.
- * The arc: gratitude to longing, wonder to terror, shock to surrender.
+/**
+ * Vishvarupa Vision Log — Ego Dissolution Edition
+ * Based on Vishvarupa Darshana Yoga (Gita 11.1-11.55) and
+ * ego dissolution research (Millière et al., 2017): the
+ * temporary collapse of the self-boundary produces both
+ * terror and ecstasy. The vision's arc maps the phenomenology
+ * of ego dissolution and its integration.
+ *
+ * Run: npx ts-node vishvarupa-vision-log.ts
  */
 
 interface ShlokaEntry {
   number: number;
   movement: string;
   emotionalState: string;
+  egoIntensity: number;   // 0–10: how strongly is the self defending?
+  awarenessBreadth: number; // 0–10: how expansive is awareness?
 }
 
 interface MovementSummary {
@@ -929,6 +956,9 @@ interface MovementSummary {
   range: [number, number];
   shlokas: number;
   dominantEmotion: string;
+  peakEgoIntensity: number;
+  peakAwarenessBreadth: number;
+  dissolutionScore: number;  // awareness - ego: positive = breakthrough
 }
 
 const movements: [string, number, number][] = [
@@ -938,12 +968,24 @@ const movements: [string, number, number][] = [
   ['The praise, the return and the way', 36, 55]
 ];
 
-const emotionOf: Record<number, string> = {
-  1: 'gratitude', 3: 'longing', 8: 'trust', 12: 'wonder',
-  14: 'awe', 20: 'fear', 23: 'terror', 25: 'desperation',
-  28: 'consolation', 31: 'humility', 32: 'shock', 33: 'clarity',
-  37: 'praise', 44: 'surrender', 45: 'longing for the gentle',
-  51: 'peace', 55: 'devotion'
+const emotionData: Record<number, { emotion: string; ego: number; awareness: number }> = {
+  1: { emotion: 'gratitude', ego: 3, awareness: 5 },
+  3: { emotion: 'longing', ego: 4, awareness: 6 },
+  8: { emotion: 'trust', ego: 2, awareness: 7 },
+  12: { emotion: 'wonder', ego: 5, awareness: 8 },
+  14: { emotion: 'awe', ego: 6, awareness: 9 },
+  20: { emotion: 'fear', ego: 9, awareness: 7 },
+  23: { emotion: 'terror', ego: 10, awareness: 6 },
+  25: { emotion: 'desperation', ego: 8, awareness: 5 },
+  28: { emotion: 'consolation', ego: 5, awareness: 7 },
+  31: { emotion: 'humility', ego: 3, awareness: 8 },
+  32: { emotion: 'shock', ego: 7, awareness: 9 },
+  33: { emotion: 'clarity', ego: 2, awareness: 10 },
+  37: { emotion: 'praise', ego: 3, awareness: 8 },
+  44: { emotion: 'surrender', ego: 1, awareness: 9 },
+  45: { emotion: 'longing for the gentle', ego: 4, awareness: 7 },
+  51: { emotion: 'peace', ego: 2, awareness: 8 },
+  55: { emotion: 'devotion', ego: 1, awareness: 9 }
 };
 
 function movementOf(verse: number): string {
@@ -954,10 +996,13 @@ function movementOf(verse: number): string {
 function buildLog(): ShlokaEntry[] {
   const entries: ShlokaEntry[] = [];
   for (let v = 1; v <= 55; v++) {
+    const data = emotionData[v] ?? { emotion: 'awakening', ego: 4, awareness: 6 };
     entries.push({
       number: v,
       movement: movementOf(v),
-      emotionalState: emotionOf[v] ?? 'awakening'
+      emotionalState: data.emotion,
+      egoIntensity: data.ego,
+      awarenessBreadth: data.awareness
     });
   }
   return entries;
@@ -965,26 +1010,37 @@ function buildLog(): ShlokaEntry[] {
 
 function summarize(log: ShlokaEntry[]): MovementSummary[] {
   return movements.map(([name, start, end]) => {
-    const slice = log.filter(e => e.number >= start && e.number <= end);
+    const slice = log.filter((e) => e.number >= start && e.number <= end);
     const counts: Record<string, number> = {};
-    slice.forEach(e => { counts[e.emotionalState] = (counts[e.emotionalState] ?? 0) + 1; });
+    slice.forEach((e) => { counts[e.emotionalState] = (counts[e.emotionalState] ?? 0) + 1; });
     const dominant = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];
-    return { name, range: [start, end], shlokas: slice.length, dominantEmotion: dominant };
+    const peakEgo = Math.max(...slice.map((e) => e.egoIntensity));
+    const peakAwareness = Math.max(...slice.map((e) => e.awarenessBreadth));
+    return {
+      name,
+      range: [start, end] as [number, number],
+      shlokas: slice.length,
+      dominantEmotion: dominant,
+      peakEgoIntensity: peakEgo,
+      peakAwarenessBreadth: peakAwareness,
+      dissolutionScore: peakAwareness - peakEgo
+    };
   });
 }
 
-function printArc(log: ShlokaEntry[]): void {
-  console.log('=== Vishvarupa Vision Log ===');
-  console.log('The arc of the seer through the vision:\n');
-  for (const s of log) {
-    console.log(`${String(s.number).padStart(2)} | ${s.movement.padEnd(36)} | ${s.emotionalState}`);
-  }
-  console.log('\n=== Movement summaries ===');
-  for (const m of summarize(log)) {
-    console.log(`${m.name}: shlokas ${m.range[0]}-${m.range[1]}, dominant emotion: ${m.dominantEmotion}`);
-  }
-  console.log('\nOsho says: terror is the ego farewell; devotion is the return home.');
-}
+const log = buildLog();
+const summaries = summarize(log);
 
-printArc(buildLog());
+console.log('=== Vishvarupa Vision Log ===');
+console.log('The arc of the seer through the vision:\n');
+for (const s of log) {
+  const bar = '█'.repeat(s.awarenessBreadth) + '░'.repeat(10 - s.awarenessBreadth);
+  console.log(`${String(s.number).padStart(2)} | ${s.movement.padEnd(36)} | ${s.emotionalState.padEnd(18)} | ${bar}`);
+}
+console.log('\n=== Movement Summaries ===');
+for (const m of summaries) {
+  const dissolution = m.dissolutionScore > 0 ? `+${m.dissolutionScore}` : `${m.dissolutionScore}`;
+  console.log(`${m.name}: ego ${m.peakEgoIntensity}/10, awareness ${m.peakAwarenessBreadth}/10, dissolution ${dissolution}`);
+}
+console.log('\nTerror is the ego farewell; devotion is the return home. (11.47-11.55)');
 ```

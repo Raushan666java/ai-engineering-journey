@@ -405,6 +405,21 @@ The Gita's three great paths are karma, bhakti and jnana. The first six chapters
 | **The pairs of opposites** | 7.27-7.28 | Desire and aversion swing the mind; the witness is the center that never swings |
 | **The final hour** | 7.29-7.30 | How you live is how you die; the last thought is the summary of a life |
 
+> **Science Note — Predictive Processing and Interoception**
+>
+> Chapter 7 distinguishes jnana (head knowledge) from vijnana (embodied realization). Modern cognitive science calls this distinction **predictive processing** (Clark, 2013): the brain constantly generates predictions about the body and world, and vijnana arises when these predictions are updated by direct experience, not just information. The Gita's "jnana with vijnana" (7.2) is the difference between reading about riding a bicycle and actually riding one — the brain's predictive model changes only through embodied contact.
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | Jnana vs vijnana (7.2) | Predictive processing (Clark, 2013) | Information updates predictions weakly; direct experience updates them strongly. The Gita's insistence on vijnana is neuroscience-accurate |
+> | The eightfold lower nature (7.4) | Embodied cognition (Varela, 1991) | Mind, intellect, and ego are not abstract — they emerge from the body's interaction with the world. The Gita's list maps to the brain's interoceptive, proprioceptive, and exteroceptive systems |
+> | The guna veil (7.13) | Predictive bias (Hohwy, 2013) | The gunas are the brain's priors — colored expectations that filter all incoming data. The veil is not mystical; it is the brain's tendency to confirm its own predictions |
+> | The final hour (7.29-7.30) | Terror management theory (Greenberg, 1986) | How you live determines what you cling to at death. Those who live in awareness have a "secure base" (Bowlby, 1969) that makes death a transition, not a terror |
+>
+> **Try This:** For one week, track the gap between what you "know" about a skill and what you can actually do. Write down 5 things you know intellectually (jnana) and 5 things you can demonstrate in practice (vijnana). The gap is your vijnana deficit — and the only remedy is doing, not reading.
+
+**Cross-Reference:** The jnana-vijnana distinction echoes throughout the Gita — the ladder of 3.42 (mind over body, intellect over mind, the Self over all) and the lotus leaf of 5.10 (knowing vs. being untouched). Chapter 7 names what the earlier chapters enacted.
+
 ## The Inner Journey
 
 ```mermaid
@@ -496,26 +511,28 @@ mindmap
 **Answer: a.** Among thousands one strives; among strivers, one knows Me in essence — 7.3.
 </details>
 
-**Q3. Which of the following makes up the eightfold lower nature in 7.4?**
-- a. Earth, water, fire, air, ether, mind, intellect and egoism
-- b. The five senses, the body, the breath and the soul
-- c. The four Vedas and the four goals of life
-- d. Sattva, rajas, tamas and their five modifications
+**Q3. Krishna says maya is "divine and gunamayi, hard to cross" (7.14). Modern cognitive science calls this the brain's "predictive priors" — colored expectations that filter all incoming data. Why is this hard to overcome through logic alone?**
+
+- a. Because logic is weak and maya is strong
+- b. Because priors are unconsciously held — you cannot argue with a filter you don't know you're wearing. Only direct experience (vijnana) can update deep priors
+- c. Because the gunas don't exist in modern psychology
+- d. Because maya is a supernatural force that defies logic
 
 <details class="tp-qa-card" data-qid="bg7-q3"><summary>Show Answer</summary>
 
-**Answer: a.** Earth, water, fire, air, ether, mind, intellect and egoism — 7.4.
+**Answer: b.** Hohwy (2013) shows that the brain's priors are maintained below conscious awareness — you cannot reason your way out of a bias you don't perceive. The Gita's solution — surrender and refuge (7.14) — bypasses the rational mind and allows direct experience to update the priors. This is why vijnana (realization) is superior to jnana (knowledge).
 </details>
 
-**Q4. How is maya described in 7.14, and how is it crossed?**
-- a. It is weak and dissolves by logic
-- b. Divine, woven of the gunas, hard to cross; crossed by those who take refuge in Me alone
-- c. It ends automatically at death
-- d. It is crossed by accumulating merit
+**Q4. The four kinds of worshippers (7.16-7.19) — the distressed, the curious, the merchant, the wise — map onto stages of psychological development. How does the Gita's ranking relate to self-determination theory (Deci & Ryan, 1985)?**
+
+- a. It doesn't — the Gita and SDT are unrelated
+- b. The distressed seek safety (deficiency motivation), the merchant seeks achievement (extrinsic), the wise seek understanding (intrinsic) — the Gita's hierarchy matches SDT's progression from deficiency to growth motivation
+- c. The Gita ranks them by social status
+- d. SDT says all motivation is equally valuable
 
 <details class="tp-qa-card" data-qid="bg7-q4"><summary>Show Answer</summary>
 
-**Answer: b.** Maya is divine and gunamayi, hard to cross; those who take refuge cross it — 7.14.
+**Answer: b.** Deci & Ryan's SDT distinguishes deficiency motivation (acting from lack) from growth motivation (acting from intrinsic interest). The distressed worshipper acts from deficiency (fear, suffering), the merchant from extrinsic reward, the wise from intrinsic understanding. The Gita's hierarchy (7.19: "the wise one is the best") aligns with SDT's finding that intrinsic motivation produces deeper well-being and more stable behavior.
 </details>
 
 **Q5. Who are the four kinds of virtuous worshippers named in 7.16?**
@@ -546,17 +563,24 @@ mindmap
 2. **The guna watch:** For one day, catch yourself in three moods — one sattvic (calm), one rajasic (driven), one tamasic (dull). After each one, note: what was I seeing through? This is watching the veil instead of being the veil.
 3. **The final-hour practice:** Extend the Vijnana Realization Checker below — add a "lastThought" field to the study log and have the tool forecast which topic would dominate your final hour if you stopped practicing today. Let the forecast guide your next week of practice.
 
+### For the Engineer
+
+- **Jnana vs vijnana in code review:** You can read about clean code (jnana) but only writing and maintaining code teaches you what clean actually means (vijnana). The engineer who has never debugged a production incident "knows" about monitoring but has not realized it.
+- **The guna veil in code review:** Your priors about "good code" are colored by your experience — a functional programmer sees monads where an imperative programmer sees control flow. Recognizing the guna-veil means acknowledging that your code review is filtered through your own priors.
+- **The final hour in production:** How you write code in calm times determines how you respond in incidents. The "last thought" of your system is the architecture you built when there was no pressure.
+
 ## TypeScript Tool: Vijnana Realization Checker
 
 ```typescript
-/*
- * Vijnana Realization Checker
- * Based on Chapter 7 (Jnana-Vijnana Yoga).
- * Jnana is knowing about something; vijnana is realizing it.
- * The tool scans a learner's study log and separates borrowed
- * knowledge (jnana) from lived realization (vijnana),
- * following Krishna's promise in 7.1-7.3: among thousands
- * who study, one strives; among strivers, one realizes.
+/**
+ * Vijnana Realization Checker — Predictive Processing Edition
+ * Based on Jnana-Vijnana Yoga (Gita 7.1-7.3) and predictive
+ * processing theory (Clark, 2013): jnana updates predictions
+ * weakly; vijnana (embodied practice) updates them strongly.
+ * Tracks the gap between intellectual knowledge and lived
+ * realization across topics.
+ *
+ * Run: npx ts-node vijnana-realization-checker.ts
  */
 
 interface StudyLogEntry {
@@ -564,11 +588,14 @@ interface StudyLogEntry {
   studyHours: number;
   practiceSessions: number;
   daysSincePractice: number;
+  canDemonstrate: boolean;   // vijnana: can you show, not just tell?
+  confidence: number;        // 0–10: how confident are you in this skill?
 }
 
 interface RealizationReport {
   topic: string;
   kind: 'jnana' | 'vijnana';
+  confidenceGap: number;     // difference between self-assessed and demonstrated
   reason: string;
 }
 
@@ -578,47 +605,54 @@ const RECENCY_LIMIT_DAYS = 7;
 function classify(entry: StudyLogEntry): RealizationReport {
   const practiced = entry.practiceSessions >= PRACTICE_THRESHOLD;
   const stillFresh = entry.daysSincePractice <= RECENCY_LIMIT_DAYS;
-  if (practiced && stillFresh) {
+  const demonstrated = entry.canDemonstrate;
+
+  if (practiced && stillFresh && demonstrated) {
     return {
       topic: entry.topic,
       kind: 'vijnana',
-      reason: 'You have practiced this recently; it lives in your hands, not just in your head.'
+      confidenceGap: 0,
+      reason: 'Embodied knowledge: you can demonstrate this, not just describe it. The brain\'s predictive model has been updated by direct experience. (7.2)'
     };
   }
+
+  const gap = entry.canDemonstrate ? 0 : entry.confidence;
   return {
     topic: entry.topic,
     kind: 'jnana',
-    reason: 'You know about it, but realization needs recent practice. The map is not the mountain.'
+    confidenceGap: gap,
+    reason: gap > 5
+      ? `High confidence but no demonstration — the classic jnana trap. You know about it but cannot show it. Practice to close the gap. (7.1)`
+      : `You know about it, but realization needs recent practice. The map is not the mountain. (7.2)`
   };
 }
 
 function summarize(entries: StudyLogEntry[]): void {
   const reports = entries.map(classify);
-  const realized = reports.filter(r => r.kind === 'vijnana').length;
+  const realized = reports.filter((r) => r.kind === 'vijnana').length;
+  const avgGap = Math.round(reports.reduce((s, r) => s + r.confidenceGap, 0) / reports.length);
+
   console.log('=== Vijnana Realization Checker ===');
-  console.log(`Topics analyzed: ${reports.length}`);
-  console.log(`Realized (vijnana): ${realized}`);
-  console.log(`Known only (jnana): ${reports.length - realized}`);
+  console.log(`Topics: ${reports.length} | Realized: ${realized} | Known only: ${reports.length - realized}`);
+  console.log(`Average confidence gap: ${avgGap}/10`);
   console.log('');
   for (const report of reports) {
-    console.log(`[${report.kind.toUpperCase()}] ${report.topic}`);
+    const icon = report.kind === 'vijnana' ? '[VIJNANA]' : '[JNANA]  ';
+    console.log(`${icon} ${report.topic}`);
     console.log(`   ${report.reason}`);
   }
   console.log('');
   console.log(realized === 0
-    ? 'Among thousands who study, one strives; among strivers, one realizes. Be that one.'
-    : 'What you have realized cannot be taken from you. It is the eternal seed.');
+    ? 'Among thousands who study, one strives; among strivers, one realizes. Be that one. (7.3)'
+    : 'What you have realized cannot be taken from you. It is the eternal seed. (7.2)');
 }
 
-function runDemo(): void {
-  const log: StudyLogEntry[] = [
-    { topic: 'Non-attachment', studyHours: 12, practiceSessions: 8, daysSincePractice: 2 },
-    { topic: 'The witness (sakshi)', studyHours: 20, practiceSessions: 3, daysSincePractice: 40 },
-    { topic: 'Breath awareness', studyHours: 6, practiceSessions: 30, daysSincePractice: 0 },
-    { topic: 'The gunas', studyHours: 15, practiceSessions: 2, daysSincePractice: 25 }
-  ];
-  summarize(log);
-}
+const log: StudyLogEntry[] = [
+  { topic: 'Non-attachment', studyHours: 12, practiceSessions: 8, daysSincePractice: 2, canDemonstrate: true, confidence: 7 },
+  { topic: 'The witness (sakshi)', studyHours: 20, practiceSessions: 3, daysSincePractice: 40, canDemonstrate: false, confidence: 8 },
+  { topic: 'Breath awareness', studyHours: 6, practiceSessions: 30, daysSincePractice: 0, canDemonstrate: true, confidence: 6 },
+  { topic: 'The gunas', studyHours: 15, practiceSessions: 2, daysSincePractice: 25, canDemonstrate: false, confidence: 9 }
+];
 
-runDemo();
+summarize(log);
 ```

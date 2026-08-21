@@ -395,6 +395,21 @@ Karma, bhakti, jnana — all three frames meet in this short chapter. Karma appe
 | **Desire, anger, and the free one** | 5.23-5.28 | Withstand the two floods; happiness, play, and light move inside |
 | **The friend** | 5.29 | Renunciation ripens into love — the universe is a friend, and peace is that friendship's temperature |
 
+> **Science Note — Cognitive Load Theory and the Lotus Leaf**
+>
+> Chapter 5's central image — acting in the world without being touched, like a lotus leaf in water (5.10) — maps onto **cognitive load theory** (Sweller, 1988): the mind has finite processing capacity, and attachment to results consumes working memory. The "lotus leaf" is not emotional detachment but efficient cognitive processing — acting fully while keeping working memory free for the task itself.
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | The perpetual sannyasi (5.3) | Choice architecture (Thaler & Sunstein, 2008) | The "nudge" is internal: arranging your environment so the right action is the default. The renouncer doesn't resist temptation; he designs it away |
+> | I do nothing at all (5.8) | Flow state (Csikszentmihalyi, 1990) | In flow, the sense of agency dissolves — the climber does not decide each grip; the climb happens. This is the Gita's "I do nothing" |
+> | The lotus leaf (5.10) | Cognitive load reduction (Sweller, 1988) | Attachment adds extraneous cognitive load — worry about outcomes consumes working memory. Dropping attachment frees cognitive resources for the task |
+> | The equal eye (5.18) | Implicit bias reduction (Greenwald, 1998) | Training the mind to see the same Self in all beings is the deepest form of bias reduction — not suppressing stereotypes but dissolving the category system that creates them |
+>
+> **Try This:** For one task this week, remove all outcome expectations. Don't check metrics, don't think about praise or blame. Just do the task fully and let the result be. Notice whether the quality of the act changes when the cognitive load of outcome-worry is removed. This is the lotus leaf experiment.
+
+**Cross-Reference:** The lotus leaf (5.10) is the practical expression of Chapter 2's sthitaprajna (2.54–2.72) and Chapter 6's lamp in the windless place (6.18–6.23). The same image — untouched presence — appears in three different metaphors across three chapters.
+
 ## The Inner Journey
 
 ```mermaid
@@ -487,52 +502,28 @@ mindmap
 **Answer: c.**
 </details>
 
-**Q3. What does the knower of truth think in Shloka 5.8?**
+**Q3. Krishna says the knower of truth thinks "I do nothing at all" (5.8). How does this map onto the psychology of flow states?**
 
-- a. "I have conquered all my senses"
-- b. "I do nothing at all"
-- c. "I must renounce the world"
-- d. "I am the greatest of yogis"
+- a. It means the wise person is lazy and inactive
+- b. In flow, the sense of agency dissolves — the act happens through you rather than by you, which is the same as "I do nothing at all"
+- c. It means the wise person denies responsibility
+- d. It is a metaphor for sleep
 
 <details class="tp-qa-card" data-qid="bg5-q3"><summary>Show Answer</summary>
 
-**Answer: b.**
+**Answer: b.** Csikszentmihalyi's flow research (1990) shows that in deep engagement, the sense of a separate "doer" dissolves — the musician does not decide each note; the music happens. The Gita's "I do nothing at all" (5.8) is not denial but a description of the flow state: awareness without a claimant, action without an actor.
 </details>
 
-**Q4. In Shloka 5.10, the one who acts without attachment is compared to —**
+**Q5. The "equal eye" of 5.18 (seeing the same Self in a scholar, cow, dog, and outcaste) seems impractical. How does this actually work in a modern team?**
 
-- a. A flame in the wind
-- b. A lotus leaf untouched by water
-- c. A tree in a storm
-- d. A lamp in a temple
-
-<details class="tp-qa-card" data-qid="bg5-q4"><summary>Show Answer</summary>
-
-**Answer: b.**
-</details>
-
-**Q5. Which creatures does the sage look upon with an equal eye in Shloka 5.18?**
-
-- a. Only fellow humans
-- b. Only the learned
-- c. A brahmin, a cow, an elephant, a dog, and an outcaste
-- d. Only sages and kings
+- a. It doesn't — everyone should be treated exactly the same regardless of role
+- b. It means recognizing the same capacity for growth, suffering, and contribution in every person — not ignoring role differences but seeing through them to the shared potential
+- c. It means ignoring all differences and pretending hierarchy doesn't exist
+- d. It is a spiritual ideal with no practical application
 
 <details class="tp-qa-card" data-qid="bg5-q5"><summary>Show Answer</summary>
 
-**Answer: c.**
-</details>
-
-**Q6. What does one attain by knowing Krishna as the friend of all beings (Shloka 5.29)?**
-
-- a. Wealth
-- b. Victory in battle
-- c. Peace
-- d. Long life
-
-<details class="tp-qa-card" data-qid="bg5-q6"><summary>Show Answer</summary>
-
-**Answer: c.**
+**Answer: b.** The equal eye is not egalitarianism but depth perception — seeing the same Self (capacity for growth, awareness, contribution) in every person while still acknowledging role differences. In a team, this means: the intern and the CTO share the same potential; neither is reduced to their title. This is the foundation of psychological safety (Edmondson, 1999).
 </details>
 
 ## Exercises
@@ -541,39 +532,54 @@ mindmap
 2. **The lotus-leaf test (analysis):** For three days, watch one recurring situation where you get soaked — criticism, flattery, comparison, delay. Record each moment the water touched you and whether you stayed leaf-like or became the pond. Find the pattern in what makes you tilt toward the water.
 3. **Extend the tool (TypeScript):** Build on the Witness Tracker below by adding a `dvandvaLog` — pairs of opposites experienced each day (success/failure, praise/blame) with a witnessScore for each. Report which pair binds you most, and connect it to 5.3.
 
+### For the Engineer
+
+- **The lotus leaf in code review:** When a reviewer critiques your code, notice whether you feel the "soak" — defensiveness, shame, anger. The lotus leaf response: receive the feedback fully, let it inform the code, and do not let it touch the self. The code is not you.
+- **Cognitive load and attachment:** Worrying about whether your PR will be approved consumes working memory that could be used for writing better code. Drop the outcome expectation; focus on the act. This is not indifference but efficiency.
+- **The equal eye in cross-functional work:** The designer, the PM, the QA engineer, the intern — each sees a different facet of the same product. Seeing the same Self in each role means valuing their perspective as deeply as your own.
+
 ## TypeScript Tool: Lotus Leaf Witness Tracker
 
 ```typescript
-/*
- * Lotus Leaf Witness Tracker
- * Based on Karma-Sanyasa Yoga (Chapter 5 of the Bhagavad Gita):
- * the sage lives in the world like a lotus leaf on water —
- * fully supported, not wetted. Actions, claims, and cravings
- * are logged; the tracker reports your lotus-leaf score.
- * Osho's lens: renunciation is a state, not a robe.
+/**
+ * Lotus Leaf Witness Tracker — Cognitive Load Edition
+ * Based on Karma-Sanyasa Yoga (Gita 5.10–5.13) and
+ * cognitive load theory (Sweller, 1988): attachment to
+ * outcomes consumes working memory. The lotus leaf acts
+ * fully while keeping cognitive resources free.
+ *
+ * Tracks: sense contacts, witness activation, and the
+ * cognitive load ratio (task-focused vs outcome-focused).
+ *
+ * Run: npx ts-node lotus-leaf-tracker.ts
  */
 
 interface SenseContact {
   date: string;
-  sense: 'sight' | 'sound' | 'touch' | 'taste' | 'smell' | 'thought';
+  sense: string;
   object: string;
-  grasping: number;    // 0-10, how much you wanted to hold it
-  aversion: number;    // 0-10, how much you wanted to push it away
-  witnessed: boolean;  // were you aware while it happened?
+  grasping: number;      // 0–10: how much did you want to hold/avoid?
+  aversion: number;      // 0–10: how much did you push away?
+  witnessed: boolean;    // did awareness observe the contact?
+  cognitiveLoad: number; // 0–10: how much mental bandwidth did this consume?
+  lotusLeaf: boolean;    // did the contact "stick" or slide off?
 }
 
 interface LotusReport {
   contactsLogged: number;
-  witnessedRatio: number;   // 0-1
-  averageGrasping: number;  // 0-10
-  averageAversion: number;  // 0-10
-  lotusLeafScore: number;   // 0-100
+  witnessedRatio: number;
+  averageGrasping: number;
+  averageAversion: number;
+  averageCognitiveLoad: number;
+  lotusLeafScore: number;   // 0–100
+  cognitiveEfficiency: number; // % of contacts where lotus held
   verdict: string;
 }
 
-const WITNESS_WEIGHT = 0.5;
-const GRASP_WEIGHT = 0.3;
-const AVERSION_WEIGHT = 0.2;
+const WITNESS_WEIGHT = 0.4;
+const GRASP_WEIGHT = 0.25;
+const AVERSION_WEIGHT = 0.15;
+const LOAD_WEIGHT = 0.2;
 
 function contactClutching(contact: SenseContact): number {
   return Math.min(10, contact.grasping + contact.aversion);
@@ -582,47 +588,56 @@ function contactClutching(contact: SenseContact): number {
 function lotusLeafScore(contact: SenseContact): number {
   const awareness = contact.witnessed ? WITNESS_WEIGHT : 0;
   const clutching = (contactClutching(contact) / 10) * (GRASP_WEIGHT + AVERSION_WEIGHT);
-  return Math.max(0, Math.min(100, Math.round((awareness + (1 - clutching)) * 100)));
+  const loadPenalty = (contact.cognitiveLoad / 10) * LOAD_WEIGHT;
+  return Math.max(0, Math.min(100, Math.round((awareness + (1 - clutching - loadPenalty)) * 100)));
 }
 
 function analyzeWeek(contacts: SenseContact[]): LotusReport {
   const total = contacts.length;
-  const witnessed = contacts.filter(c => c.witnessed).length;
+  const witnessed = contacts.filter((c) => c.witnessed).length;
   const avgGrasp = contacts.reduce((s, c) => s + c.grasping, 0) / total;
   const avgAversion = contacts.reduce((s, c) => s + c.aversion, 0) / total;
+  const avgLoad = contacts.reduce((s, c) => s + c.cognitiveLoad, 0) / total;
   const score = Math.round(contacts.reduce((s, c) => s + lotusLeafScore(c), 0) / total);
+  const lotusCount = contacts.filter((c) => c.lotusLeaf).length;
+  const cognitiveEfficiency = Math.round((lotusCount / total) * 100);
 
-  let verdict = 'soaked: the water is on you because the grabbing is in you.';
-  if (score >= 75) verdict = 'leaf-like: you float on the pond, and nothing wets you.';
-  else if (score >= 50) verdict = 'half-leaf: you dry quickly, but the tilt is not yet yours.';
+  let verdict: string;
+  if (score >= 75) {
+    verdict = 'Leaf-like: you float on the pond, and nothing wets you. Cognitive load is low; action is free. (5.10)';
+  } else if (score >= 50) {
+    verdict = 'Half-leaf: you dry quickly, but the tilt is not yet yours. Reduce grasping to free working memory. (5.13)';
+  } else {
+    verdict = 'Soaked: the water is on you because the grabbing is in you. Return to the witness practice. (5.8)';
+  }
 
   return {
     contactsLogged: total,
-    witnessedRatio: witnessed / total,
+    witnessedRatio: Math.round((witnessed / total) * 100) / 100,
     averageGrasping: Math.round(avgGrasp * 10) / 10,
     averageAversion: Math.round(avgAversion * 10) / 10,
+    averageCognitiveLoad: Math.round(avgLoad * 10) / 10,
     lotusLeafScore: score,
+    cognitiveEfficiency,
     verdict
   };
 }
 
-function runDemo(): void {
-  const week: SenseContact[] = [
-    { date: '2026-08-18', sense: 'sight', object: 'phone screen', grasping: 7, aversion: 0, witnessed: true },
-    { date: '2026-08-18', sense: 'sound', object: 'criticism', grasping: 0, aversion: 8, witnessed: false },
-    { date: '2026-08-19', sense: 'taste', object: 'evening snack', grasping: 6, aversion: 0, witnessed: true },
-    { date: '2026-08-19', sense: 'thought', object: 'old regret', grasping: 0, aversion: 6, witnessed: false }
-  ];
+const week: SenseContact[] = [
+  { date: '2026-08-18', sense: 'sight', object: 'phone notification', grasping: 7, aversion: 0, witnessed: true, cognitiveLoad: 6, lotusLeaf: false },
+  { date: '2026-08-18', sense: 'sound', object: 'criticism from manager', grasping: 0, aversion: 8, witnessed: false, cognitiveLoad: 9, lotusLeaf: false },
+  { date: '2026-08-19', sense: 'thought', object: 'old regret', grasping: 0, aversion: 6, witnessed: true, cognitiveLoad: 4, lotusLeaf: true },
+  { date: '2026-08-19', sense: 'sight', object: 'beautiful sunset', grasping: 3, aversion: 0, witnessed: true, cognitiveLoad: 1, lotusLeaf: true },
+  { date: '2026-08-20', sense: 'sound', object: 'praise from peer', grasping: 5, aversion: 0, witnessed: true, cognitiveLoad: 3, lotusLeaf: true },
+  { date: '2026-08-20', sense: 'thought', object: 'worry about deadline', grasping: 0, aversion: 7, witnessed: false, cognitiveLoad: 8, lotusLeaf: false }
+];
 
-  const report = analyzeWeek(week);
-  console.log('=== Lotus Leaf Witness Tracker ===');
-  console.log(`Contacts logged: ${report.contactsLogged}`);
-  console.log(`Witnessed ratio: ${report.witnessedRatio}`);
-  console.log(`Average grasping: ${report.averageGrasping}/10`);
-  console.log(`Average aversion: ${report.averageAversion}/10`);
-  console.log(`Lotus leaf score: ${report.lotusLeafScore}/100`);
-  console.log(`Verdict: ${report.verdict}`);
-}
+const report = analyzeWeek(week);
 
-runDemo();
+console.log('=== Lotus Leaf Witness Tracker ===');
+console.log(`Contacts: ${report.contactsLogged} | Witnessed: ${report.witnessedRatio * 100}%`);
+console.log(`Avg grasping: ${report.averageGrasping}/10 | Avg aversion: ${report.averageAversion}/10`);
+console.log(`Avg cognitive load: ${report.averageCognitiveLoad}/10`);
+console.log(`Lotus leaf score: ${report.lotusLeafScore}/100 | Cognitive efficiency: ${report.cognitiveEfficiency}%`);
+console.log(`Verdict: ${report.verdict}`);
 ```

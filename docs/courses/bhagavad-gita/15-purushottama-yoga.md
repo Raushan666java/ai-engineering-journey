@@ -179,6 +179,8 @@ The three yogas braid together in this short chapter more tightly than anywhere 
 
 **Osho Darshan:** The soul does everything yet remains invisible — like the screen behind a movie, present in every frame and seen in none. The deluded watch only the movie; the wise watch the screen and the movie together. Osho's point: the eye of knowledge is not a special gift; it is attention turned back on itself. Seeing the seer is the second birth — the first birth gave you a body; the second gives you the one who wears it.
 
+> **For the Engineer:** The invisible actor is the operating system: it runs every process but appears in none of them. The deluded developer watches only the application; the wise architect watches the application and the infrastructure together. Seeing the infrastructure is the "second birth" of engineering maturity — you stop seeing features and start seeing systems.
+
 ### Shloka 15.11 — Striving Yogis See; the Unrefined Do Not
 
 > यतन्तो योगिनश्चैनं पश्यन्त्यात्मन्यवस्थितम् |
@@ -222,6 +224,8 @@ The three yogas braid together in this short chapter more tightly than anywhere 
 **Translation:** Becoming the fire Vaisvanara, I abide in the bodies of living beings and, joined with prana and apana, digest the fourfold food.
 
 **Osho Darshan:** Even your digestion is the divine at work — there is no gap between the sacred and the mundane; the stomach is a temple too, and the whole body is a field of the divine's labor. Osho loves this descent: from the root of the universe to the fire in your belly in four verses. The teaching is not climbing away from life; it is finding the divine at the bottom of life, in the very process of being fed. When the highest is recognized in the humblest act, worship is no longer something you do — it is something you are.
+
+> **Practical Bridge:** This verse has a direct implication for engineering practice: the divine is not only in the architecture but in the debugging, the testing, the refactoring. When you recognize that the same intelligence that runs the cosmos also runs your ability to trace a bug, the mundane act of debugging becomes sacred. This is not metaphor; it is a shift in attention that changes the quality of the work itself.
 
 ### Shloka 15.15 — Seated in Every Heart
 
@@ -267,6 +271,8 @@ The three yogas braid together in this short chapter more tightly than anywhere 
 
 **Translation:** Because I transcend the perishable and am higher even than the imperishable, I am proclaimed Purushottama, the Supreme Person, in the world and in the Vedas.
 
+**Osho Darshan:** This is the Gita's most compressed statement of the highest truth: the divine is not the changing nor the unchanging but the consciousness that witnesses both. Osho would say: you are not the body (perishable), not the soul (imperishable), but the awareness that sees both — and that awareness is what the Gita calls Purushottama. It is not far away; it is the nearest of the near, closer than your own breath. The name "Supreme Person" is a finger pointing at the moon: do not worship the finger.
+
 **Osho Darshan:** The third is not a bigger version of the two; it is the transcending itself. Purushottama is not a title you add to the collection; it is the word for what remains when every name has been dropped — including the name "beyond". Osho's warning at this peak: even your finest concepts — the witness, the changeless, the inner self — are rungs of the ladder, not the roof. Use them to climb, then leave them on the ground. The name Purushottama points past every position, including this very sentence.
 
 ### Shloka 15.19 — Knowing All, Worshipping with One's Whole Being
@@ -303,6 +309,29 @@ The three yogas braid together in this short chapter more tightly than anywhere 
 | The immanent divine | 15.12–15.15 | One light in sun, moon and fire; one presence in earth, sap, digestion and every heart |
 | Two purushas | 15.16 | The changing and the changeless — both still below the peak |
 | Purushottama | 15.17–15.20 | The transcending itself; known, everything is accomplished — krtakrtya |
+
+> **Science Note — Acceptance and Commitment Therapy and Non-Attachment**
+>
+> Chapter 15's central image is the inverted tree (15.1) — samsara — cut by the axe of non-attachment (asanga-shastra, 15.3). **Acceptance and Commitment Therapy** (ACT, Hayes et al., 1993) is built on the same principle: psychological suffering comes not from pain itself but from attachment to thoughts and feelings. ACT teaches psychological flexibility — the ability to hold thoughts lightly while acting according to values.
+>
+> | Gita Concept | Modern Science | Key Insight |
+> |-------------|---------------|-------------|
+> | The inverted tree (15.1) | Experiential avoidance (Hayes et al., 1996) | The tree's downward branches represent the mind's tendency to avoid discomfort — the root system of desires growing upward into avoidance |
+> | The axe of non-attachment (15.3) | Cognitive defusion (Hayes et al., 2006) | Non-attachment is not detachment but holding thoughts lightly — the axe cuts the tree's claim on you, not your engagement with life |
+> | The abode of no return (15.6) | Values-based living (Wilson & DuFrene, 2009) | The "abode" is not a place but a mode of living — when you act from values rather than avoidance, you stop the cycle of return |
+> | The jiva carries mind and senses (15.7-15.11) | Habit formation (Wood & Neal, 2007) | The "carrying from body to body" maps to habit loops that persist across contexts — the same habit pattern expressed in different life situations |
+> | Purushottama — beyond both (15.16-15.18) | Self-as-context (Hayes et al., 2006) | ACT's "self-as-context" is the observing self that is neither the changing thoughts nor the fixed identity — the same as Purushottama, beyond both perishable and imperishable |
+> | The purifying contact with the self (15.12-15.15) | Insight meditation (Lutz et al., 2004) | Contact with the self "within the cave" (15.11) maps to the focus/open-monitoring meditation cycle — sustained attention creates the conditions for insight into the nature of awareness itself |
+>
+> **Try This:** For one week, practice the ACT "leaves on a stream" exercise: when a thought arises, imagine placing it on a leaf and watching it float down a stream. Do not push the thought away; do not cling to it. Just watch. This is the axe of non-attachment in action.
+>
+> **Practical Bridge:** In engineering, the inverted tree maps to legacy code that grows downward into technical debt. The "root in heaven" (15.1) is the original clean architecture; the "branches below" are the hacks, workarounds, and copy-pasted patches that have accumulated. The axe of non-attachment is not deleting the code but changing your relationship to it — watching the anxiety it produces without being driven by it. This is cognitive defusion applied to codebase management.
+
+**Cross-Reference:** The inverted tree of Chapter 15 connects to Chapter 2's description of the self as unborn and eternal (2.20) — the "abode" beyond the tree is the same unchanging awareness. Chapter 7's knowledge of the field (7.1-7.6) is the intellectual recognition of the tree; Chapter 15 is the experiential practice of cutting it.
+
+**Cross-Reference:** The non-attachment of Chapter 15 (15.3) is the same practice described in Chapter 2 as sthitaprajna (2.54-2.72), Chapter 5 as the lotus leaf (5.10), and Chapter 6 as the windless lamp (6.18-6.23). Each chapter gives a different metaphor for the same psychological skill. The "Purushottama" (15.16-15.18) is the same "Supreme Self" described in Chapter 7 as the source of all (7.12) and in Chapter 9 as the secret knowledge (9.1-9.4). Chapter 15 is where the Gita names what all chapters point to. The naming is not the thing — the axe is not the tree, the image is not the territory — but without the name, the seeker cannot find the territory. This is the Gita's paradox: use the map, but do not mistake it for the land.
+
+> **Why This Matters:** Chapter 15 gives the Gita its most powerful image — the upside-down tree — and its most practical tool — the axe of non-attachment. The inverted tree maps to every system that grows in the wrong direction: legacy code, bad habits, dysfunctional organizations. The axe is not destruction but a change in relationship to the system. This is the Gita's contribution to modern psychology: you do not need to destroy the pattern; you need to stop identifying with it.
 
 ## The Inner Journey
 
@@ -396,40 +425,28 @@ mindmap
 **Answer: b.** 15.3 — "Cut this firmly rooted asvattha with the strong axe of non-attachment" (asanga-shastra).
 </details>
 
-**Q3. According to 15.6, what illumines the supreme abode where none return?**
+**Q3. The axe of non-attachment (15.3) cuts the tree of samsara. How does this relate to Acceptance and Commitment Therapy (ACT, Hayes et al., 1993)?**
 
-- a. The sun and the moon together
-- b. A thousand lamps of knowledge
-- c. Nothing — neither sun, nor moon, nor fire; it is self-luminous
-- d. The light of the stars
+- a. It doesn't — ACT is a modern therapy with no ancient parallel
+- b. ACT teaches psychological flexibility — holding thoughts lightly while acting according to values. Non-attachment is not detachment but holding thoughts without being controlled by them — the same axe
+- c. ACT says attachment is good
+- d. Non-attachment means not caring about anything
 
 <details class="tp-qa-card" data-qid="bg15-q3"><summary>Show Answer</summary>
 
-**Answer: c.** 15.6 — "Neither the sun illumines that place, nor the moon, nor fire" — the abode is its own light.
+**Answer: b.** Hayes et al. (1993) developed ACT on the principle that psychological suffering comes from experiential avoidance — trying to suppress unwanted thoughts. The axe of non-attachment (15.3) cuts the tree's claim on you, not your engagement with life. Both ACT and the Gita teach: you cannot stop thoughts from arising, but you can change your relationship to them.
 </details>
 
-**Q4. How does the soul carry its mind and senses when leaving a body, according to 15.8?**
+**Q5. Krishna describes the "jiva" carrying mind and senses from body to body "as the wind carries fragrance" (15.8). How does this map onto habit formation research (Wood & Neal, 2007)?**
 
-- a. As a ship carries its cargo
-- b. As the wind carries fragrance from a flower
-- c. As a bird carries its wings
-- d. As water carries the earth
-
-<details class="tp-qa-card" data-qid="bg15-q4"><summary>Show Answer</summary>
-
-**Answer: b.** 15.8 — it takes them and goes "as the wind carries fragrance from its seat in the flowers."
-</details>
-
-**Q5. What are the two purushas described in 15.16?**
-
-- a. Krishna and Arjuna
-- b. The perishable — all beings — and the imperishable, the unchanging Kutastha
-- c. The sun and the moon
-- d. The body and the mind
+- a. It doesn't — habits die with the body
+- b. Habit research shows that behavioral patterns persist across contexts — the same habit loop (cue-routine-reward) expresses itself in different life situations, just as the jiva carries its patterns from body to body
+- c. The jiva is the soul, not habits
+- d. Habits are only physical, not carried across contexts
 
 <details class="tp-qa-card" data-qid="bg15-q5"><summary>Show Answer</summary>
 
-**Answer: b.** 15.16 — "All beings are the perishable; the unchanging Kutastha is called the imperishable."
+**Answer: b.** Wood & Neal (2007) show that habits are context-dependent cue-triggered behaviors that persist until deliberately changed. The "jiva carrying mind and senses" (15.8) is the same phenomenon described metaphorically — the habit patterns you build in one context carry into the next, creating what the Gita calls "birth after birth" of the same patterns.
 </details>
 
 **Q6. Why is Krishna proclaimed Purushottama, the Supreme Person?**
@@ -450,23 +467,36 @@ mindmap
 2. **The fragrance experiment:** For three days, whenever you arrive somewhere new — a room, a meeting, a city — pause and sense what you carried in with you (restlessness, fear, gratitude). Write down what traveled with you; this is the law of 15.8 made visible.
 3. **Extend the TypeScript tool:** Add a third function to the Purushottama Path Tracker that computes the "Purushottama index" — the ratio of abode-glimpses (witnessing) to bud-signals (craving) in a week — and prints a verdict: tree-climber, axe-bearer, or dweller of the abode. Run it on two honest weeks and compare.
 
+### For the Engineer
+
+- **The inverted tree in codebases:** Your codebase is an inverted tree — the root (architecture decisions) is hidden above, the branches (features) grow downward into the soil of user needs. Cut the wrong root (bad architecture) and the whole tree falls. The axe of non-attachment means being willing to rewrite the root without clinging to the original design.
+- **Habit loops in debugging (15.8):** The same debugging patterns carry from project to project — "the wind carries fragrance." When you notice the same bug type appearing across different codebases, you are seeing the jiva's habit patterns. Breaking the loop requires the axe of conscious attention.
+- **Purushottama in system design (15.16-15.18):** Beyond the changing code (perishable) and the stable architecture (imperishable) stands the system's purpose — Purushottama. Designing from purpose, not from pattern, produces systems that endure.
+
 ## TypeScript Tool: Purushottama Path Tracker
 
 ```typescript
-/*
- * Purushottama Path Tracker - Chapter 15: the upside-down tree
- * Maps a week of observations onto the tree of samsara:
- * buds (craving), roots (habit), branches (gunas), leaves (knowledge),
- * and the two events that matter: the axe (non-attachment)
- * and the abode (no return). Osho: stop climbing; start watching.
+/**
+ * Purushottama Path Tracker — ACT & Habit Research Edition
+ * Based on Purushottama Yoga (Gita 15.1-15.20) and ACT
+ * (Hayes et al., 1993): the axe of non-attachment cuts the
+ * tree of samsara — not by force but by changing your
+ * relationship to thoughts. The inverted tree maps to
+ * habit loops that persist across contexts (Wood & Neal, 2007).
+ *
+ * Run: npx ts-node purushottama-path-tracker.ts
  */
 
-interface DayObservation { date: string; note: string; }
+interface DayObservation {
+  date: string;
+  note: string;
+}
 
 interface TreePart {
   part: 'bud' | 'root' | 'branch' | 'leaf' | 'axe' | 'abode';
   keywords: string[];
   meaning: string;
+  actParallel: string;
 }
 
 interface PathReport {
@@ -474,24 +504,28 @@ interface PathReport {
   dominantPart: string;
   axeCount: number;
   abodeCount: number;
-  oshoLine: string;
+  purushottamaIndex: number; // ratio of witnessing to craving
+  message: string;
 }
+
 const treeParts: TreePart[] = [
-  { part: 'bud', keywords: ['crave', 'must have', 'lust', 'obsess'], meaning: 'A bud of desire: promising, never fulfilling.' },
-  { part: 'root', keywords: ['same habit', 'automatic', 'routine', 'pattern'], meaning: 'A root of karma in the world of action.' },
-  { part: 'branch', keywords: ['angry', 'greedy', 'sleepy', 'restless'], meaning: 'A branch nourished by the gunas.' },
-  { part: 'leaf', keywords: ['read', 'study', 'learned', 'verses'], meaning: 'A leaf: scripture and study - useful, not the tree.' },
-  { part: 'axe', keywords: ['let go', 'detached', 'released', 'refused'], meaning: 'The axe of non-attachment: the cut that matters.' },
-  { part: 'abode', keywords: ['witness', 'inner calm', 'beyond', 'still'], meaning: 'A glimpse of the abode where none return.' }
+  { part: 'bud', keywords: ['crave', 'must have', 'lust', 'obsess'], meaning: 'A bud of desire: promising, never fulfilling.', actParallel: 'Experiential avoidance — trying to satisfy cravings that never satisfy (Hayes et al., 1996)' },
+  { part: 'root', keywords: ['same habit', 'automatic', 'routine', 'pattern'], meaning: 'A root of karma in the world of action.', actParallel: 'Habit loops that persist across contexts (Wood & Neal, 2007)' },
+  { part: 'branch', keywords: ['angry', 'greedy', 'sleepy', 'restless'], meaning: 'A branch nourished by the gunas.', actParallel: 'Emotional responses conditioned by past learning (Hayes et al., 2006)' },
+  { part: 'leaf', keywords: ['read', 'study', 'learned', 'verses'], meaning: 'A leaf: scripture and study — useful, not the tree.', actParallel: 'Cognitive content — thoughts about thoughts (defusion target)' },
+  { part: 'axe', keywords: ['let go', 'detached', 'released', 'refused'], meaning: 'The axe of non-attachment: the cut that matters.', actParallel: 'Cognitive defusion — holding thoughts lightly (Hayes et al., 2006)' },
+  { part: 'abode', keywords: ['witness', 'inner calm', 'beyond', 'still'], meaning: 'A glimpse of the abode where none return.', actParallel: 'Self-as-context — the observing self beyond thoughts (Hayes et al., 2006)' }
 ];
+
 function classifyNote(note: string): TreePart {
   const line = note.toLowerCase();
   let best = treeParts[0];
   for (const part of treeParts) {
-    if (part.keywords.some(k => line.includes(k))) best = part;
+    if (part.keywords.some((k) => line.includes(k))) best = part;
   }
   return best;
 }
+
 function buildReport(week: DayObservation[]): PathReport {
   const counts: Record<string, number> = {};
   for (const part of treeParts) counts[part.part] = 0;
@@ -500,27 +534,44 @@ function buildReport(week: DayObservation[]): PathReport {
     counts[part.part]++;
   }
   const dominantPart = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];
-  const oshoLine = counts['abode'] > 0
-    ? 'You have touched the abode where none return. The tree no longer owns you.'
-    : counts['axe'] > 0
-      ? 'The axe is in your hand. Cut once more, and the tree falls on its own.'
-      : 'You are still climbing the upside-down tree. Stop climbing; start watching.';
-  return { counts, dominantPart, axeCount: counts['axe'], abodeCount: counts['abode'], oshoLine };
+  const totalCraving = (counts['bud'] ?? 0) + (counts['root'] ?? 0) + (counts['branch'] ?? 0);
+  const totalWitnessing = (counts['axe'] ?? 0) + (counts['abode'] ?? 0);
+  const purushottamaIndex = totalCraving > 0
+    ? Math.round((totalWitnessing / (totalWitnessing + totalCraving)) * 100)
+    : 100;
+
+  const messages: Record<string, string> = {
+    abode: 'You have touched the abode where none return. The tree no longer owns you. (15.6)',
+    axe: 'The axe is in your hand. Cut once more, and the tree falls on its own. (15.3)',
+    bud: 'Still climbing the upside-down tree. The buds promise but never fulfill. (15.1)',
+    root: 'Habit roots run deep — the same patterns across contexts. The axe cuts here. (15.8)',
+    branch: 'The gunas nourish the branches. Watch them without feeding them. (15.2)',
+    leaf: 'Scripture is the leaf, not the tree. Use it, but do not mistake it for the source. (15.1)'
+  };
+
+  return {
+    counts,
+    dominantPart,
+    axeCount: counts['axe'] ?? 0,
+    abodeCount: counts['abode'] ?? 0,
+    purushottamaIndex,
+    message: messages[dominantPart] ?? 'The tree is vast. Start watching.'
+  };
 }
-function runDemo(): void {
-  const week: DayObservation[] = [
-    { date: 'Mon', note: 'Craved junk food the whole day; obsessed about a gadget.' },
-    { date: 'Tue', note: 'Same old routine, automatic; repeated the same mistake.' },
-    { date: 'Wed', note: 'Read the Gita chapter; the verses felt clear.' },
-    { date: 'Thu', note: 'Let go of a grudge; refused to argue; felt detached and free.' },
-    { date: 'Fri', note: 'Witnessed my anger rising and passing; inner calm all evening.' }
-  ];
-  const report = buildReport(week);
-  console.log('=== Purushottama Path Tracker ===');
-  console.log(`Buds: ${report.counts['bud']} | Roots: ${report.counts['root']} | Branches: ${report.counts['branch']}`);
-  console.log(`Leaves: ${report.counts['leaf']} | Axe: ${report.axeCount} | Abode: ${report.abodeCount}`);
-  console.log(`Dominant part: ${report.dominantPart}`);
-  console.log(`Osho: ${report.oshoLine}`);
-}
-runDemo();
+
+const week: DayObservation[] = [
+  { date: 'Mon', note: 'Craved junk food the whole day; obsessed about a gadget.' },
+  { date: 'Tue', note: 'Same old routine, automatic; repeated the same mistake.' },
+  { date: 'Wed', note: 'Read the Gita chapter; the verses felt clear.' },
+  { date: 'Thu', note: 'Let go of a grudge; refused to argue; felt detached and free.' },
+  { date: 'Fri', note: 'Witnessed my anger rising and passing; inner calm all evening.' }
+];
+
+const report = buildReport(week);
+
+console.log('=== Purushottama Path Tracker ===');
+console.log(`Buds: ${report.counts['bud']} | Roots: ${report.counts['root']} | Branches: ${report.counts['branch']}`);
+console.log(`Leaves: ${report.counts['leaf']} | Axe: ${report.axeCount} | Abode: ${report.abodeCount}`);
+console.log(`Dominant: ${report.dominantPart} | Purushottama index: ${report.purushottamaIndex}%`);
+console.log(report.message);
 ```

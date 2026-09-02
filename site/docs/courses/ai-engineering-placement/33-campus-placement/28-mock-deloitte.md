@@ -145,3 +145,383 @@ sidebar_position: 389
 | 33+ | Ready | Book the real Deloitte test; redo this mock weekly |
 | 25-32 | Focus | Re-drill failed sections — reasoning + verbal are key |
 | <25 | Rebuild | Revise theory files first, retake in 4 days |
+
+---
+
+## Detailed Solution Explanations
+
+### Quantitative — Step-by-Step
+
+**Q1.** 35% of 280?
+
+```
+280 × 0.35 = 98
+```
+
+**Q2.** CP ₹250, profit 20%. SP?
+
+```
+250 × 1.2 = ₹300
+```
+
+**Q3.** Average 14 numbers = 42. Remove 70. New average?
+
+```
+Total = 14 × 42 = 588
+After removing 70: 588 − 70 = 518
+New average = 518/13 = 39.85
+```
+
+**Q4.** Train 180m, platform 420m, 20 seconds. Speed?
+
+```
+600/20 = 30 m/s = 108 km/hr
+```
+
+**Q5.** A = 14 days, B = 21 days. Together?
+
+```
+14 × 21/(14+21) = 294/35 = 8.4 days
+```
+
+**Q6.** SI on ₹12,000 at 7.5% for 2 years?
+
+```
+12000 × 0.075 × 2 = ₹1,800
+```
+
+**Q7.** Sum becomes 6× in 25 years at SI. Rate?
+
+```
+5P = P × R × 25/100
+R = 500/25 = 20%
+```
+
+**Q8.** Ratio 5:8, add 10 → 7:10. Smaller number?
+
+```
+(5k+10)/(8k+10) = 7/10
+50k + 100 = 56k + 70
+6k = 30 → k = 5
+Smaller = 5k = 25
+```
+
+**Q9.** Next term: 3, 11, 27, 59, 123, ?
+
+```
+×2 + 5: 123 × 2 + 5 = 251
+```
+
+**Q10.** 5 red, 4 green, 3 blue. One drawn. P(green)?
+
+```
+4/12 = 1/3
+```
+
+**Q11.** 6 people seated in a row?
+
+```
+6! = 720
+```
+
+**Q12.** LCM = 240, HCF = 20, one number = 60. Other?
+
+```
+240 × 20/60 = 80
+```
+
+**Q13.** Boat: 48 km down 4 hrs, up 8 hrs. Stream?
+
+```
+Down = 12, Up = 6
+Stream = (12−6)/2 = 3 km/hr
+```
+
+**Q14.** Markup 45%, discount 20%. Profit?
+
+```
+100 → 145 → 116
+Profit = 16%
+```
+
+### Logical — Step-by-Step
+
+**Q15.** Next term: 6, 18, 54, 162, ?
+
+```
+×3: 162 × 3 = 486
+```
+
+**Q16.** "MOUSE" → "NPVTF". "KEYBOARD"?
+
+```
++1 each: K→L, E→F, Y→Z, B→C, O→P, A→B, R→S, D→E
+Answer: LFZCPBSE
+```
+
+**Q17.** All birds can fly. Some birds are penguins.
+
+```
+I. Some penguins can fly — NOT guaranteed (penguins can't fly)
+II. All birds are penguins — NOT given
+Answer: Only II (the premise restatement)
+Wait, actually: "All birds can fly" is a false premise, but we must follow it.
+"Some birds are penguins" + "All birds can fly" → Some penguins can fly
+But this contradicts reality. In logic, we follow the premises.
+Actually: Only II follows as a restatement. I doesn't necessarily follow because the "some birds" that are penguins might not be the ones that can fly.
+```
+
+**Q18.** 3 km North, 4 km West. Distance?
+
+```
+√(9+16) = 5 km
+```
+
+**Q19.** A son of B. B wife of C. C father of D. D related to A?
+
+```
+C is A's father. D is C's child → D is A's sibling.
+```
+
+**Q20.** Ravi 16th from left, 45 students. Position from right?
+
+```
+45 − 16 + 1 = 30th
+```
+
+**Q21.** Data sufficiency: x + 2y = 14, 3x − y = 7.
+
+```
+From (2): y = 3x − 7
+Substitute: x + 2(3x−7) = 14 → 7x = 28 → x = 4
+Both together sufficient.
+```
+
+**Q22.** Input: 4 7 2 9 5. Step 1: 2 4 7 9 5. Step 2: 2 4 5 7 9. Step 3?
+
+```
+Already sorted in Step 2
+Step 3: 2 4 5 7 9 (same)
+```
+
+**Q23.** Odd one out: 13, 17, 23, 29, 31
+
+```
+All are prime numbers — none is odd
+Answer: none / all are alike
+```
+
+**Q24.** Five friends A-E row. A left end. B 3rd left. C right end. D between A and B. E between B and C.
+
+```
+A(1), B(3), C(5)
+D between A and B = position 2
+E between B and C = position 4
+Middle = position 3 = B
+```
+
+**Q25.** Circle: A opposite B. C right of A. D left of B. E opposite F. Opposite C?
+
+```
+Needs full circle — cannot be determined
+```
+
+**Q26.** Company introduced 4-day work week for well-being.
+
+```
+I. 4-day week can improve well-being — reasonable
+II. All companies should adopt — overgeneralization
+Answer: Only I
+```
+
+**Q27.** "CHAIR" → "DIBJS". "TABLE"?
+
+```
++1 each: T→U, A→B, B→C, L→M, E→F
+Answer: UBCMF
+```
+
+**Q28.** Seven people. A 3rd left, B 3rd right, C between A and B. Position 5?
+
+```
+A(3), B(5), C(4)
+Position 5 = B
+```
+
+**Q29.** "He is my brother's father." Related?
+
+```
+Brother's father = my father
+```
+
+### Verbal — Step-by-Step
+
+**Q30.** Synonym of "quick"?
+
+```
+Quick = rapid
+Answer: B) rapid
+```
+
+**Q31.** Antonym of "bright"?
+
+```
+Bright = shiny, glowing
+Antonym = dull
+Answer: B) dull
+```
+
+**Q32.** "The committee ___ yet to announce."
+
+```
+Committee = singular
+Answer: has
+```
+
+**Q33.** Error: "Each of the boys have completed."
+
+```
+Each = singular → "has completed"
+```
+
+**Q34.** "Neither of the candidates were suitable."
+
+```
+Neither = singular → "was suitable"
+```
+
+**Q35.** "One of my friends are a manager."
+
+```
+Subject = "One" (singular) → "is a manager"
+```
+
+**Q36.** Para jumble: bike-sharing, commuters, traffic eased, launched.
+
+```
+Launched → implemented → embraced → eased
+Answer: d, a, b, c
+```
+
+**Q37.** Spelling: embarrass
+
+```
+Answer: A) embarrass
+```
+
+**Q38.** Idiom: "To break the ice"
+
+```
+= to start a conversation
+Answer: B
+```
+
+**Q39.** "She is interested ___ learning French."
+
+```
+Interested in
+Answer: in
+```
+
+**Q40.** Passage: Critics of financial literacy programs?
+
+```
+"Schools lack time and qualified teachers, and parents remain the primary influence"
+```
+
+**Q41.** "Hardly had he arrived ___ the meeting started."
+
+```
+Hardly...when
+Answer: when
+```
+
+**Q42.** Closest to "prudent"?
+
+```
+Prudent = wise, cautious
+Answer: B) wise and cautious
+```
+
+**Q43.** Spelling: occurrence
+
+```
+Answer: A) occurrence
+```
+
+**Q44.** Closest to "reluctant"?
+
+```
+Reluctant = unwilling
+Answer: B) unwilling
+```
+
+---
+
+## Topic-Wise Performance Analysis
+
+| Topic | Questions | Correct | Accuracy | Time |
+|-------|-----------|---------|----------|------|
+| Percentages | Q1 | /1 | % | min |
+| Profit/Loss | Q2, Q14 | /2 | % | min |
+| Averages | Q3 | /1 | % | min |
+| Speed/Trains | Q4 | /1 | % | min |
+| Time & Work | Q5 | /1 | % | min |
+| Simple Interest | Q6 | /1 | % | min |
+| Interest (SI/CI) | Q7 | /1 | % | min |
+| Ratios/Ages | Q8 | /1 | % | min |
+| Number Series | Q9 | /1 | % | min |
+| Probability | Q10 | /1 | % | min |
+| P&C | Q11 | /1 | % | min |
+| LCM/HCF | Q12 | /1 | % | min |
+| Boats | Q13 | /1 | % | min |
+| Series (Logical) | Q15 | /1 | % | min |
+| Coding | Q16, Q27 | /2 | % | min |
+| Syllogisms | Q17 | /1 | % | min |
+| Direction | Q18 | /1 | % | min |
+| Blood Relations | Q19, Q29 | /2 | % | min |
+| Ranking | Q20 | /1 | % | min |
+| Data Sufficiency | Q21 | /1 | % | min |
+| Input-Output | Q22 | /1 | % | min |
+| Odd One Out | Q23 | /1 | % | min |
+| Seating (Row) | Q24, Q28 | /2 | % | min |
+| Seating (Circle) | Q25 | /1 | % | min |
+| Statement/Conclusion | Q26 | /1 | % | min |
+| Synonyms/Antonyms | Q30, Q31 | /2 | % | min |
+| Grammar | Q32, Q33, Q34, Q35 | /4 | % | min |
+| Para Jumble | Q36 | /1 | % | min |
+| Spelling | Q37, Q43 | /2 | % | min |
+| Idioms | Q38 | /1 | % | min |
+| Prepositions | Q39 | /1 | % | min |
+| Comprehension | Q40 | /1 | % | min |
+| Fill in Blanks | Q41 | /1 | % | min |
+| Vocabulary | Q42, Q44 | /2 | % | min |
+
+---
+
+## Time Management Tips
+
+| Section | Questions | Ideal Time | Per Question |
+|---------|-----------|------------|--------------|
+| Quantitative | 14 | 30 min | 129 sec |
+| Logical | 15 | 30 min | 120 sec |
+| Verbal | 15 | 30 min | 120 sec |
+| **Total** | **44** | **90 min** | **123 sec avg** |
+
+### Deloitte-Specific Tips
+
+1. **Reasoning-heavy** — reasoning and verbal carry equal weight
+2. **Data sufficiency appears frequently** — practice this format
+3. **Verbal comprehension counts** — read passages carefully
+4. **Spelling questions are easy marks** — memorize common ones
+5. **70%+ is recommended** — moderate difficulty
+
+---
+
+## Retake Protocol
+
+1. Wait 3 days
+2. Focus on weakest 3 topics
+3. Target 80%+ accuracy
+4. Time yourself strictly
+5. Compare improvement

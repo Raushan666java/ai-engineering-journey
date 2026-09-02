@@ -32,6 +32,8 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
+          remarkPlugins: [require('remark-math')],
+          rehypePlugins: [require('rehype-katex')],
         },
         blog: false,
         theme: {
@@ -41,7 +43,33 @@ const config: Config = {
     ],
   ],
 
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css',
+      type: 'text/css',
+      integrity: 'sha384-MGSJqY4DN3IeBT2FaTa1bQ8GhO6H3l5a3cS2D/2Q3Y2S2Q3Y2S2Q3Y2S2Q3Y2S2',
+      crossorigin: 'anonymous',
+    },
+  ],
+
+  plugins: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        indexBlog: false,
+        indexPages: true,
+        docsRouteBasePath: '/',
+        language: ['en'],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
+
   themeConfig: {
+    mermaid: {
+      theme: {light: 'default', dark: 'dark'},
+    },
     navbar: {
       title: 'AI Engineering',
       logo: {

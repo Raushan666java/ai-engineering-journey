@@ -138,3 +138,352 @@ sidebar_position: 384
 | 30+ | Ready | Book the real GenC test; redo this mock weekly |
 | 22-29 | Focus | Re-drill failed sections, 60s/question |
 | <22 | Rebuild | Revise theory files first, retake in 4 days |
+
+---
+
+## Detailed Solution Explanations
+
+### Quantitative — Step-by-Step
+
+**Q1.** 32% of 250?
+
+```
+250 × 0.32 = 80
+```
+
+**Q2.** CP ₹400, profit 25%. SP?
+
+```
+400 × 1.25 = ₹500
+```
+
+**Q3.** Average 14 numbers = 44. Remove 72. New average?
+
+```
+Total = 14 × 44 = 616
+After removing 72: 616 − 72 = 544
+New average = 544/13 = 41.85
+```
+
+**Q4.** Train 180m, pole, 9 seconds. Speed?
+
+```
+180/9 = 20 m/s = 72 km/hr
+```
+
+**Q5.** A = 12 days, B = 16 days. Together?
+
+```
+12 × 16/(12+16) = 192/28 = 6.86 days
+```
+
+**Q6.** SI on ₹15,000 at 8% for 3 years?
+
+```
+15000 × 0.08 × 3 = ₹3,600
+```
+
+**Q7.** Sum becomes 4× in 15 years at SI. Rate?
+
+```
+Interest = 3P in 15 years
+3P = P × R × 15/100
+R = 300/15 = 20%
+```
+
+**Q8.** Ratio 3:5, add 10 to each → 5:7. Numbers?
+
+```
+(3k+10)/(5k+10) = 5/7
+21k + 70 = 25k + 50
+4k = 20 → k = 5
+Numbers: 15 and 25
+```
+
+**Q9.** Next term: 5, 13, 29, 61, 125, ?
+
+```
+×2 + 3: 125 × 2 + 3 = 253
+```
+
+**Q10.** 8 red, 6 green. One drawn. P(green)?
+
+```
+6/14 = 3/7
+```
+
+**Q11.** 5 people seated in a row?
+
+```
+5! = 120
+```
+
+**Q12.** LCM = 420, HCF = 14, one number = 84. Other?
+
+```
+420 × 14/84 = 70
+```
+
+**Q13.** Boat: 20 km down 2 hrs, up 4 hrs. Stream?
+
+```
+Down = 10, Up = 5
+Stream = (10−5)/2 = 2.5 km/hr
+```
+
+**Q14.** Markup 40%, discount 20%. Profit?
+
+```
+100 → 140 → 112
+Profit = 12%
+```
+
+**Q15.** Pipe fills 12 hrs, leak empties 18 hrs. Both?
+
+```
+1/12 − 1/18 = 3/36 − 2/36 = 1/36
+Time = 36 hours
+```
+
+**Q16.** CI − SI for 2 years at 12% = ₹72. Sum?
+
+```
+72 = P(0.0144)
+P = ₹5,000
+```
+
+### Logical — Step-by-Step
+
+**Q17.** Next term: 2, 6, 18, 54, ?
+
+```
+×3: 54 × 3 = 162
+```
+
+**Q18.** "ROSE" → "SPTF". "LILY"?
+
+```
++1 each: L→M, I→J, L→M, Y→Z → MJMZ
+```
+
+**Q19.** All students are readers. Some readers are writers.
+
+```
+I. Some students are writers — NOT guaranteed
+II. All students are readers — directly stated
+Answer: Only II
+```
+
+**Q20.** 4 km North, 3 km West, 4 km South. Position?
+
+```
+North and South cancel
+Remaining: 3 km West
+```
+
+**Q21.** A brother of B. B daughter of C. C wife of D. A related to D?
+
+```
+D is A's father → A is D's son
+```
+
+**Q22.** Riya 9th from left, 28 students. Position from right?
+
+```
+28 − 9 + 1 = 20th from right
+```
+
+**Q23.** Data sufficiency: 3x + 2y = 20, 2x − y = 4.
+
+```
+From (2): y = 2x − 4
+Substitute: 3x + 2(2x−4) = 20 → 7x = 28 → x = 4
+Both together sufficient.
+```
+
+**Q24.** Input: 7 2 9 4 6. Step 1: 2 7 9 4 6. Step 2: 2 4 7 9 6. Step 3?
+
+```
+Smallest moves left, then 6 next
+Step 3: 2 4 6 7 9
+```
+
+**Q25.** Odd one out: 12, 18, 24, 30, 36
+
+```
+All are multiples of 6 — none is odd
+Standard answer: none / all are alike
+```
+
+**Q26.** Circle: A opposite B. C right of A. D left of B. Opposite C?
+
+```
+6-seat circle: A(1), B(4), C(2), D(3)
+Opposite C(2) = position 5 = E
+```
+
+**Q27.** Government health scheme announcement.
+
+```
+I. Will help citizens with medical costs — reasonable inference
+II. All citizens currently lack insurance — overgeneralization
+Answer: Only I
+```
+
+**Q28.** "TREE" → "USFF". "MATH"?
+
+```
++1 each: M→N, A→B, T→U, H→I → NBUI
+```
+
+### Verbal — Step-by-Step
+
+**Q29.** Synonym of "excellent"?
+
+```
+Excellent = outstanding
+Answer: B) outstanding
+```
+
+**Q30.** Antonym of "expand"?
+
+```
+Expand = grow, extend
+Antonym = contract
+Answer: B) contract
+```
+
+**Q31.** "The committee ___ decided to meet again."
+
+```
+Committee = singular
+Answer: has
+```
+
+**Q32.** Error: "The number of employees are increasing."
+
+```
+"The number of" = singular → "is increasing"
+Answer: C
+```
+
+**Q33.** "Each of the students have received their certificates."
+
+```
+Each = singular → "has received his/her certificate"
+```
+
+**Q34.** Para jumble: approved, applied, scheduled, shortlisted.
+
+```
+Applied → shortlisted → approved → scheduled
+Answer: b, d, a, c
+```
+
+**Q35.** Spelling: separate
+
+```
+Answer: A) separate
+```
+
+**Q36.** Idiom: "To be under the weather"
+
+```
+= to feel unwell
+Answer: B
+```
+
+**Q37.** "He is good ___ mathematics."
+
+```
+Good at
+Answer: at
+```
+
+**Q38.** Passage: Hybrid work risk?
+
+```
+"team cohesion can suffer if communication is not deliberate"
+```
+
+**Q39.** "Neither of the answers ___ correct."
+
+```
+Neither = singular
+Answer: is
+```
+
+**Q40.** Closest to "reluctant"?
+
+```
+Reluctant = unwilling
+Answer: B) unwilling
+```
+
+---
+
+## Topic-Wise Performance Analysis
+
+| Topic | Questions | Correct | Accuracy | Time |
+|-------|-----------|---------|----------|------|
+| Percentages | Q1 | /1 | % | min |
+| Profit/Loss | Q2, Q14 | /2 | % | min |
+| Averages | Q3 | /1 | % | min |
+| Speed/Trains | Q4 | /1 | % | min |
+| Time & Work | Q5 | /1 | % | min |
+| Simple Interest | Q6 | /1 | % | min |
+| Interest (SI/CI) | Q7, Q16 | /2 | % | min |
+| Ratios | Q8 | /1 | % | min |
+| Number Series | Q9 | /1 | % | min |
+| Probability | Q10 | /1 | % | min |
+| P&C | Q11 | /1 | % | min |
+| LCM/HCF | Q12 | /1 | % | min |
+| Boats | Q13 | /1 | % | min |
+| Pipes/Leak | Q15 | /1 | % | min |
+| Series (Logical) | Q17 | /1 | % | min |
+| Coding | Q18, Q28 | /2 | % | min |
+| Syllogisms | Q19 | /1 | % | min |
+| Direction | Q20 | /1 | % | min |
+| Blood Relations | Q21 | /1 | % | min |
+| Ranking | Q22 | /1 | % | min |
+| Data Sufficiency | Q23 | /1 | % | min |
+| Input-Output | Q24 | /1 | % | min |
+| Odd One Out | Q25 | /1 | % | min |
+| Seating (Circle) | Q26 | /1 | % | min |
+| Statement/Conclusion | Q27 | /1 | % | min |
+| Synonyms/Antonyms | Q29, Q30 | /2 | % | min |
+| Grammar | Q31, Q32, Q33, Q39 | /4 | % | min |
+| Para Jumble | Q34 | /1 | % | min |
+| Spelling | Q35 | /1 | % | min |
+| Idioms | Q36 | /1 | % | min |
+| Prepositions | Q37 | /1 | % | min |
+| Comprehension | Q38 | /1 | % | min |
+| Vocabulary | Q40 | /1 | % | min |
+
+---
+
+## Time Management Tips
+
+| Section | Questions | Ideal Time | Per Question |
+|---------|-----------|------------|--------------|
+| Quantitative | 16 | 30 min | 113 sec |
+| Logical | 12 | 20 min | 100 sec |
+| Verbal | 12 | 15 min | 75 sec |
+| **Total** | **40** | **65 min** | **98 sec avg** |
+
+### Cognizant-Specific Tips
+
+1. **Speed is key** — Cognizant cuts off at time limit
+2. **Number series appear every year** — practice ×2+k patterns
+3. **Data sufficiency is common** — practice this format
+4. **Verbal is quick** — grammar rules memorize, don't analyze
+
+---
+
+## Retake Protocol
+
+1. Wait 3 days
+2. Focus on weakest 3 topics
+3. Target 80%+ accuracy
+4. Time yourself strictly (65 min max)
+5. Compare improvement

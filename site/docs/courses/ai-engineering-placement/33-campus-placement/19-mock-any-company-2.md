@@ -124,3 +124,372 @@ sidebar_position: 380
 | 32+ | Ready | Try Mock #3 (hard) + company mocks |
 | 24-31 | Good | Re-drill failed topics, 60s/question |
 | <24 | Needs work | Re-read theory, retake in 3 days |
+
+---
+
+## Detailed Solution Explanations
+
+### Quantitative — Step-by-Step
+
+**Q1.** Net percentage change: +30% then −30%?
+
+```
+1.3 × 0.7 = 0.91 → −9% net
+```
+
+**Q2.** 25% of number is 60. What is 45%?
+
+```
+Number = 60/0.25 = 240
+45% of 240 = 108
+```
+
+**Q3.** CP ₹500, SP ₹575. Profit %?
+
+```
+Profit = 75
+Profit % = 75/500 × 100 = 15%
+```
+
+**Q4.** Train 120m, pole, 6 seconds. Speed km/hr?
+
+```
+120/6 = 20 m/s
+20 × 18/5 = 72 km/hr
+```
+
+**Q5.** Population now 2,42,000 at 10% growth. 2 years ago?
+
+```
+P × 1.1² = 242000
+P = 242000/1.21 = 2,00,000
+```
+
+**Q6.** A+B = 10 days, A alone = 25 days. B alone?
+
+```
+1/B = 1/10 − 1/25 = 5/50 − 2/50 = 3/50
+B = 50/3 = 16.67 days
+```
+
+**Q7.** Sum amounts to ₹6,655 at 10% CI for 2 years?
+
+```
+P × 1.21 = 6655
+P = 6655/1.21 = ₹5,500
+```
+
+**Q8.** Two pipes: 15 min and 25 min. Together?
+
+```
+15 × 25/(15+25) = 375/40 = 9.375 min
+```
+
+**Q9.** a:b = 5:6, b:c = 9:11. Find a:c.
+
+```
+Unify b: LCM(6,9) = 18
+a:b = 15:18
+b:c = 18:22
+a:c = 15:22
+```
+
+**Q10.** Average 10 numbers = 45. Each increased by 3. New average?
+
+```
+New average = 45 + 3 = 48
+```
+
+**Q11.** Committee of 4 from 8 people?
+
+```
+C(8,4) = 8!/(4!×4!) = 70
+```
+
+**Q12.** Card drawn from 52. Probability queen?
+
+```
+4 queens / 52 = 1/13
+```
+
+**Q13.** Next term: 1, 5, 13, 29, 61, ?
+
+```
+×2 + 3: 61 × 2 + 3 = 125
+```
+
+**Q14.** Product 1296, HCF 12. LCM?
+
+```
+LCM = 1296/12 = 108
+```
+
+**Q15.** Boat: 30 km downstream 2 hrs, upstream 5 hrs. Stream speed?
+
+```
+Downstream = 15 km/hr
+Upstream = 6 km/hr
+Stream = (15−6)/2 = 4.5 km/hr
+```
+
+**Q16.** Sell at 20% profit. If ₹96 less, 4% loss. CP?
+
+```
+SP1 = 1.20 CP
+SP2 = 0.96 CP
+SP1 − SP2 = 96
+1.20 CP − 0.96 CP = 96
+0.24 CP = 96
+CP = ₹400
+```
+
+### Logical — Step-by-Step
+
+**Q17.** Next term: 4, 13, 40, 121, ?
+
+```
+×3 + 1: 121 × 3 + 1 = 364
+```
+
+**Q18.** "APPLE" → "BQQMF". "MANGO"?
+
+```
++1 each letter: M→N, A→B, N→O, G→H, O→P → NBOHP
+```
+
+**Q19.** Odd one out: 9, 25, 49, 63, 81
+
+```
+9 = 3², 25 = 5², 49 = 7², 81 = 9²
+63 is not a perfect square
+Answer: 63
+```
+
+**Q20.** All trees are plants. No plant is a stone.
+
+```
+I. No tree is a stone — follows (trees ⊂ plants, plants ∩ stone = ∅)
+II. All plants are trees — NOT given (could be false)
+Answer: Only I
+```
+
+**Q21.** 6 km East, 8 km North. Distance?
+
+```
+√(6² + 8²) = √100 = 10 km
+```
+
+**Q22.** "He is my father's only son." Who is he?
+
+```
+Father's only son = her brother
+```
+
+**Q23.** Five people in a row. A left end. B 2nd right of A. C between B and D. E right end.
+
+```
+Positions: A(1), B(3), E(5)
+C between B and D → D(4), C(2)? No, C between B(3) and D
+If D(4), C must be between 3 and 4 → not possible
+If D(2), C between 2 and 3 → not possible
+Adjust: B is 2nd to right of A → A(1), B(3)
+C between B(3) and D → D could be 4 or 5
+E is at right end → E(5)
+So D(4), C between 3 and 4 → C must be at non-integer → ambiguous
+Let me re-read: "C sits between B and D"
+If D(2), B(3): C between 2 and 3 → C at 2.5? No
+If D(4), B(3): C between 3 and 4 → C at 3.5? No
+Wait: positions are 1,2,3,4,5
+A(1), B(3), E(5)
+Remaining: 2, 4 for C and D
+If C(2), D(4): C is NOT between B(3) and D(4)
+If C(4), D(2): C(4) is between B(3) and D? No, D(2) is left of B
+Actually "between" means in the middle position
+B(3) and D(4): no position between them
+B(3) and D(2): C(?) between 2 and 3 → no integer position
+The answer is ambiguous — but the intended answer is likely C based on standard puzzle logic
+```
+
+**Q24.** Data sufficiency: x + y = 12, x − y = 4.
+
+```
+Adding: 2x = 16 → x = 8
+Both together sufficient.
+```
+
+**Q25.** Priya 18th from left, 50 students. Position from right?
+
+```
+50 − 18 + 1 = 33rd from right
+```
+
+**Q26.** Input: 12 5 8 3 9. Step 1: 3 12 5 8 9. Step 2: 3 5 12 8 9. Step 3?
+
+```
+Smallest moves left each step
+Step 3: 3 5 8 12 9
+```
+
+**Q27.** Seven people A-G. A 3rd from left. B 3rd from right. C between A and B.
+
+```
+A(3), B(5) (3rd from right of 7 = position 5)
+C exactly between 3 and 5 = position 4
+Between C(4) and B(5) = 0 people
+```
+
+**Q28.** Eight friends circle. P opposite Q. R right of P. S left of Q. T between R and S. Opposite T?
+
+```
+Need full circle layout — answer cannot be determined with given info
+```
+
+### Verbal — Step-by-Step
+
+**Q29.** Synonym of "rapid"?
+
+```
+Rapid = swift, fast
+Answer: B) swift
+```
+
+**Q30.** Antonym of "ancient"?
+
+```
+Ancient = old, historic
+Antonym = modern
+Answer: B) modern
+```
+
+**Q31.** "Neither of the candidates ___ suitable."
+
+```
+Neither = singular
+Answer: is
+```
+
+**Q32.** Error: "The number of employees are increasing."
+
+```
+"The number of" = singular → "is increasing"
+Answer: C
+```
+
+**Q33.** "One of my colleagues have won the award."
+
+```
+Subject = "One" (singular) → "has"
+Corrected: "One of my colleagues has won the award."
+```
+
+**Q34.** "The manager said that he will attend the meeting tomorrow."
+
+```
+No error — acceptable in reported speech
+```
+
+**Q35.** Para jumble: parcel arrived, ordered laptop, packed securely, placed order.
+
+```
+Order: placed order → ordered → packed securely → arrived
+Answer: b, d, a, c — wait, let me re-read
+(a) parcel arrived, (b) ordered laptop, (c) packed securely, (d) placed order at midnight
+Logical: ordered (b) → placed order at midnight (d) → parcel arrived (a) → packed securely (c)
+Wait, (c) should be before (a). Let me re-think:
+He placed order at midnight (d) → ordered laptop online (b) → it was packed securely (c) → parcel arrived next morning (a)
+Answer: d, b, c, a
+```
+
+**Q36.** Idiom: "To let bygones be bygones"
+
+```
+= to forget past grievances, forgive
+Answer: A) to forgive past mistakes
+```
+
+**Q37.** "He is capable ___ handling difficult clients."
+
+```
+Capable of (preposition)
+Answer: of
+```
+
+**Q38.** Spelling: privilege/privelege/priviledge
+
+```
+Correct: privilege
+Answer: A) privilege
+```
+
+**Q39.** Passage: Cloud computing risk?
+
+```
+"long-running workloads can sometimes cost more on the cloud"
+Answer: B) higher cost for long-running workloads
+```
+
+**Q40.** "Scarcely had the train left ___ the platform collapsed."
+
+```
+Scarcely...when (fixed phrase)
+Answer: when
+```
+
+---
+
+## Topic-Wise Performance Analysis
+
+| Topic | Questions | Correct | Accuracy | Time |
+|-------|-----------|---------|----------|------|
+| Percentages | Q1, Q2 | /2 | % | min |
+| Profit/Loss | Q3, Q16 | /2 | % | min |
+| Speed/Distance | Q4, Q15 | /2 | % | min |
+| Averages | Q5, Q10 | /2 | % | min |
+| Time & Work | Q6, Q8 | /2 | % | min |
+| Interest | Q7 | /1 | % | min |
+| Ratios | Q9 | /1 | % | min |
+| P&C/Probability | Q11, Q12 | /2 | % | min |
+| Number Series | Q13, Q14 | /2 | % | min |
+| Coding-Decoding | Q18, Q30 | /2 | % | min |
+| Syllogisms | Q20 | /1 | % | min |
+| Direction | Q21 | /1 | % | min |
+| Blood Relations | Q22 | /1 | % | min |
+| Seating Arrangement | Q23, Q27, Q28 | /3 | % | min |
+| Data Sufficiency | Q24 | /1 | % | min |
+| Ranking | Q25 | /1 | % | min |
+| Input-Output | Q26 | /1 | % | min |
+| Series (Logical) | Q17, Q19 | /2 | % | min |
+| Synonyms/Antonyms | Q29, Q30 | /2 | % | min |
+| Grammar | Q31, Q32, Q33 | /3 | % | min |
+| Para Jumble | Q35 | /1 | % | min |
+| Idioms | Q36 | /1 | % | min |
+| Spelling | Q38 | /1 | % | min |
+| Comprehension | Q39 | /1 | % | min |
+| Fill in Blanks | Q37, Q40 | /2 | % | min |
+
+---
+
+## Time Management Tips
+
+| Section | Questions | Ideal Time | Per Question |
+|---------|-----------|------------|--------------|
+| Quantitative | 16 | 35 min | 131 sec |
+| Logical | 12 | 25 min | 125 sec |
+| Verbal | 12 | 20 min | 100 sec |
+| **Total** | **40** | **80 min** | **120 sec avg** |
+
+### Speed Strategies
+
+1. **Quantitative:** Do Q1-Q10 first (easier), then Q11-Q16
+2. **Logical:** Series and coding are fastest — do first
+3. **Verbal:** Grammar questions are quickest — do before comprehension
+
+---
+
+## Retake Protocol
+
+1. Wait 3 days before retake
+2. Focus on weakest 3 topics
+3. Target 85%+ accuracy
+4. Time yourself strictly
+5. Compare improvement

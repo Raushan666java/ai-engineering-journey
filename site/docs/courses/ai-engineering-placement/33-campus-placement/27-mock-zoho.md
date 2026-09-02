@@ -137,3 +137,369 @@ sidebar_position: 388
 | 32+ | Ready | Zoho's real test is within reach — book it |
 | 24-31 | Focus | Re-drill failed sections — aim for 80% accuracy |
 | <24 | Rebuild | Full theory revision, retake in 4 days |
+
+---
+
+## Detailed Solution Explanations
+
+### Quantitative — Step-by-Step
+
+**Q1.** Mix ₹30/kg and ₹50/kg in 3:2, sell ₹44/kg. Profit %?
+
+```
+Cost of 5 kg = 30×3 + 50×2 = 90 + 100 = 190
+Cost per kg = 190/5 = ₹38
+SP = ₹44
+Profit = 6/38 × 100 = 15.79%
+```
+
+**Q2.** CI − SI for 2 years at 8% = ₹64. Sum?
+
+```
+64 = P(0.0064)
+P = ₹10,000
+```
+
+**Q3.** Sum becomes 4× in 18 years at SI. Rate?
+
+```
+3P = P × R × 18/100
+R = 300/18 = 16.67%
+```
+
+**Q4.** Trains 160m and 240m, 54 and 72 km/hr. Time to cross?
+
+```
+Relative = 126 km/hr = 35 m/s
+Total = 400 m
+Time = 400/35 = 11.43 seconds
+```
+
+**Q5.** A = 20 days, B = 30 days. Together 8 days, A leaves. B finishes?
+
+```
+8 days together = 8(1/20 + 1/30) = 8(5/60) = 2/3
+Remaining = 1/3
+B's time = 1/3 × 30 = 10 days
+```
+
+**Q6.** Pipe fills 10 hrs, leak empties 15 hrs. Both?
+
+```
+1/10 − 1/15 = 3/30 − 2/30 = 1/30
+Time = 30 hours
+```
+
+**Q7.** Brothers ratio 5:4, after 10 years = 7:6. Ages?
+
+```
+(5k+10)/(4k+10) = 7/6
+30k + 60 = 28k + 70
+2k = 10 → k = 5
+Ages: 25 and 20
+```
+
+**Q8.** 6 white, 8 black. Two drawn. P(different colors)?
+
+```
+P(different) = C(6,1)×C(8,1)/C(14,2) = 48/91
+```
+
+**Q9.** Letters of "MISSISSIPPI" arranged?
+
+```
+11!/(4!×4!×2!) = 34,650
+```
+
+**Q10.** Remainder 2^100 ÷ 7?
+
+```
+Cycle of 2^n mod 7: 2, 4, 1 (length 3)
+100 mod 3 = 1
+Position 1 = 2
+```
+
+**Q11.** Boat: 45 km down 3 hrs, up 5 hrs. Stream?
+
+```
+Down = 15, Up = 9
+Stream = (15−9)/2 = 3 km/hr
+```
+
+**Q12.** Average 9 numbers = 45. First 4 avg 40, last 4 avg 50. Middle?
+
+```
+Total = 405
+First 4 = 160, Last 4 = 200
+Middle = 405 − 360 = 45
+```
+
+**Q13.** Markup 50%, discount 20%. Profit?
+
+```
+100 → 150 → 120
+Profit = 20%
+```
+
+**Q14.** 5 boys, 4 girls, no two girls together?
+
+```
+Boys: 5! = 120
+Gaps: P(6,4) = 360
+Total = 43,200
+```
+
+**Q15.** ₹20,000 at 10% CI, withdraw interest yearly. Total 3 years?
+
+```
+Withdrawn = simple interest
+10% of 20,000 = 2,000/year
+Total = ₹6,000
+```
+
+### Logical — Step-by-Step
+
+**Q16.** Next term: 5, 14, 41, 122, 365, ?
+
+```
+×3 − 1: 365 × 3 − 1 = 1,094
+```
+
+**Q17.** "PRIVATE" → "Q S J W B U F". "SECRET"?
+
+```
++1 each: S→T, E→F, C→D, R→S, E→F, T→U
+Answer: T F D S F U
+```
+
+**Q18.** Some animals are cats. No cat is a fish.
+
+```
+I. Some animals are not fish — follows (cats that are animals can't be fish)
+II. Some fish are not cats — follows (no cat is fish → some fish aren't cats)
+Both follow
+```
+
+**Q19.** 5 km North, 12 km East, 5 km South. Position?
+
+```
+North and South cancel (5−5=0)
+Remaining: 12 km East
+```
+
+**Q20.** A brother of B. B daughter of C. C wife of D. D father of E. A related to E?
+
+```
+C is A's mother. D is A's father. E is D's child → E is A's sibling.
+A is E's brother.
+```
+
+**Q21.** Ravi 20th left, Sita 15th right, 60 students. Between?
+
+```
+Sita from left = 60 − 15 + 1 = 46th
+Between = 46 − 20 − 1 = 25
+```
+
+**Q22.** Data sufficiency: x² = 81, x is negative.
+
+```
+x = −9
+Both together sufficient.
+```
+
+**Q23.** Input: 8 3 6 1 5 2. Step 1: 1 8 3 6 5 2. Step 2: 1 2 8 3 6 5. Step 3?
+
+```
+Smallest moves left, then 3 next
+Step 3: 1 2 3 8 6 5
+```
+
+**Q24.** Odd one out: 12, 18, 27, 36, 45
+
+```
+12, 18, 36, 45 are all divisible by 3 and 6
+27 = 3³ (perfect cube)
+Answer: 27
+```
+
+**Q25.** Circle: A opposite D. B right of A. C left of D. E between B and C. F right of B. Opposite E?
+
+```
+Needs full circle layout — cannot be determined
+```
+
+**Q26.** Company announced 10% salary cut to avoid layoffs.
+
+```
+I. Will prevent layoffs — reasonable inference
+II. Layoffs are always bad — extreme statement
+Answer: Only I
+```
+
+**Q27.** "FRIEND" → "G S J F O E". "BROTHER"?
+
+```
++1 each: B→C, R→S, O→P, T→U, H→I, E→F, R→S
+Answer: C S P U I F S
+```
+
+**Q28.** Eight people row. P 2nd left. Q 2nd right. R between P and Q. S right of R. T left of P. Position 5?
+
+```
+P(2), Q(7), T(1)
+R between 2 and 7 → could be 3,4,5,6
+S right of R
+Ambiguous — cannot be determined
+```
+
+**Q29.** "She is the wife of my brother." Related?
+
+```
+Brother's wife = sister-in-law
+```
+
+**Q30.** Clock shows 4:30. Angle?
+
+```
+Hour hand: 4.5 × 30 = 135°
+Minute hand: 6 × 30 = 180°
+Angle = |180 − 135| = 45°
+```
+
+### Verbal — Step-by-Step
+
+**Q31.** Synonym of "lucid"?
+
+```
+Lucid = clear
+Answer: B) clear
+```
+
+**Q32.** Antonym of "meager"?
+
+```
+Meager = scanty
+Antonym = abundant
+Answer: A) abundant
+```
+
+**Q33.** "The number of employees ___ growing."
+
+```
+"The number of" = singular
+Answer: is
+```
+
+**Q34.** Error: "Each of the students have submitted."
+
+```
+Each = singular → "has submitted"
+```
+
+**Q35.** "The manager with his team are attending."
+
+```
+Subject = manager (singular) → "is attending"
+```
+
+**Q36.** Para jumble: transaction, PIN, cash, receipt.
+
+```
+Entered PIN → transaction → cash dispensed → receipt
+Answer: b, a, c, d
+```
+
+**Q37.** Spelling: maintenance
+
+```
+Answer: A) maintenance
+```
+
+**Q38.** Idiom: "To bite the dust"
+
+```
+= to fail or be defeated
+Answer: B
+```
+
+**Q39.** "Hardly had the train departed ___ the platform was closed."
+
+```
+Hardly...when
+Answer: when
+```
+
+**Q40.** Closest to "obfuscate"?
+
+```
+Obfuscate = confuse
+Answer: B) confuse
+```
+
+---
+
+## Topic-Wise Performance Analysis
+
+| Topic | Questions | Correct | Accuracy | Time |
+|-------|-----------|---------|----------|------|
+| Mixtures | Q1 | /1 | % | min |
+| Interest | Q2, Q3, Q15 | /3 | % | min |
+| Speed/Trains | Q4 | /1 | % | min |
+| Time & Work | Q5 | /1 | % | min |
+| Pipes/Leak | Q6 | /1 | % | min |
+| Ratios/Ages | Q7 | /1 | % | min |
+| Probability | Q8 | /1 | % | min |
+| P&C | Q9, Q14 | /2 | % | min |
+| Number System | Q10 | /1 | % | min |
+| Boats | Q11 | /1 | % | min |
+| Averages | Q12 | /1 | % | min |
+| Profit/Loss | Q13 | /1 | % | min |
+| Series (Logical) | Q16 | /1 | % | min |
+| Coding | Q17, Q27 | /2 | % | min |
+| Syllogisms | Q18 | /1 | % | min |
+| Direction | Q19 | /1 | % | min |
+| Blood Relations | Q20, Q29 | /2 | % | min |
+| Ranking | Q21 | /1 | % | min |
+| Data Sufficiency | Q22 | /1 | % | min |
+| Input-Output | Q23 | /1 | % | min |
+| Odd One Out | Q24 | /1 | % | min |
+| Seating (Circle) | Q25, Q28 | /2 | % | min |
+| Statement/Conclusion | Q26 | /1 | % | min |
+| Clock | Q30 | /1 | % | min |
+| Synonyms/Antonyms | Q31, Q32 | /2 | % | min |
+| Grammar | Q33, Q34, Q35 | /3 | % | min |
+| Para Jumble | Q36 | /1 | % | min |
+| Spelling | Q37 | /1 | % | min |
+| Idioms | Q38 | /1 | % | min |
+| Fill in Blanks | Q39 | /1 | % | min |
+| Vocabulary | Q40 | /1 | % | min |
+
+---
+
+## Time Management Tips
+
+| Section | Questions | Ideal Time | Per Question |
+|---------|-----------|------------|--------------|
+| Quantitative | 15 | 40 min | 160 sec |
+| Logical | 15 | 35 min | 140 sec |
+| Verbal | 10 | 15 min | 90 sec |
+| **Total** | **40** | **90 min** | **135 sec avg** |
+
+### Zoho-Specific Tips
+
+1. **Hardest mid-size company** — expect tough quant
+2. **Probability and P&C appear frequently** — master these
+3. **Puzzle-heavy reasoning** — practice floor/seating arrangements
+4. **No negative marking** — attempt everything
+5. **80%+ is safe target** — Zoho is competitive
+
+---
+
+## Retake Protocol
+
+1. Wait 4 days (Zoho is hard)
+2. Focus on weakest 3 topics
+3. Target 80%+ accuracy
+4. Time yourself strictly
+5. Compare improvement

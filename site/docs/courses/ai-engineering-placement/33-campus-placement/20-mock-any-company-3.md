@@ -134,3 +134,403 @@ sidebar_position: 381
 | 34+ | Ready | Real company rounds will feel easy — book your tests |
 | 26-33 | Good | Re-drill failed topics, 60s/question |
 | <26 | Needs work | Full theory revision, retake in 4 days |
+
+---
+
+## Detailed Solution Explanations
+
+### Quantitative — Step-by-Step
+
+**Q1.** Mix rice ₹24/kg and ₹36/kg in 3:2, sell ₹32/kg. Profit %?
+
+```
+Cost of 5 kg = 24×3 + 36×2 = 72 + 72 = 144
+Cost per kg = 144/5 = ₹28.80
+SP = ₹32
+Profit = 32 − 28.80 = 3.20
+Profit % = 3.20/28.80 × 100 = 11.11%
+```
+
+**Q2.** CI − SI for 2 years at 10% = ₹150. Sum?
+
+```
+CI − SI = P(R/100)²
+150 = P(0.01)
+P = ₹15,000
+```
+
+**Q3.** Sum becomes 3× in 16 years at SI. Rate?
+
+```
+Interest = 2P in 16 years
+2P = P × R × 16/100
+R = 200/16 = 12.5%
+```
+
+**Q4.** Trains 140m and 260m, 45 and 63 km/hr. Time to cross?
+
+```
+Relative speed = 45 + 63 = 108 km/hr = 30 m/s
+Total length = 140 + 260 = 400 m
+Time = 400/30 = 13.33 seconds
+```
+
+**Q5.** A = 30 days, B = 45 days. Together 10 days, B leaves. A finishes?
+
+```
+10 days together = 10(1/30 + 1/45) = 10(3/90 + 2/90) = 10(5/90) = 5/9
+Remaining = 4/9
+A's time = 4/9 × 30 = 13.33 days
+```
+
+**Q6.** Pipe fills 16 hrs, leak empties 24 hrs. Both open?
+
+```
+1/16 − 1/24 = 3/48 − 2/48 = 1/48
+Time = 48 hours
+```
+
+**Q7.** Father:son = 7:3. After 10 years = 9:5. Present ages?
+
+```
+(7k+10)/(3k+10) = 9/5
+35k + 50 = 27k + 90
+8k = 40 → k = 5
+Father = 35, Son = 15
+```
+
+**Q8.** 5 red, 7 blue. Two drawn. Same color probability?
+
+```
+P(same) = [C(5,2) + C(7,2)] / C(12,2)
+= (10 + 21) / 66 = 31/66
+```
+
+**Q9.** Letters of "TALENT" arranged?
+
+```
+6 letters, T repeated twice
+6!/2! = 360
+```
+
+**Q10.** Remainder 3^100 ÷ 7?
+
+```
+Cycle of 3^n mod 7: 3, 2, 6, 4, 5, 1 (length 6)
+100 = 6×16 + 4
+Position 4 = 4
+```
+
+**Q11.** Boat: 36 km down 3 hrs, up 6 hrs. Stream speed?
+
+```
+Downstream = 12 km/hr
+Upstream = 6 km/hr
+Stream = (12−6)/2 = 3 km/hr
+```
+
+**Q12.** Average 11 numbers = 50. First 5 avg 45, last 5 avg 52. 6th number?
+
+```
+Total = 550
+First 5 = 225, Last 5 = 260
+6th = 550 − 485 = 60
+```
+
+**Q13.** Markup 30%, discount 10%. Profit %?
+
+```
+100 → 130 → 117
+Profit = 17%
+```
+
+**Q14.** 5 boys, 4 girls, no two girls together?
+
+```
+Boys arranged: 5! = 120
+6 gaps for girls: P(6,4) = 360
+Total = 120 × 360 = 43,200
+```
+
+**Q15.** ₹10,000 at 10% CI, withdraw interest yearly. Total 3 years?
+
+```
+Interest withdrawn = simple interest
+10% of 10,000 = 1,000/year
+Total = ₹3,000
+```
+
+**Q16.** HCF = 14, LCM = 588, one number = 98. Other?
+
+```
+Other = 14 × 588/98 = 84
+```
+
+**Q17.** Train 200m passes man walking 5 km/hr same direction in 16s.
+
+```
+Relative speed = 200/16 = 12.5 m/s = 45 km/hr
+Train = 45 + 5 = 50 km/hr
+```
+
+**Q18.** A fills 24 min, B fills 40 min. Both open, A closed after 12 min.
+
+```
+12 min together = 12(1/24 + 1/40) = 12(5/120 + 3/120) = 12(8/120) = 4/5
+Remaining = 1/5
+B's time = 1/5 × 40 = 8 min
+```
+
+### Logical — Step-by-Step
+
+**Q19.** Next term: 3, 8, 22, 63, 185, ?
+
+```
+×3 − 1, ×3 − 2, ×3 − 3, ×3 − 4, ×3 − 5
+185 × 3 − 5 = 550
+```
+
+**Q20.** "PRIVATE" → "Q S J W B U F". "PUBLIC"?
+
+```
++1 each letter: P→Q, U→V, B→C, L→M, I→J, C→D
+Answer: Q V C M J D
+```
+
+**Q21.** Some singers are dancers. No dancer is a painter.
+
+```
+I. Some singers are not painters — follows (singers who dance can't be painters)
+II. Some painters are not dancers — follows (no dancer is a painter → no painter is a dancer → some painters are not dancers)
+Both follow
+```
+
+**Q22.** 3 km North, 4 km East, 3 km South. Position?
+
+```
+North and South cancel (3−3=0)
+Remaining: 4 km East
+```
+
+**Q23.** A brother of B. B daughter of C. C wife of D. A related to D?
+
+```
+C is A's mother. D is C's husband → D is A's father.
+A is D's son.
+```
+
+**Q24.** Six floors. A=5, B below A=4, C=3, D above E, F=1.
+
+```
+Remaining floors: 2, 6
+D above E → D=6, E=2
+Answer: E lives on floor 2
+```
+
+**Q25.** Data sufficiency: Father = 40, Father = 4× son.
+
+```
+Son = 40/4 = 10
+Both together sufficient.
+```
+
+**Q26.** Input: 14 6 9 3 12. Step 1: 3 14 6 9 12. Step 2: 3 6 14 9 12. Step 3?
+
+```
+Smallest moves left, then 9 next
+Step 3: 3 6 9 14 12
+```
+
+**Q27.** Five friends heights. P > Q. R < P but R > S. T < Q. Shortest?
+
+```
+P > Q > T
+P > R > S
+T vs S unknown
+Answer: Cannot be determined
+```
+
+**Q28.** Eight people circle. A opposite B. C right of A. D left of B. E between C and D. Opposite E?
+
+```
+Needs full circle layout — cannot be determined
+```
+
+**Q29.** Rohit 15th left, Mohit 20th right, 45 students. Between?
+
+```
+Mohit from left = 45 − 20 + 1 = 26th
+Between = 26 − 15 − 1 = 10
+```
+
+**Q30.** "BEAUTY" → "C F B W U Z". "MUSIC"?
+
+```
++1 each: M→N, U→V, S→T, I→J, C→D
+Answer: N V T J D
+```
+
+**Q31.** "She is the mother of my brother's wife." Related?
+
+```
+Brother's wife = sister-in-law
+Mother of sister-in-law = mother-in-law
+```
+
+**Q32.** Six people row. A at end. B 2nd right. C middle. D between A and C. E right of D. F other end.
+
+```
+A(1), F(6), C(4), D(2), E(3), B(5)
+Between C(4) and B(5) = 0 people
+Wait: positions 1-6: A(1), D(2), E(3), C(4), B(5), F(6)
+Between C and B = 0
+```
+
+**Q33.** Clock shows 3:00. Angle?
+
+```
+|30(3) − 5.5(0)| = 90°
+```
+
+### Verbal — Step-by-Step
+
+**Q34.** Synonym of "lucid"?
+
+```
+Lucid = clear, easy to understand
+Answer: B) clear
+```
+
+**Q35.** Antonym of "meager"?
+
+```
+Meager = scanty, scarce
+Antonym = abundant
+Answer: A) abundant
+```
+
+**Q36.** "The number of students ___ increasing."
+
+```
+"The number of" = singular
+Answer: is
+```
+
+**Q37.** Error: "Each of the girls have submitted their assignment."
+
+```
+Each = singular → "has submitted"
+Also "their" → "her" for girls
+```
+
+**Q38.** "He is one of the best players who plays for the national team."
+
+```
+"who" refers to "players" (plural) → "play"
+Corrected: "He is one of the best players who play for the national team."
+```
+
+**Q39.** "The committee have decided to postpone the event."
+
+```
+Committee = singular → "has decided"
+```
+
+**Q40.** Para jumble: lights flickered, city dark, transformer failed, crews restore.
+
+```
+Transformer failed → lights went out → city dark → crews restore
+Answer: c, a, b, d
+```
+
+**Q41.** Idiom: "To burn the midnight oil"
+
+```
+= to work late into the night
+Answer: B
+```
+
+**Q42.** Spelling: maintenance
+
+```
+Answer: A) maintenance
+```
+
+**Q43.** Passage: EV barrier?
+
+```
+"main barrier remains the upfront price and charging infrastructure"
+Answer: upfront price and charging infrastructure
+```
+
+**Q44.** "Hardly had he opened the door ___ the phone rang."
+
+```
+Hardly...when
+Answer: when
+```
+
+**Q45.** Closest to "obfuscate"?
+
+```
+Obfuscate = make unclear, confuse
+Answer: B) confuse
+```
+
+---
+
+## Topic-Wise Performance Analysis
+
+| Topic | Questions | Correct | Accuracy | Time |
+|-------|-----------|---------|----------|------|
+| Mixtures/Alligation | Q1 | /1 | % | min |
+| Interest | Q2, Q3, Q15 | /3 | % | min |
+| Speed/Trains | Q4, Q17 | /2 | % | min |
+| Time & Work | Q5, Q18 | /2 | % | min |
+| Pipes/Leak | Q6 | /1 | % | min |
+| Ratios/Ages | Q7 | /1 | % | min |
+| Probability | Q8 | /1 | % | min |
+| P&C | Q9, Q14 | /2 | % | min |
+| Number System | Q10, Q16 | /2 | % | min |
+| Boats | Q11 | /1 | % | min |
+| Averages | Q12 | /1 | % | min |
+| Profit/Loss | Q13 | /1 | % | min |
+| Series (Quant) | Q19 | /1 | % | min |
+| Coding | Q20, Q30 | /2 | % | min |
+| Syllogisms | Q21 | /1 | % | min |
+| Direction | Q22 | /1 | % | min |
+| Blood Relations | Q23, Q31 | /2 | % | min |
+| Floor/Seating | Q24, Q27, Q28, Q32 | /4 | % | min |
+| Data Sufficiency | Q25 | /1 | % | min |
+| Input-Output | Q26 | /1 | % | min |
+| Ranking | Q29 | /1 | % | min |
+| Clock | Q33 | /1 | % | min |
+| Synonyms/Antonyms | Q34, Q35 | /2 | % | min |
+| Grammar | Q36, Q37, Q38, Q39 | /4 | % | min |
+| Para Jumble | Q40 | /1 | % | min |
+| Idioms | Q41 | /1 | % | min |
+| Spelling | Q42 | /1 | % | min |
+| Comprehension | Q43 | /1 | % | min |
+| Fill in Blanks | Q44 | /1 | % | min |
+| Vocabulary | Q45 | /1 | % | min |
+
+---
+
+## Time Management Tips
+
+| Section | Questions | Ideal Time | Per Question |
+|---------|-----------|------------|--------------|
+| Quantitative | 18 | 35 min | 117 sec |
+| Logical | 15 | 30 min | 120 sec |
+| Verbal | 12 | 25 min | 125 sec |
+| **Total** | **45** | **90 min** | **120 sec avg** |
+
+---
+
+## Retake Protocol
+
+1. Wait 4 days (hard mock needs more reset time)
+2. Focus on weakest 3 topics
+3. Target 80%+ (this is a hard mock)
+4. Time yourself strictly
+5. Compare improvement

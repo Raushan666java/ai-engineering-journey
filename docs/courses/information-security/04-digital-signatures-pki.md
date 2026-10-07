@@ -614,7 +614,7 @@ D) The service server checks for duplicate authenticator timestamps
 2. Checks the timestamp is within the allowed time skew (typically ±5 minutes)
 3. **Caches previously seen authenticator timestamps** — rejects duplicates
 
-Even if an attacker captures the ST (which they can't decrypt) and the authenticator, replaying them will fail because the service already recorded that timestamp. Additionally, ticket lifetime limits the window. Both factors combine: timestamp uniqueness + short ticket lifetime.
+Even if an attacker captures the ST (which they can't decrypt) and the authenticator, replaying them will fail because the service already recorded that timestamp. ticket lifetime limits the window. Both factors combine: timestamp uniqueness + short ticket lifetime.
 </details>
 
 ---

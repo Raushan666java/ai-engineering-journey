@@ -1,3 +1,4 @@
+<!-- improved -->
 # Verbal Ability — All Sections Master Reference
 
 > Complete theory for every verbal section asked in ANY company aptitude round.

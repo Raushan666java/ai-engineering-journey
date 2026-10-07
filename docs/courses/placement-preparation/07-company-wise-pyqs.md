@@ -556,7 +556,7 @@ public class TwoSumSorted {
 
 **Difficulty:** Hard
 
-**Problem Statement:** Given an array of integers and a sliding window of size k, return an array of the maximum element for each window position. Additionally, return the minimum of these maximum values across all windows.
+**Problem Statement:** Given an array of integers and a sliding window of size k, return an array of the maximum element for each window position. return the minimum of these maximum values across all windows.
 
 ```java
 import java.util.ArrayDeque;

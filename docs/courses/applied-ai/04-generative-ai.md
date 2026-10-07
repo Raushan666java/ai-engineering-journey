@@ -1497,11 +1497,11 @@ FUNCTION rag_query(query, embed_model, vector_db, llm, top_k=5):
 
 ```python
 from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import Chroma
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.vectorstores import Chroma
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.llms import HuggingFacePipeline
 from langchain.chains import RetrievalQA
-from langchain.document_loaders import TextLoader
+from langchain_community.document_loaders import TextLoader
 import torch
 
 # ── 1. Load and Chunk Documents ──

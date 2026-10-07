@@ -189,7 +189,7 @@ Before the interview, research these aspects:
 
 **Sample answers:**
 
-> "I want to join Google because I admire the scale at which your systems operate. I read the announcement about your Spanner database handling global transactions with strong consistency, and that level of distributed systems engineering is what I want to learn and contribute to. Additionally, your culture of innovation → where engineers spend 20% time on side projects → aligns with how I like to work. I have ideas for productivity tools I would love to prototype."
+> "I want to join Google because I admire the scale at which your systems operate. I read the announcement about your Spanner database handling global transactions with strong consistency, and that level of distributed systems engineering is what I want to learn and contribute to. your culture of innovation → where engineers spend 20% time on side projects → aligns with how I like to work. I have ideas for productivity tools I would love to prototype."
 
 > "I want to join Zomato because I have been following how you use machine learning to optimize delivery routes and reduce wait times. I am passionate about applying engineering to solve real-world logistics problems. Your engineering blog post on real-time order tracking was fascinating. I want to work on systems that impact millions of users daily, and I believe Zomato's engineering culture will help me grow rapidly."
 

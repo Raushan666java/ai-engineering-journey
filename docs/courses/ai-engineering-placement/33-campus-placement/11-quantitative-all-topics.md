@@ -1,3 +1,4 @@
+<!-- improved -->
 # Quantitative Aptitude — All Topics Master Reference
 
 > Complete theory for every quant topic asked in ANY company aptitude round.

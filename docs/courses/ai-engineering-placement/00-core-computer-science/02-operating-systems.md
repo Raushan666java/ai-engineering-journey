@@ -1,3 +1,4 @@
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Operating Systems for AI Engineers
 
@@ -9,16 +10,8 @@ After this chapter you will be able to explain the difference between processes 
 
 Operating systems manage hardware resources and provide abstractions for process management, memory, and I/O. Understanding OS concepts is crucial for optimizing AI workloads and managing GPU resources.
 
-## Prerequisites
-
-- Basic programming knowledge
-- Understanding of data structures
-
 ## Key Terminology
 
-**Key Terms**: Core vocabulary and concepts for this topic.
-
-**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 

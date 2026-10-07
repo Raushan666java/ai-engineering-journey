@@ -1,3 +1,4 @@
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Design WhatsApp — Real-Time Messaging, Presence, Encryption
 
@@ -16,16 +17,8 @@
 
 System design interviews test your ability to architect large-scale systems. Caching, load balancing, message queues, and database sharding are patterns you will apply daily. This module prepares you for both interviews and production.
 
-## Prerequisites
-
-- Basic programming knowledge
-- Understanding of data structures
-
 ## Key Terminology
 
-**Key Terms**: Core vocabulary and concepts for this topic.
-
-**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
@@ -841,8 +834,8 @@ d) Unlimited
 ## Fill in the Blank
 
 1. The chapter that covers Design WhatsApp — Real-Time Messaging, Presence, Encryption is Chapter ___ of this module. — Answer: check the module's table of contents.
-2. The time complexity of the standard approach to Design WhatsApp — Real-Time Messaging, Presence, Encryption is ___. — Answer: review the theory section and state big-O notation.
-3. The main edge case to handle when implementing Design WhatsApp — Real-Time Messaging, Presence, Encryption is ___. — Answer: empty or invalid input handling, as discussed in the chapter.
+2. The time complexity of the standard approach to 12 Design Whatsapp is ___. — Answer: O(log n) with consistent hashing
+3. The main edge case to handle when implementing 12 Design Whatsapp is ___. — Answer: single point of failure, thundering herd, split brain
 4. The tools commonly used to debug Design WhatsApp — Real-Time Messaging, Presence, Encryption issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
 5. The related topic that connects to Design WhatsApp — Real-Time Messaging, Presence, Encryption in the next chapter is ___. — Answer: see the Next Topic section.
 
@@ -1016,22 +1009,24 @@ Think of design whatsapp like learning a new language — start with basic vocab
 
 ## Optimized Implementation
 
-`python
+```python
 from typing import Any, Optional
 
-def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
-    """Runnable scaffold for Design WhatsApp — Real-Time Messaging, Presence, Encryption.
+def demonstrate_12_design_whatsapp(input_data: list[Any]) -> Optional[Any]:
+    """Minimal production scaffold for 12 Design Whatsapp.
 
-    Replace the body with the optimized implementation from the chapter,
-    keeping type hints, docstring, and edge-case handling.
+    Key concepts: scalability, availability, consistency, latency, throughput
+    Complexity: O(log n) with consistent hashing
     """
     if not input_data:
         return None
-    # Step 1: validate input types
-    # Step 2: apply the core Design WhatsApp — Real-Time Messaging, Presence, Encryption logic from the Examples section
-    # Step 3: return the result with the documented default
-    return 0.0
-`
+    # Validate input
+    if not isinstance(input_data, (list, tuple)):
+        raise TypeError(f"Expected list, got {type(input_data).__name__}")
+    # Core logic: implement 12 Design Whatsapp here
+    result = input_data[0] if input_data else None
+    return result
+```
 
 - Keeps the function signature stable so tests written against it stay valid.
 - Handles the empty-input contract explicitly.

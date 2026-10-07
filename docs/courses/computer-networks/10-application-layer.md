@@ -3237,7 +3237,7 @@ pickup → cleanup → qmgr → smtp → Network
 
 ## Case Study: DNS Infrastructure Migration for a Global E-Commerce Platform
 
-**Problem:** A global e-commerce platform serving 200+ countries with 1 billion monthly visits relied on a single anycast DNS provider. During peak shopping seasons (Black Friday, Diwali), DNS query rates exceeded 5 million queries per second (QPS), causing resolver timeouts lasting 3-8 seconds. Page load times spiked from 800ms to 4.2 seconds during these events. Additionally, a DNS cache poisoning attack on a third-party resolver resulted in 30 minutes of traffic misdirection to a fraudulent site, costing $2M in fraudulent transactions before DNSSEC validation caught the inconsistency.
+**Problem:** A global e-commerce platform serving 200+ countries with 1 billion monthly visits relied on a single anycast DNS provider. During peak shopping seasons (Black Friday, Diwali), DNS query rates exceeded 5 million queries per second (QPS), causing resolver timeouts lasting 3-8 seconds. Page load times spiked from 800ms to 4.2 seconds during these events. a DNS cache poisoning attack on a third-party resolver resulted in 30 minutes of traffic misdirection to a fraudulent site, costing $2M in fraudulent transactions before DNSSEC validation caught the inconsistency.
 
 **Solution:** The infrastructure team implemented a multi-provider DNS architecture with three independent anycast providers (Cloudflare, AWS Route53, and a dedicated DNS appliance in their own data centers). Each domain used NS record delegation with all six nameservers advertised. At the application layer, they reduced DNS dependency by implementing HTTP/3 with connection migration (QUIC connection IDs survive network changes without re-resolution), HTTP/2 server push for critical CSS/JS resources (eliminating concurrent DNS lookups for sub-resources), and a client-side DNS-over-HTTPS (DoH) resolver using stale records with background refresh (serving cached IPs even during resolver failures). They deployed DNSSEC with NSEC (not NSEC3) for all zones, pre-computing RRSIG signatures with a 14-day validity window to reduce signing overhead. For the origin infrastructure, they implemented gRPC-based internal service discovery with 5-second TTLs, bypassing DNS entirely for internal microservice-to-microservice communication.
 
@@ -3297,7 +3297,7 @@ In iterative resolution, the resolver queries each server (root → TLD → auth
 
 <details>
 <summary>Solution</summary>
-HTTP/1.1 pipelining sends multiple requests on one connection but responses must be returned in order (FIFO) — a slow response blocks all subsequent responses (application-layer HOL). HTTP/2 multiplexing interleaves multiple streams over a single TCP connection, where each stream is independent. Responses can arrive out of order, eliminating application-layer HOL blocking. Additionally, HTTP/2 has binary framing, stream prioritization, and flow control per stream.
+HTTP/1.1 pipelining sends multiple requests on one connection but responses must be returned in order (FIFO) — a slow response blocks all subsequent responses (application-layer HOL). HTTP/2 multiplexing interleaves multiple streams over a single TCP connection, where each stream is independent. Responses can arrive out of order, eliminating application-layer HOL blocking. HTTP/2 has binary framing, stream prioritization, and flow control per stream.
 </details>
 
 3. Why is SMTP a push protocol while HTTP is a pull protocol?

@@ -298,13 +298,13 @@ Items in a list or comparison should have the same grammatical structure.
 
 | Connector | Function |
 |-----------|----------|
-| Moreover, Furthermore | Adding information |
+| Furthermore | Adding information |
 | However, Nevertheless | Contrast |
 | Therefore, Consequently | Result |
 | For instance, For example | Illustration |
 | In other words, That is | Restatement |
 | Meanwhile, Subsequently | Time |
-| In conclusion, To summarize | Conclusion |
+| To summarize | Conclusion |
 
 ### 3.5 Reading Comprehension
 

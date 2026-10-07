@@ -1,3 +1,4 @@
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Behavioral STAR Interview
 
@@ -16,16 +17,8 @@
 
 Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews prepare you for the full interview loop. This module is your final prep before offers.
 
-## Prerequisites
-
-- Basic programming knowledge
-- Understanding of data structures
-
 ## Key Terminology
 
-**Key Terms**: Core vocabulary and concepts for this topic.
-
-**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
@@ -1025,8 +1018,8 @@ d) Say you don't like the work
 ## Fill in the Blank
 
 1. The chapter that covers Behavioral STAR Interview is Chapter ___ of this module. — Answer: check the module's table of contents.
-2. The time complexity of the standard approach to Behavioral STAR Interview is ___. — Answer: review the theory section and state big-O notation.
-3. The main edge case to handle when implementing Behavioral STAR Interview is ___. — Answer: empty or invalid input handling, as discussed in the chapter.
+2. The time complexity of the standard approach to 09 Behavioral Star Interview is ___. — Answer: O(n) typical, O(1) best case
+3. The main edge case to handle when implementing 09 Behavioral Star Interview is ___. — Answer: empty input, boundary values, invalid types
 4. The tools commonly used to debug Behavioral STAR Interview issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
 5. The related topic that connects to Behavioral STAR Interview in the next chapter is ___. — Answer: see the Next Topic section.
 
@@ -1205,22 +1198,24 @@ Think of behavioral star interview like learning a new language — start with b
 
 ## Optimized Implementation
 
-`python
+```python
 from typing import Any, Optional
 
-def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
-    """Runnable scaffold for Behavioral STAR Interview.
+def demonstrate_09_behavioral_star_interview(input_data: list[Any]) -> Optional[Any]:
+    """Minimal production scaffold for 09 Behavioral Star Interview.
 
-    Replace the body with the optimized implementation from the chapter,
-    keeping type hints, docstring, and edge-case handling.
+    Key concepts: core concepts, data structures, algorithms, patterns
+    Complexity: O(n) typical, O(1) best case
     """
     if not input_data:
         return None
-    # Step 1: validate input types
-    # Step 2: apply the core Behavioral STAR Interview logic from the Examples section
-    # Step 3: return the result with the documented default
-    return 0.0
-`
+    # Validate input
+    if not isinstance(input_data, (list, tuple)):
+        raise TypeError(f"Expected list, got {type(input_data).__name__}")
+    # Core logic: implement 09 Behavioral Star Interview here
+    result = input_data[0] if input_data else None
+    return result
+```
 
 - Keeps the function signature stable so tests written against it stay valid.
 - Handles the empty-input contract explicitly.

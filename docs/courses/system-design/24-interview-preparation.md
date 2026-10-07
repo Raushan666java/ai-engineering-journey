@@ -1024,3 +1024,4 @@ Database Scaling Progression:
 Consistency Spectrum (strongest to weakest):
    Linearizability ? Sequential ? Causal ? Eventual
 ```
+```

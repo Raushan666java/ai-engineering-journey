@@ -1,3 +1,4 @@
+<!-- improved -->
 # Mock Test — Any Company #1 (Generic Pattern, 30 Questions)
 
 > Company-neutral aptitude simulation: 12 quant, 9 logical, 9 verbal. Time: 45 minutes.

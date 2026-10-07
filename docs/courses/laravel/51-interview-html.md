@@ -1153,7 +1153,7 @@ document.addEventListener('fullscreenchange', () => {
 
 ### Q51: What essential meta tags should every HTML5 page include?
 
-**Answer:** Every page should include: `charset="utf-8"` as the first meta element, `viewport` for mobile responsiveness, `description` for search snippets, `title` within `<head>`, and favicon via `<link rel="icon">`. Additionally, `robots` controls indexing, and `canonical` prevents duplicate content penalties.
+**Answer:** Every page should include: `charset="utf-8"` as the first meta element, `viewport` for mobile responsiveness, `description` for search snippets, `title` within `<head>`, and favicon via `<link rel="icon">`. `robots` controls indexing, and `canonical` prevents duplicate content penalties.
 
 ```html
 <!DOCTYPE html>

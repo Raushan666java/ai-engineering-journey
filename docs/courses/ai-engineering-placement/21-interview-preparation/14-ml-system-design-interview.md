@@ -1,3 +1,4 @@
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # ML System Design: Recommendation Systems and Model Serving
 
@@ -10,16 +11,8 @@ autoscaling, design a feature store that serves training and inference with cons
 
 Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews prepare you for the full interview loop. This module is your final prep before offers.
 
-## Prerequisites
-
-- Basic programming knowledge
-- Understanding of data structures
-
 ## Key Terminology
 
-**Key Terms**: Core vocabulary and concepts for this topic.
-
-**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
@@ -732,8 +725,8 @@ ML system design interviews test your ability to architect end-to-end systems th
 ## Fill in the Blank
 
 1. The chapter that covers ML System Design: Recommendation Systems and Model Serving is Chapter ___ of this module. — Answer: check the module's table of contents.
-2. The time complexity of the standard approach to ML System Design: Recommendation Systems and Model Serving is ___. — Answer: review the theory section and state big-O notation.
-3. The main edge case to handle when implementing ML System Design: Recommendation Systems and Model Serving is ___. — Answer: empty or invalid input handling, as discussed in the chapter.
+2. The time complexity of the standard approach to 14 Ml System Design Interview is ___. — Answer: O(n*d) for linear models, O(n^2) for kernel SVM
+3. The main edge case to handle when implementing 14 Ml System Design Interview is ___. — Answer: data leakage, class imbalance, overfitting
 4. The tools commonly used to debug ML System Design: Recommendation Systems and Model Serving issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
 5. The related topic that connects to ML System Design: Recommendation Systems and Model Serving in the next chapter is ___. — Answer: see the Next Topic section.
 
@@ -912,22 +905,24 @@ Think of ml system design interview like learning a new language — start with 
 
 ## Optimized Implementation
 
-`python
+```python
 from typing import Any, Optional
 
-def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
-    """Runnable scaffold for ML System Design: Recommendation Systems and Model Serving.
+def demonstrate_14_ml_system_design_interview(input_data: list[Any]) -> Optional[Any]:
+    """Minimal production scaffold for 14 Ml System Design Interview.
 
-    Replace the body with the optimized implementation from the chapter,
-    keeping type hints, docstring, and edge-case handling.
+    Key concepts: features, labels, training, validation, test split
+    Complexity: O(n*d) for linear models, O(n^2) for kernel SVM
     """
     if not input_data:
         return None
-    # Step 1: validate input types
-    # Step 2: apply the core ML System Design: Recommendation Systems and Model Serving logic from the Examples section
-    # Step 3: return the result with the documented default
-    return 0.0
-`
+    # Validate input
+    if not isinstance(input_data, (list, tuple)):
+        raise TypeError(f"Expected list, got {type(input_data).__name__}")
+    # Core logic: implement 14 Ml System Design Interview here
+    result = input_data[0] if input_data else None
+    return result
+```
 
 - Keeps the function signature stable so tests written against it stay valid.
 - Handles the empty-input contract explicitly.

@@ -1486,7 +1486,7 @@ class BPlusTree {
 
 ### Q1: Why are B-trees used for disk-based storage instead of BSTs or AVL trees?
 
-**Answer:** Disk I/O is ~10,000x slower than RAM access (10ms for a disk seek vs 1μs for RAM). In a BST with 1 billion keys, each lookup requires ~30 node traversals. Each traversal is a random disk read → 300ms per query. A B-tree of order 1000 packs 999 keys per node, so height ≤ 3 → only 3 random disk reads → 30ms per query. Additionally, B-tree node size is intentionally matched to disk blocks (usually 4KB-16KB), so each read brings in an entire node in one I/O operation.
+**Answer:** Disk I/O is ~10,000x slower than RAM access (10ms for a disk seek vs 1μs for RAM). In a BST with 1 billion keys, each lookup requires ~30 node traversals. Each traversal is a random disk read → 300ms per query. A B-tree of order 1000 packs 999 keys per node, so height ≤ 3 → only 3 random disk reads → 30ms per query. B-tree node size is intentionally matched to disk blocks (usually 4KB-16KB), so each read brings in an entire node in one I/O operation.
 
 ### Q2: B+ tree vs B-tree for range queries — explain the difference.
 

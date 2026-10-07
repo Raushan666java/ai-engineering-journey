@@ -1,3 +1,4 @@
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Binary Trees
 
@@ -23,9 +24,6 @@ Heaps (priority queues) are specialized trees that efficiently provide the minim
 
 ## Key Terminology
 
-**Key Terms**: Core vocabulary and concepts for this topic.
-
-**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
@@ -548,8 +546,8 @@ a) Queue  b) Stack  c) Deque  d) Priority Queue
 ## Fill in the Blank
 
 1. The chapter that covers Binary Trees is Chapter ___ of this module. — Answer: check the module's table of contents.
-2. The time complexity of the standard approach to Binary Trees is ___. — Answer: review the theory section and state big-O notation.
-3. The main edge case to handle when implementing Binary Trees is ___. — Answer: empty or invalid input handling, as discussed in the chapter.
+2. The time complexity of the standard approach to 09 Binary Trees is ___. — Answer: O(n) traversal, O(log n) BST search
+3. The main edge case to handle when implementing 09 Binary Trees is ___. — Answer: empty tree, single node, unbalanced tree
 4. The tools commonly used to debug Binary Trees issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
 5. The related topic that connects to Binary Trees in the next chapter is ___. — Answer: see the Next Topic section.
 

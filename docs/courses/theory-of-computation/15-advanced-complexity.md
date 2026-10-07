@@ -930,4 +930,4 @@ class QBF {
 // QBF Level 2: exists(x) forall(y) (x OR NOT y) - harder (Sigma_2)
 // QBF with alternating quantifiers belongs to higher levels of PH
 ```
-
+```

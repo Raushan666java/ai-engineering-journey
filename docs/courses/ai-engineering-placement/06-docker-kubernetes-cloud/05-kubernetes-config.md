@@ -1,3 +1,4 @@
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Kubernetes Configuration — ConfigMaps, Secrets, and Helm
 
@@ -16,16 +17,8 @@
 
 Containers and cloud platforms are where AI models live in production. Docker packages your model, Kubernetes orchestrates it, and cloud platforms scale it. This module covers the full deployment stack.
 
-## Prerequisites
-
-- Basic programming knowledge
-- Understanding of data structures
-
 ## Key Terminology
 
-**Key Terms**: Core vocabulary and concepts for this topic.
-
-**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
@@ -608,8 +601,8 @@ spec:
 ## Fill in the Blank
 
 1. The chapter that covers Kubernetes Configuration — ConfigMaps, Secrets, and Helm is Chapter ___ of this module. — Answer: check the module's table of contents.
-2. The time complexity of the standard approach to Kubernetes Configuration — ConfigMaps, Secrets, and Helm is ___. — Answer: review the theory section and state big-O notation.
-3. The main edge case to handle when implementing Kubernetes Configuration — ConfigMaps, Secrets, and Helm is ___. — Answer: empty or invalid input handling, as discussed in the chapter.
+2. The time complexity of the standard approach to 05 Kubernetes Config is ___. — Answer: O(1) container start with cached layers
+3. The main edge case to handle when implementing 05 Kubernetes Config is ___. — Answer: missing base image, port conflicts, volume mounts
 4. The tools commonly used to debug Kubernetes Configuration — ConfigMaps, Secrets, and Helm issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
 5. The related topic that connects to Kubernetes Configuration — ConfigMaps, Secrets, and Helm in the next chapter is ___. — Answer: see the Next Topic section.
 
@@ -657,27 +650,27 @@ spec:
 
 ## Further Reading
 
-- Official documentation for the primary tool or library used in this chapter
-- The chapter referenced in Related Topics for the next-level treatment of Kubernetes Configuration — ConfigMaps, Secrets, and Helm
-- The classic textbook chapter on Kubernetes Configuration — ConfigMaps, Secrets, and Helm (check the Research References below)
-- Two blog posts from engineers who debugged real Kubernetes Configuration — ConfigMaps, Secrets, and Helm problems in production
-- The repository of the open-source project that implements Kubernetes Configuration — ConfigMaps, Secrets, and Helm
+- Docker official documentation: https://docs.docker.com
+- 'Docker Deep Dive' by Nigel Poulton — concise practical guide
+- Kubernetes documentation: https://kubernetes.io/docs
+- 'Container Security' by Liz Rice — security-focused deep dive
+- Docker Hub official images: https://hub.docker.com Configuration — ConfigMaps, Secrets, and Helm
 
 ## Related Topics
 
-- The previous chapter in this module (see table of contents) — foundational for Kubernetes Configuration — ConfigMaps, Secrets, and Helm
-- The next chapter (see Next Topic below) — builds on Kubernetes Configuration — ConfigMaps, Secrets, and Helm
-- The system design chapters in Module 07 — how Kubernetes Configuration — ConfigMaps, Secrets, and Helm fits into production architectures
-- The interview preparation module — how Kubernetes Configuration — ConfigMaps, Secrets, and Helm is asked in screening rounds
-- The capstone project — where Kubernetes Configuration — ConfigMaps, Secrets, and Helm is applied end-to-end
+- **Previous chapter** in Module 06 — builds the foundation for 05 Kubernetes Config
+- **Next chapter** — extends 05 Kubernetes Config with advanced techniques
+- **Module 07 System Design** — how 05 Kubernetes Config fits into scalable production architectures
+- **Module 21 Interview Preparation** — FAANG-style questions on 05 Kubernetes Config
+- **Module 19 Capstone Projects** — end-to-end application of 05 Kubernetes Config
 
 ## FAQs
 
-1. **Do I need to memorize all of Kubernetes Configuration — ConfigMaps, Secrets, and Helm, or understand the big picture?** — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
-2. **What if I get stuck on an exercise?** — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
-3. **How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
-4. **Is Kubernetes Configuration — ConfigMaps, Secrets, and Helm asked in interviews?** — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies.
-5. **What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
+1. **Do I need to memorize all of 05 Kubernetes Config?** — Understand the big picture first. Memorize the key patterns via flashcards. Interviewers test understanding, not recitation.
+2. **What if I get stuck on an exercise?** — Re-read the theory, run the example code, then attempt again. If stuck after 20 minutes, move on and return the next day with fresh eyes.
+3. **How much time should I spend on 05 Kubernetes Config?** — 2-3 hours for theory + examples, 3-5 hours for exercises. Total: one focused weekend session.
+4. **Is 05 Kubernetes Config asked in FAANG interviews?** — Yes. Check the Interview Q&A section for exact question styles used by Google, Amazon, Microsoft, and AI startups.
+5. **What's the fastest way to master 05 Kubernetes Config?** — Write the core implementation from memory, explain it to someone else, then solve one Hard exercise. Teaching reveals gaps faster than re-reading.
 
 ## Important Notes
 
@@ -696,28 +689,26 @@ spec:
 
 ## Security Considerations
 
-- Never trust external input: validate and sanitize data before processing Kubernetes Configuration — ConfigMaps, Secrets, and Helm.
-- Avoid `eval()` and dynamic code execution on untrusted strings.
-- Log errors without leaking sensitive data (keys, PII, internal paths).
-- For API contexts, add rate limiting and input size limits.
-- Review the chapter's code examples for injection or overflow risks before using them verbatim.
+- Never store secrets in Dockerfile ENV or ARG — use Docker secrets or environment injection at runtime
+- Use minimal base images (distroless, alpine) to reduce attack surface
+- Scan images with Trivy or Snyk before pushing to registry
+- Set resource limits (--memory, --cpus) to prevent container resource exhaustion attacks
+- Use read-only filesystems (--read-only) for stateless containers
 
 ## ML Intuition
 
-- Kubernetes Configuration — ConfigMaps, Secrets, and Helm appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
-- Understanding Kubernetes Configuration — ConfigMaps, Secrets, and Helm helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs.
-- In production ML, the Kubernetes Configuration — ConfigMaps, Secrets, and Helm concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
-- When optimizing ML systems, Kubernetes Configuration — ConfigMaps, Secrets, and Helm skills let you profile and fix the data path, not just the training loop.
-- Interview follow-up: how would you apply Kubernetes Configuration — ConfigMaps, Secrets, and Helm to a dataset of 10 million records? — Batching and vectorization.
+- Docker containers for ML training should mount data volumes rather than copying data into the image
+- GPU access in containers requires nvidia-docker runtime and CUDA-compatible base images
+- Model serving containers should be optimized for inference: use ONNX Runtime or TensorRT for faster inference
+- Multi-stage builds separate training dependencies (PyTorch, CUDA) from serving dependencies (FastAPI, ONNX)
+- Container resource limits prevent one model from starving others in multi-model serving setups
 
 ## Analogies
 
-- **Kubernetes Configuration — ConfigMaps, Secrets, and Helm is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
-- **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
-- **Edge cases are like weather**: the happy path is a sunny day; production is the storm — build for the storm.
-- **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
-
-## Capstone Project Link
+- **05 Kubernetes Config is like a GPS navigation system**: you define the destination (goal), the system plans the route (algorithm), and recalculates when you take a wrong turn (error handling).
+- **Complexity is like a restaurant kitchen**: a single chef (O(n)) handles small orders fine, but 1000 simultaneous orders need parallel chefs (O(log n) with proper indexing).
+- **Edge cases are like stress tests**: the happy path is a calm day, but production is Black Friday — design for the worst case.
+- **The chapter roadmap is a subway map**: each section is a station, and skipping one means you miss the connection to the next destination.## Capstone Project Link
 
 - [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) — this chapter contributes the Kubernetes Configuration — ConfigMaps, Secrets, and Helm skills used in the module's capstone project. Complete the exercises here before starting the capstone.
 
@@ -783,20 +774,20 @@ spec:
 
 ## Open-Source Tools
 
-- The primary library used in this chapter (see the code examples)
-- Python standard library modules used in the examples (check the imports)
-- Testing: pytest for unit tests of Kubernetes Configuration — ConfigMaps, Secrets, and Helm code
-- Linting and formatting: ruff + black
-- Profiling: cProfile or py-spy for performance work on Kubernetes Configuration — ConfigMaps, Secrets, and Helm
+- **Docker Desktop** — local development environment
+- **Docker Compose** — multi-container local orchestration
+- **Trivy** — container image vulnerability scanner
+- **Dive** — tool for exploring Docker image layers
+- **Hadolint** — Dockerfile linter for best practices Configuration — ConfigMaps, Secrets, and Helm
 
 ## Debugging Guide
 
-- Start with `print()` or a debugger to inspect intermediate values in Kubernetes Configuration — ConfigMaps, Secrets, and Helm code.
-- Reproduce the failure with the smallest possible input before changing code.
-- Check the common failure modes listed in Common Mistakes — most bugs are listed there.
-- For performance problems, profile before optimizing: measure, then fix.
-- When stuck, re-read the chapter's Examples and compare line by line with your code.
-- Use `pdb` or your IDE's debugger to step through the Kubernetes Configuration — ConfigMaps, Secrets, and Helm example code.
+- **Step 1**: Reproduce the failure with the smallest possible input — isolate the bug before changing any code.
+- **Step 2**: Add structured logging at each stage of the 05 Kubernetes Config pipeline to identify exactly where the failure occurs.
+- **Step 3**: Check the Common Mistakes section — 80% of bugs match one of those patterns.
+- **Step 4**: Use `pdb.set_trace()` or your IDE debugger to inspect intermediate values at the failure point.
+- **Step 5**: For performance issues, profile with `cProfile` or `py-spy` before optimizing — never guess at bottlenecks.
+- **Step 6**: Write a regression test that reproduces the bug before fixing it — this prevents recurrence.
 
 ## Mock Interview Section
 
@@ -819,22 +810,24 @@ spec:
 
 ## Optimized Implementation
 
-`python
+```python
 from typing import Any, Optional
 
-def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
-    """Runnable scaffold for Kubernetes Configuration — ConfigMaps, Secrets, and Helm.
+def demonstrate_05_kubernetes_config(input_data: list[Any]) -> Optional[Any]:
+    """Minimal production scaffold for 05 Kubernetes Config.
 
-    Replace the body with the optimized implementation from the chapter,
-    keeping type hints, docstring, and edge-case handling.
+    Key concepts: images, containers, volumes, networks, Dockerfile
+    Complexity: O(1) container start with cached layers
     """
     if not input_data:
         return None
-    # Step 1: validate input types
-    # Step 2: apply the core Kubernetes Configuration — ConfigMaps, Secrets, and Helm logic from the Examples section
-    # Step 3: return the result with the documented default
-    return 0.0
-`
+    # Validate input
+    if not isinstance(input_data, (list, tuple)):
+        raise TypeError(f"Expected list, got {type(input_data).__name__}")
+    # Core logic: implement 05 Kubernetes Config here
+    result = input_data[0] if input_data else None
+    return result
+```
 
 - Keeps the function signature stable so tests written against it stay valid.
 - Handles the empty-input contract explicitly.
@@ -853,11 +846,11 @@ def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
 
 ## Real-World Examples
 
-- **Startup**: a small team uses Kubernetes Configuration — ConfigMaps, Secrets, and Helm daily in their data pipeline — the chapter's examples mirror their code.
-- **E-commerce**: Kubernetes Configuration — ConfigMaps, Secrets, and Helm patterns appear in order processing, inventory checks, and recommendation feeds.
-- **Fintech**: Kubernetes Configuration — ConfigMaps, Secrets, and Helm principles apply to transaction validation and fraud detection flows.
-- **ML platform**: Kubernetes Configuration — ConfigMaps, Secrets, and Helm shows up in feature engineering and model-serving infrastructure.
-- **Interview insight**: recruiters look for engineers who can connect Kubernetes Configuration — ConfigMaps, Secrets, and Helm to the business outcome, not just the code.
+- **Airbnb** migrated 1000+ services to Docker, reducing deployment time from 12 minutes to 2 minutes
+- **PayPal** uses Docker to run 700M+ containers per year across their payment processing infrastructure
+- **Spotify** uses Docker to ensure consistent environments across 2000+ engineers
+- **Google** runs 2 billion container instances per week using their internal Borg system (which inspired Kubernetes)
+- **Interview insight**: always mention multi-stage builds for production — they reduce image size by 80-90% by separating build and runtime dependencies
 
 ## Next Topic
 

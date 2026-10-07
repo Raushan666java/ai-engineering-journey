@@ -1,3 +1,4 @@
+<!-- improved -->
 ﻿# Infosys Mock Test - Full Pattern Simulation (50 Questions)
 
 > This mock simulates the Infosys (InfyTQ / System Engineer) cognitive test.

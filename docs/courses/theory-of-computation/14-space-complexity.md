@@ -881,4 +881,4 @@ function generateTransitions(state: string, symbol: string): any[] {
   return [{ write: symbol, move: "R", nextState: state }];
 }
 ```
-
+```

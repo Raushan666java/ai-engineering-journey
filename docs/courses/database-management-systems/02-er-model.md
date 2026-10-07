@@ -2816,3 +2816,4 @@ LEFT JOIN project p ON ep.project_id = p.project_id;
 | Generalization | Triangle with ISA label | Strategy A/B/C (see section 2.7) | Triangle from superclass to subclasses |
 | Aggregation | Dashed rectangle around rel | Decompose into entity + FK | Dashed box around relationship diamond |
 ```
+```

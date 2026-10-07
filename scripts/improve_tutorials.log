@@ -1,0 +1,1623 @@
+{
+  "timestamp": "2026-10-06T17:02:58.280398",
+  "mode": "anthropic",
+  "stats": {
+    "done": 0,
+    "skipped": 0,
+    "errors": 0,
+    "total": 322
+  },
+  "elapsed_seconds": 0.3,
+  "results": [
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\00-core-computer-science\\03-database-internals.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\00-core-computer-science\\02-operating-systems.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\00-core-computer-science\\05-oop-design-patterns.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\00-core-computer-science\\01-computer-networks.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\00-core-computer-science\\04-computer-architecture.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\00-core-computer-science\\06-ethical-hacking.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\01-python-programming\\01-python-basics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\01-python-programming\\05-functions.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\01-python-programming\\03-strings-and-formatting.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\01-python-programming\\02-control-flow.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\01-python-programming\\07-file-io-and-exceptions.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\01-python-programming\\04-collections.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\01-python-programming\\08-oop-in-python.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\01-python-programming\\06-modules-and-packages.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\01-python-programming\\09-decorators-and-generators.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\01-python-programming\\10-concurrency.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\01-python-programming\\11-numpy-fundamentals.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\01-python-programming\\12-pandas-basics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\01-python-programming\\14-data-visualization.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\01-python-programming\\13-pandas-advanced.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\02-sql-and-databases\\02-aggregate-functions.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\02-sql-and-databases\\01-sql-basics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\02-sql-and-databases\\03-joins.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\02-sql-and-databases\\05-window-functions.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\02-sql-and-databases\\06-set-operations.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\02-sql-and-databases\\04-subqueries-and-ctes.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\02-sql-and-databases\\07-indexes-and-performance.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\02-sql-and-databases\\08-database-design.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\02-sql-and-databases\\09-transactions-and-acid.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\02-arrays.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\02-sql-and-databases\\10-postgresql-advanced.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\01-time-and-space-complexity.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\03-strings.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\04-sliding-window.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\06-hash-maps-and-sets.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\05-two-pointers.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\08-stacks-and-queues.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\07-linked-lists.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\12-graphs-bfs-dfs.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\11-heaps-and-tries.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\09-binary-trees.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\13-graphs-shortest-path.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\10-binary-search-trees.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\14-graphs-topological-sort.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\15-dynamic-programming-1d.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\17-backtracking.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\16-dynamic-programming-2d.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\03-data-structures-algorithms\\18-bit-manipulation-and-math.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\04-git-linux-cli\\01-git-basics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\04-git-linux-cli\\02-git-branching.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\04-git-linux-cli\\03-git-workflow.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\04-git-linux-cli\\07-ssh-and-remote-access.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\04-git-linux-cli\\04-linux-commands.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\04-git-linux-cli\\05-bash-scripting.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\04-git-linux-cli\\06-networking-and-security.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\04-git-linux-cli\\08-process-management.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\04-git-linux-cli\\09-cron-automation.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\05-fastapi-backend\\01-rest-api-fundamentals.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\05-fastapi-backend\\03-pydantic-and-validation.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\05-fastapi-backend\\02-fastapi-basics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\05-fastapi-backend\\07-async-patterns.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\05-fastapi-backend\\05-authentication-and-authz.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\05-fastapi-backend\\04-dependency-injection.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\05-fastapi-backend\\06-database-with-sqlalchemy.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\05-fastapi-backend\\08-testing-fastapi.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\06-docker-kubernetes-cloud\\01-docker-basics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\05-fastapi-backend\\10-api-deployment.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\05-fastapi-backend\\09-error-handling-and-logging.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\06-docker-kubernetes-cloud\\02-docker-compose.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\06-docker-kubernetes-cloud\\03-docker-best-practices.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\06-docker-kubernetes-cloud\\04-kubernetes-basics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\06-docker-kubernetes-cloud\\05-kubernetes-config.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\06-docker-kubernetes-cloud\\07-aws-fundamentals.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\06-docker-kubernetes-cloud\\06-kubernetes-scaling.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\06-docker-kubernetes-cloud\\08-aws-containers.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\06-docker-kubernetes-cloud\\10-ci-cd-pipelines.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\06-docker-kubernetes-cloud\\09-azure-and-gcp-basics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\06-docker-kubernetes-cloud\\12-azure-ai-services.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\06-docker-kubernetes-cloud\\11-serverless-lambda.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\06-docker-kubernetes-cloud\\13-gcp-vertex-ai.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\07-system-design\\02-microservices-architecture.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\07-system-design\\01-scalability-fundamentals.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\07-system-design\\03-message-queues.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\07-system-design\\04-caching-strategies.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\07-system-design\\07-api-design-patterns.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\07-system-design\\05-database-scaling.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\07-system-design\\06-cap-and-consistency.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\07-system-design\\09-monitoring-and-observability.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\07-system-design\\08-rate-limiting-and-idempotency.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\07-system-design\\11-design-chatgpt.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\07-system-design\\10-design-url-shortener.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\07-system-design\\12-design-whatsapp.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\08-machine-learning\\01-ml-fundamentals.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\07-system-design\\14-design-file-upload-system.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\07-system-design\\13-design-notification-system.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\08-machine-learning\\02-linear-regression.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\08-machine-learning\\03-logistic-regression.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\08-machine-learning\\04-decision-trees-and-rf.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\08-machine-learning\\05-svm-and-kernel-methods.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\08-machine-learning\\06-ensemble-methods.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\08-machine-learning\\09-model-evaluation.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\08-machine-learning\\07-unsupervised-learning.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\08-machine-learning\\10-hyperparameter-tuning.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\08-machine-learning\\08-dimensionality-reduction.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\08-machine-learning\\11-naive-bayes.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\09-deep-learning-pytorch\\02-pytorch-tensors.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\09-deep-learning-pytorch\\03-pytorch-nn-module.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\08-machine-learning\\12-feature-engineering.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\09-deep-learning-pytorch\\01-neural-networks-basics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\09-deep-learning-pytorch\\04-cnn-fundamentals.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\09-deep-learning-pytorch\\05-advanced-cnn.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\09-deep-learning-pytorch\\06-transfer-learning.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\09-deep-learning-pytorch\\09-model-deployment.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\09-deep-learning-pytorch\\07-rnn-and-lstm.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\09-deep-learning-pytorch\\08-training-pipelines.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\09-deep-learning-pytorch\\10-deployment-best-practices.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\10-nlp-transformers\\01-text-preprocessing.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\10-nlp-transformers\\03-sequence-models.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\10-nlp-transformers\\04-attention-mechanism.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\10-nlp-transformers\\02-word-embeddings.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\10-nlp-transformers\\05-transformer-architecture.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\10-nlp-transformers\\08-nlp-applications.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\10-nlp-transformers\\06-bert-and-fine-tuning.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\11-llms-prompt-engineering\\01-foundation-models-overview.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\10-nlp-transformers\\07-hugging-face-ecosystem.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\11-llms-prompt-engineering\\02-llm-apis.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\11-llms-prompt-engineering\\03-zero-shot-and-few-shot.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\11-llms-prompt-engineering\\05-structured-output.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\11-llms-prompt-engineering\\04-chain-of-thought.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\11-llms-prompt-engineering\\06-context-management.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\11-llms-prompt-engineering\\07-llm-evaluation.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\03-vector-database-basics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\01-introduction-to-rag.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\11-llms-prompt-engineering\\08-cost-and-latency-optimization.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\02-embedding-models.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\05-document-retrieval.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\06-rag-pipeline-design.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\04-chunking-strategies.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\08-rag-evaluation.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\07-advanced-rag-techniques.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\11-query-rewriting-decomposition.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\09-production-rag-systems.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\13-knowledge-graph-rag.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\10-hybrid-search-and-reranking.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\12-parent-child-multi-vector.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\13-ai-agents-langgraph\\02-agent-architectures.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\15-context-compression.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\13-ai-agents-langgraph\\01-introduction-to-ai-agents.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\14-graphrag.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\12-rag-vector-databases\\16-hybrid-search-architecture.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\13-ai-agents-langgraph\\03-langgraph-basics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\13-ai-agents-langgraph\\04-tool-use-and-function-calling.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\13-ai-agents-langgraph\\05-memory-and-state.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\13-ai-agents-langgraph\\07-human-in-the-loop.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\13-ai-agents-langgraph\\06-multi-agent-systems.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\13-ai-agents-langgraph\\09-production-agents.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\13-ai-agents-langgraph\\10-advanced-agent-patterns.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\14-fine-tuning-peft\\02-full-fine-tuning.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\13-ai-agents-langgraph\\08-agent-observability.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\14-fine-tuning-peft\\01-when-to-fine-tune.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\14-fine-tuning-peft\\03-lora-theory.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\14-fine-tuning-peft\\05-qlora-and-quantization.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\14-fine-tuning-peft\\06-instruction-tuning.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\14-fine-tuning-peft\\04-lora-implementation.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\14-fine-tuning-peft\\07-dpo-and-preference-tuning.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\14-fine-tuning-peft\\08-evaluating-fine-tuned-models.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\15-ai-evaluation-observability\\01-evaluation-metrics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\15-ai-evaluation-observability\\02-llm-as-judge.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\15-ai-evaluation-observability\\04-observability-tools.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\15-ai-evaluation-observability\\03-evaluation-datasets.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\15-ai-evaluation-observability\\05-tracing-and-monitoring.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\16-mlops-production\\02-prompt-versioning.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\16-mlops-production\\01-experiment-tracking.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\15-ai-evaluation-observability\\06-alerting-and-incident-response.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\16-mlops-production\\03-data-versioning.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\16-mlops-production\\04-ci-cd-for-ai.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\16-mlops-production\\07-cost-management.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\17-ai-security-guardrails\\01-threat-landscape.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\16-mlops-production\\05-model-serving.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\16-mlops-production\\06-drift-monitoring.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\17-ai-security-guardrails\\02-prompt-injection-defense.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\17-ai-security-guardrails\\06-compliance-and-ethics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\17-ai-security-guardrails\\07-jailbreaks-red-teaming.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\17-ai-security-guardrails\\08-data-leakage-pii.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\17-ai-security-guardrails\\09-toxicity-content-moderation.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\17-ai-security-guardrails\\10-alignment-constitutional-ai.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\18-multimodal-ai-voice\\01-computer-vision-basics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\18-multimodal-ai-voice\\02-object-detection.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\16-mlops-production\\08-incident-response.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\17-ai-security-guardrails\\03-content-filtering.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\17-ai-security-guardrails\\04-guardrails-frameworks.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\18-multimodal-ai-voice\\04-ocr-and-document-ai.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\17-ai-security-guardrails\\05-secret-and-key-management.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\18-multimodal-ai-voice\\03-image-segmentation.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\18-multimodal-ai-voice\\05-speech-to-text.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\19-capstone-projects\\02-resume-ats-analyzer.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\19-capstone-projects\\01-house-price-prediction-api.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\18-multimodal-ai-voice\\06-voice-agents.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\19-capstone-projects\\03-enterprise-rag-platform.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\19-capstone-projects\\04-multi-agent-support-system.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\19-capstone-projects\\05-full-ai-saas-platform.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\20-portfolio-branding\\03-technical-blogging.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\20-portfolio-branding\\02-repository-structure.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\20-portfolio-branding\\01-github-profile-optimization.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\20-portfolio-branding\\06-portfolio-website.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\02-sql-problem-bank.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\01-dsa-patterns-mastery.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\20-portfolio-branding\\05-open-source-contribution.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\20-portfolio-branding\\04-linkedin-optimization.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\07-ai-agents-interview.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\05-deep-learning-interview.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\08-system-design-interview.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\04-ml-foundations-interview.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\06-llm-and-rag-interview.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\03-backend-coding-interview.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\11-salary-negotiation.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\09-behavioral-star-interview.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\13-math-and-probability-interview.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\12-mock-interview-simulations.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\10-resume-and-portfolio-review.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\16-dsa-problem-bank.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\14-ml-system-design-interview.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\15-faang-company-deep-dives.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\02-context-engineering.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\03-user-memory-knowledge-bases.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\17-ood-design.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\18-debugging-code-review.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\01-agent-fundamentals-harness.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\21-interview-preparation\\19-ai-assisted-coding.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\04-mcp-protocol-tools.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\05-coding-agents.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\07-model-post-training.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\08-agent-self-evolution.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\06-agent-evaluation.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\10-advanced-multi-agent-collaboration.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\12-autogen-agentic-chat.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\14-google-adk.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\11-crewai-multi-agent.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\13-openai-agents-sdk.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\09-multimodal-real-time-agents.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\23-trending-aiml-platforms\\01-frontier-llm-apis-providers.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\22-advanced-ai-agents\\15-a2a-protocol.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\23-trending-aiml-platforms\\02-agent-platforms-harness-orchestration.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\23-trending-aiml-platforms\\03-ai-developer-toolkits-workflows.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\23-trending-aiml-platforms\\04-model-ecosystem-deployment-hub.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\23-trending-aiml-platforms\\06-model-selection-evaluation.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\23-trending-aiml-platforms\\05-open-source-llm-landscape.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\23-trending-aiml-platforms\\07-fine-tuning-platforms.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\23-trending-aiml-platforms\\08-deployment-stack-comparison.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\24-statistics-mathematics\\02-probability-basics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\24-statistics-mathematics\\01-descriptive-statistics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\24-statistics-mathematics\\05-linear-algebra-essentials.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\24-statistics-mathematics\\03-hypothesis-testing.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\24-statistics-mathematics\\06-calculus-for-ml.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\24-statistics-mathematics\\04-correlation-regression-analysis.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\24-statistics-mathematics\\08-statistics-for-ml-practical.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\24-statistics-mathematics\\07-ab-testing-experimental-design.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\25-data-engineering\\01-etl-pipelines.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\25-data-engineering\\02-data-lakehouse-warehouse.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\25-data-engineering\\04-streaming-real-time.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\25-data-engineering\\05-feature-stores.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\26-ai-product-thinking\\01-ai-product-strategy.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\25-data-engineering\\03-apache-spark-basics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\26-ai-product-thinking\\02-ux-for-ai.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\27-ai-infrastructure\\02-cuda-programming.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\27-ai-infrastructure\\03-model-compilation.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\27-ai-infrastructure\\04-inference-serving.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\27-ai-infrastructure\\05-distributed-inference.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\27-ai-infrastructure\\06-model-pruning.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\27-ai-infrastructure\\07-knowledge-distillation.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\27-ai-infrastructure\\08-attention-kv-cache.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\27-ai-infrastructure\\09-speculative-decoding.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\28-certifications\\01-microsoft-azure-ai.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\28-certifications\\02-aws-ai-certifications.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\28-certifications\\03-google-cloud-ai.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\29-research-reading\\01-reading-research-papers.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\29-research-reading\\02-keeping-up-with-ai.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\29-research-reading\\03-major-ai-conferences.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\29-research-reading\\04-reproducing-papers.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\30-business-skills\\01-technical-communication.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\30-business-skills\\02-presentation-skills.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\30-business-skills\\03-estimation-planning.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\30-business-skills\\04-agile-scrum-for-ai.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\31-mobile-ai\\01-onnx-runtime-mobile.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\31-mobile-ai\\02-tflite-coreml.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\31-mobile-ai\\03-edge-ai-frameworks.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\31-mobile-ai\\04-edge-deployment-patterns.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\32-competitive-programming\\01-cp-strategy.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\32-competitive-programming\\02-advanced-algorithms.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\32-competitive-programming\\03-contest-simulation.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\01-quantitative-aptitude.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\26-ai-product-thinking\\05-ai-roadmaps.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\26-ai-product-thinking\\04-ai-product-metrics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\03-verbal-ability.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\04-company-test-patterns.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\05-group-discussion.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\06-hr-interview-questions.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\07-company-format-mock-tests.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\09-challenge-economics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\10-aptitude-master-plan.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\11-quantitative-all-topics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\08-pyq-bank.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\27-ai-infrastructure\\01-gpu-architecture.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\12-logical-all-types.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\14-speed-tricks-cheatsheet.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\13-verbal-all-sections.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\26-ai-product-thinking\\03-experiment-design-metrics.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\15-quant-question-bank.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\16-logical-question-bank.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\18-mock-any-company-1.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\17-verbal-question-bank.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\21-mock-tcs-nqt.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\19-mock-any-company-2.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\22-mock-infosys.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\20-mock-any-company-3.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\24-mock-capgemini.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\25-mock-wipro.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\26-mock-accenture.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\27-mock-zoho.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\28-mock-deloitte.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\23-mock-cognizant.md",
+      "status": "dry",
+      "error": null
+    },
+    {
+      "file": "docs\\courses\\ai-engineering-placement\\33-campus-placement\\02-logical-reasoning.md",
+      "status": "dry",
+      "error": null
+    }
+  ]
+}

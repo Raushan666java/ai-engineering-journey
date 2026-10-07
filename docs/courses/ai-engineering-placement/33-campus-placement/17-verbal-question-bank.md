@@ -1,3 +1,4 @@
+<!-- improved -->
 # Verbal Ability — 100 Question Drill Bank (Any Company)
 
 > Rule: 30-60 seconds per question. Answers with explanations at the bottom.

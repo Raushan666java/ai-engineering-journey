@@ -1,3 +1,4 @@
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Company Test Patterns (TCS, Infosys, Wipro, Capgemini, Accenture, Cognizant)
 

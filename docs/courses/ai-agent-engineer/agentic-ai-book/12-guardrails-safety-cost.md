@@ -25,7 +25,7 @@ def safe_execute(tool_name, raw_input):
             validated = schema(**raw_input)
         except ValidationError as e:
             return {"error": f"Invalid input: {e}"}
-        return execute_tool(tool_name, validated.dict())
+        return execute_tool(tool_name, validated.model_dump())
     return {"error": f"Unknown tool: {tool_name}"}
 ```
 

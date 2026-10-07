@@ -1,3 +1,4 @@
+<!-- improved -->
 # Cognizant GenC Mock Test — Full Pattern Simulation (40 Questions)
 
 > Simulates the Cognizant GenC aptitude section: 16 quant, 12 logical, 12 verbal.

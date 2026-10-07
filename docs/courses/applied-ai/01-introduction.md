@@ -1030,7 +1030,7 @@ FUNCTION audit_model_for_bias(model, test_data, sensitive_attributes, metric):
 
 **Q3: How do you detect and handle data drift in production?**
 
-*Answer:* Track feature distributions using Population Stability Index (PSI) or Jensen-Shannon Divergence. Compute PSI between a reference window (training data) and current sliding window (last 7 days of production data). If PSI > 0.10, trigger a retraining pipeline. Additionally, monitor prediction confidence and error rates.
+*Answer:* Track feature distributions using Population Stability Index (PSI) or Jensen-Shannon Divergence. Compute PSI between a reference window (training data) and current sliding window (last 7 days of production data). If PSI > 0.10, trigger a retraining pipeline. monitor prediction confidence and error rates.
 
 **Q4: Describe a situation where a model with 99% accuracy is useless.**
 

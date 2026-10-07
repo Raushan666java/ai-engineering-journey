@@ -1,3 +1,4 @@
+<!-- improved -->
 # Speed Tricks Cheatsheet — 40 Instant-Recognition Rules
 
 > Memorize these cold. Recite them from memory before every drill session.

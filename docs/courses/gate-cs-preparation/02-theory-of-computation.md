@@ -2940,7 +2940,7 @@ To prove B is undecidable, reduce A (known undecidable) to B (A ≤ₘ B). If B 
 **Answer: (D)**
 
 **Solution:**
-"L(M) is regular" is a non-trivial property of the language of a TM. By Rice's theorem, it is undecidable. Furthermore, it is neither RE nor co-RE. Why? Regularity is a Σ₂âÂÂ�°-complete property in the arithmetical hierarchy → we can never confirm that a TM accepts exactly a regular language (would need to rule out all non-regular strings). It is strictly harder than the halting problem.
+"L(M) is regular" is a non-trivial property of the language of a TM. By Rice's theorem, it is undecidable. it is neither RE nor co-RE. Why? Regularity is a Σ₂âÂÂ�°-complete property in the arithmetical hierarchy → we can never confirm that a TM accepts exactly a regular language (would need to rule out all non-regular strings). It is strictly harder than the halting problem.
 
 ---
 

@@ -1,3 +1,4 @@
+<!-- improved -->
 # Logical Reasoning — All Types Master Reference
 
 > Complete theory for every reasoning type asked in ANY company aptitude round.

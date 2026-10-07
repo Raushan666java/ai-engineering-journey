@@ -1021,7 +1021,7 @@ console.log('SOM:', marketSize.som);
 | Bringing focus back | "That's an interesting tangent, but coming back to the core issue..." |
 | Summarizing | "Before we move on, let me summarize what we've discussed so far..." |
 | Including others | "I notice [Name] hasn't spoken yet. I'd love to hear their thoughts." |
-| Concluding | "In conclusion, the consensus seems to be that..." |
+| Concluding | "the consensus seems to be that..." |
 
 ### Time Management in GD
 

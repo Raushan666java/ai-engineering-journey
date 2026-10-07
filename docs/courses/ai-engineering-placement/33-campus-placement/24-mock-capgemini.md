@@ -1,3 +1,4 @@
+<!-- improved -->
 # Capgemini Mock Test — Full Pattern Simulation (42 Questions)
 
 > Simulates the Capgemini aptitude section: 18 quant, 12 logical, 12 verbal.

@@ -2508,7 +2508,7 @@ When troubleshooting network layer issues, follow this systematic approach:
 ### Problem
 
 
-A mid-sized company with 500 employees is expanding from a single office to 12 regional offices. The company owns the 172.16.0.0/16 private network and needs an IP addressing plan that supports 12 subnets (one per office), each with at least 50 hosts. Additionally, the network engineering team must deal with ARP broadcast storms during network scans and plan for future growth.
+A mid-sized company with 500 employees is expanding from a single office to 12 regional offices. The company owns the 172.16.0.0/16 private network and needs an IP addressing plan that supports 12 subnets (one per office), each with at least 50 hosts. the network engineering team must deal with ARP broadcast storms during network scans and plan for future growth.
 
 ### Solution
 

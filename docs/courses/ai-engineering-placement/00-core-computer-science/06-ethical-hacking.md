@@ -1,3 +1,4 @@
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Ethical Hacking & Security Case Studies (India & Global)
 

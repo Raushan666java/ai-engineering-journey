@@ -354,7 +354,7 @@ Many cloud providers offer both options. AWS offers bare-metal EC2 instances (i3
 
 **CPU Overhead.** Hypervisors introduce minimal CPU overhead for compute-bound workloads, typically less than 5% with hardware-assisted virtualization. CPU-intensive applications such as scientific computing and video encoding experience negligible degradation.
 
-**Memory Overhead.** Hypervisors consume memory for their own operation and for management data structures. Additionally, each VM requires its own memory allocation with no sharing between VMs by default. Techniques such as memory overcommitment, transparent page sharing (VMware), and kernel same-page merging (KSM in KVM) reduce total memory requirements.
+**Memory Overhead.** Hypervisors consume memory for their own operation and for management data structures. each VM requires its own memory allocation with no sharing between VMs by default. Techniques such as memory overcommitment, transparent page sharing (VMware), and kernel same-page merging (KSM in KVM) reduce total memory requirements.
 
 **Storage Overhead.** Storage I/O in virtualized environments introduces overhead from the hypervisor's I/O stack. Paravirtualized drivers, SR-IOV (Single Root I/O Virtualization), and NVMe over Fabrics reduce this overhead. Storage performance also depends on the storage architecture: local SSD, SAN, or distributed storage.
 

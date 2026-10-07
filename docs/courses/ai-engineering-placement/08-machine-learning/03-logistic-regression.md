@@ -1,3 +1,4 @@
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass
 
@@ -14,16 +15,8 @@
 
 Machine learning is the core of AI engineering. From linear regression to ensemble methods, understanding these algorithms lets you build, debug, and improve models. This module covers the math and code behind ML.
 
-## Prerequisites
-
-- Basic programming knowledge
-- Understanding of data structures
-
 ## Key Terminology
 
-**Key Terms**: Core vocabulary and concepts for this topic.
-
-**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
@@ -535,8 +528,8 @@ d) Precision
 ## Fill in the Blank
 
 1. The chapter that covers Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass is Chapter ___ of this module. — Answer: check the module's table of contents.
-2. The time complexity of the standard approach to Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass is ___. — Answer: review the theory section and state big-O notation.
-3. The main edge case to handle when implementing Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass is ___. — Answer: empty or invalid input handling, as discussed in the chapter.
+2. The time complexity of the standard approach to 03 Logistic Regression is ___. — Answer: O(n) typical, O(1) best case
+3. The main edge case to handle when implementing 03 Logistic Regression is ___. — Answer: empty input, boundary values, invalid types
 4. The tools commonly used to debug Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
 5. The related topic that connects to Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass in the next chapter is ___. — Answer: see the Next Topic section.
 

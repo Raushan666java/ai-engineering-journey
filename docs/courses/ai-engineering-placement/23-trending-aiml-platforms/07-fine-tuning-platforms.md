@@ -578,12 +578,12 @@ Together AI addresses the enterprise concern of data leakage during hosted fine-
 
 | Model | Parameter Count | Context Length | LoRA Support | Price per 1M Tokens Trained |
 |-------|----------------|----------------|--------------|----------------------------|
-| Llama 3.2 3B Instruct | 3B | 8K | Yes | $0.50 |
-| Llama 3.1 8B Instruct | 8B | 128K | Yes | $1.20 |
-| Mixtral 8×7B Instruct | 46B | 32K | Yes (requires 48h notice) | $4.80 |
-| Gemma 2 9B | 9B | 8K | Yes | $1.50 |
-| Qwen 2.5 7B | 7B | 32K | Yes | $1.00 |
-| DeepSeek Coder V2 16B | 16B | 16K | Yes | $2.40 |
+| Llama 3.2 3B Instruct | 3B | 8K | Yes | \$0.50 |
+| Llama 3.1 8B Instruct | 8B | 128K | Yes | \$1.20 |
+| Mixtral 8×7B Instruct | 46B | 32K | Yes (requires 48h notice) | \$4.80 |
+| Gemma 2 9B | 9B | 8K | Yes | \$1.50 |
+| Qwen 2.5 7B | 7B | 32K | Yes | \$1.00 |
+| DeepSeek Coder V2 16B | 16B | 16K | Yes | \$2.40 |
 
 ---
 
@@ -793,7 +793,7 @@ def infer(data: dict):
 | Warm start | <1 second if `keep_warm` is set |
 | Max GPU memory | A10G (24 GB), A100 (40/80 GB), H100 (80 GB) |
 | Max runtime | 24 hours per function call (86400s timeout) |
-| Pricing | Pay-per-second: ~$0.60/hr for A10G, ~$2.50/hr for A100, ~$4.00/hr for H100 |
+| Pricing | Pay-per-second: ~\$0.60/hr for A10G, ~\$2.50/hr for A100, ~\$4.00/hr for H100 |
 | Concurrent runs | Configurable via `@app.cls(concurrency_limit=...)` |
 
 Modal is ideal for teams that already version-control their training code and want infrastructure-as-code for GPU workloads. The trade-off: you manage the training code entirely — there is no dashboard for data curation or model comparison.
@@ -865,7 +865,7 @@ quadrantChart
 
 ### Q9: What factors determine the cost of a hosted fine-tuning job on Together AI?
 
-**Answer:** Total cost = (base model training tokens) × (price per 1M tokens) × (number of epochs). The base model price varies by size (e.g., Llama 3.2 3B = $0.50/1M tokens, Mixtral 8×7B = $4.80/1M tokens). Training tokens = (total dataset tokens) × (epochs) — a 10,000-example dataset averaging 500 tokens per example with 3 epochs = 15M training tokens, costing ~$7.50 for Llama 3.2 3B. Additional costs: data storage ($0.10/GB/month), trained model hosting ($0.50–2.00/hour), and inference API calls after deployment ($0.10–1.00 per 1M tokens).
+**Answer:** Total cost = (base model training tokens) × (price per 1M tokens) × (number of epochs). The base model price varies by size (e.g., Llama 3.2 3B = \$0.50/1M tokens, Mixtral 8×7B = \$4.80/1M tokens). Training tokens = (total dataset tokens) × (epochs) — a 10,000-example dataset averaging 500 tokens per example with 3 epochs = 15M training tokens, costing ~\$7.50 for Llama 3.2 3B. Additional costs: data storage (\$0.10/GB/month), trained model hosting (\$0.50–2.00/hour), and inference API calls after deployment (\$0.10–1.00 per 1M tokens).
 
 ### Q10: How would you fine-tune a model for code generation using Unsloth, and what rank would you choose?
 
@@ -941,7 +941,7 @@ D) 5–10 minutes
 
 4. **Modal Serverless Training**: Port the Unsloth training script from Exercise 1 into a Modal app. Create a `FineTuner` class with `@modal.cls(gpu="T4")`, implement `load_base_model`, `prepare_dataset`, and `train` methods, and deploy a web inference endpoint with `@modal.web_endpoint`. Measure cold-start time and cost for a 3-epoch training run.
 
-5. **Platform Selection Case Study**: You are the AI engineer at a legal-tech startup. Your team needs to fine-tune a model on 50,000 confidential legal documents (average 2,000 tokens each). You have a budget of $500 for the project, a single RTX 4090 (24 GB) available in-house, and the model must be deployed behind an API with <2 second latency. Write a 300-word analysis comparing Unsloth, Axolotl, OpenPipe, Together, and Modal, including: chosen platform, data privacy strategy, estimated cost breakdown, expected training time, and deployment architecture.
+5. **Platform Selection Case Study**: You are the AI engineer at a legal-tech startup. Your team needs to fine-tune a model on 50,000 confidential legal documents (average 2,000 tokens each). You have a budget of \$500 for the project, a single RTX 4090 (24 GB) available in-house, and the model must be deployed behind an API with <2 second latency. Write a 300-word analysis comparing Unsloth, Axolotl, OpenPipe, Together, and Modal, including: chosen platform, data privacy strategy, estimated cost breakdown, expected training time, and deployment architecture.
 
 ---
 

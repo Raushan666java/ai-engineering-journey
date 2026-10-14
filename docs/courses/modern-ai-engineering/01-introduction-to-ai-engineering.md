@@ -744,18 +744,18 @@ Design a cost projection model for an application that makes 1 million API calls
 <summary>Solution</summary>
 
 **GPT-5 costs:**
-- Input: 1,000,000 × 70% (non-cached) × (1,000 / 1,000) × $0.01 = $7,000
-- Output: 1,000,000 × 70% × (200 / 1,000) × $0.03 = $4,200
-- Total: $11,200/month
+- Input: 1,000,000 × 70% (non-cached) × (1,000 / 1,000) × \$0.01 = \$7,000
+- Output: 1,000,000 × 70% × (200 / 1,000) × \$0.03 = \$4,200
+- Total: \$11,200/month
 
 **DeepSeek V4 costs:**
-- Input: 1,000,000 × 70% × (1,000 / 1,000) × $0.0005 = $350
-- Output: 1,000,000 × 70% × (200 / 1,000) × $0.002 = $280
-- Total: $630/month
+- Input: 1,000,000 × 70% × (1,000 / 1,000) × \$0.0005 = \$350
+- Output: 1,000,000 × 70% × (200 / 1,000) × \$0.002 = \$280
+- Total: \$630/month
 
 DeepSeek V4 is approximately 18× cheaper for this workload. However, consider latency differences (GPT-5 P50: 800ms, DeepSeek V4 P50: 1000ms) and capability differences when choosing.
 
-The `CostReport` from `generateCostReport()` would show `projectedMonthlyCost` of approximately $11,200 for GPT-5 and $630 for DeepSeek V4.
+The `CostReport` from `generateCostReport()` would show `projectedMonthlyCost` of approximately \$11,200 for GPT-5 and \$630 for DeepSeek V4.
 </details>
 
 **Exercise 3**

@@ -97,7 +97,7 @@ A truth table enumerates all possible truth assignments to the variables and sho
 
 Note carefully: $p \rightarrow q$ is false only when $p$ is true and $q$ is false. This is called **material implication**.
 
-> **One-Sentence Takeaway:** A truth table enumerates all $2^n$ possible truth assignments ? it is the definitive method for checking equivalence and validity.
+> **One-Sentence Takeaway:** A truth table enumerates all \$2^n$ possible truth assignments ? it is the definitive method for checking equivalence and validity.
 
 ### 2.4 Logical Equivalence
 

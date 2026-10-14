@@ -199,10 +199,10 @@ graph TD
 
 | Cost Category | Traditional (CAPEX) | Cloud (OPEX) |
 |---------------|---------------------|---------------|
-| Hardware | $50,000?$500,000 upfront | $0 upfront |
+| Hardware | \$50,000?\$500,000 upfront | \$0 upfront |
 | Software licenses | Perpetual licenses, upfront | Subscription, monthly |
 | Facilities | Data center construction/lease | Included in provider price |
-| Power & cooling | $100?$300/kW/month | Included in provider price |
+| Power & cooling | \$100?\$300/kW/month | Included in provider price |
 | Staffing | Full-time ops team | Reduced ops headcount |
 | Scaling | Over-provision or under-provision | Elastic, pay-as-you-go |
 | Upgrades | Manual, disruptive | Automatic by provider |
@@ -272,7 +272,7 @@ graph TB
 
 Vendor lock-in occurs when a customer becomes dependent on a specific provider's proprietary services and faces significant cost or complexity when switching. In cloud computing, lock-in risks include:
 
-- **Data egress fees:** Most providers charge to move data out ($0.05?$0.12/GB). Moving petabytes of data can cost hundreds of thousands of dollars.
+- **Data egress fees:** Most providers charge to move data out (\$0.05?\$0.12/GB). Moving petabytes of data can cost hundreds of thousands of dollars.
 - **Proprietary APIs:** Services like DynamoDB, SQS, and Lambda use provider-specific APIs. Code written for one provider requires rework for another.
 - **Managed service coupling:** Using managed databases, message queues, or AI services ties the architecture to that provider.
 
@@ -299,7 +299,7 @@ Amazon Web Services (AWS), launched in 2006, remains the market leader with the 
 
 ### Example 1.1: CAPEX vs OPEX Comparison
 
-A company needs to run a web application with variable traffic. On-premises: the company purchases ten servers at $5,000 each ($50,000 CAPEX), networking equipment ($10,000), and staffing ($80,000/year). Cloud: the company uses EC2 instances costing $500/month when traffic is low and $3,000/month during peak, averaging $1,500/month ($18,000/year OPEX). The cloud model eliminates the $60,000 upfront investment and scales costs directly with revenue.
+A company needs to run a web application with variable traffic. On-premises: the company purchases ten servers at \$5,000 each (\$50,000 CAPEX), networking equipment (\$10,000), and staffing (\$80,000/year). Cloud: the company uses EC2 instances costing \$500/month when traffic is low and \$3,000/month during peak, averaging \$1,500/month (\$18,000/year OPEX). The cloud model eliminates the \$60,000 upfront investment and scales costs directly with revenue.
 
 ### Example 1.2: Service Model Abstraction Layers
 
@@ -459,7 +459,7 @@ EOL Reporting Tool: retire
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B) High switching costs due to data egress fees and proprietary APIs.** Data egress fees ($0.05?$0.12/GB) and provider-specific service APIs create economic and technical barriers to switching providers.
+**B) High switching costs due to data egress fees and proprietary APIs.** Data egress fees (\$0.05?\$0.12/GB) and provider-specific service APIs create economic and technical barriers to switching providers.
 </details>
 
 ### TypeScript: Cloud Service Cost Calculator

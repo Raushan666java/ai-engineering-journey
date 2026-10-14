@@ -620,7 +620,7 @@ flowchart LR
 ### Case Study: Migrating a Hadoop Pipeline to Cloud
 
 
-**Scenario:** A retail company runs daily ETL jobs on a 50-node on-premise Hadoop cluster processing 5 TB of data daily. The cluster costs $200K/year in hardware maintenance and operations. They want to migrate to AWS.
+**Scenario:** A retail company runs daily ETL jobs on a 50-node on-premise Hadoop cluster processing 5 TB of data daily. The cluster costs \$200K/year in hardware maintenance and operations. They want to migrate to AWS.
 
 **Migration Plan:**
 
@@ -650,13 +650,13 @@ console.log(`Savings: $${onPremCost.total - cloudCost.total}/year (${(((onPremCo
 6. Write a Python MapReduce job to compute the average temperature per month from a weather dataset (format: "date,temperature"). Use a combiner.
 7. Design a rack-aware replica placement strategy for a 30-node cluster across 3 racks. Show which rack receives each replica of Block 1.
 8. A YARN cluster has 10 nodes, each with 32 GB RAM and 8 vcores. If each container needs 4 GB and 1 vcore, what is the maximum number of concurrent mappers?
-9. Compare the cost of storing 500 TB on HDFS (3x replication, 50 nodes ? 20 TB each) vs S3 standard ($0.023/GB/month) over 3 years.
+9. Compare the cost of storing 500 TB on HDFS (3x replication, 50 nodes ? 20 TB each) vs S3 standard (\$0.023/GB/month) over 3 years.
 10. Simulate a datanode failure and trace the complete recovery process through heartbeat timeout ? block detection ? re-replication.
 
 ### Answer Key (Additional)
 
 
-6. Mapper: parse date, emit (month, temp). Combiner: sum temps per month. Reducer: average = sum/count. | 7. R1: Rack1-Node1, R2: Rack2-Node4, R3: Rack2-Node5 | 8. 80 containers | 9. HDFS: ~$150K (disks+servers), S3: ~$414K over 3 years (S3 cheaper on storage but compute separate)
+6. Mapper: parse date, emit (month, temp). Combiner: sum temps per month. Reducer: average = sum/count. | 7. R1: Rack1-Node1, R2: Rack2-Node4, R3: Rack2-Node5 | 8. 80 containers | 9. HDFS: ~\$150K (disks+servers), S3: ~\$414K over 3 years (S3 cheaper on storage but compute separate)
 
 ### TypeScript: HDFS Read/Write Pipeline Simulator
 

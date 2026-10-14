@@ -168,7 +168,7 @@ print(json.dumps(sm.get_access_report(), indent=2, default=str))
 
 | Secret Type | Example | Risk if Leaked |
 |-------------|---------|----------------|
-| LLM API key | `sk-...` | Unauthorized usage, $10K+/day bills |
+| LLM API key | `sk-...` | Unauthorized usage, \$10K+/day bills |
 | Model registry token | `mlflow_...` | Model theft, unauthorized deployments |
 | Vector DB credential | `qdrant_...` | Data exfiltration of knowledge base |
 | Fine-tuning data token | `hf_...` | Training data theft |

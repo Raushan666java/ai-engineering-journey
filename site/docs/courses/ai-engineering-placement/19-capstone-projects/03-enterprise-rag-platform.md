@@ -909,7 +909,7 @@ verify that the tenant_id in the query matches the authenticated user's tenant. 
   </summary>
   <div class="tp-qa-answer">
 <p>Structured data in RAG: (1) Textualization — convert database rows to natural language: "Employee John Doe (ID: 1234) joined on 2020-03-15,.
-department Engineering, salary $120,000." This allows semantic search over structured data. (2) Table-aware chunking — preserve table structure by serializing as Markdown or.
+department Engineering, salary \$120,000." This allows semantic search over structured data. (2) Table-aware chunking — preserve table structure by serializing as Markdown or.
 HTML: `| Name | Department | Salary |\n|------|-----------|--------|`. (3) SQL-based retrieval — use LLM-generated SQL for precise lookups: "What is John's salary?" → `SELECT salary FROM employees WHERE name = 'John Doe'`. (4) Hybrid approach — embed textualized descriptions for.
 semantic search + execute SQL for exact queries. (5) Graph RAG — for highly relational data (org charts, product hierarchies), use knowledge graphs (Neo4j) to enable multi-hop retrieval: "Find all products managed by John's direct reports." The choice depends on query types: use SQL for.
 precise lookups, vector search for semantic exploration, and graph for relationship queries.</p>
@@ -1061,7 +1061,7 @@ tune k on a validation set and consider adding method-specific weights if one se
 <summary class="tp-qa-question">How do you handle RAG for structured data (tables, databases)?</summary>
 <div class="tp-qa-context"><p>Extending RAG beyond free text.</p></div>
 <div class="tp-qa-answer">
-<p>Structured data in RAG: (1) <strong>Textualization</strong> — convert rows to natural language descriptions (e.g., "Employee John Doe joined in 2020 with salary $80k"). (2) <strong>Table-aware chunking</strong> — preserve table structure by serializing as markdown or HTML. (3) <strong>SQL-based retrieval</strong> — use LLM to generate SQL queries for structured data, then feed results as context. (4) <strong>Hybrid approach</strong> — embed textualized data for semantic search + execute SQL for precise lookups. (5) <strong>Graph RAG</strong> — for highly relational data, use knowledge graphs for multi-hop retrieval.</p>
+<p>Structured data in RAG: (1) <strong>Textualization</strong> — convert rows to natural language descriptions (e.g., "Employee John Doe joined in 2020 with salary \$80k"). (2) <strong>Table-aware chunking</strong> — preserve table structure by serializing as markdown or HTML. (3) <strong>SQL-based retrieval</strong> — use LLM to generate SQL queries for structured data, then feed results as context. (4) <strong>Hybrid approach</strong> — embed textualized data for semantic search + execute SQL for precise lookups. (5) <strong>Graph RAG</strong> — for highly relational data, use knowledge graphs for multi-hop retrieval.</p>
 </div>
 <div class="tp-qa-actions">
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

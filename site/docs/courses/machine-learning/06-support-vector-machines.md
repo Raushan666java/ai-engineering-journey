@@ -543,7 +543,7 @@ simulateCBoundary([0.01, 0.1, 1.0, 10.0, 100.0]);
 | RBF Kernel | $K(x_i, x_j) = \exp(-\gamma\|x_i - x_j\|^2)$ |
 | Polynomial Kernel | $K(x_i, x_j) = (\gamma x_i \cdot x_j + r)^d$ |
 | Hinge Loss | $\max(0, 1 - y f(x))$ |
-| C Parameter Range | $10^{-3}$ to $10^{3}$ (typical search range) |
+| C Parameter Range | \$10^{-3}$ to \$10^{3}$ (typical search range) |
 | Gamma Default | $\gamma = 1 / n_{\text{features}}$ |
 
 ## Cross-Application Matrix

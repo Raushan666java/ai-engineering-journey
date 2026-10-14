@@ -873,8 +873,8 @@ for i in range(1, 11):
 
 **Numbered Steps — Function Execution**:
 1. Function definition is read and stored in memory (not executed yet)
-2. When called, positional parameters `$1`, `$2`, ... are set to the arguments
-3. `$0` remains the script name (not the function name)
+2. When called, positional parameters `\$1`, `\$2`, ... are set to the arguments
+3. `\$0` remains the script name (not the function name)
 4. `local` variables are created in a new scope
 5. Body commands are executed sequentially
 6. `return` sets exit code and exits function (optional)
@@ -2133,7 +2133,7 @@ sed 's/,/\t/g' data.csv
 
 ### awk Core Concepts
 
-**Real-World Analogy**: awk is a miniature spreadsheet for text. Each line is a row, and each word/field is a cell. You can filter rows (`$3 > 50`), transform cells (`$1 = toupper($1)`), compute totals (sum of column 2), and format reports — all in a compact language.
+**Real-World Analogy**: awk is a miniature spreadsheet for text. Each line is a row, and each word/field is a cell. You can filter rows (`\$3 > 50`), transform cells (`\$1 = toupper(\$1)`), compute totals (sum of column 2), and format reports — all in a compact language.
 
 **Numbered Steps — awk Execution**:
 1. Execute BEGIN block (if present) — runs once before any input
@@ -2166,7 +2166,7 @@ function awk_execute(patterns_actions, input_streams):
     execute_blocks(patterns_actions.END)
 ```
 
-**Dry Run — awk '$3 > 50 { print $1 }'**:
+**Dry Run — awk '\$3 > 50 { print \$1 }'**:
 ```
 Step | Input line          | $1    | $2  | $3   | $3 > 50? | Output
 1    | "Alice 30 45"      | Alice | 30  | 45   | FALSE    |
@@ -2181,7 +2181,7 @@ Step | Input line          | $1    | $2  | $3   | $3 > 50? | Output
 |----------|---------|---------|
 | `NR` | Current record (line) number | 1-based |
 | `NF` | Number of fields in current record | 0 for empty |
-| `$0` | Entire current record | |
+| `\$0` | Entire current record | |
 | `$1..$NF` | Individual fields | |
 | `FS` | Field separator | space/tab (whitespace) |
 | `OFS` | Output field separator | space |
@@ -2251,7 +2251,7 @@ awk '{ ct[$1][$2]++ } END { for (i in ct) for (j in ct[i]) print i, j, ct[i][j] 
 | **Memory (assoc arrays)** | O(k) where k = unique keys in array |
 | **Sorting** | awk does NOT sort — pipe to sort |
 | **Edge: Field separator** | Default is whitespace (any run of spaces/tabs) |
-| **Edge: Empty fields** | `:a::b:` with -F: → 4 fields, $2 and $3 are empty |
+| **Edge: Empty fields** | `:a::b:` with -F: → 4 fields, \$2 and \$3 are empty |
 | **Edge: Missing END block** | Final processing not possible |
 | **Edge: Gawk extensions** | `sorted_in` for sorted array traversal (gawk-specific) |
 
@@ -3097,7 +3097,7 @@ shell.runCommand('unknown_command');
 | Term | Definition |
 |------|------------|
 | **$?** | Exit status of last command (0=success, nonzero=failure) |
-| **$0, $1, ...** | Positional parameters: script name, first arg, etc. |
+| **\$0, \$1, ...** | Positional parameters: script name, first arg, etc. |
 | **$@** | All arguments as separate words (use "$@" to preserve quoting) |
 | **$#** | Number of positional parameters |
 | **stdin/stdout/stderr** | Standard input (0), output (1), error (2) |

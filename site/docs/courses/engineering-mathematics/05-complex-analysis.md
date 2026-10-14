@@ -73,7 +73,7 @@ $$z = re^{i\theta}$$
 
 $$z_k = e^{2\pi i k/n}, \quad k = 0, 1, 2, \ldots, n-1$$
 
-These lie on the unit circle at angles $2\pi k/n$, equally spaced.
+These lie on the unit circle at angles \$2\pi k/n$, equally spaced.
 
 ### 5.2 Functions of a Complex Variable
 
@@ -375,7 +375,7 @@ $$\int_0^{2\pi} \frac{d\theta}{2 + \cos\theta} = \frac{2}{i} \cdot 2\pi i \cdot 
 ### Example 6: Laurent Series
 
 Find the Laurent series expansion of $f(z) = \frac{1}{z(z-1)}$ in:
-a) $0 &lt; |z| < 1$
+a) \$0 &lt; |z| < 1$
 b) $|z| > 1$
 
 **Solution:**

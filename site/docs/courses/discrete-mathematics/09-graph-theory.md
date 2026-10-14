@@ -27,7 +27,7 @@ After completing this chapter, you will be able to:
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Graph Types | Undirected, directed, weighted, multigraphs | Choose representation based on relationship symmetry |
-| Vertex Degree | Sum of degrees = $2 \|E\|$ | Handshaking lemma: even number of odd-degree vertices |
+| Vertex Degree | Sum of degrees = \$2 \|E\|$ | Handshaking lemma: even number of odd-degree vertices |
 | Connectivity | Paths connect vertices; components are maximal connected subgraphs | Cut vertices and bridges are single points of failure |
 | Graph Representations | Adjacency matrix, adjacency list, incidence matrix | Matrix: $O(1)$ edge lookup; List: $O(V+E)$ space for sparse graphs |
 | Complete Graphs | $K_n$ has $n(n-1)/2$ edges | Every pair of vertices is connected |
@@ -360,7 +360,7 @@ Greedy coloring algorithm: Order vertices; assign each vertex the smallest color
 **Applications:**
 - Scheduling: exams with overlapping students (conflict = edge).
 - Register allocation: variables live at the same time (conflict = edge).
-- Sudoku: coloring $9 \times 9$ with constraints.
+- Sudoku: coloring \$9 \times 9$ with constraints.
 
 ### 9.10 Applications of Graph Theory
 

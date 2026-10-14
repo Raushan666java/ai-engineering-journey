@@ -16,7 +16,7 @@ Choosing an embedding in 2026 means picking across five axes:
 1. **Dense vs sparse vs multi-vector.** One vector per passage, or one per token, or a sparse weighted bag of words.
 2. **Language coverage.** Monolingual English models still win on English-only tasks. Multilingual models win when corpora are mixed.
 3. **Context length.** 512 tokens vs 8,192 vs 32,768 — and real effective capacity is often 60-70% of the advertised max.
-4. **Dimension budget.** 3,072 floats at full precision = 12 KB per vector. At 100M vectors, storage is $1,300/month. Matryoshka truncation cuts this 4×.
+4. **Dimension budget.** 3,072 floats at full precision = 12 KB per vector. At 100M vectors, storage is \$1,300/month. Matryoshka truncation cuts this 4×.
 5. **Open vs hosted.** Open-weight means you control the stack and data. Hosted means you trade control for always-latest.
 
 This lesson names the tradeoffs so you can pick on evidence, not on whatever was popular last quarter.

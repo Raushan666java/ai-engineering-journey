@@ -1509,7 +1509,7 @@ Use vLLM with the following architecture: (1) Multiple vLLM instances behind an 
 **Q3:** Compare Ollama and vLLM for a team building an internal coding assistant used by 50 developers. What are the cost, performance, and operational considerations?
 
 <details><summary>Answer</summary>
-For 50 developers with moderate concurrency (~5-10 simultaneous requests), Ollama may suffice initially but will struggle with concurrent load (sequential processing). vLLM would handle 50 concurrent users easily with continuous batching. Cost analysis: Ollama on a single A100 ($2-3/hr) vs vLLM on the same hardware handling 10x throughput. Operational: Ollama is nearly zero-maintenance; vLLM requires Docker, health checks, and monitoring setup. Recommendation: Start with Ollama for prototyping, migrate to vLLM when concurrent requests exceed 5-10 simultaneous users.
+For 50 developers with moderate concurrency (~5-10 simultaneous requests), Ollama may suffice initially but will struggle with concurrent load (sequential processing). vLLM would handle 50 concurrent users easily with continuous batching. Cost analysis: Ollama on a single A100 (\$2-3/hr) vs vLLM on the same hardware handling 10x throughput. Operational: Ollama is nearly zero-maintenance; vLLM requires Docker, health checks, and monitoring setup. Recommendation: Start with Ollama for prototyping, migrate to vLLM when concurrent requests exceed 5-10 simultaneous users.
 
 **Leadership principle**: "Deliver Results" — choose the simplest solution that meets the SLA, but plan the migration path.
 </details>

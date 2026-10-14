@@ -284,7 +284,7 @@ $x_1 = 2 - \frac{4-5}{4} = 2 + \frac{1}{4} = 2.25$
 $x_2 = 2.25 - \frac{5.0625-5}{4.5} = 2.25 - \frac{0.0625}{4.5} \approx 2.2361$
 $x_3 = 2.2361 - \frac{5.0000-5}{4.4722} \approx 2.23607$
 
-After 3 iterations, we have 5 decimal places. Check: $2.23607^2 \approx 5.0000$.
+After 3 iterations, we have 5 decimal places. Check: \$2.23607^2 \approx 5.0000$.
 
 ### Example 2: Simpson's Rule
 

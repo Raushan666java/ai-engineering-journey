@@ -133,7 +133,7 @@ $$\min_{x} f(x) \quad \text{s.t.} \quad g(x) \leq 0$$
 
 For $x^*$ to be optimal (under constraint qualification):
 
-1. **Stationarity:** $0 \in \partial f(x^*) + \sum \mu_i \partial g_i(x^*)$
+1. **Stationarity:** \$0 \in \partial f(x^*) + \sum \mu_i \partial g_i(x^*)$
 2. **Primal Feasibility:** $g_i(x^*) \leq 0$ for all $i$
 3. **Dual Feasibility:** $\mu_i \geq 0$ for all $i$
 4. **Complementary Slackness:** $\mu_i g_i(x^*) = 0$ for all $i$
@@ -288,11 +288,11 @@ $x + y \leq 2$, $x \geq 0$, $y \geq 0$
 
 Try active constraint $x + y = 2$ with $\mu_1 > 0$, $x > 0$, $y > 0$ ($\mu_2 = \mu_3 = 0$):
 
-$2(x-1) + \mu_1 = 0 \implies 2x - 2 + \mu_1 = 0$
-$2(y-2) + \mu_1 = 0 \implies 2y - 4 + \mu_1 = 0$
+\$2(x-1) + \mu_1 = 0 \implies 2x - 2 + \mu_1 = 0$
+\$2(y-2) + \mu_1 = 0 \implies 2y - 4 + \mu_1 = 0$
 $x + y = 2$
 
-From first two: $2x - 2 = 2y - 4 \implies x - y = -1 \implies x = y - 1$
+From first two: \$2x - 2 = 2y - 4 \implies x - y = -1 \implies x = y - 1$
 
 With $x + y = 2$: $(y-1) + y = 2 \implies 2y = 3 \implies y = 1.5$, $x = 0.5$
 
@@ -643,7 +643,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 ### Application Problems
 
-1. **Linear Programming:** A factory makes two products. Product A requires 2 hours machine time and 1 hour labor; product B requires 1 hour machine and 3 hours labor. Daily machine limit: 8 hours; labor: 12 hours. Profit per unit: A = $40, B = $30. Maximize profit.
+1. **Linear Programming:** A factory makes two products. Product A requires 2 hours machine time and 1 hour labor; product B requires 1 hour machine and 3 hours labor. Daily machine limit: 8 hours; labor: 12 hours. Profit per unit: A = \$40, B = \$30. Maximize profit.
 
 2. **SVM Dual:** Derive the dual of the SVM problem above.
 

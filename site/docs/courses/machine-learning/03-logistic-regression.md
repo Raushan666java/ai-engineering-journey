@@ -171,7 +171,7 @@ The confusion matrix summarizes classification results:
 
 **Specificity** (True Negative Rate): $\frac{TN}{TN + FP}$
 
-**F1-Score**: $2 \times \frac{Precision \times Recall}{Precision + Recall}$ ? harmonic mean of precision and recall
+**F1-Score**: \$2 \times \frac{Precision \times Recall}{Precision + Recall}$ ? harmonic mean of precision and recall
 
 **F-beta Score**: $(1 + \beta^2) \frac{Precision \times Recall}{\beta^2 \times Precision + Recall}$ ? weights recall by $\beta$ times more than precision
 
@@ -531,7 +531,7 @@ console.log(`Softmax Accuracy: ${(acc * 100).toFixed(2)}%`);
 | Accuracy | $(TP + TN) / Total$ |
 | Precision | $TP / (TP + FP)$ |
 | Recall | $TP / (TP + FN)$ |
-| F1-Score | $2 \cdot P \cdot R / (P + R)$ |
+| F1-Score | \$2 \cdot P \cdot R / (P + R)$ |
 | AUC | $\int_0^1 TPR(FPR) \, d(FPR)$ |
 
 ## Cross-Application Matrix

@@ -111,13 +111,13 @@ graph TB
 
 | AWS Type | vCPUs | Memory (GB) | Network (Gbps) | Price/hr (On-Demand) | Best For |
 |----------|-------|-------------|----------------|---------------------|----------|
-| t3.micro | 2 | 1 | Up to 5 | $0.0104 | Low-traffic web, dev |
-| t3.medium | 2 | 4 | Up to 5 | $0.0416 | Small apps, dev |
-| m5.large | 2 | 8 | Up to 10 | $0.096 | General purpose |
-| c5.2xlarge | 8 | 16 | Up to 10 | $0.34 | Batch processing |
-| r5.4xlarge | 16 | 128 | Up to 10 | $1.008 | In-memory databases |
-| p3.2xlarge | 8 | 61 | Up to 10 | $3.06 | ML training (1 GPU) |
-| i3.2xlarge | 8 | 61 | Up to 10 | $0.624 | NoSQL, NVMe SSD |
+| t3.micro | 2 | 1 | Up to 5 | \$0.0104 | Low-traffic web, dev |
+| t3.medium | 2 | 4 | Up to 5 | \$0.0416 | Small apps, dev |
+| m5.large | 2 | 8 | Up to 10 | \$0.096 | General purpose |
+| c5.2xlarge | 8 | 16 | Up to 10 | \$0.34 | Batch processing |
+| r5.4xlarge | 16 | 128 | Up to 10 | \$1.008 | In-memory databases |
+| p3.2xlarge | 8 | 61 | Up to 10 | \$3.06 | ML training (1 GPU) |
+| i3.2xlarge | 8 | 61 | Up to 10 | \$0.624 | NoSQL, NVMe SSD |
 
 ### 3.5 Lifecycle and Pricing Models
 

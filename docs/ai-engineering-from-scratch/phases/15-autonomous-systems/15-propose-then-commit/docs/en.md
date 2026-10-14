@@ -32,7 +32,7 @@ The 2026 pattern — propose-then-commit — moves HITL onto a durable substrate
 
 ### The idempotency key
 
-Without an idempotency key, a retry after a transient failure can double-execute an approved action. Concrete example: user approves "transfer $100 from A to B." Network blips. Workflow retries. The user has approved once but the transfer executes twice. The idempotency key ties the approval to a single, unique side effect; the second execution is a no-op.
+Without an idempotency key, a retry after a transient failure can double-execute an approved action. Concrete example: user approves "transfer \$100 from A to B." Network blips. Workflow retries. The user has approved once but the transfer executes twice. The idempotency key ties the approval to a single, unique side effect; the second execution is a no-op.
 
 This is the same idempotency pattern Stripe and AWS APIs use. Reusing it for agent approvals is explicit in the Microsoft Agent Framework docs.
 

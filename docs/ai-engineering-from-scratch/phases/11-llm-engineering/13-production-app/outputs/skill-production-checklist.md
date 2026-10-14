@@ -42,7 +42,7 @@ These prevent your first on-call incident.
 
 ## 3. Cost Control (Month-One Economics)
 
-These prevent the $50K surprise invoice.
+These prevent the \$50K surprise invoice.
 
 | Check | Pass Criteria | How to Verify |
 |-------|--------------|---------------|
@@ -50,7 +50,7 @@ These prevent the $50K surprise invoice.
 | Semantic cache active | > 20% hit rate on repeated patterns | Cache stats show hit rate after 1000 test requests |
 | Cache TTL configured | Entries expire (default: 1 hour) | Entry inserted -- not returned after TTL |
 | Per-user cost tracking | Cost aggregated by user_id | Dashboard/API shows top 10 users by cost |
-| Cost alerting | Alert at 80% of daily budget | Set $10 daily budget, send $8.50 in requests -- alert fires |
+| Cost alerting | Alert at 80% of daily budget | Set \$10 daily budget, send \$8.50 in requests -- alert fires |
 | Model routing by cost | Low-complexity queries use cheaper model | Simple question routes to gpt-4o-mini, complex to gpt-4o |
 | Max output tokens set | Responses capped per template | Template with max_output_tokens=512 -- response never exceeds it |
 
@@ -63,9 +63,9 @@ Monthly LLM cost = DAU x queries_per_user x 30 x (1 - cache_hit_rate) x (avg_inp
 
 | DAU | Target cost/request | Monthly budget |
 |-----|-------------------|----------------|
-| 1K | < $0.005 | < $750 |
-| 10K | < $0.003 | < $4,500 |
-| 100K | < $0.001 | < $15,000 |
+| 1K | < \$0.005 | < \$750 |
+| 10K | < \$0.003 | < \$4,500 |
+| 100K | < \$0.001 | < \$15,000 |
 
 ## 4. Observability (Debugging in Production)
 

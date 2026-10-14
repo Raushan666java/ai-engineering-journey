@@ -279,7 +279,7 @@ console.log(generateParentheses(3)); // ["((()))", "(()())", "(())()", "()(())",
 | Permutations with identical items | $n!/(n_1! n_2! \cdots n_k!)$ | "MISSISSIPPI": $34,650$ |
 | Combinations with repetition | $\binom{n+r-1}{r}$ | 10 candies, 3 children: $\binom{12}{2}=66$ |
 | Binomial expansion term $k$ | $\binom{n}{k} x^{n-k} y^k$ | $(2x-3)^4$: term 2 is $-96x^3$ |
-| Inclusion-Exclusion (2 sets) | $|A \cup B| = |A| + |B| - |A \cap B|$ | 1-100 divisible by 2 or 3: $67$ |
+| Inclusion-Exclusion (2 sets) | $|A \cup B| = |A| + |B| - |A \cap B|$ | 1-100 divisible by 2 or 3: \$67$ |
 | Catalan number | $C_n = \frac{1}{n+1}\binom{2n}{n}$ | $C_3 = 5$ valid parentheses of length 6 |
 | Derangement number | $!n = n!\sum_{i=0}^{n} (-1)^i/i!$ | $!4 = 9$ (permutations of 4 with no fixed points) |
 
@@ -318,7 +318,7 @@ console.log(generateParentheses(3)); // ["((()))", "(()())", "(())()", "()(())",
    <details><summary>Answer&lt;/summary&gt;**A)** $\binom{11}{3}$ ? stars and bars with $n=4$ types and $r=8$ items gives $\binom{8+4-1}{4-1} = \binom{11}{3}$.</details>
 
 4. Vandermonde's identity generalizes which combinatorial operation?
-   - A) Summing binomial coefficients to get $2^n$
+   - A) Summing binomial coefficients to get \$2^n$
    - B) Splitting a combination across two disjoint sets
    - C) Distributing stars into bars
    - D) Counting derangements by inclusion-exclusion
@@ -329,17 +329,17 @@ console.log(generateParentheses(3)); // ["((()))", "(()())", "(())()", "()(())",
    - B) 12
    - C) 9
    - D) 15
-   <details><summary>Answer&lt;/summary&gt;**C)** 9 ? $4!(1 - 1/1! + 1/2! - 1/3! + 1/4!) = 24(1 - 1 + 1/2 - 1/6 + 1/24) = 24(12/24) = 9$.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** 9 ? \$4!(1 - 1/1! + 1/2! - 1/3! + 1/4!) = 24(1 - 1 + 1/2 - 1/6 + 1/24) = 24(12/24) = 9$.</details>
 
 ## Examples
 
 **Example 5.1** (Product rule). How many 6-character passwords using lowercase letters and digits?
 
-*Solution.* $36^6$ (36 choices per position, 6 positions).
+*Solution.* \$36^6$ (36 choices per position, 6 positions).
 
 **Example 5.2** (Sum rule + inclusion-exclusion). How many numbers from 1 to 100 are divisible by 2 or 3?
 
-*Solution.* $|A| = 50$ (multiples of 2), $|B| = 33$ (multiples of 3), $|A \cap B| = 16$ (multiples of 6). By inclusion-exclusion: $50 + 33 - 16 = 67$.
+*Solution.* $|A| = 50$ (multiples of 2), $|B| = 33$ (multiples of 3), $|A \cap B| = 16$ (multiples of 6). By inclusion-exclusion: \$50 + 33 - 16 = 67$.
 
 **Example 5.3** (Combinations). How many 5-card poker hands from a 52-card deck?
 
@@ -477,11 +477,11 @@ for (let i = 0; i <= 5; i++) console.log(catalan(i));
 ```
 
 Catalan numbers count at least 20 distinct combinatorial structures, including:
-- Valid parentheses strings of length $2n$.
+- Valid parentheses strings of length \$2n$.
 - Binary trees with $n$ internal nodes.
 - Triangulations of a convex $(n+2)$-gon.
 - Monotonic paths from $(0,0)$ to $(n,n)$ that stay on or below the diagonal.
-- Ways to connect $2n$ points on a circle with non-crossing chords.
+- Ways to connect \$2n$ points on a circle with non-crossing chords.
 
 **Proof 5.4 (Catalan recurrence).** $C_0 = 1$ and $C_{n+1} = \sum_{i=0}^n C_i C_{n-i}$.
 

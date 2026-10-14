@@ -1357,10 +1357,10 @@ FUNCTION MCP_CLIENT(llm, server_url):
 | 4 | LLM | "I need to search for Japan GDP 2024" | — | — |
 | 5 | Client | `{"method":"tools/call","params":{"name":"search","arguments":{"q":"Japan GDP 2024 USD"}}}` | Server | — |
 | 6 | Server | Executes search API | — | — |
-| 7 | Server | `{"content":[{"type":"text","text":"Japan GDP 2024: $4.21 trillion"}]}` | Client | — |
+| 7 | Server | `{"content":[{"type":"text","text":"Japan GDP 2024: \$4.21 trillion"}]}` | Client | — |
 | 8 | Client | Feeds observation to LLM | — | — |
 | 9 | LLM | Synthesizes final answer | — | — |
-| 10 | Client | Returns "Japan's GDP in 2024 was approximately $4.21 trillion" | User | — |
+| 10 | Client | Returns "Japan's GDP in 2024 was approximately \$4.21 trillion" | User | — |
 
 ### Python Implementation: Minimal MCP Server
 
@@ -1602,11 +1602,11 @@ FUNCTION AUTONOMOUS_AGENT(goal, tools, max_steps=20):
 
 | Step | Current Task | LLM Response / Tool Calls | New Tasks Created | Priority Queue |
 |------|-------------|--------------------------|-------------------|---------------|
-| 1 | Plan approach | "Party for 20 people, budget $500, outdoor BBQ theme" | Research venues, Plan menu, Guest list, Budget breakdown | [Research:1, Menu:2, Guest:2, Budget:1] |
-| 2 | Research venues | search("park BBQ rental [city]") → "Public park: $50, backyard: free" | Check weather, Buy decorations | [Budget:1, CheckWeather:1, Menu:2, Guest:2, Decor:2] |
+| 1 | Plan approach | "Party for 20 people, budget \$500, outdoor BBQ theme" | Research venues, Plan menu, Guest list, Budget breakdown | [Research:1, Menu:2, Guest:2, Budget:1] |
+| 2 | Research venues | search("park BBQ rental [city]") → "Public park: \$50, backyard: free" | Check weather, Buy decorations | [Budget:1, CheckWeather:1, Menu:2, Guest:2, Decor:2] |
 | 3 | Check weather | search("weather forecast [date]") → "75°F, sunny, 10% rain" | Rain backup plan | [Budget:1, Menu:2, Guest:2, Decor:2, RainPlan:2] |
 | 4 | Budget breakdown | calculator("500 - 50 = 450, /4 = 112.50 per category") | None (redundant) | [Menu:2, Guest:2, Decor:2, RainPlan:2] |
-| 5 | Plan menu | "BBQ: burgers, hot dogs, salad, cake. $120 total" | Create shopping list | [Guest:2, Decor:2, RainPlan:2, Shopping:3] |
+| 5 | Plan menu | "BBQ: burgers, hot dogs, salad, cake. \$120 total" | Create shopping list | [Guest:2, Decor:2, RainPlan:2, Shopping:3] |
 | 6 | Guest list | "20 names → send invites" | Send invitations | [Decor:2, RainPlan:2, Shopping:3, Invites:3] |
 | 7 | Send invitations | "Auto-generated email drafts complete" | (task complete) | [Decor:2, RainPlan:2, Shopping:3] |
 
@@ -1760,8 +1760,8 @@ print("\n" + final)
 | **Sampling method** | Autoregressive / softmax | Reverse diffusion | Autoregressive | Reverse diffusion | Reverse diffusion |
 | **Conditioning** | Text prompt | Text prompt | Natural language + context | Text + melody | Text + reference video |
 | **Output length** | Up to 200K tokens | 1024×1024 pixels | Up to 1000+ lines | 30-180 seconds | 5-60 seconds |
-| **Training cost** | $10-100M | $1-10M | $1-10M | $0.5-5M | $10-100M |
-| **Inference cost** | ~$0.01/query | ~$0.01-0.10/image | ~$0.001/suggestion | ~$0.10/track | ~$1-10/clip |
+| **Training cost** | \$10-100M | \$1-10M | \$1-10M | \$0.5-5M | \$10-100M |
+| **Inference cost** | ~\$0.01/query | ~\$0.01-0.10/image | ~\$0.001/suggestion | ~\$0.10/track | ~\$1-10/clip |
 | **Evaluation** | Perplexity, human eval | FID, CLIP score | Pass@k, functional tests | MOS, genre accuracy | FVD, human eval |
 | **Current best** | GPT-4o, Claude 4 | DALL-E 3, SDXL | Claude Code, Copilot | Suno V4 | Sora, Veo 2 |
 
@@ -1781,7 +1781,7 @@ print("\n" + final)
 | **Modality** | Text + image + audio | Text only (3.1: multilingual) | Text + image | Text + image + audio + video |
 | **Key innovation** | Instruction tuning, RLHF | Open-source, efficient | Constitutional AI, safety | MoE, massive context |
 | **Open-source** | No | Yes (weights available) | No | No |
-| **API cost (1M tokens)** | ~$10-30 (input) | ~$0.20-2.00 (via providers) | ~$3-15 (input) | ~$1.50-7.50 (input) |
+| **API cost (1M tokens)** | ~\$10-30 (input) | ~\$0.20-2.00 (via providers) | ~\$3-15 (input) | ~\$1.50-7.50 (input) |
 | **Strongest at** | Broad reasoning, coding | Efficiency, multilingual | Safety, nuanced reasoning | Long context, multimodality |
 
 ### Key Architectural Differences Explained
@@ -1847,7 +1847,7 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 | Aspect | RAG | Fine-tuning |
 |--------|-----|-------------|
 | Knowledge freshness | Real-time retrieval | Static at training time |
-| Training cost | None | $100-10,000 |
+| Training cost | None | \$100-10,000 |
 | Inference cost | Higher (retrieval step) | Same as base model |
 | Best for | Facts, dynamic data | Style, behavior, format |
 
@@ -1963,7 +1963,7 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 | **Plugins** | Extensible plugin system for custom tools |
 | **Limitations** | Context window fills up during long runs, error compounding |
 | **Use cases** | Research automation, content generation, data analysis |
-| **Token cost** | Can be $1-10+ for a single goal completion |
+| **Token cost** | Can be \$1-10+ for a single goal completion |
 
 ### 5. Claude (Anthropic)
 

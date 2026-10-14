@@ -614,7 +614,7 @@ flowchart LR
 **Results after migration:**
 - Fraud detection latency: 5 min ? 350ms
 - Fraud capture rate: 60% ? 94%
-- Annual savings: $2.4M in fraud losses
+- Annual savings: \$2.4M in fraud losses
 
 ```typescript
 const transactionsPerDay = 1_000_000;
@@ -638,7 +638,7 @@ console.log(`Fraud capture improvement: 60% ? 94%`);
 ### Answer Key (Additional)
 
 
-6. Batch layer: Spark hourly jobs ? Parquet; Speed layer: Kafka + Flink ? Redis for real-time; Serving layer: Presto on Parquet + API on Redis | 7. On-prem: ~$15K/mo, EMR: ~$5K/mo, Databricks: ~$8K/mo | 8. With locality: ~100s; without: ~800s (8x slower) | 9. ~75% storage savings, ~5x faster queries | 10. S3 is AP (available during partition), Spark shuffle is CP (blocks if partition)
+6. Batch layer: Spark hourly jobs ? Parquet; Speed layer: Kafka + Flink ? Redis for real-time; Serving layer: Presto on Parquet + API on Redis | 7. On-prem: ~\$15K/mo, EMR: ~\$5K/mo, Databricks: ~\$8K/mo | 8. With locality: ~100s; without: ~800s (8x slower) | 9. ~75% storage savings, ~5x faster queries | 10. S3 is AP (available during partition), Spark shuffle is CP (blocks if partition)
 
 ### TypeScript: Big Data Ecosystem Component Selector
 

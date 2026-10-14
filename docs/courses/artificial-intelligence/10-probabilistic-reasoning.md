@@ -142,7 +142,7 @@ P(M | A):
 
 $$P(B, E, A, J, M) = P(B) P(E) P(A \mid B, E) P(J \mid A) P(M \mid A)$$
 
-Total parameters: $1 + 1 + 4 + 2 + 2 = 10$ versus $2^5 - 1 = 31$ for the full joint table -- a 68% reduction.
+Total parameters: \$1 + 1 + 4 + 2 + 2 = 10$ versus \$2^5 - 1 = 31$ for the full joint table -- a 68% reduction.
 
 ### Python Implementation
 

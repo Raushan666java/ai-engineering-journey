@@ -943,11 +943,11 @@ gantt
 
 | Activity | AWS Service | Estimated Cost |
 |----------|-------------|----------------|
-| SageMaker training (ml.m5.large, 10 hours) | SageMaker | ~$10 |
-| Bedrock model invocation (10K requests) | Bedrock | ~$3-5 |
-| Knowledge Base (OpenSearch, 1 month) | OpenSearch Serverless | ~$15 |
-| Guardrail evaluation (10K requests) | Bedrock Guardrails | ~$2 |
-| Total lab budget | — | **$30-40** |
+| SageMaker training (ml.m5.large, 10 hours) | SageMaker | ~\$10 |
+| Bedrock model invocation (10K requests) | Bedrock | ~\$3-5 |
+| Knowledge Base (OpenSearch, 1 month) | OpenSearch Serverless | ~\$15 |
+| Guardrail evaluation (10K requests) | Bedrock Guardrails | ~\$2 |
+| Total lab budget | — | **\$30-40** |
 
 ## 5.6 Certification Path & Costs
 
@@ -970,9 +970,9 @@ flowchart TD
 
 | Your Profile | Start With | Why |
 |-------------|------------|-----|
-| Student / fresher | AIF-C01 | Builds foundational knowledge, lower cost ($100) |
-| ML engineer (1-3 yr exp) | MLS-C01 | Associate-level, high placement value ($200) |
-| LLM app builder | Bedrock Speciality | Advanced, validates hands-on agent experience ($300) |
+| Student / fresher | AIF-C01 | Builds foundational knowledge, lower cost (\$100) |
+| ML engineer (1-3 yr exp) | MLS-C01 | Associate-level, high placement value (\$200) |
+| LLM app builder | Bedrock Speciality | Advanced, validates hands-on agent experience (\$300) |
 | Solutions architect | AIF-C01 + SA Pro | Full stack cloud + AI coverage |
 | Data scientist | MLS-C01 | Emphasises data engineering and modeling |
 
@@ -980,16 +980,16 @@ flowchart TD
 
 | Certification | Standard Cost (USD) | Retake Cost | Discount Options |
 |--------------|---------------------|-------------|------------------|
-| AIF-C01 | $100 | $100 | AWS re:Invent discount, Exam Voucher |
-| MLS-C01 | $200 | $200 | AWS Skill Builder subscription (20% off) |
-| Bedrock Speciality | $300 | $300 | Beta exam (50% off during beta period) |
-| AWS Certified Solutions Architect Pro | $300 | $300 | Bundle with MLS-C01 |
+| AIF-C01 | \$100 | \$100 | AWS re:Invent discount, Exam Voucher |
+| MLS-C01 | \$200 | \$200 | AWS Skill Builder subscription (20% off) |
+| Bedrock Speciality | \$300 | \$300 | Beta exam (50% off during beta period) |
+| AWS Certified Solutions Architect Pro | \$300 | \$300 | Bundle with MLS-C01 |
 
 **Cost-saving tips:**
 
 - Take the **beta exam** for Bedrock Speciality (typically 50% discount)
-- Subscribe to AWS Skill Builder Team tier ($449/year) for access to official practice exams
-- Use AWS free tier for most lab exercises ($30-40 total for full course)
+- Subscribe to AWS Skill Builder Team tier (\$449/year) for access to official practice exams
+- Use AWS free tier for most lab exercises (\$30-40 total for full course)
 - Apply for **AWS re:Invent voucher** if attending the conference
 
 ### 5.6.3 Recertification
@@ -1162,7 +1162,7 @@ D) There is no difference; they are the same file
 
 AWS AI certifications provide a structured path from foundational AI knowledge to advanced LLM deployment skills. The AIF-C01 builds core AI/ML literacy, the MLS-C01 validates production ML engineering capability, and the Bedrock Speciality demonstrates expertise in the generative AI stack.
 
-This chapter covered the exam blueprints, domain weightings, key AWS services, and study strategies for each certification. You learned the boto3 SDK patterns for invoking Bedrock models, creating SageMaker training jobs, building agents with knowledge bases, and configuring guardrails. The 90-day study plan provides a week-by-week schedule with hands-on labs that cost under $50.
+This chapter covered the exam blueprints, domain weightings, key AWS services, and study strategies for each certification. You learned the boto3 SDK patterns for invoking Bedrock models, creating SageMaker training jobs, building agents with knowledge bases, and configuring guardrails. The 90-day study plan provides a week-by-week schedule with hands-on labs that cost under \$50.
 
 For placement preparation, prioritise the MLS-C01 certification — it carries the most weight with employers and validates the exact skills demanded by ML engineering roles. Pair certification study with the MLOps and Docker modules in this course for a complete skill set that sets you apart in interviews.
 
@@ -1286,7 +1286,7 @@ For each question you get wrong, write a one-paragraph explanation of the correc
 
 5. **Study with AWS Skill Builder + Hands-on Labs** — the 90-day roadmap includes SageMaker labs, Bedrock agent development, and practice exams.
 
-6. **Budget $30-40 for labs** — AWS free tier covers most services; OpenSearch Serverless and Bedrock throughput are the main cost drivers.
+6. **Budget \$30-40 for labs** — AWS free tier covers most services; OpenSearch Serverless and Bedrock throughput are the main cost drivers.
 
 7. **All certs require recertification every 3 years** — passing a higher-level exam automatically renews lower-level certs.
 

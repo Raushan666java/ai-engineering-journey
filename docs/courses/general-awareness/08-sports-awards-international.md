@@ -368,7 +368,7 @@ flowchart TD
 - Purpose: Infrastructure and sustainable development projects in BRICS and emerging economies
 
 **BRICS Contingent Reserve Arrangement (CRA):**
-- $100 billion fund for providing liquidity through currency swaps during balance of payments crises
+- \$100 billion fund for providing liquidity through currency swaps during balance of payments crises
 
 #### 8.6.4 G20
 

@@ -951,7 +951,7 @@ A university library commissioned a new management system. The requirements team
 
 ### Case Study: Requirements Failure — The Denver Airport Baggage System
 
-The Denver International Airport automated baggage handling system (1995) is a classic requirements failure. The system was specified to handle 1,000 bags per hour across 20 airlines with 99.9% reliability. Requirements were incomplete: the system was designed for standard bags only, but oversized items (skis, golf bags) were not addressed. The integration of 400+ individual robots required complex coordination that was underestimated. After $560M in overruns (300% over budget) and 16 months delay, the airport opened with a manual backup system. The key lesson: non-functional requirements (integration complexity, fault tolerance, edge case handling) are as critical as functional requirements.
+The Denver International Airport automated baggage handling system (1995) is a classic requirements failure. The system was specified to handle 1,000 bags per hour across 20 airlines with 99.9% reliability. Requirements were incomplete: the system was designed for standard bags only, but oversized items (skis, golf bags) were not addressed. The integration of 400+ individual robots required complex coordination that was underestimated. After \$560M in overruns (300% over budget) and 16 months delay, the airport opened with a manual backup system. The key lesson: non-functional requirements (integration complexity, fault tolerance, edge case handling) are as critical as functional requirements.
 
 ### Agile Requirements vs Traditional Requirements
 

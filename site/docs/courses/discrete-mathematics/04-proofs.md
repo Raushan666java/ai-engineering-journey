@@ -249,7 +249,7 @@ In all cases, $n^2$ is $0$ or $1$ mod $3$. $\square$
 
 An **existence proof** demonstrates that $\exists x\; P(x)$ is true. **Constructive** proofs exhibit an explicit $c$ with $P(c)$. **Non-constructive** proofs show existence without producing an example (e.g., by contradiction or pigeonhole principle).
 
-**Constructive example:** Prove there exists a prime number between 10 and 20. Exhibit $11$ ? it is prime, and $10 &lt; 11 < 20$.
+**Constructive example:** Prove there exists a prime number between 10 and 20. Exhibit \$11$ ? it is prime, and \$10 &lt; 11 < 20$.
 
 **Non-constructive example:** Prove that for any 5 points in a unit square, some pair is at most $\sqrt{2}/2$ apart. The pigeonhole principle shows existence but does not say which pair.
 
@@ -897,7 +897,7 @@ flowchart TD
 
 ## Additional Exercises
 
-17. Prove by induction: $1^3 + 2^3 + \cdots + n^3 = \left(\frac{n(n+1)}{2}\right)^2$.
+17. Prove by induction: \$1^3 + 2^3 + \cdots + n^3 = \left(\frac{n(n+1)}{2}\right)^2$.
 
 18. Prove that the product of any two odd integers is odd (direct proof).
 
@@ -927,7 +927,7 @@ flowchart TD
 
 8. Prove by contradiction: There is no largest integer.
 
-9. Prove by induction: $1 + 2 + 2^2 + \cdots + 2^n = 2^{n+1} - 1$.
+9. Prove by induction: \$1 + 2 + 2^2 + \cdots + 2^n = 2^{n+1} - 1$.
 
 10. Prove by strong induction: Every integer $n \geq 12$ can be written as $4a + 5b$ for nonnegative integers $a, b$.
 

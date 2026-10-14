@@ -3106,7 +3106,7 @@ Cgroups (control groups) limit, account for, and isolate resource usage (CPU, me
 | **hugetlb** | Huge page usage | `hugetlb.2MB.limit_in_bytes` |
 
 **Analogy → Cafeteria Meal Plan:**
-A university cafeteria gives each student a meal card with daily limits: $20 spending cap, 3 meal entries max, no more than 2 desserts. The student can choose what to eat within those limits. Cgroups are the meal card limits → they set the boundaries, not the content.
+A university cafeteria gives each student a meal card with daily limits: \$20 spending cap, 3 meal entries max, no more than 2 desserts. The student can choose what to eat within those limits. Cgroups are the meal card limits → they set the boundaries, not the content.
 
 **C++ Skeleton for Cgroup Setup:**
 ```cpp

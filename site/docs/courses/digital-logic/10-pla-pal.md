@@ -954,6 +954,6 @@ Q1: b | Q2: c | Q3: c | Q4: b | Q5: b
 
 8. **Routing analysis:** Model an FPGA routing channel with 40 wires and switch boxes. Calculate the probability that a connection between two LUTs can be routed given 80% switch box utilisation.
 
-9. **ASIC vs FPGA cost:** Compute the break-even quantity where an ASIC becomes cheaper than an FPGA. Assume FPGA cost = $50/unit, ASIC NRE = $250K, ASIC unit cost = $5.
+9. **ASIC vs FPGA cost:** Compute the break-even quantity where an ASIC becomes cheaper than an FPGA. Assume FPGA cost = \$50/unit, ASIC NRE = \$250K, ASIC unit cost = \$5.
 
 10. **Dynamic partial reconfiguration:** Research and describe how partial reconfiguration works in Xilinx 7-series FPGAs. Write a TypeScript simulation of a reconfigurable partition switching between an FIR filter and an FFT.

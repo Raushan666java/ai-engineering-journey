@@ -134,10 +134,10 @@ Total added latency: ~500-800ms. Cost: GPU infrastructure. Catches: ~99% of atta
 
 | Approach | Added Latency | Monthly Cost | Detection Rate | Maintenance |
 |----------|--------------|-------------|---------------|-------------|
-| Regex only | <5ms | $0 | ~60% | Low (update patterns quarterly) |
-| Regex + OpenAI Moderation | ~100ms | $0 | ~85% | Low |
-| Regex + ML classifiers (self-hosted) | ~50ms | $50-200 (GPU) | ~92% | Medium (retrain quarterly) |
-| Full stack (LlamaGuard + Presidio + NeMo) | ~500ms | $200-500 (GPU) | ~99% | High (continuous monitoring) |
+| Regex only | <5ms | \$0 | ~60% | Low (update patterns quarterly) |
+| Regex + OpenAI Moderation | ~100ms | \$0 | ~85% | Low |
+| Regex + ML classifiers (self-hosted) | ~50ms | \$50-200 (GPU) | ~92% | Medium (retrain quarterly) |
+| Full stack (LlamaGuard + Presidio + NeMo) | ~500ms | \$200-500 (GPU) | ~99% | High (continuous monitoring) |
 
 ## Common failure patterns
 

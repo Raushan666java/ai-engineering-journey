@@ -588,10 +588,10 @@ reproducibility.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>Estimating fine-tuning cost: (1) Compute cost = GPU hours — GPU price. A 7B model full fine-tuning on 8—A100-80GB takes roughly 1-4 hours per 1000 examples depending on sequence length. LoRA on the same model takes 0.5-2 hours per 1000.
-examples on a single A100. QLoRA can run on a single RTX 3090 ($0.5-2/hr on cloud spot instances);.
+examples on a single A100. QLoRA can run on a single RTX 3090 (\$0.5-2/hr on cloud spot instances);.
 (2) Data preparation cost — hours of human effort for data cleaning, validation, and formatting; (3) Evaluation cost — running benchmarks (MLM evaluations,.
-API calls for LLM-as-judge); (4) Serving cost — hosting the fine-tuned model (GPU instance for inference, typically same size as training GPU). Example: fine-tuning Llama-3-8B with LoRA on 5000 examples costs: 3 hours on 1—A100 — $2/hr = $6 for.
-training, plus ~$1 for evaluation, plus ongoing inference cost ($0.5/hr for serverless hosting). Full fine-tuning the same model: 12 hours on 4—A100 — $2/hr = $96. QLoRA on RTX 3090: 4 hours — $0.5/hr = $2.</p>
+API calls for LLM-as-judge); (4) Serving cost — hosting the fine-tuned model (GPU instance for inference, typically same size as training GPU). Example: fine-tuning Llama-3-8B with LoRA on 5000 examples costs: 3 hours on 1—A100 — \$2/hr = \$6 for.
+training, plus ~\$1 for evaluation, plus ongoing inference cost (\$0.5/hr for serverless hosting). Full fine-tuning the same model: 12 hours on 4—A100 — \$2/hr = \$96. QLoRA on RTX 3090: 4 hours — \$0.5/hr = \$2.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -686,7 +686,7 @@ Answer: B
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition1. Build a decision tree classifier that takes a task description and recommends prompting, RAG, or fine-tuning with confidence scores.
 
-2. Calculate the break-even point for a 7B model: training costs $1,500 (LoRA), inference costs $0.002/query baseline vs $0.001 after FT. How many queries to break even?
+2. Calculate the break-even point for a 7B model: training costs \$1,500 (LoRA), inference costs \$0.002/query baseline vs \$0.001 after FT. How many queries to break even?
 
 3. Analyze an anti-pattern: a team wants to fine-tune a 70B model on 50 examples for a general summarization task. Explain why this is problematic and recommend alternatives.
 

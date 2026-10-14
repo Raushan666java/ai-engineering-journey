@@ -136,7 +136,7 @@ IEC 62443 (formerly ISA‑99) is the international standard series for ICS secur
 |**Lifetime**|3–5 years|15–30 years|
 |**Communication**|Request/response (HTTP, SQL)|Real-time deterministic (Modbus, DNP3)|
 |**Security controls**|AV, EDR, firewalls, IDS|Application whitelisting, air gaps, data diodes|
-|**Risk tolerance**|Reboot acceptable|Reboot = production loss > $1M/hr|
+|**Risk tolerance**|Reboot acceptable|Reboot = production loss > \$1M/hr|
 |**Authentication**|MFA, SSO, PKI|Often none or shared passwords|
 |**Update mechanism**|Auto-update via Internet|USB sneakernet, physical media|
 
@@ -1988,7 +1988,7 @@ flowchart TD
 |**Dec 2016**|CRASHOVERRIDE (Ukraine grid second wave)|Ukrainian substation|One substation disconnected|Modular ICS attack framework with IEC 104, OPC, serial IEC 101 modules|
 |**Aug 2017**|TRITON/TRISIS|Saudi petrochemical plant|Safety system forced into halt/run cycle; plant shut down|Triconex TriStation 1131 protocol reverse-engineering|
 |**Mar 2019**|XT RAT (Water utility)|US water utility (undisclosed)|Remote access to water treatment PLCs|Modbus TCP manipulation via VPN jump|
-|**May 2021**|Colonial Pipeline (ransomware)|Colonial Pipeline OT environment|Pipeline shutdown for 6 days; $4.4M ransom|Ransomware on IT side cascaded to OT operations shutdown|
+|**May 2021**|Colonial Pipeline (ransomware)|Colonial Pipeline OT environment|Pipeline shutdown for 6 days; \$4.4M ransom|Ransomware on IT side cascaded to OT operations shutdown|
 |**Feb 2022**|Incontroller/Pipedream|Multiple vendors (Siemens, Schneider, Omron, Rockwell)|Pre-positioned framework; no destructive deployment|Cross-vendor Modbus/S7/FINS/CIP manipulation framework|
 |**Apr 2022**|VPNFilter (re-emergence)|Siemens industrial routers|Remote access to industrial networking gear|Router-level persistence with modular OT plugin architecture|
 

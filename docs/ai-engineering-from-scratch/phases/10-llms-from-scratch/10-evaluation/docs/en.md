@@ -34,7 +34,7 @@ There are three categories of evaluation, each with different cost and signal qu
 
 **Custom evals** are test suites you build for your specific use case. You define the inputs, the expected outputs, and the scoring function. A legal document summarizer gets evaluated on legal documents. A SQL generator gets evaluated on your database schema. These are expensive to create but they are the only evaluation that predicts production performance.
 
-**Human evals** use paid annotators to judge model outputs on criteria like helpfulness, correctness, fluency, and safety. The gold standard for open-ended tasks where automated scoring fails. Chatbot Arena has collected over 2 million human preference votes across 100+ models. The downside: cost ($0.10-$2.00 per judgment) and speed (hours to days).
+**Human evals** use paid annotators to judge model outputs on criteria like helpfulness, correctness, fluency, and safety. The gold standard for open-ended tasks where automated scoring fails. Chatbot Arena has collected over 2 million human preference votes across 100+ models. The downside: cost (\$0.10-\$2.00 per judgment) and speed (hours to days).
 
 ```mermaid
 graph TD
@@ -77,7 +77,7 @@ Perplexity is useful for comparing models on the same test set, but it has blind
 
 ### LLM-as-Judge
 
-Use a strong model to evaluate a weaker model's output. The idea is simple: ask GPT-4o or Claude Sonnet to rate a response on a 1-5 scale for correctness, helpfulness, and safety. This costs about $0.01 per judgment with GPT-4o-mini and correlates surprisingly well with human judgments -- around 80% agreement on most tasks.
+Use a strong model to evaluate a weaker model's output. The idea is simple: ask GPT-4o or Claude Sonnet to rate a response on a 1-5 scale for correctness, helpfulness, and safety. This costs about \$0.01 per judgment with GPT-4o-mini and correlates surprisingly well with human judgments -- around 80% agreement on most tasks.
 
 The scoring prompt matters more than the model. A vague prompt ("Rate this response") produces noisy scores. A structured prompt with a rubric ("Score 5 if the answer is factually correct and cites a source, 4 if correct but unsourced, 3 if partially correct...") produces consistent, reproducible scores.
 
@@ -130,10 +130,10 @@ The only eval that matters for production. The process:
 
 | Eval Type | Cost per judgment | Agreement with humans | Best for |
 |-----------|------------------|----------------------|----------|
-| Exact match | ~$0 | 100% (when applicable) | Structured output, classification |
-| BLEU/ROUGE | ~$0 | ~60% | Translation, summarization |
-| LLM-as-judge | ~$0.01 | ~80% | Open-ended generation |
-| Human eval | $0.10-$2.00 | N/A (is the ground truth) | Ambiguous, high-stakes tasks |
+| Exact match | ~\$0 | 100% (when applicable) | Structured output, classification |
+| BLEU/ROUGE | ~\$0 | ~60% | Translation, summarization |
+| LLM-as-judge | ~\$0.01 | ~80% | Open-ended generation |
+| Human eval | \$0.10-\$2.00 | N/A (is the ground truth) | Ambiguous, high-stakes tasks |
 
 ## Build It
 
@@ -501,7 +501,7 @@ It also produces `outputs/skill-llm-evaluation.md` -- a decision framework for c
 | SWE-bench | "Real coding eval" | 2,294 GitHub issues from 12 Python repos, measures end-to-end bug fixing including test generation |
 | Perplexity | "How confused the model is" | exp(-avg(log P(token_i given context))) -- lower means the model assigns higher probability to the actual tokens |
 | ELO rating | "Chess ranking for models" | A relative skill rating computed from pairwise win/loss records, used by Chatbot Arena to rank 100+ models |
-| LLM-as-judge | "Using AI to grade AI" | A strong model scores a weaker model's outputs against a rubric, ~80% agreement with human judges at ~$0.01/judgment |
+| LLM-as-judge | "Using AI to grade AI" | A strong model scores a weaker model's outputs against a rubric, ~80% agreement with human judges at ~\$0.01/judgment |
 | Data contamination | "The model saw the test" | Training data includes benchmark questions, inflating scores without improving real capability |
 | Eval suite | "A bunch of tests" | A versioned collection of (input, expected_output, scorer) triples that measure a specific capability |
 | Pass rate | "What percentage it gets right" | Fraction of eval cases scoring above a threshold -- more actionable than mean score because it measures reliability |

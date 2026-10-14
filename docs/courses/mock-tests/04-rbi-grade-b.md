@@ -150,7 +150,7 @@ A) Gross Domestic Product — total value of goods and services produced within 
 
 **Explanation:** GDP measures economic output within a country's borders. GNP includes income from abroad. GDP = C + I + G + (X-M) where C=Consumption, I=Investment, G=Government spending, X-M=Net exports.
 
-**Key Takeaway:** GDP (domestic) vs GNP (national). India's GDP is currently ~$3.7 trillion, making it the 5th largest economy.
+**Key Takeaway:** GDP (domestic) vs GNP (national). India's GDP is currently ~\$3.7 trillion, making it the 5th largest economy.
 </details>
 
 ---

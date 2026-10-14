@@ -1334,7 +1334,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 <details><summary>Solution</summary>1. First domain: 1 root + 1 TLD + 1 authoritative = 3 queries × 20ms = 60ms. Remaining 7 domains: resolver has root/TLD cached → 1 query each = 7 × 20ms = 140ms. Total DNS: 200ms. Page load: 120 resources × 50ms RTT (6 parallel connections) ≈ 1s + 200ms DNS = 1.2s. DNS contribution: 200/1200 ≈ 16.7%.
 2. Each PoP handles (attack + clean) / N PoPs. With 330 Cloudflare PoPs: (3500 Gbps) / 330 ≈ 10.6 Gbps per PoP, within 100 Gbps uplink. With 4,150 Akamai PoPs: 3500/4150 ≈ 0.84 Gbps per PoP. Minimum PoPs: ceil(3500/100) = 35 PoPs for Cloudflare; ceil(3500/100) = 35 for Akamai. Both exceed minimum.
 3. Assets with content hash in filename: Cache-Control: public, immutable, max-age=31536000 (1 year). HTML files (no hash): Cache-Control: public, max-age=0, must-revalidate. API responses: Cache-Control: public, max-age=60. Purge strategy: after deploy, purge all HTML and API cache keys (selective purge by cache tag), but not hashed assets (they have new filenames). Use surrogate-key headers to tag all HTML as "html" and all API as "api" for batch purge.
-4. (a) Without CDN: 10M × 200KB = 2000 GB/day × $0.09 = $180/day. (b) With 30% hit ratio: CDN serves 3M hits (600 GB × $0.02 = $12) + origin serves 7M misses (1400 GB × $0.09 = $126) = $138/day. (c) At 90% hit ratio: CDN 9M hits (1800 GB × $0.02 = $36) + origin 1M misses (200 GB × $0.09 = $18) = $54/day. Edge computing: 100K × $0.0000001 = $0.01/day, negligible.</details>
+4. (a) Without CDN: 10M × 200KB = 2000 GB/day × \$0.09 = \$180/day. (b) With 30% hit ratio: CDN serves 3M hits (600 GB × \$0.02 = \$12) + origin serves 7M misses (1400 GB × \$0.09 = \$126) = \$138/day. (c) At 90% hit ratio: CDN 9M hits (1800 GB × \$0.02 = \$36) + origin 1M misses (200 GB × \$0.09 = \$18) = \$54/day. Edge computing: 100K × \$0.0000001 = \$0.01/day, negligible.</details>
 
 ### Challenge Problem
 <details><summary>Solution</summary>Design a global edge architecture for a multiplayer game:
@@ -1347,4 +1347,4 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 **DDoS Mitigation**: Layer 3/4: anycast absorption (each PoP handles its share). Layer 7: WAF (OWASP ruleset, rate limiting at 100 req/s per IP). Scrubbing: traffic over 100 Gbps per PoP triggers automatic BGP diversion to scrubbing centers. Game-specific: validate game protocol packets before forwarding to matchmaking services.
 
-**Bandwidth**: 50M DAU × 100 requests/day × 2KB avg API response = 10 TB/day. Static patches: 500MB per patch × 10M updates/month = 5 TB/month. CDN egress: ~$0.02/GB × 10 TB = $200/day. Total monthly: ~$6,000 + $2,000 edge compute = ~$8,000/month.</details>
+**Bandwidth**: 50M DAU × 100 requests/day × 2KB avg API response = 10 TB/day. Static patches: 500MB per patch × 10M updates/month = 5 TB/month. CDN egress: ~\$0.02/GB × 10 TB = \$200/day. Total monthly: ~\$6,000 + \$2,000 edge compute = ~\$8,000/month.</details>

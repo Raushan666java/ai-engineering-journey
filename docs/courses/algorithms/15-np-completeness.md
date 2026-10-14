@@ -122,7 +122,7 @@ x \in L \iff \exists c \text{ with } |c| \le p(|x|) \text{ and } V(x, c) = \text
 
 **Real-world analogy:** If NP problems are all "hikes in the park," NP-complete problems are the most difficult trails — still hikes (in NP) but as hard as any possible hike.
 
-**The central question:** Is \( P = NP \)? That is, can every problem whose solution can be verified in polynomial time also be solved in polynomial time? This is one of the seven Millennium Prize Problems — a correct solution carries a $1M prize.
+**The central question:** Is \( P = NP \)? That is, can every problem whose solution can be verified in polynomial time also be solved in polynomial time? This is one of the seven Millennium Prize Problems — a correct solution carries a \$1M prize.
 
 > **Pro Tip:** The P vs NP question asks whether every efficiently verifiable problem is also efficiently solvable. Knowing that a problem is NP-complete is a signal to look for approximation, heuristics, or special cases — not to give up.
 >

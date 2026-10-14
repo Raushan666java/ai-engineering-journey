@@ -1780,7 +1780,7 @@ From a threat intelligence perspective, dark web markets are critical sources of
 **Cryptocurrency tracking:** Most markets use Bitcoin or Monero. Bitcoin's public ledger enables transaction graph analysis; Monero's ring signatures make tracing significantly harder.
 
 **Case study — AlphaBay takedown (2017):**
-AlphaBay was the largest dark web market, handling $600M–$800M in transactions. The FBI identified the administrator by linking the PGP key used on AlphaBay (admin@alphabaymarket.eu) to a personal email, then traced the email to a Canadian apartment via a compromised server log. The OPSEC failure: reusing a personal email handle as the market admin alias.
+AlphaBay was the largest dark web market, handling \$600M–\$800M in transactions. The FBI identified the administrator by linking the PGP key used on AlphaBay (admin@alphabaymarket.eu) to a personal email, then traced the email to a Canadian apartment via a compromised server log. The OPSEC failure: reusing a personal email handle as the market admin alias.
 
 ---
 

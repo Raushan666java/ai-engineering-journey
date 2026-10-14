@@ -707,7 +707,7 @@ class BigOHierarchy {
       "  EXP   = O(2^(n^k))",
       "  NEXP  = nondeterministic EXP",
       "",
-      "Key open question: P = NP? (Clay $1M Millennium Problem)"
+      "Key open question: P = NP? (Clay \$1M Millennium Problem)"
     ];
   }
 }

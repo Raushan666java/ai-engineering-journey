@@ -155,7 +155,7 @@ END
 
 | Edge Case | Scenario | Mitigation |
 |-----------|----------|------------|
-| Replay attack | Attacker resends a captured "transfer $1000" packet | Include timestamps + nonces in every message; use sequence numbers |
+| Replay attack | Attacker resends a captured "transfer \$1000" packet | Include timestamps + nonces in every message; use sequence numbers |
 | MITM with forged cert | Attacker presents fake certificate during TLS handshake | Certificate pinning; CA-signed certificates; CT logs |
 | DoS on firewall | Attacker floods firewall with incomplete connections exhausting state table | SYN cookies; connection rate limits; asymmetric firewall design |
 | Amplification attack | Small spoofed DNS query generates large response to victim | BCP 38 ingress filtering; disable open resolvers |

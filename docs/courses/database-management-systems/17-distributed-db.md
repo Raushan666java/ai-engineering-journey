@@ -832,7 +832,7 @@ A distributed transaction accesses and updates data stored at multiple sites whi
 
 #### Real-World Analogy: Inter-Bank Wire Transfer
 
-Alice (Bank of America) sends $1000 to Bob (HSBC London):
+Alice (Bank of America) sends \$1000 to Bob (HSBC London):
 1. **Prepare phase**: Both banks check if accounts exist and have sufficient balance
 2. **Commit phase**: Both banks deduct and credit simultaneously
 3. If HSBC fails mid-transaction, Bank of America must also rollback (atomicity)
@@ -887,13 +887,13 @@ END PROCEDURE
 
 **Dry Run Trace: 2PC Successful Commit**
 
-Transaction T1: Transfer $500 from Account A (Site 1) to Account B (Site 2).
+Transaction T1: Transfer \$500 from Account A (Site 1) to Account B (Site 2).
 
 | Step | Coordinator State | Participant 1 (Site 1) State | Participant 2 (Site 2) State |
 |------|-------------------|------------------------------|------------------------------|
 | 0 | INIT | IDLE | IDLE |
 | 1 | Send PREPARE to P1,P2 | Receives PREPARE | Receives PREPARE |
-| 1a | WAIT | Executes T1 locally (deduct $500), logs PREPARED | Executes T1 locally (credit $500), logs PREPARED |
+| 1a | WAIT | Executes T1 locally (deduct \$500), logs PREPARED | Executes T1 locally (credit \$500), logs PREPARED |
 | 1b | → | Sends YES | Sends YES |
 | 2 | Receives YES from both | → | → |
 | 2a | All YES → decides COMMIT | → | → |
@@ -904,7 +904,7 @@ Transaction T1: Transfer $500 from Account A (Site 1) to Account B (Site 2).
 | 4 | Receives both ACKs | → | → |
 | 4a | Logs DONE, transaction complete | → | → |
 
-Final state: T1 committed. Account A: -$500, Account B: +$500.
+Final state: T1 committed. Account A: -\$500, Account B: +\$500.
 
 **Dry Run Trace: 2PC Abort (Participant 2 votes NO)**
 
@@ -2393,7 +2393,7 @@ flowchart LR
 
 5. Consider an orders table with 100M rows, accessed from two data centers (NY and London). 80% of queries access orders from the local region, 20% query globally. Design a fragmentation and replication strategy. Justify your choices.
 
-6. Walk through the 2PC protocol for a transfer of $500 from Account A (at Site 1) to Account B (at Site 2). What happens if Site 2 crashes after sending "YES" but before receiving the commit? What happens if the coordinator crashes after all "YES" responses but before sending commits?
+6. Walk through the 2PC protocol for a transfer of \$500 from Account A (at Site 1) to Account B (at Site 2). What happens if Site 2 crashes after sending "YES" but before receiving the commit? What happens if the coordinator crashes after all "YES" responses but before sending commits?
 
 7. Compare eager (synchronous) and lazy (asynchronous) replication. Under what conditions would you choose each? What consistency guarantees does each provide?
 

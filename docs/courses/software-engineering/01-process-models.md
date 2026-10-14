@@ -999,7 +999,7 @@ An aerospace company developing flight control software adopted the Spiral model
 
 ### Case Study: Scrum at a Fintech Startup
 
-A fintech startup developing a mobile payments app adopted Scrum with 2-week Sprints. The Product Owner maintained a prioritised backlog. The team of 6 developers achieved a velocity of 35 story points per Sprint. After 8 Sprints, they released a minimum viable product with core payment functionality. After 12 Sprints, they had processed $10M in transactions. Key success factors: dedicated PO, automated CI/CD pipeline, and daily stand-ups with real impediment removal.
+A fintech startup developing a mobile payments app adopted Scrum with 2-week Sprints. The Product Owner maintained a prioritised backlog. The team of 6 developers achieved a velocity of 35 story points per Sprint. After 8 Sprints, they released a minimum viable product with core payment functionality. After 12 Sprints, they had processed \$10M in transactions. Key success factors: dedicated PO, automated CI/CD pipeline, and daily stand-ups with real impediment removal.
 
 ### Case Study: Water-Scrum-Fall at a Bank
 

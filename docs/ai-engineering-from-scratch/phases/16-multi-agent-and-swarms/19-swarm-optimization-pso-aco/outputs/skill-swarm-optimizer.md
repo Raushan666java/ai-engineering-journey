@@ -34,7 +34,7 @@ Hard rejects:
 Refusal rules:
 
 - If the user is trying to optimize something with no clear fitness function, recommend defining fitness first. Swarm optimizers cannot help without an evaluator.
-- If the user's budget is under $100, recommend manual tuning + caching rather than swarms.
+- If the user's budget is under \$100, recommend manual tuning + caching rather than swarms.
 - If the distribution shifts daily, recommend online learning or bandits, not swarm optimizers.
 
 Output: a one-page brief. Start with a one-sentence recommendation ("Use ACO with quality-gated pheromone deposits on a 3-agent × 4-task-type routing problem. Decay 0.05, threshold 0.6, 200 warmup tasks."), then the seven sections above. End with a budget estimate and a 1-week rollout plan.

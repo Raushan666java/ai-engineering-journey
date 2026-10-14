@@ -3689,7 +3689,7 @@ Lessons Learned:
 ### 12.4 Target 2013
 
 
-**Background:** During the 2013 holiday season, Target suffered a massive data breach where attackers stole credit/debit card information for 40 million customers and personal information for 70 million customers. The forensic investigation traced the breach back to a third-party HVAC vendor's compromised credentials and POS malware. Total cost: $202 million in settlement and remediation.
+**Background:** During the 2013 holiday season, Target suffered a massive data breach where attackers stole credit/debit card information for 40 million customers and personal information for 70 million customers. The forensic investigation traced the breach back to a third-party HVAC vendor's compromised credentials and POS malware. Total cost: \$202 million in settlement and remediation.
 
 **Technical Attack Chain (Full Forensic Reconstruction):**
 

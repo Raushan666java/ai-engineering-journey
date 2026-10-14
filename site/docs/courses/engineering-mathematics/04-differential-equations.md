@@ -586,7 +586,7 @@ where $S$ = susceptible, $I$ = infected, $R$ = recovered, $\beta$ = transmission
 
 **Key Epidemiological Parameters:**
 - **Basic reproduction number:** $R_0 = \beta S_0 / \gamma$ ? average number of secondary infections
-- **Herd immunity threshold:** $1 - 1/R_0$ ? fraction of population that must be immune
+- **Herd immunity threshold:** \$1 - 1/R_0$ ? fraction of population that must be immune
 - **Peak infection:** Occurs when $S = \gamma/\beta$ (where $dI/dt = 0$)
 
 ```typescript

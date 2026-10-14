@@ -51,12 +51,12 @@ A **transaction** is a logical unit of work that accesses and possibly modifies 
 ### Real-World Analogy: Bank Transfer
 
 
-Alice transfers $500 from Account A (balance: $1000) to Account B (balance: $500). This involves:
+Alice transfers \$500 from Account A (balance: \$1000) to Account B (balance: \$500). This involves:
 
-- Account A: 1000 → 500 (debit $500)
-- Account B: 500 → 1000 (credit $500)
+- Account A: 1000 → 500 (debit \$500)
+- Account B: 500 → 1000 (credit \$500)
 
-If the system crashes after debiting A but before crediting B, $500 vanishes from the system. A transaction ensures either both steps happen or neither does.
+If the system crashes after debiting A but before crediting B, \$500 vanishes from the system. A transaction ensures either both steps happen or neither does.
 
 ### Numbered Steps of a Transaction Lifecycle
 
@@ -344,7 +344,7 @@ ACID is an acronym for Atomicity, Consistency, Isolation, Durability — the fou
 T1: A = A - 500    (written to disk)
 T1: B = B + 500    (NOT written — crash occurs)
 \`\`\`
-Without atomicity: $500 is lost from the system.
+Without atomicity: \$500 is lost from the system.
 With atomicity (WAL undo): A is restored to its original value.
 
 **Complexity:** O(1) overhead per write operation for log record creation. O(n) for crash recovery scan of log.
@@ -383,7 +383,7 @@ T2: WRITE(A, 1000 - 200) → A = 800  (overwrites T1's update!)
 T1: COMMIT
 T2: COMMIT
 \`\`\`
-Final value: A = 800. Lost $300 from T1's update. With SERIALIZABLE isolation, T2 would wait for T1 to complete.
+Final value: A = 800. Lost \$300 from T1's update. With SERIALIZABLE isolation, T2 would wait for T1 to complete.
 
 **Complexity:** Locking adds O(1) lock acquisition overhead per operation. Deadlock detection is O(n²) where n = number of transactions. MVCC adds version storage overhead.
 
@@ -1290,7 +1290,7 @@ T1: A = A - 500 → Writes A=500
 T2: A = A - 200 → Writes A=800 (overwrites T1!)
 T1: COMMIT
 T2: COMMIT
-Final: A = 800 ($700 lost!)
+Final: A = 800 (\$700 lost!)
 \`\`\`
 
 | Time | T1 | T2 | A (T1 view) | A (T2 view) | Disk A |

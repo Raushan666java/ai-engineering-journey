@@ -1619,7 +1619,7 @@ The DarkSide ransomware attack on Colonial Pipeline demonstrated the real-world 
 | Attribution | DarkSide (Russian-speaking ransomware group, since disbanded) |
 | Initial Access | VPN credentials obtained via phishing/reused password |
 | Duration | 2 hours from initial access to 100GB exfiltration |
-| Ransom Paid | ~$4.4 million (75 BTC) |
+| Ransom Paid | ~\$4.4 million (75 BTC) |
 | Impact | 5,500-mile pipeline shut down, aviation fuel shortages, US emergency declaration |
 
 **Attack Timeline:**

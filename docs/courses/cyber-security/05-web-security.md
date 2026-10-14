@@ -684,7 +684,7 @@ public String transfer(@RequestParam String _csrf, ...) {
 
 **Attack Type:** OGNL Injection via Content-Type header (RCE)
 **Impact:** 147 million records stolen
-**Cost:** $1.4 billion+
+**Cost:** \$1.4 billion+
 #### Full Attack Chain
 
 1. **Reconnaissance:** Attacker identifies Equifax uses Apache Struts 2 with REST plugin

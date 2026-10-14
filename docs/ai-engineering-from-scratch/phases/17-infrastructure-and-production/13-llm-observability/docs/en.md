@@ -1,6 +1,6 @@
 # LLM Observability Stack Selection
 
-> The 2026 observability market splits into two categories. Development platforms (LangSmith, Langfuse, Comet Opik) bundle monitoring with evals, prompt management, session replays. Gateway/instrumentation tools (Helicone, SigNoz, OpenLLMetry, Phoenix) focus on telemetry. Langfuse is MIT-licensed core with strong OSS balance (50K events/month free cloud). Phoenix is OpenTelemetry-native under Elastic License 2.0 — excellent for drift/RAG visualization, not a persistent production backend. Arize AX uses zero-copy Iceberg/Parquet integration claiming 100x cheaper than monolithic observability. LangSmith leads for LangChain/LangGraph, $39/user/mo, self-host in Enterprise only. Helicone is proxy-based with 15-30 min setup, 100K req/mo free, but less depth on agent traces. Common production pattern: Gateway (Helicone/Portkey) + eval platform (Phoenix/TruLens) glued by OpenTelemetry.
+> The 2026 observability market splits into two categories. Development platforms (LangSmith, Langfuse, Comet Opik) bundle monitoring with evals, prompt management, session replays. Gateway/instrumentation tools (Helicone, SigNoz, OpenLLMetry, Phoenix) focus on telemetry. Langfuse is MIT-licensed core with strong OSS balance (50K events/month free cloud). Phoenix is OpenTelemetry-native under Elastic License 2.0 — excellent for drift/RAG visualization, not a persistent production backend. Arize AX uses zero-copy Iceberg/Parquet integration claiming 100x cheaper than monolithic observability. LangSmith leads for LangChain/LangGraph, \$39/user/mo, self-host in Enterprise only. Helicone is proxy-based with 15-30 min setup, 100K req/mo free, but less depth on agent traces. Common production pattern: Gateway (Helicone/Portkey) + eval platform (Phoenix/TruLens) glued by OpenTelemetry.
 
 **Type:** Learn
 **Languages:** Python (stdlib, toy trace-sampling simulator)
@@ -20,7 +20,7 @@ You shipped an LLM feature. It works. You have no visibility into prompt failure
 
 They don't solve the same problem. LangSmith answers "why did this LangGraph run fail?" Phoenix answers "is my RAG pipeline drifting?" Helicone answers "which app is burning tokens?" Langfuse answers "can I self-host the whole thing?" Different tools, different audiences.
 
-Picking involves four axes: stack (LangChain? raw SDK? multi-vendor?), license tolerance (MIT only? Elastic OK? commercial fine?), budget (free tier? $100/mo? $1000/mo?), and self-host (must? nice-to-have? never?).
+Picking involves four axes: stack (LangChain? raw SDK? multi-vendor?), license tolerance (MIT only? Elastic OK? commercial fine?), budget (free tier? \$100/mo? \$1000/mo?), and self-host (must? nice-to-have? never?).
 
 ## The Concept
 
@@ -33,7 +33,7 @@ Picking involves four axes: stack (LangChain? raw SDK? multi-vendor?), license t
 ### Langfuse — OSS balance
 
 - Core Apache / MIT licensed; self-host via Docker.
-- Cloud free tier: 50K events/month. Paid: $29/mo for team.
+- Cloud free tier: 50K events/month. Paid: \$29/mo for team.
 - Evals, prompt management, traces, datasets. Reasonable coverage of all four dev-platform features.
 - Sweet spot: you want LangSmith-class features but must self-host or stay on OSS license.
 
@@ -52,14 +52,14 @@ Picking involves four axes: stack (LangChain? raw SDK? multi-vendor?), license t
 
 ### LangSmith — LangChain/LangGraph first
 
-- Commercial, $39/user/month. Self-host only on Enterprise.
+- Commercial, \$39/user/month. Self-host only on Enterprise.
 - Best-in-class for LangChain and LangGraph stacks. If you are not on either, it is less compelling.
 - Sweet spot: team committed to LangChain, willing to pay.
 
 ### Helicone — proxy-based minimum viable
 
 - 15-30 minute setup by swapping your `OPENAI_API_BASE` to Helicone proxy.
-- MIT licensed; 100K req/mo free, paid $20/mo+.
+- MIT licensed; 100K req/mo free, paid \$20/mo+.
 - Includes failover, caching, rate limits — acts as a gateway too.
 - Less depth on agent / multi-step traces.
 - Sweet spot: quick start, single-stack app, need gateway + observability in one.
@@ -95,7 +95,7 @@ At >1M requests/day, full-trace retention costs more than the LLM calls. Sample 
 ### Numbers you should remember
 
 - Langfuse free cloud: 50K events/month.
-- LangSmith: $39/user/month.
+- LangSmith: \$39/user/month.
 - Helicone free: 100K req/month.
 - Arize AX claim: ~100x cheaper than monolithic at scale.
 - OpenTelemetry GenAI conventions: 2025 shipping, 2026 widely adopted.
@@ -111,7 +111,7 @@ This lesson produces `outputs/skill-observability-stack.md`. Given stack, scale,
 ## Exercises
 
 1. Your team on LangChain wants OSS self-hosted observability. Pick Langfuse or Opik and justify.
-2. At 5M traces/day with Datadog quotes $150K/month, compute break-even for Arize AX.
+2. At 5M traces/day with Datadog quotes \$150K/month, compute break-even for Arize AX.
 3. Design an OpenTelemetry GenAI attribute set your org's guideline should mandate on every LLM call.
 4. Argue whether Phoenix alone is sufficient for production. When does it not suffice?
 5. Helicone is 20ms proxy overhead. At P99 TTFT 300 ms, is that acceptable? What if SLA is 100 ms?

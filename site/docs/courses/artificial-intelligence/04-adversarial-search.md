@@ -93,7 +93,7 @@ flowchart LR
 ### 2. Minimax Algorithm
 
 
-> **Real-World Analogy — Buyer vs Seller Negotiation:** Imagine you are selling a used car and a buyer is negotiating. You want the highest price (MAX), the buyer wants the lowest (MIN). You propose $10,000. The buyer can either accept or counter-offer. If they counter, you can accept, reject, or counter again. The minimax algorithm models exactly this adversarial back-and-forth, assuming the buyer always picks the option that leaves you worst off — and you plan accordingly.
+> **Real-World Analogy — Buyer vs Seller Negotiation:** Imagine you are selling a used car and a buyer is negotiating. You want the highest price (MAX), the buyer wants the lowest (MIN). You propose \$10,000. The buyer can either accept or counter-offer. If they counter, you can accept, reject, or counter again. The minimax algorithm models exactly this adversarial back-and-forth, assuming the buyer always picks the option that leaves you worst off — and you plan accordingly.
 
 **Definition:** The Minimax algorithm computes the optimal move for a player (MAX) assuming the opponent (MIN) also plays optimally. It is a **recursive depth-first search** over the game tree.
 
@@ -243,7 +243,7 @@ def find_best_move(board, depth):
 ### 3. Alpha-Beta Pruning
 
 
-> **Real-World Analogy — Real Estate Shopping:** You are house-hunting. You see a house listed at $500,000 and love it — it is your current best find (α = 500k). Now you tour another house. The realtor shows you the kitchen, then mentions the foundation has cracks. You immediately know fixing the foundation will cost $100k, bringing this house to at least $600k. You stop the tour — there is no need to see the bedrooms because the house is already worse than your current best. This is exactly how alpha-beta pruning works: once a branch proves it cannot beat the current best option, you **prune** it without further exploration.
+> **Real-World Analogy — Real Estate Shopping:** You are house-hunting. You see a house listed at \$500,000 and love it — it is your current best find (α = 500k). Now you tour another house. The realtor shows you the kitchen, then mentions the foundation has cracks. You immediately know fixing the foundation will cost \$100k, bringing this house to at least \$600k. You stop the tour — there is no need to see the bedrooms because the house is already worse than your current best. This is exactly how alpha-beta pruning works: once a branch proves it cannot beat the current best option, you **prune** it without further exploration.
 
 **Definition:** Alpha-Beta pruning is an enhancement to Minimax that avoids exploring branches that cannot possibly influence the final decision. It maintains two bounds — α (the best MAX can guarantee) and β (the best MIN can guarantee) — and prunes subtrees when α ≥ β.
 

@@ -899,7 +899,7 @@ this will still pass for inputs up to 10³."</p>
     <p><strong>Pramp</strong>: Free, matches you with peers at similar level. Good for DSA practice. Sessions are 1 hour with 2 problems (each person solves one, then reviews the other's). Inconsistent quality but best free option.</p>
     <p><strong>interviewing.io</strong>: Anonymous, free for interviewers, paid for interviewees. Interviewers are engineers at FAANG/unicorns. High quality but limited availability for free tier.</p>
     <p><strong>Discord communities</strong>: CS Career Hub, Tech Interview Handbook, Blind. Look for #mock-interview channels. Coordinate with peers at similar levels. Be reliable — don't no-show.</p>
-    <p><strong>Meetapro/Prepfully</strong>: Paid ($30-$100/session). Choose your interviewer (company, role, experience). Guaranteed quality. Good for targeted practice at specific companies.</p>
+    <p><strong>Meetapro/Prepfully</strong>: Paid (\$30-\$100/session). Choose your interviewer (company, role, experience). Guaranteed quality. Good for targeted practice at specific companies.</p>
     <p><strong>Alumni networks</strong>: Your university's alumni network. Reach out to senior alumni at target companies. Most will do 1-2 mock interviews as a favor. Be respectful of their time.</p>
     <p><strong>Pro tip for peer practice</strong>: Exchange a problem set beforehand so your partner can prepare. Take turns being the interviewer — being an interviewer also teaches you what evaluators look for.</p>
   </div>

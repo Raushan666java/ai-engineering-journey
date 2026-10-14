@@ -2309,6 +2309,6 @@ The capstone integrates every loop concept from this course into a single, coher
     - Groups edits by file and presents a single review gate per file
     - Posts the review comment on the PR via `bash: gh pr comment {url} --body {review}`
     - Checkpoints after each file review so partial progress survives crashes
-    - Enforces a $0.25 max cost per review session
+    - Enforces a \$0.25 max cost per review session
 
     Test it on a public repository with known issues. Report: (a) how many issues it found, (b) how many false positives, (c) what percentage of the budget was consumed.

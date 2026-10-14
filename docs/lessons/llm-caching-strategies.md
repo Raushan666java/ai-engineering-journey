@@ -12,7 +12,7 @@
 
 ## Concept Overview
 
-LLM inference is expensive in two currencies: **time** and **tokens**. A single 70B model call at 2K output tokens costs roughly $0.002 in compute and takes 500-3000 ms depending on load. For any application serving thousands of requests, caching is not an optimization — it is a prerequisite for viability.
+LLM inference is expensive in two currencies: **time** and **tokens**. A single 70B model call at 2K output tokens costs roughly \$0.002 in compute and takes 500-3000 ms depending on load. For any application serving thousands of requests, caching is not an optimization — it is a prerequisite for viability.
 
 Three fundamentally different caching mechanisms exist, and confusing them is the most common mistake:
 
@@ -51,7 +51,7 @@ For a typical setup with t_embed = 5 ms, t_search = 2 ms, t_llm = 3000 ms, and p
 - net_gain = 0.4 * 3000 - 5 - 2 = 1193 ms saved per request on average
 - The cache pays for itself after roughly 3 misses per hit (the overhead of embedding + searching one request is 7 ms; the saving on one hit is 3000 ms)
 
-The more expensive the LLM call, the lower the break-even hit rate. For cheap small-model calls (50 ms, $0.0001), only very high hit rates (>30%) justify the cache. For expensive large-model calls (3000 ms, $0.01), even a 5% hit rate can be worth it.
+The more expensive the LLM call, the lower the break-even hit rate. For cheap small-model calls (50 ms, \$0.0001), only very high hit rates (>30%) justify the cache. For expensive large-model calls (3000 ms, \$0.01), even a 5% hit rate can be worth it.
 
 ### Cache Invalidation
 

@@ -2980,7 +2980,7 @@ A BGP hijack occurs when an AS advertises a prefix it does not own, diverting tr
 | Event | Year | Impact |
 |-------|------|--------|
 | YouTube/Pakistan | 2008 | Pakistan Telecom hijacked YouTube's prefix; global YouTube outage for ~2 hours |
-| MyEtherWallet | 2018 | AWS Route 53 hijack redirected users to phishing site; $17M stolen |
+| MyEtherWallet | 2018 | AWS Route 53 hijack redirected users to phishing site; \$17M stolen |
 | Rostelecom | 2017 | Russian ISP hijacked prefixes from 50+ CDNs and financial services |
 | AS7007 incident | 1997 | MAI Network Services accidentally announced 0.0.0.0/0, breaking the Internet |
 

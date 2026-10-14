@@ -273,10 +273,10 @@ async function uploadToIPFS(metadata: NFTMetadata): Promise<string> {
 
 | Provider | Free Tier | Paid Tier | WebSocket | Special Features |
 |----------|-----------|-----------|-----------|------------------|
-| Infura | 100K req/day | $50+/mo | Yes | Most mature, ETH/L2 support |
-| Alchemy | 300M compute units/mo | $49+/mo | Yes | Enhanced APIs, NFT, WebSocket |
-| QuickNode | 25K req/mo | $9+/mo | Yes | Multi-chain, dedicated nodes |
-| Moralis | 40K tx/mo | $49+/mo | Yes | Cross-chain, webhooks |
+| Infura | 100K req/day | \$50+/mo | Yes | Most mature, ETH/L2 support |
+| Alchemy | 300M compute units/mo | \$49+/mo | Yes | Enhanced APIs, NFT, WebSocket |
+| QuickNode | 25K req/mo | \$9+/mo | Yes | Multi-chain, dedicated nodes |
+| Moralis | 40K tx/mo | \$49+/mo | Yes | Cross-chain, webhooks |
 | Public RPC | Unlimited (rate limited) | Free | Limited | ethers.providers.JsonRpcProvider |
 
 ### ENS (Ethereum Name Service)

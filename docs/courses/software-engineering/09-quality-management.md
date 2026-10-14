@@ -1264,7 +1264,7 @@ NASA's Space Shuttle software (developed by IBM) had a defect rate of 0.1 defect
 - **Static analysis:** Rigorous use of tools before every build
 - **Zero-defect policy:** No known defects were allowed in flight software
 
-The cost of this quality was $1,000 per line of code, but the cost of failure was unthinkable.
+The cost of this quality was \$1,000 per line of code, but the cost of failure was unthinkable.
 
 **Case Study 3: Microsoft — Quality Transformation with Windows**
 

@@ -485,7 +485,7 @@ class CFLClosureTester {
 
     for (const [prop, closed] of Object.entries(this.CLOSURE_PROPERTIES)) {
       const status = closed ? "? Closed" : "? Not closed";
-      const name = prop.replace(/([A-Z])/g, " $1").replace(/^./, c => c.toUpperCase());
+      const name = prop.replace(/([A-Z])/g, " \$1").replace(/^./, c => c.toUpperCase());
       output.push(`  ${name.padEnd(30)} ${status}`);
     }
 

@@ -992,7 +992,7 @@ qa_prep.print_study_guide()
   <div class="tp-qa-answer">
     <p>I start with outcomes, not metrics. Instead of saying "our F1 score improved from 0.78 to 0.89," I say: "Our model now correctly identifies 92% of fraudulent transactions, up from 78%. It misses 8% instead of 22%. For every 100 alerts it raises, 94 are real fraud — up from 85."</p>
     <p>I avoid terms like precision, recall, or AUC-ROC. I use: "How often is it right when it flags something?" and "How much does it miss?"</p>
-    <p>I also add context: "This means we will block $200K more in fraud per month while reviewing 60% fewer false alarms."</p>
+    <p>I also add context: "This means we will block \$200K more in fraud per month while reviewing 60% fewer false alarms."</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>
@@ -1036,11 +1036,11 @@ qa_prep.print_study_guide()
   </summary>
   <div class="tp-qa-answer">
     <p>I use the TL;DR-first structure:</p>
-    <p><strong>Subject/TL;DR</strong>: "New fraud detection model blocks 3x more fraud with 60% fewer false positives, saving $2.4M/year."</p>
+    <p><strong>Subject/TL;DR</strong>: "New fraud detection model blocks 3x more fraud with 60% fewer false positives, saving \$2.4M/year."</p>
     <p>Then four sections, each 2-3 sentences:</p>
     <p><strong>Problem</strong>: "Current rules miss 40% of fraud and flag 15% of legitimate transactions."</p>
     <p><strong>Approach</strong>: "We trained an ensemble model on 18 months of transaction data. It processes each transaction in under 50ms."</p>
-    <p><strong>Results</strong>: "92% detection rate. 6% false positive rate. $2.4M annual savings."</p>
+    <p><strong>Results</strong>: "92% detection rate. 6% false positive rate. \$2.4M annual savings."</p>
     <p><strong>Ask</strong>: "Approve production rollout with 2-week canary deployment starting next sprint."</p>
     <p>The entire summary fits on one page and takes 2 minutes to read.</p>
   </div>
@@ -1277,7 +1277,7 @@ d) Say it is not relevant
 
 ### Resume Tips
 - **Technical Skills**: List presentation and communication skills alongside technical skills
-- **Project Description**: "Presented ML model results to executive stakeholders, securing $500K budget for production rollout"
+- **Project Description**: "Presented ML model results to executive stakeholders, securing \$500K budget for production rollout"
 - **Keywords**: Data storytelling, technical communication, stakeholder presentations, AI demos, executive summaries
 
 ### Interview Day Checklist

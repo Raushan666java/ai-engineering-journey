@@ -163,7 +163,7 @@ In standard K-fold cross-validation, each fold is created by random sampling wit
 - **Accuracy**: $(TP+TN) / (TP+TN+FP+FN)$. Simple but misleading for imbalanced datasets.
 - **Precision**: $TP / (TP+FP)$. "Of all predicted positives, how many were actually positive?"
 - **Recall (Sensitivity)**: $TP / (TP+FN)$. "Of all actual positives, how many were correctly predicted?"
-- **F1-Score**: Harmonic mean of Precision and Recall. $2 \cdot \frac{Precision \cdot Recall}{Precision + Recall}$.
+- **F1-Score**: Harmonic mean of Precision and Recall. \$2 \cdot \frac{Precision \cdot Recall}{Precision + Recall}$.
 - **ROC-AUC**: The Area Under the Receiver Operating Characteristic Curve. It measures the model's ability to distinguish between classes across all possible thresholds.
 
 ### Multi-Class Classification Metrics
@@ -194,7 +194,7 @@ Regression problems require different evaluation metrics because there are no "p
 - **Mean Squared Error (MSE)**: $\frac{1}{n}\sum_{i=1}^{n} (y_i - \hat{y}_i)^2$. Penalizes large errors heavily.
 - **Root Mean Squared Error (RMSE)**: $\sqrt{\text{MSE}}$. Interpretable in the same units as $y$.
 - **Mean Absolute Error (MAE)**: $\frac{1}{n}\sum_{i=1}^{n} |y_i - \hat{y}_i|$. Robust to outliers.
-- **R? (Coefficient of Determination)**: $1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}$. Proportion of variance explained. Can be negative for poor models.
+- **R? (Coefficient of Determination)**: \$1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}$. Proportion of variance explained. Can be negative for poor models.
 - **Adjusted R?**: $1 - \frac{(1 - R^2)(n - 1)}{n - p - 1}$. Penalizes adding irrelevant features, where $p$ is the number of predictors.
 
 ```mermaid
@@ -331,8 +331,8 @@ Running a single cross-validation and picking the model with the higher mean sco
 A medical test for a disease.
 - **Data**: 100 people tested. 10 have the disease.
 - **Predictions**: Model identifies 8 correctly (TP), misses 2 (FN), and incorrectly identifies 5 healthy people as having the disease (FP).
-- **Recall**: $8/10 = 0.8$. (Good, we caught 80% of cases).
-- **Precision**: $8/(8+5) = 0.61$. (Moderate, many false alarms).
+- **Recall**: \$8/10 = 0.8$. (Good, we caught 80% of cases).
+- **Precision**: \$8/(8+5) = 0.61$. (Moderate, many false alarms).
 - **Summary**: In medicine, high Recall is often prioritized over Precision.
 
 ### Example 2: K-fold Cross-Validation in TypeScript
@@ -684,15 +684,15 @@ for (const point of curve) {
 | Precision | $\frac{TP}{TP + FP}$ |
 | Recall (Sensitivity) | $\frac{TP}{TP + FN}$ |
 | Specificity | $\frac{TN}{TN + FP}$ |
-| F1-Score | $2 \cdot \frac{P \cdot R}{P + R}$ |
+| F1-Score | \$2 \cdot \frac{P \cdot R}{P + R}$ |
 | Macro F1 | $\frac{1}{C}\sum_{i=1}^{C} F1_i$ |
 | Weighted F1 | $\sum_{i=1}^{C} \frac{n_i}{N} \cdot F1_i$ |
 | Bias-Variance Decomposition | $E[(y - \hat{f})^2] = \text{Bias}[\hat{f}]^2 + \text{Var}[\hat{f}] + \sigma^2$ |
 | MSE | $\frac{1}{n}\sum_{i=1}^{n} (y_i - \hat{y}_i)^2$ |
 | RMSE | $\sqrt{\frac{1}{n}\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$ |
 | MAE | $\frac{1}{n}\sum_{i=1}^{n} \|y_i - \hat{y}_i\|$ |
-| R? | $1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}$ |
-| Adjusted R? | $1 - \frac{(1 - R^2)(n - 1)}{n - p - 1}$ |
+| R? | \$1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}$ |
+| Adjusted R? | \$1 - \frac{(1 - R^2)(n - 1)}{n - p - 1}$ |
 | K-fold CV Estimate | $\frac{1}{K} \sum_{i=1}^{K} \text{Score}_i$ |
 | ROC Space | x-axis: FPR (1 - Specificity); y-axis: TPR (Recall) |
 | Grid Search Complexity | $O(\prod_{i=1}^{m} n_i)$ where $n_i$ = values per hyperparameter |

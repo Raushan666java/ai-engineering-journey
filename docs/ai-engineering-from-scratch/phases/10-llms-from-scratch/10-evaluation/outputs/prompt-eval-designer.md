@@ -60,7 +60,7 @@ Define what "good enough" means:
 Specify how to run the eval:
 
 - Command to execute the full suite
-- Expected runtime and cost (LLM-as-judge adds ~$0.01 per case)
+- Expected runtime and cost (LLM-as-judge adds ~\$0.01 per case)
 - Output format (JSON results file with per-case scores)
 - Integration with CI/CD (run on every prompt change, model upgrade, or code deployment)
 

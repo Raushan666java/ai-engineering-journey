@@ -1,6 +1,6 @@
 # Inference Platform Economics — Fireworks, Together, Baseten, Modal, Replicate, Anyscale
 
-> The 2026 inference market is no longer GPU time rental. It bifurcates into custom silicon (Groq, Cerebras, SambaNova), GPU platforms (Baseten, Together, Fireworks, Modal), and API-first marketplaces (Replicate, DeepInfra). Fireworks raised price $1/hr per GPU on May 1, 2026, and $4B valuation on 10T+ tokens/day tells you the volume-driven model works. Baseten closed $300M Series E at $5B in January 2026. The competitive positioning rule is simple: Fireworks optimizes latency, Together optimizes catalog breadth, Baseten optimizes enterprise polish, Modal optimizes Python-native DX, Replicate optimizes multimodal reach, Anyscale optimizes distributed Python. This lesson gives you a matrix you can hand a founder.
+> The 2026 inference market is no longer GPU time rental. It bifurcates into custom silicon (Groq, Cerebras, SambaNova), GPU platforms (Baseten, Together, Fireworks, Modal), and API-first marketplaces (Replicate, DeepInfra). Fireworks raised price \$1/hr per GPU on May 1, 2026, and \$4B valuation on 10T+ tokens/day tells you the volume-driven model works. Baseten closed \$300M Series E at \$5B in January 2026. The competitive positioning rule is simple: Fireworks optimizes latency, Together optimizes catalog breadth, Baseten optimizes enterprise polish, Modal optimizes Python-native DX, Replicate optimizes multimodal reach, Anyscale optimizes distributed Python. This lesson gives you a matrix you can hand a founder.
 
 **Type:** Learn
 **Languages:** Python (stdlib, toy per-call economics comparator)
@@ -26,7 +26,7 @@ This lesson models the six and tells you when each wins.
 
 ### The three segments
 
-**Custom silicon** — Groq (LPU), Cerebras (WSE), SambaNova (RDU). Typically 5-10x faster decode than a GPU-based cluster on the same model. Higher per-token price (Groq was ~$0.99/M on Llama-70B late 2025) but unbeatable for latency-sensitive use cases. Groq is the production pick for voice agents and real-time translation.
+**Custom silicon** — Groq (LPU), Cerebras (WSE), SambaNova (RDU). Typically 5-10x faster decode than a GPU-based cluster on the same model. Higher per-token price (Groq was ~\$0.99/M on Llama-70B late 2025) but unbeatable for latency-sensitive use cases. Groq is the production pick for voice agents and real-time translation.
 
 **GPU platforms** — Baseten, Together, Fireworks, Modal, Anyscale. Run on NVIDIA (H100, H200, B200 in 2026) or sometimes AMD. The economic layer between "raw GPU rental" (RunPod, Lambda) and "hyperscaler managed service" (Bedrock).
 
@@ -37,8 +37,8 @@ This lesson models the six and tells you when each wins.
 - FireAttention engine (custom); marketed as 4x lower latency than vLLM on equivalent configs.
 - Batch tier at ~50% of serverless rate for non-interactive workloads.
 - Fine-tuned model served at the same rate as the base model — a real differentiator versus providers that charge a premium for your LoRA.
-- Mid-2026: raised on-demand GPU rental $1/hour effective May 1, 2026. Volume pricing negotiable at scale.
-- Financial signal: $4B valuation, 10T+ tokens/day handled.
+- Mid-2026: raised on-demand GPU rental \$1/hour effective May 1, 2026. Volume pricing negotiable at scale.
+- Financial signal: \$4B valuation, 10T+ tokens/day handled.
 
 ### Together — breadth-optimized
 
@@ -51,13 +51,13 @@ This lesson models the six and tells you when each wins.
 - Truss framework: model packaging with dependencies, secrets, serving config in one manifest.
 - GPU range from T4 through B200. Per-minute billing with reasonable cold-start mitigation.
 - SOC 2 Type II, HIPAA-ready. Common fintech and healthcare pick.
-- $5B valuation, January 2026 Series E ($300M from CapitalG, IVP, NVIDIA).
+- \$5B valuation, January 2026 Series E (\$300M from CapitalG, IVP, NVIDIA).
 
 ### Modal — Python-native-optimized
 
 - Infrastructure-as-code in pure Python. Decorate a function with `@modal.function(gpu="A100")` and deploy with one command.
 - Per-second billing. Cold starts 2-4s with pre-warming; <1s for small models.
-- $87M Series B at $1.1B valuation (2025). Strongest developer experience score in independent surveys.
+- \$87M Series B at \$1.1B valuation (2025). Strongest developer experience score in independent surveys.
 
 ### Replicate — multimodal breadth
 
@@ -83,11 +83,11 @@ Every platform above vLLM and SGLang claims a custom engine. FireAttention, RayT
 
 ### Numbers you should remember
 
-- Fireworks GPU rental: $1/hr raise effective May 1, 2026.
+- Fireworks GPU rental: \$1/hr raise effective May 1, 2026.
 - Fireworks claim: 4x lower latency than vLLM on equivalent configs.
 - Together: 50-70% cheaper than Replicate on LLMs.
-- Baseten valuation: $5B (Series E, Jan 2026, $300M round).
-- Modal valuation: $1.1B (Series B, 2025).
+- Baseten valuation: \$5B (Series E, Jan 2026, \$300M round).
+- Modal valuation: \$1.1B (Series B, 2025).
 - Per-minute beats per-token above ~30% sustained utilization.
 
 ## Use It
@@ -102,7 +102,7 @@ This lesson produces `outputs/skill-inference-platform-picker.md`. Given workloa
 
 1. Run `code/main.py`. At what sustained utilization does Baseten (per-minute) beat Fireworks (per-token) for a 70B model on one H100? Derive the crossover yourself and compare to the rule of thumb.
 2. Your product serves image generation plus chat plus speech-to-text. Pick platforms for each modality and name the gateway pattern that unifies them.
-3. Fireworks raises prices by $1/hr on your primary model. Model the blended cost impact if 40% of your traffic moves to batch tier (50% off).
+3. Fireworks raises prices by \$1/hr on your primary model. Model the blended cost impact if 40% of your traffic moves to batch tier (50% off).
 4. A regulated customer requires SOC 2 Type II + HIPAA + dedicated GPUs. Which three platforms are viable and which one wins on FinOps?
 5. Compare cost per 1,000 predictions for Llama 3.1 70B on Fireworks serverless, Together on-demand, Baseten dedicated, and Replicate API. Which is cheapest at 10 predictions/day? At 10,000?
 

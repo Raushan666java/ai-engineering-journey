@@ -20,15 +20,15 @@ For each problem:
 ## Examples
 
 <example>
-Q: Janet's ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells every remaining egg at the farmers' market for $2. How much does she make every day at the farmers' market?
+Q: Janet's ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells every remaining egg at the farmers' market for \$2. How much does she make every day at the farmers' market?
 
 A: Let me work through this step by step.
 
-Given: 16 eggs per day, eats 3, bakes with 4, sells remainder at $2 each.
+Given: 16 eggs per day, eats 3, bakes with 4, sells remainder at \$2 each.
 
 Step 1: Eggs used = 3 + 4 = 7
 Step 2: Eggs remaining = 16 - 7 = 9
-Step 3: Revenue = 9 * $2 = $18
+Step 3: Revenue = 9 * \$2 = \$18
 
 The answer is 18.
 </example>
@@ -47,16 +47,16 @@ The answer is 3.
 </example>
 
 <example>
-Q: Josh decides to try flipping a house. He buys a house for $80,000 and puts $50,000 in repairs. This increased the value of the house by 150%. How much profit did he make?
+Q: Josh decides to try flipping a house. He buys a house for \$80,000 and puts \$50,000 in repairs. This increased the value of the house by 150%. How much profit did he make?
 
 A: Let me work through this step by step.
 
-Given: Purchase price $80,000, repairs $50,000, value increase 150%.
+Given: Purchase price \$80,000, repairs \$50,000, value increase 150%.
 
-Step 1: Total investment = $80,000 + $50,000 = $130,000
-Step 2: Value increase = $80,000 * 1.5 = $120,000
-Step 3: New house value = $80,000 + $120,000 = $200,000
-Step 4: Profit = $200,000 - $130,000 = $70,000
+Step 1: Total investment = \$80,000 + \$50,000 = \$130,000
+Step 2: Value increase = \$80,000 * 1.5 = \$120,000
+Step 3: New house value = \$80,000 + \$120,000 = \$200,000
+Step 4: Profit = \$200,000 - \$130,000 = \$70,000
 
 The answer is 70000.
 </example>

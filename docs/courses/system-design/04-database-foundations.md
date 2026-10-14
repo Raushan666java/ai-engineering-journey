@@ -1414,8 +1414,8 @@ flowchart TD
 3. Design a conflict resolution strategy for a shared photo album app where users from multiple devices add, remove, and reorder photos. Multiple users may rename the same album concurrently. Specify which CRDT(s) you would use for each operation and justify your choices.
    **Solution:** Photo set: OR-Set (add/remove commute). Album name: LWW-register (last rename wins — acceptable because name should converge to one value). Photo order: RGA (Replicated Growable Array) for sequence ordering. The OR-Set for photos ensures no photo is lost due to concurrent add/remove operations.
 
-4. A banking ledger uses serializable isolation. A transfer transaction subtracts $100 from account A and adds $100 to account B. A concurrent interest-calculation transaction reads both accounts and writes interest of 1% of the balance. Under Read Committed isolation, what anomalies are possible? Draw a timestamped interleaving that produces a wrong result.
-   **Solution:** Under RC: T1 (transfer) could be interleaved with T2 (interest). T2 reads A=1000 (before transfer), T1 transfers $100 from A to B, T2 reads B=100 (after transfer). T2 writes interest: A=1010, B=101. Total=1111 but should be 1100 + interest on correct values. Lost update and inconsistent read anomaly.
+4. A banking ledger uses serializable isolation. A transfer transaction subtracts \$100 from account A and adds \$100 to account B. A concurrent interest-calculation transaction reads both accounts and writes interest of 1% of the balance. Under Read Committed isolation, what anomalies are possible? Draw a timestamped interleaving that produces a wrong result.
+   **Solution:** Under RC: T1 (transfer) could be interleaved with T2 (interest). T2 reads A=1000 (before transfer), T1 transfers \$100 from A to B, T2 reads B=100 (after transfer). T2 writes interest: A=1010, B=101. Total=1111 but should be 1100 + interest on correct values. Lost update and inconsistent read anomaly.
 
 </details>
 

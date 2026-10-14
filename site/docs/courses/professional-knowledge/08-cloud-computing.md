@@ -416,7 +416,7 @@ Pending → ContainerCreating → Running → Succeeded (or Failed)
 |------|------|
 | No server management | Cold start latency (50ms-5s) |
 | Auto-scale to zero | Timeout limit (15 min for Lambda) |
-| Pay per invocation (idle = $0) | Debugging/monitoring harder |
+| Pay per invocation (idle = \$0) | Debugging/monitoring harder |
 | Built-in fault tolerance | Vendor lock-in |
 | Quick deployment | Limited runtime environments |
 
@@ -734,7 +734,7 @@ class AutoScalingGroup {
 <details>
 <summary>Q14: Which S3 storage class is designed for long-term archival with 12+ hour retrieval?</summary>
 (a) S3 Standard (b) S3 Intelligent-Tiering (c) S3 Glacier (d) Glacier Deep Archive
-**Answer:** (d) Glacier Deep Archive. Retrieval time: 12+ hours. Lowest cost storage at $0.001/GB/month.
+**Answer:** (d) Glacier Deep Archive. Retrieval time: 12+ hours. Lowest cost storage at \$0.001/GB/month.
 </details>
 
 <details>
@@ -777,7 +777,7 @@ class AutoScalingGroup {
 
 1. Compare IaaS, PaaS, and SaaS for: a hospital (HIPAA), a gaming startup, a data analytics platform.
 2. Write a TypeScript function that determines the optimal cloud deployment model based on compliance, scalability, and cost requirements.
-3. Calculate monthly cost: 10 EC2 t3.medium instances (hourly $0.0416) running 24/7 for 30 days. Compare on-demand vs 1-year reserved.
+3. Calculate monthly cost: 10 EC2 t3.medium instances (hourly \$0.0416) running 24/7 for 30 days. Compare on-demand vs 1-year reserved.
 4. Design a VPC with public and private subnets across 2 AZs with NAT gateway.
 5. Implement a TypeScript class simulating AWS S3 bucket policies (allow/deny by IP, user, resource).
 6. Explain CAP theorem with 3 real-world database examples for each combination.
@@ -808,7 +808,7 @@ class AutoScalingGroup {
 
 **Answer Key:**
 
-3. On-demand: 10 × $0.0416 × 24 × 30 = $299.52/month. Reserved 1yr: ~60% → $179.71/month
+3. On-demand: 10 × \$0.0416 × 24 × 30 = \$299.52/month. Reserved 1yr: ~60% → \$179.71/month
 5. Evaluate request principal, IP, resource ARN against policy statements. First explicit DENY wins, then ALLOW, default DENY
 8. Database: block (EBS) for performance. Media streaming: object (S3) + CDN. Shared config: file (EFS)
 10. Round-robin: cycle through instances. Least-connections: track active connections, pick lowest. Weighted: assign weights, distribute proportionally

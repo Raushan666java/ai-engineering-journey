@@ -99,7 +99,7 @@ High CMER means the model is confidently saying things not grounded in the image
 
 ### Fine-tuning with LoRA / QLoRA
 
-Full fine-tuning of a 70B VLM is out of reach for most teams. LoRA (rank 16-64) on attention + projector layers, or QLoRA with 4-bit base weights, fits on a single A100 / H100. Cost: 5,000-50,000 examples, $100-$5,000 in compute, 2-10 hours of training.
+Full fine-tuning of a 70B VLM is out of reach for most teams. LoRA (rank 16-64) on attention + projector layers, or QLoRA with 4-bit base weights, fits on a single A100 / H100. Cost: 5,000-50,000 examples, \$100-\$5,000 in compute, 2-10 hours of training.
 
 ### Spatial reasoning is still weak
 

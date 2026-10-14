@@ -76,7 +76,7 @@ Easier ────────────────────────�
 | CEO | K Krithivasan (as of 2024) |
 | Headquarters | Mumbai |
 | Employees | 600,000+ |
-| Revenue | ~$29 billion |
+| Revenue | ~\$29 billion |
 | Services | IT services, consulting, business solutions |
 | Key Clients | Banking, retail, telecom, airlines |
 
@@ -167,7 +167,7 @@ Easier ────────────────────────�
 | Founded | 1981 |
 | Headquarters | Bangalore |
 | Employees | 340,000+ |
-| Revenue | ~$18.5 billion |
+| Revenue | ~\$18.5 billion |
 | Key Products | Finacle (CBS), Infosys Nia (AI), EdgeVerve |
 
 ### Interview Process
@@ -253,7 +253,7 @@ function maxSubarraySum(arr: number[]): number {
 | Founded | 1945 (IT: 1980) |
 | Headquarters | Bangalore |
 | Employees | 240,000+ |
-| Revenue | ~$10.3 billion |
+| Revenue | ~\$10.3 billion |
 | Hiring | Wipro NLTH (National Talent Hunt) |
 
 **Wipro NLTH Pattern:**
@@ -286,7 +286,7 @@ function maxSubarraySum(arr: number[]): number {
 | Founded | 1976 |
 | Headquarters | Noida |
 | Employees | 220,000+ |
-| Revenue | ~$12 billion |
+| Revenue | ~\$12 billion |
 | Unique | Strong focus on engineering & R&D |
 
 **HCL Interview Focus:**
@@ -307,7 +307,7 @@ function maxSubarraySum(arr: number[]): number {
 | Founded | 1986 |
 | Headquarters | Pune |
 | Employees | 150,000+ |
-| Revenue | ~$6.4 billion |
+| Revenue | ~\$6.4 billion |
 | Focus | Telecom, digital transformation |
 
 **Tech Mahindra Interview Focus:**
@@ -328,7 +328,7 @@ function maxSubarraySum(arr: number[]): number {
 | Founded | 1989 (Dublin) |
 | India HQ | Bangalore |
 | Employees (India) | 300,000+ |
-| Revenue (Global) | ~$64 billion |
+| Revenue (Global) | ~\$64 billion |
 | Services | Strategy, Consulting, Digital, Technology, Operations |
 
 **Accenture Interview Process:**
@@ -395,7 +395,7 @@ function maxSubarraySum(arr: number[]): number {
 | Founded | 1998 |
 | Headquarters | Mountain View, CA |
 | Employees | 180,000+ |
-| Revenue | ~$340 billion |
+| Revenue | ~\$340 billion |
 | Products | Search, Android, YouTube, Cloud, Maps |
 
 ### Google Interview Process
@@ -477,7 +477,7 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 | Founded | 1975 |
 | Headquarters | Redmond, WA |
 | Employees | 220,000+ |
-| Revenue | ~$245 billion |
+| Revenue | ~\$245 billion |
 | Products | Azure, Office 365, Windows, LinkedIn, GitHub |
 
 ### Microsoft Interview Process
@@ -550,7 +550,7 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 | Founded | 1994 |
 | Headquarters | Seattle, WA |
 | Employees | 1,500,000+ |
-| Revenue | ~$608 billion |
+| Revenue | ~\$608 billion |
 | Products | AWS, E-commerce, Prime Video, Alexa |
 
 ### Amazon Interview Process

@@ -82,7 +82,7 @@ Defenders must know steps 1-4 conceptually so they can build controls for 5-6. T
 |-----------|--------|--------------------|-----------------|
 | Nation-state APT | Espionage, sabotage | Salt Typhoon (China), UNC3886, Volt Typhoon, Lazarus (DPRK) | Zero-days, edge-device exploits, tunneling, living off the land |
 | Criminal syndicate | Money | ShinyHunters, LockBit, SafePay, INC, Medusa, Lynx | Ransomware, extortion-only theft, credential phishing |
-| Financially motivated APT | Money | Lazarus Group (ByBit $1.5B) | Crypto-wallet exploits, social engineering |
+| Financially motivated APT | Money | Lazarus Group (ByBit \$1.5B) | Crypto-wallet exploits, social engineering |
 | Hacktivist | Ideology | Handala (Iran-linked, Stryker), Anonymous-style groups | DDoS, defacement, data dump |
 | Insider | Revenge, greed, carelessness | Coupang ex-employee (33.7M records) | Data exfiltration, credential abuse |
 | Script kiddie / scammer | Quick money | UPI scam call centers, "free internet" APK gangs | Social engineering, malware kits |
@@ -120,9 +120,9 @@ sequenceDiagram
 
 **Lessons for defenders**: patch edge devices first (only 26% of CISA-KEV critical vulnerabilities were fully patched in 2025), replace shared passwords on network gear, monitor config changes and new SSH keys, and encrypt everything end-to-end — the FBI's own advice to Americans was to use Signal/WhatsApp.
 
-#### Case 2: ByBit — the $1.5 billion crypto heist (February 2025)
+#### Case 2: ByBit — the \$1.5 billion crypto heist (February 2025)
 
-North Korea's Lazarus Group stole $1.5 billion in Ethereum from the Dubai-based exchange ByBit, the largest crypto heist ever. The attack exploited a third-party wallet infrastructure component during a routine fund transfer; over $160 million was laundered within 48 hours. This single case shows how a financially motivated APT can operate at the scale of a small country's GDP, and why "secure your build pipeline and your supply chain" is not a slogan.
+North Korea's Lazarus Group stole \$1.5 billion in Ethereum from the Dubai-based exchange ByBit, the largest crypto heist ever. The attack exploited a third-party wallet infrastructure component during a routine fund transfer; over \$160 million was laundered within 48 hours. This single case shows how a financially motivated APT can operate at the scale of a small country's GDP, and why "secure your build pipeline and your supply chain" is not a slogan.
 
 #### Case 3: Canvas / Instructure — 275 million students exposed (May 2026)
 
@@ -144,7 +144,7 @@ Russian-speaking attackers compromised ~74,000 Fortinet firewalls in 194 countri
 | Case | When | Scale | Root cause | Defender lesson |
 |------|------|-------|-----------|-----------------|
 | Salt Typhoon | 2021–26 | 200+ orgs, 80 countries | Unpatched edge devices | Patch edge gear first; E2EE everything |
-| ByBit | Feb 2025 | $1.5B stolen | Third-party wallet component | Audit supply chain, not just your own code |
+| ByBit | Feb 2025 | \$1.5B stolen | Third-party wallet component | Audit supply chain, not just your own code |
 | Canvas/Instructure | May 2026 | ~9,000 schools, 275M users | Cloud compromise | Log, detect, and contain cloud access |
 | Change Healthcare | 2024 | 192.7M records | Missing MFA + unpatched portal | MFA everywhere; patch critical CVEs |
 | Conduent | 2026 | 62.2M records | 83-day undetected access | Fast detection (SIEM/EDR) limits blast radius |
@@ -224,7 +224,7 @@ Mobile networks add an entire attack surface on top of the internet:
 The Verizon DBIR 2026 (22,000+ breaches across 145 countries) and ITRC reports define the current era:
 
 1. **Vulnerability exploitation became the #1 entry method** (~31% of breaches, roughly doubled in a year), overtaking stolen credentials (13%). Only 26% of CISA-KEV critical vulnerabilities were fully patched within the year; median fix time grew to 43 days.
-2. **Ransomware is in ~48% of breaches**, but 69% of victims refuse to pay, and median payments are falling ($139,875).
+2. **Ransomware is in ~48% of breaches**, but 69% of victims refuse to pay, and median payments are falling (\$139,875).
 3. **The human element appears in ~62% of breaches**; social engineering is 16%, with pretexting (fake trusted scenarios, often by voice) rising.
 4. **Supply chain exposure grew ~60%**: 48% of breaches involve a third party; 280 million victim notices in H1 2026 came from just 38 supply-chain events.
 5. **Pure data-theft extortion is replacing encryption**: attackers skip the ransom-ware encryption and just threaten to leak — 2025 ransomware *incidents* dropped while extortion continued.
@@ -410,10 +410,10 @@ Authorization (written scope), non-destruction, and responsible disclosure. With
    // correct: B
 
 2. What was the largest cryptocurrency heist ever recorded?
-   - A) ByBit, $1.5 billion in Ethereum (Feb 2025)
-   - B) Upbit, $30.4 million (Nov 2025)
-   - C) Trust Wallet, $7 million (Dec 2025)
-   - D) KelpDAO, $293 million (Apr 2026)
+   - A) ByBit, \$1.5 billion in Ethereum (Feb 2025)
+   - B) Upbit, \$30.4 million (Nov 2025)
+   - C) Trust Wallet, \$7 million (Dec 2025)
+   - D) KelpDAO, \$293 million (Apr 2026)
    // correct: A
 
 3. Per the Verizon DBIR 2026, what became the #1 initial access vector?
@@ -527,7 +527,7 @@ Authorization (written scope), non-destruction, and responsible disclosure. With
 
 1. The China-linked group behind the telecom breaches is called ___ . — Answer: Salt Typhoon.
 2. In FY 2025-26, India reported ___ lakh UPI fraud cases involving ₹1,226 crore. — Answer: 16.29.
-3. The largest crypto heist ever, the ___ exchange, lost $1.5 billion in Ethereum. — Answer: ByBit.
+3. The largest crypto heist ever, the ___ exchange, lost \$1.5 billion in Ethereum. — Answer: ByBit.
 4. The single largest source of UPI fraud by complaint volume is ___ scams. — Answer: collect-request.
 5. India's cyber-fraud helpline for payment fraud is ___. — Answer: 1930.
 

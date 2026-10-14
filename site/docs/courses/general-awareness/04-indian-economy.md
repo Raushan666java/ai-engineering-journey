@@ -241,7 +241,7 @@ mindmap
 | Employment share | ~45% |
 | Largest crop by area | Rice (45+ million hectares) |
 | Irrigated area | ~50% of gross cropped area |
-| Agricultural exports | ~$50 billion (2023-24) |
+| Agricultural exports | ~\$50 billion (2023-24) |
 | Horticulture production | ~350 million tonnes (2023-24) |
 | Foodgrain production | ~330 million tonnes (record 2023-24) |
 
@@ -262,7 +262,7 @@ mindmap
 
 - Share in GDP: ~55%
 - Fastest growing sector
-- IT & ITeS: India's largest service export sector (~$200 billion exports in 2024-25)
+- IT & ITeS: India's largest service export sector (~\$200 billion exports in 2024-25)
 - Tourism: Major employment generator (~42 million jobs)
 - Banking, insurance, real estate, education, healthcare
 
@@ -270,11 +270,11 @@ mindmap
 
 | Metric | Value (2023-24) |
 |--------|-----------------|
-| Exports (goods) | $437 billion |
-| Imports (goods) | $677 billion |
-| Trade deficit | $240 billion |
-| Services exports | $340 billion |
-| FDI equity inflows (2023-24) | ~$70 billion |
+| Exports (goods) | \$437 billion |
+| Imports (goods) | \$677 billion |
+| Trade deficit | \$240 billion |
+| Services exports | \$340 billion |
+| FDI equity inflows (2023-24) | ~\$70 billion |
 | Major export destinations | USA, UAE, Netherlands, China |
 | Major import sources | China, UAE, USA, Russia |
 
@@ -722,16 +722,16 @@ NITI Aayog (National Institution for Transforming India) replaced the Planning C
 
 | Indicator | Current Value (2025-26 estimates) |
 |-----------|-----------------------------------|
-| GDP (Nominal) | ~$4.3 trillion |
+| GDP (Nominal) | ~\$4.3 trillion |
 | GDP Growth Rate | ~6.5% (projected) |
 | GDP Rank (Nominal) | 5th (after USA, China, Germany, Japan) |
-| Per Capita Income | ~$2,500 (nominal) |
-| Foreign Exchange Reserves | ~$700+ billion |
+| Per Capita Income | ~\$2,500 (nominal) |
+| Foreign Exchange Reserves | ~\$700+ billion |
 | Inflation (CPI) | ~4.0–5.0% |
 | Repo Rate | 6.00% (MPC decision) |
 | Fiscal Deficit (% of GDP) | 4.4% (target) |
-| Exports | ~$800 billion (goods + services) |
-| Imports | ~$900 billion (goods + services) |
+| Exports | ~\$800 billion (goods + services) |
+| Imports | ~\$900 billion (goods + services) |
 | Agricultural GDP Share | ~18% |
 | Industrial GDP Share | ~27% |
 | Services GDP Share | ~55% |
@@ -741,7 +741,7 @@ NITI Aayog (National Institution for Transforming India) replaced the Planning C
 | Literacy Rate | ~77% |
 | GST Collection (Monthly Avg) | ~₹1.7–1.8 lakh crore |
 | Tax-GDP Ratio | ~11–12% |
-| FDI Inflows | ~$50–60 billion annually |
+| FDI Inflows | ~\$50–60 billion annually |
 
 ### 4.10 Money and Banking (Based on GFG Reference)
 

@@ -500,7 +500,7 @@ active job seekers, Open to Work settings, saved searches, and recruiter outreac
 <summary class="tp-qa-question">How do I quantify my achievements in experience descriptions?</summary>
 <div class="tp-qa-context"><p>Metrics-driven bullet points.</p></div>
 <div class="tp-qa-answer">
-<p>Quantifiable metrics: (1) <strong>Performance</strong> — "Reduced inference latency by 40%". (2) <strong>Scale</strong> — "System serving 1M+ requests/day". (3) <strong>Cost</strong> — "Reduced cloud costs by 30% ($50K/year)". (4) <strong>Team</strong> — "Led team of 5 engineers". (5) <strong>Revenue</strong> — "Generated $200K in new revenue". (6) <strong>Speed</strong> — "Reduced deployment time from 2 days to 2 hours". Every bullet should answer: "What action did I take, and what measurable result did it produce?" If exact metrics aren't available, use ranges ("30-40% improvement") or qualitative but specific impacts ("Enabled real-time processing that was previously impossible").</p>
+<p>Quantifiable metrics: (1) <strong>Performance</strong> — "Reduced inference latency by 40%". (2) <strong>Scale</strong> — "System serving 1M+ requests/day". (3) <strong>Cost</strong> — "Reduced cloud costs by 30% (\$50K/year)". (4) <strong>Team</strong> — "Led team of 5 engineers". (5) <strong>Revenue</strong> — "Generated \$200K in new revenue". (6) <strong>Speed</strong> — "Reduced deployment time from 2 days to 2 hours". Every bullet should answer: "What action did I take, and what measurable result did it produce?" If exact metrics aren't available, use ranges ("30-40% improvement") or qualitative but specific impacts ("Enabled real-time processing that was previously impossible").</p>
 </div>
 <div class="tp-qa-actions">
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -594,7 +594,7 @@ these factors can increase recruiter outreach by 3-5—.</p>
   <div class="tp-qa-answer">
 <p>STAR (Situation, Task, Action, Result) for LinkedIn: (1) Situation — briefly describe the context. (2) Task — what was your specific responsibility? (3) Action — what did you do? Use strong action verbs (designed,.
 implemented, optimized, led, architected). (4) Result — quantify the impact with metrics. Example: "Led migration of ML inference pipeline from on-prem to AWS (Task),.
-designing a serverless architecture with Lambda + SageMaker (Action), reducing inference latency by 60% and infrastructure costs by $50K/year (Result)." Each bullet should follow the formula: [Action] + [Result with metric]. Aim for.
+designing a serverless architecture with Lambda + SageMaker (Action), reducing inference latency by 60% and infrastructure costs by \$50K/year (Result)." Each bullet should follow the formula: [Action] + [Result with metric]. Aim for.
 3-5 bullets per role. The result is the most important part — 70% of the impact comes from the quantified outcome. Use dollar amounts,.
 percentages, and time savings wherever possible. If exact metrics aren't available, use ranges: "reduced latency by 40-60%."</p>
   </div>

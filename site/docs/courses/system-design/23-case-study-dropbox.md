@@ -238,7 +238,7 @@ Magic Pocket's key design decisions:
 - **Geo distribution**: Blocks are replicated across two geographic regions. Primary region serves read/write traffic; secondary region maintains a replica for disaster recovery.
 - **Consistency model**: Read-after-write consistency within a region. Cross-region replication is asynchronous, with typical latency of seconds.
 
-The migration from S3 to Magic Pocket saved Dropbox an estimated $500M over 5 years.
+The migration from S3 to Magic Pocket saved Dropbox an estimated \$500M over 5 years.
 
 **Streaming File Download**
 
@@ -1101,7 +1101,7 @@ Charlie's rename creates a conflict: both Alice and Bob's clients see the file a
 
 ### Application Problems
 
-<details><summary>Solution</summary>1. **Deduplication Analysis**: Without dedup: 10,000 × 2GB = 20TB. With dedup: 500MB (OS) + 200MB × 5 (departments) + 1.3GB × 10,000 (per-user) = 500MB + 1GB + 13TB ≈ 13.0015TB. Dedup ratio: 20TB / 13TB ≈ 1.54:1. Savings: 7TB × $0.023/GB = $161/month × 12 = $1,932/year.
+<details><summary>Solution</summary>1. **Deduplication Analysis**: Without dedup: 10,000 × 2GB = 20TB. With dedup: 500MB (OS) + 200MB × 5 (departments) + 1.3GB × 10,000 (per-user) = 500MB + 1GB + 13TB ≈ 13.0015TB. Dedup ratio: 20TB / 13TB ≈ 1.54:1. Savings: 7TB × \$0.023/GB = \$161/month × 12 = \$1,932/year.
 
 2. **Conflict Resolution**: Use a page-level bitmap (100 bits for 100 pages) to track edited pages per editor. Non-overlapping bits → auto-merge. Overlapping bits → flag for manual review with diff view. Data structure: `Map<page_number, { editor_id, old_text, new_text, timestamp }>`. For paragraph move + edit: detect via content hash — same text in different position is a move, not a conflict. Rename conflict: use `(file_id, new_name, editor_id, timestamp)` with LWW.
 

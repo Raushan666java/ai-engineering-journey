@@ -91,7 +91,7 @@ Layer 2: validate before the user sees it.
 
 **PII scrubbing** -- the model might leak PII from its context window. If your RAG system retrieves documents containing email addresses, phone numbers, or names, the model might include them in its response. Scan outputs and redact before delivery.
 
-**Hallucination detection** -- if the model claims a fact, check it against your knowledge base. This is hard in general but tractable in narrow domains. A banking bot that claims "your account balance is $50,000" when the retrieved balance is $500 can be caught by comparing output claims to source data.
+**Hallucination detection** -- if the model claims a fact, check it against your knowledge base. This is hard in general but tractable in narrow domains. A banking bot that claims "your account balance is \$50,000" when the retrieved balance is \$500 can be caught by comparing output claims to source data.
 
 **Format validation** -- if you expect JSON, validate it. If you expect a response under 500 characters, enforce it. If the model returns an 8,000 word essay when you asked for a one-sentence summary, truncate or regenerate.
 
@@ -175,7 +175,7 @@ No defense is perfect. Here is the spectrum:
 - **Layered defense**: catches 95%, requires domain expertise to bypass
 - **Maximum security**: catches 99%, requires novel research to bypass, costs 2-3x in latency
 
-Most applications should target layered defense. Maximum security is for financial services, healthcare, and government. The cost-benefit math: a $50/month moderation API is cheaper than one viral screenshot of your bot producing harmful content.
+Most applications should target layered defense. Maximum security is for financial services, healthcare, and government. The cost-benefit math: a \$50/month moderation API is cheaper than one viral screenshot of your bot producing harmful content.
 
 ## Build It
 

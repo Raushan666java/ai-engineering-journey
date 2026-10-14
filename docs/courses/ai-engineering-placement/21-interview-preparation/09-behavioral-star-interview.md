@@ -849,7 +849,7 @@ followed by detailed code review. This addressed their need for correctness whil
     <p><strong>If pressed</strong>: Provide a range based on market research.</p>
     <ul>
       <li>Research: levels.fyi, Glassdoor, Blind, and your network</li>
-      <li>Range: "Based on my research for similar roles at companies of this size, I'm targeting a total compensation range of $180K-$220K. But I'm open to discussing based on the full package."</li>
+      <li>Range: "Based on my research for similar roles at companies of this size, I'm targeting a total compensation range of \$180K-\$220K. But I'm open to discussing based on the full package."</li>
       <li>The range should be about 15-20% wide — the low end is your minimum, the high end is what you'd be thrilled with</li>
     </ul>
     <p><strong>Key principles</strong>:</p>

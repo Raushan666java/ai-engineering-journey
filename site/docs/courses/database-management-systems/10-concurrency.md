@@ -53,7 +53,7 @@ Without concurrency control, resource allocation becomes incorrect.
 
 
 
-Account has $1000. Two ATMs process $200 withdrawal simultaneously. Both read $1000. Both compute new balance = $800. Both write $800. Result: $200 withdrawn but account shows $800 (should be $600).
+Account has \$1000. Two ATMs process \$200 withdrawal simultaneously. Both read \$1000. Both compute new balance = \$800. Both write \$800. Result: \$200 withdrawn but account shows \$800 (should be \$600).
 
 
 
@@ -123,7 +123,7 @@ WRITE(A, temp);      -- A = 800 (overwrites T1!)
 
 
 
-Final DB(A)=800. Expected: DB(A)=600. **Lost $200!**
+Final DB(A)=800. Expected: DB(A)=600. **Lost \$200!**
 
 
 
@@ -357,7 +357,7 @@ T2 committed based on data that was rolled back. T2's computations are now incor
 
 
 
-You add item to cart ($50). Checkout takes 10 seconds. In that time, price changes to $55. When you pay, it's $55 despite seeing $50 earlier.
+You add item to cart (\$50). Checkout takes 10 seconds. In that time, price changes to \$55. When you pay, it's \$55 despite seeing \$50 earlier.
 
 
 

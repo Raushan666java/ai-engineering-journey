@@ -1441,7 +1441,7 @@ flowchart TD
 <details>
 <summary>Show Answer Key</summary>
 
-**A1.** WannaCry lifecycle: (1) phishing email with weaponized document → (2) drops DoublePulsar backdoor → (3) exploits EternalBlue (MS17-010 SMB vuln) → (4) installs ransomware → (5) encrypts files with AES → (6) displays ransom note demanding $300-$600 in Bitcoin → (7) spreads via SMB to other Windows systems on network. Total infected: 230,000+ systems in 150 countries in 4 days.
+**A1.** WannaCry lifecycle: (1) phishing email with weaponized document → (2) drops DoublePulsar backdoor → (3) exploits EternalBlue (MS17-010 SMB vuln) → (4) installs ransomware → (5) encrypts files with AES → (6) displays ransom note demanding \$300-\$600 in Bitcoin → (7) spreads via SMB to other Windows systems on network. Total infected: 230,000+ systems in 150 countries in 4 days.
 
 **A2.** Attacker spoofs source IP = victim's IP. DNS response goes to victim, not attacker. Victim can trace back to open resolver, but attacker's true IP is never revealed (all responses go to victim). The attacker sends queries from their own IP (but spoofed) → impossible to trace without ISP logs.
 
@@ -1457,7 +1457,7 @@ flowchart TD
 
 **A8.** Victim receives: 10,000 × 3000 = 30,000,000 bytes/sec ≈ 240 Mbps. Attacker sends: 10,000 × 60 = 600,000 bytes/sec ≈ 4.8 Mbps. Amplification: 50×. Attacker needs only 4.8 Mbps upload to generate 240 Mbps attack.
 
-**A9.** RaaS: developers sell/lease ransomware to affiliates. Affiliates distribute malware and share profits (70/30). Families: REvil (Sodinokibi, $11M ransom demanded from JBS), LockBit (fastest encryption, exfiltrate before encrypt), DarkSide (responsible for Colonial Pipeline, $4.4M).
+**A9.** RaaS: developers sell/lease ransomware to affiliates. Affiliates distribute malware and share profits (70/30). Families: REvil (Sodinokibi, \$11M ransom demanded from JBS), LockBit (fastest encryption, exfiltrate before encrypt), DarkSide (responsible for Colonial Pipeline, \$4.4M).
 
 **A10.** SameSite=Strict: cookie not sent on ANY cross-site request (even clicking link from email → redirects to bank.com → no cookie → not logged in). Lax: cookie sent for top-level GET navigations (link click works) but blocked for POST, img, script. Lax is better UX while still blocking CSRF.
 

@@ -14,7 +14,7 @@ Produce:
 1. **Layer inventory.** For each of the twelve reference layers (per-request cap, per-task token budget, per-task dollar budget, per-tool cap, iteration cap, per-minute/hour/day/month rolling caps, velocity limit, tiered routing, prompt caching, context windowing, HITL checkpoints, kill switch), state whether it is configured, and at what value.
 2. **Failure-mode mapping.** For each time-scale failure (runaway loop, slow leak, bad release, legitimate surge), name the specific layer that catches it and how fast.
 3. **Tool-specific caps.** List every tool the agent can call. For each, name a per-session cap and a reason. Any tool without an explicit cap is an open loop.
-4. **Alert thresholds.** Separate from caps: at what spend rate does a human get paged? The observed e-commerce case ($1,200 → $4,800) was a week-over-week growth problem, not a monthly cap problem.
+4. **Alert thresholds.** Separate from caps: at what spend rate does a human get paged? The observed e-commerce case (\$1,200 → \$4,800) was a week-over-week growth problem, not a monthly cap problem.
 5. **Kill-switch path.** When a cap fires, what happens? Clean abort, rollback, alert, re-enable procedure. Confirm the kill switch is external to the agent (the agent cannot edit its own cap).
 
 Hard rejects:

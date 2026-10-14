@@ -16,7 +16,7 @@
 
 ## The Problem
 
-Your bill says $40,000. You don't know:
+Your bill says \$40,000. You don't know:
 - Which tenant spent it.
 - Which product feature drove it.
 - Whether any individual user was abusive.

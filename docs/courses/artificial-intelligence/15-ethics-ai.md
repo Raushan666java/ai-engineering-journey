@@ -370,7 +370,7 @@ plt.close()
 print("\n[LIME visualization saved to lime_explanation.png]")
 ```
 
-**Key insight:** LIME tells you which features drove a specific decision. For a loan denial, LIME might reveal that "income &lt; $30,000" was the primary factor — but it might also reveal that "zip code" (a proxy for race) was influential.
+**Key insight:** LIME tells you which features drove a specific decision. For a loan denial, LIME might reveal that "income &lt; \$30,000" was the primary factor — but it might also reveal that "zip code" (a proxy for race) was influential.
 
 ### 15.2.3 SHAP — SHapley Additive exPlanations
 
@@ -475,7 +475,7 @@ for i in sorted_idx[-5:]:
 | **Adversarial explanations** | Inputs crafted to produce innocuous explanations for harmful decisions | Regulatory evasion | Robust explanation methods, adversarial training |
 | **User cognitive load** | Full SHAP summary plot with 1000 features is incomprehensible | Explanation is too complex | Hierarchical explanations, top-K features |
 | **Concept drift** | Features that matter today may not matter tomorrow | Explanations become stale | Continuous explanation monitoring |
-| **Counterfactual accessibility** | "You would have been approved if your income were $500 higher" — but the user cannot change income | Explanation is truthful but unhelpful | Provide actionable counterfactuals |
+| **Counterfactual accessibility** | "You would have been approved if your income were \$500 higher" — but the user cannot change income | Explanation is truthful but unhelpful | Provide actionable counterfactuals |
 
 ---
 

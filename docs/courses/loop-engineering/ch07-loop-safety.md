@@ -2153,7 +2153,7 @@ main();
 ### 4.2 Application
 
 
-6. You deploy a code-generation agent with a $10 budget cap. The agent calls GPT-4 ($0.03/1K input, $0.06/1K output) with 4K input tokens and 1K output tokens per iteration. How many iterations until the budget kills the loop if each iteration costs the same? What if the context grows by 2K input tokens per iteration?
+6. You deploy a code-generation agent with a \$10 budget cap. The agent calls GPT-4 (\$0.03/1K input, \$0.06/1K output) with 4K input tokens and 1K output tokens per iteration. How many iterations until the budget kills the loop if each iteration costs the same? What if the context grows by 2K input tokens per iteration?
 
 7. Design a **canary agent** pattern: a low-cost, minimal agent that runs side-by-side with the production agent. The canary has tighter budgets and faster failure detection. If the canary dies, the production agent is stopped. Write the TypeScript interface for a CanarySupervisor that watches the canary's health and trips the circuit breaker for the production agent.
 

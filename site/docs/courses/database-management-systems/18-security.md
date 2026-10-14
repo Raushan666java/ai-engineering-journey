@@ -78,7 +78,7 @@ A database is like a bank vault. The vault itself is steel and concrete (encrypt
 | Network Eavesdropping | Unencrypted connection | Credential/data theft | Packet sniffing on public Wi-Fi |
 | Backup Compromise | Stolen backup tapes | Offline data access | 2008 Hannaford — 4.2M cards from unencrypted backups |
 | Social Engineering | DBA tricked into revealing password | Credential compromise | 2020 Twitter — 130 accounts via phone-based social engineering |
-| Ransomware | Encrypt database files | Data unavailability | 2021 Colonial Pipeline — $4.4M paid, pipeline shut |
+| Ransomware | Encrypt database files | Data unavailability | 2021 Colonial Pipeline — \$4.4M paid, pipeline shut |
 
 
 **Numbered Steps — Database Security Risk Assessment:**
@@ -2191,7 +2191,7 @@ class SecureDB:
 
 | Best Practice | Why | How |
 |--------------|-----|-----|
-| **Parameterized queries** | Prevents SQL injection 100% | Use placeholders (%s, $1, ?) with bound parameters |
+| **Parameterized queries** | Prevents SQL injection 100% | Use placeholders (%s, \$1, ?) with bound parameters |
 | **Least privilege** | Minimizes breach impact | GRANT only needed columns/rows; use roles |
 | **SSL/TLS enforcement** | Prevents network sniffing | `sslmode=require`, disable non-TLS connections |
 | **Regular patching** | Fixes known vulnerabilities | Stay current with DBMS security releases |

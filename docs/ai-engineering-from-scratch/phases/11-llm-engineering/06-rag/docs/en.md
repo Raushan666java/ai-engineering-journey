@@ -59,7 +59,7 @@ Query -> Retrieve -> Augment prompt -> Generate. Every RAG system follows this p
 
 | Concern | Fine-tuning | RAG |
 |---------|------------|-----|
-| Cost | $1,000-$100,000+ per training run | $0.01-$0.10 per query (embedding + LLM) |
+| Cost | \$1,000-\$100,000+ per training run | \$0.01-\$0.10 per query (embedding + LLM) |
 | Freshness | Stale until retrained | Updated in minutes by re-indexing docs |
 | Auditability | Cannot trace answer to source | Can show exact retrieved passages |
 | Hallucination | Still hallucinates freely | Grounded in retrieved documents |

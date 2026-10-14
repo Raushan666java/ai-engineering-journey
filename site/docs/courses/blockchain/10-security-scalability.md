@@ -177,7 +177,7 @@ flowchart LR
 
 **Sidechain risks:**
 - **Independent security:** If the sidechain's validators collude, funds can be stolen.
-- **Bridge vulnerability:** Bridges are the most hacked DeFi component (>$1.5B lost).
+- **Bridge vulnerability:** Bridges are the most hacked DeFi component (>\$1.5B lost).
 - **No L1 inheritance:** Sidechain security is independent of the main chain.
 
 ### Layer 2: Rollups
@@ -301,8 +301,8 @@ An entity gains majority control of consensus and can:
 - Reorganize the chain to reverse transactions
 
 **Cost to attack:**
-- Bitcoin PoW: ~$1.3B/hour (hardware + electricity)
-- Ethereum PoS: ~$32B (staked ETH required, subject to slashing)
+- Bitcoin PoW: ~\$1.3B/hour (hardware + electricity)
+- Ethereum PoS: ~\$32B (staked ETH required, subject to slashing)
 - Small chains: Much cheaper (why smaller chains are attacked more)
 
 **2. Sybil Attack**
@@ -326,12 +326,12 @@ An attacker creates a fork from a point far in the past, builds a longer chain, 
 
 | Attack | Description | Losses (Est.) |
 |--------|-------------|---------------|
-| **Reentrancy** | External call re-enters contract before state update | The DAO: $60M |
-| **Flash Loan Attack** | Unc collateralized loan manipulates prices | $1B+ total |
-| **Oracle Manipulation** | Attacker manipulates off-chain data feed | Cream: $130M |
-| **Front-Running** | Attacker inserts tx ahead of victim's | $1B+ in MEV |
-| **Governance Attack** | Malicious proposal passes | Beanstalk: $182M |
-| **Bridge Hack** | Vulnerability in cross-chain bridge | Ronin: $625M, Wormhole: $326M |
+| **Reentrancy** | External call re-enters contract before state update | The DAO: \$60M |
+| **Flash Loan Attack** | Unc collateralized loan manipulates prices | \$1B+ total |
+| **Oracle Manipulation** | Attacker manipulates off-chain data feed | Cream: \$130M |
+| **Front-Running** | Attacker inserts tx ahead of victim's | \$1B+ in MEV |
+| **Governance Attack** | Malicious proposal passes | Beanstalk: \$182M |
+| **Bridge Hack** | Vulnerability in cross-chain bridge | Ronin: \$625M, Wormhole: \$326M |
 
 ### MEV (Maximal Extractable Value)
 

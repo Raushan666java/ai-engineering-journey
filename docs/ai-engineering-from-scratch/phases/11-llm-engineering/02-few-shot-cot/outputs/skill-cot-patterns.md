@@ -83,18 +83,18 @@ When you need an LLM to reason through a problem, choose the technique before wr
 
 **Few-shot with bad examples**: examples with reasoning errors teach the model to make those errors. Every example must be verified. One wrong example can reduce accuracy more than zero examples.
 
-**Extracting answers without a consistent format**: self-consistency requires comparing answers across samples. If the answer format varies ("$18", "18 dollars", "eighteen"), voting fails. Always enforce: "The answer is [number]."
+**Extracting answers without a consistent format**: self-consistency requires comparing answers across samples. If the answer format varies ("\$18", "18 dollars", "eighteen"), voting fails. Always enforce: "The answer is [number]."
 
 ## Cost Optimization
 
-For a production system handling 10,000 queries/day at GPT-4o pricing ($2.50/1M input, $10/1M output):
+For a production system handling 10,000 queries/day at GPT-4o pricing (\$2.50/1M input, \$10/1M output):
 
 | Technique | Avg Tokens/Query | Daily Cost | Accuracy |
 |-----------|-----------------|------------|----------|
-| Zero-shot | ~200 | ~$5 | 78% |
-| Few-shot CoT | ~600 | ~$15 | 95% |
-| Self-Consistency (N=5) | ~3,000 | ~$75 | 97% |
-| ToT (b=3, d=2) | ~6,000 | ~$150 | Task-dependent |
+| Zero-shot | ~200 | ~\$5 | 78% |
+| Few-shot CoT | ~600 | ~\$15 | 95% |
+| Self-Consistency (N=5) | ~3,000 | ~\$75 | 97% |
+| ToT (b=3, d=2) | ~6,000 | ~\$150 | Task-dependent |
 
 The cost-optimal strategy for most applications: start with few-shot CoT. Add self-consistency only for queries where confidence is low (the escalation pattern from the Build It section).
 

@@ -1095,7 +1095,7 @@ class EnvConfig {
 
 #### Equifax Breach (2017)
 
-**Impact:** 147 million personal records exposed, $1.4 billion in costs.
+**Impact:** 147 million personal records exposed, \$1.4 billion in costs.
 
 **Root Cause:** Failure to patch Apache Struts CVE-2017-5638 — a known vulnerability for which a patch had been available for two months. The vulnerability was a remote code execution flaw in the Jakarta Multipart parser.
 
@@ -1117,7 +1117,7 @@ class EnvConfig {
 
 #### Heartland Payment Systems (2008)
 
-**Impact:** 130 million credit card numbers stolen, $140 million in fraud losses.
+**Impact:** 130 million credit card numbers stolen, \$140 million in fraud losses.
 
 **Root Cause:** SQL injection vulnerability in the payment processing web application. The attacker used a multi-stage SQL injection to install packet sniffers on the internal network.
 

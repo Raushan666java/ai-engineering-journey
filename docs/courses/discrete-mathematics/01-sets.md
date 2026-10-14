@@ -397,7 +397,7 @@ console.log(jaccardSimilarity(A, B)); // 0.333...
 
 **Example 1.8** (Inclusion-exclusion). In a class of 50 students, 30 study math, 25 study physics, and 10 study both. How many study neither?
 
-*Solution.* $|M \cup P| = |M| + |P| - |M \cap P| = 30 + 25 - 10 = 45$. So $50 - 45 = 5$ study neither.
+*Solution.* $|M \cup P| = |M| + |P| - |M \cap P| = 30 + 25 - 10 = 45$. So \$50 - 45 = 5$ study neither.
 
 ### Mermaid: Set Operations
 
@@ -724,7 +724,7 @@ function subsetsOfSize<T>(set: Set<T>, k: number): Set<T>[] {
 ```
 
 **Example 1.15** (Counting subsets). For $S = \{a, b, c, d\}$:
-- All subsets: $2^4 = 16$
+- All subsets: \$2^4 = 16$
 - Subsets of size 2: $\binom{4}{2} = 6$
 - Subsets containing $a$: $2^3 = 8$ (each of the other 3 elements can be in or out)
 
@@ -760,7 +760,7 @@ console.log(enumerateRationals(10));
 // [(1,0), (1,1), (2,0), (1,2), (2,1), (3,0), (1,3), (2,2), (3,1), (4,0)]
 ```
 
-**Example 1.16** (Finite set cardinality). A set with 5 elements has $2^5 = 32$ subsets, exactly half (16) of which have even cardinality and half odd, since the empty set is even.
+**Example 1.16** (Finite set cardinality). A set with 5 elements has \$2^5 = 32$ subsets, exactly half (16) of which have even cardinality and half odd, since the empty set is even.
 
 ## Additional Exercises
 

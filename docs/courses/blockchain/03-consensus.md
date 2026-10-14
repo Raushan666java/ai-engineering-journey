@@ -249,7 +249,7 @@ flowchart TB
 
 | Consensus | Attack Cost | Attack Type | Defense |
 |-----------|------------|-------------|---------|
-| PoW | $5-10B (Bitcoin) | 51% hash rate | Economic disincentive |
+| PoW | \$5-10B (Bitcoin) | 51% hash rate | Economic disincentive |
 | PoS | 33% of staked value | 51% stake | Slashing |
 | DPoS | Majority of votes | Vote buying | Delegated accountability |
 | PBFT | Compromise 1/3 of nodes | Byzantine | Redundancy |
@@ -893,7 +893,7 @@ export { Processor, Task }
 
 1. If the current Target is `0x0000FFFF...` and the network wants to double the difficulty, what should the new Target be?
 2. Calculate the minimum number of nodes required in a PBFT system to tolerate 5 malicious nodes.
-3. Compare the "Cost of Attack" for a PoW network with $100M in hardware versus a PoS network with $100M in staked value.
+3. Compare the "Cost of Attack" for a PoW network with \$100M in hardware versus a PoS network with \$100M in staked value.
 4. Explain why PBFT's O(n^2) communication complexity limits its scalability to small validator sets.
 
 ### Challenge Problem

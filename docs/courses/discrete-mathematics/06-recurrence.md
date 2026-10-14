@@ -496,9 +496,9 @@ Since $2$ is a characteristic root, the particular solution attempts $A \cdot n 
 
 $$A n 2^n = 5A (n-1)2^{n-1} - 6A (n-2)2^{n-2} + 2^n$$
 
-Divide through by $2^{n-2}$: $4An = 10A(n-1) - 6A(n-2) + 4$
-$4An = 10An - 10A - 6An + 12A + 4 = 4An + 2A + 4$
-Thus $0 = 2A + 4 \implies A = -2$.
+Divide through by \$2^{n-2}$: \$4An = 10A(n-1) - 6A(n-2) + 4$
+\$4An = 10An - 10A - 6An + 12A + 4 = 4An + 2A + 4$
+Thus \$0 = 2A + 4 \implies A = -2$.
 
 Particular: $a_n^{(p)} = -2n \cdot 2^n$. General: $a_n = \alpha \cdot 2^n + \beta \cdot 3^n - 2n \cdot 2^n$.
 

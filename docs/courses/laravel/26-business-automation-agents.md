@@ -58,7 +58,7 @@ flowchart LR
 
 > **One-Sentence Takeaway:** Business automation uses AI agents triggered by schedules, events, or webhooks to execute business processes autonomously.
 
-Business automation replaces manual, repetitive processes with software that executes without human intervention. Traditional automation handles deterministic rules — "if invoice total > $10,000, send for approval." AI agents transform automation by handling non-deterministic decisions: classifying an invoice category, deciding whether an email is spam or legitimate, extracting structured data from an unstructured PDF, or determining which team should handle a support ticket.
+Business automation replaces manual, repetitive processes with software that executes without human intervention. Traditional automation handles deterministic rules — "if invoice total > \$10,000, send for approval." AI agents transform automation by handling non-deterministic decisions: classifying an invoice category, deciding whether an email is spam or legitimate, extracting structured data from an unstructured PDF, or determining which team should handle a support ticket.
 
 #### The Automation Pipeline
 

@@ -726,7 +726,7 @@ audit: visit all your profiles side-by-side and check for inconsistencies in nam
   </summary>
   <div class="tp-qa-answer">
 <p>GitHub Sponsors can be used on your profile even if you don't expect significant donations: (1) Enable Sponsors — link a Stripe account or.
-PayPal. (2) Add the sponsor button to your profile README: `[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-pink)](https://github.com/sponsors/yourname)`. (3) Use sponsor tiers — "Coffee" ($3/mo), "Supporter" ($10/mo), "Champion" ($50/mo) with tier-specific perks (early access,.
+PayPal. (2) Add the sponsor button to your profile README: `[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-pink)](https://github.com/sponsors/yourname)`. (3) Use sponsor tiers — "Coffee" (\$3/mo), "Supporter" (\$10/mo), "Champion" (\$50/mo) with tier-specific perks (early access,.
 feature requests, name in README). (4) Even if you don't earn from it, the sponsor button signals you understand the open source economy and.
 value community support. (5) For active projects, consider GitHub Sponsors for sustainable maintenance. Many engineers use sponsors to fund their open source work,.
 which looks great on a resume as it demonstrates community building and project leadership.</p>

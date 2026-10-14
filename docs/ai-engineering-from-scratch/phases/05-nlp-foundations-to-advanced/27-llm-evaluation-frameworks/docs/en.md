@@ -29,7 +29,7 @@ All three lean on LLM-as-judge. This lesson builds intuition for the method and 
 
 **LLM-as-judge.** Replace a static metric with an LLM that scores outputs given a rubric. Given `(query, context, answer)`, prompt a judge LLM: "Score 0-1 on faithfulness." Return the score.
 
-Why it works: LLMs approximate human judgment at a tiny fraction of the cost. GPT-4o-mini at ~$0.003 per scored case enables 1000-sample regression eval runs for under $5.
+Why it works: LLMs approximate human judgment at a tiny fraction of the cost. GPT-4o-mini at ~\$0.003 per scored case enables 1000-sample regression eval runs for under \$5.
 
 Why it fails silently:
 

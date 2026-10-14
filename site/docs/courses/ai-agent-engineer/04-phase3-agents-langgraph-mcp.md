@@ -715,12 +715,12 @@ Write 2 concrete evaluation checks for one of your agents. Don't just run it and
 
 | Step | Model | Input tokens | Output tokens | Cost |
 |------|-------|-------------|--------------|------|
-| Generate lyrics | GPT-4 | 300 | 200 | $0.009 + $0.012 = $0.021 |
-| Generate music API | ACE-Step | — | — | $0.005 (API call) |
-| Evaluate quality | GPT-4-mini | 500 | 50 | $0.00075 + $0.0003 = $0.001 |
-| Total per pipeline run | | | | ~$0.03 |
+| Generate lyrics | GPT-4 | 300 | 200 | \$0.009 + \$0.012 = \$0.021 |
+| Generate music API | ACE-Step | — | — | \$0.005 (API call) |
+| Evaluate quality | GPT-4-mini | 500 | 50 | \$0.00075 + \$0.0003 = \$0.001 |
+| Total per pipeline run | | | | ~\$0.03 |
 
-At 100 pipeline runs/day: $3/day, $90/month. At 1000 runs/day: $30/day, $900/month.
+At 100 pipeline runs/day: \$3/day, \$90/month. At 1000 runs/day: \$30/day, \$900/month.
 
 ### Optimization strategies
 

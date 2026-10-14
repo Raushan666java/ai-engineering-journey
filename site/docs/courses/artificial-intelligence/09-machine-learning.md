@@ -803,7 +803,7 @@ print(f"Mean accuracy: {scores.mean():.3f} (+/- {scores.std() * 2:.3f})")
 4. Repeat until convergence
 5. Predict rating: $\hat{r}_{ui} = U_u \cdot V_i^T$
 
-**Result:** Netflix reported that 80% of watched content comes from recommendations, saving over $1B annually in customer retention.
+**Result:** Netflix reported that 80% of watched content comes from recommendations, saving over \$1B annually in customer retention.
 
 ### 2. Fraud Detection (Banking)
 
@@ -914,8 +914,8 @@ Predict the price of a house based on its square footage.
 |---------|----------------------|---------|
 | Entropy | $H(S) = -\sum p_i \log_2 p_i$ | Measure impurity in a dataset |
 | Information Gain | $IG(S, A) = H(S) - \sum (|S_v|/|S|) H(S_v)$ | Select best attribute to split on |
-| Majority Error | $1 - \max(p_i)$ | Simpler impurity measure |
-| Gini Index | $1 - \sum p_i^2$ | Alternative to entropy (faster) |
+| Majority Error | \$1 - \max(p_i)$ | Simpler impurity measure |
+| Gini Index | \$1 - \sum p_i^2$ | Alternative to entropy (faster) |
 | MSE | $\frac{1}{n}\sum(y_i - \hat{y}_i)^2$ | Regression loss function |
 | Cross-Entropy | $-\sum y_i \log(\hat{y}_i)$ | Classification loss function |
 | Bias² | Systematic error from simplifying assumptions | Error component (underfitting) |

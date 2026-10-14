@@ -426,7 +426,7 @@ flowchart LR
 
 ---
 
-**Q39 (1 Mark) [CD]:** The value 5 in the grammar rule expr → expr + term {$$ = $1 + $3;} represents:
+**Q39 (1 Mark) [CD]:** The value 5 in the grammar rule expr → expr + term {$$ = \$1 + \$3;} represents:
 
 (A) Synthesized attribute
 (B) Inherited attribute

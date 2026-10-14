@@ -558,7 +558,7 @@ print("A* path:", path)
 ### 3.3.1 Admissibility
 
 
-**Real-World Analogy:** A taxi driver tells you the fare will be "at most $25". When you arrive, the meter reads $22. The estimate was **admissible** — it never overestimated. If they'd said "at most $20" and the meter read $22, they would have underestimated, and you'd be short on cash.
+**Real-World Analogy:** A taxi driver tells you the fare will be "at most \$25". When you arrive, the meter reads \$22. The estimate was **admissible** — it never overestimated. If they'd said "at most \$20" and the meter read \$22, they would have underestimated, and you'd be short on cash.
 
 **Definition:** A heuristic $h$ is **admissible** if for every node $n$:
 

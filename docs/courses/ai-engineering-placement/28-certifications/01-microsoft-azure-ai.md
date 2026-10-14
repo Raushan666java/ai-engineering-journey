@@ -105,7 +105,7 @@ flowchart TD
 **Exam Duration**: 60 minutes  
 **Questions**: 40-60  
 **Pass Score**: 700/1000  
-**Cost**: $99 USD  
+**Cost**: \$99 USD  
 **Validity**: 1 year (no renewal needed — fundamentals certs do not expire)
 
 ### 1.1.1 Exam Blueprint
@@ -299,7 +299,7 @@ print(response.choices[0].message.content)
 **Exam Duration**: 120 minutes  
 **Questions**: 40-60  
 **Pass Score**: 700/1000  
-**Cost**: $165 USD  
+**Cost**: \$165 USD  
 **Validity**: 1 year (renewable annually)
 
 ### 1.2.1 Exam Blueprint
@@ -534,7 +534,7 @@ flowchart TD
 **Exam Duration**: 120 minutes  
 **Questions**: 40-60  
 **Pass Score**: 700/1000  
-**Cost**: $165 USD  
+**Cost**: \$165 USD  
 **Validity**: 1 year (renewable annually)
 
 ### 1.3.1 Exam Blueprint
@@ -875,9 +875,9 @@ Practice tests are essential for exam success. Use these resources:
 | Resource | Price | Question Quality | Closest to Exam |
 |----------|-------|-----------------|-----------------|
 | Microsoft Learn Assessment | Free | Good | Yes |
-| MeasureUp (official partner) | $99 | Excellent | Yes |
-| TutorialsDojo | $15-20 | Very Good | Close |
-| Whizlabs | $12-15 | Good | Moderate |
+| MeasureUp (official partner) | \$99 | Excellent | Yes |
+| TutorialsDojo | \$15-20 | Very Good | Close |
+| Whizlabs | \$12-15 | Good | Moderate |
 | GitHub community question banks | Free | Variable | Variable |
 
 Take at least 3 full-length practice tests before the real exam. Score 85%+ consistently before booking.
@@ -983,12 +983,12 @@ Renewal assessments are free, online, and open-book. Microsoft releases renewal 
 
 | Item | Cost | Notes |
 |------|------|-------|
-| AI-900 exam | $99 | Best ROI for beginners |
-| AI-102 exam | $165 | Engineer-level investment |
-| DP-100 exam | $165 | Data science track |
-| MeasureUp practice test | $99 | Per exam |
+| AI-900 exam | \$99 | Best ROI for beginners |
+| AI-102 exam | \$165 | Engineer-level investment |
+| DP-100 exam | \$165 | Data science track |
+| MeasureUp practice test | \$99 | Per exam |
 | Microsoft Learn | Free | Complete courses |
-| Azure free account | Free | $200 credit, 12 months |
+| Azure free account | Free | \$200 credit, 12 months |
 | Azure sandbox | Free | In Microsoft Learn |
 
 **Savings Tip**: Microsoft often offers exam discounts during Ignite and Build conferences. Also check if your employer has a Microsoft Enterprise Agreement that includes exam vouchers.
@@ -1019,7 +1019,7 @@ Study effectively by combining Microsoft Learn paths, hands-on labs, and practic
     Q1: Compare AI-900, AI-102, and DP-100 — which path should an aspiring Azure AI engineer take?
   </summary>
   <div class="tp-qa-answer">
-    <p>AI-900 (Azure AI Fundamentals) is a 60-minute, $99 beginner exam with 40-60 questions covering ML concepts, computer vision, NLP, and generative AI; it never expires and builds vocabulary. AI-102 (Azure AI Engineer Associate) is a 120-minute, $165 exam on Cognitive Services, Azure OpenAI, Content Safety, and RAG — the right target for engineers building AI solutions. DP-100 (Azure Data Scientist Associate) is also 120 minutes and $165, but covers Azure ML, AutoML, HyperDrive, pipelines, and deployment. A typical engineer path: AI-900 first, then AI-102, optionally adding DP-100 for full-stack ML capability.</p>
+    <p>AI-900 (Azure AI Fundamentals) is a 60-minute, \$99 beginner exam with 40-60 questions covering ML concepts, computer vision, NLP, and generative AI; it never expires and builds vocabulary. AI-102 (Azure AI Engineer Associate) is a 120-minute, \$165 exam on Cognitive Services, Azure OpenAI, Content Safety, and RAG — the right target for engineers building AI solutions. DP-100 (Azure Data Scientist Associate) is also 120 minutes and \$165, but covers Azure ML, AutoML, HyperDrive, pipelines, and deployment. A typical engineer path: AI-900 first, then AI-102, optionally adding DP-100 for full-stack ML capability.</p>
     <pre><code class="language-bash"># Entry -&gt; AI Engineer path
 AI-900 (fundamentals, never expires) -&gt; AI-102 (AI Engineer)
 AI-900 -&gt; DP-100 (Data Scientist)   # alternative branch
@@ -1139,8 +1139,8 @@ ml_client.online_endpoints.begin_create_or_update(endpoint).wait()</code></pre>
    - D. Automating ML model selection and tuning
 
 5. How much does AI-900 certification renewal cost annually?
-   - A. $99
-   - B. $165
+   - A. \$99
+   - B. \$165
    - C. Free
    - D. AI-900 does not require renewal
 
@@ -1214,9 +1214,9 @@ Design a 12-week study plan for someone starting from zero experience. Include w
 
 ## Revision Notes
 
-- AI-900: Fundamentals, 60 min, $99, never expires, 40-60 questions
-- AI-102: Engineer, 120 min, $165, annual renewal (free), 40-60 questions
-- DP-100: Data Scientist, 120 min, $165, annual renewal (free), 40-60 questions
+- AI-900: Fundamentals, 60 min, \$99, never expires, 40-60 questions
+- AI-102: Engineer, 120 min, \$165, annual renewal (free), 40-60 questions
+- DP-100: Data Scientist, 120 min, \$165, annual renewal (free), 40-60 questions
 - Key services: Cognitive Services, Azure OpenAI, Content Safety, Azure ML
 - RAG = Cognitive Search + Azure OpenAI for grounded responses
 - AutoML automates model selection and hyperparameter tuning

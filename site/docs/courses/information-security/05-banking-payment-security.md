@@ -1695,7 +1695,7 @@ sequenceDiagram
 
 **A15.** Raw: 6 × 4 TB = 24 TB. Parity overhead = 1 disk equivalent = 4 TB. Usable = 20 TB. Efficiency = (6-1)/6 = 5/6 ≈ 83.3%. Tolerates: 1 disk failure. Rebuilding: 6-1 = 5 read operations per block (read all other disks, XOR to reconstruct).
 
-**A16.** Apple Pay SE: (1) Card network token service generates DPAN + key. (2) Provisioned to iPhone's Secure Enclave via NFC controller. (3) Private key stored in SE — iOS cannot access it directly. (4) Each transaction: SE signs cryptogram with private key. (5) Extraction: requires decapping chip + electron microscope + laser probing — extremely expensive and destroys the SE (tamper sensors zeroize keys). Cost: >$1M per extraction.
+**A16.** Apple Pay SE: (1) Card network token service generates DPAN + key. (2) Provisioned to iPhone's Secure Enclave via NFC controller. (3) Private key stored in SE — iOS cannot access it directly. (4) Each transaction: SE signs cryptogram with private key. (5) Extraction: requires decapping chip + electron microscope + laser probing — extremely expensive and destroys the SE (tamper sensors zeroize keys). Cost: >\$1M per extraction.
 
 **A17.** PCI 4.0 R4: (1) Use strong cryptography (TLS 1.2+ with AEAD ciphers). (2) No SSL or early TLS. (3) Verify certificates match hostname. (4) Document cryptographic protocols and algorithms used. (5) For wi-fi: use WPA2-Enterprise or WPA3. (6) Never send unencrypted PAN over messaging (email, chat).
 

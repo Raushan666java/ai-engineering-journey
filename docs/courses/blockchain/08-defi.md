@@ -68,8 +68,8 @@ flowchart TB
 ```
 
 **Key metrics (2024-2025):**
-- Total Value Locked (TVL): $50-100B+
-- Daily DEX volume: $5-15B
+- Total Value Locked (TVL): \$50-100B+
+- Daily DEX volume: \$5-15B
 - Active DeFi users: 5-10M+
 - Major chains: Ethereum, Solana, Arbitrum, Optimism, Base
 
@@ -378,7 +378,7 @@ function calculateQuorum(
 NFTs (Non-Fungible Tokens) represent unique digital assets on the blockchain.
 
 **NFT use cases:**
-- **Digital Art:** Beeple ($69M), Bored Ape Yacht Club
+- **Digital Art:** Beeple (\$69M), Bored Ape Yacht Club
 - **Music:** Royalty splits, concert tickets
 - **Gaming:** In-game items, characters, land
 - **Real World Assets:** Real estate deeds, luxury goods authentication
@@ -394,12 +394,12 @@ NFTs (Non-Fungible Tokens) represent unique digital assets on the blockchain.
 
 | Risk | Description | Example | Mitigation |
 |------|-------------|---------|------------|
-| Smart Contract Bug | Code vulnerability | The DAO hack ($60M) | Audits, formal verification, bug bounties |
-| Oracle Manipulation | Manipulated price feed | Mango Markets ($115M) | TWAP oracles, multiple sources |
-| Flash Loan Attack | Unc collateralized manipulation | Cream Finance ($130M) | Manipulation-resistant pricing |
+| Smart Contract Bug | Code vulnerability | The DAO hack (\$60M) | Audits, formal verification, bug bounties |
+| Oracle Manipulation | Manipulated price feed | Mango Markets (\$115M) | TWAP oracles, multiple sources |
+| Flash Loan Attack | Unc collateralized manipulation | Cream Finance (\$130M) | Manipulation-resistant pricing |
 | Impermanent Loss | Divergent token prices | All AMM LPs | Concentrated liquidity, single-sided staking |
 | Liquidation | Collateral value drops | 3AC, Celsius | Conservative LTV, monitoring |
-| Governance Attack | Malicious proposal | Beanstalk Farms ($182M) | Timelocks, emergency brakes |
+| Governance Attack | Malicious proposal | Beanstalk Farms (\$182M) | Timelocks, emergency brakes |
 | Regulatory | Legal action against protocol | Tornado Cash sanctions | Legal compliance, jurisdictional strategy |
 | MEV | Front-running, sandwich attacks | All DEX users | Slippage protection, private mempools |
 
@@ -417,7 +417,7 @@ Alice wants to sell 1 ETH.
 2. New USDC quantity = 200,000 / 11 ˜ 18,181.8.
 3. With fee: `?y = y - (k / (x + ?x))` where ?x includes 0.3% fee.
 4. With 0.997 multiplier: Alice receives ~1,818 USDC.
-5. Price impact: Without AMM, 1 ETH = $2,000. Alice receives $1,818 — a slippage of ~9%.
+5. Price impact: Without AMM, 1 ETH = \$2,000. Alice receives \$1,818 — a slippage of ~9%.
 
 ```typescript
 function uniswapTrade(
@@ -446,12 +446,12 @@ console.log(`Slippage: ${result.slippage.toFixed(2)}%`);
 
 ### Example 2: Collateralized Debt Position (CDP)
 
-1. Alice locks 1 ETH (Price: $2,000) as collateral in MakerDAO.
+1. Alice locks 1 ETH (Price: \$2,000) as collateral in MakerDAO.
 2. The protocol requires a 150% collateral ratio.
-3. Alice can borrow a maximum of $2,000 / 1.5 = $1,333 DAI.
-4. If ETH drops to $1,500: health ratio = $1,500 / $1,333 = 1.125 = 112.5%.
-5. At 110% ratio (liquidation threshold at ~$1,466), Alice's position is **liquidated**.
-6. Liquidation fee (~13%) means Alice loses ~$190 of her ETH.
+3. Alice can borrow a maximum of \$2,000 / 1.5 = \$1,333 DAI.
+4. If ETH drops to \$1,500: health ratio = \$1,500 / \$1,333 = 1.125 = 112.5%.
+5. At 110% ratio (liquidation threshold at ~\$1,466), Alice's position is **liquidated**.
+6. Liquidation fee (~13%) means Alice loses ~\$190 of her ETH.
 
 ```typescript
 function calculateCollateralRatio(
@@ -505,7 +505,7 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
 
 > **Pro Tip:** When providing liquidity to an AMM, use a calculator to estimate impermanent loss before depositing. For a 2x price change, impermanent loss is ~5.7%; for 5x, it's ~25.5%.
 
-> **Warning:** Algorithmic stablecoins are experimental and have repeatedly proven unstable. The collapse of UST ($40B+ loss) demonstrated that algorithm-only pegs without sufficient collateral are fragile.
+> **Warning:** Algorithmic stablecoins are experimental and have repeatedly proven unstable. The collapse of UST (\$40B+ loss) demonstrated that algorithm-only pegs without sufficient collateral are fragile.
 
 ---
 
@@ -964,8 +964,8 @@ export { Processor, Task }
 ### Application Problems
 
 1. If an ETH/USDC pool has 100 ETH and 200,000 USDC, calculate the price of 1 ETH.
-2. A protocol has a 120% collateral requirement. If you have $500 worth of collateral, how much can you borrow?
-3. Discuss the impact of a "Flash Loan" where an attacker borrows $100M, manipulates a price, and repays the loan in a single transaction.
+2. A protocol has a 120% collateral requirement. If you have \$500 worth of collateral, how much can you borrow?
+3. Discuss the impact of a "Flash Loan" where an attacker borrows \$100M, manipulates a price, and repays the loan in a single transaction.
 4. Calculate the impermanent loss for a 3x price change in one direction.
 
 ### Challenge Problem

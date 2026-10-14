@@ -74,7 +74,7 @@ flowchart LR
 A **flow network** is a directed graph $G = (V,E)$ with a **source** $s$ and **sink** $t$, where each edge $(u,v)$ has a **capacity** $c(u,v) \geq 0$.
 
 A **flow** is a function $f: V \times V \rightarrow \mathbb{R}$ satisfying:
-1. **Capacity constraint:** $0 \leq f(u,v) \leq c(u,v)$.
+1. **Capacity constraint:** \$0 \leq f(u,v) \leq c(u,v)$.
 2. **Flow conservation:** $\sum_v f(u,v) - \sum_v f(v,u) = 0$ for all $u \neq s, t$.
 3. **Net flow into sink** = **net flow out of source**.
 

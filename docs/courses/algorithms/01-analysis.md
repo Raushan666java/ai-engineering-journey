@@ -522,7 +522,7 @@ private static void merge(int[] arr, int l, int m, int r) {
 
 Amortized analysis gives the average performance of each operation in the worst case over a sequence of operations. Three methods exist.
 
-> **Real-World Analogy (Netflix Subscription):** A Netflix subscription costs $15/month regardless of how many movies you watch. Watch 1 movie → cost is $15. Watch 30 movies → amortized cost is $0.50/movie. Renting individually costs $5/movie — cheaper for 1 movie but far more expensive for 30. A dynamic array is the same: occasional O(n) "rental" costs are absorbed into cheap O(1) "subscription" payments.
+> **Real-World Analogy (Netflix Subscription):** A Netflix subscription costs \$15/month regardless of how many movies you watch. Watch 1 movie → cost is \$15. Watch 30 movies → amortized cost is \$0.50/movie. Renting individually costs \$5/movie — cheaper for 1 movie but far more expensive for 30. A dynamic array is the same: occasional O(n) "rental" costs are absorbed into cheap O(1) "subscription" payments.
 
 #### 1.3.1 Aggregate Method
 

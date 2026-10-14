@@ -3424,7 +3424,7 @@ ovs-appctl fdb/show ovs-br0
 | QoS Support | No | Yes (802.1p) | Yes (DSCP) |
 | ACL Support | No | L2 ACL (MAC) | L3/L4 ACL |
 | Management | Unmanaged | CLI/SNMP/Web | CLI/SNMP/Web |
-| Cost per 1G Port | $15-30 | $30-200 | $200-2000+ |
+| Cost per 1G Port | \$15-30 | \$30-200 | \$200-2000+ |
 
 ### STP Port States Summary
 

@@ -16,7 +16,7 @@
 
 ## The Problem
 
-A booking-site workflow: "find me a flight to Tokyo for April 15, aisle seat under $800, book it."
+A booking-site workflow: "find me a flight to Tokyo for April 15, aisle seat under \$800, book it."
 
 A multimodal agent needs to:
 

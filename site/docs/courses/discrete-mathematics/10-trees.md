@@ -336,13 +336,13 @@ function buildHuffmanTree(freqs: Map<string, number>): HuffmanNode {
     / \   / \
    2   4 6   8
 ```
-Inorder: $2, 3, 4, 5, 6, 7, 8$.
+Inorder: \$2, 3, 4, 5, 6, 7, 8$.
 
 **Example 10.4** (Tree traversals). On the BST from Example 10.3:
-- Preorder: $5, 3, 2, 4, 7, 6, 8$
-- Inorder: $2, 3, 4, 5, 6, 7, 8$
-- Postorder: $2, 4, 3, 6, 8, 7, 5$
-- Level-order: $5, 3, 7, 2, 4, 6, 8$
+- Preorder: \$5, 3, 2, 4, 7, 6, 8$
+- Inorder: \$2, 3, 4, 5, 6, 7, 8$
+- Postorder: \$2, 4, 3, 6, 8, 7, 5$
+- Level-order: \$5, 3, 7, 2, 4, 6, 8$
 
 **Example 10.5** (Kruskal's algorithm). Graph with edges: $(1,2,5)$, $(2,3,3)$, $(1,3,1)$, $(3,4,4)$, $(2,4,6)$. Sorted: $(1,3,1)$, $(2,3,3)$, $(3,4,4)$, $(1,2,5)$, $(2,4,6)$. Greedily pick: $(1,3)$, $(2,3)$, $(3,4)$ ? MST with weight $1+3+4=8$.
 
@@ -353,7 +353,7 @@ Building the tree:
 2. Combine $C(12)$ and $B(13)$ ? $25$.
 3. Combine $14$ and $D(16)$ ? $30$.
 4. Combine $A(45)$ and $25$ ? $70$.
-5. Combine $30$ and $70$ ? $100$.
+5. Combine \$30$ and \$70$ ? \$100$.
 
 Codes: $A:0$, $B:101$, $C:100$, $D:111$, $E:1101$, $F:1100$. Total bits: $45 \cdot 1 + 13 \cdot 3 + 12 \cdot 3 + 16 \cdot 3 + 9 \cdot 4 + 5 \cdot 4 = 224$ bits.
 

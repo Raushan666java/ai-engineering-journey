@@ -807,7 +807,7 @@ to the user and suggest alternatives.</p>
   <div class="tp-qa-answer">
 <p>Context preservation during handoffs: (1) Shared context object — an `AgentContext` that follows the conversation through all agents, containing `{user_id, collected_data: {order_id: "12345",.
 reason: "wrong size"}, conversation_history: [...], current_agent: "order_agent"}`. (2) Summary generation — when handing off, the current agent generates a concise summary: "User requested order cancellation for.
-order 12345. Refund amount $49.99. Transferring to refund agent." (3) Context is passed to the next agent's system prompt — the next agent sees the full context and.
+order 12345. Refund amount \$49.99. Transferring to refund agent." (3) Context is passed to the next agent's system prompt — the next agent sees the full context and.
 can continue without asking for information again. (4) History truncation — for long conversations, summarize early parts and keep only the last 5-10 turns verbatim. (5) Redis persistence — store context in Redis with the session ID as key,.
 allowing recovery if an agent instance crashes during handoff.</p>
   </div>
@@ -823,7 +823,7 @@ allowing recovery if an agent instance crashes during handoff.</p>
   <div class="tp-qa-answer">
 <p>Intelligent escalation uses multiple signals: (1) Confidence threshold — if the LLM's confidence in its response is below 0.5 for any critical action,.
 escalate. (2) Sentiment analysis — detect negative sentiment (frustration, anger) using a sentiment model. If sentiment score < -0.5, escalate immediately. (3) Repeated failures — if the same request fails 3 times (e.g.,.
-order lookup returns invalid ID repeatedly), escalate. (4) Business rules — specific scenarios always require human: refunds over $500, account security issues,.
+order lookup returns invalid ID repeatedly), escalate. (4) Business rules — specific scenarios always require human: refunds over \$500, account security issues,.
 cancellations of shipped orders. (5) User request — if the user explicitly asks for a human ("speak to a manager", "I want a real person"),.
 escalate. (6) Handoff summary — when escalating, generate a structured summary for the human agent: conversation history, collected data, attempted solutions,.
 and suggested next action. Target: 80%+ containment rate (resolved without human).</p>
@@ -1043,7 +1043,7 @@ databases, or even other agents in a controlled manner.</p>
 
 2. **Order Agent**: Build the OrderStatusAgent with order lookup and cancel tools. Test with: valid order, invalid order, already-shipped order. Verify the agent handles each case correctly.
 
-3. **Refund Agent**: Implement RefundAgent with refund processing. Add validation: refunds > $500 require human approval. Test with $50 and $1000 refund requests. Verify the escalation works.
+3. **Refund Agent**: Implement RefundAgent with refund processing. Add validation: refunds > \$500 require human approval. Test with \$50 and \$1000 refund requests. Verify the escalation works.
 
 4. **Conversation Memory**: Implement ConversationMemory with summarization for conversations exceeding 10 turns. Test with a 15-turn conversation. Verify that the summary captures all key entities (order IDs, reasons, decisions).
 

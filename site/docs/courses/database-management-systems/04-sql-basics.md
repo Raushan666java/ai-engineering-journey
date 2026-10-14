@@ -116,7 +116,7 @@ Choosing the right data type is critical: it affects storage size, query perform
 | INTEGER / INT | Whole numbers (-2^31 to 2^31-1) | 4 bytes | 42, -5 | Number of copies available |
 | BIGINT | Large whole numbers | 8 bytes | 9999999999 | Large-scale transaction IDs |
 | SMALLINT | Small whole numbers | 2 bytes | 100 | Floor number |
-| DECIMAL(p, s) | Exact fixed-point numbers | Varies (p+1 bytes) | DECIMAL(10,2) = 1234567.89 | Book price ($29.99) |
+| DECIMAL(p, s) | Exact fixed-point numbers | Varies (p+1 bytes) | DECIMAL(10,2) = 1234567.89 | Book price (\$29.99) |
 | NUMERIC(p, s) | Synonym for DECIMAL | Varies | NUMERIC(8,2) | Late fee amount |
 | REAL / FLOAT | Approximate floating-point | 4/8 bytes | 3.14159 | Average rating (approximate) |
 | VARCHAR(n) | Variable-length string (max n) | String length + 2 | VARCHAR(255) | Book title (variable length) |
@@ -145,7 +145,7 @@ Choosing the right data type is critical: it affects storage size, query perform
 
 | Situation | Problem | Solution |
 |-----------|---------|----------|
-| Storing price as FLOAT | Rounding error: $0.10 * 3 = 0.30000000000000004 | Use DECIMAL(10,2) |
+| Storing price as FLOAT | Rounding error: \$0.10 * 3 = 0.30000000000000004 | Use DECIMAL(10,2) |
 | VARCHAR(5) for 'Alexander' | Truncation to 'Alexa' without warning | Choose appropriate length or use TEXT |
 | CHAR(10) for short strings | Wasted space: 'hi' stored as 'hi        ' (8 spaces) | Use VARCHAR instead |
 | INTEGER for phone numbers | Leading zeros lost: 0123456789 becomes 123456789 | Use VARCHAR(15) |
@@ -2530,7 +2530,7 @@ flowchart LR
 
 2. Insert three departments into your table: ('Engineering', 'Building A', 500000), ('Marketing', 'Building B', 200000), ('Sales', 'Building A', 300000).
 
-3. Write a SELECT query that finds all products with a price between $10 and $100, sorted by price descending.
+3. Write a SELECT query that finds all products with a price between \$10 and \$100, sorted by price descending.
 
 4. What is the difference between DROP TABLE and TRUNCATE TABLE? When would you use each?
 

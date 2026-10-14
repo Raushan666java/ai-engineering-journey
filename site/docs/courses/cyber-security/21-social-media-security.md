@@ -569,17 +569,17 @@ STEP 5: COVER CLOSURE
 
 ### 2.3 Business Email Compromise (BEC) & CEO Fraud
 
-BEC is the most financially damaging social engineering attack — the FBI reports **$50+ billion in losses** since 2013. Unlike phishing (casting a wide net), BEC is surgical, targeting specific individuals with specific roles.
+BEC is the most financially damaging social engineering attack — the FBI reports **\$50+ billion in losses** since 2013. Unlike phishing (casting a wide net), BEC is surgical, targeting specific individuals with specific roles.
 
 **BEC Attack Types:**
 
 | Type | Description | Example | Average Loss |
 |------|-------------|---------|-------------|
-| **CEO Fraud** | Attacker impersonates CEO requesting urgent wire transfer | "I'm in a meeting, need $50K wired to vendor immediately" | $130,000 |
-| **Invoice Fraud** | Fake invoice from legitimate-looking vendor with updated bank details | "Our banking information has changed, please pay next invoice to new account" | $85,000 |
-| **Account Compromise** | Real employee email account is hacked, used to request payments | "HR Director's actual email sends W-2 requests to all employees" | $100,000 |
-| **Attorney Impersonation** | Fake lawyer about "time-sensitive legal matter" | "This is a confidential legal matter requiring immediate funds transfer" | $200,000 |
-| **Data Theft** | HR impersonated to steal W-2 data for tax fraud | "I need all employee W-2s for annual audit by Friday" | $50,000 (per 1000 employees) |
+| **CEO Fraud** | Attacker impersonates CEO requesting urgent wire transfer | "I'm in a meeting, need \$50K wired to vendor immediately" | \$130,000 |
+| **Invoice Fraud** | Fake invoice from legitimate-looking vendor with updated bank details | "Our banking information has changed, please pay next invoice to new account" | \$85,000 |
+| **Account Compromise** | Real employee email account is hacked, used to request payments | "HR Director's actual email sends W-2 requests to all employees" | \$100,000 |
+| **Attorney Impersonation** | Fake lawyer about "time-sensitive legal matter" | "This is a confidential legal matter requiring immediate funds transfer" | \$200,000 |
+| **Data Theft** | HR impersonated to steal W-2 data for tax fraud | "I need all employee W-2s for annual audit by Friday" | \$50,000 (per 1000 employees) |
 
 **BEC Attack Chain — TypeScript:**
 
@@ -775,9 +775,9 @@ Deepfakes take social engineering to a new level by using AI to impersonate some
 
 | Type | Technology | Realism | Cost | Example |
 |------|-----------|---------|------|---------|
-| **Voice Cloning** | 3-second audio sample → full voice model | 95%+ | Free-$10 | "Call from CEO" requesting wire transfer |
-| **Video Deepfake** | 30-second video → full lip-sync | 90%+ | $50-$500 | "Zoom call from CFO" confirming payment |
-| **Real-Time Voice** | Live voice modifier on phone calls | 85%+ | $100-$500 | "Call from family member" in distress |
+| **Voice Cloning** | 3-second audio sample → full voice model | 95%+ | Free-\$10 | "Call from CEO" requesting wire transfer |
+| **Video Deepfake** | 30-second video → full lip-sync | 90%+ | \$50-\$500 | "Zoom call from CFO" confirming payment |
+| **Real-Time Voice** | Live voice modifier on phone calls | 85%+ | \$100-\$500 | "Call from family member" in distress |
 | **Image Deepfake** | Face swap on ID documents | 95%+ | Free | Fake passport/driver's license for SIM swap |
 | **Text Generation** | LLM writing emails in target's style | 95%+ | Free | "Help me, I lost my phone" text from "friend" |
 
@@ -785,10 +785,10 @@ Deepfakes take social engineering to a new level by using AI to impersonate some
 
 | Year | Target | Technique | Loss | Details |
 |------|--------|-----------|------|---------|
-| 2019 | UK Energy Firm CEO | Voice cloning | $243,000 | CEO's voice cloned via TED talk audio; caller impersonated CEO requesting transfer |
-| 2020 | UAE Bank Manager | Voice deepfake | $35 million | Attacker used voice cloning to impersonate a company director authorizing transfers |
+| 2019 | UK Energy Firm CEO | Voice cloning | \$243,000 | CEO's voice cloned via TED talk audio; caller impersonated CEO requesting transfer |
+| 2020 | UAE Bank Manager | Voice deepfake | \$35 million | Attacker used voice cloning to impersonate a company director authorizing transfers |
 | 2023 | US School Principal | Racist audio deepfake | Arrested | Principal falsely accused of racist comments via AI-generated audio — caused riots, death threats |
-| 2024 | HK Multinational Finance | Video deepfake meeting | $25 million | Employee attended video call where EVERY participant was a deepfake — approved $25M transfer |
+| 2024 | HK Multinational Finance | Video deepfake meeting | \$25 million | Employee attended video call where EVERY participant was a deepfake — approved \$25M transfer |
 | 2024 | Indian Journalist | Voice deepfake | Reputation destroyed | Fake call from "colleague" discussing corruption — recorded and leaked |
 
 **Deepfake Detection — TypeScript:**
@@ -1500,9 +1500,9 @@ PHASE 5: EXFILTRATION
 ```
 
 **Real-World Impact:**
-- Average financial loss from SIM swap: **$150,000+**
+- Average financial loss from SIM swap: **\$150,000+**
 - Crypto investors targeted heavily (Twitter crypto elite SIM swap ring, 2023)
-- **Michael Terpin** lost $24M in crypto to a SIM swap (AT&T was found liable for $225M)
+- **Michael Terpin** lost \$24M in crypto to a SIM swap (AT&T was found liable for \$225M)
 - 2024: SIM swap attacks increased 400% year-over-year (FBI IC3 report)
 
 ### 5.2 SIM Swap Prevention
@@ -3411,7 +3411,7 @@ Date: ${new Date().toISOString().split('T')[0]}
 **Overview:**
 - **Date:** July 15, 2020
 - **Impact:** 130+ high-profile accounts compromised (Barack Obama, Elon Musk, Joe Biden, Bill Gates, Kanye West, Apple, Uber)
-- **Financial:** $118,000 in Bitcoin stolen (in 12 minutes)
+- **Financial:** \$118,000 in Bitcoin stolen (in 12 minutes)
 - **Method:** Social engineering of Twitter employees + internal tool access
 
 **Full Attack Chain:**
@@ -3507,9 +3507,9 @@ VICTIM → clicks phishing link
 **Overview (Michael Terpin vs. AT&T, 2018):**
 - Victim: Michael Terpin, cryptocurrency investor
 - Attacker: SIM swap ring targeting high-net-worth crypto investors
-- Method: Attacker paid AT&T employee $1,000 to swap Terpin's number
-- Loss: $24 million in cryptocurrency
-- Legal: AT&T found grossly negligent, jury awarded $225M (reduced to $7.5M on appeal)
+- Method: Attacker paid AT&T employee \$1,000 to swap Terpin's number
+- Loss: \$24 million in cryptocurrency
+- Legal: AT&T found grossly negligent, jury awarded \$225M (reduced to \$7.5M on appeal)
 
 **Attack Execution:**
 ```
@@ -3528,7 +3528,7 @@ Day 4 (8:00 AM): Terpin wakes up to "No Service" — too late
 **Overview:**
 - **Victim:** Alex, a journalist with 15 years of Google data (Gmail, Drive, Photos, YouTube channel with 50K subscribers)
 - **Attack Method:** Credential stuffing + SMS 2FA bypass
-- **Loss:** Complete digital life — emails, documents, photos, YouTube channel earning $2K/month
+- **Loss:** Complete digital life — emails, documents, photos, YouTube channel earning \$2K/month
 - **Recovery:** FAILED — account permanently lost
 
 **The Full Attack Timeline:**
@@ -3638,9 +3638,9 @@ VICTIM OUTCOME:
 
 **Overview:**
 - **Victim:** Teenage Discord user in a gaming community
-- **Loss:** Discord account (used for 3 years), membership in 12 private servers, $500 in Discord Nitro gifts, trust of 200+ friends
+- **Loss:** Discord account (used for 3 years), membership in 12 private servers, \$500 in Discord Nitro gifts, trust of 200+ friends
 - **Method:** Fake "Discord Token Logger" tool promising to show who blocked you
-- **Human Cost:** Account used to scam friends out of $3,000 total across the friend group
+- **Human Cost:** Account used to scam friends out of \$3,000 total across the friend group
 
 **The Full Story:**
 
@@ -3797,7 +3797,7 @@ DISCORD TOKEN THEFT PREVENTION
 - **Target demographic:** Families, friend groups, non-technical users
 - **Method:** Social engineering through compromised friend accounts
 - **Scale:** Millions of WhatsApp accounts compromised annually through this exact method
-- **Financial impact:** Average $2,000 per victim (wiring money to "friend in need")
+- **Financial impact:** Average \$2,000 per victim (wiring money to "friend in need")
 
 **The Complete Attack Chain:**
 
@@ -4005,13 +4005,13 @@ HIGH-PROFILE ACCOUNT SECURITY CHECKLIST
 □ Monitor for impersonation accounts — report them
 ```
 
-### 9.8 Business Email Compromise (BEC) — The $50 Billion Heist
+### 9.8 Business Email Compromise (BEC) — The \$50 Billion Heist
 
 **Overview:**
 - **Target:** Medium-sized US manufacturing company (500 employees)
 - **Attackers:** Nigerian cybercrime ring (part of a larger BEC operation)
-- **Financial Loss:** $1.2 million single wire transfer
-- **Total BEC losses globally (2013-2024):** $50+ billion (FBI IC3)
+- **Financial Loss:** \$1.2 million single wire transfer
+- **Total BEC losses globally (2013-2024):** \$50+ billion (FBI IC3)
 
 **The Complete Attack Story:**
 
@@ -4152,12 +4152,12 @@ TECHNICAL TOOLS:
      - Large attachment access outside business hours
 ```
 
-### 9.9 Deepfake CEO Fraud — The $25 Million Video Call
+### 9.9 Deepfake CEO Fraud — The \$25 Million Video Call
 
 **Overview:**
 - **Target:** Hong Kong-based multinational finance company
 - **Attackers:** Sophisticated cybercrime group using AI-generated deepfakes
-- **Loss:** $25 million (HK$200 million)
+- **Loss:** \$25 million (HK\$200 million)
 - **Method:** Multi-person deepfake video conference call
 - **Date:** January 2024 (publicly reported February 2024)
 
@@ -4324,9 +4324,9 @@ AFTER THE CALL:
 
 | Manager | Security | Platform | Price | Key Feature |
 |---------|----------|----------|-------|-------------|
-| **Bitwarden** | AES-256, open source | All | Free/$10/yr | Open source audit, self-host option |
-| **1Password** | AES-256, Secret Key | All | $36/yr | Travel Mode, Secret Key (extra layer) |
-| **Proton Pass** | Zero-access encryption | All | Free/$24/yr | Integrated with Proton ecosystem |
+| **Bitwarden** | AES-256, open source | All | Free/\$10/yr | Open source audit, self-host option |
+| **1Password** | AES-256, Secret Key | All | \$36/yr | Travel Mode, Secret Key (extra layer) |
+| **Proton Pass** | Zero-access encryption | All | Free/\$24/yr | Integrated with Proton ecosystem |
 | **KeePassXC** | AES-256, local only | Desktop | Free | Fully offline, file-based |
 | **Apple iCloud Keychain** | End-to-end encrypted | Apple only | Free | Native iOS/macOS integration |
 
@@ -4360,7 +4360,7 @@ AFTER THE CALL:
 ## Summary
 
 - **Account Takeover Taxonomy:** 6 categories (credential, social engineering, session, MFA bypass, fixation, physical) with varying difficulty — credential-based attacks are most common (52%), SIM swapping is most devastating. Each category requires different defenses.
-- **Social Engineering Deep Dive:** 10+ attack techniques including phishing, spear phishing, vishing, SMiShing, pretexting, BEC/CEO fraud, deepfake voice/video, QR code phishing, and psychologial manipulation (Cialdini's 6 principles). Pretexting involves constructing a fictional scenario over multiple interactions — the most sophisticated form. BEC has caused $50+ billion in losses since 2013. Deepfake technology now enables real-time voice cloning and video call impersonation, with the Hong Kong $25M deepfake call being the most advanced known attack.
+- **Social Engineering Deep Dive:** 10+ attack techniques including phishing, spear phishing, vishing, SMiShing, pretexting, BEC/CEO fraud, deepfake voice/video, QR code phishing, and psychologial manipulation (Cialdini's 6 principles). Pretexting involves constructing a fictional scenario over multiple interactions — the most sophisticated form. BEC has caused \$50+ billion in losses since 2013. Deepfake technology now enables real-time voice cloning and video call impersonation, with the Hong Kong \$25M deepfake call being the most advanced known attack.
 - **OSINT Reconnaissance:** Attackers use LinkedIn, Facebook, Instagram, Twitter, GitHub, data breaches, and specialized tools (theHarvester, Sherlock, Maltego) to gather personal information. Everything you post publicly is ammunition. Self-defense means removing DOB, hometown, pet names, and using fictional security question answers.
 - **Phishing Detection:** Programmatic analysis of sender domain, reply-to, links (homograph detection, suspicious TLDs), keywords (verification, security alert, urgent), urgency pressure, attachments (executables, macros, archives), and SPF/DKIM/DMARC authentication results. Instagram-specific phishing patterns include fake login pages, verification scams, and giveaway fraud.
 - **BEC/CEO Fraud Detection:** Machine learning scoring engine analyzes sender domain consistency, financial request context, urgency levels, recipient role (finance/accounting targets), domain impersonation (typosquatting), and prior email relationships to detect business email compromise.
@@ -4368,12 +4368,12 @@ AFTER THE CALL:
 - **Password Strength:** Entropy-based calculation with crack time estimation — 14+ character passwords with 4 character types provide > 100-bit entropy. Password managers generate unique 20+ char passwords for every service. Reused passwords enable credential stuffing across services.
 - **Session Security:** Bind sessions to device fingerprints, detect impossible travel (2 locations too close in time), monitor user-agent changes, track new IPs/locations. Session token theft bypasses BOTH password and MFA — tokens are the new keys to your kingdom.
 - **MFA Hierarchy:** SMS < TOTP < Push Notification < FIDO2 Software < FIDO2 Hardware Key. SMS 2FA is vulnerable to SIM swap, SS7 interception, and phishing. TOTP is phishable via evilginx proxy attacks. FIDO2 hardware keys (YubiKey, Google Titan) are the ONLY phishing-resistant MFA — they cryptographically bind to the real domain.
-- **SIM Swap:** The most devastating personal attack — attacker social-engineers your mobile carrier to port your number to their SIM, intercepts SMS 2FA, drains crypto/bank accounts within minutes. Prevent with carrier PIN, port freeze, Google Voice number, and removing SMS 2FA entirely. The Michael Terpin case ($24M loss) highlights the insider threat vector.
+- **SIM Swap:** The most devastating personal attack — attacker social-engineers your mobile carrier to port your number to their SIM, intercepts SMS 2FA, drains crypto/bank accounts within minutes. Prevent with carrier PIN, port freeze, Google Voice number, and removing SMS 2FA entirely. The Michael Terpin case (\$24M loss) highlights the insider threat vector.
 - **Google Account Security:** The single most important account — controls Gmail (password resets for everything), YouTube, Drive, Photos, Android, and Google Pay. Google Advanced Protection Program (APP) requires FIDO2 hardware keys and blocks phishing, SIM swap, and automated recovery. Recovery codes must be stored OFFLINE, not in Google Drive. Gmail filter hijacking and email forwarding are silent attack techniques.
 - **Platform Forensics:** 11+ platform forensic guides — Instagram (JSON data export with IP logs, device info, email changes, login activity), Google Takeout (signInId, oauthClientId, recoveryEmail), WhatsApp (Linked Devices, 2-Step PIN, cloud backup breach risks), Discord (token logger analysis, OAuth app audit, session IP/location tracking), TikTok (login history, device management, account change logs), Snapchat (limited data export), Telegram (cloud password audit, active session analysis), Signal (Registration Lock PIN — the only defense against SIM swap reassignment), Amazon (device list, payment methods, login history), GitHub/Microsoft (personal access tokens, SSH keys, OAuth app scopes, CI/CD pipeline risks), and Facebook/Meta (Where You're Logged In, third-party app access, Trusted Contacts).
 - **Personal Defense Architecture:** 6-layer model — password manager (layer 1), hardware key 2FA + TOTP (layer 2), session management with separate browser profiles (layer 3), dedicated email for account recovery (layer 4), OPSEC communication rules (layer 5), and automated monitoring (layer 6). Account Security Scanner scores each account across authentication, credentials, sessions, recovery, and ecosystem.
 - **Incident Response Playbook:** First 15 minutes are critical — confirm compromise (minute 0-2), secure what you can (minute 2-5), contain the attack (minute 5-10), document everything (minute 10-15). Platform-specific recovery URLs and processes for 15+ services. Post-recovery hardening checklist covers password, 2FA, sessions, apps, email forwarding/filters, monitoring, and legal. Evidence preservation is critical for law enforcement reporting.
-- **Real-World Case Studies:** 9 end-to-end attack stories covering every major technique — Twitter 2020 Bitcoin Scam (internal tool social engineering by 17-year-old, 130 accounts, $118K), Telegram OAuth Hijacking (evilginx proxy, password + SMS code stolen), SIM Swap Ring ($24M crypto loss, AT&T employee bribe), Google Account Takeover (credential stuffing + no recovery options = permanent data loss), Discord Token Logger (fake gaming tool stole Discord tokens, cascaded to 15+ accounts via trust exploitation), WhatsApp Social Engineering Hijack ("I need the code" scam using compromised friend accounts), TikTok Journalist Takeover (spear phishing + support social engineering for disinformation campaign), BEC $1.2M Wire Transfer (CEO email compromise during international flight, DMARC not enforced), and HK $25M Deepfake Video Call (AI-generated CFO + legal team on video call, every participant was a deepfake).
+- **Real-World Case Studies:** 9 end-to-end attack stories covering every major technique — Twitter 2020 Bitcoin Scam (internal tool social engineering by 17-year-old, 130 accounts, \$118K), Telegram OAuth Hijacking (evilginx proxy, password + SMS code stolen), SIM Swap Ring (\$24M crypto loss, AT&T employee bribe), Google Account Takeover (credential stuffing + no recovery options = permanent data loss), Discord Token Logger (fake gaming tool stole Discord tokens, cascaded to 15+ accounts via trust exploitation), WhatsApp Social Engineering Hijack ("I need the code" scam using compromised friend accounts), TikTok Journalist Takeover (spear phishing + support social engineering for disinformation campaign), BEC \$1.2M Wire Transfer (CEO email compromise during international flight, DMARC not enforced), and HK \$25M Deepfake Video Call (AI-generated CFO + legal team on video call, every participant was a deepfake).
 
 ---
 
@@ -4394,7 +4394,7 @@ AFTER THE CALL:
 | 11 | Which Cialdini principle is most commonly exploited by attackers creating urgency? | Reciprocity | Scarcity | Authority | Social Proof | **B** |
 | 12 | What is pretexting in social engineering? | Sending mass phishing emails | Creating a fictional scenario over multiple interactions to manipulate a target | Using a fake login page to steal credentials | Installing malware on a victim's computer | **B** |
 | 13 | What is the single most important security setting for a Telegram account? | Setting a profile photo | Enabling 2-Step Verification (Cloud Password) | Using a username instead of phone number | Disabling last seen | **B** |
-| 14 | In the Hong Kong $25 million deepfake fraud, what made the attack exceptional? | The attacker used a single deepfake video | Every participant on the video call was an AI-generated deepfake | The attack took 2 years to execute | The attacker was an inside employee | **B** |
+| 14 | In the Hong Kong \$25 million deepfake fraud, what made the attack exceptional? | The attacker used a single deepfake video | Every participant on the video call was an AI-generated deepfake | The attack took 2 years to execute | The attacker was an inside employee | **B** |
 | 15 | What is the golden rule of WhatsApp security? | Use a strong password | Never share your 6-digit verification code with ANYONE for ANY reason | Only add contacts you know in person | Disable read receipts | **B** |
 | 16 | How do attackers use email filters in a Gmail compromise? | To organize incoming emails by priority | To automatically DELETE security notification emails so the victim doesn't see them | To forward spam to the junk folder | To sort emails by sender | **B** |
 | 17 | What is the primary defense against Discord token loggers? | Enabling 2FA on Discord | Never running untrusted executable files claiming to be Discord tools | Using a VPN while using Discord | Changing your Discord username monthly | **B** |
@@ -4475,9 +4475,9 @@ AFTER THE CALL:
    - IP 45.33.32.156: 1 login attempt, 1 username, failure. user claims "I forgot my password."
    - IP 10.0.0.1: 500 login attempts in 1 minute, 500 different usernames, all from a data center IP range. 0 successes.
 
-4. Create a BEC prevention playbook for a small business (50 employees) with a $500K annual revenue. Include: email authentication (DMARC/DKIM/SPF), dual approval process for wire transfers, employee training, vendor verification protocol, and incident response for when a BEC attack is suspected.
+4. Create a BEC prevention playbook for a small business (50 employees) with a \$500K annual revenue. Include: email authentication (DMARC/DKIM/SPF), dual approval process for wire transfers, employee training, vendor verification protocol, and incident response for when a BEC attack is suspected.
 
-5. Analyze the Hong Kong $25M deepfake video call attack from Section 10.9 and design a "deepfake video call verification protocol" with at least 8 specific steps that would have prevented the attack.
+5. Analyze the Hong Kong \$25M deepfake video call attack from Section 10.9 and design a "deepfake video call verification protocol" with at least 8 specific steps that would have prevented the attack.
 
 6. For the Twitter 2020 Bitcoin Scam (Section 10.1), create a post-incident security overhaul plan for Twitter addressing all 6 root causes. Include specific technical controls, process changes, and training requirements.
 

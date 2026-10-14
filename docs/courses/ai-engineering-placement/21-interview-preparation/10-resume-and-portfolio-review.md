@@ -114,7 +114,7 @@ print(f"Missing: {result['missing_keywords']}")
 Every bullet point should demonstrate impact. Use the CAR method: Challenge → Action → Result.
 
 **Weak**: "Worked on the payment system"
-**Strong**: "Redesigned the payment processing pipeline using Python and Kafka, reducing failed transactions by 40% and saving $200K/year in chargebacks"
+**Strong**: "Redesigned the payment processing pipeline using Python and Kafka, reducing failed transactions by 40% and saving \$200K/year in chargebacks"
 
 **Formula**: [Action verb] [what you did] using [tech/tools], resulting in [quantified impact].
 
@@ -692,7 +692,7 @@ Tools: Kafka, Git, GitHub Actions, Datadog, Prometheus</code></pre>
     <p><strong>Strategy 4 — Business impact</strong>:</p>
     <ul>
       <li>"Reduced customer support tickets related to [feature] by 30%"</li>
-      <li>"Enabled $500K annual run-rate feature through [work]"</li>
+      <li>"Enabled \$500K annual run-rate feature through [work]"</li>
       <li>"Reduced infrastructure costs by 25% through optimization"</li>
     </ul>
     <p>If you truly have no numbers, focus on the <strong>scope</strong> and <strong>complexity</strong> of what you built.</p>
@@ -966,7 +966,7 @@ productive. If you were laid off, say "My position was eliminated in a company r
     Q15: Should I include non-technical work experience on my resume?
   </summary>
   <div class="tp-qa-answer">
-    <p><strong>If you're early in your career (0-3 years experience)</strong>: Yes, include it if it demonstrates transferable skills. Retail or service work shows communication, problem-solving, and teamwork. Frame it appropriately: "Retail Associate at Target — resolved customer issues, trained 3 new hires, managed inventory for $500K+ product line."</p>
+    <p><strong>If you're early in your career (0-3 years experience)</strong>: Yes, include it if it demonstrates transferable skills. Retail or service work shows communication, problem-solving, and teamwork. Frame it appropriately: "Retail Associate at Target — resolved customer issues, trained 3 new hires, managed inventory for \$500K+ product line."</p>
     <p><strong>If you're mid-career (3-10 years)</strong>: Only include non-technical roles if they're recent or highly relevant. If you have 5+ years of engineering experience, your non-technical jobs from 8 years ago are no longer relevant.</p>
     <p><strong>If you're changing careers</strong>: Absolutely include it, but frame it around transferable skills. A teacher transitioning to engineering should highlight: "Created structured curriculum for 100+ students" → project management skills. "Debugged technical issues with classroom technology" → technical problem-solving.</p>
     <p><strong>General rule</strong>: Include if it adds value. If it's filler, cut it. Your resume should show a clear career trajectory toward your target role.</p>

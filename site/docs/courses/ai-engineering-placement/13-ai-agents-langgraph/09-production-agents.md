@@ -804,8 +804,8 @@ automatic depending on risk tolerance. Pipeline results are stored for audit and
   <div class="tp-qa-answer">
 <p>A model router analyzes incoming requests and selects the most cost-effective LLM that can handle the task. Implementation: (1) feature extraction — analyze the request for.
 complexity indicators: length, ambiguity, domain specificity, required reasoning depth; (2) classification — use a lightweight classifier (rules or ML model) to map features to a complexity tier (simple,.
-medium, complex); (3) model assignment — simple → cheap model (GPT-3.5, Claude Haiku, cost ~$0.001/request), medium → balanced model (Claude Sonnet,.
-GPT-4o mini), complex → powerful model (GPT-4, Claude Opus, cost ~$0.03/request); (4) fallback — if the cheap model fails (produces low-quality output,.
+medium, complex); (3) model assignment — simple → cheap model (GPT-3.5, Claude Haiku, cost ~\$0.001/request), medium → balanced model (Claude Sonnet,.
+GPT-4o mini), complex → powerful model (GPT-4, Claude Opus, cost ~\$0.03/request); (4) fallback — if the cheap model fails (produces low-quality output,.
 expresses uncertainty), retry with the next tier. A <code>ModelRouter</code> class manages the model registry (available models with capabilities and costs), routing logic,.
 and fallback chain. The router also handles model-specific formatting (token limits, system prompt styles) and tracks model usage for cost accounting. In production,.
 model routing can reduce LLM costs by 40-60% while maintaining output quality for the majority of requests.</p>

@@ -588,7 +588,7 @@ flowchart TB
 | Precision | FP64/FP32 | FP32/FP16/INT8/FP4 | BF16/INT8 | INT8/INT16 |
 | Peak TFLOPS | ~2 (FP32) | ~2000 (FP16) | ~275 (BF16) | ~30 (INT8) |
 | TDP | 150-350W | 350-700W | 200-450W | 5-15W |
-| Cost | $500-$5000 | $10K-$40K | $50K+ (pod) | $50-$200 |
+| Cost | \$500-\$5000 | \$10K-\$40K | \$50K+ (pod) | \$50-\$200 |
 
 **When to use each:**
 

@@ -388,10 +388,10 @@ The following chapters cover advanced production AI topics. These are standalone
 
 | Role | Key Skills Needed | Dubai Salary (AED/mo) | Remote Global (USD/yr) |
 |------|------------------|----------------------|----------------------|
-| **AI Automation Engineer** | LangGraph, n8n/automation, API integration, Python | 12K-22K | $60K-$100K |
-| **AI/ML Engineer (Agent focus)** | RAG, LangGraph, vector DBs, prompt engineering, MCP | 15K-30K | $80K-$140K |
-| **LLM Application Engineer** | FastAPI, LLM APIs, structured output, evaluation | 12K-25K | $70K-$130K |
-| **Freelance AI Developer** | Full stack agent development, client communication | Variable | $50-120/hr |
+| **AI Automation Engineer** | LangGraph, n8n/automation, API integration, Python | 12K-22K | \$60K-\$100K |
+| **AI/ML Engineer (Agent focus)** | RAG, LangGraph, vector DBs, prompt engineering, MCP | 15K-30K | \$80K-\$140K |
+| **LLM Application Engineer** | FastAPI, LLM APIs, structured output, evaluation | 12K-25K | \$70K-\$130K |
+| **Freelance AI Developer** | Full stack agent development, client communication | Variable | \$50-120/hr |
 
 ### Job Sources
 
@@ -401,7 +401,7 @@ The following chapters cover advanced production AI topics. These are standalone
 | LinkedIn | All full-time roles | Optimize profile for "AI Agent Engineer" keywords |
 | Bayt.com | Dubai-market roles | Most Gulf companies post here alongside LinkedIn |
 | Naukri Gulf | Dubai / UAE | Strong for enterprise consultancies |
-| Upwork | Freelance projects | Outcome-first proposals; ignore fixed-budget posts under $500 |
+| Upwork | Freelance projects | Outcome-first proposals; ignore fixed-budget posts under \$500 |
 | Wellfound / AngelList | Startup roles | Filter by "AI", "agent", "LLM" |
 | Y Combinator Jobs | Early-stage AI startups | Apply within 24 hours of posting |
 | Company career pages | Big tech (Anthropic, OpenAI, Google) | Direct apply + referral if possible |

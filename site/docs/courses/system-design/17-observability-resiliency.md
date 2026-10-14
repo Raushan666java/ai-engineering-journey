@@ -602,7 +602,7 @@ Querying Loki for `{correlation_id="abc-123"}` reconstructs the full request flo
 
 **Scenario: Payment Processing Platform Observability Overhaul**
 
-A payment processing platform handling $2 billion in monthly transaction volume suffers from frequent incident response delays. When P99 latency spikes from 50ms to 5 seconds, the on-call engineer spends 45 minutes manually SSHing into servers to examine logs, only to discover the Redis cluster hit its maxmemory limit and evicted cache entries, causing a cascade of origin database queries.
+A payment processing platform handling \$2 billion in monthly transaction volume suffers from frequent incident response delays. When P99 latency spikes from 50ms to 5 seconds, the on-call engineer spends 45 minutes manually SSHing into servers to examine logs, only to discover the Redis cluster hit its maxmemory limit and evicted cache entries, causing a cascade of origin database queries.
 
 The team implements a complete observability stack. First, they deploy OpenTelemetry auto-instrumentation across all 45 microservices. Each service exports RED metrics (request rate, error rate, latency histograms) to Prometheus, structured JSON logs to Loki with correlation IDs, and distributed traces to Jaeger. A Grafana dashboard shows the payment flow end-to-end: from API gateway to fraud detection to bank processor to ledger update.
 

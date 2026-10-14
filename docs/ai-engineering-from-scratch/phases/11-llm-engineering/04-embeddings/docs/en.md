@@ -83,11 +83,11 @@ The market has settled into a handful of production-grade options (MTEB scores a
 
 | Model | Provider | Dimensions | MTEB | Context | Cost / 1M tokens |
 |-------|----------|-----------|------|---------|------------------|
-| Gemini Embedding 2 | Google | 3072 (Matryoshka) | 67.7 (retrieval) | 8192 | $0.15 |
-| embed-v4 | Cohere | 1024 (Matryoshka) | 65.2 | 128K | $0.12 |
-| voyage-4 | Voyage AI | 1024/2048 (Matryoshka) | 66.8 | 32K | $0.12 |
-| text-embedding-3-large | OpenAI | 3072 (Matryoshka) | 64.6 | 8192 | $0.13 |
-| text-embedding-3-small | OpenAI | 1536 (Matryoshka) | 62.3 | 8192 | $0.02 |
+| Gemini Embedding 2 | Google | 3072 (Matryoshka) | 67.7 (retrieval) | 8192 | \$0.15 |
+| embed-v4 | Cohere | 1024 (Matryoshka) | 65.2 | 128K | \$0.12 |
+| voyage-4 | Voyage AI | 1024/2048 (Matryoshka) | 66.8 | 32K | \$0.12 |
+| text-embedding-3-large | OpenAI | 3072 (Matryoshka) | 64.6 | 8192 | \$0.13 |
+| text-embedding-3-small | OpenAI | 1536 (Matryoshka) | 62.3 | 8192 | \$0.02 |
 | BGE-M3 | BAAI | 1024 (dense+sparse+ColBERT) | 63.0 multilingual | 8192 | Open-weight |
 | Qwen3-Embedding | Alibaba | 4096 (Matryoshka) | 66.9 | 32K | Open-weight |
 | Nomic-embed-v2 | Nomic | 768 (Matryoshka) | 63.1 | 8192 | Open-weight |
@@ -197,7 +197,7 @@ graph LR
     CE --> R["Top 10 results"]
 ```
 
-Reranking models: Cohere Rerank 3.5 ($2 per 1000 queries), BGE-reranker-v2 (free, open source), Jina Reranker v2 (free, open source).
+Reranking models: Cohere Rerank 3.5 (\$2 per 1000 queries), BGE-reranker-v2 (free, open source), Jina Reranker v2 (free, open source).
 
 ### Matryoshka Embeddings
 

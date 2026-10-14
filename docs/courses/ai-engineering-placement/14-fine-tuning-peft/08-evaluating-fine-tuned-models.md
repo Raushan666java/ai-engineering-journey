@@ -724,7 +724,7 @@ the new fine-tuned model, shuffled to avoid position bias; (3) Rating dimensions
 safety (binary); (4) Rater selection — use trained raters who understand the task domain. For each test case, have 3 raters evaluate independently and.
 use majority vote or average score; (5) Analysis — calculate win rate (percentage of cases where the new model is preferred),.
 average scores per dimension, inter-rater agreement (Krippendorff's alpha, target > 0.7); (6) Statistical significance — use bootstrap resampling to compute confidence intervals for.
-win rate. Human evaluation is expensive ($500-2000 per evaluation round for 200 examples) but catches quality issues that automated metrics miss. For.
+win rate. Human evaluation is expensive (\$500-2000 per evaluation round for 200 examples) but catches quality issues that automated metrics miss. For.
 cheaper alternatives: use LLM-as-judge (GPT-4 evaluating responses) which correlates reasonably well with human judgments for most dimensions, or use the Chatbot Arena methodology for.
 crowdsourced preferences.</p>
   </div>

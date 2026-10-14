@@ -72,4 +72,4 @@ Each chapter is structured to progress from theoretical foundations to practical
 
 ## Cloud Provider Access
 
-Students require an AWS account (free tier eligible), an Azure subscription (student subscription available), and a GCP account (free tier with $300 credit). All three platforms offer substantial free tiers sufficient to complete the exercises in this course.
+Students require an AWS account (free tier eligible), an Azure subscription (student subscription available), and a GCP account (free tier with \$300 credit). All three platforms offer substantial free tiers sufficient to complete the exercises in this course.

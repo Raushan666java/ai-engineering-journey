@@ -510,7 +510,7 @@ Trade-offs discussed: DynamoDB vs PostgreSQL (DynamoDB wins on auto-scaling for 
 
 ## Case Study 2: Real-World Design Failure — Knight Capital
 
-In 2012, Knight Capital lost $440M in 45 minutes due to a flawed system design deployment. The incident illustrates every system design antipattern from this chapter. Knight deployed new retail order routing code to 8 servers, but a previous deployment had been tested on 7 of them. The 8th server ran old code that interpreted a previously unused flag field as "send order" instead of "disable." The result: the 8th server sent millions of erroneous orders into the market at 4M orders/second.
+In 2012, Knight Capital lost \$440M in 45 minutes due to a flawed system design deployment. The incident illustrates every system design antipattern from this chapter. Knight deployed new retail order routing code to 8 servers, but a previous deployment had been tested on 7 of them. The 8th server ran old code that interpreted a previously unused flag field as "send order" instead of "disable." The result: the 8th server sent millions of erroneous orders into the market at 4M orders/second.
 
 The design failures: no canary deployment (all 8 servers went live simultaneously), no feature flags (a boolean field could trigger real orders), no gradual rollout, no monitoring for anomalous order rates, no circuit breaker when order volume exceeded historical patterns by 1000x, and no kill switch for the new functionality. The post-mortem recommends: phased rollouts (10% → 30% → 100%), feature flags that gate new behavior independently of deployment, real-time anomaly detection with automatic rollback, circuit breakers on external order flow, and a manual kill switch that an operator can trigger within 2 seconds.
 

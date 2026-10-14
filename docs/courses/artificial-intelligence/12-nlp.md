@@ -1577,7 +1577,7 @@ Unlike RNNs which process tokens sequentially (inherently ordered), Transformers
 | **Sentiment Analysis** | BERT fine-tuning, Naive Bayes, LSTM | Brands monitor Twitter/Reddit sentiment in real-time |
 | **Spam Detection** | Naive Bayes, logistic regression, BERT | Gmail blocks 99.9% of 10M+ daily spam emails |
 | **Grammarly / LanguageTool** | POS tagging, dependency parsing, BERT, sequence labeling | 30M+ daily users, corrects grammar/style/tone |
-| **Amazon Product Search** | Query understanding, NER (brands/products), embedding similarity | "wireless noise-canceling headphones under $100" → filtered results |
+| **Amazon Product Search** | Query understanding, NER (brands/products), embedding similarity | "wireless noise-canceling headphones under \$100" → filtered results |
 | **Healthcare NLP** | NER (diseases, drugs, procedures), relation extraction | Extract diagnoses from clinical notes, ICD-10 coding |
 | **Legal Document Review** | NER (parties, dates, clauses), text classification, information extraction | 50% reduction in document review time |
 | **Social Media Monitoring** | Sentiment analysis, topic modeling, entity extraction | Brand crisis detection, election monitoring |

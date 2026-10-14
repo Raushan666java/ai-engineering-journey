@@ -37,8 +37,8 @@ The embedding model and similarity metric are the only two decisions that matter
 
 Pick based on your constraints:
 
-- **Need an API, best value**: OpenAI text-embedding-3-small (1536d, $0.02/1M tokens)
-- **Need maximum accuracy**: Voyage-3 (1024d, $0.06/1M tokens, highest MTEB)
+- **Need an API, best value**: OpenAI text-embedding-3-small (1536d, \$0.02/1M tokens)
+- **Need maximum accuracy**: Voyage-3 (1024d, \$0.06/1M tokens, highest MTEB)
 - **Need local/private**: BGE-M3 (1024d, free, multilingual, GPU recommended)
 - **Need fast local prototyping**: all-MiniLM-L6-v2 (384d, free, runs on CPU)
 - **Need multilingual**: Cohere embed-v3 (1024d) or BGE-M3 (both strong multilingual)

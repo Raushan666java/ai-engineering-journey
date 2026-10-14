@@ -123,7 +123,7 @@ An ice cream shop tracks daily sales and temperature:
 
 - **Spearman**: If one day had a power outage (sales = 0 despite high temp), Spearman ρ = 0.82 (less affected by the outlier) while Pearson r drops to 0.65.
 
-- **Regression**: Sales = -50 + 8 × Temperature + ε. For every 1°F increase, sales increase by $8 (β₁ = 8). Intercept (-50) is meaningless here (no one sells ice cream at 0°F).
+- **Regression**: Sales = -50 + 8 × Temperature + ε. For every 1°F increase, sales increase by \$8 (β₁ = 8). Intercept (-50) is meaningless here (no one sells ice cream at 0°F).
 
 - **R² = 0.72**: Temperature explains 72% of the variance in sales. Other 28%: day of week, holidays, events, marketing.
 
@@ -374,7 +374,7 @@ A: R² measures the proportion of variance in Y explained by the model. R² = 0.
 A: LINE assumptions: (1) Linearity: plot Y vs each X, plot residuals vs fitted. (2) Independence: Durbin-Watson test, or domain knowledge (no time series structure). (3) Normality of residuals: Q-Q plot, Shapiro-Wilk test. (4) Equal variance (homoscedasticity): residuals vs fitted plot (no funnel shape), Breusch-Pagan test. Violations: use transformations, robust standard errors, weighted least squares, or non-linear models.
 
 **Q6: How do you interpret a regression coefficient in a multiple linear regression?**
-A: The coefficient β_j represents the expected change in Y for a one-unit increase in X_j, holding all other predictors constant (ceteris paribus). Important: if predictors are correlated, "holding constant" may be unrealistic. Always check units: if X is in $1000s and Y is in $, β_j is the dollar change per $1000 increase.
+A: The coefficient β_j represents the expected change in Y for a one-unit increase in X_j, holding all other predictors constant (ceteris paribus). Important: if predictors are correlated, "holding constant" may be unrealistic. Always check units: if X is in \$1000s and Y is in $, β_j is the dollar change per \$1000 increase.
 
 **Q7: What is the difference between R-squared and Adjusted R-squared?**
 A: R² always increases when you add a predictor (or stays the same). Adjusted R² penalizes for adding predictors using the formula: Adj R² = 1 - (1-R²)(n-1)/(n-p-1). Adjusted R² can decrease if a useless predictor is added. Use adjusted R² for model selection (comparing models with different numbers of predictors).

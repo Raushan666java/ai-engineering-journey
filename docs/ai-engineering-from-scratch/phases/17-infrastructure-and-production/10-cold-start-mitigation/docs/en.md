@@ -45,7 +45,7 @@ Modal takes a checkpoint of the GPU state (weights, CUDA graphs, KV cache region
 
 ### Layer 4 — warm pools (min_workers=1)
 
-Simplest mitigation: keep one replica always ready. Cost is one GPU's hourly rate 24x7. The arithmetic is brutal on small models (you pay $0.85-$1.50/hr to avoid a 30s cold start) and kind to large ones (pay $4/hr to avoid a 5-minute cold start). The SLA threshold where warm pools become mandatory: typically TTFT P99 < 60s on a 70B+ model.
+Simplest mitigation: keep one replica always ready. Cost is one GPU's hourly rate 24x7. The arithmetic is brutal on small models (you pay \$0.85-\$1.50/hr to avoid a 30s cold start) and kind to large ones (pay \$4/hr to avoid a 5-minute cold start). The SLA threshold where warm pools become mandatory: typically TTFT P99 < 60s on a 70B+ model.
 
 ### Layer 5 — tiered loading (ServerlessLLM)
 

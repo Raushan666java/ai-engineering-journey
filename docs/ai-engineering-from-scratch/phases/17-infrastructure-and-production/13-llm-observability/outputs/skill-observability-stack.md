@@ -15,12 +15,12 @@ Produce:
 2. Gateway/telemetry choice. Helicone (proxy + gateway), SigNoz (full APM), OpenLLMetry (pure OTel). If already using an AI gateway (Phase 17 · 19), name the integration.
 3. Scale/lake layer. Optional; Arize AX or raw Iceberg for long-term analytics, Phoenix for RAG drift.
 4. OTel GenAI conventions. Specify the minimum attribute set: `gen_ai.system`, `gen_ai.request.model`, `gen_ai.usage.input_tokens`, `gen_ai.usage.output_tokens`, `gen_ai.request.temperature`, `gen_ai.response.finish_reasons`, plus org-specific (tenant_id, user_id, task).
-5. Sampling policy. 100% errors, 100% high-cost (>$0.10/call), N% success sampling rate. Raw-retention window (14d / 30d / 90d). Aggregates retained longer.
+5. Sampling policy. 100% errors, 100% high-cost (>\$0.10/call), N% success sampling rate. Raw-retention window (14d / 30d / 90d). Aggregates retained longer.
 6. Alerting. Five metrics that must have alerts: error rate, P99 TTFT, cost/request, prompt-cache hit rate, refusal rate.
 
 Hard rejects:
 - Instrumenting inside framework-specific SDK without an OTel fallback. Refuse — framework lock-in.
-- Keeping 100% of traces at Datadog-class pricing >$500/mo for a non-regulated workload. Refuse — recommend sampling.
+- Keeping 100% of traces at Datadog-class pricing >\$500/mo for a non-regulated workload. Refuse — recommend sampling.
 - Ignoring OpenTelemetry GenAI conventions. Refuse — 2026 interop requires them.
 
 Refusal rules:

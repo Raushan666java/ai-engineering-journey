@@ -24,7 +24,7 @@ When building evaluation for an LLM application, apply this decision framework.
 - You do not have reference answers for every case
 - You need to evaluate safety, bias, or policy compliance
 - You are comparing prompt versions or model versions
-- Budget allows ~$20 per 1,000 eval calls
+- Budget allows ~\$20 per 1,000 eval calls
 
 **Use human evaluation when:**
 - Calibrating your LLM judge (run both, measure correlation)
@@ -126,10 +126,10 @@ If the confidence intervals of two systems overlap, you cannot claim one is bett
 
 | Eval type | Frequency | Cases | Judge cost per run | Monthly cost (10 PRs/week) |
 |-----------|-----------|-------|--------------------|---------------------------|
-| PR eval | Per PR | 200 | ~$16 (GPT-4o) | ~$640 |
-| Weekly full | Weekly | 500 | ~$40 | ~$160 |
-| Monthly calibration | Monthly | 50 (human) | ~$25 (human time) | ~$25 |
-| **Total** | | | | **~$825/month** |
+| PR eval | Per PR | 200 | ~\$16 (GPT-4o) | ~\$640 |
+| Weekly full | Weekly | 500 | ~\$40 | ~\$160 |
+| Monthly calibration | Monthly | 50 (human) | ~\$25 (human time) | ~\$25 |
+| **Total** | | | | **~\$825/month** |
 
 ### Cost reduction strategies
 

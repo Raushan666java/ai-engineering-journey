@@ -79,7 +79,7 @@ Traffic: [████████████████░░░░] 80% prod
 
 Agent loops can execute hundreds of LLM calls per task. Without a cost governor, a runaway agent can burn through budget in minutes. The cost governor implements three controls:
 
-**Budget tracking.** Each request context carries a budget (e.g. $0.50 per task, 10,000 tokens per request). Every LLM call deducts from the budget. The governor maintains running totals at the request, session, and account level.
+**Budget tracking.** Each request context carries a budget (e.g. \$0.50 per task, 10,000 tokens per request). Every LLM call deducts from the budget. The governor maintains running totals at the request, session, and account level.
 
 **Per-iteration accounting.** Each loop iteration records the cost incurred: model used, input tokens, output tokens, compute time. These records feed into real-time cost dashboards and post-hoc billing.
 
@@ -126,7 +126,7 @@ Service-Level Objectives for agent loops require careful definition because qual
 | Task completion rate | Fraction of requests where the agent completes its stated goal | ≥ 99.0% |
 | Valid response rate | Fraction of responses that parse, pass validation, and contain no hallucinated facts | ≥ 99.5% |
 | Latency P95 | 95th percentile of end-to-end response time | ≤ 8 seconds |
-| Cost per request | Average LLM API cost per request | ≤ $0.03 |
+| Cost per request | Average LLM API cost per request | ≤ \$0.03 |
 | Safety violation rate | Fraction of responses flagged by the constitutional critic | ≤ 0.1% |
 
 An error budget of 100% − SLO defines how much unreliability is acceptable per month. When the budget is depleted, all non-critical deployments freeze until reliability recovers.

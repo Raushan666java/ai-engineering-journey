@@ -730,11 +730,11 @@ class CacheEfficiencyAnalyzer
 
 | Strategy | Monthly Cost | Savings |
 |----------|-------------|---------|
-| Single large server | $25,000 | -- |
-| Auto-scaling (on-demand) | $18,000 | 28% |
-| Reserved instances (1yr) | $11,700 | 53% |
-| Spot instances (workers) | $5,400 | 78% |
-| Vapor (serverless) | $15,000 | 40% |
+| Single large server | \$25,000 | -- |
+| Auto-scaling (on-demand) | \$18,000 | 28% |
+| Reserved instances (1yr) | \$11,700 | 53% |
+| Spot instances (workers) | \$5,400 | 78% |
+| Vapor (serverless) | \$15,000 | 40% |
 
 #### CDN Cost Savings
 
@@ -902,6 +902,6 @@ Design the complete enterprise architecture for 50 million users across 5 region
 - Real-time collaboration with sub-100ms broadcast
 - ML inference at 500ms P99
 - Disaster recovery with 5-second RPO and 2-minute RTO
-- $500K/month infrastructure budget
+- \$500K/month infrastructure budget
 
 Provide: region topology, global sharding scheme, 5-region cache hierarchy with invalidation, queue architecture with regional isolation, distributed rate limiting, SLO table with burn-rate alerts, DR architecture with automated failover, cost breakdown within budget, and zero-downtime migration plan from single-region.

@@ -157,7 +157,7 @@ Biometrics: fingerprint, face, iris, voice, gait, keystroke dynamics.
 |----------|-----------|-----------|-----------|----------|----------|
 | **Revocability** | Easy (change password) | Easy (revoke token) | Impossible (fingerprint) | N/A | Medium |
 | **Phishable** | Yes | TOTP: no, SMS: yes | No | No | No |
-| **Cost** | Free | $10-$50 per token | $50-$200 per sensor | Free | Free (SW only) |
+| **Cost** | Free | \$10-\$50 per token | \$50-\$200 per sensor | Free | Free (SW only) |
 | **User Convenience** | High | Medium | High | None | None |
 | **Forgot/Recovery** | Frequent | Lost token process | N/A | N/A | N/A |
 | **Privacy Risk** | Low | Low | High (biometric data) | Medium | High |
@@ -564,11 +564,11 @@ pamu2fcfg -u $USER -n -o /etc/u2f_mappings
 
 | Method | Phishing Resistant | Cost | User Experience | Offline | FIPS |
 |--------|-------------------|------|-----------------|---------|------|
-| **FIDO2/Passkey** | Yes | Free-$50 | Best (tap/biometric) | Yes | Yes |
-| **TOTP** | No | Free-$10 | Good (type 6 digits) | Yes | Yes |
+| **FIDO2/Passkey** | Yes | Free-\$50 | Best (tap/biometric) | Yes | Yes |
+| **TOTP** | No | Free-\$10 | Good (type 6 digits) | Yes | Yes |
 | **Push** | Partial | Free | Best (tap approve) | No | No |
 | **SMS** | No (SIM swap) | Carrier cost | Good (auto-fill) | No | No |
-| **Hardware OTP** | No | $10-$50 | Medium (press button) | Yes | Yes |
+| **Hardware OTP** | No | \$10-\$50 | Medium (press button) | Yes | Yes |
 
 **Edge Cases:** Device loss, SIM swap attacks, backup codes (store hashed), MFA for non-interactive service accounts (use cert-based auth).
 
@@ -1623,7 +1623,7 @@ code_challenge = SHA256(code_verifier)
 | **Shared Secret** | Yes (hash) | Yes (seed) | No (public key only) |
 | **MITM Resistant** | No | No | Yes |
 | **User Experience** | Memorable, unsafe | Type 6 digits | Face/Touch + tap |
-| **Cost** | Free | Free-$10 | Free (passkeys) or $25+ |
+| **Cost** | Free | Free-\$10 | Free (passkeys) or \$25+ |
 
 ### Q4: What is the N+1 problem in RBAC?
 

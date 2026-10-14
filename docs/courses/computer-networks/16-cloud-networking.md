@@ -895,7 +895,7 @@ if subnet:
 - **Reserved IPs**: AWS reserves 5 IPs per subnet (network, gateway, +2 reserved, broadcast). Always account for 5 unavailable addresses.
 - **Subnet sizing**: /28 (11 usable IPs) is minimum; /16 (65531 usable) is maximum. Size for future growth → expanding a subnet's CIDR is not possible after creation.
 - **Transitive routing**: VPC Peering is not transitive. Hub-and-spoke requires Transit Gateway (costs money per attachment).
-- **Cross-region peering**: Adds $0.01-0.02/GB data transfer cost. Minimize cross-region traffic for chatty protocols.
+- **Cross-region peering**: Adds \$0.01-0.02/GB data transfer cost. Minimize cross-region traffic for chatty protocols.
 
 **TypeScript Implementation: VPCNetworkDesigner**
 
@@ -3176,7 +3176,7 @@ for round_num in range(1, simulation_rounds + 1):
 
 - **Cache stampede (thundering herd)**: When popular content's TTL expires, all edge nodes fetch from origin simultaneously. Mitigate with: stale-while-revalidate, request collapsing, or probabilistic cache purging.
 - **Dynamic content bypass**: CDN cannot cache personalized content. Use Cache-Control: no-cache or cookie-based cache key variation.
-- **Cache invalidation cost**: CloudFront charges $0.005 per invalidation path (first 1000 free). Use versioned URLs (`/static/main.v2.js`) to avoid purge costs entirely.
+- **Cache invalidation cost**: CloudFront charges \$0.005 per invalidation path (first 1000 free). Use versioned URLs (`/static/main.v2.js`) to avoid purge costs entirely.
 - **SSL/TLS at edge**: CDN terminates TLS at the edge, re-encrypts to origin. Ensure origin supports the re-encryption cipher or the connection is in a trusted network.
 - **Geo-restriction**: CDN can block content by country based on client IP GeoIP database. Accuracy is ~99% for country level but lower for city/region.
 - **Upload handling**: CDN typically optimizes for downloads. For uploads, route directly to origin or use edge computing with specific upload endpoints.

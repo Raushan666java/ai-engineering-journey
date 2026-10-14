@@ -60,7 +60,7 @@ Before you enter any negotiation, know the market. Companies pay different amoun
 
 **Primary research tools**: Levels.fyi (best for tech compensation — base, bonus, RSUs broken out by level), Glassdoor (base salary ranges, company reviews), Blind (anonymous compensation threads, real-time data), LinkedIn Salary (self-reported ranges), H1B Database (actual visa salaries by company). Use all sources and average them for a reliable range.
 
-**Cost of living adjustments**: A $180K salary in San Francisco is not the same as $180K in Austin. Use cost-of-living calculators (NerdWallet, Bankrate) to normalize offers across locations. For remote roles, ask if compensation is location-adjusted or standardized.
+**Cost of living adjustments**: A \$180K salary in San Francisco is not the same as \$180K in Austin. Use cost-of-living calculators (NerdWallet, Bankrate) to normalize offers across locations. For remote roles, ask if compensation is location-adjusted or standardized.
 
 ```python
 import requests
@@ -114,8 +114,8 @@ print(f"Base salary range: ${result['low']:,} - ${result['high']:,}")
 print(f"Median: ${result['median']:,}")
 ```
 
-**Company stage matters**: Early-stage startups (<50 employees) pay lower base but offer significant equity upside (4-year vest with 1-year cliff). Mid-stage ($10M-$100M funding) balance base and.
-equity. Public companies (FAANG, Microsoft) have the highest total comp with liquid RSUs. Late-stage pre-IPO (Stripe, Databricks, OpenAI) offer the highest risk/reward — equity at $0.01/share could 10x at IPO.
+**Company stage matters**: Early-stage startups (<50 employees) pay lower base but offer significant equity upside (4-year vest with 1-year cliff). Mid-stage (\$10M-\$100M funding) balance base and.
+equity. Public companies (FAANG, Microsoft) have the highest total comp with liquid RSUs. Late-stage pre-IPO (Stripe, Databricks, OpenAI) offer the highest risk/reward — equity at \$0.01/share could 10x at IPO.
 
 ---
 
@@ -127,7 +127,7 @@ Understanding how compensation is structured allows you to compare offers that l
 
 **Annual performance bonus**: Typically 5-25% of base for IC engineers, 15-40% for managers. Paid annually or semi-annually. Tied to individual and company performance. Some companies (Netflix) choose to pay higher base with no bonus instead.
 
-**RSUs (Restricted Stock Units)**: Shares granted as part of compensation. Typical grant: $100K-$400K over 4 years. Standard vesting: 25% per year (1-year cliff,.
+**RSUs (Restricted Stock Units)**: Shares granted as part of compensation. Typical grant: \$100K-\$400K over 4 years. Standard vesting: 25% per year (1-year cliff,.
 then monthly/quarterly). Once vested, shares are yours (subject to tax). For public companies, RSUs are liquid and can be sold immediately. For.
 private companies, they're illiquid until IPO or acquisition.
 
@@ -162,7 +162,7 @@ print("Offer A (Startup):", offer_a)
 print("\nOffer B (Public Co):", offer_b)
 ```
 
-**Sign-on bonus**: One-time cash payment to accept the offer. Typical range: $10K-$50K for IC roles, $50K-$200K+ for senior/staff. Often repayable if you leave within 1 year (prorated clawback). Negotiate for this even if they say "no budget" — signing bonuses are often separate from comp bands.
+**Sign-on bonus**: One-time cash payment to accept the offer. Typical range: \$10K-\$50K for IC roles, \$50K-\$200K+ for senior/staff. Often repayable if you leave within 1 year (prorated clawback). Negotiate for this even if they say "no budget" — signing bonuses are often separate from comp bands.
 
 **Refresh grants**: Annual RSU grants that start vesting after your initial grant. Good refreshers mean your comp grows over time. Ask about refresh policies: typical amounts, frequency (annual vs bi-annual), and performance-based vs guaranteed.
 
@@ -170,7 +170,7 @@ print("\nOffer B (Public Co):", offer_b)
 
 ## 11.3 Offer Evaluation
 
-Comparing offers requires looking beyond the headline number. A $220K offer at one company may be worse than a $190K offer at another.
+Comparing offers requires looking beyond the headline number. A \$220K offer at one company may be worse than a \$190K offer at another.
 
 **Total compensation formula**:
 ```text
@@ -214,7 +214,7 @@ for entry in timeline:
     print(f"Year {entry['Year']}: ${entry['Total']:,} (cum: ${entry['Cumulative']:,})")
 ```
 
-**Refinancing risk**: If you leave before your RSUs fully cliff, you forfeit unvested shares. This is a real cost. A $400K grant over 4 years means you lose $100K/year of unvested compensation if you leave early. Model what happens if you stay 1 year, 2 years, 3 years.
+**Refinancing risk**: If you leave before your RSUs fully cliff, you forfeit unvested shares. This is a real cost. A \$400K grant over 4 years means you lose \$100K/year of unvested compensation if you leave early. Model what happens if you stay 1 year, 2 years, 3 years.
 
 **Non-cash considerations**: Title progression (Senior → Staff → Principal), mentorship availability, learning opportunities, brand value for future roles, WLB (40 hours vs 60 hours fully loaded), commute time, and career trajectory. A 20% lower TC at a company that will accelerate your career is often the better bet.
 
@@ -226,10 +226,10 @@ Negotiation is expected. Never accept the first offer — companies almost alway
 
 **BATNA (Best Alternative to a Negotiated Agreement)**: Your walk-away option. If you have another offer, that's your BATNA. If you don't, your BATNA is "continue interviewing" or "stay at current job." A strong BATNA gives you leverage. Always know your BATNA before entering a negotiation.
 
-**Anchoring**: The first number mentioned sets the range. If they say "$150K-$170K," most negotiations will end somewhere in that range. If you say "I'm looking for.
-$190K+," you reset the anchor upward. Provide a range where your minimum is their maximum — "Based on my research, I'm targeting roles in the $190K-$210K range."
+**Anchoring**: The first number mentioned sets the range. If they say "\$150K-\$170K," most negotiations will end somewhere in that range. If you say "I'm looking for.
+\$190K+," you reset the anchor upward. Provide a range where your minimum is their maximum — "Based on my research, I'm targeting roles in the \$190K-\$210K range."
 
-**Bracketing**: If they offer $160K, ask for $185K-$195K (your target of $177K is in the middle). The psychology: by bracketing high, you make your actual target seem reasonable.
+**Bracketing**: If they offer \$160K, ask for \$185K-\$195K (your target of \$177K is in the middle). The psychology: by bracketing high, you make your actual target seem reasonable.
 
 ```python
 def bracketing_strategy(offer: float, target: float) -> dict:
@@ -292,7 +292,7 @@ Best,
 
 Multiple offers give you maximum leverage. Even the perception of a competing offer strengthens your position.
 
-**Using competing offers**: If Company A offers $180K and Company B offers $200K, tell Company A: "I have an offer that's $20K higher. I'd prefer to join A because of [role/team/culture]. Can you match or improve your offer?" Don't lie — if caught, you'll lose both offers.
+**Using competing offers**: If Company A offers \$180K and Company B offers \$200K, tell Company A: "I have an offer that's \$20K higher. I'd prefer to join A because of [role/team/culture]. Can you match or improve your offer?" Don't lie — if caught, you'll lose both offers.
 
 **Timing strategy**: Schedule interviews at companies with similar timelines. Ask recruiters for their decision timeline upfront. Try to have all offers land within the same 1-2 week window.
 
@@ -343,15 +343,15 @@ for o in competing["offers"]:
 
 ## 11.6 Benefits & Relocation
 
-Benefits often get overlooked in the excitement of a base salary number, but they can add $20K-$50K+/year in value.
+Benefits often get overlooked in the excitement of a base salary number, but they can add \$20K-\$50K+/year in value.
 
-**Health insurance**: Premiums, deductibles, out-of-pocket max, and coverage quality vary significantly. A high-deductible plan at one company may cost you $5K/year more than a PPO at another. Ask for the benefits guide PDF before accepting.
+**Health insurance**: Premiums, deductibles, out-of-pocket max, and coverage quality vary significantly. A high-deductible plan at one company may cost you \$5K/year more than a PPO at another. Ask for the benefits guide PDF before accepting.
 
-**401(k) matching**: The most valuable benefit after salary. Typical match: 50% of contributions up to 6% of salary (max $9K/year at $150K). Best match: dollar-for-dollar up to 6% ($9K free money). Worst: no match at all.
+**401(k) matching**: The most valuable benefit after salary. Typical match: 50% of contributions up to 6% of salary (max \$9K/year at \$150K). Best match: dollar-for-dollar up to 6% (\$9K free money). Worst: no match at all.
 
-**Remote work stipend**: $500-$5,000/year for home office equipment, internet, co-working space. If fully remote, this is a real cost. Negotiate for it.
+**Remote work stipend**: \$500-\$5,000/year for home office equipment, internet, co-working space. If fully remote, this is a real cost. Negotiate for it.
 
-**Relocation package**: For in-office roles, typical packages: $5K-$15K (moving expenses only), $15K-$40K+ (full relocation including moving, temporary housing, realtor fees, and a lump sum). Always ask for a relocation lump sum (taxed) in addition to direct moving expenses.
+**Relocation package**: For in-office roles, typical packages: \$5K-\$15K (moving expenses only), \$15K-\$40K+ (full relocation including moving, temporary housing, realtor fees, and a lump sum). Always ask for a relocation lump sum (taxed) in addition to direct moving expenses.
 
 ```python
 def calculate_benefits_value(base: float, benefits: dict) -> dict:
@@ -403,7 +403,7 @@ for k, v in result.items():
     print(f"{k}: ${v:,}")
 ```
 
-**Other benefits to ask about**: Stock purchase plans (ESPP) at 15% discount (typical max 10-15% of salary), parental leave (12-20 weeks vs minimal), sabbatical (every 4-5 years), professional development budget ($2K-$10K/year), gym/wellness stipend, commuter benefits, meal subsidies, and cell phone/internet reimbursement.
+**Other benefits to ask about**: Stock purchase plans (ESPP) at 15% discount (typical max 10-15% of salary), parental leave (12-20 weeks vs minimal), sabbatical (every 4-5 years), professional development budget (\$2K-\$10K/year), gym/wellness stipend, commuter benefits, meal subsidies, and cell phone/internet reimbursement.
 
 **Counteroffers from current employer**: If you receive a counteroffer, evaluate it objectively. 70% of people who accept counteroffers leave within 12 months anyway. The issues that made you look (compensation,.
 growth, culture) often remain unaddressed. If you accept, the relationship changes — you're now "the person who threatened to leave." Take the counteroffer only if you genuinely want to stay and.
@@ -419,7 +419,7 @@ the root issues are fixed.
 - Always negotiate: first offer is never the best offer
 - BATNA is your strongest leverage — build competing offers
 - Use bracketing to anchor negotiations in your favor
-- Benefits add $20K-$50K+/year in value, don't ignore them
+- Benefits add \$20K-\$50K+/year in value, don't ignore them
 - Relocation packages are highly negotiable (ask for lump sum + moving expenses)
 - Counteroffers rarely work out long-term; be honest with yourself about why you're leaving
 - Always be professional and gracious — the tech world is small
@@ -486,7 +486,7 @@ print(market_value(sample))</code></pre>
       <li>At public companies, you can sell immediately for cash.</li>
       <li>At private companies, they remain illiquid until IPO/acquisition.</li>
       <li>Taxed as ordinary income at vesting (based on FMV of shares).</li>
-      <li>Example: 1,000 RSUs vesting over 4 years at $100/share = $25K/year additional comp.</li>
+      <li>Example: 1,000 RSUs vesting over 4 years at \$100/share = \$25K/year additional comp.</li>
     </ul>
     <p><strong>Stock Options (ISOs/NSOs)</strong>:</p>
     <ul>
@@ -511,9 +511,9 @@ print(market_value(sample))</code></pre>
     <p>This is the most feared question in negotiations. The key: <strong>don't give a number first</strong>. If possible, deflect:</p>
     <p>"I'm focusing on finding the right fit. I'm sure you'll extend a fair offer based on the market and my experience."</p>
     <p>If pressed (and most recruiters will press), give a range where your minimum is their upper bound:</p>
-    <p>"For roles at this level in [location], I see total compensation ranging from $190K to $220K. I'm targeting the higher end of that range given my experience with [specific skill]."</p>
-    <p><strong>Why this works</strong>: You're anchoring high but giving a range (which seems flexible). Their offer will likely land at or above your minimum. If their budget is $170K max and you say $190K minimum, you know immediately it's not a fit — saving everyone time.</p>
-    <p><strong>Never do this</strong>: "I'm looking for $180K." You just set your ceiling. They'll offer $170K and you have nowhere to negotiate up.</p>
+    <p>"For roles at this level in [location], I see total compensation ranging from \$190K to \$220K. I'm targeting the higher end of that range given my experience with [specific skill]."</p>
+    <p><strong>Why this works</strong>: You're anchoring high but giving a range (which seems flexible). Their offer will likely land at or above your minimum. If their budget is \$170K max and you say \$190K minimum, you know immediately it's not a fit — saving everyone time.</p>
+    <p><strong>Never do this</strong>: "I'm looking for \$180K." You just set your ceiling. They'll offer \$170K and you have nowhere to negotiate up.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -528,8 +528,8 @@ print(market_value(sample))</code></pre>
     <p>BATNA = Best Alternative to a Negotiated Agreement. It's your walk-away option if negotiations fail.</p>
     <p><strong>Examples of BATNAs</strong>:</p>
     <ul>
-      <li>Another offer: "Company B offered $200K. If Company A can't match that, I'll take B's offer."</li>
-      <li>Stay at current job: "My current TC is $175K. I'd only move for meaningful progression."</li>
+      <li>Another offer: "Company B offered \$200K. If Company A can't match that, I'll take B's offer."</li>
+      <li>Stay at current job: "My current TC is \$175K. I'd only move for meaningful progression."</li>
       <li>Keep interviewing: "I have 3 more final rounds this week. I'm confident one will yield a strong offer."</li>
     </ul>
     <p><strong>How to use BATNA</strong>:</p>
@@ -555,11 +555,11 @@ print(market_value(sample))</code></pre>
     <p><strong>When to ask</strong>: After you've settled on base salary and equity. If they say "we can't increase base further," that's the moment to say "Could you increase the sign-on bonus instead?"</p>
     <p><strong>Reasons that work</strong>:</p>
     <ul>
-      <li>Compensation gap: "I'd be leaving a $15K unvested RSU balance at my current company."</li>
+      <li>Compensation gap: "I'd be leaving a \$15K unvested RSU balance at my current company."</li>
       <li>Relocation costs: "Moving to [city] has upfront costs for deposits, travel, temporary housing."</li>
       <li>Dual income timing: "My partner needs time to find a job; a sign-on would help bridge that gap."</li>
     </ul>
-    <p><strong>Typical amounts</strong>: $10K-$50K for IC roles, $50K-$100K+ for senior/staff. Some companies (Netflix, Meta) routinely give $100K+ sign-on bonuses for senior roles.</p>
+    <p><strong>Typical amounts</strong>: \$10K-\$50K for IC roles, \$50K-\$100K+ for senior/staff. Some companies (Netflix, Meta) routinely give \$100K+ sign-on bonuses for senior roles.</p>
     <p><strong>Clawback clause</strong>: Most sign-on bonuses have a 12-month clawback. If you leave before 12 months, you repay the prorated amount. Factor this into your decision if you're unsure about staying long-term.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -592,7 +592,7 @@ print(market_value(sample))</code></pre>
     <p>Relocation packages are highly negotiable because they're seen as one-time costs, not recurring comp.</p>
     <p><strong>Typical relocation package components</strong>:</p>
     <ul>
-      <li>Lump sum cash payment ($5K-$15K, taxed)</li>
+      <li>Lump sum cash payment (\$5K-\$15K, taxed)</li>
       <li>Direct moving expenses (movers, shipping, storage)</li>
       <li>Temporary housing (2-4 weeks in corporate housing or AirBnb)</li>
       <li>Travel expenses (flights, rental car) for you and family</li>
@@ -603,7 +603,7 @@ print(market_value(sample))</code></pre>
     <ul>
       <li>Get a detailed relocation policy in writing before accepting.</li>
       <li>Ask for a lump sum instead of direct reimbursement — you control the budget.</li>
-      <li>If they cap relocation at $10K, ask for $15K. The worst they say is no.</li>
+      <li>If they cap relocation at \$10K, ask for \$15K. The worst they say is no.</li>
       <li>If you're moving from a low-COL area to high-COL, mention that explicitly.</li>
       <li>Some companies offer "gross-up" (pay the taxes on your relocation) — ask for this.</li>
     </ul>
@@ -668,8 +668,8 @@ print(market_value(sample))</code></pre>
   </summary>
   <div class="tp-qa-answer">
     <p>Negotiating without competing offers is harder but still possible. Your leverage comes from market data and your willingness to walk away.</p>
-    <p><strong>Strategy 1 — Market-based negotiation</strong>: "For a Senior Backend Engineer in Seattle with 6 years of experience, Levels.fyi shows the median total compensation is $210K. Your offer of $180K is below market. Can we work towards $200K?"</p>
-    <p><strong>Strategy 2 — Value-based negotiation</strong>: "I bring specific experience with [high-value skill] that directly impacts [business outcome]. Based on the impact I'll deliver, I believe $195K is appropriate."</p>
+    <p><strong>Strategy 1 — Market-based negotiation</strong>: "For a Senior Backend Engineer in Seattle with 6 years of experience, Levels.fyi shows the median total compensation is \$210K. Your offer of \$180K is below market. Can we work towards \$200K?"</p>
+    <p><strong>Strategy 2 — Value-based negotiation</strong>: "I bring specific experience with [high-value skill] that directly impacts [business outcome]. Based on the impact I'll deliver, I believe \$195K is appropriate."</p>
     <p><strong>Strategy 3 — Timing-based</strong>: "I have final rounds with [2 companies] next week. I'm very interested in your role, but I'd like to complete my process before making a decision. Could we discuss adjustments then?"</p>
     <p><strong>Strategy 4 — What can be improved?</strong>: "If base salary has limited flexibility, could we increase the sign-on bonus, equity, or remote stipend instead?"</p>
     <p>Without competing offers, be polite and collaborative. You want them to WANT to give you more, not feel forced. Say "help me understand how we can bridge this gap" rather than "increase this or I walk."</p>
@@ -685,18 +685,18 @@ print(market_value(sample))</code></pre>
   </summary>
   <div class="tp-qa-answer">
     <p>Remote compensation varies widely. Some companies pay location-adjusted, some pay the same regardless of location.</p>
-    <p><strong>Location-adjusted companies</strong> (Stripe, GitLab, many startups): They set a "San Francisco baseline" and apply a discount based on your location. Example: SF base $200K, Denver gets 85% = $170K.</p>
+    <p><strong>Location-adjusted companies</strong> (Stripe, GitLab, many startups): They set a "San Francisco baseline" and apply a discount based on your location. Example: SF base \$200K, Denver gets 85% = \$170K.</p>
     <p><strong>Location-agnostic companies</strong> (Automattic, Basecamp, some remote-first): Everyone gets the same regardless of where they live. This is great if you're in a low-COL area, less great if you're in SF.</p>
     <p><strong>Hybrid approach</strong>: Some companies pay different bands (US Tier 1, US Tier 2, International) rather than city-specific adjustments.</p>
     <p><strong>What to factor for remote</strong>:</p>
     <ul>
-      <li>Saved commute costs ($2K-$5K/year)</li>
-      <li>Saved food/coffee costs ($1K-$3K/year)</li>
-      <li>Home office expenses ($1K-$3K/year)</li>
-      <li>Utilities/internet increase ($500-$1K/year)</li>
+      <li>Saved commute costs (\$2K-\$5K/year)</li>
+      <li>Saved food/coffee costs (\$1K-\$3K/year)</li>
+      <li>Home office expenses (\$1K-\$3K/year)</li>
+      <li>Utilities/internet increase (\$500-\$1K/year)</li>
       <li>Time saved commuting (10-15 hours/week = huge quality of life value)</li>
     </ul>
-    <p><strong>Ask about</strong>: Remote work stipend, home office budget, co-working space allowance, and whether they provide equipment (laptop, monitor, chair, desk). These add $2K-$10K in effective value.</p>
+    <p><strong>Ask about</strong>: Remote work stipend, home office budget, co-working space allowance, and whether they provide equipment (laptop, monitor, chair, desk). These add \$2K-\$10K in effective value.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -741,7 +741,7 @@ Best regards,
     Q13: How do I negotiate a higher level/band, not just more money?
   </summary>
   <div class="tp-qa-answer">
-    <p>Sometimes the most valuable negotiation is about level, not just compensation. An L5 offer at $200K is worth less than an L6 offer at $185K because future comp growth is higher at L6.</p>
+    <p>Sometimes the most valuable negotiation is about level, not just compensation. An L5 offer at \$200K is worth less than an L6 offer at \$185K because future comp growth is higher at L6.</p>
     <p><strong>Why level matters</strong>:</p>
     <ul>
       <li>Higher level = higher comp bands for your entire tenure</li>
@@ -772,7 +772,7 @@ Best regards,
     <p><strong>Health insurance</strong>: Usually truly standard — the company offers the same plans to everyone. You can't negotiate this. But ask about: dependent coverage costs, HSA contributions, and if there's a wellness stipend instead.</p>
     <p><strong>PTO</strong>: Some companies have fixed PTO banks and won't budge. Others have "discretionary PTO" (not always better — people take less). Ask: "Can I buy additional PTO days through salary sacrifice?" — some companies offer this.</p>
     <p><strong>Remote flexibility</strong>: Even if the role is "in-office," you can negotiate: "Could I work remotely 2 days/week?" or "Could I start remote and move in 3 months?"</p>
-    <p><strong>Professional development</strong>: The stated budget may be $2K. Ask for $5K-$10K with a justification: "I'd like to attend [conference] and take [course], which total $5K. Could we increase the PD budget?"</p>
+    <p><strong>Professional development</strong>: The stated budget may be \$2K. Ask for \$5K-\$10K with a justification: "I'd like to attend [conference] and take [course], which total \$5K. Could we increase the PD budget?"</p>
     <p><strong>Creative alternatives</strong>: If they truly can't increase the benefit, negotiate for something else: extra equity, a one-time equipment stipend, guaranteed first-year performance bonus, or deferred start date (paid sabbatical before joining).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -802,9 +802,9 @@ Hi [Recruiter],
 
 Thank you again for the offer. I'm very excited about the role and the team's work on [specific project].
 
-I'd love to join, but I'm hoping we can adjust the base salary. My market research and current competing offer suggest a range of $195K-$210K for this level. The offered $180K base is below that range.
+I'd love to join, but I'm hoping we can adjust the base salary. My market research and current competing offer suggest a range of \$195K-\$210K for this level. The offered \$180K base is below that range.
 
-Could we explore a base salary of $200K? I'm confident I'll deliver significant value in this role and would love to make this work.
+Could we explore a base salary of \$200K? I'm confident I'll deliver significant value in this role and would love to make this work.
 
 Thank you for your consideration.
 
@@ -862,17 +862,17 @@ b) Asking for more than your target so your actual target seems reasonable
 c) Breaking negotiations into multiple email threads
 d) Only negotiating with companies that bracket their offers
 
-<details class="tp-qa-card" data-qid="ip-s11-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) Asking for more than your target so your actual target seems reasonable</strong></p><p>Bracketing means asking above your actual target so the counteroffer lands at or above what you really want. If they offer $160K and you want $177K, you ask $190K-$195K. The likely settlement falls in the middle, reaching your target.</p></div></details>
+<details class="tp-qa-card" data-qid="ip-s11-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) Asking for more than your target so your actual target seems reasonable</strong></p><p>Bracketing means asking above your actual target so the counteroffer lands at or above what you really want. If they offer \$160K and you want \$177K, you ask \$190K-\$195K. The likely settlement falls in the middle, reaching your target.</p></div></details>
 
 ## Exercises
 
 **Easy** — Research your market value: collect 10+ compensation data points for your target role, level, and location using Levels.fyi, Glassdoor, and Blind. Calculate the 25th, 50th, and 75th percentiles. Write down your BATNA and reservation price.
 
-**Easy** — Write a draft negotiation email for a hypothetical offer that is $15K below market. Include: appreciation, market data reference, specific ask, and collaborative tone. Read it aloud and refine.
+**Easy** — Write a draft negotiation email for a hypothetical offer that is \$15K below market. Include: appreciation, market data reference, specific ask, and collaborative tone. Read it aloud and refine.
 
 **Medium** — Build a total compensation calculator in Python that takes base salary, bonus percentage, RSU grant, vesting schedule, and sign-on bonus as inputs. Output 4-year projected compensation with and without refreshers. Run it on two competing offers and compare.
 
-**Medium** — Role-play a negotiation scenario with a peer. One person plays the recruiter (with a $160K-$190K budget), the other plays the candidate (targeting $185K). Practice anchoring, bracketing, and silence. Debrief what worked.
+**Medium** — Role-play a negotiation scenario with a peer. One person plays the recruiter (with a \$160K-\$190K budget), the other plays the candidate (targeting \$185K). Practice anchoring, bracketing, and silence. Debrief what worked.
 
 **Hard** — Analyze a real total compensation offer (or create a detailed hypothetical one from Levels.fyi). Write a full negotiation strategy document: market data analysis, BATNA assessment, bracketing targets, email negotiation scripts, fallback positions for base/bonus/equity/sign-on, and a decision framework for when to accept vs walk away.
 

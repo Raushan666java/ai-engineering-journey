@@ -25,7 +25,7 @@ The gap is not intelligence. It is infrastructure. Your prototype calls OpenAI, 
 - Two users ask the same question 4 seconds apart. You pay for both.
 - The API returns a 500 error at 2am. Your service crashes.
 - A user asks the model to generate SQL. The model outputs `DROP TABLE users`.
-- Your monthly bill hits $12,000 and you have no idea which feature caused it.
+- Your monthly bill hits \$12,000 and you have no idea which feature caused it.
 - Response time averages 8 seconds. Users leave after 3.
 
 Every LLM application in production today -- Perplexity, Cursor, ChatGPT, Notion AI -- solved these problems. Not by being smarter about prompts. By being rigorous about engineering.
@@ -164,7 +164,7 @@ You cannot improve what you cannot see. Every production LLM app needs three pil
 | P99 latency | < 10s | Tail latency drives churn |
 | Cache hit rate | > 30% | Direct cost savings |
 | Guardrail block rate | < 5% | Too high = false positives annoying users |
-| Cost per request | < $0.01 | Unit economics viability |
+| Cost per request | < \$0.01 | Unit economics viability |
 
 ### A/B Testing Prompts in Production
 
@@ -203,10 +203,10 @@ Use a deterministic hash of the user ID, not random selection. This ensures each
 
 | Scale | Architecture | Infra |
 |-------|-------------|-------|
-| 0-1K DAU | Single FastAPI server, sync calls | 1 VM, $50/month |
-| 1K-10K DAU | Async FastAPI, semantic cache, queue | 2-4 VMs + Redis, $500/month |
-| 10K-100K DAU | Horizontal scaling, load balancer, async workers | Kubernetes, $5K/month |
-| 100K+ DAU | Multi-region, model routing, dedicated inference | Custom infra, $50K+/month |
+| 0-1K DAU | Single FastAPI server, sync calls | 1 VM, \$50/month |
+| 1K-10K DAU | Async FastAPI, semantic cache, queue | 2-4 VMs + Redis, \$500/month |
+| 10K-100K DAU | Horizontal scaling, load balancer, async workers | Kubernetes, \$5K/month |
+| 100K+ DAU | Multi-region, model routing, dedicated inference | Custom infra, \$50K+/month |
 
 Key scaling patterns:
 
@@ -225,17 +225,17 @@ Before you ship, estimate your monthly cost. This spreadsheet decides if your bu
 | Queries per user per day | 5 | Product analytics |
 | Avg input tokens per query | 1,500 | Measured (system + context + user) |
 | Avg output tokens per query | 400 | Measured |
-| Input price per 1M tokens | $5.00 | OpenAI GPT-5 pricing |
-| Output price per 1M tokens | $15.00 | OpenAI GPT-5 pricing |
+| Input price per 1M tokens | \$5.00 | OpenAI GPT-5 pricing |
+| Output price per 1M tokens | \$15.00 | OpenAI GPT-5 pricing |
 | Cache hit rate | 35% | Measured from cache metrics |
 | Effective daily queries | 32,500 | 50,000 * (1 - 0.35) |
 
 **Monthly LLM cost:**
-- Input: 32,500 queries/day x 1,500 tokens x 30 days / 1M x $2.50 = **$3,656**
-- Output: 32,500 queries/day x 400 tokens x 30 days / 1M x $10.00 = **$3,900**
-- **Total: $7,556/month** (with caching saving ~$4,070/month)
+- Input: 32,500 queries/day x 1,500 tokens x 30 days / 1M x \$2.50 = **\$3,656**
+- Output: 32,500 queries/day x 400 tokens x 30 days / 1M x \$10.00 = **\$3,900**
+- **Total: \$7,556/month** (with caching saving ~\$4,070/month)
 
-Without caching, the same traffic costs $11,625/month. A 35% cache hit rate saves 35% on LLM costs. This is why Lesson 11 exists.
+Without caching, the same traffic costs \$11,625/month. A 35% cache hit rate saves 35% on LLM costs. This is why Lesson 11 exists.
 
 ### The Deployment Checklist
 
@@ -1115,7 +1115,7 @@ It also produces `outputs/skill-production-checklist.md` -- a decision framework
 
 2. **Implement real function calling.** Add a tool registry (from Lesson 09) to the service. When a user asks a question that requires external data (weather, calculation, search), the pipeline should detect this, execute the tool, and include the result in the prompt. Add a `tools_used` field to the response.
 
-3. **Build a cost alerting system.** Track cost per user per day. When a user exceeds $0.50/day, switch them to `gpt-4o-mini`. When total daily cost exceeds $100, activate emergency mode: cache-only responses for repeated queries, `gpt-4o-mini` for everything else, reject requests over 2,000 input tokens. Test with a simulated traffic spike.
+3. **Build a cost alerting system.** Track cost per user per day. When a user exceeds \$0.50/day, switch them to `gpt-4o-mini`. When total daily cost exceeds \$100, activate emergency mode: cache-only responses for repeated queries, `gpt-4o-mini` for everything else, reject requests over 2,000 input tokens. Test with a simulated traffic spike.
 
 4. **Implement prompt versioning with rollback.** Store all prompt versions with timestamps. Add an endpoint that shows quality metrics (latency, user ratings, error rate) per prompt version. Implement automatic rollback: if a new prompt version has 2x the error rate of the previous version over 100 requests, automatically revert.
 

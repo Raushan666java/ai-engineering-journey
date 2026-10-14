@@ -1420,6 +1420,6 @@ You are designing the caching infrastructure for a real-time news aggregation pl
 3. **Thundering herd:** For viral articles, use a two-tier approach: (a) Dedicated "hot cache" with longer TTL and pre-warming on trending detection; (b) XFetch (ß=1.0) for the general cache. On viral detection, proactively pre-compute and push to CDN edge.
 4. **Personalization caching:** Cache per-user timeline fragments by computed hash of follow-sources. Invalidate on new article from followed source. Use write-through to ensure consistency within 10s.
 5. **Cache warming:** On new DC deployment, replay the last 24 hours of cache writes from the existing DC at 10% of peak rate. Prioritize viral articles and top 1% of users. Use a dedicated warming service with rate limiting to avoid origin overload.
-6. **CDN cost:** Daily reads = 100M × 50 (assume 50 items/user) = 5B reads. Static: 5B × 0.8 × 200KB = 800 TB/day. Dynamic: 5B × 0.2 × 50KB = 50 TB/day. Total = 850 TB/day × $0.02 = $17,000/day. Optimizations: (a) Use image CDN with WebP/AVIF compression (reduces 30%); (b) Implement Brotli compression for article content (reduces 50%); (c) Tiered CDN with regional edge caching.
+6. **CDN cost:** Daily reads = 100M × 50 (assume 50 items/user) = 5B reads. Static: 5B × 0.8 × 200KB = 800 TB/day. Dynamic: 5B × 0.2 × 50KB = 50 TB/day. Total = 850 TB/day × \$0.02 = \$17,000/day. Optimizations: (a) Use image CDN with WebP/AVIF compression (reduces 30%); (b) Implement Brotli compression for article content (reduces 50%); (c) Tiered CDN with regional edge caching.
 
 </details>

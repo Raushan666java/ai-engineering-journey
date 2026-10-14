@@ -2377,7 +2377,7 @@ Its optimizer is minimalist but sufficient for embedded use — the RA principle
 
 Given: `CUSTOMER(cid, name, city)`, `ORDER(oid, cid, date)`, `LINEITEM(oid, pid, qty)`, `PRODUCT(pid, pname, price)`
 
-Write RA for: "Find customer names who ordered products priced over $100."
+Write RA for: "Find customer names who ordered products priced over \$100."
 
 **Solution:**
 ```
@@ -2657,7 +2657,7 @@ graph TD
 13. Implement the following relational algebra queries using the TypeScript engine above on the schema: Product(pid, pname, price), Supplier(sid, sname, city), Shipment(sid, pid, qty):
     a) Find supplier names who ship red parts (assume Product has a color attribute)
     b) Find products supplied by ALL suppliers
-    c) Find suppliers who supply at least one product priced over $100
+    c) Find suppliers who supply at least one product priced over \$100
 
 14. Write the relational algebra expression tree for: "Find the names of students who took 'DBMS' and got an 'A' grade."
 

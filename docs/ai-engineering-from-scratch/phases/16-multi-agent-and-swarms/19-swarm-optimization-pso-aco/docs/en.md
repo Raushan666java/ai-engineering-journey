@@ -87,7 +87,7 @@ PSO and ACO need only an *evaluator* function. If you can score a candidate outp
 
 ### Practical limits
 
-- **Population budget.** N particles × T iterations × per-eval cost. For LLM evals at ~$0.02 / call, a 20-particle PSO running 50 iterations costs ~$20. Plan accordingly.
+- **Population budget.** N particles × T iterations × per-eval cost. For LLM evals at ~\$0.02 / call, a 20-particle PSO running 50 iterations costs ~\$20. Plan accordingly.
 - **Exploration vs exploitation.** Pheromone decay rate and PSO inertia trade off; too fast decay → forget solutions; too slow → stuck on early local optima.
 - **Catastrophic drift.** Both algorithms can converge and then diverge if fitness landscape shifts (new data distribution). Monitor best-fitness stability.
 
@@ -119,7 +119,7 @@ Expected output:
 - **Log pheromones or g_best per iteration.** Debugging swarm optimizers without a trail is painful.
 - **Quality-gate updates.** Especially for ACO routing: fast-and-wrong agents must not accrue pheromone.
 - **Reset decay on distribution shift.** When your eval distribution changes, aged pheromones are stale; reset or double the decay rate temporarily.
-- **Cap the per-iteration cost.** Emit a cost-per-iteration metric. PSO that costs $500 / iteration and gains 0.5% is not shippable.
+- **Cap the per-iteration cost.** Emit a cost-per-iteration metric. PSO that costs \$500 / iteration and gains 0.5% is not shippable.
 
 ## Exercises
 

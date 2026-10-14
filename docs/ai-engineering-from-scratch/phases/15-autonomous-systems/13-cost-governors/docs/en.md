@@ -1,6 +1,6 @@
 # Action Budgets, Iteration Caps, and Cost Governors
 
-> A mid-sized e-commerce agent's monthly LLM cost jumped from $1,200 to $4,800 after its team enabled the "order-tracking" skill. That is not a pricing bug. That is an agent that found a new loop and kept spending inside it. Microsoft's Agent Governance Toolkit (April 2, 2026) codifies the defense against this class: per-request `max_tokens`, per-task token and dollar budgets, per-day/month caps, iteration caps, tiered model routing, prompt caching, context windowing, HITL checkpoints on expensive actions, kill switches on budget breach. Anthropic's Claude Code Agent SDK ships the same primitives under different names. Financial velocity limits — e.g. cut access on >$50 in 10 minutes — catch loops faster than monthly caps.
+> A mid-sized e-commerce agent's monthly LLM cost jumped from \$1,200 to \$4,800 after its team enabled the "order-tracking" skill. That is not a pricing bug. That is an agent that found a new loop and kept spending inside it. Microsoft's Agent Governance Toolkit (April 2, 2026) codifies the defense against this class: per-request `max_tokens`, per-task token and dollar budgets, per-day/month caps, iteration caps, tiered model routing, prompt caching, context windowing, HITL checkpoints on expensive actions, kill switches on budget breach. Anthropic's Claude Code Agent SDK ships the same primitives under different names. Financial velocity limits — e.g. cut access on >\$50 in 10 minutes — catch loops faster than monthly caps.
 
 **Type:** Learn
 **Languages:** Python (stdlib, layered cost-governor simulator)
@@ -25,7 +25,7 @@ This is an engineering lesson: the math is trivial, the discipline is where team
 4. **Per-tool call cap.** No more than N `WebFetch` calls, N `shell_exec` calls, etc.
 5. **Iteration cap (`max_turns`).** Total agent loop iterations; prevents infinite reasoning loops.
 6. **Per-minute / per-hour / per-day / per-month cap.** Rolling windows. Catches leaks at different time scales.
-7. **Financial velocity limit.** E.g., "if spend exceeds $50 in 10 minutes, cut access." Catches loop-based burn before monthly caps fire.
+7. **Financial velocity limit.** E.g., "if spend exceeds \$50 in 10 minutes, cut access." Catches loop-based burn before monthly caps fire.
 8. **Tiered model routing.** Default to a smaller model; escalate to a larger one only when a classifier judges the task warrants it.
 9. **Prompt caching.** System prompt and stable context stored in provider cache; token cost of re-sending is near zero.
 10. **Context windowing.** Compaction / summarization to keep the active context below a threshold; direct token-cost reduction.
@@ -56,7 +56,7 @@ Combine with the permission-mode ladder (Lesson 10). An `autoMode` session witho
 
 Microsoft's Agent Governance Toolkit covers the OWASP Agentic Top 10 and the EU AI Act Article 14 (human oversight) requirements. For production in the EU, logging and cap enforcement are not optional.
 
-### The observed $1,200 → $4,800 case
+### The observed \$1,200 → \$4,800 case
 
 The real case in the Microsoft docs: an e-commerce agent whose monthly cost tripled after a new tool was added. The tool allowed the agent to poll order status during every session. No loop detection. No per-tool cap. No alert on week-over-week growth. The fix was a per-tool cap plus a daily-growth alert. This is a template: every new tool surface is a new potential loop; every new tool needs its own cap and its own alert.
 
@@ -88,7 +88,7 @@ The real case in the Microsoft docs: an e-commerce agent whose monthly cost trip
 | max_tokens | "Per-request cap" | Ceiling on a single completion's size |
 | max_turns | "Iteration cap" | Ceiling on agent loop iterations in a session |
 | max_budget_usd | "Dollar kill switch" | Session cost cap; aborts on breach |
-| Velocity limit | "Rate cap" | Limit on spend per short window (e.g., $50 / 10 min) |
+| Velocity limit | "Rate cap" | Limit on spend per short window (e.g., \$50 / 10 min) |
 | Tiered routing | "Small model first" | Cheap model default; escalate only when classifier warrants |
 | Prompt caching | "Cached system prompt" | Provider-side cache reduces re-send token cost to near zero |
 | HITL checkpoint | "Human approval gate" | Human tap required before expensive action |

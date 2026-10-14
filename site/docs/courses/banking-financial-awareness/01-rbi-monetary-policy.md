@@ -97,7 +97,7 @@ flowchart TD
 
 #### F. Foreign Exchange Management
 - Administers the **Foreign Exchange Management Act (FEMA), 1999**
-- Manages the country's foreign exchange reserves (over $600 billion as of 2025)
+- Manages the country's foreign exchange reserves (over \$600 billion as of 2025)
 - Maintains the external value of the rupee
 
 #### G. Developmental Functions

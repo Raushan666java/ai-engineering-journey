@@ -782,7 +782,7 @@ function calculateFP(fp: FPCount, complexity: 'low' | 'average' | 'high'): numbe
 20. Write TypeScript code to generate test cases for branch coverage of `fizzbuzz(n)`.
 21. Explain the Capability Maturity Model Integration (CMMI) levels 1-5.
 22. For a real-time embedded system, which SDLC model is most appropriate? Justify.
-23. Estimate the cost for a web application with 15 external inputs, 10 external outputs, 8 queries, 5 internal files, 3 external interfaces (all average complexity) at $500/FP.
+23. Estimate the cost for a web application with 15 external inputs, 10 external outputs, 8 queries, 5 internal files, 3 external interfaces (all average complexity) at \$500/FP.
 24. Write TypeScript code to calculate Putnam's software equation (Norden-Rayleigh curve).
 25. Compare regression testing vs retesting. When is each performed?
 26. For a project with PV=100, EV=75, AC=90 at a given date, calculate SPI, CPI, CV, SV and interpret.
@@ -807,7 +807,7 @@ function calculateFP(fp: FPCount, complexity: 'low' | 'average' | 'high'): numbe
 18. DRE = 45/(45+5) × 100 = 90%
 21. CMMI Levels: 1 (Initial), 2 (Managed), 3 (Defined), 4 (Quantitatively Managed), 5 (Optimizing)
 22. V-Model or Spiral. V-Model for rigorous testing at each phase. Spiral for risk management in critical systems
-23. FP = 15×4+10×5+8×4+5×10+3×7 = 60+50+32+50+21 = 213. Cost = 213×500 = $106,500
+23. FP = 15×4+10×5+8×4+5×10+3×7 = 60+50+32+50+21 = 213. Cost = 213×500 = \$106,500
 25. Regression: re-test unchanged features after changes. Retesting: verify specific defect fixes. Regression is broader
 26. SPI = EV/PV = 75/100 = 0.75 (behind schedule). CPI = EV/AC = 75/90 = 0.83 (over budget). CV = EV-AC = -15. SV = EV-PV = -25
 28. Generator: test case ID, description, input, expected output, actual output, status (pass/fail/blocked), timestamp

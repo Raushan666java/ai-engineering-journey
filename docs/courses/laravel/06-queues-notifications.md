@@ -1495,7 +1495,7 @@ class ChargePayment implements ShouldQueue
 
 2. **Multi-Channel Notification System**
 
-   Implement an `AccountSuspended` notification that sends via email (with a reason and reactivation link), database (for an in-app notification center), and Slack (#compliance channel for amounts > $1000). Use conditional `via()` logic based on user preferences. Demonstrate sending to both a model and an on-demand recipient.
+   Implement an `AccountSuspended` notification that sends via email (with a reason and reactivation link), database (for an in-app notification center), and Slack (#compliance channel for amounts > \$1000). Use conditional `via()` logic based on user preferences. Demonstrate sending to both a model and an on-demand recipient.
 
 3. **Event-Driven Order Processing with Observability**
 

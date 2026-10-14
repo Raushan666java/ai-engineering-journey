@@ -675,7 +675,7 @@ low competition. (6) Personal projects — write about what you built. Case stud
 you'll build an OCR pipeline that extracts invoice data with 95% accuracy." (2) Prerequisites — list exactly what the reader needs (Python 3.11,.
 an OpenAI API key, 20 minutes). (3) Step-by-step — 5-8 numbered steps, each building on the previous. Every code block should be copy-paste ready and.
 runnable. (4) Code + explanation — show the code first, then explain key lines. Never drop a wall of code without explanation. (5) Expected output — after each step,.
-show what the reader should see: "You should see: 'Invoice total: $1,234.56'." (6) Common errors — add a troubleshooting section for.
+show what the reader should see: "You should see: 'Invoice total: \$1,234.56'." (6) Common errors — add a troubleshooting section for.
 the most common mistakes. (7) Summary + next steps — recap what was learned and suggest extensions. Keep each step under 5 minutes. Total reading time: 15-30 minutes.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

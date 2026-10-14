@@ -1109,8 +1109,8 @@ regenerates them. This technique is most effective when the draft and target mod
   <div class="tp-qa-answer">
 <p>Implement a UsageTracker that records every API call with model, input tokens, output tokens, timestamp, and user/feature attribution. Set up a BudgetAlertSystem with thresholds at 50%,.
 75%, 90%, and 100% of the monthly budget. Each threshold triggers an alert (Slack, email, or PagerDuty) only once. The system checks utilization on every request and.
-projects monthly spend based on daily burn rate. Use a sliding window to smooth out spikes. For example, if the monthly budget is $500 and.
-daily spend averages $20, an alert fires at $250 (50%), $375 (75%), and $450 (90%).</p>
+projects monthly spend based on daily burn rate. Use a sliding window to smooth out spikes. For example, if the monthly budget is \$500 and.
+daily spend averages \$20, an alert fires at \$250 (50%), \$375 (75%), and \$450 (90%).</p>
     <pre><code>alert_system = BudgetAlertSystem(thresholds=[0.5, 0.75, 0.9, 1.0])
 alerts = alert_system.check_budget(tracker)</code></pre>
   </div>

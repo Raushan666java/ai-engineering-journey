@@ -566,7 +566,7 @@ skills.
 | Add a contact form to avoid exposing email | Formspree (free, 50 submissions/month) |
 | Use privacy-friendly analytics | Plausible is lightweight and GDPR-compliant |
 | Optimize for Core Web Vitals | Target 90+ Lighthouse scores |
-| Deploy with a custom domain | yourname.com costs ~$12/year |
+| Deploy with a custom domain | yourname.com costs ~\$12/year |
 
 ## Q&A
 
@@ -634,7 +634,7 @@ skills.
 <summary class="tp-qa-question">How do I deploy my portfolio with a custom domain?</summary>
 <div class="tp-qa-context"><p>Hosting and domain setup.</p></div>
 <div class="tp-qa-answer">
-<p>Deployment steps: (1) Buy a domain from Namecheap or Cloudflare (~$12/year). (2) Choose a host: <strong>GitHub Pages</strong> (free, simple), <strong>Netlify</strong> (free, great features), <strong>Vercel</strong> (free, excellent for JS frameworks). (3) Connect your repo to the host — it auto-builds on push. (4) Add custom domain in host settings. (5) Update DNS: add CNAME or A records pointing to your host. (6) Enable HTTPS (automatic on Netlify/Vercel). (7) Set up email forwarding (hello@yourname.com → your@gmail.com). The whole process takes 30 minutes and costs ~$12/year for the domain.</p>
+<p>Deployment steps: (1) Buy a domain from Namecheap or Cloudflare (~\$12/year). (2) Choose a host: <strong>GitHub Pages</strong> (free, simple), <strong>Netlify</strong> (free, great features), <strong>Vercel</strong> (free, excellent for JS frameworks). (3) Connect your repo to the host — it auto-builds on push. (4) Add custom domain in host settings. (5) Update DNS: add CNAME or A records pointing to your host. (6) Enable HTTPS (automatic on Netlify/Vercel). (7) Set up email forwarding (hello@yourname.com → your@gmail.com). The whole process takes 30 minutes and costs ~\$12/year for the domain.</p>
 </div>
 <div class="tp-qa-actions">
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -726,7 +726,7 @@ file size, and Lighthouse scores: Astro > Hugo > Next.js > Jekyll.</p>
     Q4: How do you deploy a portfolio with a custom domain and HTTPS?
   </summary>
   <div class="tp-qa-answer">
-<p>Deployment steps: (1) Buy a domain — Namecheap, Cloudflare, or Google Domains (~$10-15/year). Choose yourname.com, yourname.dev, or yourname.me. (2) Choose a host — Vercel (free,.
+<p>Deployment steps: (1) Buy a domain — Namecheap, Cloudflare, or Google Domains (~\$10-15/year). Choose yourname.com, yourname.dev, or yourname.me. (2) Choose a host — Vercel (free,.
 best for Next.js/Astro), Netlify (free, great features), GitHub Pages (free, simple, Jekyll-friendly). (3) Connect to Git — push your portfolio code to GitHub,.
 connect the repo to your host. The host auto-builds on every push. (4) Custom domain — add your domain in the host's settings (Vercel: Domains section,.
 Netlify: Domain Management). (5) DNS configuration — add CNAME record (www.yourname.com → your-site.netlify.app) or A records (point to host's IPs). If using Cloudflare DNS,.
@@ -774,7 +774,7 @@ Resend. Implementation steps: name and email fields, message textarea, submit bu
     Q7: What analytics should you use on a portfolio website and why?
   </summary>
   <div class="tp-qa-answer">
-<p>Privacy-friendly analytics: (1) Plausible — lightweight (1KB script), GDPR-compliant, no cookie banner needed. $12/month or self-host. Shows: unique visitors, page views,.
+<p>Privacy-friendly analytics: (1) Plausible — lightweight (1KB script), GDPR-compliant, no cookie banner needed. \$12/month or self-host. Shows: unique visitors, page views,.
 bounce rate, traffic sources, top pages, countries, devices. (2) Umami — open source, self-hosted (one Docker command), 100% data ownership. (3) Google Analytics — free,.
 most powerful, but slows down page load (15KB+ script), requires cookie banner for GDPR compliance. Not recommended for simple portfolios. (4) Simple Analytics — even simpler than Plausible,.
 EU-hosted. Key metrics to track: total visitors, which projects get the most views, traffic sources (are recruiters finding you through LinkedIn,.

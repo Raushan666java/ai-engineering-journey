@@ -670,7 +670,7 @@ Algorithm: MinConflicts(csp, max_steps)
 
 You get the idea. After a few steps, all conflicts disappear.
 
-For 4-Queens, the algorithm finds a solution very quickly. For N-Queens with N up to $10^6$, Min-Conflicts solves it in under 50 steps on average (when restarts are allowed).
+For 4-Queens, the algorithm finds a solution very quickly. For N-Queens with N up to \$10^6$, Min-Conflicts solves it in under 50 steps on average (when restarts are allowed).
 
 ### Python Implementation
 
@@ -748,7 +748,7 @@ print(min_conflicts(nqueens_csp(8), max_steps=1000))
 | **Space** | O(n) | Store one complete assignment |
 | **Total (typical)** | O($n \cdot steps$) | With random restarts, usually converges in O(n) steps |
 
-**Why Min-Conflicts works so well:** For N-Queens, the algorithm finds a solution in roughly 50 steps regardless of N (tested up to N=$10^6$). The key insight: random assignment followed by iterative repair converges much faster than constructive backtracking.
+**Why Min-Conflicts works so well:** For N-Queens, the algorithm finds a solution in roughly 50 steps regardless of N (tested up to N=\$10^6$). The key insight: random assignment followed by iterative repair converges much faster than constructive backtracking.
 
 ### Advantages & Disadvantages
 
@@ -840,7 +840,7 @@ def nqueens_min_conflicts(n, max_steps=1000):
 print(nqueens_min_conflicts(8))  # e.g., [4, 1, 3, 6, 2, 7, 5, 0]
 ```
 
-**Follow-up question:** What if N = $10^6$? Min-Conflicts still works in ~50 steps. Backtracking would never finish.
+**Follow-up question:** What if N = \$10^6$? Min-Conflicts still works in ~50 steps. Backtracking would never finish.
 
 ### Sudoku Solver Design
 

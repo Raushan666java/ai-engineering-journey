@@ -305,7 +305,7 @@ A cryptographic hash function H maps an arbitrary-length message M to a fixed-le
 - **Output:** 160 bits (40 hex chars)
 - **Designer:** NSA
 - **Status:** **Broken** — SHAttered attack (2017, Google/Microsoft): first practical collision
-- **Attack cost:** ~110 GPU-years → ~$75K at cloud rates
+- **Attack cost:** ~110 GPU-years → ~\$75K at cloud rates
 - NIST deprecated SHA-1 for digital signatures in 2011
 
 #### 1.5.3 SHA-256 (Secure Hash Algorithm 2)

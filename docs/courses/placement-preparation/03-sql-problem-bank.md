@@ -2189,12 +2189,12 @@ LIMIT 6;
 ```
 | id | formatted_date    | formatted_amount | with_tax   |
 |----|-------------------|------------------|------------|
-| 1  | January 10, 2024  | $1,500.00        | $1,620.00  |
-| 2  | January 15, 2024  | $2,300.00        | $2,484.00  |
-| 3  | February 05, 2024 | $800.00          | $864.00    |
-| 4  | February 20, 2024 | $3,200.00        | $3,456.00  |
-| 5  | March 01, 2024    | $1,200.00        | $1,296.00  |
-| 6  | March 12, 2024    | $5,600.00        | $6,048.00  |
+| 1  | January 10, 2024  | \$1,500.00        | \$1,620.00  |
+| 2  | January 15, 2024  | \$2,300.00        | \$2,484.00  |
+| 3  | February 05, 2024 | \$800.00          | \$864.00    |
+| 4  | February 20, 2024 | \$3,200.00        | \$3,456.00  |
+| 5  | March 01, 2024    | \$1,200.00        | \$1,296.00  |
+| 6  | March 12, 2024    | \$5,600.00        | \$6,048.00  |
 ```
 
 **Explanation:**
@@ -2685,7 +2685,7 @@ db.products.insertMany([
 // Find all products
 db.products.find();
 
-// Find with filter → electronics under $20
+// Find with filter → electronics under \$20
 db.products.find({ category: "Electronics", price: { $lt: 20 } });
 
 // Update → increase price of all stationery by 10%
@@ -4033,12 +4033,12 @@ INSERT INTO accounts VALUES (1, 'Alice', 1000), (2, 'Bob', 1000);
 
 -- Deadlock occurs when two transactions lock resources in opposite order
 
--- Transaction A: Transfer $100 from Alice to Bob
+-- Transaction A: Transfer \$100 from Alice to Bob
 BEGIN;
 UPDATE accounts SET balance = balance - 100 WHERE id = 1;  -- Locks Alice's account
 -- Now needs to lock Bob's account
 
--- Transaction B: Transfer $200 from Bob to Alice (at the same time)
+-- Transaction B: Transfer \$200 from Bob to Alice (at the same time)
 BEGIN;
 UPDATE accounts SET balance = balance - 200 WHERE id = 2;  -- Locks Bob's account
 -- Now needs to lock Alice's account

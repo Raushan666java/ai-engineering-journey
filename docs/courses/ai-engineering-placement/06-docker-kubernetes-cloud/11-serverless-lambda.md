@@ -661,7 +661,7 @@ def respond(status_code, body):
 | Provisioned concurrency | Yes | Premium plan | Min instances |
 | Layers | Yes | No | No |
 | VPC networking | Yes | Yes | Yes (Gen2) |
-| Price (per 1M invocations) | $0.20 | $0.20 | $0.40 |
+| Price (per 1M invocations) | \$0.20 | \$0.20 | \$0.40 |
 | GPU support | No | No | No |
 
 ### Serverless Limitations for ML
@@ -986,7 +986,7 @@ Serverless computing runs code in response to events without managing servers, w
     Q5: How does Lambda pricing work and how do you estimate costs?
   </summary>
   <div class="tp-qa-answer">
-    <p>Lambda pricing = <strong>request count</strong> + <strong>compute duration</strong> + <strong>data transfer</strong>. Requests: $0.20 per 1M requests. Duration: $0.0000166667 per GB-second (for x86). Free tier: 1M requests/month + 400,000 GB-seconds. Example: a 1GB Lambda running 200ms for 1M requests/month costs ~$3.50. <strong>Cost optimization</strong>: Right-size memory (more memory = faster execution = less duration cost), use Graviton (20% cheaper), minimize cold starts (provisioned concurrency costs extra), use reserved concurrency to limit runaway scaling, clean up /tmp between invocations to avoid storage costs.</p>
+    <p>Lambda pricing = <strong>request count</strong> + <strong>compute duration</strong> + <strong>data transfer</strong>. Requests: \$0.20 per 1M requests. Duration: \$0.0000166667 per GB-second (for x86). Free tier: 1M requests/month + 400,000 GB-seconds. Example: a 1GB Lambda running 200ms for 1M requests/month costs ~\$3.50. <strong>Cost optimization</strong>: Right-size memory (more memory = faster execution = less duration cost), use Graviton (20% cheaper), minimize cold starts (provisioned concurrency costs extra), use reserved concurrency to limit runaway scaling, clean up /tmp between invocations to avoid storage costs.</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>
@@ -998,7 +998,7 @@ Serverless computing runs code in response to events without managing servers, w
     Q6: Design a serverless ML inference pipeline for a mobile app.
   </summary>
   <div class="tp-qa-answer">
-    <p><strong>1) API Gateway</strong> — HTTPS endpoint with throttling (burst=100, rate=50). <strong>2) Lambda inference</strong> — loads model from EFS (to avoid cold start model loading). Uses Python runtime. Provisioned concurrency of 10 for consistent latency. <strong>3) DynamoDB</strong> — stores inference results and request metadata. <strong>4) S3</strong> — stores uploaded images/videos for vision models. Generates presigned URLs for client upload. <strong>5) Step Functions</strong> — orchestrates multi-step pipelines (preprocess, inference, postprocess). <strong>6) CloudFront</strong> — CDN for static assets and API caching. <strong>7) CloudWatch + X-Ray</strong> — monitoring and tracing. <strong>8) Cost</strong>: ~$10/month for 100K requests at 500ms each.</p>
+    <p><strong>1) API Gateway</strong> — HTTPS endpoint with throttling (burst=100, rate=50). <strong>2) Lambda inference</strong> — loads model from EFS (to avoid cold start model loading). Uses Python runtime. Provisioned concurrency of 10 for consistent latency. <strong>3) DynamoDB</strong> — stores inference results and request metadata. <strong>4) S3</strong> — stores uploaded images/videos for vision models. Generates presigned URLs for client upload. <strong>5) Step Functions</strong> — orchestrates multi-step pipelines (preprocess, inference, postprocess). <strong>6) CloudFront</strong> — CDN for static assets and API caching. <strong>7) CloudWatch + X-Ray</strong> — monitoring and tracing. <strong>8) Cost</strong>: ~\$10/month for 100K requests at 500ms each.</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>
@@ -1022,7 +1022,7 @@ Serverless computing runs code in response to events without managing servers, w
     Q8: How would you process 10,000 CSV files uploaded to S3 with Lambda?
   </summary>
   <div class="tp-qa-answer">
-    <p><strong>1) S3 event notification</strong> — each file upload triggers a Lambda. <strong>2) SQS queue</strong> — buffer between S3 and Lambda to handle throttling. Configure S3 to send events to SQS, Lambda polls SQS. <strong>3) Batch window</strong> — batch up to 10 files per Lambda invocation (reduce number of invocations). <strong>4) Parallel processing</strong> — Lambda scales up to 1000 concurrent executions, limited only by account concurrency. <strong>5) Chunking</strong> — for large CSVs (1GB+), use Lambda to split into chunks, process each chunk separately. <strong>6) Step Functions</strong> — orchestrate: validate, process, aggregate, store results. <strong>7) Error handling</strong> — DLQ for failed files with retry logic. <strong>8) Cost</strong>: processing 10K files at ~5s each ~= $1.50.</p>
+    <p><strong>1) S3 event notification</strong> — each file upload triggers a Lambda. <strong>2) SQS queue</strong> — buffer between S3 and Lambda to handle throttling. Configure S3 to send events to SQS, Lambda polls SQS. <strong>3) Batch window</strong> — batch up to 10 files per Lambda invocation (reduce number of invocations). <strong>4) Parallel processing</strong> — Lambda scales up to 1000 concurrent executions, limited only by account concurrency. <strong>5) Chunking</strong> — for large CSVs (1GB+), use Lambda to split into chunks, process each chunk separately. <strong>6) Step Functions</strong> — orchestrate: validate, process, aggregate, store results. <strong>7) Error handling</strong> — DLQ for failed files with retry logic. <strong>8) Cost</strong>: processing 10K files at ~5s each ~= \$1.50.</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>

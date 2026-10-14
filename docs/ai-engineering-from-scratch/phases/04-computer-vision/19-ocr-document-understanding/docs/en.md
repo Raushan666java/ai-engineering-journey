@@ -22,7 +22,7 @@ The field splits into three skill layers:
 
 1. **OCR proper**: turn pixels into text.
 2. **Layout parsing**: group OCR output into regions (title, body, table, header).
-3. **Document understanding**: extract structured fields ("invoice_total = $42.50") from layout.
+3. **Document understanding**: extract structured fields ("invoice_total = \$42.50") from layout.
 
 Each layer has classical and modern approaches, and the gap between "I want text from an image" and "I need the total amount from this receipt" is bigger than most teams realise.
 

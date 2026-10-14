@@ -724,8 +724,8 @@ export PATH="/usr/local/go/bin:$PATH"
     Q1: What is the difference between an alias and a function in bash?
   </summary>
   <div class="tp-qa-answer">
-<p><strong>Aliases</strong> are simple text substitutions — they can't take arguments, use control flow, or handle complex logic. <strong>Functions</strong> are full programs with parameters (<code>$1</code>,.
-<code>$2</code>), local variables, conditionals, and return values. Use aliases for simple shortcuts (<code>alias gs='git status'</code>) and functions when you need flexibility (<code>mkcd() { mkdir -p "$1" && cd "$1";.
+<p><strong>Aliases</strong> are simple text substitutions — they can't take arguments, use control flow, or handle complex logic. <strong>Functions</strong> are full programs with parameters (<code>\$1</code>,.
+<code>\$2</code>), local variables, conditionals, and return values. Use aliases for simple shortcuts (<code>alias gs='git status'</code>) and functions when you need flexibility (<code>mkcd() { mkdir -p "\$1" && cd "\$1";.
 }</code>).</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>

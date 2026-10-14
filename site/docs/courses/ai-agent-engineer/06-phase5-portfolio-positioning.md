@@ -297,7 +297,7 @@ Token bucket per user with 5 req/min burst. Sliding window for total API load. Q
 Model Context Protocol: 3 primitives — Tools (actions the LLM can take), Resources (data the LLM can read), Prompts (pre-built prompt templates). The LLM discovers these at connection time and uses them as needed.
 
 **Q8: How do you estimate LLM API costs?**
-Token count × per-token price. GPT-4: $30/1M input, $60/1M output. A 4-step agent chain with 4K tokens per step costs ~$0.48 per run. Add 20% for retries.
+Token count × per-token price. GPT-4: \$30/1M input, \$60/1M output. A 4-step agent chain with 4K tokens per step costs ~\$0.48 per run. Add 20% for retries.
 
 **Q9: How do you test an agent?**
 1. Unit test each tool function independently
@@ -323,7 +323,7 @@ Record yourself answering all 10 questions. Play it back. If you stall on any qu
 |------|---------------|-------------|----------------|-------------|
 | AI Engineer | 8K-12K AED | 12K-18K AED | 18K-28K AED | 28K-40K AED |
 | AI Agent Engineer | 10K-15K AED | 15K-22K AED | 22K-32K AED | 32K-45K AED |
-| Freelance hourly | $35-50 | $50-80 | $80-120 | $120-175 |
+| Freelance hourly | \$35-50 | \$50-80 | \$80-120 | \$120-175 |
 
 ### Your walk-away numbers
 
@@ -516,11 +516,11 @@ Certifications won't get you hired on their own, but they can help you past HR f
 | Certification | Cost | Time | Why it helps |
 |-------------|------|------|-------------|
 | **OpenAI API Certification** | Free | 2 hours | Proves you know the most-used AI platform |
-| **AWS AI Practitioner** | $100 | 4-6 weeks | Shows cloud-AI competence for enterprise roles |
+| **AWS AI Practitioner** | \$100 | 4-6 weeks | Shows cloud-AI competence for enterprise roles |
 | **LangGraph Academy** | Free | 4 hours | Directly validates agent framework skills |
 | **MCP Certification** | Free | 2 hours | First-mover advantage on protocol adoption |
 | **FastAPI Official Course** | Free | 2-3 hours | Validates Python backend skills |
-| **Docker DCA** | $195 | 4-6 weeks | Useful for production deployment roles |
+| **Docker DCA** | \$195 | 4-6 weeks | Useful for production deployment roles |
 
 ### What NOT to bother with
 

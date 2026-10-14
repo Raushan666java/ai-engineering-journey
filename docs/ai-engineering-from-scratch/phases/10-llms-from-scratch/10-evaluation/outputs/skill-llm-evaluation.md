@@ -17,9 +17,9 @@ When evaluating an LLM system, apply this decision framework to choose the right
 
 **Custom evals:** You are building for production. You have a specific task with specific failure modes. Custom evals are the only evaluation that predicts real-world performance. Minimum 50 test cases for prototype, 200+ for production.
 
-**LLM-as-judge:** Your task is open-ended (summarization, writing, conversation). Exact match and token overlap metrics are too rigid. LLM-as-judge costs ~$0.01 per judgment and agrees with humans ~80% of the time. Always use a rubric, not a vague prompt.
+**LLM-as-judge:** Your task is open-ended (summarization, writing, conversation). Exact match and token overlap metrics are too rigid. LLM-as-judge costs ~\$0.01 per judgment and agrees with humans ~80% of the time. Always use a rubric, not a vague prompt.
 
-**Human evals:** The stakes are high and automated metrics disagree. Human eval is the ground truth but costs $0.10-$2.00 per judgment. Reserve for ambiguous cases and periodic calibration of automated metrics.
+**Human evals:** The stakes are high and automated metrics disagree. Human eval is the ground truth but costs \$0.10-\$2.00 per judgment. Reserve for ambiguous cases and periodic calibration of automated metrics.
 
 **ELO from pairwise comparisons:** You are comparing multiple models on the same task. Pairwise is more reliable than absolute scoring because humans (and LLM judges) are better at relative judgments.
 

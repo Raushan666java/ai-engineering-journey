@@ -277,17 +277,17 @@ Total profit = 20 + 30 + 33 + 50.4 = 133.4 Cr
 
 **Solution:**
 Profit/unit = Price - Cost
-- 2020: 50 - 30 = $20
-- 2021: 55 - 32 = $23
-- 2022: 60 - 35 = $25
-- 2023: 58 - 38 = $20
+- 2020: 50 - 30 = \$20
+- 2021: 55 - 32 = \$23
+- 2022: 60 - 35 = \$25
+- 2023: 58 - 38 = \$20
 
-Highest: 2022 ($25 profit/unit)
+Highest: 2022 (\$25 profit/unit)
 
 **Question:** What was the total profit in 2023?
 
 **Solution:**
-Total profit = (Price - Cost) ? Sales = (58 - 38) ? 1800 = 20 ? 1800 = $36,000
+Total profit = (Price - Cost) ? Sales = (58 - 38) ? 1800 = 20 ? 1800 = \$36,000
 
 ### Example 8: Complex Data Sufficiency
 
@@ -550,7 +550,7 @@ console.log(`Marketing female managers: ${femaleMgrs}`);
 ### Quick Estimation Techniques
 
 - **Approximation:** Round numbers before calculating (e.g., 48.7% of 199 ? 50% of 200 = 100)
-- **Fraction Conversion:** Knowing common fractions: $33.3\% = 1/3$, $25\% = 1/4$, $20\% = 1/5$, $12.5\% = 1/8$
+- **Fraction Conversion:** Knowing common fractions: \$33.3\% = 1/3$, \$25\% = 1/4$, \$20\% = 1/5$, \$12.5\% = 1/8$
 - **Growth Rate Doubling:** A 10% growth rate doubles in ~7.2 years (Rule of 72)
 
 ### TypeScript: Growth Rate Calculator & Data Chart Generator

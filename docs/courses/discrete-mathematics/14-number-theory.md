@@ -65,7 +65,7 @@ For integers $a$ and $b$ with $a \neq 0$, $a$ **divides** $b$ (written $a \mid b
 2. If $a \mid b$ and $a \mid c$, then $a \mid (b + c)$ and $a \mid (b - c)$.
 3. If $a \mid b$, then $a \mid b \cdot c$ for any integer $c$.
 4. If $a \mid b$ and $b \neq 0$, then $|a| \leq |b|$.
-5. $1$ divides every integer; every integer divides $0$.
+5. \$1$ divides every integer; every integer divides \$0$.
 
 > **One-Sentence Takeaway:** Divisibility $a \mid b$ means $b$ is a multiple of $a$; it is transitive and closed under linear combinations.
 
@@ -382,33 +382,33 @@ const plaintext = rsaDecrypt(ciphertext, d, n); // 65
 ## Examples
 
 **Example 14.1** (Euclidean algorithm). Find $\gcd(2024, 748)$:
-- $2024 = 2 \cdot 748 + 528$
-- $748 = 1 \cdot 528 + 220$
-- $528 = 2 \cdot 220 + 88$
-- $220 = 2 \cdot 88 + 44$
-- $88 = 2 \cdot 44 + 0$
+- \$2024 = 2 \cdot 748 + 528$
+- \$748 = 1 \cdot 528 + 220$
+- \$528 = 2 \cdot 220 + 88$
+- \$220 = 2 \cdot 88 + 44$
+- \$88 = 2 \cdot 44 + 0$
 $\gcd(2024, 748) = 44$.
 
 **Example 14.2** (Extended Euclidean). Find $x, y$ such that $252x + 198y = 18$:
-- $252 = 1 \cdot 198 + 54$
-- $198 = 3 \cdot 54 + 36$
-- $54 = 1 \cdot 36 + 18$
-- $36 = 2 \cdot 18 + 0$
+- \$252 = 1 \cdot 198 + 54$
+- \$198 = 3 \cdot 54 + 36$
+- \$54 = 1 \cdot 36 + 18$
+- \$36 = 2 \cdot 18 + 0$
 
 Back-substitute:
-- $18 = 54 - 1 \cdot 36 = 54 - (198 - 3 \cdot 54) = 4 \cdot 54 - 198 = 4(252 - 198) - 198 = 4 \cdot 252 - 5 \cdot 198$
+- \$18 = 54 - 1 \cdot 36 = 54 - (198 - 3 \cdot 54) = 4 \cdot 54 - 198 = 4(252 - 198) - 198 = 4 \cdot 252 - 5 \cdot 198$
 
 So $x = 4$, $y = -5$. Check: $4(252) - 5(198) = 1008 - 990 = 18$. ?
 
-**Example 14.3** (Modular inverse). Find $3^{-1} \pmod{7}$:
-- $7 = 2 \cdot 3 + 1$, so $1 = 7 - 2 \cdot 3$.
+**Example 14.3** (Modular inverse). Find \$3^{-1} \pmod{7}$:
+- \$7 = 2 \cdot 3 + 1$, so \$1 = 7 - 2 \cdot 3$.
 - Thus $(-2) \cdot 3 \equiv 1 \pmod{7}$, so $3^{-1} \equiv -2 \equiv 5 \pmod{7}$.
-- Check: $3 \cdot 5 = 15 \equiv 1 \pmod{7}$. ?
+- Check: \$3 \cdot 5 = 15 \equiv 1 \pmod{7}$. ?
 
-**Example 14.4** (Linear congruence). Solve $6x \equiv 3 \pmod{15}$:
+**Example 14.4** (Linear congruence). Solve \$6x \equiv 3 \pmod{15}$:
 - $\gcd(6,15) = 3 \mid 3$, so there are 3 solutions.
-- Divide through: $2x \equiv 1 \pmod{5}$.
-- Inverse of 2 mod 5 is 3 (since $2 \cdot 3 = 6 \equiv 1 \pmod{5}$).
+- Divide through: \$2x \equiv 1 \pmod{5}$.
+- Inverse of 2 mod 5 is 3 (since \$2 \cdot 3 = 6 \equiv 1 \pmod{5}$).
 - $x \equiv 3 \pmod{5}$.
 - Solutions mod 15: $x = 3, 8, 13$.
 
@@ -419,11 +419,11 @@ So $x = 4$, $y = -5$. Check: $4(252) - 5(198) = 1008 - 990 = 18$. ?
 - $M_3 = 105/7 = 15$, $y_3 = 15^{-1} \pmod{7} = 1$ ($15 \equiv 1 \pmod{7}$).
 - $x = 2 \cdot 35 \cdot 2 + 3 \cdot 21 \cdot 1 + 2 \cdot 15 \cdot 1 = 140 + 63 + 30 = 233 \equiv 23 \pmod{105}$.
 
-Check: $23 \equiv 2 \pmod{3}$, $23 \equiv 3 \pmod{5}$, $23 \equiv 2 \pmod{7}$. ?
+Check: \$23 \equiv 2 \pmod{3}$, \$23 \equiv 3 \pmod{5}$, \$23 \equiv 2 \pmod{7}$. ?
 
-**Example 14.6** (Modular exponentiation). Compute $3^{1000} \bmod 7$:
-By FLT: $3^{6} \equiv 1 \pmod{7}$. $1000 = 6 \cdot 166 + 4$.
-$3^{1000} = (3^6)^{166} \cdot 3^4 \equiv 1^{166} \cdot 81 \equiv 81 \bmod 7 = 4$.
+**Example 14.6** (Modular exponentiation). Compute \$3^{1000} \bmod 7$:
+By FLT: \$3^{6} \equiv 1 \pmod{7}$. \$1000 = 6 \cdot 166 + 4$.
+\$3^{1000} = (3^6)^{166} \cdot 3^4 \equiv 1^{166} \cdot 81 \equiv 81 \bmod 7 = 4$.
 
 ```typescript
 console.log(modPow(3, 1000, 7)); // 4
@@ -435,7 +435,7 @@ Remove multiples of 2: $\{2,3,5,7,9,11,13,15,17,19,21,23,25,27,29\}$.
 Remove multiples of 3: $\{2,3,5,7,11,13,17,19,23,25,29\}$.
 $5^2 = 25 > 30$, so stop. Primes: $\{2,3,5,7,11,13,17,19,23,29\}$.
 
-**Example 14.8** (Totient of 100). $100 = 2^2 \cdot 5^2$.
+**Example 14.8** (Totient of 100). \$100 = 2^2 \cdot 5^2$.
 $\phi(100) = \phi(2^2) \cdot \phi(5^2) = (4-2) \cdot (25-5) = 2 \cdot 20 = 40$.
 
 **Example 14.9** (RSA toy example). $p = 7$, $q = 11$:
@@ -911,15 +911,15 @@ console.log(eulerTotient(100)); // 40
 
 *Proof.* Consider the set $\{a \bmod p, 2a \bmod p, \ldots, (p-1)a \bmod p\}$. These are all nonzero and distinct modulo $p$ (if $ia \equiv ja \pmod{p}$, then $p \mid (i-j)a$, so $p \mid i-j$, forcing $i=j$). Thus they are a permutation of $\{1, 2, \ldots, p-1\}$. Their product: $a^{p-1}(p-1)! \equiv (p-1)! \pmod{p}$. Since $(p-1)!$ is coprime to $p$, cancel it: $a^{p-1} \equiv 1 \pmod{p}$. $\square$
 
-**Example 14.9** (Fermat's Little Theorem application). Compute $7^{2023} \bmod 11$.
+**Example 14.9** (Fermat's Little Theorem application). Compute \$7^{2023} \bmod 11$.
 
-Since 11 is prime and $7 \not\equiv 0 \pmod{11}$, by FLT $7^{10} \equiv 1 \pmod{11}$. Write $2023 = 10 \cdot 202 + 3$, so $7^{2023} = (7^{10})^{202} \cdot 7^3 \equiv 1^{202} \cdot 7^3 \equiv 343 \equiv 2 \pmod{11}$.
+Since 11 is prime and \$7 \not\equiv 0 \pmod{11}$, by FLT \$7^{10} \equiv 1 \pmod{11}$. Write \$2023 = 10 \cdot 202 + 3$, so \$7^{2023} = (7^{10})^{202} \cdot 7^3 \equiv 1^{202} \cdot 7^3 \equiv 343 \equiv 2 \pmod{11}$.
 
 ## Additional Exercises
 
 16. Use the Euclidean algorithm to compute $\gcd(1234, 5678)$.
 
-17. Find all solutions to $3x \equiv 7 \pmod{20}$.
+17. Find all solutions to \$3x \equiv 7 \pmod{20}$.
 
 18. Solve the system: $x \equiv 2 \pmod{3}$, $x \equiv 3 \pmod{5}$, $x \equiv 2 \pmod{7}$.
 
@@ -945,13 +945,13 @@ Since 11 is prime and $7 \not\equiv 0 \pmod{11}$, by FLT $7^{10} \equiv 1 \pmod{
 
 7. Find the modular inverse of 11 modulo 26.
 
-8. Solve $5x \equiv 3 \pmod{12}$.
+8. Solve \$5x \equiv 3 \pmod{12}$.
 
 9. Solve the system: $x \equiv 1 \pmod{4}$, $x \equiv 2 \pmod{5}$, $x \equiv 3 \pmod{9}$.
 
 10. Compute $\phi(2024)$.
 
-11. Using FLT, compute $7^{2023} \bmod 11$.
+11. Using FLT, compute \$7^{2023} \bmod 11$.
 
 12. Generate RSA parameters with $p = 11$, $q = 13$, $e = 7$. Encrypt and decrypt $m = 8$.
 

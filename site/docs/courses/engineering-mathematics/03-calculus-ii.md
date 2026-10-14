@@ -342,7 +342,7 @@ Evaluate $\iint_R e^{-(x^2 + y^2)}\,dA$ where $R$ is the disk $x^2 + y^2 \leq 4$
 
 **Solution:** Convert to polar: $x = r\cos\theta$, $y = r\sin\theta$, $dA = r\,dr\,d\theta$.
 
-Region: $0 \leq r \leq 2$, $0 \leq \theta \leq 2\pi$.
+Region: \$0 \leq r \leq 2$, \$0 \leq \theta \leq 2\pi$.
 
 $$\iint_R e^{-(x^2 + y^2)}\,dA = \int_0^{2\pi} \int_0^2 e^{-r^2} r\,dr\,d\theta$$
 
@@ -384,7 +384,7 @@ Now compute the flux directly. On the sphere, $\mathbf{n} = \langle x, y, z \ran
 
 $$\iint_S \mathbf{F} \cdot d\mathbf{S} = \iint_S \langle x,y,z \rangle \cdot \langle x,y,z \rangle\,dS = \iint_S (x^2 + y^2 + z^2)\,dS = \iint_S 1\,dS = 4\pi$$
 
-Both equal $4\pi$. Verified ?
+Both equal \$4\pi$. Verified ?
 
 ### Example 7: Application ? Gradient Descent in 2D
 

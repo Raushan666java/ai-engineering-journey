@@ -746,7 +746,7 @@ Twisted pair cable consists of two insulated copper wires twisted together. Twis
 - **Attenuation:** ≈ 20 dB per 100 m at 100 MHz for Cat 5e.
 - **NEXT (Near-End Crosstalk):** Signal coupling between adjacent pairs — lower NEXT is better.
 - **Maximum distance:** 100 m for Ethernet (100BASE-TX, 1000BASE-T).
-- **Cost:** $0.10–$0.50 per meter.
+- **Cost:** \$0.10–\$0.50 per meter.
 
 **UTP Category Comparison:**
 
@@ -793,7 +793,7 @@ Coaxial cable has a central copper conductor surrounded by an insulating layer, 
 - **Attenuation:** ≈ 2 dB per 100 m at 100 MHz (RG-6).
 - **Maximum distance:** 500 m (10BASE5 Thicknet), 185 m (10BASE2 Thinnet).
 - **Bandwidth:** Up to 1 GHz for DOCSIS 3.1 cable modems.
-- **Cost:** $0.30–$1.00 per meter.
+- **Cost:** \$0.30–\$1.00 per meter.
 
 **Types of Coaxial Cable:**
 
@@ -818,7 +818,7 @@ Optical fiber transmits light pulses through a glass or plastic core by total in
 - **Attenuation:** 0.2 dB/km (SMF at 1550 nm), 0.35 dB/km (SMF at 1310 nm), 3 dB/km (MMF at 850 nm).
 - **Bandwidth:** Up to 800 Gbps per wavelength (SMF), 10 Gbps over 550 m (MMF OM4).
 - **Maximum distance:** SMF — hundreds of km with amplifiers; MMF — 550 m at 10 Gbps.
-- **Cost:** $0.50–$2.00 per meter (higher termination cost due to precision polishing).
+- **Cost:** \$0.50–\$2.00 per meter (higher termination cost due to precision polishing).
 
 **Fiber Types Comparison:**
 
@@ -861,8 +861,8 @@ Optical fiber transmits light pulses through a glass or plastic core by total in
 | Attenuation | ~20 dB/100m @100MHz | ~2 dB/100m @100MHz | 0.2 dB/km @1550nm |
 | EMI immunity | Low (STP: medium) | Medium | Complete |
 | Installation ease | Easy (RJ-45) | Moderate (F-type) | Difficult (fusion splice) |
-| Cost per meter | $0.30 | $0.60 | $1.00+ |
-| Termination cost | $0.50 | $1.00 | $20–$50 per connector |
+| Cost per meter | \$0.30 | \$0.60 | \$1.00+ |
+| Termination cost | \$0.50 | \$1.00 | \$20–\$50 per connector |
 | Applications | Ethernet, DSL | Cable TV, broadband | Long-haul, data center |
 
 **Complexity Analysis — Media Selection:**
@@ -2761,7 +2761,7 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 | EMI immunity | Complete | Poor (STP helps) |
 | Tap difficulty | Hard (must cut fiber) | Easy (inductive tap) |
 | Power per port | 0.5–2 W (SFP+) | 0.5–1.5 W (PHY) |
-| Cost per Gbps | $10–$100 (SFP optics) | $1–$10 (copper PHY) |
+| Cost per Gbps | \$10–\$100 (SFP optics) | \$1–\$10 (copper PHY) |
 | Installation difficulty | High (cleave, splice, polish) | Low (crimp RJ-45) |
 | Upgrade path | Change optics (same fiber) | Replace cable (higher Cat) |
 

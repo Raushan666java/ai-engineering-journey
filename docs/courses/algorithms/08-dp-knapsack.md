@@ -75,7 +75,7 @@ flowchart LR
 ### 8.1 0/1 Knapsack
 
 
-**Real-World Analogy:** You are a hiker packing a backpack with a 5 kg limit. You have a tent (1 kg, $10), sleeping bag (2 kg, $15), stove (3 kg, $40), and water filter (4 kg, $55). Each item can be taken at most once. Which combination gives the most value without exceeding 5 kg? The answer is the water filter ($55) + tent ($10) = 5 kg, $65. DP finds this optimum.
+**Real-World Analogy:** You are a hiker packing a backpack with a 5 kg limit. You have a tent (1 kg, \$10), sleeping bag (2 kg, \$15), stove (3 kg, \$40), and water filter (4 kg, \$55). Each item can be taken at most once. Which combination gives the most value without exceeding 5 kg? The answer is the water filter (\$55) + tent (\$10) = 5 kg, \$65. DP finds this optimum.
 
 #### Problem Definition
 
@@ -137,7 +137,7 @@ Initialize: row 0 and column 0 are all 0.
 - \( dp[3][5] \): w=3 ≤ 5 → max(25, 40+15) = **55**
 - \( dp[4][5] \): w=4 ≤ 5 → max(55, 55+10) = **65**
 
-**Result:** 65. **Items selected:** Water filter (4 kg, $55) + Tent (1 kg, $10) = 5 kg, $65.
+**Result:** 65. **Items selected:** Water filter (4 kg, \$55) + Tent (1 kg, \$10) = 5 kg, \$65.
 
 #### C++ Implementation
 
@@ -435,7 +435,7 @@ class FractionalKnapsack {
 ### 8.3 Bounded Knapsack
 
 
-**Real-World Analogy:** A warehouse can store 100 pallets. You have TVs (2 pallets, $500 profit, 5 available), Phones (1 pallet, $200, 10 available), and Laptops (3 pallets, $800, 2 available). Each product has limited stock. How many of each do you store?
+**Real-World Analogy:** A warehouse can store 100 pallets. You have TVs (2 pallets, \$500 profit, 5 available), Phones (1 pallet, \$200, 10 available), and Laptops (3 pallets, \$800, 2 available). Each product has limited stock. How many of each do you store?
 
 #### Problem Definition
 
@@ -488,7 +488,7 @@ New items: [(2,5), (4,10), (3,8), (3,8)]
 - After (3,8): dp = [0,0,5,8,10,13,15,18]
 - After (3,8): dp = [0,0,5,8,10,13,16,18]
 
-**Result:** dp[7] = 18. Selection: 2 × item 1 (4 wt, $10) + 1 × item 2 (3 wt, $8) = 7 wt, $18.
+**Result:** dp[7] = 18. Selection: 2 × item 1 (4 wt, \$10) + 1 × item 2 (3 wt, \$8) = 7 wt, \$18.
 
 #### C++ Implementation
 
@@ -603,7 +603,7 @@ public class BoundedKnapsack {
 ### 8.4 Unbounded Knapsack
 
 
-**Real-World Analogy:** You run a smoothie shop with unlimited stock of bananas ($0.50 each, 1 min prep), protein powder ($2.00 scoop, 30 sec), and spinach ($0.75 bunch, 20 sec). With 5 minutes before lunch rush, how many of each do you use to maximize profit per smoothie? Unlimited stock means any quantity of each ingredient.
+**Real-World Analogy:** You run a smoothie shop with unlimited stock of bananas (\$0.50 each, 1 min prep), protein powder (\$2.00 scoop, 30 sec), and spinach (\$0.75 bunch, 20 sec). With 5 minutes before lunch rush, how many of each do you use to maximize profit per smoothie? Unlimited stock means any quantity of each ingredient.
 
 #### Problem Definition
 
@@ -742,7 +742,7 @@ public class UnboundedKnapsack {
 ### 8.5 Subset Sum
 
 
-**Real-World Analogy:** A cashier needs to give exactly $17 in change using $2, $3, $5, and $7 bills (each at most once). Is it possible?
+**Real-World Analogy:** A cashier needs to give exactly \$17 in change using \$2, \$3, \$5, and \$7 bills (each at most once). Is it possible?
 
 #### Problem Definition
 
@@ -974,7 +974,7 @@ public class EqualPartition {
 ### 8.7 Coin Change (Minimum Coins)
 
 
-**Real-World Analogy:** A vending machine needs to return $0.87 using quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢). What is the minimum number of coins?
+**Real-World Analogy:** A vending machine needs to return \$0.87 using quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢). What is the minimum number of coins?
 
 #### Problem Definition
 

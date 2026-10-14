@@ -874,7 +874,7 @@ int main() {
 
 XNU (X is Not Unix) is Apple's hybrid kernel, combining the Mach microkernel (from CMU) with a FreeBSD monolithic kernel component and Apple's I/O Kit driver framework. It powers macOS, iOS, iPadOS, tvOS, and watchOS.
 
-The history: Apple acquired NeXT in 1997 for $429 million, bringing Steve Jobs back and bringing the NeXTSTEP operating system (based on Mach + BSD). The resulting kernel, XNU, was released as open source (Apple Public Source License) in 2000. Major milestones: Intel transition (2006, x86 support added), iOS launch (2007, ARM support), Apple Silicon transition (2020, ARM64 with unified memory), macOS 11 Big Sur (2020, kernel extension deprecation towards DriverKit).
+The history: Apple acquired NeXT in 1997 for \$429 million, bringing Steve Jobs back and bringing the NeXTSTEP operating system (based on Mach + BSD). The resulting kernel, XNU, was released as open source (Apple Public Source License) in 2000. Major milestones: Intel transition (2006, x86 support added), iOS launch (2007, ARM support), Apple Silicon transition (2020, ARM64 with unified memory), macOS 11 Big Sur (2020, kernel extension deprecation towards DriverKit).
 
 XNU is approximately 2.5 million lines of code, with ~1.5M from the BSD layer, ~800K from Mach, and ~200K from I/O Kit.
 
@@ -1208,7 +1208,7 @@ int main() {
 
 ### Overview and History
 
-Android is an open-source mobile operating system based on a modified Linux kernel. It was initially developed by Android Inc. (founded by Andy Rubin, Rich Miner, Nick Sears, and Chris White) and acquired by Google in 2005 for $50 million. The first commercial version (Android 1.0, API 1) launched on the HTC Dream (T-Mobile G1) in September 2008.
+Android is an open-source mobile operating system based on a modified Linux kernel. It was initially developed by Android Inc. (founded by Andy Rubin, Rich Miner, Nick Sears, and Chris White) and acquired by Google in 2005 for \$50 million. The first commercial version (Android 1.0, API 1) launched on the HTC Dream (T-Mobile G1) in September 2008.
 
 **Key Android versions and milestones**:
 - Android 1.5 Cupcake (2009): On-screen keyboard, widgets, copy-paste
@@ -2563,7 +2563,7 @@ seL4_ARM_Page_Map(page_cap, vspace_cap, vaddr,
 | **Default shell** | bash / zsh | PowerShell | zsh |
 | **Cloud integration** | Native cloud (AWS, GCP, Azure) | Azure + M365 deeply integrated | iCloud deeply integrated |
 | **System update** | apt upgrade, dnf upgrade | Windows Update | Software Update (System Settings) |
-| **Cost** | Free (open source) | $139-199 (Home/Pro) | Free with Apple hardware |
+| **Cost** | Free (open source) | \$139-199 (Home/Pro) | Free with Apple hardware |
 | **Real-time** | PREEMPT_RT (available, standard Linux 6.2+) | Windows RT (limited) | Not available (QoS-based soft RT only) |
 
 ### Mobile OS Comparison: Android vs iOS
@@ -2588,7 +2588,7 @@ seL4_ARM_Page_Map(page_cap, vspace_cap, vaddr,
 | **Multitasking** | Split-screen, picture-in-picture, freeform | Split-screen (iPad), PiP, Stage Manager (iPad) |
 | **Security updates** | Monthly via vendor + Google Play System Updates | Direct from Apple (same day for all devices) |
 | **Market share** | ~87% worldwide mobile OS | ~13% worldwide, ~60% in US |
-| **Average selling price** | Wide range ($50-$2000+) | Premium ($400-$1600) |
+| **Average selling price** | Wide range (\$50-\$2000+) | Premium (\$400-\$1600) |
 | **Hardware variety** | Thousands of models | Limited (iPhone SE / standard / Pro / Pro Max) |
 | **First release** | September 2008 (Android 1.0, HTC Dream) | June 2007 (iPhone OS 1, original iPhone) |
 | **Latest version** | Android 16 (2025) | iOS 19 (projected 2025) |

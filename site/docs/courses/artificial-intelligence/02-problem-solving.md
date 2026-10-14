@@ -1041,7 +1041,7 @@ Problems are classified along three principal dimensions:
 ### Q2: Why are heuristics important in search?
 
 
-Heuristics (domain-specific knowledge) transform an uninformed exponential search into a tractable one. A good heuristic can reduce the effective branching factor from 40 (chess) to near 6, making the difference between a search that takes **$10^{100}$ years** and one that finishes in **minutes**. Heuristics are the key insight that makes AI systems like DeepBlue, AlphaGo, and self-driving cars possible.
+Heuristics (domain-specific knowledge) transform an uninformed exponential search into a tractable one. A good heuristic can reduce the effective branching factor from 40 (chess) to near 6, making the difference between a search that takes **\$10^{100}$ years** and one that finishes in **minutes**. Heuristics are the key insight that makes AI systems like DeepBlue, AlphaGo, and self-driving cars possible.
 
 ### Q3: What is the difference between completeness and optimality?
 

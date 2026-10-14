@@ -30,7 +30,7 @@ Anomaly detection flips the problem. Instead of learning what is abnormal, learn
 
 Not all anomalies are the same:
 
-- **Point anomalies.** A single data point that is unusual regardless of context. A temperature reading of 500 degrees. A transaction of $50,000 from an account that normally spends $50.
+- **Point anomalies.** A single data point that is unusual regardless of context. A temperature reading of 500 degrees. A transaction of \$50,000 from an account that normally spends \$50.
 - **Contextual anomalies.** A data point that is unusual given its context. A temperature of 90 degrees is normal in summer, anomalous in winter. Same value, different context.
 - **Collective anomalies.** A sequence of data points that is unusual as a group, even though each individual point might be normal. Five login failures is normal. Fifty in a row is a brute-force attack.
 
@@ -97,7 +97,7 @@ The default threshold is 3.0 (99.7% of normal data falls within 3 standard devia
 
 **When it works well:** Single-feature monitoring where data is roughly bell-shaped. Server response times, manufacturing tolerances, sensor readings with stable baselines.
 
-**When it fails:** Multi-cluster data (two office locations with different baseline temperatures), skewed data (transaction amounts where $1000 is rare but not anomalous), data with outliers in the training set.
+**When it fails:** Multi-cluster data (two office locations with different baseline temperatures), skewed data (transaction amounts where \$1000 is rare but not anomalous), data with outliers in the training set.
 
 ### IQR Method
 
@@ -410,7 +410,7 @@ The anomaly score is continuous. You need a threshold to make binary decisions. 
 
 Consider two scenarios:
 - **Fraud detection.** Missing fraud is expensive (chargebacks, customer trust). False alarms cost a human analyst 5 minutes to investigate. Set the threshold low to catch more fraud, accept more false alarms.
-- **Equipment maintenance.** A false alarm means an unnecessary shutdown costing $50,000. A missed failure means a $500,000 repair. Set the threshold to balance these costs.
+- **Equipment maintenance.** A false alarm means an unnecessary shutdown costing \$50,000. A missed failure means a \$500,000 repair. Set the threshold to balance these costs.
 
 In both cases, the optimal threshold depends on the cost ratio between false positives and false negatives. Plot precision and recall at different thresholds, overlay the cost function, and pick the minimum-cost point.
 

@@ -34,7 +34,7 @@ This lesson maps the three bets, the latency gap, the FinOps gap, and the lock-i
 
 ### Latency gap at scale
 
-Artificial Analysis runs continuous benchmarks. On equivalent Llama 3.1 405B deployments (shared on-demand), Azure OpenAI median first-token latency is around 50 ms; Bedrock is around 75 ms. The gap is not an AWS failure — it is a capacity model difference. Azure sells PTUs (Provisioned Throughput Units), which reserve GPU capacity for your tenant. Bedrock's equivalent (Provisioned Throughput) exists but starts around $21/hour per unit, and most customers stay on shared on-demand.
+Artificial Analysis runs continuous benchmarks. On equivalent Llama 3.1 405B deployments (shared on-demand), Azure OpenAI median first-token latency is around 50 ms; Bedrock is around 75 ms. The gap is not an AWS failure — it is a capacity model difference. Azure sells PTUs (Provisioned Throughput Units), which reserve GPU capacity for your tenant. Bedrock's equivalent (Provisioned Throughput) exists but starts around \$21/hour per unit, and most customers stay on shared on-demand.
 
 On-demand shared capacity competes with every other customer's traffic. Dedicated capacity does not. If your product SLA is TTFT < 100 ms at P99, you either buy PTUs on Azure, buy Bedrock Provisioned Throughput, or accept the default variance.
 
@@ -42,7 +42,7 @@ On-demand shared capacity competes with every other customer's traffic. Dedicate
 
 Azure PTUs: a reserved block of inference compute. Up to ~70% savings vs on-demand for predictable workloads. Costs fixed per hour regardless of traffic — you pay for the reservation even when idle. The break-even is usually around 40-60% sustained utilization.
 
-Bedrock Provisioned Throughput: $21-$50 per hour depending on model and region. Similar math — break-even is around half peak utilization. Monthly commitment required.
+Bedrock Provisioned Throughput: \$21-\$50 per hour depending on model and region. Similar math — break-even is around half peak utilization. Monthly commitment required.
 
 Vertex provisioned capacity is sold per Gemini SKU; pricing varies by model and region and is less publicly advertised.
 
@@ -74,7 +74,7 @@ All three meet the basic checkbox. The differences are in data retention policie
 
 - Azure OpenAI median TTFT on Llama 3.1 405B equivalents: ~50 ms (with PTUs).
 - Bedrock median TTFT on-demand: ~75 ms.
-- Bedrock Provisioned Throughput: $21-$50/hr per unit.
+- Bedrock Provisioned Throughput: \$21-\$50/hr per unit.
 - Azure PTU break-even: ~40-60% sustained utilization.
 - PTU savings vs on-demand at high utilization: up to 70%.
 

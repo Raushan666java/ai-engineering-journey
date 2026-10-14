@@ -543,7 +543,7 @@ console.log(`Compression ratio: ${(64 / k95).toFixed(1)}x`);
 
 ### Example 3: Eigenfaces ? Face Recognition via PCA
 
-The Eigenfaces method applies PCA to a database of face images. Each face image (e.g., $100 \times 100$ pixels = 10,000 dimensions) is flattened into a vector. PCA identifies the principal axes of the face space ? the "eigenfaces" ? which capture the most significant variations among faces (lighting, expression, facial hair, glasses).
+The Eigenfaces method applies PCA to a database of face images. Each face image (e.g., \$100 \times 100$ pixels = 10,000 dimensions) is flattened into a vector. PCA identifies the principal axes of the face space ? the "eigenfaces" ? which capture the most significant variations among faces (lighting, expression, facial hair, glasses).
 
 **Recognition pipeline**:
 1. Flatten all $m$ training face images into a matrix $X \in \mathbb{R}^{m \times p}$ where $p = \text{width} \times \text{height}$

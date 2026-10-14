@@ -372,7 +372,7 @@ c) Cautious optimism — recognising benefits while highlighting risks. The pass
 
 **Passage:**
 
-Climate finance has emerged as a critical pillar of global economic policy, with developing nations at the centre of the debate. India, as the world's third-largest emitter of greenhouse gases but also one of the most vulnerable countries to climate change, occupies a unique position in this discourse. The country has committed to achieving net-zero emissions by 2070 and has set ambitious targets of 500 GW of non-fossil fuel energy capacity by 2030. However, the transition to a low-carbon economy requires significant financial resources. Estimates by the Council on Energy, Environment and Water (CEEW) suggest that India needs approximately $10 trillion in climate finance by 2070 to meet its net-zero target. Currently, the gap between available and required climate finance is substantial. While developed countries have committed $100 billion annually to support climate action in developing nations, actual disbursements have fallen short. India has also launched its own initiatives, including sovereign green bonds and the National Adaptation Fund for Climate Change (NAFCC). The challenge lies not merely in mobilising resources but in ensuring their efficient deployment — projects must be bankable, and the financial mechanisms must be transparent and accountable.
+Climate finance has emerged as a critical pillar of global economic policy, with developing nations at the centre of the debate. India, as the world's third-largest emitter of greenhouse gases but also one of the most vulnerable countries to climate change, occupies a unique position in this discourse. The country has committed to achieving net-zero emissions by 2070 and has set ambitious targets of 500 GW of non-fossil fuel energy capacity by 2030. However, the transition to a low-carbon economy requires significant financial resources. Estimates by the Council on Energy, Environment and Water (CEEW) suggest that India needs approximately \$10 trillion in climate finance by 2070 to meet its net-zero target. Currently, the gap between available and required climate finance is substantial. While developed countries have committed \$100 billion annually to support climate action in developing nations, actual disbursements have fallen short. India has also launched its own initiatives, including sovereign green bonds and the National Adaptation Fund for Climate Change (NAFCC). The challenge lies not merely in mobilising resources but in ensuring their efficient deployment — projects must be bankable, and the financial mechanisms must be transparent and accountable.
 
 **Q9.** What is the main idea of the passage?
 
@@ -383,7 +383,7 @@ d) India should abandon its net-zero targets due to financial constraints
 
 <details>
 <summary>Answer</summary>
-b) Climate finance is essential for India's transition to net-zero, but there is a significant funding gap. The passage presents both the need ($10 trillion by 2070) and the gap (shortfall in disbursements). Options (a), (c), and (d) are all contradicted by the passage.
+b) Climate finance is essential for India's transition to net-zero, but there is a significant funding gap. The passage presents both the need (\$10 trillion by 2070) and the gap (shortfall in disbursements). Options (a), (c), and (d) are all contradicted by the passage.
 </details>
 
 ---
@@ -425,7 +425,7 @@ d) They exceed what is required
 
 <details>
 <summary>Answer</summary>
-b) They have been inadequate compared to what was promised. The passage states "actual disbursements have fallen short" of the $100 billion annual commitment, implying the author views the fulfilment as insufficient.
+b) They have been inadequate compared to what was promised. The passage states "actual disbursements have fallen short" of the \$100 billion annual commitment, implying the author views the fulfilment as insufficient.
 </details>
 
 ---

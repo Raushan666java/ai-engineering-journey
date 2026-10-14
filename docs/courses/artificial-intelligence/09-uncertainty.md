@@ -141,7 +141,7 @@ function BAYES-RULE-MARGINALIZE(Prior, LikelihoodFunc, hypotheses) returns poste
 | 2 | Prior $P(D)$ | 0.001 | Disease prevalence |
 | 3 | Likelihood $P(Pos \mid D)$ | 0.99 | Test sensitivity |
 | 4 | $P(Pos) = 0.99 \times 0.001 + 0.02 \times 0.999$ | 0.02097 | Marginalization over D and ¬D |
-| 5 | Numerator $0.99 \times 0.001$ | 0.00099 | Likelihood × Prior |
+| 5 | Numerator \$0.99 \times 0.001$ | 0.00099 | Likelihood × Prior |
 | 6 | Posterior $P(D \mid Pos)$ | 0.00099 / 0.02097 ≈ 0.0472 | Only 4.72% despite positive test! |
 
 **Key insight:** The disease is so rare that even a 98% accurate test produces mostly false positives.
@@ -600,10 +600,10 @@ function ENUMERATE-ALL(vars, assignment, evidence) returns probability
 
 | E | A | P(B=1) | P(E) | P(A\|B,E) | P(J\|A) | P(M\|A) | Product |
 |---|---|--------|------|-----------|---------|---------|---------|
-| F | F | 0.001 | 0.998 | 0.06 | 0.05 | 0.01 | $2.99\times10^{-7}$ |
-| F | T | 0.001 | 0.998 | 0.94 | 0.90 | 0.70 | $5.907\times10^{-4}$ |
-| T | F | 0.001 | 0.002 | 0.05 | 0.05 | 0.01 | $5.0\times10^{-11}$ |
-| T | T | 0.001 | 0.002 | 0.95 | 0.90 | 0.70 | $1.197\times10^{-6}$ |
+| F | F | 0.001 | 0.998 | 0.06 | 0.05 | 0.01 | \$2.99\times10^{-7}$ |
+| F | T | 0.001 | 0.998 | 0.94 | 0.90 | 0.70 | \$5.907\times10^{-4}$ |
+| T | F | 0.001 | 0.002 | 0.05 | 0.05 | 0.01 | \$5.0\times10^{-11}$ |
+| T | T | 0.001 | 0.002 | 0.95 | 0.90 | 0.70 | \$1.197\times10^{-6}$ |
 
 $P(B=1, J=1, M=1) \approx 5.921\times10^{-4}$
 

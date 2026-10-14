@@ -1294,7 +1294,7 @@ async def create_order(order_data: dict):
     async with db.transaction():
         order_id = await db.execute("INSERT INTO orders ...", order_data)
         await db.execute(
-            "INSERT INTO outbox (event_type, payload, created_at) VALUES ($1, $2, $3)",
+            "INSERT INTO outbox (event_type, payload, created_at) VALUES (\$1, \$2, \$3)",
             "order.created",
             json.dumps({"order_id": order_id}),
             datetime.utcnow()
@@ -1309,7 +1309,7 @@ async def outbox_publisher():
         for msg in messages:
             try:
                 await message_bus.publish(msg.event_type, json.loads(msg.payload))
-                await db.execute("UPDATE outbox SET published = TRUE WHERE id = $1", msg.id)
+                await db.execute("UPDATE outbox SET published = TRUE WHERE id = \$1", msg.id)
             except Exception:
                 log.error(f"Failed to publish message {msg.id}")
         await asyncio.sleep(1)</code></pre>
@@ -1344,14 +1344,14 @@ def backfill_full_name(db, batch_size: int = 1000):
     last_id = 0
     while True:
         users = db.fetch(
-            "SELECT id, first_name, last_name FROM users WHERE id &gt; $1 ORDER BY id LIMIT $2",
+            "SELECT id, first_name, last_name FROM users WHERE id &gt; \$1 ORDER BY id LIMIT \$2",
             last_id, batch_size
         )
         if not users:
             break
         for user in users:
             db.execute(
-                "UPDATE users SET full_name = $1 WHERE id = $2",
+                "UPDATE users SET full_name = \$1 WHERE id = \$2",
                 f"{user['first_name']} {user['last_name']}",
                 user['id']
             )

@@ -25,7 +25,7 @@
 - Handwritten annotations.
 - Fonts and typography (title vs body).
 
-Raw OCR dumps the text and loses the rest. A system that cares about invoices needs to know "Total: $1,245" came from the bottom-right, not from a footnote.
+Raw OCR dumps the text and loses the rest. A system that cares about invoices needs to know "Total: \$1,245" came from the bottom-right, not from a footnote.
 
 ## The Concept
 

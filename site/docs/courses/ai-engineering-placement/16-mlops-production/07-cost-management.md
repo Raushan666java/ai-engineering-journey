@@ -823,7 +823,7 @@ identical inputs, (2) Partial cache for model ensembles (cache sub-model outputs
     Q6: How do you set up budget governance for ML experiments?
   </summary>
   <div class="tp-qa-answer">
-    <p>Implement a BudgetEnforcer that checks estimated cost against remaining budget before each run. Auto-approve small experiments ($<100), require manager approval for medium ($100-$1000), and require executive approval for large (>$1000). Alert at 50%, 75%, 90%, 100% utilization. Enforce hard limits at the cloud account level using budgets and quotas.</p>
+    <p>Implement a BudgetEnforcer that checks estimated cost against remaining budget before each run. Auto-approve small experiments ($<100), require manager approval for medium (\$100-\$1000), and require executive approval for large (>\$1000). Alert at 50%, 75%, 90%, 100% utilization. Enforce hard limits at the cloud account level using budgets and quotas.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -835,7 +835,7 @@ identical inputs, (2) Partial cache for model ensembles (cache sub-model outputs
     Q7: How do you estimate LLM API costs for a production application?
   </summary>
   <div class="tp-qa-answer">
-    <p>Formula: monthly_cost = requests_per_month — (input_tokens/1000 — input_price + output_tokens/1000 — output_price). Example: GPT-4 with 500 input + 200 output tokens at 1M requests/month = $27,000/month. Optimize by: (1) using smaller models for simpler tasks, (2) caching common prompts, (3) prompt compression techniques, (4) batching requests where possible.</p>
+    <p>Formula: monthly_cost = requests_per_month — (input_tokens/1000 — input_price + output_tokens/1000 — output_price). Example: GPT-4 with 500 input + 200 output tokens at 1M requests/month = \$27,000/month. Optimize by: (1) using smaller models for simpler tasks, (2) caching common prompts, (3) prompt compression techniques, (4) batching requests where possible.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -847,7 +847,7 @@ identical inputs, (2) Partial cache for model ensembles (cache sub-model outputs
     Q8: What is the cost impact of data storage lifecycle management?
   </summary>
   <div class="tp-qa-answer">
-    <p>Storage classes: Standard ($0.023/GB) for hot data, Infrequent Access ($0.0125/GB) for monthly access, Archive ($0.001/GB) for long-term compliance. Lifecycle policies automatically transition data: 30 days → IA, 90 days → Archive. For a 10TB dataset, this reduces monthly storage from $230 to ~$30 after 90 days.</p>
+    <p>Storage classes: Standard (\$0.023/GB) for hot data, Infrequent Access (\$0.0125/GB) for monthly access, Archive (\$0.001/GB) for long-term compliance. Lifecycle policies automatically transition data: 30 days → IA, 90 days → Archive. For a 10TB dataset, this reduces monthly storage from \$230 to ~\$30 after 90 days.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -927,7 +927,7 @@ d) 100%
 
 **Medium** — Create an InferenceCostOptimizer that calculates savings from caching (given hit rate) and batching (given batch size).
 
-**Hard** — Implement a BudgetEnforcer with monthly budget, threshold alerts at 50/75/90/100%, and auto-approve for costs under $100.
+**Hard** — Implement a BudgetEnforcer with monthly budget, threshold alerts at 50/75/90/100%, and auto-approve for costs under \$100.
 
 **Hard** — Build a TeamCostDashboard that aggregates costs per team/project and generates comparison bar charts.
 

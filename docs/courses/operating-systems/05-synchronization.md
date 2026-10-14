@@ -44,7 +44,7 @@ A **race condition** occurs when multiple processes or threads access shared dat
 
 ### Real-World Analogy
 
-**Bank Account Withdrawal by Two ATMs**: Imagine a joint bank account with a balance of $1000. Two ATMs process simultaneous withdrawals of $800 each.
+**Bank Account Withdrawal by Two ATMs**: Imagine a joint bank account with a balance of \$1000. Two ATMs process simultaneous withdrawals of \$800 each.
 
 ```
 ATM 1 (left)                    ATM 2 (right)
@@ -54,7 +54,7 @@ ATM 1 (left)                    ATM 2 (right)
 └── Dispense cash               └── Dispense cash
 ```
 
-**Result**: Both ATMs dispense $800, but the final balance is $200 instead of -$600. The bank lost $600 because each ATM read the balance before the other wrote its update. This is a race condition in the real world.
+**Result**: Both ATMs dispense \$800, but the final balance is \$200 instead of -\$600. The bank lost \$600 because each ATM read the balance before the other wrote its update. This is a race condition in the real world.
 
 ### Numbered Steps of a Race Condition
 
@@ -749,7 +749,7 @@ def worker():
 
 ### Real-World Analogy
 
-**Vending Machine Coin Slot**: The machine checks: "Is the coin exactly $1? If yes, accept it and dispense a soda. If not, reject it." The check-and-accept must be atomic — otherwise someone could trick it with a half-accepted coin.
+**Vending Machine Coin Slot**: The machine checks: "Is the coin exactly \$1? If yes, accept it and dispense a soda. If not, reject it." The check-and-accept must be atomic — otherwise someone could trick it with a half-accepted coin.
 
 ### Numbered Steps
 

@@ -155,7 +155,7 @@ Orders of magnitude matter. We compute storage, bandwidth, and QPS before choosi
 - 1M pastes/day × 10KB avg = 10GB/day raw content
 - 30 days × 10GB = 300GB hot storage
 - Metadata: 1M × 1KB = 1GB/day ? 30GB/month
-- Object store (S3) costs: ~$23/TB/month for standard tier
+- Object store (S3) costs: ~\$23/TB/month for standard tier
 - Transition infrequent-access pastes to S3 Glacier after 30 days
 - CDN: cache popular pastes (Pareto: 10% of pastes serve 90% of reads)
 
@@ -364,7 +364,7 @@ Expiry logic uses a TTL column in PostgreSQL and a background worker. The worker
 S3 lifecycle policies automate storage tier transitions:
 - Days 0-30: S3 Standard (frequent access)
 - Days 31-90: S3 Infrequent Access (IA, lower storage cost)
-- Days 91-365: S3 Glacier (archival, ~$1/TB/month)
+- Days 91-365: S3 Glacier (archival, ~\$1/TB/month)
 - After 365: S3 Glacier Deep Archive or deletion
 
 The syntax highlighting pipeline processes pastes asynchronously. When a paste is created, the language is auto-detected (or specified by the user). A background worker runs a syntax highlighter (Pygments or highlight.js server-side) and stores the rendered HTML alongside the raw text. This pre-rendered HTML is served directly to clients, avoiding client-side processing.
@@ -822,7 +822,7 @@ Second, they implement a multi-tier read path. L1 is a local LRU cache (10MB, ~5
 
 Third, they deploy a click analytics pipeline using Kafka → ClickHouse. Each redirect publishes a small event to Kafka (short key, timestamp, referrer, user-agent, geo-IP). A ClickHouse consumer batch-inserts events every 5 seconds. Dashboard queries aggregate over 7-day windows with sub-second response times. The entire pipeline adds less than 2ms to the redirect path, and ClickHouse compresses the event stream to 0.5 bytes per event — storing 1 billion clicks/day in under 500MB.
 
-The system handles 3,500 writes/second and 35,000 reads/second at peak with P99 redirect latency under 8ms. Monthly infrastructure cost is $45,000 (vs $280,000 estimated for a naive single-database design).
+The system handles 3,500 writes/second and 35,000 reads/second at peak with P99 redirect latency under 8ms. Monthly infrastructure cost is \$45,000 (vs \$280,000 estimated for a naive single-database design).
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 
 | Concept | Definition | Key Insight |

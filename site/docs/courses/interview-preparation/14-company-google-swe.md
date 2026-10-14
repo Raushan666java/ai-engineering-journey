@@ -991,7 +991,7 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 
 ### Q9: Describe a time you improved a process or system significantly. (Impact)
 
-**Strategy:** Quantify everything. "I improved performance by 50%" is good. "I reduced P95 latency from 2.3s to 450ms by implementing connection pooling and adding a Redis cache layer, saving $12k/month in compute costs" is better.
+**Strategy:** Quantify everything. "I improved performance by 50%" is good. "I reduced P95 latency from 2.3s to 450ms by implementing connection pooling and adding a Redis cache layer, saving \$12k/month in compute costs" is better.
 
 ### Q10: Why Google? What would you work on here? (Motivation)
 

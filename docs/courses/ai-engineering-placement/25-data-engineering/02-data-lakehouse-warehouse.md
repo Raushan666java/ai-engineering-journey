@@ -153,7 +153,7 @@ print(reloaded[["event_id", "event_type"]].head())
 
 | Pros | Cons |
 |------|------|
-| Cheap storage (S3 ~$23/TB/month) | No ACID transactions |
+| Cheap storage (S3 ~\$23/TB/month) | No ACID transactions |
 | Schema flexibility | Can become data swamp |
 | Store any format | Poor read performance for analytics |
 | Raw data preserved | No indexing or statistics |
@@ -217,7 +217,7 @@ wh.create_table("date_dim", {
 
 | Pros | Cons |
 |------|------|
-| ACID transactions | High storage cost (~$1000/TB/month) |
+| ACID transactions | High storage cost (~\$1000/TB/month) |
 | SQL optimization | Schema changes are expensive |
 | Fast query performance | Can't store raw/unstructured data |
 | Built-in governance | Requires ETL to load |

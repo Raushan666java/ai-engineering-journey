@@ -866,7 +866,7 @@ signature, and issuer on every request.</p>
     Q3: How do you implement usage-based billing with Stripe for an AI SaaS?
   </summary>
   <div class="tp-qa-answer">
-<p>Stripe usage-based billing: (1) Product setup — create products in Stripe (Free, Starter $29/mo, Pro $99/mo, Enterprise custom). Each has a base price and.
+<p>Stripe usage-based billing: (1) Product setup — create products in Stripe (Free, Starter \$29/mo, Pro \$99/mo, Enterprise custom). Each has a base price and.
 usage meters (e.g., "tokens_used"). (2) Usage tracking — on each API request, increment the tenant's usage counter in your database. Periodically (every hour or.
 daily), report usage to Stripe using `stripe.subscriptionItems.createUsageRecord()`. (3) Metered billing — Stripe calculates overage charges automatically based on the usage recorded. (4) Tiered plans — Free (1000 tokens/day),.
 Starter (10K tokens/day), Pro (100K tokens/day), Enterprise (custom). Track daily consumption and return 429 (Too Many Requests) when limit is exceeded. (5) Webhooks — listen for.

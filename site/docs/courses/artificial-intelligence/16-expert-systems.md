@@ -2124,7 +2124,7 @@ Choose ML when:
 | **Architecture** | Forward chaining with Rete algorithm |
 | **Input** | Customer order (CPU, memory, peripherals) |
 | **Output** | Complete system configuration with cabling, power, and layout |
-| **Impact** | Saved DEC $40M/year; configured 80,000+ systems; 95-98% first-time correct |
+| **Impact** | Saved DEC \$40M/year; configured 80,000+ systems; 95-98% first-time correct |
 
 **How XCON worked:**
 1. Check if order components are compatible (CPU matches motherboard)
@@ -2139,7 +2139,7 @@ Choose ML when:
 
 | System | Domain | Rules | Impact |
 |--------|--------|-------|--------|
-| **PROSPECTOR** | Mineral exploration | ~1,600 | Predicted molybdenum deposit worth $100M |
+| **PROSPECTOR** | Mineral exploration | ~1,600 | Predicted molybdenum deposit worth \$100M |
 | **PUFF** | Pulmonary function diagnosis | ~55 | Analyzed lab test results; deployed for years |
 | **CADUCEUS** | Internal medicine | ~4,000 | More comprehensive than MYCIN (never completed) |
 | **SALT** | Engineering design | ~3,000 | Designed VAX systems (complement to XCON) |
@@ -2330,7 +2330,7 @@ THEN diagnosis = meningitis
 | MYCIN | Infectious disease diagnosis | Backward chaining | Certainty factors | ~500 | Historical (influential) |
 | DENDRAL | Mass spectrometry analysis | Plan-generate-test | None | ~100 | First ES (1969) |
 | XCON/R1 | Computer configuration | Forward chaining (Rete) | None | ~10,000 | Deployed 1980s-90s |
-| PROSPECTOR | Mineral exploration | Forward/backward | Bayesian | ~1,600 | Predicted $100M deposit |
+| PROSPECTOR | Mineral exploration | Forward/backward | Bayesian | ~1,600 | Predicted \$100M deposit |
 | CLIPS | General purpose | Forward+backward+Rete | Programmable | User-defined | Open source (NASA) |
 | Prolog | Logic programming | Backward chaining (SLD resolution) | None | User-defined | General-purpose language |
 
@@ -2415,11 +2415,11 @@ THEN diagnosis = meningitis
 
 **Q8:** What was the significance of XCON/R1?
 - A) First medical expert system
-- B) First commercially successful expert system — saved DEC $40M/year configuring VAX computers
+- B) First commercially successful expert system — saved DEC \$40M/year configuring VAX computers
 - C) First system to use neural networks
 - D) First system for chemical analysis
 
-<details><summary>Answer&lt;/summary&gt;B) XCON (R1) was DEC's expert system for configuring VAX computers. With ~10,000 rules, it reduced configuration errors from 35% to 2% and saved $40M annually.</details>
+<details><summary>Answer&lt;/summary&gt;B) XCON (R1) was DEC's expert system for configuring VAX computers. With ~10,000 rules, it reduced configuration errors from 35% to 2% and saved \$40M annually.</details>
 
 **Q9:** Which of the following is NOT a knowledge acquisition method?
 - A) Protocol analysis

@@ -109,7 +109,7 @@ For prediction:
 ```
 
 **Properties**:
-- Each bootstrap sample contains ~63.2% of unique training points ($1 - 1/e$)
+- Each bootstrap sample contains ~63.2% of unique training points (\$1 - 1/e$)
 - The remaining ~36.8% are **out-of-bag (OOB)** samples ? used for free validation
 - Bagging primarily reduces **variance** without increasing bias
 - Works best with high-variance base learners (deep decision trees)

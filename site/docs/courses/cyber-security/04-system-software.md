@@ -1720,7 +1720,7 @@ SUMMARY: AddressSanitizer: stack-buffer-overflow vuln.c:9 in vulnerable
 - 18,000 organizations received trojanized update
 - ~100 organizations compromised (secondary stage)
 - Victims: US Treasury, Commerce, Energy, DHS, DOJ, fireEye, Microsoft
-- Estimated cost: $100M+ for response
+- Estimated cost: \$100M+ for response
 
 **Lessons:**
 - Code signing ≠ trust
@@ -1768,12 +1768,12 @@ SUMMARY: AddressSanitizer: stack-buffer-overflow vuln.c:9 in vulnerable
 - Disabled Windows recovery: `bcdedit /set {default} recoveryenabled No`
 
 **Impact:**
-- $10B+ total damages
-- Maersk (global shipping): $1.4B damage, 49,000+ computers wiped
+- \$10B+ total damages
+- Maersk (global shipping): \$1.4B damage, 49,000+ computers wiped
 - Replaced all 4,000 servers, 45,000 PCs, 2,500 applications in 10 days
-- Merck (pharma): $870M damage, halted vaccine production
-- FedEx subsidiary TNT Express: $300M damage
-- Total losses: >$10B (most damaging cyberattack at the time)
+- Merck (pharma): \$870M damage, halted vaccine production
+- FedEx subsidiary TNT Express: \$300M damage
+- Total losses: >\$10B (most damaging cyberattack at the time)
 
 **Why It Was a Wiper (Not Ransomware):**
 - Payment mechanism was broken: email provider was taken down
@@ -1883,7 +1883,7 @@ int hooked_ReadS7Block(int blockNum, void *buffer) {
 | Nov 3, 1988 | MIT and UC Berkeley teams begin reverse-engineering |
 | Nov 4, 1988 | Decompiled and shared; kill procedures developed |
 | 1990 | Morris convicted under Computer Fraud and Abuse Act |
-| 1991 | Sentenced: 3 years probation, 400 hours community service, $10,050 fine |
+| 1991 | Sentenced: 3 years probation, 400 hours community service, \$10,050 fine |
 
 **Technical Breakdown:**
 
@@ -1925,7 +1925,7 @@ int should_infect() {
 
 **Impact:**
 - 6,000 of ~60,000 internet-connected systems infected (10%)
-- Estimated $100K-$10M in damages (system downtime, cleanup)
+- Estimated \$100K-\$10M in damages (system downtime, cleanup)
 - Led to:
   - Creation of CERT/CC (Computer Emergency Response Team Coordination Center)
   - First conviction under CFAA

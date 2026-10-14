@@ -14,15 +14,15 @@ When building an LLM application that needs to control costs, apply this decisio
 ## When to optimize
 
 **Optimize immediately when:**
-- Monthly LLM spend exceeds $500 or 10% of infrastructure budget
-- Cost per query is above $0.01 for a consumer product
+- Monthly LLM spend exceeds \$500 or 10% of infrastructure budget
+- Cost per query is above \$0.01 for a consumer product
 - Your system prompt is over 1,000 tokens and sent with every request
 - More than 30% of queries are duplicates or near-duplicates
 - You are scaling from 100 to 10,000+ daily users
 
 **Do not optimize yet when:**
 - You have fewer than 100 DAU and are still validating product-market fit
-- Monthly spend is under $100 and growing slowly
+- Monthly spend is under \$100 and growing slowly
 - You are still iterating on prompt design (caching locks you into a prompt)
 
 ## Caching strategy selection
@@ -92,7 +92,7 @@ Embed 50-100 labeled queries per category. Classify new queries by nearest neigh
 - Implementation: 4-8 hours
 - Accuracy: 85-92%
 - Savings: 50-70% of model costs
-- Additional cost: ~$0.02/1M tokens for classification embeddings (negligible)
+- Additional cost: ~\$0.02/1M tokens for classification embeddings (negligible)
 
 ### ML-based (production grade)
 
@@ -183,12 +183,12 @@ Log every API call with these fields:
 
 | Model | Input ($/1M) | Output ($/1M) | Cached Input ($/1M) | Best For |
 |-------|-------------|--------------|--------------------|---------| 
-| gpt-4.1-nano | $0.10 | $0.40 | $0.025 | High-volume simple tasks |
-| gpt-4o-mini | $0.15 | $0.60 | $0.075 | Simple routing, classification |
-| gemini-2.5-flash | $0.15 | $0.60 | $0.0375 | Budget multimodal |
-| claude-haiku-3.5 | $0.80 | $4.00 | $0.08 | Fast mid-tier tasks |
-| o4-mini | $1.10 | $4.40 | $0.275 | Reasoning on a budget |
-| gemini-2.5-pro | $1.25 | $10.00 | $0.3125 | Long context, multimodal |
-| gpt-4o | $2.50 | $10.00 | $1.25 | General purpose, function calling |
-| claude-sonnet-4 | $3.00 | $15.00 | $0.30 | Balanced quality/cost |
-| claude-opus-4 | $15.00 | $75.00 | $1.50 | Maximum quality, complex reasoning |
+| gpt-4.1-nano | \$0.10 | \$0.40 | \$0.025 | High-volume simple tasks |
+| gpt-4o-mini | \$0.15 | \$0.60 | \$0.075 | Simple routing, classification |
+| gemini-2.5-flash | \$0.15 | \$0.60 | \$0.0375 | Budget multimodal |
+| claude-haiku-3.5 | \$0.80 | \$4.00 | \$0.08 | Fast mid-tier tasks |
+| o4-mini | \$1.10 | \$4.40 | \$0.275 | Reasoning on a budget |
+| gemini-2.5-pro | \$1.25 | \$10.00 | \$0.3125 | Long context, multimodal |
+| gpt-4o | \$2.50 | \$10.00 | \$1.25 | General purpose, function calling |
+| claude-sonnet-4 | \$3.00 | \$15.00 | \$0.30 | Balanced quality/cost |
+| claude-opus-4 | \$15.00 | \$75.00 | \$1.50 | Maximum quality, complex reasoning |

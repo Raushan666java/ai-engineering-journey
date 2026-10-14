@@ -334,7 +334,7 @@ The choice between open-weight and closed-source foundation models is one of the
 | **Customization** | Limited to prompt engineering, function calling | Full fine-tuning, architecture modification, pruning |
 | **Data Privacy** | Data sent to external servers | Data stays on own infrastructure |
 | **Cost at low volume** | Pay-per-token, no upfront | Free for < 70B models |
-| **Cost at high volume** | Expensive ($0.01–$0.03/1K output tokens) | Hardware cost only (~$1/hr for 70B on A100) |
+| **Cost at high volume** | Expensive (\$0.01–\$0.03/1K output tokens) | Hardware cost only (~\$1/hr for 70B on A100) |
 | **Latency** | Managed infrastructure, predictable | Variable based on hardware, can be optimized |
 | **Vendor Lock-in** | High — API changes, deprecation risk | None — full control over deployment |
 | **Licensing** | Proprietary — outputs may have restrictions | Varied — Apache 2.0 (Llama), MIT (Mistral), custom (DeepSeek) |
@@ -348,7 +348,7 @@ The choice between open-weight and closed-source foundation models is one of the
 |----------|-------------|-----------|
 | Prototyping an MVP | Closed API | Fastest time-to-value, no infrastructure |
 | Processing sensitive health data | Open, self-hosted | HIPAA compliance, data never leaves network |
-| High-volume customer-facing chat | Open, self-hosted | Cost-effective at scale ($0.001/query vs $0.05/query) |
+| High-volume customer-facing chat | Open, self-hosted | Cost-effective at scale (\$0.001/query vs \$0.05/query) |
 | State-of-the-art reasoning | Closed (GPT-5) | Currently ~5-10% better on complex reasoning |
 | Specialized domain (legal, medical) | Open, fine-tuned | Domain-specific fine-tuning improves accuracy 15-30% |
 | On-device or edge deployment | Open, quantized (Llama 4 8B) | Small footprint, no network dependency |
@@ -924,7 +924,7 @@ You are building a financial analysis application that processes quarterly earni
 - Structured output generation (table format)
 - High accuracy required (financial risk)
 - Latency: 30 seconds acceptable (not real-time)
-- Cost: Moderate budget (~$5K/month)
+- Cost: Moderate budget (~\$5K/month)
 
 **Scored Comparison:**
 
@@ -941,7 +941,7 @@ You are building a financial analysis application that processes quarterly earni
 **Recommendation:**
 - **Primary**: DeepSeek V4 for cost efficiency and self-hosting for financial data privacy
 - **Fallback**: Claude 4 for highest accuracy on complex numerical reasoning when needed
-- **Cost projection at 50K queries/month**: DeepSeek V4 ≈ $200/month, Claude 4 ≈ $4,500/month
+- **Cost projection at 50K queries/month**: DeepSeek V4 ≈ \$200/month, Claude 4 ≈ \$4,500/month
 </details>
 
 **Exercise 3**

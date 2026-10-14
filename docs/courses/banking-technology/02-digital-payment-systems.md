@@ -1234,7 +1234,7 @@ flowchart LR
 
 #### 15.1 UPI Growth Statistics (2024-2026)
 
-- **2024:** UPI processed 131 billion transactions worth Rs. 199.6 lakh crore (approx. $2.4 trillion). Monthly volume crossed 13 billion transactions in December 2024.
+- **2024:** UPI processed 131 billion transactions worth Rs. 199.6 lakh crore (approx. \$2.4 trillion). Monthly volume crossed 13 billion transactions in December 2024.
 - **2025:** UPI crossed 15 billion transactions per month mark. Average daily transactions exceeded 500 million. Total value crossed Rs. 300 lakh crore for the year.
 - **2026 (projected):** UPI expected to reach 20 billion monthly transactions. NPCI targets 1 billion daily transactions by end of 2026.
 

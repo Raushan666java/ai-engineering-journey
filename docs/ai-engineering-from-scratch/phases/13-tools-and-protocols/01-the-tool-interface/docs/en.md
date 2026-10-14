@@ -88,7 +88,7 @@ Phase 13 · 02 walks the three provider APIs side by side. Phase 13 · 04 goes d
 
 The loop terminates when the model stops emitting calls or the host hits a maximum turn count. Production hosts set this to between 5 and 20 turns. Beyond that, you are almost certainly in a loop the model cannot exit. Claude Code defaults to 20; OpenAI Assistants to 10; Cursor's agent mode to 25.
 
-The alternative — unbounded loops — shows up every six months as "agent spent $400 in API calls overnight" post-mortems. Do not ship without a bound.
+The alternative — unbounded loops — shows up every six months as "agent spent \$400 in API calls overnight" post-mortems. Do not ship without a bound.
 
 Phase 14 · 12 covers error recovery and self-healing in depth; Phase 17 covers production rate limits.
 

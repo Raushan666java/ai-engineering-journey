@@ -1,6 +1,6 @@
 # A/B Testing LLM Features — GrowthBook, Statsig, and the Vibes Problem
 
-> Traditional A/B testing was not built for non-deterministic LLMs. The critical distinction: evals answer "can the model do the job?" A/B tests answer "do users care?" Both are required; shipping on vibe checks is over. What to test in 2026: prompt engineering (wording), model selection (GPT-4 vs GPT-3.5 vs OSS; accuracy vs cost vs latency), generation parameters (temperature, top-p). Real cases: a chatbot reward-model variant delivered +70% conversation length and +30% retention; Nextdoor AI subject-line experiments delivered +1% CTR after reward-function refinement; Khan Academy Khanmigo iterated on a latency-vs-math-accuracy axis. Platform split: **Statsig** (acquired by OpenAI for $1.1B in September 2025) — sequential testing, CUPED, all-in-one. **GrowthBook** — open-source, warehouse-native, Bayesian + Frequentist + Sequential engines, CUPED, SRM checks, Benjamini-Hochberg + Bonferroni corrections. You pick based on warehouse-SQL preference and whether "acquired by OpenAI" matters to your organization.
+> Traditional A/B testing was not built for non-deterministic LLMs. The critical distinction: evals answer "can the model do the job?" A/B tests answer "do users care?" Both are required; shipping on vibe checks is over. What to test in 2026: prompt engineering (wording), model selection (GPT-4 vs GPT-3.5 vs OSS; accuracy vs cost vs latency), generation parameters (temperature, top-p). Real cases: a chatbot reward-model variant delivered +70% conversation length and +30% retention; Nextdoor AI subject-line experiments delivered +1% CTR after reward-function refinement; Khan Academy Khanmigo iterated on a latency-vs-math-accuracy axis. Platform split: **Statsig** (acquired by OpenAI for \$1.1B in September 2025) — sequential testing, CUPED, all-in-one. **GrowthBook** — open-source, warehouse-native, Bayesian + Frequentist + Sequential engines, CUPED, SRM checks, Benjamini-Hochberg + Bonferroni corrections. You pick based on warehouse-SQL preference and whether "acquired by OpenAI" matters to your organization.
 
 **Type:** Learn
 **Languages:** Python (stdlib, toy sequential test simulator)
@@ -57,7 +57,7 @@ Assignment hash randomizes users to variants. If 50/50 split delivers 47/53, som
 ### Statsig vs GrowthBook
 
 **Statsig**:
-- Acquired by OpenAI for $1.1B (September 2025). Hosted, SaaS.
+- Acquired by OpenAI for \$1.1B (September 2025). Hosted, SaaS.
 - Sequential testing, CUPED, held-out populations.
 - All-in-one: feature flags + experimentation + observability.
 - Best fit: team already wants a bundled product, doesn't care about OpenAI ownership.
@@ -85,7 +85,7 @@ Every senior engineer can name a feature that was shipped because "it feels bett
 
 ### Numbers you should remember
 
-- Statsig acquired by OpenAI: $1.1B, September 2025.
+- Statsig acquired by OpenAI: \$1.1B, September 2025.
 - GrowthBook: open-source MIT; Bayesian + Frequentist + Sequential.
 - CUPED variance reduction: 30-70%.
 - LLM non-determinism → +30-50% sample-size buffer.

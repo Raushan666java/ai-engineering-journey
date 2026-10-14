@@ -318,7 +318,7 @@ A 3?3 matrix:
 
 ### Example 7: Counting Rectangles in a Grid
 
-Find the number of rectangles in a $3 \times 4$ grid.
+Find the number of rectangles in a \$3 \times 4$ grid.
 
 **Solution:**
 Formula: $\frac{m(m+1)}{2} \times \frac{n(n+1)}{2}$

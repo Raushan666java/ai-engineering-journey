@@ -1073,7 +1073,7 @@ FUNCTION audit_model_for_bias(model, test_data, sensitive_attributes, metric):
 | **Problem Type** | Is this classification, regression, clustering, or generation? |
 | **Label Quality** | Are labels clean (99%+) or noisy (80-90%)? |
 | **Offline vs Online** | Can scoring happen overnight, or must it be real-time? |
-| **Budget** | How much can I spend per prediction ($0.01, $0.001, $0.0001)? |
+| **Budget** | How much can I spend per prediction (\$0.01, \$0.001, \$0.0001)? |
 
 ## 1.8 Environment Setup
 

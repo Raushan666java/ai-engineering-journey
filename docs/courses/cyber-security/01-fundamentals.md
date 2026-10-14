@@ -392,7 +392,7 @@ SECURE:
 
 **Definition:** No single entity should have complete control over a critical process. Split critical operations across multiple parties.
 
-**Real-World Analogy: A bank** requires two signatures on checks over $10,000. One employee cannot unilaterally move large sums.
+**Real-World Analogy: A bank** requires two signatures on checks over \$10,000. One employee cannot unilaterally move large sums.
 
 **Examples in Security:**
 | Scenario | Single Entity (Violation) | Separated (Compliant) |
@@ -599,12 +599,12 @@ Goal: [Exfiltrate Customer Database]
 
 | Leaf Node | Skill Required | Cost | Probability | Detectable? |
 |-----------|---------------|------|-------------|-------------|
-| SQL injection on /api/users | Medium | $0 | 0.3 | Low (payload blends with normal traffic) |
-| Bypass WAF | High | $500 | 0.2 | Medium (WAF logs show bypass attempts) |
-| SSH brute force | Medium | $50 | 0.1 | High (failed SSH logs trigger alert) |
-| Read config file | Low | $0 | 0.8 | Medium (file access audit logs) |
-| Phish DBA | High | $200 | 0.15 | Low (user falls for it, no technical alert) |
-| Physical access | Very High | $5000 | 0.01 | Very High (badge logs, cameras, guards) |
+| SQL injection on /api/users | Medium | \$0 | 0.3 | Low (payload blends with normal traffic) |
+| Bypass WAF | High | \$500 | 0.2 | Medium (WAF logs show bypass attempts) |
+| SSH brute force | Medium | \$50 | 0.1 | High (failed SSH logs trigger alert) |
+| Read config file | Low | \$0 | 0.8 | Medium (file access audit logs) |
+| Phish DBA | High | \$200 | 0.15 | Low (user falls for it, no technical alert) |
+| Physical access | Very High | \$5000 | 0.01 | Very High (badge logs, cameras, guards) |
 
 **AND/OR Probability Propagation:**
 ```
@@ -682,7 +682,7 @@ Uses descriptive scales (Low, Medium, High) rather than monetary values. Best wh
 |--------|-------------|---------|
 | Very Low (1) | Negligible effect | Single non-sensitive public record exposed |
 | Low (2) | Minor disruption | Brief service degradation (< 1 hour) |
-| Medium (3) | Moderate damage | Customer data exposed, regulatory fine &lt; $100K |
+| Medium (3) | Moderate damage | Customer data exposed, regulatory fine &lt; \$100K |
 | High (4) | Major damage | Widespread breach, significant fines, media coverage |
 | Very High (5) | Catastrophic | Business failure, regulatory action, loss of life |
 
@@ -713,12 +713,12 @@ Uses monetary values, statistical probabilities, and actuarial math.
 
 | Metric | Formula | Meaning | Example |
 |--------|---------|---------|---------|
-| AV | Asset Value | Replacement cost + data value | $2,000,000 |
+| AV | Asset Value | Replacement cost + data value | \$2,000,000 |
 | EF | Exposure Factor | % of asset lost per incident | 0.4 (40%) |
-| SLE | AV x EF | Single Loss Expectancy | $800,000 |
+| SLE | AV x EF | Single Loss Expectancy | \$800,000 |
 | ARO | Annual Rate of Occurrence | Expected frequency per year | 0.2 (once per 5 years) |
-| ALE | SLE x ARO | Annual Loss Expectancy | $160,000 |
-| ROSI | (ALE_old - ALE_new) - Cost | Return on Security Investment | $114,000 |
+| ALE | SLE x ARO | Annual Loss Expectancy | \$160,000 |
+| ROSI | (ALE_old - ALE_new) - Cost | Return on Security Investment | \$114,000 |
 
 **Quantitative Risk Assessment → Dry Run:**
 ```
@@ -1239,13 +1239,13 @@ Interpretation:
 
 ## 9. Case Studies → Real Breach Anatomy
 
-### 9.1 Equifax 2017 → The $1.4 Billion Patch Failure
+### 9.1 Equifax 2017 → The \$1.4 Billion Patch Failure
 
 
 **Overview:**
 - **Date:** May-July 2017 (detected July 29, disclosed September 7)
 - **Impact:** 147.9 million records exposed (SSNs, DOBs, addresses, driver's license numbers)
-- **Cost:** $1.4 billion in settlements, fines, and remediation
+- **Cost:** \$1.4 billion in settlements, fines, and remediation
 - **Root Cause:** Failure to patch Apache Struts CVE-2017-5638 + collapsed defense in depth
 - **Attacker:** Chinese state-sponsored APT group (believed to be APT41 / Winnti Group)
 
@@ -1264,7 +1264,7 @@ Interpretation:
 | **May 19 - Jul 29** | Attacker moves laterally across internal network, exfiltrates 147.9M records over 76 days | NO NETWORK SEGMENTATION: Web server reaches databases; NO EGRESS MONITORING |
 | **Jul 29** | Equifax SOC notices suspicious traffic from an internal database server | Detection after 76 days of exfiltration |
 | **Jul 31** | Dispute portal taken offline | Containment begins |
-| **Sep 7** | Public disclosure after CEO and CFO sell $1.8M in stock (insider trading scandal) | Delayed disclosure + leadership scandal |
+| **Sep 7** | Public disclosure after CEO and CFO sell \$1.8M in stock (insider trading scandal) | Delayed disclosure + leadership scandal |
 
 **Root Cause Analysis (Fishbone / Ishikawa):**
 
@@ -1319,13 +1319,13 @@ Interpretation:
 
 ---
 
-### 9.2 Target 2013 → The HVAC Vendor That Cost $202M
+### 9.2 Target 2013 → The HVAC Vendor That Cost \$202M
 
 
 **Overview:**
 - **Date:** Nov 27 - Dec 15, 2013 (detected Dec 12, disclosed Dec 19)
 - **Impact:** 110 million records (40M credit cards + 70M customer PII)
-- **Cost:** $202 million settlement + $18.5M state fines + CEO resignation
+- **Cost:** \$202 million settlement + \$18.5M state fines + CEO resignation
 - **Root Cause:** Third-party vendor compromise + least privilege failure + flat network
 
 **Attack Chain Breakdown:**
@@ -1413,7 +1413,7 @@ CEO Gregg Steinhart resigns in May 2014
 **Overview:**
 - **Date:** March 22-23, 2019 (detected July 17, disclosed July 29)
 - **Impact:** 106 million records (140K SSNs, 80K bank account numbers)
-- **Cost:** $190 million settlement + $80 million OCC fine + $100K class action
+- **Cost:** \$190 million settlement + \$80 million OCC fine + \$100K class action
 - **Root Cause:** SSRF vulnerability + overly permissive IAM role on EC2 instance
 - **Attacker:** Paige Thompson, former AWS employee (software engineer, no financial motive)
 
@@ -1584,12 +1584,12 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 | Secondary Failure | No network segmentation | No network segmentation | No IMDSv2 |
 | Tertiary Failure | No egress monitoring | SOC alert fatigue | No SSRF WAF rules |
 | Records Exposed | 147.9 million | 110 million | 106 million |
-| Financial Cost | $1.4 billion | $202 million | $270 million |
+| Financial Cost | \$1.4 billion | \$202 million | \$270 million |
 | Detection Method | Internal SOC (after 76 days) | External (DOJ notified) | External (GitHub/HackerOne) |
 | Attack Duration | 76 days | 30 days | 117 days |
 | Attacker Profile | Nation-state (China APT) | Eastern European crime group | Single individual (former AWS employee) |
 | Data Type | PII + SSNs | Credit card numbers + PII | SSNs + bank account numbers |
-| Regulatory Outcome | $700M FTC settlement + SEC insider trading | $18.5M state fines + CEO resignation | $80M OCC fine + $190M settlement |
+| Regulatory Outcome | \$700M FTC settlement + SEC insider trading | \$18.5M state fines + CEO resignation | \$80M OCC fine + \$190M settlement |
 | Key Defense That Would Have Stopped | WAF blocking known payload | Network segmentation | IMDSv2 + least privilege IAM |
 
 ---
@@ -1603,7 +1603,7 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 |-------------------|-------------|------------------|
 | CIA Triad | All three are critical. Confidentiality protects account data. Integrity ensures balances are accurate. Availability ensures 24/7 access. | SOX, PCI DSS, GLBA |
 | Least Privilege | Teller can process deposits/withdrawals but cannot modify interest rates or approve loans. | FFIEC guidelines |
-| Separation of Duties | Trade execution vs trade settlement; loan origination vs loan approval; initiator vs approver for payments > $10K. | SOX Section 404 |
+| Separation of Duties | Trade execution vs trade settlement; loan origination vs loan approval; initiator vs approver for payments > \$10K. | SOX Section 404 |
 | Defense in Depth | Firewall -> WAF -> App-level auth -> Database ACLs -> Encryption at rest -> SIEM -> Fraud detection ML models. | PCI DSS |
 | Fail-Safe Defaults | If payment gateway is unreachable, decline the transaction (not approve). | NA |
 | Complete Mediation | Every API call to account/balance endpoint checks JWT token, checks permissions, logs the request. | NA |
@@ -1664,7 +1664,7 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 ### Q6: What's the difference between qualitative and quantitative risk assessment?
 
 
-**Answer:** Qualitative uses descriptive scales (Low/Medium/High) for likelihood and impact, combined in a risk matrix. It's faster, good for initial triage, but subjective. Quantitative uses monetary values and statistical formulas: SLE = AV x EF, ALE = SLE x ARO. It produces harder numbers but requires accurate historical data. Example: Qualitative might rate a ransomware risk as "High." Quantitative would say "ALE = $160,000/year, and a $30K backup solution would reduce that to $16K/year with 380% ROSI." Use qualitative for speed, quantitative for budget justification.
+**Answer:** Qualitative uses descriptive scales (Low/Medium/High) for likelihood and impact, combined in a risk matrix. It's faster, good for initial triage, but subjective. Quantitative uses monetary values and statistical formulas: SLE = AV x EF, ALE = SLE x ARO. It produces harder numbers but requires accurate historical data. Example: Qualitative might rate a ransomware risk as "High." Quantitative would say "ALE = \$160,000/year, and a \$30K backup solution would reduce that to \$16K/year with 380% ROSI." Use qualitative for speed, quantitative for budget justification.
 
 ### Q7: Explain the concept of fail-safe defaults with a real example.
 
@@ -1739,7 +1739,7 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 
 1. Perform a STRIDE analysis on an ATM (Automated Teller Machine). Identify at least one threat per category and propose a mitigation.
 2. A hospital's patient portal has no WAF, uses HTTP (not HTTPS), and stores SSNs in plaintext. Map each failure to the Defense in Depth layer it belongs to.
-3. Given: Asset value = $5M, Exposure Factor = 0.5, ARO = 0.1. Calculate SLE, ALE. If a $50K control reduces ARO to 0.01, what is the ROSI?
+3. Given: Asset value = \$5M, Exposure Factor = 0.5, ARO = 0.1. Calculate SLE, ALE. If a \$50K control reduces ARO to 0.01, what is the ROSI?
 4. Apply LINDDUN to a mobile fitness tracking app that collects GPS location, heart rate, and sleep patterns. Identify three privacy threats.
 
 ### Challenge Problems
@@ -2634,7 +2634,7 @@ sudo lynis audit system --quiet
 | Designing a new microservice API | Defense in Depth + Complete Mediation | Single auth check at ingress only |
 | Deciding whether to use custom encryption | Open Design | Proprietary cipher that "nobody knows" |
 | Firewall rule for a failing power supply | Fail-Safe Defaults | Rule that allows all traffic on failure |
-| Processing EFT > $100K payment | Separation of Duties | One person creates and approves payment |
+| Processing EFT > \$100K payment | Separation of Duties | One person creates and approves payment |
 | Configuring a new cloud storage bucket | Least Privilege + Fail-Safe Defaults | Public-read bucket because "easier" |
 | Reviewing a 15,000-line authentication class | Economy of Mechanism | 15KLOC single class doing auth+profile+billing |
 | Designing an audit logging system | Complete Mediation | User action not logged because "it's internal" |
@@ -2997,10 +2997,10 @@ PROFESSIONAL SECURITY LAB — NETWORK TOPOLOGY
 
 | Tier | Hardware | Cost | Capabilities |
 |------|----------|------|--------------|
-| **Minimal** | 8GB RAM laptop, 256GB SSD | $0 (what you have) | Run Kali Linux VM, basic nmap, Wireshark |
-| **Standard** | 32GB RAM desktop, 1TB NVMe, i7/Ryzen7 | $800-1200 | Run 4-5 VMs simultaneously (Kali, Windows, Ubuntu, AD) |
-| **Professional** | 64GB+ RAM, 2TB NVMe, Threadripper/i9, dedicated GPU | $2000-3000 | Run full enterprise simulation (SIEM, EDR, domain controller, 10+ VMs) |
-| **Cloud Hybrid** | Local + AWS/Azure/GCP instances | $50-200/month | Scale to 50+ instances, realistic enterprise network simulation |
+| **Minimal** | 8GB RAM laptop, 256GB SSD | \$0 (what you have) | Run Kali Linux VM, basic nmap, Wireshark |
+| **Standard** | 32GB RAM desktop, 1TB NVMe, i7/Ryzen7 | \$800-1200 | Run 4-5 VMs simultaneously (Kali, Windows, Ubuntu, AD) |
+| **Professional** | 64GB+ RAM, 2TB NVMe, Threadripper/i9, dedicated GPU | \$2000-3000 | Run full enterprise simulation (SIEM, EDR, domain controller, 10+ VMs) |
+| **Cloud Hybrid** | Local + AWS/Azure/GCP instances | \$50-200/month | Scale to 50+ instances, realistic enterprise network simulation |
 
 **Essential Hardware Checklist:**
 - [ ] Computer with virtualization support (VT-x/AMD-V enabled in BIOS)
@@ -3015,7 +3015,7 @@ PROFESSIONAL SECURITY LAB — NETWORK TOPOLOGY
 
 | Platform | Best For | Cost | Notes |
 |----------|----------|------|-------|
-| **VMware Workstation Pro** | Full-featured lab | $199 / Free Player | Industry standard, snapshots, linked clones |
+| **VMware Workstation Pro** | Full-featured lab | \$199 / Free Player | Industry standard, snapshots, linked clones |
 | **VirtualBox** | Budget option | Free | Slower, fewer features but works for basic labs |
 | **Proxmox VE** | Enterprise lab (bare metal) | Free (open source) | Type-1 hypervisor, clustering, backups |
 | **Hyper-V** | Windows-focused labs | Free (Windows Pro) | Native Windows integration, nested virtualization |
@@ -4453,7 +4453,7 @@ interface AnalysisResult {
    - Inject 1: Initial detection (EDR alert on encryption behavior)
    - Inject 2: Spread to domain controller
    - Inject 3: Backup system also encrypted
-   - Inject 4: Attacker demands $5M Bitcoin ransom
+   - Inject 4: Attacker demands \$5M Bitcoin ransom
    - Inject 5: Patient data leaked on dark web
    - Exercise guide: Roles, injects, expected actions, decision points, debrief questions
    - Post-exercise: Improvement plan with specific action items

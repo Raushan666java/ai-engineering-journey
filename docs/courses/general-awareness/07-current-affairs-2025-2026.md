@@ -121,12 +121,12 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 | Russia | Energy cooperation increased; India continues oil imports despite Western sanctions |
 | China | Border disengagement talks; Kailash Mansarovar Yatra fully resumed |
 | Maldives | Relations restored post-"India Out" phase; development projects resumed |
-| Bangladesh | Bilateral trade crossed $20 billion; Teesta water-sharing talks |
+| Bangladesh | Bilateral trade crossed \$20 billion; Teesta water-sharing talks |
 | Nepal | Inauguration of new rail link (Jaynagar-Kurtha extended to Bijalpura) |
 | Sri Lanka | Economic recovery support; tourism revival |
 | EU | Free Trade Agreement negotiations underway (15th round) |
 | UK | FTA negotiations continued; migration and mobility partnership |
-| UAE | CEPA expansion; trade anticipated to reach $100 billion |
+| UAE | CEPA expansion; trade anticipated to reach \$100 billion |
 
 #### 7.3.3 Global Affairs 2025–2026
 
@@ -149,15 +149,15 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 | Retail Inflation (CPI) | 4.0–4.5% | ~4.0% |
 | Fiscal Deficit | 4.4% (target) | <4.5% |
 | Current Account Deficit | ~2.0% of GDP | ~2.5% |
-| Forex Reserves | ~$700 billion | ~$720+ billion |
-| GDP (Nominal) | $4.2 trillion | $4.7 trillion (aiming $5 trillion by 2027) |
+| Forex Reserves | ~\$700 billion | ~\$720+ billion |
+| GDP (Nominal) | \$4.2 trillion | \$4.7 trillion (aiming \$5 trillion by 2027) |
 | GST Collection (monthly avg) | ₹1.9 lakh crore | ₹2.0+ lakh crore |
 
 **Key Economic Trends:**
 - India on track to become the **3rd largest economy** by 2029-30 (projected by multiple agencies)
 - Manufacturing share in GDP improved from 14% to 17% due to PLI schemes
 - Semiconductor ecosystem: Three fabrication plants approved under India Semiconductor Mission
-- Space economy: Targeted to reach $44 billion by 2030
+- Space economy: Targeted to reach \$44 billion by 2030
 - Startup ecosystem: India has 3rd largest startup ecosystem globally (100,000+ DPIIT-registered startups)
 - Digital payments: UPI transactions reached 500+ million per day
 
@@ -572,7 +572,7 @@ D) 2,00,000
 <summary>Answer</summary>
 **Answer: C) 1,00,000+**
 
-India has over 1,00,000 (1 lakh+) DPIIT-registered startups, making it the third-largest startup ecosystem globally after the USA and China. Over 100 unicorns (startups valued at $1 billion+) have been created. The Startup India scheme was launched in 2016.
+India has over 1,00,000 (1 lakh+) DPIIT-registered startups, making it the third-largest startup ecosystem globally after the USA and China. Over 100 unicorns (startups valued at \$1 billion+) have been created. The Startup India scheme was launched in 2016.
 </details>
 
 ---
@@ -890,7 +890,7 @@ Tata Electronics partnered with Taiwan's Powerchip Semiconductor Manufacturing C
 - **National:** UCC implemented by Uttarakhand (first state); One Nation One Election bill introduced; 150th birth anniversary of V.D. Savarkar.
 - **ISRO:** Gaganyaan (crewed mission) targeted for 2026; NISAR (NASA-ISRO) for Earth observation; Shukrayaan (Venus) planned.
 - **Sports:** ICC Champions Trophy 2025 in Pakistan; Asian Games 2026 in Nagoya; Commonwealth Games 2026 in Glasgow.
-- **Economy:** India on track to become $5 trillion economy by 2027; 100,000+ startups; semiconductor fabs in Gujarat and Assam.
+- **Economy:** India on track to become \$5 trillion economy by 2027; 100,000+ startups; semiconductor fabs in Gujarat and Assam.
 - **Defence:** Agni-5 MIRV; Tejas Mk1A with Uttam radar; AMCA 5th generation fighter prototype.
 - **Technology:** National Quantum Mission (24-qubit prototype); India AI Mission; 5G covers 95% population.
 - **Environment:** 500 GW renewable target by 2030; Net Zero by 2070; National Clean Air Programme.
@@ -901,7 +901,7 @@ Tata Electronics partnered with Taiwan's Powerchip Semiconductor Manufacturing C
 2. **Summit Tracking:** Create a quick-reference card for all 2025 summits: G20 (South Africa), BRICS (Brazil), COP30 (Brazil), SCO (China), Quad (Japan).
 3. **ISRO Timeline:** Gaganyaan 2026 → Shukrayaan (post-2026) → Bharatiya Antariksha Station (2028+) → Chandrayaan-4 (sample return).
 4. **Budget Figures:** Memorise: Fiscal deficit 4.4%, Capex ₹12.15 lakh crore, Standard deduction ₹1,00,000.
-5. **India Economy:** Key targets — $5 trillion by 2027, $10 trillion by 2032-35; 500 GW renewable by 2030.
+5. **India Economy:** Key targets — \$5 trillion by 2027, \$10 trillion by 2032-35; 500 GW renewable by 2030.
 6. **UCC and ONE:** Understand that Uttarakhand implemented UCC first; ONOE bill is under review.
 7. **Follow PIB and Press Releases:** Current affairs beyond 2024 require regular updating — read PIB daily, Business Standard, and The Hindu.
 
@@ -1071,7 +1071,7 @@ D) Asian Games
 
 **22.** The Gaganyaan crewed mission was successfully launched in 2025. (T/F)
 
-**23.** India's foreign exchange reserves crossed $700 billion in 2024. (T/F)
+**23.** India's foreign exchange reserves crossed \$700 billion in 2024. (T/F)
 
 **24.** The ICC T20 World Cup 2026 was jointly hosted by India and Sri Lanka. (T/F)
 
@@ -1191,7 +1191,7 @@ D) Frigate
 **Section C (21-30):**
 21. T
 22. F (Gaganyaan crewed mission is targeted for 2026)
-23. T (Surpassed $700 billion in September 2024)
+23. T (Surpassed \$700 billion in September 2024)
 24. T (India and Sri Lanka jointly hosted the 2026 T20 World Cup)
 25. T
 26. T

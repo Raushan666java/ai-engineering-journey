@@ -156,9 +156,9 @@ Write a 20-line script: embed 3 sentences (2 similar, 1 unrelated), print cosine
 
 | Model | Dimensions | Cost/1M tokens | Use case |
 |-------|-----------|----------------|----------|
-| `text-embedding-3-small` | 1536 | $0.02 | Default — best cost/quality balance |
-| `text-embedding-3-large` | 3072 | $0.13 | High-accuracy retrieval, semantic search |
-| `text-embedding-3-small` (dimensions=256) | 256 | $0.02 | Cost-sensitive, good-enough accuracy |
+| `text-embedding-3-small` | 1536 | \$0.02 | Default — best cost/quality balance |
+| `text-embedding-3-large` | 3072 | \$0.13 | High-accuracy retrieval, semantic search |
+| `text-embedding-3-small` (dimensions=256) | 256 | \$0.02 | Cost-sensitive, good-enough accuracy |
 
 ```python
 # Reduce dimensions via the API (saves storage, slight quality loss)

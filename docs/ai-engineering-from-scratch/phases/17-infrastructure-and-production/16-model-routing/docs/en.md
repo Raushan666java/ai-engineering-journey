@@ -1,6 +1,6 @@
 # Model Routing as a Cost-Reduction Primitive
 
-> A dynamic broker evaluates every request (task type, token length, embedding similarity, confidence) and sends simple queries to a cheap model, escalating complex ones to a frontier model. Also called model cascading. Production case studies show 20-60% cost reduction at iso-quality across US/UK/EU deployments; a 30% routing efficiency improvement on high-volume SaaS turns into six-figure annual savings. The 2026 context is that LLM inference prices dropped ~10x per year — a GPT-4-class token went from $20/M to ~$0.40/M from late 2022 to 2026. Most of the drop is better serving stacks (Phase 17 · 04-09), not hardware. Routing is how you convert that price drop into margin without product regression. The failure mode is cheap-model drift: the route pushes 40% to a weaker model, quality drops 3-5% on reasoning tasks, no one notices for a quarter. Gate routes by online quality metrics, not just offline eval sets.
+> A dynamic broker evaluates every request (task type, token length, embedding similarity, confidence) and sends simple queries to a cheap model, escalating complex ones to a frontier model. Also called model cascading. Production case studies show 20-60% cost reduction at iso-quality across US/UK/EU deployments; a 30% routing efficiency improvement on high-volume SaaS turns into six-figure annual savings. The 2026 context is that LLM inference prices dropped ~10x per year — a GPT-4-class token went from \$20/M to ~\$0.40/M from late 2022 to 2026. Most of the drop is better serving stacks (Phase 17 · 04-09), not hardware. Routing is how you convert that price drop into margin without product regression. The failure mode is cheap-model drift: the route pushes 40% to a weaker model, quality drops 3-5% on reasoning tasks, no one notices for a quarter. Gate routes by online quality metrics, not just offline eval sets.
 
 **Type:** Learn
 **Languages:** Python (stdlib, toy cascading router simulator)
@@ -16,7 +16,7 @@
 
 ## The Problem
 
-Your service costs $80k/month on GPT-5. Your analytics show 70% of queries are simple: "what time is it in Paris?" "rephrase this sentence." A Haiku-class model handles those perfectly at 3% of the cost. 30% need GPT-5's reasoning — coding, math, multi-step planning.
+Your service costs \$80k/month on GPT-5. Your analytics show 70% of queries are simple: "what time is it in Paris?" "rephrase this sentence." A Haiku-class model handles those perfectly at 3% of the cost. 30% need GPT-5's reasoning — coding, math, multi-step planning.
 
 If you route the 70% to cheap and 30% to expensive, your bill drops ~65% at the same product quality. This is routing. The trick is building the broker without regressing quality.
 
@@ -24,7 +24,7 @@ If you route the 70% to cheap and 30% to expensive, your bill drops ~65% at the 
 
 ### Four routing signals
 
-1. **Task classification**: simple/complex/codegen/math/chat. Can be a rules-based classifier, a small LLM (Haiku-class at $0.25/M), or embedding similarity to labeled buckets. Output: route = cheap / balanced / frontier.
+1. **Task classification**: simple/complex/codegen/math/chat. Can be a rules-based classifier, a small LLM (Haiku-class at \$0.25/M), or embedding similarity to labeled buckets. Output: route = cheap / balanced / frontier.
 
 2. **Prompt length**: prompts >4K tokens often need frontier for coherence. Prompts <500 tokens usually don't.
 
@@ -50,8 +50,8 @@ Open-source: RouteLLM (LMSYS), Not Diamond (commercial), Prompt Mule.
 
 | Model class | Late 2022 | 2026 | Change |
 |-------------|-----------|------|--------|
-| GPT-4-level quality | ~$20/M | ~$0.40/M | 50x cheaper |
-| Frontier (GPT-5, Claude 4) | — | ~$3-10/M | new tier |
+| GPT-4-level quality | ~\$20/M | ~\$0.40/M | 50x cheaper |
+| Frontier (GPT-5, Claude 4) | — | ~\$3-10/M | new tier |
 
 Most of the improvement is serving efficiency — the core lessons in Phase 17 · 04-09 turned into provider-side cost drops. Routing lets you capture those gains at the app layer instead of waiting for all your users to migrate to the cheap tier.
 
@@ -70,7 +70,7 @@ Gate routes by online quality metrics:
 
 - 2026 routing savings at iso-quality: 20-60% case studies.
 - LLM price drop 2022-2026: ~10x per year aggregate.
-- GPT-4-level 2022 vs 2026: ~$20/M → ~$0.40/M.
+- GPT-4-level 2022 vs 2026: ~\$20/M → ~\$0.40/M.
 - Cascade latency impact: ~1.2x median, ~2x escalated (~10% of traffic).
 
 ## Use It

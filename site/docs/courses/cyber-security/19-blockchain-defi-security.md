@@ -34,13 +34,13 @@ By the end of this chapter, you will be able to:
 |---------|-------------|----------------|
 | Blockchain Security Fundamentals | 51%, Sybil, eclipse, selfish mining, timejacking | Foundational threats to chain integrity |
 | Consensus Security | Double-spend odds, long-range attacks, nothing-at-stake | Consensus design drives security guarantees |
-| Smart Contract Vulnerabilities | Reentrancy, overflow, access control, flash loans, oracles | $7B+ lost to contract exploits since 2016 |
+| Smart Contract Vulnerabilities | Reentrancy, overflow, access control, flash loans, oracles | \$7B+ lost to contract exploits since 2016 |
 | DeFi Security | AMM manipulation, MEV, liquidation attacks | DeFi composability creates cascading risk |
 | Solidity Security Patterns | tx.origin, delegatecall, selfdestruct, unchecked math | Every Solidity dev must know these pitfalls |
-| Cross-Chain Security | Bridge architecture, Wormhole/Ronin/Nomad hacks | $2.5B stolen from bridges in 2022 alone |
+| Cross-Chain Security | Bridge architecture, Wormhole/Ronin/Nomad hacks | \$2.5B stolen from bridges in 2022 alone |
 | Wallet Security | BIP32/39/44 derivation, hardware wallets, multisig | Key management is the #1 user-side risk |
 | Cryptography in Blockchain | ECDSA, Ed25519, BLS, nonce reuse | Crypto failures are irreversible on-chain |
-| NFT Security | Metadata integrity, royalty enforcement, ERC-721/1155 | NFT market $1.3B lost to scams and exploits |
+| NFT Security | Metadata integrity, royalty enforcement, ERC-721/1155 | NFT market \$1.3B lost to scams and exploits |
 | Blockchain Forensics | Taint analysis, chain hopping, CoinJoin deanonymization | Tracing illicit funds across chains |
 
 ---
@@ -59,10 +59,10 @@ An entity controlling >50% of the network's mining hash rate (PoW) or staked val
 
 | Chain | Hash Rate (TH/s) | Estimated Rental Cost |
 |-------|-------------------|-----------------------|
-| Bitcoin (BTC) | ~600 EH/s | $700,000+ / hour |
-| Ethereum Classic (ETC) | ~200 TH/s | $10,000 / hour |
-| Bitcoin Cash (BCH) | ~3 EH/s | $50,000 / hour |
-| Litecoin (LTC) | ~1 PH/s | $5,000 / hour |
+| Bitcoin (BTC) | ~600 EH/s | \$700,000+ / hour |
+| Ethereum Classic (ETC) | ~200 TH/s | \$10,000 / hour |
+| Bitcoin Cash (BCH) | ~3 EH/s | \$50,000 / hour |
+| Litecoin (LTC) | ~1 PH/s | \$5,000 / hour |
 
 **Defence:** High total hash rate / stake, fast finality gadgets (e.g., Casper FFG), monitoring for deep reorgs.
 
@@ -167,7 +167,7 @@ A small set of elected block producers (e.g., 21 in EOS) create blocks. While th
 
 ### 3.1 Reentrancy — The DAO Hack (2016)
 
-**The DAO Hack (June 2016) — $60M stolen**
+**The DAO Hack (June 2016) — \$60M stolen**
 
 The DAO was a decentralised venture capital fund on Ethereum. An attacker exploited a reentrancy vulnerability in the `splitDAO` function:
 
@@ -329,10 +329,10 @@ flowchart LR
 **Notable flash loan attacks:**
 | Protocol | Date | Loss | Vector |
 |----------|------|------|--------|
-| bZx | Feb 2020 | $350K | Oracle manipulation + flash loan |
-| Harvest Finance | Oct 2020 | $24M | Curve pool manipulation |
-| PancakeBunny | May 2021 | $45M | AMM price manipulation |
-| Cream Finance | Oct 2021 | $130M | Flash loan + reentrancy |
+| bZx | Feb 2020 | \$350K | Oracle manipulation + flash loan |
+| Harvest Finance | Oct 2020 | \$24M | Curve pool manipulation |
+| PancakeBunny | May 2021 | \$45M | AMM price manipulation |
+| Cream Finance | Oct 2021 | \$130M | Flash loan + reentrancy |
 
 ### 3.6 Oracle Manipulation
 
@@ -489,7 +489,7 @@ function withdrawAll() public {
 
 `delegatecall` executes a contract's code in the caller's storage context. This is the foundation of upgradeable contracts — but it's dangerous.
 
-**The Parity Wallet Hack (2017) — $280M frozen**
+**The Parity Wallet Hack (2017) — \$280M frozen**
 
 The Parity multi-sig wallet used a library contract with `delegatecall`. An attacker called the library's `initWallet()` function (which set the owner) after the library was initialised, then called `kill()` to selfdestruct the library, freezing all funds.
 
@@ -560,7 +560,7 @@ flowchart LR
 
 ### 6.2 Major Bridge Hacks
 
-**Ronin Bridge (Axie Infinity) — March 2022 — $625M**
+**Ronin Bridge (Axie Infinity) — March 2022 — \$625M**
 
 | Event | Details |
 |-------|---------|
@@ -570,7 +570,7 @@ flowchart LR
 | **Discovery** | 6 days after exploit — user couldn't withdraw 5,000 ETH |
 | **Aftermath** | Axie Infinity token crashed 40%; US Treasury sanctioned North Korea's Lazarus Group |
 
-**Wormhole Bridge — February 2022 — $320M**
+**Wormhole Bridge — February 2022 — \$320M**
 
 | Event | Details |
 |-------|---------|
@@ -579,14 +579,14 @@ flowchart LR
 | **Attack** | Attacker minted 120,000 wrapped ETH on Solana without depositing on Ethereum |
 | **Fix** | Patched signature verification; Jump Crypto replenished funds |
 
-**Nomad Bridge — August 2022 — $190M**
+**Nomad Bridge — August 2022 — \$190M**
 
 | Event | Details |
 |-------|---------|
 | **Target** | Nomad (optimistic bridge, multiple chains) |
 | **Root Cause** | Incorrect initialisation — a "0x00" root hash was accepted as valid |
 | **Attack** | Attacker spoofed a legitimate message; copycat attackers drained remaining funds |
-| **Aftermath** | $32M recovered via bounty; bridge permanently shut |
+| **Aftermath** | \$32M recovered via bounty; bridge permanently shut |
 
 ### 6.3 Atomic Swaps
 
@@ -824,7 +824,7 @@ If two signatures share the same `k` (nonce), the private key can be recovered:
 k = \frac{h_1 - h_2}{s_1 - s_2} \quad \text{mod } n
 \]
 
-**Real-world case:** In 2013, Android's `SecureRandom` bug caused nonce reuse in Bitcoin wallets, leaking private keys. Over $5M in BTC was stolen.
+**Real-world case:** In 2013, Android's `SecureRandom` bug caused nonce reuse in Bitcoin wallets, leaking private keys. Over \$5M in BTC was stolen.
 
 ```typescript
 function recoverPrivateKeyFromNonceReuse(
@@ -1099,7 +1099,7 @@ KYT is a regulatory framework requiring VASPs (Virtual Asset Service Providers) 
 1. Attacker deployed a malicious contract that called `splitDAO`.
 2. `splitDAO` sent ETH to the attacker's contract via `call.value()`.
 3. The attacker's `fallback()` function re-entered `splitDAO` before the balance was updated.
-4. Each re-entry sent more ETH — totalling ~3.6M ETH (~$60M at the time).
+4. Each re-entry sent more ETH — totalling ~3.6M ETH (~\$60M at the time).
 
 **Aftermath:** Ethereum hard-forked at block 1,920,000 to reverse the theft. The original chain (Ethereum Classic) refused.
 
@@ -1110,10 +1110,10 @@ KYT is a regulatory framework requiring VASPs (Virtual Asset Service Providers) 
 **Exploit anatomy:**
 1. Flash loan 10,000 ETH from dYdX.
 2. Deposit 5,500 ETH as collateral on bZx.
-3. Borrow 112 BTC (worth ~$1M at the time) against the collateral.
+3. Borrow 112 BTC (worth ~\$1M at the time) against the collateral.
 4. Use the borrowed BTC to manipulate the Kyber Uniswap ETH/BTC price.
 5. The manipulated price triggered margin calls on bZx, profiting the attacker.
-6. Repay flash loan. Profit: ~$350K.
+6. Repay flash loan. Profit: ~\$350K.
 
 ### 12.3 Harvest Finance Attack (Oct 2020)
 
@@ -1124,7 +1124,7 @@ KYT is a regulatory framework requiring VASPs (Virtual Asset Service Providers) 
 2. Deposit into Harvest's Curve USDC pool — inflating the share price.
 3. Deposit a small amount of USDC at the inflated share price.
 4. Withdraw — the small deposit redeemed far more than expected.
-5. Repay flash loan. Profit: ~$24M.
+5. Repay flash loan. Profit: ~\$24M.
 
 **Root cause:** The share price was calculated using the pool balance without accounting for the flash loan deposit artificially inflating it.
 
@@ -1135,9 +1135,9 @@ KYT is a regulatory framework requiring VASPs (Virtual Asset Service Providers) 
 | Nov 2021 | Ronin bridge goes live for Axie Infinity |
 | Mar 23, 2022 | Attacker compromises 5/9 validator keys |
 | Mar 29, 2022 | User reports inability to withdraw 5,000 ETH |
-| Mar 29, 2022 | Team discovers $625M exploit |
+| Mar 29, 2022 | Team discovers \$625M exploit |
 | Apr 2022 | US Treasury sanctions Lazarus Group (North Korea) |
-| Jun 2022 | Sky Mavis raises $150M to reimburse users |
+| Jun 2022 | Sky Mavis raises \$150M to reimburse users |
 | Nov 2022 | Ronin bridge reopens with new security |
 
 ---
@@ -1758,7 +1758,7 @@ Blockchain, smart contract, and DeFi security span a unique attack surface where
 | **NFT** | Metadata mutability, royalty bypass | IPFS pinning, on-chain metadata, EIP-2981 |
 | **Forensics** | Taint tracking, chain hopping | Graph analysis, KYT screening, clustering |
 
-Over $7B has been lost to blockchain security exploits since 2016. Understanding these attack vectors is essential for every blockchain developer, security auditor, and DeFi participant.
+Over \$7B has been lost to blockchain security exploits since 2016. Understanding these attack vectors is essential for every blockchain developer, security auditor, and DeFi participant.
 
 ---
 
@@ -1772,8 +1772,8 @@ Over $7B has been lost to blockchain security exploits since 2016. Understanding
 | 4 | What is the constant product formula used by Uniswap? | x + y = k | x × y = k | x² + y² = k | x − y = k | **B** |
 | 5 | Which attack involves buying an asset before a victim's transaction executes and selling immediately after? | Flash loan attack | Sandwich attack | Long-range attack | Eclipse attack | **B** |
 | 6 | In Solidity, which of the following is safer for authentication? | tx.origin | msg.sender | block.coinbase | address(this) | **B** |
-| 7 | What was the root cause of the 2017 Parity Wallet hack that froze $280M? | Reentrancy | Integer overflow | Exploitable delegatecall to a selfdestructed library | 51% attack on Ethereum | **C** |
-| 8 | The Ronin bridge hack ($625M) was caused by: | A smart contract reentrancy bug | Compromise of 5 out of 9 validator keys | An oracle manipulation attack | A flash loan attack | **B** |
+| 7 | What was the root cause of the 2017 Parity Wallet hack that froze \$280M? | Reentrancy | Integer overflow | Exploitable delegatecall to a selfdestructed library | 51% attack on Ethereum | **C** |
+| 8 | The Ronin bridge hack (\$625M) was caused by: | A smart contract reentrancy bug | Compromise of 5 out of 9 validator keys | An oracle manipulation attack | A flash loan attack | **B** |
 | 9 | What is the BIP44 derivation path for an Ethereum account? | m/44'/0'/0'/0/0 | m/44'/60'/0'/0/0 | m/60'/44'/0'/0/0 | m/0'/44'/60'/0/0 | **B** |
 | 10 | Which cryptographic vulnerability allowed recovery of Bitcoin private keys from Android wallets in 2013? | Signature malleability | ECDSA nonce reuse | Weak SHA-256 collision | Merkle tree second preimage attack | **B** |
 
@@ -1788,7 +1788,7 @@ Over $7B has been lost to blockchain security exploits since 2016. Understanding
 
 1. **Double-Spend Probability.** An attacker controls 15% of the total hash rate on a PoW chain. Calculate the probability of successfully double-spending after 3, 6, and 12 confirmations using `doubleSpendProbability`. At what confirmation depth does the probability drop below 10⁻⁶?
 
-2. **51% Attack Cost Estimation.** Assume a blockchain has a total hash rate of 100 PH/s. Mining hardware costs $50 per TH/s per day (rental). How much would it cost to sustain a 51% attack for 6 hours? Include a 20% safety margin for variance.
+2. **51% Attack Cost Estimation.** Assume a blockchain has a total hash rate of 100 PH/s. Mining hardware costs \$50 per TH/s per day (rental). How much would it cost to sustain a 51% attack for 6 hours? Include a 20% safety margin for variance.
 
 3. **Reentrancy Identification.** The following Solidity snippet has a security vulnerability. Identify it, explain the exploit, and write the corrected code:
 ```solidity

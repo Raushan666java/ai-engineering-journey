@@ -7,7 +7,7 @@ lesson: 01
 tags: [capstone, coding-agent, claude-code, swe-bench, mcp, hooks, sandbox]
 ---
 
-Given a target repository and a natural-language task, build a harness that plans, executes in a sandbox, and opens a pull request. Match or beat the mini-swe-agent baseline on a 30-task SWE-bench Pro subset while staying under a $5-per-task budget.
+Given a target repository and a natural-language task, build a harness that plans, executes in a sandbox, and opens a pull request. Match or beat the mini-swe-agent baseline on a 30-task SWE-bench Pro subset while staying under a \$5-per-task budget.
 
 Build plan:
 
@@ -15,7 +15,7 @@ Build plan:
 2. Define six tools (read_file, edit_file, ripgrep, tree_sitter_symbols, run_shell, git) over Model Context Protocol StreamableHTTP. Every call returns at most 4k tokens.
 3. Run every tool call inside an E2B or Daytona sandbox on a fresh `git worktree add` branch. Never touch the host filesystem.
 4. Wire all eight 2026 hook events: SessionStart, SessionEnd, PreToolUse, PostToolUse, UserPromptSubmit, Notification, Stop, PreCompact. Ship at least four user-authored hooks (destructive-command guard, token accounting, OTel span emitter, trace bundle writer).
-5. Enforce three budgets: 50 turns, 200k tokens, $5 dollars. PreCompact fires at 150k and summarizes older turns.
+5. Enforce three budgets: 50 turns, 200k tokens, \$5 dollars. PreCompact fires at 150k and summarizes older turns.
 6. Emit OpenTelemetry spans with GenAI semantic conventions to a self-hosted Langfuse.
 7. On success, push the branch and open a PR with the plan and trace bundle in the body.
 8. Evaluate against mini-swe-agent on a 30-issue SWE-bench Pro Python subset and record pass@1, turns, tokens, and dollars per task.

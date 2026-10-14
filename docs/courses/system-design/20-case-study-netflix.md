@@ -1176,7 +1176,7 @@ After the user watches 10 titles, the system transitions to hybrid recommendatio
 
 ### Application Problems
 
-<details><summary>Solution</summary>1. **Cost-Optimized Encoding**: Encode all content to at least 720p (standard ladder, $2/hr). For 4K TV content (20% of watch time), also encode at 4K using per-title optimization ($2.50/hr). Current library (50K hrs): 80% × $2 + 20% × $2.50 = $1.60 + $0.50 = $2.10/hr avg = $105K/year. New content (5K hrs/year) = $10.5K/year. Total: $115.5K/year vs $250K/year for all-4K → saving $134.5K/year (54%).
+<details><summary>Solution</summary>1. **Cost-Optimized Encoding**: Encode all content to at least 720p (standard ladder, \$2/hr). For 4K TV content (20% of watch time), also encode at 4K using per-title optimization (\$2.50/hr). Current library (50K hrs): 80% × \$2 + 20% × \$2.50 = \$1.60 + \$0.50 = \$2.10/hr avg = \$105K/year. New content (5K hrs/year) = \$10.5K/year. Total: \$115.5K/year vs \$250K/year for all-4K → saving \$134.5K/year (54%).
 
 2. **Global CDN**: Use a scoring function: `cache_priority = global_popularity^0.4 × regional_popularity^0.6 × freshness_boost`. Pre-populate all content with score > 0.8 in every OCA. For local content, boost regional_popularity to 1.0 in home region. Use 100TB per OCA: top 10% of global catalog (17K titles × 10GB = 170TB) exceeds single OCA capacity, so per-region subsets are needed based on regional popularity.
 

@@ -222,7 +222,7 @@ More completely:
 | GRC Concept | Home Analogy |
 |-------------|-------------|
 | Risk Assessment | Walk around your house, note broken locks, dark corners, valuable items visible through windows |
-| Risk Register | A spreadsheet listing: "Broken back door lock -> burglar enters -> loss of TV + laptop -> $5,000" |
+| Risk Register | A spreadsheet listing: "Broken back door lock -> burglar enters -> loss of TV + laptop -> \$5,000" |
 | Risk Appetite | "I'm OK with leaving windows open on the 2nd floor" vs "I need bars on every window" |
 | Mitigation | Install deadbolt, security camera, motion sensor lights |
 | Transfer | Renters insurance |
@@ -231,7 +231,7 @@ More completely:
 | Policy | "All family members must lock the door when leaving" |
 | Compliance | City ordinance requiring smoke detectors → verified annually by fire inspection |
 | Audit | Quarterly check: test locks, cameras, check that alarm is armed |
-| BIA | "If burglary happens, we lose $5K in goods, but our lives are not disrupted" |
+| BIA | "If burglary happens, we lose \$5K in goods, but our lives are not disrupted" |
 | BCP/DR | "If fire destroys house, we stay at hotel (RTO 4 hrs), file insurance claim, replace essentials within 7 days (RPO 7d)" |
 
 ### 2.3 Risk Management Process (NIST RMF)
@@ -293,7 +293,7 @@ Scenario: Acme Corp has an unpatched vulnerability (CVE-2025-1234) in a public-f
 
 Step 1: Identify the risk → Remote code execution in web server (CVSS 9.8).
 Step 2: Determine likelihood → Exploit code publicly available. Internet-facing system. No WAF. -> Likely (4)
-Step 3: Determine impact → Breach of customer database (PII). Regulatory fine (GDPR, up to EUR 20M). Average breach cost: $4.5M. -> Severe (5)
+Step 3: Determine impact → Breach of customer database (PII). Regulatory fine (GDPR, up to EUR 20M). Average breach cost: \$4.5M. -> Severe (5)
 Step 4: Calculate risk score → 4 x 5 = 20 (Critical)
 Step 5: Determine risk response → Mitigate: Apply vendor patch within 24 hours. If patch unavailable, deploy WAF virtual patch and restrict source IPs.
 Step 6: Residual risk → After patching, likelihood drops to Rare (1). Residual score: 1 x 5 = 5 (Low) -> Accept.
@@ -314,21 +314,21 @@ Uses monetary values and statistical models to express risk in dollar terms.
 **Quantitative example → Dry Run:**
 
 Acme Corp's e-commerce database:
-- Asset Value (AV): $2,000,000 (database + IP + customer data)
+- Asset Value (AV): \$2,000,000 (database + IP + customer data)
 - Exposure Factor (EF): 60% (corruption of 60% of records in a ransomware event)
-- SLE = $2,000,000 x 0.60 = $1,200,000
+- SLE = \$2,000,000 x 0.60 = \$1,200,000
 - ARO = 0.2 (once every 5 years, based on industry statistics)
-- ALE = $1,200,000 x 0.20 = $240,000/year
+- ALE = \$1,200,000 x 0.20 = \$240,000/year
 
-**Control evaluation:** Deploy EDR + immutable backups ($50,000/year):
+**Control evaluation:** Deploy EDR + immutable backups (\$50,000/year):
 - New EF: 10% (backups restore all but 10% of the day's data)
-- New SLE: $2,000,000 x 0.10 = $200,000
+- New SLE: \$2,000,000 x 0.10 = \$200,000
 - New ARO: 0.1 (EDR catches 50% of attempts)
-- New ALE: $200,000 x 0.10 = $20,000/year
-- ALE Reduction: $240,000 - $20,000 = $220,000/year
-- ROSI: ($220,000 - $50,000) / $50,000 = 340%
+- New ALE: \$200,000 x 0.10 = \$20,000/year
+- ALE Reduction: \$240,000 - \$20,000 = \$220,000/year
+- ROSI: (\$220,000 - \$50,000) / \$50,000 = 340%
 
-ROSI of 340% means every $1 spent on controls saves $3.40 → a strong business case.
+ROSI of 340% means every \$1 spent on controls saves \$3.40 → a strong business case.
 
 #### Qualitative vs Quantitative Risk Assessment
 
@@ -427,9 +427,9 @@ FAIR is the leading quantitative risk analysis model (now FAIR-TM, maintained by
 | TEF (per year) | 0.1 | 0.3 | 0.8 | Triangular |
 | Vulnerability | 0.2 | 0.5 | 0.9 | Triangular |
 | LEF (TEF x Vuln) | 0.02 | 0.15 | 0.72 | → |
-| Primary loss | $100K | $500K | $1.5M | Triangular |
-| Secondary loss | $50K | $200K | $1M | Triangular |
-| **Annualized risk** | **$3K** | **$105K** | **$1.8M** | → |
+| Primary loss | \$100K | \$500K | \$1.5M | Triangular |
+| Secondary loss | \$50K | \$200K | \$1M | Triangular |
+| **Annualized risk** | **\$3K** | **\$105K** | **\$1.8M** | → |
 
 *Monte Carlo simulation would run 10,000+ iterations to produce a probability distribution, giving the 5th–95th percentile range.*
 
@@ -452,9 +452,9 @@ A BIA identifies critical business functions, the impact of their disruption, an
 
 | System | Criticality | MTD | RTO | RPO | Impact/Hour | Recovery Strategy |
 |--------|------------|-----|-----|-----|-------------|-------------------|
-| **Payment Processing** | Critical | 4 hours | 1 hour | 1 min | $500,000 | Active-active HA in two AWS regions; auto-failover |
-| **Customer Database** | High | 24 hours | 4 hours | 15 min | $50,000 | DB replication with 15-min sync; standby replica failover |
-| **Employee Email** | Medium | 7 days | 24 hours | 1 hour | $5,000 | SaaS (O365) built-in redundancy; M365 Backup |
+| **Payment Processing** | Critical | 4 hours | 1 hour | 1 min | \$500,000 | Active-active HA in two AWS regions; auto-failover |
+| **Customer Database** | High | 24 hours | 4 hours | 15 min | \$50,000 | DB replication with 15-min sync; standby replica failover |
+| **Employee Email** | Medium | 7 days | 24 hours | 1 hour | \$5,000 | SaaS (O365) built-in redundancy; M365 Backup |
 
 **BIA Process (Step-by-Step):**
 
@@ -517,11 +517,11 @@ A BIA identifies critical business functions, the impact of their disruption, an
 |-----------|-------------|--------|-----------|----------|
 | **GDPR** | EU/EEA | All (data processors/controllers) | Personal data protection | EUR 20M or 4% global turnover |
 | **PCI DSS 4.0** | Global | Payment card processing | Cardholder data security | Variable (fines from card brands + acquirer penalties) |
-| **HIPAA** | USA | Healthcare | Protected Health Information (PHI) | $1.5M per violation per year |
+| **HIPAA** | USA | Healthcare | Protected Health Information (PHI) | \$1.5M per violation per year |
 | **SOC 2** | USA (global adoption) | Service organizations | Security, availability, integrity, confidentiality, privacy | Loss of certification, contract termination |
 | **FedRAMP** | USA | Cloud services for federal agencies | Security authorization for cloud products | De-authorization, loss of federal business |
-| **SOX** | USA | Publicly traded companies | Financial controls, ITGC | $5M fine, 20 years imprisonment |
-| **CCPA (CPRA)** | California, USA | For-profit >$25M revenue | Consumer privacy rights | $7,500 per intentional violation |
+| **SOX** | USA | Publicly traded companies | Financial controls, ITGC | \$5M fine, 20 years imprisonment |
+| **CCPA (CPRA)** | California, USA | For-profit >\$25M revenue | Consumer privacy rights | \$7,500 per intentional violation |
 | **LGPD** | Brazil | All (processing Brazil personal data) | Personal data protection | 2% of revenue in Brazil, capped at BRL 50M |
 | **PIPEDA** | Canada | All commercial activity | Personal data protection | CAD 100,000 per violation |
 | **APRA CPS 234** | Australia | Financial institutions | Information security management | Variable (regulatory action) |
@@ -712,7 +712,7 @@ Step 7: CLOSE
 | **Privacy Rule** | Use and disclosure of PHI | Patient rights to access/amend PHI, Notice of Privacy Practices, minimum necessary standard |
 | **Security Rule** | Administrative, physical, technical safeguards for ePHI | Risk analysis, access controls, audit controls, integrity controls, transmission security |
 | **Breach Notification Rule** | Notification when PHI is breached | <60 days for individuals, &lt;60 days for HHS (500+ records), <60 days for media (500+ state records) |
-| **Enforcement Rule** | Investigations and penalties | Civil penalties up to $1.5M per violation/year |
+| **Enforcement Rule** | Investigations and penalties | Civil penalties up to \$1.5M per violation/year |
 | **Omnibus Rule** (2013) | Expanded HIPAA to business associates | BAs directly liable for breaches, stricter breach notification |
 
 #### HIPAA Security Rule Safeguards
@@ -1199,7 +1199,7 @@ CIS Controls are 18 prioritized safeguards (reduced from 20 in v7) mapped to com
 | **Maturity model** | 4 Tiers | Not inherent (but can combine with ISO 330xx) | IG1/2/3 | Not inherent (SAQ A-D) |
 | **Supply chain** | New GV.SC category | 5.19–5.23 supplier controls | Control 15 (Service Provider Management) | Requires TPSP program for service providers |
 | **Cloud inclusion** | Implicit across all functions | 5.23 Cloud services control | No dedicated cloud control | CDE scope includes cloud |
-| **Cost to implement** | $50K–$200K | $100K–$500K + certification audit | $30K–$150K | $50K–$300K + QSA fees |
+| **Cost to implement** | \$50K–\$200K | \$100K–\$500K + certification audit | \$30K–\$150K | \$50K–\$300K + QSA fees |
 | **Best for** | Strategic program design, Board communication | Formal ISMS with certification | Quick, actionable implementation priorities | Payment processing compliance |
 
 ### 4.6 Framework Selection → Decision Tree
@@ -1488,7 +1488,7 @@ Humans are the #1 attack vector → 74% of breaches involve the human element (V
 | **Scope** | Wider → all controls, departments | Narrower → defined by standard or regulation |
 | **Independence** | Moderate (reports to audit committee) | High (no relationship with audited org) |
 | **Reporting** | Management report, board summary | Formal audit report, certificate (if passed) |
-| **Cost** | Lower (internal resources) | Higher ($30K–$150K per engagement) |
+| **Cost** | Lower (internal resources) | Higher (\$30K–\$150K per engagement) |
 
 ### 8.2 Audit Process
 
@@ -1643,10 +1643,10 @@ KRIs are leading indicators that predict an increased risk of a negative event.
 | **Third-Party Risk** | Apache Struts (open-source) had no security assessment before adoption | No open-source risk assessment process |
 
 **Consequences:**
-- Total cost: $1.4 billion (fines, settlements, remediation)
-- FTC settlement: $575M (largest in FTC history)
+- Total cost: \$1.4 billion (fines, settlements, remediation)
+- FTC settlement: \$575M (largest in FTC history)
 - UK ICO fine: 500,000 pounds (pre-GDPR max)
-- Class action lawsuit: $380.5M settlement
+- Class action lawsuit: \$380.5M settlement
 - 50+ class action lawsuits
 - Criminal charges: Chief Information Officer, Chief Security Officer charged with insider trading (sold shares before disclosure)
 
@@ -1670,7 +1670,7 @@ Equifax had **policies** but no **enforcement.** The infosec policy required pat
 **Timeline:**
 - **2014:** Attackers compromise Starwood reservation system (via RDP brute force)
 - **2014–2016:** Attackers maintain persistence, escalate privileges, install keyloggers on payment systems, exfiltrate records over 2+ years
-- **2016:** Marriott acquires Starwood for $13.6B → accelerates IT integration
+- **2016:** Marriott acquires Starwood for \$13.6B → accelerates IT integration
 - **2018 (Sept):** Marriott security detects anomalous database queries in Starwood systems
 - **2018 (Nov):** Marriott publicly discloses breach → 339M records (133M with structured PII including passport numbers)
 - **2019:** UK ICO proposes 99.2M pounds fine (reduced to 18.4M pounds on appeal due to COVID and economic circumstances)
@@ -1750,12 +1750,12 @@ TikTok's **Data Protection Impact Assessment (DPIA)** was inadequate → it iden
 | **Regulatory Compliance** | Violated consent order from Office of the Comptroller of the Currency (OCC) by failing to remediate sales practice issues |
 
 **Consequences:**
-- $3 billion in penalties (DOJ, SEC, CFPB, OCC)
-- $142 million class action settlement
+- \$3 billion in penalties (DOJ, SEC, CFPB, OCC)
+- \$142 million class action settlement
 - 5,300+ employees terminated (including whistleblowers who were later reinstated with back pay)
-- CEO John Stumpf resigned (lost $60M+ in unvested equity)
+- CEO John Stumpf resigned (lost \$60M+ in unvested equity)
 - Former executives charged by DOJ with wire fraud, bank fraud, conspiracy
-- Federal Reserve imposed unprecedented asset cap ($1.95T) → restricted growth until 2021
+- Federal Reserve imposed unprecedented asset cap (\$1.95T) → restricted growth until 2021
 - Wells Fargo lost its "too big to fail" exemption
 
 **Root Cause (GRC Perspective):**
@@ -1776,10 +1776,10 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 | Case | Primary GRC Failure | Root Cause | Penalty | Key Takeaway |
 |------|-------------------|------------|---------|--------------|
-| **Equifax 2017** | Risk Management | No asset inventory, no patching SLA, expired cert | $1.4B | You can't protect what you don't know you have |
+| **Equifax 2017** | Risk Management | No asset inventory, no patching SLA, expired cert | \$1.4B | You can't protect what you don't know you have |
 | **Marriott 2018** | Compliance (GDPR Art 32) | M&A due diligence failed, poor data classification | EUR 18.4M | Security of processing = EFFECTIVE measures, not just policies |
 | **TikTok 2023** | Compliance (GDPR Children) | Inadequate DPIA, dark patterns, default settings | EUR 345M | Children data needs maximum privacy by default |
-| **Wells Fargo 2016** | Governance | Tone at top, weak whistleblower protection | $3B | Governance without enforcement is theater |
+| **Wells Fargo 2016** | Governance | Tone at top, weak whistleblower protection | \$3B | Governance without enforcement is theater |
 
 ---
 
@@ -1792,12 +1792,12 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 |--------|------|-----------|------|--------|
 | **Jurisdiction** | EU/EEA | California, USA | Brazil | Canada |
 | **Effective** | May 2018 | Jan 2020 (amended 2023) | Aug 2020 | Apr 2000 (amended 2015) |
-| **Trigger** | Processing data of EU residents | >$25M revenue or 50K+ CA records | Processing Brazil personal data | Commercial activity in Canada |
+| **Trigger** | Processing data of EU residents | >\$25M revenue or 50K+ CA records | Processing Brazil personal data | Commercial activity in Canada |
 | **Consent** | Explicit, opt-in | Opt-out (sale of data) | Explicit or legitimate interest | Implied or express |
 | **Right to deletion** | Art 17 → "Right to be forgotten" | Yes → businesses must delete on request | Art 18 → similar to GDPR | Limited |
 | **Data portability** | Art 20 → yes | Yes (CPRA) | Art 18 → yes | No |
 | **Breach notification** | 72 hours to DPA | Without undue delay | Reasonable timeframe | As soon as feasible |
-| **Max fine** | EUR 20M or 4% global revenue | $7,500 per intentional violation | 2% revenue in Brazil (BRL 50M max) | CAD 100K |
+| **Max fine** | EUR 20M or 4% global revenue | \$7,500 per intentional violation | 2% revenue in Brazil (BRL 50M max) | CAD 100K |
 | **DPO required** | Yes (thresholds apply) | No explicit requirement | Yes (large-scale processing) | No |
 | **Cross-border transfer** | Adequacy decision or SCCs | No explicit restrictions | Adequacy decision or SCCs | Equivalent protection |
 
@@ -1880,7 +1880,7 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 ### Q10: What is the FAIR model?
 
 
-**A:** FAIR (Factor Analysis of Information Risk) is a quantitative risk analysis model that decomposes risk into Loss Event Frequency (LEF) and Loss Magnitude (LM). LEF is broken into Threat Event Frequency (TEF) and Vulnerability (V). LM is broken into Primary Loss (direct) and Secondary Risk (indirect). FAIR produces risk expressed in monetary terms with confidence intervals → e.g., "We have 80% confidence that the annualized risk of ransomware is between $50K and $200K." It uses Monte Carlo simulation to account for uncertainty and produces probability distributions rather than point estimates.
+**A:** FAIR (Factor Analysis of Information Risk) is a quantitative risk analysis model that decomposes risk into Loss Event Frequency (LEF) and Loss Magnitude (LM). LEF is broken into Threat Event Frequency (TEF) and Vulnerability (V). LM is broken into Primary Loss (direct) and Secondary Risk (indirect). FAIR produces risk expressed in monetary terms with confidence intervals → e.g., "We have 80% confidence that the annualized risk of ransomware is between \$50K and \$200K." It uses Monte Carlo simulation to account for uncertainty and produces probability distributions rather than point estimates.
 
 ### Q11: What are the 12 PCI DSS 4.0 requirements?
 
@@ -1900,7 +1900,7 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 ### Q14: How do you calculate ROSI (Return on Security Investment)?
 
 
-**A:** ROSI = (ALE_before - ALE_after - Cost_of_control) / Cost_of_control x 100%. Example: Before EDR, ALE is $240K/year. EDR costs $50K/year. After EDR, ALE drops to $20K/year. ROSI = ($240K - $20K - $50K) / $50K = 340%. This means every dollar spent on the control saves $3.40. ROSI is essential for making the business case for security investments to CFOs and boards.
+**A:** ROSI = (ALE_before - ALE_after - Cost_of_control) / Cost_of_control x 100%. Example: Before EDR, ALE is \$240K/year. EDR costs \$50K/year. After EDR, ALE drops to \$20K/year. ROSI = (\$240K - \$20K - \$50K) / \$50K = 340%. This means every dollar spent on the control saves \$3.40. ROSI is essential for making the business case for security investments to CFOs and boards.
 
 ### Q15: What are the key elements of an effective security awareness program?
 
@@ -2005,7 +2005,7 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 1. **Risk Assessment:** A hospital uses a legacy EHR system that cannot be patched. The vendor no longer provides support. The system contains 50,000 patient records. Perform a qualitative risk assessment using the 5x5 matrix. Identify controls and calculate residual risk.
 
-2. **BIA Calculation:** An e-commerce company processes $10M/month in revenue. Their payment system has an MTD of 2 hours, RTO of 30 minutes, and RPO of 5 minutes. Calculate revenue loss per minute of downtime. If the system processes 1,000 transactions/minute at $25/transaction, what is the cost of 1 hour of downtime?
+2. **BIA Calculation:** An e-commerce company processes \$10M/month in revenue. Their payment system has an MTD of 2 hours, RTO of 30 minutes, and RPO of 5 minutes. Calculate revenue loss per minute of downtime. If the system processes 1,000 transactions/minute at \$25/transaction, what is the cost of 1 hour of downtime?
 
 3. **ISO 27001 SoA Drafting:** A company is implementing ISO 27001 and has identified that they do not have a formal change management process. Which Annex A control(s) address change management? Draft a policy statement and identify three mandatory procedures.
 
@@ -2049,7 +2049,7 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 - **Security awareness** addresses the human element → the most common attack vector → through training, simulations, and behavioral measurement.
 - **Audits** validate that controls are designed and operating effectively → internal audits for readiness, external audits for certification.
 - **Metrics** connect GRC to business outcomes → KPIs measure performance, KRIs predict risk, and board dashboards communicate status.
-- **Case studies** demonstrate that GRC failure has real consequences → Equifax ($1.4B), Marriott (EUR 18.4M), TikTok (EUR 345M), Wells Fargo ($3B) → all caused by governance and risk management breakdowns, not technology failures.
+- **Case studies** demonstrate that GRC failure has real consequences → Equifax (\$1.4B), Marriott (EUR 18.4M), TikTok (EUR 345M), Wells Fargo (\$3B) → all caused by governance and risk management breakdowns, not technology failures.
 
 ---
 
@@ -2159,7 +2159,7 @@ External audit, regulators, and independent assessors sit outside the model but 
 ### Q28: How do you build a business case for security investment?
 
 
-**A:** A security business case must speak the language of the CFO → ROI and risk reduction. Framework: (1) **Identify the risk** → what could happen (ransomware encrypting 500 servers), probability (20% annual), impact ($5M). (2) **Quantify the current ALE** → $5M x 0.2 = $1M/year. (3) **Propose controls** → EDR + immutable backups + IR retainer = $200K/year. (4) **Quantify residual ALE** → after controls, likelihood drops to 5%, impact drops to $500K. New ALE = $25K/year. (5) **Calculate ROSI** → ($1M - $25K - $200K) / $200K = 387%. (6) **Include qualitative factors** → regulatory fines, reputational damage, customer trust. (7) **Compare to alternatives** → cyber insurance ($150K/year with $500K deductible) vs self-insuring vs accepting risk. (8) **Request specific budget** → with clear deliverables, timeline, and success metrics.
+**A:** A security business case must speak the language of the CFO → ROI and risk reduction. Framework: (1) **Identify the risk** → what could happen (ransomware encrypting 500 servers), probability (20% annual), impact (\$5M). (2) **Quantify the current ALE** → \$5M x 0.2 = \$1M/year. (3) **Propose controls** → EDR + immutable backups + IR retainer = \$200K/year. (4) **Quantify residual ALE** → after controls, likelihood drops to 5%, impact drops to \$500K. New ALE = \$25K/year. (5) **Calculate ROSI** → (\$1M - \$25K - \$200K) / \$200K = 387%. (6) **Include qualitative factors** → regulatory fines, reputational damage, customer trust. (7) **Compare to alternatives** → cyber insurance (\$150K/year with \$500K deductible) vs self-insuring vs accepting risk. (8) **Request specific budget** → with clear deliverables, timeline, and success metrics.
 
 ### Q29: What is the difference between an Information Security Policy and an ISMS Scope?
 
@@ -2179,7 +2179,7 @@ External audit, regulators, and independent assessors sit outside the model but 
 **Step 1: Context Establishment**
 - Organization: HealthCloud Inc.
 - Scope: All systems that store, process, or transmit PHI
-- Risk appetite: "No residual risk above 'Medium' for PHI systems. Maximum annualized loss acceptance: $500K."
+- Risk appetite: "No residual risk above 'Medium' for PHI systems. Maximum annualized loss acceptance: \$500K."
 - Stakeholders: CISO, CTO, VP Product, Compliance Officer, Head of Engineering
 
 **Step 2: Asset Identification**
@@ -2242,16 +2242,16 @@ External audit, regulators, and independent assessors sit outside the model but 
 
 | Risk ID | Response | Treatment | Timeline | Owner | Cost | Target Residual |
 |---------|----------|-----------|----------|-------|------|-----------------|
-| R-001 | Mitigate | Deploy immutable backups (Veeam + S3 Object Lock). Deploy EDR on remaining servers. Complete HIDS on all servers. | 30 days | Infra Team | $40K | 3 (Low) |
-| R-002 | Mitigate | Remediate all SQLi findings from DAST scan. Implement parameterized queries. Deploy RASP. | 60 days | AppSec Team | $30K | 4 (Low) |
-| R-003 | Mitigate | Enforce BitLocker via Intune policy on remaining 30%. Enable remote wipe. Deploy endpoint DLP. | 45 days | IT Team | $25K | 4 (Low) |
-| R-004 | Accept | Current controls adequate. Monitor for new external S3 buckets via Security Hub. | N/A | Cloud Team | $0 | 5 (Low) |
-| R-005 | Mitigate | Deploy separation of duties in RDS (DBA cannot export without manager approval). Deploy UEBA for database access. | 90 days | Security Team | $50K | 4 (Low) |
-| R-006 | Mitigate | Deploy active-passive in us-west-2. Test failover quarterly. | 180 days | Infra Team | $100K | 2 (Low) |
-| R-007 | Mitigate | Implement rate limiting (100 req/min per API key). Deploy API gateway WAF rules. Implement MFA for API key generation. | 30 days | Security Team | $15K | 4 (Low) |
-| R-008 | Accept | Current controls adequate. Add WAF OWASP rules for Node.js zero-day protection. | 30 days | AppSec Team | $5K | 3 (Low) |
-| R-009 | Accept | Current controls adequate. AWS is well-audited. Maintain multi-cloud option for future. | N/A | CISO | $0 | 5 (Low) |
-| R-010 | Mitigate | Deploy knowledge-based authentication (KBA) for help desk. Implement identity verification workflow. | 30 days | IT Team | $10K | 4 (Low) |
+| R-001 | Mitigate | Deploy immutable backups (Veeam + S3 Object Lock). Deploy EDR on remaining servers. Complete HIDS on all servers. | 30 days | Infra Team | \$40K | 3 (Low) |
+| R-002 | Mitigate | Remediate all SQLi findings from DAST scan. Implement parameterized queries. Deploy RASP. | 60 days | AppSec Team | \$30K | 4 (Low) |
+| R-003 | Mitigate | Enforce BitLocker via Intune policy on remaining 30%. Enable remote wipe. Deploy endpoint DLP. | 45 days | IT Team | \$25K | 4 (Low) |
+| R-004 | Accept | Current controls adequate. Monitor for new external S3 buckets via Security Hub. | N/A | Cloud Team | \$0 | 5 (Low) |
+| R-005 | Mitigate | Deploy separation of duties in RDS (DBA cannot export without manager approval). Deploy UEBA for database access. | 90 days | Security Team | \$50K | 4 (Low) |
+| R-006 | Mitigate | Deploy active-passive in us-west-2. Test failover quarterly. | 180 days | Infra Team | \$100K | 2 (Low) |
+| R-007 | Mitigate | Implement rate limiting (100 req/min per API key). Deploy API gateway WAF rules. Implement MFA for API key generation. | 30 days | Security Team | \$15K | 4 (Low) |
+| R-008 | Accept | Current controls adequate. Add WAF OWASP rules for Node.js zero-day protection. | 30 days | AppSec Team | \$5K | 3 (Low) |
+| R-009 | Accept | Current controls adequate. AWS is well-audited. Maintain multi-cloud option for future. | N/A | CISO | \$0 | 5 (Low) |
+| R-010 | Mitigate | Deploy knowledge-based authentication (KBA) for help desk. Implement identity verification workflow. | 30 days | IT Team | \$10K | 4 (Low) |
 
 **Step 7: Risk Register Update & Reporting**
 
@@ -2262,9 +2262,9 @@ Risk reduction: 66%
 **Presentation to Board:**
 - "We identified 10 critical and high risks across our PHI environment"
 - "Current risk posture: 6 risks at High or Critical level"
-- "After proposed controls ($275K investment): all risks reduced to Low or Medium"
-- "Total risk reduction: 66%. ROI: $4.2M in avoided breach costs (conservative estimate based on industry averages)"
-- "Decision required: Approve $275K security budget for Q3 and Q4"
+- "After proposed controls (\$275K investment): all risks reduced to Low or Medium"
+- "Total risk reduction: 66%. ROI: \$4.2M in avoided breach costs (conservative estimate based on industry averages)"
+- "Decision required: Approve \$275K security budget for Q3 and Q4"
 
 ### 15.3 Expanded Privacy: DSAR Response Template
 

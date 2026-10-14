@@ -91,9 +91,9 @@ The critical gap: a model can achieve perfect accuracy in offline evaluation yet
 | Churn Rate | % users lost per month | < 5% monthly |
 | Activation Rate | % new users reaching "aha" moment | > 40% |
 | Stickiness (DAU/MAU) | How often users return | > 0.5 |
-| Revenue per User (ARPU) | Average revenue per active user | $10/month |
+| Revenue per User (ARPU) | Average revenue per active user | \$10/month |
 | Customer Lifetime Value (LTV) | Total revenue from a user over their lifetime | LTV > 3× CAC |
-| Customer Acquisition Cost (CAC) | Cost to acquire one user | < $50 |
+| Customer Acquisition Cost (CAC) | Cost to acquire one user | < \$50 |
 | NPS | Net Promoter Score (scale −100 to +100) | > 50 |
 | CSAT | Customer satisfaction (scale 1–5) | > 4.2 |
 
@@ -329,7 +329,7 @@ Guardrail metrics are non-negotiable thresholds. If a guardrail is breached, the
 |-----------|-----------|----------------------|
 | p99 latency | < 2000ms | Rollback deployment |
 | Error rate | < 1% of requests | Block new experiment |
-| Cost per prediction | < $0.001 | Optimise model size |
+| Cost per prediction | < \$0.001 | Optimise model size |
 | Toxicity rate | < 0.5% of outputs | Block model update |
 | Hallucination rate | < 3% (internal eval) | Block LLM update |
 | User-reported issues | < 5 per 10K sessions | Pause feature rollout |
@@ -1473,7 +1473,7 @@ dashboard.print_dashboard()
 
 ### Q8: Describe a guardrail system for deploying a customer-facing LLM chatbot.
 
-**Answer:** Guardrails include: p99 latency < 2s (user patience), error rate < 1% (reliability), toxicity rate < 0.5% (safety), hallucination rate < 3% (trust), cost per conversation < $0.01 (economics). Any breach blocks deployment or triggers rollback. These prevent catastrophic user experiences and financial overruns.
+**Answer:** Guardrails include: p99 latency < 2s (user patience), error rate < 1% (reliability), toxicity rate < 0.5% (safety), hallucination rate < 3% (trust), cost per conversation < \$0.01 (economics). Any breach blocks deployment or triggers rollback. These prevent catastrophic user experiences and financial overruns.
 
 ### Q9: How do you measure stickiness for an AI product? What is a good benchmark?
 
@@ -1553,14 +1553,14 @@ Write a paragraph justifying each choice.
 ### Exercise 3: ROI Analysis
 
 You are building an AI feature that automates invoice processing. Use the ROI calculator code from Section 1.3.1 with these inputs:
-- 4 engineer-months at $30,000/month
-- $25,000 initial infrastructure
-- $8,000 monthly inference cost
-- $10,000 data labelling cost
+- 4 engineer-months at \$30,000/month
+- \$25,000 initial infrastructure
+- \$8,000 monthly inference cost
+- \$10,000 data labelling cost
 - 15% maintenance overhead
-- $120,000 annual cost savings (2 FTEs redeployed)
-- $60,000 productivity gain (faster processing)
-- 1.5% churn reduction on $3M revenue base
+- \$120,000 annual cost savings (2 FTEs redeployed)
+- \$60,000 productivity gain (faster processing)
+- 1.5% churn reduction on \$3M revenue base
 
 Calculate the Year 1 ROI and payback period. Is the feature worth building? Show your working.
 

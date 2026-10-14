@@ -94,7 +94,7 @@ $$f(t) = \mathcal{F}^{-1}\{F(\omega)\} = \frac{1}{2\pi} \int_{-\infty}^\infty F(
 | $f(t)$ | $F(\omega)$ |
 |--------|-------------|
 | $\delta(t)$ | $1$ |
-| $1$ | $2\pi \delta(\omega)$ |
+| \$1$ | \$2\pi \delta(\omega)$ |
 | $e^{-at}u(t)$, $a > 0$ | $\frac{1}{a + i\omega}$ |
 | $e^{-a|t|}$ | $\frac{2a}{a^2 + \omega^2}$ |
 | $\text{rect}(t/T)$ | $T \text{sinc}(\omega T/2)$ |

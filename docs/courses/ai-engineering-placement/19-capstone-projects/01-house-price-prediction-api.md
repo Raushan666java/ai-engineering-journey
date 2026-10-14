@@ -413,7 +413,7 @@ class ModelTrainer:
 | **R²** | 1 − SS_res/SS_tot | "How much variance is explained?" | Comparing models on the same data |
 
 RMSE punishes large errors because it squares them before averaging. MAE does not. If a
-$50k miss is ten times worse than a $5k miss, optimise RMSE. If it is only slightly worse,
+\$50k miss is ten times worse than a \$5k miss, optimise RMSE. If it is only slightly worse,
 optimise MAE.
 
 ### 2.4 Model registry

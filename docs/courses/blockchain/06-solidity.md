@@ -331,7 +331,7 @@ contract GasOptimized {
 
 | Vulnerability | Description | Damage | Prevention |
 |--------------|-------------|--------|------------|
-| **Reentrancy** | Attacker calls back into contract before state updates | Fund loss (The DAO: $60M) | Check-Effects-Interactions, ReentrancyGuard |
+| **Reentrancy** | Attacker calls back into contract before state updates | Fund loss (The DAO: \$60M) | Check-Effects-Interactions, ReentrancyGuard |
 | **Arithmetic Overflow** | Underflow/overflow in math operations | Incorrect balances | Solidity 0.8+ has built-in overflow checks |
 | **Front-Running** | Attacker observes pending tx and submits own first | MEV extraction, sandwich attacks | Commit-reveal schemes, submarine sends |
 | **Flash Loan Attacks** | Manipulate price oracles using borrowed funds | Protocol insolvency | TWAP oracles, manipulation-resistant AMMs |

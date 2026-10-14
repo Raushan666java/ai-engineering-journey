@@ -181,7 +181,7 @@ LRU(page_requests, k):
 
 **Problem:** You are going skiing for an unknown number of days. You can either rent skis for $1 per day or buy them for $B. The decision is online: you do not know how many days you will ski.
 
-**Real-world analogy:** Should you subscribe to a gym membership ($50/month) or pay per visit ($10/visit)? If you go once, per-visit is cheaper. If you go 10 times, the membership is cheaper. But you do not know how many times you will actually go.
+**Real-world analogy:** Should you subscribe to a gym membership (\$50/month) or pay per visit (\$10/visit)? If you go once, per-visit is cheaper. If you go 10 times, the membership is cheaper. But you do not know how many times you will actually go.
 
 **Algorithm Steps (Deterministic):**
 

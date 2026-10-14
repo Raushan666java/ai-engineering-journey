@@ -3620,7 +3620,7 @@ flowchart LR
 
 2. Write a query using EXISTS to find all departments that have at least one employee.
 
-3. Create a CTE that calculates the total sales per customer, then select customers with total sales > $500.
+3. Create a CTE that calculates the total sales per customer, then select customers with total sales > \$500.
 
 4. Create a view named `recent_orders` showing all orders from the last 30 days.
 

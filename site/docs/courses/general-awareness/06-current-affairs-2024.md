@@ -137,11 +137,11 @@ mindmap
 | Country | Event in 2024 | Significance |
 |---------|--------------|--------------|
 | USA | PM Modi visited USA (Sep 2024); Quad Summit | Defence cooperation (iCET), semiconductor, space |
-| Russia | PM Modi visited Russia (July 2024); BRICS Summit | Trade target $100 billion by 2030, energy cooperation |
+| Russia | PM Modi visited Russia (July 2024); BRICS Summit | Trade target \$100 billion by 2030, energy cooperation |
 | China | Border tensions continue (Depsang, Demchok); Kailash Mansarovar Yatra resumed | Disengagement talks ongoing |
 | Maldives | "India Out" campaign; Male requests India troop withdrawal | India completed withdrawal of military personnel by May 2024 |
 | Bhutan | India-Bhutan Friendship Treaty; Hydropower projects | High-level visits; 10,000 MW hydropower target |
-| UAE | Comprehensive Economic Partnership Agreement expansion | Non-oil bilateral trade target $100 billion by 2030 |
+| UAE | Comprehensive Economic Partnership Agreement expansion | Non-oil bilateral trade target \$100 billion by 2030 |
 | France | PM Modi visited France (July 2024) | Defence (Rafale, Scorpene submarines), civil nuclear |
 
 #### 6.2.3 United Nations & World Affairs 2024
@@ -166,14 +166,14 @@ mindmap
 | Repo Rate (end 2024) | 6.50% (unchanged throughout 2024) |
 | CRR | 4.5% |
 | Fiscal Deficit (2023-24 actual) | 5.6% of GDP (better than 5.8% target) |
-| Foreign Exchange Reserves | ~$700 billion (record high) |
-| FDI inflows | $70+ billion |
+| Foreign Exchange Reserves | ~\$700 billion (record high) |
+| FDI inflows | \$70+ billion |
 | GST Collection | Averaged ₹1.8 lakh crore/month |
 | Rupee vs USD | Averaged ~₹83.5-84/USD |
 
 **Key Economic Developments:**
 - India became the 5th largest economy in the world (surpassed UK in 2023)
-- India surpassed $700 billion in foreign exchange reserves (Dec 2024)
+- India surpassed \$700 billion in foreign exchange reserves (Dec 2024)
 - S&P and Moody's maintained India's sovereign rating outlook (BBB- / Baa3 stable)
 - India's manufacturing PMI remained above 50 (expansion) throughout 2024
 - IPO market boomed with record filings and mega IPOs (Hyundai India IPO ₹27,870 crore — largest ever)
@@ -578,7 +578,7 @@ D) Bangladesh
 <summary>Answer</summary>
 **Answer: B) Philippines**
 
-India exported BrahMos supersonic cruise missiles to the Philippines in 2024, marking the first major export of the BrahMos system. The Philippines acquired the shore-based anti-ship variant for approximately $375 million.
+India exported BrahMos supersonic cruise missiles to the Philippines in 2024, marking the first major export of the BrahMos system. The Philippines acquired the shore-based anti-ship variant for approximately \$375 million.
 </details>
 
 ---
@@ -913,16 +913,16 @@ India's GDP grew by 8.2% in FY 2023-24, making it the fastest-growing major econ
 
 **Q1:** India's foreign exchange reserves crossed which milestone in 2024?
 
-A) $500 billion
-B) $600 billion
-C) $700 billion
-D) $800 billion
+A) \$500 billion
+B) \$600 billion
+C) \$700 billion
+D) \$800 billion
 
 <details>
 <summary>Answer</summary>
-**Answer: C) $700 billion**
+**Answer: C) \$700 billion**
 
-India's foreign exchange reserves crossed the $700 billion mark for the first time in September 2024. This provides a strong cushion against external shocks and covers over 11 months of imports.
+India's foreign exchange reserves crossed the \$700 billion mark for the first time in September 2024. This provides a strong cushion against external shocks and covers over 11 months of imports.
 </details>
 
 **Q2:** Who won the "Ballon d'Or 2024"?

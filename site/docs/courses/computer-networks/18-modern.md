@@ -896,7 +896,7 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 | Bandwidth (down) | 100-200 Mbps | 1-100 Gbps | 100-1000 Mbps |
 | Availability | 99%+ (clear sky) | 99.99% | 99.9% |
 | Coverage | Global (including poles, oceans) | Urban/suburban only | Urban/suburban |
-| Deployment cost per user | ~$600 (dish) | $10K-$50K/km trenching | $500-$1000 (CPE) |
+| Deployment cost per user | ~\$600 (dish) | \$10K-\$50K/km trenching | \$500-\$1000 (CPE) |
 | Weather sensitivity | High (rain fade) | None | Medium |
 | Mobility | In-flight, maritime, RV | Fixed | Pedestrian, vehicle |
 | Power consumption (user) | ~100W (dish) | ~10W (ONT) | ~15W (CPE) |
@@ -1453,7 +1453,7 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 | Model update (OTA) | O(F) download | O(F) storage | Downloading new model weights (10-500 MB per model) |
 | Data aggregation | O(N) merge | O(N) buffer | N = edge devices; merging time-series data is O(N) |
 
-**Why it matters:** Edge computing changes the calculus of where to run computation. Running inference on-device costs battery but saves bandwidth and latency. A single 1080p video stream = 10 Mbps. Streaming 100 cameras to cloud = 1 Gbps bandwidth cost (~$500/month). Edge processing reduces this to &lt;100 Kbps per camera (metadata only).
+**Why it matters:** Edge computing changes the calculus of where to run computation. Running inference on-device costs battery but saves bandwidth and latency. A single 1080p video stream = 10 Mbps. Streaming 100 cameras to cloud = 1 Gbps bandwidth cost (~\$500/month). Edge processing reduces this to &lt;100 Kbps per camera (metadata only).
 
 ### 18.11.5 A&D Table: Edge Computing
 
@@ -1819,7 +1819,7 @@ AWS Wavelength embeds AWS compute (EC2, EBS) at 5G base station sites, providing
 
 Google B4 is the private WAN connecting Google data centers worldwide. Key innovations:
 - **Centralized TE (Traffic Engineering) server:** Collects flow-level utilization from all switches, runs optimization every 60 seconds using min-cost flow with edge weight = link utilization² (penalizes near-congested links).
-- **Bandwidth allocation:** Achieves 95% link utilization (vs 30-40% traditional WAN). Saves $100M+ by avoiding new fiber.
+- **Bandwidth allocation:** Achieves 95% link utilization (vs 30-40% traditional WAN). Saves \$100M+ by avoiding new fiber.
 - **ML-based prediction:** LSTM model predicts traffic matrix 5 minutes ahead. TE server pre-allocates bandwidth based on predictions, reducing on-demand rerouting.
 - **eBPF monitoring:** Google uses eBPF-based monitoring (Maglev load balancer) for per-flow latency and loss at scale.
 
@@ -1977,7 +1977,7 @@ QKD is information-theoretically secure: any eavesdropping is detectable via qua
 
 <details>
 <summary>Solution</summary>
-(a) QKD key rate halves per relay: starting rate 1 Mbps → after 56 relays: 1 Mbps / 2^56 ≈ 1.39 × 10^-11 bps = effectively unusable. (b) To generate 256 bits: 256 / 1.39 × 10^-11 ≈ 1.84 × 10^13 seconds ≈ 584,000 years. (c) QKD detects eavesdropping via quantum measurement disturbance; DH does not detect interception until data is decrypted. (d) Cost: 56 trusted relays at $50K each = $2.8M + fiber lease. PQC (CRYSTALS-Kyber) is software-only, free, and currently believed quantum-resistant. Recommendation: deploy PQC (Kyber-1024 + Dilithium-3) for all branches immediately; QKD only for ultra-high-security metro links (≤100km) between major data centers.
+(a) QKD key rate halves per relay: starting rate 1 Mbps → after 56 relays: 1 Mbps / 2^56 ≈ 1.39 × 10^-11 bps = effectively unusable. (b) To generate 256 bits: 256 / 1.39 × 10^-11 ≈ 1.84 × 10^13 seconds ≈ 584,000 years. (c) QKD detects eavesdropping via quantum measurement disturbance; DH does not detect interception until data is decrypted. (d) Cost: 56 trusted relays at \$50K each = \$2.8M + fiber lease. PQC (CRYSTALS-Kyber) is software-only, free, and currently believed quantum-resistant. Recommendation: deploy PQC (Kyber-1024 + Dilithium-3) for all branches immediately; QKD only for ultra-high-security metro links (≤100km) between major data centers.
 </details>
 
 ---

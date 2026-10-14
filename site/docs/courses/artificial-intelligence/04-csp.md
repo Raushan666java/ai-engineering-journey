@@ -780,7 +780,7 @@ The min-conflicts heuristic is remarkably effective for problems such as $N$-Que
 **Answer:** Variables are the N queens, one per column: $Q_1, Q_2, \ldots, Q_N$. Each variable's domain is the row number $\{1, 2, \ldots, N\}$. Constraints:
 - **Row constraint (binary):** $Q_i \neq Q_j$ for all $i \neq j$ — no two queens share a row.
 - **Diagonal constraint (binary):** $|Q_i - Q_j| \neq |i - j|$ for all $i \neq j$ — no two queens share a diagonal.
-This gives $2 \times \binom{N}{2}$ binary constraints. With forward checking and MRV, N-Queens up to N=1000 can be solved in seconds.
+This gives \$2 \times \binom{N}{2}$ binary constraints. With forward checking and MRV, N-Queens up to N=1000 can be solved in seconds.
 
 ### Q3: How is Sudoku a CSP?
 

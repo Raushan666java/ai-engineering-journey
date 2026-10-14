@@ -1587,7 +1587,7 @@ Step 7: Monitor continuously (logs, anomaly detection)
 
 **Impact:**
 - 230,000+ computers across 150 countries
-- Total damages: $4+ billion
+- Total damages: \$4+ billion
 - NHS (UK National Health Service): 19,000+ appointments cancelled, 6 hospitals diverted
 
 **Technical Breakdown:**

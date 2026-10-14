@@ -382,7 +382,7 @@ where $\binom{p}{n} = \frac{p(p-1)\cdots(p-n+1)}{n!}$.
 
 **Using Series in Machine Learning:**
 
-- **Sigmoid approximation:** For large $|x|$, $1/(1+e^{-x})$ can be approximated by piecewise linear functions
+- **Sigmoid approximation:** For large $|x|$, \$1/(1+e^{-x})$ can be approximated by piecewise linear functions
 - **Log-sum-exp trick:** $\log\sum e^{x_i} = \max x_i + \log\sum e^{x_i - \max x_i}$ uses $\log(1+z)$ expansion
 - **Softmax derivatives:** Require careful application of quotient/chain rules
 - **Gradient descent:** Heavily uses first derivatives; second-order methods use Hessians
@@ -399,7 +399,7 @@ Apply L'H?pital's Rule:
 
 $$\lim_{x \to 0} \frac{e^x - 1 - x}{x^2} = \lim_{x \to 0} \frac{e^x - 1}{2x}$$
 
-Still $0/0$. Apply L'H?pital again:
+Still \$0/0$. Apply L'H?pital again:
 
 $$\lim_{x \to 0} \frac{e^x}{2} = \frac{1}{2}$$
 
@@ -450,7 +450,7 @@ Evaluate $\int \frac{3x + 5}{x^2 - x - 2}\,dx$.
 
 Decompose: $\frac{3x+5}{(x-2)(x+1)} = \frac{A}{x-2} + \frac{B}{x+1}$
 
-Multiply both sides: $3x+5 = A(x+1) + B(x-2)$
+Multiply both sides: \$3x+5 = A(x+1) + B(x-2)$
 
 Substitute $x=2$: $6+5 = A(3) \implies 11 = 3A \implies A = 11/3$
 Substitute $x=-1$: $-3+5 = B(-3) \implies 2 = -3B \implies B = -2/3$
@@ -946,7 +946,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 ### Challenge Problem
 
 **Harmonic Series Divergence:** Prove that $\sum_{n=1}^\infty \frac{1}{n}$ diverges by:
-a) Grouping terms: $1 + \frac{1}{2} + (\frac{1}{3} + \frac{1}{4}) + (\frac{1}{5} + \frac{1}{6} + \frac{1}{7} + \frac{1}{8}) + \cdots$
+a) Grouping terms: \$1 + \frac{1}{2} + (\frac{1}{3} + \frac{1}{4}) + (\frac{1}{5} + \frac{1}{6} + \frac{1}{7} + \frac{1}{8}) + \cdots$
 b) Show each group sums to at least $\frac{1}{2}$
 c) Conclude the series diverges
 

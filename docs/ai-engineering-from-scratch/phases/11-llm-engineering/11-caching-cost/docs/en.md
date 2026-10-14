@@ -1,6 +1,6 @@
 # Caching, Rate Limiting & Cost Optimization
 
-> Most AI startups do not die from bad models. They die from bad unit economics. A single GPT-4o call costs fractions of a cent. Ten thousand users making ten calls per day costs $250 in input tokens alone -- before you charge a single dollar. The companies that survive are the ones that treat every API call as a financial transaction, not a function call.
+> Most AI startups do not die from bad models. They die from bad unit economics. A single GPT-4o call costs fractions of a cent. Ten thousand users making ten calls per day costs \$250 in input tokens alone -- before you charge a single dollar. The companies that survive are the ones that treat every API call as a financial transaction, not a function call.
 
 **Type:** Build
 **Languages:** Python
@@ -21,7 +21,7 @@ You build a RAG chatbot. It works beautifully. Users love it.
 
 Then the invoice arrives.
 
-GPT-5 costs $5 per million input tokens and $15 per million output. Claude Opus 4.7 costs $15 input / $75 output. Gemini 3 Pro costs $1.25 input / $5 output. GPT-5-mini is $0.25/$2. Prices below are illustrative; always check the provider's current pricing page.
+GPT-5 costs \$5 per million input tokens and \$15 per million output. Claude Opus 4.7 costs \$15 input / \$75 output. Gemini 3 Pro costs \$1.25 input / \$5 output. GPT-5-mini is \$0.25/\$2. Prices below are illustrative; always check the provider's current pricing page.
 
 Here is the math that kills startups:
 
@@ -30,11 +30,11 @@ Here is the math that kills startups:
 - 1,000 input tokens per query (system prompt + context + user message)
 - 500 output tokens per response
 
-**Daily input cost:** 10,000 x 10 x 1,000 / 1,000,000 x $2.50 = **$250/day**
-**Daily output cost:** 10,000 x 10 x 500 / 1,000,000 x $10.00 = **$500/day**
-**Monthly total:** **$22,500/month**
+**Daily input cost:** 10,000 x 10 x 1,000 / 1,000,000 x \$2.50 = **\$250/day**
+**Daily output cost:** 10,000 x 10 x 500 / 1,000,000 x \$10.00 = **\$500/day**
+**Monthly total:** **\$22,500/month**
 
-That is just the LLM. Add embeddings, vector database hosting, infrastructure. You are looking at $30,000/month for a chatbot.
+That is just the LLM. Add embeddings, vector database hosting, infrastructure. You are looking at \$30,000/month for a chatbot.
 
 The brutal part: 40-60% of those queries are near-duplicates. Users ask the same questions in slightly different words. Your system prompt -- identical across every request -- gets billed every single time. Context documents retrieved by RAG repeat across users who ask about the same topic.
 
@@ -58,7 +58,7 @@ graph LR
     F --> G[Output Cost<br/>$10.00/1M tokens]
 ```
 
-System prompts are the silent killer. A 1,500-token system prompt sent with every request costs $3.75 per million requests just for that prefix. At 100K requests per day, that is $375/day -- $11,250/month -- for text that never changes.
+System prompts are the silent killer. A 1,500-token system prompt sent with every request costs \$3.75 per million requests just for that prefix. At 100K requests per day, that is \$375/day -- \$11,250/month -- for text that never changes.
 
 ### Provider Caching: Built-in Discounts
 
@@ -70,7 +70,7 @@ All three major providers offer provider-side prompt caching in 2026, but the me
 | OpenAI | Automatic prefix matching | 50% on cache hits | 1,024 tokens | Best-effort up to 1 hour |
 | Google Gemini | Explicit CachedContent API | ~75% reduction (plus storage) | 4,096 (Flash) / 32,768 (Pro) | User-configurable TTL |
 
-**Anthropic's approach** is explicit. You mark sections of your prompt with `cache_control: {"type": "ephemeral"}`. The first request pays a 25% write premium. Subsequent requests with the same prefix get a 90% discount. A 2,000-token system prompt that costs $0.005 normally costs $0.000625 on cache hits. Over 100K requests, that saves $437.50/day.
+**Anthropic's approach** is explicit. You mark sections of your prompt with `cache_control: {"type": "ephemeral"}`. The first request pays a 25% write premium. Subsequent requests with the same prefix get a 90% discount. A 2,000-token system prompt that costs \$0.005 normally costs \$0.000625 on cache hits. Over 100K requests, that saves \$437.50/day.
 
 **OpenAI's approach** is automatic. Any prompt prefix that matches a previous request gets a 50% discount. No markers needed. The tradeoff: less discount, less control, but zero implementation effort.
 
@@ -91,7 +91,7 @@ flowchart TD
     D --> G
 ```
 
-The embedding costs are negligible. OpenAI's text-embedding-3-small costs $0.02 per million tokens. Checking the cache costs almost nothing compared to a full LLM call.
+The embedding costs are negligible. OpenAI's text-embedding-3-small costs \$0.02 per million tokens. Checking the cache costs almost nothing compared to a full LLM call.
 
 ### Exact Caching: Hash and Match
 
@@ -120,7 +120,7 @@ Rate limiting is not just about fairness. It is about survival.
 
 Not every query needs GPT-4o.
 
-"What time does the store close?" does not require a $10/M-output model. GPT-4o-mini at $0.60/M output handles it perfectly. Claude Haiku at $1.25/M output handles it. A simple classifier routes cheap queries to cheap models and complex queries to expensive models.
+"What time does the store close?" does not require a \$10/M-output model. GPT-4o-mini at \$0.60/M output handles it perfectly. Claude Haiku at \$1.25/M output handles it. A simple classifier routes cheap queries to cheap models and complex queries to expensive models.
 
 ```mermaid
 flowchart TD
@@ -183,7 +183,7 @@ Apply these techniques in order. Each layer compounds on the previous ones.
 | 6 | Prompt compression | 10-30% | Medium (rewrite prompts) |
 | 7 | Batching | 50% on eligible | Low (batch API) |
 
-A RAG app applying layers 1-5 typically reduces costs from $22,500/month to $4,000-6,000/month. That is the difference between burning runway and building a business.
+A RAG app applying layers 1-5 typically reduces costs from \$22,500/month to \$4,000-6,000/month. That is the difference between burning runway and building a business.
 
 ### Real Savings: Before and After
 
@@ -191,15 +191,15 @@ Here is a real breakdown for a RAG chatbot serving 10,000 DAU.
 
 | Metric | Before Optimization | After Optimization | Savings |
 |--------|--------------------|--------------------|---------|
-| Monthly LLM cost | $22,500 | $5,200 | 77% |
-| Avg cost per query | $0.0075 | $0.0017 | 77% |
+| Monthly LLM cost | \$22,500 | \$5,200 | 77% |
+| Avg cost per query | \$0.0075 | \$0.0017 | 77% |
 | Cache hit rate | 0% | 52% | -- |
 | Queries routed to mini | 0% | 65% | -- |
 | P95 latency | 2,800ms | 900ms (cache hits: 50ms) | 68% |
-| Monthly embedding cost | $0 | $180 | (new cost) |
-| Total monthly cost | $22,500 | $5,380 | 76% |
+| Monthly embedding cost | \$0 | \$180 | (new cost) |
+| Total monthly cost | \$22,500 | \$5,380 | 76% |
 
-The embedding cost for semantic caching ($180/month) pays for itself within the first hour of cache hits.
+The embedding cost for semantic caching (\$180/month) pays for itself within the first hour of cache hits.
 
 ## Build It
 
@@ -877,7 +877,7 @@ It also produces `outputs/skill-cost-patterns.md` -- a decision framework for ch
 
 4. **Build a model routing classifier.** Replace the keyword-based classifier with an embedding-based one. Embed 50 labeled queries (simple/medium/complex), then classify new queries by finding the nearest labeled example. Measure classification accuracy against a test set of 20 queries.
 
-5. **Implement a circuit breaker with degradation levels.** At 70% budget, log a warning. At 85%, automatically switch all routing to the cheapest model (gpt-4o-mini). At 95%, serve only cached responses and reject new queries. Test by simulating 1,000 requests against a $1.00 budget and verify each threshold triggers correctly.
+5. **Implement a circuit breaker with degradation levels.** At 70% budget, log a warning. At 85%, automatically switch all routing to the cheapest model (gpt-4o-mini). At 95%, serve only cached responses and reject new queries. Test by simulating 1,000 requests against a \$1.00 budget and verify each threshold triggers correctly.
 
 ## Key Terms
 

@@ -21,9 +21,9 @@ You have a base model. Llama 3 8B. You want it to answer customer support ticket
 
 Full fine-tuning updates every parameter in the model. Llama 3 8B has 8 billion parameters. In fp16, each parameter takes 2 bytes. That's 16GB just to load the weights. During training, you also need gradients (16GB), optimizer states for Adam (32GB for momentum + variance), and activations. Total: roughly 56GB of VRAM for a single 8B model.
 
-An A100 80GB can barely fit this. Two A100s cost $3-4/hour on cloud providers. Training for 3 epochs on 50,000 examples takes 6-10 hours. That's $30-40 per experiment. Run 10 experiments to get the hyperparameters right and you've spent $400 before deploying anything.
+An A100 80GB can barely fit this. Two A100s cost \$3-4/hour on cloud providers. Training for 3 epochs on 50,000 examples takes 6-10 hours. That's \$30-40 per experiment. Run 10 experiments to get the hyperparameters right and you've spent \$400 before deploying anything.
 
-Scale this to Llama 3 70B and the numbers get absurd. 140GB for weights alone. You need a cluster. $100+ per experiment.
+Scale this to Llama 3 70B and the numbers get absurd. 140GB for weights alone. You need a cluster. \$100+ per experiment.
 
 There's a deeper problem too. Full fine-tuning modifies every weight in the model. If you fine-tune on customer support data, you might degrade the model's general capabilities. It's called catastrophic forgetting. The model gets better at your task and worse at everything else.
 
@@ -156,11 +156,11 @@ Fine-tuning Llama 3 8B on 50,000 examples (3 epochs):
 
 | Method | GPU | Time | Cost |
 |--------|-----|------|------|
-| Full fine-tune | 2x A100 80GB | 8 hours | ~$32 |
-| LoRA r=16 | 1x A100 40GB | 4 hours | ~$8 |
-| QLoRA r=16 | 1x RTX 4090 24GB | 6 hours | ~$5 |
-| QLoRA r=16 (Unsloth) | 1x RTX 4090 24GB | 2.5 hours | ~$2 |
-| QLoRA r=16 | 1x T4 16GB | 12 hours | ~$4 |
+| Full fine-tune | 2x A100 80GB | 8 hours | ~\$32 |
+| LoRA r=16 | 1x A100 40GB | 4 hours | ~\$8 |
+| QLoRA r=16 | 1x RTX 4090 24GB | 6 hours | ~\$5 |
+| QLoRA r=16 (Unsloth) | 1x RTX 4090 24GB | 2.5 hours | ~\$2 |
+| QLoRA r=16 | 1x T4 16GB | 12 hours | ~\$4 |
 
 QLoRA on a single consumer GPU costs less than a lunch. This is why the open-weight fine-tuning community exploded in 2023 and why every training framework below ships QLoRA by default in 2026.
 

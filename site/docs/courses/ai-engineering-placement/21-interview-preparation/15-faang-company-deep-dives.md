@@ -197,7 +197,7 @@ Result: Quantified impact. Numbers, percentages, dollars, time saved.
 Example Situation: "I was a backend engineer on a 5-person ML team at a fintech startup with 2M users. Our recommendation system had 60% click-through rate and we needed to reach 75% within one quarter."
 Example Task: "I was responsible for redesigning the candidate generation pipeline to surface 10x more relevant items within the 200ms latency budget."
 Example Action: "I proposed replacing matrix factorization with a two-tower DNN. I built the data pipeline in Spark, implemented the model in PyTorch with distributed training on 8 GPUs, and deployed it with 5% canary traffic."
-Example Result: "The new model increased CTR from 60% to 78% (30% relative improvement), generating $2M annual revenue lift. P99 latency remained under 180ms."
+Example Result: "The new model increased CTR from 60% to 78% (30% relative improvement), generating \$2M annual revenue lift. P99 latency remained under 180ms."
 
 ### Story Categories
 

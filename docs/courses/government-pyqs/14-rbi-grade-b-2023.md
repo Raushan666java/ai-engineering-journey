@@ -232,17 +232,17 @@ D) No limit
 
 **Q12.** India's Foreign Exchange Reserves (as of October 2023) touched approximately?
 
-A) $550 billion  
-B) $580 billion  
-C) $600 billion  
-D) $630 billion  
+A) \$550 billion  
+B) \$580 billion  
+C) \$600 billion  
+D) \$630 billion  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) $580 billion
+**Answer:** B) \$580 billion
 
-**Explanation:** India's forex reserves were approximately $580 billion in October 2023, recovered from a low of $524 billion in October 2022.
+**Explanation:** India's forex reserves were approximately \$580 billion in October 2023, recovered from a low of \$524 billion in October 2022.
 
 </details>
 

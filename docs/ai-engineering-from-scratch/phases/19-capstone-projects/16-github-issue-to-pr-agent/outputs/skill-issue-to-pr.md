@@ -16,7 +16,7 @@ Build plan:
 3. Dispatcher enforces per-repo per-day $ and PR-count ceilings; spins up an ECS Fargate task per allowed job.
 4. Environment inference: detect language + package manager + runtime from repo contents. Synthesize a Dockerfile on the fly if absent.
 5. Daytona or E2B sandbox per task. Clone repo into a fresh `git worktree` + agent branch.
-6. Agent loop (mini-swe-agent or SWE-agent v2 over Claude Opus 4.7 or GPT-5.4-Codex). Tools: ripgrep, tree-sitter repo-map, read_file, edit_file, run_tests, git. Caps: $20, 30 turns, 30 min.
+6. Agent loop (mini-swe-agent or SWE-agent v2 over Claude Opus 4.7 or GPT-5.4-Codex). Tools: ripgrep, tree-sitter repo-map, read_file, edit_file, run_tests, git. Caps: \$20, 30 turns, 30 min.
 7. Verify: full CI in-sandbox; coverage delta via jacoco / coverage.py; label `needs-review` if delta < -2%; halt if CI red.
 8. PR open via GitHub API with rationale, diff summary, trace URL, cost, turns.
 9. Observability: Langfuse trace per PR; log scrub for secrets; per-repo budget dashboard.

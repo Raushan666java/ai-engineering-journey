@@ -2982,7 +2982,7 @@ Choosing the right DBMS depends on workload characteristics, consistency require
 
 ### Advanced
 
-11. A bank's file-based system crashes while processing a fund transfer. The system had debited $1,000 from account X but had not yet credited account Y. Describe the problem and explain how a DBMS would prevent it. Write the SQL transaction that would ensure atomicity.
+11. A bank's file-based system crashes while processing a fund transfer. The system had debited \$1,000 from account X but had not yet credited account Y. Describe the problem and explain how a DBMS would prevent it. Write the SQL transaction that would ensure atomicity.
 
 12. Research and compare the role of a Database Administrator (DBA) versus a Database Developer. What tasks overlap? What tasks are distinct? Present your findings in a short paragraph.
 

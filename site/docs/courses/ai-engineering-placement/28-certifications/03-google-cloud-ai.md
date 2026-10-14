@@ -128,7 +128,7 @@ The exam is divided into six domains with the following approximate weight distr
 
 - **Duration**: 2 hours
 - **Questions**: 50–60 multiple-choice and multiple-select
-- **Cost**: $200 (plus applicable taxes)
+- **Cost**: \$200 (plus applicable taxes)
 - **Delivery**: Online proctored or in-person testing center
 - **Language**: English and Japanese
 - **Validity**: 2 years (recertification required)
@@ -925,7 +925,7 @@ Choosing the right certification depends on your role, experience level, and car
 
 | Dimension | Google Cloud (PMLE) | AWS (MLS-C01) | Azure (AI-102 + DP-100) |
 |-----------|---------------------|---------------|-------------------------|
-| **Cost** | $200 | $300 | $165 each, $330 total |
+| **Cost** | \$200 | \$300 | \$165 each, \$330 total |
 | **Duration** | 2 hours | 3 hours | 2 hours each |
 | **Questions** | 50-60 | 65 | 40-60 each |
 | **Validity** | 2 years | 3 years | 1 year (renewable) |
@@ -941,7 +941,7 @@ Choosing the right certification depends on your role, experience level, and car
 Google requires recertification for Professional certifications every 2 years. The recertification process:
 
 - **Recertification exam**: Same format as the full exam (50-60 questions, 2 hours)
-- **Cost**: $100 (half the full exam price)
+- **Cost**: \$100 (half the full exam price)
 - **Window**: 60 days before to 60 days after your certification expiry
 - **Grace period**: 60 days after expiry to recertify without losing your credential
 - **Study materials**: New exam guide is published when recertification becomes available
@@ -1182,14 +1182,14 @@ Include a Mermaid diagram of the pipeline architecture and Python pseudocode for
 
 ## Summary
 
-Google Cloud offers three AI certification tracks with a strong MLOps and practical, scenario-based emphasis. The Professional ML Engineer (P-MLE-01) is the flagship certification: $200, 2 hours, 50-60 questions, valid 2 years, with Data Preparation, Model Development, Model Deployment, and MLOps and Monitoring each weighted at 20%, and it tests real Vertex AI skills like custom training with hyperparameter tuning, Kubeflow-based pipelines, endpoints, and drift monitoring. The Vertex AI Specialization (launched 2024) goes deeper into the platform: Model Garden with 150+ foundation models, Feature Store, Experiments, training infrastructure choices (AutoML vs custom vs custom container vs distributed), and online versus batch prediction. The Gemini Certification covers the multimodal Gemini API (context windows up to 2M tokens for 1.5 Pro), grounding via Google Search or enterprise data stores, Vertex AI Agent Builder, and safety configuration across hate, harassment, and dangerous content. Preparation follows an 8-week plan combining Cloud Skills Boost (Qwiklabs) hands-on labs, at least 40 lab hours, practice exams, and official documentation. Recertification is required every 2 years at a reduced $100 price, juniors should start with the Associate Cloud Engineer path, and a dual PMLE plus Gemini combination covers most team needs for generative AI products.
+Google Cloud offers three AI certification tracks with a strong MLOps and practical, scenario-based emphasis. The Professional ML Engineer (P-MLE-01) is the flagship certification: \$200, 2 hours, 50-60 questions, valid 2 years, with Data Preparation, Model Development, Model Deployment, and MLOps and Monitoring each weighted at 20%, and it tests real Vertex AI skills like custom training with hyperparameter tuning, Kubeflow-based pipelines, endpoints, and drift monitoring. The Vertex AI Specialization (launched 2024) goes deeper into the platform: Model Garden with 150+ foundation models, Feature Store, Experiments, training infrastructure choices (AutoML vs custom vs custom container vs distributed), and online versus batch prediction. The Gemini Certification covers the multimodal Gemini API (context windows up to 2M tokens for 1.5 Pro), grounding via Google Search or enterprise data stores, Vertex AI Agent Builder, and safety configuration across hate, harassment, and dangerous content. Preparation follows an 8-week plan combining Cloud Skills Boost (Qwiklabs) hands-on labs, at least 40 lab hours, practice exams, and official documentation. Recertification is required every 2 years at a reduced \$100 price, juniors should start with the Associate Cloud Engineer path, and a dual PMLE plus Gemini combination covers most team needs for generative AI products.
 
 ## Practical Takeaways
 
 - The **Professional ML Engineer** exam has six domains with heavy emphasis on data preparation (20%), model development (20%), deployment (20%), and MLOps (20%)
 - **Vertex AI Specialization** dives deep into Model Garden, Feature Store, Experiments, and prediction infrastructure
 - **Gemini Certification** covers multimodal LLM applications, agent building with Vertex AI Agent Builder, grounding, and safety
-- Google Cloud certifications require recertification every 2 years (Professional level) with a reduced-price exam ($100)
+- Google Cloud certifications require recertification every 2 years (Professional level) with a reduced-price exam (\$100)
 - Use **Google Cloud Skills Boost** (Qwiklabs) for hands-on practice — it provides temporary GCP environments with pre-configured resources
 - **Vertex AI Pipelines** (based on Kubeflow Pipelines) is essential for production MLOps — understand component definitions, conditional execution, and pipeline compilation
 - **Model Garden** provides one-click deployment of 150+ foundation models including Gemini, Llama, Claude, and open-source models
@@ -1211,7 +1211,7 @@ Google Cloud offers three AI certification tracks with a strong MLOps and practi
 ## Revision Notes
 
 - **Exam code**: P-MLE-01 (Professional ML Engineer)
-- **Cost**: $200; recertification $100
+- **Cost**: \$200; recertification \$100
 - **Duration**: 2 hours, 50-60 questions
 - **Validity**: 2 years; recertify via exam
 - **Six domains**: Problem Framing (10%), Data Prep (20%), Model Dev (20%), Validation (10%), Deployment (20%), MLOps (20%)
@@ -1222,7 +1222,7 @@ Google Cloud offers three AI certification tracks with a strong MLOps and practi
 - **Safety**: HarmCategory thresholds — BLOCK_ONLY_HIGH, BLOCK_MEDIUM_AND_ABOVE, BLOCK_LOW_AND_ABOVE
 - **CI/CD for ML**: Cloud Build → Vertex AI Pipelines → Model Registry → Endpoint → Monitoring → Retraining
 - **Skills Boost**: qwiklabs.com — learning paths, quests, hands-on labs with GCP credits
-- **Recertification**: Required every 2 years, $100, 60-day window before/after expiry
+- **Recertification**: Required every 2 years, \$100, 60-day window before/after expiry
 
 ## Placement Section
 

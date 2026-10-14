@@ -2859,7 +2859,7 @@ volumes:
 
 2. **Value Objects**: Implement value objects for `Email`, `PhoneNumber`, and `Quantity` following the patterns shown in `Money`. Include validation, immutability, and equality.
 
-3. **Aggregate Design**: Design an `Order` aggregate that enforces the invariant that an order cannot exceed $10,000 total. Write tests proving the invariant holds.
+3. **Aggregate Design**: Design an `Order` aggregate that enforces the invariant that an order cannot exceed \$10,000 total. Write tests proving the invariant holds.
 
 4. **Synchronous Communication**: Create a Feign client for a `ShippingService` and integrate it into the order flow to fetch shipping rates after an order is placed.
 

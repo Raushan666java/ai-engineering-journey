@@ -1213,8 +1213,8 @@ flowchart TD
 1. A notification service sends 10M push notifications per day. Each notification payload is 4 KB. Compute daily bandwidth, and estimate the number of servers needed if each server handles 1,000 push operations per second.
    **Solution:** Daily bandwidth = 10M x 4 KB = 40 GB/day. Peak QPS = 10M / 86,400 ≈ 116 QPS. At 1,000 ops/sec per server, 1 server suffices for average load; 2-3 servers recommended for peak and failover.
 
-2. A video platform with 10M DAU streams 30 minutes of video per user per day at 10 Mbps. Compute daily data transfer, CDN cost (assume $0.02/GB), and suggest two optimizations.
-   **Solution:** Daily transfer = 10M x 30 min x 60 s x 10 Mbps / 8 = 2.25e16 bits = 2.81 PB/day. CDN cost = 2.81e6 GB x $0.02 = $56,200/day. Optimizations: (1) Encode at multiple bitrates and serve lowest acceptable quality; (2) Cache popular content at edge with longer TTL.
+2. A video platform with 10M DAU streams 30 minutes of video per user per day at 10 Mbps. Compute daily data transfer, CDN cost (assume \$0.02/GB), and suggest two optimizations.
+   **Solution:** Daily transfer = 10M x 30 min x 60 s x 10 Mbps / 8 = 2.25e16 bits = 2.81 PB/day. CDN cost = 2.81e6 GB x \$0.02 = \$56,200/day. Optimizations: (1) Encode at multiple bitrates and serve lowest acceptable quality; (2) Cache popular content at edge with longer TTL.
 
 3. A search engine needs to return results in under 200ms. The index lookup takes 50ms, query parsing 10ms, ranking 120ms, and network RTT 40ms. Explain the bottleneck and suggest a mitigation.
    **Solution:** Total = 50+10+120+40 = 220ms, exceeding 200ms. Bottleneck is ranking (120ms). Mitigation: pre-compute ranking features, use tiered ranking (lightweight model first, full model only for top candidates), or parallelize query parsing + index lookup with ranking.

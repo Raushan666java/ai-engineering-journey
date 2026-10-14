@@ -127,7 +127,7 @@ An elevator zigzagging between random floors (FCFS) wastes time. Moving directio
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| Cost/GB | Very low (~$15/TB) | → |
+| Cost/GB | Very low (~\$15/TB) | → |
 | Capacity | Up to 24+ TB/drive | → |
 | Random IOPS | → | ~100–200 (vs SSD ~100K+) |
 | Sequential BW | ~200 MB/s | → |

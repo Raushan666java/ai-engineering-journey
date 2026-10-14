@@ -2997,7 +2997,7 @@ The architectural pattern is consistent: financial domain models with encryption
 
 2. **Multi-Jurisdiction KYC Pipeline**. Extend the `KycVerificationAgent` to support tiered KYC levels (basic, intermediate, full) based on transaction volume thresholds. Implement jurisdiction-specific document requirements (US requires SSN, EU requires proof-of-address, UAE requires Emirates ID).
 
-3. **Automated Rebalance Scheduler**. Create a scheduled Artisan command that runs the `PortfolioAgent` daily for all active portfolios, executes rebalance trades under a configurable threshold ($100 minimum trade), and notifies users when trades are placed.
+3. **Automated Rebalance Scheduler**. Create a scheduled Artisan command that runs the `PortfolioAgent` daily for all active portfolios, executes rebalance trades under a configurable threshold (\$100 minimum trade), and notifies users when trades are placed.
 
 #### Challenge Problem
 
@@ -3005,9 +3005,9 @@ The architectural pattern is consistent: financial domain models with encryption
 
 1. **Payment Gateway Agent**: Processes incoming payments through the `FraudDetectionAgent` for pre-authorization screening, routes approved payments to the payment processor, and logs all decisions through the `AuditTrail` model with encrypted PII fields
 
-2. **Daily Reconciliation Agent**: A scheduled agent (runs at 02:00 daily) that invokes `PaymentReconciliationAgent` for the previous day, flags unmatched records, and dispatches alerts for discrepancies exceeding $1,000 or 24-hour aging
+2. **Daily Reconciliation Agent**: A scheduled agent (runs at 02:00 daily) that invokes `PaymentReconciliationAgent` for the previous day, flags unmatched records, and dispatches alerts for discrepancies exceeding \$1,000 or 24-hour aging
 
-3. **Regulatory Filing Agent**: A monthly agent that aggregates all compliance data, generates SAR filings for fraudulent transactions and currency transaction reports (CTRs) for cash-equivalent transactions over $10,000, and stores the formatted reports via the `RegulatoryReportAgent`
+3. **Regulatory Filing Agent**: A monthly agent that aggregates all compliance data, generates SAR filings for fraudulent transactions and currency transaction reports (CTRs) for cash-equivalent transactions over \$10,000, and stores the formatted reports via the `RegulatoryReportAgent`
 
 4. **Customer Risk Reassessment Agent**: An event-driven agent that triggers when a customer's transaction volume exceeds a 30-day threshold, re-runs the `KycVerificationAgent` risk profiling, and escalates high-risk profiles to the compliance team
 

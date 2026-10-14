@@ -823,7 +823,7 @@ Observability enables understanding complex distributed systems. The three pilla
 3. Define SLOs for an API service: latency SLO (95% of requests under 300ms) and availability SLO (99.9%). Calculate the error budgets. Implement an SLO burn-rate alert that fires when error budget is consumed too quickly.
 4. Configure the OpenTelemetry Collector pipeline from the TypeScript example. Set up batch processing, memory limiting, and attribute enrichment. Export traces to Tempo, metrics to Prometheus, and logs to Loki.
 5. Implement custom span attributes and events in a sample application. Add business context (user ID, order ID) as span attributes and record meaningful events (cache hit/miss, retry attempt) as span events.
-6. Calculate the cost of running observability for a 20-service microservice architecture generating 500 spans/sec per service. Compare head-based sampling at 10% vs tail-based sampling that keeps all error and slow traces. Assume storage costs of $0.02/GB for traces and $0.01/GB for logs.
+6. Calculate the cost of running observability for a 20-service microservice architecture generating 500 spans/sec per service. Compare head-based sampling at 10% vs tail-based sampling that keeps all error and slow traces. Assume storage costs of \$0.02/GB for traces and \$0.01/GB for logs.
 
 ### Challenge Problem
 

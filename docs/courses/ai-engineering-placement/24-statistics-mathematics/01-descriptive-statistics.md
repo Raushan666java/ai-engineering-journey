@@ -114,8 +114,8 @@ Imagine a class of 30 students takes a test. The teacher wants to understand how
 **Industry Example — Feature Distribution in ML**
 
 When building a fraud detection model, you examine the distribution of "transaction amount":
-- Mean = $125, Median = $45 — this positive skew tells you most transactions are small but a few are huge
-- IQR = $20-$120 tells you where the bulk of transactions lie
+- Mean = \$125, Median = \$45 — this positive skew tells you most transactions are small but a few are huge
+- IQR = \$20-\$120 tells you where the bulk of transactions lie
 - Kurtosis = 8.5 (high) means there are many outlier transactions — exactly what fraudsters create
 - You decide to log-transform the feature to reduce skew before training
 

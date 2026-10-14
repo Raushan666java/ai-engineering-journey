@@ -302,7 +302,7 @@ flowchart TD
 [Paragraph 1: Who you are]
 Senior Software Engineer with 5+ years of experience in building
 scalable distributed systems. Currently at Amazon, I work on payment
-infrastructure handling $10B+ annual volume.
+infrastructure handling \$10B+ annual volume.
 
 [Paragraph 2: Key achievements]
 → Architected migration from monolith to 12 microservices

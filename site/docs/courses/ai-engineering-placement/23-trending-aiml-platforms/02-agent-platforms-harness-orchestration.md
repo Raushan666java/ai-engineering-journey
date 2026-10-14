@@ -688,7 +688,7 @@ D) When you need budget governance
 2. **Hermes Sub-Agent**: Spawn a Hermes sub-agent for a specific research task, give it context from the parent agent, and return structured findings
 3. **Paperclip Company**: Design a 4-agent company (CEO, Engineer, QA, Marketer) with budgets, assign a project, and print the org chart
 4. **Dify Workflow**: Model a customer support triage workflow with classification → knowledge base search → escalation rules using Dify's app configuration DSL
-5. **Comparison Report**: Given a scenario (2 developers, 5 agents, $500/month budget, need Slack integration), recommend the optimal platform mix an
+5. **Comparison Report**: Given a scenario (2 developers, 5 agents, \$500/month budget, need Slack integration), recommend the optimal platform mix an
 
 ## Revision Notes
 

@@ -1879,7 +1879,7 @@ Bluetooth uses a **polling-based** approach: the master polls each slave, and th
 | Bandwidth per station | 16 Mbps shared | 1 Gbps dedicated |
 | Peak utilization | 72 % | 5 % |
 | VoIP quality | Poor (jitter > 50 ms) | Excellent (jitter < 1 ms) |
-| Cost per port | $150 (Token Ring switch) | $25 (GigE switch) |
+| Cost per port | \$150 (Token Ring switch) | \$25 (GigE switch) |
 | Failure impact | Single station could disable network | Isolated per port |
 
 **Lesson:** While Token Ring provides deterministic access, the cost, complexity, and limited bandwidth made switched Ethernet the clear winner. Modern switched Ethernet with full-duplex operation has no contention — each port is its own collision domain.

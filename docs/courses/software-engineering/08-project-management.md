@@ -344,7 +344,7 @@ EVM integrates scope, schedule, and cost data into a unified performance measure
 
 #### Worked EVM Example
 
-A project has a Budget at Completion (BAC) of $500,000. At month 6, planned completion is 50%. Actual work completed is 40%. Actual costs incurred are $230,000.
+A project has a Budget at Completion (BAC) of \$500,000. At month 6, planned completion is 50%. Actual work completed is 40%. Actual costs incurred are \$230,000.
 
 ```
 PV = 50% × $500,000 = $250,000
@@ -464,7 +464,7 @@ class PlanningPokerSimulator {
 
 ### Case Study 1: Large Government IT Project — Estimation and Recovery
 
-A government agency contracted a $50M benefits management system. After 18 months, the project was 60% over budget and 12 months behind schedule.
+A government agency contracted a \$50M benefits management system. After 18 months, the project was 60% over budget and 12 months behind schedule.
 
 **Analysis:**
 - COCOMO II estimate assumed 150 KSLOC; actual was 280 KSLOC (underestimation of size)
@@ -477,7 +477,7 @@ A government agency contracted a $50M benefits management system. After 18 month
 3. **EVM tracking:** Established weekly EVM reporting with SPI and CPI targets. SPI must stay above 0.85.
 4. **Risk mitigation:** Added 15% schedule buffer. Cross-trained team members.
 
-**Result:** Project completed 8 months late (instead of forecast 18+ months). Final cost $62M (instead of forecast $85M). Delivered core functionality; Phase 2 addressed deferred scope.
+**Result:** Project completed 8 months late (instead of forecast 18+ months). Final cost \$62M (instead of forecast \$85M). Delivered core functionality; Phase 2 addressed deferred scope.
 
 ### Case Study 2: Startup MVP — Planning Poker and Agile Estimation
 
@@ -493,11 +493,11 @@ A 5-person startup building a fintech mobile app used planning poker for all spr
 - After 3 sprints, calibration factors were applied: multiply all estimates by 1.5
 - Velocity stabilized at 28-32 points per sprint
 
-**Results:** Delivered MVP in 6 months (within 10% of revised estimate). Raised $5M Series A. Used EVM-like tracking to show investors objective progress metrics.
+**Results:** Delivered MVP in 6 months (within 10% of revised estimate). Raised \$5M Series A. Used EVM-like tracking to show investors objective progress metrics.
 
 ### Case Study 3: Enterprise Migration — Risk Management
 
-A Fortune 500 company migrating from legacy ERP to SAP. Budget: $100M. Timeline: 24 months.
+A Fortune 500 company migrating from legacy ERP to SAP. Budget: \$100M. Timeline: 24 months.
 
 **Risk Management Approach:**
 1. **Risk identification:** Workshop with 30 stakeholders identified 85 risks
@@ -506,9 +506,9 @@ A Fortune 500 company migrating from legacy ERP to SAP. Budget: $100M. Timeline:
    - Data migration corruption (exposure 0.72): Mitigated with parallel runs and reconciliation scripts
    - Key staff attrition (exposure 0.56): Mitigated with knowledge retention program and 3-month notice period
    - Scope creep (exposure 0.63): Mitigated with strict change control and steering committee approval for all changes
-4. **Contingency reserve:** 15% of budget ($15M) held for realized risks
+4. **Contingency reserve:** 15% of budget (\$15M) held for realized risks
 
-**Results:** Used $11M of contingency. Go-live achieved in 26 months (only 2 months late). Budget within 3% of original + contingency.
+**Results:** Used \$11M of contingency. Go-live achieved in 26 months (only 2 months late). Budget within 3% of original + contingency.
 
 ## TypeScript Project Management Tools
 
@@ -966,7 +966,7 @@ Scheduling methods include Gantt charts for visualisation, PERT for handling est
 | Q2 | B | PERT expected duration = (O + 4M + P) / 6, a weighted average formula |
 | Q3 | C | The critical path is the longest path through the network, determining minimum project duration |
 | Q4 | C | Avoidance changes the project approach to eliminate the risk entirely |
-| Q5 | B | CV = EV - AC = $200K - $230K = -$30K (negative = over budget) |
+| Q5 | B | CV = EV - AC = \$200K - \$230K = -\$30K (negative = over budget) |
 
 **Q1: What does a Schedule Performance Index (SPI) of 0.8 indicate?**
 - A) The project is 20% under budget
@@ -992,11 +992,11 @@ Scheduling methods include Gantt charts for visualisation, PERT for handling est
 - C) Avoidance
 - D) Acceptance
 
-**Q5: At month 6 of a 12-month project, the EV is $200K, PV is $250K, and AC is $230K. What is the Cost Variance?**
-- A) -$50K
-- B) -$30K
-- C) $20K
-- D) $50K
+**Q5: At month 6 of a 12-month project, the EV is \$200K, PV is \$250K, and AC is \$230K. What is the Cost Variance?**
+- A) -\$50K
+- B) -\$30K
+- C) \$20K
+- D) \$50K
 
 ## Exercises
 
@@ -1120,7 +1120,7 @@ console.log(`Duration: ${criticalPathResult.duration} days`);
 ```
 </details>
 
-4. **EVM Analysis:** Use the EVM calculator to analyse a project with BAC=$800K, 4 months in, 40% planned, 35% actual work done, $310K actual cost. Forecast EAC and completion date.
+4. **EVM Analysis:** Use the EVM calculator to analyse a project with BAC=\$800K, 4 months in, 40% planned, 35% actual work done, \$310K actual cost. Forecast EAC and completion date.
 
 <details>
 <summary>Click for solution</summary>

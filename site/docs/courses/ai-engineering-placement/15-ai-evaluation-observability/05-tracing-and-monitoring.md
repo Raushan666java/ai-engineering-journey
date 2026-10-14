@@ -638,7 +638,7 @@ large inputs). For LLM applications, P95 is the most commonly used SLA metric be
   </summary>
   <div class="tp-qa-answer">
 <p>Cost tracking at the individual request level requires: (1) Capturing token counts (prompt tokens, completion tokens) from the LLM provider's response. (2) Applying the provider's pricing formula — e.g.,.
-GPT-4 costs $10/1M input tokens and $30/1M output tokens. (3) Calculating cost per request: cost = (prompt_tokens — input_price + completion_tokens — output_price) / 1,000,000. (4) Aggregating costs across spans to get total request cost (including embedding costs,.
+GPT-4 costs \$10/1M input tokens and \$30/1M output tokens. (3) Calculating cost per request: cost = (prompt_tokens — input_price + completion_tokens — output_price) / 1,000,000. (4) Aggregating costs across spans to get total request cost (including embedding costs,.
 vector search costs). (5) Tagging costs with tenant_id, model_name, and endpoint for per-tenant billing. Store cost per trace in the observability system and.
 create dashboards for cost trends over time.</p>
   </div>
@@ -826,7 +826,7 @@ Answer: B
 
 2. Build a latency tracker that records P50, P95, P99 from 1000 simulated requests (mean=200ms, std=50ms). Identify the slowest 1% of requests.
 
-3. Create a throughput and cost tracker. Simulate 1 hour of traffic at 10 RPM with avg cost $0.002/req. Report RPS, RPM, total cost, and estimated daily cost.
+3. Create a throughput and cost tracker. Simulate 1 hour of traffic at 10 RPM with avg cost \$0.002/req. Report RPS, RPM, total cost, and estimated daily cost.
 
 4. Build a dashboard with 3 panels: latency (P95 line chart), throughput (RPM gauge), and cost (per-component breakdown). Simulate 1 hour of data.
 

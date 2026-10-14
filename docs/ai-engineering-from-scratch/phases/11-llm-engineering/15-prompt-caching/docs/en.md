@@ -9,7 +9,7 @@
 
 ## The Problem
 
-A coding agent sends the same 15,000-token system prompt to Claude on every turn of a conversation. Twenty turns at $3/M input tokens is $0.90 in input cost alone — before any of the user's actual messages. Multiply by 10,000 daily conversations and the bill hits $9,000/day for text that never changes.
+A coding agent sends the same 15,000-token system prompt to Claude on every turn of a conversation. Twenty turns at \$3/M input tokens is \$0.90 in input cost alone — before any of the user's actual messages. Multiply by 10,000 daily conversations and the bill hits \$9,000/day for text that never changes.
 
 You cannot shrink the prompt without hurting quality. You cannot avoid sending it — the model needs it on every turn. The only move is to stop paying full price for a prefix the provider has already seen.
 

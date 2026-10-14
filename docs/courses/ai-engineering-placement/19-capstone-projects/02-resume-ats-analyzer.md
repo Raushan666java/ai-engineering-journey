@@ -742,8 +742,8 @@ high-skills candidate with low score) for manual review. (7) Diverse training �
 <p>Enterprise scaling: (1) Async processing — use Celery or Redis Queue for background job processing. When a user uploads a resume,.
 the request returns immediately with a job ID, and the results are fetched asynchronously. (2) Batch LLM calls — group multiple resume analyses into one API call with a prompt that lists multiple resumes + one JD,.
 comparing all at once. (3) Caching — cache LLM results for identical JD+resume pairs using content hash keys. (4) Cost management — use GPT-3.5-turbo for.
-initial screening (cost ~$0.001/resume), escalate to GPT-4 only for shortlisted candidates ($0.03/resume). (5) Parallel processing — process multiple resumes in parallel using concurrent.futures or.
-asyncio with rate limiting. (6) Horizontal scaling — add more worker instances based on queue depth. Target: 1000+ resumes processed per hour at <$10/hour cost.</p>
+initial screening (cost ~\$0.001/resume), escalate to GPT-4 only for shortlisted candidates (\$0.03/resume). (5) Parallel processing — process multiple resumes in parallel using concurrent.futures or.
+asyncio with rate limiting. (6) Horizontal scaling — add more worker instances based on queue depth. Target: 1000+ resumes processed per hour at <\$10/hour cost.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

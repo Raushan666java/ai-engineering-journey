@@ -59,20 +59,20 @@ graph TD
 
 **Automated metrics** compare output text against reference answers using algorithms. BLEU measures n-gram overlap (originally for machine translation). ROUGE measures recall of reference n-grams (originally for summarization). BERTScore uses BERT embeddings to measure semantic similarity. These are fast and cheap -- you can score 10,000 outputs in seconds. But they miss nuance. Two answers can have zero word overlap and both be correct. One answer can have high ROUGE and be completely wrong in context.
 
-**LLM-as-judge** uses a strong model (GPT-5, Claude Opus 4.7, Gemini 3 Pro) to grade outputs against a rubric. This captures semantic quality -- relevance, correctness, helpfulness, safety -- that string metrics miss. It costs money (~$8 per 1,000 judge calls with GPT-5-mini, ~$25 with Claude Opus 4.7) but correlates 82-88% with human judgment on well-designed rubrics — see Phase 5 · 27 for the calibration recipe.
+**LLM-as-judge** uses a strong model (GPT-5, Claude Opus 4.7, Gemini 3 Pro) to grade outputs against a rubric. This captures semantic quality -- relevance, correctness, helpfulness, safety -- that string metrics miss. It costs money (~\$8 per 1,000 judge calls with GPT-5-mini, ~\$25 with Claude Opus 4.7) but correlates 82-88% with human judgment on well-designed rubrics — see Phase 5 · 27 for the calibration recipe.
 
 **Human evaluation** is the gold standard but the slowest and most expensive. Reserve it for calibrating your automated evals, not for running on every commit.
 
 | Method | Speed | Cost per 1K evals | Correlation with humans | Best for |
 |--------|-------|-------------------|------------------------|----------|
-| BLEU/ROUGE | <1 sec | $0 | 40-60% | Translation, summarization baselines |
-| BERTScore | ~30 sec | $0 | 55-70% | Semantic similarity screening |
-| LLM-as-judge (GPT-5-mini) | ~3 min | ~$8 | 82-86% | Default CI judge; cheap, fast, calibrated |
-| LLM-as-judge (Claude Opus 4.7) | ~5 min | ~$25 | 85-88% | High-stakes scoring, safety, refusals |
-| LLM-as-judge (Gemini 3 Flash) | ~2 min | ~$3 | 80-84% | Highest-throughput judge; for 1M+ eval pass |
-| RAGAS (NLI faithfulness + judge) | ~5 min | ~$12 | 85% | RAG-specific metrics (see Phase 5 · 27) |
+| BLEU/ROUGE | <1 sec | \$0 | 40-60% | Translation, summarization baselines |
+| BERTScore | ~30 sec | \$0 | 55-70% | Semantic similarity screening |
+| LLM-as-judge (GPT-5-mini) | ~3 min | ~\$8 | 82-86% | Default CI judge; cheap, fast, calibrated |
+| LLM-as-judge (Claude Opus 4.7) | ~5 min | ~\$25 | 85-88% | High-stakes scoring, safety, refusals |
+| LLM-as-judge (Gemini 3 Flash) | ~2 min | ~\$3 | 80-84% | Highest-throughput judge; for 1M+ eval pass |
+| RAGAS (NLI faithfulness + judge) | ~5 min | ~\$12 | 85% | RAG-specific metrics (see Phase 5 · 27) |
 | DeepEval (G-Eval + Pytest) | ~4 min | depends on judge | 80-88% | CI-native, per-PR regression gates |
-| Human expert | ~2 hours | ~$500 | 100% (by definition) | Calibration, edge cases, policy |
+| Human expert | ~2 hours | ~\$500 | 100% (by definition) | Calibration, edge cases, policy |
 
 ### LLM-as-Judge: The Workhorse
 
@@ -185,12 +185,12 @@ Evals cost money when using LLM-as-judge. Budget for it.
 
 | Eval size | GPT-5-mini judge | Claude Opus 4.7 judge | Gemini 3 Flash judge | Time |
 |-----------|------------------|-----------------------|----------------------|------|
-| 100 cases x 4 criteria | ~$2 | ~$6 | ~$0.40 | ~2 min |
-| 200 cases x 4 criteria | ~$4 | ~$12 | ~$0.80 | ~4 min |
-| 500 cases x 4 criteria | ~$10 | ~$30 | ~$2 | ~10 min |
-| 1000 cases x 4 criteria | ~$20 | ~$60 | ~$4 | ~20 min |
+| 100 cases x 4 criteria | ~\$2 | ~\$6 | ~\$0.40 | ~2 min |
+| 200 cases x 4 criteria | ~\$4 | ~\$12 | ~\$0.80 | ~4 min |
+| 500 cases x 4 criteria | ~\$10 | ~\$30 | ~\$2 | ~10 min |
+| 1000 cases x 4 criteria | ~\$20 | ~\$60 | ~\$4 | ~20 min |
 
-A 200-case eval suite running on every PR with GPT-5-mini costs ~$4 per run. If your team merges 10 PRs per week, that is $160/month. Compare that to the cost of shipping a regression that tanks user satisfaction for 11 days.
+A 200-case eval suite running on every PR with GPT-5-mini costs ~\$4 per run. If your team merges 10 PRs per week, that is \$160/month. Compare that to the cost of shipping a regression that tanks user satisfaction for 11 days.
 
 ### Anti-Patterns
 
@@ -212,7 +212,7 @@ You do not have to build everything from scratch. These tools provide eval infra
 |------|-------------|---------|
 | [promptfoo](https://promptfoo.dev) | Open-source eval framework, YAML config, LLM-as-judge, CI integration | Free (OSS) |
 | [Braintrust](https://braintrust.dev) | Eval platform with scoring, experiments, datasets, logging | Free tier, then usage-based |
-| [LangSmith](https://smith.langchain.com) | LangChain's eval/observability platform, tracing, datasets, annotation | Free tier, $39/mo+ |
+| [LangSmith](https://smith.langchain.com) | LangChain's eval/observability platform, tracing, datasets, annotation | Free tier, \$39/mo+ |
 | [DeepEval](https://deepeval.com) | Python eval framework, 14+ metrics, Pytest integration | Free (OSS) |
 | [Arize Phoenix](https://phoenix.arize.com) | Open-source observability + evals, tracing, span-level scoring | Free (OSS) |
 

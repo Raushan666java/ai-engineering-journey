@@ -64,7 +64,7 @@ Classical planning assumes a deterministic, fully observable, static environment
 ### 8.1.1 STRIPS Representation
 
 
-**Real-World Analogy — Vending Machine:** A vending machine action "buy chips" has preconditions (inserted $2, tray empty), add effects (chips in tray), and delete effects (-$2, tray empty). STRIPS captures exactly this cause-effect logic.
+**Real-World Analogy — Vending Machine:** A vending machine action "buy chips" has preconditions (inserted \$2, tray empty), add effects (chips in tray), and delete effects (-\$2, tray empty). STRIPS captures exactly this cause-effect logic.
 
 STRIPS (Stanford Research Institute Problem Solver, 1971) represents actions through three components:
 

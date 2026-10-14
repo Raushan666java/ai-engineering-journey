@@ -57,7 +57,7 @@ The OWASP ML Top 10 catalogs the most critical security risks to machine learnin
 | ML02 | **Data Poisoning** | Malicious data injected into training set | 0.1% poisoned samples cause a backdoor in a face-recognition model |
 | ML03 | **Model Inversion** | Reconstruct training data from model outputs | Extract credit-card images from a payment-classifier API |
 | ML04 | **Membership Inference** | Determine if a record was in training data | Infer whether a patient's records were used to train a hospital model |
-| ML05 | **Model Stealing** | Clone a model via query access | $10 worth of API calls replicates a commercial classifier |
+| ML05 | **Model Stealing** | Clone a model via query access | \$10 worth of API calls replicates a commercial classifier |
 | ML06 | **Adversarial Examples** | Inputs imperceptibly modified to cause errors | One-pixel attack flips a pneumonia diagnosis from "positive" to "negative" |
 | ML07 | **Model Trojaning** | Hidden trigger in a supply-chain model | A pre-trained NLP model contains a backdoor activated by " |-| " in text |
 | ML08 | **Model Skew / Drift** | Distribution shift exploited by adversary | Attackers shift spam slightly over time to evade retrained filters |
@@ -183,7 +183,7 @@ Backdoors persist even after fine-tuning and compression, making supply-chain at
 
 An attacker with black-box API access reconstructs a functionally equivalent model. Each query returns a label or confidence vector, and the attacker uses these output-label pairs as training data for a substitute model.
 
-**Cost analysis:** Stealing a commercial image classifier from a cloud API costs approximately $10–$100 in query fees, yielding >95% agreement with the victim model.
+**Cost analysis:** Stealing a commercial image classifier from a cloud API costs approximately \$10–\$100 in query fees, yielding >95% agreement with the victim model.
 
 ### 4.2 Membership Inference
 

@@ -588,7 +588,7 @@ console.log(`Parent Entropy: ${parentE.toFixed(4)}`);
 | Concept | Definition | Key Distinction | Use Case |
 |---------|------------|-----------------|----------|
 | Entropy | $-\sum p_i \log_2 p_i$ | Measures disorder; uses log | ID3 algorithm |
-| Gini Impurity | $1 - \sum p_i^2$ | Faster computation; no log | CART algorithm |
+| Gini Impurity | \$1 - \sum p_i^2$ | Faster computation; no log | CART algorithm |
 | Information Gain | $H(S) - \sum \frac{\|S_v\|}{\|S\|} H(S_v)$ | Quantifies split quality | Feature selection at nodes |
 | Pre-Pruning | Stop splitting early (max_depth) | Halts growth before overfitting | Prevents complex trees |
 | Post-Pruning | Grow full tree then remove branches | Reduces complexity after building | CCP (cost-complexity pruning) |

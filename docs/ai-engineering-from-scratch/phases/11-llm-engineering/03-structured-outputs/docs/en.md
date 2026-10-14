@@ -123,7 +123,7 @@ Tool use is preferred when the model needs to choose which function to call, not
 
 Even with schema enforcement, structured outputs can fail in subtle ways.
 
-**Hallucinated values**: the output matches the schema but contains invented data. The model produces `{"price": 299.99}` when the text says $348. Schema validation cannot catch this -- the type is correct, the value is wrong.
+**Hallucinated values**: the output matches the schema but contains invented data. The model produces `{"price": 299.99}` when the text says \$348. Schema validation cannot catch this -- the type is correct, the value is wrong.
 
 **Enum confusion**: you constrain a field to `["in_stock", "out_of_stock", "preorder"]`. The model outputs `"available"` -- semantically correct, but not in the allowed set. Good constrained decoding prevents this. Prompt-based approaches do not.
 

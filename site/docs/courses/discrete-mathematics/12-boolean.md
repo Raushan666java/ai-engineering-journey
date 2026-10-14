@@ -117,7 +117,7 @@ Dual of $x + 0 = x$ is $x \cdot 1 = x$.
 
 An $n$-variable Boolean function is a function $f: \{0,1\}^n \rightarrow \{0,1\}$. It can be represented by:
 
-- A **truth table** listing all $2^n$ input combinations and the output.
+- A **truth table** listing all \$2^n$ input combinations and the output.
 - A **Boolean expression** using $+$, $\cdot$, and $'$.
 - A **Karnaugh map** for visual simplification.
 
@@ -205,7 +205,7 @@ function fullAdder(a: Bit, b: Bit, carryIn: Bit): { sum: Bit; carryOut: Bit } {
 
 **Rules for K-map minimization:**
 1. Adjacent cells differ by exactly one variable.
-2. Group adjacent 1s in rectangles of size $2^k$ (1, 2, 4, 8, ...).
+2. Group adjacent 1s in rectangles of size \$2^k$ (1, 2, 4, 8, ...).
 3. Groups must be rectangular, not diagonal.
 4. Use the largest possible groups.
 5. Groups may wrap around edges.
@@ -277,7 +277,7 @@ In K-maps, don't cares are marked as "X" and included in a group only if they he
 |---------|-----------|----------------|----------|
 | SOP | OR of AND terms | Sum of minterms where $f=1$ | Canonical form for PLA implementation |
 | POS | AND of OR terms | Product of maxterms where $f=0$ | May be simpler for functions with many 1s |
-| Minterm | Product term including every variable | $2^n$ possible per function | Truth table row selector |
+| Minterm | Product term including every variable | \$2^n$ possible per function | Truth table row selector |
 | Maxterm | Sum term including every variable | Converse of minterm | Truth table complement selector |
 | K-map | Visual minimization (up to 4-6 vars) | Adjacency = differs by one literal | Hand minimization for small functions |
 | Quine-McCluskey | Algorithmic minimization | Tabular, any variable count | Automated circuit synthesis |
@@ -319,7 +319,7 @@ In K-maps, don't cares are marked as "X" and included in a group only if they he
    - B) 64
    - C) 256
    - D) 512
-   <details><summary>Answer&lt;/summary&gt;**C)** $2^{2^3} = 2^8 = 256$ distinct Boolean functions for 3 variables.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** \$2^{2^3} = 2^8 = 256$ distinct Boolean functions for 3 variables.</details>
 
 3. The absorption law $x + (x \cdot y)$ simplifies to:
    - A) $x$
@@ -385,7 +385,7 @@ Groups: $z'$ (columns 00 and 10) and $y$ (bottom row for 01, but larger group: $
 
 **Example 12.7** (Don't care optimization). $f(w,x,y,z) = \sum m(0,2,5,7,8,10) + d(13,15)$. The don't cares at 13 and 15 (binary 1101, 1111) can group with 5 (0101) and 7 (0111) to form $x'z$, eliminating $w$ and $y$.
 
-**Example 12.8** (Boolean function count for 2 variables). There are $2^{2^2} = 16$ possible 2-variable Boolean functions, including AND, OR, XOR, NAND, NOR, XNOR, implication, etc.
+**Example 12.8** (Boolean function count for 2 variables). There are \$2^{2^2} = 16$ possible 2-variable Boolean functions, including AND, OR, XOR, NAND, NOR, XNOR, implication, etc.
 
 **Example 12.9** (Duality). Dual of $x + yz = (x + y)(x + z)$ is $x(y + z) = xy + xz$.
 
@@ -757,7 +757,7 @@ console.log(kmap2var([0, 1, 3])); // a' + b
 ```
 
 **4-variable K-map grouping rules:**
-- Groups must be rectangular and contain $2^k$ cells.
+- Groups must be rectangular and contain \$2^k$ cells.
 - Groups wrap around edges and corners.
 - Each group corresponds to an implicant where variables are constant.
 - Choose the minimum number of largest possible groups.

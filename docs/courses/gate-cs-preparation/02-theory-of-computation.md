@@ -1129,7 +1129,7 @@ A language L belongs to **TIME(f(n))** if there exists a deterministic TM decidi
 **P:** Problems solvable in polynomial time by a deterministic TM.
 **NP:** Problems whose solutions can be verified in polynomial time (or solved in polynomial time by an NTM).
 
-**The P vs NP question:** Does P = NP? (The most famous open problem in CS, $1M Clay Prize.)
+**The P vs NP question:** Does P = NP? (The most famous open problem in CS, \$1M Clay Prize.)
 
 **What we know:**
 - P ⊆ NP (determinism is a special case of nondeterminism)

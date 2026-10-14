@@ -66,7 +66,7 @@ Checkpointing saves the complete agent context — conversation history, tool re
 ### 9.3 Rate Limiting
 
 
-Agent loops can burn through tokens and money at alarming speed. A runaway loop that costs $0.50 per iteration can accumulate hundreds of dollars in minutes. Rate limiting provides three orthogonal controls:
+Agent loops can burn through tokens and money at alarming speed. A runaway loop that costs \$0.50 per iteration can accumulate hundreds of dollars in minutes. Rate limiting provides three orthogonal controls:
 
 **Per-token budget.** Cap total input + output tokens across the entire run. Once exhausted, the loop terminates.
 
@@ -2067,4 +2067,4 @@ These five tooling categories turn a prototype agent loop into a production syst
 
 ### Challenge
 
-10. **Wrap a real agent loop with the full tooling stack.** Take the `CodingAgentLoop` from Chapter 10 and wrap it with `DurableWorkflowEngine` (for saga compensation), `StateCheckpointer` (for checkpoint after each step), `CostGovernor` (to enforce a $0.10 budget), `LoopTracer` (to capture spans), and run it through `ChaosMonkey` with 15% injection probability on tool calls. Measure: (a) how many steps complete before budget exhaustion, (b) how many chaos injections trigger retries, and (c) how many steps are recovered from checkpoint after a simulated crash.
+10. **Wrap a real agent loop with the full tooling stack.** Take the `CodingAgentLoop` from Chapter 10 and wrap it with `DurableWorkflowEngine` (for saga compensation), `StateCheckpointer` (for checkpoint after each step), `CostGovernor` (to enforce a \$0.10 budget), `LoopTracer` (to capture spans), and run it through `ChaosMonkey` with 15% injection probability on tool calls. Measure: (a) how many steps complete before budget exhaustion, (b) how many chaos injections trigger retries, and (c) how many steps are recovered from checkpoint after a simulated crash.

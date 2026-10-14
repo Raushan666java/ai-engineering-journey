@@ -463,9 +463,9 @@ for obj in result["objects"][:5]:
 | Traffic fatalities (US annual) | ~40,000 | Target: &lt;1,000 (AV) | 97% reduction potential |
 | Traffic flow efficiency | 55 mph avg | 70+ mph (coordinated) | +27% throughput |
 | Parking space utilization | 60% | 90% (AI-guided) | +30% |
-| Last-mile delivery cost | $5.50/package | $1.20 (autonomous) | 78% reduction |
+| Last-mile delivery cost | \$5.50/package | \$1.20 (autonomous) | 78% reduction |
 | Accident response time | 10 min avg | 30 sec (AI detection) | 95% faster |
-| Fleet maintenance cost | $0.18/mile | $0.11 (predictive) | 39% reduction |
+| Fleet maintenance cost | \$0.18/mile | \$0.11 (predictive) | 39% reduction |
 
 ### Advantages & Disadvantages
 
@@ -477,7 +477,7 @@ for obj in result["objects"][:5]:
 | No fatigue, distraction, or impairment | HD map dependency → outdated maps cause errors |
 | Optimizes traffic flow reducing congestion | Ethical dilemmas in unavoidable collision scenarios |
 | Enables mobility for elderly/disabled | Regulatory approval fragmented across jurisdictions |
-| Lower emissions through optimal driving | High sensor cost ($50k+ per vehicle) |
+| Lower emissions through optimal driving | High sensor cost (\$50k+ per vehicle) |
 | 24/7 operation for logistics | Cybersecurity attack surface (remote exploit risks) |
 
 ### Edge Cases
@@ -773,7 +773,7 @@ if result is not None:
 |--------|-------------|------------|-------------|
 | Game level design time | 2 weeks | 2 hours (PCG) | 98% faster |
 | NPC behavior variety | 10–20 states | Continuous learning | Unlimited |
-| Art asset generation | $500/image | $0.01/image | 99.998% cost reduction |
+| Art asset generation | \$500/image | \$0.01/image | 99.998% cost reduction |
 | Music composition speed | 1 track/week | 50 tracks/hour | 8,400x faster |
 | Bug discovery rate | 200 bugs/week | 5,000 bugs/week (RL testing) | 25x |
 | Player engagement (session length) | 22 min baseline | 35 min (adaptive difficulty) | +59% |
@@ -928,7 +928,7 @@ print(f"Disease: {result['prediction']} ({result['confidence']:.1%})")
 | Water usage | 100% (full irrigation) | 65% (AI-optimized) | 35% reduction |
 | Pesticide usage | 100% blanket | 40% (targeted) | 60% reduction |
 | Weed detection accuracy | 70% human visual | 95% (CNN) | +25% |
-| Harvest labor cost | $150/acre | $45/acre (autonomous) | 70% reduction |
+| Harvest labor cost | \$150/acre | \$45/acre (autonomous) | 70% reduction |
 | Post-harvest loss | 35% | 15% (supply chain AI) | 57% reduction |
 
 ### Advantages & Disadvantages
@@ -936,7 +936,7 @@ print(f"Disease: {result['prediction']} ({result['confidence']:.1%})")
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Reduces water consumption by 30-50% | High initial investment ($50k-$500k per farm) |
+| Reduces water consumption by 30-50% | High initial investment (\$50k-\$500k per farm) |
 | Minimizes chemical runoff through targeted application | Drone/battery range limitations for large fields |
 | Increases yield on existing farmland | Internet connectivity gaps in rural areas |
 | Reduces farm labor dependency during labor shortages | Small farms priced out of precision agriculture |
@@ -1306,14 +1306,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 | Industry | Adoption Phase | Maturity Level | Key Players | Investment ($B) | Time to Scale | Regulatory Barrier |
 |----------|---------------|:--------------:|-------------|:----------------:|:-------------:|:------------------:|
-| Healthcare | Accelerating | Growth (2.5/4) | DeepMind, PathAI, Zebra Medical | $45 | 5–10 years | Very High (FDA, CE) |
-| Finance | Mature | Scale (3.5/4) | JPMorgan, BlackRock, Kensho | $65 | 1–3 years | High (SEC, Basel) |
-| Transportation | Early deployment | Growth (2/4) | Waymo, Tesla, Cruise, TuSimple | $35 | 10–15 years | Very High (NHTSA, EU) |
-| Education | Emerging | Build (1.5/4) | Khan Academy (Khanmigo), Carnegie Learning | $8 | 3–7 years | Medium (FERPA, GDPR) |
-| Entertainment | Mature | Scale (3.5/4) | Netflix, Spotify, Unity, OpenAI | $50 | Immediate | Low |
-| Agriculture | Emerging | Build (1.5/4) | John Deere, Indigo Ag, The Climate Corp | $12 | 5–10 years | Low–Medium |
-| Security | Mature | Scale (4/4) | CrowdStrike, Darktrace, Palo Alto | $55 | Immediate | Medium |
-| Environment | Nascent | Build (1/4) | Google, Planet Labs, ClimateAI | $5 | 5–15 years | Low |
+| Healthcare | Accelerating | Growth (2.5/4) | DeepMind, PathAI, Zebra Medical | \$45 | 5–10 years | Very High (FDA, CE) |
+| Finance | Mature | Scale (3.5/4) | JPMorgan, BlackRock, Kensho | \$65 | 1–3 years | High (SEC, Basel) |
+| Transportation | Early deployment | Growth (2/4) | Waymo, Tesla, Cruise, TuSimple | \$35 | 10–15 years | Very High (NHTSA, EU) |
+| Education | Emerging | Build (1.5/4) | Khan Academy (Khanmigo), Carnegie Learning | \$8 | 3–7 years | Medium (FERPA, GDPR) |
+| Entertainment | Mature | Scale (3.5/4) | Netflix, Spotify, Unity, OpenAI | \$50 | Immediate | Low |
+| Agriculture | Emerging | Build (1.5/4) | John Deere, Indigo Ag, The Climate Corp | \$12 | 5–10 years | Low–Medium |
+| Security | Mature | Scale (4/4) | CrowdStrike, Darktrace, Palo Alto | \$55 | Immediate | Medium |
+| Environment | Nascent | Build (1/4) | Google, Planet Labs, ClimateAI | \$5 | 5–15 years | Low |
 
 ### AI Maturity Level Definitions
 

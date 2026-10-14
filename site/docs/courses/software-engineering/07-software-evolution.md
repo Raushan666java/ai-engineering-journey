@@ -1007,19 +1007,19 @@ Reverse engineering recovers design information from existing code, while reengi
 
 ### Application Problems
 
-1. **Break-Even Analysis:** A 500,000-LOC system has an annual change rate of 15%. The maintenance team costs $1.2M/year. If a $300K refactoring programme reduces the annual change rate to 10%, calculate the break-even period.
+1. **Break-Even Analysis:** A 500,000-LOC system has an annual change rate of 15%. The maintenance team costs \$1.2M/year. If a \$300K refactoring programme reduces the annual change rate to 10%, calculate the break-even period.
 
 <details>
 <summary>Click for solution</summary>
 
 **Given:**
-- Current maintenance cost: $1.2M/year
-- Current change rate: 15% → $1.2M / 0.15 = $8M total value
+- Current maintenance cost: \$1.2M/year
+- Current change rate: 15% → \$1.2M / 0.15 = \$8M total value
 - After refactoring change rate: 10%
-- New maintenance cost: $8M × 0.10 = $0.8M/year
-- Annual savings: $1.2M - $0.8M = $0.4M/year
-- Refactoring investment: $300K
-- Break-even: $300K / $400K = 0.75 years = 9 months
+- New maintenance cost: \$8M × 0.10 = \$0.8M/year
+- Annual savings: \$1.2M - \$0.8M = \$0.4M/year
+- Refactoring investment: \$300K
+- Break-even: \$300K / \$400K = 0.75 years = 9 months
 
 **Answer:** The refactoring pays for itself in 9 months.
 </details>

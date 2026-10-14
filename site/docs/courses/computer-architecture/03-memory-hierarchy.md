@@ -710,12 +710,12 @@ HBM stacks DRAM dies vertically with through-silicon vias (TSVs) for wide interf
 
 | Technology | Access Time | Cost/GB | Power | Volatile? | Use |
 |-----------|-------------|---------|-------|-----------|-----|
-| SRAM | 0.3–2 ns | $1000–5000 | High | Yes | L1/L2/L3 cache |
-| DRAM (DDR5) | 20–50 ns | $10–20 | Medium | Yes | Main memory |
-| HBM2e | ~15 ns | $50–100 | Medium | Yes | GPU/accelerator memory |
-| NAND Flash (SSD) | 10–100 μs | $0.10–0.50 | Low | No | Persistent storage |
-| Optane PM | ~300 ns | $20–30 | Medium | No | Persistent memory tier |
-| HDD | 5–15 ms | $0.02–0.05 | Low | No | Bulk archive |
+| SRAM | 0.3–2 ns | \$1000–5000 | High | Yes | L1/L2/L3 cache |
+| DRAM (DDR5) | 20–50 ns | \$10–20 | Medium | Yes | Main memory |
+| HBM2e | ~15 ns | \$50–100 | Medium | Yes | GPU/accelerator memory |
+| NAND Flash (SSD) | 10–100 μs | \$0.10–0.50 | Low | No | Persistent storage |
+| Optane PM | ~300 ns | \$20–30 | Medium | No | Persistent memory tier |
+| HDD | 5–15 ms | \$0.02–0.05 | Low | No | Bulk archive |
 
 ### Replacement Policy Comparison
 
@@ -1909,7 +1909,7 @@ A) Increases cache capacity  B) Reduces conflict misses  C) Lowers hit time  D) 
 
 **A15.** AMAT = 1 + 0.10 × (5 + 0.25 × (15 + 0.30 × 80)) = 1 + 0.10 × (5 + 0.25 × (15 + 24)) = 1 + 0.10 × (5 + 0.25 × 39) = 1 + 0.10 × (5 + 9.75) = 1 + 0.10 × 14.75 = 1 + 1.475 = 2.475 ns.
 
-**A16.** SRAM: ~1 ns, low density, high power, $1000+/GB, cache. DRAM: ~50 ns, high density, low power (needs refresh), $10/GB, main memory. DRAM too slow for L1 — would require hundreds of wait states per access.
+**A16.** SRAM: ~1 ns, low density, high power, \$1000+/GB, cache. DRAM: ~50 ns, high density, low power (needs refresh), \$10/GB, main memory. DRAM too slow for L1 — would require hundreds of wait states per access.
 
 **A17.** (a) Direct: Offset=6, Index=9, Tag=17. Tag bits=512×17=8704. Total=512×(512+17+1)=512×530=271,360 bits. (b) 4-way: Offset=6, Index=7, Tag=19. Total=512×(512+19+1+1)=512×533=272,896 bits. 4-way has more overhead due to extra tag bits.
 
@@ -1921,7 +1921,7 @@ A) Increases cache capacity  B) Reduces conflict misses  C) Lowers hit time  D) 
 
 **A21.** MESI states: Modified (dirty, exclusive), Exclusive (clean, exclusive), Shared (clean, shared), Invalid. Read miss in Exclusive: send bus read, transition to Shared. Write hit in Exclusive: transition to Modified (no bus transaction needed, locally owned).
 
-**A22.** SSD: 10–100 μs access, excellent random read, 2–5W, $0.10/GB. HDD: 5–15 ms access, poor random (seeks), 5–10W, $0.02/GB. SSD superiority for random IO makes it dominant for OS and applications.
+**A22.** SSD: 10–100 μs access, excellent random read, 2–5W, \$0.10/GB. HDD: 5–15 ms access, poor random (seeks), 5–10W, \$0.02/GB. SSD superiority for random IO makes it dominant for OS and applications.
 
 **A23.** Sequential 1000 elements × 4 bytes = 4000 bytes. Cache = 4 KB, 64 B blocks = 64 blocks. Each 64 B block holds 16 elements. 1000/16 ≈ 63 blocks accessed. First access cold miss, remaining 15 hits. Miss rate ≈ 1/16 = 6.25%. Overall + 5 random accesses (likely misses) → total ~68 misses out of 1005 accesses ≈ 6.8% miss rate.
 

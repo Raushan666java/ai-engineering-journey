@@ -61,7 +61,7 @@ This is not "LLMs are bad negotiators." It is "LLMs negotiate too much like huma
 
 The Large-Scale Autonomous Negotiation Competition (arXiv:2503.06416) ran ~180k negotiations across many LLM strategies. Winners concealed their reasoning from counterparts:
 
-- If an agent prints "I will only go to $75; my reservation price is $70" into a publicly visible scratchpad, the opponent reads it.
+- If an agent prints "I will only go to \$75; my reservation price is \$70" into a publicly visible scratchpad, the opponent reads it.
 - Winners compute strategy privately; the output channel contains only the offer and minimum required narration.
 
 This is a 2026 echo of classical game theory (Aumann 1976 on rationality and information): revealing your private valuation costs payoff. LLMs do not intuit this and happily type their reservations in reasoning traces that become visible to the counterpart.

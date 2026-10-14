@@ -36,7 +36,7 @@ MSE = (1/n) * sum((y_pred - y_true)^2)
 
 Why squaring matters: it penalizes large errors quadratically. An error of 2 costs 4x as much as an error of 1. An error of 10 costs 100x. This makes MSE sensitive to outliers -- a single wildly wrong prediction dominates the loss.
 
-Real numbers: if your model predicts housing prices and is off by $10,000 on most houses but off by $200,000 on one mansion, MSE will aggressively try to fix that one mansion, potentially hurting performance on the other 99 houses.
+Real numbers: if your model predicts housing prices and is off by \$10,000 on most houses but off by \$200,000 on one mansion, MSE will aggressively try to fix that one mansion, potentially hurting performance on the other 99 houses.
 
 The gradient of MSE with respect to a prediction is:
 

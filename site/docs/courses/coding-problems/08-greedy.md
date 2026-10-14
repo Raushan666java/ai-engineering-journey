@@ -136,12 +136,12 @@ console.log(findContentChildren([1, 2], [1, 2, 3])); // 2
 📊 **Difficulty:** Easy
 📂 **Topics:** [Greedy, Array]
 🧩 **Pattern:** Greedy Choice
-✅ **Best Option:** Single-pass greedy with $5/$10 bill counters — O(n) time, O(1) space
+✅ **Best Option:** Single-pass greedy with \$5/\$10 bill counters — O(n) time, O(1) space
 ❌ **Not Optimal:** Backtracking over bill change combinations — exponential
 🔗 **LeetCode:** [Lemonade Change](https://leetcode.com/problems/lemonade-change/)
 🔗 **Related:** [Assign Cookies](08-greedy.md#problem-1-assign-cookies) · [Gas Station](08-greedy.md#problem-9-gas-station) · [Coin Change](07-dynamic-programming.md#problem-11-coin-change)
 
-**Problem:** Each customer pays with $5, $10, or $20 for a $5 lemonade. Determine if you can provide correct change.
+**Problem:** Each customer pays with \$5, \$10, or \$20 for a \$5 lemonade. Determine if you can provide correct change.
 
 **Example 1:**
 ```

@@ -117,8 +117,8 @@ For this course:
 
 | API | When you need it | Free tier |
 |-----|-----------------|-----------|
-| Anthropic (Claude) | Phases 11-16 (agents, tools) | $5 credit on signup |
-| OpenAI | Phase 11 (comparison) | $5 credit on signup |
+| Anthropic (Claude) | Phases 11-16 (agents, tools) | \$5 credit on signup |
+| OpenAI | Phase 11 (comparison) | \$5 credit on signup |
 | Hugging Face | Phases 4-10 (models, datasets) | Free |
 
 You don't need all of them right now. Set them up when the lesson requires it.

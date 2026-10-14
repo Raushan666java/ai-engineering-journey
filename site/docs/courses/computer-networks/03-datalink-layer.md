@@ -1142,14 +1142,14 @@ print(f"Error detected: {crc != crc2}")
 | Advantage | Detects all odd-count errors |
 | Advantage | Extremely efficient in hardware → simple shift register implementation |
 | Disadvantage | More complex in software than checksum (requires bit manipulation) |
-| Disadvantage | Finite probability of undetected error for bursts > k: $1/2^{k}$ |
+| Disadvantage | Finite probability of undetected error for bursts > k: \$1/2^{k}$ |
 
 #### Edge Cases
 
 | Edge Case | Behavior |
 |-----------|----------|
-| CRC collision | Probability of undetected error: $1/2^{32}$ for CRC-32 → extremely low |
-| Burst error > k bits | Detection probability: $1 - 1/2^{k}$ for long bursts; $1 - 1/2^{k-1}$ for bursts starting with 1 |
+| CRC collision | Probability of undetected error: \$1/2^{32}$ for CRC-32 → extremely low |
+| Burst error > k bits | Detection probability: \$1 - 1/2^{k}$ for long bursts; \$1 - 1/2^{k-1}$ for bursts starting with 1 |
 | Generator polynomial selection | Must be primitive to guarantee 2-bit detection; some standard polys are suboptimal |
 | CRC of all-zero data | Non-zero (0x00000000 only if initial value was 0 and no final XOR) |
 
@@ -1171,7 +1171,7 @@ print(f"Error detected: {crc != crc2}")
 | **Hardware cost** | 1 XOR gate | Adder + complement | Shift register + XOR gates |
 | **Used where** | UART, low-cost links | TCP/UDP/IP headers | Ethernet, Wi-Fi, storage |
 
-**Pro Tip:** CRC-32 is the gold standard for link-layer error detection. The Internet checksum is deliberately weaker → it was designed to be computed in software on 1970s CPUs (a 16-bit add is one instruction). Never use a checksum where CRC is feasible. The $1/2^{32}$ undetected-error probability of CRC-32 means a 10 Gbps link running at full capacity would see an undetected error roughly once every 30 years → acceptable for virtually all applications.
+**Pro Tip:** CRC-32 is the gold standard for link-layer error detection. The Internet checksum is deliberately weaker → it was designed to be computed in software on 1970s CPUs (a 16-bit add is one instruction). Never use a checksum where CRC is feasible. The \$1/2^{32}$ undetected-error probability of CRC-32 means a 10 Gbps link running at full capacity would see an undetected error roughly once every 30 years → acceptable for virtually all applications.
 
 ### TypeScript Implementation: CRC Error Detector
 
@@ -1511,7 +1511,7 @@ print(f"  Correct?       {decoded2 == data} (likely wrong → Hamming corrects o
 |--------|--------|
 | Advantage | Corrects single-bit errors without retransmission |
 | Advantage | Detects double-bit errors (with extra parity bit → extended Hamming) |
-| Advantage | Minimal redundancy: $2^r \ge m + r + 1$ |
+| Advantage | Minimal redundancy: \$2^r \ge m + r + 1$ |
 | Disadvantage | Only corrects single-bit errors; multi-bit errors may be miscorrected |
 | Disadvantage | Higher overhead than CRC when retransmission is feasible |
 | Disadvantage | Not suitable for burst-error channels (radio, Wi-Fi) |
@@ -1742,8 +1742,8 @@ END
 | Protocol | Max Window Size | Reason |
 |----------|----------------|--------|
 | Stop-and-Wait | 1 | Only one frame outstanding; 1-bit seq num (0/1) |
-| Go-Back-N | $2^k - 1$ | Needs one spare seq num to avoid ambiguity on timeout |
-| Selective Repeat | $2^{k-1}$ | Must satisfy SWS + RWS ≤ $2^k$ to prevent window overlap |
+| Go-Back-N | \$2^k - 1$ | Needs one spare seq num to avoid ambiguity on timeout |
+| Selective Repeat | \$2^{k-1}$ | Must satisfy SWS + RWS ≤ \$2^k$ to prevent window overlap |
 
 ### 3.5.3 Piggybacking
 
@@ -2200,7 +2200,7 @@ A teacher dictates 10 sentences to the class. If a student misses sentence 5, th
 For a $k$-bit sequence number: $N \le 2^k - 1$
 
 Why minus 1? Without the constraint, the following ambiguity arises:
-- Sender sends frames 0 through $2^k-1$ (window full).
+- Sender sends frames 0 through \$2^k-1$ (window full).
 - All ACKs are lost.
 - After timeout, sender retransmits frame 0.
 - Receiver has already advanced its window past 0 → it accepts frame 0 as a **new** frame.
@@ -2300,7 +2300,7 @@ Key observation: Frame 2 was lost. Even though frame 3 was received correctly, t
 | Advantage | Cumulative ACKs reduce signaling overhead |
 | Disadvantage | **Wasteful on error-prone links** → retransmits many correct frames |
 | Disadvantage | Receiver discards out-of-order frames (even if no error) |
-| Disadvantage | Window size constraint ($2^k - 1$) wastes one sequence number |
+| Disadvantage | Window size constraint (\$2^k - 1$) wastes one sequence number |
 
 #### Edge Cases
 
@@ -2475,13 +2475,13 @@ Key advantage: only frame 2 was retransmitted (not frames 2 and 3 as in Go-Back-
 
 | Criterion | Stop-and-Wait | Go-Back-N | Selective Repeat |
 |-----------|--------------|-----------|-----------------|
-| **Window size** | 1 | $2^k - 1$ | $2^{k-1}$ |
+| **Window size** | 1 | \$2^k - 1$ | \$2^{k-1}$ |
 | **Sequence bits** | 1 | k | k |
-| **Receiver buffering** | None | None | Up to $2^{k-1}$ frames |
+| **Receiver buffering** | None | None | Up to \$2^{k-1}$ frames |
 | **Retransmission on loss** | Single frame | All frames from lost one | Only lost frame |
 | **ACK type** | Individual | Cumulative | Individual |
 | **NAK support** | No | No | Optional |
-| **Efficiency (error-free)** | Low ($1/RTT$) | High (100%) | High (100%) |
+| **Efficiency (error-free)** | Low (\$1/RTT$) | High (100%) | High (100%) |
 | **Efficiency (error-prone)** | Very low | Low (wastes BW) | High |
 | **Sender complexity** | Minimal | Low | High (multi-timer) |
 | **Receiver complexity** | Minimal | Minimal | High (reorder buffer) |
@@ -2511,7 +2511,7 @@ Key advantage: only frame 2 was retransmitted (not frames 2 and 3 as in Go-Back-
 | 170 | Send 7 | 3 | 7 | [4,5,6,7] | → |
 | 180 | Window full | 3 | 7 | [4,5,6,7] | → |
 
-Total throughput over 180 ms: 8 frames. Ideal throughput (no errors): $8 / 0.18 \approx 44.4$ fps.
+Total throughput over 180 ms: 8 frames. Ideal throughput (no errors): \$8 / 0.18 \approx 44.4$ fps.
 
 With $T_{\text{trans}} = 10$ ms, max possible at 100% utilization = 10 fps. We are sending 4 parallel frames per 10 ms slot = 40 fps effective → close to the ideal.
 
@@ -2773,7 +2773,7 @@ Where $T_{\text{prop}}$ = one-way propagation delay, $R$ = link rate, $L$ = fram
 For a 10 Gbps link with 50 ms RTT and 1500-byte frames:
 $$W = \frac{0.05 \cdot 10^{10}}{1500 \cdot 8} = \frac{500,000,000}{12,000} \approx 41,667 \text{ frames}$$
 
-If window is smaller than BDP, the link is underutilized. If larger than BDP and $2^k - 1$, you need more sequence bits.
+If window is smaller than BDP, the link is underutilized. If larger than BDP and \$2^k - 1$, you need more sequence bits.
 
 ### Q3: Go-Back-N vs Selective Repeat → When to use which?
 
@@ -2805,7 +2805,7 @@ The crossover point is roughly when retransmission cost (N × frame size) exceed
 ### Q5: Why does Ethernet use CRC-32 instead of a checksum?
 
 
-Ethernet operates over noisy copper cables (originally coaxial). A weak detection code would cause undetected corruption → catastrophic for local area networking where frames get forwarded through bridges/switches. CRC-32 has a $1/2^{32}$ undetected-error probability, meaning a 1 Gbps link would see one undetected error roughly every 30-50 years. The Internet checksum's stronger correlation with data patterns makes it less suitable. CRC-32 is trivially implemented in hardware (32 flip-flops + XOR gates) at wire speed.
+Ethernet operates over noisy copper cables (originally coaxial). A weak detection code would cause undetected corruption → catastrophic for local area networking where frames get forwarded through bridges/switches. CRC-32 has a \$1/2^{32}$ undetected-error probability, meaning a 1 Gbps link would see one undetected error roughly every 30-50 years. The Internet checksum's stronger correlation with data patterns makes it less suitable. CRC-32 is trivially implemented in hardware (32 flip-flops + XOR gates) at wire speed.
 
 ### Q6: How many bits does a (7,4) Hamming code need to correct two errors?
 
@@ -2936,9 +2936,9 @@ Bluetooth's Baseband layer uses CRC-16 (CRC-CCITT polynomial $x^{16} + x^{12} + 
 
 ## Case Study: Satellite Link with Selective Repeat ARQ
 
-**Background:** A remote research station in Antarctica communicates via a geostationary satellite link (RTT ≈ 540 ms). The link operates at 50 Mbps with a bit error rate (BER) of $10^{-6}$. Frame size is 1500 bytes.
+**Background:** A remote research station in Antarctica communicates via a geostationary satellite link (RTT ≈ 540 ms). The link operates at 50 Mbps with a bit error rate (BER) of \$10^{-6}$. Frame size is 1500 bytes.
 
-**Challenge:** Stop-and-Wait would achieve only 0.004 % utilization. Go-Back-N would retransmit an entire window (~4000 frames) on each error, wasting ~400 ms of capacity per error. At BER $10^{-6}$, each 1500-byte (12,000-bit) frame has a 1.2 % error probability → errors are frequent.
+**Challenge:** Stop-and-Wait would achieve only 0.004 % utilization. Go-Back-N would retransmit an entire window (~4000 frames) on each error, wasting ~400 ms of capacity per error. At BER \$10^{-6}$, each 1500-byte (12,000-bit) frame has a 1.2 % error probability → errors are frequent.
 
 **Solution — Selective Repeat:**
 1. Window size = $\lceil (540 \times 10^{-3} \times 50 \times 10^6) / (1500 \times 8) \rceil = \lceil 27,000,000 / 12,000 \rceil = 2250$ frames

@@ -2076,7 +2076,7 @@ Two different PDF documents with identical SHA-1 hash:
 SHA-1(pdf1) = SHA-1(pdf2) = 38762cf7f55934b34d179ae6a4c80cadccbb7f0a
 ```
 
-One PDF shows a $1,000 invoice, the other shows the same hash but with a different amount. This demonstrates the real-world danger: Alice can sign one document and Bob can claim she signed the other.
+One PDF shows a \$1,000 invoice, the other shows the same hash but with a different amount. This demonstrates the real-world danger: Alice can sign one document and Bob can claim she signed the other.
 
 **Implications:**
 

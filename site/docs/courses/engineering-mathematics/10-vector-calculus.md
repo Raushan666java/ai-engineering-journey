@@ -274,7 +274,7 @@ Now the boundary: $C$ is $x^2 + y^2 = 1$, $z = 0$. Parametrize: $\mathbf{r}(t) =
 
 $$\oint_C \mathbf{F} \cdot d\mathbf{r} = \int_0^{2\pi} \langle -\sin t, \cos t, 0 \rangle \cdot \langle -\sin t, \cos t, 0 \rangle\,dt = \int_0^{2\pi} (\sin^2 t + \cos^2 t)\,dt = 2\pi$$
 
-Both sides equal $2\pi$. ?
+Both sides equal \$2\pi$. ?
 
 ### Example 4: Divergence Theorem
 

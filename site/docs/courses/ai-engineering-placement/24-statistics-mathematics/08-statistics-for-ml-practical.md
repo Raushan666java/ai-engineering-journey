@@ -151,8 +151,8 @@ Building an ML system to diagnose diseases from patient data:
 
 A fintech company builds a credit risk model:
 
-- **Data Profiling**: Income is highly right-skewed (mean=$65K, median=$45K). Log-transform.
-- **Outlier Detection**: A few users have income=$0 (students) and income=$5M (outliers). Handle separately.
+- **Data Profiling**: Income is highly right-skewed (mean=\$65K, median=\$45K). Log-transform.
+- **Outlier Detection**: A few users have income=\$0 (students) and income=\$5M (outliers). Handle separately.
 - **Feature Selection**: 200 features reduced to 25 using mutual information with default status.
 - **Model Evaluation**: Logistic regression has AUC=0.78, XGBoost has AUC=0.81. Is this significant? McNemar's test gives p=0.003 — yes, XGBoost is significantly better.
 - **Confidence Intervals**: XGBoost AUC = 0.81 [95% CI: 0.79, 0.83]. The lower bound is still above logistic's AUC.

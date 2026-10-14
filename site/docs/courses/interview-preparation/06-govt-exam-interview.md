@@ -264,7 +264,7 @@ User → UPI App (Google Pay/PhonePe) → UPI Platform (NPCI) → Payer Bank →
 | Banker to Government | Manages government accounts, public debt |
 | Banker's Bank | Lender of last resort, provides liquidity |
 | Regulator | Regulates commercial banks, NBFCs, payment systems |
-| Foreign Exchange | Manages forex reserves ($600B+), exchange rate stability |
+| Foreign Exchange | Manages forex reserves (\$600B+), exchange rate stability |
 | Development | Promotes financial inclusion, digital payments |
 
 **Monetary Policy Tools:**
@@ -642,8 +642,8 @@ The IT department manages SAP implementation, seismic data processing, ERP syste
 | CRR | 4.5% |
 | SLR | 18.0% |
 | Fiscal Deficit | 4.9% of GDP |
-| Forex Reserves | ~$650 billion |
-| GDP (Nominal) | ~$3.7 trillion |
+| Forex Reserves | ~\$650 billion |
+| GDP (Nominal) | ~\$3.7 trillion |
 
 ---
 

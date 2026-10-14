@@ -248,7 +248,7 @@ flowchart LR
 | Cold start | ~100-500ms | ~200-800ms | ~100-300ms |
 | Concurrent exec | 1,000 (can increase) | Unlimited (Consumption) | 3,000 |
 | Trigger sources | 15+ (S3, SQS, SNS, DynamoDB, etc.) | 20+ (Blob, Queue, Event Grid, etc.) | 10+ (Storage, Pub/Sub, Firestore, etc.) |
-| Pricing | $0.20/1M requests + $0.0000166667/GB-s | $0.20/1M executions + $0.000016/GB-s | $0.40/1M invocations + $0.0000025/GB-s (1st gen) |
+| Pricing | \$0.20/1M requests + \$0.0000166667/GB-s | \$0.20/1M executions + \$0.000016/GB-s | \$0.40/1M invocations + \$0.0000025/GB-s (1st gen) |
 
 ### 11.11 Cloud Migration Strategies
 
@@ -878,7 +878,7 @@ class DisasterRecoveryPlanner {
 3. Set up budget alerts on a cloud provider. Create a tagging strategy that allocates costs by project, environment, and team.
 4. Write a TypeScript Pulumi program that deploys an S3 bucket with versioning, lifecycle rules to transition objects to Glacier after 90 days, and public access blocking. Use the CostAllocator class to estimate monthly costs based on 100GB storage with 10GB daily uploads.
 5. Using the AutoScalerSimulator class from this chapter, configure a policy that: scales up when CPU exceeds 60% (add 1 instance), scales down when CPU drops below 30% (remove 1 instance), has min 3 and max 15 instances, and has a 60-second cooldown. Simulate with a workload pattern that spikes to 90% CPU during business hours (8 AM-6 PM) and drops to 10% overnight.
-6. Extend the `CostEstimator` class to support: monthly cost projections accounting for reserved instance discounts (1-year: 40% off, 3-year: 60% off), spot instance pricing (70% off on-demand), and data transfer costs between providers (AWS?GCP $0.09/GB, GCP?AWS $0.12/GB, Azure?AWS $0.087/GB). Generate a 12-month cost projection for a multi-cloud deployment with 5 EC2-equivalent instances, 2TB storage, and 5TB monthly egress split 60/40 across two providers.
+6. Extend the `CostEstimator` class to support: monthly cost projections accounting for reserved instance discounts (1-year: 40% off, 3-year: 60% off), spot instance pricing (70% off on-demand), and data transfer costs between providers (AWS?GCP \$0.09/GB, GCP?AWS \$0.12/GB, Azure?AWS \$0.087/GB). Generate a 12-month cost projection for a multi-cloud deployment with 5 EC2-equivalent instances, 2TB storage, and 5TB monthly egress split 60/40 across two providers.
 7. Write a `CloudGovernanceEnforcer` class that: defines required tagging policies (team, environment, project, cost-center), scans a list of resources for compliance, generates weekly violation reports with cost impact of untagged resources, and auto-remediates by applying default tags to non-compliant resources (with dry-run mode). Use the `CostAllocator` class for the cost impact calculation.
 
 ### Challenge Problems
@@ -888,4 +888,4 @@ class DisasterRecoveryPlanner {
 
 ### Challenge Problem
 
-Design a multi-cloud architecture for a global SaaS platform with the following requirements: primary workload on AWS for compute, secondary on GCP for data analytics, disaster recovery across providers, data residency compliance (EU data stays in EU, US data stays in US), global CDN for static assets, managed Kubernetes for container orchestration, and a monthly cloud budget not exceeding $50,000. Define the architecture, provider service mapping, networking topology, data replication strategy, cost allocation model, and governance policies with estimated cost breakdown.
+Design a multi-cloud architecture for a global SaaS platform with the following requirements: primary workload on AWS for compute, secondary on GCP for data analytics, disaster recovery across providers, data residency compliance (EU data stays in EU, US data stays in US), global CDN for static assets, managed Kubernetes for container orchestration, and a monthly cloud budget not exceeding \$50,000. Define the architecture, provider service mapping, networking topology, data replication strategy, cost allocation model, and governance policies with estimated cost breakdown.

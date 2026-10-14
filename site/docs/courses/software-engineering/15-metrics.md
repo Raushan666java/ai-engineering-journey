@@ -1412,7 +1412,7 @@ console.log('BSC Score:', bsc.score());
 
 3. A project has 15 KLOC and 12 defects detected during development and 8 defects found post-release. Calculate: defect density, defect detection rate, and phase containment. Interpret the results.
 
-4. A project has PV = $100,000, EV = $80,000, AC = $90,000, BAC = $500,000. Calculate SPI, CPI, EAC, and TCPI. Is the project on schedule? On budget?
+4. A project has PV = \$100,000, EV = \$80,000, AC = \$90,000, BAC = \$500,000. Calculate SPI, CPI, EAC, and TCPI. Is the project on schedule? On budget?
 
 5. An Agile team completes 18, 22, 20, 24, and 19 story points over five sprints. Calculate velocity (3-sprint rolling average), trend, and predictability.
 

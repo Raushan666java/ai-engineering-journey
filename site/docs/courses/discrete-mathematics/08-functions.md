@@ -291,8 +291,8 @@ Recursive definitions require base case(s) and a recursive rule that eventually 
 3. Compute $\lfloor -3.14 \rfloor$.
    - A) $-3$
    - B) $-4$
-   - C) $3$
-   - D) $4$
+   - C) \$3$
+   - D) \$4$
    <details><summary>Answer&lt;/summary&gt;**B)** $-4$ ? floor rounds **down** toward $-\infty$, so $-3.14$ goes to $-4$.</details>
 
 4. If $g \circ f$ is injective, what can we conclude?
@@ -862,4 +862,4 @@ function composePartial<T, U, V>(
 
 14. Prove that $\lfloor 2x \rfloor = \lfloor x \rfloor + \lfloor x + 0.5 \rfloor$ for all real $x$.
 
-15. Estimate $30!$ using Stirling's approximation and compute the approximate number of decimal digits.
+15. Estimate \$30!$ using Stirling's approximation and compute the approximate number of decimal digits.

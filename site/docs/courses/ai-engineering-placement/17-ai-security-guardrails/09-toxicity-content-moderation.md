@@ -2484,7 +2484,7 @@ d) Content that requires human review
 2. What CUDA operations would you use to accelerate a custom toxicity classifier processing 100K requests/second?
 
 #### AI Startup Style
-1. You're building a social media platform on a startup budget. How would you implement content moderation without spending $100K/month on APIs?
+1. You're building a social media platform on a startup budget. How would you implement content moderation without spending \$100K/month on APIs?
 2. What's the fastest way to prototype an RLHF safety pipeline for a new chatbot product? What open-source tools would you use?
 
 #### Service Companies (Infosys, TCS, Accenture)

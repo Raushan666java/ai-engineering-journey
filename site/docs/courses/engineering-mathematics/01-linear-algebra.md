@@ -96,11 +96,11 @@ This is the **row-by-column** rule. Each entry $c_{ij}$ is the dot product of ro
 
 The determinant is a scalar value that encodes key properties of a square matrix.
 
-For a $2 \times 2$ matrix:
+For a \$2 \times 2$ matrix:
 
 $$\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$$
 
-For a $3 \times 3$ matrix (Sarrus' rule):
+For a \$3 \times 3$ matrix (Sarrus' rule):
 
 $$\det\begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix} = aei + bfg + cdh - ceg - bdi - afh$$
 
@@ -120,7 +120,7 @@ where $C_{ij} = (-1)^{i+j} \cdot M_{ij}$ is the **cofactor**, and $M_{ij}$ is th
 - Adding a multiple of one row to another does not change the determinant
 - $\det(A) = 0$ iff $A$ is singular (not invertible)
 
-**Geometric Interpretation:** The absolute value of the determinant equals the volume scaling factor of the linear transformation represented by the matrix. For a $2 \times 2$ matrix, $|\det(A)|$ is the area of the parallelogram formed by the column vectors. For $3 \times 3$, it's the volume of the parallelepiped.
+**Geometric Interpretation:** The absolute value of the determinant equals the volume scaling factor of the linear transformation represented by the matrix. For a \$2 \times 2$ matrix, $|\det(A)|$ is the area of the parallelogram formed by the column vectors. For \$3 \times 3$, it's the volume of the parallelepiped.
 
 ### 1.3 Systems of Linear Equations
 
@@ -319,7 +319,7 @@ Step 5: Back-substitution:
 
 **Solution:** $x = 2, y = 3, z = -1$
 
-**Verification:** $2(2) + 3 - (-1) = 4 + 3 + 1 = 8 \checkmark$
+**Verification:** \$2(2) + 3 - (-1) = 4 + 3 + 1 = 8 \checkmark$
 
 ### Example 2: Computing Eigenvalues and Eigenvectors
 
@@ -821,7 +821,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 2. **PCA on 2D Data:** Given data points $(1,1), (2,2), (3,3), (1,3), (2,4)$, compute the covariance matrix, find its eigenvectors, and determine the principal component.
 
-3. **Image Compression via SVD:** Explain how you would compress a $1000 \times 1000$ grayscale image using SVD. How many singular values would you keep for 10x compression?
+3. **Image Compression via SVD:** Explain how you would compress a \$1000 \times 1000$ grayscale image using SVD. How many singular values would you keep for 10x compression?
 
 4. **Linear Regression via QR:** Show how to solve the least squares problem $\min_x \|Ax - b\|_2$ using QR decomposition of $A$.
 

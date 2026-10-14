@@ -2028,7 +2028,7 @@ Scale considerations: For popular properties with thousands of watchers, batch n
 
 ---
 
-### Q25: How would you implement a smart search feature that understands natural language queries like "3-bedroom condo downtown under $400k with parking"?
+### Q25: How would you implement a smart search feature that understands natural language queries like "3-bedroom condo downtown under \$400k with parking"?
 
 ```php
 class SmartPropertySearch

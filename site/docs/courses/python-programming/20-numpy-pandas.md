@@ -1052,7 +1052,7 @@ Build a sales analysis pipeline:
 2. Load into a DataFrame and clean missing values.
 3. Compute monthly revenue by category and region.
 4. Find the top 5 products by revenue and the bottom 3.
-5. Identify salespeople who met/exceeded a monthly quota of $10,000.
+5. Identify salespeople who met/exceeded a monthly quota of \$10,000.
 6. Detect seasonal trends (month-over-month growth rates).
 7. Export results to an Excel workbook with multiple sheets: "Monthly Summary", "Top Products", "Salesperson Performance". Format with appropriate number formatting.
 8. Create a dashboard-style figure with 4 subplots: monthly revenue line, top products bar, revenue by region pie, and a correlation heatmap.

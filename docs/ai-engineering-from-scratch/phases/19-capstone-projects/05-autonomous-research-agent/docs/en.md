@@ -1,6 +1,6 @@
 # Capstone 05 — Autonomous Research Agent (AI-Scientist Class)
 
-> Sakana's AI-Scientist-v2 published full papers. Agent Laboratory ran the experiments. Allen AI shared traces. The 2026 shape is plan-execute-verify tree search over experiments, budgeted cost, sandboxed code execution, a vision-feedback LaTeX writer, and an automated NeurIPS-style reviewer ensemble. The capstone is to build one, run it end to end within $30 per paper, and survive the sandbox-escape red team that Sakana documented.
+> Sakana's AI-Scientist-v2 published full papers. Agent Laboratory ran the experiments. Allen AI shared traces. The 2026 shape is plan-execute-verify tree search over experiments, budgeted cost, sandboxed code execution, a vision-feedback LaTeX writer, and an automated NeurIPS-style reviewer ensemble. The capstone is to build one, run it end to end within \$30 per paper, and survive the sandbox-escape red team that Sakana documented.
 
 **Type:** Capstone
 **Languages:** Python (agent + sandbox), LaTeX (output)
@@ -67,7 +67,7 @@ seed idea + domain
 - Writer: LaTeX template + Claude Opus 4.7 (vision mode) for figure critique and layout
 - Reviewer: ensemble of 5 judges (Opus 4.7, GPT-5.4, Gemini 3 Pro, DeepSeek R1, Qwen3-Max) with weighted aggregation
 - Experiment framework: PyTorch 2.5 for the physical experiments, W&B for logging
-- Observability: Langfuse for agent traces, $30 hard budget per paper
+- Observability: Langfuse for agent traces, \$30 hard budget per paper
 
 ## Build It
 
@@ -108,13 +108,13 @@ $ ai-scientist run --seed "attention sparsity in sub-1B transformers" --budget 3
 
 ## Ship It
 
-`outputs/skill-ai-scientist.md` is the deliverable. Given a seed idea + a domain + a $30 budget, it runs the full pipeline and emits a reviewable paper plus a reproducibility bundle.
+`outputs/skill-ai-scientist.md` is the deliverable. Given a seed idea + a domain + a \$30 budget, it runs the full pipeline and emits a reviewable paper plus a reproducibility bundle.
 
 | Weight | Criterion | How it is measured |
 |:-:|---|---|
 | 25 | Paper quality | Blind rubric review against published workshop papers |
 | 20 | Experimental rigor | Baselines, seeds, ablations; every claim backed by a cell in the results table |
-| 20 | Cost and compute discipline | $30/paper ceiling enforced, Langfuse-traced |
+| 20 | Cost and compute discipline | \$30/paper ceiling enforced, Langfuse-traced |
 | 20 | Safety | Sandbox red team passes; network policy and kill-switch verified |
 | 15 | Reproducibility | One-command rerun with identical seeds reproduces the paper |
 | **100** | | |
@@ -123,7 +123,7 @@ $ ai-scientist run --seed "attention sparsity in sub-1B transformers" --budget 3
 
 1. Run the pipeline against three different seed ideas in the same domain. Compare which parts of the tree-search overlap. Identify duplicated wasted compute.
 
-2. Add a human-in-the-loop gate before experiment execution for nodes estimated above $5. Measure how much total cost drops.
+2. Add a human-in-the-loop gate before experiment execution for nodes estimated above \$5. Measure how much total cost drops.
 
 3. Swap the reviewer ensemble for a single judge. Measure the false-accept rate on a held-out set of known-bad papers.
 

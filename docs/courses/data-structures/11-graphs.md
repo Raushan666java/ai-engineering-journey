@@ -874,7 +874,7 @@ class AdjacencyList {
 ### 4. Edge List
 
 
-**Real-World Analogy:** Think of an airline's flight schedule — a simple list of all flights: (JFK, LHR, $800), (JFK, CDG, $650), (LHR, DXB, $400). No fancy indexing, no lookup structure — just the raw data. When you need to sort all edges by weight (as in Kruskal's algorithm for Minimum Spanning Tree), an edge list is the natural representation.
+**Real-World Analogy:** Think of an airline's flight schedule — a simple list of all flights: (JFK, LHR, \$800), (JFK, CDG, \$650), (LHR, DXB, \$400). No fancy indexing, no lookup structure — just the raw data. When you need to sort all edges by weight (as in Kruskal's algorithm for Minimum Spanning Tree), an edge list is the natural representation.
 
 #### 4.1 Definition
 
@@ -1899,7 +1899,7 @@ Google's original PageRank algorithm treats the web as a **directed graph** of p
 - **Mathematically:** Eigenvector computation on the adjacency matrix (normalized)
 - **Scale:** 100+ trillion URLs indexed
 
-> "PageRank is why graphs matter more than any other data structure — it turned the web into a graph and built a $2 trillion company on top."
+> "PageRank is why graphs matter more than any other data structure — it turned the web into a graph and built a \$2 trillion company on top."
 
 ### 4. OSPF — Routing Protocols
 

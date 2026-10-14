@@ -2618,7 +2618,7 @@ Wireless, IoT, and embedded security is a multi-dimensional discipline that span
 6. **Firmware analysis uncovers severe vulnerabilities**: Binwalk extracts filesystems, entropy analysis identifies encrypted/compressed regions, and string scanning reveals hardcoded credentials, backdoor endpoints, and private keys. Over 60% of IoT firmware analyzed in public studies contains at least one hardcoded credential.
 
 7. **Embedded hardware has accessible debug interfaces**: UART
-    console access, SPI flash dumping, JTAG debugging, and side-channel attacks (DPA, glitching) are practical with low-cost tools ($10–$1000). Physical access to a device virtually guarantees compromise.
+    console access, SPI flash dumping, JTAG debugging, and side-channel attacks (DPA, glitching) are practical with low-cost tools (\$10–\$1000). Physical access to a device virtually guarantees compromise.
 
 8. **The IoT attack surface continues to expand**: With an estimated 30+ billion connected devices, each representing a potential entry point, security must be layered across radio, protocol, firmware, and hardware domains. The combination of TypeScript security tooling demonstrated in this chapter — PMKID verification, BLE spoofing detection, MQTT auditing, entropy analysis, CRC fuzzing, and deauth detection — provides a programmatic foundation for automated security assessment.
 

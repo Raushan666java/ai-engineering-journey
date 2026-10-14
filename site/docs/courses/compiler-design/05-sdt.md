@@ -522,7 +522,7 @@ whileCode.forEach(line => console.log(`  ${line}`));
 ### Implementing S-Attributed Definitions in Yacc/Bison
 
 
-In Yacc or Bison, the synthesized attribute of a left-hand side nonterminal is denoted `$$`, while right-hand side attributes are `$1`, `$2`, etc. When the parser reduces, it pops the right-hand side attributes, computes the action, and pushes the result:
+In Yacc or Bison, the synthesized attribute of a left-hand side nonterminal is denoted `$$`, while right-hand side attributes are `\$1`, `\$2`, etc. When the parser reduces, it pops the right-hand side attributes, computes the action, and pushes the result:
 
 ```yacc
 expr: expr '+' term   { $$ = $1 + $3; }
@@ -530,7 +530,7 @@ expr: expr '+' term   { $$ = $1 + $3; }
     ;
 ```
 
-The parser's value stack manages these attributes. During reduction of `expr ? expr + term`, `$1` is the value of the first `expr` (previously computed and pushed), `$3` is the value of `term`, and `$$` becomes the new `expr`'s value.
+The parser's value stack manages these attributes. During reduction of `expr ? expr + term`, `\$1` is the value of the first `expr` (previously computed and pushed), `\$3` is the value of `term`, and `$$` becomes the new `expr`'s value.
 
 ### Implementing L-Attributed Definitions
 
@@ -759,7 +759,7 @@ export { Cache, Logger, computeHash, CacheEntry }
    - C) L-attributed only
    - D) Neither
 
-3. In a Yacc/Bison semantic action, what does `$2` represent?
+3. In a Yacc/Bison semantic action, what does `\$2` represent?
    - A) The synthesized attribute of the LHS nonterminal
    - B) The attribute value of the second symbol on the RHS
    - C) The second rule in the grammar

@@ -442,7 +442,7 @@ static void encode(HuffmanNode n, String s, Map<Character, String> codes) {
 ### 6.4 Fractional Knapsack
 
 
-**Real-World Analogy:** You are at a bulk candy store with a container that holds 5 lbs. You see gummy bears ($8/lb), chocolate truffles ($15/lb), and licorice ($5/lb). Since you can take any amount of each, the optimal strategy is clear: fill your container starting with the most expensive-per-pound candy, taking as much as you can. If truffles run out, move to gummy bears. This is the fractional knapsack strategy — always take the best value-per-unit first.
+**Real-World Analogy:** You are at a bulk candy store with a container that holds 5 lbs. You see gummy bears (\$8/lb), chocolate truffles (\$15/lb), and licorice (\$5/lb). Since you can take any amount of each, the optimal strategy is clear: fill your container starting with the most expensive-per-pound candy, taking as much as you can. If truffles run out, move to gummy bears. This is the fractional knapsack strategy — always take the best value-per-unit first.
 
 **Problem:** Given items with weights and values, and a knapsack capacity \( W \), maximize the value of items placed in the knapsack. Items can be taken fractionally.
 

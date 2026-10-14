@@ -103,7 +103,7 @@ Simple string reply: "OK"
 | Component | Description |
 |-----------|-------------|
 | `*3` | Array of 3 elements |
-| `$3` | Bulk string of length 3 |
+| `\$3` | Bulk string of length 3 |
 | `\r\n` | CRLF delimiter |
 | `+OK` | Simple string reply |
 
@@ -170,7 +170,7 @@ The most basic Redis type. A value can be a string, number, binary data, or seri
 3. Redis hashes the key to locate the hash table bucket
 4. If key exists, overwrites value; if not, inserts new entry
 5. Returns `+OK` to client
-6. On `GET user:1:name`, Redis looks up key in dict, returns `$5\r\nAlice\r\n`
+6. On `GET user:1:name`, Redis looks up key in dict, returns `\$5\r\nAlice\r\n`
 
 **Pseudocode → Core String Implementation:**
 

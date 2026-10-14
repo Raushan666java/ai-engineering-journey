@@ -1591,7 +1591,7 @@ Pick a real product (e.g., Netflix recommendations, Grammarly, or ChatGPT). Fill
 List 5 AI features for a food delivery app (e.g., delivery time prediction, restaurant recommendation, fraud detection, menu optimization, driver routing). Score each on impact (1-10) and solvability (1-10). Plot them on the matrix. Which do you build first?
 
 ### Exercise 3: Calculate ROI
-A company spends $2M/year on manual data entry (10 people). An AI solution digitizes invoices and extracts fields automatically. Development costs: $300K (3 engineers, 4 months). Operating costs: $50K/month. Calculate payback period and 3-year ROI. Is it worth doing?
+A company spends \$2M/year on manual data entry (10 people). An AI solution digitizes invoices and extracts fields automatically. Development costs: \$300K (3 engineers, 4 months). Operating costs: \$50K/month. Calculate payback period and 3-year ROI. Is it worth doing?
 
 ### Exercise 4: Build vs Buy Decision
 You lead AI at a healthcare startup. You need a medical transcription service that converts doctor-patient conversations into clinical notes. Evaluate whether to: (a) use OpenAI Whisper API, (b) fine-tune open-source Whisper on medical data, (c) partner with a healthcare AI vendor. Consider HIPAA compliance, accuracy needs, and data privacy.
@@ -1603,7 +1603,7 @@ You join a Series B startup as their first ML hire. Currently: no ML infrastruct
 
 1. **Solving the wrong problem**: Engineers often jump to "use AI" before understanding the business context. Always start with problem framing.
 2. **Ignoring data availability**: Building models without auditing data first leads to 6-month delays for data collection.
-3. **Over-indexing on model accuracy**: A 99% accurate model that costs $1M/yr in inference may be worse than an 85% model at $10K/yr.
+3. **Over-indexing on model accuracy**: A 99% accurate model that costs \$1M/yr in inference may be worse than an 85% model at \$10K/yr.
 4. **Building when buying would do**: Teams over-engineer custom solutions for generic problems, wasting time and money.
 5. **Not planning for operational burden**: A model in production requires monitoring, retraining, incident response — often 3x the engineering cost of development.
 
@@ -1627,7 +1627,7 @@ You are a PM at Google Workspace. Propose an AI feature for Google Docs that red
 ### Amazon (2023)
 Amazon wants to reduce return rates for fashion items sold on its marketplace. Design an AI strategy to address this. Include build vs buy analysis and ROI calculation.
 
-**Answer**: Opportunity: 30% return rate for fashion vs 10% average across categories — $5B annual return processing cost. Strategy: (1) AI size recommendation using purchase history and item dimensions, (2) AI virtual try-on using generative models, (3) personalized fit prediction. Build vs Buy: Size recommendation uses internal purchase data moat (Build), virtual try-on partners with existing generative AI vendors (Partner). ROI: Size recommendation costs $2M to build, saves $500M annually in return logistics. Payback period: under 1 month.
+**Answer**: Opportunity: 30% return rate for fashion vs 10% average across categories — \$5B annual return processing cost. Strategy: (1) AI size recommendation using purchase history and item dimensions, (2) AI virtual try-on using generative models, (3) personalized fit prediction. Build vs Buy: Size recommendation uses internal purchase data moat (Build), virtual try-on partners with existing generative AI vendors (Partner). ROI: Size recommendation costs \$2M to build, saves \$500M annually in return logistics. Payback period: under 1 month.
 
 ### Microsoft (2024)
 Your enterprise customers complain that Power BI dashboards require too much manual configuration. Design an AI product strategy for "natural language to dashboard" capability.
@@ -1637,7 +1637,7 @@ Your enterprise customers complain that Power BI dashboards require too much man
 ### Meta (2024)
 Meta's content moderation team wants AI to reduce harmful content exposure by 95%. Evaluate the feasibility and recommend a strategy.
 
-**Answer**: Opportunity: 50M+ pieces of content flagged daily, moderators review only 10%. Critical: 99.9% accuracy required for severe categories. Technical feasibility: Existing image/text classifiers achieve 94% for hate speech, 88% for misinformation — gap exists. Operational feasibility: Human-in-loop required for borderline cases. Economic: Engineering cost $10M/year, saves $200M in moderation labor and regulatory fines. Recommendation: Ensemble approach — multiple specialist models (one per harm category) + human escalation for confidence < 0.95. Continuous evaluation with adversarial testing.
+**Answer**: Opportunity: 50M+ pieces of content flagged daily, moderators review only 10%. Critical: 99.9% accuracy required for severe categories. Technical feasibility: Existing image/text classifiers achieve 94% for hate speech, 88% for misinformation — gap exists. Operational feasibility: Human-in-loop required for borderline cases. Economic: Engineering cost \$10M/year, saves \$200M in moderation labor and regulatory fines. Recommendation: Ensemble approach — multiple specialist models (one per harm category) + human escalation for confidence < 0.95. Continuous evaluation with adversarial testing.
 
 ## Interview Q&A
 
@@ -1666,16 +1666,16 @@ Meta's content moderation team wants AI to reduce harmful content exposure by 95
 **A**: (1) What business metric does this impact? (2) Who is the end user and what job do they need done? (3) What data is available? Quantity, quality, freshness? (4) How accurate does this need to be? (5) What happens when the model is wrong? (6) Can we start with a simpler solution? (7) How will we know if it's working?
 
 ### Q9: Your CTO wants to build a custom LLM from scratch. How do you advise them?
-**A**: I'd strongly recommend against it unless: (1) they have billions of tokens of proprietary data, (2) they have $10M+ budget and 12+ months, (3) they have elite ML researchers. For 99% of companies: fine-tune open-source LLM or use API. Building from scratch is rarely justified when open-source models like Llama 3 or Mistral are available.
+**A**: I'd strongly recommend against it unless: (1) they have billions of tokens of proprietary data, (2) they have \$10M+ budget and 12+ months, (3) they have elite ML researchers. For 99% of companies: fine-tune open-source LLM or use API. Building from scratch is rarely justified when open-source models like Llama 3 or Mistral are available.
 
 ### Q10: Describe a time an AI project failed. What was the root cause?
-**A**: Common failure: team built a custom recommendation engine for an e-commerce site (6 months, $1.5M). Root cause: they never checked if a simple "most popular" baseline would work. The baseline achieved 80% of the custom model's performance at 5% of the cost. Lesson: always establish a simple baseline first. AI should only be deployed when it clearly beats the cheapest alternative.
+**A**: Common failure: team built a custom recommendation engine for an e-commerce site (6 months, \$1.5M). Root cause: they never checked if a simple "most popular" baseline would work. The baseline achieved 80% of the custom model's performance at 5% of the cost. Lesson: always establish a simple baseline first. AI should only be deployed when it clearly beats the cheapest alternative.
 
 ## Placement Section
 
 ### Resume Tips
 - **Keywords**: AI product strategy, opportunity assessment, build vs buy analysis, AI Canvas, feasibility study, data audit, ROI analysis, AI maturity model, competitive moat
-- **Project Description**: "Defined AI product strategy for ticket triage system: led opportunity identification, feasibility assessment, and build vs buy analysis, resulting in 38% auto-resolution rate and $480K annual cost savings"
+- **Project Description**: "Defined AI product strategy for ticket triage system: led opportunity identification, feasibility assessment, and build vs buy analysis, resulting in 38% auto-resolution rate and \$480K annual cost savings"
 - **Certifications**: Product School AI Product Manager, Stanford AI in Healthcare, DeepLearning.AI Product Management
 
 ### Interview Day Checklist

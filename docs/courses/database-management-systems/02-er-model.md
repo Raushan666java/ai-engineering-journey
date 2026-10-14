@@ -1092,7 +1092,7 @@ Characteristics:
 | Total Participation | Every line item must be on exactly one invoice |
 | Cascade Delete | If invoice is voided, all its line items are removed |
 ```
-Without the invoice, a line item is meaningless. "2 x Laptop at $999" means nothing if you do not know which invoice it belongs to.
+Without the invoice, a line item is meaningless. "2 x Laptop at \$999" means nothing if you do not know which invoice it belongs to.
 ```
 #### Numbered Steps to Identify and Map Weak Entities
 ```

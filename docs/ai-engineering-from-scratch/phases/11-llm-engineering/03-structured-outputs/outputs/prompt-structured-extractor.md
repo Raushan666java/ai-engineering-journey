@@ -27,7 +27,7 @@ Before extracting, analyze the schema:
 - Arrays: use an empty array []
 
 **Type enforcement**: every value must match the schema type exactly:
-- "price" with type "number": extract 348.00, not "$348" or "three hundred"
+- "price" with type "number": extract 348.00, not "\$348" or "three hundred"
 - "in_stock" with type "boolean": extract true/false, not "yes"/"available"
 - "categories" with type "array": extract ["audio", "headphones"], not "audio, headphones"
 

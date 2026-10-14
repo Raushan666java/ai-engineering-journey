@@ -1579,13 +1579,13 @@ if __name__ == "__main__":
 
 ### Q4: Your chatbot needs to process 100-page PDFs. What context window do you need and which models should you consider?
 
-**Answer:** A 100-page PDF at roughly 2,500 characters per page equals ~62,500 tokens (at 4 chars/token). With 20% safety buffer, you need ~75,000 token context. This rules out 8K models entirely. Recommended options: **Gemini 2.5 Ultra** (1M tokens, best-in-class long-context), **Claude 3.5 Sonnet** (200K tokens, excellent retrieval accuracy), or **DeepSeek V2** (128K tokens, cost-effective at $0.50/1M input). If the budget is tight, consider chunking the document and using RAG instead of a single large context.
+**Answer:** A 100-page PDF at roughly 2,500 characters per page equals ~62,500 tokens (at 4 chars/token). With 20% safety buffer, you need ~75,000 token context. This rules out 8K models entirely. Recommended options: **Gemini 2.5 Ultra** (1M tokens, best-in-class long-context), **Claude 3.5 Sonnet** (200K tokens, excellent retrieval accuracy), or **DeepSeek V2** (128K tokens, cost-effective at \$0.50/1M input). If the budget is tight, consider chunking the document and using RAG instead of a single large context.
 
 ---
 
 ### Q5: Compare the cost-performance trade-off of GPT-4o vs DeepSeek V2 for a code generation product at 10M requests/month.
 
-**Answer:** Assuming 2K input + 500 output tokens per request: **GPT-4o** costs (10M × 2000/1M × $10) + (10M × 500/1M × $30) = $200 + $150 = **$350/month** for input + output. Wait — that math gives $350/request? Let's recalculate: 10M requests × 2000 input tokens = 20B input tokens. At $10/1M input = $200,000. 10M × 500 output = 5B tokens. At $30/1M = $150,000. Total: **$350,000/month**. **DeepSeek V2**: 20B input at $0.50/1M = $10,000. 5B output at $1.50/1M = $7,500. Total: **$17,500/month**. DeepSeek is 20× cheaper. However, GPT-4o scores ~3.7% higher on MMLU and ~4% higher on HumanEval. The trade-off: pay 20× more for 3-4% quality gain. Most startups choose DeepSeek, while enterprises with quality requirements often use GPT-4o and optimize prompt engineering to close the gap.
+**Answer:** Assuming 2K input + 500 output tokens per request: **GPT-4o** costs (10M × 2000/1M × \$10) + (10M × 500/1M × \$30) = \$200 + \$150 = **\$350/month** for input + output. Wait — that math gives \$350/request? Let's recalculate: 10M requests × 2000 input tokens = 20B input tokens. At \$10/1M input = \$200,000. 10M × 500 output = 5B tokens. At \$30/1M = \$150,000. Total: **\$350,000/month**. **DeepSeek V2**: 20B input at \$0.50/1M = \$10,000. 5B output at \$1.50/1M = \$7,500. Total: **\$17,500/month**. DeepSeek is 20× cheaper. However, GPT-4o scores ~3.7% higher on MMLU and ~4% higher on HumanEval. The trade-off: pay 20× more for 3-4% quality gain. Most startups choose DeepSeek, while enterprises with quality requirements often use GPT-4o and optimize prompt engineering to close the gap.
 
 ---
 
@@ -1720,7 +1720,7 @@ samples = [
 
 **Exercise 3: Production Cost Estimator**
 
-Build a `ProductionCostEstimator` class that takes: (a) daily request volume, (b) average input/output tokens per request, (c) target latency (p95 < 2s), (d) model name. Output: monthly API cost, minimum GPUs needed for self-hosting, estimated self-hosting cost, break-even point in months. Test with 100K requests/day at 3K input + 800 output tokens for both GPT-4o and a self-hosted Llama 3.3 70B on A100 GPUs ($3/hr each).
+Build a `ProductionCostEstimator` class that takes: (a) daily request volume, (b) average input/output tokens per request, (c) target latency (p95 < 2s), (d) model name. Output: monthly API cost, minimum GPUs needed for self-hosting, estimated self-hosting cost, break-even point in months. Test with 100K requests/day at 3K input + 800 output tokens for both GPT-4o and a self-hosted Llama 3.3 70B on A100 GPUs (\$3/hr each).
 
 ```python
 # Starter:
@@ -1750,7 +1750,7 @@ def compare_context_strategies(
     pass
 ```
 
-**Hint**: Single large context minimizes engineering complexity but costs more per call. Multi-call strategies are cheaper but add latency and complexity. At <$100/month budget, multi-call wins. At >$500/month, single-call is simpler and often better quality.
+**Hint**: Single large context minimizes engineering complexity but costs more per call. Multi-call strategies are cheaper but add latency and complexity. At <\$100/month budget, multi-call wins. At >\$500/month, single-call is simpler and often better quality.
 
 ---
 

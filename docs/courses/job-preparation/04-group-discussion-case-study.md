@@ -95,7 +95,7 @@ flowchart LR
 
 | Strategy | Example | When to Use |
 |----------|---------|-------------|
-| Fact/Statistic | "According to NASSCOM, India's IT exports will reach $200B in 2026..." | When you have concrete data |
+| Fact/Statistic | "According to NASSCOM, India's IT exports will reach \$200B in 2026..." | When you have concrete data |
 | Question | "Is AI really a threat to jobs, or is it creating more opportunities?" | To engage the group |
 | Definition | "Let's first define what 'sustainable development' means..." | Abstract/ambiguous topics |
 | Quote | "As Steve Jobs said, 'Innovation distinguishes between a leader and a follower'..." | Philosophy/leadership topics |
@@ -341,8 +341,8 @@ flowchart TD
 **Framework: 3Cs + Porter's Five Forces**
 
 **Analysis:**
-1. **Company**: Strong technology platform, content library, $50M funding. But no India presence, no localization.
-2. **Customer**: 250M+ K-12 students, rapid digital adoption. Willingness to pay is low (average $5-10/month).
+1. **Company**: Strong technology platform, content library, \$50M funding. But no India presence, no localization.
+2. **Customer**: 250M+ K-12 students, rapid digital adoption. Willingness to pay is low (average \$5-10/month).
 3. **Competition**: BYJU'S, Unacademy, Vedantu dominate. Market is crowded with well-funded players.
 
 **Porter's Analysis:**
@@ -351,7 +351,7 @@ flowchart TD
 - **Substitutes**: Traditional coaching, YouTube tutorials
 - **Rivalry**: Extremely high
 
-**Recommendation**: Enter through a joint venture with a local player rather than going solo. Target tier-2/3 cities with affordable pricing ($3-5/month). Focus on vernacular content and government school partnerships.
+**Recommendation**: Enter through a joint venture with a local player rather than going solo. Target tier-2/3 cities with affordable pricing (\$3-5/month). Focus on vernacular content and government school partnerships.
 
 ### Case Study 3: Pricing Strategy for a SaaS Product
 
@@ -361,12 +361,12 @@ flowchart TD
 
 **Analysis:**
 1. **Customer Segments**: Freelancers (50 users), SMBs (50-200 users), Enterprises (200+ users)
-2. **Competitor Pricing**: Asana ($10.99/user/month), Monday.com ($8/user/month), Jira ($7.50/user/month)
+2. **Competitor Pricing**: Asana (\$10.99/user/month), Monday.com (\$8/user/month), Jira (\$7.50/user/month)
 3. **Differentiators**: AI-powered task assignment, deep Slack/Teams integration
 
 **Recommendation: Three-tier pricing:**
 - **Free**: Up to 5 users, basic features (customer acquisition)
-- **Pro**: $9/user/month, all features, 5-50 users (SMB focus)
+- **Pro**: \$9/user/month, all features, 5-50 users (SMB focus)
 - **Enterprise**: Custom pricing, SSO, dedicated support (50+ users)
 
 ### Case Study 4: Retail Store Profitability
@@ -501,7 +501,7 @@ System update (45 min): Integrated barcode scanning, automated updates
 1. Implement structured 30-60-90 day onboarding program
 2. Create self-service API documentation and integration marketplace
 3. Introduce a "Starter" plan at half the price with limited features
-4. Assign customer success managers to accounts with spending > $500/month
+4. Assign customer success managers to accounts with spending > \$500/month
 5. Implement early warning system (usage drops below threshold → trigger outreach)
 
 ### Case Study 11: Public Sector — Improving Government Service Delivery
@@ -646,15 +646,15 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 
 ### Case Study 18: Making a Loss-Making Product Profitable
 
-**Problem**: A software product has 10,000 users paying $10/month. Revenue: $100K/month. Costs: $150K/month (60% engineering, 25% cloud, 15% support).
+**Problem**: A software product has 10,000 users paying \$10/month. Revenue: \$100K/month. Costs: \$150K/month (60% engineering, 25% cloud, 15% support).
 
 **Options Analysis:**
-1. **Increase price**: Raise to $15/month → may lose 20% users → Revenue: 8,000 × $15 = $120K (still not profitable)
-2. **Reduce costs**: Cloud optimization (25% savings → $112.5K total costs), automation in support
-3. **Tiered pricing**: $10 basic, $25 pro (convert 20% to pro) → 8,000 × $10 + 2,000 × $25 = $130K
+1. **Increase price**: Raise to \$15/month → may lose 20% users → Revenue: 8,000 × \$15 = \$120K (still not profitable)
+2. **Reduce costs**: Cloud optimization (25% savings → \$112.5K total costs), automation in support
+3. **Tiered pricing**: \$10 basic, \$25 pro (convert 20% to pro) → 8,000 × \$10 + 2,000 × \$25 = \$130K
 4. **Enterprise focus**: Higher price, fewer support costs
 
-**Recommendation**: Combined approach: Cloud cost optimization (-$9K/month), introduce tiered pricing with AI-powered self-service support. Path to profitability in 6 months.
+**Recommendation**: Combined approach: Cloud cost optimization (-\$9K/month), introduce tiered pricing with AI-powered self-service support. Path to profitability in 6 months.
 
 ### Case Study 19: Market Entry — EV Charging in India
 
@@ -675,21 +675,21 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 
 ### Case Study 20: Resource Allocation in a Growing Startup
 
-**Problem**: A startup has raised $10M Series A. They have 3 departments competing for resources: Product (wants 15 engineers), Sales (wants 10 people), Marketing (wants $2M budget). Total available: $3M/year.
+**Problem**: A startup has raised \$10M Series A. They have 3 departments competing for resources: Product (wants 15 engineers), Sales (wants 10 people), Marketing (wants \$2M budget). Total available: \$3M/year.
 
 **Framework: ROI-based Resource Allocation**
 
 | Department | Investment Request | Expected ROI | Strategic Priority |
 |------------|-------------------|--------------|-------------------|
-| Product | $1.8M (15 engineers) | Feature completion → 80% faster development | Critical |
-| Sales | $1.2M (10 people) | 3x revenue growth in 12 months | High |
-| Marketing | $2M (campaigns + tools) | 2x lead generation | Medium |
+| Product | \$1.8M (15 engineers) | Feature completion → 80% faster development | Critical |
+| Sales | \$1.2M (10 people) | 3x revenue growth in 12 months | High |
+| Marketing | \$2M (campaigns + tools) | 2x lead generation | Medium |
 
 **Recommendation:**
-1. Fund Product: $1.5M (12 engineers) — product is the core asset
-2. Fund Sales: $1.0M (8 people) — revenue generation is next priority
-3. Fund Marketing: $0.5M — targeted digital campaigns only
-4. Total allocated: $3.0M (within budget)
+1. Fund Product: \$1.5M (12 engineers) — product is the core asset
+2. Fund Sales: \$1.0M (8 people) — revenue generation is next priority
+3. Fund Marketing: \$0.5M — targeted digital campaigns only
+4. Total allocated: \$3.0M (within budget)
 
 ## TypeScript: Case Study Analysis Tool
 

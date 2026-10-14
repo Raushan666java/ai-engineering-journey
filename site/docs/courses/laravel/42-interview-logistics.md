@@ -1316,7 +1316,7 @@ class InventoryPredictionService
 
 **Phase 4 → Closed-Loop Automation:**
 - When predicted stockout probability exceeds 70%, auto-generate a purchase order
-- Human approval gate for orders exceeding $10,000
+- Human approval gate for orders exceeding \$10,000
 - Post-delivery analysis compares predicted vs actual demand, adjusts model parameters
 
 **Edge Cases Handled:**

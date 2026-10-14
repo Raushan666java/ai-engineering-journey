@@ -82,7 +82,7 @@ $$P(E) = \frac{|E|}{|S|}$$
 - $P(E') = 1 - P(E)$ (complement rule).
 - If $E \subseteq F$, then $P(E) \leq P(F)$.
 - $P(E \cup F) = P(E) + P(F) - P(E \cap F)$ (addition rule).
-- $0 \leq P(E) \leq 1$.
+- \$0 \leq P(E) \leq 1$.
 
 > **One-Sentence Takeaway:** Every probability rule ? complement, addition, inclusion-exclusion ? follows from Kolmogorov's three axioms.
 
@@ -144,7 +144,7 @@ A **random variable** $X$ is a function $X: S \rightarrow \mathbb{R}$ that assig
 **Cumulative distribution function (CDF):** $F(x) = P(X \leq x)$.
 
 **Theorem 13.3 (Properties of PMFs).**
-- $0 \leq p(x) \leq 1$.
+- \$0 \leq p(x) \leq 1$.
 - $\sum_x p(x) = 1$.
 
 > **One-Sentence Takeaway:** A random variable maps outcomes to numbers; its probability mass function describes how total probability is distributed across possible values.
@@ -296,7 +296,7 @@ $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A\cap B) - P(A\cap C) - P(B\cap C)
 
 3. The variance of a Bernoulli$(p)$ random variable is:
    - A) $p$
-   - B) $1-p$
+   - B) \$1-p$
    - C) $p(1-p)$
    - D) $p^2$
    <details><summary>Answer&lt;/summary&gt;**C)** $\text{Var}(X) = p(1-p)$ for Bernoulli.</details>

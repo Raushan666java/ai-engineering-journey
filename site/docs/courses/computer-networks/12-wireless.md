@@ -1506,7 +1506,7 @@ if __name__ == "__main__":
 |-----------|-------------|
 | Very low power consumption (BLE: 0.01-0.5 W) | Low data rate (1-3 Mbps, 2 Mbps for BLE 5) |
 | FHSS provides interference resilience | Short range (~10 m classic, ~100 m BLE 5) |
-| Low-cost hardware (sub-$5 modules) | Limited to 7 active slaves per piconet |
+| Low-cost hardware (sub-\$5 modules) | Limited to 7 active slaves per piconet |
 | Ubiquitous in mobile devices | Connection-oriented setup latency (~3 s for BR/EDR) |
 | Mesh networking (Bluetooth 5+) | Scatternet complexity and scheduling overhead |
 | LE Audio with LC3 codec | Co-channel interference with WiFi 2.4 GHz |
@@ -1545,7 +1545,7 @@ if __name__ == "__main__":
 | uRLLC | → | 1 ms | 99.999% | → | Industrial control, autonomous driving |
 | mMTC | → | → | → | 1M/km² | IoT sensors, smart city |
 
-**Flexible Numerology**: Subcarrier spacing = $15 \times 2^\mu$ kHz.
+**Flexible Numerology**: Subcarrier spacing = \$15 \times 2^\mu$ kHz.
 
 | $\mu$ | SCS (kHz) | Symbol Duration (µs) | Slot Duration (ms) | Max BW (MHz) | Use Case |
 |-------|-----------|---------------------|-------------------|-------------|----------|
@@ -1575,7 +1575,7 @@ if __name__ == "__main__":
 | Peak uplink | 75 Mbps → 1.5 Gbps | 10 Gbps |
 | User-plane latency | 10-30 ms | 1-4 ms |
 | Subcarrier spacing | 15 kHz fixed | 15-240 kHz flexible |
-| OFDM numerology | Single | Flexible ($15 \times 2^\mu$) |
+| OFDM numerology | Single | Flexible (\$15 \times 2^\mu$) |
 | Max carrier bandwidth | 20 MHz (100 MHz with CA) | 100 MHz (sub-6), 400 MHz (mmWave) |
 | MIMO | Up to 8×8 DL, 4×4 UL | Up to 64×64 (massive MIMO) |
 | Beamforming | Not in spec (proprietary) | Native (3D beamforming) |

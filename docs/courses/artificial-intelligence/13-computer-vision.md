@@ -558,7 +558,7 @@ SIFT (Lowe, 2004) detects keypoints that are invariant to scale, rotation, and p
 **Step 3 → Keypoint Localization:** Find local extrema in the DoG pyramid. Each candidate keypoint is compared with 8 neighbors at the same scale and 9 neighbors in each adjacent scale (26 total).
 **Step 4 → Keypoint Refinement:** Interpolate to sub-pixel precision. Remove low-contrast keypoints and eliminate edge responses (using Hessian ratio).
 **Step 5 → Orientation Assignment:** Compute gradient magnitude and direction around each keypoint. Build a 36-bin orientation histogram. Assign the dominant orientation (peak) to the keypoint.
-**Step 6 → Descriptor Computation:** Extract a $16 \times 16$ window around each keypoint, divide into $4 \times 4$ sub-blocks, compute 8-bin gradient histogram per block. Concatenate → $4 \times 4 \times 8 = 128$-dimensional descriptor.
+**Step 6 → Descriptor Computation:** Extract a \$16 \times 16$ window around each keypoint, divide into \$4 \times 4$ sub-blocks, compute 8-bin gradient histogram per block. Concatenate → \$4 \times 4 \times 8 = 128$-dimensional descriptor.
 
 **Pseudocode:**
 ```
@@ -747,12 +747,12 @@ $$W_{\text{out}} = \left\lfloor \frac{W_{\text{in}} - k + 2p}{s} \right\rfloor +
 **Step 1:** Input image $X$ (e.g., $224 \times 224 \times 3$).
 **Step 2:** Apply $C_1$ convolution (filters: $96$, $11\times11$, stride $4$, pad $0$). Output: $55 \times 55 \times 96$.
 **Step 3:** Apply ReLU activation.
-**Step 4:** Apply max pooling ($3\times3$, stride $2$). Output: $27 \times 27 \times 96$.
+**Step 4:** Apply max pooling (\$3\times3$, stride \$2$). Output: \$27 \times 27 \times 96$.
 **Step 5:** Apply $C_2$ convolution ($256$ filters, $5\times5$, pad $2$). Output: $27 \times 27 \times 256$.
-**Step 6:** Apply ReLU + Max Pool. Output: $13 \times 13 \times 256$.
+**Step 6:** Apply ReLU + Max Pool. Output: \$13 \times 13 \times 256$.
 **Step 7:** Apply $C_3$-$C_5$ convolutions + ReLU + Pooling progressively.
 **Step 8:** Flatten 3D feature maps to 1D vector.
-**Step 9:** Apply fully connected layers ($4096 \rightarrow 4096 \rightarrow 1000$).
+**Step 9:** Apply fully connected layers (\$4096 \rightarrow 4096 \rightarrow 1000$).
 **Step 10:** Apply Softmax: $P(y=i | x) = \frac{e^{z_i}}{\sum_j e^{z_j}}$ for 1000-class probabilities.
 
 **Pseudocode:**
@@ -785,13 +785,13 @@ END FUNCTION
 |------|-----------|------------------|
 | 0 | Input image | $\begin{bmatrix}1&2&0&1\\0&1&2&1\\2&1&0&0\\1&2&1&1\end{bmatrix}$ |
 | 0 | Filter $W$ (2×2) | $\begin{bmatrix}1&0\\-1&1\end{bmatrix}$, bias = 0 |
-| 1 | Convolve at (0,0) | $1(1) + 2(0) + 0(-1) + 1(1) = 2$ |
-| 2 | Convolve at (0,1) | $2(1) + 0(0) + 1(-1) + 2(1) = 3$ |
-| 3 | Convolve at (1,0) | $0(1) + 1(0) + 2(-1) + 1(1) = -1$ |
-| 4 | Convolve at (1,1) | $1(1) + 2(0) + 1(-1) + 0(1) = 0$ |
+| 1 | Convolve at (0,0) | \$1(1) + 2(0) + 0(-1) + 1(1) = 2$ |
+| 2 | Convolve at (0,1) | \$2(1) + 0(0) + 1(-1) + 2(1) = 3$ |
+| 3 | Convolve at (1,0) | \$0(1) + 1(0) + 2(-1) + 1(1) = -1$ |
+| 4 | Convolve at (1,1) | \$1(1) + 2(0) + 1(-1) + 0(1) = 0$ |
 | 5 | Feature map (2×2) | $\begin{bmatrix}2&3\\-1&0\end{bmatrix}$ |
 | 6 | ReLU | $\begin{bmatrix}2&3\\0&0\end{bmatrix}$ |
-| 7 | Max pool (2×2) | $3$ (single value → the maximum of the 2×2 ReLU output) |
+| 7 | Max pool (2×2) | \$3$ (single value → the maximum of the 2×2 ReLU output) |
 
 ### 13.5.3 Python Implementation (PyTorch)
 
@@ -866,12 +866,12 @@ with torch.no_grad():
 ### 13.5.4 Complexity Analysis
 
 
-| Layer Type | Parameters | FLOPs for $224\times224\times3$ Input | Why |
+| Layer Type | Parameters | FLOPs for \$224\times224\times3$ Input | Why |
 |------------|-----------|--------------------------------------|-----|
 | Conv (11×11, 96 filters, s=4) | $11^2 \times 3 \times 96 + 96 = 34,944$ | $55^2 \times 11^2 \times 3 \times 96 \approx 105M$ | Each output pixel requires $k^2 \times C_{\text{in}}$ multiply-accumulate |
-| Conv (3×3, 256 filters, s=1, pad=1) | $3^2 \times 96 \times 256 + 256 = 221,440$ | $56^2 \times 3^2 \times 96 \times 256 \approx 693M$ | High spatial resolution + many filters |
-| Max Pool (2×2, s=2) | 0 | $56^2 \times 96 \times 4$ (comparisons) | No learned parameters |
-| FC (4096→4096) | $4096^2 + 4096 = 16.8M$ | $4096^2 \approx 16.8M$ | Parameters dominate in dense layers |
+| Conv (3×3, 256 filters, s=1, pad=1) | \$3^2 \times 96 \times 256 + 256 = 221,440$ | \$56^2 \times 3^2 \times 96 \times 256 \approx 693M$ | High spatial resolution + many filters |
+| Max Pool (2×2, s=2) | 0 | \$56^2 \times 96 \times 4$ (comparisons) | No learned parameters |
+| FC (4096→4096) | \$4096^2 + 4096 = 16.8M$ | \$4096^2 \approx 16.8M$ | Parameters dominate in dense layers |
 
 **Key insight:** Parameter count is dominated by fully connected layers, while FLOPs are dominated by early convolutional layers (high resolution × many filters).
 
@@ -923,7 +923,7 @@ A prediction is a **true positive** if IoU ≥ threshold (typically 0.5) AND cla
 **R-CNN (Region-based CNN):**
 
 **Step 1:** Generate ~2000 region proposals using Selective Search (grouping superpixels).
-**Step 2:** Warp each region proposal to a fixed size ($227 \times 227$).
+**Step 2:** Warp each region proposal to a fixed size (\$227 \times 227$).
 **Step 3:** Run each warped region through a CNN (AlexNet) to extract a feature vector.
 **Step 4:** Classify each region with a class-specific SVM.
 **Step 5:** Refine bounding box coordinates with a linear regressor.
@@ -1207,9 +1207,9 @@ Mask R-CNN (He et al., 2017) extends Faster R-CNN by adding a mask prediction br
 
 **Step 1:** Backbone (ResNet-FPN) extracts multi-scale features.
 **Step 2:** RPN proposes candidate bounding boxes.
-**Step 3:** RoI Align extracts $14 \times 14$ feature maps per proposal.
+**Step 3:** RoI Align extracts \$14 \times 14$ feature maps per proposal.
 **Step 4:** Three parallel heads: classification (class), bounding box regression (box), and mask segmentation (mask).
-**Step 5:** Mask head: 4 conv layers producing a $28 \times 28$ binary mask per class. During inference, the mask is upsampled and thresholded to produce the final segmentation.
+**Step 5:** Mask head: 4 conv layers producing a \$28 \times 28$ binary mask per class. During inference, the mask is upsampled and thresholded to produce the final segmentation.
 
 ### 13.7.3 Python Implementation
 
@@ -1454,8 +1454,8 @@ The only difference is that the kernel is **flipped 180 degrees** before applica
 - **Parameter sharing:** The same kernel slides across the entire input → dramatically fewer parameters than fully connected.
 - **Equivariance:** If the input shifts, the output shifts by the same amount. This gives CNNs translation equivariance.
 
-**Example:** A $3 \times 3$ convolution on a $224 \times 224 \times 3$ image with 64 filters:
-- Parameters: $3 \times 3 \times 3 \times 64 + 64 = 1,792$
+**Example:** A \$3 \times 3$ convolution on a \$224 \times 224 \times 3$ image with 64 filters:
+- Parameters: \$3 \times 3 \times 3 \times 64 + 64 = 1,792$
 - Equivalent fully connected layer: $224 \times 224 \times 3$ input → output of same size would require $(224^2 \times 3) \times (224^2 \times 64) \approx 1.1 \times 10^{11}$ parameters → **61 million times more!**
 
 ### Q2: What is receptive field? How do you compute it?
@@ -1473,18 +1473,18 @@ where $\text{RF}_l$ is the receptive field at layer $l$, $k_l$ is kernel size, a
 
 | Layer | Kernel | Stride | Cumulative RF |
 |-------|--------|--------|---------------|
-| Conv1_1 | 3×3 | 1 | $0 + (3-1) \times 1 = 2$ → effective: $2 + 1 = 3$ |
-| Conv1_2 | 3×3 | 1 | $3 + (3-1) \times 1 = 5$ |
-| Pool1 | 2×2 | 2 | $5 + (2-1) \times 1 = 6$ |
-| Conv2_1 | 3×3 | 1 | $6 + (3-1) \times 2 = 10$ |
-| Conv2_2 | 3×3 | 1 | $10 + (3-1) \times 2 = 14$ |
-| Pool2 | 2×2 | 2 | $14 + (2-1) \times 2 = 16$ |
-| Conv3_1 | 3×3 | 1 | $16 + (3-1) \times 4 = 24$ |
-| Conv3_2 | 3×3 | 1 | $24 + (3-1) \times 4 = 32$ |
-| Conv3_3 | 3×3 | 1 | $32 + (3-1) \times 4 = 40$ |
-| Pool3 | 2×2 | 2 | $40 + (2-1) \times 4 = 44$ |
+| Conv1_1 | 3×3 | 1 | \$0 + (3-1) \times 1 = 2$ → effective: \$2 + 1 = 3$ |
+| Conv1_2 | 3×3 | 1 | \$3 + (3-1) \times 1 = 5$ |
+| Pool1 | 2×2 | 2 | \$5 + (2-1) \times 1 = 6$ |
+| Conv2_1 | 3×3 | 1 | \$6 + (3-1) \times 2 = 10$ |
+| Conv2_2 | 3×3 | 1 | \$10 + (3-1) \times 2 = 14$ |
+| Pool2 | 2×2 | 2 | \$14 + (2-1) \times 2 = 16$ |
+| Conv3_1 | 3×3 | 1 | \$16 + (3-1) \times 4 = 24$ |
+| Conv3_2 | 3×3 | 1 | \$24 + (3-1) \times 4 = 32$ |
+| Conv3_3 | 3×3 | 1 | \$32 + (3-1) \times 4 = 40$ |
+| Pool3 | 2×2 | 2 | \$40 + (2-1) \times 4 = 44$ |
 
-By the end of VGG-16, each neuron in the final feature map "sees" a $404 \times 404$ region of the input → larger than the $224 \times 224$ input itself, meaning the network has full-image context.
+By the end of VGG-16, each neuron in the final feature map "sees" a \$404 \times 404$ region of the input → larger than the \$224 \times 224$ input itself, meaning the network has full-image context.
 
 **Why receptive field matters:**
 - **Too small:** Network can't see large objects (e.g., a bus spanning most of the image).
@@ -1809,8 +1809,8 @@ The Vision Transformer (Dosovitskiy et al., 2021) applies the transformer archit
 ### 13.12.2 Algorithm: ViT Forward Pass
 
 
-**Step 1:** Resize image to $224 \times 224 \times 3$.
-**Step 2:** Divide into $16 \times 16$ patches → $196$ patches of dimension $768$.
+**Step 1:** Resize image to \$224 \times 224 \times 3$.
+**Step 2:** Divide into \$16 \times 16$ patches → \$196$ patches of dimension \$768$.
 **Step 3:** Linear projection of each patch to $D=768$ → patch embeddings.
 **Step 4:** Add learnable positional embeddings (197 × 768 → includes [CLS] token).
 **Step 5:** Prepend [CLS] token embedding (also learned).
@@ -1988,14 +1988,14 @@ Standard diffusion models operate in pixel space → slow and memory-intensive. 
 
 **Pipeline:**
 
-**Step 1 → Compression:** VAE encoder compresses $512\times512\times3$ image → $64\times64\times4$ latent.
-**Step 2 → Diffusion:** U-Net denoises in the compressed $64\times64$ latent space (128× fewer pixels).
+**Step 1 → Compression:** VAE encoder compresses \$512\times512\times3$ image → \$64\times64\times4$ latent.
+**Step 2 → Diffusion:** U-Net denoises in the compressed \$64\times64$ latent space (128× fewer pixels).
 **Step 3 → Conditioning:** Text prompt → CLIP text encoder → cross-attention into U-Net.
-**Step 4 → Decode:** VAE decoder reconstructs $64\times64\times4$ latent → $512\times512\times3$ image.
+**Step 4 → Decode:** VAE decoder reconstructs \$64\times64\times4$ latent → \$512\times512\times3$ image.
 
 **Why latent diffusion is faster:**
-- Pixel-space diffusion: $512^2 \times 3 = 786K$ dimensions per step × 1000 steps.
-- Latent diffusion: $64^2 \times 4 = 16K$ dimensions per step × 50 steps (DDIM sampler).
+- Pixel-space diffusion: \$512^2 \times 3 = 786K$ dimensions per step × 1000 steps.
+- Latent diffusion: \$64^2 \times 4 = 16K$ dimensions per step × 50 steps (DDIM sampler).
 - **~300× fewer total operations.**
 
 ### 13.13.4 Python Implementation
@@ -2113,7 +2113,7 @@ image.save("cat_astronaut.png")
 | ReLU | $\max(0, x)$ | Non-linearity | 0 | Same as input |
 | Max Pooling | Downsample 2\u00d72 blocks | Reduce spatial dims | 0 | $W/2 \times H/2$ |
 | Global Avg Pool | Average entire feature map | Reduce to vector | 0 | $C$ (channels only) |
-| Batch Norm | Normalize + scale + shift | Stabilize training | $2C$ | Same as input |
+| Batch Norm | Normalize + scale + shift | Stabilize training | \$2C$ | Same as input |
 | Dropout | Randomly zero fraction $p$ | Prevent co-adaptation | 0 | Same as input |
 | Flatten | 2D to 1D vector | Bridge to FC layers | 0 | $HWC$ |
 | Fully Connected | $Wx + b$ | Classify features | $C_text{in} C_text{out} + C_text{out}$ | $C_text{out}$ |

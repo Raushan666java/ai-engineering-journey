@@ -14,7 +14,7 @@
 | **AI Automation Engineer** | Build agent pipelines for business processes | Mid-size companies, consulting firms | 12K-22K AED |
 | **AI/ML Engineer (Agent focus)** | Build RAG systems + tool-using agents | AI-native startups, big tech | 15K-30K AED |
 | **LLM Application Engineer** | Integrate LLMs into existing products | SaaS companies, enterprise | 12K-25K AED |
-| **Freelance AI Developer** | Build RAG APIs + agent workflows per project | Upwork, Toptal, referrals | $50-120/hr |
+| **Freelance AI Developer** | Build RAG APIs + agent workflows per project | Upwork, Toptal, referrals | \$50-120/hr |
 
 ### Which companies hire
 
@@ -33,7 +33,7 @@
 | Factor | Freelance | Full-time |
 |--------|-----------|-----------|
 | Income stability | Variable | Fixed monthly |
-| Income ceiling | Higher ($120/hr) | Lower (32K AED cap in Dubai) |
+| Income ceiling | Higher (\$120/hr) | Lower (32K AED cap in Dubai) |
 | Benefits | None | Visa, health insurance, flight tickets |
 | Time commitment | Per-project | 40-48 hrs/week |
 | Best for | Building portfolio, side income | Visa sponsorship, stability |
@@ -120,8 +120,8 @@ Happy to jump on a quick call this week to discuss your specific needs.
 
 **Upwork filtering strategy:**
 - Jobs posted &lt; 24 hours
-- Budget > $500 (or hourly > $30)
-- Client spent > $500 total (legitimate client signal)
+- Budget > \$500 (or hourly > \$30)
+- Client spent > \$500 total (legitimate client signal)
 - Job title contains: AI, RAG, agent, LangChain, LangGraph, LLM, chatbot, automation
 
 #### Dubai-specific channels
@@ -798,13 +798,13 @@ export { Logger, Tracer, MetricsCollector, LogEntry, Span, Metric }
 
 | Tool | Purpose | Cost |
 |------|---------|------|
-| **LinkedIn Sales Navigator** | Advanced search, saved alerts | ~$80/month (free trial available) |
+| **LinkedIn Sales Navigator** | Advanced search, saved alerts | ~\$80/month (free trial available) |
 | **Upwork Connects** | Apply to Upwork jobs | Free (50 connects/month) |
 | **Huntr** | Job application tracking | Free tier |
 | **Notion** | Proposal tracker + interview prep | Free |
 | **Grammarly** | Proposal grammar check | Free |
 | **Otter.ai** | Record + transcribe interview practice | Free |
-| **Carrd** | Simple landing page for portfolio | $19/year |
+| **Carrd** | Simple landing page for portfolio | \$19/year |
 
 ---
 

@@ -19,9 +19,9 @@ Gather these inputs before recommending:
 For each decision, choose and justify:
 
 **Embedding model:**
-- text-embedding-3-small (1536d, $0.02/1M tokens): best value, general purpose, Matryoshka support
-- text-embedding-3-large (3072d, $0.13/1M tokens): maximum accuracy, supports dimension reduction
-- voyage-3 (1024d, $0.06/1M tokens): highest MTEB scores, strong on technical content
+- text-embedding-3-small (1536d, \$0.02/1M tokens): best value, general purpose, Matryoshka support
+- text-embedding-3-large (3072d, \$0.13/1M tokens): maximum accuracy, supports dimension reduction
+- voyage-3 (1024d, \$0.06/1M tokens): highest MTEB scores, strong on technical content
 - BGE-M3 (1024d, free): best open-source, multilingual, runs locally on GPU
 - nomic-embed-text-v1.5 (768d, free): good open-source, runs on CPU
 - all-MiniLM-L6-v2 (384d, free): fastest local option, good for prototyping
@@ -56,7 +56,7 @@ For each decision, choose and justify:
 
 **Reranking:**
 - No reranker: simple use cases, small corpus (<10K docs)
-- Cohere Rerank 3.5 ($2/1K queries): production quality, easy API
+- Cohere Rerank 3.5 (\$2/1K queries): production quality, easy API
 - BGE-reranker-v2 (free): strong open-source, runs locally
 - Jina Reranker v2 (free): good balance of speed and accuracy
 

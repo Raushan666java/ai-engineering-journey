@@ -1345,7 +1345,7 @@ int main(void)
 |-----------------|---------|
 | Implicit promotion | Exchanging USD to EUR — the bank automatically converts the smaller denomination |
 | Explicit cast | Force-converting a violin case into a suitcase — you override the system |
-| Integer promotion | $1.50 -> 150 cents — converting to a more precise unit |
+| Integer promotion | \$1.50 -> 150 cents — converting to a more precise unit |
 | Truncation | Cutting a 2x4 board to 1.8m — you lose the fractional part |
 
 ### 2.10.1 Implicit Conversion (Type Promotion)

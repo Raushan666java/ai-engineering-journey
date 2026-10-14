@@ -440,7 +440,7 @@ Location: B, Status: Clean -> Action: Left
 
 **The Rise of Expert Systems (1969–1988):**
 - **MYCIN** (Stanford, 1976): Diagnosed blood infections better than junior doctors using 450 rules.
-- **XCON** (DEC, 1980): Configured VAX computer orders — saved the company $40M/year.
+- **XCON** (DEC, 1980): Configured VAX computer orders — saved the company \$40M/year.
 - The "knowledge bottleneck" emerged: extracting knowledge from human experts was slow, expensive, and brittle.
 
 **Second AI Winter (1987–1993):**
@@ -647,7 +647,7 @@ public class LinearRegression {
 |----------|----------------|----------|
 | A self-driving car must choose between hitting a pedestrian or swerving and killing the passenger | Trolley problem — impossible to make a "good" choice | Who decides the moral algorithm? The manufacturer? Regulators? Society? |
 | An AI diagnostic system is 99% accurate overall but has 90% accuracy on minority groups | Fairness vs overall performance | Should we accept lower overall accuracy to ensure fairness across groups? |
-| An AI creates a masterpiece indistinguishable from human art (and sells for $1M) | Authorship, creativity, economic displacement | Who owns the copyright? Is the "artist" the prompt engineer or the model? |
+| An AI creates a masterpiece indistinguishable from human art (and sells for \$1M) | Authorship, creativity, economic displacement | Who owns the copyright? Is the "artist" the prompt engineer or the model? |
 
 #### Advantages and Disadvantages of Current AI Ethics Approaches
 
@@ -862,7 +862,7 @@ The phenomenon that **once an AI system solves a problem, society no longer cons
 | **Siri (Apple)** | NLP (speech recognition, intent parsing), knowledge graphs, reinforcement learning | Understands spoken queries; books appointments; controls smart home devices | ~500M active users — first mainstream conversational AI assistant |
 | **Alexa (Amazon)** | ASR (automatic speech recognition), NLU, recommendation systems, wake-word detection | Voice shopping; music playback; smart home hub with 100K+ skills | Dominated smart speaker market (70% share at peak) |
 | **Google Search** | RankBrain (neural network for query understanding), BERT/MUM for semantic search, PageRank | Returns relevant web results from 60+ trillion indexed pages | Handles 8.5B+ searches/day — the most-used AI system on Earth |
-| **Netflix** | Collaborative filtering, content-based recommendation, contextual bandits, deep learning for thumbnail selection | Recommends movies/shows with 80% of watch-time from recommendations | Saves $1B+ annually in churn reduction |
+| **Netflix** | Collaborative filtering, content-based recommendation, contextual bandits, deep learning for thumbnail selection | Recommends movies/shows with 80% of watch-time from recommendations | Saves \$1B+ annually in churn reduction |
 | **Tesla Autopilot** | Computer vision (8 cameras, 360° view), transformer-based occupancy networks, neural network planning, sensor fusion | Navigates highways, changes lanes, parks, and handles stop signs/traffic lights | 1B+ miles driven on Autopilot — one of the largest real-world AI deployments |
 
 ### Detailed Case Study: How Tesla Autopilot Works

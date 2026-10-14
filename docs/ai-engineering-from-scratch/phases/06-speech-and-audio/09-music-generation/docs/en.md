@@ -1,6 +1,6 @@
 # Music Generation — MusicGen, Stable Audio, Suno, and the Licensing Earthquake
 
-> 2026 music generation: Suno v5 and Udio v4 dominate commercial; MusicGen, Stable Audio Open, and ACE-Step lead open-source. The technical problem is mostly solved. The legal problem (Warner Music $500M settlement, UMG settlement) reshaped the field in 2025-2026.
+> 2026 music generation: Suno v5 and Udio v4 dominate commercial; MusicGen, Stable Audio Open, and ACE-Step lead open-source. The technical problem is mostly solved. The legal problem (Warner Music \$500M settlement, UMG settlement) reshaped the field in 2025-2026.
 
 **Type:** Build
 **Languages:** Python
@@ -57,7 +57,7 @@ Closed weights. Likely AR codec LM + diffusion-based vocoder with specialized vo
 
 ## The legal landscape (2025-2026)
 
-- **Warner Music vs Suno settlement.** $500M. WMG now has oversight of AI-likeness, music rights, and user-generated tracks on Suno. Similar UMG settlement on Udio.
+- **Warner Music vs Suno settlement.** \$500M. WMG now has oversight of AI-likeness, music rights, and user-generated tracks on Suno. Similar UMG settlement on Udio.
 - **EU AI Act** + **California SB 942**: AI-generated music must be disclosed.
 - **Riffusion / MusicGen** under MIT have no compliance baggage but also no commercial vocals.
 

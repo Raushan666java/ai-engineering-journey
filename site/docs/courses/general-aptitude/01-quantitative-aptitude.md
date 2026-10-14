@@ -301,7 +301,7 @@ $$C(n,r) = \binom{n}{r} = \frac{n!}{r!(n-r)!}$$
 **Definition:** $P(E) = \frac{\text{Number of favorable outcomes}}{\text{Total number of equally likely outcomes}}$
 
 **Properties:**
-- $0 \leq P(E) \leq 1$
+- \$0 \leq P(E) \leq 1$
 - $P(E^c) = 1 - P(E)$
 - $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 
@@ -317,7 +317,7 @@ If A's salary is 20% more than B's, by what percentage is B's salary less than A
 
 Let B's salary = 100. Then A's salary = 120.
 
-Difference = 20. Percentage relative to A: $20/120 \times 100 = 16.67\%$.
+Difference = 20. Percentage relative to A: \$20/120 \times 100 = 16.67\%$.
 
 General formula: If A is $x\%$ more than B, then B is $\frac{x}{100+x} \times 100\%$ less than A.
 
@@ -331,7 +331,7 @@ Let CP = 100. Original SP = 110.
 
 New CP = 90 (10% less). New SP = 121 (10% more on 110).
 
-Profit = 121 - 90 = 31. Profit % = $31/90 \times 100 = 34.44\%$.
+Profit = 121 - 90 = 31. Profit % = \$31/90 \times 100 = 34.44\%$.
 
 ### Example 3: Time-Speed-Distance
 
@@ -343,7 +343,7 @@ Total distance = length of train + length of platform = 300 + 900 = 1200 m.
 
 Time = 40 seconds.
 
-Speed = 1200/40 = 30 m/s = $30 \times 18/5 = 108$ km/h.
+Speed = 1200/40 = 30 m/s = \$30 \times 18/5 = 108$ km/h.
 
 ### Example 4: Time and Work
 
@@ -351,13 +351,13 @@ A can do a job in 12 days, B in 15 days, C in 20 days. They work together for 3 
 
 **Solution:**
 
-One-day work: A = $1/12$, B = $1/15$, C = $1/20$.
+One-day work: A = \$1/12$, B = \$1/15$, C = \$1/20$.
 
-Combined one-day work = $1/12 + 1/15 + 1/20 = (5+4+3)/60 = 12/60 = 1/5$.
+Combined one-day work = \$1/12 + 1/15 + 1/20 = (5+4+3)/60 = 12/60 = 1/5$.
 
-Work done in 3 days = $3/5$. Remaining work = $2/5$.
+Work done in 3 days = \$3/5$. Remaining work = \$2/5$.
 
-B + C one-day work = $1/15 + 1/20 = (4+3)/60 = 7/60$.
+B + C one-day work = \$1/15 + 1/20 = (4+3)/60 = 7/60$.
 
 Days for B and C = $(2/5) \div (7/60) = 2/5 \times 60/7 = 120/35 = 24/7 \approx 3.43$ days.
 
@@ -385,7 +385,7 @@ Two dice are rolled. What's the probability that the sum is 7?
 
 **Solution:**
 
-Total outcomes = $6 \times 6 = 36$.
+Total outcomes = \$6 \times 6 = 36$.
 
 Favorable outcomes (sum = 7): $(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)$ = 6.
 

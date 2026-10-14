@@ -425,7 +425,7 @@ prefer macro F1 over accuracy.</p>
   <div class="tp-qa-answer">
 <p>MAE (Mean Absolute Error) measures the average absolute difference between predictions and actual values, giving equal weight to all errors. RMSE (Root Mean Squared Error) squares the errors before averaging,.
 which penalizes large errors more heavily. Use MAE when you want a metric in the same units as the target and.
-when all error magnitudes are equally important. Use RMSE when large errors are disproportionately harmful (e.g., a house price prediction off by $100K is not just twice as bad as one off by $50K — it could mean a completely wrong market segment).</p>
+when all error magnitudes are equally important. Use RMSE when large errors are disproportionately harmful (e.g., a house price prediction off by \$100K is not just twice as bad as one off by \$50K — it could mean a completely wrong market segment).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

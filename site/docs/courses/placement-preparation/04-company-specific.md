@@ -76,7 +76,7 @@ FAANG (Facebook/Meta, Apple, Amazon, Netflix, Google) and the extended MANGA (Me
 - **Resume screening** → top schools, prior FAANG, strong open-source contributions, or referral required for initial call
 - **Phone screen (45-60 min)** → one or two LeetCode Medium/Hard problems over shared editor (CoderPad, HackerRank)
 - **On-site loop (4-6 rounds)** → 45 min each, mix of coding, system design, behavioral, and sometimes specialized rounds
-- **Compensation** → TC ranges from $180K (junior) to $500K+ (senior) in the US; 30-60 LPA in India equivalent
+- **Compensation** → TC ranges from \$180K (junior) to \$500K+ (senior) in the US; 30-60 LPA in India equivalent
 - **Hiring committee** → debrief where all interviewers calibrate before extending offer
 
 ### Google
@@ -215,7 +215,7 @@ The Bar Raiser looks for:
 *(Tests: Customer Obsession, Ownership)*
 
 **STAR Answer:**
-- **Situation:** Our team managed a payment processing service. A critical bug caused transactions to silently fail for 2% of users, losing ~$50K/day.
+- **Situation:** Our team managed a payment processing service. A critical bug caused transactions to silently fail for 2% of users, losing ~\$50K/day.
 - **Task:** I needed to identify affected users, restore transactions, and prevent recurrence → all within 24 hours before month-end closing.
 - **Action:** I built a reconciliation script that cross-referenced payment logs with order data, identified all 12,000 affected transactions, wrote a batch retry pipeline that reprocessed them with idempotency guarantees, and added monitoring alerts for silent failures. I also called each of our top 20 merchants personally to explain the remediation plan.
 - **Result:** All 12,000 transactions were recovered within 12 hours. Merchants reported zero churn. The monitoring alert detected two similar issues the following week before they affected customers. I received a team-level recognition award.

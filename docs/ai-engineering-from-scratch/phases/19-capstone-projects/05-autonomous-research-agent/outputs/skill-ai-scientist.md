@@ -7,7 +7,7 @@ lesson: 05
 tags: [capstone, autonomous-agent, ai-scientist, sakana, langgraph, sandbox, research]
 ---
 
-Given a seed idea, a narrow domain, and a $30 compute budget, build an agent that runs an experiment tree search, writes a reviewable LaTeX paper, and emits a reproducibility bundle.
+Given a seed idea, a narrow domain, and a \$30 compute budget, build an agent that runs an experiment tree search, writes a reviewable LaTeX paper, and emits a reproducibility bundle.
 
 Build plan:
 
@@ -26,7 +26,7 @@ Assessment rubric:
 |:-:|---|---|
 | 25 | Paper quality | Blind rubric review against published workshop papers on the same seed topic |
 | 20 | Experimental rigor | Baselines, seeds, ablations; every claim backed by a cell in the results table |
-| 20 | Cost and compute discipline | $30 ceiling per paper enforced, Langfuse-traced |
+| 20 | Cost and compute discipline | \$30 ceiling per paper enforced, Langfuse-traced |
 | 20 | Safety | Sandbox red team passes; network policy and kill-switch verified with logged attempts |
 | 15 | Reproducibility | One-command rerun reproduces the paper with identical seeds |
 

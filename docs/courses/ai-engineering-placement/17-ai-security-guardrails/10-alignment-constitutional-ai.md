@@ -1674,7 +1674,7 @@ d) A type of reward model training
 2. **True or False:** You should write at least one code example for AI Alignment & Constitutional AI before moving to the next chapter. — **True.** Active recall with hands-on code beats passive reading for retention.
 3. **True or False:** The complexity analysis for AI Alignment & Constitutional AI is the same regardless of input size. — **False.** Complexity grows with input size; always state best, average, and worst case.
 4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for AI Alignment & Constitutional AI in production. — **True.** Most production bugs come from unhandled edge cases.
-5. **True or False:** You should memorize the AI Alignment & Constitutional AI chapter content once and never review it again. — **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+5. **True or False:** You should memorize this chapter's content once and never review it again. — **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
 
 ## Fill in the Blank
 
@@ -1688,7 +1688,7 @@ d) A type of reward model training
 
 1. **Scenario:** A teammate ships a change involving AI Alignment & Constitutional AI that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
 
-2. **Scenario:** Your implementation of AI Alignment & Constitutional AI is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+2. **Scenario:** Your implementation of this technique is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
 
 3. **Scenario:** A new hire asks you to explain AI Alignment & Constitutional AI in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
 
@@ -1696,7 +1696,7 @@ d) A type of reward model training
 
 ## Output Questions
 
-1. **What is the output of the simplest correct implementation of AI Alignment & Constitutional AI on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+1. **What is the output of the simplest correct implementation of this technique on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
 2. **What is the output when the input is at the boundary value?** — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
 3. **What does the implementation return when given invalid input types?** — With type hints and validation, it raises a clear error; without, it may fail silently.
 4. **What is the output for the sample input given in the chapter's Examples section?** — Re-run the chapter's example code and compare against the documented output.
@@ -1911,7 +1911,7 @@ d) A type of reward model training
 ## Mock Interview Section
 
 **Round 1 — Screening (15 min)**
-- Explain AI Alignment & Constitutional AI in 60 seconds.
+- Explain the core idea in 60 seconds.
 - Write a minimal working example of AI Alignment & Constitutional AI.
 - What is the complexity of your example?
 

@@ -999,37 +999,37 @@ Answer: B
 
 #### Google Style
 
-1. **Explain the core idea of Advanced Agent Patterns in under 60 seconds, then give a real-world analogy.** — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
+1. **Explain this topic in under 60 seconds, then give a real-world analogy.** — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
 
-2. **Design a minimal, well-typed function that demonstrates Advanced Agent Patterns.** — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
+2. **Design a minimal, well-typed function in this chapter.** — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
 
 3. **What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review.
 
 #### Amazon Style
 
-4. **Describe a production bug caused by misunderstanding Advanced Agent Patterns. How did you diagnose and fix it?** — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
+4. **Describe a production bug caused by misunderstanding this technique. How did you diagnose and fix it?** — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
 
-5. **How would you scale a system that relies on Advanced Agent Patterns from 10 users to 10 million?** — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
+5. **How would you scale a system using this technique from 10 users to 10 million?** — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
 
 #### Microsoft Style
 
-6. **Compare Advanced Agent Patterns with the closest alternative approach. When would you choose each?** — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
+6. **Compare this approach with the closest alternative approach. When would you choose each?** — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
 
-7. **Walk through how you would test a component that depends on Advanced Agent Patterns.** — Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
+7. **Walk through how you would test a component built on this.** — Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
 
 #### NVIDIA Style
 
 8. **How does Advanced Agent Patterns behave differently at scale — memory, throughput, or precision-wise?** — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
 
-9. **How would you make an implementation of Advanced Agent Patterns run faster on GPU hardware?** — Batch operations, vectorization, avoiding Python loops, reducing data movement.
+9. **How would you make an implementation of this technique run faster on GPU hardware?** — Batch operations, vectorization, avoiding Python loops, reducing data movement.
 
 #### AI Startup Style
 
-10. **Write the smallest possible implementation of Advanced Agent Patterns that is production-quality.** — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
+10. **Write the smallest possible implementation of this technique that is production-quality.** — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
 
 ### Resume Tips
 
-- Name Advanced Agent Patterns explicitly in your skills section, paired with a measurable achievement ("Reduced X by 40% using Advanced Agent Patterns").
+- Name the technique explicitly in your skills section, paired with a measurable achievement ("Reduced X by 40% using Advanced Agent Patterns").
 - Add a bullet describing a project that applies Advanced Agent Patterns to real data, with numbers.
 - Mention the tools and libraries you used alongside Advanced Agent Patterns (linters, test frameworks, profiling tools).
 - Keep resume bullets under 15 words and start each with an action verb.
@@ -1038,7 +1038,7 @@ Answer: B
 
 - Rehearse a 60-second explanation of Advanced Agent Patterns and one real-world analogy.
 - Prepare one STAR story about debugging a Advanced Agent Patterns-related production issue.
-- Review complexity and edge cases for the classic Advanced Agent Patterns interview problem.
+- Review complexity and edge cases for the classic problem in this chapter.
 - Have questions ready: how does the team apply Advanced Agent Patterns in production today?
 - Test your environment (Python, editor, internet) 15 minutes before the interview.
 
@@ -1048,7 +1048,7 @@ Answer: B
 2. **True or False:** You should write at least one code example for Advanced Agent Patterns before moving to the next chapter. — **True.** Active recall with hands-on code beats passive reading for retention.
 3. **True or False:** The complexity analysis for Advanced Agent Patterns is the same regardless of input size. — **False.** Complexity grows with input size; always state best, average, and worst case.
 4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Advanced Agent Patterns in production. — **True.** Most production bugs come from unhandled edge cases.
-5. **True or False:** You should memorize the Advanced Agent Patterns chapter content once and never review it again. — **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+5. **True or False:** You should memorize this chapter's content once and never review it again. — **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
 
 ## Fill in the Blank
 
@@ -1062,7 +1062,7 @@ Answer: B
 
 1. **Scenario:** A teammate ships a change involving Advanced Agent Patterns that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
 
-2. **Scenario:** Your implementation of Advanced Agent Patterns is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+2. **Scenario:** Your implementation of this technique is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
 
 3. **Scenario:** A new hire asks you to explain Advanced Agent Patterns in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
 
@@ -1070,7 +1070,7 @@ Answer: B
 
 ## Output Questions
 
-1. **What is the output of the simplest correct implementation of Advanced Agent Patterns on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+1. **What is the output of the simplest correct implementation of this technique on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
 2. **What is the output when the input is at the boundary value?** — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
 3. **What does the implementation return when given invalid input types?** — With type hints and validation, it raises a clear error; without, it may fail silently.
 4. **What is the output for the sample input given in the chapter's Examples section?** — Re-run the chapter's example code and compare against the documented output.
@@ -1244,7 +1244,7 @@ Answer: B
 ## Mock Interview Section
 
 **Round 1 — Screening (15 min)**
-- Explain Advanced Agent Patterns in 60 seconds.
+- Explain the core idea in 60 seconds.
 - Write a minimal working example of Advanced Agent Patterns.
 - What is the complexity of your example?
 

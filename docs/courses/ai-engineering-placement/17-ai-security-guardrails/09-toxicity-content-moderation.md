@@ -2505,7 +2505,7 @@ d) Content that requires human review
 2. **True or False:** You should write at least one code example for Toxicity & Content Moderation before moving to the next chapter. — **True.** Active recall with hands-on code beats passive reading for retention.
 3. **True or False:** The complexity analysis for Toxicity & Content Moderation is the same regardless of input size. — **False.** Complexity grows with input size; always state best, average, and worst case.
 4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Toxicity & Content Moderation in production. — **True.** Most production bugs come from unhandled edge cases.
-5. **True or False:** You should memorize the Toxicity & Content Moderation chapter content once and never review it again. — **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+5. **True or False:** You should memorize this chapter's content once and never review it again. — **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
 
 ## Fill in the Blank
 
@@ -2519,7 +2519,7 @@ d) Content that requires human review
 
 1. **Scenario:** A teammate ships a change involving Toxicity & Content Moderation that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
 
-2. **Scenario:** Your implementation of Toxicity & Content Moderation is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+2. **Scenario:** Your implementation of this technique is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
 
 3. **Scenario:** A new hire asks you to explain Toxicity & Content Moderation in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
 
@@ -2527,7 +2527,7 @@ d) Content that requires human review
 
 ## Output Questions
 
-1. **What is the output of the simplest correct implementation of Toxicity & Content Moderation on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+1. **What is the output of the simplest correct implementation of this technique on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
 2. **What is the output when the input is at the boundary value?** — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
 3. **What does the implementation return when given invalid input types?** — With type hints and validation, it raises a clear error; without, it may fail silently.
 4. **What is the output for the sample input given in the chapter's Examples section?** — Re-run the chapter's example code and compare against the documented output.
@@ -2701,7 +2701,7 @@ d) Content that requires human review
 ## Mock Interview Section
 
 **Round 1 — Screening (15 min)**
-- Explain Toxicity & Content Moderation in 60 seconds.
+- Explain the core idea in 60 seconds.
 - Write a minimal working example of Toxicity & Content Moderation.
 - What is the complexity of your example?
 

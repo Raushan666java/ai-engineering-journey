@@ -556,31 +556,31 @@ d) revisionHistoryLimit
 
 1. **Explain the core idea of Kubernetes Basics — Pods, Services, and Deployments in under 60 seconds, then give a real-world analogy.** — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
 
-2. **Design a minimal, well-typed function that demonstrates Kubernetes Basics — Pods, Services, and Deployments.** — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
+2. **Design a minimal, well-typed function in this chapter — Pods, Services, and Deployments.** — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
 
 3. **What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review.
 
 #### Amazon Style
 
-4. **Describe a production bug caused by misunderstanding Kubernetes Basics — Pods, Services, and Deployments. How did you diagnose and fix it?** — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
+4. **Describe a production bug caused by misunderstanding this technique — Pods, Services, and Deployments. How did you diagnose and fix it?** — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
 
-5. **How would you scale a system that relies on Kubernetes Basics — Pods, Services, and Deployments from 10 users to 10 million?** — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
+5. **How would you scale a system using this technique — Pods, Services, and Deployments from 10 users to 10 million?** — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
 
 #### Microsoft Style
 
 6. **Compare Kubernetes Basics — Pods, Services, and Deployments with the closest alternative approach. When would you choose each?** — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
 
-7. **Walk through how you would test a component that depends on Kubernetes Basics — Pods, Services, and Deployments.** — Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
+7. **Walk through how you would test a component built on this — Pods, Services, and Deployments.** — Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
 
 #### NVIDIA Style
 
 8. **How does Kubernetes Basics — Pods, Services, and Deployments behave differently at scale — memory, throughput, or precision-wise?** — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
 
-9. **How would you make an implementation of Kubernetes Basics — Pods, Services, and Deployments run faster on GPU hardware?** — Batch operations, vectorization, avoiding Python loops, reducing data movement.
+9. **How would you make an implementation of this technique — Pods, Services, and Deployments run faster on GPU hardware?** — Batch operations, vectorization, avoiding Python loops, reducing data movement.
 
 #### AI Startup Style
 
-10. **Write the smallest possible implementation of Kubernetes Basics — Pods, Services, and Deployments that is production-quality.** — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
+10. **Write the smallest possible implementation of this technique — Pods, Services, and Deployments that is production-quality.** — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
 
 ### Resume Tips
 
@@ -617,7 +617,7 @@ d) revisionHistoryLimit
 
 1. **Scenario:** A teammate ships a change involving Kubernetes Basics — Pods, Services, and Deployments that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
 
-2. **Scenario:** Your implementation of Kubernetes Basics — Pods, Services, and Deployments is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+2. **Scenario:** Your implementation of this technique — Pods, Services, and Deployments is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
 
 3. **Scenario:** A new hire asks you to explain Kubernetes Basics — Pods, Services, and Deployments in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
 
@@ -625,7 +625,7 @@ d) revisionHistoryLimit
 
 ## Output Questions
 
-1. **What is the output of the simplest correct implementation of Kubernetes Basics — Pods, Services, and Deployments on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+1. **What is the output of the simplest correct implementation of this technique — Pods, Services, and Deployments on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
 2. **What is the output when the input is at the boundary value?** — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
 3. **What does the implementation return when given invalid input types?** — With type hints and validation, it raises a clear error; without, it may fail silently.
 4. **What is the output for the sample input given in the chapter's Examples section?** — Re-run the chapter's example code and compare against the documented output.

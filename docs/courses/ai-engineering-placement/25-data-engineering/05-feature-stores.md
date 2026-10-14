@@ -991,7 +991,7 @@ Design a feature store for Uber's real-time surge pricing. Features must be avai
 
 1. **Scenario:** A teammate ships a change involving 05 — Feature Stores that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
 
-2. **Scenario:** Your implementation of 05 — Feature Stores is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+2. **Scenario:** Your implementation of this technique — Feature Stores is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
 
 3. **Scenario:** A new hire asks you to explain 05 — Feature Stores in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
 
@@ -999,7 +999,7 @@ Design a feature store for Uber's real-time surge pricing. Features must be avai
 
 ## Output Questions
 
-1. **What is the output of the simplest correct implementation of 05 — Feature Stores on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+1. **What is the output of the simplest correct implementation of this technique — Feature Stores on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
 2. **What is the output when the input is at the boundary value?** — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
 3. **What does the implementation return when given invalid input types?** — With type hints and validation, it raises a clear error; without, it may fail silently.
 4. **What is the output for the sample input given in the chapter's Examples section?** — Re-run the chapter's example code and compare against the documented output.

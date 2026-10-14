@@ -33,6 +33,25 @@ measured a defect the structural quality score scored at 9.9/10 and never flagge
 - [x] Wrote `scripts/sync_site.py` (splice body only; preserve Docusaurus frontmatter byte-for-byte)
 - [x] Built Docusaurus with heap 8192 + `--no-minify`; pushed `site/build/` to `gh-pages`
 
+### Phase E — Proportionate site-wide math fix
+- [x] `scripts/math_audit.py`: found the real cause behind the KaTeX warnings
+- [x] Root cause: `remark-math` + `rehype-katex` are enabled, so every `$...$` span is
+      KaTeX. Currency like `$0.10-$0.50` opened a maths span at the first `$` and closed it
+      at the second, and KaTeX rendered the price range as broken maths
+- [x] Escaped **2,044** currency `$` across **312** files; only `$` before a digit is escaped,
+      so real expressions (`$x^2 + y$`) are untouched
+- [x] 214 lines mixing a price with a genuine expression (`O($b^d$)`, `$10^{16}$`) listed for
+      manual review instead of being rewritten blind
+
+### Two sync scripts — pick deliberately
+| Script | Scope | Frontmatter |
+|--------|-------|-------------|
+| `scripts/sync-site.ps1` | `ai-engineering-placement` only | **regenerates** it (title from H1, sequential `sidebar_position`), strips BOM |
+| `scripts/sync_site.py` | **all** courses | **preserves** it byte-for-byte, hash-compares, idempotent |
+
+Both are live. Running the `.ps1` after the `.py` will renumber `sidebar_position`; running the
+`.py` after the `.ps1` leaves the renumbered values alone. Neither was changed in this session.
+
 ### Known repo-hygiene issue (pre-existing, not introduced here)
 - `core.autocrlf=true` is set globally while `.gitattributes` mandates `eol=lf`. The 9 GATE
   chapters that are committed with CRLF therefore show as permanently modified. Clearing the

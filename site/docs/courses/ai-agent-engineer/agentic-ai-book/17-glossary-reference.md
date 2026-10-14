@@ -5,6 +5,7 @@ title: "17-glossary-reference"
 sidebar_label: "17-glossary-reference"
 sidebar_position: 18
 ---
+
 ## Chapter 17: Glossary & Reference
 
 **Agent** — A system where an LLM decides actions (tool calls) in a loop based on observed results, rather than producing a single one-shot response.

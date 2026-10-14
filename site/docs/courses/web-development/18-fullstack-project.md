@@ -5,6 +5,7 @@ title: "Chapter 18: Building a Full-Stack Application"
 sidebar_label: "Chapter 18: Building a Full-Stack Application"
 sidebar_position: 18
 ---
+
 # Chapter 18: Building a Full-Stack Application
 
 > **Previous:** [17-performance](./17-performance.md)

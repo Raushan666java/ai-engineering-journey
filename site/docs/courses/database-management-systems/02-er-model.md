@@ -5,6 +5,7 @@ title: "Chapter 2: Entity-Relationship Model"
 sidebar_label: "Chapter 2: Entity-Relationship Model"
 sidebar_position: 2
 ---
+
 # Chapter 2: Entity-Relationship Model
 ```
 > **Previous:** [Chapter 1: Introduction to Database Systems](./01-introduction.md) | **Next:** [Chapter 3: The Relational Model](./03-relational-model.md)
@@ -2822,4 +2823,5 @@ LEFT JOIN project p ON ep.project_id = p.project_id;
 | Identifying Relationship | Double diamond | FK is part of weak entity PK | Double diamond + double line |
 | Generalization | Triangle with ISA label | Strategy A/B/C (see section 2.7) | Triangle from superclass to subclasses |
 | Aggregation | Dashed rectangle around rel | Decompose into entity + FK | Dashed box around relationship diamond |
+```
 ```

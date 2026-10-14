@@ -5,6 +5,7 @@ title: "Chapter 24: System Design Interview Preparation"
 sidebar_label: "Chapter 24: System Design Interview Preparation"
 sidebar_position: 24
 ---
+
 # Chapter 24: System Design Interview Preparation
 > **Previous:** [23 Case Study Dropbox](./23-case-study-dropbox.md) | **Next:** None
 
@@ -1030,4 +1031,5 @@ Database Scaling Progression:
 
 Consistency Spectrum (strongest to weakest):
    Linearizability ? Sequential ? Causal ? Eventual
+```
 ```

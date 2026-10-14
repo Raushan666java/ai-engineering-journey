@@ -5,6 +5,7 @@ title: "Chapter 6: Learning From Any Resource"
 sidebar_label: "Chapter 6: Learning From Any Resource"
 sidebar_position: 7
 ---
+
 # Chapter 6: Learning From Any Resource
 
 > ⏱ **2 hours total** · 🎯 **Intermediate** · 📋 **Recommended: Ch 4 (Active Recall)**

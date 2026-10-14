@@ -5,6 +5,7 @@ title: "Chapter 2: Practice, Mindset & Performance"
 sidebar_label: "Chapter 2: Practice, Mindset & Performance"
 sidebar_position: 3
 ---
+
 # Chapter 2: Practice, Mindset & Performance
 
 > **Prerequisites:** [Chapter 1: How Your Brain Learns](./ch-01-how-your-brain-learns.md) — Understanding focused vs. diffuse modes and chunking.

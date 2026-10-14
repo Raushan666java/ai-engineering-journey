@@ -5,6 +5,7 @@ title: "Company-Specific Placement Preparation"
 sidebar_label: "Company-Specific Placement Preparation"
 sidebar_position: 4
 ---
+
 # Company-Specific Placement Preparation
 
 > **Previous:** [Chapter 3: SQL Problem Bank](./03-sql-problem-bank.md) | **Next:** [Chapter 5: Placement Strategy](./05-placement-strategy.md)

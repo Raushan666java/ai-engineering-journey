@@ -5,6 +5,7 @@ title: "Visual Notes — Keeping Inference Fast and Cheap"
 sidebar_label: "Visual Notes"
 sidebar_position: 333
 ---
+
 # Visual Notes — Keeping Inference Fast and Cheap
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

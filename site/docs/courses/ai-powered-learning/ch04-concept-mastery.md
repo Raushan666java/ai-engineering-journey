@@ -5,6 +5,7 @@ title: "Chapter 4: Concept Mastery with AI"
 sidebar_label: "Chapter 4: Concept Mastery with AI"
 sidebar_position: 4
 ---
+
 # Chapter 4: Concept Mastery with AI
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

@@ -5,6 +5,7 @@ title: "Chapter 49: PHP Interview Q&A"
 sidebar_label: "Chapter 49: PHP Interview Q&A"
 sidebar_position: 49
 ---
+
 # Chapter 49: PHP Interview Q&A
 
 > **Previous:** [Manufacturing Interview Q&A](./48-interview-manufacturing.md) | **Next:** [MySQL & Database Interview Q&A](./50-interview-mysql.md)

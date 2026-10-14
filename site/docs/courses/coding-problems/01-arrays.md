@@ -5,6 +5,7 @@ title: "Chapter 01: Arrays"
 sidebar_label: "Chapter 01: Arrays"
 sidebar_position: 1
 ---
+
 # Chapter 01: Arrays
 
 > Array problems are the backbone of coding interviews. Mastering array manipulation, traversal, and optimization techniques is essential for every software engineer.

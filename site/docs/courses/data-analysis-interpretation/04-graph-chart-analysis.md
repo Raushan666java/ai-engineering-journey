@@ -5,6 +5,7 @@ title: "Chapter 4: Graph and Chart Analysis"
 sidebar_label: "Chapter 4: Graph and Chart Analysis"
 sidebar_position: 4
 ---
+
 # Chapter 4: Graph and Chart Analysis
 
 ## Learning Objectives

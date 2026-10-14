@@ -5,6 +5,7 @@ title: "Chapter 17: The C Standard Library"
 sidebar_label: "Chapter 17: The C Standard Library"
 sidebar_position: 17
 ---
+
 # Chapter 17: The C Standard Library
 
 > **Previous:** [Stacks and Queues](./16-stacks-queues.md) | **Next:** [Advanced C](./18-advanced-c.md)

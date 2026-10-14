@@ -5,6 +5,7 @@ title: "Chapter 21: System Design: Laravel at Enterprise Scale"
 sidebar_label: "Chapter 21: System Design: Laravel at Enterprise Scale"
 sidebar_position: 21
 ---
+
 # Chapter 21: System Design: Laravel at Enterprise Scale
 
 > **Previous:** [Scaling Laravel](./20-scaling-laravel.md) | **Next:** [Case Study E-Commerce](./22-case-study-ecommerce.md)

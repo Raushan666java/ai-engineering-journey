@@ -5,6 +5,7 @@ title: "Chapter 12: Teaching & Knowledge Transfer"
 sidebar_label: "Chapter 12: Teaching & Knowledge Transfer"
 sidebar_position: 13
 ---
+
 # Chapter 12: Teaching & Knowledge Transfer
 
 > **Prerequisites:** [Chapter 2: Practice, Mindset & Performance](./ch-02-practice-mindset.md), [Chapter 4: Pomodoro, Interleaving & Feynman](./ch-04-pomodoro-interleaving-feynman.md)

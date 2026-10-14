@@ -5,6 +5,7 @@ title: "Chapter 7: Practice System for Mastery"
 sidebar_label: "Chapter 7: Practice System for Mastery"
 sidebar_position: 8
 ---
+
 # Chapter 7: Practice System for Mastery
 
 > ⏱ **2.5 hours total** · 🎯 **Intermediate** · 📋 **Recommended: Ch 4 (Active Recall)**

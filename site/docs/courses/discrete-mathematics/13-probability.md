@@ -5,6 +5,7 @@ title: "Chapter 13: Probability"
 sidebar_label: "Chapter 13: Probability"
 sidebar_position: 13
 ---
+
 # Chapter 13: Probability
 
 > **Previous:** [Chapter 12: Boolean Algebra](./12-boolean.md) | **Next:** [Chapter 14: Number Theory](./14-number-theory.md)

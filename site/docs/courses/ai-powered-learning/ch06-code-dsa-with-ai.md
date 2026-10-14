@@ -5,6 +5,7 @@ title: "Chapter 6: Code & DSA with AI"
 sidebar_label: "Chapter 6: Code & DSA with AI"
 sidebar_position: 6
 ---
+
 # Chapter 6: Code & DSA with AI
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

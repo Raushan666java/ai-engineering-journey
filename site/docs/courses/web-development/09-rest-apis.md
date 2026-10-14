@@ -5,6 +5,7 @@ title: "Chapter 9: REST APIs and API Design"
 sidebar_label: "Chapter 9: REST APIs and API Design"
 sidebar_position: 9
 ---
+
 # Chapter 9: REST APIs and API Design
 
 > **Previous:** [08-node-express](./08-node-express.md) | **Next:** [10-auth](./10-auth.md)

@@ -5,6 +5,7 @@ title: "Cloud Computing — Comprehensive Course Textbook"
 sidebar_label: "Cloud Computing — Comprehensive Course Textbook"
 sidebar_position: 11
 ---
+
 # Cloud Computing — Comprehensive Course Textbook
 
 **Course Code:** CLOUD-401

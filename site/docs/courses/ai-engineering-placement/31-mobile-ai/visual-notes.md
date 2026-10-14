@@ -5,6 +5,7 @@ title: "Visual Notes — AI on Constrained Devices"
 sidebar_label: "Visual Notes"
 sidebar_position: 356
 ---
+
 # Visual Notes — AI on Constrained Devices
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

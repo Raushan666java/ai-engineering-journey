@@ -5,6 +5,7 @@ title: "Chapter 3: OpenCV & Computer Vision"
 sidebar_label: "Chapter 3: OpenCV & Computer Vision"
 sidebar_position: 3
 ---
+
 # Chapter 3: OpenCV & Computer Vision
 
 > **Prerequisite:** [02 - LangChain & LLM Orchestration](./02-langchain.md)  

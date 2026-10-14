@@ -5,6 +5,7 @@ title: "Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior"
 sidebar_label: "Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior"
 sidebar_position: 1
 ---
+
 # Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior
 
 > "The bow falls from the greatest warrior's hand — and that falling is the first step of the whole Gita."

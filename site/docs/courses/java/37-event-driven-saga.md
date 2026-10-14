@@ -5,6 +5,7 @@ title: "Event-Driven Architecture & SAGA"
 sidebar_label: "Event-Driven Architecture & SAGA"
 sidebar_position: 37
 ---
+
 # Event-Driven Architecture & SAGA
 > **Previous:** [Kafka](36-kafka.md) | **Next:** [Microservices Principles](38-microservices-principles.md)
 

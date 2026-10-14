@@ -5,6 +5,7 @@ title: "Chapter 3: Karma Yoga — Action Without Attachment"
 sidebar_label: "Chapter 3: Karma Yoga — Action Without Attachment"
 sidebar_position: 3
 ---
+
 # Chapter 3: Karma Yoga — Action Without Attachment
 
 > "The world is bound by action, except when action is performed as sacrifice."

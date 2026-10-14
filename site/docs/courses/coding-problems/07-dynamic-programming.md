@@ -5,6 +5,7 @@ title: "Chapter 07: Dynamic Programming"
 sidebar_label: "Chapter 07: Dynamic Programming"
 sidebar_position: 7
 ---
+
 # Chapter 07: Dynamic Programming
 
 > Dynamic Programming is the most important algorithmic technique for coding interviews. It involves breaking problems into overlapping subproblems, solving each once, and storing results. Master DP and you master interviews.

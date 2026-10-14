@@ -5,6 +5,7 @@ title: "Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing"
 sidebar_label: "Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing"
 sidebar_position: 7
 ---
+
 # Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing
 
 > "Knowledge is a map; realization is the mountain itself. You can study the map your whole life and still never climb a single step."

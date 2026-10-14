@@ -5,6 +5,7 @@ title: "Chapter 5: Syntax-Directed Translation"
 sidebar_label: "Chapter 5: Syntax-Directed Translation"
 sidebar_position: 5
 ---
+
 # Chapter 5: Syntax-Directed Translation
 
 **? Previous:** [Chapter 4: Bottom-Up Parsing](04-parsing-bottomup.md) | **Next:** [Chapter 6: Intermediate Code Generation](06-intermediate-code.md)

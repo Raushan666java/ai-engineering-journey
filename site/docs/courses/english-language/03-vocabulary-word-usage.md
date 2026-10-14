@@ -5,6 +5,7 @@ title: "Chapter 3: Vocabulary & Word Usage"
 sidebar_label: "Chapter 3: Vocabulary & Word Usage"
 sidebar_position: 3
 ---
+
 # Chapter 3: Vocabulary & Word Usage
 
 ## Learning Objectives

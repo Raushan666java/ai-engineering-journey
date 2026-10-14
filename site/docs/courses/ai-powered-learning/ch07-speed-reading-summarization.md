@@ -5,6 +5,7 @@ title: "Chapter 7: Speed Reading & Summarization"
 sidebar_label: "Chapter 7: Speed Reading & Summarization"
 sidebar_position: 7
 ---
+
 # Chapter 7: Speed Reading & Summarization
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

@@ -5,6 +5,7 @@ title: "Chapter 12: Indexing"
 sidebar_label: "Chapter 12: Indexing"
 sidebar_position: 12
 ---
+
 # Chapter 12: Indexing
 
 > **Prev:** [Chapter 11: Recovery System](11-recovery.md) | **Next:** [Chapter 13: Query Processing](13-query-processing.md)

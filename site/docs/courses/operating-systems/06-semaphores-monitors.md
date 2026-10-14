@@ -5,6 +5,7 @@ title: "Chapter 6: Semaphores & Monitors"
 sidebar_label: "Chapter 6: Semaphores & Monitors"
 sidebar_position: 6
 ---
+
 # Chapter 6: Semaphores & Monitors
 
 **<< [Process Synchronization](./05-synchronization.md)** | [**Next: Deadlocks**](./07-deadlocks.md) >>

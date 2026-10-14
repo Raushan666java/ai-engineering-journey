@@ -5,6 +5,7 @@ title: "Chapter 4: Active Recall & Spaced Repetition"
 sidebar_label: "Chapter 4: Active Recall & Spaced Repetition"
 sidebar_position: 5
 ---
+
 # Chapter 4: Active Recall & Spaced Repetition
 
 > ⏱ **2.5 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**

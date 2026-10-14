@@ -5,6 +5,7 @@ title: "Chapter 13: Query Processing and Optimization"
 sidebar_label: "Chapter 13: Query Processing and Optimization"
 sidebar_position: 13
 ---
+
 # Chapter 13: Query Processing and Optimization
 
 > **Prev:** [Chapter 12: Indexing](12-indexing.md) | **Next:** [Chapter 14: NoSQL Databases](14-nosql.md)

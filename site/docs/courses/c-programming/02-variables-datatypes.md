@@ -5,6 +5,7 @@ title: "Chapter 2: Variables and Data Types"
 sidebar_label: "Chapter 2: Variables and Data Types"
 sidebar_position: 2
 ---
+
 # Chapter 2: Variables and Data Types
 
 > **Previous:** [Introduction to C](./01-introduction.md) | **Next:** [Operators](./03-operators.md)

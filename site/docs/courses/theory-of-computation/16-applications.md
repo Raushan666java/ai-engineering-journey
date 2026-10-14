@@ -5,6 +5,7 @@ title: "Chapter 16: Applications of Automata Theory"
 sidebar_label: "Chapter 16: Applications of Automata Theory"
 sidebar_position: 16
 ---
+
 # Chapter 16: Applications of Automata Theory
 
 > **Previous:** [Advanced Complexity Topics](./15-advanced-complexity.md) | **Next:** None

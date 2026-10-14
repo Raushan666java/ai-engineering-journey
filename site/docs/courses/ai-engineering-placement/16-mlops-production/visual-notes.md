@@ -5,6 +5,7 @@ title: "Visual Notes — AI Delivery Pipeline"
 sidebar_label: "Visual Notes"
 sidebar_position: 215
 ---
+
 # Visual Notes — AI Delivery Pipeline
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

@@ -5,6 +5,7 @@ title: "Chapter 15: Web APIs and Application Protocols"
 sidebar_label: "Chapter 15: Web APIs and Application Protocols"
 sidebar_position: 15
 ---
+
 # Chapter 15: Web APIs and Application Protocols
 
 ## Learning Objectives

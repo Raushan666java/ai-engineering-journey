@@ -5,6 +5,7 @@ title: "Chapter 08: Greedy Algorithms"
 sidebar_label: "Chapter 08: Greedy Algorithms"
 sidebar_position: 8
 ---
+
 # Chapter 08: Greedy Algorithms
 
 > Greedy algorithms make locally optimal choices at each step, hoping to reach a globally optimal solution. Not all problems can be solved greedily, but when they can, greedy solutions are often the most efficient.

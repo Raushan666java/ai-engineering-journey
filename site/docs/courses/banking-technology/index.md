@@ -5,6 +5,7 @@ title: "Banking Technology & Digital Banking"
 sidebar_label: "Banking Technology & Digital Banking"
 sidebar_position: 5
 ---
+
 # Banking Technology & Digital Banking
 
 > **Exam Weightage:** 2-5 Qs in IBPS SO Mains PK + specific banking awareness GK

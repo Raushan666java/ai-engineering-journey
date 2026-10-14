@@ -5,6 +5,7 @@ title: "Chapter 1: Linear Algebra"
 sidebar_label: "Chapter 1: Linear Algebra"
 sidebar_position: 1
 ---
+
 # Chapter 1: Linear Algebra
 
 > **Previous:** None | **Next:** [Chapter 2: Single Variable Calculus](02-calculus-i.md)

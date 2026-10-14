@@ -5,6 +5,7 @@ title: "Chapter 7: Routing"
 sidebar_label: "Chapter 7: Routing"
 sidebar_position: 7
 ---
+
 # Chapter 7: Routing
 
 > **Prerequisites:** [Chapter 6: Network Layer](./06-network-layer.md) → IP addressing and forwarding | **Next:** [Chapter 8: Transport Layer](./08-transport-layer.md) → From routing to end-to-end delivery

@@ -5,6 +5,7 @@ title: "63. Tools & DevOps — Interview Q&A"
 sidebar_label: "63. Tools & DevOps — Interview Q&A"
 sidebar_position: 71
 ---
+
 # 63. Tools & DevOps — Interview Q&A
 
 > **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)

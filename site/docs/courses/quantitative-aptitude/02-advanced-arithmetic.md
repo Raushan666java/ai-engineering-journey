@@ -5,6 +5,7 @@ title: "Chapter 2: Advanced Arithmetic — Time & Work, Time-Speed-Distance, Mix
 sidebar_label: "Chapter 2: Advanced Arithmetic — Time & Work, Time-Speed-Distance, Mixtures & Alligations, Partnership, Ages"
 sidebar_position: 2
 ---
+
 # Chapter 2: Advanced Arithmetic — Time & Work, Time-Speed-Distance, Mixtures & Alligations, Partnership, Ages
 
 ## Learning Objectives

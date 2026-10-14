@@ -5,6 +5,7 @@ title: "Chapter 7: Deadlocks"
 sidebar_label: "Chapter 7: Deadlocks"
 sidebar_position: 7
 ---
+
 # Chapter 7: Deadlocks
 
 **<< [Semaphores and Monitors](./06-semaphores-monitors.md)** | [**Next: Memory Management**](./08-memory-management.md) >>

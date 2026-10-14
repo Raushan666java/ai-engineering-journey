@@ -5,6 +5,7 @@ title: "Chapter 10: Cloud Architecture Design Patterns"
 sidebar_label: "Chapter 10: Cloud Architecture Design Patterns"
 sidebar_position: 10
 ---
+
 # Chapter 10: Cloud Architecture Design Patterns
 
 > **Previous:** [Chapter 9: Containerization](./09-containerization.md)

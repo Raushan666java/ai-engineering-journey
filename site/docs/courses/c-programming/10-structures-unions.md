@@ -5,6 +5,7 @@ title: "Chapter 10: Structures and Unions"
 sidebar_label: "Chapter 10: Structures and Unions"
 sidebar_position: 10
 ---
+
 # Chapter 10: Structures and Unions
 
 > **Previous:** [Pointers](./09-pointers.md) | **Next:** [Dynamic Memory Allocation](./11-dma.md)

@@ -5,6 +5,7 @@ title: "Chapter 4: Regular Expressions"
 sidebar_label: "Chapter 4: Regular Expressions"
 sidebar_position: 4
 ---
+
 # Chapter 4: Regular Expressions
 
 > **Previous:** [Nondeterministic Finite Automata](./03-nfa.md) | **Next:** [Properties of Regular Languages](./05-regular-languages.md)

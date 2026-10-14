@@ -5,6 +5,7 @@ title: "Chapter 7: Infrastructure as Code"
 sidebar_label: "Chapter 7: Infrastructure as Code"
 sidebar_position: 12
 ---
+
 # Chapter 7: Infrastructure as Code
 
 > **Prev:** [Orchestration](./06-orchestration.md)

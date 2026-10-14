@@ -5,6 +5,8 @@ title: "Verbal Ability — All Sections Master Reference"
 sidebar_label: "Verbal Ability — All Sections Master Reference"
 sidebar_position: 374
 ---
+
+<!-- improved -->
 # Verbal Ability — All Sections Master Reference
 
 > Complete theory for every verbal section asked in ANY company aptitude round.

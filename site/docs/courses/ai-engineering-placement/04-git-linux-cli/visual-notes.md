@@ -5,6 +5,7 @@ title: "Visual Notes — Git & Linux CLI"
 sidebar_label: "Visual Notes"
 sidebar_position: 68
 ---
+
 # Visual Notes — Git & Linux CLI
 
 > One diagram, the full picture. Glance at this before reading the chapters and again before interviews.

@@ -5,6 +5,7 @@ title: "Chapter 10: Low-Level Design: SOLID Principles and OOP"
 sidebar_label: "Chapter 10: Low-Level Design: SOLID Principles and OOP"
 sidebar_position: 10
 ---
+
 # Chapter 10: Low-Level Design: SOLID Principles and OOP
 > **Previous:** [09 Distributed Coordination](./09-distributed-coordination.md) | **Next:** [11 Lld Design Patterns](./11-lld-design-patterns.md)
 

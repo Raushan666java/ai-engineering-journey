@@ -5,6 +5,7 @@ title: "Phase 0 — Compressed Backend Hardening"
 sidebar_label: "Phase 0 — Compressed Backend Hardening"
 sidebar_position: 2
 ---
+
 # Phase 0 — Compressed Backend Hardening
 
 **Duration:** Week 1, ~12-15 hours

@@ -5,6 +5,7 @@ title: "Visual Notes — FastAPI Backend"
 sidebar_label: "Visual Notes"
 sidebar_position: 80
 ---
+
 # Visual Notes — FastAPI Backend
 
 > One diagram, the full picture. Glance at this before reading the chapters and again before interviews.

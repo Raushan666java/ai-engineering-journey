@@ -5,6 +5,7 @@ title: "Chapter 2: Coding Problem Solving"
 sidebar_label: "Chapter 2: Coding Problem Solving"
 sidebar_position: 2
 ---
+
 # Chapter 2: Coding Problem Solving
 
 ## Learning Objectives

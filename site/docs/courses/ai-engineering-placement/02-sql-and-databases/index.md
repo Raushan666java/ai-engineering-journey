@@ -5,6 +5,7 @@ title: "02 — SQL & Databases"
 sidebar_label: "02 — SQL & Databases"
 sidebar_position: 36
 ---
+
 # 02 — SQL & Databases
 
 > **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)

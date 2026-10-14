@@ -5,6 +5,7 @@ title: "07 Operating Systems"
 sidebar_label: "07 Operating Systems"
 sidebar_position: 7
 ---
+
 ﻿# Operating Systems → GATE CS Complete Guide
 
 > Also known as: OS, System Software, Kernel internals
@@ -105,7 +106,7 @@ flowchart LR
 | Response Time (RT) | First Response Time – Arrival Time |
 | Avg TAT | Σ TAT / n |
 | Avg WT | Σ WT / n |
-| CPU Utilization | (Total CPU time) / (Total elapsed time) Ãâ€â€� 100% |
+| CPU Utilization | (Total CPU time) / (Total elapsed time) × 100% |
 | Throughput | Processes completed / Time unit |
 
 ### Page Replacement → Fault Count
@@ -471,8 +472,8 @@ Data structures:
 
 **Effective Memory Access Time (EMAT):**
 ```
-EMAT = hit_ratio Ãâ€â€� (TLB_lookup + memory_access)
-     + miss_ratio Ãâ€â€� (TLB_lookup + page_table_access + memory_access Ãâ€â€� 2)
+EMAT = hit_ratio × (TLB_lookup + memory_access)
+     + miss_ratio × (TLB_lookup + page_table_access + memory_access × 2)
 ```
 
 ### Segmentation
@@ -1012,8 +1013,8 @@ Thrashing occurs when:
 A system has TLB hit ratio of 90%. TLB access time = 10 ns, memory access = 100 ns. What is EMAT?
 
 **Answer: 120 ns**  
-**Explanation:** EMAT = 0.90 Ãâ€â€� (10 + 100) + 0.10 Ãâ€â€� (10 + 100 + 100)  
-= 0.90 Ãâ€â€� 110 + 0.10 Ãâ€â€� 210 = 99 + 21 = 120 ns
+**Explanation:** EMAT = 0.90 × (10 + 100) + 0.10 × (10 + 100 + 100)  
+= 0.90 × 110 + 0.10 × 210 = 99 + 21 = 120 ns
 
 ---
 
@@ -1068,7 +1069,7 @@ How many times is "GATE" printed?
 A system has page size = 1 KB. Page table (for process) has entries: 0→5, 1→8, 2→10, 3→15. What physical address corresponds to logical address 2500?
 
 **Answer: 11236** (decimal)  
-**Explanation:** Logical address 2500. Page number = 2500 / 1024 = 2. Offset = 2500 % 1024 = 452. Frame number from page table = 10. Physical address = 10 Ãâ€â€� 1024 + 452 = 10240 + 452 = 10692.
+**Explanation:** Logical address 2500. Page number = 2500 / 1024 = 2. Offset = 2500 % 1024 = 452. Frame number from page table = 10. Physical address = 10 × 1024 + 452 = 10240 + 452 = 10692.
 
 Wait → let me recalculate: 10 * 1024 = 10240, + 452 = 10692.
 
@@ -1198,7 +1199,7 @@ A race condition occurs when:
 Logical address = 32 bits, page size = 4 KB, page table entry = 4 bytes. What is the page table size for a single-level page table?
 
 **Answer: 4 MB**  
-**Explanation:** Number of pages = 2^32 / 2^12 = 2^20. Each PTE = 4 B. Page table size = 2^20 Ãâ€â€� 4 B = 4 MB.
+**Explanation:** Number of pages = 2^32 / 2^12 = 2^20. Each PTE = 4 B. Page table size = 2^20 × 4 B = 4 MB.
 
 ---
 
@@ -1335,7 +1336,7 @@ A file system uses indexed allocation with an index block of 4 KB. Each block po
 
 **Answer: 4 MB**  
 **Explanation:** Number of pointers in one index block = 4 KB / 4 B = 1024.  
-Maximum file size = 1024 Ãâ€â€� 4 KB = 4 MB.
+Maximum file size = 1024 × 4 KB = 4 MB.
 
 ---
 
@@ -1376,10 +1377,10 @@ When an interrupt occurs, the processor saves the program counter and jumps to:
 ### G39: Working Set [GATE 2018, 2M, Memory Management]
 
 
-The working set window Îâ€Â� = 5. Reference string: 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4. What is the working set size at time t = 12?
+The working set window Î—Â� = 5. Reference string: 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4. What is the working set size at time t = 12?
 
 **Answer: 4**  
-**Explanation:** At t=12, the last 5 references (Îâ€Â�=5) are: 4, 1, 2, 3, 4. Distinct pages: {1, 2, 3, 4}. Working set size = 4.
+**Explanation:** At t=12, the last 5 references (Î—Â�=5) are: 4, 1, 2, 3, 4. Distinct pages: {1, 2, 3, 4}. Working set size = 4.
 
 ---
 
@@ -1550,8 +1551,8 @@ Assume page fault service time = 8 ms (including all overhead). Memory access = 
 
 **Answer: 1000 ns (approx)**  
 **Explanation:**  
-EMAT = (1 - p) Ãâ€â€� memory_access + p Ãâ€â€� page_fault_service  
-= 0.9999 Ãâ€â€� 200 ns + 0.0001 Ãâ€â€� 8,000,000 ns  
+EMAT = (1 - p) × memory_access + p × page_fault_service  
+= 0.9999 × 200 ns + 0.0001 × 8,000,000 ns  
 = 199.98 + 800 = 999.98 ns ≈ 1000 ns
 
 ---
@@ -1572,9 +1573,9 @@ A counting semaphore S is initialized to 7. 13 P(S) operations and 11 V(S) opera
 A processor has a cache miss rate of 2%. Main memory access time = 100 ns. Cache access time = 2 ns. What is the average memory access time?
 
 **Answer: 3.96 ns**  
-**Explanation:** AMAT = hit_time + miss_rate Ãâ€â€� miss_penalty  
-= 2 + 0.02 Ãâ€â€� 100 = 2 + 2 = 4 ns.  
-(In some formulations: AMAT = 0.98 Ãâ€â€� 2 + 0.02 Ãâ€â€� 102 = 1.96 + 2.04 = 4 ns.)
+**Explanation:** AMAT = hit_time + miss_rate × miss_penalty  
+= 2 + 0.02 × 100 = 2 + 2 = 4 ns.  
+(In some formulations: AMAT = 0.98 × 2 + 0.02 × 102 = 1.96 + 2.04 = 4 ns.)
 
 ---
 
@@ -1585,8 +1586,8 @@ Disk rotates at 6000 RPM, average seek time = 5 ms, data transfer = 50 MB/s. Blo
 
 **Answer: Approximately 12.5 ms**  
 **Explanation:**  
-Rotational latency = 0.5 Ãâ€â€� (60/6000) = 0.5 Ãâ€â€� 0.01 = 5 ms.  
-Transfer time = 4 KB / 50 MB/s = 4096 / (50 Ãâ€â€� 10^6) = 0.08192 ms.  
+Rotational latency = 0.5 × (60/6000) = 0.5 × 0.01 = 5 ms.  
+Transfer time = 4 KB / 50 MB/s = 4096 / (50 × 10^6) = 0.08192 ms.  
 Total = seek + rotational_latency + transfer = 5 + 5 + 0.08 ≈ 10.08 ms.  
 [If using 1 RPM = 60/6000 = 10ms per rotation. Rotational latency = 5ms. Total = 5 + 5 + 0.08 = 10.08 ms.]
 
@@ -1637,8 +1638,8 @@ Avg WT = (13 + 0 + 3 + 18)/4 = 34/4 = 8.5
 
 A file has 512 bytes per disk block. What is the maximum file size if the inode has 10 direct blocks and one single indirect block, where each block pointer is 4 bytes?
 
-**Answer: 10 Ãâ€â€� 512 + (512/4) Ãâ€â€� 512 = 5120 + 128 Ãâ€â€� 512 = 5120 + 65536 = 70656 bytes**  
-**Explanation:** Direct: 10 Ãâ€â€� 512 = 5120 bytes. Single indirect: one block holds 512/4 = 128 pointers, each pointing to 512-byte block = 128 Ãâ€â€� 512 = 65536 bytes.
+**Answer: 10 × 512 + (512/4) × 512 = 5120 + 128 × 512 = 5120 + 65536 = 70656 bytes**  
+**Explanation:** Direct: 10 × 512 = 5120 bytes. Single indirect: one block holds 512/4 = 128 pointers, each pointing to 512-byte block = 128 × 512 = 65536 bytes.
 
 ---
 
@@ -1797,11 +1798,11 @@ Wait let me be more careful:
 
 ```
 Process P (original)
-ââ€�œââ€�€ fork() → child C1 (if fork() == 0 is true in C1)
-ââ€�‚  in C1: fork() → child C2
-ââ€�‚  then C1 calls fork() → child C3
-ââ€�‚  and C2 calls fork() → child C4
-ââ€�‚  then P also calls fork() (after the if block) → child C5
+â—�œâ—�€ fork() → child C1 (if fork() == 0 is true in C1)
+â—�‚  in C1: fork() → child C2
+â—�‚  then C1 calls fork() → child C3
+â—�‚  and C2 calls fork() → child C4
+â—�‚  then P also calls fork() (after the if block) → child C5
 ```
 
 Actually let me trace step by step:
@@ -1885,7 +1886,7 @@ If page fault rate is p, memory access = t ns, and page fault service time = S n
 **(D)** p(t+S)  
 
 **Answer: (A)**  
-**Explanation:** EMAT = (1 - p) Ãâ€â€� t + p Ãâ€â€� S. No page fault: one memory access. Page fault: service time.
+**Explanation:** EMAT = (1 - p) × t + p × S. No page fault: one memory access. Page fault: service time.
 
 ---
 
@@ -1979,8 +1980,8 @@ TLB hit ratio = 80%. TLB access = 20 ns. Memory access = 100 ns. What is EMAT?
 
 **Answer: 140 ns**  
 **Explanation:**  
-EMAT = 0.80 Ãâ€â€� (20 + 100) + 0.20 Ãâ€â€� (20 + 100 + 100)  
-= 0.80 Ãâ€â€� 120 + 0.20 Ãâ€â€� 220 = 96 + 44 = 140 ns
+EMAT = 0.80 × (20 + 100) + 0.20 × (20 + 100 + 100)  
+= 0.80 × 120 + 0.20 × 220 = 96 + 44 = 140 ns
 
 ---
 
@@ -2116,7 +2117,7 @@ In the first readers-writers problem, which of the following is true?
 
 ## Summary
 
-Operating Systems is a high-scoring GATE CS subject (8-12 marks, ~10-14% of the paper) covering process management (creation, states, scheduling), CPU scheduling algorithms (FCFS, SJF, Round Robin, Priority â€â€� with Gantt chart tracing), process synchronization (semaphores, mutexes, monitors, classical problems like producer-consumer and dining philosophers), deadlocks (necessary conditions, RAG, Banker's algorithm), memory management (paging, segmentation, virtual memory, page replacement algorithms â€â€� FIFO, LRU, Optimal, Clock), file systems (inodes, allocation methods, UNIX file system), disk scheduling (FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK), and I/O management. The most frequently tested topics are page replacement tracing (appears nearly every year), CPU scheduling Gantt chart problems, Banker's algorithm for deadlock avoidance, and synchronization with semaphores. Questions are formulaic and reward consistent practice â€â€� tracing FIFO/LRU page replacements and Gantt charts until they become automatic is the most effective preparation strategy.
+Operating Systems is a high-scoring GATE CS subject (8-12 marks, ~10-14% of the paper) covering process management (creation, states, scheduling), CPU scheduling algorithms (FCFS, SJF, Round Robin, Priority — with Gantt chart tracing), process synchronization (semaphores, mutexes, monitors, classical problems like producer-consumer and dining philosophers), deadlocks (necessary conditions, RAG, Banker's algorithm), memory management (paging, segmentation, virtual memory, page replacement algorithms — FIFO, LRU, Optimal, Clock), file systems (inodes, allocation methods, UNIX file system), disk scheduling (FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK), and I/O management. The most frequently tested topics are page replacement tracing (appears nearly every year), CPU scheduling Gantt chart problems, Banker's algorithm for deadlock avoidance, and synchronization with semaphores. Questions are formulaic and reward consistent practice — tracing FIFO/LRU page replacements and Gantt charts until they become automatic is the most effective preparation strategy.
 
 ```mermaid
 flowchart TD
@@ -2140,7 +2141,7 @@ flowchart TD
 
 ```typescript
 /**
- * ProcessScheduler â€â€� CPU Scheduling Simulator
+ * ProcessScheduler — CPU Scheduling Simulator
  * ----------------------------------------------
  * Simulates FCFS, SJF (preemptive/non-preemptive), Round Robin,
  * and Priority scheduling. Outputs Gantt chart and average waiting time.
@@ -2359,4 +2360,4 @@ sched.printResults(sched.simulateRR(4), 'Round Robin (q=4)');
 
 ---
 
-*End of Operating Systems â€â€�" GATE CS Complete Guide. Extended with summary, TypeScript implementations, quiz, and exercises.*
+*End of Operating Systems —" GATE CS Complete Guide. Extended with summary, TypeScript implementations, quiz, and exercises.*

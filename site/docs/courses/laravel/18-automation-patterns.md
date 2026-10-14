@@ -5,6 +5,7 @@ title: "Chapter 18: Automation Patterns & Workflows"
 sidebar_label: "Chapter 18: Automation Patterns & Workflows"
 sidebar_position: 18
 ---
+
 # Chapter 18: Automation Patterns & Workflows
 
 > **Previous:** [Laravel Boost](./17-boost.md) | **Next:** [Architecture Patterns](./19-architecture-patterns.md)

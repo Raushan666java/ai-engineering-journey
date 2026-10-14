@@ -5,6 +5,7 @@ title: "10 Data Structures Algorithms"
 sidebar_label: "10 Data Structures Algorithms"
 sidebar_position: 10
 ---
+
 ﻿# Chapter 10: Data Structures & Algorithms → GATE CS Preparation
 
 ---
@@ -100,7 +101,7 @@ flowchart LR
 **Properties:**
 - Transitive: f(n) = O(g(n)) and g(n) = O(h(n)) ⇒ f(n) = O(h(n))
 - Reflexive: f(n) = O(f(n))
-- Symmetric for Θ only: f(n) = Θ(g(n)) â‡â€� g(n) = Θ(f(n))
+- Symmetric for Θ only: f(n) = Θ(g(n)) â‡—� g(n) = Θ(f(n))
 - Addition: fâ‚ÂÂ�(n) + f₂(n) = O(max(fâ‚ÂÂ�(n), f₂(n)))
 - Multiplication: fâ‚ÂÂ�(n) · f₂(n) = O(fâ‚ÂÂ�(n) · f₂(n))
 
@@ -157,25 +158,25 @@ O(1) &lt; O(log log n) < O(log n) < O((log n)²) < O(√n) < O(n) < O(n log n) <
 ### 2.1 Representation in Memory
 
 
-**Row-major order (C/C++):** Address(A[i][j]) = Base + (i Ãâ€â€� n + j) Ãâ€â€� size
+**Row-major order (C/C++):** Address(A[i][j]) = Base + (i × n + j) × size
 
-**Column-major order (Fortran):** Address(A[i][j]) = Base + (j Ãâ€â€� m + i) Ãâ€â€� size
+**Column-major order (Fortran):** Address(A[i][j]) = Base + (j × m + i) × size
 
 **For n-dimensional array A[dâ‚ÂÂ�][d₂]...[dₙ]:**
-- Address = Base + Σ_{k=1}^{n} (iₖ Ãâ€â€� Π_{t=k+1}^{n} dₜ) Ãâ€â€� size
+- Address = Base + Σ_{k=1}^{n} (iₖ × Π_{t=k+1}^{n} dₜ) × size
 
 ### 2.2 Sparse Matrices
 
 
-**Definition:** Matrix with mostly zero entries (nnz &lt;< m Ãâ€â€� n).
+**Definition:** Matrix with mostly zero entries (nnz &lt;< m × n).
 
 **Representations:**
 
 | Method | Storage | Description |
 |--------|---------|-------------|
-| Coordinate (COO) | O(nnz Ãâ€â€� 3) | (row, col, value) triples |
-| CSR (Compressed Sparse Row) | O(nnz Ãâ€â€� 2 + m + 1) | value[], col_index[], row_ptr[] |
-| CSC (Compressed Sparse Column) | O(nnz Ãâ€â€� 2 + n + 1) | value[], row_index[], col_ptr[] |
+| Coordinate (COO) | O(nnz × 3) | (row, col, value) triples |
+| CSR (Compressed Sparse Row) | O(nnz × 2 + m + 1) | value[], col_index[], row_ptr[] |
+| CSC (Compressed Sparse Column) | O(nnz × 2 + n + 1) | value[], row_index[], col_ptr[] |
 
 **CSR Example:**
 ```
@@ -193,10 +194,10 @@ row_ptr   = [0, 2, 3, 5]
 
 
 **2D array A[m][n] stored row-major:**
-- A[i][j] = Base + (i Ãâ€â€� n + j) Ãâ€â€� element_size
+- A[i][j] = Base + (i × n + j) × element_size
 
 **2D array A[m][n] stored column-major:**
-- A[i][j] = Base + (j Ãâ€â€� m + i) Ãâ€â€� element_size
+- A[i][j] = Base + (j × m + i) × element_size
 
 **Triangular matrix (lower) in 1D array:**
 - Index of A[i][j] (i ≥ j) = i(i+1)/2 + j
@@ -306,9 +307,9 @@ return pop()
 
 | Expression | Order | Example |
 |------------|-------|---------|
-| Infix | operand operator operand | A + B Ãâ€â€� C |
-| Prefix | operator operand operand | + A Ãâ€â€� B C |
-| Postfix | operand operand operator | A B C Ãâ€â€� + |
+| Infix | operand operator operand | A + B × C |
+| Prefix | operator operand operand | + A × B C |
+| Postfix | operand operand operator | A B C × + |
 
 **Evaluation direction:** Postfix uses a single stack. Prefix can be evaluated right-to-left.
 
@@ -471,7 +472,7 @@ function lca(root, p, q):
 
 **Insertion fix-up:** Depending on uncle's color and relative position, perform rotations and color flips.
 
-**Black-height:** bh(x) = number of black nodes on path from x to leaf (excluding x). Tree height ≤ 2 Ãâ€â€� black-height.
+**Black-height:** bh(x) = number of black nodes on path from x to leaf (excluding x). Tree height ≤ 2 × black-height.
 
 **2-3-4 tree correspondence:** Every Red-Black tree corresponds to a 2-3-4 tree.
 
@@ -946,7 +947,7 @@ Good hash function properties: deterministic, uniform distribution, fast computa
 
 
 When load factor exceeds threshold (typically 0.75):
-1. Allocate new table (usually 2Ãâ€â€� size)
+1. Allocate new table (usually 2× size)
 2. Recompute hash for every key
 3. Insert into new table
 - Complexity: O(n) per rehash, amortized O(1) per insertion
@@ -969,7 +970,7 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) 300 (B) 310 (C) 320 (D) 330
 
-**Answer:** B. A[5][10] = 100 + (5Ãâ€â€�20 + 10)Ãâ€â€�2 = 100 + 110Ãâ€â€�2 = 100 + 220 = 320.
+**Answer:** B. A[5][10] = 100 + (5×20 + 10)×2 = 100 + 110×2 = 100 + 220 = 320.
 
 **A2** [GATE 2017, 2 marks, Arrays] A lower triangular matrix L[n][n] is stored in 1D array of size n(n+1)/2. Index of L[i][j] (i ≥ j) in 1D array (0-indexed) is:
 
@@ -1007,11 +1008,11 @@ When load factor exceeds threshold (typically 0.75):
 
 **Answer:** A. Each push is O(1), total O(N). If dynamic array with doubling: O(N) amortized.
 
-**A7** [GATE 2019, 2 marks, Stacks] The postfix expression for (A + B) Ãâ€â€� (C − D) is:
+**A7** [GATE 2019, 2 marks, Stacks] The postfix expression for (A + B) × (C − D) is:
 
-- (A) AB+CD−Ãâ€â€� (B) AB+CDÃâ€â€�− (C) +ABÃâ€â€�−CD (D) Ãâ€â€�+AB−CD
+- (A) AB+CD−× (B) AB+CD×− (C) +AB×−CD (D) ×+AB−CD
 
-**Answer:** A. Infix: (A+B)Ãâ€â€�(C−D); Postfix: AB+CD−Ãâ€â€�.
+**Answer:** A. Infix: (A+B)×(C−D); Postfix: AB+CD−×.
 
 **A8** [GATE 2021, 2 marks, Queues] A circular queue has size 5. front = 2, rear = 4 (0-indexed). How many elements are in the queue?
 
@@ -1019,11 +1020,11 @@ When load factor exceeds threshold (typically 0.75):
 
 **Answer:** B. Number of elements = (rear − front + size) mod size = (4 − 2 + 5) mod 5 = 2. Wait: actually 3: positions 2, 3, 4 → rear − front + 1 = 3.
 
-**A9** [GATE 2017, 2 marks, Stacks] Evaluate postfix: 2 3 4 Ãâ€â€� + 5 −. Result:
+**A9** [GATE 2017, 2 marks, Stacks] Evaluate postfix: 2 3 4 × + 5 −. Result:
 
 - (A) 5 (B) 9 (C) 11 (D) 15
 
-**Answer:** B. Stack: push 2, push 3, push 4 → pop 4, pop 3 → 3Ãâ€â€�4=12 push → pop 12, pop 2 → 2+12=14 push → push 5 → pop 5, pop 14 → 14−5=9.
+**Answer:** B. Stack: push 2, push 3, push 4 → pop 4, pop 3 → 3×4=12 push → pop 12, pop 2 → 2+12=14 push → push 5 → pop 5, pop 14 → 14−5=9.
 
 ### Trees
 
@@ -1135,7 +1136,7 @@ When load factor exceeds threshold (typically 0.75):
 
 **A26** [GATE 2021, 2 marks, Bellman-Ford] Bellman-Ford for V vertices, E edges. Number of relaxations:
 
-- (A) VÃâ€â€�E (B) (V−1)Ãâ€â€�E (C) V² (D) VE²
+- (A) V×E (B) (V−1)×E (C) V² (D) VE²
 
 **Answer:** B. V−1 iterations, each relaxing all E edges: (V−1)·E.
 
@@ -1549,7 +1550,7 @@ Fibonacci: F(n) = F(n−1) + F(n−2)
 
 ## Summary
 
-Data Structures & Algorithms (DSA) carries the highest weight in GATE CS (10-14 marks, ~12% of the paper) and covers arrays, linked lists, stacks, queues, trees (BST, AVL, B/B+ trees), graphs (BFS, DFS, MST algorithms â€â€� Kruskal, Prim; shortest paths â€â€� Dijkstra, Bellman-Ford, Floyd-Warshall), sorting (comparison-based and non-comparison, stability, in-place), searching (binary search, interpolation search), hashing (open/closed addressing, probing, load factor), and asymptotic complexity analysis (Big-O, Master theorem, recurrence solving). Graph algorithms (6-10 marks) and trees (5-8 marks) are the highest-weight topics, followed by sorting complexity analysis (3-5 marks) and hashing (2-4 marks). The key to success is choosing the right data structure for each operation â€â€� understanding trade-offs between insertion, deletion, search, and space complexity across different structures. The Master theorem for solving recurrences T(n) = aT(n/b) + f(n) is essential for complexity analysis of recursive algorithms. GATE questions often ask about underlying algorithm invariants and edge cases rather than straightforward implementation.
+Data Structures & Algorithms (DSA) carries the highest weight in GATE CS (10-14 marks, ~12% of the paper) and covers arrays, linked lists, stacks, queues, trees (BST, AVL, B/B+ trees), graphs (BFS, DFS, MST algorithms — Kruskal, Prim; shortest paths — Dijkstra, Bellman-Ford, Floyd-Warshall), sorting (comparison-based and non-comparison, stability, in-place), searching (binary search, interpolation search), hashing (open/closed addressing, probing, load factor), and asymptotic complexity analysis (Big-O, Master theorem, recurrence solving). Graph algorithms (6-10 marks) and trees (5-8 marks) are the highest-weight topics, followed by sorting complexity analysis (3-5 marks) and hashing (2-4 marks). The key to success is choosing the right data structure for each operation — understanding trade-offs between insertion, deletion, search, and space complexity across different structures. The Master theorem for solving recurrences T(n) = aT(n/b) + f(n) is essential for complexity analysis of recursive algorithms. GATE questions often ask about underlying algorithm invariants and edge cases rather than straightforward implementation.
 
 ```mermaid
 flowchart TD
@@ -1574,7 +1575,7 @@ flowchart TD
 
 ```typescript
 /**
- * BinarySearchTreeOps â€â€� BST Operations Suite
+ * BinarySearchTreeOps — BST Operations Suite
  * -----------------------------------------------
  * Implements BST construction, search, insertion, deletion,
  * traversals, and balancing check (for AVL-style height balance).
@@ -1643,7 +1644,7 @@ class BinarySearchTreeOps {
     return current;
   }
 
-  /** Inorder traversal â€â€� returns sorted array */
+  /** Inorder traversal — returns sorted array */
   inorder(): number[] {
     const result: number[] = [];
     this.inorderTraversal(this.root, result);
@@ -1781,4 +1782,4 @@ console.log('After deleting 30, inorder:', bst.inorder().join(', '));
 
 ---
 
-*End of Chapter 10 â€â€� Data Structures & Algorithms for GATE CS. Extended with summary, TypeScript implementations, quiz, and exercises.* → Data Structures & Algorithms for GATE CS. Target: 1200–2000 lines covering all GATE-relevant DSA topics with 50+ PYQs (2010–2025), complexity cheat sheet, recurrence reference, and trap analysis.*
+*End of Chapter 10 — Data Structures & Algorithms for GATE CS. Extended with summary, TypeScript implementations, quiz, and exercises.* → Data Structures & Algorithms for GATE CS. Target: 1200–2000 lines covering all GATE-relevant DSA topics with 50+ PYQs (2010–2025), complexity cheat sheet, recurrence reference, and trap analysis.*

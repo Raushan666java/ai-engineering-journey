@@ -5,6 +5,7 @@ title: "Chapter 14: Timing Analysis"
 sidebar_label: "Chapter 14: Timing Analysis"
 sidebar_position: 14
 ---
+
 # Chapter 14: Timing Analysis
 
 > **Prereq:** Chapter 6 (Sequential Circuits) ? flip-flop timing parameters are the foundation of static timing analysis.

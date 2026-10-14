@@ -5,6 +5,7 @@ title: "Chapter 5: Active Recall & Quiz Prompts"
 sidebar_label: "Chapter 5: Active Recall & Quiz Prompts"
 sidebar_position: 5
 ---
+
 # Chapter 5: Active Recall & Quiz Prompts
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

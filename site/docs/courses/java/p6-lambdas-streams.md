@@ -5,6 +5,7 @@ title: "Lambda Expressions & Functional Programming"
 sidebar_label: "Lambda Expressions & Functional Programming"
 sidebar_position: 81
 ---
+
 # Lambda Expressions & Functional Programming
 
 ## Learning Objectives

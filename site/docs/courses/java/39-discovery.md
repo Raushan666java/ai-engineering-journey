@@ -5,6 +5,7 @@ title: "Service Discovery & Load Balancing"
 sidebar_label: "Service Discovery & Load Balancing"
 sidebar_position: 39
 ---
+
 # Service Discovery & Load Balancing
 > **Previous:** [Microservices Principles](38-microservices-principles.md) | **Next:** [API Gateway](40-gateway.md)
 

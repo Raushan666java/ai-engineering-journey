@@ -5,6 +5,7 @@ title: "Chapter 7: Strings"
 sidebar_label: "Chapter 7: Strings"
 sidebar_position: 7
 ---
+
 # Chapter 7: Strings
 
 > **Previous:** [Arrays](./06-arrays.md) | **Next:** [Functions](./08-functions.md)

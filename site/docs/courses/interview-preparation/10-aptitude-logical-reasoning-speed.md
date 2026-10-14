@@ -5,6 +5,7 @@ title: "Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics"
 sidebar_label: "Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics"
 sidebar_position: 10
 ---
+
 # Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics
 
 ## Learning Objectives

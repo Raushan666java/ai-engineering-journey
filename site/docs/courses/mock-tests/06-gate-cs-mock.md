@@ -5,6 +5,7 @@ title: "GATE CS — Full-Length Mock Test"
 sidebar_label: "GATE CS — Full-Length Mock Test"
 sidebar_position: 6
 ---
+
 # GATE CS — Full-Length Mock Test
 
 > **Exam:** Graduate Aptitude Test in Engineering — Computer Science (GATE CS)  

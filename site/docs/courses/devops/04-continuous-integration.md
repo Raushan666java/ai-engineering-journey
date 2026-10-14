@@ -5,6 +5,7 @@ title: "Chapter 4: Continuous Integration"
 sidebar_label: "Chapter 4: Continuous Integration"
 sidebar_position: 7
 ---
+
 # Chapter 4: Continuous Integration
 
 > **Prev:** [CI/CD](./04-cicd.md)

@@ -5,6 +5,7 @@ title: "Chapter 6: Procrastination, Habits & Deep Work"
 sidebar_label: "Chapter 6: Procrastination, Habits & Deep Work"
 sidebar_position: 7
 ---
+
 # Chapter 6: Procrastination, Habits & Deep Work
 
 > **Prerequisites:** [Chapter 5: Memory Systems & Mnemonics](./ch-05-memory-systems.md) — Memory techniques for encoding and retrieval.

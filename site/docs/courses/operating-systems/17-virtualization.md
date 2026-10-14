@@ -5,6 +5,7 @@ title: "Chapter 17: Virtualization"
 sidebar_label: "Chapter 17: Virtualization"
 sidebar_position: 17
 ---
+
 # Chapter 17: Virtualization
 
 **<< [Security](./16-security.md)** | [**Next: Case Studies**](./18-case-studies.md) >>
@@ -1442,7 +1443,7 @@ Step 10: User sees VM window; interacts through GUI integration
 | **Host OS** | None (hypervisor is OS) | Required (Windows, Linux, macOS) |
 | **Scheduling** | One level (hypervisor schedules vCPUs on pCPUs) | Two levels (host OS schedules hypervisor process; hypervisor schedules vCPUs) |
 | **Performance** | 95-99% of native | 80-95% of native |
-| **I/O latency** | ~2-10Î¼s | ~10-100Î¼s (extra context switches) |
+| **I/O latency** | ~2-10μs | ~10-100μs (extra context switches) |
 | **Memory overhead** | <100 MB for hypervisor | 256 MB - 2 GB (host OS) + application memory |
 | **Concurrent apps** | No (all hardware for VMs) | Yes (VMs + regular apps share) |
 | **Management** | CLI, REST API, vCenter, SCVMM | GUI application (VirtualBox, Workstation) |
@@ -2591,7 +2592,7 @@ Every memory access requires up to **24 memory references** on x86-64 with 4-lev
 ```
 VA translation using 4-level paging + EPT:
 
-Guest walk (4 levels):         EPT walks (4Ã—4 = 16 levels):
+Guest walk (4 levels):         EPT walks (4×4 = 16 levels):
   PML4[0] @ GPA_X1  ──EPT──►  PML4E[0]  @ MPA_A
   PDPT[1] @ GPA_X2  ──EPT──►  PDPTE[1]  @ MPA_B
   PD[2]   @ GPA_X3  ──EPT──►  PDE[2]    @ MPA_C
@@ -2641,7 +2642,7 @@ public:
 class EPT:
     def __init__(self, host_memory):
         self.host_memory = host_memory
-        self.ept_pml4 = bytearray(4096)  # 512 entries Ã— 8 bytes
+        self.ept_pml4 = bytearray(4096)  # 512 entries × 8 bytes
 
     def translate(self, gpa):
         """Translate GPA to MPA using EPT (simulated 2-level walk)"""
@@ -2989,7 +2990,7 @@ Instead of all mail going through a front desk (emulated) or a shared bin (virti
 ```
 Operation          Emulated    Virtio      SR-IOV
 -----------------  --------    ------      -----
-Network latency    50-100Âµs    10-20Âµs     1-3Âµs
+Network latency    50-100µs    10-20µs     1-3µs
 Throughput         1-5 Gbps   10-25 Gbps  30-50+ Gbps
 CPU overhead       ~80%        ~30%        ~5%
 Context switches   1 per I/O   0 (polling) 0
@@ -3580,7 +3581,7 @@ Without invariant TSC, a guest migrated between different-speed CPUs could see t
    - Virtio uses shared ring buffers, eliminating MMIO traps for each I/O.
 
 4. **What is the minimum number of memory accesses for a 4-level page walk with EPT?**
-   - 20-24 (4 guest walk Ã— 4 EPT walk + extra for TLB miss).
+   - 20-24 (4 guest walk × 4 EPT walk + extra for TLB miss).
 
 5. **Why can't containers run a different kernel than the host?**
    - Containers share the host kernel through syscalls; they don't have their own kernel.

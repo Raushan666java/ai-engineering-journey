@@ -5,6 +5,8 @@ title: "Company Test Patterns (TCS, Infosys, Wipro, Capgemini, Accenture, Cogniz
 sidebar_label: "Company Test Patterns (TCS, Infosys, Wipro, Capgemini, Accenture, Cognizant)"
 sidebar_position: 365
 ---
+
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Company Test Patterns (TCS, Infosys, Wipro, Capgemini, Accenture, Cognizant)
 

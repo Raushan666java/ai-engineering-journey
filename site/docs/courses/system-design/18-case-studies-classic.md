@@ -5,6 +5,7 @@ title: "Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin"
 sidebar_label: "Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin"
 sidebar_position: 18
 ---
+
 # Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin
 > **Previous:** [17 Observability Resiliency](./17-observability-resiliency.md) | **Next:** [19 Case Study Whatsapp](./19-case-study-whatsapp.md)
 

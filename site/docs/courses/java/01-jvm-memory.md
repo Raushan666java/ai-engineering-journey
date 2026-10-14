@@ -5,6 +5,7 @@ title: "JVM Architecture & Memory Management"
 sidebar_label: "JVM Architecture & Memory Management"
 sidebar_position: 1
 ---
+
 # JVM Architecture & Memory Management
 
 > **Previous:** None (First Chapter) | **Next:** [Concurrency & Threading](./02-concurrency.md)

@@ -5,6 +5,7 @@ title: "MySQL & Database Interview Q&A"
 sidebar_label: "MySQL & Database Interview Q&A"
 sidebar_position: 50
 ---
+
 # MySQL & Database Interview Q&A
 
 > **Previous:** [PHP Interview Q&A](./49-interview-php.md) | **Next:** [HTML Interview Q&A](./51-interview-html.md)
@@ -478,7 +479,7 @@ CREATE TABLE phones (
 ### Q32: What is the difference between `TINYINT`, `SMALLINT`, `MEDIUMINT`, `INT`, and `BIGINT`?
 
 
-**Answer:** They differ in storage size and range: `TINYINT` (1 byte, -128-127), `SMALLINT` (2 bytes, Â±32K), `MEDIUMINT` (3 bytes, Â±8M), `INT` (4 bytes, Â±2B), `BIGINT` (8 bytes, Â±9.2E18). Choose the smallest type that safely fits your data.
+**Answer:** They differ in storage size and range: `TINYINT` (1 byte, -128-127), `SMALLINT` (2 bytes, ±32K), `MEDIUMINT` (3 bytes, ±8M), `INT` (4 bytes, ±2B), `BIGINT` (8 bytes, ±9.2E18). Choose the smallest type that safely fits your data.
 
 ### Q33: How do you model hierarchical data (e.g., categories with subcategories) in MySQL?
 

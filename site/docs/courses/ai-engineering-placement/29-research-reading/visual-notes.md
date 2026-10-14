@@ -5,6 +5,7 @@ title: "Visual Notes — From Paper to Lasting Understanding"
 sidebar_label: "Visual Notes"
 sidebar_position: 344
 ---
+
 # Visual Notes — From Paper to Lasting Understanding
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

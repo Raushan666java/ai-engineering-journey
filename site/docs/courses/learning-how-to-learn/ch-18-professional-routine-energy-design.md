@@ -5,6 +5,7 @@ title: "Chapter 18: Professional Routine & Energy Design"
 sidebar_label: "Chapter 18: Professional Routine & Energy Design"
 sidebar_position: 19
 ---
+
 # Chapter 18: Professional Routine & Energy Design
 
 > **Prerequisites:** [Chapter 6: Procrastination, Habits & Deep Work](./ch-06-procrastination-habits-deep-work.md) — Deep-work blocks and habit systems are the raw materials this chapter schedules.

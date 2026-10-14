@@ -5,6 +5,7 @@ title: "Chapter 17: Study Protocols & Brain Hacks"
 sidebar_label: "Chapter 17: Study Protocols & Brain Hacks"
 sidebar_position: 18
 ---
+
 # Chapter 17: Study Protocols & Brain Hacks
 
 > **Prerequisites:** [Chapter 16: Self-Assessment & Structured Preparation Strategy](./ch-16-self-assessment-strategy.md) — Knowing where you stand before optimizing how you learn.

@@ -5,6 +5,7 @@ title: "Visual Notes — Multimodal Input to Voice Output"
 sidebar_label: "Visual Notes"
 sidebar_position: 235
 ---
+
 # Visual Notes — Multimodal Input to Voice Output
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

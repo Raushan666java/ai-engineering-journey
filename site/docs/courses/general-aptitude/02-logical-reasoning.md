@@ -5,6 +5,7 @@ title: "Chapter 2: Logical Reasoning"
 sidebar_label: "Chapter 2: Logical Reasoning"
 sidebar_position: 2
 ---
+
 # Chapter 2: Logical Reasoning
 
 > **Previous:** [Chapter 1: Quantitative Aptitude](01-quantitative-aptitude.md) | **Next:** [Chapter 3: Verbal Ability](03-verbal-ability.md)

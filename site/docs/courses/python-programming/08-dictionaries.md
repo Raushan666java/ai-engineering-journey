@@ -5,6 +5,7 @@ title: "Chapter 8: Dictionaries"
 sidebar_label: "Chapter 8: Dictionaries"
 sidebar_position: 8
 ---
+
 # Chapter 8: Dictionaries
 
 

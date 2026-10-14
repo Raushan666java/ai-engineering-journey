@@ -5,6 +5,7 @@ title: "Chapter 14: Red-Black Trees"
 sidebar_label: "Chapter 14: Red-Black Trees"
 sidebar_position: 14
 ---
+
 # Chapter 14: Red-Black Trees
 
 **Prev:** [Chapter 13: AVL Trees](13-avl.md) | **Next:** [Chapter 15: B-Trees and B+ Trees](15-b-trees.md)

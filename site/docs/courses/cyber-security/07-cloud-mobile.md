@@ -4,6 +4,12 @@ title: "Chapter 7: Cloud & Mobile Security"
 permalink: /cyber-security/07-cloud-mobile/
 ---
 
+---
+layout: default
+title: "Chapter 7: Cloud & Mobile Security"
+permalink: /cyber-security/07-cloud-mobile/
+---
+
 # Chapter 7: Cloud & Mobile Security
 
 > **Prereq:** Chapter 6 (IAM) — cloud security extends IAM to cloud provider and mobile device identities.

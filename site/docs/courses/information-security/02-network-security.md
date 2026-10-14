@@ -5,6 +5,7 @@ title: "Chapter 2: Network Security"
 sidebar_label: "Chapter 2: Network Security"
 sidebar_position: 2
 ---
+
 # Chapter 2: Network Security
 
 > **Exam Weightage:** 4–5 Qs in IBPS SO IT Officer Mains (Firewalls, IDS/IPS, VPN, SSL/TLS, Secure Protocols)
@@ -1467,7 +1468,7 @@ D) Does not support elliptic curve cryptography
 
 **Answer: B) Reduces handshake from 2-RTT to 1-RTT**
 
-**Explanation:** TLS 1.3 reduces the full handshake from two round trips (TLS 1.2) to one round trip by sending the client's key share in the initial ClientHello. Additionally, the server's Certificate and CertificateVerify messages are sent immediately after ServerHello, eliminating the separate round trip. TLS 1.3 also removed CBC mode, RSA key exchange, and made forward secrecy mandatory — all of which are opposite to options A, C, and D.
+**Explanation:** TLS 1.3 reduces the full handshake from two round trips (TLS 1.2) to one round trip by sending the client's key share in the initial ClientHello. the server's Certificate and CertificateVerify messages are sent immediately after ServerHello, eliminating the separate round trip. TLS 1.3 also removed CBC mode, RSA key exchange, and made forward secrecy mandatory — all of which are opposite to options A, C, and D.
 </details>
 
 ---

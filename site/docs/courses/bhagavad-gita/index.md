@@ -5,6 +5,7 @@ title: "The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan"
 sidebar_label: "The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan"
 sidebar_position: 19
 ---
+
 # The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan
 
 > **"The Gita is not a book — it is a battlefield. And inside every seeker there is an Arjuna who is ready to ask the question."**

@@ -5,6 +5,7 @@ title: "Chapter 11: SOC Operations & Threat Hunting"
 sidebar_label: "Chapter 11: SOC Operations & Threat Hunting"
 sidebar_position: 10
 ---
+
 # Chapter 11: SOC Operations & Threat Hunting
 
 > **Prereq:** Chapters 1-3 (Security Fundamentals, Cryptography, Network Security)

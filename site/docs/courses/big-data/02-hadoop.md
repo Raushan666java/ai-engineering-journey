@@ -5,6 +5,7 @@ title: "Chapter 2: Hadoop ? HDFS, MapReduce & YARN"
 sidebar_label: "Chapter 2: Hadoop ? HDFS, MapReduce & YARN"
 sidebar_position: 2
 ---
+
 # Chapter 2: Hadoop ? HDFS, MapReduce & YARN
 
 > **Previous:** [Chapter 1: Introduction to Big Data](./01-introduction.md) | **Next:** [Chapter 3: Apache Spark Basics](./03-spark-basics.md)

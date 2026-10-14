@@ -5,6 +5,7 @@ title: "Chapter 13 — Advanced Vector Search & RAG"
 sidebar_label: "Chapter 13 — Advanced Vector Search & RAG"
 sidebar_position: 14
 ---
+
 # Chapter 13 — Advanced Vector Search & RAG
 
 **Duration:** 2 weeks, ~22 hours

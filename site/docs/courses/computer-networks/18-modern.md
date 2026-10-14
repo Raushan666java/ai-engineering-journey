@@ -5,6 +5,7 @@ title: "Chapter 18: Modern Networking → Complete Reference"
 sidebar_label: "Chapter 18: Modern Networking → Complete Reference"
 sidebar_position: 18
 ---
+
 # Chapter 18: Modern Networking → Complete Reference
 
 > **GFG/Javatpoint Depth → IPv6, IoT, 4G→5G→6G, Satellite Internet, Network Automation, Zero Trust, AI/ML in Networking, Quantum Networking, Edge Computing, Network Observability**

@@ -5,6 +5,7 @@ title: "Chapter 35: Legal & Compliance Agents"
 sidebar_label: "Chapter 35: Legal & Compliance Agents"
 sidebar_position: 35
 ---
+
 # Chapter 35: Legal & Compliance Agents
 
 > **Previous:** [Real Estate & Property — AI-Powered Real Estate Agents](./34-real-estate.md) | **Next:** [Manufacturing & Industrial — AI-Powered Factory Agents](./36-manufacturing.md)

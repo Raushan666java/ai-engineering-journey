@@ -5,6 +5,7 @@ title: "Chapter 4: Eloquent ORM, Database & Migrations"
 sidebar_label: "Chapter 4: Eloquent ORM, Database & Migrations"
 sidebar_position: 4
 ---
+
 # Chapter 4: Eloquent ORM, Database & Migrations
 > **Previous:** [Blade Templating, Components & Frontend](./03-blade-frontend) | **Next:** [Authentication, Authorization & Security](./05-auth-security)
 

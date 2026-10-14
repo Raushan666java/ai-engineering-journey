@@ -5,6 +5,7 @@ title: "Chapter 15: Microsoft SDE — Company-Specific Question Bank"
 sidebar_label: "Chapter 15: Microsoft SDE — Company-Specific Question Bank"
 sidebar_position: 15
 ---
+
 # Chapter 15: Microsoft SDE — Company-Specific Question Bank
 
 ## Learning Objectives

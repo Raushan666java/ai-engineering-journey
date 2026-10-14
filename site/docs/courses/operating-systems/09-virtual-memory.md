@@ -5,6 +5,7 @@ title: "Chapter 9: Virtual Memory"
 sidebar_label: "Chapter 9: Virtual Memory"
 sidebar_position: 9
 ---
+
 # Chapter 9: Virtual Memory
 
 **<< [Memory Management](./08-memory-management.md)** | [**Next: File Systems**](./10-file-systems.md) >>

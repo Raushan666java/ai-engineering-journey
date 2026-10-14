@@ -5,6 +5,7 @@ title: "65. System Design → Interview Q&A"
 sidebar_label: "65. System Design → Interview Q&A"
 sidebar_position: 73
 ---
+
 # 65. System Design → Interview Q&A
 
 > **Previous:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md) | **Next:** [Behavioral Interview Q&amp;A](./66-interview-behavioral.md)

@@ -5,6 +5,7 @@ title: "Chapter 3 → JavaScript Basics"
 sidebar_label: "Chapter 3 → JavaScript Basics"
 sidebar_position: 3
 ---
+
 # Chapter 3 → JavaScript Basics
 
 > **Previous:** [02-css](./02-css.md) | **Next:** [04-js-dom](./04-js-dom.md)

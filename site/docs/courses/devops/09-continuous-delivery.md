@@ -5,6 +5,7 @@ title: "Chapter 9: Continuous Delivery"
 sidebar_label: "Chapter 9: Continuous Delivery"
 sidebar_position: 16
 ---
+
 # Chapter 9: Continuous Delivery
 
 > **Prev:** [Advanced Kubernetes](./08-k8s-advanced.md)

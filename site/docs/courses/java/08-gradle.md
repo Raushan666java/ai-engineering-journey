@@ -5,6 +5,7 @@ title: "Gradle Deep Dive"
 sidebar_label: "Gradle Deep Dive"
 sidebar_position: 8
 ---
+
 # Gradle Deep Dive
 
 > **Previous:** [Maven Deep Dive](./07-maven.md) | **Next:** [Spring Framework Introduction](./09-spring-intro.md)

@@ -5,6 +5,7 @@ title: "Chapter 16: Supply Chain & CI/CD Pipeline Security"
 sidebar_label: "Chapter 16: Supply Chain & CI/CD Pipeline Security"
 sidebar_position: 15
 ---
+
 # Chapter 16: Supply Chain & CI/CD Pipeline Security
 
 ---

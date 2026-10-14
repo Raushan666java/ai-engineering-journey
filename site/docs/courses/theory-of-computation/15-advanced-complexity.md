@@ -5,6 +5,7 @@ title: "Chapter 15: Advanced Complexity Topics"
 sidebar_label: "Chapter 15: Advanced Complexity Topics"
 sidebar_position: 15
 ---
+
 # Chapter 15: Advanced Complexity Topics
 
 > **Previous:** [Space Complexity](./14-space-complexity.md) | **Next:** [Applications of Automata Theory](./16-applications.md)
@@ -937,4 +938,4 @@ class QBF {
 // QBF Level 2: exists(x) forall(y) (x OR NOT y) - harder (Sigma_2)
 // QBF with alternating quantifiers belongs to higher levels of PH
 ```
-
+```

@@ -5,6 +5,7 @@ title: "Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embedding
 sidebar_label: "Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings"
 sidebar_position: 14
 ---
+
 # Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings
 > **Previous:** [Laravel AI SDK -- Tools, MCP Tools & Provider Tools](./13-ai-sdk-tools) | **Next:** [Laravel MCP -- Model Context Protocol](./15-mcp)
 

@@ -5,6 +5,7 @@ title: "Chapter 2: Variables, Types, and Operators"
 sidebar_label: "Chapter 2: Variables, Types, and Operators"
 sidebar_position: 2
 ---
+
 # Chapter 2: Variables, Types, and Operators
 
 

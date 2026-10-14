@@ -5,6 +5,7 @@ title: "Chapter 2: Grammar Essentials"
 sidebar_label: "Chapter 2: Grammar Essentials"
 sidebar_position: 2
 ---
+
 # Chapter 2: Grammar Essentials
 
 ## Learning Objectives

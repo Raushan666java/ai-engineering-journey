@@ -5,6 +5,7 @@ title: "Chapter 20: NumPy and pandas"
 sidebar_label: "Chapter 20: NumPy and pandas"
 sidebar_position: 20
 ---
+
 # Chapter 20: NumPy and pandas
 
 

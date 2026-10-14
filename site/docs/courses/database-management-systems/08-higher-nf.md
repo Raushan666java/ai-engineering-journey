@@ -5,6 +5,7 @@ title: "Chapter 8: Higher Normal Forms and Denormalization"
 sidebar_label: "Chapter 8: Higher Normal Forms and Denormalization"
 sidebar_position: 8
 ---
+
 # Chapter 8: Higher Normal Forms and Denormalization
 
 > **Previous:** [Chapter 7: Normalization](./07-normalization.md) | **Next:** [Chapter 9: Transactions](./09-transactions.md)

@@ -5,6 +5,7 @@ title: "Chapter 5: Memory Systems & Mnemonics"
 sidebar_label: "Chapter 5: Memory Systems & Mnemonics"
 sidebar_position: 6
 ---
+
 # Chapter 5: Memory Systems & Mnemonics
 
 > **Prerequisites:** [Chapter 4: Pomodoro, Interleaving & the Feynman Technique](./ch-04-pomodoro-interleaving-feynman.md) — Focus discipline and comprehension checks.

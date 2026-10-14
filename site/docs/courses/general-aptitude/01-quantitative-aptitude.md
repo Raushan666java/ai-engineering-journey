@@ -5,6 +5,7 @@ title: "Chapter 1: Quantitative Aptitude"
 sidebar_label: "Chapter 1: Quantitative Aptitude"
 sidebar_position: 1
 ---
+
 # Chapter 1: Quantitative Aptitude
 
 > **Previous:** None | **Next:** [Chapter 2: Logical Reasoning](02-logical-reasoning.md)

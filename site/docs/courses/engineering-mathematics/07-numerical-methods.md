@@ -5,6 +5,7 @@ title: "Chapter 7: Numerical Methods"
 sidebar_label: "Chapter 7: Numerical Methods"
 sidebar_position: 7
 ---
+
 # Chapter 7: Numerical Methods
 
 > **Previous:** [Chapter 6: Probability & Statistics](06-probability-statistics.md) | **Next:** [Chapter 8: Integral Transforms](08-integral-transforms.md)

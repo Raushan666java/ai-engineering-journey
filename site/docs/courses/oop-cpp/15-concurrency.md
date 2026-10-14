@@ -5,6 +5,7 @@ title: "Chapter 15: Concurrency"
 sidebar_label: "Chapter 15: Concurrency"
 sidebar_position: 15
 ---
+
 # Chapter 15: Concurrency
 
 > **Previous:** [14-lambdas](./14-lambdas.md) | **Next:** [16-design-patterns](./16-design-patterns.md)

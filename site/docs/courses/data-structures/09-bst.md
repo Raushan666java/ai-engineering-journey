@@ -5,6 +5,7 @@ title: "Chapter 9: Binary Search Trees"
 sidebar_label: "Chapter 9: Binary Search Trees"
 sidebar_position: 9
 ---
+
 # Chapter 9: Binary Search Trees
 
 > **Previous:** [Chapter 8: Binary Trees](./08-binary-trees.md) | **Next:** [Heaps](./10-heaps.md)

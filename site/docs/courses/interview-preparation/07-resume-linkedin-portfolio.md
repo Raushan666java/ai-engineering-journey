@@ -5,6 +5,7 @@ title: "Chapter 7: Resume, LinkedIn, and Portfolio Optimization"
 sidebar_label: "Chapter 7: Resume, LinkedIn, and Portfolio Optimization"
 sidebar_position: 7
 ---
+
 # Chapter 7: Resume, LinkedIn, and Portfolio Optimization
 
 ## Learning Objectives

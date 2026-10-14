@@ -5,6 +5,7 @@ title: "Chapter 11: Databases in Web Applications"
 sidebar_label: "Chapter 11: Databases in Web Applications"
 sidebar_position: 11
 ---
+
 # Chapter 11: Databases in Web Applications
 
 > **Previous:** [10-auth](./10-auth.md) | **Next:** [12-deployment](./12-deployment.md)

@@ -5,6 +5,7 @@ title: "Kubernetes Deployment"
 sidebar_label: "Kubernetes Deployment"
 sidebar_position: 53
 ---
+
 # Kubernetes Deployment
 
 > **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)

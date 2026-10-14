@@ -5,6 +5,7 @@ title: "Chapter 8: Study Plan for Any Exam"
 sidebar_label: "Chapter 8: Study Plan for Any Exam"
 sidebar_position: 9
 ---
+
 # Chapter 8: Study Plan for Any Exam
 
 > ⏱ **2.5 hours total** · 🎯 **Intermediate** · 📋 **Recommended: Ch 1 (Goal Setting), Ch 2 (Sprint Planning)**

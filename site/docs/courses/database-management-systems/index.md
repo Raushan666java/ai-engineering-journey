@@ -5,6 +5,7 @@ title: "Database Management Systems — Complete Textbook"
 sidebar_label: "Database Management Systems — Complete Textbook"
 sidebar_position: 20
 ---
+
 # Database Management Systems — Complete Textbook
 
 ## Course Overview

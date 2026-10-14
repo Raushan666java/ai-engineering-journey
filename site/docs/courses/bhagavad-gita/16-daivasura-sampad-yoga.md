@@ -5,6 +5,7 @@ title: "Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it i
 sidebar_label: "Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn"
 sidebar_position: 16
 ---
+
 # Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn
 
 > "Do not ask whether you are divine or demonic. Ask what you are feeding — because that is what you will become."

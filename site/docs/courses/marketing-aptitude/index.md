@@ -5,6 +5,7 @@ title: "Marketing Aptitude — Complete Course"
 sidebar_label: "Marketing Aptitude — Complete Course"
 sidebar_position: 5
 ---
+
 # Marketing Aptitude — Complete Course
 
 > A comprehensive guide to marketing concepts, sales & distribution, brand management, digital marketing, and banking marketing for competitive exams (IBPS SO, SBI PO, RBI Grade B, NABARD).

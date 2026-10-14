@@ -5,6 +5,7 @@ title: "Chapter 5: Combinational Circuits"
 sidebar_label: "Chapter 5: Combinational Circuits"
 sidebar_position: 5
 ---
+
 # Chapter 5: Combinational Circuits
 
 > **Prereq:** Chapter 4 (Karnaugh Maps) ? minimised expressions are the building blocks for efficient combinational circuits.

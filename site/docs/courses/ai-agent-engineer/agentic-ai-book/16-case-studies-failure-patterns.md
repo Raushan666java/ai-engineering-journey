@@ -5,6 +5,7 @@ title: "16-case-studies-failure-patterns"
 sidebar_label: "16-case-studies-failure-patterns"
 sidebar_position: 17
 ---
+
 ## Chapter 16: Case Studies & Failure Patterns
 
 Real patterns you will hit — recognizing them quickly saves days of confused debugging.

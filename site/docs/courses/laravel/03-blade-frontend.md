@@ -5,6 +5,7 @@ title: "Chapter 3: Blade Templating, Components & Frontend"
 sidebar_label: "Chapter 3: Blade Templating, Components & Frontend"
 sidebar_position: 3
 ---
+
 # Chapter 3: Blade Templating, Components & Frontend
 > **Previous:** [Architecture & Routing](./02-architecture-routing) | **Next:** [Eloquent ORM, Database & Migrations](./04-eloquent-database)
 

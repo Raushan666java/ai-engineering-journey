@@ -5,6 +5,7 @@ title: "Chapter 12: Low-Level Design: Component and Class Design"
 sidebar_label: "Chapter 12: Low-Level Design: Component and Class Design"
 sidebar_position: 12
 ---
+
 # Chapter 12: Low-Level Design: Component and Class Design
 > **Previous:** [11 Lld Design Patterns](./11-lld-design-patterns.md) | **Next:** [13 Lld Concurrency](./13-lld-concurrency.md)
 

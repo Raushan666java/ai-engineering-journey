@@ -5,6 +5,7 @@ title: "Chapter 3: Human-in-the-Loop"
 sidebar_label: "Chapter 3: Human-in-the-Loop"
 sidebar_position: 3
 ---
+
 # Chapter 3: Human-in-the-Loop
 
 > **Previous:** [Agent Loop Architecture](./ch02-agent-loop-architecture.md) | **Next:** [Feedback Loops](./ch04-feedback-loops.md)

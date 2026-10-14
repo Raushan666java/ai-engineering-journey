@@ -5,6 +5,7 @@ title: "Chapter 7: Message Queues and Event-Driven Architecture"
 sidebar_label: "Chapter 7: Message Queues and Event-Driven Architecture"
 sidebar_position: 7
 ---
+
 # Chapter 7: Message Queues and Event-Driven Architecture
 > **Previous:** [06 Distributed Consistency](./06-distributed-consistency.md) | **Next:** [08 Microservices Apis](./08-microservices-apis.md)
 

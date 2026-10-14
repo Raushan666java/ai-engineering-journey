@@ -5,6 +5,7 @@ title: "Agentic AI — The Complete Book"
 sidebar_label: "Agentic AI — The Complete Book"
 sidebar_position: 1
 ---
+
 # Agentic AI — The Complete Book
 ### From First Principles to Production Multi-Agent Systems
 *A hands-on guide for developers with an API/backend background (Laravel, FastAPI, RAG, n8n, MCP)*

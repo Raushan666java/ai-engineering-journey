@@ -5,6 +5,7 @@ title: "Chapter 10: Site Reliability Engineering (SRE) and Monitoring"
 sidebar_label: "Chapter 10: Site Reliability Engineering (SRE) and Monitoring"
 sidebar_position: 19
 ---
+
 # Chapter 10: Site Reliability Engineering (SRE) and Monitoring
 
 > **Previous:** [Configuration Management](./10-configuration-mgmt.md) | **Next:** [Cloud Platforms](./11-cloud-platforms.md)

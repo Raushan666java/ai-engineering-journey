@@ -5,6 +5,7 @@ title: "Chapter 9: Mastering Hard Subjects"
 sidebar_label: "Chapter 9: Mastering Hard Subjects"
 sidebar_position: 10
 ---
+
 # Chapter 9: Mastering Hard Subjects
 
 > ⏱ **3 hours total** · 🎯 **Advanced** · 📋 **Recommended: Ch 6 (Learning From Any Resource)**

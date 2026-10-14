@@ -5,6 +5,7 @@ title: "02 Theory Of Computation"
 sidebar_label: "02 Theory Of Computation"
 sidebar_position: 2
 ---
+
 ﻿# Theory of Computation → GATE CS
 
 
@@ -92,7 +93,7 @@ A DFA is a 5-tuple `M = (Q, Σ, δ, q₀, F)` where:
 
 - `Q` → finite set of states
 - `Σ` → finite input alphabet
-- `δ: Q Ãâ€â€� Σ → Q` → transition function (total function)
+- `δ: Q × Σ → Q` → transition function (total function)
 - `q₀ ∈ Q` → start state
 - `F ⊆ Q` → set of final/accepting states
 
@@ -142,7 +143,7 @@ q₂    | q₂      | q₀
 ### 1.4 Nondeterministic Finite Automaton (NFA)
 
 
-An NFA is a 5-tuple `M = (Q, Σ, δ, q₀, F)` where `δ: Q Ãâ€â€� Σ → P(Q)` → the transition function maps to a **set** of possible next states.
+An NFA is a 5-tuple `M = (Q, Σ, δ, q₀, F)` where `δ: Q × Σ → P(Q)` → the transition function maps to a **set** of possible next states.
 
 Key fact: a string is accepted if **at least one** computation path ends in a final state. The NFA can be viewed as exploring all paths in parallel.
 
@@ -170,7 +171,7 @@ The NFA "guesses" when a 1 is the third-last symbol, then verifies exactly two m
 
 An ε-NFA allows transitions on ε (empty string). This adds convenience without increasing power.
 
-Formally, `δ: Q Ãâ€â€� (Σ ∪ {ε}) → P(Q)`.
+Formally, `δ: Q × (Σ ∪ {ε}) → P(Q)`.
 
 Every ε-NFA can be converted to an equivalent NFA (without ε) by computing ε-closure: the set of all states reachable via zero or more ε-transitions.
 
@@ -254,22 +255,22 @@ Given a regex, build an ε-NFA compositionally:
 
 ```
 Step 1: N(a|b)
-    ââ€�€ââ€�€εââ€�€ââ€�€→ N(a) ââ€�€ââ€�€εââ€�€ââ€�€→
+    â—�€â—�€εâ—�€â—�€→ N(a) â—�€â—�€εâ—�€â—�€→
   ↗                   ↘
-S ââ€�¤                     ââ€�œ F
-  ↘ââ€�€ââ€�€εââ€�€ââ€�€→ N(b) ââ€�€ââ€�€εââ€�€ââ€�€→↗
+S â—�¤                     â—�œ F
+  ↘â—�€â—�€εâ—�€â—�€→ N(b) â—�€â—�€εâ—�€â—�€→↗
 
 Step 2: N((a|b)*)
-  ââ€�Œâ†Â�ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ ε ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�Â�
-  ââ€�‚    ââ€�Œâ†Â�ââ€�€ââ€�€ ε ââ€�€ââ€�€ââ€�Â�            ââ€�‚
-  ↓    ↗         ↘           ââ€�‚
- S ââ€�€ââ€�€εââ€�€ââ€�€→ N(a|b) ââ€�€ââ€�€εââ€�€ââ€�€→ F ââ€�€ââ€�€ââ€�˜
-  ââ€�â€�ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ ε ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�˜
+  â—�Œâ†Â�â—�€â—�€â—�€â—�€â—�€â—�€â—�€ ε â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�Â�
+  â—�‚    â—�Œâ†Â�â—�€â—�€ ε â—�€â—�€â—�Â�            â—�‚
+  ↓    ↗         ↘           â—�‚
+ S â—�€â—�€εâ—�€â—�€→ N(a|b) â—�€â—�€εâ—�€â—�€→ F â—�€â—�€â—�˜
+  â—�—�â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€ ε â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�˜
 
 Step 3: N((a|b)*abb) → chain the * NFA with N(a), N(b), N(b)
 ```
 
-Thompson construction yields an ε-NFA with at most `2 Ãâ€â€� |regex|` states.
+Thompson construction yields an ε-NFA with at most `2 × |regex|` states.
 
 ### 1.9 DFA to Regular Expression (State Elimination Method)
 
@@ -320,7 +321,7 @@ Regular languages are closed under:
 | Union `Lâ‚ÂÂ� ∪ L₂` | NFA with ε-branch from new start |
 | Concatenation `Lâ‚ÂÂ�L₂` | Chain ε-NFAs |
 | Kleene Star `L*` | Loop ε-NFA |
-| Intersection `Lâ‚ÂÂ� ∩ L₂` | Product DFA `(Qâ‚ÂÂ�Ãâ€â€�Q₂, Σ, δ((p,q),a) = (δâ‚ÂÂ�(p,a), δ₂(q,a)), (q₀â‚ÂÂ�,q₀₂), Fâ‚ÂÂ�Ãâ€â€�F₂)` |
+| Intersection `Lâ‚ÂÂ� ∩ L₂` | Product DFA `(Qâ‚ÂÂ�×Q₂, Σ, δ((p,q),a) = (δâ‚ÂÂ�(p,a), δ₂(q,a)), (q₀â‚ÂÂ�,q₀₂), Fâ‚ÂÂ�×F₂)` |
 | Complement `L̅` | DFA: swap final/nonfinal states (DFA must be complete) |
 | Difference `Lâ‚ÂÂ� − L₂` | Lâ‚ÂÂ� ∩ L̅₂ |
 | Reversal `Lᴿ` | Reverse arrows, swap start/final |
@@ -363,7 +364,7 @@ Therefore L is not regular.
 #### Example: Prove `L = {aâÂÂ�¿bâÂÂ�¿ | n ≥ 0}` not regular using Myhill-Nerode
 
 ```
-Define equivalence: x ≡ y if for all z, xz ∈ L â‡â€� yz ∈ L.
+Define equivalence: x ≡ y if for all z, xz ∈ L â‡—� yz ∈ L.
 Consider strings aâÂÂ�± and aʲ for i ≠ j.
 For z = bâÂÂ�±: aâÂÂ�±bâÂÂ�± ∈ L but aʲbâÂÂ�± ∉ L.
 So aâÂÂ�± → aʲ. Infinitely many equivalence classes → L not regular.
@@ -594,7 +595,7 @@ A PDA is a 6-tuple `M = (Q, Σ, Γ, δ, q₀, Z₀, F)` where:
 - `Q` → finite set of states
 - `Σ` → input alphabet
 - `Γ` → stack alphabet
-- `δ: Q Ãâ€â€� (Σ ∪ {ε}) Ãâ€â€� Γ → P(Q Ãâ€â€� Γ*)` → transition function
+- `δ: Q × (Σ ∪ {ε}) × Γ → P(Q × Γ*)` → transition function
 - `q₀ ∈ Q` → start state
 - `Z₀ ∈ Γ` → initial stack symbol
 - `F ⊆ Q` → final states
@@ -703,7 +704,7 @@ Contradiction → L is not context-free.
 | Homomorphism | Yes | Replace terminals in productions |
 | Inverse Homomorphism | Yes | PDA simulates h |
 
-**GATE Tip:** CFLs are closed under regular intersection. If R is regular and L is CFL, then L ∩ R is CFL (PDA Ãâ€â€� DFA construction).
+**GATE Tip:** CFLs are closed under regular intersection. If R is regular and L is CFL, then L ∩ R is CFL (PDA × DFA construction).
 
 ### 2.11 Deterministic Context-Free Languages (DCFL)
 
@@ -828,7 +829,7 @@ A TM is a 7-tuple `M = (Q, Σ, Γ, δ, q₀, B, F)` where:
 - `Q` → finite set of states
 - `Σ` → input alphabet (subset of Σ, excludes blank)
 - `Γ` → tape alphabet (Σ ∪ Γ, always includes blank B and maybe other symbols)
-- `δ: Q Ãâ€â€� Γ → Q Ãâ€â€� Γ Ãâ€â€� {L, R}` → transition function (partial function)
+- `δ: Q × Γ → Q × Γ × {L, R}` → transition function (partial function)
 - `q₀ ∈ Q` → start state
 - `B ∈ Γ` → blank symbol (not in Σ)
 - `F ⊆ Q` → final/accepting states
@@ -959,7 +960,7 @@ Reduce Halting to Empty-String Acceptance (ESA):
       2. Run M on w.
       3. If M halts, accept.
 
-  M' accepts ε â‡â€� M halts on w.
+  M' accepts ε â‡—� M halts on w.
   If ESA were decidable, we would decide Halting.
   Therefore ESA is undecidable.
 ```
@@ -1071,7 +1072,7 @@ Explanation: We reduce a known undecidable problem TO the problem being proved u
 
 **Answer: (D)**
 
-Explanation: For a given state q and symbol s, δ(q,s) can be any triple (p, t, D) where p ∈ Q (|Q| choices), t ∈ Γ (3 symbols), D ∈ {L,R} (2 directions). For deterministic TM, exactly one transition per pair. For NTM, any finite subset. But the question asks for the number of distinct possible transitions: 3 tape symbols Ãâ€â€� 2 directions Ãâ€â€� |Q| choices for next state = 6 Ãâ€â€� |Q|. If |Q| is fixed, the minimal upper bound considering the tuple itself: 3 (write) Ãâ€â€� 2 (direction) = 6 possibilities (excluding state changes for simplicity). More precisely: 3 tape symbols Ãâ€â€� 2 directions = 6 possible (write, move) pairs.
+Explanation: For a given state q and symbol s, δ(q,s) can be any triple (p, t, D) where p ∈ Q (|Q| choices), t ∈ Γ (3 symbols), D ∈ {L,R} (2 directions). For deterministic TM, exactly one transition per pair. For NTM, any finite subset. But the question asks for the number of distinct possible transitions: 3 tape symbols × 2 directions × |Q| choices for next state = 6 × |Q|. If |Q| is fixed, the minimal upper bound considering the tuple itself: 3 (write) × 2 (direction) = 6 possibilities (excluding state changes for simplicity). More precisely: 3 tape symbols × 2 directions = 6 possible (write, move) pairs.
 
 ---
 
@@ -1201,7 +1202,7 @@ Subset Sum is NP-complete but "weakly" → it has a pseudopolynomial O(nT) DP so
 ### 4.5 Polynomial-Time Reductions
 
 
-A reduction from A to B is a polynomial-time computable function f such that `x ∈ A â‡â€� f(x) ∈ B`.
+A reduction from A to B is a polynomial-time computable function f such that `x ∈ A â‡—� f(x) ∈ B`.
 
 **Transitivity:** If A ≤ₚ B and B ≤ₚ C, then A ≤ₚ C.
 
@@ -1274,7 +1275,7 @@ A problem is **PSPACE-complete** if:
 
 The polynomial hierarchy extends P and NP:
 
-- Îâ€Â�₀ᴾ = Σ₀ᴾ = Π₀ᴾ = P
+- Î—Â�₀ᴾ = Σ₀ᴾ = Π₀ᴾ = P
 - Σâ‚ÂÂ�ᴾ = NP, Πâ‚ÂÂ�ᴾ = co-NP
 - Σ₂ᴾ = NP^{NP} (NP with NP oracle)
 - Π₂ᴾ = co-NP^{NP}
@@ -1613,7 +1614,7 @@ L = {ww} is not regular (requires matching the first half with the second half, 
 **Answer: (B) 16**
 
 **Solution:**
-The pattern is: any 2 symbols, then 0, then any 2 symbols. Total length = 5. The first 2 positions can be any of 2² = 4 strings. Position 3 is fixed as 0. The last 2 positions can be any of 2² = 4 strings. Total: 4 Ãâ€â€� 1 Ãâ€â€� 4 = 16 strings.
+The pattern is: any 2 symbols, then 0, then any 2 symbols. Total length = 5. The first 2 positions can be any of 2² = 4 strings. Position 3 is fixed as 0. The last 2 positions can be any of 2² = 4 strings. Total: 4 × 1 × 4 = 16 strings.
 
 ---
 
@@ -2425,7 +2426,7 @@ r = a(a+b)*b generates strings starting with a and ending with b with any middle
 **Answer: (C)**
 
 **Solution:**
-The Myhill-Nerode theorem states: L is regular iff the equivalence relation ~ (defined as x ~ y iff for all z ∈ Σ*, xz ∈ L â‡â€� yz ∈ L) has finitely many equivalence classes. Both directions hold: regularity implies finite index, and finite index implies regularity. The number of equivalence classes equals the minimum number of states in a DFA accepting L.
+The Myhill-Nerode theorem states: L is regular iff the equivalence relation ~ (defined as x ~ y iff for all z ∈ Σ*, xz ∈ L â‡—� yz ∈ L) has finitely many equivalence classes. Both directions hold: regularity implies finite index, and finite index implies regularity. The number of equivalence classes equals the minimum number of states in a DFA accepting L.
 
 ---
 
@@ -2482,7 +2483,7 @@ Regular languages are closed under complement (swap final and non-final states i
 **Q62. GATE 2014 Set 3 (2 Marks)** → Let M be a DFA with k states over an alphabet of size 2. Which of the following is the maximum possible number of strings of length n accepted by M?
 
 (A) 2âÂÂ�¿  
-(B) k Ãâ€â€� 2âÂÂ�¿  
+(B) k × 2âÂÂ�¿  
 (C) 2âÂÂ�¿ – k  
 (D) 2âÂÂ�¿ if n &lt; k, otherwise 0
 
@@ -2575,7 +2576,7 @@ Thus L does not satisfy the pumping lemma and is not context-free. L is context-
 
 ---
 
-**Q68. GATE 2013 (2 Marks)** → Consider the CFG: E → E + T | T, T → T Ãâ€â€� F | F, F → (E) | id. Which is true?
+**Q68. GATE 2013 (2 Marks)** → Consider the CFG: E → E + T | T, T → T × F | F, F → (E) | id. Which is true?
 
 (A) The grammar is unambiguous  
 (B) The grammar is ambiguous  
@@ -2585,7 +2586,7 @@ Thus L does not satisfy the pumping lemma and is not context-free. L is context-
 **Answer: (A)**
 
 **Solution:**
-This is the standard unambiguous grammar for arithmetic expressions with + and Ãâ€â€� operators. It enforces precedence (Ãâ€â€� binds tighter than +) and left-associativity. There is exactly one leftmost derivation for each string. For example, id + id Ãâ€â€� id can only be derived with Ãâ€â€� evaluated first (closer to leaves). The language is not regular because it requires matching nested parentheses.
+This is the standard unambiguous grammar for arithmetic expressions with + and × operators. It enforces precedence (× binds tighter than +) and left-associativity. There is exactly one leftmost derivation for each string. For example, id + id × id can only be derived with × evaluated first (closer to leaves). The language is not regular because it requires matching nested parentheses.
 
 ---
 
@@ -2629,7 +2630,7 @@ CFLs are closed under union, concatenation, Kleene star, substitution, homomorph
 **Solution:**
 The grammar generates strings where all a's precede all b's. S → aS adds a's at the left, S → Sb adds b's at the right, and S → ab is the base. All derivations produce strings of the form aâÂÂ�±ab bʲ = aâÂÂ�¿báµÂÂ� where n,m ≥ 1.
 - aabb: S → aS → aaS → aaSb → aabSb → aabb ✓
-- abab: has b before a → impossible since all a's must precede all b's âœâ€â€�
+- abab: has b before a → impossible since all a's must precede all b's âœ—
 - aab: S → aS → aaS → aab ✓
 - abb: S → Sb → aSb → abb ✓
 
@@ -2891,7 +2892,7 @@ Ambiguity of a CFG is undecidable → there is no algorithm determining if a CFG
 **Answer: (A)**
 
 **Solution:**
-Many-one reduction A ≤ₘ B means there exists a computable f such that w ∈ A â‡â€� f(w) ∈ B. If B is decidable, we decide A by computing f(w) and testing membership in B. (B) is the contrapositive and also valid, but the GATE answer focuses on (A) as the direct reduction property. (C) is false → A and B could be different but equally hard. (D) is false → A would be RE (not necessarily recursive).
+Many-one reduction A ≤ₘ B means there exists a computable f such that w ∈ A â‡—� f(w) ∈ B. If B is decidable, we decide A by computing f(w) and testing membership in B. (B) is the contrapositive and also valid, but the GATE answer focuses on (A) as the direct reduction property. (C) is false → A and B could be different but equally hard. (D) is false → A would be RE (not necessarily recursive).
 
 ---
 
@@ -2947,7 +2948,7 @@ To prove B is undecidable, reduce A (known undecidable) to B (A ≤ₘ B). If B 
 **Answer: (D)**
 
 **Solution:**
-"L(M) is regular" is a non-trivial property of the language of a TM. By Rice's theorem, it is undecidable. Furthermore, it is neither RE nor co-RE. Why? Regularity is a Σ₂âÂÂ�°-complete property in the arithmetical hierarchy → we can never confirm that a TM accepts exactly a regular language (would need to rule out all non-regular strings). It is strictly harder than the halting problem.
+"L(M) is regular" is a non-trivial property of the language of a TM. By Rice's theorem, it is undecidable. it is neither RE nor co-RE. Why? Regularity is a Σ₂âÂÂ�°-complete property in the arithmetical hierarchy → we can never confirm that a TM accepts exactly a regular language (would need to rule out all non-regular strings). It is strictly harder than the halting problem.
 
 ---
 
@@ -3178,22 +3179,22 @@ Key pattern: Everything decidable for Regular; emptiness/finiteness/membership d
 
 | Operation | Regular | DCFL | CFL | CSL | Recursive | RE |
 |-----------|:-------:|:----:|:---:|:---:|:---------:|:--:|
-| **Union** | ✓ | âœâ€â€� | ✓ | ✓ | ✓ | ✓ |
-| **Intersection** | ✓ | âœâ€â€� | âœâ€â€� | ✓ | ✓ | ✓ |
-| **Complement** | ✓ | ✓ | âœâ€â€� | ✓ | ✓ | âœâ€â€� |
-| **Concatenation** | ✓ | âœâ€â€� | ✓ | ✓ | ✓ | ✓ |
-| **Kleene Star** | ✓ | âœâ€â€� | ✓ | ✓ | ✓ | ✓ |
-| **Kleene Plus** | ✓ | âœâ€â€� | ✓ | ✓ | ✓ | ✓ |
-| **Reversal** | ✓ | âœâ€â€� | ✓ | ✓ | ✓ | ✓ |
-| **Homomorphism** | ✓ | âœâ€â€� | ✓ | âœâ€â€� | âœâ€â€� | ✓ |
+| **Union** | ✓ | âœ— | ✓ | ✓ | ✓ | ✓ |
+| **Intersection** | ✓ | âœ— | âœ— | ✓ | ✓ | ✓ |
+| **Complement** | ✓ | ✓ | âœ— | ✓ | ✓ | âœ— |
+| **Concatenation** | ✓ | âœ— | ✓ | ✓ | ✓ | ✓ |
+| **Kleene Star** | ✓ | âœ— | ✓ | ✓ | ✓ | ✓ |
+| **Kleene Plus** | ✓ | âœ— | ✓ | ✓ | ✓ | ✓ |
+| **Reversal** | ✓ | âœ— | ✓ | ✓ | ✓ | ✓ |
+| **Homomorphism** | ✓ | âœ— | ✓ | âœ— | âœ— | ✓ |
 | **Inverse Homomorphism** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **Intersection with Regular** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| **Set Difference** | ✓ | âœâ€â€� | âœâ€â€� | ✓ | ✓ | âœâ€â€� |
+| **Set Difference** | ✓ | âœ— | âœ— | ✓ | ✓ | âœ— |
 | **Prefix** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **Suffix** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| **Substitution** | ✓ | âœâ€â€� | ✓ | ✓ | âœâ€â€� | ✓ |
+| **Substitution** | ✓ | âœ— | ✓ | ✓ | âœ— | ✓ |
 
-**✓ = Closed, âœâ€â€� = Not Closed**
+**✓ = Closed, âœ— = Not Closed**
 
 Memory aid for CFL: **UNION, CONCAT, KLEENE, REVERSE, HOM** → closed. **INTERSECTION, COMPLEMENT, DIFFERENCE** → NOT closed. **Intersection with Regular** → always closed (most useful for GATE).
 
@@ -3298,7 +3299,7 @@ Given PCP instance (A,B) over Σ, construct CFG with productions generating all 
 
 ## Summary
 
-Theory of Computation is a foundational GATE CS subject that explores the hierarchy of formal languages and the machines that recognize them. The Chomsky hierarchy â€â€� regular languages (recognized by DFAs/NFAs, expressed via regular expressions), context-free languages (recognized by PDAs, expressed via CFGs), context-sensitive languages (recognized by LBAs), and recursively enumerable languages (recognized by Turing machines) â€â€� forms the backbone of the subject. Key GATE topics include constructing DFAs and NFAs from regular expressions, designing PDAs for context-free languages, computing FIRST and FOLLOW sets for LL(1) parsing, applying the pumping lemma to prove non-regularity and non-context-freeness, and mastering reductions to prove undecidability. The halting problem is the canonical undecidable problem; its proof via diagonalization is a recurring GATE concept. With 1-3 questions worth 5-8 marks, this subject rewards conceptual clarity and precise machine construction skills.
+Theory of Computation is a foundational GATE CS subject that explores the hierarchy of formal languages and the machines that recognize them. The Chomsky hierarchy — regular languages (recognized by DFAs/NFAs, expressed via regular expressions), context-free languages (recognized by PDAs, expressed via CFGs), context-sensitive languages (recognized by LBAs), and recursively enumerable languages (recognized by Turing machines) — forms the backbone of the subject. Key GATE topics include constructing DFAs and NFAs from regular expressions, designing PDAs for context-free languages, computing FIRST and FOLLOW sets for LL(1) parsing, applying the pumping lemma to prove non-regularity and non-context-freeness, and mastering reductions to prove undecidability. The halting problem is the canonical undecidable problem; its proof via diagonalization is a recurring GATE concept. With 1-3 questions worth 5-8 marks, this subject rewards conceptual clarity and precise machine construction skills.
 
 ```mermaid
 flowchart TD
@@ -3448,13 +3449,13 @@ console.log('Trace:', dfa.trace('0101').join(' → '));
 <details>
 <summary><strong>Exercise 1:</strong> Construct a DFA</summary>
 <p>Design a DFA that accepts all strings over {0,1} that end with "101".</p>
-<p><strong>Solution:</strong> States: q0 (no match), q1 (last char 1), q2 (last two "10"), q3 (last three "101" â€â€� accept). Transitions: δ(q0,0)=q0, δ(q0,1)=q1, δ(q1,0)=q2, δ(q1,1)=q1, δ(q2,0)=q0, δ(q2,1)=q3, δ(q3,0)=q2, δ(q3,1)=q1. Accept: q3.</p>
+<p><strong>Solution:</strong> States: q0 (no match), q1 (last char 1), q2 (last two "10"), q3 (last three "101" — accept). Transitions: δ(q0,0)=q0, δ(q0,1)=q1, δ(q1,0)=q2, δ(q1,1)=q1, δ(q2,0)=q0, δ(q2,1)=q3, δ(q3,0)=q2, δ(q3,1)=q1. Accept: q3.</p>
 </details>
 
 <details>
 <summary><strong>Exercise 2:</strong> Regular Expression</summary>
 <p>Find a regular expression for strings over {0,1} with an even number of 0's.</p>
-<p><strong>Solution:</strong> (1*01*01*)* + 1* â€â€� strings with zero or an even number of 0's where 1's can appear anywhere. More compact: (1*01*01*)* | 1* for zero 0's.</p>
+<p><strong>Solution:</strong> (1*01*01*)* + 1* — strings with zero or an even number of 0's where 1's can appear anywhere. More compact: (1*01*01*)* | 1* for zero 0's.</p>
 </details>
 
 <details>
@@ -3477,4 +3478,4 @@ console.log('Trace:', dfa.trace('0101').join(' → '));
 
 ---
 
-*End of Theory of Computation â€â€� GATE CS Preparation.*
+*End of Theory of Computation — GATE CS Preparation.*

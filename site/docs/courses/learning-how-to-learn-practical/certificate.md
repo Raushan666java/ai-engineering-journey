@@ -5,6 +5,7 @@ title: "Certificate of Completion"
 sidebar_label: "Certificate of Completion"
 sidebar_position: 1
 ---
+
 # Certificate of Completion
 
 > **Print this page** after completing all 13 chapters to certify your achievement.

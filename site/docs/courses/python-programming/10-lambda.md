@@ -5,6 +5,7 @@ title: "Chapter 10: Lambda and Functional Programming"
 sidebar_label: "Chapter 10: Lambda and Functional Programming"
 sidebar_position: 10
 ---
+
 # Chapter 10: Lambda and Functional Programming
 
 

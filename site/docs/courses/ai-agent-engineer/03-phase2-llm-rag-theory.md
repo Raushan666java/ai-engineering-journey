@@ -5,6 +5,7 @@ title: "Phase 2 — LLM Fundamentals + RAG Theory"
 sidebar_label: "Phase 2 — LLM Fundamentals + RAG Theory"
 sidebar_position: 4
 ---
+
 # Phase 2 — LLM Fundamentals + RAG Theory
 
 **Duration:** Weeks 4-5, ~25 hours

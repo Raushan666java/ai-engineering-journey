@@ -5,6 +5,7 @@ title: "Chapter 14: Linux Kernel Internals"
 sidebar_label: "Chapter 14: Linux Kernel Internals"
 sidebar_position: 14
 ---
+
 # Chapter 14: Linux Kernel Internals
 
 **<< [I/O Systems](./13-io-systems.md)** | [**Next: Shell Scripting**](./15-shell-scripting.md) >>

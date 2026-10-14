@@ -5,6 +5,7 @@ title: "Chapter 8: Functions"
 sidebar_label: "Chapter 8: Functions"
 sidebar_position: 8
 ---
+
 # Chapter 8: Functions
 
 > **Previous:** [Strings](./07-strings.md) | **Next:** [Pointers](./09-pointers.md)
@@ -1694,7 +1695,7 @@ void swap(int *x, int *y) {
 ### Q4: Inline vs Macro
 
 
-Covered in Â§8.7. Key interview points:
+Covered in §8.7. Key interview points:
 - **Never** use macros when an inline works
 - Macros have no type safety, evaluate arguments multiple times
 - Inline functions follow scope rules; macros don't

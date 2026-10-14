@@ -5,6 +5,7 @@ title: "Chapter 9: Optimization"
 sidebar_label: "Chapter 9: Optimization"
 sidebar_position: 9
 ---
+
 # Chapter 9: Optimization
 
 > **Previous:** [Chapter 8: Integral Transforms](08-integral-transforms.md) | **Next:** [Chapter 10: Vector Calculus & Applications](10-vector-calculus.md)

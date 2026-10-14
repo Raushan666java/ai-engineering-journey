@@ -5,6 +5,7 @@ title: "Chapter 18: Capstone Project"
 sidebar_label: "Chapter 18: Capstone Project"
 sidebar_position: 27
 ---
+
 # Chapter 18: Capstone Project
 
 > **Previous:** [SRE Principles](./17-sre.md)

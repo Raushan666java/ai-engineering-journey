@@ -5,6 +5,7 @@ title: "Chapter 1: The AI Learning System"
 sidebar_label: "Chapter 1: The AI Learning System"
 sidebar_position: 1
 ---
+
 # Chapter 1: The AI Learning System
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

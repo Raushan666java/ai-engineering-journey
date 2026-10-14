@@ -5,6 +5,7 @@ title: "Chapter 13: Web Security"
 sidebar_label: "Chapter 13: Web Security"
 sidebar_position: 13
 ---
+
 # Chapter 13: Web Security
 
 > **Previous:** [12-deployment](./12-deployment.md) | **Next:** [14-typescript](./14-typescript.md)

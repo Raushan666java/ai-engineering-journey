@@ -5,6 +5,7 @@ title: "Chapter 2: Cryptography for Blockchain"
 sidebar_label: "Chapter 2: Cryptography for Blockchain"
 sidebar_position: 2
 ---
+
 # Chapter 2: Cryptography for Blockchain
 
 > **Previous:** [Chapter 1: Introduction to Blockchain](./01-introduction.md) | **Next:** [Chapter 3: Consensus Mechanisms](./03-consensus.md)

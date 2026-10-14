@@ -5,6 +5,7 @@ title: "Chapter 15: Database DevOps"
 sidebar_label: "Chapter 15: Database DevOps"
 sidebar_position: 24
 ---
+
 # Chapter 15: Database DevOps
 
 > **Previous:** [DevSecOps](./14-devsecops.md) | **Next:** [Container Networking](./16-networking.md)

@@ -5,6 +5,7 @@ title: "Chapter 28: Finance & FinTech Agents"
 sidebar_label: "Chapter 28: Finance & FinTech Agents"
 sidebar_position: 28
 ---
+
 # Chapter 28: Finance & FinTech Agents
 
 > **Previous:** [Healthcare](./27-healthcare.md) | **Next:** [Education](./29-education.md)

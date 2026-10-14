@@ -5,6 +5,7 @@ title: "English Language — IBPS SO & Govt Exam Prep"
 sidebar_label: "English Language — IBPS SO & Govt Exam Prep"
 sidebar_position: 6
 ---
+
 # English Language — IBPS SO & Govt Exam Prep
 
 > **Exam Weightage:** 25 Questions in IBPS SO Prelims, 25 Qs in SBI/SO, Descriptive in Mains

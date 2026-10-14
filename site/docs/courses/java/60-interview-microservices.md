@@ -5,6 +5,7 @@ title: "Chapter 60: Microservices Interview Q&A (Part A → Q1–Q8)"
 sidebar_label: "Chapter 60: Microservices Interview Q&A (Part A → Q1–Q8)"
 sidebar_position: 68
 ---
+
 # Chapter 60: Microservices Interview Q&A (Part A → Q1–Q8)
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)

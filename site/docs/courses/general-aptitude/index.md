@@ -5,6 +5,7 @@ title: "General Aptitude"
 sidebar_label: "General Aptitude"
 sidebar_position: 7
 ---
+
 # General Aptitude
 
 > A complete aptitude training course covering quantitative ability, logical reasoning, verbal ability, and data interpretation — from foundational concepts to advanced problem-solving for competitive exams, campus placements, and interviews.

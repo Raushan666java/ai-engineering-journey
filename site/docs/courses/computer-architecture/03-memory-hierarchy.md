@@ -5,6 +5,7 @@ title: "Memory Hierarchy"
 sidebar_label: "Memory Hierarchy"
 sidebar_position: 3
 ---
+
 # Memory Hierarchy
 
 ## Learning Objectives

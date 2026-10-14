@@ -5,6 +5,7 @@ title: "Chapter 21: Social Media Security & Account Takeover Prevention"
 sidebar_label: "Chapter 21: Social Media Security & Account Takeover Prevention"
 sidebar_position: 20
 ---
+
 # Chapter 21: Social Media Security & Account Takeover Prevention
 
 > **Prereq:** Chapters 1-2 (Fundamentals, Cryptography) — authentication concepts, encryption, MFA

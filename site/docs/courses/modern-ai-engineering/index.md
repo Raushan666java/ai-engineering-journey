@@ -5,6 +5,7 @@ title: "Modern AI Engineering — Based on Chip Huyen's \"Building Applications 
 sidebar_label: "Modern AI Engineering — Based on Chip Huyen's \"Building Applications with Foundation Models\""
 sidebar_position: 13
 ---
+
 # Modern AI Engineering — Based on Chip Huyen's "Building Applications with Foundation Models"
 
 > **A comprehensive course based on Chip Huyen's definitive guide to building AI applications with foundation models. Covers data engineering, model selection, evaluation, prompt engineering, RAG, fine-tuning, agents, safety, production, and MLOps — all with TypeScript implementations.**

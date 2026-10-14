@@ -5,6 +5,7 @@ title: "Chapter 2 → CSS3"
 sidebar_label: "Chapter 2 → CSS3"
 sidebar_position: 2
 ---
+
 # Chapter 2 → CSS3
 
 > **Previous:** [01-html](./01-html.md) | **Next:** [03-js-basics](./03-js-basics.md)

@@ -5,6 +5,7 @@ title: "Phase 3 — AI Agents: LangGraph, CrewAI, MCP"
 sidebar_label: "Phase 3 — AI Agents: LangGraph, CrewAI, MCP"
 sidebar_position: 5
 ---
+
 # Phase 3 — AI Agents: LangGraph, CrewAI, MCP
 
 **Duration:** Weeks 6-8, ~35 hours

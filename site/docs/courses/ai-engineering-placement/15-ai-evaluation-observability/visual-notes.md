@@ -5,6 +5,7 @@ title: "Visual Notes — Evaluation and Observability in One View"
 sidebar_label: "Visual Notes"
 sidebar_position: 205
 ---
+
 # Visual Notes — Evaluation and Observability in One View
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

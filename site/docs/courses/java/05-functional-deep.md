@@ -5,6 +5,7 @@ title: "Functional Programming in Practice"
 sidebar_label: "Functional Programming in Practice"
 sidebar_position: 5
 ---
+
 # Functional Programming in Practice
 
 > **Previous:** [Java Modules & Packaging](./04-jpms-packaging.md) | **Next:** [Performance Tuning & Profiling](./06-performance.md)

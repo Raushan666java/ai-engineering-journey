@@ -5,6 +5,7 @@ title: "Chapter 9: Enterprise Blockchain"
 sidebar_label: "Chapter 9: Enterprise Blockchain"
 sidebar_position: 9
 ---
+
 # Chapter 9: Enterprise Blockchain
 
 > **Previous:** [Chapter 8: Decentralized Finance (DeFi)](./08-defi.md) | **Next:** [Chapter 10: Security and Scalability](./10-security-scalability.md)

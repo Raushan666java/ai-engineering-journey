@@ -5,17 +5,18 @@ title: "Laravel Backend Developer → AI Agent Engineer"
 sidebar_label: "Laravel Backend Developer → AI Agent Engineer"
 sidebar_position: 1
 ---
+
 # Laravel Backend Developer → AI Agent Engineer
 
 > **Prerequisite:** [Modern AI Engineering](../modern-ai-engineering/index.md) — Covers Genkit, LangGraph, LlamaIndex, MCP, and production AI deployment. Complete that first for foundational AI engineering skills before diving into this agent-focused curriculum.
-
-> **Companion text — Agentic AI: The Complete Book:** A complete 17-chapter reference from first principles to production multi-agent systems (tool calling, hand-built ReAct loop, LangGraph, agentic RAG, MCP, guardrails, evaluation, deployment, and an end-to-end capstone). Read it chapter-by-chapter alongside this curriculum: [`agentic-ai-book/00-index.md`](agentic-ai-book/00-index.md)
 
 ## Course Overview
 
 A 12-week, 6-phase transition curriculum for experienced Laravel/PHP backend developers who want to pivot into AI Agent Engineering. Builds on your existing production experience — multi-tenant ERPs, payment systems, WhatsApp AI bots, n8n automation, Docker, Redis — and fills the gaps in Python async, LLM fundamentals, RAG theory, LangGraph orchestration, MCP protocol, and production hardening for AI workloads.
 
 By the end of this course, you will have three production-grade portfolio projects, a rewritten professional profile, and a repeatable job-search system targeting AI Agent Engineer roles in Dubai, remote globally, and freelance on Upwork.
+
+> **Companion text — Agentic AI: The Complete Book:** A complete 17-chapter reference from first principles to production multi-agent systems (tool calling, hand-built ReAct loop, LangGraph, agentic RAG, MCP, guardrails, evaluation, deployment, and an end-to-end capstone). Read it chapter-by-chapter alongside this curriculum: [`agentic-ai-book/00-index.md`](agentic-ai-book/00-index.md)
 
 ---
 

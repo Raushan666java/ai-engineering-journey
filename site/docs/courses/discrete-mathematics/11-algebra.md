@@ -5,6 +5,7 @@ title: "Chapter 11: Algebraic Structures"
 sidebar_label: "Chapter 11: Algebraic Structures"
 sidebar_position: 11
 ---
+
 # Chapter 11: Algebraic Structures
 
 > **Previous:** [Chapter 10: Trees](./10-trees.md) | **Next:** [Chapter 12: Boolean Algebra](./12-boolean.md)

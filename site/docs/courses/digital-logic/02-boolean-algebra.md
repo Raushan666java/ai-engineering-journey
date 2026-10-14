@@ -5,6 +5,7 @@ title: "Chapter 2: Boolean Algebra"
 sidebar_label: "Chapter 2: Boolean Algebra"
 sidebar_position: 2
 ---
+
 # Chapter 2: Boolean Algebra
 
 > **Prereq:** Chapter 1 (Number Systems) ? binary values 0/1 are the domain of Boolean algebra.

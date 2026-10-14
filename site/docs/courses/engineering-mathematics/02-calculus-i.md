@@ -5,6 +5,7 @@ title: "Chapter 2: Single Variable Calculus"
 sidebar_label: "Chapter 2: Single Variable Calculus"
 sidebar_position: 2
 ---
+
 # Chapter 2: Single Variable Calculus
 
 > **Previous:** [Chapter 1: Linear Algebra](01-linear-algebra.md) | **Next:** [Chapter 3: Multivariable Calculus](03-calculus-ii.md)

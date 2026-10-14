@@ -5,6 +5,7 @@ title: "Discrete Mathematics for Computer Science"
 sidebar_label: "Discrete Mathematics for Computer Science"
 sidebar_position: 16
 ---
+
 # Discrete Mathematics for Computer Science
 
 > A rigorous foundation in the mathematical structures and techniques underpinning computation, algorithms, and formal reasoning.

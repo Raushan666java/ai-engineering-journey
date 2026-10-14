@@ -5,6 +5,7 @@ title: "Chapter 1: How Your Brain Learns"
 sidebar_label: "Chapter 1: How Your Brain Learns"
 sidebar_position: 2
 ---
+
 # Chapter 1: How Your Brain Learns
 
 > **Prerequisites:** None

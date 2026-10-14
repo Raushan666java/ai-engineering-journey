@@ -5,6 +5,7 @@ title: "Request Validation, Error Handling & Binding"
 sidebar_label: "Request Validation, Error Handling & Binding"
 sidebar_position: 16
 ---
+
 # Request Validation, Error Handling & Binding
 
 > **Previous:** [REST API Development](./15-rest-api.md) | **Next:** [OpenAPI & API Documentation](./17-openapi.md)

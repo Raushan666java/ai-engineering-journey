@@ -5,6 +5,7 @@ title: "Chapter 6: Context-Free Grammars"
 sidebar_label: "Chapter 6: Context-Free Grammars"
 sidebar_position: 6
 ---
+
 # Chapter 6: Context-Free Grammars
 
 > **Previous:** [Properties of Regular Languages](./05-regular-languages.md) | **Next:** [Pushdown Automata](./07-pda.md)

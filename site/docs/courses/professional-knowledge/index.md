@@ -5,7 +5,8 @@ title: "Professional Knowledge Recap — IBPS SO IT Officer Mains"
 sidebar_label: "Professional Knowledge Recap — IBPS SO IT Officer Mains"
 sidebar_position: 11
 ---
-# Professional Knowledge Recap — IBPS SO IT Officer Mains
+
+﻿# Professional Knowledge Recap — IBPS SO IT Officer Mains
 
 > **Exam Weightage:** ~60 Questions in Mains PK section (decisive paper)
 >

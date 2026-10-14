@@ -5,6 +5,7 @@ title: "Chapter 3: Data Interpretation — Table DI, Bar/Line Charts, Pie Charts
 sidebar_label: "Chapter 3: Data Interpretation — Table DI, Bar/Line Charts, Pie Charts, Caselets, Mixed Graphs"
 sidebar_position: 3
 ---
+
 # Chapter 3: Data Interpretation — Table DI, Bar/Line Charts, Pie Charts, Caselets, Mixed Graphs
 
 ## Learning Objectives

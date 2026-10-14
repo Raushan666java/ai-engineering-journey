@@ -5,6 +5,7 @@ title: "Visual Notes — Communication and Strategy Tree"
 sidebar_label: "Visual Notes"
 sidebar_position: 350
 ---
+
 # Visual Notes — Communication and Strategy Tree
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

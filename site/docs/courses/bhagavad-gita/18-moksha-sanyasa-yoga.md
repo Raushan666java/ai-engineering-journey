@@ -5,6 +5,7 @@ title: "Chapter 18: Moksha Sanyasa Yoga — Drop the doer, keep the work, and fr
 sidebar_label: "Chapter 18: Moksha Sanyasa Yoga — Drop the doer, keep the work, and freedom finds you"
 sidebar_position: 18
 ---
+
 # Chapter 18: Moksha Sanyasa Yoga — Drop the doer, keep the work, and freedom finds you
 
 > "The Gita does not end with a theory. It ends with a bow: do your duty, drop your doer, and let the whole move through you."

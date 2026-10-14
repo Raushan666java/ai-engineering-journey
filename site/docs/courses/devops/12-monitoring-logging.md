@@ -5,6 +5,7 @@ title: "Chapter 12: Monitoring and Logging"
 sidebar_label: "Chapter 12: Monitoring and Logging"
 sidebar_position: 21
 ---
+
 # Chapter 12: Monitoring and Logging
 
 > **Previous:** [Cloud Platforms](./11-cloud-platforms.md) | **Next:** [Observability](./13-observability.md)

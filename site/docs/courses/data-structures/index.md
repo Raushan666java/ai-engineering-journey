@@ -5,6 +5,7 @@ title: "Data Structures — Complete Course"
 sidebar_label: "Data Structures — Complete Course"
 sidebar_position: 19
 ---
+
 # Data Structures — Complete Course
 
 ## Course Description

@@ -5,6 +5,7 @@ title: "Chapter 4: Data Interpretation"
 sidebar_label: "Chapter 4: Data Interpretation"
 sidebar_position: 4
 ---
+
 # Chapter 4: Data Interpretation
 
 > **Previous:** [Chapter 3: Verbal Ability](03-verbal-ability.md) | **Next:** [Chapter 5: Non-Verbal Reasoning](05-non-verbal-reasoning.md)

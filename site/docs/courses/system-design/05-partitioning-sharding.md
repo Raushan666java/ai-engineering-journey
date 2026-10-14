@@ -5,6 +5,7 @@ title: "Chapter 5: Data Partitioning and Sharding"
 sidebar_label: "Chapter 5: Data Partitioning and Sharding"
 sidebar_position: 5
 ---
+
 # Chapter 5: Data Partitioning and Sharding
 > **Previous:** [04 Database Foundations](./04-database-foundations.md) | **Next:** [06 Distributed Consistency](./06-distributed-consistency.md)
 

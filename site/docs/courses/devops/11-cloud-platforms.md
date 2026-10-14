@@ -5,6 +5,7 @@ title: "Chapter 11: Cloud Platforms"
 sidebar_label: "Chapter 11: Cloud Platforms"
 sidebar_position: 20
 ---
+
 # Chapter 11: Cloud Platforms
 
 > **Previous:** [SRE and Monitoring](./10-monitoring.md) | **Next:** [Monitoring and Logging](./12-monitoring-logging.md)

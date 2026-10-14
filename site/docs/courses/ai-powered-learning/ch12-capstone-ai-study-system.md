@@ -5,6 +5,7 @@ title: "Chapter 12: Capstone — Your Complete AI Study System"
 sidebar_label: "Chapter 12: Capstone — Your Complete AI Study System"
 sidebar_position: 12
 ---
+
 # Chapter 12: Capstone — Your Complete AI Study System
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

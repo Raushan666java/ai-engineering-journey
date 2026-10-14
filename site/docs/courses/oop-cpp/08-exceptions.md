@@ -5,6 +5,7 @@ title: "Chapter 8: Exception Handling"
 sidebar_label: "Chapter 8: Exception Handling"
 sidebar_position: 8
 ---
+
 # Chapter 8: Exception Handling
 
 > **Previous:** [07-templates](./07-templates.md) | **Next:** [09-stl-containers](./09-stl-containers.md)

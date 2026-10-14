@@ -5,6 +5,7 @@ title: "Chapter 5: Non-Verbal Reasoning"
 sidebar_label: "Chapter 5: Non-Verbal Reasoning"
 sidebar_position: 5
 ---
+
 # Chapter 5: Non-Verbal Reasoning
 
 > **Previous:** [Chapter 4: Data Interpretation](04-data-interpretation.md) | **Next:** [Chapter 6: Advanced Reasoning](06-advanced-reasoning.md)

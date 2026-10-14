@@ -5,6 +5,7 @@ title: "Chapter 6: Current Affairs 2024"
 sidebar_label: "Chapter 6: Current Affairs 2024"
 sidebar_position: 6
 ---
+
 # Chapter 6: Current Affairs 2024
 
 ## Learning Objectives

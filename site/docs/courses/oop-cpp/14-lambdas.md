@@ -5,6 +5,7 @@ title: "Chapter 14: Lambdas (Deep Dive)"
 sidebar_label: "Chapter 14: Lambdas (Deep Dive)"
 sidebar_position: 14
 ---
+
 # Chapter 14: Lambdas (Deep Dive)
 
 > **Previous:** [13-move-semantics](./13-move-semantics.md) | **Next:** [15-concurrency](./15-concurrency.md)

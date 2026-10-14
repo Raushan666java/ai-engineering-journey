@@ -5,6 +5,7 @@ title: "Chapter 8: Multi-Agent Loops"
 sidebar_label: "Chapter 8: Multi-Agent Loops"
 sidebar_position: 8
 ---
+
 # Chapter 8: Multi-Agent Loops
 
 > **Previous:** [Loop Safety](./ch07-loop-safety.md) | **Next:** [Loop Tooling](./ch09-loop-tooling.md)

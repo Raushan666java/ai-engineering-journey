@@ -5,6 +5,7 @@ title: "Chapter 06: Graphs"
 sidebar_label: "Chapter 06: Graphs"
 sidebar_position: 6
 ---
+
 # Chapter 06: Graphs
 
 > Graph problems are among the most challenging interview topics. They test your ability to model relationships, understand traversal strategies, and apply advanced algorithms like topological sort, Dijkstra, and Union-Find.

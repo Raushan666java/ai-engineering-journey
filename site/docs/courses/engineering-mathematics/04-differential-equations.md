@@ -5,6 +5,7 @@ title: "Chapter 4: Differential Equations"
 sidebar_label: "Chapter 4: Differential Equations"
 sidebar_position: 4
 ---
+
 # Chapter 4: Differential Equations
 
 > **Previous:** [Chapter 3: Multivariable Calculus](03-calculus-ii.md) | **Next:** [Chapter 5: Complex Analysis](05-complex-analysis.md)

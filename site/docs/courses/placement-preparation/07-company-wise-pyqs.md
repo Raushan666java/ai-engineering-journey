@@ -5,6 +5,7 @@ title: "07 → Company-Wise Previous Year Questions"
 sidebar_label: "07 → Company-Wise Previous Year Questions"
 sidebar_position: 7
 ---
+
 # 07 → Company-Wise Previous Year Questions
 
 > **Previous:** [06 → HR Interview, GD & Soft Skills](06-hr-gd-soft-skills.md)  
@@ -563,7 +564,7 @@ public class TwoSumSorted {
 
 **Difficulty:** Hard
 
-**Problem Statement:** Given an array of integers and a sliding window of size k, return an array of the maximum element for each window position. Additionally, return the minimum of these maximum values across all windows.
+**Problem Statement:** Given an array of integers and a sliding window of size k, return an array of the maximum element for each window position. return the minimum of these maximum values across all windows.
 
 ```java
 import java.util.ArrayDeque;

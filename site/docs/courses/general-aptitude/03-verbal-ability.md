@@ -5,6 +5,7 @@ title: "Chapter 3: Verbal Ability"
 sidebar_label: "Chapter 3: Verbal Ability"
 sidebar_position: 3
 ---
+
 # Chapter 3: Verbal Ability
 
 > **Previous:** [Chapter 2: Logical Reasoning](02-logical-reasoning.md) | **Next:** [Chapter 4: Data Interpretation](04-data-interpretation.md)
@@ -305,13 +306,13 @@ Items in a list or comparison should have the same grammatical structure.
 
 | Connector | Function |
 |-----------|----------|
-| Moreover, Furthermore | Adding information |
+| Furthermore | Adding information |
 | However, Nevertheless | Contrast |
 | Therefore, Consequently | Result |
 | For instance, For example | Illustration |
 | In other words, That is | Restatement |
 | Meanwhile, Subsequently | Time |
-| In conclusion, To summarize | Conclusion |
+| To summarize | Conclusion |
 
 ### 3.5 Reading Comprehension
 

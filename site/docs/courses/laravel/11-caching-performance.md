@@ -5,6 +5,7 @@ title: "Chapter 11: Caching, Performance & Octane"
 sidebar_label: "Chapter 11: Caching, Performance & Octane"
 sidebar_position: 11
 ---
+
 # Chapter 11: Caching, Performance & Octane
 > **Previous:** [Testing, Debugging & Observability](./10-testing-observability) | **Next:** [Laravel AI SDK -- Agents, Prompting & Structured Output](./12-ai-sdk-agents)
 

@@ -5,6 +5,7 @@ title: "Visual Notes — Choosing How to Adapt a Model"
 sidebar_label: "Visual Notes"
 sidebar_position: 197
 ---
+
 # Visual Notes — Choosing How to Adapt a Model
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

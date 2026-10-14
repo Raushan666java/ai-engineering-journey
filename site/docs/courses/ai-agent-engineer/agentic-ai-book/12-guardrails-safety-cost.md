@@ -5,6 +5,7 @@ title: "12-guardrails-safety-cost"
 sidebar_label: "12-guardrails-safety-cost"
 sidebar_position: 13
 ---
+
 ## Chapter 12: Guardrails, Safety, and Cost Control
 
 ### 12.1 The Core Principle
@@ -32,7 +33,7 @@ def safe_execute(tool_name, raw_input):
             validated = schema(**raw_input)
         except ValidationError as e:
             return {"error": f"Invalid input: {e}"}
-        return execute_tool(tool_name, validated.dict())
+        return execute_tool(tool_name, validated.model_dump())
     return {"error": f"Unknown tool: {tool_name}"}
 ```
 

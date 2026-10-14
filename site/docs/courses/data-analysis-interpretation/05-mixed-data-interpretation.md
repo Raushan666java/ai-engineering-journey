@@ -5,6 +5,7 @@ title: "Chapter 5: Mixed Data Interpretation"
 sidebar_label: "Chapter 5: Mixed Data Interpretation"
 sidebar_position: 5
 ---
+
 # Chapter 5: Mixed Data Interpretation
 
 ## Learning Objectives

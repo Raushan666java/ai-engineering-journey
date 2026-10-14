@@ -5,6 +5,7 @@ title: "Quantitative Aptitude — IBPS SO & Govt Exam Prep"
 sidebar_label: "Quantitative Aptitude — IBPS SO & Govt Exam Prep"
 sidebar_position: 7
 ---
+
 # Quantitative Aptitude — IBPS SO & Govt Exam Prep
 
 > **Exam Weightage:** 25 Questions in IBPS SO Prelims

@@ -5,6 +5,7 @@ title: "Chapter 4: Verbal Ability"
 sidebar_label: "Chapter 4: Verbal Ability"
 sidebar_position: 4
 ---
+
 # Chapter 4: Verbal Ability
 
 ## Learning Objectives
@@ -55,7 +56,7 @@ Look for a sentence that:
 
 | Linker Type | Examples | Purpose |
 |-------------|----------|---------|
-| Additive | Moreover, Furthermore, Additionally, Also | Continues the same point |
+| Additive | Also | Continues the same point |
 | Contrast | However, But, Nevertheless, On the contrary, Although | Introduces opposite view |
 | Causal | Therefore, Thus, Hence, Consequently, As a result | Shows cause-effect |
 | Sequential | Firstly, Secondly, Then, Next, Finally | Shows order |
@@ -529,7 +530,7 @@ a) P → Q → S → R. P introduces open banking. Q explains how it works (thro
 P: Cloud computing has emerged as a key enabler of digital transformation in banking.
 Q: Banks have moved their core banking systems to the cloud for better scalability.
 R: This shift has reduced infrastructure costs significantly.
-S: Additionally, cloud platforms enable faster deployment of new features.
+S: cloud platforms enable faster deployment of new features.
 
 a) Q → P → R → S   b) P → Q → R → S   c) P → R → Q → S   d) S → P → Q → R
 

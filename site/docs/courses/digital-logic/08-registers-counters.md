@@ -5,6 +5,7 @@ title: "Chapter 8: Registers and Counters"
 sidebar_label: "Chapter 8: Registers and Counters"
 sidebar_position: 8
 ---
+
 # Chapter 8: Registers and Counters
 
 > **Prereq:** Chapters 6?7 (Sequential Circuits, State Machines) ? registers and counters are specialised sequential structures.

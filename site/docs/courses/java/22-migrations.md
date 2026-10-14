@@ -5,6 +5,7 @@ title: "Database Migrations (Flyway & Liquibase)"
 sidebar_label: "Database Migrations (Flyway & Liquibase)"
 sidebar_position: 22
 ---
+
 > **Previous:** [Spring Data JPA](./21-spring-data-jpa.md) | **Next:** [NoSQL](./23-nosql.md)
 
 # Database Migrations (Flyway & Liquibase)

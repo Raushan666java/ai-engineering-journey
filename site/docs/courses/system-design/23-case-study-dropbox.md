@@ -5,6 +5,7 @@ title: "Chapter 23: Case Study — Dropbox and File Storage"
 sidebar_label: "Chapter 23: Case Study — Dropbox and File Storage"
 sidebar_position: 23
 ---
+
 # Chapter 23: Case Study — Dropbox and File Storage
 > **Previous:** [22 Case Study Twitter](./22-case-study-twitter.md) | **Next:** [24 Interview Preparation](./24-interview-preparation.md)
 

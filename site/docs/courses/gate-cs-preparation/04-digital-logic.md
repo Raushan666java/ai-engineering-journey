@@ -5,6 +5,7 @@ title: "04 Digital Logic"
 sidebar_label: "04 Digital Logic"
 sidebar_position: 4
 ---
+
 ﻿# Chapter 04: Digital Logic
 
 **GATE CS Weightage:** 5–8 marks (2–3 questions on average). High-scoring topic with predictable problem patterns.
@@ -131,9 +132,9 @@ Group right-to-left by 3: 001 101 011 011
 **Fractional part conversion:**
 ```
 Example: 0.625â‚ÂÂ�₀ to binary
-0.625 Ãâ€â€� 2 = 1.250 → 1
-0.250 Ãâ€â€� 2 = 0.500 → 0
-0.500 Ãâ€â€� 2 = 1.000 → 1
+0.625 × 2 = 1.250 → 1
+0.250 × 2 = 0.500 → 0
+0.500 × 2 = 1.000 → 1
 
 0.625â‚ÂÂ�₀ = 0.101₂
 ```
@@ -241,9 +242,9 @@ POS: F = (A+B+C)(A+B'+C)(A'+B+C)(A'+B'+C')
 ```
 *Solution:*
 ```
-0.375 Ãâ€â€� 2 = 0.750 → 0
-0.750 Ãâ€â€� 2 = 1.500 → 1
-0.500 Ãâ€â€� 2 = 1.000 → 1
+0.375 × 2 = 0.750 → 0
+0.750 × 2 = 1.500 → 1
+0.500 × 2 = 1.000 → 1
 Answer: 0.011₂ → (A)
 ```
 
@@ -529,7 +530,7 @@ A3 B3               -+          A2 B2              A1 B1              A0 B0
            S3                              S2                   S1                  S0
 ```
 
-**Propagation delay:** For n-bit ripple carry adder, delay = n Ãâ€â€� t_FA (where t_FA is delay of one full adder). This is O(n) and becomes a bottleneck for large n.
+**Propagation delay:** For n-bit ripple carry adder, delay = n × t_FA (where t_FA is delay of one full adder). This is O(n) and becomes a bottleneck for large n.
 
 **Carry Look-ahead Adder (CLA):** Computes carries in parallel. O(log n) delay.
 
@@ -916,7 +917,7 @@ Hmm, A is correct answer though not listed. Actually this is just illustrative.
 Critical path: Cin to Cout through all 16 stages.
 Each FA delay: sum of gate delays in critical path.
 Typical FA: Cin to Cout = AND + OR = 2 gate delays = 20ns (if 10ns/gate).
-Total delay = 16 Ãâ€â€� 20ns = 320ns.
+Total delay = 16 × 20ns = 320ns.
 Max frequency = 1/320ns = 3.125 MHz.
 
 But if the critical path through each FA is only 1 gate delay (10ns), total = 160ns, f = 6.25 MHz.
@@ -947,7 +948,7 @@ Answer: (C) 3
 ```
 *Solution:*
 Critical path: clock-to-Q + ripple carry delay + setup
-= 5ns + (4 Ãâ€â€� 30ns) + 10ns
+= 5ns + (4 × 30ns) + 10ns
 = 5 + 120 + 10
 = 135ns
 
@@ -1150,7 +1151,7 @@ Q1:   ________--------________
 Q2:   ________________--------
 ```
 
-**Propagation delay concern:** For n-bit ripple counter, total delay = n Ãâ€â€� t_ff. Maximum frequency = 1/(n Ãâ€â€� t_ff).
+**Propagation delay concern:** For n-bit ripple counter, total delay = n × t_ff. Maximum frequency = 1/(n × t_ff).
 
 **Synchronous Counter:** All flip-flops share the same clock. Uses combinational logic to determine next state.
 
@@ -1311,7 +1312,7 @@ Answer: (C) 0011
 ```
 *Solution:* Ripple counter: clock must wait for all FFs to settle.
 Worst case: Q0 toggles → Q1 toggles → Q2 toggles → Q3 toggles.
-Delay = 4 Ãâ€â€� 10ns = 40ns. Answer: (C) 40ns
+Delay = 4 × 10ns = 40ns. Answer: (C) 40ns
 
 **Problem 17:** In a Mealy machine, the output is a function of:
 ```
@@ -1399,11 +1400,11 @@ Note: A Moore machine would need 5 states (one extra state for output=1).
 
 **Memory organization:**
 ```
-Memory size = 2âÂÂ�¿ Ãâ€â€� m bits
+Memory size = 2âÂÂ�¿ × m bits
 where n = address line count
       m = word size (data line count)
 
-Example: 4K Ãâ€â€� 8 memory = 4096 words Ãâ€â€� 8 bits = 32,768 bits
+Example: 4K × 8 memory = 4096 words × 8 bits = 32,768 bits
           12 address lines (2¹² = 4096)
           8 data lines
 ```
@@ -1420,7 +1421,7 @@ Example: 4K Ãâ€â€� 8 memory = 4096 words Ãâ€â€� 8 bits = 32,76
 
 **Memory chip select logic:**
 ```
-For a 64K memory system with four 16K Ãâ€â€� 8 chips:
+For a 64K memory system with four 16K × 8 chips:
 
 Chip 0: A15 A14 = 0 0 → addresses 0000H - 3FFFH
 Chip 1: A15 A14 = 0 1 → addresses 4000H - 7FFFH
@@ -1510,23 +1511,23 @@ SW  = Switch Matrix (programmable interconnect)
 Each word = 8 bits = 1 byte
 Capacity = 64 KB. Answer: (C) 64 KB
 
-**Problem 22:** (GATE 2023) How many 128 Ãâ€â€� 8 memory chips are needed to build a 2 KB memory with 16-bit word size?
+**Problem 22:** (GATE 2023) How many 128 × 8 memory chips are needed to build a 2 KB memory with 16-bit word size?
 ```
 (A) 8   (B) 16   (C) 32   (D) 64
 ```
 *Solution:*
-Total = 2 KB = 2048 bytes = 2048 Ãâ€â€� 8 bits
-Each chip = 128 Ãâ€â€� 8 bits = 1024 bits
+Total = 2 KB = 2048 bytes = 2048 × 8 bits
+Each chip = 128 × 8 bits = 1024 bits
 Chips needed for 8-bit words: 2048/128 = 16 chip
-For 16-bit words: need 2 Ãâ€â€� 16 = 32 chips (16 chips for upper byte + 16 chips for lower byte)
+For 16-bit words: need 2 × 16 = 32 chips (16 chips for upper byte + 16 chips for lower byte)
 
-Wait, let me reconsider. 2 KB with 16-bit word means 1024 words Ãâ€â€� 16 bits.
-Each chip is 128 Ãâ€â€� 8. To get 128 Ãâ€â€� 16: 2 chips. For 1024 Ãâ€â€� 16: 1024/128 = 8 groups of 2 chips = 16 chips.
+Wait, let me reconsider. 2 KB with 16-bit word means 1024 words × 16 bits.
+Each chip is 128 × 8. To get 128 × 16: 2 chips. For 1024 × 16: 1024/128 = 8 groups of 2 chips = 16 chips.
 
 Let me recalculate:
 2 KB = 2048 bytes
 With 16-bit (2-byte) words: 2048/2 = 1024 words
-Chip capacity: 128 Ãâ€â€� 8 bits = 128 bytes
+Chip capacity: 128 × 8 bits = 128 bytes
 Need: 2048/128 = 16 chips.
 Answer: (B) 16
 
@@ -1596,11 +1597,11 @@ Answer: (B) 16
 | Excess-3 code | XS-3 = BCD + 0011 |
 | Hamming distance | Number of differing bits |
 | Parity generation | Even parity = ⊕ of all bits |
-| Adder delay (ripple) | n Ãâ€â€� t_FA |
-| Adder delay (CLA) | log₂(n) Ãâ€â€� t_gate |
+| Adder delay (ripple) | n × t_FA |
+| Adder delay (CLA) | log₂(n) × t_gate |
 | Clock period | t_cq + t_combo + t_su |
-| Counter max frequency | 1/(n Ãâ€â€� t_ff) for ripple; 1/t_ff for sync |
-| Memory size | 2^(address lines) Ãâ€â€� data lines |
+| Counter max frequency | 1/(n × t_ff) for ripple; 1/t_ff for sync |
+| Memory size | 2^(address lines) × data lines |
 
 ---
 
@@ -1640,7 +1641,7 @@ Answer: (B) 16
 
 2. **K-maps:** Remember wrap-around on both axes. In 5-variable maps, check for groups spanning both planes.
 
-3. **Counters:** Ripple counters have n Ãâ€â€� delay concern; synchronous counters don't (same clock all FFs). Ring = n state, Johnson = 2n states.
+3. **Counters:** Ripple counters have n × delay concern; synchronous counters don't (same clock all FFs). Ring = n state, Johnson = 2n states.
 
 4. **Race-around:** JK flip-flop with J=K=1 and excessive clock width. Fix: master-slave or edge-triggering.
 
@@ -1868,16 +1869,16 @@ Answer: (A) Aâ‚ÂÂ�Bâ‚ÂÂ�' + (Aâ‚ÂÂ�⊕Bâ‚ÂÂ�)'A₀B�
 
 **Problem 40 (GATE 2021):** 16-bit CLA using 4-bit blocks vs 16-bit ripple carry adder. The CLA is approximately:
 ```
-(A) Same speed    (B) 4Ãâ€â€� faster    (C) 16Ãâ€â€� faster    (D) 2Ãâ€â€� faster
+(A) Same speed    (B) 4× faster    (C) 16× faster    (D) 2× faster
 ```
 **Solution:**
 ```
 Ripple carry: O(n) delay = 16 gate delays (approx).
 CLA with 4-bit blocks: each block computes carries in parallel (O(log 4) = 2 delays).
 Block carries propagate through 4 blocks (O(4) delays). Total ≈ O(log n) ≈ 6-8 delays.
-Approximately 2-4Ãâ€â€� faster. The most reasonable answer is 4Ãâ€â€� faster.
+Approximately 2-4× faster. The most reasonable answer is 4× faster.
 
-Answer: (B) 4Ãâ€â€� faster
+Answer: (B) 4× faster
 ```
 
 **Problem 41 (GATE 2024):** A PLA has 6 inputs, 8 product terms, 4 outputs. Maximum distinct product terms available:
@@ -2119,8 +2120,8 @@ Answer: (A) J₂=K₂=Qâ‚ÂÂ�·Q₀
 ```
 **Solution:**
 ```
-Ripple: worst case delay = n Ãâ€â€� t_cq = 5 Ãâ€â€� 8ns = 40ns.
-f_max = 1/40ns = 25 Ãâ€â€� 10âÂÂ�¶ Hz = 25 MHz.
+Ripple: worst case delay = n × t_cq = 5 × 8ns = 40ns.
+f_max = 1/40ns = 25 × 10âÂÂ�¶ Hz = 25 MHz.
 
 Answer: (A) 25 MHz
 ```
@@ -2177,7 +2178,7 @@ Answer: (B) J=D, K=D'
 **Solution:**
 ```
 T_min = t_cq + t_combo + t_su = 4 + 7 + 3 = 14 ns
-f_max = 1/(14 Ãâ€â€� 10âÂÂ�»âÂÂ�¹) = 71.43 MHz
+f_max = 1/(14 × 10âÂÂ�»âÂÂ�¹) = 71.43 MHz
 
 Answer: (A) 71.4 MHz
 ```
@@ -2449,8 +2450,8 @@ Answer: (A) C' + AB
 ```
 **Solution:**
 ```
-Each chip: 2¹² Ãâ€â€� 8 = 4096 Ãâ€â€� 8 = 32 Kb = 4 KB.
-Two chips = 8 KB (but they share address lines, giving 4K Ãâ€â€� 16 = 8 KB total).
+Each chip: 2¹² × 8 = 4096 × 8 = 32 Kb = 4 KB.
+Two chips = 8 KB (but they share address lines, giving 4K × 16 = 8 KB total).
 
 Answer: (A) 8 KB
 ```
@@ -2469,14 +2470,14 @@ FPGA: LUT-based, different architecture.
 Answer: (B) PAL
 ```
 
-**Problem 73 (GATE 2023):** How many 128Ãâ€â€�8 chips for 2 KB memory with 8-bit words?
+**Problem 73 (GATE 2023):** How many 128×8 chips for 2 KB memory with 8-bit words?
 ```
 (A) 8   (B) 16   (C) 32   (D) 64
 ```
 **Solution:**
 ```
-Total memory: 2 KB = 2048 Ãâ€â€� 8 bits.
-Each chip: 128 Ãâ€â€� 8 bits = 1024 bits = 128 bytes.
+Total memory: 2 KB = 2048 × 8 bits.
+Each chip: 128 × 8 bits = 1024 bits = 128 bytes.
 Number of chips: 2048/128 = 16 chips.
 
 Answer: (B) 16
@@ -2590,7 +2591,7 @@ Answer: (C) Both A and B
 ```
 **Solution:**
 ```
-657₈ = 6Ãâ€â€�8² + 5Ãâ€â€�8¹ + 7Ãâ€â€�8âÂÂ�° = 384 + 40 + 7 = 431â‚ÂÂ�₀
+657₈ = 6×8² + 5×8¹ + 7×8âÂÂ�° = 384 + 40 + 7 = 431â‚ÂÂ�₀
 431 ÷ 16 = 26 R 15 (F); 26 ÷ 16 = 1 R 10 (A); 1 ÷ 16 = 0 R 1 → 1AFâ‚ÂÂ�₆
 
 Answer: (A) 1AFâ‚ÂÂ�₆
@@ -2797,26 +2798,26 @@ Stage 0 (LSB): 2 units for carry-out.
 Stages 1-2: 2 units each for carry propagation.
 Stage 3 (MSB): sum uses previous carry + 3 more units for sum.
 Worst case: carry propagates through all 4 stages.
-Total = 2 + 2 + 2 + 3 = 9... Wait, standard: T_delay = (n-1)Ãâ€â€�T_carry + T_sum.
-Here n=4, T_carry=2, T_sum=3: (4-1)Ãâ€â€�2 + 3 = 6+3 = 9.
+Total = 2 + 2 + 2 + 3 = 9... Wait, standard: T_delay = (n-1)×T_carry + T_sum.
+Here n=4, T_carry=2, T_sum=3: (4-1)×2 + 3 = 6+3 = 9.
 But 9 is not an option. Let me reconsider: a full adder takes carry-in and produces carry-out in T_carry. 
 The first FA (LSB) needs its inputs (A₀,B₀,C₀) and produces Câ‚ÂÂ� in 2 units.
 Each subsequent FA produces carry-in 2 units after previous carry is stable.
-The MSB FA gets C₃ after the first 3 stages have propagated: 3Ãâ€â€�2=6 units.
+The MSB FA gets C₃ after the first 3 stages have propagated: 3×2=6 units.
 Then sum output of MSB takes 3 units: total 9.
 Since 9 not an option, perhaps T_sum includes carry-to-sum delay after final carry. 
 Let's say first FA sum is available after 3 units for LSB.
-For the MSB sum, we need Cᵢ₋â‚ÂÂ� to be valid. That happens after (n-1)Ãâ€â€�T_carry.
-Then MSB sum delay = (n-1)Ãâ€â€�T_carry + T_sum = 3Ãâ€â€�2+3 = 9.
+For the MSB sum, we need Cᵢ₋â‚ÂÂ� to be valid. That happens after (n-1)×T_carry.
+Then MSB sum delay = (n-1)×T_carry + T_sum = 3×2+3 = 9.
 Closest option: (C) 11 if we count that each stage sum is T_sum=3 but carry to next is T_carry=2.
-Actually some textbooks count: first sum = 3, then each stage adds 2 for carry, last sum adds 3 = 3+2Ãâ€â€�3 = 9.
-Others: each stage adds max(carry_delay, sum_delay) = 3. Then 4Ãâ€â€�3 = 12. If it's 2+2+2+3 = 9... hmm.
+Actually some textbooks count: first sum = 3, then each stage adds 2 for carry, last sum adds 3 = 3+2×3 = 9.
+Others: each stage adds max(carry_delay, sum_delay) = 3. Then 4×3 = 12. If it's 2+2+2+3 = 9... hmm.
 
-Given options, 8, 11, 14 → the closest standard answer for n=4 is 3+2Ãâ€â€�3 = 9.
+Given options, 8, 11, 14 → the closest standard answer for n=4 is 3+2×3 = 9.
 Perhaps they count differently: first stage sum: 2 (carry delay), stages 1-2: 2+2 = 4, last sum: 3 more → 2+2+2+3 = 9.
-Or: first carry 2, plus 3 intermediate carries Ãâ€â€� 2 = 6, plus final sum 3 = 11 if first sum is also counted.
-Let me take the consensus: some textbooks count 2+(n-1)Ãâ€â€�2+3 = 2n+3... no.
-Ripple carry delay = T_setup + (n-1)Ãâ€â€�T_carry + T_sum = 2 + 3Ãâ€â€�2 + 3 = 11 if setup time for first stage is included.
+Or: first carry 2, plus 3 intermediate carries × 2 = 6, plus final sum 3 = 11 if first sum is also counted.
+Let me take the consensus: some textbooks count 2+(n-1)×2+3 = 2n+3... no.
+Ripple carry delay = T_setup + (n-1)×T_carry + T_sum = 2 + 3×2 + 3 = 11 if setup time for first stage is included.
 
 Answer: (C) 11 units
 ```
@@ -3109,7 +3110,7 @@ Answer: (A) 11
 **Solution:**
 ```
 Ripple counter: clock period must exceed total propagation delay for all stages.
-Total delay = n Ãâ€â€� t_pd = 3 Ãâ€â€� 10 = 30 ns.
+Total delay = n × t_pd = 3 × 10 = 30 ns.
 Max frequency = 1/(30 ns) = 33.33 MHz.
 Synchronous counter would be faster (limited by single FF delay + setup).
 
@@ -3314,7 +3315,7 @@ Answer: (A) A'
 ```
 **Solution:**
 ```
-2¹âÂÂ�µ = 32768 words. Each word = 4 bits. Capacity = 32768 Ãâ€â€� 4 bits.
+2¹âÂÂ�µ = 32768 words. Each word = 4 bits. Capacity = 32768 × 4 bits.
 = 131072 bits = 16384 bytes = 16 KB.
 
 Answer: (D) 16 KB
@@ -3331,16 +3332,16 @@ PLA: both programmable. PROM: AND fixed (decoder), OR programmable.
 Answer: (B) AND, OR
 ```
 
-**Q98 (GATE 2016):** How many 64KÃâ€â€�8 RAM chips are needed for 512KÃâ€â€�32 memory?
+**Q98 (GATE 2016):** How many 64K×8 RAM chips are needed for 512K×32 memory?
 ```
 (A) 8    (B) 16    (C) 32    (D) 64
 **Solution:**
 ```
-Total capacity needed: 512K Ãâ€â€� 32 bits.
-Each chip: 64K Ãâ€â€� 8 bits.
+Total capacity needed: 512K × 32 bits.
+Each chip: 64K × 8 bits.
 Number of chips for word count: 512K/64K = 8 chips (word expansion).
 Number of chips for data width: 32/8 = 4 chips (bit expansion).
-Total: 8 Ãâ€â€� 4 = 32 chips.
+Total: 8 × 4 = 32 chips.
 
 Answer: (C) 32
 ```
@@ -3351,8 +3352,8 @@ Answer: (C) 32
 ```
 **Solution:**
 ```
-Total refresh time per 64 ms window = 4096 Ãâ€â€� 100 ns = 409600 ns = 0.4096 ms.
-Overhead = 0.4096/64 Ãâ€â€� 100% = 0.64%.
+Total refresh time per 64 ms window = 4096 × 100 ns = 409600 ns = 0.4096 ms.
+Overhead = 0.4096/64 × 100% = 0.64%.
 
 Answer: (A) 0.64%
 ```
@@ -3424,7 +3425,7 @@ Answer: (B) DRAM
 
 **Trap 10: Propagation Delay in Ripple vs Synchronous Counters**
 - **Error:** Same delay assumption.
-- **Reality:** Ripple: total delay = n Ãâ€â€� t_pd (cumulative). Synchronous: total delay = t_pd + t_su (single stage).
+- **Reality:** Ripple: total delay = n × t_pd (cumulative). Synchronous: total delay = t_pd + t_su (single stage).
 - **GATE fix:** Ripple counters are slower for large n. Synchronous counters limited by routing.
 
 **Trap 11: State Diagram → Mealy vs Moore Output Timing**
@@ -3438,8 +3439,8 @@ Answer: (B) DRAM
 - **GATE fix:** Two-level NAND = invert inputs (if needed) + NAND each term + NAND all outputs. For AND-OR with complements available: n terms → n+1 NANDs.
 
 **Trap 13: Memory Word vs Bit Organization**
-- **Error:** Confusing Ãâ€â€�8 (byte-wide) with Ãâ€â€�1 (bit-wide) chips.
-- **Reality:** 64KÃâ€â€�8 = 64K words of 8 bits. 64KÃâ€â€�1 = 64K bits. The first needs 8Ãâ€â€� fewer chips for the same word count.
+- **Error:** Confusing ×8 (byte-wide) with ×1 (bit-wide) chips.
+- **Reality:** 64K×8 = 64K words of 8 bits. 64K×1 = 64K bits. The first needs 8× fewer chips for the same word count.
 - **GATE fix:** Always separate word expansion (address) from bit expansion (data width).
 
 **Trap 14: Setup and Hold Time Violations**
@@ -3823,7 +3824,7 @@ Theoretical treatment. For GATE: only needed for state minimization and equivale
 
 1. **Solve PYQs first:** Before touching theory, solve all GATE Digital Logic problems from the last 5 years to understand the pattern.
 2. **Timing is key:** In GATE, clock period, propagation delay, and setup/hold time problems are consistently asked. Master the formula: T_clk = t_cq + t_combo + t_su.
-3. **Counters are predictable:** Ring (mod n), Johnson (mod 2n), Ripple (nÃâ€â€�delay), Synchronous (single clock). These patterns repeat every year.
+3. **Counters are predictable:** Ring (mod n), Johnson (mod 2n), Ripple (n×delay), Synchronous (single clock). These patterns repeat every year.
 4. **K-map speed:** Practice 4-variable K-maps until you can solve them in under 60 seconds. 5-variable K-maps appear occasionally (harder).
 5. **NAND/NOR universality:** Know the standard conversion circuits. GATE frequently asks minimum gate count for implementation.
 6. **MUX logic:** Master the technique of implementing n-variable functions using (n-1)-select MUX. This is a favorite question type.
@@ -3858,7 +3859,7 @@ flowchart TD
 
 ```typescript
 /**
- * KMapSolver â€â€� Boolean Function Minimizer
+ * KMapSolver — Boolean Function Minimizer
  * ------------------------------------------
  * Solves K-maps for 2-4 variables using Quine-McCluskey algorithm.
  * Prints the minimal sum-of-products expression.
@@ -4022,7 +4023,7 @@ class KMapSolver {
   }
 }
 
-// Example: F(A,B,C) = Σm(0,2,4,6) â€â€� all even minterms
+// Example: F(A,B,C) = Σm(0,2,4,6) — all even minterms
 const solver = new KMapSolver(3);
 solver.printKMap([0, 2, 4, 6]);
 const result = solver.minimize([0, 2, 4, 6]);
@@ -4078,4 +4079,4 @@ console.log('Minimized expression: ' + result.join(' + '));
 
 ---
 
-*End of Chapter 04 â€â€� Digital Logic. Extended with summary, TypeScript implementations, quiz, and exercises.*
+*End of Chapter 04 — Digital Logic. Extended with summary, TypeScript implementations, quiz, and exercises.*

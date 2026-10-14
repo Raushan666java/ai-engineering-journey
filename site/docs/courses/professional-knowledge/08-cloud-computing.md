@@ -5,6 +5,7 @@ title: "Chapter 8: Cloud Computing — Exam Quick Revision"
 sidebar_label: "Chapter 8: Cloud Computing — Exam Quick Revision"
 sidebar_position: 8
 ---
+
 # Chapter 8: Cloud Computing — Exam Quick Revision
 
 ## Learning Objectives

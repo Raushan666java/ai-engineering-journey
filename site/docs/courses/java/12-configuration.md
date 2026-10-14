@@ -5,6 +5,7 @@ title: "Application Properties & Configuration"
 sidebar_label: "Application Properties & Configuration"
 sidebar_position: 12
 ---
+
 # Application Properties & Configuration
 
 > **Previous:** [Auto-Configuration & Starters](./11-auto-configuration.md) | **Next:** [Actuator, DevTools & Monitoring](./13-actuator-devtools.md)

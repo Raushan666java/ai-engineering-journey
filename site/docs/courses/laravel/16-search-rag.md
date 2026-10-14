@@ -5,6 +5,7 @@ title: "Chapter 16: Semantic Search, Vector Search & RAG with pgvector"
 sidebar_label: "Chapter 16: Semantic Search, Vector Search & RAG with pgvector"
 sidebar_position: 16
 ---
+
 # Chapter 16: Semantic Search, Vector Search & RAG with pgvector
 > **Previous:** [Laravel MCP -- Model Context Protocol](./15-mcp) | **Next:** [Boost](./17-boost)
 
@@ -175,7 +176,7 @@ Embeddings are computed by models like OpenAI's `text-embedding-3-small` (1536 d
 The primary distance metric is **cosine similarity**:
 
 ```
-cosine_similarity(A, B) = (A Â· B) / (||A|| * ||B||)
+cosine_similarity(A, B) = (A · B) / (||A|| * ||B||)
 ```
 
 Values range from -1 (opposite meaning) to 1 (identical meaning). A threshold of 0.4 to 0.6 typically indicates semantically related content.

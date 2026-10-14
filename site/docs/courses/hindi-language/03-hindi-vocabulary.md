@@ -5,6 +5,7 @@ title: "Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)"
 sidebar_label: "Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)"
 sidebar_position: 3
 ---
+
 # Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)
 
 ## Learning Objectives

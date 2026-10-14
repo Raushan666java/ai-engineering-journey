@@ -5,6 +5,7 @@ title: "Chapter 2: The 30-Day Sprint"
 sidebar_label: "Chapter 2: The 30-Day Sprint"
 sidebar_position: 3
 ---
+
 # Chapter 2: The 30-Day Sprint
 
 > ⏱ **2 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**

@@ -5,6 +5,7 @@ title: "Chapter 6: Arrays"
 sidebar_label: "Chapter 6: Arrays"
 sidebar_position: 6
 ---
+
 # Chapter 6: Arrays
 
 > **Previous:** [Loops](./05-loops.md) | **Next:** [Strings](./07-strings.md)

@@ -5,6 +5,7 @@ title: "Quant Advanced Speed Drills"
 sidebar_label: "Quant Advanced Speed Drills"
 sidebar_position: 2
 ---
+
 # Quant Advanced Speed Drills
 
 > Master data interpretation, number series, quadratic equations, and simplification under timed conditions. These drills bridge basic arithmetic and full-length test performance.

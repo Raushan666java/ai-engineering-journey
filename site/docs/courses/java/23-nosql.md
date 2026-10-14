@@ -5,6 +5,7 @@ title: "Spring Data for NoSQL"
 sidebar_label: "Spring Data for NoSQL"
 sidebar_position: 23
 ---
+
 > **Previous:** [Migrations](./22-migrations.md) | **Next:** [Transactions](./24-transactions.md)
 
 # Spring Data for NoSQL

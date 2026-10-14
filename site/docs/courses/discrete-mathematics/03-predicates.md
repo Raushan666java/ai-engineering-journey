@@ -5,6 +5,7 @@ title: "Chapter 3: Predicates and Quantifiers"
 sidebar_label: "Chapter 3: Predicates and Quantifiers"
 sidebar_position: 3
 ---
+
 # Chapter 3: Predicates and Quantifiers
 
 > **Previous:** [Chapter 2: Logic](02-logic.md) | **Next:** [Chapter 4: Proof Techniques](04-proofs.md)

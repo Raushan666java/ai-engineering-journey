@@ -5,6 +5,7 @@ title: "Chapter 10: Trees"
 sidebar_label: "Chapter 10: Trees"
 sidebar_position: 10
 ---
+
 # Chapter 10: Trees
 
 > **Previous:** [Chapter 9: Graph Theory](./09-graph-theory.md) | **Next:** [Chapter 11: Algebra](./11-algebra.md)

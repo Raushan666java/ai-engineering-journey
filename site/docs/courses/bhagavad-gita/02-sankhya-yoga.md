@@ -5,6 +5,7 @@ title: "Chapter 2: Sankhya Yoga — The Wisdom of the Seer"
 sidebar_label: "Chapter 2: Sankhya Yoga — The Wisdom of the Seer"
 sidebar_position: 2
 ---
+
 # Chapter 2: Sankhya Yoga — The Wisdom of the Seer
 
 > "Krishna begins where all real teaching begins: not with comfort, but with the truth that you have never died."

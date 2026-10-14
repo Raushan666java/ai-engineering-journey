@@ -5,6 +5,7 @@ title: "Chapter 3: The Learn-Anything Blueprint"
 sidebar_label: "Chapter 3: The Learn-Anything Blueprint"
 sidebar_position: 3
 ---
+
 # Chapter 3: The Learn-Anything Blueprint
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

@@ -5,6 +5,7 @@ title: "Chapter 5: Authentication, Authorization & Security"
 sidebar_label: "Chapter 5: Authentication, Authorization & Security"
 sidebar_position: 5
 ---
+
 # Chapter 5: Authentication, Authorization & Security
 > **Previous:** [Eloquent ORM, Database & Migrations](./04-eloquent-database) | **Next:** [Queues, Jobs, Notifications & Mail](./06-queues-notifications)
 

@@ -5,6 +5,7 @@ title: "Chapter 04: Fintech and Emerging Trends"
 sidebar_label: "Chapter 04: Fintech and Emerging Trends"
 sidebar_position: 4
 ---
+
 # Chapter 04: Fintech and Emerging Trends
 
 ## Learning Objectives

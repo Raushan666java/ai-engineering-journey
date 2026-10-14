@@ -5,6 +5,7 @@ title: "Chapter 15: Laravel MCP → Model Context Protocol"
 sidebar_label: "Chapter 15: Laravel MCP → Model Context Protocol"
 sidebar_position: 15
 ---
+
 # Chapter 15: Laravel MCP → Model Context Protocol
 > **Previous:** [Laravel AI SDK -- Images, Audio, Transcriptions & Embeddings](./14-ai-sdk-media) | **Next:** [Semantic Search, Vector Search & RAG with pgvector](./16-search-rag)
 

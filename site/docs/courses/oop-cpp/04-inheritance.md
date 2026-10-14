@@ -5,6 +5,7 @@ title: "Chapter 4: Inheritance"
 sidebar_label: "Chapter 4: Inheritance"
 sidebar_position: 4
 ---
+
 # Chapter 4: Inheritance
 
 > **Previous:** [Constructors](./03-constructors.md) | **Next:** [Polymorphism](./05-polymorphism.md)

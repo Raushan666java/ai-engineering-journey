@@ -5,6 +5,7 @@ title: "Chapter 1: Introduction to the Theory of Computation"
 sidebar_label: "Chapter 1: Introduction to the Theory of Computation"
 sidebar_position: 1
 ---
+
 # Chapter 1: Introduction to the Theory of Computation
 
 > **Previous:** None | **Next:** [Deterministic Finite Automata](./02-dfa.md)

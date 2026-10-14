@@ -5,6 +5,7 @@ title: "Chapter 1: Indian Polity & Constitution"
 sidebar_label: "Chapter 1: Indian Polity & Constitution"
 sidebar_position: 1
 ---
+
 # Chapter 1: Indian Polity & Constitution
 
 ## Learning Objectives

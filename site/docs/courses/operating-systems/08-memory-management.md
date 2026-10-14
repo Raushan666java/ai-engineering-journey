@@ -5,6 +5,7 @@ title: "Chapter 8: Memory Management"
 sidebar_label: "Chapter 8: Memory Management"
 sidebar_position: 8
 ---
+
 # Chapter 8: Memory Management
 
 **<< [Deadlocks](./07-deadlocks.md)** | [**Next: Virtual Memory**](./09-virtual-memory.md) >>

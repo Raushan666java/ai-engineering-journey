@@ -5,7 +5,8 @@ title: "Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body"
 sidebar_label: "Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body"
 sidebar_position: 11
 ---
-# Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body
+
+﻿# Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body
 
 > "When the one becomes visible as the all, the small self trembles — and in that trembling, the great self is born."
 > — The Osho Way

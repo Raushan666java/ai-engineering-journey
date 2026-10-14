@@ -5,6 +5,7 @@ title: "Chapter 1: Introduction to Machine Learning"
 sidebar_label: "Chapter 1: Introduction to Machine Learning"
 sidebar_position: 1
 ---
+
 # Chapter 1: Introduction to Machine Learning
 
 > **Previous:** None | **Next:** [Linear Regression](./02-linear-regression.md)

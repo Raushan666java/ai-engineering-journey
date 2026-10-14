@@ -5,6 +5,7 @@ title: "Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same 
 sidebar_label: "Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name"
 sidebar_position: 10
 ---
+
 # Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name
 
 > "The whole world is God's signature — learn to read the handwriting, and every face becomes a letter of the divine."

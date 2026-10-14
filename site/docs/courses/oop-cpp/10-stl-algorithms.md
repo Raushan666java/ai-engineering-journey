@@ -5,6 +5,7 @@ title: "Chapter 10: STL Algorithms — Master the C++ Standard Template Library"
 sidebar_label: "Chapter 10: STL Algorithms — Master the C++ Standard Template Library"
 sidebar_position: 10
 ---
+
 # Chapter 10: STL Algorithms — Master the C++ Standard Template Library
 
 > **Previous:** [09-stl-containers](./09-stl-containers.md) | **Next:** [11-file-io](./11-file-io.md)

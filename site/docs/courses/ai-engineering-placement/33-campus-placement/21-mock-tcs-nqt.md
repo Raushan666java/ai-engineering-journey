@@ -5,7 +5,9 @@ title: "TCS NQT Mock Test - Full Pattern Simulation (54 Questions)"
 sidebar_label: "TCS NQT Mock Test - Full Pattern Simulation (54 Questions)"
 sidebar_position: 382
 ---
-# TCS NQT Mock Test - Full Pattern Simulation (54 Questions)
+
+<!-- improved -->
+﻿# TCS NQT Mock Test - Full Pattern Simulation (54 Questions)
 
 > This mock simulates the TCS NQT aptitude section exactly: 24 quantitative, 15 logical, 15 verbal.
 > Time limits: Quantitative 40 min, Logical Reasoning 25 min, Verbal 20 min. Total: 85 minutes.

@@ -5,6 +5,7 @@ title: "Engineering Mathematics"
 sidebar_label: "Engineering Mathematics"
 sidebar_position: 11
 ---
+
 # Engineering Mathematics
 
 > A comprehensive foundation in engineering mathematics from basic calculus through advanced topics, with rigorous theory, worked examples, and real-world applications in computer science and AI.

@@ -5,6 +5,7 @@ title: "Chapter 11: MLOps for AI Engineering"
 sidebar_label: "Chapter 11: MLOps for AI Engineering"
 sidebar_position: 11
 ---
+
 # Chapter 11: MLOps for AI Engineering
 
 > **Adapt MLOps practices for the unique challenges of AI engineering. Master experiment tracking, prompt management, CI/CD pipelines, data and model versioning, drift monitoring, testing strategies, and incident response playbooks — all with TypeScript.**

@@ -5,6 +5,7 @@ title: "Chapter 12: Boolean Algebra"
 sidebar_label: "Chapter 12: Boolean Algebra"
 sidebar_position: 12
 ---
+
 # Chapter 12: Boolean Algebra
 
 > **Previous:** [Chapter 11: Algebraic Structures](./11-algebra.md) | **Next:** [Chapter 13: Probability](./13-probability.md)

@@ -5,6 +5,7 @@ title: "Chapter 3: Logic Gates"
 sidebar_label: "Chapter 3: Logic Gates"
 sidebar_position: 3
 ---
+
 # Chapter 3: Logic Gates
 
 > **Prereq:** Chapter 2 (Boolean Algebra) ? gates implement the Boolean operations directly.

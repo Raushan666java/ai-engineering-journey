@@ -5,6 +5,7 @@ title: "01 General Aptitude"
 sidebar_label: "01 General Aptitude"
 sidebar_position: 1
 ---
+
 ﻿# General Aptitude for GATE CS
 
 
@@ -69,8 +70,8 @@ flowchart LR
 
 General Aptitude is a compulsory section in GATE CS, carrying **15 marks** (15% of the total 100 marks). It consists of:
 
-- **5 questions Ãâ€â€� 1 mark each** = 5 marks
-- **5 questions Ãâ€â€� 2 marks each** = 10 marks
+- **5 questions × 1 mark each** = 5 marks
+- **5 questions × 2 marks each** = 10 marks
 - **Total: 10 questions = 15 marks**
 
 | Sub-Topic | Expected Questions | Expected Marks |
@@ -102,24 +103,24 @@ Key properties:
 **Solution:**
 Check divisibility up to √221 ≈ 14.9:
 - 221 ÷ 13 = 17 exactly
-- Since 221 = 13 Ãâ€â€� 17, it is NOT prime.
+- Since 221 = 13 × 17, it is NOT prime.
 
 ---
 
 **Q2: How do you find LCM and HCF efficiently?**
 
-**Answer:** Use prime factorization or the relationship: `LCM(a,b) Ãâ€â€� HCF(a,b) = a Ãâ€â€� b`
+**Answer:** Use prime factorization or the relationship: `LCM(a,b) × HCF(a,b) = a × b`
 
 **Example:** Find LCM and HCF of 84 and 108.
 
 **Solution (Prime factorization method):**
-- 84 = 2² Ãâ€â€� 3 Ãâ€â€� 7
-- 108 = 2² Ãâ€â€� 3³
+- 84 = 2² × 3 × 7
+- 108 = 2² × 3³
 
-HCF = product of common factors with smallest powers = 2² Ãâ€â€� 3 = 12
-LCM = product of all factors with highest powers = 2² Ãâ€â€� 3³ Ãâ€â€� 7 = 756
+HCF = product of common factors with smallest powers = 2² × 3 = 12
+LCM = product of all factors with highest powers = 2² × 3³ × 7 = 756
 
-Verification: 12 Ãâ€â€� 756 = 9072 = 84 Ãâ€â€� 108 ✓
+Verification: 12 × 756 = 9072 = 84 × 108 ✓
 
 ---
 
@@ -127,7 +128,7 @@ Verification: 12 Ãâ€â€� 756 = 9072 = 84 Ãâ€â€� 108 ✓
 
 **Solution:**
 Let the numbers be 2x, 3x, and 4x.
-LCM(2x, 3x, 4x) = x Ãâ€â€� LCM(2, 3, 4) = x Ãâ€â€� 12 = 144
+LCM(2x, 3x, 4x) = x × LCM(2, 3, 4) = x × 12 = 144
 So x = 12
 
 The numbers are 24, 36, 48.
@@ -151,11 +152,11 @@ Verification: 93 ÷ 6 = 15 remainder 3 ✓, 93 ÷ 9 = 10 remainder 3 ✓, 93 ÷ 
 
 **Q5: A student's marks increased from 320 to 384. What is the percentage increase?**
 
-**Answer:** Percentage change = `(Change / Original) Ãâ€â€� 100%`
+**Answer:** Percentage change = `(Change / Original) × 100%`
 
 **Solution:**
 Increase = 384 - 320 = 64
-Percentage increase = (64 / 320) Ãâ€â€� 100% = 20%
+Percentage increase = (64 / 320) × 100% = 20%
 
 ---
 
@@ -165,27 +166,27 @@ Percentage increase = (64 / 320) Ãâ€â€� 100% = 20%
 Let B's salary = 100
 A's salary = 100 + 25% of 100 = 125
 Difference = 25
-Percentage by which B is less than A = (25 / 125) Ãâ€â€� 100% = 20%
+Percentage by which B is less than A = (25 / 125) × 100% = 20%
 
-**Key insight:** If A is `x%` more than B, then B is `[x / (100 + x)] Ãâ€â€� 100%` less than A.
+**Key insight:** If A is `x%` more than B, then B is `[x / (100 + x)] × 100%` less than A.
 
 ---
 
 **Q7: In an election between two candidates, one gets 55% of the valid votes. 10% of the total votes are invalid. Total votes polled are 8000. How many votes did the winning candidate get?**
 
 **Solution:**
-Total valid votes = 8000 Ãâ€â€� (100% - 10%) = 8000 Ãâ€â€� 0.9 = 7200
-Winner's votes = 55% of 7200 = 7200 Ãâ€â€� 0.55 = 3960
+Total valid votes = 8000 × (100% - 10%) = 8000 × 0.9 = 7200
+Winner's votes = 55% of 7200 = 7200 × 0.55 = 3960
 
 ---
 
 **Q8: The population of a town increases by 5% annually. If the current population is 50,000, what will it be after 2 years?**
 
 **Solution:**
-After 1 year: 50,000 Ãâ€â€� 1.05 = 52,500
-After 2 years: 52,500 Ãâ€â€� 1.05 = 55,125
+After 1 year: 50,000 × 1.05 = 52,500
+After 2 years: 52,500 × 1.05 = 55,125
 
-Alternative: P Ãâ€â€� (1 + r/100)^n = 50,000 Ãâ€â€� (1.05)² = 50,000 Ãâ€â€� 1.1025 = 55,125
+Alternative: P × (1 + r/100)^n = 50,000 × (1.05)² = 50,000 × 1.1025 = 55,125
 
 ---
 
@@ -195,15 +196,15 @@ Alternative: P Ãâ€â€� (1 + r/100)^n = 50,000 Ãâ€â€� (1.05)² =
 **Q9: A shopkeeper sells an item at a 20% profit. If the cost price is ₹250, find the selling price.**
 
 **Solution:**
-SP = CP Ãâ€â€� (1 + Profit%/100) = 250 Ãâ€â€� 1.20 = ₹300
+SP = CP × (1 + Profit%/100) = 250 × 1.20 = ₹300
 
 ---
 
 **Q10: An article is sold at ₹460 at a loss of 8%. Find its cost price.**
 
 **Solution:**
-SP = CP Ãâ€â€� (1 - Loss%/100)
-460 = CP Ãâ€â€� 0.92
+SP = CP × (1 - Loss%/100)
+460 = CP × 0.92
 CP = 460 / 0.92 = ₹500
 
 ---
@@ -214,7 +215,7 @@ CP = 460 / 0.92 = ₹500
 Let SP = 100
 Profit = 20% of SP = 20
 CP = SP - Profit = 100 - 20 = 80
-Actual profit % = (20 / 80) Ãâ€â€� 100% = 25%
+Actual profit % = (20 / 80) × 100% = 25%
 
 **Key insight:** Profit on SP always yields a higher actual profit % than the same percentage on CP.
 
@@ -226,7 +227,7 @@ Actual profit % = (20 / 80) Ãâ€â€� 100% = 25%
 **Q12: A sum of ₹5000 is invested at 8% simple interest per annum. Find the amount after 3 years.**
 
 **Solution:**
-SI = (P Ãâ€â€� R Ãâ€â€� T) / 100 = (5000 Ãâ€â€� 8 Ãâ€â€� 3) / 100 = ₹1200
+SI = (P × R × T) / 100 = (5000 × 8 × 3) / 100 = ₹1200
 Amount = P + SI = 5000 + 1200 = ₹6200
 
 ---
@@ -234,7 +235,7 @@ Amount = P + SI = 5000 + 1200 = ₹6200
 **Q13: Find the compound interest on ₹8000 at 10% per annum compounded annually for 2 years.**
 
 **Solution:**
-A = P(1 + r/100)^n = 8000(1.1)² = 8000 Ãâ€â€� 1.21 = ₹9680
+A = P(1 + r/100)^n = 8000(1.1)² = 8000 × 1.21 = ₹9680
 CI = A - P = 9680 - 8000 = ₹1680
 
 ---
@@ -242,9 +243,9 @@ CI = A - P = 9680 - 8000 = ₹1680
 **Q14: The difference between CI and SI on a sum for 2 years at 5% p.a. is ₹25. Find the sum.**
 
 **Solution:**
-For 2 years: CI - SI = P Ãâ€â€� (r/100)²
-25 = P Ãâ€â€� (5/100)²
-25 = P Ãâ€â€� 0.0025
+For 2 years: CI - SI = P × (r/100)²
+25 = P × (5/100)²
+25 = P × 0.0025
 P = 25 / 0.0025 = ₹10,000
 
 ---
@@ -257,19 +258,19 @@ P = 25 / 0.0025 = ₹10,000
 **Solution:**
 Total distance = length of train + length of platform = 150 + 250 = 400 m
 Speed = Distance / Time = 400 / 20 = 20 m/s
-Converting to km/h: 20 Ãâ€â€� (18/5) = 72 km/h
+Converting to km/h: 20 × (18/5) = 72 km/h
 
 ---
 
 **Q16: Two trains of lengths 200 m and 300 m run on parallel tracks at 72 km/h and 54 km/h respectively. How long will they take to cross each other if running in opposite directions?**
 
 **Solution:**
-Relative speed (opposite) = 72 + 54 = 126 km/h = 126 Ãâ€â€� (5/18) = 35 m/s
+Relative speed (opposite) = 72 + 54 = 126 km/h = 126 × (5/18) = 35 m/s
 Total distance = 200 + 300 = 500 m
 Time = 500 / 35 = 14.29 seconds
 
 If running in the same direction:
-Relative speed = 72 - 54 = 18 km/h = 18 Ãâ€â€� (5/18) = 5 m/s
+Relative speed = 72 - 54 = 18 km/h = 18 × (5/18) = 5 m/s
 Time = 500 / 5 = 100 seconds
 
 ---
@@ -278,7 +279,7 @@ Time = 500 / 5 = 100 seconds
 
 **Solution:**
 Average speed = 2ab / (a + b) where a and b are speeds
-= 2 Ãâ€â€� 60 Ãâ€â€� 40 / (60 + 40) = 4800 / 100 = 48 km/h
+= 2 × 60 × 40 / (60 + 40) = 4800 / 100 = 48 km/h
 
 **Key insight:** Average speed is NOT the arithmetic mean (50 km/h). It's the harmonic mean.
 
@@ -313,7 +314,7 @@ Total days = 6 days
 Let B's efficiency = 1 unit/day
 A's efficiency = 2 units/day
 Combined efficiency = 3 units/day
-Total work = 3 Ãâ€â€� 16 = 48 units
+Total work = 3 × 16 = 48 units
 Time for B alone = 48 / 1 = 48 days
 
 ---
@@ -323,7 +324,7 @@ Time for B alone = 48 / 1 = 48 days
 **Solution:**
 A's 1 day work = 1/12
 B is 125% as efficient as A
-B's 1 day work = 1/12 Ãâ€â€� 125/100 = 1/12 Ãâ€â€� 5/4 = 5/48
+B's 1 day work = 1/12 × 125/100 = 1/12 × 5/4 = 5/48
 B's total days = 48/5 = 9.6 days
 
 ---
@@ -348,7 +349,7 @@ Total time = 6 hours
 In 1 minute: A fills 1/20, B fills 1/30
 In 5 minutes: 5/20 + 5/30 = 1/4 + 1/6 = 5/12 of tank filled
 Remaining = 7/12
-Time for B alone = (7/12) / (1/30) = (7/12) Ãâ€â€� 30 = 17.5 minutes
+Time for B alone = (7/12) / (1/30) = (7/12) × 30 = 17.5 minutes
 
 ---
 
@@ -372,7 +373,7 @@ Let the numbers be 3x, 4x, 7x
 3x + 4x + 7x = 168
 14x = 168
 x = 12
-Largest number = 7 Ãâ€â€� 12 = 84
+Largest number = 7 × 12 = 84
 
 ---
 
@@ -382,7 +383,7 @@ Largest number = 7 Ãâ€â€� 12 = 84
 Let A = 2x, B = 3x, C = 5x
 B - A = 3x - 2x = x = 150
 So x = 150
-Total = 2x + 3x + 5x = 10x = 10 Ãâ€â€� 150 = ₹1500
+Total = 2x + 3x + 5x = 10x = 10 × 150 = ₹1500
 
 ---
 
@@ -406,10 +407,10 @@ Required ratio = 2 : 3
 
 **Solution:**
 After first replacement: Milk = 80 - 16 = 64 liters
-After second replacement: Milk removed = 64 Ãâ€â€� (16/80) = 12.8 liters
+After second replacement: Milk removed = 64 × (16/80) = 12.8 liters
 Final milk = 64 - 12.8 = 51.2 liters
 
-Alternatively: Final milk = 80 Ãâ€â€� (1 - 16/80)² = 80 Ãâ€â€� (0.8)² = 80 Ãâ€â€� 0.64 = 51.2 liters
+Alternatively: Final milk = 80 × (1 - 16/80)² = 80 × (0.8)² = 80 × 0.64 = 51.2 liters
 
 ---
 
@@ -422,7 +423,7 @@ After adding 16L water: milk = 5x, water = 3x + 16
 Cross multiply: 35x = 15x + 80
 20x = 80
 x = 4
-Milk = 5 Ãâ€â€� 4 = 20 liters
+Milk = 5 × 4 = 20 liters
 
 ---
 
@@ -432,8 +433,8 @@ Milk = 5 Ãâ€â€� 4 = 20 liters
 **Q30: The average of 5 numbers is 27. If one number is removed, the average becomes 24. Find the removed number.**
 
 **Solution:**
-Sum of 5 numbers = 5 Ãâ€â€� 27 = 135
-Sum of 4 numbers = 4 Ãâ€â€� 24 = 96
+Sum of 5 numbers = 5 × 27 = 135
+Sum of 4 numbers = 4 × 24 = 96
 Removed number = 135 - 96 = 39
 
 ---
@@ -441,8 +442,8 @@ Removed number = 135 - 96 = 39
 **Q31: The average age of 30 students is 14 years. When the teacher's age is included, the average becomes 15 years. Find the teacher's age.**
 
 **Solution:**
-Sum of 30 students = 30 Ãâ€â€� 14 = 420
-Sum with teacher = 31 Ãâ€â€� 15 = 465
+Sum of 30 students = 30 × 14 = 420
+Sum with teacher = 31 × 15 = 465
 Teacher's age = 465 - 420 = 45 years
 
 ---
@@ -450,9 +451,9 @@ Teacher's age = 465 - 420 = 45 years
 **Q32: The average of 11 numbers is 50. The average of the first 6 numbers is 48 and the last 6 numbers is 53. Find the 6th number.**
 
 **Solution:**
-Sum of 11 numbers = 11 Ãâ€â€� 50 = 550
-Sum of first 6 = 6 Ãâ€â€� 48 = 288
-Sum of last 6 = 6 Ãâ€â€� 53 = 318
+Sum of 11 numbers = 11 × 50 = 550
+Sum of first 6 = 6 × 48 = 288
+Sum of last 6 = 6 × 53 = 318
 6th number = 288 + 318 - 550 = 56
 
 ---
@@ -463,14 +464,14 @@ Sum of last 6 = 6 Ãâ€â€� 53 = 318
 **Q33: How many 3-digit numbers can be formed from digits 1, 2, 3, 4, 5 without repetition?**
 
 **Solution:**
-Number of ways = âÂÂ�µP₃ = 5! / (5-3)! = 5 Ãâ€â€� 4 Ãâ€â€� 3 = 60
+Number of ways = âÂÂ�µP₃ = 5! / (5-3)! = 5 × 4 × 3 = 60
 
 ---
 
 **Q34: In how many ways can a committee of 3 be chosen from 7 people?**
 
 **Solution:**
-Number of ways = âÂÂ�·C₃ = 7! / (3! Ãâ€â€� 4!) = (7 Ãâ€â€� 6 Ãâ€â€� 5) / (3 Ãâ€â€� 2 Ãâ€â€� 1) = 35
+Number of ways = âÂÂ�·C₃ = 7! / (3! × 4!) = (7 × 6 × 5) / (3 × 2 × 1) = 35
 
 ---
 
@@ -479,7 +480,7 @@ Number of ways = âÂÂ�·C₃ = 7! / (3! Ãâ€â€� 4!) = (7 Ãâ€â�
 **Solution:**
 Total letters = 6
 Repeated: A appears 3 times, N appears 2 times
-Number of distinct words = 6! / (3! Ãâ€â€� 2!) = 720 / (6 Ãâ€â€� 2) = 60
+Number of distinct words = 6! / (3! × 2!) = 720 / (6 × 2) = 60
 
 ---
 
@@ -490,7 +491,7 @@ First arrange the 4 boys: 4! = 24 ways
 This creates 5 gaps (before, between, after boys)
 Choose 3 gaps for girls: âÂÂ�µC₃ = 10
 Arrange girls in those gaps: 3! = 6
-Total = 24 Ãâ€â€� 10 Ãâ€â€� 6 = 1440 ways
+Total = 24 × 10 × 6 = 1440 ways
 
 ---
 
@@ -510,7 +511,7 @@ Probability = 10/28 = 5/14
 **Q38: Two dice are rolled. Find the probability of getting a sum of 7.**
 
 **Solution:**
-Total outcomes = 6 Ãâ€â€� 6 = 36
+Total outcomes = 6 × 6 = 36
 Favorable outcomes (sum=7): (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6
 Probability = 6/36 = 1/6
 
@@ -520,9 +521,9 @@ Probability = 6/36 = 1/6
 
 **Solution:**
 P(X ≥ 3) = P(3) + P(4) + P(5)
-P(3) = âÂÂ�µC₃ Ãâ€â€� (1/2)âÂÂ�µ = 10/32
-P(4) = âÂÂ�µC₄ Ãâ€â€� (1/2)âÂÂ�µ = 5/32
-P(5) = âÂÂ�µC₅ Ãâ€â€� (1/2)âÂÂ�µ = 1/32
+P(3) = âÂÂ�µC₃ × (1/2)âÂÂ�µ = 10/32
+P(4) = âÂÂ�µC₄ × (1/2)âÂÂ�µ = 5/32
+P(5) = âÂÂ�µC₅ × (1/2)âÂÂ�µ = 1/32
 Total = 16/32 = 1/2
 
 ---
@@ -534,7 +535,7 @@ P(A truth) = 0.8, P(A false) = 0.2
 P(B truth) = 0.6, P(B false) = 0.4
 
 They contradict when: (A truth, B false) or (A false, B truth)
-P = (0.8 Ãâ€â€� 0.4) + (0.2 Ãâ€â€� 0.6) = 0.32 + 0.12 = 0.44
+P = (0.8 × 0.4) + (0.2 × 0.6) = 0.32 + 0.12 = 0.44
 
 ---
 
@@ -578,7 +579,7 @@ Highest: 2022 at ₹0.069 cr per employee
 Q1 total = 120 + 80 = 200
 Q4 total = 160 + 120 = 280
 Increase = 80
-Percentage increase = (80/200) Ãâ€â€� 100% = 40%
+Percentage increase = (80/200) × 100% = 40%
 
 ---
 
@@ -613,7 +614,7 @@ Difference = 15,000 - 9,000 = ₹6,000
 Total growth = 310,000 - 200,000 = 110,000
 Number of years = 4
 Average growth per year = 110,000/4 = 27,500
-Average growth rate = (27,500/200,000) Ãâ€â€� 100% = 13.75% per year
+Average growth rate = (27,500/200,000) × 100% = 13.75% per year
 
 ---
 
@@ -689,7 +690,7 @@ The man is the woman's **son**.
 
 ---
 
-**Q47: If P + Q means P is the mother of Q; P - Q means P is the brother of Q; P Ãâ€â€� Q means P is the father of Q; P ÷ Q means P is the sister of Q. Then how is A related to C in A + B - C?**
+**Q47: If P + Q means P is the mother of Q; P - Q means P is the brother of Q; P × Q means P is the father of Q; P ÷ Q means P is the sister of Q. Then how is A related to C in A + B - C?**
 
 **Solution:**
 A + B → A is mother of B
@@ -914,10 +915,10 @@ E opposite F: (1,5), (2,6→no 2 is A), (3,7), (4,8→no)
 So E,F at (1,5) or (3,7) or (5,1) or (7,3)
 
 Case 1: E=1, F=5. Remaining: 6,7 for C, D.
-C third left of D: D=6, C=3 (no, G). D=7, C=4 (no, H). âœâ€â€�
+C third left of D: D=6, C=3 (no, G). D=7, C=4 (no, H). âœ—
 
 Case 2: E=5, F=1. Remaining: 6,7 for C, D.
-D=6, third left = 3 (no, G). D=7, third left = 4 (no, H). âœâ€â€�
+D=6, third left = 3 (no, G). D=7, third left = 4 (no, H). âœ—
 
 Case 3: E=7, F=3 (no, G).
 
@@ -1528,16 +1529,16 @@ Total triangles = 4 + 2 + 1 = 7
 **Q100: A cube is painted on all faces and cut into 125 smaller cubes of equal size. How many smaller cubes have exactly 2 faces painted?**
 
 **Solution:**
-The cube is cut into 125 cubes → 5 Ãâ€â€� 5 Ãâ€â€� 5 grid (n = 5).
+The cube is cut into 125 cubes → 5 × 5 × 5 grid (n = 5).
 
 Cubes with exactly 2 faces painted = cubes on edges excluding corners.
 Number of edges = 12
 Cubes per edge (excluding corners) = n - 2 = 3
-Total = 12 Ãâ€â€� 3 = 36 cubes
+Total = 12 × 3 = 36 cubes
 
 ---
 
-**Q101: In a 4 Ãâ€â€� 4 Ãâ€â€� 4 cube painted on all faces and cut into unit cubes, how many cubes have no paint at all?**
+**Q101: In a 4 × 4 × 4 cube painted on all faces and cut into unit cubes, how many cubes have no paint at all?**
 
 **Solution:**
 Unpainted cubes = (n - 2)³ = (4 - 2)³ = 2³ = 8 cubes
@@ -1596,11 +1597,11 @@ A → A (symmetrical vertically)
 T → T (flipped horizontally → T stays same)
 E → (flipped horizontally → reverse E)
 
-The mirror image would read as: ðÂÂ�žâ€Â�TΛ⅃ (the actual reversed visual representation).
+The mirror image would read as: ðÂÂ�ž—Â�TΛ⅃ (the actual reversed visual representation).
 
 For exam purposes: The letters that look the same in a vertical mirror (left-right inversion) are: A, H, I, M, O, T, U, V, W, X, Y. Others are reversed.
 
-So GATE → ðÂÂ�žâ€Â�TΛ⅃ (reading right to left from original).
+So GATE → ðÂÂ�ž—Â�TΛ⅃ (reading right to left from original).
 
 ---
 
@@ -1626,7 +1627,7 @@ The number of holes = 2^(number of folds) when the folds are simple halves and t
 
 Where will the holes appear?
 
-**Answer:** After step 1, the paper has 2 layers. After step 2, it has 4 layers. Punching at the center of the quad-folded paper will create 4 symmetrical holes when unfolded → one in each quadrant. If the original paper has dimensions L Ãâ€â€� W, the holes will be at (L/4, W/4), (3L/4, W/4), (L/4, 3W/4), (3L/4, 3W/4).
+**Answer:** After step 1, the paper has 2 layers. After step 2, it has 4 layers. Punching at the center of the quad-folded paper will create 4 symmetrical holes when unfolded → one in each quadrant. If the original paper has dimensions L × W, the holes will be at (L/4, W/4), (3L/4, W/4), (L/4, 3W/4), (3L/4, 3W/4).
 
 ---
 
@@ -1646,7 +1647,7 @@ Where will the holes appear?
 **Answer:** 42
 
 **Pattern:** Differences increase by 2 each time: +4, +6, +8, +10, +12
-Or: n(n+1): 1Ãâ€â€�2, 2Ãâ€â€�3, 3Ãâ€â€�4, 4Ãâ€â€�5, 5Ãâ€â€�6, 6Ãâ€â€�7 = 42
+Or: n(n+1): 1×2, 2×3, 3×4, 4×5, 5×6, 6×7 = 42
 
 ---
 
@@ -1670,7 +1671,7 @@ Or: n(n+1): 1Ãâ€â€�2, 2Ãâ€â€�3, 3Ãâ€â€�4, 4Ãâ€â�
 ### Spatial & Analytical Reasoning → Practice Problems
 
 
-**Practice 26:** A 3 Ãâ€â€� 3 Ãâ€â€� 3 cube is painted red and cut into unit cubes. How many cubes have exactly 1 face painted?
+**Practice 26:** A 3 × 3 × 3 cube is painted red and cut into unit cubes. How many cubes have exactly 1 face painted?
 
 **Answer:** 6
 
@@ -1736,16 +1737,16 @@ Or: n(n+1): 1Ãâ€â€�2, 2Ãâ€â€�3, 3Ãâ€â€�4, 4Ãâ€â�
 
 | Concept | Formula |
 |---------|---------|
-| Percentage change | `(New - Old) / Old Ãâ€â€� 100%` |
-| Profit % | `(SP - CP) / CP Ãâ€â€� 100%` |
-| Loss % | `(CP - SP) / CP Ãâ€â€� 100%` |
-| Simple Interest | `SI = P Ãâ€â€� R Ãâ€â€� T / 100` |
+| Percentage change | `(New - Old) / Old × 100%` |
+| Profit % | `(SP - CP) / CP × 100%` |
+| Loss % | `(CP - SP) / CP × 100%` |
+| Simple Interest | `SI = P × R × T / 100` |
 | Compound Interest | `A = P(1 + R/100)^T` |
 | Speed | `Speed = Distance / Time` |
 | Average speed (round trip) | `2ab / (a + b)` |
-| Work formula | `Work = Rate Ãâ€â€� Time` |
-| LCM Ãâ€â€� HCF | `a Ãâ€â€� b = LCM(a,b) Ãâ€â€� HCF(a,b)` |
-| Combinations | `âÂÂ�¿Cᵣ = n! / (r! Ãâ€â€� (n-r)!)` |
+| Work formula | `Work = Rate × Time` |
+| LCM × HCF | `a × b = LCM(a,b) × HCF(a,b)` |
+| Combinations | `âÂÂ�¿Cᵣ = n! / (r! × (n-r)!)` |
 | Permutations | `âÂÂ�¿Pᵣ = n! / (n-r)!` |
 | Probability | `P(E) = Favorable / Total` |
 
@@ -1777,7 +1778,7 @@ Or: n(n+1): 1Ãâ€â€�2, 2Ãâ€â€�3, 3Ãâ€â€�4, 4Ãâ€â�
 
 | Cube Type | Zero Faces | One Face | Two Faces | Three Faces |
 |-----------|-----------|----------|-----------|-------------|
-| n Ãâ€â€� n Ãâ€â€� n | (n-2)³ | 6(n-2)² | 12(n-2) | 8 |
+| n × n × n | (n-2)³ | 6(n-2)² | 12(n-2) | 8 |
 
 ---
 
@@ -1803,11 +1804,11 @@ A's 1 day work = 1/12, B's 1 day work = 1/18
 
 Combined 1 day work = 1/12 + 1/18 = (3+2)/36 = 5/36
 
-Work done in 4 days = 4 Ãâ€â€� 5/36 = 20/36 = 5/9
+Work done in 4 days = 4 × 5/36 = 20/36 = 5/9
 
 Remaining work = 1 - 5/9 = 4/9
 
-Time for B alone = (4/9) / (1/18) = (4/9) Ãâ€â€� 18 = 8 days
+Time for B alone = (4/9) / (1/18) = (4/9) × 18 = 8 days
 
 **Answer: 8 days**
 
@@ -1820,9 +1821,9 @@ A bag contains 4 red, 5 green, and 6 blue balls. Three balls are drawn at random
 
 Total balls = 4 + 5 + 6 = 15
 
-Total ways to pick 3 balls = ¹âÂÂ�µC₃ = (15Ãâ€â€�14Ãâ€â€�13)/(3Ãâ€â€�2Ãâ€â€�1) = 455
+Total ways to pick 3 balls = ¹âÂÂ�µC₃ = (15×14×13)/(3×2×1) = 455
 
-Favorable ways = âÂÂ�´Câ‚ÂÂ� Ãâ€â€� âÂÂ�µCâ‚ÂÂ� Ãâ€â€� âÂÂ�¶Câ‚ÂÂ� = 4 Ãâ€â€� 5 Ãâ€â€� 6 = 120
+Favorable ways = âÂÂ�´Câ‚ÂÂ� × âÂÂ�µCâ‚ÂÂ� × âÂÂ�¶Câ‚ÂÂ� = 4 × 5 × 6 = 120
 
 Probability = 120/455 = 24/91
 
@@ -1845,7 +1846,7 @@ SP = 130 - 13 = ₹117
 
 Profit = 117 - 100 = ₹17
 
-Profit % = (17/100) Ãâ€â€� 100% = 17%
+Profit % = (17/100) × 100% = 17%
 
 **Answer: 17%**
 
@@ -1860,7 +1861,7 @@ By Fermat's Little Theorem: a^(p-1) ≡ 1 (mod p) when p is prime and gcd(a,p)=1
 
 2¹âÂÂ�¶ ≡ 1 (mod 17)
 
-2âÂÂ�¸âÂÂ�° = 2^(16Ãâ€â€�5) = (2¹âÂÂ�¶)âÂÂ�µ ≡ 1âÂÂ�µ ≡ 1 (mod 17)
+2âÂÂ�¸âÂÂ�° = 2^(16×5) = (2¹âÂÂ�¶)âÂÂ�µ ≡ 1âÂÂ�µ ≡ 1 (mod 17)
 
 **Answer: 1**
 
@@ -1879,13 +1880,13 @@ C's 1 hour work = -1/30 (empties)
 
 Combined (A+B+C) 1 hour = 1/15 + 1/20 - 1/30 = (4+3-2)/60 = 5/60 = 1/12
 
-In 5 hours: 5 Ãâ€â€� 1/12 = 5/12 filled
+In 5 hours: 5 × 1/12 = 5/12 filled
 
 Remaining = 1 - 5/12 = 7/12
 
 Combined (A+B) 1 hour = 1/15 + 1/20 = 7/60
 
-Time needed = (7/12) / (7/60) = (7/12) Ãâ€â€� (60/7) = 5 hours
+Time needed = (7/12) / (7/60) = (7/12) × (60/7) = 5 hours
 
 **Answer: 5 hours**
 
@@ -1902,7 +1903,7 @@ Available digits for thousands place: {5, 6, 7, 8} = 4 choices
 
 Remaining 3 positions must be filled with remaining 4 digits: âÂÂ�´P₃ = 4!/(4-3)! = 24 ways
 
-Total = 4 Ãâ€â€� 24 = 96
+Total = 4 × 24 = 96
 
 **Answer: 96**
 
@@ -1923,7 +1924,7 @@ Cross-multiplying: 3(3x + 6) = 2(5x + 6)
 
 x = 6
 
-A's present age = 3 Ãâ€â€� 6 = 18 years
+A's present age = 3 × 6 = 18 years
 
 **Answer: 18 years**
 
@@ -1934,7 +1935,7 @@ The average weight of 8 people increases by 2.5 kg when a new person replaces on
 
 **Solution:**
 
-Total increase in weight = 8 Ãâ€â€� 2.5 = 20 kg
+Total increase in weight = 8 × 2.5 = 20 kg
 
 The new person must weigh 20 kg more than the person replaced.
 
@@ -1951,13 +1952,13 @@ A sum of money doubles itself in 5 years at simple interest. In how many years w
 
 For doubling: SI = Principal = P
 
-P = (P Ãâ€â€� R Ãâ€â€� 5) / 100 → R = 20%
+P = (P × R × 5) / 100 → R = 20%
 
 For quadrupling: Amount = 4P, so SI = 3P
 
-3P = (P Ãâ€â€� 20 Ãâ€â€� T) / 100
+3P = (P × 20 × T) / 100
 
-T = (3P Ãâ€â€� 100) / (P Ãâ€â€� 20) = 15 years
+T = (3P × 100) / (P × 20) = 15 years
 
 **Answer: 15 years**
 
@@ -1982,9 +1983,9 @@ Substituting: (12v + 240) / v = 36
 
 v = 10 m/s
 
-Converting to km/h: 10 Ãâ€â€� (18/5) = 36 km/h
+Converting to km/h: 10 × (18/5) = 36 km/h
 
-L = 12 Ãâ€â€� 10 = 120 m
+L = 12 × 10 = 120 m
 
 **Answer: Length = 120 m, Speed = 36 km/h**
 
@@ -1995,7 +1996,7 @@ A 20-liter mixture contains milk and water in the ratio 3:2. How much milk shoul
 
 **Solution:**
 
-Current: Milk = (3/5) Ãâ€â€� 20 = 12 L, Water = (2/5) Ãâ€â€� 20 = 8 L
+Current: Milk = (3/5) × 20 = 12 L, Water = (2/5) × 20 = 8 L
 
 Let x liters of milk be added.
 
@@ -2029,7 +2030,7 @@ A fair die is rolled twice. What is the probability that the sum of the two numb
 
 **Solution:**
 
-Total outcomes = 6 Ãâ€â€� 6 = 36
+Total outcomes = 6 × 6 = 36
 
 Sums divisible by 3: 3, 6, 9, 12
 
@@ -2062,7 +2063,7 @@ Student 2: 0.45M = P + 25
 
 Subtracting: 0.10M = 40 → M = 400
 
-From first equation: 0.35 Ãâ€â€� 400 = P - 15 → 140 = P - 15 → P = 155
+From first equation: 0.35 × 400 = P - 15 → 140 = P - 15 → P = 155
 
 **Answer: Maximum marks = 400, Passing marks = 155**
 
@@ -2073,9 +2074,9 @@ From first equation: 0.35 Ãâ€â€� 400 = P - 15 → 140 = P - 15 → P = 
 
 **Solution:**
 
-Total work = 20 Ãâ€â€� 15 = 300 man-days
+Total work = 20 × 15 = 300 man-days
 
-Work done in first 5 days = 20 Ãâ€â€� 5 = 100 man-days
+Work done in first 5 days = 20 × 5 = 100 man-days
 
 Remaining work = 300 - 100 = 200 man-days
 
@@ -2096,19 +2097,19 @@ What is the smallest 4-digit number that is divisible by 6, 8, and 15?
 
 LCM of 6, 8, 15:
 
-6 = 2 Ãâ€â€� 3
+6 = 2 × 3
 
 8 = 2³
 
-15 = 3 Ãâ€â€� 5
+15 = 3 × 5
 
-LCM = 2³ Ãâ€â€� 3 Ãâ€â€� 5 = 120
+LCM = 2³ × 3 × 5 = 120
 
 Smallest 4-digit number = 1000
 
 1000 ÷ 120 = 8.33...
 
-Next multiple: 9 Ãâ€â€� 120 = 1080
+Next multiple: 9 × 120 = 1080
 
 **Answer: 1080**
 
@@ -2123,9 +2124,9 @@ Total letters = 11
 
 M: 1, I: 4, S: 4, P: 2
 
-Number of distinct arrangements = 11! / (4! Ãâ€â€� 4! Ãâ€â€� 2! Ãâ€â€� 1!)
+Number of distinct arrangements = 11! / (4! × 4! × 2! × 1!)
 
-= 39916800 / (24 Ãâ€â€� 24 Ãâ€â€� 2 Ãâ€â€� 1)
+= 39916800 / (24 × 24 × 2 × 1)
 
 = 39916800 / 1152
 
@@ -2159,9 +2160,9 @@ The average of 5 numbers is 24. If one number is excluded, the average of the re
 
 **Solution:**
 
-Sum of 5 numbers = 5 Ãâ€â€� 24 = 120
+Sum of 5 numbers = 5 × 24 = 120
 
-Sum of 4 numbers = 4 Ãâ€â€� 20 = 80
+Sum of 4 numbers = 4 × 20 = 80
 
 Excluded number = 120 - 80 = 40
 
@@ -2180,7 +2181,7 @@ SP per orange = 120/12 = ₹10
 
 CP per orange = SP / (1 + Profit%) = 10 / 1.20 = ₹25/3
 
-For ₹100: Number of oranges = 100 / (25/3) = 100 Ãâ€â€� 3/25 = 12
+For ₹100: Number of oranges = 100 / (25/3) = 100 × 3/25 = 12
 
 **Answer: 12 oranges**
 
@@ -2385,15 +2386,15 @@ Distance from (0,0): √((-8)² + 6²) = √(64 + 36) = √100 = 10 km
 ### PYQ-29 (GATE 2025) → Blood Relations
 
 
-A + B means A is the father of B. A - B means A is the mother of B. A Ãâ€â€� B means A is the brother of B. A ÷ B means A is the sister of B.
+A + B means A is the father of B. A - B means A is the mother of B. A × B means A is the brother of B. A ÷ B means A is the sister of B.
 
-In the expression P + Q Ãâ€â€� R - S, how is P related to S?
+In the expression P + Q × R - S, how is P related to S?
 
 **Solution:**
 
 P + Q → P is father of Q
 
-Q Ãâ€â€� R → Q is brother of R (so Q and R are siblings)
+Q × R → Q is brother of R (so Q and R are siblings)
 
 R - S → R is mother of S
 
@@ -2448,7 +2449,7 @@ If C at 3, E at 2:
 
 Positions: 1:A, 2:E, 3:C, 4:D, 5:B, 6:F
 
-F not adjacent to B: B at 5, adjacent are 4(D) and 6(F). F at 6 → adjacent! âœâ€â€�
+F not adjacent to B: B at 5, adjacent are 4(D) and 6(F). F at 6 → adjacent! âœ—
 
 If C at 5 (but 5 is B).
 
@@ -2607,7 +2608,7 @@ I. No gold is stone: Does NOT follow. Gold is a subset of metals (some metals ar
 
 If some metals are gold, then gold ⊆ metal. No stones = metals, so no stones = gold. So no gold is stone. ✓
 
-II. Some stones are gold: Does NOT follow as established above. âœâ€â€�
+II. Some stones are gold: Does NOT follow as established above. âœ—
 
 **Answer: Only I follows**
 
@@ -2742,7 +2743,7 @@ So: 1:D, 2:A, 3:?, 4:C, 5:B, 6:?, 7:?
 
 A adjacent to G: G at 1 or 3. Position 1 is D. So G at 3.
 
-E between F and G: G at 3. Adjacent to G: 2(A), 4(C). Both taken. âœâ€â€�
+E between F and G: G at 3. Adjacent to G: 2(A), 4(C). Both taken. âœ—
 
 Try D at 7:
 A at 2, C at 4, D at 7.
@@ -2763,7 +2764,7 @@ OK let's go with D at 7, B at 4:
 
 A adjacent to G → G at 2 or 7(no). G at 2.
 
-E between F and G: G at 2. Adjacent: 1(A), 3(C). Both taken. âœâ€â€�
+E between F and G: G at 2. Adjacent: 1(A), 3(C). Both taken. âœ—
 
 This is very constrained. The problem may have been designed with a specific interpretation of "opposite" in a 7-circle. In many GATE problems, "opposite" in an odd-circle means directly across with equal number of persons on each side.
 
@@ -2855,7 +2856,7 @@ D) Sparse, unsure
 
 The word "despite" indicates a contrast. The first blank should describe strong evidence, and the second blank should describe the jury's continued doubt despite that evidence.
 
-A) "Convincing evidence, convinced" → no contrast (they agree) âœâ€â€�
+A) "Convincing evidence, convinced" → no contrast (they agree) âœ—
 
 B) "Overwhelming evidence, unconvinced" → contrast ✓ (despite strong evidence, still unconvinced)
 
@@ -3157,7 +3158,7 @@ A names the process.
 ### PYQ-51 (GATE 2019) → Cube Painting
 
 
-A 4 Ãâ€â€� 4 Ãâ€â€� 4 cube is painted entirely red on all six faces and then cut into 64 unit cubes. How many unit cubes have exactly one face painted?
+A 4 × 4 × 4 cube is painted entirely red on all six faces and then cut into 64 unit cubes. How many unit cubes have exactly one face painted?
 
 **Solution:**
 
@@ -3169,7 +3170,7 @@ Each face has (n-2)² = (4-2)² = 4 cubes with only one face painted
 
 Total faces = 6
 
-Total = 6 Ãâ€â€� 4 = 24
+Total = 6 × 4 = 24
 
 Formula verification: 6(n-2)² = 6(2)² = 24 ✓
 
@@ -3184,17 +3185,17 @@ Find the next term in the series: 3, 12, 27, 48, 75, ?
 
 Look at the pattern:
 
-3 = 3 Ãâ€â€� 1²
+3 = 3 × 1²
 
-12 = 3 Ãâ€â€� 2²
+12 = 3 × 2²
 
-27 = 3 Ãâ€â€� 3²
+27 = 3 × 3²
 
-48 = 3 Ãâ€â€� 4²
+48 = 3 × 4²
 
-75 = 3 Ãâ€â€� 5²
+75 = 3 × 5²
 
-Next term = 3 Ãâ€â€� 6² = 3 Ãâ€â€� 36 = 108
+Next term = 3 × 6² = 3 × 36 = 108
 
 **Answer: 108**
 
@@ -3426,7 +3427,7 @@ How many holes appear on the paper and at what positions?
 
 After step 1 (horizontal fold): 2 layers.
 
-After step 2 (vertical fold): 4 layers (2 Ãâ€â€� 2).
+After step 2 (vertical fold): 4 layers (2 × 2).
 
 The center of the folded paper corresponds to 4 different locations on the original paper (one in each quadrant).
 
@@ -3436,7 +3437,7 @@ If the original paper has coordinates (0,0) at bottom-left and (W,H) at top-righ
 
 (W/4, H/4), (3W/4, H/4), (W/4, 3H/4), (3W/4, 3H/4)
 
-These form a symmetric pattern in a 2Ãâ€â€�2 grid.
+These form a symmetric pattern in a 2×2 grid.
 
 **Answer: 4 holes, one in each quadrant at positions that are one-quarter from each edge.**
 
@@ -3592,8 +3593,8 @@ This section provides 50 additional PYQs spanning GATE 2010-2018, covering 20 Qu
 A shopkeeper allows a discount of 10% on the marked price of an item but still makes a profit of 20%. If the marked price is ₹500, what is the cost price?
 
 **Answer:**
-Marked Price = ₹500. Discount = 10%, so Selling Price = 500 Ãâ€â€� 0.9 = ₹450.
-Profit = 20%, so SP = CP Ãâ€â€� 1.2 → CP = 450 / 1.2 = ₹375.
+Marked Price = ₹500. Discount = 10%, so Selling Price = 500 × 0.9 = ₹450.
+Profit = 20%, so SP = CP × 1.2 → CP = 450 / 1.2 = ₹375.
 
 **Answer: ₹375**
 
@@ -3603,8 +3604,8 @@ Profit = 20%, so SP = CP Ãâ€â€� 1.2 → CP = 450 / 1.2 = ₹375.
 The average of 5 numbers is 27. If one number is excluded, the average becomes 25. What is the excluded number?
 
 **Answer:**
-Sum of 5 numbers = 5 Ãâ€â€� 27 = 135.
-Sum of 4 numbers = 4 Ãâ€â€� 25 = 100.
+Sum of 5 numbers = 5 × 27 = 135.
+Sum of 4 numbers = 4 × 25 = 100.
 Excluded number = 135 − 100 = 35.
 
 **Answer: 35**
@@ -3616,7 +3617,7 @@ A train 150 m long crosses a platform 250 m long in 24 seconds. What is the spee
 
 **Answer:**
 Total distance = 150 + 250 = 400 m. Time = 24 s.
-Speed = 400 / 24 = 50/3 m/s = (50/3) Ãâ€â€� (18/5) = 60 km/h.
+Speed = 400 / 24 = 50/3 m/s = (50/3) × (18/5) = 60 km/h.
 
 **Answer: 60 km/h**
 
@@ -3647,8 +3648,8 @@ Cyclicity of 7: 7¹→7, 7²→9, 7³→3, 7âÂÂ�´→1, then repeats every 
 A invests ₹10,000 at 10% p.a. simple interest for 2 years. B invests the same amount at 10% p.a. compound interest (compounded annually) for 2 years. What is the difference in the amounts received by A and B?
 
 **Answer:**
-A: SI = (10000 Ãâ€â€� 10 Ãâ€â€� 2) / 100 = ₹2000. Amount = ₹12,000.
-B: CI = 10000 Ãâ€â€� (1 + 0.10)² = 10000 Ãâ€â€� 1.21 = ₹12,100.
+A: SI = (10000 × 10 × 2) / 100 = ₹2000. Amount = ₹12,000.
+B: CI = 10000 × (1 + 0.10)² = 10000 × 1.21 = ₹12,100.
 Difference = 12100 − 12000 = ₹100.
 
 **Answer: ₹100**
@@ -3661,9 +3662,9 @@ A can do a piece of work in 12 days, B in 15 days. They work together for 4 days
 **Answer:**
 A's 1-day work = 1/12, B's = 1/15.
 Combined 1-day work = 1/12 + 1/15 = (5+4)/60 = 9/60 = 3/20.
-Work done in 4 days = 4 Ãâ€â€� 3/20 = 12/20 = 3/5.
+Work done in 4 days = 4 × 3/20 = 12/20 = 3/5.
 Remaining = 1 − 3/5 = 2/5.
-B's time = (2/5) / (1/15) = (2/5) Ãâ€â€� 15 = 6 days.
+B's time = (2/5) / (1/15) = (2/5) × 15 = 6 days.
 
 **Answer: 6 days**
 
@@ -3733,8 +3734,8 @@ The question as stated is incomplete (multiple possible remainders). In GATE con
 In a class of 80 students, 60% passed in Mathematics, 50% passed in English, and 30% passed in both. How many students failed in both subjects?
 
 **Answer:**
-Passed Math = 80 Ãâ€â€� 0.6 = 48. Passed English = 80 Ãâ€â€� 0.5 = 40.
-Passed both = 80 Ãâ€â€� 0.3 = 24.
+Passed Math = 80 × 0.6 = 48. Passed English = 80 × 0.5 = 40.
+Passed both = 80 × 0.3 = 24.
 Passed at least one = 48 + 40 − 24 = 64.
 Failed both = 80 − 64 = 16.
 
@@ -3747,7 +3748,7 @@ A sum of money doubles itself in 8 years at simple interest. What is the rate of
 
 **Answer:**
 Let principal = P. Amount = 2P, so SI = P.
-SI = P Ãâ€â€� R Ãâ€â€� 8 / 100. So P = P Ãâ€â€� R Ãâ€â€� 8 / 100 → R = 100/8 = 12.5%.
+SI = P × R × 8 / 100. So P = P × R × 8 / 100 → R = 100/8 = 12.5%.
 
 **Answer: 12.5%**
 
@@ -3774,7 +3775,7 @@ Let incomes: A = 3x, B = 4x. Expenditures: A = 5y, B = 7y.
 Savings: 3x − 5y = 5000 and 4x − 7y = 5000.
 Subtracting: (4x−7y) − (3x−5y) = 0 → x − 2y = 0 → x = 2y.
 Substitute: 3(2y) − 5y = 5000 → 6y − 5y = 5000 → y = 5000, x = 10000.
-A's income = 3 Ãâ€â€� 10000 = ₹30,000.
+A's income = 3 × 10000 = ₹30,000.
 
 **Answer: ₹30,000**
 
@@ -3795,11 +3796,11 @@ Cyclicity of 2âÂÂ�¿ mod 5: 2¹→2, 2²→4, 2³→3, 2âÂÂ�´→1 (re
 A shopkeeper sells an item at a profit of 25%. If the cost price increases by 20%, by what percentage should he increase the selling price to maintain the same profit percentage?
 
 **Answer:**
-Assume CP = ₹100. Original SP = 100 Ãâ€â€� 1.25 = ₹125.
-New CP = 100 Ãâ€â€� 1.2 = ₹120. Required profit = 25%.
-New SP = 120 Ãâ€â€� 1.25 = ₹150.
+Assume CP = ₹100. Original SP = 100 × 1.25 = ₹125.
+New CP = 100 × 1.2 = ₹120. Required profit = 25%.
+New SP = 120 × 1.25 = ₹150.
 Increase in SP = 150 − 125 = ₹25.
-Percentage increase = (25/125) Ãâ€â€� 100 = 20%.
+Percentage increase = (25/125) × 100 = 20%.
 
 **Answer: 20%**
 
@@ -3884,13 +3885,13 @@ m=14→1+4=5, e=22→2+2=4, a=26→2+6=8, n=13→1+3=4, s=8→8. 54848. No.
 Given the ambiguity, let me use a different well-known GATE problem:
 
 **Q73. [GATE 2011]**
-If 3Ãâ€â€�5 = 64, 4Ãâ€â€�6 = 100, then 5Ãâ€â€�7 = ?
+If 3×5 = 64, 4×6 = 100, then 5×7 = ?
 
 **Answer:**
-3Ãâ€â€�5 = 15, but output is 64 = 8² = (3+5)².
-4Ãâ€â€�6 = 24, output 100 = 10² = (4+6)².
-So pattern: aÃâ€â€�b = (a+b)².
-5Ãâ€â€�7 = (5+7)² = 12² = 144.
+3×5 = 15, but output is 64 = 8² = (3+5)².
+4×6 = 24, output 100 = 10² = (4+6)².
+So pattern: a×b = (a+b)².
+5×7 = (5+7)² = 12² = 144.
 
 **Answer: 144**
 
@@ -3967,7 +3968,7 @@ What is the next number in the series: 2, 6, 12, 20, 30, ?
 **Answer:**
 Differences: 4, 6, 8, 10. Pattern: increasing by 2 each time.
 Next difference = 12. Next number = 30 + 12 = 42.
-Also: 1Ãâ€â€�2=2, 2Ãâ€â€�3=6, 3Ãâ€â€�4=12, 4Ãâ€â€�5=20, 5Ãâ€â€�6=30, 6Ãâ€â€�7=42.
+Also: 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, 6×7=42.
 
 **Answer: 42**
 
@@ -4053,10 +4054,10 @@ So next term = M10R.
 ---
 
 **Q84. [GATE 2017]**
-How many squares are there in a 4Ãâ€â€�4 grid?
+How many squares are there in a 4×4 grid?
 
 **Answer:**
-Number of squares in an nÃâ€â€�n grid = Σᵢ₌â‚ÂÂ�âÂÂ�¿ i² = 1² + 2² + 3² + 4² = 1 + 4 + 9 + 16 = 30.
+Number of squares in an n×n grid = Σᵢ₌â‚ÂÂ�âÂÂ�¿ i² = 1² + 2² + 3² + 4² = 1 + 4 + 9 + 16 = 30.
 
 **Answer: 30**
 
@@ -4066,7 +4067,7 @@ Number of squares in an nÃâ€â€�n grid = Σᵢ₌â‚ÂÂ�âÂÂ�¿
 A clock shows the time as 3:15. What is the angle between the hour hand and the minute hand?
 
 **Answer:**
-At 3:15, minute hand is at 3 (90° from 12). Hour hand has moved 15/60 = 1/4 of the way from 3 to 4. Each hour = 30°. So hour hand is at 90° + (1/4 Ãâ€â€� 30°) = 90° + 7.5° = 97.5° from 12.
+At 3:15, minute hand is at 3 (90° from 12). Hour hand has moved 15/60 = 1/4 of the way from 3 to 4. Each hour = 30°. So hour hand is at 90° + (1/4 × 30°) = 90° + 7.5° = 97.5° from 12.
 Angle between hands = |97.5° − 90°| = 7.5°.
 
 **Answer: 7.5°**
@@ -4227,7 +4228,7 @@ For paper folding problems: The cut pattern will be mirrored along each fold lin
 ---
 
 **Q98. [GATE 2015]**
-Count the number of triangles in the following figure (a standard 4Ãâ€â€�4 triangular grid figure).
+Count the number of triangles in the following figure (a standard 4×4 triangular grid figure).
 
 **Answer:**
 A common GATE problem: For a triangular grid with base divided into n segments, total triangles = n². For n=4: 4² = 16 small triangles. If the figure includes larger triangles formed by combining units, the count varies.
@@ -4264,28 +4265,28 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 
 #### Trap 1: Profit/Loss Base Confusion
 **Trap:** Calculating profit percentage on Selling Price instead of Cost Price.
-**Example:** A shopkeeper buys at ₹80, sells at ₹100. A student says profit = 20% (20/100). **Correct:** Profit% = (20/80) Ãâ€â€� 100 = 25%.
+**Example:** A shopkeeper buys at ₹80, sells at ₹100. A student says profit = 20% (20/100). **Correct:** Profit% = (20/80) × 100 = 25%.
 **Rule:** Profit% and Loss% are ALWAYS calculated on Cost Price.
 
 #### Trap 2: Discount Base Confusion
 **Trap:** Calculating discount percentage on Cost Price instead of Marked Price.
-**Example:** MP = ₹500, SP = ₹400. Student: Discount = 100/400 Ãâ€â€� 100 = 25%. **Correct:** Discount% = (100/500) Ãâ€â€� 100 = 20%.
+**Example:** MP = ₹500, SP = ₹400. Student: Discount = 100/400 × 100 = 25%. **Correct:** Discount% = (100/500) × 100 = 20%.
 **Rule:** Discount% is ALWAYS calculated on Marked Price.
 
 #### Trap 3: Percentage "Increase/Decrease" Reference
 **Trap:** Misidentifying the base for percentage change.
-**Example:** "A increases from 100 to 120. By what % did A increase?" Wrong: 20/120 Ãâ€â€� 100 = 16.67%. **Correct:** 20/100 Ãâ€â€� 100 = 20%.
+**Example:** "A increases from 100 to 120. By what % did A increase?" Wrong: 20/120 × 100 = 16.67%. **Correct:** 20/100 × 100 = 20%.
 **Rule:** Percentage change is relative to the original/initial value.
 
 #### Trap 4: Successive Percentage Change
 **Trap:** Adding percentages directly instead of compounding.
 **Example:** Price increases by 10%, then 20%. Total increase is NOT 30%.
-**Correct:** 1.10 Ãâ€â€� 1.20 = 1.32 → 32% increase.
+**Correct:** 1.10 × 1.20 = 1.32 → 32% increase.
 **Formula:** Net % change = a + b + (ab/100).
 
 #### Trap 5: Time-Speed-Distance Unit Conversion
 **Trap:** Mixing m/s and km/h without conversion.
-**Example:** Speed = 20 m/s. Student writes 20 km/h. **Correct:** 20 Ãâ€â€� (18/5) = 72 km/h.
+**Example:** Speed = 20 m/s. Student writes 20 km/h. **Correct:** 20 × (18/5) = 72 km/h.
 **Rule:** m/s → km/h: multiply by 18/5. km/h → m/s: multiply by 5/18.
 
 #### Trap 6: Average Speed ≠ Arithmetic Mean
@@ -4309,7 +4310,7 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 
 #### Trap 10: "At Least" Probability
 **Trap:** Forgetting to use the complement.
-**Example:** Probability of at least one head in 3 coin tosses. Wrong: 1/2 Ãâ€â€� 3 = 1.5. **Correct:** P(at least one H) = 1 − P(no H) = 1 − (1/2)³ = 7/8.
+**Example:** Probability of at least one head in 3 coin tosses. Wrong: 1/2 × 3 = 1.5. **Correct:** P(at least one H) = 1 − P(no H) = 1 − (1/2)³ = 7/8.
 
 #### Trap 11: "OR" in Probability (Mutual Exclusivity)
 **Trap:** Adding probabilities without checking overlap.
@@ -4317,12 +4318,12 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 
 #### Trap 12: "Successive Discounts" → Not Additive
 **Trap:** Adding successive discounts.
-**Example:** Two discounts: 20% and 10%. Wrong: 30% off. **Correct:** Net price = MP Ãâ€â€� 0.8 Ãâ€â€� 0.9 = 0.72MP → 28% discount.
+**Example:** Two discounts: 20% and 10%. Wrong: 30% off. **Correct:** Net price = MP × 0.8 × 0.9 = 0.72MP → 28% discount.
 **Formula:** Effective discount = a + b − ab/100.
 
 #### Trap 13: "Mixing Percentages and Absolute Values"
 **Trap:** Applying a percentage to the wrong base.
-**Example:** Salary was ₹50,000, now ₹60,000. My friend says I got a 10% hike. **Correct:** (10000/50000) Ãâ€â€� 100 = 20%.
+**Example:** Salary was ₹50,000, now ₹60,000. My friend says I got a 10% hike. **Correct:** (10000/50000) × 100 = 20%.
 
 #### Trap 14: Ages → Past/Future Confusion
 **Trap:** Misreading "x years ago" vs "x years hence."
@@ -4334,7 +4335,7 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 
 #### Trap 16: Clock Angle → Hour Hand Movement
 **Trap:** Forgetting the hour hand moves continuously.
-**Example:** At 3:30, student says angle = 0° (both point to 6 and 3). **Correct:** Minute hand at 6 (180°), hour hand at 3 + 30/60 Ãâ€â€� 30° = 105°. Angle = |180 − 105| = 75°.
+**Example:** At 3:30, student says angle = 0° (both point to 6 and 3). **Correct:** Minute hand at 6 (180°), hour hand at 3 + 30/60 × 30° = 105°. Angle = |180 − 105| = 75°.
 
 #### Trap 17: Calendar → Odd Days Count
 **Trap:** Not accounting for leap years correctly.
@@ -4351,7 +4352,7 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 
 #### Trap 20: "Loss" vs "Loss Percentage"
 **Trap:** Directly subtracting percentages.
-**Example:** Cost = ₹200, Sold = ₹150. Student says loss = 25%. **Correct:** Loss = ₹50, Loss% = 50/200 Ãâ€â€� 100 = 25%. (Lucky here, but the concept matters when mixing absolute and percent.)
+**Example:** Cost = ₹200, Sold = ₹150. Student says loss = 25%. **Correct:** Loss = ₹50, Loss% = 50/200 × 100 = 25%. (Lucky here, but the concept matters when mixing absolute and percent.)
 
 ---
 
@@ -4374,13 +4375,13 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 - **Fraction Equivalents:**
   - 12.5% = 1/8, 25% = 1/4, 33.33% = 1/3, 50% = 1/2
   - 66.67% = 2/3, 75% = 3/4, 20% = 1/5, 60% = 3/5
-- **Reverse Percentage:** If x% of a number is N, the number = N Ãâ€â€� 100/x.
+- **Reverse Percentage:** If x% of a number is N, the number = N × 100/x.
 - **Successive Change:** a + b + ab/100 for two changes. For three: a+b+c + (ab+bc+ca)/100 + abc/10000.
 
 #### Profit & Loss
-- **SP = CP Ãâ€â€� (1 ± P%/100)** where + for profit, − for loss.
+- **SP = CP × (1 ± P%/100)** where + for profit, − for loss.
 - **Two items sold at same SP → one with x% profit, other with x% loss: Overall = net loss of x²/100%.**
-- **Marked Price → Discount → SP → Profit: Chain backwards: CP = MP Ãâ€â€� (1−d%) / (1+p%).**
+- **Marked Price → Discount → SP → Profit: Chain backwards: CP = MP × (1−d%) / (1+p%).**
 
 #### Ratio & Proportion
 - **Componendo-Dividendo:** If a/b = c/d, then (a+b)/(a−b) = (c+d)/(c−d).
@@ -4398,16 +4399,16 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 #### Time & Work
 - **If A does a job in n days and B in m days, together = nm/(n+m) days.**
 - **If A takes n days more than A+B together, and B takes m days more:** A+B take √(mn) days.
-- **Work = Efficiency Ãâ€â€� Time.** Efficiency is inversely proportional to days.
+- **Work = Efficiency × Time.** Efficiency is inversely proportional to days.
 
 #### Mixtures & Alligations
 - **Alligation Rule:** (Cheaper quantity) / (Dearer quantity) = (Mean Price − Cheaper) / (Dearer − Mean).
-- **Replacement formula:** After n replacements of V units from a mixture of M total volume, original content remaining = M Ãâ€â€� [(M−V)/M]âÂÂ�¿.
+- **Replacement formula:** After n replacements of V units from a mixture of M total volume, original content remaining = M × [(M−V)/M]âÂÂ�¿.
 
 #### Probability
 - **P(A∪B) = P(A) + P(B) − P(A∩B)**
-- **P(A∩B) = P(A) Ãâ€â€� P(B)** for independent events
-- **Bayes:** P(A|B) = P(B|A) Ãâ€â€� P(A) / P(B)
+- **P(A∩B) = P(A) × P(B)** for independent events
+- **Bayes:** P(A|B) = P(B|A) × P(A) / P(B)
 - **Expected value:** E(X) = Σ xP(x)
 - **"At least one":** Use complement: 1 − P(none).
 
@@ -4424,10 +4425,10 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 - **Age problems:** If average age of a group increases by d when a person of age x joins, new member's age = old average + d(n+1).
 
 #### Data Interpretation
-- **Percentage change between two periods = (New − Old)/Old Ãâ€â€� 100.**
+- **Percentage change between two periods = (New − Old)/Old × 100.**
 - **Ratio comparison:** Cross-multiply to compare ratios quickly.
 - **Approximation:** When options are far apart (GATE often), approximate to save time.
-- **Compound growth:** Final = Initial Ãâ€â€� (1 + r)âÂÂ�¿. Use log or approximation for n.
+- **Compound growth:** Final = Initial × (1 + r)âÂÂ�¿. Use log or approximation for n.
 
 ---
 
@@ -4437,16 +4438,16 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 | Topic | Formula | Notes |
 |-------|---------|-------|
 | **Percentage** | x% of y = y% of x = xy/100 | Commutative property |
-| | % increase = (increase/original) Ãâ€â€� 100 | Base = original value |
-| | % decrease = (decrease/original) Ãâ€â€� 100 | Base = original value |
+| | % increase = (increase/original) × 100 | Base = original value |
+| | % decrease = (decrease/original) × 100 | Base = original value |
 | | Successive % change: a + b + ab/100 | For two changes |
-| **Profit & Loss** | Profit% = (Profit/CP) Ãâ€â€� 100 | Always on CP |
-| | Loss% = (Loss/CP) Ãâ€â€� 100 | Always on CP |
-| | SP = CP Ãâ€â€� (1 + P%/100) | When profit |
-| | SP = CP Ãâ€â€� (1 − L%/100) | When loss |
-| | Discount% = (Discount/MP) Ãâ€â€� 100 | Always on MP |
-| | MP Ãâ€â€� (1 − d%) = SP | Discount calculation |
-| **Interest** | SI = (P Ãâ€â€� R Ãâ€â€� T)/100 | Simple Interest |
+| **Profit & Loss** | Profit% = (Profit/CP) × 100 | Always on CP |
+| | Loss% = (Loss/CP) × 100 | Always on CP |
+| | SP = CP × (1 + P%/100) | When profit |
+| | SP = CP × (1 − L%/100) | When loss |
+| | Discount% = (Discount/MP) × 100 | Always on MP |
+| | MP × (1 − d%) = SP | Discount calculation |
+| **Interest** | SI = (P × R × T)/100 | Simple Interest |
 | | CI = P[(1 + R/100)ᵀ − 1] | Compound Interest |
 | | Amount (CI) = P(1 + R/100)ᵀ | CI formula |
 | | CI half-yearly = P(1 + R/200)²ᵀ | Semi-annual compounding |
@@ -4475,9 +4476,9 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 | **Probability** | P(E) = n(E)/n(S) | Classical definition |
 | | P(not E) = 1 − P(E) | Complement |
 | | P(A∪B) = P(A)+P(B)−P(A∩B) | Union |
-| | P(A∩B) = P(A)Ãâ€â€�P(B) | Independent events |
+| | P(A∩B) = P(A)×P(B) | Independent events |
 | | P(A|B) = P(A∩B)/P(B) | Conditional |
-| | P(A|B) = P(B|A)Ãâ€â€�P(A)/P(B) | Bayes Theorem |
+| | P(A|B) = P(B|A)×P(A)/P(B) | Bayes Theorem |
 | **Averages** | A = Sum/n | Simple average |
 | | Wt avg = Σwᵢxᵢ/Σwᵢ | Weighted average |
 | | New avg = (nA + x)/(n+1) | Adding one element |
@@ -4495,11 +4496,11 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 | **Clock** | Angle = |30H − 11M/2| | H = hour, M = minutes |
 | | Minute hand speed = 6°/min | |
 | | Hour hand speed = 0.5°/min | |
-| **Calendar** | Odd days in a year = 1 (365 = 52Ãâ€â€�7 + 1) | |
-| | Leap year odd days = 2 | 366 = 52Ãâ€â€�7 + 2 |
+| **Calendar** | Odd days in a year = 1 (365 = 52×7 + 1) | |
+| | Leap year odd days = 2 | 366 = 52×7 + 2 |
 | | Century has 5 odd days (100yrs) | 100 mod 7 = 2, but leap → 5 |
 | | 400 years have 0 odd days | Monday repeats every 400yrs |
-| **Cubes** | Cubes with paint on: 0 faces = (n−2)³ | nÃâ€â€�nÃâ€â€�n cube |
+| **Cubes** | Cubes with paint on: 0 faces = (n−2)³ | n×n×n cube |
 | | 1 face = 6(n−2)² | |
 | | 2 faces = 12(n−2) | |
 | | 3 faces = 8 (always for corners) | |
@@ -4638,7 +4639,7 @@ class GATEAptitudeScoreCalculator {
 Unattempted: ${this.unattempted} / ${totalQ}
 Total Score: ${score} / ${this.total1MarkQuestions + this.total2MarkQuestions * 2} max
 Accuracy: ${accuracy}%
-${score >= 10 ? '✅ Excellent score range' : score >= 5 ? '⚠ï¸Â� Average â€â€� review weak areas' : 'âÂ�Œ Needs significant improvement'}
+${score >= 10 ? '✅ Excellent score range' : score >= 5 ? '⚠ï¸Â� Average — review weak areas' : 'âÂ�Œ Needs significant improvement'}
 `;
   }
 }
@@ -4668,7 +4669,7 @@ console.log(calc.getReport());
 | 2 | If 'APPLE' is coded as 'BQQMF', how is 'MANGO' coded? | A) NBOHP, B) NBPHP, C) OBOHP, D) NCOHP | **A** |
 | 3 | In a class, 60% are boys and 40% are girls. If 30% of boys and 20% of girls play cricket, what percentage of the class plays cricket? | A) 24%, B) 26%, C) 28%, D) 30% | **B** |
 | 4 | Statements: All cats are dogs. No dog is a cow. Conclusions: I. No cat is a cow. II. Some dogs are cats. | A) Only I follows, B) Only II follows, C) Both follow, D) Neither follows | **C** |
-| 5 | What is the odd one out: 36, 49, 64, 81, 100, 121, 144, 169? | A) 100, B) 121, C) 169, D) None of these | **A** (100 is 10², but all others are squares of primes: 6²,7²,8²,9²,11²,12²,13²; 100 = 10² where 10 is not prime, but actually 36=6², 49=7², 64=8², 81=9², 100=10², 121=11², 144=12², 169=13² â€â€� all are perfect squares. The odd one is 100 because it's the square of a composite number... actually let's reconsider. 12=3x4? Actually, all are perfect squares. But 100 is 10² where 10 is composite. However, 36=6², 64=8², 81=9², 144=12² are also composites. The trick: 49 is 7², 121 is 11², 169 is 13² â€â€� these are squares of primes. So 100 is fine. Actually 12, 49, 64, 81, 100, 121, 144, 169 â€â€� all squares. 12 is not a square! So odd one is 12. Correcting: Answer is **A) 12**.) |
+| 5 | What is the odd one out: 36, 49, 64, 81, 100, 121, 144, 169? | A) 100, B) 121, C) 169, D) None of these | **A** (100 is 10², but all others are squares of primes: 6²,7²,8²,9²,11²,12²,13²; 100 = 10² where 10 is not prime, but actually 36=6², 49=7², 64=8², 81=9², 100=10², 121=11², 144=12², 169=13² — all are perfect squares. The odd one is 100 because it's the square of a composite number... actually let's reconsider. 12=3x4? Actually, all are perfect squares. But 100 is 10² where 10 is composite. However, 36=6², 64=8², 81=9², 144=12² are also composites. The trick: 49 is 7², 121 is 11², 169 is 13² — these are squares of primes. So 100 is fine. Actually 12, 49, 64, 81, 100, 121, 144, 169 — all squares. 12 is not a square! So odd one is 12. Correcting: Answer is **A) 12**.) |
 
 ## Exercises
 

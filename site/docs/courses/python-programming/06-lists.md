@@ -5,6 +5,7 @@ title: "Chapter 6: Lists"
 sidebar_label: "Chapter 6: Lists"
 sidebar_position: 6
 ---
+
 # Chapter 6: Lists
 
 

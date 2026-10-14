@@ -5,6 +5,7 @@ title: "Chapter 12 — AI Observability & Debugging"
 sidebar_label: "Chapter 12 — AI Observability & Debugging"
 sidebar_position: 13
 ---
+
 # Chapter 12 — AI Observability & Debugging
 
 **Duration:** 1.5 weeks, ~18 hours

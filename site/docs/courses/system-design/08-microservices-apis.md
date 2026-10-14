@@ -5,6 +5,7 @@ title: "Chapter 8: Microservices and API Design"
 sidebar_label: "Chapter 8: Microservices and API Design"
 sidebar_position: 8
 ---
+
 # Chapter 8: Microservices and API Design
 > **Previous:** [07 Message Queues](./07-message-queues.md) | **Next:** [09 Distributed Coordination](./09-distributed-coordination.md)
 

@@ -5,6 +5,7 @@ title: "Visual Notes — The Math Under Every Model"
 sidebar_label: "Visual Notes"
 sidebar_position: 308
 ---
+
 # Visual Notes — The Math Under Every Model
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

@@ -5,6 +5,7 @@ title: "Number Systems & Boolean Algebra"
 sidebar_label: "Number Systems & Boolean Algebra"
 sidebar_position: 1
 ---
+
 # Number Systems & Boolean Algebra
 
 ## Learning Objectives

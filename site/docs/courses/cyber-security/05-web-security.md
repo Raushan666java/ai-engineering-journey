@@ -5,6 +5,7 @@ title: "Chapter 5: Web Security"
 sidebar_label: "Chapter 5: Web Security"
 sidebar_position: 5
 ---
+
 # Chapter 5: Web Security
 
 > **Prereq:** Chapter 4 (System & Software Security) — web apps build on OS foundations.

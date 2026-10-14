@@ -5,6 +5,7 @@ title: "Chapter 3: Logistic Regression"
 sidebar_label: "Chapter 3: Logistic Regression"
 sidebar_position: 3
 ---
+
 # Chapter 3: Logistic Regression
 
 > **Previous:** [Linear Regression](./02-linear-regression.md) | **Next:** [Decision Trees](./04-decision-trees.md)

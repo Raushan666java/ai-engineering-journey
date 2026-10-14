@@ -5,6 +5,7 @@ title: "Chapter 4: Bottom-Up Parsing"
 sidebar_label: "Chapter 4: Bottom-Up Parsing"
 sidebar_position: 4
 ---
+
 # Chapter 4: Bottom-Up Parsing
 
 **? Previous:** [Chapter 3: Top-Down Parsing](03-parsing-topdown.md) | **Next:** [Chapter 5: Syntax-Directed Translation](05-sdt.md)

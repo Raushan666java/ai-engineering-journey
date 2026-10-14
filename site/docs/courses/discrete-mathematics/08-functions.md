@@ -5,6 +5,7 @@ title: "Chapter 8: Functions"
 sidebar_label: "Chapter 8: Functions"
 sidebar_position: 8
 ---
+
 # Chapter 8: Functions
 
 > **Previous:** [Chapter 7: Relations](./07-relations.md) | **Next:** [Chapter 9: Graph Theory](./09-graph-theory.md)

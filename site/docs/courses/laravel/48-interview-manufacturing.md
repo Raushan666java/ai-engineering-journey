@@ -5,6 +5,7 @@ title: "Chapter 48: Manufacturing Interview Q&A"
 sidebar_label: "Chapter 48: Manufacturing Interview Q&A"
 sidebar_position: 48
 ---
+
 # Chapter 48: Manufacturing Interview Q&A
 
 > **Previous:** [Legal & Compliance Interview Q&A](./47-interview-legal.md) | **Next:** [PHP Interview Q&A](./49-interview-php.md)
@@ -65,11 +66,11 @@ The four types share the same `maintenance_logs` table but differ in `type`, `pr
 
 Key metrics and their Laravel calculation patterns:
 
-- **Overall Equipment Effectiveness (OEE)** = Availability Ã— Performance Ã— Quality. Availability = uptime / total time (from `MaintenanceLog.downtime_minutes`), Performance = actual output / theoretical max (`ProductionOrder.quantity_produced` / capacity), Quality = good units / total units (`(quantity_produced - quantity_defective) / quantity_produced`).
+- **Overall Equipment Effectiveness (OEE)** = Availability × Performance × Quality. Availability = uptime / total time (from `MaintenanceLog.downtime_minutes`), Performance = actual output / theoretical max (`ProductionOrder.quantity_produced` / capacity), Quality = good units / total units (`(quantity_produced - quantity_defective) / quantity_produced`).
 
 - **Yield Rate**: `ProductionOrder` model's `yieldRate()` method: `($this->quantity_produced - $this->quantity_defective) / $this->quantity_ordered`.
 
-- **Defect Rate**: Computed per production run in `QualityControlAgent::analyzeDefects()` → `(failedChecks / totalChecks) Ã— 100`, grouped by defect type and severity.
+- **Defect Rate**: Computed per production run in `QualityControlAgent::analyzeDefects()` → `(failedChecks / totalChecks) × 100`, grouped by defect type and severity.
 
 - **Mean Time Between Failures (MTBF)**: Aggregate over `Equipment`'s completed maintenance logs: total operational hours / number of failure events.
 
@@ -1015,7 +1016,7 @@ Sub-second anomaly detection requires shifting threshold evaluation to the edge 
 
 **Architecture**:
 
-1. **Edge threshold checks**: Configure the edge gateway to reject or flag readings that exceed hard thresholds (temperature > 150Â°C) before they ever reach Laravel. Only anomalous readings trigger immediate alerts; normal readings batch.
+1. **Edge threshold checks**: Configure the edge gateway to reject or flag readings that exceed hard thresholds (temperature > 150°C) before they ever reach Laravel. Only anomalous readings trigger immediate alerts; normal readings batch.
 
 2. **In-memory anomaly detection**: Ingestion workers maintain an in-memory sliding window (last 100 readings per metric per machine) using a shared Redis sorted set or a local array. Z-score calculation uses this window, not the database, achieving sub-millisecond detection.
 
@@ -1065,7 +1066,7 @@ class RealTimeAnomalyDetector
 
 3. **Alert dispatch path**: The anomaly result is available synchronously from the ingestion call. Critical alerts (`score >= 0.8`) are dispatched immediately via a dedicated queue with priority `high`. The database write for the reading itself can proceed asynchronously.
 
-This design achieves ~200Î¼s per reading for threshold checks and ~800Î¼s for full z-score evaluation, well under the 1-second SLA.
+This design achieves ~200μs per reading for threshold checks and ~800μs for full z-score evaluation, well under the 1-second SLA.
 
 ### Q18: Describe a factory automation system design that integrates Laravel with existing PLC and SCADA infrastructure.
 
@@ -1618,7 +1619,7 @@ class OverrideSupplierDataCommand extends Command
 
 ### Q26: Your factory is expanding from 10 to 100 machines. The current Laravel ingestion architecture can't keep up. How do you scale it?
 
-**Scale diagnosis**: The bottleneck is likely database write throughput. At 100 machines Ã— 200 sensors each Ã— 1 reading every 10 seconds = 2,000 readings/second. Each Eloquent `INSERT` takes ~5ms at peak, so single-threaded insertion caps at 200 reads/second.
+**Scale diagnosis**: The bottleneck is likely database write throughput. At 100 machines × 200 sensors each × 1 reading every 10 seconds = 2,000 readings/second. Each Eloquent `INSERT` takes ~5ms at peak, so single-threaded insertion caps at 200 reads/second.
 
 **Scaling strategy**:
 

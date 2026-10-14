@@ -5,6 +5,7 @@ title: "Chapter 7: Logical Reasoning and Inference"
 sidebar_label: "Chapter 7: Logical Reasoning and Inference"
 sidebar_position: 13
 ---
+
 # Chapter 7: Logical Reasoning and Inference
 
 **Previous:** [Chapter 6: Logical Agents and Propositional Logic](06-logic.md) | **Next:** [Chapter 8: Uncertainty in AI](08-uncertainty.md)

@@ -5,6 +5,7 @@ title: "Chapter 4: Data Structures — Exam Quick Revision"
 sidebar_label: "Chapter 4: Data Structures — Exam Quick Revision"
 sidebar_position: 4
 ---
+
 # Chapter 4: Data Structures — Exam Quick Revision
 
 ## Learning Objectives

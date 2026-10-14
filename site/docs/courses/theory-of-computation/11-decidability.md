@@ -5,6 +5,7 @@ title: "Chapter 11: Decidability"
 sidebar_label: "Chapter 11: Decidability"
 sidebar_position: 11
 ---
+
 # Chapter 11: Decidability
 
 > **Previous:** [Turing Machine Extensions](./10-turing-extensions.md) | **Next:** [Reducibility](./12-reducibility.md)
@@ -879,4 +880,4 @@ flowchart TD
     H -->|Yes| I["Likely decidable"]
     H -->|No| F
 ```
-
+```

@@ -5,6 +5,7 @@ title: "Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents"
 sidebar_label: "Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents"
 sidebar_position: 36
 ---
+
 # Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents
 
 > **Previous:** [Legal & Compliance Agents](./35-legal.md) | **Next:** [Enterprise Capstone — Multi-Agent Platform](./37-enterprise-capstone.md)

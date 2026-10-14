@@ -5,6 +5,7 @@ title: "Chapter 2: Agent Loop Architecture"
 sidebar_label: "Chapter 2: Agent Loop Architecture"
 sidebar_position: 2
 ---
+
 # Chapter 2: Agent Loop Architecture
 
 > **Last Updated:** June 2026 | **Estimated Reading Time:** 90 minutes

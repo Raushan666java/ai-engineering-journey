@@ -5,6 +5,7 @@ title: "Chapter 1: Database Management Systems — Exam Quick Revision"
 sidebar_label: "Chapter 1: Database Management Systems — Exam Quick Revision"
 sidebar_position: 1
 ---
+
 # Chapter 1: Database Management Systems — Exam Quick Revision
 
 ## Learning Objectives

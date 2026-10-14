@@ -5,6 +5,7 @@ title: "Java Core Interview Q&A"
 sidebar_label: "Java Core Interview Q&A"
 sidebar_position: 56
 ---
+
 # Java Core Interview Q&A
 
 > **Previous:** [Observability](./55-observability.md) | **Next:** [Spring Framework Interview Q&amp;A](./57-interview-spring.md)

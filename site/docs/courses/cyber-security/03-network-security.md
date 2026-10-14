@@ -5,6 +5,7 @@ title: "Chapter 3: Network Security"
 sidebar_label: "Chapter 3: Network Security"
 sidebar_position: 3
 ---
+
 # Chapter 3: Network Security
 
 > **Prereq:** Chapter 2 (Cryptography) → TLS, IPsec, and WPA2 rely on cryptographic algorithms.

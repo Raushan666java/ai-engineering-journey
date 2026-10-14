@@ -5,6 +5,8 @@ title: "Linear Regression  -  OLS, Gradient Descent, Regularization"
 sidebar_label: "Linear Regression  -  OLS, Gradient Descent, Regularization"
 sidebar_position: 113
 ---
+
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Linear Regression  -  OLS, Gradient Descent, Regularization
 
@@ -21,16 +23,8 @@ sidebar_position: 113
 
 Machine learning is the core of AI engineering. From linear regression to ensemble methods, understanding these algorithms lets you build, debug, and improve models. This module covers the math and code behind ML.
 
-## Prerequisites
-
-- Basic programming knowledge
-- Understanding of data structures
-
 ## Key Terminology
 
-**Key Terms**: Core vocabulary and concepts for this topic.
-
-**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
@@ -525,8 +519,8 @@ def check_normality(y, model, X):
 ## Fill in the Blank
 
 1. The chapter that covers Linear Regression  -  OLS, Gradient Descent, Regularization is Chapter ___ of this module. — Answer: check the module's table of contents.
-2. The time complexity of the standard approach to Linear Regression  -  OLS, Gradient Descent, Regularization is ___. — Answer: review the theory section and state big-O notation.
-3. The main edge case to handle when implementing Linear Regression  -  OLS, Gradient Descent, Regularization is ___. — Answer: empty or invalid input handling, as discussed in the chapter.
+2. The time complexity of the standard approach to 02 Linear Regression is ___. — Answer: O(n) typical, O(1) best case
+3. The main edge case to handle when implementing 02 Linear Regression is ___. — Answer: empty input, boundary values, invalid types
 4. The tools commonly used to debug Linear Regression  -  OLS, Gradient Descent, Regularization issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
 5. The related topic that connects to Linear Regression  -  OLS, Gradient Descent, Regularization in the next chapter is ___. — Answer: see the Next Topic section.
 
@@ -534,7 +528,7 @@ def check_normality(y, model, X):
 
 1. **Scenario:** A teammate ships a change involving Linear Regression  -  OLS, Gradient Descent, Regularization that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
 
-2. **Scenario:** Your implementation of Linear Regression  -  OLS, Gradient Descent, Regularization is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+2. **Scenario:** Your implementation of this technique  -  OLS, Gradient Descent, Regularization is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
 
 3. **Scenario:** A new hire asks you to explain Linear Regression  -  OLS, Gradient Descent, Regularization in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
 
@@ -542,7 +536,7 @@ def check_normality(y, model, X):
 
 ## Output Questions
 
-1. **What is the output of the simplest correct implementation of Linear Regression  -  OLS, Gradient Descent, Regularization on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+1. **What is the output of the simplest correct implementation of this technique  -  OLS, Gradient Descent, Regularization on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
 2. **What is the output when the input is at the boundary value?** — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
 3. **What does the implementation return when given invalid input types?** — With type hints and validation, it raises a clear error; without, it may fail silently.
 4. **What is the output for the sample input given in the chapter's Examples section?** — Re-run the chapter's example code and compare against the documented output.

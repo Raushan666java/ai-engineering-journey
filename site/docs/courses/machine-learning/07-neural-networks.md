@@ -5,6 +5,7 @@ title: "Chapter 7: Neural Networks"
 sidebar_label: "Chapter 7: Neural Networks"
 sidebar_position: 7
 ---
+
 # Chapter 7: Neural Networks
 
 > **Previous:** [Support Vector Machines](./06-support-vector-machines.md) | **Next:** [Unsupervised Learning](./08-unsupervised-learning.md)

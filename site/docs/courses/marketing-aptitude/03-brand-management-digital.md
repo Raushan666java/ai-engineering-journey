@@ -5,6 +5,7 @@ title: "Chapter 3: Brand Management and Digital Marketing"
 sidebar_label: "Chapter 3: Brand Management and Digital Marketing"
 sidebar_position: 3
 ---
+
 # Chapter 3: Brand Management and Digital Marketing
 
 ## Learning Objectives
@@ -493,7 +494,7 @@ graph TD
 | **Awareness** | CPM (Cost per 1000 impressions) | ₹50–₹200 | Total cost / Impressions × 1000 |
 | **Interest** | Bounce Rate | 40–60% | Single-page sessions / Total sessions |
 | **Consideration** | Lead Conversion Rate | 2–5% | Leads / Visitors × 100 |
-| **Purchase** | ROAS | 3×–5× | Revenue / Ad spend |
+| **Purchase** | ROAS | 3ז5× | Revenue / Ad spend |
 | **Loyalty** | Customer Retention Rate | 60–80% | Returning customers / Total customers |
 | **Advocacy** | NPS | 30+ | % Promoters − % Detractors |
 

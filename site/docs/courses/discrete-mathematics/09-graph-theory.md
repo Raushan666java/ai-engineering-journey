@@ -5,6 +5,7 @@ title: "Chapter 9: Graph Theory"
 sidebar_label: "Chapter 9: Graph Theory"
 sidebar_position: 9
 ---
+
 # Chapter 9: Graph Theory
 
 > **Previous:** [Chapter 8: Functions](./08-functions.md) | **Next:** [Chapter 10: Trees](./10-trees.md)

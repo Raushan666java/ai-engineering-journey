@@ -5,6 +5,7 @@ title: "Chapter 1: Introduction to Object-Oriented Programming"
 sidebar_label: "Chapter 1: Introduction to Object-Oriented Programming"
 sidebar_position: 1
 ---
+
 # Chapter 1: Introduction to Object-Oriented Programming
 
 > **Previous:** None | **Next:** [Classes and Objects](./02-classes-objects.md)

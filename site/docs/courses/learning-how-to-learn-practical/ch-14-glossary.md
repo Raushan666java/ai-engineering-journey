@@ -5,6 +5,7 @@ title: "Master Glossary"
 sidebar_label: "Master Glossary"
 sidebar_position: 15
 ---
+
 # Master Glossary
 
 > **400+ terms** defined across all 13 chapters. Use this as a quick reference while studying.

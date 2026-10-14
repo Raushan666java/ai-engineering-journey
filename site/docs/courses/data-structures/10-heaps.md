@@ -5,6 +5,7 @@ title: "Chapter 10: Heaps"
 sidebar_label: "Chapter 10: Heaps"
 sidebar_position: 10
 ---
+
 # Chapter 10: Heaps
 
 > **Previous:** [Chapter 9: Binary Search Trees](./09-bst.md) | **Next:** [Graphs](./11-graphs.md)

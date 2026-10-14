@@ -5,6 +5,7 @@ title: "Chapter 5: Constraint Satisfaction Problems"
 sidebar_label: "Chapter 5: Constraint Satisfaction Problems"
 sidebar_position: 8
 ---
+
 # Chapter 5: Constraint Satisfaction Problems
 
 > **Previous:** [Chapter 4: CSP](04-csp.md) | **Next:** [Chapter 5: Game Playing and Adversarial Search](05-game-playing.md)

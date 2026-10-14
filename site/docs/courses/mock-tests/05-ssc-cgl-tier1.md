@@ -5,6 +5,7 @@ title: "SSC CGL Tier 1 — Full-Length Mock Test"
 sidebar_label: "SSC CGL Tier 1 — Full-Length Mock Test"
 sidebar_position: 5
 ---
+
 # SSC CGL Tier 1 — Full-Length Mock Test
 
 > **Exam:** Staff Selection Commission — Combined Graduate Level (SSC CGL) Tier 1  
@@ -1905,7 +1906,7 @@ A) 2, 4, 1, 3  B) 2, 1, 3, 4  C) 2, 3, 1, 4  D) 2, 1, 4, 3
 
 1. They also provide nectar for pollinators like bees and butterflies.
 2. Trees are essential for maintaining ecological balance.
-3. Additionally, they absorb carbon dioxide and release oxygen.
+3. they absorb carbon dioxide and release oxygen.
 4. They prevent soil erosion and provide shade.
 
 A) 2, 4, 3, 1  B) 2, 1, 4, 3  C) 2, 3, 1, 4  D) 2, 4, 1, 3

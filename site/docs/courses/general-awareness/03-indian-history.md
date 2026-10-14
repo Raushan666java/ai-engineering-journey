@@ -5,6 +5,7 @@ title: "Chapter 3: Indian History & Culture"
 sidebar_label: "Chapter 3: Indian History & Culture"
 sidebar_position: 3
 ---
+
 # Chapter 3: Indian History & Culture
 
 ## Learning Objectives

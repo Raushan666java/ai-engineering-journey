@@ -5,6 +5,7 @@ title: "Chapter 8: Advanced Kubernetes"
 sidebar_label: "Chapter 8: Advanced Kubernetes"
 sidebar_position: 15
 ---
+
 # Chapter 8: Advanced Kubernetes
 
 > **Prev:** [Configuration Management](./08-configuration-management.md)

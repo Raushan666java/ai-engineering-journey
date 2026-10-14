@@ -5,6 +5,7 @@ title: "Capstone: Building a Complete Software System"
 sidebar_label: "Capstone: Building a Complete Software System"
 sidebar_position: 16
 ---
+
 # Capstone: Building a Complete Software System
 
 ## Learning Objectives

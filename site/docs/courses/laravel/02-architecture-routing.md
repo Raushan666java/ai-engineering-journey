@@ -5,6 +5,7 @@ title: "Chapter 2: Architecture, Routing, Middleware & Controllers"
 sidebar_label: "Chapter 2: Architecture, Routing, Middleware & Controllers"
 sidebar_position: 2
 ---
+
 # Chapter 2: Architecture, Routing, Middleware & Controllers
 
 > **Previous:** [Introduction to Laravel 13](./01-introduction.md) | **Next:** [Blade Templating, Components & Frontend](./03-blade-frontend.md)

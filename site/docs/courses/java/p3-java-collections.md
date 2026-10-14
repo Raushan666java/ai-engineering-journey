@@ -5,6 +5,7 @@ title: "Java Collections Framework"
 sidebar_label: "Java Collections Framework"
 sidebar_position: 78
 ---
+
 # Java Collections Framework
 
 ## Learning Objectives

@@ -5,6 +5,7 @@ title: "Chapter 1: Marketing Concepts"
 sidebar_label: "Chapter 1: Marketing Concepts"
 sidebar_position: 1
 ---
+
 # Chapter 1: Marketing Concepts
 
 ## Learning Objectives

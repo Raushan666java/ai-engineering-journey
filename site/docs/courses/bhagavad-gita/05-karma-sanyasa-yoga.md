@@ -5,6 +5,7 @@ title: "Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action"
 sidebar_label: "Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action"
 sidebar_position: 5
 ---
+
 # Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action
 
 > "The renunciation you really need is not of action — it is of the claim. The world keeps flowing; only the clutching can stop."

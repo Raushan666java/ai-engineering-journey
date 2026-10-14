@@ -5,6 +5,7 @@ title: "Chapter 2: Prompt Foundations"
 sidebar_label: "Chapter 2: Prompt Foundations"
 sidebar_position: 2
 ---
+
 # Chapter 2: Prompt Foundations
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

@@ -5,6 +5,7 @@ title: "Chapter 24: Capstone Project — AI-Powered Team Collaboration SaaS"
 sidebar_label: "Chapter 24: Capstone Project — AI-Powered Team Collaboration SaaS"
 sidebar_position: 24
 ---
+
 # Chapter 24: Capstone Project — AI-Powered Team Collaboration SaaS
 
 > **Previous:** [Case Study AI Content](./23-case-study-ai-content.md) | **Next:** [Multi-Agent Systems](./25-multi-agent-systems.md)

@@ -5,6 +5,7 @@ title: "Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute"
 sidebar_label: "Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute"
 sidebar_position: 8
 ---
+
 # Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute
 
 > "Death is not the end of life; it is the truth of life surfacing. The question is not whether you will die — it is which thought you will be wearing when you arrive."

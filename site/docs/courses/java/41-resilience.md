@@ -5,6 +5,7 @@ title: "Resilience & Circuit Breakers (Resilience4j)"
 sidebar_label: "Resilience & Circuit Breakers (Resilience4j)"
 sidebar_position: 41
 ---
+
 # Resilience & Circuit Breakers (Resilience4j)
 > **Previous:** [API Gateway](40-gateway.md) | **Next:** [Configuration and Cloud Config](42-config.md)
 

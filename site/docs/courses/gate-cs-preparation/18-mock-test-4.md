@@ -5,6 +5,7 @@ title: "18 Mock Test 4"
 sidebar_label: "18 Mock Test 4"
 sidebar_position: 15
 ---
+
 ﻿# GATE CS Mock Test 4 → Full-Length Practice Paper
 
 
@@ -222,7 +223,7 @@ All questions are MCQs. Select the single correct answer.
 
 ## Section B: Engineering Mathematics (Questions 16–25)
 
-**Q16 (1 Mark):** If A is a 5Ãâ€â€�5 matrix with det(A) = −3, then det(2A) = ?
+**Q16 (1 Mark):** If A is a 5×5 matrix with det(A) = −3, then det(2A) = ?
 
 (A) −6  
 (B) −24  
@@ -522,7 +523,7 @@ The graph has how many strongly connected components?
 
 ---
 
-**Q48 (2 Marks) [CN]:** A 10 Mbps CSMA/CD network has a maximum cable length of 2000 m. Signal propagation speed is 2Ãâ€â€�10âÂÂ�¸ m/s. The minimum frame size in bits is:
+**Q48 (2 Marks) [CN]:** A 10 Mbps CSMA/CD network has a maximum cable length of 2000 m. Signal propagation speed is 2×10âÂÂ�¸ m/s. The minimum frame size in bits is:
 
 (A) 100  
 (B) 150  
@@ -630,7 +631,7 @@ I3: MUL R6, R7, R8
 
 **Q1:** Manual and handbook are synonyms (reference guides). Compendium and summary are synonyms (concise collections). Answer A.
 
-**Q2:** Second train speed = 420/6 = 70 km/h. Ratio 5:7 implies first train speed = (5/7) Ãâ€â€� 70 = 50 km/h.
+**Q2:** Second train speed = 420/6 = 70 km/h. Ratio 5:7 implies first train speed = (5/7) × 70 = 50 km/h.
 
 **Q3:** Correct spelling: Accommodate → double c, double m. Only option C matches.
 
@@ -638,29 +639,29 @@ I3: MUL R6, R7, R8
 
 **Q5:** All engineers are graduates (set E ⊆ G). Some graduates are unemployed (G ∩ U ≠ ∅). This does not guarantee E ∩ U ≠ ∅, so conclusion I does not follow. But "Some unemployed persons are graduates" is the same as "Some graduates are unemployed" (conversely), so II follows. Only II follows.
 
-**Q6:** LCM(1,2,3,4,5,6) = LCM(2², 3, 5) = 4 Ãâ€â€� 3 Ãâ€â€� 5 = 60.
+**Q6:** LCM(1,2,3,4,5,6) = LCM(2², 3, 5) = 4 × 3 × 5 = 60.
 
-**Q7:** Pattern: each term = previous Ãâ€â€� 2 + 1. 6Ãâ€â€�2+1=13, 13Ãâ€â€�2+1=27, 27Ãâ€â€�2+1=55, 55Ãâ€â€�2+1=111, 111Ãâ€â€�2+1=223.
+**Q7:** Pattern: each term = previous × 2 + 1. 6×2+1=13, 13×2+1=27, 27×2+1=55, 55×2+1=111, 111×2+1=223.
 
-**Q8:** Hour hand at 8:20 = 8Ãâ€â€�30° + 20Ãâ€â€�0.5° = 240° + 10° = 250°. Minute hand = 20Ãâ€â€�6° = 120°. Difference = 130°.
+**Q8:** Hour hand at 8:20 = 8×30° + 20×0.5° = 240° + 10° = 250°. Minute hand = 20×6° = 120°. Difference = 130°.
 
 **Q9:** Each letter is encoded by its alphabetical position (A=1,..., Z=26), and the digits of multi-digit positions are written separately. DELHI: D=4, E=5, L=12→1,2, H=8, I=9 → 4,5,1,2,8,9 = 451289. MUMBAI: M=13→1,3, U=21→2,1, M=13→1,3, B=2, A=1, I=9 → 1,3,2,1,1,3,2,1,9 = 132113219. CHENNAI: C=3, H=8, E=5, N=14→1,4, N=14→1,4, A=1, I=9 → 3,8,5,1,4,1,4,1,9 = 385141419.
 
-**Q10:** Smallest 3-digit number divisible by 6: 102 = 6Ãâ€â€�17. Largest: 996 = 6Ãâ€â€�166. Count = 166 − 17 + 1 = 150.
+**Q10:** Smallest 3-digit number divisible by 6: 102 = 6×17. Largest: 996 = 6×166. Count = 166 − 17 + 1 = 150.
 
 **Q11:** Let B's rate = r units/day, A's rate = 2r. Together: 3r units/day, complete in 8 days → total work = 24r units. B alone would take 24r/r = 24 days.
 
 **Q12:** For 2 years, CI − SI = P(r/100)² = P(10/100)² = P/100 = 50. So P = Rs. 5000.
 
-**Q13:** Total balls = 10. Total ways = C(10,3) = 120. Ways to pick one of each color = 2Ãâ€â€�3Ãâ€â€�5 = 30. P = 30/120 = 1/4.
+**Q13:** Total balls = 10. Total ways = C(10,3) = 120. Ways to pick one of each color = 2×3×5 = 30. P = 30/120 = 1/4.
 
 **Q14:** Let CP = x. 1.12x is selling price. With Rs. 60 more: 1.12x + 60 = 1.18x → 60 = 0.06x → x = 1000.
 
 **Q15:** A's rate = 1/6 per hour. B's rate = 1/8. C's rate = −1/12. Combined rate = 1/6 + 1/8 − 1/12 = (4+3−2)/24 = 5/24. Time = 24/5 = 4.8 h.
 
-**Q16:** For an nÃâ€â€�n matrix, det(kA) = kâÂÂ�¿ det(A). Here n=5, k=2. det(2A) = 2âÂÂ�µ Ãâ€â€� (−3) = 32 Ãâ€â€� (−3) = −96.
+**Q16:** For an n×n matrix, det(kA) = kâÂÂ�¿ det(A). Here n=5, k=2. det(2A) = 2âÂÂ�µ × (−3) = 32 × (−3) = −96.
 
-**Q17:** Handshaking lemma: sum of degrees = 2E. 8Ãâ€â€�3 = 24 = 2E → E = 12.
+**Q17:** Handshaking lemma: sum of degrees = 2E. 8×3 = 24 = 2E → E = 12.
 
 **Q18:** ∫₀^ÃÂ�€ sin²x dx = ∫₀^ÃÂ�€ (1−cos2x)/2 dx = [x/2 − sin2x/4]₀^ÃÂ�€ = ÃÂ�€/2 − 0 − (0 − 0) = ÃÂ�€/2.
 
@@ -672,7 +673,7 @@ I3: MUL R6, R7, R8
 
 Alternatively, apply L'Hôpital's rule twice: lim_{x→0} (eˣ − 1 − x)/x² = lim (eˣ − 1)/(2x) = lim eˣ/2 = 1/2.
 
-**Q22:** MISSISSIPPI has 11 letters: M(1), I(4), S(4), P(2). Arrangements = 11!/(1!4!4!2!) = 39916800/(24Ãâ€â€�24Ãâ€â€�2) = 39916800/1152 = 34650.
+**Q22:** MISSISSIPPI has 11 letters: M(1), I(4), S(4), P(2). Arrangements = 11!/(1!4!4!2!) = 39916800/(24×24×2) = 39916800/1152 = 34650.
 
 **Q23:** Eigenvalues of [[2,1],[1,2]]: det([[2−λ,1],[1,2−λ]]) = (2−λ)² − 1 = λ² − 4λ + 3 = (λ−1)(λ−3). λâ‚ÂÂ�=3, eigenvector [1,1]ᵀ. λ₂=1, eigenvector [1,−1]ᵀ. Both are eigenvectors.
 
@@ -722,9 +723,9 @@ Alternatively, apply L'Hôpital's rule twice: lim_{x→0} (eˣ − 1 − x)/x² 
 
 **Q46:** The graph has edges: A→B, A→D, B→C, C→D, D→A. Following the cycles: A→D→A forms a cycle (A,D). Also A→B→C→D→A forms a larger cycle. All vertices are mutually reachable: from any vertex you can reach all others. The graph has 1 strongly connected component.
 
-**Q47:** P (wait) decrements: 15 Ãâ€â€� (−1) = −15. V (signal) increments: 10 Ãâ€â€� (+1) = +10. Net change = −15 + 10 = −5. Initial 8 − 5 = 3.
+**Q47:** P (wait) decrements: 15 × (−1) = −15. V (signal) increments: 10 × (+1) = +10. Net change = −15 + 10 = −5. Initial 8 − 5 = 3.
 
-**Q48:** Round-trip time = 2Ãâ€â€�(2000/2Ãâ€â€�10âÂÂ�¸) = 2Ãâ€â€�10âÂÂ�»âÂÂ�µ s = 20 μs. Minimum frame size = 10Ãâ€â€�10âÂÂ�¶ Ãâ€â€� 20Ãâ€â€�10âÂÂ�»âÂÂ�¶ = 200 bits.
+**Q48:** Round-trip time = 2×(2000/2×10âÂÂ�¸) = 2×10âÂÂ�»âÂÂ�µ s = 20 μs. Minimum frame size = 10×10âÂÂ�¶ × 20×10âÂÂ�»âÂÂ�¶ = 200 bits.
 
 **Q49:** Candidate key: AB (ABâÂÂ�º = ABCDE from AB→C, C→D, D→E). C→D and D→E are transitive dependencies (C depends on AB partially via non-key attribute, D→E is also transitive). Since C is not a superkey and D is not a key attribute, 3NF is violated (transitive dependency). Also C is a non-prime attribute functionally determining another non-prime attribute D, which violates 3NF for BCNF. Actually, AB is the only key. C, D, E are non-prime. C→D is a non-prime → non-prime dependency, violating 3NF. D→E is also non-prime → non-prime. So the highest NF is 2NF. But wait, C → D and C is a non-prime attribute. If there were no non-prime → non-prime dependencies, the relation would be in 3NF. Here C→D and D→E are both non-prime → non-prime, so these violate 3NF. The relation is in 2NF because there is no partial dependency (no proper subset of AB determines any non-prime attribute). Answer: 2NF.
 
@@ -840,7 +841,7 @@ Let me be precise:
 13. Reduce E→E+T: $ E / $  (state 0→1)
 14. Accept
 
-That's 14 steps. But none of the options match. Maybe the question means "number of shift moves" or counts differently. Or maybe they're counting only the handling of one "id" differently. The typical GATE count for this grammar with input id+id*id is 11 steps (counting shift, reduce, and accept as distinct moves). Let me try: reductions = 6 (F→id Ãâ€â€� 3, T→F Ãâ€â€� 2, T→T*F Ãâ€â€� 1, E→T Ãâ€â€� 1, E→E+T Ãâ€â€� 1... that's too many). Actually with this grammar:
+That's 14 steps. But none of the options match. Maybe the question means "number of shift moves" or counts differently. Or maybe they're counting only the handling of one "id" differently. The typical GATE count for this grammar with input id+id*id is 11 steps (counting shift, reduce, and accept as distinct moves). Let me try: reductions = 6 (F→id × 3, T→F × 2, T→T*F × 1, E→T × 1, E→E+T × 1... that's too many). Actually with this grammar:
 - F→id: 3 times (once per id)
 - T→F: 2 times (once for each T that directly becomes F)
 - T→T*F: 1 time
@@ -852,11 +853,11 @@ I think the answer C=11 is a common GATE answer for this question when using a s
 
 **Q54:** A modulo-5 counter counts from 0 to 4 (5 states). Minimum flip-flops = ⌈log₂(5)⌉ = ⌈2.32⌉ = 3.
 
-**Q55:** Packet size = 2000 bytes = 16000 bits. Transmission time = 16000 / 10âÂÂ�¹ = 16 μs. RTT = 2 Ãâ€â€� 20 ms = 40 ms = 40000 μs. Utilization = T_tx / (T_tx + RTT) = 16 / (16 + 40000) ≈ 16/40016 ≈ 0.0004 = 0.04%.
+**Q55:** Packet size = 2000 bytes = 16000 bits. Transmission time = 16000 / 10âÂÂ�¹ = 16 μs. RTT = 2 × 20 ms = 40 ms = 40000 μs. Utilization = T_tx / (T_tx + RTT) = 16 / (16 + 40000) ≈ 16/40016 ≈ 0.0004 = 0.04%.
 
-Hmm but the answer key says B. Let me check if they use a different packet size interpretation. If packet = 1000 bytes = 8000 bits. At 1 Gbps: time = 8 μs. Round trip propagation = 2 Ãâ€â€� 20 ms = 40 ms = 40000 μs. Efficiency = 8/(8 + 40000) = 8/40008 = 0.00019997 ≈ 0.0002 = 0.02%. So answer should be A. Let me fix the answer key to A.
+Hmm but the answer key says B. Let me check if they use a different packet size interpretation. If packet = 1000 bytes = 8000 bits. At 1 Gbps: time = 8 μs. Round trip propagation = 2 × 20 ms = 40 ms = 40000 μs. Efficiency = 8/(8 + 40000) = 8/40008 = 0.00019997 ≈ 0.0002 = 0.02%. So answer should be A. Let me fix the answer key to A.
 
-Wait, maybe they consider propagation delay differently. Or maybe they use 1000 bytes = 1000 Ãâ€â€� 10 = 10000 bits for some reason? No.
+Wait, maybe they consider propagation delay differently. Or maybe they use 1000 bytes = 1000 × 10 = 10000 bits for some reason? No.
 
 Let me adjust to make the answer cleaner. With 2000 bytes: transmission = 16000/10âÂÂ�¹ = 16 μs. Efficiency = 16/40016 = 0.0004 = 0.04%. That gives B. Let me change the packet size to 2000 bytes in the question.
 

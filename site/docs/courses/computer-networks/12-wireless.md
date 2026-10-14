@@ -5,6 +5,7 @@ title: "Chapter 12: Wireless Networks (Extended)"
 sidebar_label: "Chapter 12: Wireless Networks (Extended)"
 sidebar_position: 12
 ---
+
 # Chapter 12: Wireless Networks (Extended)
 
 ## Learning Objectives
@@ -1727,7 +1728,7 @@ Total handoffs: 2
 ### Q1: Why does WiFi use CSMA/CA instead of CSMA/CD?
 
 
-**Answer**: Wireless transceivers are half-duplex → the transmitter cannot listen for collisions while transmitting because its own signal overwhelms any incoming signal (self-interference). Full-duplex wireless is still experimental. Additionally, the hidden terminal problem means the collision happens at the receiver, not the sender. CSMA/CA prevents collisions probabilistically rather than detecting them reactively.
+**Answer**: Wireless transceivers are half-duplex → the transmitter cannot listen for collisions while transmitting because its own signal overwhelms any incoming signal (self-interference). Full-duplex wireless is still experimental. the hidden terminal problem means the collision happens at the receiver, not the sender. CSMA/CA prevents collisions probabilistically rather than detecting them reactively.
 
 ### Q2: What is NAV and why is it important?
 

@@ -5,6 +5,7 @@ title: "Chapter 15: NP-Completeness"
 sidebar_label: "Chapter 15: NP-Completeness"
 sidebar_position: 15
 ---
+
 # Chapter 15: NP-Completeness
 
 > **Prerequisites:** [Chapter 14: String Algorithms](./14-string-algorithms.md) — Understanding of polynomial-time algorithms | **Next:** [Chapter 16: Approximation Algorithms](./16-approximation.md) — Coping with NP-hardness via approximation

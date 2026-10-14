@@ -5,6 +5,7 @@ title: "Chapter 1: Security Fundamentals"
 sidebar_label: "Chapter 1: Security Fundamentals"
 sidebar_position: 1
 ---
+
 # Chapter 1: Security Fundamentals
 
 > **Prereq:** None — this chapter introduces core security concepts.

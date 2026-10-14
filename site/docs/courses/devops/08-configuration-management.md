@@ -5,6 +5,7 @@ title: "Chapter 8: Configuration Management"
 sidebar_label: "Chapter 8: Configuration Management"
 sidebar_position: 14
 ---
+
 # Chapter 8: Configuration Management
 
 > **Prev:** [Kubernetes](./07-kubernetes.md)

@@ -5,6 +5,7 @@ title: "Information Security & Cryptography — IBPS SO & Govt Exam Prep"
 sidebar_label: "Information Security & Cryptography — IBPS SO & Govt Exam Prep"
 sidebar_position: 6
 ---
+
 # Information Security & Cryptography — IBPS SO & Govt Exam Prep
 
 > **Exam Weightage:** 4-6 Qs in IBPS SO Mains PK

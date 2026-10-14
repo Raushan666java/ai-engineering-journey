@@ -5,6 +5,7 @@ title: "Chapter 3: Daily Workflow & Energy Management"
 sidebar_label: "Chapter 3: Daily Workflow & Energy Management"
 sidebar_position: 4
 ---
+
 # Chapter 3: Daily Workflow & Energy Management
 
 > ⏱ **2 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**

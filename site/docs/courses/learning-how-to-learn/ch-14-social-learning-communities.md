@@ -5,6 +5,7 @@ title: "Chapter 14: Social Learning & Communities"
 sidebar_label: "Chapter 14: Social Learning & Communities"
 sidebar_position: 15
 ---
+
 # Chapter 14: Social Learning & Communities
 
 > **Prerequisites:** [Chapter 6: Procrastination, Habits & Deep Work](./ch-06-procrastination-habits-deep-work.md), [Chapter 12: Teaching & Knowledge Transfer](./ch-12-teaching-knowledge-transfer.md)

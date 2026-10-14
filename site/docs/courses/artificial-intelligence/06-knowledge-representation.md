@@ -5,6 +5,7 @@ title: "Chapter 6: Knowledge Representation"
 sidebar_label: "Chapter 6: Knowledge Representation"
 sidebar_position: 10
 ---
+
 # Chapter 6: Knowledge Representation
 
 **Previous:** [Chapter 6: Logical Agents and Propositional Logic](06-logic.md) | **Next:** [Chapter 7: First-Order Logic and Inference](07-fol.md)

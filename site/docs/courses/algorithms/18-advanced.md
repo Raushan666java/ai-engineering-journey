@@ -5,6 +5,7 @@ title: "Chapter 18: Advanced Topics"
 sidebar_label: "Chapter 18: Advanced Topics"
 sidebar_position: 18
 ---
+
 # Chapter 18: Advanced Topics
 
 > **Prerequisites:** [Chapter 17: Randomized Algorithms](./17-randomized.md) — Probabilistic analysis and algorithm design | **Next:** Course Complete

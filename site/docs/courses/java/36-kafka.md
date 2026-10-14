@@ -5,6 +5,7 @@ title: "Apache Kafka"
 sidebar_label: "Apache Kafka"
 sidebar_position: 36
 ---
+
 # Apache Kafka
 > **Previous:** [RabbitMQ](35-rabbitmq.md) | **Next:** [Event-Driven Architecture and Saga Pattern](37-event-driven-saga.md)
 

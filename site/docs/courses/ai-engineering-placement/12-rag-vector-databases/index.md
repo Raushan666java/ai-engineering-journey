@@ -5,6 +5,7 @@ title: "12 — RAG & Vector Databases"
 sidebar_label: "12 — RAG & Vector Databases"
 sidebar_position: 174
 ---
+
 # 12 — RAG & Vector Databases
 
 ## Overview

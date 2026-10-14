@@ -5,6 +5,7 @@ title: "Chapter 21: Case Study — Uber and Location-Based Services"
 sidebar_label: "Chapter 21: Case Study — Uber and Location-Based Services"
 sidebar_position: 21
 ---
+
 # Chapter 21: Case Study — Uber and Location-Based Services
 > **Previous:** [20 Case Study Netflix](./20-case-study-netflix.md) | **Next:** [22 Case Study Twitter](./22-case-study-twitter.md)
 

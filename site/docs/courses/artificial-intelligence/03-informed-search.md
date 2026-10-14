@@ -5,6 +5,7 @@ title: "Chapter 3: Informed Search and Heuristics"
 sidebar_label: "Chapter 3: Informed Search and Heuristics"
 sidebar_position: 4
 ---
+
 # Chapter 3: Informed Search and Heuristics
 
 > **Prerequisites:** [Chapter 2: Problem Solving by Searching](./02-problem-solving.md) — Uninformed search strategies | **Next:** [Chapter 4: Adversarial Search and Games](./04-adversarial-search.md) — Game-playing and minimax

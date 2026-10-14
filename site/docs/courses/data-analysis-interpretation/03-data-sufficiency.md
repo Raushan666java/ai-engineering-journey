@@ -5,6 +5,7 @@ title: "Chapter 3: Data Sufficiency"
 sidebar_label: "Chapter 3: Data Sufficiency"
 sidebar_position: 3
 ---
+
 # Chapter 3: Data Sufficiency
 
 ## Learning Objectives

@@ -5,6 +5,7 @@ title: "Chapter 7: Pushdown Automata"
 sidebar_label: "Chapter 7: Pushdown Automata"
 sidebar_position: 7
 ---
+
 # Chapter 7: Pushdown Automata
 
 > **Previous:** [Context-Free Grammars](./06-cfg.md) | **Next:** [Properties of Context-Free Languages](./08-cfl.md)

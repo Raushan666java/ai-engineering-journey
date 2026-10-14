@@ -5,6 +5,7 @@ title: "Chapter 18: Union-Find (Disjoint Set Union)"
 sidebar_label: "Chapter 18: Union-Find (Disjoint Set Union)"
 sidebar_position: 18
 ---
+
 # Chapter 18: Union-Find (Disjoint Set Union)
 
 **Prev:** [Chapter 17: Segment Tree and Fenwick Tree](17-segment-tree.md) | **Next:** None

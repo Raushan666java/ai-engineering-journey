@@ -5,6 +5,7 @@ title: "Chapter 9: Containerization and Orchestration"
 sidebar_label: "Chapter 9: Containerization and Orchestration"
 sidebar_position: 9
 ---
+
 # Chapter 9: Containerization and Orchestration
 
 > **Previous:** [Chapter 8: Serverless Computing](./08-serverless.md) | **Next:** [Chapter 10: Cloud Architecture Design](./10-architecture.md)

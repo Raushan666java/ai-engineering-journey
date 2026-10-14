@@ -5,6 +5,7 @@ title: "RabbitMQ"
 sidebar_label: "RabbitMQ"
 sidebar_position: 35
 ---
+
 # RabbitMQ
 > **Previous:** [Async and Events](34-async-events.md) | **Next:** [Kafka](36-kafka.md)
 

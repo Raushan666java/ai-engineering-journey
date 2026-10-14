@@ -5,6 +5,8 @@ title: "Wipro NLTH Mock Test — Full Pattern Simulation (44 Questions)"
 sidebar_label: "Wipro NLTH Mock Test — Full Pattern Simulation (44 Questions)"
 sidebar_position: 386
 ---
+
+<!-- improved -->
 # Wipro NLTH Mock Test — Full Pattern Simulation (44 Questions)
 
 > Simulates the Wipro National Level Talent Hunt aptitude section: 18 quant, 14 logical, 12 verbal.

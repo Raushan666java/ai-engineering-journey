@@ -5,6 +5,7 @@ title: "Chapter 11: AI-Assisted Learning"
 sidebar_label: "Chapter 11: AI-Assisted Learning"
 sidebar_position: 12
 ---
+
 # Chapter 11: AI-Assisted Learning
 
 > **Prerequisites:** [Chapter 3: Active Recall & Spaced Repetition](./ch-03-active-recall-spaced-repetition.md)

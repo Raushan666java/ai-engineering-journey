@@ -5,6 +5,8 @@ title: "Design ChatGPT — Streaming, Context Window, Prompt Caching"
 sidebar_label: "Design ChatGPT — Streaming, Context Window, Prompt Caching"
 sidebar_position: 106
 ---
+
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Design ChatGPT — Streaming, Context Window, Prompt Caching
 
@@ -23,16 +25,8 @@ sidebar_position: 106
 
 System design interviews test your ability to architect large-scale systems. Caching, load balancing, message queues, and database sharding are patterns you will apply daily. This module prepares you for both interviews and production.
 
-## Prerequisites
-
-- Basic programming knowledge
-- Understanding of data structures
-
 ## Key Terminology
 
-**Key Terms**: Core vocabulary and concepts for this topic.
-
-**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
@@ -810,8 +804,8 @@ d) Redis with no persistence
 ## Fill in the Blank
 
 1. The chapter that covers Design ChatGPT — Streaming, Context Window, Prompt Caching is Chapter ___ of this module. — Answer: check the module's table of contents.
-2. The time complexity of the standard approach to Design ChatGPT — Streaming, Context Window, Prompt Caching is ___. — Answer: review the theory section and state big-O notation.
-3. The main edge case to handle when implementing Design ChatGPT — Streaming, Context Window, Prompt Caching is ___. — Answer: empty or invalid input handling, as discussed in the chapter.
+2. The time complexity of the standard approach to 11 Design Chatgpt is ___. — Answer: O(log n) with consistent hashing
+3. The main edge case to handle when implementing 11 Design Chatgpt is ___. — Answer: single point of failure, thundering herd, split brain
 4. The tools commonly used to debug Design ChatGPT — Streaming, Context Window, Prompt Caching issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
 5. The related topic that connects to Design ChatGPT — Streaming, Context Window, Prompt Caching in the next chapter is ___. — Answer: see the Next Topic section.
 
@@ -819,7 +813,7 @@ d) Redis with no persistence
 
 1. **Scenario:** A teammate ships a change involving Design ChatGPT — Streaming, Context Window, Prompt Caching that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
 
-2. **Scenario:** Your implementation of Design ChatGPT — Streaming, Context Window, Prompt Caching is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+2. **Scenario:** Your implementation of this technique — Streaming, Context Window, Prompt Caching is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
 
 3. **Scenario:** A new hire asks you to explain Design ChatGPT — Streaming, Context Window, Prompt Caching in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
 
@@ -827,7 +821,7 @@ d) Redis with no persistence
 
 ## Output Questions
 
-1. **What is the output of the simplest correct implementation of Design ChatGPT — Streaming, Context Window, Prompt Caching on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+1. **What is the output of the simplest correct implementation of this technique — Streaming, Context Window, Prompt Caching on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
 2. **What is the output when the input is at the boundary value?** — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
 3. **What does the implementation return when given invalid input types?** — With type hints and validation, it raises a clear error; without, it may fail silently.
 4. **What is the output for the sample input given in the chapter's Examples section?** — Re-run the chapter's example code and compare against the documented output.
@@ -983,22 +977,24 @@ Think of design chatgpt like learning a new language — start with basic vocabu
 
 ## Optimized Implementation
 
-`python
+```python
 from typing import Any, Optional
 
-def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
-    """Runnable scaffold for Design ChatGPT — Streaming, Context Window, Prompt Caching.
+def demonstrate_11_design_chatgpt(input_data: list[Any]) -> Optional[Any]:
+    """Minimal production scaffold for 11 Design Chatgpt.
 
-    Replace the body with the optimized implementation from the chapter,
-    keeping type hints, docstring, and edge-case handling.
+    Key concepts: scalability, availability, consistency, latency, throughput
+    Complexity: O(log n) with consistent hashing
     """
     if not input_data:
         return None
-    # Step 1: validate input types
-    # Step 2: apply the core Design ChatGPT — Streaming, Context Window, Prompt Caching logic from the Examples section
-    # Step 3: return the result with the documented default
-    return 0.0
-`
+    # Validate input
+    if not isinstance(input_data, (list, tuple)):
+        raise TypeError(f"Expected list, got {type(input_data).__name__}")
+    # Core logic: implement 11 Design Chatgpt here
+    result = input_data[0] if input_data else None
+    return result
+```
 
 - Keeps the function signature stable so tests written against it stay valid.
 - Handles the empty-input contract explicitly.

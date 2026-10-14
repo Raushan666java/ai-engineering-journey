@@ -5,6 +5,7 @@ title: "Chapter 40: Finance & FinTech Interview Q&A"
 sidebar_label: "Chapter 40: Finance & FinTech Interview Q&A"
 sidebar_position: 40
 ---
+
 # Chapter 40: Finance & FinTech Interview Q&A
 
 > **Previous:** [Healthcare Interview Q&A](./39-interview-healthcare.md) | **Next:** [Interview Q&A — Education & EdTech](./41-interview-education.md)

@@ -5,6 +5,7 @@ title: "Chapter 2: Cryptography"
 sidebar_label: "Chapter 2: Cryptography"
 sidebar_position: 2
 ---
+
 # Chapter 2: Cryptography
 
 > **Prereq:** Chapter 1 (Security Fundamentals) → cryptography provides the mathematical controls for achieving CIA goals.

@@ -5,6 +5,7 @@ title: "Visual Notes — The ML Lifecycle"
 sidebar_label: "Visual Notes"
 sidebar_position: 125
 ---
+
 # Visual Notes — The ML Lifecycle
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

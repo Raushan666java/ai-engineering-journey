@@ -5,6 +5,7 @@ title: "Chapter 16: Generators and itertools"
 sidebar_label: "Chapter 16: Generators and itertools"
 sidebar_position: 16
 ---
+
 # Chapter 16: Generators and itertools
 
 

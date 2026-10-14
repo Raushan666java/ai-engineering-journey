@@ -5,6 +5,7 @@ title: "Job Search Playbook: AI Agent Engineer"
 sidebar_label: "Job Search Playbook: AI Agent Engineer"
 sidebar_position: 9
 ---
+
 # Job Search Playbook: AI Agent Engineer
 
 > A step-by-step system for finding, applying to, and landing AI Agent Engineer roles — full-time in Dubai, remote globally, and freelance on Upwork.

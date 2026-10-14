@@ -5,6 +5,7 @@ title: "Quant Arithmetic Speed Drills"
 sidebar_label: "Quant Arithmetic Speed Drills"
 sidebar_position: 1
 ---
+
 # Quant Arithmetic Speed Drills
 
 > Build lightning-fast mental calculation skills through timed practice across addition, subtraction, multiplication, division, percentages, fractions, squares, cubes, roots, and approximation.

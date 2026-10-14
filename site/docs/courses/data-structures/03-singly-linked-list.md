@@ -5,6 +5,7 @@ title: "Chapter 3: Singly Linked List"
 sidebar_label: "Chapter 3: Singly Linked List"
 sidebar_position: 3
 ---
+
 # Chapter 3: Singly Linked List
 
 > **Previous:** [Chapter 2: Arrays](./02-arrays.md) | **Next:** [Doubly Linked List](./04-doubly-linked-list.md)

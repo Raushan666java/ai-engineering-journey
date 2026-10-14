@@ -5,6 +5,7 @@ title: "Spring Data JPA"
 sidebar_label: "Spring Data JPA"
 sidebar_position: 21
 ---
+
 > **Previous:** [JPA/Hibernate](./20-jpa-hibernate.md) | **Next:** [Migrations](./22-migrations.md)
 
 # Spring Data JPA

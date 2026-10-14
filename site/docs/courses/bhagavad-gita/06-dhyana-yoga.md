@@ -5,6 +5,7 @@ title: "Chapter 6: Dhyana Yoga — The Art of Meditation"
 sidebar_label: "Chapter 6: Dhyana Yoga — The Art of Meditation"
 sidebar_position: 6
 ---
+
 # Chapter 6: Dhyana Yoga — The Art of Meditation
 
 > "The mind is a lamp; meditation is the windless place. Nothing needs to be added to the flame — only the wind must leave."

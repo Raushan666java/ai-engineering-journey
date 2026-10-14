@@ -5,6 +5,7 @@ title: "Chapter 16: Design Patterns → The Gang of Four"
 sidebar_label: "Chapter 16: Design Patterns → The Gang of Four"
 sidebar_position: 16
 ---
+
 # Chapter 16: Design Patterns → The Gang of Four
 
 > **Previous:** [15-concurrency](./15-concurrency.md) | **Next:** None
@@ -1945,10 +1946,10 @@ getTreeType("Oak", "Green", "Rough"):  // second time
   key found -> return existing shared_ptr
 ```
 
-**Complexity:** O(1) type lookup (amortised). Memory: O(t + n) where t = types, n = contexts. Without Flyweight: O(t Ã— n).
+**Complexity:** O(1) type lookup (amortised). Memory: O(t + n) where t = types, n = contexts. Without Flyweight: O(t × n).
 
 **A&D:**
-- Memory savings can be enormous (1000 trees Ã— 2 types vs 1000 separate tree objects)
+- Memory savings can be enormous (1000 trees × 2 types vs 1000 separate tree objects)
 - Intrinsic state is immutable and shared; extrinsic state is mutable and stored externally
 - Adds complexity: must clearly separate intrinsic/extrinsic state
 - Factory ensures flyweight uniqueness and reuse
@@ -3075,7 +3076,7 @@ Content: "Hello World", cursor: 11
 Content: "Hello", cursor: 5
 ```
 
-**Complexity:** O(n) save/restore where n = state size. Memory O(s Ã— h) where s = snapshot size, h = history depth.
+**Complexity:** O(n) save/restore where n = state size. Memory O(s × h) where s = snapshot size, h = history depth.
 
 **A&D:**
 - Preserves encapsulation boundaries (Memento is opaque to Caretaker)

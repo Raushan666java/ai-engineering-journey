@@ -5,6 +5,7 @@ title: "Chapter 10: Code Optimization"
 sidebar_label: "Chapter 10: Code Optimization"
 sidebar_position: 10
 ---
+
 # Chapter 10: Code Optimization
 
 ? Previous: [Chapter 9: Code Generation](09-code-gen.md) | **Next:** [Chapter 11: Control-Flow Analysis](11-cfa.md)

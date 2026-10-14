@@ -5,6 +5,7 @@ title: "Chapter 6: Advanced Reasoning"
 sidebar_label: "Chapter 6: Advanced Reasoning"
 sidebar_position: 6
 ---
+
 # Chapter 6: Advanced Reasoning
 
 > **Previous:** [Chapter 5: Non-Verbal Reasoning](05-non-verbal-reasoning.md) | **Next:** [Course Index](index.md)

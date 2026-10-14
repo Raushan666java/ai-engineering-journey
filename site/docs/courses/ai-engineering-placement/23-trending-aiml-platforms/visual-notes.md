@@ -5,6 +5,7 @@ title: "Visual Notes — Choosing Your AI Stack"
 sidebar_label: "Visual Notes"
 sidebar_position: 298
 ---
+
 # Visual Notes — Choosing Your AI Stack
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

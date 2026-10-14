@@ -5,6 +5,7 @@ title: "Chapter 2: Scalability and Load Balancing"
 sidebar_label: "Chapter 2: Scalability and Load Balancing"
 sidebar_position: 2
 ---
+
 # Chapter 2: Scalability and Load Balancing
 > **Previous:** [01 Introduction](./01-introduction.md) | **Next:** [03 Caching](./03-caching.md)
 

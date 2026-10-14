@@ -5,6 +5,7 @@ title: "Chapter 09: Backtracking"
 sidebar_label: "Chapter 09: Backtracking"
 sidebar_position: 9
 ---
+
 # Chapter 09: Backtracking
 
 > Backtracking is a systematic way to explore all possible configurations of a solution space. It incrementally builds candidates and abandons them (backtracks) when they cannot lead to a valid solution.

@@ -5,6 +5,7 @@ title: "Chapter 5: Quadratic Equations & Simplification — Quadratic Comparison
 sidebar_label: "Chapter 5: Quadratic Equations & Simplification — Quadratic Comparison, Approximation, BODMAS"
 sidebar_position: 5
 ---
+
 # Chapter 5: Quadratic Equations & Simplification — Quadratic Comparison, Approximation, BODMAS
 
 ## Learning Objectives

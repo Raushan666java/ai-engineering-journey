@@ -5,6 +5,7 @@ title: "Theory of Computation — Complete Course Textbook"
 sidebar_label: "Theory of Computation — Complete Course Textbook"
 sidebar_position: 17
 ---
+
 # Theory of Computation — Complete Course Textbook
 
 ## Course Overview

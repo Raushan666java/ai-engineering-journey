@@ -5,6 +5,7 @@ title: "Chapter 13: Digital-to-Analog and Analog-to-Digital Converters"
 sidebar_label: "Chapter 13: Digital-to-Analog and Analog-to-Digital Converters"
 sidebar_position: 13
 ---
+
 # Chapter 13: Digital-to-Analog and Analog-to-Digital Converters
 
 > **Prereq:** Chapters 1?12 (digital logic fundamentals) ? DACs and ADCs bridge the digital and analog domains.

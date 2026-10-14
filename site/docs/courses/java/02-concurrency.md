@@ -5,6 +5,7 @@ title: "Multithreading & Concurrency"
 sidebar_label: "Multithreading & Concurrency"
 sidebar_position: 2
 ---
+
 # Multithreading & Concurrency
 
 > **Previous:** [JVM Architecture & Memory Management](./01-jvm-memory.md) | **Next:** [NIO & Networking](./03-nio-networking.md)

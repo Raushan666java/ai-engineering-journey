@@ -5,6 +5,7 @@ title: "Chapter 14: Space Complexity"
 sidebar_label: "Chapter 14: Space Complexity"
 sidebar_position: 14
 ---
+
 # Chapter 14: Space Complexity
 
 > **Previous:** [Time Complexity](./13-time-complexity.md) | **Next:** [Advanced Complexity Topics](./15-advanced-complexity.md)
@@ -888,4 +889,4 @@ function generateTransitions(state: string, symbol: string): any[] {
   return [{ write: symbol, move: "R", nextState: state }];
 }
 ```
-
+```

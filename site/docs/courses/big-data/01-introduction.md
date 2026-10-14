@@ -5,6 +5,7 @@ title: "Chapter 1: Introduction to Big Data"
 sidebar_label: "Chapter 1: Introduction to Big Data"
 sidebar_position: 1
 ---
+
 # Chapter 1: Introduction to Big Data
 
 > **Previous:** None (First Chapter) | **Next:** [Chapter 2: Hadoop ? HDFS, MapReduce & YARN](./02-hadoop.md)

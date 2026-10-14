@@ -5,6 +5,7 @@ title: "Logical Reasoning Speed Drills"
 sidebar_label: "Logical Reasoning Speed Drills"
 sidebar_position: 4
 ---
+
 # Logical Reasoning Speed Drills
 
 > Master puzzles, data sufficiency, assumptions, cause and effect, and input-output reasoning through timed, structured practice.

@@ -5,6 +5,7 @@ title: "Part I — Foundations"
 sidebar_label: "Part I — Foundations"
 sidebar_position: 2
 ---
+
 # Part I — Foundations
 
 ## Chapter 1: What Is Agentic AI, Really

@@ -5,6 +5,7 @@ title: "Chapter 6: Recurrence Relations"
 sidebar_label: "Chapter 6: Recurrence Relations"
 sidebar_position: 6
 ---
+
 # Chapter 6: Recurrence Relations
 
 > **Previous:** [Chapter 5: Combinatorics](./05-combinatorics.md) | **Next:** [Chapter 7: Relations](./07-relations.md)

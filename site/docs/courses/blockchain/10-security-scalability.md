@@ -5,6 +5,7 @@ title: "Chapter 10: Security and Scalability"
 sidebar_label: "Chapter 10: Security and Scalability"
 sidebar_position: 10
 ---
+
 # Chapter 10: Security and Scalability
 
 > **Previous:** [Chapter 9: Enterprise Blockchain](./09-enterprise.md) | **Next:** [Chapter 1: Introduction to Blockchain](./01-introduction.md)

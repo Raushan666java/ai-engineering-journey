@@ -5,6 +5,7 @@ title: "Chapter 11: Verification & Anti-Hallucination"
 sidebar_label: "Chapter 11: Verification & Anti-Hallucination"
 sidebar_position: 11
 ---
+
 # Chapter 11: Verification & Anti-Hallucination
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

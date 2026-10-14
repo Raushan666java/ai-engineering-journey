@@ -5,6 +5,7 @@ title: "Chapter 1: Arithmetic Foundation — Percentage, Profit & Loss, Simple/C
 sidebar_label: "Chapter 1: Arithmetic Foundation — Percentage, Profit & Loss, Simple/Compound Interest, Ratio & Proportion, Averages"
 sidebar_position: 1
 ---
+
 # Chapter 1: Arithmetic Foundation — Percentage, Profit & Loss, Simple/Compound Interest, Ratio & Proportion, Averages
 
 ## Learning Objectives

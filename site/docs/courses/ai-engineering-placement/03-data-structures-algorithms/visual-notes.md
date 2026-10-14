@@ -5,6 +5,7 @@ title: "Visual Notes — Data Structures & Algorithms"
 sidebar_label: "Visual Notes"
 sidebar_position: 57
 ---
+
 # Visual Notes — Data Structures & Algorithms
 
 > One diagram, the full picture. Glance at this before reading the chapters and again before interviews.

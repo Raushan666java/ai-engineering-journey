@@ -5,6 +5,7 @@ title: "Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and y
 sidebar_label: "Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature"
 sidebar_position: 17
 ---
+
 # Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature
 
 > "Your faith is not only in your temple. It is in your belly, your tongue, your work, your gifts. Show me those, and I will show you who you are."

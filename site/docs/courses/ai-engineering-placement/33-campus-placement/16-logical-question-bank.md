@@ -5,6 +5,8 @@ title: "Logical Reasoning — 100 Question Drill Bank (Any Company)"
 sidebar_label: "Logical Reasoning — 100 Question Drill Bank (Any Company)"
 sidebar_position: 377
 ---
+
+<!-- improved -->
 # Logical Reasoning — 100 Question Drill Bank (Any Company)
 
 > Rule: 45-75 seconds per question. Answers with explanations at the bottom.

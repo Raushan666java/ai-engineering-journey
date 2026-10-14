@@ -5,6 +5,7 @@ title: "Chapter 10: File Systems"
 sidebar_label: "Chapter 10: File Systems"
 sidebar_position: 10
 ---
+
 # Chapter 10: File Systems
 
 **<< [Virtual Memory](./09-virtual-memory.md)** | [**Next: File System Implementation**](./11-file-system-impl.md) >>

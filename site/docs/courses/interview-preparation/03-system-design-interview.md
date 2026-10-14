@@ -5,6 +5,7 @@ title: "Chapter 3: System Design Interview"
 sidebar_label: "Chapter 3: System Design Interview"
 sidebar_position: 3
 ---
+
 # Chapter 3: System Design Interview
 
 ## Learning Objectives

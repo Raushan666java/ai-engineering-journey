@@ -5,6 +5,7 @@ title: "Chapter 12: Reducibility and Advanced Undecidability"
 sidebar_label: "Chapter 12: Reducibility and Advanced Undecidability"
 sidebar_position: 12
 ---
+
 # Chapter 12: Reducibility and Advanced Undecidability
 
 > **Previous:** [Decidability](./11-decidability.md) | **Next:** [Time Complexity](./13-time-complexity.md)

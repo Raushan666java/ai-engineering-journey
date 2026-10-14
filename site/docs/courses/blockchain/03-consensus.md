@@ -5,6 +5,7 @@ title: "Chapter 3: Consensus Mechanisms"
 sidebar_label: "Chapter 3: Consensus Mechanisms"
 sidebar_position: 3
 ---
+
 # Chapter 3: Consensus Mechanisms
 
 > **Previous:** [Chapter 2: Cryptography for Blockchain](./02-cryptography.md) | **Next:** [Chapter 4: The Bitcoin Network](./04-bitcoin.md)

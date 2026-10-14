@@ -5,6 +5,7 @@ title: "Resume Building, LinkedIn Optimization & Aptitude Crash Course"
 sidebar_label: "Resume Building, LinkedIn Optimization & Aptitude Crash Course"
 sidebar_position: 1
 ---
+
 # Resume Building, LinkedIn Optimization & Aptitude Crash Course
 
 > **Previous:** None (First Chapter) | **Next:** [Chapter 2: DSA Coding Problem Bank](./02-dsa-problem-bank.md)

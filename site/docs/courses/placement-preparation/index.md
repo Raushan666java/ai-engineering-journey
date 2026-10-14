@@ -5,6 +5,7 @@ title: "Placement Preparation"
 sidebar_label: "Placement Preparation"
 sidebar_position: 8
 ---
+
 # Placement Preparation
 
 ## Course Overview

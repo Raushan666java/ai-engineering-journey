@@ -5,6 +5,7 @@ title: "Pipelining and Hazards"
 sidebar_label: "Pipelining and Hazards"
 sidebar_position: 4
 ---
+
 # Pipelining and Hazards
 
 ## Learning Objectives

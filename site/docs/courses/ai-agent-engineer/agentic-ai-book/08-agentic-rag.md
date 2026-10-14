@@ -5,6 +5,7 @@ title: "08-agentic-rag"
 sidebar_label: "08-agentic-rag"
 sidebar_position: 9
 ---
+
 ## Chapter 8: Agentic RAG
 
 ### 8.1 Naive RAG vs. Agentic RAG

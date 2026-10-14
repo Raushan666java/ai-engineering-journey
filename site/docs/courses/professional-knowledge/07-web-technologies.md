@@ -5,6 +5,7 @@ title: "Chapter 7: Web Technologies — Exam Quick Revision"
 sidebar_label: "Chapter 7: Web Technologies — Exam Quick Revision"
 sidebar_position: 7
 ---
+
 # Chapter 7: Web Technologies — Exam Quick Revision
 
 ## Learning Objectives

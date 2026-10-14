@@ -5,6 +5,7 @@ title: "Chapter 19: Blockchain, Smart Contract & DeFi Security"
 sidebar_label: "Chapter 19: Blockchain, Smart Contract & DeFi Security"
 sidebar_position: 18
 ---
+
 # Chapter 19: Blockchain, Smart Contract & DeFi Security
 
 > **Prereq:** Chapters 2 (Cryptography), 3 (Network Security); familiarity with basic blockchain concepts (blocks, transactions, wallets).

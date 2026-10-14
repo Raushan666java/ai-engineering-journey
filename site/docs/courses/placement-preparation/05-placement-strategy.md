@@ -5,6 +5,7 @@ title: "05 → Placement Season Strategy"
 sidebar_label: "05 → Placement Season Strategy"
 sidebar_position: 5
 ---
+
 # 05 → Placement Season Strategy
 
 > **Previous:** [04 — Company-Specific Preparation](04-company-specific.md)  

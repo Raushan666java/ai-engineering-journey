@@ -5,6 +5,7 @@ title: "Chapter 5: Properties of Regular Languages"
 sidebar_label: "Chapter 5: Properties of Regular Languages"
 sidebar_position: 5
 ---
+
 # Chapter 5: Properties of Regular Languages
 
 > **Previous:** [Regular Expressions](./04-regex.md) | **Next:** [Context-Free Grammars](./06-cfg.md)

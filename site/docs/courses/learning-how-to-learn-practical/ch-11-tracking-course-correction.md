@@ -5,6 +5,7 @@ title: "Chapter 11: Tracking & Course Correction"
 sidebar_label: "Chapter 11: Tracking & Course Correction"
 sidebar_position: 12
 ---
+
 # Chapter 11: Tracking & Course Correction
 
 > ⏱ **2 hours total** · 🎯 **Beginner** · 📋 **Recommended: Ch 1 (Learning OS)**

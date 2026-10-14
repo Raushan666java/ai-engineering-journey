@@ -5,6 +5,7 @@ title: "Spring GraphQL"
 sidebar_label: "Spring GraphQL"
 sidebar_position: 48
 ---
+
 # Spring GraphQL
 
 > **Previous:** [Spring AI](./47-spring-ai.md) | **Next:** [Spring Batch](./49-batch.md)

@@ -5,6 +5,7 @@ title: "Chapter 4: Linear-Time Sorting"
 sidebar_label: "Chapter 4: Linear-Time Sorting"
 sidebar_position: 4
 ---
+
 # Chapter 4: Linear-Time Sorting
 
 > **Prerequisites:** [Chapter 3: Comparison-Based Sorting](./03-sorting-nlogn.md) — The Ω(n log n) lower bound for comparison sorts | **Next:** [Chapter 5: Divide and Conquer](./05-divide-conquer.md) — Beyond sorting: applying divide-and-conquer broadly

@@ -5,6 +5,7 @@ title: "Chapter 14: TypeScript"
 sidebar_label: "Chapter 14: TypeScript"
 sidebar_position: 14
 ---
+
 # Chapter 14: TypeScript
 
 > **Previous:** [13-security](./13-security.md) | **Next:** [15-nextjs](./15-nextjs.md)

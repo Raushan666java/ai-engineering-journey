@@ -5,6 +5,7 @@ title: "Chapter 3: The Data Link Layer"
 sidebar_label: "Chapter 3: The Data Link Layer"
 sidebar_position: 3
 ---
+
 # Chapter 3: The Data Link Layer
 
 > **Prerequisites:** [Chapter 2: Physical Layer](./02-physical-layer.md) → Bits and transmission media | **Next:** [Chapter 4: Medium Access Control](./04-mac.md) → From framing to channel sharing
@@ -2804,7 +2805,7 @@ The crossover point is roughly when retransmission cost (N × frame size) exceed
 ### Q5: Why does Ethernet use CRC-32 instead of a checksum?
 
 
-Ethernet operates over noisy copper cables (originally coaxial). A weak detection code would cause undetected corruption → catastrophic for local area networking where frames get forwarded through bridges/switches. CRC-32 has a $1/2^{32}$ undetected-error probability, meaning a 1 Gbps link would see one undetected error roughly every 30-50 years. The Internet checksum's stronger correlation with data patterns makes it less suitable. Additionally, CRC-32 is trivially implemented in hardware (32 flip-flops + XOR gates) at wire speed.
+Ethernet operates over noisy copper cables (originally coaxial). A weak detection code would cause undetected corruption → catastrophic for local area networking where frames get forwarded through bridges/switches. CRC-32 has a $1/2^{32}$ undetected-error probability, meaning a 1 Gbps link would see one undetected error roughly every 30-50 years. The Internet checksum's stronger correlation with data patterns makes it less suitable. CRC-32 is trivially implemented in hardware (32 flip-flops + XOR gates) at wire speed.
 
 ### Q6: How many bits does a (7,4) Hamming code need to correct two errors?
 

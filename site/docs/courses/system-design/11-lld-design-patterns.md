@@ -5,6 +5,7 @@ title: "Chapter 11: Low-Level Design: Design Patterns"
 sidebar_label: "Chapter 11: Low-Level Design: Design Patterns"
 sidebar_position: 11
 ---
+
 # Chapter 11: Low-Level Design: Design Patterns
 > **Previous:** [10 Lld Solid Oop](./10-lld-solid-oop.md) | **Next:** [12 Lld Component Design](./12-lld-component-design.md)
 

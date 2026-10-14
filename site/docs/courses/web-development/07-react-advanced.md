@@ -5,6 +5,7 @@ title: "Chapter 7 → React Advanced"
 sidebar_label: "Chapter 7 → React Advanced"
 sidebar_position: 7
 ---
+
 # Chapter 7 → React Advanced
 
 > **Previous:** [06-react-basics](./06-react-basics.md) | **Next:** [08-node-express](./08-node-express.md)

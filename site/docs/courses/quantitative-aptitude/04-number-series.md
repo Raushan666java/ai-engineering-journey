@@ -5,6 +5,7 @@ title: "Chapter 4: Number Series — Missing Number Series, Wrong Number Series,
 sidebar_label: "Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification"
 sidebar_position: 4
 ---
+
 # Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification
 
 ## Learning Objectives

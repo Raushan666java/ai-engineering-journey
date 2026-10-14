@@ -5,6 +5,7 @@ title: "Chapter 18: Case Studies in Operating Systems"
 sidebar_label: "Chapter 18: Case Studies in Operating Systems"
 sidebar_position: 18
 ---
+
 # Chapter 18: Case Studies in Operating Systems
 
 **<< [Virtualization and Cloud Computing](./17-virtualization.md)**

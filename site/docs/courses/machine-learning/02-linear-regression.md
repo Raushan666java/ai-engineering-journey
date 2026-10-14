@@ -5,6 +5,7 @@ title: "Chapter 2: Linear Regression"
 sidebar_label: "Chapter 2: Linear Regression"
 sidebar_position: 2
 ---
+
 # Chapter 2: Linear Regression
 
 > **Previous:** [Introduction](./01-introduction.md) | **Next:** [Logistic Regression](./03-logistic-regression.md)

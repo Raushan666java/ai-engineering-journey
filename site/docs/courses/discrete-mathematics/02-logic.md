@@ -5,6 +5,7 @@ title: "Chapter 2: Logic"
 sidebar_label: "Chapter 2: Logic"
 sidebar_position: 2
 ---
+
 # Chapter 2: Logic
 
 > **Previous:** [Chapter 1: Sets](01-sets.md) | **Next:** [Chapter 3: Predicates and Quantifiers](03-predicates.md)

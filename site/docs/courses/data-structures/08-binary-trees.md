@@ -5,6 +5,7 @@ title: "Chapter 8: Binary Trees"
 sidebar_label: "Chapter 8: Binary Trees"
 sidebar_position: 8
 ---
+
 # Chapter 8: Binary Trees
 
 > **Previous:** [Chapter 7: Hash Tables](./07-hash-tables.md) | **Next:** [Binary Search Trees](./09-bst.md)

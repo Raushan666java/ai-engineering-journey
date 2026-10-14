@@ -5,6 +5,7 @@ title: "Visual Notes — Retrieval-Augmented Generation"
 sidebar_label: "Visual Notes"
 sidebar_position: 175
 ---
+
 # Visual Notes — Retrieval-Augmented Generation
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

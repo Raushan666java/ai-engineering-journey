@@ -5,6 +5,7 @@ title: "06-memory"
 sidebar_label: "06-memory"
 sidebar_position: 7
 ---
+
 ## Chapter 6: Memory — Short-Term, Long-Term, and Working Memory
 
 ### 6.1 Three Kinds of Memory, Three Different Jobs

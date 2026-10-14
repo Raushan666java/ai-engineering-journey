@@ -5,6 +5,7 @@ title: "Chapter 8: Forensics & Incident Response"
 sidebar_label: "Chapter 8: Forensics & Incident Response"
 sidebar_position: 7
 ---
+
 # Chapter 8: Forensics & Incident Response 
 
 > **Prereq:** Chapter 7 (Cloud & Mobile) → modern forensics must account for cloud and mobile evidence sources.

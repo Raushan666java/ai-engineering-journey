@@ -5,6 +5,7 @@ title: "Chapter 2: Problem-Solving by Search"
 sidebar_label: "Chapter 2: Problem-Solving by Search"
 sidebar_position: 3
 ---
+
 # Chapter 2: Problem-Solving by Search
 
 **Previous:** [Chapter 1: Introduction to AI](01-introduction.md) | **Next:** [Chapter 3: Informed Search and Heuristics](03-informed-search.md)

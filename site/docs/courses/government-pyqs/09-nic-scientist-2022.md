@@ -5,6 +5,7 @@ title: "NIC Scientist B 2022 — Solved Paper"
 sidebar_label: "NIC Scientist B 2022 — Solved Paper"
 sidebar_position: 9
 ---
+
 # NIC Scientist B 2022 — Solved Paper
 
 > National Informatics Centre (NIC) Scientist B recruitment exam 2022 — comprehensive solutions with TypeScript implementations, Mermaid diagrams, and strategic insights.

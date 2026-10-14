@@ -5,6 +5,7 @@ title: "Async Processing & Spring Events"
 sidebar_label: "Async Processing & Spring Events"
 sidebar_position: 34
 ---
+
 # Async Processing & Spring Events
 > **Previous:** [Security and Performance Testing](33-security-perf-test.md) | **Next:** [RabbitMQ](35-rabbitmq.md)
 

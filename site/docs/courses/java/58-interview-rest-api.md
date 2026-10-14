@@ -5,6 +5,7 @@ title: "REST API Interview Q&A"
 sidebar_label: "REST API Interview Q&A"
 sidebar_position: 58
 ---
+
 # REST API Interview Q&A
 
 > **Previous:** [Spring Framework Interview Q&amp;A](./57-interview-spring.md) | **Next:** [Databases Interview Q&amp;A](./59-interview-databases.md)

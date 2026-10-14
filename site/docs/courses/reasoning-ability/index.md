@@ -5,6 +5,7 @@ title: "Reasoning Ability — IBPS SO & Govt Exam Prep"
 sidebar_label: "Reasoning Ability — IBPS SO & Govt Exam Prep"
 sidebar_position: 7
 ---
+
 # Reasoning Ability — IBPS SO & Govt Exam Prep
 
 > **Exam Weightage:** 25 Questions in IBPS SO Prelims, critical time-management section

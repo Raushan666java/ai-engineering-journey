@@ -5,6 +5,7 @@ title: "Chapter 12: Secondary Storage"
 sidebar_label: "Chapter 12: Secondary Storage"
 sidebar_position: 12
 ---
+
 # Chapter 12: Secondary Storage
 
 **<< [File System Implementation](./11-file-system-impl.md)** | [**Next: I/O Systems**](./13-io-systems.md) >>

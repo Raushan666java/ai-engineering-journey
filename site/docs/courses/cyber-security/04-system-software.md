@@ -5,6 +5,7 @@ title: "Chapter 4: System & Software Security"
 sidebar_label: "Chapter 4: System & Software Security"
 sidebar_position: 4
 ---
+
 # Chapter 4: System & Software Security
 
 > **Prereq:** Chapter 3 (Network Security) → network perimeter controls limit what reaches the host; this chapter assumes that baseline.

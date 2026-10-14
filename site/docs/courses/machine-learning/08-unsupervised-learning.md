@@ -5,6 +5,7 @@ title: "Chapter 8: Unsupervised Learning"
 sidebar_label: "Chapter 8: Unsupervised Learning"
 sidebar_position: 8
 ---
+
 # Chapter 8: Unsupervised Learning
 
 > **Previous:** [Neural Networks](./07-neural-networks.md) | **Next:** [Dimensionality Reduction](./09-dimensionality-reduction.md)

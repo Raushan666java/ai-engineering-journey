@@ -5,6 +5,7 @@ title: "CS 310: Design and Analysis of Algorithms"
 sidebar_label: "CS 310: Design and Analysis of Algorithms"
 sidebar_position: 19
 ---
+
 # CS 310: Design and Analysis of Algorithms
 
 **Course Overview:** A rigorous treatment of algorithm design, analysis, and correctness. Students will master asymptotic analysis, fundamental data structures, classic algorithmic paradigms, and the theoretical foundations of computational complexity.

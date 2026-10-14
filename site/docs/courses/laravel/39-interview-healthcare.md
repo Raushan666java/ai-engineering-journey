@@ -5,6 +5,7 @@ title: "Chapter 39: Healthcare Interview Q&A"
 sidebar_label: "Chapter 39: Healthcare Interview Q&A"
 sidebar_position: 39
 ---
+
 # Chapter 39: Healthcare Interview Q&A
 
 > **Previous:** [Laravel General Interview Q&A](./38-interview-general.md) | **Next:** [Finance & FinTech Interview Q&A](./40-interview-finance.md)

@@ -5,6 +5,7 @@ title: "Chapter 10: Capstone — Build a Production-Grade Coding Agent"
 sidebar_label: "Chapter 10: Capstone — Build a Production-Grade Coding Agent"
 sidebar_position: 10
 ---
+
 # Chapter 10: Capstone — Build a Production-Grade Coding Agent
 
 ---

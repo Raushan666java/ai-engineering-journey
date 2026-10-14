@@ -5,6 +5,7 @@ title: "Chapter 6: Intermediate Code Generation"
 sidebar_label: "Chapter 6: Intermediate Code Generation"
 sidebar_position: 6
 ---
+
 # Chapter 6: Intermediate Code Generation
 
 ? Previous: [Chapter 5: Syntax-Directed Translation](05-sdt.md) | **Next:** [Chapter 7: Type Checking](07-type-checking.md)

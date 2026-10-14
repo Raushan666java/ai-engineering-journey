@@ -5,6 +5,7 @@ title: "Chapter 4: The Bitcoin Network"
 sidebar_label: "Chapter 4: The Bitcoin Network"
 sidebar_position: 4
 ---
+
 # Chapter 4: The Bitcoin Network
 
 > **Previous:** [Chapter 3: Consensus Mechanisms](./03-consensus.md) | **Next:** [Chapter 5: Ethereum and Smart Contracts](./05-ethereum.md)

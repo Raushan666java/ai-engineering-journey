@@ -5,6 +5,7 @@ title: "Chapter 1: Introduction to C"
 sidebar_label: "Chapter 1: Introduction to C"
 sidebar_position: 1
 ---
+
 # Chapter 1: Introduction to C
 
 > **Next:** [Variables and Data Types](./02-variables-datatypes.md)

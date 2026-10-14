@@ -5,6 +5,7 @@ title: "01 — Python for AI"
 sidebar_label: "01 — Python for AI"
 sidebar_position: 24
 ---
+
 # 01 — Python for AI
 
 > **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)

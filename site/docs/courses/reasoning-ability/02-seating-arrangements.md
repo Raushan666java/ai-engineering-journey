@@ -5,6 +5,7 @@ title: "Seating Arrangements — Circular, Linear, and Double Row"
 sidebar_label: "Seating Arrangements — Circular, Linear, and Double Row"
 sidebar_position: 2
 ---
+
 # Seating Arrangements — Circular, Linear, and Double Row
 
 ## Learning Objectives

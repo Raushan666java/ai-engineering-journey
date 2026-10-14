@@ -5,6 +5,7 @@ title: "Java Modules (JPMS) & Packaging"
 sidebar_label: "Java Modules (JPMS) & Packaging"
 sidebar_position: 4
 ---
+
 # Java Modules (JPMS) & Packaging
 
 > **Previous:** [Java NIO & Networking](./03-nio-networking.md) | **Next:** [Functional Programming in Practice](./05-functional-deep.md)

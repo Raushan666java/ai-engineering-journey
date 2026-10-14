@@ -5,6 +5,7 @@ title: "API Gateway (Spring Cloud Gateway)"
 sidebar_label: "API Gateway (Spring Cloud Gateway)"
 sidebar_position: 40
 ---
+
 # API Gateway (Spring Cloud Gateway)
 > **Previous:** [Service Discovery](39-discovery.md) | **Next:** [Resilience and Circuit Breakers](41-resilience.md)
 

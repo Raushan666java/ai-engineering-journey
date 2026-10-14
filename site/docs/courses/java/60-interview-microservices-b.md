@@ -5,6 +5,7 @@ title: "── Multi-stage Dockerfile for a Spring Boot microservice ──"
 sidebar_label: "── Multi-stage Dockerfile for a Spring Boot microservice ──"
 sidebar_position: 65
 ---
+
 ![Kubernetes Microservices Deployment - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices-b.png)
 
 ## Chapter at a Glance

@@ -5,6 +5,7 @@ title: "Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret"
 sidebar_label: "Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret"
 sidebar_position: 9
 ---
+
 # Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret
 
 > "The greatest secret is not a secret at all. It is the one truth so obvious that you have been overlooking it your whole life: everything is divine."

@@ -5,6 +5,7 @@ title: "Chapter 10: Vector Calculus & Applications"
 sidebar_label: "Chapter 10: Vector Calculus & Applications"
 sidebar_position: 10
 ---
+
 # Chapter 10: Vector Calculus & Applications
 
 > **Previous:** [Chapter 9: Optimization](09-optimization.md) | **Next:** None (final chapter)

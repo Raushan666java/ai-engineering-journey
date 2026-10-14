@@ -5,6 +5,7 @@ title: "Chapter 6: Sequential Circuits"
 sidebar_label: "Chapter 6: Sequential Circuits"
 sidebar_position: 6
 ---
+
 # Chapter 6: Sequential Circuits
 
 > **Prereq:** Chapter 5 (Combinational Circuits) ? sequential circuits add memory to combinational logic.

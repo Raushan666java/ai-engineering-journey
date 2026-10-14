@@ -5,6 +5,7 @@ title: "Chapter 4: Database Foundations: Replication and Indexing"
 sidebar_label: "Chapter 4: Database Foundations: Replication and Indexing"
 sidebar_position: 4
 ---
+
 # Chapter 4: Database Foundations: Replication and Indexing
 > **Previous:** [03 Caching](./03-caching.md) | **Next:** [05 Partitioning Sharding](./05-partitioning-sharding.md)
 

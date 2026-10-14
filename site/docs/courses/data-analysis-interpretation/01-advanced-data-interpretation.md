@@ -5,6 +5,7 @@ title: "Chapter 1: Advanced Data Interpretation"
 sidebar_label: "Chapter 1: Advanced Data Interpretation"
 sidebar_position: 1
 ---
+
 # Chapter 1: Advanced Data Interpretation
 
 ## Learning Objectives

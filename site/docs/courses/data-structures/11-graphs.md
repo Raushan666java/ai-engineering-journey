@@ -5,6 +5,7 @@ title: "Chapter 11: Graphs"
 sidebar_label: "Chapter 11: Graphs"
 sidebar_position: 11
 ---
+
 # Chapter 11: Graphs
 
 **Prev:** [Chapter 10: Heaps](10-heaps.md) | **Next:** [Chapter 12: Graph Traversals](12-graph-traversals.md)

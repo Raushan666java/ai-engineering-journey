@@ -5,6 +5,7 @@ title: "Chapter 3: Understanding Foundation Models"
 sidebar_label: "Chapter 3: Understanding Foundation Models"
 sidebar_position: 3
 ---
+
 # Chapter 3: Understanding Foundation Models
 
 ## Learning Objectives

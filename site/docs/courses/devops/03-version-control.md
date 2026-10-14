@@ -5,6 +5,7 @@ title: "Chapter 3: Version Control"
 sidebar_label: "Chapter 3: Version Control"
 sidebar_position: 5
 ---
+
 # Chapter 3: Version Control
 
 > **Prev:** [Advanced Git](./02-git.md)

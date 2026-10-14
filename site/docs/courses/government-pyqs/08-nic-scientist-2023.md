@@ -5,6 +5,7 @@ title: "NIC Scientist B 2023 — Solved Paper"
 sidebar_label: "NIC Scientist B 2023 — Solved Paper"
 sidebar_position: 8
 ---
+
 # NIC Scientist B 2023 — Solved Paper
 
 > National Informatics Centre (NIC) Scientist B recruitment exam 2023 — comprehensive solutions with TypeScript code, Mermaid diagrams, and topic analysis.

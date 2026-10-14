@@ -5,6 +5,7 @@ title: "Chapter 17: Performance Optimization"
 sidebar_label: "Chapter 17: Performance Optimization"
 sidebar_position: 17
 ---
+
 # Chapter 17: Performance Optimization
 
 > **Previous:** [16-testing-web](./16-testing-web.md) | **Next:** [18-fullstack-project](./18-fullstack-project.md)

@@ -5,6 +5,7 @@ title: "Chapter 5: Descriptive English"
 sidebar_label: "Chapter 5: Descriptive English"
 sidebar_position: 5
 ---
+
 # Chapter 5: Descriptive English
 
 ## Learning Objectives
@@ -385,12 +386,12 @@ Date: [Date]
 | Purpose | Phrases |
 |---------|---------|
 | To introduce a point | *Firstly, To begin with, In the first place* |
-| To add information | *Moreover, Furthermore, In addition, Additionally* |
+| To add information | *In addition, Additionally* |
 | To contrast | *However, On the other hand, Nevertheless, Conversely* |
 | To give examples | *For instance, For example, Such as, In particular* |
 | To show cause | *Because, Since, As a result of, Owing to* |
 | To show effect | *Therefore, Consequently, Hence, Thus, As a result* |
-| To conclude | *In conclusion, To summarise, In a nutshell, Overall* |
+| To conclude | *To summarise, In a nutshell, Overall* |
 
 ---
 
@@ -540,7 +541,7 @@ Cyber threats have evolved from lone hackers to sophisticated organised crime sy
 The RBI has mandated a comprehensive Cyber Security Framework requiring banks to conduct quarterly vulnerability assessments, annual penetration testing, and maintain a Cyber Crisis Management Plan (CCMP). AI-powered Security Information and Event Management (SIEM) systems have become standard, and biometric authentication has replaced passwords for high-value transactions.
 
 **Body Paragraph 3 (Remaining Challenges):**
-The acute shortage of skilled cybersecurity professionals — over 300,000 unfilled positions — remains a significant vulnerability. Additionally, the rapidly evolving nature of cyber threats requires continuous investment in security infrastructure. A collaborative approach involving banks, regulators, CERT-In, and law enforcement agencies is essential.
+The acute shortage of skilled cybersecurity professionals — over 300,000 unfilled positions — remains a significant vulnerability. the rapidly evolving nature of cyber threats requires continuous investment in security infrastructure. A collaborative approach involving banks, regulators, CERT-In, and law enforcement agencies is essential.
 
 **Conclusion:**
 Cybersecurity is not a one-time investment but an ongoing process. As the banking sector embraces emerging technologies like AI and blockchain, a proactive security posture — combining technology, talent, and regulation — will be crucial to safeguarding India's digital financial ecosystem.
@@ -947,7 +948,7 @@ class EssayAnalyzer {
       suggestions.push("Add a concluding paragraph that summarises your main points.");
     }
     if (analysis.transitionWordsUsed.length < 2) {
-      suggestions.push("Use transition words (However, Moreover, Therefore) to improve flow.");
+      suggestions.push("Use transition words (However, Therefore) to improve flow.");
     }
     if (analysis.wordCount < 120) {
       suggestions.push("Your essay is too short. Aim for 150-200 words for Mains exams.");
@@ -989,7 +990,7 @@ Over 50 crore Jan Dhan accounts have been opened, enabling direct benefit transf
 
 However, significant challenges remain. The digital divide between urban and rural areas persists, and financial literacy levels remain low.
 
-In conclusion, financial inclusion requires sustained policy focus and technological innovation to achieve universal access.`;
+financial inclusion requires sustained policy focus and technological innovation to achieve universal access.`;
 
 const analysis = EssayAnalyzer.analyze(essay);
 console.log("Word Count:", analysis.wordCount);

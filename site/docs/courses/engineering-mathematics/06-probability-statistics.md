@@ -5,6 +5,7 @@ title: "Chapter 6: Probability & Statistics"
 sidebar_label: "Chapter 6: Probability & Statistics"
 sidebar_position: 6
 ---
+
 # Chapter 6: Probability & Statistics
 
 > **Previous:** [Chapter 5: Complex Analysis](05-complex-analysis.md) | **Next:** [Chapter 7: Numerical Methods](07-numerical-methods.md)

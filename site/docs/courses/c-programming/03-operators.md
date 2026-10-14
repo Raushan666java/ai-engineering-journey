@@ -5,6 +5,7 @@ title: "Chapter 3: Operators in C --- In-Depth Reference"
 sidebar_label: "Chapter 3: Operators in C --- In-Depth Reference"
 sidebar_position: 3
 ---
+
 # Chapter 3: Operators in C --- In-Depth Reference
 
 > **Previous:** [Introduction to C](./01-introduction.md) | **Next:** [Control Flow](./04-control-flow.md)

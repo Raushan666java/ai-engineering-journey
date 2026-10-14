@@ -5,6 +5,7 @@ title: "Chapter 1: Introduction to Artificial Intelligence"
 sidebar_label: "Chapter 1: Introduction to Artificial Intelligence"
 sidebar_position: 1
 ---
+
 # Chapter 1: Introduction to Artificial Intelligence
 
 **Previous:** — | **Next:** [Chapter 2: Intelligent Agents](02-agents.md)

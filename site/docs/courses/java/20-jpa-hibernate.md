@@ -5,6 +5,7 @@ title: "JPA & Hibernate Deep Dive"
 sidebar_label: "JPA & Hibernate Deep Dive"
 sidebar_position: 20
 ---
+
 > **Previous:** [JDBC/JOOQ](./19-jdbc-jooq.md) | **Next:** [Spring Data JPA](./21-spring-data-jpa.md)
 
 # JPA & Hibernate Deep Dive

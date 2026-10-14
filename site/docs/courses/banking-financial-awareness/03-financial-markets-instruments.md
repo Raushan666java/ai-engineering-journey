@@ -5,6 +5,7 @@ title: "Chapter 3: Financial Markets & Instruments"
 sidebar_label: "Chapter 3: Financial Markets & Instruments"
 sidebar_position: 3
 ---
+
 # Chapter 3: Financial Markets & Instruments
 
 ## Learning Objectives

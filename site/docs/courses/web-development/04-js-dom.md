@@ -5,6 +5,7 @@ title: "Chapter 4 → JavaScript and the DOM"
 sidebar_label: "Chapter 4 → JavaScript and the DOM"
 sidebar_position: 4
 ---
+
 # Chapter 4 → JavaScript and the DOM
 
 > **Previous:** [03-js-basics](./03-js-basics.md) | **Next:** [05-es6-plus](./05-es6-plus.md)
@@ -459,7 +460,7 @@ Usage in HTML:
 const resizeObserver = new ResizeObserver((entries) => {
   for (const entry of entries) {
     const { width, height } = entry.contentBoxSize[0];
-    console.log(`Element is now ${width}px Ã— ${height}px`);
+    console.log(`Element is now ${width}px × ${height}px`);
 
     // Adjust layout or behavior based on size
     entry.target.classList.toggle('compact', width < 400);

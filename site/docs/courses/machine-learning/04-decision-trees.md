@@ -5,6 +5,7 @@ title: "Chapter 4: Decision Trees"
 sidebar_label: "Chapter 4: Decision Trees"
 sidebar_position: 4
 ---
+
 # Chapter 4: Decision Trees
 
 > **Previous:** [Logistic Regression](./03-logistic-regression.md) | **Next:** [Ensemble Methods](./05-ensemble-methods.md)

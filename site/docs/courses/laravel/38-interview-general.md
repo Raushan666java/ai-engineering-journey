@@ -5,6 +5,7 @@ title: "Chapter 38: Laravel General Interview Q&A"
 sidebar_label: "Chapter 38: Laravel General Interview Q&A"
 sidebar_position: 38
 ---
+
 # Chapter 38: Laravel General Interview Q&A
 
 > **Previous:** [Enterprise Capstone — Multi-Agent Platform](./37-enterprise-capstone.md) | **Next:** [Healthcare Interview Q&A](./39-interview-healthcare.md)
@@ -1233,11 +1234,11 @@ class ApproveRefundJob implements ShouldQueue
 **Answer:** Scale horizontally by adding more application servers behind a load balancer. Use Redis for sessions, cache, and queues. Implement read replicas for database reads and distribute writes to the primary. Use Octane (Swoole/RoadRunner) for persistent application memory. Offload static assets to a CDN. Use Laravel Vapor or Cloud for serverless auto-scaling. Profile bottlenecks with Telescope and Pulse.
 
 ```
-Load Balancer → App Servers (Ã—N behind ALB)
+Load Balancer → App Servers (×N behind ALB)
     ├── Redis Cluster (sessions, cache, queues, locks)
     ├── PostgreSQL Primary + Read Replicas
     ├── CDN (assets, media)
-    ├── Horizon (queue workers Ã—M)
+    ├── Horizon (queue workers ×M)
     └── Reverb (WebSocket cluster)
 ```
 
@@ -1320,7 +1321,7 @@ class OrderService
 
 ```
 ┌── US-East ──┐     ┌── EU-West ──┐
-│ App Ã—N       │     │ App Ã—N       │
+│ App ×N       │     │ App ×N       │
 │ Redis Replica│     │ Redis Replica│
 │ Queue Workers│     │ Queue Workers│
 └──────┬───────┘     └──────┬───────┘

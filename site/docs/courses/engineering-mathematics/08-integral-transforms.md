@@ -5,6 +5,7 @@ title: "Chapter 8: Integral Transforms"
 sidebar_label: "Chapter 8: Integral Transforms"
 sidebar_position: 8
 ---
+
 # Chapter 8: Integral Transforms
 
 > **Previous:** [Chapter 7: Numerical Methods](07-numerical-methods.md) | **Next:** [Chapter 9: Optimization](09-optimization.md)

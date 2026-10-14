@@ -5,6 +5,7 @@ title: "Chapter 03: Linked Lists"
 sidebar_label: "Chapter 03: Linked Lists"
 sidebar_position: 3
 ---
+
 # Chapter 03: Linked Lists
 
 > Linked lists test your understanding of pointer manipulation, memory management, and recursive thinking. They are deceptively simple but require careful handling of edge cases.

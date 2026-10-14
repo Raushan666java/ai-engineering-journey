@@ -5,6 +5,7 @@ title: "Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools"
 sidebar_label: "Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools"
 sidebar_position: 13
 ---
+
 # Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools
 > **Previous:** [Laravel AI SDK -- Agents, Prompting & Structured Output](./12-ai-sdk-agents) | **Next:** [Laravel AI SDK -- Images, Audio, Transcriptions & Embeddings](./14-ai-sdk-media)
 

@@ -5,6 +5,7 @@ title: "Chapter 13: Advanced Red Team Operations & C2 Frameworks"
 sidebar_label: "Chapter 13: Advanced Red Team Operations & C2 Frameworks"
 sidebar_position: 12
 ---
+
 # Chapter 13: Advanced Red Team Operations & C2 Frameworks
 
 > **Prereq:** Chapters 10 (Pentesting), 11 (SOC Threat Hunting), 12 (Malware Analysis)

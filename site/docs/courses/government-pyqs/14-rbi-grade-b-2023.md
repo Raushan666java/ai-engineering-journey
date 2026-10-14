@@ -5,6 +5,7 @@ title: "RBI Grade B Phase 1 2023 — Solved Paper"
 sidebar_label: "RBI Grade B Phase 1 2023 — Solved Paper"
 sidebar_position: 14
 ---
+
 # RBI Grade B Phase 1 2023 — Solved Paper
 
 > Reserve Bank of India Grade B Officer Phase 1 Exam 2023 — comprehensive solved paper with current affairs, reasoning diagrams, and quant analysis.

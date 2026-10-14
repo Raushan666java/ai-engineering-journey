@@ -5,6 +5,7 @@ title: "Chapter 1: Introduction to Laravel 13"
 sidebar_label: "Chapter 1: Introduction to Laravel 13"
 sidebar_position: 1
 ---
+
 # Chapter 1: Introduction to Laravel 13
 
 **Next:** [Architecture, Routing, Middleware & Controllers](./02-architecture-routing.md)

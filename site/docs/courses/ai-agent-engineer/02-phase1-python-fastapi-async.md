@@ -5,6 +5,7 @@ title: "Phase 1 — Python + FastAPI + AsyncIO"
 sidebar_label: "Phase 1 — Python + FastAPI + AsyncIO"
 sidebar_position: 3
 ---
+
 # Phase 1 — Python + FastAPI + AsyncIO
 
 **Duration:** Weeks 2-3, ~30 hours

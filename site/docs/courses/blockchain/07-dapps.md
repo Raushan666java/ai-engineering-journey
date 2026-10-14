@@ -5,6 +5,7 @@ title: "Chapter 7: Decentralized Applications (dApps)"
 sidebar_label: "Chapter 7: Decentralized Applications (dApps)"
 sidebar_position: 7
 ---
+
 # Chapter 7: Decentralized Applications (dApps)
 
 > **Previous:** [Chapter 6: Smart Contract Development](./06-solidity.md) | **Next:** [Chapter 8: Decentralized Finance (DeFi)](./08-defi.md)

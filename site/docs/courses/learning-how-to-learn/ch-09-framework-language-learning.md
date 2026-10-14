@@ -5,6 +5,7 @@ title: "Chapter 9: Framework & Language Learning"
 sidebar_label: "Chapter 9: Framework & Language Learning"
 sidebar_position: 10
 ---
+
 # Chapter 9: Framework & Language Learning
 
 > **Prerequisites:** [Chapter 8: GATE & Theory Exam Prep](./ch-08-gate-theory-prep.md) � Strategies for mastering theory-heavy material.

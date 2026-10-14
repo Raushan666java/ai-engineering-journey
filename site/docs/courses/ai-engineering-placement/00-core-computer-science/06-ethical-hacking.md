@@ -5,6 +5,8 @@ title: "Ethical Hacking & Security Case Studies (India & Global)"
 sidebar_label: "Ethical Hacking & Security Case Studies (India & Global)"
 sidebar_position: 7
 ---
+
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Ethical Hacking & Security Case Studies (India & Global)
 

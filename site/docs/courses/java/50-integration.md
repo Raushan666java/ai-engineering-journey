@@ -5,6 +5,7 @@ title: "Spring Integration"
 sidebar_label: "Spring Integration"
 sidebar_position: 50
 ---
+
 # Spring Integration
 
 > **Previous:** [Spring Batch](./49-batch.md) | **Next:** [Spring Modulith](./51-modulith.md)

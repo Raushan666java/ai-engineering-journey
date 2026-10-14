@@ -5,6 +5,7 @@ title: "Banking & Financial Awareness"
 sidebar_label: "Banking & Financial Awareness"
 sidebar_position: 6
 ---
+
 # Banking & Financial Awareness
 
 > A comprehensive course covering the Indian banking system, monetary policy, financial markets, government schemes, budget, and banking regulations — designed for IBPS SO, SBI PO, RBI Grade B, and other banking exams.

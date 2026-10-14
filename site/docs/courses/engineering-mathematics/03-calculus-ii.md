@@ -5,6 +5,7 @@ title: "Chapter 3: Multivariable Calculus"
 sidebar_label: "Chapter 3: Multivariable Calculus"
 sidebar_position: 3
 ---
+
 # Chapter 3: Multivariable Calculus
 
 > **Previous:** [Chapter 2: Single Variable Calculus](02-calculus-i.md) | **Next:** [Chapter 4: Differential Equations](04-differential-equations.md)

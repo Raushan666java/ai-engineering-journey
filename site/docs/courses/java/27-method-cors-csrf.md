@@ -5,6 +5,7 @@ title: "Method Security, CORS & CSRF"
 sidebar_label: "Method Security, CORS & CSRF"
 sidebar_position: 27
 ---
+
 # Method Security, CORS & CSRF
 > **Previous:** [JWT, OAuth2 & OIDC](26-jwt-oauth2.md) | **Next:** [Keycloak](28-keycloak.md)
 

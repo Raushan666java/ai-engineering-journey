@@ -5,6 +5,7 @@ title: "Chapter 4: Proof Techniques"
 sidebar_label: "Chapter 4: Proof Techniques"
 sidebar_position: 4
 ---
+
 # Chapter 4: Proof Techniques
 
 > **Previous:** [Chapter 3: Predicates and Quantifiers](03-predicates.md) | **Next:** [Chapter 5: Combinatorics](05-combinatorics.md)

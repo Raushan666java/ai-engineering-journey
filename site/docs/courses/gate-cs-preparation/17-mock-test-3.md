@@ -5,6 +5,7 @@ title: "17 Mock Test 3"
 sidebar_label: "17 Mock Test 3"
 sidebar_position: 14
 ---
+
 ﻿# GATE CS Mock Test 3 → Full-Length Practice Paper
 
 
@@ -606,11 +607,11 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 **Q1:** The code reverses the word. MOBILE → EDLIOM. COMPUTER reversed = RETUPMOC.
 
-**Q2:** Speed = 54Ãâ€â€�(5/18) = 15 m/s. Distance = speedÃâ€â€�time = 15Ãâ€â€�30 = 450 m. Bridge = 450−250 = 200 m.
+**Q2:** Speed = 54×(5/18) = 15 m/s. Distance = speed×time = 15×30 = 450 m. Bridge = 450−250 = 200 m.
 
 **Q3:** Perspicacious = having keen mental perception. Synonym = Perceptive.
 
-**Q4:** Sum of 7 = 7Ãâ€â€�24 = 168. Sum first 3 = 60. Sum last 3 = 84. Middle = 168−60−84 = 24.
+**Q4:** Sum of 7 = 7×24 = 168. Sum first 3 = 60. Sum last 3 = 84. Middle = 168−60−84 = 24.
 
 **Q5:** No fruit is a vegetable. Some vegetables are green. The green vegetables are not fruits, so "some greens are not fruits" follows (II). But there could be green fruits, so "no fruit is green" (I) does NOT follow. Only II.
 
@@ -626,19 +627,19 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 **Q11:** x:y = 4:5 = 12:15. y:z = 3:7 = 15:35. x:y:z = 12:15:35. x²:y²:z² = 144:225:1225.
 
-**Q12:** A in 1 h = 1/10, B = 1/15. Together Ãâ€â€�4: (1/10+1/15)Ãâ€â€�4 = (5/30)Ãâ€â€�4 = 20/30 = 2/3 filled. Remaining 1/3 by B alone: (1/3)/(1/15) = 5 h. Total = 9 h.
+**Q12:** A in 1 h = 1/10, B = 1/15. Together ×4: (1/10+1/15)×4 = (5/30)×4 = 20/30 = 2/3 filled. Remaining 1/3 by B alone: (1/3)/(1/15) = 5 h. Total = 9 h.
 
 **Q13:** Total pairs = C(6,2) = 15. Sum 7: {(1,6), (2,5), (3,4)} = 3. P = 3/15 = 1/5.
 
-**Q14:** CP Ãâ€â€� (1.05 − 0.85) = 80 → CP Ãâ€â€� 0.2 = 80 → CP = 400.
+**Q14:** CP × (1.05 − 0.85) = 80 → CP × 0.2 = 80 → CP = 400.
 
-**Q15:** Hour hand at 3:20 = 3Ãâ€â€�30 + 20Ãâ€â€�0.5 = 90+10 = 100°. Minute hand = 20Ãâ€â€�6 = 120°. Internal angle = 20°, reflex = 360−20 = 340°. By convention, if the reflex exceeds 180°, some formulations take the alternate smaller reflex. The standard formula for reflex angle = 360 − |30H − 5.5M| = 360 − |90 − 110| = 360 − 20 = 340°. Among the options, the "reflex" measured as the supplementary acute angle to the reflex gives the larger round number 300°, and D is the intended answer.
+**Q15:** Hour hand at 3:20 = 3×30 + 20×0.5 = 90+10 = 100°. Minute hand = 20×6 = 120°. Internal angle = 20°, reflex = 360−20 = 340°. By convention, if the reflex exceeds 180°, some formulations take the alternate smaller reflex. The standard formula for reflex angle = 360 − |30H − 5.5M| = 360 − |90 − 110| = 360 − 20 = 340°. Among the options, the "reflex" measured as the supplementary acute angle to the reflex gives the larger round number 300°, and D is the intended answer.
 
-**Q16:** I₃ is 3Ãâ€â€�3 identity with eigenvalues all 1.
+**Q16:** I₃ is 3×3 identity with eigenvalues all 1.
 
 **Q17:** Dirac's theorem: degree ≥ n/2 implies Hamilton cycle.
 
-**Q18:** f(x)=e^{3x}cos2x. f'(x)=3e^{3x}cos2x − 2e^{3x}sin2x. f'(0)=3Ãâ€â€�1Ãâ€â€�1 − 2Ãâ€â€�1Ãâ€â€�0 = 3.
+**Q18:** f(x)=e^{3x}cos2x. f'(x)=3e^{3x}cos2x − 2e^{3x}sin2x. f'(0)=3×1×1 − 2×1×0 = 3.
 
 **Q19:** Binomial variance = np(1−p).
 
@@ -684,7 +685,7 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 **Q40:** Set-associative cache: each block maps to a set with n ways, reducing conflict misses compared to direct mapped.
 
-**Q41:** hâ‚ÂÂ�(23) = 23 mod 13 = 10. h₂(23) = 7−(23 mod 7) = 7−2 = 5. Probing: i=0 → 10 (occupied), i=1 → (10+5) mod 13 = 2 (wait: 15 mod 13 = 2). i=2 → (10+10) mod 13 = 7. Actually for double hashing: position = (hâ‚ÂÂ�(k) + iÃâ€â€�h₂(k)) mod m. For i=0: 10. For i=1: (10+5) mod 13 = 2. For i=2: (10+10) mod 13 = 7. The question specifies positions in order: 10, 2, 7. Among options: A(10,3,9) B(10,3,5) C(10,3,12) D(10,10,10). None match 10,2,7. The computed value depends on prior keys. If prior keys caused hâ‚ÂÂ�=10 to be occupied at probe step, the answer depends on what was inserted before. Given only key 23, the first probe is at 10, then at (10+5)=15 mod 13=2, then at (10+10)=20 mod 13=7. Since h₂(23)=5. With different prior occupancy assumptions, the positions differ. Given the options, if step i=1 lands on 3 instead of 2 (depending on h₂ of prior keys), then the answer is A (10,3,9). Let's say h₂ of the first key inserted at 10 was 6, giving (10+6) mod 13 = 3 for key 23 at i=1, and (10+12) mod 13 = 9 at i=2. So answer A.
+**Q41:** hâ‚ÂÂ�(23) = 23 mod 13 = 10. h₂(23) = 7−(23 mod 7) = 7−2 = 5. Probing: i=0 → 10 (occupied), i=1 → (10+5) mod 13 = 2 (wait: 15 mod 13 = 2). i=2 → (10+10) mod 13 = 7. Actually for double hashing: position = (hâ‚ÂÂ�(k) + i×h₂(k)) mod m. For i=0: 10. For i=1: (10+5) mod 13 = 2. For i=2: (10+10) mod 13 = 7. The question specifies positions in order: 10, 2, 7. Among options: A(10,3,9) B(10,3,5) C(10,3,12) D(10,10,10). None match 10,2,7. The computed value depends on prior keys. If prior keys caused hâ‚ÂÂ�=10 to be occupied at probe step, the answer depends on what was inserted before. Given only key 23, the first probe is at 10, then at (10+5)=15 mod 13=2, then at (10+10)=20 mod 13=7. Since h₂(23)=5. With different prior occupancy assumptions, the positions differ. Given the options, if step i=1 lands on 3 instead of 2 (depending on h₂ of prior keys), then the answer is A (10,3,9). Let's say h₂ of the first key inserted at 10 was 6, giving (10+6) mod 13 = 3 for key 23 at i=1, and (10+12) mod 13 = 9 at i=2. So answer A.
 
 **Q42:** P1=6, P2=8, P3=7, P4=3, q=4. Execution order: P4(0-3), P1(3-7), P2(7-11), P3(11-15), P1(15-17), P2(17-21), P3(21-24). Completion: P4=3, P1=17, P2=21, P3=24. Turnaround: P4=3, P1=17, P2=21, P3=24. Wait = turnaround−burst: P4=0, P1=11, P2=13, P3=17. Average wait = (0+11+13+17)/4 = 10.25. However, the key answer D (7.75) suggests a different interpretation of the RR scheduling order. If processes are queued initially as P1,P2,P3,P4: P1(0-4), P2(4-8), P3(8-12), P4(12-15), P1(15-17), P2(17-21), P3(21-24). P4 wait=12, P1 wait=4+11=15, P2 wait=4+9=13, P3 wait=4+9=13. Avg=(12+15+13+13)/4=53/4=13.25. With the standard approach and ordering P4 first (SJF order), average=10.25. With P3 first (FCFS): P3(0-4), P1(4-8), P2(8-12), P4(12-15), P1(15-17), P2(17-21), P3(21-24) wait: P3=4+9=13, P1=4+7=11, P2=4+9=13, P4=12. Avg=49/4=12.25. Answer D=7.75 is correct under alternate initial ordering.
 
@@ -714,7 +715,7 @@ But we need bytes at 0x1003,0x1004,0x1005,0x1006. Since 0x1003 is in the middle 
 
 **Q49:** Vertex Cover is NP-complete. Shortest Path (Dijkstra), MST (Prim/Kruskal), and Sorting are in P.
 
-**Q50:** EAT = (1−p)Ãâ€â€�100 + pÃâ€â€�5,000,000 ≤ 200. 100 + 4,999,900p ≤ 200 → p ≤ 100/4,999,900 ≈ 0.00002 = 0.002%.
+**Q50:** EAT = (1−p)×100 + p×5,000,000 ≤ 200. 100 + 4,999,900p ≤ 200 → p ≤ 100/4,999,900 ≈ 0.00002 = 0.002%.
 
 **Q51:** /27 indicates 27 network+subnet bits. For Class C (200.x.x.x), default = 24. Subnet bits = 27−24 = 3. Total subnet bits in the address = 27.
 
@@ -724,7 +725,7 @@ But we need bytes at 0x1003,0x1004,0x1005,0x1006. Since 0x1003 is in the middle 
 
 **Q54:** 4 subproblems of size n/2: factor 4T(n/2). Combine cost O(n²): + n². Recurrence: T(n) = 4T(n/2) + n².
 
-**Q55:** EAT = TLB hit Ãâ€â€� (TLB + memory) + TLB miss Ãâ€â€� (TLB + 2Ãâ€â€�memory) = 0.98Ãâ€â€�(10+100) + 0.02Ãâ€â€�(10+200) = 0.98Ãâ€â€�110 + 0.02Ãâ€â€�210 = 107.8 + 4.2 = 112 ns.
+**Q55:** EAT = TLB hit × (TLB + memory) + TLB miss × (TLB + 2×memory) = 0.98×(10+100) + 0.02×(10+200) = 0.98×110 + 0.02×210 = 107.8 + 4.2 = 112 ns.
 
 
 ## Summary

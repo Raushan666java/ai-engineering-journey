@@ -5,6 +5,7 @@ title: "Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home"
 sidebar_label: "Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home"
 sidebar_position: 12
 ---
+
 # Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home
 
 > "You do not need to become perfect before you love. Love is not the reward at the end of the road — love is the road itself."

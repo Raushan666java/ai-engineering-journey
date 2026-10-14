@@ -5,6 +5,7 @@ title: "Visual Notes — One Request, the Full Ride"
 sidebar_label: "Visual Notes"
 sidebar_position: 111
 ---
+
 # Visual Notes — One Request, the Full Ride
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

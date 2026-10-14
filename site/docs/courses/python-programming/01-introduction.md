@@ -5,6 +5,7 @@ title: "Chapter 1: Introduction to Python"
 sidebar_label: "Chapter 1: Introduction to Python"
 sidebar_position: 1
 ---
+
 # Chapter 1: Introduction to Python
 
 ## Learning Objectives

@@ -5,6 +5,7 @@ title: "Chapter 19: Laravel Application Architecture Patterns"
 sidebar_label: "Chapter 19: Laravel Application Architecture Patterns"
 sidebar_position: 19
 ---
+
 # Chapter 19: Laravel Application Architecture Patterns
 
 > **Previous:** [Automation Patterns](./18-automation-patterns.md) | **Next:** [Scaling Laravel](./20-scaling-laravel.md)

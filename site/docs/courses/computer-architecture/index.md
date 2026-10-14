@@ -5,6 +5,7 @@ title: "Computer Organisation & Architecture — IBPS SO & Govt Exam Prep"
 sidebar_label: "Computer Organisation & Architecture — IBPS SO & Govt Exam Prep"
 sidebar_position: 6
 ---
+
 # Computer Organisation & Architecture — IBPS SO & Govt Exam Prep
 
 > **Exam Weightage:** 3-5 Qs in IBPS SO Mains PK, 8-10% in GATE CS

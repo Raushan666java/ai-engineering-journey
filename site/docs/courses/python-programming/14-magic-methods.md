@@ -5,6 +5,7 @@ title: "Chapter 14: Magic Methods"
 sidebar_label: "Chapter 14: Magic Methods"
 sidebar_position: 14
 ---
+
 # Chapter 14: Magic Methods
 
 

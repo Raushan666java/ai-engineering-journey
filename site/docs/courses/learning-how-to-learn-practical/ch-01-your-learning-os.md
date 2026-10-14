@@ -5,6 +5,7 @@ title: "Chapter 1: Your Learning OS"
 sidebar_label: "Chapter 1: Your Learning OS"
 sidebar_position: 2
 ---
+
 # Chapter 1: Your Learning OS
 
 > ⏱ **2 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**

@@ -5,6 +5,7 @@ title: "REST API Development with Spring MVC"
 sidebar_label: "REST API Development with Spring MVC"
 sidebar_position: 15
 ---
+
 # REST API Development with Spring MVC
 
 > **Previous:** [Logging, Error Handling & i18n](./14-logging-error-i18n.md) | **Next:** [Request Validation & Error Handling](./16-validation.md)

@@ -5,6 +5,7 @@ title: "Chapter 17: Distributed Database Systems"
 sidebar_label: "Chapter 17: Distributed Database Systems"
 sidebar_position: 17
 ---
+
 # Chapter 17: Distributed Database Systems
 
 > **Prev:** [Chapter 16 → Redis](16-redis.md) | **Next:** [Chapter 18 → Security](18-security.md)

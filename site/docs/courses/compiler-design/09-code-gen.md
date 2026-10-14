@@ -5,6 +5,7 @@ title: "Chapter 9: Code Generation"
 sidebar_label: "Chapter 9: Code Generation"
 sidebar_position: 9
 ---
+
 # Chapter 9: Code Generation
 
 ? Previous: [Chapter 8: Runtime Environment](08-runtime-env.md) | **Next:** [Chapter 10: Code Optimization](10-optimization.md)

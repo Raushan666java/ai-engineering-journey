@@ -5,6 +5,7 @@ title: "Chapter 14: Number Theory"
 sidebar_label: "Chapter 14: Number Theory"
 sidebar_position: 14
 ---
+
 # Chapter 14: Number Theory
 
 > **Previous:** [Chapter 13: Probability](./13-probability.md) | **Next:** [Chapter 15: Applications](./15-applications.md)

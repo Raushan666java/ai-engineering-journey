@@ -5,6 +5,7 @@ title: "Chapter 6: Smart Contract Development"
 sidebar_label: "Chapter 6: Smart Contract Development"
 sidebar_position: 6
 ---
+
 # Chapter 6: Smart Contract Development
 
 > **Previous:** [Chapter 5: Ethereum and Smart Contracts](./05-ethereum.md) | **Next:** [Chapter 7: Decentralized Applications (dApps)](./07-dapps.md)

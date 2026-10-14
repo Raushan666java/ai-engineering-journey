@@ -5,6 +5,7 @@ title: "Generics, Annotations & Reflection"
 sidebar_label: "Generics, Annotations & Reflection"
 sidebar_position: 80
 ---
+
 # Generics, Annotations & Reflection
 
 Java's type system extends far beyond the simple class-and-interface hierarchy. Three powerful mechanisms→**generics**, **annotations**, and **reflection**→give developers the ability to write type-safe, self-describing, and introspectable code. Generics enable compile-time type checking for collections and algorithms. Annotations attach metadata to code elements without changing their behavior. Reflection opens the runtime structure of classes for frameworks and tools. Together, they form the foundation of every major Java framework, including Spring Boot, JPA/Hibernate, and Jackson.

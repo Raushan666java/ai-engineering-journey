@@ -5,6 +5,7 @@ title: "03-prompting-for-agents"
 sidebar_label: "03-prompting-for-agents"
 sidebar_position: 4
 ---
+
 ## Chapter 3: Prompting for Agents vs. Prompting for Chat
 
 ### 3.1 The System Prompt Is Now an Operating Manual

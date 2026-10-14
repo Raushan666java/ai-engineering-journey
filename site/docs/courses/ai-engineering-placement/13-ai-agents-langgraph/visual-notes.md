@@ -5,6 +5,7 @@ title: "Visual Notes — The Agent Loop"
 sidebar_label: "Visual Notes"
 sidebar_position: 187
 ---
+
 # Visual Notes — The Agent Loop
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

@@ -5,6 +5,7 @@ title: "Chapter 12: Smart Pointers"
 sidebar_label: "Chapter 12: Smart Pointers"
 sidebar_position: 12
 ---
+
 # Chapter 12: Smart Pointers
 
 > **Previous:** [11-file-io](./11-file-io.md) | **Next:** [13-move-semantics](./13-move-semantics.md)

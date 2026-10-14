@@ -5,6 +5,7 @@ title: "Distributed Configuration"
 sidebar_label: "Distributed Configuration"
 sidebar_position: 42
 ---
+
 # Distributed Configuration
 
 > **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)

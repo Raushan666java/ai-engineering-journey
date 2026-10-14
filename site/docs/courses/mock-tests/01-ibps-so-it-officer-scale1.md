@@ -5,6 +5,7 @@ title: "IBPS SO IT Officer Scale 1 — Full-Length Mock Test"
 sidebar_label: "IBPS SO IT Officer Scale 1 — Full-Length Mock Test"
 sidebar_position: 1
 ---
+
 # IBPS SO IT Officer Scale 1 — Full-Length Mock Test
 
 > **Exam:** IBPS Specialist Officer (SO) — IT Officer Scale 1  

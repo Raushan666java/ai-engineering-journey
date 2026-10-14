@@ -5,6 +5,7 @@ title: "Phase 5 — Portfolio + Market Positioning"
 sidebar_label: "Phase 5 — Portfolio + Market Positioning"
 sidebar_position: 7
 ---
+
 # Phase 5 — Portfolio + Market Positioning
 
 **Duration:** Weeks 11-12, ~15 hours + ongoing applications

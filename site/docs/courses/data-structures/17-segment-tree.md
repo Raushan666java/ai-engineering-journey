@@ -5,6 +5,7 @@ title: "Chapter 17: Segment Tree"
 sidebar_label: "Chapter 17: Segment Tree"
 sidebar_position: 17
 ---
+
 # Chapter 17: Segment Tree
 
 > **Prerequisites:** [Chapter 8: Binary Trees](./08-binary-trees.md) — Tree concepts, recursion, array-based tree storage | **Next:** [Chapter 18: Union-Find (Disjoint Set Union)](./18-union-find.md) — From range queries to connectivity

@@ -5,6 +5,7 @@ title: "Chapter 12: Hardware Description Languages"
 sidebar_label: "Chapter 12: Hardware Description Languages"
 sidebar_position: 12
 ---
+
 # Chapter 12: Hardware Description Languages
 
 > **Prereq:** Chapters 1?11 (digital logic fundamentals) ? HDLs describe the circuits designed in previous chapters.

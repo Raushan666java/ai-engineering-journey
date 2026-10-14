@@ -5,6 +5,7 @@ title: "Chapter 17: Observability and Resiliency Patterns"
 sidebar_label: "Chapter 17: Observability and Resiliency Patterns"
 sidebar_position: 17
 ---
+
 # Chapter 17: Observability and Resiliency Patterns
 > **Previous:** [16 Api Gateways Cqrs](./16-api-gateways-cqrs.md) | **Next:** [18 Case Studies Classic](./18-case-studies-classic.md)
 

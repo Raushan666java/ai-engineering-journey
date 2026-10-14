@@ -5,6 +5,7 @@ title: "Spring AI"
 sidebar_label: "Spring AI"
 sidebar_position: 47
 ---
+
 # Spring AI
 
 > **Previous:** [R2DBC &amp; Reactive Data Access](./46-r2dbc.md) | **Next:** [GraphQL](./48-graphql.md)

@@ -5,6 +5,7 @@ title: "Spring Modulith"
 sidebar_label: "Spring Modulith"
 sidebar_position: 51
 ---
+
 # Spring Modulith
 
 > **Previous:** [Spring Integration](./50-integration.md) | **Next:** [Docker &amp; Containerization](./52-docker.md)

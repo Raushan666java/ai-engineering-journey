@@ -5,6 +5,7 @@ title: "Chapter 3: CPU Scheduling"
 sidebar_label: "Chapter 3: CPU Scheduling"
 sidebar_position: 3
 ---
+
 # Chapter 3: CPU Scheduling
 
 **<< [Processes](./02-processes.md)** | [**Next: Threads**](./04-threads.md) >>

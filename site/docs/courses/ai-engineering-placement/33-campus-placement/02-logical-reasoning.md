@@ -5,6 +5,8 @@ title: "Logical Reasoning for Campus Placements"
 sidebar_label: "Logical Reasoning for Campus Placements"
 sidebar_position: 363
 ---
+
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Logical Reasoning for Campus Placements
 

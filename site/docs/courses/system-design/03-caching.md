@@ -5,6 +5,7 @@ title: "Chapter 3: Caching Strategies and Patterns"
 sidebar_label: "Chapter 3: Caching Strategies and Patterns"
 sidebar_position: 3
 ---
+
 # Chapter 3: Caching Strategies and Patterns
 > **Previous:** [02 Scalability Load Balancing](./02-scalability-load-balancing.md) | **Next:** [04 Database Foundations](./04-database-foundations.md)
 

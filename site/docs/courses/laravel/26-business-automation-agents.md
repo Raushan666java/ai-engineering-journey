@@ -5,6 +5,7 @@ title: "Chapter 26: Business Automation Agents"
 sidebar_label: "Chapter 26: Business Automation Agents"
 sidebar_position: 26
 ---
+
 # Chapter 26: Business Automation Agents
 
 > **Previous:** [Multi-Agent Systems](./25-multi-agent-systems.md) | **Next:** [Healthcare](./27-healthcare.md)

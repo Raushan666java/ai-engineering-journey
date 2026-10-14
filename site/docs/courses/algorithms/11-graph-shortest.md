@@ -5,6 +5,7 @@ title: "Chapter 11: Graph Shortest Paths"
 sidebar_label: "Chapter 11: Graph Shortest Paths"
 sidebar_position: 11
 ---
+
 # Chapter 11: Graph Shortest Paths
 
 > **Prerequisites:** [Chapter 10: Dynamic Programming — Trees & Grids](./10-dp-trees-grids.md) — Recursive problem-solving on graph structures | **Next:** [Chapter 12: Minimum Spanning Trees](./12-graph-mst.md) — From shortest paths to minimum-cost spanning trees

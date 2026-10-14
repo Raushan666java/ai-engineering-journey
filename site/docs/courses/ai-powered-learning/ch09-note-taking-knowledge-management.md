@@ -5,6 +5,7 @@ title: "Chapter 9: AI Note-Taking & Knowledge Management"
 sidebar_label: "Chapter 9: AI Note-Taking & Knowledge Management"
 sidebar_position: 9
 ---
+
 # Chapter 9: AI Note-Taking & Knowledge Management
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

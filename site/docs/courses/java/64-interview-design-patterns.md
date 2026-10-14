@@ -5,6 +5,7 @@ title: "64. Design Patterns → Interview Q&A"
 sidebar_label: "64. Design Patterns → Interview Q&A"
 sidebar_position: 72
 ---
+
 # 64. Design Patterns → Interview Q&A
 
 > **Previous:** [Tools &amp; DevOps Interview Q&amp;A](./63-interview-tools.md) | **Next:** [System Design Interview Q&amp;A](./65-interview-system-design.md)

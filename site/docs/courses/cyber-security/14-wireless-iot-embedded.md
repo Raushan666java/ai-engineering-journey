@@ -5,6 +5,7 @@ title: "Chapter 14: Wireless, IoT & Embedded Security"
 sidebar_label: "Chapter 14: Wireless, IoT & Embedded Security"
 sidebar_position: 13
 ---
+
 # Chapter 14: Wireless, IoT & Embedded Security
 
 ---

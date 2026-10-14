@@ -5,6 +5,7 @@ title: "Chapter 5: Game Playing and Adversarial Search"
 sidebar_label: "Chapter 5: Game Playing and Adversarial Search"
 sidebar_position: 9
 ---
+
 # Chapter 5: Game Playing and Adversarial Search
 
 **Previous:** [Chapter 5: Constraint Satisfaction Problems](05-csp.md) | **Next:** [Chapter 6: Logical Agents and Propositional Logic](06-logic.md)

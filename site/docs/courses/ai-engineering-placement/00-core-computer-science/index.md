@@ -5,6 +5,7 @@ title: "Core Computer Science for AI Engineers"
 sidebar_label: "Core Computer Science for AI Engineers"
 sidebar_position: 8
 ---
+
 # Core Computer Science for AI Engineers
 
 > **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)

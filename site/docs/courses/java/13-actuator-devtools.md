@@ -5,6 +5,7 @@ title: "Actuator, DevTools & Monitoring"
 sidebar_label: "Actuator, DevTools & Monitoring"
 sidebar_position: 13
 ---
+
 # Actuator, DevTools & Monitoring
 
 > **Previous:** [Application Properties & Configuration](./12-configuration.md) | **Next:** [Logging, Error Handling & i18n](./14-logging-error-i18n.md)

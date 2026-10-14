@@ -5,6 +5,7 @@ title: "Chapter 10: Authentication and Authorization"
 sidebar_label: "Chapter 10: Authentication and Authorization"
 sidebar_position: 10
 ---
+
 # Chapter 10: Authentication and Authorization
 
 > **Previous:** [09-rest-apis](./09-rest-apis.md) | **Next:** [11-databases-web](./11-databases-web.md)

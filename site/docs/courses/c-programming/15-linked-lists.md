@@ -5,6 +5,7 @@ title: "Chapter 15: Linked Lists"
 sidebar_label: "Chapter 15: Linked Lists"
 sidebar_position: 15
 ---
+
 # Chapter 15: Linked Lists
 
 > **Previous:** [Recursion](./14-recursion.md) | **Next:** [Stacks and Queues](./16-stacks-queues.md)

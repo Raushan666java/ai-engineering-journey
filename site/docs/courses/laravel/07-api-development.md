@@ -5,6 +5,7 @@ title: "Chapter 7: API Development & Integration"
 sidebar_label: "Chapter 7: API Development & Integration"
 sidebar_position: 7
 ---
+
 # Chapter 7: API Development & Integration
 > **Previous:** [Queues, Jobs, Notifications & Mail](./06-queues-notifications) | **Next:** [Broadcasting, Events & Real-Time Features](./08-broadcasting-realtime)
 

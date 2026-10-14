@@ -5,6 +5,7 @@ title: "Chapter 2: The Physical Layer"
 sidebar_label: "Chapter 2: The Physical Layer"
 sidebar_position: 2
 ---
+
 # Chapter 2: The Physical Layer
 
 > **Prerequisites:** [Chapter 1: Introduction](./01-introduction.md) — Network models and layering | **Next:** [Chapter 3: Data Link Layer](./03-datalink-layer.md) — From bits to frames

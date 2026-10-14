@@ -5,6 +5,8 @@ title: "Quantitative Aptitude — All Topics Master Reference"
 sidebar_label: "Quantitative Aptitude — All Topics Master Reference"
 sidebar_position: 372
 ---
+
+<!-- improved -->
 # Quantitative Aptitude — All Topics Master Reference
 
 > Complete theory for every quant topic asked in ANY company aptitude round.

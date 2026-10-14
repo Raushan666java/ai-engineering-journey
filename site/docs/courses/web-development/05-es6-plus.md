@@ -5,6 +5,7 @@ title: "Chapter 5 — ES6+ JavaScript"
 sidebar_label: "Chapter 5 — ES6+ JavaScript"
 sidebar_position: 5
 ---
+
 # Chapter 5 — ES6+ JavaScript
 
 > **Previous:** [04-js-dom](./04-js-dom.md) | **Next:** [06-react-basics](./06-react-basics.md)

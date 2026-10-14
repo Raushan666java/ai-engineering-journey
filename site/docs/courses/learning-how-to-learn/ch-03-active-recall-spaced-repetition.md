@@ -5,6 +5,7 @@ title: "Chapter 3: Active Recall & Spaced Repetition"
 sidebar_label: "Chapter 3: Active Recall & Spaced Repetition"
 sidebar_position: 4
 ---
+
 # Chapter 3: Active Recall & Spaced Repetition
 
 > **Prerequisites:** [Chapter 2: Practice, Mindset & Performance](./ch-02-practice-mindset.md) — Practice frameworks and illusions of competence.

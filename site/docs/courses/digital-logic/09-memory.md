@@ -5,6 +5,7 @@ title: "Chapter 9: Semiconductor Memory"
 sidebar_label: "Chapter 9: Semiconductor Memory"
 sidebar_position: 9
 ---
+
 # Chapter 9: Semiconductor Memory
 
 > **Prereq:** Chapter 8 (Registers and Counters) ? registers are the fastest, smallest memory elements; this chapter extends storage to arrays of cells.

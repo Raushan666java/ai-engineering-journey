@@ -5,6 +5,7 @@ title: "Visual Notes — Defense-in-Depth for AI"
 sidebar_label: "Visual Notes"
 sidebar_position: 227
 ---
+
 # Visual Notes — Defense-in-Depth for AI
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

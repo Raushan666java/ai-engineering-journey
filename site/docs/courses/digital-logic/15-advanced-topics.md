@@ -5,6 +5,7 @@ title: "Chapter 15: Advanced Topics in Digital Logic"
 sidebar_label: "Chapter 15: Advanced Topics in Digital Logic"
 sidebar_position: 15
 ---
+
 # Chapter 15: Advanced Topics in Digital Logic
 
 > **Prereq:** All previous chapters ? this capstone chapter surveys advanced and emerging topics.

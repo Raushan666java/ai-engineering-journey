@@ -5,6 +5,7 @@ title: "Chapter 3: Nondeterministic Finite Automata"
 sidebar_label: "Chapter 3: Nondeterministic Finite Automata"
 sidebar_position: 3
 ---
+
 # Chapter 3: Nondeterministic Finite Automata
 
 > **Previous:** [Deterministic Finite Automata](./02-dfa.md) | **Next:** [Regular Expressions](./04-regex.md)

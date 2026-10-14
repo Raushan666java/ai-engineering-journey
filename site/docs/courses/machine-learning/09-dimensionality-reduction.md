@@ -5,6 +5,7 @@ title: "Chapter 9: Dimensionality Reduction"
 sidebar_label: "Chapter 9: Dimensionality Reduction"
 sidebar_position: 9
 ---
+
 # Chapter 9: Dimensionality Reduction
 
 > **Previous:** [Unsupervised Learning](./08-unsupervised-learning.md) | **Next:** [Model Evaluation](./10-model-evaluation.md)

@@ -5,6 +5,7 @@ title: "Chapter 53: JavaScript Interview Q&A"
 sidebar_label: "Chapter 53: JavaScript Interview Q&A"
 sidebar_position: 53
 ---
+
 # Chapter 53: JavaScript Interview Q&A
 
 > **Previous:** [CSS Interview Q&A](./52-interview-css.md) | **Next:** [AI/ML Interview Q&A](./54-interview-ai-ml.md)
@@ -515,7 +516,7 @@ Array.from([1, 2, 3], x => x * 2); // [2, 4, 6]
 Array.from({ length: 3 }, (_, i) => i); // [0, 1, 2]
 
 Array.of(5);   // [5]
-Array(5);      // [empty Ã— 5]
+Array(5);      // [empty × 5]
 ```
 
 ### Q33: Explain `for...of` vs `for...in`.

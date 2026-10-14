@@ -5,6 +5,7 @@ title: "Chapter 10: Programmable Logic ? PLA and PAL"
 sidebar_label: "Chapter 10: Programmable Logic ? PLA and PAL"
 sidebar_position: 10
 ---
+
 # Chapter 10: Programmable Logic ? PLA and PAL
 
 > **Prereq:** Chapter 4 (Karnaugh Maps) and Chapter 5 (Combinational Circuits) ? programmable logic implements sum-of-products expressions.

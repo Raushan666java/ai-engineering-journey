@@ -5,6 +5,7 @@ title: "Chapter 13: Final Capstone — Design Your Learning System"
 sidebar_label: "Chapter 13: Final Capstone — Design Your Learning System"
 sidebar_position: 14
 ---
+
 # Chapter 13: Final Capstone — Design Your Learning System
 
 > ⏱ **3 hours total** · 🎯 **Advanced** · 📋 **Requires: All chapters 1-12**

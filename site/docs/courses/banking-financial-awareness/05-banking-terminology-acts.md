@@ -5,6 +5,7 @@ title: "Chapter 5: Banking Terminology & Acts"
 sidebar_label: "Chapter 5: Banking Terminology & Acts"
 sidebar_position: 5
 ---
+
 # Chapter 5: Banking Terminology & Acts
 
 ## Learning Objectives

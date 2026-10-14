@@ -5,6 +5,7 @@ title: "Introduction to Spring & Spring Boot"
 sidebar_label: "Introduction to Spring & Spring Boot"
 sidebar_position: 9
 ---
+
 # Introduction to Spring & Spring Boot
 
 > **Previous:** [Gradle Deep Dive](./08-gradle.md) | **Next:** [Dependency Injection & IoC Container](./10-di-container.md)
@@ -234,7 +235,7 @@ Spring is developed under the **Apache 2.0 license** and governed by **VMware (B
 
 - **Rod Johnson** → Founder, created Spring Framework 1.0 (left 2012)
 - **Juergen Hoeller** → Core committer since 2003, lead of Spring Framework
-- **StÃ©phane Nicoll** → Spring Boot lead
+- **Stéphane Nicoll** → Spring Boot lead
 - **Andy Wilkinson** → Spring Boot build and release
 - **Rossen Stoyanchev** → Reactive/WebFlux lead
 - **Rob Winch** → Spring Security lead

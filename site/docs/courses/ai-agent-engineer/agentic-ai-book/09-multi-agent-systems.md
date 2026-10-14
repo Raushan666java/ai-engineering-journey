@@ -5,6 +5,7 @@ title: "09-multi-agent-systems"
 sidebar_label: "09-multi-agent-systems"
 sidebar_position: 10
 ---
+
 ## Chapter 9: Multi-Agent Systems
 
 ### 9.1 When You Actually Need This (And When You Don't)

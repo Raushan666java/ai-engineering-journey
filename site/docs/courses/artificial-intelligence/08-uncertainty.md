@@ -5,6 +5,7 @@ title: "Chapter 8: Uncertainty and Probabilistic Reasoning"
 sidebar_label: "Chapter 8: Uncertainty and Probabilistic Reasoning"
 sidebar_position: 15
 ---
+
 # Chapter 8: Uncertainty and Probabilistic Reasoning
 
 **Previous:** [Chapter 7: Logical Reasoning and Inference](07-logical-reasoning.md) | **Next:** [Chapter 9: Machine Learning](09-machine-learning.md)

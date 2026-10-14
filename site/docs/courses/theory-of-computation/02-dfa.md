@@ -5,6 +5,7 @@ title: "Chapter 2: Deterministic Finite Automata"
 sidebar_label: "Chapter 2: Deterministic Finite Automata"
 sidebar_position: 2
 ---
+
 # Chapter 2: Deterministic Finite Automata
 
 > **Previous:** [Introduction](./01-introduction.md) | **Next:** [Nondeterministic Finite Automata](./03-nfa.md)

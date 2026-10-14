@@ -5,6 +5,7 @@ title: "Chapter 01: Core Banking Solutions (CBS)"
 sidebar_label: "Chapter 01: Core Banking Solutions (CBS)"
 sidebar_position: 1
 ---
+
 # Chapter 01: Core Banking Solutions (CBS)
 
 ## Learning Objectives

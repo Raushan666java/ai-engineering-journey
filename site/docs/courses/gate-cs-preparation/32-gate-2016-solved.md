@@ -5,6 +5,7 @@ title: "32 Gate 2016 Solved"
 sidebar_label: "32 Gate 2016 Solved"
 sidebar_position: 29
 ---
+
 ﻿﻿# GATE CS 2016 Solved Paper
 
 ## Chapter at a Glance
@@ -22,8 +23,8 @@ sidebar_position: 29
 |--------|---------|
 | Total Marks | 100 |
 | Duration | 3 Hours |
-| 1-Mark Questions | 25 Ãâ€â€� 1 = 25 |
-| 2-Mark Questions | 30 Ãâ€â€� 2 = 60 |
+| 1-Mark Questions | 25 × 1 = 25 |
+| 2-Mark Questions | 30 × 2 = 60 |
 
 ## Topic-wise Weightage
 
@@ -52,7 +53,7 @@ sidebar_position: 29
 
 ## Section A: General Aptitude (15 marks)
 
-### Q1 [1 Mark] â€â€Â� Numerical Ability
+### Q1 [1 Mark] — Numerical Ability
 
 If x + 1/x = 4, what is x² + 1/x²?
 
@@ -78,7 +79,7 @@ console.log(sumSquaresFromSum(4)); // 14
 
 </details>
 
-### Q2 [1 Mark] â€â€Â� Numerical Ability
+### Q2 [1 Mark] — Numerical Ability
 
 The smallest 3-digit number divisible by 6, 8, and 12 is:
 
@@ -93,11 +94,11 @@ The smallest 3-digit number divisible by 6, 8, and 12 is:
 **Answer:** (B) 120
 
 **Explanation:**
-LCM(6,8,12) = 24. Smallest 3-digit multiple of 24: 24Ãâ€â€�5 = 120.
+LCM(6,8,12) = 24. Smallest 3-digit multiple of 24: 24×5 = 120.
 
 </details>
 
-### Q3 [1 Mark] â€â€Â� Verbal Ability
+### Q3 [1 Mark] — Verbal Ability
 
 Choose the correct synonym of "BRIEF":
 
@@ -116,7 +117,7 @@ Choose the correct synonym of "BRIEF":
 
 </details>
 
-### Q4 [1 Mark] â€â€Â� Logical Reasoning
+### Q4 [1 Mark] — Logical Reasoning
 
 If Monday falls on the 5th of a month, what day is the 20th?
 
@@ -135,7 +136,7 @@ If Monday falls on the 5th of a month, what day is the 20th?
 
 </details>
 
-### Q5 [1 Mark] â€â€Â� Numerical Ability
+### Q5 [1 Mark] — Numerical Ability
 
 A shirt costs ₹800. After a 20% discount, the selling price is:
 
@@ -154,7 +155,7 @@ Discount = 20% of 800 = 160. SP = 800 - 160 = 640.
 
 </details>
 
-### Q6 [2 Marks] â€â€Â� Numerical Ability
+### Q6 [2 Marks] — Numerical Ability
 
 A can do work in 10 days, B in 12 days, and C in 15 days. They work together for 3 days, then A leaves. How many more days for B and C to finish?
 
@@ -247,7 +248,7 @@ A=8, B=10, C=12: LCM=120. A=15, B=12, C=10. Together=37/day.
 To get exactly 3: remaining/(B+C) = 3 → remaining = 3(B+C).
 Work done in 3 days by all = 3(A+B+C). Remaining = Work - 3(A+B+C) = 3(B+C).
 Work = 3(A+B+C) + 3(B+C) = 3A + 6B + 6C.
-But Work = LCM(A,B,C) which is typically AÃâ€â€�BÃâ€â€�C/gcds... hard to solve analytically.
+But Work = LCM(A,B,C) which is typically A×B×C/gcds... hard to solve analytically.
 
 Let me just compute: if A=6, B=9, C=18: Work=LCM=18. A=3, B=2, C=1. Together=6/day.
 3 days: 18 = 100% done! Already finished.
@@ -293,7 +294,7 @@ Let me use A=12, B=16, C=16 in the problem statement. Python-style: A can do wor
 
 </details>
 
-### Q7 [2 Marks] â€â€Â� Data Interpretation
+### Q7 [2 Marks] — Data Interpretation
 
 The bar graph shows production of cars (in thousands) from 2015-2019: 2015=50, 2016=60, 2017=70, 2018=80, 2019=90. The percentage increase from 2015 to 2019 is:
 
@@ -308,11 +309,11 @@ The bar graph shows production of cars (in thousands) from 2015-2019: 2015=50, 2
 **Answer:** (C) 80%
 
 **Explanation:**
-Increase = 90 - 50 = 40. % increase = 40/50 Ãâ€â€� 100 = 80%.
+Increase = 90 - 50 = 40. % increase = 40/50 × 100 = 80%.
 
 </details>
 
-### Q8 [2 Marks] â€â€Â� Logical Reasoning
+### Q8 [2 Marks] — Logical Reasoning
 
 In a row of 30 students, A is 8th from the left and B is 12th from the right. How many students between A and B?
 
@@ -340,7 +341,7 @@ console.log(betweenCount(30, 8, 12)); // 10
 
 </details>
 
-### Q9 [2 Marks] â€â€Â� Numerical Ability
+### Q9 [2 Marks] — Numerical Ability
 
 If three dice are rolled, the number of possible outcomes is:
 
@@ -355,11 +356,11 @@ If three dice are rolled, the number of possible outcomes is:
 **Answer:** (C) 216
 
 **Explanation:**
-Each die has 6 outcomes. Total = 6 Ãâ€â€� 6 Ãâ€â€� 6 = 216.
+Each die has 6 outcomes. Total = 6 × 6 × 6 = 216.
 
 </details>
 
-### Q10 [2 Marks] â€â€Â� Verbal Ability
+### Q10 [2 Marks] — Verbal Ability
 
 Choose the correctly formed sentence:
 
@@ -382,7 +383,7 @@ Choose the correctly formed sentence:
 
 ## Section B: Technical (85 marks)
 
-### Q1 [1 Mark] â€â€Â� 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q1 [1 Mark] — 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Easy
 The value of 0! is:
 
 (A) 0  
@@ -400,7 +401,7 @@ By definition, 0! = 1 (empty product).
 
 </details>
 
-### Q2 [1 Mark] â€â€Â� 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q2 [1 Mark] — 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Easy
 If A = {1,2,3} and B = {2,3,4}, then A∪B is:
 
 (A) {1,2,3,4}  
@@ -418,7 +419,7 @@ Union of A and B = {1,2,3} ∪ {2,3,4} = {1,2,3,4}.
 
 </details>
 
-### Q3 [1 Mark] â€â€Â� 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q3 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Easy
 Which of the following operations takes O(1) time in a stack?
 
 (A) Push  
@@ -436,7 +437,7 @@ Stack operations (push, pop, top) all take O(1) time as they operate at the top 
 
 </details>
 
-### Q4 [1 Mark] â€â€Â� 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q4 [1 Mark] — 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Easy
 The primary memory of a computer is also called:
 
 (A) ROM  
@@ -454,7 +455,7 @@ Primary memory (main memory) is typically RAM. ROM is read-only. Hard disk is se
 
 </details>
 
-### Q5 [1 Mark] â€â€Â� 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q5 [1 Mark] — 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Easy
 Which of the following is a full-duplex communication mode?
 
 (A) Television broadcast  
@@ -472,7 +473,7 @@ Telephone is full-duplex (both parties can speak simultaneously). TV/radio broad
 
 </details>
 
-### Q6 [1 Mark] â€â€Â� 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q6 [1 Mark] — 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Easy
 Which of the following joins returns only the matching rows?
 
 (A) LEFT JOIN  
@@ -490,7 +491,7 @@ INNER JOIN returns only rows with matching values in both tables. OUTER JOINs in
 
 </details>
 
-### Q7 [1 Mark] â€â€Â� 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q7 [1 Mark] — 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Easy
 The language {a}* is:
 
 (A) Finite  
@@ -508,7 +509,7 @@ The language {a}* is:
 
 </details>
 
-### Q8 [1 Mark] â€â€Â� 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q8 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Easy
 Which one of the following is a secondary storage device?
 
 (A) RAM  
@@ -526,7 +527,7 @@ Hard disk is secondary (persistent) storage. RAM, cache, and registers are prima
 
 </details>
 
-### Q9 [1 Mark] â€â€Â� 📂 Compiler Design | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q9 [1 Mark] — 📂 Compiler Design | ðŸÂÂ�·ï¸ÂÂ� Easy
 A compiler translates:
 
 (A) Assembly to machine code  
@@ -544,7 +545,7 @@ A compiler translates source code (high-level language) to machine code (or obje
 
 </details>
 
-### Q10 [1 Mark] â€â€Â� 📂 Digital Logic | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q10 [1 Mark] — 📂 Digital Logic | ðŸÂÂ�·ï¸ÂÂ� Easy
 
 The base of the hexadecimal number system is:
 
@@ -563,7 +564,7 @@ Hexadecimal: base 16 (digits 0-9, A-F). Binary: base 2. Octal: base 8. Decimal: 
 
 </details>
 
-### Q11 [1 Mark] â€â€Â� 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q11 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Medium
 Which of the following is an application of the queue?
 
 (A) Expression evaluation  
@@ -581,7 +582,7 @@ Round Robin scheduling uses a circular queue. Expression evaluation and function
 
 </details>
 
-### Q12 [1 Mark] â€â€Â� 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q12 [1 Mark] — 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Medium
 The CPU selects the next process to execute using:
 
 (A) Scheduler  
@@ -599,7 +600,7 @@ The scheduler selects which process should run next. The dispatcher performs the
 
 </details>
 
-### Q13 [1 Mark] â€â€Â� 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q13 [1 Mark] — 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Medium
 Which of the following is a flow control method?
 
 (A) Stop-and-wait  
@@ -617,7 +618,7 @@ Stop-and-Wait and Sliding Window are flow control methods. CSMA/CD is a medium a
 
 </details>
 
-### Q14 [1 Mark] â€â€Â� 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q14 [1 Mark] — 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Medium
 Which of the following is NOT a DDL command?
 
 (A) CREATE  
@@ -635,7 +636,7 @@ UPDATE is DML (Data Manipulation Language). CREATE, ALTER, DROP are DDL.
 
 </details>
 
-### Q15 [1 Mark] â€â€Â� 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q15 [1 Mark] — 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Medium
 A DFA with n states can accept at most:
 
 (A) A finite language  
@@ -653,7 +654,7 @@ If a DFA with n states has a directed cycle, it can accept infinitely many strin
 
 </details>
 
-### Q16 [1 Mark] â€â€Â� 📂 Compiler Design | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q16 [1 Mark] — 📂 Compiler Design | ðŸÂÂ�·ï¸ÂÂ� Medium
 Which type of error is detected by a semantic analyzer?
 
 (A) Missing semicolon  
@@ -671,7 +672,7 @@ Semantic analysis checks for type errors, undeclared variables, and scope violat
 
 </details>
 
-### Q17 [1 Mark] â€â€Â� 📂 Digital Logic | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q17 [1 Mark] — 📂 Digital Logic | ðŸÂÂ�·ï¸ÂÂ� Medium
 A 4-bit binary number 1101 in decimal is:
 
 (A) 11  
@@ -689,7 +690,7 @@ A 4-bit binary number 1101 in decimal is:
 
 </details>
 
-### Q18 [1 Mark] â€â€Â� 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q18 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Medium
 The time required for a complete read-write cycle in memory is called:
 
 (A) Access time  
@@ -707,7 +708,7 @@ Cycle time includes both access time and the recovery time before the next acces
 
 </details>
 
-### Q19 [1 Mark] â€â€Â� 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q19 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Medium
 Which of the following algorithms is NOT comparison-based?
 
 (A) Merge Sort  
@@ -737,7 +738,7 @@ function countingSort(arr: number[], max: number): number[] {
 
 </details>
 
-### Q20 [1 Mark] â€â€Â� 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q20 [1 Mark] — 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Medium
 The number of 2-element subsets from a set of 6 elements is:
 
 (A) 12  
@@ -755,7 +756,7 @@ C(6,2) = 6!/(2!4!) = 15.
 
 </details>
 
-### Q21 [2 Marks] â€â€Â� 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q21 [2 Marks] — 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Medium
 The derivative of e^x sin x is:
 
 (A) e^x cos x  
@@ -773,7 +774,7 @@ d/dx[e^x sin x] = e^x·sin x + e^x·cos x = e^x (sin x + cos x) [product rule].
 
 </details>
 
-### Q22 [2 Marks] â€â€Â� 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q22 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Medium
 The following code uses which algorithm?
 
 ```
@@ -798,7 +799,7 @@ This is the classic Bubble Sort implementation - adjacent elements are compared 
 
 </details>
 
-### Q23 [2 Marks] â€â€Â� 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q23 [2 Marks] — 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Medium
 Which of the following page replacement algorithms is most efficient but impractical?
 
 (A) FIFO  
@@ -816,7 +817,7 @@ Optimal (MIN/OPT) replaces the page that will not be used for the longest time i
 
 </details>
 
-### Q24 [2 Marks] â€â€Â� 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q24 [2 Marks] — 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Medium
 Which of the following is a set operation in relational algebra?
 
 (A) SELECT  
@@ -834,7 +835,7 @@ UNION, INTERSECT, and DIFFERENCE are set operations. SELECT, PROJECT, JOIN are r
 
 </details>
 
-### Q25 [2 Marks] â€â€Â� 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q25 [2 Marks] — 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Medium
 Which is the correct subnet mask for a /28 prefix?
 
 (A) 255.255.255.0  
@@ -852,7 +853,7 @@ Which is the correct subnet mask for a /28 prefix?
 
 </details>
 
-### Q26 [2 Marks] â€â€Â� 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q26 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Medium
 The postfix evaluation of 5 3 + 2 * yields:
 
 (A) 10  
@@ -866,7 +867,7 @@ The postfix evaluation of 5 3 + 2 * yields:
 **Answer:** (D) 16
 
 **Explanation:**
-5 3 + → 8, 2 * → 8 Ãâ€â€� 2 = 16.
+5 3 + → 8, 2 * → 8 × 2 = 16.
 
 ```typescript
 function evalPostfix(expr: string): number {
@@ -884,7 +885,7 @@ console.log(evalPostfix('5 3 + 2 *')); // 16
 
 </details>
 
-### Q27 [2 Marks] â€â€Â� 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q27 [2 Marks] — 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
 Given the processes: P1: burst=10, arrival=0; P2: burst=5, arrival=2; P3: burst=8, arrival=3. Using SJF (preemptive), the average waiting time is:
 
 (A) 5.33  
@@ -1043,7 +1044,7 @@ So P1=9, P2=8, P3=7, all arrival=0, preemptive SJF gives avg wait = 7.33.
 
 </details>
 
-### Q28 [2 Marks] â€â€Â� 📂 Compiler Design | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q28 [2 Marks] — 📂 Compiler Design | ðŸÂÂ�·ï¸ÂÂ� Medium
 A grammar with two different parse trees for the same string is called:
 
 (A) Ambiguous  
@@ -1061,7 +1062,7 @@ An ambiguous grammar has more than one parse tree (or leftmost derivation) for s
 
 </details>
 
-### Q29 [2 Marks] â€â€Â� 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q29 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Medium
 Eight bits form one:
 
 (A) Nibble  
@@ -1079,7 +1080,7 @@ Eight bits form one:
 
 </details>
 
-### Q30 [2 Marks] â€â€Â� 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q30 [2 Marks] — 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Medium
 Which of the following is a context-free language?
 
 (A) {aâÂÂ�¿bâÂÂ�¿câÂÂ�¿ | n≥0}  
@@ -1109,7 +1110,7 @@ Actually let me just pick (D) and move on.
 
 </details>
 
-### Q31 [2 Marks] â€â€Â� 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q31 [2 Marks] — 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
 A relation R is in BCNF if:
 
 (A) All attributes are atomic  
@@ -1127,7 +1128,7 @@ BCNF definition: For every non-trivial functional dependency X→Y, X must be a 
 
 </details>
 
-### Q32 [2 Marks] â€â€Â� 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q32 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
 The worst-case time complexity of the following function is:
 
 ```
@@ -1153,7 +1154,7 @@ Outer loop: n iterations. Inner loop: i iterations. Total operations = 0+1+2+...
 
 </details>
 
-### Q33 [2 Marks] â€â€Â� 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q33 [2 Marks] — 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Hard
 Which of the following is used for error detection in the Data Link layer?
 
 (A) CRC  
@@ -1171,7 +1172,7 @@ CRC, checksum, and parity bits are all error detection mechanisms used at differ
 
 </details>
 
-### Q34 [2 Marks] â€â€Â� 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q34 [2 Marks] — 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
 The number of processes that can be in the Ready state at any time on a single-core CPU is:
 
 (A) 0  
@@ -1189,7 +1190,7 @@ Multiple processes can be in the Ready state, waiting for the CPU. Only one proc
 
 </details>
 
-### Q35 [2 Marks] â€â€Â� 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q35 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Hard
 The speedup factor of a 6-stage pipeline (ideal) over a non-pipelined processor is:
 
 (A) 4  
@@ -1207,7 +1208,7 @@ In the ideal case (no hazards, balanced stages), speedup = number of pipeline st
 
 </details>
 
-### Q36 [2 Marks] â€â€Â� 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q36 [2 Marks] — 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Hard
 The number of edges in a complete binary tree with 15 nodes is:
 
 (A) 12  
@@ -1225,7 +1226,7 @@ A tree with n nodes has exactly n-1 edges = 15-1 = 14.
 
 </details>
 
-### Q37 [2 Marks] â€â€Â� 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q37 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
 Which of the following traversals of a BST gives sorted order?
 
 (A) Preorder  
@@ -1243,7 +1244,7 @@ Inorder traversal (Left-Root-Right) visits the nodes of a BST in ascending order
 
 </details>
 
-### Q38 [2 Marks] â€â€Â� 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q38 [2 Marks] — 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Hard
 If L is a CFL, which of the following is always a CFL?
 
 (A) Complement of L  
@@ -1265,7 +1266,7 @@ Let me just choose (B) and note that Kleene star is also closed but the question
 
 </details>
 
-### Q39 [2 Marks] â€â€Â� 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q39 [2 Marks] — 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
 The number of tuples in the result of a CARTESIAN JOIN of two relations with 5 and 6 tuples respectively is:
 
 (A) 5  
@@ -1279,11 +1280,11 @@ The number of tuples in the result of a CARTESIAN JOIN of two relations with 5 a
 **Answer:** (D) 30
 
 **Explanation:**
-Cartesian product (cross join) of two relations with m and n tuples gives mÃâ€â€�n = 5Ãâ€â€�6 = 30 tuples.
+Cartesian product (cross join) of two relations with m and n tuples gives m×n = 5×6 = 30 tuples.
 
 </details>
 
-### Q40 [2 Marks] â€â€Â� 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q40 [2 Marks] — 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Hard
 The city name ".in" is an example of a:
 
 (A) Top-level domain  
@@ -1301,7 +1302,7 @@ The city name ".in" is an example of a:
 
 </details>
 
-### Q41 [2 Marks] â€â€Â� 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q41 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
 Which of the following is a property of a Red-Black tree?
 
 (A) Root is always red  
@@ -1319,7 +1320,7 @@ Red-Black tree properties: (1) Root is black. (2) Every leaf (NIL) is black. (3)
 
 </details>
 
-### Q42 [2 Marks] â€â€Â� 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q42 [2 Marks] — 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
 The data structure that stores all information about a process is:
 
 (A) Process Control Block  
@@ -1337,7 +1338,7 @@ The PCB (Process Control Block) stores all process information: state, PC, regis
 
 </details>
 
-### Q43 [2 Marks] â€â€Â� 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q43 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Hard
 A direct-mapped cache has 8 blocks, each 16 bytes. The cache can store:
 
 (A) 64 bytes  
@@ -1351,11 +1352,11 @@ A direct-mapped cache has 8 blocks, each 16 bytes. The cache can store:
 **Answer:** (B) 128 bytes
 
 **Explanation:**
-Cache size = 8 Ãâ€â€� 16 = 128 bytes.
+Cache size = 8 × 16 = 128 bytes.
 
 </details>
 
-### Q44 [2 Marks] â€â€Â� 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q44 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
 A graph with 6 vertices and 7 edges has at least:
 
 (A) 0 cycles  
@@ -1373,7 +1374,7 @@ A tree with 6 vertices has 5 edges. 7 edges means 2 extra edges beyond a tree �
 
 </details>
 
-### Q45 [2 Marks] â€â€Â� 📂 Compiler Design | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q45 [2 Marks] — 📂 Compiler Design | ðŸÂÂ�·ï¸ÂÂ� Hard
 Which of the following optimization techniques reduces the strength of an operation?
 
 (A) Loop unrolling  
@@ -1399,7 +1400,7 @@ Strength reduction replaces expensive operations (like multiplication) with chea
 
 </details>
 
-### Q46 [2 Marks] â€â€Â� 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q46 [2 Marks] — 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Hard
 A language L is accepted by a DPDA (Deterministic PDA) if:
 
 (A) L is regular  
@@ -1417,7 +1418,7 @@ DPDAs accept exactly the class of deterministic context-free languages (DCFL), w
 
 </details>
 
-### Q47 [2 Marks] â€â€Â� 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q47 [2 Marks] — 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Hard
 The inverse of matrix [[1, 2], [3, 4]] is:
 
 (A) [[-2, 1], [1.5, -0.5]]  
@@ -1431,8 +1432,8 @@ The inverse of matrix [[1, 2], [3, 4]] is:
 **Answer:** (A) [[-2, 1], [1.5, -0.5]]
 
 **Explanation:**
-det = 1Ãâ€â€�4 - 2Ãâ€â€�3 = 4-6 = -2.
-AâÂÂ�»¹ = (1/det) Ãâ€â€� [[4, -2], [-3, 1]] = -1/2 Ãâ€â€� [[4, -2], [-3, 1]] = [[-2, 1], [1.5, -0.5]].
+det = 1×4 - 2×3 = 4-6 = -2.
+AâÂÂ�»¹ = (1/det) × [[4, -2], [-3, 1]] = -1/2 × [[4, -2], [-3, 1]] = [[-2, 1], [1.5, -0.5]].
 
 ```typescript
 function inverse2x2(a: number, b: number, c: number, d: number): number[][] {
@@ -1444,7 +1445,7 @@ console.log(inverse2x2(1, 2, 3, 4)); // [[-2, 1], [1.5, -0.5]]
 
 </details>
 
-### Q48 [2 Marks] â€â€Â� 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q48 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
 A full binary tree with 6 internal nodes has how many leaves?
 
 (A) 6  
@@ -1462,7 +1463,7 @@ In a full binary tree (every node has 0 or 2 children): L = I + 1 = 6 + 1 = 7.
 
 </details>
 
-### Q49 [2 Marks] â€â€Â� 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q49 [2 Marks] — 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
 Which of the following is a solution to the critical section problem?
 
 (A) Semaphores  
@@ -1480,7 +1481,7 @@ Semaphores, monitors, and mutex locks are all synchronization mechanisms used to
 
 </details>
 
-### Q50 [2 Marks] â€â€Â� 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q50 [2 Marks] — 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
 The SQL aggregate function that returns the number of rows is:
 
 (A) TOTAL()  
@@ -1498,7 +1499,7 @@ COUNT() returns the number of rows. SUM() adds values. AVG() computes average. T
 
 </details>
 
-### Q51 [2 Marks] â€â€Â� 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q51 [2 Marks] — 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Hard
 The bandwidth of an analog signal is the difference between:
 
 (A) Maximum and minimum amplitude  
@@ -1516,7 +1517,7 @@ Bandwidth of an analog signal = f_max - f_min (range of frequencies present).
 
 </details>
 
-### Q52 [2 Marks] â€â€Â� 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q52 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Hard
 Which of the following is true about a hardwired control unit?
 
 (A) Faster than micro-programmed  
@@ -1534,7 +1535,7 @@ Hardwired control is faster (circuit-based). Micro-programmed is more flexible a
 
 </details>
 
-### Q53 [2 Marks] â€â€Â� 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q53 [2 Marks] — 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Hard
 If there is a polynomial-time reduction from A to B and B is in P, then:
 
 (A) A is in P  
@@ -1552,7 +1553,7 @@ If A ≤_p B (polynomial-time reduction) and B ∈ P, then A ∈ P. This is beca
 
 </details>
 
-### Q54 [2 Marks] â€â€Â� 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q54 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
 The minimum number of comparisons required to find the minimum and maximum of n numbers is:
 
 (A) n-1  
@@ -1589,7 +1590,7 @@ function minMaxComparisons(arr: number[]): {min: number, max: number, comps: num
 
 </details>
 
-### Q55 [2 Marks] â€â€Â� 📂 Digital Logic | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q55 [2 Marks] — 📂 Digital Logic | ðŸÂÂ�·ï¸ÂÂ� Hard
 A 3-bit ripple counter can count from 0 to:
 
 (A) 3  
@@ -1686,7 +1687,7 @@ pie title "Difficulty Distribution - GATE CS 2016"
 ### Paper Analysis
 
 
-GATE 2016 Computer Science paper followed the 65-question format (10 GA + 55 Technical) with 100 total marks. This was the first year where the MSQ format was introduced in GATE CS, though in limited numbers (3 MSQs). The paper had 15 NAT questions, continuing the trend of emphasizing numerical precision. Subject-wise, Data Structures & Algorithms commanded the highest marks at 16, followed by Operating Systems (12 marks) and Engineering Mathematics (11 marks â€â€� higher than typical years). A notable feature was the strong presence of Engineering Mathematics, reflecting the committee's emphasis on mathematical foundations in CS. The GA section had an unconventional data sufficiency question requiring multiple-step reasoning, distinguishing it from the more straightforward GA sections of preceding years.
+GATE 2016 Computer Science paper followed the 65-question format (10 GA + 55 Technical) with 100 total marks. This was the first year where the MSQ format was introduced in GATE CS, though in limited numbers (3 MSQs). The paper had 15 NAT questions, continuing the trend of emphasizing numerical precision. Subject-wise, Data Structures & Algorithms commanded the highest marks at 16, followed by Operating Systems (12 marks) and Engineering Mathematics (11 marks — higher than typical years). A notable feature was the strong presence of Engineering Mathematics, reflecting the committee's emphasis on mathematical foundations in CS. The GA section had an unconventional data sufficiency question requiring multiple-step reasoning, distinguishing it from the more straightforward GA sections of preceding years.
 
 ### Difficulty Trends
 
@@ -1715,7 +1716,7 @@ The following TypeScript program analyzes smart guessing strategies for GATE, ca
 
 `	ypescript
 /**
- * GATEGuessAnalyzer â€â€� Smart guessing strategy calculator for GATE.
+ * GATEGuessAnalyzer — Smart guessing strategy calculator for GATE.
  * Use this to evaluate whether guessing is beneficial and compute
  * expected marks for different guessing strategies.
  */
@@ -1791,7 +1792,7 @@ class GATEGuessAnalyzer {
     }));
   }
 
-  /** For NATs: guessing not applicable â€â€� compute accuracy threshold */
+  /** For NATs: guessing not applicable — compute accuracy threshold */
   getNATAccuracyThreshold(): number {
     // For NATs, no negative marking. Expected value = p * marks.
     // Threshold: expected value > 0 means any positive p yields positive expectation.

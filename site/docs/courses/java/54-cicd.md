@@ -5,6 +5,7 @@ title: "CI/CD for Spring Boot"
 sidebar_label: "CI/CD for Spring Boot"
 sidebar_position: 54
 ---
+
 # CI/CD for Spring Boot
 
 > **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)

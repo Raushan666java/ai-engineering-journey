@@ -5,6 +5,7 @@ title: "Chapter 30: Logistics & Supply Chain Agents"
 sidebar_label: "Chapter 30: Logistics & Supply Chain Agents"
 sidebar_position: 30
 ---
+
 # Chapter 30: Logistics & Supply Chain Agents
 
 > **Previous:** [Education](./29-education.md) | **Next:** [HR Recruitment](./31-hr-recruitment.md)

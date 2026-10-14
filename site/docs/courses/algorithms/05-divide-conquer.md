@@ -5,6 +5,7 @@ title: "Chapter 5: Divide and Conquer"
 sidebar_label: "Chapter 5: Divide and Conquer"
 sidebar_position: 5
 ---
+
 # Chapter 5: Divide and Conquer
 
 > **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) — Master theorem, recurrence relations | **Next:** [Chapter 6: Greedy Algorithms](./06-greedy.md) — From divide-and-conquer to locally optimal choices

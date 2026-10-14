@@ -5,6 +5,7 @@ title: "Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Acti
 sidebar_label: "Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom"
 sidebar_position: 4
 ---
+
 # Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom
 
 > "You are not asked to leave action behind. You are asked to light a fire inside action — the fire of knowledge."

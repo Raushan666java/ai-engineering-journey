@@ -5,6 +5,7 @@ title: "Chapter 13: Observability"
 sidebar_label: "Chapter 13: Observability"
 sidebar_position: 22
 ---
+
 # Chapter 13: Observability
 
 > **Previous:** [Monitoring and Logging](./12-monitoring-logging.md) | **Next:** [DevSecOps](./14-devsecops.md)

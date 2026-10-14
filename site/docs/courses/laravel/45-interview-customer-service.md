@@ -5,6 +5,7 @@ title: "Chapter 45: Customer Service & Support → Interview Q&A"
 sidebar_label: "Chapter 45: Customer Service & Support → Interview Q&A"
 sidebar_position: 45
 ---
+
 # Chapter 45: Customer Service & Support → Interview Q&A
 
 > **Previous:** [Marketing & Advertising — Interview Q&A](./44-interview-marketing.md) | **Next:** [Real Estate & Property Interview Q&A](./46-interview-real-estate.md)
@@ -749,7 +750,7 @@ This scenario tests multi-channel continuity and SLA management.
 
 **2:00 PM → Phone call:** The customer calls. The IVR looks up the caller's phone number, finds the open ticket, and queues the call with ticket context. The agent who answers sees the full chat transcript and email attachment. The customer's frustration is validated by the system: at this point, 5 hours have elapsed with no agent assignment.
 
-**System response at 2:00 PM:** The `SlaMonitoringAgent` evaluates the ticket. Assuming an 8-hour resolution SLA, the ticket is at 62.5% of its window → not yet breached but past the 50% warning threshold. A warning notification fires to the engineering team lead. Additionally, the `EscalationAgent` notes the pending sentiment trend (two messages, slight negative) and applies a "attention-needed" flag.
+**System response at 2:00 PM:** The `SlaMonitoringAgent` evaluates the ticket. Assuming an 8-hour resolution SLA, the ticket is at 62.5% of its window → not yet breached but past the 50% warning threshold. A warning notification fires to the engineering team lead. the `EscalationAgent` notes the pending sentiment trend (two messages, slight negative) and applies a "attention-needed" flag.
 
 **Resolution:** The team lead assigns a senior agent who reviews the unified timeline, responds within 30 minutes of the flag, and resolves the issue. The post-resolution survey is dispatched. A follow-up retrospective identifies that the engineering team had no agents available that morning, triggering a staffing review.
 

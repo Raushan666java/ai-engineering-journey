@@ -5,6 +5,7 @@ title: "Chapter 6: Docker Compose"
 sidebar_label: "Chapter 6: Docker Compose"
 sidebar_position: 10
 ---
+
 # Chapter 6: Docker Compose
 
 > **Prev:** [Docker](./05-docker.md)

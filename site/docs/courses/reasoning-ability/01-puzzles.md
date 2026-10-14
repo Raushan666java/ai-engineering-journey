@@ -5,6 +5,7 @@ title: "Puzzles — Floor, Box, and Scheduling"
 sidebar_label: "Puzzles — Floor, Box, and Scheduling"
 sidebar_position: 1
 ---
+
 # Puzzles — Floor, Box, and Scheduling
 
 ## Learning Objectives

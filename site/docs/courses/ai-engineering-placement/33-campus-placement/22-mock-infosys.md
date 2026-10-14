@@ -5,7 +5,9 @@ title: "Infosys Mock Test - Full Pattern Simulation (50 Questions)"
 sidebar_label: "Infosys Mock Test - Full Pattern Simulation (50 Questions)"
 sidebar_position: 383
 ---
-# Infosys Mock Test - Full Pattern Simulation (50 Questions)
+
+<!-- improved -->
+﻿# Infosys Mock Test - Full Pattern Simulation (50 Questions)
 
 > This mock simulates the Infosys (InfyTQ / System Engineer) cognitive test.
 > Time limits: Quantitative 35 min, Logical Reasoning 25 min, Verbal 15 min. Total: 75 minutes.

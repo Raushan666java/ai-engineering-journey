@@ -5,6 +5,7 @@ title: "Chapter 10: Concurrency Control"
 sidebar_label: "Chapter 10: Concurrency Control"
 sidebar_position: 10
 ---
+
 # Chapter 10: Concurrency Control
 
 

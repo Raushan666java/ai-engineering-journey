@@ -5,6 +5,7 @@ title: "Chapter 9: Pointers"
 sidebar_label: "Chapter 9: Pointers"
 sidebar_position: 9
 ---
+
 # Chapter 9: Pointers
 
 > **Previous:** [Functions](./08-functions.md) | **Next:** [Structures and Unions](./10-structures-unions.md)

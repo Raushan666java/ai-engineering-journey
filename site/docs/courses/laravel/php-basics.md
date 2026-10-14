@@ -5,6 +5,7 @@ title: "Chapter 0: PHP Foundations for Laravel"
 sidebar_label: "Chapter 0: PHP Foundations for Laravel"
 sidebar_position: 61
 ---
+
 # Chapter 0: PHP Foundations for Laravel
 
 ---

@@ -5,6 +5,7 @@ title: "Chapter 14: Register Allocation"
 sidebar_label: "Chapter 14: Register Allocation"
 sidebar_position: 14
 ---
+
 # Chapter 14: Register Allocation
 
 ? Previous: [Chapter 13: Loop Optimization](13-loop-optimization.md) | **Next:** [Chapter 15: Advanced Topics](15-advanced.md)

@@ -5,6 +5,7 @@ title: "Chapter 14: NoSQL Databases"
 sidebar_label: "Chapter 14: NoSQL Databases"
 sidebar_position: 14
 ---
+
 # Chapter 14: NoSQL Databases
 
 > **Prev:** [Chapter 13—Query Processing](13-query-processing.md) | **Next:** [Chapter 15—MongoDB](15-mongodb.md)

@@ -5,6 +5,7 @@ title: "Chapter 5: Ethernet Switching"
 sidebar_label: "Chapter 5: Ethernet Switching"
 sidebar_position: 5
 ---
+
 # Chapter 5: Ethernet Switching
 
 > **Prerequisites:** [Chapter 4: Medium Access Control](./04-mac.md) → MAC protocols and CSMA/CD | **Next:** [Chapter 6: Network Layer](./06-network-layer.md) → From switching to IP routing
@@ -1579,7 +1580,7 @@ In a triangle topology of three switches (A–B, B–C, C–A connected), a broa
 5. Switch C receives from B → floods to A.
 6. Each frame multiplies endlessly → **broadcast storm** (100% bandwidth, network unusable).
 
-Additionally, MAC tables become unstable: the same source MAC keeps appearing on different ports as the frame loops.
+MAC tables become unstable: the same source MAC keeps appearing on different ports as the frame loops.
 
 ### 5.5.2 Real-World Analogy
 

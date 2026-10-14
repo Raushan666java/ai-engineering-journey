@@ -5,6 +5,7 @@ title: "Chapter 5: Ensemble Methods"
 sidebar_label: "Chapter 5: Ensemble Methods"
 sidebar_position: 5
 ---
+
 # Chapter 5: Ensemble Methods
 
 > **Previous:** [Decision Trees](./04-decision-trees.md) | **Next:** [Support Vector Machines](./06-support-vector-machines.md)

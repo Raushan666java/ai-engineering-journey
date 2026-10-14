@@ -5,6 +5,7 @@ title: "CPU Organization"
 sidebar_label: "CPU Organization"
 sidebar_position: 2
 ---
+
 # CPU Organization
 
 ## Learning Objectives

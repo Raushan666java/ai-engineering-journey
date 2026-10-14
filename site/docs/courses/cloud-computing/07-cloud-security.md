@@ -5,6 +5,7 @@ title: "Chapter 7: Cloud Security"
 sidebar_label: "Chapter 7: Cloud Security"
 sidebar_position: 7
 ---
+
 # Chapter 7: Cloud Security
 
 > **Previous:** [Chapter 6: Cloud Networking](./06-cloud-networking.md) | **Next:** [Chapter 8: Serverless Computing](./08-serverless.md)

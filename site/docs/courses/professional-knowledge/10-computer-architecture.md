@@ -5,6 +5,7 @@ title: "Chapter 10: Computer Architecture — Exam Quick Revision"
 sidebar_label: "Chapter 10: Computer Architecture — Exam Quick Revision"
 sidebar_position: 10
 ---
+
 # Chapter 10: Computer Architecture — Exam Quick Revision
 
 ## Learning Objectives

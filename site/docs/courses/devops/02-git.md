@@ -5,6 +5,7 @@ title: "Chapter 2: Advanced Git"
 sidebar_label: "Chapter 2: Advanced Git"
 sidebar_position: 2
 ---
+
 # Chapter 2: Advanced Git
 
 > **Prev:** [Introduction](./01-introduction.md) | **Prev Section:** [Linux Basics](./02-linux-basics.md)

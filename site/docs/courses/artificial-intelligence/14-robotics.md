@@ -5,6 +5,7 @@ title: "Chapter 14: Robotics"
 sidebar_label: "Chapter 14: Robotics"
 sidebar_position: 22
 ---
+
 # Chapter 14: Robotics
 
 **Previous:** [Chapter 13: Computer Vision](13-computer-vision.md) | **Next:** [Chapter 15: Ethics of AI](15-ethics-ai.md)

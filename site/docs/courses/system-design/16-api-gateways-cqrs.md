@@ -5,6 +5,7 @@ title: "Chapter 16: API Gateways, CQRS, and Event Sourcing"
 sidebar_label: "Chapter 16: API Gateways, CQRS, and Event Sourcing"
 sidebar_position: 16
 ---
+
 # Chapter 16: API Gateways, CQRS, and Event Sourcing
 > **Previous:** [15 Cdn Dns Edge](./15-cdn-dns-edge.md) | **Next:** [17 Observability Resiliency](./17-observability-resiliency.md)
 

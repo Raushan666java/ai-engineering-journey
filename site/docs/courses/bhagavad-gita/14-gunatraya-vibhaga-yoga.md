@@ -5,6 +5,7 @@ title: "Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are th
 sidebar_label: "Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather"
 sidebar_position: 14
 ---
+
 # Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather
 
 > "Stop praying for good weather. You are not the weather — you are the sky. Watch the clouds, and they will pass."

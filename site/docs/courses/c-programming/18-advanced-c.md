@@ -5,6 +5,7 @@ title: "Chapter 18: Advanced C"
 sidebar_label: "Chapter 18: Advanced C"
 sidebar_position: 18
 ---
+
 # Chapter 18: Advanced C
 
 > **Previous:** [The C Standard Library](./17-standard-library.md)

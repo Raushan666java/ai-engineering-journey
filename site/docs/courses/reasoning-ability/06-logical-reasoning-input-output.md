@@ -5,6 +5,7 @@ title: "Logical Reasoning and Input-Output"
 sidebar_label: "Logical Reasoning and Input-Output"
 sidebar_position: 6
 ---
+
 # Logical Reasoning and Input-Output
 
 ## Learning Objectives

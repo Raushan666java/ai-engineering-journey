@@ -5,6 +5,7 @@ title: "Chapter 2: Indian Geography & Environment"
 sidebar_label: "Chapter 2: Indian Geography & Environment"
 sidebar_position: 2
 ---
+
 # Chapter 2: Indian Geography & Environment
 
 ## Learning Objectives

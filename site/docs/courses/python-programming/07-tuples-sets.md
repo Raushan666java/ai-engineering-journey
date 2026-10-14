@@ -5,6 +5,7 @@ title: "Chapter 7: Tuples and Sets"
 sidebar_label: "Chapter 7: Tuples and Sets"
 sidebar_position: 7
 ---
+
 # Chapter 7: Tuples and Sets
 
 

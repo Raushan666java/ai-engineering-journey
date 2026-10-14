@@ -5,6 +5,8 @@ title: "Universal Aptitude Master Plan — Crack Any Company's Aptitude Round"
 sidebar_label: "Universal Aptitude Master Plan — Crack Any Company's Aptitude Round"
 sidebar_position: 371
 ---
+
+<!-- improved -->
 # Universal Aptitude Master Plan — Crack Any Company's Aptitude Round
 
 > This plan is company-neutral. It builds a complete aptitude skill set (Quant + Logical + Verbal)

@@ -5,6 +5,7 @@ title: "Chapter 7: Templates"
 sidebar_label: "Chapter 7: Templates"
 sidebar_position: 7
 ---
+
 # Chapter 7: Templates
 
 > **Previous:** [06-operator-overloading](./06-operator-overloading.md) | **Next:** [08-exceptions](./08-exceptions.md)

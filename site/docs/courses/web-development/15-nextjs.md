@@ -5,6 +5,7 @@ title: "Chapter 15: Next.js"
 sidebar_label: "Chapter 15: Next.js"
 sidebar_position: 15
 ---
+
 # Chapter 15: Next.js
 
 > **Previous:** [14-typescript](./14-typescript.md) | **Next:** [16-testing-web](./16-testing-web.md)

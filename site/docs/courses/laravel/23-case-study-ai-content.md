@@ -5,6 +5,7 @@ title: "Chapter 23: Case Study — AI-Powered Content Platform"
 sidebar_label: "Chapter 23: Case Study — AI-Powered Content Platform"
 sidebar_position: 23
 ---
+
 # Chapter 23: Case Study — AI-Powered Content Platform
 
 > **Previous:** [Case Study E-Commerce](./22-case-study-ecommerce.md) | **Next:** [Capstone](./24-capstone.md)

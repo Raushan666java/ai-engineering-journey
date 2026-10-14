@@ -5,6 +5,7 @@ title: "Chapter 7: Type Checking"
 sidebar_label: "Chapter 7: Type Checking"
 sidebar_position: 7
 ---
+
 # Chapter 7: Type Checking
 
 ? Previous: [Chapter 6: Intermediate Code Generation](06-intermediate-code.md) | **Next:** [Chapter 8: Runtime Environment](08-runtime-env.md)

@@ -5,6 +5,7 @@ title: "Chapter 1: Introduction to Compiler Design"
 sidebar_label: "Chapter 1: Introduction to Compiler Design"
 sidebar_position: 1
 ---
+
 # Chapter 1: Introduction to Compiler Design
 
 **? Prerequisite:** None | **Next:** [Chapter 2: Lexical Analysis](02-lexical.md)

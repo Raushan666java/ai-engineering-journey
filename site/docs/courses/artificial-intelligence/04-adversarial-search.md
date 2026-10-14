@@ -5,6 +5,7 @@ title: "Chapter 4: Adversarial Search and Games"
 sidebar_label: "Chapter 4: Adversarial Search and Games"
 sidebar_position: 6
 ---
+
 # Chapter 4: Adversarial Search and Games
 
 **Previous:** [Chapter 3: Informed Search and Heuristics](03-informed-search.md) | **Next:** [Chapter 5: Constraint Satisfaction Problems](05-csp.md)

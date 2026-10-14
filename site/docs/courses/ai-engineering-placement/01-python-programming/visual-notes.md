@@ -5,6 +5,7 @@ title: "Visual Notes — Python Programming"
 sidebar_label: "Visual Notes"
 sidebar_position: 25
 ---
+
 # Visual Notes — Python Programming
 
 > One diagram, the full picture. Glance at this before reading the chapters and again before interviews.

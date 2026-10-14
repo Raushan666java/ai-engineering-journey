@@ -5,6 +5,7 @@ title: "Chapter 15: Applications of Discrete Mathematics"
 sidebar_label: "Chapter 15: Applications of Discrete Mathematics"
 sidebar_position: 15
 ---
+
 # Chapter 15: Applications of Discrete Mathematics
 
 > **Previous:** [Chapter 14: Number Theory](./14-number-theory.md)

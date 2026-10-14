@@ -5,6 +5,7 @@ title: "Chapter 59: Database Interview Q&A for Java & Spring Boot Developers"
 sidebar_label: "Chapter 59: Database Interview Q&A for Java & Spring Boot Developers"
 sidebar_position: 63
 ---
+
 # Chapter 59: Database Interview Q&A for Java & Spring Boot Developers
 
 > **Previous:** [REST API Interview Q&amp;A](./58-interview-rest-api.md) | **Next:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-a.md)

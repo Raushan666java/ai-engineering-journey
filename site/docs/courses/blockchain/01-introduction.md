@@ -5,6 +5,7 @@ title: "Chapter 1: Introduction to Blockchain"
 sidebar_label: "Chapter 1: Introduction to Blockchain"
 sidebar_position: 1
 ---
+
 # Chapter 1: Introduction to Blockchain
 
 > **Previous:** None (First Chapter) | **Next:** [Chapter 2: Cryptography for Blockchain](./02-cryptography.md)

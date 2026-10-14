@@ -5,6 +5,7 @@ title: "Chapter 8: Mock Interview Scenarios"
 sidebar_label: "Chapter 8: Mock Interview Scenarios"
 sidebar_position: 8
 ---
+
 # Chapter 8: Mock Interview Scenarios
 
 ## Learning Objectives
@@ -95,7 +96,7 @@ a higher salary?
 
 Candidate: Sir, I believe technology for public service has a deeper impact.
 At NIC, my work on DigiLocker or e-Office could serve 100+ crore citizens.
-That scale of impact is unmatched in the private sector. Additionally, the
+That scale of impact is unmatched in the private sector. the
 variety of projects at NIC — from AI-based language translation (Bhashini)
 to blockchain for certificates — offers tremendous learning opportunities.
 Salary is important, but long-term satisfaction comes from meaningful work.

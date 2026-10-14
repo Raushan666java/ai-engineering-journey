@@ -5,6 +5,7 @@ title: "Chapter 16: Trie (Prefix Tree)"
 sidebar_label: "Chapter 16: Trie (Prefix Tree)"
 sidebar_position: 16
 ---
+
 # Chapter 16: Trie (Prefix Tree)
 
 **Prev:** [Chapter 15: B-Trees and B+ Trees](15-b-trees.md) | **Next:** [Chapter 17: Segment Tree and Fenwick Tree](17-segment-tree.md)

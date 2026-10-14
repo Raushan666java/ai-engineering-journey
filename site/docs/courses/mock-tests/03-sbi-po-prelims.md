@@ -5,6 +5,7 @@ title: "SBI PO Prelims — Full-Length Mock Test"
 sidebar_label: "SBI PO Prelims — Full-Length Mock Test"
 sidebar_position: 3
 ---
+
 # SBI PO Prelims — Full-Length Mock Test
 
 > **Exam:** State Bank of India Probationary Officer (SBI PO) Prelims  

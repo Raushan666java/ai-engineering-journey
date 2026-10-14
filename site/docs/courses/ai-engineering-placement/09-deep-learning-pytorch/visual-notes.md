@@ -5,6 +5,7 @@ title: "Visual Notes — Neural Network Training Loop"
 sidebar_label: "Visual Notes"
 sidebar_position: 137
 ---
+
 # Visual Notes — Neural Network Training Loop
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

@@ -5,6 +5,7 @@ title: "Visual Notes — From Problem to Demo"
 sidebar_label: "Visual Notes"
 sidebar_position: 242
 ---
+
 # Visual Notes — From Problem to Demo
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

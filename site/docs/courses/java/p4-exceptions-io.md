@@ -5,6 +5,7 @@ title: "Exception Handling & I/O"
 sidebar_label: "Exception Handling & I/O"
 sidebar_position: 79
 ---
+
 # Exception Handling & I/O
 
 ## Learning Objectives
@@ -1167,7 +1168,7 @@ import java.io.IOException;
 public class CharacterStreamDemo {
 
     public static void main(String[] args) {
-        String text = "Hello, ä¸–ç•Œ! Java I/O handles Unicode.\nLine 2: Ã±oÃ±o.";
+        String text = "Hello, 世界! Java I/O handles Unicode.\nLine 2: ñoño.";
 
         // Write characters.
         try (FileWriter fw = new FileWriter("char-demo.txt")) {
@@ -1212,7 +1213,7 @@ import java.nio.charset.StandardCharsets;
 public class StreamBridgeDemo {
 
     public static void main(String[] args) {
-        String data = "UTF-8 encoded: æ—¥æœ¬ã¸ã‚ˆã†ã“ã";
+        String data = "UTF-8 encoded: 日本へようこそ";
 
         // Write with explicit charset.
         try (OutputStreamWriter osw = new OutputStreamWriter(
@@ -1262,8 +1263,8 @@ public class BufferedReadWriteDemo {
         String filename = "lines.txt";
         List<String> lines = List.of(
             "First line",
-            "Second line with æ—¥æœ¬èªž",
-            "Third line: Ã±oÃ±o",
+            "Second line with 日本語",
+            "Third line: ñoño",
             "Fourth line"
         );
 
@@ -1835,7 +1836,7 @@ public class FileChannelDemo {
             ByteBuffer buffer = ByteBuffer.allocate(1024);
             buffer.put("Hello from FileChannel!\n".getBytes());
             buffer.put("Second line.\n".getBytes());
-            buffer.put("UTF-8 works: æ—¥æœ¬èªž\n".getBytes());
+            buffer.put("UTF-8 works: 日本語\n".getBytes());
             buffer.flip();
             int written = channel.write(buffer);
             System.out.println("Written " + written + " bytes via FileChannel");

@@ -5,6 +5,7 @@ title: "Chapter 20: Case Study — Netflix and Video Streaming"
 sidebar_label: "Chapter 20: Case Study — Netflix and Video Streaming"
 sidebar_position: 20
 ---
+
 # Chapter 20: Case Study — Netflix and Video Streaming
 > **Previous:** [19 Case Study Whatsapp](./19-case-study-whatsapp.md) | **Next:** [21 Case Study Uber](./21-case-study-uber.md)
 

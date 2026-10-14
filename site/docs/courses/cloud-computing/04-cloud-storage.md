@@ -5,6 +5,7 @@ title: "Chapter 4: Cloud Storage Services"
 sidebar_label: "Chapter 4: Cloud Storage Services"
 sidebar_position: 4
 ---
+
 # Chapter 4: Cloud Storage Services
 
 > **Previous:** [Chapter 3: Cloud Compute Services](./03-cloud-compute.md) | **Next:** [Chapter 5: Cloud Database Services](./05-cloud-database.md)

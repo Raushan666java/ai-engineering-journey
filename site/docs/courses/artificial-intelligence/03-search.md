@@ -5,6 +5,7 @@ title: "Chapter 3: Solving Problems by Searching"
 sidebar_label: "Chapter 3: Solving Problems by Searching"
 sidebar_position: 5
 ---
+
 # Chapter 3: Solving Problems by Searching
 
 **Previous:** [Chapter 2: Intelligent Agents](02-agents.md) | **Next:** [Chapter 3: Informed Search and Heuristics](03-informed-search.md)
@@ -1344,7 +1345,7 @@ BFS cannot handle infinite graphs in general because it explores level by level 
 
 **Q6: Why is IDDFS preferred over BFS for game-tree search in chess engines?**
 
-Chess has a branching factor of ~35 and games can go 80+ ply deep. BFS would explode memory instantly (35^40 nodes). IDDFS uses O(bd) memory and can be combined with alpha-beta pruning, which dramatically reduces effective branching factor. Moreover, IDDFS is an anytime algorithm — if time runs out, the best result from the last completed depth is available.
+Chess has a branching factor of ~35 and games can go 80+ ply deep. BFS would explode memory instantly (35^40 nodes). IDDFS uses O(bd) memory and can be combined with alpha-beta pruning, which dramatically reduces effective branching factor. IDDFS is an anytime algorithm — if time runs out, the best result from the last completed depth is available.
 
 **Q7: What is the overhead ratio of IDDFS compared to BFS?**
 

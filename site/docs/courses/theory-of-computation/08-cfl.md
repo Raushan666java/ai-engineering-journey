@@ -5,6 +5,7 @@ title: "Chapter 8: Properties of Context-Free Languages"
 sidebar_label: "Chapter 8: Properties of Context-Free Languages"
 sidebar_position: 8
 ---
+
 # Chapter 8: Properties of Context-Free Languages
 
 > **Previous:** [Pushdown Automata](./07-pda.md) | **Next:** [Turing Machines](./09-turing.md)

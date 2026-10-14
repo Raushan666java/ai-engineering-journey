@@ -5,6 +5,7 @@ title: "Chapter 17: SRE Principles"
 sidebar_label: "Chapter 17: SRE Principles"
 sidebar_position: 26
 ---
+
 # Chapter 17: SRE Principles
 
 > **Previous:** [Container Networking](./16-networking.md) | **Next:** [Capstone Project](./18-capstone.md)

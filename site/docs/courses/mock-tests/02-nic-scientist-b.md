@@ -5,6 +5,7 @@ title: "NIC Scientist B — Full-Length Mock Test"
 sidebar_label: "NIC Scientist B — Full-Length Mock Test"
 sidebar_position: 2
 ---
+
 # NIC Scientist B — Full-Length Mock Test
 
 > **Exam:** National Informatics Centre (NIC) Scientist B  

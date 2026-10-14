@@ -5,6 +5,7 @@ title: "Chapter 6: Identity & Access Management"
 sidebar_label: "Chapter 6: Identity & Access Management"
 sidebar_position: 6
 ---
+
 # Chapter 6: Identity & Access Management
 
 > **Prereq:** Chapter 5 (Web Security) → OAuth 2.0 and SAML secure web authentication.

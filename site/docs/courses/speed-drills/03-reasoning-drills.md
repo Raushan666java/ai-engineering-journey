@@ -5,6 +5,7 @@ title: "Reasoning Speed Drills"
 sidebar_label: "Reasoning Speed Drills"
 sidebar_position: 3
 ---
+
 # Reasoning Speed Drills
 
 > Sharpen your analytical reasoning through timed practice in coding-decoding, blood relations, direction sense, syllogisms, inequalities, and series completion.

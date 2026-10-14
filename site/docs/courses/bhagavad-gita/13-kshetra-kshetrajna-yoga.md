@@ -5,6 +5,7 @@ title: "Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower"
 sidebar_label: "Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower"
 sidebar_position: 13
 ---
+
 # Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower
 
 > "You are not the field of your life — not its soil, not its crops, not its storms. You are the one who sees the field. And you have never left home."

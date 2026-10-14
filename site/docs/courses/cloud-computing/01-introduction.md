@@ -5,6 +5,7 @@ title: "Chapter 1: Introduction to Cloud Computing"
 sidebar_label: "Chapter 1: Introduction to Cloud Computing"
 sidebar_position: 1
 ---
+
 # Chapter 1: Introduction to Cloud Computing
 
 > **Next:** [Chapter 2: Virtualization](./02-virtualization.md)

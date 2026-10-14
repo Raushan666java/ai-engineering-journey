@@ -5,6 +5,7 @@ title: "Chapter 2: Classes and Objects"
 sidebar_label: "Chapter 2: Classes and Objects"
 sidebar_position: 2
 ---
+
 # Chapter 2: Classes and Objects
 
 > **Previous:** [Introduction](./01-introduction.md) | **Next:** [Constructors](./03-constructors.md)

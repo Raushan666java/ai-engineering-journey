@@ -5,6 +5,7 @@ title: "Chapter 1: Introduction to System Design"
 sidebar_label: "Chapter 1: Introduction to System Design"
 sidebar_position: 1
 ---
+
 # Chapter 1: Introduction to System Design
 > **Previous:** None | **Next:** [02 Scalability Load Balancing](./02-scalability-load-balancing.md)
 

@@ -5,6 +5,7 @@ title: "Spring Batch"
 sidebar_label: "Spring Batch"
 sidebar_position: 49
 ---
+
 # Spring Batch
 
 > **Previous:** [GraphQL](./48-graphql.md) | **Next:** [Spring Integration](./50-integration.md)

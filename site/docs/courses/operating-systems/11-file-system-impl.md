@@ -5,6 +5,7 @@ title: "Chapter 11: File System Implementation"
 sidebar_label: "Chapter 11: File System Implementation"
 sidebar_position: 11
 ---
+
 # Chapter 11: File System Implementation
 
 **<< [File Systems](./10-file-systems.md)** | [**Next: Secondary Storage**](./12-secondary-storage.md) >>

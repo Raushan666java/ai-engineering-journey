@@ -5,6 +5,7 @@ title: "Chapter 3: The Relational Model"
 sidebar_label: "Chapter 3: The Relational Model"
 sidebar_position: 3
 ---
+
 # Chapter 3: The Relational Model
 
 > **Previous:** [Chapter 2: Entity-Relationship Model](./02-er-model.md) | **Next:** [Chapter 4: SQL Basics](./04-sql-basics.md)

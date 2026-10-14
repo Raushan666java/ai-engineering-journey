@@ -5,6 +5,7 @@ title: "Chapter 12: Minimum Spanning Trees"
 sidebar_label: "Chapter 12: Minimum Spanning Trees"
 sidebar_position: 12
 ---
+
 # Chapter 12: Minimum Spanning Trees
 
 > **Prerequisites:** [Chapter 11: Graph Shortest Paths](./11-graph-shortest.md) — Graph algorithms, priority queues, relaxation | **Next:** [Chapter 13: Network Flow](./13-graph-flow.md) — From tree structures to flow networks

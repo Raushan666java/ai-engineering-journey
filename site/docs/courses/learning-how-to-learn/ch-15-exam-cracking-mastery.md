@@ -5,6 +5,7 @@ title: "Chapter 15: Exam Cracking Mastery — Universal Strategy for Any Exam"
 sidebar_label: "Chapter 15: Exam Cracking Mastery — Universal Strategy for Any Exam"
 sidebar_position: 16
 ---
+
 # Chapter 15: Exam Cracking Mastery — Universal Strategy for Any Exam
 
 > **Prerequisites:** [Chapter 3: Active Recall & Spaced Repetition](./ch-03-active-recall-spaced-repetition.md) — Core memory techniques.

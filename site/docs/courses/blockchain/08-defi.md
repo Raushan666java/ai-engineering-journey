@@ -5,6 +5,7 @@ title: "Chapter 8: Decentralized Finance (DeFi)"
 sidebar_label: "Chapter 8: Decentralized Finance (DeFi)"
 sidebar_position: 8
 ---
+
 # Chapter 8: Decentralized Finance (DeFi)
 
 > **Previous:** [Chapter 7: Decentralized Applications (dApps)](./07-dapps.md) | **Next:** [Chapter 9: Enterprise Blockchain](./09-enterprise.md)

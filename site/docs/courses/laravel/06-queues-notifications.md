@@ -5,6 +5,7 @@ title: "Chapter 6: Queues, Jobs, Notifications & Mail"
 sidebar_label: "Chapter 6: Queues, Jobs, Notifications & Mail"
 sidebar_position: 6
 ---
+
 # Chapter 6: Queues, Jobs, Notifications & Mail
 > **Previous:** [Authentication, Authorization & Security](./05-auth-security) | **Next:** [API Development & Integration](./07-api-development)
 

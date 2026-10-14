@@ -5,6 +5,7 @@ title: "Visual Notes — The LLM Interaction Loop"
 sidebar_label: "Visual Notes"
 sidebar_position: 157
 ---
+
 # Visual Notes — The LLM Interaction Loop
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

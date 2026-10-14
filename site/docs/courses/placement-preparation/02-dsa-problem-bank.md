@@ -5,6 +5,7 @@ title: "DSA Coding Problem Bank for Placement Interviews"
 sidebar_label: "DSA Coding Problem Bank for Placement Interviews"
 sidebar_position: 2
 ---
+
 # DSA Coding Problem Bank for Placement Interviews
 
 > **Previous:** [Chapter 1: Resume Building, LinkedIn & Aptitude](./01-resume-aptitude.md) | **Next:** [Chapter 3: SQL Problem Bank](./03-sql-problem-bank.md)

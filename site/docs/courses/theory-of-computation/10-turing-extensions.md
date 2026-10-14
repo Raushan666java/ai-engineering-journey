@@ -5,6 +5,7 @@ title: "Chapter 10: Turing Machine Extensions and the Church-Turing Thesis"
 sidebar_label: "Chapter 10: Turing Machine Extensions and the Church-Turing Thesis"
 sidebar_position: 10
 ---
+
 # Chapter 10: Turing Machine Extensions and the Church-Turing Thesis
 
 > **Previous:** [Turing Machines](./09-turing.md) | **Next:** [Decidability](./11-decidability.md)

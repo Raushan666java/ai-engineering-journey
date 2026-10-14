@@ -5,6 +5,7 @@ title: "Chapter 20: Zero Trust & Enterprise Security Architecture"
 sidebar_label: "Chapter 20: Zero Trust & Enterprise Security Architecture"
 sidebar_position: 19
 ---
+
 # Chapter 20: Zero Trust & Enterprise Security Architecture
 
 ## Learning Objectives

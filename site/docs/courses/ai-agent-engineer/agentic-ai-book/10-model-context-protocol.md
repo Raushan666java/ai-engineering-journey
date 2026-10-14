@@ -5,6 +5,7 @@ title: "10-model-context-protocol"
 sidebar_label: "10-model-context-protocol"
 sidebar_position: 11
 ---
+
 ## Chapter 10: Model Context Protocol (MCP)
 
 ### 10.1 The Problem MCP Solves

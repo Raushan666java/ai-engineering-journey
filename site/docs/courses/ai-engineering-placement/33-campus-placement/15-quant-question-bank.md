@@ -5,6 +5,8 @@ title: "Quantitative Aptitude — 100 Question Drill Bank (Any Company)"
 sidebar_label: "Quantitative Aptitude — 100 Question Drill Bank (Any Company)"
 sidebar_position: 376
 ---
+
+<!-- improved -->
 # Quantitative Aptitude — 100 Question Drill Bank (Any Company)
 
 > Rule: 60-90 seconds per question. Write your answer, then check against the key at the bottom.

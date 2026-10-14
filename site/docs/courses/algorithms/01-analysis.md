@@ -5,6 +5,7 @@ title: "Chapter 1: Fundamentals of Algorithm Analysis"
 sidebar_label: "Chapter 1: Fundamentals of Algorithm Analysis"
 sidebar_position: 1
 ---
+
 # Chapter 1: Fundamentals of Algorithm Analysis
 
 > **Prerequisites:** None | **Next:** [Chapter 2: Searching](./02-searching.md) — From measuring efficiency to finding elements

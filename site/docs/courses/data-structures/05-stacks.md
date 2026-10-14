@@ -5,6 +5,7 @@ title: "Chapter 5: Stacks"
 sidebar_label: "Chapter 5: Stacks"
 sidebar_position: 5
 ---
+
 # Chapter 5: Stacks
 
 > **Previous:** [Chapter 4: Doubly Linked List](./04-doubly-linked-list.md) | **Next:** [Queues](./06-queues.md)

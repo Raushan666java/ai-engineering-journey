@@ -5,6 +5,7 @@ title: "Chapter 5: Loops (Comprehensive)"
 sidebar_label: "Chapter 5: Loops (Comprehensive)"
 sidebar_position: 5
 ---
+
 # Chapter 5: Loops (Comprehensive)
 
 > **Previous:** [Control Flow](./04-control-flow.md) | **Next:** [Arrays](./06-arrays.md)
@@ -1075,7 +1076,7 @@ For `for (i=0; i<n; i++) for (j=0; j<i; j++)`:
 - Total iterations = 0 + 1 + 2 + ... + (n-1) = n(n-1)/2
 - This is (n² - n)/2 → O(n²)
 
-The constant factor (×½) doesn't change the complexity class. For n = 1000, n²/2 = 500,000 vs n² = 1,000,000 — both are O(n²).
+The constant factor (׽) doesn't change the complexity class. For n = 1000, n²/2 = 500,000 vs n² = 1,000,000 — both are O(n²).
 
 ### Advantages & Disadvantages
 

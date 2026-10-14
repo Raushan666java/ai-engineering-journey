@@ -5,6 +5,7 @@ title: "Chapter 13: AVL Trees"
 sidebar_label: "Chapter 13: AVL Trees"
 sidebar_position: 13
 ---
+
 # Chapter 13: AVL Trees
 
 **Prev:** [Chapter 12: Graph Traversals](12-graph-traversals.md) | **Next:** [Chapter 14: Red-Black Trees](14-red-black.md)

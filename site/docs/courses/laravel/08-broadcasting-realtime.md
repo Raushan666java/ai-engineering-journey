@@ -5,6 +5,7 @@ title: "Chapter 8: Broadcasting, Events & Real-Time Features"
 sidebar_label: "Chapter 8: Broadcasting, Events & Real-Time Features"
 sidebar_position: 8
 ---
+
 # Chapter 8: Broadcasting, Events & Real-Time Features
 > **Previous:** [API Development & Integration](./07-api-development) | **Next:** [Service Container, Facades & Package Development](./09-container-packages)
 

@@ -5,6 +5,7 @@ title: "Chapter 6: Greedy Algorithms"
 sidebar_label: "Chapter 6: Greedy Algorithms"
 sidebar_position: 6
 ---
+
 # Chapter 6: Greedy Algorithms
 
 > **Prerequisites:** [Chapter 5: Divide and Conquer](./05-divide-conquer.md) — Recursive problem decomposition | **Next:** [Chapter 7: Dynamic Programming — Foundations](./07-dp-intro.md) — When greedy fails, DP takes over

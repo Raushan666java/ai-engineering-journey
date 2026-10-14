@@ -5,6 +5,7 @@ title: "Chapter 27: Healthcare AI Agents"
 sidebar_label: "Chapter 27: Healthcare AI Agents"
 sidebar_position: 27
 ---
+
 # Chapter 27: Healthcare AI Agents
 
 > **Previous:** [Business Automation Agents](./26-business-automation-agents.md) | **Next:** [Finance](./28-finance.md)

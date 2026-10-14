@@ -5,6 +5,7 @@ title: "Inequalities and Data Sufficiency"
 sidebar_label: "Inequalities and Data Sufficiency"
 sidebar_position: 4
 ---
+
 # Inequalities and Data Sufficiency
 
 ## Learning Objectives

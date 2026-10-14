@@ -5,6 +5,7 @@ title: "Chapter 4: Spark MLlib"
 sidebar_label: "Chapter 4: Spark MLlib"
 sidebar_position: 4
 ---
+
 # Chapter 4: Spark MLlib
 
 > **Previous:** [Chapter 3: Apache Spark Basics](./03-spark-basics.md) | **Next:** [Chapter 5: Big Data Ecosystem Tools](./05-ecosystem.md)

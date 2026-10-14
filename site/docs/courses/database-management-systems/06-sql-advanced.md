@@ -5,6 +5,7 @@ title: "Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, M
 sidebar_label: "Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables"
 sidebar_position: 6
 ---
+
 # Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables
 
 > **Previous:** [Chapter 5: SQL Joins and Subqueries](./05-sql-joins.md) | **Next:** [Chapter 7: Normalization](./07-normalization.md)

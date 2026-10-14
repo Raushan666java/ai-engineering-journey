@@ -5,6 +5,7 @@ title: "Chapter 9: Transactions"
 sidebar_label: "Chapter 9: Transactions"
 sidebar_position: 9
 ---
+
 # Chapter 9: Transactions
 
 > **Previous:** [Chapter 8: Higher Normal Forms and Denormalization](./08-higher-nf.md) | **Next:** [Chapter 10: Concurrency Control](./10-concurrency.md)

@@ -5,6 +5,7 @@ title: "Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output"
 sidebar_label: "Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output"
 sidebar_position: 12
 ---
+
 # Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output
 > **Previous:** [Caching, Performance & Octane](./11-caching-performance) | **Next:** [Laravel AI SDK -- Tools, MCP Tools & Provider Tools](./13-ai-sdk-tools)
 

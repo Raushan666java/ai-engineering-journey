@@ -5,6 +5,8 @@ title: "Python Basics — Variables, Data Types, Operators"
 sidebar_label: "Python Basics — Variables, Data Types, Operators"
 sidebar_position: 10
 ---
+
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Python Basics — Variables, Data Types, Operators
 
@@ -26,16 +28,8 @@ Python is the lingua franca of AI engineering. Mastering its syntax, data struct
 
 
 
-## Prerequisites
-
-- Basic programming knowledge
-- Understanding of data structures
-
 ## Key Terminology
 
-**Key Terms**: Core vocabulary and concepts for this topic.
-
-**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 

@@ -5,6 +5,7 @@ title: "Chapter 12: Building in Public & Teaching"
 sidebar_label: "Chapter 12: Building in Public & Teaching"
 sidebar_position: 13
 ---
+
 # Chapter 12: Building in Public & Teaching
 
 > ⏱ **1.5 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**

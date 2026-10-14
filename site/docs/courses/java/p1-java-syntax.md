@@ -5,6 +5,7 @@ title: "Java Syntax & Fundamentals"
 sidebar_label: "Java Syntax & Fundamentals"
 sidebar_position: 76
 ---
+
 # Java Syntax & Fundamentals
 
 ## Learning Objectives

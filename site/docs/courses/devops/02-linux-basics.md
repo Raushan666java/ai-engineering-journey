@@ -5,6 +5,7 @@ title: "Chapter 2: Linux Basics for DevOps"
 sidebar_label: "Chapter 2: Linux Basics for DevOps"
 sidebar_position: 3
 ---
+
 # Chapter 2: Linux Basics for DevOps
 
 > **Next:** [Advanced Git](./02-git.md)

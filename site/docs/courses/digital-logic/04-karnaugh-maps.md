@@ -5,6 +5,7 @@ title: "Chapter 4: Karnaugh Maps"
 sidebar_label: "Chapter 4: Karnaugh Maps"
 sidebar_position: 4
 ---
+
 # Chapter 4: Karnaugh Maps
 
 > **Prereq:** Chapter 2 (Boolean Algebra) ? K-maps provide a graphical alternative to algebraic minimisation.

@@ -5,6 +5,7 @@ title: "Chapter 5: Combinatorics"
 sidebar_label: "Chapter 5: Combinatorics"
 sidebar_position: 5
 ---
+
 # Chapter 5: Combinatorics
 
 > **Previous:** [Chapter 4: Proofs](./04-proofs.md) | **Next:** [Chapter 6: Recurrence Relations](./06-recurrence.md)

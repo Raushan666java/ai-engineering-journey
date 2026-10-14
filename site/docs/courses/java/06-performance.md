@@ -5,6 +5,7 @@ title: "Performance Tuning & Profiling"
 sidebar_label: "Performance Tuning & Profiling"
 sidebar_position: 6
 ---
+
 # Performance Tuning & Profiling
 
 > **Previous:** [Functional Programming in Practice](./05-functional-deep.md) | **Next:** [Maven Deep Dive](./07-maven.md)
@@ -590,7 +591,7 @@ Understanding the distinction is critical:
 
 | Measure     | Definition                                                   |
 |-------------|--------------------------------------------------------------|
-| Shallow heap | Memory consumed by one object's header + fields. For an `int[]` of 100 elements, shallow = header (16 bytes) + 100 Ã— 4 = 416 bytes. |
+| Shallow heap | Memory consumed by one object's header + fields. For an `int[]` of 100 elements, shallow = header (16 bytes) + 100 × 4 = 416 bytes. |
 | Retained heap | Shallow heap of the object PLUS shallow heap of every object **only reachable through this object**. The total memory freed when this object is GC'd. |
 
 ```java
@@ -1521,7 +1522,7 @@ public class MathBenchmark {
 - **Warmup**: 5--10 iterations of 1--10 seconds each. Watch the warmup graph → steady state should be reached before measurement begins.
 - **Measurement**: 5--10 iterations of 1--10 seconds. More iterations reduce noise.
 - **Forks**: 3--5 forks to account for JVM warmup randomization. Each fork runs the benchmark in a fresh JVM.
-- **Total time**: 3 forks Ã— (5 warmup + 5 measurement) Ã— 2 sec = 60 seconds minimum per benchmark method.
+- **Total time**: 3 forks × (5 warmup + 5 measurement) × 2 sec = 60 seconds minimum per benchmark method.
 
 ### 5.6 Blackhole
 
@@ -2339,14 +2340,14 @@ class JitWarmupDemo {
         long result = compute(100);
         long end = System.nanoTime();
 
-        System.out.printf("Result: %d, Time: %.2f Âµs%n", result, (end - start) / 1000.0);
+        System.out.printf("Result: %d, Time: %.2f µs%n", result, (end - start) / 1000.0);
 
         // Repeat to see stable timings after compilation
         for (int i = 0; i < 10; i++) {
             start = System.nanoTime();
             compute(100);
             end = System.nanoTime();
-            System.out.printf("Run %d: %.2f Âµs%n", i, (end - start) / 1000.0);
+            System.out.printf("Run %d: %.2f µs%n", i, (end - start) / 1000.0);
         }
     }
 }
@@ -3707,15 +3708,15 @@ Calculate the minimum `maximum-pool-size` using the formula `poolSize = cores * 
 
 ```
 Benchmark                              Mode  Cnt   Score    Error  Units
-StringConcat.stringConcat             thrpt    5   12.4 Â±  2.1  ops/s
-StringConcat.stringBuilder            thrpt    5  842.3 Â± 34.2  ops/s
-StringConcat.stringBuffer             thrpt    5  721.5 Â± 28.9  ops/s
+StringConcat.stringConcat             thrpt    5   12.4 ±  2.1  ops/s
+StringConcat.stringBuilder            thrpt    5  842.3 ± 34.2  ops/s
+StringConcat.stringBuffer             thrpt    5  721.5 ± 28.9  ops/s
 ```
 
 ```
 Benchmark                        Mode  Cnt     Score    Error  Units
-ListBenchmark.arrayListGet      thrpt    5  8421.3 Â± 212.4  ops/s
-ListBenchmark.linkedListGet     thrpt    5   832.1 Â±  67.3  ops/s
+ListBenchmark.arrayListGet      thrpt    5  8421.3 ± 212.4  ops/s
+ListBenchmark.linkedListGet     thrpt    5   832.1 ±  67.3  ops/s
 ```
 
 14. Analyze the following GC log segment and identify potential issues:

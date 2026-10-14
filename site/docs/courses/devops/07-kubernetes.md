@@ -5,6 +5,7 @@ title: "Chapter 7: Kubernetes"
 sidebar_label: "Chapter 7: Kubernetes"
 sidebar_position: 13
 ---
+
 # Chapter 7: Kubernetes
 
 > **Prev:** [Infrastructure as Code](./07-infrastructure-as-code.md)

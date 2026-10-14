@@ -5,6 +5,7 @@ title: "Chapter 02: Digital Payment Systems"
 sidebar_label: "Chapter 02: Digital Payment Systems"
 sidebar_position: 2
 ---
+
 # Chapter 02: Digital Payment Systems
 
 ## Learning Objectives

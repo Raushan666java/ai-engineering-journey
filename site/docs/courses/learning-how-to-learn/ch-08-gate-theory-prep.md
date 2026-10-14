@@ -5,6 +5,7 @@ title: "Chapter 8: GATE & Theory Exam Prep"
 sidebar_label: "Chapter 8: GATE & Theory Exam Prep"
 sidebar_position: 9
 ---
+
 # Chapter 8: GATE & Theory Exam Prep
 
 > **Prerequisites:** [Chapter 7: DSA & Coding Interview Prep](./ch-07-dsa-coding-interview.md) � Domain-specific DSA interview strategies.

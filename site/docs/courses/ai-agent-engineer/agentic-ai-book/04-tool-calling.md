@@ -5,6 +5,7 @@ title: "Part II — Building Blocks"
 sidebar_label: "Part II — Building Blocks"
 sidebar_position: 5
 ---
+
 # Part II — Building Blocks
 
 ## Chapter 4: Tool Calling From First Principles

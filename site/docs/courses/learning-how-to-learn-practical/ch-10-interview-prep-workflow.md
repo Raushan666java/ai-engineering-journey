@@ -5,6 +5,7 @@ title: "Chapter 10: Interview Preparation Workflow"
 sidebar_label: "Chapter 10: Interview Preparation Workflow"
 sidebar_position: 11
 ---
+
 # Chapter 10: Interview Preparation Workflow
 
 > ⏱ **2.5 hours total** · 🎯 **Intermediate** · 📋 **Recommended: Ch 8 (Study Plan)**

@@ -5,6 +5,7 @@ title: "HR Interview, Group Discussion & Soft Skills → Complete Campus Placeme
 sidebar_label: "HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide"
 sidebar_position: 6
 ---
+
 # HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide
 
 > **Previous:** [05 → Placement Season Strategy](05-placement-strategy.md)  
@@ -122,7 +123,7 @@ flowchart TD
 > "My strength is analytical problem-solving. In my capstone project, our team faced a performance issue where database queries were taking 8 seconds. I profiled the queries using EXPLAIN ANALYZE, identified missing indexes, and restructured two JOIN queries. The response time dropped to 300ms. I enjoy digging into data to find root causes."
 
 **How to choose weaknesses:**
-- Pick a real weakness (never say "I work too hard" or "I am a perfectionist" → these are clichÃ©s that interviewers see through).
+- Pick a real weakness (never say "I work too hard" or "I am a perfectionist" → these are clichés that interviewers see through).
 - Show self-awareness and a concrete improvement plan.
 - Ensure the weakness is not a core requirement for the job.
 
@@ -196,7 +197,7 @@ Before the interview, research these aspects:
 
 **Sample answers:**
 
-> "I want to join Google because I admire the scale at which your systems operate. I read the announcement about your Spanner database handling global transactions with strong consistency, and that level of distributed systems engineering is what I want to learn and contribute to. Additionally, your culture of innovation → where engineers spend 20% time on side projects → aligns with how I like to work. I have ideas for productivity tools I would love to prototype."
+> "I want to join Google because I admire the scale at which your systems operate. I read the announcement about your Spanner database handling global transactions with strong consistency, and that level of distributed systems engineering is what I want to learn and contribute to. your culture of innovation → where engineers spend 20% time on side projects → aligns with how I like to work. I have ideas for productivity tools I would love to prototype."
 
 > "I want to join Zomato because I have been following how you use machine learning to optimize delivery routes and reduce wait times. I am passionate about applying engineering to solve real-world logistics problems. Your engineering blog post on real-time order tracking was fascinating. I want to work on systems that impact millions of users daily, and I believe Zomato's engineering culture will help me grow rapidly."
 

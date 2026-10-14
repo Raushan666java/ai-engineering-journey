@@ -5,6 +5,7 @@ title: "Transaction Management"
 sidebar_label: "Transaction Management"
 sidebar_position: 24
 ---
+
 # Transaction Management
 
 Transactions are the bedrock of reliable data processing. A transaction groups multiple operations into a single unit of work that either succeeds completely (commit) or fails entirely (rollback), preserving data integrity even under concurrent access, hardware failures, and application crashes.

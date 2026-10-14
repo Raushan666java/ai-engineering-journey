@@ -5,6 +5,7 @@ title: "Chapter 22: Case Study — Twitter and News Feed"
 sidebar_label: "Chapter 22: Case Study — Twitter and News Feed"
 sidebar_position: 22
 ---
+
 # Chapter 22: Case Study — Twitter and News Feed
 > **Previous:** [21 Case Study Uber](./21-case-study-uber.md) | **Next:** [23 Case Study Dropbox](./23-case-study-dropbox.md)
 

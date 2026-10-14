@@ -5,6 +5,7 @@ title: "Testing Interview Q&A"
 sidebar_label: "Testing Interview Q&A"
 sidebar_position: 70
 ---
+
 # Testing Interview Q&A
 
 > **Previous:** [Security Interview Q&amp;A](./61-interview-security.md) | **Next:** [Tools &amp; DevOps Interview Q&amp;A](./63-interview-tools.md)
@@ -2416,7 +2417,7 @@ k6 run k6-test.js
 
 | Tool | Use Case | Language | Metrics | Reports |
 |------|----------|----------|---------|---------|
-| JMH | Microbenchmarks (methods, algorithms) | Java | ns, Î¼s, operations/s | Console, HTML |
+| JMH | Microbenchmarks (methods, algorithms) | Java | ns, μs, operations/s | Console, HTML |
 | Gatling | Load/Stress tests | Scala/Script | Latency, throughput, percentiles | HTML (detailed) |
 | k6 | Load/Smoke/Stress tests | JavaScript | Latency, throughput, thresholds | Cloud, JSON, HTML |
 | Locust | Load tests (Python ecosystem) | Python | RPS, response time, users | Web UI |

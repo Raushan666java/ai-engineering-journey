@@ -5,6 +5,7 @@ title: "Chapter 15: Shell Scripting"
 sidebar_label: "Chapter 15: Shell Scripting"
 sidebar_position: 15
 ---
+
 # Chapter 15: Shell Scripting
 
 **<< [The Linux Kernel](./14-linux-kernel.md)** | [**Next: Security**](./16-security.md) >>

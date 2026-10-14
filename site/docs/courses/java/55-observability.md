@@ -5,6 +5,7 @@ title: "Observability (Micrometer, Prometheus, Grafana)"
 sidebar_label: "Observability (Micrometer, Prometheus, Grafana)"
 sidebar_position: 55
 ---
+
 # Observability (Micrometer, Prometheus, Grafana)
 
 > **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)

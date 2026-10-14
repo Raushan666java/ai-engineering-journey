@@ -5,6 +5,7 @@ title: "Chapter 10 — Prompt Engineering Mastery"
 sidebar_label: "Chapter 10 — Prompt Engineering Mastery"
 sidebar_position: 11
 ---
+
 # Chapter 10 — Prompt Engineering Mastery
 
 **Duration:** 2 weeks, ~20 hours

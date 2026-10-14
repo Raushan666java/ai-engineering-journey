@@ -5,6 +5,7 @@ title: "Docker & Containerization"
 sidebar_label: "Docker & Containerization"
 sidebar_position: 52
 ---
+
 # Docker & Containerization
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)

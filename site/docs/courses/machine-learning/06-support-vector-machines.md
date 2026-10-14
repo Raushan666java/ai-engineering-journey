@@ -5,6 +5,7 @@ title: "Chapter 6: Support Vector Machines"
 sidebar_label: "Chapter 6: Support Vector Machines"
 sidebar_position: 6
 ---
+
 # Chapter 6: Support Vector Machines
 
 > **Previous:** [Ensemble Methods](./05-ensemble-methods.md) | **Next:** [Neural Networks](./07-neural-networks.md)

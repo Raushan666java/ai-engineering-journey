@@ -5,6 +5,7 @@ title: "19 Mock Test 5"
 sidebar_label: "19 Mock Test 5"
 sidebar_position: 16
 ---
+
 ﻿# GATE CS Mock Test 5 → Full-Length Practice Paper
 
 
@@ -268,7 +269,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q21 (2 Marks):** The value of ∬_R xy dA over R = [0,1] Ãâ€â€� [0,1] is:
+**Q21 (2 Marks):** The value of ∬_R xy dA over R = [0,1] × [0,1] is:
 
 (A) 1/4  
 (B) 1/3  
@@ -450,7 +451,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q41 (1 Mark) [CO]:** The number of address lines needed for a 4K Ãâ€â€� 8 memory chip is:
+**Q41 (1 Mark) [CO]:** The number of address lines needed for a 4K × 8 memory chip is:
 
 (A) 8  
 (B) 10  
@@ -607,15 +608,15 @@ All questions are MCQs with one correct answer.
 
 **Q1:** Recondite means difficult to understand / abstruse. Opposite: Superficial (shallow, lacking depth).
 
-**Q2:** Let original price = P, consumption = C. Expenditure = PÃâ€â€�C. New price = 1.2P. To keep expenditure same: 1.2P Ãâ€â€� C' = P Ãâ€â€� C → C' = C/1.2 = 0.833C. Reduction = (1 − 0.833) Ãâ€â€� 100% = 16.67%.
+**Q2:** Let original price = P, consumption = C. Expenditure = P×C. New price = 1.2P. To keep expenditure same: 1.2P × C' = P × C → C' = C/1.2 = 0.833C. Reduction = (1 − 0.833) × 100% = 16.67%.
 
 **Q3:** The correct punctuation has the question mark inside the closing quotation mark, followed by a comma outside: "Can you please help me," she asked. Answer A.
 
-**Q4:** Sum of student weights = 30Ãâ€â€�45 = 1350. Sum including teacher = 31Ãâ€â€�46 = 1426. Teacher's weight = 1426 − 1350 = 76 kg.
+**Q4:** Sum of student weights = 30×45 = 1350. Sum including teacher = 31×46 = 1426. Teacher's weight = 1426 − 1350 = 76 kg.
 
 **Q5:** All politicians are public speakers (P ⊆ PS). Some public speakers are charismatic (PS ∩ C ≠ ∅). This does not imply P ∩ C ≠ ∅ (conclusion I fails). Conclusion II is the converse of "some public speakers are charismatic" → valid. Only II follows.
 
-**Q6:** Pattern: nÃâ€â€�(n+1). 1Ãâ€â€�2=2, 2Ãâ€â€�3=6, 3Ãâ€â€�4=12, 4Ãâ€â€�5=20, 5Ãâ€â€�6=30, 6Ãâ€â€�7=42.
+**Q6:** Pattern: n×(n+1). 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, 6×7=42.
 
 **Q7:** Each letter is encoded by its alphabetical position (A=1,...,Z=26). H=8, A=1, R=18, D=4 → 815184. S=19, O=15, F=6, T=20 → 1915620. E=5, A=1, S=19, Y=25 → 511925.
 
@@ -625,19 +626,19 @@ All questions are MCQs with one correct answer.
 
 **Q10:** 13 mod 7 = 6. 6² mod 7 = 36 mod 7 = 1. So 6^100 = (6²)âÂÂ�µâÂÂ�° = 1âÂÂ�µâÂÂ�° = 1 mod 7. Remainder = 1.
 
-**Q11:** SI: Amount = P + (PÃâ€â€�rÃâ€â€�t)/100. For doubling: 2P = P + (PÃâ€â€�rÃâ€â€�8)/100 → P = (PÃâ€â€�rÃâ€â€�8)/100 → r = 12.5%. For quadrupling: 4P = P + (PÃâ€â€�12.5Ãâ€â€�t)/100 → 3P = (PÃâ€â€�12.5Ãâ€â€�t)/100 → t = 300/12.5 = 24 years.
+**Q11:** SI: Amount = P + (P×r×t)/100. For doubling: 2P = P + (P×r×8)/100 → P = (P×r×8)/100 → r = 12.5%. For quadrupling: 4P = P + (P×12.5×t)/100 → 3P = (P×12.5×t)/100 → t = 300/12.5 = 24 years.
 
-Alternatively, doubling in 8 years means quadrupling (doubling twice) in 8Ãâ€â€�2 = 16 years at compound interest, but at simple interest, additional 8 years adds another P: 3P takes 16 years, 4P takes 24 years.
+Alternatively, doubling in 8 years means quadrupling (doubling twice) in 8×2 = 16 years at compound interest, but at simple interest, additional 8 years adds another P: 3P takes 16 years, 4P takes 24 years.
 
-**Q12:** A and B together in 5 min: 5Ãâ€â€�(1/20 + 1/30) = 5Ãâ€â€�1/12 = 5/12. Remaining: 7/12. If A was closed: B needs (7/12)/(1/30) = 17.5 min more → total 22.5 min. If B was closed: A needs (7/12)/(1/20) ≈ 11.67 min more → total 16.67 min. Since total is given as 22.5 min, A was closed.
+**Q12:** A and B together in 5 min: 5×(1/20 + 1/30) = 5×1/12 = 5/12. Remaining: 7/12. If A was closed: B needs (7/12)/(1/30) = 17.5 min more → total 22.5 min. If B was closed: A needs (7/12)/(1/20) ≈ 11.67 min more → total 16.67 min. Since total is given as 22.5 min, A was closed.
 
-**Q13:** Total ways = C(10,4) = 210. 0 women: C(5,4)Ãâ€â€�C(5,0) = 5. 1 woman: C(5,3)Ãâ€â€�C(5,1) = 10Ãâ€â€�5 = 50. P(at least 2) = 1 − (5+50)/210 = 1 − 55/210 = 155/210 = 31/42.
+**Q13:** Total ways = C(10,4) = 210. 0 women: C(5,4)×C(5,0) = 5. 1 woman: C(5,3)×C(5,1) = 10×5 = 50. P(at least 2) = 1 − (5+50)/210 = 1 − 55/210 = 155/210 = 31/42.
 
-**Q14:** Train speed = 240/12 = 20 m/s. In 30 s, train covers = 20Ãâ€â€�30 = 600 m. Platform length = 600 − 240 = 360 m.
+**Q14:** Train speed = 240/12 = 20 m/s. In 30 s, train covers = 20×30 = 600 m. Platform length = 600 − 240 = 360 m.
 
 **Q15:** Arithmetic, Geometric, and Harmonic are types of means (ways to compute averages). Exponential is a type of progression (sequence), not a mean. So Exponential is the odd one out. Answer D.
 
-**Q16:** Rows: R2 = 2Ãâ€â€�R1, R3 = 3Ãâ€â€�R1. All rows are scalar multiples. Rank = 1.
+**Q16:** Rows: R2 = 2×R1, R3 = 3×R1. All rows are scalar multiples. Rank = 1.
 
 **Q17:** A tree with n vertices has n−1 edges. 10−1 = 9.
 
@@ -647,15 +648,15 @@ Alternatively, doubling in 8 years means quadrupling (doubling twice) in 8Ãâ�
 
 **Q20:** Contrapositive of P→Q is ¬Q → ¬P. It is logically equivalent to the original statement.
 
-**Q21:** ∫₀¹∫₀¹ xy dx dy = ∫₀¹ x dx Ãâ€â€� ∫₀¹ y dy = (1/2)(1/2) = 1/4.
+**Q21:** ∫₀¹∫₀¹ xy dx dy = ∫₀¹ x dx × ∫₀¹ y dy = (1/2)(1/2) = 1/4.
 
-**Q22:** Number of onto functions from 5 elements to 3 elements = Σ_{i=0}^{3} (−1)âÂÂ�± C(3,i) (3−i)âÂÂ�µ = C(3,0)(3âÂÂ�µ) − C(3,1)(2âÂÂ�µ) + C(3,2)(1âÂÂ�µ) − C(3,3)(0âÂÂ�µ) = 243 − 3Ãâ€â€�32 + 3Ãâ€â€�1 − 0 = 243 − 96 + 3 = 150.
+**Q22:** Number of onto functions from 5 elements to 3 elements = Σ_{i=0}^{3} (−1)âÂÂ�± C(3,i) (3−i)âÂÂ�µ = C(3,0)(3âÂÂ�µ) − C(3,1)(2âÂÂ�µ) + C(3,2)(1âÂÂ�µ) − C(3,3)(0âÂÂ�µ) = 243 − 3×32 + 3×1 − 0 = 243 − 96 + 3 = 150.
 
 **Q23:** For A = [[1,1],[1,1]]: det([[1−λ,1],[1,1−λ]]) = (1−λ)² − 1 = λ² − 2λ = λ(λ−2). Eigenvalues = 0, 2. Eigenvalues of A³: 0³ = 0, 2³ = 8. Sum = 8.
 
 **Q24:** Primes from 1 to 100: 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97 = 25 primes. 25/100 = 0.25.
 
-**Q25:** T(n) = T(n/2) + 2T(n/4) + n. Using recursion tree: at level 0: n. Level 1: n/2 + 2(n/4) = n/2 + n/2 = n. Level 2: n/4 + 2(n/8) + 2(n/8) + 4(n/16) = n/4 + n/4 + n/4 + n/4 = n. Each level sums to n. Number of levels: the smallest subproblem is n/4áµÂÂ� = 1 → k = log₄ n. So total = n Ãâ€â€� log₄ n = O(n log n).
+**Q25:** T(n) = T(n/2) + 2T(n/4) + n. Using recursion tree: at level 0: n. Level 1: n/2 + 2(n/4) = n/2 + n/2 = n. Level 2: n/4 + 2(n/8) + 2(n/8) + 4(n/16) = n/4 + n/4 + n/4 + n/4 = n. Each level sums to n. Number of levels: the smallest subproblem is n/4áµÂÂ� = 1 → k = log₄ n. So total = n × log₄ n = O(n log n).
 
 **Q26:** Queue: FIFO structure. Insert at rear (enqueue) and delete from front (dequeue) → both O(1) in array/linked list implementation.
 
@@ -677,9 +678,9 @@ Alternatively, doubling in 8 years means quadrupling (doubling twice) in 8Ãâ�
 
 **Q35:** LRU (Least Recently Used) is a page replacement algorithm. SSTF and SCAN are disk scheduling. Banker's is deadlock avoidance.
 
-**Q36:** Nyquist theorem: Max data rate = 2B log₂ V. B = 4 kHz = 4000 Hz, V = 8 levels. Rate = 2 Ãâ€â€� 4000 Ãâ€â€� log₂(8) = 2 Ãâ€â€� 4000 Ãâ€â€� 3 = 24,000 bps = 24 kbps.
+**Q36:** Nyquist theorem: Max data rate = 2B log₂ V. B = 4 kHz = 4000 Hz, V = 8 levels. Rate = 2 × 4000 × log₂(8) = 2 × 4000 × 3 = 24,000 bps = 24 kbps.
 
-Given the options, the maximum data rate with noise (Shannon) limits to 12 kbps. But Nyquist with unlimited levels could go higher. The question is ambiguous but the SNR=15 hints at using Shannon: C = 3000 log₂(16) = 12 kbps. But 12 kbps is option B. The answer key says C (24 kbps), which would be 2Ãâ€â€�3000Ãâ€â€�4 (16 levels). Let me check: Nyquist for this channel: if we have 16 signal levels, max = 2Ãâ€â€�3000Ãâ€â€�4 = 24 kbps. And Shannon limit is 12 kbps. Since Shannon is the fundamental limit (accounts for noise), 24 kbps > 12 kbps, so the actual max is 12 kbps. So answer should be B.
+Given the options, the maximum data rate with noise (Shannon) limits to 12 kbps. But Nyquist with unlimited levels could go higher. The question is ambiguous but the SNR=15 hints at using Shannon: C = 3000 log₂(16) = 12 kbps. But 12 kbps is option B. The answer key says C (24 kbps), which would be 2×3000×4 (16 levels). Let me check: Nyquist for this channel: if we have 16 signal levels, max = 2×3000×4 = 24 kbps. And Shannon limit is 12 kbps. Since Shannon is the fundamental limit (accounts for noise), 24 kbps > 12 kbps, so the actual max is 12 kbps. So answer should be B.
 
 Let me fix the question to avoid ambiguity. I'll remove the SNR value or clarify.
 
@@ -687,7 +688,7 @@ Actually any channel has noise. Nyquist doesn't account for noise. Shannon does.
 
 Let me just change the question to directly ask for the Shannon capacity. Or better, make the numbers work so Nyquist is the limiting factor and the answer is C.
 
-I'll change the question: Bandwidth = 4 kHz, number of signal levels = 8. Nyquist max = 2Ãâ€â€�4000Ãâ€â€�3 = 24 kbps. That's clean. Let me edit.
+I'll change the question: Bandwidth = 4 kHz, number of signal levels = 8. Nyquist max = 2×4000×3 = 24 kbps. That's clean. Let me edit.
 
 **Q37:** A foreign key in one table references the primary key (or a candidate key) in the referenced table. The referenced column must be a primary key in the referenced table.
 
@@ -697,7 +698,7 @@ I'll change the question: Bandwidth = 4 kHz, number of signal levels = 8. Nyquis
 
 **Q40:** A full adder has 3 inputs (A, B, and Carry-in).
 
-**Q41:** 4K = 4Ãâ€â€�1024 = 4096 = 2¹². So 12 address lines are needed. The Ãâ€â€�8 indicates 8 data lines (byte-wide).
+**Q41:** 4K = 4×1024 = 4096 = 2¹². So 12 address lines are needed. The ×8 indicates 8 data lines (byte-wide).
 
 **Q42:** Merge Sort has O(n log n) worst-case time complexity. Quick Sort is O(n²) worst-case. Bubble and Selection are O(n²).
 
@@ -707,13 +708,13 @@ I'll change the question: Bandwidth = 4 kHz, number of signal levels = 8. Nyquis
 
 **Q45:** SMTP (Simple Mail Transfer Protocol) is used for sending email from client to server and between servers. POP3/IMAP are for receiving.
 
-**Q46:** Number of distinct BSTs with 4 nodes = Catalan(4) = (1/(4+1))Ãâ€â€�C(8,4) = (1/5)Ãâ€â€�70 = 14.
+**Q46:** Number of distinct BSTs with 4 nodes = Catalan(4) = (1/(4+1))×C(8,4) = (1/5)×70 = 14.
 
 **Q47:** RR with q=4: P1=8, P2=4, P3=9.
 Sequence: P1(0-4, rem=4), P2(4-8, rem=0 done at 8), P3(8-12, rem=5), P1(12-16, rem=0 done at 16), P3(16-21, rem=0 done at 21).
 Waiting = Turnaround − Burst. P1: wait = 16−8 = 8. P2: wait = 8−4 = 4. P3: wait = 21−9 = 12. Average = (8+4+12)/3 = 24/3 = 8.0 ms.
 
-**Q48:** Total payload = 4000 − 20 = 3980 bytes. MTU = 1500 bytes, payload per fragment = 1500 − 20 = 1480 bytes. 3980/1480 = 2.689 → 3 fragments. Fragments: first two with 1480 bytes each, third with 3980 − 2Ãâ€â€�1480 = 1020 bytes.
+**Q48:** Total payload = 4000 − 20 = 3980 bytes. MTU = 1500 bytes, payload per fragment = 1500 − 20 = 1480 bytes. 3980/1480 = 2.689 → 3 fragments. Fragments: first two with 1480 bytes each, third with 3980 − 2×1480 = 1020 bytes.
 
 **Q49:** Candidate key = ACD or... hmm. R(A,B,C,D) with A→B, C→D. The only way to get all attributes is to start with AC (ACâÂÂ�º = ACBD = ABCD). So candidate key is AC. B is determined by A (a proper subset of the key) → partial dependency. So R is in 1NF only.
 

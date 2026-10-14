@@ -5,6 +5,7 @@ title: "Chapter 17: Laravel Boost — AI-Assisted Development"
 sidebar_label: "Chapter 17: Laravel Boost — AI-Assisted Development"
 sidebar_position: 17
 ---
+
 # Chapter 17: Laravel Boost — AI-Assisted Development
 
 > **Previous:** [Search & RAG](./16-search-rag.md) | **Next:** [Automation Patterns](./18-automation-patterns.md)

@@ -5,6 +5,7 @@ title: "Architectural Design"
 sidebar_label: "Architectural Design"
 sidebar_position: 4
 ---
+
 # Architectural Design
 
 ## Learning Objectives

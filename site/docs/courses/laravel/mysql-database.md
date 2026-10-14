@@ -5,6 +5,7 @@ title: "MySQL & Database Design"
 sidebar_label: "MySQL & Database Design"
 sidebar_position: 60
 ---
+
 # MySQL & Database Design
 
 ---

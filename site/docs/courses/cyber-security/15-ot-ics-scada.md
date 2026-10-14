@@ -5,6 +5,7 @@ title: "Chapter 15: OT/ICS & SCADA Security"
 sidebar_label: "Chapter 15: OT/ICS & SCADA Security"
 sidebar_position: 14
 ---
+
 # Chapter 15: OT/ICS & SCADA Security
 
 **Next:** [Chapter 16: Supply Chain & CI/CD Security](./16-supply-chain-cicd.md)

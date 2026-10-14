@@ -5,6 +5,7 @@ title: "SQL Problem Bank"
 sidebar_label: "SQL Problem Bank"
 sidebar_position: 3
 ---
+
 # SQL Problem Bank
 `n> **Previous:** [Chapter 2: DSA Problem Bank](./02-dsa-problem-bank.md) | **Next:** [Chapter 4: Company-Specific Preparation](./04-company-specific.md) → Placement Interview Preparation
 

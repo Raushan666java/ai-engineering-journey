@@ -5,6 +5,7 @@ title: "Chapter 2: Processes"
 sidebar_label: "Chapter 2: Processes"
 sidebar_position: 2
 ---
+
 # Chapter 2: Processes
 
 **<< [Introduction to Operating Systems](./01-introduction.md)** | [**Next: CPU Scheduling**](./03-cpu-scheduling.md) >>
@@ -1208,7 +1209,7 @@ os.benchmark(100)
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
 | Isolation | Complete process isolation via separate address spaces | TLB flush + cache miss penalties are severe |
-| Preemption | Fair CPU sharing between all processes | 1-10 microsec overhead per switch Ã— thousands per second = significant waste |
+| Preemption | Fair CPU sharing between all processes | 1-10 microsec overhead per switch × thousands per second = significant waste |
 | Responsiveness | Low-latency response to I/O events | Threads (same address space) switch 2-10x faster |
 | Portability | Well-defined hardware mechanism across architectures | Every architecture needs custom assembly for save/restore |
 
@@ -2311,7 +2312,7 @@ Orphan: parent exits before child. init (PID 1) inherits child.
 
 **Why context switching is expensive (interview answer):**
 
-1. **Register save/restore**: 16-32 registers Ã— 8 bytes each = 128-256 bytes must be saved to PCB and restored from next PCB (~50-100 cycles)
+1. **Register save/restore**: 16-32 registers × 8 bytes each = 128-256 bytes must be saved to PCB and restored from next PCB (~50-100 cycles)
 2. **TLB flush**: Switching address spaces requires invalidating the TLB. Next process will suffer TLB misses on first access to every page (~500-2000 cycles total)
 3. **Cache pollution**: L1 cache (32KB), L2 cache (256KB), L3 cache (8-32MB) mostly contain old process data. New process starts "cold" → every memory access is a cache miss (~100-300 cycles per miss)
 4. **Pipeline drain**: Modern CPUs are deeply pipelined (14-19 stages in Skylake). A context switch flushes the pipeline, costing ~20-40 cycles

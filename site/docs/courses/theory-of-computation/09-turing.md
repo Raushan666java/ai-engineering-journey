@@ -5,6 +5,7 @@ title: "Chapter 9: Turing Machines"
 sidebar_label: "Chapter 9: Turing Machines"
 sidebar_position: 9
 ---
+
 # Chapter 9: Turing Machines
 
 > **Previous:** [Properties of Context-Free Languages](./08-cfl.md) | **Next:** [Turing Machine Extensions](./10-turing-extensions.md)

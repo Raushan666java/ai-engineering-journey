@@ -5,6 +5,7 @@ title: "Syllogism and Coding-Decoding"
 sidebar_label: "Syllogism and Coding-Decoding"
 sidebar_position: 3
 ---
+
 # Syllogism and Coding-Decoding
 
 ## Learning Objectives

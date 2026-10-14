@@ -5,6 +5,7 @@ title: "Chapter 9: Dynamic Programming — Sequences"
 sidebar_label: "Chapter 9: Dynamic Programming — Sequences"
 sidebar_position: 9
 ---
+
 # Chapter 9: Dynamic Programming — Sequences
 
 > **Prerequisites:** [Chapter 8: Dynamic Programming — Knapsack Problems](./08-dp-knapsack.md) — 2D DP tables, recurrence design | **Next:** [Chapter 10: Dynamic Programming — Trees & Grids](./10-dp-trees-grids.md) — DP on non-linear structures

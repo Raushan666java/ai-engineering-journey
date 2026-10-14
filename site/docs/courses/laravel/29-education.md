@@ -5,6 +5,7 @@ title: "Chapter 29: Education & EdTech"
 sidebar_label: "Chapter 29: Education & EdTech"
 sidebar_position: 29
 ---
+
 # Chapter 29: Education & EdTech
 
 > **Previous:** [Finance](./28-finance.md) | **Next:** [Logistics](./30-logistics.md)

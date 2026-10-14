@@ -5,6 +5,7 @@ title: "Chapter 1: Introduction to Computer Networks"
 sidebar_label: "Chapter 1: Introduction to Computer Networks"
 sidebar_position: 1
 ---
+
 # Chapter 1: Introduction to Computer Networks
 
 > **Prerequisites:** None | **Next:** [Chapter 2: Physical Layer](./02-physical-layer.md) → From network models to transmission media

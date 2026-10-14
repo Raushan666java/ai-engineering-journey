@@ -5,6 +5,7 @@ title: "Chapter 19: Case Study — WhatsApp and Real-Time Messaging"
 sidebar_label: "Chapter 19: Case Study — WhatsApp and Real-Time Messaging"
 sidebar_position: 19
 ---
+
 # Chapter 19: Case Study — WhatsApp and Real-Time Messaging
 > **Previous:** [18 Case Studies Classic](./18-case-studies-classic.md) | **Next:** [20 Case Study Netflix](./20-case-study-netflix.md)
 

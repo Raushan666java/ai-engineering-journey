@@ -5,6 +5,7 @@ title: "Chapter 7: Relations"
 sidebar_label: "Chapter 7: Relations"
 sidebar_position: 7
 ---
+
 # Chapter 7: Relations
 
 > **Previous:** [Chapter 6: Recurrence Relations](./06-recurrence.md) | **Next:** [Chapter 8: Functions](./08-functions.md)

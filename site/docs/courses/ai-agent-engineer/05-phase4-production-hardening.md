@@ -5,6 +5,7 @@ title: "Phase 4 — Production Hardening"
 sidebar_label: "Phase 4 — Production Hardening"
 sidebar_position: 6
 ---
+
 # Phase 4 — Production Hardening
 
 **Duration:** Weeks 9-10, ~20 hours

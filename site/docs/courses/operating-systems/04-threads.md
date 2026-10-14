@@ -5,6 +5,7 @@ title: "Chapter 4: Threads"
 sidebar_label: "Chapter 4: Threads"
 sidebar_position: 4
 ---
+
 # Chapter 4: Threads
 
 **<< [CPU Scheduling](./03-cpu-scheduling.md)** | [**Next: Process Synchronization**](./05-synchronization.md) >>

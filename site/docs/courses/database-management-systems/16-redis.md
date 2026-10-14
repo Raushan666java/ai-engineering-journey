@@ -5,6 +5,7 @@ title: "Chapter 16: Redis → In-Memory Data Store"
 sidebar_label: "Chapter 16: Redis → In-Memory Data Store"
 sidebar_position: 16
 ---
+
 # Chapter 16: Redis → In-Memory Data Store
 
 > **Prev:** [Chapter 15 → MongoDB](15-mongodb.md) | **Next:** [Chapter 17 → Distributed DB](17-distributed-db.md)

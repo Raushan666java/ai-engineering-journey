@@ -5,6 +5,7 @@ title: "Chapter 22: Case Study — SaaS E-Commerce Platform"
 sidebar_label: "Chapter 22: Case Study — SaaS E-Commerce Platform"
 sidebar_position: 22
 ---
+
 # Chapter 22: Case Study — SaaS E-Commerce Platform
 
 > **Previous:** [System Design](./21-system-design-scale.md) | **Next:** [Case Study AI Content](./23-case-study-ai-content.md)

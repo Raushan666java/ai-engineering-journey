@@ -5,6 +5,7 @@ title: "Chapter 10: Research & Deep Dives with AI"
 sidebar_label: "Chapter 10: Research & Deep Dives with AI"
 sidebar_position: 10
 ---
+
 # Chapter 10: Research & Deep Dives with AI
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

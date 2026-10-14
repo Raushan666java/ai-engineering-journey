@@ -5,6 +5,7 @@ title: "19 — Capstone Projects"
 sidebar_label: "19 — Capstone Projects"
 sidebar_position: 241
 ---
+
 # 19 — Capstone Projects
 
 ## Overview

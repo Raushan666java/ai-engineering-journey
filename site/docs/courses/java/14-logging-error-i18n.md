@@ -5,6 +5,7 @@ title: "Logging, Error Handling & Internationalization"
 sidebar_label: "Logging, Error Handling & Internationalization"
 sidebar_position: 14
 ---
+
 # Logging, Error Handling & Internationalization
 
 > **Previous:** [Actuator, DevTools & Monitoring](./13-actuator-devtools.md) | **Next:** [REST API Development](./15-rest-api.md)

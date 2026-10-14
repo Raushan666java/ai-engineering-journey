@@ -5,6 +5,7 @@ title: "Chapter 9: Distributed Coordination and Service Discovery"
 sidebar_label: "Chapter 9: Distributed Coordination and Service Discovery"
 sidebar_position: 9
 ---
+
 # Chapter 9: Distributed Coordination and Service Discovery
 > **Previous:** [08 Microservices Apis](./08-microservices-apis.md) | **Next:** [10 Lld Solid Oop](./10-lld-solid-oop.md)
 

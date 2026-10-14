@@ -5,6 +5,7 @@ title: "NIC Scientist B 2024 — Solved Paper"
 sidebar_label: "NIC Scientist B 2024 — Solved Paper"
 sidebar_position: 7
 ---
+
 # NIC Scientist B 2024 — Solved Paper
 
 > National Informatics Centre (NIC) Scientist B recruitment exam — fully solved with explanations, TypeScript code, Mermaid diagrams, and topic-wise analysis.

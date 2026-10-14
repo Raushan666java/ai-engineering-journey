@@ -5,6 +5,7 @@ title: "Chapter 11: Arithmetic Circuits"
 sidebar_label: "Chapter 11: Arithmetic Circuits"
 sidebar_position: 11
 ---
+
 # Chapter 11: Arithmetic Circuits
 
 > **Prereq:** Chapter 5 (Combinational Circuits) ? adders and ALUs provide the foundation for multiplication and division.

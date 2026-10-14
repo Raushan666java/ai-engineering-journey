@@ -5,6 +5,7 @@ title: "Chapter 1: Introduction to Digital Logic"
 sidebar_label: "Chapter 1: Introduction to Digital Logic"
 sidebar_position: 1
 ---
+
 # Chapter 1: Introduction to Digital Logic
 
 > **Prereq:** Basic arithmetic (decimal operations).

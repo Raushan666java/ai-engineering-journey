@@ -5,6 +5,7 @@ title: "15 Mock Test 1"
 sidebar_label: "15 Mock Test 1"
 sidebar_position: 12
 ---
+
 ﻿﻿﻿# GATE CS Mock Test 1 -> Full-Length Practice Paper
 
 
@@ -70,18 +71,18 @@ flowchart LR
 **Reading Time:** 10 minutes (no writing allowed)
 
 **Marking Scheme:**
-- Questions 1â€---œ10 (General Aptitude): **1 mark each**, no negative marking
-- Questions 11â€---œ15 (General Aptitude): **2 marks each**, negative marking âˆ---™0.66
-- Questions 16â€---œ20 (Engineering Mathematics): **1 mark each**, no negative marking
-- Questions 21â€---œ25 (Engineering Mathematics): **2 marks each**, negative marking âˆ---™0.66
-- Questions 26â€---œ40 (Technical): **1 mark each**, negative marking âˆ---™0.33
-- Questions 41â€---œ55 (Technical): **2 marks each**, negative marking âˆ---™0.66
+- Questions 1—---œ10 (General Aptitude): **1 mark each**, no negative marking
+- Questions 11—---œ15 (General Aptitude): **2 marks each**, negative marking âˆ---™0.66
+- Questions 16—---œ20 (Engineering Mathematics): **1 mark each**, no negative marking
+- Questions 21—---œ25 (Engineering Mathematics): **2 marks each**, negative marking âˆ---™0.66
+- Questions 26—---œ40 (Technical): **1 mark each**, negative marking âˆ---™0.33
+- Questions 41—---œ55 (Technical): **2 marks each**, negative marking âˆ---™0.66
 
 All questions are Multiple Choice Questions. Select the single correct answer.
 
 ---
 
-## Section A: General Aptitude (Questions 1â€---œ15)
+## Section A: General Aptitude (Questions 1—---œ15)
 
 **Q1 (1 Mark):** If FROST is coded as 82 and MELT is coded as 53, then how is HEAT coded?
 
@@ -218,7 +219,7 @@ All questions are Multiple Choice Questions. Select the single correct answer.
 
 ---
 
-## Section B: Engineering Mathematics (Questions 16â€---œ25)
+## Section B: Engineering Mathematics (Questions 16—---œ25)
 
 **Q16 (1 Mark):** The determinant of matrix [[3, 0, 0], [2, 1, 0], [1, 2, 2]] is:
 
@@ -283,7 +284,7 @@ All questions are Multiple Choice Questions. Select the single correct answer.
 
 ---
 
-**Q23 (2 Marks):** A 2Ã---â€Â�2 matrix has trace 5 and determinant 6. Its eigenvalues are:
+**Q23 (2 Marks):** A 2Ã---—Â�2 matrix has trace 5 and determinant 6. Its eigenvalues are:
 
 (A) 1, 4  
 (B) 2, 3  
@@ -310,7 +311,7 @@ All questions are Multiple Choice Questions. Select the single correct answer.
 
 ---
 
-## Section C: Technical Subjects (Questions 26â€---œ55)
+## Section C: Technical Subjects (Questions 26—---œ55)
 
 **Q26 (1 Mark) [DS&A]:** Which data structure is used to implement a priority queue efficiently?
 
@@ -581,7 +582,7 @@ Time complexity:
 
 ---
 
-**Q55 (2 Marks) [OS]:** A disk (0â€---œ199 cylinders), head at 50 moving towards 0. Queue: 90, 20, 120, 10, 180, 150, 60, 85. Total head movement (SCAN)?
+**Q55 (2 Marks) [OS]:** A disk (0—---œ199 cylinders), head at 50 moving towards 0. Queue: 90, 20, 120, 10, 180, 150, 60, 85. Total head movement (SCAN)?
 
 (A) 190  
 (B) 210  
@@ -612,7 +613,7 @@ Time complexity:
 
 **Q1:** Letter positions (A=1...Z=26). FROST = 6+18+15+19+20 = 78. Code 82 = 78 + 4. MELT = 13+5+12+20 = 50. Code 53 = 50 + 3. The extra value = number of consonants. FROST: 4 consonants, adds 4. MELT: 3 consonants, adds 3. HEAT: H=8, E=5, A=1, T=20, sum=34, consonants=2, code=34+2=36.
 
-**Q2:** Distance = train length + platform length = 300+200 = 500 m. Time = 25 s. Speed = 500/25 = 20 m/s = 20Ã---â€Â�(18/5) = 72 km/h.
+**Q2:** Distance = train length + platform length = 300+200 = 500 m. Time = 25 s. Speed = 500/25 = 20 m/s = 20Ã---—Â�(18/5) = 72 km/h.
 
 **Q3:** Perfidious means treacherous or deceitful. Synonym = Treacherous.
 
@@ -622,7 +623,7 @@ Time complexity:
 
 **Q6:** Numbers: x, x+2, x+4, x+6, x+8. Sum = 5x+20. Mean = x+4 = 18 -> x = 14. Largest = 14+8 = 22.
 
-**Q7:** Pattern: 1Ã---â€Â�3=3, 2Ã---â€Â�4=8, 3Ã---â€Â�5=15, 4Ã---â€Â�6=24, 5Ã---â€Â�7=35, 6Ã---â€Â�8=48. Answer 48.
+**Q7:** Pattern: 1Ã---—Â�3=3, 2Ã---—Â�4=8, 3Ã---—Â�5=15, 4Ã---—Â�6=24, 5Ã---—Â�7=35, 6Ã---—Â�8=48. Answer 48.
 
 **Q8:** East 5 âˆ---™ West 2 = net 3 east. North 1. Distance = âˆš(3Â²+1Â²) = âˆš10 km.
 
@@ -636,17 +637,17 @@ Time complexity:
 
 **Q13:** Total balls = 15. Ways to choose 2 = C(15,2) = 105. Ways both blue = C(5,2) = 10. P = 10/105 = 2/21.
 
-**Q14:** 12 men Ã---â€Â� 8 days = 96 man-days. For 6 days: 96/6 = 16 men.
+**Q14:** 12 men Ã---—Â� 8 days = 96 man-days. For 6 days: 96/6 = 16 men.
 
-**Q15:** At 4:30, hour hand at 4Ã---â€Â�30Â deg  + 30Ã---â€Â�(30/60)Â deg  = 120Â deg +15Â deg  = 135Â deg . Minute hand at 30Ã---â€Â�6Â deg  = 180Â deg . Angle = |180âˆ---™135| = 45Â deg .
+**Q15:** At 4:30, hour hand at 4Ã---—Â�30Â deg  + 30Ã---—Â�(30/60)Â deg  = 120Â deg +15Â deg  = 135Â deg . Minute hand at 30Ã---—Â�6Â deg  = 180Â deg . Angle = |180âˆ---™135| = 45Â deg .
 
-**Q16:** Determinant of lower triangular = product of diagonal = 3Ã---â€Â�1Ã---â€Â�2 = 6.
+**Q16:** Determinant of lower triangular = product of diagonal = 3Ã---—Â�1Ã---—Â�2 = 6.
 
 **Q17:** Tree: edges = Vâˆ---™1. 15 edges -> V = 16.
 
 **Q18:** Standard limit: lim_{x->0} sin x / x = 1.
 
-**Q19:** P(AâˆªB) = P(A)+P(B)âˆ---™P(Aâˆ©B) = 0.3+0.5âˆ---™(0.3Ã---â€Â�0.5) = 0.8âˆ---™0.15 = 0.65.
+**Q19:** P(AâˆªB) = P(A)+P(B)âˆ---™P(Aâˆ©B) = 0.3+0.5âˆ---™(0.3Ã---—Â�0.5) = 0.8âˆ---™0.15 = 0.65.
 
 **Q20:** Â¬(P âˆ¨ Q) â---°¡ Â¬P âˆ§ Â¬Q is De Morgan's law (the negation of OR becomes AND of negations).
 
@@ -654,9 +655,9 @@ Time complexity:
 
 **Q22:** Divisible by 2: floor(1000/2) = 500. Divisible by 5: floor(1000/5) = 200. Divisible by 10: floor(1000/10) = 100. Using inclusion-exclusion: 500+200âˆ---™100 = 600.
 
-**Q23:** For 2Ã---â€Â�2 matrix, sum of eigenvalues = trace = 5, product = determinant = 6. Solving Î»â---šÂÂÂ�+Î»â---š---š=5, Î»â---šÂÂÂ�Î»â---š---š=6 -> Î»=2,3.
+**Q23:** For 2Ã---—Â�2 matrix, sum of eigenvalues = trace = 5, product = determinant = 6. Solving Î»â---šÂÂÂ�+Î»â---š---š=5, Î»â---šÂÂÂ�Î»â---š---š=6 -> Î»=2,3.
 
-**Q24:** P(X=5) = C(10,5)(0.5)âÂÂÂ�µ(0.5)âÂÂÂ�µ = 252Ã---â€Â�(1/2)Â¹âÂÂÂ� deg  = 252/1024 = 63/256.
+**Q24:** P(X=5) = C(10,5)(0.5)âÂÂÂ�µ(0.5)âÂÂÂ�µ = 252Ã---—Â�(1/2)Â¹âÂÂÂ� deg  = 252/1024 = 63/256.
 
 **Q25:** Master Theorem: T(n) = 2T(n/2) + n. a=2, b=2, f(n)=O(n^log_b(a)) = O(n). Case 2: T(n) = O(n log n).
 
@@ -692,7 +693,7 @@ Time complexity:
 
 **Q41:** Outer loop: i = 1, 2, 4, 8, ..., n -> log n iterations. Inner loop: j = 0 to nâˆ---™1 -> n iterations. Total = O(n log n).
 
-**Q42:** With maximum need of 2Ã---â€Â�R1 and 1Ã---â€Â�R2 per process, total 5Ã---â€Â�2=10 R1 needed but only 6 available. The system can still be safe if processes request sequentially. A safe state ensures deadlock avoidance.
+**Q42:** With maximum need of 2Ã---—Â�R1 and 1Ã---—Â�R2 per process, total 5Ã---—Â�2=10 R1 needed but only 6 available. The system can still be safe if processes request sequentially. A safe state ensures deadlock avoidance.
 
 **Q43:** Go-Back-N retransmits from the lost frame onwards. Frame 3 is lost; frames 4, 5, 6 (already sent) plus frame 3 are retransmitted = 4 frames.
 
@@ -714,7 +715,7 @@ Let me fix this: change the FD to A -> BC instead of A -> B. So FDs: A -> BC, BC
 
 **Q50:** Banker's algorithm is a deadlock avoidance algorithm that checks for safe states.
 
-**Q51:** Shannon: C = B logâ---š---š(1+SNR) = 4000 Ã---â€Â� logâ---š---š(1+1023) = 4000 Ã---â€Â� logâ---š---š(1024) = 4000 Ã---â€Â� 10 = 40,000 bps = 40 kbps.
+**Q51:** Shannon: C = B logâ---š---š(1+SNR) = 4000 Ã---—Â� logâ---š---š(1+1023) = 4000 Ã---—Â� logâ---š---š(1024) = 4000 Ã---—Â� 10 = 40,000 bps = 40 kbps.
 
 **Q52:** S: W1(A), R2(A), W2(B), R1(B), C1, C2. Conflicts: W1(A) and R2(A) -> T1 -> T2 (T1 writes A before T2 reads). R1(B) and W2(B) -> R1(B) is after W2(B), so T2 -> T1. Precedence graph has T1->T2 and T2->T1 (cycle). Not conflict serializable.
 

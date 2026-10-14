@@ -5,6 +5,7 @@ title: "Chapter 5: Ethereum and Smart Contracts"
 sidebar_label: "Chapter 5: Ethereum and Smart Contracts"
 sidebar_position: 5
 ---
+
 # Chapter 5: Ethereum and Smart Contracts
 
 > **Previous:** [Chapter 4: The Bitcoin Network](./04-bitcoin.md) | **Next:** [Chapter 6: Smart Contract Development](./06-solidity.md)

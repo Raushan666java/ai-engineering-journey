@@ -5,6 +5,7 @@ title: "Visual Notes — Container-to-Cloud Deployment Stack"
 sidebar_label: "Visual Notes"
 sidebar_position: 95
 ---
+
 # Visual Notes — Container-to-Cloud Deployment Stack
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

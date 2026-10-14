@@ -5,6 +5,7 @@ title: "Chapter 47: Legal & Compliance Interview Q&A"
 sidebar_label: "Chapter 47: Legal & Compliance Interview Q&A"
 sidebar_position: 47
 ---
+
 # Chapter 47: Legal & Compliance Interview Q&A
 
 > **Previous:** [Real Estate & Property Interview Q&A](./46-interview-real-estate.md) | **Next:** [Manufacturing Interview Q&A](./48-interview-manufacturing.md)

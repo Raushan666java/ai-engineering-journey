@@ -5,6 +5,7 @@ title: "Chapter 2: Sales Management and Distribution"
 sidebar_label: "Chapter 2: Sales Management and Distribution"
 sidebar_position: 2
 ---
+
 # Chapter 2: Sales Management and Distribution
 
 ## Learning Objectives

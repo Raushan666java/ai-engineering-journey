@@ -5,6 +5,7 @@ title: "Chapter 14: DevSecOps"
 sidebar_label: "Chapter 14: DevSecOps"
 sidebar_position: 23
 ---
+
 # Chapter 14: DevSecOps
 
 > **Previous:** [Observability](./13-observability.md) | **Next:** [Database DevOps](./15-database-devops.md)

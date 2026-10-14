@@ -5,6 +5,7 @@ title: "Chapter 5: Deep Work & Focus"
 sidebar_label: "Chapter 5: Deep Work & Focus"
 sidebar_position: 6
 ---
+
 # Chapter 5: Deep Work & Focus
 
 > ⏱ **2 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**

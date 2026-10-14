@@ -5,6 +5,7 @@ title: "05-the-agent-loop-react"
 sidebar_label: "05-the-agent-loop-react"
 sidebar_position: 6
 ---
+
 ## Chapter 5: The Agent Loop (ReAct) — Hand-Built
 
 ### 5.1 Why "ReAct"

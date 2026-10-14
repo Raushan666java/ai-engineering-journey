@@ -5,6 +5,7 @@ title: "Authentication & Authorization"
 sidebar_label: "Authentication & Authorization"
 sidebar_position: 25
 ---
+
 # Authentication & Authorization
 > **Previous:** [Transactions](24-transactions.md) | **Next:** [JWT, OAuth2 & OIDC](26-jwt-oauth2.md)
 

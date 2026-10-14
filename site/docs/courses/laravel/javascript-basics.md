@@ -5,6 +5,7 @@ title: "Chapter: JavaScript Fundamentals"
 sidebar_label: "Chapter: JavaScript Fundamentals"
 sidebar_position: 59
 ---
+
 # Chapter: JavaScript Fundamentals
 
 ---

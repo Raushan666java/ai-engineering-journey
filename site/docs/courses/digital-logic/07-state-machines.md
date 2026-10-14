@@ -5,6 +5,7 @@ title: "Chapter 7: State Machines"
 sidebar_label: "Chapter 7: State Machines"
 sidebar_position: 7
 ---
+
 # Chapter 7: State Machines
 
 > **Prereq:** Chapter 6 (Sequential Circuits) ? flip-flops provide the state memory for state machines.

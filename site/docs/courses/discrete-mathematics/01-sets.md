@@ -5,6 +5,7 @@ title: "Chapter 1: Sets"
 sidebar_label: "Chapter 1: Sets"
 sidebar_position: 1
 ---
+
 # Chapter 1: Sets
 
 > **Previous:** None | **Next:** [Chapter 2: Logic](02-logic.md)

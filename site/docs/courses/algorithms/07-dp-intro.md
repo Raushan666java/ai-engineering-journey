@@ -5,6 +5,7 @@ title: "Chapter 7: Dynamic Programming — Foundations"
 sidebar_label: "Chapter 7: Dynamic Programming — Foundations"
 sidebar_position: 7
 ---
+
 # Chapter 7: Dynamic Programming — Foundations
 
 > **Prerequisites:** [Chapter 6: Greedy Algorithms](./06-greedy.md) — Understanding when local choices aren't enough | **Next:** [Chapter 8: Dynamic Programming — Knapsack Problems](./08-dp-knapsack.md) — Classic DP patterns for resource allocation

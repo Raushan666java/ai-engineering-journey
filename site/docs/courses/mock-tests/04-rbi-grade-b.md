@@ -5,6 +5,7 @@ title: "RBI Grade B Phase 1 — Full-Length Mock Test"
 sidebar_label: "RBI Grade B Phase 1 — Full-Length Mock Test"
 sidebar_position: 4
 ---
+
 # RBI Grade B Phase 1 — Full-Length Mock Test
 
 > **Exam:** Reserve Bank of India Grade B (Phase 1)  

@@ -5,6 +5,7 @@ title: "Chapter 13: Time Complexity and NP-Completeness"
 sidebar_label: "Chapter 13: Time Complexity and NP-Completeness"
 sidebar_position: 13
 ---
+
 # Chapter 13: Time Complexity and NP-Completeness
 
 > **Previous:** [Reducibility](./12-reducibility.md) | **Next:** [Space Complexity](./14-space-complexity.md)

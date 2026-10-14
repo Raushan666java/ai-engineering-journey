@@ -5,6 +5,7 @@ title: "Chapter 19: Performance Tuning"
 sidebar_label: "Chapter 19: Performance Tuning"
 sidebar_position: 19
 ---
+
 # Chapter 19: Performance Tuning
 
 > **Prev:** [Chapter 18: Database Security](18-security.md) | **Next:** *(Last Chapter)*

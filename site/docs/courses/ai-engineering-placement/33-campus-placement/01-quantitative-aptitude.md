@@ -5,6 +5,8 @@ title: "Quantitative Aptitude for Campus Placements"
 sidebar_label: "Quantitative Aptitude for Campus Placements"
 sidebar_position: 362
 ---
+
+<!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Quantitative Aptitude for Campus Placements
 

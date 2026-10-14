@@ -5,6 +5,7 @@ title: "Chapter 42: Logistics & Supply Chain → Interview Q&A"
 sidebar_label: "Chapter 42: Logistics & Supply Chain → Interview Q&A"
 sidebar_position: 42
 ---
+
 # Chapter 42: Logistics & Supply Chain → Interview Q&A
 
 > **Previous:** [Interview Q&A — Education & EdTech](./41-interview-education.md) | **Next:** [HR & Recruitment — Interview Q&A](./43-interview-hr.md)

@@ -5,6 +5,7 @@ title: "JWT, OAuth2 & OIDC"
 sidebar_label: "JWT, OAuth2 & OIDC"
 sidebar_position: 26
 ---
+
 # JWT, OAuth2 & OIDC
 > **Previous:** [Authentication & Authorization](25-auth-authz.md) | **Next:** [Method Security, CORS & CSRF](27-method-cors-csrf.md)
 

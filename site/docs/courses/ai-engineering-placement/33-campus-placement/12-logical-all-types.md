@@ -5,6 +5,8 @@ title: "Logical Reasoning — All Types Master Reference"
 sidebar_label: "Logical Reasoning — All Types Master Reference"
 sidebar_position: 373
 ---
+
+<!-- improved -->
 # Logical Reasoning — All Types Master Reference
 
 > Complete theory for every reasoning type asked in ANY company aptitude round.

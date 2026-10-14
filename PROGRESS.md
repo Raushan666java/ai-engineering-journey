@@ -1,5 +1,45 @@
 # Progress Log — AI Engineering Journey
 
+## Session 2026-10-14: Generator-Artifact Sweep + Site Deploy
+
+Triggered by uncommitted WIP (`scripts/desplice_title.py`, `scripts/quality_sample.py`) that
+measured a defect the structural quality score scored at 9.9/10 and never flagged.
+
+### Phase A — De-splicing (206 chapters)
+- [x] Removed **2,156** generator-spliced chapter titles across **206** chapters
+- [x] Found and fixed two broken rules that dropped their head noun:
+      "an implementation of X run faster" → "an this technique run faster";
+      "a system that relies on X" → "a systems using this technique"
+- [x] Added a grammar regression gate (delta-based, so pre-existing phrasing is not flagged)
+- [x] Made `--apply` two-phase: every file rewritten and validated before anything is written
+
+### Phase B — Integrity sweep (2,397 files)
+- [x] `scripts/integrity_audit.py`: broken links, broken images, nav coverage, site drift
+- [x] Fixed 2 broken skill links in `ai-engineering-from-scratch/README.md` (`.claude/skills/` → `skills/`)
+- [x] Result: **0 broken images, 0 site drift**, 1 upstream dangling ref reported not fixed
+- [x] Reported `BACKERS.md` (referenced by vendored upstream `SPONSORS.md`) rather than
+      inventing a backers list for another maintainer's sponsorship program
+
+### Phase C — Mojibake repair (35 chapters)
+- [x] Found **5,643** damaged sequences; UTF-8 had been round-tripped through cp1252
+- [x] Repaired the **2 provable** sequences: `×` (1,174) and em-dash (652) = **3,053** replacements
+- [x] Left bare U+FFFD alone — it is an em-dash in some files and a lost superscript digit in
+      others, and a wrong guess would silently corrupt a worked exam answer
+- [x] `MOJIBAKE_AUDIT.md` records the remaining **3,584** occurrences with context per sequence
+- [x] Verified 30/30 files: diff contains exactly and only the intended replacements
+
+### Phase D — Site sync + deploy
+- [x] Discovered `site/docs/` was **stale**: 1,303 of 1,307 pages carried an older body
+- [x] Wrote `scripts/sync_site.py` (splice body only; preserve Docusaurus frontmatter byte-for-byte)
+- [x] Built Docusaurus with heap 8192 + `--no-minify`; pushed `site/build/` to `gh-pages`
+
+### Known repo-hygiene issue (pre-existing, not introduced here)
+- `core.autocrlf=true` is set globally while `.gitattributes` mandates `eol=lf`. The 9 GATE
+  chapters that are committed with CRLF therefore show as permanently modified. Clearing the
+  global setting, or re-committing those 9 files with LF, resolves it.
+
+---
+
 ## Session 2026-07-07: Deepening Sweep
 
 ### Phase A — Branding Fix

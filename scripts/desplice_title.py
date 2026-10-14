@@ -29,6 +29,39 @@ COURSES = ROOT / "docs" / "courses"
 PHRASE = re.compile(r"\b[A-Z][a-z]{4,}(?:\s+[A-Z][a-z]{4,}){1,5}\b")
 
 
+class GrammarError(RuntimeError):
+    """A rewrite rule produced text that is not grammatical English."""
+
+
+# Every pattern here is a way a blunt substitution can leave a dangling article or
+# a missing head noun. Checked as a *delta* between the original and rewritten
+# text: a chapter may legitimately already contain "a system that relies on X",
+# so only an increase in the count means a rule regressed.
+UNGRAMMATICAL = {
+    "article/mismatch": re.compile(
+        r"\b(?:a|an)\s+(?:systems?|this technique|this topic|this chapter)\b"
+    ),
+    "dangling-this": re.compile(
+        r"\bthe smallest possible this\b"
+        r"|\bthis technique\s+this\b"
+        r"|\bpossible this technique\b"
+        r"|\bcorrect this technique\b"
+        # "implementation of this technique that is production-quality" is
+        # grammatical. An earlier "of this technique that" guard flagged all 102
+        # remaining files on correct output, so it was removed as a false positive.
+    ),
+}
+
+
+def grammar_regressions(before: str, after: str) -> dict[str, int]:
+    """Patterns whose occurrence count increased, i.e. that the rewrite created."""
+    return {
+        name: len(pat.findall(after)) - len(pat.findall(before))
+        for name, pat in UNGRAMMATICAL.items()
+        if len(pat.findall(after)) > len(pat.findall(before))
+    }
+
+
 def chapter_title(raw: str, path: pathlib.Path) -> str | None:
     """Get the H1, converted to the Title-Case form used in spliced prose."""
     m = re.search(r"^#\s+(.+?)\s*$", raw, re.M)
@@ -71,8 +104,13 @@ def rewrite(raw: str, title: str) -> tuple[str, int]:
             # "function that demonstrates X" / "component that depends on X"
             (rf"function that demonstrates {esc}", "function in this chapter"),
             (rf"component that depends on {esc}", "component built on this"),
-            (rf"implementation of {esc}", "this technique"),
-            (rf"systems? that relies? on {esc}", "systems using this technique"),
+            # Keep the head noun. Replacing the whole phrase with "this technique"
+            # produced "an this technique run faster" and "the smallest possible
+            # this technique", so only the title object is replaced here.
+            (rf"implementation of {esc}", "implementation of this technique"),
+            # Preserve the subject's number: "a system that relies on X" must not
+            # become "a systems using this technique".
+            (rf"\b(systems?) that (?:relies|rely) on {esc}", r"\1 using this technique"),
             # verb-object splices
             (rf"Explain {esc} in 60 seconds", "Explain the core idea in 60 seconds"),
             (rf"memorize the {esc} chapter content", "memorize this chapter's content"),
@@ -104,6 +142,15 @@ def rewrite(raw: str, title: str) -> tuple[str, int]:
     # repair sentence starts that now read "this technique" mid-sentence twice
     out = re.sub(r"\bthis technique\s+this technique\b", "this technique", out)
     out = re.sub(r"(?m)^(\s*(?:[-*]|\d+\.)\s*)this technique\b", r"\1This technique", out)
+    # Refuse to emit prose that a substitution broke. An earlier version of this
+    # script shipped "an this technique run faster" and "a systems using this
+    # technique" across 206 chapters; the structural quality score never saw it
+    # because it counts sections, not grammar. Fail loudly instead.
+    regressions = grammar_regressions(raw, out)
+    if regressions:
+        raise GrammarError(
+            f"{title!r}: substitution introduced {regressions}"
+        )
     return out, n
 
 
@@ -121,6 +168,8 @@ def main() -> None:
     total = 0
     changed = 0
     rows: list[tuple[int, str, str]] = []
+    pending: list[tuple[pathlib.Path, str]] = []
+    failures: list[str] = []
 
     for path in files:
         raw = path.read_text(encoding="utf-8", errors="replace")
@@ -132,14 +181,30 @@ def main() -> None:
         if worst < 10:
             continue
 
-        new, n = rewrite(raw, title)
+        try:
+            new, n = rewrite(raw, title)
+        except GrammarError as exc:
+            failures.append(str(exc))
+            continue
         if n:
             total += n
             rows.append((n, title, str(path.relative_to(ROOT))))
             if new != raw:
                 changed += 1
-                if args.apply:
-                    path.write_text(new, encoding="utf-8")
+                pending.append((path, new))
+
+    # Two-phase: nothing is written until every file has been rewritten and
+    # validated. A rule regression must not leave the tree half-converted.
+    if failures:
+        print(f"ABORTED: {len(failures)} file(s) failed the grammar check. "
+              f"No files were written.")
+        for f in failures[:20]:
+            print("  " + f)
+        raise SystemExit(2)
+
+    if args.apply:
+        for path, new in pending:
+            path.write_text(new, encoding="utf-8")
 
     print("=" * 74)
     print(f"DESPLICE [{'APPLIED' if args.apply else 'DRY RUN'}] - {len(files)} files scanned")

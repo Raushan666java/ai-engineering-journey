@@ -219,19 +219,19 @@ flowchart LR
 | Project | pi_{A1,A2}(R) | Pick columns A1, A2 (removes duplicates) |
 | Union | R ∪ S | Tuples in R or S (union-compatible) |
 | Set Difference | R - S | Tuples in R but not S |
-| Cartesian Product | R Ãâ€â€� S | All combinations of tuples |
+| Cartesian Product | R × S | All combinations of tuples |
 | Rename | rho_{new}(R) | Rename relation/attributes |
 
 #### Join Operations
 
 | Join | Symbol | Description |
 |------|--------|-------------|
-| Theta Join | R ⋈_c S | R Ãâ€â€� S followed by sigma_c |
+| Theta Join | R ⋈_c S | R × S followed by sigma_c |
 | Equi Join | R ⋈_{A=B} S | Theta join with equality condition |
 | Natural Join | R ⋈ S | Equi join on common attributes (removes duplicate columns) |
 | Left Outer Join | R ⟕ S | Natural join + unmatched left tuples padded with NULL |
 | Right Outer Join | R ⟖ S | Natural join + unmatched right tuples padded with NULL |
-| Full Outer Join | R âŸâ€â€� S | Natural join + all unmatched tuples padded with NULL |
+| Full Outer Join | R âŸ— S | Natural join + all unmatched tuples padded with NULL |
 
 #### Division Operation
 
@@ -242,7 +242,7 @@ Tables: R(A, B), S(B)
 Output: A values that appear in R paired with every B in S
 ```
 
-**Equivalence:** `R ÷ S = pi_A(R) - pi_A( (pi_A(R) Ãâ€â€� S) - R )`
+**Equivalence:** `R ÷ S = pi_A(R) - pi_A( (pi_A(R) × S) - R )`
 
 ### 2.3 Tuple Relational Calculus
 
@@ -793,10 +793,10 @@ A B+ tree of order p (maximum pointers per node) has 500,000 keys. The tree heig
 
 **Answer:** (b) 80
 **Explanation:** Height h = 3 means root at level 0, leaves at level 3.
-Min keys at leaf level: 2 Ãâ€â€� ceil((p-1)/2)^3 ≥ 500,000
+Min keys at leaf level: 2 × ceil((p-1)/2)^3 ≥ 500,000
 Each internal node (except root): at least ceil(p/2) children
 Root: at least 2 children
-Min keys = 2 Ãâ€â€� ceil(p/2)² Ãâ€â€� floor((p-1)/2)
+Min keys = 2 × ceil(p/2)² × floor((p-1)/2)
 Solving: p = 80 gives enough capacity.
 
 ---
@@ -1041,12 +1041,12 @@ Graph: T1 → T2 only. Acyclic. Conflict serializable as T1, T2.
 A B+ tree of order d (max keys per node = 2d) has height h (leaf level = h). What is the maximum number of keys stored?
 
 (a) (2d + 1)^h
-(b) 2d Ãâ€â€� (2d + 1)^(h-1)
+(b) 2d × (2d + 1)^(h-1)
 (c) (2d)^h
-(d) 2d Ãâ€â€� (2d)^(h-1)
+(d) 2d × (2d)^(h-1)
 
-**Answer:** (b) 2d Ãâ€â€� (2d + 1)^(h-1)
-**Explanation:** At leaf level, each node holds max 2d keys. Number of leaf nodes: (2d+1)^(h-1) (each internal node has max 2d+1 children). Total max keys = 2d Ãâ€â€� (2d+1)^(h-1).
+**Answer:** (b) 2d × (2d + 1)^(h-1)
+**Explanation:** At leaf level, each node holds max 2d keys. Number of leaf nodes: (2d+1)^(h-1) (each internal node has max 2d+1 children). Total max keys = 2d × (2d+1)^(h-1).
 
 ---
 
@@ -1294,8 +1294,8 @@ A B+ tree index with order p (max keys per internal node = p-1, max pointers = p
 **Explanation:**
 Height 2 (levels 0, 1, 2). Root min 2 children. Level 1 nodes have min ceil(p/2) children.
 Leaf nodes: at least ceil(p/2) keys each (leaf order: p pointers, p-1 keys → same as internal for GATE).
-Min total keys = 2 Ãâ€â€� ceil(p/2) Ãâ€â€� ceil(p/2)
-2 Ãâ€â€� ceil(p/2)² ≥ 10,000
+Min total keys = 2 × ceil(p/2) × ceil(p/2)
+2 × ceil(p/2)² ≥ 10,000
 ceil(p/2)² ≥ 5,000
 ceil(p/2) ≥ 71
 p ≥ 142... That seems too high. Let me reconsider.
@@ -1304,31 +1304,31 @@ If height = 3 meaning root + 2 internal levels + leaves, total levels = 4.
 Actually GATE often defines height differently. If h=3 means 3 levels (root at level 1, leaves at level 3), or 3 levels total.
 Let me solve: With min pointers = ceil(p/2), max = p.
 Max keys at root: p-1. With height 3 (3 levels: root + 1 internal + leaf):
-Min leaf nodes = 2 Ãâ€â€� ceil(p/2) Ãâ€â€� ceil(p/2) = 2 Ãâ€â€� ceil(p/2)²
+Min leaf nodes = 2 × ceil(p/2) × ceil(p/2) = 2 × ceil(p/2)²
 Wait, p is the order meaning max pointers. Leaf has max p-1 keys, min ceil((p-1)/2) keys.
 Hmm, GATE 2018 typically defines order d differently. Let me just pick the best answer.
 
 Actually, GATE 2018 had a specific formula. If height = 3 (root at level 0, leaves at level 2 → 3 levels total):
 Root: at least 2 children
 Level 1: each with at least ceil(p/2) children
-Level 2 (leaf): number = 2 Ãâ€â€� ceil(p/2)
+Level 2 (leaf): number = 2 × ceil(p/2)
 Each leaf: at least ceil(p/2) keys (if order p, leaf has max p-1 keys)
 
 Actually, the traditional B+ tree order definition in GATE: order n means each node (except root) has between ceil(n/2) and n children (or pointers). Internal nodes have n pointers and n-1 keys. Leaves have n-1 keys.
 
 For height = 3 (3 levels of nodes):
-Minimum leaves = 2 Ãâ€â€� ceil(n/2)²
-Minimum keys = 2 Ãâ€â€� ceil(n/2)² Ãâ€â€� ceil((n-1)/2)
+Minimum leaves = 2 × ceil(n/2)²
+Minimum keys = 2 × ceil(n/2)² × ceil((n-1)/2)
 
 This is getting complex. The answer is 24 as per GATE. With p = 24, ceil(p/2) = 12.
-Min leaf nodes = 2 Ãâ€â€� 12 Ãâ€â€� 12 = 288
+Min leaf nodes = 2 × 12 × 12 = 288
 Wait, 3 levels total: root has min 2 children. Each child has min ceil(p/2) = 12 children. That gives 24 leaf nodes.
 Each leaf has min ceil((p-1)/2) keys = ceil(23/2) = 12 keys.
-Min total keys = 24 Ãâ€â€� 12 = 288. That's not 10,000.
+Min total keys = 24 × 12 = 288. That's not 10,000.
 
-Maybe height = 4 then (root at 0, leaves at 3): 2 Ãâ€â€� 12 Ãâ€â€� 12 Ãâ€â€� 12 = 3456 leaf nodes. 3456 Ãâ€â€� 12 = 41472 keys. Yes, that covers 10000.
+Maybe height = 4 then (root at 0, leaves at 3): 2 × 12 × 12 × 12 = 3456 leaf nodes. 3456 × 12 = 41472 keys. Yes, that covers 10000.
 
-So with p = 24, 4 levels, min keys = 3456 Ãâ€â€� 12 = 41472 ≥ 10000. So answer = 24.
+So with p = 24, 4 levels, min keys = 3456 × 12 = 41472 ≥ 10000. So answer = 24.
 
 ---
 
@@ -1481,13 +1481,13 @@ In the ARIES recovery algorithm, what is the purpose of the Analysis phase?
 
 Consider two relations R(A, B) and S(B, C). Which relational algebra expression is equivalent to R ⋈ S?
 
-(a) pi_{A,B,C}(sigma_{R.B = S.B}(R Ãâ€â€� S))
-(b) sigma_{R.B = S.B}(R Ãâ€â€� S)
-(c) pi_{A,B,C}(R Ãâ€â€� S)
-(d) sigma_{R.A = S.C}(R Ãâ€â€� S)
+(a) pi_{A,B,C}(sigma_{R.B = S.B}(R × S))
+(b) sigma_{R.B = S.B}(R × S)
+(c) pi_{A,B,C}(R × S)
+(d) sigma_{R.A = S.C}(R × S)
 
-**Answer:** (a) pi_{A,B,C}(sigma_{R.B = S.B}(R Ãâ€â€� S))
-**Explanation:** Natural join on common attribute B. Carthesian product R Ãâ€â€� S, then select on R.B = S.B, then project all attributes (projection removes duplicate B column). Note: natural join automatically removes the duplicate column, which requires projection.
+**Answer:** (a) pi_{A,B,C}(sigma_{R.B = S.B}(R × S))
+**Explanation:** Natural join on common attribute B. Carthesian product R × S, then select on R.B = S.B, then project all attributes (projection removes duplicate B column). Note: natural join automatically removes the duplicate column, which requires projection.
 
 ---
 
@@ -1587,7 +1587,7 @@ A B+ tree of order p (max keys) is used for indexing. Each node is one disk bloc
 **Answer:** (b) 51
 **Explanation:**
 Internal node: p pointers + (p-1) keys + header ≤ block size
-p Ãâ€â€� 8 + (p-1) Ãâ€â€� 12 + H ≤ 1024
+p × 8 + (p-1) × 12 + H ≤ 1024
 8p + 12p - 12 + H ≤ 1024
 20p ≤ 1036 - H
 With header ≈ 16 bytes: 20p ≤ 1020, p ≤ 51
@@ -1858,7 +1858,7 @@ A B+ tree index has block size 2048 bytes. Key = 16 bytes, pointer = 8 bytes, bl
 
 **Answer:** p = 85
 **Explanation:**
-Internal node: p Ãâ€â€� 8 + (p-1) Ãâ€â€� 16 + 40 ≤ 2048
+Internal node: p × 8 + (p-1) × 16 + 40 ≤ 2048
 8p + 16p - 16 + 40 ≤ 2048
 24p + 24 ≤ 2048
 24p ≤ 2024
@@ -1866,7 +1866,7 @@ p ≤ 84.33
 So p = 84.
 
 Wait, recalculate. Actually p is pointers, p-1 is keys.
-p Ãâ€â€� 8 + (p-1) Ãâ€â€� 16 + 40 ≤ 2048
+p × 8 + (p-1) × 16 + 40 ≤ 2048
 8p + 16p - 16 + 40 ≤ 2048
 24p + 24 ≤ 2048
 24p ≤ 2024
@@ -1995,7 +1995,7 @@ Which of the following is NOT equivalent to sigma_{c1 ∧ c2}(R)?
 **Explanation:** sigma_{c1 ∧ c2}(R) selects tuples satisfying BOTH conditions.
 (a) and (b) are equivalent by cascading select.
 (c) Intersection of sigma_{c1}(R) and sigma_{c2}(R) gives tuples in both = satisfying both. ✓
-(d) Union gives tuples satisfying at least one condition. âœâ€â€� (gives more tuples).
+(d) Union gives tuples satisfying at least one condition. âœ— (gives more tuples).
 
 ---
 
@@ -2293,7 +2293,7 @@ Practice all 75 questions above, time yourself (2 minutes per 2-mark question), 
 
 ## Summary
 
-Database Management Systems (DBMS) is a consistent 8-12 mark GATE CS subject (3-5 questions) covering the Entity-Relationship model, Relational Model and Algebra, SQL (DDL, DML, nested queries, aggregate functions, triggers, views), Normalization (functional dependencies, candidate keys, 1NF-2NF-3NF-BCNF, lossless join and dependency preservation), Transaction Management (ACID properties, serializability â€â€� conflict and view, precedence graphs), Concurrency Control (locking protocols, 2PL, timestamp ordering, MVCC), and File Organization & Indexing (B+ trees, hash indexes, ISAM). The most heavily tested topics are functional dependencies and normalization (2-4 marks), SQL queries (2-3 marks), transaction serializability (2-3 marks), and B+ tree calculations (1-2 marks). The key to success is mastering FD closure computation (the foundation for everything else), understanding the distinction between conflict and view serializability, and practicing B+ tree insertion/deletion tracing. SQL query evaluation order (FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY) is a critical mental model.
+Database Management Systems (DBMS) is a consistent 8-12 mark GATE CS subject (3-5 questions) covering the Entity-Relationship model, Relational Model and Algebra, SQL (DDL, DML, nested queries, aggregate functions, triggers, views), Normalization (functional dependencies, candidate keys, 1NF-2NF-3NF-BCNF, lossless join and dependency preservation), Transaction Management (ACID properties, serializability — conflict and view, precedence graphs), Concurrency Control (locking protocols, 2PL, timestamp ordering, MVCC), and File Organization & Indexing (B+ trees, hash indexes, ISAM). The most heavily tested topics are functional dependencies and normalization (2-4 marks), SQL queries (2-3 marks), transaction serializability (2-3 marks), and B+ tree calculations (1-2 marks). The key to success is mastering FD closure computation (the foundation for everything else), understanding the distinction between conflict and view serializability, and practicing B+ tree insertion/deletion tracing. SQL query evaluation order (FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY) is a critical mental model.
 
 ```mermaid
 flowchart LR
@@ -2315,7 +2315,7 @@ flowchart LR
 
 ```typescript
 /**
- * NormalFormChecker â€â€� Functional Dependency & BCNF/3NF Analyzer
+ * NormalFormChecker — Functional Dependency & BCNF/3NF Analyzer
  * ----------------------------------------------------------------
  * Computes attribute closure, finds candidate keys, and checks
  * whether a given relation schema is in BCNF or 3NF.
@@ -2424,14 +2424,14 @@ class NormalFormChecker {
   }
 
   /**
-   * Decompose to BCNF (simplified â€â€� one step).
+   * Decompose to BCNF (simplified — one step).
    */
   decomposeBCNF(): string[] {
     const keys = this.findCandidateKeys();
     for (const fd of this.fds) {
       if (this.isSubset(fd.rhs, fd.lhs)) continue;
       if (this.isSuperkey(fd.lhs, keys)) continue;
-      // Violating FD found â€â€� decompose
+      // Violating FD found — decompose
       const lhsStr = [...fd.lhs].sort().join('');
       const rhsStr = [...fd.rhs].sort().join('');
       const remaining = this.attributes.filter(
@@ -2529,4 +2529,4 @@ console.log(checker.printReport());
 
 ---
 
-*End of Chapter 08 â€â€� Database Management Systems. Extended with summary, TypeScript implementations, quiz, and exercises.*
+*End of Chapter 08 — Database Management Systems. Extended with summary, TypeScript implementations, quiz, and exercises.*

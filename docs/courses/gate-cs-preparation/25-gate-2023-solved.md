@@ -68,7 +68,7 @@ flowchart LR
 
 ## Section A: General Aptitude (15 marks)
 
-### Q1 [1 Mark] â€â€� Numerical Ability
+### Q1 [1 Mark] — Numerical Ability
 
 What is the smallest 4-digit number divisible by 12, 15, and 20?
 
@@ -97,7 +97,7 @@ console.log(num); // 1020
 
 </details>
 
-### Q2 [1 Mark] â€â€� Numerical Ability
+### Q2 [1 Mark] — Numerical Ability
 
 If 15% of a number is 45, what is 25% of the same number?
 
@@ -125,7 +125,7 @@ console.log(findPercent(15, 45, 25)); // 75
 
 </details>
 
-### Q3 [1 Mark] â€â€� Verbal Ability
+### Q3 [1 Mark] — Verbal Ability
 
 Choose the correct preposition: "He is adept ______ solving complex problems."
 
@@ -144,7 +144,7 @@ The correct phrase is "adept at" doing something.
 
 </details>
 
-### Q4 [1 Mark] â€â€� Logical Reasoning
+### Q4 [1 Mark] — Logical Reasoning
 
 Which figure is the odd one out? (Given: Circle, Square, Triangle, Rectangle with various properties)
 
@@ -163,7 +163,7 @@ Circle has no straight edges, while square, triangle, and rectangle all have str
 
 </details>
 
-### Q5 [1 Mark] â€â€� Numerical Ability
+### Q5 [1 Mark] — Numerical Ability
 
 If x + y = 12 and xy = 35, what is the value of x² + y²?
 
@@ -189,7 +189,7 @@ console.log(sumSquares(12, 35)); // 74
 
 </details>
 
-### Q6 [2 Marks] â€â€� Numerical Ability
+### Q6 [2 Marks] — Numerical Ability
 
 A man can row 6 km/h in still water. If the river flows at 2 km/h, how long will it take to row 8 km upstream and back?
 
@@ -219,7 +219,7 @@ console.log(boatTime(6, 2, 8)); // 3
 
 </details>
 
-### Q7 [2 Marks] â€â€� Data Interpretation
+### Q7 [2 Marks] — Data Interpretation
 
 A shopkeeper mixes two types of rice costing ₹40/kg and ₹60/kg in ratio 3:2. At what price per kg should he sell to gain 10%?
 
@@ -253,7 +253,7 @@ So with prices ₹45 and ₹55 in ratio 1:1, SP = ₹55/kg.
 
 </details>
 
-### Q8 [2 Marks] â€â€� Logical Reasoning
+### Q8 [2 Marks] — Logical Reasoning
 
 In a certain code, COMPUTER is written as FMPSVCUS. How is KEYBOARD written?
 
@@ -370,7 +370,7 @@ OK, I'll define a simple pattern: For COMPUTER, the code is FMPSVCUS. Write the 
 
 Actually U(21) → V(22) = +1, not -2. So vowels: O→M(-2), U→V(+1), E→U(+16). Not consistent.
 
-OK, I'll just state the pattern as "each letter is replaced by the letter at a position determined by a specific key" and match the answer to LZFCPBSE. Let me check if KEYBOARD→LZFCPBSE works with: +1 each, then swap positions 1â†â€�2, 3â†â€�4, etc.
+OK, I'll just state the pattern as "each letter is replaced by the letter at a position determined by a specific key" and match the answer to LZFCPBSE. Let me check if KEYBOARD→LZFCPBSE works with: +1 each, then swap positions 1â†—�2, 3â†—�4, etc.
 K+1=L, E+1=F, Y+1=Z, B+1=C, O+1=P, A+1=B, R+1=S, D+1=E → LFZCPBSE. Perfect!
 So pattern for COMPUTER: C+1=D, O+1=P, M+1=N, P+1=Q, U+1=V, T+1=U, E+1=F, R+1=S → DPNQVUFS.
 Now swap each pair (1,2), (3,4), etc: DP→PD, NQ→QN, VU→UV, FS→SF → PDQNUVSF. Not FMPSVCUS.
@@ -386,7 +386,7 @@ OK I give up trying to reverse-engineer. I'll just provide the answer as LZFCPBS
 
 </details>
 
-### Q9 [2 Marks] â€â€� Numerical Ability
+### Q9 [2 Marks] — Numerical Ability
 
 Two pipes A and B can fill a tank in 20 min and 30 min respectively. A third pipe C can empty it in 15 min. All three are opened simultaneously. How long to fill the tank?
 
@@ -421,7 +421,7 @@ console.log(fillTime(20, 30, 15)); // 60
 
 </details>
 
-### Q10 [2 Marks] â€â€� Verbal Ability
+### Q10 [2 Marks] — Verbal Ability
 
 Identify the figure of speech: "The wind whispered through the trees."
 
@@ -444,7 +444,7 @@ Personification gives human qualities to non-human things. "Whispered" is a huma
 
 ## Section B: Technical (85 marks)
 
-### Q1 [1 Mark] â€â€� 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
+### Q1 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
 
 What is the value of iâÂ�± (where i = √-1)?
 
@@ -468,7 +468,7 @@ console.log(value); // ~0.2079
 
 </details>
 
-### Q2 [1 Mark] â€â€� 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
+### Q2 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
 
 How many edges does a graph with 6 vertices, each of degree 3, have?
 
@@ -494,7 +494,7 @@ console.log(edgesFromDegrees(6, 3)); // 9
 
 </details>
 
-### Q3 [1 Mark] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Easy
+### Q3 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Easy
 
 Which of the following has the slowest worst-case time complexity for sorting?
 
@@ -513,7 +513,7 @@ Bubble Sort is O(n²). Quick Sort worst case is O(n²) too, but average is O(n l
 
 </details>
 
-### Q4 [1 Mark] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Easy
+### Q4 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Easy
 
 A mutex is a special case of a semaphore initialized to:
 
@@ -532,7 +532,7 @@ A mutex (binary semaphore) is a semaphore initialized to 1, allowing only one pr
 
 </details>
 
-### Q5 [1 Mark] â€â€� 📂 Computer Networks | ðŸÂ�·ï¸Â� Easy
+### Q5 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Easy
 
 Which of the following is a connectionless transport layer protocol?
 
@@ -551,7 +551,7 @@ UDP (User Datagram Protocol) is connectionless at the transport layer. TCP is co
 
 </details>
 
-### Q6 [1 Mark] â€â€� 📂 Database Management Systems | ðŸÂ�·ï¸Â� Easy
+### Q6 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Easy
 
 Which of the following is the correct SQL syntax to create a foreign key?
 
@@ -570,7 +570,7 @@ Foreign keys can be added using: ALTER TABLE child ADD FOREIGN KEY (col) REFEREN
 
 </details>
 
-### Q7 [1 Mark] â€â€� 📂 Theory of Computation | ðŸÂ�·ï¸Â� Easy
+### Q7 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Easy
 
 Which of the following is NOT a valid operation on a DFA?
 
@@ -589,7 +589,7 @@ Regular languages (accepted by DFAs) are closed under union, concatenation, and 
 
 </details>
 
-### Q8 [1 Mark] â€â€� 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Easy
+### Q8 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Easy
 
 Which register holds the currently executing instruction?
 
@@ -608,7 +608,7 @@ The Instruction Register (IR) holds the currently executing instruction fetched 
 
 </details>
 
-### Q9 [1 Mark] â€â€� 📂 Compiler Design | ðŸÂ�·ï¸Â� Easy
+### Q9 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Easy
 
 Which phase of a compiler detects syntax errors?
 
@@ -627,7 +627,7 @@ The parser (syntax analyzer) checks the token stream against grammar rules and r
 
 </details>
 
-### Q10 [1 Mark] â€â€� 📂 Digital Logic | ðŸÂ�·ï¸Â� Easy
+### Q10 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Easy
 
 How many input lines does a 16-to-1 multiplexer have?
 
@@ -646,7 +646,7 @@ A 16-to-1 multiplexer has 16 input lines, 4 select lines, and 1 output.
 
 </details>
 
-### Q11 [1 Mark] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
+### Q11 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
 
 The worst-case time complexity of searching in a binary search tree of n nodes is:
 
@@ -681,7 +681,7 @@ console.log(skewed.search(3)); // O(n)
 
 </details>
 
-### Q12 [1 Mark] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
+### Q12 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
 
 The process of swapping a process from main memory to disk is called:
 
@@ -700,7 +700,7 @@ Swapping out moves a process from main memory to disk. Swapping in moves it back
 
 </details>
 
-### Q13 [1 Mark] â€â€� 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
+### Q13 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
 
 Which of the following is a private IP address?
 
@@ -723,7 +723,7 @@ In GATE, 10.0.0.0 is often identified as the classic private IP (Class A private
 
 </details>
 
-### Q14 [1 Mark] â€â€� 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
+### Q14 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
 
 Which normal form eliminates transitive dependencies?
 
@@ -742,7 +742,7 @@ Which normal form eliminates transitive dependencies?
 
 </details>
 
-### Q15 [1 Mark] â€â€� 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
+### Q15 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
 
 The language {ww | w ∈ {a,b}*} is:
 
@@ -761,7 +761,7 @@ The language {ww | w ∈ {a,b}*} is:
 
 </details>
 
-### Q16 [1 Mark] â€â€� 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
+### Q16 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
 
 Which of the following is an example of a synthesized attribute in an SDT?
 
@@ -780,7 +780,7 @@ Synthesized attributes are computed upward (from children to parent). Inherited 
 
 </details>
 
-### Q17 [1 Mark] â€â€� 📂 Digital Logic | ðŸÂ�·ï¸Â� Medium
+### Q17 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Medium
 
 The Boolean function F = A'B + AB' is equivalent to:
 
@@ -807,7 +807,7 @@ console.log(xor(0, 0), xor(0, 1), xor(1, 0), xor(1, 1)); // 0, 1, 1, 0
 
 </details>
 
-### Q18 [1 Mark] â€â€� 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
+### Q18 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
 
 Which technique resolves control hazards in a pipelined processor?
 
@@ -826,7 +826,7 @@ Control hazards arise from branch instructions. Branch prediction (static or dyn
 
 </details>
 
-### Q19 [1 Mark] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
+### Q19 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
 
 Which of the following is a self-balancing binary search tree?
 
@@ -845,7 +845,7 @@ AVL Tree is a self-balancing BST where the height difference between left and ri
 
 </details>
 
-### Q20 [1 Mark] â€â€� 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
+### Q20 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
 
 If dy/dx = 2x and y(0) = 3, what is y(1)?
 
@@ -873,7 +873,7 @@ console.log(solveODE(1)); // 4
 
 </details>
 
-### Q21 [2 Marks] â€â€� 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
+### Q21 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
 
 The eigen values of a 3×3 identity matrix are:
 
@@ -892,7 +892,7 @@ The identity matrix I₃ has eigenvalue 1 with algebraic multiplicity 3. For eve
 
 </details>
 
-### Q22 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
+### Q22 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
 
 The recurrence T(n) = 9T(n/3) + n² has time complexity:
 
@@ -922,7 +922,7 @@ console.log(masterTheorem(9, 3, 'n^2')); // Θ(n² log n)
 
 </details>
 
-### Q23 [2 Marks] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
+### Q23 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
 
 Which of the following RAID levels provides mirroring?
 
@@ -941,7 +941,7 @@ RAID 1 uses mirroring (data duplicated on multiple drives). RAID 0 uses striping
 
 </details>
 
-### Q24 [2 Marks] â€â€� 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
+### Q24 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
 
 Consider the SQL query:
 ```sql
@@ -967,7 +967,7 @@ HAVING COUNT(*) > 2 filters groups to those with count greater than 2, i.e., at 
 
 </details>
 
-### Q25 [2 Marks] â€â€� 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
+### Q25 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
 
 A network with CSMA/CD has a propagation delay of 12.5 μs. The minimum frame size for a 100 Mbps network is:
 
@@ -993,7 +993,7 @@ console.log(minFrameSize(12.5, 100)); // 2500 bits
 
 </details>
 
-### Q26 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
+### Q26 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
 
 A priority queue is implemented using a max-heap. Insertion of 10 elements followed by 5 deletions takes how much time?
 
@@ -1048,7 +1048,7 @@ class MaxHeap {
 
 </details>
 
-### Q27 [2 Marks] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
+### Q27 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
 
 Which of the following is NOT a necessary condition for deadlock?
 
@@ -1067,7 +1067,7 @@ The four necessary conditions for deadlock are: Mutual Exclusion, Hold and Wait,
 
 </details>
 
-### Q28 [2 Marks] â€â€� 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
+### Q28 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
 
 The set of all tokens recognized by a lexical analyzer forms:
 
@@ -1086,7 +1086,7 @@ Tokens are defined using regular expressions, which generate regular languages. 
 
 </details>
 
-### Q29 [2 Marks] â€â€� 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
+### Q29 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
 
 The number of bits in the mantissa of IEEE 754 single-precision floating-point format is:
 
@@ -1112,7 +1112,7 @@ console.log(ieeeSinglePrecision());
 
 </details>
 
-### Q30 [2 Marks] â€â€� 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
+### Q30 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
 
 Which of the following problems is undecidable?
 
@@ -1131,7 +1131,7 @@ CFG equivalence (whether two CFGs generate the same language) is undecidable. Me
 
 </details>
 
-### Q31 [2 Marks] â€â€� 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
+### Q31 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
 
 Which anomaly does 2NF prevent?
 
@@ -1150,7 +1150,7 @@ Which anomaly does 2NF prevent?
 
 </details>
 
-### Q32 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
+### Q32 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
 
 The time complexity of Floyd-Warshall algorithm for finding all-pairs shortest paths in a graph with V vertices is:
 
@@ -1182,7 +1182,7 @@ function floydWarshall(graph: number[][]): number[][] {
 
 </details>
 
-### Q33 [2 Marks] â€â€� 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
+### Q33 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
 
 In the TCP/IP protocol suite, which protocol handles error reporting?
 
@@ -1201,7 +1201,7 @@ ICMP (Internet Control Message Protocol) handles error reporting (destination un
 
 </details>
 
-### Q34 [2 Marks] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
+### Q34 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
 
 A counting semaphore S is initialized to 5. 7 wait() and 4 signal() operations are performed. The final value of S is:
 
@@ -1228,7 +1228,7 @@ console.log(semaphoreOps(5, 7, 4)); // 2
 
 </details>
 
-### Q35 [2 Marks] â€â€� 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
+### Q35 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
 
 The performance improvement when 80% of a program is parallelized with 4 processors (using Amdahl's Law) is:
 
@@ -1255,7 +1255,7 @@ console.log(amdahl(0.8, 4)); // 2.5
 
 </details>
 
-### Q36 [2 Marks] â€â€� 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
+### Q36 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
 
 The number of onto (surjective) functions from a set of 5 elements to a set of 3 elements is:
 
@@ -1290,7 +1290,7 @@ console.log(ontoFunctions(5, 3)); // 150
 
 </details>
 
-### Q37 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
+### Q37 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
 
 The number of spanning trees in a complete graph K₄ is:
 
@@ -1317,7 +1317,7 @@ console.log(spanningTreesK(4)); // 16
 
 </details>
 
-### Q38 [2 Marks] â€â€� 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
+### Q38 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
 
 A Turing machine that writes a symbol and moves left in every transition is called:
 
@@ -1336,7 +1336,7 @@ If a TM only moves left, it can never read any symbol to the right of the starti
 
 </details>
 
-### Q39 [2 Marks] â€â€� 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
+### Q39 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
 
 Which of the following schedules is allowed under Strict 2PL?
 
@@ -1355,7 +1355,7 @@ Strict 2PL releases all locks after commit/abort. Reads don't conflict, so (D) i
 
 </details>
 
-### Q40 [2 Marks] â€â€� 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
+### Q40 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
 
 Which of the following is correct for subnet mask 255.255.255.240?
 
@@ -1385,7 +1385,7 @@ console.log(subnetInfo(28, 24)); // { subnets: 16, hostsPerSubnet: 14 }
 
 </details>
 
-### Q41 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
+### Q41 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
 
 Consider the following C-like code. What does it compute?
 
@@ -1419,7 +1419,7 @@ console.log(fib(10)); // 55
 
 </details>
 
-### Q42 [2 Marks] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
+### Q42 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
 
 For a disk with 200 cylinders (0-199), the current head is at cylinder 50. Requests: 95, 180, 34, 119, 11, 123, 62, 64. Using SSTF scheduling, the next request served is:
 
@@ -1452,7 +1452,7 @@ console.log(sstfNext(50, [95, 180, 34, 119, 11, 123, 62, 64])); // 62
 
 </details>
 
-### Q43 [2 Marks] â€â€� 📂 Computer Architecture | ðŸÂ�·ï¸Â� Hard
+### Q43 [2 Marks] — 📂 Computer Architecture | ðŸÂ�·ï¸Â� Hard
 
 The number of address lines required for a 16 KB memory chip is:
 
@@ -1478,7 +1478,7 @@ console.log(addressLines(16)); // 14
 
 </details>
 
-### Q44 [2 Marks] â€â€� 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
+### Q44 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
 
 Which of the following is NOT a form of intermediate code?
 
@@ -1495,7 +1495,7 @@ Actually, all of these are forms of intermediate representation (IR). Three addr
 
 </details>
 
-### Q44 [2 Marks] â€â€� 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
+### Q44 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
 
 Which of the following optimization techniques is most effective for loop-invariant expressions?
 
@@ -1514,7 +1514,7 @@ Code motion (loop-invariant code motion) moves computations that produce the sam
 
 </details>
 
-### Q45 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
+### Q45 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
 
 What is the output of the following code?
 
@@ -1539,7 +1539,7 @@ p points to a[0]. p+3 points to a[3] = 4. *(p+3) = 4.
 
 </details>
 
-### Q46 [2 Marks] â€â€� 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
+### Q46 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
 
 Which of the following is NOT a CFL?
 
@@ -1558,7 +1558,7 @@ Which of the following is NOT a CFL?
 
 </details>
 
-### Q47 [2 Marks] â€â€� 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
+### Q47 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
 
 The number of ways to arrange the letters of "GATE" such that vowels are together is:
 
@@ -1591,7 +1591,7 @@ console.log(vowelsTogether("GATE")); // 12
 
 </details>
 
-### Q48 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
+### Q48 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
 
 Which data structure is used to implement recursion?
 
@@ -1610,7 +1610,7 @@ Recursion uses a call stack to store activation records (return addresses, local
 
 </details>
 
-### Q49 [2 Marks] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
+### Q49 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
 
 In UNIX, which system call creates a new process?
 
@@ -1629,7 +1629,7 @@ fork() creates a new process (child) as a copy of the parent. exec() replaces th
 
 </details>
 
-### Q50 [2 Marks] â€â€� 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
+### Q50 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
 
 Which type of join returns only rows with matching values in both tables?
 
@@ -1648,7 +1648,7 @@ INNER JOIN returns only rows where the join condition is satisfied in both table
 
 </details>
 
-### Q51 [2 Marks] â€â€� 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
+### Q51 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
 
 The port number used by HTTP is:
 
@@ -1667,7 +1667,7 @@ HTTP uses port 80. HTTPS uses 443. FTP uses 21. SMTP uses 25.
 
 </details>
 
-### Q52 [2 Marks] â€â€� 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
+### Q52 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
 
 Which cache mapping technique allows any block to be stored in any line?
 
@@ -1686,7 +1686,7 @@ Fully associative cache allows any memory block to be stored in any cache line. 
 
 </details>
 
-### Q53 [2 Marks] â€â€� 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
+### Q53 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
 
 The transition function of a DFA is:
 
@@ -1705,7 +1705,7 @@ For a DFA, the transition function maps (current state, input symbol) to exactly
 
 </details>
 
-### Q54 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
+### Q54 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
 
 The worst-case time complexity of inserting n elements into an initially empty binary search tree is:
 
@@ -1724,7 +1724,7 @@ If elements are inserted in sorted (or reverse sorted) order, the BST becomes sk
 
 </details>
 
-### Q55 [2 Marks] â€â€� 📂 Digital Logic | ðŸÂ�·ï¸Â� Hard
+### Q55 [2 Marks] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Hard
 
 The output of a JK flip-flop when J=1, K=1 is:
 
@@ -1827,12 +1827,12 @@ pie title "Difficulty Distribution - GATE CS 2023"
 ### Paper Analysis
 
 
-GATE 2023 Computer Science paper featured a total of 65 questions with 100 marks. The General Aptitude section contributed 15 marks (10 questions), and the Technical section contributed 85 marks (55 questions). The paper was characterized by a strong emphasis on fundamentals â€â€� many questions tested core concepts rather than complex multi-step reasoning. The number of MCQs was approximately 40, with 10 MSQs and 15 NATs. A notable feature was the inclusion of 2-mark questions that required multi-concept integration, particularly in Algorithms (graph theory combined with recurrence) and Databases (SQL nested queries with aggregate functions). The paper had no major surprises in terms of syllabus coverage, validating the importance of thorough preparation across all subjects.
+GATE 2023 Computer Science paper featured a total of 65 questions with 100 marks. The General Aptitude section contributed 15 marks (10 questions), and the Technical section contributed 85 marks (55 questions). The paper was characterized by a strong emphasis on fundamentals — many questions tested core concepts rather than complex multi-step reasoning. The number of MCQs was approximately 40, with 10 MSQs and 15 NATs. A notable feature was the inclusion of 2-mark questions that required multi-concept integration, particularly in Algorithms (graph theory combined with recurrence) and Databases (SQL nested queries with aggregate functions). The paper had no major surprises in terms of syllabus coverage, validating the importance of thorough preparation across all subjects.
 
 ### Difficulty Trends
 
 
-GATE 2023 was generally perceived as moderately easier than GATE 2022, with a difficulty split of approximately 35% Easy, 48% Medium, and 17% Hard. The Engineering Mathematics section was particularly scoring, with most questions being direct applications of standard formulas. Data Structures & Algorithms saw fewer hard questions compared to previous years â€â€� the weighted interval scheduling problem was the only question with a sub-20% correct rate. Operating Systems questions on disk scheduling were formulaic. Computer Networks had a tough question on CSMA/CD persistence that tripped many test-takers. Overall, the paper rewarded concept clarity over rote practice.
+GATE 2023 was generally perceived as moderately easier than GATE 2022, with a difficulty split of approximately 35% Easy, 48% Medium, and 17% Hard. The Engineering Mathematics section was particularly scoring, with most questions being direct applications of standard formulas. Data Structures & Algorithms saw fewer hard questions compared to previous years — the weighted interval scheduling problem was the only question with a sub-20% correct rate. Operating Systems questions on disk scheduling were formulaic. Computer Networks had a tough question on CSMA/CD persistence that tripped many test-takers. Overall, the paper rewarded concept clarity over rote practice.
 
 ### Key Concepts Tested
 
@@ -1856,7 +1856,7 @@ The following TypeScript program computes subject-wise marks distribution for GA
 
 ```typescript
 /**
- * TopicWiseWeightage â€â€� Subject-wise marks distribution analyzer.
+ * TopicWiseWeightage — Subject-wise marks distribution analyzer.
  * Use this to understand which subjects and topics dominated GATE 2023
  * and allocate revision time proportionally.
  */
@@ -1958,7 +1958,7 @@ class TopicWiseWeightage {
       '',
       'Subject-wise breakdown:',
       ...subjects.map(s =>
-        `  ${s.subject}: ${s.totalMarks}M (${s.percentage}%) â€â€� ${s.questionCount} Qs\n` +
+        `  ${s.subject}: ${s.totalMarks}M (${s.percentage}%) — ${s.questionCount} Qs\n` +
         s.topics.map(t => `    - ${t.topic}: ${t.marks}M (${t.qCount} Qs)`).join('\n')
       ),
       '',
@@ -2019,7 +2019,7 @@ Test your understanding of GATE 2023 paper concepts with these 5 questions.
 **Q2.** In the context of the Chomsky hierarchy, which type of grammar is generated by a deterministic pushdown automaton (DPDA) with acceptance by empty stack?
 - a) Type-0 (recursively enumerable)
 - b) Type-1 (context-sensitive)
-- c) Type-2 (context-free) â€â€� a proper subset
+- c) Type-2 (context-free) — a proper subset
 - d) Type-3 (regular)
 
 **Q3.** A synthesised attribute in a syntax-directed definition is one where:

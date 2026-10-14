@@ -663,7 +663,7 @@ Formula summary → solved GATE problems → quick practice.
 | Method | Formula |
 |--------|---------|
 | **Lagrange** | `P(x) = sum_{i=0}^n y_i * L_i(x)`, where `L_i(x) = prod_{j!=i} (x - x_j)/(x_i - x_j)` |
-| **Newton forward** | `P(x) = y_0 + u*Îâ€Â�y_0 + u(u-1)/2! * Îâ€Â�^2y_0 + ...` where `u = (x - x_0)/h` |
+| **Newton forward** | `P(x) = y_0 + u*Î—Â�y_0 + u(u-1)/2! * Î—Â�^2y_0 + ...` where `u = (x - x_0)/h` |
 | **Newton backward** | `P(x) = y_n + u*∇y_n + u(u+1)/2! * ∇^2y_n + ...` where `u = (x - x_n)/h` |
 
 ### 5.3 Numerical Integration
@@ -1251,7 +1251,7 @@ x + y + z = 1
 - Letters: `M(2), A(2), T(2), H(1), E(1), I(1), C(1), S(1)` → 8 distinct letters, some repeated
 - Cases:
   - All 3 distinct: `P(8,3) = 8*7*6 = 336`
-  - Exactly 2 same, 1 different: choose the repeated letter (M, A, or T) Ãâ€â€� choose the different letter (7 remaining) Ãâ€â€� arrangements `= 3 * 7 * 3 = 63`
+  - Exactly 2 same, 1 different: choose the repeated letter (M, A, or T) × choose the different letter (7 remaining) × arrangements `= 3 * 7 * 3 = 63`
   - All 3 same: not possible (max 2 copies of any letter)
 - Total: `336 + 63 = 399`
 - **Answer: `399`**
@@ -1271,7 +1271,7 @@ x + y + z = 1
 
 ---
 
-**GATE 2022 (CS) → Q4:** In the group `(Z_7 - {0}, Ãâ€â€�)` under multiplication modulo 7, find the order of element `3`.
+**GATE 2022 (CS) → Q4:** In the group `(Z_7 - {0}, ×)` under multiplication modulo 7, find the order of element `3`.
 
 **Solution:**
 - `Z_7^* = {1,2,3,4,5,6}` under multiplication mod 7
@@ -1547,12 +1547,12 @@ x + y + 4z = 6
 **Solution:**
 - Compute determinant: `det(A) = 1(2*9 - 3*4) - 1(1*9 - 1*3) + 1(1*4 - 1*2)`
 - `= 1(18-12) - 1(9-3) + 1(4-2) = 6 - 6 + 2 = 2`
-- Since `det ≠ 0`, Rank = 3 (full rank for 3Ãâ€â€�3).
+- Since `det ≠ 0`, Rank = 3 (full rank for 3×3).
 - **Answer: 3**
 
 ---
 
-**GATE 2011 (CS) → Q52:** Let `A` be a 3Ãâ€â€�3 matrix with eigenvalues 1, -1, and 2. Find the trace of `A^3`.
+**GATE 2011 (CS) → Q52:** Let `A` be a 3×3 matrix with eigenvalues 1, -1, and 2. Find the trace of `A^3`.
 
 **Solution:**
 - If λ is eigenvalue of A, λ³ is eigenvalue of A³
@@ -1577,7 +1577,7 @@ x + y + 4z = 6
 **GATE 2013 (CS) → Q54:** If `A = [[3, -2], [2, -1]]`, find `A²`.
 
 **Solution:**
-- `A² = A Ãâ€â€� A = [[3, -2], [2, -1]] Ãâ€â€� [[3, -2], [2, -1]]`
+- `A² = A × A = [[3, -2], [2, -1]] × [[3, -2], [2, -1]]`
 - `= [[3·3 + (-2)·2, 3·(-2) + (-2)·(-1)], [2·3 + (-1)·2, 2·(-2) + (-1)·(-1)]]`
 - `= [[9-4, -6+2], [6-2, -4+1]] = [[5, -4], [4, -3]]`
 - **Answer: `[[5, -4], [4, -3]]`**
@@ -1612,7 +1612,7 @@ x + y + 4z = 6
 
 ---
 
-**GATE 2015 (CS) → Q56:** If `A` is a 3Ãâ€â€�3 matrix with `det(A) = 2`, find `det(adj(A))`.
+**GATE 2015 (CS) → Q56:** If `A` is a 3×3 matrix with `det(A) = 2`, find `det(adj(A))`.
 
 **Solution:**
 - `det(adj(A)) = det(A)^{n-1} = 2^{3-1} = 2^2 = 4`
@@ -1620,7 +1620,7 @@ x + y + 4z = 6
 
 ---
 
-**GATE 2015 (CS) → Q57:** Let `P` be a 2Ãâ€â€�2 matrix with eigenvalues 1 and 4. Find the trace of `PâÂÂ�»¹`.
+**GATE 2015 (CS) → Q57:** Let `P` be a 2×2 matrix with eigenvalues 1 and 4. Find the trace of `PâÂÂ�»¹`.
 
 **Solution:**
 - Eigenvalues of `PâÂÂ�»¹` are reciprocals: `1/1 = 1` and `1/4 = 0.25`
@@ -1649,7 +1649,7 @@ x + y + 4z = 6
 
 ---
 
-**GATE 2017 (CS) → Q60:** How many solutions does `Ax = 0` have if `A` is `mÃâ€â€�n` with `rank(A) = r < n`?
+**GATE 2017 (CS) → Q60:** How many solutions does `Ax = 0` have if `A` is `m×n` with `rank(A) = r < n`?
 
 **Solution:**
 - For homogeneous system `Ax = 0`, rank `r < n` means `n - r` free variables
@@ -1801,7 +1801,7 @@ x + y + 4z = 6
 **GATE 2010 (CS) → Q73:** Two fair dice are rolled. What is the probability the sum is 7?
 
 **Solution:**
-- Total outcomes: 6 Ãâ€â€� 6 = 36
+- Total outcomes: 6 × 6 = 36
 - Favorable (sum = 7): (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) → 6 outcomes
 - `P = 6/36 = 1/6`
 - **Answer: 1/6**
@@ -1811,8 +1811,8 @@ x + y + 4z = 6
 **GATE 2011 (CS) → Q74:** A box has 3 red and 7 black balls. Two balls are drawn without replacement. Find probability both are red.
 
 **Solution:**
-- `P(both red) = P(1st red) Ãâ€â€� P(2nd red | 1st red)`
-- `= 3/10 Ãâ€â€� 2/9 = 6/90 = 1/15`
+- `P(both red) = P(1st red) × P(2nd red | 1st red)`
+- `= 3/10 × 2/9 = 6/90 = 1/15`
 - **Answer: 1/15**
 
 ---
@@ -1822,7 +1822,7 @@ x + y + 4z = 6
 **Solution:**
 - Mean = `np = 4`, Variance = `np(1-p) = 2`
 - `np(1-p) / np = 2/4` → `1-p = 0.5` → `p = 0.5`
-- `n Ãâ€â€� 0.5 = 4` → `n = 8`
+- `n × 0.5 = 4` → `n = 8`
 - **Answer: 8**
 
 ---
@@ -1850,7 +1850,7 @@ x + y + 4z = 6
 **Solution:**
 - Poisson: `P(X = k) = e^{-λ} λ^k / k!`
 - λ = 4, k = 2: `P(X = 2) = e^{-4} · 4² / 2! = 16e^{-4}/2 = 8e^{-4}`
-- `≈ 8 Ãâ€â€� 0.0183 = 0.1465`
+- `≈ 8 × 0.0183 = 0.1465`
 - **Answer: `8e^{-4} ≈ 0.1465`**
 
 ---
@@ -1870,7 +1870,7 @@ x + y + 4z = 6
 
 **Solution:**
 - For independent variables: `Var(aX + bY) = a²Var(X) + b²Var(Y)`
-- `Var(2X - Y) = 2²Var(X) + (-1)²Var(Y) = 4Ãâ€â€�4 + 1Ãâ€â€�9 = 16 + 9 = 25`
+- `Var(2X - Y) = 2²Var(X) + (-1)²Var(Y) = 4×4 + 1×9 = 16 + 9 = 25`
 - **Answer: 25**
 
 ---
@@ -1880,7 +1880,7 @@ x + y + 4z = 6
 **Solution:**
 - `P(A∪B) = P(A) + P(B) - P(A∩B)`
 - `0.7 = 0.5 + 0.4 - P(A∩B)` → `P(A∩B) = 0.2`
-- Check independence: `P(A)·P(B) = 0.5 Ãâ€â€� 0.4 = 0.2 = P(A∩B)`
+- Check independence: `P(A)·P(B) = 0.5 × 0.4 = 0.2 = P(A∩B)`
 - Yes, they are independent
 - **Answer: Yes, they are independent**
 
@@ -1898,7 +1898,7 @@ x + y + 4z = 6
 
 **Solution:**
 - `P(blue on one draw) = 3/8`
-- With replacement: `P(both blue) = (3/8) Ãâ€â€� (3/8) = 9/64`
+- With replacement: `P(both blue) = (3/8) × (3/8) = 9/64`
 - **Answer: 9/64**
 
 ---
@@ -1906,7 +1906,7 @@ x + y + 4z = 6
 **GATE 2018 (CS) → Q84:** For Bayes' theorem: `P(Aâ‚ÂÂ�|B) = P(B|Aâ‚ÂÂ�)P(Aâ‚ÂÂ�) / Σ P(B|Aⱼ)P(Aⱼ)`. If `P(Aâ‚ÂÂ�) = 0.6`, `P(A₂) = 0.4`, `P(B|Aâ‚ÂÂ�) = 0.3`, `P(B|A₂) = 0.2`, find `P(Aâ‚ÂÂ�|B)`.
 
 **Solution:**
-- `P(B) = P(B|Aâ‚ÂÂ�)P(Aâ‚ÂÂ�) + P(B|A₂)P(A₂) = 0.3Ãâ€â€�0.6 + 0.2Ãâ€â€�0.4 = 0.18 + 0.08 = 0.26`
+- `P(B) = P(B|Aâ‚ÂÂ�)P(Aâ‚ÂÂ�) + P(B|A₂)P(A₂) = 0.3×0.6 + 0.2×0.4 = 0.18 + 0.08 = 0.26`
 - `P(Aâ‚ÂÂ�|B) = 0.18/0.26 = 9/13 ≈ 0.6923`
 - **Answer: 9/13**
 
@@ -1920,7 +1920,7 @@ x + y + 4z = 6
 **GATE 2010 (CS) → Q85:** How many edges does a complete graph `K₅` have?
 
 **Solution:**
-- `|E| = n(n-1)/2 = 5Ãâ€â€�4/2 = 10`
+- `|E| = n(n-1)/2 = 5×4/2 = 10`
 - **Answer: 10**
 
 ---
@@ -1969,7 +1969,7 @@ x + y + 4z = 6
 
 **Solution:**
 - Handshaking lemma: sum of degrees = 2|E|
-- Sum of degrees = 10 Ãâ€â€� 5 = 50
+- Sum of degrees = 10 × 5 = 50
 - `50 = 2|E|` → `|E| = 25`
 - **Answer: 25**
 
@@ -2056,9 +2056,9 @@ x + y + 4z = 6
 - `h = (1-0)/4 = 0.25`
 - Points: `x₀=0, xâ‚ÂÂ�=0.25, x₂=0.5, x₃=0.75, x₄=1.0`
 - `f(x) = x²`: `f(0)=0, f(0.25)=0.0625, f(0.5)=0.25, f(0.75)=0.5625, f(1)=1`
-- Trapezoidal: `h/2 Ãâ€â€� [f(x₀) + 2(f(xâ‚ÂÂ�)+f(x₂)+f(x₃)) + f(x₄)]`
-- `= 0.25/2 Ãâ€â€� [0 + 2(0.0625+0.25+0.5625) + 1]`
-- `= 0.125 Ãâ€â€� [0 + 2(0.875) + 1] = 0.125 Ãâ€â€� [1.75 + 1] = 0.125 Ãâ€â€� 2.75 = 0.34375`
+- Trapezoidal: `h/2 × [f(x₀) + 2(f(xâ‚ÂÂ�)+f(x₂)+f(x₃)) + f(x₄)]`
+- `= 0.25/2 × [0 + 2(0.0625+0.25+0.5625) + 1]`
+- `= 0.125 × [0 + 2(0.875) + 1] = 0.125 × [1.75 + 1] = 0.125 × 2.75 = 0.34375`
 - Exact: `∫₀¹ x² dx = [x³/3]₀¹ = 1/3 = 0.3333...`
 - **Answer: 0.34375** (exact: 1/3)
 
@@ -2119,11 +2119,11 @@ x + y + 4z = 6
 
 | Matrix | Determinant |
 |--------|-------------|
-| 2Ãâ€â€�2: `[[a,b],[c,d]]` | `ad - bc` |
-| 3Ãâ€â€�3: expand along first row | `a(ei - fh) - b(di - fg) + c(dh - eg)` |
+| 2×2: `[[a,b],[c,d]]` | `ad - bc` |
+| 3×3: expand along first row | `a(ei - fh) - b(di - fg) + c(dh - eg)` |
 | Triangular (upper or lower) | Product of diagonal entries |
 | Diagonal matrix | Product of diagonal entries |
-| `cA` (nÃâ€â€�n) | `câÂÂ�¿·det(A)` |
+| `cA` (n×n) | `câÂÂ�¿·det(A)` |
 | `Aᵀ` | Same as `det(A)` |
 | `AâÂÂ�»¹` | `1/det(A)` |
 | `AB` | `det(A)·det(B)` |
@@ -2135,14 +2135,14 @@ x + y + 4z = 6
 
 | Matrix | Inverse |
 |--------|---------|
-| 2Ãâ€â€�2: `[[a,b],[c,d]]` | `1/(ad-bc) · [[d,-b],[-c,a]]` |
-| 3Ãâ€â€�3: `AâÂÂ�»¹ = adj(A)/det(A)` | Cofactor matrix transposed, divided by det |
+| 2×2: `[[a,b],[c,d]]` | `1/(ad-bc) · [[d,-b],[-c,a]]` |
+| 3×3: `AâÂÂ�»¹ = adj(A)/det(A)` | Cofactor matrix transposed, divided by det |
 | Diagonal: `diag(dâ‚ÂÂ�,...,dₙ)` | `diag(1/dâ‚ÂÂ�,...,1/dₙ)` |
 | Orthogonal: `AᵀA = I` | `AâÂÂ�»¹ = Aᵀ` |
 
 **Rank Facts:**
 - `rank(A) = rank(Aᵀ) = rank(AᵀA) = rank(AAᵀ)`
-- `rank(A) ≤ min(m, n)` for `m Ãâ€â€� n` matrix
+- `rank(A) ≤ min(m, n)` for `m × n` matrix
 - `rank(A+B) ≤ rank(A) + rank(B)`
 - `rank(AB) ≤ min(rank(A), rank(B))`
 - `rank(A) = r` ⇒ nullity = `n - r` (rank-nullity theorem)
@@ -2323,7 +2323,7 @@ flowchart TD
 
 ```typescript
 /**
- * MatrixSolver â€â€� Linear Algebra Utility
+ * MatrixSolver — Linear Algebra Utility
  * ----------------------------------------
  * Performs common matrix operations relevant to GATE:
  * determinant, rank, matrix multiplication, and eigenvalue computation.
@@ -2412,7 +2412,7 @@ class MatrixSolver {
   }
 
   /**
-   * Compute eigenvalues (power iteration â€â€� dominant eigenvalue).
+   * Compute eigenvalues (power iteration — dominant eigenvalue).
    */
   dominantEigenvalue(iterations: number = 100): number {
     const n = this.getRows();
@@ -2519,4 +2519,4 @@ console.log(new MatrixSolver(MatrixSolver.multiply(A, B)).print());
 
 ---
 
-*End of Engineering Mathematics â€â€�" GATE CS Refresher. Extended with summary, TypeScript implementations, quiz, and exercises.*
+*End of Engineering Mathematics —" GATE CS Refresher. Extended with summary, TypeScript implementations, quiz, and exercises.*

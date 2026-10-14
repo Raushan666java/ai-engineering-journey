@@ -101,7 +101,7 @@ These three metrics are often confused by aspirants:
 - **GATE Score**: A normalized score between 0 and 1000, calculated using the formula:
 
 ```
-GATE Score = S_q + (S_t - S_q) Ãâ€â€� (M - M_q) / (M_t - M_q)
+GATE Score = S_q + (S_t - S_q) × (M - M_q) / (M_t - M_q)
 
 Where:
   M = marks obtained by candidate
@@ -115,7 +115,7 @@ Where:
 - **GATE Percentile**: Percentage of candidates you scored better than. Formula:
 
 ```
-Percentile = ((N - R) / N) Ãâ€â€� 100
+Percentile = ((N - R) / N) × 100
 Where N = total candidates, R = your rank
 ```
 
@@ -468,20 +468,20 @@ Level 2: fun(3), fun(2), fun(2), fun(1) → 4 calls  (wait, let me track careful
 Actually let's build the call tree:
 
 fun(5)
-ââ€�œââ€�€ââ€�€ fun(4)
-ââ€�‚   ââ€�œââ€�€ââ€�€ fun(3)
-ââ€�‚   ââ€�‚   ââ€�œââ€�€ââ€�€ fun(2)
-ââ€�‚   ââ€�‚   ââ€�‚   ââ€�œââ€�€ââ€�€ fun(1)  â†Â� base case
-ââ€�‚   ââ€�‚   ââ€�‚   ââ€�â€�ââ€�€ââ€�€ fun(0)  â†Â� base case
-ââ€�‚   ââ€�‚   ââ€�â€�ââ€�€ââ€�€ fun(1)      â†Â� base case
-ââ€�‚   ââ€�â€�ââ€�€ââ€�€ fun(2)
-ââ€�‚       ââ€�œââ€�€ââ€�€ fun(1)      â†Â� base case
-ââ€�‚       ââ€�â€�ââ€�€ââ€�€ fun(0)      â†Â� base case
-ââ€�â€�ââ€�€ââ€�€ fun(3)
-    ââ€�œââ€�€ââ€�€ fun(2)
-    ââ€�‚   ââ€�œââ€�€ââ€�€ fun(1)      â†Â� base case
-    ââ€�‚   ââ€�â€�ââ€�€ââ€�€ fun(0)      â†Â� base case
-    ââ€�â€�ââ€�€ââ€�€ fun(1)          â†Â� base case
+â—�œâ—�€â—�€ fun(4)
+â—�‚   â—�œâ—�€â—�€ fun(3)
+â—�‚   â—�‚   â—�œâ—�€â—�€ fun(2)
+â—�‚   â—�‚   â—�‚   â—�œâ—�€â—�€ fun(1)  â†Â� base case
+â—�‚   â—�‚   â—�‚   â—�—�â—�€â—�€ fun(0)  â†Â� base case
+â—�‚   â—�‚   â—�—�â—�€â—�€ fun(1)      â†Â� base case
+â—�‚   â—�—�â—�€â—�€ fun(2)
+â—�‚       â—�œâ—�€â—�€ fun(1)      â†Â� base case
+â—�‚       â—�—�â—�€â—�€ fun(0)      â†Â� base case
+â—�—�â—�€â—�€ fun(3)
+    â—�œâ—�€â—�€ fun(2)
+    â—�‚   â—�œâ—�€â—�€ fun(1)      â†Â� base case
+    â—�‚   â—�—�â—�€â—�€ fun(0)      â†Â� base case
+    â—�—�â—�€â—�€ fun(1)          â†Â� base case
 
 Counting all calls (including initial):
 fun(5), fun(4), fun(3), fun(2), fun(1), fun(0)
@@ -491,9 +491,9 @@ fun(1)
 
 Total = 15 (including the initial call)
 
-Verification: For Fibonacci recursion, number of calls = 2Ãâ€â€�F(n+1) - 1
+Verification: For Fibonacci recursion, number of calls = 2×F(n+1) - 1
 where F(0)=0, F(1)=1, F(2)=1, F(3)=2, F(4)=3, F(5)=5, F(6)=8
-Calls = 2Ãâ€â€�F(6) - 1 = 2Ãâ€â€�8 - 1 = 15 ✓
+Calls = 2×F(6) - 1 = 2×8 - 1 = 15 ✓
 
 Answer: 15
 ```
@@ -706,7 +706,7 @@ L3 = {a^n b^n c^n | n ≥ 1}
 - With one stack: push a's, pop with b's → then we have nothing left to match c's
 - Requires two simultaneous counts → needs a context-sensitive grammar
 - This is a classic non-context-free language (proved by pumping lemma)
-- Therefore L3 is NOT context-free âœâ€â€�
+- Therefore L3 is NOT context-free âœ—
 
 Step 2: Conclusion
 Only L1 and L2 are context-free.
@@ -734,21 +734,21 @@ frame size required to detect collisions using CSMA/CD?
 
 **Solution (Step-by-Step):**
 ```
-In CSMA/CD, the minimum frame size must be at least 2 Ãâ€â€� propagation delay
+In CSMA/CD, the minimum frame size must be at least 2 × propagation delay
 worth of transmission time, so that the sender is still transmitting when
 a collision signal returns.
 
 Given:
-Bandwidth = 10 Mbps = 10 Ãâ€â€� 10^6 bps
-Propagation delay (Tp) = 25.6 microseconds = 25.6 Ãâ€â€� 10^-6 seconds
+Bandwidth = 10 Mbps = 10 × 10^6 bps
+Propagation delay (Tp) = 25.6 microseconds = 25.6 × 10^-6 seconds
 
 Step 1: Calculate the round-trip time (RTT)
-RTT = 2 Ãâ€â€� Tp = 2 Ãâ€â€� 25.6 = 51.2 microseconds
+RTT = 2 × Tp = 2 × 25.6 = 51.2 microseconds
 
 Step 2: Calculate minimum frame size
-Minimum bits = Bandwidth Ãâ€â€� RTT
-Minimum bits = 10 Ãâ€â€� 10^6 Ãâ€â€� 51.2 Ãâ€â€� 10^-6
-Minimum bits = 10 Ãâ€â€� 51.2
+Minimum bits = Bandwidth × RTT
+Minimum bits = 10 × 10^6 × 51.2 × 10^-6
+Minimum bits = 10 × 51.2
 Minimum bits = 512 bits
 
 Step 3: Convert to bytes
@@ -1016,7 +1016,7 @@ Inputs A3, A2 are connected to the first-level decoder
 A3, A2 → 2-to-4 decoder → 4 enable lines
 Each enable line connects to one of 4 second-level decoders
 Each second-level decoder takes A1, A0 as inputs and produces 4 outputs
-Total: 4 Ãâ€â€� 4 = 16 outputs ✓
+Total: 4 × 4 = 16 outputs ✓
 
 Answer: (B) 5
 
@@ -1038,7 +1038,7 @@ enable decoder. Always include the top-level decoder.
 | **Trace vs determinant** | Eigenvalue properties | Trace = sum, det = product |
 | **Decoder hierarchy** | Missing enable decoder | Draw the tree |
 | **Hamiltonian cycles** | Rotation vs reversal | Read problem carefully |
-| **CSMA/CD formula** | Forgetting 2Ãâ€â€� | RTT = 2 Ãâ€â€� propagation delay |
+| **CSMA/CD formula** | Forgetting 2× | RTT = 2 × propagation delay |
 
 ### Time Management Tips Per Question Type
 
@@ -1137,22 +1137,22 @@ SCHEDULING:
   Round Robin: Time quantum q → (n-1)q max wait per round
 
 MEMORY MANAGEMENT:
-  Effective Access Time (EAT) = Hit Ãâ€â€� TLB_Access + Miss Ãâ€â€� Page_Fault_Time
+  Effective Access Time (EAT) = Hit × TLB_Access + Miss × Page_Fault_Time
   Page fault rate: p
-  EAT = (1-p) Ãâ€â€� memory_access + p Ãâ€â€� page_fault_service_time
+  EAT = (1-p) × memory_access + p × page_fault_service_time
 
   Optimal page replacement → highest future reference
 
 DISK SCHEDULING:
-  Seek time = head movement Ãâ€â€� seek_cost
+  Seek time = head movement × seek_cost
   FCFS → SSTF → SCAN (elevator) → C-SCAN → LOOK → C-LOOK
 
 â•Â�â•Â�â•Â� COMPUTER NETWORKS → QUICK FORMULAS â•Â�â•Â�â•Â�
 
   Throughput (CSMA/CD) = 1 / (1 + 6.44a) where a = Tp/Tt
-  Minimum frame size = 2 Ãâ€â€� Tp Ãâ€â€� Bandwidth
+  Minimum frame size = 2 × Tp × Bandwidth
 
-  TCP throughput ≈ MSS Ãâ€â€� sqrt(3/2) / (RTT Ãâ€â€� sqrt(p))
+  TCP throughput ≈ MSS × sqrt(3/2) / (RTT × sqrt(p))
   Where p = packet loss rate
 
   Efficiency of Stop-and-Wait = 1 / (1 + 2a)
@@ -1161,12 +1161,12 @@ DISK SCHEDULING:
 â•Â�â•Â�â•Â� COMPUTER ORGANIZATION → QUICK FORMULAS â•Â�â•Â�â•Â�
 
   Speedup (Pipeline) = Non-pipelined_time / Pipelined_time_per_instruction
-  Speedup = n / (1 + (n-1) Ãâ€â€� stall_probability)
+  Speedup = n / (1 + (n-1) × stall_probability)
 
-  Cache: EAT = Hit_Rate Ãâ€â€� Hit_Time + Miss_Rate Ãâ€â€� Miss_Penalty
-  AMAT = Hit time + Miss rate Ãâ€â€� Miss penalty
+  Cache: EAT = Hit_Rate × Hit_Time + Miss_Rate × Miss_Penalty
+  AMAT = Hit time + Miss rate × Miss penalty
 
-  Cache mapping: number of blocks mapping to a set = cache_size / (set_size Ãâ€â€� block_size)
+  Cache mapping: number of blocks mapping to a set = cache_size / (set_size × block_size)
 ```
 
 ### Last Week Preparation (7 Days Before Exam)
@@ -1333,14 +1333,14 @@ What is the time complexity of T(n)?
 ```
 Step 1: Use recursion tree method.
 At root: cost = n
-Level 1: n/2 + n/4 + n/8 = n Ãâ€â€� (1/2 + 1/4 + 1/8) = n Ãâ€â€� 7/8
+Level 1: n/2 + n/4 + n/8 = n × (1/2 + 1/4 + 1/8) = n × 7/8
 Level 2: each node of n/2 gives n/4 + n/8 + n/16, etc.
-         Total = n Ãâ€â€� (7/8)²
+         Total = n × (7/8)²
 
 Step 2: Geometric series
-Total work = n Ãâ€â€� [1 + 7/8 + (7/8)² + (7/8)³ + ...]
+Total work = n × [1 + 7/8 + (7/8)² + (7/8)³ + ...]
 
-Step 3: Sum = n Ãâ€â€� 1/(1 - 7/8) = n Ãâ€â€� 8 = 8n
+Step 3: Sum = n × 1/(1 - 7/8) = n × 8 = 8n
 
 Step 4: Since the series converges, T(n) = Θ(n)
 
@@ -1410,17 +1410,17 @@ Step 3: Insert 58: h1(58) = 58 mod 7 = 2 → index 2 (empty)
 Step 4: Insert 17: h1(17) = 17 mod 7 = 3 → index 3 (empty)
 Step 5: Insert 15: h1(15) = 15 mod 7 = 1 → occupied!
          h2(15) = 1 + (15 mod 5) = 1 + 0 = 1
-         Probe: (1 + 1Ãâ€â€�1) mod 7 = 2 → occupied
-                (1 + 2Ãâ€â€�1) mod 7 = 3 → occupied
-                (1 + 3Ãâ€â€�1) mod 7 = 4 → empty! Insert at 4.
+         Probe: (1 + 1×1) mod 7 = 2 → occupied
+                (1 + 2×1) mod 7 = 3 → occupied
+                (1 + 3×1) mod 7 = 4 → empty! Insert at 4.
 Step 6: Insert 49: h1(49) = 49 mod 7 = 0 → occupied!
          h2(49) = 1 + (49 mod 5) = 1 + 4 = 5
-         Probe: (0 + 1Ãâ€â€�5) mod 7 = 5 → empty! Insert at 5.
+         Probe: (0 + 1×5) mod 7 = 5 → empty! Insert at 5.
 Step 7: Insert 56: h1(56) = 56 mod 7 = 0 → occupied!
          h2(56) = 1 + (56 mod 5) = 1 + 1 = 2
-         Probe: (0 + 1Ãâ€â€�2) mod 7 = 2 → occupied
-                (0 + 2Ãâ€â€�2) mod 7 = 4 → occupied
-                (0 + 3Ãâ€â€�2) mod 7 = 6 → empty! Insert at 6.
+         Probe: (0 + 1×2) mod 7 = 2 → occupied
+                (0 + 2×2) mod 7 = 4 → occupied
+                (0 + 3×2) mod 7 = 6 → empty! Insert at 6.
 
 Answer: (D) 3 → wait, 56 was inserted at index 6.
 Actually, let me re-check the options. Index of 56 is 6.
@@ -1496,7 +1496,7 @@ Step 2: Analysis of options:
 (B) Inorder successor → valid replacement ✓
 (C) Parent of inorder successor → this is NOT a valid replacement.
       The parent of the successor is not necessarily the next
-      node in sorted order after 50. âœâ€â€�
+      node in sorted order after 50. âœ—
 (D) Left child → valid only if left child is the predecessor,
       which it may be if left child has no right subtree.
       But as a general statement, the left child could be
@@ -1855,8 +1855,8 @@ access time (EMAT) assuming a single-level page table?
 **Solution (Step-by-Step):**
 ```
 Step 1: EMAT formula with TLB:
-EMAT = Hit_Rate Ãâ€â€� (TLB_Time + Memory_Access)
-       + Miss_Rate Ãâ€â€� (TLB_Time + Page_Table_Access + Memory_Access)
+EMAT = Hit_Rate × (TLB_Time + Memory_Access)
+       + Miss_Rate × (TLB_Time + Page_Table_Access + Memory_Access)
 
 With single-level page table, page table access = 1 memory access.
 
@@ -1865,8 +1865,8 @@ Hit rate = 0.90, Miss rate = 0.10
 TLB time = 20 ns
 Memory access = 100 ns
 
-EMAT = 0.90 Ãâ€â€� (20 + 100) + 0.10 Ãâ€â€� (20 + 100 + 100)
-     = 0.90 Ãâ€â€� 120 + 0.10 Ãâ€â€� 220
+EMAT = 0.90 × (20 + 100) + 0.10 × (20 + 100 + 100)
+     = 0.90 × 120 + 0.10 × 220
      = 108 + 22
      = 130 ns
 
@@ -1900,20 +1900,20 @@ Step 1: Number of pointers per block = Block size / Pointer size
 = 4096 / 4 = 1024 pointers per block
 
 Step 2: Data accessible through each pointer type:
-Direct blocks: 10 Ãâ€â€� 4 KB = 40 KB
+Direct blocks: 10 × 4 KB = 40 KB
 
-Single indirect: 1 block Ãâ€â€� 1024 pointers Ãâ€â€� 4 KB = 4 MB
+Single indirect: 1 block × 1024 pointers × 4 KB = 4 MB
 
 Double indirect: 1 block → 1024 single-indirect blocks
-→ 1024 Ãâ€â€� 1024 Ãâ€â€� 4 KB = 4 GB
+→ 1024 × 1024 × 4 KB = 4 GB
 
 Triple indirect: 1 block → 1024 double-indirect blocks
-→ 1024 Ãâ€â€� 4 GB = 4 TB
+→ 1024 × 4 GB = 4 TB
 
 Wait, let me recalculate:
 Triple indirect: 1 block → 1024 pointers to double-indirect blocks
-Each double-indirect → 1024² Ãâ€â€� 4 KB = 4 GB
-Triple indirect = 1024 Ãâ€â€� 4 GB = 4 TB
+Each double-indirect → 1024² × 4 KB = 4 GB
+Triple indirect = 1024 × 4 GB = 4 TB
 
 Step 3: Maximum file size = Direct + Single + Double + Triple
 = 40 KB + 4 MB + 4 GB + 4 TB
@@ -1931,10 +1931,10 @@ block sizes or pointer sizes. Let me adjust the numbers.
 Actually, with block size = 4 KB and pointer = 4 bytes:
 Number of pointers per block = 4096/4 = 1024 = 2¹âÂÂ�°
 
-Direct: 10 Ãâ€â€� 4 KB = 40 KB
-Single indirect: 2¹âÂÂ�° Ãâ€â€� 4 KB = 4 MB
-Double indirect: 2¹âÂÂ�° Ãâ€â€� 2¹âÂÂ�° Ãâ€â€� 4 KB = 4 GB
-Triple indirect: 2¹âÂÂ�° Ãâ€â€� 2¹âÂÂ�° Ãâ€â€� 2¹âÂÂ�° Ãâ€â€� 4 KB = 4 TB
+Direct: 10 × 4 KB = 40 KB
+Single indirect: 2¹âÂÂ�° × 4 KB = 4 MB
+Double indirect: 2¹âÂÂ�° × 2¹âÂÂ�° × 4 KB = 4 GB
+Triple indirect: 2¹âÂÂ�° × 2¹âÂÂ�° × 2¹âÂÂ�° × 4 KB = 4 TB
 
 Total ≈ 4 TB
 
@@ -1988,13 +1988,13 @@ computes average salary of employees in that department.
 Compares with budget. ✓ Correct syntax and logic.
 
 Option (B): AVG(e.salary) is incorrectly placed in WHERE clause
-without being in a subquery. SQL syntax error. âœâ€â€�
+without being in a subquery. SQL syntax error. âœ—
 
 Option (C): AVG in WHERE clause without HAVING. Aggregate
-functions can't be used directly in WHERE. âœâ€â€�
+functions can't be used directly in WHERE. âœ—
 
 Option (D): Subquery computes overall AVG across all employees,
-not per-department average. No correlation. âœâ€â€�
+not per-department average. No correlation. âœ—
 
 Step 2: Option (A) is the correct correlated subquery pattern.
 For each tuple in Department d, the inner query computes the
@@ -2032,9 +2032,9 @@ So candidate keys = {AB}
 Step 2: Check BCNF:
 For BCNF, LHS of every FD must be a superkey.
 AB → C: AB is a CK → OK ✓
-C → D: C is NOT a superkey → violates BCNF âœâ€â€�
-D → B: D is NOT a superkey → violates BCNF âœâ€â€�
-D → E: D is NOT a superkey → violates BCNF âœâ€â€�
+C → D: C is NOT a superkey → violates BCNF âœ—
+D → B: D is NOT a superkey → violates BCNF âœ—
+D → E: D is NOT a superkey → violates BCNF âœ—
 Not in BCNF.
 
 Step 3: Check 3NF:
@@ -2043,7 +2043,7 @@ Y is part of a candidate key.
 
 AB → C: AB is CK → OK ✓
 C → D: C not superkey. Is D part of a CK? CK = {AB}, D ∉ AB.
-        D is not prime attribute. Violates 3NF. âœâ€â€�
+        D is not prime attribute. Violates 3NF. âœ—
 
 Answer: (B) 2NF
 
@@ -2122,14 +2122,14 @@ Some GATE problems define order as the maximum number of keys
 per node. If order = 3 means max 3 keys per node:
 
 Root (h=0): 3 keys
-Level 1: max 4 children Ãâ€â€� 3 keys = 12
-Level 2: max 4² = 16 children Ãâ€â€� 3 keys = 48
+Level 1: max 4 children × 3 keys = 12
+Level 2: max 4² = 16 children × 3 keys = 48
 
 Nope. Let me try: order = 3 means max 3 pointers:
 
 Root: 2 keys, 3 children
-Level 1: 3 nodes Ãâ€â€� 2 keys = 6 keys
-Level 2: 9 nodes Ãâ€â€� 2 keys = 18 keys
+Level 1: 3 nodes × 2 keys = 6 keys
+Level 2: 9 nodes × 2 keys = 18 keys
 Total up to here: 2+6+18 = 26
 
 Still not matching. The exact computation depends on how
@@ -2199,7 +2199,7 @@ Which relational algebra expression finds students enrolled in
 ALL courses?
 
 (A) ÃÂ�€_sid(Enrolled) ÷ ÃÂ�€_cid(Course)
-(B) ÃÂ�€_sid(Enrolled) Ãâ€â€� ÃÂ�€_cid(Course)
+(B) ÃÂ�€_sid(Enrolled) × ÃÂ�€_cid(Course)
 (C) ÃÂ�ƒ_count(cid)=total(ÃÂ�€_sid,cid(Enrolled))
 (D) ÃÂ�€_sid(Enrolled) − (ÃÂ�€_sid(Enrolled) − ÃÂ�€_cid(Course))
 ```
@@ -2218,10 +2218,10 @@ This gives: sid values that appear with EVERY cid in Course.
 
 Step 2: Check options:
 (A) Correct use of division operator ✓
-(B) Cross product → doesn't give the answer âœâ€â€�
-(C) Not valid relational algebra (aggregation is extended RA) âœâ€â€�
+(B) Cross product → doesn't give the answer âœ—
+(C) Not valid relational algebra (aggregation is extended RA) âœ—
 (D) Set difference alone is wrong → it's missing the projection
-    needed for the division pattern âœâ€â€�
+    needed for the division pattern âœ—
 
 Step 3: Full correct expression:
 ÃÂ�€_sid,cid(Enrolled) ÷ ÃÂ�€_cid(Course)
@@ -2336,25 +2336,25 @@ Data with zeros: 101101000
 
 Step 2: Binary division (XOR, no carry):
         110101
-    ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€
+    â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€
 1101 | 101101000
        1101
-       ââ€�€ââ€�€ââ€�€ââ€�€
+       â—�€â—�€â—�€â—�€
         1100
         1101
-        ââ€�€ââ€�€ââ€�€ââ€�€
+        â—�€â—�€â—�€â—�€
          0110
          0000
-         ââ€�€ââ€�€ââ€�€ââ€�€
+         â—�€â—�€â—�€â—�€
           1100
           1101
-          ââ€�€ââ€�€ââ€�€ââ€�€
+          â—�€â—�€â—�€â—�€
            0100
            0000
-           ââ€�€ââ€�€ââ€�€ââ€�€
+           â—�€â—�€â—�€â—�€
             1000
             1101
-            ââ€�€ââ€�€ââ€�€ââ€�€
+            â—�€â—�€â—�€â—�€
              101  â†Â� remainder (CRC)
 
 Step 3: Transmitted codeword = data + CRC
@@ -2429,7 +2429,7 @@ Step 1: HTTP/1.1 persistent connection:
 All requests are sent over a single TCP connection.
 
 Step 2: Initial connection: 1 RTT for TCP handshake
-(SYN, SYN-ACK, ACK) = 1 Ãâ€â€� 100 ms = 100 ms
+(SYN, SYN-ACK, ACK) = 1 × 100 ms = 100 ms
 
 Step 3: Request base HTML file:
 1 RTT (request + response) = 100 ms
@@ -2444,13 +2444,13 @@ But with pipelining, requests can be sent without waiting:
 1 RTT to send all requests and receive all responses.
 
 Actually, in HTTP/1.1 persistent without pipelining:
-Each image: 1 RTT = 100 ms per image → 10 Ãâ€â€� 100 = 1000 ms
+Each image: 1 RTT = 100 ms per image → 10 × 100 = 1000 ms
 
 With pipelining (default in many HTTP/1.1 implementations):
 All images fetched in 1 additional RTT.
 
 So total with pipelining:
-= 1 (handshake) + 1 (HTML) + 1 (all images) = 3 Ãâ€â€� 100 = 300 ms
+= 1 (handshake) + 1 (HTML) + 1 (all images) = 3 × 100 = 300 ms
 
 Answer: (D) 0.3 s
 
@@ -2549,11 +2549,11 @@ Any string with a 0 is accepted. Equivalent. ✓
 (II) (0+1)* 0 (0+1)* 0 (0+1)*
 This requires at least two 0s. Strings with exactly one
 0 (e.g., "0", "10", "01") are NOT accepted.
-Not equivalent. âœâ€â€�
+Not equivalent. âœ—
 
 (III) (0+1)* 0
 This requires strings ending with 0. Strings like "01"
-do NOT end with 0. Not equivalent. âœâ€â€�
+do NOT end with 0. Not equivalent. âœ—
 
 Step 3: Only option (I) is equivalent.
 
@@ -2764,7 +2764,7 @@ Rice's theorem applies. Undecidable. ✓
 (III) "Does a TM have at least 5 states?" → This is a
 syntactic property, not a semantic one. It does not depend
 on the language recognized. We can count the states by
-examining the TM description. Decidable. âœâ€â€�
+examining the TM description. Decidable. âœ—
 
 Step 3: I and II are undecidable.
 
@@ -2849,14 +2849,14 @@ The grammar is left-recursive, which is fine for LR parsing.
 
 Step 2: Parse tree (bottom-up evaluation):
 E → E + T (the topmost +)
-ââ€�œââ€�€ââ€�€ E → E + T  (the first +)
-ââ€�‚   ââ€�œââ€�€ââ€�€ E → T → 3 {T.val = 3, E.val = 3}
-ââ€�‚   ââ€�œââ€�€ââ€�€ +
-ââ€�‚   ââ€�â€�ââ€�€ââ€�€ T → 5 {T.val = 5}
-ââ€�‚   ââ€�â€�ââ€�€ââ€�€ E.val = 3 + 5 = 8
-ââ€�œââ€�€ââ€�€ +
-ââ€�â€�ââ€�€ââ€�€ T → 2 {T.val = 2}
-ââ€�â€�ââ€�€ââ€�€ E.val = 8 + 2 = 10
+â—�œâ—�€â—�€ E → E + T  (the first +)
+â—�‚   â—�œâ—�€â—�€ E → T → 3 {T.val = 3, E.val = 3}
+â—�‚   â—�œâ—�€â—�€ +
+â—�‚   â—�—�â—�€â—�€ T → 5 {T.val = 5}
+â—�‚   â—�—�â—�€â—�€ E.val = 3 + 5 = 8
+â—�œâ—�€â—�€ +
+â—�—�â—�€â—�€ T → 2 {T.val = 2}
+â—�—�â—�€â—�€ E.val = 8 + 2 = 10
 
 Step 3: Evaluation proceeds bottom-up:
 First: 3+5 is evaluated → 8
@@ -2873,7 +2873,7 @@ reduced (bottom-up). Left associativity is preserved.
 
 ```
 Q: How many temporary variables are needed for the three-address
-code of the expression: a + b Ãâ€â€� c − d / e?
+code of the expression: a + b × c − d / e?
 
 (A) 2
 (B) 3
@@ -2883,17 +2883,17 @@ code of the expression: a + b Ãâ€â€� c − d / e?
 
 **Solution (Step-by-Step):**
 ```
-Step 1: Operator precedence: Ãâ€â€� and / before + and −.
-a + b Ãâ€â€� c − d / e = a + (b Ãâ€â€� c) − (d / e)
+Step 1: Operator precedence: × and / before + and −.
+a + b × c − d / e = a + (b × c) − (d / e)
 
 Step 2: Generate three-address code:
-t1 = b Ãâ€â€� c     (temporary 1)
+t1 = b × c     (temporary 1)
 t2 = d / e     (temporary 2)
 t3 = a + t1    (temporary 3)
 t4 = t3 − t2   (temporary 4, result)
 
 Wait → can we reuse temporaries?
-t1 = b Ãâ€â€� c
+t1 = b × c
 t2 = d / e
 t1 = a + t1    (reuse t1 instead of t3)
 t1 = t1 − t2   (reuse t1 for final result)
@@ -2919,7 +2919,7 @@ reuse unless specified.
 ```
 Q: Given the grammar:
 E → E + T | T
-T → T Ãâ€â€� F | F
+T → T × F | F
 F → (E) | id
 
 After eliminating left recursion, the production for E is:
@@ -3168,16 +3168,16 @@ Step 3: Check options:
     = (S1'S0 + S1S0')Q' + (S1'S0 + S1S0')'Q
     = S1'S0Q' + S1S0'Q' + (S1S0 + S1'S0')Q
     = S1'S0Q' + S1S0'Q' + S1S0Q + S1'S0'Q
-    This doesn't match our expression. âœâ€â€�
+    This doesn't match our expression. âœ—
 
 (B) Direct match: S1'S0' + S1S0'Q + S1S0Q'
     Yes, this matches exactly! ✓
 
 (C) (S1⊕S0)Q + S1S0Q' = (S1'S0 + S1S0')Q + S1S0Q'
     = S1'S0Q + S1S0'Q + S1S0Q'
-    Missing S1'S0' term. âœâ€â€�
+    Missing S1'S0' term. âœ—
 
-(D) S1' + S0Q' doesn't match the SOP form. âœâ€â€�
+(D) S1' + S0Q' doesn't match the SOP form. âœ—
 
 Answer: (B)
 
@@ -3294,23 +3294,23 @@ Choose the repeated letter: M(0→can't repeat), I(4), S(4), P(2)
 Repeated letter can be I, S, or P (3 choices)
 Choose 2 distinct letters from remaining 3: C(3,2) = 3
 Arrange: 4! / 2! = 12
-Total = 3 Ãâ€â€� 3 Ãâ€â€� 12 = 108
+Total = 3 × 3 × 12 = 108
 
 Case 3: 2 letters same, 2 letters same (2 pairs)
 Choose 2 letters from {I, S, P} (I,S), (I,P), (S,P): C(3,2) = 3
-Arrange: 4! / (2! Ãâ€â€� 2!) = 6
-Total = 3 Ãâ€â€� 6 = 18
+Arrange: 4! / (2! × 2!) = 6
+Total = 3 × 6 = 18
 
 Case 4: 3 letters same, 1 different
 Repeated letter: I or S (need at least 3 occurrences) → 2 choices
 Different letter from remaining 3: 3 choices
 Arrange: 4! / 3! = 4
-Total = 2 Ãâ€â€� 3 Ãâ€â€� 4 = 24
+Total = 2 × 3 × 4 = 24
 
 Case 5: All 4 same
 Only I and S have 4 occurrences: 2 choices
 Arrange: only 1 way (all same)
-Total = 2 Ãâ€â€� 1 = 2
+Total = 2 × 1 = 2
 
 Step 3: Sum all cases:
 24 + 108 + 18 + 24 + 2 = 176
@@ -3353,7 +3353,7 @@ then Q must be true. Tautology. ✓
 (D) (P ∨ Q) → (P ∧ Q)
 Is this always true? Let's check:
 When P=True, Q=False: P∨Q=True, P∧Q=False → T→F = False
-Counterexample found! Not a tautology. âœâ€â€�
+Counterexample found! Not a tautology. âœ—
 
 Answer: (D)
 
@@ -3484,12 +3484,12 @@ Step 2: Number of non-zero rows after row reduction = 1.
 Rank = 1
 
 Step 3: Verification: Every row is a scalar multiple of
-the first row (R2 = 2Ãâ€â€�R1, R3 = 3Ãâ€â€�R1). All rows are
+the first row (R2 = 2×R1, R3 = 3×R1). All rows are
 linearly dependent. Only one linearly independent row.
 
 Answer: (B) 1
 
-Common Trap: Just because the matrix is 3Ãâ€â€�3 doesn't mean
+Common Trap: Just because the matrix is 3×3 doesn't mean
 rank is 3. Always check linear dependence of rows/columns.
 This matrix has rank 1 → all rows are multiples of [1,2,3].
 ```
@@ -3497,7 +3497,7 @@ This matrix has rank 1 → all rows are multiples of [1,2,3].
 #### Problem 50: Eigenvalues of a Matrix (GATE 2022)
 
 ```
-Q: A 3Ãâ€â€�3 matrix A has eigenvalues 1, 2, and 3. What are the
+Q: A 3×3 matrix A has eigenvalues 1, 2, and 3. What are the
 eigenvalues of AâÂÂ�»¹ (inverse of A)?
 
 (A) 1, 1/2, 1/3
@@ -3845,7 +3845,7 @@ Mock #: ___   Score: ___/100   Time: ___ minutes
 
 SUBJECT BREAKDOWN:
 Subject          | Attempted | Correct | Wrong | Score
-ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€|ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€|ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€|ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€|ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€ââ€�€
+â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€|â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€|â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€â—�€|â—�€â—�€â—�€â—�€â—�€â—�€â—�€|â—�€â—�€â—�€â—�€â—�€â—�€â—�€
 General Aptitude |           |         |       |
 DSA              |           |         |       |
 OS               |           |         |       |
@@ -4492,7 +4492,7 @@ Answer: A
 ### Digital Logic (Q87-Q90)
 
 
-#### Q87 (GATE 2015) â€â€ÂÂ� XOR Using NAND
+#### Q87 (GATE 2015) ——ÂÂ� XOR Using NAND
 
 Minimum number of NAND gates to implement XOR?
 (A) 2  (B) 3  (C) 4  (D) 5
@@ -4504,7 +4504,7 @@ Answer: C
 
 ---
 
-#### Q88 (GATE 2016) â€â€ÂÂ� MUX Tree
+#### Q88 (GATE 2016) ——ÂÂ� MUX Tree
 
 How many 2:1 multiplexers are needed to implement a 4:1 multiplexer?
 (A) 2  (B) 3  (C) 4  (D) 5
@@ -4519,7 +4519,7 @@ Answer: B
 
 ---
 
-#### Q89 (GATE 2017) â€â€ÂÂ� Ring Counter States
+#### Q89 (GATE 2017) ——ÂÂ� Ring Counter States
 
 Number of distinguishable states in a 3-bit ring counter:
 (A) 3  (B) 4  (C) 6  (D) 8
@@ -4535,7 +4535,7 @@ Answer: A
 
 ---
 
-#### Q90 (GATE 2018) â€â€ÂÂ� Boolean Simplification
+#### Q90 (GATE 2018) ——ÂÂ� Boolean Simplification
 
 (A + B)(A' + C) simplifies to:
 (A) A + BC  (B) AC + AB  (C) A + B'C  (D) AC + A'B
@@ -4553,7 +4553,7 @@ Answer: D
 ### Discrete Mathematics (Q91-Q95)
 
 
-#### Q91 (GATE 2015) â€â€ÂÂ� Counting: Balls into Boxes
+#### Q91 (GATE 2015) ——ÂÂ� Counting: Balls into Boxes
 
 5 distinct balls into 3 distinct boxes. Number of ways?
 (A) 3^5  (B) 5^3  (C) C(5,3)  (D) P(5,3)
@@ -4565,7 +4565,7 @@ Answer: A
 
 ---
 
-#### Q92 (GATE 2016) â€â€ÂÂ� Equivalence Relation
+#### Q92 (GATE 2016) ——ÂÂ� Equivalence Relation
 
 R = {(x, y) | x - y is divisible by 3} on integers. Which is true?
 (A) Reflexive but not transitive  (B) Symmetric but not reflexive  (C) Equivalence relation  (D) Transitive but not symmetric
@@ -4580,7 +4580,7 @@ Answer: C
 
 ---
 
-#### Q93 (GATE 2017) â€â€ÂÂ� Complete Graph Edges
+#### Q93 (GATE 2017) ——ÂÂ� Complete Graph Edges
 
 Number of edges in a complete graph K7:
 (A) 21  (B) 28  (C) 42  (D) 49
@@ -4592,7 +4592,7 @@ Answer: A
 
 ---
 
-#### Q94 (GATE 2018) â€â€ÂÂ� Planar Graph Check
+#### Q94 (GATE 2018) ——ÂÂ� Planar Graph Check
 
 Simple graph with 10 vertices, 36 edges. Which is true?
 (A) Planar  (B) Non-planar  (C) Eulerian  (D) Hamiltonian
@@ -4604,7 +4604,7 @@ Answer: B
 
 ---
 
-#### Q95 (GATE 2019) â€â€ÂÂ� Probability: Divisibility
+#### Q95 (GATE 2019) ——ÂÂ� Probability: Divisibility
 
 Random integer from {1, 2, ..., 100}. Probability divisible by 2 or 3?
 (A) 2/3  (B) 1/2  (C) 67/100  (D) 83/100
@@ -4623,7 +4623,7 @@ Answer: C
 ### Linear Algebra (Q96-Q98)
 
 
-#### Q96 (GATE 2015) â€â€ÂÂ� Matrix Rank
+#### Q96 (GATE 2015) ——ÂÂ� Matrix Rank
 
 Rank of [[1, 2], [2, 4]]:
 (A) 0  (B) 1  (C) 2  (D) 3
@@ -4635,7 +4635,7 @@ Answer: B
 
 ---
 
-#### Q97 (GATE 2017) â€â€ÂÂ� Determinant of Scalar Multiple
+#### Q97 (GATE 2017) ——ÂÂ� Determinant of Scalar Multiple
 
 A is 3x3 with |A| = 2. What is |2A|?
 (A) 4  (B) 8  (C) 16  (D) 32
@@ -4647,7 +4647,7 @@ Answer: C
 
 ---
 
-#### Q98 (GATE 2018) â€â€ÂÂ� Determinant Product
+#### Q98 (GATE 2018) ——ÂÂ� Determinant Product
 
 A and B are 3x3 matrices with |A| = 2 and |B| = 3. What is |AB|?
 (A) 5  (B) 6  (C) 9  (D) 12
@@ -4662,7 +4662,7 @@ Answer: B
 ### General Aptitude (Q99-Q100)
 
 
-#### Q99 (GATE 2015) â€â€ÂÂ� Speed Conversion
+#### Q99 (GATE 2015) ——ÂÂ� Speed Conversion
 
 A 150 m long train passes a pole in 15 seconds. Speed in km/h?
 (A) 36  (B) 45  (C) 54  (D) 60
@@ -4676,7 +4676,7 @@ Answer: A
 
 ---
 
-#### Q100 (GATE 2017) â€â€ÂÂ� Number Series
+#### Q100 (GATE 2017) ——ÂÂ� Number Series
 
 Next number in series: 2, 6, 12, 20, 30, ___?
 (A) 36  (B) 40  (C) 42  (D) 48
@@ -5084,7 +5084,7 @@ Let p = probability of correct, V = marks for correct, P = penalty for wrong.
 
 ## Summary
 
-This comprehensive GATE CS strategy guide covers exam structure, subject-wise weightage analysis, time management, 100 solved PYQs (2010-2025), and targeted trap analysis for all core subjects. The GATE CS paper distributes ~100 marks across General Aptitude (15%), Engineering Mathematics (~15%), and core CS subjects (~70%) including Data Structures & Algorithms, Operating Systems, DBMS, Computer Networks, Computer Architecture, Theory of Computation, Compiler Design, and Digital Logic. The strategy emphasizes the Pareto principle â€â€� 80% of marks come from 6-7 high-weight subjects that should be prioritized. Key strategic elements include solving PYQs chronologically, maintaining an error log, practicing NAT (numerical answer type) questions, and using the 90-second rule for time management. A disciplined 4-6 month study plan with weekly mock tests and targeted revision cycles can reliably yield a top 500 AIR.
+This comprehensive GATE CS strategy guide covers exam structure, subject-wise weightage analysis, time management, 100 solved PYQs (2010-2025), and targeted trap analysis for all core subjects. The GATE CS paper distributes ~100 marks across General Aptitude (15%), Engineering Mathematics (~15%), and core CS subjects (~70%) including Data Structures & Algorithms, Operating Systems, DBMS, Computer Networks, Computer Architecture, Theory of Computation, Compiler Design, and Digital Logic. The strategy emphasizes the Pareto principle — 80% of marks come from 6-7 high-weight subjects that should be prioritized. Key strategic elements include solving PYQs chronologically, maintaining an error log, practicing NAT (numerical answer type) questions, and using the 90-second rule for time management. A disciplined 4-6 month study plan with weekly mock tests and targeted revision cycles can reliably yield a top 500 AIR.
 
 ```mermaid
 flowchart TD
@@ -5111,7 +5111,7 @@ flowchart TD
 
 ```typescript
 /**
- * GATEStudyPlanner â€â€� Study Schedule Optimizer
+ * GATEStudyPlanner — Study Schedule Optimizer
  * ----------------------------------------------
  * Creates an optimized study plan based on subject weightage,
  * difficulty, and available days before the exam.
@@ -5290,6 +5290,6 @@ console.log(planner.generatePlan());
 
 ---
 
-*End of GATE CS Exam Strategy â€â€� Complete Preparation Guide. Extended with summary, TypeScript implementations, quiz, and exercises.*
+*End of GATE CS Exam Strategy — Complete Preparation Guide. Extended with summary, TypeScript implementations, quiz, and exercises.*
 
 

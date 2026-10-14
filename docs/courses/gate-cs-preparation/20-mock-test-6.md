@@ -163,7 +163,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q10 (1 Mark):** What is the unit digit of 239 Ãâ€â€� 347 Ãâ€â€� 456 Ãâ€â€� 578?
+**Q10 (1 Mark):** What is the unit digit of 239 × 347 × 456 × 578?
 
 (A) 0
 (B) 2
@@ -619,33 +619,33 @@ Which conclusion(s) logically follow(s)?
 
 **Q9:** Comparing codes 1 and 2, "well" appears in both with code "ne". In code 2, "well done" = "ne ka", so "done" = "ka". Code 3 is a distractor.
 
-**Q10:** Unit digits: 239→9, 347→7, 456→6, 578→8. 9Ãâ€â€�7=63 (unit 3), 3Ãâ€â€�6=18 (unit 8), 8Ãâ€â€�8=64 (unit 4). The unit digit of the product is 4.
+**Q10:** Unit digits: 239→9, 347→7, 456→6, 578→8. 9×7=63 (unit 3), 3×6=18 (unit 8), 8×8=64 (unit 4). The unit digit of the product is 4.
 
-**Q11:** Let ages be 7x and 2x. After 5 years: (7x+5)/(2x+5) = 8/3. Cross-multiply: 3(7x+5) = 8(2x+5) → 21x+15 = 16x+40 → 5x = 25 → x = 5. Father's age = 7Ãâ€â€�5 = 35 years.
+**Q11:** Let ages be 7x and 2x. After 5 years: (7x+5)/(2x+5) = 8/3. Cross-multiply: 3(7x+5) = 8(2x+5) → 21x+15 = 16x+40 → 5x = 25 → x = 5. Father's age = 7×5 = 35 years.
 
 **Q12:** Pipe fills at rate 1/12 per hour. Leak empties at rate 1/20 per hour. Net fill rate = 1/12 − 1/20 = (5−3)/60 = 2/60 = 1/30 per hour. Time to fill = 30 hours.
 
-**Q13:** First 3-digit number divisible by 7: 105 = 15Ãâ€â€�7. Last: 994 = 142Ãâ€â€�7. Count = 142 − 15 + 1 = 128.
+**Q13:** First 3-digit number divisible by 7: 105 = 15×7. Last: 994 = 142×7. Count = 142 − 15 + 1 = 128.
 
 **Q14:** A runs 200 m at 8 m/s, taking 200/8 = 25 seconds. B has a 20 m head start (runs 180 m) and finishes 5 seconds after A, so B's time = 30 seconds. B's speed = 180/30 = 6 m/s.
 
-**Q15:** Total cost = 80Ãâ€â€�40 + 40Ãâ€â€�55 = 3200 + 2200 = ₹5400. Total weight = 120 kg. Revenue = 120Ãâ€â€�54 = ₹6480. Profit = 6480 − 5400 = ₹1080. Profit percentage = 1080/5400 Ãâ€â€� 100 = 20%.
+**Q15:** Total cost = 80×40 + 40×55 = 3200 + 2200 = ₹5400. Total weight = 120 kg. Revenue = 120×54 = ₹6480. Profit = 6480 − 5400 = ₹1080. Profit percentage = 1080/5400 × 100 = 20%.
 
-**Q16:** A² = [[2,1],[1,2]] Ãâ€â€� [[2,1],[1,2]] = [[2Ãâ€â€�2+1Ãâ€â€�1, 2Ãâ€â€�1+1Ãâ€â€�2], [1Ãâ€â€�2+2Ãâ€â€�1, 1Ãâ€â€�1+2Ãâ€â€�2]] = [[5,4],[4,5]].
+**Q16:** A² = [[2,1],[1,2]] × [[2,1],[1,2]] = [[2×2+1×1, 2×1+1×2], [1×2+2×1, 1×1+2×2]] = [[5,4],[4,5]].
 
-**Q17:** Complete graph Kₙ has C(n,2) = n(n−1)/2 edges. For n=10: 10Ãâ€â€�9/2 = 45.
+**Q17:** Complete graph Kₙ has C(n,2) = n(n−1)/2 edges. For n=10: 10×9/2 = 45.
 
 **Q18:** Apply L'Hôpital's rule twice. First derivative: lim (eˣ−1)/(2x). Still 0/0. Second derivative: lim eˣ/2 = 1/2.
 
-**Q19:** For independent events, P(A∩B) = P(A)Ãâ€â€�P(B) = 0.6 Ãâ€â€� 0.3 = 0.18.
+**Q19:** For independent events, P(A∩B) = P(A)×P(B) = 0.6 × 0.3 = 0.18.
 
 **Q20:** The converse of implication P→Q is Q→P. Given P = "it rains", Q = "ground is wet", the converse is "If the ground is wet, then it rains."
 
-**Q21:** For divisibility by 5, last digit must be 0 or 5. Case 1 (last digit 0): arrange first 4 digits from {1,2,3,4,5} → 5Ãâ€â€�4Ãâ€â€�3Ãâ€â€�2 = 120. Case 2 (last digit 5): first digit cannot be 0 → choices = 4Ãâ€â€�4Ãâ€â€�3Ãâ€â€�2 = 96. Total = 120+96 = 216.
+**Q21:** For divisibility by 5, last digit must be 0 or 5. Case 1 (last digit 0): arrange first 4 digits from {1,2,3,4,5} → 5×4×3×2 = 120. Case 2 (last digit 5): first digit cannot be 0 → choices = 4×4×3×2 = 96. Total = 120+96 = 216.
 
 **Q22:** Matrix is upper triangular. Sum of eigenvalues = trace = 1+4+6 = 11.
 
-**Q23:** Total marbles = 12. Total ways to choose 3 = C(12,3) = 220. Favorable ways = 1 red from 3 Ãâ€â€� 1 blue from 4 Ãâ€â€� 1 green from 5 = 3Ãâ€â€�4Ãâ€â€�5 = 60. Probability = 60/220 = 3/11.
+**Q23:** Total marbles = 12. Total ways to choose 3 = C(12,3) = 220. Favorable ways = 1 red from 3 × 1 blue from 4 × 1 green from 5 = 3×4×5 = 60. Probability = 60/220 = 3/11.
 
 **Q24:** Number of Hamiltonian cycles in Kₙ (undirected) = (n−1)!/2. For n = 7: 6!/2 = 720/2 = 360.
 
@@ -657,7 +657,7 @@ Which conclusion(s) logically follow(s)?
 
 **Q28:** STP is a Layer 2 protocol used by switches to prevent broadcast storms by creating a loop-free logical topology.
 
-**Q29:** SELECT (ÃÂ�ƒ), UNION (∪), and CARTESIAN PRODUCT (Ãâ€â€�) are relational algebra operators. GROUP BY is an SQL clause.
+**Q29:** SELECT (ÃÂ�ƒ), UNION (∪), and CARTESIAN PRODUCT (×) are relational algebra operators. GROUP BY is an SQL clause.
 
 **Q30:** The language requires counting a's and comparing with b's. A PDA can push a's and pop for each b, accepting if stack has at least 1 a at end. This requires unbounded counting, so it is not regular but is context-free.
 
@@ -705,7 +705,7 @@ Which conclusion(s) logically follow(s)?
 
 **Q52:** +45 = 00101101. 1's complement: 11010010. 2's complement (add 1): 11010011.
 
-**Q53:** L1 miss rate = 20%. L2 miss rate given L1 miss = 15%. AMAT = L1_time + L1_miss_rate Ãâ€â€� (L2_time + L2_miss_rate Ãâ€â€� miss_penalty) = 1 + 0.2 Ãâ€â€� (8 + 0.15 Ãâ€â€� 80) = 1 + 0.2 Ãâ€â€� (8 + 12) = 1 + 0.2 Ãâ€â€� 20 = 1 + 4 = 5.0 ns.
+**Q53:** L1 miss rate = 20%. L2 miss rate given L1 miss = 15%. AMAT = L1_time + L1_miss_rate × (L2_time + L2_miss_rate × miss_penalty) = 1 + 0.2 × (8 + 0.15 × 80) = 1 + 0.2 × (8 + 12) = 1 + 0.2 × 20 = 1 + 4 = 5.0 ns.
 
 **Q54:** From postorder (last element A is root), split inorder into left (D,B,E) and right (F,C,G). From postorder, left subtree root is B (DEB), right subtree root is C (FGC). Recursively: A's left child B with inorder D,B,E gives D left of B, E right of B. A's right child C with inorder F,C,G gives F left of C, G right of C. Preorder: A,B,D,E,C,F,G.
 

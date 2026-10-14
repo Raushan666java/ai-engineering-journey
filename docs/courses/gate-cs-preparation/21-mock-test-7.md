@@ -619,29 +619,29 @@ print(x, y)
 
 **Q5:** Since all squares are rectangles, and some rectangles are not polygons, it does not guarantee any square is in that subset. But we know no squares overlap circles, meaning no square is inside any circle. Therefore, some circles (any circle) are definitely not squares. Option C is guaranteed true.
 
-**Q6:** At 4:30, hour hand is at 4Ãâ€â€�30 + 30Ãâ€â€�0.5 = 120 + 15 = 135°. Minute hand is at 30Ãâ€â€�6 = 180°. Difference = 180 − 135 = 45°.
+**Q6:** At 4:30, hour hand is at 4×30 + 30×0.5 = 120 + 15 = 135°. Minute hand is at 30×6 = 180°. Difference = 180 − 135 = 45°.
 
 **Q7:** The pattern is n² − 1 for n = 2, 4, 6, 8, 10, 12: 2²−1=3, 4²−1=15, 6²−1=35, 8²−1=63, 10²−1=99, 12²−1=143. Missing term is 63.
 
 **Q8:** Downstream speed = 12/2 = 6 km/h. Upstream speed = 8/4 = 2 km/h. Stream speed = (downstream − upstream)/2 = (6−2)/2 = 2 km/h.
 
-**Q9:** Let CP = 100. MP = 130. Discounted price = 130 Ãâ€â€� 0.9 = 117. Effective weight: 950 g sold as 1000 g, so actual cost per 1000 g nominal = 100 Ãâ€â€� (1000/950) ≈ 105.26. Profit on 1000 g = 117 − 105.26 ≈ 11.74 on cost of 105.26, giving ≈ 26%.
+**Q9:** Let CP = 100. MP = 130. Discounted price = 130 × 0.9 = 117. Effective weight: 950 g sold as 1000 g, so actual cost per 1000 g nominal = 100 × (1000/950) ≈ 105.26. Profit on 1000 g = 117 − 105.26 ≈ 11.74 on cost of 105.26, giving ≈ 26%.
 
 **Q10:** |A ∪ B| = |A| + |B| − |A ∩ B| where A = divisible by 4, B = divisible by 6. |A| = ⌊1000/4⌋ = 250. |B| = ⌊1000/6⌋ = 166. |A∩B| = ⌊1000/12⌋ = 83. Total = 250 + 166 − 83 = 333.
 
 **Q11:** Speed of first train = (200 + 100) / 30 = 300 / 30 = 10 m/s. The second train crosses a pole = its own length. Time = 150 / 10 = 15 s.
 
-**Q12:** Simple interest for 2 years (from year 5 to 7) = 12,000 − 10,000 = 2,000. Annual interest = 1,000. Amount in 5 years = P + 5Ãâ€â€�1000 = 10,000, so P = 5,000.
+**Q12:** Simple interest for 2 years (from year 5 to 7) = 12,000 − 10,000 = 2,000. Annual interest = 1,000. Amount in 5 years = P + 5×1000 = 10,000, so P = 5,000.
 
-**Q13:** After each operation, milk remaining = original Ãâ€â€� (1 − 6/60) = 60 Ãâ€â€� (0.9)³ = 60 Ãâ€â€� 0.729 = 43.74 L.
+**Q13:** After each operation, milk remaining = original × (1 − 6/60) = 60 × (0.9)³ = 60 × 0.729 = 43.74 L.
 
 **Q14:** Roots of x²−5x+6=0 are 2, 3. Roots of x²−8x+15=0 are 3, 5. The common root is 3.
 
 **Q15:** P(A wins on first toss) = 1/2. P(A wins on third toss) = (1/2)³ = 1/8 (both miss first two). This is a geometric series: 1/2 + 1/8 + 1/32 + ... = (1/2)/(1−1/4) = (1/2)/(3/4) = 2/3.
 
-**Q16:** det([[1,2],[3,4]]) = 1Ãâ€â€�4 − 2Ãâ€â€�3 = 4 − 6 = −2.
+**Q16:** det([[1,2],[3,4]]) = 1×4 − 2×3 = 4 − 6 = −2.
 
-**Q17:** In a regular graph, sum of degrees = 2E. 8 Ãâ€â€� 3 = 2E, so E = 12.
+**Q17:** In a regular graph, sum of degrees = 2E. 8 × 3 = 2E, so E = 12.
 
 **Q18:** ∫₀¹ x² dx = [x³/3]₀¹ = 1/3.
 
@@ -649,9 +649,9 @@ print(x, y)
 
 **Q20:** Number of 3-element subsets of a 7-element set = C(7,3) = 35.
 
-**Q21:** Number of onto functions from a 4-element set to a 3-element set = 3âÂÂ�´ − C(3,1)Ãâ€â€�2âÂÂ�´ + C(3,2)Ãâ€â€�1âÂÂ�´ = 81 − 3Ãâ€â€�16 + 3Ãâ€â€�1 = 81 − 48 + 3 = 36. This uses the inclusion-exclusion principle to count surjections.
+**Q21:** Number of onto functions from a 4-element set to a 3-element set = 3âÂÂ�´ − C(3,1)×2âÂÂ�´ + C(3,2)×1âÂÂ�´ = 81 − 3×16 + 3×1 = 81 − 48 + 3 = 36. This uses the inclusion-exclusion principle to count surjections.
 
-**Q22:** Number of one-to-one functions from 3-element to 5-element set = P(5,3) = 5Ãâ€â€�4Ãâ€â€�3 = 60.
+**Q22:** Number of one-to-one functions from 3-element to 5-element set = P(5,3) = 5×4×3 = 60.
 
 **Q23:** The matrix is symmetric and positive definite (all leading principal minors positive: 2>0, 3>0, 4>0). All 3 eigenvalues are positive.
 

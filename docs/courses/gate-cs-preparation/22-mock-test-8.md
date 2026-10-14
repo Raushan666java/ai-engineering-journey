@@ -1,4 +1,4 @@
-﻿# GATE CS Mock Test 8 â€â€� Full-Length Practice Paper (Hardest Edition)
+﻿# GATE CS Mock Test 8 — Full-Length Practice Paper (Hardest Edition)
 
 
 ## Chapter at a Glance
@@ -681,9 +681,9 @@ So next difference = 6² = 36. Next term = 56 + 36 = 92.
 
 **Q30 (1 Mark) [CN]:** AAAA record maps domain name to IPv6 address. A is IPv4, CNAME is alias, MX is mail. Option C.
 
-**Q31 (1 Mark) [TOC]:** L = {aâÂ�¿báµÂ�câÂ�¿dáµÂ�} requires matching aâ†â€�c and bâ†â€�d simultaneously. A PDA can track one count (stack) but not two independent pairs. An LBA can handle it. L is context-sensitive but not context-free. Option C.
+**Q31 (1 Mark) [TOC]:** L = {aâÂ�¿báµÂ�câÂ�¿dáµÂ�} requires matching aâ†—�c and bâ†—�d simultaneously. A PDA can track one count (stack) but not two independent pairs. An LBA can handle it. L is context-sensitive but not context-free. Option C.
 
-**Q32 (1 Mark) [CD]:** Compilation phases: lexical, syntax, semantic, intermediate code generation, code optimization, code generation. Symbol table management is cross-cutting (not a separate phase). Linker resolution happens after compilation. The question asks for what is NOT a compilation phase â€â€� both symbol table management and linker resolution are not phases, but linker resolution is the more definitive answer as it is external to the compiler. Option D.
+**Q32 (1 Mark) [CD]:** Compilation phases: lexical, syntax, semantic, intermediate code generation, code optimization, code generation. Symbol table management is cross-cutting (not a separate phase). Linker resolution happens after compilation. The question asks for what is NOT a compilation phase — both symbol table management and linker resolution are not phases, but linker resolution is the more definitive answer as it is external to the compiler. Option D.
 
 **Q33 (1 Mark) [DL]:** f = Σm(0,4,5,6,7) = A̅B̅C̅ + AB̅C̅ + AB̅C + ABC̅ + ABC. Factor: = A̅B̅C̅ + A(B̅C̅ + B̅C + BC̅ + BC) = A̅B̅C̅ + A = A + B̅C̅. K-map: 
 ```
@@ -732,7 +732,7 @@ Turnaround: P1=16, P2=4, P3=22, P4=4. Avg = 46/4 = 11.5. Option B.
 
 **Q51 (2 Marks) [CN]:** CSMA/CD minimum frame = 2 × propagation delay × bandwidth. Distance = 5 km = 5000 m. Speed = 2×10âÂ�¸ m/s. Propagation delay (one-way) = 5000/(2×10âÂ�¸) = 25 μs. RTT = 50 μs. Min frame = 50×10âÂ�»âÂ�¶ × 10×10âÂ�¶ = 500 bits. Option B.
 
-**Q52 (2 Marks) [TOC]:** L = {ww | w ∈ {a,b}âÂ�º}. Not regular (requires pumping for ww). Not context-free (PDA cannot compare first half with second half without a marker â€â€� proven by pumping lemma for CFLs). It is context-sensitive (LBA can recognize by marking midpoint and comparing). Option B.
+**Q52 (2 Marks) [TOC]:** L = {ww | w ∈ {a,b}âÂ�º}. Not regular (requires pumping for ww). Not context-free (PDA cannot compare first half with second half without a marker — proven by pumping lemma for CFLs). It is context-sensitive (LBA can recognize by marking midpoint and comparing). Option B.
 
 **Q53 (2 Marks) [CD]:** Grammar: S → aAb | bBA, A → aS | b, B → bS | a. Try derivation for aaabbb: S → aAb → a(aS)b → aa(aAb)b → aaa(b)b = aaabbb. Verified: the string is generated. Option A.
 

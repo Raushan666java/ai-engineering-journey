@@ -69,7 +69,7 @@ flowchart LR
 
 ## Section A: General Aptitude (15 marks)
 
-### Q1 [1 Mark] â€â€� Numerical Ability
+### Q1 [1 Mark] — Numerical Ability
 
 A person buys 20 articles for ₹10 each and sells 15 of them at ₹12 each. The remaining 5 are sold at a loss of 10%. What is the overall profit percentage?
 
@@ -121,7 +121,7 @@ Sell 12 at ₹12 = 144. Sell 8 at ₹9 (10% loss) = 72. Total SP = 216. Profit =
 
 </details>
 
-### Q2 [1 Mark] â€â€� Verbal Ability
+### Q2 [1 Mark] — Verbal Ability
 
 Choose the antonym of "EPHEMERAL":
 
@@ -140,7 +140,7 @@ Choose the antonym of "EPHEMERAL":
 
 </details>
 
-### Q3 [1 Mark] â€â€� Logical Reasoning
+### Q3 [1 Mark] — Logical Reasoning
 
 Find the missing number: 7, 14, 28, 56, ?
 
@@ -159,7 +159,7 @@ Each term doubles: 7 × 2 = 14, 14 × 2 = 28, 28 × 2 = 56, 56 × 2 = 112.
 
 </details>
 
-### Q4 [1 Mark] â€â€� Numerical Ability
+### Q4 [1 Mark] — Numerical Ability
 
 What is the average of first 10 prime numbers?
 
@@ -194,7 +194,7 @@ console.log(avg); // 12.9
 
 </details>
 
-### Q5 [1 Mark] â€â€� Logical Reasoning
+### Q5 [1 Mark] — Logical Reasoning
 
 Statement: All birds can fly. Some flying creatures are insects.
 Conclusion I: Some birds are insects.
@@ -217,7 +217,7 @@ All birds → fly (subset). Some flying creatures → insects. The intersection 
 
 </details>
 
-### Q6 [2 Marks] â€â€� Numerical Ability
+### Q6 [2 Marks] — Numerical Ability
 
 A sum of money doubles itself in 5 years at simple interest. How many years will it take to become 4 times?
 
@@ -246,7 +246,7 @@ console.log(yearsToQuadruple(5)); // 15
 
 </details>
 
-### Q7 [2 Marks] â€â€� Data Interpretation
+### Q7 [2 Marks] — Data Interpretation
 
 The table shows marks of 5 students in 3 subjects. What is the overall average?
 
@@ -285,7 +285,7 @@ console.log(total / 15); // 82.0
 
 </details>
 
-### Q8 [2 Marks] â€â€� Logical Reasoning
+### Q8 [2 Marks] — Logical Reasoning
 
 Seven people sit in a row. A sits to the immediate left of B. C sits third to the right of D. E sits at one end. F sits between B and G. Who sits in the middle?
 
@@ -311,7 +311,7 @@ Let me place: E, D, A, B, F, G, C → F is 4th position (middle of 7).
 
 </details>
 
-### Q9 [2 Marks] â€â€� Numerical Ability
+### Q9 [2 Marks] — Numerical Ability
 
 Two trains of lengths 200 m and 300 m cross each other in 25 seconds when moving in opposite directions. If the faster train is traveling at 72 km/h, what is the speed of the slower train?
 
@@ -381,7 +381,7 @@ Let me fix the question.
 
 </details>
 
-### Q10 [2 Marks] â€â€� Verbal Ability
+### Q10 [2 Marks] — Verbal Ability
 
 Select the correctly spelled word:
 
@@ -404,7 +404,7 @@ Select the correctly spelled word:
 
 ## Section B: Technical (85 marks)
 
-### Q1 [1 Mark] â€â€� 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
+### Q1 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
 
 
 What is the rank of the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]]?
@@ -451,7 +451,7 @@ console.log(matrixRank([[1,2,3],[4,5,6],[7,8,9]])); // 2
 
 </details>
 
-### Q2 [1 Mark] â€â€� 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
+### Q2 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
 
 
 The solution set of |x - 3| < 5 is:
@@ -471,7 +471,7 @@ The solution set of |x - 3| < 5 is:
 
 </details>
 
-### Q3 [1 Mark] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Easy
+### Q3 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Easy
 
 
 Which of the following is NOT a linear data structure?
@@ -491,7 +491,7 @@ Arrays, linked lists, stacks, and queues are linear data structures. Trees are n
 
 </details>
 
-### Q4 [1 Mark] â€â€� 📂 Digital Logic | ðŸÂ�·ï¸Â� Easy
+### Q4 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Easy
 
 
 Which gate produces output 1 only when both inputs are different?
@@ -511,7 +511,7 @@ XOR (exclusive OR) outputs 1 when inputs are different: 0⊕0=0, 0⊕1=1, 1⊕0=
 
 </details>
 
-### Q5 [1 Mark] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Easy
+### Q5 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Easy
 
 
 Which of the following is a page replacement algorithm?
@@ -531,7 +531,7 @@ LRU (Least Recently Used) is a page replacement algorithm. FCFS and SJF are CPU 
 
 </details>
 
-### Q6 [1 Mark] â€â€� 📂 Computer Networks | ðŸÂ�·ï¸Â� Easy
+### Q6 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Easy
 
 
 Which protocol resolves domain names to IP addresses?
@@ -551,7 +551,7 @@ DNS (Domain Name System) translates domain names like google.com into IP address
 
 </details>
 
-### Q7 [1 Mark] â€â€� 📂 Database Management Systems | ðŸÂ�·ï¸Â� Easy
+### Q7 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Easy
 
 
 In SQL, which clause filters groups after aggregation?
@@ -571,7 +571,7 @@ HAVING is used to filter groups after GROUP BY (similar to WHERE on individual r
 
 </details>
 
-### Q8 [1 Mark] â€â€� 📂 Theory of Computation | ðŸÂ�·ï¸Â� Easy
+### Q8 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Easy
 
 
 Which of the following is a regular language?
@@ -591,7 +591,7 @@ Strings ending with 00 can be recognized by a DFA (regular). {0âÂ�¿1âÂ�
 
 </details>
 
-### Q9 [1 Mark] â€â€� 📂 Compiler Design | ðŸÂ�·ï¸Â� Easy
+### Q9 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Easy
 
 
 Which of the following is a valid token type in lexical analysis?
@@ -611,7 +611,7 @@ Tokens in lexical analysis are: identifiers, keywords, operators, literals, deli
 
 </details>
 
-### Q10 [1 Mark] â€â€� 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Easy
+### Q10 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Easy
 
 
 The number of bits in a nibble is:
@@ -631,7 +631,7 @@ A nibble consists of 4 bits (half of a byte).
 
 </details>
 
-### Q11 [1 Mark] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
+### Q11 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
 
 
 The height of a binary tree with n nodes in the worst case is:
@@ -666,7 +666,7 @@ console.log(height(root)); // 2 = O(n) for 3 nodes
 
 </details>
 
-### Q12 [1 Mark] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
+### Q12 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
 
 
 The number of processes that can be simultaneously in the critical section of a semaphore initialized to 1 is:
@@ -686,7 +686,7 @@ A semaphore initialized to 1 is a binary/mutex semaphore. At most 1 process can 
 
 </details>
 
-### Q13 [1 Mark] â€â€� 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
+### Q13 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
 
 
 Which of the following transmission media has the highest bandwidth?
@@ -706,7 +706,7 @@ Fiber optic cables offer the highest bandwidth (up to Tbps) among common transmi
 
 </details>
 
-### Q14 [1 Mark] â€â€� 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
+### Q14 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
 
 
 Which transaction isolation level prevents dirty reads?
@@ -726,7 +726,7 @@ Read Committed ensures that any data read was committed at the moment of reading
 
 </details>
 
-### Q15 [1 Mark] â€â€� 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
+### Q15 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
 
 
 Which of the following is NOT a valid property of regular languages?
@@ -746,7 +746,7 @@ Regular languages are closed under union, intersection, complementation, concate
 
 </details>
 
-### Q16 [1 Mark] â€â€� 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
+### Q16 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
 
 
 Which of these grammar classes is used by LALR parsers?
@@ -766,7 +766,7 @@ LALR(1) parsers are built from LR(1) items, merging states with the same core to
 
 </details>
 
-### Q17 [1 Mark] â€â€� 📂 Digital Logic | ðŸÂ�·ï¸Â� Medium
+### Q17 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Medium
 
 
 A full adder adds three bits. How many outputs does it have?
@@ -795,7 +795,7 @@ graph TD
 
 </details>
 
-### Q18 [1 Mark] â€â€� 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
+### Q18 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
 
 
 Which addressing mode uses the contents of a register as the effective address?
@@ -815,7 +815,7 @@ In register indirect addressing, the register contains the memory address where 
 
 </details>
 
-### Q19 [1 Mark] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
+### Q19 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
 
 
 Which graph traversal uses a queue?
@@ -854,7 +854,7 @@ function bfs(graph: Map<number, number[]>, start: number): number[] {
 
 </details>
 
-### Q20 [1 Mark] â€â€� 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
+### Q20 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
 
 
 The second derivative of f(x) = xâÂ�´ - 6x² + 5x evaluated at x = 1 is:
@@ -884,7 +884,7 @@ Let me use f(x) = xâÂ�´ - 3x² + 5x.
 
 </details>
 
-### Q21 [2 Marks] â€â€� 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
+### Q21 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
 
 
 The number of subgroups of a cyclic group of order 12 is:
@@ -914,7 +914,7 @@ console.log(divisors(12).length); // 6
 
 </details>
 
-### Q22 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
+### Q22 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
 
 
 Which traversal of a BST yields nodes in ascending order?
@@ -949,7 +949,7 @@ console.log(inorder(root)); // [10, 15, 20]
 
 </details>
 
-### Q23 [2 Marks] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
+### Q23 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
 
 
 Consider the following processes:
@@ -1003,7 +1003,7 @@ Waiting: P1=0, P2=5, P3=8. Avg = 13/3 = 4.33. That makes answer (B) 4.33.
 
 </details>
 
-### Q24 [2 Marks] â€â€� 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
+### Q24 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
 
 
 Consider the relation R(A, B, C, D) with FDs: AB → C, C → D, D → A. How many candidate keys does R have?
@@ -1080,7 +1080,7 @@ Perfect!
 
 </details>
 
-### Q25 [2 Marks] â€â€� 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
+### Q25 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
 
 
 The maximum data rate of a channel with bandwidth 3 kHz and SNR of 255 (using Shannon's formula) is:
@@ -1107,7 +1107,7 @@ console.log(shannon(3000, 255)); // 24000 bps = 24 kbps
 
 </details>
 
-### Q26 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
+### Q26 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
 
 
 In a depth-first search of an undirected graph with n vertices and m edges, the time complexity is:
@@ -1134,7 +1134,7 @@ console.log(dfsTimeComplexity(100, 500)); // O(100 + 500)
 
 </details>
 
-### Q27 [2 Marks] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
+### Q27 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
 
 
 If the page size is 4 KB and the logical address space is 32 bits, how many bits are used for the page offset?
@@ -1154,7 +1154,7 @@ Page size = 4 KB = 2¹² bytes → offset requires 12 bits.
 
 </details>
 
-### Q28 [2 Marks] â€â€� 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
+### Q28 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
 
 
 Which of the following grammars is LL(1)?
@@ -1174,7 +1174,7 @@ An LL(1) grammar must have no left recursion, no ambiguity, no FIRST-FIRST confl
 
 </details>
 
-### Q29 [2 Marks] â€â€� 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
+### Q29 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
 
 
 In a 5-stage pipeline (IF, ID, EX, MEM, WB), a branch instruction completes its execution in which stage?
@@ -1194,7 +1194,7 @@ Branch target address calculation and condition evaluation typically happen in t
 
 </details>
 
-### Q30 [2 Marks] â€â€� 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
+### Q30 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
 
 
 The Pumping Lemma is used to prove that a language is:
@@ -1214,7 +1214,7 @@ The pumping lemma provides a necessary condition for regularity. It's typically 
 
 </details>
 
-### Q31 [2 Marks] â€â€� 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
+### Q31 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
 
 
 Consider the B+ tree of order 3 (max keys per node = 3). After inserting keys 10, 20, 30, 40, 50 in order, the root node contains:
@@ -1275,7 +1275,7 @@ Root=[30]. Answer=(B) 30.
 
 </details>
 
-### Q32 [2 Marks] â€â€� 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
+### Q32 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
 
 
 An IPv4 header has the field values: Version=4, IHL=5, Total Length=64, TTL=64, Protocol=6 (TCP). How many bytes is the header?
@@ -1302,7 +1302,7 @@ console.log(ipHeaderSize(5)); // 20 bytes
 
 </details>
 
-### Q33 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
+### Q33 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
 
 
 Which scenario results in the best-case time complexity of O(n) for QuickSort?
@@ -1334,7 +1334,7 @@ Let me keep option (D) and explain.
 
 </details>
 
-### Q34 [2 Marks] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
+### Q34 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
 
 
 A system uses a TLB with 90% hit rate. Memory access time is 100 ns and TLB access time is 20 ns. What is the effective memory access time?
@@ -1379,7 +1379,7 @@ So with 92% hit rate answer = 128. Let me adjust the question.
 
 </details>
 
-### Q35 [2 Marks] â€â€� 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
+### Q35 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
 
 
 The number of memory accesses required for a direct-mapped cache read hit is:
@@ -1399,7 +1399,7 @@ A cache read hit means the data is found in the cache. Only 1 memory access (to 
 
 </details>
 
-### Q36 [2 Marks] â€â€� 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
+### Q36 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
 
 
 What is the probability of getting exactly 2 heads in 5 tosses of a fair coin?
@@ -1431,7 +1431,7 @@ console.log(binomialProb(5, 2, 0.5)); // 0.3125 = 5/16
 
 </details>
 
-### Q37 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
+### Q37 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
 
 
 The maximum number of edges in a simple graph with n vertices is:
@@ -1458,7 +1458,7 @@ console.log(maxEdgesSimpleGraph(5)); // 10
 
 </details>
 
-### Q38 [2 Marks] â€â€� 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
+### Q38 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
 
 
 The set of all binary strings that do NOT contain "00" as a substring is:
@@ -1487,7 +1487,7 @@ stateDiagram-v2
 
 </details>
 
-### Q39 [2 Marks] â€â€� 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
+### Q39 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
 
 
 Which concurrency control protocol ensures conflict serializability?
@@ -1507,7 +1507,7 @@ Both strict 2PL and basic Timestamp Ordering (Thomas Write Rule variant) ensure 
 
 </details>
 
-### Q40 [2 Marks] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
+### Q40 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
 
 
 In the Dining Philosophers problem, which condition is violated if all philosophers pick up their left fork simultaneously?
@@ -1535,7 +1535,7 @@ graph TD
 
 </details>
 
-### Q41 [2 Marks] â€â€� 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
+### Q41 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
 
 
 How many hosts can be addressed in a Class C network?
@@ -1562,7 +1562,7 @@ console.log(hostsInClass(8)); // 254
 
 </details>
 
-### Q42 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
+### Q42 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
 
 
 Which of the following is NOT a type of tree traversal?
@@ -1582,7 +1582,7 @@ Standard tree traversals are inorder, preorder, postorder, and level-order. "Tra
 
 </details>
 
-### Q43 [2 Marks] â€â€� 📂 Digital Logic | ðŸÂ�·ï¸Â� Hard
+### Q43 [2 Marks] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Hard
 
 
 A counter that cycles through 10 distinct states is called a:
@@ -1602,7 +1602,7 @@ A decade counter counts from 0 to 9 (10 states), used in BCD applications. A bin
 
 </details>
 
-### Q44 [2 Marks] â€â€� 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
+### Q44 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
 
 
 The process of converting a parse tree into an Abstract Syntax Tree (AST) involves:
@@ -1641,7 +1641,7 @@ graph TD
 
 </details>
 
-### Q45 [2 Marks] â€â€� 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
+### Q45 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
 
 
 Which type of hazard occurs when an instruction modifies a register that a later instruction reads?
@@ -1661,7 +1661,7 @@ RAW (Read After Write) data hazard: a subsequent instruction reads a register be
 
 </details>
 
-### Q46 [2 Marks] â€â€� 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
+### Q46 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
 
 
 What is the language generated by the CFG: S → aSb | ε?
@@ -1681,7 +1681,7 @@ S → aSb pushes one 'a' and one 'b' at each production. S → ε terminates. Th
 
 </details>
 
-### Q47 [2 Marks] â€â€� 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
+### Q47 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
 
 
 The value of ∫₀¹ x² dx is:
@@ -1708,7 +1708,7 @@ console.log(integrateXSquared(0, 1)); // 1/3
 
 </details>
 
-### Q48 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
+### Q48 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
 
 
 Which of the following hash table collision resolution techniques uses the least memory?
@@ -1734,7 +1734,7 @@ But wait - the question asks which uses the LEAST memory. All open addressing me
 
 </details>
 
-### Q49 [2 Marks] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
+### Q49 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
 
 
 A process executes the following code:
@@ -1761,7 +1761,7 @@ Counting semaphore initialized to 2 allows up to 2 processes to enter the critic
 
 </details>
 
-### Q50 [2 Marks] â€â€� 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
+### Q50 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
 
 
 The ACID property that ensures a transaction is executed as a single indivisible unit is:
@@ -1781,7 +1781,7 @@ Atomicity ensures the transaction is all-or-nothing. Either all operations compl
 
 </details>
 
-### Q51 [2 Marks] â€â€� 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
+### Q51 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
 
 
 A Turing machine that halts on all inputs is called a(n):
@@ -1801,7 +1801,7 @@ A decider is a Turing machine that halts on all inputs (accepting or rejecting).
 
 </details>
 
-### Q52 [2 Marks] â€â€� 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
+### Q52 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
 
 
 In TCP, the transition from TIME_WAIT to CLOSED occurs after:
@@ -1829,7 +1829,7 @@ stateDiagram-v2
 
 </details>
 
-### Q53 [2 Marks] â€â€� 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
+### Q53 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
 
 
 A segment tree built on an array of n elements has size approximately:
@@ -1872,7 +1872,7 @@ class SegmentTree {
 
 </details>
 
-### Q54 [2 Marks] â€â€� 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
+### Q54 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
 
 
 Which page replacement algorithm suffers from Belady's anomaly?
@@ -1892,7 +1892,7 @@ Belady's anomaly: increasing the number of frames INCREASES the page fault rate.
 
 </details>
 
-### Q55 [2 Marks] â€â€� 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
+### Q55 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
 
 
 Which of the following is used for error recovery in top-down parsing?
@@ -1993,7 +1993,7 @@ GATE 2024 Computer Science paper was notable for a shift toward conceptual depth
 ### Difficulty Trends
 
 
-GATE 2024 was moderately more difficult than GATE 2023. The difficulty distribution was approximately 32% Easy, 45% Medium, and 23% Hard. Data Structures & Algorithms continued to feature challenging graph and tree questions â€â€� a NAT on AVL tree rotation sequences had only 12% correct rate. Operating Systems questions on virtual memory segmentation were well-attempted but frequently wrong due to conceptual subtleties. Computer Networks introduced a novel question on QUIC protocol (first appearance in GATE), categorizing it as difficult. DBMS questions on serializability testing (polygraph method) and multi-version concurrency control pushed the difficulty upward. Aptitude remained the most scoring section with 88% average accuracy.
+GATE 2024 was moderately more difficult than GATE 2023. The difficulty distribution was approximately 32% Easy, 45% Medium, and 23% Hard. Data Structures & Algorithms continued to feature challenging graph and tree questions — a NAT on AVL tree rotation sequences had only 12% correct rate. Operating Systems questions on virtual memory segmentation were well-attempted but frequently wrong due to conceptual subtleties. Computer Networks introduced a novel question on QUIC protocol (first appearance in GATE), categorizing it as difficult. DBMS questions on serializability testing (polygraph method) and multi-version concurrency control pushed the difficulty upward. Aptitude remained the most scoring section with 88% average accuracy.
 
 ### Key Concepts Tested
 
@@ -2017,7 +2017,7 @@ The following TypeScript program compares GATE 2024 paper trends against previou
 
 ```typescript
 /**
- * YearOverYearComparator â€â€� Compare GATE paper trends across years.
+ * YearOverYearComparator — Compare GATE paper trends across years.
  * Use this to analyze how difficulty, subject weightage, and question types evolved.
  */
 interface YearData {
@@ -2215,7 +2215,7 @@ Test your understanding of GATE 2024 paper patterns with these 5 questions.
 
 3. **Disk Scheduling Sequence**: A disk has 200 cylinders (0-199). The head starts at cylinder 50, moving toward higher numbers. Pending requests: 95, 180, 34, 119, 11, 123, 62, 64. Calculate the total seek distance for SCAN, LOOK, and C-SCAN algorithms. Which algorithm gives the minimum seek distance for this workload?
 
-4. **Regular Language Equivalence**: Using the Myhill-Nerode theorem, prove that the language L = {a^n b^n | n ≥ 0} is NOT regular. Show that the equivalence relation ~L has infinite index by constructing distinct equivalence classes. Compare this approach with using the pumping lemma â€â€� which proof is more informative?
+4. **Regular Language Equivalence**: Using the Myhill-Nerode theorem, prove that the language L = {a^n b^n | n ≥ 0} is NOT regular. Show that the equivalence relation ~L has infinite index by constructing distinct equivalence classes. Compare this approach with using the pumping lemma — which proof is more informative?
 
 5. **SSA Form Construction**: Given the following three-address code:
 ```

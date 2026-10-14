@@ -2,7 +2,7 @@
 
 ## Course Overview
 
-This course covers the complete GATE Computer Science syllabus â€â€� General Aptitude, Engineering Mathematics, Operating Systems, DBMS, Computer Networks, Data Structures & Algorithms, Computer Architecture, Theory of Computation, Compiler Design, and Digital Logic â€â€� plus 8 full-length mock tests and exam strategy.
+This course covers the complete GATE Computer Science syllabus — General Aptitude, Engineering Mathematics, Operating Systems, DBMS, Computer Networks, Data Structures & Algorithms, Computer Architecture, Theory of Computation, Compiler Design, and Digital Logic — plus 8 full-length mock tests and exam strategy.
 
 **Target Audience:** CS/IT students preparing for GATE (M.Tech/PSU), placement-seekers needing aptitude practice.
 
@@ -44,4 +44,4 @@ This course covers the complete GATE Computer Science syllabus â€â€� Gen
 
 ## Version
 
-**Version:** 2.0 â€â€� July 2026 â€â€� Added 10 years of solved GATE CS PYQ papers (2016–2025)
+**Version:** 2.0 — July 2026 — Added 10 years of solved GATE CS PYQ papers (2016–2025)

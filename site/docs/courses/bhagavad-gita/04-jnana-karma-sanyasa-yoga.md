@@ -582,7 +582,7 @@ flowchart TB
 
 ```mermaid
 mindmap
-  root[(Jnana-Karma-Sanyasa Yoga)]
+  root["(Jnana-Karma-Sanyasa Yoga)"]
     The transmission
       Sun to Manu to Ikshvaku
       Lost in time

@@ -42,11 +42,11 @@ By the end of this chapter, students will be able to:
 
 ```mermaid
 flowchart LR
-    A[Linear Search O(n)] --> B[Sorted Array?]
-    B -->|Yes| C[Binary Search O(log n)]
-    B -->|Yes| D[Interpolation Search O(log log n)]
-    B -->|Yes| E[Exponential Search O(log n)]
-    B -->|Yes| F[Ternary Search O(log3 n)]
+    A["Linear Search O(n)"] --> B[Sorted Array?]
+    B -->|Yes| C["Binary Search O(log n)"]
+    B -->|Yes| D["Interpolation Search O(log log n)"]
+    B -->|Yes| E["Exponential Search O(log n)"]
+    B -->|Yes| F["Ternary Search O(log3 n)"]
     C --> G[Choose by Data Distribution]
     D --> G
     E --> G

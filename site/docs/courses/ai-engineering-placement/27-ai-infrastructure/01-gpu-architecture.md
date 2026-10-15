@@ -454,11 +454,11 @@ flowchart LR
 ```mermaid
 flowchart LR
     subgraph Roofline["Roofline Chart"]
-        A[Log(FLOP/s)] --> B[Log(Arithmetic Intensity)]
-        C[Memory BW ceiling<br/>slope = 1] --> D[Ridge Point]
-        E[Compute ceiling<br/>horizontal line] --> D
-        F[Memory-bound ops<br/>e.g., softmax, norms] --> C
-        G[Compute-bound ops<br/>e.g., large matmul] --> E
+        A["Log(FLOP/s)"] --> B["Log(Arithmetic Intensity)"]
+        C["Memory BW ceiling<br/>slope = 1"] --> D[Ridge Point]
+        E["Compute ceiling<br/>horizontal line"] --> D
+        F["Memory-bound ops<br/>e.g., softmax, norms"] --> C
+        G["Compute-bound ops<br/>e.g., large matmul"] --> E
     end
 ```
 

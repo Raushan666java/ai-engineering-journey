@@ -190,7 +190,7 @@ flowchart TB
     D --> D1[भावना को देखना]
     D1 --> D2[ऊर्जा रूपांतरण]
     D2 --> D3[चेतना का विस्तार]
-    D3 --> E[(मुक्ति — शिवत्व)]
+    D3 --> E["(मुक्ति — शिवत्व)"]
 
     style A fill:#cc0000,color:#fff
     style E fill:#ff0033,color:#fff

@@ -280,7 +280,7 @@ flowchart TB
     D --> D1[नाद ब्रह्म]
     D --> D2[मौन ध्यान]
     D --> D3[जागरूकता]
-    D3 --> E[(शिवत्व — शुद्ध चैतन्य)]
+    D3 --> E["(शिवत्व — शुद्ध चैतन्य)"]
 
     style A fill:#9900cc,color:#fff
     style E fill:#660099,color:#fff

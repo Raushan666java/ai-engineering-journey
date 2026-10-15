@@ -45,7 +45,7 @@ By the end of this chapter you should be able to:
 
 ```mermaid
 flowchart LR
-    A[@Transactional] --> B[Propagation]
+    A["@Transactional"] --> B[Propagation]
     B --> C[Isolation Levels]
     C --> D[Rollback Rules]
     D --> E[Programmatic Tx]
@@ -625,7 +625,7 @@ public class OrderFulfillmentService {
 
 ```mermaid
 flowchart LR
-    A[@Transactional] --> B[Propagation]
+    A["@Transactional"] --> B[Propagation]
     B --> C[Isolation Levels]
     C --> D[Rollback Rules]
     D --> E[Programmatic Tx]
@@ -933,7 +933,7 @@ public class DynamicTransactionService {
 
 ```mermaid
 flowchart LR
-    A[@Transactional] --> B[Propagation]
+    A["@Transactional"] --> B[Propagation]
     B --> C[Isolation Levels]
     C --> D[Rollback Rules]
     D --> E[Programmatic Tx]
@@ -1175,7 +1175,7 @@ public class CustomTransactionManager extends AbstractPlatformTransactionManager
 
 ```mermaid
 flowchart LR
-    A[@Transactional] --> B[Propagation]
+    A["@Transactional"] --> B[Propagation]
     B --> C[Isolation Levels]
     C --> D[Rollback Rules]
     D --> E[Programmatic Tx]
@@ -1412,7 +1412,7 @@ public class ResourceBindingService {
 
 ```mermaid
 flowchart LR
-    A[@Transactional] --> B[Propagation]
+    A["@Transactional"] --> B[Propagation]
     B --> C[Isolation Levels]
     C --> D[Rollback Rules]
     D --> E[Programmatic Tx]
@@ -1543,7 +1543,7 @@ public class ComparisonService {
 
 ```mermaid
 flowchart LR
-    A[@Transactional] --> B[Propagation]
+    A["@Transactional"] --> B[Propagation]
     B --> C[Isolation Levels]
     C --> D[Rollback Rules]
     D --> E[Programmatic Tx]
@@ -1750,7 +1750,7 @@ public class NarayanaConfig {
 
 ```mermaid
 flowchart LR
-    A[@Transactional] --> B[Propagation]
+    A["@Transactional"] --> B[Propagation]
     B --> C[Isolation Levels]
     C --> D[Rollback Rules]
     D --> E[Programmatic Tx]
@@ -2472,7 +2472,7 @@ public class RestSagaCoordinator {
 
 ```mermaid
 flowchart LR
-    A[@Transactional] --> B[Propagation]
+    A["@Transactional"] --> B[Propagation]
     B --> C[Isolation Levels]
     C --> D[Rollback Rules]
     D --> E[Programmatic Tx]
@@ -2776,7 +2776,7 @@ public class OrderedLockingService {
 
 ```mermaid
 flowchart LR
-    A[@Transactional] --> B[Propagation]
+    A["@Transactional"] --> B[Propagation]
     B --> C[Isolation Levels]
     C --> D[Rollback Rules]
     D --> E[Programmatic Tx]
@@ -3067,7 +3067,7 @@ public class AccountController {
 
 ```mermaid
 flowchart LR
-    A[@Transactional] --> B[Propagation]
+    A["@Transactional"] --> B[Propagation]
     B --> C[Isolation Levels]
     C --> D[Rollback Rules]
     D --> E[Programmatic Tx]
@@ -3282,7 +3282,7 @@ public class MultiDataSourceService {
 
 ```mermaid
 flowchart LR
-    A[@Transactional] --> B[Propagation]
+    A["@Transactional"] --> B[Propagation]
     B --> C[Isolation Levels]
     C --> D[Rollback Rules]
     D --> E[Programmatic Tx]
@@ -3599,7 +3599,7 @@ public class TransactionCourseApplication {
 
 ```mermaid
 flowchart LR
-    A[@Transactional] --> B[Propagation]
+    A["@Transactional"] --> B[Propagation]
     B --> C[Isolation Levels]
     C --> D[Rollback Rules]
     D --> E[Programmatic Tx]
@@ -3643,7 +3643,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    A[@Transactional] --> B[Propagation]
+    A["@Transactional"] --> B[Propagation]
     B --> C[Isolation Levels]
     C --> D[Rollback Rules]
     D --> E[Programmatic Tx]

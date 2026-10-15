@@ -2117,10 +2117,10 @@ console.log('Range scan [5, 15]: ' + JSON.stringify(tree.rangeScan(5, 15)));
 ```mermaid
 flowchart TD
     subgraph "Index Types"
-        B[B+ Tree Index<br/>O(log n) search<br/>Range scans efficient<br/>Ordered output] --> U[Use: General purpose<br/>Primary/Unique keys<br/>Range queries]
-        H[Hash Index<br/>O(1) lookup<br/>No range scans<br/>Unordered output] --> U2[Use: Equality lookups<br/>Exact match queries<br/>In-memory caches]
-        G[GiST/SP-GiST<br/>O(log n)<br/>Geometric search<br/>Custom operators] --> U3[Use: Geospatial data<br/>Full-text search<br/>Network addresses]
-        F[Full-Text Index<br/>Inverted file<br/>Token-based<br/>Ranked results] --> U4[Use: Document search<br/>Text mining<br/>Search engine]
+        B["B+ Tree Index<br/>O(log n) search<br/>Range scans efficient<br/>Ordered output"] --> U["Use: General purpose<br/>Primary/Unique keys<br/>Range queries"]
+        H["Hash Index<br/>O(1) lookup<br/>No range scans<br/>Unordered output"] --> U2["Use: Equality lookups<br/>Exact match queries<br/>In-memory caches"]
+        G["GiST/SP-GiST<br/>O(log n)<br/>Geometric search<br/>Custom operators"] --> U3["Use: Geospatial data<br/>Full-text search<br/>Network addresses"]
+        F["Full-Text Index<br/>Inverted file<br/>Token-based<br/>Ranked results"] --> U4["Use: Document search<br/>Text mining<br/>Search engine"]
     end
 ```
 

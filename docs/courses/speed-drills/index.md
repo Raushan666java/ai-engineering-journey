@@ -36,12 +36,12 @@ graph LR
 ### The Skill Improvement Curve
 
 ```mermaid
-lineChart
-title Speed-Accuracy Growth Over 30 Days
-x-axis ["Day 1", "Day 5", "Day 10", "Day 15", "Day 20", "Day 25", "Day 30"]
-dataset "Speed (Qs/min)" [2, 3, 4, 5, 5.5, 6, 7]
-dataset "Accuracy (%)" [55, 65, 72, 80, 85, 88, 92]
-dataset "Composite Score" [110, 195, 288, 400, 468, 528, 644]
+xychart-beta
+    title "Speed-Accuracy Growth Over 30 Days"
+    x-axis ["Day 1", "Day 5", "Day 10", "Day 15", "Day 20", "Day 25", "Day 30"]
+    line [2, 3, 4, 5, 5.5, 6, 7]
+    line [55, 65, 72, 80, 85, 88, 92]
+    line [110, 195, 288, 400, 468, 528, 644]
 ```
 
 Your skill improvement follows three phases:

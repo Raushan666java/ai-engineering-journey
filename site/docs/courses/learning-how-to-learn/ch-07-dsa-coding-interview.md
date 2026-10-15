@@ -3064,7 +3064,7 @@ class LearningSystem {
 
 flowchart LR
 
-    subgraph Prep[Phase 1: Before Interview]
+    subgraph Prep["Phase 1: Before Interview"]
 
         P1a[48h: Anki review + mock]
 
@@ -3076,7 +3076,7 @@ flowchart LR
 
     end
 
-    subgraph During[Phase 2-4: Interview]
+    subgraph During["Phase 2-4: Interview"]
 
         P2[Opening: Clarify requirements] --> P3[Problem Solving: 3-Pass Method]
 
@@ -3084,7 +3084,7 @@ flowchart LR
 
     end
 
-    subgraph After[Phase 5: Follow-up]
+    subgraph After["Phase 5: Follow-up"]
 
         P5a[Send thank-you note]
 

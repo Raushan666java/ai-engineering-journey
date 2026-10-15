@@ -4,14 +4,14 @@
 ## Skill Tracking
 
 ```mermaid
-lineChart
-title Quant Arithmetic Accuracy Progression
-x-axis ["Day 1", "Day 7", "Day 14", "Day 21", "Day 28"]
-dataset "Addition/Subtraction" [60, 72, 82, 90, 95]
-dataset "Multiplication/Division" [55, 68, 78, 85, 92]
-dataset "Percentages/Fractions" [50, 65, 75, 82, 90]
-dataset "Squares/Cubes/Roots" [45, 60, 72, 80, 88]
-dataset "Approximation" [58, 70, 80, 86, 92]
+xychart-beta
+    title "Quant Arithmetic Accuracy Progression"
+    x-axis ["Day 1", "Day 7", "Day 14", "Day 21", "Day 28"]
+    line [60, 72, 82, 90, 95]
+    line [55, 68, 78, 85, 92]
+    line [50, 65, 75, 82, 90]
+    line [45, 60, 72, 80, 88]
+    line [58, 70, 80, 86, 92]
 ```
 
 ---
@@ -1539,14 +1539,14 @@ Estimate the sum to the nearest 100 or 1000.
 ### Progress Visualization
 
 ```mermaid
-lineChart
-title Your Accuracy by Category
-x-axis ["Set 1", "Set 2", "Set 3", "Set 4", "Set 5", "Set 6", "Set 7", "Set 8", "Set 9", "Set 10"]
-dataset "Addition/Subtraction" [60, 70, 75, 70, 80, 78, 85, 82, 88, 92]
-dataset "Multiplication/Division" [55, 60, 65, 62, 70, 72, 78, 75, 82, 88]
-dataset "Percentages/Fractions" [50, 60, 68, 65, 72, 75, 78, 80, 85, 90]
-dataset "Squares/Cubes/Roots" [45, 58, 65, 70, 78, 0, 0, 0, 0, 0]
-dataset "Approximation" [58, 65, 70, 72, 75, 78, 80, 82, 85, 90]
+xychart-beta
+    title "Your Accuracy by Category"
+    x-axis ["Set 1", "Set 2", "Set 3", "Set 4", "Set 5", "Set 6", "Set 7", "Set 8", "Set 9", "Set 10"]
+    line [60, 70, 75, 70, 80, 78, 85, 82, 88, 92]
+    line [55, 60, 65, 62, 70, 72, 78, 75, 82, 88]
+    line [50, 60, 68, 65, 72, 75, 78, 80, 85, 90]
+    line [45, 58, 65, 70, 78, 0, 0, 0, 0, 0]
+    line [58, 65, 70, 72, 75, 78, 80, 82, 85, 90]
 ```
 
 ### Milestones

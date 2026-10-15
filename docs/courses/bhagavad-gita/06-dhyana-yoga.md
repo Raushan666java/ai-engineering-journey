@@ -638,7 +638,7 @@ flowchart TB
 
 ```mermaid
 mindmap
-  root[(Dhyana Yoga)]
+  root["(Dhyana Yoga)"]
     Who is the yogi
       Acts without dependence
       Renounces thoughts

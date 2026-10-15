@@ -1817,7 +1817,7 @@ Once your reproduction works, share it. This builds your portfolio and helps the
 ```mermaid
 flowchart TB
     subgraph Blog["Blog Post Structure"]
-        A[Title: How I Reproduced [Paper Name]] --> B[Motivation: Why this paper?]
+        A[Title: How I Reproduced [Paper Name]] --> B["Motivation: Why this paper?"]
         B --> C[Key Insights from the Paper]
         C --> D[Implementation Details]
         D --> E[Results & Benchmarks]

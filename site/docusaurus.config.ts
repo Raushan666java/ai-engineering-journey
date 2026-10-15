@@ -22,6 +22,12 @@ const config: Config = {
   tagline: 'Complete Learning Path - Backend + AI Engineer',
   favicon: 'img/favicon.ico',
 
+  // Required for ```mermaid blocks to render. themeConfig.mermaid below only
+  // styles an already-registered theme; without this entry Mermaid is never
+  // loaded and every diagram renders as a literal code block. This affected
+  // 2,988 diagrams across the site.
+  themes: ['@docusaurus/theme-mermaid'],
+
   url: 'https://raushan666java.github.io',
   baseUrl: '/ai-engineering-journey/',
 

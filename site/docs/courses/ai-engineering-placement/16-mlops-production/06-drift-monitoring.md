@@ -67,13 +67,13 @@ Drift in ML systems refers to changes in the statistical properties of data or r
 ```mermaid
 flowchart TB
     subgraph Data Drift[Data Drift — Input distribution changes]
-        DD[P(X) changes]
+        DD["P(X) changes"]
     end
     subgraph Concept Drift[Concept Drift — Relationship changes]
-        CD[P(Y|X) changes]
+        CD["P(Y|X) changes"]
     end
     subgraph Prediction Drift[Prediction Drift — Output changes]
-        PD[P(Y_hat) changes]
+        PD["P(Y_hat) changes"]
     end
     Data Drift --> PD
     Concept Drift --> PD

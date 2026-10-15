@@ -439,7 +439,7 @@ flowchart TB
 
 ```mermaid
 mindmap
-  root[(Karma-Sanyasa Yoga)]
+  root["(Karma-Sanyasa Yoga)"]
     The question
       Which is better
       Both reach the summit

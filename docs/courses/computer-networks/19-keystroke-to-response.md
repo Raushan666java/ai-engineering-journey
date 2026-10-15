@@ -11,7 +11,9 @@
 5. Distinguish a function call from a syscall, and a thread from a process, in terms of what the kernel must do for each.
 6. Diagnose a slow or hung request by locating which stage of the pipeline is responsible.
 
-![From Keystroke to Response](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch19-keystroke-to-response.png)
+> **Diagram note:** the four Mermaid diagrams in this chapter are the visual source. The
+> raster asset for this chapter has not been generated yet; run the repo's diagram pipeline
+> to produce `assets/images/diagrams/computer-networks/ch19-keystroke-to-response.png`.
 
 ## Table of Contents
 

@@ -43,35 +43,35 @@ This is a **single, unified placement course** for software developers targeting
 
 ```mermaid
 flowchart LR
-    subgraph M1[Module 1: Foundations]
+    subgraph M1["Module 1: Foundations"]
         P1[Python<br/>14 ch] --> SQL[SQL<br/>10 ch]
         SQL --> DSA[DSA<br/>18 ch]
         DSA --> GLC[Git/Linux<br/>9 ch]
         GLC --> STAT[Stats/Math<br/>8 ch]
     end
-    subgraph M2[Module 2: Backend & Data]
+    subgraph M2["Module 2: Backend & Data"]
         FB[FastAPI<br/>10 ch] --> DKC[Docker/K8s<br/>13 ch]
         DKC --> SD[System Design<br/>14 ch]
         SD --> DE[Data Eng<br/>5 ch]
     end
-    subgraph M3[Module 3: ML & DL]
+    subgraph M3["Module 3: ML & DL"]
         ML[ML<br/>12 ch] --> DL[PyTorch/DL<br/>10 ch]
         DL --> NLP[NLP/Transformers<br/>8 ch]
     end
-    subgraph M4[Module 4: GenAI]
+    subgraph M4["Module 4: GenAI"]
         LLM[LLMs/Prompt<br/>8 ch] --> RAG[RAG<br/>16 ch]
         RAG --> AGE[Agents<br/>10 ch]
         AGE --> AAA[Adv Agents<br/>15 ch]
         AAA --> TMP[Trending AI/ML<br/>4 ch]
         TMP --> FT[Fine-Tuning<br/>8 ch]
     end
-    subgraph M5[Module 5: Production & Infra]
+    subgraph M5["Module 5: Production & Infra"]
         EVAL[Eval/Observ<br/>6 ch] --> MLOps[MLOps<br/>8 ch]
         MLOps --> SEC[Security<br/>6 ch]
         SEC --> MM[Multimodal<br/>6 ch]
         MM --> AIF[AI Infra<br/>9 ch]
     end
-    subgraph M6[Module 6: Career, Growth & Mastery]
+    subgraph M6["Module 6: Career, Growth & Mastery"]
         CAP[Capstones<br/>5 ch] --> PORT[Portfolio<br/>6 ch]
         PORT --> INT[Interview<br/>19 ch]
         INT --> PT[Product Thinking<br/>5 ch]

@@ -55,6 +55,7 @@ Upon completion, students will be able to:
 | 16 | Cloud Networking | VPC, load balancers, CDN, DNS management, Direct Connect |
 | 17 | Troubleshooting | ping, traceroute, tcpdump, Wireshark, iperf, common issues |
 | 18 | Modern Networking | QUIC, HTTP/3, 5G core, IoT, edge computing, network automation |
+| 19 | From Keystroke to Response | How the OS and the network work together: interrupts, syscalls, sockets, handshakes, routing, latency |
 
 ## Grading Scheme
 

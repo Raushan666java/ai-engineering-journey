@@ -151,17 +151,17 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    A[Default occurs<br/>(> ₹1 lakh)] --> B[Financial Creditor /<br/>Operational Creditor /<br/>Corporate Applicant files application]
-    B --> C[NCLT Adjudication<br/>90 days to admit/reject]
+    A["Default occurs<br/>(> ₹1 lakh)"] --> B["Financial Creditor /<br/>Operational Creditor /<br/>Corporate Applicant files application"]
+    B --> C["NCLT Adjudication<br/>90 days to admit/reject"]
     C --> D{Admitted?}
-    D -->|Yes| E[Moratorium declared<br/>(Section 14)]
+    D -->|Yes| E["Moratorium declared<br/>(Section 14)"]
     D -->|No| F[Appeal to NCLAT]
-    E --> G[Interim Resolution<br/>Professional appointed]
-    G --> H[CIRP - 180 days<br/>extendable by 90 days]
-    H --> I[Committee of Creditors<br/>approves resolution plan]
+    E --> G["Interim Resolution<br/>Professional appointed"]
+    G --> H["CIRP - 180 days<br/>extendable by 90 days"]
+    H --> I["Committee of Creditors<br/>approves resolution plan"]
     I --> J{NCLT Approval}
     J -->|Yes| K[Resolution implemented]
-    J -->|No| L[Liquidation<br/>within 90 days]
+    J -->|No| L["Liquidation<br/>within 90 days"]
     
     style A fill:#e83737,color:#fff
     style K fill:#4CAF50,color:#fff

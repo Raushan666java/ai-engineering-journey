@@ -10,7 +10,9 @@ import {courses, coursesByCategory, categoryColors} from '../data/courses';
 const features = [
   {
     title: 'Complete Curriculum',
-    description: '56 courses covering Core CS, Python, ML, Deep Learning, LLMs, RAG, AI Agents, System Design, and more.',
+    // Derived, not hardcoded. This previously said "56 courses" while the page
+    // below it listed 59, because the number drifted when courses were added.
+    description: `${courses.length} courses covering Core CS, Python, ML, Deep Learning, LLMs, RAG, AI Agents, System Design, and more.`,
     link: '/courses',
   },
   {

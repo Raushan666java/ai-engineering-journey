@@ -260,7 +260,7 @@ flowchart TB
     B1 --> E{ओशो का संश्लेषण}
     C3 --> E
     D2 --> E
-    E --> F[(साक्षी भाव — शिवत्व)]
+    E --> F["(साक्षी भाव — शिवत्व)"]
 
     style A fill:#ff6600,color:#fff
     style F fill:#ff9900,color:#fff

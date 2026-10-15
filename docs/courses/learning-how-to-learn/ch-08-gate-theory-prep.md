@@ -766,13 +766,13 @@ Track 1 (daily, 45-60 min)         Track 2 (daily, 90-120 min)
 
 ```mermaid
 flowchart LR
-    subgraph Track1[Track 1: Foundation - Breadth]
+    subgraph Track1["Track 1: Foundation - Breadth"]
         T1a[45-60 min daily] --> T1b[Survey all subjects]
         T1b --> T1c[Create overview notes]
         T1c --> T1d[Quick revision cycles]
         T1d --> T1e[SM-2 spaced repetition]
     end
-    subgraph Track2[Track 2: Deep Dive - Depth]
+    subgraph Track2["Track 2: Deep Dive - Depth"]
         T2a[90-120 min daily] --> T2b[Master 2-3 subjects]
         T2b --> T2c[Detailed cheat sheets]
         T2c --> T2d[Solve PYQs subject-wise]

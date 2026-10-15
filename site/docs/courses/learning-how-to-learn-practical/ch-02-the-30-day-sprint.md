@@ -85,16 +85,16 @@ Goal: Perform under pressure and teach others.
 
 ```mermaid
 flowchart LR
-    subgraph Phase1[Days 1-10: Foundation]
+    subgraph Phase1["Days 1-10: Foundation"]
         P1A[Core Concepts] --> P1B[Vocabulary]
         P1B --> P1C[First Working Example]
         P1C --> P1D[Connect Concepts]
     end
-    subgraph Phase2[Days 11-20: Core]
+    subgraph Phase2["Days 11-20: Core"]
         P2A[Guided Practice] --> P2B[Unguided Practice]
         P2B --> P2C[Variation]
     end
-    subgraph Phase3[Days 21-30: Mastery]
+    subgraph Phase3["Days 21-30: Mastery"]
         P3A[Timed Practice] --> P3B[Teach Someone]
         P3B --> P3C[Spaced Review]
     end

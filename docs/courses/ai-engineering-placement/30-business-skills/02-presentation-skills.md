@@ -633,22 +633,22 @@ A well-structured presentation guides the audience step by step. The most effect
 
 ```mermaid
 flowchart TD
-    subgraph Act1[Act 1: Problem]
+    subgraph Act1["Act 1: Problem"]
         A1[What problem are we solving?]
         A2[Why does it matter?]
         A3[What happens if we don't solve it?]
     end
-    subgraph Act2[Act 2: Approach]
+    subgraph Act2["Act 2: Approach"]
         B1[How did we solve it?]
         B2[What alternatives did we consider?]
         B3[Why this approach?]
     end
-    subgraph Act3[Act 3: Results]
+    subgraph Act3["Act 3: Results"]
         C1[What happened?]
         C2[Key metrics before vs after]
         C3[Qualitative feedback]
     end
-    subgraph Act4[Act 4: Impact]
+    subgraph Act4["Act 4: Impact"]
         D1[What does this mean?]
         D2[What should we do next?]
         D3[What resources are needed?]

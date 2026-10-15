@@ -1239,27 +1239,27 @@ The AI Maturity Model helps organizations assess their current AI capability and
 
 ```mermaid
 flowchart LR
-    subgraph L1[Level 1: Experimenting]
+    subgraph L1["Level 1: Experimenting"]
         A1[Individual pilots]
         A2[No strategy]
         A3[Shadow AI]
     end
-    subgraph L2[Level 2: Foundational]
+    subgraph L2["Level 2: Foundational"]
         B1[Dedicated team]
         B2[First production AI]
         B3[Basic MLOps]
     end
-    subgraph L3[Level 3: Operational]
+    subgraph L3["Level 3: Operational"]
         C1[Multiple AI products]
         C2[Centralized ML platform]
         C3[Monitoring & retraining]
     end
-    subgraph L4[Level 4: Strategic]
+    subgraph L4["Level 4: Strategic"]
         D1[AI is core differentiator]
         D2[Data moat]
         D3[AI-led innovation]
     end
-    subgraph L5[Level 5: Transformational]
+    subgraph L5["Level 5: Transformational"]
         E1[AI-first culture]
         E2[Automated MLOps]
         E3[Industry leader]

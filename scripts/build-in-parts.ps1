@@ -100,32 +100,38 @@ foreach ($course in $courses) {
     $partDir = Join-Path $partsRoot $course
     $log = Join-Path $logDir "$course.log"
 
-    if (Test-Path $partDir) { Remove-Item $partDir -Recurse -Force -ErrorAction SilentlyContinue }
-
-    Get-Process node -ErrorAction SilentlyContinue |
-        Where-Object { $_.WorkingSet64 -gt 200MB } |
-        ForEach-Object { Stop-Process -Id $_.Id -Force -ErrorAction SilentlyContinue }
+    # Build into a scratch directory and swap only on success.
+    #
+    # Deleting the part first meant any failure destroyed the last good copy:
+    # repeated runs drove parts 59 -> 56 and lost courses entirely. A build that
+    # dies must leave the previous output untouched.
+    $staging = Join-Path $partsRoot "$course.incoming"
+    if (Test-Path $staging) { Remove-Item $staging -Recurse -Force -ErrorAction SilentlyContinue }
 
     $env:BUILD_ONLY = $course
     $env:NODE_OPTIONS = "--max-old-space-size=$heap"
 
     Push-Location $siteDir
-    & node ".\node_modules\@docusaurus\core\bin\docusaurus.mjs" build --no-minify --out-dir $partDir *> $log
+    & node ".\node_modules\@docusaurus\core\bin\docusaurus.mjs" build --no-minify --out-dir $staging *> $log
     $code = $LASTEXITCODE
     Pop-Location
 
     $html = 0
-    if (Test-Path $partDir) {
-        $html = (Get-ChildItem $partDir -Recurse -Filter *.html -File -ErrorAction SilentlyContinue |
+    if (Test-Path $staging) {
+        $html = (Get-ChildItem $staging -Recurse -Filter *.html -File -ErrorAction SilentlyContinue |
                  Measure-Object).Count
     }
 
     $mins = [math]::Round(((Get-Date) - $started).TotalMinutes, 1)
     if ($code -eq 0 -and $html -gt 0) {
+        if (Test-Path $partDir) { Remove-Item $partDir -Recurse -Force -ErrorAction SilentlyContinue }
+        Move-Item $staging $partDir -Force
         Write-Output ("[{0}/{1}] {2,-36} OK    {3,4} html  {4} min" -f $index, $courses.Count, $course, $html, $mins)
         $results += [pscustomobject]@{Course=$course; Status="OK"; Html=$html; Exit=$code; Minutes=$mins}
     } else {
-        Write-Output ("[{0}/{1}] {2,-36} FAIL  exit={3} html={4}  {5} min" -f $index, $courses.Count, $course, $code, $html, $mins)
+        # Keep whatever was there. Only discard the failed attempt.
+        if (Test-Path $staging) { Remove-Item $staging -Recurse -Force -ErrorAction SilentlyContinue }
+        Write-Output ("[{0}/{1}] {2,-36} FAIL  exit={3} html={4}  {5} min  (kept previous)" -f $index, $courses.Count, $course, $code, $html, $mins)
         $results += [pscustomobject]@{Course=$course; Status="FAIL"; Html=$html; Exit=$code; Minutes=$mins}
     }
 }

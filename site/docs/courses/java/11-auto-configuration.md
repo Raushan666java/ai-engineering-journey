@@ -50,7 +50,7 @@ By the end of this chapter, you will be able to:
 
 ```mermaid
 flowchart LR
-    A[@EnableAutoConfiguration] --> B[@Conditional Family]
+    A["@EnableAutoConfiguration"] --> B["@Conditional Family"]
     B --> C[Auto-Configuration Classes]
     C --> D[Custom Starters]
     D --> E[Configuration Properties]

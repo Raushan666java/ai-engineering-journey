@@ -729,12 +729,12 @@ Constitutional AI (CAI) is Anthropic's approach to alignment, used in Claude. It
 
 ```mermaid
 flowchart TB
-    subgraph Phase1[Phase 1: Supervised Self-Critique]
+    subgraph Phase1["Phase 1: Supervised Self-Critique"]
         A1[Generate Response] --> A2[Self-Critique against Constitution]
         A2 --> A3[Revise Response]
         A3 --> A4[Fine-tune on (harmful, revised) pairs]
     end
-    subgraph Phase2[Phase 2: RLAIF]
+    subgraph Phase2["Phase 2: RLAIF"]
         B1[Generate Two Responses] --> B2[AI Evaluates against Constitution]
         B2 --> B3[Preference Label from AI]
         B3 --> B4[Train Reward Model or DPO]

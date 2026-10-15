@@ -1078,7 +1078,7 @@ Local search answers entity-specific questions by grounding the query to specifi
 
 ```mermaid
 flowchart LR
-    A[Query: "How does GraphRAG use Leiden?"] --> B[Entity Extraction from Query]
+    A["Query: #quot;How does GraphRAG use Leiden?#quot;"] --> B[Entity Extraction from Query]
     B --> C[Ground to Knowledge Graph Entities]
     C --> D[Retrieve Entity's Community]
     D --> E[Get Community Summary]
@@ -1401,7 +1401,7 @@ Global search answers abstract, thematic, or comparative questions. It operates 
 
 ```mermaid
 flowchart TD
-    A[Query: "What are the main themes in GraphRAG research?"] --> B[Map Phase]
+    A["Query: #quot;What are the main themes in GraphRAG research?#quot;"] --> B[Map Phase]
     subgraph "Map Phase"
         B1[Community 0 Summary]
         B2[Community 1 Summary]

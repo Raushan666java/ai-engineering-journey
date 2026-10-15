@@ -1295,7 +1295,7 @@ timeline
 
 ```mermaid
 flowchart TD
-    subgraph AES_Encrypt[AES-128 Encryption (10 Rounds)]
+    subgraph AES_Encrypt ["AES-128 Encryption (10 Rounds)"]
         PT["Plaintext (128 bits)"] --> AK["AddRoundKey<br/>(XOR with Round Key 0)"]
         AK --> R1["Round 1-9"]
         R1 --> SB["SubBytes<br/>(S-box substitution)"]

@@ -3,15 +3,15 @@
 > Master synonyms, antonyms, sentence completion, error spotting, para jumbles, cloze tests, and reading comprehension through timed, structured practice.
 
 ```mermaid
-lineChart
-title Verbal Ability Accuracy Progression
-x-axis ["Set 1-2", "Set 3-4", "Set 5-6", "Set 7-8", "Set 9-10"]
-dataset "Synonyms/Antonyms" [65, 72, 78, 85, 90]
-dataset "Sentence Completion" [55, 64, 72, 78, 84]
-dataset "Error Spotting" [48, 58, 68, 76, 82]
-dataset "Para Jumbles" [42, 54, 64, 72, 80]
-dataset "Cloze Test" [50, 60, 70, 76, 82]
-dataset "Reading Comp" [45, 55, 65, 72, 78]
+xychart-beta
+    title "Verbal Ability Accuracy Progression"
+    x-axis ["Set 1-2", "Set 3-4", "Set 5-6", "Set 7-8", "Set 9-10"]
+    line [65, 72, 78, 85, 90]
+    line [55, 64, 72, 78, 84]
+    line [48, 58, 68, 76, 82]
+    line [42, 54, 64, 72, 80]
+    line [50, 60, 70, 76, 82]
+    line [45, 55, 65, 72, 78]
 ```
 
 ---
@@ -1002,15 +1002,15 @@ Artificial Intelligence (AI) has made remarkable strides in recent years. From s
 ### Final Performance Dashboard
 
 ```mermaid
-lineChart
-title Overall Speed Drill Performance
-x-axis ["Week 1", "Week 2", "Week 3", "Week 4"]
-dataset "Quant Arithmetic" [60, 70, 80, 88]
-dataset "Quant Advanced" [50, 62, 72, 82]
-dataset "Reasoning" [55, 65, 74, 82]
-dataset "Logical Reasoning" [45, 58, 68, 78]
-dataset "Verbal Ability" [52, 64, 72, 80]
-dataset "Composite" [52, 64, 73, 82]
+xychart-beta
+    title "Overall Speed Drill Performance"
+    x-axis ["Week 1", "Week 2", "Week 3", "Week 4"]
+    line [60, 70, 80, 88]
+    line [50, 62, 72, 82]
+    line [55, 65, 74, 82]
+    line [45, 58, 68, 78]
+    line [52, 64, 72, 80]
+    line [52, 64, 73, 82]
 ```
 
 ### Complete Course Summary

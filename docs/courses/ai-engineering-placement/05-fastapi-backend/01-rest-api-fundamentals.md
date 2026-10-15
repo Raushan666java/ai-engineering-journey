@@ -154,13 +154,13 @@ REST APIs use nouns (resources) not verbs (actions) in URLs.
 
 ```mermaid
 flowchart LR
-    A[/users] --> B[GET: List users]
-    A --> C[POST: Create user]
+    A[/users] --> B["GET: List users"]
+    A --> C["POST: Create user"]
     A --> D[/users/42]
-    D --> E[GET: Get user]
-    D --> F[PUT: Replace user]
-    D --> G[PATCH: Partial update]
-    D --> H[DELETE: Remove user]
+    D --> E["GET: Get user"]
+    D --> F["PUT: Replace user"]
+    D --> G["PATCH: Partial update"]
+    D --> H["DELETE: Remove user"]
     D --> I[/users/42/orders]
 ```
 

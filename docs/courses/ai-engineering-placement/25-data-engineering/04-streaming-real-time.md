@@ -60,12 +60,12 @@ flowchart LR
         DB[Database CDC]
     end
     subgraph Kafka[Apache Kafka Cluster]
-        subgraph Topic1[Topic: user-clicks]
+        subgraph Topic1["Topic: user-clicks"]
             P1[Partition 0]
             P2[Partition 1]
             P3[Partition 2]
         end
-        subgraph Topic2[Topic: transactions]
+        subgraph Topic2["Topic: transactions"]
             P4[Partition 0]
             P5[Partition 1]
         end

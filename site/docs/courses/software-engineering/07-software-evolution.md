@@ -171,10 +171,10 @@ graph TD
     classDef inadvertent fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
 
     subgraph "Technical Debt Quadrant"
-        RQ1[Reckless & Deliberate<br>"We don't have time for design"]:::reckless
-        RQ2[Reckless & Inadvertent<br>"What is a design pattern?"]:::reckless
-        RQ3[Prudent & Deliberate<br>"Ship now, fix next sprint"]:::prudent
-        RQ4[Prudent & Inadvertent<br>"Now we know what we should have done"]:::prudent
+        RQ1["Reckless & Deliberate<br>#quot;We don't have time for design#quot;"]:::reckless
+        RQ2["Reckless & Inadvertent<br>#quot;What is a design pattern?#quot;"]:::reckless
+        RQ3["Prudent & Deliberate<br>#quot;Ship now, fix next sprint#quot;"]:::prudent
+        RQ4["Prudent & Inadvertent<br>#quot;Now we know what we should have done#quot;"]:::prudent
     end
     
     RQ1 --> EX1["Quick hack without refactoring<br>Skipping tests for deadline"]:::deliberate

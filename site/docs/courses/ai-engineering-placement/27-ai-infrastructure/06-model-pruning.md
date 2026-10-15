@@ -1240,17 +1240,17 @@ Layer 2: shape (10, 32), sparsity = 50.00%
 ```mermaid
 flowchart LR
     subgraph Init_Methods["Pruning at Initialization Methods"]
-        A[SNIP<br/>|grad * weight|] --> B[Gradient-based<br/>score]
-        C[GraSP<br/>-weight * (Hessian @ grad)] --> D[Gradient flow<br/>preservation]
-        E[Synflow<br/>all-ones forward pass] --> F[Path strength<br/>product]
+        A["SNIP<br/>|grad * weight|"] --> B["Gradient-based<br/>score"]
+        C["GraSP<br/>-weight * (Hessian @ grad)"] --> D["Gradient flow<br/>preservation"]
+        E["Synflow<br/>all-ones forward pass"] --> F["Path strength<br/>product"]
     end
-    G[Untrained<br/>Model] --> A
+    G["Untrained<br/>Model"] --> A
     G --> C
     G --> E
-    A --> H[Pruned<br/>Subnetwork]
+    A --> H["Pruned<br/>Subnetwork"]
     C --> H
     E --> H
-    H --> I[Train from scratch<br/>with mask]
+    H --> I["Train from scratch<br/>with mask"]
     I --> J[Final Model]
 ```
 

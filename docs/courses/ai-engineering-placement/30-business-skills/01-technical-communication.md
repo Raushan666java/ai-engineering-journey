@@ -564,16 +564,16 @@ The C4 model (Context, Container, Component, Code) creates a hierarchy of diagra
 
 ```mermaid
 flowchart TB
-    subgraph L1[Level 1: System Context]
+    subgraph L1["Level 1: System Context"]
         A1[System<br/>Shows the whole system<br/>as a single box<br/>Audience: Everyone]
     end
-    subgraph L2[Level 2: Container]
+    subgraph L2["Level 2: Container"]
         A2[Containers<br/>Shows services, databases,<br/>message queues<br/>Audience: Developers, Ops]
     end
-    subgraph L3[Level 3: Component]
+    subgraph L3["Level 3: Component"]
         A3[Components<br/>Shows internal modules<br/>of a single container<br/>Audience: Developers]
     end
-    subgraph L4[Level 4: Code]
+    subgraph L4["Level 4: Code"]
         A4[Code<br/>Shows classes, functions,<br/>interfaces<br/>Audience: Developers]
     end
     L1 --> L2 --> L3 --> L4

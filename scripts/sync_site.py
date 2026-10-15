@@ -38,6 +38,40 @@ def split_frontmatter(raw: bytes) -> tuple[bytes, bytes]:
     return raw[: m.end()], raw[m.end():]
 
 
+def build_frontmatter(src: pathlib.Path, rel: pathlib.Path, dst: pathlib.Path) -> bytes:
+    """Frontmatter for a page that has no site copy yet.
+
+    Mirrors what the sibling pages carry: an explicit id, slug, title,
+    sidebar_label and sidebar_position. The slug is what pins the URL; without
+    it Docusaurus derives one from the docs path and strips the NN- prefix, so
+    the new page would not sit beside its siblings.
+    """
+    rel_posix = rel.as_posix()
+    stem = rel.name[:-3] if rel.name.endswith(".md") else rel.name
+    course = rel.parent.name if len(rel.parts) > 1 else ""
+    slug = f"/{course}/{stem}" if course else f"/{stem}"
+
+    raw = src.read_text(encoding="utf-8", errors="replace")
+    m = re.search(r"^#\s+(.+?)\s*$", raw, re.M)
+    title = m.group(1).strip() if m else stem
+
+    def esc(s: str) -> str:
+        return s.replace("\\", "\\\\").replace('"', '\\"')
+
+    pos = re.match(r"^(\d+)", stem)
+    position = pos.group(1) if pos else "1"
+
+    return (
+        "---\n"
+        f"id: {stem}\n"
+        f"slug: {slug}\n"
+        f'title: "{esc(title)}"\n'
+        f'sidebar_label: "{esc(title)}"\n'
+        f"sidebar_position: {position}\n"
+        "---\n"
+    ).encode("utf-8")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true")
@@ -64,7 +98,13 @@ def main() -> int:
             changed.append(rel.as_posix())
             if args.apply:
                 dst.parent.mkdir(parents=True, exist_ok=True)
-                dst.write_bytes(src_raw)
+                # A new page needs frontmatter. Without an explicit slug,
+                # Docusaurus routes it under the docs/ tree and strips the
+                # numeric filename prefix, so 19-keystroke-to-response lands at
+                # /courses/computer-networks/keystroke-to-response/ while every
+                # sibling sits at /<course>/<NN>-<slug>.
+                fm_new = build_frontmatter(src, rel, dst)
+                dst.write_bytes(fm_new + b"\n" + src_raw)
             continue
 
         dst_raw = dst.read_bytes()

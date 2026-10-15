@@ -45,14 +45,25 @@ function Merge-Parts {
 
     $parts = Get-ChildItem $partsRoot -Directory -ErrorAction SilentlyContinue
     foreach ($p in $parts) {
-        Get-ChildItem $p.FullName -Force | ForEach-Object {
-            $dest = Join-Path $OutDir $_.Name
-            Copy-Item $_.FullName -Destination $dest -Recurse -Force
-        }
+        # robocopy /E copies the CONTENTS of the part into the destination.
+        # Copying a folder path as -Destination would instead nest it, so every
+        # shared top-level entry (img, assets, courses, search) would grow a
+        # copy of itself -- img/img, assets/assets -- and the real diagram
+        # images would vanish from their expected path. /IS copies identical
+        # files too, so each part contributes rather than skipping.
+        robocopy $p.FullName $OutDir /E /IS /NFL /NDL /NJH /NJS /NP | Out-Null
     }
     $merged = Get-ChildItem $OutDir -Recurse -File -ErrorAction SilentlyContinue
     $html = ($merged | Where-Object { $_.Extension -eq ".html" } | Measure-Object).Count
     Write-Output "merged: $($merged.Count) files, $html html pages"
+
+    # A nested copy of a shared folder is the signature of a bad merge.
+    $nested = Get-ChildItem $OutDir -Directory | Where-Object {
+        Test-Path (Join-Path $_.FullName $_.Name)
+    }
+    if ($nested) {
+        Write-Output "WARNING nested duplicate folders: $($nested.Name -join ', ')"
+    }
 }
 
 if ($MergeOnly) { Merge-Parts; exit 0 }

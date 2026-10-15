@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-computer-networks-19-keystroke-to-response-md-b52.json
-const site_docs_courses_computer_networks_19_keystroke_to_response_md_b52_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/computer-networks/keystroke-to-response","title":"Chapter 19: From Keystroke to Response — How the OS and Network Work Together","description":"GFG/Javatpoint Depth — Processes vs threads, the syscall boundary, file descriptors, sockets, the three-way handshake, DNS, routing, accept/fork, latency budgets, and where user space ends","source":"@site/docs/courses/computer-networks/19-keystroke-to-response.md","sourceDirName":"courses/computer-networks","slug":"/courses/computer-networks/keystroke-to-response","permalink":"/ai-engineering-journey/courses/computer-networks/keystroke-to-response","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":19,"frontMatter":{},"sidebar":"course-computer-networks","previous":{"title":"Chapter 18: Modern Networking → Complete Reference","permalink":"/ai-engineering-journey/computer-networks/18-modern"},"next":{"title":"Computer Networks — Complete Course Textbook","permalink":"/ai-engineering-journey/computer-networks"}}');
+const site_docs_courses_computer_networks_19_keystroke_to_response_md_b52_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/computer-networks/19-keystroke-to-response","title":"Chapter 19: From Keystroke to Response — How the OS and Network Work Together","description":"GFG/Javatpoint Depth — Processes vs threads, the syscall boundary, file descriptors, sockets, the three-way handshake, DNS, routing, accept/fork, latency budgets, and where user space ends","source":"@site/docs/courses/computer-networks/19-keystroke-to-response.md","sourceDirName":"courses/computer-networks","slug":"/computer-networks/19-keystroke-to-response","permalink":"/ai-engineering-journey/computer-networks/19-keystroke-to-response","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":19,"frontMatter":{"id":"19-keystroke-to-response","slug":"/computer-networks/19-keystroke-to-response","title":"Chapter 19: From Keystroke to Response — How the OS and Network Work Together","sidebar_label":"Chapter 19: From Keystroke to Response","sidebar_position":19},"sidebar":"course-computer-networks","previous":{"title":"Chapter 18: Modern Networking → Complete Reference","permalink":"/ai-engineering-journey/computer-networks/18-modern"},"next":{"title":"Computer Networks — Complete Course Textbook","permalink":"/ai-engineering-journey/computer-networks"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(4848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -26,7 +26,13 @@ var lib = __webpack_require__(8453);
 ;// ./docs/courses/computer-networks/19-keystroke-to-response.md
 
 
-const frontMatter = {};
+const frontMatter = {
+	id: '19-keystroke-to-response',
+	slug: '/computer-networks/19-keystroke-to-response',
+	title: 'Chapter 19: From Keystroke to Response — How the OS and Network Work Together',
+	sidebar_label: 'Chapter 19: From Keystroke to Response',
+	sidebar_position: 19
+};
 const contentTitle = 'Chapter 19: From Keystroke to Response — How the OS and Network Work Together';
 
 const assets = {

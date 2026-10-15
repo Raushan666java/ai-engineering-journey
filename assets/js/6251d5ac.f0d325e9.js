@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-computer-networks-index-md-625.json
-const site_docs_courses_computer_networks_index_md_625_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/computer-networks/index","title":"Computer Networks — Complete Course Textbook","description":"Course Code: CN-401","source":"@site/docs/courses/computer-networks/index.md","sourceDirName":"courses/computer-networks","slug":"/computer-networks","permalink":"/ai-engineering-journey/computer-networks","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":19,"frontMatter":{"id":"index","slug":"/computer-networks","title":"Computer Networks — Complete Course Textbook","sidebar_label":"Computer Networks — Complete Course Textbook","sidebar_position":19},"sidebar":"course-computer-networks","previous":{"title":"Chapter 18: Modern Networking → Complete Reference","permalink":"/ai-engineering-journey/computer-networks/18-modern"}}');
+const site_docs_courses_computer_networks_index_md_625_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/computer-networks/index","title":"Computer Networks — Complete Course Textbook","description":"Course Code: CN-401","source":"@site/docs/courses/computer-networks/index.md","sourceDirName":"courses/computer-networks","slug":"/computer-networks","permalink":"/ai-engineering-journey/computer-networks","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":19,"frontMatter":{"id":"index","slug":"/computer-networks","title":"Computer Networks — Complete Course Textbook","sidebar_label":"Computer Networks — Complete Course Textbook","sidebar_position":19},"sidebar":"course-computer-networks","previous":{"title":"Chapter 19: From Keystroke to Response — How the OS and Network Work Together","permalink":"/ai-engineering-journey/courses/computer-networks/keystroke-to-response"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(4848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -141,7 +141,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "chapter-list",
       children: "Chapter List"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
         children: (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.th, {
@@ -296,6 +296,14 @@ function _createMdxContent(props) {
             children: "Modern Networking"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "QUIC, HTTP/3, 5G core, IoT, edge computing, network automation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "From Keystroke to Response"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "How the OS and the network work together: interrupts, syscalls, sockets, handshakes, routing, latency"
           })]
         })]
       })]

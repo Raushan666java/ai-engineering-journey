@@ -1,0 +1,2176 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[8586],{
+
+/***/ 35651
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_engineering_placement_01_python_programming_14_data_visualization_md_e18_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-01-python-programming-14-data-visualization-md-e18.json
+const site_docs_courses_ai_engineering_placement_01_python_programming_14_data_visualization_md_e18_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/python-programming/14-data-visualization","title":"Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards","description":"Learning Objectives","source":"@site/docs/courses/ai-engineering-placement/01-python-programming/14-data-visualization.md","sourceDirName":"courses/ai-engineering-placement/01-python-programming","slug":"/ai-engineering-placement/01-python-programming/14-data-visualization","permalink":"/ai-engineering-journey/ai-engineering-placement/01-python-programming/14-data-visualization","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":23,"frontMatter":{"id":"14-data-visualization","slug":"/ai-engineering-placement/01-python-programming/14-data-visualization","title":"Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards","sidebar_label":"Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards","sidebar_position":23},"sidebar":"placementSidebar","previous":{"title":"Pandas Advanced — Pivot Tables, Multi-Index, Window Functions, Performance","permalink":"/ai-engineering-journey/ai-engineering-placement/01-python-programming/13-pandas-advanced"},"next":{"title":"Visual Notes","permalink":"/ai-engineering-journey/ai-engineering-placement/01-python-programming/visual-notes"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-engineering-placement/01-python-programming/14-data-visualization.md
+
+
+const frontMatter = {
+	id: '14-data-visualization',
+	slug: '/ai-engineering-placement/01-python-programming/14-data-visualization',
+	title: 'Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards',
+	sidebar_label: 'Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards',
+	sidebar_position: 23
+};
+const contentTitle = 'Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Introduction",
+  "id": "introduction",
+  "level": 2
+}, {
+  "value": "Key Terminology",
+  "id": "key-terminology",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "14.1 Matplotlib Pyplot",
+  "id": "141-matplotlib-pyplot",
+  "level": 2
+}, {
+  "value": "14.2 Customization",
+  "id": "142-customization",
+  "level": 2
+}, {
+  "value": "14.3 Subplots",
+  "id": "143-subplots",
+  "level": 2
+}, {
+  "value": "14.4 Seaborn",
+  "id": "144-seaborn",
+  "level": 2
+}, {
+  "value": "14.5 Plotly Interactive",
+  "id": "145-plotly-interactive",
+  "level": 2
+}, {
+  "value": "14.6 Dashboards",
+  "id": "146-dashboards",
+  "level": 2
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Interview Q&amp;A",
+  "id": "interview-qa",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Common Mistakes",
+  "id": "common-mistakes",
+  "level": 2
+}, {
+  "value": "Revision Notes",
+  "id": "revision-notes",
+  "level": 2
+}, {
+  "value": "Placement Section",
+  "id": "placement-section",
+  "level": 2
+}, {
+  "value": "Top 10 Interview Questions",
+  "id": "top-10-interview-questions",
+  "level": 3
+}, {
+  "value": "Google Style",
+  "id": "google-style",
+  "level": 4
+}, {
+  "value": "Amazon Style",
+  "id": "amazon-style",
+  "level": 4
+}, {
+  "value": "Microsoft Style",
+  "id": "microsoft-style",
+  "level": 4
+}, {
+  "value": "NVIDIA Style",
+  "id": "nvidia-style",
+  "level": 4
+}, {
+  "value": "AI Startup Style",
+  "id": "ai-startup-style",
+  "level": 4
+}, {
+  "value": "Resume Tips",
+  "id": "resume-tips",
+  "level": 3
+}, {
+  "value": "Interview Day Checklist",
+  "id": "interview-day-checklist",
+  "level": 3
+}, {
+  "value": "True/False",
+  "id": "truefalse",
+  "level": 2
+}, {
+  "value": "Fill in the Blank",
+  "id": "fill-in-the-blank",
+  "level": 2
+}, {
+  "value": "Scenario Questions",
+  "id": "scenario-questions",
+  "level": 2
+}, {
+  "value": "Output Questions",
+  "id": "output-questions",
+  "level": 2
+}, {
+  "value": "Difficulty Level",
+  "id": "difficulty-level",
+  "level": 2
+}, {
+  "value": "Tips &amp; Tricks",
+  "id": "tips--tricks",
+  "level": 2
+}, {
+  "value": "Memory Tricks",
+  "id": "memory-tricks",
+  "level": 2
+}, {
+  "value": "Further Reading",
+  "id": "further-reading",
+  "level": 2
+}, {
+  "value": "Related Topics",
+  "id": "related-topics",
+  "level": 2
+}, {
+  "value": "FAQs",
+  "id": "faqs",
+  "level": 2
+}, {
+  "value": "Important Notes",
+  "id": "important-notes",
+  "level": 2
+}, {
+  "value": "Historical Context",
+  "id": "historical-context",
+  "level": 2
+}, {
+  "value": "Security Considerations",
+  "id": "security-considerations",
+  "level": 2
+}, {
+  "value": "ML Intuition",
+  "id": "ml-intuition",
+  "level": 2
+}, {
+  "value": "Analogies",
+  "id": "analogies",
+  "level": 2
+}, {
+  "value": "Flashcards",
+  "id": "flashcards",
+  "level": 2
+}, {
+  "value": "Research References",
+  "id": "research-references",
+  "level": 2
+}, {
+  "value": "Open-Source Tools",
+  "id": "open-source-tools",
+  "level": 2
+}, {
+  "value": "Debugging Guide",
+  "id": "debugging-guide",
+  "level": 2
+}, {
+  "value": "Mock Interview Section",
+  "id": "mock-interview-section",
+  "level": 2
+}, {
+  "value": "Optimized Implementation",
+  "id": "optimized-implementation",
+  "level": 2
+}, {
+  "value": "Evaluation Metrics",
+  "id": "evaluation-metrics",
+  "level": 2
+}, {
+  "value": "Real-World Examples",
+  "id": "real-world-examples",
+  "level": 2
+}, {
+  "value": "Limitations",
+  "id": "limitations",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    button: "button",
+    code: "code",
+    details: "details",
+    div: "div",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "data-visualization--matplotlib-seaborn-plotly-dashboards",
+        children: "Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Objective"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Create publication-quality plots with Matplotlib's pyplot API"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use Seaborn for statistical visualizations with attractive defaults"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Build interactive visualizations with Plotly and Plotly Express"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Create multi-plot figures with subplots and custom layouts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Customize plot aesthetics: colors, styles, annotations, themes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Design simple dashboards for data exploration and communication"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "introduction",
+      children: "Introduction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and libraries is non-negotiable for building ML pipelines, APIs, and automation scripts. This module covers everything from basics to advanced concurrency."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "key-terminology",
+      children: "Key Terminology"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Understanding data visualization is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how data visualization works in practice."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Matplotlib Pyplot"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "figure, axes, plot, scatter, bar, hist"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Customization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "colors, styles, annotations, legends, spines"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Subplots"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "subplots, GridSpec, inset_axes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Seaborn"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "relplot, displot, catplot, heatmap, pairplot"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Plotly Interactive"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "plotly.express, go.Figure, animations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14.6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dashboards"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ipywidgets, panel, dashboard layout design"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\r\n    A[Data Visualization] --> B[Matplotlib]\r\n    A --> C[Seaborn]\r\n    A --> D[Plotly]\r\n    A --> E[Dashboards]\r\n    B --> F[pyplot API]\r\n    B --> G[Customization]\r\n    B --> H[Subplots]\r\n    C --> I[Statistical Plots]\r\n    C --> J[Heatmaps / Pairplots]\r\n    D --> K[Interactive Charts]\r\n    D --> L[Animations]\r\n    E --> M[ipywidgets]\r\n    E --> N[Panel Dashboards]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "141-matplotlib-pyplot",
+      children: "14.1 Matplotlib Pyplot"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Matplotlib is the foundational visualization library in Python. The pyplot API provides a MATLAB-like interface for creating figures."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import matplotlib.pyplot as plt\r\nimport numpy as np\r\n\r\nx = np.linspace(0, 10, 100)\r\ny = np.sin(x)\r\n\r\nplt.figure(figsize=(8, 4))\r\nplt.plot(x, y, label=\"sin(x)\", color=\"steelblue\", linewidth=2)\r\nplt.plot(x, np.cos(x), label=\"cos(x)\", color=\"coral\", linestyle=\"--\")\r\nplt.xlabel(\"X axis\")\r\nplt.ylabel(\"Y axis\")\r\nplt.title(\"Trigonometric Functions\")\r\nplt.legend()\r\nplt.grid(True, alpha=0.3)\r\nplt.show()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Common plot types"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\r\n## Scatter plot\r\nplt.figure(figsize=(6, 4))\r\nx = np.random.randn(100)\r\ny = np.random.randn(100)\r\ncolors = np.random.randn(100)\r\nsizes = np.random.randint(20, 200, 100)\r\nplt.scatter(x, y, c=colors, s=sizes, alpha=0.6, cmap=\"viridis\")\r\nplt.colorbar(label=\"Value\")\r\nplt.show()\r\n\r\n## Bar chart\r\ncategories = [\"A\", \"B\", \"C\", \"D\", \"E\"]\r\nvalues = [23, 45, 12, 67, 34]\r\nplt.bar(categories, values, color=\"skyblue\", edgecolor=\"navy\")\r\nplt.title(\"Bar Chart Example\")\r\nplt.show()\r\n\r\n## Histogram\r\ndata = np.random.randn(1000)\r\nplt.hist(data, bins=30, density=True, alpha=0.7, color=\"steelblue\")\r\nplt.xlabel(\"Value\")\r\nplt.ylabel(\"Density\")\r\nplt.title(\"Histogram with Density\")\r\nplt.show()\r\n\r\n## Box plot\r\ngroups = [np.random.randn(100) for _ in range(4)]\r\nplt.boxplot(groups, labels=[\"A\", \"B\", \"C\", \"D\"])\r\nplt.title(\"Box Plot Comparison\")\r\nplt.show()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Saving figures"
+      }), " to disk:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "plt.savefig(\"plot.png\", dpi=300, bbox_inches=\"tight\")\r\nplt.savefig(\"plot.pdf\", format=\"pdf\")\r\nplt.savefig(\"plot.svg\", format=\"svg\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "The Figure and Axes API"
+      }), " gives more control:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "fig, ax = plt.subplots(figsize=(8, 4))\r\nax.plot(x, y, label=\"sin(x)\")\r\nax.plot(x, np.cos(x), label=\"cos(x)\")\r\nax.set_xlabel(\"X\")\r\nax.set_ylabel(\"Y\")\r\nax.set_title(\"Using Axes API\")\r\nax.legend()\r\nax.grid(True)\r\nplt.show()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "142-customization",
+      children: "14.2 Customization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Fine-tune every element of your plots for publication quality."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Colors and colormaps"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\r\n## Named colors and hex codes\r\nplt.plot(x, y, color=\"tab:blue\")\r\nplt.plot(x, y, color=\"#2E86AB\")\r\nplt.plot(x, y, color=(0.2, 0.4, 0.6))\r\n\r\n## Colormaps\r\ncmap = plt.cm.viridis\r\ncmap = plt.cm.plasma\r\ncmap = plt.cm.coolwarm\r\ncmap = plt.cm.RdYlBu\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Line and marker styles"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "styles = [\r\n    {\"ls\": \"-\", \"marker\": \"o\", \"label\": \"solid\"},\r\n    {\"ls\": \"--\", \"marker\": \"s\", \"label\": \"dashed\"},\r\n    {\"ls\": \"-.\", \"marker\": \"^\", \"label\": \"dash-dot\"},\r\n    {\"ls\": \":\", \"marker\": \"d\", \"label\": \"dotted\"},\r\n]\r\nfor style in styles:\r\n    plt.plot(x, y, **style)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Annotations and text"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "plt.figure(figsize=(8, 4))\r\nplt.plot(x, y, color=\"steelblue\", linewidth=2)\r\n\r\nplt.annotate(\r\n    \"Peak\",\r\n    xy=(np.pi / 2, 1),\r\n    xytext=(np.pi / 2 + 1, 1.5),\r\n    arrowprops=dict(arrowstyle=\"->\", color=\"red\", linewidth=2),\r\n    fontsize=12, fontweight=\"bold\"\r\n)\r\n\r\nplt.text(0, -1.5, \"y = sin(x)\", fontsize=10, style=\"italic\")\r\n\r\n## Highlight regions\r\nplt.axvspan(2, 4, alpha=0.2, color=\"yellow\")\r\nplt.axhline(0, color=\"black\", linewidth=0.5)\r\nplt.axvline(np.pi, color=\"red\", linestyle=\"--\", alpha=0.5)\r\n\r\n## Reference lines\r\nplt.axhline(y=0.5, xmin=0.25, xmax=0.75, color=\"green\", linestyle=\":\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Spine and tick customization"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "fig, ax = plt.subplots()\r\nax.plot(x, y)\r\n\r\n## Remove top and right spines\r\nax.spines[\"top\"].set_visible(False)\r\nax.spines[\"right\"].set_visible(False)\r\n\r\n## Move bottom spine\r\nax.spines[\"bottom\"].set_position((\"data\", 0))\r\n\r\n## Custom ticks\r\nax.set_xticks([0, np.pi / 2, np.pi, 3 * np.pi / 2, 2 * np.pi])\r\nax.set_xticklabels([\"0\", r\"$\\pi/2$\", r\"$\\pi$\", r\"$3\\pi/2$\", r\"$2\\pi$\"])\r\n\r\n## Rotate tick labels\r\nplt.xticks(rotation=45)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Style sheets"
+      }), " provide consistent theming:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "print(plt.style.available)\r\n\r\n## ['ggplot', 'seaborn-v0_8', 'fivethirtyeight', 'dark_background', ...]\r\n\r\nplt.style.use(\"seaborn-v0_8\")\r\n\r\n## Or use context manager for temporary style\r\nwith plt.style.context(\"ggplot\"):\r\n    plt.plot(x, y)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Customizing legends"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "plt.legend(\r\n    loc=\"upper right\",\r\n    frameon=True,\r\n    fancybox=True,\r\n    shadow=True,\r\n    fontsize=10,\r\n    title=\"Legend Title\"\r\n)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "143-subplots",
+      children: "14.3 Subplots"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Multiple plots in a single figure for comparative analysis."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Basic subplots"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "fig, axes = plt.subplots(2, 3, figsize=(12, 6))\r\naxes[0, 0].plot(x, y)\r\naxes[0, 1].scatter(np.random.randn(50), np.random.randn(50))\r\naxes[0, 2].hist(np.random.randn(100), bins=20)\r\naxes[1, 0].bar([\"A\", \"B\", \"C\"], [10, 20, 15])\r\naxes[1, 1].boxplot([np.random.randn(50) for _ in range(3)])\r\naxes[1, 2].imshow(np.random.randn(10, 10), cmap=\"viridis\")\r\n\r\nplt.tight_layout()\r\nplt.show()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "GridSpec for irregular layouts"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from matplotlib.gridspec import GridSpec\r\n\r\nfig = plt.figure(figsize=(10, 8))\r\ngs = GridSpec(3, 3, figure=fig)\r\n\r\nax1 = fig.add_subplot(gs[0, :])\r\nax2 = fig.add_subplot(gs[1, :-1])\r\nax3 = fig.add_subplot(gs[1:, -1])\r\nax4 = fig.add_subplot(gs[2, 0])\r\nax5 = fig.add_subplot(gs[2, 1])\r\n\r\nax1.plot(x, y)\r\nax2.scatter(np.random.randn(50), np.random.randn(50))\r\nax3.hist(np.random.randn(100), bins=20, orientation=\"horizontal\")\r\nax4.bar([\"A\", \"B\"], [10, 20])\r\nax5.plot(np.sin(x), np.cos(x))\r\n\r\nplt.tight_layout()\r\nplt.show()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Inset axes"
+      }), " for zoom-in details:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "fig, ax = plt.subplots(figsize=(8, 4))\r\nax.plot(x, y)\r\n\r\ninset = ax.inset_axes([0.6, 0.6, 0.3, 0.3])\r\ninset.plot(x[:20], y[:20], color=\"red\", linewidth=2)\r\ninset.set_title(\"Zoom\", fontsize=8)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Shared axes"
+      }), " for aligned subplots:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "fig, axes = plt.subplots(2, 1, sharex=True, sharey=True, figsize=(8, 5))\r\naxes[0].plot(x, np.sin(x))\r\naxes[0].set_title(\"sin(x)\")\r\naxes[1].plot(x, np.cos(x))\r\naxes[1].set_title(\"cos(x)\")\r\nplt.xlabel(\"X (shared)\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Twin axes"
+      }), " for dual y-axes:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "fig, ax1 = plt.subplots()\r\nax1.plot(x, np.sin(x), color=\"steelblue\")\r\nax1.set_ylabel(\"sin(x)\", color=\"steelblue\")\r\n\r\nax2 = ax1.twinx()\r\nax2.plot(x, np.exp(x / 5), color=\"coral\")\r\nax2.set_ylabel(\"exp(x/5)\", color=\"coral\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "144-seaborn",
+      children: "14.4 Seaborn"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Seaborn provides high-level statistical visualizations with attractive defaults and Pandas integration."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import seaborn as sns\r\nimport pandas as pd\r\n\r\ntips = sns.load_dataset(\"tips\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Relational plots"
+      }), " show relationships between variables:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\r\n## Scatter with hue and style\r\nsns.scatterplot(\r\n    data=tips, x=\"total_bill\", y=\"tip\",\r\n    hue=\"time\", style=\"sex\", size=\"size\",\r\n    palette=\"deep\"\r\n)\r\n\r\n## relplot with facets\r\nsns.relplot(\r\n    data=tips, x=\"total_bill\", y=\"tip\",\r\n    col=\"time\", hue=\"sex\", kind=\"scatter\"\r\n)\r\n\r\n## Line plot with confidence interval\r\nsns.lineplot(\r\n    data=tips, x=\"size\", y=\"tip\",\r\n    hue=\"time\", errorbar=(\"ci\", 95)\r\n)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Distribution plots"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\r\n## Histogram with KDE\r\nsns.histplot(tips[\"tip\"], bins=20, kde=True)\r\n\r\n## KDE plot\r\nsns.kdeplot(tips[\"tip\"], fill=True, alpha=0.5)\r\n\r\n## Displot with facets\r\nsns.displot(\r\n    data=tips, x=\"tip\",\r\n    col=\"time\", row=\"sex\",\r\n    kind=\"hist\", bins=15\r\n)\r\n\r\n## ECDF plot\r\nsns.ecdfplot(tips[\"tip\"])\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Categorical plots"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\r\n## Box plot\r\nsns.boxplot(data=tips, x=\"day\", y=\"total_bill\", hue=\"sex\")\r\n\r\n## Violin plot\r\nsns.violinplot(data=tips, x=\"day\", y=\"total_bill\", hue=\"sex\", split=True)\r\n\r\n## Strip / swarm plot\r\nsns.stripplot(data=tips, x=\"day\", y=\"total_bill\", jitter=True)\r\nsns.swarmplot(data=tips, x=\"day\", y=\"total_bill\", color=\"black\")\r\n\r\n## Bar plot with error bars\r\nsns.barplot(data=tips, x=\"day\", y=\"total_bill\", hue=\"sex\")\r\n\r\n## Count plot\r\nsns.countplot(data=tips, x=\"day\", hue=\"sex\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Heatmap and correlation"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "corr = tips.select_dtypes(\"number\").corr()\r\n\r\nsns.heatmap(\r\n    corr, annot=True, cmap=\"coolwarm\", center=0,\r\n    square=True, fmt=\".2f\", linewidths=0.5\r\n)\r\n\r\n## Cluster heatmap with dendrograms\r\nsns.clustermap(corr, annot=True, cmap=\"coolwarm\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pairplot and jointplot"
+      }), " for multivariate exploration:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "sns.pairplot(\r\n    tips, hue=\"time\",\r\n    diag_kind=\"kde\",\r\n    corner=True\r\n)\r\n\r\nsns.jointplot(\r\n    data=tips, x=\"total_bill\", y=\"tip\",\r\n    kind=\"hex\"\r\n)\r\n\r\nsns.jointplot(\r\n    data=tips, x=\"total_bill\", y=\"tip\",\r\n    kind=\"reg\"\r\n)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "FacetGrid"
+      }), " for custom multi-plot layouts:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "g = sns.FacetGrid(tips, col=\"time\", row=\"sex\", margin_titles=True)\r\ng.map(sns.scatterplot, \"total_bill\", \"tip\", alpha=0.6)\r\ng.add_legend()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Regression plots"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "sns.regplot(data=tips, x=\"total_bill\", y=\"tip\", ci=95)\r\nsns.lmplot(data=tips, x=\"total_bill\", y=\"tip\", hue=\"sex\", col=\"time\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "145-plotly-interactive",
+      children: "14.5 Plotly Interactive"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Plotly creates interactive, web-based visualizations that support hover, zoom, and pan."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import plotly.express as px\r\nimport plotly.graph_objects as go\r\n\r\n## Plotly Express (high-level API)\r\ndf = px.data.iris()\r\nfig = px.scatter(\r\n    df, x=\"sepal_width\", y=\"sepal_length\",\r\n    color=\"species\", size=\"petal_length\",\r\n    hover_data=[\"petal_width\"],\r\n    title=\"Iris Dataset\"\r\n)\r\nfig.show()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Chart types"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\r\n## Line chart\r\nfig = px.line(\r\n    x=pd.date_range(\"2024-01-01\", periods=100),\r\n    y=np.random.randn(100).cumsum(),\r\n    title=\"Random Walk\"\r\n)\r\n\r\n## Bar chart\r\nfig = px.bar(\r\n    tips, x=\"day\", y=\"total_bill\",\r\n    color=\"sex\", barmode=\"group\",\r\n    title=\"Average Bill by Day\"\r\n)\r\n\r\n## Histogram\r\nfig = px.histogram(tips, x=\"tip\", nbins=20, color=\"time\")\r\n\r\n## Box plot\r\nfig = px.box(tips, x=\"day\", y=\"total_bill\", color=\"sex\")\r\n\r\n## Heatmap\r\nfig = px.imshow(\r\n    corr.values, text_auto=\".2f\",\r\n    x=corr.columns, y=corr.columns,\r\n    color_continuous_scale=\"RdBu_r\"\r\n)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Graph Objects"
+      }), " (low-level API) for full control:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "fig = go.Figure()\r\n\r\nfig.add_trace(go.Scatter(\r\n    x=x, y=np.sin(x),\r\n    mode=\"lines+markers\",\r\n    name=\"sin(x)\",\r\n    line=dict(color=\"steelblue\", width=3),\r\n    marker=dict(size=6)\r\n))\r\n\r\nfig.add_trace(go.Bar(\r\n    x=categories, y=values,\r\n    name=\"Values\",\r\n    marker_color=\"skyblue\"\r\n))\r\n\r\nfig.update_layout(\r\n    title=\"Custom Figure\",\r\n    xaxis_title=\"X\",\r\n    yaxis_title=\"Y\",\r\n    template=\"plotly_dark\",\r\n    hovermode=\"x unified\"\r\n)\r\n\r\nfig.show()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Animation"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "gapminder = px.data.gapminder()\r\nfig = px.scatter(\r\n    gapminder, x=\"gdpPercap\", y=\"lifeExp\",\r\n    size=\"pop\", color=\"continent\",\r\n    animation_frame=\"year\",\r\n    animation_group=\"country\",\r\n    log_x=True, size_max=60,\r\n    title=\"Gapminder Over Time\"\r\n)\r\nfig.show()\r\n\r\n## Animated line\r\npx.line(\r\n    gapminder[gapminder[\"country\"] == \"India\"],\r\n    x=\"year\", y=\"lifeExp\",\r\n    animation_frame=\"year\",\r\n    title=\"India Life Expectancy\"\r\n)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "3D plots and faceted layouts"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\r\n## 3D scatter\r\nfig = px.scatter_3d(\r\n    df, x=\"sepal_width\", y=\"sepal_length\", z=\"petal_length\",\r\n    color=\"species\", size=\"petal_width\"\r\n)\r\n\r\n## Faceted histogram\r\nfig = px.histogram(\r\n    tips, x=\"tip\", facet_col=\"time\",\r\n    facet_row=\"sex\", nbins=15\r\n)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Subplots in Plotly"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from plotly.subplots import make_subplots\r\n\r\nfig = make_subplots(rows=2, cols=2, subplot_titles=[\"Scatter\", \"Bar\", \"Hist\", \"Box\"])\r\nfig.add_trace(go.Scatter(x=x, y=np.sin(x), mode=\"lines\"), row=1, col=1)\r\nfig.add_trace(go.Bar(x=categories, y=values), row=1, col=2)\r\nfig.add_trace(go.Histogram(x=np.random.randn(200)), row=2, col=1)\r\nfig.add_trace(go.Box(y=np.random.randn(200)), row=2, col=2)\r\nfig.update_layout(height=600, showlegend=False)\r\nfig.show()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "146-dashboards",
+      children: "14.6 Dashboards"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Combine visualizations into interactive dashboards for data exploration."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "ipywidgets for interactive controls"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import ipywidgets as widgets\r\nfrom IPython.display import display\r\n\r\n@widgets.interact(\r\n    x_column=tips.select_dtypes(\"number\").columns,\r\n    y_column=tips.select_dtypes(\"number\").columns,\r\n    color=tips.columns.tolist()\r\n)\r\ndef interactive_plot(x_column, y_column, color):\r\n    fig, ax = plt.subplots(figsize=(8, 5))\r\n    for val in tips[color].unique():\r\n        subset = tips[tips[color] == val]\r\n        ax.scatter(subset[x_column], subset[y_column],\r\n                   label=val, alpha=0.6)\r\n    ax.set_xlabel(x_column)\r\n    ax.set_ylabel(y_column)\r\n    ax.set_title(f\"{y_column} vs {x_column}\")\r\n    ax.legend()\r\n    plt.show()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Panel dashboard"
+      }), " for more complex layouts:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import panel as pn\r\nimport holoviews as hv\r\n\r\npn.extension()\r\n\r\n## Widgets\r\nx_select = pn.widgets.Select(\r\n    name=\"X axis\",\r\n    options=tips.select_dtypes(\"number\").columns.tolist()\r\n)\r\ny_select = pn.widgets.Select(\r\n    name=\"Y axis\",\r\n    options=tips.select_dtypes(\"number\").columns.tolist(),\r\n    value=\"tip\"\r\n)\r\ncolor_select = pn.widgets.Select(\r\n    name=\"Color\",\r\n    options=[\"sex\", \"time\", \"day\"]\r\n)\r\n\r\n## Reactive plot\r\n@pn.depends(x_select, y_select, color_select)\r\ndef scatter_plot(x, y, color):\r\n    return tips.hvplot.scatter(x=x, y=y, by=color,\r\n                                width=600, height=400)\r\n\r\ndashboard = pn.Column(\r\n    pn.Row(x_select, y_select, color_select),\r\n    scatter_plot\r\n)\r\ndashboard.servable()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Matplotlib-based dashboard with ipywidgets"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from ipywidgets import VBox, HBox\r\n\r\nday_selector = widgets.SelectMultiple(\r\n    options=tips[\"day\"].unique().tolist(),\r\n    value=[\"Sun\", \"Sat\"],\r\n    description=\"Days\"\r\n)\r\n\r\nsex_selector = widgets.ToggleButtons(\r\n    options=[\"All\", \"Male\", \"Female\"],\r\n    value=\"All\"\r\n)\r\n\r\n@widgets.interact(\r\n    days=widgets.SelectMultiple(\r\n        options=tips[\"day\"].unique().tolist(),\r\n        value=tips[\"day\"].unique().tolist()\r\n    ),\r\n    sex=widgets.ToggleButtons(\r\n        options=[\"All\", \"Male\", \"Female\"]\r\n    )\r\n)\r\ndef dashboard(days, sex):\r\n    filtered = tips[tips[\"day\"].isin(days)]\r\n    if sex != \"All\":\r\n        filtered = filtered[filtered[\"sex\"] == sex.lower()]\r\n\r\n    fig, axes = plt.subplots(1, 3, figsize=(14, 4))\r\n\r\n    axes[0].scatter(filtered[\"total_bill\"], filtered[\"tip\"], alpha=0.6)\r\n    axes[0].set_xlabel(\"Total Bill\")\r\n    axes[0].set_ylabel(\"Tip\")\r\n    axes[0].set_title(\"Tips vs Total Bill\")\r\n\r\n    axes[1].hist(filtered[\"total_bill\"], bins=15, color=\"skyblue\", edgecolor=\"white\")\r\n    axes[1].set_xlabel(\"Total Bill\")\r\n    axes[1].set_ylabel(\"Frequency\")\r\n    axes[1].set_title(\"Bill Distribution\")\r\n\r\n    filtered.boxplot(column=\"tip\", by=\"day\", ax=axes[2])\r\n    axes[2].set_title(\"Tips by Day\")\r\n    axes[2].set_xlabel(\"Day\")\r\n\r\n    plt.tight_layout()\r\n    plt.show()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Voilà"
+      }), " converts notebooks to standalone dashboards:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "voila dashboard.ipynb --port 8866\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "typescript-parallel",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// Simple chart renderer using HTML Canvas\r\nfunction renderLineChart(\r\n    canvasId: string,\r\n    data: { x: number[]; y: number[] },\r\n    options: { color?: string; title?: string } = {}\r\n) {\r\n    const canvas = document.getElementById(canvasId) as HTMLCanvasElement;\r\n    const ctx = canvas.getContext(\"2d\")!;\r\n    const { width, height } = canvas;\r\n    const padding = 40;\r\n\r\n    ctx.clearRect(0, 0, width, height);\r\n\r\n    // Scale\r\n    const xMin = Math.min(...data.x);\r\n    const xMax = Math.max(...data.x);\r\n    const yMin = Math.min(...data.y);\r\n    const yMax = Math.max(...data.y);\r\n\r\n    // Draw axes\r\n    ctx.strokeStyle = \"#333\";\r\n    ctx.beginPath();\r\n    ctx.moveTo(padding, padding);\r\n    ctx.lineTo(padding, height - padding);\r\n    ctx.lineTo(width - padding, height - padding);\r\n    ctx.stroke();\r\n\r\n    // Draw line\r\n    ctx.strokeStyle = options.color || \"steelblue\";\r\n    ctx.lineWidth = 2;\r\n    ctx.beginPath();\r\n    for (let i = 0; i < data.x.length; i++) {\r\n        const px = padding + (data.x[i] - xMin) / (xMax - xMin) * (width - 2 * padding);\r\n        const py = height - padding - (data.y[i] - yMin) / (yMax - yMin) * (height - 2 * padding);\r\n        i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);\r\n    }\r\n    ctx.stroke();\r\n}\r\n\r\n// Bar chart\r\nfunction renderBarChart(\r\n    canvasId: string,\r\n    categories: string[],\r\n    values: number[]\r\n) {\r\n    const canvas = document.getElementById(canvasId) as HTMLCanvasElement;\r\n    const ctx = canvas.getContext(\"2d\")!;\r\n    const { width, height } = canvas;\r\n    const padding = 40;\r\n    const barWidth = (width - 2 * padding) / categories.length - 5;\r\n\r\n    const maxVal = Math.max(...values);\r\n    ctx.clearRect(0, 0, width, height);\r\n\r\n    categories.forEach((cat, i) => {\r\n        const x = padding + i * (barWidth + 5);\r\n        const barHeight = (values[i] / maxVal) * (height - 2 * padding);\r\n        const y = height - padding - barHeight;\r\n\r\n        ctx.fillStyle = \"skyblue\";\r\n        ctx.fillRect(x, y, barWidth, barHeight);\r\n        ctx.strokeStyle = \"navy\";\r\n        ctx.strokeRect(x, y, barWidth, barHeight);\r\n\r\n        ctx.fillStyle = \"#333\";\r\n        ctx.textAlign = \"center\";\r\n        ctx.fillText(cat, x + barWidth / 2, height - padding + 15);\r\n    });\r\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Matplotlib's pyplot API provides a MATLAB-like interface for creating static plots"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The Figure + Axes API gives finer control over plot elements and layout"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Colors, line styles, annotations, and style sheets customize plot appearance"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "subplots(), GridSpec, and inset_axes create complex multi-plot layouts"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Seaborn offers high-level statistical visualizations with Pandas integration"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pairplot, heatmap, and FacetGrid enable multivariate data exploration"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Plotly Express creates interactive web-based visualizations with minimal code"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Plotly Graph Objects provide full control over interactive chart properties"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ipywidgets and Panel enable interactive dashboard creation from notebooks"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Voilà converts Jupyter notebooks into standalone dashboard applications"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Avoid"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Quick exploration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Seaborn pairplot / displot"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual subplot configuration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Publication figure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Matplotlib with Axes API"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Default styles and colors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interactive report"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Plotly Express"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Static Matplotlib images"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Statistical relationships"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Seaborn regplot / lmplot"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual regression plotting"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-plot comparison"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GridSpec or FacetGrid"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Overlapping subplot axes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Time series"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Plotly line with hover"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Static line plots"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Correlation analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Seaborn heatmap"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual colored tables"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Dashboard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Panel + hvplot"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Heavy JavaScript frameworks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Large datasets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Plotly with datashader"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Plotting 1M+ raw points"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-qa",
+      children: "Interview Q&A"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-q1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "Q1: Difference between pyplot and Axes API?"]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "pyplot uses a global state machine (plt.plot(), plt.xlabel()) and is convenient for quick plots. The Axes API (fig, ax = plt.subplots(); ax.plot()) provides object-oriented control over individual subplots, enabling precise customization, reusable code, and complex layouts."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✓ Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "★ Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-q2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "Q2: When to use Seaborn vs Matplotlib?"]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Use Seaborn for statistical visualizations (distributions, regressions, categorical data) with minimal code and attractive defaults. Use Matplotlib for fine-grained control over every plot element, custom layouts, and publication-quality figures. They work well together: Seaborn plots can be customized with the Matplotlib Axes API."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✓ Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "★ Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-q3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "Q3: How to create a figure with 3 rows and 4 columns?"]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "fig, axes = plt.subplots(3, 4, figsize=(12, 8))"
+          }), ". axes is a 2D array indexed by row and column. Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "plt.tight_layout()"
+          }), " to prevent overlap. For irregular layouts, use GridSpec: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "gs = GridSpec(3, 4); ax1 = fig.add_subplot(gs[0, :])"
+          }), "."]
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✓ Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "★ Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-q4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "Q4: How does FacetGrid work in Seaborn?"]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["FacetGrid creates a grid of subplots based on categorical variables. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "g = sns.FacetGrid(data, col=\"time\", row=\"sex\")"
+          }), " creates one subplot per combination. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "g.map(sns.scatterplot, \"x\", \"y\")"
+          }), " draws a scatter plot in each subplot. It automatically shares axes for comparability."]
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✓ Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "★ Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-q5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "Q5: Plotly Express vs Graph Objects?"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Plotly Express (px) is a high-level API that creates complete figures from Pandas DataFrames in one line. It auto-generates layout,.\nlegend, and hover information. Graph Objects (go) is a low-level API for building figures trace by trace, offering full control over every aspect. Use Express for.\nexploration, Graph Objects for production."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✓ Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "★ Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-q6",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "Q6: How to add animation to a Plotly chart?"]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Use the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "animation_frame"
+          }), " parameter in Plotly Express. For scatter: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "px.scatter(data, x, y, animation_frame=\"year\")"
+          }), ". Each unique value in animation_frame becomes a frame. Plotly interpolates between frames for smooth transitions. Works with scatter, bar, line, and other Express chart types."]
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✓ Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "★ Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-q7",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "Q7: How to combine Matplotlib and ipywidgets?"]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Use @widgets.interact decorator on a function that takes widget values as parameters and creates Matplotlib plots. Each widget change calls the function, updating the plot. Common widgets: Select, Slider, SelectMultiple, ToggleButtons. Use plt.clf() to clear before redrawing, or update Axes data directly for performance."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✓ Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "★ Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-q8",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "Q8: How to handle large datasets in visualizations?"]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "For 100k+ points: use hexbin plots in Matplotlib, Seaborn's kind=\"hex\" in jointplot, or Plotly with datashader for rasterized rendering. Subsampling (random sample of 10k) works for exploration. Histograms and KDE plots aggregate data into a fixed number of bins regardless of data size."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✓ Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "★ Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-q9",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "Q9: How to create a dashboard from a Jupyter notebook?"]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Use Voilà to convert notebooks to standalone web apps: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "voila notebook.ipynb"
+          }), ". Use ipywidgets for interactivity within notebooks. Use Panel for more sophisticated dashboards with reactive programming. Both support Matplotlib, Bokeh, and Plotly visualizations. For production, consider Dash by Plotly."]
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✓ Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "★ Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-q10",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "Q10: How to save a figure with high resolution?"]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "plt.savefig(\"figure.png\", dpi=300, bbox_inches=\"tight\")"
+          }), ". dpi=300 is standard for print. bbox_inches=\"tight\" removes extra whitespace. For vector formats, use PDF (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "plt.savefig(\"figure.pdf\")"
+          }), ") or SVG (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "plt.savefig(\"figure.svg\")"
+          }), ") for resolution-independent publication figures."]
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✓ Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "★ Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1"
+      }), ": Which Matplotlib API gives the most control over subplot elements? a) pyplot b) Axes c) pylab d) inline"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-quiz1",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) Axes API provides object-oriented control"
+          })
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2"
+      }), ": What does sns.pairplot() display? a) pairwise scatter plots b) bar charts c) time series d) pie charts"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-quiz2",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: a) pairwise scatter plots for all numeric columns"
+          })
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3"
+      }), ": Which Plotly API is best for quick exploration? a) Graph Objects b) Plotly Express c) Plotly Dash d) Plotly Figure"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-quiz3",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) Plotly Express (px) for one-line interactive charts"
+          })
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4"
+      }), ": How to create an animated scatter plot in Plotly? a) animation_frame parameter b) animate=True c) loop=True d) VideoWriter"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-quiz4",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: a) use animation_frame parameter in px.scatter"
+          })
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5"
+      }), ": What converts a Jupyter notebook to a standalone dashboard? a) Voilà b) nbconvert c) Panel d) ipywidgets"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "p02-s14-quiz5",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: a) Voilà converts notebooks to standalone dashboards"
+          })
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Easy"
+      }), " — Create a line plot of sin(x) and cos(x) on the same figure with custom colors, line styles, and a legend."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Easy"
+      }), " — Use Seaborn to create a box plot comparing total_bill across days from the tips dataset."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Medium"
+      }), " — Create a 2x2 subplot layout with: scatter plot, histogram, bar chart, and box plot. Customize each with titles and axis labels."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Medium"
+      }), " — Use Plotly Express to create an animated scatter plot of the gapminder dataset, showing life expectancy vs GDP per capita over time."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hard"
+      }), " — Build a complete interactive dashboard using ipywidgets that lets users filter a dataset by multiple categorical columns and view three coordinated plots (scatter, histogram, box plot) that update on filter change."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hard"
+      }), " — Implement a custom chart renderer in TypeScript using HTML Canvas that draws a scatter plot with axis labels, gridlines, and tooltips on hover."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "common-mistakes",
+      children: "Common Mistakes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not understanding the fundamental concepts before applying them"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Skipping edge cases in implementation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not analyzing time/space complexity"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Forgetting to handle null/empty inputs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not practicing enough problems to build pattern recognition"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "revision-notes",
+      children: "Revision Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Core principle: Understand the fundamental concepts thoroughly"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implementation pattern: Practice with real code examples"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Complexity: Know the time and space complexity"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Application: Know when to use this in production systems"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Interview: Frequently asked in technical interviews"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Edge cases: Consider common failure scenarios"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Related concepts: Connect to broader system design"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "placement-section",
+      children: "Placement Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "top-10-interview-questions",
+      children: "Top 10 Interview Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "google-style",
+      children: "Google Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Explain the core idea of Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards in under 60 seconds, then give a real-world analogy."
+          }), " — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Design a minimal, well-typed function in this chapter — Matplotlib, Seaborn, Plotly, Dashboards."
+          }), " — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "**What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "amazon-style",
+      children: "Amazon Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Describe a production bug caused by misunderstanding this technique — Matplotlib, Seaborn, Plotly, Dashboards. How did you diagnose and fix it?"
+          }), " — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you scale a system using this technique — Matplotlib, Seaborn, Plotly, Dashboards from 10 users to 10 million?"
+          }), " — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "microsoft-style",
+      children: "Microsoft Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Compare Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards with the closest alternative approach. When would you choose each?"
+          }), " — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Walk through how you would test a component built on this — Matplotlib, Seaborn, Plotly, Dashboards."
+          }), " — Unit, integration, property-based tests; mocking boundaries; golden files for outputs."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "nvidia-style",
+      children: "NVIDIA Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "8",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How does Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards behave differently at scale — memory, throughput, or precision-wise?"
+          }), " — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you make an implementation of this technique — Matplotlib, Seaborn, Plotly, Dashboards run faster on GPU hardware?"
+          }), " — Batch operations, vectorization, avoiding Python loops, reducing data movement."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ai-startup-style",
+      children: "AI Startup Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Write the smallest possible implementation of this technique — Matplotlib, Seaborn, Plotly, Dashboards that is production-quality."
+        }), " — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resume-tips",
+      children: "Resume Tips"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Name Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards explicitly in your skills section, paired with a measurable achievement (\"Reduced X by 40% using Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards\")."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add a bullet describing a project that applies Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards to real data, with numbers."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mention the tools and libraries you used alongside Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards (linters, test frameworks, profiling tools)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep resume bullets under 15 words and start each with an action verb."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "interview-day-checklist",
+      children: "Interview Day Checklist"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rehearse a 60-second explanation of Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards and one real-world analogy."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prepare one STAR story about debugging a Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards-related production issue."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review complexity and edge cases for the classic Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards interview problem."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Have questions ready: how does the team apply Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards in production today?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test your environment (Python, editor, internet) 15 minutes before the interview."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "truefalse",
+      children: "True/False"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards builds directly on the fundamentals covered in the earlier chapters of this module. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Every advanced topic in this module assumes the core concepts from the previous chapters."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should write at least one code example for Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards before moving to the next chapter. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Active recall with hands-on code beats passive reading for retention."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " The complexity analysis for Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards is the same regardless of input size. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Complexity grows with input size; always state best, average, and worst case."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Edge cases (empty input, invalid input, boundary values) matter for Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards in production. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Most production bugs come from unhandled edge cases."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should memorize the Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards chapter content once and never review it again. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "fill-in-the-blank",
+      children: "Fill in the Blank"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter that covers Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards is Chapter ___ of this module. — Answer: check the module's table of contents."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The time complexity of the standard approach to 14 Data Visualization is ___. — Answer: O(n) for iteration, O(1) for dict lookup"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The main edge case to handle when implementing 14 Data Visualization is ___. — Answer: empty input, None values, type mismatches"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools commonly used to debug Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The related topic that connects to Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards in the next chapter is ___. — Answer: see the Next Topic section."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "scenario-questions",
+      children: "Scenario Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A teammate ships a change involving Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your implementation of this technique — Matplotlib, Seaborn, Plotly, Dashboards is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A new hire asks you to explain Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your team's codebase has three different patterns for Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "output-questions",
+      children: "Output Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output of the simplest correct implementation of this technique — Matplotlib, Seaborn, Plotly, Dashboards on an empty input?"
+        }), " — Trace through the code: it should return the documented default (None, 0, empty collection) without raising."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output when the input is at the boundary value?"
+        }), " — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What does the implementation return when given invalid input types?"
+        }), " — With type hints and validation, it raises a clear error; without, it may fail silently."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output for the sample input given in the chapter's Examples section?"
+        }), " — Re-run the chapter's example code and compare against the documented output."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the time complexity output when you profile the implementation at 10x input size?"
+        }), " — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "difficulty-level",
+      children: "Difficulty Level"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "What It Takes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Beginner"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-2 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read theory, run the chapter examples, solve the Easy exercises"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Intermediate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-5 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete Medium exercises, explain Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards to someone else"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Advanced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+ week"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Solve Hard exercises, optimize for real datasets, answer interview follow-ups"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "tips--tricks",
+      children: "Tips & Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always write a one-line example of Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards from memory before opening the chapter — active recall first."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the chapter's Revision Notes as a checklist: you have mastered Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards when you can explain each bullet."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For interviews, practice explaining Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards twice: once with a technical audience, once with a non-technical audience."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep a personal examples file where you collect your own Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards snippets; interviewers love original examples."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "memory-tricks",
+      children: "Memory Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Acronym"
+        }), ": build a mnemonic from the 5 key concepts of Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards listed in the Chapter at a Glance table."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Story"
+        }), ": link Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards to a familiar story — the analogy in the Visual Analogy section is designed to stick."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Number anchor"
+        }), ": remember the complexity of Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards by connecting it to a known algorithm of the same class."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Color code"
+        }), ": highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Teach-back"
+        }), ": explain Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "further-reading",
+      children: "Further Reading"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "'Fluent Python' by Luciano Ramalho — the definitive advanced Python book"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "'Python Cookbook' by David Beazley — practical recipes for real problems"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Real Python tutorials: ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "https://realpython.com",
+          children: "https://realpython.com"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Python official docs: ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "https://docs.python.org/3",
+          children: "https://docs.python.org/3"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["PEP 8 style guide: ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "https://peps.python.org/pep-0008",
+          children: "https://peps.python.org/pep-0008"
+        }), " Visualization — Matplotlib, Seaborn, Plotly, Dashboards"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related-topics",
+      children: "Related Topics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous chapter"
+        }), " in Module 01 — builds the foundation for 14 Data Visualization"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next chapter"
+        }), " — extends 14 Data Visualization with advanced techniques"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Module 07 System Design"
+        }), " — how 14 Data Visualization fits into scalable production architectures"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Module 21 Interview Preparation"
+        }), " — FAANG-style questions on 14 Data Visualization"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Module 19 Capstone Projects"
+        }), " — end-to-end application of 14 Data Visualization"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "faqs",
+      children: "FAQs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Do I need to memorize all of 14 Data Visualization?"
+        }), " — Understand the big picture first. Memorize the key patterns via flashcards. Interviewers test understanding, not recitation."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What if I get stuck on an exercise?"
+        }), " — Re-read the theory, run the example code, then attempt again. If stuck after 20 minutes, move on and return the next day with fresh eyes."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "How much time should I spend on 14 Data Visualization?"
+        }), " — 2-3 hours for theory + examples, 3-5 hours for exercises. Total: one focused weekend session."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Is 14 Data Visualization asked in FAANG interviews?"
+        }), " — Yes. Check the Interview Q&A section for exact question styles used by Google, Amazon, Microsoft, and AI startups."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What's the fastest way to master 14 Data Visualization?"
+        }), " — Write the core implementation from memory, explain it to someone else, then solve one Hard exercise. Teaching reveals gaps faster than re-reading."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "important-notes",
+      children: "Important Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards is a core requirement for the rest of this module — do not skip the examples."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always analyze complexity (time and space) when working with Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Production correctness means handling edge cases, not just the happy path."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview answers should start with the definition, then the example, then the trade-offs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Revisit this chapter after finishing the module; the context from later chapters deepens understanding."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "historical-context",
+      children: "Historical Context"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools used for Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards today evolved from simpler versions; the chapter covers the modern, recommended approach."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interviewers value knowing one historical fact about Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards — it shows genuine interest, not just cramming."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The library/tooling ecosystem around Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards changes quickly; focus on fundamentals that remain stable."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "security-considerations",
+      children: "Security Considerations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "secrets"
+        }), " module instead of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "random"
+        }), " for cryptographic operations"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Validate all external inputs with Pydantic before processing"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "subprocess.run()"
+        }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "shell=False"
+        }), " to prevent shell injection"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Store secrets in environment variables or secret managers, never in source code"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Pin dependency versions in requirements.txt and scan with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pip-audit"
+        }), " for vulnerabilities"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "ml-intuition",
+      children: "ML Intuition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Python's GIL limits CPU parallelism — use multiprocessing for CPU-bound ML preprocessing, asyncio for I/O-bound API calls"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "NumPy vectorization replaces Python loops with C-level operations — 100-1000x speedup for array operations"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Generators enable processing datasets larger than RAM by yielding one batch at a time"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Type hints with mypy catch shape mismatches in tensor operations before runtime"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Profiling with cProfile identifies bottlenecks before optimizing — never optimize without measuring first"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "analogies",
+      children: "Analogies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "14 Data Visualization is like a GPS navigation system"
+          }), ": you define the destination (goal), the system plans the route (algorithm), and recalculates when you take a wrong turn (error handling)."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Complexity is like a restaurant kitchen"
+          }), ": a single chef (O(n)) handles small orders fine, but 1000 simultaneous orders need parallel chefs (O(log n) with proper indexing)."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Edge cases are like stress tests"
+          }), ": the happy path is a calm day, but production is Black Friday — design for the worst case."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "The chapter roadmap is a subway map"
+          }), ": each section is a station, and skipping one means you miss the connection to the next destination.## Capstone Project Link"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.a, {
+            href: "https://github.com/Raushan666java/ai-engineering-journey",
+            children: "Module Capstone: End-to-End Project"
+          }), " — this chapter contributes the Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards skills used in the module's capstone project. Complete the exercises here before starting the capstone."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "flashcards",
+      children: "Flashcards"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "01pythonprogramming-14datavisualization-flash1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the core concept of Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards in one sentence?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Python is a high-level, dynamically-typed, interpreted language known for its readable syntax, extensive standard library, and dominant position in data science, ML, and backend development."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "01pythonprogramming-14datavisualization-flash2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the most common mistake engineers make with \n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Most common Python mistake: mutable default arguments. `def f(x=[])` shares the list across all calls. Use `def f(x=None): x = x or []` instead."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "01pythonprogramming-14datavisualization-flash3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the time and space complexity of the standard Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards approach?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "List comprehension: O(n). Dict lookup: O(1) average. Sorting: O(n log n). Generator: O(1) memory vs O(n) for list. String concatenation in loop: O(n^2) — use join() instead."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "01pythonprogramming-14datavisualization-flash4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    When is Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards NOT the right choice?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Python is NOT the right choice when: (1) you need bare-metal performance (use C/Rust), (2) mobile app development, (3) real-time systems requiring microsecond latency."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "01pythonprogramming-14datavisualization-flash5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    How is Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards applied in a real production system?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Production Python stack: FastAPI for APIs, Pydantic for validation, SQLAlchemy for ORM, Celery for task queues, pytest for testing, ruff+black for linting, uv for package management."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "research-references",
+      children: "Research References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation of the primary library for Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards (linked in Further Reading)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic paper or textbook chapter introducing Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards (see References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The standard library reference for Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards-related functions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Engineering blog posts from companies running Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards in production at scale"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PEPs and RFCs where applicable (Python and networking standards)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-source-tools",
+      children: "Open-Source Tools"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ruff"
+        }), " — extremely fast Python linter (replaces flake8, isort, pyupgrade)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "black"
+        }), " — opinionated code formatter"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "mypy"
+        }), " — static type checker"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "pytest"
+        }), " — testing framework with fixtures and parametrize"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "uv"
+        }), " — fast Python package installer and resolver Visualization — Matplotlib, Seaborn, Plotly, Dashboards"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "debugging-guide",
+      children: "Debugging Guide"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 1"
+        }), ": Reproduce the failure with the smallest possible input — isolate the bug before changing any code."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 2"
+        }), ": Add structured logging at each stage of the 14 Data Visualization pipeline to identify exactly where the failure occurs."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 3"
+        }), ": Check the Common Mistakes section — 80% of bugs match one of those patterns."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 4"
+        }), ": Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pdb.set_trace()"
+        }), " or your IDE debugger to inspect intermediate values at the failure point."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 5"
+        }), ": For performance issues, profile with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "cProfile"
+        }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "py-spy"
+        }), " before optimizing — never guess at bottlenecks."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 6"
+        }), ": Write a regression test that reproduces the bug before fixing it — this prevents recurrence."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "mock-interview-section",
+      children: "Mock Interview Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 1 — Screening (15 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards in 60 seconds."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a minimal working example of Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the complexity of your example?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 2 — Coding (45 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve the Medium exercise from this chapter under time pressure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "State your assumptions, then implement with type hints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test with edge cases: empty input, boundary values, invalid input."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 3 — Behavioral + System (30 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tell me about a time you debugged a Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards problem in a project."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How would you design a system where Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards is used at scale?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What metrics would you monitor?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Evaluation rubric"
+      }), ": correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "optimized-implementation",
+      children: "Optimized Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from typing import Any, Optional\r\n\r\ndef demonstrate_14_data_visualization(input_data: list[Any]) -> Optional[Any]:\r\n    \"\"\"Minimal production scaffold for 14 Data Visualization.\r\n\r\n    Key concepts: variables, functions, OOP, modules\r\n    Complexity: O(n) for iteration, O(1) for dict lookup\r\n    \"\"\"\r\n    if not input_data:\r\n        return None\r\n    # Validate input\r\n    if not isinstance(input_data, (list, tuple)):\r\n        raise TypeError(f\"Expected list, got {type(input_data).__name__}\")\r\n    # Core logic: implement 14 Data Visualization here\r\n    result = input_data[0] if input_data else None\r\n    return result\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keeps the function signature stable so tests written against it stay valid."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handles the empty-input contract explicitly."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add unit tests for the edge cases before implementing the logic (test-first)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "evaluation-metrics",
+      children: "Evaluation Metrics"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Skill"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Target"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept recall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards without notes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60-second explanation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code fluency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write the chapter example from memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No syntax errors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handle empty/invalid input in exercises"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All cases pass"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State time/space for the standard approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Correct big-O"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview readiness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Answer 5 Interview Q&A questions out loud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fluent, structured answers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Retention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Chapter quiz score after 3 days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80%+"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "real-world-examples",
+      children: "Real-World Examples"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Instagram"
+        }), " serves 2B users with a Python/Django backend, proving Python scales with the right architecture"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Dropbox"
+        }), " uses Python for their desktop client and backend services"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "NASA"
+        }), " uses Python for scientific computing and mission analysis"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Google"
+        }), " uses Python extensively for internal tooling, ML pipelines, and YouTube's backend"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Interview insight"
+        }), ": demonstrate Pythonic code — list comprehensions, context managers, generators, and dataclasses show senior-level fluency"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "limitations",
+      children: "Limitations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Performance of Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards depends on input size and distribution — always benchmark for your own data."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone."
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

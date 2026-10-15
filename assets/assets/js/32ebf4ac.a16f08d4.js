@@ -1,0 +1,1805 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[3367],{
+
+/***/ 43108
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_engineering_placement_10_nlp_transformers_04_attention_mechanism_md_32e_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-10-nlp-transformers-04-attention-mechanism-md-32e.json
+const site_docs_courses_ai_engineering_placement_10_nlp_transformers_04_attention_mechanism_md_32e_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/nlp-transformers/04-attention-mechanism","title":"Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention","description":"Learning Objectives","source":"@site/docs/courses/ai-engineering-placement/10-nlp-transformers/04-attention-mechanism.md","sourceDirName":"courses/ai-engineering-placement/10-nlp-transformers","slug":"/ai-engineering-placement/10-nlp-transformers/04-attention-mechanism","permalink":"/ai-engineering-journey/ai-engineering-placement/10-nlp-transformers/04-attention-mechanism","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":141,"frontMatter":{"id":"04-attention-mechanism","slug":"/ai-engineering-placement/10-nlp-transformers/04-attention-mechanism","title":"Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention","sidebar_label":"Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention","sidebar_position":141},"sidebar":"placementSidebar","previous":{"title":"Sequence Models — RNN, LSTM, GRU, Bidirectional, Encoder-Decoder","permalink":"/ai-engineering-journey/ai-engineering-placement/10-nlp-transformers/03-sequence-models"},"next":{"title":"Transformer Architecture — Encoder-Decoder, Positional Encoding, Layer Norm","permalink":"/ai-engineering-journey/ai-engineering-placement/10-nlp-transformers/05-transformer-architecture"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-engineering-placement/10-nlp-transformers/04-attention-mechanism.md
+
+
+const frontMatter = {
+	id: '04-attention-mechanism',
+	slug: '/ai-engineering-placement/10-nlp-transformers/04-attention-mechanism',
+	title: 'Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention',
+	sidebar_label: 'Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention',
+	sidebar_position: 141
+};
+const contentTitle = 'Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Introduction",
+  "id": "introduction",
+  "level": 2
+}, {
+  "value": "Key Terminology",
+  "id": "key-terminology",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "4.1 The Seq2Seq Bottleneck",
+  "id": "41-the-seq2seq-bottleneck",
+  "level": 2
+}, {
+  "value": "4.2 Bahdanau Attention",
+  "id": "42-bahdanau-attention",
+  "level": 2
+}, {
+  "value": "4.3 Luong Attention",
+  "id": "43-luong-attention",
+  "level": 2
+}, {
+  "value": "4.4 Self-Attention",
+  "id": "44-self-attention",
+  "level": 2
+}, {
+  "value": "4.5 Multi-Head Attention",
+  "id": "45-multi-head-attention",
+  "level": 2
+}, {
+  "value": "4.6 Causal Masking &amp; Visualization",
+  "id": "46-causal-masking--visualization",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Interview Q&amp;A",
+  "id": "interview-qa",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Common Mistakes",
+  "id": "common-mistakes",
+  "level": 2
+}, {
+  "value": "Revision Notes",
+  "id": "revision-notes",
+  "level": 2
+}, {
+  "value": "Placement Section",
+  "id": "placement-section",
+  "level": 2
+}, {
+  "value": "Top 10 Interview Questions",
+  "id": "top-10-interview-questions",
+  "level": 3
+}, {
+  "value": "Google Style",
+  "id": "google-style",
+  "level": 4
+}, {
+  "value": "Amazon Style",
+  "id": "amazon-style",
+  "level": 4
+}, {
+  "value": "Microsoft Style",
+  "id": "microsoft-style",
+  "level": 4
+}, {
+  "value": "NVIDIA Style",
+  "id": "nvidia-style",
+  "level": 4
+}, {
+  "value": "AI Startup Style",
+  "id": "ai-startup-style",
+  "level": 4
+}, {
+  "value": "Resume Tips",
+  "id": "resume-tips",
+  "level": 3
+}, {
+  "value": "Interview Day Checklist",
+  "id": "interview-day-checklist",
+  "level": 3
+}, {
+  "value": "True/False",
+  "id": "truefalse",
+  "level": 2
+}, {
+  "value": "Fill in the Blank",
+  "id": "fill-in-the-blank",
+  "level": 2
+}, {
+  "value": "Scenario Questions",
+  "id": "scenario-questions",
+  "level": 2
+}, {
+  "value": "Output Questions",
+  "id": "output-questions",
+  "level": 2
+}, {
+  "value": "Difficulty Level",
+  "id": "difficulty-level",
+  "level": 2
+}, {
+  "value": "Tips &amp; Tricks",
+  "id": "tips--tricks",
+  "level": 2
+}, {
+  "value": "Memory Tricks",
+  "id": "memory-tricks",
+  "level": 2
+}, {
+  "value": "Further Reading",
+  "id": "further-reading",
+  "level": 2
+}, {
+  "value": "Related Topics",
+  "id": "related-topics",
+  "level": 2
+}, {
+  "value": "FAQs",
+  "id": "faqs",
+  "level": 2
+}, {
+  "value": "Important Notes",
+  "id": "important-notes",
+  "level": 2
+}, {
+  "value": "Historical Context",
+  "id": "historical-context",
+  "level": 2
+}, {
+  "value": "Security Considerations",
+  "id": "security-considerations",
+  "level": 2
+}, {
+  "value": "ML Intuition",
+  "id": "ml-intuition",
+  "level": 2
+}, {
+  "value": "Analogies",
+  "id": "analogies",
+  "level": 2
+}, {
+  "value": "Flashcards",
+  "id": "flashcards",
+  "level": 2
+}, {
+  "value": "Research References",
+  "id": "research-references",
+  "level": 2
+}, {
+  "value": "Open-Source Tools",
+  "id": "open-source-tools",
+  "level": 2
+}, {
+  "value": "Debugging Guide",
+  "id": "debugging-guide",
+  "level": 2
+}, {
+  "value": "Mock Interview Section",
+  "id": "mock-interview-section",
+  "level": 2
+}, {
+  "value": "Optimized Implementation",
+  "id": "optimized-implementation",
+  "level": 2
+}, {
+  "value": "Evaluation Metrics",
+  "id": "evaluation-metrics",
+  "level": 2
+}, {
+  "value": "Real-World Examples",
+  "id": "real-world-examples",
+  "level": 2
+}, {
+  "value": "Next Topic",
+  "id": "next-topic",
+  "level": 2
+}, {
+  "value": "Limitations",
+  "id": "limitations",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    button: "button",
+    code: "code",
+    details: "details",
+    div: "div",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "attention-mechanism--bahdanau-luong-self-attention-multi-head-attention",
+        children: "Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "LO#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain the motivation for attention in seq2seq models: overcoming the fixed-context-vector bottleneck"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement Bahdanau (additive) and Luong (multiplicative) attention mechanisms"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Derive scaled dot-product attention from query, key, value matrices"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Build multi-head attention with parallel heads and concatenation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apply causal (autoregressive) masking for decoder self-attention"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visualize attention weights and interpret model focus"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "introduction",
+      children: "Introduction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Natural language processing is how machines understand human text. Transformers revolutionized NLP and enabled modern LLMs. This module covers tokenization, attention, BERT, and the Hugging Face ecosystem."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "key-terminology",
+      children: "Key Terminology"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Understanding attention mechanism is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how attention mechanism works in practice."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Seq2Seq Bottleneck"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed context vector fails for long sequences"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bahdanau Attention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Additive attention with alignment score computation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Luong Attention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiplicative (dot, general, concat) score variants"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Self-Attention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Q, K, V from same sequence, pairwise interactions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-Head Attention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Parallel attention heads, concatenation, projection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Causality & Visualization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Autoregressive masking, attention weight heatmaps"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\r\n    A[Encoder States] --> B[Attention Mechanism]\r\n    C[Decoder State] --> B\r\n    B --> D{Attention Type}\r\n    D -->|Bahdanau| E[Additive Score]\r\n    D -->|Luong| F[Multiplicative Score]\r\n    D -->|Self-Attention| G[Q, K, V from same source]\r\n    E --> H[Alignment Vector]\r\n    F --> H\r\n    G --> H\r\n    H --> I[Context Vector]\r\n    I --> J[Concatenate with Decoder State]\r\n    J --> K[Output Projection]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "41-the-seq2seq-bottleneck",
+      children: "4.1 The Seq2Seq Bottleneck"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In the plain encoder-decoder, the encoder compresses the entire input sequence into a fixed-size context vector (the final hidden state). For long sequences, this vector becomes an information bottleneck — it cannot capture all details."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface EncoderState {\r\n  hidden: number[];\r\n  cell: number[];\r\n}\r\n\r\nclass AttentionContext {\r\n  private encoderStates: EncoderState[] = [];\r\n\r\n  storeEncoderState(state: EncoderState): void {\r\n    this.encoderStates.push(state);\r\n  }\r\n\r\n  getEncoderStates(): EncoderState[] {\r\n    return this.encoderStates;\r\n  }\r\n\r\n  clear(): void {\r\n    this.encoderStates = [];\r\n  }\r\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Attention solves this by allowing the decoder to look at all encoder hidden states, weighted by relevance. At each decoding step, attention computes a context vector as a weighted sum of encoder states, where weights indicate which input tokens are most relevant for generating the next output token."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "42-bahdanau-attention",
+      children: "4.2 Bahdanau Attention"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Bahdanau et al. (2014) introduced additive attention, also called \"concat\" attention. The alignment score uses a feed-forward layer with tanh activation."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class BahdanauAttention {\r\n  private decoderHiddenSize: number;\r\n  private encoderHiddenSize: number;\r\n  private attentionDim: number;\r\n\r\n  // Weight matrices\r\n  private W1: number[][]; // encoder projection\r\n  private W2: number[][]; // decoder projection\r\n  private v: number[];   // score vector\r\n\r\n  constructor(decoderHiddenSize: number, encoderHiddenSize: number, attentionDim = 128) {\r\n    this.decoderHiddenSize = decoderHiddenSize;\r\n    this.encoderHiddenSize = encoderHiddenSize;\r\n    this.attentionDim = attentionDim;\r\n\r\n    this.W1 = this.initMatrix(attentionDim, encoderHiddenSize);\r\n    this.W2 = this.initMatrix(attentionDim, decoderHiddenSize);\r\n    this.v = Array.from({ length: attentionDim }, () => (Math.random() - 0.5) * 0.1);\r\n  }\r\n\r\n  private initMatrix(rows: number, cols: number): number[][] {\r\n    const scale = Math.sqrt(2 / (rows + cols));\r\n    return Array.from({ length: rows }, () =>\r\n      Array.from({ length: cols }, () => (Math.random() * 2 - 1) * scale)\r\n    );\r\n  }\r\n\r\n  // Score function: e_{tj} = v^T * tanh(W1 * h_j + W2 * s_{t-1})\r\n  private score(encoderHidden: number[], decoderPrevHidden: number[]): number {\r\n    const combined = new Array(this.attentionDim).fill(0);\r\n    // W1 * h_j\r\n    for (let i = 0; i < this.attentionDim; i++) {\r\n      for (let j = 0; j < this.encoderHiddenSize; j++) {\r\n        combined[i] += this.W1[i][j] * encoderHidden[j];\r\n      }\r\n    }\r\n    // + W2 * s_{t-1}\r\n    for (let i = 0; i < this.attentionDim; i++) {\r\n      for (let j = 0; j < this.decoderHiddenSize; j++) {\r\n        combined[i] += this.W2[i][j] * decoderPrevHidden[j];\r\n      }\r\n    }\r\n    // tanh\r\n    const tanh = combined.map((v) => Math.tanh(v));\r\n    // v^T *\r\n    return tanh.reduce((s, v, i) => s + v * this.v[i], 0);\r\n  }\r\n\r\n  compute(\r\n    encoderStates: number[][],\r\n    decoderPrevHidden: number[]\r\n  ): { context: number[]; attentionWeights: number[] } {\r\n    const T = encoderStates.length;\r\n\r\n    // Compute alignment scores\r\n    const scores = encoderStates.map((h) =>\r\n      this.score(h, decoderPrevHidden)\r\n    );\r\n\r\n    // Softmax to get attention weights\r\n    const maxScore = Math.max(...scores);\r\n    const expScores = scores.map((s) => Math.exp(s - maxScore));\r\n    const sumExp = expScores.reduce((a, b) => a + b, 0);\r\n    const attentionWeights = expScores.map((s) => s / sumExp);\r\n\r\n    // Context vector: weighted sum of encoder states\r\n    const hiddenSize = encoderStates[0].length;\r\n    const context = new Array(hiddenSize).fill(0);\r\n    for (let t = 0; t < T; t++) {\r\n      for (let j = 0; j < hiddenSize; j++) {\r\n        context[j] += attentionWeights[t] * encoderStates[t][j];\r\n      }\r\n    }\r\n\r\n    return { context, attentionWeights };\r\n  }\r\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Bahdanau attention is \"additive\" because it computes the score as a learned function with addition followed by tanh. It was the first attention mechanism applied to neural machine translation (English→French)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "43-luong-attention",
+      children: "4.3 Luong Attention"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Luong et al. (2015) proposed simpler score functions and two attention styles: global (all encoder states) and local (a window around the current position)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "type LuongScoreFunction = \"dot\" | \"general\" | \"concat\";\r\n\r\nclass LuongAttention {\r\n  private decoderHiddenSize: number;\r\n  private encoderHiddenSize: number;\r\n  private scoreFn: LuongScoreFunction;\r\n  private Wa?: number[][]; // for \"general\" score\r\n\r\n  constructor(\r\n    decoderHiddenSize: number,\r\n    encoderHiddenSize: number,\r\n    scoreFn: LuongScoreFunction = \"general\"\r\n  ) {\r\n    this.decoderHiddenSize = decoderHiddenSize;\r\n    this.encoderHiddenSize = encoderHiddenSize;\r\n    this.scoreFn = scoreFn;\r\n\r\n    if (scoreFn === \"general\") {\r\n      this.Wa = Array.from({ length: encoderHiddenSize }, () =>\r\n        Array.from({ length: decoderHiddenSize }, () =>\r\n          (Math.random() - 0.5) * 0.1\r\n        )\r\n      );\r\n    }\r\n  }\r\n\r\n  private score(decoderHidden: number[], encoderHidden: number[]): number {\r\n    switch (this.scoreFn) {\r\n      case \"dot\": {\r\n        // s_t^T * h_j\r\n        let dot = 0;\r\n        const minDim = Math.min(this.decoderHiddenSize, this.encoderHiddenSize);\r\n        for (let i = 0; i < minDim; i++) {\r\n          dot += decoderHidden[i] * encoderHidden[i];\r\n        }\r\n        return dot;\r\n      }\r\n      case \"general\": {\r\n        // s_t^T * Wa * h_j\r\n        const Wa_h = new Array(this.decoderHiddenSize).fill(0);\r\n        for (let i = 0; i < this.decoderHiddenSize; i++) {\r\n          for (let j = 0; j < this.encoderHiddenSize; j++) {\r\n            if (this.Wa) Wa_h[i] += this.Wa[j][i] * encoderHidden[j];\r\n          }\r\n        }\r\n        let dot = 0;\r\n        for (let i = 0; i < this.decoderHiddenSize; i++) {\r\n          dot += decoderHidden[i] * Wa_h[i];\r\n        }\r\n        return dot;\r\n      }\r\n      case \"concat\": {\r\n        // v_a^T * tanh(Wa * [s_t; h_j])\r\n        let concatVal = 0;\r\n        for (let i = 0; i < Math.min(this.decoderHiddenSize, this.encoderHiddenSize); i++) {\r\n          concatVal += Math.tanh(decoderHidden[i] + encoderHidden[i]);\r\n        }\r\n        return concatVal;\r\n      }\r\n    }\r\n  }\r\n\r\n  compute(\r\n    decoderHidden: number[],\r\n    encoderStates: number[][]\r\n  ): { context: number[]; attentionWeights: number[] } {\r\n    const scores = encoderStates.map((h) => this.score(decoderHidden, h));\r\n    const maxScore = Math.max(...scores);\r\n    const expScores = scores.map((s) => Math.exp(s - maxScore));\r\n    const sumExp = expScores.reduce((a, b) => a + b, 0);\r\n    const attentionWeights = expScores.map((s) => s / sumExp);\r\n\r\n    const context = new Array(this.encoderHiddenSize).fill(0);\r\n    for (let t = 0; t < encoderStates.length; t++) {\r\n      for (let j = 0; j < this.encoderHiddenSize; j++) {\r\n        context[j] += attentionWeights[t] * encoderStates[t][j];\r\n      }\r\n    }\r\n\r\n    return { context, attentionWeights };\r\n  }\r\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Luong's global attention computes the context vector and then combines it with the decoder hidden state via: h~_t = tanh(W_c * [s_t; c_t]), where [;] denotes concatenation. This is simpler than Bahdanau's approach of using attention to compute the decoder state directly."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Local attention"
+      }), " predicts an aligned position p_t for each output word, then computes attention only within a window [p_t - D, p_t + D]. This reduces computation from O(T) to O(2D) where D is a fixed window size (typically 10)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "44-self-attention",
+      children: "4.4 Self-Attention"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Self-attention (also called intra-attention) computes attention within a single sequence: each token attends to every other token. Queries (Q), Keys (K), and Values (V) are all derived from the same input."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class SelfAttention {\r\n  private inputDim: number;\r\n  private dk: number;\r\n\r\n  private Wq: number[][];\r\n  private Wk: number[][];\r\n  private Wv: number[][];\r\n\r\n  constructor(inputDim: number, dk: number = 64) {\r\n    this.inputDim = inputDim;\r\n    this.dk = dk;\r\n\r\n    this.Wq = this.initMatrix(dk, inputDim);\r\n    this.Wk = this.initMatrix(dk, inputDim);\r\n    this.Wv = this.initMatrix(dk, inputDim);\r\n  }\r\n\r\n  private initMatrix(rows: number, cols: number): number[][] {\r\n    const scale = Math.sqrt(2 / (rows + cols));\r\n    return Array.from({ length: rows }, () =>\r\n      Array.from({ length: cols }, () => (Math.random() * 2 - 1) * scale)\r\n    );\r\n  }\r\n\r\n  forward(input: number[][]): { output: number[][]; attentionMatrix: number[][] } {\r\n    const n = input.length; // sequence length\r\n\r\n    // Project to Q, K, V\r\n    const Q = input.map((x) => this.matVecMul(this.Wq, x));\r\n    const K = input.map((x) => this.matVecMul(this.Wk, x));\r\n    const V = input.map((x) => this.matVecMul(this.Wv, x));\r\n\r\n    // Compute attention scores: Q * K^T / sqrt(dk)\r\n    const scores: number[][] = [];\r\n    for (let i = 0; i < n; i++) {\r\n      scores[i] = [];\r\n      for (let j = 0; j < n; j++) {\r\n        let dot = 0;\r\n        for (let k = 0; k < this.dk; k++) {\r\n          dot += Q[i][k] * K[j][k];\r\n        }\r\n        scores[i][j] = dot / Math.sqrt(this.dk);\r\n      }\r\n    }\r\n\r\n    // Softmax along rows\r\n    const attentionMatrix = scores.map((row) => {\r\n      const max = Math.max(...row);\r\n      const exp = row.map((s) => Math.exp(s - max));\r\n      const sum = exp.reduce((a, b) => a + b, 0);\r\n      return exp.map((e) => e / sum);\r\n    });\r\n\r\n    // Weighted sum of values\r\n    const output = attentionMatrix.map((row) => {\r\n      const out = new Array(this.dk).fill(0);\r\n      for (let j = 0; j < n; j++) {\r\n        for (let k = 0; k < this.dk; k++) {\r\n          out[k] += row[j] * V[j][k];\r\n        }\r\n      }\r\n      return out;\r\n    });\r\n\r\n    return { output, attentionMatrix };\r\n  }\r\n\r\n  private matVecMul(W: number[][], v: number[]): number[] {\r\n    return W.map((row) => row.reduce((s, w, j) => s + w * v[j], 0));\r\n  }\r\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scaled dot-product attention"
+      }), ": Dividing by sqrt(d_k) prevents the dot products from growing large in magnitude (which pushes softmax into regions of extremely small gradients). Without scaling, for d_k=512, the variance of dot products is 512, making softmax saturate."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "45-multi-head-attention",
+      children: "4.5 Multi-Head Attention"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Multi-head attention runs h parallel attention heads, each learning different relationship types. The outputs are concatenated and projected."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class MultiHeadAttention {\r\n  private numHeads: number;\r\n  private dk: number;\r\n  private dv: number;\r\n  private dModel: number;\r\n  private heads: SelfAttention[] = [];\r\n  private Wo: number[][]; // output projection\r\n\r\n  constructor(dModel: number, numHeads: number = 8) {\r\n    this.dModel = dModel;\r\n    this.numHeads = numHeads;\r\n    this.dk = dModel / numHeads;\r\n    this.dv = dModel / numHeads;\r\n\r\n    for (let i = 0; i < numHeads; i++) {\r\n      this.heads.push(new SelfAttention(dModel, this.dk));\r\n    }\r\n\r\n    // Output projection: W_O (d_model x d_model)\r\n    this.Wo = Array.from({ length: dModel }, () =>\r\n      Array.from({ length: dModel }, () => (Math.random() - 0.5) * 0.1)\r\n    );\r\n  }\r\n\r\n  forward(input: number[][]): { output: number[][]; attentionMatrices: number[][][] } {\r\n    const n = input.length;\r\n    const headOutputs: number[][][] = [];\r\n    const attentionMatrices: number[][][] = [];\r\n\r\n    // Run each head\r\n    for (let headIdx = 0; headIdx < this.numHeads; headIdx++) {\r\n      const { output, attentionMatrix } = this.heads[headIdx].forward(input);\r\n      headOutputs.push(output);\r\n      attentionMatrices.push(attentionMatrix);\r\n    }\r\n\r\n    // Concatenate heads: (n, d_model)\r\n    const concatOutput: number[][] = [];\r\n    for (let i = 0; i < n; i++) {\r\n      const concatRow: number[] = [];\r\n      for (let h = 0; h < this.numHeads; h++) {\r\n        concatRow.push(...headOutputs[h][i]);\r\n      }\r\n      concatOutput.push(concatRow);\r\n    }\r\n\r\n    // Project with W_O\r\n    const output = concatOutput.map((row) =>\r\n      this.Wo.map((wRow) =>\r\n        wRow.reduce((s, w, j) => s + w * row[j], 0)\r\n      )\r\n    );\r\n\r\n    return { output, attentionMatrices };\r\n  }\r\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Each head learns different relationship patterns: one head might learn syntactic dependencies (subject-verb agreement), another learns positional relationships (adjacent words), and another learns semantic associations."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "46-causal-masking--visualization",
+      children: "4.6 Causal Masking & Visualization"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Causal (autoregressive) masking"
+      }), " prevents decoder positions from attending to future tokens. This is implemented by adding -infinity to the upper triangle of the attention matrix before softmax."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class CausalSelfAttention extends SelfAttention {\r\n  forward(input: number[][]): { output: number[][]; attentionMatrix: number[][] } {\r\n    const n = input.length;\r\n    const Q = input.map((x) => this.matVecMul(this.Wq, x));\r\n    const K = input.map((x) => this.matVecMul(this.Wk, x));\r\n    const V = input.map((x) => this.matVecMul(this.Wv, x));\r\n\r\n    // Compute scores\r\n    const scores: number[][] = [];\r\n    for (let i = 0; i < n; i++) {\r\n      scores[i] = [];\r\n      for (let j = 0; j < n; j++) {\r\n        let dot = 0;\r\n        for (let k = 0; k < this.dk; k++) {\r\n          dot += Q[i][k] * K[j][k];\r\n        }\r\n        scores[i][j] = dot / Math.sqrt(this.dk);\r\n      }\r\n    }\r\n\r\n    // Apply causal mask: set scores[i][j] = -Infinity for j > i\r\n    for (let i = 0; i < n; i++) {\r\n      for (let j = i + 1; j < n; j++) {\r\n        scores[i][j] = -Infinity;\r\n      }\r\n    }\r\n\r\n    // Softmax\r\n    const attentionMatrix = scores.map((row) => {\r\n      const max = Math.max(...row);\r\n      const validExp = row.map((s) => (s === -Infinity ? 0 : Math.exp(s - max)));\r\n      const sum = validExp.reduce((a, b) => a + b, 0);\r\n      return validExp.map((e) => (sum === 0 ? 0 : e / sum));\r\n    });\r\n\r\n    // Weighted sum\r\n    const output = attentionMatrix.map((row) => {\r\n      const out = new Array(this.dk).fill(0);\r\n      for (let j = 0; j < n; j++) {\r\n        for (let k = 0; k < this.dk; k++) {\r\n          out[k] += row[j] * V[j][k];\r\n        }\r\n      }\r\n      return out;\r\n    });\r\n\r\n    return { output, attentionMatrix };\r\n  }\r\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Attention visualization"
+      }), " helps interpret what the model focuses on. A heatmap where rows are target positions and columns are source positions reveals alignment patterns."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class AttentionVisualizer {\r\n  static createHeatmap(\r\n    attentionMatrix: number[][],\r\n    sourceTokens: string[],\r\n    targetTokens: string[]\r\n  ): void {\r\n    const numRows = attentionMatrix.length;\r\n    const numCols = attentionMatrix[0].length;\r\n\r\n    console.log(\"Attention Heatmap:\\n\");\r\n    // Print header\r\n    process.stdout.write(\"        \");\r\n    for (const token of sourceTokens) {\r\n      process.stdout.write(token.padStart(10));\r\n    }\r\n    console.log();\r\n\r\n    for (let i = 0; i < numRows; i++) {\r\n      process.stdout.write(targetTokens[i]?.padStart(8) ?? \"\");\r\n      for (let j = 0; j < numCols; j++) {\r\n        const weight = attentionMatrix[i][j];\r\n        const bar = weight > 0.5 ? \"█\" : weight > 0.3 ? \"▓\" : weight > 0.1 ? \"▒\" : \"░\";\r\n        process.stdout.write(`     ${bar}   `);\r\n      }\r\n      console.log(`  (pos ${i})`);\r\n    }\r\n  }\r\n\r\n  static getTopAttention(\r\n    attentionMatrix: number[][],\r\n    sourceTokens: string[],\r\n    targetIdx: number,\r\n    k = 3\r\n  ): Array<{ token: string; weight: number }> {\r\n    const weights = attentionMatrix[targetIdx].map((w, j) => ({\r\n      token: sourceTokens[j],\r\n      weight: w,\r\n    }));\r\n    weights.sort((a, b) => b.weight - a.weight);\r\n    return weights.slice(0, k);\r\n  }\r\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In machine translation attention heatmaps, the alignment is typically near-diagonal for monotonic language pairs (English→French). For non-monotonic pairs (English→German with verb-final structure), attention shows long-range alignments (verbs attending to early positions)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Attention mechanisms allow models to focus on relevant parts of the input when producing each output element. Bahdanau attention computes alignment scores using a feed-forward network,.\r\nenabling the decoder to attend to different encoder hidden states at each step. Luong attention uses simpler score functions (dot, general,.\r\nconcat) and can be applied globally or locally. Self-attention computes attention within a single sequence, allowing each token to attend to every other token. Scaled dot-product attention divides by the square root of the dimension to prevent softmax saturation. Multi-head attention runs multiple attention heads in parallel,.\r\ncapturing different relationship types. Causal masking prevents positions from attending to future tokens in autoregressive decoding."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Bahdanau attention computes scores using a learned tanh layer; Luong attention uses simpler dot/general/concat scores"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Self-attention (Q, K, V from same source) is the foundation of transformer models"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Scaling by sqrt(d_k) prevents softmax saturation in dot-product attention"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Multi-head attention (8-16 heads) allows the model to attend to different relationship types simultaneously"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Causal masking (upper triangle set to -inf) is essential for autoregressive decoding"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Attention visualization reveals model interpretability: high weights on relevant source tokens are a good sign"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Local attention (Luong) reduces computation by restricting to a window, useful for very long sequences"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Multi-head attention with 8 heads and d_k = d_model / num_heads keeps the parameter count manageable"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-qa",
+      children: "Interview Q&A"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-q1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q1: What problem does attention solve in seq2seq models?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Plain seq2seq models compress the entire input sequence into a single fixed-size context vector (the encoder's final hidden state). For long sequences,.\nthis creates an information bottleneck — the decoder cannot access details about earlier input tokens. Attention solves this by giving the decoder access to all encoder hidden states,.\nweighted by relevance. The decoder computes a context vector at each step as a weighted sum of encoder states, where weights indicate which input tokens are most important for.\ngenerating the next output token. This allows the model to effectively \"look back\" at any part of the input, dramatically improving performance on long sequences."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-q2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q2: Explain the difference between Bahdanau and Luong attention.\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Bahdanau attention (2014) uses additive scoring: e_{tj} = v^T tanh(W1*h_j + W2*s_{t-1}). It has more parameters and is computed as a learned alignment model. The context vector.\nis used when computing the current decoder hidden state. Luong attention (2015) offers three simpler scoring variants: dot (s_t^T * h_j),.\ngeneral (s_t^T * Wa * h_j), and concat (v^T tanh(Wa*[s_t; h_j])). Luong's context vector is computed after the decoder hidden state and.\ncombined as h~_t = tanh(W_c[s_t; c_t]). Luong also introduced local attention (window around predicted position). Bahdanau is more expressive but slower;.\nLuong is simpler and faster, making it more practical for production."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-q3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q3: Why is the dot product scaled by sqrt(d_k) in transformer attention?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "For queries and keys of dimension d_k, the dot product has mean 0 and variance d_k. When d_k is large (e.g.,.\n512), the dot products can be very large in magnitude. Large values push the softmax function into regions where gradients are extremely small (near 0 or.\n1), making training difficult. Dividing by sqrt(d_k) normalizes the variance to 1, keeping softmax in regions with meaningful gradients. For d_k=512,.\nsqrt(d_k)≈22.6. Without scaling, the variance is 512 and softmax becomes near-one-hot, losing gradient signal for all but the largest score. This scaling is the key difference from simple dot-product attention."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-q4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q4: How does multi-head attention work?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Multi-head attention runs h parallel attention heads (typically h=8-16). Each head projects the input using learned weight matrices W_q, W_k, W_v and.\ncomputes scaled dot-product attention independently. The per-head dimension is d_k = d_model / h (e.g., d_model=512, h=8 → d_k=64). After computing each head's output (size n x d_k),.\nthey are concatenated along the feature dimension to form an n x d_model matrix, then projected through W_O (d_model x d_model). Each head can learn different attention patterns: position-based,.\nsyntactic, semantic. Multi-head attention with h=8 gives the model 8x the representational capacity of single-head attention with the same parameter cost."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-q5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q5: What is causal masking and why is it needed?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Causal masking (also called autoregressive masking or look-ahead masking) prevents each position from attending to future positions in the sequence. This is implemented by adding -Infinity to the upper triangle of the attention score matrix before softmax. After masking,.\neach position can only attend to itself and preceding positions. This is essential for decoder self-attention in autoregressive generation: when predicting token t,.\nthe model must not be able to see token t+1 (which would be cheating). Without causal masking, the model could simply copy the answer from future positions. The effect is a lower-triangular attention matrix."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-q6",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q6: What are queries, keys, and values in self-attention?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "In self-attention, each input token is projected into three vectors: Query (Q), Key (K), and Value (V). The analogy comes from information retrieval: Query is what you are looking for,.\nKey is what each item is labeled with, and Value is the actual content of each item. Attention computes how well each Query matches each Key (via dot product),.\nthen weights the Values by these match scores. For a sequence of n tokens, Q, K, V are each n x d_k matrices. The attention output for.\nposition i is a weighted sum of all V vectors, where the weight on V_j is proportional to exp(Q_i · K_j / sqrt(d_k)). This allows each position to aggregate information from all other positions."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-q7",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q7: What is local attention and when would you use it?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Local attention (Luong et al., 2015) restricts attention to a window around a predicted alignment position p_t, rather than attending to all encoder states. For.\neach decoder timestep t, the model predicts an aligned position p_t = S * sigmoid(v_p^T tanh(W_p * s_t)), where S is the source length. Attention is computed only within window [p_t - D,.\np_t + D] (D=10 is typical), with Gaussian weighting to favor positions near p_t. This reduces computation from O(T) to O(2D) where T is the full sequence length. Use local attention for.\nvery long sequences (documents, audio) where global attention is computationally prohibitive. The trade-off is potentially missing long-range dependencies beyond the window."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-q8",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q8: How do you visualize attention and what can you learn?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Attention is visualized as a heatmap: rows = target positions, columns = source positions, cell intensity = attention weight (0-1). For.\nmachine translation, an ideal alignment looks near-diagonal (monotonic language pairs). You can learn: (1) Is the model attending to relevant source words? (e.g.,.\nwhen translating the French word \"maison\", does it attend to \"house\"?). (2) Is there attention to NULL or irrelevant words? (attention noise). (3) What relationships do different heads capture? (BERT's heads show syntactic,.\npositional, and semantic patterns). (4) For long sequences, does attention spread out or concentrate? Concentrated attention on a few tokens suggests the model is using precise alignment. Tools like BertViz and.\nTensor2Tensor provide interactive visualization."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-q9",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q9: What is the time and memory complexity of self-attention?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "The time complexity of standard self-attention is O(n^2 * d_k) where n is the sequence length and d_k is the key dimension. The quadratic term n^2 comes from computing all pairwise dot products (n queries — n keys). Memory complexity is also O(n^2) for.\nthe attention matrix. For n=512 (standard BERT), this is manageable (262K entries). For n=8192 (long document), it becomes 67M entries — prohibitive. Sparsity approaches exist: (1) Sparse attention (fixed patterns) reduces to O(n * sqrt(n)). (2) Linformer projects keys/values to.\nO(n*k) with k << n. (3) Reformer uses locality-sensitive hashing for.\nO(n log n). (4) Longformer uses sliding window attention. Transformers with 512-1024 token limits use full self-attention; longer sequences require sparse variants."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-q10",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q10: How does attention help with long-range dependencies in sequences?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "RNNs process sequences left-to-right, with information flowing through a chain of hidden states. For dependencies 50+ tokens apart, the signal degrades due to gradient issues. Attention creates a direct connection between any two positions regardless of distance. The attention weight between position i and.\nj is computed directly from their representations, with O(1) path length. This means the model can learn \"The man who lived next door... he\" — the pronoun \"he\" can directly attend to \"man\" even if they are 100 tokens apart. In RNNs,.\nthis requires the hidden state to carry information through 100 steps. Empirical results show attention-based models significantly outperform RNNs on tasks requiring long-range dependencies like coreference resolution and.\ndocument-level sentiment."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Q1: Which attention mechanism was introduced first for neural machine translation?\r\na) Self-attention\r\nb) Bahdanau attention\r\nc) Luong attention\r\nd) Multi-head attention"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-quiz1",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) Bahdanau attention"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "Bahdanau et al. (2014) introduced additive attention for neural machine translation. Luong et al. (2015) and self-attention (Vaswani et al. 2017) came later."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Q2: What is the purpose of scaling by sqrt(d_k) in scaled dot-product attention?\r\na) Increase model capacity\r\nb) Prevent softmax saturation\r\nc) Reduce computation\r\nd) Add non-linearity"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-quiz2",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) Prevent softmax saturation"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "Scaling by sqrt(d_k) normalizes the variance of dot products to 1, preventing large values that would cause softmax to saturate with near-zero gradients."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Q3: How many attention heads does BERT-base use?\r\na) 4\r\nb) 8\r\nc) 12\r\nd) 16"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-quiz3",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: c) 12"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "BERT-base has 12 attention heads with d_model=768 (d_k=64 per head). BERT-large has 16 heads with d_model=1024 (d_k=64)."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Q4: What does the upper triangle of a causal attention mask contain?\r\na) Zeros\r\nb) Ones\r\nc) -Infinity\r\nd) NaN"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-quiz4",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: c) -Infinity"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "The upper triangle is set to -Infinity so that after softmax those positions have zero attention weight, preventing tokens from attending to future tokens."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Q5: What is the time complexity of standard self-attention?\r\na) O(n)\r\nb) O(n log n)\r\nc) O(n^2)\r\nd) O(n^3)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "nlp04-quiz5",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: c) O(n^2)"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "Self-attention computes pairwise dot products for all n query-key pairs, resulting in O(n^2 * d_k) time and O(n^2) memory."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "common-mistakes",
+      children: "Common Mistakes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not understanding the fundamental concepts before applying them"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Skipping edge cases in implementation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not analyzing time/space complexity"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Forgetting to handle null/empty inputs"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Not practicing enough problems to build pattern recognition", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Easy"
+        }), " — Implement Bahdanau attention on a toy seq2seq model for reversing sequences (input: [1,2,3], target: [3,2,1]). Visualize the attention weights."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Easy"
+      }), " — Implement scaled dot-product attention from scratch. Compare the softmax output with and without sqrt(d_k) scaling for d_k=512."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Medium"
+      }), " — Build a multi-head attention module with h=4 heads. On a synthetic sequence of 10 tokens, analyze what attention patterns each head learns."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Medium"
+      }), " — Implement causal masking for decoder self-attention. Verify that position i has zero attention weight for all positions j > i."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hard"
+      }), " — Implement local attention (Luong style) with Gaussian windowing. Compare translation BLEU score and inference speed against global attention on the IWSLT dataset."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous"
+        }), ": ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/ai-engineering-placement/10-nlp-transformers/03-sequence-models",
+          children: "Sequence Models"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next"
+        }), ": [Transformer Architecture](05-transformer-archite"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "revision-notes",
+      children: "Revision Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Core principle: Understand the fundamental concepts thoroughly"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implementation pattern: Practice with real code examples"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Complexity: Know the time and space complexity"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Application: Know when to use this in production systems"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Interview: Frequently asked in technical interviews"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Edge cases: Consider common failure scenarios"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Related concepts: Connect to broader system design"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "placement-section",
+      children: "Placement Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "top-10-interview-questions",
+      children: "Top 10 Interview Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "google-style",
+      children: "Google Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Explain the core idea of Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention in under 60 seconds, then give a real-world analogy."
+          }), " — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Design a minimal, well-typed function in this chapter — Bahdanau, Luong, Self-Attention, Multi-Head Attention."
+          }), " — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "**What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "amazon-style",
+      children: "Amazon Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Describe a production bug caused by misunderstanding this technique — Bahdanau, Luong, Self-Attention, Multi-Head Attention. How did you diagnose and fix it?"
+          }), " — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you scale a system using this technique — Bahdanau, Luong, Self-Attention, Multi-Head Attention from 10 users to 10 million?"
+          }), " — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "microsoft-style",
+      children: "Microsoft Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Compare Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention with the closest alternative approach. When would you choose each?"
+          }), " — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Walk through how you would test a component built on this — Bahdanau, Luong, Self-Attention, Multi-Head Attention."
+          }), " — Unit, integration, property-based tests; mocking boundaries; golden files for outputs."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "nvidia-style",
+      children: "NVIDIA Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "8",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How does Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention behave differently at scale — memory, throughput, or precision-wise?"
+          }), " — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you make an implementation of this technique — Bahdanau, Luong, Self-Attention, Multi-Head Attention run faster on GPU hardware?"
+          }), " — Batch operations, vectorization, avoiding Python loops, reducing data movement."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ai-startup-style",
+      children: "AI Startup Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Write the smallest possible implementation of this technique — Bahdanau, Luong, Self-Attention, Multi-Head Attention that is production-quality."
+        }), " — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resume-tips",
+      children: "Resume Tips"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Name Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention explicitly in your skills section, paired with a measurable achievement (\"Reduced X by 40% using Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention\")."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add a bullet describing a project that applies Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention to real data, with numbers."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mention the tools and libraries you used alongside Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention (linters, test frameworks, profiling tools)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep resume bullets under 15 words and start each with an action verb."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "interview-day-checklist",
+      children: "Interview Day Checklist"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rehearse a 60-second explanation of Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention and one real-world analogy."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prepare one STAR story about debugging a Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention-related production issue."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review complexity and edge cases for the classic Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention interview problem."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Have questions ready: how does the team apply Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention in production today?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test your environment (Python, editor, internet) 15 minutes before the interview."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "truefalse",
+      children: "True/False"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention builds directly on the fundamentals covered in the earlier chapters of this module. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Every advanced topic in this module assumes the core concepts from the previous chapters."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should write at least one code example for Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention before moving to the next chapter. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Active recall with hands-on code beats passive reading for retention."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " The complexity analysis for Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention is the same regardless of input size. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Complexity grows with input size; always state best, average, and worst case."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Edge cases (empty input, invalid input, boundary values) matter for Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention in production. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Most production bugs come from unhandled edge cases."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should memorize the Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention chapter content once and never review it again. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "fill-in-the-blank",
+      children: "Fill in the Blank"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter that covers Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention is Chapter ___ of this module. — Answer: check the module's table of contents."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The time complexity of the standard approach to 04 Attention Mechanism is ___. — Answer: O(n^2) self-attention, O(n) feed-forward"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The main edge case to handle when implementing 04 Attention Mechanism is ___. — Answer: long sequences, padding, attention overflow"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools commonly used to debug Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The related topic that connects to Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention in the next chapter is ___. — Answer: see the Next Topic section."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "scenario-questions",
+      children: "Scenario Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A teammate ships a change involving Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your implementation of this technique — Bahdanau, Luong, Self-Attention, Multi-Head Attention is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A new hire asks you to explain Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your team's codebase has three different patterns for Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "output-questions",
+      children: "Output Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output of the simplest correct implementation of this technique — Bahdanau, Luong, Self-Attention, Multi-Head Attention on an empty input?"
+        }), " — Trace through the code: it should return the documented default (None, 0, empty collection) without raising."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output when the input is at the boundary value?"
+        }), " — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What does the implementation return when given invalid input types?"
+        }), " — With type hints and validation, it raises a clear error; without, it may fail silently."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output for the sample input given in the chapter's Examples section?"
+        }), " — Re-run the chapter's example code and compare against the documented output."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the time complexity output when you profile the implementation at 10x input size?"
+        }), " — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "difficulty-level",
+      children: "Difficulty Level"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "What It Takes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Beginner"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-2 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read theory, run the chapter examples, solve the Easy exercises"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Intermediate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-5 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete Medium exercises, explain Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention to someone else"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Advanced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+ week"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Solve Hard exercises, optimize for real datasets, answer interview follow-ups"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "tips--tricks",
+      children: "Tips & Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always write a one-line example of Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention from memory before opening the chapter — active recall first."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the chapter's Revision Notes as a checklist: you have mastered Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention when you can explain each bullet."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For interviews, practice explaining Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention twice: once with a technical audience, once with a non-technical audience."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep a personal examples file where you collect your own Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention snippets; interviewers love original examples."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "memory-tricks",
+      children: "Memory Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Acronym"
+        }), ": build a mnemonic from the 5 key concepts of Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention listed in the Chapter at a Glance table."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Story"
+        }), ": link Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention to a familiar story — the analogy in the Visual Analogy section is designed to stick."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Number anchor"
+        }), ": remember the complexity of Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention by connecting it to a known algorithm of the same class."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Color code"
+        }), ": highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Teach-back"
+        }), ": explain Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "further-reading",
+      children: "Further Reading"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation for the primary library used in this chapter"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The original research paper introducing this concept (search Google Scholar)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Towards Data Science articles on this topic"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The relevant chapter in 'Designing Data-Intensive Applications' by Kleppmann"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "GitHub repositories of production implementations Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related-topics",
+      children: "Related Topics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous chapter"
+        }), " in Module 10 — builds the foundation for 04 Attention Mechanism"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next chapter"
+        }), " — extends 04 Attention Mechanism with advanced techniques"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Module 07 System Design"
+        }), " — how 04 Attention Mechanism fits into scalable production architectures"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Module 21 Interview Preparation"
+        }), " — FAANG-style questions on 04 Attention Mechanism"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Module 19 Capstone Projects"
+        }), " — end-to-end application of 04 Attention Mechanism"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "faqs",
+      children: "FAQs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Do I need to memorize all of 04 Attention Mechanism?"
+        }), " — Understand the big picture first. Memorize the key patterns via flashcards. Interviewers test understanding, not recitation."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What if I get stuck on an exercise?"
+        }), " — Re-read the theory, run the example code, then attempt again. If stuck after 20 minutes, move on and return the next day with fresh eyes."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "How much time should I spend on 04 Attention Mechanism?"
+        }), " — 2-3 hours for theory + examples, 3-5 hours for exercises. Total: one focused weekend session."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Is 04 Attention Mechanism asked in FAANG interviews?"
+        }), " — Yes. Check the Interview Q&A section for exact question styles used by Google, Amazon, Microsoft, and AI startups."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What's the fastest way to master 04 Attention Mechanism?"
+        }), " — Write the core implementation from memory, explain it to someone else, then solve one Hard exercise. Teaching reveals gaps faster than re-reading."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "important-notes",
+      children: "Important Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention is a core requirement for the rest of this module — do not skip the examples."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always analyze complexity (time and space) when working with Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Production correctness means handling edge cases, not just the happy path."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview answers should start with the definition, then the example, then the trade-offs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Revisit this chapter after finishing the module; the context from later chapters deepens understanding."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "historical-context",
+      children: "Historical Context"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools used for Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention today evolved from simpler versions; the chapter covers the modern, recommended approach."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interviewers value knowing one historical fact about Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention — it shows genuine interest, not just cramming."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The library/tooling ecosystem around Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention changes quickly; focus on fundamentals that remain stable."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "security-considerations",
+      children: "Security Considerations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Validate all external inputs before processing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Never log sensitive data (API keys, PII, passwords)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use environment variables for configuration secrets"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement rate limiting for public-facing endpoints"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Follow the principle of least privilege for all system components"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "ml-intuition",
+      children: "ML Intuition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This concept appears in ML pipelines at the data processing, training, or serving layer"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding it helps debug model misbehavior — most ML bugs are infrastructure bugs, not model bugs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply vectorization and batching to scale this concept to large datasets"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Monitor for drift and degradation in production — set up alerts for key metrics"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Connect to the broader ML lifecycle: data → features → training → evaluation → deployment → monitoring"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "analogies",
+      children: "Analogies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "04 Attention Mechanism is like a GPS navigation system"
+          }), ": you define the destination (goal), the system plans the route (algorithm), and recalculates when you take a wrong turn (error handling)."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Complexity is like a restaurant kitchen"
+          }), ": a single chef (O(n)) handles small orders fine, but 1000 simultaneous orders need parallel chefs (O(log n) with proper indexing)."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Edge cases are like stress tests"
+          }), ": the happy path is a calm day, but production is Black Friday — design for the worst case."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "The chapter roadmap is a subway map"
+          }), ": each section is a station, and skipping one means you miss the connection to the next destination.## Capstone Project Link"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.a, {
+            href: "https://github.com/Raushan666java/ai-engineering-journey",
+            children: "Module Capstone: End-to-End Project"
+          }), " — this chapter contributes the Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention skills used in the module's capstone project. Complete the exercises here before starting the capstone."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "flashcards",
+      children: "Flashcards"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "10nlptransformers-04attentionmechanism-flash1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the core concept of Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention in one sentence?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Review the Theory section and write a one-sentence definition that includes: what it is, how it works, and why it matters for production AI engineering."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "10nlptransformers-04attentionmechanism-flash2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the most common mistake engineers make with \n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "The most common mistake is skipping edge cases. Always handle empty input, null values, and boundary conditions before implementing the happy path."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "10nlptransformers-04attentionmechanism-flash3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the time and space complexity of the standard Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention approach?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Time complexity depends on the algorithm chosen. Space complexity depends on whether you store intermediate results. Always state both for interview answers."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "10nlptransformers-04attentionmechanism-flash4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    When is Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention NOT the right choice?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "This technique is not the right choice when simpler alternatives suffice, when the overhead exceeds the benefit, or when the team lacks the expertise to maintain it."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "10nlptransformers-04attentionmechanism-flash5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    How is Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention applied in a real production system?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Production stack: use the libraries shown in the code examples, add monitoring with Prometheus/Grafana, test with pytest, and lint with ruff."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "research-references",
+      children: "Research References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation of the primary library for Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention (linked in Further Reading)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic paper or textbook chapter introducing Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention (see References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The standard library reference for Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention-related functions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Engineering blog posts from companies running Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention in production at scale"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PEPs and RFCs where applicable (Python and networking standards)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-source-tools",
+      children: "Open-Source Tools"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The primary library used in the code examples"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "pytest for unit and integration testing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ruff + black for linting and formatting"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "mypy for static type checking"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "cProfile / py-spy for performance profiling Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "debugging-guide",
+      children: "Debugging Guide"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 1"
+        }), ": Reproduce the failure with the smallest possible input — isolate the bug before changing any code."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 2"
+        }), ": Add structured logging at each stage of the 04 Attention Mechanism pipeline to identify exactly where the failure occurs."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 3"
+        }), ": Check the Common Mistakes section — 80% of bugs match one of those patterns."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 4"
+        }), ": Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pdb.set_trace()"
+        }), " or your IDE debugger to inspect intermediate values at the failure point."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 5"
+        }), ": For performance issues, profile with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "cProfile"
+        }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "py-spy"
+        }), " before optimizing — never guess at bottlenecks."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 6"
+        }), ": Write a regression test that reproduces the bug before fixing it — this prevents recurrence."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "mock-interview-section",
+      children: "Mock Interview Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 1 — Screening (15 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention in 60 seconds."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a minimal working example of Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the complexity of your example?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 2 — Coding (45 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve the Medium exercise from this chapter under time pressure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "State your assumptions, then implement with type hints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test with edge cases: empty input, boundary values, invalid input."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 3 — Behavioral + System (30 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tell me about a time you debugged a Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention problem in a project."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How would you design a system where Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention is used at scale?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What metrics would you monitor?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Evaluation rubric"
+      }), ": correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "optimized-implementation",
+      children: "Optimized Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from typing import Any, Optional\r\n\r\ndef demonstrate_04_attention_mechanism(input_data: list[Any]) -> Optional[Any]:\r\n    \"\"\"Minimal production scaffold for 04 Attention Mechanism.\r\n\r\n    Key concepts: attention, positional encoding, feed-forward, layer norm\r\n    Complexity: O(n^2) self-attention, O(n) feed-forward\r\n    \"\"\"\r\n    if not input_data:\r\n        return None\r\n    # Validate input\r\n    if not isinstance(input_data, (list, tuple)):\r\n        raise TypeError(f\"Expected list, got {type(input_data).__name__}\")\r\n    # Core logic: implement 04 Attention Mechanism here\r\n    result = input_data[0] if input_data else None\r\n    return result\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keeps the function signature stable so tests written against it stay valid."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handles the empty-input contract explicitly."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add unit tests for the edge cases before implementing the logic (test-first)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "evaluation-metrics",
+      children: "Evaluation Metrics"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Skill"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Target"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept recall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention without notes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60-second explanation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code fluency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write the chapter example from memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No syntax errors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handle empty/invalid input in exercises"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All cases pass"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State time/space for the standard approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Correct big-O"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview readiness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Answer 5 Interview Q&A questions out loud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fluent, structured answers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Retention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Chapter quiz score after 3 days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80%+"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "real-world-examples",
+      children: "Real-World Examples"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Applied in production at companies like Google, Meta, Amazon, and Microsoft"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Used in data pipelines, model serving, and API backends"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Enables scalable, maintainable systems when applied correctly"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview insight: connect the concept to a business outcome — cost reduction, latency improvement, or reliability increase"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "next-topic",
+      children: "Next Topic"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/ai-engineering-placement/10-nlp-transformers/05-transformer-architecture",
+        children: "Transformer Architecture — Encoder-Decoder, Positional Encoding, Layer Norm"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "limitations",
+      children: "Limitations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Performance of Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention depends on input size and distribution — always benchmark for your own data."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone."
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

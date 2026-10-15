@@ -1,0 +1,10 @@
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[5741],{
+
+/***/ 5741
+() {
+
+/* (ignored) */
+
+/***/ }
+
+}]);

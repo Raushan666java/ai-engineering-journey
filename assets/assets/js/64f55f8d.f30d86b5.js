@@ -1,0 +1,1906 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[5311],{
+
+/***/ 42217
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_engineering_placement_09_deep_learning_pytorch_03_pytorch_nn_module_md_64f_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-09-deep-learning-pytorch-03-pytorch-nn-module-md-64f.json
+const site_docs_courses_ai_engineering_placement_09_deep_learning_pytorch_03_pytorch_nn_module_md_64f_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/deep-learning-pytorch/03-pytorch-nn-module","title":"PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init","description":"Learning Objectives","source":"@site/docs/courses/ai-engineering-placement/09-deep-learning-pytorch/03-pytorch-nn-module.md","sourceDirName":"courses/ai-engineering-placement/09-deep-learning-pytorch","slug":"/ai-engineering-placement/09-deep-learning-pytorch/03-pytorch-nn-module","permalink":"/ai-engineering-journey/ai-engineering-placement/09-deep-learning-pytorch/03-pytorch-nn-module","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":128,"frontMatter":{"id":"03-pytorch-nn-module","slug":"/ai-engineering-placement/09-deep-learning-pytorch/03-pytorch-nn-module","title":"PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init","sidebar_label":"PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init","sidebar_position":128},"sidebar":"placementSidebar","previous":{"title":"PyTorch Tensors — Tensors, Autograd, Device Management, Broadcasting","permalink":"/ai-engineering-journey/ai-engineering-placement/09-deep-learning-pytorch/02-pytorch-tensors"},"next":{"title":"CNN Fundamentals","permalink":"/ai-engineering-journey/ai-engineering-placement/09-deep-learning-pytorch/04-cnn-fundamentals"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-engineering-placement/09-deep-learning-pytorch/03-pytorch-nn-module.md
+
+
+const frontMatter = {
+	id: '03-pytorch-nn-module',
+	slug: '/ai-engineering-placement/09-deep-learning-pytorch/03-pytorch-nn-module',
+	title: 'PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init',
+	sidebar_label: 'PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init',
+	sidebar_position: 128
+};
+const contentTitle = 'PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Introduction",
+  "id": "introduction",
+  "level": 2
+}, {
+  "value": "Key Terminology",
+  "id": "key-terminology",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "3.1 nn.Module Basics",
+  "id": "31-nnmodule-basics",
+  "level": 2
+}, {
+  "value": "3.2 nn.Sequential",
+  "id": "32-nnsequential",
+  "level": 2
+}, {
+  "value": "3.3 Custom Layers",
+  "id": "33-custom-layers",
+  "level": 2
+}, {
+  "value": "3.4 Weight Initialization",
+  "id": "34-weight-initialization",
+  "level": 2
+}, {
+  "value": "3.5 Parameter Management",
+  "id": "35-parameter-management",
+  "level": 2
+}, {
+  "value": "3.6 Hooks",
+  "id": "36-hooks",
+  "level": 2
+}, {
+  "value": "3.7 Model Surgery and Dynamic Architectures",
+  "id": "37-model-surgery-and-dynamic-architectures",
+  "level": 2
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Interview Q&amp;A",
+  "id": "interview-qa",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Advanced: Custom Autograd Function",
+  "id": "advanced-custom-autograd-function",
+  "level": 3
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Common Mistakes",
+  "id": "common-mistakes",
+  "level": 2
+}, {
+  "value": "Revision Notes",
+  "id": "revision-notes",
+  "level": 2
+}, {
+  "value": "Placement Section",
+  "id": "placement-section",
+  "level": 2
+}, {
+  "value": "Top 10 Interview Questions",
+  "id": "top-10-interview-questions",
+  "level": 3
+}, {
+  "value": "Google Style",
+  "id": "google-style",
+  "level": 4
+}, {
+  "value": "Amazon Style",
+  "id": "amazon-style",
+  "level": 4
+}, {
+  "value": "Microsoft Style",
+  "id": "microsoft-style",
+  "level": 4
+}, {
+  "value": "NVIDIA Style",
+  "id": "nvidia-style",
+  "level": 4
+}, {
+  "value": "AI Startup Style",
+  "id": "ai-startup-style",
+  "level": 4
+}, {
+  "value": "Resume Tips",
+  "id": "resume-tips",
+  "level": 3
+}, {
+  "value": "Interview Day Checklist",
+  "id": "interview-day-checklist",
+  "level": 3
+}, {
+  "value": "True/False",
+  "id": "truefalse",
+  "level": 2
+}, {
+  "value": "Fill in the Blank",
+  "id": "fill-in-the-blank",
+  "level": 2
+}, {
+  "value": "Scenario Questions",
+  "id": "scenario-questions",
+  "level": 2
+}, {
+  "value": "Output Questions",
+  "id": "output-questions",
+  "level": 2
+}, {
+  "value": "Difficulty Level",
+  "id": "difficulty-level",
+  "level": 2
+}, {
+  "value": "Tips &amp; Tricks",
+  "id": "tips--tricks",
+  "level": 2
+}, {
+  "value": "Memory Tricks",
+  "id": "memory-tricks",
+  "level": 2
+}, {
+  "value": "Further Reading",
+  "id": "further-reading",
+  "level": 2
+}, {
+  "value": "Related Topics",
+  "id": "related-topics",
+  "level": 2
+}, {
+  "value": "FAQs",
+  "id": "faqs",
+  "level": 2
+}, {
+  "value": "Important Notes",
+  "id": "important-notes",
+  "level": 2
+}, {
+  "value": "Historical Context",
+  "id": "historical-context",
+  "level": 2
+}, {
+  "value": "Security Considerations",
+  "id": "security-considerations",
+  "level": 2
+}, {
+  "value": "ML Intuition",
+  "id": "ml-intuition",
+  "level": 2
+}, {
+  "value": "Analogies",
+  "id": "analogies",
+  "level": 2
+}, {
+  "value": "Flashcards",
+  "id": "flashcards",
+  "level": 2
+}, {
+  "value": "Research References",
+  "id": "research-references",
+  "level": 2
+}, {
+  "value": "Open-Source Tools",
+  "id": "open-source-tools",
+  "level": 2
+}, {
+  "value": "Debugging Guide",
+  "id": "debugging-guide",
+  "level": 2
+}, {
+  "value": "Mock Interview Section",
+  "id": "mock-interview-section",
+  "level": 2
+}, {
+  "value": "Optimized Implementation",
+  "id": "optimized-implementation",
+  "level": 2
+}, {
+  "value": "Evaluation Metrics",
+  "id": "evaluation-metrics",
+  "level": 2
+}, {
+  "value": "Real-World Examples",
+  "id": "real-world-examples",
+  "level": 2
+}, {
+  "value": "Next Topic",
+  "id": "next-topic",
+  "level": 2
+}, {
+  "value": "Limitations",
+  "id": "limitations",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    button: "button",
+    code: "code",
+    details: "details",
+    div: "div",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "pytorch-nnmodule--nnmodule-nnsequential-custom-layers-weight-init",
+        children: "PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Objective"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Build neural networks using nn.Module and nn.Sequential"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement custom layers by subclassing nn.Module"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apply weight initialization strategies for different activations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Understand parameter management, hooks, and module registration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use nn.ModuleList and nn.ModuleDict for dynamic architectures"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement forward hooks and backward hooks for debugging"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "introduction",
+      children: "Introduction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Deep learning powers modern AI breakthroughs. PyTorch is the framework of choice for researchers and production engineers alike. This module covers neural networks, CNNs, RNNs, and deployment best practices."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "key-terminology",
+      children: "Key Terminology"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Understanding pytorch nn module is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how pytorch nn module works in practice."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nn.Module Basics"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Subclass, ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "init"
+            }), ", forward, parameters, train/eval"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nn.Sequential"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sequential containers, dict vs list, add_module"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Custom Layers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Parameter registration, weight init, forward logic"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Weight Initialization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "apply(), reset_parameters(), custom init"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Parameter Management"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "named_parameters(), buffers, modules(), state_dict"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3.6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hooks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "forward hooks, backward hooks, feature extraction"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\r\n    A[nn.Module] --> B[__init__: Define Layers]\r\n    B --> C[forward: Define Computation]\r\n    C --> D[nn.Sequential]\r\n    C --> E[Custom forward Logic]\r\n    D --> F[Automatic fprop]\r\n    E --> F\r\n    F --> G[Output]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "31-nnmodule-basics",
+      children: "3.1 nn.Module Basics"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "All neural network components in PyTorch inherit from nn.Module."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import torch\r\nimport torch.nn as nn\r\nimport torch.nn.functional as F\r\n\r\nclass SimpleMLP(nn.Module):\r\n    def __init__(self, input_dim: int, hidden_dim: int, output_dim: int):\r\n        super().__init__()\r\n        self.fc1 = nn.Linear(input_dim, hidden_dim)\r\n        self.fc2 = nn.Linear(hidden_dim, hidden_dim)\r\n        self.fc3 = nn.Linear(hidden_dim, output_dim)\r\n        self.dropout = nn.Dropout(0.2)\r\n\r\n    def forward(self, x: torch.Tensor) -> torch.Tensor:\r\n        x = F.relu(self.fc1(x))\r\n        x = self.dropout(x)\r\n        x = F.relu(self.fc2(x))\r\n        x = self.fc3(x)\r\n        return x\r\n\r\nmodel = SimpleMLP(10, 64, 2)\r\nprint(f\"Parameters: {sum(p.numel() for p in model.parameters()):,}\")\r\nx = torch.randn(5, 10)\r\noutput = model(x)\r\nprint(f\"Output shape: {output.shape}\")\r\nmodel.train()\r\nprint(f\"Training mode: {model.training}\")\r\nmodel.eval()\r\nprint(f\"Evaluation mode: {model.training}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "nn.Module provides"
+      }), ": Automatic parameter tracking, train()/eval() mode, to(device), state_dict(), register_buffer()."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "32-nnsequential",
+      children: "3.2 nn.Sequential"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Sequential is a container for layers called in order."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "model = nn.Sequential(\r\n    nn.Linear(10, 64), nn.ReLU(), nn.Dropout(0.2),\r\n    nn.Linear(64, 32), nn.ReLU(), nn.Linear(32, 2),\r\n)\r\nx = torch.randn(5, 10)\r\nprint(f\"Sequential output: {model(x).shape}\")\r\n\r\n## Named sequential\r\nmodel2 = nn.Sequential(OrderedDict([\r\n    (\"fc1\", nn.Linear(10, 64)),\r\n    (\"relu\", nn.ReLU()),\r\n    (\"fc2\", nn.Linear(64, 2)),\r\n]))\r\nmodel2.add_module(\"dropout\", nn.Dropout(0.1))\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "When to use Sequential"
+      }), ": Simple feed-forward without branching or skip connections."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "33-custom-layers",
+      children: "3.3 Custom Layers"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class CustomLinear(nn.Module):\r\n    def __init__(self, in_features: int, out_features: int, bias: bool = True):\r\n        super().__init__()\r\n        self.weight = nn.Parameter(torch.randn(out_features, in_features) * 0.01)\r\n        if bias:\r\n            self.bias = nn.Parameter(torch.zeros(out_features))\r\n        else:\r\n            self.register_parameter(\"bias\", None)\r\n\r\n    def forward(self, x: torch.Tensor) -> torch.Tensor:\r\n        output = x @ self.weight.T\r\n        if self.bias is not None:\r\n            output += self.bias\r\n        return output\r\n\r\nclass ResidualBlock(nn.Module):\r\n    def __init__(self, dim: int):\r\n        super().__init__()\r\n        self.net = nn.Sequential(\r\n            nn.Linear(dim, dim), nn.BatchNorm1d(dim), nn.ReLU(),\r\n            nn.Linear(dim, dim), nn.BatchNorm1d(dim),\r\n        )\r\n\r\n    def forward(self, x: torch.Tensor) -> torch.Tensor:\r\n        return F.relu(self.net(x) + x)\r\n\r\ncustom = CustomLinear(10, 20)\r\nblock = ResidualBlock(64)\r\nx = torch.randn(5, 64)\r\nprint(f\"Residual output: {block(x).shape}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "34-weight-initialization",
+      children: "3.4 Weight Initialization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def init_weights(m: nn.Module):\r\n    if isinstance(m, nn.Linear):\r\n        nn.init.kaiming_normal_(m.weight, mode=\"fan_in\", nonlinearity=\"relu\")\r\n        nn.init.zeros_(m.bias)\r\n\r\nmodel = nn.Sequential(nn.Linear(100, 200), nn.ReLU(), nn.Linear(200, 10))\r\nmodel.apply(init_weights)\r\n\r\n## Various init schemes\r\nlayer = nn.Linear(100, 100)\r\nnn.init.xavier_uniform_(layer.weight)\r\nnn.init.kaiming_normal_(layer.weight, mode=\"fan_out\")\r\nnn.init.orthogonal_(layer.weight)\r\nnn.init.sparse_(layer.weight, sparsity=0.9, std=0.01)\r\nprint(f\"Init schemes tested on Linear(100,100)\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "35-parameter-management",
+      children: "3.5 Parameter Management"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "model = SimpleMLP(10, 64, 2)\r\nfor name, param in model.named_parameters():\r\n    print(f\"{name}: {param.shape}, grad={param.requires_grad}\")\r\nfor name, module in model.named_modules():\r\n    print(f\"Module: {name} -> {type(module).__name__}\")\r\n\r\ntotal = sum(p.numel() for p in model.parameters())\r\ntrainable = sum(p.numel() for p in model.parameters() if p.requires_grad)\r\nprint(f\"Total: {total:,}, Trainable: {trainable:,}\")\r\n\r\n## Freeze layers\r\nfor param in model.fc1.parameters():\r\n    param.requires_grad = False\r\n\r\n## Buffers (non-trainable)\r\nbn = nn.BatchNorm1d(10)\r\nprint(f\"Buffers: {[n for n, _ in bn.named_buffers()]}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "36-hooks",
+      children: "3.6 Hooks"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "model = SimpleMLP(10, 64, 2)\r\nactivations = {}\r\n\r\ndef get_activation(name):\r\n    def hook(module, input, output):\r\n        activations[name] = output.detach()\r\n    return hook\r\n\r\nmodel.fc1.register_forward_hook(get_activation(\"fc1\"))\r\nmodel.fc2.register_forward_hook(get_activation(\"fc2\"))\r\n\r\nx = torch.randn(5, 10)\r\noutput = model(x)\r\nfor name, act in activations.items():\r\n    print(f\"{name}: shape={act.shape}, mean={act.mean():.4f}\")\r\n\r\n## Backward hook\r\ngradients = {}\r\ndef get_grad(name):\r\n    def hook(module, grad_input, grad_output):\r\n        gradients[name] = grad_output[0].detach()\r\n    return hook\r\nmodel.fc3.register_backward_hook(get_grad(\"fc3\"))\r\ny = torch.randn(5, 2)\r\nF.mse_loss(model(x), y).backward()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "37-model-surgery-and-dynamic-architectures",
+      children: "3.7 Model Surgery and Dynamic Architectures"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Sometimes we need to modify an existing model by swapping layers, adding branches, or composing sub-networks dynamically."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\r\n## Replace last layer for transfer learning\r\nmodel = SimpleMLP(10, 64, 2)\r\nmodel.fc3 = nn.Linear(64, 10)  # Replace last layer\r\nprint(f\"New output: {model(torch.randn(5, 10)).shape}\")\r\n\r\n## Add a new branch\r\nclass DualOutputMLP(nn.Module):\r\n    def __init__(self, base: SimpleMLP, extra_dim: int):\r\n        super().__init__()\r\n        self.base = base\r\n        self.extra_head = nn.Linear(64, extra_dim)\r\n\r\n    def forward(self, x: torch.Tensor):\r\n        x = F.relu(self.base.fc1(x))\r\n        x = F.relu(self.base.fc2(x))\r\n        main = self.base.fc3(x)\r\n        extra = self.extra_head(x)\r\n        return main, extra\r\n\r\nbase = SimpleMLP(10, 64, 2)\r\ndual = DualOutputMLP(base, 5)\r\nm, e = dual(torch.randn(5, 10))\r\nprint(f\"Main: {m.shape}, Extra: {e.shape}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Use cases"
+      }), ": Multi-task learning, auxiliary loss computation, feature pyramid networks."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "typescript-parallel",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "abstract class ModuleTS {\r\n  protected params: Map<string, number[][]> = new Map();\r\n  training = true;\r\n  abstract forward(x: number[][]): number[][];\r\n  train() { this.training = true; }\r\n  eval() { this.training = false; }\r\n}\r\n\r\nclass LinearTS extends ModuleTS {\r\n  private w: number[][]; private b: number[];\r\n  constructor(inF: number, outF: number) {\r\n    super();\r\n    const std = Math.sqrt(2 / inF);\r\n    this.w = Array.from({length: outF}, () => Array.from({length: inF}, () => (Math.random()*2-1)*std));\r\n    this.b = new Array(outF).fill(0);\r\n  }\r\n  forward(x: number[][]): number[][] {\r\n    return x.map(row => this.w.map(w => w.reduce((s, wi, i) => s + wi*row[i], 0)));\r\n  }\r\n}\r\n\r\nconst seq = new LinearTS(10, 64);\r\nconst out = seq.forward(Array.from({length: 5}, () => Array.from({length: 10}, () => Math.random())));\r\nconsole.log(`Output shape: [${out.length}, ${out[0].length}]`);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "nn.Module is the base class for all PyTorch neural network components, providing parameter tracking, device management, and serialization"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "nn.Sequential provides simple layer-by-layer composition for feed-forward architectures without branching"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Custom layers require subclassing nn.Module and registering parameters with nn.Parameter or nn.ParameterList for dynamic parameters"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "He (Kaiming) initialization is best for ReLU activations; Xavier for tanh/sigmoid; Orthogonal for RNNs; LeCun for SELU"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "model.apply() applies functions recursively to all submodules and is the standard way to initialize weights across a model"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "named_parameters() and state_dict() provide complete access to all model parameters for saving, loading, and inspection"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Buffers (register_buffer) store non-trainable tensors like BatchNorm running mean/variance and are included in state_dict"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Freeze parameters by setting requires_grad = False; unfrozen layers are ignored by the optimizer when using filter()"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Forward hooks extract intermediate activations without modifying model code; backward hooks capture gradients"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Hooks are useful for debugging, feature extraction, gradient penalization, and visualization"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Model surgery (swapping branches, adding heads) enables transfer learning and multi-task architectures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "DistributedDataParallel wraps nn.Module for multi-GPU training with minimal code changes"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Do This"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Avoid This"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple linear stack"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nn.Sequential"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Custom Module (overkill)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex forward logic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Custom nn.Module"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nn.Sequential with workarounds"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Extract features"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Forward hooks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Modifying model forward pass"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Load pretrained weights"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "model.load_state_dict(torch.load(path))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Direct weight assignment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Freeze backbone"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Set requires_grad=False on backbone"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Removing backbone parameters"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Dynamic number of layers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nn.ModuleList"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Python list (parameters not tracked)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-GPU training"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DistributedDataParallel"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DataParallel (slower, GIL issues)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Weight initialization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "model.apply(init_fn)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual per-layer loops"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scripting for production"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "torch.jit.script"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Relying on full Python runtime"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Deploy cross-platform"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "torch.onnx.export"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Framework-specific format"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-qa",
+      children: "Interview Q&A"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-q1",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Q1: What is the difference between nn.Module and nn.Sequential?"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "nn.Module is the base class for all neural network components. You subclass it to define custom architectures with arbitrary forward logic. nn.Sequential is a container that calls layers in order, suitable for simple feed-forward networks. Module gives full control (skip connections, multiple inputs/outputs); Sequential trades flexibility for conciseness."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-q2",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Q2: How do you register a parameter in a custom nn.Module?"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Assign a nn.Parameter to self as an attribute: self.weight = nn.Parameter(torch.randn(...)). PyTorch automatically detects nn.Parameter attributes and registers them. For non-trainable tensors, use self.register_buffer(\"name\", tensor). For parameter groups not directly assignable, use self.register_parameter(\"name\", param). All registered parameters appear in model.parameters() and model.named_parameters()."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-q3",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Q3: What is the purpose of model.apply()?"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "model.apply(fn) applies the function fn recursively to every submodule in the model. It's commonly used for weight initialization: model.apply(init_weights) where init_weights checks isinstance(m, nn.Linear) and applies the desired initialization. Also useful for: setting dropout rates, enabling/disabling batch norm tracking, or any module-level configuration that needs to be applied recursively."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-q4",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Q4: How do you freeze specific layers in a pretrained model?"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Iterate over the layer's parameters and set requires_grad = False: for param in model.layer.parameters(): param.requires_grad = False. Then pass only trainable parameters to the optimizer: optimizer = optim.SGD(filter(lambda p: p.requires_grad, model.parameters()), lr=0.001). Common use case: freeze a pretrained backbone and only train the classification head (transfer learning)."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-q5",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Q5: What are forward hooks and when would you use them?"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Forward hooks are functions called during the forward pass of a module. They receive the module, input, and output. Uses: extracting intermediate features for visualization, debugging activation statistics, implementing custom regularization (e.g., activation penalization), feature extraction from pretrained models, and model surgery without modifying the original code. Register with module.register_forward_hook(hook_fn)."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-q6",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Q6: What is nn.ModuleList and how is it different from a Python list?"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "nn.ModuleList is a container that registers its contents as submodules. A plain Python list doesn't register modules, so their parameters won't be discovered by model.parameters(). Use ModuleList when you have a variable number of layers: self.layers = nn.ModuleList([nn.Linear(10,10) for _ in range(n)]). Access elements by index like a list. Similarly, nn.ModuleDict stores modules by name."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-q7",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Q7: How do you save and load a PyTorch model?"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Best practice: save only the state_dict (parameters and buffers): torch.save(model.state_dict(), \"model.pth\"). Load: model.load_state_dict(torch.load(\"model.pth\"), strict=True). Save the full model (architecture + weights) with torch.save(model, \"full.pth\"). Load with model = torch.load(\"full.pth\") but this requires the model class to be importable. Always use .pt or .pth extension."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-q8",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Q8: What is the difference between model.eval() and torch.no_grad()?"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "model.eval() sets the model to evaluation mode: affects BatchNorm (uses running stats) and Dropout (disables). torch.no_grad() disables gradient computation globally. Use both for inference: model.eval() + torch.no_grad(). Use model.train() to re-enable training behavior. You can use no_grad without eval (e.g., for gradient computation in validation) and eval without no_grad (e.g., for computing gradients of eval metrics)."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-q9",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Q9: How do you handle multiple GPUs with nn.Module?"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Use nn.DataParallel for simple multi-GPU: model = nn.DataParallel(model). This splits the batch across GPUs, runs the same model on each, and gathers outputs. For better performance, use DistributedDataParallel (DDP): model = DDP(model, device_ids=[local_rank]). DDP is faster (avoids GIL) and recommended for large-scale training. Use torch.nn.parallel.DistributedDataParallel with torch.distributed.launch."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-q10",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Q10: What is torch.jit.script and torch.onnx.export used for?"
+      }), (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-answer",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "torch.jit.script (TorchScript) compiles a PyTorch model into a serializable, optimizable representation that can run without Python dependency. torch.onnx.export exports to ONNX format for interoperability with other frameworks (TensorFlow, ONNX Runtime). Both are used for production deployment where you need: faster inference, mobile deployment, or integration with non-Python environments."
+        })
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1"
+      }), ": What is the base class for all PyTorch neural network components?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) nn.Sequential\r\nb) nn.Module\r\nc) nn.Layer\r\nd) nn.Network"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-quiz1",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) nn.Module"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "All neural network components inherit from nn.Module."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2"
+      }), ": Which method applies a function recursively to all submodules?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) model.forward()\r\nb) model.apply()\r\nc) model.run()\r\nd) model.call()"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-quiz2",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) model.apply()"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "model.apply(fn) applies fn to every submodule recursively."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3"
+      }), ": How do you register a non-trainable tensor in a module?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) self.tensor = torch.zeros(10)\r\nb) self.register_buffer(\"tensor\", torch.zeros(10))\r\nc) self.register_parameter(\"tensor\", torch.zeros(10))\r\nd) self.buffer = torch.zeros(10)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-quiz3",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) self.register_buffer(\"tensor\", torch.zeros(10))"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "Buffers are non-trainable tensors tracked by the module."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4"
+      }), ": What happens when you use a plain Python list for layers instead of nn.ModuleList?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) Same behavior\r\nb) Layer parameters won't be registered\r\nc) Error\r\nd) Only first layer works"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-quiz4",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) Layer parameters won't be registered"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "Python lists don't register submodules; ModuleList does."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5"
+      }), ": How do you freeze a layer's parameters?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) layer.freeze()\r\nb) param.requires_grad = False\r\nc) del param\r\nd) layer.trainable = False"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "dl09-quiz5",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) param.requires_grad = False"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "Setting requires_grad=False prevents gradient computation and parameter updates."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advanced-custom-autograd-function",
+      children: "Advanced: Custom Autograd Function"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Sometimes you need a custom operation not covered by standard nn.Modules. Define a custom autograd Function:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class ClampFunction(torch.autograd.Function):\r\n    @staticmethod\r\n    def forward(ctx, x, lo, hi):\r\n        ctx.save_for_backward(x, torch.tensor([lo, hi]))\r\n        return torch.clamp(x, lo, hi)\r\n\r\n    @staticmethod\r\n    def backward(ctx, grad_output):\r\n        x, bounds = ctx.saved_tensors\r\n        lo, hi = bounds[0].item(), bounds[1].item()\r\n        grad_input = grad_output.clone()\r\n        grad_input[x < lo] = 0\r\n        grad_input[x > hi] = 0\r\n        return grad_input, None, None\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Use it: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "output = ClampFunction.apply(x, -1.0, 1.0)"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Easy"
+      }), " — Create a 3-layer MLP using nn.Sequential. Count the number of parameters."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Easy"
+      }), " — Implement a custom Linear layer without using nn.Linear. Verify it produces the same output."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Medium"
+      }), " — Build a ResidualBlock with skip connection. Test that the gradient flows through both paths."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hard"
+      }), " — Implement a FeatureExtractor using hooks that extracts activations from specified layers during forward pass."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hard"
+      }), " — Build a model with dynamic number of layers using nn.ModuleList. Experiment with different depths."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "common-mistakes",
+      children: "Common Mistakes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not understanding the fundamental concepts before applying them"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Skipping edge cases in implementation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not analyzing time/space complexity"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Forgetting to handle null/empty inputs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not practicing enough problems to build pattern recognition"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "revision-notes",
+      children: "Revision Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Core principle: Understand the fundamental concepts thoroughly"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implementation pattern: Practice with real code examples"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Complexity: Know the time and space complexity"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Application: Know when to use this in production systems"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Interview: Frequently asked in technical interviews"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Edge cases: Consider common failure scenarios"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Related concepts: Connect to broader system design"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "placement-section",
+      children: "Placement Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "top-10-interview-questions",
+      children: "Top 10 Interview Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "google-style",
+      children: "Google Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Explain the core idea of PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init in under 60 seconds, then give a real-world analogy."
+          }), " — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Design a minimal, well-typed function in this chapter — nn.Module, nn.Sequential, Custom Layers, Weight Init."
+          }), " — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "**What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "amazon-style",
+      children: "Amazon Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Describe a production bug caused by misunderstanding this technique — nn.Module, nn.Sequential, Custom Layers, Weight Init. How did you diagnose and fix it?"
+          }), " — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you scale a system using this technique — nn.Module, nn.Sequential, Custom Layers, Weight Init from 10 users to 10 million?"
+          }), " — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "microsoft-style",
+      children: "Microsoft Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Compare PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init with the closest alternative approach. When would you choose each?"
+          }), " — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Walk through how you would test a component built on this — nn.Module, nn.Sequential, Custom Layers, Weight Init."
+          }), " — Unit, integration, property-based tests; mocking boundaries; golden files for outputs."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "nvidia-style",
+      children: "NVIDIA Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "8",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How does PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init behave differently at scale — memory, throughput, or precision-wise?"
+          }), " — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you make an implementation of this technique — nn.Module, nn.Sequential, Custom Layers, Weight Init run faster on GPU hardware?"
+          }), " — Batch operations, vectorization, avoiding Python loops, reducing data movement."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ai-startup-style",
+      children: "AI Startup Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Write the smallest possible implementation of this technique — nn.Module, nn.Sequential, Custom Layers, Weight Init that is production-quality."
+        }), " — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resume-tips",
+      children: "Resume Tips"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Name PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init explicitly in your skills section, paired with a measurable achievement (\"Reduced X by 40% using PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init\")."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add a bullet describing a project that applies PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init to real data, with numbers."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mention the tools and libraries you used alongside PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init (linters, test frameworks, profiling tools)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep resume bullets under 15 words and start each with an action verb."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "interview-day-checklist",
+      children: "Interview Day Checklist"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rehearse a 60-second explanation of PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init and one real-world analogy."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prepare one STAR story about debugging a PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init-related production issue."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review complexity and edge cases for the classic PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init interview problem."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Have questions ready: how does the team apply PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init in production today?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test your environment (Python, editor, internet) 15 minutes before the interview."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "truefalse",
+      children: "True/False"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init builds directly on the fundamentals covered in the earlier chapters of this module. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Every advanced topic in this module assumes the core concepts from the previous chapters."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should write at least one code example for PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init before moving to the next chapter. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Active recall with hands-on code beats passive reading for retention."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " The complexity analysis for PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init is the same regardless of input size. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Complexity grows with input size; always state best, average, and worst case."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Edge cases (empty input, invalid input, boundary values) matter for PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init in production. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Most production bugs come from unhandled edge cases."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should memorize the PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init chapter content once and never review it again. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "fill-in-the-blank",
+      children: "Fill in the Blank"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter that covers PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init is Chapter ___ of this module. — Answer: check the module's table of contents."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The time complexity of the standard approach to 03 Pytorch Nn Module is ___. — Answer: O(n) typical, O(1) best case"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The main edge case to handle when implementing 03 Pytorch Nn Module is ___. — Answer: empty input, boundary values, invalid types"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools commonly used to debug PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The related topic that connects to PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init in the next chapter is ___. — Answer: see the Next Topic section."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "scenario-questions",
+      children: "Scenario Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A teammate ships a change involving PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your implementation of this technique — nn.Module, nn.Sequential, Custom Layers, Weight Init is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A new hire asks you to explain PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your team's codebase has three different patterns for PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "output-questions",
+      children: "Output Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output of the simplest correct implementation of this technique — nn.Module, nn.Sequential, Custom Layers, Weight Init on an empty input?"
+        }), " — Trace through the code: it should return the documented default (None, 0, empty collection) without raising."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output when the input is at the boundary value?"
+        }), " — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What does the implementation return when given invalid input types?"
+        }), " — With type hints and validation, it raises a clear error; without, it may fail silently."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output for the sample input given in the chapter's Examples section?"
+        }), " — Re-run the chapter's example code and compare against the documented output."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the time complexity output when you profile the implementation at 10x input size?"
+        }), " — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "difficulty-level",
+      children: "Difficulty Level"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "What It Takes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Beginner"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-2 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read theory, run the chapter examples, solve the Easy exercises"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Intermediate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-5 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete Medium exercises, explain PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init to someone else"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Advanced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+ week"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Solve Hard exercises, optimize for real datasets, answer interview follow-ups"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "tips--tricks",
+      children: "Tips & Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always write a one-line example of PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init from memory before opening the chapter — active recall first."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the chapter's Revision Notes as a checklist: you have mastered PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init when you can explain each bullet."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For interviews, practice explaining PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init twice: once with a technical audience, once with a non-technical audience."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep a personal examples file where you collect your own PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init snippets; interviewers love original examples."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "memory-tricks",
+      children: "Memory Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Acronym"
+        }), ": build a mnemonic from the 5 key concepts of PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init listed in the Chapter at a Glance table."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Story"
+        }), ": link PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init to a familiar story — the analogy in the Visual Analogy section is designed to stick."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Number anchor"
+        }), ": remember the complexity of PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init by connecting it to a known algorithm of the same class."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Color code"
+        }), ": highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Teach-back"
+        }), ": explain PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "further-reading",
+      children: "Further Reading"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation for the primary library used in this chapter"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The original research paper introducing this concept (search Google Scholar)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Towards Data Science articles on this topic"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The relevant chapter in 'Designing Data-Intensive Applications' by Kleppmann"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "GitHub repositories of production implementations nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related-topics",
+      children: "Related Topics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous chapter"
+        }), " in Module 09 — builds the foundation for 03 Pytorch Nn Module"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next chapter"
+        }), " — extends 03 Pytorch Nn Module with advanced techniques"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Module 07 System Design"
+        }), " — how 03 Pytorch Nn Module fits into scalable production architectures"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Module 21 Interview Preparation"
+        }), " — FAANG-style questions on 03 Pytorch Nn Module"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Module 19 Capstone Projects"
+        }), " — end-to-end application of 03 Pytorch Nn Module"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "faqs",
+      children: "FAQs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Do I need to memorize all of 03 Pytorch Nn Module?"
+        }), " — Understand the big picture first. Memorize the key patterns via flashcards. Interviewers test understanding, not recitation."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What if I get stuck on an exercise?"
+        }), " — Re-read the theory, run the example code, then attempt again. If stuck after 20 minutes, move on and return the next day with fresh eyes."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "How much time should I spend on 03 Pytorch Nn Module?"
+        }), " — 2-3 hours for theory + examples, 3-5 hours for exercises. Total: one focused weekend session."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Is 03 Pytorch Nn Module asked in FAANG interviews?"
+        }), " — Yes. Check the Interview Q&A section for exact question styles used by Google, Amazon, Microsoft, and AI startups."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What's the fastest way to master 03 Pytorch Nn Module?"
+        }), " — Write the core implementation from memory, explain it to someone else, then solve one Hard exercise. Teaching reveals gaps faster than re-reading."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "important-notes",
+      children: "Important Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init is a core requirement for the rest of this module — do not skip the examples."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always analyze complexity (time and space) when working with PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Production correctness means handling edge cases, not just the happy path."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview answers should start with the definition, then the example, then the trade-offs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Revisit this chapter after finishing the module; the context from later chapters deepens understanding."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "historical-context",
+      children: "Historical Context"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools used for PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init today evolved from simpler versions; the chapter covers the modern, recommended approach."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interviewers value knowing one historical fact about PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init — it shows genuine interest, not just cramming."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The library/tooling ecosystem around PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init changes quickly; focus on fundamentals that remain stable."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "security-considerations",
+      children: "Security Considerations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Validate all external inputs before processing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Never log sensitive data (API keys, PII, passwords)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use environment variables for configuration secrets"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement rate limiting for public-facing endpoints"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Follow the principle of least privilege for all system components"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "ml-intuition",
+      children: "ML Intuition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This concept appears in ML pipelines at the data processing, training, or serving layer"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding it helps debug model misbehavior — most ML bugs are infrastructure bugs, not model bugs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply vectorization and batching to scale this concept to large datasets"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Monitor for drift and degradation in production — set up alerts for key metrics"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Connect to the broader ML lifecycle: data → features → training → evaluation → deployment → monitoring"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "analogies",
+      children: "Analogies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "03 Pytorch Nn Module is like a GPS navigation system"
+          }), ": you define the destination (goal), the system plans the route (algorithm), and recalculates when you take a wrong turn (error handling)."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Complexity is like a restaurant kitchen"
+          }), ": a single chef (O(n)) handles small orders fine, but 1000 simultaneous orders need parallel chefs (O(log n) with proper indexing)."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Edge cases are like stress tests"
+          }), ": the happy path is a calm day, but production is Black Friday — design for the worst case."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "The chapter roadmap is a subway map"
+          }), ": each section is a station, and skipping one means you miss the connection to the next destination.## Capstone Project Link"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.a, {
+            href: "https://github.com/Raushan666java/ai-engineering-journey",
+            children: "Module Capstone: End-to-End Project"
+          }), " — this chapter contributes the PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init skills used in the module's capstone project. Complete the exercises here before starting the capstone."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "flashcards",
+      children: "Flashcards"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "09deeplearningpytorch-03pytorchnnmodule-flash1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the base class for all PyTorch neural network components?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b) nn.Module"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "09deeplearningpytorch-03pytorchnnmodule-flash2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Which method applies a function recursively to all submodules?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b) model.apply()"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "09deeplearningpytorch-03pytorchnnmodule-flash3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    How do you register a non-trainable tensor in a module?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b) self.register_buffer(\"tensor\", torch.zeros(10))"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "09deeplearningpytorch-03pytorchnnmodule-flash4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What happens when you use a plain Python list for layers instead of nn.ModuleList?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b) Layer parameters won't be registered"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "09deeplearningpytorch-03pytorchnnmodule-flash5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    How do you freeze a layer's parameters?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b) param.requires_grad = False"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "research-references",
+      children: "Research References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation of the primary library for PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init (linked in Further Reading)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic paper or textbook chapter introducing PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init (see References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The standard library reference for PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init-related functions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Engineering blog posts from companies running PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init in production at scale"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PEPs and RFCs where applicable (Python and networking standards)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-source-tools",
+      children: "Open-Source Tools"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The primary library used in the code examples"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "pytest for unit and integration testing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ruff + black for linting and formatting"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "mypy for static type checking"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "cProfile / py-spy for performance profiling nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "debugging-guide",
+      children: "Debugging Guide"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 1"
+        }), ": Reproduce the failure with the smallest possible input — isolate the bug before changing any code."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 2"
+        }), ": Add structured logging at each stage of the 03 Pytorch Nn Module pipeline to identify exactly where the failure occurs."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 3"
+        }), ": Check the Common Mistakes section — 80% of bugs match one of those patterns."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 4"
+        }), ": Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pdb.set_trace()"
+        }), " or your IDE debugger to inspect intermediate values at the failure point."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 5"
+        }), ": For performance issues, profile with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "cProfile"
+        }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "py-spy"
+        }), " before optimizing — never guess at bottlenecks."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 6"
+        }), ": Write a regression test that reproduces the bug before fixing it — this prevents recurrence."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "mock-interview-section",
+      children: "Mock Interview Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 1 — Screening (15 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init in 60 seconds."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a minimal working example of PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the complexity of your example?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 2 — Coding (45 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve the Medium exercise from this chapter under time pressure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "State your assumptions, then implement with type hints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test with edge cases: empty input, boundary values, invalid input."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 3 — Behavioral + System (30 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tell me about a time you debugged a PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init problem in a project."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How would you design a system where PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init is used at scale?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What metrics would you monitor?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Evaluation rubric"
+      }), ": correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "optimized-implementation",
+      children: "Optimized Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from typing import Any, Optional\r\n\r\ndef demonstrate_03_pytorch_nn_module(input_data: list[Any]) -> Optional[Any]:\r\n    \"\"\"Minimal production scaffold for 03 Pytorch Nn Module.\r\n\r\n    Key concepts: core concepts, data structures, algorithms, patterns\r\n    Complexity: O(n) typical, O(1) best case\r\n    \"\"\"\r\n    if not input_data:\r\n        return None\r\n    # Validate input\r\n    if not isinstance(input_data, (list, tuple)):\r\n        raise TypeError(f\"Expected list, got {type(input_data).__name__}\")\r\n    # Core logic: implement 03 Pytorch Nn Module here\r\n    result = input_data[0] if input_data else None\r\n    return result\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keeps the function signature stable so tests written against it stay valid."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handles the empty-input contract explicitly."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add unit tests for the edge cases before implementing the logic (test-first)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "evaluation-metrics",
+      children: "Evaluation Metrics"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Skill"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Target"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept recall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init without notes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60-second explanation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code fluency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write the chapter example from memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No syntax errors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handle empty/invalid input in exercises"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All cases pass"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State time/space for the standard approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Correct big-O"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview readiness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Answer 5 Interview Q&A questions out loud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fluent, structured answers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Retention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Chapter quiz score after 3 days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80%+"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "real-world-examples",
+      children: "Real-World Examples"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Applied in production at companies like Google, Meta, Amazon, and Microsoft"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Used in data pipelines, model serving, and API backends"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Enables scalable, maintainable systems when applied correctly"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview insight: connect the concept to a business outcome — cost reduction, latency improvement, or reliability increase"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "next-topic",
+      children: "Next Topic"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/ai-engineering-placement/09-deep-learning-pytorch/04-cnn-fundamentals",
+        children: "CNN Fundamentals"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "limitations",
+      children: "Limitations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Performance of PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init depends on input size and distribution — always benchmark for your own data."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone."
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

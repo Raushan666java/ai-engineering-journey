@@ -2,6 +2,21 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+// Building every course in one pass needs more heap than a 12 GB laptop can
+// give: the static-generation phase drives V8's old space past 8 GB and exits
+// 134. Setting BUILD_ONLY=<course-dir> restricts a build to one course so the
+// site can be assembled from parts. See scripts/build-in-parts.ps1.
+const buildOnly = process.env.BUILD_ONLY?.trim();
+
+const docsInclude = buildOnly
+  // Markdown only. A bare `courses/<x>/**` also matches the .html and .svg
+  // files under visual/ directories, and Docusaurus then loads them as docs,
+  // which collides on doc id ("found docs sharing the same id") and fails the
+  // build. The default full build never hits this because its matcher is
+  // already restricted to markdown.
+  ? [`courses/${buildOnly}/**/*.{md,mdx}`, 'index.md']
+  : undefined;
+
 const config: Config = {
   title: 'AI Engineering Journey',
   tagline: 'Complete Learning Path - Backend + AI Engineer',
@@ -34,6 +49,7 @@ const config: Config = {
           routeBasePath: '/',
           remarkPlugins: [require('remark-math')],
           rehypePlugins: [require('rehype-katex')],
+          ...(docsInclude ? {include: docsInclude} : {}),
         },
         blog: false,
         theme: {

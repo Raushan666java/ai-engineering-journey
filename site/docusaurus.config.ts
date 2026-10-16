@@ -39,6 +39,13 @@ const config: Config = {
 
   markdown: {
     format: 'md',
+    // The themes entry above only registers the <Mermaid> React component.
+    // @docusaurus/mdx-loader gates its mermaid remark transform -- the step
+    // that rewrites ```mermaid fences into <Mermaid value=.../> -- on this
+    // flag (mdx-loader/lib/processor.js: `options.markdownConfig.mermaid`).
+    // Without it every fence stays a Prism code block and no component is ever
+    // rendered, which is why all 2,988 diagrams showed up as literal source.
+    mermaid: true,
   },
 
   i18n: {

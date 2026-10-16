@@ -223,15 +223,19 @@ quadrantChart
 
 Foundation models exhibit a remarkable range of capabilities that emerge from pretraining at scale.
 
-```mermaid
-radar
-    title Foundation Model Capability Radar
-    x-axis Reasoning, In-Context Learning, Instruction Following, Code Generation, Translation, Summarization, Tool Use, Multimodal Understanding
-    "GPT-5": [95, 92, 95, 96, 90, 93, 94, 95]
-    "Claude 4": [93, 88, 94, 88, 92, 95, 90, 89]
-    "Gemini 3": [90, 85, 88, 91, 95, 91, 85, 96]
-    "Llama 4": [88, 87, 85, 90, 80, 88, 83, 70]
-    "Mistral Large": [86, 85, 88, 85, 90, 87, 80, 65]
+```text
+**Foundation Model Capability Radar**
+
+| Dimension | GPT-5 | Claude 4 | Gemini 3 | Llama 4 | Mistral Large |
+|---|---|---|---|---|---|
+| Reasoning | 95 | 93 | 90 | 88 | 86 |
+| In-Context Learning | 92 | 88 | 85 | 87 | 85 |
+| Instruction Following | 95 | 94 | 88 | 85 | 88 |
+| Code Generation | 96 | 88 | 91 | 90 | 85 |
+| Translation | 90 | 92 | 95 | 80 | 90 |
+| Summarization | 93 | 95 | 91 | 88 | 87 |
+| Tool Use | 94 | 90 | 85 | 83 | 80 |
+| Multimodal Understanding | 95 | 89 | 96 | 70 | 65 |
 ```
 
 **Detailed Capability Analysis**

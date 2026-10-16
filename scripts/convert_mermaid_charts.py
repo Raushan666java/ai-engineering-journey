@@ -139,6 +139,8 @@ def convert_radar(body: list[str]) -> tuple[str, str] | None:
     # block to one string before extracting. Line-by-line parsing never saw the
     # array contents and every radar block fell through to None.
     joined = "\n".join(body[1:])
+    series_rows: list[tuple[str, list[str]]] = []
+    xlabels: list[str] = []
 
     for line in body[1:]:
         if not line.strip():
@@ -150,6 +152,16 @@ def convert_radar(body: list[str]) -> tuple[str, str] | None:
         m = AXIS_LABELS.match(line)
         if m:
             axes = nums(m.group(1))
+            continue
+        # "Dataset A": [85, 92, 78]
+        sr = re.match(r'^\s*"([^"]+)"\s*:\s*(\[[^\]]*\])\s*$', line)
+        if sr:
+            series_rows.append((sr.group(1), nums(sr.group(2))))
+            continue
+        # bare comma list, e.g. x-axis Accuracy, Completeness, ...
+        cm = re.match(r'^\s*x-axis\s+(.+)$', line, re.I)
+        if cm and not sr:
+            xlabels = [p.strip().strip('"') for p in cm.group(1).split(",") if p.strip()]
             continue
         m = DATA_NAMES.match(line)
         if m:
@@ -163,12 +175,28 @@ def convert_radar(body: list[str]) -> tuple[str, str] | None:
         if dv:
             flat.append((dv.group(1), dv.group(2)))
 
-    vm = re.search(r'values\s*\[(.*?)\]', joined, re.I | re.S)
+    # Greedy, so every inner array is captured. A non-greedy match stops at the
+    # first "]" and yields only the first series, which then fails the length
+    # check below and the whole block fell through to None.
+    vm = re.search(r'values\s*\[(.*)\]', joined, re.I | re.S)
     if vm:
         for row in re.findall(r"\[([^\]]*)\]", vm.group(1)):
             matrix.append(nums(row))
 
     lines: list[str] = []
+
+    # Plain "radar" form: a comma list on x-axis, then "Name": [v, v, v].
+    # The series names are rows and the axis names are columns.
+    if series_rows:
+        lines.append(f"**{title or 'Chart'}**")
+        lines.append("")
+        lines.append("| Dimension | " + " | ".join(n for n, _ in series_rows) + " |")
+        lines.append("|" + "---|" * (len(series_rows) + 1))
+        for i, axis in enumerate(xlabels):
+            cells = [vals[i] if i < len(vals) else "" for _, vals in series_rows]
+            lines.append(f"| {axis} | " + " | ".join(cells) + " |")
+        return ("\n".join(lines), "text")
+
     if matrix and axes:
         lines.append(f"**{title or 'Chart'}**")
         lines.append("")

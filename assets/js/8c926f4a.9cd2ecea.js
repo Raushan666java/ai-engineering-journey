@@ -1,0 +1,2169 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[9392],{
+
+/***/ 92551
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_engineering_placement_04_git_linux_cli_04_linux_commands_md_8c9_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-04-git-linux-cli-04-linux-commands-md-8c9.json
+const site_docs_courses_ai_engineering_placement_04_git_linux_cli_04_linux_commands_md_8c9_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/git-linux-cli/04-linux-commands","title":"Linux Commands","description":"Learning Objectives","source":"@site/docs/courses/ai-engineering-placement/04-git-linux-cli/04-linux-commands.md","sourceDirName":"courses/ai-engineering-placement/04-git-linux-cli","slug":"/ai-engineering-placement/04-git-linux-cli/04-linux-commands","permalink":"/ai-engineering-journey/ai-engineering-placement/04-git-linux-cli/04-linux-commands","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":61,"frontMatter":{"id":"04-linux-commands","slug":"/ai-engineering-placement/04-git-linux-cli/04-linux-commands","title":"Linux Commands","sidebar_label":"Linux Commands","sidebar_position":61},"sidebar":"placementSidebar","previous":{"title":"Advanced Git","permalink":"/ai-engineering-journey/ai-engineering-placement/04-git-linux-cli/03-git-workflow"},"next":{"title":"CLI Productivity","permalink":"/ai-engineering-journey/ai-engineering-placement/04-git-linux-cli/05-bash-scripting"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-engineering-placement/04-git-linux-cli/04-linux-commands.md
+
+
+const frontMatter = {
+	id: '04-linux-commands',
+	slug: '/ai-engineering-placement/04-git-linux-cli/04-linux-commands',
+	title: 'Linux Commands',
+	sidebar_label: 'Linux Commands',
+	sidebar_position: 61
+};
+const contentTitle = 'Linux Commands';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Introduction",
+  "id": "introduction",
+  "level": 2
+}, {
+  "value": "Prerequisites",
+  "id": "prerequisites",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Key Terminology",
+  "id": "key-terminology",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "04.1 Navigation",
+  "id": "041-navigation",
+  "level": 3
+}, {
+  "value": "Overview",
+  "id": "overview",
+  "level": 2
+}, {
+  "value": "04.2 File Operations",
+  "id": "042-file-operations",
+  "level": 3
+}, {
+  "value": "Overview",
+  "id": "overview-1",
+  "level": 2
+}, {
+  "value": "04.3 Permissions",
+  "id": "043-permissions",
+  "level": 3
+}, {
+  "value": "Overview",
+  "id": "overview-2",
+  "level": 2
+}, {
+  "value": "04.4 Searching",
+  "id": "044-searching",
+  "level": 3
+}, {
+  "value": "Overview",
+  "id": "overview-3",
+  "level": 2
+}, {
+  "value": "04.5 Pipes and Redirection",
+  "id": "045-pipes-and-redirection",
+  "level": 3
+}, {
+  "value": "Overview",
+  "id": "overview-4",
+  "level": 2
+}, {
+  "value": "04.6 Real-World Tasks",
+  "id": "046-real-world-tasks",
+  "level": 3
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Interview Q&amp;A",
+  "id": "interview-qa",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Practical Tips",
+  "id": "practical-tips",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Common Mistakes",
+  "id": "common-mistakes",
+  "level": 2
+}, {
+  "value": "Revision Notes",
+  "id": "revision-notes",
+  "level": 2
+}, {
+  "value": "Placement Section",
+  "id": "placement-section",
+  "level": 2
+}, {
+  "value": "Top 10 Interview Questions",
+  "id": "top-10-interview-questions",
+  "level": 3
+}, {
+  "value": "Google Style",
+  "id": "google-style",
+  "level": 4
+}, {
+  "value": "Amazon Style",
+  "id": "amazon-style",
+  "level": 4
+}, {
+  "value": "Microsoft Style",
+  "id": "microsoft-style",
+  "level": 4
+}, {
+  "value": "NVIDIA Style",
+  "id": "nvidia-style",
+  "level": 4
+}, {
+  "value": "AI Startup Style",
+  "id": "ai-startup-style",
+  "level": 4
+}, {
+  "value": "Resume Tips",
+  "id": "resume-tips",
+  "level": 3
+}, {
+  "value": "Interview Day Checklist",
+  "id": "interview-day-checklist",
+  "level": 3
+}, {
+  "value": "True/False",
+  "id": "truefalse",
+  "level": 2
+}, {
+  "value": "Fill in the Blank",
+  "id": "fill-in-the-blank",
+  "level": 2
+}, {
+  "value": "Scenario Questions",
+  "id": "scenario-questions",
+  "level": 2
+}, {
+  "value": "Output Questions",
+  "id": "output-questions",
+  "level": 2
+}, {
+  "value": "Difficulty Level",
+  "id": "difficulty-level",
+  "level": 2
+}, {
+  "value": "Tips &amp; Tricks",
+  "id": "tips--tricks",
+  "level": 2
+}, {
+  "value": "Memory Tricks",
+  "id": "memory-tricks",
+  "level": 2
+}, {
+  "value": "Further Reading",
+  "id": "further-reading",
+  "level": 2
+}, {
+  "value": "Related Topics",
+  "id": "related-topics",
+  "level": 2
+}, {
+  "value": "FAQs",
+  "id": "faqs",
+  "level": 2
+}, {
+  "value": "Important Notes",
+  "id": "important-notes",
+  "level": 2
+}, {
+  "value": "Historical Context",
+  "id": "historical-context",
+  "level": 2
+}, {
+  "value": "Security Considerations",
+  "id": "security-considerations",
+  "level": 2
+}, {
+  "value": "ML Intuition",
+  "id": "ml-intuition",
+  "level": 2
+}, {
+  "value": "Analogies",
+  "id": "analogies",
+  "level": 2
+}, {
+  "value": "Flashcards",
+  "id": "flashcards",
+  "level": 2
+}, {
+  "value": "Research References",
+  "id": "research-references",
+  "level": 2
+}, {
+  "value": "Open-Source Tools",
+  "id": "open-source-tools",
+  "level": 2
+}, {
+  "value": "Debugging Guide",
+  "id": "debugging-guide",
+  "level": 2
+}, {
+  "value": "Mock Interview Section",
+  "id": "mock-interview-section",
+  "level": 2
+}, {
+  "value": "Optimized Implementation",
+  "id": "optimized-implementation",
+  "level": 2
+}, {
+  "value": "Evaluation Metrics",
+  "id": "evaluation-metrics",
+  "level": 2
+}, {
+  "value": "Real-World Examples",
+  "id": "real-world-examples",
+  "level": 2
+}, {
+  "value": "Next Topic",
+  "id": "next-topic",
+  "level": 2
+}, {
+  "value": "Limitations",
+  "id": "limitations",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    button: "button",
+    code: "code",
+    details: "details",
+    div: "div",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    li: "li",
+    mermaid: "mermaid",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "linux-commands",
+        children: "Linux Commands"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Objective"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Navigate the filesystem with ls, cd, pwd, and directory shortcuts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Create, copy, move, and remove files and directories safely"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Control file permissions with chmod, chown, and numeric mode"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Search file contents with grep and locate files with find"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Build powerful pipelines using pipes, redirects, and xargs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Combine commands for real-world system administration tasks"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "introduction",
+      children: "Introduction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Linux command line skills are essential for AI engineers who work with remote servers, GPU clusters, and deployment pipelines. Mastering file operations, permissions, and text processing saves hours of manual work."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "prerequisites",
+      children: "Prerequisites"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Terminal basics"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "04.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Navigation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ls, cd, pwd, path shortcuts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "04.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File Operations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "cp, mv, rm, mkdir, touch"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "04.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Permissions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "chmod, chown, numeric vs symbolic mode"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "04.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Searching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "grep, find, locate, which"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "04.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pipes and Redirection"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "04.6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-World Tasks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Combining commands for daily work"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.mermaid, {
+      value: "flowchart LR\r\n    A[Linux Commands] --> B[Navigation]\r\n    B --> C[File Operations]\r\n    C --> D[Permissions]\r\n    D --> E[Searching]\r\n    E --> F[Pipes & Redirection]\r\n    F --> G[Real-World Tasks]"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "key-terminology",
+      children: "Key Terminology"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "041-navigation",
+      children: "04.1 Navigation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Listing files and directories:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Basic listing\r\nls\r\n\r\n## Long format (permissions, owner, size, date)\r\nls -l\r\n\r\n## List all files including hidden\r\nls -la\r\n\r\n## Human-readable file sizes\r\nls -lh\r\n\r\n## Sort by modification time (newest first)\r\nls -lt\r\n\r\n## Sort by size (largest first)\r\nls -lS\r\n\r\n## List only directories\r\nls -d */\r\n\r\n## Recursive listing (includes subdirectories)\r\nls -R\r\n\r\n## One file per line\r\nls -1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Changing directories:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Change to a directory\r\ncd /var/log\r\n\r\n## Change to home directory\r\ncd ~\r\ncd\r\n\r\n## Change to previous directory\r\ncd -\r\n\r\n## Change to parent directory\r\ncd ..\r\n\r\n## Change to parent's parent\r\ncd ../..\r\n\r\n## Go to home directory subfolder\r\ncd ~/projects/my-app\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Directory shortcuts:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Shortcut"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Meaning"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "~"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Home directory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "."
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Current directory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: ".."
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Parent directory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "-"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Previous directory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "$HOME"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Home directory (env variable)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Printing the working directory:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Show current directory path\r\npwd\r\n\r\n## Show physical path (resolve symlinks)\r\npwd -P\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "overview",
+      children: "Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "042-file-operations",
+      children: "04.2 File Operations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Creating files and directories:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Create empty file or update timestamp\r\ntouch newfile.txt\r\n\r\n## Create multiple files\r\ntouch file1.txt file2.txt file3.txt\r\n\r\n## Create directories\r\nmkdir mydir\r\n\r\n## Create nested directories\r\nmkdir -p parent/child/grandchild\r\n\r\n## Create with specific permissions\r\nmkdir -m 755 public_dir\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Copying files and directories:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Copy a file\r\ncp source.txt destination.txt\r\n\r\n## Copy to a directory\r\ncp source.txt /backup/\r\n\r\n## Copy directory recursively\r\ncp -r source-dir/ backup-dir/\r\n\r\n## Preserve permissions, timestamps, ownership\r\ncp -p important.conf /backup/\r\n\r\n## Verbose output (show what's being copied)\r\ncp -v *.log /var/log/archive/\r\n\r\n## Copy only if newer (don't overwrite newer destination)\r\ncp -u config.yaml /etc/app/\r\n\r\n## Interactive mode (prompt before overwrite)\r\ncp -i source.txt dest.txt\r\n\r\n## Copy a file, creating backup if destination exists\r\ncp --backup=numbered source.txt dest.txt\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Moving and renaming files:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Move a file\r\nmv oldname.txt newname.txt\r\n\r\n## Move to a directory\r\nmv file.txt /tmp/\r\n\r\n## Rename a file\r\nmv report.pdf final-report.pdf\r\n\r\n## Move multiple files to a directory\r\nmv *.jpg /images/\r\n\r\n## Verbose move\r\nmv -v old-dir/ new-location/\r\n\r\n## Don't overwrite existing files\r\nmv -n file.txt /backup/\r\n\r\n## Interactive move\r\nmv -i file.txt /backup/\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Removing files and directories:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Remove a file\r\nrm unwanted.txt\r\n\r\n## Remove interactively (prompt for each file)\r\nrm -i *.log\r\n\r\n## Remove multiple files\r\nrm file1.txt file2.txt file3.txt\r\n\r\n## Remove directory and contents\r\nrm -r old-directory/\r\n\r\n## Force remove without prompts\r\nrm -f temporary-file.tmp\r\n\r\n## Remove empty directory\r\nrmdir empty-dir/\r\n\r\n## Remove directory tree (alternative to rm -r)\r\nrm -rf build/\r\n\r\n## Remove only .pyc files recursively\r\nfind . -name \"*.pyc\" -exec rm {} +\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "⚠️ Dangerous commands to avoid:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## NEVER run these without extreme caution:\r\nrm -rf /                    # Deletes entire filesystem\r\nrm -rf /*                   # Same thing\r\nrm -rf ~                    # Deletes your home directory\r\nfind / -name \"*.tmp\" -exec rm {} +  # Dangerous recursive delete\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "overview-1",
+      children: "Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "043-permissions",
+      children: "04.3 Permissions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Linux file permissions control who can read, write, and execute files."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Permission structure:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text",
+        children: "-rwxr-xr-- 1 user group 4096 Jan 15 10:30 file.txt\r\n│├─┤├─┤├─┤\r\n│ │   │ │  └── others: r-- (read)\r\n│ │   │ └───── group: r-x (read, execute)\r\n│ │   └─────── owner: rwx (read, write, execute)\r\n│ └─────────── type: - = file, d = directory\r\n└───────────── special bits\r\n```text\r\n\r\n| Permission | File | Directory |\r\n|------------|------|-----------|\r\n| `r` (4) | Read file contents | List directory contents |\r\n| `w` (2) | Modify file | Create/delete files in directory |\r\n| `x` (1) | Execute as program | Enter (cd into) directory |\r\n\r\n**Symbolic mode with chmod:**\r\n\r\n```bash\r\n\r\n## Add execute permission for owner\r\nchmod u+x script.sh\r\n\r\n## Remove write permission for group\r\nchmod g-w file.txt\r\n\r\n## Add read permission for others\r\nchmod o+r public-file.txt\r\n\r\n## Set exact permissions: owner=rwx, group=r-x, others=r--\r\nchmod u=rwx,g=rx,o=r file.txt\r\n\r\n## Add execute for all users\r\nchmod +x deploy.sh\r\n\r\n## Remove all permissions for others\r\nchmod o= private-file.txt\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numeric (octal) mode with chmod:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## rwxr-xr-- = 754\r\nchmod 754 script.sh\r\n\r\n## rwxr-xr-x = 755 (common for executables)\r\nchmod 755 deploy.sh\r\n\r\n## rw-r--r-- = 644 (common for regular files)\r\nchmod 644 config.yaml\r\n\r\n## rw------- = 600 (private files)\r\nchmod 600 ~/.ssh/id_rsa\r\n\r\n## rwx------ = 700 (private executables)\r\nchmod 700 ~/bin/myscript\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Changing ownership:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Change file owner\r\nsudo chown alice file.txt\r\n\r\n## Change owner and group\r\nsudo chown alice:developers file.txt\r\n\r\n## Change ownership recursively\r\nsudo chown -R alice:team /var/www/\r\n\r\n## Change only the group\r\nchgrp developers project/\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Special permissions:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Setuid: execute as file owner (use sparingly)\r\nchmod u+s /usr/bin/program\r\nchmod 4755 /usr/bin/program\r\n\r\n## Setgid: execute with group privileges\r\nchmod g+s /shared/dir/\r\nchmod 2755 /shared/dir/\r\n\r\n## Sticky bit: only owner can delete files in directory\r\nchmod +t /tmp/shared/\r\nchmod 1777 /tmp/shared/\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "overview-2",
+      children: "Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "044-searching",
+      children: "04.4 Searching"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "grep — search file contents:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Basic text search\r\ngrep \"error\" logfile.txt\r\n\r\n## Case-insensitive search\r\ngrep -i \"error\" logfile.txt\r\n\r\n## Search recursively in directory\r\ngrep -r \"TODO\" src/\r\n\r\n## Show line numbers\r\ngrep -n \"function\" app.ts\r\n\r\n## Count matching lines\r\ngrep -c \"404\" access.log\r\n\r\n## Show 3 lines before and after match\r\ngrep -B 3 -A 3 \"Exception\" app.log\r\n\r\n## Invert match (lines NOT containing pattern)\r\ngrep -v \"debug\" app.log\r\n\r\n## Search for literal string (no regex)\r\ngrep -F \"user.name\" config.yaml\r\n\r\n## Extended regex (grep -E or egrep)\r\ngrep -E \"error|warning|critical\" syslog.txt\r\n\r\n## Perl regex for complex patterns\r\ngrep -P \"\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\" access.log\r\n\r\n## Output only matching part\r\ngrep -o \"error:.*\" app.log\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "find — search for files by name, size, time:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Find files by name\r\nfind /var -name \"*.log\"\r\n\r\n## Case-insensitive name search\r\nfind . -iname \"readme.md\"\r\n\r\n## Find directories named \"node_modules\"\r\nfind . -type d -name \"node_modules\"\r\n\r\n## Find files larger than 100MB\r\nfind / -type f -size +100M\r\n\r\n## Find files modified in the last 7 days\r\nfind . -mtime -7\r\n\r\n## Find files accessed in the last 30 minutes\r\nfind . -amin -30\r\n\r\n## Find empty files\r\nfind . -empty -type f\r\n\r\n## Find files with specific permissions\r\nfind . -perm 755\r\n\r\n## Find and execute command on results\r\nfind . -name \"*.tmp\" -exec rm {} +\r\n\r\n## Find and delete (using + for batch)\r\nfind . -name \"*.log\" -delete\r\n\r\n## Find files and limit depth\r\nfind . -maxdepth 2 -name \"*.ts\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Other search tools:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## which: find command location\r\nwhich python3\r\n\r\n## /usr/bin/python3\r\n\r\n## whereis: find binary, source, manual\r\nwhereis git\r\n\r\n## git: /usr/bin/git /usr/share/man/man1/git.1.gz\r\n\r\n## locate: fast search using pre-built database\r\nlocate nginx.conf\r\n\r\n## May need to update: sudo updatedb\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "overview-3",
+      children: "Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "045-pipes-and-redirection",
+      children: "04.5 Pipes and Redirection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Pipes and redirects are the backbone of Linux command composition."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output redirection:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Overwrite file with output\r\necho \"hello\" > output.txt\r\n\r\n## Append output to file\r\necho \"world\" >> output.txt\r\n\r\n## Redirect stderr to file\r\ncommand 2> errors.log\r\n\r\n## Append stderr to file\r\ncommand 2>> errors.log\r\n\r\n## Redirect both stdout and stderr\r\ncommand > output.txt 2>&1\r\ncommand &> output.txt\r\n\r\n## Discard all output\r\ncommand > /dev/null 2>&1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Input redirection:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Feed file contents as input\r\nwc -l < file.txt\r\n\r\n## Here document (multi-line input)\r\ncat << EOF\r\nLine 1\r\nLine 2\r\nLine 3\r\nEOF\r\n\r\n## Here string\r\ngrep \"pattern\" <<< \"string to search\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pipes:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Pipe output of one command as input to another\r\nls -la | grep \".txt\"\r\n\r\n## Chain multiple commands\r\ncat access.log | grep \"404\" | awk '{print $1}' | sort | uniq -c\r\n\r\n## Count files by extension\r\nfind . -type f | sed 's/.*\\.//' | sort | uniq -c | sort -rn\r\n\r\n## Pipe with xargs (convert stdin to command arguments)\r\nfind . -name \"*.log\" | xargs rm\r\n\r\n## Safer xargs with null delimiter\r\nfind . -name \"*.log\" -print0 | xargs -0 rm\r\n\r\n## xargs with parallel execution\r\ncat urls.txt | xargs -P 4 -I {} curl -s {}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "tee — split output to file and screen:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Write to file AND display\r\nls -la | tee listing.txt\r\n\r\n## Append to file AND display\r\nls -la | tee -a listing.txt\r\n\r\n## Pipe chain: save intermediate result\r\nfind . -name \"*.ts\" | tee files.txt | wc -l\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "xargs — build commands from input:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Delete all .jpg files\r\nfind . -name \"*.jpg\" | xargs rm\r\n\r\n## Kill processes by name\r\nps aux | grep \"node\" | awk '{print $2}' | xargs kill\r\n\r\n## Chmod all .sh files\r\nfind . -name \"*.sh\" | xargs chmod +x\r\n\r\n## Parallel download\r\ncat urls.txt | xargs -P 8 -I {} wget {}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "overview-4",
+      children: "Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "046-real-world-tasks",
+      children: "04.6 Real-World Tasks"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Log analysis pipeline:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Find top 10 most frequent IP addresses in access log\r\ncat access.log | awk '{print $1}' | sort | uniq -c | sort -rn | head -10\r\n\r\n## Find all 500 errors in the last hour\r\ngrep \"500\" access.log | awk '$4 >=\"[21/Jan/2024:10:\"'\r\n\r\n## Count requests per endpoint\r\nawk '{print $7}' access.log | sort | uniq -c | sort -rn | head -20\r\n\r\n## Find slow requests (> 2 seconds)\r\nawk '$NF > 2.0 {print $0}' access.log\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disk usage and cleanup:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Find largest files in current directory\r\ndu -ah . | sort -rh | head -20\r\n\r\n## Find directories using more than 500MB\r\ndu -sh */ | sort -rh | head -10\r\n\r\n## Find and remove files older than 30 days\r\nfind /var/log -name \"*.log\" -mtime +30 -delete\r\n\r\n## Find files larger than 50MB\r\nfind . -type f -size +50M -exec ls -lh {} +\r\n\r\n## Clean up node_modules recursively\r\nfind . -name \"node_modules\" -type d -exec rm -rf {} +\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Monitoring and debugging:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "\r\n## Watch a log file in real-time\r\ntail -f /var/log/syslog\r\n\r\n## Watch with pattern filtering\r\ntail -f app.log | grep --line-buffered \"ERROR\"\r\n\r\n## Find what's using a port\r\nlsof -i :8080\r\n\r\n## Find large files created in last 24 hours\r\nfind . -type f -mtime -1 -size +10M -exec ls -lh {} +\r\n\r\n## Monitor disk space every 5 seconds\r\nwatch -n 5 df -h\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "ls -la"
+        }), " shows all files with permissions, size, and dates"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "cd -"
+        }), " returns to the previous directory; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "~"
+        }), " is home"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "cp -r"
+        }), " copies directories; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-p"
+        }), " preserves permissions"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "mv"
+        }), " renames and moves files; use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-i"
+        }), " for interactive mode"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "rm -rf"
+        }), " is powerful and dangerous — always double-check before running"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "chmod"
+        }), " uses numeric (755, 644) or symbolic (u+x, g-w) modes"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "grep -r"
+        }), " searches recursively; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-i"
+        }), " for case-insensitive; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-n"
+        }), " for line numbers"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "find"
+        }), " searches by name, size, time, and can execute commands on results"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Pipes (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "|"
+        }), ") chain commands; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: ">"
+        }), " overwrites; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: ">>"
+        }), " appends"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "xargs"
+        }), " converts piped input into command arguments"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "tee"
+        }), " splits output to both file and screen"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Command"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Find all TODO comments in code"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "grep -rn \"TODO\" src/"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Find large files eating disk"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "find / -size +100M -exec ls -lh {} +"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Count lines of code by extension"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "find . -name \"*.ts\" | xargs wc -l"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Watch logs in real-time"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "tail -f /var/log/app.log"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Make a script executable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "chmod +x script.sh"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Protect SSH keys"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "chmod 600 ~/.ssh/id_rsa"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-qa",
+      children: "Interview Q&A"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "git04-q1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q1: What is the difference between `>` and `>>` in Linux?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.code, {
+            children: ">"
+          }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "overwrites"
+          }), " the destination file with the command output. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: ">>"
+          }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "appends"
+          }), " the output to the end of the destination file. If the file doesn't exist, both create it. Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: ">"
+          }), " for fresh output and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: ">>"
+          }), " for logging/appending."]
+        }), (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "echo \"first\" > file.txt    # file.txt contains: first\necho \"second\" >> file.txt   # file.txt contains: first\\nsecond"
+          })
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "git04-q2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q2: How do you find all files larger than 100MB and older than 30 days?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Use the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "find"
+          }), " command with combined conditions:"]
+        }), (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "find / -type f -size +100M -mtime +30 -exec ls -lh {} +"
+          })
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.code, {
+            children: "-type f"
+          }), " limits to files, ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "-size +100M"
+          }), " finds files over 100MB, ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "-mtime +30"
+          }), " finds files modified more than 30 days ago. The ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "-exec"
+          }), " flag runs ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "ls -lh"
+          }), " on each result for detailed output."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "git04-q3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q3: Explain chmod 755 vs chmod 644. When would you use each?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "755"
+          }), " (rwxr-xr-x): Owner can read/write/execute; group and others can read and execute. Use for scripts, executables, and directories that users need to enter."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "644"
+          }), " (rw-r--r--): Owner can read/write; group and others can only read. Use for regular files like configs, documents, and source code that shouldn't be executed."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "git04-q4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q4: What does xargs do and why is it needed with pipes?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Pipes (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "|"
+          }), ") pass the ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "output"
+          }), " of one command as ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "stdin"
+          }), " to another. But many commands expect arguments, not stdin. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "xargs"
+          }), " converts piped input into command.\narguments. Example: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "find . -name \"*.tmp\" | xargs rm"
+          }), " — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "find"
+          }), " outputs filenames, ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "xargs"
+          }), " feeds them as arguments to ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "rm"
+          }), ". Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "-print0"
+          }), " and.\n", (0,jsx_runtime.jsx)(_components.code, {
+            children: "-0"
+          }), " for filenames with spaces."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "git04-q5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q5: How would you find all TODO comments in a TypeScript project?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Use recursive grep with line numbers:"
+        }), (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "grep -rn \"TODO\" src/ --include=\"*.ts\"\ngrep -rn \"FIXME\\|HACK\\|XXX\" src/ --include=\"*.ts\""
+          })
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.code, {
+            children: "-r"
+          }), " searches recursively, ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "-n"
+          }), " shows line numbers, ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "--include"
+          }), " filters to TypeScript files. The second example uses extended regex to find multiple markers at once."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1"
+      }), ": What does ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ls -lha"
+      }), " display?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) Only hidden files\r\nb) Long format listing with human-readable sizes including hidden files\r\nc) Recursive listing of all files\r\nd) Files sorted by name"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "git04-quiz1",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b"
+          })
+        }), (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.code, {
+            children: "-l"
+          }), " enables long format, ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "-h"
+          }), " makes sizes human-readable (KB, MB, GB), ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "-a"
+          }), " shows all files including hidden (dotfiles). Together they show a complete, readable directory listing."]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2"
+      }), ": Which command removes a directory and all its contents?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) rmdir mydir\r\nb) rm mydir\r\nc) rm -r mydir\r\nd) rm -rf mydir/"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "git04-quiz2",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: c"
+          })
+        }), (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.code, {
+            children: "rm -r"
+          }), " recursively removes a directory and all contents. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "rmdir"
+          }), " only removes empty directories. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "rm -rf"
+          }), " force-removes without prompting — use with extreme caution."]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3"
+      }), ": How do you search for a pattern in all .log files under /var/log?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["a) find /var/log -name \"", (0,jsx_runtime.jsx)(_components.em, {
+        children: ".log\" | grep \"pattern\"\r\nb) grep -r \"pattern\" /var/log --include=\""
+      }), ".log\"\r\nc) grep \"pattern\" /var/log/*.log\r\nd) All of the above"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "git04-quiz3",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: d"
+          })
+        }), (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["All three approaches work. Option b (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "grep -r --include"
+          }), ") is cleanest. Option a pipes find into grep. Option c uses shell globbing. Choose based on depth and simplicity needs."]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4"
+      }), ": What is the purpose of the sticky bit (chmod +t) on a directory?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) Prevents anyone from deleting files\r\nb) Only the file owner can delete files in that directory\r\nc) Makes all files executable\r\nd) Sets the group to the directory's group"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "git04-quiz4",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b"
+          })
+        }), (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["The sticky bit on a directory means only the file owner, directory owner, or root can delete or rename files within it. This is how ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "/tmp"
+          }), " works — all users can write, but only they can delete their own files."]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5"
+      }), ": In the command ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ls -la | grep \".txt\" | wc -l"
+      }), ", what does the pipeline do?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) Lists all text files\r\nb) Counts the number of .txt files in the current directory\r\nc) Counts lines in all text files\r\nd) Finds the largest text file"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "git04-quiz5",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b"
+          })
+        }), (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.code, {
+            children: "ls -la"
+          }), " lists all files, ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "grep \".txt\""
+          }), " filters to lines containing .txt, and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "wc -l"
+          }), " counts those lines. Each line from ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "ls -la"
+          }), " represents one file, so the output is the count of .txt files."]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-tips",
+      children: "Practical Tips"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ls -lt"
+        }), " to find recently modified files; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ls -lS"
+        }), " for largest files first"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Always quote filenames with spaces: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "rm \"file name.txt\""
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "find -exec {} +"
+        }), " instead of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "find -exec \\;"
+        }), " for better performance"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Combine ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "grep -v"
+        }), " to exclude patterns from results"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "tee"
+        }), " to log pipeline output to a file while still seeing it on screen"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Practice dangerous commands with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "echo"
+        }), " first: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "echo rm -rf *.log"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Easy"
+      }), " — List all files in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "/etc"
+      }), " larger than 10KB, sorted by size. Then find all ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".conf"
+      }), " files in the same directory."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Medium"
+      }), " — Write a one-liner that finds all ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".js"
+      }), " files modified in the last 2 days, counts their lines, and shows the total. Use pipes and xargs."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Medium"
+      }), " — Create a directory structure with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "mkdir -p"
+      }), ", set different permissions on each level, and verify access as different users with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "su"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hard"
+      }), " — Analyze an Apache/Nginx access log: find the top 5 IPs, most common HTTP status codes, and average request size. Use only awk, sort, uniq, and wc."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "common-mistakes",
+      children: "Common Mistakes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Using rm -rf without caution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not understanding file permissions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not using quotes around filenames with spaces"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Forgetting that Linux is case-sensitive"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not using find/locate for file search"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "revision-notes",
+      children: "Revision Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ls -la: detailed listing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "chmod 755: rwxr-xr-x"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "grep -rn: recursive search"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "find / -name \"*.py\": find files"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "管道 (|) pipes output to next command"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "tee: write to file and stdout"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "placement-section",
+      children: "Placement Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "top-10-interview-questions",
+      children: "Top 10 Interview Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "google-style",
+      children: "Google Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Explain this topic in under 60 seconds, then give a real-world analogy."
+          }), " — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Design a minimal, well-typed function in this chapter."
+          }), " — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "**What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "amazon-style",
+      children: "Amazon Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Describe a production bug caused by misunderstanding this technique. How did you diagnose and fix it?"
+          }), " — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you scale a system using this technique from 10 users to 10 million?"
+          }), " — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "microsoft-style",
+      children: "Microsoft Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Compare this approach with the closest alternative approach. When would you choose each?"
+          }), " — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Walk through how you would test a component built on this."
+          }), " — Unit, integration, property-based tests; mocking boundaries; golden files for outputs."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "nvidia-style",
+      children: "NVIDIA Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "8",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How does Linux Commands behave differently at scale — memory, throughput, or precision-wise?"
+          }), " — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you make an implementation of this technique run faster on GPU hardware?"
+          }), " — Batch operations, vectorization, avoiding Python loops, reducing data movement."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ai-startup-style",
+      children: "AI Startup Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Write the smallest possible implementation of this technique that is production-quality."
+        }), " — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resume-tips",
+      children: "Resume Tips"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Name the technique explicitly in your skills section, paired with a measurable achievement (\"Reduced X by 40% using Linux Commands\")."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add a bullet describing a project that applies Linux Commands to real data, with numbers."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mention the tools and libraries you used alongside Linux Commands (linters, test frameworks, profiling tools)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep resume bullets under 15 words and start each with an action verb."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "interview-day-checklist",
+      children: "Interview Day Checklist"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rehearse a 60-second explanation of Linux Commands and one real-world analogy."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prepare one STAR story about debugging a Linux Commands-related production issue."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review complexity and edge cases for the classic problem in this chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Have questions ready: how does the team apply Linux Commands in production today?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test your environment (Python, editor, internet) 15 minutes before the interview."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "truefalse",
+      children: "True/False"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Linux Commands builds directly on the fundamentals covered in the earlier chapters of this module. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Every advanced topic in this module assumes the core concepts from the previous chapters."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should write at least one code example for Linux Commands before moving to the next chapter. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Active recall with hands-on code beats passive reading for retention."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " The complexity analysis for Linux Commands is the same regardless of input size. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Complexity grows with input size; always state best, average, and worst case."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Edge cases (empty input, invalid input, boundary values) matter for Linux Commands in production. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Most production bugs come from unhandled edge cases."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should memorize this chapter's content once and never review it again. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "fill-in-the-blank",
+      children: "Fill in the Blank"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter that covers Linux Commands is Chapter ___ of this module. — Answer: check the module's table of contents."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The time complexity of the standard approach to 04 Linux Commands is ___. — Answer: O(n) for log, O(1) for checkout"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The main edge case to handle when implementing 04 Linux Commands is ___. — Answer: merge conflicts, detached HEAD, force push"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools commonly used to debug Linux Commands issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The related topic that connects to Linux Commands in the next chapter is ___. — Answer: see the Next Topic section."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "scenario-questions",
+      children: "Scenario Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A teammate ships a change involving Linux Commands that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your implementation of this technique is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A new hire asks you to explain Linux Commands in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your team's codebase has three different patterns for Linux Commands and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "output-questions",
+      children: "Output Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output of the simplest correct implementation of this technique on an empty input?"
+        }), " — Trace through the code: it should return the documented default (None, 0, empty collection) without raising."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output when the input is at the boundary value?"
+        }), " — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What does the implementation return when given invalid input types?"
+        }), " — With type hints and validation, it raises a clear error; without, it may fail silently."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output for the sample input given in the chapter's Examples section?"
+        }), " — Re-run the chapter's example code and compare against the documented output."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the time complexity output when you profile the implementation at 10x input size?"
+        }), " — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "difficulty-level",
+      children: "Difficulty Level"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "What It Takes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Beginner"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-2 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read theory, run the chapter examples, solve the Easy exercises"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Intermediate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-5 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete Medium exercises, explain Linux Commands to someone else"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Advanced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+ week"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Solve Hard exercises, optimize for real datasets, answer interview follow-ups"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "tips--tricks",
+      children: "Tips & Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always write a one-line example of Linux Commands from memory before opening the chapter — active recall first."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the chapter's Revision Notes as a checklist: you have mastered Linux Commands when you can explain each bullet."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For interviews, practice explaining Linux Commands twice: once with a technical audience, once with a non-technical audience."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep a personal examples file where you collect your own Linux Commands snippets; interviewers love original examples."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "memory-tricks",
+      children: "Memory Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Acronym"
+        }), ": build a mnemonic from the 5 key concepts of Linux Commands listed in the Chapter at a Glance table."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Story"
+        }), ": link Linux Commands to a familiar story — the analogy in the Visual Analogy section is designed to stick."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Number anchor"
+        }), ": remember the complexity of Linux Commands by connecting it to a known algorithm of the same class."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Color code"
+        }), ": highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Teach-back"
+        }), ": explain Linux Commands to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "further-reading",
+      children: "Further Reading"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation for the primary library used in this chapter"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The original research paper introducing this concept (search Google Scholar)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Towards Data Science articles on this topic"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The relevant chapter in 'Designing Data-Intensive Applications' by Kleppmann"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "GitHub repositories of production implementations Commands"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related-topics",
+      children: "Related Topics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous chapter"
+        }), " in Module 04 — builds the foundation for 04 Linux Commands"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next chapter"
+        }), " — extends 04 Linux Commands with advanced techniques"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Module 07 System Design"
+        }), " — how 04 Linux Commands fits into scalable production architectures"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Module 21 Interview Preparation"
+        }), " — FAANG-style questions on 04 Linux Commands"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Module 19 Capstone Projects"
+        }), " — end-to-end application of 04 Linux Commands"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "faqs",
+      children: "FAQs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Do I need to memorize all of 04 Linux Commands?"
+        }), " — Understand the big picture first. Memorize the key patterns via flashcards. Interviewers test understanding, not recitation."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What if I get stuck on an exercise?"
+        }), " — Re-read the theory, run the example code, then attempt again. If stuck after 20 minutes, move on and return the next day with fresh eyes."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "How much time should I spend on 04 Linux Commands?"
+        }), " — 2-3 hours for theory + examples, 3-5 hours for exercises. Total: one focused weekend session."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Is 04 Linux Commands asked in FAANG interviews?"
+        }), " — Yes. Check the Interview Q&A section for exact question styles used by Google, Amazon, Microsoft, and AI startups."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What's the fastest way to master 04 Linux Commands?"
+        }), " — Write the core implementation from memory, explain it to someone else, then solve one Hard exercise. Teaching reveals gaps faster than re-reading."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "important-notes",
+      children: "Important Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Linux Commands is a core requirement for the rest of this module — do not skip the examples."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always analyze complexity (time and space) when working with Linux Commands."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Production correctness means handling edge cases, not just the happy path."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview answers should start with the definition, then the example, then the trade-offs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Revisit this chapter after finishing the module; the context from later chapters deepens understanding."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "historical-context",
+      children: "Historical Context"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Linux Commands emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools used for Linux Commands today evolved from simpler versions; the chapter covers the modern, recommended approach."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interviewers value knowing one historical fact about Linux Commands — it shows genuine interest, not just cramming."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The library/tooling ecosystem around Linux Commands changes quickly; focus on fundamentals that remain stable."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "security-considerations",
+      children: "Security Considerations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Validate all external inputs before processing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Never log sensitive data (API keys, PII, passwords)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use environment variables for configuration secrets"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement rate limiting for public-facing endpoints"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Follow the principle of least privilege for all system components"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "ml-intuition",
+      children: "ML Intuition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This concept appears in ML pipelines at the data processing, training, or serving layer"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding it helps debug model misbehavior — most ML bugs are infrastructure bugs, not model bugs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply vectorization and batching to scale this concept to large datasets"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Monitor for drift and degradation in production — set up alerts for key metrics"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Connect to the broader ML lifecycle: data → features → training → evaluation → deployment → monitoring"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "analogies",
+      children: "Analogies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "04 Linux Commands is like a GPS navigation system"
+          }), ": you define the destination (goal), the system plans the route (algorithm), and recalculates when you take a wrong turn (error handling)."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Complexity is like a restaurant kitchen"
+          }), ": a single chef (O(n)) handles small orders fine, but 1000 simultaneous orders need parallel chefs (O(log n) with proper indexing)."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Edge cases are like stress tests"
+          }), ": the happy path is a calm day, but production is Black Friday — design for the worst case."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "The chapter roadmap is a subway map"
+          }), ": each section is a station, and skipping one means you miss the connection to the next destination.## Capstone Project Link"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.a, {
+            href: "https://github.com/Raushan666java/ai-engineering-journey",
+            children: "Module Capstone: End-to-End Project"
+          }), " — this chapter contributes the Linux Commands skills used in the module's capstone project. Complete the exercises here before starting the capstone."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "flashcards",
+      children: "Flashcards"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "04gitlinuxcli-04linuxcommands-flash1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What does ls -lha display?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "04gitlinuxcli-04linuxcommands-flash2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Which command removes a directory and all its contents?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "c"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "04gitlinuxcli-04linuxcommands-flash3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    How do you search for a pattern in all .log files under /var/log?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "d"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "04gitlinuxcli-04linuxcommands-flash4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the purpose of the sticky bit (chmod +t) on a directory?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "04gitlinuxcli-04linuxcommands-flash5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    In the command ls -la | grep \".txt\" | wc -l, what does the pipeline do?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "research-references",
+      children: "Research References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation of the primary library for Linux Commands (linked in Further Reading)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic paper or textbook chapter introducing Linux Commands (see References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The standard library reference for Linux Commands-related functions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Engineering blog posts from companies running Linux Commands in production at scale"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PEPs and RFCs where applicable (Python and networking standards)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-source-tools",
+      children: "Open-Source Tools"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The primary library used in the code examples"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "pytest for unit and integration testing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ruff + black for linting and formatting"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "mypy for static type checking"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "cProfile / py-spy for performance profiling Commands"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "debugging-guide",
+      children: "Debugging Guide"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 1"
+        }), ": Reproduce the failure with the smallest possible input — isolate the bug before changing any code."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 2"
+        }), ": Add structured logging at each stage of the 04 Linux Commands pipeline to identify exactly where the failure occurs."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 3"
+        }), ": Check the Common Mistakes section — 80% of bugs match one of those patterns."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 4"
+        }), ": Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pdb.set_trace()"
+        }), " or your IDE debugger to inspect intermediate values at the failure point."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 5"
+        }), ": For performance issues, profile with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "cProfile"
+        }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "py-spy"
+        }), " before optimizing — never guess at bottlenecks."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Step 6"
+        }), ": Write a regression test that reproduces the bug before fixing it — this prevents recurrence."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "mock-interview-section",
+      children: "Mock Interview Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 1 — Screening (15 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain the core idea in 60 seconds."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a minimal working example of Linux Commands."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the complexity of your example?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 2 — Coding (45 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve the Medium exercise from this chapter under time pressure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "State your assumptions, then implement with type hints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test with edge cases: empty input, boundary values, invalid input."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 3 — Behavioral + System (30 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tell me about a time you debugged a Linux Commands problem in a project."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How would you design a system where Linux Commands is used at scale?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What metrics would you monitor?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Evaluation rubric"
+      }), ": correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "optimized-implementation",
+      children: "Optimized Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from typing import Any, Optional\r\n\r\ndef demonstrate_04_linux_commands(input_data: list[Any]) -> Optional[Any]:\r\n    \"\"\"Minimal production scaffold for 04 Linux Commands.\r\n\r\n    Key concepts: commit, branch, merge, rebase, pull request\r\n    Complexity: O(n) for log, O(1) for checkout\r\n    \"\"\"\r\n    if not input_data:\r\n        return None\r\n    # Validate input\r\n    if not isinstance(input_data, (list, tuple)):\r\n        raise TypeError(f\"Expected list, got {type(input_data).__name__}\")\r\n    # Core logic: implement 04 Linux Commands here\r\n    result = input_data[0] if input_data else None\r\n    return result\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keeps the function signature stable so tests written against it stay valid."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handles the empty-input contract explicitly."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add unit tests for the edge cases before implementing the logic (test-first)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "evaluation-metrics",
+      children: "Evaluation Metrics"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Skill"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Target"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept recall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain Linux Commands without notes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60-second explanation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code fluency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write the chapter example from memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No syntax errors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handle empty/invalid input in exercises"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All cases pass"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State time/space for the standard approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Correct big-O"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview readiness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Answer 5 Interview Q&A questions out loud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fluent, structured answers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Retention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Chapter quiz score after 3 days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80%+"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "real-world-examples",
+      children: "Real-World Examples"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Applied in production at companies like Google, Meta, Amazon, and Microsoft"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Used in data pipelines, model serving, and API backends"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Enables scalable, maintainable systems when applied correctly"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview insight: connect the concept to a business outcome — cost reduction, latency improvement, or reliability increase"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "next-topic",
+      children: "Next Topic"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/ai-engineering-placement/04-git-linux-cli/05-bash-scripting",
+        children: "CLI Productivity"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "limitations",
+      children: "Limitations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Linux Commands, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Performance of Linux Commands depends on input size and distribution — always benchmark for your own data."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone."
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

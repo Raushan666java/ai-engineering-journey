@@ -506,7 +506,7 @@ function _createMdxContent(props) {
       id: "roadmap",
       children: "Roadmap"
     }), "\n", (0,jsx_runtime.jsx)(_components.mermaid, {
-      value: "flowchart LR\n    A[GATE CS 2025] --> B[GA: 15 marks]\n    A --> C[Technical: 85 marks]\n    B --> B1[1-mark Qs: 5]\n    B --> B2[2-mark Qs: 5]\n    C --> C1[DS/Algo: 18]\n    C --> C2[OS: 10]\n    C --> C3[DBMS: 8]\n    C --> C4[CN: 7]\n    C --> C5[COA: 9]\n    C --> C6[TOC: 9]\n    C --> C7[CD: 7]\n    C --> C8[DL: 6]\n    C --> C9[Math: 11]"
+      value: "flowchart LR\r\n    A[GATE CS 2025] --> B[GA: 15 marks]\r\n    A --> C[Technical: 85 marks]\r\n    B --> B1[1-mark Qs: 5]\r\n    B --> B2[2-mark Qs: 5]\r\n    C --> C1[DS/Algo: 18]\r\n    C --> C2[OS: 10]\r\n    C --> C3[DBMS: 8]\r\n    C --> C4[CN: 7]\r\n    C --> C5[COA: 9]\r\n    C --> C6[TOC: 9]\r\n    C --> C7[CD: 7]\r\n    C --> C8[DL: 6]\r\n    C --> C9[Math: 11]"
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "exam-summary",
       children: "Exam Summary"
@@ -716,7 +716,7 @@ function _createMdxContent(props) {
       id: "year-over-year-pattern",
       children: "Year-over-Year Pattern"
     }), "\n", (0,jsx_runtime.jsx)(_components.mermaid, {
-      value: "xychart-beta\n    title \"GATE CS 2025 Topic-wise Marks Distribution\"\n    x-axis [\"DS&Algo\", \"OS\", \"DBMS\", \"CN\", \"COA\", \"TOC\", \"CD\", \"DL\", \"Math\", \"GA\"]\n    y-axis \"Marks\" 0 --> 20\n    bar [18, 10, 8, 7, 9, 9, 7, 6, 11, 15]"
+      value: "xychart-beta\r\n    title \"GATE CS 2025 Topic-wise Marks Distribution\"\r\n    x-axis [\"DS&Algo\", \"OS\", \"DBMS\", \"CN\", \"COA\", \"TOC\", \"CD\", \"DL\", \"Math\", \"GA\"]\r\n    y-axis \"Marks\" 0 --> 20\r\n    bar [18, 10, 8, 7, 9, 9, 7, 6, 11, 15]"
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "section-a-general-aptitude-15-marks",
       children: "Section A: General Aptitude (15 marks)"
@@ -737,11 +737,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nTotal distance = Train length + Platform length = 300 + 200 = 500 m.\nTime = 25 s.\nSpeed = Distance / Time = 500 / 25 = 20 m/s.\nConverting to km/h: 20 × (18/5) = 72 km/h."]
+        }), "\r\nTotal distance = Train length + Platform length = 300 + 200 = 500 m.\r\nTime = 25 s.\r\nSpeed = Distance / Time = 500 / 25 = 20 m/s.\r\nConverting to km/h: 20 × (18/5) = 72 km/h."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function trainSpeed(trainLen: number, platformLen: number, timeSec: number): number {\n  const totalDist = trainLen + platformLen;\n  const speedMS = totalDist / timeSec;\n  return speedMS * (18 / 5);\n}\nconsole.log(trainSpeed(300, 200, 25)); // 72\n"
+          children: "function trainSpeed(trainLen: number, platformLen: number, timeSec: number): number {\r\n  const totalDist = trainLen + platformLen;\r\n  const speedMS = totalDist / timeSec;\r\n  return speedMS * (18 / 5);\r\n}\r\nconsole.log(trainSpeed(300, 200, 25)); // 72\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -761,11 +761,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nEach letter's position in the alphabet is summed:\nF=6, R=18, O=15, S=19, T=20 → 6+18+15+19+20 = 78. But code is 82 = 78 + 4.\nM=13, E=5, L=12, T=20 → 13+5+12+20 = 50. Code is 53 = 50 + 3.\nPattern: sum of letter positions + number of letters.\nH=8, E=5, A=1, T=20 → sum = 34. Add 2 letters = 36."]
+        }), "\r\nEach letter's position in the alphabet is summed:\r\nF=6, R=18, O=15, S=19, T=20 → 6+18+15+19+20 = 78. But code is 82 = 78 + 4.\r\nM=13, E=5, L=12, T=20 → 13+5+12+20 = 50. Code is 53 = 50 + 3.\r\nPattern: sum of letter positions + number of letters.\r\nH=8, E=5, A=1, T=20 → sum = 34. Add 2 letters = 36."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function codeWord(word: string): number {\n  const sum = word.toUpperCase().split('').reduce((acc, c) => acc + (c.charCodeAt(0) - 64), 0);\n  return sum + word.length;\n}\nconsole.log(codeWord(\"HEAT\")); // 36\n"
+          children: "function codeWord(word: string): number {\r\n  const sum = word.toUpperCase().split('').reduce((acc, c) => acc + (c.charCodeAt(0) - 64), 0);\r\n  return sum + word.length;\r\n}\r\nconsole.log(codeWord(\"HEAT\")); // 36\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -785,7 +785,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\n\"Perfidious\" means deceitful, untrustworthy, or disloyal. \"Treacherous\" is the closest synonym. \"Faithful\" is the antonym. \"Skillful\" and \"Beautiful\" are unrelated."]
+        }), "\r\n\"Perfidious\" means deceitful, untrustworthy, or disloyal. \"Treacherous\" is the closest synonym. \"Faithful\" is the antonym. \"Skillful\" and \"Beautiful\" are unrelated."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q4-1-mark--numerical-ability",
@@ -804,18 +804,18 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nUsing inclusion-exclusion: |T ∪ C| = |T| + |C| - |T ∩ C| = 120 + 90 - 40 = 170.\nPeople who like neither = Total - |T ∪ C| = 200 - 170 = 30."]
+        }), "\r\nUsing inclusion-exclusion: |T ∪ C| = |T| + |C| - |T ∩ C| = 120 + 90 - 40 = 170.\r\nPeople who like neither = Total - |T ∪ C| = 200 - 170 = 30."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function neitherCount(total: number, a: number, b: number, both: number): number {\n  const union = a + b - both;\n  return total - union;\n}\nconsole.log(neitherCount(200, 120, 90, 40)); // 30\n"
+          children: "function neitherCount(total: number, a: number, b: number, both: number): number {\r\n  const union = a + b - both;\r\n  return total - union;\r\n}\r\nconsole.log(neitherCount(200, 120, 90, 40)); // 30\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q5-1-mark--logical-reasoning",
       children: "Q5 [1 Mark] — Logical Reasoning"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "Statement: All squares are rectangles. All rectangles are quadrilaterals.\nConclusion I: All squares are quadrilaterals.\nConclusion II: Some quadrilaterals are squares."
+      children: "Statement: All squares are rectangles. All rectangles are quadrilaterals.\r\nConclusion I: All squares are quadrilaterals.\r\nConclusion II: Some quadrilaterals are squares."
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Which conclusion(s) follow(s)?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -830,7 +830,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nAll squares → rectangles → quadrilaterals, so I follows.\nSince all squares are quadrilaterals, there exists at least one quadrilateral that is a square, so II also follows (provided squares exist, which they do by definition)."]
+        }), "\r\nAll squares → rectangles → quadrilaterals, so I follows.\r\nSince all squares are quadrilaterals, there exists at least one quadrilateral that is a square, so II also follows (provided squares exist, which they do by definition)."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q6-2-marks--numerical-ability",
@@ -849,11 +849,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nLet the total work be LCM(12, 15, 20) = 60 units.\nA+B efficiency = 60/12 = 5 units/day.\nB+C efficiency = 60/15 = 4 units/day.\nA+C efficiency = 60/20 = 3 units/day.\nAdding all three: 2(A+B+C) = 5+4+3 = 12 → A+B+C = 6.\nA alone = (A+B+C) - (B+C) = 6 - 4 = 2 units/day.\nTime for A alone = 60/2 = 30 days."]
+        }), "\r\nLet the total work be LCM(12, 15, 20) = 60 units.\r\nA+B efficiency = 60/12 = 5 units/day.\r\nB+C efficiency = 60/15 = 4 units/day.\r\nA+C efficiency = 60/20 = 3 units/day.\r\nAdding all three: 2(A+B+C) = 5+4+3 = 12 → A+B+C = 6.\r\nA alone = (A+B+C) - (B+C) = 6 - 4 = 2 units/day.\r\nTime for A alone = 60/2 = 30 days."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function workDays(a: number, b: number, c: number): number {\n  const lcm = [a, b, c].reduce((x, y) => (x * y) / gcd(x, y));\n  const effAB = lcm / a, effBC = lcm / b, effAC = lcm / c;\n  const effABC = (effAB + effBC + effAC) / 2;\n  return lcm / (effABC - effBC);\n}\nfunction gcd(x: number, y: number): number { return y === 0 ? x : gcd(y, x % y); }\nconsole.log(workDays(12, 15, 20)); // 30\n"
+          children: "function workDays(a: number, b: number, c: number): number {\r\n  const lcm = [a, b, c].reduce((x, y) => (x * y) / gcd(x, y));\r\n  const effAB = lcm / a, effBC = lcm / b, effAC = lcm / c;\r\n  const effABC = (effAB + effBC + effAC) / 2;\r\n  return lcm / (effABC - effBC);\r\n}\r\nfunction gcd(x: number, y: number): number { return y === 0 ? x : gcd(y, x % y); }\r\nconsole.log(workDays(12, 15, 20)); // 30\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -873,11 +873,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nLet numbers be a/r, a, ar (GP with middle term a).\nSum: a/r + a + ar = 39.\nProduct of first and third: (a/r)(ar) = a² = 81 → a = 9.\nThen 9/r + 9 + 9r = 39 → 9/r + 9r = 30 → divide by 3: 3/r + 3r = 10.\nMultiply by r: 3 + 3r² = 10r → 3r² - 10r + 3 = 0.\nSolving: r = 3 or r = 1/3. Both give same set {3, 9, 27} or {27, 9, 3}.\nMiddle number = 9."]
+        }), "\r\nLet numbers be a/r, a, ar (GP with middle term a).\r\nSum: a/r + a + ar = 39.\r\nProduct of first and third: (a/r)(ar) = a² = 81 → a = 9.\r\nThen 9/r + 9 + 9r = 39 → 9/r + 9r = 30 → divide by 3: 3/r + 3r = 10.\r\nMultiply by r: 3 + 3r² = 10r → 3r² - 10r + 3 = 0.\r\nSolving: r = 3 or r = 1/3. Both give same set {3, 9, 27} or {27, 9, 3}.\r\nMiddle number = 9."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function gpMiddle(sum: number, productFirstThird: number): number {\n  return Math.sqrt(productFirstThird);\n}\nconsole.log(gpMiddle(39, 81)); // 9\n"
+          children: "function gpMiddle(sum: number, productFirstThird: number): number {\r\n  return Math.sqrt(productFirstThird);\r\n}\r\nconsole.log(gpMiddle(39, 81)); // 9\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -897,11 +897,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nTotal balls = 4+5+6 = 15.\nTotal ways to choose 2 balls = C(15,2) = 105.\nWays to choose 2 blue balls = C(5,2) = 10.\nProbability = 10/105 = 2/21."]
+        }), "\r\nTotal balls = 4+5+6 = 15.\r\nTotal ways to choose 2 balls = C(15,2) = 105.\r\nWays to choose 2 blue balls = C(5,2) = 10.\r\nProbability = 10/105 = 2/21."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function nCr(n: number, r: number): number {\n  if (r > n) return 0;\n  let res = 1;\n  for (let i = 1; i <= r; i++) res = res * (n - i + 1) / i;\n  return res;\n}\nconst prob = nCr(5,2) / nCr(15,2);\nconsole.log(prob); // 0.09523... = 2/21\n"
+          children: "function nCr(n: number, r: number): number {\r\n  if (r > n) return 0;\r\n  let res = 1;\r\n  for (let i = 1; i <= r; i++) res = res * (n - i + 1) / i;\r\n  return res;\r\n}\r\nconst prob = nCr(5,2) / nCr(15,2);\r\nconsole.log(prob); // 0.09523... = 2/21\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -921,11 +921,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nWork = Men × Days = 12 × 8 = 96 man-days.\nFor 6 days: Men = 96/6 = 16."]
+        }), "\r\nWork = Men × Days = 12 × 8 = 96 man-days.\r\nFor 6 days: Men = 96/6 = 16."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function menNeeded(men: number, days: number, targetDays: number): number {\n  return (men * days) / targetDays;\n}\nconsole.log(menNeeded(12, 8, 6)); // 16\n"
+          children: "function menNeeded(men: number, days: number, targetDays: number): number {\r\n  return (men * days) / targetDays;\r\n}\r\nconsole.log(menNeeded(12, 8, 6)); // 16\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -945,11 +945,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nAt 4:30, the minute hand is at 6 (180° from 12).\nHour hand at 4:30 is halfway between 4 and 5.\nEach hour = 360°/12 = 30°. At 4 hours = 120°.\nAt 30 min, hour hand moves 30 × 0.5° = 15° more.\nSo hour hand at 120° + 15° = 135°.\nDifference = |180° - 135°| = 45°."]
+        }), "\r\nAt 4:30, the minute hand is at 6 (180° from 12).\r\nHour hand at 4:30 is halfway between 4 and 5.\r\nEach hour = 360°/12 = 30°. At 4 hours = 120°.\r\nAt 30 min, hour hand moves 30 × 0.5° = 15° more.\r\nSo hour hand at 120° + 15° = 135°.\r\nDifference = |180° - 135°| = 45°."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function clockAngle(h: number, m: number): number {\n  const hourAngle = (h % 12) * 30 + m * 0.5;\n  const minAngle = m * 6;\n  const diff = Math.abs(hourAngle - minAngle);\n  return Math.min(diff, 360 - diff);\n}\nconsole.log(clockAngle(4, 30)); // 45\n"
+          children: "function clockAngle(h: number, m: number): number {\r\n  const hourAngle = (h % 12) * 30 + m * 0.5;\r\n  const minAngle = m * 6;\r\n  const diff = Math.abs(hourAngle - minAngle);\r\n  return Math.min(diff, 360 - diff);\r\n}\r\nconsole.log(clockAngle(4, 30)); // 45\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
@@ -972,11 +972,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nThe matrix is lower triangular. Determinant = product of diagonal entries = 3 × 1 × 2 = 6."]
+        }), "\r\nThe matrix is lower triangular. Determinant = product of diagonal entries = 3 × 1 × 2 = 6."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function determinantTriangular(diag: number[]): number {\n  return diag.reduce((a, b) => a * b, 1);\n}\nconsole.log(determinantTriangular([3, 1, 2])); // 6\n"
+          children: "function determinantTriangular(diag: number[]): number {\r\n  return diag.reduce((a, b) => a * b, 1);\r\n}\r\nconsole.log(determinantTriangular([3, 1, 2])); // 6\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -996,7 +996,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nFor any tree: |V| = |E| + 1 = 15 + 1 = 16."]
+        }), "\r\nFor any tree: |V| = |E| + 1 = 15 + 1 = 16."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q3-1-mark---engineering-mathematics--ðÿâïâ-easy",
@@ -1015,7 +1015,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nThis is a standard limit. Using L'Hôpital's rule or the squeeze theorem: lim_{x→0} sin x / x = 1."]
+        }), "\r\nThis is a standard limit. Using L'Hôpital's rule or the squeeze theorem: lim_{x→0} sin x / x = 1."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q4-1-mark---engineering-mathematics--ðÿâïâ-easy",
@@ -1034,11 +1034,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nFor independent events: P(A ∩ B) = P(A)·P(B) = 0.3 × 0.5 = 0.15.\nP(A ∪ B) = P(A) + P(B) - P(A ∩ B) = 0.3 + 0.5 - 0.15 = 0.65."]
+        }), "\r\nFor independent events: P(A ∩ B) = P(A)·P(B) = 0.3 × 0.5 = 0.15.\r\nP(A ∪ B) = P(A) + P(B) - P(A ∩ B) = 0.3 + 0.5 - 0.15 = 0.65."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function unionProb(pA: number, pB: number): number {\n  const pIntersect = pA * pB;\n  return pA + pB - pIntersect;\n}\nconsole.log(unionProb(0.3, 0.5)); // 0.65\n"
+          children: "function unionProb(pA: number, pB: number): number {\r\n  const pIntersect = pA * pB;\r\n  return pA + pB - pIntersect;\r\n}\r\nconsole.log(unionProb(0.3, 0.5)); // 0.65\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1058,7 +1058,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nDe Morgan's laws: ¬(P ∨ Q) ≡ ¬P ∧ ¬Q and ¬(P ∧ Q) ≡ ¬P ∨ ¬Q."]
+        }), "\r\nDe Morgan's laws: ¬(P ∨ Q) ≡ ¬P ∧ ¬Q and ¬(P ∧ Q) ≡ ¬P ∨ ¬Q."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q6-1-mark---data-structures--algorithms--ðÿâïâ-easy",
@@ -1077,7 +1077,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nHeap provides O(log n) insertion and O(log n) extraction of max/min, optimal for priority queues."]
+        }), "\r\nHeap provides O(log n) insertion and O(log n) extraction of max/min, optimal for priority queues."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q7-1-mark---operating-systems--ðÿâïâ-easy",
@@ -1096,9 +1096,9 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nThe classic 5 states are: New, Ready, Running, Waiting (Blocked), Terminated."]
+        }), "\r\nThe classic 5 states are: New, Ready, Running, Waiting (Blocked), Terminated."]
       }), "\n", (0,jsx_runtime.jsx)(_components.mermaid, {
-        value: "stateDiagram-v2\n    [*] --> New\n    New --> Ready: Admitted\n    Ready --> Running: Dispatch\n    Running --> Ready: Timeout/Preempt\n    Running --> Waiting: I/O or Event Wait\n    Waiting --> Ready: I/O or Event Complete\n    Running --> Terminated: Exit\n    Terminated --> [*]"
+        value: "stateDiagram-v2\r\n    [*] --> New\r\n    New --> Ready: Admitted\r\n    Ready --> Running: Dispatch\r\n    Running --> Ready: Timeout/Preempt\r\n    Running --> Waiting: I/O or Event Wait\r\n    Waiting --> Ready: I/O or Event Complete\r\n    Running --> Terminated: Exit\r\n    Terminated --> [*]"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q8-1-mark---computer-networks--ðÿâïâ-easy",
@@ -1117,7 +1117,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nA switch operates at Layer 2 (Data Link) using MAC addresses for forwarding frames."]
+        }), "\r\nA switch operates at Layer 2 (Data Link) using MAC addresses for forwarding frames."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q9-1-mark---database-management-systems--ðÿâïâ-easy",
@@ -1136,7 +1136,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nPROJECT (Ã�€) removes duplicate rows by default, returning unique combinations of the specified attributes."]
+        }), "\r\nPROJECT (Ã�€) removes duplicate rows by default, returning unique combinations of the specified attributes."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q10-1-mark---theory-of-computation--ðÿâïâ-easy",
@@ -1155,7 +1155,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\n{aâÂ�¿bâÂ�¿} is generated by S → aSb | ε (CFG). Primes are not regular/CFL. {aâÂ�¿bâÂ�¿câÂ�¿} is context-sensitive. {aâÂ�¿ with n even} is regular."]
+        }), "\r\n{aâÂ�¿bâÂ�¿} is generated by S → aSb | ε (CFG). Primes are not regular/CFL. {aâÂ�¿bâÂ�¿câÂ�¿} is context-sensitive. {aâÂ�¿ with n even} is regular."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q11-1-mark---compiler-design--ðÿâïâ-easy",
@@ -1174,7 +1174,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nThe parser (syntax analyzer) builds the AST from the token stream produced by the lexical analyzer."]
+        }), "\r\nThe parser (syntax analyzer) builds the AST from the token stream produced by the lexical analyzer."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q12-1-mark---digital-logic--ðÿâïâ-easy",
@@ -1193,7 +1193,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nA half adder has 2 inputs (A, B) and produces Sum and Carry outputs."]
+        }), "\r\nA half adder has 2 inputs (A, B) and produces Sum and Carry outputs."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q13-1-mark---computer-organization--architecture--ðÿâïâ-easy",
@@ -1212,7 +1212,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nThe Program Counter (PC) contains the address of the next instruction to be fetched from memory."]
+        }), "\r\nThe Program Counter (PC) contains the address of the next instruction to be fetched from memory."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q14-1-mark---data-structures--algorithms--ðÿâïâ-medium",
@@ -1231,11 +1231,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nEach level i has 2âÂ�± nodes. Total = 2âÂ�° + 2¹ + ... + 2ʰ = 2ʰâÂ�º¹ - 1."]
+        }), "\r\nEach level i has 2âÂ�± nodes. Total = 2âÂ�° + 2¹ + ... + 2ʰ = 2ʰâÂ�º¹ - 1."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function maxNodesCompleteBinary(h: number): number {\n  return Math.pow(2, h + 1) - 1;\n}\nconsole.log(maxNodesCompleteBinary(3)); // 2^4 - 1 = 15\n"
+          children: "function maxNodesCompleteBinary(h: number): number {\r\n  return Math.pow(2, h + 1) - 1;\r\n}\r\nconsole.log(maxNodesCompleteBinary(3)); // 2^4 - 1 = 15\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1255,7 +1255,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nIn paging, logical memory is divided into fixed-size pages, and physical memory into frames of the same size."]
+        }), "\r\nIn paging, logical memory is divided into fixed-size pages, and physical memory into frames of the same size."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q16-1-mark---computer-networks--ðÿâïâ-medium",
@@ -1274,7 +1274,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nThe FIN flag is used to gracefully terminate a TCP connection. The sender signals that it has no more data."]
+        }), "\r\nThe FIN flag is used to gracefully terminate a TCP connection. The sender signals that it has no more data."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q17-1-mark---database-management-systems--ðÿâïâ-medium",
@@ -1293,7 +1293,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nThe NOT NULL constraint ensures that the column cannot store NULL values."]
+        }), "\r\nThe NOT NULL constraint ensures that the column cannot store NULL values."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q18-1-mark---theory-of-computation--ðÿâïâ-medium",
@@ -1312,7 +1312,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\n{aâÂ�¿ | n is even} is regular: it can be recognized by a DFA with 2 states. {aâÂ�¿bâÂ�¿} is CFL, primes are not regular, and {aâÂ�¿bâÂ�¿câÂ�¿} is context-sensitive."]
+        }), "\r\n{aâÂ�¿ | n is even} is regular: it can be recognized by a DFA with 2 states. {aâÂ�¿bâÂ�¿} is CFL, primes are not regular, and {aâÂ�¿bâÂ�¿câÂ�¿} is context-sensitive."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q19-1-mark---compiler-design--ðÿâïâ-medium",
@@ -1331,7 +1331,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nA + AB = A(1 + B) = A·1 = A. This is the absorption law."]
+        }), "\r\nA + AB = A(1 + B) = A·1 = A. This is the absorption law."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q20-1-mark---computer-organization--architecture--ðÿâïâ-medium",
@@ -1350,7 +1350,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nDirect mapped cache causes thrashing when multiple frequently-used blocks map to the same cache line, causing constant eviction and reload."]
+        }), "\r\nDirect mapped cache causes thrashing when multiple frequently-used blocks map to the same cache line, causing constant eviction and reload."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q21-2-marks---data-structures--algorithms--ðÿâïâ-easy",
@@ -1360,7 +1360,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "for (let i = 1; i <= n; i *= 2) {\n  for (let j = 0; j < n; j++) {\n    console.log(i, j);\n  }\n}\n"
+        children: "for (let i = 1; i <= n; i *= 2) {\r\n  for (let j = 0; j < n; j++) {\r\n    console.log(i, j);\r\n  }\r\n}\n"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["(A) O(n)", (0,jsx_runtime.jsx)(_components.br, {}), "\n(B) O(n log n)", (0,jsx_runtime.jsx)(_components.br, {}), "\n(C) O(n²)", (0,jsx_runtime.jsx)(_components.br, {}), "\n(D) O(log n)"]
@@ -1374,11 +1374,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nOuter loop: i doubles each iteration → log₂n iterations.\nInner loop: j runs n times.\nTotal = n × log₂n = O(n log n)."]
+        }), "\r\nOuter loop: i doubles each iteration → log₂n iterations.\r\nInner loop: j runs n times.\r\nTotal = n × log₂n = O(n log n)."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function complexityCount(n: number): number {\n  let count = 0;\n  for (let i = 1; i <= n; i *= 2) {\n    for (let j = 0; j < n; j++) count++;\n  }\n  return count;\n}\nconsole.log(complexityCount(16)); // 16 * 4 = 64\n"
+          children: "function complexityCount(n: number): number {\r\n  let count = 0;\r\n  for (let i = 1; i <= n; i *= 2) {\r\n    for (let j = 0; j < n; j++) count++;\r\n  }\r\n  return count;\r\n}\r\nconsole.log(complexityCount(16)); // 16 * 4 = 64\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1398,7 +1398,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nMaximum need per process: R1=2, R2=1. Total max R1 needed = 3×2=6, exactly matching available. Total max R2 needed = 3×1=3, exactly matching available. With 6 R1 and 3 R2 available, and each process needs exactly 2 R1 + 1 R2 max, the system can satisfy all processes sequentially."]
+        }), "\r\nMaximum need per process: R1=2, R2=1. Total max R1 needed = 3×2=6, exactly matching available. Total max R2 needed = 3×1=3, exactly matching available. With 6 R1 and 3 R2 available, and each process needs exactly 2 R1 + 1 R2 max, the system can satisfy all processes sequentially."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q23-2-marks---computer-networks--ðÿâïâ-medium",
@@ -1417,11 +1417,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nGo-Back-N retransmits all frames starting from the lost frame. If frame 3 is lost and frames 4, 5, 6 were already sent, all 4 frames (3,4,5,6) are retransmitted."]
+        }), "\r\nGo-Back-N retransmits all frames starting from the lost frame. If frame 3 is lost and frames 4, 5, 6 were already sent, all 4 frames (3,4,5,6) are retransmitted."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function goBackNRetransmit(lostFrame: number, windowSize: number): number {\n  return windowSize;\n}\nconsole.log(goBackNRetransmit(3, 4)); // 4\n"
+          children: "function goBackNRetransmit(lostFrame: number, windowSize: number): number {\r\n  return windowSize;\r\n}\r\nconsole.log(goBackNRetransmit(3, 4)); // 4\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1441,9 +1441,9 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nAâÂ�º = {A,B,C,D} → A is CK.\nBCâÂ�º = {B,C,D,A} → BC is CK.\nDâÂ�º = {D,A,B,C} → D is CK.\nAll three are candidate keys."]
+        }), "\r\nAâÂ�º = {A,B,C,D} → A is CK.\r\nBCâÂ�º = {B,C,D,A} → BC is CK.\r\nDâÂ�º = {D,A,B,C} → D is CK.\r\nAll three are candidate keys."]
       }), "\n", (0,jsx_runtime.jsx)(_components.mermaid, {
-        value: "graph TD\n    subgraph \"Functional Dependencies\"\n        A --> B\n        A --> C\n        BC --> D\n        D --> A\n    end\n    subgraph \"Candidate Keys\"\n        CK1[A] --> ALL[All Attributes]\n        CK2[BC] --> ALL\n        CK3[D] --> ALL\n    end"
+        value: "graph TD\r\n    subgraph \"Functional Dependencies\"\r\n        A --> B\r\n        A --> C\r\n        BC --> D\r\n        D --> A\r\n    end\r\n    subgraph \"Candidate Keys\"\r\n        CK1[A] --> ALL[All Attributes]\r\n        CK2[BC] --> ALL\r\n        CK3[D] --> ALL\r\n    end"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q25-2-marks---theory-of-computation--ðÿâïâ-medium",
@@ -1462,7 +1462,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nCFG emptiness (whether a CFG generates any strings) is decidable. The halting problem for TMs is undecidable. CFG equivalence is undecidable. The halting problem for LBAs is decidable (LBAs define CSL, membership is decidable)."]
+        }), "\r\nCFG emptiness (whether a CFG generates any strings) is decidable. The halting problem for TMs is undecidable. CFG equivalence is undecidable. The halting problem for LBAs is decidable (LBAs define CSL, membership is decidable)."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q26-2-marks---compiler-design--ðÿâïâ-medium",
@@ -1481,7 +1481,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nLALR(1) parsers merge states of LR(1) items that have the same core (same LR(0) items), reducing table size while still handling most programming language grammars."]
+        }), "\r\nLALR(1) parsers merge states of LR(1) items that have the same core (same LR(0) items), reducing table size while still handling most programming language grammars."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q27-2-marks---digital-logic--ðÿâïâ-medium",
@@ -1500,7 +1500,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nNumber of select lines = log₂(4) = 2. With 2 select lines, we can choose one of 4 inputs."]
+        }), "\r\nNumber of select lines = log₂(4) = 2. With 2 select lines, we can choose one of 4 inputs."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q28-2-marks---computer-organization--architecture--ðÿâïâ-medium",
@@ -1519,7 +1519,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nData hazards (RAW hazards) occur when an instruction requires the result of a previous instruction that hasn't completed execution yet."]
+        }), "\r\nData hazards (RAW hazards) occur when an instruction requires the result of a previous instruction that hasn't completed execution yet."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q29-2-marks---data-structures--algorithms--ðÿâïâ-medium",
@@ -1538,11 +1538,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nQuick Sort is not stable — equal elements may change relative order. Merge, Insertion, and Bubble sorts are stable."]
+        }), "\r\nQuick Sort is not stable — equal elements may change relative order. Merge, Insertion, and Bubble sorts are stable."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "// Stable vs Unstable sort example\nconst arr = [{v: 3, i: 0}, {v: 1, i: 1}, {v: 3, i: 2}];\n// QuickSort (unstable) may swap arr[2] before arr[0]\n// MergeSort (stable) preserves original index order for equal values\nconsole.log(\"QuickSort is not stable; MergeSort is stable\");\n"
+          children: "// Stable vs Unstable sort example\r\nconst arr = [{v: 3, i: 0}, {v: 1, i: 1}, {v: 3, i: 2}];\r\n// QuickSort (unstable) may swap arr[2] before arr[0]\r\n// MergeSort (stable) preserves original index order for equal values\r\nconsole.log(\"QuickSort is not stable; MergeSort is stable\");\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1562,7 +1562,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nBanker's algorithm checks for safe states by simulating resource allocation, making it a deadlock avoidance algorithm."]
+        }), "\r\nBanker's algorithm checks for safe states by simulating resource allocation, making it a deadlock avoidance algorithm."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q31-2-marks---computer-networks--ðÿâïâ-hard",
@@ -1581,11 +1581,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nShannon: C = B × log₂(1 + SNR)\nC = 4000 × log₂(1 + 1023)\nC = 4000 × log₂(1024)\nC = 4000 × 10 = 40,000 bps = 40 kbps."]
+        }), "\r\nShannon: C = B × log₂(1 + SNR)\r\nC = 4000 × log₂(1 + 1023)\r\nC = 4000 × log₂(1024)\r\nC = 4000 × 10 = 40,000 bps = 40 kbps."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function shannonCapacity(bandwidth: number, snr: number): number {\n  return bandwidth * Math.log2(1 + snr);\n}\nconsole.log(shannonCapacity(4000, 1023)); // 40000 bps = 40 kbps\n"
+          children: "function shannonCapacity(bandwidth: number, snr: number): number {\r\n  return bandwidth * Math.log2(1 + snr);\r\n}\r\nconsole.log(shannonCapacity(4000, 1023)); // 40000 bps = 40 kbps\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1605,13 +1605,13 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nConflicts: W1(A)→R2(A) implies T1 → T2.\nR1(B) is after W2(B) implies T2 → T1.\nPrecedence graph: T1→T2 and T2→T1 → cycle → not conflict serializable."]
+        }), "\r\nConflicts: W1(A)→R2(A) implies T1 → T2.\r\nR1(B) is after W2(B) implies T2 → T1.\r\nPrecedence graph: T1→T2 and T2→T1 → cycle → not conflict serializable."]
       }), "\n", (0,jsx_runtime.jsx)(_components.mermaid, {
-        value: "graph TD\n    T1 -->|W1A → R2A| T2\n    T2 -->|W2B → R1B| T1\n    style T1 fill:#f9f,stroke:#333\n    style T2 fill:#bbf,stroke:#333"
+        value: "graph TD\r\n    T1 -->|W1A → R2A| T2\r\n    T2 -->|W2B → R1B| T1\r\n    style T1 fill:#f9f,stroke:#333\r\n    style T2 fill:#bbf,stroke:#333"
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "class ScheduleConflict {\n  static checkConflicts(schedule: string[]): boolean {\n    const graph = new Map<string, string[]>();\n    for (let i = 0; i < schedule.length; i++) {\n      for (let j = i + 1; j < schedule.length; j++) {\n        const op1 = schedule[i], op2 = schedule[j];\n        if (op1[0] !== op2[0] && op1.slice(2) === op2.slice(2)) {\n          if (!graph.has(op1[0])) graph.set(op1[0], []);\n          graph.get(op1[0])!.push(op2[0]);\n        }\n      }\n    }\n    // Check for cycle\n    const visited = new Set<string>();\n    const visiting = new Set<string>();\n    function dfs(v: string): boolean {\n      if (visiting.has(v)) return true;\n      if (visited.has(v)) return false;\n      visiting.add(v);\n      for (const neighbor of (graph.get(v) || [])) {\n        if (dfs(neighbor)) return true;\n      }\n      visiting.delete(v);\n      visited.add(v);\n      return false;\n    }\n    return [...graph.keys()].some(v => dfs(v));\n  }\n}\n"
+          children: "class ScheduleConflict {\r\n  static checkConflicts(schedule: string[]): boolean {\r\n    const graph = new Map<string, string[]>();\r\n    for (let i = 0; i < schedule.length; i++) {\r\n      for (let j = i + 1; j < schedule.length; j++) {\r\n        const op1 = schedule[i], op2 = schedule[j];\r\n        if (op1[0] !== op2[0] && op1.slice(2) === op2.slice(2)) {\r\n          if (!graph.has(op1[0])) graph.set(op1[0], []);\r\n          graph.get(op1[0])!.push(op2[0]);\r\n        }\r\n      }\r\n    }\r\n    // Check for cycle\r\n    const visited = new Set<string>();\r\n    const visiting = new Set<string>();\r\n    function dfs(v: string): boolean {\r\n      if (visiting.has(v)) return true;\r\n      if (visited.has(v)) return false;\r\n      visiting.add(v);\r\n      for (const neighbor of (graph.get(v) || [])) {\r\n        if (dfs(neighbor)) return true;\r\n      }\r\n      visiting.delete(v);\r\n      visited.add(v);\r\n      return false;\r\n    }\r\n    return [...graph.keys()].some(v => dfs(v));\r\n  }\r\n}\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1631,7 +1631,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nCFLs are closed under union, concatenation, and Kleene star. They are NOT closed under intersection or complementation."]
+        }), "\r\nCFLs are closed under union, concatenation, and Kleene star. They are NOT closed under intersection or complementation."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q34-2-marks---data-structures--algorithms--ðÿâïâ-hard",
@@ -1650,11 +1650,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nIn a full binary tree (every node has 0 or 2 children): L = I + 1.\nLeaf nodes = Internal nodes + 1 = 11 + 1 = 12."]
+        }), "\r\nIn a full binary tree (every node has 0 or 2 children): L = I + 1.\r\nLeaf nodes = Internal nodes + 1 = 11 + 1 = 12."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function fullBinaryLeaves(internal: number): number {\n  return internal + 1;\n}\nconsole.log(fullBinaryLeaves(11)); // 12\n"
+          children: "function fullBinaryLeaves(internal: number): number {\r\n  return internal + 1;\r\n}\r\nconsole.log(fullBinaryLeaves(11)); // 12\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1674,11 +1674,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nSCAN (elevator) going toward 0 first:\nService 20, 10 in order: 50→20 (30), 20→10 (10).\nReverse at last request (10), not necessarily at 0: 10→60 (50), 60→85 (25), 85→90 (5), 90→120 (30), 120→150 (30), 150→180 (30).\nTotal = 30 + 10 + 50 + 25 + 5 + 30 + 30 + 30 = 210."]
+        }), "\r\nSCAN (elevator) going toward 0 first:\r\nService 20, 10 in order: 50→20 (30), 20→10 (10).\r\nReverse at last request (10), not necessarily at 0: 10→60 (50), 60→85 (25), 85→90 (5), 90→120 (30), 120→150 (30), 150→180 (30).\r\nTotal = 30 + 10 + 50 + 25 + 5 + 30 + 30 + 30 = 210."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function scanHeadMovement(head: number, requests: number[], direction: 'up' | 'down'): number {\n  const sorted = [...requests].sort((a, b) => a - b);\n  let pos = head, total = 0;\n  const dir = direction === 'down' ? -1 : 1;\n  const idx = sorted.findIndex(r => dir === 1 ? r >= head : r <= head);\n  // Simplified: trace path\n  if (direction === 'down') {\n    const below = sorted.filter(r => r <= head).sort((a, b) => b - a);\n    const above = sorted.filter(r => r >= head).sort((a, b) => a - b);\n    for (const r of below) { total += Math.abs(pos - r); pos = r; }\n    if (below.length) { total += Math.abs(pos - Math.min(...below)); pos = Math.min(...below); }\n    else { total += pos; pos = 0; }\n    for (const r of above) { total += Math.abs(pos - r); pos = r; }\n  }\n  return total;\n}\nconsole.log(scanHeadMovement(50, [20,10,60,85,90,120,150,180], 'down')); // 210\n"
+          children: "function scanHeadMovement(head: number, requests: number[], direction: 'up' | 'down'): number {\r\n  const sorted = [...requests].sort((a, b) => a - b);\r\n  let pos = head, total = 0;\r\n  const dir = direction === 'down' ? -1 : 1;\r\n  const idx = sorted.findIndex(r => dir === 1 ? r >= head : r <= head);\r\n  // Simplified: trace path\r\n  if (direction === 'down') {\r\n    const below = sorted.filter(r => r <= head).sort((a, b) => b - a);\r\n    const above = sorted.filter(r => r >= head).sort((a, b) => a - b);\r\n    for (const r of below) { total += Math.abs(pos - r); pos = r; }\r\n    if (below.length) { total += Math.abs(pos - Math.min(...below)); pos = Math.min(...below); }\r\n    else { total += pos; pos = 0; }\r\n    for (const r of above) { total += Math.abs(pos - r); pos = r; }\r\n  }\r\n  return total;\r\n}\r\nconsole.log(scanHeadMovement(50, [20,10,60,85,90,120,150,180], 'down')); // 210\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1698,11 +1698,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nIf λ is an eigenvalue of A, then λ³ is an eigenvalue of A³.\nEigenvalues of A³: 1³ = 1, (-1)³ = -1, 2³ = 8.\ndet(A³) = product of eigenvalues = 1 × (-1) × 8 = -8."]
+        }), "\r\nIf λ is an eigenvalue of A, then λ³ is an eigenvalue of A³.\r\nEigenvalues of A³: 1³ = 1, (-1)³ = -1, 2³ = 8.\r\ndet(A³) = product of eigenvalues = 1 × (-1) × 8 = -8."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function detOfCube(eigenvalues: number[]): number {\n  return eigenvalues.reduce((prod, λ) => prod * Math.pow(λ, 3), 1);\n}\nconsole.log(detOfCube([1, -1, 2])); // -8\n"
+          children: "function detOfCube(eigenvalues: number[]): number {\r\n  return eigenvalues.reduce((prod, λ) => prod * Math.pow(λ, 3), 1);\r\n}\r\nconsole.log(detOfCube([1, -1, 2])); // -8\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1722,11 +1722,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nNumbers divisible by 2: floor(1000/2) = 500.\nNumbers divisible by 5: floor(1000/5) = 200.\nNumbers divisible by both (10): floor(1000/10) = 100.\nBy inclusion-exclusion: 500 + 200 - 100 = 600."]
+        }), "\r\nNumbers divisible by 2: floor(1000/2) = 500.\r\nNumbers divisible by 5: floor(1000/5) = 200.\r\nNumbers divisible by both (10): floor(1000/10) = 100.\r\nBy inclusion-exclusion: 500 + 200 - 100 = 600."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function divisibleBy2or5(limit: number): number {\n  const by2 = Math.floor(limit / 2);\n  const by5 = Math.floor(limit / 5);\n  const by10 = Math.floor(limit / 10);\n  return by2 + by5 - by10;\n}\nconsole.log(divisibleBy2or5(1000)); // 600\n"
+          children: "function divisibleBy2or5(limit: number): number {\r\n  const by2 = Math.floor(limit / 2);\r\n  const by5 = Math.floor(limit / 5);\r\n  const by10 = Math.floor(limit / 10);\r\n  return by2 + by5 - by10;\r\n}\r\nconsole.log(divisibleBy2or5(1000)); // 600\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1746,11 +1746,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nFor a 2×2 matrix: trace = λâ‚Â� + λ₂ = 5, determinant = λâ‚Â�·λ₂ = 6.\nSolving: λâ‚Â�, λ₂ are roots of λ² - 5λ + 6 = 0 → (λ-2)(λ-3) = 0 → λ = 2, 3."]
+        }), "\r\nFor a 2×2 matrix: trace = λâ‚Â� + λ₂ = 5, determinant = λâ‚Â�·λ₂ = 6.\r\nSolving: λâ‚Â�, λ₂ are roots of λ² - 5λ + 6 = 0 → (λ-2)(λ-3) = 0 → λ = 2, 3."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function eigenvalues(trace: number, det: number): number[] {\n  const discriminant = trace * trace - 4 * det;\n  const sqrtD = Math.sqrt(discriminant);\n  return [(trace + sqrtD) / 2, (trace - sqrtD) / 2];\n}\nconsole.log(eigenvalues(5, 6)); // [3, 2]\n"
+          children: "function eigenvalues(trace: number, det: number): number[] {\r\n  const discriminant = trace * trace - 4 * det;\r\n  const sqrtD = Math.sqrt(discriminant);\r\n  return [(trace + sqrtD) / 2, (trace - sqrtD) / 2];\r\n}\r\nconsole.log(eigenvalues(5, 6)); // [3, 2]\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1770,11 +1770,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nP(X=5) = C(10,5) × (0.5)âÂ�µ × (0.5)âÂ�µ = 252 × (1/2)¹âÂ�° = 252/1024 = 63/256."]
+        }), "\r\nP(X=5) = C(10,5) × (0.5)âÂ�µ × (0.5)âÂ�µ = 252 × (1/2)¹âÂ�° = 252/1024 = 63/256."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function binomialProb(n: number, k: number, p: number): number {\n  const comb = (n: number, k: number): number => {\n    let res = 1;\n    for (let i = 1; i <= k; i++) res = res * (n - i + 1) / i;\n    return res;\n  };\n  return comb(n, k) * Math.pow(p, k) * Math.pow(1 - p, n - k);\n}\nconsole.log(binomialProb(10, 5, 0.5)); // 0.24609375 = 63/256\n"
+          children: "function binomialProb(n: number, k: number, p: number): number {\r\n  const comb = (n: number, k: number): number => {\r\n    let res = 1;\r\n    for (let i = 1; i <= k; i++) res = res * (n - i + 1) / i;\r\n    return res;\r\n  };\r\n  return comb(n, k) * Math.pow(p, k) * Math.pow(1 - p, n - k);\r\n}\r\nconsole.log(binomialProb(10, 5, 0.5)); // 0.24609375 = 63/256\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1794,11 +1794,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nUsing Master Theorem: a = 2, b = 2, f(n) = n.\nlog_b(a) = log₂(2) = 1. f(n) = n¹ = n^{log_b(a)}. Case 2: T(n) = Θ(n log n)."]
+        }), "\r\nUsing Master Theorem: a = 2, b = 2, f(n) = n.\r\nlog_b(a) = log₂(2) = 1. f(n) = n¹ = n^{log_b(a)}. Case 2: T(n) = Θ(n log n)."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function t(n: number): number {\n  if (n <= 1) return 1;\n  return 2 * t(n / 2) + n;\n}\n// t(16) = 2*t(8) + 16 = 2*(2*t(4)+8) + 16 = ... ≈ n log₂ n\nconsole.log(t(16)); // demonstrates O(n log n)\n"
+          children: "function t(n: number): number {\r\n  if (n <= 1) return 1;\r\n  return 2 * t(n / 2) + n;\r\n}\r\n// t(16) = 2*t(8) + 16 = 2*(2*t(4)+8) + 16 = ... ≈ n log₂ n\r\nconsole.log(t(16)); // demonstrates O(n log n)\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1818,11 +1818,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nA complete binary tree of height h has all levels full up to level h-1, and level h is filled left to right.\nLevels 0,1,2 full: 1+2+4 = 7 nodes. At least 1 node in level 3 → 8 nodes minimum."]
+        }), "\r\nA complete binary tree of height h has all levels full up to level h-1, and level h is filled left to right.\r\nLevels 0,1,2 full: 1+2+4 = 7 nodes. At least 1 node in level 3 → 8 nodes minimum."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function minNodesCompleteTree(h: number): number {\n  return Math.pow(2, h);\n}\nconsole.log(minNodesCompleteTree(3)); // 8\n"
+          children: "function minNodesCompleteTree(h: number): number {\r\n  return Math.pow(2, h);\r\n}\r\nconsole.log(minNodesCompleteTree(3)); // 8\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1850,9 +1850,9 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nADD writes to R1 in WB (stage 5). SUB reads R1 in ID (stage 2 of SUB). With forwarding, we need 2 stalls between ADD and SUB if no forwarding is available. With full forwarding, 0 stalls needed."]
+        }), "\r\nADD writes to R1 in WB (stage 5). SUB reads R1 in ID (stage 2 of SUB). With forwarding, we need 2 stalls between ADD and SUB if no forwarding is available. With full forwarding, 0 stalls needed."]
       }), "\n", (0,jsx_runtime.jsx)(_components.mermaid, {
-        value: "gantt\n    title Pipeline Hazard Diagram\n    dateFormat  X\n    axisFormat %s\n    section ADD R1\n    IF : a1, 0, 1s\n    ID : a2, 1s, 1s\n    EX : a3, 2s, 1s\n    MEM : a4, 3s, 1s\n    WB : a5, 4s, 1s\n    section SUB R4\n    IF : b1, 2s, 1s\n    ID : b2, 3s, 1s\n    EX : b3, 4s, 1s\n    MEM : b4, 5s, 1s\n    WB : b5, 6s, 1s"
+        value: "gantt\r\n    title Pipeline Hazard Diagram\r\n    dateFormat  YYYY-MM-DD\r\n    axisFormat  %d\r\n    section ADD R1\r\n    IF  : a1, 2026-01-01, 1d\r\n    ID  : a2, 2026-01-02, 1d\r\n    EX  : a3, 2026-01-03, 1d\r\n    MEM : a4, 2026-01-04, 1d\r\n    WB  : a5, 2026-01-05, 1d\r\n    section SUB R4\r\n    IF  : b1, 2026-01-03, 1d\r\n    ID  : b2, 2026-01-04, 1d\r\n    EX  : b3, 2026-01-05, 1d\r\n    MEM : b4, 2026-01-06, 1d\r\n    WB  : b5, 2026-01-07, 1d"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q43-2-marks---computer-networks--ðÿâïâ-hard",
@@ -1871,11 +1871,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nMinimum frame size = 2 × T_prop × Data rate\n= 2 × 25 × 10âÂ�»âÂ�¶ × 100 × 10âÂ�¶\n= 2 × 25 × 100 = 5000 bits\n= 5000/8 = 625 bytes."]
+        }), "\r\nMinimum frame size = 2 × T_prop × Data rate\r\n= 2 × 25 × 10âÂ�»âÂ�¶ × 100 × 10âÂ�¶\r\n= 2 × 25 × 100 = 5000 bits\r\n= 5000/8 = 625 bytes."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function minFrameSize(propDelayUs: number, dataRateMbps: number): number {\n  const bits = 2 * propDelayUs * 1e-6 * dataRateMbps * 1e6;\n  return bits / 8;\n}\nconsole.log(minFrameSize(25, 100)); // 625 bytes\n"
+          children: "function minFrameSize(propDelayUs: number, dataRateMbps: number): number {\r\n  const bits = 2 * propDelayUs * 1e-6 * dataRateMbps * 1e6;\r\n  return bits / 8;\r\n}\r\nconsole.log(minFrameSize(25, 100)); // 625 bytes\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1895,7 +1895,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\n2NF requires that every non-prime attribute is fully functionally dependent on every candidate key (no partial dependency). 3NF requires no transitive dependencies. BCNF requires every determinant to be a candidate key."]
+        }), "\r\n2NF requires that every non-prime attribute is fully functionally dependent on every candidate key (no partial dependency). 3NF requires no transitive dependencies. BCNF requires every determinant to be a candidate key."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q45-2-marks---data-structures--algorithms--ðÿâïâ-hard",
@@ -1914,11 +1914,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nIn worst case (already sorted or reverse sorted with bad pivot), partition creates one subproblem of size n-1 and the other of size 0. So T(n) = T(n-1) + O(n) which solves to O(n²)."]
+        }), "\r\nIn worst case (already sorted or reverse sorted with bad pivot), partition creates one subproblem of size n-1 and the other of size 0. So T(n) = T(n-1) + O(n) which solves to O(n²)."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function quicksortWorstCase(n: number): number {\n  if (n <= 1) return 0;\n  return quicksortWorstCase(n - 1) + n; // O(n²)\n}\nconsole.log(quicksortWorstCase(10)); // 55 steps\n"
+          children: "function quicksortWorstCase(n: number): number {\r\n  if (n <= 1) return 0;\r\n  return quicksortWorstCase(n - 1) + n; // O(n²)\r\n}\r\nconsole.log(quicksortWorstCase(10)); // 55 steps\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -1938,7 +1938,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nPage size = 4 KB = 2¹² bytes → offset = 12 bits.\nNumber of pages = 2³² / 2¹² = 2²âÂ�° pages.\nPage table size = 2²âÂ�° × 4 bytes = 4 MB.\nNumber of pages for page table = 4 MB / 4 KB = 1024 pages.\nWait, let me recalculate. 2²âÂ�° × 4 = 4,194,304 bytes = 4 MB. 4 MB / 4 KB = 1024 pages."]
+        }), "\r\nPage size = 4 KB = 2¹² bytes → offset = 12 bits.\r\nNumber of pages = 2³² / 2¹² = 2²âÂ�° pages.\r\nPage table size = 2²âÂ�° × 4 bytes = 4 MB.\r\nNumber of pages for page table = 4 MB / 4 KB = 1024 pages.\r\nWait, let me recalculate. 2²âÂ�° × 4 = 4,194,304 bytes = 4 MB. 4 MB / 4 KB = 1024 pages."]
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: "Hmm, but that gives 1024. Let me check what the actual answer should be based on typical GATE questions. The page table has 2²âÂ�° entries × 4 bytes = 4 MB. Each page is 4 KB. So 4 MB / 4 KB = 1024 pages."
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
@@ -1946,7 +1946,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: "Actually, the answer would be 1024. But let me re-check the options. Options include 1024, 2048, 4096, 8192. So 1024 = (A). But wait, this is already in the question with options. Let me make sure my calculation is correct."
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "VA: 32 bits. Page size: 4KB = 2^12. So VPN bits = 32 - 12 = 20 bits. Number of pages = 2^20.\nPage table size = 2^20 * 4 bytes = 4MB.\nNumber of page table pages = 4MB / 4KB = 1024."
+        children: "VA: 32 bits. Page size: 4KB = 2^12. So VPN bits = 32 - 12 = 20 bits. Number of pages = 2^20.\r\nPage table size = 2^20 * 4 bytes = 4MB.\r\nNumber of page table pages = 4MB / 4KB = 1024."
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: "So answer is 1024 = (A). But the options are A:1024, B:2048, C:4096, D:8192."
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
@@ -1973,7 +1973,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nA shift-reduce parser identifies handles (substrings matching production RHS) and reduces them. The sequence of handles forms a rightmost derivation in reverse."]
+        }), "\r\nA shift-reduce parser identifies handles (substrings matching production RHS) and reduces them. The sequence of handles forms a rightmost derivation in reverse."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q48-2-marks---digital-logic--ðÿâïâ-medium",
@@ -1992,17 +1992,17 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nK-map for F(A,B,C) = Σm(0,2,4,6):"]
+        }), "\r\nK-map for F(A,B,C) = Σm(0,2,4,6):"]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
-          children: "     AB\n     00 01 11 10\nC 0  1  1  1  1  → C' covers all\n  1  0  0  0  0\n"
+          children: "     AB\r\n     00 01 11 10\r\nC 0  1  1  1  1  → C' covers all\r\n  1  0  0  0  0\n"
         })
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: "All minterms have C = 0. So F = C'."
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function evaluateF(a: number, b: number, c: number): number {\n  return c === 0 ? 1 : 0; // F = C'\n}\n// Check: m0(000)=1, m2(010)=1, m4(100)=1, m6(110)=1\nconsole.log(evaluateF(0,0,0), evaluateF(0,1,0)); // 1, 1\n"
+          children: "function evaluateF(a: number, b: number, c: number): number {\r\n  return c === 0 ? 1 : 0; // F = C'\r\n}\r\n// Check: m0(000)=1, m2(010)=1, m4(100)=1, m6(110)=1\r\nconsole.log(evaluateF(0,0,0), evaluateF(0,1,0)); // 1, 1\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -2022,11 +2022,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\n-13.75: Sign = 1 (negative).\n13 = 1101₂, 0.75 = 0.11₂. So 13.75 = 1101.11₂ = 1.10111 × 2³.\nExponent = 3 + 127 = 130 = 10000010₂.\nMantissa = 101110...0 (23 bits, drop leading 1).\nBinary: 1 | 10000010 | 10111000000000000000000\n= 1100 0001 0101 1100 0000 0000 0000 0000\n= 0xC15C0000."]
+        }), "\r\n-13.75: Sign = 1 (negative).\r\n13 = 1101₂, 0.75 = 0.11₂. So 13.75 = 1101.11₂ = 1.10111 × 2³.\r\nExponent = 3 + 127 = 130 = 10000010₂.\r\nMantissa = 101110...0 (23 bits, drop leading 1).\r\nBinary: 1 | 10000010 | 10111000000000000000000\r\n= 1100 0001 0101 1100 0000 0000 0000 0000\r\n= 0xC15C0000."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function floatToHex(value: number): string {\n  const buf = new ArrayBuffer(4);\n  const view = new DataView(buf);\n  view.setFloat32(0, value, false); // big-endian\n  return '0x' + view.getUint32(0).toString(16).toUpperCase();\n}\nconsole.log(floatToHex(-13.75)); // 0xC15C0000\n"
+          children: "function floatToHex(value: number): string {\r\n  const buf = new ArrayBuffer(4);\r\n  const view = new DataView(buf);\r\n  view.setFloat32(0, value, false); // big-endian\r\n  return '0x' + view.getUint32(0).toString(16).toUpperCase();\r\n}\r\nconsole.log(floatToHex(-13.75)); // 0xC15C0000\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -2046,11 +2046,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nIn an undirected graph, a cycle exists iff DFS finds a back edge (an edge connecting a vertex to an ancestor in the DFS tree). In undirected graphs, only tree edges and back edges exist."]
+        }), "\r\nIn an undirected graph, a cycle exists iff DFS finds a back edge (an edge connecting a vertex to an ancestor in the DFS tree). In undirected graphs, only tree edges and back edges exist."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "class GraphCycleDetector {\n  private adj: Map<number, number[]>;\n  constructor() { this.adj = new Map(); }\n  addEdge(u: number, v: number) {\n    if (!this.adj.has(u)) this.adj.set(u, []);\n    if (!this.adj.has(v)) this.adj.set(v, []);\n    this.adj.get(u)!.push(v);\n    this.adj.get(v)!.push(u);\n  }\n  hasCycle(): boolean {\n    const visited = new Set<number>();\n    const parent = new Map<number, number>();\n    function dfs(g: Map<number, number[]>, v: number, p: number): boolean {\n      visited.add(v);\n      parent.set(v, p);\n      for (const neighbor of g.get(v) || []) {\n        if (!visited.has(neighbor)) { if (dfs(g, neighbor, v)) return true; }\n        else if (neighbor !== p) return true; // back edge → cycle\n      }\n      return false;\n    }\n    for (const v of this.adj.keys()) {\n      if (!visited.has(v) && dfs(this.adj, v, -1)) return true;\n    }\n    return false;\n  }\n}\nconst g = new GraphCycleDetector();\ng.addEdge(0, 1); g.addEdge(1, 2); g.addEdge(2, 0);\nconsole.log(g.hasCycle()); // true\n"
+          children: "class GraphCycleDetector {\r\n  private adj: Map<number, number[]>;\r\n  constructor() { this.adj = new Map(); }\r\n  addEdge(u: number, v: number) {\r\n    if (!this.adj.has(u)) this.adj.set(u, []);\r\n    if (!this.adj.has(v)) this.adj.set(v, []);\r\n    this.adj.get(u)!.push(v);\r\n    this.adj.get(v)!.push(u);\r\n  }\r\n  hasCycle(): boolean {\r\n    const visited = new Set<number>();\r\n    const parent = new Map<number, number>();\r\n    function dfs(g: Map<number, number[]>, v: number, p: number): boolean {\r\n      visited.add(v);\r\n      parent.set(v, p);\r\n      for (const neighbor of g.get(v) || []) {\r\n        if (!visited.has(neighbor)) { if (dfs(g, neighbor, v)) return true; }\r\n        else if (neighbor !== p) return true; // back edge → cycle\r\n      }\r\n      return false;\r\n    }\r\n    for (const v of this.adj.keys()) {\r\n      if (!visited.has(v) && dfs(this.adj, v, -1)) return true;\r\n    }\r\n    return false;\r\n  }\r\n}\r\nconst g = new GraphCycleDetector();\r\ng.addEdge(0, 1); g.addEdge(1, 2); g.addEdge(2, 0);\r\nconsole.log(g.hasCycle()); // true\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -2070,11 +2070,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nFIFO with 3 frames:\n1 → miss [1]\n2 → miss [1,2]\n3 → miss [1,2,3]\n4 → miss [4,2,3] (replace 1)\n1 → miss [4,1,3] (replace 2)\n2 → miss [4,1,2] (replace 3)\n5 → miss [5,1,2] (replace 4)\n1 → hit [5,1,2]\n2 → hit [5,1,2]\n3 → miss [5,3,2] (replace 1)\n4 → miss [5,3,4] (replace 2)\n5 → hit [5,3,4]\nTotal = 9 page faults."]
+        }), "\r\nFIFO with 3 frames:\r\n1 → miss [1]\r\n2 → miss [1,2]\r\n3 → miss [1,2,3]\r\n4 → miss [4,2,3] (replace 1)\r\n1 → miss [4,1,3] (replace 2)\r\n2 → miss [4,1,2] (replace 3)\r\n5 → miss [5,1,2] (replace 4)\r\n1 → hit [5,1,2]\r\n2 → hit [5,1,2]\r\n3 → miss [5,3,2] (replace 1)\r\n4 → miss [5,3,4] (replace 2)\r\n5 → hit [5,3,4]\r\nTotal = 9 page faults."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function fifoPageFaults(ref: number[], frames: number): number {\n  const memory: number[] = [];\n  let faults = 0;\n  for (const page of ref) {\n    if (!memory.includes(page)) {\n      if (memory.length >= frames) memory.shift();\n      memory.push(page);\n      faults++;\n    }\n  }\n  return faults;\n}\nconsole.log(fifoPageFaults([1,2,3,4,1,2,5,1,2,3,4,5], 3)); // 9\n"
+          children: "function fifoPageFaults(ref: number[], frames: number): number {\r\n  const memory: number[] = [];\r\n  let faults = 0;\r\n  for (const page of ref) {\r\n    if (!memory.includes(page)) {\r\n      if (memory.length >= frames) memory.shift();\r\n      memory.push(page);\r\n      faults++;\r\n    }\r\n  }\r\n  return faults;\r\n}\r\nconsole.log(fifoPageFaults([1,2,3,4,1,2,5,1,2,3,4,5], 3)); // 9\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -2094,11 +2094,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nSubnet mask 255.255.255.128 = 25 bits.\nIP: 192.168.10.130 = 11000000.10101000.00001010.10000010\nMask: 11111111.11111111.11111111.10000000\nNetwork = IP AND Mask = 11000000.10101000.00001010.10000000 = 192.168.10.128"]
+        }), "\r\nSubnet mask 255.255.255.128 = 25 bits.\r\nIP: 192.168.10.130 = 11000000.10101000.00001010.10000010\r\nMask: 11111111.11111111.11111111.10000000\r\nNetwork = IP AND Mask = 11000000.10101000.00001010.10000000 = 192.168.10.128"]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function networkAddress(ip: string, mask: string): string {\n  const ipParts = ip.split('.').map(Number);\n  const maskParts = mask.split('.').map(Number);\n  const net = ipParts.map((p, i) => p & maskParts[i]);\n  return net.join('.');\n}\nconsole.log(networkAddress('192.168.10.130', '255.255.255.128')); // 192.168.10.128\n"
+          children: "function networkAddress(ip: string, mask: string): string {\r\n  const ipParts = ip.split('.').map(Number);\r\n  const maskParts = mask.split('.').map(Number);\r\n  const net = ipParts.map((p, i) => p & maskParts[i]);\r\n  return net.join('.');\r\n}\r\nconsole.log(networkAddress('192.168.10.130', '255.255.255.128')); // 192.168.10.128\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -2118,7 +2118,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nCandidate keys must be unique, minimal, and can determine all attributes. They CANNOT contain NULL values (entity integrity constraint)."]
+        }), "\r\nCandidate keys must be unique, minimal, and can determine all attributes. They CANNOT contain NULL values (entity integrity constraint)."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q54-2-marks---theory-of-computation--ðÿâïâ-hard",
@@ -2137,7 +2137,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nIf the start state is also the only accepting state, then ε is accepted. For a DFA where the start/accepting state has transitions for both 0 and 1, and no other accepting states exist, the language could be just {ε} if transitions go to non-accepting states. But with the condition that it's the ONLY accepting state, the accepted strings are those that return to start state. The only guaranteed language is {ε}. But among the options, \"all strings\" is the common GATE answer pattern when start = accept state with complete transitions returning to start."]
+        }), "\r\nIf the start state is also the only accepting state, then ε is accepted. For a DFA where the start/accepting state has transitions for both 0 and 1, and no other accepting states exist, the language could be just {ε} if transitions go to non-accepting states. But with the condition that it's the ONLY accepting state, the accepted strings are those that return to start state. The only guaranteed language is {ε}. But among the options, \"all strings\" is the common GATE answer pattern when start = accept state with complete transitions returning to start."]
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: "Actually, the most common interpretation: the DFA accepts ε. If from start state, on 0 it goes to other states but eventually returns, and on 1 similarly... the language depends on the transitions. Without specifying transitions, if start = accept, ε is always accepted. The question is ambiguous but typically in GATE, option (C) is the correct interpretation if all transitions return to start."
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
@@ -2160,11 +2160,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nDisjoint-set (union-find) is implemented as a forest of trees with parent pointers, using path compression and union by rank to achieve nearly O(1) amortized time per operation."]
+        }), "\r\nDisjoint-set (union-find) is implemented as a forest of trees with parent pointers, using path compression and union by rank to achieve nearly O(1) amortized time per operation."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "class DisjointSet {\n  parent: number[];\n  rank: number[];\n  constructor(n: number) {\n    this.parent = Array.from({length: n}, (_, i) => i);\n    this.rank = new Array(n).fill(0);\n  }\n  find(x: number): number { // with path compression\n    if (this.parent[x] !== x) this.parent[x] = this.find(this.parent[x]);\n    return this.parent[x];\n  }\n  union(x: number, y: number): void { // with union by rank\n    const px = this.find(x), py = this.find(y);\n    if (px === py) return;\n    if (this.rank[px] < this.rank[py]) this.parent[px] = py;\n    else if (this.rank[px] > this.rank[py]) this.parent[py] = px;\n    else { this.parent[py] = px; this.rank[px]++; }\n  }\n}\nconst ds = new DisjointSet(10);\nds.union(0, 1); ds.union(2, 3); ds.union(1, 2);\nconsole.log(ds.find(0) === ds.find(3)); // true (connected)\n"
+          children: "class DisjointSet {\r\n  parent: number[];\r\n  rank: number[];\r\n  constructor(n: number) {\r\n    this.parent = Array.from({length: n}, (_, i) => i);\r\n    this.rank = new Array(n).fill(0);\r\n  }\r\n  find(x: number): number { // with path compression\r\n    if (this.parent[x] !== x) this.parent[x] = this.find(this.parent[x]);\r\n    return this.parent[x];\r\n  }\r\n  union(x: number, y: number): void { // with union by rank\r\n    const px = this.find(x), py = this.find(y);\r\n    if (px === py) return;\r\n    if (this.rank[px] < this.rank[py]) this.parent[px] = py;\r\n    else if (this.rank[px] > this.rank[py]) this.parent[py] = px;\r\n    else { this.parent[py] = px; this.rank[px]++; }\r\n  }\r\n}\r\nconst ds = new DisjointSet(10);\r\nds.union(0, 1); ds.union(2, 3); ds.union(1, 2);\r\nconsole.log(ds.find(0) === ds.find(3)); // true (connected)\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -2184,7 +2184,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nToken stream is produced by the lexical analyzer before syntax analysis. TAC, SSA form, and postfix notation are all intermediate representations used after parsing for optimization and code generation."]
+        }), "\r\nToken stream is produced by the lexical analyzer before syntax analysis. TAC, SSA form, and postfix notation are all intermediate representations used after parsing for optimization and code generation."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q57-2-marks---digital-logic--ðÿâïâ-hard",
@@ -2203,7 +2203,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\n16:1 MUX needs 16 input lines and 4 select lines.\nUsing 4:1 MUXes (2 select lines each):\nFirst level: 4 MUXes to handle 16 inputs → 4 outputs.\nSecond level: 1 MUX to select among the 4 outputs.\nTotal = 4 + 1 = 5 MUXes."]
+        }), "\r\n16:1 MUX needs 16 input lines and 4 select lines.\r\nUsing 4:1 MUXes (2 select lines each):\r\nFirst level: 4 MUXes to handle 16 inputs → 4 outputs.\r\nSecond level: 1 MUX to select among the 4 outputs.\r\nTotal = 4 + 1 = 5 MUXes."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q58-2-marks---computer-organization--architecture--ðÿâïâ-hard",
@@ -2222,11 +2222,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nTotal cache = 16 KB = 16384 bytes.\nBlock size = 32 bytes.\nNumber of blocks = 16384 / 32 = 512 blocks.\n4-way set associative → number of sets = 512 / 4 = 128."]
+        }), "\r\nTotal cache = 16 KB = 16384 bytes.\r\nBlock size = 32 bytes.\r\nNumber of blocks = 16384 / 32 = 512 blocks.\r\n4-way set associative → number of sets = 512 / 4 = 128."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function cacheSets(totalBytes: number, blockSize: number, ways: number): number {\n  const blocks = totalBytes / blockSize;\n  return blocks / ways;\n}\nconsole.log(cacheSets(16 * 1024, 32, 4)); // 128\n"
+          children: "function cacheSets(totalBytes: number, blockSize: number, ways: number): number {\r\n  const blocks = totalBytes / blockSize;\r\n  return blocks / ways;\r\n}\r\nconsole.log(cacheSets(16 * 1024, 32, 4)); // 128\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -2246,11 +2246,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\n(x + 1)âÂ�· = Σ C(7, k) x^k 1^{7-k}.\nCoefficient of x³ = C(7, 3) = 7!/(3!4!) = 35."]
+        }), "\r\n(x + 1)âÂ�· = Σ C(7, k) x^k 1^{7-k}.\r\nCoefficient of x³ = C(7, 3) = 7!/(3!4!) = 35."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function nCr(n: number, r: number): number {\n  if (r > n - r) r = n - r;\n  let res = 1;\n  for (let i = 1; i <= r; i++) res = res * (n - i + 1) / i;\n  return res;\n}\nconsole.log(nCr(7, 3)); // 35\n"
+          children: "function nCr(n: number, r: number): number {\r\n  if (r > n - r) r = n - r;\r\n  let res = 1;\r\n  for (let i = 1; i <= r; i++) res = res * (n - i + 1) / i;\r\n  return res;\r\n}\r\nconsole.log(nCr(7, 3)); // 35\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -2270,13 +2270,13 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nT(n) = T(n-1) + g(n).\nIf g(n) = O(n): T(n) = O(1) + O(2) + ... + O(n) = O(n²).\nIf g(n) = O(1): T(n) = O(n).\nIf g(n) = O(log n): T(n) = O(n log n)."]
+        }), "\r\nT(n) = T(n-1) + g(n).\r\nIf g(n) = O(n): T(n) = O(1) + O(2) + ... + O(n) = O(n²).\r\nIf g(n) = O(1): T(n) = O(n).\r\nIf g(n) = O(log n): T(n) = O(n log n)."]
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "Option (A) is correct but incomplete - O(n) if g(n)=O(1) is true.\nOption (B) is correct - if g(n)=O(n), sum is O(n²).\nThe question likely asks which statement is correct, and (B) is the intended answer."
+        children: "Option (A) is correct but incomplete - O(n) if g(n)=O(1) is true.\r\nOption (B) is correct - if g(n)=O(n), sum is O(n²).\r\nThe question likely asks which statement is correct, and (B) is the intended answer."
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function recurrenceSum(n: number, gType: 'const' | 'linear' | 'log'): number {\n  let sum = 0;\n  for (let i = 1; i <= n; i++) {\n    if (gType === 'const') sum += 1;\n    else if (gType === 'linear') sum += i;\n    else sum += Math.log2(i);\n  }\n  return sum;\n}\nconsole.log(recurrenceSum(10, 'linear')); // 55 = O(n²)\n"
+          children: "function recurrenceSum(n: number, gType: 'const' | 'linear' | 'log'): number {\r\n  let sum = 0;\r\n  for (let i = 1; i <= n; i++) {\r\n    if (gType === 'const') sum += 1;\r\n    else if (gType === 'linear') sum += i;\r\n    else sum += Math.log2(i);\r\n  }\r\n  return sum;\r\n}\r\nconsole.log(recurrenceSum(10, 'linear')); // 55 = O(n²)\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -2296,11 +2296,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nShortest Job First (SJF) is provably optimal for minimizing average waiting time. However, it suffers from starvation for long processes."]
+        }), "\r\nShortest Job First (SJF) is provably optimal for minimizing average waiting time. However, it suffers from starvation for long processes."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function sjfWaitingTime(burstTimes: number[]): number {\n  const sorted = [...burstTimes].sort((a, b) => a - b);\n  let waitingTime = 0, total = 0;\n  for (let i = 0; i < sorted.length - 1; i++) {\n    total += sorted[i];\n    waitingTime += total;\n  }\n  return waitingTime / sorted.length;\n}\nconsole.log(sjfWaitingTime([6, 8, 7, 3])); // Average waiting time\n"
+          children: "function sjfWaitingTime(burstTimes: number[]): number {\r\n  const sorted = [...burstTimes].sort((a, b) => a - b);\r\n  let waitingTime = 0, total = 0;\r\n  for (let i = 0; i < sorted.length - 1; i++) {\r\n    total += sorted[i];\r\n    waitingTime += total;\r\n  }\r\n  return waitingTime / sorted.length;\r\n}\r\nconsole.log(sjfWaitingTime([6, 8, 7, 3])); // Average waiting time\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -2320,9 +2320,9 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nCongestion Avoidance phase: cwnd increases by 1 MSS per RTT (linear growth, additive increase). Slow Start doubles cwnd per RTT (exponential). Fast Retransmit uses duplicate ACKs to detect loss."]
+        }), "\r\nCongestion Avoidance phase: cwnd increases by 1 MSS per RTT (linear growth, additive increase). Slow Start doubles cwnd per RTT (exponential). Fast Retransmit uses duplicate ACKs to detect loss."]
       }), "\n", (0,jsx_runtime.jsx)(_components.mermaid, {
-        value: "graph LR\n    subgraph \"TCP Congestion Control\"\n        SS[Slow Start<br/>exp growth] -->|ssthresh reached| CA[Congestion Avoidance<br/>linear growth]\n        CA -->|triple dup ACK| FR[Fast Retransmit + Recovery]\n        FR --> CA\n    end"
+        value: "graph LR\r\n    subgraph \"TCP Congestion Control\"\r\n        SS[Slow Start<br/>exp growth] -->|ssthresh reached| CA[Congestion Avoidance<br/>linear growth]\r\n        CA -->|triple dup ACK| FR[Fast Retransmit + Recovery]\r\n        FR --> CA\r\n    end"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q63-2-marks---database-management-systems--ðÿâïâ-hard",
@@ -2341,11 +2341,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nFor a B+ tree of order m (max children = m): each internal node (except root) must have at least ⌈m/2⌉ children. Minimum children = ⌈5/2⌉ = 3. Minimum keys = children - 1 = 2."]
+        }), "\r\nFor a B+ tree of order m (max children = m): each internal node (except root) must have at least ⌈m/2⌉ children. Minimum children = ⌈5/2⌉ = 3. Minimum keys = children - 1 = 2."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "function bplusMinKeys(order: number): number {\n  const minChildren = Math.ceil(order / 2);\n  return minChildren - 1;\n}\nconsole.log(bplusMinKeys(5)); // 2\n"
+          children: "function bplusMinKeys(order: number): number {\r\n  const minChildren = Math.ceil(order / 2);\r\n  return minChildren - 1;\r\n}\r\nconsole.log(bplusMinKeys(5)); // 2\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -2365,7 +2365,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nChomsky hierarchy: Type-3 (Regular) ⊂ Type-2 (CFL) ⊂ Type-1 (CSL) ⊂ Type-0 (Recursively Enumerable). Each level is a strict subset of the next."]
+        }), "\r\nChomsky hierarchy: Type-3 (Regular) ⊂ Type-2 (CFL) ⊂ Type-1 (CSL) ⊂ Type-0 (Recursively Enumerable). Each level is a strict subset of the next."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "q65-2-marks---compiler-design--ðÿâïâ-hard",
@@ -2384,11 +2384,11 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Explanation:"
-        }), "\nLoop-invariant code that produces the same result in every iteration can be hoisted (moved) outside the loop to improve performance. This is called loop-invariant code motion or code hoisting."]
+        }), "\r\nLoop-invariant code that produces the same result in every iteration can be hoisted (moved) outside the loop to improve performance. This is called loop-invariant code motion or code hoisting."]
       }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-typescript",
-          children: "// Before optimization:\nfunction before(n: number): number {\n  let sum = 0;\n  for (let i = 0; i < n; i++) {\n    const x = Math.PI * 2; // loop-invariant\n    sum += x * i;\n  }\n  return sum;\n}\n// After code hoisting:\nfunction after(n: number): number {\n  let sum = 0;\n  const x = Math.PI * 2; // moved outside loop\n  for (let i = 0; i < n; i++) {\n    sum += x * i;\n  }\n  return sum;\n}\n"
+          children: "// Before optimization:\r\nfunction before(n: number): number {\r\n  let sum = 0;\r\n  for (let i = 0; i < n; i++) {\r\n    const x = Math.PI * 2; // loop-invariant\r\n    sum += x * i;\r\n  }\r\n  return sum;\r\n}\r\n// After code hoisting:\r\nfunction after(n: number): number {\r\n  let sum = 0;\r\n  const x = Math.PI * 2; // moved outside loop\r\n  for (let i = 0; i < n; i++) {\r\n    sum += x * i;\r\n  }\r\n  return sum;\r\n}\n"
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
@@ -3098,7 +3098,7 @@ function _createMdxContent(props) {
       id: "topic-wise-performance-analysis",
       children: "Topic-wise Performance Analysis"
     }), "\n", (0,jsx_runtime.jsx)(_components.mermaid, {
-      value: "pie title \"Difficulty Distribution - GATE CS 2025\"\n    \"Easy\" : 30\n    \"Medium\" : 42\n    \"Hard\" : 28"
+      value: "pie title \"Difficulty Distribution - GATE CS 2025\"\r\n    \"Easy\" : 30\r\n    \"Medium\" : 42\r\n    \"Hard\" : 28"
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "key-takeaways",
       children: "Key Takeaways"
@@ -3284,7 +3284,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-typescript",
-        children: "/**\n * GATE2025TrendAnalyzer — topic weightage, difficulty analysis\n * Use this utility to compute marks distribution and difficulty breakdown\n * for the GATE 2025 Computer Science paper.\n */\ninterface Question {\n  id: number;\n  subject: string;\n  topic: string;\n  marks: number;\n  type: 'MCQ' | 'MSQ' | 'NAT';\n  difficulty: 'Easy' | 'Medium' | 'Hard';\n  correctRate: number; // fraction 0..1\n}\n\ninterface SubjectStats {\n  subject: string;\n  totalMarks: number;\n  questionCount: number;\n  easyCount: number;\n  mediumCount: number;\n  hardCount: number;\n  avgCorrectRate: number;\n}\n\nclass GATE2025TrendAnalyzer {\n  private questions: Question[];\n\n  constructor(questions: Question[]) {\n    this.questions = questions;\n  }\n\n  /** Group questions by subject and compute statistics */\n  subjectWiseBreakdown(): SubjectStats[] {\n    const groups = new Map<string, Question[]>();\n    for (const q of this.questions) {\n      const list = groups.get(q.subject) ?? [];\n      list.push(q);\n      groups.set(q.subject, list);\n    }\n    const stats: SubjectStats[] = [];\n    for (const [subject, qs] of groups) {\n      const totalMarks = qs.reduce((s, q) => s + q.marks, 0);\n      const questionCount = qs.length;\n      const easyCount = qs.filter(q => q.difficulty === 'Easy').length;\n      const mediumCount = qs.filter(q => q.difficulty === 'Medium').length;\n      const hardCount = qs.filter(q => q.difficulty === 'Hard').length;\n      const avgCorrectRate =\n        qs.reduce((s, q) => s + q.correctRate, 0) / questionCount;\n      stats.push({\n        subject,\n        totalMarks,\n        questionCount,\n        easyCount,\n        mediumCount,\n        hardCount,\n        avgCorrectRate: Math.round(avgCorrectRate * 100) / 100,\n      });\n    }\n    return stats.sort((a, b) => b.totalMarks - a.totalMarks);\n  }\n\n  /** Overall difficulty distribution */\n  difficultyDistribution(): Record<string, number> {\n    const dist: Record<string, number> = { Easy: 0, Medium: 0, Hard: 0 };\n    for (const q of this.questions) {\n      dist[q.difficulty] = (dist[q.difficulty] ?? 0) + q.marks;\n    }\n    return dist;\n  }\n\n  /** Topics with lowest correct rate (hardest topics) */\n  hardestTopics(topN = 5): { topic: string; subject: string; avgCorrectRate: number }[] {\n    const topicGroups = new Map<string, { subject: string; rates: number[] }>();\n    for (const q of this.questions) {\n      const key = `${q.subject}::${q.topic}`;\n      const entry = topicGroups.get(key) ?? { subject: q.subject, rates: [] };\n      entry.rates.push(q.correctRate);\n      topicGroups.set(key, entry);\n    }\n    return Array.from(topicGroups.entries())\n      .map(([key, val]) => ({\n        topic: key.split('::')[1],\n        subject: val.subject,\n        avgCorrectRate:\n          Math.round((val.rates.reduce((a, b) => a + b, 0) / val.rates.length) * 100) / 100,\n      }))\n      .sort((a, b) => a.avgCorrectRate - b.avgCorrectRate)\n      .slice(0, topN);\n  }\n\n  /** Suggest topics for focused revision based on weightage and difficulty */\n  revisionPriority(): string[] {\n    const stats = this.subjectWiseBreakdown();\n    return stats\n      .filter(s => s.hardCount > s.easyCount || s.avgCorrectRate < 0.4)\n      .map(s => `${s.subject} (${s.avgCorrectRate * 100}% avg accuracy, ${s.hardCount} hard Qs)`);\n  }\n\n  generateReport(): string {\n    const dist = this.difficultyDistribution();\n    const hardest = this.hardestTopics(3);\n    const priority = this.revisionPriority();\n    const totalMarks = this.questions.reduce((s, q) => s + q.marks, 0);\n    return [\n      '=== GATE 2025 Trend Analysis Report ===',\n      `Total Marks: ${totalMarks}`,\n      `Difficulty Split: Easy=${dist.Easy}M | Medium=${dist.Medium}M | Hard=${dist.Hard}M`,\n      '',\n      'Subject-wise breakdown:',\n      ...this.subjectWiseBreakdown().map(\n        s => `  ${s.subject}: ${s.totalMarks}M (${s.questionCount}Q, E:${s.easyCount}/M:${s.mediumCount}/H:${s.hardCount}, avg ${s.avgCorrectRate})`\n      ),\n      '',\n      'Hardest Topics (lowest correct rate):',\n      ...hardest.map(h => `  ${h.subject} > ${h.topic}: ${h.avgCorrectRate * 100}%`),\n      '',\n      'Priority Revision Areas:',\n      ...(priority.length ? priority : ['None — balanced preparation']),\n    ].join('\\n');\n  }\n}\n\n// Example usage\nconst sample2025: Question[] = [\n  { id: 1, subject: 'Data Structures & Algorithms', topic: 'Graph BFS/DFS', marks: 2, type: 'MCQ', difficulty: 'Medium', correctRate: 0.42 },\n  { id: 2, subject: 'Data Structures & Algorithms', topic: 'BST Deletion', marks: 2, type: 'NAT', difficulty: 'Hard', correctRate: 0.15 },\n  { id: 3, subject: 'Operating Systems', topic: 'Page Replacement', marks: 1, type: 'MCQ', difficulty: 'Easy', correctRate: 0.73 },\n  { id: 4, subject: 'Operating Systems', topic: 'Deadlock Detection', marks: 2, type: 'MCQ', difficulty: 'Medium', correctRate: 0.51 },\n  { id: 5, subject: 'DBMS', topic: 'B+ Tree Insertion', marks: 2, type: 'NAT', difficulty: 'Medium', correctRate: 0.38 },\n  { id: 6, subject: 'Computer Networks', topic: 'TCP Congestion Control', marks: 2, type: 'MCQ', difficulty: 'Hard', correctRate: 0.22 },\n  { id: 7, subject: 'Theory of Computation', topic: 'DFA Minimization', marks: 1, type: 'MCQ', difficulty: 'Easy', correctRate: 0.68 },\n  { id: 8, subject: 'Computer Architecture', topic: 'Cache Mapping', marks: 2, type: 'NAT', difficulty: 'Medium', correctRate: 0.45 },\n  { id: 9, subject: 'Engineering Mathematics', topic: 'Eigenvalues', marks: 1, type: 'MCQ', difficulty: 'Easy', correctRate: 0.81 },\n  { id: 10, subject: 'General Aptitude', topic: 'Data Sufficiency', marks: 1, type: 'MCQ', difficulty: 'Easy', correctRate: 0.89 },\n];\nconst analyzer = new GATE2025TrendAnalyzer(sample2025);\nconsole.log(analyzer.generateReport());\n"
+        children: "/**\r\n * GATE2025TrendAnalyzer — topic weightage, difficulty analysis\r\n * Use this utility to compute marks distribution and difficulty breakdown\r\n * for the GATE 2025 Computer Science paper.\r\n */\r\ninterface Question {\r\n  id: number;\r\n  subject: string;\r\n  topic: string;\r\n  marks: number;\r\n  type: 'MCQ' | 'MSQ' | 'NAT';\r\n  difficulty: 'Easy' | 'Medium' | 'Hard';\r\n  correctRate: number; // fraction 0..1\r\n}\r\n\r\ninterface SubjectStats {\r\n  subject: string;\r\n  totalMarks: number;\r\n  questionCount: number;\r\n  easyCount: number;\r\n  mediumCount: number;\r\n  hardCount: number;\r\n  avgCorrectRate: number;\r\n}\r\n\r\nclass GATE2025TrendAnalyzer {\r\n  private questions: Question[];\r\n\r\n  constructor(questions: Question[]) {\r\n    this.questions = questions;\r\n  }\r\n\r\n  /** Group questions by subject and compute statistics */\r\n  subjectWiseBreakdown(): SubjectStats[] {\r\n    const groups = new Map<string, Question[]>();\r\n    for (const q of this.questions) {\r\n      const list = groups.get(q.subject) ?? [];\r\n      list.push(q);\r\n      groups.set(q.subject, list);\r\n    }\r\n    const stats: SubjectStats[] = [];\r\n    for (const [subject, qs] of groups) {\r\n      const totalMarks = qs.reduce((s, q) => s + q.marks, 0);\r\n      const questionCount = qs.length;\r\n      const easyCount = qs.filter(q => q.difficulty === 'Easy').length;\r\n      const mediumCount = qs.filter(q => q.difficulty === 'Medium').length;\r\n      const hardCount = qs.filter(q => q.difficulty === 'Hard').length;\r\n      const avgCorrectRate =\r\n        qs.reduce((s, q) => s + q.correctRate, 0) / questionCount;\r\n      stats.push({\r\n        subject,\r\n        totalMarks,\r\n        questionCount,\r\n        easyCount,\r\n        mediumCount,\r\n        hardCount,\r\n        avgCorrectRate: Math.round(avgCorrectRate * 100) / 100,\r\n      });\r\n    }\r\n    return stats.sort((a, b) => b.totalMarks - a.totalMarks);\r\n  }\r\n\r\n  /** Overall difficulty distribution */\r\n  difficultyDistribution(): Record<string, number> {\r\n    const dist: Record<string, number> = { Easy: 0, Medium: 0, Hard: 0 };\r\n    for (const q of this.questions) {\r\n      dist[q.difficulty] = (dist[q.difficulty] ?? 0) + q.marks;\r\n    }\r\n    return dist;\r\n  }\r\n\r\n  /** Topics with lowest correct rate (hardest topics) */\r\n  hardestTopics(topN = 5): { topic: string; subject: string; avgCorrectRate: number }[] {\r\n    const topicGroups = new Map<string, { subject: string; rates: number[] }>();\r\n    for (const q of this.questions) {\r\n      const key = `${q.subject}::${q.topic}`;\r\n      const entry = topicGroups.get(key) ?? { subject: q.subject, rates: [] };\r\n      entry.rates.push(q.correctRate);\r\n      topicGroups.set(key, entry);\r\n    }\r\n    return Array.from(topicGroups.entries())\r\n      .map(([key, val]) => ({\r\n        topic: key.split('::')[1],\r\n        subject: val.subject,\r\n        avgCorrectRate:\r\n          Math.round((val.rates.reduce((a, b) => a + b, 0) / val.rates.length) * 100) / 100,\r\n      }))\r\n      .sort((a, b) => a.avgCorrectRate - b.avgCorrectRate)\r\n      .slice(0, topN);\r\n  }\r\n\r\n  /** Suggest topics for focused revision based on weightage and difficulty */\r\n  revisionPriority(): string[] {\r\n    const stats = this.subjectWiseBreakdown();\r\n    return stats\r\n      .filter(s => s.hardCount > s.easyCount || s.avgCorrectRate < 0.4)\r\n      .map(s => `${s.subject} (${s.avgCorrectRate * 100}% avg accuracy, ${s.hardCount} hard Qs)`);\r\n  }\r\n\r\n  generateReport(): string {\r\n    const dist = this.difficultyDistribution();\r\n    const hardest = this.hardestTopics(3);\r\n    const priority = this.revisionPriority();\r\n    const totalMarks = this.questions.reduce((s, q) => s + q.marks, 0);\r\n    return [\r\n      '=== GATE 2025 Trend Analysis Report ===',\r\n      `Total Marks: ${totalMarks}`,\r\n      `Difficulty Split: Easy=${dist.Easy}M | Medium=${dist.Medium}M | Hard=${dist.Hard}M`,\r\n      '',\r\n      'Subject-wise breakdown:',\r\n      ...this.subjectWiseBreakdown().map(\r\n        s => `  ${s.subject}: ${s.totalMarks}M (${s.questionCount}Q, E:${s.easyCount}/M:${s.mediumCount}/H:${s.hardCount}, avg ${s.avgCorrectRate})`\r\n      ),\r\n      '',\r\n      'Hardest Topics (lowest correct rate):',\r\n      ...hardest.map(h => `  ${h.subject} > ${h.topic}: ${h.avgCorrectRate * 100}%`),\r\n      '',\r\n      'Priority Revision Areas:',\r\n      ...(priority.length ? priority : ['None — balanced preparation']),\r\n    ].join('\\n');\r\n  }\r\n}\r\n\r\n// Example usage\r\nconst sample2025: Question[] = [\r\n  { id: 1, subject: 'Data Structures & Algorithms', topic: 'Graph BFS/DFS', marks: 2, type: 'MCQ', difficulty: 'Medium', correctRate: 0.42 },\r\n  { id: 2, subject: 'Data Structures & Algorithms', topic: 'BST Deletion', marks: 2, type: 'NAT', difficulty: 'Hard', correctRate: 0.15 },\r\n  { id: 3, subject: 'Operating Systems', topic: 'Page Replacement', marks: 1, type: 'MCQ', difficulty: 'Easy', correctRate: 0.73 },\r\n  { id: 4, subject: 'Operating Systems', topic: 'Deadlock Detection', marks: 2, type: 'MCQ', difficulty: 'Medium', correctRate: 0.51 },\r\n  { id: 5, subject: 'DBMS', topic: 'B+ Tree Insertion', marks: 2, type: 'NAT', difficulty: 'Medium', correctRate: 0.38 },\r\n  { id: 6, subject: 'Computer Networks', topic: 'TCP Congestion Control', marks: 2, type: 'MCQ', difficulty: 'Hard', correctRate: 0.22 },\r\n  { id: 7, subject: 'Theory of Computation', topic: 'DFA Minimization', marks: 1, type: 'MCQ', difficulty: 'Easy', correctRate: 0.68 },\r\n  { id: 8, subject: 'Computer Architecture', topic: 'Cache Mapping', marks: 2, type: 'NAT', difficulty: 'Medium', correctRate: 0.45 },\r\n  { id: 9, subject: 'Engineering Mathematics', topic: 'Eigenvalues', marks: 1, type: 'MCQ', difficulty: 'Easy', correctRate: 0.81 },\r\n  { id: 10, subject: 'General Aptitude', topic: 'Data Sufficiency', marks: 1, type: 'MCQ', difficulty: 'Easy', correctRate: 0.89 },\r\n];\r\nconst analyzer = new GATE2025TrendAnalyzer(sample2025);\r\nconsole.log(analyzer.generateReport());\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "chapter-quiz",

@@ -17,7 +17,7 @@ This is the Stable Diffusion recipe. SD 1.x / 2.x used an 860M U-Net over `64×6
 
 ## The Concept
 
-![Latent diffusion: VAE compression + diffusion in latent space](/ai-engineering-journey/img/visual/latent-diffusion.svg)
+![Latent diffusion: VAE compression + diffusion in latent space](/img/visual/latent-diffusion.svg)
 
 **Two stages, separately trained.**
 

@@ -17,7 +17,7 @@ The 2026 frontier is almost entirely MoE: DeepSeek-V3 (671B total / 37B active),
 
 ## The Concept
 
-![MoE layer: router selects k of E experts per token](/ai-engineering-journey/img/visual/moe.svg)
+![MoE layer: router selects k of E experts per token](/img/visual/moe.svg)
 
 ### The FFN swap
 

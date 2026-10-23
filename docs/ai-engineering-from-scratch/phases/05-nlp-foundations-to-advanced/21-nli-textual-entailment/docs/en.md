@@ -25,7 +25,7 @@ One task, three production uses. This is why every RAG evaluation framework ship
 
 ## The Concept
 
-![NLI: three-way classification, premise vs hypothesis](/ai-engineering-journey/img/visual/nli.svg)
+![NLI: three-way classification, premise vs hypothesis](/img/visual/nli.svg)
 
 **The three labels.**
 

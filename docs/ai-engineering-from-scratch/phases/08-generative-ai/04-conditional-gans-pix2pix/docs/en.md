@@ -15,7 +15,7 @@ Conditional GAN (Mirza & Osindero, 2014) adds a condition `c` as an input to bot
 
 ## The Concept
 
-![Pix2Pix: U-Net generator, PatchGAN discriminator](/ai-engineering-journey/img/visual/pix2pix.svg)
+![Pix2Pix: U-Net generator, PatchGAN discriminator](/img/visual/pix2pix.svg)
 
 **Conditional G.** `G(x, z) → y`. In Pix2Pix, `z` is dropout inside G (no input noise — Isola found explicit noise got ignored).
 

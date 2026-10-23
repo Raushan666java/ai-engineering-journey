@@ -25,7 +25,7 @@ All three lean on LLM-as-judge. This lesson builds intuition for the method and 
 
 ## The Concept
 
-![Four evaluation dimensions, LLM-as-judge architecture](/ai-engineering-journey/img/visual/llm-evaluation.svg)
+![Four evaluation dimensions, LLM-as-judge architecture](/img/visual/llm-evaluation.svg)
 
 **LLM-as-judge.** Replace a static metric with an LLM that scores outputs given a rubric. Given `(query, context, answer)`, prompt a judge LLM: "Score 0-1 on faithfulness." Return the score.
 

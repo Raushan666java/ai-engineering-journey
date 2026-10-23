@@ -17,7 +17,7 @@ The shift from DP to MC is philosophically important: we move from *known model 
 
 ## The Concept
 
-![Monte Carlo: rollout, compute returns, average; first-visit vs every-visit](/ai-engineering-journey/img/visual/monte-carlo.svg)
+![Monte Carlo: rollout, compute returns, average; first-visit vs every-visit](/img/visual/monte-carlo.svg)
 
 **The core idea, in one line:** `V^π(s) = E_π[G_t | s_t = s] ≈ (1/N) Σ_i G^{(i)}(s)` where `G^{(i)}(s)` are observed returns following visits to `s` under policy `π`.
 

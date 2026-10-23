@@ -15,7 +15,7 @@ Sohl-Dickstein et al. (2015) had a theoretical answer: define a Markov chain `q(
 
 ## The Concept
 
-![DDPM: forward noise, reverse denoise](/ai-engineering-journey/img/visual/ddpm.svg)
+![DDPM: forward noise, reverse denoise](/img/visual/ddpm.svg)
 
 **Forward process `q`.** Add Gaussian noise in `T` small steps. The closed form — the reason the math is tractable — is that the cumulative step is also Gaussian:
 

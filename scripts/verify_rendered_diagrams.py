@@ -45,7 +45,8 @@ def dump(url: str, name: str) -> str:
 def main() -> int:
     arg = sys.argv[1]
     if pathlib.Path(arg).is_file():
-        payload = json.loads(pathlib.Path(arg).read_text(encoding="utf-8"))
+        # utf-8-sig tolerates the BOM that PowerShell's Out-File emits.
+        payload = json.loads(pathlib.Path(arg).read_text(encoding="utf-8-sig"))
     else:
         payload = json.loads(arg)
     rows = []

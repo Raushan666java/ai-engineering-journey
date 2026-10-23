@@ -17,7 +17,7 @@ The answer is **full-duplex speech-to-speech**. Theoretical latency 160 ms (80 m
 
 ## The Concept
 
-![Moshi architecture: two parallel Mimi streams + inner-monologue text](/ai-engineering-journey/img/visual/moshi-hibiki.svg)
+![Moshi architecture: two parallel Mimi streams + inner-monologue text](/img/visual/moshi-hibiki.svg)
 
 ### The Moshi architecture
 

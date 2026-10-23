@@ -21,7 +21,7 @@ Long-context evaluation measures these axes. This lesson names the benchmarks, w
 
 ## The Concept
 
-![NIAH baseline, RULER multi-task, LongBench holistic](/ai-engineering-journey/img/visual/long-context-eval.svg)
+![NIAH baseline, RULER multi-task, LongBench holistic](/img/visual/long-context-eval.svg)
 
 **Needle-in-a-Haystack (NIAH, 2023).** Place a fact ("the magic word is pineapple") at a controlled depth in a long context. Ask the model to retrieve it. Sweep depth × length. The original long-context benchmark. Frontier models now saturate this; it is a necessary but not sufficient baseline.
 

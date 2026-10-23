@@ -19,7 +19,7 @@ Detection handles adversaries who don't cooperate. Watermarking handles complian
 
 ## The Concept
 
-![Anti-spoofing vs watermarking vs provenance — three defense layers](/ai-engineering-journey/img/visual/spoofing-watermark.svg)
+![Anti-spoofing vs watermarking vs provenance — three defense layers](/img/visual/spoofing-watermark.svg)
 
 ### ASVspoof 5 — the 2024-2025 benchmark
 

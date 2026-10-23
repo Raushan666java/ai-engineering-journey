@@ -2,7 +2,7 @@
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![From Problem to Demo](/ai-engineering-journey/img/visual/19-capstone-projects.svg)
+![From Problem to Demo](/img/visual/19-capstone-projects.svg)
 
 # What the diagram shows
 

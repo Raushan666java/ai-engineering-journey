@@ -17,7 +17,7 @@ You cannot learn from this stream until you formalize it. "What I saw," "what I 
 
 ## The Concept
 
-![Markov decision process: states, actions, transitions, rewards, discount](/ai-engineering-journey/img/visual/mdp.svg)
+![Markov decision process: states, actions, transitions, rewards, discount](/img/visual/mdp.svg)
 
 **The five objects.**
 

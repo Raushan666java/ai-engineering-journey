@@ -10,7 +10,7 @@ sidebar_position: 308
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![The Math Under Every Model](/ai-engineering-journey/img/visual/24-statistics-mathematics.svg)
+![The Math Under Every Model](/img/visual/24-statistics-mathematics.svg)
 
 # What the diagram shows
 

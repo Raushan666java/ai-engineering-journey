@@ -21,7 +21,7 @@ DQN on Atari was the first time a single architecture with a single hyperparamet
 
 ## The Concept
 
-![DQN training loop: env, replay buffer, online net, target net, Bellman TD loss](/ai-engineering-journey/img/visual/dqn.svg)
+![DQN training loop: env, replay buffer, online net, target net, Bellman TD loss](/img/visual/dqn.svg)
 
 **The objective.** DQN minimizes the one-step TD loss on a neural Q-function:
 

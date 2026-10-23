@@ -25,7 +25,7 @@ Moshi (Kyutai, 2024) clocked 200 ms full-duplex. GPT-4o-realtime (2024) clocks ~
 
 ## The Concept
 
-![Streaming audio pipeline with ring buffer, VAD gate, interruption](/ai-engineering-journey/img/visual/real-time.svg)
+![Streaming audio pipeline with ring buffer, VAD gate, interruption](/img/visual/real-time.svg)
 
 **Frame / chunk / window.** Real-time audio flows as fixed-size blocks. Common choice: 20 ms (320 samples at 16 kHz). Everything downstream must keep up with this cadence.
 

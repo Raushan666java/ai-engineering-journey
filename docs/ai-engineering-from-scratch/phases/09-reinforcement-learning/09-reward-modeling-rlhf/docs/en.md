@@ -19,7 +19,7 @@ In 2026 the PPO step is mostly replaced by DPO (Phase 10 · 08) because it is ch
 
 ## The Concept
 
-![Three-stage RLHF: SFT, RM training on pairwise prefs, PPO with KL penalty](/ai-engineering-journey/img/visual/rlhf.svg)
+![Three-stage RLHF: SFT, RM training on pairwise prefs, PPO with KL penalty](/img/visual/rlhf.svg)
 
 **Stage 1: Supervised Fine-Tuning (SFT).** Start from a pretrained base model. Fine-tune on human-written demonstrations of the target behavior (instruction-following responses, helpful replies, etc.). Result: a model `π_SFT` that is *biased toward good behavior* but still has an unbounded action space.
 

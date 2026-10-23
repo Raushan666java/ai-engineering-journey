@@ -23,7 +23,7 @@ As of 2026, essentially every frontier open model uses RoPE: Llama 2/3/4, Qwen 2
 
 ## The Concept
 
-![Sinusoidal absolute vs RoPE rotations vs ALiBi distance bias](/ai-engineering-journey/img/visual/positional-encoding.svg)
+![Sinusoidal absolute vs RoPE rotations vs ALiBi distance bias](/img/visual/positional-encoding.svg)
 
 ### Absolute sinusoidal
 

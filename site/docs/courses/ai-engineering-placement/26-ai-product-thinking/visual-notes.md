@@ -10,7 +10,7 @@ sidebar_position: 322
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![From Model to Product](/ai-engineering-journey/img/visual/26-ai-product-thinking.svg)
+![From Model to Product](/img/visual/26-ai-product-thinking.svg)
 
 # What the diagram shows
 

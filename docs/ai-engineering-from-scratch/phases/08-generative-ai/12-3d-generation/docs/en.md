@@ -20,7 +20,7 @@ The 2026 stack separates the two problems. First, generate *2D multi-view images
 
 ## The Concept
 
-![3D generation: multi-view diffusion + 3D reconstruction](/ai-engineering-journey/img/visual/3d-generation.svg)
+![3D generation: multi-view diffusion + 3D reconstruction](/img/visual/3d-generation.svg)
 
 ### Representation: 3D Gaussian Splatting (Kerbl et al., 2023)
 

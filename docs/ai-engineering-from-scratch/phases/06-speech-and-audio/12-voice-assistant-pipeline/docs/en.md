@@ -23,7 +23,7 @@ Latency target: first TTS audio byte within 800 ms of the user finishing their u
 
 ## The Concept
 
-![Voice assistant pipeline: mic → VAD → STT → LLM+tools → TTS → speaker](/ai-engineering-journey/img/visual/voice-assistant.svg)
+![Voice assistant pipeline: mic → VAD → STT → LLM+tools → TTS → speaker](/img/visual/voice-assistant.svg)
 
 ### The seven components
 

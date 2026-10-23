@@ -17,7 +17,7 @@ This capstone surveys the three landmark architectures — AlphaZero, MuZero, an
 
 ## The Concept
 
-![AlphaZero ↔ MuZero ↔ GRPO: same loop, different environments](/ai-engineering-journey/img/visual/rl-games.svg)
+![AlphaZero ↔ MuZero ↔ GRPO: same loop, different environments](/img/visual/rl-games.svg)
 
 **The unifying loop.**
 

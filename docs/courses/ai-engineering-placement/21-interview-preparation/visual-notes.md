@@ -2,7 +2,7 @@
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![The Interview Funnel](/ai-engineering-journey/img/visual/21-interview-preparation.svg)
+![The Interview Funnel](/img/visual/21-interview-preparation.svg)
 
 # What the diagram shows
 

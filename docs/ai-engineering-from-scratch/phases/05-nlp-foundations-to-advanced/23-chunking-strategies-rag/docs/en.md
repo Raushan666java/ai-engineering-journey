@@ -23,7 +23,7 @@ The "obvious" answer (semantic chunking, 20% overlap, 1000 tokens) is often wron
 
 ## The Concept
 
-![Six chunking strategies visualized on one passage](/ai-engineering-journey/img/visual/chunking.svg)
+![Six chunking strategies visualized on one passage](/img/visual/chunking.svg)
 
 **Fixed chunking.** Split every N characters or tokens. Simplest baseline. Breaks mid-sentence. Good compression, bad coherence.
 

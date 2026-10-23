@@ -2,7 +2,7 @@
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![The Agent Loop](/ai-engineering-journey/img/visual/13-ai-agents-langgraph.svg)
+![The Agent Loop](/img/visual/13-ai-agents-langgraph.svg)
 
 # What the diagram shows
 

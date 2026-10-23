@@ -21,7 +21,7 @@ In 2026, SOTA WER on LibriSpeech test-clean is 1.4% (Parakeet-TDT-1.1B, NVIDIA) 
 
 ## The Concept
 
-![Three ASR formulations: CTC, RNN-T, attention-encoder-decoder](/ai-engineering-journey/img/visual/asr-formulations.svg)
+![Three ASR formulations: CTC, RNN-T, attention-encoder-decoder](/img/visual/asr-formulations.svg)
 
 **CTC intuition.** Let the encoder output `T` frame-level distributions over `V+1` tokens (V chars + blank). For a target string `y` of length `U < T`, any frame alignment that collapses to `y` counts. CTC loss sums over all such alignments. Inference: per-frame argmax, collapse repeats, remove blanks.
 

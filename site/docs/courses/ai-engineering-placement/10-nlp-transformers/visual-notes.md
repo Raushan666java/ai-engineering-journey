@@ -10,7 +10,7 @@ sidebar_position: 147
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Transformer Anatomy](/ai-engineering-journey/img/visual/10-nlp-transformers.svg)
+![Transformer Anatomy](/img/visual/10-nlp-transformers.svg)
 
 # What the diagram shows
 

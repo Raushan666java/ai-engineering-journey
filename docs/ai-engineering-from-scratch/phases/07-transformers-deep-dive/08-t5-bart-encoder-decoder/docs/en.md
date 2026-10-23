@@ -34,7 +34,7 @@ Decoder-only won the spotlight, but encoder-decoder never went away.
 
 ## The Concept
 
-![Encoder-decoder with cross-attention](/ai-engineering-journey/img/visual/encoder-decoder.svg)
+![Encoder-decoder with cross-attention](/img/visual/encoder-decoder.svg)
 
 ### The forward loop
 

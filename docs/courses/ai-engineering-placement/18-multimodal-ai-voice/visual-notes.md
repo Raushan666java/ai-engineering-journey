@@ -2,7 +2,7 @@
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Multimodal Input to Voice Output](/ai-engineering-journey/img/visual/18-multimodal-ai-voice.svg)
+![Multimodal Input to Voice Output](/img/visual/18-multimodal-ai-voice.svg)
 
 # What the diagram shows
 

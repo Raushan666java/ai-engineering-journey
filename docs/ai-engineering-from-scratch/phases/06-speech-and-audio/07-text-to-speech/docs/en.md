@@ -21,7 +21,7 @@ In 2026 the acoustic + vocoder split blurs with end-to-end diffusion and flow-ma
 
 ## The Concept
 
-![Tacotron, FastSpeech, VITS, F5/Kokoro side-by-side](/ai-engineering-journey/img/visual/tts.svg)
+![Tacotron, FastSpeech, VITS, F5/Kokoro side-by-side](/img/visual/tts.svg)
 
 **Tacotron 2 (2017).** Seq2seq: char-embedding → BiLSTM encoder → location-sensitive attention → autoregressive LSTM decoder emits mel frames. Slow (AR), wobbly on long text. Still cited as a baseline.
 

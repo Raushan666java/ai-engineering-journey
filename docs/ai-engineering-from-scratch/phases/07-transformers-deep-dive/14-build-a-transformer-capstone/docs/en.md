@@ -17,7 +17,7 @@ This is the "nanoGPT" of the course. It is not original — Karpathy's 2023 nano
 
 ## The Concept
 
-![Transformer-from-scratch block diagram](/ai-engineering-journey/img/visual/capstone.svg)
+![Transformer-from-scratch block diagram](/img/visual/capstone.svg)
 
 The architecture, annotated:
 

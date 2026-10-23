@@ -23,7 +23,7 @@ The modern pipeline: classical DST concepts + LLM extractors + structured-output
 
 ## The Concept
 
-![DST: dialog history → slot-value state](/ai-engineering-journey/img/visual/dst.svg)
+![DST: dialog history → slot-value state](/img/visual/dst.svg)
 
 **Task structure.** A schema defines domains (restaurant, hotel, taxi) and their slots (cuisine, area, price, people). Each slot can be empty, filled with a value from a closed set (price: {cheap, moderate, expensive}), or a free-form value (name: "The Copper Kettle").
 

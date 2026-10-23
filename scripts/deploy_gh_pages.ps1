@@ -84,6 +84,11 @@ if ($DryRun) {
 }
 
 Write-Host "`n=== worktree ===" -ForegroundColor Cyan
+# git writes routine progress ("Already on 'gh-pages'", push counters) to
+# stderr. Under ErrorActionPreference=Stop PowerShell turns the first such
+# line into a terminating error, so native git calls are checked through
+# $LASTEXITCODE instead.
+$ErrorActionPreference = "Continue"
 Push-Location $repo
 try {
     git worktree prune
@@ -97,7 +102,11 @@ try {
 
 Push-Location $Worktree
 try {
-    git checkout $Branch 2>&1 | Out-Null
+    $onBranch = (& git rev-parse --abbrev-ref HEAD | Select-Object -First 1)
+    if ($onBranch.Trim() -ne $Branch) {
+        git checkout $Branch | Out-Null
+        if ($LASTEXITCODE -ne 0) { Fail "could not check out $Branch" }
+    }
 
     # Clear the tree but never the .git directory or the worktree root itself.
     Get-ChildItem -Force | Where-Object { $_.Name -ne ".git" } | ForEach-Object {

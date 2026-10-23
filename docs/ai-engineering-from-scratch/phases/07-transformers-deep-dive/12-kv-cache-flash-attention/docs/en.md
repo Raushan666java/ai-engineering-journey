@@ -22,7 +22,7 @@ By 2026 both are universal. Every production inference stack (vLLM, TensorRT-LLM
 
 ## The Concept
 
-![KV cache growth and Flash Attention tiling](/ai-engineering-journey/img/visual/kv-cache-flash-attn.svg)
+![KV cache growth and Flash Attention tiling](/img/visual/kv-cache-flash-attn.svg)
 
 ### KV cache math
 

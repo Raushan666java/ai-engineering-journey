@@ -15,7 +15,7 @@ The core difficulty is not the network. It is data. Audio datasets have brutal c
 
 ## The Concept
 
-![Audio classification ladder: k-NN on MFCCs to AST to BEATs](/ai-engineering-journey/img/visual/audio-classification.svg)
+![Audio classification ladder: k-NN on MFCCs to AST to BEATs](/img/visual/audio-classification.svg)
 
 **k-NN on MFCCs (the 1990s baseline).** Flatten MFCCs per clip, compute cosine similarity to a labeled bank, return majority vote of the top K. Surprisingly strong on clean, small datasets (Speech Commands, ESC-50). Runs with no GPU.
 

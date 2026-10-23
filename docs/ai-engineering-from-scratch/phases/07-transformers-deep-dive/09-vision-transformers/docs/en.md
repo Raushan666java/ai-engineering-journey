@@ -19,7 +19,7 @@ By 2026, ViT and its descendants (DeiT, Swin, DINOv2, ViT-22B, SAM 3) own most o
 
 ## The Concept
 
-![Image → patches → tokens → transformer](/ai-engineering-journey/img/visual/vit.svg)
+![Image → patches → tokens → transformer](/img/visual/vit.svg)
 
 ### Step 1 — patchify
 

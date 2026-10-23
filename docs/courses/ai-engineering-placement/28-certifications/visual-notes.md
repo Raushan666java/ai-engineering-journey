@@ -2,7 +2,7 @@
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Mapping Certs to Direction](/ai-engineering-journey/img/visual/28-certifications.svg)
+![Mapping Certs to Direction](/img/visual/28-certifications.svg)
 
 # What the diagram shows
 

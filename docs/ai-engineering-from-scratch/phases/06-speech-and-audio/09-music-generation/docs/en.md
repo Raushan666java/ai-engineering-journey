@@ -17,7 +17,7 @@ Text → a 30-second to 4-minute music clip, with lyrics, vocals, and structure.
 
 ## The Concept
 
-![Music generation: token-LM vs diffusion, the 2026 model map](/ai-engineering-journey/img/visual/music-generation.svg)
+![Music generation: token-LM vs diffusion, the 2026 model map](/img/visual/music-generation.svg)
 
 ### Token LM over neural-codec tokens
 

@@ -10,7 +10,7 @@ sidebar_position: 137
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Neural Network Training Loop](/ai-engineering-journey/img/visual/09-deep-learning-pytorch.svg)
+![Neural Network Training Loop](/img/visual/09-deep-learning-pytorch.svg)
 
 # What the diagram shows
 

@@ -10,7 +10,7 @@ sidebar_position: 111
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![One Request, the Full Ride](/ai-engineering-journey/img/visual/07-system-design.svg)
+![One Request, the Full Ride](/img/visual/07-system-design.svg)
 
 # What the diagram shows
 

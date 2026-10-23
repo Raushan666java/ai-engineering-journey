@@ -20,7 +20,7 @@ A single model that answers all of these with one prompt is an **audio-language 
 
 ## The Concept
 
-![Audio-language model: audio encoder + projector + LLM decoder](/ai-engineering-journey/img/visual/alm-architecture.svg)
+![Audio-language model: audio encoder + projector + LLM decoder](/img/visual/alm-architecture.svg)
 
 ### The three-component template
 

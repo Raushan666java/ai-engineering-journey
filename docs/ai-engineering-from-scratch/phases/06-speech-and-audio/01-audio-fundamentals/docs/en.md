@@ -21,7 +21,7 @@ Get these right and the rest of Phase 6 is tractable. Get them wrong and even Wh
 
 ## The Concept
 
-![Waveform, sampling, DFT, and frequency bins visualized](/ai-engineering-journey/img/visual/audio-fundamentals.svg)
+![Waveform, sampling, DFT, and frequency bins visualized](/img/visual/audio-fundamentals.svg)
 
 **Waveform.** A one-dimensional array of floats in `[-1.0, 1.0]`. Indexed by sample number. To convert to seconds, divide by the sample rate: `t = n / sr`. A 10-second clip at 16 kHz is an array of 160,000 floats.
 

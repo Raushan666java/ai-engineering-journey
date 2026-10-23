@@ -23,7 +23,7 @@ The result dominates every modality by 2026. Language (GPT-5, Claude 4, Llama 4)
 
 ## The Concept
 
-![RNN sequential compute vs Transformer parallel attention](/ai-engineering-journey/img/visual/rnn-vs-transformer.svg)
+![RNN sequential compute vs Transformer parallel attention](/img/visual/rnn-vs-transformer.svg)
 
 **Recurrence as a bottleneck.** An RNN computes `h_t = f(h_{t-1}, x_t)`. Each step depends on the previous. You cannot compute `h_5` before `h_4`. On modern GPUs with 10,000+ parallel cores, this wastes 99% of the silicon on a long sequence.
 

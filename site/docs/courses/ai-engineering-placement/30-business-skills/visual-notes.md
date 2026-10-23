@@ -10,7 +10,7 @@ sidebar_position: 350
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Communication and Strategy Tree](/ai-engineering-journey/img/visual/30-business-skills.svg)
+![Communication and Strategy Tree](/img/visual/30-business-skills.svg)
 
 # What the diagram shows
 

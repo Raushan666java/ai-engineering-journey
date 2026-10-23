@@ -19,7 +19,7 @@ In 2026 encoder-only models are still the right tool for classification, retriev
 
 ## The Concept
 
-![Masked language modeling: pick tokens, mask them, predict originals](/ai-engineering-journey/img/visual/bert-mlm.svg)
+![Masked language modeling: pick tokens, mask them, predict originals](/img/visual/bert-mlm.svg)
 
 ### The training signal
 

@@ -2,7 +2,7 @@
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Your Personal Brand Trunk](/ai-engineering-journey/img/visual/20-portfolio-branding.svg)
+![Your Personal Brand Trunk](/img/visual/20-portfolio-branding.svg)
 
 # What the diagram shows
 

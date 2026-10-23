@@ -17,7 +17,7 @@ Rectified flow (Liu 2022) goes further: iteratively straighten the paths with a 
 
 ## The Concept
 
-![Flow matching: straight-line interpolation between noise and data](/ai-engineering-journey/img/visual/flow-matching.svg)
+![Flow matching: straight-line interpolation between noise and data](/img/visual/flow-matching.svg)
 
 ### Straight-line flow
 

@@ -10,7 +10,7 @@ sidebar_position: 157
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![The LLM Interaction Loop](/ai-engineering-journey/img/visual/11-llms-prompt-engineering.svg)
+![The LLM Interaction Loop](/img/visual/11-llms-prompt-engineering.svg)
 
 # What the diagram shows
 

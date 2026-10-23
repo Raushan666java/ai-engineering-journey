@@ -25,7 +25,7 @@ Every audio task has multiple metrics, each measuring a different axis. Using th
 
 ## The Concept
 
-![Audio evaluation matrix — metrics vs tasks vs 2026 leaderboards](/ai-engineering-journey/img/visual/eval-landscape.svg)
+![Audio evaluation matrix — metrics vs tasks vs 2026 leaderboards](/img/visual/eval-landscape.svg)
 
 ### ASR metrics
 

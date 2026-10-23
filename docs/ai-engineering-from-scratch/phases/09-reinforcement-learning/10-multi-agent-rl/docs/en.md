@@ -19,7 +19,7 @@ This breaks tabular convergence proofs (Q-learning's guarantee assumes a station
 
 ## The Concept
 
-![Four MARL regimes: indep, centralized critic, self-play, league](/ai-engineering-journey/img/visual/marl.svg)
+![Four MARL regimes: indep, centralized critic, self-play, league](/img/visual/marl.svg)
 
 **Formalism: Markov Game.** A generalization of MDP: states `S`, a joint action `a = (a_1, …, a_n)`, transition `P(s' | s, a)`, and per-agent rewards `R_i(s, a, s')`. Each agent `i` maximizes its own return under its own policy `π_i`. If rewards are identical, it is **fully cooperative**. If zero-sum, it is **adversarial**. If mixed, it is **general-sum**.
 

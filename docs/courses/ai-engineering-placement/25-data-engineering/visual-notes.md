@@ -2,7 +2,7 @@
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![The Data Pipeline](/ai-engineering-journey/img/visual/25-data-engineering.svg)
+![The Data Pipeline](/img/visual/25-data-engineering.svg)
 
 # What the diagram shows
 

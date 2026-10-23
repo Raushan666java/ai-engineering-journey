@@ -22,7 +22,7 @@ Key constraint you now ship under in 2026: **watermarking and consent gates are 
 
 ## The Concept
 
-![Voice cloning vs conversion: factorize, swap speaker, recombine](/ai-engineering-journey/img/visual/voice-cloning.svg)
+![Voice cloning vs conversion: factorize, swap speaker, recombine](/img/visual/voice-cloning.svg)
 
 **Zero-shot cloning.** Pass a 5-second clip to a model that has been trained on thousands of speakers. The speaker encoder maps the clip to a speaker embedding; the TTS decoder conditions on that embedding plus text.
 

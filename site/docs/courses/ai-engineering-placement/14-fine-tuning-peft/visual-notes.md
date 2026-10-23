@@ -10,7 +10,7 @@ sidebar_position: 197
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Choosing How to Adapt a Model](/ai-engineering-journey/img/visual/14-fine-tuning-peft.svg)
+![Choosing How to Adapt a Model](/img/visual/14-fine-tuning-peft.svg)
 
 # What the diagram shows
 

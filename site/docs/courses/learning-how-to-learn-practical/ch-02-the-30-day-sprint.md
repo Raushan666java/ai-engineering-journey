@@ -35,22 +35,22 @@ A 30-day sprint is the perfect timebox for mastering a new topic. It's long enou
 ```mermaid
 gantt
     title 30-Day Sprint: System Design Example
-    dateFormat  D
+    dateFormat  YYYY-MM-DD
     axisFormat  %d
     section Foundation (Days 1-10)
-    CAP theorem            :a1, 0, 3d
-    Consistent hashing     :a2, 2d, 3d
-    Caching strategies     :a3, 4d, 3d
-    Load balancing         :a4, 6d, 3d
-    Database scaling       :a5, 8d, 3d
+    CAP theorem            :a1, 2026-01-01, 3d
+    Consistent hashing     :a2, 2026-01-03, 3d
+    Caching strategies     :a3, 2026-01-05, 3d
+    Load balancing         :a4, 2026-01-07, 3d
+    Database scaling       :a5, 2026-01-09, 3d
     section Core (Days 11-20)
-    URL shortener design   :b1, 10d, 4d
-    Chat system design     :b2, 14d, 4d
-    News feed design       :b3, 18d, 3d
+    URL shortener design   :b1, 2026-01-11, 4d
+    Chat system design     :b2, 2026-01-15, 4d
+    News feed design       :b3, 2026-01-19, 3d
     section Mastery (Days 21-30)
-    Mock design session    :c1, 21d, 3d
-    Review & compare       :c2, 24d, 3d
-    Repeat weak areas      :c3, 27d, 3d
+    Mock design session    :c1, 2026-01-22, 3d
+    Review & compare       :c2, 2026-01-25, 3d
+    Repeat weak areas      :c3, 2026-01-28, 3d
 ```
 
 **Phase 1: Foundation (Days 1-10)**

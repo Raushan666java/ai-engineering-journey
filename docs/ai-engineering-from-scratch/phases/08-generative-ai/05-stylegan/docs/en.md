@@ -17,7 +17,7 @@ The result: `W` has roughly orthogonal axes for "high-level style" (pose, identi
 
 ## The Concept
 
-![StyleGAN: mapping network + AdaIN + per-layer noise](/ai-engineering-journey/img/visual/stylegan.svg)
+![StyleGAN: mapping network + AdaIN + per-layer noise](/img/visual/stylegan.svg)
 
 **Mapping network.** `f: Z → W`, an 8-layer MLP. `Z = N(0, I)^512`. `W` is not forced to be Gaussian — it learns a data-adapted shape.
 

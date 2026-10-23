@@ -1466,20 +1466,20 @@ ADD writes to R1 in WB (stage 5). SUB reads R1 in ID (stage 2 of SUB). With forw
 ```mermaid
 gantt
     title Pipeline Hazard Diagram
-    dateFormat  X
-    axisFormat %s
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d
     section ADD R1
-    IF : a1, 0, 1s
-    ID : a2, 1s, 1s
-    EX : a3, 2s, 1s
-    MEM : a4, 3s, 1s
-    WB : a5, 4s, 1s
+    IF  : a1, 2026-01-01, 1d
+    ID  : a2, 2026-01-02, 1d
+    EX  : a3, 2026-01-03, 1d
+    MEM : a4, 2026-01-04, 1d
+    WB  : a5, 2026-01-05, 1d
     section SUB R4
-    IF : b1, 2s, 1s
-    ID : b2, 3s, 1s
-    EX : b3, 4s, 1s
-    MEM : b4, 5s, 1s
-    WB : b5, 6s, 1s
+    IF  : b1, 2026-01-03, 1d
+    ID  : b2, 2026-01-04, 1d
+    EX  : b3, 2026-01-05, 1d
+    MEM : b4, 2026-01-06, 1d
+    WB  : b5, 2026-01-07, 1d
 ```
 
 </details>

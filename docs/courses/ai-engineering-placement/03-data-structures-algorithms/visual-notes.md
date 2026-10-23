@@ -2,7 +2,7 @@
 
 > One diagram, the full picture. Glance at this before reading the chapters and again before interviews.
 
-![DSA topic map diagram](/ai-engineering-journey/img/visual/03-dsa-topic-map.svg)
+![DSA topic map diagram](/img/visual/03-dsa-topic-map.svg)
 
 ## What the diagram shows
 

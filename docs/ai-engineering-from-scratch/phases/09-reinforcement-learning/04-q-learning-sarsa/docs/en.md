@@ -19,7 +19,7 @@ This is the pivot on which all of modern RL — DQN, A2C, PPO, SAC — turns. Th
 
 ## The Concept
 
-![Q-learning vs SARSA: off-policy max vs on-policy Q(s', a')](/ai-engineering-journey/img/visual/td.svg)
+![Q-learning vs SARSA: off-policy max vs on-policy Q(s', a')](/img/visual/td.svg)
 
 **The TD(0) update for V:**
 

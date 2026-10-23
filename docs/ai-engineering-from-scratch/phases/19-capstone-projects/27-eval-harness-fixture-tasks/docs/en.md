@@ -31,10 +31,10 @@ The harness is the program that turns these failures into facts. It runs every f
 
 ```mermaid
 flowchart LR
-  F1[fixtures/task_001/<br/>task.json + expected/] --> Harness
-  F2[fixtures/task_002/<br/>...] --> Harness
-  Harness[Harness<br/>for each task:<br/>setup / run agent k samples /<br/>verify each sample /<br/>record latency, cost]
-  Harness --> Report[EvalReport<br/>pass@1 / pass@k<br/>mean ms / p95 ms<br/>mean cost]
+  F1["fixtures/task_001/<br/>task.json + expected/"] --> Harness
+  F2["fixtures/task_002/<br/>..."] --> Harness
+  Harness["Harness<br/>for each task:<br/>setup / run agent k samples /<br/>verify each sample /<br/>record latency, cost"]
+  Harness --> Report["EvalReport<br/>pass@1 / pass@k<br/>mean ms / p95 ms<br/>mean cost"]
 ```
 
 A `FixtureTask` is a small JSON file plus an optional `expected/` directory. The JSON declares an `id`, a `goal` (the prompt fed to the agent), a `setup` block (files to drop into the scratch dir), and a `verifier` block. The verifier block names a function in the harness's verifier registry and supplies its arguments.

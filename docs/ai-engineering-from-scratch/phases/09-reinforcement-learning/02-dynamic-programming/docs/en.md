@@ -17,7 +17,7 @@ You need them in 2026 for three reasons. First, every tabular environment in RL 
 
 ## The Concept
 
-![Policy iteration and value iteration, side by side](../assets/dp.svg)
+![Policy iteration and value iteration, side by side](/ai-engineering-journey/img/visual/dp.svg)
 
 **Two algorithms, both fixed-point iteration on Bellman.**
 

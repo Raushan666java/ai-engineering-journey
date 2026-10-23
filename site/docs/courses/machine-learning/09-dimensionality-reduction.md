@@ -121,19 +121,19 @@ Cumulative Ratio:  [0.54, 0.81, 0.92, 0.97, 1.00]
 ```
 
 ```mermaid
-bar
-    title PCA Projection (2D to 1D)
-    x-axis Data Points
-    y-axis Feature Value
-    "P1 Original": 3.2
-    "P1 Original": 1.8
-    "P1 Projected": 3.6
-    "P2 Original": 5.1
-    "P2 Original": 3.9
-    "P2 Projected": 5.4
-    "P3 Original": 6.8
-    "P3 Original": 7.2
-    "P3 Projected": 6.9
+xychart-beta
+    title "PCA Projection (2D to 1D)"
+    x-axis [P1 Original, P1 Original, P1 Projected, P2 Original, P2 Original, P2 Projected, P3 Original, P3 Original, P3 Projected]
+    y-axis "Feature Value" 0 --> 0
+    bar [3.2]
+    bar [1.8]
+    bar [3.6]
+    bar [5.1]
+    bar [3.9]
+    bar [5.4]
+    bar [6.8]
+    bar [7.2]
+    bar [6.9]
 ```
 
 ```mermaid

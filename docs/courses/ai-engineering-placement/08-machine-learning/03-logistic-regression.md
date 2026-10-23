@@ -34,8 +34,8 @@ Understanding logistic regression is fundamental for AI engineers. This section 
 
 ```mermaid
 flowchart LR
-    A[Features X] --> B[Linear Combination z = Xw + b]
-    B --> C[Sigmoid: p = 1/(1+e^-z)]
+    A[Features X] --> B["Linear Combination z = Xw + b"]
+    B --> C["Sigmoid: p = 1/(1+e^-z)"]
     C --> D{Binary?}
     D -->|Yes| E[Cross-Entropy Loss]
     D -->|No| F[Softmax]
@@ -43,7 +43,7 @@ flowchart LR
     E --> H[Gradient Descent]
     G --> H
     H --> I[Optimized Weights]
-    I --> J[Predict: p > 0.5]
+    I --> J["Predict: p > 0.5"]
 
 ```
 ## 3.1 Sigmoid & Odds

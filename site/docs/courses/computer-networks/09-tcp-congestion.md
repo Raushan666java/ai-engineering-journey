@@ -75,7 +75,7 @@ flowchart TD
         B --> E[Fast Retransmit]
         E --> F[Fast Recovery / Slow Start]
         C --> G[Timeout Retransmit]
-        G --> H[Slow Start (cwnd=1)]
+        G --> H["Slow Start (cwnd=1)"]
     end
 
     subgraph Control["Control Layer"]
@@ -87,11 +87,11 @@ flowchart TD
     end
 
     subgraph Variants["TCP Variants"]
-        I --> L[Tahoe: go to slow start]
-        I --> M[Reno: fast recovery]
-        M --> N[NewReno: partial ACK]
-        N --> O[Cubic: time-based growth]
-        O --> P[BBR: model-based]
+        I --> L["Tahoe: go to slow start"]
+        I --> M["Reno: fast recovery"]
+        M --> N["NewReno: partial ACK"]
+        N --> O["Cubic: time-based growth"]
+        O --> P["BBR: model-based"]
     end
 
     classDef detect fill:#FF5722,color:#fff

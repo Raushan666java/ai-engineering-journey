@@ -270,16 +270,16 @@ TID   PID   LEN   UID   FC   Start  Count
 ```mermaid
 flowchart LR
     subgraph Transport[Transport Layer]
-        TH[Transport Header<br/>FIR/FIN/Seq - 1B]
+        TH["Transport Header<br/>FIR/FIN/Seq - 1B"]
     end
     subgraph Application[Application Layer]
-        AH[App Header<br/>AC - 1B | IIN - 2B | App Seq - 1B]
+        AH["App Header<br/>AC - 1B | IIN - 2B | App Seq - 1B"]
         subgraph Fragment1[Fragment 1]
-            OH1[Object Header<br/>Group/Var - 2B | Count - 2B]
+            OH1["Object Header<br/>Group/Var - 2B | Count - 2B"]
             O1[Object Data]
         end
         subgraph Fragment2[Fragment 2]
-            OH2[Object Header<br/>Group/Var - 2B | Count - 2B]
+            OH2["Object Header<br/>Group/Var - 2B | Count - 2B"]
             O2[Object Data]
         end
     end

@@ -35,7 +35,7 @@ flowchart LR
     A[Grammar G] --> B[Eliminate Left Recursion]
     B --> C[Left Factor]
     C --> D[Compute FIRST & FOLLOW]
-    D --> E{LL(1) Valid?}
+    D --> E{"LL(1) Valid?"}
     E -->|Yes| F[Build Parsing Table]
     E -->|No| B
     F --> G[Recursive Descent / Table-Driven Parser]

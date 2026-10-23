@@ -41,7 +41,7 @@ Understanding dependency injection is fundamental for AI engineers. This section
 
 ```mermaid
 flowchart LR
-    A[DI Concepts] --> B[Depends() function]
+    A[DI Concepts] --> B["Depends() function"]
     B --> C[Class Dependencies]
     C --> D[Generator Dependencies]
     D --> E[Parameterized DI]

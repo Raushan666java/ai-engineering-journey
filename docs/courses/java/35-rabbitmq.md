@@ -37,7 +37,7 @@ flowchart TD
     B --> B2[AMQP protocol]
     C --> C1[RabbitTemplate]
     C --> C2[Correlation ID]
-    D --> D1[@RabbitListener]
+    D --> D1["@RabbitListener"]
     D --> D2[Manual ack]
     E --> E1[DLQ / Retry]
     E --> E2[Idempotent consumers]

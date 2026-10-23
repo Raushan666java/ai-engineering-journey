@@ -1015,18 +1015,18 @@ Choosing how to source AI capability is a critical strategic decision. The wrong
 ```mermaid
 flowchart TB
     subgraph Options[Sourcing Options for AI]
-        A[Buy: SaaS API]
-        B[Build: Custom Model]
-        C[Partner: Consultancy]
+        A["Buy: SaaS API"]
+        B["Build: Custom Model"]
+        C["Partner: Consultancy"]
     end
     subgraph BuyDetails[Buy - SaaS API]
-        A1[OpenAI GPT-4o, Claude, Gemini]
-        A2[Pre-built APIs: vision, speech, translation]
-        A3[AI SaaS: Zendesk AI, Salesforce Einstein]
+        A1["OpenAI GPT-4o, Claude, Gemini"]
+        A2["Pre-built APIs: vision, speech, translation"]
+        A3["AI SaaS: Zendesk AI, Salesforce Einstein"]
     end
     subgraph BuildDetails[Build - Custom]
         B1[Fine-tune open-source LLM]
-        B2[Train from scratch (rare)]
+        B2["Train from scratch (rare)"]
         B3[Custom RAG pipeline]
     end
     subgraph PartnerDetails[Partner]

@@ -129,7 +129,7 @@ flowchart LR
     B --> C["Class: 'Benign' (p=0.97)"]
     
     A --> D[Compute ∇_x Loss]
-    D --> E[Apply Perturbation<br/>x' = x + ε·sign(∇_x)]
+    D --> E["Apply Perturbation<br/>x' = x + ε·sign(∇_x)"]
     E --> F[Adversarial Input x']
     F --> G[DNN Classifier]
     G --> H["Class: 'Malicious' (p=0.01)"]
@@ -375,16 +375,16 @@ Securing ML in production requires controls at every layer of the pipeline.
 
 ```mermaid
 flowchart LR
-    A[Data Ingestion] --> B{Data Validation<br/}/ Schema Check}
+    A[Data Ingestion] --> B{"Data Validation<br/}/ Schema Check}"}
     B --> C[Feature Engineering]
-    C --> D{Anomaly Detection<br/}/ Adversarial Filter}
+    C --> D{"Anomaly Detection<br/}/ Adversarial Filter}"}
     D --> E[Model Training]
-    E --> F{Model Evaluation<br/}/ Robustness Test}
-    F --> G{Model Signing<br/}/ Attestation}
+    E --> F{"Model Evaluation<br/}/ Robustness Test}"}
+    F --> G{"Model Signing<br/}/ Attestation}"}
     G --> H[Model Registry]
-    H --> I{Deployment Gate<br/}/ Canary Release}
+    H --> I{"Deployment Gate<br/}/ Canary Release}"}
     I --> J[Inference Endpoint]
-    J --> K{Monitoring<br/}/ Drift Detection}
+    J --> K{"Monitoring<br/}/ Drift Detection}"}
     K -->|Retrain| A
     
     style B fill:#ffcc80

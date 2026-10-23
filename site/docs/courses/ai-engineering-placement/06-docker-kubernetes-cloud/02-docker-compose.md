@@ -90,10 +90,10 @@ flowchart TD
     B --> D[Pull/Build images]
     B --> E[Create volumes]
     B --> F[Start containers in order]
-    C --> G[app-network (bridge)]
-    F --> H[api:8000]
-    F --> I[db:5432]
-    F --> J[redis:6379]
+    C --> G["app-network (bridge)"]
+    F --> H["api:8000"]
+    F --> I["db:5432"]
+    F --> J["redis:6379"]
     H --> I
     H --> J
 ```

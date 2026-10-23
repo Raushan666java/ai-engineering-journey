@@ -21,7 +21,7 @@ Every diffusion pipeline in 2026 ships an inpainting mode. Flux.1-Fill, Stable D
 
 ## The Concept
 
-![Inpainting: mask-aware denoising with context-preserving reinjection](../assets/inpainting.svg)
+![Inpainting: mask-aware denoising with context-preserving reinjection](/ai-engineering-journey/img/visual/inpainting.svg)
 
 ### The naive approach (and why it's wrong)
 

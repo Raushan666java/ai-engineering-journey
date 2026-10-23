@@ -915,22 +915,22 @@ for (let i = 0; i <= 10; i += 5) {
 
 ```mermaid
 flowchart TB
-    START([Start]) --> INPUT[Input f, a, b, tol]
-    INPUT --> CHECK{f(a) ? f(b) < 0?}
-    CHECK -->|No| ERR[Error: No sign change]
+    START([Start]) --> INPUT["Input f, a, b, tol"]
+    INPUT --> CHECK{"f(a) ? f(b) < 0?"}
+    CHECK -->|No| ERR["Error: No sign change"]
     CHECK -->|Yes| LOOP
     subgraph LOOP [Iteration Loop]
-        C[Compute c = (a+b)/2]
-        C --> FC[Compute f[c]]
-        FC --> CONV{|f[c]| < tol OR (b-a)/2 < tol?}
+        C["Compute c = (a+b)/2"]
+        C --> FC["Compute f[c]"]
+        FC --> CONV{"|f[c]| < tol OR (b-a)/2 < tol?"}
         CONV -->|Yes| DONE[Return c]
-        CONV -->|No| SIGN{f[a] ? f[c] < 0?}
-        SIGN -->|Yes| SETB[Set b = c]
-        SIGN -->|No| SETA[Set a = c]
+        CONV -->|No| SIGN{"f[a] ? f[c] < 0?"}
+        SIGN -->|Yes| SETB["Set b = c"]
+        SIGN -->|No| SETA["Set a = c"]
         SETB --> LOOP
         SETA --> LOOP
     end
-    DONE --> OUTPUT[Output root, iterations]
+    DONE --> OUTPUT["Output root, iterations"]
     OUTPUT --> END([End])
 ```
 
@@ -938,11 +938,11 @@ flowchart TB
 
 ```mermaid
 flowchart TB
-    START([Start x0]) --> EVAL[Compute f[x?] and f'[x?]]
-    EVAL --> CHECK{f'[x?] = 0?}
-    CHECK -->|Yes| FAIL[Fail: zero derivative]
-    CHECK -->|No| UPDATE[x??1 = x? - f[x?]/f'[x?]]
-    UPDATE --> CONV{|f[x??1]| < tol?}
+    START([Start x0]) --> EVAL["Compute f[x?] and f'[x?]"]
+    EVAL --> CHECK{"f'[x?] = 0?"}
+    CHECK -->|Yes| FAIL["Fail: zero derivative"]
+    CHECK -->|No| UPDATE["x??1 = x? - f[x?]/f'[x?]"]
+    UPDATE --> CONV{"|f[x??1]| < tol?"}
     CONV -->|Yes| DONE[Return x??1]
     CONV -->|No| COUNT{Max iterations reached?}
     COUNT -->|Yes| DONE2[Return best estimate]

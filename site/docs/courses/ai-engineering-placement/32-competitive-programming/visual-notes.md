@@ -10,7 +10,7 @@ sidebar_position: 361
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Training That Crushes Interviews](visual/32-competitive-programming.svg)
+![Training That Crushes Interviews](/ai-engineering-journey/img/visual/32-competitive-programming.svg)
 
 # What the diagram shows
 

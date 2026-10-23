@@ -19,7 +19,7 @@ PPO (Schulman et al. 2017) replaces the hard trust-region constraint with a simp
 
 ## The Concept
 
-![PPO clipped surrogate objective: ratio clipping at 1 ± ε](../assets/ppo.svg)
+![PPO clipped surrogate objective: ratio clipping at 1 ± ε](/ai-engineering-journey/img/visual/ppo.svg)
 
 **The importance ratio.**
 

@@ -23,7 +23,7 @@ This lesson names the tradeoffs so you can pick on evidence, not on whatever was
 
 ## The Concept
 
-![Dense, sparse, and multi-vector embeddings](../assets/embedding-modes.svg)
+![Dense, sparse, and multi-vector embeddings](/ai-engineering-journey/img/visual/embedding-modes.svg)
 
 **Dense embeddings.** One vector per passage (usually 384-3,072 dimensions). Cosine similarity ranks passages by semantic proximity. OpenAI `text-embedding-3-large`, BGE-M3 dense mode, Voyage-3. Default choice.
 

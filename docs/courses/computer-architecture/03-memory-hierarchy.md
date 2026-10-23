@@ -353,13 +353,16 @@ flowchart TD
 ```mermaid
 flowchart TD
     subgraph Set 0
-        D00[Data 0] D01[Data 1]
+        D00[Data 0]
+        D01[Data 1]
     end
     subgraph Set 1
-        D10[Data 0] D11[Data 1]
+        D10[Data 0]
+        D11[Data 1]
     end
     subgraph Set N-1
-        DN0[Data 0] DN1[Data 1]
+        DN0[Data 0]
+        DN1[Data 1]
     end
     ADDR[Address] -->|Set Index| DEC[Set Decoder]
     DEC --> S0[Set 0]
@@ -1045,22 +1048,25 @@ flowchart TD
 ```mermaid
 flowchart TD
     subgraph Core0[Core 0]
-        C0L1I[L1 Instruction<br/>32 KB] C0L1D[L1 Data<br/>48 KB]
-        C0L2[L2 Cache<br/>2 MB]
+        C0L1I["L1 Instruction<br/>32 KB"]
+        C0L1D["L1 Data<br/>48 KB"]
+        C0L2["L2 Cache<br/>2 MB"]
     end
     subgraph Core1[Core 1]
-        C1L1I[L1 Instruction<br/>32 KB] C1L1D[L1 Data<br/>48 KB]
-        C1L2[L2 Cache<br/>2 MB]
+        C1L1I["L1 Instruction<br/>32 KB"]
+        C1L1D["L1 Data<br/>48 KB"]
+        C1L2["L2 Cache<br/>2 MB"]
     end
     subgraph Core2[Core N]
-        CNL1I[L1 I] CNL1D[L1 D]
+        CNL1I[L1 I]
+        CNL1D[L1 D]
         CNL2[L2]
     end
-    C0L2 --> L3[Shared L3 Cache<br/>16-64 MB]
+    C0L2 --> L3["Shared L3 Cache<br/>16-64 MB"]
     C1L2 --> L3
     CNL2 --> L3
-    L3 --> MEM[Main Memory<br/>DDR5/HBM]
-    L3 --> COH[Cache Coherence<br/>MESI/MOESI Protocol]
+    L3 --> MEM["Main Memory<br/>DDR5/HBM"]
+    L3 --> COH["Cache Coherence<br/>MESI/MOESI Protocol"]
     COH --> C0L1I
     COH --> C0L1D
     COH --> C1L1I

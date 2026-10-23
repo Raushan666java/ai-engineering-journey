@@ -36,11 +36,11 @@ By the end of this chapter, students will be able to:
 flowchart LR
     S0[Classes and Instances]
     S1[Instance Methods vs Class Attributes]
-    S2[@classmethod and @staticmethod]
-    S3[@property Decorator]
+    S2["@classmethod and @staticmethod"]
+    S3["@property Decorator"]
     S4[__slots__]
     S5[Name Mangling]
-    S6[@dataclass]
+    S6["@dataclass"]
     S7[Method Types Summary]
     S8[Class as a Callable]
     S0 --> S1

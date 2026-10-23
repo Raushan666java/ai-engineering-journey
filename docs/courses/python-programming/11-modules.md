@@ -37,7 +37,7 @@ By the end of this chapter, students will be able to:
 flowchart LR
     S0[Module Basics]
     S1[Import Mechanisms]
-    S2[if __name__ == "__main__"]
+    S2["if __name__ == #quot;__main__#quot;"]
     S3[Packages]
     S4[Absolute vs Relative Imports]
     S5[sys.path and Module Search]

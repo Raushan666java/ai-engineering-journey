@@ -2,7 +2,7 @@
 
 > One diagram, the full picture. Glance at this before reading the chapters and again before interviews.
 
-![Python skill tree diagram](visual/01-python-skill-tree.svg)
+![Python skill tree diagram](/ai-engineering-journey/img/visual/01-python-skill-tree.svg)
 
 ## What the diagram shows
 

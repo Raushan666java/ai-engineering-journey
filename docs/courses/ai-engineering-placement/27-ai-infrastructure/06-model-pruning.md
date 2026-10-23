@@ -783,15 +783,15 @@ Relative reconstruction error: 0.8743
 ```mermaid
 flowchart TB
     subgraph SparseGPT_Flow["SparseGPT Pruning Procedure"]
-        A[Input: Dense Layer Weights] --> B[Compute Hessian<br/>Approximation]
+        A["Input: Dense Layer Weights"] --> B["Compute Hessian<br/>Approximation"]
         B --> C[Process Column-by-Column]
-        C --> D[Compute Importance<br/>Score = w^2 / H^{-1}]
+        C --> D["Compute Importance<br/>Score = w^2 / H^{-1}"]
         D --> E{Score Below<br/>Threshold?}
         E -->|Yes| F[Prune Weight]
         E -->|No| G[Keep Weight]
-        G --> H[Reconstruct: Adjust<br/>Surviving Weights]
+        G --> H["Reconstruct: Adjust<br/>Surviving Weights"]
         F --> H
-        H --> I[Pruned Layer<br/>with Compensated Weights]
+        H --> I["Pruned Layer<br/>with Compensated Weights"]
     end
 ```
 

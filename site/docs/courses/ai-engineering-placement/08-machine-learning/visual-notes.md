@@ -10,7 +10,7 @@ sidebar_position: 125
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![The ML Lifecycle](visual/08-machine-learning.svg)
+![The ML Lifecycle](/ai-engineering-journey/img/visual/08-machine-learning.svg)
 
 # What the diagram shows
 

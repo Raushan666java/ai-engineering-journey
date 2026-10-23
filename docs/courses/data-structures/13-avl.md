@@ -36,8 +36,8 @@ The **AVL tree** (named after inventors Adelson-Velsky and Landis, 1962) is the 
 flowchart TD
     A[AVL Tree] --> B[BST Insert/Delete]
     B --> C{Balance Factor Check}
-    C --> D[|bf| ≤ 1 ✓]
-    C --> E[|bf| > 1 ✗]
+    C --> D["|bf| ≤ 1 ✓"]
+    C --> E["|bf| > 1 ✗"]
     D --> F[Done]
     E --> G{Which Rotation?}
     G --> H[LL → Right Rotate]

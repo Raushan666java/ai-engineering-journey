@@ -54,16 +54,16 @@ RLHF is the dominant alignment technique used in ChatGPT, Claude, Gemini, and mo
 flowchart LR
     subgraph Data[Preference Data]
         D1[Prompt] --> D2[Generate Responses A & B]
-        D2 --> D3[Human Labels: A > B]
+        D2 --> D3["Human Labels: A > B"]
     end
     subgraph RM[Reward Model Training]
         D3 --> R1[Train RM to predict preferences]
-        R1 --> R2[Reward Model r_θ(x,y)]
+        R1 --> R2["Reward Model r_θ(x,y)"]
     end
     subgraph RL[RL Fine-Tuning]
         R2 --> P1[PPO Optimize Policy π_θ]
         P1 --> P2[Generate response y ~ π_θ]
-        P2 --> P3[Score with r_θ(x,y)]
+        P2 --> P3["Score with r_θ(x,y)"]
         P3 --> P4[Update π_θ via PPO]
         P4 --> P2
     end
@@ -732,7 +732,7 @@ flowchart TB
     subgraph Phase1["Phase 1: Supervised Self-Critique"]
         A1[Generate Response] --> A2[Self-Critique against Constitution]
         A2 --> A3[Revise Response]
-        A3 --> A4[Fine-tune on (harmful, revised) pairs]
+        A3 --> A4["Fine-tune on (harmful, revised) pairs"]
     end
     subgraph Phase2["Phase 2: RLAIF"]
         B1[Generate Two Responses] --> B2[AI Evaluates against Constitution]

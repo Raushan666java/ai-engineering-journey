@@ -50,7 +50,9 @@ flowchart TD
         NL[Natural Language Request] --> PLAN[Plan Solution]
         PLAN --> CODE[Generate Code]
         CODE --> TEST[Run Tests]
-        TEST -->{Pass?}
+        TEST --> P{Pass?}
+        P -->|Yes| Pass
+        P -->|No| Fail
         Pass --> REVIEW[Reviewer Checks]
         Pass -->|Yes| DEPLOY
         Fail --> FIX[Fix Errors]

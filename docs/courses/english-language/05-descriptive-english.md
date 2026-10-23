@@ -1028,15 +1028,15 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[Letter Writing] --> B[Sender's Address<br/>Top Right]
-    B --> C[Date<br/>Below Address]
-    C --> D[Receiver's Address<br/>Left Side]
-    D --> E[Subject Line<br/>8-12 words, precise]
+    A[Letter Writing] --> B["Sender's Address<br/>Top Right"]
+    B --> C["Date<br/>Below Address"]
+    C --> D["Receiver's Address<br/>Left Side"]
+    D --> E["Subject Line<br/>8-12 words, precise"]
     E --> F[Salutation]
     F --> G{Recipient known?}
-    G -->|Yes, by name| H[Dear Mr/Ms Name]
-    G -->|No, generic| I[Dear Sir/Madam]
-    H --> J[Body Para 1 - Introduce &amp; State Purpose]
+    G -->|"Yes, by name"| H[Dear Mr/Ms Name]
+    G -->|"No, generic"| I[Dear Sir/Madam]
+    H --> J["Body Para 1 - Introduce &amp; State Purpose"]
     I --> J
     J --> K[Body Para 2 - Provide Details]
     K --> L[Body Para 3 - Expected Action]
@@ -1045,7 +1045,7 @@ flowchart TD
     M -->|Dear Mr/Ms X| O[Yours sincerely]
     N --> P[Signature with Name]
     O --> P
-    P --> Q[Designation &amp; Contact<br/>(optional)]
+    P --> Q["Designation &amp; Contact<br/>(optional)"]
 ```
 
 ---

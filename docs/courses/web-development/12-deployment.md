@@ -30,9 +30,9 @@ graph TD
     A[Build Process Configuration]
     B[Environment Variable Management]
     A --> B
-    C[Vercel Deployment (Next.js)]
+    C["Vercel Deployment (Next.js)"]
     B --> C
-    D[Railway Deployment (Backend)]
+    D["Railway Deployment (Backend)"]
     C --> D
     E[Docker Multi-Stage Builds]
     D --> E

@@ -908,10 +908,10 @@ class MultivariableCalculus {
 
 ```mermaid
 flowchart LR
-    A[Start ?0] --> B[Compute ?f(?)]
-    B --> C{??f(?)? < e?}
+    A[Start ?0] --> B["Compute ?f(?)"]
+    B --> C{"??f(?)? < e?"}
     C -->|Yes| D[Converged]
-    C -->|No| E[? ? ? - a?f(?)]
+    C -->|No| E["? ? ? - a?f(?)"]
     E --> B
     D --> F[Return ?*]
 ```
@@ -920,10 +920,10 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    A[Region R] --> B[Type I: x-simple]
-    A --> C[Type II: y-simple]
-    B --> D[??? ?_{g1(x)}^{g2(x)} f dy dx]
-    C --> E[??? ?_{h1(y)}^{h2(y)} f dx dy]
+    A[Region R] --> B["Type I: x-simple"]
+    A --> C["Type II: y-simple"]
+    B --> D["??? ?_{g1(x)}^{g2(x)} f dy dx"]
+    C --> E["??? ?_{h1(y)}^{h2(y)} f dx dy"]
     D --> F[Evaluate inner integral]
     F --> G[Evaluate outer integral]
     E --> H[Evaluate inner integral]

@@ -10,7 +10,7 @@ sidebar_position: 205
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Evaluation and Observability in One View](visual/15-ai-evaluation-observability.svg)
+![Evaluation and Observability in One View](/ai-engineering-journey/img/visual/15-ai-evaluation-observability.svg)
 
 # What the diagram shows
 

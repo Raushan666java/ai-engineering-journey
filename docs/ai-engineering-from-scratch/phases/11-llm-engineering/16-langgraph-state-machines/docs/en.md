@@ -17,7 +17,7 @@ LangGraph is the library that ships this abstraction. It is not an agent framewo
 
 ## The Concept
 
-![LangGraph StateGraph: nodes, edges, and the checkpointer](../assets/langgraph-stategraph.svg)
+![LangGraph StateGraph: nodes, edges, and the checkpointer](/ai-engineering-journey/img/visual/langgraph-stategraph.svg)
 
 A `StateGraph` has three things.
 

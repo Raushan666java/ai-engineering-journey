@@ -64,14 +64,14 @@ flowchart LR
     A --> C[Palindrome]
     A --> D[Suffix Structures]
     A --> E[Multi-Pattern]
-    B --> F[Naive O(nm)]
-    B --> G[KMP O(n+m)]
-    B --> H[Rabin-Karp O(n+m) avg]
-    B --> I[Z-Algorithm O(n)]
-    C --> J[Manacher O(n)]
-    D --> K[Suffix Array O(n log n)]
-    D --> L[LCP Array O(n)]
-    E --> M[Aho-Corasick O(n)]
+    B --> F["Naive O(nm)"]
+    B --> G["KMP O(n+m)"]
+    B --> H["Rabin-Karp O(n+m) avg"]
+    B --> I["Z-Algorithm O(n)"]
+    C --> J["Manacher O(n)"]
+    D --> K["Suffix Array O(n log n)"]
+    D --> L["LCP Array O(n)"]
+    E --> M["Aho-Corasick O(n)"]
 ```
 
 ---

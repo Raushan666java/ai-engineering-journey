@@ -151,11 +151,11 @@ flowchart TD
     end
 
     subgraph TS[TypeScript if/else if/else + switch]
-        A2[if (condition)] -->|True| B2[if body]
+        A2["if (condition)"] -->|True| B2[if body]
         A2 -->|False| C2[else if]
         C2 -->|True| D2[else if body]
-        C2 -->|False| E2[else => default]
-        F2[switch (value)] --> G2[case matching]
+        C2 -->|False| E2["else => default"]
+        F2["switch (value)"] --> G2[case matching]
         G2 --> H2[break / default]
     end
 ```

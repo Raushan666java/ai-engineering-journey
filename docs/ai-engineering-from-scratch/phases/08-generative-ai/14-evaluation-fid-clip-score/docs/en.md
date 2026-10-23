@@ -19,7 +19,7 @@ You will also see: IS (inception score, largely retired), KID, CMMD, ImageReward
 
 ## The Concept
 
-![FID, CLIP, and preference: three axes, different failure modes](../assets/evaluation.svg)
+![FID, CLIP, and preference: three axes, different failure modes](/ai-engineering-journey/img/visual/evaluation.svg)
 
 ### FID — sample quality
 

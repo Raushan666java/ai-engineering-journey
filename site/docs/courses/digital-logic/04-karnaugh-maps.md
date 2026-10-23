@@ -846,7 +846,7 @@ flowchart TD
 block-beta
   columns 5
   KMap["K-Map<br/>F(A,B,C,D)"]:1
-  Space[""]:1
+  Space[" "]:1
   CD00["CD=00"] CD01["CD=01"] CD11["CD=11"] CD10["CD=10"]
   AB00["AB=00"]:1 M0["0"] M1["1"] M3["3"] M2["2"]
   AB01["AB=01"]:1 M4["4"] M5["5"] M7["7"] M6["6"]

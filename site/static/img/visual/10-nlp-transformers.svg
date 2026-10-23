@@ -1,0 +1,32 @@
+<svg viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="10_nlp_tv-title 10_nlp_tv-desc">
+<title id="10_nlp_tv-title">Transformer — the stack that changed NLP</title>
+<desc id="10_nlp_tv-desc">Token embeddings, positional encoding, self-attention, feed-forward layers, and the output head.</desc>
+<rect width="1000" height="640" fill="#ffffff"/>
+<rect x="120" y="84" width="760" height="64" fill="#f5f6f8"/>
+<line x1="120" y1="148" x2="880" y2="148" stroke="rgba(26,27,35,0.10)" stroke-width="1"/>
+<text x="140" y="112" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em" font-weight="400">L5</text>
+<text x="260" y="114" fill="#1a1b23" font-size="16" font-weight="600" font-family="system-ui, sans-serif">Output head</text>
+<text x="860" y="114" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="end" letter-spacing="0.08em">logits · softmax</text>
+<rect x="120" y="148" width="760" height="64" fill="#f5f6f8"/>
+<line x1="120" y1="212" x2="880" y2="212" stroke="rgba(26,27,35,0.10)" stroke-width="1"/>
+<text x="140" y="176" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em" font-weight="400">L4</text>
+<text x="260" y="178" fill="#1a1b23" font-size="16" font-weight="600" font-family="system-ui, sans-serif">Feed-forward network</text>
+<text x="860" y="178" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="end" letter-spacing="0.08em">relu · layernorm</text>
+<rect x="120" y="212" width="760" height="64" fill="rgba(46,133,85,0.08)"/>
+<line x1="120" y1="276" x2="880" y2="276" stroke="rgba(26,27,35,0.10)" stroke-width="1"/>
+<text x="140" y="240" fill="#2e8555" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em" font-weight="600">L3</text>
+<text x="260" y="242" fill="#1a1b23" font-size="16" font-weight="600" font-family="system-ui, sans-serif">Self-attention</text>
+<text x="860" y="242" fill="#2e8555" font-size="8" font-family="'Geist Mono', monospace" text-anchor="end" letter-spacing="0.08em">Q · K · V · heads</text>
+<rect x="120" y="276" width="760" height="64" fill="#f5f6f8"/>
+<line x1="120" y1="340" x2="880" y2="340" stroke="rgba(26,27,35,0.10)" stroke-width="1"/>
+<text x="140" y="304" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em" font-weight="400">L2</text>
+<text x="260" y="306" fill="#1a1b23" font-size="16" font-weight="600" font-family="system-ui, sans-serif">Embeddings + position</text>
+<text x="860" y="306" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="end" letter-spacing="0.08em">token ids → vectors</text>
+<rect x="120" y="340" width="760" height="64" fill="#f5f6f8"/>
+<line x1="120" y1="404" x2="880" y2="404" stroke="rgba(26,27,35,0.10)" stroke-width="1"/>
+<text x="140" y="368" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em" font-weight="400">L1</text>
+<text x="260" y="370" fill="#1a1b23" font-size="16" font-weight="600" font-family="system-ui, sans-serif">Input tokens</text>
+<text x="860" y="370" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="end" letter-spacing="0.08em">tokenizer · bpe</text>
+<text x="120" y="524" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">INTERVIEW ANGLE</text><text x="212" y="524" fill="#4f5d75" font-size="8" font-family="system-ui, sans-serif" font-style="italic">If you can draw this stack from memory, you can answer half of the modern LLM interview.</text>
+<line x1="120" y1="580" x2="880" y2="580" stroke="rgba(26,27,35,0.10)" stroke-width="1"/><text x="120" y="596" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">LEGEND</text><rect x="200" y="586" width="16" height="12" rx="2" fill="rgba(46,133,85,0.08)" stroke="#2e8555" stroke-width="1"/><text x="224" y="596" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">ACCENT = FOCAL</text><rect x="360" y="586" width="16" height="12" rx="2" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/><text x="384" y="596" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">PAPER = STEP</text>
+</svg>

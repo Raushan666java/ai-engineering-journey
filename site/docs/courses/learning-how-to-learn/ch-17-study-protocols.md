@@ -735,11 +735,11 @@ Each protocol works alone; together they form a complete daily system. This is t
 
 ```mermaid
 flowchart TD
-    A[Monday-Friday<br/>Full Warrior Protocol] --> B[Saturday<br/>Mock test + C/M/E/R analysis<br/>+ fluency mock interview]
-    B --> C[Sunday<br/>Weekly review + reward (macro)<br/>+ Kaikaku decision + next week plan]
+    A["Monday-Friday<br/>Full Warrior Protocol"] --> B["Saturday<br/>Mock test + C/M/E/R analysis<br/>+ fluency mock interview"]
+    B --> C["Sunday<br/>Weekly review + reward (macro)<br/>+ Kaikaku decision + next week plan"]
     C --> D{Plan works?}
     D -->|Yes| A
-    D -->|No| E[Kaikaku: replace broken methods]
+    D -->|No| E["Kaikaku: replace broken methods"]
     E --> A
 ```
 

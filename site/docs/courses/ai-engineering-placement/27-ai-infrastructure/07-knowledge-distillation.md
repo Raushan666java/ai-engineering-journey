@@ -282,9 +282,9 @@ flowchart LR
         S_s --> S_p[Soft targets p_s]
     end
     subgraph Loss["Loss Computation"]
-        KL[KL Divergence<br/>D_KL(p_t || p_s)]
-        CE[Cross-Entropy<br/>with labels]
-        Combined[Combined Loss<br/>alpha * T^2 * KL + (1-alpha) * CE]
+        KL["KL Divergence<br/>D_KL(p_t || p_s)"]
+        CE["Cross-Entropy<br/>with labels"]
+        Combined["Combined Loss<br/>alpha * T^2 * KL + (1-alpha) * CE"]
     end
 
     X --> T
@@ -1227,24 +1227,24 @@ print(f"{'Model Size (GB)':<22} {results['student_size_gb']:<12.1f} "
 ```mermaid
 flowchart TB
     subgraph Stage1["Stage 1: Teacher Preparation"]
-        S1A[Select teacher model<br/>e.g., Llama 3.1 70B]
+        S1A["Select teacher model<br/>e.g., Llama 3.1 70B"]
         S1B[Freeze all parameters]
         S1C[Set to eval mode]
     end
     subgraph Stage2["Stage 2: Student Architecture"]
-        S2A[Define constraints<br/>size, latency, device]
-        S2B[Select architecture<br/>e.g., TinyLLM 1.1B]
-        S2C[Initialize student<br/>weights (random)]
+        S2A["Define constraints<br/>size, latency, device"]
+        S2B["Select architecture<br/>e.g., TinyLLM 1.1B"]
+        S2C["Initialize student<br/>weights (random)"]
     end
     subgraph Stage3["Stage 3: Data Preparation"]
         S3A[Curate training data]
-        S3B[Generate teacher<br/>soft targets]
-        S3C[Create data loader<br/>with temperature scaling]
+        S3B["Generate teacher<br/>soft targets"]
+        S3C["Create data loader<br/>with temperature scaling"]
     end
     subgraph Stage4["Stage 4: Distillation Training"]
-        S4A[Off-policy phase<br/>T=4.0, alpha=0.7]
-        S4B[On-policy phase<br/>T=2.0, alpha=0.5]
-        S4C[Task-specific phase<br/>T=1.0, alpha=0.3]
+        S4A["Off-policy phase<br/>T=4.0, alpha=0.7"]
+        S4B["On-policy phase<br/>T=2.0, alpha=0.5"]
+        S4C["Task-specific phase<br/>T=1.0, alpha=0.3"]
     end
     subgraph Stage5["Stage 5: Evaluation & Deployment"]
         S5A[Evaluate accuracy]

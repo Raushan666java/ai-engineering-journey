@@ -143,11 +143,11 @@ The Read-Eval-Print Loop (REPL) is an interactive environment for experimenting 
 ```mermaid
 flowchart LR
     A[Type python in terminal] --> B[REPL Starts]
-    B --> C[Read: Parse Input]
-    C --> D[Eval: Execute Expression]
-    D --> E[Print: Display Result]
+    B --> C["Read: Parse Input"]
+    C --> D["Eval: Execute Expression"]
+    D --> E["Print: Display Result"]
     E --> B
-    B -.-> F[Type exit\(\)]
+    B -.-> F["Type exit\(\)"]
     F --> G[REPL Terminates]
 ```
 

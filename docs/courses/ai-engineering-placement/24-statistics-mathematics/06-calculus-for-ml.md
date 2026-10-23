@@ -112,7 +112,7 @@ flowchart TD
 ```mermaid
 flowchart LR
     subgraph LearningCurve[Learning Rate Schedules]
-        A[Constant lr] --> B[Steady progress, may overshoot]
+        A[Constant lr] --> B["Steady progress, may overshoot"]
         C[Step Decay] --> D[Reduce every k epochs]
         E[Exponential Decay] --> F[Smooth decay]
         G[Cosine Annealing] --> H[Cyclical warm restarts]
@@ -120,14 +120,14 @@ flowchart LR
     end
     
     subgraph Backprop[Backpropagation Flow]
-        K[Input x] --> L[Layer 1 h1 = W1*x + b1]
-        L --> M[Layer 2 h2 = W2*h1 + b2]
-        M --> N[Output y = W3*h2 + b3]
-        N --> O[Loss L(y, y_true)]
+        K[Input x] --> L["Layer 1 h1 = W1*x + b1"]
+        L --> M["Layer 2 h2 = W2*h1 + b2"]
+        M --> N["Output y = W3*h2 + b3"]
+        N --> O["Loss L(y, y_true)"]
         O --> P[Compute dL/dW3]
         P --> Q[Compute dL/dW2 via chain rule]
         Q --> R[Compute dL/dW1 via chain rule]
-        R --> S[Update all W = W - lr * dL/dW]
+        R --> S["Update all W = W - lr * dL/dW"]
     end
 ```
 

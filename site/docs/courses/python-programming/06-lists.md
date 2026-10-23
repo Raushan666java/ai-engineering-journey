@@ -94,15 +94,15 @@ const fromString = Array.from("hello");  // ['h', 'e', 'l', 'l', 'o']
 ```mermaid
 flowchart TD
     subgraph Python[Python List]
-        P1[List: mutable, typed elements] --> P2[append\(\) / extend\(\)]
+        P1["List: mutable, typed elements"] --> P2["append\(\) / extend\(\)"]
         P2 --> P3[Supports mixed types]
         P3 --> P4[list comprehension syntax]
     end
 
     subgraph TS[TypeScript Array]
-        T1[Array: mutable, typed elements] --> T2[push\(\) / concat\(\)]
-        T2 --> T3[Type-safe: number\[\] only numbers]
-        T3 --> T4[map\(\) / filter\(\) / reduce\(\)]
+        T1["Array: mutable, typed elements"] --> T2["push\(\) / concat\(\)"]
+        T2 --> T3["Type-safe: number\[\] only numbers"]
+        T3 --> T4["map\(\) / filter\(\) / reduce\(\)"]
     end
 ```
 

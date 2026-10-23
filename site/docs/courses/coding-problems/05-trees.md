@@ -49,7 +49,7 @@ mindmap
       Inorder → sorted for BST
       Preorder → root first
       Postorder → children before parent
-      Morris → O(1) space
+      Morris → ["O(1) space"]
     BFS Traversals
       Level order
       Zigzag level order

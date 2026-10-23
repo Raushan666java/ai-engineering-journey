@@ -458,9 +458,9 @@ print(min_operations([3, 2, 20, 1, 1, 3], 10))  # 5
 ```mermaid
 flowchart TD
     subgraph "Sliding Window Patterns"
-        A[Fixed Size k] --> B[Sum, Average, Max/Min]
-        C[Variable - At Most k] --> D[Distinct, Product, Sum]
-        E[Variable - Exactly k] --> F[Using atMost(k) - atMost(k-1)]
+        A[Fixed Size k] --> B["Sum, Average, Max/Min"]
+        C[Variable - At Most k] --> D["Distinct, Product, Sum"]
+        E[Variable - Exactly k] --> F["Using atMost(k) - atMost(k-1)"]
         G[Variable - Minimum] --> H[Shrink while condition met]
     end
 ```

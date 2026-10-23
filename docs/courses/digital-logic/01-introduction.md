@@ -666,7 +666,7 @@ flowchart TD
     Check -->|Same sign| Compare{Input sign vs<br/>result sign?}
     Compare -->|Same| OK[No overflow ?]
     Compare -->|Different| OVF[Overflow ?]
-    Check -->|Different signs| OK2[No overflow ?<br/>(result always valid)]
+    Check -->|Different signs| OK2["No overflow ?<br/>(result always valid)"]
 ```
 
 ### 4-Bit Ripple-Carry Adder
@@ -675,18 +675,27 @@ flowchart TD
 flowchart TD
     subgraph Inputs
         direction LR
-        A0[A0=1] B0[B0=0] Cin[C0=0]
-        A1[A1=0] B1[B1=1]
-        A2[A2=1] B2[B2=1]
-        A3[A3=0] B3[B3=0]
+        A0["A0=1"]
+        B0["B0=0"]
+        Cin["C0=0"]
+        A1["A1=0"]
+        B1["B1=1"]
+        A2["A2=1"]
+        B2["B2=1"]
+        A3["A3=0"]
+        B3["B3=0"]
     end
     subgraph Adders
-        FA0[FA0] -->|C1=0| FA1[FA1]
-        FA1 -->|C2=1| FA2[FA2]
-        FA2 -->|C3=0| FA3[FA3]
+        FA0[FA0] -->|"C1=0"| FA1[FA1]
+        FA1 -->|"C2=1"| FA2[FA2]
+        FA2 -->|"C3=0"| FA3[FA3]
     end
     subgraph Outputs
-        S0[S0=1] S1[S1=0] S2[S2=1] S3[S3=1] Cout[C4=0]
+        S0["S0=1"]
+        S1["S1=0"]
+        S2["S2=1"]
+        S3["S3=1"]
+        Cout["C4=0"]
     end
     A0 & B0 & Cin --> FA0 --> S0
     A1 & B1 --> FA1 --> S1

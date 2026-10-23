@@ -10,7 +10,7 @@ sidebar_position: 68
 
 > One diagram, the full picture. Glance at this before reading the chapters and again before interviews.
 
-![Git workflow diagram](visual/04-git-workflow.svg)
+![Git workflow diagram](/ai-engineering-journey/img/visual/04-git-workflow.svg)
 
 ## What the diagram shows
 

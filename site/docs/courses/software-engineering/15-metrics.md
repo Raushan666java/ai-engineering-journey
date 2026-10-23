@@ -76,15 +76,15 @@ GQM provides a structured way to derive metrics from goals:
 
 ```mermaid
 graph TD
-    GOAL[Goal: Improve defect detection] --> Q1[Question 1: How many defects are found before release?]
-    GOAL --> Q2[Question 2: Which phase finds the most defects?]
-    GOAL --> Q3[Question 3: How long do defects remain undetected?]
+    GOAL["Goal: Improve defect detection"] --> Q1["Question 1: How many defects are found before release?"]
+    GOAL --> Q2["Question 2: Which phase finds the most defects?"]
+    GOAL --> Q3["Question 3: How long do defects remain undetected?"]
     
-    Q1 --> M1[Metric: Pre-release defect density]
-    Q1 --> M2[Metric: Post-release defect density]
-    Q2 --> M3[Metric: Defects found per phase]
-    Q2 --> M4[Metric: Phase defect detection rate]
-    Q3 --> M5[Metric: Defect latency (days)]
+    Q1 --> M1["Metric: Pre-release defect density"]
+    Q1 --> M2["Metric: Post-release defect density"]
+    Q2 --> M3["Metric: Defects found per phase"]
+    Q2 --> M4["Metric: Phase defect detection rate"]
+    Q3 --> M5["Metric: Defect latency (days)"]
 ```
 
 **Detailed GQM Example — Improve Production Stability:**

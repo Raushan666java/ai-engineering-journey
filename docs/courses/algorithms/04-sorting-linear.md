@@ -38,9 +38,9 @@ flowchart LR
     A[Non-Comparison Sorting] --> B[Counting Sort]
     A --> C[Radix Sort]
     A --> D[Bucket Sort]
-    B --> E[O(n+k), stable]
-    C --> F[O(d(n+r)), stable]
-    D --> G[Expected O(n)]
+    B --> E["O(n+k), stable"]
+    C --> F["O(d(n+r)), stable"]
+    D --> G["Expected O(n)"]
     E --> H[Choose by key properties]
     F --> H
     G --> H

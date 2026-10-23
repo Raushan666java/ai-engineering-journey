@@ -409,11 +409,11 @@ flowchart LR
 
 | Time | Duration | Activity | Resource |
 |------|----------|----------|----------|
-| 0-15 min | 15 min | Warm-up drill | [Speed Drills](/speed-drills/) or 5 easy MCQs |
+| 0-15 min | 15 min | Warm-up drill | [Speed Drills](/ai-engineering-journey/speed-drills/) or 5 easy MCQs |
 | 15-105 min | 90 min | Deep study (1 subject) | Textbook/video + notes + Anki |
 | 105-135 min | 30 min | Practice (same subject) | Topic-wise questions |
 | 135-150 min | 15 min | Review + Anki cards | Mistake log, spaced repetition |
-| Bonus | 30 min | Current affairs / GA | [General Awareness](/general-awareness/) |
+| Bonus | 30 min | Current affairs / GA | [General Awareness](/ai-engineering-journey/general-awareness/) |
 
 ### Weekly Preparation Template
 
@@ -772,11 +772,11 @@ This repository is designed to support every stage of your preparation journey.
 | **Self-Assessment** | [Learning How to Learn ch 16](ch-16-self-assessment-strategy.md) | Score yourself 1-5 per subject, identify gaps |
 | **Concept Learning** | Subject courses (DBMS, OS, CN, DS, etc.) | Read chapters → solve MCQs → create Anki cards |
 | **Topic Practice** | Chapter exercises + MCQs | Solve all exercises per chapter |
-| **Applied Practice** | [Coding Problems](/coding-problems/) | Solve problems by topic with company tags |
-| **Speed Building** | [Speed Drills](/speed-drills/) | Timed sets with accuracy tracking |
-| **Mock Tests** | [Mock Tests](/mock-tests/) | Full-length timed mocks |
-| **PYQs** | [Government PYQs](/government-pyqs/) + [GATE PYQs](/gate-cs-preparation/) | Year-wise solved papers |
-| **Company Prep** | [Company QBs](/interview-preparation/) | Target-specific problems |
+| **Applied Practice** | [Coding Problems](/ai-engineering-journey/coding-problems/) | Solve problems by topic with company tags |
+| **Speed Building** | [Speed Drills](/ai-engineering-journey/speed-drills/) | Timed sets with accuracy tracking |
+| **Mock Tests** | [Mock Tests](/ai-engineering-journey/mock-tests/) | Full-length timed mocks |
+| **PYQs** | [Government PYQs](/ai-engineering-journey/government-pyqs/) + [GATE PYQs](/ai-engineering-journey/gate-cs-preparation/) | Year-wise solved papers |
+| **Company Prep** | [Company QBs](/ai-engineering-journey/interview-preparation/) | Target-specific problems |
 | **Revision** | Formula sheets + Anki + mistake log | Daily review |
 | **Re-assessment** | Self-assessment protocol (this chapter) | Monthly re-score |
 
@@ -1126,10 +1126,10 @@ flowchart TD
 |------|-------|
 | Assess my current level | [Self-Assessment Protocol](ch-16-self-assessment-strategy.md#q261) |
 | Learn a CS subject | Subject courses (DBMS, OS, CN, etc.) |
-| Practice coding | [Coding Problems](/coding-problems/) |
-| Build speed | [Speed Drills](/speed-drills/) |
-| Take a mock test | [Mock Tests](/mock-tests/) |
-| Solve PYQs | [Government PYQs](/government-pyqs/) or [GATE PYQs](/gate-cs-preparation/) |
+| Practice coding | [Coding Problems](/ai-engineering-journey/coding-problems/) |
+| Build speed | [Speed Drills](/ai-engineering-journey/speed-drills/) |
+| Take a mock test | [Mock Tests](/ai-engineering-journey/mock-tests/) |
+| Solve PYQs | [Government PYQs](/ai-engineering-journey/government-pyqs/) or [GATE PYQs](/ai-engineering-journey/gate-cs-preparation/) |
 | Analyze mistakes | [C/M/E/R Taxonomy](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/learning-how-to-learn/ch-15-exam-cracking-mastery.md#q232) |
 | Review strategy | [OODA Loop](ch-16-self-assessment-strategy.md#q267) |
 | Stay motivated | [Motivation Techniques](ch-16-self-assessment-strategy.md#q278) |

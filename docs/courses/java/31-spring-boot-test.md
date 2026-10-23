@@ -45,14 +45,14 @@ By the end of this chapter you will be able to:
 
 ```mermaid
 flowchart TD
-    A[Spring Boot Testing] --> B[@SpringBootTest]
+    A[Spring Boot Testing] --> B["@SpringBootTest"]
     A --> C[Test Slices]
     A --> D[Utilities]
     B --> B1[Full context]
     B --> B2[WebEnvironment modes]
-    C --> C1[@WebMvcTest]
-    C --> C2[@DataJpaTest]
-    C --> C3[@JsonTest]
+    C --> C1["@WebMvcTest"]
+    C --> C2["@DataJpaTest"]
+    C --> C3["@JsonTest"]
     D --> D1[TestRestTemplate]
     D --> D2[TestPropertyValues]
 ```

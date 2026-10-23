@@ -645,21 +645,21 @@ Model selection without cost analysis is incomplete. A model that scores 2% high
 ```mermaid
 quadrantChart
     title Model Pricing vs Performance (Cost per 1M Tokens vs MMLU)
-    x-axis Low Cost ($0.50) --> High Cost ($20.00)
-    y-axis Low Performance (0.6) --> High Performance (0.9)
+    x-axis "Low Cost ($0.50)" --> "High Cost ($20.00)"
+    y-axis "Low Performance (0.6)" --> "High Performance (0.9)"
     quadrant-1 "High Cost, Low Perf: AVOID"
     quadrant-2 "High Cost, High Perf: PREMIUM TIER"
     quadrant-3 "Low Cost, Low Perf: BASELINE"
     quadrant-4 "Low Cost, High Perf: SWEET SPOT"
-    GPT-4o: [$15, 0.875]
-    Claude-Opus: [$18, 0.882]
-    Gemini-Ultra: [$12, 0.87]
-    Llama-3.3-70B: [$1.5, 0.865]
-    Mistral-Large: [$3.5, 0.847]
-    DeepSeek-V2: [$0.5, 0.838]
-    Qwen-72B: [$0.9, 0.852]
-    Gemma-27B: [$0.3, 0.819]
-    Mixtral-8x22B: [$2.0, 0.815]
+    "GPT-4o ($15)": [0.75, 0.875]
+    "Claude-Opus ($18)": [0.9, 0.882]
+    "Gemini-Ultra ($12)": [0.6, 0.87]
+    "Llama-3.3-70B ($1.50)": [0.075, 0.865]
+    "Mistral-Large ($3.50)": [0.175, 0.847]
+    "DeepSeek-V2 ($0.50)": [0.025, 0.838]
+    "Qwen-72B ($0.90)": [0.045, 0.852]
+    "Gemma-27B ($0.30)": [0.015, 0.819]
+    "Mixtral-8x22B ($2.00)": [0.1, 0.815]
 ```
 
 #### Comprehensive Cost Calculator

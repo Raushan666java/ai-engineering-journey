@@ -28,15 +28,15 @@ By the end of this chapter, you will be able to:
 
 ```mermaid
 flowchart TD
-    A[Async and Events] --> B[@Async]
+    A[Async and Events] --> B["@Async"]
     A --> C[Application Events]
     A --> D[Transactional Events]
     B --> B1[TaskExecutor config]
     B --> B2[Future / CompletableFuture]
     C --> C1[ApplicationEventPublisher]
-    C --> C2[@EventListener]
-    D --> D1[@TransactionalEventListener]
-    D --> D2[Phase: AFTER_COMMIT / AFTER_ROLLBACK]
+    C --> C2["@EventListener"]
+    D --> D1["@TransactionalEventListener"]
+    D --> D2["Phase: AFTER_COMMIT / AFTER_ROLLBACK"]
 ```
 
 ---

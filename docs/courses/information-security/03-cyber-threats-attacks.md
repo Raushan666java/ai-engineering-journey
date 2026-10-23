@@ -1616,4 +1616,4 @@ D) A random non-existent IP address
 
 ---
 
-> **Next Chapter:** [Chapter 4 — Digital Signatures & PKI](/information-security/04-digital-signatures-pki/)
+> **Next Chapter:** [Chapter 4 — Digital Signatures & PKI](/ai-engineering-journey/information-security/04-digital-signatures-pki/)

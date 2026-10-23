@@ -921,20 +921,20 @@ flowchart TD
     START[Your Role] --> Q{What do you build?}
 
     Q -->|AI Solutions| ENG[AI Engineer]
-    ENG --> AI102[AI-102: Azure AI Engineer Associate]
-    AI102 --> AI100[Optional: AI-100? Retired]
+    ENG --> AI102["AI-102: Azure AI Engineer Associate"]
+    AI102 --> AI100["Optional: AI-100? Retired"]
 
     Q -->|ML Models| DS[Data Scientist]
-    DS --> DP100[DP-100: Azure Data Scientist]
-    DP100 --> MLENG[Professional ML Engineer<br/>(future cert)]
+    DS --> DP100["DP-100: Azure Data Scientist"]
+    DP100 --> MLENG["Professional ML Engineer<br/>(future cert)"]
 
     Q -->|Just Starting| FUND[Anyone]
-    FUND --> AI900[AI-900: Azure AI Fundamentals]
+    FUND --> AI900["AI-900: Azure AI Fundamentals"]
     AI900 --> ENG
     AI900 --> DS
 
     Q -->|Architecture| ARCH[Solution Architect]
-    ARCH --> AZ305[AZ-305: Azure Solutions Architect]
+    ARCH --> AZ305["AZ-305: Azure Solutions Architect"]
     AZ305 --> AI102
 
     style AI900 fill:#FFD700,color:#000

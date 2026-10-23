@@ -33,14 +33,15 @@ The five core components of an AI agent are:
 - **Autonomy**: The agent operates without continuous human intervention, deciding when to ask for help and when to proceed independently.
 
 ```mermaid
-architecture-beta
-    group agent[AI Agent]
-    service planner(cpu)[Planner] in agent
-    service memory(database)[Memory] in agent
-    service tools(disk)[Tool Registry] in agent
-    service llm(server)[LLM Core] in agent
-    service reflector(cloud)[Reflector] in agent
-    service env(globe)[Environment]
+flowchart TB
+    subgraph agent["AI Agent"]
+        planner["Planner"]
+        memory["Memory"]
+        tools["Tool Registry"]
+        llm["LLM Core"]
+        reflector["Reflector"]
+    end
+    env["Environment"]
 
     llm --> planner
     llm --> memory

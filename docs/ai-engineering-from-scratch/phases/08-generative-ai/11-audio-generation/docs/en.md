@@ -19,7 +19,7 @@ All three run on the same substrate: neural audio codec + token-AR or diffusion 
 
 ## The Concept
 
-![Audio generation: codec tokens + transformer or diffusion](../assets/audio-generation.svg)
+![Audio generation: codec tokens + transformer or diffusion](/ai-engineering-journey/img/visual/audio-generation.svg)
 
 ### Neural audio codecs
 

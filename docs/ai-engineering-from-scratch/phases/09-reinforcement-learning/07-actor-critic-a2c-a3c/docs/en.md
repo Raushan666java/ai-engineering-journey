@@ -19,7 +19,7 @@ An action is good if it produced above-average return; bad if below. REINFORCE w
 
 ## The Concept
 
-![Actor-critic: policy net plus value net, TD residual as advantage](../assets/actor-critic.svg)
+![Actor-critic: policy net plus value net, TD residual as advantage](/ai-engineering-journey/img/visual/actor-critic.svg)
 
 **Two networks, one shared loss:**
 

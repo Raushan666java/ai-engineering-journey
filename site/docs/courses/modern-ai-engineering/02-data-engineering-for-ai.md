@@ -85,13 +85,17 @@ flowchart TD
 
 Data quality is multi-dimensional. A dataset may be accurate but incomplete, or complete but inconsistent. The six dimensions below provide a comprehensive quality framework.
 
-```mermaid
-radar
-    title Data Quality Radar
-    x-axis Accuracy, Completeness, Consistency, Timeliness, Uniqueness, Validity
-    "Dataset A": [85, 92, 78, 95, 88, 80]
-    "Dataset B": [95, 70, 90, 60, 95, 85]
-    "Dataset C": [60, 95, 60, 50, 70, 55]
+```text
+**Data Quality Radar**
+
+| Dimension | Dataset A | Dataset B | Dataset C |
+|---|---|---|---|
+| Accuracy | 85 | 95 | 60 |
+| Completeness | 92 | 70 | 95 |
+| Consistency | 78 | 90 | 60 |
+| Timeliness | 95 | 60 | 50 |
+| Uniqueness | 88 | 95 | 70 |
+| Validity | 80 | 85 | 55 |
 ```
 
 **Quality Dimensions Table**

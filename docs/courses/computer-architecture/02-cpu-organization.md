@@ -381,11 +381,11 @@ flowchart TD
 flowchart TD
     Start[Start] --> Fetch[Fetch Instruction]
     Fetch --> Decode[Decode Instruction]
-    Decode -->{Address Mode?}
+    Decode --> AddressMode{Address Mode?}
     AddressMode -->|Memory operand| Operand[Fetch Operand]
     AddressMode -->|Register operand| Execute[Execute]
     Operand --> Execute
-    Execute -->{Write Back?}
+    Execute --> WriteBack{Write Back?}
     WriteBack -->|Yes| WB[Write Back Result]
     WriteBack -->|No| Next[Next Instruction]
     WB --> Next
@@ -397,13 +397,13 @@ flowchart TD
 ```mermaid
 flowchart TD
     I[Instruction] --> D{Addressing Mode}
-    D -->|Immediate| OP[Operand = address field]
-    D -->|Direct| EA[EA = address field]
-    D -->|Indirect| EA2[EA = Mem[address field]]
-    D -->|Register| OPR[Operand = Register]
-    D -->|Reg Indirect| EARI[EA = Register content]
-    D -->|Indexed| EAI[EA = base + index]
-    D -->|Relative| EAR[EA = PC + offset]
+    D -->|Immediate| OP["Operand = address field"]
+    D -->|Direct| EA["EA = address field"]
+    D -->|Indirect| EA2["EA = Mem[address field]"]
+    D -->|Register| OPR["Operand = Register"]
+    D -->|Reg Indirect| EARI["EA = Register content"]
+    D -->|Indexed| EAI["EA = base + index"]
+    D -->|Relative| EAR["EA = PC + offset"]
     OP --> Access[Memory Access?]
     EA --> Access
     EA2 --> Access

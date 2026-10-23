@@ -56,10 +56,10 @@ flowchart LR
     C --> G["T(n)=7T(n/2)+O(n²)"]
     D --> H["T(n)=2T(n/2)+O(n)"]
     E --> I["T(n)=3T(n/2)+O(n)"]
-    F --> J[Θ(n log n)]
-    G --> K[O(n^2.807)]
-    H --> L[O(n log n)]
-    I --> M[O(n^1.585)]
+    F --> J["Θ(n log n)"]
+    G --> K["O(n^2.807)"]
+    H --> L["O(n log n)"]
+    I --> M["O(n^1.585)"]
 ```
 
 ---

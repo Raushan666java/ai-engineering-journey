@@ -41,7 +41,7 @@ By the end of this chapter, you will be able to:
 ```mermaid
 flowchart LR
     A[Repository Interfaces] --> B[Derived Queries]
-    B --> C[@Query & @Modifying]
+    B --> C["@Query & @Modifying"]
     C --> D[Specifications]
     D --> E[QueryDSL]
     E --> F[Auditing]

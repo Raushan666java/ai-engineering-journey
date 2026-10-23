@@ -47,8 +47,8 @@ sidebar_position: 1
 
 ## Related
 
-- [Learning How to Learn](/learning-how-to-learn)
-- [Learning How to Learn (Practical)](/learning-how-to-learn-practical)
-- [Loop Engineering](/loop-engineering)
+- [Learning How to Learn](/ai-engineering-journey/learning-how-to-learn)
+- [Learning How to Learn (Practical)](/ai-engineering-journey/learning-how-to-learn-practical)
+- [Loop Engineering](/ai-engineering-journey/loop-engineering)
 
 > **Start**: [START HERE →](START_HERE.md)

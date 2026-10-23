@@ -26,7 +26,7 @@ Both steps are learnable. Both are benchmarked. The combined pipeline has been s
 
 ## The Concept
 
-![Entity linking pipeline: mention → candidates → disambiguated entity](../assets/entity-linking.svg)
+![Entity linking pipeline: mention → candidates → disambiguated entity](/ai-engineering-journey/img/visual/entity-linking.svg)
 
 **Candidate generation.** Given the mention surface form ("Jordan"), look up candidates in an alias index. Wikipedia alias dictionaries cover most named entities: "JFK" → John F. Kennedy, Jacqueline Kennedy, JFK airport, JFK (movie). Typical index returns 10-30 candidates per mention.
 

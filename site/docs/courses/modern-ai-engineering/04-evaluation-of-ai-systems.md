@@ -263,15 +263,17 @@ Code evaluation also considers **style and efficiency**, though these are harder
 
 **BLEU** is the most reported metric, despite its flaws. **COMET** (a neural metric using cross-lingual embeddings) correlates significantly better with human judgment. COMET-WMT (the version trained on WMT data) is the current state-of-the-art for translation evaluation.
 
-```mermaid
-radarChart
-    title "Task-Specific Evaluation Coverage"
-    axisLabels ["QA: Factual Accuracy", "Summarization: Faithfulness", "Code: Correctness", "Translation: Fluency", "Creative: Originality", "Safety: Harmlessness"]
-    data ["Model A", "Model B"]
-    values [
-        [0.95, 0.72, 0.88, 0.91, 0.45, 0.98],
-        [0.85, 0.68, 0.92, 0.83, 0.72, 0.91]
-    ]
+```text
+**Task-Specific Evaluation Coverage**
+
+| Metric | "Model A" | "Model B" |
+|---|---|---|
+| "QA: Factual Accuracy" | 0.95 | 0.85 |
+| "Summarization: Faithfulness" | 0.72 | 0.68 |
+| "Code: Correctness" | 0.88 | 0.92 |
+| "Translation: Fluency" | 0.91 | 0.83 |
+| "Creative: Originality" | 0.45 | 0.72 |
+| "Safety: Harmlessness" | 0.98 | 0.91 |
 ```
 
 ---

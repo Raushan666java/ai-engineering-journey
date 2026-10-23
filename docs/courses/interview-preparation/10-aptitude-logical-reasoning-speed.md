@@ -265,13 +265,13 @@ flowchart TD
     B --> C[Read question]
     C --> D{What's asked?}
     D -->|Absolute value| E[Find & calculate]
-    D -->|Percentage change| F[(New-Old)/Old × 100]
+    D -->|Percentage change| F["(New-Old)/Old × 100"]
     D -->|Ratio| G[Divide values]
     D -->|Difference| H[Subtract]
     D -->|Trend| I[Check slope direction]
     E & F & G & H & I --> J[Scan options]
     J --> K[Eliminate with estimation]
-    K --> L[If close, calculate exactly]
+    K --> L["If close, calculate exactly"]
 ```
 
 ### DI Approximation Examples

@@ -1580,4 +1580,4 @@ D) 2^(2n)
 
 ---
 
-> **Next Chapter:** [Chapter 2 — Network Security](/information-security/02-network-security/)
+> **Next Chapter:** [Chapter 2 — Network Security](/ai-engineering-journey/information-security/02-network-security/)

@@ -847,8 +847,8 @@ flowchart LR
     A[Features X] --> C
     B[Labels y] --> C
     C[Gradient Descent] --> D[Weights w]
-    D --> E[Predict y = Xw]
-    E --> F[MSE = ?(y - y)?]
+    D --> E["Predict y = Xw"]
+    E --> F["MSE = ?(y - y)?"]
     F --> G{Converged?}
     G -->|No| C
     G -->|Yes| H[Model w*]

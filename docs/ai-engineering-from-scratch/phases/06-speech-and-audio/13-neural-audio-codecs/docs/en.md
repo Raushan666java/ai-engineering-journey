@@ -20,7 +20,7 @@ The 2024-2026 insight: **a pure reconstruction codec gives you blurry speech whe
 
 ## The Concept
 
-![Four codec landscape: EnCodec, DAC, SNAC (multi-scale), Mimi (semantic+acoustic)](../assets/codec-comparison.svg)
+![Four codec landscape: EnCodec, DAC, SNAC (multi-scale), Mimi (semantic+acoustic)](/ai-engineering-journey/img/visual/codec-comparison.svg)
 
 ### The core trick: Residual Vector Quantization (RVQ)
 

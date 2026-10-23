@@ -17,7 +17,7 @@ The fix is not "pick the best framework." It is to match the framework's core ab
 
 ## The Concept
 
-![Agent framework matrix: core abstraction vs problem shape](../assets/framework-matrix.svg)
+![Agent framework matrix: core abstraction vs problem shape](/ai-engineering-journey/img/visual/framework-matrix.svg)
 
 Four frameworks dominate the 2026 landscape. Their core abstractions are not the same.
 

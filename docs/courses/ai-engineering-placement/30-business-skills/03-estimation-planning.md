@@ -760,19 +760,19 @@ flowchart LR
         K1[Standard CRUD operations]
         K2[API integrations]
         K3[Unit testing]
-        Estimate: +/- 10%
+        EST1["Estimate: +/- 10%"]
     end
     subgraph Unknown[Known Unknowns]
         U1[Model convergence]
         U2[Data quality issues]
         U3[Hyperparameter tuning]
-        Estimate: +/- 50%
+        EST2["Estimate: +/- 50%"]
     end
     subgraph Chaos[Unknown Unknowns]
         C1[Novel architecture fails]
         C2[Data distribution shift]
         C3[Infrastructure surprises]
-        Estimate: +/- 200%
+        EST3["Estimate: +/- 200%"]
     end
 
     Known --> Unknown --> Chaos

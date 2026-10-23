@@ -36,14 +36,14 @@ sidebar_position: 126
 
 ```mermaid
 flowchart LR
-    A[Input X] --> B[Linear: z = Wx + b]
-    B --> C[Activation: a = f(z)]
+    A[Input X] --> B["Linear: z = Wx + b"]
+    B --> C["Activation: a = f(z)"]
     C --> D{More Layers?}
     D -->|Yes| B
     D -->|No| E[Output Layer]
-    E --> F[Loss: L(y, y_hat)]
-    F --> G[Backward: dL/dW]
-    G --> H[Update: W -= lr * dL/dW]
+    E --> F["Loss: L(y, y_hat)"]
+    F --> G["Backward: dL/dW"]
+    G --> H["Update: W -= lr * dL/dW"]
     H --> I{Converged?}
     I -->|No| A
     I -->|Yes| J[Trained Model]

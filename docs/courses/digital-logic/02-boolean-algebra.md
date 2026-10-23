@@ -619,7 +619,7 @@ flowchart TD
     BA --> M[Minimisation]
 
     P --> C1[Closure]
-    P --> C2[Identity: 0, 1]
+    P --> C2["Identity: 0, 1"]
     P --> C3[Commutativity]
     P --> C4[Distributivity]
     P --> C5[Complements]
@@ -631,15 +631,15 @@ flowchart TD
     T --> INV[Involution]
     T --> SH[Shannon Expansion]
 
-    C --> SOP[Sum of Products<br/>S minterms]
-    C --> POS[Product of Sums<br/>? maxterms]
+    C --> SOP["Sum of Products<br/>S minterms"]
+    C --> POS["Product of Sums<br/>? maxterms"]
 
     M --> ALG[Algebraic]
     M --> KM[Karnaugh Maps]
     M --> QMC[Quine-McCluskey]
 
-    DM -->|(A?B)' = A' + B'| DM1
-    DM -->|(A+B)' = A'?B'| DM2
+    DM -->|"(A?B)' = A' + B'"| DM1
+    DM -->|"(A+B)' = A'?B'"| DM2
 ```
 
 ### De Morgan's Law ? Gate Transformations
@@ -671,8 +671,8 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    F[F = A?B + C] -->|Expand missing vars| SOP[Canonical SOP<br/>F = S(5,6,7)]
-    F -->|Complement & expand| POS[Canonical POS<br/>F = ?(0,1,2,3,4)]
+    F["F = A?B + C"] -->|Expand missing vars| SOP["Canonical SOP<br/>F = S(5,6,7)"]
+    F -->|Complement & expand| POS["Canonical POS<br/>F = ?(0,1,2,3,4)"]
     SOP -->|Complement & simplify| POS
     POS -->|Complement & expand| SOP
     SOP -->|Read from 1s in truth table| TT[Truth Table]

@@ -2,7 +2,7 @@
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Multi-Agent Orchestration](visual/22-advanced-ai-agents.svg)
+![Multi-Agent Orchestration](/ai-engineering-journey/img/visual/22-advanced-ai-agents.svg)
 
 # What the diagram shows
 

@@ -176,17 +176,17 @@ quadrantChart
     title Algorithm Efficiency Quadrants
     x-axis Fast Execution --> Slow Execution
     y-axis Low Memory --> High Memory
-    quadrant-1 Ideal: O(n) time, O(1) space
-    quadrant-2 Time-Efficient: O(n log n) time, O(n) space
-    quadrant-3 Balanced: O(n²) time, O(1) space
-    quadrant-4 Resource-Heavy: O(n²) time, O(n) space
+    quadrant-1 "Ideal: O(n) time, O(1) space"
+    quadrant-2 "Time-Efficient: O(n log n) time, O(n) space"
+    quadrant-3 "Balanced: O(n²) time, O(1) space"
+    quadrant-4 "Resource-Heavy: O(n²) time, O(n) space"
     Two Pointers: [0.15, 0.15]
     Sliding Window: [0.2, 0.2]
     Hash Map: [0.15, 0.45]
     DP Tabulation: [0.55, 0.6]
     Backtracking: [0.7, 0.4]
     Sorting: [0.35, 0.3]
-    DFS/BFS: [0.4, 0.5]
+    "DFS/BFS": [0.4, 0.5]
     Brute Force: [0.85, 0.2]
 ```
 

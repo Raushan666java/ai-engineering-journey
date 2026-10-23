@@ -850,20 +850,20 @@ class SPLADEStyleRetriever:
 ```mermaid
 flowchart LR
     subgraph Sparse [Sparse Retrieval Methods]
-        BM25[BM25<br/>Okapi BM25<br/>k1=1.5, b=0.75]
-        TFIDF[TF-IDF<br/>Term Freq x Inverse Doc Freq]
-        SPLADE[SPLADE<br/>Learned Sparse<br/>Transformer + MLM]
+        BM25["BM25<br/>Okapi BM25<br/>k1=1.5, b=0.75"]
+        TFIDF["TF-IDF<br/>Term Freq x Inverse Doc Freq"]
+        SPLADE["SPLADE<br/>Learned Sparse<br/>Transformer + MLM"]
     end
 
     subgraph Index [Index Structure]
-        INVERTED[Inverted Index<br/>Term → Doc List]
-        POSTING[Posting List<br/>(doc_id, tf, positions)]
+        INVERTED["Inverted Index<br/>Term → Doc List"]
+        POSTING["Posting List<br/>(doc_id, tf, positions)"]
     end
 
     subgraph Scoring [Scoring]
-        SATURATION[Term Saturation<br/>f / (f + k1 * norm)]
-        IDF_COMP[IDF Component<br/>log(N / df)]
-        DOT_PROD[Dot Product<br/>Sparse Vector Similarity]
+        SATURATION["Term Saturation<br/>f / (f + k1 * norm)"]
+        IDF_COMP["IDF Component<br/>log(N / df)"]
+        DOT_PROD["Dot Product<br/>Sparse Vector Similarity"]
     end
 
     BM25 --> INVERTED --> POSTING --> SATURATION --> IDF_COMP --> SCORE[Final Score]
@@ -1120,21 +1120,21 @@ demonstrate_fusion_strategies()
 ```mermaid
 flowchart TD
     subgraph Retrievers
-        S[Sparse<br/>BM25] --> SR[(Sparse<br/>Results)]
-        D[Dense<br/>ANN] --> DR[(Dense<br/>Results)]
+        S["Sparse<br/>BM25"] --> SR["(Sparse<br/>Results)"]
+        D["Dense<br/>ANN"] --> DR["(Dense<br/>Results)"]
     end
 
     subgraph Normalization [Score Normalization]
-        N1[Min-Max<br/>[0, 1] scaling]
-        N2[Z-Score<br/>μ=0, σ=1]
-        N3[Quantile<br/>Rank bins]
-        N4[Softmax<br/>Probabilities]
+        N1["Min-Max<br/>[0, 1] scaling"]
+        N2["Z-Score<br/>μ=0, σ=1"]
+        N3["Quantile<br/>Rank bins"]
+        N4["Softmax<br/>Probabilities"]
     end
 
     subgraph Fusion [Fusion Methods]
-        RRF[RRF<br/>1/(k + rank)]
-        WS[Weighted Sum<br/>α·S_sparse + β·S_dense]
-        BC[Borda Count<br/>n - rank + 1]
+        RRF["RRF<br/>1/(k + rank)"]
+        WS["Weighted Sum<br/>α·S_sparse + β·S_dense"]
+        BC["Borda Count<br/>n - rank + 1"]
     end
 
     SR --> N1 --> RRF
@@ -1684,26 +1684,26 @@ flowchart LR
     subgraph Bi [Bi-Encoder]
         Q1[Query Tokens] --> P1[Pooler]
         D1[Doc Tokens] --> P2[Pooler]
-        P1 --> V1[(Single Vector)]
-        P2 --> V2[(Single Vector)]
-        V1 --> DOT[Similarity<br/>cosine / dot]
+        P1 --> V1["(Single Vector)"]
+        P2 --> V2["(Single Vector)"]
+        V1 --> DOT["Similarity<br/>cosine / dot"]
         V2 --> DOT
     end
 
     subgraph ColBERT [Late Interaction]
         Q2[Query Tokens] --> E1[Encoder]
         D2[Doc Tokens] --> E2[Encoder]
-        E1 --> QT[(Query<br/>Token Embs)]
-        E2 --> DT[(Doc<br/>Token Embs)]
-        QT --> MAX[MaxSim<br/>max over doc tokens]
+        E1 --> QT["(Query<br/>Token Embs)"]
+        E2 --> DT["(Doc<br/>Token Embs)"]
+        QT --> MAX["MaxSim<br/>max over doc tokens"]
         DT --> MAX
         MAX --> SUM[Sum of Maxima]
     end
 
     subgraph Cross [Cross-Encoder]
-        Q3[Query] --> CONCAT[Concat<br/>[CLS] q [SEP] d [SEP]]
+        Q3[Query] --> CONCAT["Concat<br/>[CLS] q [SEP] d [SEP]"]
         D3[Doc] --> CONCAT
-        CONCAT --> TRANS[Full Transformer<br/>Bidirectional Attention]
+        CONCAT --> TRANS["Full Transformer<br/>Bidirectional Attention"]
         TRANS --> SCORE[Relevance Score]
     end
 

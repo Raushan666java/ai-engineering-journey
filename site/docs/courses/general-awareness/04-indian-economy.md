@@ -72,9 +72,9 @@ flowchart TD
     I --> I1[Capital Receipts]
     I --> I2[Capital Expenditure]
     G --> J[Deficit indicators]
-    J --> J1[Revenue Deficit = Rev Exp - Rev Rec]
-    J --> J2[Fiscal Deficit = Total Exp - Total Rec (excluding borrowings)]
-    J --> J3[Primary Deficit = Fiscal Deficit - Interest Payments]
+    J --> J1["Revenue Deficit = Rev Exp - Rev Rec"]
+    J --> J2["Fiscal Deficit = Total Exp - Total Rec (excluding borrowings)"]
+    J --> J3["Primary Deficit = Fiscal Deficit - Interest Payments"]
 ```
 
 **Components of Union Budget:**

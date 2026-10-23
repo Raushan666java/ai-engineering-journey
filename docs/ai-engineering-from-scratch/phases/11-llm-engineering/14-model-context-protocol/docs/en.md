@@ -19,7 +19,7 @@ As of early 2026, MCP is the default tool-and-context protocol across the big th
 
 ## The Concept
 
-![MCP: one host, one server, three capabilities](../assets/mcp-architecture.svg)
+![MCP: one host, one server, three capabilities](/ai-engineering-journey/img/visual/mcp-architecture.svg)
 
 **The three primitives.** An MCP server exposes exactly three things.
 

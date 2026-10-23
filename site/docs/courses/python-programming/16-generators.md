@@ -42,7 +42,7 @@ flowchart LR
     S0[Generator Functions]
     S1[Generator Expressions]
     S2[Lazy Evaluation]
-    S3[send(), throw(), and close()]
+    S3["send(), throw(), and close()"]
     S4[yield from]
     S5[itertools Module]
     S6[Generator Performance]

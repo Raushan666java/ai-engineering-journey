@@ -2,7 +2,7 @@
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Retrieval-Augmented Generation](visual/12-rag-vector-databases.svg)
+![Retrieval-Augmented Generation](/ai-engineering-journey/img/visual/12-rag-vector-databases.svg)
 
 # What the diagram shows
 

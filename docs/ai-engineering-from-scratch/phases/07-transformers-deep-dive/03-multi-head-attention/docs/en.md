@@ -17,7 +17,7 @@ Multi-head attention is the default every transformer in 2026 ships with. The on
 
 ## The Concept
 
-![Multi-head attention splits, attends, concatenates](../assets/multi-head-attention.svg)
+![Multi-head attention splits, attends, concatenates](/ai-engineering-journey/img/visual/multi-head-attention.svg)
 
 **Split.** Take `X` of shape `(N, d_model)`. Project to Q, K, V each of shape `(N, d_model)`. Reshape to `(N, n_heads, d_head)` where `d_head = d_model / n_heads`. Transpose to `(n_heads, N, d_head)`.
 

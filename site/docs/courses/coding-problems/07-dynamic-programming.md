@@ -51,7 +51,7 @@ mindmap
       Min Path Sum
       Dungeon Game
     Subsequence
-      LIS → O(n log n) possible
+      LIS → ["O(n log n) possible"]
       LCS → 2D DP
       Edit Distance → 2D DP
     Knapsack

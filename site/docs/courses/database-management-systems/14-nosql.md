@@ -2948,10 +2948,10 @@ quadrantChart
     title NoSQL Database Quadrant
     x-axis Low Complexity --> High Complexity
     y-axis Low Scalability --> High Scalability
-    quadrant-1: Key-Value (Redis, Dynamo)
-    quadrant-2: Document (MongoDB, Couchbase)
-    quadrant-3: Column-Family (Cassandra, HBase)
-    quadrant-4: Graph (Neo4j, Amazon Neptune)
+    quadrant-1 "Key-Value (Redis, Dynamo)"
+    quadrant-2 "Document (MongoDB, Couchbase)"
+    quadrant-3 "Column-Family (Cassandra, HBase)"
+    quadrant-4 "Graph (Neo4j, Amazon Neptune)"
     Redis: [0.2, 0.8]
     MongoDB: [0.5, 0.7]
     Cassandra: [0.6, 0.9]

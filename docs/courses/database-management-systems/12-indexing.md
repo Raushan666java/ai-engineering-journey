@@ -36,12 +36,12 @@
 ```mermaid
 flowchart LR
     A[Query Arrives] --> B{Full Scan?}
-    B -->|Yes| C[Sequential Read O(n)]
+    B -->|Yes| C["Sequential Read O(n)"]
     B -->|No - Use Index| D{Index Type}
     D -->|B-Tree| E[Range / Equality / Ordering]
     D -->|B+Tree| E2[Range / Equality / Ordering]
     D -->|ISAM| F[Static Range / Equality]
-    D -->|Hash| G[Equality Only O(1)]
+    D -->|Hash| G["Equality Only O(1)"]
     D -->|Bitmap| H[Boolean Combos AND/OR/NOT]
     D -->|Composite| I[Multi-Column Leftmost Prefix]
     D -->|Functional| J[Expression-Based Lookup]

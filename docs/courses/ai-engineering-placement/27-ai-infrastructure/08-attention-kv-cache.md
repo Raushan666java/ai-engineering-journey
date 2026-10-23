@@ -645,7 +645,7 @@ graph TB
     end
     subgraph Sparse["Overall Pattern"]
         direction LR
-        SL["Sliding Window<br/>O(n W)"] + GLO["Global Slots<br/>O(k n)"] --> TOTAL["Total<br/>O(n (W+k))"]
+        SL["Sliding Window<br/>O(n W)"] & GLO["Global Slots<br/>O(k n)"] --> TOTAL["Total<br/>O(n (W+k))"]
     end
 ```
 

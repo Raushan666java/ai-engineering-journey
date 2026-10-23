@@ -66,24 +66,24 @@ Probability theory quantifies uncertainty and randomness, forming the mathematic
 ```mermaid
 flowchart TD
     subgraph ProbabilityRules[Probability Rules]
-        A[Event A] --> B[P A = 0 to 1]
-        C[Event B] --> D[P A ∪ B = P A + P B - P A ∩ B]
-        D --> E[If Mutually Exclusive<br/>P A ∩ B = 0]
+        A[Event A] --> B["P A = 0 to 1"]
+        C[Event B] --> D["P A ∪ B = P A + P B - P A ∩ B"]
+        D --> E["If Mutually Exclusive<br/>P A ∩ B = 0"]
     end
     
     subgraph BayesConcept[Bayes Theorem]
         F[Prior P A] --> G[Evidence P B]
-        G --> H[Likelihood P B|A]
-        H --> I[Posterior P A|B]
-        I --> J[P A|B = P B|A * P A / P B]
+        G --> H["Likelihood P B|A"]
+        H --> I["Posterior P A|B"]
+        I --> J["P A|B = P B|A * P A / P B"]
     end
     
     subgraph Distributions[Key Distributions]
-        K[Discrete] --> L[Binomial<br/>n trials, p success]
-        K --> M[Poisson<br/>λ rate per interval]
-        N[Continuous] --> O[Normal<br/>μ, σ² bell curve]
-        N --> P[Uniform<br/>Equal probability]
-        N --> Q[Exponential<br/>Waiting time]
+        K[Discrete] --> L["Binomial<br/>n trials, p success"]
+        K --> M["Poisson<br/>λ rate per interval"]
+        N[Continuous] --> O["Normal<br/>μ, σ² bell curve"]
+        N --> P["Uniform<br/>Equal probability"]
+        N --> Q["Exponential<br/>Waiting time"]
     end
 ```
 

@@ -2,7 +2,7 @@
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![AI Delivery Pipeline](visual/16-mlops-production.svg)
+![AI Delivery Pipeline](/ai-engineering-journey/img/visual/16-mlops-production.svg)
 
 # What the diagram shows
 

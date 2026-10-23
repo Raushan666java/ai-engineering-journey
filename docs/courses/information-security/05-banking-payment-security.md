@@ -378,7 +378,7 @@ sequenceDiagram
     RB->>RB: Credit to receiver account
     RB->>N: Credit Successful
     N->>P: Transaction Success<br/>(PN, UTR number)
-    Note over P,RB: Total time: &lt; 5 seconds (real-time)
+    Note over P,RB: Total time: under 5 seconds (real-time)
 ```
 
 ### 5.9 Digital Payment Fraud Detection
@@ -1559,7 +1559,7 @@ sequenceDiagram
     Acquirer->>NPCI: Credit Confirmed
     NPCI->>PSP: Transaction Success (UTR: NPCI123456)
     PSP->>User: ✅ Payment Successful
-    Note over User,Acquirer: Total: &lt; 5 seconds, end-to-end encrypted
+    Note over User,Acquirer: Total: under 5 seconds, end-to-end encrypted
 ```
 
 ### Modern Banking Security Technologies

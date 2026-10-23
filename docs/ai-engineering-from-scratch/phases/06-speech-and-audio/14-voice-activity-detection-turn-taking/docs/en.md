@@ -19,7 +19,7 @@ The naive answer (energy threshold) fails on any noise — traffic, keyboards, c
 
 ## The Concept
 
-![VAD cascade: energy → Silero → turn-detector → flush trick](../assets/vad-turn-taking.svg)
+![VAD cascade: energy → Silero → turn-detector → flush trick](/ai-engineering-journey/img/visual/vad-turn-taking.svg)
 
 ### The three-tier VAD cascade
 

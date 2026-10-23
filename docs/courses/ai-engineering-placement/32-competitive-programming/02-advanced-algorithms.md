@@ -461,7 +461,7 @@ flowchart TD
         B4 --- B5[5]
         B5 --- B6[6]
     end
-    subgraph After[After Union(2,3)]
+    subgraph After ["After Union(2,3)"]
         C0[0] --- C1[1]
         C1 --- C2[2]
         C2 -.- C3[3]
@@ -638,14 +638,14 @@ if __name__ == "__main__":
 ```mermaid
 flowchart LR
     subgraph KMP_Flow[KMP Matching]
-        T1[Text: A B A B D] --> P1[Pattern: A B A]
-        P1 --> PF[Prefix Function: [0,0,1]]
-        PF --> Match1[Match at 0,2]
+        T1["Text: A B A B D"] --> P1["Pattern: A B A"]
+        P1 --> PF["Prefix Function: [0,0,1]"]
+        PF --> Match1["Match at 0,2"]
     end
     subgraph RK_Flow[Rabin-Karp]
-        T2[Text: ABCDEF] --> HASH[hash(A)=h1, hash(B)=h2, ...]
+        T2["Text: ABCDEF"] --> HASH["hash(A)=h1, hash(B)=h2, ..."]
         HASH --> Roll["h2 = (h1 - ord('A')*p^(m-1))*p + ord('D')"]
-        Roll --> Match2[Compare hash → verify → O(n+m) avg]
+        Roll --> Match2["Compare hash → verify → O(n+m) avg"]
     end
 ```
 
@@ -983,19 +983,19 @@ if __name__ == "__main__":
 flowchart TD
     subgraph DigitDP[Digit DP]
         POS[Position i] --> TIGHT{Tight?}
-        TIGHT -->|Yes| LIM[Limit = digit[i]]
-        TIGHT -->|No| LIM2[Limit = 9]
-        LIM --> DIG[Try digit d=0..limit]
+        TIGHT -->|Yes| LIM["Limit = digit[i]"]
+        TIGHT -->|No| LIM2["Limit = 9"]
+        LIM --> DIG["Try digit d=0..limit"]
         LIM2 --> DIG
-        DIG --> NEXT[Next state: pos+1, tight']
-        NEXT --> BASE[Base: pos==n → return 1]
+        DIG --> NEXT["Next state: pos+1, tight'"]
+        NEXT --> BASE["Base: pos==n → return 1"]
     end
 
     subgraph TreeDP[Tree DP]
         ROOT[Root] --> DFS[Post-order traversal]
         DFS --> CHILD1[Child 1 Subtree]
         DFS --> CHILD2[Child 2 Subtree]
-        CHILD1 --> COMB[Combine: dp[u] = f(dp[v1], dp[v2], ...)]
+        CHILD1 --> COMB["Combine: dp[u] = f(dp[v1], dp[v2], ...)"]
         CHILD2 --> COMB
         COMB --> ANS[Answer at root]
     end

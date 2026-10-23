@@ -42,8 +42,8 @@ After completing this chapter, you will be able to:
 
 ```mermaid
 flowchart LR
-    A[Property Files] --> B[@ConfigurationProperties]
-    B --> C[@Value & SpEL]
+    A[Property Files] --> B["@ConfigurationProperties"]
+    B --> C["@Value & SpEL"]
     C --> D[Externalized Config]
     D --> E[Profiles]
     E --> F[Relaxed Binding]

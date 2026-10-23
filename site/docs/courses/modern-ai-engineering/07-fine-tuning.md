@@ -125,14 +125,15 @@ Where B ∈ ℝ^{d×r}, A ∈ ℝ^{r×k}, and r << min(d,k). A is initialized wi
 **Alpha scaling**: The LoRA update is scaled by α/r before adding to the base weights. The hyperparameter α controls the magnitude of the adaptation. Higher α values amplify the LoRA contribution. A common rule of thumb is to set α to 2× the rank (e.g., r=8, α=16).
 
 ```mermaid
-architecture-beta
-    group transformer[Transformer Layer]
-    service pretrained(server)[Pretrained Weights] in transformer
-    service lora_a(database)[LoRA A d×r] in transformer
-    service lora_b(database)[LoRA B r×k] in transformer
-    service scaling(disk)[Scale α/r] in transformer
-    service sum(cloud)[W₀ + BA]
-    service output(database)[Output]
+flowchart TB
+    subgraph transformer["Transformer Layer"]
+        pretrained["Pretrained Weights"]
+        lora_a["LoRA A d×r"]
+        lora_b["LoRA B r×k"]
+        scaling["Scale α/r"]
+    end
+    sum["W₀ + BA"]
+    output["Output"]
 
     pretrained --> sum
     lora_a --> lora_b

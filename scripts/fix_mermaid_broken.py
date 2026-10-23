@@ -30,6 +30,11 @@ VALIDATOR = ROOT / "scripts" / "validate_mermaid.mjs"
 
 RESERVED = set(':#()[]{}"|@;,><=')
 NODE_LABEL = re.compile(r"(?P<id>[A-Za-z0-9_.\-]+)\s*\[(?P<label>[^\[\]]*?)\]")
+# Opening bracket of a node definition, used by fix_nested_labels to walk the
+# label with a depth counter when the label itself contains brackets.
+NODE_ID_OPEN = re.compile(r"(?P<id>[A-Za-z0-9_.\-]+)\[")
+# Flowchart edge label: `A -->|text| B` (also `-.` and `==` arrow variants).
+EDGE_LABEL = re.compile(r"(?P<pre>(?:-->|---|==>|-\.->|==>|--x|-\.-x))\|(?P<label>[^|\n]*)\|")
 SUBGRAPH_LABEL = re.compile(
     r"(?P<kw>subgraph)\s+(?P<id>[A-Za-z0-9_.\-]+)\s*"
     r"(?:\[(?P<label>[^\[\]]*?)\]|\((?P<p>[^()]*?)\))"
@@ -51,6 +56,56 @@ def quote(label: str) -> str:
     return '"' + label.replace('"', "#quot;") + '"'
 
 
+def quote_edge(m: re.Match) -> str:
+    label = m.group("label")
+    if not needs_quote(label):
+        return m.group(0)
+    return f"{m.group('pre')}|{quote(label)}|"
+
+
+def fix_edge_labels(line: str) -> str:
+    """Quote flowchart edge labels: `A -->|Low (< 10)| B`."""
+    return EDGE_LABEL.sub(quote_edge, line)
+
+
+def fix_nested_labels(line: str) -> str:
+    """Quote node labels that contain unbalanced brackets.
+
+    NODE_LABEL uses `[^\\[\\]]*?`, so it cannot see a label like
+    `N1[Min-Max<br/>[0, 1] scaling]` — the inner `[` stops the match and the
+    label is left raw. Scan the line with a depth counter instead.
+    """
+    out = []
+    i = 0
+    n = len(line)
+    while i < n:
+        m = NODE_ID_OPEN.match(line, i)
+        if not m:
+            out.append(line[i])
+            i += 1
+            continue
+        start = i
+        j = m.end()  # index just past the opening '['
+        depth = 1
+        while j < n and depth:
+            if line[j] == "[":
+                depth += 1
+            elif line[j] == "]":
+                depth -= 1
+            j += 1
+        if depth:  # unbalanced; leave the line alone rather than corrupt it
+            out.append(line[i])
+            i += 1
+            continue
+        label = line[m.end():j - 1]
+        if needs_quote(label):
+            out.append(f"{m.group('id')}[{quote(label)}]")
+        else:
+            out.append(line[start:j])
+        i = j
+    return "".join(out)
+
+
 def fix_line(line: str) -> str:
     def sub_sub(m: re.Match) -> str:
         label = m.group("label") if m.group("label") is not None else m.group("p")
@@ -67,14 +122,16 @@ def fix_line(line: str) -> str:
         return f"{m.group('id')}[{quote(label)}]"
 
     out = SUBGRAPH_LABEL.sub(sub_sub, line)
-    return NODE_LABEL.sub(sub_node, out)
+    out = NODE_LABEL.sub(sub_node, out)
+    out = fix_nested_labels(out)
+    return fix_edge_labels(out)
 
 
-def run_validator() -> list[dict]:
+def run_validator(dir_arg: str = "docs") -> list[dict]:
     with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as fh:
         out_path = fh.name
     try:
-        subprocess.run(["node", str(VALIDATOR), "--json", out_path],
+        subprocess.run(["node", str(VALIDATOR), "--dir", dir_arg, "--json", out_path],
                        cwd=ROOT, capture_output=True)
         data = json.loads(pathlib.Path(out_path).read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
@@ -112,6 +169,8 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true")
     ap.add_argument("--max-passes", type=int, default=6)
+    ap.add_argument("--dir", default="docs", dest="docs_dir",
+                    help="docs tree to repair: 'docs' (source) or 'site/docs' (build input)")
     args = ap.parse_args()
 
     total_fixed = 0
@@ -119,7 +178,7 @@ def main() -> int:
     prev_count = -1
 
     for pass_no in range(1, args.max_passes + 1):
-        failures = run_validator()
+        failures = run_validator(args.docs_dir)
         if not failures:
             print(f"pass {pass_no}: no remaining syntax failures")
             break
@@ -173,7 +232,7 @@ def main() -> int:
     else:
         print(f"done: {total_fixed} block(s) rewritten across {len(touched)} file(s)")
 
-    remaining = run_validator()
+    remaining = run_validator(args.docs_dir)
     print(f"remaining syntax failures: {len(remaining)}")
     for f in remaining[:10]:
         err = f["error"].encode("ascii", "replace").decode()[:100]

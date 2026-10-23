@@ -19,7 +19,7 @@ Every LLM-RL algorithm in 2026 — PPO, DPO, GRPO — is a refinement of REINFOR
 
 ## The Concept
 
-![Policy gradient: softmax policy, log-π gradient, return-weighted update](../assets/policy-gradient.svg)
+![Policy gradient: softmax policy, log-π gradient, return-weighted update](/ai-engineering-journey/img/visual/policy-gradient.svg)
 
 **The policy gradient theorem.** For any policy `π_θ` parameterized by `θ`:
 

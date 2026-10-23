@@ -569,15 +569,15 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    E0[E0: Engineer Trainee] --> E1[E1: Senior Engineer - 3-4 yrs]
-    E1 --> E2[E2: Assistant Manager - 6-8 yrs]
-    E2 --> E3[E3: Deputy Manager - 10-12 yrs]
-    E3 --> E4[E4: Manager - 14-16 yrs]
-    E4 --> E5[E5: Senior Manager - 18-20 yrs]
-    E5 --> E6[E6: Chief Manager - 22-25 yrs]
-    E6 --> E7[E7: General Manager - 25+ yrs]
-    E7 --> E8[E8: Executive Director]
-    E8 --> E9[E9: Director (Board Level)]
+    E0["E0: Engineer Trainee"] --> E1["E1: Senior Engineer - 3-4 yrs"]
+    E1 --> E2["E2: Assistant Manager - 6-8 yrs"]
+    E2 --> E3["E3: Deputy Manager - 10-12 yrs"]
+    E3 --> E4["E4: Manager - 14-16 yrs"]
+    E4 --> E5["E5: Senior Manager - 18-20 yrs"]
+    E5 --> E6["E6: Chief Manager - 22-25 yrs"]
+    E6 --> E7["E7: General Manager - 25+ yrs"]
+    E7 --> E8["E8: Executive Director"]
+    E8 --> E9["E9: Director (Board Level)"]
 ```
 
 ### PSU Salary — Pay Scales by Grade

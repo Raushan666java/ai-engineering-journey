@@ -24,7 +24,7 @@ Hoffmann et al. (2022), training a small family of models called Chinchilla, fou
 
 ## The Concept
 
-![Chinchilla curves: loss vs compute at various N/D ratios](../assets/scaling-laws.svg)
+![Chinchilla curves: loss vs compute at various N/D ratios](/ai-engineering-journey/img/visual/scaling-laws.svg)
 
 ### The Hoffmann law
 

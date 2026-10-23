@@ -40,7 +40,7 @@ flowchart LR
   Chunks3 --> Index
   Chunks4 --> Index
   Chunks5 --> Index
-  Index --> Eval[Recall@k vs Gold Spans]
+  Index --> Eval["Recall@k vs Gold Spans"]
 ```
 
 ### Fixed-window

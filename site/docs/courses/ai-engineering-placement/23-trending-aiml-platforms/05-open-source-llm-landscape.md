@@ -811,16 +811,16 @@ For a new project, ask these questions in order:
 ```mermaid
 flowchart LR
     subgraph Leaderboards[Key Leaderboards]
-        O[Open LLM Leaderboard<br/>Hugging Face]
-        L[LMSys Chatbot Arena<br/>ELO Ratings]
-        C[Code Leaderboard<br/>HumanEval + MBPP]
-        M[MATH Leaderboard<br/>GSM8K + MATH]
+        O["Open LLM Leaderboard<br/>Hugging Face"]
+        L["LMSys Chatbot Arena<br/>ELO Ratings"]
+        C["Code Leaderboard<br/>HumanEval + MBPP"]
+        M["MATH Leaderboard<br/>GSM8K + MATH"]
     end
     subgraph Metrics[Evaluation Metrics]
-        PPL[Perplexity<br/>Language Modelling]
-        ACC[Accuracy<br/>MCQ Tasks]
-        PASS[pass@k<br/>Code Generation]
-        ELO[ELO Score<br/>Human Preference]
+        PPL["Perplexity<br/>Language Modelling"]
+        ACC["Accuracy<br/>MCQ Tasks"]
+        PASS["pass@k<br/>Code Generation"]
+        ELO["ELO Score<br/>Human Preference"]
     end
     subgraph Tools[Your Evaluation]
         H[Harness from this chapter]

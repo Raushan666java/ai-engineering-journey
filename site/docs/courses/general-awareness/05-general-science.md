@@ -214,12 +214,12 @@ flowchart TD
     C --> D[1975 - Aryabhata - First Indian satellite]
     D --> E[1980 - SLV-3 - First indigenous launch]
     E --> F[2008 - Chandrayaan-1 - Moon discovery of water]
-    F --> G[2014 - Mangalyaan (MOM) - Mars orbit]
+    F --> G["2014 - Mangalyaan (MOM) - Mars orbit"]
     G --> H[2017 - PSLV-C37 - 104 satellites]
-    H --> I[2019 - Chandrayaan-2 (partial success)]
+    H --> I["2019 - Chandrayaan-2 (partial success)"]
     I --> J[2023 - Chandrayaan-3 - South Pole landing]
     J --> K[2023 - Aditya-L1 - Solar mission]
-    K --> L[2025 - Gaganyaan (planned)]
+    K --> L["2025 - Gaganyaan (planned)"]
     L --> M[Future - Bharatiya Antariksha Station]
 ```
 

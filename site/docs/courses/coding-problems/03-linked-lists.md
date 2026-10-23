@@ -78,8 +78,8 @@ flowchart LR
     A[Problem] --> B{Requires random access?}
     B -->|Yes| C[Use array instead]
     B -->|No| D{Need to modify?}
-    D -->|Yes| E[O(n) time O(1) space]
-    D -->|No| F[O(n) time O(n) space for copy]
+    D -->|Yes| E["O(n) time O(1) space"]
+    D -->|No| F["O(n) time O(n) space for copy"]
     E --> G{Single pointer sufficient?}
     G -->|Yes| H[Iterative traversal]
     G -->|No| I[Fast & Slow / Dummy node]

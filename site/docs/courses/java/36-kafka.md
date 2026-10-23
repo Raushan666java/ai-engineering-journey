@@ -44,7 +44,7 @@ flowchart TD
     B --> B2[Broker / Cluster / Zookeeper]
     C --> C1[KafkaTemplate]
     C --> C2[Acks / Retries]
-    D --> D1[@KafkaListener]
+    D --> D1["@KafkaListener"]
     D --> D2[Consumer Group / Rebalancing]
     E --> E1[KafkaTransactionManager]
     E --> E2[Exactly-once semantics]

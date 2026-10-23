@@ -42,9 +42,9 @@ flowchart LR
     A[Lower Bound Ωn log n] --> B[Merge Sort]
     A --> C[Quick Sort]
     A --> D[Heap Sort]
-    B --> E[Stable, O(n) space]
-    C --> F[In-place avg O(n log n)]
-    D --> G[In-place O(1) space]
+    B --> E["Stable, O(n) space"]
+    C --> F["In-place avg O(n log n)"]
+    D --> G["In-place O(1) space"]
     E --> H[Choose by constraints]
     F --> H
     G --> H

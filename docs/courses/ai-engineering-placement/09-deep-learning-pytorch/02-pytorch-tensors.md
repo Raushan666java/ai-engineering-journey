@@ -43,10 +43,10 @@ flowchart LR
     B --> C[Operations]
     C --> D[Reshape / Broadcast]
     D --> E[Autograd Graph]
-    E --> F[.backward()]
+    E --> F[".backward()"]
     F --> G[.grad]
     G --> H[Optimizer Step]
-    H --> I[.zero_grad()]
+    H --> I[".zero_grad()"]
     I --> E
 ```
 

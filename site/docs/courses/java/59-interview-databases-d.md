@@ -1011,8 +1011,8 @@ flowchart LR
     B --> C[Create entities]
     C --> D{Batch full?}
     D -->|No| C
-    D -->|Yes, batch_size=50| E[em.flush()]
-    E --> F[em.clear()]
+    D -->|"Yes, batch_size=50"| E["em.flush()"]
+    E --> F["em.clear()"]
     F --> G{More rows?}
     G -->|Yes| C
     G -->|No| H[Final flush]
@@ -1042,13 +1042,13 @@ flowchart TD
     B -->|Yes| C[Use PERSIST + MERGE only]
     B -->|No| D{Relationship type?}
 
-    D -->|@OneToMany| E[CascadeType.ALL]
-    D -->|@ManyToMany| F[PERSIST + MERGE<br/>NEVER ALL]
-    D -->|@OneToOne| G[CascadeType.ALL]
+    D -->|"@OneToMany"| E[CascadeType.ALL]
+    D -->|"@ManyToMany"| F["PERSIST + MERGE<br/>NEVER ALL"]
+    D -->|"@OneToOne"| G[CascadeType.ALL]
 
-    C --> H[Parent saves -> child saved]
-    C --> I[Parent merges -> child merged]
-    C --> J[Parent delete -> NOT cascaded]
+    C --> H["Parent saves -> child saved"]
+    C --> I["Parent merges -> child merged"]
+    C --> J["Parent delete -> NOT cascaded"]
 
     E --> K[All operations cascade]
     F --> L[Only persist/merge propagate]

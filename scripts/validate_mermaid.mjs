@@ -20,6 +20,8 @@ const ROOT = path.resolve(__dirname, "..");
 const DOCS = path.join(ROOT, "docs");
 // Import mermaid's package entry directly. A directory import is rejected by
 // the ESM loader, so resolve the manifest's main/module field first.
+// `site/docs` is what Docusaurus actually builds; repo-root `docs/` is the
+// wider source tree it is synced from. Pass --dir site/docs to audit what ships.
 const mermaidPkgPath = path.join(ROOT, "site", "node_modules", "mermaid", "package.json");
 const mermaidPkg = JSON.parse(fs.readFileSync(mermaidPkgPath, "utf8"));
 const MERMAID = pathToFileURL(
@@ -57,26 +59,53 @@ function extract(text) {
   return blocks;
 }
 
+/**
+ * Mermaid needs DOMPurify; DOMPurify needs a browser.
+ *
+ * dompurify's createDOMPurify() guards on
+ *   `!window || !window.document || window.document.nodeType !== 9 || !window.Element`
+ * and, when that fails, early-returns a bare factory carrying no `.addHook`.
+ * Mermaid calls `DOMPurify.addHook(...)` on the first sanitize, so a shallow
+ * `window` shim makes every non-trivial diagram throw
+ * "DOMPurify.addHook is not a function" — 2,838 false failures out of 2,866.
+ * Emulating a whole DOM to satisfy the guard is a losing game.
+ *
+ * Instead, stub the module itself. ESM modules are singletons and mermaid
+ * resolves the very same `dompurify/dist/purify.es.mjs`, so replacing the
+ * methods on the default export before mermaid is imported is visible to
+ * mermaid's `setupDompurifyHooks()`. `parse()` never renders or measures, so
+ * sanitising is genuinely a no-op here.
+ */
+async function stubDompurify() {
+  const dpHref = pathToFileURL(path.join(ROOT, "site", "node_modules", "dompurify", "dist", "purify.es.mjs")).href;
+  const purify = (await import(dpHref)).default;
+  purify.addHook = () => {};
+  purify.removeHook = () => {};
+  purify.removeHooks = () => {};
+  purify.setConfig = () => {};
+  purify.clearConfig = () => {};
+  purify.sanitize = (dirty) => String(dirty ?? "");
+  purify.isSupported = false;
+}
+
 async function main() {
   const argv = process.argv.slice(2);
   const jsonOut = argv.includes("--json")
     ? argv[argv.indexOf("--json") + 1]
     : null;
+  const docsDir = argv.includes("--dir")
+    ? path.resolve(ROOT, argv[argv.indexOf("--dir") + 1])
+    : DOCS;
 
-  // Mermaid's parser needs a DOM-ish global; jsdom-free shims are enough for
-  // parse(), which does not render or measure.
-  globalThis.window = globalThis.window || {};
-  // Mermaid's module top-level calls window.addEventListener on import, so the
-  // shim must exist before the dynamic import, not just before initialize().
-  if (typeof globalThis.window.addEventListener !== "function") {
-    globalThis.window.addEventListener = () => {};
-    globalThis.window.removeEventListener = () => {};
-    globalThis.window.matchMedia =
-      globalThis.window.matchMedia ||
-      (() => ({ matches: false, addListener() {}, removeListener() {}, addEventListener() {}, removeEventListener() {} }));
-    globalThis.window.location = globalThis.window.location || { href: "http://localhost" };
-  }
-  globalThis.document = globalThis.document || {
+  // Shallow window/document: enough for mermaid's module top-level, which
+  // calls window.addEventListener on import. Must exist before the import.
+  globalThis.window = {
+    addEventListener() {},
+    removeEventListener() {},
+    matchMedia: () => ({ matches: false, addListener() {}, addEventListener() {} }),
+    location: { href: "http://localhost" },
+  };
+  globalThis.document = {
     createElement: () => ({ style: {}, setAttribute() {}, appendChild() {}, getAttribute: () => null }),
     body: { appendChild() {}, removeChild() {} },
     querySelector: () => null,
@@ -92,10 +121,12 @@ async function main() {
     });
   }
 
+  await stubDompurify();
+
   const mermaid = (await import(MERMAID)).default;
   mermaid.initialize({ startOnLoad: false, securityLevel: "strict" });
 
-  const files = walk(DOCS);
+  const files = walk(docsDir);
   const failures = [];
   let total = 0;
 

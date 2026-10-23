@@ -222,6 +222,8 @@ Write 5-10 questions you want the resource to answer. Example for Indian Polity:
 ### 💻 TypeScript Implementation (Optional)
 
 ### Example 1: Codebase Analyzer
+
+```typescript
 interface ModuleNode {
     path: string
     imports: string[]

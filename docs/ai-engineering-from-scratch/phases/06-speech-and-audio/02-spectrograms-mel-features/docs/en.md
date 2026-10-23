@@ -17,7 +17,7 @@ Mel spectrograms push further. Humans perceive pitch logarithmically: 100 Hz vs 
 
 ## The Concept
 
-![Waveform to STFT to mel spectrogram to MFCC ladder](../assets/mel-features.svg)
+![Waveform to STFT to mel spectrogram to MFCC ladder](/ai-engineering-journey/img/visual/mel-features.svg)
 
 **STFT (Short-Time Fourier Transform).** Slice the waveform into overlapping frames (typical: 25 ms window, 10 ms hop = 400 samples / 160 samples at 16 kHz). Multiply each frame by a window function (Hann is the default; Hamming slightly different tradeoff). FFT each frame. Stack the magnitude spectra into a matrix of shape `(n_frames, n_freq_bins)`. That is your spectrogram.
 

@@ -23,7 +23,7 @@ In 2026 GANs are no longer the SOTA generator (diffusion and flow matching ate t
 
 ## The Concept
 
-![GAN training: generator and discriminator in minimax](../assets/gan.svg)
+![GAN training: generator and discriminator in minimax](/ai-engineering-journey/img/visual/gan.svg)
 
 **Generator `G(z)`.** Maps a noise vector `z ~ N(0, I)` to a sample `x̂`. A decoder-shaped network (dense or transposed conv).
 

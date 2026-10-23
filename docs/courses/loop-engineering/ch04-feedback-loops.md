@@ -1186,18 +1186,13 @@ await main();
 
 This section adds specialized feedback analysis and control components: an `OscillationDetector` that flags growing amplitude in the error signal, a `CascadeController` chaining multiple controllers in series, a `FeedForwardController` that anticipates disturbances before feedback can react, a `BumpTestAnalyzer` for system identification from step response data, and a `DeadbandFilter` that ignores error changes below a configurable threshold to reduce dithering.
 
-```typescript
-// ch04-advanced-feedback-tools.ts
-// bun run ch04-advanced-feedback-tools.ts
-
-/*
 ```mermaid
 graph TD
     subgraph "Multi-Signal Fusion with Weighted Averaging"
-        A[Signal 1: Accuracy] -->|w1=0.4| F[Weighted Average]
-        B[Signal 2: Latency] -->|w2=0.3| F
-        C[Signal 3: Coverage] -->|w3=0.2| F
-        D[Signal 4: Cost] -->|w4=0.1| F
+        A["Signal 1: Accuracy"] -->|"w1=0.4"| F[Weighted Average]
+        B["Signal 2: Latency"] -->|"w2=0.3"| F
+        C["Signal 3: Coverage"] -->|"w3=0.2"| F
+        D["Signal 4: Cost"] -->|"w4=0.1"| F
         E[Median Filter] --> F
         F --> G{Fused Score}
         G -->|Above Threshold| H[Execute]
@@ -1210,8 +1205,11 @@ graph TD
     
     style H fill:#2ecc71,color:#fff
     style G fill:#3498db,color:#fff
-*/
-*/
+```
+
+```typescript
+// ch04-advanced-feedback-tools.ts
+// bun run ch04-advanced-feedback-tools.ts
 
 // ─── OscillationDetector ───────────────────────────────────────────────
 

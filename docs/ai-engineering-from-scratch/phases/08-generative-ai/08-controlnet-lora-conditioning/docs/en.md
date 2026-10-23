@@ -19,7 +19,7 @@ ControlNet + LoRA + text = the 2026 practitioner's toolkit. Most production imag
 
 ## The Concept
 
-![ControlNet clones the encoder; LoRA adds low-rank deltas](../assets/controlnet-lora.svg)
+![ControlNet clones the encoder; LoRA adds low-rank deltas](/ai-engineering-journey/img/visual/controlnet-lora.svg)
 
 ### ControlNet (Zhang et al., 2023)
 

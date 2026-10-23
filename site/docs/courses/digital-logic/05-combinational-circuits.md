@@ -600,9 +600,11 @@ for (let d = 0; d <= 9; d++) {
 graph TD
     subgraph "7-Segment Display"
         A[--- a ---]
-        B[|] C[|]
+        B["|"]
+        C["|"]
         D[--- g ---]
-        E[|] F[|]
+        E["|"]
+        F["|"]
         G[--- d ---]
     end
 ```

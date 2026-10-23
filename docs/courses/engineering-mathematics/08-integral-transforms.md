@@ -675,29 +675,29 @@ console.log(squareWave(Math.PI / 2, 10));
 ```mermaid
 graph TB
     subgraph "Continuous Domain"
-        FS[Fourier Series<br/>Periodic ? Discrete Spectrum]
-        FT[Fourier Transform<br/>Non-periodic ? Continuous Spectrum]
-        LT[Laplace Transform<br/>s = s + i?<br/>Includes transient response]
+        FS["Fourier Series<br/>Periodic ? Discrete Spectrum"]
+        FT["Fourier Transform<br/>Non-periodic ? Continuous Spectrum"]
+        LT["Laplace Transform<br/>s = s + i?<br/>Includes transient response"]
     end
     
     subgraph "Discrete Domain"
-        DFT[Discrete Fourier Transform<br/>Sampled ? Sampled Spectrum]
-        FFT[Fast Fourier Transform<br/>O(N log N) implementation]
-        ZT[Z-Transform<br/>z = e^(sT)<br/>Discrete-time systems]
+        DFT["Discrete Fourier Transform<br/>Sampled ? Sampled Spectrum"]
+        FFT["Fast Fourier Transform<br/>O(N log N) implementation"]
+        ZT["Z-Transform<br/>z = e^(sT)<br/>Discrete-time systems"]
     end
     
     subgraph "Relationships"
-        R1[FT is LT evaluated on<br/>imaginary axis s = i?]
-        R2[ZT is sampled LT:<br/>z = e^(sT)]
-        R3[DFT is sampled FT:<br/>frequency discretization]
+        R1["FT is LT evaluated on<br/>imaginary axis s = i?"]
+        R2["ZT is sampled LT:<br/>z = e^(sT)"]
+        R3["DFT is sampled FT:<br/>frequency discretization"]
         R4[FS ? FT as period T ? 8]
     end
     
     FS -->|Period T ? 8| FT
-    FT -->|s = i?| LT
+    FT -->|"s = i?"| LT
     FT -->|Sample at f_s| DFT
     DFT -->|Cooley-Tukey| FFT
-    LT -->|z = e^(sT)| ZT
+    LT -->|"z = e^(sT)"| ZT
 ```
 
 ## TypeScript Implementation: Cooley-Tukey FFT

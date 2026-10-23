@@ -10,7 +10,7 @@ sidebar_position: 356
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![AI on Constrained Devices](visual/31-mobile-ai.svg)
+![AI on Constrained Devices](/ai-engineering-journey/img/visual/31-mobile-ai.svg)
 
 # What the diagram shows
 

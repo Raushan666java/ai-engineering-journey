@@ -10,7 +10,7 @@ sidebar_position: 391
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![The Campus Placement Journey](visual/33-campus-placement.svg)
+![The Campus Placement Journey](/ai-engineering-journey/img/visual/33-campus-placement.svg)
 
 # What the diagram shows
 

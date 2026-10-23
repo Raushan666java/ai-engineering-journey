@@ -46,13 +46,13 @@ flowchart LR
     S0[Introduction]
     S1[__str__ and __repr__]
     S2[__eq__ and __hash__]
-    S3[__lt__, __le__, __gt__, __ge__]
-    S4[__getitem__, __setitem__, __delitem__]
+    S3["__lt__, __le__, __gt__, __ge__"]
+    S4["__getitem__, __setitem__, __delitem__"]
     S5[__call__]
-    S6[__enter__ and __exit__ (Context Managers)]
+    S6["__enter__ and __exit__ (Context Managers)"]
     S7[__iter__ and __next__]
     S8[__len__ and __bool__]
-    S9[__add__, __sub__, __mul__, and Arithmetic]
+    S9["__add__, __sub__, __mul__, and Arithmetic"]
     S0 --> S1
     S1 --> S2
     S2 --> S3

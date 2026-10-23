@@ -53,7 +53,7 @@ flowchart LR
     B --> K[Rethrowing]
     C --> L[Constructor / Destructor Exceptions]
     L --> M[Memory Leak Problem & Fix]
-    E --> N[noexcept vs throw() vs nothing]
+    E --> N["noexcept vs throw() vs nothing"]
 ```
 
 ## 8.1 Traditional Error Handling

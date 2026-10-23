@@ -52,10 +52,10 @@ Understanding binary search trees is fundamental for AI engineers. This section 
 
 ```mermaid
 flowchart LR
-    A[BST] --> B[Property: Left < Root < Right]
-    B --> C[Search O(h)]
-    B --> D[Insert O(h)]
-    B --> E[Delete O(h)]
+    A[BST] --> B["Property: Left < Root < Right"]
+    B --> C["Search O(h)"]
+    B --> D["Insert O(h)"]
+    B --> E["Delete O(h)"]
     C --> F[Balance]
     D --> F
     E --> F

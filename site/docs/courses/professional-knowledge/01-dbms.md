@@ -443,9 +443,9 @@ graph LR
     subgraph "S (Right)"
         S1[2] --> S2[3] --> S3[4]
     end
-    INNER[INNER: {2,3}] --> LEFT[LEFT: {1,2,3 / NULL for 1}]
-    LEFT --> RIGHT[RIGHT: {2,3,4 / NULL for 4}]
-    RIGHT --> FULL[FULL: {1,2,3,4 / NULLs}]
+    INNER["INNER: {2,3}"] --> LEFT["LEFT: {1,2,3 / NULL for 1}"]
+    LEFT --> RIGHT["RIGHT: {2,3,4 / NULL for 4}"]
+    RIGHT --> FULL["FULL: {1,2,3,4 / NULLs}"]
 ```
 
 ### ACID Properties — Real-World Scenarios

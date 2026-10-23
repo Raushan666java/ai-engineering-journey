@@ -533,14 +533,14 @@ flowchart TD
     A[Read Problem] --> B{Identify Category}
     B -->|Percentage| C[Identify Part & Whole]
     B -->|Profit-Loss| D[Find CP & SP]
-    B -->|TSD| E[D = S ? T]
-    B -->|Time-Work| F[Rate = 1/Days]
-    B -->|CI/SI| G[Identify P, R, T]
-    C --> H[Apply % = Part/Whole ? 100]
-    D --> I[Profit = SP - CP; % = Profit/CP ? 100]
-    E --> J[Convert Units: km/h ? 5/18 = m/s]
-    F --> K[Sum Rates; Remaining = 1 - Done]
-    G --> L[SI = PRT/100; CI = P(1+R/100)^T - P]
+    B -->|TSD| E["D = S ? T"]
+    B -->|Time-Work| F["Rate = 1/Days"]
+    B -->|CI/SI| G["Identify P, R, T"]
+    C --> H["Apply % = Part/Whole ? 100"]
+    D --> I["Profit = SP - CP; % = Profit/CP ? 100"]
+    E --> J["Convert Units: km/h ? 5/18 = m/s"]
+    F --> K["Sum Rates; Remaining = 1 - Done"]
+    G --> L["SI = PRT/100; CI = P(1+R/100)^T - P"]
     H --> M[Verify Answer Reasonableness]
     I --> M; J --> M; K --> M; L --> M
 ```

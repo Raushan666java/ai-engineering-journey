@@ -360,7 +360,7 @@ Feel free to reach out for:
 ## 🚀 About Me
 I'm a Software Engineer passionate about building scalable distributed systems.
 
-- 🔭 I'm currently working on [Microservices Playground](link)
+- 🔭 I'm currently working on [Microservices Playground)
 - 🌱 I'm currently learning Kafka and System Design
 - 👯 I'm looking to collaborate on open-source projects
 - 💬 Ask me about Java, Spring Boot, System Design
@@ -381,8 +381,8 @@ I'm a Software Engineer passionate about building scalable distributed systems.
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourname&show_icons=true&theme=dark)
 
 ## 📝 Latest Blog Posts
-- [Building Resilient Microservices](link)
-- [Understanding Kafka Internals](link)
+- [Building Resilient Microservices)
+- [Understanding Kafka Internals)
 
 ## 📫 Let's Connect!
 [LinkedIn] [Twitter] [Portfolio]

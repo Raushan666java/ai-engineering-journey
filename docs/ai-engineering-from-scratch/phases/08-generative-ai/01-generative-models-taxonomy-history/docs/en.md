@@ -17,7 +17,7 @@ Five families have survived the last twelve years. Knowing which compromise each
 
 ## The Concept
 
-![Five families of generative models — taxonomy by what they model](../assets/taxonomy.svg)
+![Five families of generative models — taxonomy by what they model](/ai-engineering-journey/img/visual/taxonomy.svg)
 
 **1. Explicit density, tractable.** Write `log p(x)` as a sum you can actually evaluate. Autoregressive models (PixelCNN, WaveNet, GPT) factorize `p(x) = ∏ p(x_i | x_<i)`. Normalizing flows (RealNVP, Glow) build `p(x)` as an invertible transform of a simple base. Pro: exact likelihood, clean training loss. Con: autoregressive inference is sequential (slow for long sequences), flows need invertible architectures (architecturally restrictive).
 

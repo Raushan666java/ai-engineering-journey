@@ -30,12 +30,12 @@
 ```mermaid
 flowchart LR
     A[Stack LIFO] --> B[Array vs Linked Implementation]
-    B --> C[Push / Pop / Top O(1)]
+    B --> C["Push / Pop / Top O(1)"]
     C --> D[Parenthesis Matching]
-    D --> E[Shunting-Yard: Infix to Postfix]
+    D --> E["Shunting-Yard: Infix to Postfix"]
     E --> F[Postfix Evaluation]
     F --> G[MinStack]
-    G --> H[Applications: DFS, Undo, Compilers]
+    G --> H["Applications: DFS, Undo, Compilers"]
 ```
 
 ## Theory

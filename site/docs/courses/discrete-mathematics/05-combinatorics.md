@@ -564,13 +564,13 @@ flowchart TD
         B -->|Yes| C{Permutation}
         B -->|No| D{Combination}
         C --> E{Repetition?}
-        E -->|No| F[P(n,r)]
+        E -->|No| F["P(n,r)"]
         E -->|Yes| G[n^r]
         D --> H{Repetition?}
-        H -->|No| I[C(n,r)]
-        H -->|Yes| J[C(n+r-1, r)]
-        I --> K[Binomial<br/>Coefficients]
-        G --> L[Counting<br/>Functions]
+        H -->|No| I["C(n,r)"]
+        H -->|Yes| J["C(n+r-1, r)"]
+        I --> K["Binomial<br/>Coefficients"]
+        G --> L["Counting<br/>Functions"]
     end
 ```
 

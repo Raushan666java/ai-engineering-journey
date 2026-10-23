@@ -453,17 +453,26 @@ sequenceDiagram
 ```mermaid
 flowchart TD
     subgraph RAID0[RAID 0 - Striping]
-        D1[Block 0] D2[Block 1] D3[Block 2] D4[Block 3]
+        D1[Block 0]
+        D2[Block 1]
+        D3[Block 2]
+        D4[Block 3]
     end
     subgraph RAID1[RAID 1 - Mirroring]
-        M1[Block 0] M2[Block 0]
+        M1[Block 0]
+        M2[Block 0]
     end
     subgraph RAID5[RAID 5 - Striping + Parity]
-        P1[Block 0] P2[Block 1] P3[Parity P01] P4[Block 2]
+        P1[Block 0]
+        P2[Block 1]
+        P3[Parity P01]
+        P4[Block 2]
     end
     subgraph RAID10[RAID 10 - Mirror + Strip]
-        R1[Block 0] R1M[Block 0 Mirror]
-        R2[Block 1] R2M[Block 1 Mirror]
+        R1[Block 0]
+        R1M[Block 0 Mirror]
+        R2[Block 1]
+        R2M[Block 1 Mirror]
     end
 ```
 

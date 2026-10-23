@@ -2,7 +2,7 @@
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Container-to-Cloud Deployment Stack](visual/06-docker-kubernetes-cloud.svg)
+![Container-to-Cloud Deployment Stack](/ai-engineering-journey/img/visual/06-docker-kubernetes-cloud.svg)
 
 # What the diagram shows
 

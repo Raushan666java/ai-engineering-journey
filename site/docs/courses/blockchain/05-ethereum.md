@@ -186,7 +186,7 @@ flowchart TB
         GasLimit["Gas Limit: 100,000"]
         GasPrice["Gas Price: 50 Gwei"]
         TotalFee["Max Fee: 100,000 × 50 = 5,000,000 Gwei<br/>= 0.005 ETH"]
-        Execution["EVM Executes..."
+        Execution["EVM Executes..."]
         UsedGas["Gas Used: 45,000"]
         Refund["Unused Gas Refunded:<br/>55,000 × 50 = 2,750,000 Gwei"]
     end

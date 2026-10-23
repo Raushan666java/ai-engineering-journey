@@ -998,18 +998,18 @@ graph TB
 ```mermaid
 flowchart LR
     subgraph "Gradient ?f"
-        GRAD[Points uphill<br/>Direction of steepest ascent]
+        GRAD["Points uphill<br/>Direction of steepest ascent"]
     end
     subgraph "Divergence ??F"
-        DIV[Measures outflow<br/>Source (+) or Sink (-)]
+        DIV["Measures outflow<br/>Source (+) or Sink (-)"]
     end
     subgraph "Curl ??F"
-        CURL[Measures rotation<br/>Vorticity / Circulation]
+        CURL["Measures rotation<br/>Vorticity / Circulation"]
     end
     
-    GRAD -->|Integrate| GT[Line integral = potential difference]
-    DIV -->|Integrate| DT[Flux = total sources inside]
-    CURL -->|Integrate| ST[Circulation = curl through surface]
+    GRAD -->|Integrate| GT["Line integral = potential difference"]
+    DIV -->|Integrate| DT["Flux = total sources inside"]
+    CURL -->|Integrate| ST["Circulation = curl through surface"]
 ```
 
 ### Additional Exercises

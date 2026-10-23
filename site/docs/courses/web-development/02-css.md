@@ -48,7 +48,7 @@ graph TD
     E --> F
     G[Animations & Transitions]
     F --> G
-    H[@font-face]
+    H["@font-face"]
     G --> H
 ```
 

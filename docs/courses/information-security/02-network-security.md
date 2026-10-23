@@ -1499,4 +1499,4 @@ D) Computed independently by both parties
 
 ---
 
-> **Next Chapter:** [Chapter 3 — Cyber Threats & Attacks](/information-security/03-cyber-threats-attacks/)
+> **Next Chapter:** [Chapter 3 — Cyber Threats & Attacks](/ai-engineering-journey/information-security/03-cyber-threats-attacks/)

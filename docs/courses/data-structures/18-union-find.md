@@ -38,11 +38,11 @@ From Kruskal's MST (networks, circuit design) to social networks ("People You Ma
 
 ```mermaid
 flowchart TD
-    A[DSU Operations] --> B[find(x)]
-    A --> C[union(x,y)]
+    A[DSU Operations] --> B["find(x)"]
+    A --> C["union(x,y)"]
     B --> D[Path Compression]
     C --> E[Union by Rank]
-    D --> F[O(α(n)) — Inverse Ackermann]
+    D --> F["O(α(n)) — Inverse Ackermann"]
     E --> F
     F --> G[Core Applications]
     G --> H[Kruskal's MST]

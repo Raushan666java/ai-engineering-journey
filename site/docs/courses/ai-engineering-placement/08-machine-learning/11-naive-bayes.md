@@ -67,14 +67,14 @@ flowchart TD
     end
 
     subgraph "Probability Computation"
-        D[P(y | x)]
-        E[P(y)]
-        F[P(x | y)]
-        G[P(x)]
+        D["P(y | x)"]
+        E["P(y)"]
+        F["P(x | y)"]
+        G["P(x)"]
     end
 
     subgraph "Independence Assumption"
-        H[P(x1,x2|y) = P(x1|y) * P(x2|y)]
+        H["P(x1,x2|y) = P(x1|y) * P(x2|y)"]
         I[Multiply feature probabilities]
     end
 
@@ -167,13 +167,13 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    A[Training Data] --> B[Compute Priors P(y)]
-    A --> C[Compute Likelihood P(x|y)]
+    A[Training Data] --> B["Compute Priors P(y)"]
+    A --> C["Compute Likelihood P(x|y)"]
 
     subgraph "For each class y"
-        D[Gaussian: μ, σ]
-        E[Multinomial: count ratios]
-        F[Bernoulli: presence prob]
+        D["Gaussian: μ, σ"]
+        E["Multinomial: count ratios"]
+        F["Bernoulli: presence prob"]
     end
 
     C --> D & E & F
@@ -182,7 +182,7 @@ flowchart TD
 
     subgraph "Prediction"
         H[New Sample x]
-        H --> I[Compute log P(y) + Σ log P(xi|y)]
+        H --> I["Compute log P(y) + Σ log P(xi|y)"]
         I --> J[Pick class with highest probability]
         J --> K[Predicted Label]
     end

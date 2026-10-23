@@ -45,7 +45,7 @@ flowchart TD
     A --> C[Containers]
     A --> D[Integration]
     B --> B1[Testcontainers dependency]
-    B --> B2[@Testcontainers annotation]
+    B --> B2["@Testcontainers annotation"]
     C --> C1[PostgreSQL / MySQL]
     C --> C2[Redis / Kafka]
     D --> D1[DynamicPropertySource]

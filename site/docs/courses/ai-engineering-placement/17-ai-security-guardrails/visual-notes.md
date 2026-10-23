@@ -10,7 +10,7 @@ sidebar_position: 227
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Defense-in-Depth for AI](visual/17-ai-security-guardrails.svg)
+![Defense-in-Depth for AI](/ai-engineering-journey/img/visual/17-ai-security-guardrails.svg)
 
 # What the diagram shows
 

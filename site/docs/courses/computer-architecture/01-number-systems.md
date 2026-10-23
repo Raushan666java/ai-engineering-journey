@@ -397,7 +397,7 @@ flowchart LR
         S[Sign 1 bit] --> E[Exponent 8 bits]
         E --> M[Mantissa 23 bits]
     end
-    V[Value = -1^S × 1.M × 2^(E-127)] --> S
+    V["Value = -1^S × 1.M × 2^(E-127)"] --> S
     V --> E
     V --> M
 ```

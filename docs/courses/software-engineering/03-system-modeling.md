@@ -298,11 +298,11 @@ graph TD
     classDef start fill:#2c3e50,stroke:#2c3e50,color:#fff
     classDef act fill:#3498db,stroke:#2980b9,color:#fff
     classDef decision fill:#f39c12,stroke:#d35400,color:#fff
-    classDef end fill:#e74c3c,stroke:#c0392b,color:#fff
+    classDef terminate fill:#e74c3c,stroke:#c0392b,color:#fff
     class START start
     class A,C,F,G,H,I,J,K,L act
     class B,E decision
-    class D,END end
+    class D,END terminate
 ```
 
 **Activity Elements:**

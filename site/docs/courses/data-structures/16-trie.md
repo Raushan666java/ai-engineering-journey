@@ -48,12 +48,12 @@ flowchart TD
     G --> H[Yes arrow continue]
     G --> I[No arrow Mark end of word]
     I --> J[Operations]
-    J --> K[Search O(L)]
-    J --> L[Prefix Match O(L)]
-    J --> M[Autocomplete O(L+Results)]
+    J --> K["Search O(L)"]
+    J --> L["Prefix Match O(L)"]
+    J --> M["Autocomplete O(L+Results)"]
     J --> N[Word Break DP]
-    J --> O[Delete O(L)]
-    J --> P[Longest Prefix O(L)]
+    J --> O["Delete O(L)"]
+    J --> P["Longest Prefix O(L)"]
 ```
 
 ## Theory

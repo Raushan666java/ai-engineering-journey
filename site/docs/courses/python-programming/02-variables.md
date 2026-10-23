@@ -114,16 +114,16 @@ console.log(a);        // [1, 2, 3, 4]
 ```mermaid
 flowchart TD
     subgraph Python[Dynamic Typing - Python]
-        P1[Declare: x = 42] --> P2[Runtime: x is int]
-        P2 --> P3[Reassign: x = \"hello\"]
-        P3 --> P4[Runtime: x is str]
+        P1["Declare: x = 42"] --> P2["Runtime: x is int"]
+        P2 --> P3["Reassign: x = \#quot;hello\#quot;"]
+        P3 --> P4["Runtime: x is str"]
         P4 --> P5[x has no fixed type]
     end
 
     subgraph TS[Static Typing - TypeScript]
-        T1[Declare: let x: number = 42] --> T2[Compile: type checked]
-        T2 --> T3[Runtime: x is always number]
-        T3 --> T4[Reassign: x = \"hello\"]
+        T1["Declare: let x: number = 42"] --> T2["Compile: type checked"]
+        T2 --> T3["Runtime: x is always number"]
+        T3 --> T4["Reassign: x = \#quot;hello\#quot;"]
         T4 --> T5[Compile Error before running]
     end
 ```
@@ -665,11 +665,11 @@ TypeScript's operator precedence mirrors C-family languages and differs from Pyt
 flowchart LR
     subgraph Python[Python Precedence]
         direction LR
-        PY[not > and > or]
+        PY["not > and > or"]
     end
     subgraph TS[TypeScript Precedence]
         direction LR
-        TY[! > && > ||]
+        TY["! > && > ||"]
     end
 
     PY --> Note[Same relative ordering]

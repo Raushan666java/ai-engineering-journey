@@ -10,7 +10,7 @@ sidebar_position: 333
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Keeping Inference Fast and Cheap](visual/27-ai-infrastructure.svg)
+![Keeping Inference Fast and Cheap](/ai-engineering-journey/img/visual/27-ai-infrastructure.svg)
 
 # What the diagram shows
 

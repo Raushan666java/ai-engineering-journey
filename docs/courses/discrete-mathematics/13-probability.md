@@ -507,8 +507,8 @@ function predictNB(
 flowchart TD
     A[Prior PClass] --> B[Evidence]
     B --> C[Features]
-    C --> D[Likelihood PFeature|Class]
-    D --> E[Posterior PClass|Features]
+    C --> D["Likelihood PFeature|Class"]
+    D --> E["Posterior PClass|Features"]
     E --> F[Predict Class with Max Probability]
 ```
 

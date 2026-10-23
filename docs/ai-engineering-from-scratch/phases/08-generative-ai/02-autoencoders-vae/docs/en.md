@@ -19,7 +19,7 @@ In 2026 VAEs rarely ship standalone — they have been outclassed by diffusion f
 
 ## The Concept
 
-![Autoencoder vs VAE: the reparameterization trick](../assets/vae.svg)
+![Autoencoder vs VAE: the reparameterization trick](/ai-engineering-journey/img/visual/vae.svg)
 
 **Autoencoder.** `z = encoder(x)`, `x̂ = decoder(z)`, loss = `||x - x̂||²`. Code space unstructured.
 

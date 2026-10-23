@@ -144,12 +144,12 @@ flowchart TD
     G --> H[Two branches]
     H --> H1[Arabian Sea Branch]
     H --> H2[Bay of Bengal Branch]
-    H1 --> I[Western Ghats -> N India -> Punjab]
-    H2 --> J[NE India -> Ganga Plains -> merges with Arabian]
+    H1 --> I["Western Ghats -> N India -> Punjab"]
+    H2 --> J["NE India -> Ganga Plains -> merges with Arabian"]
     C --> K[High pressure over Tibet]
     K --> L[NE Monsoon winds]
     L --> M[Retreating Monsoon]
-    M --> N[Rainfall over SE coast (Tamil Nadu)]
+    M --> N["Rainfall over SE coast (Tamil Nadu)"]
 ```
 
 #### 2.5.1 Seasons in India

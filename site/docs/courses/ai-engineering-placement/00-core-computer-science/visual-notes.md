@@ -10,7 +10,7 @@ sidebar_position: 9
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Foundation stack diagram](visual/00-foundation-stack.svg)
+![Foundation stack diagram](/ai-engineering-journey/img/visual/00-foundation-stack.svg)
 
 ## What the diagram shows
 

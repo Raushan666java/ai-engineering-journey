@@ -44,7 +44,7 @@ flowchart TD
     B -->|Ratio Given| C3[Express Unknowns in Ratio Terms]
     B -->|Percentage Given| C4[Percentage ï¿½ Total / 100]
     B -->|Average Given| C5[Average ï¿½ Count - Sum of Known]
-    B -->|Growth Rate Given| C6[Previous Value ï¿½ (1 + Growth Rate)]
+    B -->|Growth Rate Given| C6["Previous Value ï¿½ (1 + Growth Rate)"]
     
     C1 --> D[Form Equation]
     C2 --> D

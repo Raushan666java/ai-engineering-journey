@@ -296,20 +296,20 @@ A **trust** that pools money from multiple investors and invests in a diversifie
 
 ```mermaid
 flowchart TD
-    A[Investors] --> B[Asset Management<br/>Company AMC]
-    B --> C[Mutual Fund<br/>Scheme / Trust]
+    A[Investors] --> B["Asset Management<br/>Company AMC"]
+    B --> C["Mutual Fund<br/>Scheme / Trust"]
     C --> D[Equity]
     C --> E[Debt]
     C --> F[Money Market]
     C --> G[Hybrid]
     C --> H[Other Assets]
     
-    B --> I[Registrar &<br/>Transfer Agent]
-    I --> J[Unit Holders<br/>(Investors)]
+    B --> I["Registrar &<br/>Transfer Agent"]
+    I --> J["Unit Holders<br/>(Investors)"]
     
     K[Custodian] --> C
     L[Auditor] --> C
-    M[SEBI<br/>Regulator] -.-> B
+    M["SEBI<br/>Regulator"] -.-> B
 ```
 
 **Types of mutual funds:**

@@ -41,12 +41,12 @@ Understanding oop in python is fundamental for AI engineers. This section covers
 flowchart LR
     A[Classes] --> B[__init__ + self]
     A --> C[Methods & Attributes]
-    D[Inheritance] --> E[super()]
+    D[Inheritance] --> E["super()"]
     D --> F[MRO]
     G[Polymorphism] --> H[Duck Typing]
     G --> I[ABC]
-    J[Dunder Methods] --> K[__str__, __eq__, ...]
-    L[Dataclasses] --> M[Auto __init__, __repr__, __eq__]
+    J[Dunder Methods] --> K["__str__, __eq__, ..."]
+    L[Dataclasses] --> M["Auto __init__, __repr__, __eq__"]
 ```
 
 ## 8.1 Classes and Objects

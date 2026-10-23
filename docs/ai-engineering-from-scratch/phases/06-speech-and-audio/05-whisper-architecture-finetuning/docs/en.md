@@ -19,7 +19,7 @@ But Whisper is not a pipeline you can treat as a black box forever. Domain shift
 
 ## The Concept
 
-![Whisper encoder-decoder, tasks, chunked inference, fine-tune](../assets/whisper.svg)
+![Whisper encoder-decoder, tasks, chunked inference, fine-tune](/ai-engineering-journey/img/visual/whisper.svg)
 
 **Architecture.** Standard transformer encoder-decoder.
 

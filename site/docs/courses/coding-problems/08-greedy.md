@@ -73,8 +73,8 @@ flowchart LR
     B -->|No| C[Try DP / Backtracking]
     B -->|Yes| D{Greedy choice?}
     D -->|Proven| E[Greedy algorithm]
-    D -->|Unknown| F[Try both: greedy vs DP]
-    E --> G[O(n log n) for sorting + O(n)]
+    D -->|Unknown| F["Try both: greedy vs DP"]
+    E --> G["O(n log n) for sorting + O(n)"]
 ```
 
 ---
@@ -1075,13 +1075,13 @@ console.log(isPossible([1, 2, 3, 4, 4, 5])); // false
 flowchart TD
     A[Optimization Problem] --> B{Subproblems overlap?}
     B -->|Yes| C{Optimal substructure with greedy choice?}
-    C -->|Yes| D[Greedy Algorithm - O(n log n)]
-    C -->|No| E[Dynamic Programming - O(n^2)]
+    C -->|Yes| D["Greedy Algorithm - O(n log n)"]
+    C -->|No| E["Dynamic Programming - O(n^2)"]
     
     B -->|No| F[Divide & Conquer or Simple iteration]
     
-    D --> G[Examples: Activity Selection, Huffman, Dijkstra]
-    E --> H[Examples: Knapsack, LCS, Edit Distance]
+    D --> G["Examples: Activity Selection, Huffman, Dijkstra"]
+    E --> H["Examples: Knapsack, LCS, Edit Distance"]
 ```
 
 ### Practical Tips for Greedy Interviews

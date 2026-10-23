@@ -411,15 +411,15 @@ Brand architecture is the structure that organises a company's portfolio of bran
 ```mermaid
 graph TD
     subgraph "Brand Architecture Strategies"
-        HH[House of Brands<br/>Each product has its own distinct brand]
-        BH[Branded House<br/>Corporate brand on all products]
-        SB[Sub-brands<br/>Master brand + modifier]
-        EB[Endorsed Brands<br/>Individual brands backed by corporate name]
+        HH["House of Brands<br/>Each product has its own distinct brand"]
+        BH["Branded House<br/>Corporate brand on all products"]
+        SB["Sub-brands<br/>Master brand + modifier"]
+        EB["Endorsed Brands<br/>Individual brands backed by corporate name"]
     end
-    HH --> E1[Procter & Gamble: Tide, Ariel, Pampers]
-    BH --> E2[Virgin: Airlines, Mobile, Banking]
-    SB --> E3[Marriott: Marriott Hotels, Marriott Suites]
-    EB --> E4["Courtyard by Marriott", "Nestlé KitKat"]
+    HH --> E1["Procter & Gamble: Tide, Ariel, Pampers"]
+    BH --> E2["Virgin: Airlines, Mobile, Banking"]
+    SB --> E3["Marriott: Marriott Hotels, Marriott Suites"]
+    EB --> E4["Courtyard by Marriott / Nestlé KitKat"]
 ```
 
 | Strategy | Description | Advantages | Disadvantages |

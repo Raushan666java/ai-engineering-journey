@@ -45,8 +45,8 @@ flowchart LR
     C --> D[Linear Homogeneous Recurrences]
     D --> E[Characteristic Equation]
     E --> F{Distinct or Repeated Roots?}
-    F -->|Distinct| G[a_n = S a_i r_i^n]
-    F -->|Repeated| H[a_n = (S a_i n^i) r^n]
+    F -->|Distinct| G["a_n = S a_i r_i^n"]
+    F -->|Repeated| H["a_n = (S a_i n^i) r^n"]
     D --> I[Nonhomogeneous Recurrences]
     I --> J[Particular + Homogeneous Solution]
     A --> K[Generating Functions]
@@ -545,19 +545,19 @@ console.log(quicksortCost(10)); // 55 comparisons (n(n+1)/2 - n = n?/2 - n/2)
 ```mermaid
 flowchart TD
     subgraph "Recurrence Solving Strategy"
-        A[Tn = ...] --> B{Linear?}
+        A["Tn = ..."] --> B{Linear?}
         B -->|Yes| C{Constant<br/>Coefficients?}
-        B -->|No| D[Iteration or<br/>Substitution]
+        B -->|No| D["Iteration or<br/>Substitution"]
         C -->|Yes| E{Homogeneous?}
-        C -->|No| F[Generating<br/>Functions]
-        E -->|Yes| G[Characteristic<br/>Equation]
-        E -->|No| H[Homogeneous +<br/>Particular]
-        G --> I[r^k - c1r^{k-1} - ... = 0]
+        C -->|No| F["Generating<br/>Functions"]
+        E -->|Yes| G["Characteristic<br/>Equation"]
+        E -->|No| H["Homogeneous +<br/>Particular"]
+        G --> I["r^k - c1r^{k-1} - ... = 0"]
         I --> J[Roots ? General Form]
         H --> K[Root Conflict?]
         K -->|Yes| L[Multiply by n^m]
         K -->|No| M[Standard Form]
-        D --> N[Guess then<br/>Induction Proof]
+        D --> N["Guess then<br/>Induction Proof"]
     end
 ```
 

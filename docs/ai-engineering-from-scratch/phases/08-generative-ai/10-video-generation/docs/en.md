@@ -20,7 +20,7 @@ The architecture that solved this is the **Diffusion Transformer (DiT)** applied
 
 ## The Concept
 
-![Video diffusion: patchify, DiT, decode](../assets/video-generation.svg)
+![Video diffusion: patchify, DiT, decode](/ai-engineering-journey/img/visual/video-generation.svg)
 
 ### Patchify
 

@@ -49,7 +49,7 @@ Knapsack problems are the gateway to understanding **resource-constrained optimi
 ```mermaid
 flowchart LR
     A[Knapsack Problems] --> B[0/1 Knapsack]
-    A --> C[Fractional Knapsack<br/>(Greedy)]
+    A --> C["Fractional Knapsack<br/>(Greedy)"]
     A --> D[Bounded Knapsack]
     A --> E[Unbounded Knapsack]
     A --> F[Subset Sum]

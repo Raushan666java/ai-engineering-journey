@@ -22,7 +22,7 @@ The 2026 problem: LLMs extract relations enthusiastically. Too enthusiastically.
 
 ## The Concept
 
-![Text → triples → knowledge graph](../assets/relation-extraction.svg)
+![Text → triples → knowledge graph](/ai-engineering-journey/img/visual/relation-extraction.svg)
 
 **Triple form.** `(subject_entity, relation_type, object_entity)`. Relations come from a closed ontology (Wikidata properties, FIBO, UMLS) or an open set (OpenIE-style, anything goes).
 

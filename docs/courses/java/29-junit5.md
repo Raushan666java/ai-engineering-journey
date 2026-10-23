@@ -50,9 +50,9 @@ flowchart TD
     C --> C2[Assertions]
     C --> C3[Assumptions]
     C --> C4[Extensions]
-    C1 --> C1A[@Test / @ParameterizedTest]
-    C1 --> C1B[@Nested / @DisplayName]
-    C1 --> C1C[@BeforeEach / @AfterEach]
+    C1 --> C1A["@Test / @ParameterizedTest"]
+    C1 --> C1B["@Nested / @DisplayName"]
+    C1 --> C1C["@BeforeEach / @AfterEach"]
 ```
 
 ---

@@ -38,12 +38,12 @@ By the end of this chapter you should be able to:
 
 ```mermaid
 flowchart TD
-    A[Method Security, CORS and CSRF] --> B[Method Security]
+    A["Method Security, CORS and CSRF"] --> B[Method Security]
     A --> C[CORS]
     A --> D[CSRF]
-    B --> B1[@PreAuthorize]
-    B --> B2[@PostAuthorize]
-    B --> B3[@Secured]
+    B --> B1["@PreAuthorize"]
+    B --> B2["@PostAuthorize"]
+    B --> B3["@Secured"]
     C --> C1[CorsConfigurationSource]
     C --> C2[Allowed Origins / Methods / Headers]
     D --> D1[CsrfTokenRepository]

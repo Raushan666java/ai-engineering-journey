@@ -562,11 +562,11 @@ function isBipartite(graph: number[][]): boolean {
 flowchart TD
     subgraph "Graph Problems by Complexity"
         A[Graph Problem] --> B{Eulerian?}
-        B -->|Yes| C[O(E) ? check degrees]
+        B -->|Yes| C["O(E) ? check degrees"]
         B -->|No| D{Hamiltonian?}
         D -->|Yes| E[NP-complete ? brute force]
         D -->|No| F{Planar?}
-        F -->|Yes| G[O(V) ? check K5, K3,3 minors]
+        F -->|Yes| G["O(V) ? check K5, K3,3 minors"]
         F -->|No| H[Non-planar]
     end
 ```

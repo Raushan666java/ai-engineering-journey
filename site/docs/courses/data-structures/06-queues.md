@@ -49,10 +49,10 @@ Without queues, life would be chaos: nobody would know who is next, fairness wou
 ```mermaid
 flowchart LR
     A[Queue FIFO] --> B[Circular Array vs Linked]
-    B --> C[Enqueue / Dequeue O(1)]
-    C --> D[Deque: Both Ends]
+    B --> C["Enqueue / Dequeue O(1)"]
+    C --> D["Deque: Both Ends"]
     D --> E[Priority Queue with Heap]
-    E --> F[Applications: BFS, Sliding Window]
+    E --> F["Applications: BFS, Sliding Window"]
 ```
 
 ## Theory

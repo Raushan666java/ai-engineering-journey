@@ -51,8 +51,8 @@ flowchart TD
     I --> G
     I --> J[Done]
     F --> J
-    J --> K[Search: O(log n)]
-    J --> L[B+ Tree: Linked Leaves]
+    J --> K["Search: O(log n)"]
+    J --> L["B+ Tree: Linked Leaves"]
     L --> M[Range Queries Efficient]
 ```
 

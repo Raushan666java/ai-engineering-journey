@@ -79,7 +79,7 @@ flowchart LR
 
     A1 -->|1. Fetch Agent Card| R1
     A1 -->|2. Select Capability| B1
-    A2 -->|3. Send Task (JSON-RPC)| B1
+    A2 -->|"3. Send Task (JSON-RPC)"| B1
     B1 -->|4. Execute| B2
     B2 -->|5. Return Artifacts| B1
     B1 -->|6. Task Response| A1

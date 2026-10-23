@@ -2,7 +2,7 @@
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![Choosing Your AI Stack](visual/23-trending-aiml-platforms.svg)
+![Choosing Your AI Stack](/ai-engineering-journey/img/visual/23-trending-aiml-platforms.svg)
 
 # What the diagram shows
 

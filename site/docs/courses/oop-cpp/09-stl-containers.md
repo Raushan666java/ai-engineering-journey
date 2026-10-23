@@ -56,8 +56,8 @@ flowchart LR
     E --> E1[stack]
     E --> E2[queue]
     E --> E3[priority_queue]
-    C1 --> F[Red-Black Tree O(log n)]
-    D1 --> G[Hash Table O(1) avg]
+    C1 --> F["Red-Black Tree O(log n)"]
+    D1 --> G["Hash Table O(1) avg"]
     B1 --> H[Dynamic Array]
     B2 --> I[Chunked Blocks]
 ```

@@ -11,13 +11,13 @@ sidebar_position: 2
 > Master data interpretation, number series, quadratic equations, and simplification under timed conditions. These drills bridge basic arithmetic and full-length test performance.
 
 ```mermaid
-lineChart
-title Quant Advanced Accuracy Progression
-x-axis ["Set 1-2", "Set 3-4", "Set 5-6", "Set 7-8", "Set 9-10"]
-dataset "Data Interpretation" [55, 62, 70, 78, 85]
-dataset "Number Series" [50, 60, 68, 75, 82]
-dataset "Quadratic Equations" [45, 55, 65, 72, 80]
-dataset "Simplification" [60, 68, 75, 82, 88]
+xychart-beta
+    title "Quant Advanced Accuracy Progression"
+    x-axis ["Set 1-2", "Set 3-4", "Set 5-6", "Set 7-8", "Set 9-10"]
+    line [55, 62, 70, 78, 85]
+    line [50, 60, 68, 75, 82]
+    line [45, 55, 65, 72, 80]
+    line [60, 68, 75, 82, 88]
 ```
 
 ---

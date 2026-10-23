@@ -613,10 +613,10 @@ Block 4: IN=[2:a, 1:d, 3:c] OUT=[2:a, 1:d, 3:c]
 ```mermaid
 flowchart TB
     subgraph Forward["Forward (Reaching Defs, Available Exprs)"]
-        P1[Pred 1] --> O1[OUT[P1]]
-        P2[Pred 2] --> O2[OUT[P2]]
-        P3[Pred 3] --> O3[OUT[P3]]
-        O1 --> M[Meet: ? or n]
+        P1[Pred 1] --> O1["OUT[P1]"]
+        P2[Pred 2] --> O2["OUT[P2]"]
+        P3[Pred 3] --> O3["OUT[P3]"]
+        O1 --> M["Meet: ? or n"]
         O2 --> M
         O3 --> M
         M --> IN_B["IN[B]"]

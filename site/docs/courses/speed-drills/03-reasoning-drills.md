@@ -11,14 +11,14 @@ sidebar_position: 3
 > Sharpen your analytical reasoning through timed practice in coding-decoding, blood relations, direction sense, syllogisms, inequalities, and series completion.
 
 ```mermaid
-lineChart
-title Reasoning Accuracy Progression
-x-axis ["Set 1-2", "Set 3-4", "Set 5-6", "Set 7-8", "Set 9-10"]
-dataset "Coding-Decoding" [60, 68, 75, 82, 88]
-dataset "Blood Relations" [50, 60, 70, 78, 85]
-dataset "Direction Sense" [55, 65, 72, 80, 86]
-dataset "Syllogisms" [45, 58, 68, 75, 82]
-dataset "Inequalities" [65, 72, 78, 84, 90]
+xychart-beta
+    title "Reasoning Accuracy Progression"
+    x-axis ["Set 1-2", "Set 3-4", "Set 5-6", "Set 7-8", "Set 9-10"]
+    line [60, 68, 75, 82, 88]
+    line [50, 60, 70, 78, 85]
+    line [55, 65, 72, 80, 86]
+    line [45, 58, 68, 75, 82]
+    line [65, 72, 78, 84, 90]
 ```
 
 ---

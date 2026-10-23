@@ -718,7 +718,7 @@ sequenceDiagram
     else UUID
         H->>H: Generate UUID v4
         H->>DB: INSERT ... WITH KNOWN UUID
-        DB--->>H: Success
+        DB-->>H: Success
     end
 ```
 

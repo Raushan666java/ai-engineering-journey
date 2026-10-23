@@ -19,7 +19,7 @@ GPT-1 (2018), GPT-2 (2019), GPT-3 (2020), GPT-4 (2023), GPT-5 (2024), Claude, Ll
 
 ## The Concept
 
-![Causal mask creates a triangular attention matrix](../assets/causal-attention.svg)
+![Causal mask creates a triangular attention matrix](/ai-engineering-journey/img/visual/causal-attention.svg)
 
 ### The mask
 

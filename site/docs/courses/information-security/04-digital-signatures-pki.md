@@ -1652,4 +1652,4 @@ D) Plain text with certificate serial number and status
 
 ---
 
-> **Next Chapter:** [Chapter 5 — Banking & Payment Security](/information-security/05-banking-payment-security/)
+> **Next Chapter:** [Chapter 5 — Banking & Payment Security](/ai-engineering-journey/information-security/05-banking-payment-security/)

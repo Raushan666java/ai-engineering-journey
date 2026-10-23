@@ -23,7 +23,7 @@ This lesson builds intuition for all three and names when to reach for which.
 
 ## The Concept
 
-![Constrained decoding masking invalid tokens at each step](../assets/constrained-decoding.svg)
+![Constrained decoding masking invalid tokens at each step](/ai-engineering-journey/img/visual/constrained-decoding.svg)
 
 **How constrained decoding works.** At each generation step, the LLM produces a logit vector over the full vocabulary (~100k tokens). A *logit processor* sits between the model and the sampler. It computes which tokens are valid given the current position in the target grammar — JSON Schema, regex, context-free grammar — and sets the logits of all invalid tokens to negative infinity. The softmax over the remaining logits puts probability mass only on valid continuations.
 

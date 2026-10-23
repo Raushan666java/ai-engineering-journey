@@ -793,21 +793,21 @@ if __name__ == "__main__":
 ```mermaid
 graph TD
     subgraph "Template File Structure"
-        T1[Fast I/O Layer<br/>sys.stdin.buffer]
-        T2[Debug Helpers<br/>stderr, trace, Timer]
-        T3[Snippet Library<br/>Modular, DSU, Prefix]
-        T4[solve() Function<br/>Contest Logic]
-        T5[Output Flush<br/>sys.stdout.write]
+        T1["Fast I/O Layer<br/>sys.stdin.buffer"]
+        T2["Debug Helpers<br/>stderr, trace, Timer"]
+        T3["Snippet Library<br/>Modular, DSU, Prefix"]
+        T4["solve() Function<br/>Contest Logic"]
+        T5["Output Flush<br/>sys.stdout.write"]
     end
 
     T1 --> T2 --> T3 --> T4 --> T5
-    T2 -.->|Disable in production| NODEBUG[Toggle DEBUG = False]
+    T2 -.->|Disable in production| NODEBUG["Toggle DEBUG = False"]
     T4 -->|Uses| T1
     T4 -->|Uses| T3
 
     subgraph "Contest Workflow"
         W1[Copy template] --> W2[Read problem]
-        W2 --> W3[Implement solve()]
+        W2 --> W3["Implement solve()"]
         W3 --> W4[Test with sample]
         W4 --> W5{Passes?}
         W5 -->|Yes| W6[Submit]

@@ -1135,11 +1135,6 @@ await main();
 
 This section adds production-grade HITL infrastructure: a `ReviewerWorkloadBalancer` that distributes proposals across available humans, a `StaleProposalCleaner` that expires unassigned proposals after TTL, a `HumanPerformanceTracker` measuring reviewer accuracy/speed/fatigue, a `SimulatedReviewerPool` for testing, and a `ProposalLifecycleLogger` for full lifecycle audit.
 
-```typescript
-// ch03-hitl-tooling.ts
-// bun run ch03-hitl-tooling.ts
-
-/*
 ```mermaid
 graph TD
     subgraph "HITL Escalation Flow with Timeouts & Fallbacks"
@@ -1166,8 +1161,11 @@ graph TD
     style C fill:#2ecc71,color:#fff
     style F fill:#f39c12,color:#fff
     style K fill:#e74c3c,color:#fff
-*/
-*/
+```
+
+```typescript
+// ch03-hitl-tooling.ts
+// bun run ch03-hitl-tooling.ts
 
 // ─── ReviewerWorkloadBalancer ──────────────────────────────────────────
 
@@ -1286,7 +1284,7 @@ class StaleProposalCleaner {
 
   getExpired(): StaleProposal[] {
     const expired: StaleProposal[] = [];
-    for (const [id, proposal] of this.proposals) {
+    for (const["id, proposal"] of this.proposals) {
       if (proposal.status === "in-review") continue;
       if (this.computeRemainingMs(proposal) &lt;= 0) {
         expired.push(proposal);
@@ -1298,7 +1296,7 @@ class StaleProposalCleaner {
   }
 
   getExpiringSoon(thresholdMs: number): StaleProposal[] {
-    return [...this.proposals.values()].filter((p) => {
+    return["...this.proposals.values()"].filter((p) => {
       const remaining = this.computeRemainingMs(p);
       return remaining > 0 && remaining &lt;= thresholdMs;
     });
@@ -1413,7 +1411,7 @@ class HumanPerformanceTracker {
     const rows = this.events.map((e) =>
       `${e.reviewerId},${e.proposalId},${e.decision},${e.timeToDecisionMs.toFixed(0)},${e.outcomeCorrect},${e.fatigueLevel.toFixed(2)},${e.timestamp.toISOString()}`
     );
-    return [header, ...rows].join("\n");
+    return["header, ...rows"].join("\n");
   }
 }
 
@@ -1441,7 +1439,7 @@ class SimulatedReviewerPool {
   }
 
   getRandomReviewer(): SimulatedReviewerConfig {
-    return this.reviewers[Math.floor(Math.random() * this.reviewers.length)];
+    return this.reviewers["Math.floor(Math.random() * this.reviewers.length)"];
   }
 
   async simulateReview(
@@ -1451,7 +1449,7 @@ class SimulatedReviewerPool {
     const reviewer = this.reviewers.find((r) => r.id === reviewerId);
     if (!reviewer) throw new Error(`Unknown reviewer: ${reviewerId}`);
 
-    const [minSpeed, maxSpeed] = reviewer.speedMs;
+    const["minSpeed, maxSpeed"] = reviewer.speedMs;
     const timeMs = minSpeed + Math.random() * (maxSpeed - minSpeed);
     const currentFatigue = this.fatigue.get(reviewerId) ?? 0;
     const count = this.reviewCount.get(reviewerId) ?? 0;
@@ -1498,7 +1496,7 @@ class SimulatedReviewerPool {
 
   getFatigueLevels(): Record&lt;string, number&gt; {
     const levels: Record&lt;string, number&gt; = {};
-    for (const [id, level] of this.fatigue) {
+    for (const["id, level"] of this.fatigue) {
       levels[id] = level;
     }
     return levels;

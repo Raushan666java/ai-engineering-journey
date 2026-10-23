@@ -34,7 +34,7 @@ flowchart TD
     J -->|Yes| K[Fixed window → deque]
     J -->|No| L[Variable window → two pointers]
     
-    D --> M[Set / Map for O(1) lookup]
+    D --> M["Set / Map for O(1) lookup"]
     E --> M
     H --> N[Sort + Binary Search]
 ```
@@ -77,13 +77,13 @@ quadrantChart
     title Array Algorithm Trade-offs
     x-axis Fast Execution --> Slow Execution
     y-axis Low Space --> High Space
-    quadrant-1 Sweet Spot: O(n) time O(1) space
-    quadrant-2 Space Trade: O(n) time O(n) space
-    quadrant-3 Slow but Lean: O(n²) time O(1) space
-    quadrant-4 Costly: O(n²) time O(n) space
-    Two Sum (HashMap): [0.12, 0.4]
+    quadrant-1 "Sweet Spot: O(n) time O(1) space"
+    quadrant-2 "Space Trade: O(n) time O(n) space"
+    quadrant-3 "Slow but Lean: O(n²) time O(1) space"
+    quadrant-4 "Costly: O(n²) time O(n) space"
+    "Two Sum (HashMap)": [0.12, 0.4]
     Two Pointers: [0.2, 0.15]
-    Sorting + Binary Search: [0.35, 0.2]
+    "Sorting + Binary Search": [0.35, 0.2]
     Brute Force: [0.85, 0.15]
     DP Kadane: [0.18, 0.12]
     Sliding Window: [0.15, 0.18]

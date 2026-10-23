@@ -41,7 +41,7 @@ Understanding rnn and lstm is fundamental for AI engineers. This section covers 
 flowchart LR
     subgraph RNN_Cell[RNN Cell]
         A[Input x_t] --> B[Hidden h_t]
-        C[Previous h_{t-1}] --> B
+        C["Previous h_{t-1}"] --> B
     end
     B --> D[BPTT]
     D --> E{Vanishing Gradient?}

@@ -35,13 +35,13 @@ By the end of this chapter, students will be able to:
 ```mermaid
 flowchart LR
     S0[Basic Inheritance]
-    S1[super()]
-    S2[Method Resolution Order (MRO)]
+    S1["super()"]
+    S2["Method Resolution Order (MRO)"]
     S3[Multiple Inheritance]
     S4[Mixins]
-    S5[Abstract Base Classes (ABCs)]
+    S5["Abstract Base Classes (ABCs)"]
     S6[isinstance and issubclass]
-    S7[Structural Subtyping (Protocols)]
+    S7["Structural Subtyping (Protocols)"]
     S8[Composition over Inheritance]
     S0 --> S1
     S1 --> S2

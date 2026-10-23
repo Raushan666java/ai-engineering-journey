@@ -17,7 +17,7 @@ That move is prompt caching. Anthropic shipped it in August 2024 (with a 1-hour 
 
 ## The Concept
 
-![Prompt caching: write once, read cheap](../assets/prompt-caching.svg)
+![Prompt caching: write once, read cheap](/ai-engineering-journey/img/visual/prompt-caching.svg)
 
 **The mechanic.** When a request's prefix matches one from a recent request, the provider serves the KV-cache from the previous run instead of re-encoding the tokens. You pay a small write premium the first time and a large read discount every time after.
 

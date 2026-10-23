@@ -48,10 +48,10 @@ flowchart LR
     A --> D[Edit Distance]
     A --> E[Matrix Chain]
     A --> F[Palindrome Partitioning]
-    B --> G[dp[i][j] match/mismatch]
-    C --> H[O(n log n) patience sort]
+    B --> G["dp[i][j] match/mismatch"]
+    C --> H["O(n log n) patience sort"]
     D --> I[insert/delete/replace ops]
-    E --> J[dp[i][j] = min over k]
+    E --> J["dp[i][j] = min over k"]
     F --> K[interval DP]
 ```
 

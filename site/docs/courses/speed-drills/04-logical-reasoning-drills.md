@@ -11,14 +11,14 @@ sidebar_position: 4
 > Master puzzles, data sufficiency, assumptions, cause and effect, and input-output reasoning through timed, structured practice.
 
 ```mermaid
-lineChart
-title Logical Reasoning Accuracy Progression
-x-axis ["Set 1-2", "Set 3-4", "Set 5-6", "Set 7-8", "Set 9-10"]
-dataset "Puzzles" [40, 52, 62, 72, 80]
-dataset "Data Sufficiency" [50, 60, 68, 76, 82]
-dataset "Assumptions" [55, 64, 72, 78, 84]
-dataset "Cause & Effect" [58, 66, 74, 80, 86]
-dataset "Input-Output" [35, 48, 58, 68, 76]
+xychart-beta
+    title "Logical Reasoning Accuracy Progression"
+    x-axis ["Set 1-2", "Set 3-4", "Set 5-6", "Set 7-8", "Set 9-10"]
+    line [40, 52, 62, 72, 80]
+    line [50, 60, 68, 76, 82]
+    line [55, 64, 72, 78, 84]
+    line [58, 66, 74, 80, 86]
+    line [35, 48, 58, 68, 76]
 ```
 
 ---

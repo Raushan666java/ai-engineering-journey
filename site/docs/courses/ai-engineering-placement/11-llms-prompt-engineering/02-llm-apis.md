@@ -639,8 +639,8 @@ flowchart LR
     C -->|Token 1| B
     C -->|Token 2| B
     C -->|Token N| B
-    B -->|SSE: data: token\n\n| A
-    A -->[Update UI Incrementally]
+    B -->|"SSE: data: token\n\n"| A
+    A -->|Update UI Incrementally| B
 ```
 
 ---

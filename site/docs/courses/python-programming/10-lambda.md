@@ -41,9 +41,9 @@ By the end of this chapter, students will be able to:
 ```mermaid
 flowchart LR
     S0[Lambda Functions]
-    S1[map()]
-    S2[filter()]
-    S3[reduce()]
+    S1["map()"]
+    S2["filter()"]
+    S3["reduce()"]
     S4[functools.partial]
     S5[The operator Module]
     S6[Function Composition]

@@ -456,51 +456,51 @@ flowchart TB
         direction TB
         subgraph VPC[Virtual Private Cloud - 10.0.0.0/16]
             direction TB
-            IGW[Internet Gateway<br/>0.0.0.0/0]
-            NAT[NAT Gateway<br/>10.0.0.0/16]
+            IGW["Internet Gateway<br/>0.0.0.0/0"]
+            NAT["NAT Gateway<br/>10.0.0.0/16"]
 
             subgraph AZ1[Availability Zone A]
                 direction TB
-                PubSub1[Public Subnet<br/>10.0.1.0/24]
+                PubSub1["Public Subnet<br/>10.0.1.0/24"]
                 ALB1[ALB - app-lb-1]
-                Web1[Web Server<br/>t3.medium]
-                PrivSub1[Private Subnet<br/>10.0.2.0/24]
-                App1[App Server<br/>t3.large]
-                DBSub1[DB Subnet<br/>10.0.3.0/24]
-                DB1[RDS Primary<br/>db.r5.xlarge]
+                Web1["Web Server<br/>t3.medium"]
+                PrivSub1["Private Subnet<br/>10.0.2.0/24"]
+                App1["App Server<br/>t3.large"]
+                DBSub1["DB Subnet<br/>10.0.3.0/24"]
+                DB1["RDS Primary<br/>db.r5.xlarge"]
             end
 
             subgraph AZ2[Availability Zone B]
                 direction TB
-                PubSub2[Public Subnet<br/>10.0.4.0/24]
+                PubSub2["Public Subnet<br/>10.0.4.0/24"]
                 ALB2[ALB - app-lb-2]
-                Web2[Web Server<br/>t3.medium]
-                PrivSub2[Private Subnet<br/>10.0.5.0/24]
-                App2[App Server<br/>t3.large]
-                DBSub2[DB Subnet<br/>10.0.6.0/24]
-                DB2[RDS Standby<br/>db.r5.xlarge]
+                Web2["Web Server<br/>t3.medium"]
+                PrivSub2["Private Subnet<br/>10.0.5.0/24"]
+                App2["App Server<br/>t3.large"]
+                DBSub2["DB Subnet<br/>10.0.6.0/24"]
+                DB2["RDS Standby<br/>db.r5.xlarge"]
             end
 
             subgraph CDN[CloudFront CDN]
-                Edge1[Edge Node<br/>us-east-1]
-                Edge2[Edge Node<br/>eu-west-1]
-                Edge3[Edge Node<br/>ap-southeast-1]
+                Edge1["Edge Node<br/>us-east-1"]
+                Edge2["Edge Node<br/>eu-west-1"]
+                Edge3["Edge Node<br/>ap-southeast-1"]
             end
 
-            RT_Public[Route Table: Public]
-            RT_Private[Route Table: Private]
-            SGs[Security Groups<br/>Web/App/DB tiers]
+            RT_Public["Route Table: Public"]
+            RT_Private["Route Table: Private"]
+            SGs["Security Groups<br/>Web/App/DB tiers"]
         end
 
-        DX[Direct Connect<br/>1 Gbps]
-        VPN[VPN Gateway<br/>IPSec Tunnel]
-        DNS[Route53<br/>DNS + Health Checks]
+        DX["Direct Connect<br/>1 Gbps"]
+        VPN["VPN Gateway<br/>IPSec Tunnel"]
+        DNS["Route53<br/>DNS + Health Checks"]
     end
 
     subgraph USERS[Global Users]
-        U1[User: NYC]
-        U2[User: London]
-        U3[User: Tokyo]
+        U1["User: NYC"]
+        U2["User: London"]
+        U3["User: Tokyo"]
     end
 
     USERS -->|HTTPS| DNS
@@ -532,7 +532,7 @@ flowchart TB
     classDef tier fill:#DAE8FC,stroke:#6C8EBF,color:#000,stroke-width:1px
     classDef db fill:#F8CECC,stroke:#B85450,color:#000,stroke-width:1px
 
-    class IGW,NAT,DNS,R VPN,CLOUD aws
+    class IGW,NAT,DNS,VPN,CLOUD aws
     class R1,SW1,S1,S2 onprem
     class Edge1,Edge2,Edge3,CDN cdn
     class U1,U2,U3 user

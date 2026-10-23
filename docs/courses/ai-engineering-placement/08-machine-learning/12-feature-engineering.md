@@ -248,9 +248,9 @@ flowchart TD
     B -->|Yes| C[Label Encoding / Ordinal Encoding]
     B -->|No| D{Cardinality?}
 
-    D -->|Low (< 10)| E[One-Hot Encoding]
-    D -->|Medium (10-50)| F[Target Encoding]
-    D -->|High (> 50)| G[Frequency Encoding / Binary Encoding]
+    D -->|"Low (< 10)"| E[One-Hot Encoding]
+    D -->|"Medium (10-50)"| F[Target Encoding]
+    D -->|"High (> 50)"| G[Frequency Encoding / Binary Encoding]
 
     C --> H{Model type?}
     E --> H

@@ -17,7 +17,7 @@ Every frontier LLM in 2026 ships on one of three algorithms (BPE, Unigram, WordP
 
 ## The Concept
 
-![BPE vs Unigram vs WordPiece, character-by-character](../assets/subword-tokenization.svg)
+![BPE vs Unigram vs WordPiece, character-by-character](/ai-engineering-journey/img/visual/subword-tokenization.svg)
 
 **BPE (Byte-Pair Encoding).** Start with a character-level vocabulary. Count every adjacent pair. Merge the most frequent pair into a new token. Repeat until you hit the target vocabulary size. Dominant algorithm: GPT-2/3/4, Llama, Gemma, Qwen2, Mistral.
 

@@ -17,7 +17,7 @@ This lesson is the skeleton. Next lessons specialize it — 06 for encoders, 07 
 
 ## The Concept
 
-![Encoder and decoder block internals, wired](../assets/full-transformer.svg)
+![Encoder and decoder block internals, wired](/ai-engineering-journey/img/visual/full-transformer.svg)
 
 ### The six pieces
 

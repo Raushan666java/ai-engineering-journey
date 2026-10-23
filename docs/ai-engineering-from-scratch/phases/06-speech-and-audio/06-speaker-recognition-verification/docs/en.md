@@ -17,7 +17,7 @@ The metric is **EER** — Equal Error Rate. Set your decision threshold so False
 
 ## The Concept
 
-![Enrollment + verification pipeline with embedding + cosine + EER](../assets/speaker-verification.svg)
+![Enrollment + verification pipeline with embedding + cosine + EER](/ai-engineering-journey/img/visual/speaker-verification.svg)
 
 **The pipeline.** Enrollment: record 5–30 seconds of the target speaker; compute a fixed-dimension embedding (192-d for ECAPA-TDNN, 256-d for WavLM-large). Verification: get the test utterance embedding; compute cosine similarity; compare to a threshold.
 

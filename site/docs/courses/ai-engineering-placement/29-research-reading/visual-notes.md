@@ -10,7 +10,7 @@ sidebar_position: 344
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.
 
-![From Paper to Lasting Understanding](visual/29-research-reading.svg)
+![From Paper to Lasting Understanding](/ai-engineering-journey/img/visual/29-research-reading.svg)
 
 # What the diagram shows
 

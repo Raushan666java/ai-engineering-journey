@@ -1769,8 +1769,8 @@ flowchart LR
     C --> D[Claim Type Classification]
     D --> E[Source Attribution]
     E --> F[Temporal Tagging]
-    F --> G[(Claim Store)]
-    G --> H[Temporal Query: "What changed in 2024?"]
+    F --> G["(Claim Store)"]
+    G --> H["Temporal Query: #quot;What changed in 2024?#quot;"]
     H --> I[Compare Claims Over Time]
     I --> J[Temporal Answer]
 ```

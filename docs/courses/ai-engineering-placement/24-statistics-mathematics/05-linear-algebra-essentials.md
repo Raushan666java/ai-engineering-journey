@@ -64,21 +64,21 @@ For a square matrix A, if A·v = λ·v, then v is an eigenvector and λ is an ei
 ```mermaid
 flowchart TD
     subgraph VectorOps[Vector Operations]
-        A[Vector v] --> B[Addition: u + v]
-        A --> C[Scalar mult: cv]
-        A --> D[Dot product: u · v]
-        A --> E[Norm: ||v||]
-        D --> F[Orthogonal if u · v = 0]
-        E --> G[Unit vector: v / ||v||]
+        A[Vector v] --> B["Addition: u + v"]
+        A --> C["Scalar mult: cv"]
+        A --> D["Dot product: u · v"]
+        A --> E["Norm: ||v||"]
+        D --> F["Orthogonal if u · v = 0"]
+        E --> G["Unit vector: v / ||v||"]
     end
     
     subgraph MatrixOps[Matrix Operations]
-        H[Matrix A m×n] --> I[Multiply: A × B]
-        H --> J[Transpose: A^T]
-        H --> K[Inverse: A⁻¹]
-        H --> L[Determinant: det A]
-        H --> M[Eigendecomposition: A = VΛV⁻¹]
-        H --> N[SVD: A = UΣV^T]
+        H[Matrix A m×n] --> I["Multiply: A × B"]
+        H --> J["Transpose: A^T"]
+        H --> K["Inverse: A⁻¹"]
+        H --> L["Determinant: det A"]
+        H --> M["Eigendecomposition: A = VΛV⁻¹"]
+        H --> N["SVD: A = UΣV^T"]
     end
 ```
 

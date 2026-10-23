@@ -22,7 +22,7 @@ Why it matters in 2026:
 
 ## The Concept
 
-![Coreference clustering: mentions → entities](../assets/coref.svg)
+![Coreference clustering: mentions → entities](/ai-engineering-journey/img/visual/coref.svg)
 
 **The task.** Input: a document. Output: a clustering of mentions (spans) where each cluster refers to one entity.
 

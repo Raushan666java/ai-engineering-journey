@@ -21,7 +21,7 @@ The result: Whisper large-v3 is robust across accents, noise, and languages that
 
 ## The Concept
 
-![Whisper pipeline: audio → mel → encoder → decoder → text](../assets/whisper.svg)
+![Whisper pipeline: audio → mel → encoder → decoder → text](/ai-engineering-journey/img/visual/whisper.svg)
 
 ### Step 1 — resample + window
 

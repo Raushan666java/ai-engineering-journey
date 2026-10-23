@@ -10,7 +10,7 @@ sidebar_position: 37
 
 > One diagram, the full picture. Glance at this before reading the chapters and again before interviews.
 
-![SQL execution order diagram](visual/02-sql-execution-order.svg)
+![SQL execution order diagram](/ai-engineering-journey/img/visual/02-sql-execution-order.svg)
 
 ## What the diagram shows
 

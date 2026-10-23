@@ -107,8 +107,15 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'placementSidebar',
+          // A docSidebar link resolves to the *first* document of that
+          // sidebar. When building in parts, sidebars.ts aliases
+          // placementSidebar to whatever course is being built, so every
+          // part emitted a different target for this one navbar item and the
+          // merged site ended up with 1,017 pages whose "Placement Course"
+          // went to java/01-jvm-memory or web-development/01-html. Pin the
+          // route instead so every part renders the same href.
+          to: '/ai-engineering-placement',
+          activeBasePath: '/ai-engineering-placement',
           position: 'left',
           label: 'Placement Course',
         },

@@ -44,6 +44,7 @@ export const courses: Course[] = [
   { name: 'English Language', slug: 'english-language', category: 'Aptitude' },
   { name: 'Hindi Language', slug: 'hindi-language', category: 'Aptitude' },
   { name: 'Marketing Aptitude', slug: 'marketing-aptitude', category: 'Aptitude' },
+  { name: 'Digital Marketing', slug: 'digital-marketing', category: 'Marketing' },
   { name: 'Banking Financial Awareness', slug: 'banking-financial-awareness', category: 'Aptitude' },
   { name: 'Banking Technology', slug: 'banking-technology', category: 'Aptitude' },
   { name: 'General Awareness', slug: 'general-awareness', category: 'Aptitude' },
@@ -76,6 +77,7 @@ export const categoryColors: Record<string, string> = {
   DevOps: '#0891b2',
   Security: '#dc2626',
   Aptitude: '#4f46e5',
+  Marketing: '#0d9488',
   Placement: '#ea580c',
   Meta: '#64748b',
 };

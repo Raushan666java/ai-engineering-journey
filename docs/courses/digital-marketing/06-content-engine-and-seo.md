@@ -172,18 +172,21 @@ from dataclasses import dataclass
 
 TRANSACTIONAL = re.compile(r"\b(hire|cost|price|pricing|agency|company|services|near me|consultant)\b")
 COMMERCIAL = re.compile(r"\b(best|vs|versus|compare|alternatives|review|which)\b")
-INFORMATIONAL = re.compile(r"^(what|how|why|when|does|can|is|should)\b")
 
 
 def intent(q: str) -> str:
+    """Classification is deliberately blunt and order-dependent.
+
+    A bare noun phrase ("whatsapp automation for gyms") has no purchase signal,
+    so it is research, not a transaction. Only an explicit money or comparison
+    word moves a query into the later stages.
+    """
     q = q.lower().strip()
     if TRANSACTIONAL.search(q):
         return "transactional"
     if COMMERCIAL.search(q):
         return "commercial"
-    if INFORMATIONAL.search(q):
-        return "informational"
-    return "unclear"
+    return "informational"
 
 
 queries = [
@@ -203,7 +206,6 @@ for q in queries:
         "transactional": "service page with price and proof",
         "commercial": "comparison page with a recommendation",
         "informational": "post answering exactly this question",
-        "unclear": "skip until intent is clear",
     }[i]
     plan.append((i, q, action))
     print(f"{i:<14} {q:<48} -> {action}")
@@ -224,6 +226,8 @@ transactional  how much does a gym management system cost         -> service pag
 transactional  hire laravel developer patna                       -> service page with price and proof
 commercial     whatsapp business api vs personal whatsapp         -> comparison page with a recommendation
 transactional  gym software price india                           -> service page with price and proof
+
+mix: {'informational': 2, 'commercial': 2, 'transactional': 3}
 ```
 
 Now the mix is visible: **two informational, two commercial, three transactional.**

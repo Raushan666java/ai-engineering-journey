@@ -248,7 +248,7 @@ Expected output:
 
 ```
 We provide innovative digital solutions for businesses of all sizes.
-  -> ['vague words: solutions, innovative', 'talks about you, not them: we provide', 'no number, so nothing is concrete', 'too long (10 words); aim for 6-12']
+  -> ['vague words: solutions, innovative', 'talks about you, not them: we provide', 'no number, so nothing is concrete']
 Your gym's WhatsApp, answered at 9pm, for 2,000 a month
   -> clean
 Agentic orchestration pipeline for enterprise

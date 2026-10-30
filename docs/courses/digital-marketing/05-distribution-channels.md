@@ -201,11 +201,11 @@ for c in sorted(channels, key=lambda x: -x.clients()):
 Expected output:
 
 ```
-past employer         0.48 clients/mo    4.2 h/client
-local walk-ins        0.60 clients/mo   66.7 h/client
 agency email          1.31 clients/mo   15.2 h/client
+local walk-ins        0.60 clients/mo   66.7 h/client
+past employer         0.48 clients/mo    4.2 h/client
 Upwork proposals      0.30 clients/mo  133.3 h/client
-LinkedIn content      0.05 clients/mo  400.0 h/client
+LinkedIn content      0.13 clients/mo  148.1 h/client
 ```
 
 Read it carefully, because the ranking is not the lesson. The lesson is that

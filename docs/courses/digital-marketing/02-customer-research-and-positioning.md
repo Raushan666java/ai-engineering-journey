@@ -259,11 +259,7 @@ print("problems:", p.problems() or "none")
 Expected output:
 
 ```
-For single-location gyms in tier-2 Indian cities who lose enquiries because
-nobody answers WhatsApp after 8pm, Enquiry Desk is a WhatsApp booking assistant
-that replies in seconds, books trials and collects the fee. Unlike hiring a
-second receptionist at 14,000 a month, it costs 2,000 a month and never takes
-leave.
+For single-location gyms in tier-2 Indian cities who lose enquiries because nobody answers WhatsApp after 8pm, Enquiry Desk is a WhatsApp booking assistant that replies in seconds, books trials and collects the fee. Unlike hiring a second receptionist at 14,000 a month, it costs 2,000 a month and never takes leave.
 problems: none
 ```
 

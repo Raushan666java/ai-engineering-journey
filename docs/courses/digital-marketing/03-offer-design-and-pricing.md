@@ -229,7 +229,7 @@ class Engagement:
 def price_band(e: Engagement) -> dict:
     floor = round(e.hours * e.target_hourly, -2)
     value = e.monthly_gain_to_client * e.months_of_value
-    target = round(value * e.value_share, -3)
+    target = int(round(value * e.value_share, -3))
     ceiling = e.alternative_cost or value
     return {
         "floor": floor,

@@ -256,17 +256,22 @@ for s in sorted(candidates, key=score, reverse=True):
 Expected output:
 
 ```
- 84.0  Patna gyms               rs 25,000
- 80.0  Indian dev agencies      rs 60,000
- 68.0  Indian D2C brands        rs150,000
- 56.0  US seed startups         rs400,000
+ 86.0  Indian dev agencies      rs 60,000
+ 82.0  Patna gyms               rs 25,000
+ 63.0  Indian D2C brands        rs150,000
+ 60.0  US seed startups         rs400,000
 ```
 
-What the example demonstrates: the segment with the highest price ranks last,
-because accessibility and actionability dominate at the start. That is not a
-universal law, it is a consequence of the weights, and the weights are visible
-so they can be argued with. When you have proof of demand, raise `substantial`
-and the ranking changes. That is how a strategy evolves without being rewritten.
+What the example demonstrates: the two highest-priced segments rank last, because
+accessibility dominates at the start and neither can name ten buyers today. Dev
+agencies edge out Patna gyms despite a lower price, because they score 5 on both
+measurability and actionability — a directory of agencies is a list you can open
+this afternoon.
+
+That is not a universal law, it is a consequence of the weights, and the weights
+are visible so they can be argued with. When you have proof of demand, raise
+`substantial` and the ranking changes. That is how a strategy evolves without
+being rewritten.
 
 ---
 

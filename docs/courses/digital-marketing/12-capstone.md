@@ -230,7 +230,9 @@ first. That ordering — cheapest invalidating test before the most expensive wo
 
 ---
 
-## Final Exercise: Your Plan
+## Exercises
+
+### Capstone Deliverable
 
 Produce one document, ten sections, using the artifacts from chapters 1 to 11.
 Then run it through the rubric and report your score without adjusting the
@@ -257,6 +259,21 @@ answers.
 
 If any answer takes more than one sentence, the plan is still too vague to
 execute, and the next hour belongs to the plan rather than to the work.
+
+### Review Questions
+
+1. Which of the ten rubric checks does your plan fail, and is that failure a gap in evidence or a gap in the offer?
+2. Why is capacity stated in clients per month rather than in revenue per month?
+3. What is the difference between a gate and a goal, in terms of what you do when you miss it?
+
+### Challenge Problem
+
+Your current income stops tomorrow. Write the two-page plan you would execute
+anyway, using only the channels you can start this week and the proof you already
+have. Then apply the rubric and identify the single check you cannot pass. Explain
+whether that check means the plan is wrong or that the plan is right and your
+evidence is missing, and state the cheapest experiment that resolves the
+difference within seven days.
 
 ---
 

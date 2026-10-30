@@ -2086,6 +2086,11 @@ nav:
       - Sales & Distribution: courses/marketing-aptitude/02-sales-distribution.md
       - Brand Management & Digital Marketing: courses/marketing-aptitude/03-brand-management-digital.md
       - Banking Marketing: courses/marketing-aptitude/04-banking-marketing.md
+    - 📣 Digital Marketing:
+      - Overview: courses/digital-marketing/index.md
+      - Marketing Foundations: courses/digital-marketing/01-marketing-foundations.md
+      - Customer Research & Positioning: courses/digital-marketing/02-customer-research-and-positioning.md
+      - Offer Design & Pricing: courses/digital-marketing/03-offer-design-and-pricing.md
     - 📈 Data Analysis & Interpretation:
       - Overview: courses/data-analysis-interpretation/index.md
       - Advanced Data Interpretation: courses/data-analysis-interpretation/01-advanced-data-interpretation.md

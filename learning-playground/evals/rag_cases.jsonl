@@ -1,0 +1,6 @@
+{"id": "r1", "question": "how do I evaluate an agent", "expect_source": "11-ai-testing-evaluation"}
+{"id": "r2", "question": "what is MCP", "expect_source": "10-model-context-protocol"}
+{"id": "r3", "question": "how does the ReAct loop work", "expect_source": "05-the-agent-loop-react"}
+{"id": "r4", "question": "how do I guard against prompt injection", "expect_source": "12-guardrails"}
+{"id": "r5", "question": "how do I add memory to an agent", "expect_source": "06-memory"}
+{"id": "r6", "question": "what is the weather on mars", "expect_source": null}

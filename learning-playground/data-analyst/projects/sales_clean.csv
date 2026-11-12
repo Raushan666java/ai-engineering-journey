@@ -1,0 +1,55 @@
+order_id,order_date,month,status,customer_id,customer_name,city,country,product_id,product_name,category,quantity,unit_price,line_total
+1001,2024-08-01,2024-08,completed,1,Aarav Sharma,Mumbai,India,1,Laptop Pro 15,Electronics,1,4500.0,4500.0
+1001,2024-08-01,2024-08,completed,1,Aarav Sharma,Mumbai,India,2,Wireless Mouse,Electronics,1,120.0,120.0
+1002,2024-08-03,2024-08,completed,2,Fatima Al Mansoori,Dubai,UAE,1,Laptop Pro 15,Electronics,1,4500.0,4500.0
+1002,2024-08-03,2024-08,completed,2,Fatima Al Mansoori,Dubai,UAE,6,Noise-Cancelling Headphones,Electronics,1,1200.0,1200.0
+1003,2024-08-05,2024-08,cancelled,1,Aarav Sharma,Mumbai,India,3,Office Chair,Furniture,1,850.0,850.0
+1004,2024-08-07,2024-08,completed,3,Rohan Mehta,Pune,India,4,Standing Desk,Furniture,1,1500.0,1500.0
+1004,2024-08-07,2024-08,completed,3,Rohan Mehta,Pune,India,8,Desk Lamp,Furniture,2,180.0,360.0
+1005,2024-08-10,2024-08,completed,4,Sara Khan,Sharjah,UAE,1,Laptop Pro 15,Electronics,1,4500.0,4500.0
+1005,2024-08-10,2024-08,completed,4,Sara Khan,Sharjah,UAE,10,"Monitor 27""",Electronics,1,1400.0,1400.0
+1005,2024-08-10,2024-08,completed,4,Sara Khan,Sharjah,UAE,2,Wireless Mouse,Electronics,1,120.0,120.0
+1006,2024-08-12,2024-08,completed,5,John Smith,London,UK,5,Coffee Maker,Kitchen,1,300.0,300.0
+1006,2024-08-12,2024-08,completed,5,John Smith,London,UK,9,Water Bottle,Kitchen,2,60.0,120.0
+1007,2024-08-15,2024-08,pending,2,Fatima Al Mansoori,Dubai,UAE,6,Noise-Cancelling Headphones,Electronics,1,1200.0,1200.0
+1008,2024-08-18,2024-08,completed,6,Priya Nair,Kochi,India,1,Laptop Pro 15,Electronics,1,4500.0,4500.0
+1009,2024-08-20,2024-08,completed,7,Omar Hassan,Abu Dhabi,UAE,10,"Monitor 27""",Electronics,1,1400.0,1400.0
+1009,2024-08-20,2024-08,completed,7,Omar Hassan,Abu Dhabi,UAE,2,Wireless Mouse,Electronics,1,120.0,120.0
+1010,2024-08-22,2024-08,completed,8,Lena Fischer,Berlin,Germany,1,Laptop Pro 15,Electronics,1,4500.0,4500.0
+1010,2024-08-22,2024-08,completed,8,Lena Fischer,Berlin,Germany,3,Office Chair,Furniture,1,850.0,850.0
+1010,2024-08-22,2024-08,completed,8,Lena Fischer,Berlin,Germany,5,Coffee Maker,Kitchen,1,300.0,300.0
+1011,2024-08-25,2024-08,completed,3,Rohan Mehta,Pune,India,2,Wireless Mouse,Electronics,2,120.0,240.0
+1011,2024-08-25,2024-08,completed,3,Rohan Mehta,Pune,India,7,Notebook Pack,Stationery,3,45.0,135.0
+1011,2024-08-25,2024-08,completed,3,Rohan Mehta,Pune,India,9,Water Bottle,Kitchen,3,60.0,180.0
+1012,2024-08-28,2024-08,completed,9,Vikram Singh,Delhi,India,1,Laptop Pro 15,Electronics,1,4500.0,4500.0
+1012,2024-08-28,2024-08,completed,9,Vikram Singh,Delhi,India,4,Standing Desk,Furniture,1,1500.0,1500.0
+1012,2024-08-28,2024-08,completed,9,Vikram Singh,Delhi,India,10,"Monitor 27""",Electronics,1,1400.0,1400.0
+1012,2024-08-28,2024-08,completed,9,Vikram Singh,Delhi,India,6,Noise-Cancelling Headphones,Electronics,1,1200.0,1200.0
+1013,2024-09-01,2024-09,completed,10,Aisha Rahman,Doha,Qatar,5,Coffee Maker,Kitchen,2,300.0,600.0
+1013,2024-09-01,2024-09,completed,10,Aisha Rahman,Doha,Qatar,9,Water Bottle,Kitchen,2,60.0,120.0
+1014,2024-09-03,2024-09,completed,1,Aarav Sharma,Mumbai,India,3,Office Chair,Furniture,1,850.0,850.0
+1014,2024-09-03,2024-09,completed,1,Aarav Sharma,Mumbai,India,8,Desk Lamp,Furniture,1,180.0,180.0
+1014,2024-09-03,2024-09,completed,1,Aarav Sharma,Mumbai,India,7,Notebook Pack,Stationery,2,45.0,90.0
+1015,2024-09-05,2024-09,cancelled,4,Sara Khan,Sharjah,UAE,10,"Monitor 27""",Electronics,1,1400.0,1400.0
+1016,2024-09-08,2024-09,completed,5,John Smith,London,UK,1,Laptop Pro 15,Electronics,1,4500.0,4500.0
+1016,2024-09-08,2024-09,completed,5,John Smith,London,UK,3,Office Chair,Furniture,1,850.0,850.0
+1017,2024-09-10,2024-09,completed,6,Priya Nair,Kochi,India,5,Coffee Maker,Kitchen,1,300.0,300.0
+1017,2024-09-10,2024-09,completed,6,Priya Nair,Kochi,India,10,"Monitor 27""",Electronics,1,1400.0,1400.0
+1018,2024-09-12,2024-09,pending,7,Omar Hassan,Abu Dhabi,UAE,6,Noise-Cancelling Headphones,Electronics,1,1200.0,1200.0
+1018,2024-09-12,2024-09,pending,7,Omar Hassan,Abu Dhabi,UAE,2,Wireless Mouse,Electronics,2,120.0,240.0
+1019,2024-09-15,2024-09,completed,8,Lena Fischer,Berlin,Germany,1,Laptop Pro 15,Electronics,1,4500.0,4500.0
+1019,2024-09-15,2024-09,completed,8,Lena Fischer,Berlin,Germany,3,Office Chair,Furniture,1,850.0,850.0
+1019,2024-09-15,2024-09,completed,8,Lena Fischer,Berlin,Germany,8,Desk Lamp,Furniture,1,180.0,180.0
+1020,2024-09-18,2024-09,completed,9,Vikram Singh,Delhi,India,4,Standing Desk,Furniture,1,1500.0,1500.0
+1020,2024-09-18,2024-09,completed,9,Vikram Singh,Delhi,India,10,"Monitor 27""",Electronics,1,1400.0,1400.0
+1021,2024-09-20,2024-09,completed,2,Fatima Al Mansoori,Dubai,UAE,1,Laptop Pro 15,Electronics,1,4500.0,4500.0
+1021,2024-09-20,2024-09,completed,2,Fatima Al Mansoori,Dubai,UAE,5,Coffee Maker,Kitchen,1,300.0,300.0
+1022,2024-09-22,2024-09,completed,10,Aisha Rahman,Doha,Qatar,2,Wireless Mouse,Electronics,1,120.0,120.0
+1022,2024-09-22,2024-09,completed,10,Aisha Rahman,Doha,Qatar,7,Notebook Pack,Stationery,2,45.0,90.0
+1022,2024-09-22,2024-09,completed,10,Aisha Rahman,Doha,Qatar,9,Water Bottle,Kitchen,3,60.0,180.0
+1023,2024-09-25,2024-09,completed,1,Aarav Sharma,Mumbai,India,3,Office Chair,Furniture,1,850.0,850.0
+1023,2024-09-25,2024-09,completed,1,Aarav Sharma,Mumbai,India,5,Coffee Maker,Kitchen,1,300.0,300.0
+1023,2024-09-25,2024-09,completed,1,Aarav Sharma,Mumbai,India,2,Wireless Mouse,Electronics,1,120.0,120.0
+1024,2024-09-28,2024-09,completed,3,Rohan Mehta,Pune,India,1,Laptop Pro 15,Electronics,1,4500.0,4500.0
+1024,2024-09-28,2024-09,completed,3,Rohan Mehta,Pune,India,6,Noise-Cancelling Headphones,Electronics,1,1200.0,1200.0
+1024,2024-09-28,2024-09,completed,3,Rohan Mehta,Pune,India,10,"Monitor 27""",Electronics,1,1400.0,1400.0

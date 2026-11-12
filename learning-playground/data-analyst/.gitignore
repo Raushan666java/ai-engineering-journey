@@ -1,0 +1,5 @@
+*.db
+*.pbix
+__pycache__/
+exports/
+.ipynb_checkpoints/

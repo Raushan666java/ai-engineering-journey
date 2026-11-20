@@ -1128,16 +1128,16 @@ flowchart TD
 
 | Need | Go To |
 |------|-------|
-| Assess my current level | [Self-Assessment Protocol](ch-16-self-assessment-strategy.md#q261) |
+| Assess my current level | [Self-Assessment Protocol](ch-16-self-assessment-strategy.md#q261-how-do-i-conduct-a-comprehensive-self-assessment) |
 | Learn a CS subject | Subject courses (DBMS, OS, CN, etc.) |
 | Practice coding | [Coding Problems](/ai-engineering-journey/coding-problems/) |
 | Build speed | [Speed Drills](/ai-engineering-journey/speed-drills/) |
 | Take a mock test | [Mock Tests](/ai-engineering-journey/mock-tests/) |
 | Solve PYQs | [Government PYQs](/ai-engineering-journey/government-pyqs/) or [GATE PYQs](/ai-engineering-journey/gate-cs-preparation/) |
 | Analyze mistakes | [C/M/E/R Taxonomy](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/learning-how-to-learn/ch-15-exam-cracking-mastery.md#q232) |
-| Review strategy | [OODA Loop](ch-16-self-assessment-strategy.md#q267) |
-| Stay motivated | [Motivation Techniques](ch-16-self-assessment-strategy.md#q278) |
-| Plan my month | [Monthly Review](ch-16-self-assessment-strategy.md#q273) |
+| Review strategy | [OODA Loop](ch-16-self-assessment-strategy.md#q267-what-is-the-ooda-loop-and-how-do-i-apply-it-to-learning) |
+| Stay motivated | [Motivation Techniques](ch-16-self-assessment-strategy.md#q278-how-do-i-maintain-motivation-over-long-preparation-periods) |
+| Plan my month | [Monthly Review](ch-16-self-assessment-strategy.md#q273-how-do-i-conduct-a-monthly-strategy-review) |
 | Get the big picture | [Complete Roadmap](../../index.md) |
 
 ---

@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import useBrokenLinks from '@docusaurus/useBrokenLinks';
 import styles from './about.module.css';
 import {profile, proof} from '../data/profile';
 
@@ -29,6 +30,15 @@ function ContactRow({
 }
 
 export default function About(): React.JSX.Element {
+  // The navbar's "Hire me" button and the footer's "Contact" item both point at
+  // /about#contact, and so did 1,421 other pages through the shared layout.
+  // Docusaurus collects anchors from markdown headings automatically, but a
+  // React page has to declare its own - otherwise every one of those links is
+  // reported as a broken anchor (the checker treats "page collected no anchors"
+  // as "anchor is broken"), and a real broken anchor would be lost in 1,400
+  // warnings.
+  useBrokenLinks().collectAnchor('contact');
+
   return (
     <Layout
       title="About Raushan Kumar"

@@ -1,13 +1,6 @@
 ---
-description: "This course covers distributed data processing at scale. From Hadoop's HDFS and MapReduce through Apache Spark's RDDs, DataFrames, Structured Streaming"
----
-
-﻿---
-id: index
-slug: /big-data
 title: "Big Data Engineering"
-sidebar_label: "Big Data Engineering"
-sidebar_position: 6
+description: "This course covers distributed data processing at scale. From Hadoop's HDFS and MapReduce through Apache Spark's RDDs, DataFrames, Structured Streaming"
 ---
 
 # Big Data Engineering

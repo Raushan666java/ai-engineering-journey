@@ -1,13 +1,6 @@
 ---
-description: "Master the art of solving problems quickly without sacrificing precision. This course transforms your test-taking ability through timed, structured"
----
-
-﻿---
-id: index
-slug: /speed-drills
 title: "Speed & Accuracy Drills"
-sidebar_label: "Speed & Accuracy Drills"
-sidebar_position: 6
+description: "Master the art of solving problems quickly without sacrificing precision. This course transforms your test-taking ability through timed, structured"
 ---
 
 # Speed & Accuracy Drills

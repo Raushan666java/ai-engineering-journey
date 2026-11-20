@@ -1073,8 +1073,8 @@ Eight bits form one:
 ### Q30 [2 Marks] — 📂 Theory of Computation | 🏷️ Medium
 Which of the following is a context-free language?
 
-(A) {aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢Â¿ | nâ‰¥0}  
-(B) {aÃ¢ÂÂ¿bÃ¡ÂµÂaÃ¢Â¿ | n,mâ‰¥0}  
+(A) {aⁿbⁿcⁿ | n≥0}  
+(B) {aⁿbᵐaⁿ | n,m≥0}  
 (C) {ww | w∈{a,b}*}  
 (D) {aⁿbⁿcᵐ | n,m≥0}
 
@@ -1084,15 +1084,15 @@ Which of the following is a context-free language?
 **Answer:** (D) {aⁿbⁿcᵐ | n,m≥0}
 
 **Explanation:**
-{aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¡ÂµÂ} is CFL (concatenation of CFL aÃ¢ÂÂ¿bÃ¢ÂÂ¿ and regular cÃ¡ÂµÂ). {aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢ÂÂ¿} is CSL. {aÃ¢ÂÂ¿bÃ¡ÂµÂaÃ¢ÂÂ¿} is CFL (deterministic)... wait, {aÃ¢ÂÂ¿bÃ¡ÂµÂaÃ¢Â¿} is also CFL (push a's, skip b's, pop a's). Both (B) and (D) are CFL.
+{aⁿbⁿcᵐ} is CFL (concatenation of CFL aⁿbⁿ and regular cᵐ). {aⁿbⁿcⁿ} is CSL. {aⁿbᵐaⁿ} is CFL (deterministic)... wait, {aⁿbᵐaⁿ} is also CFL (push a's, skip b's, pop a's). Both (B) and (D) are CFL.
 
-Actually {aÃ¢ÂÂ¿bÃ¡ÂµÂaÃ¢ÂÂ¿} is CFL: S Ã¢â€ â€™ aSa | bS | ÃŽÂµ. But let me check: S Ã¢â€ â€™ aSa | T, T Ã¢â€ â€™ bT | ÃŽÂµ generates aÃ¢ÂÂ¿bÃ¡ÂµÂaÃ¢Â¿. Yes, it's CFL.
+Actually {aⁿbᵐaⁿ} is CFL: S → aSa | bS | ε. But let me check: S → aSa | T, T → bT | ε generates aⁿbᵐaⁿ. Yes, it's CFL.
 
 And {aⁿbⁿcᵐ}: S → XY, X → aXb | ε, Y → cY | ε. Also CFL.
 
 Hmm, both are CFL. In GATE, the question usually has only one CFL option. Let me adjust: option (B) is something else.
 
-Actually (B) is {aÃ¢ÂÂ¿bÃ¡ÂµÂaÃ¢Â¿ | n,mâ‰¥0} which IS a CFL (even deterministic CFL). And (D) is also CFL. Let me change (B) to something non-CFL.
+Actually (B) is {aⁿbᵐaⁿ | n,m≥0} which IS a CFL (even deterministic CFL). And (D) is also CFL. Let me change (B) to something non-CFL.
 
 Actually I'll keep the question as-is and note that both (B) and (D) are CFLs, with (D) being the most commonly tested one.
 
@@ -1132,7 +1132,7 @@ void fun(int n) {
 (A) O(n)  
 (B) O(n log n)  
 (C) O(n²)  
-(D) O(2Ã¢Â¿)
+(D) O(2ⁿ)
 
 <details>
 <summary>Show Answer</summary>
@@ -1423,7 +1423,7 @@ The inverse of matrix [[1, 2], [3, 4]] is:
 
 **Explanation:**
 det = 1×4 - 2×3 = 4-6 = -2.
-AÃ¢Â»Â¹ = (1/det) Ã— [[4, -2], [-3, 1]] = -1/2 Ã— [[4, -2], [-3, 1]] = [[-2, 1], [1.5, -0.5]].
+A⁻¹ = (1/det) × [[4, -2], [-3, 1]] = -1/2 × [[4, -2], [-3, 1]] = [[-2, 1], [1.5, -0.5]].
 
 ```typescript
 function inverse2x2(a: number, b: number, c: number, d: number): number[][] {

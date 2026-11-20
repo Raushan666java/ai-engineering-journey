@@ -1,13 +1,6 @@
 ---
-description: "Exam Weightage: 2-5 Qs in IBPS SO Mains PK + specific banking awareness GK Moderate (conceptual + current awareness) Focus Areas: Core Banking Solutions"
----
-
-﻿---
-id: index
-slug: /banking-technology
 title: "Banking Technology & Digital Banking"
-sidebar_label: "Banking Technology & Digital Banking"
-sidebar_position: 5
+description: "Exam Weightage: 2-5 Qs in IBPS SO Mains PK + specific banking awareness GK Moderate (conceptual + current awareness) Focus Areas: Core Banking Solutions"
 ---
 
 # Banking Technology & Digital Banking

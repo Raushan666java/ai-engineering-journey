@@ -1,13 +1,6 @@
 ---
-description: "This comprehensive textbook covers Java 21+ and Spring Boot 4.x through the lens of modern enterprise development. Students will master the entire Java"
----
-
-﻿---
-id: index
-slug: /java
 title: "Java & Spring Boot — Complete University Textbook"
-sidebar_label: "Java & Spring Boot — Complete University Textbook"
-sidebar_position: 75
+description: "This comprehensive textbook covers Java 21+ and Spring Boot 4.x through the lens of modern enterprise development. Students will master the entire Java"
 ---
 
 # Java & Spring Boot — Complete University Textbook

@@ -1,13 +1,6 @@
 ---
-description: "slug: /artificial-intelligence title: 'Artificial Intelligence — Complete University Textbook' sidebar_label: 'Artificial Intelligence — Complete"
----
-
-﻿---
-id: index
-slug: /artificial-intelligence
 title: "Artificial Intelligence — Complete University Textbook"
-sidebar_label: "Artificial Intelligence — Complete University Textbook"
-sidebar_position: 27
+description: "This course offers a rigorous, university-level introduction to the foundational principles and modern practice of Artificial Intelligence. Beginning with"
 ---
 
 # Artificial Intelligence — Complete University Textbook

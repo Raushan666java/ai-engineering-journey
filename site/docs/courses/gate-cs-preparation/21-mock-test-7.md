@@ -410,8 +410,8 @@ flowchart LR
 
 **Q36 (1 Mark) [CN]:** What is the maximum window size in Go-Back-N ARQ?
 
-(A) 2Ã¢Â¿ âˆ’ 1
-(B) 2Ã¢Â¿
+(A) 2ⁿ − 1
+(B) 2ⁿ
 (C) 2^{n−1}
 (D) 2^{n−1} − 1
 
@@ -426,7 +426,7 @@ flowchart LR
 
 ---
 
-**Q38 (1 Mark) [TOC]:** L = {0Ã¢ÂÂ¿1Ã‚Â²Ã¢Â¿ | n â‰¥ 0}. Which is true?
+**Q38 (1 Mark) [TOC]:** L = {0ⁿ1²ⁿ | n ≥ 0}. Which is true?
 
 (A) L is regular.
 (B) L is context-free but not regular.
@@ -455,10 +455,10 @@ flowchart LR
 
 **Q41 (1 Mark) [COA]:** An instruction uses 24-bit addresses, 32-bit data, and 8-bit opcode. Word-addressable memory. Max memory size?
 
-(A) 2Ã‚Â²Ã¢Â´ words
+(A) 2²⁴ words
 (B) 2³² words
-(C) 2Ã¢Â¸ words
-(D) 2Ã¢ÂÂ¶Ã¢Â´ words
+(C) 2⁸ words
+(D) 2⁶⁴ words
 
 ---
 
@@ -534,7 +534,7 @@ flowchart LR
 
 ---
 
-**Q50 (2 Marks) [TOC]:** The language {aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢Â¿ | n â‰¥ 0} is:
+**Q50 (2 Marks) [TOC]:** The language {aⁿbⁿcⁿ | n ≥ 0} is:
 
 (A) Regular
 (B) Context-free
@@ -543,7 +543,7 @@ flowchart LR
 
 ---
 
-**Q51 (2 Marks) [CD]:** For grammar S → aS | bA, A → cA | ε, what is FIRST(S)?
+**Q51 (2 Marks) [CD]:** For grammar S → aS | bA, A → cA | Îµ, what is FIRST(S)?
 
 (A) {a, b}
 (B) {a, b, c}
@@ -658,7 +658,7 @@ print(x, y)
 
 **Q20:** Number of 3-element subsets of a 7-element set = C(7,3) = 35.
 
-**Q21:** Number of onto functions from a 4-element set to a 3-element set = 3Ã¢ÂÂ´ Ã¢Ë†â€™ C(3,1)Ãƒâ€”2Ã¢ÂÂ´ + C(3,2)Ãƒâ€”1Ã¢Â´ = 81 âˆ’ 3Ã—16 + 3Ã—1 = 81 âˆ’ 48 + 3 = 36. This uses the inclusion-exclusion principle to count surjections.
+**Q21:** Number of onto functions from a 4-element set to a 3-element set = 3⁴ − C(3,1)×2⁴ + C(3,2)×1⁴ = 81 − 3×16 + 3×1 = 81 − 48 + 3 = 36. This uses the inclusion-exclusion principle to count surjections.
 
 **Q22:** Number of one-to-one functions from 3-element to 5-element set = P(5,3) = 5×4×3 = 60.
 
@@ -670,7 +670,7 @@ Wait, Catalan(7) = 429. Catalan(6) = 132. So with 7 nodes, answer is 429. Let me
 
 And Q25: Chromatic number of C₅ = 3 (odd cycle needs 3 colors, at least and at most 3 colors). Answer B ✓.
 
-Let me fix all the errors now.<ï½œend▁of▁thinking｜>
+Let me fix all the errors now.<ï½œend▁of▁thinkingï½œ>
 
 <｜｜DSML｜｜tool_calls>
 <｜｜DSML｜｜invoke name="read">

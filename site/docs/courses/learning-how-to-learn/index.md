@@ -1,13 +1,6 @@
 ---
-description: "Master the universal meta-skill: accelerate learning across every course in this repository. 18 chapters · 340 Q&As · 18 self-assessment quizzes · Mermaid"
----
-
-﻿---
-id: index
-slug: /learning-how-to-learn
 title: "Learning How to Learn"
-sidebar_label: "Learning How to Learn"
-sidebar_position: 19
+description: "Master the universal meta-skill: accelerate learning across every course in this repository. 18 chapters · 340 Q&As · 18 self-assessment quizzes · Mermaid"
 ---
 
 # Learning How to Learn

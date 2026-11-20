@@ -1,13 +1,6 @@
 ---
-description: "Software engineering is the systematic application of engineering principles to the design, development, operation, and maintenance of software systems"
----
-
-﻿---
-id: index
-slug: /software-engineering
 title: "Software Engineering — A Comprehensive Textbook"
-sidebar_label: "Software Engineering — A Comprehensive Textbook"
-sidebar_position: 17
+description: "Software engineering is the systematic application of engineering principles to the design, development, operation, and maintenance of software systems"
 ---
 
 # Software Engineering — A Comprehensive Textbook

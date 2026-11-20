@@ -225,7 +225,7 @@ The goal is to find the sweet spot where both bias and variance are low. Increas
 | Accuracy | (TP + TN) / (TP + TN + FP + FN) | Balanced classes |
 | Precision | TP / (TP + FP) | Minimize false positives (spam detection) |
 | Recall | TP / (TP + FN) | Minimize false negatives (cancer screening) |
-| F1 Score | 2 Ã→ (Precision Ã→ Recall) / (Precision + Recall) | Imbalanced classes |
+| F1 Score | 2 × (Precision × Recall) / (Precision + Recall) | Imbalanced classes |
 
 ```php
 use Phpml\Metric\ClassificationReport;

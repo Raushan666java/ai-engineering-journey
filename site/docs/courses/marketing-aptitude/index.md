@@ -1,13 +1,6 @@
 ---
-description: "A comprehensive guide to marketing concepts, sales & distribution, brand management, digital marketing, and banking marketing for competitive exams (IBPS"
----
-
-﻿---
-id: index
-slug: /marketing-aptitude
 title: "Marketing Aptitude — Complete Course"
-sidebar_label: "Marketing Aptitude — Complete Course"
-sidebar_position: 5
+description: "A comprehensive guide to marketing concepts, sales & distribution, brand management, digital marketing, and banking marketing for competitive exams (IBPS"
 ---
 
 # Marketing Aptitude — Complete Course

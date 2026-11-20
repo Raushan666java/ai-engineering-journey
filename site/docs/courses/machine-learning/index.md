@@ -1,13 +1,6 @@
 ---
-description: "This textbook provides a rigorous, university-level introduction to the fundamental concepts, algorithms, and mathematical frameworks of machine learning"
----
-
-﻿---
-id: index
-slug: /machine-learning
 title: "Machine Learning — Complete University Textbook"
-sidebar_label: "Machine Learning — Complete University Textbook"
-sidebar_position: 11
+description: "This textbook provides a rigorous, university-level introduction to the fundamental concepts, algorithms, and mathematical frameworks of machine learning"
 ---
 
 # Machine Learning — Complete University Textbook

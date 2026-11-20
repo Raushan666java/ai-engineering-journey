@@ -1162,11 +1162,11 @@ DISK SCHEDULING:
 
 #### What NOT to Do
 
-- Ã¢ÂŒ Do not start new topics in the last week
-- Ã¢ÂŒ Do not attempt difficult problems that hurt confidence
-- Ã¢ÂŒ Do not study for more than 5-6 hours (fatigue hurts more than it helps)
-- Ã¢ÂŒ Do not change your strategy or attempt order on exam day
-- Ã¢ÂŒ Do not discuss with friends who are also preparing (anxiety multiplies)
+- ❌ Do not start new topics in the last week
+- ❌ Do not attempt difficult problems that hurt confidence
+- ❌ Do not study for more than 5-6 hours (fatigue hurts more than it helps)
+- ❌ Do not change your strategy or attempt order on exam day
+- ❌ Do not discuss with friends who are also preparing (anxiety multiplies)
 
 ### Exam Day Strategy
 
@@ -1338,18 +1338,18 @@ height 4? (Height of a tree with a single node is 0.)
 ```
 Step 1: Maximum nodes = full/complete BST
 Number of nodes at each level:
-Level 0: 2Ã¢Â° = 1
+Level 0: 2⁰ = 1
 Level 1: 2¹ = 2
 Level 2: 2² = 4
 Level 3: 2³ = 8
-Level 4: 2Ã¢Â´ = 16
+Level 4: 2⁴ = 16
 
-Step 2: Total = 2Ã¢ÂÂ° + 2Ã‚Â¹ + 2Ã‚Â² + 2Ã‚Â³ + 2Ã¢Â´
+Step 2: Total = 2⁰ + 2¹ + 2² + 2³ + 2⁴
         = 1 + 2 + 4 + 8 + 16
         = 31
 
 Alternatively: For height h, max nodes = 2^(h+1) - 1
-For h = 4: 2Ã¢Âµ - 1 = 32 - 1 = 31
+For h = 4: 2⁵ - 1 = 32 - 1 = 31
 
 Answer: (B) 31
 
@@ -1899,12 +1899,12 @@ Hmm, let me reconsider. Some GATE problems use different
 block sizes or pointer sizes. Let me adjust the numbers.
 
 Actually, with block size = 4 KB and pointer = 4 bytes:
-Number of pointers per block = 4096/4 = 1024 = 2Ã‚Â¹Ã¢Â°
+Number of pointers per block = 4096/4 = 1024 = 2¹⁰
 
 Direct: 10 × 4 KB = 40 KB
-Single indirect: 2Ã‚Â¹Ã¢Â° Ã— 4 KB = 4 MB
-Double indirect: 2Ã‚Â¹Ã¢ÂÂ° Ãƒâ€” 2Ã‚Â¹Ã¢Â° Ã— 4 KB = 4 GB
-Triple indirect: 2Ã‚Â¹Ã¢ÂÂ° Ãƒâ€” 2Ã‚Â¹Ã¢ÂÂ° Ãƒâ€” 2Ã‚Â¹Ã¢Â° Ã— 4 KB = 4 TB
+Single indirect: 2¹⁰ × 4 KB = 4 MB
+Double indirect: 2¹⁰ × 2¹⁰ × 4 KB = 4 GB
+Triple indirect: 2¹⁰ × 2¹⁰ × 2¹⁰ × 4 KB = 4 TB
 
 Total ≈ 4 TB
 
@@ -1993,9 +1993,9 @@ What is the highest normal form satisfied by R?
 **Solution (Step-by-Step):**
 ```
 Step 1: Find candidate keys.
-Closure of AB: ABÃ¢Âº = {A, B, C, D, E} = all attributes → AB is CK
+Closure of AB: AB⁺ = {A, B, C, D, E} = all attributes → AB is CK
 Can any smaller set be a key?
-AÃ¢ÂÂº = {A}, BÃ¢Âº = {B} → neither is a key.
+A⁺ = {A}, B⁺ = {B} → neither is a key.
 So candidate keys = {AB}
 
 Step 2: Check BCNF:
@@ -2167,10 +2167,10 @@ Q: Relations: Student(sid, sname), Enrolled(sid, cid, semester)
 Which relational algebra expression finds students enrolled in
 ALL courses?
 
-(A) Ãâ‚¬_sid(Enrolled) ÃƒÂ· Ã€_cid(Course)
-(B) Ãâ‚¬_sid(Enrolled) Ãƒâ€” Ã€_cid(Course)
-(C) ÃÆ’_count(cid)=total(Ã€_sid,cid(Enrolled))
-(D) Ãâ‚¬_sid(Enrolled) Ã¢Ë†â€™ (Ãâ‚¬_sid(Enrolled) Ã¢Ë†â€™ Ã€_cid(Course))
+(A) π_sid(Enrolled) ÷ π_cid(Course)
+(B) π_sid(Enrolled) × π_cid(Course)
+(C) σ_count(cid)=total(π_sid,cid(Enrolled))
+(D) π_sid(Enrolled) − (π_sid(Enrolled) − π_cid(Course))
 ```
 
 **Solution (Step-by-Step):**
@@ -2181,7 +2181,7 @@ relation that match ALL tuples in the second relation.
 In this case: For each student, we want those who have
 enrolled in every course.
 
-Ãâ‚¬_sid,cid(Enrolled) ÃƒÂ· Ã€_cid(Course)
+π_sid,cid(Enrolled) ÷ π_cid(Course)
 
 This gives: sid values that appear with EVERY cid in Course.
 
@@ -2193,7 +2193,7 @@ Step 2: Check options:
     needed for the division pattern ✗
 
 Step 3: Full correct expression:
-Ãâ‚¬_sid,cid(Enrolled) ÃƒÂ· Ã€_cid(Course)
+π_sid,cid(Enrolled) ÷ π_cid(Course)
 
 Answer: (A)
 
@@ -2228,7 +2228,7 @@ Subnet mask = 255.255.255.192
 (128+64 = 192 in the last octet)
 
 Step 2: Host bits remaining = 32 - 26 = 6 bits
-Usable hosts per subnet = 2Ã¢Â¶ - 2 = 64 - 2 = 62
+Usable hosts per subnet = 2⁶ - 2 = 64 - 2 = 62
 (-2 for network address and broadcast address)
 
 Step 3: Subnet ranges:
@@ -2544,9 +2544,9 @@ Q: A PDA has the following transition rules:
 Initial state: q₀, initial stack: Z₀, final state: q₃
 What language does this PDA accept?
 
-(A) {0Ã¢ÂÂ¿1Ã¢Â¿ | n â‰¥ 1}
+(A) {0ⁿ1ⁿ | n ≥ 1}
 (B) {0ⁿ1ᵐ | n > m ≥ 0}
-(C) {0Ã¢ÂÂ¿1Ã¢Â¿ | n â‰¥ 0}
+(C) {0ⁿ1ⁿ | n ≥ 0}
 (D) {0ⁿ1ᵐ | n ≥ m ≥ 1}
 ```
 
@@ -2585,7 +2585,7 @@ In q₂:
 So this PDA pushes a 0 for every 0 read, then pops a 0 for
 every 1 read. It accepts when all 0s are popped (stack = Z₀).
 
-This is the classic PDA for {0Ã¢ÂÂ¿1Ã¢Â¿ | n â‰¥ 1}.
+This is the classic PDA for {0ⁿ1ⁿ | n ≥ 1}.
 
 Wait let me check: the initial ε transition pushes one 0.
 Then rule 3 pushes additional 0s for each input 0.
@@ -2617,7 +2617,7 @@ But actually, the first push from rule 1 gives us one extra
 0. So the number of 0s counted = number of 0s read + 1.
 
 For "01": read 0, stack has [0, 0, Z₀]. Read 1: pop → 
-[0, ZÃ¢â€šâ‚¬]. Stack not ZÃ¢â€šâ‚¬. Reject. Ã¢Å“â€œ (01 is not in 0Ã¢ÂÂ¿1Ã¢Â¿)
+[0, Z₀]. Stack not Z₀. Reject. ✓ (01 is not in 0ⁿ1ⁿ)
 
 For "001": read 0s → stack [0, 0, 0, Z₀]. Read 1 → pop →
 [0, 0, Z₀]. No more input. Stack ≠ Z₀. Reject. ✓
@@ -2678,7 +2678,7 @@ Actually, I think the key insight is:
 - Reading 1s pops 0s
 - Accept when input consumed and stack = Z₀
 
-For 0Ã¢ÂÂ¿1Ã¢Â¿ with this PDA:
+For 0ⁿ1ⁿ with this PDA:
 - Process starts with 1 zero on stack
 - Each input 0 adds 2 more (net: each 0 contributes 2 zeros)
   Wait, rule 3 pushes 000 replacing top 0. Net +2.
@@ -2689,9 +2689,9 @@ For n ones: pop n zeros → 2n+1-n = n+1 zeros remain
 Never reaches Z₀!
 
 This is confusing. Let me just say for this illustrative
-GATE problem, the PDA accepts the language {0Ã¢ÂÂ¿1Ã¢Â¿ | n â‰¥ 1}.
+GATE problem, the PDA accepts the language {0ⁿ1ⁿ | n ≥ 1}.
 
-Answer: (A) {0Ã¢ÂÂ¿1Ã¢Â¿ | n â‰¥ 1}
+Answer: (A) {0ⁿ1ⁿ | n ≥ 1}
 
 Common Trap: Not reading PDA transition notation carefully.
 Different textbooks use different conventions for push/pop.
@@ -3093,7 +3093,7 @@ N = 256
 ⌈log₂256⌉ = ⌈8⌉ = 8
 
 Step 3: Verification:
-2Ã¢Â¸ = 256, so 8 flip-flops can represent 256 states.
+2⁸ = 256, so 8 flip-flops can represent 256 states.
 A 3-bit counter counts 0-7 (8 states).
 An 8-bit counter counts 0-255 (256 states).
 
@@ -3172,7 +3172,7 @@ all 5 vertices of K5.
 Step 1: The graph has 6 vertices: 5 forming K5 plus one
 extra vertex (v6) connected to all 5.
 
-Step 2: Chromatic number of K5 is 5 (Ã‡(Kn) = n for complete
+Step 2: Chromatic number of K5 is 5 (χ(Kn) = n for complete
 graphs, since every pair of vertices is adjacent).
 
 Step 3: The extra vertex v6 is adjacent to all 5 vertices
@@ -3190,7 +3190,7 @@ whose chromatic number is 6.
 Answer: (B) 6
 
 Common Trap: A complete graph K5 plus a vertex connected
-to all 5 is K6. Ã‡(Kn) = n always. No fewer colors suffice.
+to all 5 is K6. χ(Kn) = n always. No fewer colors suffice.
 ```
 
 #### Problem 45: Set Theory → Power Set (GATE 2021)
@@ -3461,7 +3461,7 @@ This matrix has rank 1 → all rows are multiples of [1,2,3].
 
 ```
 Q: A 3×3 matrix A has eigenvalues 1, 2, and 3. What are the
-eigenvalues of AÃ¢Â»Â¹ (inverse of A)?
+eigenvalues of A⁻¹ (inverse of A)?
 
 (A) 1, 1/2, 1/3
 (B) 1, 2, 3
@@ -3472,21 +3472,21 @@ eigenvalues of AÃ¢Â»Â¹ (inverse of A)?
 **Solution (Step-by-Step):**
 ```
 Step 1: Property: If λ is an eigenvalue of A, then 1/λ is
-an eigenvalue of AÃ¢Â»Â¹ (provided Î» â‰  0).
+an eigenvalue of A⁻¹ (provided λ ≠ 0).
 
-Proof: If Ax = ÃŽÂ»x, then AÃ¢ÂÂ»Ã‚Â¹Ax = AÃ¢ÂÂ»Ã‚Â¹(ÃŽÂ»x) â†’ x = ÃŽÂ»AÃ¢Â»Â¹x
-â†’ AÃ¢Â»Â¹x = (1/Î»)x âœ“
+Proof: If Ax = λx, then A⁻¹Ax = A⁻¹(λx) → x = λA⁻¹x
+→ A⁻¹x = (1/λ)x ✓
 
 Step 2: Given eigenvalues of A: λ₁ = 1, λ₂ = 2, λ₃ = 3
 
-Step 3: Eigenvalues of AÃ¢Â»Â¹:
+Step 3: Eigenvalues of A⁻¹:
 1/1 = 1
 1/2 = 0.5
 1/3 ≈ 0.333
 
 Answer: (A) 1, 1/2, 1/3
 
-Common Trap: Forgetting that eigenvectors of A and AÃ¢Â»Â¹
+Common Trap: Forgetting that eigenvectors of A and A⁻¹
 are the same, but eigenvalues are reciprocals. Also,
 A must be invertible (no zero eigenvalues).
 ```

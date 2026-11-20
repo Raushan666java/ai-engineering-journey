@@ -94,19 +94,19 @@ flowchart LR
 |----------|-----------|-----------|
 | **O(g(n))** | { f(n) \| ∃ c > 0, n₀ > 0 such that 0 ≤ f(n) ≤ c·g(n) ∀ n ≥ n₀ } | Upper bound |
 | **Ω(g(n))** | { f(n) \| ∃ c > 0, n₀ > 0 such that 0 ≤ c·g(n) ≤ f(n) ∀ n ≥ n₀ } | Lower bound |
-| **ÃŽËœ(g(n))** | { f(n) \| Ã¢Ë†Æ’ cÃ¢â€šÂ, cÃ¢â€šâ€š > 0, nÃ¢â€šâ‚¬ > 0 such that cÃ¢â€šÂ·g(n) ≤ f(n) ≤ c₂·g(n) ∀ n ≥ n₀ } | Tight bound |
+| **Θ(g(n))** | { f(n) \| ∃ c₁, c₂ > 0, n₀ > 0 such that c₁·g(n) ≤ f(n) ≤ c₂·g(n) ∀ n ≥ n₀ } | Tight bound |
 | **o(g(n))** | { f(n) \| ∀ c > 0, ∃ n₀ > 0 such that 0 ≤ f(n) &lt; c·g(n) ∀ n ≥ n₀ } | Loose upper |
-| **Ã‰(g(n))** | { f(n) \| âˆ€ c > 0, âˆƒ nâ‚€ > 0 such that 0 â‰¤ cÂ·g(n) &lt; f(n) âˆ€ n â‰¥ nâ‚€ } | Loose lower |
+| **ω(g(n))** | { f(n) \| ∀ c > 0, ∃ n₀ > 0 such that 0 ≤ c·g(n) &lt; f(n) ∀ n ≥ n₀ } | Loose lower |
 
 **Properties:**
 - Transitive: f(n) = O(g(n)) and g(n) = O(h(n)) ⇒ f(n) = O(h(n))
 - Reflexive: f(n) = O(f(n))
 - Symmetric for Θ only: f(n) = Θ(g(n)) ⇔ g(n) = Θ(f(n))
 - Addition: f₁(n) + f₂(n) = O(max(f₁(n), f₂(n)))
-- Multiplication: fÃ¢â€šÂ(n) Ã‚Â· fÃ¢â€šâ€š(n) = O(fÃ¢â€šÂ(n) · f₂(n))
+- Multiplication: f₁(n) · f₂(n) = O(f₁(n) · f₂(n))
 
 **Common Functions (ordered by growth rate):**
-O(1) &lt; O(log log n) < O(log n) < O((log n)Ã‚Â²) < O(Ã¢Ë†Å¡n) < O(n) < O(n log n) < O(nÃ‚Â²) < O(nÃ‚Â³) < O(2Ã¢ÂÂ¿) < O(n!) < O(nÃ¢Â¿)
+O(1) &lt; O(log log n) < O(log n) < O((log n)²) < O(√n) < O(n) < O(n log n) < O(n²) < O(n³) < O(2ⁿ) < O(n!) < O(nⁿ)
 
 ### 1.2 Recurrence Relations
 
@@ -128,7 +128,7 @@ O(1) &lt; O(log log n) < O(log n) < O((log n)Ã‚Â²) < O(Ã¢Ë†Å¡n) < O(
 |------------|-----------|------------|
 | T(n) = T(n−1) + 1 | n! | Θ(n) |
 | T(n) = T(n−1) + n | Selection sort | Θ(n²) |
-| T(n) = 2T(nÃ¢Ë†â€™1) + 1 | Tower of Hanoi | ÃŽËœ(2Ã¢Â¿) |
+| T(n) = 2T(n−1) + 1 | Tower of Hanoi | Θ(2ⁿ) |
 | T(n) = T(n/2) + 1 | Binary search | Θ(log n) |
 | T(n) = T(n/2) + n | → | Θ(n) |
 | T(n) = 2T(n/2) + n | Merge sort | Θ(n log n) |
@@ -309,8 +309,8 @@ return pop()
 
 | Property | Formula |
 |----------|---------|
-| Max nodes at level i | 2Ã¢Â± |
-| Max nodes in tree of height h | 2ÃŠÂ°Ã¢ÂºÂ¹ âˆ’ 1 |
+| Max nodes at level i | 2ⁱ |
+| Max nodes in tree of height h | 2ʰ⁺¹ − 1 |
 | Min height for n nodes | ⌈log₂(n+1)⌉ − 1 |
 | For n nodes, leaf count L | L = I + 1 (I = internal nodes with degree 2) |
 | Full binary tree | Every node has 0 or 2 children |
@@ -894,7 +894,7 @@ Good hash function properties: deterministic, uniform distribution, fast computa
 |---------|----------|-------------------|---------------------|
 | Linear | h(k,i) = (h′(k) + i) mod m | Yes | N/A |
 | Quadratic | h(k,i) = (h′(k) + c₁i + c₂i²) mod m | No | Yes |
-| Double | h(k,i) = (hÃ¢â€šÂ(k) + i·h₂(k)) mod m | No | No |
+| Double | h(k,i) = (h₁(k) + i·h₂(k)) mod m | No | No |
 
 **Linear probing average search time:** ½(1 + 1/(1−α)) for successful, ½(1 + 1/(1−α)²) for unsuccessful.
 
@@ -1176,11 +1176,11 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) Θ(n) (B) Θ(n log n) (C) Θ(n²) (D) Θ(log n)
 
-**Answer:** B. Master theorem case 2: a=2, b=2, log_b a = 1, f(n)=n = nÃ‚Â¹Ã‚Â·logÃ¢Â° n → T(n) = Θ(n log n).
+**Answer:** B. Master theorem case 2: a=2, b=2, log_b a = 1, f(n)=n = n¹·log⁰ n → T(n) = Θ(n log n).
 
 **A41** [GATE 2016, 1 mark, Recurrence] T(n) = T(n−1) + n. T(1) = 1. T(n) = ?
 
-- (A) ÃŽËœ(n) (B) ÃŽËœ(nÃ‚Â²) (C) ÃŽËœ(n log n) (D) ÃŽËœ(2Ã¢Â¿)
+- (A) Θ(n) (B) Θ(n²) (C) Θ(n log n) (D) Θ(2ⁿ)
 
 **Answer:** B. Summation: 1 + 2 + 3 + ... + n = n(n+1)/2 = Θ(n²).
 
@@ -1332,7 +1332,7 @@ When load factor exceeds threshold (typically 0.75):
 ### Trap 7: Asymptotic Growth Subtleties
 
 - n^{log n} vs 2^{√n}: Take log of both: (log n)² vs √n·log 2. Since (log n)² = o(√n), we get n^{log n} = o(2^{√n})
-- (log n)^{log n} vs n/log n: Take log: log log n Ã‚Â· log n vs log n Ã¢Ë†â€™ log log n. First = ÃŽËœ(log nÃ‚Â·log log n), second = ÃŽËœ(log n). So (log n)^{log n} = Ã‰(n/log n)
+- (log n)^{log n} vs n/log n: Take log: log log n · log n vs log n − log log n. First = Θ(log n·log log n), second = Θ(log n). So (log n)^{log n} = ω(n/log n)
 - log(n!) = Θ(n log n) via Stirling's approximation
 - n^{1/n} → 1 as n → ∞
 
@@ -1347,8 +1347,8 @@ When load factor exceeds threshold (typically 0.75):
 | Binary Search | O(log n) | O(1) |
 | Quick Select (avg) | O(n) | O(1) |
 | Median of Medians | O(n) | O(log n) |
-| Tower of Hanoi | O(2Ã¢Â¿) | O(n) |
-| Fibonacci (naive) | O(Ãâ€ Ã¢Â¿) | O(n) |
+| Tower of Hanoi | O(2ⁿ) | O(n) |
+| Fibonacci (naive) | O(φⁿ) | O(n) |
 | Fibonacci (DP) | O(n) | O(1) |
 | Matrix Multiplication (naive) | O(n³) | O(n²) |
 | Strassen's MM | O(n^{2.81}) | O(n²) |
@@ -1410,13 +1410,13 @@ Given T(n) = a·T(n/b) + f(n), compare f(n) with n^{log_b a}:
 
 For T(n) = Σ_{i=1}^{k} a_i·T(n/b_i) + f(n):
 - Find p such that Σ a_i / b_i^p = 1
-- T(n) = ÃŽËœ(n^pÃ‚Â·(1 + Ã¢Ë†Â«Ã¢â€šÂÃ¢Â¿ f(u)/u^{p+1} du))
+- T(n) = Θ(n^p·(1 + ∫₁ⁿ f(u)/u^{p+1} du))
 
 ### 14.3 Akra-Bazzi Method
 
 For T(n) = Σ a_i·T(b_i·n + h_i(n)) + g(n):
 1. Find p: Σ a_i·b_i^p = 1
-2. T(n) = ÃŽËœ(n^pÃ‚Â·(1 + Ã¢Ë†Â«Ã¢â€šÂÃ¢Â¿ g(u)/u^{p+1} du))
+2. T(n) = Θ(n^p·(1 + ∫₁ⁿ g(u)/u^{p+1} du))
 
 ### 14.4 Special Recurrences
 
@@ -1426,7 +1426,7 @@ For T(n) = Σ a_i·T(b_i·n + h_i(n)) + g(n):
 | T(n) = T(n−1) + 1 | Unrolling | Θ(n) |
 | T(n) = T(n−1) + log n | Unrolling | Θ(n log n) |
 | T(n) = T(n−2) + 1 | Unrolling | Θ(n) |
-| T(n) = 2T(nÃ¢Ë†â€™1) + 1 | Unrolling | ÃŽËœ(2Ã¢Â¿) |
+| T(n) = 2T(n−1) + 1 | Unrolling | Θ(2ⁿ) |
 | T(n) = T(√n) + 1 | Change var | Θ(log log n) |
 | T(n) = 2T(√n) + log n | Change var | Θ(log n·log log n) |
 | T(n) = T(n/2) + T(n/2) + 1 | Master | Θ(n) |
@@ -1437,8 +1437,8 @@ For T(n) = Σ a_i·T(b_i·n + h_i(n)) + g(n):
 
 Fibonacci: F(n) = F(n−1) + F(n−2)
 - Characteristic: x² − x − 1 = 0
-- Roots: Ãâ€  = (1 + Ã¢Ë†Å¡5)/2, Ãˆ = (1 âˆ’ âˆš5)/2
-- Closed form: F(n) = (Ãâ€ Ã¢ÂÂ¿ Ã¢Ë†â€™ ÃË†Ã¢ÂÂ¿)/Ã¢Ë†Å¡5 â†’ exponential growth O(Ãâ€ Ã¢Â¿)
+- Roots: φ = (1 + √5)/2, ψ = (1 − √5)/2
+- Closed form: F(n) = (φⁿ − ψⁿ)/√5 → exponential growth O(φⁿ)
 
 ---
 

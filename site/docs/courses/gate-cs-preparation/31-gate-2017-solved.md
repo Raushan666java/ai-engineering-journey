@@ -68,8 +68,8 @@ If 2ˣ = 8ʸ = 64, what is 1/x + 1/y?
 **Answer:** (C) 1
 
 **Explanation:**
-2Ã‹Â£ = 64 = 2Ã¢Â¶ â†’ x = 6.
-8ÃŠÂ¸ = 64 Ã¢â€ â€™ (2Ã‚Â³)ÃŠÂ¸ = 2Ã¢Â¶ â†’ 3y = 6 â†’ y = 2.
+2ˣ = 64 = 2⁶ → x = 6.
+8ʸ = 64 → (2³)ʸ = 2⁶ → 3y = 6 → y = 2.
 1/x + 1/y = 1/6 + 1/2 = 1/6 + 3/6 = 4/6 = 2/3.
 
 Hmm, that gives 2/3. Let me check: 1/6 + 1/2 = 1/6 + 3/6 = 4/6 = 2/3. So answer (B) 2/3.
@@ -162,7 +162,7 @@ A man invests ₹5000 at 6% simple interest and ₹6000 at 8% simple interest. T
 **Answer:** (C) 1560
 
 **Explanation:**
-InterestÃ¢â€šÂ = 5000×6×2/100 = 600.
+Interest₁ = 5000×6×2/100 = 600.
 Interest₂ = 6000×8×2/100 = 960.
 Total = 600 + 960 = 1560.
 
@@ -406,7 +406,7 @@ The first term of an AP is 3 and common difference is 4. The 10th term is:
 **Answer:** (C) 39
 
 **Explanation:**
-a_n = aÃ¢â€šÂ + (n-1)d = 3 + 9×4 = 3+36 = 39.
+a_n = a₁ + (n-1)d = 3 + 9×4 = 3+36 = 39.
 
 ```typescript
 function arithmeticTerm(a: number, d: number, n: number): number {
@@ -737,7 +737,7 @@ If A = {1,2,3}, the number of subsets of A is:
 **Answer:** (C) 8
 
 **Explanation:**
-Number of subsets of a set with n elements = 2Ã¢Â¿ = 2Â³ = 8.
+Number of subsets of a set with n elements = 2ⁿ = 2³ = 8.
 Subsets: ∅, {1}, {2}, {3}, {1,2}, {1,3}, {2,3}, {1,2,3}.
 
 </details>
@@ -756,8 +756,8 @@ The value of log₂16 + log₃81 is:
 **Answer:** (C) 8
 
 **Explanation:**
-logÃ¢â€šâ€š16 = logÃ¢â€šâ€š(2Ã¢Â´) = 4.
-logÃ¢â€šÆ’81 = logÃ¢â€šÆ’(3Ã¢Â´) = 4.
+log₂16 = log₂(2⁴) = 4.
+log₃81 = log₃(3⁴) = 4.
 Sum = 4 + 4 = 8.
 
 </details>
@@ -863,18 +863,18 @@ A foreign key references a primary key (or unique key) in another table. It can 
 ### Q25 [2 Marks] — 📂 Computer Networks | 🏷️ Medium
 The maximum number of IP addresses in a Class B network is:
 
-(A) 2Ã¢Â¸ - 2  
-(B) 2Ã‚Â¹Ã¢Â¶ - 2  
-(C) 2Ã‚Â²Ã¢Â´ - 2  
+(A) 2⁸ - 2  
+(B) 2¹⁶ - 2  
+(C) 2²⁴ - 2  
 (D) 2³² - 2
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (B) 2Ã‚Â¹Ã¢Â¶ - 2
+**Answer:** (B) 2¹⁶ - 2
 
 **Explanation:**
-Class B: 16 bits for network, 16 bits for host. Hosts = 2Ã‚Â¹Ã¢Â¶ - 2 = 65,534.
+Class B: 16 bits for network, 16 bits for host. Hosts = 2¹⁶ - 2 = 65,534.
 
 </details>
 
@@ -892,7 +892,7 @@ The number of nodes in a full binary tree of height 4 (root at level 0) is:
 **Answer:** (B) 31
 
 **Explanation:**
-Full binary tree of height 4: levels 0 through 4 filled. 2Ã¢ÂÂ°+2Ã‚Â¹+2Ã‚Â²+2Ã‚Â³+2Ã¢Â´ = 1+2+4+8+16 = 31.
+Full binary tree of height 4: levels 0 through 4 filled. 2⁰+2¹+2²+2³+2⁴ = 1+2+4+8+16 = 31.
 
 </details>
 
@@ -937,18 +937,18 @@ YACC (Yet Another Compiler-Compiler) is a parser generator that produces LALR(1)
 ### Q29 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Medium
 The number of bytes in a 256 GB memory is:
 
-(A) 2Ã‚Â²Ã¢Â¸  
-(B) 2Ã‚Â³Ã¢Â°  
-(C) 2Ã‚Â³Ã¢Â¸  
-(D) 2Ã¢ÂÂ´Ã¢Â°
+(A) 2²⁸  
+(B) 2³⁰  
+(C) 2³⁸  
+(D) 2⁴⁰
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (C) 2Ã‚Â³Ã¢Â¸
+**Answer:** (C) 2³⁸
 
 **Explanation:**
-256 GB = 256 Ãƒâ€” 2Ã‚Â³Ã¢ÂÂ° bytes = 2Ã¢ÂÂ¸ Ãƒâ€” 2Ã‚Â³Ã¢ÂÂ° = 2Ã‚Â³Ã¢Â¸ bytes.
+256 GB = 256 × 2³⁰ bytes = 2⁸ × 2³⁰ = 2³⁸ bytes.
 
 ```typescript
 function gbToBytes(gb: number): number {
@@ -991,20 +991,20 @@ Consider a relation R(A,B,C,D) with FDs: AB→C, C→D, D→A. Which of the foll
 **Answer:** (B) R is in 3NF but not BCNF
 
 **Explanation:**
-Candidate keys: ABÃ¢Âº = {A,B,C,D} â†’ AB is CK.
-CÃ¢Âº = {C,D,A,B} â†’ C is CK!
-DÃ¢Âº = {D,A,B,C} â†’ D is CK!
+Candidate keys: AB⁺ = {A,B,C,D} → AB is CK.
+C⁺ = {C,D,A,B} → C is CK!
+D⁺ = {D,A,B,C} → D is CK!
 So CKs: AB, C, D.
 AB→C: AB is CK, so BCNF holds for this FD.
 C→D: C is CK, so BCNF holds.
 D→A: D is CK, so BCNF holds.
 Wait, all LHS are candidate keys. So R IS in BCNF!
 
-Actually, let me recheck. DÃ¢â€ â€™A: D is a CK? DÃ¢ÂÂº = D then DÃ¢â€ â€™A so DÃ¢ÂÂº = D,A. But can we get B or C from D,A? DÃ¢â€ â€™A gives A. Then ABÃ¢â€ â€™C but we don't have B from D and A. So DÃ¢Âº = {D,A}... hmm, we can't get B or C. So D is NOT a CK.
+Actually, let me recheck. D→A: D is a CK? D⁺ = D then D→A so D⁺ = D,A. But can we get B or C from D,A? D→A gives A. Then AB→C but we don't have B from D and A. So D⁺ = {D,A}... hmm, we can't get B or C. So D is NOT a CK.
 
-Similarly CÃ¢ÂÂº = {C,D,A}. From DÃ¢â€ â€™A we get A, but we need B for ABÃ¢â€ â€™C. So CÃ¢Âº = {C,D,A}. C is NOT a CK.
+Similarly C⁺ = {C,D,A}. From D→A we get A, but we need B for AB→C. So C⁺ = {C,D,A}. C is NOT a CK.
 
-ABÃ¢Âº = {A,B,C,D} via ABâ†’C (get C), Câ†’D (get D). So AB is the only CK.
+AB⁺ = {A,B,C,D} via AB→C (get C), C→D (get D). So AB is the only CK.
 
 Now checking BCNF:
 AB→C: AB is CK ✓
@@ -1092,17 +1092,17 @@ A network with CSMA/CD has bandwidth 10 Mbps and propagation delay 25.6 μs. The
 **Answer:** (C) 512 bytes
 
 **Explanation:**
-Minimum frame size = 2 Ãƒâ€” T_prop Ãƒâ€” Data rate = 2 Ãƒâ€” 25.6 Ãƒâ€” 10Ã¢ÂÂ»Ã¢ÂÂ¶ Ãƒâ€” 10 Ãƒâ€” 10Ã¢Â¶ = 2 Ã— 25.6 Ã— 10 = 512 bits = 64 bytes.
+Minimum frame size = 2 × T_prop × Data rate = 2 × 25.6 × 10⁻⁶ × 10 × 10⁶ = 2 × 25.6 × 10 = 512 bits = 64 bytes.
 
-Hmm, that gives 64 bytes. Let me recalculate: 2 Ãƒâ€” 25.6 Ãƒâ€” 10Ã¢ÂÂ»Ã¢ÂÂ¶ Ãƒâ€” 10Ã¢Â· = 512 bits = 64 bytes.
+Hmm, that gives 64 bytes. Let me recalculate: 2 × 25.6 × 10⁻⁶ × 10⁷ = 512 bits = 64 bytes.
 
 But option (C) says 512 bytes. Let me adjust: bandwidth = 100 Mbps, prop delay = 25.6 μs.
-Min frame = 2 Ãƒâ€” 25.6 Ãƒâ€” 10Ã¢ÂÂ»Ã¢ÂÂ¶ Ãƒâ€” 100 Ãƒâ€” 10Ã¢Â¶ = 5120 bits = 640 bytes.
+Min frame = 2 × 25.6 × 10⁻⁶ × 100 × 10⁶ = 5120 bits = 640 bytes.
 
-For 512 bytes = 4096 bits: 2 Ãƒâ€” T Ãƒâ€” R = 4096. If R=10 Mbps: T = 4096/(2Ãƒâ€”10Ã¢Â·) = 204.8 Î¼s.
-If R=100 Mbps: T = 4096/(2Ãƒâ€”10Ã¢Â¸) = 20.48 Î¼s.
+For 512 bytes = 4096 bits: 2 × T × R = 4096. If R=10 Mbps: T = 4096/(2×10⁷) = 204.8 μs.
+If R=100 Mbps: T = 4096/(2×10⁸) = 20.48 μs.
 
-So with R=100 Mbps, T=20.48 ÃŽÂ¼s Ã¢â€ â€™ min frame = 2 Ãƒâ€” 20.48 Ãƒâ€” 10Ã¢ÂÂ»Ã¢ÂÂ¶ Ãƒâ€” 10Ã¢Â¸ = 4096 bits = 512 bytes.
+So with R=100 Mbps, T=20.48 μs → min frame = 2 × 20.48 × 10⁻⁶ × 10⁸ = 4096 bits = 512 bytes.
 
 Let me use bandwidth = 100 Mbps, propagation delay = 20.48 μs.
 
@@ -1122,9 +1122,9 @@ A system uses demand paging with a page fault rate of 0.001. Memory access time 
 **Answer:** (B) 10.1
 
 **Explanation:**
-EAT = (1-p) Ãƒâ€” mem + p Ãƒâ€” fault = 0.999 Ãƒâ€” 100 + 0.001 Ãƒâ€” 10Ã¢Â· = 99.9 + 10000 = 10099.9 ns = 10.0999 Î¼s â‰ˆ 10.1 Î¼s.
+EAT = (1-p) × mem + p × fault = 0.999 × 100 + 0.001 × 10⁷ = 99.9 + 10000 = 10099.9 ns = 10.0999 μs ≈ 10.1 μs.
 
-Wait: 0.001 Ãƒâ€” 10Ã¢Â· = 10000 ns. 0.999 Ã— 100 = 99.9 ns. Total = 10099.9 ns = 10.0999 Î¼s â‰ˆ 10.1 Î¼s.
+Wait: 0.001 × 10⁷ = 10000 ns. 0.999 × 100 = 99.9 ns. Total = 10099.9 ns = 10.0999 μs ≈ 10.1 μs.
 
 ```typescript
 function effectiveAccessTime(p: number, mem: number, fault: number): number {
@@ -1149,7 +1149,7 @@ A computer has a 16-bit address bus and 8-bit data bus. The maximum addressable 
 **Answer:** (A) 64 KB
 
 **Explanation:**
-16-bit address bus: 2Ã‚Â¹Ã¢Â¶ = 65536 addressable locations. 8-bit data bus: each location is 1 byte (8 bits). Max memory = 65536 bytes = 64 KB.
+16-bit address bus: 2¹⁶ = 65536 addressable locations. 8-bit data bus: each location is 1 byte (8 bits). Max memory = 65536 bytes = 64 KB.
 
 ```typescript
 function maxMemory(addressBits: number, dataBits: number): string {
@@ -1164,19 +1164,19 @@ console.log(maxMemory(16, 8)); // 64 KB
 ### Q36 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
 The number of symmetric relations on a set of 3 elements is:
 
-(A) 2Ã¢Â¶  
+(A) 2⁶  
 (B) 2³  
-(C) 2Ã¢Â¹  
+(C) 2⁹  
 (D) 2¹²
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (A) 2Ã¢Â¶
+**Answer:** (A) 2⁶
 
 **Explanation:**
 Number of symmetric relations on n elements = 2^{n(n+1)/2}.
-For n=3: 2^{3Ãƒâ€”4/2} = 2Ã¢Â¶.
+For n=3: 2^{3×4/2} = 2⁶.
 
 ```typescript
 function symmetricRelations(n: number): number {
@@ -1255,7 +1255,7 @@ In classful IP addressing, Class C has how many bits for the host part?
 **Answer:** (A) 8
 
 **Explanation:**
-Class C: 24 bits network, 8 bits host. 2Ã¢Â¸ - 2 = 254 hosts per network.
+Class C: 24 bits network, 8 bits host. 2⁸ - 2 = 254 hosts per network.
 
 </details>
 
@@ -1327,7 +1327,7 @@ The minimum number of moves required to solve Towers of Hanoi with 4 disks is:
 **Answer:** (B) 15
 
 **Explanation:**
-Towers of Hanoi with n disks requires 2Ã¢ÂÂ¿ - 1 moves. For n=4: 2Ã¢Â´ - 1 = 15.
+Towers of Hanoi with n disks requires 2ⁿ - 1 moves. For n=4: 2⁴ - 1 = 15.
 
 ```typescript
 function hanoiMoves(n: number): number {
@@ -1375,7 +1375,7 @@ Type-0 grammars are unrestricted grammars, corresponding to recursively enumerab
 </details>
 
 ### Q47 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
-The coefficient of xÃ‚Â³ in (1+x)Ã¢Â¶ is:
+The coefficient of x³ in (1+x)⁶ is:
 
 (A) 10  
 (B) 15  
@@ -1388,7 +1388,7 @@ The coefficient of xÃ‚Â³ in (1+x)Ã¢Â¶ is:
 **Answer:** (C) 20
 
 **Explanation:**
-Coefficient of xÃ‚Â³ in (1+x)Ã¢Â¶ = C(6,3) = 6!/(3!3!) = 20.
+Coefficient of x³ in (1+x)⁶ = C(6,3) = 6!/(3!3!) = 20.
 
 </details>
 
@@ -1413,19 +1413,19 @@ Chaining (separate chaining), linear probing, and double hashing are all collisi
 ### Q49 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 In a system with 32-bit virtual addresses and 4 KB pages, the size of the page table (assuming single-level) is:
 
-(A) 2Ã‚Â²Ã¢Â° Ã— 4 bytes  
+(A) 2²⁰ × 4 bytes  
 (B) 2¹² × 4 bytes  
-(C) 2Ã‚Â²Ã¢Â° Ã— 8 bytes  
+(C) 2²⁰ × 8 bytes  
 (D) 2¹² × 8 bytes
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (A) 2Ã‚Â²Ã¢Â° Ã— 4 bytes
+**Answer:** (A) 2²⁰ × 4 bytes
 
 **Explanation:**
-32-bit VA, page size = 4 KB = 2Ã‚Â¹Ã‚Â². VPN bits = 20. Pages = 2Ã‚Â²Ã¢Â°.
-Each PTE = 4 bytes (typical). Page table size = 2Ã‚Â²Ã¢Â° Ã— 4 bytes.
+32-bit VA, page size = 4 KB = 2¹². VPN bits = 20. Pages = 2²⁰.
+Each PTE = 4 bytes (typical). Page table size = 2²⁰ × 4 bytes.
 
 </details>
 
@@ -1533,7 +1533,7 @@ The number of 1's in the binary representation of 127 is:
 **Answer:** (C) 7
 
 **Explanation:**
-127 = 1111111Ã¢â€šâ€š (seven 1's). 2Ã¢Â· - 1 = 128 - 1 = 127 = 1111111â‚‚.
+127 = 1111111₂ (seven 1's). 2⁷ - 1 = 128 - 1 = 127 = 1111111₂.
 
 ```typescript
 function countOnes(n: number): number {

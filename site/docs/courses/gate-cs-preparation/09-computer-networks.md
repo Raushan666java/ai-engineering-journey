@@ -127,7 +127,7 @@ flowchart LR
 
 ### Signals
 
-- **Analog Signal:** Continuous wave (sine wave) â€”â€ `s(t) = A sin(2Ãâ‚¬ft + Ã†)`
+- **Analog Signal:** Continuous wave (sine wave) —” `s(t) = A sin(2Ï€ft + Ï†)`
 - **Digital Signal:** Discrete values (0/1)
 - **Bandwidth (BW):** `BW = f_max - f_min` (Hz)
 
@@ -1545,4 +1545,4 @@ for (const s of subnets) {
 
 *End of Chapter 9 —" Computer Networks. Extended with summary, TypeScript implementations, quiz, and exercises.*
 
-> **End of Chapter 9 â€”â€ Computer Networks.** Covers all GATE topics from Physical to Application layer with 60 solved PYQs (2010—“2025) and formula reference tables.
+> **End of Chapter 9 —” Computer Networks.** Covers all GATE topics from Physical to Application layer with 60 solved PYQs (2010—“2025) and formula reference tables.

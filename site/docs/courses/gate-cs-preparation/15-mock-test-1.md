@@ -1,12 +1,13 @@
 ---
 id: 15-mock-test-1
 slug: /gate-cs-preparation/15-mock-test-1
-title: "15 Mock Test 1"
+title: "15-mock-test-1"
 sidebar_label: "15 Mock Test 1"
 sidebar_position: 12
+description: "﻿ï»¿# GATE CS Mock Test 1 -> Full-Length Practice Paper"
 ---
 
-﻿﻿﻿# GATE CS Mock Test 1 -> Full-Length Practice Paper
+﻿# GATE CS Mock Test 1 -> Full-Length Practice Paper
 
 
 ## Chapter at a Glance
@@ -71,18 +72,18 @@ flowchart LR
 **Reading Time:** 10 minutes (no writing allowed)
 
 **Marking Scheme:**
-- Questions 1—---œ10 (General Aptitude): **1 mark each**, no negative marking
-- Questions 11—---œ15 (General Aptitude): **2 marks each**, negative marking âˆ---™0.66
-- Questions 16—---œ20 (Engineering Mathematics): **1 mark each**, no negative marking
-- Questions 21—---œ25 (Engineering Mathematics): **2 marks each**, negative marking âˆ---™0.66
-- Questions 26—---œ40 (Technical): **1 mark each**, negative marking âˆ---™0.33
-- Questions 41—---œ55 (Technical): **2 marks each**, negative marking âˆ---™0.66
+- Questions 1â€---œ10 (General Aptitude): **1 mark each**, no negative marking
+- Questions 11â€---œ15 (General Aptitude): **2 marks each**, negative marking −0.66
+- Questions 16â€---œ20 (Engineering Mathematics): **1 mark each**, no negative marking
+- Questions 21â€---œ25 (Engineering Mathematics): **2 marks each**, negative marking −0.66
+- Questions 26â€---œ40 (Technical): **1 mark each**, negative marking −0.33
+- Questions 41â€---œ55 (Technical): **2 marks each**, negative marking −0.66
 
 All questions are Multiple Choice Questions. Select the single correct answer.
 
 ---
 
-## Section A: General Aptitude (Questions 1—---œ15)
+## Section A: General Aptitude (Questions 1â€---œ15)
 
 **Q1 (1 Mark):** If FROST is coded as 82 and MELT is coded as 53, then how is HEAT coded?
 
@@ -212,14 +213,14 @@ All questions are Multiple Choice Questions. Select the single correct answer.
 
 **Q15 (2 Marks):** A clock shows 4:30. What is the angle between the hour hand and the minute hand?
 
-(A) 30Â deg   
-(B) 45Â deg   
-(C) 60Â deg   
-(D) 75Â deg 
+(A) 30°   
+(B) 45°   
+(C) 60°   
+(D) 75° 
 
 ---
 
-## Section B: Engineering Mathematics (Questions 16—---œ25)
+## Section B: Engineering Mathematics (Questions 16â€---œ25)
 
 **Q16 (1 Mark):** The determinant of matrix [[3, 0, 0], [2, 1, 0], [1, 2, 2]] is:
 
@@ -257,7 +258,7 @@ All questions are Multiple Choice Questions. Select the single correct answer.
 
 ---
 
-**Q20 (1 Mark):** Which law is Â¬(P âˆ¨ Q) â---°¡ Â¬P âˆ§ Â¬Q?
+**Q20 (1 Mark):** Which law is ¬(P ∨ Q) â---°¡ ¬P ∧ ¬Q?
 
 (A) Commutative  
 (B) Associative  
@@ -266,7 +267,7 @@ All questions are Multiple Choice Questions. Select the single correct answer.
 
 ---
 
-**Q21 (2 Marks):** The number of critical points of f(x) = xâÂÂÂ�´ âˆ---™ 8xÂ² + 16 is:
+**Q21 (2 Marks):** The number of critical points of f(x) = x⁴ − 8x² + 16 is:
 
 (A) 1  
 (B) 2  
@@ -284,7 +285,7 @@ All questions are Multiple Choice Questions. Select the single correct answer.
 
 ---
 
-**Q23 (2 Marks):** A 2Ã---—Â�2 matrix has trace 5 and determinant 6. Its eigenvalues are:
+**Q23 (2 Marks):** A 2×2 matrix has trace 5 and determinant 6. Its eigenvalues are:
 
 (A) 1, 4  
 (B) 2, 3  
@@ -311,7 +312,7 @@ All questions are Multiple Choice Questions. Select the single correct answer.
 
 ---
 
-## Section C: Technical Subjects (Questions 26—---œ55)
+## Section C: Technical Subjects (Questions 26â€---œ55)
 
 **Q26 (1 Mark) [DS&A]:** Which data structure is used to implement a priority queue efficiently?
 
@@ -387,10 +388,10 @@ All questions are Multiple Choice Questions. Select the single correct answer.
 
 **Q34 (1 Mark) [DS&A]:** In a complete binary tree of height h (root height 0), the maximum number of nodes is:
 
-(A) 2Ê deg   
-(B) 2Ê deg  âˆ---™ 1  
-(C) 2Ê deg âÂÂÂ�ºÂ¹ âˆ---™ 1  
-(D) 2Ê deg âÂÂÂ�ºÂ¹
+(A) 2ʰ   
+(B) 2ʰ  − 1  
+(C) 2ʰ ⁺¹ − 1  
+(D) 2ʰ ⁺¹
 
 ---
 
@@ -423,10 +424,10 @@ All questions are Multiple Choice Questions. Select the single correct answer.
 
 **Q38 (1 Mark) [TOC]:** Which language is regular?
 
-(A) {aâÂÂÂ�¿bâÂÂÂ�¿ | n â---°¥ 0}  
-(B) {aâÂÂÂ�¿ | n is prime}  
-(C) {aâÂÂÂ�¿ | n is even}  
-(D) {aâÂÂÂ�¿bâÂÂÂ�¿câÂÂÂ�¿ | n â---°¥ 0}
+(A) {aⁿbⁿ | n ≥ 0}  
+(B) {aⁿ | n is prime}  
+(C) {aⁿ | n is even}  
+(D) {aⁿbⁿcⁿ | n ≥ 0}
 
 ---
 
@@ -582,7 +583,7 @@ Time complexity:
 
 ---
 
-**Q55 (2 Marks) [OS]:** A disk (0—---œ199 cylinders), head at 50 moving towards 0. Queue: 90, 20, 120, 10, 180, 150, 60, 85. Total head movement (SCAN)?
+**Q55 (2 Marks) [OS]:** A disk (0â€---œ199 cylinders), head at 50 moving towards 0. Queue: 90, 20, 120, 10, 180, 150, 60, 85. Total head movement (SCAN)?
 
 (A) 190  
 (B) 210  
@@ -613,51 +614,51 @@ Time complexity:
 
 **Q1:** Letter positions (A=1...Z=26). FROST = 6+18+15+19+20 = 78. Code 82 = 78 + 4. MELT = 13+5+12+20 = 50. Code 53 = 50 + 3. The extra value = number of consonants. FROST: 4 consonants, adds 4. MELT: 3 consonants, adds 3. HEAT: H=8, E=5, A=1, T=20, sum=34, consonants=2, code=34+2=36.
 
-**Q2:** Distance = train length + platform length = 300+200 = 500 m. Time = 25 s. Speed = 500/25 = 20 m/s = 20Ã---—Â�(18/5) = 72 km/h.
+**Q2:** Distance = train length + platform length = 300+200 = 500 m. Time = 25 s. Speed = 500/25 = 20 m/s = 20×(18/5) = 72 km/h.
 
 **Q3:** Perfidious means treacherous or deceitful. Synonym = Treacherous.
 
-**Q4:** |TâˆªC| = 120+90âˆ---™40 = 170. Neither = 200âˆ---™170 = 30.
+**Q4:** |T∪C| = 120+90−40 = 170. Neither = 200−170 = 30.
 
 **Q5:** I: All squares are rectangles, all rectangles are quadrilaterals -> all squares are quadrilaterals. II: Since all squares are quadrilaterals and squares exist, some quadrilaterals are squares. Both follow.
 
 **Q6:** Numbers: x, x+2, x+4, x+6, x+8. Sum = 5x+20. Mean = x+4 = 18 -> x = 14. Largest = 14+8 = 22.
 
-**Q7:** Pattern: 1Ã---—Â�3=3, 2Ã---—Â�4=8, 3Ã---—Â�5=15, 4Ã---—Â�6=24, 5Ã---—Â�7=35, 6Ã---—Â�8=48. Answer 48.
+**Q7:** Pattern: 1×3=3, 2×4=8, 3×5=15, 4×6=24, 5×7=35, 6×8=48. Answer 48.
 
-**Q8:** East 5 âˆ---™ West 2 = net 3 east. North 1. Distance = âˆš(3Â²+1Â²) = âˆš10 km.
+**Q8:** East 5 − West 2 = net 3 east. North 1. Distance = √(3²+1²) = √10 km.
 
 **Q9:** 423 = ice cream cake. 256 = cake is sweet. 637 = sweet ice cream. Common between 1 and 2: "cake" = 2. Common between 2 and 3: "sweet" = 6. In 1 and 3, common digit = 3. Words common to 1 and 3 = "ice cream". So 3 = "ice cream". Then in 637: 6 = sweet, 7 = the remaining word (the other of "ice" or "cream"). But 3=both "ice cream" so 3 is two words. Hmm, let's be precise: 423 and 637 share at the position of "ice cream" but not individually. Actually 423 and 637 both map to the {"ice", "cream"} bundle. So 3 maps to one of them. Then 423: 4 maps to the other of {ice, cream}. 637: 7 maps to the other. In 256: cake=2, is=5, sweet=6. So in 423: cake=2, ice=C(3), cream=4. In 637: sweet=6, ice=7, cream=3. Actually cream=3 (from 423: 3=cream, from 637: 3=cream would mean 7=ice). Let's lock: 3 = cream.
 
-**Q10:** 7 cycle: 7Â¹->7, 7Â²->9, 7Â³->3, 7âÂÂÂ�´->1 (length 4). 343 mod 4 = 3. Unit digit = 3.
+**Q10:** 7 cycle: 7¹->7, 7²->9, 7³->3, 7⁴->1 (length 4). 343 mod 4 = 3. Unit digit = 3.
 
-**Q11:** A+B in 1 day = 1/12. B+C = 1/15. A+C = 1/20. Add all: 2(A+B+C) = 1/12+1/15+1/20 = (5+4+3)/60 = 12/60 = 1/5. A+B+C = 1/10. A alone = 1/10 âˆ---™ 1/15 = (3âˆ---™2)/30 = 1/30. A takes 30 days.
+**Q11:** A+B in 1 day = 1/12. B+C = 1/15. A+C = 1/20. Add all: 2(A+B+C) = 1/12+1/15+1/20 = (5+4+3)/60 = 12/60 = 1/5. A+B+C = 1/10. A alone = 1/10 − 1/15 = (3−2)/30 = 1/30. A takes 30 days.
 
-**Q12:** Numbers: a/r, a, ar. Sum = a/r + a + ar = 39. Product of first and third = (a/r)(ar) = aÂ² = 81 -> a = Â±9. Since numbers positive, a = 9. So 9/r + 9 + 9r = 39 -> 9/r + 9r = 30 -> divide by 3: 3/r + 3r = 10 -> 3 + 3rÂ² = 10r -> 3rÂ² âˆ---™ 10r + 3 = 0 -> (3râˆ---™1)(râˆ---™3) = 0. r = 3 or 1/3. Middle number = a = 9.
+**Q12:** Numbers: a/r, a, ar. Sum = a/r + a + ar = 39. Product of first and third = (a/r)(ar) = a² = 81 -> a = ±9. Since numbers positive, a = 9. So 9/r + 9 + 9r = 39 -> 9/r + 9r = 30 -> divide by 3: 3/r + 3r = 10 -> 3 + 3r² = 10r -> 3r² − 10r + 3 = 0 -> (3r−1)(r−3) = 0. r = 3 or 1/3. Middle number = a = 9.
 
 **Q13:** Total balls = 15. Ways to choose 2 = C(15,2) = 105. Ways both blue = C(5,2) = 10. P = 10/105 = 2/21.
 
-**Q14:** 12 men Ã---—Â� 8 days = 96 man-days. For 6 days: 96/6 = 16 men.
+**Q14:** 12 men × 8 days = 96 man-days. For 6 days: 96/6 = 16 men.
 
-**Q15:** At 4:30, hour hand at 4Ã---—Â�30Â deg  + 30Ã---—Â�(30/60)Â deg  = 120Â deg +15Â deg  = 135Â deg . Minute hand at 30Ã---—Â�6Â deg  = 180Â deg . Angle = |180âˆ---™135| = 45Â deg .
+**Q15:** At 4:30, hour hand at 4×30°  + 30×(30/60)°  = 120° +15°  = 135° . Minute hand at 30×6°  = 180° . Angle = |180−135| = 45° .
 
-**Q16:** Determinant of lower triangular = product of diagonal = 3Ã---—Â�1Ã---—Â�2 = 6.
+**Q16:** Determinant of lower triangular = product of diagonal = 3×1×2 = 6.
 
-**Q17:** Tree: edges = Vâˆ---™1. 15 edges -> V = 16.
+**Q17:** Tree: edges = V−1. 15 edges -> V = 16.
 
 **Q18:** Standard limit: lim_{x->0} sin x / x = 1.
 
-**Q19:** P(AâˆªB) = P(A)+P(B)âˆ---™P(Aâˆ©B) = 0.3+0.5âˆ---™(0.3Ã---—Â�0.5) = 0.8âˆ---™0.15 = 0.65.
+**Q19:** P(A∪B) = P(A)+P(B)−P(A∩B) = 0.3+0.5−(0.3×0.5) = 0.8−0.15 = 0.65.
 
-**Q20:** Â¬(P âˆ¨ Q) â---°¡ Â¬P âˆ§ Â¬Q is De Morgan's law (the negation of OR becomes AND of negations).
+**Q20:** ¬(P ∨ Q) â---°¡ ¬P ∧ ¬Q is De Morgan's law (the negation of OR becomes AND of negations).
 
-**Q21:** f'(x) = 4xÂ³ âˆ---™ 16x = 4x(xÂ²âˆ---™4) = 4x(xâˆ---™2)(x+2). Critical points: x = 0, 2, âˆ---™2. Three critical points.
+**Q21:** f'(x) = 4x³ − 16x = 4x(x²−4) = 4x(x−2)(x+2). Critical points: x = 0, 2, −2. Three critical points.
 
-**Q22:** Divisible by 2: floor(1000/2) = 500. Divisible by 5: floor(1000/5) = 200. Divisible by 10: floor(1000/10) = 100. Using inclusion-exclusion: 500+200âˆ---™100 = 600.
+**Q22:** Divisible by 2: floor(1000/2) = 500. Divisible by 5: floor(1000/5) = 200. Divisible by 10: floor(1000/10) = 100. Using inclusion-exclusion: 500+200−100 = 600.
 
-**Q23:** For 2Ã---—Â�2 matrix, sum of eigenvalues = trace = 5, product = determinant = 6. Solving Î»â---šÂÂÂ�+Î»â---š---š=5, Î»â---šÂÂÂ�Î»â---š---š=6 -> Î»=2,3.
+**Q23:** For 2×2 matrix, sum of eigenvalues = trace = 5, product = determinant = 6. Solving λ₁+λ₂=5, λ₁λ₂=6 -> λ=2,3.
 
-**Q24:** P(X=5) = C(10,5)(0.5)âÂÂÂ�µ(0.5)âÂÂÂ�µ = 252Ã---—Â�(1/2)Â¹âÂÂÂ� deg  = 252/1024 = 63/256.
+**Q24:** P(X=5) = C(10,5)(0.5)⁵(0.5)⁵ = 252×(1/2)¹⁰  = 252/1024 = 63/256.
 
 **Q25:** Master Theorem: T(n) = 2T(n/2) + n. a=2, b=2, f(n)=O(n^log_b(a)) = O(n). Case 2: T(n) = O(n log n).
 
@@ -667,7 +668,7 @@ Time complexity:
 
 **Q28:** Switch operates at Layer 2 (Data Link) using MAC addresses for forwarding.
 
-**Q29:** PROJECT (ÃÂÂ�€) returns unique rows by eliminating duplicates in relational algebra.
+**Q29:** PROJECT (π) returns unique rows by eliminating duplicates in relational algebra.
 
 **Q30:** The standard CFG for balanced parentheses: S -> SS | (S) | ε generates all strings of balanced parentheses.
 
@@ -677,7 +678,7 @@ Time complexity:
 
 **Q33:** Program Counter (PC) holds the address of the next instruction to be fetched.
 
-**Q34:** Maximum nodes in complete binary tree of height h: all levels filled. Level 0: 2âÂÂÂ� deg , level 1: 2Â¹, ..., level h: 2Ê deg . Total = 2âÂÂÂ� deg +2Â¹+...+2Ê deg  = 2Ê deg âÂÂÂ�ºÂ¹âˆ---™1.
+**Q34:** Maximum nodes in complete binary tree of height h: all levels filled. Level 0: 2⁰ , level 1: 2¹, ..., level h: 2ʰ . Total = 2⁰ +2¹+...+2ʰ  = 2ʰ ⁺¹−1.
 
 **Q35:** Paging divides memory into fixed-size blocks (frames for main memory, pages for logical memory).
 
@@ -685,15 +686,15 @@ Time complexity:
 
 **Q37:** NOT NULL constraint ensures the column cannot store NULL values.
 
-**Q38:** {aâÂÂÂ�¿ | n is even} is regular (even-length a's). aâÂÂÂ�¿bâÂÂÂ�¿ is context-free but not regular. Primes are not regular. aâÂÂÂ�¿bâÂÂÂ�¿câÂÂÂ�¿ is context-sensitive.
+**Q38:** {aⁿ | n is even} is regular (even-length a's). aⁿbⁿ is context-free but not regular. Primes are not regular. aⁿbⁿcⁿ is context-sensitive.
 
 **Q39:** A + AB = A(1+B) = A(1) = A. Absorption law.
 
 **Q40:** Direct mapped cache suffers from thrashing when multiple frequently-used blocks map to the same line, causing constant eviction.
 
-**Q41:** Outer loop: i = 1, 2, 4, 8, ..., n -> log n iterations. Inner loop: j = 0 to nâˆ---™1 -> n iterations. Total = O(n log n).
+**Q41:** Outer loop: i = 1, 2, 4, 8, ..., n -> log n iterations. Inner loop: j = 0 to n−1 -> n iterations. Total = O(n log n).
 
-**Q42:** With maximum need of 2Ã---—Â�R1 and 1Ã---—Â�R2 per process, total 5Ã---—Â�2=10 R1 needed but only 6 available. The system can still be safe if processes request sequentially. A safe state ensures deadlock avoidance.
+**Q42:** With maximum need of 2×R1 and 1×R2 per process, total 5×2=10 R1 needed but only 6 available. The system can still be safe if processes request sequentially. A safe state ensures deadlock avoidance.
 
 **Q43:** Go-Back-N retransmits from the lost frame onwards. Frame 3 is lost; frames 4, 5, 6 (already sent) plus frame 3 are retransmitted = 4 frames.
 
@@ -707,7 +708,7 @@ Let me fix this: change the FD to A -> BC instead of A -> B. So FDs: A -> BC, BC
 
 **Q46:** LALR(1) parsers are constructed by merging states of LR(1) items. They are built from LR(1) grammars, with reduced table size.
 
-**Q47:** 4-to-1 MUX: 4 input lines, 1 output. Select lines = logâ---š---š(4) = 2.
+**Q47:** 4-to-1 MUX: 4 input lines, 1 output. Select lines = log₂(4) = 2.
 
 **Q48:** Data hazard: an instruction depends on the result of a prior instruction still in the pipeline.
 
@@ -715,7 +716,7 @@ Let me fix this: change the FD to A -> BC instead of A -> B. So FDs: A -> BC, BC
 
 **Q50:** Banker's algorithm is a deadlock avoidance algorithm that checks for safe states.
 
-**Q51:** Shannon: C = B logâ---š---š(1+SNR) = 4000 Ã---—Â� logâ---š---š(1+1023) = 4000 Ã---—Â� logâ---š---š(1024) = 4000 Ã---—Â� 10 = 40,000 bps = 40 kbps.
+**Q51:** Shannon: C = B log₂(1+SNR) = 4000 × log₂(1+1023) = 4000 × log₂(1024) = 4000 × 10 = 40,000 bps = 40 kbps.
 
 **Q52:** S: W1(A), R2(A), W2(B), R1(B), C1, C2. Conflicts: W1(A) and R2(A) -> T1 -> T2 (T1 writes A before T2 reads). R1(B) and W2(B) -> R1(B) is after W2(B), so T2 -> T1. Precedence graph has T1->T2 and T2->T1 (cycle). Not conflict serializable.
 
@@ -729,7 +730,7 @@ Let me fix this: change the FD to A -> BC instead of A -> B. So FDs: A -> BC, BC
 ## Summary
 
 Mock Test 1 covers foundational GATE CS topics across all core subjects. Key takeaways:
-- **Aptitude & Mathematics**: Focus on percentage calculations, permutations, probability, set theory, and recurrence relations � these form ~15% of the paper.
+- **Aptitude & Mathematics**: Focus on percentage calculations, permutations, probability, set theory, and recurrence relations — these form ~15% of the paper.
 - **Digital Logic & COA**: Boolean algebra simplification, K-map grouping, cache memory parameters, and disk scheduling algorithms are high-weightage areas.
 - **Programming & Data Structures**: Tree traversals, graph properties (handshaking lemma), sorting algorithm analysis, and complexity recurrences appear consistently.
 - **Databases & Networks**: Normalization (BCNF/3NF decomposition), indexing, TCP/IP concepts, and CRCs are frequently tested.
@@ -742,7 +743,7 @@ The \GATEScoreCalculator\ class computes total score with GATE's negative markin
 
 \\\	ypescript
 /**
- * GATEScoreCalculator � Computes GATE exam scores with
+ * GATEScoreCalculator — Computes GATE exam scores with
  * negative marking and normalized percentile ranking.
  */
 class GATEScoreCalculator {
@@ -760,12 +761,12 @@ class GATEScoreCalculator {
     this.wrongPenalty = wrongPenalty;
   }
 
-  /** Raw score: correct � marks - wrong � penalty. */
+  /** Raw score: correct — marks - wrong — penalty. */
   rawScore(correct: number, wrong: number): number {
     return correct * this.correctMarks - wrong * this.wrongPenalty;
   }
 
-  /** Normalized score on a 0�100 scale. */
+  /** Normalized score on a 0–100 scale. */
   normalizedScore(raw: number, maxRaw: number): number {
     if (maxRaw <= 0) return 0;
     return Math.round((raw / maxRaw) * 100 * 100) / 100;

@@ -1,13 +1,6 @@
 ---
-description: "Compiler design is the study of how programs written in a high-level programming language are translated into executable machine code or an equivalent"
----
-
-﻿---
-id: index
-slug: /compiler-design
 title: "Compiler Design — Complete Course Textbook"
-sidebar_label: "Compiler Design — Complete Course Textbook"
-sidebar_position: 16
+description: "Compiler design is the study of how programs written in a high-level programming language are translated into executable machine code or an equivalent"
 ---
 
 # Compiler Design — Complete Course Textbook

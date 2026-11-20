@@ -599,7 +599,7 @@ A → aA | b
 ```
 
 **Solution:**
-Look at state with `A → a·A` and `A → ·aA, A → ·b`. After reading `A`, we get `A → aAÂ·` (reduce). No shift items in the same state. Check other states —” none have shift-reduce conflicts. **Yes, this is LR(0).**
+Look at state with `A → a·A` and `A → ·aA, A → ·b`. After reading `A`, we get `A → aA·` (reduce). No shift items in the same state. Check other states —” none have shift-reduce conflicts. **Yes, this is LR(0).**
 
 ---
 
@@ -808,7 +808,7 @@ A list of pointers to triples —” makes reordering possible.
 
 ### 4.5 Static Single Assignment (SSA)
 
-Each variable is assigned exactly once. Special **Ã† (phi) functions** merge values at control-flow joins.
+Each variable is assigned exactly once. Special **φ (phi) functions** merge values at control-flow joins.
 
 **Example —” `if (x > 0) y = 1; else y = 2;`**
 
@@ -818,7 +818,7 @@ goto L2
 L1: y1 = 1
     goto L3
 L2: y2 = 2
-L3: y3 = Ã†(y1, y2)
+L3: y3 = φ(y1, y2)
 ```
 
 **Benefits:** Simplifies optimization (constant propagation, dead code elimination).
@@ -1319,7 +1319,7 @@ A) 9   B) 10   C) 11   D) 12
 
 ---
 
-**Problem 6 (GATE 2022)** —” The Îµ-closure of state `q0` in an NFA with transitions: `q0—”Îµ→q1`, `q1—”a→q2`, `q1—”ε→q3` is:
+**Problem 6 (GATE 2022)** —” The ε-closure of state `q0` in an NFA with transitions: `q0—”ε→q1`, `q1—”a→q2`, `q1—”ε→q3` is:
 
 A) `{q0}`   B) `{q0, q1}`   C) `{q0, q1, q3}`   D) `{q0, q1, q2, q3}`
 
@@ -1442,7 +1442,7 @@ A) `{), ,}`   B) `{), $}`   C) `{ ,}`   D) `{), ,, $}`
 
 A) LL(1)   B) SLR(1)   C) LALR(1)   D) None of the above
 
-**Solution:** This grammar is left-recursive (S→Sa). No LL parser can handle left recursion. However, LR parsers can handle left recursion. LR(0): items produce shift-reduce conflict? Let's check. State 0: S'→·S, S→·Sa, S→·a. State 1 (after S): S'→S·, S→S·a. State 2 (after a): S→a·. From state 1, on 'a': goto to state with S→Sa·. This is LR(0) with a shift-reduce conflict (S'→S· wants accept, S→SÂ·a wants shift). SLR: FOLLOW(S)={$} so reduce only on $. Shift on 'a'. No conflict. **Answer: B (SLR(1)), also C (LALR(1)).** But the question expects SLR or higher. Let me check —” actually with S→Sa|a, the language is `a+`. In state 1: item S'→S· (accept) and S→S·a (shift). On $: accept. On a: shift. No conflict in SLR. So both SLR and LALR work. LL(1) cannot due to left recursion. **Answer: B (SLR(1)).**
+**Solution:** This grammar is left-recursive (S→Sa). No LL parser can handle left recursion. However, LR parsers can handle left recursion. LR(0): items produce shift-reduce conflict? Let's check. State 0: S'→·S, S→·Sa, S→·a. State 1 (after S): S'→S·, S→S·a. State 2 (after a): S→a·. From state 1, on 'a': goto to state with S→Sa·. This is LR(0) with a shift-reduce conflict (S'→S· wants accept, S→S·a wants shift). SLR: FOLLOW(S)={$} so reduce only on $. Shift on 'a'. No conflict. **Answer: B (SLR(1)), also C (LALR(1)).** But the question expects SLR or higher. Let me check —” actually with S→Sa|a, the language is `a+`. In state 1: item S'→S· (accept) and S→S·a (shift). On $: accept. On a: shift. No conflict in SLR. So both SLR and LALR work. LL(1) cannot due to left recursion. **Answer: B (SLR(1)).**
 
 ---
 
@@ -1485,7 +1485,7 @@ A) 0   B) 1   C) 2   D) 3
 
 **Solution:** LR(0) items:
 - State 0: S'→·S, S→·Aa, S→·Bb, A→·c, B→·c
-- State 4 (after reading c): A→c· and B→cÂ· —” two reduce items in the same state. This is a reduce-reduce conflict. **Answer: B (1).**
+- State 4 (after reading c): A→c· and B→c· —” two reduce items in the same state. This is a reduce-reduce conflict. **Answer: B (1).**
 
 ---
 
@@ -1493,7 +1493,7 @@ A) 0   B) 1   C) 2   D) 3
 
 A) 0   B) 1   C) 2   D) 3
 
-**Solution:** This grammar generates all balanced parentheses strings (Dyck language). State 0: S'→·S, S→·(S), S→·SS, S→·ε. After closure, S→·(S), S→·SS, S→·ε (reduce item). This state has both shift (on `(`) and reduce (S→Îµ) —” a shift-reduce conflict. Also state after reading `(` would have similar. But is this LR(0)? The S→Îµ gives a reduce item in state 0. On `(`: both shift and reduce. **Answer: B (at least 1 shift-reduce conflict in state 0).** Actually there are multiple —” let me trace more carefully. State 0 has items S→·(S) (shift on `(`) and S→·SS (shift on `(`) and S→·ε (reduce on any). So on `(` we have shift + reduce → 1 SR conflict. On `)` and `$` we only have reduce. So 1 SR conflict. **Answer: B.**
+**Solution:** This grammar generates all balanced parentheses strings (Dyck language). State 0: S'→·S, S→·(S), S→·SS, S→·ε. After closure, S→·(S), S→·SS, S→·ε (reduce item). This state has both shift (on `(`) and reduce (S→ε) —” a shift-reduce conflict. Also state after reading `(` would have similar. But is this LR(0)? The S→ε gives a reduce item in state 0. On `(`: both shift and reduce. **Answer: B (at least 1 shift-reduce conflict in state 0).** Actually there are multiple —” let me trace more carefully. State 0 has items S→·(S) (shift on `(`) and S→·SS (shift on `(`) and S→·ε (reduce on any). So on `(` we have shift + reduce → 1 SR conflict. On `)` and `$` we only have reduce. So 1 SR conflict. **Answer: B.**
 
 ---
 
@@ -1528,7 +1528,7 @@ From state 2, on S: goto state with S→aS· (reduce). No state has both shift a
 
 A) 2   B) 3   C) 4   D) 5
 
-**Solution:** LR(0) states: start in state 0. Shift `id` (action: shift to state with F→id·). Then reduce F→id, then T→F, then E→T. That's 3 reductions, but the question asks about shifts before first reduce. Actually let me trace: state 0 has items E'→·E, E→·E+T, E→·T, T→·T*F, T→·F, F→·(E), F→Â·id. On `id` —” we shift to the state with F→id·. That's 1 shift, then immediately reduce. **Answer: A (1 shift).** Wait, let me re-examine. Actually, in LR parsing, when we see `id`, action[0, id] = shift to some state s. Then in s, item F→idÂ· means reduce. So 1 shift. Hmm, but the question options start at 2. Let me reconsider —” maybe they count the entire parse before any reduce happens in a different way, or the grammar's LR automaton is different. Actually 1 is the right answer. Let me adjust options:
+**Solution:** LR(0) states: start in state 0. Shift `id` (action: shift to state with F→id·). Then reduce F→id, then T→F, then E→T. That's 3 reductions, but the question asks about shifts before first reduce. Actually let me trace: state 0 has items E'→·E, E→·E+T, E→·T, T→·T*F, T→·F, F→·(E), F→·id. On `id` —” we shift to the state with F→id·. That's 1 shift, then immediately reduce. **Answer: A (1 shift).** Wait, let me re-examine. Actually, in LR parsing, when we see `id`, action[0, id] = shift to some state s. Then in s, item F→id· means reduce. So 1 shift. Hmm, but the question options start at 2. Let me reconsider —” maybe they count the entire parse before any reduce happens in a different way, or the grammar's LR automaton is different. Actually 1 is the right answer. Let me adjust options:
 
 A) 1   B) 2   C) 3   D) 4
 
@@ -1650,11 +1650,11 @@ t5 = t3 / t4
 
 ---
 
-**Problem 3 (GATE 2020)** â€”â€ In SSA form, the Ã† function at a join point after `if (x>0) a=1; else a=2;` produces:
+**Problem 3 (GATE 2020)** —” In SSA form, the φ function at a join point after `if (x>0) a=1; else a=2;` produces:
 
-A) `a3 = a1 + a2`   B) `a3 = Ã†(a1, a2)`   C) `a3 = a1 > 0 ? a1 : a2`   D) `a3 = choose(a1, a2)`
+A) `a3 = a1 + a2`   B) `a3 = φ(a1, a2)`   C) `a3 = a1 > 0 ? a1 : a2`   D) `a3 = choose(a1, a2)`
 
-**Solution:** Ã† function selects the correct reaching definition. **Answer: B.**
+**Solution:** φ function selects the correct reaching definition. **Answer: B.**
 
 ---
 
@@ -2078,7 +2078,7 @@ The ε-closure of state q0 is:
 
 **Answer:** (A) {q0, q2}
 
-*Solution:* Îµ-closure(q0) = {q0} âˆª states reachable via Îµ = q2 (since q0—”ε→q2). q2 has no ε transitions. So ε-closure(q0) = {q0, q2}.
+*Solution:* ε-closure(q0) = {q0} ∪ states reachable via ε = q2 (since q0—”ε→q2). q2 has no ε transitions. So ε-closure(q0) = {q0, q2}.
 
 ---
 
@@ -2224,13 +2224,13 @@ How many conflicts does the LL(1) parse table have?
 - S → aS: FIRST(aS) = {a}
 - S → bS: FIRST(bS) = {b}
 - S → ε: FIRST(ε) = {ε}, so uses FOLLOW(S) = {$}
-LL(1) table: M[S, a] = {S→aS, S→ε? No}. Actually M[S, a]: FIRST(aS) contains a → S→aS. But also S→ε has ε ∈ FIRST and a ∈ FOLLOW? No, FOLLOW(S) = {$}. So only a in FIRST(aS). Wait, check: for S→ε, since ε ∈ FIRST, we add to M[S, b] for all b ∈ FOLLOW(S). FOLLOW(S) only has $. So M[S, a] = S→aS, M[S, b] = S→bS, M[S, $] = S→Îµ. No conflicts. Actually the question says 2 conflicts —” let me re-examine.
+LL(1) table: M[S, a] = {S→aS, S→ε? No}. Actually M[S, a]: FIRST(aS) contains a → S→aS. But also S→ε has ε ∈ FIRST and a ∈ FOLLOW? No, FOLLOW(S) = {$}. So only a in FIRST(aS). Wait, check: for S→ε, since ε ∈ FIRST, we add to M[S, b] for all b ∈ FOLLOW(S). FOLLOW(S) only has $. So M[S, a] = S→aS, M[S, b] = S→bS, M[S, $] = S→ε. No conflicts. Actually the question says 2 conflicts —” let me re-examine.
 
 The issue: FIRST(S) contains ε. For S→aS, FIRST(aS) = {a}. For S→bS, FIRST(bS) = {b}. For S→ε, since ε ∈ FIRST(ε), we add S→ε to FOLLOW(S) = {$}. No conflicts. Hmm, unless we count something else. Maybe the question is about number of MULTIPLE entries. Let me check: since S→aS and S→ε when a ∈ FOLLOW(S)? a ∉ FOLLOW(S). Same for b. So 0 conflicts. Official answer: 2 conflicts. This must be about the augmented grammar or a different interpretation.
 
-Actually wait —” the issue might be that FIRST(S) = {a, b, ε}, and for prediction: S → aS contributes to M[S, a]; S → bS contributes to M[S, b]; S → Îµ contributes to M[S, $] AND also to M[S, a] and M[S, b] because—¦ no, that's wrong. Only FOLLOW entries.
+Actually wait —” the issue might be that FIRST(S) = {a, b, ε}, and for prediction: S → aS contributes to M[S, a]; S → bS contributes to M[S, b]; S → ε contributes to M[S, $] AND also to M[S, a] and M[S, b] because—¦ no, that's wrong. Only FOLLOW entries.
 
-Hmm, the standard GATE 2012 answer key says 2 conflicts for this grammar. Let me reconsider: maybe the first set for S→aS also includes Îµ? No. Oh wait —” the issue might be left recursion. S → aS | bS | Îµ —” is there left recursion? No. But S is nullable (S ⇒* ε). When computing LL(1) table: for S → aS, FIRST(aS) = {a} since a is terminal. For S → bS, FIRST(bS) = {b}. For S → ε, we place in FOLLOW(S) entries. FOLLOW(S) = {$, a, b} because S is start symbol ($), and in S → aS, after S we have whatever follows the S on RHS... actually FOLLOW(S): S → aS means FOLLOW(S) ⊆ FOLLOW(S) (same). S → bS similarly. No. Actually FOLLOW(S): $ ∈ FOLLOW(S). The RHS S appears at end of aS and bS, so FOLLOW(S) ⊆ FOLLOW(S) (trivially). FOLLOW(S) = {$, a, b} because... hmm, actually let me reconsider. In S → aS, the S is at the end, so everything in FOLLOW(S) is also in FOLLOW(S). No new info. So FOLLOW(S) = {$}.
+Hmm, the standard GATE 2012 answer key says 2 conflicts for this grammar. Let me reconsider: maybe the first set for S→aS also includes ε? No. Oh wait —” the issue might be left recursion. S → aS | bS | ε —” is there left recursion? No. But S is nullable (S ⇒* ε). When computing LL(1) table: for S → aS, FIRST(aS) = {a} since a is terminal. For S → bS, FIRST(bS) = {b}. For S → ε, we place in FOLLOW(S) entries. FOLLOW(S) = {$, a, b} because S is start symbol ($), and in S → aS, after S we have whatever follows the S on RHS... actually FOLLOW(S): S → aS means FOLLOW(S) ⊆ FOLLOW(S) (same). S → bS similarly. No. Actually FOLLOW(S): $ ∈ FOLLOW(S). The RHS S appears at end of aS and bS, so FOLLOW(S) ⊆ FOLLOW(S) (trivially). FOLLOW(S) = {$, a, b} because... hmm, actually let me reconsider. In S → aS, the S is at the end, so everything in FOLLOW(S) is also in FOLLOW(S). No new info. So FOLLOW(S) = {$}.
 
 But then the FIRST of S→aS also needs to consider that after a, S can derive ε. FIRST(aS) = {a} since a is terminal and is first. No, FIRST(aS) starts with a, so it's {a}. FIRST(bS) = {b}. No conflicts.
 
@@ -2274,7 +2274,7 @@ Which of the following is TRUE?
 **Answer:** (B) FOLLOW(A) = {a, b, $}
 
 *Solution:* FIRST(A) = {a, ε}. FIRST(B) = {b, ε}. FIRST(C) = {a, ε}. FIRST(S) = FIRST(AB) ∪ FIRST(C) = {a, b, ε} ∪ {a, ε} = {a, b, ε}.
-So (A) is false (missing b). FIRST(B) = {b, Îµ} —” (C) is true. Let me check (B): FOLLOW(A): from S → AB, everything in FIRST(B) except ε goes to FOLLOW(A) = {b}. Since B is nullable, everything in FOLLOW(S) = {$} also goes to FOLLOW(A). Also from A → aA, the RHS A has FOLLOW(A) ⊆ FOLLOW(A). So FOLLOW(A) = {b, $}. Not {a, b, $}. So (B) is false. (D) FOLLOW(C): from S → C, everything in FOLLOW(S) = {$} goes to FOLLOW(C). Also from C → aCb, b ∈ FOLLOW(C). So FOLLOW(C) = {b, $}. (D) is true. Both (C) and (D) seem true? Let me recheck: FIRST(B) = {b} ∪ (ε ? nullable → yes, ε first, so {b, ε}). Correct. And FOLLOW(C) = {b, $} from S→C gives $, C→aCb gives b. So both true. But GATE 2013 says only (B) is true. Let me re-examine (B): A → aA, so FOLLOW(A) from A on RHS of A → aA: the RHS A contributes FOLLOW(A) to FOLLOW(A) —” no new info. S → AB: everything in FIRST(B) \ {ε} = {b} → FOLLOW(A). Since B ⇒* ε, everything in FOLLOW(S) = {$} → FOLLOW(A). So FOLLOW(A) = {b, $}. This is NOT {a, b, $}. 
+So (A) is false (missing b). FIRST(B) = {b, ε} —” (C) is true. Let me check (B): FOLLOW(A): from S → AB, everything in FIRST(B) except ε goes to FOLLOW(A) = {b}. Since B is nullable, everything in FOLLOW(S) = {$} also goes to FOLLOW(A). Also from A → aA, the RHS A has FOLLOW(A) ⊆ FOLLOW(A). So FOLLOW(A) = {b, $}. Not {a, b, $}. So (B) is false. (D) FOLLOW(C): from S → C, everything in FOLLOW(S) = {$} goes to FOLLOW(C). Also from C → aCb, b ∈ FOLLOW(C). So FOLLOW(C) = {b, $}. (D) is true. Both (C) and (D) seem true? Let me recheck: FIRST(B) = {b} ∪ (ε ? nullable → yes, ε first, so {b, ε}). Correct. And FOLLOW(C) = {b, $} from S→C gives $, C→aCb gives b. So both true. But GATE 2013 says only (B) is true. Let me re-examine (B): A → aA, so FOLLOW(A) from A on RHS of A → aA: the RHS A contributes FOLLOW(A) to FOLLOW(A) —” no new info. S → AB: everything in FIRST(B) \ {ε} = {b} → FOLLOW(A). Since B ⇒* ε, everything in FOLLOW(S) = {$} → FOLLOW(A). So FOLLOW(A) = {b, $}. This is NOT {a, b, $}. 
 
 But wait —” maybe the grammar is augmented and we need to consider all possible uses of A. Actually, I think the official answer has (B) as correct, and I'm making an error. Let me reconsider: from A → aA, the RHS A: since the production is A → aA, what follows the RHS A is whatever follows A in this context. But FOLLOW(A) on LHS = FOLLOW of A from context where A appears on RHS of other productions. A appears on RHS only in A → aA (where what follows A on RHS is ε). So FOLLOW(A) on the inside is the same as FOLLOW(A) outside. Plus from S → AB, FOLLOW(A) gets FIRST(B)\{ε} ∪ (if nullable) FOLLOW(S). So {b} ∪ {$} = {b, $}. 
 
@@ -2637,12 +2637,12 @@ That's 6 instructions (goto L1 is implicit at end). Let me count: 1 (if), 2 (sub
 
 (A) Each variable appears on the left side of exactly one assignment
 (B) Each variable has exactly one definition in the program
-(C) Ã† functions merge values at join points
+(C) φ functions merge values at join points
 (D) All of the above
 
 **Answer:** (D) All of the above
 
-*Solution:* In SSA form: (A) each variable is assigned exactly once statically (may have multiple uses). (B) each variable has exactly one definition point. (C) Ã† functions are used at control-flow join points to select which definition reaches the join, maintaining the single-assignment property.
+*Solution:* In SSA form: (A) each variable is assigned exactly once statically (may have multiple uses). (B) each variable has exactly one definition point. (C) φ functions are used at control-flow join points to select which definition reaches the join, maintaining the single-assignment property.
 
 ---
 
@@ -2952,7 +2952,7 @@ Students confuse which conflicts each parser can resolve.
 **Trap 5: LR(0) item set closure —” forgetting closure on ε-productions**
 In `S' → S`, when computing closure, students forget to add items for non-terminals immediately after the dot.
 
-*Fix:* For state containing `A → Î± —¢ B Î²`, add ALL `B → —¢Î³` items to the state as part of closure.
+*Fix:* For state containing `A → α —¢ B β`, add ALL `B → —¢γ` items to the state as part of closure.
 
 ---
 
@@ -3012,10 +3012,10 @@ In `printf("%d %d", a, b);`, the format string `"%d %d"` is ONE token (STRING), 
 
 ---
 
-**Trap 14: SSA Ï† functions —” underestimating operands**
-A Ã† function at a join point with N predecessors needs N operands (one from each incoming edge).
+**Trap 14: SSA φ functions —” underestimating operands**
+A φ function at a join point with N predecessors needs N operands (one from each incoming edge).
 
-*Fix:* Ã†(v1, v2, ..., vN) at a block with N predecessors always has exactly N arguments.
+*Fix:* φ(v1, v2, ..., vN) at a block with N predecessors always has exactly N arguments.
 
 ---
 
@@ -3083,13 +3083,13 @@ C → c
 **Constructing LR(0) Items:**
 
 1. **Augment** the grammar: add S' → S
-2. **Closure(I):** Start with all items in I. If `A → Î± —¢ B Î²` âˆˆ I, add ALL `B → —¢Î³` to I. Repeat until no new items.
-3. **Goto(I, X):** For each item `A → Î± —¢ X Î²` in I, add `A → Î± X —¢ Î²` to new state. Take closure.
+2. **Closure(I):** Start with all items in I. If `A → α —¢ B β` ∈ I, add ALL `B → —¢γ` to I. Repeat until no new items.
+3. **Goto(I, X):** For each item `A → α —¢ X β` in I, add `A → α X —¢ β` to new state. Take closure.
 4. **Core distinction:** LR(0) items ignore lookahead. LR(1) items include lookaheads. LALR(1) merges identical LR(0) cores.
 
 **Conflict Quick-Check:**
-- SR conflict: state has both `A → Î± —¢ a Î²` (shift) and `B → Î³ —¢` (reduce)
-- RR conflict: state has both `A → Î± —¢` and `B → Î² —¢` (two reduce items)
+- SR conflict: state has both `A → α —¢ a β` (shift) and `B → γ —¢` (reduce)
+- RR conflict: state has both `A → α —¢` and `B → β —¢` (two reduce items)
 
 **GATE Shortcut:**
 | Grammar Type | Parsing Method | Table Size | Conflicts Resolved? |
@@ -3135,7 +3135,7 @@ C → c
 | **Quadruple** | (op, arg1, arg2, result) | (+, a, b, t1) | Easy to rearrange, temp names explicit |
 | **Triple** | (op, arg1, arg2) where args are pointers | (+, a, b) | No temporaries, position = result |
 | **Indirect Triple** | pointer list → triples | List of pointers to triples | Code movement easy (update pointers) |
-| **SSA** | Quadruples with Ãâ€  functions | t1 = Ã†(t2, t3) | Enables better optimization |
+| **SSA** | Quadruples with φ functions | t1 = φ(t2, t3) | Enables better optimization |
 
 **TAC for common constructs:**
 | Construct | Three-Address Code |
@@ -3155,7 +3155,7 @@ C → c
 
 | Optimization | Scope | Always Legal? | Condition for Legality |
 |-------------|-------|---------------|----------------------|
-| Constant folding | Local | âœ… Yes | None —” pure compile-time evaluation |
+| Constant folding | Local | ✅ Yes | None —” pure compile-time evaluation |
 | Constant propagation | Local/Global | ✅ Yes | Variable must have a single constant value at use point |
 | Copy propagation | Local/Global | ✅ Yes | Copy must dominate the use |
 | Dead code elimination | Local/Global | ✅ Yes | Code must have no side effects and result unused |
@@ -3166,7 +3166,7 @@ C → c
 | Loop invariant code motion | Loop | ⚠️ Conditional | Must not introduce exception with 0-iteration loop |
 | Code hoisting | Global | ⚠️ Conditional | Expression must execute on ALL paths before hoist |
 | Function inlining | Inter-procedural | ⚠️ Conditional | Avoids infinite recursion, must preserve scoping |
-| Variable renaming | Global | âœ… Yes | Simple name change —” always safe |
+| Variable renaming | Global | ✅ Yes | Simple name change —” always safe |
 | Tail call elimination | Inter-procedural | ⚠️ Conditional | Only in tail position (no computation after call) |
 | Algebraic simplification | Local | ✅ Yes | `x+0 → x`, `x*1 → x`, `x*0 → 0`, `x-x → 0` |
 | Peephole (redundant load/store) | Local | ✅ Yes | `LOAD R1, a; STORE a, R1` → remove both |

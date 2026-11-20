@@ -1,13 +1,6 @@
 ---
-description: "A comprehensive collection of 220 hand-picked coding problems organized by topic, difficulty, and company — designed to prepare you for technical"
----
-
-﻿---
-id: index
-slug: /coding-problems
 title: "Coding Problems Bank"
-sidebar_label: "Coding Problems Bank"
-sidebar_position: 10
+description: "A comprehensive collection of 220 hand-picked coding problems organized by topic, difficulty, and company — designed to prepare you for technical"
 ---
 
 # Coding Problems Bank

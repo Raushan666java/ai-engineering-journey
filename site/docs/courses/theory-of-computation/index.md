@@ -1,13 +1,6 @@
 ---
-description: "The Theory of Computation is the branch of computer science that deals with what problems can be solved by computational means and how efficiently they"
----
-
-﻿---
-id: index
-slug: /theory-of-computation
 title: "Theory of Computation — Complete Course Textbook"
-sidebar_label: "Theory of Computation — Complete Course Textbook"
-sidebar_position: 17
+description: "The Theory of Computation is the branch of computer science that deals with what problems can be solved by computational means and how efficiently they"
 ---
 
 # Theory of Computation — Complete Course Textbook

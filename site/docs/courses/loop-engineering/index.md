@@ -1,13 +1,6 @@
 ---
-description: "AI agents are rapidly evolving from single-shot chatbots to autonomous systems that plan, act, observe, and loop. The loop is the fundamental abstraction"
----
-
-﻿---
-id: index
-slug: /loop-engineering
 title: "Loop Engineering — Build Production-Grade AI Agent Loops"
-sidebar_label: "Loop Engineering — Build Production-Grade AI Agent Loops"
-sidebar_position: 11
+description: "AI agents are rapidly evolving from single-shot chatbots to autonomous systems that plan, act, observe, and loop. The loop is the fundamental abstraction"
 ---
 
 # Loop Engineering — Build Production-Grade AI Agent Loops

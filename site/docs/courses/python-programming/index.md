@@ -1,13 +1,6 @@
 ---
-description: "slug: /python-programming title: 'Python Programming — A Comprehensive University Textbook' sidebar_label: 'Python Programming — A Comprehensive"
----
-
-﻿---
-id: index
-slug: /python-programming
 title: "Python Programming — A Comprehensive University Textbook"
-sidebar_label: "Python Programming — A Comprehensive University Textbook"
-sidebar_position: 22
+description: "This textbook provides a rigorous, systematic introduction to the Python programming language. It assumes no prior programming experience but progresses"
 ---
 
 # Python Programming — A Comprehensive University Textbook

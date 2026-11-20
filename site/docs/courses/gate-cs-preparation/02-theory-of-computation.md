@@ -312,12 +312,12 @@ Regular languages are closed under:
 | Union `L₁ ∪ L₂` | NFA with ε-branch from new start |
 | Concatenation `L₁L₂` | Chain ε-NFAs |
 | Kleene Star `L*` | Loop ε-NFA |
-| Intersection `LÃ¢â€šÂ Ã¢Ë†Â© LÃ¢â€šâ€š` | Product DFA `(QÃ¢â€šÂÃƒâ€”QÃ¢â€šâ€š, ÃŽÂ£, ÃŽÂ´((p,q),a) = (ÃŽÂ´Ã¢â€šÂ(p,a), ÃŽÂ´Ã¢â€šâ€š(q,a)), (qÃ¢â€šâ‚¬Ã¢â€šÂ,qÃ¢â€šâ‚¬Ã¢â€šâ€š), FÃ¢â€šÂ×F₂)` |
+| Intersection `L₁ ∩ L₂` | Product DFA `(Q₁×Q₂, Σ, δ((p,q),a) = (δ₁(p,a), δ₂(q,a)), (q₀₁,q₀₂), F₁×F₂)` |
 | Complement `L̅` | DFA: swap final/nonfinal states (DFA must be complete) |
 | Difference `L₁ − L₂` | L₁ ∩ L̅₂ |
 | Reversal `Lᴿ` | Reverse arrows, swap start/final |
 | Homomorphism `h(L)` | Replace each symbol per mapping |
-| Inverse Homomorphism `hÃ¢Â»Â¹(L)` | DFA simulates h |
+| Inverse Homomorphism `h⁻¹(L)` | DFA simulates h |
 
 **GATE Tip:** Regular languages are **not** closed under subset, superset, or infinite union/intersection.
 
@@ -326,7 +326,7 @@ Regular languages are closed under:
 > **Pumping Lemma:** If L is regular, then ∃ p > 0 (pumping length) such that ∀ w ∈ L with |w| ≥ p, w can be split as w = xyz where:
 > 1. |xy| ≤ p
 > 2. |y| ≥ 1
-> 3. xyÃ¢Â±z âˆˆ L for all i â‰¥ 0
+> 3. xyⁱz ∈ L for all i ≥ 0
 
 **Purpose:** Prove languages are **not** regular. You cannot prove regularity with the pumping lemma.
 
@@ -335,15 +335,15 @@ Regular languages are closed under:
 1. Assume L is regular. Let p be the pumping length.
 2. Choose w ∈ L with |w| ≥ p (cleverly → this is the key step).
 3. For all splits w = xyz with |xy| ≤ p and |y| ≥ 1:
-   - Find i Ã¢â€°Â¥ 0 where xyÃ¢Â±z âˆ‰ L.
+   - Find i ≥ 0 where xyⁱz ∉ L.
 4. Contradiction → L is not regular.
 
-#### Example: Prove `L = {0Ã¢ÂÂ¿1Ã¢Â¿ | n â‰¥ 0}` not regular
+#### Example: Prove `L = {0ⁿ1ⁿ | n ≥ 0}` not regular
 
 ```
 Assume L regular. Let p be pumping length.
 Choose w = 0ᵖ1ᵖ ∈ L. |w| = 2p ≥ p.
-Pumping lemma: w = xyz, |xy| Ã¢â€°Â¤ p, |y| Ã¢â€°Â¥ 1, xyÃ¢Â±z âˆˆ L âˆ€i.
+Pumping lemma: w = xyz, |xy| ≤ p, |y| ≥ 1, xyⁱz ∈ L ∀i.
 
 Since |xy| ≤ p, y consists only of 0s.
 Pump i = 2: xy²z = 0^(p+|y|)1ᵖ.
@@ -351,13 +351,13 @@ This has more 0s than 1s → not in L. Contradiction.
 Therefore L is not regular.
 ```
 
-#### Example: Prove `L = {aÃ¢ÂÂ¿bÃ¢Â¿ | n â‰¥ 0}` not regular using Myhill-Nerode
+#### Example: Prove `L = {aⁿbⁿ | n ≥ 0}` not regular using Myhill-Nerode
 
 ```
 Define equivalence: x ≡ y if for all z, xz ∈ L ⇔ yz ∈ L.
-Consider strings aÃ¢Â± and aÊ² for i â‰  j.
-For z = bÃ¢ÂÂ±: aÃ¢ÂÂ±bÃ¢ÂÂ± Ã¢Ë†Ë† L but aÃŠÂ²bÃ¢Â± âˆ‰ L.
-So aÃ¢Â± → aʲ. Infinitely many equivalence classes → L not regular.
+Consider strings aⁱ and aʲ for i ≠ j.
+For z = bⁱ: aⁱbⁱ ∈ L but aʲbⁱ ∉ L.
+So aⁱ → aʲ. Infinitely many equivalence classes → L not regular.
 ```
 
 ### 1.12 GATE Practice Problems → Finite Automata
@@ -377,10 +377,10 @@ Explanation: Four states for all parity combinations (odd/even for 0s and 1s).
 
 **Q2.** Which of the following languages is regular?
 
-- (A) `{0Ã¢ÂÂ¿1Ã¢Â¿ | n â‰¥ 0}`
-- (B) `{0Ã¡ÂµÂ1Ã¢Â¿ | m â‰  n}`
+- (A) `{0ⁿ1ⁿ | n ≥ 0}`
+- (B) `{0ᵐ1ⁿ | m ≠ n}`
 - (C) `{ww | w ∈ {0,1}*}`
-- (D) `{0Ã¢Â¿ | n is prime}`
+- (D) `{0ⁿ | n is prime}`
 
 **Answer: (B)**
 
@@ -518,7 +518,7 @@ Leftmost 2: E ⇒ E * E ⇒ E + E * E ⇒ id + E * E ⇒ id + id * E ⇒ id + id
 These produce different parse trees (addition vs multiplication at root), making the grammar ambiguous.
 ```
 
-**Inherent ambiguity:** A language is inherently ambiguous if EVERY grammar for it is ambiguous. Example: `{aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¡ÂµÂdÃ¡ÂµÂ | n,m Ã¢â€°Â¥ 0} Ã¢Ë†Âª {aÃ¢ÂÂ¿bÃ¡ÂµÂcÃ¡ÂµÂdÃ¢Â¿ | n,m â‰¥ 0}`.
+**Inherent ambiguity:** A language is inherently ambiguous if EVERY grammar for it is ambiguous. Example: `{aⁿbⁿcᵐdᵐ | n,m ≥ 0} ∪ {aⁿbᵐcᵐdⁿ | n,m ≥ 0}`.
 
 ### 2.4 Chomsky Normal Form (CNF)
 
@@ -587,7 +587,7 @@ A PDA is a 6-tuple `M = (Q, Σ, Γ, δ, q₀, Z₀, F)` where:
 1. **Accept by final state:** after reading all input, PDA is in a final state.
 2. **Accept by empty stack:** after reading all input, stack is empty. (For DPDA, these are not equivalent.)
 
-#### PDA for `{aÃ¢ÂÂ¿bÃ¢Â¿ | n â‰¥ 0}`
+#### PDA for `{aⁿbⁿ | n ≥ 0}`
 
 ```
 Q = {q₀, q₁, q₂}
@@ -616,7 +616,7 @@ Given CFG G, construct PDA P that accepts by empty stack:
 
 This is called **top-down parsing** (LL(1) style). The PDA simulates a leftmost derivation.
 
-#### Example: CFG to PDA for `{aÃ¢ÂÂ¿bÃ¢Â¿ | n â‰¥ 0}`
+#### Example: CFG to PDA for `{aⁿbⁿ | n ≥ 0}`
 
 ```
 Grammar: S → aSb | ε
@@ -650,21 +650,21 @@ Productions simulate stack operations. This is rarely tested in GATE but concept
 > **Pumping Lemma for CFLs:** If L is context-free, then ∃ p > 0 such that ∀ w ∈ L with |w| ≥ p, w can be split as w = uvxyz where:
 > 1. |vxy| ≤ p
 > 2. |vy| ≥ 1
-> 3. uvÃ¢ÂÂ±xyÃ¢Â±z âˆˆ L for all i â‰¥ 0
+> 3. uvⁱxyⁱz ∈ L for all i ≥ 0
 
 **Intuition:** In the parse tree, if a path from root to leaf has more than |V| internal nodes, some nonterminal repeats on that path. The substring generated between the two occurrences can be pumped.
 
-#### Example: Prove `{aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢Â¿ | n â‰¥ 0}` not context-free
+#### Example: Prove `{aⁿbⁿcⁿ | n ≥ 0}` not context-free
 
 ```
 Assume L is CFL. Let p be pumping length.
 Choose w = aᵖbᵖcᵖ ∈ L.
 
-Pumping lemma: w = uvxyz, |vxy| Ã¢â€°Â¤ p, |vy| Ã¢â€°Â¥ 1, uvÃ¢ÂÂ±xyÃ¢Â±z âˆˆ L.
+Pumping lemma: w = uvxyz, |vxy| ≤ p, |vy| ≥ 1, uvⁱxyⁱz ∈ L.
 
 Since |vxy| ≤ p, vxy can contain at most 2 distinct symbols.
 Case 1: vxy contains no c's → uv²xy²z has more a/b than c → not in L.
-Case 2: vxy contains no a's â†’ uvÃ¢ÂÂ°xyÃ¢Â°z has more c/b than a → not in L.
+Case 2: vxy contains no a's → uv⁰xy⁰z has more c/b than a → not in L.
 Case 3: vxy spans ab boundary but not c → similar imbalance.
 
 Contradiction → L is not context-free.
@@ -692,13 +692,13 @@ A language is DCFL if it has a deterministic PDA (DPDA) → at most one transiti
 - DCFL ⊂ CFL (proper subset)
 - DCFL is closed under complement
 - DCFL is NOT closed under union, intersection, or reversal
-- `L = {aÃ¢ÂÂ¿bÃ¢Â¿ | n â‰¥ 0}` is DCFL
+- `L = {aⁿbⁿ | n ≥ 0}` is DCFL
 - `L = {wwᴿ | w ∈ {a,b}*}` is CFL but not DCFL
 - `L = {aⁱbʲcᵏ | i = j or j = k}` is CFL but not DCFL
 
 ### 2.12 GATE Practice Problems → CFG & PDA
 
-**Q1.** Consider `L = {aÃ¡ÂµÂbÃ¢Â¿ | m â‰  n}`. Which is true?
+**Q1.** Consider `L = {aᵐbⁿ | m ≠ n}`. Which is true?
 
 - (A) Regular
 - (B) DCFL but not regular
@@ -707,7 +707,7 @@ A language is DCFL if it has a deterministic PDA (DPDA) → at most one transiti
 
 **Answer: (B)**
 
-Explanation: `L = {aÃ¡ÂµÂbÃ¢ÂÂ¿ | m > n} Ã¢Ë†Âª {aÃ¡ÂµÂbÃ¢Â¿ | m < n}`. Both are DCFL (push a's, pop b's, accept if leftover). Their union is actually DCFL: the DPDA can decide based on which count is exhausted first.
+Explanation: `L = {aᵐbⁿ | m > n} ∪ {aᵐbⁿ | m < n}`. Both are DCFL (push a's, pop b's, accept if leftover). Their union is actually DCFL: the DPDA can decide based on which count is exhausted first.
 
 ---
 
@@ -745,13 +745,13 @@ Explanation: Acceptance by final state does NOT require empty stack. Acceptance 
 **Q4.** Which language is inherently ambiguous?
 
 - (A) {aⁿbⁿcᵐdᵐ | n,m ≥ 0}
-- (B) {aÃ¢ÂÂ¿bÃ¢Â¿ | n â‰¥ 0}
-- (C) {aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢ÂÂ¿dÃ¢Â¿ | n â‰¥ 0}
-- (D) {aÃ¢ÂÂ¿bÃ¡ÂµÂcÃ¡ÂµÂdÃ¢Â¿ | n,m â‰¥ 0}
+- (B) {aⁿbⁿ | n ≥ 0}
+- (C) {aⁿbⁿcⁿdⁿ | n ≥ 0}
+- (D) {aⁿbᵐcᵐdⁿ | n,m ≥ 0}
 
 **Answer: (D)**
 
-Explanation: `{aÃ¢ÂÂ¿bÃ¡ÂµÂcÃ¡ÂµÂdÃ¢Â¿}` is inherently ambiguous. Any grammar for it requires two distinct derivation patterns (n-center or m-center), and there's no way to make all strings have a unique parse tree. Language (A) is unambiguous → grammar S → AB, A → aAb | ε, B → cBd | ε.
+Explanation: `{aⁿbᵐcᵐdⁿ}` is inherently ambiguous. Any grammar for it requires two distinct derivation patterns (n-center or m-center), and there's no way to make all strings have a unique parse tree. Language (A) is unambiguous → grammar S → AB, A → aAb | ε, B → cBd | ε.
 
 ---
 
@@ -792,7 +792,7 @@ Explanation: Push a's. For each b, pop two a's. If stack runs out early (too man
 
 **Answer: (B)**
 
-Explanation: Regular Ã¢Å â€š DCFL Ã¢Å â€š CFL. {aÃ¢ÂÂ¿bÃ¢Â¿} is DCFL but not regular. {wwá´¿} is CFL but not DCFL.
+Explanation: Regular ⊂ DCFL ⊂ CFL. {aⁿbⁿ} is DCFL but not regular. {wwᴿ} is CFL but not DCFL.
 
 ---
 
@@ -814,7 +814,7 @@ A TM is a 7-tuple `M = (Q, Σ, Γ, δ, q₀, B, F)` where:
 
 **Transition notation:** `δ(q, X) = (p, Y, L)` means in state q, reading X, write Y, move left, enter state p.
 
-### 3.2 TM for `{aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢Â¿ | n â‰¥ 1}`
+### 3.2 TM for `{aⁿbⁿcⁿ | n ≥ 1}`
 
 This language is context-sensitive (not context-free). A TM can recognize it:
 
@@ -1124,12 +1124,12 @@ This was the first problem proved NP-complete. All later proofs reduce SAT (or a
 
 #### SAT
 
-**Instance:** A Boolean formula Ã† in CNF (conjunctive normal form).
+**Instance:** A Boolean formula φ in CNF (conjunctive normal form).
 **Question:** Is there a satisfying assignment?
 
 #### 3-SAT
 
-**Instance:** A Boolean formula Ã† in CNF where each clause has exactly 3 literals.
+**Instance:** A Boolean formula φ in CNF where each clause has exactly 3 literals.
 **Question:** Is there a satisfying assignment?
 
 3-SAT is NP-complete (reduction from SAT: split longer clauses, pad shorter ones).
@@ -1210,7 +1210,7 @@ A problem is **PSPACE-complete** if:
 
 **Examples:**
 - **TQBF** (True Quantified Boolean Formulas): Given a fully quantified Boolean formula, is it true? The canonical PSPACE-complete problem.
-- **QBF-SAT:** Given Ã¢Ë†Æ’xÃ¢â€šÂÃ¢Ë†â‚¬xÃ¢â€šâ€šÃ¢Ë†Æ’xÃ¢â€šÆ’...Ã†, is the formula true?
+- **QBF-SAT:** Given ∃x₁∀x₂∃x₃...φ, is the formula true?
 - **Generalized Geography:** A two-player game on a directed graph.
 - **REACH in LxL matrix** (regular expression equivalence with shuffle)
 
@@ -1351,7 +1351,7 @@ Explanation: The time hierarchy theorem states that more time allows more proble
 | Concept | Key Fact |
 |---------|----------|
 | DFA minimization | Table-filling method, Myhill-Nerode |
-| NFA â†’ DFA | Worst-case 2Ã¢Â¿ states |
+| NFA → DFA | Worst-case 2ⁿ states |
 | Regular languages | Closed under ∪, ∩, complement, *, concat |
 | CFL pumping lemma | 2 pumping constraints (v and y) |
 | PDA acceptance | Final state OR empty stack (equivalent for NDPDA) |
@@ -1474,10 +1474,10 @@ Final states: C and D (contain q₂). Minimization: all 4 states are distinct. A
 
 **Q5. GATE 2023 (1 Mark)** → Which of the following languages is regular?
 
-(A) {0Ã¢ÂÂ¿1Ã¢Â¿ | n â‰¥ 0}
+(A) {0ⁿ1ⁿ | n ≥ 0}
 (B) {0ⁿ1ᵐ | n,m ≥ 0 and n ≠ m}
 (C) {0ⁿ1ᵐ2ᵖ | n=m or m=p}
-(D) {0Ã¢ÂÂ¿1Ã¢ÂÂ¿2Ã¢Â¿ | n â‰¥ 0}
+(D) {0ⁿ1ⁿ2ⁿ | n ≥ 0}
 
 **Answer: (B)**
 
@@ -1514,7 +1514,7 @@ L = {w | #0 = #1} is not regular (proved by pumping lemma with w = 0ᵖ1ᵖ). Th
 
 ---
 
-**Q8. GATE 2022 (2 Marks)** â†’ Let LÃ¢â€šÂ = {aÃ¢ÂÂ¿bÃ¡ÂµÂ | n Ã¢â€°Â¥ 0, m Ã¢â€°Â¥ 0} and LÃ¢â€šâ€š = {aÃ¢ÂÂ¿bÃ¢Â¿ | n â‰¥ 0}. Which is true?
+**Q8. GATE 2022 (2 Marks)** → Let L₁ = {aⁿbᵐ | n ≥ 0, m ≥ 0} and L₂ = {aⁿbⁿ | n ≥ 0}. Which is true?
 
 (A) L₁ is regular, L₂ is regular
 (B) L₁ is regular, L₂ is not regular
@@ -1524,7 +1524,7 @@ L = {w | #0 = #1} is not regular (proved by pumping lemma with w = 0ᵖ1ᵖ). Th
 **Answer: (B)**
 
 **Solution:**
-LÃ¢â€šÂ = a*b* â†’ this is a regular language (all strings of a's followed by b's). LÃ¢â€šâ€š = {aÃ¢ÂÂ¿bÃ¢Â¿ | n â‰¥ 0} → requires counting a's to match with b's, which is the classic non-regular language (proved by pumping lemma).
+L₁ = a*b* → this is a regular language (all strings of a's followed by b's). L₂ = {aⁿbⁿ | n ≥ 0} → requires counting a's to match with b's, which is the classic non-regular language (proved by pumping lemma).
 
 ---
 
@@ -1593,7 +1593,7 @@ L₁ ∩ L₂ = {aⁿbⁿ | n ≥ 0} because L₁ contains all strings of a's fo
 
 **Q13. GATE 2025 (1 Mark)** → Consider the CFG: S → aSb | aS | ε. The language generated is:
 
-(A) {aÃ¢ÂÂ¿bÃ¢Â¿ | n â‰¥ 0}
+(A) {aⁿbⁿ | n ≥ 0}
 (B) {aⁿbᵐ | n ≥ m}
 (C) {aⁿbᵐ | n ≥ m ≥ 0}
 (D) {aⁿbᵐ | n > m}
@@ -1669,19 +1669,19 @@ In CNF, every production is A → BC (2 nonterminals) or A → a (1 terminal). T
 δ(q₁,ε,Z₀) = {(q₀,ε)}
 The language accepted by empty stack is:
 
-(A) {0Ã¢ÂÂ¿1Ã¢Â¿ | n â‰¥ 0}
+(A) {0ⁿ1ⁿ | n ≥ 0}
 (B) {0ⁿ1ᵐ | n ≥ m}
-(C) {0Ã¢ÂÂ¿1Ã¢Â¿ | n â‰¥ 1}
+(C) {0ⁿ1ⁿ | n ≥ 1}
 (D) {0ⁿ1ᵐ | n,m ≥ 0}
 
-**Answer: (C) {0Ã¢ÂÂ¿1Ã¢Â¿ | n â‰¥ 1}**
+**Answer: (C) {0ⁿ1ⁿ | n ≥ 1}**
 
 **Solution:**
-For each 0, push A onto stack. For each 1 (in qÃ¢â€šÂ), pop one A. When stack returns to ZÃ¢â€šâ‚¬ alone, transition back to qÃ¢â€šâ‚¬ with ÃŽÂµ. Accept when stack empty. The PDA accepts strings where the number of 1s equals the number of 0s and all 0s come first. Since at least one A must be pushed to reach qÃ¢â€šÂ, n Ã¢â€°Â¥ 1. So L = {0Ã¢ÂÂ¿1Ã¢Â¿ | n â‰¥ 1}.
+For each 0, push A onto stack. For each 1 (in q₁), pop one A. When stack returns to Z₀ alone, transition back to q₀ with ε. Accept when stack empty. The PDA accepts strings where the number of 1s equals the number of 0s and all 0s come first. Since at least one A must be pushed to reach q₁, n ≥ 1. So L = {0ⁿ1ⁿ | n ≥ 1}.
 
 ---
 
-**Q19. GATE 2022 (1 Mark)** â†’ The language {aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢Â¿ | n â‰¥ 0} is NOT context-free because:
+**Q19. GATE 2022 (1 Mark)** → The language {aⁿbⁿcⁿ | n ≥ 0} is NOT context-free because:
 
 (A) It violates the pumping lemma for CFLs
 (B) It has crossing dependencies
@@ -1691,7 +1691,7 @@ For each 0, push A onto stack. For each 1 (in qÃ¢â€šÂ), pop one A. When
 **Answer: (D)**
 
 **Solution:**
-All three reasons apply: (A) The pumping lemma for CFLs can be used to prove it is not a CFL (choose w = aÃ¡Âµâ€“bÃ¡Âµâ€“cÃ¡Âµâ€“, no matter how vxy is chosen, pumping creates imbalance). (B) The dependencies are aÃ¢ÂÂ±â†’cÃ¢ÂÂ± (crossing over bÃ¢Â±) which creates a non-context-free pattern → CFLs handle nesting well but not crossing. (C) A PDA with one stack can match two symbols (push a's, pop with b's) but cannot match three simultaneously → this requires either two stacks (TM) or more memory.
+All three reasons apply: (A) The pumping lemma for CFLs can be used to prove it is not a CFL (choose w = aᵖbᵖcᵖ, no matter how vxy is chosen, pumping creates imbalance). (B) The dependencies are aⁱ→cⁱ (crossing over bⁱ) which creates a non-context-free pattern → CFLs handle nesting well but not crossing. (C) A PDA with one stack can match two symbols (push a's, pop with b's) but cannot match three simultaneously → this requires either two stacks (TM) or more memory.
 
 ---
 
@@ -1741,7 +1741,7 @@ For a given parse tree, both leftmost and rightmost derivations exist. However, 
 
 ---
 
-**Q23. GATE 2020 (1 Mark)** â†’ The language L = {aÃ¢ÂÂ¿bÃ¢ÂÂ¿aÃ¢ÂÂ¿bÃ¢Â¿ | n â‰¥ 0} is:
+**Q23. GATE 2020 (1 Mark)** → The language L = {aⁿbⁿaⁿbⁿ | n ≥ 0} is:
 
 (A) Regular
 (B) Context-free
@@ -1751,7 +1751,7 @@ For a given parse tree, both leftmost and rightmost derivations exist. However, 
 **Answer: (C)**
 
 **Solution:**
-L = {aÃ¢ÂÂ¿bÃ¢ÂÂ¿aÃ¢ÂÂ¿bÃ¢Â¿} is not context-free (proved by pumping lemma with w = aáµ–báµ–aáµ–báµ– → the pumped substring cannot span both halves). It is context-sensitive: an LBA can track four counters on its tape and verify all match. Since context-sensitive languages are a subset of recursive languages, C is the tightest classification.
+L = {aⁿbⁿaⁿbⁿ} is not context-free (proved by pumping lemma with w = aᵖbᵖaᵖbᵖ → the pumped substring cannot span both halves). It is context-sensitive: an LBA can track four counters on its tape and verify all match. Since context-sensitive languages are a subset of recursive languages, C is the tightest classification.
 
 ---
 
@@ -1765,7 +1765,7 @@ L = {aÃ¢ÂÂ¿bÃ¢ÂÂ¿aÃ¢ÂÂ¿bÃ¢Â¿} is not context-free (pr
 **Answer: (A)**
 
 **Solution:**
-L = all strings of a's followed by b's where the counts are NOT equal. This is {aÃ¢ÂÂ¿bÃ¡ÂµÂ | n Ã¢â€°Â  m}. This language is regular! A DFA can track three states: (1) n = m so far, (2) n > m so far, (3) n &lt; m. Once in state 2 or 3, the DFA stays there (accepting). This is a bounded difference â†’ the DFA only needs a few states, no counting up to arbitrary n. Compare with {aÃ¢ÂÂ¿bÃ¢Â¿} which is not regular → that requires exact equality. Inequality is easier because you can stop tracking after a deviation.
+L = all strings of a's followed by b's where the counts are NOT equal. This is {aⁿbᵐ | n ≠ m}. This language is regular! A DFA can track three states: (1) n = m so far, (2) n > m so far, (3) n &lt; m. Once in state 2 or 3, the DFA stays there (accepting). This is a bounded difference → the DFA only needs a few states, no counting up to arbitrary n. Compare with {aⁿbⁿ} which is not regular → that requires exact equality. Inequality is easier because you can stop tracking after a deviation.
 
 ---
 
@@ -2229,7 +2229,7 @@ If L₁ ≤ₚ L₂, this tells us L₂ is at least as hard as L₁. L₁ ∈ P 
 |----------|-----------|------------|
 | **Sipser → Chapter 1 Exercises** | Regular languages, pumping lemma | Solve all 50+ exercises; categorize by technique |
 | **Hopcroft → Chapter 4 Problems** | DFA minimization, Myhill-Nerode | Master table-filling and Myhill-Nerode equivalence classes |
-| **Kozen â†’ Chapter 12Ã¢â‚¬â€œ20 Problems** | CFL pumping lemma, closure proofs | Focus on the classic non-CFL examples (aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢Â¿, ww, equal counts) |
+| **Kozen → Chapter 12–20 Problems** | CFL pumping lemma, closure proofs | Focus on the classic non-CFL examples (aⁿbⁿcⁿ, ww, equal counts) |
 | **Sipser → Chapter 5 Problems** | Undecidability reductions | Practice 20+ reduction proofs from known undecidable problems |
 | **Sipser → Chapter 7 Problems** | NP-completeness reductions | Practice 15+ reduction proofs (3-SAT → VC → HamCycle → SubsetSum) |
 | **Gate Overflow / GATE Overflow Book** | All GATE TOC questions | Topic-wise browsing with community solutions; filter by year and difficulty |
@@ -2280,13 +2280,13 @@ The DFA is already minimal. States A, B, C, D are all distinguishable:
 
 (A) n  
 (B) 2n  
-(C) 2Ã¢Â¿  
+(C) 2ⁿ  
 (D) n!
 
-**Answer: (C) 2Ã¢Â¿**
+**Answer: (C) 2ⁿ**
 
 **Solution:**
-The subset construction maps each subset of NFA states to a DFA state. Since there are n NFA states, there are 2Ã¢ÂÂ¿ possible subsets (including the empty set). In the worst case (e.g., an NFA for the language where the nth-last symbol is 1), all subsets are reachable and distinguishable, giving 2Ã¢Â¿ DFA states.
+The subset construction maps each subset of NFA states to a DFA state. Since there are n NFA states, there are 2ⁿ possible subsets (including the empty set). In the worst case (e.g., an NFA for the language where the nth-last symbol is 1), all subsets are reachable and distinguishable, giving 2ⁿ DFA states.
 
 ---
 
@@ -2426,15 +2426,15 @@ Regular languages are closed under complement (swap final and non-final states i
 
 **Q62. GATE 2014 Set 3 (2 Marks)** → Let M be a DFA with k states over an alphabet of size 2. Which of the following is the maximum possible number of strings of length n accepted by M?
 
-(A) 2Ã¢Â¿  
-(B) k Ãƒâ€” 2Ã¢Â¿  
-(C) 2Ã¢Â¿ â€“ k  
-(D) 2Ã¢Â¿ if n &lt; k, otherwise 0
+(A) 2ⁿ  
+(B) k × 2ⁿ  
+(C) 2ⁿ – k  
+(D) 2ⁿ if n &lt; k, otherwise 0
 
-**Answer: (A) 2Ã¢Â¿**
+**Answer: (A) 2ⁿ**
 
 **Solution:**
-The maximum number of strings of length n accepted by ANY DFA with any number of states is bounded by the total number of strings of length n, which is 2Ã¢ÂÂ¿. A DFA with k states can accept all 2Ã¢Â¿ strings of length n (e.g., the DFA accepting Î£*). The number of states does not inherently limit the count of accepted strings of a fixed length.
+The maximum number of strings of length n accepted by ANY DFA with any number of states is bounded by the total number of strings of length n, which is 2ⁿ. A DFA with k states can accept all 2ⁿ strings of length n (e.g., the DFA accepting Σ*). The number of states does not inherently limit the count of accepted strings of a fixed length.
 
 ---
 
@@ -2452,7 +2452,7 @@ The maximum number of strings of length n accepted by ANY DFA with any number of
 **Answer: (B)**
 
 **Solution:**
-S â†’ aS generates strings starting with a followed by any string (recursively). S â†’ bS generates strings starting with b. S â†’ a and S â†’ b are base cases generating strings of length 1. Together, S can derive any non-empty string: for any w Ã¢Ë†Ë† {a,b}+, derive the first symbol via S â†’ symbolÃ‚Â·S, and the last symbol via the base case. The empty string ÃŽÂµ is not generated (no ÃŽÂµ-production). So L = ÃŽÂ£Ã¢Âº → all non-empty strings over {a,b}.
+S → aS generates strings starting with a followed by any string (recursively). S → bS generates strings starting with b. S → a and S → b are base cases generating strings of length 1. Together, S can derive any non-empty string: for any w ∈ {a,b}+, derive the first symbol via S → symbol·S, and the last symbol via the base case. The empty string ε is not generated (no ε-production). So L = Σ⁺ → all non-empty strings over {a,b}.
 
 ---
 
@@ -2466,7 +2466,7 @@ S â†’ aS generates strings starting with a followed by any string (recursiv
 **Answer: (A)**
 
 **Solution:**
-L = {aÃ¢ÂÂ¿bÃ¡ÂµÂ | n Ã¢â€°Â  m} = {aÃ¢ÂÂ¿bÃ¡ÂµÂ | n > m} Ã¢Ë†Âª {aÃ¢ÂÂ¿bÃ¡ÂµÂ | n &lt; m}. This is the complement of {aÃ¢ÂÂ¿bÃ¢ÂÂ¿} within a*b*. DCFLs are closed under complement (swap final/non-final states in a complete DPDA). Since {aÃ¢ÂÂ¿bÃ¢Â¿} is DCFL, its complement within a*b* is also DCFL. Alternatively, construct a DPDA: push a's, pop on b's; at end, accept if stack is non-empty (more a's) or if b's remain after stack empties (more b's). Both conditions are deterministic to check.
+L = {aⁿbᵐ | n ≠ m} = {aⁿbᵐ | n > m} ∪ {aⁿbᵐ | n &lt; m}. This is the complement of {aⁿbⁿ} within a*b*. DCFLs are closed under complement (swap final/non-final states in a complete DPDA). Since {aⁿbⁿ} is DCFL, its complement within a*b* is also DCFL. Alternatively, construct a DPDA: push a's, pop on b's; at end, accept if stack is non-empty (more a's) or if b's remain after stack empties (more b's). Both conditions are deterministic to check.
 
 ---
 
@@ -2507,7 +2507,7 @@ Thus L does not satisfy the pumping lemma and is not context-free. L is context-
 
 (A) {aⁿbⁿcᵐ | n, m ≥ 0}  
 (B) {aⁿbᵐcᵐ | n, m ≥ 0}  
-(C) {aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢Â¿ | n â‰¥ 0}  
+(C) {aⁿbⁿcⁿ | n ≥ 0}  
 (D) Both (A) and (B)
 
 **Answer: (D)**
@@ -2515,7 +2515,7 @@ Thus L does not satisfy the pumping lemma and is not context-free. L is context-
 **Solution:**
 (A) L₁ = {aⁿbⁿcᵐ}: push a's, pop on b's (matching a and b counts), then read c's (no stack needed). This is DCFL.
 (B) L₂ = {aⁿbᵐcᵐ}: read a's (no stack), then push b's and pop on c's (matching b and c counts). This is DCFL.
-(C) LÃ¢â€šÆ’ = {aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢Â¿}: requires matching three segments simultaneously → impossible for a PDA with a single stack. Not context-free.
+(C) L₃ = {aⁿbⁿcⁿ}: requires matching three segments simultaneously → impossible for a PDA with a single stack. Not context-free.
 
 ---
 
@@ -2536,14 +2536,14 @@ This is the standard unambiguous grammar for arithmetic expressions with + and �
 **Q69. GATE 2012 (2 Marks)** → Let PDA M have states {q₀,q₁}, Σ = {a,b}, Γ = {Z₀,A}, δ(q₀,a,Z₀) = (q₀,AZ₀), δ(q₀,b,A) = (q₁,ε), δ(q₁,b,A) = (q₁,ε), δ(q₁,ε,Z₀) = (q₁,ε). The language accepted by M (by empty stack) is:
 
 (A) {aⁿbᵐ | n ≥ 1, m ≥ 1}  
-(B) {aÃ¢ÂÂ¿bÃ¢Â¿ | n â‰¥ 1}  
+(B) {aⁿbⁿ | n ≥ 1}  
 (C) {aⁿbᵐ | n ≥ m ≥ 1}  
 (D) {aⁿbᵐ | n ≤ m ≤ 2n}
 
 **Answer: (B)**
 
 **Solution:**
-The PDA pushes one A per a read (staying in qÃ¢â€šâ‚¬). On b with A on top, it pops one A per b (in qÃ¢â€šÂ). After all b's are consumed, ÃŽÂµ,ZÃ¢â€šâ‚¬ pops the bottom marker to empty the stack (accept). Each a adds one A, each b removes one A, so the number of a's must equal the number of b's. Once a b is read, the PDA moves to qÃ¢â€šÂ and cannot process more a's. Therefore L = {aÃ¢ÂÂ¿bÃ¢Â¿ | n â‰¥ 1}.
+The PDA pushes one A per a read (staying in q₀). On b with A on top, it pops one A per b (in q₁). After all b's are consumed, ε,Z₀ pops the bottom marker to empty the stack (accept). Each a adds one A, each b removes one A, so the number of a's must equal the number of b's. Once a b is read, the PDA moves to q₁ and cannot process more a's. Therefore L = {aⁿbⁿ | n ≥ 1}.
 
 ---
 
@@ -2557,7 +2557,7 @@ The PDA pushes one A per a read (staying in qÃ¢â€šâ‚¬). On b with A on
 **Answer: (C)**
 
 **Solution:**
-CFLs are closed under union, concatenation, Kleene star, substitution, homomorphism, and reversal. They are NOT closed under intersection (counterexample: {aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¡ÂµÂ} Ã¢Ë†Â© {aÃ¢ÂÂ¿bÃ¡ÂµÂcÃ¡ÂµÂ} = {aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢Â¿} which is not CFL), complement (if closed under complement, then by De Morgan's law they'd be closed under intersection), or difference.
+CFLs are closed under union, concatenation, Kleene star, substitution, homomorphism, and reversal. They are NOT closed under intersection (counterexample: {aⁿbⁿcᵐ} ∩ {aⁿbᵐcᵐ} = {aⁿbⁿcⁿ} which is not CFL), complement (if closed under complement, then by De Morgan's law they'd be closed under intersection), or difference.
 
 ---
 
@@ -2589,7 +2589,7 @@ The grammar generates strings where all a's precede all b's. S → aS adds a's a
 **Answer: (D)**
 
 **Solution:**
-LÃ¢â€šÂ Ã¢Ë†Â© LÃ¢â€šâ€š = {aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢ÂÂ¿ | n Ã¢â€°Â¥ 0}. LÃ¢â€šÂ forces #a = #b, LÃ¢â€šâ€š forces #b = #c. The intersection forces all three to be equal. {aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢Â¿} is the classic example of a context-sensitive language that is not context-free (requires two stacks or a linear bounded automaton). A single-stack PDA cannot match three counters.
+L₁ ∩ L₂ = {aⁿbⁿcⁿ | n ≥ 0}. L₁ forces #a = #b, L₂ forces #b = #c. The intersection forces all three to be equal. {aⁿbⁿcⁿ} is the classic example of a context-sensitive language that is not context-free (requires two stacks or a linear bounded automaton). A single-stack PDA cannot match three counters.
 
 ---
 
@@ -2889,7 +2889,7 @@ To prove B is undecidable, reduce A (known undecidable) to B (A ≤ₘ B). If B 
 **Answer: (D)**
 
 **Solution:**
-"L(M) is regular" is a non-trivial property of the language of a TM. By Rice's theorem, it is undecidable. Furthermore, it is neither RE nor co-RE. Why? Regularity is a ÃŽÂ£Ã¢â€šâ€šÃ¢Â°-complete property in the arithmetical hierarchy → we can never confirm that a TM accepts exactly a regular language (would need to rule out all non-regular strings). It is strictly harder than the halting problem.
+"L(M) is regular" is a non-trivial property of the language of a TM. By Rice's theorem, it is undecidable. Furthermore, it is neither RE nor co-RE. Why? Regularity is a Σ₂⁰-complete property in the arithmetical hierarchy → we can never confirm that a TM accepts exactly a regular language (would need to rule out all non-regular strings). It is strictly harder than the halting problem.
 
 ---
 
@@ -3019,7 +3019,7 @@ Key distinction:
 - **NCFL**: accepted by a non-deterministic PDA but NOT by any DPDA
 - Test: Can you accept with a single stack making deterministic decisions? If you need to "guess" (e.g., midpoint of wwᴿ), it's NCFL.
 
-Examples: {aÃ¢ÂÂ¿bÃ¢ÂÂ¿} â†’ DCFL, {wwÃ¡Â´Â¿} â†’ NCFL (need to guess midpoint), {aÃ¢ÂÂ¿bÃ¡ÂµÂ | n Ã¢â€°Â  m} â†’ DCFL (complement of DCFL within a*b*), {aÃ¢ÂÂ¿bÃ¢ÂÂ¿ Ã¢Ë†Âª aÃ‚Â²Ã¢ÂÂ¿bÃ¢Â¿} → NCFL.
+Examples: {aⁿbⁿ} → DCFL, {wwᴿ} → NCFL (need to guess midpoint), {aⁿbᵐ | n ≠ m} → DCFL (complement of DCFL within a*b*), {aⁿbⁿ ∪ a²ⁿbⁿ} → NCFL.
 
 **Trap 2: Applying Pumping Lemma Incorrectly**
 The pumping lemma is a **necessary** condition, not sufficient. If L fails pumping lemma → L is NOT regular/CFL. If L passes → L MIGHT still be non-regular/non-CFL.
@@ -3046,7 +3046,7 @@ Applies ONLY to properties of the LANGUAGE of a TM, NOT the TM itself.
 | "L(M) is finite" | "M uses at most 100 tape cells" |
 
 **Trap 5: Regular ∩ CFL = CFL**
-Intersection of a regular language and a CFL is ALWAYS a CFL. But intersection of two CFLs may NOT be a CFL. Example: {aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¡ÂµÂ} Ã¢Ë†Â© {aÃ¢ÂÂ¿bÃ¡ÂµÂcÃ¡ÂµÂ} = {aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢Â¿} → not CFL.
+Intersection of a regular language and a CFL is ALWAYS a CFL. But intersection of two CFLs may NOT be a CFL. Example: {aⁿbⁿcᵐ} ∩ {aⁿbᵐcᵐ} = {aⁿbⁿcⁿ} → not CFL.
 
 **Trap 6: Complement of RE Languages**
 If L is RE, L^c may or may not be RE.
@@ -3085,7 +3085,7 @@ Not all NP problems are NP-complete. If P ≠ NP, problems in P are in NP but no
 - {wwᴿ} → IS context-free (push w, pop wᴿ), but NCFL (need non-determinism for midpoint)
 
 **Trap 14: Infinite Union of Regular Languages**
-An infinite union of regular languages is NOT necessarily regular. Example: {aÃ¢ÂÂ¿bÃ¢ÂÂ¿} = Ã¢Ë†Âª_{kÃ¢â€°Â¥0} {aÃ¡ÂµÂbÃ¡ÂµÂ}. Each {aÃ¡ÂµÂbÃ¡ÂµÂ} is finite (regular), but the infinite union is the non-regular {aÃ¢ÂÂ¿bÃ¢Â¿}. Regular languages are only closed under FINITE union.
+An infinite union of regular languages is NOT necessarily regular. Example: {aⁿbⁿ} = ∪_{k≥0} {aᵏbᵏ}. Each {aᵏbᵏ} is finite (regular), but the infinite union is the non-regular {aⁿbⁿ}. Regular languages are only closed under FINITE union.
 
 **Trap 15: Homomorphic Images of CFLs**
 CFLs are closed under homomorphism (including erasing homomorphisms). This means removing symbols via homomorphism preserves context-freeness. Regular languages are also closed under both homomorphism and inverse homomorphism.
@@ -3168,7 +3168,7 @@ Given ⟨M,w⟩, construct M': simulate M on w; if M accepts, halt; if M rejects
 Given ⟨M,w⟩, construct M': on any input x, simulate M on w. If M halts, accept x. Then L(M') = Σ* (if M halts on w) or L(M') = ∅ (if M loops). So ⟨M,w⟩ ∉ HALT_TM ⟺ ⟨M'⟩ ∈ EMPTY_TM. This proves EMPTY_TM is undecidable.
 
 **3. A_TM ≤ₘ REGULAR_TM**
-Given Ã¢Å¸Â¨M,wÃ¢Å¸Â©, construct M': on input x, if x Ã¢Ë†Ë† {0Ã¢ÂÂ¿1Ã¢ÂÂ¿} accept; otherwise simulate M on w and accept if M accepts w. Then L(M') = ÃŽÂ£* (regular) if M accepts w, else L(M') = {0Ã¢ÂÂ¿1Ã¢Â¿} (non-regular). So âŸ¨M,wâŸ© âˆˆ A_TM âŸº âŸ¨M'âŸ© âˆˆ REGULAR_TM.
+Given ⟨M,w⟩, construct M': on input x, if x ∈ {0ⁿ1ⁿ} accept; otherwise simulate M on w and accept if M accepts w. Then L(M') = Σ* (regular) if M accepts w, else L(M') = {0ⁿ1ⁿ} (non-regular). So ⟨M,w⟩ ∈ A_TM ⟺ ⟨M'⟩ ∈ REGULAR_TM.
 
 **4. PCP ≤ₘ CFG Ambiguity**
 Given PCP instance (A,B) over Σ, construct CFG with productions generating all possible concatenations from both sequences. The CFG is ambiguous iff the PCP instance has a solution, proving CFG ambiguity undecidable.
@@ -3186,7 +3186,7 @@ Given PCP instance (A,B) over Σ, construct CFG with productions generating all 
 
 2. **Identify DCFL quickly:**
    - Can you process left-to-right with deterministic stack decisions?
-   - {aÃ¢ÂÂ¿bÃ¢Â¿} → DCFL (push a, pop b)
+   - {aⁿbⁿ} → DCFL (push a, pop b)
    - {wwᴿ} → NCFL (need to guess midpoint)
    - {aⁿbᵐcᵖ | n = m} → DCFL; {aⁿbᵐcᵖ | m = p} → DCFL
    - {aⁿbᵐcᵖ | n = m or m = p} → NCFL (guess which condition)
@@ -3221,7 +3221,7 @@ Given PCP instance (A,B) over Σ, construct CFG with productions generating all 
    NSPACE(f(n)) ⊆ DSPACE(f(n)²). Corollary: PSPACE = NPSPACE. Non-deterministic space is at most quadratically more efficient than deterministic space.
 
 9. **Regular Expression Counting:**
-   For r = (0|1)*0(0|1)Ã¡ÂµÂ, strings of length n: count = 2^(n-k-1) · 1 · 2^k = 2^(n-1). The fixed symbol at position (n-k) from the end.
+   For r = (0|1)*0(0|1)ᵏ, strings of length n: count = 2^(n-k-1) · 1 · 2^k = 2^(n-1). The fixed symbol at position (n-k) from the end.
 
 10. **Pumping Lemma String Selection:**
      - For {aⁿbⁿ}: choose s = aᵖbᵖ

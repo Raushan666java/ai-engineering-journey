@@ -454,14 +454,14 @@ Sum of last 6 = 6 × 53 = 318
 **Q33: How many 3-digit numbers can be formed from digits 1, 2, 3, 4, 5 without repetition?**
 
 **Solution:**
-Number of ways = Ã¢ÂµPâ‚ƒ = 5! / (5-3)! = 5 Ã— 4 Ã— 3 = 60
+Number of ways = ⁵P₃ = 5! / (5-3)! = 5 × 4 × 3 = 60
 
 ---
 
 **Q34: In how many ways can a committee of 3 be chosen from 7 people?**
 
 **Solution:**
-Number of ways = Ã¢Â·Câ‚ƒ = 7! / (3! Ã— 4!) = (7 Ã— 6 Ã— 5) / (3 Ã— 2 Ã— 1) = 35
+Number of ways = ⁷C₃ = 7! / (3! × 4!) = (7 × 6 × 5) / (3 × 2 × 1) = 35
 
 ---
 
@@ -479,7 +479,7 @@ Number of distinct words = 6! / (3! × 2!) = 720 / (6 × 2) = 60
 **Solution:**
 First arrange the 4 boys: 4! = 24 ways
 This creates 5 gaps (before, between, after boys)
-Choose 3 gaps for girls: Ã¢ÂµCâ‚ƒ = 10
+Choose 3 gaps for girls: ⁵C₃ = 10
 Arrange girls in those gaps: 3! = 6
 Total = 24 × 10 × 6 = 1440 ways
 
@@ -491,8 +491,8 @@ Total = 24 × 10 × 6 = 1440 ways
 
 **Solution:**
 Total balls = 8
-Ways to choose 2 balls: Ã¢Â¸Câ‚‚ = 28
-Ways to choose 2 red balls: Ã¢ÂµCâ‚‚ = 10
+Ways to choose 2 balls: ⁸C₂ = 28
+Ways to choose 2 red balls: ⁵C₂ = 10
 Probability = 10/28 = 5/14
 
 ---
@@ -510,9 +510,9 @@ Probability = 6/36 = 1/6
 
 **Solution:**
 P(X ≥ 3) = P(3) + P(4) + P(5)
-P(3) = Ã¢ÂÂµCÃ¢â€šÆ’ Ãƒâ€” (1/2)Ã¢Âµ = 10/32
-P(4) = Ã¢ÂÂµCÃ¢â€šâ€ž Ãƒâ€” (1/2)Ã¢Âµ = 5/32
-P(5) = Ã¢ÂÂµCÃ¢â€šâ€¦ Ãƒâ€” (1/2)Ã¢Âµ = 1/32
+P(3) = ⁵C₃ × (1/2)⁵ = 10/32
+P(4) = ⁵C₄ × (1/2)⁵ = 5/32
+P(5) = ⁵C₅ × (1/2)⁵ = 1/32
 Total = 16/32 = 1/2
 
 ---
@@ -1566,7 +1566,7 @@ The mirror image would read as: 𝞔TΛ⅃ (the actual reversed visual represent
 
 For exam purposes: The letters that look the same in a vertical mirror (left-right inversion) are: A, H, I, M, O, T, U, V, W, X, Y. Others are reversed.
 
-So GATE → ðž”TΛ⅃ (reading right to left from original).
+So GATE → 𝞔TΛ⅃ (reading right to left from original).
 
 ---
 
@@ -1707,8 +1707,8 @@ Or: n(n+1): 1×2, 2×3, 3×4, 4×5, 5×6, 6×7 = 42
 | Average speed (round trip) | `2ab / (a + b)` |
 | Work formula | `Work = Rate × Time` |
 | LCM × HCF | `a × b = LCM(a,b) × HCF(a,b)` |
-| Combinations | `Ã¢Â¿Cáµ£ = n! / (r! Ã— (n-r)!)` |
-| Permutations | `Ã¢Â¿Páµ£ = n! / (n-r)!` |
+| Combinations | `ⁿCᵣ = n! / (r! × (n-r)!)` |
+| Permutations | `ⁿPᵣ = n! / (n-r)!` |
 | Probability | `P(E) = Favorable / Total` |
 
 ### Logical Reasoning
@@ -1776,9 +1776,9 @@ A bag contains 4 red, 5 green, and 6 blue balls. Three balls are drawn at random
 
 Total balls = 4 + 5 + 6 = 15
 
-Total ways to pick 3 balls = Ã‚Â¹Ã¢ÂµCâ‚ƒ = (15Ã—14Ã—13)/(3Ã—2Ã—1) = 455
+Total ways to pick 3 balls = ¹⁵C₃ = (15×14×13)/(3×2×1) = 455
 
-Favorable ways = Ã¢ÂÂ´CÃ¢â€šÂ Ãƒâ€” Ã¢ÂÂµCÃ¢â€šÂ Ãƒâ€” Ã¢ÂÂ¶CÃ¢â€šÂ = 4 × 5 × 6 = 120
+Favorable ways = ⁴C₁ × ⁵C₁ × ⁶C₁ = 4 × 5 × 6 = 120
 
 Probability = 120/455 = 24/91
 
@@ -1806,15 +1806,15 @@ Profit % = (17/100) × 100% = 17%
 
 ### PYQ-4 (GATE 2022) → Number Systems
 
-Find the remainder when 2Ã¢ÂÂ¸Ã¢Â° is divided by 17.
+Find the remainder when 2⁸⁰ is divided by 17.
 
 **Solution:**
 
 By Fermat's Little Theorem: a^(p-1) ≡ 1 (mod p) when p is prime and gcd(a,p)=1
 
-2Ã‚Â¹Ã¢Â¶ â‰¡ 1 (mod 17)
+2¹⁶ ≡ 1 (mod 17)
 
-2Ã¢ÂÂ¸Ã¢ÂÂ° = 2^(16Ãƒâ€”5) = (2Ã‚Â¹Ã¢ÂÂ¶)Ã¢ÂÂµ Ã¢â€°Â¡ 1Ã¢Âµ â‰¡ 1 (mod 17)
+2⁸⁰ = 2^(16×5) = (2¹⁶)⁵ ≡ 1⁵ ≡ 1 (mod 17)
 
 **Answer: 1**
 
@@ -1852,7 +1852,7 @@ For the number to be > 5000, the thousands digit must be ≥ 5.
 
 Available digits for thousands place: {5, 6, 7, 8} = 4 choices
 
-Remaining 3 positions must be filled with remaining 4 digits: Ã¢Â´Pâ‚ƒ = 4!/(4-3)! = 24 ways
+Remaining 3 positions must be filled with remaining 4 digits: ⁴P₃ = 4!/(4-3)! = 24 ways
 
 Total = 4 × 24 = 96
 
@@ -3523,10 +3523,10 @@ log₁₀ 5 = log₁₀ (10/2) = log₁₀ 10 − log₁₀ 2 = 1 − 0.3010 = 0
 ---
 
 **Q55. [GATE 2012]**
-What is the unit digit of 7Ã‚Â³Ã¢Âµ?
+What is the unit digit of 7³⁵?
 
 **Answer:**
-Cyclicity of 7: 7Ã‚Â¹â†’7, 7Ã‚Â²â†’9, 7Ã‚Â³â†’3, 7Ã¢Â´→1, then repeats every 4.
+Cyclicity of 7: 7¹→7, 7²→9, 7³→3, 7⁴→1, then repeats every 4.
 35 ÷ 4 = 8 remainder 3. So unit digit = 7³ = 343 → unit digit 3.
 
 **Answer: 3**
@@ -3671,11 +3671,11 @@ A's income = 3 × 10000 = ₹30,000.
 ---
 
 **Q67. [GATE 2017]**
-What is the remainder when 2Ã‚Â²Ã¢Â° is divided by 5?
+What is the remainder when 2²⁰ is divided by 5?
 
 **Answer:**
-Cyclicity of 2Ã¢ÂÂ¿ mod 5: 2Ã‚Â¹â†’2, 2Ã‚Â²â†’4, 2Ã‚Â³â†’3, 2Ã¢Â´→1 (repeats every 4).
-20 ÃƒÂ· 4 = 5, remainder 0. So 2Ã‚Â²Ã¢ÂÂ° Ã¢â€°Â¡ 2Ã¢Â´ â‰¡ 1 (mod 5).
+Cyclicity of 2ⁿ mod 5: 2¹→2, 2²→4, 2³→3, 2⁴→1 (repeats every 4).
+20 ÷ 4 = 5, remainder 0. So 2²⁰ ≡ 2⁴ ≡ 1 (mod 5).
 
 **Answer: 1**
 
@@ -3702,7 +3702,7 @@ Find the value of 0.̅6 + 0.̅7̅3 in fractional form.
 0.̅6 = 6/9 = 2/3.
 0.̅7̅3 = 73/99.
 Sum = 2/3 + 73/99 = 66/99 + 73/99 = 139/99.
-Simplify: 139/99 = 1 + 40/99 = 1Ã¢ÂÂ´Ã¢Â°Ì…/â‚‰â‚‰.
+Simplify: 139/99 = 1 + 40/99 = 1⁴⁰̅/₉₉.
 
 **Answer: 139/99**
 
@@ -3945,7 +3945,7 @@ So next term = M10R.
 How many squares are there in a 4×4 grid?
 
 **Answer:**
-Number of squares in an nÃƒâ€”n grid = ÃŽÂ£Ã¡ÂµÂ¢Ã¢â€šÅ’Ã¢â€šÂÃ¢Â¿ iÂ² = 1Â² + 2Â² + 3Â² + 4Â² = 1 + 4 + 9 + 16 = 30.
+Number of squares in an n×n grid = Σᵢ₌₁ⁿ i² = 1² + 2² + 3² + 4² = 1 + 4 + 9 + 16 = 30.
 
 **Answer: 30**
 
@@ -4228,7 +4228,7 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 
 #### Trap 18: Permutation vs Combination
 **Trap:** Using permutation when order doesn't matter.
-**Example:** Selecting 3 students from 10. Wrong: Ã‚Â¹Ã¢ÂÂ°PÃ¢â€šÆ’ = 720. **Correct:** Ã‚Â¹Ã¢Â°Câ‚ƒ = 120.
+**Example:** Selecting 3 students from 10. Wrong: ¹⁰P₃ = 720. **Correct:** ¹⁰C₃ = 120.
 **Rule:** Permutation → arrangement (order matters). Combination → selection (order doesn't).
 
 #### Trap 19: Data Interpretation → Axis Scale
@@ -4287,7 +4287,7 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 
 #### Mixtures & Alligations
 - **Alligation Rule:** (Cheaper quantity) / (Dearer quantity) = (Mean Price − Cheaper) / (Dearer − Mean).
-- **Replacement formula:** After n replacements of V units from a mixture of M total volume, original content remaining = M Ãƒâ€” [(MÃ¢Ë†â€™V)/M]Ã¢Â¿.
+- **Replacement formula:** After n replacements of V units from a mixture of M total volume, original content remaining = M × [(M−V)/M]ⁿ.
 
 #### Probability
 - **P(A∪B) = P(A) + P(B) − P(A∩B)**
@@ -4297,10 +4297,10 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 - **"At least one":** Use complement: 1 − P(none).
 
 #### Permutations & Combinations
-- **Ã¢Â¿Páµ£ = n!/(nâˆ’r)!** (arrangement)
-- **Ã¢Â¿Cáµ£ = n!/[r!(nâˆ’r)!]** (selection)
-- **Ã¢ÂÂ¿CÃ¢â€šâ€œ = Ã¢Â¿Câ‚™â‚‹â‚“**
-- **Ã¢ÂÂ¿CÃ¢â€šâ‚¬ + Ã¢ÂÂ¿CÃ¢â€šÂ + ... + Ã¢ÂÂ¿CÃ¢â€šâ„¢ = 2Ã¢Â¿**
+- **ⁿPᵣ = n!/(n−r)!** (arrangement)
+- **ⁿCᵣ = n!/[r!(n−r)!]** (selection)
+- **ⁿCₓ = ⁿCₙ₋ₓ**
+- **ⁿC₀ + ⁿC₁ + ... + ⁿCₙ = 2ⁿ**
 - **Circular permutations:** (n−1)! for unlabeled. For clockwise distinct: n!.
 
 #### Averages
@@ -4312,7 +4312,7 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 - **Percentage change between two periods = (New − Old)/Old × 100.**
 - **Ratio comparison:** Cross-multiply to compare ratios quickly.
 - **Approximation:** When options are far apart (GATE often), approximate to save time.
-- **Compound growth:** Final = Initial Ãƒâ€” (1 + r)Ã¢Â¿. Use log or approximation for n.
+- **Compound growth:** Final = Initial × (1 + r)ⁿ. Use log or approximation for n.
 
 ---
 
@@ -4350,12 +4350,12 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 | **Pipes** | A+B fill = ab/(a+b) | A fills in a min, B in b min |
 | | Net rate = fill rates − empty rates | Empty pipe = negative |
 | **Alligation** | (Qty₁)/(Qty₂) = (P₂ − M)/(M − P₁) | Cross rule for mixtures |
-| **Permutations** | Ã¢Â¿Páµ£ = n!/(nâˆ’r)! | Arrangement, order matters |
+| **Permutations** | ⁿPᵣ = n!/(n−r)! | Arrangement, order matters |
 | | n! = n(n−1)(n−2)...1 | Factorial |
 | | Circular = (n−1)! | Circular arrangement |
-| **Combinations** | Ã¢Â¿Cáµ£ = n!/[r!(nâˆ’r)!] | Selection, order irrelevant |
-| | Ã¢ÂÂ¿CÃ¡ÂµÂ£ = Ã¢Â¿Câ‚™â‚‹áµ£ | Symmetry property |
-| | Ã¢ÂÂ¿CÃ¢â€šâ‚¬ + Ã¢ÂÂ¿CÃ¢â€šÂ + ... + Ã¢ÂÂ¿CÃ¢â€šâ„¢ = 2Ã¢Â¿ | Total subsets |
+| **Combinations** | ⁿCᵣ = n!/[r!(n−r)!] | Selection, order irrelevant |
+| | ⁿCᵣ = ⁿCₙ₋ᵣ | Symmetry property |
+| | ⁿC₀ + ⁿC₁ + ... + ⁿCₙ = 2ⁿ | Total subsets |
 | **Probability** | P(E) = n(E)/n(S) | Classical definition |
 | | P(not E) = 1 − P(E) | Complement |
 | | P(A∪B) = P(A)+P(B)−P(A∩B) | Union |
@@ -4367,7 +4367,7 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 | | New avg = (nA + x)/(n+1) | Adding one element |
 | **Logarithms** | log(ab) = log a + log b | Product rule |
 | | log(a/b) = log a − log b | Quotient rule |
-| | log(aÃ¢Â¿) = n log a | Power rule |
+| | log(aⁿ) = n log a | Power rule |
 | | logₐ a = 1 | Identity |
 | | logₐ 1 = 0 | Zero log |
 | **Number System** | Sum of first n naturals = n(n+1)/2 | |

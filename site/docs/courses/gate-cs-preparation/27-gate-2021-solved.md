@@ -289,7 +289,7 @@ Correct punctuation: comma after "said", quotation marks with the period inside 
 ## Section B: Technical (85 marks)
 
 ### Q1 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
-âˆ«â‚‹â‚¹ x³ dx =
+∫₋₁¹ x³ dx =
 
 (A) -1  
 (B) 0  
@@ -302,7 +302,7 @@ Correct punctuation: comma after "said", quotation marks with the period inside 
 **Answer:** (B) 0
 
 **Explanation:**
-âˆ«â‚‹â‚Â¹ xÂ³ dx = [xâ´/4]â‚‹â‚¹ = 1/4 - 1/4 = 0. x³ is an odd function, symmetric integral is 0.
+∫₋₁¹ x³ dx = [x⁴/4]₋₁¹ = 1/4 - 1/4 = 0. x³ is an odd function, symmetric integral is 0.
 
 </details>
 

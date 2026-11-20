@@ -1,13 +1,6 @@
 ---
-description: "Course Overview: A comprehensive, end-to-end exploration of modern cyber security spanning 21 chapters. Students will master everything from cryptographic"
----
-
-﻿---
-id: index
-slug: /cyber-security
 title: "CS 410: Comprehensive Cyber Security (Expanded Edition)"
-sidebar_label: "CS 410: Comprehensive Cyber Security (Expanded Edition)"
-sidebar_position: 21
+description: "Course Overview: A comprehensive, end-to-end exploration of modern cyber security spanning 21 chapters. Students will master everything from cryptographic"
 ---
 
 # CS 410: Comprehensive Cyber Security (Expanded Edition)

@@ -1,13 +1,6 @@
 ---
-description: "A comprehensive foundation in engineering mathematics from basic calculus through advanced topics, with rigorous theory, worked examples, and real-world"
----
-
-﻿---
-id: index
-slug: /engineering-mathematics
 title: "Engineering Mathematics"
-sidebar_label: "Engineering Mathematics"
-sidebar_position: 11
+description: "A comprehensive foundation in engineering mathematics from basic calculus through advanced topics, with rigorous theory, worked examples, and real-world"
 ---
 
 # Engineering Mathematics

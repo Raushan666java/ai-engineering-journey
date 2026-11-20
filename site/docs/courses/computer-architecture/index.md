@@ -1,13 +1,6 @@
 ---
-description: "slug: /computer-architecture title: 'Computer Organisation & Architecture — IBPS SO & Govt Exam Prep' sidebar_label: 'Computer Organisation & Architecture"
----
-
-﻿---
-id: index
-slug: /computer-architecture
 title: "Computer Organisation & Architecture — IBPS SO & Govt Exam Prep"
-sidebar_label: "Computer Organisation & Architecture — IBPS SO & Govt Exam Prep"
-sidebar_position: 6
+description: "Exam Weightage: 3-5 Qs in IBPS SO Mains PK, 8-10% in GATE CS Moderate (logic-heavy, some numerics) Focus Areas: CPU organization, Memory hierarchy"
 ---
 
 # Computer Organisation & Architecture — IBPS SO & Govt Exam Prep

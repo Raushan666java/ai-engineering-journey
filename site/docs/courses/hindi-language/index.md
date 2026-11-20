@@ -1,13 +1,6 @@
 ---
-description: "एक संपूर्ण हिंदी भाषा पाठ्यक्रम जो व्याकरण, समझ, शब्दावली, लेखन और अनुवाद को कवर करता है — सरकारी परीक्षाओं और दैनिक उपयोग के लिए। A comprehensive Hindi"
----
-
-﻿---
-id: index
-slug: /hindi-language
 title: "हिंदी भाषा पाठ्यक्रम (Hindi Language Course)"
-sidebar_label: "हिंदी भाषा पाठ्यक्रम (Hindi Language Course)"
-sidebar_position: 6
+description: "एक संपूर्ण हिंदी भाषा पाठ्यक्रम जो व्याकरण, समझ, शब्दावली, लेखन और अनुवाद को कवर करता है — सरकारी परीक्षाओं और दैनिक उपयोग के लिए। A comprehensive Hindi"
 ---
 
 # हिंदी भाषा पाठ्यक्रम (Hindi Language Course)

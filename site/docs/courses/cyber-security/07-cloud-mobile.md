@@ -1,14 +1,6 @@
 ---
-layout: default
 title: "Chapter 7: Cloud & Mobile Security"
-permalink: /cyber-security/07-cloud-mobile/
 description: "Analogy: Renting an apartment — the landlord provides the building shell and plumbing (hypervisor, hardware, network). You bring your own furniture, paint"
----
-
----
-layout: default
-title: "Chapter 7: Cloud & Mobile Security"
-permalink: /cyber-security/07-cloud-mobile/
 ---
 
 # Chapter 7: Cloud & Mobile Security

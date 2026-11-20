@@ -1,13 +1,6 @@
 ---
-description: "This course provides a comprehensive study of computer networking from the physical layer through the application layer. Students examine protocol"
----
-
-﻿---
-id: index
-slug: /computer-networks
 title: "Computer Networks — Complete Course Textbook"
-sidebar_label: "Computer Networks — Complete Course Textbook"
-sidebar_position: 19
+description: "This course provides a comprehensive study of computer networking from the physical layer through the application layer. Students examine protocol"
 ---
 
 # Computer Networks — Complete Course Textbook

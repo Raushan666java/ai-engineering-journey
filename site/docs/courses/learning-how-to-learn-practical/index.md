@@ -1,13 +1,6 @@
 ---
-description: "Learning systems for any goal. Plain-language walkthroughs for everyone, TypeScript examples for engineers. Designed for SSC, UPSC, GATE, FAANG, language"
----
-
-﻿---
-id: index
-slug: /learning-how-to-learn-practical
 title: "Learning How to Learn (Practical Edition)"
-sidebar_label: "Learning How to Learn (Practical Edition)"
-sidebar_position: 16
+description: "Learning systems for any goal. Plain-language walkthroughs for everyone, TypeScript examples for engineers. Designed for SSC, UPSC, GATE, FAANG, language"
 ---
 
 # Learning How to Learn (Practical Edition)

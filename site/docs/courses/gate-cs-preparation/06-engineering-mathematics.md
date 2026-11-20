@@ -900,7 +900,7 @@ x + y + z = 1
 
 **Solution:**
 - For a real symmetric matrix, eigenvectors corresponding to distinct eigenvalues are orthogonal.
-- This is a standard theorem: if `A = A^T` and `ÃŽÂ»Ã¢â€šÂ Ã¢â€°Â  ÃŽÂ»Ã¢â€šâ€š` with `AvÃ¢â€šÂ = ÃŽÂ»Ã¢â€šÂvÃ¢â€šÂ, AvÃ¢â€šâ€š = ÃŽÂ»Ã¢â€šâ€švÃ¢â€šâ€š`, then `vÃ¢â€šÂ · v₂ = 0`.
+- This is a standard theorem: if `A = A^T` and `λ₁ ≠ λ₂` with `Av₁ = λ₁v₁, Av₂ = λ₂v₂`, then `v₁ · v₂ = 0`.
 - **Answer: Orthogonal**
 
 ---
@@ -986,7 +986,7 @@ x + y + z = 1
 
 ---
 
-**GATE 2022 (CS) â†’ Q4:** Evaluate `Ã¢Ë†Â«_0^{Ã€/2} sin^3(x) cos^2(x) dx`.
+**GATE 2022 (CS) → Q4:** Evaluate `∫_0^{π/2} sin^3(x) cos^2(x) dx`.
 
 **Solution:**
 - Let `u = cos(x)`, so `du = -sin(x) dx`
@@ -1107,10 +1107,10 @@ x + y + z = 1
 
 ---
 
-**GATE 2023 (CS) â†’ Q5:** If `X ~ N(ÃŽÂ¼=10, ÃƒÂ²=4)`, find `P(8 < X < 12)`.
+**GATE 2023 (CS) → Q5:** If `X ~ N(μ=10, σ²=4)`, find `P(8 < X < 12)`.
 
 **Solution:**
-- Standardize: `Z = (X - ÃŽÂ¼)/Ãƒ = (X-10)/2`
+- Standardize: `Z = (X - μ)/σ = (X-10)/2`
 - `P(8 < X < 12) = P((8-10)/2 < Z < (12-10)/2) = P(-1 < Z < 1)`
 - By 68-95-99.7 rule: `P(-1 < Z < 1) ≈ 0.6827`
 - More precisely: `Φ(1) - Φ(-1) = 2Φ(1) - 1 ≈ 2(0.8413) - 1 = 0.6826`
@@ -1185,9 +1185,9 @@ x + y + z = 1
 **GATE 2023 (CS) → Q12:** If `E[X] = 2` and `Var(X) = 4`, find an upper bound on `P(|X - 2| ≥ 4)` using Chebyshev's inequality.
 
 **Solution:**
-- Chebyshev: `P(|X - ÃŽÂ¼| Ã¢â€°Â¥ kÃƒ) â‰¤ 1/k^2`
-- `ÃŽÂ¼ = 2`, `Ãƒ = âˆšVar = 2`
-- `P(|X - 2| Ã¢â€°Â¥ 4) = P(|X - ÃŽÂ¼| Ã¢â€°Â¥ 2Ãƒ)` so `k = 2`
+- Chebyshev: `P(|X - μ| ≥ kσ) ≤ 1/k^2`
+- `μ = 2`, `σ = √Var = 2`
+- `P(|X - 2| ≥ 4) = P(|X - μ| ≥ 2σ)` so `k = 2`
 - Bound: `1/k^2 = 1/4 = 0.25`
 - **Answer: `≤ 0.25`**
 
@@ -1324,15 +1324,15 @@ x + y + z = 1
 
 ---
 
-**GATE 2020 (CS) â†’ Q2:** Using Simpson's 1/3 rule with `h = Ãâ‚¬/4`, approximate `Ã¢Ë†Â«_0^{Ã€/2} sin(x) dx`.
+**GATE 2020 (CS) → Q2:** Using Simpson's 1/3 rule with `h = π/4`, approximate `∫_0^{π/2} sin(x) dx`.
 
 **Solution:**
-- Points: `x_0 = 0, x_1 = Ãâ‚¬/4, x_2 = Ã€/2`
-- `f(0) = 0`, `f(Ãâ‚¬/4) = Ã¢Ë†Å¡2/2 Ã¢â€°Ë† 0.7071`, `f(Ã€/2) = 1`
+- Points: `x_0 = 0, x_1 = π/4, x_2 = π/2`
+- `f(0) = 0`, `f(π/4) = √2/2 ≈ 0.7071`, `f(π/2) = 1`
 - Simpson: `h/3 * [f(x_0) + 4f(x_1) + f(x_2)]`
-- `= (Ãâ‚¬/4)/3 * [0 + 4(0.7071) + 1] = Ã€/12 * 3.8284`
+- `= (π/4)/3 * [0 + 4(0.7071) + 1] = π/12 * 3.8284`
 - `= 3.1416 * 3.8284/12 = 1.0023`
-- True value: `[-cos(x)]_0^{Ã€/2} = 0 - (-1) = 1`
+- True value: `[-cos(x)]_0^{π/2} = 0 - (-1) = 1`
 - **Answer: `1.0023`**
 
 ---
@@ -1574,11 +1574,11 @@ x + y + 4z = 6
 
 ---
 
-**GATE 2015 (CS) â†’ Q57:** Let `P` be a 2Ãƒâ€”2 matrix with eigenvalues 1 and 4. Find the trace of `PÃ¢Â»Â¹`.
+**GATE 2015 (CS) → Q57:** Let `P` be a 2×2 matrix with eigenvalues 1 and 4. Find the trace of `P⁻¹`.
 
 **Solution:**
-- Eigenvalues of `PÃ¢Â»Â¹` are reciprocals: `1/1 = 1` and `1/4 = 0.25`
-- `tr(PÃ¢ÂÂ»Ã‚Â¹) = sum of eigenvalues of PÃ¢Â»Â¹ = 1 + 0.25 = 1.25`
+- Eigenvalues of `P⁻¹` are reciprocals: `1/1 = 1` and `1/4 = 0.25`
+- `tr(P⁻¹) = sum of eigenvalues of P⁻¹ = 1 + 0.25 = 1.25`
 - **Answer: 1.25**
 
 ---
@@ -1658,19 +1658,19 @@ x + y + 4z = 6
 (D) Differentiable but not continuous at `x = 2`
 
 **Solution:**
-- `f(2) = 0`. `lim_{x â†’ 2Ã¢ÂÂ»} f(x) = lim_{x â†’ 2Ã¢Âº} f(x) = 0` → continuous
-- LHD: `lim_{h â†’ 0Ã¢ÂÂ»} (f(2+h) - f(2))/h = lim_{h â†’ 0Ã¢Â»} |h|/h = -1`
-- RHD: `lim_{h â†’ 0Ã¢ÂÂº} (f(2+h) - f(2))/h = lim_{h â†’ 0Ã¢Âº} |h|/h = 1`
+- `f(2) = 0`. `lim_{x → 2⁻} f(x) = lim_{x → 2⁺} f(x) = 0` → continuous
+- LHD: `lim_{h → 0⁻} (f(2+h) - f(2))/h = lim_{h → 0⁻} |h|/h = -1`
+- RHD: `lim_{h → 0⁺} (f(2+h) - f(2))/h = lim_{h → 0⁺} |h|/h = 1`
 - LHD ≠ RHD → not differentiable
 - **Answer: (B)**
 
 ---
 
-**GATE 2012 (CS) â†’ Q65:** Evaluate `Ã¢Ë†Â«_0^{Ã€/2} cos x / (1 + sin x) dx`.
+**GATE 2012 (CS) → Q65:** Evaluate `∫_0^{π/2} cos x / (1 + sin x) dx`.
 
 **Solution:**
 - Let `u = 1 + sin x`, `du = cos x dx`
-- When `x = 0`: `u = 1`. When `x = Ã€/2`: `u = 2`
+- When `x = 0`: `u = 1`. When `x = π/2`: `u = 2`
 - Integral = `∫_1^2 du/u = [ln u]_1^2 = ln 2 - ln 1 = ln 2`
 - **Answer: ln 2**
 
@@ -1681,7 +1681,7 @@ x + y + 4z = 6
 **Solution:**
 - `x³` is an odd function: `f(-x) = (-x)³ = -x³ = -f(x)`
 - Integral of an odd function over symmetric limits `[-a, a]` is zero
-- `Ã¢Ë†Â«_{-a}^{a} xÃ‚Â³ dx = [xÃ¢ÂÂ´/4]_{-a}^{a} = aÃ¢ÂÂ´/4 - aÃ¢Â´/4 = 0`
+- `∫_{-a}^{a} x³ dx = [x⁴/4]_{-a}^{a} = a⁴/4 - a⁴/4 = 0`
 - **Answer: 0**
 
 ---
@@ -1910,7 +1910,7 @@ x + y + 4z = 6
 **GATE 2014 (CS) → Q89:** The number of distinct proper non-empty subsets of a set with 5 elements is:
 
 **Solution:**
-- Total subsets: 2Ã¢Âµ = 32
+- Total subsets: 2⁵ = 32
 - Exclude empty set and the set itself: 32 - 2 = 30
 - **Answer: 30**
 
@@ -2018,8 +2018,8 @@ x + y + 4z = 6
 
 **Solution:**
 - Rearranged: `x₁^{(k+1)} = (9 - x₂^{(k)})/4`, `x₂^{(k+1)} = (6 - x₁^{(k+1)})/4`
-- Iteration 1: `xÃ¢â€šÂ¹ = (9-0)/4 = 2.25`, `x₂¹ = (6-2.25)/4 = 3.75/4 = 0.9375`
-- Iteration 2: `xÃ¢â€šÂ² = (9-0.9375)/4 = 8.0625/4 = 2.015625`, `x₂² = (6-2.015625)/4 = 3.984375/4 = 0.99609375`
+- Iteration 1: `x₁¹ = (9-0)/4 = 2.25`, `x₂¹ = (6-2.25)/4 = 3.75/4 = 0.9375`
+- Iteration 2: `x₁² = (9-0.9375)/4 = 8.0625/4 = 2.015625`, `x₂² = (6-2.015625)/4 = 3.984375/4 = 0.99609375`
 - **Answer: `x₁ ≈ 2.0156, x₂ ≈ 0.9961`**
 
 ---
@@ -2029,7 +2029,7 @@ x + y + 4z = 6
 **Solution:**
 - `L₀(x) = (x - x₁)/(x₀ - x₁) = (x - 1)/(0 - 1) = -(x-1) = 1 - x`
 - `L₁(x) = (x - x₀)/(x₁ - x₀) = (x - 0)/(1 - 0) = x`
-- `P(x) = f(xÃ¢â€šâ‚¬)Ã‚Â·LÃ¢â€šâ‚¬(x) + f(xÃ¢â€šÂ)Ã‚Â·LÃ¢â€šÂ(x) = 1·(1-x) + 3·x = 1 - x + 3x = 1 + 2x`
+- `P(x) = f(x₀)·L₀(x) + f(x₁)·L₁(x) = 1·(1-x) + 3·x = 1 - x + 3x = 1 + 2x`
 - Verify: at `x=0`: `P=1` ✓; at `x=1`: `P=3` ✓
 - **Answer: `P(x) = 1 + 2x`**
 
@@ -2055,7 +2055,7 @@ x + y + 4z = 6
 | 10 | **Integration constant** | For indefinite integrals, NEVER forget `+C`. For definite integrals, changing limits with substitution is mandatory. |
 | 11 | **Graph: Eulerian vs Hamiltonian** | Eulerian circuit = visits **every edge** exactly once (all even degrees). Hamiltonian cycle = visits **every vertex** exactly once (NP-complete to check). |
 | 12 | **Bisection vs Newton convergence** | Bisection: linear convergence (order 1), always converges if sign change exists. Newton: quadratic (order 2), but may diverge if initial guess is poor. |
-| 13 | **Matrix multiplication order** | `(AB)Ã¡Âµâ‚¬ = BÃ¡Âµâ‚¬AÃ¡Âµâ‚¬` â†’ reverse order. Never write `(AB)Ã¡Âµâ‚¬ = AÃ¡Âµâ‚¬BÃ¡Âµâ‚¬`. Also `(AB)Ã¢ÂÂ»Ã‚Â¹ = BÃ¢ÂÂ»Ã‚Â¹AÃ¢Â»Â¹`. |
+| 13 | **Matrix multiplication order** | `(AB)ᵀ = BᵀAᵀ` → reverse order. Never write `(AB)ᵀ = AᵀBᵀ`. Also `(AB)⁻¹ = B⁻¹A⁻¹`. |
 | 14 | **Modulus in probability densities** | PDF `f(x)` must integrate to 1 and be ≥ 0 everywhere. Checking only one condition is insufficient. |
 | 15 | **Numerical method error signs** | Trapezoidal may over/under-estimate depending on concavity. Simpson's rule is exact for polynomials up to degree 3. |
 
@@ -2071,9 +2071,9 @@ x + y + 4z = 6
 | 3×3: expand along first row | `a(ei - fh) - b(di - fg) + c(dh - eg)` |
 | Triangular (upper or lower) | Product of diagonal entries |
 | Diagonal matrix | Product of diagonal entries |
-| `cA` (nÃƒâ€”n) | `cÃ¢Â¿Â·det(A)` |
+| `cA` (n×n) | `cⁿ·det(A)` |
 | `Aᵀ` | Same as `det(A)` |
-| `AÃ¢Â»Â¹` | `1/det(A)` |
+| `A⁻¹` | `1/det(A)` |
 | `AB` | `det(A)·det(B)` |
 | Orthogonal matrix | `±1` |
 | Nilpotent matrix | 0 |
@@ -2084,9 +2084,9 @@ x + y + 4z = 6
 | Matrix | Inverse |
 |--------|---------|
 | 2×2: `[[a,b],[c,d]]` | `1/(ad-bc) · [[d,-b],[-c,a]]` |
-| 3Ãƒâ€”3: `AÃ¢Â»Â¹ = adj(A)/det(A)` | Cofactor matrix transposed, divided by det |
+| 3×3: `A⁻¹ = adj(A)/det(A)` | Cofactor matrix transposed, divided by det |
 | Diagonal: `diag(d₁,...,dₙ)` | `diag(1/d₁,...,1/dₙ)` |
-| Orthogonal: `AÃ¡Âµâ‚¬A = I` | `AÃ¢Â»Â¹ = Aáµ€` |
+| Orthogonal: `AᵀA = I` | `A⁻¹ = Aᵀ` |
 
 **Rank Facts:**
 - `rank(A) = rank(Aᵀ) = rank(AᵀA) = rank(AAᵀ)`
@@ -2102,14 +2102,14 @@ x + y + 4z = 6
 | Property | Binomial | Poisson | Normal |
 |----------|----------|---------|--------|
 | **When to use** | Fixed `n` trials, success/fail, constant `p` | Events at constant avg rate λ over time/space | Sum of many independent factors, continuous data |
-| **Parameters** | `n` (trials), `p` (success prob) | `ÃŽÂ»` (average rate) | `ÃŽÂ¼` (mean), `ÃƒÂ²` (variance) |
-| **PMF/PDF** | `C(n,k) p^k (1-p)^{n-k}` | `e^{-ÃŽÂ»} ÃŽÂ»^k / k!` | `(1/ÃÆ’Ã¢Ë†Å¡{2Ãâ‚¬}) e^{-(x-ÃŽÂ¼)Ã‚Â²/(2ÃƒÂ²)}` |
+| **Parameters** | `n` (trials), `p` (success prob) | `λ` (average rate) | `μ` (mean), `σ²` (variance) |
+| **PMF/PDF** | `C(n,k) p^k (1-p)^{n-k}` | `e^{-λ} λ^k / k!` | `(1/σ√{2π}) e^{-(x-μ)²/(2σ²)}` |
 | **Mean** | `np` | `λ` | `μ` |
-| **Variance** | `np(1-p)` | `ÃŽÂ»` | `ÃƒÂ²` |
+| **Variance** | `np(1-p)` | `λ` | `σ²` |
 | **Range** | `0, 1, ..., n` | `0, 1, 2, ...` (unbounded) | `(-∞, ∞)` |
 | **GATE favorite** | Coin toss problems | Rare events, queue arrivals | Standard normal Z-tables, CLT |
 | **Relationship** | `n→∞, p→0, np=λ` → Poisson | `λ→∞` → approx Normal | → |
-| **MGF** | `(pe^t + 1-p)^n` | `e^{ÃŽÂ»(e^t - 1)}` | `e^{ÃŽÂ¼t + ÃƒÂ²tÂ²/2}` |
+| **MGF** | `(pe^t + 1-p)^n` | `e^{λ(e^t - 1)}` | `e^{μt + σ²t²/2}` |
 
 **Key Insight:** When in doubt about which distribution, ask:
 1. Are there a fixed number of trials `n`? → **Binomial**
@@ -2125,7 +2125,7 @@ x + y + 4z = 6
 
 | Function | Derivative |
 |----------|------------|
-| `xÃ¢ÂÂ¿` | `nxÃ¢ÂÂ¿Ã¢Â»Â¹` |
+| `xⁿ` | `nxⁿ⁻¹` |
 | `e^{ax}` | `ae^{ax}` |
 | `aˣ` | `aˣ ln a` |
 | `ln x` | `1/x` |
@@ -2135,15 +2135,15 @@ x + y + 4z = 6
 | `sec(ax)` | `a·sec(ax)·tan(ax)` |
 | `cosec(ax)` | `-a·cosec(ax)·cot(ax)` |
 | `cot(ax)` | `-a·cosec²(ax)` |
-| `sinÃ¢Â»Â¹ x` | `1/âˆš(1-xÂ²)` |
-| `cosÃ¢Â»Â¹ x` | `-1/âˆš(1-xÂ²)` |
-| `tanÃ¢Â»Â¹ x` | `1/(1+xÂ²)` |
+| `sin⁻¹ x` | `1/√(1-x²)` |
+| `cos⁻¹ x` | `-1/√(1-x²)` |
+| `tan⁻¹ x` | `1/(1+x²)` |
 
 **Integration:**
 
 | Integral | Result |
 |----------|--------|
-| `Ã¢Ë†Â« xÃ¢ÂÂ¿ dx` | `xÃ¢ÂÂ¿Ã¢ÂºÂ¹/(n+1) + C, nâ‰ -1` |
+| `∫ xⁿ dx` | `xⁿ⁺¹/(n+1) + C, n≠-1` |
 | `∫ 1/x dx` | `ln\|x\| + C` |
 | `∫ e^{ax} dx` | `e^{ax}/a + C` |
 | `∫ aˣ dx` | `aˣ/ln a + C` |
@@ -2152,8 +2152,8 @@ x + y + 4z = 6
 | `∫ sec²(ax) dx` | `tan(ax)/a + C` |
 | `∫ cosec²(ax) dx` | `-cot(ax)/a + C` |
 | `∫ sec(ax)tan(ax) dx` | `sec(ax)/a + C` |
-| `Ã¢Ë†Â« 1/(1+xÃ‚Â²) dx` | `tanÃ¢Â»Â¹ x + C` |
-| `Ã¢Ë†Â« 1/Ã¢Ë†Å¡(1-xÃ‚Â²) dx` | `sinÃ¢Â»Â¹ x + C` |
+| `∫ 1/(1+x²) dx` | `tan⁻¹ x + C` |
+| `∫ 1/√(1-x²) dx` | `sin⁻¹ x + C` |
 | `∫ 1/(a²-x²) dx` | `(1/2a) ln\|(a+x)/(a-x)\| + C` |
 | `∫ u dv` (by parts) | `uv - ∫ v du` |
 
@@ -2176,7 +2176,7 @@ x + y + 4z = 6
 | `lim_{x→0} (1 + x)^{1/x}` | `e` |
 | `lim_{x→∞} (1 + 1/x)ˣ` | `e` |
 | `lim_{x→0} (aˣ - 1)/x` | `ln a` |
-| `lim_{xâ†’0} (sinÃ¢Â»Â¹ x)/x` | 1 |
+| `lim_{x→0} (sin⁻¹ x)/x` | 1 |
 | `lim_{x→∞} x^{1/x}` | 1 |
 
 ---
@@ -2185,16 +2185,16 @@ x + y + 4z = 6
 
 | Method | Convergence Order | Error Type | Notes |
 |--------|-------------------|------------|-------|
-| **Bisection** | Linear (order 1) | `Ã¢â€°Â¤ (b-a)/2Ã¢Â¿` | Always converges if sign change exists. Slow but reliable. |
+| **Bisection** | Linear (order 1) | `≤ (b-a)/2ⁿ` | Always converges if sign change exists. Slow but reliable. |
 | **Regula-Falsi** | Linear (order 1) | Varies | Faster than bisection but may have slow end convergence. |
-| **Newton-Raphson** | Quadratic (order 2) | `Ã¢Ë†Â (error)²` | Very fast near root. Fails if `f'(x)≈0`. Needs derivative. |
-| **Secant** | Superlinear (Ã¢â€°Ë†1.618) | `Ã¢Ë†Â (error)^{Ã†}` | No derivative needed. Slightly slower than Newton. |
+| **Newton-Raphson** | Quadratic (order 2) | `∝ (error)²` | Very fast near root. Fails if `f'(x)≈0`. Needs derivative. |
+| **Secant** | Superlinear (≈1.618) | `∝ (error)^{φ}` | No derivative needed. Slightly slower than Newton. |
 | **Fixed-Point Iteration** | Linear (order 1) | `∝ g'(ξ)·error` | Converges if `\|g'(x)\| < 1` near root. |
 | **Trapezoidal Rule** | `O(h²)` | `-(b-a)h²f''(ξ)/12` | Simple, good for monotonic functions. |
-| **Simpson's 1/3 Rule** | `O(hÃ¢ÂÂ´)` | `-(b-a)hÃ¢ÂÂ´fÃ¢ÂÂ½Ã¢ÂÂ´Ã¢Â¾(Î¾)/180` | Exact for polynomials â‰¤ degree 3. More accurate. |
+| **Simpson's 1/3 Rule** | `O(h⁴)` | `-(b-a)h⁴f⁽⁴⁾(ξ)/180` | Exact for polynomials ≤ degree 3. More accurate. |
 | **Gauss-Seidel** | Linear | Depends on spectral radius | Converges if matrix is diagonally dominant or SPD. |
 | **Euler's Method (ODE)** | `O(h)` | `∝ h` | Simplest ODE solver. Use RK4 for better accuracy. |
-| **RK4 (ODE)** | `O(hÃ¢ÂÂ´)` | `Ã¢Ë†Â hÃ¢Â´` | Standard for non-stiff ODEs. Good balance of accuracy/cost. |
+| **RK4 (ODE)** | `O(h⁴)` | `∝ h⁴` | Standard for non-stiff ODEs. Good balance of accuracy/cost. |
 
 **Convergence Rule of Thumb:**
 - Need high accuracy? → Newton-Raphson (if derivative available) or Secant

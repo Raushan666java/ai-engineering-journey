@@ -1,13 +1,6 @@
 ---
-description: "Your ultimate resource for cracking the IBPS Specialist Officer (IT) examination. This guide covers exam pattern, topic-wise weightage, cutoff trends"
----
-
-﻿---
-id: index
-slug: /government-pyqs
 title: "IBPS SO IT Officer Scale 1 — Complete Preparation Guide"
-sidebar_label: "IBPS SO IT Officer Scale 1 — Complete Preparation Guide"
-sidebar_position: 15
+description: "Your ultimate resource for cracking the IBPS Specialist Officer (IT) examination. This guide covers exam pattern, topic-wise weightage, cutoff trends"
 ---
 
 # IBPS SO IT Officer Scale 1 — Complete Preparation Guide

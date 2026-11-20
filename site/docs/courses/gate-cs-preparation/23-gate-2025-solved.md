@@ -1298,7 +1298,7 @@ A 2×2 matrix has trace 5 and determinant 6. Its eigenvalues are:
 **Answer:** (B) 2, 3
 
 **Explanation:**
-For a 2Ã—2 matrix: trace = Î»â‚ + Î»â‚‚ = 5, determinant = Î»â‚·λ₂ = 6.
+For a 2×2 matrix: trace = λ₁ + λ₂ = 5, determinant = λ₁·λ₂ = 6.
 Solving: λ₁, λ₂ are roots of λ² - 5λ + 6 = 0 → (λ-2)(λ-3) = 0 → λ = 2, 3.
 
 ```typescript

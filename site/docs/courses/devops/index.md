@@ -1,13 +1,6 @@
 ---
-description: "This comprehensive textbook covers the full spectrum of DevOps engineering, from foundational principles through advanced site reliability engineering"
----
-
-﻿---
-id: index
-slug: /devops
 title: "DevOps Engineering — Complete University Textbook"
-sidebar_label: "DevOps Engineering — Complete University Textbook"
-sidebar_position: 28
+description: "This comprehensive textbook covers the full spectrum of DevOps engineering, from foundational principles through advanced site reliability engineering"
 ---
 
 # DevOps Engineering — Complete University Textbook

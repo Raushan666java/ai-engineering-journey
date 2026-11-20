@@ -1,13 +1,6 @@
 ---
-description: "Exam Weightage: 25 Questions in IBPS SO Prelims, critical time-management section Moderate to High (puzzles consume most time) Focus Areas: Puzzles"
----
-
-﻿---
-id: index
-slug: /reasoning-ability
 title: "Reasoning Ability — IBPS SO & Govt Exam Prep"
-sidebar_label: "Reasoning Ability — IBPS SO & Govt Exam Prep"
-sidebar_position: 7
+description: "Exam Weightage: 25 Questions in IBPS SO Prelims, critical time-management section Moderate to High (puzzles consume most time) Focus Areas: Puzzles"
 ---
 
 # Reasoning Ability — IBPS SO & Govt Exam Prep

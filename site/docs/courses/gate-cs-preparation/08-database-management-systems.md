@@ -406,7 +406,7 @@ REVOKE SELECT ON Employee FROM user1 CASCADE;
 
 ### 4.2 Attribute Closure Computation
 
-Given FD set F, find closure of attribute set X (XÃ¢Âº):
+Given FD set F, find closure of attribute set X (X⁺):
 
 ```
 Algorithm:
@@ -421,7 +421,7 @@ Algorithm:
 
 ### 4.3 Candidate Key Computation
 
-- A candidate key is a minimal superkey: XÃ¢Âº = all attributes, and no proper subset has closure = all attributes.
+- A candidate key is a minimal superkey: X⁺ = all attributes, and no proper subset has closure = all attributes.
 - **Steps:**
   1. Compute closure of attribute subsets starting from smallest size
   2. First set whose closure = all attributes is a candidate key
@@ -451,7 +451,7 @@ Decomposition of R into R1, R2 is **lossless** if:
 
 Decomposition preserves dependencies if the union of FDs projected on each decomposed relation implies the original FD set.
 
-**Algorithm:** For each FD X â†’ Y in F, check if `XÃ¢Âº` w.r.t. projected FDs contains Y. If all FDs are preserved, the decomposition is dependency-preserving.
+**Algorithm:** For each FD X → Y in F, check if `X⁺` w.r.t. projected FDs contains Y. If all FDs are preserved, the decomposition is dependency-preserving.
 
 ### 4.7 Normal Forms in Detail
 
@@ -771,9 +771,9 @@ Consider R(A, B, C, D) with FDs: A → B, BC → D. Which of the following is a 
 
 **Answer:** (b) AC
 **Explanation:**
-AÃ¢Âº = {A, B} → not all attributes
-ACÃ¢Âº = {A, C, B, D} = all attributes. AC is minimal.
-BCÃ¢Âº = {B, C, D} → A missing
+A⁺ = {A, B} → not all attributes
+AC⁺ = {A, C, B, D} = all attributes. AC is minimal.
+BC⁺ = {B, C, D} → A missing
 ABC is a superkey but not minimal.
 
 ---
@@ -806,7 +806,7 @@ R(A, B, C, D, E) with FDs: AB → C, C → D, D → E. Which normal form is this
 (d) BCNF
 
 **Answer:** (a) 1NF only
-**Explanation:** CK = AB (ABÃ¢ÂÂº = {A,B,C,D,E}). Partial dependencies: C â†’ D (C is part of CK? No, C is non-prime). Wait â†’ AB â†’ C, C â†’ D, D â†’ E. Since C, D, E depend on proper subset of CK? No proper subset: AÃ¢ÂÂº = {A}, BÃ¢Âº = {B}. No partial dependency because no non-prime depends on subset of CK. So it's in 2NF.
+**Explanation:** CK = AB (AB⁺ = {A,B,C,D,E}). Partial dependencies: C → D (C is part of CK? No, C is non-prime). Wait → AB → C, C → D, D → E. Since C, D, E depend on proper subset of CK? No proper subset: A⁺ = {A}, B⁺ = {B}. No partial dependency because no non-prime depends on subset of CK. So it's in 2NF.
 For 3NF: C → D → C is not a superkey, D is non-prime. This violates 3NF.
 So it's in 2NF. Answer is 2NF only.
 
@@ -841,9 +841,9 @@ R(A, B, C, D, E, F) with FDs: AB → C, BC → D, D → E, E → F. What are the
 
 **Answer:** (a) AB only
 **Explanation:**
-ABÃ¢Âº = {A,B,C,D,E,F} = all attributes. Minimal?
-AÃ¢ÂÂº = {A}, BÃ¢Âº = {B}. Neither gives all. So AB is CK.
-Check BCÃ¢Âº = {B,C,D,E,F} → A missing. Not a CK.
+AB⁺ = {A,B,C,D,E,F} = all attributes. Minimal?
+A⁺ = {A}, B⁺ = {B}. Neither gives all. So AB is CK.
+Check BC⁺ = {B,C,D,E,F} → A missing. Not a CK.
 AB is the only candidate key.
 
 ---
@@ -926,9 +926,9 @@ R(A, B, C, D, E) with FDs: A → B, BC → E, C → D. Is R in BCNF?
 (d) No, because C → D violates
 
 **Answer:** (d) No, because C → D violates
-**Explanation:** CK = AC (AÃ¢ÂÂº = {A,B}, CÃ¢ÂÂº = {C,D}, ACÃ¢Âº = all).
+**Explanation:** CK = AC (A⁺ = {A,B}, C⁺ = {C,D}, AC⁺ = all).
 Check each FD:
-A â†’ B: A is not superkey â†’ violates BCNF? Wait, AC is CK. Is A a superkey? AÃ¢Âº = {A,B} â‰  all. So A is NOT a superkey. A → B violates BCNF.
+A → B: A is not superkey → violates BCNF? Wait, AC is CK. Is A a superkey? A⁺ = {A,B} ≠ all. So A is NOT a superkey. A → B violates BCNF.
 Actually all three FDs violate BCNF since none have superkey on LHS.
 But the violation question: which FD violates? All do. The answer choices only flag C → D as an option.
 
@@ -1005,7 +1005,7 @@ R(A, B, C, D, E, F) with FDs: A → B, BC → D, D → EF. Which normal form?
 (d) BCNF
 
 **Answer:** (b) 2NF
-**Explanation:** CK = AC (AÃ¢ÂÂº = {A,B}, CÃ¢ÂÂº = {C}, ACÃ¢Âº = {A,B,C,D,E,F}).
+**Explanation:** CK = AC (A⁺ = {A,B}, C⁺ = {C}, AC⁺ = {A,B,C,D,E,F}).
 Partial dependencies: A → B → A is part of CK, B is non-prime. So partial dependency exists. Not in 2NF.
 Wait → A is a proper subset of CK = {A,C}. So A → B is a partial dependency. So R is in 1NF only.
 
@@ -1149,7 +1149,7 @@ This is an example of:
 ---
 
 ### D26. [GATE 2019, 2M, FD Closure]
-R(A, B, C, D, E) with FDs: A â†’ B, B â†’ C, C â†’ D, D â†’ E. What is AÃ¢Âº?
+R(A, B, C, D, E) with FDs: A → B, B → C, C → D, D → E. What is A⁺?
 
 (a) {A, B}
 (b) {A, B, C}
@@ -1158,11 +1158,11 @@ R(A, B, C, D, E) with FDs: A â†’ B, B â†’ C, C â†’ D, D â†’ 
 
 **Answer:** (d) {A, B, C, D, E}
 **Explanation:**
-Start: AÃ¢Âº = {A}
-A â†’ B: AÃ¢Âº = {A, B}
-B â†’ C: B Ã¢Å â€  AÃ¢ÂÂº, so AÃ¢Âº = {A, B, C}
-C â†’ D: C Ã¢Å â€  AÃ¢ÂÂº, so AÃ¢Âº = {A, B, C, D}
-D â†’ E: D Ã¢Å â€  AÃ¢ÂÂº, so AÃ¢Âº = {A, B, C, D, E}
+Start: A⁺ = {A}
+A → B: A⁺ = {A, B}
+B → C: B ⊆ A⁺, so A⁺ = {A, B, C}
+C → D: C ⊆ A⁺, so A⁺ = {A, B, C, D}
+D → E: D ⊆ A⁺, so A⁺ = {A, B, C, D, E}
 
 ---
 
@@ -1209,9 +1209,9 @@ R(A, B, C, D, E, F) with FDs: A → B, CD → E, B → D, E → F. What is the c
 
 **Answer:** (b) AC
 **Explanation:**
-AÃ¢Âº = {A, B, D} → missing C, E, F
-CÃ¢Âº = {C} → missing
-ACÃ¢ÂÂº = {A, C, B, D, E, F} = all attributes. Minimal? Check AÃ¢ÂÂº (no), CÃ¢Âº (no). So AC is CK.
+A⁺ = {A, B, D} → missing C, E, F
+C⁺ = {C} → missing
+AC⁺ = {A, C, B, D, E, F} = all attributes. Minimal? Check A⁺ (no), C⁺ (no). So AC is CK.
 
 ---
 
@@ -1327,8 +1327,8 @@ R(A, B, C, D, E, F, G) with FDs: A → B, B → C, C → D, D → E, E → F, F 
 
 **Answer:** (a) A only
 **Explanation:**
-AÃ¢Âº = {A, B, C, D, E, F, G} = all attributes. A is a minimal superkey.
-Check if any other: BÃ¢Âº = {B, C, D, E, F, G} → A missing. So A is the only CK.
+A⁺ = {A, B, C, D, E, F, G} = all attributes. A is a minimal superkey.
+Check if any other: B⁺ = {B, C, D, E, F, G} → A missing. So A is the only CK.
 
 ---
 
@@ -1369,7 +1369,7 @@ R(A, B, C, D, E) with FDs: A → B, BC → D, D → E. Decompose into R1(A, B), 
 **Answer:** (a) Yes
 **Explanation:**
 R1 ∩ R2 = {A}. Check if A is a superkey in either:
-AÃ¢Âº = {A, B}. In R1: {A, B} → A is key of R1. So A → R1. Lossless.
+A⁺ = {A, B}. In R1: {A, B} → A is key of R1. So A → R1. Lossless.
 
 ---
 
@@ -1424,20 +1424,20 @@ R(A, B, C, D) with FDs: AB → C, C → D, D → A. In which normal form?
 
 **Answer:** (a) BCNF
 **Explanation:**
-Find CKs: ABÃ¢ÂÂº = {A,B,C,D}. Also DÃ¢ÂÂº = {A,D} â†’ not all. CÃ¢ÂÂº = {C,D,A} â†’ CÃ¢Âº = {A,C,D} → B missing. 
-Actually: C â†’ D, D â†’ A. So CÃ¢Âº = {C, D, A}. Not all. But CD → A (trivial). 
+Find CKs: AB⁺ = {A,B,C,D}. Also D⁺ = {A,D} → not all. C⁺ = {C,D,A} → C⁺ = {A,C,D} → B missing. 
+Actually: C → D, D → A. So C⁺ = {C, D, A}. Not all. But CD → A (trivial). 
 Let me be more careful:
 D → A, so every CK must include B since B only appears on LHS.
-Check if D is in CK? DÃ¢Âº = {D, A}. Not all.
-Check CD: CDÃ¢Âº = {C, D, A}. Still not all.
-Check BD: BDÃ¢Âº = {B, D, A, C} = all. So BD is a CK.
-Also BC: BCÃ¢Âº = {B, C, D, A} = all.
-Also AB: ABÃ¢Âº = {A, B, C, D} = all.
+Check if D is in CK? D⁺ = {D, A}. Not all.
+Check CD: CD⁺ = {C, D, A}. Still not all.
+Check BD: BD⁺ = {B, D, A, C} = all. So BD is a CK.
+Also BC: BC⁺ = {B, C, D, A} = all.
+Also AB: AB⁺ = {A, B, C, D} = all.
 So CKs are AB, BC, BD.
 
 Check BCNF:
 AB → C: AB is superkey ✓
-C â†’ D: C is NOT a superkey (CÃ¢Âº = {C, D, A}). Violates BCNF.
+C → D: C is NOT a superkey (C⁺ = {C, D, A}). Violates BCNF.
 So R is NOT in BCNF.
 
 Check 3NF: C → D. C not a superkey. Is D non-prime? D is non-prime (not part of any CK? Wait, D is part of CKs BD. So D is prime!). Since D is prime, C → D is allowed in 3NF even though C is not a superkey.
@@ -1576,7 +1576,7 @@ R(A, B, C, D, E, F) with FDs: A → B, BC → D, D → E, E → F. How many cand
 **Answer:** (a) 1
 **Explanation:**
 Attributes on LHS only: A, C. These must be in every CK.
-ACÃ¢Âº = {A, C, B, D, E, F} = all attributes. AC is a CK.
+AC⁺ = {A, C, B, D, E, F} = all attributes. AC is a CK.
 Check if any other: A alone → no (C missing). C alone → no (A missing). So only one CK = AC.
 
 ---
@@ -1797,14 +1797,14 @@ R(A, B, C, D) with FDs: AB → C, C → D, D → A. Decompose into BCNF. Which d
 
 **Answer:** (b) R1(A, B, C), R2(C, D)
 **Explanation:**
-Find CKs: ABÃ¢ÂÂº = {A,B,C,D}. DÃ¢ÂÂº = {D,A}. CÃ¢ÂÂº = {C,D,A} â†’ B missing. BCÃ¢Âº = {B,C,D,A} = all.
+Find CKs: AB⁺ = {A,B,C,D}. D⁺ = {D,A}. C⁺ = {C,D,A} → B missing. BC⁺ = {B,C,D,A} = all.
 CKs: AB and BC.
 C → D violates BCNF (C is not superkey). Decompose: R1(A,B,C), R2(C,D).
 Check lossless: C is common, C → D holds in R2. ✓
 Check dependency-preserving:
 R1: AB → C holds. D → A? A is in R1 but D is not. Projected FDs on R1: AB → C.
 R2: C → D holds.
-D â†’ A: checked by combining? In R1, AB â†’ C, and from C â†’ D (R2), we get AB â†’ D. But D â†’ A needs to hold. Since C â†’ D and AB â†’ C, we have AB â†’ D. But D â†’ A: DÃ¢Âº w.r.t. projected FDs = {D} in R2. So D → A is NOT preserved.
+D → A: checked by combining? In R1, AB → C, and from C → D (R2), we get AB → D. But D → A needs to hold. Since C → D and AB → C, we have AB → D. But D → A: D⁺ w.r.t. projected FDs = {D} in R2. So D → A is NOT preserved.
 Hmm, so this is not dependency-preserving.
 
 Actually option (a): R1(A, C, D) with FDs C → D, D → A. R2(B, C) with no non-trivial FDs.
@@ -1983,9 +1983,9 @@ Note: B only appears on LHS (in AB, BC). So B must be in every CK... no, actuall
 Closing loops: A → ... → A. F → A → ... → A.? Actually F → A, A → ... → F. So A and F are in a cycle.
 All attributes are in a cycle: A → B? No. AB → C, C → D, D → E, E → F, F → A.
 B is on LHS only. So B must be in every CK.
-ABÃ¢Âº: {A,B} → C → D → E → F → A = all. CK = AB.
-BCÃ¢Âº: {B,C} → D → E → F → A → ... → B = all. CK = BC.
-CDÃ¢ÂÂº: {C,D} â†’ E â†’ F â†’ A â†’ ... â†’ ... wait, A with what? We need to derive B. CDÃ¢Âº = {C,D,E,F,A} → B missing. CD is NOT a CK since B is missing.
+AB⁺: {A,B} → C → D → E → F → A = all. CK = AB.
+BC⁺: {B,C} → D → E → F → A → ... → B = all. CK = BC.
+CD⁺: {C,D} → E → F → A → ... → ... wait, A with what? We need to derive B. CD⁺ = {C,D,E,F,A} → B missing. CD is NOT a CK since B is missing.
 Hmm. Let me recheck: From the FDs, the only way to get B is if B is already in the set. B only appears on LHS, not RHS.
 Wait: F → A. Does A give us B? AB → C, but we need B. A alone doesn't give B.
 So B is never on RHS. B must be in every CK.

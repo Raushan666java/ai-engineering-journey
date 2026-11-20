@@ -1,13 +1,6 @@
 ---
-description: "This course provides a comprehensive study of cloud computing, covering foundational concepts through advanced architectural patterns across the three"
----
-
-﻿---
-id: index
-slug: /cloud-computing
 title: "Cloud Computing — Comprehensive Course Textbook"
-sidebar_label: "Cloud Computing — Comprehensive Course Textbook"
-sidebar_position: 11
+description: "This course provides a comprehensive study of cloud computing, covering foundational concepts through advanced architectural patterns across the three"
 ---
 
 # Cloud Computing — Comprehensive Course Textbook

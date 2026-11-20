@@ -356,9 +356,9 @@ All questions are MCQs with one correct answer.
 **Q30 (1 Mark) [TOC]:** Which language is context-free but not regular?
 
 (A) {aⁿbᵐ | n,m ≥ 0}  
-(B) {aÃ¢ÂÂ¿bÃ¢Â¿ | n â‰¥ 0}  
-(C) {aÃ¢Â¿ | n is even}  
-(D) {aÃ¢Â¿ | n is prime}
+(B) {aⁿbⁿ | n ≥ 0}  
+(C) {aⁿ | n is even}  
+(D) {aⁿ | n is prime}
 
 ---
 
@@ -625,7 +625,7 @@ All questions are MCQs with one correct answer.
 
 **Q9:** North 3 − South 3 = 0 net north-south. East 4. Distance = 4 km.
 
-**Q10:** 13 mod 7 = 6. 6Ã‚Â² mod 7 = 36 mod 7 = 1. So 6^100 = (6Ã‚Â²)Ã¢ÂÂµÃ¢ÂÂ° = 1Ã¢ÂÂµÃ¢Â° = 1 mod 7. Remainder = 1.
+**Q10:** 13 mod 7 = 6. 6² mod 7 = 36 mod 7 = 1. So 6^100 = (6²)⁵⁰ = 1⁵⁰ = 1 mod 7. Remainder = 1.
 
 **Q11:** SI: Amount = P + (P×r×t)/100. For doubling: 2P = P + (P×r×8)/100 → P = (P×r×8)/100 → r = 12.5%. For quadrupling: 4P = P + (P×12.5×t)/100 → 3P = (P×12.5×t)/100 → t = 300/12.5 = 24 years.
 
@@ -651,7 +651,7 @@ Alternatively, doubling in 8 years means quadrupling (doubling twice) in 8×2 = 
 
 **Q21:** ∫₀¹∫₀¹ xy dx dy = ∫₀¹ x dx × ∫₀¹ y dy = (1/2)(1/2) = 1/4.
 
-**Q22:** Number of onto functions from 5 elements to 3 elements = ÃŽÂ£_{i=0}^{3} (Ã¢Ë†â€™1)Ã¢ÂÂ± C(3,i) (3Ã¢Ë†â€™i)Ã¢ÂÂµ = C(3,0)(3Ã¢ÂÂµ) Ã¢Ë†â€™ C(3,1)(2Ã¢ÂÂµ) + C(3,2)(1Ã¢ÂÂµ) Ã¢Ë†â€™ C(3,3)(0Ã¢Âµ) = 243 âˆ’ 3Ã—32 + 3Ã—1 âˆ’ 0 = 243 âˆ’ 96 + 3 = 150.
+**Q22:** Number of onto functions from 5 elements to 3 elements = Σ_{i=0}^{3} (−1)ⁱ C(3,i) (3−i)⁵ = C(3,0)(3⁵) − C(3,1)(2⁵) + C(3,2)(1⁵) − C(3,3)(0⁵) = 243 − 3×32 + 3×1 − 0 = 243 − 96 + 3 = 150.
 
 **Q23:** For A = [[1,1],[1,1]]: det([[1−λ,1],[1,1−λ]]) = (1−λ)² − 1 = λ² − 2λ = λ(λ−2). Eigenvalues = 0, 2. Eigenvalues of A³: 0³ = 0, 2³ = 8. Sum = 8.
 
@@ -717,13 +717,13 @@ Waiting = Turnaround − Burst. P1: wait = 16−8 = 8. P2: wait = 8−4 = 4. P3:
 
 **Q48:** Total payload = 4000 − 20 = 3980 bytes. MTU = 1500 bytes, payload per fragment = 1500 − 20 = 1480 bytes. 3980/1480 = 2.689 → 3 fragments. Fragments: first two with 1480 bytes each, third with 3980 − 2×1480 = 1020 bytes.
 
-**Q49:** Candidate key = ACD or... hmm. R(A,B,C,D) with Aâ†’B, Câ†’D. The only way to get all attributes is to start with AC (ACÃ¢Âº = ACBD = ABCD). So candidate key is AC. B is determined by A (a proper subset of the key) → partial dependency. So R is in 1NF only.
+**Q49:** Candidate key = ACD or... hmm. R(A,B,C,D) with A→B, C→D. The only way to get all attributes is to start with AC (AC⁺ = ACBD = ABCD). So candidate key is AC. B is determined by A (a proper subset of the key) → partial dependency. So R is in 1NF only.
 
 **Q50:** Emptiness problem for PDA (whether a PDA's language is empty) is decidable. Equivalence of PDAs, ambiguity of CFGs, and universality of PDAs are undecidable.
 
 **Q51:** K₆ has C(6,2) = 15 edges. A tree with 6 vertices has 5 edges. Edges to remove = 15 − 5 = 10.
 
-**Q52:** Cache = 32 KB = 2Ã‚Â¹Ã¢ÂÂµ bytes. Block = 64 = 2Ã¢ÂÂ¶ bytes. Blocks = 2Ã‚Â¹Ã¢ÂÂµ/2Ã¢ÂÂ¶ = 2Ã¢ÂÂ¹. 2-way set associative â†’ sets = 2Ã¢ÂÂ¹/2 = 2Ã¢Â¸. Index = 8 bits. Offset = 6 bits. Tag = 32 âˆ’ 8 âˆ’ 6 = 18 bits.
+**Q52:** Cache = 32 KB = 2¹⁵ bytes. Block = 64 = 2⁶ bytes. Blocks = 2¹⁵/2⁶ = 2⁹. 2-way set associative → sets = 2⁹/2 = 2⁸. Index = 8 bits. Offset = 6 bits. Tag = 32 − 8 − 6 = 18 bits.
 
 **Q53:** Three-address code for (a + b) * c − (d / e) * f:
 t1 = a + b

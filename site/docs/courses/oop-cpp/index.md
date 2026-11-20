@@ -1,13 +1,6 @@
 ---
-description: "This textbook presents a comprehensive treatment of object-oriented programming (OOP) using the C++ programming language. The material is designed for"
----
-
-﻿---
-id: index
-slug: /oop-cpp
 title: "Object-Oriented Programming with C++"
-sidebar_label: "Object-Oriented Programming with C++"
-sidebar_position: 17
+description: "This textbook presents a comprehensive treatment of object-oriented programming (OOP) using the C++ programming language. The material is designed for"
 ---
 
 # Object-Oriented Programming with C++

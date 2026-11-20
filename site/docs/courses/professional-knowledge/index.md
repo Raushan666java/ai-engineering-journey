@@ -1,13 +1,6 @@
 ---
-description: "slug: /professional-knowledge title: 'Professional Knowledge Recap — IBPS SO IT Officer Mains' sidebar_label: 'Professional Knowledge Recap — IBPS SO IT"
----
-
-﻿---
-id: index
-slug: /professional-knowledge
-title: "Professional Knowledge Recap — IBPS SO IT Officer Mains"
-sidebar_label: "Professional Knowledge Recap — IBPS SO IT Officer Mains"
-sidebar_position: 11
+title: "index"
+description: "Exam Weightage: ~60 Questions in Mains PK section (decisive paper) Weightage Insight: DBMS and Computer Networks are the highest-weightage areas —"
 ---
 
 ﻿# Professional Knowledge Recap — IBPS SO IT Officer Mains

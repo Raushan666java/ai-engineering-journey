@@ -1,13 +1,6 @@
 ---
-description: "slug: /database-management-systems title: 'Database Management Systems — Complete Textbook' sidebar_label: 'Database Management Systems — Complete"
----
-
-﻿---
-id: index
-slug: /database-management-systems
 title: "Database Management Systems — Complete Textbook"
-sidebar_label: "Database Management Systems — Complete Textbook"
-sidebar_position: 20
+description: "This textbook provides a comprehensive introduction to Database Management Systems (DBMS), covering the fundamental concepts, design methodologies, query"
 ---
 
 # Database Management Systems — Complete Textbook

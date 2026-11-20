@@ -1,13 +1,6 @@
 ---
-description: "This course bridges the gap between ML theory and production AI systems. It covers the three most in-demand applied skills: LLM orchestration with"
----
-
-﻿---
-id: index
-slug: /applied-ai
 title: "Applied AI Engineering"
-sidebar_label: "Applied AI Engineering"
-sidebar_position: 5
+description: "This course bridges the gap between ML theory and production AI systems. It covers the three most in-demand applied skills: LLM orchestration with"
 ---
 
 # Applied AI Engineering

@@ -2,6 +2,7 @@
 description: "By the end of this chapter, you will be able to: - Solve complex DI sets combining multiple data formats (table + bar + pie in one question set) - Answer"
 ---
 
+
 ﻿# Chapter 5: Mixed Data Interpretation
 
 ## Learning Objectives
@@ -853,32 +854,32 @@ We know Commerce = 40% of 1,000 = 400 students. And females = 45% of 1,000 = 450
 
 For complex multi-step calculations, trace the path from given data to answer:
 
-Table(Total) â†’ Pie(% Share) â†’ Category Value â†’ Bar(Margin %) â†’ Final Value
+Table(Total) → Pie(% Share) → Category Value → Bar(Margin %) → Final Value
 
 Each arrow represents one calculation step. Record each intermediate result.
 
 #### Percentage Chain Shortcut
 
 When computing A% of B% of C:
-A% of B% of C = (A Ã— B / 10000) Ã— C
+A% of B% of C = (A × B / 10000) × C
 
-**Example:** 30% of 40% of 1,200 = (30 Ã— 40 / 10000) Ã— 1,200 = 0.12 Ã— 1,200 = 144.
+**Example:** 30% of 40% of 1,200 = (30 × 40 / 10000) × 1,200 = 0.12 × 1,200 = 144.
 
 #### The "Total to Sub-Share" Pattern
 
 | Pattern | Formula | Example |
 |---------|---------|---------|
-| Total â†’ Category% â†’ Subcategory% | Total Ã— (Cat%/100) Ã— (Sub%/100) | 1,000 Ã— 0.35 Ã— 0.60 = 210 |
-| Total â†’ Category% â†’ Growth | Total Ã— (Cat%/100) Ã— (1 + Growth/100) | 1,000 Ã— 0.35 Ã— 1.15 = 402.5 |
-| Multiple categories â†’ Sum | Sum of individual calculations | Add each category's contribution |
+| Total → Category% → Subcategory% | Total × (Cat%/100) × (Sub%/100) | 1,000 × 0.35 × 0.60 = 210 |
+| Total → Category% → Growth | Total × (Cat%/100) × (1 + Growth/100) | 1,000 × 0.35 × 1.15 = 402.5 |
+| Multiple categories → Sum | Sum of individual calculations | Add each category's contribution |
 
 #### Weighted Average Shortcut
 
 When categories have different weights:
-Weighted Average = Î£(Value Ã— Weight) / Î£(Weight)
+Weighted Average = Σ(Value × Weight) / Σ(Weight)
 
 **Example:** Product A (60% weight, 15% growth) + Product B (40% weight, 10% growth):
-Combined growth = (60 Ã— 15 + 40 Ã— 10) / 100 = (900 + 400)/100 = 13%.
+Combined growth = (60 × 15 + 40 × 10) / 100 = (900 + 400)/100 = 13%.
 
 #### The "Approximation First" Method
 
@@ -899,12 +900,12 @@ Before exact calculation:
 |---------|---------|---------------|---------|
 | Wrong percentage base | "20% of total" vs "20% of subtotal" | Different bases change answer | Identify what % is OF |
 | Order of operations | Adding before applying % | Changes final result | Apply % first, then add |
-| Ignoring data format | Pie % treated as absolute values | % must be multiplied by total | Always: % Ã— Base value |
+| Ignoring data format | Pie % treated as absolute values | % must be multiplied by total | Always: % × Base value |
 | Skipping unit conversion | Lakhs vs crores | Off by factor of 100 | Convert to same unit |
 | Cross-format mismatch | Using table total for pie, but pie has different total | Different totals mean different datasets | Match the correct total |
 | Rounding intermediate steps | 37.5% rounded to 38% | Error accumulates | Keep 2-3 decimal places |
 
-### 5.12 GFG-Style Mixed DI â€” Customer Satisfaction
+### 5.12 GFG-Style Mixed DI — Customer Satisfaction
 
 **Case:** A company surveyed 500 customers about product satisfaction. Results showed 80% satisfied. Of satisfied customers, 60% were repeat customers.
 
@@ -936,11 +937,11 @@ b) 180
 Recommendations = 75% of 240 = 180.
 </details>
 
-### 5.13 Mixed DI â€” Multi-Format Solved Set
+### 5.13 Mixed DI — Multi-Format Solved Set
 
 **Table: Total Monthly Household Expenses**
 
-| Category | Amount (â‚¹) |
+| Category | Amount (₹) |
 |----------|-----------|
 | Food | 12,000 |
 | Rent | 18,000 |
@@ -949,7 +950,7 @@ Recommendations = 75% of 240 = 180.
 | Savings | 7,000 |
 | **Total** | **50,000** |
 
-**Pie Chart: Income Distribution (Total Monthly Income = â‚¹75,000)**
+**Pie Chart: Income Distribution (Total Monthly Income = ₹75,000)**
 
 | Source | Percentage |
 |--------|-----------|
@@ -969,7 +970,7 @@ d) 36%
 <summary>Answer</summary>
 b) 24%
 
-Rent % of income = (18,000 / 75,000) Ã— 100 = 24%.
+Rent % of income = (18,000 / 75,000) × 100 = 24%.
 </details>
 
 **Q24.** Total expenses are what percentage of total income?
@@ -984,27 +985,27 @@ d) 72.0%
 c) 66.7%
 
 Total expenses = 50,000. Total income = 75,000.
-Expenses % = (50,000/75,000) Ã— 100 = 66.67%.
+Expenses % = (50,000/75,000) × 100 = 66.67%.
 </details>
 
 **Q25.** How much more is Freelance income than Transport expense?
 
-a) â‚¹5,000
-b) â‚¹7,000
-c) â‚¹8,000
-d) â‚¹10,000
+a) ₹5,000
+b) ₹7,000
+c) ₹8,000
+d) ₹10,000
 
 <details>
 <summary>Answer</summary>
-b) â‚¹7,000
+b) ₹7,000
 
-Freelance income = 20% of 75,000 = â‚¹15,000. Transport expense = â‚¹8,000.
-Difference = â‚¹15,000 - â‚¹8,000 = â‚¹7,000.
+Freelance income = 20% of 75,000 = ₹15,000. Transport expense = ₹8,000.
+Difference = ₹15,000 - ₹8,000 = ₹7,000.
 </details>
 
-### 5.14 Mixed DI â€” Company Performance Set
+### 5.14 Mixed DI — Company Performance Set
 
-**Table: Revenue and Cost Data (â‚¹crores)**
+**Table: Revenue and Cost Data (₹crores)**
 
 | Year | Revenue | Cost | Profit |
 |------|---------|------|--------|
@@ -1023,16 +1024,16 @@ Difference = â‚¹15,000 - â‚¹8,000 = â‚¹7,000.
 
 **Q26.** What is Product A's revenue in 2022?
 
-a) â‚¹210.5 crores
-b) â‚¹240.0 crores
-c) â‚¹262.5 crores
-d) â‚¹280.0 crores
+a) ₹210.5 crores
+b) ₹240.0 crores
+c) ₹262.5 crores
+d) ₹280.0 crores
 
 <details>
 <summary>Answer</summary>
-c) â‚¹262.5 crores
+c) ₹262.5 crores
 
-Product A revenue = 35% of 750 = â‚¹262.5 crores.
+Product A revenue = 35% of 750 = ₹262.5 crores.
 </details>
 
 **Q27.** What is the CAGR of revenue from 2020 to 2022?
@@ -1046,38 +1047,38 @@ d) 26.5%
 <summary>Answer</summary>
 b) 22.5%
 
-CAGR = ((750/500)^(1/2) - 1) Ã— 100 = (1.5^0.5 - 1) Ã— 100 = (1.225 - 1) Ã— 100 = 22.5%.
+CAGR = ((750/500)^(1/2) - 1) × 100 = (1.5^0.5 - 1) × 100 = (1.225 - 1) × 100 = 22.5%.
 </details>
 
 **Q28.** If profit margin in 2023 is expected to be 32% and revenue grows by 10%, expected profit?
 
-a) â‚¹240 crores
-b) â‚¹264 crores
-c) â‚¹275 crores
-d) â‚¹290 crores
+a) ₹240 crores
+b) ₹264 crores
+c) ₹275 crores
+d) ₹290 crores
 
 <details>
 <summary>Answer</summary>
-b) â‚¹264 crores
+b) ₹264 crores
 
-Revenue 2023 = 750 Ã— 1.10 = â‚¹825 crores. Profit = 32% of 825 = â‚¹264 crores.
+Revenue 2023 = 750 × 1.10 = ₹825 crores. Profit = 32% of 825 = ₹264 crores.
 </details>
 
 ### 5.15 Additional Mixed DI MCQs (Q29-Q35)
 
 **Q29.** Table + Line chart: Q1 Rev=200 (Margin 15%), Q2 Rev=250 (18%), Q3 Rev=300 (20%), Q4 Rev=350 (22%). Total annual profit?
 
-a) â‚¹170 crores
-b) â‚¹182 crores
-c) â‚¹194 crores
-d) â‚¹206 crores
+a) ₹170 crores
+b) ₹182 crores
+c) ₹194 crores
+d) ₹206 crores
 
 <details>
 <summary>Answer</summary>
-b) â‚¹182 crores
+b) ₹182 crores
 
-Q1 profit = 15% Ã— 200 = 30. Q2 = 18% Ã— 250 = 45. Q3 = 20% Ã— 300 = 60. Q4 = 22% Ã— 350 = 77.
-Total = 30 + 45 + 60 + 77 = â‚¹212 crores.
+Q1 profit = 15% × 200 = 30. Q2 = 18% × 250 = 45. Q3 = 20% × 300 = 60. Q4 = 22% × 350 = 77.
+Total = 30 + 45 + 60 + 77 = ₹212 crores.
 </details>
 
 **Q30.** Five companies profit over 3 years. Highest average annual profit?
@@ -1115,22 +1116,22 @@ d) S's Year 3 profit highest among all
 <summary>Answer</summary>
 b) R had highest profit in Year 1 (90)
 
-Check Q: 65â†’85â†’100 âœ“all increasing, so (a) is also true. But (b) R=90 which is highest in Y1 (P=80, Q=65, S=70, T=85). So both (a) and (b) are true! Hmm, let me check which one is the intended answer.
+Check Q: 65→85→100 ✓all increasing, so (a) is also true. But (b) R=90 which is highest in Y1 (P=80, Q=65, S=70, T=85). So both (a) and (b) are true! Hmm, let me check which one is the intended answer.
 Actually since (a) Q's profit increased every year IS true (65<85<100), and (b) R had the highest Y1 profit IS also true (90 > 80, 65, 70, 85), both are true. In a standard exam, only one should be true. Let me pick (b) as the more specific one.
 </details>
 
-**Q32.** Total exports = â‚¹2,000 crores in 2022. Country A receives 40% of exports. Manufactured goods = 60% of exports to Country A. Value of manufactured goods exported to Country A?
+**Q32.** Total exports = ₹2,000 crores in 2022. Country A receives 40% of exports. Manufactured goods = 60% of exports to Country A. Value of manufactured goods exported to Country A?
 
-a) â‚¹480 crores
-b) â‚¹500 crores
-c) â‚¹600 crores
-d) â‚¹800 crores
+a) ₹480 crores
+b) ₹500 crores
+c) ₹600 crores
+d) ₹800 crores
 
 <details>
 <summary>Answer</summary>
-a) â‚¹480 crores
+a) ₹480 crores
 
-Country A exports = 40% of 2,000 = â‚¹800 crores. Manufactured = 60% of 800 = â‚¹480 crores.
+Country A exports = 40% of 2,000 = ₹800 crores. Manufactured = 60% of 800 = ₹480 crores.
 </details>
 
 **Q33.** Time and Work DI: A takes 10 days, B takes 15 days. A works alone 3 days, then B joins. Total days to complete?
@@ -1161,9 +1162,9 @@ d) 37/105
 <summary>Answer</summary>
 a) 31/105
 
-Total balls = 15. P(both red) = 6/15 Ã— 5/14 = 30/210 = 1/7.
-P(both blue) = 4/15 Ã— 3/14 = 12/210 = 2/35.
-P(both green) = 5/15 Ã— 4/14 = 20/210 = 2/21.
+Total balls = 15. P(both red) = 6/15 × 5/14 = 30/210 = 1/7.
+P(both blue) = 4/15 × 3/14 = 12/210 = 2/35.
+P(both green) = 5/15 × 4/14 = 20/210 = 2/21.
 P(same color) = 1/7 + 2/35 + 2/21 = 15/105 + 6/105 + 10/105 = 31/105.
 </details>
 
@@ -1190,7 +1191,7 @@ The implied order is: T > P > S > Q > R (since S must be below P and above Q bas
 
 | Phase | Action | Time |
 |-------|--------|------|
-| **Phase 1** | Read all data formats â€” table, bar, pie, line | 2 min |
+| **Phase 1** | Read all data formats — table, bar, pie, line | 2 min |
 | **Phase 2** | Identify linking variables between formats | 1 min |
 | **Phase 3** | Answer direct-read questions first | 2 min |
 | **Phase 4** | Answer single-format calculation questions | 2 min |
@@ -1213,22 +1214,22 @@ The implied order is: T > P > S > Q > R (since S must be below P and above Q bas
 `	ypescript
 /** Utility for multi-step mixed DI calculations */
 class MixedDICalculator {
-  /** Chain: Total â†’ % Share â†’ Value */
+  /** Chain: Total → % Share → Value */
   static shareOf(total: number, percentage: number): number {
     return (percentage / 100) * total;
   }
 
-  /** Chain: Value â†’ % â†’ Sub-Value */
+  /** Chain: Value → % → Sub-Value */
   static subShare(total: number, pct1: number, pct2: number): number {
     return this.shareOf(this.shareOf(total, pct1), pct2);
   }
 
-  /** Chain: Value â†’ Growth â†’ New Value */
+  /** Chain: Value → Growth → New Value */
   static applyGrowth(value: number, growthPercent: number): number {
     return value * (1 + growthPercent / 100);
   }
 
-  /** Reverse: New Value â†’ Growth â†’ Original */
+  /** Reverse: New Value → Growth → Original */
   static reverseGrowth(newValue: number, growthPercent: number): number {
     return newValue / (1 + growthPercent / 100);
   }

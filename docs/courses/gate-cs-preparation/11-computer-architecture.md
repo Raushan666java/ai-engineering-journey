@@ -61,22 +61,22 @@ flowchart LR
 > **Remember:** Cache mapping (direct, set-associative, fully-associative) and formula-based questions are highly scoring.
 
 
-## Topic Weightage in GATE (2010Ã¢â‚¬â€œ2025)
+## Topic Weightage in GATE (2010–2025)
 
 ![Computer Architecture Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/11-computer-architecture.png)
 
 | Topic | Weightage | Avg Marks/Yr | GATE Favorite Areas |
 |-------|-----------|-------------|---------------------|
-| Data Representation & Number Systems | 12Ã¢â‚¬â€œ15% | 3Ã¢â‚¬â€œ5 | IEEE 754 floating point, 2's complement, range calculations |
-| Pipelining | 10Ã¢â‚¬â€œ14% | 3Ã¢â‚¬â€œ4 | Pipeline timing diagrams, hazards, speedup, branch penalty |
-| Cache & Memory Hierarchy | 12Ã¢â‚¬â€œ16% | 3Ã¢â‚¬â€œ5 | Cache mapping, associativity, miss rate, effective access time |
-| ALU & Arithmetic Circuits | 8Ã¢â‚¬â€œ10% | 2Ã¢â‚¬â€œ3 | Carry lookahead, Booth's algorithm, division algorithms |
-| Control Unit Design | 6Ã¢â‚¬â€œ8% | 1Ã¢â‚¬â€œ2 | Microprogrammed vs hardwired, microinstruction sequencing |
-| Instruction Set Architecture | 8Ã¢â‚¬â€œ10% | 2Ã¢â‚¬â€œ3 | Addressing modes, instruction formats, RISC vs CISC |
-| I/O Organization | 6Ã¢â‚¬â€œ8% | 1Ã¢â‚¬â€œ2 | DMA, interrupt handling, vectored interrupts |
-| Basic CPU Organization | 5Ã¢â‚¬â€œ7% | 1Ã¢â‚¬â€œ2 | Registers, bus architecture, von Neumann vs Harvard |
-| Multi-processors & Parallel | 6Ã¢â‚¬â€œ8% | 1Ã¢â‚¬â€œ2 | Flynn's taxonomy, cache coherence, MESI |
-| Performance Metrics | 4Ã¢â‚¬â€œ6% | 1 | Amdahl's Law, CPI, MIPS |
+| Data Representation & Number Systems | 12–15% | 3–5 | IEEE 754 floating point, 2's complement, range calculations |
+| Pipelining | 10–14% | 3–4 | Pipeline timing diagrams, hazards, speedup, branch penalty |
+| Cache & Memory Hierarchy | 12–16% | 3–5 | Cache mapping, associativity, miss rate, effective access time |
+| ALU & Arithmetic Circuits | 8–10% | 2–3 | Carry lookahead, Booth's algorithm, division algorithms |
+| Control Unit Design | 6–8% | 1–2 | Microprogrammed vs hardwired, microinstruction sequencing |
+| Instruction Set Architecture | 8–10% | 2–3 | Addressing modes, instruction formats, RISC vs CISC |
+| I/O Organization | 6–8% | 1–2 | DMA, interrupt handling, vectored interrupts |
+| Basic CPU Organization | 5–7% | 1–2 | Registers, bus architecture, von Neumann vs Harvard |
+| Multi-processors & Parallel | 6–8% | 1–2 | Flynn's taxonomy, cache coherence, MESI |
+| Performance Metrics | 4–6% | 1 | Amdahl's Law, CPI, MIPS |
 
 ---
 
@@ -88,8 +88,8 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 
 **Key characteristics:**
 - Single memory space (instructions + data)
-- Sequential instruction execution (PC â†’ fetch â†’ decode â†’ execute â†’ repeat)
-- Bottleneck: von Neumann bottleneck â†’ limited bandwidth between CPU and memory
+- Sequential instruction execution (PC → fetch → decode → execute → repeat)
+- Bottleneck: von Neumann bottleneck → limited bandwidth between CPU and memory
 - 3-bus system: address bus, data bus, control bus
 
 ```
@@ -102,7 +102,7 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 ```
 
 **Execution cycle (Fetch-Decode-Execute):**
-1. **Fetch:** PC â†’ MAR â†’ memory â†’ MDR â†’ IR, PC â† PC + 1
+1. **Fetch:** PC → MAR → memory → MDR → IR, PC ← PC + 1
 2. **Decode:** Control unit decodes instruction in IR
 3. **Execute:** ALU performs operation, results written back
 
@@ -110,7 +110,7 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 
 - Separate instruction memory and data memory
 - Allows simultaneous fetch and data access
-- Used in most modern CPUs (modified Harvard â†’ separate L1 caches, unified lower levels)
+- Used in most modern CPUs (modified Harvard → separate L1 caches, unified lower levels)
 - Pipelining benefits from Harvard: instruction fetch and data access don't conflict
 
 ### 1.3 CPU Register Set
@@ -122,13 +122,13 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 | MAR (Memory Address Register) | address width | Address for memory access |
 | MDR (Memory Data Register) | word | Data read from/written to memory |
 | ACC (Accumulator) | word | ALU result storage |
-| GPRs (General Purpose Regs) | word Ãƒâ€” N | Operands, addresses, temporaries |
+| GPRs (General Purpose Regs) | word × N | Operands, addresses, temporaries |
 | SP (Stack Pointer) | address width | Top of stack |
 | FR (Flag Register) / SR | bit-field | Status flags: Z, C, V, N, etc. |
 | Base Register / Index Register | address width | Addressing mode support |
 
-**Programmer-visible registers:** GPRs, PC, SP, FR â†’ accessible via ISA.
-**Invisible registers:** MAR, MDR, IR, temporary ALU inputs â†’ used internally.
+**Programmer-visible registers:** GPRs, PC, SP, FR → accessible via ISA.
+**Invisible registers:** MAR, MDR, IR, temporary ALU inputs → used internally.
 
 ### 1.4 Bus Architecture
 
@@ -148,7 +148,7 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 
 ### 1.5 Word Length & Addressing
 
-- Word length: natural data size of the processor (n bits â†’ ALU, registers, buses all n-bit)
+- Word length: natural data size of the processor (n bits → ALU, registers, buses all n-bit)
 - Byte addressable: each byte has a unique address
 - Word alignment: word addresses are multiples of word-size-in-bytes
 
@@ -161,11 +161,11 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 | Feature | RISC | CISC |
 |---------|------|------|
 | Instructions | Simple, fixed-length (usually 32-bit) | Complex, variable-length |
-| Addressing modes | Few (1Ã¢â‚¬â€œ3) | Many (6Ã¢â‚¬â€œ20+) |
+| Addressing modes | Few (1–3) | Many (6–20+) |
 | Number of instructions | < 100 | > 200 |
 | Memory access | Load/Store only | Memory-operand instructions allowed |
-| Register count | Many (32Ã¢â‚¬â€œ128) | Few (8Ã¢â‚¬â€œ16) |
-| CPI | 1 (pipelined) | 2Ã¢â‚¬â€œ15 |
+| Register count | Many (32–128) | Few (8–16) |
+| CPI | 1 (pipelined) | 2–15 |
 | Control unit | Hardwired (preferred) | Microprogrammed (preferred) |
 | Examples | MIPS, ARM, RISC-V | x86, 68000 |
 
@@ -187,28 +187,28 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 | Base-displacement | EA = base + offset | `LW R1, 4(R2)` | Stack/struct access |
 | Indexed | EA = base + index | `LW R1, array(R2)` | Array access |
 | PC-relative | EA = PC + offset | `BEQ R1, R2, label` | Branches |
-| Autoincrement | EA = R; R â† R + 1 | `LW R1, (R2)+` | String ops |
-| Autodecrement | R â† R Ã¢Ë†â€™ 1; EA = R | `LW R1, Ã¢Ë†â€™(R2)` | Stack push |
-| Scaled indexed | EA = base + (index Ãƒâ€” scale) | `LW R1, arr(R2Ãƒâ€”4)` | Word arrays |
+| Autoincrement | EA = R; R ← R + 1 | `LW R1, (R2)+` | String ops |
+| Autodecrement | R ← R − 1; EA = R | `LW R1, −(R2)` | Stack push |
+| Scaled indexed | EA = base + (index × scale) | `LW R1, arr(R2×4)` | Word arrays |
 
 **GATE tip:** Always check the direction of autoincrement (post-increment) vs autodecrement (pre-decrement).
 
 ### 2.3 Instruction Formats
 
 **Zero-address (Stack machine):**
-- `ADD` â†’ pops two values from stack, pushes result
+- `ADD` → pops two values from stack, pushes result
 - Stack top is always the implied operand
 
 **One-address (Accumulator machine):**
-- `ADD X` â†’ ACC â† ACC + M[X]
+- `ADD X` → ACC ← ACC + M[X]
 - Second operand is always accumulator
 
 **Two-address (CISC):**
-- `ADD R1, R2` â†’ R1 â† R1 + R2 (destructive)
-- `MOV R1, R2` â†’ R1 â† R2
+- `ADD R1, R2` → R1 ← R1 + R2 (destructive)
+- `MOV R1, R2` → R1 ← R2
 
 **Three-address (RISC):**
-- `ADD R1, R2, R3` â†’ R1 â† R2 + R3 (non-destructive)
+- `ADD R1, R2, R3` → R1 ← R2 + R3 (non-destructive)
 - Maximum flexibility, longer instruction length
 
 ### 2.4 Endianness
@@ -233,7 +233,7 @@ Value:    0x78 0x56 0x34 0x12
 |------|---------|----------|
 | Z (Zero) | Result = 0 | ALU output = 0 |
 | C (Carry) | Unsigned overflow | Cout from MSB |
-| V (Overflow) | Signed overflow | CinÃ¢â€°Â Cout at MSB |
+| V (Overflow) | Signed overflow | Cin≠Cout at MSB |
 | N (Negative) | Sign bit | MSB of result = 1 |
 
 ---
@@ -243,46 +243,46 @@ Value:    0x78 0x56 0x34 0x12
 ### 3.1 Number Bases
 
 **Conversions:**
-- Decimal â†’ Binary: repeated division by 2
-- Binary â†’ Hex: group 4 bits from binary point
-- Hex â†’ Binary: expand each hex digit to 4 bits
-- Octal â†” Binary: group 3 bits
+- Decimal → Binary: repeated division by 2
+- Binary → Hex: group 4 bits from binary point
+- Hex → Binary: expand each hex digit to 4 bits
+- Octal ↔ Binary: group 3 bits
 
 ### 3.2 Signed Integer Representations
 
 **Signed Magnitude:**
-- MSB = sign (0=+ve, 1=Ã¢Ë†â€™ve), remaining bits = magnitude
-- Range: Ã¢Ë†â€™(2^(nÃ¢Ë†â€™1)Ã¢Ë†â€™1) to +(2^(nÃ¢Ë†â€™1)Ã¢Ë†â€™1)
-- Problem: two zeros (+0 and Ã¢Ë†â€™0)
+- MSB = sign (0=+ve, 1=−ve), remaining bits = magnitude
+- Range: −(2^(n−1)−1) to +(2^(n−1)−1)
+- Problem: two zeros (+0 and −0)
 
 **1's Complement:**
 - Negative: bitwise NOT of positive
-- Range: Ã¢Ë†â€™(2^(nÃ¢Ë†â€™1)Ã¢Ë†â€™1) to +(2^(nÃ¢Ë†â€™1)Ã¢Ë†â€™1)
+- Range: −(2^(n−1)−1) to +(2^(n−1)−1)
 - Problem: two zeros; end-around carry in addition
 
 **2's Complement (standard):**
 - Negative: bitwise NOT + 1
-- Range: Ã¢Ë†â€™2^(nÃ¢Ë†â€™1) to +2^(nÃ¢Ë†â€™1)Ã¢Ë†â€™1
+- Range: −2^(n−1) to +2^(n−1)−1
 - Single zero; subtraction = ADD of 2's complement
 
 **2's complement operations:**
 - Negation: invert all bits + 1
 - Sign extension: copy MSB into new higher bits
-- Addition: add normally, ignore final carry; overflow if CinÃ¢â€°Â Cout at MSB
+- Addition: add normally, ignore final carry; overflow if Cin≠Cout at MSB
 
 **Range table:**
 
 | n bits | Signed Magnitude | 1's Complement | 2's Complement |
 |--------|-----------------|----------------|----------------|
-| 8 | Ã¢Ë†â€™127 to +127 | Ã¢Ë†â€™127 to +127 | Ã¢Ë†â€™128 to +127 |
-| 16 | Ã¢Ë†â€™32767 to +32767 | Ã¢Ë†â€™32767 to +32767 | Ã¢Ë†â€™32768 to +32767 |
-| n | Ã‚Â±(2^(nÃ¢Ë†â€™1)Ã¢Ë†â€™1) | Ã‚Â±(2^(nÃ¢Ë†â€™1)Ã¢Ë†â€™1) | Ã¢Ë†â€™2^(nÃ¢Ë†â€™1) to +2^(nÃ¢Ë†â€™1)Ã¢Ë†â€™1 |
+| 8 | −127 to +127 | −127 to +127 | −128 to +127 |
+| 16 | −32767 to +32767 | −32767 to +32767 | −32768 to +32767 |
+| n | ±(2^(n−1)−1) | ±(2^(n−1)−1) | −2^(n−1) to +2^(n−1)−1 |
 
 ### 3.3 Fixed-Point Representation
 
 - Qm.n format: m integer bits, n fractional bits
-- Value = (integer part) + (fractional part) Ãƒâ€” 2^(Ã¢Ë†â€™n)
-- Example: Q4.4 â†’ range 0 to 15.9375, precision 1/16
+- Value = (integer part) + (fractional part) × 2^(−n)
+- Example: Q4.4 → range 0 to 15.9375, precision 1/16
 
 ### 3.4 IEEE 754 Floating-Point Standard
 
@@ -291,13 +291,13 @@ Value:    0x78 0x56 0x34 0x12
 ```
 | 1 bit | 8 bits | 23 bits |
 | Sign | Exponent | Mantissa (fraction) |
-| 31    | 30Ã¢â‚¬â€œ23   | 22Ã¢â‚¬â€œ0                 |
+| 31    | 30–23   | 22–0                 |
 ```
 
-**Value = (Ã¢Ë†â€™1)^S Ãƒâ€” 1.M Ãƒâ€” 2^(EÃ¢Ë†â€™127)**
+**Value = (−1)^S × 1.M × 2^(E−127)**
 
 Where:
-- S = sign bit (0 = +ve, 1 = Ã¢Ë†â€™ve)
+- S = sign bit (0 = +ve, 1 = −ve)
 - E = biased exponent (8 bits, bias = 127)
 - M = mantissa/fraction (23 bits, normalized with implicit leading 1)
 
@@ -305,28 +305,28 @@ Where:
 
 | Exponent | Fraction | Meaning |
 |----------|----------|---------|
-| 0 | 0 | Ã‚Â±0 (signed zero) |
-| 0 | Ã¢â€°Â  0 | Denormalized: (Ã¢Ë†â€™1)^S Ãƒâ€” 0.M Ãƒâ€” 2^(Ã¢Ë†â€™126) |
-| 1Ã¢â‚¬â€œ254 | anything | Normalized: (Ã¢Ë†â€™1)^S Ãƒâ€” 1.M Ãƒâ€” 2^(EÃ¢Ë†â€™127) |
-| 255 | 0 | Ã‚Â±Infinity |
-| 255 | Ã¢â€°Â  0 | NaN (Not a Number) |
+| 0 | 0 | ±0 (signed zero) |
+| 0 | ≠ 0 | Denormalized: (−1)^S × 0.M × 2^(−126) |
+| 1–254 | anything | Normalized: (−1)^S × 1.M × 2^(E−127) |
+| 255 | 0 | ±Infinity |
+| 255 | ≠ 0 | NaN (Not a Number) |
 
-**Range:** Ã‚Â±1.18 Ãƒâ€” 10^(Ã¢Ë†â€™38) to Ã‚Â±3.4 Ãƒâ€” 10^(38)
-**Precision:** ~7 decimal digits (23 bits â†’ 2^23 Ã¢â€°Ë† 6 million)
+**Range:** ±1.18 × 10^(−38) to ±3.4 × 10^(38)
+**Precision:** ~7 decimal digits (23 bits → 2^23 ≈ 6 million)
 
 #### Double Precision (64-bit)
 
 ```
 | 1 bit | 11 bits | 52 bits |
 | Sign | Exponent | Mantissa |
-| 63    | 62Ã¢â‚¬â€œ52   | 51Ã¢â‚¬â€œ0    |
+| 63    | 62–52   | 51–0    |
 ```
 
-**Value = (Ã¢Ë†â€™1)^S Ãƒâ€” 1.M Ãƒâ€” 2^(EÃ¢Ë†â€™1023)**
+**Value = (−1)^S × 1.M × 2^(E−1023)**
 
 **Bias:** 1023
-**Range:** Ã‚Â±2.23 Ãƒâ€” 10^(Ã¢Ë†â€™308) to Ã‚Â±1.79 Ãƒâ€” 10^(308)
-**Precision:** ~15Ã¢â‚¬â€œ16 decimal digits
+**Range:** ±2.23 × 10^(−308) to ±1.79 × 10^(308)
+**Precision:** ~15–16 decimal digits
 
 #### Key GATE Formulas for IEEE 754
 
@@ -336,10 +336,10 @@ Where:
 | Mantissa bits | 23 | 52 |
 | Bias | 127 | 1023 |
 | Max normalized exponent | +127 | +1023 |
-| Min normalized exponent | Ã¢Ë†â€™126 | Ã¢Ë†â€™1022 |
-| Largest normalized | Ã¢â€°Ë† 3.4 Ãƒâ€” 10^38 | Ã¢â€°Ë† 1.79 Ãƒâ€” 10^308 |
-| Smallest positive normalized | Ã¢â€°Ë† 1.18 Ãƒâ€” 10^(Ã¢Ë†â€™38) | Ã¢â€°Ë† 2.23 Ãƒâ€” 10^(Ã¢Ë†â€™308) |
-| Machine epsilon (1 + ÃŽÂµ > 1) | 2^(Ã¢Ë†â€™23) Ã¢â€°Ë† 1.19 Ãƒâ€” 10^(Ã¢Ë†â€™7) | 2^(Ã¢Ë†â€™52) Ã¢â€°Ë† 2.22 Ãƒâ€” 10^(Ã¢Ë†â€™16) |
+| Min normalized exponent | −126 | −1022 |
+| Largest normalized | ≈ 3.4 × 10^38 | ≈ 1.79 × 10^308 |
+| Smallest positive normalized | ≈ 1.18 × 10^(−38) | ≈ 2.23 × 10^(−308) |
+| Machine epsilon (1 + ε > 1) | 2^(−23) ≈ 1.19 × 10^(−7) | 2^(−52) ≈ 2.22 × 10^(−16) |
 
 **GATE favorites for IEEE 754:**
 - Finding representation of a decimal in IEEE 754
@@ -352,14 +352,14 @@ Where:
 ### 3.5 Floating-Point Arithmetic
 
 **Addition/Subtraction:**
-1. Align exponents (smaller exponent â†’ larger)
+1. Align exponents (smaller exponent → larger)
 2. Add/subtract mantissas
 3. Normalize result
 4. Round (guard, round, sticky bits)
 
 **Multiplication:**
 1. Add exponents (subtract bias once)
-2. Multiply mantissas (1.M Ãƒâ€” 1.M)
+2. Multiply mantissas (1.M × 1.M)
 3. Normalize and round
 
 ---
@@ -369,31 +369,31 @@ Where:
 ### 4.1 Basic Adders
 
 **Half Adder:**
-- S = A Ã¢Å â€¢ B, C = A Ã‚Â· B
+- S = A ⊕ B, C = A · B
 
 **Full Adder:**
-- S = A Ã¢Å â€¢ B Ã¢Å â€¢ Cin
-- Cout = AÃ‚Â·B + CinÃ‚Â·(AÃ¢Å â€¢B) = AÃ‚Â·B + BÃ‚Â·Cin + AÃ‚Â·Cin
+- S = A ⊕ B ⊕ Cin
+- Cout = A·B + Cin·(A⊕B) = A·B + B·Cin + A·Cin
 
 ### 4.2 Ripple-Carry Adder (RCA)
 
-- n full adders cascaded: Cout of stage i â†’ Cin of stage i+1
-- Delay = n Ãƒâ€” t_FA (where t_FA = delay of one full adder)
+- n full adders cascaded: Cout of stage i → Cin of stage i+1
+- Delay = n × t_FA (where t_FA = delay of one full adder)
 - Simple but slow for large n
 
 ### 4.3 Carry Lookahead Adder (CLA)
 
 **Key insight:** Generate (G) and Propagate (P) signals:
 
-- G_i = A_i Ã‚Â· B_i (carry generated when both inputs = 1)
-- P_i = A_i Ã¢Å â€¢ B_i (carry propagated when exactly one input = 1)
+- G_i = A_i · B_i (carry generated when both inputs = 1)
+- P_i = A_i ⊕ B_i (carry propagated when exactly one input = 1)
 
 **Cascade equations:**
 ```
-C_1 = G_0 + P_0Ã‚Â·C_0
-C_2 = G_1 + P_1Ã‚Â·G_0 + P_1Ã‚Â·P_0Ã‚Â·C_0
-C_3 = G_2 + P_2Ã‚Â·G_1 + P_2Ã‚Â·P_1Ã‚Â·G_0 + P_2Ã‚Â·P_1Ã‚Â·P_0Ã‚Â·C_0
-C_4 = G_3 + P_3Ã‚Â·G_2 + P_3Ã‚Â·P_2Ã‚Â·G_1 + P_3Ã‚Â·P_2Ã‚Â·P_1Ã‚Â·G_0 + P_3Ã‚Â·P_2Ã‚Â·P_1Ã‚Â·P_0Ã‚Â·C_0
+C_1 = G_0 + P_0·C_0
+C_2 = G_1 + P_1·G_0 + P_1·P_0·C_0
+C_3 = G_2 + P_2·G_1 + P_2·P_1·G_0 + P_2·P_1·P_0·C_0
+C_4 = G_3 + P_3·G_2 + P_3·P_2·G_1 + P_3·P_2·P_1·G_0 + P_3·P_2·P_1·P_0·C_0
 ```
 
 **Delay of CLA:** ~4 gate delays (independent of n, in theory)
@@ -403,41 +403,41 @@ C_4 = G_3 + P_3Ã‚Â·G_2 + P_3Ã‚Â·P_2Ã‚Â·G_1 + P_3Ã‚Â·P_2Ã‚
 
 - Used in multi-operand addition (summing 3+ numbers)
 - Saves carry outputs rather than propagating them
-- Input: 3 numbers â†’ output: sum vector + carry vector
+- Input: 3 numbers → output: sum vector + carry vector
 - Final stage uses a CLA to combine sum and carry vectors
 
 ### 4.5 Booth's Algorithm (Signed Multiplication)
 
 **Encoding (Booth recoding) for multiplier bits:**
-- 00 â†’ 0 (no operation)
-- 01 â†’ +1 (add multiplicand)
-- 10 â†’ Ã¢Ë†â€™1 (subtract multiplicand)
-- 11 â†’ 0 (no operation)
+- 00 → 0 (no operation)
+- 01 → +1 (add multiplicand)
+- 10 → −1 (subtract multiplicand)
+- 11 → 0 (no operation)
 
-**Algorithm (n-bit Ãƒâ€” n-bit):**
+**Algorithm (n-bit × n-bit):**
 ```
 product = 0
-multiplier extended with 0 on right as (Q0, QÃ¢Ë†â€™1 = 0)
-for i = 0 to nÃ¢Ë†â€™1:
-    if (Q0, QÃ¢Ë†â€™1) == (0,1): product = product + multiplicand
-    if (Q0, QÃ¢Ë†â€™1) == (1,0): product = product Ã¢Ë†â€™ multiplicand
-    arithmetic right-shift (product : multiplier : QÃ¢Ë†â€™1)
+multiplier extended with 0 on right as (Q0, Q−1 = 0)
+for i = 0 to n−1:
+    if (Q0, Q−1) == (0,1): product = product + multiplicand
+    if (Q0, Q−1) == (1,0): product = product − multiplicand
+    arithmetic right-shift (product : multiplier : Q−1)
 ```
 
 **Time:** n cycles of add/sub + shift
 **Advantage:** handles 2's complement signed numbers directly; fewer additions for long runs of 1s
 
 **Modified Booth (Booth-2 / Radix-4):**
-- Encodes 3 bits at a time â†’ halves number of cycles
-- Operations: Ã¢Ë†â€™2M, Ã¢Ë†â€™M, 0, +M, +2M
+- Encodes 3 bits at a time → halves number of cycles
+- Operations: −2M, −M, 0, +M, +2M
 
 ### 4.6 Restoring Division
 
-**Algorithm (n-bit dividend / n-bit divisor â†’ n-bit quotient):**
+**Algorithm (n-bit dividend / n-bit divisor → n-bit quotient):**
 ```
 remainder = dividend
-for i = 0 to nÃ¢Ë†â€™1:
-    remainder = remainder Ã¢Ë†â€™ divisor
+for i = 0 to n−1:
+    remainder = remainder − divisor
     if remainder >= 0:
         Q[i] = 1
         remainder = remainder << 1
@@ -455,16 +455,16 @@ for i = 0 to nÃ¢Ë†â€™1:
 **Optimization:** eliminate the restore step
 ```
 remainder = dividend
-for i = 0 to nÃ¢Ë†â€™1:
+for i = 0 to n−1:
     if remainder >= 0:
-        remainder = 2Ãƒâ€”remainder Ã¢Ë†â€™ divisor
+        remainder = 2×remainder − divisor
         Q[i] = 1
     else:
-        remainder = 2Ãƒâ€”remainder + divisor
+        remainder = 2×remainder + divisor
         Q[i] = 0
 if remainder < 0:
     remainder = remainder + divisor  // final correction
-    Q = Q Ã¢Ë†â€™ 1                        // final correction
+    Q = Q − 1                        // final correction
 ```
 
 **Advantage:** one operation per cycle (n cycles, no worst-case doubling)
@@ -487,7 +487,7 @@ if remainder < 0:
 - Outputs: control signals (register load, ALU op, MUX select, etc.)
 
 **Design steps:**
-1. Draw state diagram (fetch â†’ decode â†’ execute cycles)
+1. Draw state diagram (fetch → decode → execute cycles)
 2. Assign state codes (binary encoding of states)
 3. Derive excitation equations for next-state logic
 4. Derive output equations for control signals
@@ -515,7 +515,7 @@ if remainder < 0:
 - Cons: large control store width
 
 **Vertical microprogramming:**
-- Fields encoded (e.g., 3-bit field â†’ 8 signals decoded)
+- Fields encoded (e.g., 3-bit field → 8 signals decoded)
 - Pros: smaller control store
 - Cons: limited parallelism, decode delay
 
@@ -527,10 +527,10 @@ if remainder < 0:
 ### 5.3 Microinstruction Sequencing
 
 **Next-address generation methods:**
-1. **Next sequential** (micro-PC + 1) â†’ implicit
-2. **Branch** â†’ conditional/unconditional jump in microcode
-3. **Mapping** â†’ opcode â†’ microcode start address (via mapping ROM/PLA)
-4. **Subroutine call/return** â†’ micro-subroutine support
+1. **Next sequential** (micro-PC + 1) → implicit
+2. **Branch** → conditional/unconditional jump in microcode
+3. **Mapping** → opcode → microcode start address (via mapping ROM/PLA)
+4. **Subroutine call/return** → micro-subroutine support
 
 **Sequencing control fields:**
 - Branch condition select
@@ -557,12 +557,12 @@ if remainder < 0:
 
 Typical RISC pipeline stages:
 ```
-IF â†’ ID â†’ EX â†’ MEM â†’ WB
+IF → ID → EX → MEM → WB
 ```
 
 | Stage | Operation |
 |-------|-----------|
-| IF (Instruction Fetch) | PC â†’ instruction memory, fetch instruction, PC+4 |
+| IF (Instruction Fetch) | PC → instruction memory, fetch instruction, PC+4 |
 | ID (Instruction Decode) | Decode instruction, read register file |
 | EX (Execute) | ALU operation, address calculation |
 | MEM (Memory Access) | Load/store data memory access |
@@ -575,7 +575,7 @@ IF â†’ ID â†’ EX â†’ MEM â†’ WB
 
 #### Structural Hazard
 - Required hardware resource is busy
-- **Example:** Single memory for instruction and data â†’ IF and MEM conflict
+- **Example:** Single memory for instruction and data → IF and MEM conflict
 - **Solution:** Separate I-cache and D-cache (Harvard), or stall
 
 #### Data Hazard (RAW, WAR, WAW)
@@ -592,7 +592,7 @@ IF â†’ ID â†’ EX â†’ MEM â†’ WB
 **Example RAW hazard:**
 ```
 ADD R1, R2, R3    // R1 = R2 + R3
-SUB R4, R1, R5    // R4 = R1 Ã¢Ë†â€™ R5 â†’ RAW with ADD
+SUB R4, R1, R5    // R4 = R1 − R5 → RAW with ADD
 ```
 
 **Solutions to data hazards:**
@@ -602,7 +602,7 @@ SUB R4, R1, R5    // R4 = R1 Ã¢Ë†â€™ R5 â†’ RAW with ADD
    - Cost: stalls = number of cycles needed
 
 2. **Forwarding (Bypassing):** Route ALU output directly to next instruction's ALU input
-   - Forwarding paths: EXâ†’EX, MEMâ†’EX, MEMâ†’MEM, WBâ†’EX
+   - Forwarding paths: EX→EX, MEM→EX, MEM→MEM, WB→EX
    - Eliminates most 1-cycle RAW hazards
    - Cannot handle load-use hazard (load followed by instruction using loaded value): 1 stall bubble needed
 
@@ -613,12 +613,12 @@ SUB R4, R1, R5    // R4 = R1 Ã¢Ë†â€™ R5 â†’ RAW with ADD
 - **Branch penalty:** cycles wasted due to wrong prediction
 
 **Solutions:**
-1. **Flush:** Always flush pipeline on branch â†’ penalty = branch resolution delay (typically 2Ã¢â‚¬â€œ3 cycles)
+1. **Flush:** Always flush pipeline on branch → penalty = branch resolution delay (typically 2–3 cycles)
 2. **Branch prediction:**
    - Static: always taken, always not-taken, backward-taken/forward-not-taken (BTFNT)
    - Dynamic: 1-bit, 2-bit saturating counter, correlating predictors, tournament predictors
 3. **Delayed branch:** Always execute instruction in branch delay slot (compiler fills with useful work)
-4. **Branch target buffer (BTB):** Cache of previously taken branch targets â†’ predict and fetch in IF
+4. **Branch target buffer (BTB):** Cache of previously taken branch targets → predict and fetch in IF
 
 ### 6.3 Pipeline Timing Diagrams (GATE Favorite)
 
@@ -631,7 +631,7 @@ ADD R3, R1, R4        IF    ID    [STALL] EX    MEM   WB
 SW R3, 0(R5)                IF           ID    EX    MEM   WB
 ```
 
-**Load-use hazard:** ADD reads R1 before LW writes it â†’ 1 stall cycle needed (even with forwarding)
+**Load-use hazard:** ADD reads R1 before LW writes it → 1 stall cycle needed (even with forwarding)
 
 ### 6.4 Pipeline Speedup Formula
 
@@ -641,25 +641,25 @@ Speedup = CPI_unpipelined / CPI_pipelined
         
 For ideal pipeline: Speedup = Number of stages (n)
 
-Actual Speedup = n / (1 + n Ãƒâ€” (stall_frequency Ãƒâ€” stall_cycles))
+Actual Speedup = n / (1 + n × (stall_frequency × stall_cycles))
 ```
 
-**GATE tip:** When pipelines are given with branch penalties and data hazard stalls, compute effective CPI = 1 + stall_rate Ãƒâ€” stall_cycles.
+**GATE tip:** When pipelines are given with branch penalties and data hazard stalls, compute effective CPI = 1 + stall_rate × stall_cycles.
 
 ### 6.5 Branch Prediction
 
 **1-bit predictor:**
 - Predict same as last outcome
-- Mis-predictions: 2 on loops (taken at end â†’ miss at exit and re-entry)
+- Mis-predictions: 2 on loops (taken at end → miss at exit and re-entry)
 
 **2-bit saturating counter:**
-- 4 states: Strongly Taken â†’ Weakly Taken â†’ Weakly Not-Taken â†’ Strongly Not-Taken
+- 4 states: Strongly Taken → Weakly Taken → Weakly Not-Taken → Strongly Not-Taken
 - Change prediction only after 2 consecutive opposite outcomes
 - Accuracy: typically > 90% for loops
 
 **Correlating predictors:**
 - Use global branch history register (GHR) to index into pattern table
-- Record outcome of recent branches â†’ correlate with current branch behavior
+- Record outcome of recent branches → correlate with current branch behavior
 
 **Tournament predictor:**
 - Combines global and local predictors
@@ -667,14 +667,14 @@ Actual Speedup = n / (1 + n Ãƒâ€” (stall_frequency Ãƒâ€” stall_cyc
 
 ### 6.6 Pipeline Depth & Superpipeline
 
-- Deeper pipeline â†’ more stages â†’ higher clock frequency â†’ higher throughput
+- Deeper pipeline → more stages → higher clock frequency → higher throughput
 - Problem: more stages = more hazards = higher penalty per mis-prediction
 
 | Pipeline Depth | Stages | Examples |
 |---------------|--------|----------|
-| Shallow | 3Ã¢â‚¬â€œ5 | MIPS, 80486 |
-| Medium | 6Ã¢â‚¬â€œ10 | Pentium Pro (10), ARM Cortex-A8 (13) |
-| Deep | 14Ã¢â‚¬â€œ20 | Pentium 4 (20Ã¢â‚¬â€œ31), ARM Cortex-A76 (15) |
+| Shallow | 3–5 | MIPS, 80486 |
+| Medium | 6–10 | Pentium Pro (10), ARM Cortex-A8 (13) |
+| Deep | 14–20 | Pentium 4 (20–31), ARM Cortex-A76 (15) |
 
 ### 6.7 Superscalar Processors
 
@@ -712,7 +712,7 @@ Actual Speedup = n / (1 + n Ãƒâ€” (stall_frequency Ãƒâ€” stall_cyc
 | Number of blocks (C) | Total cache blocks = Cache size / Block size |
 | Associativity (k) | Number of blocks per set |
 | Number of sets (S) | C / k |
-| Tag size | Address bits Ã¢Ë†â€™ (block offset + index) |
+| Tag size | Address bits − (block offset + index) |
 | Valid bit | Indicates if block contains valid data |
 
 #### Cache Mapping Schemes
@@ -743,16 +743,16 @@ Address bits: [Tag | Index | Block Offset]
 ```
 Block offset = log2(Block size)
 Index bits   = log2(Number of sets) = log2(C / k)
-Tag bits     = Address bits Ã¢Ë†â€™ Index bits Ã¢Ë†â€™ Block offset
+Tag bits     = Address bits − Index bits − Block offset
 ```
 
 #### Cache Performance
 
 ```
-Effective Access Time (EAT) = Hit time + Miss rate Ãƒâ€” Miss penalty
+Effective Access Time (EAT) = Hit time + Miss rate × Miss penalty
 
 Average Memory Access Time (AMAT) 
-  = Hit time + Miss rate Ãƒâ€” Miss penalty
+  = Hit time + Miss rate × Miss penalty
 
 Miss penalty = Time to fetch block from lower level
 ```
@@ -792,28 +792,28 @@ Miss penalty = Time to fetch block from lower level
 | Property | SRAM | DRAM |
 |----------|------|------|
 | Cell | 6 transistors | 1 transistor + 1 capacitor |
-| Speed | 2Ã¢â‚¬â€œ10 ns | 50Ã¢â‚¬â€œ100 ns |
-| Density | Low | High (4Ã¢â‚¬â€œ8Ãƒâ€” SRAM) |
+| Speed | 2–10 ns | 50–100 ns |
+| Density | Low | High (4–8× SRAM) |
 | Power | Higher static | Lower static, refresh needed |
 | Cost | High | Low |
 | Use | Cache | Main memory |
 
 **DRAM Refresh:**
-- Capacitors leak charge â†’ need periodic refresh (~64 ms for all rows)
+- Capacitors leak charge → need periodic refresh (~64 ms for all rows)
 - Refresh modes: RAS-only refresh, CAS-before-RAS (CBR), auto-refresh
 
 **Memory Interleaving:**
 - Memory organized into multiple banks
-- Consecutive addresses in different banks â†’ parallel access
+- Consecutive addresses in different banks → parallel access
 - **Degree of interleaving (m):** number of banks
-- Effective bandwidth = m Ãƒâ€” single-bank bandwidth (with aligned sequential access)
+- Effective bandwidth = m × single-bank bandwidth (with aligned sequential access)
 
-**GATE tip:** Interleaving reduces the effective memory access time for sequential access patterns. For k banks, the time to access k consecutive words is T + (kÃ¢Ë†â€™1) Ãƒâ€” t, where T is first-word access time and t is per-word access time.
+**GATE tip:** Interleaving reduces the effective memory access time for sequential access patterns. For k banks, the time to access k consecutive words is T + (k−1) × t, where T is first-word access time and t is per-word access time.
 
 ### 7.6 Virtual Memory
 
 **Key concepts:**
-- Virtual address (VA) â†’ Physical address (PA) translation
+- Virtual address (VA) → Physical address (PA) translation
 - Page: fixed-size unit of virtual memory (4 KB typical)
 - Frame: unit of physical memory (same size as page)
 - Page fault: accessed page not in physical memory
@@ -831,17 +831,17 @@ Miss penalty = Time to fetch block from lower level
 
 **Two-level page table (for 32-bit, 4 KB pages, 4-byte PTEs):**
 - Virtual address: [Page directory index (10) | Page table index (10) | Offset (12)]
-- Page directory: 1024 entries â†’ 1024 page tables â†’ each with 1024 PTEs
+- Page directory: 1024 entries → 1024 page tables → each with 1024 PTEs
 
 **Translation Lookaside Buffer (TLB):**
-- Small, fast cache of recently used VAâ†’PA mappings
+- Small, fast cache of recently used VA→PA mappings
 - TLB hit: translation in 1 cycle
 - TLB miss: walk page table (may involve memory access)
 
 **Effective memory access time with TLB:**
 ```
-EAT = TLB_hit_rate Ãƒâ€” (TLB_hit_time + cache_access_time)
-    + TLB_miss_rate Ãƒâ€” (TLB_miss_penalty + cache_access_time)
+EAT = TLB_hit_rate × (TLB_hit_time + cache_access_time)
+    + TLB_miss_rate × (TLB_miss_penalty + cache_access_time)
 ```
 
 **GATE tip:** For multi-level page tables, accessing memory requires one reference per level + the actual data access. With TLB hit, only 1 memory access (plus TLB time).
@@ -850,12 +850,12 @@ EAT = TLB_hit_rate Ãƒâ€” (TLB_hit_time + cache_access_time)
 
 | Formula | Expression |
 |---------|------------|
-| AMAT (single-level) | Hit time + Miss rate Ãƒâ€” Miss penalty |
-| AMAT (two-level) | L1 hit + L1 miss Ãƒâ€” (L2 hit + L2 miss Ãƒâ€” L2 miss penalty) |
+| AMAT (single-level) | Hit time + Miss rate × Miss penalty |
+| AMAT (two-level) | L1 hit + L1 miss × (L2 hit + L2 miss × L2 miss penalty) |
 | Miss penalty | = Memory access time (or L2 hit time for L1) |
-| CPI with cache misses | CPI_execution + (Miss rate Ãƒâ€” Miss penalty / instructions) |
+| CPI with cache misses | CPI_execution + (Miss rate × Miss penalty / instructions) |
 | Speedup | (1 + old_stall_cycles) / (1 + new_stall_cycles) |
-| Average memory time with interleaving | T_first + (NÃ¢Ë†â€™1) Ãƒâ€” t_per_word |
+| Average memory time with interleaving | T_first + (N−1) × t_per_word |
 
 ---
 
@@ -877,7 +877,7 @@ data = read(data_register);
 ### 8.2 Interrupt-Driven I/O
 
 - Device interrupts CPU when ready
-- CPU saves context â†’ ISR â†’ restore context â†’ continue
+- CPU saves context → ISR → restore context → continue
 - **Advantage:** CPU can execute useful work while I/O is in progress
 
 **Interrupt handling sequence:**
@@ -896,14 +896,14 @@ data = read(data_register);
 
 | Aspect | Vectored | Non-Vectored (Polled) |
 |--------|----------|----------------------|
-| ISR address | Device supplies vector â†’ address directly | CPU must poll all devices to find requester |
+| ISR address | Device supplies vector → address directly | CPU must poll all devices to find requester |
 | Speed | Fast (1 step to ISR) | Slow (O(n) polling) |
 | Hardware | Requires daisy chain / bus arbitration | Simple, shared interrupt line |
 | Overhead | Vector table in memory | Polling software loop |
 
-**Vectored interrupt:** Device sends interrupt vector number â†’ CPU uses as index into interrupt vector table â†’ jumps to ISR address from table.
+**Vectored interrupt:** Device sends interrupt vector number → CPU uses as index into interrupt vector table → jumps to ISR address from table.
 
-**Priority interrupts:** Daisy chain, independent IRQ lines, or programmable interrupt controller (PIC â†’ e.g., Intel 8259A).
+**Priority interrupts:** Daisy chain, independent IRQ lines, or programmable interrupt controller (PIC → e.g., Intel 8259A).
 
 ### 8.4 DMA (Direct Memory Access)
 
@@ -988,31 +988,31 @@ data = read(data_register);
 
 | Local read | Local write | Snoop read (bus) | Snoop write (bus) |
 |------------|-------------|------------------|-------------------|
-| **I:**    Issue bus read â†’ S/E | Issue bus read+invalidate â†’ M | â†’ | â†’ |
-| **S:**    Use data in cache | Issue bus invalidate â†’ M | Remain S | â†’ I |
-| **E:**    Use data in cache | â†’ M | â†’ S | â†’ I |
-| **M:**    Use data in cache | Use data in cache | Flush, â†’ S | Flush, â†’ I |
+| **I:**    Issue bus read → S/E | Issue bus read+invalidate → M | → | → |
+| **S:**    Use data in cache | Issue bus invalidate → M | Remain S | → I |
+| **E:**    Use data in cache | → M | → S | → I |
+| **M:**    Use data in cache | Use data in cache | Flush, → S | Flush, → I |
 
 **Snooping:** All caches monitor the bus for read/invalidate transactions.
 
 ### 9.5 Amdahl's Law
 
 ```
-Speedup = 1 / ((1 Ã¢Ë†â€™ P) + P/S)
+Speedup = 1 / ((1 − P) + P/S)
 
 Where:
 P = fraction of workload that can be parallelized
 S = speedup of the parallel portion
 ```
 
-**Key insight:** Even with infinite processors, speedup is bounded by 1/(1Ã¢Ë†â€™P).
+**Key insight:** Even with infinite processors, speedup is bounded by 1/(1−P).
 
-**Example:** 90% parallelizable â†’ max speedup = 1/0.1 = 10Ãƒâ€” (even with 1000 processors)
+**Example:** 90% parallelizable → max speedup = 1/0.1 = 10× (even with 1000 processors)
 
 ### 9.6 Gustafson's Law (Scaled Speedup)
 
 ```
-Scaled speedup = S + P Ãƒâ€” (1 Ã¢Ë†â€™ S)
+Scaled speedup = S + P × (1 − S)
 ```
 
 Assumes problem size grows with the number of processors, making Amdahl's Law overly pessimistic for large-scale parallel computing.
@@ -1025,14 +1025,14 @@ Assumes problem size grows with the number of processors, making Amdahl's Law ov
 
 | Metric | Formula |
 |--------|---------|
-| CPU Time | = Instructions Ãƒâ€” CPI Ãƒâ€” Clock cycle time |
-| CPU Time | = Instructions Ãƒâ€” CPI / Clock rate |
-| MIPS | = Instruction count / (Execution time Ãƒâ€” 10^6) |
-| MIPS | = Clock rate / (CPI Ãƒâ€” 10^6) |
-| CPI | = ÃŽÂ£ (CPI_i Ãƒâ€” Frequency_i) |
+| CPU Time | = Instructions × CPI × Clock cycle time |
+| CPU Time | = Instructions × CPI / Clock rate |
+| MIPS | = Instruction count / (Execution time × 10^6) |
+| MIPS | = Clock rate / (CPI × 10^6) |
+| CPI | = Σ (CPI_i × Frequency_i) |
 | Execution time | = Clock cycles / Clock rate |
 | Speedup | = Old_time / New_time |
-| Speedup (Amdahl) | = 1 / ((1 Ã¢Ë†â€™ P) + P/S) |
+| Speedup (Amdahl) | = 1 / ((1 − P) + P/S) |
 | Throughput | = 1 / Execution_time |
 
 ### 10.2 Pipeline Performance
@@ -1040,61 +1040,61 @@ Assumes problem size grows with the number of processors, making Amdahl's Law ov
 | Metric | Formula |
 |--------|---------|
 | Ideal speedup | = k (number of pipeline stages) |
-| Actual speedup | = k Ãƒâ€” (1 + stall_cycles) |
-| Effective CPI | = 1 + stall_rate Ãƒâ€” stall_cycles |
-| Branch penalty | = misprediction_rate Ãƒâ€” branch_frequency Ãƒâ€” penalty_cycles |
-| Data hazard penalty | = hazard_rate Ãƒâ€” hazard_stalls |
-| Pipeline efficiency | = Speedup / k Ãƒâ€” 100% |
+| Actual speedup | = k × (1 + stall_cycles) |
+| Effective CPI | = 1 + stall_rate × stall_cycles |
+| Branch penalty | = misprediction_rate × branch_frequency × penalty_cycles |
+| Data hazard penalty | = hazard_rate × hazard_stalls |
+| Pipeline efficiency | = Speedup / k × 100% |
 
 ### 10.3 Cache Parameters
 
 | Parameter | Formula |
 |-----------|---------|
-| Cache size | C = Number of blocks Ãƒâ€” Block size |
+| Cache size | C = Number of blocks × Block size |
 | Number of blocks | C = Cache size / Block size |
 | Number of sets | S = Number of blocks / Associativity |
 | Block offset bits | = log2(Block size) |
 | Index bits | = log2(S) |
-| Tag bits | = Address bits Ã¢Ë†â€™ Index bits Ã¢Ë†â€™ Offset bits |
-| AMAT | = Hit time + Miss rate Ãƒâ€” Miss penalty |
+| Tag bits | = Address bits − Index bits − Offset bits |
+| AMAT | = Hit time + Miss rate × Miss penalty |
 | Miss penalty | = Time to fetch block from next level |
 
 ### 10.4 IEEE 754 Quick Reference
 
 | Quantity | Single (32-bit) | Double (64-bit) |
 |----------|----------------|-----------------|
-| Format | (Ã¢Ë†â€™1)^S Ãƒâ€” 1.M Ãƒâ€” 2^(EÃ¢Ë†â€™127) | (Ã¢Ë†â€™1)^S Ãƒâ€” 1.M Ãƒâ€” 2^(EÃ¢Ë†â€™1023) |
+| Format | (−1)^S × 1.M × 2^(E−127) | (−1)^S × 1.M × 2^(E−1023) |
 | Bias | 127 | 1023 |
 | Max exponent (biased) | 254 | 2046 |
 | Min exponent (biased) | 1 | 1 |
-| Max value | 2^(254Ã¢Ë†â€™127) Ãƒâ€” (2 Ã¢Ë†â€™ 2^(Ã¢Ë†â€™23)) Ã¢â€°Ë† 3.4Ãƒâ€”10^38 | Ã¢â€°Ë† 1.8Ãƒâ€”10^308 |
-| Min positive normalized | 2^(Ã¢Ë†â€™126) Ã¢â€°Ë† 1.18Ãƒâ€”10^(Ã¢Ë†â€™38) | 2^(Ã¢Ë†â€™1022) Ã¢â€°Ë† 2.23Ãƒâ€”10^(Ã¢Ë†â€™308) |
-| Smallest denormalized | 2^(Ã¢Ë†â€™149) Ã¢â€°Ë† 1.4Ãƒâ€”10^(Ã¢Ë†â€™45) | 2^(Ã¢Ë†â€™1074) Ã¢â€°Ë† 4.94Ãƒâ€”10^(Ã¢Ë†â€™324) |
-| Machine epsilon | 2^(Ã¢Ë†â€™23) Ã¢â€°Ë† 1.19Ãƒâ€”10^(Ã¢Ë†â€™7) | 2^(Ã¢Ë†â€™52) Ã¢â€°Ë† 2.22Ãƒâ€”10^(Ã¢Ë†â€™16) |
+| Max value | 2^(254−127) × (2 − 2^(−23)) ≈ 3.4×10^38 | ≈ 1.8×10^308 |
+| Min positive normalized | 2^(−126) ≈ 1.18×10^(−38) | 2^(−1022) ≈ 2.23×10^(−308) |
+| Smallest denormalized | 2^(−149) ≈ 1.4×10^(−45) | 2^(−1074) ≈ 4.94×10^(−324) |
+| Machine epsilon | 2^(−23) ≈ 1.19×10^(−7) | 2^(−52) ≈ 2.22×10^(−16) |
 
 ### 10.5 Memory Organization
 
 | Metric | Formula |
 |--------|---------|
-| Page table size | = (Virtual address space / Page size) Ãƒâ€” PTE size |
-| TLB reach | = TLB entries Ãƒâ€” Page size |
-| Effective memory access (with TLB) | = TLB_hit Ãƒâ€” (TLB_time + Mem_time) + TLB_miss Ãƒâ€” (TLB_miss_penalty) |
+| Page table size | = (Virtual address space / Page size) × PTE size |
+| TLB reach | = TLB entries × Page size |
+| Effective memory access (with TLB) | = TLB_hit × (TLB_time + Mem_time) + TLB_miss × (TLB_miss_penalty) |
 | Interleaving bandwidth | = Words per cycle = Number of banks (on sequential access) |
-| DRAM refresh overhead | = (Refresh_cycles / Refresh_interval) Ãƒâ€” 100% |
+| DRAM refresh overhead | = (Refresh_cycles / Refresh_interval) × 100% |
 
 ---
 
-## 11. GATE Previous Year Questions (2010Ã¢â‚¬â€œ2025)
+## 11. GATE Previous Year Questions (2010–2025)
 
 ### C1: IEEE 754 Single Precision [GATE 2010, 2 marks]
 
 **Q:** The decimal value 0.75 is to be represented in IEEE 754 single precision format. What are the exponent and mantissa?
 
 **A:**
-0.75 = 0.11 in binary = 1.1 Ãƒâ€” 2^(Ã¢Ë†â€™1)
+0.75 = 0.11 in binary = 1.1 × 2^(−1)
 
 Sign = 0
-Exponent = Ã¢Ë†â€™1 + 127 = 126 = `01111110`
+Exponent = −1 + 127 = 126 = `01111110`
 Mantissa = 100...0 (23 bits, leading 1 implicit)
 
 **Answer:** Exponent = 01111110, Mantissa = 100...0
@@ -1104,10 +1104,10 @@ Mantissa = 100...0 (23 bits, leading 1 implicit)
 **Q:** A computer system has a 4 KB direct-mapped cache with 64-byte blocks. The main memory size is 256 KB. How many bits are in the tag, index, and offset fields?
 
 **A:**
-Block size = 64 B â†’ offset = log2(64) = 6 bits
-Number of blocks = 4 KB / 64 B = 64 â†’ index = log2(64) = 6 bits
+Block size = 64 B → offset = log2(64) = 6 bits
+Number of blocks = 4 KB / 64 B = 64 → index = log2(64) = 6 bits
 Main memory address bits = log2(256 KB) = 18 bits
-Tag = 18 Ã¢Ë†â€™ 6 Ã¢Ë†â€™ 6 = 6 bits
+Tag = 18 − 6 − 6 = 6 bits
 
 **Answer:** Tag = 6, Index = 6, Offset = 6
 
@@ -1119,7 +1119,7 @@ Tag = 18 Ã¢Ë†â€™ 6 Ã¢Ë†â€™ 6 = 6 bits
 Ideal CPI = 1
 Stall frequency = 0.20
 Stall cycles = 2
-Average CPI = 1 + 0.20 Ãƒâ€” 2 = 1.40
+Average CPI = 1 + 0.20 × 2 = 1.40
 
 **Answer:** 1.40
 
@@ -1128,11 +1128,11 @@ Average CPI = 1 + 0.20 Ãƒâ€” 2 = 1.40
 **Q:** The smallest integer that can be represented with 8-bit 2's complement representation is?
 
 **A:**
-2's complement range: Ã¢Ë†â€™2^(nÃ¢Ë†â€™1) to +2^(nÃ¢Ë†â€™1)Ã¢Ë†â€™1
-For n = 8: Ã¢Ë†â€™128 to +127
-Smallest = Ã¢Ë†â€™128
+2's complement range: −2^(n−1) to +2^(n−1)−1
+For n = 8: −128 to +127
+Smallest = −128
 
-**Answer:** Ã¢Ë†â€™128
+**Answer:** −128
 
 ### C5: Addressing Modes [GATE 2011, 1 mark]
 
@@ -1144,30 +1144,30 @@ Smallest = Ã¢Ë†â€™128
 
 ### C6: Cache Mapping [GATE 2011, 2 marks]
 
-**Q:** A 2-way set-associative cache has 4 blocks (0Ã¢â‚¬â€œ3). The memory block sequence accessed is: 0, 4, 0, 4, 8, 0, 4, 8. Using LRU replacement, find the number of misses.
+**Q:** A 2-way set-associative cache has 4 blocks (0–3). The memory block sequence accessed is: 0, 4, 0, 4, 8, 0, 4, 8. Using LRU replacement, find the number of misses.
 
 **A:**
 Number of sets = 4/2 = 2
-Block â†’ set: block i â†’ set i mod 2
+Block → set: block i → set i mod 2
 
-Access 0: set 0 â†’ miss, load [0]
-Access 4: set 0 â†’ miss, load [4]
-Access 0: set 0 â†’ hit
-Access 4: set 0 â†’ hit
-Access 8: set 0 â†’ miss, LRU = 0, replace with [8]
-Access 0: set 0 â†’ miss, LRU = 4, replace with [0]
-Access 4: set 0 â†’ hit (or miss? depends on set state...)
-â†’ Let's work carefully:
+Access 0: set 0 → miss, load [0]
+Access 4: set 0 → miss, load [4]
+Access 0: set 0 → hit
+Access 4: set 0 → hit
+Access 8: set 0 → miss, LRU = 0, replace with [8]
+Access 0: set 0 → miss, LRU = 4, replace with [0]
+Access 4: set 0 → hit (or miss? depends on set state...)
+→ Let's work carefully:
 
 **Set 0 after each access:**
-0 â†’ [0, -] miss
-4 â†’ [0, 4] miss
-0 â†’ hit (0 just used)
-4 â†’ hit (4 just used)
-8 â†’ replace 0 (LRU), [8, 4] miss
-0 â†’ replace 4 (LRU), [8, 0] miss
-4 â†’ replace 8 (LRU), [4, 0] miss
-8 â†’ replace 0 (LRU), [4, 8] miss
+0 → [0, -] miss
+4 → [0, 4] miss
+0 → hit (0 just used)
+4 → hit (4 just used)
+8 → replace 0 (LRU), [8, 4] miss
+0 → replace 4 (LRU), [8, 0] miss
+4 → replace 8 (LRU), [4, 0] miss
+8 → replace 0 (LRU), [4, 8] miss
 
 Total misses = 6
 
@@ -1178,8 +1178,8 @@ Total misses = 6
 **Q:** Booth's algorithm for multiplication of signed 2's complement numbers uses bit-pair recoding. How many additions/subtractions are needed to multiply two 16-bit numbers using radix-4 Booth encoding?
 
 **A:**
-Radix-4 (modified Booth) encodes 3 bits at a time (overlapping by 1 bit) â†’ n/2 = 8 groups for n = 16
-Maximum: each group generates one of (Ã¢Ë†â€™2, Ã¢Ë†â€™1, 0, +1, +2) operations â†’ at most 8 operations
+Radix-4 (modified Booth) encodes 3 bits at a time (overlapping by 1 bit) → n/2 = 8 groups for n = 16
+Maximum: each group generates one of (−2, −1, 0, +1, +2) operations → at most 8 operations
 
 **Answer:** 8 (or n/2 for radix-4)
 
@@ -1215,8 +1215,8 @@ The number of RAW hazards in the above sequence is:
 
 **A:**
 I1 writes R1
-I2 reads R1 â†’ RAW with I1
-I3 reads R1 â†’ RAW with I1
+I2 reads R1 → RAW with I1
+I3 reads R1 → RAW with I1
 
 Number of RAW hazards = 2
 
@@ -1229,22 +1229,22 @@ Number of RAW hazards = 2
 **A:**
 Transfer rate = 1 word / cycle = 2 bytes / 20 ns = 100 MB/s
 64 KB = 65536 bytes
-Time = 65536 bytes / 100 MB/s = 655.36 ÃŽÂ¼s Ã¢â€°Ë† 655 ÃŽÂ¼s
+Time = 65536 bytes / 100 MB/s = 655.36 μs ≈ 655 μs
 
-Alternatively: 64 KB = 32768 words Ãƒâ€” 20 ns/word = 655.36 ÃŽÂ¼s
+Alternatively: 64 KB = 32768 words × 20 ns/word = 655.36 μs
 
-**Answer:** 655.36 ÃŽÂ¼s
+**Answer:** 655.36 μs
 
 ### C12: IEEE 754 Doubles [GATE 2013, 2 marks]
 
-**Q:** What is the value of 2^(Ã¢Ë†â€™1022) in IEEE 754 double precision?
+**Q:** What is the value of 2^(−1022) in IEEE 754 double precision?
 
 **A:** This is the smallest positive normalized number.
 Double precision bias = 1023
 Exponent = 1, Mantissa = 0
-Value = 1.0 Ãƒâ€” 2^(1Ã¢Ë†â€™1023) = 2^(Ã¢Ë†â€™1022)
+Value = 1.0 × 2^(1−1023) = 2^(−1022)
 
-**Answer:** 2^(Ã¢Ë†â€™1022) (the minimum positive normalized double)
+**Answer:** 2^(−1022) (the minimum positive normalized double)
 
 ### C13: Effective Access Time [GATE 2013, 2 marks]
 
@@ -1254,10 +1254,10 @@ Value = 1.0 Ãƒâ€” 2^(1Ã¢Ë†â€™1023) = 2^(Ã¢Ë†â€™1022)
 Access to L2 after L1 miss
 Access to main memory after L2 miss
 
-AMAT = L1_hit_time + L1_miss_rate Ãƒâ€” (L2_hit_time + L2_miss_rate Ãƒâ€” Mem_time)
-AMAT = 2 + 0.10 Ãƒâ€” (10 + 0.05 Ãƒâ€” 100)
-AMAT = 2 + 0.10 Ãƒâ€” (10 + 5)
-AMAT = 2 + 0.10 Ãƒâ€” 15 = 2 + 1.5 = 3.5 cycles
+AMAT = L1_hit_time + L1_miss_rate × (L2_hit_time + L2_miss_rate × Mem_time)
+AMAT = 2 + 0.10 × (10 + 0.05 × 100)
+AMAT = 2 + 0.10 × (10 + 5)
+AMAT = 2 + 0.10 × 15 = 2 + 1.5 = 3.5 cycles
 
 **Answer:** 3.5 cycles
 
@@ -1267,7 +1267,7 @@ AMAT = 2 + 0.10 Ãƒâ€” 15 = 2 + 1.5 = 3.5 cycles
 
 **A:**
 Without delay slot: misprediction penalty = 2 cycles (instructions fetched after branch before resolution at MEM)
-With 1 delay slot: the slot is always executed regardless of branch outcome â†’ effective penalty reduces
+With 1 delay slot: the slot is always executed regardless of branch outcome → effective penalty reduces
 Branch resolution at MEM = 3 stages after IF (ID, EX, MEM)
 Penalty without delay slot = 2 (IF stage after branch fetches the wrong instruction)
 With 1 delay slot: penalty = 1 cycle (still 1 wasted cycle after the delay slot)
@@ -1281,13 +1281,13 @@ With 1 delay slot: penalty = 1 cycle (still 1 wasted cycle after the delay slot)
 **A:**
 Register number bits = log2(64) = 6 bits
 
-Format A: 4 opcode + 2 Ãƒâ€” 6 = 16 â†’ Only 4+12=16 â†’ all 16 bits used â†’ 2^4 = 16 instructions possible
+Format A: 4 opcode + 2 × 6 = 16 → Only 4+12=16 → all 16 bits used → 2^4 = 16 instructions possible
 
-Format B: 4 opcode + 6 register + 8 immediate = 18 > 16 â†’ This doesn't fit in 16 bits!
+Format B: 4 opcode + 6 register + 8 immediate = 18 > 16 → This doesn't fit in 16 bits!
 
 Let me re-read: Format B might be 4 opcode + 6 register + 6 immediate = 16 bits (6-bit immediate, not 8).
 
-With 6-bit immediate: Format B: 4+6+6 = 16 â†’ 16 instruction types also
+With 6-bit immediate: Format B: 4+6+6 = 16 → 16 instruction types also
 
 **Answer:** (Assuming correct format sizes) Format A: 16 instructions max, Format B: 16 instructions max
 
@@ -1297,8 +1297,8 @@ With 6-bit immediate: Format B: 4+6+6 = 16 â†’ 16 instruction types also
 
 **A:**
 Restoring division: each iteration may do a subtraction + an addition (restore)
-Worst case: all iterations need restore â†’ 2n operations (n subtractions + n additions)
-Each iteration: subtract â†’ test negative â†’ add back â†’ shift
+Worst case: all iterations need restore → 2n operations (n subtractions + n additions)
+Each iteration: subtract → test negative → add back → shift
 
 **Answer:** 2n (n subtractions + n restorations)
 
@@ -1308,7 +1308,7 @@ Each iteration: subtract â†’ test negative â†’ add back â†’ shift
 
 **A:**
 Number of pages = 2^32 / 2^12 = 2^20 = 1,048,576 pages
-Page table size = 2^20 Ãƒâ€” 4 bytes = 4 MB
+Page table size = 2^20 × 4 bytes = 4 MB
 
 **Answer:** 4 MB
 
@@ -1322,7 +1322,7 @@ Load: CPI = 1 + 1 (stall for RAW) = 2
 Store: CPI = 1
 Branch: CPI = 1 + 3 (penalty) = 4
 
-Average CPI = 0.40Ãƒâ€”1 + 0.20Ãƒâ€”2 + 0.15Ãƒâ€”1 + 0.25Ãƒâ€”4
+Average CPI = 0.40×1 + 0.20×2 + 0.15×1 + 0.25×4
             = 0.40 + 0.40 + 0.15 + 1.00
             = 1.95
 
@@ -1333,16 +1333,16 @@ Average CPI = 0.40Ãƒâ€”1 + 0.20Ãƒâ€”2 + 0.15Ãƒâ€”1 + 0.25Ã
 **Q:** For a direct-mapped cache with 8 blocks, block size = 16 bytes. Memory addresses (in decimal): 0, 16, 32, 48, 64, 80, 96, 112 are accessed in that order. Find the number of cache misses.
 
 **A:**
-Block size = 16 bytes â†’ offset = log2(16) = 4 bits
-8 blocks â†’ index = log2(8) = 3 bits
+Block size = 16 bytes → offset = log2(16) = 4 bits
+8 blocks → index = log2(8) = 3 bits
 Block number = Address / Block size
 
-Address â†’ block number:
-0 â†’ 0, 16 â†’ 1, 32 â†’ 2, 48 â†’ 3, 64 â†’ 4, 80 â†’ 5, 96 â†’ 6, 112 â†’ 7
+Address → block number:
+0 → 0, 16 → 1, 32 → 2, 48 → 3, 64 → 4, 80 → 5, 96 → 6, 112 → 7
 Cache set = block number mod 8
 
 Each maps to a different set in an 8-block direct mapped cache.
-All are compulsory misses â†’ 8 misses
+All are compulsory misses → 8 misses
 
 **Answer:** 8 misses
 
@@ -1351,11 +1351,11 @@ All are compulsory misses â†’ 8 misses
 **Q:** Add the IEEE 754 single precision numbers: A = 0x3F800000 (1.0) and B = 0x40000000 (2.0). What is the result?
 
 **A:**
-A: 0 01111111 00000000000000000000000 = 1.0 Ãƒâ€” 2^(127Ã¢Ë†â€™127) = 1.0
-B: 0 10000000 00000000000000000000000 = 1.0 Ãƒâ€” 2^(128Ã¢Ë†â€™127) = 2.0
+A: 0 01111111 00000000000000000000000 = 1.0 × 2^(127−127) = 1.0
+B: 0 10000000 00000000000000000000000 = 1.0 × 2^(128−127) = 2.0
 
 Add: 1.0 + 2.0 = 3.0
-3.0 = 1.5 Ãƒâ€” 2^1 = (Ã¢Ë†â€™1)^0 Ãƒâ€” 1.5 Ãƒâ€” 2^(128Ã¢Ë†â€™127)
+3.0 = 1.5 × 2^1 = (−1)^0 × 1.5 × 2^(128−127)
 
 Exponent = 128 = 10000000
 Mantissa = 0.5 = 10000000000000000000000
@@ -1371,7 +1371,7 @@ Result: 0 10000000 10000000000000000000000 = 0x40400000
 16 bits = 4 blocks of 4 bits each
 Each 4-bit CLA block produces one block G and one block P
 Block-level: 4 G signals, 4 P signals = 8 total
-But the top-level lookahead needs the combined G and P from each 4-bit block â†’ 4 group-generates + 4 group-propagates
+But the top-level lookahead needs the combined G and P from each 4-bit block → 4 group-generates + 4 group-propagates
 
 **Answer:** 4 block-generate and 4 block-propagate signals
 
@@ -1383,35 +1383,35 @@ But the top-level lookahead needs the combined G and P from each 4-bit block â�
 With 4-way interleaving, words 0,4,8,... are in bank 0; words 1,5,9,... in bank 1; etc.
 
 For 8 words: first word time = 100 ns
-Words 2Ã¢â‚¬â€œ8: each takes 10 ns after the first, but interleaving allows overlapping
+Words 2–8: each takes 10 ns after the first, but interleaving allows overlapping
 
 More precisely:
-T = T_first + (NÃ¢Ë†â€™1) Ãƒâ€” t_per_word / m (where m = interleaving degree... no, that's not right)
+T = T_first + (N−1) × t_per_word / m (where m = interleaving degree... no, that's not right)
 
 With bank interleaving:
 - Each bank access: 100 ns first, then 10 ns per word within bank
 - 8 words over 4 banks: banks 0,1,2,3,0,1,2,3
-- Bank 0 gets words 0,4 â†’ starts word 0 at t=0, word 4 at t=110
-- Bank 1 gets words 1,5 â†’ starts word 1 at t=10, word 5 at t=120
-- Bank 2 gets words 2,6 â†’ starts word 2 at t=20, word 6 at t=130
-- Bank 3 gets words 3,7 â†’ starts word 3 at t=30, word 7 at t=140
+- Bank 0 gets words 0,4 → starts word 0 at t=0, word 4 at t=110
+- Bank 1 gets words 1,5 → starts word 1 at t=10, word 5 at t=120
+- Bank 2 gets words 2,6 → starts word 2 at t=20, word 6 at t=130
+- Bank 3 gets words 3,7 → starts word 3 at t=30, word 7 at t=140
 
-Total time = 100 + 7Ãƒâ€”10 = 170 ns (without interleaving it'd be 100 + 7Ãƒâ€”10 = 170 as well... wait, without interleaving it's all one bank)
+Total time = 100 + 7×10 = 170 ns (without interleaving it'd be 100 + 7×10 = 170 as well... wait, without interleaving it's all one bank)
 
 Actually the key point of interleaving:
-Without interleaving: 100 + 7Ãƒâ€”10 = 170 ns
+Without interleaving: 100 + 7×10 = 170 ns
 With interleaving: first word = 100 ns, remaining 7 words overlapped
-Best case: 100 + (8/4Ã¢Ë†â€™1)Ãƒâ€”10 + (8Ã¢Ë†â€™1)Ãƒâ€”10/4... Let me think again.
+Best case: 100 + (8/4−1)×10 + (8−1)×10/4... Let me think again.
 
 Actually the standard formula for interleaved memory:
 Time to access N words with m banks, T_first = T_A, t_per_word = T_w:
 
-Without interleaving: T_A + (NÃ¢Ë†â€™1) Ãƒâ€” T_w
-With m-way interleaving: T_A + (N/m Ã¢Ë†â€™ 1 + N Ã¢Ë†â€™ 1) Ãƒâ€” T_w / m... no.
+Without interleaving: T_A + (N−1) × T_w
+With m-way interleaving: T_A + (N/m − 1 + N − 1) × T_w / m... no.
 
 Simpler: with m banks, up to m words can be accessed in parallel (one per bank)
 For N words with m-way interleaving:
-Time = T_A + ceil(N/m) Ãƒâ€” T_w... no, this isn't right either.
+Time = T_A + ceil(N/m) × T_w... no, this isn't right either.
 
 Let me use a simpler approach. With interleaving, each bank acts independently.
 For 4 banks and 8 sequential words (0,1,2,3,4,5,6,7):
@@ -1420,26 +1420,26 @@ For 4 banks and 8 sequential words (0,1,2,3,4,5,6,7):
 
 For bank 0: words 0,4
   word 0: complete at t = 100 (T_A)
-  word 4: bank 0 was used at t=0-100, then idle. Word 4 requested at t = 4Ãƒâ€”10 = 40? No...
+  word 4: bank 0 was used at t=0-100, then idle. Word 4 requested at t = 4×10 = 40? No...
 
 I think for this type of problem GATE expects:
-Time = T_A + (NÃ¢Ë†â€™1) Ãƒâ€” T_w (no interleaving benefit for first access)
+Time = T_A + (N−1) × T_w (no interleaving benefit for first access)
 But with interleaving, the effective access can be pipelined.
 
 With m-way interleaving, N words:
-Total time = T_A + ((NÃ¢Ë†â€™1)/m) Ãƒâ€” T_w ... no
+Total time = T_A + ((N−1)/m) × T_w ... no
 
 Let me think simpler. The standard GATE answer for interleaving:
 - Access first word: T_A
-- Remaining (NÃ¢Ë†â€™1) words with m banks, overlapped: 
-- Time per N words = T_A + ((NÃ¢Ë†â€™1)/m) Ãƒâ€” ... no
+- Remaining (N−1) words with m banks, overlapped: 
+- Time per N words = T_A + ((N−1)/m) × ... no
 
 Actually the key insight is:
 With m banks, you can start a new access every T_w/m cycles (if T_w is the word transfer time).
-Total time = T_A + (NÃ¢Ë†â€™1) Ãƒâ€” T_w/m
+Total time = T_A + (N−1) × T_w/m
 
 For this problem: T_A = 100, T_w = 10, m = 4, N = 8
-Total = 100 + 7 Ãƒâ€” 10/4 = 100 + 17.5 = 117.5 ns
+Total = 100 + 7 × 10/4 = 100 + 17.5 = 117.5 ns
 
 Hmm, that doesn't seem right either. Let me reconsider.
 
@@ -1451,22 +1451,22 @@ For N words across m banks:
 
 I think the standard model is:
 - All banks start accessing in parallel (or staggered)
-- Bank i starts at i Ãƒâ€” T_w
+- Bank i starts at i × T_w
 - Each bank's first word takes T_A
 - Total time = max over all banks of their completion times
 
 For 4 banks, 8 words:
-Bank 0: words 0,4 â†’ start at t=0, word0 done at t=T_A=100, word4 start at... 
+Bank 0: words 0,4 → start at t=0, word0 done at t=T_A=100, word4 start at... 
 
 Hmm, I think the staggered access is the key:
-t=0: bank 0 starts word 0 â†’ done at 100
-t=10: bank 1 starts word 1 â†’ done at 110
-t=20: bank 2 starts word 2 â†’ done at 120
-t=30: bank 3 starts word 3 â†’ done at 130
-t=40: bank 0 starts word 4 â†’ done at 140
-t=50: bank 1 starts word 5 â†’ done at 150
-t=60: bank 2 starts word 6 â†’ done at 160
-t=70: bank 3 starts word 7 â†’ done at 170
+t=0: bank 0 starts word 0 → done at 100
+t=10: bank 1 starts word 1 → done at 110
+t=20: bank 2 starts word 2 → done at 120
+t=30: bank 3 starts word 3 → done at 130
+t=40: bank 0 starts word 4 → done at 140
+t=50: bank 1 starts word 5 → done at 150
+t=60: bank 2 starts word 6 → done at 160
+t=70: bank 3 starts word 7 → done at 170
 
 So total = 170 ns for 8 words (same as without interleaving?!)
 
@@ -1484,26 +1484,26 @@ Actually I think GATE usually treats this as:
 - After first word, each additional word (from any bank) takes T_w = 10 ns
 - But interleaving lets you pipeline, so words can come at 10 ns intervals
 
-So total = 100 + 7 Ãƒâ€” 10 = 170 ns
+So total = 100 + 7 × 10 = 170 ns
 
-vs without interleaving: 100 + 7 Ãƒâ€” 10 = 170 ns... they're the same?!
+vs without interleaving: 100 + 7 × 10 = 170 ns... they're the same?!
 
 That can't be right. The difference is:
-Without interleaving (single bank): word0 done at 100, word1 at 110, ..., word7 at 170 â†’ 170 ns
-With interleaving (4 banks): word0 done at 100, word1 at 110, ..., word7 at 170 â†’ 170 ns
+Without interleaving (single bank): word0 done at 100, word1 at 110, ..., word7 at 170 → 170 ns
+With interleaving (4 banks): word0 done at 100, word1 at 110, ..., word7 at 170 → 170 ns
 
 They're the same for sequential access because the bus is the bottleneck, not the banks.
 
-BUT with interleaving, the effective bandwidth is 4Ãƒâ€” higher if banks work in parallel. The difference shows up in the access time to the first word vs. burst rates.
+BUT with interleaving, the effective bandwidth is 4× higher if banks work in parallel. The difference shows up in the access time to the first word vs. burst rates.
 
 OK, I think the GATE answer they typically expect uses:
-Time = T_A + (NÃ¢Ë†â€™1) Ãƒâ€” T_w = 100 + 7Ãƒâ€”10 = 170 ns
+Time = T_A + (N−1) × T_w = 100 + 7×10 = 170 ns
 
 But with bank conflict: if all words are in same bank, each takes T_A.
 
 Let me just give a clear answer.
 
-**Answer:** 100 + 7 Ãƒâ€” 10 = 170 ns (with 4-way interleaving â†’ same total time for this sequential pattern due to bus-limited transfer)
+**Answer:** 100 + 7 × 10 = 170 ns (with 4-way interleaving → same total time for this sequential pattern due to bus-limited transfer)
 
 ### C23: Addressing Modes Identification [GATE 2015, 1 mark]
 
@@ -1519,7 +1519,7 @@ Let me just give a clear answer.
 
 **A:**
 Number of pages = 2^32 / 2^12 = 2^20
-Page table size = 2^20 Ãƒâ€” 4 bytes = 4 MB
+Page table size = 2^20 × 4 bytes = 4 MB
 
 **Answer:** 4 MB
 
@@ -1528,13 +1528,13 @@ Page table size = 2^20 Ãƒâ€” 4 bytes = 4 MB
 **Q:** For the same system (32-bit VA, 4 KB pages, 4-byte PTEs) using a 2-level page table, find the page table size if the first level has 2^10 entries.
 
 **A:**
-First level: 2^10 entries Ãƒâ€” 4 bytes = 4 KB
-Remaining bits for second level: 32 Ã¢Ë†â€™ 12 (offset) Ã¢Ë†â€™ 10 = 10 bits
+First level: 2^10 entries × 4 bytes = 4 KB
+Remaining bits for second level: 32 − 12 (offset) − 10 = 10 bits
 Second level page tables: up to 2^10 tables, each with 2^10 PTEs
-Each second-level table: 2^10 Ãƒâ€” 4 B = 4 KB
+Each second-level table: 2^10 × 4 B = 4 KB
 In use: only as many second-level tables as needed
 
-Total (worst case) = 4 KB + 2^10 Ãƒâ€” 4 KB = 4 KB + 4 MB Ã¢â€°Ë† 4 MB
+Total (worst case) = 4 KB + 2^10 × 4 KB = 4 KB + 4 MB ≈ 4 MB
 Total (only one second-level table in use) = 4 KB + 4 KB = 8 KB
 
 **Answer:** Worst case: ~4 MB; best case: 8 KB
@@ -1544,13 +1544,13 @@ Total (only one second-level table in use) = 4 KB + 4 KB = 8 KB
 **Q:** TLB hit rate = 95%, TLB access time = 10 ns, memory access time = 100 ns. TLB miss causes a page table walk costing 200 ns (includes memory access). Find the effective memory access time.
 
 **A:**
-EAT = TLB_hit Ãƒâ€” (TLB_time + Mem_time) + TLB_miss Ãƒâ€” (TLB_miss_penalty + Mem_time)
+EAT = TLB_hit × (TLB_time + Mem_time) + TLB_miss × (TLB_miss_penalty + Mem_time)
 
 Wait, when TLB hits: TLB_time + 1 memory access
 When TLB misses: TLB_time + page_walk_time + 1 memory access
 
-EAT = 0.95 Ãƒâ€” (10 + 100) + 0.05 Ãƒâ€” (10 + 200 + 100)
-    = 0.95 Ãƒâ€” 110 + 0.05 Ãƒâ€” 310
+EAT = 0.95 × (10 + 100) + 0.05 × (10 + 200 + 100)
+    = 0.95 × 110 + 0.05 × 310
     = 104.5 + 15.5
     = 120 ns
 
@@ -1564,7 +1564,7 @@ EAT = 0.95 Ãƒâ€” (10 + 100) + 0.05 Ãƒâ€” (10 + 200 + 100)
 
 **Answer:** Hardwired
 
-### C28: Branch Prediction â†’ 2-bit Saturating Counter [GATE 2017, 2 marks]
+### C28: Branch Prediction → 2-bit Saturating Counter [GATE 2017, 2 marks]
 
 **Q:** A 2-bit saturating counter is used for branch prediction. The actual branch outcomes for a specific branch are: T, T, T, NT, NT, T, NT, T. Assume the initial state is "Weakly Taken." Find the number of mispredictions.
 
@@ -1591,7 +1591,7 @@ Mispredictions: 4
 
 **Q:** A vector processor belongs to which category of Flynn's taxonomy?
 
-**A:** Vector processors execute one instruction on multiple data elements â†’ SIMD (Single Instruction, Multiple Data).
+**A:** Vector processors execute one instruction on multiple data elements → SIMD (Single Instruction, Multiple Data).
 
 **Answer:** SIMD
 
@@ -1608,10 +1608,10 @@ Mispredictions: 4
 **Q:** A program has L1 cache miss rate of 5% and L2 cache miss rate of 20%. L1 hit = 2 cycles, L2 hit = 12 cycles, memory = 100 cycles. Find the average memory access time.
 
 **A:**
-AMAT = L1_hit + L1_miss Ãƒâ€” (L2_hit + L2_miss Ãƒâ€” Memory_time)
-AMAT = 2 + 0.05 Ãƒâ€” (12 + 0.20 Ãƒâ€” 100)
-AMAT = 2 + 0.05 Ãƒâ€” (12 + 20)
-AMAT = 2 + 0.05 Ãƒâ€” 32 = 2 + 1.6 = 3.6 cycles
+AMAT = L1_hit + L1_miss × (L2_hit + L2_miss × Memory_time)
+AMAT = 2 + 0.05 × (12 + 0.20 × 100)
+AMAT = 2 + 0.05 × (12 + 20)
+AMAT = 2 + 0.05 × 32 = 2 + 1.6 = 3.6 cycles
 
 **Answer:** 3.6 cycles
 
@@ -1622,7 +1622,7 @@ AMAT = 2 + 0.05 Ãƒâ€” 32 = 2 + 1.6 = 3.6 cycles
 **A:**
 Basic Booth (radix-2): each bit of multiplier requires at most 1 operation
 For 8-bit multiplier: 8 iterations, each with 0 or 1 operation
-Maximum: 8 operations (+, Ã¢Ë†â€™, or 0)
+Maximum: 8 operations (+, −, or 0)
 
 **Answer:** 8 (at most 8 additions/subtractions)
 
@@ -1641,7 +1641,7 @@ Effective penalty = 0 cycles.
 **Q:** An ALU takes two n-bit inputs and produces an n-bit output and four flags (Z, C, V, N). How many control signal bits are needed if the ALU can perform: ADD, SUB, AND, OR, XOR, NOT?
 
 **A:**
-6 operations â†’ ceiling(log2(6)) = 3 control bits
+6 operations → ceiling(log2(6)) = 3 control bits
 
 **Answer:** 3 bits
 
@@ -1651,11 +1651,11 @@ Effective penalty = 0 cycles.
 
 **A:**
 Denormalized: exponent = 0, fraction = 0...001 (smallest non-zero fraction)
-Smallest denormalized: 0.00...01 Ãƒâ€” 2^(Ã¢Ë†â€™126) where fraction is 22 zeros then 1
-= 2^(Ã¢Ë†â€™23) Ãƒâ€” 2^(Ã¢Ë†â€™126)
-= 2^(Ã¢Ë†â€™149)
+Smallest denormalized: 0.00...01 × 2^(−126) where fraction is 22 zeros then 1
+= 2^(−23) × 2^(−126)
+= 2^(−149)
 
-**Answer:** 2^(Ã¢Ë†â€™149)
+**Answer:** 2^(−149)
 
 ### C36: Pipeline Hazards [GATE 2019, 2 marks]
 
@@ -1669,11 +1669,11 @@ I4: ADD R6, R1, R7
 
 **A:**
 I1 writes R1
-I2 reads R1 â†’ RAW hazard (load-use, requires 1 stall even with forwarding)
-I3 reads R3 â†’ RAW hazard with I2 (ALU result forwarded, no stall)
-I4 reads R1 â†’ RAW hazard with I1 (forwarded from MEM or WB, no stall)
+I2 reads R1 → RAW hazard (load-use, requires 1 stall even with forwarding)
+I3 reads R3 → RAW hazard with I2 (ALU result forwarded, no stall)
+I4 reads R1 → RAW hazard with I1 (forwarded from MEM or WB, no stall)
 
-RAW hazards: I1â†’I2, I1â†’I4, I2â†’I3 = 3 RAW hazards
+RAW hazards: I1→I2, I1→I4, I2→I3 = 3 RAW hazards
 
 **Answer:** 3 RAW hazards
 
@@ -1683,12 +1683,12 @@ RAW hazards: I1â†’I2, I1â†’I4, I2â†’I3 = 3 RAW hazards
 
 **A:**
 P = 0.70, S = 8
-Speedup = 1 / ((1 Ã¢Ë†â€™ 0.70) + 0.70/8)
+Speedup = 1 / ((1 − 0.70) + 0.70/8)
         = 1 / (0.30 + 0.0875)
         = 1 / 0.3875
         = 2.58
 
-**Answer:** 2.58Ãƒâ€” speedup
+**Answer:** 2.58× speedup
 
 ### C38: Cache Associativity [GATE 2019, 2 marks]
 
@@ -1708,7 +1708,7 @@ Number of sets = 1024 / 4 = 256
 **A:**
 Block offset = log2(32) = 5 bits
 No index (fully associative)
-Tag = 32 Ã¢Ë†â€™ 5 = 27 bits
+Tag = 32 − 5 = 27 bits
 
 **Answer:** 27 bits
 
@@ -1725,7 +1725,7 @@ Tag = 32 Ã¢Ë†â€™ 5 = 27 bits
 **Q:** A processor has base CPI of 1.0 (all cache hits). L1 miss rate = 8%, miss penalty = 20 cycles. What is the effective CPI?
 
 **A:**
-Stall cycles per instruction = Miss rate Ãƒâ€” Miss penalty = 0.08 Ãƒâ€” 20 = 1.6
+Stall cycles per instruction = Miss rate × Miss penalty = 0.08 × 20 = 1.6
 Effective CPI = 1.0 + 1.6 = 2.6
 
 **Answer:** 2.6
@@ -1736,9 +1736,9 @@ Effective CPI = 1.0 + 1.6 = 2.6
 
 **A:**
 Signed magnitude: MSB = sign, 7 bits = magnitude
-Range: Ã¢Ë†â€™(2^7 Ã¢Ë†â€™ 1) to +(2^7 Ã¢Ë†â€™ 1) = Ã¢Ë†â€™127 to +127
+Range: −(2^7 − 1) to +(2^7 − 1) = −127 to +127
 
-**Answer:** Ã¢Ë†â€™127 to +127
+**Answer:** −127 to +127
 
 ### C43: Microinstruction Sequencing [GATE 2020, 2 marks]
 
@@ -1801,8 +1801,8 @@ The requesting processor:
 A = 0x3F800001, B = 0x3F800002
 
 **A:**
-A = 1.00000000000000000000001 Ãƒâ€” 2^0 Ã¢â€°Ë† 1.000000119
-B = 1.00000000000000000000010 Ãƒâ€” 2^0 Ã¢â€°Ë† 1.000000238
+A = 1.00000000000000000000001 × 2^0 ≈ 1.000000119
+B = 1.00000000000000000000010 × 2^0 ≈ 1.000000238
 Sum = 2.000000357
 
 Normalize: 1.00000000000000000000011... wait, let me work in binary.
@@ -1815,16 +1815,16 @@ Add:
 + 1.00000000000000000000010
 = 10.00000000000000000000011
 
-Normalize: 1.000000000000000000000011 Ãƒâ€” 2^1
+Normalize: 1.000000000000000000000011 × 2^1
 Exponent = 128 = 10000000
 Mantissa = 00000000000000000000001 (23 bits, truncated... need to check rounding)
 
-Hmm, the full mantissa would be 1.000000000000000000000011 â†’ 23 bits: 00000000000000000000001 (1 at the 22nd position after the leading 1)
+Hmm, the full mantissa would be 1.000000000000000000000011 → 23 bits: 00000000000000000000001 (1 at the 22nd position after the leading 1)
 
 Actually 10.00000000000000000000011 needs the binary point shifted:
-= 1.000000000000000000000011 Ãƒâ€” 2^1
+= 1.000000000000000000000011 × 2^1
 
-Mantissa (23 bits): 00000000000000000000001 (truncated from 000...0011, last bit = 1 â†’ with round-to-nearest-even... this gets complex)
+Mantissa (23 bits): 00000000000000000000001 (truncated from 000...0011, last bit = 1 → with round-to-nearest-even... this gets complex)
 
 Let me keep it simpler: the result is 0x40000001 (approximately 2.000000238)
 
@@ -1835,8 +1835,8 @@ Let me keep it simpler: the result is 0x40000001 (approximately 2.000000238)
 **Q:** A TLB has 64 entries and the page size is 4 KB. What is the TLB reach?
 
 **A:**
-TLB reach = Number of TLB entries Ãƒâ€” Page size
-           = 64 Ãƒâ€” 4 KB = 256 KB
+TLB reach = Number of TLB entries × Page size
+           = 64 × 4 KB = 256 KB
 
 **Answer:** 256 KB
 
@@ -1845,9 +1845,9 @@ TLB reach = Number of TLB entries Ãƒâ€” Page size
 **Q:** A pipeline has a branch misprediction penalty of 4 cycles. The branch predictor has 92% accuracy. 25% of all instructions are branches. What is the effective CPI (ideal CPI = 1)?
 
 **A:**
-Branch misprediction rate = 1 Ã¢Ë†â€™ 0.92 = 0.08
-Misprediction frequency = 0.25 Ãƒâ€” 0.08 = 0.02
-Stall cycles per instruction = 0.02 Ãƒâ€” 4 = 0.08
+Branch misprediction rate = 1 − 0.92 = 0.08
+Misprediction frequency = 0.25 × 0.08 = 0.02
+Stall cycles per instruction = 0.02 × 4 = 0.08
 Effective CPI = 1 + 0.08 = 1.08
 
 **Answer:** 1.08
@@ -1857,7 +1857,7 @@ Effective CPI = 1 + 0.08 = 1.08
 **Q:** A 2-way associative cache with 4 blocks (LRU replacement) has the access sequence: 0, 1, 2, 3, 0, 1, 4, 0. How many misses?
 
 **A:**
-2-way, 4 blocks â†’ 2 sets
+2-way, 4 blocks → 2 sets
 Set 0: blocks 0,2,4,... or blocks i where i mod 2 = 0
 Set 1: blocks where i mod 2 = 1
 
@@ -1867,7 +1867,7 @@ Access 2 (set 0): miss [0, 2] (LRU of set 0 = - , load in second way)
 Access 3 (set 1): miss [1, 3]
 Access 0 (set 0): hit (0 is in set 0)
 Access 1 (set 1): hit (1 is in set 1)
-Access 4 (set 0): miss â†’ set 0 has [0, 2], LRU = 2 (0 was just hit), replace 2 with [4]
+Access 4 (set 0): miss → set 0 has [0, 2], LRU = 2 (0 was just hit), replace 2 with [4]
 Access 0 (set 0): hit (0 in cache)
 
 Total misses = 5
@@ -1879,17 +1879,17 @@ Total misses = 5
 **Q:** A DMA controller uses cycle stealing to transfer data. The bus clock is 100 MHz. Each DMA transfer takes 1 bus cycle. The DMA transfers data at 4 MB/s. What fraction of bus cycles does the DMA use?
 
 **A:**
-Bus clock = 100 MHz â†’ 100 M cycles/s
-DMA rate = 4 MB/s = 4 Ãƒâ€” 10^6 bytes/s
+Bus clock = 100 MHz → 100 M cycles/s
+DMA rate = 4 MB/s = 4 × 10^6 bytes/s
 Each DMA cycle transfers... assume 1 byte per cycle (cycle stealing typically transfers 1 word/byte per stolen cycle)
 Wait, word size not specified. Let's assume 1 byte per DMA cycle.
 
-DMA cycles needed = 4 Ãƒâ€” 10^6 cycles/s
-Total bus cycles = 100 Ãƒâ€” 10^6 cycles/s
-Fraction = 4 Ãƒâ€” 10^6 / 100 Ãƒâ€” 10^6 = 0.04 = 4%
+DMA cycles needed = 4 × 10^6 cycles/s
+Total bus cycles = 100 × 10^6 cycles/s
+Fraction = 4 × 10^6 / 100 × 10^6 = 0.04 = 4%
 
 If DMA transfers 4 bytes per cycle: 16 MB/s would be used, fraction = 16/100 = 16%
-But with 4 MB/s and 4 bytes/cycle: that's 1 M cycles/s â†’ 1%
+But with 4 MB/s and 4 bytes/cycle: that's 1 M cycles/s → 1%
 
 Assuming 1 byte/cycle:
 **Answer:** 4%
@@ -1907,7 +1907,7 @@ Maximum = 8 + 1 = 9 operations
 
 **Answer:** 9 (8 iterations + at most 1 correction)
 
-### C54: Instruction Pipelining â†’ Load-Use [GATE 2024, 2 marks]
+### C54: Instruction Pipelining → Load-Use [GATE 2024, 2 marks]
 
 **Q:** For the instruction sequence below, how many stalls are needed (full forwarding available)?
 ```
@@ -1917,11 +1917,11 @@ SUB R5, R1, R6
 ```
 
 **A:**
-I1 (LW) â†’ I2 (ADD): LW writes R1 in WB; ADD reads R1 in EX
-With forwarding: EX result forwarded from MEM (after LW's MEM) â†’ ADD's EX
-Need 1 stall (load-use hazard â†’ 1 bubble)
+I1 (LW) → I2 (ADD): LW writes R1 in WB; ADD reads R1 in EX
+With forwarding: EX result forwarded from MEM (after LW's MEM) → ADD's EX
+Need 1 stall (load-use hazard → 1 bubble)
 
-I1 (LW) â†’ I3 (SUB): LW's R1 forwarded from WB to SUB's EX
+I1 (LW) → I3 (SUB): LW's R1 forwarded from WB to SUB's EX
 No stall needed (data forwarded from MEM or WB stage)
 
 Total: 1 stall
@@ -1933,10 +1933,10 @@ Total: 1 stall
 **Q:** A memory system has L1 cache (hit time 1 ns, miss rate 10%), L2 cache (hit time 5 ns, miss rate 5%), and main memory (access time 50 ns). Find the AMAT.
 
 **A:**
-AMAT = L1_hit + L1_miss Ãƒâ€” (L2_hit + L2_miss Ãƒâ€” Mem_time)
-AMAT = 1 + 0.10 Ãƒâ€” (5 + 0.05 Ãƒâ€” 50)
-AMAT = 1 + 0.10 Ãƒâ€” (5 + 2.5)
-AMAT = 1 + 0.10 Ãƒâ€” 7.5 = 1 + 0.75 = 1.75 ns
+AMAT = L1_hit + L1_miss × (L2_hit + L2_miss × Mem_time)
+AMAT = 1 + 0.10 × (5 + 0.05 × 50)
+AMAT = 1 + 0.10 × (5 + 2.5)
+AMAT = 1 + 0.10 × 7.5 = 1 + 0.75 = 1.75 ns
 
 **Answer:** 1.75 ns
 
@@ -1945,8 +1945,8 @@ AMAT = 1 + 0.10 Ãƒâ€” 7.5 = 1 + 0.75 = 1.75 ns
 **Q:** How many decimal digits of precision does IEEE 754 single precision provide?
 
 **A:**
-23 mantissa bits â†’ 2^23 Ã¢â€°Ë† 8.4 million distinct values
-log10(2^23) = 23 Ãƒâ€” log10(2) Ã¢â€°Ë† 23 Ãƒâ€” 0.301 Ã¢â€°Ë† 6.92
+23 mantissa bits → 2^23 ≈ 8.4 million distinct values
+log10(2^23) = 23 × log10(2) ≈ 23 × 0.301 ≈ 6.92
 Approximately 7 decimal digits of precision.
 
 **Answer:** Approximately 7 decimal digits
@@ -1966,18 +1966,18 @@ Block offset = log2(128) = 7 bits
 
 **A:**
 Read operations: 70% of instructions, 5% miss rate
-Read misses: 0.70 Ãƒâ€” 0.05 = 0.035 misses/instruction
-Read miss traffic: 0.035 Ãƒâ€” 64 = 2.24 bytes/instruction
+Read misses: 0.70 × 0.05 = 0.035 misses/instruction
+Read miss traffic: 0.035 × 64 = 2.24 bytes/instruction
 
 Write operations (write-through, no write-allocate):
 Write hits: write to cache + write to memory = 4 bytes + 4 bytes = 8 bytes per write (assuming 4-byte word)
 Write misses: write directly to memory = 4 bytes (no cache fill)
 
-If we assume write hit rate same as read: 95% â†’ 0.30 Ãƒâ€” 0.95 = 0.285 write hits/instruction
-Write hit traffic: 0.285 Ãƒâ€” 8 = 2.28 bytes/instruction
+If we assume write hit rate same as read: 95% → 0.30 × 0.95 = 0.285 write hits/instruction
+Write hit traffic: 0.285 × 8 = 2.28 bytes/instruction
 
-Write misses: 0.30 Ãƒâ€” 0.05 = 0.015
-Write miss traffic: 0.015 Ãƒâ€” 4 = 0.06 bytes/instruction
+Write misses: 0.30 × 0.05 = 0.015
+Write miss traffic: 0.015 × 4 = 0.06 bytes/instruction
 
 Total traffic: 2.24 + 2.28 + 0.06 = 4.58 bytes/instruction
 
@@ -1988,11 +1988,11 @@ Total traffic: 2.24 + 2.28 + 0.06 = 4.58 bytes/instruction
 **Q:** A 2-way superscalar processor can issue up to 2 instructions per cycle. The program has a mix of 40% ALU, 20% load, 10% store, 30% branch. Loads have 1 stall cycle. Branches have a 2-cycle penalty with 90% accuracy. Find the effective CPI.
 
 **A:**
-Ideal base: 2 instructions/cycle â†’ CPI = 0.5 in ideal case
+Ideal base: 2 instructions/cycle → CPI = 0.5 in ideal case
 
 Stall cycles per instruction:
-Load stalls: 0.20 Ãƒâ€” 1 = 0.20
-Branch stalls: 0.30 Ãƒâ€” (1 Ã¢Ë†â€™ 0.90) Ãƒâ€” 2 = 0.30 Ãƒâ€” 0.10 Ãƒâ€” 2 = 0.06
+Load stalls: 0.20 × 1 = 0.20
+Branch stalls: 0.30 × (1 − 0.90) × 2 = 0.30 × 0.10 × 2 = 0.06
 
 But superscalar adds issue restrictions:
 If 2 instructions can't always be paired, effective issue width &lt; 2
@@ -2006,7 +2006,7 @@ CPI = 0.5 + 0.20 + 0.06 = 0.76
 **Q:** For a 4-way set associative cache with 32-bit addresses, 16 KB cache size, 32-byte block size. How many comparators are needed?
 
 **A:**
-4-way associative â†’ 4 blocks per set â†’ 4 tags must be compared on each access
+4-way associative → 4 blocks per set → 4 tags must be compared on each access
 Number of comparators = Associativity = 4
 
 **Answer:** 4 comparators
@@ -2021,26 +2021,26 @@ Number of comparators = Associativity = 4
 |------|-------|
 | IEEE 754 Single bias | 127 |
 | IEEE 754 Double bias | 1023 |
-| Smallest +ve normalized single | 2^(Ã¢Ë†â€™126) |
-| Smallest denormalized single | 2^(Ã¢Ë†â€™149) |
-| Largest normalized single | Ã¢â€°Ë† 3.4 Ãƒâ€” 10^38 |
+| Smallest +ve normalized single | 2^(−126) |
+| Smallest denormalized single | 2^(−149) |
+| Largest normalized single | ≈ 3.4 × 10^38 |
 | Page size (typical) | 4 KB |
-| TLB typical entry count | 32Ã¢â‚¬â€œ128 |
-| Cache block size (typical) | 32Ã¢â‚¬â€œ128 B |
+| TLB typical entry count | 32–128 |
+| Cache block size (typical) | 32–128 B |
 | 5-stage pipeline | IF, ID, EX, MEM, WB |
-| DMA transfer rate (PCIe 3.0 x16) | Ã¢â€°Ë† 16 GB/s |
+| DMA transfer rate (PCIe 3.0 x16) | ≈ 16 GB/s |
 
 ### 12.2 Common Pitfalls
 
 1. **IEEE 754:** Don't forget the implicit leading 1 in normalized numbers
-2. **Endianness:** Memory diagrams â†’ always draw address order
+2. **Endianness:** Memory diagrams → always draw address order
 3. **Cache index vs tag:** Index = log2(Sets), NOT log2(Blocks) in set-associative
 4. **Pipeline:** Load-use hazard needs 1 stall even with forwarding
-5. **Amdahl's Law:** The (1Ã¢Ë†â€™P) term is THE bottleneck â†’ can't be parallelized
-6. **2's complement:** Overflow detected by CinÃ¢â€°Â Cout at MSB, not just Cout
+5. **Amdahl's Law:** The (1−P) term is THE bottleneck → can't be parallelized
+6. **2's complement:** Overflow detected by Cin≠Cout at MSB, not just Cout
 7. **Non-restoring division:** Exactly 1 operation per iteration (always add OR subtract, never both)
 8. **DMA cycle stealing:** DMA gets bus when CPU doesn't need it, or pauses CPU briefly
-9. **Control unit:** Microprogrammed = ROM-based â†’ flexible but slower; Hardwired = gate-based â†’ fast but rigid
+9. **Control unit:** Microprogrammed = ROM-based → flexible but slower; Hardwired = gate-based → fast but rigid
 10. **MESI:** Modified = dirty + exclusive; Exclusive = clean + exclusive; Shared = clean + shared
 
 ### 12.3 GATE Problem-Solving Strategy
@@ -2050,11 +2050,11 @@ Number of comparators = Associativity = 4
 3. **Use reference formulas:** Keep the formula table nearby during the exam
 4. **Check units:** ns vs cycles, bytes vs bits, KB vs KiB
 5. **Estimate first:** Get a rough answer, then compute precisely
-6. **Work methodically:** Show steps â†’ partial marking in numeric answer questions
+6. **Work methodically:** Show steps → partial marking in numeric answer questions
 
 ---
 
-*End of Chapter 11. This chapter covers all GATE-relevant topics in Computer Organization & Architecture based on the 2010â€”"2025 GATE exam pattern.*
+*End of Chapter 11. This chapter covers all GATE-relevant topics in Computer Organization & Architecture based on the 2010—"2025 GATE exam pattern.*
 
 *Key topics for last-minute revision: IEEE 754, Cache mapping + performance equations, Pipeline timing + hazards, Booth's algorithm, MESI protocol, Flynn's taxonomy, Amdahl's Law.*
 
@@ -2062,7 +2062,7 @@ Number of comparators = Associativity = 4
 
 ## Summary
 
-Computer Organization & Architecture is a substantial GATE CS subject (7-10 marks) covering the fundamental building blocks of computer systems: digital logic at the hardware level, instruction set architecture (ISA, RISC vs CISC, addressing modes), data representation (IEEE 754 floating-point, signed number representations, Booth's algorithm for multiplication), CPU organization (single-cycle, multi-cycle, pipelined datapath â€” hazards: structural, data, control; forwarding and stalling), memory hierarchy (cache organization â€” direct-mapped, set-associative, fully-associative; cache performance equations, TLB, virtual memory), I/O organization (programmed I/O, interrupt-driven I/O, DMA), and parallelism (Flynn's taxonomy â€” SISD, SIMD, MISD, MIMD; multi-core processors, MESI cache coherence protocol). Key topics include cache mapping and performance calculations (2-4 marks), pipeline timing and hazard detection (2-4 marks), IEEE 754 representation (1-2 marks), and Amdahl's Law for speedup calculation (1-2 marks). The critical formula is the cache performance equation: Average Access Time = Hit Rate Ã— Hit Time + Miss Rate Ã— Miss Penalty. Amdahl's Law â€” Speedup = 1 / ((1-P) + P/S) â€” is essential for parallel processing problems.
+Computer Organization & Architecture is a substantial GATE CS subject (7-10 marks) covering the fundamental building blocks of computer systems: digital logic at the hardware level, instruction set architecture (ISA, RISC vs CISC, addressing modes), data representation (IEEE 754 floating-point, signed number representations, Booth's algorithm for multiplication), CPU organization (single-cycle, multi-cycle, pipelined datapath — hazards: structural, data, control; forwarding and stalling), memory hierarchy (cache organization — direct-mapped, set-associative, fully-associative; cache performance equations, TLB, virtual memory), I/O organization (programmed I/O, interrupt-driven I/O, DMA), and parallelism (Flynn's taxonomy — SISD, SIMD, MISD, MIMD; multi-core processors, MESI cache coherence protocol). Key topics include cache mapping and performance calculations (2-4 marks), pipeline timing and hazard detection (2-4 marks), IEEE 754 representation (1-2 marks), and Amdahl's Law for speedup calculation (1-2 marks). The critical formula is the cache performance equation: Average Access Time = Hit Rate × Hit Time + Miss Rate × Miss Penalty. Amdahl's Law — Speedup = 1 / ((1-P) + P/S) — is essential for parallel processing problems.
 
 ```mermaid
 flowchart TD
@@ -2086,7 +2086,7 @@ flowchart TD
 
 ```typescript
 /**
- * PipelineSimulator â€” 5-Stage Pipeline with Hazard Detection
+ * PipelineSimulator — 5-Stage Pipeline with Hazard Detection
  * ------------------------------------------------------------
  * Simulates the classic RISC 5-stage pipeline (IF, ID, EX, MEM, WB)
  * with data hazard detection and forwarding.
@@ -2299,7 +2299,7 @@ console.log(pipeline.getStats());
 | Q# | Question | Options | Answer |
 |:--:|---------|---------|:------:|
 | 1 | In IEEE 754 single precision, the exponent bias is: | A) 127, B) 128, C) 1023, D) 255 | **A** |
-| 2 | A direct-mapped cache with 64 blocks and 32-byte blocks uses how many bits for the index? | A) 5, B) 6, C) 7, D) 8 | **B** (logâ‚‚64=6) |
+| 2 | A direct-mapped cache with 64 blocks and 32-byte blocks uses how many bits for the index? | A) 5, B) 6, C) 7, D) 8 | **B** (log₂64=6) |
 | 3 | Which hazard requires a stall even with forwarding? | A) Structural, B) Load-use data hazard, C) Control hazard, D) WAW hazard | **B** |
 | 4 | Flynn's taxonomy classifies a standard multi-core CPU as: | A) SISD, B) SIMD, C) MISD, D) MIMD | **D** |
 | 5 | Amdahl's Law: if 60% of a program can be parallelized with 4 processors, what is the maximum speedup? | A) 1.82, B) 2.5, C) 3.0, D) 4.0 | **A** (1/(0.4+0.6/4)=1/0.55=1.82) |
@@ -2311,33 +2311,33 @@ console.log(pipeline.getStats());
 <details>
 <summary><strong>Exercise 1:</strong> IEEE 754 Representation</summary>
 <p>Convert -5.75 to IEEE 754 single-precision format.</p>
-<p><strong>Solution:</strong> Sign=1 (negative). 5.75 = 101.11â‚‚ = 1.0111Ã—2Â². Exponent=2+127=129=10000001â‚‚. Mantissa=0111000...0. Full: 1 10000001 01110000000000000000000 = 0xC0B80000.</p>
+<p><strong>Solution:</strong> Sign=1 (negative). 5.75 = 101.11₂ = 1.0111×2². Exponent=2+127=129=10000001₂. Mantissa=0111000...0. Full: 1 10000001 01110000000000000000000 = 0xC0B80000.</p>
 </details>
 
 <details>
 <summary><strong>Exercise 2:</strong> Cache Performance</summary>
 <p>Cache has hit rate=90%, hit time=2ns, miss penalty=50ns. Find average memory access time.</p>
-<p><strong>Solution:</strong> AMAT = 0.9Ã—2 + 0.1Ã—(2+50) = 1.8 + 5.2 = 7.0ns. Using formula: AMAT = Hit Time + Miss Rate Ã— Miss Penalty = 2 + 0.1Ã—50 = 7ns.</p>
+<p><strong>Solution:</strong> AMAT = 0.9×2 + 0.1×(2+50) = 1.8 + 5.2 = 7.0ns. Using formula: AMAT = Hit Time + Miss Rate × Miss Penalty = 2 + 0.1×50 = 7ns.</p>
 </details>
 
 <details>
 <summary><strong>Exercise 3:</strong> Pipeline Speedup</summary>
 <p>A 5-stage pipeline has stage delays 2ns, 3ns, 4ns, 2ns, 2ns. Find the clock period and speedup over a non-pipelined processor (sum of stage delays).</p>
-<p><strong>Solution:</strong> Clock period = max(2,3,4,2,2) = 4ns. Non-pipelined = 2+3+4+2+2=13ns. Ideal speedup = 13/4 = 3.25. With pipeline overhead, actual â‰ˆ 3.0-3.25.</p>
+<p><strong>Solution:</strong> Clock period = max(2,3,4,2,2) = 4ns. Non-pipelined = 2+3+4+2+2=13ns. Ideal speedup = 13/4 = 3.25. With pipeline overhead, actual ≈ 3.0-3.25.</p>
 </details>
 
 <details>
 <summary><strong>Exercise 4:</strong> Cache Mapping</summary>
 <p>A 64KB cache with 32-byte blocks in a 32-bit address space uses 4-way set-associative mapping. How many sets? How many bits for index?</p>
-<p><strong>Solution:</strong> Total blocks = 64KB/32B = 2048. Sets = 2048/4 = 512. Index bits = logâ‚‚(512) = 9. Tag bits = 32-9-5(offset) = 18.</p>
+<p><strong>Solution:</strong> Total blocks = 64KB/32B = 2048. Sets = 2048/4 = 512. Index bits = log₂(512) = 9. Tag bits = 32-9-5(offset) = 18.</p>
 </details>
 
 <details>
 <summary><strong>Exercise 5:</strong> Booth's Algorithm</summary>
-<p>Multiply 6 (multiplicand) Ã— -3 (multiplier) using Booth's algorithm with 4-bit representation.</p>
-<p><strong>Solution:</strong> 6=0110, -3=1101. Booth: Initialize A=0, Q=1101, Qâ‚‹â‚=0. Steps: (10): A=A-Q=0110... Wait let me retrace. 4-bit: 6=0110, -3=1101(2's). A=0000, Q=1101, Q-1=0, M=0110. Cycles: 0: Qâ‚€Qâ‚‹â‚=10 â†’ A=A-M=1010. 1: shift ASR: 1101 0110 1. Qâ‚€Qâ‚‹â‚=01 â†’ A=A+M=0011. 2: shift: 0001 1011 0. Qâ‚€Qâ‚‹â‚=10 â†’ A=A-M=1011. 3: shift: 1101 1101 1. Qâ‚€Qâ‚‹â‚=11 â†’ no op. Shift: 1110 1110 1. Result in A:Q = 11101110 = -18 (correct: 6Ã—-3=-18).</p>
+<p>Multiply 6 (multiplicand) × -3 (multiplier) using Booth's algorithm with 4-bit representation.</p>
+<p><strong>Solution:</strong> 6=0110, -3=1101. Booth: Initialize A=0, Q=1101, Q₋₁=0. Steps: (10): A=A-Q=0110... Wait let me retrace. 4-bit: 6=0110, -3=1101(2's). A=0000, Q=1101, Q-1=0, M=0110. Cycles: 0: Q₀Q₋₁=10 → A=A-M=1010. 1: shift ASR: 1101 0110 1. Q₀Q₋₁=01 → A=A+M=0011. 2: shift: 0001 1011 0. Q₀Q₋₁=10 → A=A-M=1011. 3: shift: 1101 1101 1. Q₀Q₋₁=11 → no op. Shift: 1110 1110 1. Result in A:Q = 11101110 = -18 (correct: 6×-3=-18).</p>
 </details>
 
 ---
 
-*End of Chapter 11 â€” Computer Organization & Architecture. Extended with summary, TypeScript implementations, quiz, and exercises.*
+*End of Chapter 11 — Computer Organization & Architecture. Extended with summary, TypeScript implementations, quiz, and exercises.*

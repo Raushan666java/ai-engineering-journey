@@ -1,12 +1,12 @@
 ---
-description: "The Inversion of Control (IoC) container is Spring's beating heart. Every Spring application â€” no matter how small â€” starts by bootstrapping an"
+description: "The Inversion of Control (IoC) container is Spring's beating heart. Every Spring application — no matter how small — starts by bootstrapping an"
 ---
 
 # Dependency Injection & IoC Container
 
 > **Previous:** [Introduction to Spring & Spring Boot](./09-spring-intro.md) | **Next:** [Auto-Configuration & Starters](./11-auto-configuration.md)
 
-The Inversion of Control (IoC) container is Spring's beating heart. Every Spring application â€” no matter how small â€” starts by bootstrapping an `ApplicationContext`, which then manages the entire object graph of the application. This chapter covers every aspect of that container: how beans are declared, wired, scoped, and configured; how the container discovers components; how profiles and conditionals gate bean definitions; and how to test with the container in play.
+The Inversion of Control (IoC) container is Spring's beating heart. Every Spring application — no matter how small — starts by bootstrapping an `ApplicationContext`, which then manages the entire object graph of the application. This chapter covers every aspect of that container: how beans are declared, wired, scoped, and configured; how the container discovers components; how profiles and conditionals gate bean definitions; and how to test with the container in play.
 
 Every example in this chapter is complete and compilable. The recommended way to follow along is to create a Maven project with `spring-boot-starter` (or add `spring-context` to a plain project). When a listing uses Spring Boot annotations such as `@SpringBootTest` or `@MockBean`, the example assumes a `@SpringBootApplication` class exists in the default package.
 
@@ -19,7 +19,7 @@ By the end of this chapter you should be able to:
 - Bootstrap and configure all major `ApplicationContext` implementations
 - Distinguish stereotype annotations (`@Component`, `@Service`, `@Repository`, `@Controller`, `@RestController`) and explain their inclusion rules
 - Declare beans via both `@Component` scanning and `@Bean` factory methods
-- Wire dependencies with `@Autowired` using field, setter, and constructor injection â€” and explain why constructor injection is preferred
+- Wire dependencies with `@Autowired` using field, setter, and constructor injection — and explain why constructor injection is preferred
 - Resolve ambiguous dependencies using `@Primary` and `@Qualifier`, including custom qualifier annotations
 - Scope beans as singleton, prototype, request, session, application, or websocket and use proxy mode for narrower scopes
 - Hook into the bean lifecycle with `@PostConstruct`, `@PreDestroy`, `InitializingBean`, `DisposableBean`, and `SmartLifecycle`
@@ -58,7 +58,7 @@ flowchart LR
 
 ---
 
-## ApplicationContext â€” The Container Itself
+## ApplicationContext — The Container Itself
 
 ![Dependency Injection & IoC Container](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/10-di-container.png)
 
@@ -305,10 +305,10 @@ Stereotype annotations mark classes as Spring-managed beans. The container disco
 
 ```
 @Component
- â”œâ”€â”€ @Service          (business logic / service layer)
- â”œâ”€â”€ @Repository        (data access / DAO layer â€” adds persistence exception translation)
- â”œâ”€â”€ @Controller        (MVC controller)
- â””â”€â”€ @RestController    (@Controller + @ResponseBody)
+ ├── @Service          (business logic / service layer)
+ ├── @Repository        (data access / DAO layer — adds persistence exception translation)
+ ├── @Controller        (MVC controller)
+ └── @RestController    (@Controller + @ResponseBody)
 ```
 
 Every stereotype is meta-annotated with `@Component`. Spring's component scanner treats any annotation that is itself annotated with `@Component` as a candidate.
@@ -346,7 +346,7 @@ public class Transmission {
 }
 ```
 
-Implicit bean name: the class name with a lower-case first letter â€” `engine`, `transmission`. Override with `@Component("myEngine")`.
+Implicit bean name: the class name with a lower-case first letter — `engine`, `transmission`. Override with `@Component("myEngine")`.
 
 ### @Service
 
@@ -448,7 +448,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-// Traditional MVC controller â€” returns view names
+// Traditional MVC controller — returns view names
 @Controller
 public class PageController {
 
@@ -458,7 +458,7 @@ public class PageController {
     }
 }
 
-// REST controller â€” returns data (includes @ResponseBody on every method)
+// REST controller — returns data (includes @ResponseBody on every method)
 @RestController
 public class HealthController {
 
@@ -487,7 +487,7 @@ public @interface RestController {
 Spring's component scanner recognises:
 
 1. Any class annotated with `@Component` (including meta-annotations).
-2. Any class annotated with an annotation that itself carries `@Component` â€” this includes `@Service`, `@Repository`, `@Controller`, `@RestController`, `@Configuration`, `@ManagedBean`, `@Named` (Jakarta), and others.
+2. Any class annotated with an annotation that itself carries `@Component` — this includes `@Service`, `@Repository`, `@Controller`, `@RestController`, `@Configuration`, `@ManagedBean`, `@Named` (Jakarta), and others.
 
 Classes are scanned only if they are in a package listed in `@ComponentScan` or covered by `@SpringBootApplication` (which itself enables scanning from the declaring class's package).
 
@@ -536,9 +536,9 @@ class FilterConfig {
 
 ---
 
-## @Bean â€” Factory Methods
+## @Bean — Factory Methods
 
-When you cannot â€” or should not â€” annotate the target class with `@Component` (third-party libraries, objects that need custom construction logic, or instances that require external configuration), declare a `@Bean` factory method inside a `@Configuration` class.
+When you cannot — or should not — annotate the target class with `@Component` (third-party libraries, objects that need custom construction logic, or instances that require external configuration), declare a `@Bean` factory method inside a `@Configuration` class.
 
 ### Basic @Bean Declaration
 
@@ -585,7 +585,7 @@ class TimerService {
 }
 ```
 
-Spring intercepts calls to `@Bean` methods inside `@Configuration` classes and returns the same singleton instance (not a new one per call). This is achieved via a CGLIB proxy. For `@Bean` methods in `@Component` classes this interception does **not** happen â€” each call produces a new instance.
+Spring intercepts calls to `@Bean` methods inside `@Configuration` classes and returns the same singleton instance (not a new one per call). This is achieved via a CGLIB proxy. For `@Bean` methods in `@Component` classes this interception does **not** happen — each call produces a new instance.
 
 ### Bean Names
 
@@ -764,7 +764,7 @@ class PaymentGateway {
 
 ---
 
-## @Autowired â€” Wiring Dependencies
+## @Autowired — Wiring Dependencies
 
 `@Autowired` tells Spring to inject a dependency. It can be applied to fields, constructors, setter methods, and arbitrary configuration methods.
 
@@ -816,7 +816,7 @@ public class SetterInjectionExample {
 }
 ```
 
-Better than field injection â€” swapping implementations in tests is possible via the setter. Still allows mutation after construction.
+Better than field injection — swapping implementations in tests is possible via the setter. Still allows mutation after construction.
 
 ### Constructor Injection (Recommended)
 
@@ -856,7 +856,7 @@ public class SimplifiedConstructorInjection {
     private final GreetingService greetingService;
     private final FarewellService farewellService;
 
-    // No @Autowired needed â€” single constructor
+    // No @Autowired needed — single constructor
     public SimplifiedConstructorInjection(GreetingService greetingService,
                                           FarewellService farewellService) {
         this.greetingService = greetingService;
@@ -969,7 +969,7 @@ public class MethodInjectionDemo {
     private Engine engine;
     private Transmission transmission;
 
-    // Method injection â€” Spring calls this with matching beans
+    // Method injection — Spring calls this with matching beans
     @Autowired
     public void configureDrivetrain(Engine engine, Transmission transmission) {
         this.engine = engine;
@@ -1052,7 +1052,7 @@ The `List` is ordered by the `@Order` annotation or the `Ordered` interface. The
 
 ---
 
-## @Qualifier â€” Disambiguating Beans
+## @Qualifier — Disambiguating Beans
 
 When multiple beans of the same type exist, `@Qualifier` selects the specific one by name.
 
@@ -1234,7 +1234,7 @@ class NotificationService {
 
 ---
 
-## @Primary â€” Primary Bean Selection
+## @Primary — Primary Bean Selection
 
 When multiple beans of the same type exist and you want one to be the default (injected when no `@Qualifier` is specified), mark it with `@Primary`.
 
@@ -1334,7 +1334,7 @@ class PrecedenceDemo {
 
     private final Serializer serializer;
 
-    // Explicit overrides @Primary â€” injects jsonSerializer
+    // Explicit overrides @Primary — injects jsonSerializer
     public PrecedenceDemo(@Qualifier("jsonSerializer") Serializer serializer) {
         this.serializer = serializer;
     }
@@ -1343,7 +1343,7 @@ class PrecedenceDemo {
 
 ---
 
-## Scope â€” Bean Lifecycle Boundaries
+## Scope — Bean Lifecycle Boundaries
 
 A bean's **scope** determines how many instances the container creates and how they are shared.
 
@@ -1417,7 +1417,7 @@ public class WorkflowTask {
 }
 ```
 
-Every injection or `getBean()` call returns a **new instance**. Spring does **not** call `@PreDestroy` or `DisposableBean.destroy()` on prototype beans â€” the container hands them out and forgets them.
+Every injection or `getBean()` call returns a **new instance**. Spring does **not** call `@PreDestroy` or `DisposableBean.destroy()` on prototype beans — the container hands them out and forgets them.
 
 ### Request, Session, Application, WebSocket
 
@@ -1497,7 +1497,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class RequestScopedConsumer {
 
-    // This is a proxy â€” each call to getId() goes through
+    // This is a proxy — each call to getId() goes through
     // the proxy to the real RequestId for this HTTP request
     private final RequestId requestId;
 
@@ -1591,13 +1591,13 @@ public class LifecycleDemo {
     @PostConstruct
     public void init() {
         this.initialized = true;
-        System.out.println("LifecycleDemo: @PostConstruct â€” initialized = " + initialized);
+        System.out.println("LifecycleDemo: @PostConstruct — initialized = " + initialized);
     }
 
     @PreDestroy
     public void destroy() {
         this.initialized = false;
-        System.out.println("LifecycleDemo: @PreDestroy â€” cleanup complete");
+        System.out.println("LifecycleDemo: @PreDestroy — cleanup complete");
     }
 
     public boolean isInitialized() {
@@ -1626,13 +1626,13 @@ public class LifecycleInterfaceDemo implements InitializingBean, DisposableBean 
     @Override
     public void afterPropertiesSet() {
         this.status = "INITIALIZED";
-        System.out.println("InitializingBean.afterPropertiesSet() â€” status = " + status);
+        System.out.println("InitializingBean.afterPropertiesSet() — status = " + status);
     }
 
     @Override
     public void destroy() {
         this.status = "DESTROYED";
-        System.out.println("DisposableBean.destroy() â€” status = " + status);
+        System.out.println("DisposableBean.destroy() — status = " + status);
     }
 
     public String getStatus() {
@@ -1655,7 +1655,7 @@ These interfaces are Spring-specific (tight coupling). Prefer `@PostConstruct` /
 7. `@Bean(initMethod = "...")`
 8. `BeanPostProcessor.postProcessAfterInitialization`
 9. Bean is ready
-10. Container shutdown â€” reverse order for destruction
+10. Container shutdown — reverse order for destruction
 
 ### Custom @Bean initMethod and destroyMethod
 
@@ -1689,7 +1689,7 @@ class Server {
 }
 ```
 
-### SmartLifecycle â€” Fine-Grained Lifecycle Control
+### SmartLifecycle — Fine-Grained Lifecycle Control
 
 
 `SmartLifecycle` extends `Lifecycle` and `Phased` to give ordered, auto-startup behaviour. Beans that need to start in a specific order or participate in container-level lifecycle (e.g. a database migration runner) implement this interface.
@@ -1737,7 +1737,7 @@ public class CacheWarmer implements SmartLifecycle {
 }
 ```
 
-Multiple `SmartLifecycle` beans are ordered by `getPhase()` â€” lower values start first, stop last. `isAutoStartup() = false` allows manual control via `ctx.start()`.
+Multiple `SmartLifecycle` beans are ordered by `getPhase()` — lower values start first, stop last. `isAutoStartup() = false` allows manual control via `ctx.start()`.
 
 ```java
 package di.lifecycle;
@@ -1781,7 +1781,7 @@ class DatabaseMigrationRunner implements SmartLifecycle {
 
 ---
 
-## @Profile â€” Environment-Specific Beans
+## @Profile — Environment-Specific Beans
 
 `@Profile` allows beans to be registered only when a specific set of profiles is active.
 
@@ -1909,7 +1909,7 @@ java -jar app.jar --spring.profiles.active=prod
 ```
 
 ```java
-// Programmatic â€” before refresh
+// Programmatic — before refresh
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
@@ -2020,7 +2020,7 @@ class Service {
 ### Default Profile
 
 
-The profile named `default` is active when no other profile is explicitly set. It is a fallback â€” not a catch-all. If you set `spring.profiles.active=dev`, the `default` profile is **not** active.
+The profile named `default` is active when no other profile is explicitly set. It is a fallback — not a catch-all. If you set `spring.profiles.active=dev`, the `default` profile is **not** active.
 
 ```java
 import org.springframework.context.annotation.Bean;
@@ -2033,7 +2033,7 @@ class DefaultProfileConfig {
     @Bean
     @Profile("default")
     Greeter defaultGreeter() {
-        return new Greeter("Default profile active â€” no explicit profiles set");
+        return new Greeter("Default profile active — no explicit profiles set");
     }
 
     @Bean
@@ -2403,7 +2403,7 @@ class AnalyticsEngine {
 }
 ```
 
-Multiple `@Conditional` annotations on the same `@Bean` or class are AND-combined â€” all must match.
+Multiple `@Conditional` annotations on the same `@Bean` or class are AND-combined — all must match.
 
 ---
 
@@ -2519,7 +2519,7 @@ public class ProviderDemo {
 }
 ```
 
-Every call to `workerProvider.get()` returns a new prototype instance. This is the recommended approach â€” no abstract class, no CGLIB, no Spring-specific annotation at the injection point.
+Every call to `workerProvider.get()` returns a new prototype instance. This is the recommended approach — no abstract class, no CGLIB, no Spring-specific annotation at the injection point.
 
 ### ObjectFactory (Spring's Own Provider)
 
@@ -2552,7 +2552,7 @@ public class ObjectFactoryDemo {
 
 ---
 
-## ApplicationEventPublisher â€” Event-Driven Beans
+## ApplicationEventPublisher — Event-Driven Beans
 
 Spring's event infrastructure allows beans to publish and listen to application events without coupling publishers to listeners.
 
@@ -2583,7 +2583,7 @@ public class OrderPlacedEvent extends ApplicationEvent {
     public double getTotal() { return total; }
 }
 
-// POJO event â€” does NOT need to extend ApplicationEvent (preferred)
+// POJO event — does NOT need to extend ApplicationEvent (preferred)
 public class InventoryUpdatedEvent {
 
     private final String sku;
@@ -2655,7 +2655,7 @@ public class OrderEventListeners {
             + " by " + event.getQuantityChange());
     }
 
-    // Async listener â€” does not block the publisher's thread
+    // Async listener — does not block the publisher's thread
     @EventListener
     @Async
     public void sendPushNotification(OrderPlacedEvent event) {
@@ -2740,13 +2740,13 @@ public class TransactionalOrderListeners {
     @TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)
     public void onOrderCommitted(OrderPlacedEvent event) {
         System.out.println("Transaction committed for order " + event.getOrderId()
-            + " â€” sending email (guaranteed)");
+            + " — sending email (guaranteed)");
     }
 
     @TransactionalEventListener(phase = TransactionPhase.AFTER_ROLLBACK)
     public void onOrderRolledBack(OrderPlacedEvent event) {
         System.out.println("Transaction rolled back for order " + event.getOrderId()
-            + " â€” no email sent, updating failure counter");
+            + " — no email sent, updating failure counter");
     }
 
     @TransactionalEventListener(phase = TransactionPhase.BEFORE_COMMIT)
@@ -2785,7 +2785,7 @@ public class MultiEventListener {
 }
 ```
 
-### Generic Events â€” Using ResolvableType
+### Generic Events — Using ResolvableType
 
 
 ```java
@@ -2830,7 +2830,7 @@ Spring resolves the generic type parameter via `ResolvableType` to route events 
 
 ## Testing with Containers
 
-### @SpringBootTest â€” Full Application Context
+### @SpringBootTest — Full Application Context
 
 
 ```java
@@ -2901,7 +2901,7 @@ Other test slice annotations:
 | `@RestClientTest` | REST client (e.g. `RestTemplate`, `WebClient`) |
 | `@DataMongoTest` | MongoDB repositories |
 
-### @MockBean â€” Mocking in Context
+### @MockBean — Mocking in Context
 
 
 ```java
@@ -2977,7 +2977,7 @@ class AuditServiceSpyTest {
 }
 ```
 
-`@SpyBean` creates a Mockito spy around a real bean â€” the bean's real methods are called unless explicitly stubbed.
+`@SpyBean` creates a Mockito spy around a real bean — the bean's real methods are called unless explicitly stubbed.
 
 ### @Import for Focused Context
 
@@ -3042,7 +3042,7 @@ class DynamicPropertyTest {
 }
 ```
 
-### TestConfiguration â€” Local Overrides
+### TestConfiguration — Local Overrides
 
 
 ```java
@@ -3083,7 +3083,7 @@ class TestConfigurationDemo {
 }
 ```
 
-A `@TestConfiguration` inner class adds beans to the context **without** replacing the main configuration â€” unless a bean is marked `@Primary`, in which case it takes precedence.
+A `@TestConfiguration` inner class adds beans to the context **without** replacing the main configuration — unless a bean is marked `@Primary`, in which case it takes precedence.
 
 ### Testing with Active Profiles
 
@@ -3182,7 +3182,7 @@ class ProfileTest {
 
 ## Summary
 
-This chapter covered every facet of Spring's IoC container â€” from bootstrapping to wiring to lifecycle to testing.
+This chapter covered every facet of Spring's IoC container — from bootstrapping to wiring to lifecycle to testing.
 
 | Topic | Key Points |
 |---|---|

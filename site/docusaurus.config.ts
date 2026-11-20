@@ -37,6 +37,23 @@ const config: Config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
+  // A full build renders 1,419 documents through a 309 MB server bundle. Webpack
+  // holds that module graph in the JS heap, so by the time static generation
+  // starts V8 is already at 9.7 GB of live objects and aborts (exit 134) before
+  // writing a single HTML file. Rspack keeps the bundle graph in Rust instead,
+  // SWC replaces Babel, and mdxCrossCompilerCache compiles each MDX file once
+  // for both client and server. Measured effect: the build completes inside an
+  // 8 GB heap on this 12 GB machine.
+  future: {
+    faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      rspackBundler: true,
+      mdxCrossCompilerCache: true,
+    },
+  },
+
   markdown: {
     format: 'md',
     // The themes entry above only registers the <Mermaid> React component.

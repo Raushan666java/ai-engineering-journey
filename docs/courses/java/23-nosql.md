@@ -2980,7 +2980,7 @@ ummary
    - Handles bulk session invalidation for a user
 
 3. **Analytics Dashboard**: Build MongoDB aggregation pipelines that produce:
-   - Top 10 products by revenue (quantity Ã→ price)
+   - Top 10 products by revenue (quantity × price)
    - Product count by category with average rating
    - Monthly sales trends with running totals
    - Supplier performance metrics (total products, average price, stock levels)

@@ -926,15 +926,15 @@ d) 3000
 
 ## Exercises
 
-**Easy** â€” Create custom exception classes for a blog API: PostNotFound, InvalidPostData, UnauthorizedEdit. Implement a global exception handler that returns consistent JSON error responses.
+**Easy** — Create custom exception classes for a blog API: PostNotFound, InvalidPostData, UnauthorizedEdit. Implement a global exception handler that returns consistent JSON error responses.
 
-**Medium** â€” Implement structured JSON logging with request_id, endpoint, method, duration, and status_code for every request. Add a log rotation policy (10MB per file, 5 backups).
+**Medium** — Implement structured JSON logging with request_id, endpoint, method, duration, and status_code for every request. Add a log rotation policy (10MB per file, 5 backups).
 
-**Medium** â€” Add Prometheus metrics to a FastAPI app: request count by endpoint/status, request duration histogram, and error count. Add /metrics and /health endpoints.
+**Medium** — Add Prometheus metrics to a FastAPI app: request count by endpoint/status, request duration histogram, and error count. Add /metrics and /health endpoints.
 
-**Hard** â€” Build a circuit breaker for an external API client with: configurable failure threshold, recovery timeout, half-open testing, and automatic fallback to cached data. Add logging at each state transition.
+**Hard** — Build a circuit breaker for an external API client with: configurable failure threshold, recovery timeout, half-open testing, and automatic fallback to cached data. Add logging at each state transition.
 
-**Hard** â€” Implement a comprehensive error handling and monitoring system: custom exceptions with codes, global handlers, structured logging to file + stdout, Prometheus metrics, health checks (DB, Redis, disk), and alert rules for high error rates.
+**Hard** — Implement a comprehensive error handling and monitoring system: custom exceptions with codes, global handlers, structured logging to file + stdout, Prometheus metrics, health checks (DB, Redis, disk), and alert rules for high error rates.
 
 ---
 
@@ -962,33 +962,33 @@ d) 3000
 
 #### Google Style
 
-1. **Explain the core idea of Error handling and logging in under 60 seconds, then give a real-world analogy.** â€” Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
+1. **Explain the core idea of Error handling and logging in under 60 seconds, then give a real-world analogy.** — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
 
-2. **Design a minimal, well-typed function that demonstrates Error handling and logging.** â€” Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
+2. **Design a minimal, well-typed function that demonstrates Error handling and logging.** — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
 
-3. **What are the common pitfalls when engineers first learn ** â€” List 3-4, then explain how you would prevent each in a code review.
+3. **What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review.
 
 #### Amazon Style
 
-4. **Describe a production bug caused by misunderstanding Error handling and logging. How did you diagnose and fix it?** â€” STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
+4. **Describe a production bug caused by misunderstanding Error handling and logging. How did you diagnose and fix it?** — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
 
-5. **How would you scale a system that relies on Error handling and logging from 10 users to 10 million?** â€” Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
+5. **How would you scale a system that relies on Error handling and logging from 10 users to 10 million?** — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
 
 #### Microsoft Style
 
-6. **Compare Error handling and logging with the closest alternative approach. When would you choose each?** â€” Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
+6. **Compare Error handling and logging with the closest alternative approach. When would you choose each?** — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
 
-7. **Walk through how you would test a component that depends on Error handling and logging.** â€” Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
+7. **Walk through how you would test a component that depends on Error handling and logging.** — Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
 
 #### NVIDIA Style
 
-8. **How does Error handling and logging behave differently at scale â€” memory, throughput, or precision-wise?** â€” Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
+8. **How does Error handling and logging behave differently at scale — memory, throughput, or precision-wise?** — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
 
-9. **How would you make an implementation of Error handling and logging run faster on GPU hardware?** â€” Batch operations, vectorization, avoiding Python loops, reducing data movement.
+9. **How would you make an implementation of Error handling and logging run faster on GPU hardware?** — Batch operations, vectorization, avoiding Python loops, reducing data movement.
 
 #### AI Startup Style
 
-10. **Write the smallest possible implementation of Error handling and logging that is production-quality.** â€” Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
+10. **Write the smallest possible implementation of Error handling and logging that is production-quality.** — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
 
 ### Resume Tips
 
@@ -1007,37 +1007,37 @@ d) 3000
 
 ## True/False
 
-1. **True or False:** Error handling and logging builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
-2. **True or False:** You should write at least one code example for Error handling and logging before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
-3. **True or False:** The complexity analysis for Error handling and logging is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
-4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Error handling and logging in production. â€” **True.** Most production bugs come from unhandled edge cases.
-5. **True or False:** You should memorize the Error handling and logging chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+1. **True or False:** Error handling and logging builds directly on the fundamentals covered in the earlier chapters of this module. — **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Error handling and logging before moving to the next chapter. — **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Error handling and logging is the same regardless of input size. — **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Error handling and logging in production. — **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Error handling and logging chapter content once and never review it again. — **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
 
 ## Fill in the Blank
 
-1. The chapter that covers Error handling and logging is Chapter ___ of this module. â€” Answer: check the module's table of contents.
-2. The time complexity of the standard approach to 09 Error handling and logging is ___. â€” Answer: O(1) per request with async I/O
-3. The main edge case to handle when implementing 09 Error handling and logging is ___. â€” Answer: validation errors, missing auth, unhandled exceptions
-4. The tools commonly used to debug Error handling and logging issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
-5. The related topic that connects to Error handling and logging in the next chapter is ___. â€” Answer: see the Next Topic section.
+1. The chapter that covers Error handling and logging is Chapter ___ of this module. — Answer: check the module's table of contents.
+2. The time complexity of the standard approach to 09 Error handling and logging is ___. — Answer: O(1) per request with async I/O
+3. The main edge case to handle when implementing 09 Error handling and logging is ___. — Answer: validation errors, missing auth, unhandled exceptions
+4. The tools commonly used to debug Error handling and logging issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Error handling and logging in the next chapter is ___. — Answer: see the Next Topic section.
 
 ## Scenario Questions
 
-1. **Scenario:** A teammate ships a change involving Error handling and logging that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+1. **Scenario:** A teammate ships a change involving Error handling and logging that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
 
-2. **Scenario:** Your implementation of Error handling and logging is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+2. **Scenario:** Your implementation of Error handling and logging is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
 
-3. **Scenario:** A new hire asks you to explain Error handling and logging in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+3. **Scenario:** A new hire asks you to explain Error handling and logging in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
 
-4. **Scenario:** Your team's codebase has three different patterns for Error handling and logging and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+4. **Scenario:** Your team's codebase has three different patterns for Error handling and logging and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
 
 ## Output Questions
 
-1. **What is the output of the simplest correct implementation of Error handling and logging on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
-2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
-3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
-4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
-5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
+1. **What is the output of the simplest correct implementation of Error handling and logging on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** — With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** — Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
@@ -1049,7 +1049,7 @@ d) 3000
 
 ## Tips & Tricks
 
-- Always write a one-line example of Error handling and logging from memory before opening the chapter â€” active recall first.
+- Always write a one-line example of Error handling and logging from memory before opening the chapter — active recall first.
 - Use the chapter's Revision Notes as a checklist: you have mastered Error handling and logging when you can explain each bullet.
 - Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
 - For interviews, practice explaining Error handling and logging twice: once with a technical audience, once with a non-technical audience.
@@ -1058,10 +1058,10 @@ d) 3000
 ## Memory Tricks
 
 - **Acronym**: build a mnemonic from the 5 key concepts of Error handling and logging listed in the Chapter at a Glance table.
-- **Story**: link Error handling and logging to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Story**: link Error handling and logging to a familiar story — the analogy in the Visual Analogy section is designed to stick.
 - **Number anchor**: remember the complexity of Error handling and logging by connecting it to a known algorithm of the same class.
 - **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
-- **Teach-back**: explain Error handling and logging to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
+- **Teach-back**: explain Error handling and logging to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory.
 
 ## Further Reading
 
@@ -1069,27 +1069,27 @@ d) 3000
 - The original research paper introducing this concept (search Google Scholar)
 - Towards Data Science articles on this topic
 - The relevant chapter in 'Designing Data-Intensive Applications' by Kleppmann
-- GitHub repositories of production implementations Handling and Logging â€” API design
+- GitHub repositories of production implementations Handling and Logging — API design
 
 ## Related Topics
 
-- **Previous chapter** in Module 05 â€” builds the foundation for 09 Error handling and logging
-- **Next chapter** â€” extends 09 Error handling and logging with advanced techniques
-- **Module 07 System Design** â€” how 09 Error handling and logging fits into scalable production architectures
-- **Module 21 Interview Preparation** â€” FAANG-style questions on 09 Error handling and logging
-- **Module 19 Capstone Projects** â€” end-to-end application of 09 Error handling and logging
+- **Previous chapter** in Module 05 — builds the foundation for 09 Error handling and logging
+- **Next chapter** — extends 09 Error handling and logging with advanced techniques
+- **Module 07 System Design** — how 09 Error handling and logging fits into scalable production architectures
+- **Module 21 Interview Preparation** — FAANG-style questions on 09 Error handling and logging
+- **Module 19 Capstone Projects** — end-to-end application of 09 Error handling and logging
 
 ## FAQs
 
-1. **Do I need to memorize all of 09 Error handling and logging?** â€” Understand the big picture first. Memorize the key patterns via flashcards. Interviewers test understanding, not recitation.
-2. **What if I get stuck on an exercise?** â€” Re-read the theory, run the example code, then attempt again. If stuck after 20 minutes, move on and return the next day with fresh eyes.
-3. **How much time should I spend on 09 Error handling and logging?** â€” 2-3 hours for theory + examples, 3-5 hours for exercises. Total: one focused weekend session.
-4. **Is 09 Error handling and logging asked in FAANG interviews?** â€” Yes. Check the Interview Q&A section for exact question styles used by Google, Amazon, Microsoft, and AI startups.
-5. **What's the fastest way to master 09 Error handling and logging?** â€” Write the core implementation from memory, explain it to someone else, then solve one Hard exercise. Teaching reveals gaps faster than re-reading.
+1. **Do I need to memorize all of 09 Error handling and logging?** — Understand the big picture first. Memorize the key patterns via flashcards. Interviewers test understanding, not recitation.
+2. **What if I get stuck on an exercise?** — Re-read the theory, run the example code, then attempt again. If stuck after 20 minutes, move on and return the next day with fresh eyes.
+3. **How much time should I spend on 09 Error handling and logging?** — 2-3 hours for theory + examples, 3-5 hours for exercises. Total: one focused weekend session.
+4. **Is 09 Error handling and logging asked in FAANG interviews?** — Yes. Check the Interview Q&A section for exact question styles used by Google, Amazon, Microsoft, and AI startups.
+5. **What's the fastest way to master 09 Error handling and logging?** — Write the core implementation from memory, explain it to someone else, then solve one Hard exercise. Teaching reveals gaps faster than re-reading.
 
 ## Important Notes
 
-- Error handling and logging is a core requirement for the rest of this module â€” do not skip the examples.
+- Error handling and logging is a core requirement for the rest of this module — do not skip the examples.
 - Always analyze complexity (time and space) when working with Error handling and logging.
 - Production correctness means handling edge cases, not just the happy path.
 - Interview answers should start with the definition, then the example, then the trade-offs.
@@ -1097,9 +1097,9 @@ d) 3000
 
 ## Historical Context
 
-- Error handling and logging emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- Error handling and logging emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews.
 - The tools used for Error handling and logging today evolved from simpler versions; the chapter covers the modern, recommended approach.
-- Interviewers value knowing one historical fact about Error handling and logging â€” it shows genuine interest, not just cramming.
+- Interviewers value knowing one historical fact about Error handling and logging — it shows genuine interest, not just cramming.
 - The library/tooling ecosystem around Error handling and logging changes quickly; focus on fundamentals that remain stable.
 
 ## Security Considerations
@@ -1113,19 +1113,19 @@ d) 3000
 ## ML Intuition
 
 - This concept appears in ML pipelines at the data processing, training, or serving layer
-- Understanding it helps debug model misbehavior â€” most ML bugs are infrastructure bugs, not model bugs
+- Understanding it helps debug model misbehavior — most ML bugs are infrastructure bugs, not model bugs
 - Apply vectorization and batching to scale this concept to large datasets
-- Monitor for drift and degradation in production â€” set up alerts for key metrics
-- Connect to the broader ML lifecycle: data â†’ features â†’ training â†’ evaluation â†’ deployment â†’ monitoring
+- Monitor for drift and degradation in production — set up alerts for key metrics
+- Connect to the broader ML lifecycle: data → features → training → evaluation → deployment → monitoring
 
 ## Analogies
 
 - **09 Error handling and logging is like a GPS navigation system**: you define the destination (goal), the system plans the route (algorithm), and recalculates when you take a wrong turn (error handling).
 - **Complexity is like a restaurant kitchen**: a single chef (O(n)) handles small orders fine, but 1000 simultaneous orders need parallel chefs (O(log n) with proper indexing).
-- **Edge cases are like stress tests**: the happy path is a calm day, but production is Black Friday â€” design for the worst case.
+- **Edge cases are like stress tests**: the happy path is a calm day, but production is Black Friday — design for the worst case.
 - **The chapter roadmap is a subway map**: each section is a station, and skipping one means you miss the connection to the next destination.## Capstone Project Link
 
-- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the Error handling and logging skills used in the module's capstone project. Complete the exercises here before starting the capstone.
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) — this chapter contributes the Error handling and logging skills used in the module's capstone project. Complete the exercises here before starting the capstone.
 
 ## Flashcards
 
@@ -1193,30 +1193,30 @@ d) 3000
 - pytest for unit and integration testing
 - ruff + black for linting and formatting
 - mypy for static type checking
-- cProfile / py-spy for performance profiling Handling and Logging â€” API design
+- cProfile / py-spy for performance profiling Handling and Logging — API design
 
 ## Debugging Guide
 
-- **Step 1**: Reproduce the failure with the smallest possible input â€” isolate the bug before changing any code.
+- **Step 1**: Reproduce the failure with the smallest possible input — isolate the bug before changing any code.
 - **Step 2**: Add structured logging at each stage of the 09 Error handling and logging pipeline to identify exactly where the failure occurs.
-- **Step 3**: Check the Common Mistakes section â€” 80% of bugs match one of those patterns.
+- **Step 3**: Check the Common Mistakes section — 80% of bugs match one of those patterns.
 - **Step 4**: Use `pdb.set_trace()` or your IDE debugger to inspect intermediate values at the failure point.
-- **Step 5**: For performance issues, profile with `cProfile` or `py-spy` before optimizing â€” never guess at bottlenecks.
-- **Step 6**: Write a regression test that reproduces the bug before fixing it â€” this prevents recurrence.
+- **Step 5**: For performance issues, profile with `cProfile` or `py-spy` before optimizing — never guess at bottlenecks.
+- **Step 6**: Write a regression test that reproduces the bug before fixing it — this prevents recurrence.
 
 ## Mock Interview Section
 
-**Round 1 â€” Screening (15 min)**
+**Round 1 — Screening (15 min)**
 - Explain Error handling and logging in 60 seconds.
 - Write a minimal working example of Error handling and logging.
 - What is the complexity of your example?
 
-**Round 2 â€” Coding (45 min)**
+**Round 2 — Coding (45 min)**
 - Solve the Medium exercise from this chapter under time pressure.
 - State your assumptions, then implement with type hints.
 - Test with edge cases: empty input, boundary values, invalid input.
 
-**Round 3 â€” Behavioral + System (30 min)**
+**Round 3 — Behavioral + System (30 min)**
 - Tell me about a time you debugged a Error handling and logging problem in a project.
 - How would you design a system where Error handling and logging is used at scale?
 - What metrics would you monitor?
@@ -1264,15 +1264,15 @@ def demonstrate_09_error_handling_and_logging(input_data: list[Any]) -> Optional
 - Applied in production at companies like Google, Meta, Amazon, and Microsoft
 - Used in data pipelines, model serving, and API backends
 - Enables scalable, maintainable systems when applied correctly
-- Interview insight: connect the concept to a business outcome â€” cost reduction, latency improvement, or reliability increase
+- Interview insight: connect the concept to a business outcome — cost reduction, latency improvement, or reliability increase
 
 ## Next Topic
 
-[API Deployment â€” Docker, CI/CD, and Production Readiness](10-api-deployment.md)
+[API Deployment — Docker, CI/CD, and Production Readiness](10-api-deployment.md)
 
 ## Limitations
 
-- Error handling and logging, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- Error handling and logging, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory).
 - The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
-- Performance of Error handling and logging depends on input size and distribution â€” always benchmark for your own data.
+- Performance of Error handling and logging depends on input size and distribution — always benchmark for your own data.
 - This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

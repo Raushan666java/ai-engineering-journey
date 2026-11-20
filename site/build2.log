@@ -1,0 +1,70 @@
+﻿node : [WARNING] The `siteConfig.onBrokenMarkdownLinks` config option is deprecated and will be removed in Docusaurus 
+v4.
+At line:4 char:1
++ node ./node_modules/@docusaurus/core/bin/docusaurus.mjs build --no-mi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([WARNING] The `... Docusaurus v4.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Please migrate and move this option to `siteConfig.markdown.hooks.onBrokenMarkdownLinks` instead.
+[INFO] [en] Creating an optimized production build...
+[WARNING] The `siteConfig.onBrokenMarkdownLinks` config option is deprecated and will be removed in Docusaurus v4.
+Please migrate and move this option to `siteConfig.markdown.hooks.onBrokenMarkdownLinks` instead.
+[90m[[90mwebpackbar[90m][39m [36mΓä╣[39m Compiling Client
+[90m[[90mwebpackbar[90m][39m [36mΓä╣[39m Compiling Server
+LaTeX-incompatible input and strict mode is set to 'warn': Unrecognized Unicode character "ΓÇö" (8212) [unknownSymbol]
+LaTeX-incompatible input and strict mode is set to 'warn': Unrecognized Unicode character "ΓÇ¥" (8221) [unknownSymbol]
+LaTeX-incompatible input and strict mode is set to 'warn': % comment has no terminating newline; LaTeX would fail 
+because of commenting the end of math mode (e.g. $) [commentAtEnd]
+LaTeX-incompatible input and strict mode is set to 'warn': % comment has no terminating newline; LaTeX would fail 
+because of commenting the end of math mode (e.g. $) [commentAtEnd]
+LaTeX-incompatible input and strict mode is set to 'warn': % comment has no terminating newline; LaTeX would fail 
+because of commenting the end of math mode (e.g. $) [commentAtEnd]
+LaTeX-incompatible input and strict mode is set to 'warn': % comment has no terminating newline; LaTeX would fail 
+because of commenting the end of math mode (e.g. $) [commentAtEnd]
+LaTeX-incompatible input and strict mode is set to 'warn': Unrecognized Unicode character "ΓÇö" (8212) [unknownSymbol]
+LaTeX-incompatible input and strict mode is set to 'warn': Unrecognized Unicode character "ΓÇ¥" (8221) [unknownSymbol]
+LaTeX-incompatible input and strict mode is set to 'warn': % comment has no terminating newline; LaTeX would fail 
+because of commenting the end of math mode (e.g. $) [commentAtEnd]
+LaTeX-incompatible input and strict mode is set to 'warn': % comment has no terminating newline; LaTeX would fail 
+because of commenting the end of math mode (e.g. $) [commentAtEnd]
+LaTeX-incompatible input and strict mode is set to 'warn': % comment has no terminating newline; LaTeX would fail 
+because of commenting the end of math mode (e.g. $) [commentAtEnd]
+LaTeX-incompatible input and strict mode is set to 'warn': % comment has no terminating newline; LaTeX would fail 
+because of commenting the end of math mode (e.g. $) [commentAtEnd]
+LaTeX-incompatible input and strict mode is set to 'warn': % comment has no terminating newline; LaTeX would fail 
+because of commenting the end of math mode (e.g. $) [commentAtEnd]
+LaTeX-incompatible input and strict mode is set to 'warn': % comment has no terminating newline; LaTeX would fail 
+because of commenting the end of math mode (e.g. $) [commentAtEnd]
+LaTeX-incompatible input and strict mode is set to 'warn': Unrecognized Unicode character "ΓÇö" (8212) [unknownSymbol]
+LaTeX-incompatible input and strict mode is set to 'warn': Unrecognized Unicode character "ΓÇö" (8212) [unknownSymbol]
+LaTeX-incompatible input and strict mode is set to 'warn': % comment has no terminating newline; LaTeX would fail 
+because of commenting the end of math mode (e.g. $) [commentAtEnd]
+LaTeX-incompatible input and strict mode is set to 'warn': % comment has no terminating newline; LaTeX would fail 
+because of commenting the end of math mode (e.g. $) [commentAtEnd]
+LaTeX-incompatible input and strict mode is set to 'warn': Unrecognized Unicode character "ΓÇö" (8212) [unknownSymbol]
+LaTeX-incompatible input and strict mode is set to 'warn': Unrecognized Unicode character "ΓÇö" (8212) [unknownSymbol]
+[90m[[90mwebpackbar[90m][39m [32mΓ£ö[39m Server: Compiled successfully in 12.12m
+[90m[[90mwebpackbar[90m][39m [32mΓ£ö[39m Client: Compiled successfully in 15.44m
+
+<--- Last few GCs --->
+
+[16816:0000028E5805B000]  1233369 ms: Mark-Compact (reduce) 9684.9 (10119.4) -> 9684.3 (10086.0) MB, pooled: 0 MB, 
+6276.86 / 0.00 ms  (average mu = 0.232, current mu = 0.000) last resort; GC in old space requested
+[16816:0000028E5805B000]  1239781 ms: Mark-Compact (reduce) 9684.3 (10086.0) -> 9684.3 (10067.0) MB, pooled: 0 MB, 
+6411.70 / 0.00 ms  (average mu = 0.129, current mu = 0.000) last resort; GC in old space requested
+
+FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 00007FF6A3693D9F node::OnFatalError+1343
+ 2: 00007FF6A22DDCB7 v8::Function::NewInstance+423
+ 3: 00007FF6A20F6B52 X509_STORE_set_cleanup+5922
+ 4: 00007FF6A2102678 uv_timer_set_repeat+19096
+ 5: 00007FF6A211A06C uv_timer_set_repeat+115852
+ 6: 00007FF6A211A005 uv_timer_set_repeat+115749
+ 7: 00007FF6A1DEAB9B v8::RegExp::GetFlags+17227
+ 8: 00007FF6A1DEA41D v8::RegExp::GetFlags+15309
+ 9: 00007FF6A1DEB628 v8::RegExp::GetFlags+19928
+10: 00007FF6A1CDD947 v8::CodeEvent::GetFunctionName+172983
+11: 0000028E1FE775FA 

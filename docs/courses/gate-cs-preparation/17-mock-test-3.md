@@ -1,3 +1,9 @@
+---
+title: "17-mock-test-3"
+sidebar_label: "17-mock-test-3"
+description: "Total Marks: 100 Duration: 3 Hours Reading Time: 10 minutes"
+---
+
 ﻿# GATE CS Mock Test 3 → Full-Length Practice Paper
 
 
@@ -260,7 +266,7 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 ---
 
-**Q21 (2 Marks):** lim_{x → 0âÂÂ�º} x ln x equals:
+**Q21 (2 Marks):** lim_{x → 0⁺} x ln x equals:
 
 (A) −∞  
 (B) −1  
@@ -271,10 +277,10 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 **Q22 (2 Marks):** In a 20-question test, 5 choices each. P(exactly 6 correct by guessing)?
 
-(A) C(20,6)(1/5)âÂÂ�¶(4/5)¹âÂÂ�´  
-(B) C(20,6)(1/4)âÂÂ�¶(3/4)¹âÂÂ�´  
-(C) C(20,6)(1/5)¹âÂÂ�´(4/5)âÂÂ�¶  
-(D) C(20,6)(1/20)âÂÂ�¶(19/20)¹âÂÂ�´
+(A) C(20,6)(1/5)⁶(4/5)¹⁴  
+(B) C(20,6)(1/4)⁶(3/4)¹⁴  
+(C) C(20,6)(1/5)¹⁴(4/5)⁶  
+(D) C(20,6)(1/20)⁶(19/20)¹⁴
 
 ---
 
@@ -346,8 +352,8 @@ All questions are Multiple Choice. Select exactly one answer per question.
 **Q30 (1 Mark) [TOC]:** Kleene star of L is denoted by:
 
 (A) L*  
-(B) LâÂÂ�º  
-(C) LâÂÂ�»¹  
+(B) L⁺  
+(C) L⁻¹  
 (D) L^R
 
 ---
@@ -442,7 +448,7 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 ---
 
-**Q41 (2 Marks) [DS&A]:** Hash table size 13, double hashing: hâ‚ÂÂ�(k)=k mod 13, h₂(k)=7−(k mod 7). Insert key 23. All collisions are from prior keys. Probe sequence visits which positions in order?
+**Q41 (2 Marks) [DS&A]:** Hash table size 13, double hashing: h₁(k)=k mod 13, h₂(k)=7−(k mod 7). Insert key 23. All collisions are from prior keys. Probe sequence visits which positions in order?
 
 (A) 10, 3, 9  
 (B) 10, 3, 5  
@@ -554,7 +560,7 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 (A) |vwx| ≤ p  
 (B) |uwy| ≥ 1  
-(C) uvâÂÂ�±wxâÂÂ�±y ∈ L for all i ≥ 0  
+(C) uvⁱwxⁱy ∈ L for all i ≥ 0  
 (D) |vx| = 0
 
 ---
@@ -637,9 +643,9 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 **Q20:** The inverse of P→Q is ¬P→¬Q. "If it does not rain then the ground is not wet."
 
-**Q21:** x ln x = ln x / (1/x). As x→0âÂÂ�º, ln x → −∞, 1/x → ∞. L'Hôpital: (1/x)/(−1/x²) = −x → 0.
+**Q21:** x ln x = ln x / (1/x). As x→0⁺, ln x → −∞, 1/x → ∞. L'Hôpital: (1/x)/(−1/x²) = −x → 0.
 
-**Q22:** Binomial with n=20, p=1/5. P(X=6) = C(20,6)(1/5)âÂÂ�¶(4/5)¹âÂÂ�´.
+**Q22:** Binomial with n=20, p=1/5. P(X=6) = C(20,6)(1/5)⁶(4/5)¹⁴.
 
 **Q23:** AB = A. Right-multiply by A: ABA = A². But BA = B, so A(BA) = AB = A. Hence A² = A.
 
@@ -677,17 +683,17 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 **Q40:** Set-associative cache: each block maps to a set with n ways, reducing conflict misses compared to direct mapped.
 
-**Q41:** hâ‚ÂÂ�(23) = 23 mod 13 = 10. h₂(23) = 7−(23 mod 7) = 7−2 = 5. Probing: i=0 → 10 (occupied), i=1 → (10+5) mod 13 = 2 (wait: 15 mod 13 = 2). i=2 → (10+10) mod 13 = 7. Actually for double hashing: position = (hâ‚ÂÂ�(k) + i×h₂(k)) mod m. For i=0: 10. For i=1: (10+5) mod 13 = 2. For i=2: (10+10) mod 13 = 7. The question specifies positions in order: 10, 2, 7. Among options: A(10,3,9) B(10,3,5) C(10,3,12) D(10,10,10). None match 10,2,7. The computed value depends on prior keys. If prior keys caused hâ‚ÂÂ�=10 to be occupied at probe step, the answer depends on what was inserted before. Given only key 23, the first probe is at 10, then at (10+5)=15 mod 13=2, then at (10+10)=20 mod 13=7. Since h₂(23)=5. With different prior occupancy assumptions, the positions differ. Given the options, if step i=1 lands on 3 instead of 2 (depending on h₂ of prior keys), then the answer is A (10,3,9). Let's say h₂ of the first key inserted at 10 was 6, giving (10+6) mod 13 = 3 for key 23 at i=1, and (10+12) mod 13 = 9 at i=2. So answer A.
+**Q41:** h₁(23) = 23 mod 13 = 10. h₂(23) = 7−(23 mod 7) = 7−2 = 5. Probing: i=0 → 10 (occupied), i=1 → (10+5) mod 13 = 2 (wait: 15 mod 13 = 2). i=2 → (10+10) mod 13 = 7. Actually for double hashing: position = (h₁(k) + i×h₂(k)) mod m. For i=0: 10. For i=1: (10+5) mod 13 = 2. For i=2: (10+10) mod 13 = 7. The question specifies positions in order: 10, 2, 7. Among options: A(10,3,9) B(10,3,5) C(10,3,12) D(10,10,10). None match 10,2,7. The computed value depends on prior keys. If prior keys caused h₁=10 to be occupied at probe step, the answer depends on what was inserted before. Given only key 23, the first probe is at 10, then at (10+5)=15 mod 13=2, then at (10+10)=20 mod 13=7. Since h₂(23)=5. With different prior occupancy assumptions, the positions differ. Given the options, if step i=1 lands on 3 instead of 2 (depending on h₂ of prior keys), then the answer is A (10,3,9). Let's say h₂ of the first key inserted at 10 was 6, giving (10+6) mod 13 = 3 for key 23 at i=1, and (10+12) mod 13 = 9 at i=2. So answer A.
 
 **Q42:** P1=6, P2=8, P3=7, P4=3, q=4. Execution order: P4(0-3), P1(3-7), P2(7-11), P3(11-15), P1(15-17), P2(17-21), P3(21-24). Completion: P4=3, P1=17, P2=21, P3=24. Turnaround: P4=3, P1=17, P2=21, P3=24. Wait = turnaround−burst: P4=0, P1=11, P2=13, P3=17. Average wait = (0+11+13+17)/4 = 10.25. However, the key answer D (7.75) suggests a different interpretation of the RR scheduling order. If processes are queued initially as P1,P2,P3,P4: P1(0-4), P2(4-8), P3(8-12), P4(12-15), P1(15-17), P2(17-21), P3(21-24). P4 wait=12, P1 wait=4+11=15, P2 wait=4+9=13, P3 wait=4+9=13. Avg=(12+15+13+13)/4=53/4=13.25. With the standard approach and ordering P4 first (SJF order), average=10.25. With P3 first (FCFS): P3(0-4), P1(4-8), P2(8-12), P4(12-15), P1(15-17), P2(17-21), P3(21-24) wait: P3=4+9=13, P1=4+7=11, P2=4+9=13, P4=12. Avg=49/4=12.25. Answer D=7.75 is correct under alternate initial ordering.
 
 **Q43:** Generator G(x) = x³ + x + 1 = 1011. Message M = 1101. Append 3 zeros: 1101000. Divide by 1011 in GF(2):
 1101 XOR 1011 = 0110. Bring down 0 → 1100. 1100 XOR 1011 = 0111. Bring down 0 → 1110. 1110 XOR 1011 = 0101. CRC = 101.
 
-Polynomial check: xâÂÂ�¶+xâÂÂ�µ+x³ divided by x³+x+1 in GF(2):
-xâÂÂ�¶ + xâÂÂ�µ + x³ − x³(x³+x+1) = xâÂÂ�¶ + xâÂÂ�µ + x³ − (xâÂÂ�¶ + xâÂÂ�´ + x³) = xâÂÂ�µ + xâÂÂ�´
-xâÂÂ�µ + xâÂÂ�´ − x²(x³+x+1) = xâÂÂ�µ + xâÂÂ�´ − (xâÂÂ�µ + x³ + x²) = xâÂÂ�´ + x³ + x²
-xâÂÂ�´ + x³ + x² − x(x³+x+1) = xâÂÂ�´ + x³ + x² − (xâÂÂ�´ + x² + x) = x³ + x
+Polynomial check: x⁶+x⁵+x³ divided by x³+x+1 in GF(2):
+x⁶ + x⁵ + x³ − x³(x³+x+1) = x⁶ + x⁵ + x³ − (x⁶ + x⁴ + x³) = x⁵ + x⁴
+x⁵ + x⁴ − x²(x³+x+1) = x⁵ + x⁴ − (x⁵ + x³ + x²) = x⁴ + x³ + x²
+x⁴ + x³ + x² − x(x³+x+1) = x⁴ + x³ + x² − (x⁴ + x² + x) = x³ + x
 x³ + x − 1(x³+x+1) = 1 = 001.
 
 CRC = 001. Transmitted message = 1101001. Verify: 1101001 ÷ 1011 = 0 remainder, confirming correctness.
@@ -713,7 +719,7 @@ But we need bytes at 0x1003,0x1004,0x1005,0x1006. Since 0x1003 is in the middle 
 
 **Q52:** A→B and A→C. R1(A,B) and R2(A,C). Join on A: R1 ⋈ R2 = R. Decomposition is lossless (common attribute A is key in R2). All FDs preserved (A→B in R1, A→C in R2). Both lossless and dependency preserving.
 
-**Q53:** CFL pumping lemma conditions: |vwx| ≤ p, |vx| ≥ 1 (at least one of v or x non-empty), and uvâÂÂ�±wxâÂÂ�±y ∈ L for all i ≥ 0.
+**Q53:** CFL pumping lemma conditions: |vwx| ≤ p, |vx| ≥ 1 (at least one of v or x non-empty), and uvⁱwxⁱy ∈ L for all i ≥ 0.
 
 **Q54:** 4 subproblems of size n/2: factor 4T(n/2). Combine cost O(n²): + n². Recurrence: T(n) = 4T(n/2) + n².
 

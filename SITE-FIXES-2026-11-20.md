@@ -48,16 +48,70 @@ internal links, earlier crawl
 
 ---
 
+## Build memory: why every full build exited 134
+
+Three attempts, same wall:
+
+| Attempt | Heap | Died at | Evidence |
+|---------|------|---------|----------|
+| webpack, 8 GB | `--max-old-space-size=8192` | client compile | `Ineffective mark-compacts near heap limit` |
+| webpack, 10 GB | `10240` | start of static generation | 9,684 MB live, `html pages: 0`, GC unable to reclaim |
+| Rspack + SWC, 8 GB | `8192` | — | completes |
+
+The 9,684 MB was the giveaway: webpack's module graph for a 309 MB server
+bundle (1,419 documents) lives in the JS heap and is still resident when static
+generation begins, so V8 hit its ceiling before writing one HTML file. Moving
+that graph into Rspack's Rust memory is what fixed it:
+
+```ts
+future: {
+  faster: {
+    swcJsLoader: true,
+    swcJsMinimizer: true,
+    swcHtmlMinimizer: true,
+    rspackBundler: true,
+    mdxCrossCompilerCache: true,
+  },
+},
+```
+
+`@docusaurus/faster` was already a dependency; in 3.10 the key is `future.faster`
+(`future.experimental_faster` throws a rename error).
+
+---
+
 ## Still open
 
-- **29 files still contain `U+FFFD`** in contexts where the lost character is
-  ambiguous — `×`, `≈`, `→`, `±`, `₹` or ` — `. Mostly
-  `gate-cs-preparation/*` solved papers and `learning-how-to-learn/ch-08..10`.
-  They read as `500 � 1.20` instead of `500 × 1.20`. The em-dash cases are
-  already fixed; the rest need a human pass, one file at a time. Run
-  `node scripts/fix-mojibake.mjs --root docs` for the current list.
-  Worst: `gate-cs-preparation/02-theory-of-computation.md` (613 occurrences),
-  `04-digital-logic.md` (349), `05-gate-strategy.md` (321).
+- **Mojibake is now mostly repaired, and the repair is documented.** The damage
+  was UTF-8 text read as CP1252, one to three layers deep. It is reversible
+  except where bytes `0x81/0x8D/0x8F/0x90/0x9D` were destroyed (`U+FFFD`).
+  Current state of the raw source tree (`docs/`):
+
+  ```
+  before this pass   16,515 damaged characters
+  after              449 damaged characters in 13 files
+  ```
+
+  What fixed it, in order: restore each file from its newest
+  `U+FFFD`-free revision (`scripts/restore-mojibake.mjs`), then a CP1252
+  round-trip on runs of text (`scripts/fix-mojibake-deep.mjs`), then a
+  reference table of the mojibake spelling of every character in the ranges
+  this content uses (`scripts/fix-mojibake-table.mjs`), then two pinned
+  hand-tables for damage that a round trip cannot express
+  (`scripts/fix-mock-test-1.mjs`, `scripts/fix-learning-dashes.mjs`).
+
+  Remaining 449 characters, none of which can be recovered from data alone:
+
+  | File | Chars | Why it cannot be automated |
+  |------|-------|----------------------------|
+  | `data-analysis-interpretation/02-missing-data-caselet-di.md` | 222 | lost characters are operators (`×`, `−`, `÷`) — a blanket replacement would change the arithmetic |
+  | `data-analysis-interpretation/05-mixed-data-interpretation.md` | 198 | same |
+  | 11 other files | 29 | scattered single characters in prose, mostly `—` |
+
+  The three `learning-how-to-learn/ch-08..10` chapters were destroyed at import
+  (every revision in history carries the same 222 lost characters), so they
+  were repaired by context: every lost character there sat where a dash belongs.
+
 - `onBrokenLinks` and `onBrokenMarkdownLinks` are still `'warn'`. Flip to
   `'throw'` once one deploy has gone green, or a 404 will ship again.
   Note `onBrokenMarkdownLinks` is deprecated in v4 and belongs under

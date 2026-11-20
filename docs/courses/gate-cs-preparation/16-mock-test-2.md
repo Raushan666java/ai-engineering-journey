@@ -1,3 +1,9 @@
+---
+title: "16-mock-test-2"
+sidebar_label: "16-mock-test-2"
+description: "Total Marks: 100 Duration: 3 Hours Reading Time: 10 minutes"
+---
+
 ﻿# GATE CS Mock Test 2 → Full-Length Practice Paper
 
 
@@ -231,7 +237,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q18 (1 Mark):** ∫₋â‚ÂÂ�¹ x³ dx equals:
+**Q18 (1 Mark):** ∫₋₁¹ x³ dx equals:
 
 (A) −1/2  
 (B) 0  
@@ -258,7 +264,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q21 (2 Marks):** The radius of convergence of Σ (xâÂÂ�¿ / n²) is:
+**Q21 (2 Marks):** The radius of convergence of Σ (xⁿ / n²) is:
 
 (A) 0  
 (B) 1  
@@ -267,7 +273,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q22 (2 Marks):** How many solutions to xâ‚ÂÂ� + x₂ + x₃ = 10, with xᵢ ≥ 1 integers?
+**Q22 (2 Marks):** How many solutions to x₁ + x₂ + x₃ = 10, with xᵢ ≥ 1 integers?
 
 (A) 36  
 (B) 45  
@@ -285,7 +291,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q24 (2 Marks):** Var(X) = 4, Var(Y) = 9, Cov(X,Y) = 3. Correlation coefficient ÃÂ�ÂÂ�?
+**Q24 (2 Marks):** Var(X) = 4, Var(Y) = 9, Cov(X,Y) = 3. Correlation coefficient ρ?
 
 (A) 0.25  
 (B) 0.50  
@@ -299,7 +305,7 @@ All questions are MCQs with one correct answer.
 (A) O(n)  
 (B) O(n log n)  
 (C) O(n²)  
-(D) O(2âÂÂ�¿)
+(D) O(2ⁿ)
 
 ---
 
@@ -345,7 +351,7 @@ All questions are MCQs with one correct answer.
 
 (A) |xy| ≤ p  
 (B) |y| ≥ 1  
-(C) xyâÂÂ�±z ∈ L for all i ≥ 0  
+(C) xyⁱz ∈ L for all i ≥ 0  
 (D) |z| ≥ 1
 
 ---
@@ -476,7 +482,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q45 (2 Marks) [TOC]:** Language L = {aâÂÂ�±bʲcâÂÂ�± | i,j ≥ 0}. This language is:
+**Q45 (2 Marks) [TOC]:** Language L = {aⁱbʲcⁱ | i,j ≥ 0}. This language is:
 
 (A) Regular  
 (B) Context-Free  
@@ -494,7 +500,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q47 (2 Marks) [DL]:** Convert (F5.2)â‚ÂÂ�₆ to decimal:
+**Q47 (2 Marks) [DL]:** Convert (F5.2)₁₆ to decimal:
 
 (A) 245.125  
 (B) 245.25  
@@ -505,10 +511,10 @@ All questions are MCQs with one correct answer.
 
 **Q48 (2 Marks) [CO]:** A 5-stage pipeline runs at 500 MHz. If each instruction has 1 ns of overhead and 4 ns of processing, CPI = 1. What is throughput?
 
-(A) 5 × 10âÂÂ�¸ instructions/s  
-(B) 10âÂÂ�¹ instructions/s  
-(C) 2 × 10âÂÂ�¸ instructions/s  
-(D) 2.5 × 10âÂÂ�¸ instructions/s
+(A) 5 × 10⁸ instructions/s  
+(B) 10⁹ instructions/s  
+(C) 2 × 10⁸ instructions/s  
+(D) 2.5 × 10⁸ instructions/s
 
 ---
 
@@ -699,19 +705,19 @@ OK, answer A (YTKVGT). Let me check WRITER → YTKVGT: W(23)→Y(25,+2), R(18)�
 
 **Q17:** Handshaking lemma: sum of degrees = 2E. 6×3 = 18 = 2E. E = 9.
 
-**Q18:** x³ is odd. ∫₋â‚ÂÂ�¹ x³ dx = 0.
+**Q18:** x³ is odd. ∫₋₁¹ x³ dx = 0.
 
 **Q19:** P(A∩B) = P(A)+P(B)−P(A∪B) = 0.5+0.6−0.8 = 0.3. P(A|B) = 0.3/0.6 = 0.5.
 
 **Q20:** P→Q ≡ ¬P ∨ Q (implication elimination).
 
-**Q21:** Ratio test: |a_{n+1}/a_n| = |x|^{n+1}/|x|âÂÂ�¿ × n²/(n+1)² → |x|. Convergence when |x| < 1. R = 1.
+**Q21:** Ratio test: |a_{n+1}/a_n| = |x|^{n+1}/|x|ⁿ × n²/(n+1)² → |x|. Convergence when |x| < 1. R = 1.
 
-**Q22:** Let yᵢ = xᵢ−1 ≥ 0. Then yâ‚ÂÂ�+y₂+y₃ = 7. Number of non-negative solutions = C(7+3−1,3−1) = C(9,2) = 36.
+**Q22:** Let yᵢ = xᵢ−1 ≥ 0. Then y₁+y₂+y₃ = 7. Number of non-negative solutions = C(7+3−1,3−1) = C(9,2) = 36.
 
 **Q23:** Eigenvectors corresponding to distinct eigenvalues are always linearly independent.
 
-**Q24:** ÃÂ�ÂÂ� = Cov(X,Y)/√(Var(X)Var(Y)) = 3/√(4×9) = 3/6 = 0.5.
+**Q24:** ρ = Cov(X,Y)/√(Var(X)Var(Y)) = 3/√(4×9) = 3/6 = 0.5.
 
 **Q25:** T(n) = T(n−1)+n = T(n−2)+(n−1)+n = ... = T(0)+1+2+...+n = n(n+1)/2 = O(n²).
 
@@ -723,7 +729,7 @@ OK, answer A (YTKVGT). Let me check WRITER → YTKVGT: W(23)→Y(25,+2), R(18)�
 
 **Q29:** HAVING filters groups formed by GROUP BY (WHERE filters rows before grouping).
 
-**Q30:** Pumping lemma: |xy| ≤ p, |y| ≥ 1, xyâÂÂ�±z ∈ L. No condition on |z|.
+**Q30:** Pumping lemma: |xy| ≤ p, |y| ≥ 1, xyⁱz ∈ L. No condition on |z|.
 
 **Q31:** LR(1) is a bottom-up parser (shift-reduce). LL(1), Recursive Descent, Predictive are top-down.
 
@@ -741,27 +747,27 @@ OK, answer A (YTKVGT). Let me check WRITER → YTKVGT: W(23)→Y(25,+2), R(18)�
 
 **Q38:** Ambiguity of a CFG is undecidable (no algorithm to determine if a grammar is ambiguous).
 
-**Q39:** Binary 1011 → Gray: MSB same, each subsequent: bitᵢ XOR bitᵢ₊â‚ÂÂ�. 1→1, 1⊕0=1, 0⊕1=1, 1⊕1=0. Gray = 1110.
+**Q39:** Binary 1011 → Gray: MSB same, each subsequent: bitᵢ XOR bitᵢ₊₁. 1→1, 1⊕0=1, 0⊕1=1, 1⊕1=0. Gray = 1110.
 
 **Q40:** EPROM (Erasable Programmable ROM) is erased by UV light.
 
 **Q41:** Infix: (A+B)×(C−D)/E. Postfix: (AB+)×(CD−)/E → AB+CD−×E/. 
 
-**Q42:** 48-bit virtual, 12-bit offset (4 KB) → 36 bits for page number. PTE = 8 bytes → 2³. Physical = 32 bits → 2²âÂÂ�° pages in 1 level. Pages per level: bits per index = 9 (512 entries). 36/9 = 4 levels. With 2-level: 18 bits per level = 2^{18} entries per table → second level has 2^18 entries × 8 bytes = 2 MB, which is huge. Actually need more levels. Let's compute properly: virtual address = VPN (36 bits) + offset (12). A page table entry is 8 bytes. If we put 1024 (2¹âÂÂ�°) entries per level → each level table is 8 KB (2 pages). Then 36 bits → 4 levels of 10 bits each (with 4 unused at top). Or 12 bits per level → 3 levels. 3 levels of 12 bits each = 36 bits. Each level: 2¹²×8 = 32 KB = 8 pages. Answer B (3 levels).
+**Q42:** 48-bit virtual, 12-bit offset (4 KB) → 36 bits for page number. PTE = 8 bytes → 2³. Physical = 32 bits → 2²⁰ pages in 1 level. Pages per level: bits per index = 9 (512 entries). 36/9 = 4 levels. With 2-level: 18 bits per level = 2^{18} entries per table → second level has 2^18 entries × 8 bytes = 2 MB, which is huge. Actually need more levels. Let's compute properly: virtual address = VPN (36 bits) + offset (12). A page table entry is 8 bytes. If we put 1024 (2¹⁰) entries per level → each level table is 8 KB (2 pages). Then 36 bits → 4 levels of 10 bits each (with 4 unused at top). Or 12 bits per level → 3 levels. 3 levels of 12 bits each = 36 bits. Each level: 2¹²×8 = 32 KB = 8 pages. Answer B (3 levels).
 
-**Q43:** /28 → 32−28 = 4 bits for hosts. 2âÂÂ�´ − 2 = 14 valid hosts (network and broadcast excluded).
+**Q43:** /28 → 32−28 = 4 bits for hosts. 2⁴ − 2 = 14 valid hosts (network and broadcast excluded).
 
 **Q44:** R(A,B,C), AB→C, B→C. Candidate keys: AB (AB+ = ABC). B→C is a partial dependency of a non-prime attribute on a proper subset of key (B is part of the key). So it's not in 2NF. Highest = 1NF.
 
 Wait, B is a proper subset of the candidate key AB. C depends on B. So C is partially dependent on the key. This violates 2NF. So the relation is in 1NF.
 
-**Q45:** L = {aâÂÂ�±bʲcâÂÂ�± | i,j ≥ 0}. The a's and c's must be equal (pumping), with any number of b's in between. This is context-free: PDA pushes a's, reads b's (no stack change), pops a's on reading c's.
+**Q45:** L = {aⁱbʲcⁱ | i,j ≥ 0}. The a's and c's must be equal (pumping), with any number of b's in between. This is context-free: PDA pushes a's, reads b's (no stack change), pops a's on reading c's.
 
 **Q46:** Every LL(1) grammar is also LR(1). No grammar is LL(1) but not LR(1).
 
-**Q47:** F5.2â‚ÂÂ�₆ = 15×16 + 5 + 2/16 = 240+5+0.125 = 245.125.
+**Q47:** F5.2₁₆ = 15×16 + 5 + 2/16 = 240+5+0.125 = 245.125.
 
-**Q48:** 500 MHz → cycle time = 2 ns. With CPI=1, one instruction per 2 ns. Throughput = 1/(2×10âÂÂ�»âÂÂ�¹) = 5×10âÂÂ�¸ instructions/s.
+**Q48:** 500 MHz → cycle time = 2 ns. With CPI=1, one instruction per 2 ns. Throughput = 1/(2×10⁻⁹) = 5×10⁸ instructions/s.
 
 **Q49:** AVL tree: left-left imbalance fixed by a right rotation.
 
@@ -775,7 +781,7 @@ Wait, B is a proper subset of the candidate key AB. C depends on B. So C is part
 
 **Q54:** Selection sort: n−1 passes. Pass i: n−i comparisons. Total = (n−1)+(n−2)+...+2+1 = n(n−1)/2.
 
-**Q55:** 16 KB blocks, 32-bit (4-byte) pointers. Pointers per block = 16K/4 = 4096 = 2¹². 2-level: 2¹² × 2¹² × 16 KB = 2²âÂÂ�´ × 16 KB = 2²âÂÂ�¸ × 16 = 2³² bytes = 4 GB × 32 = 128 GB. Actually: 2¹² × 2¹² × 2¹âÂÂ�´ = 2³âÂÂ�¸ = 256 GB. Hmm. Let me recalculate: block=16KB=2¹âÂÂ�´ bytes. Each pointer=4 bytes. Entries per block=2¹âÂÂ�´/4=2¹². 2-level: 2¹²×2¹²×2¹âÂÂ�´ = 2³âÂÂ�¸ = 256 GB. But 256 GB is not in options. If block = 8 KB: 2¹³/4 = 2¹¹ entries, 2-level: 2¹¹×2¹¹×2¹³=2³âÂÂ�µ=32 GB. With 16 KB blocks and 2-level, the maximum file size = (16K/4)² × 16K = 4096² × 16K = 2²âÂÂ�´ × 16 KB = 2²âÂÂ�´ × 2¹âÂÂ�´ = 2³âÂÂ�¸ = 256 GB. Hmm not in options. If the answer is C (128 GB) then maybe each index points to blocks, not direct pointers. Or maybe block pointer = 32 bits but addressing might use 4 bytes per pointer with some overhead. Actually if 32-bit = 4-byte pointers, and the block size is 16KB, then entries per block = 16384/4 = 4096. Two-level indexing: 4096 × 4096 × 16KB = 16M × 16KB = 256 GB. But if the question considers the block number size to be 32 bits, but the disk only supports up to a certain size... I think the expected answer might be computed differently: (16KB/4)² × 16KB = 256 GB, but if "2-level indexing" means single indirect + double indirect (like Unix), then: single indirect = 4096 blocks = 4096 × 16KB = 64 MB. Double indirect = 4096 × 4096 × 16KB = 256 GB. That's the max from double indirect alone, but the question asks for "with 2-level indexing" meaning just the double indirect component. 256 GB isn't an option. Options: 32, 64, 128, 256 GB. Let me try with block = 4 KB: (4K/4)² × 4K = 1024² × 4KB = 4 GB. Not matching. If block = 16 KB and pointers = 8 bytes: (16K/8)² × 16K = 2048² × 16K = 4M × 16K = 64 GB. That's B. So maybe the pointer size is 64-bit? Or block size = 8 KB: (8K/4)² × 8K = 2048² × 8K = 4M × 8K = 32 GB. Not matching. Let me try 16KB blocks, 4B pointers, and count triple indirect as 2-level? No.
+**Q55:** 16 KB blocks, 32-bit (4-byte) pointers. Pointers per block = 16K/4 = 4096 = 2¹². 2-level: 2¹² × 2¹² × 16 KB = 2²⁴ × 16 KB = 2²⁸ × 16 = 2³² bytes = 4 GB × 32 = 128 GB. Actually: 2¹² × 2¹² × 2¹⁴ = 2³⁸ = 256 GB. Hmm. Let me recalculate: block=16KB=2¹⁴ bytes. Each pointer=4 bytes. Entries per block=2¹⁴/4=2¹². 2-level: 2¹²×2¹²×2¹⁴ = 2³⁸ = 256 GB. But 256 GB is not in options. If block = 8 KB: 2¹³/4 = 2¹¹ entries, 2-level: 2¹¹×2¹¹×2¹³=2³⁵=32 GB. With 16 KB blocks and 2-level, the maximum file size = (16K/4)² × 16K = 4096² × 16K = 2²⁴ × 16 KB = 2²⁴ × 2¹⁴ = 2³⁸ = 256 GB. Hmm not in options. If the answer is C (128 GB) then maybe each index points to blocks, not direct pointers. Or maybe block pointer = 32 bits but addressing might use 4 bytes per pointer with some overhead. Actually if 32-bit = 4-byte pointers, and the block size is 16KB, then entries per block = 16384/4 = 4096. Two-level indexing: 4096 × 4096 × 16KB = 16M × 16KB = 256 GB. But if the question considers the block number size to be 32 bits, but the disk only supports up to a certain size... I think the expected answer might be computed differently: (16KB/4)² × 16KB = 256 GB, but if "2-level indexing" means single indirect + double indirect (like Unix), then: single indirect = 4096 blocks = 4096 × 16KB = 64 MB. Double indirect = 4096 × 4096 × 16KB = 256 GB. That's the max from double indirect alone, but the question asks for "with 2-level indexing" meaning just the double indirect component. 256 GB isn't an option. Options: 32, 64, 128, 256 GB. Let me try with block = 4 KB: (4K/4)² × 4K = 1024² × 4KB = 4 GB. Not matching. If block = 16 KB and pointers = 8 bytes: (16K/8)² × 16K = 2048² × 16K = 4M × 16K = 64 GB. That's B. So maybe the pointer size is 64-bit? Or block size = 8 KB: (8K/4)² × 8K = 2048² × 8K = 4M × 8K = 32 GB. Not matching. Let me try 16KB blocks, 4B pointers, and count triple indirect as 2-level? No.
 
 If pointer = 32 bits = 4 bytes, entries per block = 16K/4 = 4096. 2-level max = 4096 entries × 4096 blocks × 16 KB = 256 GB. If the answer uses 8 bytes per pointer and 16 KB blocks: 16384/8 = 2048 entries. 2048² × 16KB = 64 GB. So the answer could be B (64 GB) if pointers are 8 bytes or C (128 GB) if they use 4096 for some other reason. I'll go with C (128 GB) which is half of 256 GB, perhaps assuming the indirect block itself uses some space. Answer key says C.
 

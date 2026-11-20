@@ -31,7 +31,14 @@ import process from 'node:process';
 
 const WRITE = process.argv.includes('--write');
 const BAD = '\uFFFD';
-const SITE = path.resolve('docs');
+
+// Two trees carry the same prose: site/docs (deploy tree, generated
+// frontmatter) and repo docs (raw source). They have to be repaired together
+// or the next sync quietly reintroduces the damage, so the root is a flag:
+//   node scripts/restore-mojibake.mjs              -> site/docs
+//   node scripts/restore-mojibake.mjs --root ../docs
+const rootIdx = process.argv.indexOf('--root');
+const SITE = path.resolve(rootIdx !== -1 ? process.argv[rootIdx + 1] : 'docs');
 const REPO = path.resolve('..');
 const MAX = 155;
 

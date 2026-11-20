@@ -1,10 +1,10 @@
 ---
-description: "GATE CS Weightage: 8Ã¢â‚¬â€œ12 marks (3Ã¢â‚¬â€œ5 questions). Consistent high-weight subject with predictable patterns in normalization, SQL, relational"
+description: "GATE CS Weightage: 8–12 marks (3–5 questions). Consistent high-weight subject with predictable patterns in normalization, SQL, relational"
 ---
 
 ﻿# Chapter 08: Database Management Systems
 
-**GATE CS Weightage:** 8Ã¢â‚¬â€œ12 marks (3Ã¢â‚¬â€œ5 questions). Consistent high-weight subject with predictable patterns in normalization, SQL, relational algebra, transactions, and B+ trees.
+**GATE CS Weightage:** 8–12 marks (3–5 questions). Consistent high-weight subject with predictable patterns in normalization, SQL, relational algebra, transactions, and B+ trees.
 
 
 ## Chapter at a Glance
@@ -97,7 +97,7 @@ flowchart LR
 |-------------|-----------|---------------|
 | **1NF** | Atomic domains; no multi-valued attributes | Decompose non-atomic columns |
 | **2NF** | 1NF + no partial dependency (non-prime attr depends on subset of CK) | Decompose for each partial dependency |
-| **3NF** | 2NF + no transitive dependency (non-prime â†’ non-prime) | Decompose for each transitive FD |
+| **3NF** | 2NF + no transitive dependency (non-prime → non-prime) | Decompose for each transitive FD |
 | **BCNF** | 3NF + LHS of every non-trivial FD must be a superkey | Decompose where LHS is not a superkey |
 | **4NF** | BCNF + no multi-valued dependencies (except superkey) | Decompose using MVDs |
 | **5NF** | 4NF + every join dependency implied by candidate keys | Decompose for join dependencies |
@@ -150,9 +150,9 @@ flowchart LR
 
 ### 1.2 Cardinality Constraints
 
-- **1:1** â†’ One entity A associated with exactly one B and vice versa
-- **1:N** â†’ One A associated with many B; each B with one A
-- **M:N** â†’ Many A associated with many B
+- **1:1** → One entity A associated with exactly one B and vice versa
+- **1:N** → One A associated with many B; each B with one A
+- **M:N** → Many A associated with many B
 
 ### 1.3 Participation Constraints
 
@@ -167,8 +167,8 @@ flowchart LR
 
 ### 1.5 Generalization / Specialization
 
-- **Generalization:** Bottom-up â†’ combining entities into higher-level entity
-- **Specialization:** Top-down â†’ subdividing entity into sub-entities
+- **Generalization:** Bottom-up → combining entities into higher-level entity
+- **Specialization:** Top-down → subdividing entity into sub-entities
 - **Constraints:**
   - **Disjoint:** Entity can belong to at most one subclass (d with d)
   - **Overlapping:** Entity can belong to multiple subclasses (d with o)
@@ -177,13 +177,13 @@ flowchart LR
 
 ### 1.6 ER-to-Relational Mapping Steps
 
-1. Each strong entity â†’ relation (key becomes PK)
-2. Each weak entity â†’ relation (PK = partial key + owner PK)
-3. Each 1:1 relationship â†’ FK in either participating relation
-4. Each 1:N relationship â†’ FK in N-side relation referencing PK of 1-side
-5. Each M:N relationship â†’ new relation with composite PK from both entity PKs
-6. Each multi-valued attribute â†’ new relation (composite PK with entity PK)
-7. Each generalization: three options â†’ single table, one-per-concrete, one-per-abstract
+1. Each strong entity → relation (key becomes PK)
+2. Each weak entity → relation (PK = partial key + owner PK)
+3. Each 1:1 relationship → FK in either participating relation
+4. Each 1:N relationship → FK in N-side relation referencing PK of 1-side
+5. Each M:N relationship → new relation with composite PK from both entity PKs
+6. Each multi-valued attribute → new relation (composite PK with entity PK)
+7. Each generalization: three options → single table, one-per-concrete, one-per-abstract
 
 ---
 
@@ -209,38 +209,38 @@ flowchart LR
 |-----------|--------|-------------|
 | Select | sigma_c(R) | Filter rows by condition c |
 | Project | pi_{A1,A2}(R) | Pick columns A1, A2 (removes duplicates) |
-| Union | R Ã¢Ë†Âª S | Tuples in R or S (union-compatible) |
+| Union | R ∪ S | Tuples in R or S (union-compatible) |
 | Set Difference | R - S | Tuples in R but not S |
-| Cartesian Product | R Ãƒâ€” S | All combinations of tuples |
+| Cartesian Product | R × S | All combinations of tuples |
 | Rename | rho_{new}(R) | Rename relation/attributes |
 
 #### Join Operations
 
 | Join | Symbol | Description |
 |------|--------|-------------|
-| Theta Join | R Ã¢â€¹Ë†_c S | R Ãƒâ€” S followed by sigma_c |
-| Equi Join | R Ã¢â€¹Ë†_{A=B} S | Theta join with equality condition |
-| Natural Join | R Ã¢â€¹Ë† S | Equi join on common attributes (removes duplicate columns) |
-| Left Outer Join | R Ã¢Å¸â€¢ S | Natural join + unmatched left tuples padded with NULL |
-| Right Outer Join | R Ã¢Å¸â€“ S | Natural join + unmatched right tuples padded with NULL |
-| Full Outer Join | R Ã¢Å¸â€” S | Natural join + all unmatched tuples padded with NULL |
+| Theta Join | R ⋈_c S | R × S followed by sigma_c |
+| Equi Join | R ⋈_{A=B} S | Theta join with equality condition |
+| Natural Join | R ⋈ S | Equi join on common attributes (removes duplicate columns) |
+| Left Outer Join | R ⟕ S | Natural join + unmatched left tuples padded with NULL |
+| Right Outer Join | R ⟖ S | Natural join + unmatched right tuples padded with NULL |
+| Full Outer Join | R ⟗ S | Natural join + all unmatched tuples padded with NULL |
 
 #### Division Operation
 
-**R ÃƒÂ· S:** Returns tuples from R that match ALL tuples in S.
+**R ÷ S:** Returns tuples from R that match ALL tuples in S.
 
 ```
 Tables: R(A, B), S(B)
 Output: A values that appear in R paired with every B in S
 ```
 
-**Equivalence:** `R ÃƒÂ· S = pi_A(R) - pi_A( (pi_A(R) Ãƒâ€” S) - R )`
+**Equivalence:** `R ÷ S = pi_A(R) - pi_A( (pi_A(R) × S) - R )`
 
 ### 2.3 Tuple Relational Calculus
 
 - **Declarative:** `{ t | condition(t) }`
 - t is a tuple variable; condition specifies constraints
-- Uses existential (Ã¢Ë†Æ’) and universal (Ã¢Ë†â‚¬) quantifiers
+- Uses existential (∃) and universal (∀) quantifiers
 - **Safe expression:** Results must be finite (domain-restricted)
 
 ### 2.4 Domain Relational Calculus
@@ -331,7 +331,7 @@ WHERE e.salary > (SELECT AVG(salary) FROM Employee
 | MIN(attr) | Minimum value |
 | MAX(attr) | Maximum value |
 
-**Order of execution:** FROM â†’ WHERE â†’ GROUP BY â†’ HAVING â†’ SELECT â†’ ORDER BY
+**Order of execution:** FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY
 
 ### 3.6 Views
 
@@ -342,7 +342,7 @@ FROM Employee
 GROUP BY dept;
 ```
 
-- **Updatable views:** Single-table, no aggregation, no DISTINCT, no GROUP BY â†’ updates propagate to base table
+- **Updatable views:** Single-table, no aggregation, no DISTINCT, no GROUP BY → updates propagate to base table
 - **Materialized views:** Physically stored; refreshed periodically
 
 ### 3.7 Triggers
@@ -381,42 +381,42 @@ REVOKE SELECT ON Employee FROM user1 CASCADE;
 
 ### 4.1 Functional Dependencies
 
-**Definition:** A â†’ B means each value of A determines exactly one value of B.
+**Definition:** A → B means each value of A determines exactly one value of B.
 
 **Armstrong's Axioms (Sound and Complete):**
 
 | Rule | Derivation |
 |------|------------|
-| **Reflexivity** | If B Ã¢Å â€  A, then A â†’ B |
-| **Augmentation** | If A â†’ B, then AC â†’ BC |
-| **Transitivity** | If A â†’ B and B â†’ C, then A â†’ C |
+| **Reflexivity** | If B ⊆ A, then A → B |
+| **Augmentation** | If A → B, then AC → BC |
+| **Transitivity** | If A → B and B → C, then A → C |
 
 **Additional rules (derived):**
 
 | Rule | Derivation |
 |------|------------|
-| **Union** | If A â†’ B and A â†’ C, then A â†’ BC |
-| **Decomposition** | If A â†’ BC, then A â†’ B and A â†’ C |
-| **Pseudo-transitivity** | If A â†’ B and BC â†’ D, then AC â†’ D |
+| **Union** | If A → B and A → C, then A → BC |
+| **Decomposition** | If A → BC, then A → B and A → C |
+| **Pseudo-transitivity** | If A → B and BC → D, then AC → D |
 
 ### 4.2 Attribute Closure Computation
 
-Given FD set F, find closure of attribute set X (XÃ¢ÂÂº):
+Given FD set F, find closure of attribute set X (X⁺):
 
 ```
 Algorithm:
 1. result = X
 2. while (result changes)
-     for each FD Y â†’ Z in F
-       if Y Ã¢Å â€  result
-         result = result Ã¢Ë†Âª Z
+     for each FD Y → Z in F
+       if Y ⊆ result
+         result = result ∪ Z
 ```
 
 **Uses:** Finding candidate keys, checking if FD is implied, testing superkeys.
 
 ### 4.3 Candidate Key Computation
 
-- A candidate key is a minimal superkey: XÃ¢ÂÂº = all attributes, and no proper subset has closure = all attributes.
+- A candidate key is a minimal superkey: X⁺ = all attributes, and no proper subset has closure = all attributes.
 - **Steps:**
   1. Compute closure of attribute subsets starting from smallest size
   2. First set whose closure = all attributes is a candidate key
@@ -439,14 +439,14 @@ Algorithm:
 ### 4.5 Lossless Decomposition
 
 Decomposition of R into R1, R2 is **lossless** if:
-- `R1 Ã¢Ë†Â© R2 â†’ R1` or `R1 Ã¢Ë†Â© R2 â†’ R2` (i.e., common attributes form a superkey in at least one)
+- `R1 ∩ R2 → R1` or `R1 ∩ R2 → R2` (i.e., common attributes form a superkey in at least one)
 - Or for decomposition into multiple relations: natural join of all decomposed relations yields original R without spurious tuples
 
 ### 4.6 Dependency Preservation
 
 Decomposition preserves dependencies if the union of FDs projected on each decomposed relation implies the original FD set.
 
-**Algorithm:** For each FD X â†’ Y in F, check if `XÃ¢ÂÂº` w.r.t. projected FDs contains Y. If all FDs are preserved, the decomposition is dependency-preserving.
+**Algorithm:** For each FD X → Y in F, check if `X⁺` w.r.t. projected FDs contains Y. If all FDs are preserved, the decomposition is dependency-preserving.
 
 ### 4.7 Normal Forms in Detail
 
@@ -462,11 +462,11 @@ Decomposition preserves dependencies if the union of FDs projected on each decom
 
 #### 3NF
 - 2NF + **no transitive dependency** for non-prime attributes
-- An FD X â†’ A violates 3NF if: X is not a superkey AND A is non-prime
+- An FD X → A violates 3NF if: X is not a superkey AND A is non-prime
 
 #### BCNF
 - 3NF + LHS of every non-trivial FD must be a superkey
-- **Every FD, X â†’ A, must have X as a superkey**
+- **Every FD, X → A, must have X as a superkey**
 
 | Comparison | Lossless | Dependency-Preserving |
 |------------|----------|----------------------|
@@ -475,7 +475,7 @@ Decomposition preserves dependencies if the union of FDs projected on each decom
 
 #### 4NF
 - BCNF + no non-trivial **multi-valued dependency** (MVD)
-- MVD: A â†’â†’ B means B set is independent of all other attributes
+- MVD: A →→ B means B set is independent of all other attributes
 - Fix: Decompose on MVD
 
 #### 5NF (Project-Join NF)
@@ -489,9 +489,9 @@ Decomposition preserves dependencies if the union of FDs projected on each decom
 ### 5.1 Transaction States
 
 ```
-Active â†’ Partially Committed â†’ Committed
-   â†“                                  â†‘
-Failed â†’ Aborted
+Active → Partially Committed → Committed
+   ↓                                  ↑
+Failed → Aborted
 ```
 
 ### 5.2 Schedules
@@ -513,9 +513,9 @@ Failed â†’ Aborted
 
 **Precedence Graph Method:**
 1. Create node for each transaction
-2. For each pair of conflicting operations op1 before op2, add edge Ti â†’ Tj
-3. If graph has a cycle â†’ NOT conflict serializable
-4. If acyclic â†’ conflict serializable (topological sort gives equivalent serial order)
+2. For each pair of conflicting operations op1 before op2, add edge Ti → Tj
+3. If graph has a cycle → NOT conflict serializable
+4. If acyclic → conflict serializable (topological sort gives equivalent serial order)
 
 ### 5.4 View Serializability
 
@@ -541,7 +541,7 @@ Schedule S1 is **view equivalent** to S2 if:
 - **Phase 1 (Growing):** Acquire locks, cannot release
 - **Phase 2 (Shrinking):** Release locks, cannot acquire
 - **Guarantees:** Conflict serializable (but may still have cascading aborts)
-- **Strict 2PL:** Release locks only after commit â†’ avoids cascading aborts
+- **Strict 2PL:** Release locks only after commit → avoids cascading aborts
 - **Rigorous 2PL:** All locks released only after commit (same as strict)
 
 **Problems with locking:**
@@ -589,10 +589,10 @@ Each transaction gets a unique timestamp (TS). Each data item stores:
 ### 6.2 Log-Based Recovery
 
 **Log entry types:**
-- `<Ti START>` â†’ Transaction begins
-- `<Ti, X, V1, V2>` â†’ Ti writes X; old=V1, new=V2
-- `<Ti COMMIT>` â†’ Ti commits
-- `<Ti ABORT>` â†’ Ti aborts
+- `<Ti START>` → Transaction begins
+- `<Ti, X, V1, V2>` → Ti writes X; old=V1, new=V2
+- `<Ti COMMIT>` → Ti commits
+- `<Ti ABORT>` → Ti aborts
 
 **Undo:** Restore old values from log (for failed transactions)
 **Redo:** Apply new values from log (for committed transactions)
@@ -651,15 +651,15 @@ Three phases:
 **Order p** = maximum number of pointers in internal node
 
 **Properties:**
-- Root has at least 2 children (unless tree has Ã¢â€°Â¤ 1 node)
-- Internal node: `ceil(p/2)` Ã¢â€°Â¤ children Ã¢â€°Â¤ p
-- Leaf node: `ceil((p-1)/2)` Ã¢â€°Â¤ keys Ã¢â€°Â¤ p-1
+- Root has at least 2 children (unless tree has ≤ 1 node)
+- Internal node: `ceil(p/2)` ≤ children ≤ p
+- Leaf node: `ceil((p-1)/2)` ≤ keys ≤ p-1
 - All leaves at same depth
 
 **Operations:**
-- **Search:** O(log_p n) I/Os â†’ traverse from root to leaf
-- **Insert:** Locate leaf â†’ insert key â†’ split if overflow â†’ propagate split upward
-- **Delete:** Locate key â†’ remove â†’ merge/redistribute if underflow
+- **Search:** O(log_p n) I/Os → traverse from root to leaf
+- **Insert:** Locate leaf → insert key → split if overflow → propagate split upward
+- **Delete:** Locate key → remove → merge/redistribute if underflow
 
 ### 7.2 Indexing Techniques
 
@@ -676,7 +676,7 @@ Three phases:
 
 #### Static Hashing
 - **Bucket:** Unit of storage (1 block)
-- **Hash function:** h(K) â†’ bucket number
+- **Hash function:** h(K) → bucket number
 - **Collision:** Two keys map to same bucket
 - **Overflow chaining:** Overflow buckets linked to primary bucket
 - **Problems:** Long overflow chains, poor performance as data grows
@@ -686,7 +686,7 @@ Three phases:
 - Uses a **directory** (array of pointers to buckets)
 - **Global depth (g):** Number of bits used in directory index
 - **Local depth (l):** Number of bits used per bucket
-- **Split:** When bucket overflows and `l = g` â†’ double directory; if `l < g` â†’ split only
+- **Split:** When bucket overflows and `l = g` → double directory; if `l < g` → split only
 - **Good for:** Dynamic datasets, avoids performance degradation
 
 #### Linear Hashing
@@ -732,7 +732,7 @@ SELECT COUNT(NULL) FROM Employee;
 (d) Error
 
 **Answer:** (b) 1
-**Explanation:** COUNT(column) counts non-NULL values. COUNT(NULL) is a special case â†’ it evaluates to 1 because the argument is a constant (NULL) and COUNT counts rows where the expression is non-NULL. However, COUNT(*) counts rows, COUNT(attribute) counts non-NULL values. In SQL, COUNT(NULL) returns 0 in some DBMS implementations. **GATE expects 0.** Re-answer: 0.
+**Explanation:** COUNT(column) counts non-NULL values. COUNT(NULL) is a special case → it evaluates to 1 because the argument is a constant (NULL) and COUNT counts rows where the expression is non-NULL. However, COUNT(*) counts rows, COUNT(attribute) counts non-NULL values. In SQL, COUNT(NULL) returns 0 in some DBMS implementations. **GATE expects 0.** Re-answer: 0.
 
 **Correct Answer:** (a) 0. COUNT(column) ignores NULLs. COUNT(NULL literal) = 0.
 
@@ -748,16 +748,16 @@ A B+ tree of order p (maximum pointers per node) has 500,000 keys. The tree heig
 
 **Answer:** (b) 80
 **Explanation:** Height h = 3 means root at level 0, leaves at level 3.
-Min keys at leaf level: 2 Ãƒâ€” ceil((p-1)/2)^3 Ã¢â€°Â¥ 500,000
+Min keys at leaf level: 2 × ceil((p-1)/2)^3 ≥ 500,000
 Each internal node (except root): at least ceil(p/2) children
 Root: at least 2 children
-Min keys = 2 Ãƒâ€” ceil(p/2)Ã‚Â² Ãƒâ€” floor((p-1)/2)
+Min keys = 2 × ceil(p/2)² × floor((p-1)/2)
 Solving: p = 80 gives enough capacity.
 
 ---
 
 ### D4. [GATE 2024, 2M, Relational Algebra]
-Consider R(A, B, C, D) with FDs: A â†’ B, BC â†’ D. Which of the following is a candidate key?
+Consider R(A, B, C, D) with FDs: A → B, BC → D. Which of the following is a candidate key?
 
 (a) A
 (b) AC
@@ -766,9 +766,9 @@ Consider R(A, B, C, D) with FDs: A â†’ B, BC â†’ D. Which of the follo
 
 **Answer:** (b) AC
 **Explanation:**
-AÃ¢ÂÂº = {A, B} â†’ not all attributes
-ACÃ¢ÂÂº = {A, C, B, D} = all attributes. AC is minimal.
-BCÃ¢ÂÂº = {B, C, D} â†’ A missing
+A⁺ = {A, B} → not all attributes
+AC⁺ = {A, C, B, D} = all attributes. AC is minimal.
+BC⁺ = {B, C, D} → A missing
 ABC is a superkey but not minimal.
 
 ---
@@ -793,7 +793,7 @@ What does this query return?
 ---
 
 ### D6. [GATE 2024, 2M, Normalization]
-R(A, B, C, D, E) with FDs: AB â†’ C, C â†’ D, D â†’ E. Which normal form is this relation in?
+R(A, B, C, D, E) with FDs: AB → C, C → D, D → E. Which normal form is this relation in?
 
 (a) 1NF only
 (b) 2NF only
@@ -801,8 +801,8 @@ R(A, B, C, D, E) with FDs: AB â†’ C, C â†’ D, D â†’ E. Which norm
 (d) BCNF
 
 **Answer:** (a) 1NF only
-**Explanation:** CK = AB (ABÃ¢ÂÂº = {A,B,C,D,E}). Partial dependencies: C â†’ D (C is part of CK? No, C is non-prime). Wait â†’ AB â†’ C, C â†’ D, D â†’ E. Since C, D, E depend on proper subset of CK? No proper subset: AÃ¢ÂÂº = {A}, BÃ¢ÂÂº = {B}. No partial dependency because no non-prime depends on subset of CK. So it's in 2NF.
-For 3NF: C â†’ D â†’ C is not a superkey, D is non-prime. This violates 3NF.
+**Explanation:** CK = AB (AB⁺ = {A,B,C,D,E}). Partial dependencies: C → D (C is part of CK? No, C is non-prime). Wait → AB → C, C → D, D → E. Since C, D, E depend on proper subset of CK? No proper subset: A⁺ = {A}, B⁺ = {B}. No partial dependency because no non-prime depends on subset of CK. So it's in 2NF.
+For 3NF: C → D → C is not a superkey, D is non-prime. This violates 3NF.
 So it's in 2NF. Answer is 2NF only.
 
 **Correct Answer:** (b) 2NF only
@@ -819,15 +819,15 @@ Schedule S: r1(A), w2(A), r1(B), w2(B), r1(C), w2(C). Is this schedule conflict 
 
 **Answer:** (b) Yes, equivalent to T2, T1
 **Explanation:** Conflicting operations:
-w2(A) before r1(A) â†’ T2 â†’ T1
-w2(B) before r1(B) â†’ T2 â†’ T1
-w2(C) before r1(C) â†’ T2 â†’ T1
-Precedence graph: T2 â†’ T1 only. Acyclic, so conflict serializable as T2, T1.
+w2(A) before r1(A) → T2 → T1
+w2(B) before r1(B) → T2 → T1
+w2(C) before r1(C) → T2 → T1
+Precedence graph: T2 → T1 only. Acyclic, so conflict serializable as T2, T1.
 
 ---
 
 ### D8. [GATE 2023, 2M, Candidate Keys]
-R(A, B, C, D, E, F) with FDs: AB â†’ C, BC â†’ D, D â†’ E, E â†’ F. What are the candidate keys?
+R(A, B, C, D, E, F) with FDs: AB → C, BC → D, D → E, E → F. What are the candidate keys?
 
 (a) AB only
 (b) AB and BC
@@ -836,9 +836,9 @@ R(A, B, C, D, E, F) with FDs: AB â†’ C, BC â†’ D, D â†’ E, E â�
 
 **Answer:** (a) AB only
 **Explanation:**
-ABÃ¢ÂÂº = {A,B,C,D,E,F} = all attributes. Minimal?
-AÃ¢ÂÂº = {A}, BÃ¢ÂÂº = {B}. Neither gives all. So AB is CK.
-Check BCÃ¢ÂÂº = {B,C,D,E,F} â†’ A missing. Not a CK.
+AB⁺ = {A,B,C,D,E,F} = all attributes. Minimal?
+A⁺ = {A}, B⁺ = {B}. Neither gives all. So AB is CK.
+Check BC⁺ = {B,C,D,E,F} → A missing. Not a CK.
 AB is the only candidate key.
 
 ---
@@ -857,7 +857,7 @@ Which SQL clause is used to filter groups formed by GROUP BY?
 ---
 
 ### D10. [GATE 2023, 2M, Normalization]
-R(A, B, C, D) with FDs: A â†’ B, B â†’ C, C â†’ D. Decompose into R1(A, B, C) and R2(C, D). Which of the following is true?
+R(A, B, C, D) with FDs: A → B, B → C, C → D. Decompose into R1(A, B, C) and R2(C, D). Which of the following is true?
 
 (a) Lossless and dependency-preserving
 (b) Lossless but not dependency-preserving
@@ -866,8 +866,8 @@ R(A, B, C, D) with FDs: A â†’ B, B â†’ C, C â†’ D. Decompose into
 
 **Answer:** (a) Lossless and dependency-preserving
 **Explanation:**
-Lossless: R1 Ã¢Ë†Â© R2 = {C}. C â†’ D holds in R2. So C is a superkey in R2. Lossless.
-Dependency-preserving: A â†’ B (in R1), B â†’ C (derived from A â†’ B and B â†’ C across? Actually B â†’ C is in R1). C â†’ D (in R2). All FDs preserved.
+Lossless: R1 ∩ R2 = {C}. C → D holds in R2. So C is a superkey in R2. Lossless.
+Dependency-preserving: A → B (in R1), B → C (derived from A → B and B → C across? Actually B → C is in R1). C → D (in R2). All FDs preserved.
 
 ---
 
@@ -882,9 +882,9 @@ Schedule S: r1(X), r2(X), w1(Y), w2(Y), r1(Z), w2(Z). Is this view serializable?
 **Answer:** (a) Yes, conflict serializable too
 **Explanation:**
 Conflicts: r1(X) before w2(X)? No w2(X) doesn't exist.
-w1(Y) before w2(Y) â†’ T1 â†’ T2
-r1(Z) before w2(Z) â†’ T1 â†’ T2
-Graph: T1 â†’ T2 only. Acyclic. Conflict serializable (T1, T2). Therefore view serializable too.
+w1(Y) before w2(Y) → T1 → T2
+r1(Z) before w2(Z) → T1 → T2
+Graph: T1 → T2 only. Acyclic. Conflict serializable (T1, T2). Therefore view serializable too.
 
 ---
 
@@ -908,26 +908,26 @@ What does this query return?
 (d) Employees working on exactly one project
 
 **Answer:** (b) Employees working on all projects
-**Explanation:** Double NOT EXISTS = division in relational algebra. Inner NOT EXISTS checks if there is a project the employee does NOT work on. Outer NOT EXISTS selects employees for whom no such project exists â†’ meaning they work on all projects.
+**Explanation:** Double NOT EXISTS = division in relational algebra. Inner NOT EXISTS checks if there is a project the employee does NOT work on. Outer NOT EXISTS selects employees for whom no such project exists → meaning they work on all projects.
 
 ---
 
 ### D13. [GATE 2022, 2M, BCNF]
-R(A, B, C, D, E) with FDs: A â†’ B, BC â†’ E, C â†’ D. Is R in BCNF?
+R(A, B, C, D, E) with FDs: A → B, BC → E, C → D. Is R in BCNF?
 
 (a) Yes
-(b) No, because A â†’ B violates
-(c) No, because BC â†’ E violates
-(d) No, because C â†’ D violates
+(b) No, because A → B violates
+(c) No, because BC → E violates
+(d) No, because C → D violates
 
-**Answer:** (d) No, because C â†’ D violates
-**Explanation:** CK = AC (AÃ¢ÂÂº = {A,B}, CÃ¢ÂÂº = {C,D}, ACÃ¢ÂÂº = all).
+**Answer:** (d) No, because C → D violates
+**Explanation:** CK = AC (A⁺ = {A,B}, C⁺ = {C,D}, AC⁺ = all).
 Check each FD:
-A â†’ B: A is not superkey â†’ violates BCNF? Wait, AC is CK. Is A a superkey? AÃ¢ÂÂº = {A,B} Ã¢â€°Â  all. So A is NOT a superkey. A â†’ B violates BCNF.
+A → B: A is not superkey → violates BCNF? Wait, AC is CK. Is A a superkey? A⁺ = {A,B} ≠ all. So A is NOT a superkey. A → B violates BCNF.
 Actually all three FDs violate BCNF since none have superkey on LHS.
-But the violation question: which FD violates? All do. The answer choices only flag C â†’ D as an option.
+But the violation question: which FD violates? All do. The answer choices only flag C → D as an option.
 
-**Correct Answer:** (d) C â†’ D violates (also A â†’ B, but that's not in the options other than (b) which might be the primary violator). Actually checking â†’ all three LHS are not superkeys. The question asks which is correct among given options: (d) is correct.
+**Correct Answer:** (d) C → D violates (also A → B, but that's not in the options other than (b) which might be the primary violator). Actually checking → all three LHS are not superkeys. The question asks which is correct among given options: (d) is correct.
 
 ---
 
@@ -940,7 +940,7 @@ Which operation in relational algebra eliminates duplicate tuples?
 (d) CROSS PRODUCT
 
 **Answer:** (b) PROJECT
-**Explanation:** Project (Ãâ‚¬) eliminates duplicate tuples by default. SELECT (ÃÆ’) does not eliminate duplicates. JOIN and CROSS PRODUCT don't eliminate duplicates either.
+**Explanation:** Project (π) eliminates duplicate tuples by default. SELECT (σ) does not eliminate duplicates. JOIN and CROSS PRODUCT don't eliminate duplicates either.
 
 ---
 
@@ -972,9 +972,9 @@ Schedule S: w1(A), w1(B), w2(A), r2(C), w2(B). Which of the following is true?
 **Answer:** (a) Conflict serializable
 **Explanation:**
 Conflicts:
-w1(A) before w2(A) â†’ T1 â†’ T2
-w1(B) before w2(B) â†’ T1 â†’ T2
-Graph: T1 â†’ T2 only. Acyclic. Conflict serializable as T1, T2.
+w1(A) before w2(A) → T1 → T2
+w1(B) before w2(B) → T1 → T2
+Graph: T1 → T2 only. Acyclic. Conflict serializable as T1, T2.
 
 ---
 
@@ -982,17 +982,17 @@ Graph: T1 â†’ T2 only. Acyclic. Conflict serializable as T1, T2.
 A B+ tree of order d (max keys per node = 2d) has height h (leaf level = h). What is the maximum number of keys stored?
 
 (a) (2d + 1)^h
-(b) 2d Ãƒâ€” (2d + 1)^(h-1)
+(b) 2d × (2d + 1)^(h-1)
 (c) (2d)^h
-(d) 2d Ãƒâ€” (2d)^(h-1)
+(d) 2d × (2d)^(h-1)
 
-**Answer:** (b) 2d Ãƒâ€” (2d + 1)^(h-1)
-**Explanation:** At leaf level, each node holds max 2d keys. Number of leaf nodes: (2d+1)^(h-1) (each internal node has max 2d+1 children). Total max keys = 2d Ãƒâ€” (2d+1)^(h-1).
+**Answer:** (b) 2d × (2d + 1)^(h-1)
+**Explanation:** At leaf level, each node holds max 2d keys. Number of leaf nodes: (2d+1)^(h-1) (each internal node has max 2d+1 children). Total max keys = 2d × (2d+1)^(h-1).
 
 ---
 
 ### D18. [GATE 2021, 2M, Normalization]
-R(A, B, C, D, E, F) with FDs: A â†’ B, BC â†’ D, D â†’ EF. Which normal form?
+R(A, B, C, D, E, F) with FDs: A → B, BC → D, D → EF. Which normal form?
 
 (a) 1NF
 (b) 2NF
@@ -1000,9 +1000,9 @@ R(A, B, C, D, E, F) with FDs: A â†’ B, BC â†’ D, D â†’ EF. Which 
 (d) BCNF
 
 **Answer:** (b) 2NF
-**Explanation:** CK = AC (AÃ¢ÂÂº = {A,B}, CÃ¢ÂÂº = {C}, ACÃ¢ÂÂº = {A,B,C,D,E,F}).
-Partial dependencies: A â†’ B â†’ A is part of CK, B is non-prime. So partial dependency exists. Not in 2NF.
-Wait â†’ A is a proper subset of CK = {A,C}. So A â†’ B is a partial dependency. So R is in 1NF only.
+**Explanation:** CK = AC (A⁺ = {A,B}, C⁺ = {C}, AC⁺ = {A,B,C,D,E,F}).
+Partial dependencies: A → B → A is part of CK, B is non-prime. So partial dependency exists. Not in 2NF.
+Wait → A is a proper subset of CK = {A,C}. So A → B is a partial dependency. So R is in 1NF only.
 
 **Correct Answer:** (a) 1NF
 
@@ -1017,7 +1017,7 @@ Which of the following integrity constraints is checked LAST during a SQL UPDATE
 (d) CHECK
 
 **Answer:** (d) CHECK
-**Explanation:** SQL checks constraints in this order: NOT NULL â†’ UNIQUE â†’ PRIMARY KEY â†’ FOREIGN KEY â†’ CHECK. CHECK is the last to be evaluated.
+**Explanation:** SQL checks constraints in this order: NOT NULL → UNIQUE → PRIMARY KEY → FOREIGN KEY → CHECK. CHECK is the last to be evaluated.
 
 ---
 
@@ -1032,9 +1032,9 @@ Consider the schedule: r1(A), r2(B), w2(A), w1(B). Is the schedule conflict seri
 **Answer:** (b) No
 **Explanation:**
 Conflicts:
-r1(A) before w2(A) â†’ T1 â†’ T2
-r2(B) before w1(B) â†’ T2 â†’ T1
-Graph: T1 â†’ T2 and T2 â†’ T1. Cycle! Not conflict serializable.
+r1(A) before w2(A) → T1 → T2
+r2(B) before w1(B) → T2 → T1
+Graph: T1 → T2 and T2 → T1. Cycle! Not conflict serializable.
 
 ---
 
@@ -1065,19 +1065,19 @@ What does the query return?
 ---
 
 ### D22. [GATE 2020, 2M, Canonical Cover]
-R(A, B, C) with FDs: A â†’ BC, B â†’ C, A â†’ B, AB â†’ C. What is the canonical cover?
+R(A, B, C) with FDs: A → BC, B → C, A → B, AB → C. What is the canonical cover?
 
-(a) {A â†’ B, B â†’ C}
-(b) {A â†’ BC, B â†’ C}
-(c) {A â†’ B, A â†’ C, B â†’ C}
-(d) {A â†’ B, C â†’ B}
+(a) {A → B, B → C}
+(b) {A → BC, B → C}
+(c) {A → B, A → C, B → C}
+(d) {A → B, C → B}
 
-**Answer:** (a) {A â†’ B, B â†’ C}
+**Answer:** (a) {A → B, B → C}
 **Explanation:**
-Step 1: Decompose RHS: A â†’ B, A â†’ C, B â†’ C, A â†’ B (duplicate), AB â†’ C
-Step 2: Remove extraneous from AB â†’ C: B â†’ C already exists, so AB â†’ C is redundant. Remove.
-Step 3: A â†’ C can be derived from A â†’ B and B â†’ C (transitivity), so A â†’ C is redundant.
-Remaining: {A â†’ B, B â†’ C}. This is the canonical cover.
+Step 1: Decompose RHS: A → B, A → C, B → C, A → B (duplicate), AB → C
+Step 2: Remove extraneous from AB → C: B → C already exists, so AB → C is redundant. Remove.
+Step 3: A → C can be derived from A → B and B → C (transitivity), so A → C is redundant.
+Remaining: {A → B, B → C}. This is the canonical cover.
 
 ---
 
@@ -1109,15 +1109,15 @@ Schedule: r1(X), r2(Y), r1(Y), w2(X), w1(Y), w1(X). Is this conflict serializabl
 **Answer:** (b) No
 **Explanation:**
 Conflicts:
-r1(X) before w2(X) â†’ T1 â†’ T2
+r1(X) before w2(X) → T1 → T2
 r2(Y) before r1(Y)? No conflict (both read).
-r2(Y) before w1(Y) â†’ T2 â†’ T1
-w2(X) before w1(X) â†’ T2 â†’ T1
-Wait â†’ w2(X) before w1(X) gives T2 â†’ T1.
+r2(Y) before w1(Y) → T2 → T1
+w2(X) before w1(X) → T2 → T1
+Wait → w2(X) before w1(X) gives T2 → T1.
 And r1(Y) before w2(X)? Different data items, no conflict.
-r1(X) before w2(X) â†’ T1 â†’ T2
-r2(Y) before w1(Y) â†’ T2 â†’ T1
-So we have: T1 â†’ T2 and T2 â†’ T1. Cycle. Not conflict serializable.
+r1(X) before w2(X) → T1 → T2
+r2(Y) before w1(Y) → T2 → T1
+So we have: T1 → T2 and T2 → T1. Cycle. Not conflict serializable.
 
 ---
 
@@ -1144,7 +1144,7 @@ This is an example of:
 ---
 
 ### D26. [GATE 2019, 2M, FD Closure]
-R(A, B, C, D, E) with FDs: A â†’ B, B â†’ C, C â†’ D, D â†’ E. What is AÃ¢ÂÂº?
+R(A, B, C, D, E) with FDs: A → B, B → C, C → D, D → E. What is A⁺?
 
 (a) {A, B}
 (b) {A, B, C}
@@ -1153,11 +1153,11 @@ R(A, B, C, D, E) with FDs: A â†’ B, B â†’ C, C â†’ D, D â†’ 
 
 **Answer:** (d) {A, B, C, D, E}
 **Explanation:**
-Start: AÃ¢ÂÂº = {A}
-A â†’ B: AÃ¢ÂÂº = {A, B}
-B â†’ C: B Ã¢Å â€  AÃ¢ÂÂº, so AÃ¢ÂÂº = {A, B, C}
-C â†’ D: C Ã¢Å â€  AÃ¢ÂÂº, so AÃ¢ÂÂº = {A, B, C, D}
-D â†’ E: D Ã¢Å â€  AÃ¢ÂÂº, so AÃ¢ÂÂº = {A, B, C, D, E}
+Start: A⁺ = {A}
+A → B: A⁺ = {A, B}
+B → C: B ⊆ A⁺, so A⁺ = {A, B, C}
+C → D: C ⊆ A⁺, so A⁺ = {A, B, C, D}
+D → E: D ⊆ A⁺, so A⁺ = {A, B, C, D, E}
 
 ---
 
@@ -1185,17 +1185,17 @@ Schedule S: w1(A), w1(B), r2(A), w2(B), w1(C), r2(C). Is this conflict serializa
 **Answer:** (b) No
 **Explanation:**
 Conflicts:
-w1(A) before r2(A) â†’ T1 â†’ T2
-w1(B) before w2(B) â†’ T1 â†’ T2
-w1(C) before r2(C) â†’ T1 â†’ T2
-All edges T1 â†’ T2. No cycle. Conflict serializable as T1, T2.
+w1(A) before r2(A) → T1 → T2
+w1(B) before w2(B) → T1 → T2
+w1(C) before r2(C) → T1 → T2
+All edges T1 → T2. No cycle. Conflict serializable as T1, T2.
 
 **Correct Answer:** (a) Yes
 
 ---
 
 ### D29. [GATE 2019, 2M, Normalization]
-R(A, B, C, D, E, F) with FDs: A â†’ B, CD â†’ E, B â†’ D, E â†’ F. What is the candidate key?
+R(A, B, C, D, E, F) with FDs: A → B, CD → E, B → D, E → F. What is the candidate key?
 
 (a) A
 (b) AC
@@ -1204,9 +1204,9 @@ R(A, B, C, D, E, F) with FDs: A â†’ B, CD â†’ E, B â†’ D, E â†
 
 **Answer:** (b) AC
 **Explanation:**
-AÃ¢ÂÂº = {A, B, D} â†’ missing C, E, F
-CÃ¢ÂÂº = {C} â†’ missing
-ACÃ¢ÂÂº = {A, C, B, D, E, F} = all attributes. Minimal? Check AÃ¢ÂÂº (no), CÃ¢ÂÂº (no). So AC is CK.
+A⁺ = {A, B, D} → missing C, E, F
+C⁺ = {C} → missing
+AC⁺ = {A, C, B, D, E, F} = all attributes. Minimal? Check A⁺ (no), C⁺ (no). So AC is CK.
 
 ---
 
@@ -1221,42 +1221,42 @@ A B+ tree index with order p (max keys per internal node = p-1, max pointers = p
 **Answer:** (c) 24
 **Explanation:**
 Height 2 (levels 0, 1, 2). Root min 2 children. Level 1 nodes have min ceil(p/2) children.
-Leaf nodes: at least ceil(p/2) keys each (leaf order: p pointers, p-1 keys â†’ same as internal for GATE).
-Min total keys = 2 Ãƒâ€” ceil(p/2) Ãƒâ€” ceil(p/2)
-2 Ãƒâ€” ceil(p/2)Ã‚Â² Ã¢â€°Â¥ 10,000
-ceil(p/2)Ã‚Â² Ã¢â€°Â¥ 5,000
-ceil(p/2) Ã¢â€°Â¥ 71
-p Ã¢â€°Â¥ 142... That seems too high. Let me reconsider.
+Leaf nodes: at least ceil(p/2) keys each (leaf order: p pointers, p-1 keys → same as internal for GATE).
+Min total keys = 2 × ceil(p/2) × ceil(p/2)
+2 × ceil(p/2)² ≥ 10,000
+ceil(p/2)² ≥ 5,000
+ceil(p/2) ≥ 71
+p ≥ 142... That seems too high. Let me reconsider.
 
 If height = 3 meaning root + 2 internal levels + leaves, total levels = 4.
 Actually GATE often defines height differently. If h=3 means 3 levels (root at level 1, leaves at level 3), or 3 levels total.
 Let me solve: With min pointers = ceil(p/2), max = p.
 Max keys at root: p-1. With height 3 (3 levels: root + 1 internal + leaf):
-Min leaf nodes = 2 Ãƒâ€” ceil(p/2) Ãƒâ€” ceil(p/2) = 2 Ãƒâ€” ceil(p/2)Ã‚Â²
+Min leaf nodes = 2 × ceil(p/2) × ceil(p/2) = 2 × ceil(p/2)²
 Wait, p is the order meaning max pointers. Leaf has max p-1 keys, min ceil((p-1)/2) keys.
 Hmm, GATE 2018 typically defines order d differently. Let me just pick the best answer.
 
-Actually, GATE 2018 had a specific formula. If height = 3 (root at level 0, leaves at level 2 â†’ 3 levels total):
+Actually, GATE 2018 had a specific formula. If height = 3 (root at level 0, leaves at level 2 → 3 levels total):
 Root: at least 2 children
 Level 1: each with at least ceil(p/2) children
-Level 2 (leaf): number = 2 Ãƒâ€” ceil(p/2)
+Level 2 (leaf): number = 2 × ceil(p/2)
 Each leaf: at least ceil(p/2) keys (if order p, leaf has max p-1 keys)
 
 Actually, the traditional B+ tree order definition in GATE: order n means each node (except root) has between ceil(n/2) and n children (or pointers). Internal nodes have n pointers and n-1 keys. Leaves have n-1 keys.
 
 For height = 3 (3 levels of nodes):
-Minimum leaves = 2 Ãƒâ€” ceil(n/2)Ã‚Â²
-Minimum keys = 2 Ãƒâ€” ceil(n/2)Ã‚Â² Ãƒâ€” ceil((n-1)/2)
+Minimum leaves = 2 × ceil(n/2)²
+Minimum keys = 2 × ceil(n/2)² × ceil((n-1)/2)
 
 This is getting complex. The answer is 24 as per GATE. With p = 24, ceil(p/2) = 12.
-Min leaf nodes = 2 Ãƒâ€” 12 Ãƒâ€” 12 = 288
+Min leaf nodes = 2 × 12 × 12 = 288
 Wait, 3 levels total: root has min 2 children. Each child has min ceil(p/2) = 12 children. That gives 24 leaf nodes.
 Each leaf has min ceil((p-1)/2) keys = ceil(23/2) = 12 keys.
-Min total keys = 24 Ãƒâ€” 12 = 288. That's not 10,000.
+Min total keys = 24 × 12 = 288. That's not 10,000.
 
-Maybe height = 4 then (root at 0, leaves at 3): 2 Ãƒâ€” 12 Ãƒâ€” 12 Ãƒâ€” 12 = 3456 leaf nodes. 3456 Ãƒâ€” 12 = 41472 keys. Yes, that covers 10000.
+Maybe height = 4 then (root at 0, leaves at 3): 2 × 12 × 12 × 12 = 3456 leaf nodes. 3456 × 12 = 41472 keys. Yes, that covers 10000.
 
-So with p = 24, 4 levels, min keys = 3456 Ãƒâ€” 12 = 41472 Ã¢â€°Â¥ 10000. So answer = 24.
+So with p = 24, 4 levels, min keys = 3456 × 12 = 41472 ≥ 10000. So answer = 24.
 
 ---
 
@@ -1303,17 +1303,17 @@ Schedule S: r1(P), w2(Q), r3(R), w1(P), r2(R), w3(Q). Which is true?
 **Answer:** (a) Conflict serializable
 **Explanation:**
 Conflicts:
-r1(P) before w1(P) â†’ same T1, no inter-transaction conflict
-w2(Q) before w3(Q) â†’ T2 â†’ T3
+r1(P) before w1(P) → same T1, no inter-transaction conflict
+w2(Q) before w3(Q) → T2 → T3
 r3(R) before r2(R)? No (both read).
-w1(P) â†’ no other write of P
-r2(R) â†’ no conflict
-Only edge: T2 â†’ T3. No cycle. Conflict serializable (order: T1, T2, T3 or T2, T3, T1, etc.)
+w1(P) → no other write of P
+r2(R) → no conflict
+Only edge: T2 → T3. No cycle. Conflict serializable (order: T1, T2, T3 or T2, T3, T1, etc.)
 
 ---
 
 ### D34. [GATE 2017, 2M, Candidate Keys]
-R(A, B, C, D, E, F, G) with FDs: A â†’ B, B â†’ C, C â†’ D, D â†’ E, E â†’ F, F â†’ G. Find candidate keys.
+R(A, B, C, D, E, F, G) with FDs: A → B, B → C, C → D, D → E, E → F, F → G. Find candidate keys.
 
 (a) A only
 (b) A, B, C
@@ -1322,8 +1322,8 @@ R(A, B, C, D, E, F, G) with FDs: A â†’ B, B â†’ C, C â†’ D, D â�
 
 **Answer:** (a) A only
 **Explanation:**
-AÃ¢ÂÂº = {A, B, C, D, E, F, G} = all attributes. A is a minimal superkey.
-Check if any other: BÃ¢ÂÂº = {B, C, D, E, F, G} â†’ A missing. So A is the only CK.
+A⁺ = {A, B, C, D, E, F, G} = all attributes. A is a minimal superkey.
+Check if any other: B⁺ = {B, C, D, E, F, G} → A missing. So A is the only CK.
 
 ---
 
@@ -1354,7 +1354,7 @@ Which of the following is TRUE about Two-Phase Locking (2PL)?
 ---
 
 ### D37. [GATE 2016, 2M, Lossless Decomposition]
-R(A, B, C, D, E) with FDs: A â†’ B, BC â†’ D, D â†’ E. Decompose into R1(A, B), R2(A, C, D, E). Is this lossless?
+R(A, B, C, D, E) with FDs: A → B, BC → D, D → E. Decompose into R1(A, B), R2(A, C, D, E). Is this lossless?
 
 (a) Yes
 (b) No
@@ -1363,8 +1363,8 @@ R(A, B, C, D, E) with FDs: A â†’ B, BC â†’ D, D â†’ E. Decompose 
 
 **Answer:** (a) Yes
 **Explanation:**
-R1 Ã¢Ë†Â© R2 = {A}. Check if A is a superkey in either:
-AÃ¢ÂÂº = {A, B}. In R1: {A, B} â†’ A is key of R1. So A â†’ R1. Lossless.
+R1 ∩ R2 = {A}. Check if A is a superkey in either:
+A⁺ = {A, B}. In R1: {A, B} → A is key of R1. So A → R1. Lossless.
 
 ---
 
@@ -1397,20 +1397,20 @@ In the ARIES recovery algorithm, what is the purpose of the Analysis phase?
 ---
 
 ### D40. [GATE 2016, 2M, Relational Algebra]
-Consider two relations R(A, B) and S(B, C). Which relational algebra expression is equivalent to R Ã¢â€¹Ë† S?
+Consider two relations R(A, B) and S(B, C). Which relational algebra expression is equivalent to R ⋈ S?
 
-(a) pi_{A,B,C}(sigma_{R.B = S.B}(R Ãƒâ€” S))
-(b) sigma_{R.B = S.B}(R Ãƒâ€” S)
-(c) pi_{A,B,C}(R Ãƒâ€” S)
-(d) sigma_{R.A = S.C}(R Ãƒâ€” S)
+(a) pi_{A,B,C}(sigma_{R.B = S.B}(R × S))
+(b) sigma_{R.B = S.B}(R × S)
+(c) pi_{A,B,C}(R × S)
+(d) sigma_{R.A = S.C}(R × S)
 
-**Answer:** (a) pi_{A,B,C}(sigma_{R.B = S.B}(R Ãƒâ€” S))
-**Explanation:** Natural join on common attribute B. Carthesian product R Ãƒâ€” S, then select on R.B = S.B, then project all attributes (projection removes duplicate B column). Note: natural join automatically removes the duplicate column, which requires projection.
+**Answer:** (a) pi_{A,B,C}(sigma_{R.B = S.B}(R × S))
+**Explanation:** Natural join on common attribute B. Carthesian product R × S, then select on R.B = S.B, then project all attributes (projection removes duplicate B column). Note: natural join automatically removes the duplicate column, which requires projection.
 
 ---
 
 ### D41. [GATE 2015, 2M, Normal Forms]
-R(A, B, C, D) with FDs: AB â†’ C, C â†’ D, D â†’ A. In which normal form?
+R(A, B, C, D) with FDs: AB → C, C → D, D → A. In which normal form?
 
 (a) BCNF
 (b) 3NF
@@ -1419,23 +1419,23 @@ R(A, B, C, D) with FDs: AB â†’ C, C â†’ D, D â†’ A. In which norm
 
 **Answer:** (a) BCNF
 **Explanation:**
-Find CKs: ABÃ¢ÂÂº = {A,B,C,D}. Also DÃ¢ÂÂº = {A,D} â†’ not all. CÃ¢ÂÂº = {C,D,A} â†’ CÃ¢ÂÂº = {A,C,D} â†’ B missing. 
-Actually: C â†’ D, D â†’ A. So CÃ¢ÂÂº = {C, D, A}. Not all. But CD â†’ A (trivial). 
+Find CKs: AB⁺ = {A,B,C,D}. Also D⁺ = {A,D} → not all. C⁺ = {C,D,A} → C⁺ = {A,C,D} → B missing. 
+Actually: C → D, D → A. So C⁺ = {C, D, A}. Not all. But CD → A (trivial). 
 Let me be more careful:
-D â†’ A, so every CK must include B since B only appears on LHS.
-Check if D is in CK? DÃ¢ÂÂº = {D, A}. Not all.
-Check CD: CDÃ¢ÂÂº = {C, D, A}. Still not all.
-Check BD: BDÃ¢ÂÂº = {B, D, A, C} = all. So BD is a CK.
-Also BC: BCÃ¢ÂÂº = {B, C, D, A} = all.
-Also AB: ABÃ¢ÂÂº = {A, B, C, D} = all.
+D → A, so every CK must include B since B only appears on LHS.
+Check if D is in CK? D⁺ = {D, A}. Not all.
+Check CD: CD⁺ = {C, D, A}. Still not all.
+Check BD: BD⁺ = {B, D, A, C} = all. So BD is a CK.
+Also BC: BC⁺ = {B, C, D, A} = all.
+Also AB: AB⁺ = {A, B, C, D} = all.
 So CKs are AB, BC, BD.
 
 Check BCNF:
-AB â†’ C: AB is superkey Ã¢Å“â€œ
-C â†’ D: C is NOT a superkey (CÃ¢ÂÂº = {C, D, A}). Violates BCNF.
+AB → C: AB is superkey ✓
+C → D: C is NOT a superkey (C⁺ = {C, D, A}). Violates BCNF.
 So R is NOT in BCNF.
 
-Check 3NF: C â†’ D. C not a superkey. Is D non-prime? D is non-prime (not part of any CK? Wait, D is part of CKs BD. So D is prime!). Since D is prime, C â†’ D is allowed in 3NF even though C is not a superkey.
+Check 3NF: C → D. C not a superkey. Is D non-prime? D is non-prime (not part of any CK? Wait, D is part of CKs BD. So D is prime!). Since D is prime, C → D is allowed in 3NF even though C is not a superkey.
 
 So R is in 3NF but not BCNF.
 
@@ -1467,17 +1467,17 @@ Schedule S: r1(A), w2(B), w1(C), r3(B), r1(B), w3(C). Is this conflict serializa
 **Answer:** (a) Yes
 **Explanation:**
 Conflicts:
-r1(A) â†’ no conflict
-w2(B) before r3(B) â†’ T2 â†’ T3
-w2(B) before r1(B) â†’ T2 â†’ T1
+r1(A) → no conflict
+w2(B) before r3(B) → T2 → T3
+w2(B) before r1(B) → T2 → T1
 r3(B) before r1(B)? No (both read).
-w1(C) before w3(C) â†’ T1 â†’ T3
-Edges: T2 â†’ T3, T2 â†’ T1, T1 â†’ T3. No cycle. Conflict serializable (T2, T1, T3).
+w1(C) before w3(C) → T1 → T3
+Edges: T2 → T3, T2 → T1, T1 → T3. No cycle. Conflict serializable (T2, T1, T3).
 
 ---
 
 ### D44. [GATE 2014, 2M, Division]
-Consider R(A, B) and S(B) where S contains {b1, b2}. Which of the following correctly represents R ÃƒÂ· S?
+Consider R(A, B) and S(B) where S contains {b1, b2}. Which of the following correctly represents R ÷ S?
 
 (a) {a | exists b1,b2 in R with B = b1 and B = b2}
 (b) {a | for all b in S, (a, b) in R}
@@ -1485,7 +1485,7 @@ Consider R(A, B) and S(B) where S contains {b1, b2}. Which of the following corr
 (d) {a | for all b in R, (a, b) in S}
 
 **Answer:** (b) {a | for all b in S, (a, b) in R}
-**Explanation:** Division returns A values that are paired with EVERY value in S. This is the universal quantifier over S â†’ equivalent to "for all b in S, (a,b) is in R."
+**Explanation:** Division returns A values that are paired with EVERY value in S. This is the universal quantifier over S → equivalent to "for all b in S, (a,b) is in R."
 
 ---
 
@@ -1499,11 +1499,11 @@ A B+ tree of order p (max keys) is used for indexing. Each node is one disk bloc
 
 **Answer:** (b) 51
 **Explanation:**
-Internal node: p pointers + (p-1) keys + header Ã¢â€°Â¤ block size
-p Ãƒâ€” 8 + (p-1) Ãƒâ€” 12 + H Ã¢â€°Â¤ 1024
-8p + 12p - 12 + H Ã¢â€°Â¤ 1024
-20p Ã¢â€°Â¤ 1036 - H
-With header Ã¢â€°Ë† 16 bytes: 20p Ã¢â€°Â¤ 1020, p Ã¢â€°Â¤ 51
+Internal node: p pointers + (p-1) keys + header ≤ block size
+p × 8 + (p-1) × 12 + H ≤ 1024
+8p + 12p - 12 + H ≤ 1024
+20p ≤ 1036 - H
+With header ≈ 16 bytes: 20p ≤ 1020, p ≤ 51
 Order = 51 (maximum pointers per node).
 
 ---
@@ -1537,11 +1537,11 @@ Consider schedule S: r1(A), r2(B), r1(C), w1(A), w2(B), r2(C), w1(C), w2(C). Whi
 **Answer:** (a) S is conflict serializable as T1, T2
 **Explanation:**
 Conflicts:
-w1(A) â†’ no other access to A
-w2(B) â†’ no other access to B
-r2(C) before w1(C) â†’ T2 â†’ T1
-w1(C) before w2(C) â†’ T1 â†’ T2
-Edges: T2 â†’ T1 and T1 â†’ T2. Cycle! Not conflict serializable.
+w1(A) → no other access to A
+w2(B) → no other access to B
+r2(C) before w1(C) → T2 → T1
+w1(C) before w2(C) → T1 → T2
+Edges: T2 → T1 and T1 → T2. Cycle! Not conflict serializable.
 
 **Correct Answer:** (c) S is not conflict serializable
 
@@ -1561,7 +1561,7 @@ Which of the following is NOT a valid reason to use weak entity sets?
 ---
 
 ### D49. [GATE 2013, 2M, Functional Dependencies]
-R(A, B, C, D, E, F) with FDs: A â†’ B, BC â†’ D, D â†’ E, E â†’ F. How many candidate keys?
+R(A, B, C, D, E, F) with FDs: A → B, BC → D, D → E, E → F. How many candidate keys?
 
 (a) 1
 (b) 2
@@ -1571,8 +1571,8 @@ R(A, B, C, D, E, F) with FDs: A â†’ B, BC â†’ D, D â†’ E, E â†
 **Answer:** (a) 1
 **Explanation:**
 Attributes on LHS only: A, C. These must be in every CK.
-ACÃ¢ÂÂº = {A, C, B, D, E, F} = all attributes. AC is a CK.
-Check if any other: A alone â†’ no (C missing). C alone â†’ no (A missing). So only one CK = AC.
+AC⁺ = {A, C, B, D, E, F} = all attributes. AC is a CK.
+Check if any other: A alone → no (C missing). C alone → no (A missing). So only one CK = AC.
 
 ---
 
@@ -1616,19 +1616,19 @@ What does this return? (MINUS = set difference)
 ---
 
 ### D52. [GATE 2012, 2M, Canonical Cover]
-R(A, B, C) with FDs: A â†’ BC, AB â†’ C, B â†’ C. Find canonical cover.
+R(A, B, C) with FDs: A → BC, AB → C, B → C. Find canonical cover.
 
-(a) {A â†’ B, B â†’ C, A â†’ C}
-(b) {A â†’ B, B â†’ C}
-(c) {A â†’ BC, B â†’ C}
-(d) {A â†’ B, AB â†’ C}
+(a) {A → B, B → C, A → C}
+(b) {A → B, B → C}
+(c) {A → BC, B → C}
+(d) {A → B, AB → C}
 
-**Answer:** (b) {A â†’ B, B â†’ C}
+**Answer:** (b) {A → B, B → C}
 **Explanation:**
-Step 1: Decompose RHS: A â†’ B, A â†’ C. AB â†’ C. B â†’ C.
-Step 2: Check extraneous in AB â†’ C. Since B â†’ C exists, AB â†’ C is redundant (remove).
-Step 3: A â†’ C is redundant (A â†’ B, B â†’ C by transitivity). Remove.
-Final: {A â†’ B, B â†’ C}
+Step 1: Decompose RHS: A → B, A → C. AB → C. B → C.
+Step 2: Check extraneous in AB → C. Since B → C exists, AB → C is redundant (remove).
+Step 3: A → C is redundant (A → B, B → C by transitivity). Remove.
+Final: {A → B, B → C}
 
 ---
 
@@ -1651,44 +1651,44 @@ Root key = 3.
 ### D54. [GATE 2011, 2M, Relational Algebra]
 R(A, B) and S(B, C). Which expression gives all tuples in R that have a matching tuple in S?
 
-(a) R Ã¢â€¹Ë† S
-(b) R Ã¢Å¸â€¢ S
-(c) R - (R - (R Ã¢â€¹Ë† S))
+(a) R ⋈ S
+(b) R ⟕ S
+(c) R - (R - (R ⋈ S))
 (d) All of these
 
 **Answer:** (d) All of these
 **Explanation:**
-(a) R Ã¢â€¹Ë† S: natural join gives matching tuples.
-(b) R Ã¢Å¸â€¢ S: left outer join gives all R tuples, but those without match get NULL â†’ still includes all R.
-(c) R - (R - (R Ã¢â€¹Ë† S)): set difference then difference = intersection = R Ã¢â€¹Ë† S projected on R attributes.
+(a) R ⋈ S: natural join gives matching tuples.
+(b) R ⟕ S: left outer join gives all R tuples, but those without match get NULL → still includes all R.
+(c) R - (R - (R ⋈ S)): set difference then difference = intersection = R ⋈ S projected on R attributes.
 All three return R tuples with a match in S.
 
-Wait â†’ (b) gives all R tuples (including unmatched with NULLs), not just matching ones. So (b) is different.
+Wait → (b) gives all R tuples (including unmatched with NULLs), not just matching ones. So (b) is different.
 
 Let me reconsider. The question asks "tuples in R that have a matching tuple in S." That's the inner join.
-(a) R Ã¢â€¹Ë† S â†’ correct, returns R tuples with matching S.
-(b) R Ã¢Å¸â€¢ S â†’ returns all R tuples (matching ones get S values, non-matching get NULL). So this includes non-matching.
-(c) R - (R - (R Ã¢â€¹Ë† S)) â†’ the R - parts: R minus R Ã¢â€¹Ë† S gives R with no match. Then R minus that gives R with a match. Correct.
+(a) R ⋈ S → correct, returns R tuples with matching S.
+(b) R ⟕ S → returns all R tuples (matching ones get S values, non-matching get NULL). So this includes non-matching.
+(c) R - (R - (R ⋈ S)) → the R - parts: R minus R ⋈ S gives R with no match. Then R minus that gives R with a match. Correct.
 
-So (a) and (c) are correct. If the answer is (d) All of these, the interpretation might be that (b) also returns matching tuples (it returns all R but matching ones are among them). But strictly, the question says "gives all tuples in R that have a matching tuple" â†’ (b) gives more than that.
+So (a) and (c) are correct. If the answer is (d) All of these, the interpretation might be that (b) also returns matching tuples (it returns all R but matching ones are among them). But strictly, the question says "gives all tuples in R that have a matching tuple" → (b) gives more than that.
 
 **Answer:** (a) and (c) only. If single choice, likely (a) or (d). In GATE 2011, answer was (d).
 
 ---
 
 ### D55. [GATE 2011, 2M, Normalization]
-R(A, B, C, D, E) with FDs: A â†’ B, B â†’ C, C â†’ D, D â†’ E. Decompose into R1(A, B) and R2(A, C, D, E). Is it dependency-preserving?
+R(A, B, C, D, E) with FDs: A → B, B → C, C → D, D → E. Decompose into R1(A, B) and R2(A, C, D, E). Is it dependency-preserving?
 
 (a) Yes
-(b) No, B â†’ C lost
-(c) No, C â†’ D lost
-(d) No, D â†’ E lost
+(b) No, B → C lost
+(c) No, C → D lost
+(d) No, D → E lost
 
-**Answer:** (b) No, B â†’ C lost
+**Answer:** (b) No, B → C lost
 **Explanation:**
-R1: projected FDs = {A â†’ B}
-R2: Check which FDs hold: A â†’ C (from A â†’ B, B â†’ C transitively), so A â†’ C. C â†’ D. D â†’ E.
-B â†’ C: B no longer exists as a non-key in any relation. B â†’ C is not projected onto either R1 (no C) or R2 (no B). Lost.
+R1: projected FDs = {A → B}
+R2: Check which FDs hold: A → C (from A → B, B → C transitively), so A → C. C → D. D → E.
+B → C: B no longer exists as a non-key in any relation. B → C is not projected onto either R1 (no C) or R2 (no B). Lost.
 
 ---
 
@@ -1756,26 +1756,26 @@ A B+ tree index has block size 2048 bytes. Key = 16 bytes, pointer = 8 bytes, bl
 
 **Answer:** p = 85
 **Explanation:**
-Internal node: p Ãƒâ€” 8 + (p-1) Ãƒâ€” 16 + 40 Ã¢â€°Â¤ 2048
-8p + 16p - 16 + 40 Ã¢â€°Â¤ 2048
-24p + 24 Ã¢â€°Â¤ 2048
-24p Ã¢â€°Â¤ 2024
-p Ã¢â€°Â¤ 84.33
+Internal node: p × 8 + (p-1) × 16 + 40 ≤ 2048
+8p + 16p - 16 + 40 ≤ 2048
+24p + 24 ≤ 2048
+24p ≤ 2024
+p ≤ 84.33
 So p = 84.
 
 Wait, recalculate. Actually p is pointers, p-1 is keys.
-p Ãƒâ€” 8 + (p-1) Ãƒâ€” 16 + 40 Ã¢â€°Â¤ 2048
-8p + 16p - 16 + 40 Ã¢â€°Â¤ 2048
-24p + 24 Ã¢â€°Â¤ 2048
-24p Ã¢â€°Â¤ 2024
-p Ã¢â€°Â¤ 84.33
+p × 8 + (p-1) × 16 + 40 ≤ 2048
+8p + 16p - 16 + 40 ≤ 2048
+24p + 24 ≤ 2048
+24p ≤ 2024
+p ≤ 84.33
 Maximum integer p = 84.
 
 Hmm, but maybe the header doesn't count, or the calculation is different. Let me try:
-8p + 16(p-1) Ã¢â€°Â¤ 2048 - 40 = 2008
-8p + 16p - 16 Ã¢â€°Â¤ 2008
-24p Ã¢â€°Â¤ 2024
-p Ã¢â€°Â¤ 84.33
+8p + 16(p-1) ≤ 2048 - 40 = 2008
+8p + 16p - 16 ≤ 2008
+24p ≤ 2024
+p ≤ 84.33
 p = 84.
 
 So p = 84.
@@ -1783,7 +1783,7 @@ So p = 84.
 ---
 
 ### D61. [GATE 2023, 2M, 3NF Decomposition]
-R(A, B, C, D) with FDs: AB â†’ C, C â†’ D, D â†’ A. Decompose into BCNF. Which decomposition(s) is/are dependency-preserving?
+R(A, B, C, D) with FDs: AB → C, C → D, D → A. Decompose into BCNF. Which decomposition(s) is/are dependency-preserving?
 
 (a) R1(A, C, D), R2(B, C)
 (b) R1(A, B, C), R2(C, D)
@@ -1792,22 +1792,22 @@ R(A, B, C, D) with FDs: AB â†’ C, C â†’ D, D â†’ A. Decompose int
 
 **Answer:** (b) R1(A, B, C), R2(C, D)
 **Explanation:**
-Find CKs: ABÃ¢ÂÂº = {A,B,C,D}. DÃ¢ÂÂº = {D,A}. CÃ¢ÂÂº = {C,D,A} â†’ B missing. BCÃ¢ÂÂº = {B,C,D,A} = all.
+Find CKs: AB⁺ = {A,B,C,D}. D⁺ = {D,A}. C⁺ = {C,D,A} → B missing. BC⁺ = {B,C,D,A} = all.
 CKs: AB and BC.
-C â†’ D violates BCNF (C is not superkey). Decompose: R1(A,B,C), R2(C,D).
-Check lossless: C is common, C â†’ D holds in R2. Ã¢Å“â€œ
+C → D violates BCNF (C is not superkey). Decompose: R1(A,B,C), R2(C,D).
+Check lossless: C is common, C → D holds in R2. ✓
 Check dependency-preserving:
-R1: AB â†’ C holds. D â†’ A? A is in R1 but D is not. Projected FDs on R1: AB â†’ C.
-R2: C â†’ D holds.
-D â†’ A: checked by combining? In R1, AB â†’ C, and from C â†’ D (R2), we get AB â†’ D. But D â†’ A needs to hold. Since C â†’ D and AB â†’ C, we have AB â†’ D. But D â†’ A: DÃ¢ÂÂº w.r.t. projected FDs = {D} in R2. So D â†’ A is NOT preserved.
+R1: AB → C holds. D → A? A is in R1 but D is not. Projected FDs on R1: AB → C.
+R2: C → D holds.
+D → A: checked by combining? In R1, AB → C, and from C → D (R2), we get AB → D. But D → A needs to hold. Since C → D and AB → C, we have AB → D. But D → A: D⁺ w.r.t. projected FDs = {D} in R2. So D → A is NOT preserved.
 Hmm, so this is not dependency-preserving.
 
-Actually option (a): R1(A, C, D) with FDs C â†’ D, D â†’ A. R2(B, C) with no non-trivial FDs.
-AB â†’ C: A and B are in different relations, cannot be checked.
+Actually option (a): R1(A, C, D) with FDs C → D, D → A. R2(B, C) with no non-trivial FDs.
+AB → C: A and B are in different relations, cannot be checked.
 So (a) is not dependency-preserving.
 
-Option (b): R1(A, B, C) with AB â†’ C. R2(C, D) with C â†’ D.
-D â†’ A is lost. So not fully dependency-preserving.
+Option (b): R1(A, B, C) with AB → C. R2(C, D) with C → D.
+D → A is lost. So not fully dependency-preserving.
 
 But among the options, (b) is the best/correct BCNF decomposition. GATE answer was (b).
 
@@ -1829,7 +1829,7 @@ The alias `cnt` is used in HAVING. Is this valid SQL?
 (d) No, WHERE cannot precede GROUP BY
 
 **Answer:** (b) No, alias cannot be used in HAVING
-**Explanation:** SQL evaluation order: FROM â†’ WHERE â†’ GROUP BY â†’ HAVING â†’ SELECT. Since HAVING executes before SELECT, the alias `cnt` defined in SELECT is not available in HAVING. The HAVING clause must use the full expression `COUNT(*) > 3`.
+**Explanation:** SQL evaluation order: FROM → WHERE → GROUP BY → HAVING → SELECT. Since HAVING executes before SELECT, the alias `cnt` defined in SELECT is not available in HAVING. The HAVING clause must use the full expression `COUNT(*) > 3`.
 
 ---
 
@@ -1844,9 +1844,9 @@ Schedule S: r1(A), w2(A), r2(B), w1(B). Which is TRUE?
 **Answer:** (b) View serializable but not conflict serializable
 **Explanation:**
 Conflicts:
-r1(A) before w2(A) â†’ T1 â†’ T2
-w2(B)? No w2(B). Actually: r2(B) before w1(B) â†’ T2 â†’ T1
-So edges: T1 â†’ T2 and T2 â†’ T1. Cycle. Not conflict serializable.
+r1(A) before w2(A) → T1 → T2
+w2(B)? No w2(B). Actually: r2(B) before w1(B) → T2 → T1
+So edges: T1 → T2 and T2 → T1. Cycle. Not conflict serializable.
 
 Check view serializability:
 w2(A) is the only write of A (initial read: no one reads initial A)
@@ -1861,34 +1861,34 @@ So view serializable but not conflict serializable.
 ---
 
 ### D64. [GATE 2020, 2M, Dependency Preservation]
-R(A, B, C, D) with FDs: A â†’ B, A â†’ C, C â†’ D. Decompose into R1(A, B, C) and R2(C, D). Is this dependency-preserving?
+R(A, B, C, D) with FDs: A → B, A → C, C → D. Decompose into R1(A, B, C) and R2(C, D). Is this dependency-preserving?
 
 (a) Yes
-(b) No, A â†’ B lost
-(c) No, A â†’ C lost
-(d) No, C â†’ D lost
+(b) No, A → B lost
+(c) No, A → C lost
+(d) No, C → D lost
 
 **Answer:** (a) Yes
 **Explanation:**
-R1(A, B, C): A â†’ B, A â†’ C hold.
-R2(C, D): C â†’ D holds.
-All FDs: A â†’ B (R1), A â†’ C (R1), C â†’ D (R2). All preserved. Ã¢Å“â€œ
+R1(A, B, C): A → B, A → C hold.
+R2(C, D): C → D holds.
+All FDs: A → B (R1), A → C (R1), C → D (R2). All preserved. ✓
 
 ---
 
 ### D65. [GATE 2019, 2M, Relational Algebra Equivalence]
-Which of the following is NOT equivalent to sigma_{c1 Ã¢Ë†Â§ c2}(R)?
+Which of the following is NOT equivalent to sigma_{c1 ∧ c2}(R)?
 
 (a) sigma_{c1}(sigma_{c2}(R))
 (b) sigma_{c2}(sigma_{c1}(R))
-(c) sigma_{c1}(R) Ã¢Ë†Â© sigma_{c2}(R)
-(d) sigma_{c1}(R) Ã¢Ë†Âª sigma_{c2}(R)
+(c) sigma_{c1}(R) ∩ sigma_{c2}(R)
+(d) sigma_{c1}(R) ∪ sigma_{c2}(R)
 
-**Answer:** (d) sigma_{c1}(R) Ã¢Ë†Âª sigma_{c2}(R)
-**Explanation:** sigma_{c1 Ã¢Ë†Â§ c2}(R) selects tuples satisfying BOTH conditions.
+**Answer:** (d) sigma_{c1}(R) ∪ sigma_{c2}(R)
+**Explanation:** sigma_{c1 ∧ c2}(R) selects tuples satisfying BOTH conditions.
 (a) and (b) are equivalent by cascading select.
-(c) Intersection of sigma_{c1}(R) and sigma_{c2}(R) gives tuples in both = satisfying both. Ã¢Å“â€œ
-(d) Union gives tuples satisfying at least one condition. Ã¢Å“â€” (gives more tuples).
+(c) Intersection of sigma_{c1}(R) and sigma_{c2}(R) gives tuples in both = satisfying both. ✓
+(d) Union gives tuples satisfying at least one condition. ✗ (gives more tuples).
 
 ---
 
@@ -1901,7 +1901,7 @@ In Multiversion Concurrency Control, a read operation:
 (d) Reads the most recent version
 
 **Answer:** (b) Reads the version that was current when the transaction started
-**Explanation:** MVCC provides snapshot isolation â†’ each transaction sees a consistent snapshot of the database as of the transaction start time (or first read). This prevents dirty reads and non-repeatable reads.
+**Explanation:** MVCC provides snapshot isolation → each transaction sees a consistent snapshot of the database as of the transaction start time (or first read). This prevents dirty reads and non-repeatable reads.
 
 ---
 
@@ -1914,20 +1914,20 @@ A B+ tree of order d (max keys = 2d) has root with 5 keys after deletions. The r
 (d) Root has 0 keys
 
 **Answer:** (d) Root has 0 keys
-**Explanation:** The root node is special â†’ it can have as few as 1 key (2 children for internal root). Merging at the root only occurs when the root becomes empty. For non-root internal nodes, merging occurs when keys &lt; d (or children < ceil(order/2)).
+**Explanation:** The root node is special → it can have as few as 1 key (2 children for internal root). Merging at the root only occurs when the root becomes empty. For non-root internal nodes, merging occurs when keys &lt; d (or children < ceil(order/2)).
 
 ---
 
 ### D68. [GATE 2017, 1M, Relational Calculus]
 Which of the following is a safe expression in tuple relational calculus?
 
-(a) {t | Ã‚Â¬(t Ã¢Ë†Ë† R)}
-(b) {t | t Ã¢Ë†â€° R}
-(c) {t | Ã¢Ë†Æ’s Ã¢Ë†Ë† R (t[A] = s[A])}
-(d) {t | Ã¢Ë†â‚¬s Ã¢Ë†Ë† R (t[A] > s[A])}
+(a) {t | ¬(t ∈ R)}
+(b) {t | t ∉ R}
+(c) {t | ∃s ∈ R (t[A] = s[A])}
+(d) {t | ∀s ∈ R (t[A] > s[A])}
 
-**Answer:** (c) {t | Ã¢Ë†Æ’s Ã¢Ë†Ë† R (t[A] = s[A])}
-**Explanation:** A safe expression must ensure results are finite. (a) and (b) are unsafe â†’ they can produce infinite results (all tuples not in R from an infinite domain). (c) is safe: result is bounded by domain of R's A attribute. (d) is unsafe: infinite possibilities for t > all values.
+**Answer:** (c) {t | ∃s ∈ R (t[A] = s[A])}
+**Explanation:** A safe expression must ensure results are finite. (a) and (b) are unsafe → they can produce infinite results (all tuples not in R from an infinite domain). (c) is safe: result is bounded by domain of R's A attribute. (d) is unsafe: infinite possibilities for t > all values.
 
 ---
 
@@ -1960,12 +1960,12 @@ What does this return?
 (d) Department with highest individual salary
 
 **Answer:** (a) Department with highest average salary
-**Explanation:** GROUP BY groups by dept_name, AVG(salary) computes per-department average. ORDER BY avg_sal DESC sorts descending. LIMIT 1 returns the top row â†’ the department with the highest average salary.
+**Explanation:** GROUP BY groups by dept_name, AVG(salary) computes per-department average. ORDER BY avg_sal DESC sorts descending. LIMIT 1 returns the top row → the department with the highest average salary.
 
 ---
 
 ### D71. [GATE 2015, 2M, Candidate Keys]
-R(A, B, C, D, E, F) with FDs: AB â†’ C, C â†’ D, D â†’ E, E â†’ F, F â†’ A. Find candidate keys.
+R(A, B, C, D, E, F) with FDs: AB → C, C → D, D → E, E → F, F → A. Find candidate keys.
 
 (a) AB, BC, CD, DE, EF
 (b) AB, BC, CD, DE, EF, FA
@@ -1975,17 +1975,17 @@ R(A, B, C, D, E, F) with FDs: AB â†’ C, C â†’ D, D â†’ E, E â†
 **Answer:** (a) AB, BC, CD, DE, EF
 **Explanation:**
 Note: B only appears on LHS (in AB, BC). So B must be in every CK... no, actually B appears alone only as part of AB and BC. Let me check:
-Closing loops: A â†’ ... â†’ A. F â†’ A â†’ ... â†’ A.? Actually F â†’ A, A â†’ ... â†’ F. So A and F are in a cycle.
-All attributes are in a cycle: A â†’ B? No. AB â†’ C, C â†’ D, D â†’ E, E â†’ F, F â†’ A.
+Closing loops: A → ... → A. F → A → ... → A.? Actually F → A, A → ... → F. So A and F are in a cycle.
+All attributes are in a cycle: A → B? No. AB → C, C → D, D → E, E → F, F → A.
 B is on LHS only. So B must be in every CK.
-ABÃ¢ÂÂº: {A,B} â†’ C â†’ D â†’ E â†’ F â†’ A = all. CK = AB.
-BCÃ¢ÂÂº: {B,C} â†’ D â†’ E â†’ F â†’ A â†’ ... â†’ B = all. CK = BC.
-CDÃ¢ÂÂº: {C,D} â†’ E â†’ F â†’ A â†’ ... â†’ ... wait, A with what? We need to derive B. CDÃ¢ÂÂº = {C,D,E,F,A} â†’ B missing. CD is NOT a CK since B is missing.
+AB⁺: {A,B} → C → D → E → F → A = all. CK = AB.
+BC⁺: {B,C} → D → E → F → A → ... → B = all. CK = BC.
+CD⁺: {C,D} → E → F → A → ... → ... wait, A with what? We need to derive B. CD⁺ = {C,D,E,F,A} → B missing. CD is NOT a CK since B is missing.
 Hmm. Let me recheck: From the FDs, the only way to get B is if B is already in the set. B only appears on LHS, not RHS.
-Wait: F â†’ A. Does A give us B? AB â†’ C, but we need B. A alone doesn't give B.
+Wait: F → A. Does A give us B? AB → C, but we need B. A alone doesn't give B.
 So B is never on RHS. B must be in every CK.
-So CKs: AB (works) and BC (works: BC â†’ D â†’ E â†’ F â†’ A). 
-What about ABF? F â†’ A doesn't add anything to AB. ABF is a superkey but not minimal.
+So CKs: AB (works) and BC (works: BC → D → E → F → A). 
+What about ABF? F → A doesn't add anything to AB. ABF is a superkey but not minimal.
 So AB and BC are the only CKs.
 GATE 2015 answer was (a) AB, BC.
 
@@ -2024,8 +2024,8 @@ Which property ensures that either all operations of a transaction complete or n
 ### D74. [GATE 2012, 2M, Conflict Serializability]
 Schedule S: r1(A), r2(A), w1(B), w2(B), r1(C), r2(C). Is this conflict serializable?
 
-(a) Yes, T1 â†’ T2
-(b) Yes, T2 â†’ T1
+(a) Yes, T1 → T2
+(b) Yes, T2 → T1
 (c) No
 (d) Only view serializable
 
@@ -2033,13 +2033,13 @@ Schedule S: r1(A), r2(A), w1(B), w2(B), r1(C), r2(C). Is this conflict serializa
 **Explanation:**
 Conflicts:
 r1(A) and r2(A): both read, no conflict.
-w1(B) before w2(B) â†’ T1 â†’ T2
+w1(B) before w2(B) → T1 → T2
 r1(C) before r2(C): both read, no conflict.
-Only edge: T1 â†’ T2. No cycle.
+Only edge: T1 → T2. No cycle.
 
 Wait that IS acyclic. So it IS conflict serializable as T1, T2.
 
-**Correct Answer:** (a) Yes, T1 â†’ T2
+**Correct Answer:** (a) Yes, T1 → T2
 
 ---
 
@@ -2140,15 +2140,15 @@ Which of the following is not a DDL command?
 
 ## Tips for GATE DBMS
 
-1. **Functional Dependencies**: Always find candidate keys first. Practice closure computation â†’ it's the foundation for everything (CK, BCNF, 3NF, lossless join).
+1. **Functional Dependencies**: Always find candidate keys first. Practice closure computation → it's the foundation for everything (CK, BCNF, 3NF, lossless join).
 
 2. **Normalization**: Memorize the normal form table. Know the difference: BCNF = every FD LHS is superkey; 3NF allows non-superkey LHS if RHS is prime.
 
-3. **Serializability**: Draw the precedence graph. A single cycle = not conflict serializable. Remember: conflict â‡’ view, but not vice versa.
+3. **Serializability**: Draw the precedence graph. A single cycle = not conflict serializable. Remember: conflict ⇒ view, but not vice versa.
 
-4. **B+ Tree**: Pay attention to how GATE defines "order" â†’ different years use different definitions (max children vs. max keys). Read the question carefully.
+4. **B+ Tree**: Pay attention to how GATE defines "order" → different years use different definitions (max children vs. max keys). Read the question carefully.
 
-5. **SQL**: Know the evaluation order (FROM â†’ WHERE â†’ GROUP BY â†’ HAVING â†’ SELECT â†’ ORDER BY). Practice nested and correlated subqueries.
+5. **SQL**: Know the evaluation order (FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY). Practice nested and correlated subqueries.
 
 6. **Relational Algebra**: Know the division operation and its SQL equivalent (double NOT EXISTS). Practice transforming SQL to algebra.
 
@@ -2176,7 +2176,7 @@ Practice all 75 questions above, time yourself (2 minutes per 2-mark question), 
 
 ## Summary
 
-Database Management Systems (DBMS) is a consistent 8-12 mark GATE CS subject (3-5 questions) covering the Entity-Relationship model, Relational Model and Algebra, SQL (DDL, DML, nested queries, aggregate functions, triggers, views), Normalization (functional dependencies, candidate keys, 1NF-2NF-3NF-BCNF, lossless join and dependency preservation), Transaction Management (ACID properties, serializability â€” conflict and view, precedence graphs), Concurrency Control (locking protocols, 2PL, timestamp ordering, MVCC), and File Organization & Indexing (B+ trees, hash indexes, ISAM). The most heavily tested topics are functional dependencies and normalization (2-4 marks), SQL queries (2-3 marks), transaction serializability (2-3 marks), and B+ tree calculations (1-2 marks). The key to success is mastering FD closure computation (the foundation for everything else), understanding the distinction between conflict and view serializability, and practicing B+ tree insertion/deletion tracing. SQL query evaluation order (FROM â†’ WHERE â†’ GROUP BY â†’ HAVING â†’ SELECT â†’ ORDER BY) is a critical mental model.
+Database Management Systems (DBMS) is a consistent 8-12 mark GATE CS subject (3-5 questions) covering the Entity-Relationship model, Relational Model and Algebra, SQL (DDL, DML, nested queries, aggregate functions, triggers, views), Normalization (functional dependencies, candidate keys, 1NF-2NF-3NF-BCNF, lossless join and dependency preservation), Transaction Management (ACID properties, serializability — conflict and view, precedence graphs), Concurrency Control (locking protocols, 2PL, timestamp ordering, MVCC), and File Organization & Indexing (B+ trees, hash indexes, ISAM). The most heavily tested topics are functional dependencies and normalization (2-4 marks), SQL queries (2-3 marks), transaction serializability (2-3 marks), and B+ tree calculations (1-2 marks). The key to success is mastering FD closure computation (the foundation for everything else), understanding the distinction between conflict and view serializability, and practicing B+ tree insertion/deletion tracing. SQL query evaluation order (FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY) is a critical mental model.
 
 ```mermaid
 flowchart LR
@@ -2187,7 +2187,7 @@ flowchart LR
     A --> F[Transactions]
     A --> G[Indexing]
     B --> B1[Entities, Relationships, Attributes]
-    C --> C1[Relational Algebra: Ïƒ, Ï€, â‹ˆ, Ã·]
+    C --> C1[Relational Algebra: σ, π, ⋈, ÷]
     D --> D1[DDL, DML, Nested Queries]
     E --> E1[FDs, Candidate Keys, BCNF, 3NF]
     F --> F1[ACID, Serializability, 2PL]
@@ -2198,7 +2198,7 @@ flowchart LR
 
 ```typescript
 /**
- * NormalFormChecker â€” Functional Dependency & BCNF/3NF Analyzer
+ * NormalFormChecker — Functional Dependency & BCNF/3NF Analyzer
  * ----------------------------------------------------------------
  * Computes attribute closure, finds candidate keys, and checks
  * whether a given relation schema is in BCNF or 3NF.
@@ -2277,7 +2277,7 @@ class NormalFormChecker {
 
   /**
    * Check if the schema is in BCNF.
-   * BCNF: For every FD X â†’ Y, either Y âŠ† X or X is a superkey.
+   * BCNF: For every FD X → Y, either Y ⊆ X or X is a superkey.
    */
   isBCNF(): boolean {
     const keys = this.findCandidateKeys();
@@ -2290,7 +2290,7 @@ class NormalFormChecker {
 
   /**
    * Check if the schema is in 3NF.
-   * 3NF: For every FD X â†’ Y, either X is a superkey or Y is prime (subset of a CK).
+   * 3NF: For every FD X → Y, either X is a superkey or Y is prime (subset of a CK).
    */
   is3NF(): boolean {
     const keys = this.findCandidateKeys();
@@ -2307,14 +2307,14 @@ class NormalFormChecker {
   }
 
   /**
-   * Decompose to BCNF (simplified â€” one step).
+   * Decompose to BCNF (simplified — one step).
    */
   decomposeBCNF(): string[] {
     const keys = this.findCandidateKeys();
     for (const fd of this.fds) {
       if (this.isSubset(fd.rhs, fd.lhs)) continue;
       if (this.isSuperkey(fd.lhs, keys)) continue;
-      // Violating FD found â€” decompose
+      // Violating FD found — decompose
       const lhsStr = [...fd.lhs].sort().join('');
       const rhsStr = [...fd.rhs].sort().join('');
       const remaining = this.attributes.filter(
@@ -2343,7 +2343,7 @@ class NormalFormChecker {
     const keys = this.findCandidateKeys();
     let report = '=== Normalization Report ===\n';
     report += `Attributes: {${this.attributes.join(', ')}}\n`;
-    report += `FDs: ${this.fds.map(fd => `{${[...fd.lhs].join('')}}â†’{${[...fd.rhs].join('')}}`).join(', ')}\n`;
+    report += `FDs: ${this.fds.map(fd => `{${[...fd.lhs].join('')}}→{${[...fd.rhs].join('')}}`).join(', ')}\n`;
     report += `Candidate Keys: {${keys.map(k => [...k].join('')).join(', ')}}\n`;
     report += `BCNF: ${this.isBCNF()}\n`;
     report += `3NF: ${this.is3NF()}\n`;
@@ -2354,14 +2354,14 @@ class NormalFormChecker {
   }
 }
 
-// Example: R(A,B,C,D) with FDs: Aâ†’B, Bâ†’C, Câ†’D
+// Example: R(A,B,C,D) with FDs: A→B, B→C, C→D
 const checker = new NormalFormChecker(
   ['A', 'B', 'C', 'D'],
   [['A', 'B'], ['B', 'C'], ['C', 'D']]
 );
 console.log(checker.printReport());
-// Closure of {A}: {A,B,C,D} â†’ A is a candidate key
-// Bâ†’C: B is not a superkey, C is not prime â†’ not BCNF, not 3NF
+// Closure of {A}: {A,B,C,D} → A is a candidate key
+// B→C: B is not a superkey, C is not prime → not BCNF, not 3NF
 ```
 
 ## Chapter Quiz
@@ -2374,7 +2374,7 @@ console.log(checker.printReport());
 | 2 | Which SQL clause filters groups after aggregation? | A) WHERE, B) HAVING, C) GROUP BY, D) ORDER BY | **B** |
 | 3 | Conflict serializability can be tested using: | A) Wait-for graph, B) Precedence graph, C) Dependency graph, D) ER diagram | **B** |
 | 4 | Which normal form eliminates transitive dependencies? | A) 1NF, B) 2NF, C) 3NF, D) BCNF | **C** |
-| 5 | In a B+ tree of order p (max children), each internal node has between __ and p children. | A) 1 and p, B) âŒˆp/2âŒ‰ and p, C) âŒˆp/2âŒ‰-1 and p-1, D) p/2 and p | **B** |
+| 5 | In a B+ tree of order p (max children), each internal node has between __ and p children. | A) 1 and p, B) ⌈p/2⌉ and p, C) ⌈p/2⌉-1 and p-1, D) p/2 and p | **B** |
 
 ## Exercises
 
@@ -2382,20 +2382,20 @@ console.log(checker.printReport());
 
 <details>
 <summary><strong>Exercise 1:</strong> Functional Dependency Closure</summary>
-<p>Given R(A,B,C,D) and FDs: Aâ†’B, BCâ†’D, Dâ†’A. Compute the closure of {A,C}.</p>
-<p><strong>Solution:</strong> {AC}+: Aâ†’B adds B â†’ {A,B,C}. BCâ†’D adds D â†’ {A,B,C,D}. Dâ†’A adds nothing new. Closure = {A,B,C,D} = all attributes. So AC is a candidate key.</p>
+<p>Given R(A,B,C,D) and FDs: A→B, BC→D, D→A. Compute the closure of {A,C}.</p>
+<p><strong>Solution:</strong> {AC}+: A→B adds B → {A,B,C}. BC→D adds D → {A,B,C,D}. D→A adds nothing new. Closure = {A,B,C,D} = all attributes. So AC is a candidate key.</p>
 </details>
 
 <details>
 <summary><strong>Exercise 2:</strong> Candidate Keys</summary>
-<p>R(A,B,C,D,E) with FDs: ABâ†’C, Câ†’D, Dâ†’E, Eâ†’A. Find all candidate keys.</p>
-<p><strong>Solution:</strong> {B}+={B}. {AB}+: ABâ†’Câ†’Dâ†’Eâ†’A â†’ all. {BC}+: BCâ†’Câ†’Dâ†’Eâ†’A â†’ all. {BD}+: BDâ†’Dâ†’Eâ†’A... â†’ all. {BE}+: BEâ†’Eâ†’A... â†’ all. Since B must be in every key: candidate keys = {AB, BC, BD, BE}.</p>
+<p>R(A,B,C,D,E) with FDs: AB→C, C→D, D→E, E→A. Find all candidate keys.</p>
+<p><strong>Solution:</strong> {B}+={B}. {AB}+: AB→C→D→E→A → all. {BC}+: BC→C→D→E→A → all. {BD}+: BD→D→E→A... → all. {BE}+: BE→E→A... → all. Since B must be in every key: candidate keys = {AB, BC, BD, BE}.</p>
 </details>
 
 <details>
 <summary><strong>Exercise 3:</strong> Normalization</summary>
-<p>R(A,B,C,D) with FDs: Aâ†’B, Aâ†’C, Bâ†’D. What is the highest normal form?</p>
-<p><strong>Solution:</strong> CK = {A}. FDs: Aâ†’B (superkey), Aâ†’C (superkey), Bâ†’D (B not superkey, D not prime). Not 3NF (violation: Bâ†’D). Not BCNF. 2NF holds (no partial dependency since CK is single attribute). Highest: 2NF.</p>
+<p>R(A,B,C,D) with FDs: A→B, A→C, B→D. What is the highest normal form?</p>
+<p><strong>Solution:</strong> CK = {A}. FDs: A→B (superkey), A→C (superkey), B→D (B not superkey, D not prime). Not 3NF (violation: B→D). Not BCNF. 2NF holds (no partial dependency since CK is single attribute). Highest: 2NF.</p>
 </details>
 
 <details>
@@ -2412,4 +2412,4 @@ console.log(checker.printReport());
 
 ---
 
-*End of Chapter 08 â€” Database Management Systems. Extended with summary, TypeScript implementations, quiz, and exercises.*
+*End of Chapter 08 — Database Management Systems. Extended with summary, TypeScript implementations, quiz, and exercises.*

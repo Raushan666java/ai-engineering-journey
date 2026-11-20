@@ -4,6 +4,7 @@ slug: /data-structures/16-trie
 title: "Chapter 16: Trie (Prefix Tree)"
 sidebar_label: "Chapter 16: Trie (Prefix Tree)"
 sidebar_position: 16
+description: "One-Sentence Takeaway: Tries provide O(L) string operations independent of dictionary size and excel at prefix matching where hash tables and BSTs fall"
 ---
 
 # Chapter 16: Trie (Prefix Tree)

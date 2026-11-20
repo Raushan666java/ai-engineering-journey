@@ -4,6 +4,7 @@ slug: /computer-networks/16-cloud-networking
 title: "Chapter 16: Cloud Networking"
 sidebar_label: "Chapter 16: Cloud Networking"
 sidebar_position: 16
+description: "Cloud networking replaces physical routers, switches, and firewalls with software-defined equivalents running on hypervisor-hosted virtual infrastructure"
 ---
 
 # Chapter 16: Cloud Networking

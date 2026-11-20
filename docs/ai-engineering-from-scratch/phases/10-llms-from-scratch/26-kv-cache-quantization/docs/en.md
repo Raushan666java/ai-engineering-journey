@@ -1,3 +1,7 @@
+---
+description: "At 128K context a 70B model's KV cache needs 160GB in FP16. That is more than the weights. Every long-context serving stack now quantizes the cache. KIVI"
+---
+
 # KV Cache Quantization -- KIVI, W4A8, FP8 Cache
 
 > At 128K context a 70B model's KV cache needs 160GB in FP16. That is more than the weights. Every long-context serving stack now quantizes the cache. KIVI pushes keys to 2-bit and values to 4-bit with minimal perplexity loss. W4A8 keeps the KV cache at 8-bit while running weights at 4-bit and activations at 8-bit. FP8 cache on H100 is the no-loss baseline that costs nothing on hardware with native FP8 tensor cores.

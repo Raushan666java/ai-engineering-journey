@@ -4,6 +4,7 @@ slug: /compiler-design/03-parsing-topdown
 title: "Chapter 3: Top-Down Parsing"
 sidebar_label: "Chapter 3: Top-Down Parsing"
 sidebar_position: 3
+description: "After completing this chapter, students will be able to: define context-free grammars and use them to describe programming-language syntax; construct"
 ---
 
 # Chapter 3: Top-Down Parsing

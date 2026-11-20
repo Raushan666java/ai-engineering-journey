@@ -4,6 +4,7 @@ slug: /learning-how-to-learn-practical/ch-05-deep-work-focus
 title: "Chapter 5: Deep Work & Focus"
 sidebar_label: "Chapter 5: Deep Work & Focus"
 sidebar_position: 6
+description: "Deep work is professional activity performed in a state of distraction-free concentration that pushes your cognitive capabilities to their limit. Shallow"
 ---
 
 # Chapter 5: Deep Work & Focus

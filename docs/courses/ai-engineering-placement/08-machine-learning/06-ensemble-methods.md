@@ -1,3 +1,7 @@
+---
+description: "Ensemble Methods — Boosting, AdaBoost, Gradient Boosting, XGBoost: Machine learning is the core of AI engineering. From linear regression to ensemble"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Ensemble Methods — Boosting, AdaBoost, Gradient Boosting, XGBoost

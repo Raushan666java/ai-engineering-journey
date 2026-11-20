@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/08-machine-learning/12-feature-engineering
 title: "Feature Engineering — Imputation, Encoding, Scaling, Feature Construction, Feature Selection"
 sidebar_label: "Feature Engineering — Imputation, Encoding, Scaling, Feature Construction, Feature Selection"
 sidebar_position: 123
+description: "Feature engineering transforms raw data into representations that improve machine learning model performance. It is often the difference between a good"
 ---
 
 <!-- improved -->

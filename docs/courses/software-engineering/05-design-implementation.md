@@ -1,3 +1,7 @@
+---
+description: "Design principles are established guidelines that, when followed, produce designs that are maintainable, understandable, and adaptable. They represent"
+---
+
 # Design and Implementation
 
 ## Learning Objectives

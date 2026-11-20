@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/09-multi-agent-systems
 title: "09-multi-agent-systems"
 sidebar_label: "09-multi-agent-systems"
 sidebar_position: 10
+description: "Default assumption: you don't need multi-agent. A single well-designed agent with good tools, clear prompting, and a solid loop handles most real tasks"
 ---
 
 ## Chapter 9: Multi-Agent Systems

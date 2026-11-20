@@ -1,3 +1,7 @@
+---
+description: "A[Cloud Networking] --> B[VPC and Subnets] A --> C[Security: SGs + NACLs] A --> E[Hybrid Connectivity] B --> F[Route Tables + IGW + NAT] C --> G[Tiered"
+---
+
 # Chapter 6: Cloud Networking
 
 > **Previous:** [Chapter 5: Cloud Database Services](./05-cloud-database.md) | **Next:** [Chapter 7: Cloud Security](./07-cloud-security.md)

@@ -4,6 +4,7 @@ slug: /java/p3-java-collections
 title: "Java Collections Framework"
 sidebar_label: "Java Collections Framework"
 sidebar_position: 78
+description: "The Java Collections Framework (JCF) is a unified architecture for storing, retrieving, and manipulating groups of objects. It was introduced in JDK 1.2"
 ---
 
 # Java Collections Framework

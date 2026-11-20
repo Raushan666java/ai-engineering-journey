@@ -1,3 +1,7 @@
+---
+description: "This chapter covers 35+ essential Spring and Spring Boot interview questions from DI/IoC and bean lifecycle through auto-configuration, MVC, data access"
+---
+
 # Spring & Spring Boot Interview Q&A
 
 > **Previous:** [Java Core Interview Q&amp;A](./56-interview-java.md) | **Next:** [REST API Interview Q&amp;A](./58-interview-rest-api.md)

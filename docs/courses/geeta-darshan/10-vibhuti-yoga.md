@@ -1,3 +1,7 @@
+---
+description: "'Tum divine ko khojne ke liye aakash mein mat dekho — apni chai ki pyali mein dekho, apni saans mein dekho, apne aansu mein dekho. Jo har cheez mein hai"
+---
+
 # अध्याय १०: विभूति योग — Divine kahin aur nahin, yahin har cheez mein hai
 
 > **"Tum divine ko khojne ke liye aakash mein mat dekho — apni chai ki pyali mein dekho, apni saans mein dekho, apne aansu mein dekho. Jo har cheez mein hai, wahi sachcha hai. Vibhuti ka matlab hi yeh hai — best of everything, kyunki best mein jo chamakta hai, wahi divine hai."**

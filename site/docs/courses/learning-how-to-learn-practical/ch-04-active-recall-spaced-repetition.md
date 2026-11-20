@@ -4,6 +4,7 @@ slug: /learning-how-to-learn-practical/ch-04-active-recall-spaced-repetition
 title: "Chapter 4: Active Recall & Spaced Repetition"
 sidebar_label: "Chapter 4: Active Recall & Spaced Repetition"
 sidebar_position: 5
+description: "Active recall is the single most effective learning technique known to cognitive science. When you force your brain to retrieve information — rather than"
 ---
 
 # Chapter 4: Active Recall & Spaced Repetition

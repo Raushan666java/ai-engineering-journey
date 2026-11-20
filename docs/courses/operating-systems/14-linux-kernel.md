@@ -1,3 +1,7 @@
+---
+description: "Linux unifies process and thread creation under clone(). The library functions fork(), vfork(), and pthread_create() all call clone() with different flag"
+---
+
 # Chapter 14: Linux Kernel Internals
 
 **<< [I/O Systems](./13-io-systems.md)** | [**Next: Shell Scripting**](./15-shell-scripting.md) >>

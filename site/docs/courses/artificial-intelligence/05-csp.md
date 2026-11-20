@@ -4,6 +4,7 @@ slug: /artificial-intelligence/05-csp
 title: "Chapter 5: Constraint Satisfaction Problems"
 sidebar_label: "Chapter 5: Constraint Satisfaction Problems"
 sidebar_position: 8
+description: "Real-World Analogy: You manage a hospital with 50 nurses, 3 shifts per day, 7 days per week. Each nurse has preferred shifts, qualification requirements"
 ---
 
 # Chapter 5: Constraint Satisfaction Problems

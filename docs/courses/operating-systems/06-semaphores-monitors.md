@@ -1,3 +1,7 @@
+---
+description: "A[Semaphore Concept] --> B[Binary & Counting Semaphores] B --> C[Wait & Signal Operations] C --> D[Classic Synchronization Problems] D --> E[Monitors &"
+---
+
 # Chapter 6: Semaphores & Monitors
 
 **<< [Process Synchronization](./05-synchronization.md)** | [**Next: Deadlocks**](./07-deadlocks.md) >>

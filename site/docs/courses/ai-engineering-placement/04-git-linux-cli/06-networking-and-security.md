@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/04-git-linux-cli/06-networking-and-security
 title: "DevOps Automation"
 sidebar_label: "DevOps Automation"
 sidebar_position: 63
+description: "DevOps automation — CI/CD, GitHub Actions, pre-commit hooks — ensures code quality and rapid deployment. AI engineers use these to automate model"
 ---
 
 <!-- improved -->

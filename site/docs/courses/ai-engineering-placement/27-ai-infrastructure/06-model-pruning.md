@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/27-ai-infrastructure/06-model-pruning
 title: "Model Pruning"
 sidebar_label: "Model Pruning"
 sidebar_position: 328
+description: "Model pruning removes redundant parameters from neural networks. Modern LLMs have billions of parameters. Many contribute little to output quality"
 ---
 
 <!-- improved -->

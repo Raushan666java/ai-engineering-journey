@@ -4,6 +4,7 @@ slug: /java/40-gateway
 title: "API Gateway (Spring Cloud Gateway)"
 sidebar_label: "API Gateway (Spring Cloud Gateway)"
 sidebar_position: 40
+description: "An API Gateway is a single entry point that routes requests to appropriate backend services. It handles cross-cutting concerns including authentication"
 ---
 
 # API Gateway (Spring Cloud Gateway)

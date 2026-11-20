@@ -4,6 +4,7 @@ slug: /java/31-spring-boot-test
 title: "Spring Boot Testing"
 sidebar_label: "Spring Boot Testing"
 sidebar_position: 31
+description: "Spring Boot provides first-class support for testing at every level of the application: unit tests with mocked slices, integration tests with the full"
 ---
 
 # Spring Boot Testing

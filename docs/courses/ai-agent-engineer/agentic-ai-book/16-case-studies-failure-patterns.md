@@ -1,3 +1,7 @@
+---
+description: "Symptom: Loop calls search_product_docs five times with slightly different queries, never converging on an answer. Usual cause: The tool's results are"
+---
+
 ## Chapter 16: Case Studies & Failure Patterns
 
 Real patterns you will hit — recognizing them quickly saves days of confused debugging.

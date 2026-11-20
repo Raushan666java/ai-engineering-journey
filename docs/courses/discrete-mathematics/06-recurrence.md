@@ -1,3 +1,7 @@
+---
+description: 'A recurrence relation for a sequence ${a_n}$ is an equation relating $a_n$ to one or more preceding terms $a_{n-1}, a_{n-2}, ldots, a_{n-k}$ for $n'
+---
+
 # Chapter 6: Recurrence Relations
 
 > **Previous:** [Chapter 5: Combinatorics](./05-combinatorics.md) | **Next:** [Chapter 7: Relations](./07-relations.md)

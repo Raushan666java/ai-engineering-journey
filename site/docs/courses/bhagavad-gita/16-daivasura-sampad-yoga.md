@@ -4,6 +4,7 @@ slug: /bhagavad-gita/16-daivasura-sampad-yoga
 title: "Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn"
 sidebar_label: "Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn"
 sidebar_position: 16
+description: "The chariot stands still between two armies, and Krishna, having spoken of the divine and the perishable in the fifteenth chapter, now does something"
 ---
 
 # Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn

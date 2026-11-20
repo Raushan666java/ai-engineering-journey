@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/06-llm-and-rag-intervie
 title: "LLM & RAG Interview"
 sidebar_label: "LLM & RAG Interview"
 sidebar_position: 256
+description: "LLM & RAG Interview: Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews"
 ---
 
 <!-- improved -->

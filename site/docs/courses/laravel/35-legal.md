@@ -4,6 +4,7 @@ slug: /laravel/35-legal
 title: "Chapter 35: Legal & Compliance Agents"
 sidebar_label: "Chapter 35: Legal & Compliance Agents"
 sidebar_position: 35
+description: "Chapter 35: Legal & Compliance Agents: One-Sentence Takeaway: Theory is the foundation — master it before moving to examples and exercises. One-Sentence"
 ---
 
 # Chapter 35: Legal & Compliance Agents

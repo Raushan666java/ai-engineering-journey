@@ -4,6 +4,7 @@ slug: /artificial-intelligence/03-informed-search
 title: "Chapter 3: Informed Search and Heuristics"
 sidebar_label: "Chapter 3: Informed Search and Heuristics"
 sidebar_position: 4
+description: "The GPS never tries every street — it uses domain knowledge (heuristics) to focus on promising paths. This is exactly what informed search algorithms do"
 ---
 
 # Chapter 3: Informed Search and Heuristics

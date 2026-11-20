@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/04-git-linux-cli/09-cron-automation
 title: "Cron Automation — Scheduling, Systemd Timers, Backups, Ansible"
 sidebar_label: "Cron Automation — Scheduling, Systemd Timers, Backups, Ansible"
 sidebar_position: 66
+description: "Automation is the backbone of reliable system administration. Cron jobs schedule repetitive tasks like backups, model retraining, and log rotation. AI"
 ---
 
 <!-- improved -->

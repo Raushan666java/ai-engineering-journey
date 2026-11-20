@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/00-core-computer-science/05-oop-design-patterns
 title: "OOP and Design Patterns for AI Engineers"
 sidebar_label: "OOP and Design Patterns for AI Engineers"
 sidebar_position: 6
+description: "After this chapter you will be able to apply SOLID principles to build extensible ML pipelines, select the right GoF pattern for. common AI engineering"
 ---
 
 <!-- improved -->

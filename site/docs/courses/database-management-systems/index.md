@@ -1,3 +1,7 @@
+---
+description: "slug: /database-management-systems title: 'Database Management Systems — Complete Textbook' sidebar_label: 'Database Management Systems — Complete"
+---
+
 ﻿---
 id: index
 slug: /database-management-systems

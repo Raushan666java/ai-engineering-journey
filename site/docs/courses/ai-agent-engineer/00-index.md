@@ -4,6 +4,7 @@ slug: /ai-agent-engineer
 title: "Laravel Backend Developer → AI Agent Engineer"
 sidebar_label: "Laravel Backend Developer → AI Agent Engineer"
 sidebar_position: 1
+description: "Modern AI Engineering — Covers Genkit, LangGraph, LlamaIndex, MCP, and production AI deployment. Complete that first for foundational AI engineering"
 ---
 
 # Laravel Backend Developer → AI Agent Engineer

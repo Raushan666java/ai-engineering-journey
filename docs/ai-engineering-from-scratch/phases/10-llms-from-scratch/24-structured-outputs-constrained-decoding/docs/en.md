@@ -1,3 +1,7 @@
+---
+description: "'Free text generation works for chat. For pipelines that feed LLM output into a type checker, database insert, or API call, free text is a memory"
+---
+
 # Structured Outputs & Constrained Decoding — JSON Mode, Grammar-Based Decoding
 
 > "Free text generation works for chat. For pipelines that feed LLM output into a type checker, database insert, or API call, free text is a memory corruption waiting to happen."

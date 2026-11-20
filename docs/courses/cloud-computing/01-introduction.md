@@ -1,3 +1,7 @@
+---
+description: "The National Institute of Standards and Technology (NIST) Special Publication 800-145 defines cloud computing as 'a model for enabling ubiquitous"
+---
+
 # Chapter 1: Introduction to Cloud Computing
 
 > **Next:** [Chapter 2: Virtualization](./02-virtualization.md)

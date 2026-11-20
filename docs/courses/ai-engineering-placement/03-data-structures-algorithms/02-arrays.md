@@ -1,3 +1,7 @@
+---
+description: "Arrays are the most fundamental data structure, providing O(1) random access. Understanding array operations, their memory layout, and common patterns"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Arrays

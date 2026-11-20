@@ -4,6 +4,7 @@ slug: /operating-systems/11-file-system-impl
 title: "Chapter 11: File System Implementation"
 sidebar_label: "Chapter 11: File System Implementation"
 sidebar_position: 11
+description: "A[File System Layers] --> B[On-Disk Structures] B --> C[Directory Implementation] C --> D[Allocation Methods] D --> E[Contiguous / Linked / Indexed] E -->"
 ---
 
 # Chapter 11: File System Implementation

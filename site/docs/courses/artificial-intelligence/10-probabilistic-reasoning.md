@@ -4,6 +4,7 @@ slug: /artificial-intelligence/10-probabilistic-reasoning
 title: "Chapter 10: Probabilistic Reasoning"
 sidebar_label: "Chapter 10: Probabilistic Reasoning"
 sidebar_position: 18
+description: "By the conclusion of this chapter, the student will be able to: (1) construct Bayesian networks to model probabilistic relationships from domain"
 ---
 
 # Chapter 10: Probabilistic Reasoning

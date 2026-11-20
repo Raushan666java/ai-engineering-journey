@@ -4,6 +4,7 @@ slug: /data-structures/14-red-black
 title: "Chapter 14: Red-Black Trees"
 sidebar_label: "Chapter 14: Red-Black Trees"
 sidebar_position: 14
+description: "One-Sentence Takeaway: Red-Black trees guarantee O(log n) operations using a color-bit invariant that ensures no path is more than twice as long as any"
 ---
 
 # Chapter 14: Red-Black Trees

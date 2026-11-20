@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/05-fastapi-backend/07-async-patterns
 title: "Async Patterns — Concurrency, Background Tasks, and Event-Driven Design"
 sidebar_label: "Async Patterns — Concurrency, Background Tasks, and Event-Driven Design"
 sidebar_position: 75
+description: "Async Patterns — Concurrency, Background Tasks, and Event-Driven Design: FastAPI is the modern Python framework for building AI APIs. Its async support"
 ---
 
 <!-- improved -->

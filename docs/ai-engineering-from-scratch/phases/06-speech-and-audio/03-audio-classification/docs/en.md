@@ -1,3 +1,7 @@
+---
+description: "Everything from 'dog barking vs siren' to 'which language is this' is audio classification. The features are mels. The architecture moves each decade. The"
+---
+
 # Audio Classification — From k-NN on MFCCs to AST and BEATs
 
 > Everything from "dog barking vs siren" to "which language is this" is audio classification. The features are mels. The architecture moves each decade. The evaluation stays AUC, F1, and per-class recall.

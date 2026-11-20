@@ -1,3 +1,7 @@
+---
+description: "The American Marketing Association defines marketing as 'the activity, set of institutions, and processes for creating, communicating, delivering, and"
+---
+
 # Chapter 1 — Marketing Foundations
 
 ## Learning Objectives

@@ -1,3 +1,7 @@
+---
+description: "A[Shell & Bash Basics] --> B[Variables & Parameters] E --> F[I/O Redirection & Pipes] F --> G[Text Processing: grep/sed/awk] G --> H[Job Control & Signals]"
+---
+
 # Chapter 15: Shell Scripting
 
 **<< [The Linux Kernel](./14-linux-kernel.md)** | [**Next: Security**](./16-security.md) >>

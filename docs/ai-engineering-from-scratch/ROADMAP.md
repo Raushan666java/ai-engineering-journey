@@ -1,3 +1,7 @@
+---
+description: "Status tracker for every phase and lesson. The status glyphs in this file feed the website (site/build.js parses them into site/data.js); do not change"
+---
+
 # Roadmap
 
 Status tracker for every phase and lesson. The status glyphs in this file feed

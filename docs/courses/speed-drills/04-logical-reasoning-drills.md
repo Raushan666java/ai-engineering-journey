@@ -1,3 +1,7 @@
+---
+description: "Let's solve: B is third from left. A is immediate left of B. So A is second from left. Positions: 1:_, 2:A, 3:B, 4:_, 5:_. D is second to the right of E"
+---
+
 # Logical Reasoning Speed Drills
 
 > Master puzzles, data sufficiency, assumptions, cause and effect, and input-output reasoning through timed, structured practice.

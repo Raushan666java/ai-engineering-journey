@@ -4,6 +4,7 @@ slug: /system-design/20-case-study-netflix
 title: "Chapter 20: Case Study — Netflix and Video Streaming"
 sidebar_label: "Chapter 20: Case Study — Netflix and Video Streaming"
 sidebar_position: 20
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Netflix streams over 100 million hours of content daily"
 ---
 
 # Chapter 20: Case Study — Netflix and Video Streaming

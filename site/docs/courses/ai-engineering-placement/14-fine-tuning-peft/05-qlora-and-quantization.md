@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/14-fine-tuning-peft/05-qlora-and-quantization
 title: "QLoRA & Quantization"
 sidebar_label: "QLoRA & Quantization"
 sidebar_position: 192
+description: "QLoRA & Quantization: Fine-tuning adapts foundation models to your specific domain. LoRA, QLoRA, and DPO make this affordable. This module covers when to"
 ---
 
 <!-- improved -->

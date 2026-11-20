@@ -1,3 +1,7 @@
+---
+description: "Whether you're learning from a textbook, a video course, a lecture, or a codebase, the same fundamental process applies. The SQ3R method (Survey"
+---
+
 # Chapter 6: Learning From Any Resource
 
 > ⏱ **2 hours total** · 🎯 **Intermediate** · 📋 **Recommended: Ch 4 (Active Recall)**

@@ -4,6 +4,7 @@ slug: /devops/17-sre
 title: "Chapter 17: SRE Principles"
 sidebar_label: "Chapter 17: SRE Principles"
 sidebar_position: 26
+description: "SRE (Site Reliability Engineering) originates from Google, formalized by Ben Treynor Sloss in 2003. While DevOps is a cultural movement emphasizing"
 ---
 
 # Chapter 17: SRE Principles

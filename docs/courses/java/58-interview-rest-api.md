@@ -1,3 +1,7 @@
+---
+description: "This chapter covers 25 essential REST API interview questions from REST constraints and HTTP semantics through versioning, error handling, security"
+---
+
 # REST API Interview Q&A
 
 > **Previous:** [Spring Framework Interview Q&amp;A](./57-interview-spring.md) | **Next:** [Databases Interview Q&amp;A](./59-interview-databases.md)

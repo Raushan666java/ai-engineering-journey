@@ -1,3 +1,7 @@
+---
+description: "A Decision Tree is a flowchart-like structure used for both classification and regression. Each internal node represents a 'test' on an attribute (e.g"
+---
+
 # Chapter 4: Decision Trees
 
 > **Previous:** [Logistic Regression](./03-logistic-regression.md) | **Next:** [Ensemble Methods](./05-ensemble-methods.md)

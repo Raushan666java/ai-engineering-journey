@@ -1,3 +1,7 @@
+---
+description: "Your network compiled. It ran. It produced a number. The number is wrong and nothing crashed. Welcome to the hardest kind of debugging -- the kind where"
+---
+
 # Debugging Neural Networks
 
 > Your network compiled. It ran. It produced a number. The number is wrong and nothing crashed. Welcome to the hardest kind of debugging -- the kind where there is no error message.

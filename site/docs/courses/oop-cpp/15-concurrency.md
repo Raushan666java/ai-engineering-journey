@@ -4,6 +4,7 @@ slug: /oop-cpp/15-concurrency
 title: "Chapter 15: Concurrency"
 sidebar_label: "Chapter 15: Concurrency"
 sidebar_position: 15
+description: "Concurrency is the ability of a program to make progress on more than one task at the same time. The tasks may not execute simultaneously → they just need"
 ---
 
 # Chapter 15: Concurrency

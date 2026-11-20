@@ -4,6 +4,7 @@ slug: /java/23-nosql
 title: "Spring Data for NoSQL"
 sidebar_label: "Spring Data for NoSQL"
 sidebar_position: 23
+description: "Relational databases have dominated enterprise storage for decades, but the rise of web-scale applications, unstructured data, and polyglot persistence"
 ---
 
 > **Previous:** [Migrations](./22-migrations.md) | **Next:** [Transactions](./24-transactions.md)

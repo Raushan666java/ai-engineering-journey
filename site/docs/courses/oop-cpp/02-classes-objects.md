@@ -4,6 +4,7 @@ slug: /oop-cpp/02-classes-objects
 title: "Chapter 2: Classes and Objects"
 sidebar_label: "Chapter 2: Classes and Objects"
 sidebar_position: 2
+description: "A single blueprint can produce hundreds of identical buildings. Each building is independent — if you change the wallpaper in one building, the others are"
 ---
 
 # Chapter 2: Classes and Objects

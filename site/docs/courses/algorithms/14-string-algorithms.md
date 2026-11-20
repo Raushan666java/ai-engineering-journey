@@ -4,6 +4,7 @@ slug: /algorithms/14-string-algorithms
 title: "Chapter 14: String Algorithms"
 sidebar_label: "Chapter 14: String Algorithms"
 sidebar_position: 14
+description: "Chapter 13: Network Flow — Algorithm design techniques, complexity analysis | Next: Chapter 15: NP-Completeness — From efficient algorithms to hardness"
 ---
 
 # Chapter 14: String Algorithms

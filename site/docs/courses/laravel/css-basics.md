@@ -4,6 +4,7 @@ slug: /laravel/css-basics
 title: "CSS Fundamentals"
 sidebar_label: "CSS Fundamentals"
 sidebar_position: 56
+description: "The cascade resolves conflicts by: (1) origin and importance, (2) specificity, (3) order. Inheritance passes certain property values from parent to child"
 ---
 
 # CSS Fundamentals

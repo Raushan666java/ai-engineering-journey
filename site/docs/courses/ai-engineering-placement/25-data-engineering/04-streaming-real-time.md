@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/25-data-engineering/04-streaming-real-time
 title: "04 — Streaming & Real-Time Data"
 sidebar_label: "04 — Streaming & Real-Time Data"
 sidebar_position: 312
+description: "Batch processing is insufficient when ML models need sub-second updates — fraud detection must flag transactions in milliseconds, recommendation systems"
 ---
 
 <!-- improved -->

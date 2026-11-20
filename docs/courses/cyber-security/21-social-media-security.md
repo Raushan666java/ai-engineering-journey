@@ -1,3 +1,7 @@
+---
+description: "Prereq: Chapters 1-2 (Fundamentals, Cryptography) — authentication concepts, encryption, MFA Target Audience: All users, security-conscious individuals"
+---
+
 # Chapter 21: Social Media Security & Account Takeover Prevention
 
 > **Prereq:** Chapters 1-2 (Fundamentals, Cryptography) — authentication concepts, encryption, MFA

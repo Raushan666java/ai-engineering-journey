@@ -1,3 +1,7 @@
+---
+description: "This capstone chapter brings together all statistical concepts from previous chapters into a practical ML pipeline. You will learn how to profile"
+---
+
 <!-- improved -->
 # Chapter 08: Statistics for ML — Practical
 

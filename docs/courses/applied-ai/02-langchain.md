@@ -1,3 +1,7 @@
+---
+description: "Imagine a car factory. Raw materials (steel, rubber, glass) enter at one end. Each station → welding, painting, assembly → adds value and passes the work"
+---
+
 # Chapter 2: LangChain & LLM Orchestration
 
 > **Prerequisite:** [01 - Introduction to Applied AI](./01-introduction.md)  

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/25-mock-wipro
 title: "Wipro NLTH Mock Test — Full Pattern Simulation (44 Questions)"
 sidebar_label: "Wipro NLTH Mock Test — Full Pattern Simulation (44 Questions)"
 sidebar_position: 386
+description: "Simulates the Wipro National Level Talent Hunt aptitude section: 18 quant, 14 logical, 12 verbal. Some Wipro years include negative marking — if so, skip"
 ---
 
 <!-- improved -->

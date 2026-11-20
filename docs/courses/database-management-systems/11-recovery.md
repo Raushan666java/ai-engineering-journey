@@ -1,3 +1,7 @@
+---
+description: "Database systems face various failure scenarios. Each requires a different recovery strategy. Understanding failure classification is the first step in"
+---
+
 # Chapter 11: Recovery System
 
 > **Previous:** [Chapter 10: Concurrency Control](./10-concurrency.md) | **Next:** [Chapter 12: Indexing](./12-indexing.md)

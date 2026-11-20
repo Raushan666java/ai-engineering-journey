@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/14-ml-system-design-int
 title: "ML System Design: Recommendation Systems and Model Serving"
 sidebar_label: "ML System Design: Recommendation Systems and Model Serving"
 sidebar_position: 264
+description: "After this chapter you will be able to design a production recommendation system from data ingestion to serving, architect a model serving platform with"
 ---
 
 <!-- improved -->

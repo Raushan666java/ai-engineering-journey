@@ -4,6 +4,7 @@ slug: /general-awareness/01-indian-polity
 title: "Chapter 1: Indian Polity & Constitution"
 sidebar_label: "Chapter 1: Indian Polity & Constitution"
 sidebar_position: 1
+description: "The Constitution of India was adopted on 26 November 1949 and came into effect on 26 January 1950. It is the longest written constitution in the world"
 ---
 
 # Chapter 1: Indian Polity & Constitution

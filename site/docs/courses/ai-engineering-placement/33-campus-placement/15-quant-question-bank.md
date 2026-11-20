@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/15-quant-question-bank
 title: "Quantitative Aptitude — 100 Question Drill Bank (Any Company)"
 sidebar_label: "Quantitative Aptitude — 100 Question Drill Bank (Any Company)"
 sidebar_position: 376
+description: "Rule: 60-90 seconds per question. Write your answer, then check against the key at the bottom. Covers all 16 topics from quant-all-topics.md. Difficulty"
 ---
 
 <!-- improved -->

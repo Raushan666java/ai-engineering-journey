@@ -1,3 +1,7 @@
+---
+description: "This chapter covers 40+ essential Java Core interview questions ranging from OOP fundamentals to advanced concurrency, JVM internals, and Java 8+"
+---
+
 # Java Core Interview Q&A
 
 > **Previous:** [Observability](./55-observability.md) | **Next:** [Spring Framework Interview Q&amp;A](./57-interview-spring.md)

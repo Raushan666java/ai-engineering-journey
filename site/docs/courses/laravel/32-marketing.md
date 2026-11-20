@@ -4,6 +4,7 @@ slug: /laravel/32-marketing
 title: "Chapter 32: Marketing & Advertising Agents"
 sidebar_label: "Chapter 32: Marketing & Advertising Agents"
 sidebar_position: 32
+description: "Chapter 32: Marketing & Advertising Agents: One-Sentence Takeaway: Theory is the foundation — master it before moving to examples and exercises"
 ---
 
 # Chapter 32: Marketing & Advertising Agents

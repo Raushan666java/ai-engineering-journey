@@ -1,3 +1,7 @@
+---
+description: "Laravel Boost is a package that acts as a bridge between AI coding agents and your Laravel application. When an AI agent writes Laravel code without"
+---
+
 # Chapter 17: Laravel Boost — AI-Assisted Development
 
 > **Previous:** [Search & RAG](./16-search-rag.md) | **Next:** [Automation Patterns](./18-automation-patterns.md)

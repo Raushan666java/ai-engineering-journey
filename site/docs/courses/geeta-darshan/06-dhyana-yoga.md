@@ -4,6 +4,7 @@ slug: /geeta-darshan/06-dhyana-yoga
 title: "अध्याय ६: ध्यान योग — Man ko harao mat, dekho"
 sidebar_label: "अध्याय ६: ध्यान योग — Man ko harao mat, dekho"
 sidebar_position: 7
+description: "'Man ko harao mat — dekho. Yeh sabse gehri galatfahmi hai ki dhyan ka matlab mann ko dabana hai. Krishna kehti hain — chanchala mann ko haara nahin jaata"
 ---
 
 # अध्याय ६: ध्यान योग — Man ko harao mat, dekho

@@ -4,6 +4,7 @@ slug: /computer-networks/15-web-apis
 title: "Chapter 15: Web APIs and Application Protocols"
 sidebar_label: "Chapter 15: Web APIs and Application Protocols"
 sidebar_position: 15
+description: "Representational State Transfer (REST) is an architectural style for designing networked applications introduced by Roy Fielding in his 2000 PhD"
 ---
 
 # Chapter 15: Web APIs and Application Protocols

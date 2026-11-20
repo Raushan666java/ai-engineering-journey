@@ -1,3 +1,7 @@
+---
+description: "A[Disk Structure] --> B[Disk Scheduling] B --> C[FCFS / SSTF / SCAN / C-SCAN / LOOK / C-LOOK] E --> F[Swap Space & Stable Storage] F --> G[Real-World I/O"
+---
+
 # Chapter 12: Secondary Storage
 
 **<< [File System Implementation](./11-file-system-impl.md)** | [**Next: I/O Systems**](./13-io-systems.md) >>

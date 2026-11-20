@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/16-case-studies-failure-patterns
 title: "16-case-studies-failure-patterns"
 sidebar_label: "16-case-studies-failure-patterns"
 sidebar_position: 17
+description: "Symptom: Loop calls search_product_docs five times with slightly different queries, never converging on an answer. Usual cause: The tool's results are"
 ---
 
 ## Chapter 16: Case Studies & Failure Patterns

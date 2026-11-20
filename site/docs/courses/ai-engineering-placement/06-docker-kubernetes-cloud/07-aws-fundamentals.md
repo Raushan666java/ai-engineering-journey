@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/06-docker-kubernetes-cloud/07-aws-fundamentals
 title: "AWS Fundamentals — EC2, S3, IAM, and Networking"
 sidebar_label: "AWS Fundamentals — EC2, S3, IAM, and Networking"
 sidebar_position: 87
+description: "AWS Fundamentals — EC2, S3, IAM, and Networking: Containers and cloud platforms are where AI models live in production. Docker packages your model"
 ---
 
 <!-- improved -->

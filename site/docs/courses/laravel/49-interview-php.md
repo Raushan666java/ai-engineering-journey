@@ -4,6 +4,7 @@ slug: /laravel/49-interview-php
 title: "Chapter 49: PHP Interview Q&A"
 sidebar_label: "Chapter 49: PHP Interview Q&A"
 sidebar_position: 49
+description: "This chapter covers the most frequently asked PHP interview questions across fundamentals, object-oriented programming, advanced features, PHP 8+ syntax"
 ---
 
 # Chapter 49: PHP Interview Q&A

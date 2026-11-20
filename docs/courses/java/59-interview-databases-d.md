@@ -1,3 +1,7 @@
+---
+description: "Best practice: Make LAZY the global default: Pro Tip: In interviews, always start with the 'why' before the 'how.' Explaining the reasoning behind a"
+---
+
 ![Database Advanced Topics - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/59-interview-databases-d.png)
 
 ## Chapter at a Glance

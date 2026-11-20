@@ -1,3 +1,7 @@
+---
+description: "Every millisecond of latency costs money. Every cache miss costs both latency and tokens. Get the strategy right and your p95 drops 10x without degrading"
+---
+
 # Production LLM Caching Strategies
 
 > Every millisecond of latency costs money. Every cache miss costs both latency and tokens. Get the strategy right and your p95 drops 10x without degrading quality.

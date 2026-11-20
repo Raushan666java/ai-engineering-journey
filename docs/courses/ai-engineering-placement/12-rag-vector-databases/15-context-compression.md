@@ -1,3 +1,7 @@
+---
+description: "Retrieval-Augmented Generation retrieves many documents to answer a query. More documents means more tokens. More tokens means higher cost and slower"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Context Compression for RAG

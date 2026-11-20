@@ -1,3 +1,7 @@
+---
+description: "Autoregressive decoding is serial. Each token waits for the previous one. Speculative decoding breaks the chain: a cheap model drafts N tokens, the"
+---
+
 # Speculative Decoding — Draft, Verify, Repeat
 
 > Autoregressive decoding is serial. Each token waits for the previous one. Speculative decoding breaks the chain: a cheap model drafts N tokens, the expensive model verifies all N in one forward pass. When the draft is right you paid one big forward for N generations.

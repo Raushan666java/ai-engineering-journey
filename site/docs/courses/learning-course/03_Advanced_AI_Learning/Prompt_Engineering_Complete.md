@@ -3,6 +3,7 @@ slug: /learning-course/03_Advanced_AI_Learning/Prompt_Engineering_Complete
 title: "🎯 Prompt Engineering for Learning - Complete Course"
 sidebar_label: "🎯 Prompt Engineering for Learning - Complete Course"
 sidebar_position: 4
+description: "Remember: Great prompts are the bridge between human learning goals and AI capabilities. Master this skill to unlock the full potential of AI-enhanced"
 ---
 # 🎯 Prompt Engineering for Learning - Complete Course
 

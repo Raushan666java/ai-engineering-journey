@@ -1,3 +1,7 @@
+---
+description: "Async Patterns — Concurrency, Background Tasks, and Event-Driven Design: FastAPI is the modern Python framework for building AI APIs. Its async support"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Async Patterns — Concurrency, Background Tasks, and Event-Driven Design

@@ -4,6 +4,7 @@ slug: /cyber-security/20-zero-trust-architecture
 title: "Chapter 20: Zero Trust & Enterprise Security Architecture"
 sidebar_label: "Chapter 20: Zero Trust & Enterprise Security Architecture"
 sidebar_position: 19
+description: "For decades, enterprise security followed the castle-and-moat model. A hardened perimeter (firewalls, VPNs, IDS/IPS) protected internal resources, while"
 ---
 
 # Chapter 20: Zero Trust & Enterprise Security Architecture

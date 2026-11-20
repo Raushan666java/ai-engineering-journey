@@ -1,3 +1,7 @@
+---
+description: "Search systems today must handle both exact keyword matches and semantic understanding. Hybrid search architecture combines the strengths of sparse"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Hybrid Search Architecture

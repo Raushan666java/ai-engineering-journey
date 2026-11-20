@@ -4,6 +4,7 @@ slug: /algorithms/16-approximation
 title: "Chapter 16: Approximation Algorithms"
 sidebar_label: "Chapter 16: Approximation Algorithms"
 sidebar_position: 16
+description: "Chapter 15: NP-Completeness — Understanding of NP-hard problems and reductions | Next: Chapter 17: Randomized Algorithms — From deterministic"
 ---
 
 # Chapter 16: Approximation Algorithms

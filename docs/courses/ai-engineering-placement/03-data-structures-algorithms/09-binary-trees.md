@@ -1,3 +1,7 @@
+---
+description: "Heaps (priority queues) are specialized trees that efficiently provide the minimum or maximum element. They are essential for scheduling, top-K problems"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Binary Trees

@@ -4,6 +4,7 @@ slug: /operating-systems/07-deadlocks
 title: "Chapter 7: Deadlocks"
 sidebar_label: "Chapter 7: Deadlocks"
 sidebar_position: 7
+description: "A[Deadlock Concept] --> B[Necessary Conditions] B --> C[Resource-Allocation Graphs] C --> E[Avoidance: Banker's Algorithm] C --> F[Detection: Wait-for"
 ---
 
 # Chapter 7: Deadlocks

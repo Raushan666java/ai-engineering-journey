@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/13-verbal-all-sections
 title: "Verbal Ability — All Sections Master Reference"
 sidebar_label: "Verbal Ability — All Sections Master Reference"
 sidebar_position: 374
+description: "Complete theory for every verbal section asked in ANY company aptitude round. Each section: rules → key insight → 3-5 worked examples → common trap. Then"
 ---
 
 <!-- improved -->

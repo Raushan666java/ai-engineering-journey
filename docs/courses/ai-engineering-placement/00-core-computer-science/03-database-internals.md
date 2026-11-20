@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to choose between B-tree and LSM-tree storage engines for different AI workloads, design indexes that accelerate"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Database Internals for AI Engineers

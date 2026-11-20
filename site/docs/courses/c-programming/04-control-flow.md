@@ -4,6 +4,7 @@ slug: /c-programming/04-control-flow
 title: "Chapter 4: Control Flow"
 sidebar_label: "Chapter 4: Control Flow"
 sidebar_position: 4
+description: "Real-World Analogy: Decision-making in C is like a traffic light controller at a busy intersection. The controller evaluates conditions (is it red? green?"
 ---
 
 # Chapter 4: Control Flow

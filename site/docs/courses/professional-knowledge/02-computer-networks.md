@@ -4,6 +4,7 @@ slug: /professional-knowledge/02-computer-networks
 title: "Chapter 2: Computer Networks — Exam Quick Revision"
 sidebar_label: "Chapter 2: Computer Networks — Exam Quick Revision"
 sidebar_position: 2
+description: "Step 1: Client sends SYN with initial sequence number (ISN) Step 2: Server responds with SYN+ACK (own ISN + client ISN+1) Step 3: Client sends ACK"
 ---
 
 # Chapter 2: Computer Networks — Exam Quick Revision

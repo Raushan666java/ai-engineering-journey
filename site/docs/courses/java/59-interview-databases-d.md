@@ -4,6 +4,7 @@ slug: /java/59-interview-databases-d
 title: "Best practice: Make LAZY the global default"
 sidebar_label: "Best practice: Make LAZY the global default"
 sidebar_position: 62
+description: "Best practice: Make LAZY the global default: Pro Tip: In interviews, always start with the 'why' before the 'how.' Explaining the reasoning behind a"
 ---
 
 ![Database Advanced Topics - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/59-interview-databases-d.png)

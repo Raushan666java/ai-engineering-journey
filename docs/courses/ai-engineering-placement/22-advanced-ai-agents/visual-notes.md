@@ -1,3 +1,7 @@
+---
+description: "Visual Notes — Multi-Agent Orchestration: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before"
+---
+
 # Visual Notes — Multi-Agent Orchestration
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

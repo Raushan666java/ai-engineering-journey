@@ -4,6 +4,7 @@ slug: /reasoning-ability/01-puzzles
 title: "Puzzles — Floor, Box, and Scheduling"
 sidebar_label: "Puzzles — Floor, Box, and Scheduling"
 sidebar_position: 1
+description: "The Reasoning Ability section of IBPS SO IT Officer Prelims consists of 25 questions to be solved within a shared time limit of 40 minutes (together with"
 ---
 
 # Puzzles — Floor, Box, and Scheduling

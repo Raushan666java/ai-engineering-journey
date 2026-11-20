@@ -1,3 +1,7 @@
+---
+description: "A pretraining run reads one batch of token ids at a time and updates the model. The shape of each batch is fixed by the training contract. For a causal"
+---
+
 # Tokenized Dataset with Sliding Window
 
 > A pretraining run is a function from token ids to gradients. This lesson builds the conveyor that feeds the ids in.

@@ -1,3 +1,7 @@
+---
+description: "energy management, SQ3R, deliberate practice, spiral learning, interview preparation,<br> progress tracking, teaching techniques, and integrated learning"
+---
+
 # Certificate of Completion
 
 > **Print this page** after completing all 13 chapters to certify your achievement.

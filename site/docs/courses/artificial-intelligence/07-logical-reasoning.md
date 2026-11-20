@@ -4,6 +4,7 @@ slug: /artificial-intelligence/07-logical-reasoning
 title: "Chapter 7: Logical Reasoning and Inference"
 sidebar_label: "Chapter 7: Logical Reasoning and Inference"
 sidebar_position: 13
+description: "Real-World Analogy: A detective arrives at a crime scene. The victim is on the floor, a window is broken, a safe is open, and footprints lead outside. The"
 ---
 
 # Chapter 7: Logical Reasoning and Inference

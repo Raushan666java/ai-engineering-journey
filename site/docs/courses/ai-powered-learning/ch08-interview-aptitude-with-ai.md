@@ -4,6 +4,7 @@ slug: /ai-powered-learning/ch08-interview-aptitude-with-ai
 title: "Chapter 8: Interview & Aptitude with AI"
 sidebar_label: "Chapter 8: Interview & Aptitude with AI"
 sidebar_position: 8
+description: "Knowing the material and being asked the material are different sports. This chapter turns ChatGPT, Claude, or Gemini into a personal interview panel that"
 ---
 
 # Chapter 8: Interview & Aptitude with AI

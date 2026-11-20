@@ -1,3 +1,7 @@
+---
+description: "A 30-day sprint is the perfect timebox for mastering a new topic. It's long enough to build real skill but short enough to maintain intensity. Every"
+---
+
 # Chapter 2: The 30-Day Sprint
 
 > ⏱ **2 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**

@@ -1,3 +1,7 @@
+---
+description: "Large language models generate one token at a time. Each step requires a full forward pass through billions of parameters. This sequential bottleneck"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Speculative Decoding

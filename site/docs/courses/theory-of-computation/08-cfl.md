@@ -4,6 +4,7 @@ slug: /theory-of-computation/08-cfl
 title: "Chapter 8: Properties of Context-Free Languages"
 sidebar_label: "Chapter 8: Properties of Context-Free Languages"
 sidebar_position: 8
+description: "Just as regular languages have a pumping lemma, context-free languages have one too → but it's more complex because derivation trees provide two pumpable"
 ---
 
 # Chapter 8: Properties of Context-Free Languages

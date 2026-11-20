@@ -1,3 +1,7 @@
+---
+description: "Pydantic and Validation — Data Modeling and Schema Management: FastAPI is the modern Python framework for building AI APIs. Its async support, automatic"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Pydantic and Validation — Data Modeling and Schema Management

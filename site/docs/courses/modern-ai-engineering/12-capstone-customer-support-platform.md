@@ -4,6 +4,7 @@ slug: /modern-ai-engineering/12-capstone-customer-support-platform
 title: "Chapter 12: Capstone — AI Customer Support Platform"
 sidebar_label: "Chapter 12: Capstone — AI Customer Support Platform"
 sidebar_position: 12
+description: "Build a complete AI-powered customer support platform that integrates every concept from the course: data ingestion, RAG, agent orchestration, safety"
 ---
 
 # Chapter 12: Capstone — AI Customer Support Platform

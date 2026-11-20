@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/18-multimodal-ai-voice/visual-notes
 title: "Visual Notes — Multimodal Input to Voice Output"
 sidebar_label: "Visual Notes"
 sidebar_position: 235
+description: "One-line answer for interviews: 'Audio and vision are encoded, fused in the LLM, and answers come back through text or voice.'"
 ---
 
 # Visual Notes — Multimodal Input to Voice Output

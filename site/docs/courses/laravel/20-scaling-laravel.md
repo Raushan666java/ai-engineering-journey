@@ -4,6 +4,7 @@ slug: /laravel/20-scaling-laravel
 title: "Chapter 20: Scaling Laravel"
 sidebar_label: "Chapter 20: Scaling Laravel"
 sidebar_position: 20
+description: "Horizontal scaling adds more application servers rather than making a single server larger. Laravel applications must be designed as stateless"
 ---
 
 # Chapter 20: Scaling Laravel

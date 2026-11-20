@@ -4,6 +4,7 @@ slug: /computer-networks/06-network-layer
 title: "Chapter 6: The Network Layer"
 sidebar_label: "Chapter 6: The Network Layer"
 sidebar_position: 6
+description: "The network layer provides host-to-host communication across multiple links. Its primary services include logical addressing, routing, fragmentation, and"
 ---
 
 # Chapter 6: The Network Layer

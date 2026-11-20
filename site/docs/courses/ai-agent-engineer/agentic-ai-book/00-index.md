@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book
 title: "Agentic AI — The Complete Book"
 sidebar_label: "Agentic AI — The Complete Book"
 sidebar_position: 1
+description: "A hands-on guide for developers with an API/backend background (Laravel, FastAPI, RAG, n8n, MCP) Part II — Building Blocks"
 ---
 
 # Agentic AI — The Complete Book

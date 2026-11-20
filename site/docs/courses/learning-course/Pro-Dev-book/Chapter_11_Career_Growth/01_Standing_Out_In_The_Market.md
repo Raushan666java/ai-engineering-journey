@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_11_Career_Growth/01_Standing_Out_In_
 title: "🚀 Standing Out in the Market"
 sidebar_label: "🚀 Standing Out in the Market"
 sidebar_position: 1
+description: "The entry-level market for software engineers is saturated. Bootcamps pump out thousands of developers every month who all have the same exact portfolio"
 ---
 # 🚀 Standing Out in the Market
 

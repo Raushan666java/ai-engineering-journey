@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/26-ai-product-thinking/03-experiment-design-metr
 title: "03 — Experiment Design & Metrics for AI"
 sidebar_label: "03 — Experiment Design & Metrics for AI"
 sidebar_position: 318
+description: "AI systems behave differently in production than in training. A model that scores 98% accuracy on a held-out test set can fail in the real world"
 ---
 
 <!-- improved -->

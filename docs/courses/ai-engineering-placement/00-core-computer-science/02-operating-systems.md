@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to explain the difference between processes and threads in the context of concurrent ML workloads, reason about memory"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Operating Systems for AI Engineers

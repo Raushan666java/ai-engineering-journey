@@ -4,6 +4,7 @@ slug: /java/05-functional-deep
 title: "Functional Programming in Practice"
 sidebar_label: "Functional Programming in Practice"
 sidebar_position: 5
+description: "Chapter P6 (Lambda Expressions & Functional Programming) covers the fundamentals this chapter builds on. You should be comfortable with basic lambda"
 ---
 
 # Functional Programming in Practice

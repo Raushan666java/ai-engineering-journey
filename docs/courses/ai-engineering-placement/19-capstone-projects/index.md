@@ -1,3 +1,7 @@
+---
+description: "Four end-to-end builds with real evaluation: price prediction API, RAG service, agent workflow and a live deployment."
+---
+
 # 19 — Capstone Projects
 
 ## Overview

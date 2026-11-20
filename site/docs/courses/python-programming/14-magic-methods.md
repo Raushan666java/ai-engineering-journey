@@ -4,6 +4,7 @@ slug: /python-programming/14-magic-methods
 title: "Chapter 14: Magic Methods"
 sidebar_label: "Chapter 14: Magic Methods"
 sidebar_position: 14
+description: "Magic methods (dunder methods) are special methods with double underscores that allow objects to define Python language behaviours. They are not meant to"
 ---
 
 # Chapter 14: Magic Methods

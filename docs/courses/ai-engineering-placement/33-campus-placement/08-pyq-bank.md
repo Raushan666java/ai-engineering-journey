@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to solve 20 previous-year questions from TCS, Infosys, Wipro, Capgemini, Accenture, and Cognizant with full solutions"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # PYQ Bank (Service Companies)

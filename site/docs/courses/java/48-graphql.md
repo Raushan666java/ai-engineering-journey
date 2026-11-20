@@ -4,6 +4,7 @@ slug: /java/48-graphql
 title: "Spring GraphQL"
 sidebar_label: "Spring GraphQL"
 sidebar_position: 48
+description: "Spring GraphQL: C) The one with best operational characteristics. Production choices should prioritize observability, maintainability, and operability."
 ---
 
 # Spring GraphQL

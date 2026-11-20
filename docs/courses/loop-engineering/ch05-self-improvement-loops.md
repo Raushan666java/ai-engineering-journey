@@ -1,3 +1,7 @@
+---
+description: "Constitutional AI (CAI) replaces expensive human feedback with a written constitution: a set of natural-language principles the model uses to critique and"
+---
+
 # Chapter 5: Self-Improvement Loops
 
 ## Learning Objectives

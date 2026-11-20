@@ -1,3 +1,7 @@
+---
+description: "Anthropic's guidance: 'start with simple prompts, optimize them with comprehensive evaluation, and add multi-step agentic systems only when needed.'"
+---
+
 # Eval-Driven Agent Development
 
 > Anthropic's guidance: "start with simple prompts, optimize them with comprehensive evaluation, and add multi-step agentic systems only when needed." Evaluation is not the last step. It's the outer loop that drives every other choice in Phase 14.

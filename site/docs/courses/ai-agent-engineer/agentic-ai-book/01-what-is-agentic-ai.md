@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/01-what-is-agentic-ai
 title: "Part I — Foundations"
 sidebar_label: "Part I — Foundations"
 sidebar_position: 2
+description: "An agent is a system where a language model doesn't just produce text — it decides what to do, does it using tools, looks at what happened, and decides"
 ---
 
 # Part I — Foundations

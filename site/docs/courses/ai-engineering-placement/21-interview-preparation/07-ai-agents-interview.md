@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/07-ai-agents-interview
 title: "AI Agents Interview"
 sidebar_label: "AI Agents Interview"
 sidebar_position: 257
+description: "AI Agents Interview: Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews"
 ---
 
 <!-- improved -->

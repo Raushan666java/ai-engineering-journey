@@ -1,3 +1,7 @@
+---
+description: "Production agent loops require more than correct logic — they need tooling that makes them reliable, observable, and safe. This chapter introduces five"
+---
+
 # Chapter 9: Loop Tooling
 
 ---

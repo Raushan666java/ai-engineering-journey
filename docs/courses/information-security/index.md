@@ -1,3 +1,7 @@
+---
+description: "Exam Weightage: 4-6 Qs in IBPS SO Mains PK Focus Areas: Cryptography, Network Security, Cyber Threats, Banking Security"
+---
+
 # Information Security & Cryptography — IBPS SO & Govt Exam Prep
 
 > **Exam Weightage:** 4-6 Qs in IBPS SO Mains PK

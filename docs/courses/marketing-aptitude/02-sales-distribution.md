@@ -1,3 +1,7 @@
+---
+description: "Sales management is the process of planning, directing, and controlling the personal selling activities of a business unit, including recruiting"
+---
+
 # Chapter 2: Sales Management and Distribution
 
 ## Learning Objectives

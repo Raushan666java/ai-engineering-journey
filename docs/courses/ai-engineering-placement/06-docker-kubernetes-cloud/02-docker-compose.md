@@ -1,3 +1,7 @@
+---
+description: "Docker Compose — Multi-Container Orchestration: Containers and cloud platforms are where AI models live in production. Docker packages your model"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Docker Compose — Multi-Container Orchestration

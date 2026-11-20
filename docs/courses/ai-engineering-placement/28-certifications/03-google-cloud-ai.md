@@ -1,3 +1,7 @@
+---
+description: "Google Cloud Platform (GCP) offers a focused set of AI certifications that validate your ability to build, deploy, and manage ML solutions at scale"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Google Cloud AI Certifications

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/visual-notes
 title: "Visual Notes — Data Structures & Algorithms"
 sidebar_label: "Visual Notes"
 sidebar_position: 57
+description: "One-line answer for interviews: 'I solve problems by pattern-matching the structure — what to store, in what, and at what cost.'"
 ---
 
 # Visual Notes — Data Structures & Algorithms

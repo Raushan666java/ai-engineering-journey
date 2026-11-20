@@ -4,6 +4,7 @@ slug: /interview-preparation/10-aptitude-logical-reasoning-speed
 title: "Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics"
 sidebar_label: "Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics"
 sidebar_position: 10
+description: "Example shortcut: If someone walks 3 km East, 4 km North, distance from start = √(3²+4²) = 5 km."
 ---
 
 # Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics

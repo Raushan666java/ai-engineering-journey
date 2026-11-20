@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/20-portfolio-branding/04-linkedin-optimization
 title: "LinkedIn Optimization"
 sidebar_label: "LinkedIn Optimization"
 sidebar_position: 246
+description: "LinkedIn Optimization: Your portfolio is your proof of skills. GitHub profiles, technical blogs, and LinkedIn optimization help you stand out. This module"
 ---
 
 <!-- improved -->

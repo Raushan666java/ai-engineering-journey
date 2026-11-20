@@ -1,3 +1,7 @@
+---
+description: "Imagine you are listening to a playlist on your music app. You tap Next to skip forward and Previous to go back to the song you just heard. A singly"
+---
+
 # Chapter 4: Doubly Linked List and Circular Linked List
 
 > **Previous:** [Chapter 3: Singly Linked List](./03-singly-linked-list.md) | **Next:** [Stacks](./05-stacks.md)

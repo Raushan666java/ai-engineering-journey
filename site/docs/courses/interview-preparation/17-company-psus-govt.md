@@ -4,6 +4,7 @@ slug: /interview-preparation/17-company-psus-govt
 title: "Chapter 17: PSUs & Government — Company-Specific Question Bank"
 sidebar_label: "Chapter 17: PSUs & Government — Company-Specific Question Bank"
 sidebar_position: 17
+description: "Dynamic Programming (DP) is an optimization technique that solves problems by breaking them into overlapping subproblems, solving each subproblem once"
 ---
 
 # Chapter 17: PSUs & Government — Company-Specific Question Bank

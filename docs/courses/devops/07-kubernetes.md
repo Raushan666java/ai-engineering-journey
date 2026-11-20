@@ -1,3 +1,7 @@
+---
+description: "Understanding pod scheduling decisions helps debug placement issues and optimize cluster utilization. The following simulator models the Kubernetes"
+---
+
 # Chapter 7: Kubernetes
 
 > **Prev:** [Infrastructure as Code](./07-infrastructure-as-code.md)

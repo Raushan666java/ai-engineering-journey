@@ -1,3 +1,7 @@
+---
+description: "Before 2020, computer vision meant convolutions. Every SOTA on ImageNet, COCO, and detection benchmarks used a CNN backbone. Transformers were for"
+---
+
 # Vision Transformers (ViT)
 
 > An image is a grid of patches. A sentence is a grid of tokens. The same transformer eats both.

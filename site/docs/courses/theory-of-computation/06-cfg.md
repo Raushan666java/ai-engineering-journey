@@ -4,6 +4,7 @@ slug: /theory-of-computation/06-cfg
 title: "Chapter 6: Context-Free Grammars"
 sidebar_label: "Chapter 6: Context-Free Grammars"
 sidebar_position: 6
+description: "Context-free grammars provide a generative description of languages. They are the basis for describing the syntax of most programming languages and are"
 ---
 
 # Chapter 6: Context-Free Grammars

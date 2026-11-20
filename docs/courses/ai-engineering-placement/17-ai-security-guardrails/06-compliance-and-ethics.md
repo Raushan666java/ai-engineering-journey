@@ -1,3 +1,7 @@
+---
+description: "Compliance and Ethics: AI systems face unique security threats. Prompt injection, data leakage, and content abuse require specialized defenses. This"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Compliance and Ethics

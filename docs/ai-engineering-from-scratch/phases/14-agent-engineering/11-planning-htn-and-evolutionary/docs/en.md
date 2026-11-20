@@ -1,3 +1,7 @@
+---
+description: "Symbolic planning handles the cases where the plan is provably correct. Evolutionary code search handles the cases where the fitness function is"
+---
+
 # Planning with HTN and Evolutionary Search
 
 > Symbolic planning handles the cases where the plan is provably correct. Evolutionary code search handles the cases where the fitness function is machine-checkable. ChatHTN (2025) and AlphaEvolve (2025) show what each unlocks when paired with an LLM.

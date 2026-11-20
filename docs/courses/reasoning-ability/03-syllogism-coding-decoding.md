@@ -1,3 +1,7 @@
+---
+description: "Syllogism questions carry approximately 4–5 questions in the IBPS SO Reasoning Ability section. Coding-decoding carries another 3–4 questions. Combined"
+---
+
 # Syllogism and Coding-Decoding
 
 ## Learning Objectives

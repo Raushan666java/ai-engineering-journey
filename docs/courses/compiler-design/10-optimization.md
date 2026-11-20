@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: distinguish machine-independent from machine-dependent optimizations; apply peephole optimization"
+---
+
 # Chapter 10: Code Optimization
 
 ? Previous: [Chapter 9: Code Generation](09-code-gen.md) | **Next:** [Chapter 11: Control-Flow Analysis](11-cfa.md)

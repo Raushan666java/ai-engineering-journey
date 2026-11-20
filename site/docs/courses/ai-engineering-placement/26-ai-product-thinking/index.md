@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/26-ai-product-thinking
 title: "26 — AI Product Thinking"
 sidebar_label: "26 — AI Product Thinking"
 sidebar_position: 321
+description: "Scope an AI feature like a product owner: cost per request, latency budgets, failure modes and what to cut."
 ---
 
 # 26 — AI Product Thinking

@@ -4,6 +4,7 @@ slug: /laravel/33-customer-service
 title: "Chapter 33: Customer Service & Support Agents"
 sidebar_label: "Chapter 33: Customer Service & Support Agents"
 sidebar_position: 33
+description: "Chapter 33: Customer Service & Support Agents: One-Sentence Takeaway: Theory is the foundation — master it before moving to examples and exercises"
 ---
 
 # Chapter 33: Customer Service & Support Agents

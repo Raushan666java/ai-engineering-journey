@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/14-google-adk
 title: "Google Agent Development Kit (ADK)"
 sidebar_label: "Google Agent Development Kit (ADK)"
 sidebar_position: 285
+description: "Google Agent Development Kit (ADK) is an open-source, code-first Python framework for building, evaluating, and deploying sophisticated AI agents. ADK 2.0"
 ---
 
 <!-- improved -->

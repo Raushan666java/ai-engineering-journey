@@ -1,3 +1,7 @@
+---
+description: "Multi-file TypeScript code-search API for the hybrid retrieval pipeline described in ../docs/en.md. Offline, deterministic, six-chunk sample corpus"
+---
+
 # Capstone 19/02 — RAG over Codebase (TypeScript)
 
 Multi-file TypeScript code-search API for the hybrid retrieval pipeline

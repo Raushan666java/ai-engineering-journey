@@ -1,3 +1,7 @@
+---
+description: "Docker Best Practices — Security, Optimization, and Production Readiness: Containers and cloud platforms are where AI models live in production. Docker"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Docker Best Practices — Security, Optimization, and Production Readiness

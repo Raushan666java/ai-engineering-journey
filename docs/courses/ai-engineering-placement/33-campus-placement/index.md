@@ -1,3 +1,7 @@
+---
+description: "The campus-specific route: aptitude rounds, group discussions, and the coding bar at mass recruiters."
+---
+
 # 33 — Campus Placement & Aptitude
 
 ## Overview

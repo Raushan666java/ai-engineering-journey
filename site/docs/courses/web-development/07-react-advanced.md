@@ -4,6 +4,7 @@ slug: /web-development/07-react-advanced
 title: "Chapter 7 → React Advanced"
 sidebar_label: "Chapter 7 → React Advanced"
 sidebar_position: 7
+description: "Chapter 7 → React Advanced: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = [] private maxConcurrency"
 ---
 
 # Chapter 7 → React Advanced

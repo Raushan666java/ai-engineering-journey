@@ -4,6 +4,7 @@ slug: /compiler-design/11-cfa
 title: "Chapter 11: Control-Flow Analysis"
 sidebar_label: "Chapter 11: Control-Flow Analysis"
 sidebar_position: 11
+description: "After completing this chapter, students will be able to: identify basic blocks from intermediate-code sequences; construct flow graphs and edge types"
 ---
 
 # Chapter 11: Control-Flow Analysis

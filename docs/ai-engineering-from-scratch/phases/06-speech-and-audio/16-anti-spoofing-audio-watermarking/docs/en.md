@@ -1,3 +1,7 @@
+---
+description: "Voice cloning shipped faster than defenses. 2026 production voice systems need two things: a detector (AASIST, RawNet2) that classifies real vs fake"
+---
+
 # Voice Anti-Spoofing & Audio Watermarking — ASVspoof 5, AudioSeal, WaveVerify
 
 > Voice cloning shipped faster than defenses. 2026 production voice systems need two things: a detector (AASIST, RawNet2) that classifies real vs fake speech, and a watermark (AudioSeal) that survives compression and editing. Ship both or do not ship voice cloning.

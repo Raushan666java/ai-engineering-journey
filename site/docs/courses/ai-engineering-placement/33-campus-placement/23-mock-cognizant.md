@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/23-mock-cognizant
 title: "Cognizant GenC Mock Test — Full Pattern Simulation (40 Questions)"
 sidebar_label: "Cognizant GenC Mock Test — Full Pattern Simulation (40 Questions)"
 sidebar_position: 384
+description: "Simulates the Cognizant GenC aptitude section: 16 quant, 12 logical, 12 verbal. Cognizant is competitive on speed — target 75%+ and 60 seconds/question"
 ---
 
 <!-- improved -->

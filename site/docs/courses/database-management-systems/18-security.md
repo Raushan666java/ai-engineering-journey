@@ -4,6 +4,7 @@ slug: /database-management-systems/18-security
 title: "Chapter 18: Database Security"
 sidebar_label: "Chapter 18: Database Security"
 sidebar_position: 18
+description: "A database is like a bank vault. The vault itself is steel and concrete (encryption at rest). The courier trucks use armored transport (encryption in"
 ---
 
 # Chapter 18: Database Security

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/17-backtracking
 title: "Backtracking"
 sidebar_label: "Backtracking"
 sidebar_position: 54
+description: "Matrix problems are common in coding interviews and have direct applications in image processing, neural networks, and scientific computing. Understanding"
 ---
 
 <!-- improved -->

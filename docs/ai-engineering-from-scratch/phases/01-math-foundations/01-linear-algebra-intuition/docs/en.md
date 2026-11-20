@@ -1,3 +1,7 @@
+---
+description: "Open any ML paper. Within the first page, you'll see vectors, matrices, dot products, and transformations. Without linear algebra intuition, these are"
+---
+
 # Linear Algebra Intuition
 
 > Every AI model is just matrix math wearing a fancy hat.

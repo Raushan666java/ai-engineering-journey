@@ -4,6 +4,7 @@ slug: /interview-preparation/03-system-design-interview
 title: "Chapter 3: System Design Interview"
 sidebar_label: "Chapter 3: System Design Interview"
 sidebar_position: 3
+description: "Functional: Real-time driver tracking, ride booking, fare calculation, driver-rider matching, trip history."
 ---
 
 # Chapter 3: System Design Interview

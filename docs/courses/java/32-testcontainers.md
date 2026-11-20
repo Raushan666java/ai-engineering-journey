@@ -1,3 +1,7 @@
+---
+description: "Testcontainers is a Java library that wraps Docker containers inside your test lifecycle. Instead of mocking a database or running a heavy local install"
+---
+
 # Testcontainers & Integration Testing
 > **Previous:** [Spring Boot Testing](31-spring-boot-test.md) | **Next:** [Security & Performance Testing](33-security-perf-test.md)
 

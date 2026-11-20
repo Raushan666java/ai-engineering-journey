@@ -4,6 +4,7 @@ slug: /computer-networks/02-physical-layer
 title: "Chapter 2: The Physical Layer"
 sidebar_label: "Chapter 2: The Physical Layer"
 sidebar_position: 2
+description: "Real-world analogy: An analog signal is like a dimmer switch — infinitely variable brightness. A digital signal is like a light switch — only ON (1) or"
 ---
 
 # Chapter 2: The Physical Layer

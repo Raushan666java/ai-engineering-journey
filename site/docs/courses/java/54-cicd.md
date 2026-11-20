@@ -4,6 +4,7 @@ slug: /java/54-cicd
 title: "CI/CD for Spring Boot"
 sidebar_label: "CI/CD for Spring Boot"
 sidebar_position: 54
+description: "CI/CD for Spring Boot: C) The one with best operational characteristics. Production choices should prioritize observability, maintainability, and"
 ---
 
 # CI/CD for Spring Boot

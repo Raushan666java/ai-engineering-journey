@@ -1,3 +1,7 @@
+---
+description: "Evaluating Fine-Tuned Models: Fine-tuning adapts foundation models to your specific domain. LoRA, QLoRA, and DPO make this affordable. This module covers"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Evaluating Fine-Tuned Models

@@ -4,6 +4,7 @@ slug: /java/p5-generics-reflection
 title: "Generics, Annotations & Reflection"
 sidebar_label: "Generics, Annotations & Reflection"
 sidebar_position: 80
+description: "Java's type system extends far beyond the simple class-and-interface hierarchy. Three powerful mechanisms→generics, annotations, and reflection→give"
 ---
 
 # Generics, Annotations & Reflection

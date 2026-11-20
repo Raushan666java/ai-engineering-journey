@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/19-capstone-projects/02-resume-ats-analyzer
 title: "Resume ATS Analyzer"
 sidebar_label: "Resume ATS Analyzer"
 sidebar_position: 237
+description: "Resume ATS Analyzer: Capstone projects prove you can build complete AI systems. From prediction APIs to enterprise RAG platforms, these projects"
 ---
 
 <!-- improved -->

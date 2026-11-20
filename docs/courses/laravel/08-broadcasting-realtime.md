@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: Reverb is a first-party Laravel WebSocket server that scales horizontally with Redis, eliminating the need for third-party services"
+---
+
 # Chapter 8: Broadcasting, Events & Real-Time Features
 > **Previous:** [API Development & Integration](./07-api-development) | **Next:** [Service Container, Facades & Package Development](./09-container-packages)
 

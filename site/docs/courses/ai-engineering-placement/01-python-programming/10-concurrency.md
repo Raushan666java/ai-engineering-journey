@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming/10-concurrency
 title: "Concurrency — Threading, Multiprocessing, and Async"
 sidebar_label: "Concurrency — Threading, Multiprocessing, and Async"
 sidebar_position: 19
+description: "Concurrency — Threading, Multiprocessing, and Async: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and libraries"
 ---
 
 <!-- improved -->

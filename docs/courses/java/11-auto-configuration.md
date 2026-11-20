@@ -1,3 +1,7 @@
+---
+description: "Auto-configuration is Spring Boot's killer feature. It is the mechanism that transforms a bare Spring Framework application â€” where you must manually"
+---
+
 # Auto-Configuration & Starters
 
 > **Previous:** [Dependency Injection & IoC Container](./10-di-container.md) | **Next:** [Application Properties & Configuration](./12-configuration.md)

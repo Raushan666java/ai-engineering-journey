@@ -4,6 +4,7 @@ slug: /web-development/12-deployment
 title: "Chapter 12: Deployment and DevOps"
 sidebar_label: "Chapter 12: Deployment and DevOps"
 sidebar_position: 12
+description: "Always validate environment variables at startup with a Zod schema. A startup failure is far easier to debug than a mysterious runtime crash from a"
 ---
 
 # Chapter 12: Deployment and DevOps

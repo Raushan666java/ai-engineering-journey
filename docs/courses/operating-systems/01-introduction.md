@@ -1,3 +1,7 @@
+---
+description: "Imagine a 50-story office building. Without a building manager, chaos erupts: people fight over elevators, rooms are double-booked, the HVAC runs"
+---
+
 # Chapter 1: Introduction to Operating Systems
 
 [**Next: Processes**](./02-processes.md) >>

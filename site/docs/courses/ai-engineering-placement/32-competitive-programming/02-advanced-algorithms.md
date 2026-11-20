@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/32-competitive-programming/02-advanced-algorithm
 title: "Advanced Algorithm Patterns for CP"
 sidebar_label: "Advanced Algorithm Patterns for CP"
 sidebar_position: 358
+description: "Competitive programming at the highest level demands mastery of advanced data structures and algorithms. These patterns appear in Codeforces Div1/2"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /cyber-security/16-supply-chain-cicd
 title: "Chapter 16: Supply Chain & CI/CD Pipeline Security"
 sidebar_label: "Chapter 16: Supply Chain & CI/CD Pipeline Security"
 sidebar_position: 15
+description: "Modern software development relies on an intricate web of dependencies, build tools, CI/CD pipelines, package registries, and distribution mechanisms"
 ---
 
 # Chapter 16: Supply Chain & CI/CD Pipeline Security

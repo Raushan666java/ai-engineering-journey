@@ -4,6 +4,7 @@ slug: /data-structures/07-hash-tables
 title: "Chapter 7: Hash Tables"
 sidebar_label: "Chapter 7: Hash Tables"
 sidebar_position: 7
+description: "Real-world analogy: A library catalog system. Each book gets assigned a shelf number by the librarian (hash function). When you want a book, you compute"
 ---
 
 # Chapter 7: Hash Tables

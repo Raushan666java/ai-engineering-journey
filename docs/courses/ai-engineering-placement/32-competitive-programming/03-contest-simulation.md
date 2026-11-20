@@ -1,3 +1,7 @@
+---
+description: "Competitive programming contests test more than algorithm knowledge. They test time management, problem selection, debugging under pressure, and"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Contest Simulation & Optimization

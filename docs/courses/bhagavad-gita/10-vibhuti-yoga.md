@@ -1,3 +1,7 @@
+---
+description: "This is the chapter where Krishna stops teaching and starts pointing. For nine chapters he has been speaking about the supreme — the unborn, the"
+---
+
 # Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name
 
 > "The whole world is God's signature — learn to read the handwriting, and every face becomes a letter of the divine."

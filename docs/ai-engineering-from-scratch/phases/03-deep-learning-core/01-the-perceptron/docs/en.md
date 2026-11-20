@@ -1,3 +1,7 @@
+---
+description: "The perceptron answers this. It's the simplest possible learning machine: take some inputs, multiply by weights, add a bias, and make a binary decision"
+---
+
 # The Perceptron
 
 > The perceptron is the atom of neural networks. Split it open and you find weights, a bias, and a decision.

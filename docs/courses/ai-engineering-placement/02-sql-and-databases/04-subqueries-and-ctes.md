@@ -1,3 +1,7 @@
+---
+description: "Subqueries & CTEs — Correlated, WITH, Recursive: Data is the fuel of AI. SQL and database design skills let you query, transform, and store the data that"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Subqueries & CTEs — Correlated, WITH, Recursive

@@ -4,6 +4,7 @@ slug: /placement-preparation/02-dsa-problem-bank
 title: "DSA Coding Problem Bank for Placement Interviews"
 sidebar_label: "DSA Coding Problem Bank for Placement Interviews"
 sidebar_position: 2
+description: "125 curated problems — Arrays, Strings, Linked Lists, Trees, Dynamic Programming, Graphs, Stack/Queue/Heap, Searching & Sorting, Miscellaneous, Low-Level"
 ---
 
 # DSA Coding Problem Bank for Placement Interviews

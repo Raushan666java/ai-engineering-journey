@@ -1,3 +1,7 @@
+---
+description: "FastAPI Basics — Routes, Path Operations, and Request Handling: FastAPI is the modern Python framework for building AI APIs. Its async support, automatic"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # FastAPI Basics — Routes, Path Operations, and Request Handling

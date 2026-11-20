@@ -1,3 +1,7 @@
+---
+description: "When confidence is below threshold, write a question note instead of guessing."
+---
+
 # Agent Rules
 
 ## startup/state-file-fresh

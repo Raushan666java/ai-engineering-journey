@@ -1,3 +1,7 @@
+---
+description: "A language L is recursively enumerable (RE) if there exists a Turing machine M such that L(M) = L. This means M halts in the accept state for every w ∈ L"
+---
+
 # Chapter 10: Turing Machine Extensions and the Church-Turing Thesis
 
 > **Previous:** [Turing Machines](./09-turing.md) | **Next:** [Decidability](./11-decidability.md)

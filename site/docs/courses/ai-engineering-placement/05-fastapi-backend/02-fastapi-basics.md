@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/05-fastapi-backend/02-fastapi-basics
 title: "FastAPI Basics — Routes, Path Operations, and Request Handling"
 sidebar_label: "FastAPI Basics — Routes, Path Operations, and Request Handling"
 sidebar_position: 70
+description: "FastAPI Basics — Routes, Path Operations, and Request Handling: FastAPI is the modern Python framework for building AI APIs. Its async support, automatic"
 ---
 
 <!-- improved -->

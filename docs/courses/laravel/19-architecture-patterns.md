@@ -1,3 +1,7 @@
+---
+description: "As Laravel applications grow, controllers accumulate business logic that belongs elsewhere. The service layer extracts this logic into dedicated classes"
+---
+
 # Chapter 19: Laravel Application Architecture Patterns
 
 > **Previous:** [Automation Patterns](./18-automation-patterns.md) | **Next:** [Scaling Laravel](./20-scaling-laravel.md)

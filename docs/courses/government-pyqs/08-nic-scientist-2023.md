@@ -1,3 +1,7 @@
+---
+description: "Explanation: Recursion inherently uses a stack (call stack) to store function call information, return addresses, and local variables. Each recursive call"
+---
+
 # NIC Scientist B 2023 — Solved Paper
 
 > National Informatics Centre (NIC) Scientist B recruitment exam 2023 — comprehensive solutions with TypeScript code, Mermaid diagrams, and topic analysis.

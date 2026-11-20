@@ -1,3 +1,7 @@
+---
+description: "Slack-integration skeleton for the on-call agent in ../main.py. Exposes a slash-command endpoint and an interactivity (button-click) endpoint, both gated"
+---
+
 # Capstone 06 - DevOps Troubleshooting Agent (TypeScript)
 
 Slack-integration skeleton for the on-call agent in `../main.py`. Exposes a

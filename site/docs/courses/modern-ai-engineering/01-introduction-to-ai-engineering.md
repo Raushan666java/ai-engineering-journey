@@ -4,6 +4,7 @@ slug: /modern-ai-engineering/01-introduction-to-ai-engineering
 title: "Chapter 1: Introduction to AI Engineering"
 sidebar_label: "Chapter 1: Introduction to AI Engineering"
 sidebar_position: 1
+description: "AI engineering is the discipline of building production-ready applications powered by foundation models. It sits at the intersection of machine learning"
 ---
 
 # Chapter 1: Introduction to AI Engineering

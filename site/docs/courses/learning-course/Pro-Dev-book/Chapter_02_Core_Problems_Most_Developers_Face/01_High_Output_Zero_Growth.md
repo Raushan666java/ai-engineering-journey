@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_02_Core_Problems_Most_Developers_Fac
 title: "🚧 High Output, Zero Growth"
 sidebar_label: "🚧 High Output, Zero Growth"
 sidebar_position: 1
+description: "With the advent of tools like GitHub Copilot, ChatGPT, and Cursor, the physical act of writing code has been largely commoditized. You can generate entire"
 ---
 # 🚧 High Output, Zero Growth
 

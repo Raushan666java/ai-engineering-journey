@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: Jobs encapsulate discrete tasks that can be dispatched immediately, with delay, chained sequentially, or batched for parallel"
+---
+
 # Chapter 6: Queues, Jobs, Notifications & Mail
 > **Previous:** [Authentication, Authorization & Security](./05-auth-security) | **Next:** [API Development & Integration](./07-api-development)
 

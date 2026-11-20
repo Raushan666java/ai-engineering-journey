@@ -1,3 +1,7 @@
+---
+description: "A file is a named collection of related information recorded on secondary storage. Files are the primary abstraction the OS provides for persistent data"
+---
+
 # Chapter 10: File Systems
 
 **<< [Virtual Memory](./09-virtual-memory.md)** | [**Next: File System Implementation**](./11-file-system-impl.md) >>

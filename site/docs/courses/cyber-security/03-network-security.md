@@ -4,6 +4,7 @@ slug: /cyber-security/03-network-security
 title: "Chapter 3: Network Security"
 sidebar_label: "Chapter 3: Network Security"
 sidebar_position: 3
+description: "A firewall is a network security device that monitors and controls incoming and outgoing traffic based on predetermined security rules. It acts as a"
 ---
 
 # Chapter 3: Network Security

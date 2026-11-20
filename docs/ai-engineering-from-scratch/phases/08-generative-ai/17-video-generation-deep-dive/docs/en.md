@@ -1,3 +1,7 @@
+---
+description: "Video generation is image generation with a temporal axe to grind. Every frame must cohere with every other frame, the compute budget explodes by the"
+---
+
 # Video Generation Deep Dive -- Sora, Genie, Streaming Transformers
 
 > Video generation is image generation with a temporal axe to grind. Every frame must cohere with every other frame, the compute budget explodes by the frame count, and the world has to obey physics for at least a few seconds. The architectures that survive this pressure look nothing like their image-only cousins.

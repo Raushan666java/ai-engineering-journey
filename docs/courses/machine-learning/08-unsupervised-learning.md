@@ -1,3 +1,7 @@
+---
+description: "Unsupervised Learning involves training models on data that does not have explicit labels or targets. The goal is to discover underlying structures"
+---
+
 # Chapter 8: Unsupervised Learning
 
 > **Previous:** [Neural Networks](./07-neural-networks.md) | **Next:** [Dimensionality Reduction](./09-dimensionality-reduction.md)

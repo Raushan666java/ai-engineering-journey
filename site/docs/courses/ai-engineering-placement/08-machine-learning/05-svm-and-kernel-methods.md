@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/08-machine-learning/05-svm-and-kernel-methods
 title: "SVM & Kernel Methods — Margins, Kernel Trick, Soft Margin"
 sidebar_label: "SVM & Kernel Methods — Margins, Kernel Trick, Soft Margin"
 sidebar_position: 116
+description: "SVM & Kernel Methods — Margins, Kernel Trick, Soft Margin: Machine learning is the core of AI engineering. From linear regression to ensemble methods"
 ---
 
 <!-- improved -->

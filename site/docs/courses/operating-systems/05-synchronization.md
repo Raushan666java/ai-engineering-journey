@@ -4,6 +4,7 @@ slug: /operating-systems/05-synchronization
 title: "Chapter 5: Process Synchronization"
 sidebar_label: "Chapter 5: Process Synchronization"
 sidebar_position: 5
+description: "A[Race Conditions] --> B[Critical Section Problem] B --> C[Peterson's Solution] C --> D[Hardware Synchronization] E --> F[Semaphores & Monitors] F -->"
 ---
 
 # Chapter 5: Process Synchronization

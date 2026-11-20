@@ -1,3 +1,7 @@
+---
+description: "Attention is the function that lets a token's representation pull information from other tokens in the same sequence. Self-attention means queries, keys"
+---
+
 # Multi-Head Self-Attention
 
 > One linear projection, three views, H parallel heads, one mask. The attention block as the model actually uses it.

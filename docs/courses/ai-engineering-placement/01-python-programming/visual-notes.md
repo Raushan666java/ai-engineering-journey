@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'Python lets me go from idea to working code fastest; I use type hints and tests to keep it reliable.'"
+---
+
 # Visual Notes — Python Programming
 
 > One diagram, the full picture. Glance at this before reading the chapters and again before interviews.

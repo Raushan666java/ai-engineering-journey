@@ -1,3 +1,7 @@
+---
+description: "NER found the entities. Entity linking anchored them. Relation extraction finds the edges between them. A knowledge graph is the sum of nodes, edges, and"
+---
+
 # Relation Extraction & Knowledge Graph Construction
 
 > NER found the entities. Entity linking anchored them. Relation extraction finds the edges between them. A knowledge graph is the sum of nodes, edges, and their provenance.

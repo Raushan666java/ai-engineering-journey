@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/27-ai-infrastructure/01-gpu-architecture
 title: "GPU Architecture for AI"
 sidebar_label: "GPU Architecture for AI"
 sidebar_position: 323
+description: "GPU architecture determines how fast AI models train and infer. Understanding compute units, memory hierarchy, and interconnects helps you optimize model"
 ---
 
 <!-- improved -->

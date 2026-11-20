@@ -4,6 +4,7 @@ slug: /java/21-spring-data-jpa
 title: "Spring Data JPA"
 sidebar_label: "Spring Data JPA"
 sidebar_position: 21
+description: "Pro Tip: For read-only queries, use projections or DTO-based queries to avoid loading entire entities. This significantly reduces memory usage for large"
 ---
 
 > **Previous:** [JPA/Hibernate](./20-jpa-hibernate.md) | **Next:** [Migrations](./22-migrations.md)

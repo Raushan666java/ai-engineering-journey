@@ -4,6 +4,7 @@ slug: /digital-marketing/07-paid-ads-and-unit-economics
 title: "Chapter 7 — Paid Ads and Unit Economics"
 sidebar_label: "Chapter 7 — Paid Ads and Unit Economics"
 sidebar_position: 7
+description: "The failure mode is predictable and common: spending ₹50,000 to discover that a landing page converts at 0.2%, when ten manual conversations would have"
 ---
 
 # Chapter 7 — Paid Ads and Unit Economics

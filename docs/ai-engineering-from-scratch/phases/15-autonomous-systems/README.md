@@ -1,3 +1,7 @@
+---
+description: "Phase 15: Autonomous Systems"
+---
+
 # Phase 15: Autonomous Systems
 
 > Agents that run without human intervention — safely.

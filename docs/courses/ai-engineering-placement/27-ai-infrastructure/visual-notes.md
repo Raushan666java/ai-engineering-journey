@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'Hardware, scheduling, serving and optimization work together to keep inference fast and cheap.'"
+---
+
 # Visual Notes — Keeping Inference Fast and Cheap
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

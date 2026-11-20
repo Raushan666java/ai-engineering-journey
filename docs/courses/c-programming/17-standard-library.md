@@ -1,3 +1,7 @@
+---
+description: "Step 1: Declare a FILE* pointer. Step 2: Call fopen(path, mode) to open the file — check for NULL return. Step 3: Read or write data using fprintf"
+---
+
 # Chapter 17: The C Standard Library
 
 > **Previous:** [Stacks and Queues](./16-stacks-queues.md) | **Next:** [Advanced C](./18-advanced-c.md)

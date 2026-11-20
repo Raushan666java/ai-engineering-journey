@@ -4,6 +4,7 @@ slug: /marketing-aptitude/04-banking-marketing
 title: "Chapter 4: Marketing in Banking Sector"
 sidebar_label: "Chapter 4: Marketing in Banking Sector"
 sidebar_position: 4
+description: "Banking marketing applies marketing principles to financial services. Unlike product marketing, banking marketing must address the unique characteristics"
 ---
 
 # Chapter 4: Marketing in Banking Sector

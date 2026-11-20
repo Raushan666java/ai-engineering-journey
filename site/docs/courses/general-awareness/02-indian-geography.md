@@ -4,6 +4,7 @@ slug: /general-awareness/02-indian-geography
 title: "Chapter 2: Indian Geography & Environment"
 sidebar_label: "Chapter 2: Indian Geography & Environment"
 sidebar_position: 2
+description: "India is the seventh-largest country in the world by area (3.287 million sq km) and the second-most populous (over 1.4 billion). It lies entirely in the"
 ---
 
 # Chapter 2: Indian Geography & Environment

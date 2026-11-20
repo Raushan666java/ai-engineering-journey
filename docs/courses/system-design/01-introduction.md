@@ -1,3 +1,7 @@
+---
+description: "System design is the discipline of defining the architecture, components, modules, interfaces, and data flow of a large-scale distributed system to"
+---
+
 # Chapter 1: Introduction to System Design
 > **Previous:** None | **Next:** [02 Scalability Load Balancing](./02-scalability-load-balancing.md)
 

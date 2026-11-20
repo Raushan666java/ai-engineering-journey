@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/03_Advanced_AI_Learning/AI_Learning_Techniques title: '⚡ AI Fast Learning System - Complete Guide' sidebar_label: '⚡ AI Fast"
+---
+
 ﻿---
 slug: /learning-course/03_Advanced_AI_Learning/AI_Learning_Techniques
 title: "⚡ AI Fast Learning System - Complete Guide"

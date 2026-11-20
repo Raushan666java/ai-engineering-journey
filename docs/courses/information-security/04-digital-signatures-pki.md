@@ -1,3 +1,7 @@
+---
+description: "Exam Weightage: 3–5 Qs in IBPS SO IT Officer Mains (Digital signatures, certificates, authentication protocols) Key Topics: Digital signature process, PKI"
+---
+
 # Chapter 4: Digital Signatures & PKI
 
 > **Exam Weightage:** 3–5 Qs in IBPS SO IT Officer Mains (Digital signatures, certificates, authentication protocols)

@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/Modules/4_Time_Management/README.mdDETAILED_NOTES title: '⏰ Time Management - Detailed Notes' sidebar_label: '⏰ Time Management"
+---
+
 ﻿---
 slug: /learning-course/Modules/4_Time_Management/README.mdDETAILED_NOTES
 title: "⏰ Time Management - Detailed Notes"

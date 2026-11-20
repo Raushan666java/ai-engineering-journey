@@ -1,3 +1,7 @@
+---
+description: "Spring Modulith helps architects and developers structure Spring Boot applications as modular monoliths → a middle ground between traditional monoliths"
+---
+
 # Spring Modulith
 
 > **Previous:** [Spring Integration](./50-integration.md) | **Next:** [Docker &amp; Containerization](./52-docker.md)

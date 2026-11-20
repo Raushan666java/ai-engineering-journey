@@ -1,3 +1,7 @@
+---
+description: "The data link layer (Layer 2) provides reliable, efficient communication between two directly connected nodes. It accepts packets from the network layer"
+---
+
 # Chapter 3: The Data Link Layer
 
 > **Prerequisites:** [Chapter 2: Physical Layer](./02-physical-layer.md) → Bits and transmission media | **Next:** [Chapter 4: Medium Access Control](./04-mac.md) → From framing to channel sharing

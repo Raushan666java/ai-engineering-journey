@@ -1,3 +1,7 @@
+---
+description: "❌ WRONG: Hibernate can drop columns or change types unexpectedly: Pro Tip: In interviews, always start with the 'why' before the 'how.' Explaining the"
+---
+
 ![JPA Auditing - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/59-interview-databases-b.png)
 
 ## Chapter at a Glance

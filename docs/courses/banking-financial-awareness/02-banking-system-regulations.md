@@ -1,3 +1,7 @@
+---
+description: "Banks where the Government of India holds majority stake (≥51%). PSBs are covered under the Banking Companies (Acquisition and Transfer of Undertakings)"
+---
+
 # Chapter 2: Banking System & Regulations
 
 ## Learning Objectives

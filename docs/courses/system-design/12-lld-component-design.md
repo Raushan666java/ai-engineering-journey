@@ -1,3 +1,7 @@
+---
+description: "Class Notation: A class is drawn as a rectangle divided into three compartments: the top holds the class name (bold, centered), the middle lists"
+---
+
 # Chapter 12: Low-Level Design: Component and Class Design
 > **Previous:** [11 Lld Design Patterns](./11-lld-design-patterns.md) | **Next:** [13 Lld Concurrency](./13-lld-concurrency.md)
 

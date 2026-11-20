@@ -1,3 +1,7 @@
+---
+description: "84% of students already use AI tools. Only 18% feel prepared to use them professionally. This curriculum closes that gap. 503 lessons. 20 phases. ~320"
+---
+
 <p align="center">
   <img src="assets/banner.svg" alt="AI Engineering from Scratch — reference manual banner" width="100%">
 </p>

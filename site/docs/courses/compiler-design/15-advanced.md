@@ -4,6 +4,7 @@ slug: /compiler-design/15-advanced
 title: "Chapter 15: Advanced Topics in Compilation"
 sidebar_label: "Chapter 15: Advanced Topics in Compilation"
 sidebar_position: 15
+description: "After completing this chapter, students will be able to: explain the architecture of just-in-time compilers including tiered compilation and"
 ---
 
 # Chapter 15: Advanced Topics in Compilation

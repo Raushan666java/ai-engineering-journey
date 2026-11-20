@@ -1,3 +1,7 @@
+---
+description: "This comprehensive textbook covers the full spectrum of DevOps engineering, from foundational principles through advanced site reliability engineering"
+---
+
 ﻿---
 id: index
 slug: /devops

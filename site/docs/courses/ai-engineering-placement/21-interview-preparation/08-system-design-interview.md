@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/08-system-design-interv
 title: "System Design Interview"
 sidebar_label: "System Design Interview"
 sidebar_position: 258
+description: "System Design Interview: Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews"
 ---
 
 <!-- improved -->

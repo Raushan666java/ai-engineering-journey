@@ -1,3 +1,7 @@
+---
+description: "Logistic Regression - Sigmoid, Cross-Entropy, Multiclass: Machine learning is the core of AI engineering. From linear regression to ensemble methods"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass

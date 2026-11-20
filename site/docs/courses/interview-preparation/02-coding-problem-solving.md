@@ -4,6 +4,7 @@ slug: /interview-preparation/02-coding-problem-solving
 title: "Chapter 2: Coding Problem Solving"
 sidebar_label: "Chapter 2: Coding Problem Solving"
 sidebar_position: 2
+description: "Intuition: Kadane's algorithm realizes that a subarray ending at index i is either just nums[i] (start new) or extends the previous subarray. We track the"
 ---
 
 # Chapter 2: Coding Problem Solving

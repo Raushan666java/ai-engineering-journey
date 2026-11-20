@@ -4,6 +4,7 @@ slug: /java/44-reactor
 title: "Chapter 44: Project Reactor & Reactive Streams"
 sidebar_label: "Chapter 44: Project Reactor & Reactive Streams"
 sidebar_position: 44
+description: "Traditional servlet-based applications dedicate one thread per request. When that thread reads from a database, calls a remote API, or writes to a file"
 ---
 
 # Chapter 44: Project Reactor & Reactive Streams

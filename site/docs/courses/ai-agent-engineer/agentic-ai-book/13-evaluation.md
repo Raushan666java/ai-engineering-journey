@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/13-evaluation
 title: "13-evaluation"
 sidebar_label: "13-evaluation"
 sidebar_position: 14
+description: "Non-determinism (Chapter 2.3) means an agent that worked correctly on your test run might behave differently on the next one, or after you tweak a prompt"
 ---
 
 ## Chapter 13: Evaluation — How to Know Your Agent Actually Works

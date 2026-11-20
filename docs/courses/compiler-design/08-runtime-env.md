@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: design activation records for procedure invocations; allocate storage on the stack and heap"
+---
+
 # Chapter 8: Runtime Environment
 
 ? Previous: [Chapter 7: Type Checking](07-type-checking.md) | **Next:** [Chapter 9: Code Generation](09-code-gen.md)

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/visual-notes
 title: "Visual Notes — Multi-Agent Orchestration"
 sidebar_label: "Visual Notes"
 sidebar_position: 288
+description: "Visual Notes — Multi-Agent Orchestration: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before"
 ---
 
 # Visual Notes — Multi-Agent Orchestration

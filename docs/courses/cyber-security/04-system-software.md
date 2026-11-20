@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: System security requires understanding low-level memory corruption at the assembly level, hardening the OS, classifying malware by"
+---
+
 # Chapter 4: System & Software Security
 
 > **Prereq:** Chapter 3 (Network Security) → network perimeter controls limit what reaches the host; this chapter assumes that baseline.

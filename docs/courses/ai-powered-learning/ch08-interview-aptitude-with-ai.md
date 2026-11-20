@@ -1,3 +1,7 @@
+---
+description: "Knowing the material and being asked the material are different sports. This chapter turns ChatGPT, Claude, or Gemini into a personal interview panel that"
+---
+
 # Chapter 8: Interview & Aptitude with AI
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

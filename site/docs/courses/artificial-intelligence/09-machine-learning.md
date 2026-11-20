@@ -4,6 +4,7 @@ slug: /artificial-intelligence/09-machine-learning
 title: "Chapter 9: Machine Learning: Learning from Examples"
 sidebar_label: "Chapter 9: Machine Learning: Learning from Examples"
 sidebar_position: 16
+description: "Real-World Analogy: A child learning to recognize animals does not need an explicit rulebook. Instead, the child is shown examples — 'this furry animal"
 ---
 
 # Chapter 9: Machine Learning: Learning from Examples

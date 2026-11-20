@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_16_Capstone_Project_Jira_Clone/01_Sy
 title: "🏗️ System Architecture & Features (Single-User Jira Clone)"
 sidebar_label: "🏗️ System Architecture & Features (Single-User Jira Clone)"
 sidebar_position: 1
+description: "To put all the principles of the Pro Developer Master Guide into practice, we are going to design a complete, production-ready project management"
 ---
 # 🏗️ System Architecture & Features (Single-User Jira Clone)
 

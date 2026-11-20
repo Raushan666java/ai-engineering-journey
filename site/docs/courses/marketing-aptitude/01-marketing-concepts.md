@@ -4,6 +4,7 @@ slug: /marketing-aptitude/01-marketing-concepts
 title: "Chapter 1: Marketing Concepts"
 sidebar_label: "Chapter 1: Marketing Concepts"
 sidebar_position: 1
+description: "The marketing environment consists of all actors and forces outside marketing that affect the marketing management's ability to build and maintain"
 ---
 
 # Chapter 1: Marketing Concepts

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/26-ai-product-thinking/02-ux-for-ai
 title: "User Experience for AI"
 sidebar_label: "User Experience for AI"
 sidebar_position: 317
+description: "AI products fail when users do not trust them or cannot understand them. Great UX bridges the gap between model capability and human expectation. This"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /applied-ai/01-introduction
 title: "Chapter 1: Introduction to Applied AI"
 sidebar_label: "Chapter 1: Introduction to Applied AI"
 sidebar_position: 1
+description: "Imagine an invisible chef living in your kitchen. Every morning, this chef learns your breakfast preferences → your ideal coffee strength, how crispy you"
 ---
 
 # Chapter 1: Introduction to Applied AI

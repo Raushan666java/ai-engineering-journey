@@ -1,3 +1,7 @@
+---
+description: "Six components in isolation prove nothing. The chunker can win on recall@5 against the corpus and lose on the system's recall@5 because the retriever"
+---
+
 # End-to-End RAG System
 
 > Six lessons of components. One pipeline. One eval loop. One self-terminating demo. This is the system you ship.

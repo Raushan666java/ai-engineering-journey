@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. A monolith is a single deployable unit containing all"
+---
+
 # Chapter 8: Microservices and API Design
 > **Previous:** [07 Message Queues](./07-message-queues.md) | **Next:** [09 Distributed Coordination](./09-distributed-coordination.md)
 

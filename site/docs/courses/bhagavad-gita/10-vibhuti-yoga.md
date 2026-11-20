@@ -4,6 +4,7 @@ slug: /bhagavad-gita/10-vibhuti-yoga
 title: "Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name"
 sidebar_label: "Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name"
 sidebar_position: 10
+description: "This is the chapter where Krishna stops teaching and starts pointing. For nine chapters he has been speaking about the supreme — the unborn, the"
 ---
 
 # Chapter 10: Vibhuti Yoga — Wherever You Look, One Hand Signs the Same Name

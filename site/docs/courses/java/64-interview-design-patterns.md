@@ -4,6 +4,7 @@ slug: /java/64-interview-design-patterns
 title: "64. Design Patterns → Interview Q&A"
 sidebar_label: "64. Design Patterns → Interview Q&A"
 sidebar_position: 72
+description: "This chapter covers the most important design patterns for Java backend development: creational, structural, behavioral, enterprise integration"
 ---
 
 # 64. Design Patterns → Interview Q&A

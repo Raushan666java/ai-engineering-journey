@@ -4,6 +4,7 @@ slug: /government-pyqs/13-rbi-grade-b-2024
 title: "RBI Grade B Phase 1 2024 — Solved Paper"
 sidebar_label: "RBI Grade B Phase 1 2024 — Solved Paper"
 sidebar_position: 13
+description: "Explanation: The RBI kept the repo rate unchanged at 6.50% in the December 2023 Monetary Policy Committee (MPC) meeting, maintaining the pause after a"
 ---
 
 # RBI Grade B Phase 1 2024 — Solved Paper

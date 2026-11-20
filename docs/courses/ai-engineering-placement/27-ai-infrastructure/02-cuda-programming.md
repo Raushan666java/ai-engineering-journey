@@ -1,3 +1,7 @@
+---
+description: "CUDA (Compute Unified Device Architecture) is NVIDIA's parallel computing platform that enables direct GPU programming. Every AI framework — PyTorch"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # CUDA Programming for AI

@@ -1,3 +1,7 @@
+---
+description: "CI/CD Pipelines — Continuous Integration and Delivery: Containers and cloud platforms are where AI models live in production. Docker packages your model"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # CI/CD Pipelines — Continuous Integration and Delivery

@@ -1,3 +1,7 @@
+---
+description: "AWS Fundamentals — EC2, S3, IAM, and Networking: Containers and cloud platforms are where AI models live in production. Docker packages your model"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # AWS Fundamentals — EC2, S3, IAM, and Networking

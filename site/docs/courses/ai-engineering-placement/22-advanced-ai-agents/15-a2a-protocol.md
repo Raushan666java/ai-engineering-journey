@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/15-a2a-protocol
 title: "Agent-to-Agent (A2A) Protocol"
 sidebar_label: "Agent-to-Agent (A2A) Protocol"
 sidebar_position: 286
+description: "The Agent-to-Agent (A2A) protocol is Google's open standard for enabling autonomous agents from different vendors, frameworks, and platforms to"
 ---
 
 <!-- improved -->

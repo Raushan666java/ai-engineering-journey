@@ -1,3 +1,7 @@
+---
+description: 'A binary relation $R$ from set $A$ to set $B$ is a subset of $A times B$. When $A = B$, we say $R$ is a relation on $A$. We write $a R b$ to mean $(a, b)'
+---
+
 # Chapter 7: Relations
 
 > **Previous:** [Chapter 6: Recurrence Relations](./06-recurrence.md) | **Next:** [Chapter 8: Functions](./08-functions.md)

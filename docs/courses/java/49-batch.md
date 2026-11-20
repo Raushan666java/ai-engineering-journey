@@ -1,3 +1,7 @@
+---
+description: "Spring Batch provides a comprehensive framework for batch processing with reusable processing components, transaction management, and chunk-oriented"
+---
+
 # Spring Batch
 
 > **Previous:** [GraphQL](./48-graphql.md) | **Next:** [Spring Integration](./50-integration.md)

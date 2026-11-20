@@ -1,3 +1,7 @@
+---
+description: "Production agents run on six runtime shapes: request-response, streaming, durable execution, queue-based background, event-driven, and scheduled. Pick the"
+---
+
 # Production Runtimes: Queue, Event, Cron
 
 > Production agents run on six runtime shapes: request-response, streaming, durable execution, queue-based background, event-driven, and scheduled. Pick the shape before you pick the framework. Observability is load-bearing at every shape.

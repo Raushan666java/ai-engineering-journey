@@ -1,3 +1,7 @@
+---
+description: "A: Large square with small circle inside top-left B: Large circle with small square inside top-left (shapes swapped) C: Large triangle with small star"
+---
+
 # Chapter 5: Non-Verbal Reasoning
 
 > **Previous:** [Chapter 4: Data Interpretation](04-data-interpretation.md) | **Next:** [Chapter 6: Advanced Reasoning](06-advanced-reasoning.md)

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/04-git-linux-cli/02-git-branching
 title: "Git Branching"
 sidebar_label: "Git Branching"
 sidebar_position: 59
+description: "Branching strategies like GitFlow and trunk-based development enable teams to work in parallel without conflicts. Understanding when to create branches"
 ---
 
 <!-- improved -->

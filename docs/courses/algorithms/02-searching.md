@@ -1,3 +1,7 @@
+---
+description: "Chapter 1: Fundamentals of Algorithm Analysis — Asymptotic notation and recurrence analysis | Next: Chapter 3: Comparison-Based Sorting — From finding"
+---
+
 # Chapter 2: Searching
 
 > **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) — Asymptotic notation and recurrence analysis | **Next:** [Chapter 3: Comparison-Based Sorting](./03-sorting-nlogn.md) — From finding elements to ordering them

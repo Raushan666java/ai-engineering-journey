@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: Beyond BCNF, 4NF and 5NF handle exotic dependencies -- and denormalization is a deliberate performance trade-off, not an excuse to"
+---
+
 # Chapter 8: Higher Normal Forms and Denormalization
 
 > **Previous:** [Chapter 7: Normalization](./07-normalization.md) | **Next:** [Chapter 9: Transactions](./09-transactions.md)

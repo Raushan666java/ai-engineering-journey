@@ -1,3 +1,7 @@
+---
+description: "Models that see, hear, read, and reason across modalities."
+---
+
 # Phase 12: Multimodal AI
 
 > Models that see, hear, read, and reason across modalities.

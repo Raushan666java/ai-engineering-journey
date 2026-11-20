@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/visual-notes
 title: "Visual Notes — Retrieval-Augmented Generation"
 sidebar_label: "Visual Notes"
 sidebar_position: 175
+description: "One-line answer for interviews: 'Query → embed → retrieve from vector store → rerank → generate grounded in retrieved context.'"
 ---
 
 # Visual Notes — Retrieval-Augmented Generation

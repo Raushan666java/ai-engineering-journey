@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'ML is a loop: collect → clean → engineer → train → evaluate → ship → monitor, and feedback restarts it.'"
+---
+
 # Visual Notes — The ML Lifecycle
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

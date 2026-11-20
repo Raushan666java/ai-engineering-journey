@@ -1,3 +1,7 @@
+---
+description: "Dependency Injection — Reusable Components and FastAPI DI System: FastAPI is the modern Python framework for building AI APIs. Its async support"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Dependency Injection — Reusable Components and FastAPI DI System

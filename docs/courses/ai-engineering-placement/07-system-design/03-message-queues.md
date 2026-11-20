@@ -1,3 +1,7 @@
+---
+description: "Message Queues — RabbitMQ, Kafka, and Event-Driven Architecture: System design interviews test your ability to architect large-scale systems. Caching"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Message Queues — RabbitMQ, Kafka, and Event-Driven Architecture

@@ -1,3 +1,7 @@
+---
+description: "Kubernetes Deployment: C) The one with best operational characteristics. Production choices should prioritize observability, maintainability, and"
+---
+
 # Kubernetes Deployment
 
 > **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)

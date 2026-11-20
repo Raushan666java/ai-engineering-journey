@@ -1,3 +1,7 @@
+---
+description: "Segmentation is classification at every pixel. U-Net makes it work by pairing a downsampling encoder with an upsampling decoder and wiring skip"
+---
+
 # Semantic Segmentation — U-Net
 
 > Segmentation is classification at every pixel. U-Net makes it work by pairing a downsampling encoder with an upsampling decoder and wiring skip connections between them.

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/00-core-computer-science/02-operating-systems
 title: "Operating Systems for AI Engineers"
 sidebar_label: "Operating Systems for AI Engineers"
 sidebar_position: 3
+description: "After this chapter you will be able to explain the difference between processes and threads in the context of concurrent ML workloads, reason about memory"
 ---
 
 <!-- improved -->

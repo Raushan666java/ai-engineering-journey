@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/28-certifications/03-google-cloud-ai
 title: "Google Cloud AI Certifications"
 sidebar_label: "Google Cloud AI Certifications"
 sidebar_position: 336
+description: "Google Cloud Platform (GCP) offers a focused set of AI certifications that validate your ability to build, deploy, and manage ML solutions at scale"
 ---
 
 <!-- improved -->

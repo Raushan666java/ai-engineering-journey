@@ -4,6 +4,7 @@ slug: /c-programming/05-loops
 title: "Chapter 5: Loops (Comprehensive)"
 sidebar_label: "Chapter 5: Loops (Comprehensive)"
 sidebar_position: 5
+description: "A for loop is like running laps around a track: you know exactly how many laps you need to run before you start. The coach says 'run 5 laps' — you"
 ---
 
 # Chapter 5: Loops (Comprehensive)

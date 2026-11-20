@@ -4,6 +4,7 @@ slug: /computer-networks/03-datalink-layer
 title: "Chapter 3: The Data Link Layer"
 sidebar_label: "Chapter 3: The Data Link Layer"
 sidebar_position: 3
+description: "The data link layer (Layer 2) provides reliable, efficient communication between two directly connected nodes. It accepts packets from the network layer"
 ---
 
 # Chapter 3: The Data Link Layer

@@ -1,3 +1,7 @@
+---
+description: "Knowledge Graph RAG (KG-RAG) augments traditional vector retrieval with structured knowledge from knowledge graphs. Vector databases capture semantic"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Knowledge Graph RAG

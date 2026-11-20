@@ -1,3 +1,7 @@
+---
+description: "The answer depends entirely on which distance function you pick. Two data points can be nearest neighbors under one metric and far apart under another"
+---
+
 # Norms and Distances
 
 > Your distance function defines what "similar" means. Choose wrong and everything downstream breaks.

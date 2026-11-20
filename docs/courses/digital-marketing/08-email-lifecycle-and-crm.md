@@ -1,3 +1,7 @@
+---
+description: "Email is the only channel where you own the relationship. A social following is rented: the platform decides who sees your post. A search ranking is"
+---
+
 # Chapter 8 — Email, Lifecycle and CRM
 
 ## Learning Objectives

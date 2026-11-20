@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/23-trending-aiml-platforms/visual-notes
 title: "Visual Notes — Choosing Your AI Stack"
 sidebar_label: "Visual Notes"
 sidebar_position: 298
+description: "One-line answer for interviews: 'Providers grant API access, frameworks orchestrate agents, and ecosystems of tools surround each model.'"
 ---
 
 # Visual Notes — Choosing Your AI Stack

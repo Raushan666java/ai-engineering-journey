@@ -4,6 +4,7 @@ slug: /algorithms/10-dp-trees-grids
 title: "Chapter 10: Trees, Grids & Dynamic Programming"
 sidebar_label: "Chapter 10: Trees, Grids & Dynamic Programming"
 sidebar_position: 10
+description: "Chapter 9: Dynamic Programming — Sequences — DP recurrences for chain structures | Next: Chapter 11: Shortest Paths & MST — Graph algorithms with DP"
 ---
 
 # Chapter 10: Trees, Grids & Dynamic Programming

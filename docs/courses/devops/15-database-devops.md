@@ -1,3 +1,7 @@
+---
+description: "Database as Code applies version control, CI/CD, and automation principles to database schemas. Historically, database changes were manual, scripted by"
+---
+
 # Chapter 15: Database DevOps
 
 > **Previous:** [DevSecOps](./14-devsecops.md) | **Next:** [Container Networking](./16-networking.md)

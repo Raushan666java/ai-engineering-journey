@@ -1,3 +1,7 @@
+---
+description: "Build comprehensive observability for your AI systems — tracing every agent step, tracking costs, monitoring quality metrics, and debugging production"
+---
+
 # Chapter 12 — AI Observability & Debugging
 
 **Duration:** 1.5 weeks, ~18 hours

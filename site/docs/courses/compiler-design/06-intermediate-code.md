@@ -4,6 +4,7 @@ slug: /compiler-design/06-intermediate-code
 title: "Chapter 6: Intermediate Code Generation"
 sidebar_label: "Chapter 6: Intermediate Code Generation"
 sidebar_position: 6
+description: "After completing this chapter, students will be able to: distinguish among abstract syntax trees, postfix notation, and three-address code as intermediate"
 ---
 
 # Chapter 6: Intermediate Code Generation

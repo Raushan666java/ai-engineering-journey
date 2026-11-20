@@ -1,3 +1,7 @@
+---
+description: "By the conclusion of this chapter, the student will be able to: (1) describe major AI application domains spanning healthcare, finance, transportation"
+---
+
 # Chapter 18: Applications of Artificial Intelligence
 
 **Previous:** [Chapter 17: Modern Artificial Intelligence](17-modern-ai.md)

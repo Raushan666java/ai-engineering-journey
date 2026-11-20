@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/06-docker-kubernetes-cloud/02-docker-compose
 title: "Docker Compose — Multi-Container Orchestration"
 sidebar_label: "Docker Compose — Multi-Container Orchestration"
 sidebar_position: 82
+description: "Docker Compose — Multi-Container Orchestration: Containers and cloud platforms are where AI models live in production. Docker packages your model"
 ---
 
 <!-- improved -->

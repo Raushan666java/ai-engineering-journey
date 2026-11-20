@@ -4,6 +4,7 @@ slug: /c-programming/08-functions
 title: "Chapter 8: Functions"
 sidebar_label: "Chapter 8: Functions"
 sidebar_position: 8
+description: "A function is a named, reusable block of code that performs a specific task. Every function has three distinct components: declaration (prototype)"
 ---
 
 # Chapter 8: Functions

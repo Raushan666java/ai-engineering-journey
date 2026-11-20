@@ -4,6 +4,7 @@ slug: /c-programming/07-strings
 title: "Chapter 7: Strings"
 sidebar_label: "Chapter 7: Strings"
 sidebar_position: 7
+description: 'In C, a string is a sequence of characters terminated by a null character ('' 0'', ASCII value 0). There is no dedicated string type - strings are stored in'
 ---
 
 # Chapter 7: Strings

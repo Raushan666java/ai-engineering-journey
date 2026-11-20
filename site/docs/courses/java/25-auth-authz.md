@@ -4,6 +4,7 @@ slug: /java/25-auth-authz
 title: "Authentication & Authorization"
 sidebar_label: "Authentication & Authorization"
 sidebar_position: 25
+description: "Security is not a feature — it is a property of the entire system. In any non-trivial application you must answer two questions about every request: who"
 ---
 
 # Authentication & Authorization

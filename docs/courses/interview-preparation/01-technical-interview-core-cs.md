@@ -1,3 +1,7 @@
+---
+description: "Example violation: Table(StudentID, CourseID, StudentName, Instructor) — StudentName depends only on StudentID, not on the composite key (StudentID"
+---
+
 # Chapter 1: Technical Interview — Core Computer Science Subjects
 
 ## Learning Objectives

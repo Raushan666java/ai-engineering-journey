@@ -4,6 +4,7 @@ slug: /discrete-mathematics/02-logic
 title: "Chapter 2: Logic"
 sidebar_label: "Chapter 2: Logic"
 sidebar_position: 2
+description: "Examples: '2 + 2 = 4' (true). '5 is an even number' (false). 'If it rains, the ground gets wet' (a conditional proposition whose truth depends on the"
 ---
 
 # Chapter 2: Logic

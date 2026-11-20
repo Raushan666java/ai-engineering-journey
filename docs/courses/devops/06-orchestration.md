@@ -1,3 +1,7 @@
+---
+description: "Choosing the right orchestration platform depends on team maturity, scale, and cloud strategy. The following tool compares orchestration platforms across"
+---
+
 # Chapter 6: Orchestration
 
 > **Prev:** [Docker Compose](./06-docker-compose.md)

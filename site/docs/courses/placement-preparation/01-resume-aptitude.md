@@ -4,6 +4,7 @@ slug: /placement-preparation/01-resume-aptitude
 title: "Resume Building, LinkedIn Optimization & Aptitude Crash Course"
 sidebar_label: "Resume Building, LinkedIn Optimization & Aptitude Crash Course"
 sidebar_position: 1
+description: "A[Resume Building] --> B[LinkedIn Profile] B --> C[Aptitude Practice] C --> D[Cover Letter Writing] E --> F[ATS Optimization] F --> G[Ready for"
 ---
 
 # Resume Building, LinkedIn Optimization & Aptitude Crash Course

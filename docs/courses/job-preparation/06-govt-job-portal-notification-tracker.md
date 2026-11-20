@@ -1,3 +1,7 @@
+---
+description: "Government vacancies have strict deadlines, often 2-4 weeks from notification to application close. Missing a deadline means waiting another year for some"
+---
+
 # Government Job Portal & Notification Tracker
 
 ## Learning Objectives

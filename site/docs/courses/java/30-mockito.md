@@ -4,6 +4,7 @@ slug: /java/30-mockito
 title: "Mockito & Mocking Frameworks"
 sidebar_label: "Mockito & Mocking Frameworks"
 sidebar_position: 30
+description: "Mockito is the most widely used mocking framework in the Java ecosystem. It allows you to create test doubles (mocks, spies) that isolate the unit under"
 ---
 
 # Mockito & Mocking Frameworks

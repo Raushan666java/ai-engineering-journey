@@ -1,3 +1,7 @@
+---
+description: "Exam: Graduate Aptitude Test in Engineering — Computer Science (GATE CS) Total Questions: 65 | Duration: 180 minutes | Max Marks: 100 Negative Marking"
+---
+
 # GATE CS — Full-Length Mock Test
 
 > **Exam:** Graduate Aptitude Test in Engineering — Computer Science (GATE CS)  

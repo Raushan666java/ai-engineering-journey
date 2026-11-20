@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'Offline metrics validate before launch; online metrics, tracing and cost watch it in production.'"
+---
+
 # Visual Notes — Evaluation and Observability in One View
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

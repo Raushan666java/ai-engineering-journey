@@ -4,6 +4,7 @@ slug: /artificial-intelligence/02-agents
 title: "Chapter 2: Intelligent Agents"
 sidebar_label: "Chapter 2: Intelligent Agents"
 sidebar_position: 2
+description: "Real-World Analogy: A thermostat and a self-driving car are both agents → but worlds apart in complexity. The thermostat perceives temperature (sensor)"
 ---
 
 # Chapter 2: Intelligent Agents

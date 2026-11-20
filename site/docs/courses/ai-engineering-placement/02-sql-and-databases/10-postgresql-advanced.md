@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/02-sql-and-databases/10-postgresql-advanced
 title: "PostgreSQL Advanced — JSONB, Full-Text Search, Partitioning, Extensions, PL/pgSQL"
 sidebar_label: "PostgreSQL Advanced — JSONB, Full-Text Search, Partitioning, Extensions, PL/pgSQL"
 sidebar_position: 35
+description: "PostgreSQL Advanced — JSONB, Full-Text Search, Partitioning, Extensions, PL/pgSQL: Data is the fuel of AI. SQL and database design skills let you query"
 ---
 
 <!-- improved -->

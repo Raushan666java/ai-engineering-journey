@@ -1,3 +1,7 @@
+---
+description: "The model's first contact with a token id is a row lookup in the token-embedding matrix. The matrix has one row per vocabulary id and one column per model"
+---
+
 # Token and Positional Embeddings
 
 > Ids are integers. The model wants vectors. Two lookup tables sit between them, and the choice of the positional one shapes what the model can learn.

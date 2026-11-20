@@ -1,3 +1,7 @@
+---
+description: "Problem: Given an m x n 2D binary grid of '1' (land) and '0' (water), count the number of islands. An island is surrounded by water and formed by"
+---
+
 # Chapter 13: Amazon SDE — Company-Specific Question Bank
 
 ## Learning Objectives

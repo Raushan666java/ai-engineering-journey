@@ -4,6 +4,7 @@ slug: /database-management-systems/17-distributed-db
 title: "Chapter 17: Distributed Database Systems"
 sidebar_label: "Chapter 17: Distributed Database Systems"
 sidebar_position: 17
+description: "Imagine a retail chain with stores in New York, London, and Tokyo. Each store has its own local inventory database containing products specific to that"
 ---
 
 # Chapter 17: Distributed Database Systems

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/04-git-linux-cli/05-bash-scripting
 title: "CLI Productivity"
 sidebar_label: "CLI Productivity"
 sidebar_position: 62
+description: "CLI productivity tools — aliases, tmux, history expansion, tab completion — dramatically speed up your workflow. AI engineers who master the command line"
 ---
 
 <!-- improved -->

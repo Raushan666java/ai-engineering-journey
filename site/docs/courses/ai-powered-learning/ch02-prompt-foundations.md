@@ -4,6 +4,7 @@ slug: /ai-powered-learning/ch02-prompt-foundations
 title: "Chapter 2: Prompt Foundations"
 sidebar_label: "Chapter 2: Prompt Foundations"
 sidebar_position: 2
+description: "Every AI-powered learning system from Chapter 1 runs on prompts, and most learners use prompts that are too vague to unlock real depth. This chapter"
 ---
 
 # Chapter 2: Prompt Foundations

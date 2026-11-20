@@ -4,6 +4,7 @@ slug: /laravel/11-caching-performance
 title: "Chapter 11: Caching, Performance & Octane"
 sidebar_label: "Chapter 11: Caching, Performance & Octane"
 sidebar_position: 11
+description: "One-Sentence Takeaway: File is simplest for development, Redis is the production workhorse with tag support, and DynamoDB offers managed serverless"
 ---
 
 # Chapter 11: Caching, Performance & Octane

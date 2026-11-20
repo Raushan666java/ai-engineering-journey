@@ -1,3 +1,7 @@
+---
+description: "Krishna now speaks the most intimate chapter of the Gita. He calls it the kingly science and the kingly secret — the greatest of secrets — and he speaks"
+---
+
 # Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret
 
 > "The greatest secret is not a secret at all. It is the one truth so obvious that you have been overlooking it your whole life: everything is divine."

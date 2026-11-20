@@ -1,3 +1,7 @@
+---
+description: 'Geometric Interpretation: $ frac{ partial f}{ partial x}(a,b)$ is the slope of the tangent line to the curve obtained by intersecting $z = f(x,y)$ with'
+---
+
 # Chapter 3: Multivariable Calculus
 
 > **Previous:** [Chapter 2: Single Variable Calculus](02-calculus-i.md) | **Next:** [Chapter 4: Differential Equations](04-differential-equations.md)

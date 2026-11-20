@@ -1,3 +1,7 @@
+---
+description: "'Tyag ka rog sabse gehri bimari hai — kyunki woh sant banne ke naam par jeevan se bhaagna sikhata hai. Krishna nahin chahte tum ghar chhodo; woh chahte"
+---
+
 # अध्याय ५: कर्म संन्यास योग — Tyag nahin, samadrishti chahiye
 
 > **"Tyag ka rog sabse gehri bimari hai — kyunki woh sant banne ke naam par jeevan se bhaagna sikhata hai. Krishna nahin chahte tum ghar chhodo; woh chahte hain tum ghar mein raho, parivaar mein raho, duniya mein raho — aur andar se kisi se chipe na raho. Tyag nahin, samadrishti chahiye."**

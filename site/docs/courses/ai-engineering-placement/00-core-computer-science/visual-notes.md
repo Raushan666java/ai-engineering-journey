@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/00-core-computer-science/visual-notes
 title: "Visual Notes — Core Computer Science"
 sidebar_label: "Visual Notes"
 sidebar_position: 9
+description: "Visual Notes — Core Computer Science: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before"
 ---
 
 # Visual Notes — Core Computer Science

@@ -1,3 +1,7 @@
+---
+description: "Correlation and regression analysis form the statistical backbone for understanding relationships between variables in AI and machine learning"
+---
+
 <!-- improved -->
 # Chapter 04: Correlation & Regression Analysis
 

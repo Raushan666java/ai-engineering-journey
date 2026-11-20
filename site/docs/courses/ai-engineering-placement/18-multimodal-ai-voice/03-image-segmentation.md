@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/18-multimodal-ai-voice/03-image-segmentation
 title: "Image Segmentation"
 sidebar_label: "Image Segmentation"
 sidebar_position: 230
+description: "Image Segmentation: AI is moving beyond text. Computer vision, speech recognition, and multimodal models process images, audio, and video. This module"
 ---
 
 <!-- improved -->

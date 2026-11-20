@@ -1,3 +1,7 @@
+---
+description: "Example shortcut: If someone walks 3 km East, 4 km North, distance from start = √(3²+4²) = 5 km."
+---
+
 # Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics
 
 ## Learning Objectives

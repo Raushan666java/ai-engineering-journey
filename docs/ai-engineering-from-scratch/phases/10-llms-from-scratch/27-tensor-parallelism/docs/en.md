@@ -1,3 +1,7 @@
+---
+description: "A 70B transformer fits on one GPU if you only need to store the weights. But one GPU cannot hold the full activation tensor for a 4096-sequence with batch"
+---
+
 # Tensor Parallelism -- Megatron-LM, Column-wise & Row-wise Splitting
 
 > A 70B transformer fits on one GPU if you only need to store the weights. But one GPU cannot hold the full activation tensor for a 4096-sequence with batch size 8. And one GPU's matmul on an (8192, 8192) weight takes one step. Eight GPUs each computing an (8192, 1024) shard finish the same matmul in one eighth the wall time. This is tensor parallelism: split individual layers across GPUs, compute in parallel, combine via collective communication.

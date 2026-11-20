@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/15-context-compression
 title: "Context Compression for RAG"
 sidebar_label: "Context Compression for RAG"
 sidebar_position: 172
+description: "Retrieval-Augmented Generation retrieves many documents to answer a query. More documents means more tokens. More tokens means higher cost and slower"
 ---
 
 <!-- improved -->

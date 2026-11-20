@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/16-mlops-production/02-prompt-versioning
 title: "Prompt Versioning"
 sidebar_label: "Prompt Versioning"
 sidebar_position: 207
+description: "Prompt Versioning: MLOps bridges the gap between experiment and production. Experiment tracking, CI/CD, model serving, and drift monitoring keep AI"
 ---
 
 <!-- improved -->

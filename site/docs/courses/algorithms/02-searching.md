@@ -4,6 +4,7 @@ slug: /algorithms/02-searching
 title: "Chapter 2: Searching"
 sidebar_label: "Chapter 2: Searching"
 sidebar_position: 2
+description: "Chapter 1: Fundamentals of Algorithm Analysis — Asymptotic notation and recurrence analysis | Next: Chapter 3: Comparison-Based Sorting — From finding"
 ---
 
 # Chapter 2: Searching

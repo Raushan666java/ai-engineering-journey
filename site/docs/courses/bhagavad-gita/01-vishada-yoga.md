@@ -4,6 +4,7 @@ slug: /bhagavad-gita/01-vishada-yoga
 title: "Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior"
 sidebar_label: "Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior"
 sidebar_position: 1
+description: "This is not a chapter about war. It is a chapter about what happens inside a man when everything he believed in stands up in front of him and says: look"
 ---
 
 # Chapter 1: Arjuna Vishada Yoga — The Crisis of the Warrior

@@ -1,3 +1,7 @@
+---
+description: "Automation is the backbone of reliable system administration. Cron jobs schedule repetitive tasks like backups, model retraining, and log rotation. AI"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Cron Automation — Scheduling, Systemd Timers, Backups, Ansible

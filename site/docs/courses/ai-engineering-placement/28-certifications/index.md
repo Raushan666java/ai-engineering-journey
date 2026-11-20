@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/28-certifications
 title: "28 — AI Certifications Guide"
 sidebar_label: "28 — AI Certifications Guide"
 sidebar_position: 337
+description: "Which cloud and ML certifications are worth the fee in the Indian job market, and which are a PDF with no return."
 ---
 
 # 28 — AI Certifications Guide

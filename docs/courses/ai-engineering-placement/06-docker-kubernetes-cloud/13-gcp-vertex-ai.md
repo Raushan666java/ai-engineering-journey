@@ -1,3 +1,7 @@
+---
+description: "Vertex AI is Google Cloud's unified ML platform that combines AutoML, custom training, model deployment, and MLOps. It integrates with BigQuery, Dataflow"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # GCP Vertex AI — Unified ML Platform, AutoML, MLOps

@@ -1,3 +1,7 @@
+---
+description: "The Agent-to-Agent (A2A) protocol is Google's open standard for enabling autonomous agents from different vendors, frameworks, and platforms to"
+---
+
 <!-- improved -->
 # Agent-to-Agent (A2A) Protocol
 

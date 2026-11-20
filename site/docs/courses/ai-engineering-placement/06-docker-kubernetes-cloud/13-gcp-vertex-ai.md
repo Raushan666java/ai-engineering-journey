@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/06-docker-kubernetes-cloud/13-gcp-vertex-ai
 title: "GCP Vertex AI — Unified ML Platform, AutoML, MLOps"
 sidebar_label: "GCP Vertex AI — Unified ML Platform, AutoML, MLOps"
 sidebar_position: 93
+description: "Vertex AI is Google Cloud's unified ML platform that combines AutoML, custom training, model deployment, and MLOps. It integrates with BigQuery, Dataflow"
 ---
 
 <!-- improved -->

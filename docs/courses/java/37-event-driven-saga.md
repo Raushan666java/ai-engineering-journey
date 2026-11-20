@@ -1,3 +1,7 @@
+---
+description: "A domain event is an immutable record of something that happened in the domain that domain experts care about. It represents a fact — not a command"
+---
+
 # Event-Driven Architecture & SAGA
 > **Previous:** [Kafka](36-kafka.md) | **Next:** [Microservices Principles](38-microservices-principles.md)
 

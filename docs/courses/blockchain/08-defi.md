@@ -1,3 +1,7 @@
+---
+description: "DeFi is an ecosystem of financial applications built on top of blockchain networks. It aims to recreate traditional financial services (Lending"
+---
+
 # Chapter 8: Decentralized Finance (DeFi)
 
 > **Previous:** [Chapter 7: Decentralized Applications (dApps)](./07-dapps.md) | **Next:** [Chapter 9: Enterprise Blockchain](./09-enterprise.md)

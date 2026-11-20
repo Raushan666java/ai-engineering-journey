@@ -4,6 +4,7 @@ slug: /system-design/06-distributed-consistency
 title: "Chapter 6: CAP Theorem and Distributed Consistency"
 sidebar_label: "Chapter 6: CAP Theorem and Distributed Consistency"
 sidebar_position: 6
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. The CAP theorem, formalized by Seth Gilbert and Nancy Lynch"
 ---
 
 # Chapter 6: CAP Theorem and Distributed Consistency

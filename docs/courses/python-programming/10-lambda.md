@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: map() and filter() are lazy; list comprehensions often read better. Remember: List comprehensions are often more readable than"
+---
+
 # Chapter 10: Lambda and Functional Programming
 
 

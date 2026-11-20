@@ -1,3 +1,7 @@
+---
+description: "Machine learning fundamentals are the bedrock of every AI engineering role — from building recommendation systems to training production classifiers"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # ML Fundamentals — Supervised, Unsupervised, Bias-Variance

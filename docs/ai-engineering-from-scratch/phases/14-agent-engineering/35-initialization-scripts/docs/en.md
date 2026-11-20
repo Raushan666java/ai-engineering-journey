@@ -1,3 +1,7 @@
+---
+description: "Every session that starts cold pays a tax. The agent reads the same files, retries the same probes, and rediscovers the same paths. An init script pays"
+---
+
 # Initialization Scripts for Agents
 
 > Every session that starts cold pays a tax. The agent reads the same files, retries the same probes, and rediscovers the same paths. An init script pays the tax once and writes the answers into state.

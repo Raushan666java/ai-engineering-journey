@@ -4,6 +4,7 @@ slug: /laravel/html-basics
 title: "HTML Fundamentals"
 sidebar_label: "HTML Fundamentals"
 sidebar_position: 57
+description: "HyperText Markup Language (HTML) is the foundational language of the World Wide Web. It provides the structural skeleton upon which every web page is"
 ---
 
 # HTML Fundamentals

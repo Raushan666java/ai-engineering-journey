@@ -1,3 +1,7 @@
+---
+description: "Notification systems deliver timely information to users across mobile, web, and email. Designing a reliable notification system at scale requires"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Design Notification System — Push, Real-Time, Delivery Guarantees

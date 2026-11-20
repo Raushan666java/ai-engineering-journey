@@ -1,3 +1,7 @@
+---
+description: "Stacks and queues are fundamental LIFO and FIFO data structures. They appear in countless problems from balanced parentheses to BFS traversal. Mastering"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Linked Lists

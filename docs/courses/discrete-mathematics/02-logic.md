@@ -1,3 +1,7 @@
+---
+description: "Examples: '2 + 2 = 4' (true). '5 is an even number' (false). 'If it rains, the ground gets wet' (a conditional proposition whose truth depends on the"
+---
+
 # Chapter 2: Logic
 
 > **Previous:** [Chapter 1: Sets](01-sets.md) | **Next:** [Chapter 3: Predicates and Quantifiers](03-predicates.md)

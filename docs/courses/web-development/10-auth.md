@@ -1,3 +1,7 @@
+---
+description: "Authentication failures should return 401 Unauthorized. Authorization failures (insufficient permissions) should return 403 Forbidden. Never confuse these"
+---
+
 # Chapter 10: Authentication and Authorization
 
 > **Previous:** [09-rest-apis](./09-rest-apis.md) | **Next:** [11-databases-web](./11-databases-web.md)

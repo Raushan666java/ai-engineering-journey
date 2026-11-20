@@ -1,3 +1,7 @@
+---
+description: "The Global Interpreter Lock (GIL) is a mutex in CPython that prevents multiple threads from executing Python bytecode simultaneously. It exists because"
+---
+
 # Chapter 21: Concurrency, Multiprocessing & Parallelism
 
 

@@ -1,3 +1,7 @@
+---
+description: "Prereq: Chapters 3 (Network Security), 5 (Web Security), 2 (Cryptography); familiarity with TCP/IP, HTTP, DNS, and basic encryption concepts. Target"
+---
+
 # Chapter 18: Digital Privacy, Anonymity & OSINT
 
 > **Prereq:** Chapters 3 (Network Security), 5 (Web Security), 2 (Cryptography); familiarity with TCP/IP, HTTP, DNS, and basic encryption concepts.

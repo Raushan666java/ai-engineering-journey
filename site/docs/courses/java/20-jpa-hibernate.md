@@ -4,6 +4,7 @@ slug: /java/20-jpa-hibernate
 title: "JPA & Hibernate Deep Dive"
 sidebar_label: "JPA & Hibernate Deep Dive"
 sidebar_position: 20
+description: "JPA (Jakarta Persistence API) is the standard Java specification for object-relational mapping. Hibernate is the most popular implementation. Entities are"
 ---
 
 > **Previous:** [JDBC/JOOQ](./19-jdbc-jooq.md) | **Next:** [Spring Data JPA](./21-spring-data-jpa.md)

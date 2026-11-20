@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'Clients hit a load balancer → gateway → cache → services → data, then a queue absorbs spikes and workers drain it.'"
+---
+
 # Visual Notes — One Request, the Full Ride
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

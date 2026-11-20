@@ -4,6 +4,7 @@ slug: /software-engineering/03-system-modeling
 title: "System Modelling"
 sidebar_label: "System Modelling"
 sidebar_position: 3
+description: "✅ After completing this chapter, the student will be able to: - Explain the purpose of system modelling from multiple perspectives - Construct UML use"
 ---
 
 # System Modelling

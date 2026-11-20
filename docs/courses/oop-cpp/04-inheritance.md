@@ -1,3 +1,7 @@
+---
+description: "Inheritance lets a derived class reuse and extend a base class's interface and implementation, forming an is-a relationship that models real-world"
+---
+
 # Chapter 4: Inheritance
 
 > **Previous:** [Constructors](./03-constructors.md) | **Next:** [Polymorphism](./05-polymorphism.md)

@@ -1,3 +1,7 @@
+---
+description: "Learning alone is limited. Learning with others compounds. This chapter covers how to leverage social dynamics — accountability groups, online"
+---
+
 # Chapter 14: Social Learning & Communities
 
 > **Prerequisites:** [Chapter 6: Procrastination, Habits & Deep Work](./ch-06-procrastination-habits-deep-work.md), [Chapter 12: Teaching & Knowledge Transfer](./ch-12-teaching-knowledge-transfer.md)

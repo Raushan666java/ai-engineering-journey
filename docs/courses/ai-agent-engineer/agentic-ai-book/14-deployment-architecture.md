@@ -1,3 +1,7 @@
+---
+description: "For anything beyond a toy demo, move the LangGraph checkpointer from SQLite to Postgres (langgraph-checkpoint-postgres) so multiple API workers/processes"
+---
+
 ## Chapter 14: Deployment Architecture
 
 ### 14.1 Wrapping the Agent in an API

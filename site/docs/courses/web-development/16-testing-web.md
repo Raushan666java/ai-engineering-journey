@@ -4,6 +4,7 @@ slug: /web-development/16-testing-web
 title: "Chapter 16: Testing"
 sidebar_label: "Chapter 16: Testing"
 sidebar_position: 16
+description: "Testing implementation details (component state, internal methods, class names) creates brittle tests that break on refactoring. Test behavior, not"
 ---
 
 # Chapter 16: Testing

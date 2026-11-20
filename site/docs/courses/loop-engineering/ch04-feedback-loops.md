@@ -4,6 +4,7 @@ slug: /loop-engineering/ch04-feedback-loops
 title: "Chapter 4: Feedback Loops"
 sidebar_label: "Chapter 4: Feedback Loops"
 sidebar_position: 4
+description: "An eval-driven loop is the most general form of agentic feedback. The agent produces an output, evaluates it against a set of criteria, adjusts its"
 ---
 
 # Chapter 4: Feedback Loops

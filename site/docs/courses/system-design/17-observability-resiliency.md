@@ -4,6 +4,7 @@ slug: /system-design/17-observability-resiliency
 title: "Chapter 17: Observability and Resiliency Patterns"
 sidebar_label: "Chapter 17: Observability and Resiliency Patterns"
 sidebar_position: 17
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Observability is the ability to understand a system's"
 ---
 
 # Chapter 17: Observability and Resiliency Patterns

@@ -4,6 +4,7 @@ slug: /laravel/22-case-study-ecommerce
 title: "Chapter 22: Case Study — SaaS E-Commerce Platform"
 sidebar_label: "Chapter 22: Case Study — SaaS E-Commerce Platform"
 sidebar_position: 22
+description: "Before writing a single line of code, we must derive hard requirements from the business problem. Our client operates a white-label e-commerce platform"
 ---
 
 # Chapter 22: Case Study — SaaS E-Commerce Platform

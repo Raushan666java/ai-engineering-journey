@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/29-research-reading/01-reading-research-papers
 title: "Reading Research Papers"
 sidebar_label: "Reading Research Papers"
 sidebar_position: 339
+description: "AI research moves fast. New papers appear on arXiv daily — over 200 per day in machine learning alone. The ability to read, understand, and critically"
 ---
 
 <!-- improved -->

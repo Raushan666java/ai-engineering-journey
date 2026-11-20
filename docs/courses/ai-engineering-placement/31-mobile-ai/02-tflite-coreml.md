@@ -1,3 +1,7 @@
+---
+description: "Mobile AI is transforming how users interact with intelligent applications. Running models on-device eliminates latency, preserves privacy, and enables"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # 02 — TensorFlow Lite & CoreML

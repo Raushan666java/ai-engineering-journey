@@ -1,3 +1,7 @@
+---
+description: "The session is going to end. The work is not. The handoff packet is the artifact that turns 'the agent worked for an hour' into 'the next session is"
+---
+
 # Multi-Session Handoff
 
 > The session is going to end. The work is not. The handoff packet is the artifact that turns "the agent worked for an hour" into "the next session is productive in the first minute." Build it on purpose, not as an afterthought.

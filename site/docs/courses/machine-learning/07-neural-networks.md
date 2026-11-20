@@ -4,6 +4,7 @@ slug: /machine-learning/07-neural-networks
 title: "Chapter 7: Neural Networks"
 sidebar_label: "Chapter 7: Neural Networks"
 sidebar_position: 7
+description: "An artificial neuron is the fundamental building block of a neural network. It takes several inputs, applies a weight to each, sums them with a bias, and"
 ---
 
 # Chapter 7: Neural Networks

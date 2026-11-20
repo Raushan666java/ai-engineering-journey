@@ -1,3 +1,7 @@
+---
+description: "2024-2026 redefined voice AI. Moshi ships a single model that listens and speaks simultaneously at 200 ms latency. Hibiki does speech-to-speech"
+---
+
 # Streaming Speech-to-Speech — Moshi, Hibiki, and Full-Duplex Dialogue
 
 > 2024-2026 redefined voice AI. Moshi ships a single model that listens and speaks simultaneously at 200 ms latency. Hibiki does speech-to-speech translation chunk-by-chunk. Both abandon the ASR → LLM → TTS pipeline for a unified full-duplex architecture over Mimi codec tokens. This is the new reference design.

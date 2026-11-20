@@ -1,3 +1,7 @@
+---
+description: "A[Virtual Memory Concept] --> B[Demand Paging] B --> C[Page Fault Handling] D --> E[Page Replacement Algorithms] E --> F[Frame Allocation] G --> H[Working"
+---
+
 # Chapter 9: Virtual Memory
 
 **<< [Memory Management](./08-memory-management.md)** | [**Next: File Systems**](./10-file-systems.md) >>

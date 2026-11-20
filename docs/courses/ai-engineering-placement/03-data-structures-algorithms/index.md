@@ -1,3 +1,7 @@
+---
+description: "The DSA patterns that recur in interviews — arrays, graphs, dynamic programming, heaps — with complexity analysis and practice problems."
+---
+
 # 03 — Data Structures & Algorithms
 
 > **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)

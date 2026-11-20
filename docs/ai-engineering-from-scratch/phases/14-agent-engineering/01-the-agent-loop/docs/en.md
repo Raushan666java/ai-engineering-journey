@@ -1,3 +1,7 @@
+---
+description: "Every agent in 2026 — Claude Code, Cursor, Devin, Operator — is a variant of the ReAct loop from 2022. Reasoning tokens interleave with tool calls and"
+---
+
 # The Agent Loop: Observe, Think, Act
 
 > Every agent in 2026 — Claude Code, Cursor, Devin, Operator — is a variant of the ReAct loop from 2022. Reasoning tokens interleave with tool calls and observations until a stop condition fires. Learn this loop cold before touching any framework.

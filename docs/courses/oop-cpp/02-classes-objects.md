@@ -1,3 +1,7 @@
+---
+description: "A single blueprint can produce hundreds of identical buildings. Each building is independent — if you change the wallpaper in one building, the others are"
+---
+
 # Chapter 2: Classes and Objects
 
 > **Previous:** [Introduction](./01-introduction.md) | **Next:** [Constructors](./03-constructors.md)

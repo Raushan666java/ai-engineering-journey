@@ -1,3 +1,7 @@
+---
+description: "Master the universal meta-skill: accelerate learning across every course in this repository. 18 chapters · 340 Q&As · 18 self-assessment quizzes · Mermaid"
+---
+
 # Learning How to Learn
 
 > **Master the universal meta-skill: accelerate learning across every course in this repository.**

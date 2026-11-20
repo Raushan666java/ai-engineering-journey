@@ -1,3 +1,7 @@
+---
+description: "We are committed to making participation in this project a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity"
+---
+
 # Code of Conduct
 
 ## Our Pledge

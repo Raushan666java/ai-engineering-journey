@@ -1,3 +1,7 @@
+---
+description: "A naive autoregressive decoder does O(N²) work to generate N tokens: at each step it recomputes attention over the full prefix. For a 4K-token response"
+---
+
 # KV Cache, Flash Attention & Inference Optimization
 
 > Training is parallel and FLOP-bound. Inference is serial and memory-bound. Different bottleneck, different tricks.

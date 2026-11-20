@@ -1,3 +1,7 @@
+---
+description: "Sequence Models — RNN, LSTM, GRU, Bidirectional, Encoder-Decoder: Natural language processing is how machines understand human text. Transformers"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Sequence Models — RNN, LSTM, GRU, Bidirectional, Encoder-Decoder

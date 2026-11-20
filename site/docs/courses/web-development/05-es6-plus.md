@@ -4,6 +4,7 @@ slug: /web-development/05-es6-plus
 title: "Chapter 5 — ES6+ JavaScript"
 sidebar_label: "Chapter 5 — ES6+ JavaScript"
 sidebar_position: 5
+description: "Chapter 5 — ES6+ JavaScript: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = [] private maxConcurrency"
 ---
 
 # Chapter 5 — ES6+ JavaScript

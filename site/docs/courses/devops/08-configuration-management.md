@@ -4,6 +4,7 @@ slug: /devops/08-configuration-management
 title: "Chapter 8: Configuration Management"
 sidebar_label: "Chapter 8: Configuration Management"
 sidebar_position: 14
+description: "Configuration management (CM) is the practice of systematically managing and maintaining the state of systems and software in a consistent, desired state"
 ---
 
 # Chapter 8: Configuration Management

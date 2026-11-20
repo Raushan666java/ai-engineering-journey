@@ -4,6 +4,7 @@ slug: /learning-how-to-learn-practical/ch-10-interview-prep-workflow
 title: "Chapter 10: Interview Preparation Workflow"
 sidebar_label: "Chapter 10: Interview Preparation Workflow"
 sidebar_position: 11
+description: "As you progress through phases, shift time toward weak areas. If your mocks show DSA is strong but system design is weak, shift 3 hours from DSA to design."
 ---
 
 # Chapter 10: Interview Preparation Workflow

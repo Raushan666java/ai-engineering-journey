@@ -1,3 +1,7 @@
+---
+description: "By the conclusion of this chapter, the student will be able to: (1) describe the hardware components of a robotic system; (2) implement Monte Carlo"
+---
+
 # Chapter 14: Robotics
 
 **Previous:** [Chapter 13: Computer Vision](13-computer-vision.md) | **Next:** [Chapter 15: Ethics of AI](15-ethics-ai.md)

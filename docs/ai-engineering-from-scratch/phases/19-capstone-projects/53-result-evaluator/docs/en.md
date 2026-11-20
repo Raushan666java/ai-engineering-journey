@@ -1,3 +1,7 @@
+---
+description: "The runner produced numbers. The evaluator decides whether those numbers are an improvement, a regression, or noise. Build the verdict path that turns"
+---
+
 # Result Evaluator
 
 > The runner produced numbers. The evaluator decides whether those numbers are an improvement, a regression, or noise. Build the verdict path that turns metrics into a one line conclusion.

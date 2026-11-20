@@ -4,6 +4,7 @@ slug: /artificial-intelligence/16-expert-systems
 title: "Chapter 16: Expert Systems"
 sidebar_label: "Chapter 16: Expert Systems"
 sidebar_position: 24
+description: "By the conclusion of this chapter, the student will be able to: (1) describe the architecture of rule-based expert systems; (2) explain the reasoning"
 ---
 
 # Chapter 16: Expert Systems

@@ -1,3 +1,7 @@
+---
+description: "The architecture that changed everything. Understand every layer."
+---
+
 # Phase 7: Transformers Deep Dive
 
 > The architecture that changed everything. Understand every layer.

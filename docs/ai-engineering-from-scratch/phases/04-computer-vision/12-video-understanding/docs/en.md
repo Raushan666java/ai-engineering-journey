@@ -1,3 +1,7 @@
+---
+description: "A video is a sequence of images plus the physics that connects them. Every video model either treats time as an extra axis (3D conv), a sequence to attend"
+---
+
 # Video Understanding — Temporal Modeling
 
 > A video is a sequence of images plus the physics that connects them. Every video model either treats time as an extra axis (3D conv), a sequence to attend over (transformer), or a feature to extract once and pool (2D+pool).

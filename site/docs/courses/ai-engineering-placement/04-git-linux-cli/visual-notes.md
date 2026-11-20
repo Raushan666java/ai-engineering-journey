@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/04-git-linux-cli/visual-notes
 title: "Visual Notes — Git & Linux CLI"
 sidebar_label: "Visual Notes"
 sidebar_position: 68
+description: "One-line answer for interviews: 'Git is a snapshot graph; I move changes from the working tree through the index to commits, and merge/rebase to integrate"
 ---
 
 # Visual Notes — Git & Linux CLI

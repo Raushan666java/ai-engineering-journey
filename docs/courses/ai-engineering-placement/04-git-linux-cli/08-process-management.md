@@ -1,3 +1,7 @@
+---
+description: "Process management is essential for AI engineers who run resource-intensive training jobs, manage model serving, and monitor system health. Understanding"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Process Management — Monitoring, Signals, Resource Control

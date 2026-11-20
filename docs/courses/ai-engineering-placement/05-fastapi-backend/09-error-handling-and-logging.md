@@ -1,3 +1,7 @@
+---
+description: "Error handling and logging: FastAPI is the modern Python framework for building AI APIs. Its async support, automatic documentation, and type safety make"
+---
+
 ﻿# Error handling and logging
 <!-- Clear Language: Keep sentences under 50 words -->
 # Error handling and logging

@@ -1,3 +1,7 @@
+---
+description: "This chapter covers common interview questions for Laravel developer roles at HR technology companies, recruitment platforms, and people-operations SaaS"
+---
+
 # Chapter 43: HR & Recruitment → Interview Q&A
 
 > **Previous:** [Logistics & Supply Chain — Interview Q&A](./42-interview-logistics.md) | **Next:** [Marketing & Advertising — Interview Q&A](./44-interview-marketing.md)

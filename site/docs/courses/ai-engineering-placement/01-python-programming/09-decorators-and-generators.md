@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming/09-decorators-and-generato
 title: "Decorators & Generators — Higher-Order Functions, yield, itertools"
 sidebar_label: "Decorators & Generators — Higher-Order Functions, yield, itertools"
 sidebar_position: 18
+description: "Decorators & Generators — Higher-Order Functions, yield, itertools: Python is the lingua franca of AI engineering. Mastering its syntax, data structures"
 ---
 
 <!-- improved -->

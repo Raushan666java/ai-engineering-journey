@@ -1,3 +1,7 @@
+---
+description: "✅ After completing this chapter, the student will be able to: - Differentiate between a software process and a process model - Describe the activities"
+---
+
 # Software Process Models
 
 ## Learning Objectives

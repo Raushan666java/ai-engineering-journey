@@ -4,6 +4,7 @@ slug: /modern-ai-engineering/02-data-engineering-for-ai
 title: "Chapter 2: Data Engineering for AI"
 sidebar_label: "Chapter 2: Data Engineering for AI"
 sidebar_position: 2
+description: "The most widely cited lesson from production AI systems is that data quality matters more than model choice. A 2023 survey of AI practitioners found that"
 ---
 
 # Chapter 2: Data Engineering for AI

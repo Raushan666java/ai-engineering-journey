@@ -1,3 +1,7 @@
+---
+description: "Operational Technology (OT) refers to hardware and software that detects or causes a change in physical processes through direct monitoring and control of"
+---
+
 # Chapter 15: OT/ICS & SCADA Security
 
 **Next:** [Chapter 16: Supply Chain & CI/CD Security](./16-supply-chain-cicd.md)

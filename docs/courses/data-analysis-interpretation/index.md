@@ -1,3 +1,7 @@
+---
+description: "This course covers 5 comprehensive chapters that build from fundamental tabular data interpretation through advanced mixed-data problem solving. Each"
+---
+
 # Data Analysis & Interpretation
 
 > Master the art of interpreting data from tables, graphs, charts, and mixed formats — essential for banking, SSC, UPSC, and management aptitude exams.

@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_14_The_Developer_Toolkit/02_The_Engi
 title: "⌨️ The Engineering Environment"
 sidebar_label: "⌨️ The Engineering Environment"
 sidebar_position: 2
+description: "Once the planning is complete and the Kanban board is populated, you move into the execution phase. Your local development environment is your forge. If"
 ---
 # ⌨️ The Engineering Environment
 

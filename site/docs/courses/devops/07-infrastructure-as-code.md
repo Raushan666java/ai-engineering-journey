@@ -4,6 +4,7 @@ slug: /devops/07-infrastructure-as-code
 title: "Chapter 7: Infrastructure as Code"
 sidebar_label: "Chapter 7: Infrastructure as Code"
 sidebar_position: 12
+description: "Infrastructure as Code (IaC) is the practice of managing and provisioning infrastructure through machine-readable definition files, rather than manual"
 ---
 
 # Chapter 7: Infrastructure as Code

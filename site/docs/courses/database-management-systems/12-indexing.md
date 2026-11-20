@@ -4,6 +4,7 @@ slug: /database-management-systems/12-indexing
 title: "Chapter 12: Indexing"
 sidebar_label: "Chapter 12: Indexing"
 sidebar_position: 12
+description: "Real-World Analogy: A book's index. Without an index, finding 'database indexing' in a 1000-page book means reading every page (full scan). With the index"
 ---
 
 # Chapter 12: Indexing

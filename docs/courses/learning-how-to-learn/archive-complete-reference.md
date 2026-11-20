@@ -1,3 +1,7 @@
+---
+description: "Universal meta-skill → accelerate learning across all 27 courses in this repository. Every technique is demonstrated with worked examples from actual"
+---
+
 # Learning How to Learn
 
 > **Universal meta-skill → accelerate learning across all 27 courses in this repository.**

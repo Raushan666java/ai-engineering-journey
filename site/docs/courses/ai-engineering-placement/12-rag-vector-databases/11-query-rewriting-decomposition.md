@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/11-query-rewriting-decom
 title: "Query Rewriting & Decomposition for RAG"
 sidebar_label: "Query Rewriting & Decomposition for RAG"
 sidebar_position: 168
+description: "Query Rewriting & Decomposition for RAG: Retrieval-Augmented Generation lets LLMs answer questions about your private data. Vector databases store"
 ---
 
 <!-- improved -->

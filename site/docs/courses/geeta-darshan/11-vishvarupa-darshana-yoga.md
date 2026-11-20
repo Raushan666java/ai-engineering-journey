@@ -4,6 +4,7 @@ slug: /geeta-darshan/11-vishvarupa-darshana-yoga
 title: "अध्याय ११: विश्वरूप दर्शन योग — Ek jhalak — sab kuch ek ho gaya"
 sidebar_label: "अध्याय ११: विश्वरूप दर्शन योग — Ek jhalak — sab kuch ek ho gaya"
 sidebar_position: 12
+description: "'Vishvarupa koi chamatkaar nahin hai — woh anubhav hai. Har meditator ko ek din woh jhalak milti hai jab duniya alag-alag cheezon se nahin, ek jheel si"
 ---
 
 # अध्याय ११: विश्वरूप दर्शन योग — Ek jhalak — sab kuch ek ho gaya

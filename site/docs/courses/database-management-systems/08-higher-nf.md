@@ -4,6 +4,7 @@ slug: /database-management-systems/08-higher-nf
 title: "Chapter 8: Higher Normal Forms and Denormalization"
 sidebar_label: "Chapter 8: Higher Normal Forms and Denormalization"
 sidebar_position: 8
+description: "One-Sentence Takeaway: Beyond BCNF, 4NF and 5NF handle exotic dependencies -- and denormalization is a deliberate performance trade-off, not an excuse to"
 ---
 
 # Chapter 8: Higher Normal Forms and Denormalization

@@ -4,6 +4,7 @@ slug: /loop-engineering/ch08-multi-agent-loops
 title: "Chapter 8: Multi-Agent Loops"
 sidebar_label: "Chapter 8: Multi-Agent Loops"
 sidebar_position: 8
+description: "Debate loops simulate structured argumentation between agents. They produce higher-quality reasoning than single-agent approaches by forcing each agent to"
 ---
 
 # Chapter 8: Multi-Agent Loops

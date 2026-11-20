@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_07_Fixing_Syntax_Forgetting/02_The_N
 title: "✍️ The Never Copy Law"
 sidebar_label: "✍️ The Never Copy Law"
 sidebar_position: 2
+description: "We are all guilty of it. You are deep in the zone, trying to finish a complex feature. You forget the exact syntax for a regex pattern or how to chain a"
 ---
 # ✍️ The Never Copy Law
 

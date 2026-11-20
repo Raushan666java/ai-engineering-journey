@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: Tries provide O(L) string operations independent of dictionary size and excel at prefix matching where hash tables and BSTs fall"
+---
+
 # Chapter 16: Trie (Prefix Tree)
 
 **Prev:** [Chapter 15: B-Trees and B+ Trees](15-b-trees.md) | **Next:** [Chapter 17: Segment Tree and Fenwick Tree](17-segment-tree.md)

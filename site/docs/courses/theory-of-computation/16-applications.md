@@ -4,6 +4,7 @@ slug: /theory-of-computation/16-applications
 title: "Chapter 16: Applications of Automata Theory"
 sidebar_label: "Chapter 16: Applications of Automata Theory"
 sidebar_position: 16
+description: "The most widespread application of finite automata is lexical analysis (lexing) in compilers. A lexer converts a stream of characters into a stream of"
 ---
 
 # Chapter 16: Applications of Automata Theory

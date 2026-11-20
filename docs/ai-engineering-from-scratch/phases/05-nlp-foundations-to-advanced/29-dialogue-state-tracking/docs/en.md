@@ -1,3 +1,7 @@
+---
+description: "'I want a cheap restaurant in the north... actually make it moderate... and add Italian.' Three turns, three state updates. DST keeps the slot-value dict"
+---
+
 # Dialogue State Tracking
 
 > "I want a cheap restaurant in the north... actually make it moderate... and add Italian." Three turns, three state updates. DST keeps the slot-value dict in sync so the booking works.

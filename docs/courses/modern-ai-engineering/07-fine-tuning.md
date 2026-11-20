@@ -1,3 +1,7 @@
+---
+description: "By the end of this chapter, you will be able to: - Decide when fine-tuning is appropriate versus prompting or RAG - Differentiate full fine-tuning from"
+---
+
 # Chapter 7: Fine-Tuning
 
 > **Learning Objectives**

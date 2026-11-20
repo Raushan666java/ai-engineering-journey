@@ -1,3 +1,7 @@
+---
+description: "Data Interpretation (DI) is a major component of IBPS SO Quantitative Aptitude. In IBPS SO Prelims, 5–10 questions come from DI. The data is presented in"
+---
+
 # Chapter 3: Data Interpretation — Table DI, Bar/Line Charts, Pie Charts, Caselets, Mixed Graphs
 
 ## Learning Objectives

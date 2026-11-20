@@ -4,6 +4,7 @@ slug: /geeta-darshan/15-purushottama-yoga
 title: "अध्याय १५: पुरुषोत्तम योग — \"Sansara ka ped — kaato isko kulhaari se\""
 sidebar_label: "अध्याय १५: पुरुषोत्तम योग — \"Sansara ka ped — kaato isko kulhaari se\""
 sidebar_position: 16
+description: "'Sansara ka ped ulta hai — jad upar hai, aur shakhaayen neeche latakti hain. Yehi ped tumhara jeevan hai. Aur is ped ko kaatne ke liye ek hi kulhaari"
 ---
 
 # अध्याय १५: पुरुषोत्तम योग — "Sansara ka ped — kaato isko kulhaari se"

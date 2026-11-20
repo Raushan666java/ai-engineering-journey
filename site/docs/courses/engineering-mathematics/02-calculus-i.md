@@ -4,6 +4,7 @@ slug: /engineering-mathematics/02-calculus-i
 title: "Chapter 2: Single Variable Calculus"
 sidebar_label: "Chapter 2: Single Variable Calculus"
 sidebar_position: 2
+description: 'Formal ($ epsilon$-$ delta$) Definition: $ lim_{x to a} f(x) = L$ if for every $ epsilon > 0$, there exists $ delta > 0$ such that $0 &lt; |x - a| <'
 ---
 
 # Chapter 2: Single Variable Calculus

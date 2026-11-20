@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/03-phase2-llm-rag-theory
 title: "Phase 2 — LLM Fundamentals + RAG Theory"
 sidebar_label: "Phase 2 — LLM Fundamentals + RAG Theory"
 sidebar_position: 4
+description: "Understand embeddings, vector search, chunking strategies, and RAG architecture well enough to defend every design decision in a technical interview"
 ---
 
 # Phase 2 — LLM Fundamentals + RAG Theory

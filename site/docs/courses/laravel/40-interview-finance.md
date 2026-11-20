@@ -4,6 +4,7 @@ slug: /laravel/40-interview-finance
 title: "Chapter 40: Finance & FinTech Interview Q&A"
 sidebar_label: "Chapter 40: Finance & FinTech Interview Q&A"
 sidebar_position: 40
+description: "Part IX → Interview Preparation. Common interview questions for Laravel developer roles in fintech and financial services, covering PCI-DSS compliance"
 ---
 
 # Chapter 40: Finance & FinTech Interview Q&A

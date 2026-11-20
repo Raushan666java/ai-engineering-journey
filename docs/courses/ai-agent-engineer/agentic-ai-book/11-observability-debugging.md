@@ -1,3 +1,7 @@
+---
+description: "A traditional bug: you can step through deterministic code and know exactly why line 47 produced the wrong output. An agent bug: the model made a"
+---
+
 # Part IV — Production
 
 ## Chapter 11: Observability & Debugging Agents

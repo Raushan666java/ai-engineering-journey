@@ -1,3 +1,7 @@
+---
+description: "Competitive programming (CP) is the sport of writing correct and efficient code under time pressure. For an AI Engineer, CP is not just about winning"
+---
+
 <!-- improved -->
 # 01 — Competitive Programming Strategy for AI Engineers
 

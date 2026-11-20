@@ -4,6 +4,7 @@ slug: /compiler-design/12-dfa
 title: "Chapter 12: Data-Flow Analysis"
 sidebar_label: "Chapter 12: Data-Flow Analysis"
 sidebar_position: 12
+description: "After completing this chapter, students will be able to: formulate data-flow equations for reaching definitions, live variables, and available"
 ---
 
 # Chapter 12: Data-Flow Analysis

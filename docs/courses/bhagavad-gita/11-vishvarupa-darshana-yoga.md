@@ -1,3 +1,7 @@
+---
+description: "Arjuna has been listening for ten chapters. He has heard about the unborn, the beginningless, the source of all. His mind is convinced, his heart is in"
+---
+
 ﻿# Chapter 11: Vishvarupa Darshana Yoga — The Whole Universe as One Body
 
 > "When the one becomes visible as the all, the small self trembles — and in that trembling, the great self is born."

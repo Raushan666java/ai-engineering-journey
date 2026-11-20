@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/ch-06-procrastination-habits-deep-work
 title: "Chapter 6: Procrastination, Habits & Deep Work"
 sidebar_label: "Chapter 6: Procrastination, Habits & Deep Work"
 sidebar_position: 7
+description: "Understanding why you procrastinate — and what to do about it — is the single highest-leverage skill in learning. 20 Q&As · Practical frameworks grounded"
 ---
 
 # Chapter 6: Procrastination, Habits & Deep Work

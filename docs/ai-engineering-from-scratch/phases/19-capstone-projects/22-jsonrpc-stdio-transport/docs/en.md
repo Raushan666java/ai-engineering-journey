@@ -1,3 +1,7 @@
+---
+description: "A coding agent in 2026 talks to maybe twelve tool servers in a single session. Each server is a separate process or a remote endpoint. The wire format has"
+---
+
 # JSON-RPC 2.0 Over Newline-Delimited Stdio
 
 > The transport between a model client and a tool server is JSON-RPC over stdio. Hand-rolling it once teaches you what every framing layer is paying for.

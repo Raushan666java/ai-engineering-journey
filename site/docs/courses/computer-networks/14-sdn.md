@@ -4,6 +4,7 @@ slug: /computer-networks/14-sdn
 title: "Chapter 14: Software-Defined Networking"
 sidebar_label: "Chapter 14: Software-Defined Networking"
 sidebar_position: 14
+description: "Traditional network devices integrate the control plane (routing, signaling) and data plane (packet forwarding) on the same hardware. The control plane"
 ---
 
 # Chapter 14: Software-Defined Networking

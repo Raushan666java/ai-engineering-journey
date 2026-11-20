@@ -1,3 +1,7 @@
+---
+description: "A comprehensive collection of full-length mock tests for India's top government recruitment examinations. Each test is designed to mirror the actual exam"
+---
+
 ﻿---
 id: index
 slug: /mock-tests

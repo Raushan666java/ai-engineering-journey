@@ -1,3 +1,7 @@
+---
+description: "AI teams often ship models with 99% accuracy that users abandon. High model performance does not guarantee product success. This chapter teaches you to"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # 04 — AI Product Metrics & KPIs

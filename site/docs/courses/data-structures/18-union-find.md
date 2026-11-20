@@ -4,6 +4,7 @@ slug: /data-structures/18-union-find
 title: "Chapter 18: Union-Find (Disjoint Set Union)"
 sidebar_label: "Chapter 18: Union-Find (Disjoint Set Union)"
 sidebar_position: 18
+description: "Imagine you walk into a party with 100 people you've never met. You want to know: are these two people in the same social circle? Each time someone"
 ---
 
 # Chapter 18: Union-Find (Disjoint Set Union)

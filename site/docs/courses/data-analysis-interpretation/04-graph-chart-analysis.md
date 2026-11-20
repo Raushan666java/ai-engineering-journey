@@ -4,6 +4,7 @@ slug: /data-analysis-interpretation/04-graph-chart-analysis
 title: "Chapter 4: Graph and Chart Analysis"
 sidebar_label: "Chapter 4: Graph and Chart Analysis"
 sidebar_position: 4
+description: "A radar chart displays multivariate data on axes starting from the same point. Each axis represents a variable, and values are plotted along each axis"
 ---
 
 # Chapter 4: Graph and Chart Analysis

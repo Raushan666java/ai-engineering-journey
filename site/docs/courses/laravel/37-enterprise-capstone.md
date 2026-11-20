@@ -4,6 +4,7 @@ slug: /laravel/37-enterprise-capstone
 title: "Chapter 37: Enterprise Capstone → Multi-Agent Platform"
 sidebar_label: "Chapter 37: Enterprise Capstone → Multi-Agent Platform"
 sidebar_position: 37
+description: "Chapter 37: Enterprise Capstone → Multi-Agent Platform: One-Sentence Takeaway: Theory is the foundation — master it before moving to examples and"
 ---
 
 # Chapter 37: Enterprise Capstone → Multi-Agent Platform

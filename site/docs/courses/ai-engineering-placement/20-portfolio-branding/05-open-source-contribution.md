@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/20-portfolio-branding/05-open-source-contributio
 title: "Open Source Contribution"
 sidebar_label: "Open Source Contribution"
 sidebar_position: 247
+description: "Open Source Contribution: Your portfolio is your proof of skills. GitHub profiles, technical blogs, and LinkedIn optimization help you stand out. This"
 ---
 
 <!-- improved -->

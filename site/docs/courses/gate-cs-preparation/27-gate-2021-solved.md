@@ -1,9 +1,10 @@
 ---
 id: 27-gate-2021-solved
 slug: /gate-cs-preparation/27-gate-2021-solved
-title: "27 Gate 2021 Solved"
-sidebar_label: "27 Gate 2021 Solved"
+title: "27-gate-2021-solved"
+sidebar_label: "27-gate-2021-solved"
 sidebar_position: 24
+description: "A car travels 60 km at 40 km/h and returns at 60 km/h. Average speed for the round trip is:"
 ---
 
 ﻿# GATE CS 2021 Solved Paper
@@ -56,7 +57,6 @@ sidebar_position: 24
 ## Section A: General Aptitude (15 marks)
 
 ### Q1 [1 Mark] — Numerical Ability
-
 A car travels 60 km at 40 km/h and returns at 60 km/h. Average speed for the round trip is:
 
 (A) 44 km/h  
@@ -82,7 +82,6 @@ console.log(avgSpeed(40, 60)); // 48
 </details>
 
 ### Q2 [1 Mark] — Numerical Ability
-
 If x - 1/x = 3, what is x² + 1/x²?
 
 (A) 7  
@@ -108,7 +107,6 @@ console.log(sumOfSquares(3)); // 11
 </details>
 
 ### Q3 [1 Mark] — Verbal Ability
-
 Identify the sentence type: "Although it rained, we went for a walk."
 
 (A) Simple  
@@ -127,7 +125,6 @@ Identify the sentence type: "Although it rained, we went for a walk."
 </details>
 
 ### Q4 [1 Mark] — Logical Reasoning
-
 If January 1, 2021 was Friday, what day was January 1, 2022?
 
 (A) Friday  
@@ -155,7 +152,6 @@ console.log(dayOfYear(2021), dayOfYear(2022)); // Friday, Saturday
 </details>
 
 ### Q5 [1 Mark] — Numerical Ability
-
 A shop offers 20% discount on marked price and still gains 20%. The marked price is what percent above cost?
 
 (A) 40%  
@@ -184,7 +180,6 @@ console.log(markupPercent(20, 20)); // 50%
 </details>
 
 ### Q6 [2 Marks] — Numerical Ability
-
 A and B together can do work in 15 days. A alone takes 20 days. B alone takes how many days?
 
 (A) 40  
@@ -218,7 +213,6 @@ console.log(aloneTime(15, 20)); // 60
 </details>
 
 ### Q7 [2 Marks] — Data Interpretation
-
 The following data shows marks: 45, 50, 55, 60, 65, 70, 75. What is the median?
 
 (A) 55  
@@ -237,7 +231,6 @@ Data is already sorted (n=7, odd). Median = 4th value = 60.
 </details>
 
 ### Q8 [2 Marks] — Logical Reasoning
-
 In a family of 6, A is B's sister. C is D's brother. E is A's mother. F is C's father. How is B related to D?
 
 (A) Brother  
@@ -256,7 +249,6 @@ We know: A and B are siblings (A is B's sister). C and D are siblings. E is A's 
 </details>
 
 ### Q9 [2 Marks] — Numerical Ability
-
 If the simple interest on a sum is 1/4 of the principal in 5 years, the rate is:
 
 (A) 4%  
@@ -275,7 +267,6 @@ SI = P/4 = P × R × 5 / 100 → 1/4 = R × 5/100 → R = 100/(4×5) = 5%.
 </details>
 
 ### Q10 [2 Marks] — Verbal Ability
-
 Choose the correctly punctuated sentence:
 
 (A) He said "I am coming."  
@@ -297,9 +288,8 @@ Correct punctuation: comma after "said", quotation marks with the period inside 
 
 ## Section B: Technical (85 marks)
 
-### Q1 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
-∫₋â‚Â�¹ x³ dx =
+### Q1 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
+âˆ«â‚‹â‚¹ x³ dx =
 
 (A) -1  
 (B) 0  
@@ -312,12 +302,11 @@ Correct punctuation: comma after "said", quotation marks with the period inside 
 **Answer:** (B) 0
 
 **Explanation:**
-∫₋â‚Â�¹ x³ dx = [xâÂ�´/4]₋â‚Â�¹ = 1/4 - 1/4 = 0. x³ is an odd function, symmetric integral is 0.
+âˆ«â‚‹â‚Â¹ xÂ³ dx = [xâ´/4]â‚‹â‚¹ = 1/4 - 1/4 = 0. x³ is an odd function, symmetric integral is 0.
 
 </details>
 
-### Q2 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q2 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 In a group G, if every element is its own inverse, then G is:
 
 (A) Cyclic  
@@ -331,12 +320,11 @@ In a group G, if every element is its own inverse, then G is:
 **Answer:** (B) Abelian
 
 **Explanation:**
-If a = aâÂ�»¹ for all a ∈ G, then (ab)âÂ�»¹ = ab, and (ab)âÂ�»¹ = bâÂ�»¹aâÂ�»¹ = ba, so ab = ba. The group is Abelian.
+If a = a⁻¹ for all a ∈ G, then (ab)⁻¹ = ab, and (ab)⁻¹ = b⁻¹a⁻¹ = ba, so ab = ba. The group is Abelian.
 
 </details>
 
-### Q3 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Easy
-
+### Q3 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Easy
 The prefix form of A + B * C is:
 
 (A) +A*BC  
@@ -362,8 +350,7 @@ console.log(infixToPrefix('A+B*C')); // +A*BC
 
 </details>
 
-### Q4 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Easy
-
+### Q4 [1 Mark] — 📂 Operating Systems | 🏷️ Easy
 Which of the following is a preemptive scheduling algorithm?
 
 (A) FCFS  
@@ -381,8 +368,7 @@ Round Robin is preemptive — processes run for a time quantum and are then pree
 
 </details>
 
-### Q5 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Easy
-
+### Q5 [1 Mark] — 📂 Computer Networks | 🏷️ Easy
 Which of the following is a multicast MAC address?
 
 (A) 01-00-5E-00-00-01  
@@ -400,8 +386,7 @@ Multicast MAC addresses start with 01-00-5E. FF-FF-FF-FF-FF-FF is broadcast.
 
 </details>
 
-### Q6 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Easy
-
+### Q6 [1 Mark] — 📂 Database Management Systems | 🏷️ Easy
 Which of these is NOT a type of database constraint?
 
 (A) Domain constraint  
@@ -419,8 +404,7 @@ Domain, key, and integrity (entity, referential) constraints are standard. "Runt
 
 </details>
 
-### Q7 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Easy
-
+### Q7 [1 Mark] — 📂 Theory of Computation | 🏷️ Easy
 Which of the following is a regular expression for strings starting with 'a' and ending with 'b'?
 
 (A) a(a+b)*b  
@@ -438,8 +422,7 @@ a(a+b)*b: starts with a, has any sequence in between, ends with b. a*b* allows e
 
 </details>
 
-### Q8 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Easy
-
+### Q8 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Easy
 The performance measure MIPS stands for:
 
 (A) Million Instructions Per Second  
@@ -457,8 +440,7 @@ MIPS = Million Instructions Per Second, a measure of processor speed (though not
 
 </details>
 
-### Q9 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Easy
-
+### Q9 [1 Mark] — 📂 Compiler Design | 🏷️ Easy
 In lexical analysis, which of the following is typically a token?
 
 (A) Variable declaration  
@@ -476,8 +458,7 @@ Identifiers, keywords, operators, and literals are tokens. Declarations and defi
 
 </details>
 
-### Q10 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Easy
-
+### Q10 [1 Mark] — 📂 Digital Logic | 🏷️ Easy
 The Decimal number 10 in Binary is:
 
 (A) 1010  
@@ -502,8 +483,7 @@ console.log(decimalToBinary(10)); // 1010
 
 </details>
 
-### Q11 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q11 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 Which of the following is TRUE about linked lists compared to arrays?
 
 (A) Better cache locality  
@@ -521,8 +501,7 @@ Linked lists allow O(1) insertion/deletion given the node pointer. Arrays have O
 
 </details>
 
-### Q12 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q12 [1 Mark] — 📂 Operating Systems | 🏷️ Medium
 The number of processes completed per unit time is called:
 
 (A) Turnaround time  
@@ -540,8 +519,7 @@ Throughput = number of processes completed per unit time. Turnaround = completio
 
 </details>
 
-### Q13 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
-
+### Q13 [1 Mark] — 📂 Computer Networks | 🏷️ Medium
 The number of layers in the OSI model is:
 
 (A) 4  
@@ -572,8 +550,7 @@ graph TD
 
 </details>
 
-### Q14 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q14 [1 Mark] — 📂 Database Management Systems | 🏷️ Medium
 Which operation removes a relation from SQL database?
 
 (A) DELETE  
@@ -591,27 +568,25 @@ DROP TABLE removes the relation (table) entirely. DELETE removes rows.
 
 </details>
 
-### Q15 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
-
+### Q15 [1 Mark] — 📂 Theory of Computation | 🏷️ Medium
 Convert NFA to DFA. The number of states in the DFA for an NFA with n states is at most:
 
 (A) n  
-(B) 2âÂ�¿  
+(B) 2ⁿ  
 (C) n²  
-(D) nâÂ�¿
+(D) nⁿ
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (B) 2âÂ�¿
+**Answer:** (B) 2ⁿ
 
 **Explanation:**
-Using subset construction, a DFA equivalent to an NFA with n states has at most 2âÂ�¿ states (all subsets of NFA states).
+Using subset construction, a DFA equivalent to an NFA with n states has at most 2ⁿ states (all subsets of NFA states).
 
 </details>
 
-### Q16 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q16 [1 Mark] — 📂 Compiler Design | 🏷️ Medium
 Which of the following is a lex tool generated program?
 
 (A) Parser  
@@ -629,8 +604,7 @@ Lex (or Flex) is a lexical analyzer generator. It generates a lexer (scanner) fr
 
 </details>
 
-### Q17 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Medium
-
+### Q17 [1 Mark] — 📂 Digital Logic | 🏷️ Medium
 A 3-variable K-map has how many cells?
 
 (A) 4  
@@ -644,12 +618,11 @@ A 3-variable K-map has how many cells?
 **Answer:** (C) 8
 
 **Explanation:**
-A K-map for n variables has 2âÂ�¿ cells. For 3 variables: 2³ = 8 cells.
+A K-map for n variables has 2ⁿ cells. For 3 variables: 2³ = 8 cells.
 
 </details>
 
-### Q18 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q18 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Medium
 The speed of a processor is primarily determined by:
 
 (A) Clock rate  
@@ -667,8 +640,7 @@ Processor speed depends on clock rate, cache size, number of cores, pipeline dep
 
 </details>
 
-### Q19 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q19 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 The time complexity of the Sieve of Eratosthenes for finding primes up to n is:
 
 (A) O(n)  
@@ -699,8 +671,7 @@ console.log(sieve(30)); // [2,3,5,7,11,13,17,19,23,29]
 
 </details>
 
-### Q20 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
+### Q20 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Medium
 The probability that a randomly selected number from 1 to 100 is divisible by 3 is:
 
 (A) 33/100  
@@ -718,9 +689,8 @@ Numbers divisible by 3 from 1 to 100: floor(100/3) = 33. Probability = 33/100.
 
 </details>
 
-### Q21 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
-The number of subgroups of Zâ‚Â�₂ (cyclic group of order 12) is:
+### Q21 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Medium
+The number of subgroups of Z₁₂ (cyclic group of order 12) is:
 
 (A) 4  
 (B) 6  
@@ -733,13 +703,12 @@ The number of subgroups of Zâ‚Â�₂ (cyclic group of order 12) is:
 **Answer:** (B) 6
 
 **Explanation:**
-Zâ‚Â�₂ is cyclic. For each divisor d of 12, there is exactly one subgroup of order d.
+Z₁₂ is cyclic. For each divisor d of 12, there is exactly one subgroup of order d.
 Divisors of 12: 1, 2, 3, 4, 6, 12 → 6 subgroups.
 
 </details>
 
-### Q22 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q22 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 The number of distinct binary trees possible with 3 nodes is:
 
 (A) 3  
@@ -767,8 +736,7 @@ for (let n = 0; n <= 5; n++) console.log(`C${n}=${catalan(n)}`);
 
 </details>
 
-### Q23 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q23 [2 Marks] — 📂 Operating Systems | 🏷️ Medium
 Given the reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. Using LRU with 3 frames, the number of page faults is:
 
 (A) 8  
@@ -818,8 +786,7 @@ console.log(lruFaults([1,2,3,4,1,2,5,1,2,3,4,5], 3)); // 10
 
 </details>
 
-### Q24 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q24 [2 Marks] — 📂 Database Management Systems | 🏷️ Medium
 The statement that returns only distinct values in SQL is:
 
 (A) SELECT DISTINCT  
@@ -837,8 +804,7 @@ SELECT DISTINCT removes duplicate rows from the result set.
 
 </details>
 
-### Q25 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
-
+### Q25 [2 Marks] — 📂 Computer Networks | 🏷️ Medium
 How many bits are in an IPv6 address?
 
 (A) 32  
@@ -856,8 +822,7 @@ IPv6 uses 128-bit addresses (IPv4 uses 32 bits).
 
 </details>
 
-### Q26 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q26 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 Which traversal of a binary tree visits the root first?
 
 (A) Inorder  
@@ -875,8 +840,7 @@ Preorder: Root → Left → Right. Inorder: Left → Root → Right. Postorder: 
 
 </details>
 
-### Q27 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q27 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 The Banker's algorithm requires knowledge of:
 
 (A) Current allocation only  
@@ -894,8 +858,7 @@ Banker's algorithm requires the maximum demand (claim) of each process to determ
 
 </details>
 
-### Q28 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q28 [2 Marks] — 📂 Compiler Design | 🏷️ Medium
 Which one of the following is true for a SLR(1) parser?
 
 (A) Uses LR(0) items  
@@ -913,8 +876,7 @@ SLR(1) parsers are constructed from LR(0) items with lookahead from FOLLOW sets.
 
 </details>
 
-### Q29 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q29 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Medium
 Which of the following is true about a RISC processor?
 
 (A) Variable instruction length  
@@ -932,8 +894,7 @@ RISC uses load-store architecture (only load/store instructions access memory). 
 
 </details>
 
-### Q30 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
-
+### Q30 [2 Marks] — 📂 Theory of Computation | 🏷️ Medium
 The language L = {w ∈ {a,b}* | w has equal number of a's and b's} is:
 
 (A) Regular  
@@ -951,8 +912,7 @@ Equal number of a's and b's is a canonical context-free language (accepted by a 
 
 </details>
 
-### Q31 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q31 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 Consider schedule S: R1(A), R2(A), W2(A), W1(A). Which of the following is true?
 
 (A) Conflict serializable  
@@ -980,8 +940,7 @@ graph TD
 
 </details>
 
-### Q32 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q32 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The minimum number of nodes in an AVL tree of height 5 is:
 
 (A) 10  
@@ -1013,8 +972,7 @@ console.log(minAVLNodes(5)); // 20
 
 </details>
 
-### Q33 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q33 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 Which of these is a correct subnet mask for 255.255.255.192?
 
 (A) /24  
@@ -1041,8 +999,7 @@ console.log(maskToPrefix('255.255.255.192')); // 26
 
 </details>
 
-### Q34 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q34 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 If average memory access time is 200 ns and page fault service time is 10 ms, what page fault rate gives EAT = 300 ns?
 
 (A) 0.001%  
@@ -1056,8 +1013,8 @@ If average memory access time is 200 ns and page fault service time is 10 ms, wh
 **Answer:** (A) 0.001%
 
 **Explanation:**
-EAT = (1-p) × 200 + p × 10âÂ�· ns = 200 + p(10âÂ�· - 200) ≈ 200 + 10âÂ�·p.
-300 = 200 + 10âÂ�·p → 100 = 10âÂ�·p → p = 10âÂ�»âÂ�µ = 0.001%.
+EAT = (1-p) × 200 + p × 10⁷ ns = 200 + p(10⁷ - 200) ≈ 200 + 10⁷p.
+300 = 200 + 10⁷p → 100 = 10⁷p → p = 10⁻⁵ = 0.001%.
 
 ```typescript
 function pageFaultRate(eat: number, memAccess: number, faultService: number): number {
@@ -1068,8 +1025,7 @@ console.log(pageFaultRate(300, 200, 10_000_000)); // 1e-5 = 0.001%
 
 </details>
 
-### Q35 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q35 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 What is the value of the IEEE 754 single-precision number 0x40400000?
 
 (A) 2.0  
@@ -1100,9 +1056,8 @@ console.log(hexToFloat(0x40400000)); // 3.0
 
 </details>
 
-### Q36 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
-
-The number of solutions to xâ‚Â� + x₂ + x₃ = 10 where xᵢ ≥ 0 are integers is:
+### Q36 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
+The number of solutions to x₁ + x₂ + x₃ = 10 where xᵢ ≥ 0 are integers is:
 
 (A) 55  
 (B) 66  
@@ -1128,8 +1083,7 @@ console.log(comb(12, 2)); // 66
 
 </details>
 
-### Q37 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q37 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The recurrence T(n) = 2T(n/4) + √n solves to:
 
 (A) O(√n)  
@@ -1149,8 +1103,7 @@ Case 2: T(n) = Θ(√n log n).
 
 </details>
 
-### Q38 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q38 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 A language L is regular iff it is accepted by:
 
 (A) A DFA  
@@ -1168,8 +1121,7 @@ Regular languages can be represented by DFAs, NFAs, and regular expressions. The
 
 </details>
 
-### Q39 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q39 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 In the context of transaction processing, the abbreviation ACID stands for:
 
 (A) Atomicity, Consistency, Isolation, Durability  
@@ -1191,8 +1143,7 @@ ACID properties ensure reliable transaction processing:
 
 </details>
 
-### Q40 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q40 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 Which protocol is used to prevent loops in switched Ethernet networks?
 
 (A) ARP  
@@ -1210,8 +1161,7 @@ STP prevents loops in Ethernet networks with redundant paths by disabling certai
 
 </details>
 
-### Q41 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q41 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The number of permutations of 4 elements is:
 
 (A) 4  
@@ -1236,24 +1186,23 @@ console.log(factorial(4)); // 24
 
 </details>
 
-### Q42 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q42 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 A computer has 4 GB RAM. The page size is 4 KB. How many page table entries does a single-level page table have (assuming 32-bit address space)?
 
-(A) 2²âÂ�°  
+(A) 2²⁰  
 (B) 2²²  
-(C) 2²âÂ�´  
+(C) 2²⁴  
 (D) 2³²
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (A) 2²âÂ�°
+**Answer:** (A) 2²⁰
 
 **Explanation:**
 32-bit address, page size = 4 KB = 2¹². Offset = 12 bits.
-Page number = 32 - 12 = 20 bits. Number of pages = 2²âÂ�°.
-Page table entries = 2²âÂ�°.
+Page number = 32 - 12 = 20 bits. Number of pages = 2²⁰.
+Page table entries = 2²⁰.
 
 ```typescript
 function pageTableEntries(addressBits: number, pageSizeKB: number): number {
@@ -1265,8 +1214,7 @@ console.log(pageTableEntries(32, 4)); // 1048576 = 2^20
 
 </details>
 
-### Q43 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q43 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 A clock cycle time is 2 ns. What is the clock frequency?
 
 (A) 200 MHz  
@@ -1280,7 +1228,7 @@ A clock cycle time is 2 ns. What is the clock frequency?
 **Answer:** (B) 500 MHz
 
 **Explanation:**
-Frequency = 1/Period = 1/(2 × 10âÂ�»âÂ�¹) = 500 × 10âÂ�¶ Hz = 500 MHz.
+Frequency = 1/Period = 1/(2 × 10⁻⁹) = 500 × 10⁶ Hz = 500 MHz.
 
 ```typescript
 function frequency(ns: number): string {
@@ -1291,8 +1239,7 @@ console.log(frequency(2)); // 500 MHz
 
 </details>
 
-### Q44 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q44 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 Which data structure is used for implementing recursive function calls?
 
 (A) Queue  
@@ -1310,8 +1257,7 @@ The call stack stores activation records for each function call, enabling proper
 
 </details>
 
-### Q45 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
-
+### Q45 [2 Marks] — 📂 Compiler Design | 🏷️ Hard
 A grammar is said to be ambiguous if:
 
 (A) It has multiple parse trees for some string  
@@ -1329,8 +1275,7 @@ Ambiguity means there exists at least one string with more than one parse tree (
 
 </details>
 
-### Q46 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q46 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 The class of languages accepted by a PDA with empty stack acceptance is:
 
 (A) Regular languages  
@@ -1348,8 +1293,7 @@ PDAs with empty stack acceptance accept exactly the class of context-free langua
 
 </details>
 
-### Q47 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
-
+### Q47 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
 f(x) = x³ - 3x + 1 has how many real roots?
 
 (A) 0  
@@ -1378,8 +1322,7 @@ console.log(countRealRoots());
 
 </details>
 
-### Q48 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q48 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 Which of the following algorithms cannot be used for finding the Minimum Spanning Tree?
 
 (A) Prim's  
@@ -1397,8 +1340,7 @@ Dijkstra's algorithm finds shortest paths, not MST. Prim's, Kruskal's, and Boruv
 
 </details>
 
-### Q49 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q49 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 The following instruction is privileged:
 (A) ADD  
 (B) HLT  
@@ -1415,8 +1357,7 @@ HLT (halt) is a privileged instruction that can only be executed in kernel mode.
 
 </details>
 
-### Q50 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q50 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 A relation is in BCNF if:
 
 (A) Every determinant is a candidate key  
@@ -1434,8 +1375,7 @@ BCNF requires that for every non-trivial FD X → Y, X must be a superkey. (A) s
 
 </details>
 
-### Q51 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q51 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 Which switching technique is used in the Internet?
 
 (A) Circuit switching  
@@ -1453,8 +1393,7 @@ The Internet uses packet switching (specifically, datagram packet switching). Da
 
 </details>
 
-### Q52 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q52 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 A cache that stores both data and instructions is called:
 
 (A) Data cache  
@@ -1472,8 +1411,7 @@ A unified cache (or combined cache) stores both data and instructions in the sam
 
 </details>
 
-### Q53 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q53 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 The Post Correspondence Problem (PCP) is:
 
 (A) Decidable  
@@ -1491,8 +1429,7 @@ The Post Correspondence Problem is a classic undecidable problem. It's often use
 
 </details>
 
-### Q54 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q54 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 A hash function h(key) = key mod 10. Using linear probing, insert 25, 35, 45, 15. The number of collisions is:
 
 (A) 1  
@@ -1528,8 +1465,7 @@ console.log(linearProbingCollisions([25, 35, 45, 15], 10)); // 3
 
 </details>
 
-### Q55 [2 Marks] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Hard
-
+### Q55 [2 Marks] — 📂 Digital Logic | 🏷️ Hard
 A 4-bit ripple counter has how many output states?
 
 (A) 4  
@@ -1543,7 +1479,7 @@ A 4-bit ripple counter has how many output states?
 **Answer:** (C) 16
 
 **Explanation:**
-A 4-bit counter has 2âÂ�´ = 16 distinct states (0000 to 1111).
+A 4-bit counter has 2⁴ = 16 distinct states (0000 to 1111).
 
 </details>
 
@@ -1621,16 +1557,13 @@ pie title "Difficulty Distribution - GATE CS 2021"
 
 ### Paper Analysis
 
-
 GATE 2021 Computer Science paper was administered twice — in February (regular) and July (special session) — due to the pandemic context. This analysis focuses on the regular session. The paper followed the standard pattern of 65 questions (10 GA + 55 Technical), totaling 100 marks. An important change was the introduction of the "2-minute warning" on NAT questions — students reported that numerical questions required unusually precise decimal answers (up to 3 decimal places) for the first time. The paper had 8 MSQs and 17 NATs, emphasizing computational accuracy. Computer Networks saw increased weightage (11 marks up from typical 9), while Theory of Computation maintained its steady 8-mark presence. The GA section introduced a new question type: "multiple correct sentence arrangement" for verbal ability.
 
 ### Difficulty Trends
 
-
 GATE 2021 was moderately easier than GATE 2020, with a difficulty distribution of approximately 38% Easy, 45% Medium, and 17% Hard. Data Structures & Algorithms had relatively accessible questions — the AVL tree question and Catalan number application (binary tree counting) were considered medium difficulty. Operating Systems had a famous question on Banker's algorithm that became a talking point due to multiple correct interpretations (later resolved by the official answer key). Computer Architecture introduced a question comparing instruction execution times with unified vs split caches. Aptitude was notably easier than previous years, with average accuracy exceeding 90% among qualified candidates. Overall, the paper rewarded careful reading and precise computation.
 
 ### Key Concepts Tested
-
 
 | Subject | Key Concepts |
 |---------|-------------|
@@ -1814,14 +1747,13 @@ Test your understanding of GATE 2021 concepts with these 5 questions.
 
 ### Answer Key
 
-
 | Q | Answer | Explanation |
 |---|--------|-------------|
 | 1 | b | A safe state guarantees there exists a sequence of process executions that avoids deadlock. The Banker's algorithm maintains safety by ensuring each process can eventually be satisfied with the remaining resources. |
 | 2 | a | Catalan numbers count the number of distinct BSTs (or binary trees) with n nodes. C₉ = 4862 counts BSTs with 9 distinct keys. The formula is C_n = (2n)!/((n+1)!n!). |
 | 3 | b | In STP, a port transitions: Blocking → Listening (15s) → Learning (15s) → Forwarding. Listening is the immediate next state after blocking. |
 | 4 | b | The Halting Problem (determining if an arbitrary TM halts on a specific input) is undecidable (proved by Turing, 1936). Options a, c, and d are all decidable problems. |
-| 5 | c | In a ripple counter, each stage divides the frequency by 2. With 4 flip-flops, the last stage frequency = 16 MHz / 2âÂ�´ = 16/16 = 1 MHz. |
+| 5 | c | In a ripple counter, each stage divides the frequency by 2. With 4 flip-flops, the last stage frequency = 16 MHz / 2⁴ = 16/16 = 1 MHz. |
 
 ## Exercises
 

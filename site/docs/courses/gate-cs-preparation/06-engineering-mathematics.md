@@ -1,9 +1,10 @@
 ---
 id: 06-engineering-mathematics
 slug: /gate-cs-preparation/06-engineering-mathematics
-title: "06 Engineering Mathematics"
-sidebar_label: "06 Engineering Mathematics"
+title: "06-engineering-mathematics"
+sidebar_label: "06-engineering-mathematics"
 sidebar_position: 6
+description: "Goal: Rapid revision of formulas + GATE-style solved problems. Assumes you have foundational knowledge from Discrete Math & ML courses."
 ---
 
 ﻿# Engineering Mathematics → GATE CS Refresher
@@ -82,7 +83,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 1.1 Matrix Operations → Key Formulas
 
-
 | Concept | Formula / Rule |
 |---------|---------------|
 | **Matrix Multiplication** | `(A B)[i][j] = sum_k A[i][k] * B[k][j]`; defined iff `cols(A) = rows(B)` |
@@ -92,7 +92,6 @@ Formula summary → solved GATE problems → quick practice.
 | **Orthogonal Matrix** | `A^T A = I`, so `A^{-1} = A^T` and `|det(A)| = 1` |
 
 ### 1.2 Determinant → Key Formulas
-
 
 | Concept | Formula |
 |---------|--------|
@@ -104,7 +103,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 1.3 Inverse → Key Formulas
 
-
 | Concept | Formula |
 |---------|--------|
 | **Inverse exists iff** | `det(A) != 0` (non-singular) |
@@ -113,7 +111,6 @@ Formula summary → solved GATE problems → quick practice.
 | **Using adjoint** | `A^{-1} = adj(A) / det(A)` |
 
 ### 1.4 Rank of a Matrix
-
 
 | Concept | Rule |
 |---------|------|
@@ -125,7 +122,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 1.5 Systems of Linear Equations
 
-
 | System `Ax = b` | Condition | Solution |
 |-----------------|-----------|----------|
 | **Consistent** | `rank(A) = rank([A|b])` | Unique if `rank = n`, infinite if `rank < n` |
@@ -133,7 +129,6 @@ Formula summary → solved GATE problems → quick practice.
 | **Homogeneous** `Ax = 0` | Always consistent | Trivial `x = 0` if `rank = n`; non-trivial if `rank < n` |
 
 ### 1.6 Eigenvalues and Eigenvectors
-
 
 | Concept | Formula |
 |---------|--------|
@@ -147,7 +142,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 1.7 LU Decomposition
 
-
 - `A = LU`, where `L` = lower triangular, `U` = upper triangular
 - Used to solve `Ax = b` in `O(n^2)` after `O(n^3)` factorization
 - `det(A) = prod(U[i][i])` (product of pivots)
@@ -155,7 +149,6 @@ Formula summary → solved GATE problems → quick practice.
 ---
 
 ### Solved GATE Problems → Linear Algebra
-
 
 ---
 
@@ -216,7 +209,6 @@ For what condition on `a, b, c` is the system consistent?
 
 ### Quick Practice → Linear Algebra
 
-
 | # | Problem | Answer |
 |---|---------|--------|
 | 1 | If `A` is orthogonal, find `det(A)` | `+/- 1` |
@@ -233,7 +225,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 2.1 Limits → Key Formulas
 
-
 | Concept | Rule |
 |---------|------|
 | **Basic** | `lim_{x->a} f(x) = L` iff LHL = RHL = L |
@@ -244,7 +235,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 2.2 Continuity & Differentiability
 
-
 | Concept | Condition |
 |---------|-----------|
 | **Continuous at `x = a`** | `lim_{x->a-} f(x) = lim_{x->a+} f(x) = f(a)` |
@@ -253,7 +243,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 2.3 Mean Value Theorems
 
-
 | Theorem | Statement |
 |---------|-----------|
 | **Rolle's** | If `f(a) = f(b)` and `f` is cont on `[a,b]`, diff on `(a,b)`, then `exists c in (a,b): f'(c) = 0` |
@@ -261,7 +250,6 @@ Formula summary → solved GATE problems → quick practice.
 | **Cauchy's MVT** | `exists c: (f(b)-f(a))/(g(b)-g(a)) = f'(c)/g'(c)` where `g'(x) != 0` |
 
 ### 2.4 Maxima and Minima
-
 
 | Concept | Condition |
 |---------|-----------|
@@ -272,7 +260,6 @@ Formula summary → solved GATE problems → quick practice.
 | **Global extrema** | Check critical points + interval endpoints |
 
 ### 2.5 Integration → Key Formulas
-
 
 | Formula | Result |
 |---------|--------|
@@ -287,7 +274,6 @@ Formula summary → solved GATE problems → quick practice.
 ---
 
 ### Solved GATE Problems → Calculus
-
 
 ---
 
@@ -346,7 +332,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### Quick Practice → Calculus
 
-
 | # | Problem | Answer |
 |---|---------|--------|
 | 1 | `lim_{x->0} (e^x - 1 - x)/x^2` | `1/2` |
@@ -363,7 +348,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 3.1 Basic Probability
 
-
 | Concept | Formula |
 |---------|---------|
 | **Probability** | `P(A) = n(A)/n(S)` (equally likely outcomes) |
@@ -376,7 +360,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 3.2 Random Variables
 
-
 | Concept | Formula |
 |---------|---------|
 | **PMF (discrete)** | `p(x) = P(X = x)` |
@@ -388,7 +371,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 3.3 Standard Distributions
 
-
 | Distribution | PMF/PDF | Mean | Variance |
 |-------------|---------|------|----------|
 | **Binomial** `B(n, p)` | `C(n,k) p^k (1-p)^{n-k}` | `np` | `np(1-p)` |
@@ -399,7 +381,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 3.4 Correlation and Regression
 
-
 | Concept | Formula |
 |---------|---------|
 | **Covariance** | `Cov(X, Y) = E[(X - mu_X)(Y - mu_Y)]` |
@@ -408,7 +389,6 @@ Formula summary → solved GATE problems → quick practice.
 | **Properties** | `rho = +1` → perfect positive, `-1` → perfect negative, `0` → no linear |
 
 ### 3.5 Key Inequalities
-
 
 | Inequality | Statement |
 |------------|-----------|
@@ -419,7 +399,6 @@ Formula summary → solved GATE problems → quick practice.
 ---
 
 ### Solved GATE Problems → Probability & Statistics
-
 
 ---
 
@@ -475,7 +454,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### Quick Practice → Probability & Statistics
 
-
 | # | Problem | Answer |
 |---|---------|--------|
 | 1 | Two dice rolled. Sum = 7 probability? | `1/6` |
@@ -492,7 +470,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 4.1 Set Theory
 
-
 | Concept | Formula |
 |---------|---------|
 | **Union** | `|A ∪ B| = |A| + |B| - |A ∩ B|` |
@@ -502,7 +479,6 @@ Formula summary → solved GATE problems → quick practice.
 | **Cartesian product** | `|A x B| = |A| * |B|` |
 
 ### 4.2 Relations
-
 
 | Concept | Definition |
 |---------|-----------|
@@ -516,7 +492,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 4.3 Functions
 
-
 | Concept | Condition |
 |---------|-----------|
 | **Injective (one-one)** | `f(a) = f(b) => a = b` |
@@ -526,7 +501,6 @@ Formula summary → solved GATE problems → quick practice.
 | **Pigeonhole principle** | If `n` items in `m` boxes, `n > m`, at least one box has `>= ceil(n/m)` |
 
 ### 4.4 Graph Theory
-
 
 | Concept | Formula |
 |---------|---------|
@@ -545,7 +519,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 4.5 Counting Principles
 
-
 | Concept | Formula |
 |---------|---------|
 | **Permutations** | `P(n,r) = n!/(n-r)!` |
@@ -557,7 +530,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 4.6 Generating Functions
 
-
 | Concept | Formula |
 |---------|---------|
 | **Definition** | `G(x) = sum_{n >= 0} a_n x^n` |
@@ -566,7 +538,6 @@ Formula summary → solved GATE problems → quick practice.
 | **Exponential** | `e^x = sum_{n >= 0} x^n/n!` |
 
 ### 4.7 Recurrence Relations
-
 
 | Type | Form | Solution Approach |
 |------|------|-----------------|
@@ -578,7 +549,6 @@ Formula summary → solved GATE problems → quick practice.
 ---
 
 ### Solved GATE Problems → Discrete Math
-
 
 ---
 
@@ -636,7 +606,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### Quick Practice → Discrete Math
 
-
 | # | Problem | Answer |
 |---|---------|--------|
 | 1 | Number of reflexive relations on 3-element set? | `2^{6} = 64` |
@@ -653,7 +622,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 5.1 Root Finding Methods
 
-
 | Method | Formula | Notes |
 |--------|---------|-------|
 | **Bisection** | `c = (a+b)/2`; repeat on `[a,c]` or `[c,b]` | Linear convergence, guaranteed |
@@ -667,15 +635,13 @@ Formula summary → solved GATE problems → quick practice.
 
 ### 5.2 Interpolation
 
-
 | Method | Formula |
 |--------|---------|
 | **Lagrange** | `P(x) = sum_{i=0}^n y_i * L_i(x)`, where `L_i(x) = prod_{j!=i} (x - x_j)/(x_i - x_j)` |
-| **Newton forward** | `P(x) = y_0 + u*Î—Â�y_0 + u(u-1)/2! * Î—Â�^2y_0 + ...` where `u = (x - x_0)/h` |
+| **Newton forward** | `P(x) = y_0 + u*Δy_0 + u(u-1)/2! * Δ^2y_0 + ...` where `u = (x - x_0)/h` |
 | **Newton backward** | `P(x) = y_n + u*∇y_n + u(u+1)/2! * ∇^2y_n + ...` where `u = (x - x_n)/h` |
 
 ### 5.3 Numerical Integration
-
 
 | Method | Formula | Error |
 |--------|---------|-------|
@@ -684,7 +650,6 @@ Formula summary → solved GATE problems → quick practice.
 | **Simpson's 3/8** | `int_a^b f(x)dx ≈ 3h/8 * [f(x_0) + 3*sum_{non-multiples} + 2*sum_{multiples of 3} + f(x_n)]` | `O(h^4)` |
 
 ### 5.4 Error Analysis
-
 
 | Term | Definition |
 |------|-----------|
@@ -696,7 +661,6 @@ Formula summary → solved GATE problems → quick practice.
 ---
 
 ### Solved GATE Problems → Numerical Methods
-
 
 ---
 
@@ -763,7 +727,6 @@ Formula summary → solved GATE problems → quick practice.
 
 ### Quick Practice → Numerical Methods
 
-
 | # | Problem | Answer |
 |---|---------|--------|
 | 1 | Newton-Raphson to find `sqrt(5)` starting at `x_0 = 2`. One iteration? | `x_1 = 2.25` |
@@ -777,7 +740,6 @@ Formula summary → solved GATE problems → quick practice.
 ## Answer Key → Quick Practice
 
 ### Linear Algebra
-
 1. `+/- 1`
 2. `2`
 3. Inconsistent
@@ -785,7 +747,6 @@ Formula summary → solved GATE problems → quick practice.
 5. `2`
 
 ### Calculus
-
 1. `1/2`
 2. No
 3. `1`
@@ -793,7 +754,6 @@ Formula summary → solved GATE problems → quick practice.
 5. `e^2`
 
 ### Probability & Statistics
-
 1. `1/6`
 2. `16`
 3. `~0.288`
@@ -801,7 +761,6 @@ Formula summary → solved GATE problems → quick practice.
 5. Uncorrelated (not necessarily independent)
 
 ### Discrete Math
-
 1. `64`
 2. No
 3. `a_n = 2^n`
@@ -809,7 +768,6 @@ Formula summary → solved GATE problems → quick practice.
 5. `3`
 
 ### Numerical Methods
-
 1. `2.25`
 2. `2.75`
 3. `0.5`
@@ -842,7 +800,6 @@ Formula summary → solved GATE problems → quick practice.
 ## Previous Year Questions (GATE 2019-2025)
 
 ### Linear Algebra (12 Problems)
-
 
 ---
 
@@ -943,7 +900,7 @@ x + y + z = 1
 
 **Solution:**
 - For a real symmetric matrix, eigenvectors corresponding to distinct eigenvalues are orthogonal.
-- This is a standard theorem: if `A = A^T` and `λâ‚ÂÂ� ≠ λ₂` with `Avâ‚ÂÂ� = λâ‚ÂÂ�vâ‚ÂÂ�, Av₂ = λ₂v₂`, then `vâ‚ÂÂ� · v₂ = 0`.
+- This is a standard theorem: if `A = A^T` and `ÃŽÂ»Ã¢â€šÂ Ã¢â€°Â  ÃŽÂ»Ã¢â€šâ€š` with `AvÃ¢â€šÂ = ÃŽÂ»Ã¢â€šÂvÃ¢â€šÂ, AvÃ¢â€šâ€š = ÃŽÂ»Ã¢â€šâ€švÃ¢â€šâ€š`, then `vÃ¢â€šÂ · v₂ = 0`.
 - **Answer: Orthogonal**
 
 ---
@@ -993,7 +950,6 @@ x + y + z = 1
 
 ### Calculus (10 Problems)
 
-
 ---
 
 **GATE 2019 (CS) → Q1:** Evaluate `lim_{x -> 0} (sin(2x) - 2x)/(x^3)`.
@@ -1030,7 +986,7 @@ x + y + z = 1
 
 ---
 
-**GATE 2022 (CS) → Q4:** Evaluate `∫_0^{ÃÂ�€/2} sin^3(x) cos^2(x) dx`.
+**GATE 2022 (CS) â†’ Q4:** Evaluate `Ã¢Ë†Â«_0^{Ã€/2} sin^3(x) cos^2(x) dx`.
 
 **Solution:**
 - Let `u = cos(x)`, so `du = -sin(x) dx`
@@ -1109,7 +1065,6 @@ x + y + z = 1
 
 ### Probability & Statistics (12 Problems)
 
-
 ---
 
 **GATE 2019 (CS) → Q1:** A bag has 3 red and 5 green balls. Two balls are drawn without replacement. Find probability both are green.
@@ -1152,10 +1107,10 @@ x + y + z = 1
 
 ---
 
-**GATE 2023 (CS) → Q5:** If `X ~ N(μ=10, ÃÂ�ƒ²=4)`, find `P(8 < X < 12)`.
+**GATE 2023 (CS) â†’ Q5:** If `X ~ N(ÃŽÂ¼=10, ÃƒÂ²=4)`, find `P(8 < X < 12)`.
 
 **Solution:**
-- Standardize: `Z = (X - μ)/ÃÂ�ƒ = (X-10)/2`
+- Standardize: `Z = (X - ÃŽÂ¼)/Ãƒ = (X-10)/2`
 - `P(8 < X < 12) = P((8-10)/2 < Z < (12-10)/2) = P(-1 < Z < 1)`
 - By 68-95-99.7 rule: `P(-1 < Z < 1) ≈ 0.6827`
 - More precisely: `Φ(1) - Φ(-1) = 2Φ(1) - 1 ≈ 2(0.8413) - 1 = 0.6826`
@@ -1230,16 +1185,15 @@ x + y + z = 1
 **GATE 2023 (CS) → Q12:** If `E[X] = 2` and `Var(X) = 4`, find an upper bound on `P(|X - 2| ≥ 4)` using Chebyshev's inequality.
 
 **Solution:**
-- Chebyshev: `P(|X - μ| ≥ kÃÂ�ƒ) ≤ 1/k^2`
-- `μ = 2`, `ÃÂ�ƒ = √Var = 2`
-- `P(|X - 2| ≥ 4) = P(|X - μ| ≥ 2ÃÂ�ƒ)` so `k = 2`
+- Chebyshev: `P(|X - ÃŽÂ¼| Ã¢â€°Â¥ kÃƒ) â‰¤ 1/k^2`
+- `ÃŽÂ¼ = 2`, `Ãƒ = âˆšVar = 2`
+- `P(|X - 2| Ã¢â€°Â¥ 4) = P(|X - ÃŽÂ¼| Ã¢â€°Â¥ 2Ãƒ)` so `k = 2`
 - Bound: `1/k^2 = 1/4 = 0.25`
 - **Answer: `≤ 0.25`**
 
 ---
 
 ### Discrete Mathematics (10 Problems)
-
 
 ---
 
@@ -1356,7 +1310,6 @@ x + y + z = 1
 
 ### Numerical Methods (6 Problems)
 
-
 ---
 
 **GATE 2019 (CS) → Q1:** Starting with `x_0 = 1.5`, find `x_1` using Newton-Raphson for `f(x) = x^3 - 4x + 1`.
@@ -1371,15 +1324,15 @@ x + y + z = 1
 
 ---
 
-**GATE 2020 (CS) → Q2:** Using Simpson's 1/3 rule with `h = ÃÂ�€/4`, approximate `∫_0^{ÃÂ�€/2} sin(x) dx`.
+**GATE 2020 (CS) â†’ Q2:** Using Simpson's 1/3 rule with `h = Ãâ‚¬/4`, approximate `Ã¢Ë†Â«_0^{Ã€/2} sin(x) dx`.
 
 **Solution:**
-- Points: `x_0 = 0, x_1 = ÃÂ�€/4, x_2 = ÃÂ�€/2`
-- `f(0) = 0`, `f(ÃÂ�€/4) = √2/2 ≈ 0.7071`, `f(ÃÂ�€/2) = 1`
+- Points: `x_0 = 0, x_1 = Ãâ‚¬/4, x_2 = Ã€/2`
+- `f(0) = 0`, `f(Ãâ‚¬/4) = Ã¢Ë†Å¡2/2 Ã¢â€°Ë† 0.7071`, `f(Ã€/2) = 1`
 - Simpson: `h/3 * [f(x_0) + 4f(x_1) + f(x_2)]`
-- `= (ÃÂ�€/4)/3 * [0 + 4(0.7071) + 1] = ÃÂ�€/12 * 3.8284`
+- `= (Ãâ‚¬/4)/3 * [0 + 4(0.7071) + 1] = Ã€/12 * 3.8284`
 - `= 3.1416 * 3.8284/12 = 1.0023`
-- True value: `[-cos(x)]_0^{ÃÂ�€/2} = 0 - (-1) = 1`
+- True value: `[-cos(x)]_0^{Ã€/2} = 0 - (-1) = 1`
 - **Answer: `1.0023`**
 
 ---
@@ -1452,7 +1405,6 @@ x + y + 4z = 6
 
 ### 1. Advanced Engineering Mathematics → Erwin Kreyszig (10th Ed.)
 
-
 | GATE Topic | Relevant Chapters |
 |------------|-------------------|
 | Linear Algebra | Ch. 7: Linear Algebra: Matrices, Vectors, Determinants; Ch. 8: Linear Algebra: Matrix Eigenvalue Problems |
@@ -1465,7 +1417,6 @@ x + y + 4z = 6
 ---
 
 ### 2. Introduction to Linear Algebra → Gilbert Strang (5th Ed.)
-
 
 | GATE Topic | Relevant Chapters |
 |------------|-------------------|
@@ -1482,7 +1433,6 @@ x + y + 4z = 6
 
 ### 3. A First Course in Probability → Sheldon Ross (10th Ed.)
 
-
 | GATE Topic | Relevant Chapters |
 |------------|-------------------|
 | Basic Probability | Ch. 2: Axioms of Probability; Ch. 3: Conditional Probability and Independence |
@@ -1497,7 +1447,6 @@ x + y + 4z = 6
 ---
 
 ### 4. Discrete Mathematics and Its Applications → Kenneth Rosen (8th Ed.)
-
 
 | GATE Topic | Relevant Chapters |
 |------------|-------------------|
@@ -1516,7 +1465,6 @@ x + y + 4z = 6
 
 ### 5. Supplementary References
 
-
 | Book | Best For |
 |------|----------|
 | **Engineering Mathematics** → B.S. Grewal | Quick formula reference, extensive solved examples tailored to Indian exams |
@@ -1526,7 +1474,6 @@ x + y + 4z = 6
 | **Higher Engineering Mathematics** → B.V. Ramana | Topic-wise organization matching GATE syllabus closely |
 
 ### Recommended Study Plan
-
 
 | Phase | Focus | Resources |
 |-------|-------|-----------|
@@ -1546,7 +1493,6 @@ x + y + 4z = 6
 ---
 
 ### Linear Algebra (Q51–Q62)
-
 
 ---
 
@@ -1575,8 +1521,8 @@ x + y + 4z = 6
 **Solution:**
 - `det(A - λI) = det[[1-λ, 2], [2, 4-λ]] = (1-λ)(4-λ) - 4 = λ² - 5λ = λ(λ-5)`
 - Eigenvalues: λ = 0, 5
-- For λ = 0: `(A - 0I)v = [[1,2],[2,4]]v = 0` → `vâ‚ÂÂ� + 2v₂ = 0` → eigenvector `(-2, 1)`
-- For λ = 5: `(A - 5I)v = [[-4,2],[2,-1]]v = 0` → `-4vâ‚ÂÂ� + 2v₂ = 0` → eigenvector `(1, 2)`
+- For λ = 0: `(A - 0I)v = [[1,2],[2,4]]v = 0` → `v₁ + 2v₂ = 0` → eigenvector `(-2, 1)`
+- For λ = 5: `(A - 5I)v = [[-4,2],[2,-1]]v = 0` → `-4v₁ + 2v₂ = 0` → eigenvector `(1, 2)`
 - Two distinct eigenvalues → two LI eigenvectors
 - **Answer: 2**
 
@@ -1596,14 +1542,14 @@ x + y + 4z = 6
 
 **Solution:**
 - Augmented matrix: `[1 1 1 | 6; 1 2 3 | 10; 1 2 k | 10]`
-- R₂ → R₂ - Râ‚ÂÂ�: `[1 1 1 | 6; 0 1 2 | 4; 0 1 k-1 | 4]`
+- R₂ → R₂ - R₁: `[1 1 1 | 6; 0 1 2 | 4; 0 1 k-1 | 4]`
 - R₃ → R₃ - R₂: `[1 1 1 | 6; 0 1 2 | 4; 0 0 k-3 | 0]`
 - For infinite solutions: `k - 3 = 0` → `k = 3` (0 = 0, consistent)
 - For no solution: rank(A) &lt; rank([A|b]). This occurs when LHS has a row of zeros but RHS does not. Since the RHS last entry is 0 after elimination, the system is always consistent when `k = 3`.
 - Wait → at k=3, we have `0 = 0` meaning consistent with infinite solutions.
 - When `k ≠ 3`, `rank(A) = 3 = rank([A|b])` → unique solution.
 - No value of k gives inconsistency here. Let me recheck:
-- Actually: after R₂ → R₂ - Râ‚ÂÂ� and R₃ → R₃ - Râ‚ÂÂ�:
+- Actually: after R₂ → R₂ - R₁ and R₃ → R₃ - R₁:
   `[1 1 1 | 6; 0 1 2 | 4; 0 1 k-1 | 4]`
 - R₃ → R₃ - R₂: `[1 1 1 | 6; 0 1 2 | 4; 0 0 k-3 | 0]`
 - If `k ≠ 3`: unique solution. If `k = 3`: infinite solutions. No value gives inconsistency.
@@ -1628,11 +1574,11 @@ x + y + 4z = 6
 
 ---
 
-**GATE 2015 (CS) → Q57:** Let `P` be a 2×2 matrix with eigenvalues 1 and 4. Find the trace of `PâÂÂ�»¹`.
+**GATE 2015 (CS) â†’ Q57:** Let `P` be a 2Ãƒâ€”2 matrix with eigenvalues 1 and 4. Find the trace of `PÃ¢Â»Â¹`.
 
 **Solution:**
-- Eigenvalues of `PâÂÂ�»¹` are reciprocals: `1/1 = 1` and `1/4 = 0.25`
-- `tr(PâÂÂ�»¹) = sum of eigenvalues of PâÂÂ�»¹ = 1 + 0.25 = 1.25`
+- Eigenvalues of `PÃ¢Â»Â¹` are reciprocals: `1/1 = 1` and `1/4 = 0.25`
+- `tr(PÃ¢ÂÂ»Ã‚Â¹) = sum of eigenvalues of PÃ¢Â»Â¹ = 1 + 0.25 = 1.25`
 - **Answer: 1.25**
 
 ---
@@ -1693,7 +1639,6 @@ x + y + 4z = 6
 
 ### Calculus (Q63–Q72)
 
-
 ---
 
 **GATE 2010 (CS) → Q63:** Find `lim_{x → 0} (e^{2x} - 1)/x`.
@@ -1713,19 +1658,19 @@ x + y + 4z = 6
 (D) Differentiable but not continuous at `x = 2`
 
 **Solution:**
-- `f(2) = 0`. `lim_{x → 2âÂÂ�»} f(x) = lim_{x → 2âÂÂ�º} f(x) = 0` → continuous
-- LHD: `lim_{h → 0âÂÂ�»} (f(2+h) - f(2))/h = lim_{h → 0âÂÂ�»} |h|/h = -1`
-- RHD: `lim_{h → 0âÂÂ�º} (f(2+h) - f(2))/h = lim_{h → 0âÂÂ�º} |h|/h = 1`
+- `f(2) = 0`. `lim_{x â†’ 2Ã¢ÂÂ»} f(x) = lim_{x â†’ 2Ã¢Âº} f(x) = 0` → continuous
+- LHD: `lim_{h â†’ 0Ã¢ÂÂ»} (f(2+h) - f(2))/h = lim_{h â†’ 0Ã¢Â»} |h|/h = -1`
+- RHD: `lim_{h â†’ 0Ã¢ÂÂº} (f(2+h) - f(2))/h = lim_{h â†’ 0Ã¢Âº} |h|/h = 1`
 - LHD ≠ RHD → not differentiable
 - **Answer: (B)**
 
 ---
 
-**GATE 2012 (CS) → Q65:** Evaluate `∫_0^{ÃÂ�€/2} cos x / (1 + sin x) dx`.
+**GATE 2012 (CS) â†’ Q65:** Evaluate `Ã¢Ë†Â«_0^{Ã€/2} cos x / (1 + sin x) dx`.
 
 **Solution:**
 - Let `u = 1 + sin x`, `du = cos x dx`
-- When `x = 0`: `u = 1`. When `x = ÃÂ�€/2`: `u = 2`
+- When `x = 0`: `u = 1`. When `x = Ã€/2`: `u = 2`
 - Integral = `∫_1^2 du/u = [ln u]_1^2 = ln 2 - ln 1 = ln 2`
 - **Answer: ln 2**
 
@@ -1736,7 +1681,7 @@ x + y + 4z = 6
 **Solution:**
 - `x³` is an odd function: `f(-x) = (-x)³ = -x³ = -f(x)`
 - Integral of an odd function over symmetric limits `[-a, a]` is zero
-- `∫_{-a}^{a} x³ dx = [xâÂÂ�´/4]_{-a}^{a} = aâÂÂ�´/4 - aâÂÂ�´/4 = 0`
+- `Ã¢Ë†Â«_{-a}^{a} xÃ‚Â³ dx = [xÃ¢ÂÂ´/4]_{-a}^{a} = aÃ¢ÂÂ´/4 - aÃ¢Â´/4 = 0`
 - **Answer: 0**
 
 ---
@@ -1802,7 +1747,6 @@ x + y + 4z = 6
 ---
 
 ### Probability (Q73–Q84)
-
 
 ---
 
@@ -1911,17 +1855,16 @@ x + y + 4z = 6
 
 ---
 
-**GATE 2018 (CS) → Q84:** For Bayes' theorem: `P(Aâ‚ÂÂ�|B) = P(B|Aâ‚ÂÂ�)P(Aâ‚ÂÂ�) / Σ P(B|Aⱼ)P(Aⱼ)`. If `P(Aâ‚ÂÂ�) = 0.6`, `P(A₂) = 0.4`, `P(B|Aâ‚ÂÂ�) = 0.3`, `P(B|A₂) = 0.2`, find `P(Aâ‚ÂÂ�|B)`.
+**GATE 2018 (CS) → Q84:** For Bayes' theorem: `P(A₁|B) = P(B|A₁)P(A₁) / Σ P(B|Aⱼ)P(Aⱼ)`. If `P(A₁) = 0.6`, `P(A₂) = 0.4`, `P(B|A₁) = 0.3`, `P(B|A₂) = 0.2`, find `P(A₁|B)`.
 
 **Solution:**
-- `P(B) = P(B|Aâ‚ÂÂ�)P(Aâ‚ÂÂ�) + P(B|A₂)P(A₂) = 0.3×0.6 + 0.2×0.4 = 0.18 + 0.08 = 0.26`
-- `P(Aâ‚ÂÂ�|B) = 0.18/0.26 = 9/13 ≈ 0.6923`
+- `P(B) = P(B|A₁)P(A₁) + P(B|A₂)P(A₂) = 0.3×0.6 + 0.2×0.4 = 0.18 + 0.08 = 0.26`
+- `P(A₁|B) = 0.18/0.26 = 9/13 ≈ 0.6923`
 - **Answer: 9/13**
 
 ---
 
 ### Discrete Math (Q85–Q94)
-
 
 ---
 
@@ -1967,7 +1910,7 @@ x + y + 4z = 6
 **GATE 2014 (CS) → Q89:** The number of distinct proper non-empty subsets of a set with 5 elements is:
 
 **Solution:**
-- Total subsets: 2âÂÂ�µ = 32
+- Total subsets: 2Ã¢Âµ = 32
 - Exclude empty set and the set itself: 32 - 2 = 30
 - **Answer: 30**
 
@@ -2026,7 +1969,6 @@ x + y + 4z = 6
 
 ### Numerical Methods (Q95–Q100)
 
-
 ---
 
 **GATE 2012 (CS) → Q95:** Newton-Raphson method converges to which root if `f'(x) = 0` at the initial guess?
@@ -2062,9 +2004,9 @@ x + y + 4z = 6
 
 **Solution:**
 - `h = (1-0)/4 = 0.25`
-- Points: `x₀=0, xâ‚ÂÂ�=0.25, x₂=0.5, x₃=0.75, x₄=1.0`
+- Points: `x₀=0, x₁=0.25, x₂=0.5, x₃=0.75, x₄=1.0`
 - `f(x) = x²`: `f(0)=0, f(0.25)=0.0625, f(0.5)=0.25, f(0.75)=0.5625, f(1)=1`
-- Trapezoidal: `h/2 × [f(x₀) + 2(f(xâ‚ÂÂ�)+f(x₂)+f(x₃)) + f(x₄)]`
+- Trapezoidal: `h/2 × [f(x₀) + 2(f(x₁)+f(x₂)+f(x₃)) + f(x₄)]`
 - `= 0.25/2 × [0 + 2(0.0625+0.25+0.5625) + 1]`
 - `= 0.125 × [0 + 2(0.875) + 1] = 0.125 × [1.75 + 1] = 0.125 × 2.75 = 0.34375`
 - Exact: `∫₀¹ x² dx = [x³/3]₀¹ = 1/3 = 0.3333...`
@@ -2072,22 +2014,22 @@ x + y + 4z = 6
 
 ---
 
-**GATE 2017 (CS) → Q99:** Gauss-Seidel iteration for `4xâ‚ÂÂ� + x₂ = 9`, `xâ‚ÂÂ� + 4x₂ = 6` starting from `(0,0)`. Find after 2 iterations.
+**GATE 2017 (CS) → Q99:** Gauss-Seidel iteration for `4x₁ + x₂ = 9`, `x₁ + 4x₂ = 6` starting from `(0,0)`. Find after 2 iterations.
 
 **Solution:**
-- Rearranged: `xâ‚ÂÂ�^{(k+1)} = (9 - x₂^{(k)})/4`, `x₂^{(k+1)} = (6 - xâ‚ÂÂ�^{(k+1)})/4`
-- Iteration 1: `xâ‚ÂÂ�¹ = (9-0)/4 = 2.25`, `x₂¹ = (6-2.25)/4 = 3.75/4 = 0.9375`
-- Iteration 2: `xâ‚ÂÂ�² = (9-0.9375)/4 = 8.0625/4 = 2.015625`, `x₂² = (6-2.015625)/4 = 3.984375/4 = 0.99609375`
-- **Answer: `xâ‚ÂÂ� ≈ 2.0156, x₂ ≈ 0.9961`**
+- Rearranged: `x₁^{(k+1)} = (9 - x₂^{(k)})/4`, `x₂^{(k+1)} = (6 - x₁^{(k+1)})/4`
+- Iteration 1: `xÃ¢â€šÂ¹ = (9-0)/4 = 2.25`, `x₂¹ = (6-2.25)/4 = 3.75/4 = 0.9375`
+- Iteration 2: `xÃ¢â€šÂ² = (9-0.9375)/4 = 8.0625/4 = 2.015625`, `x₂² = (6-2.015625)/4 = 3.984375/4 = 0.99609375`
+- **Answer: `x₁ ≈ 2.0156, x₂ ≈ 0.9961`**
 
 ---
 
 **GATE 2018 (CS) → Q100:** The Lagrange interpolation polynomial for data `(0, 1)` and `(1, 3)` is:
 
 **Solution:**
-- `L₀(x) = (x - xâ‚ÂÂ�)/(x₀ - xâ‚ÂÂ�) = (x - 1)/(0 - 1) = -(x-1) = 1 - x`
-- `Lâ‚ÂÂ�(x) = (x - x₀)/(xâ‚ÂÂ� - x₀) = (x - 0)/(1 - 0) = x`
-- `P(x) = f(x₀)·L₀(x) + f(xâ‚ÂÂ�)·Lâ‚ÂÂ�(x) = 1·(1-x) + 3·x = 1 - x + 3x = 1 + 2x`
+- `L₀(x) = (x - x₁)/(x₀ - x₁) = (x - 1)/(0 - 1) = -(x-1) = 1 - x`
+- `L₁(x) = (x - x₀)/(x₁ - x₀) = (x - 0)/(1 - 0) = x`
+- `P(x) = f(xÃ¢â€šâ‚¬)Ã‚Â·LÃ¢â€šâ‚¬(x) + f(xÃ¢â€šÂ)Ã‚Â·LÃ¢â€šÂ(x) = 1·(1-x) + 3·x = 1 - x + 3x = 1 + 2x`
 - Verify: at `x=0`: `P=1` ✓; at `x=1`: `P=3` ✓
 - **Answer: `P(x) = 1 + 2x`**
 
@@ -2098,7 +2040,6 @@ x + y + 4z = 6
 ---
 
 ### Common Traps & Pitfalls
-
 
 | # | Trap | Explanation & How to Avoid |
 |---|------|---------------------------|
@@ -2114,14 +2055,13 @@ x + y + 4z = 6
 | 10 | **Integration constant** | For indefinite integrals, NEVER forget `+C`. For definite integrals, changing limits with substitution is mandatory. |
 | 11 | **Graph: Eulerian vs Hamiltonian** | Eulerian circuit = visits **every edge** exactly once (all even degrees). Hamiltonian cycle = visits **every vertex** exactly once (NP-complete to check). |
 | 12 | **Bisection vs Newton convergence** | Bisection: linear convergence (order 1), always converges if sign change exists. Newton: quadratic (order 2), but may diverge if initial guess is poor. |
-| 13 | **Matrix multiplication order** | `(AB)ᵀ = BᵀAᵀ` → reverse order. Never write `(AB)ᵀ = AᵀBᵀ`. Also `(AB)âÂÂ�»¹ = BâÂÂ�»¹AâÂÂ�»¹`. |
+| 13 | **Matrix multiplication order** | `(AB)Ã¡Âµâ‚¬ = BÃ¡Âµâ‚¬AÃ¡Âµâ‚¬` â†’ reverse order. Never write `(AB)Ã¡Âµâ‚¬ = AÃ¡Âµâ‚¬BÃ¡Âµâ‚¬`. Also `(AB)Ã¢ÂÂ»Ã‚Â¹ = BÃ¢ÂÂ»Ã‚Â¹AÃ¢Â»Â¹`. |
 | 14 | **Modulus in probability densities** | PDF `f(x)` must integrate to 1 and be ≥ 0 everywhere. Checking only one condition is insufficient. |
 | 15 | **Numerical method error signs** | Trapezoidal may over/under-estimate depending on concavity. Simpson's rule is exact for polynomials up to degree 3. |
 
 ---
 
 ### Matrix Operations Quick Reference
-
 
 **Determinant Shortcuts:**
 
@@ -2131,9 +2071,9 @@ x + y + 4z = 6
 | 3×3: expand along first row | `a(ei - fh) - b(di - fg) + c(dh - eg)` |
 | Triangular (upper or lower) | Product of diagonal entries |
 | Diagonal matrix | Product of diagonal entries |
-| `cA` (n×n) | `câÂÂ�¿·det(A)` |
+| `cA` (nÃƒâ€”n) | `cÃ¢Â¿Â·det(A)` |
 | `Aᵀ` | Same as `det(A)` |
-| `AâÂÂ�»¹` | `1/det(A)` |
+| `AÃ¢Â»Â¹` | `1/det(A)` |
 | `AB` | `det(A)·det(B)` |
 | Orthogonal matrix | `±1` |
 | Nilpotent matrix | 0 |
@@ -2144,9 +2084,9 @@ x + y + 4z = 6
 | Matrix | Inverse |
 |--------|---------|
 | 2×2: `[[a,b],[c,d]]` | `1/(ad-bc) · [[d,-b],[-c,a]]` |
-| 3×3: `AâÂÂ�»¹ = adj(A)/det(A)` | Cofactor matrix transposed, divided by det |
-| Diagonal: `diag(dâ‚ÂÂ�,...,dₙ)` | `diag(1/dâ‚ÂÂ�,...,1/dₙ)` |
-| Orthogonal: `AᵀA = I` | `AâÂÂ�»¹ = Aᵀ` |
+| 3Ãƒâ€”3: `AÃ¢Â»Â¹ = adj(A)/det(A)` | Cofactor matrix transposed, divided by det |
+| Diagonal: `diag(d₁,...,dₙ)` | `diag(1/d₁,...,1/dₙ)` |
+| Orthogonal: `AÃ¡Âµâ‚¬A = I` | `AÃ¢Â»Â¹ = Aáµ€` |
 
 **Rank Facts:**
 - `rank(A) = rank(Aᵀ) = rank(AᵀA) = rank(AAᵀ)`
@@ -2159,18 +2099,17 @@ x + y + 4z = 6
 
 ### Probability Distribution Comparison
 
-
 | Property | Binomial | Poisson | Normal |
 |----------|----------|---------|--------|
 | **When to use** | Fixed `n` trials, success/fail, constant `p` | Events at constant avg rate λ over time/space | Sum of many independent factors, continuous data |
-| **Parameters** | `n` (trials), `p` (success prob) | `λ` (average rate) | `μ` (mean), `ÃÂ�ƒ²` (variance) |
-| **PMF/PDF** | `C(n,k) p^k (1-p)^{n-k}` | `e^{-λ} λ^k / k!` | `(1/ÃÂ�ƒ√{2ÃÂ�€}) e^{-(x-μ)²/(2ÃÂ�ƒ²)}` |
+| **Parameters** | `n` (trials), `p` (success prob) | `ÃŽÂ»` (average rate) | `ÃŽÂ¼` (mean), `ÃƒÂ²` (variance) |
+| **PMF/PDF** | `C(n,k) p^k (1-p)^{n-k}` | `e^{-ÃŽÂ»} ÃŽÂ»^k / k!` | `(1/ÃÆ’Ã¢Ë†Å¡{2Ãâ‚¬}) e^{-(x-ÃŽÂ¼)Ã‚Â²/(2ÃƒÂ²)}` |
 | **Mean** | `np` | `λ` | `μ` |
-| **Variance** | `np(1-p)` | `λ` | `ÃÂ�ƒ²` |
+| **Variance** | `np(1-p)` | `ÃŽÂ»` | `ÃƒÂ²` |
 | **Range** | `0, 1, ..., n` | `0, 1, 2, ...` (unbounded) | `(-∞, ∞)` |
 | **GATE favorite** | Coin toss problems | Rare events, queue arrivals | Standard normal Z-tables, CLT |
 | **Relationship** | `n→∞, p→0, np=λ` → Poisson | `λ→∞` → approx Normal | → |
-| **MGF** | `(pe^t + 1-p)^n` | `e^{λ(e^t - 1)}` | `e^{μt + ÃÂ�ƒ²t²/2}` |
+| **MGF** | `(pe^t + 1-p)^n` | `e^{ÃŽÂ»(e^t - 1)}` | `e^{ÃŽÂ¼t + ÃƒÂ²tÂ²/2}` |
 
 **Key Insight:** When in doubt about which distribution, ask:
 1. Are there a fixed number of trials `n`? → **Binomial**
@@ -2182,12 +2121,11 @@ x + y + 4z = 6
 
 ### Calculus Formula Sheet
 
-
 **Differentiation:**
 
 | Function | Derivative |
 |----------|------------|
-| `xâÂÂ�¿` | `nxâÂÂ�¿âÂÂ�»¹` |
+| `xÃ¢ÂÂ¿` | `nxÃ¢ÂÂ¿Ã¢Â»Â¹` |
 | `e^{ax}` | `ae^{ax}` |
 | `aˣ` | `aˣ ln a` |
 | `ln x` | `1/x` |
@@ -2197,15 +2135,15 @@ x + y + 4z = 6
 | `sec(ax)` | `a·sec(ax)·tan(ax)` |
 | `cosec(ax)` | `-a·cosec(ax)·cot(ax)` |
 | `cot(ax)` | `-a·cosec²(ax)` |
-| `sinâÂÂ�»¹ x` | `1/√(1-x²)` |
-| `cosâÂÂ�»¹ x` | `-1/√(1-x²)` |
-| `tanâÂÂ�»¹ x` | `1/(1+x²)` |
+| `sinÃ¢Â»Â¹ x` | `1/âˆš(1-xÂ²)` |
+| `cosÃ¢Â»Â¹ x` | `-1/âˆš(1-xÂ²)` |
+| `tanÃ¢Â»Â¹ x` | `1/(1+xÂ²)` |
 
 **Integration:**
 
 | Integral | Result |
 |----------|--------|
-| `∫ xâÂÂ�¿ dx` | `xâÂÂ�¿âÂÂ�º¹/(n+1) + C, n≠-1` |
+| `Ã¢Ë†Â« xÃ¢ÂÂ¿ dx` | `xÃ¢ÂÂ¿Ã¢ÂºÂ¹/(n+1) + C, nâ‰ -1` |
 | `∫ 1/x dx` | `ln\|x\| + C` |
 | `∫ e^{ax} dx` | `e^{ax}/a + C` |
 | `∫ aˣ dx` | `aˣ/ln a + C` |
@@ -2214,8 +2152,8 @@ x + y + 4z = 6
 | `∫ sec²(ax) dx` | `tan(ax)/a + C` |
 | `∫ cosec²(ax) dx` | `-cot(ax)/a + C` |
 | `∫ sec(ax)tan(ax) dx` | `sec(ax)/a + C` |
-| `∫ 1/(1+x²) dx` | `tanâÂÂ�»¹ x + C` |
-| `∫ 1/√(1-x²) dx` | `sinâÂÂ�»¹ x + C` |
+| `Ã¢Ë†Â« 1/(1+xÃ‚Â²) dx` | `tanÃ¢Â»Â¹ x + C` |
+| `Ã¢Ë†Â« 1/Ã¢Ë†Å¡(1-xÃ‚Â²) dx` | `sinÃ¢Â»Â¹ x + C` |
 | `∫ 1/(a²-x²) dx` | `(1/2a) ln\|(a+x)/(a-x)\| + C` |
 | `∫ u dv` (by parts) | `uv - ∫ v du` |
 
@@ -2238,26 +2176,25 @@ x + y + 4z = 6
 | `lim_{x→0} (1 + x)^{1/x}` | `e` |
 | `lim_{x→∞} (1 + 1/x)ˣ` | `e` |
 | `lim_{x→0} (aˣ - 1)/x` | `ln a` |
-| `lim_{x→0} (sinâÂÂ�»¹ x)/x` | 1 |
+| `lim_{xâ†’0} (sinÃ¢Â»Â¹ x)/x` | 1 |
 | `lim_{x→∞} x^{1/x}` | 1 |
 
 ---
 
 ### Numerical Methods Convergence
 
-
 | Method | Convergence Order | Error Type | Notes |
 |--------|-------------------|------------|-------|
-| **Bisection** | Linear (order 1) | `≤ (b-a)/2âÂÂ�¿` | Always converges if sign change exists. Slow but reliable. |
+| **Bisection** | Linear (order 1) | `Ã¢â€°Â¤ (b-a)/2Ã¢Â¿` | Always converges if sign change exists. Slow but reliable. |
 | **Regula-Falsi** | Linear (order 1) | Varies | Faster than bisection but may have slow end convergence. |
-| **Newton-Raphson** | Quadratic (order 2) | `âˆÂÂ� (error)²` | Very fast near root. Fails if `f'(x)≈0`. Needs derivative. |
-| **Secant** | Superlinear (≈1.618) | `âˆÂÂ� (error)^{ÃÂ�†}` | No derivative needed. Slightly slower than Newton. |
-| **Fixed-Point Iteration** | Linear (order 1) | `âˆÂÂ� g'(ξ)·error` | Converges if `\|g'(x)\| < 1` near root. |
+| **Newton-Raphson** | Quadratic (order 2) | `Ã¢Ë†Â (error)²` | Very fast near root. Fails if `f'(x)≈0`. Needs derivative. |
+| **Secant** | Superlinear (Ã¢â€°Ë†1.618) | `Ã¢Ë†Â (error)^{Ã†}` | No derivative needed. Slightly slower than Newton. |
+| **Fixed-Point Iteration** | Linear (order 1) | `∝ g'(ξ)·error` | Converges if `\|g'(x)\| < 1` near root. |
 | **Trapezoidal Rule** | `O(h²)` | `-(b-a)h²f''(ξ)/12` | Simple, good for monotonic functions. |
-| **Simpson's 1/3 Rule** | `O(hâÂÂ�´)` | `-(b-a)hâÂÂ�´fâÂÂ�½âÂÂ�´âÂÂ�¾(ξ)/180` | Exact for polynomials ≤ degree 3. More accurate. |
+| **Simpson's 1/3 Rule** | `O(hÃ¢ÂÂ´)` | `-(b-a)hÃ¢ÂÂ´fÃ¢ÂÂ½Ã¢ÂÂ´Ã¢Â¾(Î¾)/180` | Exact for polynomials â‰¤ degree 3. More accurate. |
 | **Gauss-Seidel** | Linear | Depends on spectral radius | Converges if matrix is diagonally dominant or SPD. |
-| **Euler's Method (ODE)** | `O(h)` | `âˆÂÂ� h` | Simplest ODE solver. Use RK4 for better accuracy. |
-| **RK4 (ODE)** | `O(hâÂÂ�´)` | `âˆÂÂ� hâÂÂ�´` | Standard for non-stiff ODEs. Good balance of accuracy/cost. |
+| **Euler's Method (ODE)** | `O(h)` | `∝ h` | Simplest ODE solver. Use RK4 for better accuracy. |
+| **RK4 (ODE)** | `O(hÃ¢ÂÂ´)` | `Ã¢Ë†Â hÃ¢Â´` | Standard for non-stiff ODEs. Good balance of accuracy/cost. |
 
 **Convergence Rule of Thumb:**
 - Need high accuracy? → Newton-Raphson (if derivative available) or Secant
@@ -2268,7 +2205,6 @@ x + y + 4z = 6
 ---
 
 ### Graph Theory Formula Summary
-
 
 | Concept | Formula |
 |---------|---------|

@@ -1,3 +1,7 @@
+---
+description: "Exam Weightage: 4–6 Qs in IBPS SO IT Officer Mains (Banking technology, digital payment security, RBI guidelines) Key Topics: RBI cybersecurity"
+---
+
 # Chapter 5: Banking & Payment Security
 
 > **Exam Weightage:** 4–6 Qs in IBPS SO IT Officer Mains (Banking technology, digital payment security, RBI guidelines)

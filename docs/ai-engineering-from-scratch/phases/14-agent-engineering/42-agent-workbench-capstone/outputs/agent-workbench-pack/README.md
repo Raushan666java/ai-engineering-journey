@@ -1,3 +1,7 @@
+---
+description: "The VERSION file is the contract. Major bumps require a state migration."
+---
+
 # Agent Workbench Pack
 
 Drop-in workbench for any repo that wants reliable agent work.

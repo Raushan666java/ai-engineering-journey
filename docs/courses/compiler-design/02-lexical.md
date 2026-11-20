@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: define tokens, lexemes, and patterns; design input buffering schemes; specify tokens using"
+---
+
 # Chapter 2: Lexical Analysis
 
 **? Previous:** [Chapter 1: Introduction](01-introduction.md) | **Next:** [Chapter 3: Top-Down Parsing](03-parsing-topdown.md)

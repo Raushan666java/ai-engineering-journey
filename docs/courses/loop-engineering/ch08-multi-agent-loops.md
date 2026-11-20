@@ -1,3 +1,7 @@
+---
+description: "Debate loops simulate structured argumentation between agents. They produce higher-quality reasoning than single-agent approaches by forcing each agent to"
+---
+
 # Chapter 8: Multi-Agent Loops
 
 > **Previous:** [Loop Safety](./ch07-loop-safety.md) | **Next:** [Loop Tooling](./ch09-loop-tooling.md)

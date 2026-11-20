@@ -4,6 +4,7 @@ slug: /computer-networks/01-introduction
 title: "Chapter 1: Introduction to Computer Networks"
 sidebar_label: "Chapter 1: Introduction to Computer Networks"
 sidebar_position: 1
+description: "A computer network is an interconnected collection of autonomous computers that exchange data and share resources. Two computers are said to be"
 ---
 
 # Chapter 1: Introduction to Computer Networks

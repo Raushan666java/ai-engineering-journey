@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to identify whether a model inference kernel is compute-bound or memory-bound using the roofline model,. reason about"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Computer Architecture for AI Engineers

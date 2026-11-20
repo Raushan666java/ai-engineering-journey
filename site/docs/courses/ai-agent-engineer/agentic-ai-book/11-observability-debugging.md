@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/11-observability-debugging
 title: "Part IV — Production"
 sidebar_label: "Part IV — Production"
 sidebar_position: 12
+description: "A traditional bug: you can step through deterministic code and know exactly why line 47 produced the wrong output. An agent bug: the model made a"
 ---
 
 # Part IV — Production

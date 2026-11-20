@@ -1,3 +1,7 @@
+---
+description: "Agent Evaluation: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module covers"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Agent Evaluation

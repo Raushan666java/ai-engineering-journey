@@ -1,3 +1,7 @@
+---
+description: "JUnit 5 is a complete rewrite of the most widely used testing framework in the Java ecosystem. Unlike JUnit 4, which was a single monolithic library"
+---
+
 # JUnit 5 Deep Dive
 > **Previous:** [Keycloak](28-keycloak.md) | **Next:** [Mockito](30-mockito.md)
 

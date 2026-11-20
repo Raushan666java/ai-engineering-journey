@@ -4,6 +4,7 @@ slug: /artificial-intelligence/02-problem-solving
 title: "Chapter 2: Problem-Solving by Search"
 sidebar_label: "Chapter 2: Problem-Solving by Search"
 sidebar_position: 3
+description: "By the conclusion of this chapter, the student will be able to: (1) formulate a problem as a state-space search; (2) implement and analyze uninformed"
 ---
 
 # Chapter 2: Problem-Solving by Search

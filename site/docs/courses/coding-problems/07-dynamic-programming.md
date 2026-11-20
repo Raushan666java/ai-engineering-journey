@@ -4,6 +4,7 @@ slug: /coding-problems/07-dynamic-programming
 title: "Chapter 07: Dynamic Programming"
 sidebar_label: "Chapter 07: Dynamic Programming"
 sidebar_position: 7
+description: "Dynamic Programming is the most important algorithmic technique for coding interviews. It involves breaking problems into overlapping subproblems, solving"
 ---
 
 # Chapter 07: Dynamic Programming

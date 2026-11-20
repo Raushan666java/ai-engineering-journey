@@ -4,6 +4,7 @@ slug: /algorithms/11-graph-shortest
 title: "Chapter 11: Graph Shortest Paths"
 sidebar_label: "Chapter 11: Graph Shortest Paths"
 sidebar_position: 11
+description: "Chapter 10: Dynamic Programming — Trees & Grids — Recursive problem-solving on graph structures | Next: Chapter 12: Minimum Spanning Trees — From shortest"
 ---
 
 # Chapter 11: Graph Shortest Paths

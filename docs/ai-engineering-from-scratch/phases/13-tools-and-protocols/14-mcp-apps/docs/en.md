@@ -1,3 +1,7 @@
+---
+description: "Text-only tool output caps what agents can show. MCP Apps (SEP-1724, official January 26, 2026) let a tool return sandboxed interactive HTML rendered"
+---
+
 # MCP Apps — Interactive UI Resources via `ui://`
 
 > Text-only tool output caps what agents can show. MCP Apps (SEP-1724, official January 26, 2026) let a tool return sandboxed interactive HTML rendered inline in Claude Desktop, ChatGPT, Cursor, Goose, and VS Code. Dashboards, forms, maps, 3D scenes, all through one extension. This lesson walks the `ui://` resource scheme, the `text/html;profile=mcp-app` MIME, the iframe-sandbox postMessage protocol, and the security surface that comes with letting a server render HTML.

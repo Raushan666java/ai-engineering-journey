@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/06-docker-kubernetes-cloud/01-docker-basics
 title: "Docker Basics — Containers, Images, and Docker Engine"
 sidebar_label: "Docker Basics — Containers, Images, and Docker Engine"
 sidebar_position: 81
+description: "Docker is the standard for packaging and deploying AI applications — from training environments with GPU passthrough to production inference services at"
 ---
 
 <!-- improved -->

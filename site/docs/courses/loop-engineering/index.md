@@ -1,3 +1,7 @@
+---
+description: "AI agents are rapidly evolving from single-shot chatbots to autonomous systems that plan, act, observe, and loop. The loop is the fundamental abstraction"
+---
+
 ﻿---
 id: index
 slug: /loop-engineering

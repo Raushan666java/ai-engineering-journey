@@ -4,6 +4,7 @@ slug: /compiler-design/05-sdt
 title: "Chapter 5: Syntax-Directed Translation"
 sidebar_label: "Chapter 5: Syntax-Directed Translation"
 sidebar_position: 5
+description: "After completing this chapter, students will be able to: define syntax-directed definitions (SDDs) for S-attributed and L-attributed grammars; construct"
 ---
 
 # Chapter 5: Syntax-Directed Translation

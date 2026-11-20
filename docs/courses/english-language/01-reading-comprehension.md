@@ -1,3 +1,7 @@
+---
+description: "Reading Comprehension (RC) is the single highest-weightage topic in IBPS SO IT Officer Prelims, accounting for 8–10 questions out of 25 English Language"
+---
+
 # Chapter 1: Reading Comprehension
 
 ## Learning Objectives

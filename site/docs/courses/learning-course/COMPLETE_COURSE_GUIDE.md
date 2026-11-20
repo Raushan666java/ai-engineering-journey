@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/COMPLETE_COURSE_GUIDE title: '🎓 Complete AI-Enhanced Learning Course - Master Guide' sidebar_label: '🎓 Complete AI-Enhanced"
+---
+
 ﻿---
 slug: /learning-course/COMPLETE_COURSE_GUIDE
 title: "🎓 Complete AI-Enhanced Learning Course - Master Guide"

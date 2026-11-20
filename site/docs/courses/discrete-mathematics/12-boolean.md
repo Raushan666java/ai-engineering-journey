@@ -4,6 +4,7 @@ slug: /discrete-mathematics/12-boolean
 title: "Chapter 12: Boolean Algebra"
 sidebar_label: "Chapter 12: Boolean Algebra"
 sidebar_position: 12
+description: 'The dual of a Boolean expression replaces $+$ with $ cdot$, $ cdot$ with $+$, $0$ with description:$, and description:$ with $0$. The dual of every Boolean identity is also'
 ---
 
 # Chapter 12: Boolean Algebra

@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to tailor your interview preparation to each FAANG company specific process, map your stories to Amazon Leadership"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # FAANG Company Deep-Dives and Leadership Principles

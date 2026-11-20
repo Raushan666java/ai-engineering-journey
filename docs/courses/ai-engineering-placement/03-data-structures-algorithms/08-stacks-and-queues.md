@@ -1,3 +1,7 @@
+---
+description: "Trees are hierarchical data structures fundamental to representing organized data. Binary trees, BSTs, and balanced trees (AVL, Red-Black) are essential"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Stacks and Queues

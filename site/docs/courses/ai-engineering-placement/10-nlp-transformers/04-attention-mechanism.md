@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/10-nlp-transformers/04-attention-mechanism
 title: "Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention"
 sidebar_label: "Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention"
 sidebar_position: 141
+description: "Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention: Natural language processing is how machines understand human text"
 ---
 
 <!-- improved -->

@@ -1,3 +1,7 @@
+---
+description: "Everything in this course so far has been a component: the pipeline, the prompts, the mastery methods, the recall drills, the code practice, the notes"
+---
+
 # Chapter 12: Capstone — Your Complete AI Study System
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

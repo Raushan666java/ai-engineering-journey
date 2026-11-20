@@ -1,3 +1,7 @@
+---
+description: "Imagine you are standing at the entrance of a vast maze with walls as tall as your shoulders. Somewhere deep inside is the exit. You cannot see over the"
+---
+
 # Chapter 3: Solving Problems by Searching
 
 **Previous:** [Chapter 2: Intelligent Agents](02-agents.md) | **Next:** [Chapter 3: Informed Search and Heuristics](03-informed-search.md)

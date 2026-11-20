@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/05-fastapi-backend/08-testing-fastapi
 title: "Testing FastAPI — Unit Tests, Integration Tests, and TDD"
 sidebar_label: "Testing FastAPI — Unit Tests, Integration Tests, and TDD"
 sidebar_position: 76
+description: "Testing FastAPI — Unit Tests, Integration Tests, and TDD: FastAPI is the modern Python framework for building AI APIs. Its async support, automatic"
 ---
 
 <!-- improved -->

@@ -1,3 +1,7 @@
+---
+description: "CI/CD for Spring Boot: C) The one with best operational characteristics. Production choices should prioritize observability, maintainability, and"
+---
+
 # CI/CD for Spring Boot
 
 > **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)

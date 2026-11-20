@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: A detective arrives at a crime scene. The victim is on the floor, a window is broken, a safe is open, and footprints lead outside. The"
+---
+
 # Chapter 7: Logical Reasoning and Inference
 
 **Previous:** [Chapter 6: Logical Agents and Propositional Logic](06-logic.md) | **Next:** [Chapter 8: Uncertainty in AI](08-uncertainty.md)

@@ -4,6 +4,7 @@ slug: /job-preparation/06-govt-job-portal-notification-tracker
 title: "Government Job Portal & Notification Tracker"
 sidebar_label: "Government Job Portal & Notification Tracker"
 sidebar_position: 6
+description: "Government vacancies have strict deadlines, often 2-4 weeks from notification to application close. Missing a deadline means waiting another year for some"
 ---
 
 # Government Job Portal & Notification Tracker

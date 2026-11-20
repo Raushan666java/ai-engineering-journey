@@ -1,3 +1,7 @@
+---
+description: "Pricing snapshot dated 2026-04. Numeric claims below reflect vendor rate cards captured at this lesson's publication; verify against the linked docs"
+---
+
 # Prompt Caching and Semantic Caching Economics
 
 > **Pricing snapshot dated 2026-04.** Numeric claims below reflect vendor rate cards captured at this lesson's publication; verify against the linked docs before quoting them downstream.

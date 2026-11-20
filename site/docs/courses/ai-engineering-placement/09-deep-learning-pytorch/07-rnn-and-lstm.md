@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/09-deep-learning-pytorch/07-rnn-and-lstm
 title: "RNN and LSTM — RNN, LSTM, GRU, Bidirectional RNNs, Seq2Seq, Teacher Forcing"
 sidebar_label: "RNN and LSTM — RNN, LSTM, GRU, Bidirectional RNNs, Seq2Seq, Teacher Forcing"
 sidebar_position: 132
+description: "RNN and LSTM — RNN, LSTM, GRU, Bidirectional RNNs, Seq2Seq, Teacher Forcing: Deep learning powers modern AI breakthroughs. PyTorch is the framework of"
 ---
 
 <!-- improved -->

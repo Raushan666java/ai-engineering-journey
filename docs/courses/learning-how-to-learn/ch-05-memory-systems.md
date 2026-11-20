@@ -1,3 +1,7 @@
+---
+description: "Transform your memory from a sieve to a steel trap. This chapter teaches you the ancient art of memory palaces, the science of encoding specificity, and"
+---
+
 # Chapter 5: Memory Systems & Mnemonics
 
 > **Prerequisites:** [Chapter 4: Pomodoro, Interleaving & the Feynman Technique](./ch-04-pomodoro-interleaving-feynman.md) — Focus discipline and comprehension checks.

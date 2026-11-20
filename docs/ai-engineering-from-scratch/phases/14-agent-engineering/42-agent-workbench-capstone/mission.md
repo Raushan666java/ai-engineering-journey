@@ -1,3 +1,7 @@
+---
+description: "Assemble the eleven prior lessons into a versioned outputs/agent-workbench-pack/ directory with an installer that lays it idempotently into any target"
+---
+
 # Mission - Capstone: Ship a Reusable Agent Workbench Pack
 
 ## Goal

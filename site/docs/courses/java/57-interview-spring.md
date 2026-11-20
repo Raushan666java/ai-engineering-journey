@@ -4,6 +4,7 @@ slug: /java/57-interview-spring
 title: "Spring & Spring Boot Interview Q&A"
 sidebar_label: "Spring & Spring Boot Interview Q&A"
 sidebar_position: 57
+description: "This chapter covers 35+ essential Spring and Spring Boot interview questions from DI/IoC and bean lifecycle through auto-configuration, MVC, data access"
 ---
 
 # Spring & Spring Boot Interview Q&A

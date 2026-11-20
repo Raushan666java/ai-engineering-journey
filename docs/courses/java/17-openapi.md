@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Add springdoc-openapi-starter-webmvc-ui as a dependency and visit /swagger-ui.html to see your API documentation instantly — no extra"
+---
+
 > **Previous:** [Validation](./16-validation.md) | **Next:** [File Handling](./18-file-handling.md)
 
 # API Documentation with OpenAPI/Swagger

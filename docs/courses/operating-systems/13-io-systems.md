@@ -1,3 +1,7 @@
+---
+description: "A[I/O Hardware Basics] --> B[Ports / Buses / Controllers] B --> C[I/O Control Methods] G --> H[I/O Software Layers] H --> I[Buffering & Caching & Spooling]"
+---
+
 # Chapter 13: I/O Systems
 
 **<< [Secondary Storage](./12-secondary-storage.md)** | [**Next: The Linux Kernel**](./14-linux-kernel.md) >>

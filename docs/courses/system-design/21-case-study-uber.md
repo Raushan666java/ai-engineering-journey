@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Uber connects riders with drivers in real time across 70+"
+---
+
 # Chapter 21: Case Study — Uber and Location-Based Services
 > **Previous:** [20 Case Study Netflix](./20-case-study-netflix.md) | **Next:** [22 Case Study Twitter](./22-case-study-twitter.md)
 

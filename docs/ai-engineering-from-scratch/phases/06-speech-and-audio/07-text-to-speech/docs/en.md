@@ -1,3 +1,7 @@
+---
+description: "ASR inverts speech to text; TTS inverts text to speech. The 2026 stack is three parts: text → tokens, tokens → mel, mel → waveform. Each part has a"
+---
+
 # Text-to-Speech (TTS) — From Tacotron to F5 and Kokoro
 
 > ASR inverts speech to text; TTS inverts text to speech. The 2026 stack is three parts: text → tokens, tokens → mel, mel → waveform. Each part has a default model that fits in a laptop.

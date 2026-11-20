@@ -1,3 +1,7 @@
+---
+description: "A sequential circuit differs from a combinational circuit in one critical respect: its output depends on both the present inputs and the past history of"
+---
+
 # Chapter 6: Sequential Circuits
 
 > **Prereq:** Chapter 5 (Combinational Circuits) ? sequential circuits add memory to combinational logic.

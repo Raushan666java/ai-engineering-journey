@@ -1,3 +1,7 @@
+---
+description: "Docker layer caching is critical for fast builds in CI/CD. The following tool analyzes Dockerfile layers, detects cache invalidation points, and"
+---
+
 # Chapter 5: Containerization
 
 > **Prev:** [CI/CD](./04-continuous-integration.md)

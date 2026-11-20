@@ -1,3 +1,7 @@
+---
+description: "AI research moves fast. Over 10,000 papers are published monthly on arXiv alone. New models, datasets, and techniques emerge weekly. Keeping up is not"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Keeping Up with AI Research

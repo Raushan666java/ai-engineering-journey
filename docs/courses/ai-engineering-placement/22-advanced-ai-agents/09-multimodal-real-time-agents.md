@@ -1,3 +1,7 @@
+---
+description: "Multimodal & Real-Time Agents: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Multimodal & Real-Time Agents

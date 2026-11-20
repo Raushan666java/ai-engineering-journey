@@ -1,3 +1,7 @@
+---
+description: "A rigorous treatment of data structures: the fundamental building blocks of efficient computation. This course covers the design, analysis, and"
+---
+
 # Data Structures — Complete Course
 
 ## Course Description

@@ -4,6 +4,7 @@ slug: /english-language/04-verbal-ability
 title: "Chapter 4: Verbal Ability"
 sidebar_label: "Chapter 4: Verbal Ability"
 sidebar_position: 4
+description: "Verbal Ability in government exams is a broad category that tests your command over sentence structure, logical sequencing, and contextual"
 ---
 
 # Chapter 4: Verbal Ability

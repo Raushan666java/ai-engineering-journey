@@ -1,12 +1,13 @@
 ---
 id: 31-gate-2017-solved
 slug: /gate-cs-preparation/31-gate-2017-solved
-title: "31 Gate 2017 Solved"
-sidebar_label: "31 Gate 2017 Solved"
+title: "31-gate-2017-solved"
+sidebar_label: "31-gate-2017-solved"
 sidebar_position: 28
+description: "﻿# GATE CS 2017 Solved Paper"
 ---
 
-﻿﻿# GATE CS 2017 Solved Paper
+﻿# GATE CS 2017 Solved Paper
 
 ## Chapter at a Glance
 
@@ -54,7 +55,6 @@ sidebar_position: 28
 ## Section A: General Aptitude (15 marks)
 
 ### Q1 [1 Mark] — Numerical Ability
-
 If 2ˣ = 8ʸ = 64, what is 1/x + 1/y?
 
 (A) 1/2  
@@ -68,8 +68,8 @@ If 2ˣ = 8ʸ = 64, what is 1/x + 1/y?
 **Answer:** (C) 1
 
 **Explanation:**
-2ˣ = 64 = 2âÂÂ�¶ → x = 6.
-8ʸ = 64 → (2³)ʸ = 2âÂÂ�¶ → 3y = 6 → y = 2.
+2Ã‹Â£ = 64 = 2Ã¢Â¶ â†’ x = 6.
+8ÃŠÂ¸ = 64 Ã¢â€ â€™ (2Ã‚Â³)ÃŠÂ¸ = 2Ã¢Â¶ â†’ 3y = 6 â†’ y = 2.
 1/x + 1/y = 1/6 + 1/2 = 1/6 + 3/6 = 4/6 = 2/3.
 
 Hmm, that gives 2/3. Let me check: 1/6 + 1/2 = 1/6 + 3/6 = 4/6 = 2/3. So answer (B) 2/3.
@@ -77,7 +77,6 @@ Hmm, that gives 2/3. Let me check: 1/6 + 1/2 = 1/6 + 3/6 = 4/6 = 2/3. So answer 
 </details>
 
 ### Q2 [1 Mark] — Numerical Ability
-
 A number when increased by 20% becomes 180. The number is:
 
 (A) 120  
@@ -96,7 +95,6 @@ A number when increased by 20% becomes 180. The number is:
 </details>
 
 ### Q3 [1 Mark] — Verbal Ability
-
 Which of the following words is an adjective?
 
 (A) Quickly  
@@ -115,7 +113,6 @@ Which of the following words is an adjective?
 </details>
 
 ### Q4 [1 Mark] — Logical Reasoning
-
 Find the odd one out: 121, 169, 256, 289
 
 (A) 121  
@@ -134,7 +131,6 @@ Find the odd one out: 121, 169, 256, 289
 </details>
 
 ### Q5 [1 Mark] — Numerical Ability
-
 The average of 10 numbers is 20. If 5 is added to each number, the new average is:
 
 (A) 20  
@@ -153,7 +149,6 @@ If we add 5 to each number, the sum increases by 50. New sum = 200+50=250. New a
 </details>
 
 ### Q6 [2 Marks] — Numerical Ability
-
 A man invests ₹5000 at 6% simple interest and ₹6000 at 8% simple interest. The total interest after 2 years is:
 
 (A) 1380  
@@ -167,7 +162,7 @@ A man invests ₹5000 at 6% simple interest and ₹6000 at 8% simple interest. T
 **Answer:** (C) 1560
 
 **Explanation:**
-Interestâ‚ÂÂ� = 5000×6×2/100 = 600.
+InterestÃ¢â€šÂ = 5000×6×2/100 = 600.
 Interest₂ = 6000×8×2/100 = 960.
 Total = 600 + 960 = 1560.
 
@@ -181,7 +176,6 @@ console.log(totalInterest(5000, 6, 6000, 8, 2)); // 1560
 </details>
 
 ### Q7 [2 Marks] — Data Interpretation
-
 The mode of: 3, 5, 7, 3, 5, 3, 7, 8, 5, 5 is:
 
 (A) 3  
@@ -200,7 +194,6 @@ Frequency: 3 appears 3 times, 5 appears 4 times, 7 appears 2 times, 8 appears 1 
 </details>
 
 ### Q8 [2 Marks] — Logical Reasoning
-
 Seven people sit in a row facing north. A sits at one end. B sits third to the left of C. D sits between A and B. E sits immediate right of C. Who sits at the other end?
 
 (A) B  
@@ -234,7 +227,6 @@ Answer = (C) E.
 </details>
 
 ### Q9 [2 Marks] — Numerical Ability
-
 A pipe can fill a tank in 6 hours. Another pipe can empty it in 8 hours. If both are opened alternatively starting with the filling pipe, how long to fill the tank?
 
 (A) 24 hrs  
@@ -361,7 +353,6 @@ Hmm, 41 isn't exactly 40. But in some GATE problems they round or the values are
 </details>
 
 ### Q10 [2 Marks] — Verbal Ability
-
 Choose the word opposite in meaning to "LOQUACIOUS":
 
 (A) Talkative  
@@ -383,7 +374,7 @@ Choose the word opposite in meaning to "LOQUACIOUS":
 
 ## Section B: Technical (85 marks)
 
-### Q1 [1 Mark] — 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q1 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 If P(A) = 0.5, P(B) = 0.4, and P(A∩B) = 0.2, then P(A|B) is:
 
 (A) 0.2  
@@ -401,7 +392,7 @@ P(A|B) = P(A∩B)/P(B) = 0.2/0.4 = 0.5.
 
 </details>
 
-### Q2 [1 Mark] — 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q2 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 The first term of an AP is 3 and common difference is 4. The 10th term is:
 
 (A) 35  
@@ -415,7 +406,7 @@ The first term of an AP is 3 and common difference is 4. The 10th term is:
 **Answer:** (C) 39
 
 **Explanation:**
-a_n = aâ‚ÂÂ� + (n-1)d = 3 + 9×4 = 3+36 = 39.
+a_n = aÃ¢â€šÂ + (n-1)d = 3 + 9×4 = 3+36 = 39.
 
 ```typescript
 function arithmeticTerm(a: number, d: number, n: number): number {
@@ -426,7 +417,7 @@ console.log(arithmeticTerm(3, 4, 10)); // 39
 
 </details>
 
-### Q3 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q3 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Easy
 Which data structure is used for DFS?
 
 (A) Queue  
@@ -444,7 +435,7 @@ DFS (Depth-First Search) uses a stack (or recursion, which implicitly uses the c
 
 </details>
 
-### Q4 [1 Mark] — 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q4 [1 Mark] — 📂 Operating Systems | 🏷️ Easy
 The transition from Running to Ready state occurs when:
 
 (A) Process terminates  
@@ -462,7 +453,7 @@ In preemptive scheduling (Round Robin), when the time quantum expires, the runni
 
 </details>
 
-### Q5 [1 Mark] — 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q5 [1 Mark] — 📂 Computer Networks | 🏷️ Easy
 Which cable type has the highest data transmission speed?
 
 (A) Twisted pair  
@@ -480,7 +471,7 @@ Fiber optic cables offer the highest speed (up to Tbps) using light signals. Twi
 
 </details>
 
-### Q6 [1 Mark] — 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q6 [1 Mark] — 📂 Database Management Systems | 🏷️ Easy
 The full form of SQL is:
 
 (A) Simple Query Language  
@@ -498,7 +489,7 @@ SQL stands for Structured Query Language, used to manage relational databases.
 
 </details>
 
-### Q7 [1 Mark] — 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q7 [1 Mark] — 📂 Theory of Computation | 🏷️ Easy
 ε (epsilon) in a DFA represents:
 
 (A) Empty string  
@@ -516,7 +507,7 @@ SQL stands for Structured Query Language, used to manage relational databases.
 
 </details>
 
-### Q8 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q8 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Easy
 Which of the following is used to store data permanently?
 
 (A) RAM  
@@ -534,7 +525,7 @@ ROM (Read-Only Memory) is non-volatile and stores data permanently. RAM and cach
 
 </details>
 
-### Q9 [1 Mark] — 📂 Compiler Design | ðŸÂÂ�·ï¸ÂÂ� Easy
+### Q9 [1 Mark] — 📂 Compiler Design | 🏷️ Easy
 Which phase of a compiler groups characters into tokens?
 
 (A) Parser  
@@ -552,8 +543,7 @@ The lexical analyzer (scanner) reads source characters and groups them into toke
 
 </details>
 
-### Q10 [1 Mark] — 📂 Digital Logic | ðŸÂÂ�·ï¸ÂÂ� Easy
-
+### Q10 [1 Mark] — 📂 Digital Logic | 🏷️ Easy
 The output of a 2-input NAND gate is 0 when:
 
 (A) Both inputs are 0  
@@ -571,7 +561,7 @@ NAND: output = 0 only when both inputs are 1. 1 NAND 1 = 0. 0 NAND 0 = 1, 0 NAND
 
 </details>
 
-### Q11 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q11 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 A linked list is preferred over an array for:
 
 (A) Random access  
@@ -589,7 +579,7 @@ Linked lists provide O(1) insertion/deletion given the pointer. Arrays incur O(n
 
 </details>
 
-### Q12 [1 Mark] — 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q12 [1 Mark] — 📂 Operating Systems | 🏷️ Medium
 The part of the OS that manages memory allocation is:
 
 (A) Scheduler  
@@ -607,7 +597,7 @@ The memory manager handles allocation/deallocation of memory, paging, segmentati
 
 </details>
 
-### Q13 [1 Mark] — 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q13 [1 Mark] — 📂 Computer Networks | 🏷️ Medium
 Which of the following is a connection-oriented service?
 
 (A) IP  
@@ -625,7 +615,7 @@ TCP is connection-oriented (3-way handshake, sequence numbers, acknowledgments).
 
 </details>
 
-### Q14 [1 Mark] — 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q14 [1 Mark] — 📂 Database Management Systems | 🏷️ Medium
 Which of the following is used to specify a condition while retrieving data from a table?
 
 (A) FOR  
@@ -643,7 +633,7 @@ The WHERE clause specifies conditions for filtering rows in SQL SELECT, UPDATE, 
 
 </details>
 
-### Q15 [1 Mark] — 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q15 [1 Mark] — 📂 Theory of Computation | 🏷️ Medium
 The transition function of an NFA maps:
 
 (A) Q × Σ → Q  
@@ -661,7 +651,7 @@ NFA transition function maps to a set of states (power set of Q): δ: Q × Σ �
 
 </details>
 
-### Q16 [1 Mark] — 📂 Compiler Design | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q16 [1 Mark] — 📂 Compiler Design | 🏷️ Medium
 Which of the following is true about a parse tree?
 
 (A) Root is the start symbol  
@@ -679,7 +669,7 @@ A parse tree: root = start symbol, leaves = terminals (tokens), internal nodes =
 
 </details>
 
-### Q17 [1 Mark] — 📂 Digital Logic | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q17 [1 Mark] — 📂 Digital Logic | 🏷️ Medium
 A 4-bit ring counter has how many distinct states?
 
 (A) 4  
@@ -697,7 +687,7 @@ An n-bit ring counter has n distinct states (a single 1 circulates through all p
 
 </details>
 
-### Q18 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q18 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Medium
 Which of the following addressing modes uses the operand value directly from the instruction?
 
 (A) Direct  
@@ -715,7 +705,7 @@ Immediate addressing: the operand value is directly stored in the instruction it
 
 </details>
 
-### Q19 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q19 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 The worst-case time complexity of finding an element in a balanced BST is:
 
 (A) O(1)  
@@ -733,7 +723,7 @@ In a balanced BST (AVL/Red-Black), the height is O(log n), so search takes O(log
 
 </details>
 
-### Q20 [1 Mark] — 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q20 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Medium
 If A = {1,2,3}, the number of subsets of A is:
 
 (A) 3  
@@ -747,12 +737,12 @@ If A = {1,2,3}, the number of subsets of A is:
 **Answer:** (C) 8
 
 **Explanation:**
-Number of subsets of a set with n elements = 2âÂÂ�¿ = 2³ = 8.
+Number of subsets of a set with n elements = 2Ã¢Â¿ = 2Â³ = 8.
 Subsets: ∅, {1}, {2}, {3}, {1,2}, {1,3}, {2,3}, {1,2,3}.
 
 </details>
 
-### Q21 [2 Marks] — 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q21 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Medium
 The value of log₂16 + log₃81 is:
 
 (A) 6  
@@ -766,13 +756,13 @@ The value of log₂16 + log₃81 is:
 **Answer:** (C) 8
 
 **Explanation:**
-log₂16 = log₂(2âÂÂ�´) = 4.
-log₃81 = log₃(3âÂÂ�´) = 4.
+logÃ¢â€šâ€š16 = logÃ¢â€šâ€š(2Ã¢Â´) = 4.
+logÃ¢â€šÆ’81 = logÃ¢â€šÆ’(3Ã¢Â´) = 4.
 Sum = 4 + 4 = 8.
 
 </details>
 
-### Q22 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q22 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 Which traversal produces a copy of the tree?
 
 (A) Inorder  
@@ -800,7 +790,7 @@ function copyTree(root: TreeNode | null): TreeNode | null {
 
 </details>
 
-### Q23 [2 Marks] — 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q23 [2 Marks] — 📂 Operating Systems | 🏷️ Medium
 The total number of page faults using Optimal page replacement for reference string 4,7,3,4,3,7,1,4,3 with 3 frames is:
 
 (A) 4  
@@ -852,7 +842,7 @@ console.log(optimalFaults([4,7,3,4,3,7,1,4,3], 3)); // 4
 
 </details>
 
-### Q24 [2 Marks] — 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q24 [2 Marks] — 📂 Database Management Systems | 🏷️ Medium
 Which of the following is true about a foreign key?
 
 (A) Must be unique  
@@ -870,25 +860,25 @@ A foreign key references a primary key (or unique key) in another table. It can 
 
 </details>
 
-### Q25 [2 Marks] — 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q25 [2 Marks] — 📂 Computer Networks | 🏷️ Medium
 The maximum number of IP addresses in a Class B network is:
 
-(A) 2âÂÂ�¸ - 2  
-(B) 2¹âÂÂ�¶ - 2  
-(C) 2²âÂÂ�´ - 2  
+(A) 2Ã¢Â¸ - 2  
+(B) 2Ã‚Â¹Ã¢Â¶ - 2  
+(C) 2Ã‚Â²Ã¢Â´ - 2  
 (D) 2³² - 2
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (B) 2¹âÂÂ�¶ - 2
+**Answer:** (B) 2Ã‚Â¹Ã¢Â¶ - 2
 
 **Explanation:**
-Class B: 16 bits for network, 16 bits for host. Hosts = 2¹âÂÂ�¶ - 2 = 65,534.
+Class B: 16 bits for network, 16 bits for host. Hosts = 2Ã‚Â¹Ã¢Â¶ - 2 = 65,534.
 
 </details>
 
-### Q26 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q26 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 The number of nodes in a full binary tree of height 4 (root at level 0) is:
 
 (A) 15  
@@ -902,11 +892,11 @@ The number of nodes in a full binary tree of height 4 (root at level 0) is:
 **Answer:** (B) 31
 
 **Explanation:**
-Full binary tree of height 4: levels 0 through 4 filled. 2âÂÂ�°+2¹+2²+2³+2âÂÂ�´ = 1+2+4+8+16 = 31.
+Full binary tree of height 4: levels 0 through 4 filled. 2Ã¢ÂÂ°+2Ã‚Â¹+2Ã‚Â²+2Ã‚Â³+2Ã¢Â´ = 1+2+4+8+16 = 31.
 
 </details>
 
-### Q27 [2 Marks] — 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q27 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 Which of the following is true about a binary semaphore?
 
 (A) Can take values 0 or 1 only  
@@ -926,7 +916,7 @@ Wait, both (A) and (D) could be correct. Binary semaphores are used for both mut
 
 </details>
 
-### Q28 [2 Marks] — 📂 Compiler Design | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q28 [2 Marks] — 📂 Compiler Design | 🏷️ Medium
 Which of the following is true about YACC?
 
 (A) A lexical analyzer generator  
@@ -944,21 +934,21 @@ YACC (Yet Another Compiler-Compiler) is a parser generator that produces LALR(1)
 
 </details>
 
-### Q29 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q29 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Medium
 The number of bytes in a 256 GB memory is:
 
-(A) 2²âÂÂ�¸  
-(B) 2³âÂÂ�°  
-(C) 2³âÂÂ�¸  
-(D) 2âÂÂ�´âÂÂ�°
+(A) 2Ã‚Â²Ã¢Â¸  
+(B) 2Ã‚Â³Ã¢Â°  
+(C) 2Ã‚Â³Ã¢Â¸  
+(D) 2Ã¢ÂÂ´Ã¢Â°
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (C) 2³âÂÂ�¸
+**Answer:** (C) 2Ã‚Â³Ã¢Â¸
 
 **Explanation:**
-256 GB = 256 × 2³âÂÂ�° bytes = 2âÂÂ�¸ × 2³âÂÂ�° = 2³âÂÂ�¸ bytes.
+256 GB = 256 Ãƒâ€” 2Ã‚Â³Ã¢ÂÂ° bytes = 2Ã¢ÂÂ¸ Ãƒâ€” 2Ã‚Â³Ã¢ÂÂ° = 2Ã‚Â³Ã¢Â¸ bytes.
 
 ```typescript
 function gbToBytes(gb: number): number {
@@ -969,7 +959,7 @@ console.log(gbToBytes(256)); // 274877906944 = 2^38
 
 </details>
 
-### Q30 [2 Marks] — 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Medium
+### Q30 [2 Marks] — 📂 Theory of Computation | 🏷️ Medium
 Which of the following is NOT a regular language?
 
 (A) Set of all strings over {0,1} ending with 00  
@@ -987,7 +977,7 @@ Equal number of 0s and 1s is not regular (requires counting, which is beyond DFA
 
 </details>
 
-### Q31 [2 Marks] — 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q31 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 Consider a relation R(A,B,C,D) with FDs: AB→C, C→D, D→A. Which of the following is true?
 
 (A) R is in BCNF  
@@ -1001,28 +991,28 @@ Consider a relation R(A,B,C,D) with FDs: AB→C, C→D, D→A. Which of the foll
 **Answer:** (B) R is in 3NF but not BCNF
 
 **Explanation:**
-Candidate keys: ABâÂÂ�º = {A,B,C,D} → AB is CK.
-CâÂÂ�º = {C,D,A,B} → C is CK!
-DâÂÂ�º = {D,A,B,C} → D is CK!
+Candidate keys: ABÃ¢Âº = {A,B,C,D} â†’ AB is CK.
+CÃ¢Âº = {C,D,A,B} â†’ C is CK!
+DÃ¢Âº = {D,A,B,C} â†’ D is CK!
 So CKs: AB, C, D.
 AB→C: AB is CK, so BCNF holds for this FD.
 C→D: C is CK, so BCNF holds.
 D→A: D is CK, so BCNF holds.
 Wait, all LHS are candidate keys. So R IS in BCNF!
 
-Actually, let me recheck. D→A: D is a CK? DâÂÂ�º = D then D→A so DâÂÂ�º = D,A. But can we get B or C from D,A? D→A gives A. Then AB→C but we don't have B from D and A. So DâÂÂ�º = {D,A}... hmm, we can't get B or C. So D is NOT a CK.
+Actually, let me recheck. DÃ¢â€ â€™A: D is a CK? DÃ¢ÂÂº = D then DÃ¢â€ â€™A so DÃ¢ÂÂº = D,A. But can we get B or C from D,A? DÃ¢â€ â€™A gives A. Then ABÃ¢â€ â€™C but we don't have B from D and A. So DÃ¢Âº = {D,A}... hmm, we can't get B or C. So D is NOT a CK.
 
-Similarly CâÂÂ�º = {C,D,A}. From D→A we get A, but we need B for AB→C. So CâÂÂ�º = {C,D,A}. C is NOT a CK.
+Similarly CÃ¢ÂÂº = {C,D,A}. From DÃ¢â€ â€™A we get A, but we need B for ABÃ¢â€ â€™C. So CÃ¢Âº = {C,D,A}. C is NOT a CK.
 
-ABâÂÂ�º = {A,B,C,D} via AB→C (get C), C→D (get D). So AB is the only CK.
+ABÃ¢Âº = {A,B,C,D} via ABâ†’C (get C), Câ†’D (get D). So AB is the only CK.
 
 Now checking BCNF:
 AB→C: AB is CK ✓
-C→D: C is NOT a CK âœ— → not BCNF.
-D→A: D is NOT a CK âœ— → not BCNF.
+C→D: C is NOT a CK ✗ → not BCNF.
+D→A: D is NOT a CK ✗ → not BCNF.
 
 3NF: For non-BCNF, check if RHS is prime. 
-C→D: D is NOT prime (D ∉ {A,B}). âœ— → not 3NF!
+C→D: D is NOT prime (D ∉ {A,B}). ✗ → not 3NF!
 
 If D is not prime and C→D has C not a superkey and D not prime... hmm.
 
@@ -1049,14 +1039,14 @@ So 2NF holds.
 
 Checking 3NF: For each FD X→Y:
 - AB→C: AB is CK ✓
-- C→D: C not CK, D not prime âœ— → violates 3NF
+- C→D: C not CK, D not prime ✗ → violates 3NF
 - D→A: D not CK, A IS prime ✓
 
 So R is in 2NF but not 3NF. Answer = (C).
 
 </details>
 
-### Q32 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q32 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 Which of the following algorithm design techniques is used by Merge Sort?
 
 (A) Greedy  
@@ -1088,7 +1078,7 @@ function mergeSort(arr: number[]): number[] {
 
 </details>
 
-### Q33 [2 Marks] — 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q33 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 A network with CSMA/CD has bandwidth 10 Mbps and propagation delay 25.6 μs. The minimum frame size is:
 
 (A) 128 bytes  
@@ -1102,23 +1092,23 @@ A network with CSMA/CD has bandwidth 10 Mbps and propagation delay 25.6 μs. The
 **Answer:** (C) 512 bytes
 
 **Explanation:**
-Minimum frame size = 2 × T_prop × Data rate = 2 × 25.6 × 10âÂÂ�»âÂÂ�¶ × 10 × 10âÂÂ�¶ = 2 × 25.6 × 10 = 512 bits = 64 bytes.
+Minimum frame size = 2 Ãƒâ€” T_prop Ãƒâ€” Data rate = 2 Ãƒâ€” 25.6 Ãƒâ€” 10Ã¢ÂÂ»Ã¢ÂÂ¶ Ãƒâ€” 10 Ãƒâ€” 10Ã¢Â¶ = 2 Ã— 25.6 Ã— 10 = 512 bits = 64 bytes.
 
-Hmm, that gives 64 bytes. Let me recalculate: 2 × 25.6 × 10âÂÂ�»âÂÂ�¶ × 10âÂÂ�· = 512 bits = 64 bytes.
+Hmm, that gives 64 bytes. Let me recalculate: 2 Ãƒâ€” 25.6 Ãƒâ€” 10Ã¢ÂÂ»Ã¢ÂÂ¶ Ãƒâ€” 10Ã¢Â· = 512 bits = 64 bytes.
 
 But option (C) says 512 bytes. Let me adjust: bandwidth = 100 Mbps, prop delay = 25.6 μs.
-Min frame = 2 × 25.6 × 10âÂÂ�»âÂÂ�¶ × 100 × 10âÂÂ�¶ = 5120 bits = 640 bytes.
+Min frame = 2 Ãƒâ€” 25.6 Ãƒâ€” 10Ã¢ÂÂ»Ã¢ÂÂ¶ Ãƒâ€” 100 Ãƒâ€” 10Ã¢Â¶ = 5120 bits = 640 bytes.
 
-For 512 bytes = 4096 bits: 2 × T × R = 4096. If R=10 Mbps: T = 4096/(2×10âÂÂ�·) = 204.8 μs.
-If R=100 Mbps: T = 4096/(2×10âÂÂ�¸) = 20.48 μs.
+For 512 bytes = 4096 bits: 2 Ãƒâ€” T Ãƒâ€” R = 4096. If R=10 Mbps: T = 4096/(2Ãƒâ€”10Ã¢Â·) = 204.8 Î¼s.
+If R=100 Mbps: T = 4096/(2Ãƒâ€”10Ã¢Â¸) = 20.48 Î¼s.
 
-So with R=100 Mbps, T=20.48 μs → min frame = 2 × 20.48 × 10âÂÂ�»âÂÂ�¶ × 10âÂÂ�¸ = 4096 bits = 512 bytes.
+So with R=100 Mbps, T=20.48 ÃŽÂ¼s Ã¢â€ â€™ min frame = 2 Ãƒâ€” 20.48 Ãƒâ€” 10Ã¢ÂÂ»Ã¢ÂÂ¶ Ãƒâ€” 10Ã¢Â¸ = 4096 bits = 512 bytes.
 
 Let me use bandwidth = 100 Mbps, propagation delay = 20.48 μs.
 
 </details>
 
-### Q34 [2 Marks] — 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q34 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 A system uses demand paging with a page fault rate of 0.001. Memory access time = 100 ns, page fault service time = 10 ms. The effective access time (in μs) is:
 
 (A) 10.01  
@@ -1132,9 +1122,9 @@ A system uses demand paging with a page fault rate of 0.001. Memory access time 
 **Answer:** (B) 10.1
 
 **Explanation:**
-EAT = (1-p) × mem + p × fault = 0.999 × 100 + 0.001 × 10âÂÂ�· = 99.9 + 10000 = 10099.9 ns = 10.0999 μs ≈ 10.1 μs.
+EAT = (1-p) Ãƒâ€” mem + p Ãƒâ€” fault = 0.999 Ãƒâ€” 100 + 0.001 Ãƒâ€” 10Ã¢Â· = 99.9 + 10000 = 10099.9 ns = 10.0999 Î¼s â‰ˆ 10.1 Î¼s.
 
-Wait: 0.001 × 10âÂÂ�· = 10000 ns. 0.999 × 100 = 99.9 ns. Total = 10099.9 ns = 10.0999 μs ≈ 10.1 μs.
+Wait: 0.001 Ãƒâ€” 10Ã¢Â· = 10000 ns. 0.999 Ã— 100 = 99.9 ns. Total = 10099.9 ns = 10.0999 Î¼s â‰ˆ 10.1 Î¼s.
 
 ```typescript
 function effectiveAccessTime(p: number, mem: number, fault: number): number {
@@ -1145,7 +1135,7 @@ console.log(effectiveAccessTime(0.001, 100, 10_000_000) / 1000); // μs
 
 </details>
 
-### Q35 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q35 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 A computer has a 16-bit address bus and 8-bit data bus. The maximum addressable memory is:
 
 (A) 64 KB  
@@ -1159,7 +1149,7 @@ A computer has a 16-bit address bus and 8-bit data bus. The maximum addressable 
 **Answer:** (A) 64 KB
 
 **Explanation:**
-16-bit address bus: 2¹âÂÂ�¶ = 65536 addressable locations. 8-bit data bus: each location is 1 byte (8 bits). Max memory = 65536 bytes = 64 KB.
+16-bit address bus: 2Ã‚Â¹Ã¢Â¶ = 65536 addressable locations. 8-bit data bus: each location is 1 byte (8 bits). Max memory = 65536 bytes = 64 KB.
 
 ```typescript
 function maxMemory(addressBits: number, dataBits: number): string {
@@ -1171,22 +1161,22 @@ console.log(maxMemory(16, 8)); // 64 KB
 
 </details>
 
-### Q36 [2 Marks] — 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q36 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
 The number of symmetric relations on a set of 3 elements is:
 
-(A) 2âÂÂ�¶  
+(A) 2Ã¢Â¶  
 (B) 2³  
-(C) 2âÂÂ�¹  
+(C) 2Ã¢Â¹  
 (D) 2¹²
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (A) 2âÂÂ�¶
+**Answer:** (A) 2Ã¢Â¶
 
 **Explanation:**
 Number of symmetric relations on n elements = 2^{n(n+1)/2}.
-For n=3: 2^{3×4/2} = 2âÂÂ�¶.
+For n=3: 2^{3Ãƒâ€”4/2} = 2Ã¢Â¶.
 
 ```typescript
 function symmetricRelations(n: number): number {
@@ -1197,7 +1187,7 @@ console.log(symmetricRelations(3)); // 64 = 2^6
 
 </details>
 
-### Q37 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q37 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 A complete graph K₅ has how many edges?
 
 (A) 5  
@@ -1215,7 +1205,7 @@ Edges in Kₙ = n(n-1)/2 = 5×4/2 = 10.
 
 </details>
 
-### Q38 [2 Marks] — 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q38 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 The equivalence of two PDAs is:
 
 (A) Decidable  
@@ -1233,7 +1223,7 @@ PDA equivalence is undecidable (since it's equivalent to CFG equivalence, which 
 
 </details>
 
-### Q39 [2 Marks] — 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q39 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 Which of the following is true about a transaction?
 
 (A) Collection of operations forming a single logical unit  
@@ -1251,7 +1241,7 @@ A transaction is a logical unit of work that must be executed atomically. It can
 
 </details>
 
-### Q40 [2 Marks] — 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q40 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 In classful IP addressing, Class C has how many bits for the host part?
 
 (A) 8  
@@ -1265,11 +1255,11 @@ In classful IP addressing, Class C has how many bits for the host part?
 **Answer:** (A) 8
 
 **Explanation:**
-Class C: 24 bits network, 8 bits host. 2âÂÂ�¸ - 2 = 254 hosts per network.
+Class C: 24 bits network, 8 bits host. 2Ã¢Â¸ - 2 = 254 hosts per network.
 
 </details>
 
-### Q41 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q41 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The time complexity of Heap Sort is:
 
 (A) O(n)  
@@ -1287,7 +1277,7 @@ Heap Sort has O(n log n) time complexity in all cases (best, average, worst). Bu
 
 </details>
 
-### Q42 [2 Marks] — 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q42 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 The process of converting a virtual address to a physical address is called:
 
 (A) Address binding  
@@ -1305,7 +1295,7 @@ Address translation (or address mapping) converts virtual/logical addresses to p
 
 </details>
 
-### Q43 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q43 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 The size of the instruction register in a 32-bit processor is:
 
 (A) 8 bits  
@@ -1323,7 +1313,7 @@ The Instruction Register holds the current instruction. In a 32-bit processor, i
 
 </details>
 
-### Q44 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q44 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The minimum number of moves required to solve Towers of Hanoi with 4 disks is:
 
 (A) 12  
@@ -1337,7 +1327,7 @@ The minimum number of moves required to solve Towers of Hanoi with 4 disks is:
 **Answer:** (B) 15
 
 **Explanation:**
-Towers of Hanoi with n disks requires 2âÂÂ�¿ - 1 moves. For n=4: 2âÂÂ�´ - 1 = 15.
+Towers of Hanoi with n disks requires 2Ã¢ÂÂ¿ - 1 moves. For n=4: 2Ã¢Â´ - 1 = 15.
 
 ```typescript
 function hanoiMoves(n: number): number {
@@ -1348,7 +1338,7 @@ console.log(hanoiMoves(4)); // 15
 
 </details>
 
-### Q45 [2 Marks] — 📂 Compiler Design | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q45 [2 Marks] — 📂 Compiler Design | 🏷️ Hard
 The intermediate code that closely resembles machine code is:
 
 (A) Three-Address Code  
@@ -1366,7 +1356,7 @@ Assembly language is the closest to machine code (one-to-one mapping with some e
 
 </details>
 
-### Q46 [2 Marks] — 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q46 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 Which of the following correctly describes Type-0 grammars?
 
 (A) Regular grammars  
@@ -1384,8 +1374,8 @@ Type-0 grammars are unrestricted grammars, corresponding to recursively enumerab
 
 </details>
 
-### Q47 [2 Marks] — 📂 Engineering Mathematics | ðŸÂÂ�·ï¸ÂÂ� Hard
-The coefficient of x³ in (1+x)âÂÂ�¶ is:
+### Q47 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
+The coefficient of xÃ‚Â³ in (1+x)Ã¢Â¶ is:
 
 (A) 10  
 (B) 15  
@@ -1398,11 +1388,11 @@ The coefficient of x³ in (1+x)âÂÂ�¶ is:
 **Answer:** (C) 20
 
 **Explanation:**
-Coefficient of x³ in (1+x)âÂÂ�¶ = C(6,3) = 6!/(3!3!) = 20.
+Coefficient of xÃ‚Â³ in (1+x)Ã¢Â¶ = C(6,3) = 6!/(3!3!) = 20.
 
 </details>
 
-### Q48 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q48 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 Which of the following is used to resolve collisions in hash tables?
 
 (A) Chaining  
@@ -1420,26 +1410,26 @@ Chaining (separate chaining), linear probing, and double hashing are all collisi
 
 </details>
 
-### Q49 [2 Marks] — 📂 Operating Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q49 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 In a system with 32-bit virtual addresses and 4 KB pages, the size of the page table (assuming single-level) is:
 
-(A) 2²âÂÂ�° × 4 bytes  
+(A) 2Ã‚Â²Ã¢Â° Ã— 4 bytes  
 (B) 2¹² × 4 bytes  
-(C) 2²âÂÂ�° × 8 bytes  
+(C) 2Ã‚Â²Ã¢Â° Ã— 8 bytes  
 (D) 2¹² × 8 bytes
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (A) 2²âÂÂ�° × 4 bytes
+**Answer:** (A) 2Ã‚Â²Ã¢Â° Ã— 4 bytes
 
 **Explanation:**
-32-bit VA, page size = 4 KB = 2¹². VPN bits = 20. Pages = 2²âÂÂ�°.
-Each PTE = 4 bytes (typical). Page table size = 2²âÂÂ�° × 4 bytes.
+32-bit VA, page size = 4 KB = 2Ã‚Â¹Ã‚Â². VPN bits = 20. Pages = 2Ã‚Â²Ã¢Â°.
+Each PTE = 4 bytes (typical). Page table size = 2Ã‚Â²Ã¢Â° Ã— 4 bytes.
 
 </details>
 
-### Q50 [2 Marks] — 📂 Database Management Systems | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q50 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 Which of the following is NOT a property of ACID?
 
 (A) Atomicity  
@@ -1457,7 +1447,7 @@ ACID stands for Atomicity, Consistency, Isolation, Durability. "Integrity" is no
 
 </details>
 
-### Q51 [2 Marks] — 📂 Computer Networks | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q51 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 The number of layers in the OSI model is:
 
 (A) 5  
@@ -1475,7 +1465,7 @@ The OSI model has 7 layers: Physical, Data Link, Network, Transport, Session, Pr
 
 </details>
 
-### Q52 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q52 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 Which of the following is true about interrupts?
 
 (A) CPU checks for interrupts after each instruction  
@@ -1493,7 +1483,7 @@ The CPU checks for pending interrupts after executing each instruction (at the i
 
 </details>
 
-### Q53 [2 Marks] — 📂 Theory of Computation | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q53 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 The Church-Turing thesis states that:
 
 (A) Every computable function can be computed by a TM  
@@ -1511,8 +1501,8 @@ The Church-Turing thesis states that any effectively computable function can be 
 
 </details>
 
-### Q54 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂÂ�·ï¸ÂÂ� Hard
-The 5th term of the Fibonacci sequence (starting Fâ‚ÂÂ�=1, F₂=1) is:
+### Q54 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
+The 5th term of the Fibonacci sequence (starting F₁=1, F₂=1) is:
 
 (A) 3  
 (B) 5  
@@ -1525,11 +1515,11 @@ The 5th term of the Fibonacci sequence (starting Fâ‚ÂÂ�=1, F₂=1) is:
 **Answer:** (B) 5
 
 **Explanation:**
-Fâ‚ÂÂ�=1, F₂=1, F₃=2, F₄=3, F₅=5.
+F₁=1, F₂=1, F₃=2, F₄=3, F₅=5.
 
 </details>
 
-### Q55 [2 Marks] — 📂 Digital Logic | ðŸÂÂ�·ï¸ÂÂ� Hard
+### Q55 [2 Marks] — 📂 Digital Logic | 🏷️ Hard
 The number of 1's in the binary representation of 127 is:
 
 (A) 5  
@@ -1543,7 +1533,7 @@ The number of 1's in the binary representation of 127 is:
 **Answer:** (C) 7
 
 **Explanation:**
-127 = 1111111₂ (seven 1's). 2âÂÂ�· - 1 = 128 - 1 = 127 = 1111111₂.
+127 = 1111111Ã¢â€šâ€š (seven 1's). 2Ã¢Â· - 1 = 128 - 1 = 127 = 1111111â‚‚.
 
 ```typescript
 function countOnes(n: number): number {
@@ -1625,16 +1615,13 @@ pie title "Difficulty Distribution - GATE CS 2017"
 
 ### Paper Analysis
 
-
 GATE 2017 Computer Science paper maintained the established format of 65 questions (10 GA + 55 Technical), 100 marks total. GATE 2017 was administered on two days (February 4 and February 5) with different question sets, though syllabus coverage was identical. The paper had 15 NAT questions and 5 MSQs. Data Structures & Algorithms had the highest weightage at 15 marks, followed by Operating Systems at 12 marks and DBMS at 10 marks. A distinguishing feature of GATE 2017 was the inclusion of multi-concept questions that required knowledge from two subjects — for example, a question combined probability distributions with graph connectivity. The GA section was straightforward, with direct computation questions in quantitative aptitude and standard verbal ability items.
 
 ### Difficulty Trends
 
-
 GATE 2017 had a difficulty distribution of approximately 35% Easy, 47% Medium, and 18% Hard, making it marginally easier than 2016. Data Structures questions were largely standard — DFS application problems and BST manipulation were well within expected difficulty. Operating Systems had a challenging question on page replacement that required evaluating Belady's anomaly conditions. Computer Networks featured a question on fiber optic vs copper (physical layer), which was essentially factual recall but frequently answered incorrectly. Theory of Computation included a question on Church-Turing thesis implications that tested conceptual understanding rather than problem-solving. Computer Architecture featured an interrupt handling question that required understanding of vector interrupt priority schemes. Overall, the paper was well-balanced and accessible to well-prepared candidates.
 
 ### Key Concepts Tested
-
 
 | Subject | Key Concepts |
 |---------|-------------|
@@ -1812,7 +1799,6 @@ Test your understanding of GATE 2017 concepts with these 5 questions.
 - d) To specify precedence and associativity
 
 ### Answer Key
-
 
 | Q | Answer | Explanation |
 |---|--------|-------------|

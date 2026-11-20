@@ -1,3 +1,7 @@
+---
+description: "Not a dataset. Not a CSV file. Terabytes of text -- cleaned, deduplicated, filtered for quality, tokenized into fixed-length sequences, and served in"
+---
+
 # Data Pipelines for Pre-Training
 
 > The model is a mirror. It reflects whatever data you feed it. Feed it garbage, it reflects garbage with perfect fluency.

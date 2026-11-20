@@ -1,3 +1,7 @@
+---
+description: "The space complexity of a Turing machine is the maximum number of tape cells used on any input of length n. For a multitape TM, the space used is the sum"
+---
+
 # Chapter 14: Space Complexity
 
 > **Previous:** [Time Complexity](./13-time-complexity.md) | **Next:** [Advanced Complexity Topics](./15-advanced-complexity.md)

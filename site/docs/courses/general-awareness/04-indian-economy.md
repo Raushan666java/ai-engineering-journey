@@ -4,6 +4,7 @@ slug: /general-awareness/04-indian-economy
 title: "Chapter 4: Indian Economy & Planning"
 sidebar_label: "Chapter 4: Indian Economy & Planning"
 sidebar_position: 4
+description: "Reserve Bank of India (RBI) was established on 1 April 1935 under the RBI Act, 1934. Nationalised in 1949. It is the central bank of India and the"
 ---
 
 # Chapter 4: Indian Economy & Planning

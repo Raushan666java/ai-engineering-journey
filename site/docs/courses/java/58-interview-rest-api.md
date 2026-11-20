@@ -4,6 +4,7 @@ slug: /java/58-interview-rest-api
 title: "REST API Interview Q&A"
 sidebar_label: "REST API Interview Q&A"
 sidebar_position: 58
+description: "This chapter covers 25 essential REST API interview questions from REST constraints and HTTP semantics through versioning, error handling, security"
 ---
 
 # REST API Interview Q&A

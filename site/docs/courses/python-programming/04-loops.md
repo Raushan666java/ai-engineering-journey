@@ -4,6 +4,7 @@ slug: /python-programming/04-loops
 title: "Chapter 4: Loops and Iteration"
 sidebar_label: "Chapter 4: Loops and Iteration"
 sidebar_position: 4
+description: "The while loop is nearly identical between Python and TypeScript. The key difference is the loop syntax -- Python uses a colon and indentation, TypeScript"
 ---
 
 # Chapter 4: Loops and Iteration

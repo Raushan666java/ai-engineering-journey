@@ -4,6 +4,7 @@ slug: /c-programming/12-file-handling
 title: "Chapter 12: File Handling"
 sidebar_label: "Chapter 12: File Handling"
 sidebar_position: 12
+description: "When you open a file, the OS gives you a file descriptor (an integer handle). C wraps this in a FILE struct that holds: the file position indicator"
 ---
 
 # Chapter 12: File Handling

@@ -1,9 +1,10 @@
 ---
 id: 18-mock-test-4
 slug: /gate-cs-preparation/18-mock-test-4
-title: "18 Mock Test 4"
-sidebar_label: "18 Mock Test 4"
+title: "18-mock-test-4"
+sidebar_label: "18-mock-test-4"
 sidebar_position: 15
+description: "Total Marks: 100 Duration: 3 Hours Reading Time: 10 minutes"
 ---
 
 ﻿# GATE CS Mock Test 4 → Full-Length Practice Paper
@@ -241,20 +242,20 @@ All questions are MCQs. Select the single correct answer.
 
 ---
 
-**Q18 (1 Mark):** ∫₀^ÃÂ�€ sin² x dx equals:
+**Q18 (1 Mark):** Ã¢Ë†Â«Ã¢â€šâ‚¬^Ã€ sinÂ² x dx equals:
 
 (A) 0  
-(B) ÃÂ�€/4  
-(C) ÃÂ�€/2  
-(D) ÃÂ�€
+(B) Ã€/4  
+(C) Ã€/2  
+(D) Ã€
 
 ---
 
-**Q19 (1 Mark):** If X ~ N(μ, ÃÂ�ƒ²), then the distribution of Z = (X − μ)/ÃÂ�ƒ is:
+**Q19 (1 Mark):** If X ~ N(μ, σ²), then the distribution of Z = (X − μ)/σ is:
 
 (A) N(0, 1)  
 (B) N(μ, 1)  
-(C) N(0, ÃÂ�ƒ²)  
+(C) N(0, ÃƒÂ²)  
 (D) N(1, 0)
 
 ---
@@ -351,7 +352,7 @@ All questions are MCQs. Select the single correct answer.
 
 ---
 
-**Q30 (1 Mark) [TOC]:** The language L = {aâÂÂ�¿bâÂÂ�¿câÂÂ�¿ | n ≥ 0} belongs to which class?
+**Q30 (1 Mark) [TOC]:** The language L = {aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢Â¿ | n â‰¥ 0} belongs to which class?
 
 (A) Regular  
 (B) Context-free  
@@ -523,7 +524,7 @@ The graph has how many strongly connected components?
 
 ---
 
-**Q48 (2 Marks) [CN]:** A 10 Mbps CSMA/CD network has a maximum cable length of 2000 m. Signal propagation speed is 2×10âÂÂ�¸ m/s. The minimum frame size in bits is:
+**Q48 (2 Marks) [CN]:** A 10 Mbps CSMA/CD network has a maximum cable length of 2000 m. Signal propagation speed is 2Ãƒâ€”10Ã¢Â¸ m/s. The minimum frame size in bits is:
 
 (A) 100  
 (B) 150  
@@ -659,13 +660,13 @@ I3: MUL R6, R7, R8
 
 **Q15:** A's rate = 1/6 per hour. B's rate = 1/8. C's rate = −1/12. Combined rate = 1/6 + 1/8 − 1/12 = (4+3−2)/24 = 5/24. Time = 24/5 = 4.8 h.
 
-**Q16:** For an n×n matrix, det(kA) = kâÂÂ�¿ det(A). Here n=5, k=2. det(2A) = 2âÂÂ�µ × (−3) = 32 × (−3) = −96.
+**Q16:** For an nÃƒâ€”n matrix, det(kA) = kÃ¢ÂÂ¿ det(A). Here n=5, k=2. det(2A) = 2Ã¢Âµ Ã— (âˆ’3) = 32 Ã— (âˆ’3) = âˆ’96.
 
 **Q17:** Handshaking lemma: sum of degrees = 2E. 8×3 = 24 = 2E → E = 12.
 
-**Q18:** ∫₀^ÃÂ�€ sin²x dx = ∫₀^ÃÂ�€ (1−cos2x)/2 dx = [x/2 − sin2x/4]₀^ÃÂ�€ = ÃÂ�€/2 − 0 − (0 − 0) = ÃÂ�€/2.
+**Q18:** Ã¢Ë†Â«Ã¢â€šâ‚¬^Ãâ‚¬ sinÃ‚Â²x dx = Ã¢Ë†Â«Ã¢â€šâ‚¬^Ãâ‚¬ (1Ã¢Ë†â€™cos2x)/2 dx = [x/2 Ã¢Ë†â€™ sin2x/4]Ã¢â€šâ‚¬^Ãâ‚¬ = Ãâ‚¬/2 Ã¢Ë†â€™ 0 Ã¢Ë†â€™ (0 Ã¢Ë†â€™ 0) = Ã€/2.
 
-**Q19:** Standardization: if X ~ N(μ, ÃÂ�ƒ²), subtracting the mean and dividing by ÃÂ�ƒ gives Z ~ N(0, 1), the standard normal distribution.
+**Q19:** Standardization: if X ~ N(μ, σ²), subtracting the mean and dividing by σ gives Z ~ N(0, 1), the standard normal distribution.
 
 **Q20:** P ∨ ¬P is the law of excluded middle → a tautology (always true regardless of P's truth value).
 
@@ -675,7 +676,7 @@ Alternatively, apply L'Hôpital's rule twice: lim_{x→0} (eˣ − 1 − x)/x² 
 
 **Q22:** MISSISSIPPI has 11 letters: M(1), I(4), S(4), P(2). Arrangements = 11!/(1!4!4!2!) = 39916800/(24×24×2) = 39916800/1152 = 34650.
 
-**Q23:** Eigenvalues of [[2,1],[1,2]]: det([[2−λ,1],[1,2−λ]]) = (2−λ)² − 1 = λ² − 4λ + 3 = (λ−1)(λ−3). λâ‚ÂÂ�=3, eigenvector [1,1]ᵀ. λ₂=1, eigenvector [1,−1]ᵀ. Both are eigenvectors.
+**Q23:** Eigenvalues of [[2,1],[1,2]]: det([[2−λ,1],[1,2−λ]]) = (2−λ)² − 1 = λ² − 4λ + 3 = (λ−1)(λ−3). λ₁=3, eigenvector [1,1]ᵀ. λ₂=1, eigenvector [1,−1]ᵀ. Both are eigenvectors.
 
 **Q24:** PDF must integrate to 1: ∫₀² kx² dx = k[x³/3]₀² = k(8/3) = 1 → k = 3/8.
 
@@ -685,11 +686,11 @@ Alternatively, apply L'Hôpital's rule twice: lim_{x→0} (eˣ − 1 − x)/x² 
 
 **Q27:** The four necessary conditions for deadlock are: mutual exclusion, hold and wait, no preemption, and circular wait. Preemption is actually the opposite of "no preemption" → the absence of preemption is the condition. Since "preemption" as stated would actually help avoid deadlock, it is NOT a necessary condition (the correct statement is "no preemption").
 
-**Q28:** CSMA/CD uses the binary exponential backoff algorithm: after a collision, the station picks a random backoff time from 0 to 2áµÂÂ�−1 slot times, where k is the collision count.
+**Q28:** CSMA/CD uses the binary exponential backoff algorithm: after a collision, the station picks a random backoff time from 0 to 2áµ−1 slot times, where k is the collision count.
 
 **Q29:** LEFT OUTER JOIN returns all rows from the left table, and matching rows from the right table. Non-matching rows from the right table produce NULLs.
 
-**Q30:** aâÂÂ�¿bâÂÂ�¿câÂÂ�¿ requires counting and comparing three sequences. It cannot be recognized by a PDA (which has only one stack), so it's not context-free. It can be recognized by a Linear Bounded Automaton, so it is context-sensitive.
+**Q30:** aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢Â¿ requires counting and comparing three sequences. It cannot be recognized by a PDA (which has only one stack), so it's not context-free. It can be recognized by a Linear Bounded Automaton, so it is context-sensitive.
 
 **Q31:** Syntax Analysis (parsing) takes tokens from the lexical analyzer and builds the parse tree / abstract syntax tree according to grammar productions.
 
@@ -709,7 +710,7 @@ Alternatively, apply L'Hôpital's rule twice: lim_{x→0} (eˣ − 1 − x)/x² 
 
 **Q39:** Left recursion causes infinite loops in top-down (recursive descent) parsers. Eliminating left recursion makes grammars suitable for top-down parsing (LL parsers).
 
-**Q40:** A 4-bit ripple counter has 2âÂÂ�´ = 16 distinct states (0000 through 1111).
+**Q40:** A 4-bit ripple counter has 2Ã¢Â´ = 16 distinct states (0000 through 1111).
 
 **Q41:** Fully associative cache allows any memory block to be placed in any cache line, offering maximum flexibility but requiring content-addressable memory for lookup.
 
@@ -725,9 +726,9 @@ Alternatively, apply L'Hôpital's rule twice: lim_{x→0} (eˣ − 1 − x)/x² 
 
 **Q47:** P (wait) decrements: 15 × (−1) = −15. V (signal) increments: 10 × (+1) = +10. Net change = −15 + 10 = −5. Initial 8 − 5 = 3.
 
-**Q48:** Round-trip time = 2×(2000/2×10âÂÂ�¸) = 2×10âÂÂ�»âÂÂ�µ s = 20 μs. Minimum frame size = 10×10âÂÂ�¶ × 20×10âÂÂ�»âÂÂ�¶ = 200 bits.
+**Q48:** Round-trip time = 2Ãƒâ€”(2000/2Ãƒâ€”10Ã¢ÂÂ¸) = 2Ãƒâ€”10Ã¢ÂÂ»Ã¢ÂÂµ s = 20 ÃŽÂ¼s. Minimum frame size = 10Ãƒâ€”10Ã¢ÂÂ¶ Ãƒâ€” 20Ãƒâ€”10Ã¢ÂÂ»Ã¢Â¶ = 200 bits.
 
-**Q49:** Candidate key: AB (ABâÂÂ�º = ABCDE from AB→C, C→D, D→E). C→D and D→E are transitive dependencies (C depends on AB partially via non-key attribute, D→E is also transitive). Since C is not a superkey and D is not a key attribute, 3NF is violated (transitive dependency). Also C is a non-prime attribute functionally determining another non-prime attribute D, which violates 3NF for BCNF. Actually, AB is the only key. C, D, E are non-prime. C→D is a non-prime → non-prime dependency, violating 3NF. D→E is also non-prime → non-prime. So the highest NF is 2NF. But wait, C → D and C is a non-prime attribute. If there were no non-prime → non-prime dependencies, the relation would be in 3NF. Here C→D and D→E are both non-prime → non-prime, so these violate 3NF. The relation is in 2NF because there is no partial dependency (no proper subset of AB determines any non-prime attribute). Answer: 2NF.
+**Q49:** Candidate key: AB (ABÃ¢Âº = ABCDE from AB→C, C→D, D→E). C→D and D→E are transitive dependencies (C depends on AB partially via non-key attribute, D→E is also transitive). Since C is not a superkey and D is not a key attribute, 3NF is violated (transitive dependency). Also C is a non-prime attribute functionally determining another non-prime attribute D, which violates 3NF for BCNF. Actually, AB is the only key. C, D, E are non-prime. C→D is a non-prime → non-prime dependency, violating 3NF. D→E is also non-prime → non-prime. So the highest NF is 2NF. But wait, C → D and C is a non-prime attribute. If there were no non-prime → non-prime dependencies, the relation would be in 3NF. Here C→D and D→E are both non-prime → non-prime, so these violate 3NF. The relation is in 2NF because there is no partial dependency (no proper subset of AB determines any non-prime attribute). Answer: 2NF.
 
 **Q50:** DCFL is closed under complement (unlike general CFL). However, DCFL is NOT closed under union, intersection, or Kleene star.
 
@@ -853,13 +854,13 @@ I think the answer C=11 is a common GATE answer for this question when using a s
 
 **Q54:** A modulo-5 counter counts from 0 to 4 (5 states). Minimum flip-flops = ⌈log₂(5)⌉ = ⌈2.32⌉ = 3.
 
-**Q55:** Packet size = 2000 bytes = 16000 bits. Transmission time = 16000 / 10âÂÂ�¹ = 16 μs. RTT = 2 × 20 ms = 40 ms = 40000 μs. Utilization = T_tx / (T_tx + RTT) = 16 / (16 + 40000) ≈ 16/40016 ≈ 0.0004 = 0.04%.
+**Q55:** Packet size = 2000 bytes = 16000 bits. Transmission time = 16000 / 10Ã¢Â¹ = 16 Î¼s. RTT = 2 Ã— 20 ms = 40 ms = 40000 Î¼s. Utilization = T_tx / (T_tx + RTT) = 16 / (16 + 40000) â‰ˆ 16/40016 â‰ˆ 0.0004 = 0.04%.
 
 Hmm but the answer key says B. Let me check if they use a different packet size interpretation. If packet = 1000 bytes = 8000 bits. At 1 Gbps: time = 8 μs. Round trip propagation = 2 × 20 ms = 40 ms = 40000 μs. Efficiency = 8/(8 + 40000) = 8/40008 = 0.00019997 ≈ 0.0002 = 0.02%. So answer should be A. Let me fix the answer key to A.
 
 Wait, maybe they consider propagation delay differently. Or maybe they use 1000 bytes = 1000 × 10 = 10000 bits for some reason? No.
 
-Let me adjust to make the answer cleaner. With 2000 bytes: transmission = 16000/10âÂÂ�¹ = 16 μs. Efficiency = 16/40016 = 0.0004 = 0.04%. That gives B. Let me change the packet size to 2000 bytes in the question.
+Let me adjust to make the answer cleaner. With 2000 bytes: transmission = 16000/10Ã¢Â¹ = 16 Î¼s. Efficiency = 16/40016 = 0.0004 = 0.04%. That gives B. Let me change the packet size to 2000 bytes in the question.
 
 Let me fix these issues in the actual file.
 

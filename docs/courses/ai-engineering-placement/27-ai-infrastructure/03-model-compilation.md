@@ -1,3 +1,7 @@
+---
+description: "Model compilation converts trained neural networks into optimized executables for specific hardware. Instead of interpreting a model graph at runtime"
+---
+
 <!-- improved -->
 # 03 — Model Compilation & Optimization
 

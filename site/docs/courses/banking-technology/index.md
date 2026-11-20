@@ -1,3 +1,7 @@
+---
+description: "Exam Weightage: 2-5 Qs in IBPS SO Mains PK + specific banking awareness GK Moderate (conceptual + current awareness) Focus Areas: Core Banking Solutions"
+---
+
 ﻿---
 id: index
 slug: /banking-technology

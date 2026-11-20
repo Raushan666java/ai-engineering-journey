@@ -1,3 +1,7 @@
+---
+description: "Propagation delay t_p is the time required for a change at the input to propagate to the output. It is measured from the 50% transition point of the input"
+---
+
 # Chapter 3: Logic Gates
 
 > **Prereq:** Chapter 2 (Boolean Algebra) ? gates implement the Boolean operations directly.

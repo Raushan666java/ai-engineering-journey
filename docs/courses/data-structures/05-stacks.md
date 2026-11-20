@@ -1,3 +1,7 @@
+---
+description: "Real-world analogy: Imagine a stack of plates in a cafeteria. You place clean plates on top (push), and when someone needs a plate, they take the topmost"
+---
+
 # Chapter 5: Stacks
 
 > **Previous:** [Chapter 4: Doubly Linked List](./04-doubly-linked-list.md) | **Next:** [Queues](./06-queues.md)

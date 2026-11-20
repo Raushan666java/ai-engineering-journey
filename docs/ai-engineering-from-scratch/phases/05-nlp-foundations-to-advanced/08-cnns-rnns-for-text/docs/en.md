@@ -1,3 +1,7 @@
+---
+description: "TF-IDF and Word2Vec produced flat vectors that ignored word order. A classifier built on them could not tell dog bites man from man bites dog. Word order"
+---
+
 # CNNs and RNNs for Text
 
 > Convolutions learn n-grams. Recurrences remember. Both are superseded by attention. Both still matter on constrained hardware.

@@ -1,3 +1,7 @@
+---
+description: "Chapter 3 → JavaScript Basics: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = [] private"
+---
+
 # Chapter 3 → JavaScript Basics
 
 > **Previous:** [02-css](./02-css.md) | **Next:** [04-js-dom](./04-js-dom.md)

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/10-nlp-transformers/visual-notes
 title: "Visual Notes — Transformer Anatomy"
 sidebar_label: "Visual Notes"
 sidebar_position: 147
+description: "Visual Notes — Transformer Anatomy: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before"
 ---
 
 # Visual Notes — Transformer Anatomy

@@ -1,3 +1,7 @@
+---
+description: "Before Whisper (OpenAI, Radford et al. 2022), state-of-the-art automatic speech recognition (ASR) meant wav2vec 2.0 and HuBERT — self-supervised feature"
+---
+
 # Audio Transformers — Whisper Architecture
 
 > Audio is an image of frequency over time. Whisper is a ViT that eats mel spectrograms and speaks back.

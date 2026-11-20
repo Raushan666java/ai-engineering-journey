@@ -1,3 +1,7 @@
+---
+description: "Complete theory for every quant topic asked in ANY company aptitude round. Each topic: formula box → key insight → 3-5 worked examples → common trap"
+---
+
 <!-- improved -->
 # Quantitative Aptitude — All Topics Master Reference
 

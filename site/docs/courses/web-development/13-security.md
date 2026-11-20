@@ -4,6 +4,7 @@ slug: /web-development/13-security
 title: "Chapter 13: Web Security"
 sidebar_label: "Chapter 13: Web Security"
 sidebar_position: 13
+description: "Helmet is a security headers collection, not a comprehensive security solution. It sets 15+ HTTP headers with sensible defaults but does not prevent SQL"
 ---
 
 # Chapter 13: Web Security

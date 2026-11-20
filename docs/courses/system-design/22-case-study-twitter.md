@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Twitter serves 330+ million monthly active users who"
+---
+
 # Chapter 22: Case Study — Twitter and News Feed
 > **Previous:** [21 Case Study Uber](./21-case-study-uber.md) | **Next:** [23 Case Study Dropbox](./23-case-study-dropbox.md)
 

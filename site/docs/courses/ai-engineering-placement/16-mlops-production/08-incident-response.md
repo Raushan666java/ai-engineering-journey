@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/16-mlops-production/08-incident-response
 title: "Incident Response"
 sidebar_label: "Incident Response"
 sidebar_position: 213
+description: "Incident Response: MLOps bridges the gap between experiment and production. Experiment tracking, CI/CD, model serving, and drift monitoring keep AI"
 ---
 
 <!-- improved -->

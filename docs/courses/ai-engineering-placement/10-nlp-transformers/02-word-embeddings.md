@@ -1,3 +1,7 @@
+---
+description: "Word Embeddings — Word2Vec, GloVe, FastText, Subword Tokenization: Natural language processing is how machines understand human text. Transformers"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Word Embeddings — Word2Vec, GloVe, FastText, Subword Tokenization

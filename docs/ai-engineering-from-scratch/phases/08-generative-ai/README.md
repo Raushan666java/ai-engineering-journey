@@ -1,3 +1,7 @@
+---
+description: "19 lessons, ~19 hours total. Each lesson ships: a 180-230 line doc, a runnable stdlib Python demo, a diagram, and a named skill for your agent."
+---
+
 # Phase 8: Generative AI
 
 > Create images, video, audio, 3D, and more.

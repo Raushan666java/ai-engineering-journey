@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/17-verbal-question-bank
 title: "Verbal Ability — 100 Question Drill Bank (Any Company)"
 sidebar_label: "Verbal Ability — 100 Question Drill Bank (Any Company)"
 sidebar_position: 378
+description: "Rule: 30-60 seconds per question. Answers with explanations at the bottom. Covers all 10 sections from verbal-all-sections.md. Difficulty tags: (E) Easy"
 ---
 
 <!-- improved -->

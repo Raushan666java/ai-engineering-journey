@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design/08-rate-limiting-and-idempotenc
 title: "Rate Limiting & Idempotency — Algorithms, Distributed Strategies"
 sidebar_label: "Rate Limiting & Idempotency — Algorithms, Distributed Strategies"
 sidebar_position: 103
+description: "Rate Limiting & Idempotency — Algorithms, Distributed Strategies: System design interviews test your ability to architect large-scale systems. Caching"
 ---
 
 <!-- improved -->

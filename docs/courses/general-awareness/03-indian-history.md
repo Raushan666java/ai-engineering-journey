@@ -1,3 +1,7 @@
+---
+description: "Causes: Political (Doctrine of Lapse, annexation of Awadh), Economic (heavy taxation, drain of wealth), Social (interference in caste/religion), Military"
+---
+
 # Chapter 3: Indian History & Culture
 
 ## Learning Objectives

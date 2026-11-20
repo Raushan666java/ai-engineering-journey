@@ -1,3 +1,7 @@
+---
+description: "Analogy: A lockbox with a single key. Alice puts a message in the box, locks it with key K, and sends the box to Bob. Bob uses the same key K to open it"
+---
+
 # Chapter 2: Cryptography
 
 > **Prereq:** Chapter 1 (Security Fundamentals) → cryptography provides the mathematical controls for achieving CIA goals.

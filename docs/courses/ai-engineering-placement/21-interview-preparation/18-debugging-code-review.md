@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to identify common bugs in TypeScript and Python code under time pressure, systematically approach debugging without a"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Debugging and Code Review

@@ -4,6 +4,7 @@ slug: /cloud-computing/04-cloud-storage
 title: "Chapter 4: Cloud Storage Services"
 sidebar_label: "Chapter 4: Cloud Storage Services"
 sidebar_position: 4
+description: "A[Storage Taxonomy] --> B[Object Storage] B --> E[Versioning and Lifecycle] C --> F[Performance Tiers] D --> G[Shared Access Protocols] E --> H[CDN and"
 ---
 
 # Chapter 4: Cloud Storage Services

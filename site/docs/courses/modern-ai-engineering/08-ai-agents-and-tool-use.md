@@ -4,6 +4,7 @@ slug: /modern-ai-engineering/08-ai-agents-and-tool-use
 title: "Chapter 8: AI Agents and Tool Use"
 sidebar_label: "Chapter 8: AI Agents and Tool Use"
 sidebar_position: 8
+description: "By the end of this chapter, you will be able to: - Define the core components of an AI agent: planning, memory, tool use, and self-reflection - Implement"
 ---
 
 # Chapter 8: AI Agents and Tool Use

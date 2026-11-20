@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming/visual-notes
 title: "Visual Notes — Python Programming"
 sidebar_label: "Visual Notes"
 sidebar_position: 25
+description: "One-line answer for interviews: 'Python lets me go from idea to working code fastest; I use type hints and tests to keep it reliable.'"
 ---
 
 # Visual Notes — Python Programming

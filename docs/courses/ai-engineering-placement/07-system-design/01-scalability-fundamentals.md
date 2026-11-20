@@ -1,3 +1,7 @@
+---
+description: "Scalability Fundamentals — Vertical, Horizontal, and Beyond: System design interviews test your ability to architect large-scale systems. Caching, load"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Scalability Fundamentals — Vertical, Horizontal, and Beyond

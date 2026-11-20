@@ -1,3 +1,7 @@
+---
+description: "This is Krishna's most mysterious teaching, and Osho reads it as his most intimate one. In the fourteenth chapter Krishna described the three gunas that"
+---
+
 # Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky
 
 > "The tree of life grows upside down. Climb it and you fall; cut it, and you are already at the top."

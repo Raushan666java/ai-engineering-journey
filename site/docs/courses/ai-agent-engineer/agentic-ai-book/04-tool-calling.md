@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/04-tool-calling
 title: "Part II — Building Blocks"
 sidebar_label: "Part II — Building Blocks"
 sidebar_position: 5
+description: "That's it. That's the entire mechanism. Every framework — LangChain, LangGraph, CrewAI — is a wrapper around exactly this four-step exchange, repeated in"
 ---
 
 # Part II — Building Blocks

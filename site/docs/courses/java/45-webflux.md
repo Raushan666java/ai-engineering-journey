@@ -4,6 +4,7 @@ slug: /java/45-webflux
 title: "Chapter 45: Spring WebFlux"
 sidebar_label: "Chapter 45: Spring WebFlux"
 sidebar_position: 45
+description: "Spring WebFlux is the reactive-stack web framework introduced in Spring 5, built on Project Reactor. It runs on Netty (default), Undertow, or Servlet 3.1+"
 ---
 
 # Chapter 45: Spring WebFlux

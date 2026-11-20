@@ -1,3 +1,7 @@
+---
+description: "Software project management is the discipline of planning, organising, monitoring, and controlling software projects. Unlike many engineering disciplines"
+---
+
 # Project Management
 
 ## Learning Objectives

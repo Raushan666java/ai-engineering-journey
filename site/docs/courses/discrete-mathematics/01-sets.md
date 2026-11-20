@@ -4,6 +4,7 @@ slug: /discrete-mathematics/01-sets
 title: "Chapter 1: Sets"
 sidebar_label: "Chapter 1: Sets"
 sidebar_position: 1
+description: 'A set is an unordered collection of distinct objects, called its elements or members. If $x$ is an element of the set $S$, we write $x in S$. If $x$ is'
 ---
 
 # Chapter 1: Sets

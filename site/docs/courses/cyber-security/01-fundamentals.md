@@ -4,6 +4,7 @@ slug: /cyber-security/01-fundamentals
 title: "Chapter 1: Security Fundamentals"
 sidebar_label: "Chapter 1: Security Fundamentals"
 sidebar_position: 1
+description: "Prereq: None — this chapter introduces core security concepts. Target Audience: Beginners to intermediate; SOC analysts, penetration testers, developers"
 ---
 
 # Chapter 1: Security Fundamentals

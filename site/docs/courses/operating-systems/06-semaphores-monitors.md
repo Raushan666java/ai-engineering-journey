@@ -4,6 +4,7 @@ slug: /operating-systems/06-semaphores-monitors
 title: "Chapter 6: Semaphores & Monitors"
 sidebar_label: "Chapter 6: Semaphores & Monitors"
 sidebar_position: 6
+description: "A[Semaphore Concept] --> B[Binary & Counting Semaphores] B --> C[Wait & Signal Operations] C --> D[Classic Synchronization Problems] D --> E[Monitors &"
 ---
 
 # Chapter 6: Semaphores & Monitors

@@ -1,3 +1,7 @@
+---
+description: "If 1,000 visitors produce 20 enquiries (2%), 20 enquiries produce 6 calls (30%), and 6 calls produce 2 customers (33%), the overall conversion is 0.02 x"
+---
+
 # Chapter 9 — Funnels, CRO and Analytics
 
 ## Learning Objectives

@@ -4,6 +4,7 @@ slug: /professional-knowledge/06-software-engineering
 title: "Chapter 6: Software Engineering — Exam Quick Revision"
 sidebar_label: "Chapter 6: Software Engineering — Exam Quick Revision"
 sidebar_position: 6
+description: "Answer: (c) Path coverage. It requires every possible execution path to be tested, which subsumes all other coverage criteria (though often impractical"
 ---
 
 # Chapter 6: Software Engineering — Exam Quick Revision

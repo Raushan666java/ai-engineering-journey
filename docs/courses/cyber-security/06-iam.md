@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: An airport security checkpoint. Your passport is your Identity. The officer verifying your face matches the photo is Authentication"
+---
+
 # Chapter 6: Identity & Access Management
 
 > **Prereq:** Chapter 5 (Web Security) → OAuth 2.0 and SAML secure web authentication.

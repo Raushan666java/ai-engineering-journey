@@ -4,6 +4,7 @@ slug: /reasoning-ability/04-inequalities-data-sufficiency
 title: "Inequalities and Data Sufficiency"
 sidebar_label: "Inequalities and Data Sufficiency"
 sidebar_position: 4
+description: "Inequalities contribute approximately 4–5 questions in the IBPS SO Reasoning Ability section. Data sufficiency contributes another 4–5 questions"
 ---
 
 # Inequalities and Data Sufficiency

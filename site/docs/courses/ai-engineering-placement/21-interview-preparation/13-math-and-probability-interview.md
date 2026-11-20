@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/13-math-and-probability
 title: "Math and Probability for ML Interviews"
 sidebar_label: "Math and Probability for ML Interviews"
 sidebar_position: 263
+description: "After this chapter you will be able to solve probability problems asked in ML interviews, derive MLE and MAP estimates, explain the math behind PCA and"
 ---
 
 <!-- improved -->

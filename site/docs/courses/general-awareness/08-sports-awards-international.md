@@ -4,6 +4,7 @@ slug: /general-awareness/08-sports-awards-international
 title: "Chapter 8: Sports, Awards & International Organizations"
 sidebar_label: "Chapter 8: Sports, Awards & International Organizations"
 sidebar_position: 8
+description: "Sweden formally joined NATO on 7 March 2024, becoming the 32nd member. Finland had joined earlier in 2023. Both countries ended their long-standing"
 ---
 
 # Chapter 8: Sports, Awards & International Organizations

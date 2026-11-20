@@ -1,3 +1,7 @@
+---
+description: "Master advanced retrieval — hybrid search, multi-vector retrieval, re-ranking architectures, and production-scale vector database tuning. Move beyond"
+---
+
 # Chapter 13 — Advanced Vector Search & RAG
 
 **Duration:** 2 weeks, ~22 hours

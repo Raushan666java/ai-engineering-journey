@@ -1,3 +1,7 @@
+---
+description: "Analyzes request distribution (prompt length, decode length, arrival rate) and recommends the optimal scheduling policy, batch size, and chunk size for an"
+---
+
 # Continuous Batch Tuner
 
 Analyzes request distribution (prompt length, decode length, arrival rate) and recommends the optimal scheduling policy, batch size, and chunk size for an LLM inference server.

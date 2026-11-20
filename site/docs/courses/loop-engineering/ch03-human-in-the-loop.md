@@ -4,6 +4,7 @@ slug: /loop-engineering/ch03-human-in-the-loop
 title: "Chapter 3: Human-in-the-Loop"
 sidebar_label: "Chapter 3: Human-in-the-Loop"
 sidebar_position: 3
+description: "The propose-then-commit pattern is the foundational HITL building block. Instead of allowing an agent to execute actions autonomously, the agent first"
 ---
 
 # Chapter 3: Human-in-the-Loop

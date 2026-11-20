@@ -1,3 +1,7 @@
+---
+description: "Every voice agent lives or dies on two decisions: is the user speaking now, and are they done? VAD answers the first. Turn-detection (VAD +"
+---
+
 # Voice Activity Detection & Turn-Taking — Silero, Cobra, and the Flush Trick
 
 > Every voice agent lives or dies on two decisions: is the user speaking now, and are they done? VAD answers the first. Turn-detection (VAD + silence-hangover + semantic endpoint model) answers the second. Get either wrong and your assistant either cuts users off or never shuts up.

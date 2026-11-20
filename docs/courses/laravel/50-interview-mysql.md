@@ -1,3 +1,7 @@
+---
+description: "Ace your database interviews with this deep collection of MySQL and Laravel database-layer questions. Each answer includes runnable SQL or code examples"
+---
+
 # MySQL & Database Interview Q&A
 
 > **Previous:** [PHP Interview Q&A](./49-interview-php.md) | **Next:** [HTML Interview Q&A](./51-interview-html.md)

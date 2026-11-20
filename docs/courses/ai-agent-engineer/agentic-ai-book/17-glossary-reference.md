@@ -1,3 +1,7 @@
+---
+description: "Agentic RAG — Retrieval-augmented generation where the decision to retrieve, what to retrieve, and whether retrieval was sufficient are all dynamic"
+---
+
 ## Chapter 17: Glossary & Reference
 
 **Agent** — A system where an LLM decides actions (tool calls) in a loop based on observed results, rather than producing a single one-shot response.

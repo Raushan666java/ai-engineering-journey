@@ -4,6 +4,7 @@ slug: /operating-systems/15-shell-scripting
 title: "Chapter 15: Shell Scripting"
 sidebar_label: "Chapter 15: Shell Scripting"
 sidebar_position: 15
+description: "A[Shell & Bash Basics] --> B[Variables & Parameters] E --> F[I/O Redirection & Pipes] F --> G[Text Processing: grep/sed/awk] G --> H[Job Control & Signals]"
 ---
 
 # Chapter 15: Shell Scripting

@@ -4,6 +4,7 @@ slug: /geeta-darshan/02-sankhya-yoga
 title: "अध्याय २: सांख्य योग — Jagrukta hi asli gyan hai"
 sidebar_label: "अध्याय २: सांख्य योग — Jagrukta hi asli gyan hai"
 sidebar_position: 3
+description: "Adhyay 1 khatam hua — Arjuna ro chuka hai, usne dhanush giraya hai, aur usne kah diya hai: 'Main nahin ladunga.' Adhyay 2 ki shuruaat yahin se hoti hai —"
 ---
 
 # अध्याय २: सांख्य योग — Jagrukta hi asli gyan hai

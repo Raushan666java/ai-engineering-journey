@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/Modules/5_Mindset/README.mdREADME title: '🎯 Module 5: Learning Mindset' sidebar_label: '🎯 Module 5: Learning Mindset'"
+---
+
 ﻿---
 slug: /learning-course/Modules/5_Mindset/README.mdREADME
 title: "🎯 Module 5: Learning Mindset"

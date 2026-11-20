@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/Modules/4_Time_Management/README.mdREADME title: '⏰ Module 4: Time Management' sidebar_label: '⏰ Module 4: Time Management'"
+---
+
 ﻿---
 slug: /learning-course/Modules/4_Time_Management/README.mdREADME
 title: "⏰ Module 4: Time Management"

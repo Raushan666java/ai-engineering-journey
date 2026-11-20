@@ -1,3 +1,7 @@
+---
+description: "Think of a lambda like leaving a sticky note instruction for a colleague. The sticky note says what to do, what supplies you've attached, and what result"
+---
+
 # Chapter 14: Lambdas (Deep Dive)
 
 > **Previous:** [13-move-semantics](./13-move-semantics.md) | **Next:** [15-concurrency](./15-concurrency.md)

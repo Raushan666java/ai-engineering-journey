@@ -4,6 +4,7 @@ slug: /algorithms/05-divide-conquer
 title: "Chapter 5: Divide and Conquer"
 sidebar_label: "Chapter 5: Divide and Conquer"
 sidebar_position: 5
+description: "Chapter 1: Fundamentals of Algorithm Analysis — Master theorem, recurrence relations | Next: Chapter 6: Greedy Algorithms — From divide-and-conquer to"
 ---
 
 # Chapter 5: Divide and Conquer

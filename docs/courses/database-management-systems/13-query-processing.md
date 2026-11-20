@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: The SQL query lifecycle runs through four stages -- parsing, optimization, execution, and result delivery -- each adding its own"
+---
+
 # Chapter 13: Query Processing and Optimization
 
 > **Prev:** [Chapter 12: Indexing](12-indexing.md) | **Next:** [Chapter 14: NoSQL Databases](14-nosql.md)

@@ -1,3 +1,7 @@
+---
+description: "'Tum maut ke liye taiyaari karte ho — yeh sabse badi bhool hai. Antim khayaal koi taiyaari ka natija nahin hai; woh tumhare poore jeevan ka hisaab hai"
+---
+
 # अध्याय ८: अक्षर ब्रह्म योग — Maut ka sawaal nahin, jeevan ka pal hai
 
 > **"Tum maut ke liye taiyaari karte ho — yeh sabse badi bhool hai. Antim khayaal koi taiyaari ka natija nahin hai; woh tumhare poore jeevan ka hisaab hai. Agar tum maut se pyaar karte ho, to marne se pehle jee lo — isi pal, isi saans mein. Maut ki chinta karna band karo; jeevan ka bhar lo."**

@@ -4,6 +4,7 @@ slug: /java/47-spring-ai
 title: "Spring AI"
 sidebar_label: "Spring AI"
 sidebar_position: 47
+description: "Spring AI is a framework that brings AI capabilities to Spring Boot applications. It provides a consistent abstraction over LLM providers, vector"
 ---
 
 # Spring AI

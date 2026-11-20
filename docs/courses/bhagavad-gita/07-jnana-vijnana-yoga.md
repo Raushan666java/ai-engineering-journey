@@ -1,3 +1,7 @@
+---
+description: "The war is about to begin, and yet the real battle has moved inside. Krishna has spent six chapters clearing the ground: act without attachment, meditate"
+---
+
 # Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing
 
 > "Knowledge is a map; realization is the mountain itself. You can study the map your whole life and still never climb a single step."

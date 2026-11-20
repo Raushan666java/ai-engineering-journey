@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/05-fastapi-backend/06-database-with-sqlalchemy
 title: "Database with SQLAlchemy — ORM, Migrations, and Repository Pattern"
 sidebar_label: "Database with SQLAlchemy — ORM, Migrations, and Repository Pattern"
 sidebar_position: 74
+description: "Database with SQLAlchemy — ORM, Migrations, and Repository Pattern: FastAPI is the modern Python framework for building AI APIs. Its async support"
 ---
 
 <!-- improved -->

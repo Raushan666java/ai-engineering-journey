@@ -4,6 +4,7 @@ slug: /cyber-security/04-system-software
 title: "Chapter 4: System & Software Security"
 sidebar_label: "Chapter 4: System & Software Security"
 sidebar_position: 4
+description: "One-Sentence Takeaway: System security requires understanding low-level memory corruption at the assembly level, hardening the OS, classifying malware by"
 ---
 
 # Chapter 4: System & Software Security

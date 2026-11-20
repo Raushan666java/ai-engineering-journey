@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/02-sql-and-databases/visual-notes
 title: "Visual Notes — SQL & Databases"
 sidebar_label: "Visual Notes"
 sidebar_position: 37
+description: "One-line answer for interviews: 'SQL reads in logical order — not written order — and every performance question starts with the execution plan.'"
 ---
 
 # Visual Notes — SQL & Databases

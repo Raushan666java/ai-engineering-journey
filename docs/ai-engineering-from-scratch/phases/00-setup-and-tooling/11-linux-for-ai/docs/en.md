@@ -1,3 +1,7 @@
+---
+description: "You develop on macOS or Windows. But the moment you SSH into a cloud GPU box, rent a Lambda instance, or spin up an EC2 machine, you land in Ubuntu. The"
+---
+
 # Linux for AI
 
 > Most AI runs on Linux. You need to know enough to not be stuck.

@@ -4,6 +4,7 @@ slug: /discrete-mathematics/05-combinatorics
 title: "Chapter 5: Combinatorics"
 sidebar_label: "Chapter 5: Combinatorics"
 sidebar_position: 5
+description: "Sum Rule (Rule of Disjunction). If task A can be done in $m$ ways and task B in $n$ ways, and the two tasks cannot be done simultaneously, then there are"
 ---
 
 # Chapter 5: Combinatorics

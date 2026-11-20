@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: A country has one president. The constitution ensures only one person holds that office at any time, and every citizen can access the"
+---
+
 # Chapter 16: Design Patterns → The Gang of Four
 
 > **Previous:** [15-concurrency](./15-concurrency.md) | **Next:** None

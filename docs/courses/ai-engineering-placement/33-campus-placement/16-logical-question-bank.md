@@ -1,3 +1,7 @@
+---
+description: "Rule: 45-75 seconds per question. Answers with explanations at the bottom. Covers all 12 types from logical-all-types.md. Difficulty tags: (E) Easy, (M)"
+---
+
 <!-- improved -->
 # Logical Reasoning — 100 Question Drill Bank (Any Company)
 

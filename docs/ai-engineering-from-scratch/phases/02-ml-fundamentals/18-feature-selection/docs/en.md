@@ -1,3 +1,7 @@
+---
+description: "You have 500 features. Your model trains slowly, overfits constantly, and nobody can explain what it learned. You add more features hoping to improve"
+---
+
 # Feature Selection
 
 > More features is not better. The right features is better.

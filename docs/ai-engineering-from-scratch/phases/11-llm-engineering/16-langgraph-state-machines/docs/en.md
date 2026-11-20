@@ -1,3 +1,7 @@
+---
+description: "A ReAct loop written by hand is a while True. A ReAct loop written in LangGraph is a graph you can checkpoint, interrupt, branch, and time-travel through"
+---
+
 # LangGraph — State Machines for Agents
 
 > A ReAct loop written by hand is a `while True`. A ReAct loop written in LangGraph is a graph you can checkpoint, interrupt, branch, and time-travel through. The agent hasn't changed. The harness around it has.

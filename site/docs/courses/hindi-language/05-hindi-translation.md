@@ -4,6 +4,7 @@ slug: /hindi-language/05-hindi-translation
 title: "Chapter 5: अनुवाद (Translation)"
 sidebar_label: "Chapter 5: अनुवाद (Translation)"
 sidebar_position: 5
+description: "Passage 1: English to Hindi 'The Indian economy has shown remarkable resilience in the face of global challenges.' Translation: 'Vaishvik chunautiyon ke"
 ---
 
 # Chapter 5: अनुवाद (Translation)

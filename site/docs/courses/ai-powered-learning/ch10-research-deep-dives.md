@@ -4,6 +4,7 @@ slug: /ai-powered-learning/ch10-research-deep-dives
 title: "Chapter 10: Research & Deep Dives with AI"
 sidebar_label: "Chapter 10: Research & Deep Dives with AI"
 sidebar_position: 10
+description: "Research is the skill that separates students who wait for tutorials from people who learn anything. This chapter turns AI into a research engine"
 ---
 
 # Chapter 10: Research & Deep Dives with AI

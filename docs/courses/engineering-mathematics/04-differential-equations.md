@@ -1,3 +1,7 @@
+---
+description: "An ordinary differential equation (ODE) involves derivatives of a function of one variable. A partial differential equation (PDE) involves partial"
+---
+
 # Chapter 4: Differential Equations
 
 > **Previous:** [Chapter 3: Multivariable Calculus](03-calculus-ii.md) | **Next:** [Chapter 5: Complex Analysis](05-complex-analysis.md)

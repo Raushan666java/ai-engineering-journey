@@ -1,3 +1,7 @@
+---
+description: "The most widespread application of finite automata is lexical analysis (lexing) in compilers. A lexer converts a stream of characters into a stream of"
+---
+
 # Chapter 16: Applications of Automata Theory
 
 > **Previous:** [Advanced Complexity Topics](./15-advanced-complexity.md) | **Next:** None

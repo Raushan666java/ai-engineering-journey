@@ -1,3 +1,7 @@
+---
+description: "DPO & Preference Tuning: Fine-tuning adapts foundation models to your specific domain. LoRA, QLoRA, and DPO make this affordable. This module covers when"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # DPO & Preference Tuning

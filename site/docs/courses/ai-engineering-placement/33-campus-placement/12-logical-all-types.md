@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/12-logical-all-types
 title: "Logical Reasoning — All Types Master Reference"
 sidebar_label: "Logical Reasoning — All Types Master Reference"
 sidebar_position: 373
+description: "Complete theory for every reasoning type asked in ANY company aptitude round. Each type: method → key insight → 3-5 worked examples → common trap. Then"
 ---
 
 <!-- improved -->

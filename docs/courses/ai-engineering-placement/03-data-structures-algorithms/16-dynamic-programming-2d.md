@@ -1,3 +1,7 @@
+---
+description: "Sliding window is a powerful technique for solving subarray/substring problems in O(n) time. It maintains a window over the data and slides it to find"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Dynamic Programming 2D

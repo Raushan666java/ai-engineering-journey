@@ -4,6 +4,7 @@ slug: /reasoning-ability/05-blood-relations-direction-sense
 title: "Blood Relations, Direction Sense, and Order-Ranking"
 sidebar_label: "Blood Relations, Direction Sense, and Order-Ranking"
 sidebar_position: 5
+description: "Blood relations, direction sense, and order-ranking questions typically contribute 4–6 questions in the IBPS SO Reasoning Ability section. They are"
 ---
 
 # Blood Relations, Direction Sense, and Order-Ranking

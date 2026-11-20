@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/16-hybrid-search-archite
 title: "Hybrid Search Architecture"
 sidebar_label: "Hybrid Search Architecture"
 sidebar_position: 173
+description: "Search systems today must handle both exact keyword matches and semantic understanding. Hybrid search architecture combines the strengths of sparse"
 ---
 
 <!-- improved -->

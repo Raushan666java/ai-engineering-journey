@@ -1,3 +1,7 @@
+---
+description: "REST (Representational State Transfer) is an architectural style for designing networked applications. RESTful APIs are built around resources, which are"
+---
+
 # Chapter 9: REST APIs and API Design
 
 > **Previous:** [08-node-express](./08-node-express.md) | **Next:** [10-auth](./10-auth.md)

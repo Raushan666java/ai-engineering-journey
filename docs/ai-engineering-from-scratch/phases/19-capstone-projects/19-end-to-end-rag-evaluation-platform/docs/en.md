@@ -1,3 +1,7 @@
+---
+description: "A RAG pipeline without evaluation is a garden without a fence — you have no idea what is getting in or what is getting out. This capstone builds a"
+---
+
 # End-to-End RAG Evaluation & Monitoring Platform
 
 > A RAG pipeline without evaluation is a garden without a fence — you have no idea what is getting in or what is getting out. This capstone builds a complete evaluation platform: synthetic test sets, metric computation, batch runners, and a historical dashboard so you know whether your next embedding swap actually helped.

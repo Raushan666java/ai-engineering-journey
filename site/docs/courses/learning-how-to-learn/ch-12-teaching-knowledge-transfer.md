@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/ch-12-teaching-knowledge-transfer
 title: "Chapter 12: Teaching & Knowledge Transfer"
 sidebar_label: "Chapter 12: Teaching & Knowledge Transfer"
 sidebar_position: 13
+description: "Teaching is the master key to learning. Every time you explain a concept to someone else — a peer, a rubber duck, a blog audience, a rubber duck — you"
 ---
 
 # Chapter 12: Teaching & Knowledge Transfer

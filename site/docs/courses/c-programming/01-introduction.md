@@ -4,6 +4,7 @@ slug: /c-programming/01-introduction
 title: "Chapter 1: Introduction to C"
 sidebar_label: "Chapter 1: Introduction to C"
 sidebar_position: 1
+description: "C was developed between 1969 and 1973 by Dennis Ritchie at Bell Telephone Laboratories. It evolved from an earlier language called B (created by Ken"
 ---
 
 # Chapter 1: Introduction to C

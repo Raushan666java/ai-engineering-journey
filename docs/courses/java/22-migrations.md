@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Never modify an already-applied migration. Create a new migration file for any schema change. Flyway validates checksums and will fail if a"
+---
+
 > **Previous:** [Spring Data JPA](./21-spring-data-jpa.md) | **Next:** [NoSQL](./23-nosql.md)
 
 # Database Migrations (Flyway & Liquibase)

@@ -1,3 +1,7 @@
+---
+description: "A comprehensive course covering the Indian banking system, monetary policy, financial markets, government schemes, budget, and banking regulations —"
+---
+
 # Banking & Financial Awareness
 
 > A comprehensive course covering the Indian banking system, monetary policy, financial markets, government schemes, budget, and banking regulations — designed for IBPS SO, SBI PO, RBI Grade B, and other banking exams.

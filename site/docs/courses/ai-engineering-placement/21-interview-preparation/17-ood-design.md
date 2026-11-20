@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/17-ood-design
 title: "Low-Level and OOD Design"
 sidebar_label: "Low-Level and OOD Design"
 sidebar_position: 267
+description: "After this chapter you will be able to design class hierarchies for common interview problems, apply SOLID principles to object-oriented design, handle"
 ---
 
 <!-- improved -->

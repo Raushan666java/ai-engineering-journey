@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/06-hash-maps-and-s
 title: "Hash Maps and Sets"
 sidebar_label: "Hash Maps and Sets"
 sidebar_position: 43
+description: "Hash maps provide O(1) average-case lookup, insertion, and deletion. They are the go-to data structure for frequency counting, caching, and implementing"
 ---
 
 <!-- improved -->

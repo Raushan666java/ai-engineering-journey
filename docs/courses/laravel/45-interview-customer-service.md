@@ -1,3 +1,7 @@
+---
+description: "A modern ticketing system centers on the ticket lifecycle: intake (web form, email, chat, social, phone), triage (classification, prioritization"
+---
+
 # Chapter 45: Customer Service & Support → Interview Q&A
 
 > **Previous:** [Marketing & Advertising — Interview Q&A](./44-interview-marketing.md) | **Next:** [Real Estate & Property Interview Q&A](./46-interview-real-estate.md)

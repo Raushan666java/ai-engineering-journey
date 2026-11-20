@@ -1,3 +1,7 @@
+---
+description: "Imagine planning a picnic. The weather forecast says '70% chance of rain.' You cannot know for certain whether it will rain, but you must decide: bring an"
+---
+
 # Chapter 8: Uncertainty and Probabilistic Reasoning
 
 **Previous:** [Chapter 7: Logical Reasoning and Inference](07-logical-reasoning.md) | **Next:** [Chapter 9: Machine Learning](09-machine-learning.md)

@@ -4,6 +4,7 @@ slug: /learning-how-to-learn-practical/ch-03-daily-workflow-energy
 title: "Chapter 3: Daily Workflow & Energy Management"
 sidebar_label: "Chapter 3: Daily Workflow & Energy Management"
 sidebar_position: 4
+description: "Your ability to focus is not constant throughout the day. Trying to do deep work in a low-energy window is like trying to run a marathon after a 20-hour"
 ---
 
 # Chapter 3: Daily Workflow & Energy Management

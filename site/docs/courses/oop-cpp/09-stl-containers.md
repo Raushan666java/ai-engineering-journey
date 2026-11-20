@@ -4,6 +4,7 @@ slug: /oop-cpp/09-stl-containers
 title: "Chapter 9: STL Containers -- In-Depth Mastery"
 sidebar_label: "Chapter 9: STL Containers -- In-Depth Mastery"
 sidebar_position: 9
+description: "STL containers are generic data structures that store collections of objects. They manage memory automatically, provide uniform access through iterators"
 ---
 
 # Chapter 9: STL Containers -- In-Depth Mastery

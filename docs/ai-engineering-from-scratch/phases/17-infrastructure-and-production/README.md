@@ -1,3 +1,7 @@
+---
+description: "Phase 17: Infrastructure & Production"
+---
+
 # Phase 17: Infrastructure & Production
 
 > Ship AI to the real world. Scale, monitor, optimize.

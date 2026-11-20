@@ -1,3 +1,7 @@
+---
+description: "Kubernetes Configuration — ConfigMaps, Secrets, and Helm: Containers and cloud platforms are where AI models live in production. Docker packages your"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Kubernetes Configuration — ConfigMaps, Secrets, and Helm

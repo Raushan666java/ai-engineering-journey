@@ -1,3 +1,7 @@
+---
+description: "Kubernetes Basics — Pods, Services, and Deployments: Containers and cloud platforms are where AI models live in production. Docker packages your model"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Kubernetes Basics — Pods, Services, and Deployments

@@ -1,3 +1,7 @@
+---
+description: "Chapter 15: NP-Completeness — Understanding of NP-hard problems and reductions | Next: Chapter 17: Randomized Algorithms — From deterministic"
+---
+
 # Chapter 16: Approximation Algorithms
 
 > **Prerequisites:** [Chapter 15: NP-Completeness](./15-np-completeness.md) — Understanding of NP-hard problems and reductions | **Next:** [Chapter 17: Randomized Algorithms](./17-randomized.md) — From deterministic approximation to probabilistic methods

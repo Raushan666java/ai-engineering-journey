@@ -4,6 +4,7 @@ slug: /operating-systems/08-memory-management
 title: "Chapter 8: Memory Management"
 sidebar_label: "Chapter 8: Memory Management"
 sidebar_position: 8
+description: "A[Address Binding] --> B[Logical vs Physical Addresses] B --> C[MMU & Relocation] C --> D[Contiguous Allocation] D --> E[Fixed Partitioning] D -->"
 ---
 
 # Chapter 8: Memory Management

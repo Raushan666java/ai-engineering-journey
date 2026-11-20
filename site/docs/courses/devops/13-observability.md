@@ -4,6 +4,7 @@ slug: /devops/13-observability
 title: "Chapter 13: Observability"
 sidebar_label: "Chapter 13: Observability"
 sidebar_position: 22
+description: "Logs — Discrete, timestamped records of events. Provide detailed context for specific occurrences. High cardinality but high storage cost. Best for"
 ---
 
 # Chapter 13: Observability

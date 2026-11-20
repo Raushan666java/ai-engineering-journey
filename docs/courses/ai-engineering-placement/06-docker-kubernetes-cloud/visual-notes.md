@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'My image is built once, versioned in a registry, and orchestrated by Kubernetes regardless of which cloud runs it.'"
+---
+
 # Visual Notes — Container-to-Cloud Deployment Stack
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

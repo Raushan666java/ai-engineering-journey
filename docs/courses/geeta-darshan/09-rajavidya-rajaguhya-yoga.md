@@ -1,3 +1,7 @@
+---
+description: "'Prem sabse chhota raasta hai, magar sabse gehra khaai us par hai. Jo prem ko chunta hai, woh risk chunta hai — apna poora ego, apni saari pehchaan, sab"
+---
+
 # अध्याय ९: राजविद्या राजगुह्य योग — Prem hi sabse bada raaz hai
 
 > **"Prem sabse chhota raasta hai, magar sabse gehra khaai us par hai. Jo prem ko chunta hai, woh risk chunta hai — apna poora ego, apni saari pehchaan, sab kuch daav par lagata hai. Aur isi risk mein uska vinaash nahin, uska janm hota hai. Prem hi woh raaz hai jise Krishna ne is adhyaya mein khola hai — aur jise duniya ne sirf padha hai, jeeya nahin."**

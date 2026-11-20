@@ -4,6 +4,7 @@ slug: /computer-networks/05-ethernet-switching
 title: "Chapter 5: Ethernet Switching"
 sidebar_label: "Chapter 5: Ethernet Switching"
 sidebar_position: 5
+description: "The Ethernet frame is the fundamental unit of data transfer on Ethernet networks. Its format has remained remarkably stable since the DIX 2.0 standard"
 ---
 
 # Chapter 5: Ethernet Switching

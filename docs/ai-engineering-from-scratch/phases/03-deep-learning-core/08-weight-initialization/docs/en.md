@@ -1,3 +1,7 @@
+---
+description: "Initialize all weights to zero. Nothing learns. Every neuron computes the same function, receives the same gradient, and updates identically. After 10,000"
+---
+
 # Weight Initialization and Training Stability
 
 > Initialize wrong and training never starts. Initialize right and 50 layers train as smoothly as 3.

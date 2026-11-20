@@ -1,3 +1,7 @@
+---
+description: "A curated collection of CSS interview questions covering fundamental concepts, layout systems, responsive design, animations, modern frameworks, and"
+---
+
 # CSS Interview Q&A
 
 > **Previous:** [HTML Interview Q&A](./51-interview-html.md) | **Next:** [JavaScript Interview Q&A](./53-interview-javascript.md)

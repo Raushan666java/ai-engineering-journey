@@ -4,6 +4,7 @@ slug: /database-management-systems/09-transactions
 title: "Chapter 9: Transactions"
 sidebar_label: "Chapter 9: Transactions"
 sidebar_position: 9
+description: "A transaction is a logical unit of work that accesses and possibly modifies the database. It is a sequence of operations (reads and writes) that forms a"
 ---
 
 # Chapter 9: Transactions

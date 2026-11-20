@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/14-speed-tricks-cheatsheet
 title: "Speed Tricks Cheatsheet — 40 Instant-Recognition Rules"
 sidebar_label: "Speed Tricks Cheatsheet — 40 Instant-Recognition Rules"
 sidebar_position: 375
+description: "Memorize these cold. Recite them from memory before every drill session. Each rule saves 30-60 seconds in the real test — that is the difference between"
 ---
 
 <!-- improved -->

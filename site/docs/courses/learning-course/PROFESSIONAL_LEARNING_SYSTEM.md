@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/PROFESSIONAL_LEARNING_SYSTEM title: '🚀 The Working Professional's Learning System' sidebar_label: '🚀 The Working Professional's"
+---
+
 ﻿---
 slug: /learning-course/PROFESSIONAL_LEARNING_SYSTEM
 title: "🚀 The Working Professional's Learning System"

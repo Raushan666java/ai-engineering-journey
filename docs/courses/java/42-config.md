@@ -1,3 +1,7 @@
+---
+description: "In a microservices architecture, configuration becomes distributed across many services. A centralized configuration server solves this by providing a"
+---
+
 # Distributed Configuration
 
 > **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)

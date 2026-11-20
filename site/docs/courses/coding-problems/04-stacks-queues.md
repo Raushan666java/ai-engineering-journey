@@ -4,6 +4,7 @@ slug: /coding-problems/04-stacks-queues
 title: "Chapter 04: Stacks & Queues"
 sidebar_label: "Chapter 04: Stacks & Queues"
 sidebar_position: 4
+description: "Stacks and queues are fundamental linear data structures that enforce specific ordering rules — LIFO for stacks and FIFO for queues. They power everything"
 ---
 
 # Chapter 04: Stacks & Queues

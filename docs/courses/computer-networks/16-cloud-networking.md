@@ -1,3 +1,7 @@
+---
+description: "Cloud networking replaces physical routers, switches, and firewalls with software-defined equivalents running on hypervisor-hosted virtual infrastructure"
+---
+
 # Chapter 16: Cloud Networking
 
 ## Learning Objectives

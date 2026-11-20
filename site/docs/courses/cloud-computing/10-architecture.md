@@ -4,6 +4,7 @@ slug: /cloud-computing/10-architecture
 title: "Chapter 10: Cloud Architecture Design Patterns"
 sidebar_label: "Chapter 10: Cloud Architecture Design Patterns"
 sidebar_position: 10
+description: "A[Architecture Design] --> B[Well-Architected Framework] A --> C[Migration Strategies] A --> D[Disaster Recovery] A --> E[Fault Tolerance + HA] A -->"
 ---
 
 # Chapter 10: Cloud Architecture Design Patterns

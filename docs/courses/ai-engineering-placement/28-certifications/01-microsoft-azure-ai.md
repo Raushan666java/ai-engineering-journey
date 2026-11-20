@@ -1,3 +1,7 @@
+---
+description: "Microsoft Azure offers three AI certifications for different roles. AI-900 is the fundamentals exam. AI-102 is for AI engineers building solutions. DP-100"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Microsoft Azure AI Certifications

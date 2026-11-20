@@ -4,6 +4,7 @@ slug: /web-development/17-performance
 title: "Chapter 17: Performance Optimization"
 sidebar_label: "Chapter 17: Performance Optimization"
 sidebar_position: 17
+description: "Use npx web-vitals in your app to track real Core Web Vitals from actual users — Lighthouse gives lab data but real-user metrics reveal the true"
 ---
 
 # Chapter 17: Performance Optimization

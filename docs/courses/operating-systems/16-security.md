@@ -1,3 +1,7 @@
+---
+description: "A[Security Goals: CIA] --> B[Authentication Methods] B --> C[Access Control Models] C --> D[Buffer Overflow & Malware] D --> E[Cryptography Basics] E -->"
+---
+
 # Chapter 16: Security
 
 **<< [Shell Scripting](./15-shell-scripting.md)** | [**Next: Virtualization and Cloud Computing**](./17-virtualization.md) >>

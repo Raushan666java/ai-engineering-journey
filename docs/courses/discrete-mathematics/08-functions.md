@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: A function assigns every element of the domain exactly one element of the codomain; the range (image) may be a proper subset of the"
+---
+
 # Chapter 8: Functions
 
 > **Previous:** [Chapter 7: Relations](./07-relations.md) | **Next:** [Chapter 9: Graph Theory](./09-graph-theory.md)

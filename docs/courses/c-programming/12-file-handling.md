@@ -1,3 +1,7 @@
+---
+description: "When you open a file, the OS gives you a file descriptor (an integer handle). C wraps this in a FILE struct that holds: the file position indicator"
+---
+
 # Chapter 12: File Handling
 
 > **Previous:** [Dynamic Memory Allocation](./11-dma.md) | **Next:** [The Preprocessor](./13-preprocessor.md)

@@ -4,6 +4,7 @@ slug: /cyber-security/05-web-security
 title: "Chapter 5: Web Security"
 sidebar_label: "Chapter 5: Web Security"
 sidebar_position: 5
+description: "Real-World Analogy: A hotel key card that opens every room instead of only your own. Technical Explanation: The server fails to verify that the"
 ---
 
 # Chapter 5: Web Security

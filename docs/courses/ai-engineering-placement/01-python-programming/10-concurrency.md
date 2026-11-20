@@ -1,3 +1,7 @@
+---
+description: "Concurrency — Threading, Multiprocessing, and Async: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and libraries"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Concurrency — Threading, Multiprocessing, and Async

@@ -1,3 +1,7 @@
+---
+description: "Lessons 82-86 in this track each shipped a single piece: a taxonomy, an input detector, an evaluation framework, an output classifier, a rules engine. A"
+---
+
 # Capstone 87 — End-to-End Safety Gate
 
 > Pre-gen, during-gen, post-gen. Three checkpoints, one verdict, an audit trail per request.

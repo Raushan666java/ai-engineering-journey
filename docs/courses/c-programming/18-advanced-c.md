@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: A large corporation divides work into departments (accounting, engineering, HR). Each department has a public interface (reception"
+---
+
 # Chapter 18: Advanced C
 
 > **Previous:** [The C Standard Library](./17-standard-library.md)

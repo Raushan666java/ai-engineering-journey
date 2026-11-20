@@ -1,3 +1,7 @@
+---
+description: "Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention: Natural language processing is how machines understand human text"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention

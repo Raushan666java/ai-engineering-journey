@@ -4,6 +4,7 @@ slug: /government-pyqs/07-nic-scientist-2024
 title: "NIC Scientist B 2024 — Solved Paper"
 sidebar_label: "NIC Scientist B 2024 — Solved Paper"
 sidebar_position: 7
+description: "National Informatics Centre (NIC) Scientist B recruitment exam — fully solved with explanations, TypeScript code, Mermaid diagrams, and topic-wise"
 ---
 
 # NIC Scientist B 2024 — Solved Paper

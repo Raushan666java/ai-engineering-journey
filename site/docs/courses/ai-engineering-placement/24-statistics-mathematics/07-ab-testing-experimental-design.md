@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/24-statistics-mathematics/07-ab-testing-experime
 title: "Chapter 07: A/B Testing & Experimental Design"
 sidebar_label: "Chapter 07: A/B Testing & Experimental Design"
 sidebar_position: 305
+description: "A/B testing is the gold standard for evaluating changes in products, models, and user experiences using controlled experiments. As an AI engineer, you"
 ---
 
 <!-- improved -->

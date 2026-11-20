@@ -4,6 +4,7 @@ slug: /oop-cpp/13-move-semantics
 title: "Chapter 13: Move Semantics"
 sidebar_label: "Chapter 13: Move Semantics"
 sidebar_position: 13
+description: "An lvalue is like a book on the library shelf. It has a permanent location (identity). You can take it, read it, put it back, and someone else can find it"
 ---
 
 # Chapter 13: Move Semantics

@@ -4,6 +4,7 @@ slug: /geeta-darshan/10-vibhuti-yoga
 title: "अध्याय १०: विभूति योग — Divine kahin aur nahin, yahin har cheez mein hai"
 sidebar_label: "अध्याय १०: विभूति योग — Divine kahin aur nahin, yahin har cheez mein hai"
 sidebar_position: 11
+description: "'Tum divine ko khojne ke liye aakash mein mat dekho — apni chai ki pyali mein dekho, apni saans mein dekho, apne aansu mein dekho. Jo har cheez mein hai"
 ---
 
 # अध्याय १०: विभूति योग — Divine kahin aur nahin, yahin har cheez mein hai

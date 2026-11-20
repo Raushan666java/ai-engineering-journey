@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/16-dsa-problem-bank
 title: "DSA Problem Bank: 100+ Curated Problems"
 sidebar_label: "DSA Problem Bank: 100+ Curated Problems"
 sidebar_position: 266
+description: "After this chapter you will have a structured practice plan covering all major DSA patterns, know which problems to solve for each company, and be able to"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/12-graphs-bfs-dfs
 title: "Graphs BFS DFS"
 sidebar_label: "Graphs BFS DFS"
 sidebar_position: 49
+description: "Dynamic programming solves complex problems by breaking them into overlapping subproblems. Recognizing DP patterns — optimal substructure and overlapping"
 ---
 
 <!-- improved -->

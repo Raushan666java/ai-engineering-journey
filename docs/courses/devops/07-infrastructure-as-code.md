@@ -1,3 +1,7 @@
+---
+description: "Infrastructure as Code (IaC) is the practice of managing and provisioning infrastructure through machine-readable definition files, rather than manual"
+---
+
 # Chapter 7: Infrastructure as Code
 
 > **Prev:** [Orchestration](./06-orchestration.md)

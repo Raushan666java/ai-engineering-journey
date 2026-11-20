@@ -1,3 +1,7 @@
+---
+description: "As you progress through phases, shift time toward weak areas. If your mocks show DSA is strong but system design is weak, shift 3 hours from DSA to design."
+---
+
 # Chapter 10: Interview Preparation Workflow
 
 > ⏱ **2.5 hours total** · 🎯 **Intermediate** · 📋 **Recommended: Ch 8 (Study Plan)**

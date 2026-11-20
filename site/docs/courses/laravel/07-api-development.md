@@ -4,6 +4,7 @@ slug: /laravel/07-api-development
 title: "Chapter 7: API Development & Integration"
 sidebar_label: "Chapter 7: API Development & Integration"
 sidebar_position: 7
+description: "Remember: PUT replaces the entire resource — missing fields are set to null. PATCH only applies partial modifications. Use PUT sparingly; PATCH is almost"
 ---
 
 # Chapter 7: API Development & Integration

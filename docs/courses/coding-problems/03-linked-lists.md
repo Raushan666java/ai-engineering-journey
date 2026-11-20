@@ -1,3 +1,7 @@
+---
+description: "Linked lists test your understanding of pointer manipulation, memory management, and recursive thinking. They are deceptively simple but require careful"
+---
+
 # Chapter 03: Linked Lists
 
 > Linked lists test your understanding of pointer manipulation, memory management, and recursive thinking. They are deceptively simple but require careful handling of edge cases.

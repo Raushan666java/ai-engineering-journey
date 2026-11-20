@@ -1,3 +1,7 @@
+---
+description: "An lvalue is like a book on the library shelf. It has a permanent location (identity). You can take it, read it, put it back, and someone else can find it"
+---
+
 # Chapter 13: Move Semantics
 
 > **Previous:** [12-smart-pointers](./12-smart-pointers.md) | **Next:** [14-lambdas](./14-lambdas.md)

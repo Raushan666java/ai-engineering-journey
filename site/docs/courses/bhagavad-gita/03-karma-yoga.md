@@ -4,6 +4,7 @@ slug: /bhagavad-gita/03-karma-yoga
 title: "Chapter 3: Karma Yoga — Action Without Attachment"
 sidebar_label: "Chapter 3: Karma Yoga — Action Without Attachment"
 sidebar_position: 3
+description: "Chapter 2 ended with the portrait of the sthitaprajna, the man of steady wisdom. Arjuna has heard the whole theory of the immortal self and the even mind"
 ---
 
 # Chapter 3: Karma Yoga — Action Without Attachment

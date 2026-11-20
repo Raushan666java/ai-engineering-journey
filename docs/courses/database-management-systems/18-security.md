@@ -1,3 +1,7 @@
+---
+description: "A database is like a bank vault. The vault itself is steel and concrete (encryption at rest). The courier trucks use armored transport (encryption in"
+---
+
 # Chapter 18: Database Security
 
 > **Prev:** [Chapter 17 — Distributed DB](17-distributed-db.md) | **Next:** [Chapter 19 — Performance Tuning](19-performance-tuning.md)

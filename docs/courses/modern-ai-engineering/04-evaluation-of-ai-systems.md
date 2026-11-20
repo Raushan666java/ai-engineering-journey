@@ -1,3 +1,7 @@
+---
+description: "By the end of this chapter, you will be able to: - Explain why evaluating generative AI systems is fundamentally harder than evaluating traditional ML"
+---
+
 # Chapter 4: Evaluation of AI Systems
 
 > **Learning Objectives**

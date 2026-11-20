@@ -1,3 +1,7 @@
+---
+description: "Batch processing is insufficient when ML models need sub-second updates — fraud detection must flag transactions in milliseconds, recommendation systems"
+---
+
 <!-- improved -->
 # 04 — Streaming & Real-Time Data
 

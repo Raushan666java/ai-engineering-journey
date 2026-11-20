@@ -1,3 +1,7 @@
+---
+description: "A team reads about a jailbreak on social media, writes a single regex like r'ignore (all )?previous', ships it, and calls it the prompt injection defense"
+---
+
 # Capstone 83 — Prompt Injection Detector
 
 > A detector is a function from prompt to confidence and category. Anything else is a vibe.

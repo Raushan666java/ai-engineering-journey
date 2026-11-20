@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/09-deep-learning-pytorch/01-neural-networks-basi
 title: "Neural Networks Basics — Perceptron, Activation Functions, Backpropagation"
 sidebar_label: "Neural Networks Basics — Perceptron, Activation Functions, Backpropagation"
 sidebar_position: 126
+description: "Neural networks are the engine behind every modern AI system — from GPT-4's language generation to self-driving car vision. This chapter builds your"
 ---
 
 <!-- improved -->

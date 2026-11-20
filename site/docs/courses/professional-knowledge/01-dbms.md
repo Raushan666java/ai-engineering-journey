@@ -4,6 +4,7 @@ slug: /professional-knowledge/01-dbms
 title: "Chapter 1: Database Management Systems — Exam Quick Revision"
 sidebar_label: "Chapter 1: Database Management Systems — Exam Quick Revision"
 sidebar_position: 1
+description: "Step 2 — Check 2NF: No partial FD because each key is single-attribute? No — AB → C, C → D. Since there is no partial dependency (non-prime attrs C, D"
 ---
 
 # Chapter 1: Database Management Systems — Exam Quick Revision

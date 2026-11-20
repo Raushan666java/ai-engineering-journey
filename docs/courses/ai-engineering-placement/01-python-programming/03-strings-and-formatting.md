@@ -1,3 +1,7 @@
+---
+description: "Strings & Formatting — Methods, Slicing, F-Strings, and Regex: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Strings & Formatting — Methods, Slicing, F-Strings, and Regex

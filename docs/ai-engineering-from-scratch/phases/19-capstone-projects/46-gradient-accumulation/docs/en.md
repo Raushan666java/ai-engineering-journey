@@ -1,3 +1,7 @@
+---
+description: "You want to train at an effective batch of 512 because the loss curve is smoother and the optimizer step makes more sense at that scale. The accelerator"
+---
+
 # Gradient Accumulation
 
 > Train at an effective batch you cannot afford, one micro-batch at a time. Scale the loss, hold the optimizer step, and let the gradients pile up.

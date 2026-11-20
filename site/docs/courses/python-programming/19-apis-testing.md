@@ -4,6 +4,7 @@ slug: /python-programming/19-apis-testing
 title: "Chapter 19: APIs and Testing"
 sidebar_label: "Chapter 19: APIs and Testing"
 sidebar_position: 19
+description: "One-Sentence Takeaway: requests makes HTTP calls simple; use Session for connection reuse across requests. Remember: Always handle HTTP errors — check"
 ---
 
 # Chapter 19: APIs and Testing

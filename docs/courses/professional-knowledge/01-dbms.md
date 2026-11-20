@@ -1,3 +1,7 @@
+---
+description: "Step 2 — Check 2NF: No partial FD because each key is single-attribute? No — AB → C, C → D. Since there is no partial dependency (non-prime attrs C, D"
+---
+
 # Chapter 1: Database Management Systems — Exam Quick Revision
 
 ## Learning Objectives

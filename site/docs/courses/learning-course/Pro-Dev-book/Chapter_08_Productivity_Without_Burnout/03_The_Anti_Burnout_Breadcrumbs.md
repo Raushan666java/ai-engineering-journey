@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_08_Productivity_Without_Burnout/03_T
 title: "🛑 The Anti-Burnout Breadcrumbs"
 sidebar_label: "🛑 The Anti-Burnout Breadcrumbs"
 sidebar_position: 3
+description: "When you sit down at your desk at 9:00 AM, open a massive Vue component or a complex Laravel Service class, your brain has to load the entire context of"
 ---
 # 🛑 The Anti-Burnout Breadcrumbs
 

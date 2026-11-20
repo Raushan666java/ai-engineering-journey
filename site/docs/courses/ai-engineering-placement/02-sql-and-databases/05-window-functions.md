@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/02-sql-and-databases/05-window-functions
 title: "Window Functions — ROW_NUMBER, RANK, LAG, LEAD, NTILE, Frames"
 sidebar_label: "Window Functions — ROW_NUMBER, RANK, LAG, LEAD, NTILE, Frames"
 sidebar_position: 30
+description: "Window Functions — ROW_NUMBER, RANK, LAG, LEAD, NTILE, Frames: Data is the fuel of AI. SQL and database design skills let you query, transform, and store"
 ---
 
 <!-- improved -->

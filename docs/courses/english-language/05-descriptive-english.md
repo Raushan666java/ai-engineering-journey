@@ -1,3 +1,7 @@
+---
+description: "Unlike the objective Prelims paper, the Mains examination in IBPS SO, SBI PO, RBI Grade B, and other government exams includes a Descriptive English"
+---
+
 # Chapter 5: Descriptive English
 
 ## Learning Objectives

@@ -4,6 +4,7 @@ slug: /ai-powered-learning/ch11-verification-anti-hallucination
 title: "Chapter 11: Verification & Anti-Hallucination"
 sidebar_label: "Chapter 11: Verification & Anti-Hallucination"
 sidebar_position: 11
+description: "When you learn fast with AI, the biggest risk is not speed — it is wrongness. A language model does not know anything; it predicts the next most plausible"
 ---
 
 # Chapter 11: Verification & Anti-Hallucination

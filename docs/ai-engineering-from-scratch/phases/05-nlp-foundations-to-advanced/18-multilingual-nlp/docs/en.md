@@ -1,3 +1,7 @@
+---
+description: "English has billions of labeled examples. Urdu has thousands. Maithili has almost none. Any practical NLP system that serves a global audience has to work"
+---
+
 # Multilingual NLP
 
 > One model, 100+ languages, zero training data for most of them. Cross-lingual transfer is the practical miracle of the 2020s.

@@ -4,6 +4,7 @@ slug: /machine-learning/08-unsupervised-learning
 title: "Chapter 8: Unsupervised Learning"
 sidebar_label: "Chapter 8: Unsupervised Learning"
 sidebar_position: 8
+description: "Unsupervised Learning involves training models on data that does not have explicit labels or targets. The goal is to discover underlying structures"
 ---
 
 # Chapter 8: Unsupervised Learning

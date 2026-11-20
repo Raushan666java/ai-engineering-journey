@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: define type systems and type expressions; distinguish structural from name type equivalence"
+---
+
 # Chapter 7: Type Checking
 
 ? Previous: [Chapter 6: Intermediate Code Generation](06-intermediate-code.md) | **Next:** [Chapter 8: Runtime Environment](08-runtime-env.md)

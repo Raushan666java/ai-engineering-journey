@@ -4,6 +4,7 @@ slug: /theory-of-computation/15-advanced-complexity
 title: "Chapter 15: Advanced Complexity Topics"
 sidebar_label: "Chapter 15: Advanced Complexity Topics"
 sidebar_position: 15
+description: "Significance: If BQP ? NP, then quantum computers can efficiently solve problems whose solutions cannot even be verified classically — a profound"
 ---
 
 # Chapter 15: Advanced Complexity Topics

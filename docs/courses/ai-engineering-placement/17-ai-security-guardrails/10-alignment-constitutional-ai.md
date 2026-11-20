@@ -1,3 +1,7 @@
+---
+description: "AI alignment is the field of ensuring AI systems do what humans want. As models become more capable, alignment becomes harder and more urgent. An"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # AI Alignment & Constitutional AI

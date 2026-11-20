@@ -1,3 +1,7 @@
+---
+description: "This course bridges the gap between ML theory and production AI systems. It covers the three most in-demand applied skills: LLM orchestration with"
+---
+
 # Applied AI Engineering
 
 ## Course Overview

@@ -4,6 +4,7 @@ slug: /operating-systems/17-virtualization
 title: "Chapter 17: Virtualization"
 sidebar_label: "Chapter 17: Virtualization"
 sidebar_position: 17
+description: "A[Virtualization Concept] --> B[Hypervisor Types] B --> C[CPU Virtualization] B --> D[Memory Virtualization] B --> E[I/O Virtualization] E -->"
 ---
 
 # Chapter 17: Virtualization

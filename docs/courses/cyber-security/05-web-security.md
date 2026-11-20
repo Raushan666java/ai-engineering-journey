@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: A hotel key card that opens every room instead of only your own. Technical Explanation: The server fails to verify that the"
+---
+
 # Chapter 5: Web Security
 
 > **Prereq:** Chapter 4 (System & Software Security) — web apps build on OS foundations.

@@ -4,6 +4,7 @@ slug: /software-engineering/08-project-management
 title: "Project Management"
 sidebar_label: "Project Management"
 sidebar_position: 8
+description: "Software project management is the discipline of planning, organising, monitoring, and controlling software projects. Unlike many engineering disciplines"
 ---
 
 # Project Management

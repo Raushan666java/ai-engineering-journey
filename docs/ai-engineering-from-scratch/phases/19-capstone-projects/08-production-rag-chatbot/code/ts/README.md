@@ -1,3 +1,7 @@
+---
+description: "Chat UI skeleton that streams a citation-anchored response over Server-Sent Events. Pairs with the Python pipeline in ../main.py. Conversation state lives"
+---
+
 # Capstone 08 - Production RAG Chatbot (TypeScript)
 
 Chat UI skeleton that streams a citation-anchored response over Server-Sent

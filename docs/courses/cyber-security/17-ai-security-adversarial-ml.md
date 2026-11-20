@@ -1,3 +1,7 @@
+---
+description: "Prereq: Chapters 5 (Web Security), 3 (Network Security); familiarity with basic ML concepts (features, classification, loss functions). Target Audience"
+---
+
 # Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes
 
 > **Prereq:** Chapters 5 (Web Security), 3 (Network Security); familiarity with basic ML concepts (features, classification, loss functions).

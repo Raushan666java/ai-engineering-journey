@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/08-machine-learning/visual-notes
 title: "Visual Notes — The ML Lifecycle"
 sidebar_label: "Visual Notes"
 sidebar_position: 125
+description: "One-line answer for interviews: 'ML is a loop: collect → clean → engineer → train → evaluate → ship → monitor, and feedback restarts it.'"
 ---
 
 # Visual Notes — The ML Lifecycle

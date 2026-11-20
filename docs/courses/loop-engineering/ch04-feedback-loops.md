@@ -1,3 +1,7 @@
+---
+description: "An eval-driven loop is the most general form of agentic feedback. The agent produces an output, evaluates it against a set of criteria, adjusts its"
+---
+
 # Chapter 4: Feedback Loops
 
 > **Previous:** [Human-in-the-Loop](./ch03-human-in-the-loop.md) | **Next:** [Self-Improvement Loops](./ch05-self-improvement-loops.md)

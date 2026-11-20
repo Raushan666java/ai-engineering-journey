@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/ch-11-ai-assisted-learning
 title: "Chapter 11: AI-Assisted Learning"
 sidebar_label: "Chapter 11: AI-Assisted Learning"
 sidebar_position: 12
+description: "This chapter teaches you how to use AI as a learning accelerator — not a crutch. You'll learn prompt patterns that turn LLMs into Socratic tutors, build"
 ---
 
 # Chapter 11: AI-Assisted Learning

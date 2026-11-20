@@ -1,3 +1,7 @@
+---
+description: "Before writing a single line of code, we must derive hard requirements from the business problem. Our client operates a white-label e-commerce platform"
+---
+
 # Chapter 22: Case Study — SaaS E-Commerce Platform
 
 > **Previous:** [System Design](./21-system-design-scale.md) | **Next:** [Case Study AI Content](./23-case-study-ai-content.md)

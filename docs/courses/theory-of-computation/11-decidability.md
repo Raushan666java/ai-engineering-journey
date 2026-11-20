@@ -1,3 +1,7 @@
+---
+description: "A problem (language) is decidable if there exists an algorithm (Turing machine that always halts) that correctly answers yes/no for every instance"
+---
+
 # Chapter 11: Decidability
 
 > **Previous:** [Turing Machine Extensions](./10-turing-extensions.md) | **Next:** [Reducibility](./12-reducibility.md)

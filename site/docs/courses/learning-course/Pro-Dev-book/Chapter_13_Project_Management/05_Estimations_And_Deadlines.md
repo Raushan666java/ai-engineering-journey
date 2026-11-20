@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_13_Project_Management/05_Estimations
 title: "⏱️ Estimations & Deadlines"
 sidebar_label: "⏱️ Estimations & Deadlines"
 sidebar_position: 5
+description: "This is the most terrifying question a software engineer faces. To a Junior Developer, providing an estimate feels like making a blind guess at a casino"
 ---
 # ⏱️ Estimations & Deadlines
 

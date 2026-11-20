@@ -1,3 +1,7 @@
+---
+description: "Course Overview: A comprehensive, end-to-end exploration of modern cyber security spanning 21 chapters. Students will master everything from cryptographic"
+---
+
 # CS 410: Comprehensive Cyber Security (Expanded Edition)
 
 **Course Overview:** A comprehensive, end-to-end exploration of modern cyber security spanning 21 chapters. Students will master everything from cryptographic foundations and network defense to advanced red team operations, AI security, blockchain exploits, and zero trust architecture. Each chapter includes production-grade TypeScript implementations, real attack case studies, and hands-on tool setups.

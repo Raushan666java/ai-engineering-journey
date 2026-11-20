@@ -4,6 +4,7 @@ slug: /coding-problems/08-greedy
 title: "Chapter 08: Greedy Algorithms"
 sidebar_label: "Chapter 08: Greedy Algorithms"
 sidebar_position: 8
+description: "Greedy algorithms make locally optimal choices at each step, hoping to reach a globally optimal solution. Not all problems can be solved greedily, but"
 ---
 
 # Chapter 08: Greedy Algorithms

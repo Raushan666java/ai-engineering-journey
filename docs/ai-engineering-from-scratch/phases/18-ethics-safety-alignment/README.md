@@ -1,3 +1,7 @@
+---
+description: "Phase 18: Ethics, Safety & Alignment"
+---
+
 # Phase 18: Ethics, Safety & Alignment
 
 > Build AI that helps humanity. Not optional.

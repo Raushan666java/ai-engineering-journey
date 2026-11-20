@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/01_AI_Setup/Learning_Apps_Install title: '📱 Learning Apps Installation - 15 Minutes' sidebar_label: '📱 Learning Apps Installation"
+---
+
 ﻿---
 slug: /learning-course/01_AI_Setup/Learning_Apps_Install
 title: "📱 Learning Apps Installation - 15 Minutes"

@@ -4,6 +4,7 @@ slug: /java/04-jpms-packaging
 title: "Java Modules (JPMS) & Packaging"
 sidebar_label: "Java Modules (JPMS) & Packaging"
 sidebar_position: 4
+description: "Java's module system→formally Java Platform Module System (JPMS)→was introduced in Java 9 as part of Project Jigsaw. It is the largest structural change"
 ---
 
 # Java Modules (JPMS) & Packaging

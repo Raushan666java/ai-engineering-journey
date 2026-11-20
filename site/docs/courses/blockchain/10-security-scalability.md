@@ -4,6 +4,7 @@ slug: /blockchain/10-security-scalability
 title: "Chapter 10: Security and Scalability"
 sidebar_label: "Chapter 10: Security and Scalability"
 sidebar_position: 10
+description: "Public blockchains face the 'Trilemma': they can only optimize two out of three: Decentralization, Security, Scalability. Most chains struggle with"
 ---
 
 # Chapter 10: Security and Scalability

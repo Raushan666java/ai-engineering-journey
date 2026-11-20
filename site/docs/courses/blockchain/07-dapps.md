@@ -4,6 +4,7 @@ slug: /blockchain/07-dapps
 title: "Chapter 7: Decentralized Applications (dApps)"
 sidebar_label: "Chapter 7: Decentralized Applications (dApps)"
 sidebar_position: 7
+description: "IPFS is a peer-to-peer, content-addressed file system. Files are addressed by their CID (Content Identifier) — a hash of the content itself, not a"
 ---
 
 # Chapter 7: Decentralized Applications (dApps)

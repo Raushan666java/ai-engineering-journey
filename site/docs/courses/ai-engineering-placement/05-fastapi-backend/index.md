@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/05-fastapi-backend
 title: "05 — FastAPI & Backend Engineering"
 sidebar_label: "05 — FastAPI & Backend Engineering"
 sidebar_position: 79
+description: "Build production Python APIs: FastAPI routing, Pydantic validation, dependency injection, async I/O, auth and testing."
 ---
 
 # 05 — FastAPI & Backend Engineering

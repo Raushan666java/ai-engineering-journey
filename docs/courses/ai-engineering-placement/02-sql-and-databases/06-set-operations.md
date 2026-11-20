@@ -1,3 +1,7 @@
+---
+description: "Set Operations — UNION, INTERSECT, EXCEPT, UNION ALL: Data is the fuel of AI. SQL and database design skills let you query, transform, and store the data"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Set Operations — UNION, INTERSECT, EXCEPT, UNION ALL

@@ -4,6 +4,7 @@ slug: /placement-preparation/07-company-wise-pyqs
 title: "07 → Company-Wise Previous Year Questions"
 sidebar_label: "07 → Company-Wise Previous Year Questions"
 sidebar_position: 7
+description: "Comprehensive compilation of actual coding problems, behavioral questions, and system design problems asked by top companies during campus placements"
 ---
 
 # 07 → Company-Wise Previous Year Questions

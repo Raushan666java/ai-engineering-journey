@@ -1,9 +1,10 @@
 ---
 id: 07-operating-systems
 slug: /gate-cs-preparation/07-operating-systems
-title: "07 Operating Systems"
-sidebar_label: "07 Operating Systems"
+title: "07-operating-systems"
+sidebar_label: "07-operating-systems"
 sidebar_position: 7
+description: "Key tip: Memory management + CPU scheduling alone account for ~50% of OS marks."
 ---
 
 ﻿# Operating Systems → GATE CS Complete Guide
@@ -98,7 +99,6 @@ flowchart LR
 
 ### CPU Scheduling Formulas
 
-
 | Metric | Formula |
 |--------|---------|
 | Turnaround Time (TAT) | Completion Time – Arrival Time |
@@ -111,7 +111,6 @@ flowchart LR
 
 ### Page Replacement → Fault Count
 
-
 | Algorithm | Characteristics | Belady's Anomaly? |
 |-----------|----------------|-------------------|
 | FIFO | Oldest page replaced | Yes (may increase faults with more frames) |
@@ -121,14 +120,12 @@ flowchart LR
 
 ### Deadlock → Necessary Conditions (must hold simultaneously)
 
-
 1. **Mutual Exclusion** → at least one resource is non-sharable
 2. **Hold and Wait** → process holding a resource waits for another
 3. **No Preemption** → resources cannot be forcibly taken
 4. **Circular Wait** → circular chain of processes, each holding a resource needed by the next
 
 ### Disk Scheduling → Which is optimal for what?
-
 
 | Algorithm | Direction | Starvation? | Best for |
 |-----------|-----------|-------------|----------|
@@ -140,7 +137,6 @@ flowchart LR
 | C-LOOK | One direction, stop, wrap | No | Best throughput |
 
 ### Semaphore → Key Invariants
-
 
 - `Wait(S)` or `P(S)` → if S > 0 then S-- else block
 - `Signal(S)` or `V(S)` → if processes blocked then wake else S++
@@ -155,11 +151,9 @@ flowchart LR
 
 ### Process Concept
 
-
 A **process** is a program in execution. It includes: program counter, stack, data section, heap, and PCB.
 
 ### Process Control Block (PCB)
-
 
 Each process has a PCB containing:
 - Process ID (PID)
@@ -171,7 +165,6 @@ Each process has a PCB containing:
 - CPU scheduling info
 
 ### Process States
-
 
 ```
 NEW → READY → RUNNING → WAITING → TERMINATED
@@ -187,11 +180,9 @@ NEW → READY → RUNNING → WAITING → TERMINATED
 
 ### Context Switch
 
-
 The OS saves the state of the current process and loads the saved state of another. **Context switch time** is overhead → pure waste. GATE often asks: "What is NOT saved during context switch?" Answer: Memory contents are usually not saved (page tables remain).
 
 ### Process Creation → fork() and exec()
-
 
 | Call | Effect |
 |------|--------|
@@ -205,13 +196,11 @@ The OS saves the state of the current process and loads the saved state of anoth
 
 ### Process Scheduling → Queues
 
-
 - **Job Queue** → all processes in system
 - **Ready Queue** → processes in main memory, ready to run
 - **Device Queue** → processes waiting for I/O device
 
 ### Schedulers
-
 
 | Scheduler | What it does | Frequency |
 |-----------|-------------|-----------|
@@ -225,7 +214,6 @@ The OS saves the state of the current process and loads the saved state of anoth
 
 ### GATE-Ready Scheduling Criteria
 
-
 - **CPU utilization** → keep CPU busy
 - **Throughput** → processes completed per unit time
 - **Turnaround time** → total time from submission to completion
@@ -234,19 +222,16 @@ The OS saves the state of the current process and loads the saved state of anoth
 
 ### FCFS (First-Come, First-Served)
 
-
 - Non-preemptive
 - Convoy effect: short processes wait behind long ones
 
 ### SJF (Shortest Job First)
-
 
 - Can be preemptive (SRTF) or non-preemptive
 - **Minimum average waiting time** → provably optimal
 - Problem: starvation of long jobs, requires future knowledge
 
 ### Round Robin
-
 
 - Preemptive, time quantum q
 - If q → ∞, behaves like FCFS
@@ -256,13 +241,11 @@ The OS saves the state of the current process and loads the saved state of anoth
 
 ### Priority Scheduling
 
-
 - Preemptive or non-preemptive
 - Can lead to **starvation** (low priority processes never run)
 - **Aging** → gradually increase priority of waiting processes
 
 ### Multilevel Queue
-
 
 - Ready queue partitioned into separate queues (foreground, background)
 - Each queue has its own scheduling algorithm
@@ -270,7 +253,6 @@ The OS saves the state of the current process and loads the saved state of anoth
 - Or time-slice between queues
 
 ### Multilevel Feedback Queue (MLFQ)
-
 
 - Processes can move between queues
 - Prevents starvation by allowing priority demotion/promotion
@@ -282,14 +264,12 @@ The OS saves the state of the current process and loads the saved state of anoth
 
 ### Critical Section Problem
 
-
 A section of code where shared variables are accessed. Requirements:
 1. **Mutual Exclusion** → only one process in critical section
 2. **Progress** → if no process in CS, a process requesting entry must be able to enter in finite time
 3. **Bounded Waiting** → bound on number of times others can enter after a process requests entry
 
 ### Peterson's Solution
-
 
 ```c
 int turn;
@@ -310,7 +290,6 @@ Works for 2 processes. Solves critical section in software.
 
 ### Semaphores
 
-
 ```c
 wait(S) {      // P(S)
     while (S <= 0);
@@ -326,7 +305,6 @@ signal(S) {    // V(S)
 - **Binary semaphore (mutex):** values 0 or 1
 
 ### Classical Synchronization Problems
-
 
 #### Bounded Buffer (Producer-Consumer)
 
@@ -370,7 +348,6 @@ do {
 
 ### Monitors
 
-
 - High-level synchronization construct
 - Only one process can be active in the monitor at a time
 - `condition` variables with `wait()` and `signal()` operations
@@ -382,7 +359,6 @@ do {
 
 ### Necessary Conditions
 
-
 1. **Mutual exclusion**
 2. **Hold and wait**
 3. **No preemption**
@@ -390,14 +366,12 @@ do {
 
 ### Resource Allocation Graph (RAG)
 
-
 - Process → Resource: request edge
 - Resource → Process: assignment edge
 - **Cycle in RAG + single instance per resource type ⇒ deadlock**
 - **Cycle in RAG + multiple instances ⇒ possible deadlock** (need further check)
 
 ### Deadlock Prevention
-
 
 Eliminate at least one necessary condition:
 
@@ -409,7 +383,6 @@ Eliminate at least one necessary condition:
 | Circular Wait | Impose total ordering on resource types |
 
 ### Deadlock Avoidance → Banker's Algorithm
-
 
 Data structures:
 - `Available[m]` → available instances of each resource type
@@ -425,12 +398,10 @@ Data structures:
 
 ### Deadlock Detection
 
-
 - Single instance: wait-for graph (cycle ⇒ deadlock)
 - Multiple instances: detection algorithm (like Banker's but with Request matrix)
 
 ### Deadlock Recovery
-
 
 - Process termination (abort all, or abort one by one)
 - Resource preemption (select victim based on cost, consider rollback, starvation)
@@ -441,20 +412,17 @@ Data structures:
 
 ### Logical vs Physical Address
 
-
 - **Logical/virtual address** → generated by CPU
 - **Physical address** → actual memory location
 - **MMU** → hardware that maps virtual to physical addresses
 
 ### Contiguous Allocation
 
-
 - Fixed partition: internal fragmentation
 - Dynamic partition: external fragmentation
 - **Compaction** → rearrange memory to eliminate external fragmentation
 
 ### Paging
-
 
 - Physical memory divided into **frames**
 - Logical memory divided into **pages**
@@ -464,7 +432,6 @@ Data structures:
 **Page table entry:** frame number + valid/invalid bit + protection bits + dirty bit + reference bit
 
 ### Translation Lookaside Buffer (TLB)
-
 
 - Cache for page table entries
 - TLB hit: memory access in one memory cycle
@@ -478,7 +445,6 @@ EMAT = hit_ratio × (TLB_lookup + memory_access)
 
 ### Segmentation
 
-
 - Logical address space divided into segments
 - Segment table: base + limit
 - External fragmentation possible
@@ -486,24 +452,20 @@ EMAT = hit_ratio × (TLB_lookup + memory_access)
 
 ### Segmentation with Paging
 
-
 - Segment table entry points to page table base
 - Combines advantages of both
 
 ### Virtual Memory
 
-
 Allows execution of processes not entirely in memory.
 
 ### Demand Paging
-
 
 - Page loaded only when accessed
 - **Page fault** → trap to OS; load page from disk
 - Pure demand paging: start with no pages in memory
 
 ### Page Replacement Algorithms
-
 
 #### FIFO
 Replace the oldest page. **Belady's anomaly** possible.
@@ -522,7 +484,6 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 ### Thrashing
 
-
 - Excessive paging activity
 - Cause: insufficient frames per process
 - **Working set model** → maintain set of pages currently being used
@@ -530,7 +491,6 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 - **Page Fault Frequency** control → allocate more frames if fault rate too high, take away if too low
 
 ### Frame Allocation
-
 
 - Equal allocation
 - Proportional allocation (based on process size)
@@ -542,13 +502,11 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 ### File Concepts
 
-
 - **File** → named collection of related information
 - **File attributes:** name, identifier, type, location, size, protection, timestamps
 - **File operations:** create, open, read, write, close, delete, truncate
 
 ### File Access Methods
-
 
 - Sequential
 - Direct (random) → based on block number
@@ -556,11 +514,9 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 ### Directory Structure
 
-
 - Single-level, two-level, tree-structured, acyclic-graph, general graph
 
 ### File Allocation Methods
-
 
 | Method | Pros | Cons |
 |--------|------|------|
@@ -571,14 +527,12 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 ### Unix inode structure
 
-
 - Direct blocks (12 blocks)
 - Single indirect
 - Double indirect
 - Triple indirect
 
 ### Free Space Management
-
 
 - **Bit vector** (bitmap) → efficient, compact
 - **Linked list** → not efficient for contiguous allocation
@@ -587,14 +541,12 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 ### Disk Structure
 
-
 - Platters, tracks, sectors, cylinders
 - **Seek time** → time to move arm to cylinder
 - **Rotational latency** → time for sector to rotate under head
 - **Transfer time** → time to read/write data
 
 ### Disk Scheduling Algorithms
-
 
 **FCFS** → First come, first served
 **SSTF** → Shortest seek time first (may starve)
@@ -604,7 +556,6 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 **C-LOOK** → Wrap after last request in one direction
 
 ### RAID Levels
-
 
 | Level | Description | Min Disks |
 |-------|-------------|-----------|
@@ -621,12 +572,10 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 ### I/O Hardware
 
-
 - Port, bus, controller
 - Memory-mapped vs port-mapped I/O
 
 ### I/O Techniques
-
 
 1. **Programmed I/O** → CPU busy-waits. Poor CPU utilization.
 2. **Interrupt-driven I/O** → device interrupts CPU when ready. Better.
@@ -634,20 +583,17 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 ### DMA Modes
 
-
 - **Burst mode** → DMA controls bus for entire transfer; blocks CPU
 - **Cycle stealing** → DMA takes one bus cycle at a time
 - **Transparent mode** → DMA transfers only when CPU not using bus
 
 ### Buffering
 
-
 - **Single buffer** → OS reads into buffer, then copies to user space
 - **Double buffering** → while one buffer is being processed, another is being filled
 - **Circular buffer** → multiple buffers in ring
 
 ### Spooling
-
 
 - Simultaneous Peripheral Operations On-Line
 - Queues data for slow devices (e.g., printer)
@@ -659,7 +605,6 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 ### User-Level Threads
 
-
 - Managed without kernel support
 - Thread library (POSIX Pthreads, Java threads) in user space
 - **Faster creation and switching** → no system calls
@@ -667,13 +612,11 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 ### Kernel-Level Threads
 
-
 - Managed directly by OS
 - **Slower creation/switch** → need system call
 - **Blocking is fine** → kernel schedules other threads in same process
 
 ### Multithreading Models
-
 
 | Model | User : Kernel | Pros | Cons |
 |-------|--------------|------|------|
@@ -682,7 +625,6 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 | Many-to-Many | Many U → Many K | Both benefits | Complex to implement |
 
 ### Thread Libraries
-
 
 - **POSIX Pthreads** → `pthread_create`, `pthread_join`, `pthread_mutex_lock`
 - **Java threads** → JVM threads (typically one-to-one on modern JVMs)
@@ -693,7 +635,6 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 ### System Calls
 
-
 - `fork()` → create child process
 - `exec()` → replace process image
 - `wait()` / `waitpid()` → wait for child
@@ -703,7 +644,6 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 - `signal()` → register signal handler
 
 ### Process in Unix
-
 
 ```
 fork() → child continues with PC after fork
@@ -725,13 +665,11 @@ int main() {
 
 ### Signals
 
-
 - Software interrupts: `SIGINT` (Ctrl+C), `SIGKILL` (cannot be caught), `SIGSEGV` (segmentation fault)
 - `signal(SIGINT, handler)` → register handler
 - `kill(pid, SIGTERM)` → send signal
 
 ### Inter-process Communication (IPC)
-
 
 - **Shared memory** → fastest (no kernel mediation)
 - **Message passing** → `send()` / `receive()` (system calls)
@@ -746,7 +684,6 @@ int main() {
 
 ### G1: Process States [GATE 2010, 1M, Process Management]
 
-
 One of the following transitions is NOT possible for a process:
 **(A)** Running → Ready  
 **(B)** Waiting → Running  
@@ -759,7 +696,6 @@ One of the following transitions is NOT possible for a process:
 ---
 
 ### G2: SJF Scheduling [GATE 2010, 2M, Scheduling]
-
 
 Consider the following processes with arrival time 0 and burst times:
 
@@ -781,7 +717,6 @@ Avg WT = (0 + 2 + 5 + 10) / 4 = 17 / 4 = 3.75
 
 ### G3: Deadlock Conditions [GATE 2010, 1M, Deadlock]
 
-
 Which of the following is NOT a necessary condition for deadlock?
 **(A)** Mutual exclusion  
 **(B)** Hold and wait  
@@ -795,7 +730,6 @@ Which of the following is NOT a necessary condition for deadlock?
 
 ### G4: Page Size [GATE 2010, 2M, Memory Management]
 
-
 A system uses 32-bit logical address and 4 KB page size. What is the number of entries needed in a single-level page table?
 
 **Answer: 2^20 = 1,048,576 entries**  
@@ -804,7 +738,6 @@ A system uses 32-bit logical address and 4 KB page size. What is the number of e
 ---
 
 ### G5: Banker's Algorithm [GATE 2011, 2M, Deadlock]
-
 
 A system has 12 tape drives with processes P0, P1, P2:
 
@@ -827,7 +760,6 @@ P2 can finish (Need 7 ≤ Avail 10). Safe sequence: P1, P0, P2.
 
 ### G6: Context Switch [GATE 2011, 1M, Process Management]
 
-
 Which of the following is NOT typically stored in the PCB during a context switch?
 **(A)** Program counter  
 **(B)** CPU registers  
@@ -840,7 +772,6 @@ Which of the following is NOT typically stored in the PCB during a context switc
 ---
 
 ### G7: Page Replacement FIFO [GATE 2011, 2M, Memory Management]
-
 
 Consider reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 with 3 frames. How many page faults using FIFO?
 
@@ -866,7 +797,6 @@ Total = 9 faults
 
 ### G8: Semaphore Operation [GATE 2012, 2M, Synchronization]
 
-
 What does the following code ensure?
 
 ```c
@@ -888,7 +818,6 @@ V(s);
 
 ### G9: Dining Philosophers [GATE 2012, 1M, Synchronization]
 
-
 In the dining philosophers problem, if all philosophers pick up their left chopstick simultaneously, this leads to:
 **(A)** Starvation  
 **(B)** Deadlock  
@@ -902,7 +831,6 @@ In the dining philosophers problem, if all philosophers pick up their left chops
 
 ### G10: Virtual Memory [GATE 2012, 2M, Memory Management]
 
-
 Consider a system with 3-level page table: outer page table (PT1), page middle directory (PT2), and page table (PT3). A logical address is 48 bits. Page size = 4 KB. If each level uses 10 bits, how many bits for the offset?
 
 **Answer: 18 bits**  
@@ -913,7 +841,6 @@ Consider a system with 3-level page table: outer page table (PT1), page middle d
 ---
 
 ### G11: LRU Page Replacement [GATE 2013, 2M, Memory Management]
-
 
 Consider reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1 with 3 frames. How many page faults using LRU?
 
@@ -947,7 +874,6 @@ Total = 12 faults.
 
 ### G12: Process State Transition [GATE 2013, 1M, Process Management]
 
-
 Which of the following is always TRUE about a process in the RUNNING state?
 **(A)** It has the CPU  
 **(B)** It is in main memory  
@@ -961,7 +887,6 @@ Which of the following is always TRUE about a process in the RUNNING state?
 
 ### G13: Disk Scheduling SCAN [GATE 2013, 2M, Disk]
 
-
 A disk has 200 cylinders (0–199). Request queue: 98, 183, 37, 122, 14, 124, 65, 67. Head starts at 53, moving towards 0. Which requests are served in order under SCAN?
 
 **Answer: 37, 14, 0, 65, 67, 98, 122, 124, 183**  
@@ -970,7 +895,6 @@ A disk has 200 cylinders (0–199). Request queue: 98, 183, 37, 122, 14, 124, 65
 ---
 
 ### G14: FCFS vs SJF [GATE 2014, 2M, Scheduling]
-
 
 Which of the following schedulers always gives the minimum average waiting time?
 **(A)** FCFS  
@@ -985,7 +909,6 @@ Which of the following schedulers always gives the minimum average waiting time?
 
 ### G15: Mutex vs Semaphore [GATE 2014, 1M, Synchronization]
 
-
 A binary semaphore can be used as a mutex. True or False?
 
 **Answer: True**  
@@ -994,7 +917,6 @@ A binary semaphore can be used as a mutex. True or False?
 ---
 
 ### G16: Thrashing [GATE 2014, 2M, Memory Management]
-
 
 Thrashing occurs when:
 **(A)** CPU utilization is high and throughput is low  
@@ -1009,7 +931,6 @@ Thrashing occurs when:
 
 ### G17: TLB and EMAT [GATE 2014, 2M, Memory Management]
 
-
 A system has TLB hit ratio of 90%. TLB access time = 10 ns, memory access = 100 ns. What is EMAT?
 
 **Answer: 120 ns**  
@@ -1019,7 +940,6 @@ A system has TLB hit ratio of 90%. TLB access time = 10 ns, memory access = 100 
 ---
 
 ### G18: Banker's Algorithm Safety [GATE 2014, 2M, Deadlock]
-
 
 Consider 5 processes (P0–P4) and 3 resource types A (10 inst), B (5 inst), C (7 inst).
 
@@ -1046,7 +966,6 @@ Safe: P1, P3, P4, P2, P0.
 
 ### G19: Fork System Call [GATE 2015, 2M, Process Management]
 
-
 ```c
 int main() {
     fork();
@@ -1065,7 +984,6 @@ How many times is "GATE" printed?
 
 ### G20: Logical to Physical Address [GATE 2015, 2M, Memory Management]
 
-
 A system has page size = 1 KB. Page table (for process) has entries: 0→5, 1→8, 2→10, 3→15. What physical address corresponds to logical address 2500?
 
 **Answer: 11236** (decimal)  
@@ -1078,7 +996,6 @@ Wait → let me recalculate: 10 * 1024 = 10240, + 452 = 10692.
 ---
 
 ### G21: Deadlock Detection [GATE 2015, 2M, Deadlock]
-
 
 Which of the following is sufficient to guarantee no deadlock?
 **(A)** Mutual exclusion is violated  
@@ -1093,7 +1010,6 @@ Which of the following is sufficient to guarantee no deadlock?
 ---
 
 ### G22: Optimal Page Replacement [GATE 2015, 2M, Memory Management]
-
 
 Reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 with 4 frames. How many page faults using Optimal replacement?
 
@@ -1153,7 +1069,6 @@ Total = 6 faults. ✓
 
 ### G23: Degree of Multiprogramming [GATE 2015, 1M, Process Management]
 
-
 Degree of multiprogramming is controlled by which scheduler?
 **(A)** Short-term  
 **(B)** Medium-term  
@@ -1166,7 +1081,6 @@ Degree of multiprogramming is controlled by which scheduler?
 ---
 
 ### G24: Multilevel Queue Scheduling [GATE 2016, 2M, Scheduling]
-
 
 In a multilevel queue scheduling system, which of the following is true?
 **(A)** Processes can move between queues  
@@ -1181,7 +1095,6 @@ In a multilevel queue scheduling system, which of the following is true?
 
 ### G25: Race Condition [GATE 2016, 1M, Synchronization]
 
-
 A race condition occurs when:
 **(A)** Two processes access shared variable concurrently with at least one writing  
 **(B)** Two processes execute same code simultaneously  
@@ -1195,7 +1108,6 @@ A race condition occurs when:
 
 ### G26: Page Table Size [GATE 2016, 2M, Memory Management]
 
-
 Logical address = 32 bits, page size = 4 KB, page table entry = 4 bytes. What is the page table size for a single-level page table?
 
 **Answer: 4 MB**  
@@ -1204,7 +1116,6 @@ Logical address = 32 bits, page size = 4 KB, page table entry = 4 bytes. What is
 ---
 
 ### G27: Fragmentation [GATE 2016, 1M, Memory Management]
-
 
 Which of the following suffers from external fragmentation?
 **(A)** Paging  
@@ -1219,7 +1130,6 @@ Which of the following suffers from external fragmentation?
 
 ### G28: Semaphore as Condition Variable [GATE 2016, 2M, Synchronization]
 
-
 Three processes share a semaphore S initialized to 2. Each process executes P(S), critical section, V(S) 3 times. Is deadlock possible?
 
 **Answer: No**  
@@ -1228,7 +1138,6 @@ Three processes share a semaphore S initialized to 2. Each process executes P(S)
 ---
 
 ### G29: C-SCAN Disk Scheduling [GATE 2016, 2M, Disk]
-
 
 Disk with 200 cylinders (0–199). Head at 50, moving towards 199. Queue: 82, 170, 43, 140, 24, 16, 190. Total head movement using C-SCAN?
 
@@ -1239,7 +1148,6 @@ Total = (199-50) + (199-0) + (43-0) = 149 + 199 + 43 = 391
 ---
 
 ### G30: LRU Clock Approximation [GATE 2017, 2M, Memory Management]
-
 
 Which page replacement algorithm may exhibit Belady's anomaly?
 **(A)** LRU  
@@ -1253,7 +1161,6 @@ Which page replacement algorithm may exhibit Belady's anomaly?
 ---
 
 ### G31: Semaphore Counting [GATE 2017, 2M, Synchronization]
-
 
 Consider the following:
 
@@ -1289,7 +1196,6 @@ Max = 2. ✓
 
 ### G32: Multithreading Model [GATE 2017, 1M, Threads]
 
-
 Which model maps each user thread to a separate kernel thread?
 **(A)** Many-to-One  
 **(B)** One-to-One  
@@ -1302,7 +1208,6 @@ Which model maps each user thread to a separate kernel thread?
 ---
 
 ### G33: Belady's Anomaly [GATE 2017, 2M, Memory Management]
-
 
 Which of the following page replacement algorithms guarantees that increasing the number of frames never increases page faults?
 **(A)** FIFO  
@@ -1317,7 +1222,6 @@ Which of the following page replacement algorithms guarantees that increasing th
 
 ### G34: Linker and Loader [GATE 2017, 1M, Memory Management]
 
-
 Which of the following is NOT a function of the loader?
 **(A)** Allocating memory  
 **(B)** Resolving external references  
@@ -1331,7 +1235,6 @@ Which of the following is NOT a function of the loader?
 
 ### G35: File Allocation → Indexed [GATE 2017, 2M, File Systems]
 
-
 A file system uses indexed allocation with an index block of 4 KB. Each block pointer is 4 bytes. Maximum file size?
 
 **Answer: 4 MB**  
@@ -1342,7 +1245,6 @@ Maximum file size = 1024 × 4 KB = 4 MB.
 
 ### G36: Producer-Consumer [GATE 2018, 2M, Synchronization]
 
-
 In the bounded buffer problem, what is the minimum number of semaphores needed for synchronization between n producers and m consumers?
 
 **Answer: 3**  
@@ -1352,7 +1254,6 @@ In the bounded buffer problem, what is the minimum number of semaphores needed f
 
 ### G37: Deadlock Avoidance [GATE 2018, 2M, Deadlock]
 
-
 In Banker's algorithm, what data structure represents the maximum resource demand of each process?
 
 **Answer: Max matrix (or Max[i][j])**  
@@ -1361,7 +1262,6 @@ In Banker's algorithm, what data structure represents the maximum resource deman
 ---
 
 ### G38: Interrupt Handling [GATE 2018, 1M, I/O]
-
 
 When an interrupt occurs, the processor saves the program counter and jumps to:
 **(A)** Interrupt service routine  
@@ -1376,16 +1276,14 @@ When an interrupt occurs, the processor saves the program counter and jumps to:
 
 ### G39: Working Set [GATE 2018, 2M, Memory Management]
 
-
-The working set window Î—Â� = 5. Reference string: 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4. What is the working set size at time t = 12?
+The working set window Δ = 5. Reference string: 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4. What is the working set size at time t = 12?
 
 **Answer: 4**  
-**Explanation:** At t=12, the last 5 references (Î—Â�=5) are: 4, 1, 2, 3, 4. Distinct pages: {1, 2, 3, 4}. Working set size = 4.
+**Explanation:** At t=12, the last 5 references (Δ=5) are: 4, 1, 2, 3, 4. Distinct pages: {1, 2, 3, 4}. Working set size = 4.
 
 ---
 
 ### G40: Round Robin Scheduling [GATE 2019, 2M, Scheduling]
-
 
 Processes with burst times: P1=10, P2=5, P3=2, P4=1. Time quantum = 2. All arrive at time 0. What is the average turnaround time?
 
@@ -1493,7 +1391,6 @@ Avg TAT = (18+14+6+7)/4 = 45/4 = 11.25
 
 ### G41: Virtual Memory Size [GATE 2019, 1M, Memory Management]
 
-
 A 32-bit system with 4 KB pages. What is the maximum virtual memory size?
 
 **Answer: 2^32 = 4 GB**  
@@ -1502,7 +1399,6 @@ A 32-bit system with 4 KB pages. What is the maximum virtual memory size?
 ---
 
 ### G42: I/O Buffering [GATE 2019, 1M, I/O]
-
 
 Double buffering is used to:
 **(A)** Increase I/O throughput  
@@ -1516,7 +1412,6 @@ Double buffering is used to:
 ---
 
 ### G43: RAG Cycle [GATE 2020, 2M, Deadlock]
-
 
 Consider the following resource allocation graph with single-instance resources R1, R2, R3 and processes P1, P2, P3:
 - P1 → R1 (request), R1 → P2 (assignment)
@@ -1532,7 +1427,6 @@ Is there a deadlock?
 
 ### G44: Thread Blocking [GATE 2020, 1M, Threads]
 
-
 In a many-to-one threading model, if one thread makes a blocking system call:
 **(A)** Only that thread blocks  
 **(B)** The entire process blocks  
@@ -1546,7 +1440,6 @@ In a many-to-one threading model, if one thread makes a blocking system call:
 
 ### G45: Page Fault Service Time [GATE 2020, 2M, Memory Management]
 
-
 Assume page fault service time = 8 ms (including all overhead). Memory access = 200 ns. If page fault rate is 1 per 10,000 accesses, what is EMAT?
 
 **Answer: 1000 ns (approx)**  
@@ -1559,7 +1452,6 @@ EMAT = (1 - p) × memory_access + p × page_fault_service
 
 ### G46: Counting Semaphore [GATE 2020, 1M, Synchronization]
 
-
 A counting semaphore S is initialized to 7. 13 P(S) operations and 11 V(S) operations are executed. What is the final value of S?
 
 **Answer: 5**  
@@ -1568,7 +1460,6 @@ A counting semaphore S is initialized to 7. 13 P(S) operations and 11 V(S) opera
 ---
 
 ### G47: Memory Stall Time [GATE 2021, 2M, Memory Management]
-
 
 A processor has a cache miss rate of 2%. Main memory access time = 100 ns. Cache access time = 2 ns. What is the average memory access time?
 
@@ -1580,7 +1471,6 @@ A processor has a cache miss rate of 2%. Main memory access time = 100 ns. Cache
 ---
 
 ### G48: Disk Access Time [GATE 2021, 2M, Disk]
-
 
 Disk rotates at 6000 RPM, average seek time = 5 ms, data transfer = 50 MB/s. Block size = 4 KB. Average time to read a random block?
 
@@ -1596,7 +1486,6 @@ Depending on assumptions, GATE answer expected ~10 ms or ~12 ms if transfer roun
 ---
 
 ### G49: Preemptive Priority Scheduling [GATE 2021, 1M, Scheduling]
-
 
 In preemptive priority scheduling, a lower number indicates higher priority.
 
@@ -1635,7 +1524,6 @@ Avg WT = (13 + 0 + 3 + 18)/4 = 34/4 = 8.5
 
 ### G50: File Pointer [GATE 2021, 1M, File Systems]
 
-
 A file has 512 bytes per disk block. What is the maximum file size if the inode has 10 direct blocks and one single indirect block, where each block pointer is 4 bytes?
 
 **Answer: 10 × 512 + (512/4) × 512 = 5120 + 128 × 512 = 5120 + 65536 = 70656 bytes**  
@@ -1644,7 +1532,6 @@ A file has 512 bytes per disk block. What is the maximum file size if the inode 
 ---
 
 ### G51: Buddy System [GATE 2021, 1M, Memory Management]
-
 
 The buddy system is used for:
 **(A)** Free space management in file systems  
@@ -1659,7 +1546,6 @@ The buddy system is used for:
 
 ### G52: Monitor Condition Variable [GATE 2022, 2M, Synchronization]
 
-
 In Hoare-style monitors, when a process signals a condition variable:
 **(A)** The signaler continues, the waiting process enters when possible  
 **(B)** The signaler blocks immediately, waiting process runs  
@@ -1672,7 +1558,6 @@ In Hoare-style monitors, when a process signals a condition variable:
 ---
 
 ### G53: SCAN vs C-SCAN [GATE 2022, 2M, Disk]
-
 
 The key advantage of C-SCAN over SCAN is:
 **(A)** Lower average seek time  
@@ -1687,7 +1572,6 @@ The key advantage of C-SCAN over SCAN is:
 
 ### G54: Spooling [GATE 2022, 1M, I/O]
 
-
 Spooling is most commonly used for:
 **(A)** Disk I/O  
 **(B)** Printer I/O  
@@ -1701,7 +1585,6 @@ Spooling is most commonly used for:
 
 ### G55: Starvation in Priority Scheduling [GATE 2022, 2M, Scheduling]
 
-
 Which technique prevents starvation in priority scheduling?
 **(A)** Round Robin  
 **(B)** Aging  
@@ -1714,7 +1597,6 @@ Which technique prevents starvation in priority scheduling?
 ---
 
 ### G56: Optimal Page Replacement [GATE 2023, 2M, Memory Management]
-
 
 Reference string: 0, 2, 1, 6, 4, 0, 1, 0, 2, 1, 2, 6 with 3 frames. Using Optimal replacement, how many page faults?
 
@@ -1739,7 +1621,6 @@ Total = 7 faults.
 ---
 
 ### G57: Safe State Check [GATE 2023, 2M, Deadlock]
-
 
 A system has 5 processes and 3 resource types (A: 10, B: 5, C: 7). At time T0:
 
@@ -1770,7 +1651,6 @@ Safe: P1 → P3 → P4 → P0 → P2
 
 ### G58: fork() Process Tree [GATE 2023, 1M, Process Management]
 
-
 ```c
 int main() {
     if (fork() == 0) {
@@ -1798,11 +1678,11 @@ Wait let me be more careful:
 
 ```
 Process P (original)
-â—�œâ—�€ fork() → child C1 (if fork() == 0 is true in C1)
-â—�‚  in C1: fork() → child C2
-â—�‚  then C1 calls fork() → child C3
-â—�‚  and C2 calls fork() → child C4
-â—�‚  then P also calls fork() (after the if block) → child C5
+├─ fork() → child C1 (if fork() == 0 is true in C1)
+│  in C1: fork() → child C2
+│  then C1 calls fork() → child C3
+│  and C2 calls fork() → child C4
+│  then P also calls fork() (after the if block) → child C5
 ```
 
 Actually let me trace step by step:
@@ -1836,7 +1716,6 @@ Total processes at printf: P, C1, C2, C3, C4, C5 = 6 processes.
 
 ### G59: DMA Cycle Stealing [GATE 2023, 2M, I/O]
 
-
 In cycle stealing DMA mode:
 **(A)** DMA controller blocks CPU until transfer completes  
 **(B)** DMA controller uses bus cycles between CPU cycles  
@@ -1849,7 +1728,6 @@ In cycle stealing DMA mode:
 ---
 
 ### G60: UNIX inode [GATE 2024, 2M, File Systems]
-
 
 In a UNIX-like file system, an inode contains:
 **(A)** File name  
@@ -1864,7 +1742,6 @@ In a UNIX-like file system, an inode contains:
 
 ### G61: Multilevel Feedback Queue [GATE 2024, 2M, Scheduling]
 
-
 MLFQ scheduling favors:
 **(A)** CPU-bound processes  
 **(B)** I/O-bound processes  
@@ -1877,7 +1754,6 @@ MLFQ scheduling favors:
 ---
 
 ### G62: Page Fault Rate [GATE 2024, 1M, Memory Management]
-
 
 If page fault rate is p, memory access = t ns, and page fault service time = S ns, then EMAT is:
 **(A)** (1-p)t + pS  
@@ -1892,7 +1768,6 @@ If page fault rate is p, memory access = t ns, and page fault service time = S n
 
 ### G63: System Call Type [GATE 2024, 1M, Linux/Unix]
 
-
 Which system call creates a new process in UNIX?
 **(A)** exec()  
 **(B)** fork()  
@@ -1905,7 +1780,6 @@ Which system call creates a new process in UNIX?
 ---
 
 ### G64: Producer-Consumer Deadlock [GATE 2025, 2M, Synchronization]
-
 
 In the bounded buffer problem, if the producer calls wait(empty) and wait(mutex) in reverse order (mutex first, then empty), what problem occurs?
 
@@ -1920,7 +1794,6 @@ Correct order: wait(empty) first, then wait(mutex).
 ---
 
 ### G65: Non-Preemptive SJF [GATE 2025, 2M, Scheduling]
-
 
 | Process | Arrival | Burst |
 |---------|---------|-------|
@@ -1975,7 +1848,6 @@ Hmm, I had 7 earlier. Let me recalculate. 22/4 = 5.5.
 
 ### G66: TLB and Page Table [GATE 2025, 2M, Memory Management]
 
-
 TLB hit ratio = 80%. TLB access = 20 ns. Memory access = 100 ns. What is EMAT?
 
 **Answer: 140 ns**  
@@ -1986,7 +1858,6 @@ EMAT = 0.80 × (20 + 100) + 0.20 × (20 + 100 + 100)
 ---
 
 ### G67: External Fragmentation [GATE 2025, 1M, Memory Management]
-
 
 Which memory management scheme suffers ONLY from internal fragmentation?
 **(A)** Segmentation  
@@ -2001,7 +1872,6 @@ Which memory management scheme suffers ONLY from internal fragmentation?
 
 ### G68: Virtual Memory vs Cache [GATE 2025, 1M, Memory Management]
 
-
 In the memory hierarchy, virtual memory is primarily used for:
 **(A)** Speed improvement  
 **(B)** Illusion of large memory  
@@ -2015,7 +1885,6 @@ In the memory hierarchy, virtual memory is primarily used for:
 
 ### G69: Deadlock → Cycle with Multiple Instances [GATE 2025, 2M, Deadlock]
 
-
 A resource allocation graph has a cycle. If resource types have multiple instances:
 **(A)** Deadlock definitely exists  
 **(B)** Deadlock definitely does not exist  
@@ -2028,7 +1897,6 @@ A resource allocation graph has a cycle. If resource types have multiple instanc
 ---
 
 ### G70: Readers-Writers [GATE 2025, 2M, Synchronization]
-
 
 In the first readers-writers problem, which of the following is true?
 **(A)** Writers starve  

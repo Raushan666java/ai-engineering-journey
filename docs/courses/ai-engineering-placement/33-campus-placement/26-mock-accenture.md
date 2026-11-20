@@ -1,3 +1,7 @@
+---
+description: "Simulates the Accenture cognitive aptitude section: 15 quant, 15 logical, 15 verbal. Accenture is verbal-heavy — grammar, RC and para jumbles carry the"
+---
+
 <!-- improved -->
 # Accenture Mock Test — Full Pattern Simulation (45 Questions)
 

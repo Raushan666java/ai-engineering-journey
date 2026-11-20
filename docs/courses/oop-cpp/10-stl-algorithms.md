@@ -1,3 +1,7 @@
+---
+description: "STL algorithms operate on iterator ranges rather than containers directly. This decoupling means a single algorithm works across ector, list, deque"
+---
+
 # Chapter 10: STL Algorithms — Master the C++ Standard Template Library
 
 > **Previous:** [09-stl-containers](./09-stl-containers.md) | **Next:** [11-file-io](./11-file-io.md)

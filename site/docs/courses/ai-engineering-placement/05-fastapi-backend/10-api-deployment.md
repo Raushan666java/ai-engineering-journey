@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/05-fastapi-backend/10-api-deployment
 title: "API Deployment — Docker, CI/CD, and Production Readiness"
 sidebar_label: "API Deployment — Docker, CI/CD, and Production Readiness"
 sidebar_position: 78
+description: "API Deployment — Docker, CI/CD, and Production Readiness: FastAPI is the modern Python framework for building AI APIs. Its async support, automatic"
 ---
 
 <!-- improved -->

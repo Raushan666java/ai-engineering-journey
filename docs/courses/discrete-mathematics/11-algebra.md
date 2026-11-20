@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: A group is a set with an associative operation that has an identity and inverses; groups are the central objects of algebraic study."
+---
+
 # Chapter 11: Algebraic Structures
 
 > **Previous:** [Chapter 10: Trees](./10-trees.md) | **Next:** [Chapter 12: Boolean Algebra](./12-boolean.md)

@@ -1,3 +1,7 @@
+---
+description: "Prompt injection, data exfiltration and unsafe tool calls — plus guardrails enforced in code rather than in prompts."
+---
+
 # 17 — AI Security & Guardrails
 
 ## Overview

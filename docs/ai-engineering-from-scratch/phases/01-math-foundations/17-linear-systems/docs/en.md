@@ -1,3 +1,7 @@
+---
+description: "Every time you train a linear regression, you solve a linear system. Every time you compute a least-squares fit, you solve a linear system. Every time a"
+---
+
 # Linear Systems
 
 > Solving Ax = b is the oldest problem in mathematics that still runs your neural network.

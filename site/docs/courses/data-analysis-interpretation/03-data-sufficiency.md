@@ -4,6 +4,7 @@ slug: /data-analysis-interpretation/03-data-sufficiency
 title: "Chapter 3: Data Sufficiency"
 sidebar_label: "Chapter 3: Data Sufficiency"
 sidebar_position: 3
+description: "Data Sufficiency (DS) questions test your ability to determine whether the information provided is adequate to answer a given question —ithout actually"
 ---
 
 # Chapter 3: Data Sufficiency

@@ -1,3 +1,7 @@
+---
+description: "Phase 4: Computer Vision"
+---
+
 # Phase 4: Computer Vision
 
 > From pixels to understanding — image, video, and 3D.

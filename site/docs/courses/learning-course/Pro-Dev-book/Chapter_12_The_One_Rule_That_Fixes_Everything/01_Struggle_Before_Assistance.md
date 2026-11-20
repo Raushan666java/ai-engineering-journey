@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_12_The_One_Rule_That_Fixes_Everythin
 title: "🔥 Struggle Before Assistance"
 sidebar_label: "🔥 Struggle Before Assistance"
 sidebar_position: 1
+description: "We have covered system architecture, strict rules for deploying Artificial Intelligence, relentless debugging methodologies, and productivity"
 ---
 # 🔥 Struggle Before Assistance
 

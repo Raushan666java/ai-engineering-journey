@@ -1,3 +1,7 @@
+---
+description: "Retrieval that works: chunking, embeddings, hybrid search, reranking, and measuring Recall@k instead of guessing."
+---
+
 # 12 — RAG & Vector Databases
 
 ## Overview

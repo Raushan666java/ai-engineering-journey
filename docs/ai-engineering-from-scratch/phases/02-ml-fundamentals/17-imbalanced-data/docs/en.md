@@ -1,3 +1,7 @@
+---
+description: "This is not a bug. It is the rational thing to do when only 0.1% of transactions are fraudulent. The model learns that always guessing the majority class"
+---
+
 # Handling Imbalanced Data
 
 > When 99% of your data is "normal," accuracy is a lie.

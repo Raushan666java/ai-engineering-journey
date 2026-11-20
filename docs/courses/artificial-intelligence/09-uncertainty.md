@@ -1,3 +1,7 @@
+---
+description: "By the conclusion of this chapter, the student will be able to: (1) apply probability theory to represent uncertain knowledge; (2) construct and query"
+---
+
 # Chapter 9: Reasoning Under Uncertainty
 
 **Previous:** [Chapter 8: Planning](08-planning.md) | **Next:** [Chapter 10: Probabilistic Reasoning](10-probabilistic-reasoning.md)

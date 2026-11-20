@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/11-llms-prompt-engineering/03-zero-shot-and-few-
 title: "Zero-Shot & Few-Shot Prompting"
 sidebar_label: "Zero-Shot & Few-Shot Prompting"
 sidebar_position: 150
+description: "Zero-Shot & Few-Shot Prompting: Large language models are transforming every industry. Understanding how to prompt, evaluate, and optimize LLMs is a"
 ---
 
 <!-- improved -->

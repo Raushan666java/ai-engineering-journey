@@ -1,3 +1,7 @@
+---
+description: "✅ After completing this chapter, the student will be able to: - Explain the role of architectural design in software engineering and its impact on quality"
+---
+
 # Architectural Design
 
 ## Learning Objectives

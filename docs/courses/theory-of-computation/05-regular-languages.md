@@ -1,3 +1,7 @@
+---
+description: "The pumping lemma is a powerful tool for proving that certain languages are not regular. It captures a fundamental property: any sufficiently long string"
+---
+
 # Chapter 5: Properties of Regular Languages
 
 > **Previous:** [Regular Expressions](./04-regex.md) | **Next:** [Context-Free Grammars](./06-cfg.md)

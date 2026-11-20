@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/02-sql-and-databases/09-transactions-and-acid
 title: "Transactions & ACID — BEGIN, COMMIT, ROLLBACK, Isolation Levels, Locks"
 sidebar_label: "Transactions & ACID — BEGIN, COMMIT, ROLLBACK, Isolation Levels, Locks"
 sidebar_position: 34
+description: "Transactions & ACID — BEGIN, COMMIT, ROLLBACK, Isolation Levels, Locks: Data is the fuel of AI. SQL and database design skills let you query, transform"
 ---
 
 <!-- improved -->

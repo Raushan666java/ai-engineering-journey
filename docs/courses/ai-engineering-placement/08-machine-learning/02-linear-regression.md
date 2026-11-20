@@ -1,3 +1,7 @@
+---
+description: "Linear Regression - OLS, Gradient Descent, Regularization: Machine learning is the core of AI engineering. From linear regression to ensemble methods"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Linear Regression  -  OLS, Gradient Descent, Regularization

@@ -4,6 +4,7 @@ slug: /devops/02-git
 title: "Chapter 2: Advanced Git"
 sidebar_label: "Chapter 2: Advanced Git"
 sidebar_position: 2
+description: "Blob: Stores file content. Named by SHA-1 of the content. Does not store the filename — that's in the tree. Two files with identical content share the"
 ---
 
 # Chapter 2: Advanced Git

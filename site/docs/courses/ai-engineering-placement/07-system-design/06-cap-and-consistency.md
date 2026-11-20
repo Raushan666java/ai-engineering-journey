@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design/06-cap-and-consistency
 title: "CAP Theorem and Consistency Models"
 sidebar_label: "CAP Theorem and Consistency Models"
 sidebar_position: 101
+description: "CAP Theorem and Consistency Models: System design interviews test your ability to architect large-scale systems. Caching, load balancing, message queues"
 ---
 
 <!-- improved -->

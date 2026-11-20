@@ -4,6 +4,7 @@ slug: /java/41-resilience
 title: "Resilience & Circuit Breakers (Resilience4j)"
 sidebar_label: "Resilience & Circuit Breakers (Resilience4j)"
 sidebar_position: 41
+description: "Resilience4j is a lightweight, easy-to-use fault tolerance library inspired by Netflix Hystrix. It provides modules for circuit breaking, retry, rate"
 ---
 
 # Resilience & Circuit Breakers (Resilience4j)

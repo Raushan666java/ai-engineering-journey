@@ -1,3 +1,7 @@
+---
+description: "Your model trains for three hours, then the loss becomes NaN. You add a print statement. The logits are fine at step 9,000. At step 9,001 they are inf. By"
+---
+
 # Numerical Stability
 
 > Floating point is a leaky abstraction. It will bite you during training, and you will not see it coming.

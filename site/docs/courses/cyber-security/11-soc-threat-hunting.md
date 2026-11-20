@@ -4,6 +4,7 @@ slug: /cyber-security/11-soc-threat-hunting
 title: "Chapter 11: SOC Operations & Threat Hunting"
 sidebar_label: "Chapter 11: SOC Operations & Threat Hunting"
 sidebar_position: 10
+description: "Prereq: Chapters 1-3 (Security Fundamentals, Cryptography, Network Security) Target Audience: SOC analysts, threat hunters, blue team members, security"
 ---
 
 # Chapter 11: SOC Operations & Threat Hunting

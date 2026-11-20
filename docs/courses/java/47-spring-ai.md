@@ -1,3 +1,7 @@
+---
+description: "Spring AI is a framework that brings AI capabilities to Spring Boot applications. It provides a consistent abstraction over LLM providers, vector"
+---
+
 # Spring AI
 
 > **Previous:** [R2DBC &amp; Reactive Data Access](./46-r2dbc.md) | **Next:** [GraphQL](./48-graphql.md)

@@ -1,9 +1,10 @@
 ---
 id: 20-mock-test-6
 slug: /gate-cs-preparation/20-mock-test-6
-title: "20 Mock Test 6"
-sidebar_label: "20 Mock Test 6"
+title: "20-mock-test-6"
+sidebar_label: "20-mock-test-6"
 sidebar_position: 17
+description: "Total Marks: 100 Duration: 3 Hours Reading Time: 10 minutes"
 ---
 
 ﻿# GATE CS Mock Test 6 → Full-Length Practice Paper
@@ -355,7 +356,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q30 (1 Mark) [TOC]:** The language L = {aâÂÂ�¿báµÂÂ� | n > m ≥ 0} is:
+**Q30 (1 Mark) [TOC]:** The language L = {aⁿbᵐ | n > m ≥ 0} is:
 
 (A) Regular
 (B) Context-free but not regular
@@ -665,7 +666,7 @@ Which conclusion(s) logically follow(s)?
 
 **Q28:** STP is a Layer 2 protocol used by switches to prevent broadcast storms by creating a loop-free logical topology.
 
-**Q29:** SELECT (ÃÂ�ƒ), UNION (∪), and CARTESIAN PRODUCT (×) are relational algebra operators. GROUP BY is an SQL clause.
+**Q29:** SELECT (Ãƒ), UNION (âˆª), and CARTESIAN PRODUCT (Ã—) are relational algebra operators. GROUP BY is an SQL clause.
 
 **Q30:** The language requires counting a's and comparing with b's. A PDA can push a's and pop for each b, accepting if stack has at least 1 a at end. This requires unbounded counting, so it is not regular but is context-free.
 
@@ -699,17 +700,17 @@ Which conclusion(s) logically follow(s)?
 
 **Q45:** A router operates at the Network layer (Layer 3) and forwards packets between different networks based on IP addresses.
 
-**Q46:** A full binary tree with height h has all levels filled: 2âÂÂ�°+2¹+...+2ʰ = 2^{h+1}−1 = 2âÂÂ�¶−1 = 63 nodes.
+**Q46:** A full binary tree with height h has all levels filled: 2Ã¢ÂÂ°+2Ã‚Â¹+...+2ÃŠÂ° = 2^{h+1}Ã¢Ë†â€™1 = 2Ã¢Â¶âˆ’1 = 63 nodes.
 
 **Q47:** Need = Max − Allocation: P0=(7,4,3), P1=(1,2,2), P2=(6,0,0), P3=(0,1,0). With Avail=(3,3,2): P1 fits → P1 releases (2,0,0), Avail=(5,3,2). P3 fits → releases (2,1,1), Avail=(7,4,3). P0 fits → releases (0,1,0), Avail=(7,5,3). P2 fits. Safe sequence: P1, P3, P0, P2.
 
 **Q48:** Generator polynomial x³+x+1 = 1011. Append 3 zeros to dataword: 110101000. Binary polynomial division: XOR remainder = 001. Codeword = 110101001.
 
-**Q49:** ABâÂÂ�º = ABCDE (AB→C, C→D, D→B already present, D→E). ACâÂÂ�º = ACDEB (C→D, D→B, D→E). ADâÂÂ�º = ADBCE (D→B gives AB, then AB→C, then D→E). Since A alone gives A, B alone gives B, D alone gives DEAB but not C, the minimal superkeys are AB, AC, and AD.
+**Q49:** ABÃ¢ÂÂº = ABCDE (ABâ†’C, Câ†’D, Dâ†’B already present, Dâ†’E). ACÃ¢ÂÂº = ACDEB (Câ†’D, Dâ†’B, Dâ†’E). ADÃ¢Âº = ADBCE (D→B gives AB, then AB→C, then D→E). Since A alone gives A, B alone gives B, D alone gives DEAB but not C, the minimal superkeys are AB, AC, and AD.
 
 **Q50:** S → aSb → aaSbb → aaεbb = aabb. The leftmost derivation takes exactly 3 steps.
 
-**Q51:** The DFA has 4 states: q₀ (no match), qâ‚ÂÂ� (ends in "a"), q₂ (ends in "aa"), q₃ (accepting, ends in "abb"). Transitions: from q₃ on 'a' go to qâ‚ÂÂ�, on 'b' go to q₂.
+**Q51:** The DFA has 4 states: q₀ (no match), q₁ (ends in "a"), q₂ (ends in "aa"), q₃ (accepting, ends in "abb"). Transitions: from q₃ on 'a' go to q₁, on 'b' go to q₂.
 
 **Q52:** +45 = 00101101. 1's complement: 11010010. 2's complement (add 1): 11010011.
 

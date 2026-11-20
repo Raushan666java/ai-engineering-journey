@@ -4,6 +4,7 @@ slug: /web-development/10-auth
 title: "Chapter 10: Authentication and Authorization"
 sidebar_label: "Chapter 10: Authentication and Authorization"
 sidebar_position: 10
+description: "Authentication failures should return 401 Unauthorized. Authorization failures (insufficient permissions) should return 403 Forbidden. Never confuse these"
 ---
 
 # Chapter 10: Authentication and Authorization

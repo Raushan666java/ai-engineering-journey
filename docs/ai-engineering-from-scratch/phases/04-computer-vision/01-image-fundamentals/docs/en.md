@@ -1,3 +1,7 @@
+---
+description: "Every paper you will read, every pretrained weight you will download, every vision API you will call assumes a specific encoding of the input. Pass a"
+---
+
 # Image Fundamentals — Pixels, Channels, Color Spaces
 
 > An image is a tensor of light samples. Every vision model you will ever use starts from this one fact.

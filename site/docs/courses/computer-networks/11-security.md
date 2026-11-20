@@ -4,6 +4,7 @@ slug: /computer-networks/11-security
 title: "Chapter 11: Network Security"
 sidebar_label: "Chapter 11: Network Security"
 sidebar_position: 11
+description: "Network security encompasses the policies and mechanisms that protect the confidentiality, integrity, and availability of data in transit. Threats are"
 ---
 
 # Chapter 11: Network Security

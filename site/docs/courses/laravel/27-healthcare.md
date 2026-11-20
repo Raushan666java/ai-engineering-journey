@@ -4,6 +4,7 @@ slug: /laravel/27-healthcare
 title: "Chapter 27: Healthcare AI Agents"
 sidebar_label: "Chapter 27: Healthcare AI Agents"
 sidebar_position: 27
+description: "Healthcare applications operate under strict regulatory requirements. The Health Insurance Portability and Accountability Act (HIPAA) mandates three core"
 ---
 
 # Chapter 27: Healthcare AI Agents

@@ -1,3 +1,7 @@
+---
+description: "REINFORCE is noisy. Add a critic that learns V̂(s), subtract it from the return, and you get an advantage that has the same expectation but far lower"
+---
+
 # Actor-Critic — A2C and A3C
 
 > REINFORCE is noisy. Add a critic that learns `V̂(s)`, subtract it from the return, and you get an advantage that has the same expectation but far lower variance. That is actor-critic. A2C runs it synchronously; A3C runs it across threads. Both are the mental model for every modern deep-RL method.

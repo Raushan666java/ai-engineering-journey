@@ -4,6 +4,7 @@ slug: /job-preparation/04-group-discussion-case-study
 title: "Group Discussion and Case Study Interview Preparation"
 sidebar_label: "Group Discussion and Case Study Interview Preparation"
 sidebar_position: 4
+description: "A Group Discussion (GD) is a structured conversation where 8-15 participants discuss a given topic for 15-30 minutes. It tests your communication skills"
 ---
 
 # Group Discussion and Case Study Interview Preparation

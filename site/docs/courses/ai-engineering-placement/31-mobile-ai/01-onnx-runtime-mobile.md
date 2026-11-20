@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/31-mobile-ai/01-onnx-runtime-mobile
 title: "ONNX Runtime for Mobile"
 sidebar_label: "ONNX Runtime for Mobile"
 sidebar_position: 351
+description: "ONNX (Open Neural Network Exchange) is an open standard for representing machine learning models. It enables interoperability between frameworks (PyTorch"
 ---
 
 <!-- improved -->

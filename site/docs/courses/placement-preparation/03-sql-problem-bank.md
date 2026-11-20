@@ -4,6 +4,7 @@ slug: /placement-preparation/03-sql-problem-bank
 title: "SQL Problem Bank"
 sidebar_label: "SQL Problem Bank"
 sidebar_position: 3
+description: "50 curated SQL problems organized by category. Each problem includes the question, schema, sample data, tested SQL solution, expected output, and"
 ---
 
 # SQL Problem Bank

@@ -1,3 +1,7 @@
+---
+description: "A[Virtualization Concept] --> B[Hypervisor Types] B --> C[CPU Virtualization] B --> D[Memory Virtualization] B --> E[I/O Virtualization] E -->"
+---
+
 # Chapter 17: Virtualization
 
 **<< [Security](./16-security.md)** | [**Next: Case Studies**](./18-case-studies.md) >>

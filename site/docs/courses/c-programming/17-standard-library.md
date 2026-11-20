@@ -4,6 +4,7 @@ slug: /c-programming/17-standard-library
 title: "Chapter 17: The C Standard Library"
 sidebar_label: "Chapter 17: The C Standard Library"
 sidebar_position: 17
+description: "Step 1: Declare a FILE* pointer. Step 2: Call fopen(path, mode) to open the file — check for NULL return. Step 3: Read or write data using fprintf"
 ---
 
 # Chapter 17: The C Standard Library

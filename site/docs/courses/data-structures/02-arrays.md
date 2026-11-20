@@ -4,6 +4,7 @@ slug: /data-structures/02-arrays
 title: "Chapter 2: Arrays"
 sidebar_label: "Chapter 2: Arrays"
 sidebar_position: 2
+description: "Imagine a row of cinema seats numbered 0 to n-1. Each seat holds exactly one person — just like an array slot holds one element. You can instantly tell"
 ---
 
 # Chapter 2: Arrays

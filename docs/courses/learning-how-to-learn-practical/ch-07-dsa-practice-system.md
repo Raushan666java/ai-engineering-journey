@@ -1,3 +1,7 @@
+---
+description: "const intervals = [1, 3, 7, 30] // days const nextInterval = intervals[Math.min(problem.reviewsCompleted - 1, intervals.length - 1)] problem.nextReview ="
+---
+
 # Chapter 7: Practice System for Mastery
 
 > ⏱ **2.5 hours total** · 🎯 **Intermediate** · 📋 **Recommended: Ch 4 (Active Recall)**

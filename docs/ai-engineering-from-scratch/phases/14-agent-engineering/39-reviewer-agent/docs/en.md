@@ -1,3 +1,7 @@
+---
+description: "The agent that wrote the code cannot grade it. A reviewer is a second loop with a different system prompt, a different goal, and read-only access to"
+---
+
 # Reviewer Agent: Separate Builder from Marker
 
 > The agent that wrote the code cannot grade it. A reviewer is a second loop with a different system prompt, a different goal, and read-only access to everything the builder produced. The gap between builder and reviewer is where most reliability lives.

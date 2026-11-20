@@ -1,3 +1,7 @@
+---
+description: "Before transformers, before RNNs, before word embeddings, a language model predicted the next word by counting how often it followed the previous n-1"
+---
+
 # Text Generation Before Transformers — N-gram Language Models
 
 > If a word is surprising, the model is bad. Perplexity makes surprise a number. Smoothing keeps it finite.

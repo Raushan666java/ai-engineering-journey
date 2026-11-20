@@ -4,6 +4,7 @@ slug: /bhagavad-gita/15-purushottama-yoga
 title: "Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky"
 sidebar_label: "Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky"
 sidebar_position: 15
+description: "This is Krishna's most mysterious teaching, and Osho reads it as his most intimate one. In the fourteenth chapter Krishna described the three gunas that"
 ---
 
 # Chapter 15: Purushottama Yoga — Cut the Tree, Then Climb the Sky

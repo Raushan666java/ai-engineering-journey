@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/27-ai-infrastructure/08-attention-kv-cache
 title: "Attention & KV Cache Optimization"
 sidebar_label: "Attention & KV Cache Optimization"
 sidebar_position: 330
+description: "Attention is the core computation in every transformer model. It lets each token attend to every other token in the sequence. This quadratic O(n²) cost"
 ---
 
 <!-- improved -->

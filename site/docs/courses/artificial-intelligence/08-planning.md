@@ -4,6 +4,7 @@ slug: /artificial-intelligence/08-planning
 title: "Chapter 8: Planning"
 sidebar_label: "Chapter 8: Planning"
 sidebar_position: 14
+description: "By the conclusion of this chapter, the student will be able to: (1) formulate planning problems in STRIPS and ADL; (2) implement forward and backward"
 ---
 
 # Chapter 8: Planning

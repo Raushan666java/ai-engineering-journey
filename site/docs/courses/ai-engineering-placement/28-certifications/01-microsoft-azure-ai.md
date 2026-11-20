@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/28-certifications/01-microsoft-azure-ai
 title: "Microsoft Azure AI Certifications"
 sidebar_label: "Microsoft Azure AI Certifications"
 sidebar_position: 334
+description: "Microsoft Azure offers three AI certifications for different roles. AI-900 is the fundamentals exam. AI-102 is for AI engineers building solutions. DP-100"
 ---
 
 <!-- improved -->

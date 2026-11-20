@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Object-Oriented Programming (OOP) rests on four pillars"
+---
+
 # Chapter 10: Low-Level Design: SOLID Principles and OOP
 > **Previous:** [09 Distributed Coordination](./09-distributed-coordination.md) | **Next:** [11 Lld Design Patterns](./11-lld-design-patterns.md)
 

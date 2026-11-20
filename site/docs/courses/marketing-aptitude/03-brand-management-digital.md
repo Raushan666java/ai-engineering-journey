@@ -4,6 +4,7 @@ slug: /marketing-aptitude/03-brand-management-digital
 title: "Chapter 3: Brand Management and Digital Marketing"
 sidebar_label: "Chapter 3: Brand Management and Digital Marketing"
 sidebar_position: 3
+description: "A brand is a name, term, sign, symbol, or design — or a combination of these — intended to identify the goods or services of one seller and differentiate"
 ---
 
 # Chapter 3: Brand Management and Digital Marketing

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/19-capstone-projects/visual-notes
 title: "Visual Notes — From Problem to Demo"
 sidebar_label: "Visual Notes"
 sidebar_position: 242
+description: "Visual Notes — From Problem to Demo: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before"
 ---
 
 # Visual Notes — From Problem to Demo

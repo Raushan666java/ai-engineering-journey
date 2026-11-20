@@ -1,3 +1,7 @@
+---
+description: "'Vishvarupa koi chamatkaar nahin hai — woh anubhav hai. Har meditator ko ek din woh jhalak milti hai jab duniya alag-alag cheezon se nahin, ek jheel si"
+---
+
 # अध्याय ११: विश्वरूप दर्शन योग — Ek jhalak — sab kuch ek ho gaya
 
 > **"Vishvarupa koi chamatkaar nahin hai — woh anubhav hai. Har meditator ko ek din woh jhalak milti hai jab duniya alag-alag cheezon se nahin, ek jheel si lagti hai. Lekin yaad rakhna: vision ko pakadna mat — woh ek kheer jhadi hai jo nikal jana chahiye. Krishna wapas sadharan roop mein aa gaya — wahi aakhri rahasy hai."**

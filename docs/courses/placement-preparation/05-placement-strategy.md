@@ -1,3 +1,7 @@
+---
+description: "Placement season in Indian engineering colleges follows a predictable cycle tied to the academic calendar. For most colleges (IITs, NITs, IIITs, top"
+---
+
 # 05 → Placement Season Strategy
 
 > **Previous:** [04 — Company-Specific Preparation](04-company-specific.md)  

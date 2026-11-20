@@ -4,6 +4,7 @@ slug: /geeta-darshan/03-karma-yoga
 title: "अध्याय ३: कर्म योग — Karma revolution hai, duty nahin"
 sidebar_label: "अध्याय ३: कर्म योग — Karma revolution hai, duty nahin"
 sidebar_position: 4
+description: "'Nishkama karma ka matlab yeh nahin ki tum karm se door ho jao. Nishkama karma ka matlab hai: karm mein poore do, par andar se aazaad raho. Yahi sabse"
 ---
 
 # अध्याय ३: कर्म योग — Karma revolution hai, duty nahin

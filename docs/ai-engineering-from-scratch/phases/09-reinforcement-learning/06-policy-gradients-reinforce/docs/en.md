@@ -1,3 +1,7 @@
+---
+description: "Stop estimating value. Parameterize the policy directly, compute the gradient of expected return, step uphill. Williams (1992) wrote it in one theorem. It"
+---
+
 # Policy Gradient — REINFORCE from Scratch
 
 > Stop estimating value. Parameterize the policy directly, compute the gradient of expected return, step uphill. Williams (1992) wrote it in one theorem. It is why PPO, GRPO, and every LLM RL loop exist.

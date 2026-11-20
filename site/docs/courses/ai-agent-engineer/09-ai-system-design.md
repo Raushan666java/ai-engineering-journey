@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/09-ai-system-design
 title: "Chapter 9 — AI System Design & Architecture"
 sidebar_label: "Chapter 9 — AI System Design & Architecture"
 sidebar_position: 10
+description: "Architect production AI systems — RAG pipelines, agent infrastructures, and cost-optimized serving stacks. Make design decisions you can defend in a"
 ---
 
 # Chapter 9 — AI System Design & Architecture

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/04-git-linux-cli/07-ssh-and-remote-access
 title: "SSH & Remote Access — Secure Shell, Key Management, Tunneling"
 sidebar_label: "SSH & Remote Access — Secure Shell, Key Management, Tunneling"
 sidebar_position: 64
+description: "SSH (Secure Shell) is the standard protocol for secure remote access to servers, containers, and cloud instances. AI engineers use SSH daily to access"
 ---
 
 <!-- improved -->

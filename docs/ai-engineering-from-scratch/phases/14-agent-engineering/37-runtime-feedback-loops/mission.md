@@ -1,3 +1,7 @@
+---
+description: "Build run_with_feedback that wraps subprocess.run, captures stdout, stderr, exit code, and duration, truncates output deterministically, and appends a"
+---
+
 # Mission - Runtime Feedback Loops
 
 ## Goal

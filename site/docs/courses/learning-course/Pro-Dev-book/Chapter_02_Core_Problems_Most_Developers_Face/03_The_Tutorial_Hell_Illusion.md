@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_02_Core_Problems_Most_Developers_Fac
 title: "🎬 The Tutorial Hell Illusion"
 sidebar_label: "🎬 The Tutorial Hell Illusion"
 sidebar_position: 3
+description: "'Tutorial Hell' is a phrase used to describe the purgatory where developers get stuck constantly watching courses, reading books, and following"
 ---
 # 🎬 The Tutorial Hell Illusion
 

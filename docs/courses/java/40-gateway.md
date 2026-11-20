@@ -1,3 +1,7 @@
+---
+description: "An API Gateway is a single entry point that routes requests to appropriate backend services. It handles cross-cutting concerns including authentication"
+---
+
 # API Gateway (Spring Cloud Gateway)
 > **Previous:** [Service Discovery](39-discovery.md) | **Next:** [Resilience and Circuit Breakers](41-resilience.md)
 

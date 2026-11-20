@@ -4,6 +4,7 @@ slug: /digital-marketing/01-marketing-foundations
 title: "Chapter 1 — Marketing Foundations"
 sidebar_label: "Chapter 1 — Marketing Foundations"
 sidebar_position: 1
+description: "The American Marketing Association defines marketing as 'the activity, set of institutions, and processes for creating, communicating, delivering, and"
 ---
 
 # Chapter 1 — Marketing Foundations

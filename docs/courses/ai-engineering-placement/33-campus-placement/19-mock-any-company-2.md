@@ -1,3 +1,7 @@
+---
+description: "Company-neutral aptitude simulation: 16 quant, 12 logical, 12 verbal. Time: 60 minutes. Rule: 60-90 seconds per question. Answers at the bottom — no"
+---
+
 <!-- improved -->
 # Mock Test — Any Company #2 (Generic Pattern, 40 Questions)
 

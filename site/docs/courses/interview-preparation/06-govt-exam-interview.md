@@ -4,6 +4,7 @@ slug: /interview-preparation/06-govt-exam-interview
 title: "Chapter 6: Government Exam Interview Preparation"
 sidebar_label: "Chapter 6: Government Exam Interview Preparation"
 sidebar_position: 6
+description: "Real Experience: An IBPS SO panel asked me to draw the UPI flow on the whiteboard. They also asked about failure scenarios — what happens if the network"
 ---
 
 # Chapter 6: Government Exam Interview Preparation

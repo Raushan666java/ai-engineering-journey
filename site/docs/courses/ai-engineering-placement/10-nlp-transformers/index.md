@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/10-nlp-transformers
 title: "10 — NLP & Transformers"
 sidebar_label: "10 — NLP & Transformers"
 sidebar_position: 146
+description: "Attention, tokenisation, embeddings and transformer fine-tuning — the internals behind every LLM you will use."
 ---
 
 # 10 — NLP & Transformers

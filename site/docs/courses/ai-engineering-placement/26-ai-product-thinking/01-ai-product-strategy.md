@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/26-ai-product-thinking/01-ai-product-strategy
 title: "01 — AI Product Strategy"
 sidebar_label: "01 — AI Product Strategy"
 sidebar_position: 316
+description: "AI Product Strategy is the discipline of deciding which AI problems to solve, how to solve them, and in what order. It bridges the gap between business"
 ---
 
 <!-- improved -->

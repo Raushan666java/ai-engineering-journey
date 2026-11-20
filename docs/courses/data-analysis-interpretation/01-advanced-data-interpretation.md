@@ -1,3 +1,7 @@
+---
+description: "Data Interpretation questions test your ability to extract meaning from numerical data presented in various visual formats. A systematic approach is"
+---
+
 # Chapter 1: Advanced Data Interpretation
 
 ## Learning Objectives

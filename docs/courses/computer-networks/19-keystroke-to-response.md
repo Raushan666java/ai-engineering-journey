@@ -1,3 +1,7 @@
+---
+description: "GFG/Javatpoint Depth — Processes vs threads, the syscall boundary, file descriptors, sockets, the three-way handshake, DNS, routing, accept/fork, latency"
+---
+
 # Chapter 19: From Keystroke to Response — How the OS and Network Work Together
 
 > **GFG/Javatpoint Depth — Processes vs threads, the syscall boundary, file descriptors, sockets, the three-way handshake, DNS, routing, accept/fork, latency budgets, and where user space ends**

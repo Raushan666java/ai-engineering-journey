@@ -1,3 +1,7 @@
+---
+description: "What this demonstrates: Programmatic Terraform plan parsing enables automated risk classification, destructive change detection, and integration with"
+---
+
 # Chapter 10: Advanced Configuration Management
 
 > **Prev:** [Terraform & IaC](./09-iac.md)

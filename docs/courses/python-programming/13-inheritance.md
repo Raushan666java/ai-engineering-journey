@@ -1,3 +1,7 @@
+---
+description: "Protocols check that an object has the required methods with compatible signatures at static type-checking time. At runtime, isinstance checks with"
+---
+
 # Chapter 13: Inheritance and Protocols
 
 

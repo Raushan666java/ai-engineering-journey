@@ -1,3 +1,7 @@
+---
+description: "Passive review — rereading notes, highlighting, watching videos again — feels productive but produces almost no long-term retention. The science is"
+---
+
 # Chapter 3: Active Recall & Spaced Repetition
 
 > **Prerequisites:** [Chapter 2: Practice, Mindset & Performance](./ch-02-practice-mindset.md) — Practice frameworks and illusions of competence.

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/27-ai-infrastructure
 title: "27 — AI Infrastructure & Optimization"
 sidebar_label: "27 — AI Infrastructure & Optimization"
 sidebar_position: 332
+description: "GPUs, vLLM, quantization and serving economics — how inference actually gets fast and cheap."
 ---
 
 # 27 — AI Infrastructure & Optimization

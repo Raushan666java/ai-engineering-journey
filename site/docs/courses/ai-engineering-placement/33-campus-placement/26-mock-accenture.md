@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/26-mock-accenture
 title: "Accenture Mock Test — Full Pattern Simulation (45 Questions)"
 sidebar_label: "Accenture Mock Test — Full Pattern Simulation (45 Questions)"
 sidebar_position: 387
+description: "Simulates the Accenture cognitive aptitude section: 15 quant, 15 logical, 15 verbal. Accenture is verbal-heavy — grammar, RC and para jumbles carry the"
 ---
 
 <!-- improved -->

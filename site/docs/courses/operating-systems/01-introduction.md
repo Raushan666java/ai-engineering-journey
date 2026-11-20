@@ -4,6 +4,7 @@ slug: /operating-systems/01-introduction
 title: "Chapter 1: Introduction to Operating Systems"
 sidebar_label: "Chapter 1: Introduction to Operating Systems"
 sidebar_position: 1
+description: "Imagine a 50-story office building. Without a building manager, chaos erupts: people fight over elevators, rooms are double-booked, the HVAC runs"
 ---
 
 # Chapter 1: Introduction to Operating Systems

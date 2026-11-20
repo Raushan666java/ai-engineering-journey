@@ -1,3 +1,7 @@
+---
+description: "A classifier outputs [0.03, 0.91, 0.06]. A language model picks the next word from 50,000 candidates. A diffusion model generates images by sampling from"
+---
+
 # Probability and Distributions
 
 > Probability is the language AI uses to express uncertainty.

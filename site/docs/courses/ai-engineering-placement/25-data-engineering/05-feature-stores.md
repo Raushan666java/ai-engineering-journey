@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/25-data-engineering/05-feature-stores
 title: "05 — Feature Stores"
 sidebar_label: "05 — Feature Stores"
 sidebar_position: 313
+description: "Feature engineering accounts for 60-80% of the work in production ML systems, yet most teams build the same features repeatedly with inconsistent"
 ---
 
 <!-- improved -->

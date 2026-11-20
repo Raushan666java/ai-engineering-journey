@@ -3,6 +3,7 @@ slug: /learning-course/02_AI_Learning_Basics/AI_Mindset_Coaching
 title: "🎯 AI-Powered Mindset Coaching"
 sidebar_label: "🎯 AI-Powered Mindset Coaching"
 sidebar_position: 1
+description: "Key Insight: AI provides personalized mindset coaching that adapts to your specific challenges and growth patterns."
 ---
 # 🎯 AI-Powered Mindset Coaching
 

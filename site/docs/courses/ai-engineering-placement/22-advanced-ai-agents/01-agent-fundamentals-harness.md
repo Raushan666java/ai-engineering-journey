@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/01-agent-fundamentals-harn
 title: "Agent Fundamentals & Harness Engineering"
 sidebar_label: "Agent Fundamentals & Harness Engineering"
 sidebar_position: 272
+description: "Agent Fundamentals & Harness Engineering: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This"
 ---
 
 <!-- improved -->

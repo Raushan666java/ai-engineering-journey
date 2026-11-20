@@ -1,3 +1,7 @@
+---
+description: "This chapter covers AI and machine learning interview questions for Laravel developers → from fundamental ML theory to production deployment with Laravel"
+---
+
 # Chapter 54: AI/ML Interview Q&A
 
 > **Previous:** [JavaScript Interview Q&A](./53-interview-javascript.md) | **Next:** None

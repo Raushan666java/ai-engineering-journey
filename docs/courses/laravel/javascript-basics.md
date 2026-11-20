@@ -1,3 +1,7 @@
+---
+description: "Chapter: JavaScript Fundamentals: One-Sentence Takeaway: Theory is the foundation → master it before moving to examples and exercises. One-Sentence"
+---
+
 # Chapter: JavaScript Fundamentals
 
 ---

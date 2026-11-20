@@ -1,3 +1,7 @@
+---
+description: "Greshake et al. (AISec 2023) established indirect prompt injection as the defining agent security problem. Attacker plants instructions in data the agent"
+---
+
 # Prompt Injection and the PVE Defense
 
 > Greshake et al. (AISec 2023) established indirect prompt injection as the defining agent security problem. Attacker plants instructions in data the agent retrieves; on ingest, those instructions override the developer prompt. Treat all retrieved content as arbitrary code execution on the tool-use surface.

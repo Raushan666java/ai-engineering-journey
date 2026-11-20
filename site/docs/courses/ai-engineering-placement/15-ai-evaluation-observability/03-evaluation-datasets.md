@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/15-ai-evaluation-observability/03-evaluation-dat
 title: "Evaluation Datasets"
 sidebar_label: "Evaluation Datasets"
 sidebar_position: 200
+description: "Evaluation Datasets: You cannot improve what you cannot measure. Evaluation metrics, LLM-as-judge, and observability tools help you monitor and improve AI"
 ---
 
 <!-- improved -->

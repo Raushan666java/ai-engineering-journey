@@ -1,3 +1,7 @@
+---
+description: "Tool Use and Function Calling: AI agents autonomously use tools to complete tasks. LangGraph builds stateful, multi-step agent workflows. This module"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Tool Use and Function Calling

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/24-statistics-mathematics
 title: "Statistics & Mathematics for AI Engineers"
 sidebar_label: "Statistics & Mathematics for AI Engineers"
 sidebar_position: 307
+description: "Probability, distributions, hypothesis testing and linear algebra — the statistics interviewers expect you to reason with."
 ---
 
 # Statistics & Mathematics for AI Engineers

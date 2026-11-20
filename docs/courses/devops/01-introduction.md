@@ -1,3 +1,7 @@
+---
+description: "DevOps is not a software tool or a specific job title, but a cultural and professional movement that stresses communication, collaboration, and"
+---
+
 # Chapter 1: Introduction to DevOps
 
 > **Next:** [Advanced Git](./02-git.md)

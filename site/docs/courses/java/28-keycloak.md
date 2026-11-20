@@ -4,6 +4,7 @@ slug: /java/28-keycloak
 title: "Keycloak & Identity Federation"
 sidebar_label: "Keycloak & Identity Federation"
 sidebar_position: 28
+description: "Keycloak is an open-source identity and access management (IAM) platform that provides authentication, authorization, single sign-on (SSO), social login"
 ---
 
 # Keycloak & Identity Federation

@@ -1,3 +1,7 @@
+---
+description: "A classic problem in distributed computing where multiple generals must agree on a common battle plan (Attack or Retreat). Some generals might be traitors"
+---
+
 # Chapter 3: Consensus Mechanisms
 
 > **Previous:** [Chapter 2: Cryptography for Blockchain](./02-cryptography.md) | **Next:** [Chapter 4: The Bitcoin Network](./04-bitcoin.md)

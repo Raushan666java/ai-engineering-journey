@@ -1,3 +1,7 @@
+---
+description: "Most AI material teaches in scattered pieces. This curriculum is the spine. Every algorithm gets built from raw math first — backprop, tokenizer"
+---
+
 # AI Engineering from Scratch
 
 > **503 lessons · 20 phases · ~320 hours** — Python, TypeScript, Rust, Julia  

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/09-deep-learning-pytorch/04-cnn-fundamentals
 title: "CNN Fundamentals"
 sidebar_label: "CNN Fundamentals"
 sidebar_position: 129
+description: "CNN Fundamentals: Deep learning powers modern AI breakthroughs. PyTorch is the framework of choice for researchers and production engineers alike. This"
 ---
 
 <!-- improved -->

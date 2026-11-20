@@ -1,3 +1,7 @@
+---
+description: "This chapter teaches you how to use AI as a learning accelerator — not a crutch. You'll learn prompt patterns that turn LLMs into Socratic tutors, build"
+---
+
 # Chapter 11: AI-Assisted Learning
 
 > **Prerequisites:** [Chapter 3: Active Recall & Spaced Repetition](./ch-03-active-recall-spaced-repetition.md)

@@ -4,6 +4,7 @@ slug: /java/42-config
 title: "Distributed Configuration"
 sidebar_label: "Distributed Configuration"
 sidebar_position: 42
+description: "In a microservices architecture, configuration becomes distributed across many services. A centralized configuration server solves this by providing a"
 ---
 
 # Distributed Configuration

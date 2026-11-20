@@ -4,6 +4,7 @@ slug: /geeta-darshan/12-bhakti-yoga
 title: "अध्याय १२: भक्ति योग — Prem sabse chhota raasta hai"
 sidebar_label: "अध्याय १२: भक्ति योग — Prem sabse chhota raasta hai"
 sidebar_position: 13
+description: "'Bhakti koi dharam nahin hai — bhakti prem hai. Aur prem sabse chhota raasta hai kyunki woh man ko bypass kar deta hai. Jnani ko vivek ke hazaaron chalne"
 ---
 
 # अध्याय १२: भक्ति योग — Prem sabse chhota raasta hai

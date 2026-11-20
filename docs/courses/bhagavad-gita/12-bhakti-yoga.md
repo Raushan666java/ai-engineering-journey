@@ -1,3 +1,7 @@
+---
+description: "The battlefield has gone quiet. Krishna has spoken eleven chapters of fire: about duty, about the deathless Self, about the vision of cosmic form that"
+---
+
 # Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home
 
 > "You do not need to become perfect before you love. Love is not the reward at the end of the road — love is the road itself."

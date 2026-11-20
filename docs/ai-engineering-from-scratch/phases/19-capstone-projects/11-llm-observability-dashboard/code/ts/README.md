@@ -1,3 +1,7 @@
+---
+description: "Multi-file TypeScript skeleton for the LLM observability dashboard capstone. A Hono server accepts OpenTelemetry GenAI spans, holds them in a 10k ring"
+---
+
 # LLM observability dashboard (TypeScript skeleton)
 
 Multi-file TypeScript skeleton for the LLM observability dashboard capstone.

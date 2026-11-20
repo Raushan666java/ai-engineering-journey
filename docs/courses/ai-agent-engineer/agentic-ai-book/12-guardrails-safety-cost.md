@@ -1,3 +1,7 @@
+---
+description: "Never let model output directly execute anything dangerous without a validation layer in between. The model's job is to decide what should happen; your"
+---
+
 ## Chapter 12: Guardrails, Safety, and Cost Control
 
 ### 12.1 The Core Principle

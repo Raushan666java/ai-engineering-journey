@@ -1,3 +1,7 @@
+---
+description: "Standard RAG retrieves a single chunk per embedding. But what if the best retrieval unit is smaller than the best context unit for the LLM? Parent-child"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Parent-Child & Multi-Vector Retrieval

@@ -1,3 +1,7 @@
+---
+description: "A function is a named, reusable block of code that performs a specific task. Every function has three distinct components: declaration (prototype)"
+---
+
 # Chapter 8: Functions
 
 > **Previous:** [Strings](./07-strings.md) | **Next:** [Pointers](./09-pointers.md)

@@ -1,3 +1,7 @@
+---
+description: "Step 1 → public/index.php: This single entry point (configured in Nginx or Apache) records the start time, loads Composer's autoloader, bootstraps the"
+---
+
 # Chapter 2: Architecture, Routing, Middleware & Controllers
 
 > **Previous:** [Introduction to Laravel 13](./01-introduction.md) | **Next:** [Blade Templating, Components & Frontend](./03-blade-frontend.md)

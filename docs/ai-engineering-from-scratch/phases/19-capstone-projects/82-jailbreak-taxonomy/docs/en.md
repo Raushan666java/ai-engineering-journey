@@ -1,3 +1,7 @@
+---
+description: "A model deployed without an attack model is a model defended against nothing in particular. Operators read a Twitter thread, recognize the trick, write a"
+---
+
 # Capstone 82 — Jailbreak Taxonomy
 
 > A safety harness without a taxonomy is a coin flip. Name the attack before you defend it.

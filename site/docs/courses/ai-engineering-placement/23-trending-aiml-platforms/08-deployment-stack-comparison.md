@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/23-trending-aiml-platforms/08-deployment-stack-c
 title: "08 — Deployment Stack Comparison: vLLM vs SGLang vs Ollama vs TGI"
 sidebar_label: "08 — Deployment Stack Comparison: vLLM vs SGLang vs Ollama vs TGI"
 sidebar_position: 296
+description: "The model deployment landscape in 2026 offers four dominant open-source stacks: vLLM, SGLang, Ollama, and Hugging Face TGI. Each was built with different"
 ---
 
 <!-- improved -->

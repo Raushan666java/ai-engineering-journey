@@ -1,3 +1,7 @@
+---
+description: "Hybrid Search and Reranking: Retrieval-Augmented Generation lets LLMs answer questions about your private data. Vector databases store embeddings for"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Hybrid Search and Reranking

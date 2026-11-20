@@ -4,6 +4,7 @@ slug: /blockchain/08-defi
 title: "Chapter 8: Decentralized Finance (DeFi)"
 sidebar_label: "Chapter 8: Decentralized Finance (DeFi)"
 sidebar_position: 8
+description: "DeFi is an ecosystem of financial applications built on top of blockchain networks. It aims to recreate traditional financial services (Lending"
 ---
 
 # Chapter 8: Decentralized Finance (DeFi)

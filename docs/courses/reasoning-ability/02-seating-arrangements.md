@@ -1,3 +1,7 @@
+---
+description: "Seating arrangement questions appear in almost every IBPS SO IT Officer Prelims paper. They carry approximately 4–6 questions out of the 25 Reasoning"
+---
+
 # Seating Arrangements — Circular, Linear, and Double Row
 
 ## Learning Objectives

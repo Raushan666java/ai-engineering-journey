@@ -1,3 +1,7 @@
+---
+description: "Joins — INNER, LEFT, RIGHT, FULL, CROSS, Self-Joins: Data is the fuel of AI. SQL and database design skills let you query, transform, and store the data"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Joins — INNER, LEFT, RIGHT, FULL, CROSS, Self-Joins

@@ -1,3 +1,7 @@
+---
+description: "A socket is a software abstraction representing one endpoint of a two-way communication channel. The socket API (Berkeley sockets, 1983) provides system"
+---
+
 # Chapter 13: Socket Programming → Complete Reference
 
 ## Learning Objectives

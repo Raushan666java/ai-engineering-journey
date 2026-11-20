@@ -1,3 +1,7 @@
+---
+description: "This textbook presents a rigorous, modern treatment of web development, progressing from foundational markup and styling through advanced full-stack"
+---
+
 ﻿---
 id: index
 slug: /web-development

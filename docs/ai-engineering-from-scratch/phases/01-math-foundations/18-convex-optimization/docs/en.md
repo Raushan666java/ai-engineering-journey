@@ -1,3 +1,7 @@
+---
+description: "Lesson 08 taught you gradient descent, momentum, and Adam. Those optimizers walk downhill on any surface. But they come with no guarantees. Gradient"
+---
+
 # Convex Optimization
 
 > Convex problems have one valley. Neural networks have millions. Knowing the difference matters.

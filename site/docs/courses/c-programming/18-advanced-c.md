@@ -4,6 +4,7 @@ slug: /c-programming/18-advanced-c
 title: "Chapter 18: Advanced C"
 sidebar_label: "Chapter 18: Advanced C"
 sidebar_position: 18
+description: "Real-World Analogy: A large corporation divides work into departments (accounting, engineering, HR). Each department has a public interface (reception"
 ---
 
 # Chapter 18: Advanced C

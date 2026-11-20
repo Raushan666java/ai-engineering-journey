@@ -1,3 +1,7 @@
+---
+description: "Modern LLMs are too large for a single GPU. Llama 3 405B requires 810 GB in FP16. No single GPU has that much memory. Distributed inference splits the"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Distributed Inference

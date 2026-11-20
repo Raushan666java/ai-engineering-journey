@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_09_Debugging_Like_A_Pro/02_Isolate_A
 title: "🔬 Isolate & Reproduce 100%"
 sidebar_label: "🔬 Isolate & Reproduce 100%"
 sidebar_position: 2
+description: "If a client emails you to say, 'The checkout page froze,' your first instinct might be to open the CheckoutController.php and stare at the code, hoping a"
 ---
 # 🔬 Isolate & Reproduce 100%
 

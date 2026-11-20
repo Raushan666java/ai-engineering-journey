@@ -4,6 +4,7 @@ slug: /hindi-language/01-hindi-grammar
 title: "Chapter 1: हिंदी व्याकरण (Hindi Grammar)"
 sidebar_label: "Chapter 1: हिंदी व्याकरण (Hindi Grammar)"
 sidebar_position: 1
+description: "Q24. निम्नलिखित में से कौन सा वाक्य शुद्ध है? a) मैंने यह काम कर दिया हूँ b) मैं यह काम कर दिया हूँ c) मुझको यह काम कर दिया हूँ d) मैंने यह काम कर लिया हूँ"
 ---
 
 # Chapter 1: हिंदी व्याकरण (Hindi Grammar)

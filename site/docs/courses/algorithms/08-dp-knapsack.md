@@ -4,6 +4,7 @@ slug: /algorithms/08-dp-knapsack
 title: "Chapter 8: Dynamic Programming — Knapsack Problems"
 sidebar_label: "Chapter 8: Dynamic Programming — Knapsack Problems"
 sidebar_position: 8
+description: "Chapter 7: Dynamic Programming — Foundations — DP properties, recurrence design, tabulation | Next: Chapter 9: Dynamic Programming — Sequences — From"
 ---
 
 # Chapter 8: Dynamic Programming — Knapsack Problems

@@ -4,6 +4,7 @@ slug: /system-design/08-microservices-apis
 title: "Chapter 8: Microservices and API Design"
 sidebar_label: "Chapter 8: Microservices and API Design"
 sidebar_position: 8
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. A monolith is a single deployable unit containing all"
 ---
 
 # Chapter 8: Microservices and API Design

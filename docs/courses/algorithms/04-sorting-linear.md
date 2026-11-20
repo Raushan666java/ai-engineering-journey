@@ -1,3 +1,7 @@
+---
+description: "Chapter 3: Comparison-Based Sorting — The Ω(n log n) lower bound for comparison sorts | Next: Chapter 5: Divide and Conquer — Beyond sorting: applying"
+---
+
 # Chapter 4: Linear-Time Sorting
 
 > **Prerequisites:** [Chapter 3: Comparison-Based Sorting](./03-sorting-nlogn.md) — The Ω(n log n) lower bound for comparison sorts | **Next:** [Chapter 5: Divide and Conquer](./05-divide-conquer.md) — Beyond sorting: applying divide-and-conquer broadly

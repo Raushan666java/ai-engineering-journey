@@ -1,3 +1,7 @@
+---
+description: "A detector tells you where the objects are in a single frame. A tracker tells you which detection in frame t is the same object as a detection in frame"
+---
+
 # Multi-Object Tracking & Video Memory
 
 > Tracking is detection plus association. Detect every frame. Match this frame's detections to last frame's tracks by ID.

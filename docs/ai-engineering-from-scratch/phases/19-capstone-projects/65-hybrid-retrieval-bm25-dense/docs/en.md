@@ -1,3 +1,7 @@
+---
+description: "Lexical and semantic retrieval fail on opposite query distributions. Hybrid retrieval with reciprocal rank fusion does not interpolate, it votes - and the"
+---
+
 # Hybrid Retrieval with BM25 and Dense Embeddings
 
 > Lexical and semantic retrieval fail on opposite query distributions. Hybrid retrieval with reciprocal rank fusion does not interpolate, it votes - and the vote wins on every query class.

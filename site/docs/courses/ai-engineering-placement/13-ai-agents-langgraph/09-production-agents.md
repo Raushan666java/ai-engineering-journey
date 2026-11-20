@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/13-ai-agents-langgraph/09-production-agents
 title: "Production Agents"
 sidebar_label: "Production Agents"
 sidebar_position: 184
+description: "Production Agents: AI agents autonomously use tools to complete tasks. LangGraph builds stateful, multi-step agent workflows. This module covers agent"
 ---
 
 <!-- improved -->

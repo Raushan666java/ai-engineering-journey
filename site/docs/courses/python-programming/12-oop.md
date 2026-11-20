@@ -4,6 +4,7 @@ slug: /python-programming/12-oop
 title: "Chapter 12: Object-Oriented Programming"
 sidebar_label: "Chapter 12: Object-Oriented Programming"
 sidebar_position: 12
+description: "Without __slots__, each instance has a __dict__ attribute dictionary (significant memory overhead). With __slots__, attributes are stored in a fixed array:"
 ---
 
 # Chapter 12: Object-Oriented Programming

@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/Learning_How_to_Learn_CS title: 'Learning How to Learn — Computer Science (Single Page) 🔧' sidebar_label: 'Learning How to Learn —"
+---
+
 ﻿---
 slug: /learning-course/Learning_How_to_Learn_CS
 title: "Learning How to Learn — Computer Science (Single Page) 🔧"

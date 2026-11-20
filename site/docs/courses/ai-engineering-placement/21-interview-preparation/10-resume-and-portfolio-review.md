@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/10-resume-and-portfolio
 title: "Resume & Portfolio Review"
 sidebar_label: "Resume & Portfolio Review"
 sidebar_position: 260
+description: "Keywords: Include keywords from the job description naturally in your resume. Common keywords for AI/backend roles: Python, distributed systems, REST"
 ---
 
 <!-- improved -->

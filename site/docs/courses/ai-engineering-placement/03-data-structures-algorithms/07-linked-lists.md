@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/07-linked-lists
 title: "Linked Lists"
 sidebar_label: "Linked Lists"
 sidebar_position: 44
+description: "Stacks and queues are fundamental LIFO and FIFO data structures. They appear in countless problems from balanced parentheses to BFS traversal. Mastering"
 ---
 
 <!-- improved -->

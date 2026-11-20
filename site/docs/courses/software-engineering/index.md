@@ -1,3 +1,7 @@
+---
+description: "Software engineering is the systematic application of engineering principles to the design, development, operation, and maintenance of software systems"
+---
+
 ﻿---
 id: index
 slug: /software-engineering

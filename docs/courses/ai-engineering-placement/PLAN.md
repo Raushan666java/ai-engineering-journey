@@ -1,3 +1,7 @@
+---
+description: "Modules 00–25 cover Core CS through Data Engineering. See index.md."
+---
+
 # Syllabus Expansion Plan — AI Engineer Placement Course
 
 ## Status: GROWING from 26 → 33 modules

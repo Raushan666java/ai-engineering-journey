@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/06-memory
 title: "06-memory"
 sidebar_label: "06-memory"
 sidebar_position: 7
+description: "The messages list in the loop from Chapter 5 grows every iteration. For a long-running agent (many tool calls, or a long conversation), this causes two"
 ---
 
 ## Chapter 6: Memory — Short-Term, Long-Term, and Working Memory

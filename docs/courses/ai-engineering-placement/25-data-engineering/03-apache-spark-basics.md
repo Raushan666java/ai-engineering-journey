@@ -1,3 +1,7 @@
+---
+description: "Apache Spark is the de facto standard for distributed data processing in the AI industry. When ML training datasets exceed the memory of a single machine"
+---
+
 <!-- improved -->
 # 03 — Apache Spark Basics
 

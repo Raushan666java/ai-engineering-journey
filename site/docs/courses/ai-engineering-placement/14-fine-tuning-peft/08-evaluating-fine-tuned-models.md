@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/14-fine-tuning-peft/08-evaluating-fine-tuned-mod
 title: "Evaluating Fine-Tuned Models"
 sidebar_label: "Evaluating Fine-Tuned Models"
 sidebar_position: 195
+description: "Evaluating Fine-Tuned Models: Fine-tuning adapts foundation models to your specific domain. LoRA, QLoRA, and DPO make this affordable. This module covers"
 ---
 
 <!-- improved -->

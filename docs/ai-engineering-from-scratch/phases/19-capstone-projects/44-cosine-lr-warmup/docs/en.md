@@ -1,3 +1,7 @@
+---
+description: "The learning-rate schedule is the second most important decision after the loss function. AdamW with a cosine decay and a linear warmup is the modern"
+---
+
 # Cosine LR with Linear Warmup
 
 > The learning-rate schedule is the second most important decision after the loss function. AdamW with a cosine decay and a linear warmup is the modern default for language-model training because it lets the model see a small effective step size during the brittle first thousand updates, ramps up to a configured peak, and decays smoothly back toward zero. This lesson builds that schedule, plots the curve over training steps, logs gradient norms next to the schedule, and proves the schedule honors warmup, peak, and decay boundaries.

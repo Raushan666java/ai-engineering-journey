@@ -1,3 +1,7 @@
+---
+description: "Every AI project starts with data. You need to find datasets, download them, convert between formats, split them for training and evaluation, and version"
+---
+
 # Data Management
 
 > Data is the fuel. How you manage it determines how fast you go.

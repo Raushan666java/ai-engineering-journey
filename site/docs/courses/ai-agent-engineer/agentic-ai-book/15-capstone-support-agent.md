@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/15-capstone-support-agent
 title: "Part V — Applied"
 sidebar_label: "Part V — Applied"
 sidebar_position: 16
+description: "This chapter walks through building the ApexERP Support Agent end to end, combining every concept from the book into one real system. Treat this as your"
 ---
 
 # Part V — Applied

@@ -1,3 +1,7 @@
+---
+description: "Your gradient boosting model has a learning rate, number of trees, max depth, min samples per leaf, subsample ratio, and column sample ratio. That is six"
+---
+
 # Hyperparameter Tuning
 
 > Hyperparameters are the knobs you turn before training starts. Turning them well is the difference between a mediocre model and a great one.

@@ -4,6 +4,7 @@ slug: /mock-tests/02-nic-scientist-b
 title: "NIC Scientist B — Full-Length Mock Test"
 sidebar_label: "NIC Scientist B — Full-Length Mock Test"
 sidebar_position: 2
+description: "Topic Weightage: Data Structures (10), Algorithms (8), Operating Systems (8), DBMS (8), Computer Networks (7), Software Engineering (5), Computer"
 ---
 
 # NIC Scientist B — Full-Length Mock Test

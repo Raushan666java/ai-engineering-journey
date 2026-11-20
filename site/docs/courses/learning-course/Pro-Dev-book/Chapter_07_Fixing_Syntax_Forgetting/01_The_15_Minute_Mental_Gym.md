@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_07_Fixing_Syntax_Forgetting/01_The_1
 title: "🏋️‍♂️ The 15-Minute Mental Gym"
 sidebar_label: "🏋️‍♂️ The 15-Minute Mental Gym"
 sidebar_position: 1
+description: "The human brain is relentlessly efficient. It optimizes energy by pruning neural pathways that are not actively stressed. In the context of software"
 ---
 # 🏋️‍♂️ The 15-Minute Mental Gym
 

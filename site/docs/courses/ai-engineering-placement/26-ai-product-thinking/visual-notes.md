@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/26-ai-product-thinking/visual-notes
 title: "Visual Notes — From Model to Product"
 sidebar_label: "Visual Notes"
 sidebar_position: 322
+description: "One-line answer for interviews: 'Find the problem → define success → prototype → evaluate → ship → learn from users → iterate.'"
 ---
 
 # Visual Notes — From Model to Product

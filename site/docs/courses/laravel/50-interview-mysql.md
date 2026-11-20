@@ -4,6 +4,7 @@ slug: /laravel/50-interview-mysql
 title: "MySQL & Database Interview Q&A"
 sidebar_label: "MySQL & Database Interview Q&A"
 sidebar_position: 50
+description: "Ace your database interviews with this deep collection of MySQL and Laravel database-layer questions. Each answer includes runnable SQL or code examples"
 ---
 
 # MySQL & Database Interview Q&A

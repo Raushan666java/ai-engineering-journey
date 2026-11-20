@@ -4,6 +4,7 @@ slug: /banking-technology/02-digital-payment-systems
 title: "Chapter 02: Digital Payment Systems"
 sidebar_label: "Chapter 02: Digital Payment Systems"
 sidebar_position: 2
+description: "India's digital payment ecosystem has undergone a paradigm shift since 2016, driven by the Unified Payments Interface (UPI), regulatory support from RBI"
 ---
 
 # Chapter 02: Digital Payment Systems

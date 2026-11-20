@@ -1,3 +1,7 @@
+---
+description: "Lessons, translations, fixes, outputs — all welcome. One contribution per pull request keeps reviews fast and lets contributor counts and credit work"
+---
+
 # Contributing
 
 Lessons, translations, fixes, outputs — all welcome. One contribution per pull

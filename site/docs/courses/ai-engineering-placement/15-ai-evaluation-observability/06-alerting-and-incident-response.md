@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/15-ai-evaluation-observability/06-alerting-and-i
 title: "Alerting & Incident Response"
 sidebar_label: "Alerting & Incident Response"
 sidebar_position: 203
+description: "Alerting & Incident Response: You cannot improve what you cannot measure. Evaluation metrics, LLM-as-judge, and observability tools help you monitor and"
 ---
 
 <!-- improved -->

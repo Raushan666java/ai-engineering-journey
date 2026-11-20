@@ -4,6 +4,7 @@ slug: /general-aptitude/06-advanced-reasoning
 title: "Chapter 6: Advanced Reasoning"
 sidebar_label: "Chapter 6: Advanced Reasoning"
 sidebar_position: 6
+description: "Statement: 'The government should invest more in renewable energy.' Assumption: 'Renewable energy currently receives insufficient investment.' (If current"
 ---
 
 # Chapter 6: Advanced Reasoning

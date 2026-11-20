@@ -1,3 +1,7 @@
+---
+description: "Problem: Write a function that prints numbers from 1 to n. For multiples of 3, print 'Fizz'; for multiples of 5, print 'Buzz'; for multiples of both"
+---
+
 # Chapter 16: Wipro NLTH, HCL, Tech Mahindra — Company-Specific Question Bank
 
 ## Learning Objectives

@@ -1,3 +1,7 @@
+---
+description: 'In C, a string is a sequence of characters terminated by a null character ('' 0'', ASCII value 0). There is no dedicated string type - strings are stored in'
+---
+
 # Chapter 7: Strings
 
 > **Previous:** [Arrays](./06-arrays.md) | **Next:** [Functions](./08-functions.md)

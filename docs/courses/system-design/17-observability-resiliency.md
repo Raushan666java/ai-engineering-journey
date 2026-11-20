@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Observability is the ability to understand a system's"
+---
+
 # Chapter 17: Observability and Resiliency Patterns
 > **Previous:** [16 Api Gateways Cqrs](./16-api-gateways-cqrs.md) | **Next:** [18 Case Studies Classic](./18-case-studies-classic.md)
 

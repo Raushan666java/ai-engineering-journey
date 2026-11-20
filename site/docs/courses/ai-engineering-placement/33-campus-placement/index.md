@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement
 title: "33 — Campus Placement & Aptitude"
 sidebar_label: "33 — Campus Placement & Aptitude"
 sidebar_position: 390
+description: "The campus-specific route: aptitude rounds, group discussions, and the coding bar at mass recruiters."
 ---
 
 # 33 — Campus Placement & Aptitude

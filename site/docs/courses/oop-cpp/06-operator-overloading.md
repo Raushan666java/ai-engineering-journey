@@ -4,6 +4,7 @@ slug: /oop-cpp/06-operator-overloading
 title: "Chapter 6: Operator Overloading"
 sidebar_label: "Chapter 6: Operator Overloading"
 sidebar_position: 6
+description: "One-Sentence Takeaway: Operator overloading extends C++ expression syntax to user-defined types while preserving the language's fixed precedence"
 ---
 
 # Chapter 6: Operator Overloading

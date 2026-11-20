@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming/08-oop-in-python
 title: "OOP in Python — Classes, Inheritance, Polymorphism, Dunder Methods"
 sidebar_label: "OOP in Python — Classes, Inheritance, Polymorphism, Dunder Methods"
 sidebar_position: 17
+description: "OOP in Python — Classes, Inheritance, Polymorphism, Dunder Methods: Python is the lingua franca of AI engineering. Mastering its syntax, data structures"
 ---
 
 <!-- improved -->

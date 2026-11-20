@@ -4,6 +4,7 @@ slug: /theory-of-computation/03-nfa
 title: "Chapter 3: Nondeterministic Finite Automata"
 sidebar_label: "Chapter 3: Nondeterministic Finite Automata"
 sidebar_position: 3
+description: "In a DFA, for each state and symbol there is exactly one next state. In an NFA (nondeterministic finite automaton), from a given state and symbol, there"
 ---
 
 # Chapter 3: Nondeterministic Finite Automata

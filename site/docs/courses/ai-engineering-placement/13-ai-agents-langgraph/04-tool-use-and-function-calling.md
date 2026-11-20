@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/13-ai-agents-langgraph/04-tool-use-and-function-
 title: "Tool Use and Function Calling"
 sidebar_label: "Tool Use and Function Calling"
 sidebar_position: 179
+description: "Tool Use and Function Calling: AI agents autonomously use tools to complete tasks. LangGraph builds stateful, multi-step agent workflows. This module"
 ---
 
 <!-- improved -->

@@ -1,3 +1,7 @@
+---
+description: "Every vision task that ships reduces to image classification at some level. Detection classifies regions. Segmentation classifies pixels. Retrieval ranks"
+---
+
 # Image Classification
 
 > A classifier is a function from pixels to a probability distribution over classes. Everything else is plumbing.

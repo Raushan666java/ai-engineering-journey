@@ -4,6 +4,7 @@ slug: /learning-how-to-learn-practical/ch-06-learning-from-code
 title: "Chapter 6: Learning From Any Resource"
 sidebar_label: "Chapter 6: Learning From Any Resource"
 sidebar_position: 7
+description: "Whether you're learning from a textbook, a video course, a lecture, or a codebase, the same fundamental process applies. The SQ3R method (Survey"
 ---
 
 # Chapter 6: Learning From Any Resource

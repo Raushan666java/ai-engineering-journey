@@ -1,3 +1,7 @@
+---
+description: "Imagine you have a printed English dictionary with 100,000 words. You want to find the word 'Binary.' You do not flip page by page from the start — that"
+---
+
 # Chapter 9: Binary Search Trees
 
 > **Previous:** [Chapter 8: Binary Trees](./08-binary-trees.md) | **Next:** [Heaps](./10-heaps.md)

@@ -1,3 +1,7 @@
+---
+description: "Sum Rule (Rule of Disjunction). If task A can be done in $m$ ways and task B in $n$ ways, and the two tasks cannot be done simultaneously, then there are"
+---
+
 # Chapter 5: Combinatorics
 
 > **Previous:** [Chapter 4: Proofs](./04-proofs.md) | **Next:** [Chapter 6: Recurrence Relations](./06-recurrence.md)

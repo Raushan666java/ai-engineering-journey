@@ -1,3 +1,7 @@
+---
+description: "AI research moves fast. New papers appear on arXiv daily — over 200 per day in machine learning alone. The ability to read, understand, and critically"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Reading Research Papers

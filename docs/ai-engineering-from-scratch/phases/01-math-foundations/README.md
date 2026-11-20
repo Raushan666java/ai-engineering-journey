@@ -1,3 +1,7 @@
+---
+description: "The intuition behind every AI algorithm, through code — not textbooks."
+---
+
 # Phase 1: Math Foundations
 
 > The intuition behind every AI algorithm, through code — not textbooks.

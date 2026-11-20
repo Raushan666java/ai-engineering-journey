@@ -4,6 +4,7 @@ slug: /professional-knowledge/03-operating-systems
 title: "Chapter 3: Operating Systems — Exam Quick Revision"
 sidebar_label: "Chapter 3: Operating Systems — Exam Quick Revision"
 sidebar_position: 3
+description: "SCAN (moving upward, to 199): Order: 37, 14, 67, 98, 122, 124, 183 Wait, moving upward first: 53 → 65 → 67 → 98 → 122 → 124 → 183 → 199 → then back: 37 →"
 ---
 
 # Chapter 3: Operating Systems — Exam Quick Revision

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design/14-design-file-upload-system
 title: "Design File Upload System — Direct Upload, Presigned URLs, CDN"
 sidebar_label: "Design File Upload System — Direct Upload, Presigned URLs, CDN"
 sidebar_position: 109
+description: "File upload systems are fundamental to modern applications — profile pictures, documents, videos, and ML datasets. A well-designed system handles large"
 ---
 
 <!-- improved -->

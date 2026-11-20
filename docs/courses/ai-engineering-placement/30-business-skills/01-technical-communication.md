@@ -1,3 +1,7 @@
+---
+description: "Technical communication is the single most underrated skill in engineering. A brilliant design that nobody understands is useless. An average design with"
+---
+
 <!-- improved -->
 ﻿<!-- Clear Language: Keep sentences under 50 words -->
 # 01 — Technical Communication

@@ -1,3 +1,7 @@
+---
+description: "The three frontier providers converged on the same tool-call loop in 2024 and then diverged on everything else. OpenAI uses tools and tool_calls"
+---
+
 # Function Calling Deep Dive — OpenAI, Anthropic, Gemini
 
 > The three frontier providers converged on the same tool-call loop in 2024 and then diverged on everything else. OpenAI uses `tools` and `tool_calls`. Anthropic uses `tool_use` and `tool_result` blocks. Gemini uses `functionDeclarations` and unique-id correlation. This lesson diffs the three side by side so code that ships on one provider does not break when you port it.

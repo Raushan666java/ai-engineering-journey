@@ -1,3 +1,7 @@
+---
+description: "The preprocessor runs as the first stage of compilation. It processes directives — lines beginning with # — before the compiler sees the code. It is a"
+---
+
 # Chapter 13: The Preprocessor
 
 > **Previous:** [File Handling](./12-file-handling.md) | **Next:** [Recursion](./14-recursion.md)

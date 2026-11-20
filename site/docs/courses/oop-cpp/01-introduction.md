@@ -4,6 +4,7 @@ slug: /oop-cpp/01-introduction
 title: "Chapter 1: Introduction to Object-Oriented Programming"
 sidebar_label: "Chapter 1: Introduction to Object-Oriented Programming"
 sidebar_position: 1
+description: "One-Sentence Takeaway: OOP is a programming paradigm that organises code around objects→bundles of data (attributes) and behaviour (methods)→rather than"
 ---
 
 # Chapter 1: Introduction to Object-Oriented Programming

@@ -4,6 +4,7 @@ slug: /geeta-darshan/05-karma-sanyasa-yoga
 title: "अध्याय ५: कर्म संन्यास योग — Tyag nahin, samadrishti chahiye"
 sidebar_label: "अध्याय ५: कर्म संन्यास योग — Tyag nahin, samadrishti chahiye"
 sidebar_position: 6
+description: "'Tyag ka rog sabse gehri bimari hai — kyunki woh sant banne ke naam par jeevan se bhaagna sikhata hai. Krishna nahin chahte tum ghar chhodo; woh chahte"
 ---
 
 # अध्याय ५: कर्म संन्यास योग — Tyag nahin, samadrishti chahiye

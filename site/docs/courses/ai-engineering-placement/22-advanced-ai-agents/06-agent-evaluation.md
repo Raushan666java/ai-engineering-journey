@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/06-agent-evaluation
 title: "Agent Evaluation"
 sidebar_label: "Agent Evaluation"
 sidebar_position: 277
+description: "Agent Evaluation: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module covers"
 ---
 
 <!-- improved -->

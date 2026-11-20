@@ -4,6 +4,7 @@ slug: /laravel/52-interview-css
 title: "CSS Interview Q&A"
 sidebar_label: "CSS Interview Q&A"
 sidebar_position: 52
+description: "A curated collection of CSS interview questions covering fundamental concepts, layout systems, responsive design, animations, modern frameworks, and"
 ---
 
 # CSS Interview Q&A

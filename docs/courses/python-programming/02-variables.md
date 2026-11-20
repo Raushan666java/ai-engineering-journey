@@ -1,3 +1,7 @@
+---
+description: "A variable is a name that references an object in memory. Python variables are dynamically typed: the same name can refer to objects of different types"
+---
+
 # Chapter 2: Variables, Types, and Operators
 
 

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/23-trending-aiml-platforms/05-open-source-llm-la
 title: "23.05 — Open Source LLM Landscape"
 sidebar_label: "23.05 — Open Source LLM Landscape"
 sidebar_position: 293
+description: "The open-source LLM landscape has transformed dramatically. By mid-2026, open-weight models rival or surpass proprietary alternatives on key benchmarks —"
 ---
 
 <!-- improved -->

@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to explain who real attackers are (nation-states, crime syndicates, insiders), describe how telecom networks get"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Ethical Hacking & Security Case Studies (India & Global)

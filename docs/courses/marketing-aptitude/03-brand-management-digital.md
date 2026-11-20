@@ -1,3 +1,7 @@
+---
+description: "A brand is a name, term, sign, symbol, or design — or a combination of these — intended to identify the goods or services of one seller and differentiate"
+---
+
 # Chapter 3: Brand Management and Digital Marketing
 
 ## Learning Objectives

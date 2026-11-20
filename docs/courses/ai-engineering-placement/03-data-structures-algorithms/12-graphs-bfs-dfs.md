@@ -1,3 +1,7 @@
+---
+description: "Dynamic programming solves complex problems by breaking them into overlapping subproblems. Recognizing DP patterns — optimal substructure and overlapping"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Graphs BFS DFS

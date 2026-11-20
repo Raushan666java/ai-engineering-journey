@@ -4,6 +4,7 @@ slug: /banking-technology/01-core-banking-solutions
 title: "Chapter 01: Core Banking Solutions (CBS)"
 sidebar_label: "Chapter 01: Core Banking Solutions (CBS)"
 sidebar_position: 1
+description: "Core Banking Solution (CBS) is the centralized software platform that enables customers to operate their accounts from any branch of the bank, regardless"
 ---
 
 # Chapter 01: Core Banking Solutions (CBS)

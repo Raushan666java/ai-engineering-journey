@@ -1,3 +1,7 @@
+---
+description: "This is not a theoretical curiosity. It means a deep linear network literally cannot learn XOR, cannot classify a spiral dataset, cannot recognize a face"
+---
+
 # Activation Functions
 
 > Without nonlinearity, your 100-layer network is a fancy matrix multiply. Activations are the gates that let neural networks think in curves.

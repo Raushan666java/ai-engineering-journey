@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: SQL is the universal declarative language for relational databases -- master DDL for structure, DML for data, and constraints for"
+---
+
 # Chapter 4: SQL Basics
 
 > **Previous:** [Chapter 3: The Relational Model](./03-relational-model.md) | **Next:** [Chapter 5: SQL Joins and Subqueries](./05-sql-joins.md)

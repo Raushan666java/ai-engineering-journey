@@ -1,3 +1,7 @@
+---
+description: "Solution: Hardwired control uses sequential logic without ROM access delays, making it faster. Flexibility and modifiability favor microprogrammed control."
+---
+
 # CPU Organization
 
 ## Learning Objectives

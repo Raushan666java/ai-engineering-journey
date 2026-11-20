@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: Joins are the heart of relational querying → mastering INNER, OUTER, SELF, NATURAL, SEMI, ANTI, and subqueries lets you combine any"
+---
+
 # Chapter 5: SQL Joins and Subqueries
 
 > **Previous:** [Chapter 4: SQL Basics](./04-sql-basics.md) | **Next:** [Chapter 6: Advanced SQL](./06-sql-advanced.md)

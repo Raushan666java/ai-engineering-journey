@@ -1,3 +1,7 @@
+---
+description: "Use this template when creating a new lesson. Copy the folder structure and fill in the content."
+---
+
 # Lesson Template
 
 Use this template when creating a new lesson. Copy the folder structure and fill in the content.

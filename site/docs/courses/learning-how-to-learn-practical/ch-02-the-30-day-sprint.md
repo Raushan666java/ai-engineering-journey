@@ -4,6 +4,7 @@ slug: /learning-how-to-learn-practical/ch-02-the-30-day-sprint
 title: "Chapter 2: The 30-Day Sprint"
 sidebar_label: "Chapter 2: The 30-Day Sprint"
 sidebar_position: 3
+description: "A 30-day sprint is the perfect timebox for mastering a new topic. It's long enough to build real skill but short enough to maintain intensity. Every"
 ---
 
 # Chapter 2: The 30-Day Sprint

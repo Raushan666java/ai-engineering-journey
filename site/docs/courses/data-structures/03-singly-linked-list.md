@@ -4,6 +4,7 @@ slug: /data-structures/03-singly-linked-list
 title: "Chapter 3: Singly Linked List"
 sidebar_label: "Chapter 3: Singly Linked List"
 sidebar_position: 3
+description: "Imagine a train. Each car carries cargo (data) and is coupled to the next car via a single coupler (pointer). The engine is the head. To add a new car at"
 ---
 
 # Chapter 3: Singly Linked List

@@ -1,3 +1,7 @@
+---
+description: "You have a dataset. You pick an algorithm. You train it. The results are mediocre. You try a fancier algorithm. Still mediocre. You spend a week tuning"
+---
+
 # Feature Engineering & Selection
 
 > A good feature is worth a thousand data points.

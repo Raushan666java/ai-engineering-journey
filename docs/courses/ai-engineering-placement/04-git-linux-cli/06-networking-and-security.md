@@ -1,3 +1,7 @@
+---
+description: "DevOps automation — CI/CD, GitHub Actions, pre-commit hooks — ensures code quality and rapid deployment. AI engineers use these to automate model"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # DevOps Automation

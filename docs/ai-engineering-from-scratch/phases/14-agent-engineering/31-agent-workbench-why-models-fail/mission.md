@@ -1,3 +1,7 @@
+---
+description: "Run the same small repo task twice, once prompt-only and once with the seven workbench surfaces wired in, and emit a failure-mode report that maps each"
+---
+
 # Mission - Agent Workbench: Why Capable Models Still Fail
 
 ## Goal

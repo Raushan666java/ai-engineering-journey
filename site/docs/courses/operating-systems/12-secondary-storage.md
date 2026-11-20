@@ -4,6 +4,7 @@ slug: /operating-systems/12-secondary-storage
 title: "Chapter 12: Secondary Storage"
 sidebar_label: "Chapter 12: Secondary Storage"
 sidebar_position: 12
+description: "A[Disk Structure] --> B[Disk Scheduling] B --> C[FCFS / SSTF / SCAN / C-SCAN / LOOK / C-LOOK] E --> F[Swap Space & Stable Storage] F --> G[Real-World I/O"
 ---
 
 # Chapter 12: Secondary Storage

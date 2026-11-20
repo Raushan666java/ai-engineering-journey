@@ -1,3 +1,7 @@
+---
+description: "System Design is the discipline of defining the architecture, components, modules, interfaces, and data for large-scale distributed systems. This course"
+---
+
 ﻿---
 id: index
 slug: /system-design

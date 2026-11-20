@@ -4,6 +4,7 @@ slug: /interview-preparation/14-company-google-swe
 title: "Chapter 14: Google SWE — Company-Specific Question Bank"
 sidebar_label: "Chapter 14: Google SWE — Company-Specific Question Bank"
 sidebar_position: 14
+description: "Problem: Given two sorted arrays nums1 and nums2 of sizes m and n, return the median of the two sorted arrays. Overall runtime complexity should be"
 ---
 
 # Chapter 14: Google SWE — Company-Specific Question Bank

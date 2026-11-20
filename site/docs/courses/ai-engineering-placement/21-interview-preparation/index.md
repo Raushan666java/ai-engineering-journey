@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation
 title: "21 — Interview Preparation"
 sidebar_label: "21 — Interview Preparation"
 sidebar_position: 270
+description: "Mock interviews, company-specific bars, salary negotiation and the behavioural answers that decide senior-level loops."
 ---
 
 # 21 — Interview Preparation

@@ -1,3 +1,7 @@
+---
+description: "slug: /python-programming title: 'Python Programming — A Comprehensive University Textbook' sidebar_label: 'Python Programming — A Comprehensive"
+---
+
 ﻿---
 id: index
 slug: /python-programming

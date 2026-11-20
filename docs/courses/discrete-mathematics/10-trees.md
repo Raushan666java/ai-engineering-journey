@@ -1,3 +1,7 @@
+---
+description: 'One-Sentence Takeaway: Binary trees limit branching to at most two children per node; BSTs enable $O( log n)$ search, insert, and delete operations when'
+---
+
 # Chapter 10: Trees
 
 > **Previous:** [Chapter 9: Graph Theory](./09-graph-theory.md) | **Next:** [Chapter 11: Algebra](./11-algebra.md)

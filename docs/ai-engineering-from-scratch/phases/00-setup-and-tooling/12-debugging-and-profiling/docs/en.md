@@ -1,3 +1,7 @@
+---
+description: 'AI code fails differently than regular code. A web app crashes with a stack trace. A misconfigured training loop runs for 8 hours, burns AI code fails differently than regular code. A web app crashes with a stack trace. A misconfigured training loop runs for 8 hours, burns \$200 in GPU00 in GPU'
+---
+
 # Debugging and Profiling
 
 > The worst AI bugs don't crash. They train silently on garbage and report a beautiful loss curve.

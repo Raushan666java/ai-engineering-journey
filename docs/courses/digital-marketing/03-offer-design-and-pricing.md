@@ -1,3 +1,7 @@
+---
+description: "The missing component in most freelance offers is the guarantee, followed closely by scope. Both omissions come from the same instinct, which is to avoid"
+---
+
 # Chapter 3 — Offer Design and Pricing
 
 ## Learning Objectives

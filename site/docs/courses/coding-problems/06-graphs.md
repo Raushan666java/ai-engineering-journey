@@ -4,6 +4,7 @@ slug: /coding-problems/06-graphs
 title: "Chapter 06: Graphs"
 sidebar_label: "Chapter 06: Graphs"
 sidebar_position: 6
+description: "Graph problems are among the most challenging interview topics. They test your ability to model relationships, understand traversal strategies, and apply"
 ---
 
 # Chapter 06: Graphs

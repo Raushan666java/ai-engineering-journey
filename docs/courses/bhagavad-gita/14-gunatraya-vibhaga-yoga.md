@@ -1,3 +1,7 @@
+---
+description: "The battlefield has become a classroom. In the thirteenth chapter Krishna gave Arjuna the map of the field, kshetra, and its knower, kshetrajna. Now he"
+---
+
 # Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather
 
 > "Stop praying for good weather. You are not the weather — you are the sky. Watch the clouds, and they will pass."

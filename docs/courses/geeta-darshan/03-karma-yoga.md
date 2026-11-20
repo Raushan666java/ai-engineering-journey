@@ -1,3 +1,7 @@
+---
+description: "'Nishkama karma ka matlab yeh nahin ki tum karm se door ho jao. Nishkama karma ka matlab hai: karm mein poore do, par andar se aazaad raho. Yahi sabse"
+---
+
 # अध्याय ३: कर्म योग — Karma revolution hai, duty nahin
 
 > **"Nishkama karma ka matlab yeh nahin ki tum karm se door ho jao. Nishkama karma ka matlab hai: karm mein poore do, par andar se aazaad raho. Yahi sabse badi kranti hai."**

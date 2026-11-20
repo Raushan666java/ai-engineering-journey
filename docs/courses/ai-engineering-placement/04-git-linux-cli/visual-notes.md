@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'Git is a snapshot graph; I move changes from the working tree through the index to commits, and merge/rebase to integrate"
+---
+
 # Visual Notes — Git & Linux CLI
 
 > One diagram, the full picture. Glance at this before reading the chapters and again before interviews.

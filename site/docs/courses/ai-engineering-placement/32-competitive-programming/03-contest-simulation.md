@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/32-competitive-programming/03-contest-simulation
 title: "Contest Simulation & Optimization"
 sidebar_label: "Contest Simulation & Optimization"
 sidebar_position: 359
+description: "Competitive programming contests test more than algorithm knowledge. They test time management, problem selection, debugging under pressure, and"
 ---
 
 <!-- improved -->

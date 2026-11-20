@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: Hive provides SQL access to HDFS data but is being outpaced by Spark SQL (for batch) and Presto/Trino (for interactive queries) ?"
+---
+
 # Chapter 5: Big Data Ecosystem Tools
 
 > **Previous:** [Chapter 4: Spark MLlib](./04-spark-mllib.md) | **Next:** None (Last Chapter)

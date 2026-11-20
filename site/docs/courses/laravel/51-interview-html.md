@@ -4,6 +4,7 @@ slug: /laravel/51-interview-html
 title: "HTML Interview Q&A"
 sidebar_label: "HTML Interview Q&A"
 sidebar_position: 51
+description: "This chapter covers the most frequently asked HTML interview questions, organized by topic. Each question includes a detailed answer with valid HTML5"
 ---
 
 # HTML Interview Q&A

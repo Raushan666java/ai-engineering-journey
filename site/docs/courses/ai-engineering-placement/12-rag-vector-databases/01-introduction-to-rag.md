@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/01-introduction-to-rag
 title: "Introduction to RAG"
 sidebar_label: "Introduction to RAG"
 sidebar_position: 158
+description: "Retrieval-Augmented Generation (RAG) is the most practical technique for making LLMs useful with private, domain-specific, or up-to-date knowledge"
 ---
 
 <!-- improved -->

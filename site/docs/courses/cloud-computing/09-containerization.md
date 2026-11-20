@@ -4,6 +4,7 @@ slug: /cloud-computing/09-containerization
 title: "Chapter 9: Containerization and Orchestration"
 sidebar_label: "Chapter 9: Containerization and Orchestration"
 sidebar_position: 9
+description: "A[Containerization] --> B[Docker Images] A --> C[Container Registries ECR] D --> F[EKS / Kubernetes] F --> H[Pods, Services, Deployments] H -->"
 ---
 
 # Chapter 9: Containerization and Orchestration

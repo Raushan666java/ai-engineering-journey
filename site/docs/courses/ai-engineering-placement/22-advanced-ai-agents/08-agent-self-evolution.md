@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/08-agent-self-evolution
 title: "Agent Self-Evolution"
 sidebar_label: "Agent Self-Evolution"
 sidebar_position: 279
+description: "Agent Self-Evolution: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module covers"
 ---
 
 <!-- improved -->

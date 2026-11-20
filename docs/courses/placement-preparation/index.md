@@ -1,3 +1,7 @@
+---
+description: "This course bridges the gap between theoretical knowledge and placement success. It covers every stage of the placement process — from resume building and"
+---
+
 # Placement Preparation
 
 ## Course Overview

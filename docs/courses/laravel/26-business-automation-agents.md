@@ -1,3 +1,7 @@
+---
+description: "Business automation replaces manual, repetitive processes with software that executes without human intervention. Traditional automation handles"
+---
+
 # Chapter 26: Business Automation Agents
 
 > **Previous:** [Multi-Agent Systems](./25-multi-agent-systems.md) | **Next:** [Healthcare](./27-healthcare.md)

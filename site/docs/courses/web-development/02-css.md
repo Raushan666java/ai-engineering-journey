@@ -4,6 +4,7 @@ slug: /web-development/02-css
 title: "Chapter 2 → CSS3"
 sidebar_label: "Chapter 2 → CSS3"
 sidebar_position: 2
+description: "By default, width and height apply only to the content box. Setting box-sizing: border-box includes padding and border in the specified dimensions, which"
 ---
 
 # Chapter 2 → CSS3

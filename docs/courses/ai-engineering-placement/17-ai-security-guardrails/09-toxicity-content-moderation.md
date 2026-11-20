@@ -1,3 +1,7 @@
+---
+description: "AI applications serve millions of users daily. Without robust content moderation, they risk generating toxic, harmful, or unsafe content that damages"
+---
+
 <!-- improved -->
 ﻿<!-- Clear Language: Keep sentences under 50 words -->
 # Toxicity & Content Moderation

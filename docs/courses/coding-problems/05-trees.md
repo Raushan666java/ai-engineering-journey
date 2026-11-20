@@ -1,3 +1,7 @@
+---
+description: "Tree problems are among the most common interview topics. They test your understanding of recursion, BFS/DFS traversal, and data structure design"
+---
+
 # Chapter 05: Trees
 
 > Tree problems are among the most common interview topics. They test your understanding of recursion, BFS/DFS traversal, and data structure design. Mastering trees is essential for every software engineer.

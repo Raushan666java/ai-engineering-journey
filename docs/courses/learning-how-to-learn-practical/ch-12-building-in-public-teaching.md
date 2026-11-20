@@ -1,3 +1,7 @@
+---
+description: "Teaching is the highest form of learning. When you prepare to teach, your brain organizes knowledge differently — into clear, structured, explainable"
+---
+
 # Chapter 12: Building in Public & Teaching
 
 > ⏱ **1.5 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**

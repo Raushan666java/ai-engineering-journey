@@ -1,3 +1,7 @@
+---
+description: "You have a working mini framework. Linear layers, ReLU, dropout, batch norm, Adam, a DataLoader, a training loop. It trains a 4-layer network on a circle"
+---
+
 # Introduction to PyTorch
 
 > You built the engine from pistons and crankshafts. Now learn the one everyone actually drives.

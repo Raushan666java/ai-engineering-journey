@@ -4,6 +4,7 @@ slug: /ai-powered-learning/ch01-the-ai-learning-system
 title: "Chapter 1: The AI Learning System"
 sidebar_label: "Chapter 1: The AI Learning System"
 sidebar_position: 1
+description: "You work a 10-to-6 job, you spend about four hours a day commuting, and you are preparing for software and AI engineering placements. This chapter builds"
 ---
 
 # Chapter 1: The AI Learning System

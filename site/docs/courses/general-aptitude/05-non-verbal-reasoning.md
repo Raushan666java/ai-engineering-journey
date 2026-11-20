@@ -4,6 +4,7 @@ slug: /general-aptitude/05-non-verbal-reasoning
 title: "Chapter 5: Non-Verbal Reasoning"
 sidebar_label: "Chapter 5: Non-Verbal Reasoning"
 sidebar_position: 5
+description: "A: Large square with small circle inside top-left B: Large circle with small square inside top-left (shapes swapped) C: Large triangle with small star"
 ---
 
 # Chapter 5: Non-Verbal Reasoning

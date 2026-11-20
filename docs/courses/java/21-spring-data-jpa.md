@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: For read-only queries, use projections or DTO-based queries to avoid loading entire entities. This significantly reduces memory usage for large"
+---
+
 > **Previous:** [JPA/Hibernate](./20-jpa-hibernate.md) | **Next:** [Migrations](./22-migrations.md)
 
 # Spring Data JPA

@@ -4,6 +4,7 @@ slug: /devops/08-k8s-advanced
 title: "Chapter 8: Advanced Kubernetes"
 sidebar_label: "Chapter 8: Advanced Kubernetes"
 sidebar_position: 15
+description: "Kubernetes resource quotas prevent resource starvation across namespaces. The following implementation calculates optimal resource allocations and"
 ---
 
 # Chapter 8: Advanced Kubernetes

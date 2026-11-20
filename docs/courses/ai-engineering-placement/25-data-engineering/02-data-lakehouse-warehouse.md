@@ -1,3 +1,7 @@
+---
+description: "Choosing the right storage architecture is one of the most consequential decisions an AI engineer makes. Data lakes store raw data in native formats"
+---
+
 <!-- improved -->
 # 02 — Data Lakehouse & Warehouse
 

@@ -1,9 +1,10 @@
 ---
 id: 30-gate-2018-solved
 slug: /gate-cs-preparation/30-gate-2018-solved
-title: "30 Gate 2018 Solved"
-sidebar_label: "30 Gate 2018 Solved"
+title: "30-gate-2018-solved"
+sidebar_label: "30-gate-2018-solved"
 sidebar_position: 27
+description: "If 7x + 3y = 31 and 3x + 7y = 29, what is x + y?"
 ---
 
 ﻿# GATE CS 2018 Solved Paper
@@ -54,7 +55,6 @@ sidebar_position: 27
 ## Section A: General Aptitude (15 marks)
 
 ### Q1 [1 Mark] — Numerical Ability
-
 If 7x + 3y = 31 and 3x + 7y = 29, what is x + y?
 
 (A) 4  
@@ -80,7 +80,6 @@ console.log(sumVariables(7, 3, 31, 3, 7, 29)); // 6
 </details>
 
 ### Q2 [1 Mark] — Numerical Ability
-
 The value of (0.1 × 0.01 × 0.001) / (0.2 × 0.002 × 0.0002) is:
 
 (A) 1.25  
@@ -94,18 +93,17 @@ The value of (0.1 × 0.01 × 0.001) / (0.2 × 0.002 × 0.0002) is:
 **Answer:** (D) 1250
 
 **Explanation:**
-Numerator = 10âÂ�»¹ × 10âÂ�»² × 10âÂ�»³ = 10âÂ�»âÂ�¶.
-Denominator = 2×10âÂ�»¹ × 2×10âÂ�»³ × 2×10âÂ�»âÂ�´ = 8 × 10âÂ�»âÂ�¸.
-Result = 10âÂ�»âÂ�¶ / (8×10âÂ�»âÂ�¸) = 10²/8 = 100/8 = 12.5.
+Numerator = 10⁻¹ × 10⁻² × 10⁻³ = 10⁻⁶.
+Denominator = 2×10⁻¹ × 2×10⁻³ × 2×10⁻⁴ = 8 × 10⁻⁸.
+Result = 10⁻⁶ / (8×10⁻⁸) = 10²/8 = 100/8 = 12.5.
 
-Hmm, 12.5. Let me recalculate: (0.1×0.01×0.001) = 0.000001 = 10âÂ�»âÂ�¶.
-(0.2×0.002×0.0002) = 2×10âÂ�»¹ × 2×10âÂ�»³ × 2×10âÂ�»âÂ�´ = 8×10âÂ�»âÂ�¸.
-10âÂ�»âÂ�¶/8×10âÂ�»âÂ�¸ = (10âÂ�»âÂ�¶âÂ�ºâÂ�¸)/8 = 10²/8 = 100/8 = 12.5. Answer = (B) 12.5.
+Hmm, 12.5. Let me recalculate: (0.1×0.01×0.001) = 0.000001 = 10⁻⁶.
+(0.2×0.002×0.0002) = 2×10⁻¹ × 2×10⁻³ × 2×10⁻⁴ = 8×10⁻⁸.
+10⁻⁶/8×10⁻⁸ = (10⁻⁶⁺⁸)/8 = 10²/8 = 100/8 = 12.5. Answer = (B) 12.5.
 
 </details>
 
 ### Q3 [1 Mark] — Verbal Ability
-
 Choose the CORRECTLY punctuated sentence:
 
 (A) Where are you going?  
@@ -124,7 +122,6 @@ A question must end with a question mark.
 </details>
 
 ### Q4 [1 Mark] — Logical Reasoning
-
 If APPLE is coded as 50, MANGO is coded as 57, what is ORANGE coded as?
 
 (A) 60  
@@ -204,7 +201,6 @@ Answer = (A) 60. I'll explain the pattern as sum of alphabet positions.
 </details>
 
 ### Q5 [1 Mark] — Numerical Ability
-
 The difference between the largest 4-digit number and smallest 4-digit number using digits 5,6,7,8 (without repetition) is:
 
 (A) 3087  
@@ -223,7 +219,6 @@ Largest = 8765, Smallest = 5678. Difference = 8765 - 5678 = 3087.
 </details>
 
 ### Q6 [2 Marks] — Numerical Ability
-
 A sum of money becomes 3 times in 10 years at simple interest. The rate of interest is:
 
 (A) 10%  
@@ -249,7 +244,6 @@ console.log(siRate(3, 10)); // 20%
 </details>
 
 ### Q7 [2 Marks] — Data Interpretation
-
 The median of 2, 5, 3, 8, 4, 7, 6 is:
 
 (A) 4  
@@ -268,7 +262,6 @@ Sorted: 2, 3, 4, 5, 6, 7, 8. n=7 (odd). Median = 4th term = 5.
 </details>
 
 ### Q8 [2 Marks] — Logical Reasoning
-
 Six friends sit in a circle. A is between B and C. D is opposite A. E is to the immediate right of A. Who is to the left of C?
 
 (A) B  
@@ -289,7 +282,6 @@ Position: B-A-E-?-D-?-C-B. So left of C is the person between D and C. That must
 </details>
 
 ### Q9 [2 Marks] — Numerical Ability
-
 The speed of a boat in still water is 15 km/h. It takes 6 hours to go 72 km downstream and return. The stream speed is:
 
 (A) 3 km/h  
@@ -389,7 +381,6 @@ But I initially said the boat speed is 15 km/h. Let me change the question to us
 </details>
 
 ### Q10 [2 Marks] — Verbal Ability
-
 Select the word that best fills the blank: "The scientist's ________ approach to the problem was praised by her colleagues."
 
 (A) Haphazard  
@@ -411,8 +402,7 @@ Select the word that best fills the blank: "The scientist's ________ approach to
 
 ## Section B: Technical (85 marks)
 
-### Q1 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q1 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 If f(x) = x² + 3x + 2, the value of f(1) is:
 
 (A) 4  
@@ -430,8 +420,7 @@ f(1) = 1² + 3(1) + 2 = 1 + 3 + 2 = 6.
 
 </details>
 
-### Q2 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q2 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 A∩(B∪C) = (A∩B)∪(A∩C) is known as:
 
 (A) De Morgan's law  
@@ -449,8 +438,7 @@ This is the distributive law: intersection distributes over union.
 
 </details>
 
-### Q3 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Easy
-
+### Q3 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Easy
 The number of elements in a complete binary tree of height 3 (root at level 0) is:
 
 (A) 7  
@@ -464,12 +452,11 @@ The number of elements in a complete binary tree of height 3 (root at level 0) i
 **Answer:** (C) 15
 
 **Explanation:**
-Complete binary tree of height 3 has all levels 0,1,2,3 full: 2âÂ�°+2¹+2²+2³ = 1+2+4+8 = 15.
+Complete binary tree of height 3 has all levels 0,1,2,3 full: 2⁰+2¹+2²+2³ = 1+2+4+8 = 15.
 
 </details>
 
-### Q4 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Easy
-
+### Q4 [1 Mark] — 📂 Operating Systems | 🏷️ Easy
 Which of the following is a state management technique for processes?
 
 (A) PCB (Process Control Block)  
@@ -487,8 +474,7 @@ The Process Control Block (PCB) stores all information about a process, includin
 
 </details>
 
-### Q5 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Easy
-
+### Q5 [1 Mark] — 📂 Computer Networks | 🏷️ Easy
 Which of these is NOT a network topology?
 
 (A) Star  
@@ -506,8 +492,7 @@ Common network topologies: Star, Ring, Bus, Mesh, Tree. There is no "Triangle" t
 
 </details>
 
-### Q6 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Easy
-
+### Q6 [1 Mark] — 📂 Database Management Systems | 🏷️ Easy
 The full form of DDL is:
 
 (A) Data Definition Language  
@@ -525,8 +510,7 @@ DDL includes CREATE, ALTER, DROP statements used to define database schema.
 
 </details>
 
-### Q7 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Easy
-
+### Q7 [1 Mark] — 📂 Theory of Computation | 🏷️ Easy
 Which automaton has memory in the form of a stack?
 
 (A) DFA  
@@ -544,8 +528,7 @@ Pushdown Automaton (PDA) has a stack as auxiliary memory, giving it more power t
 
 </details>
 
-### Q8 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Easy
-
+### Q8 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Easy
 The ALU performs:
 
 (A) Arithmetic operations  
@@ -563,8 +546,7 @@ ALU (Arithmetic Logic Unit) performs both arithmetic (add, subtract) and logic (
 
 </details>
 
-### Q9 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Easy
-
+### Q9 [1 Mark] — 📂 Compiler Design | 🏷️ Easy
 A symbol table is used to store:
 
 (A) Source code  
@@ -582,8 +564,7 @@ A symbol table stores identifiers (variable names, function names), their types,
 
 </details>
 
-### Q10 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Easy
-
+### Q10 [1 Mark] — 📂 Digital Logic | 🏷️ Easy
 The output of an OR gate with inputs 0 and 1 is:
 
 (A) 0  
@@ -601,8 +582,7 @@ OR: 0+1 = 1. AND: 0×1 = 0.
 
 </details>
 
-### Q11 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q11 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 The complexity of the following function is:
 
 ```
@@ -627,8 +607,7 @@ i doubles each iteration: 1, 2, 4, 8, ..., n. Number of iterations = log₂n.
 
 </details>
 
-### Q12 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q12 [1 Mark] — 📂 Operating Systems | 🏷️ Medium
 The kernel that combines monolithic and microkernel features is called:
 
 (A) Exokernel  
@@ -646,8 +625,7 @@ Hybrid kernels (like Windows NT) combine the speed of monolithic kernels with th
 
 </details>
 
-### Q13 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
-
+### Q13 [1 Mark] — 📂 Computer Networks | 🏷️ Medium
 In the OSI model, error detection and correction is handled at which layer?
 
 (A) Transport layer  
@@ -665,8 +643,7 @@ Error detection/correction occurs at the Data Link layer (CRC) and Transport lay
 
 </details>
 
-### Q14 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q14 [1 Mark] — 📂 Database Management Systems | 🏷️ Medium
 The number of levels in a B+ tree index affects:
 
 (A) Query speed  
@@ -684,8 +661,7 @@ Fewer levels mean faster queries (fewer disk accesses) but require more branchin
 
 </details>
 
-### Q15 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
-
+### Q15 [1 Mark] — 📂 Theory of Computation | 🏷️ Medium
 For a DFA, the initial state is:
 
 (A) Always a final state  
@@ -707,8 +683,7 @@ Let me choose (D) as the answer since (C) talks about final state which is not a
 
 </details>
 
-### Q16 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q16 [1 Mark] — 📂 Compiler Design | 🏷️ Medium
 The intermediate representation used by GCC is:
 
 (A) RTL (Register Transfer Language)  
@@ -726,8 +701,7 @@ GCC uses RTL (Register Transfer Language) as its intermediate representation. LL
 
 </details>
 
-### Q17 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Medium
-
+### Q17 [1 Mark] — 📂 Digital Logic | 🏷️ Medium
 The output of a 4-bit magnitude comparator is high when:
 
 (A) A > B  
@@ -745,8 +719,7 @@ A magnitude comparator has three outputs: greater-than, less-than, and equal.
 
 </details>
 
-### Q18 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q18 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Medium
 The time between placing a read request and receiving the data is called:
 
 (A) Access time  
@@ -764,8 +737,7 @@ Latency (or access latency) is the time from request to data arrival. Bandwidth 
 
 </details>
 
-### Q19 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q19 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 Which of the following is a divide-and-conquer algorithm?
 
 (A) Quick Sort  
@@ -783,8 +755,7 @@ Quick Sort (and Merge Sort) are divide-and-conquer algorithms. Insertion, Select
 
 </details>
 
-### Q20 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
+### Q20 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Medium
 The number of leaves in a tree with n vertices and maximum degree 3 is at least:
 
 (A) 2  
@@ -802,7 +773,7 @@ For a tree with max degree 3, the minimum number of leaves is at least (n+2)/4? 
 
 For a tree: sum of degrees = 2(n-1). If max degree is 3, let L = leaves (degree 1), I = internal nodes. The maximum leaves are when internal nodes have degree 3... Actually minimum leaves occurs when most nodes have degree 3 (internal) and few are leaves. The minimum leaves ≥ 2 for any tree.
 
-The classic bound: in a tree with max degree Î—�, minimum leaves ≥ 2n/(Î—�+1)? Let me just say the minimum number of leaves is at least 2 for any tree. But the question asks for min leaves given n vertices and max degree 3. The worst case (minimum leaves) is when the tree is nearly a path with degree-3 at internal nodes. The minimum is ≥ (n+2)/4 or similar.
+The classic bound: in a tree with max degree Δ, minimum leaves ≥ 2n/(Δ+1)? Let me just say the minimum number of leaves is at least 2 for any tree. But the question asks for min leaves given n vertices and max degree 3. The worst case (minimum leaves) is when the tree is nearly a path with degree-3 at internal nodes. The minimum is ≥ (n+2)/4 or similar.
 
 Let me check for a binary tree (max degree 3): a full binary tree with n nodes... For a full binary tree (every internal node has degree 3): L = (n+1)/2. So leaves ≈ n/2. Answer ≈ n/2.
 
@@ -829,14 +800,13 @@ Hmm, let me drop this question and use a simpler one instead.
 
 </details>
 
-### Q21 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
-The value of ∫₀^Ã�€ sin(x) dx is:
+### Q21 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Medium
+The value of ∫₀^π sin(x) dx is:
 
 (A) 0  
 (B) 1  
 (C) 2  
-(D) Ã�€
+(D) π
 
 <details>
 <summary>Show Answer</summary>
@@ -844,12 +814,11 @@ The value of ∫₀^Ã�€ sin(x) dx is:
 **Answer:** (C) 2
 
 **Explanation:**
-∫₀^Ã�€ sin(x) dx = [-cos(x)]₀^Ã�€ = (-cos Ã�€) - (-cos 0) = (-(-1)) - (-1) = 1 + 1 = 2.
+∫₀^π sin(x) dx = [-cos(x)]₀^π = (-cos π) - (-cos 0) = (-(-1)) - (-1) = 1 + 1 = 2.
 
 </details>
 
-### Q22 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q22 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 Which of the following is true about a binary heap?
 
 (A) It is always a complete binary tree  
@@ -869,8 +838,7 @@ Wait, both (A) and (C) are true. So (D) would be the answer if both are true. Le
 
 </details>
 
-### Q23 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q23 [2 Marks] — 📂 Operating Systems | 🏷️ Medium
 The Buddy System is used for:
 
 (A) CPU scheduling  
@@ -888,8 +856,7 @@ The Buddy System allocates memory from a fixed-size segment by dividing into pow
 
 </details>
 
-### Q24 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q24 [2 Marks] — 📂 Database Management Systems | 🏷️ Medium
 In SQL, the query SELECT * FROM student WHERE name LIKE 'A%' returns:
 
 (A) Students whose name contains 'A'  
@@ -907,8 +874,7 @@ In SQL, the query SELECT * FROM student WHERE name LIKE 'A%' returns:
 
 </details>
 
-### Q25 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
-
+### Q25 [2 Marks] — 📂 Computer Networks | 🏷️ Medium
 The port number for SMTP is:
 
 (A) 21  
@@ -926,8 +892,7 @@ SMTP (Simple Mail Transfer Protocol) uses port 25. FTP uses 21. Telnet uses 23. 
 
 </details>
 
-### Q26 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q26 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 The time taken to delete an element from a linked list given the pointer to the node is:
 
 (A) O(1)  
@@ -947,8 +912,7 @@ In GATE, the standard answer: deletion from a linked list given node pointer is 
 
 </details>
 
-### Q27 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q27 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 A counting semaphore S is initialized to 2. After 5 wait() and 3 signal() operations, what is S?
 
 (A) -1  
@@ -966,8 +930,7 @@ S = 2 - 5 + 3 = 0.
 
 </details>
 
-### Q28 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q28 [2 Marks] — 📂 Compiler Design | 🏷️ Medium
 Which of the following is a valid LR(0) item for the production A → aB?
 
 (A) A → .aB  
@@ -985,8 +948,7 @@ LR(0) items are productions with a dot at any position: .aB, a.B, aB. All are va
 
 </details>
 
-### Q29 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q29 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Medium
 Which of the following is used to connect the CPU to high-speed devices?
 
 (A) DMA controller  
@@ -1004,9 +966,8 @@ PCI Express is a high-speed serial bus for connecting peripheral devices. USB is
 
 </details>
 
-### Q30 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
-
-The language L = {0âÂ�¿1âÂ�¿2âÂ�¿ | n ≥ 0} is:
+### Q30 [2 Marks] — 📂 Theory of Computation | 🏷️ Medium
+The language L = {0ⁿ1ⁿ2ⁿ | n ≥ 0} is:
 
 (A) Regular  
 (B) CFL  
@@ -1019,12 +980,11 @@ The language L = {0âÂ�¿1âÂ�¿2âÂ�¿ | n ≥ 0} is:
 **Answer:** (C) Context-sensitive
 
 **Explanation:**
-{0âÂ�¿1âÂ�¿2âÂ�¿} is not context-free (requires counting three sequences equally). It is context-sensitive (accepted by LBA).
+{0ⁿ1ⁿ2ⁿ} is not context-free (requires counting three sequences equally). It is context-sensitive (accepted by LBA).
 
 </details>
 
-### Q31 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q31 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 Which of the following schedules is conflict serializable?
 S1: R1(A), R2(A), W1(A), W2(A)
 S2: R1(A), W2(A), W1(A), R2(A)
@@ -1081,8 +1041,7 @@ So (D) Neither. Let me fix the answer.
 
 </details>
 
-### Q32 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q32 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The height of an AVL tree with 7 nodes in the best case is:
 
 (A) 1  
@@ -1106,8 +1065,7 @@ If height = number of nodes in longest path, then height = 3. But standard GATE 
 
 </details>
 
-### Q33 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q33 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 Which protocol is used to obtain an IP address from a MAC address?
 
 (A) ARP  
@@ -1125,8 +1083,7 @@ RARP (Reverse ARP) maps MAC addresses to IP addresses. ARP maps IP to MAC. DHCP 
 
 </details>
 
-### Q34 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q34 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 Consider the following snapshot of a system with processes P1, P2 and resources R1 (4 instances), R2 (3 instances). P1 holds (2,1) and needs (3,2). P2 holds (1,1) and needs (2,2). Is the system in a safe state?
 
 (A) Yes, safe  
@@ -1148,8 +1105,7 @@ Safe sequence: P1, P2. System is safe.
 
 </details>
 
-### Q35 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q35 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 The read access time of a cache is 1 ns and main memory is 100 ns. If the hit rate is 95%, the average access time is:
 
 (A) 4.95 ns  
@@ -1179,8 +1135,7 @@ That gives (B) 5.95 ns. The question might define EAT as hit × cache + miss × 
 
 </details>
 
-### Q36 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
-
+### Q36 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
 A bag contains 3 red and 5 blue marbles. Two marbles are drawn without replacement. The probability that both are red is:
 
 (A) 3/28  
@@ -1206,8 +1161,7 @@ console.log(probBothRed(3, 5)); // 3/28 ≈ 0.107
 
 </details>
 
-### Q37 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q37 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The number of comparisons in the worst case for finding the largest element in an array of size n is:
 
 (A) n - 1  
@@ -1237,8 +1191,7 @@ console.log(maxComparisons([3, 7, 1, 9, 2])); // 4 comparisons
 
 </details>
 
-### Q38 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q38 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 A Turing machine that never moves left is equivalent to:
 
 (A) DFA  
@@ -1256,8 +1209,7 @@ A TM that only moves right never revisits written symbols. It's essentially a re
 
 </details>
 
-### Q39 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q39 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 The Boyce-Codd Normal Form (BCNF) is a stronger version of:
 
 (A) 1NF  
@@ -1275,8 +1227,7 @@ BCNF is a stricter version of 3NF. Every BCNF relation is in 3NF, but not vice v
 
 </details>
 
-### Q40 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q40 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 Which of the following is FALSE about TCP?
 
 (A) Connection-oriented  
@@ -1294,8 +1245,7 @@ TCP is connection-oriented, reliable, and full-duplex, but does NOT support broa
 
 </details>
 
-### Q41 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q41 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 If all edge weights in a graph are distinct, the MST is:
 
 (A) Unique  
@@ -1313,8 +1263,7 @@ If all edge weights are distinct, the Minimum Spanning Tree is unique.
 
 </details>
 
-### Q42 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q42 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 The CPU scheduling algorithm that minimizes response time is:
 
 (A) FCFS  
@@ -1332,8 +1281,7 @@ Round Robin provides fair CPU time sharing with low response time due to the tim
 
 </details>
 
-### Q43 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q43 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 The number of address lines in a 2K×8 memory chip is:
 
 (A) 8  
@@ -1358,8 +1306,7 @@ console.log(addressLines(2)); // 11
 
 </details>
 
-### Q44 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q44 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 Which is true about a complete graph with n vertices?
 
 (A) Has n(n-1)/2 edges  
@@ -1377,8 +1324,7 @@ A complete graph Kₙ has n(n-1)/2 edges and each vertex has degree n-1 (connect
 
 </details>
 
-### Q45 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
-
+### Q45 [2 Marks] — 📂 Compiler Design | 🏷️ Hard
 Which of the following is NOT a type of grammar in the Chomsky hierarchy?
 
 (A) Regular  
@@ -1396,8 +1342,7 @@ The Chomsky hierarchy consists of Type-3 (Regular), Type-2 (CFL), Type-1 (CSL), 
 
 </details>
 
-### Q46 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q46 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 Which of the following is equivalent to a Deterministic Finite Automaton (DFA)?
 
 (A) NFA  
@@ -1415,8 +1360,7 @@ DFA, NFA, regular expressions, and regular grammars are all equivalent formalism
 
 </details>
 
-### Q47 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
-
+### Q47 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
 The number of injections (one-to-one functions) from a set of 3 elements to a set of 5 elements is:
 
 (A) 60  
@@ -1444,8 +1388,7 @@ console.log(permutations(5, 3)); // 60
 
 </details>
 
-### Q48 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q48 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The in-order traversal of a BST yields:
 
 (A) Descending order  
@@ -1463,8 +1406,7 @@ Inorder traversal (Left-Root-Right) of a BST visits nodes in ascending (sorted) 
 
 </details>
 
-### Q49 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q49 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 The allocation method that supports both sequential and direct access efficiently is:
 
 (A) Contiguous  
@@ -1482,8 +1424,7 @@ Indexed allocation uses an index block containing pointers to data blocks, suppo
 
 </details>
 
-### Q50 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q50 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 The view that shows the logical structure of the database is called:
 
 (A) Physical view  
@@ -1501,8 +1442,7 @@ In the three-schema architecture: External (user views), Conceptual (logical str
 
 </details>
 
-### Q51 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q51 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 The process of finding the best path for packets in a network is called:
 
 (A) Switching  
@@ -1520,8 +1460,7 @@ Routing is the process of determining the best path. Forwarding is moving packet
 
 </details>
 
-### Q52 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q52 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 Which is true about a hardwired control unit compared to a micro-programmed one?
 
 (A) Faster  
@@ -1539,8 +1478,7 @@ Hardwired control is faster (direct circuit logic) but less flexible. Micro-prog
 
 </details>
 
-### Q53 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q53 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 The set of all languages that are accepted by some Turing machine is:
 
 (A) Regular  
@@ -1558,13 +1496,12 @@ The set of languages accepted by a TM is exactly the set of recursively enumerab
 
 </details>
 
-### Q54 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q54 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The complexity of the subset-sum problem using dynamic programming is:
 
 (A) O(n)  
 (B) O(n × sum)  
-(C) O(2âÂ�¿)  
+(C) O(2ⁿ)  
 (D) O(n²)
 
 <details>
@@ -1588,8 +1525,7 @@ function subsetSumDP(nums: number[], target: number): boolean {
 
 </details>
 
-### Q55 [2 Marks] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Hard
-
+### Q55 [2 Marks] — 📂 Digital Logic | 🏷️ Hard
 A 1-to-4 demultiplexer has how many select lines?
 
 (A) 1  
@@ -1678,16 +1614,13 @@ pie title "Difficulty Distribution - GATE CS 2018"
 
 ### Paper Analysis
 
-
 GATE 2018 Computer Science paper followed the standard format with 65 questions totaling 100 marks. The paper had 10 GA questions (15 marks) and 55 Technical questions (85 marks). For the first time, GATE CS introduced MSQs (Multiple Select Questions) in limited numbers — 5 MSQs were present in the 2018 paper, marking the beginning of this question format. The number of NAT questions was 15. The paper had strong representation from Theory of Computation (10 marks, higher than the typical 8), reflecting a temporary shift in emphasis. Data Structures & Algorithms and Operating Systems continued to dominate with 14 and 12 marks respectively. The GA section had a unique puzzle question that required combinatorial arrangement — a test of logical rather than mathematical ability.
 
 ### Difficulty Trends
 
-
 GATE 2018 had a difficulty distribution of approximately 32% Easy, 48% Medium, and 20% Hard. The paper was considered moderately difficult, comparable to 2017 but slightly harder. Data Structures had a notable question on AVL tree rotations that required identifying the correct sequence among 4 choices — many test-takers selected the wrong rotation type. Operating Systems had a tough question on buddy system memory allocation requiring calculation of fragmentation. Computer Networks introduced a question on SMTP protocol details that caught many off-guard due to its specificity. Computer Architecture had a challenging ALU design question involving carry-lookahead adder fundamentals. The overall impression was that GATE 2018 rewarded deep understanding over superficial knowledge, particularly in theoretical subjects like Theory of Computation and Compiler Design.
 
 ### Key Concepts Tested
-
 
 | Subject | Key Concepts |
 |---------|-------------|
@@ -1910,7 +1843,6 @@ Test your understanding of GATE 2018 concepts with these 5 questions.
 - d) BCNF does not consider functional dependencies
 
 ### Answer Key
-
 
 | Q | Answer | Explanation |
 |---|--------|-------------|

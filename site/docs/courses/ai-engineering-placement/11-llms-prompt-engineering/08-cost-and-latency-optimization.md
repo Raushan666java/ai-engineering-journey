@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/11-llms-prompt-engineering/08-cost-and-latency-o
 title: "Cost & Latency Optimization"
 sidebar_label: "Cost & Latency Optimization"
 sidebar_position: 155
+description: "Cost & Latency Optimization: Large language models are transforming every industry. Understanding how to prompt, evaluate, and optimize LLMs is a critical"
 ---
 
 <!-- improved -->

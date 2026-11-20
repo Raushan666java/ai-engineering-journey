@@ -4,6 +4,7 @@ slug: /software-engineering/07-software-evolution
 title: "Software Evolution"
 sidebar_label: "Software Evolution"
 sidebar_position: 7
+description: "Software evolution is the continuous process of adapting a software system after its initial deployment. Unlike hardware, software does not wear out in a"
 ---
 
 # Software Evolution

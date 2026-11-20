@@ -1,3 +1,7 @@
+---
+description: "Real Experience: An IBPS SO panel asked me to draw the UPI flow on the whiteboard. They also asked about failure scenarios — what happens if the network"
+---
+
 # Chapter 6: Government Exam Interview Preparation
 
 ## Learning Objectives

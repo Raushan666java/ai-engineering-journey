@@ -4,6 +4,7 @@ slug: /devops/05-docker
 title: "Chapter 5: Docker"
 sidebar_label: "Chapter 5: Docker"
 sidebar_position: 9
+description: "Multi-stage builds reduce final image size by separating build and runtime dependencies. The following tool analyzes Dockerfiles and recommends optimal"
 ---
 
 # Chapter 5: Docker

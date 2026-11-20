@@ -3,6 +3,7 @@ slug: /learning-course/06_AI_Templates/AI_Prompts_Library_Extended
 title: "🤖 AI Prompts Library for Learning"
 sidebar_label: "🤖 AI Prompts Library for Learning"
 sidebar_position: 2
+description: "🤖 AI Prompts Library for Learning — learning course"
 ---
 # 🤖 AI Prompts Library for Learning
 

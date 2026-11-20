@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to lead and participate in group discussions using structured frameworks, score well on the four GD criteria (content"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Group Discussion & Extempore for Campus Placements

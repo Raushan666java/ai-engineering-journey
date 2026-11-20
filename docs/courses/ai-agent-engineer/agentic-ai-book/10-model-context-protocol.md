@@ -1,3 +1,7 @@
+---
+description: "Before MCP: every agent framework had its own bespoke way of defining and wiring up tools. If you built a tool for LangChain, it didn't work with AutoGen"
+---
+
 ## Chapter 10: Model Context Protocol (MCP)
 
 ### 10.1 The Problem MCP Solves

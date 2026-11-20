@@ -1,3 +1,7 @@
+---
+description: "The two-pointer technique is a powerful pattern for solving array and linked list problems efficiently. By using two indices that move intelligently, you"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Two Pointers

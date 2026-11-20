@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/09-binary-trees
 title: "Binary Trees"
 sidebar_label: "Binary Trees"
 sidebar_position: 46
+description: "Heaps (priority queues) are specialized trees that efficiently provide the minimum or maximum element. They are essential for scheduling, top-K problems"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /laravel/41-interview-education
 title: "Chapter 41: Interview Q&A → Education & EdTech"
 sidebar_label: "Chapter 41: Interview Q&A → Education & EdTech"
 sidebar_position: 41
+description: "The five core models are Student, Course, Enrollment, Assessment, and Grade. A Student belongs to a User and has enrollments() and grades() has-many"
 ---
 
 # Chapter 41: Interview Q&A → Education & EdTech

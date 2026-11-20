@@ -1,3 +1,7 @@
+---
+description: "A tiered breakdown of interview processes, question patterns, and preparation strategies across FAANG/MANGA, product-based Indian companies, service-based"
+---
+
 # Company-Specific Placement Preparation
 
 > **Previous:** [Chapter 3: SQL Problem Bank](./03-sql-problem-bank.md) | **Next:** [Chapter 5: Placement Strategy](./05-placement-strategy.md)

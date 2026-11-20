@@ -1,3 +1,7 @@
+---
+description: "You're about to write hundreds of code files across 20 phases. Without version control you will lose work, break things you can't undo, and have no way to"
+---
+
 # Git & Collaboration
 
 > Version control is not optional. Every experiment, every model, every lesson you build here gets tracked.

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/16-mlops-production/visual-notes
 title: "Visual Notes — AI Delivery Pipeline"
 sidebar_label: "Visual Notes"
 sidebar_position: 215
+description: "One-line answer for interviews: 'Code → build → test → package → deploy → serve → monitor, with a rollback path at every gate.'"
 ---
 
 # Visual Notes — AI Delivery Pipeline

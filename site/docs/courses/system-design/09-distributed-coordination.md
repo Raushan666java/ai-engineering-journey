@@ -4,6 +4,7 @@ slug: /system-design/09-distributed-coordination
 title: "Chapter 9: Distributed Coordination and Service Discovery"
 sidebar_label: "Chapter 9: Distributed Coordination and Service Discovery"
 sidebar_position: 9
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. A service registry is a database of available service"
 ---
 
 # Chapter 9: Distributed Coordination and Service Discovery

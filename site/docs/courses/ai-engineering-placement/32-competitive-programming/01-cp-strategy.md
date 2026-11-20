@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/32-competitive-programming/01-cp-strategy
 title: "01 — Competitive Programming Strategy for AI Engineers"
 sidebar_label: "01 — Competitive Programming Strategy for AI Engineers"
 sidebar_position: 357
+description: "Competitive programming (CP) is the sport of writing correct and efficient code under time pressure. For an AI Engineer, CP is not just about winning"
 ---
 
 <!-- improved -->

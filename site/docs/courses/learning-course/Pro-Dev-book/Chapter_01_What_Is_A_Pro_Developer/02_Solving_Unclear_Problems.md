@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_01_What_Is_A_Pro_Developer/02_Solvin
 title: "🧩 Solving Unclear Problems"
 sidebar_label: "🧩 Solving Unclear Problems"
 sidebar_position: 2
+description: "One of the most jarring transitions from being a student (or following tutorials) to working as a professional software engineer is the sudden loss of"
 ---
 # 🧩 Solving Unclear Problems
 

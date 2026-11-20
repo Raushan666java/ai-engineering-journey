@@ -4,6 +4,7 @@ slug: /software-engineering/06-testing
 title: "Software Testing"
 sidebar_label: "Software Testing"
 sidebar_position: 6
+description: "Verification and validation (V&V) are the two principal approaches to establishing that a software system meets its specification and satisfies"
 ---
 
 # Software Testing

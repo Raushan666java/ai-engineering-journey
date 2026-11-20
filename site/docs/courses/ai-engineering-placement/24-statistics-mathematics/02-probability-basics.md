@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/24-statistics-mathematics/02-probability-basics
 title: "Chapter 02: Probability Basics"
 sidebar_label: "Chapter 02: Probability Basics"
 sidebar_position: 300
+description: "Probability theory quantifies uncertainty and randomness, forming the mathematical foundation for machine learning, Bayesian inference, and"
 ---
 
 <!-- improved -->

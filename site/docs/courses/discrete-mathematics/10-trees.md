@@ -4,6 +4,7 @@ slug: /discrete-mathematics/10-trees
 title: "Chapter 10: Trees"
 sidebar_label: "Chapter 10: Trees"
 sidebar_position: 10
+description: 'One-Sentence Takeaway: Binary trees limit branching to at most two children per node; BSTs enable $O( log n)$ search, insert, and delete operations when'
 ---
 
 # Chapter 10: Trees

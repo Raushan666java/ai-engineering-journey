@@ -1,3 +1,7 @@
+---
+description: "This chapter covers the most frequently asked HTML interview questions, organized by topic. Each question includes a detailed answer with valid HTML5"
+---
+
 # HTML Interview Q&A
 
 > **Previous:** [MySQL & Database Interview Q&A](./50-interview-mysql.md) | **Next:** [CSS Interview Q&A](./52-interview-css.md)

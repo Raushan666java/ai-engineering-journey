@@ -1,3 +1,7 @@
+---
+description: "Chapter P6 (Lambda Expressions & Functional Programming) covers the fundamentals this chapter builds on. You should be comfortable with basic lambda"
+---
+
 # Functional Programming in Practice
 
 > **Previous:** [Java Modules & Packaging](./04-jpms-packaging.md) | **Next:** [Performance Tuning & Profiling](./06-performance.md)

@@ -4,6 +4,7 @@ slug: /system-design/03-caching
 title: "Chapter 3: Caching Strategies and Patterns"
 sidebar_label: "Chapter 3: Caching Strategies and Patterns"
 sidebar_position: 3
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Caching works because of locality of reference — the"
 ---
 
 # Chapter 3: Caching Strategies and Patterns

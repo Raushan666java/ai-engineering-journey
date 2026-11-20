@@ -1,3 +1,7 @@
+---
+description: "Spring Integration implements the Enterprise Integration Patterns, providing a lightweight message-based framework for integrating systems."
+---
+
 # Spring Integration
 
 > **Previous:** [Spring Batch](./49-batch.md) | **Next:** [Spring Modulith](./51-modulith.md)

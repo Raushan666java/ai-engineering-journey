@@ -1,3 +1,7 @@
+---
+description: "MongoDB is a document-oriented NoSQL database released in 2009 by MongoDB Inc. (originally 10gen). It stores data as BSON (Binary JSON) documents in"
+---
+
 # Chapter 15: MongoDB
 
 > **Prev:** [Chapter 14: NoSQL](14-nosql.md) | **Next:** [Chapter 16: Redis](16-redis.md)

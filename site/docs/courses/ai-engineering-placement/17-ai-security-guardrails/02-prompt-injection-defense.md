@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/17-ai-security-guardrails/02-prompt-injection-de
 title: "Prompt Injection Defense"
 sidebar_label: "Prompt Injection Defense"
 sidebar_position: 217
+description: "Prompt Injection Defense: AI systems face unique security threats. Prompt injection, data leakage, and content abuse require specialized defenses. This"
 ---
 
 <!-- improved -->

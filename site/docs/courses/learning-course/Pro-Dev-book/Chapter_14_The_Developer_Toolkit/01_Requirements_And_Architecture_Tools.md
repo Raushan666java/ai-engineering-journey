@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_14_The_Developer_Toolkit/01_Requirem
 title: "🗺️ Requirements & Architecture Tools"
 sidebar_label: "🗺️ Requirements & Architecture Tools"
 sidebar_position: 1
+description: "The primary mission of the planning phase is to translate abstract business requirements (e.g., 'I need a booking system') into concrete, actionable"
 ---
 # 🗺️ Requirements & Architecture Tools
 

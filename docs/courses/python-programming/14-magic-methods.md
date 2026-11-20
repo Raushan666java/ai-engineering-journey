@@ -1,3 +1,7 @@
+---
+description: "Magic methods (dunder methods) are special methods with double underscores that allow objects to define Python language behaviours. They are not meant to"
+---
+
 # Chapter 14: Magic Methods
 
 

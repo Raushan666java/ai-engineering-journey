@@ -4,6 +4,7 @@ slug: /discrete-mathematics/08-functions
 title: "Chapter 8: Functions"
 sidebar_label: "Chapter 8: Functions"
 sidebar_position: 8
+description: "One-Sentence Takeaway: A function assigns every element of the domain exactly one element of the codomain; the range (image) may be a proper subset of the"
 ---
 
 # Chapter 8: Functions

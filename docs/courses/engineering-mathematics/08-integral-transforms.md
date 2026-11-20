@@ -1,3 +1,7 @@
+---
+description: '$a_0 = frac{1}{T} int_0^T f(t) ,dt$ $a_n = frac{2}{T} int_0^T f(t) cos left( frac{2 pi nt}{T} right) dt$ $b_n = frac{2}{T} int_0^T f(t)'
+---
+
 # Chapter 8: Integral Transforms
 
 > **Previous:** [Chapter 7: Numerical Methods](07-numerical-methods.md) | **Next:** [Chapter 9: Optimization](09-optimization.md)

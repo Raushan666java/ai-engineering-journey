@@ -1,3 +1,7 @@
+---
+description: "The mini-track ends with a pack you drop into any repo. Eleven lessons of surfaces compressed into a directory you can cp -r and have an agent working"
+---
+
 # Capstone: Ship a Reusable Agent Workbench Pack
 
 > The mini-track ends with a pack you drop into any repo. Eleven lessons of surfaces compressed into a directory you can `cp -r` and have an agent working reliably the next morning. The capstone is the artifact this curriculum trades on.

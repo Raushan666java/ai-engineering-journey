@@ -1,3 +1,7 @@
+---
+description: "If break-even exceeds capacity, no amount of marketing fixes it: the price is too low or the delivery is too slow. That is a structural finding, not a"
+---
+
 # Chapter 12 — Capstone: A Complete Go-to-Market Plan
 
 ## Learning Objectives

@@ -4,6 +4,7 @@ slug: /devops/12-monitoring-logging
 title: "Chapter 12: Monitoring and Logging"
 sidebar_label: "Chapter 12: Monitoring and Logging"
 sidebar_position: 21
+description: "Monitoring is the systematic collection, analysis, and visualization of system data to understand behavior, detect anomalies, and support decision making"
 ---
 
 # Chapter 12: Monitoring and Logging

@@ -1,3 +1,7 @@
+---
+description: "Infrastructure drift — when actual infrastructure state diverges from declared configuration — is a leading cause of configuration drift incidents. The"
+---
+
 # Chapter 9: Terraform & Infrastructure as Code
 
 > **Prev:** [Continuous Delivery](./09-continuous-delivery.md)

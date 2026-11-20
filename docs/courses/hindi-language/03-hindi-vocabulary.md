@@ -1,3 +1,7 @@
+---
+description: "Hindi vocabulary draws from four main sources: Sanskrit (tatsam), modified Sanskrit (tadbhav), indigenous (deshaj), and foreign (videshi) origins"
+---
+
 # Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)
 
 ## Learning Objectives

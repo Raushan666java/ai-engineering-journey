@@ -1,3 +1,7 @@
+---
+description: "Dynamic Programming (DP) is an optimization technique that solves problems by breaking them into overlapping subproblems, solving each subproblem once"
+---
+
 # Chapter 17: PSUs & Government — Company-Specific Question Bank
 
 ## Learning Objectives

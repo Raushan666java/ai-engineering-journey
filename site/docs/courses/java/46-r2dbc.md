@@ -4,6 +4,7 @@ slug: /java/46-r2dbc
 title: "Chapter 46: R2DBC & Reactive Data Access"
 sidebar_label: "Chapter 46: R2DBC & Reactive Data Access"
 sidebar_position: 46
+description: "JDBC (Java Database Connectivity) is inherently blocking. Every ResultSet.next(), PreparedStatement.executeQuery(), and Connection.commit() blocks the"
 ---
 
 # Chapter 46: R2DBC & Reactive Data Access

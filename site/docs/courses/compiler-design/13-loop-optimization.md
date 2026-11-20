@@ -4,6 +4,7 @@ slug: /compiler-design/13-loop-optimization
 title: "Chapter 13: Loop Optimization"
 sidebar_label: "Chapter 13: Loop Optimization"
 sidebar_position: 13
+description: "After completing this chapter, students will be able to: identify loop-invariant expressions using reaching-definitions information; perform"
 ---
 
 # Chapter 13: Loop Optimization

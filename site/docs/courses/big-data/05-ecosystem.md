@@ -4,6 +4,7 @@ slug: /big-data/05-ecosystem
 title: "Chapter 5: Big Data Ecosystem Tools"
 sidebar_label: "Chapter 5: Big Data Ecosystem Tools"
 sidebar_position: 5
+description: "One-Sentence Takeaway: Hive provides SQL access to HDFS data but is being outpaced by Spark SQL (for batch) and Presto/Trino (for interactive queries) ?"
 ---
 
 # Chapter 5: Big Data Ecosystem Tools

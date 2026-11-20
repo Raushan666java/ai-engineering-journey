@@ -4,6 +4,7 @@ slug: /laravel/53-interview-javascript
 title: "Chapter 53: JavaScript Interview Q&A"
 sidebar_label: "Chapter 53: JavaScript Interview Q&A"
 sidebar_position: 53
+description: "JavaScript is the language of the web browser and an essential skill for any full-stack Laravel developer. This chapter covers core language fundamentals"
 ---
 
 # Chapter 53: JavaScript Interview Q&A

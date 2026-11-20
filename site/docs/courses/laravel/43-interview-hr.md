@@ -4,6 +4,7 @@ slug: /laravel/43-interview-hr
 title: "Chapter 43: HR & Recruitment → Interview Q&A"
 sidebar_label: "Chapter 43: HR & Recruitment → Interview Q&A"
 sidebar_position: 43
+description: "This chapter covers common interview questions for Laravel developer roles at HR technology companies, recruitment platforms, and people-operations SaaS"
 ---
 
 # Chapter 43: HR & Recruitment → Interview Q&A

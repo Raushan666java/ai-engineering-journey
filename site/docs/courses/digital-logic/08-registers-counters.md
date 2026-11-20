@@ -4,6 +4,7 @@ slug: /digital-logic/08-registers-counters
 title: "Chapter 8: Registers and Counters"
 sidebar_label: "Chapter 8: Registers and Counters"
 sidebar_position: 8
+description: "A register is an array of bistable elements sharing a common clock. While Chapter 6 introduced basic registers, this section covers advanced register"
 ---
 
 # Chapter 8: Registers and Counters

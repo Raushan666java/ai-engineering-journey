@@ -1,3 +1,7 @@
+---
+description: "TypeScript half of the capstone. Python side ships the learner model and tutor policy; this project exposes the web-app surface: a curriculum DAG walker"
+---
+
 # Lesson 17 - Personal AI Tutor (TypeScript web app)
 
 TypeScript half of the capstone. Python side ships the learner model and

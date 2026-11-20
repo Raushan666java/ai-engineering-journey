@@ -1,3 +1,7 @@
+---
+description: "Domain-Driven Design (DDD), introduced by Eric Evans, provides a framework for modeling complex business domains. The central concept is the bounded"
+---
+
 # Microservices Architecture Principles
 > **Previous:** [Event-Driven Architecture and Saga Pattern](37-event-driven-saga.md) | **Next:** [Service Discovery](39-discovery.md)
 

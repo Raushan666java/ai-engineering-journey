@@ -1,3 +1,7 @@
+---
+description: "A variable is a named storage location in memory that holds a value of a specific type. Think of it as a labeled box on a shelf — the label is the"
+---
+
 # Chapter 2: Variables and Data Types
 
 > **Previous:** [Introduction to C](./01-introduction.md) | **Next:** [Operators](./03-operators.md)

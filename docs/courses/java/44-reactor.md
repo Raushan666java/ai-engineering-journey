@@ -1,3 +1,7 @@
+---
+description: "Traditional servlet-based applications dedicate one thread per request. When that thread reads from a database, calls a remote API, or writes to a file"
+---
+
 # Chapter 44: Project Reactor & Reactive Streams
 
 > **Previous:** [Distributed Tracing &amp; Observability](./43-tracing.md) | **Next:** [Spring WebFlux](./45-webflux.md)

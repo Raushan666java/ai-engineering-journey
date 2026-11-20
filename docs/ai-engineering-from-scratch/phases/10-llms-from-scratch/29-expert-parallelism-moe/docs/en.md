@@ -1,3 +1,7 @@
+---
+description: "A Mixture-of-Experts layer replaces one dense FFN with N smaller experts and a router that sends each token to the top-K. Expert parallelism shards those"
+---
+
 # Expert Parallelism for Mixture-of-Experts
 
 > A Mixture-of-Experts layer replaces one dense FFN with N smaller experts and a router that sends each token to the top-K. Expert parallelism shards those experts across GPUs and uses all-to-all communication to route tokens to the GPU that holds their chosen expert. The router adds negligible FLOPs. The all-to-all adds a communication barrier. The load imbalance can waste 30% of tokens or more. Get the auxiliary loss right and you save 4-8x computation per MoE layer vs a dense FFN of equivalent total parameter count.

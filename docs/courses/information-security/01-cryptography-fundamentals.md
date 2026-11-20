@@ -1,3 +1,7 @@
+---
+description: "Exam Weightage: 4–6 Qs in IBPS SO IT Officer Mains (Professional Knowledge — Cryptography section) Key Topics: Symmetric vs Asymmetric, DES, AES, RSA"
+---
+
 # Chapter 1: Cryptography Fundamentals
 
 > **Exam Weightage:** 4–6 Qs in IBPS SO IT Officer Mains (Professional Knowledge — Cryptography section)

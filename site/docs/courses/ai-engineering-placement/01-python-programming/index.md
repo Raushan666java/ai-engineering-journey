@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming
 title: "01 — Python for AI"
 sidebar_label: "01 — Python for AI"
 sidebar_position: 24
+description: "Python for interviews: data structures, generators, decorators, concurrency and typing, plus the numpy and pandas you actually use."
 ---
 
 # 01 — Python for AI

@@ -4,6 +4,7 @@ slug: /digital-marketing
 title: "Complete Digital Marketing for Technical Founders"
 sidebar_label: "Complete Digital Marketing for Technical Founders"
 sidebar_position: 0
+description: "A full marketing course written for people who can build things but cannot yet get paid for them: developers selling contract work, engineers launching a"
 ---
 
 # Complete Digital Marketing for Technical Founders

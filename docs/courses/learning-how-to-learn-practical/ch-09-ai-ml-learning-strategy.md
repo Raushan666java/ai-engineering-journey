@@ -1,3 +1,7 @@
+---
+description: "Any hard subject — whether it's backpropagation, constitutional law, or organic chemistry — is not one skill but a stack of interconnected concepts"
+---
+
 # Chapter 9: Mastering Hard Subjects
 
 > ⏱ **3 hours total** · 🎯 **Advanced** · 📋 **Recommended: Ch 6 (Learning From Any Resource)**

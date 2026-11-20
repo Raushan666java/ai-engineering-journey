@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: For most web applications, the Java HTTP Client (Java 11+) is sufficient. Drop down to raw NIO with Selectors only when you need custom protocol"
+---
+
 # Java NIO & Networking
 
 > **Previous:** [Multithreading & Concurrency](./02-concurrency.md) | **Next:** [Java Modules & Packaging](./04-jpms-packaging.md)

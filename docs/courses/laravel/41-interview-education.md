@@ -1,3 +1,7 @@
+---
+description: "The five core models are Student, Course, Enrollment, Assessment, and Grade. A Student belongs to a User and has enrollments() and grades() has-many"
+---
+
 # Chapter 41: Interview Q&A → Education & EdTech
 
 > **Previous:** [Finance & FinTech Interview Q&A](./40-interview-finance.md) | **Next:** [Logistics & Supply Chain — Interview Q&A](./42-interview-logistics.md)

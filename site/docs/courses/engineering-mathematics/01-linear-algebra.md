@@ -4,6 +4,7 @@ slug: /engineering-mathematics/01-linear-algebra
 title: "Chapter 1: Linear Algebra"
 sidebar_label: "Chapter 1: Linear Algebra"
 sidebar_position: 1
+description: '$A = begin{pmatrix} a_{11} & a_{12} & cdots & a_{1n} a_{21} & a_{22} & cdots & a_{2n} vdots & vdots & ddots & vdots a_{m1} & a_{m2} &'
 ---
 
 # Chapter 1: Linear Algebra

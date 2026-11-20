@@ -4,6 +4,7 @@ slug: /digital-logic/03-logic-gates
 title: "Chapter 3: Logic Gates"
 sidebar_label: "Chapter 3: Logic Gates"
 sidebar_position: 3
+description: "Propagation delay t_p is the time required for a change at the input to propagate to the output. It is measured from the 50% transition point of the input"
 ---
 
 # Chapter 3: Logic Gates

@@ -4,6 +4,7 @@ slug: /geeta-darshan/17-shraddhatraya-yoga
 title: "अध्याय १७: श्रद्धात्रय विभाग योग — \"Shraddha belief nahin, trust hai\""
 sidebar_label: "अध्याय १७: श्रद्धात्रय विभाग योग — \"Shraddha belief nahin, trust hai\""
 sidebar_position: 18
+description: "'Shraddha koi dogma nahin hai jo tumhe bahar se pakad kar diya gaya ho. Shraddha tumhare andar ki gahri hoti parat hai — us parat ka naam hi shraddha hai"
 ---
 
 # अध्याय १७: श्रद्धात्रय विभाग योग — "Shraddha belief nahin, trust hai"

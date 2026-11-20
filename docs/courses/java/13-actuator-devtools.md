@@ -1,3 +1,7 @@
+---
+description: "Warning: Never expose sensitive actuator endpoints (/env, /configprops, /dump) in production without authentication. Use Spring Security or management"
+---
+
 # Actuator, DevTools & Monitoring
 
 > **Previous:** [Application Properties & Configuration](./12-configuration.md) | **Next:** [Logging, Error Handling & i18n](./14-logging-error-i18n.md)

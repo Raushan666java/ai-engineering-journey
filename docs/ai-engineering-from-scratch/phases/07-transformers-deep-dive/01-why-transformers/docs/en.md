@@ -1,3 +1,7 @@
+---
+description: "RNNs process tokens one at a time. Transformers process all tokens at once. That single architectural bet changed every scaling curve in deep learning"
+---
+
 # Why Transformers — The Problems with RNNs
 
 > RNNs process tokens one at a time. Transformers process all tokens at once. That single architectural bet changed every scaling curve in deep learning after 2017.

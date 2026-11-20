@@ -4,6 +4,7 @@ slug: /web-development/01-html
 title: "Chapter 1 → HTML5"
 sidebar_label: "Chapter 1 → HTML5"
 sidebar_position: 1
+description: "HTML5 introduced a set of landmark elements that replace the generic <div>-based document structure. These elements convey meaning about the content they"
 ---
 
 # Chapter 1 → HTML5

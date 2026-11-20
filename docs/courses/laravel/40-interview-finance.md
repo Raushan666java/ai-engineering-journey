@@ -1,3 +1,7 @@
+---
+description: "Part IX → Interview Preparation. Common interview questions for Laravel developer roles in fintech and financial services, covering PCI-DSS compliance"
+---
+
 # Chapter 40: Finance & FinTech Interview Q&A
 
 > **Previous:** [Healthcare Interview Q&A](./39-interview-healthcare.md) | **Next:** [Interview Q&A — Education & EdTech](./41-interview-education.md)

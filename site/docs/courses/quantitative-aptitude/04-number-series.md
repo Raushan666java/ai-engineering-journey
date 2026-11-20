@@ -4,6 +4,7 @@ slug: /quantitative-aptitude/04-number-series
 title: "Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification"
 sidebar_label: "Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification"
 sidebar_position: 4
+description: "Analyse: 2³ - 1 = 7, 3³ - 8 = 19, 4³ + 3 = 67... Better pattern: 2³ - 1 = 7, 3³ - 8 = 19, 4³ + 3 = 67 Actually: 2³ - 1 = 7, 3³ - 8 = 19, 4³ + 3 = 67 6³ +"
 ---
 
 # Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification

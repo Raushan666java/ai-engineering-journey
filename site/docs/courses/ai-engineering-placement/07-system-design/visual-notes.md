@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design/visual-notes
 title: "Visual Notes — One Request, the Full Ride"
 sidebar_label: "Visual Notes"
 sidebar_position: 111
+description: "One-line answer for interviews: 'Clients hit a load balancer → gateway → cache → services → data, then a queue absorbs spikes and workers drain it.'"
 ---
 
 # Visual Notes — One Request, the Full Ride

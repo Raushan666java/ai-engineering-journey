@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/19-capstone-projects/03-enterprise-rag-platform
 title: "Enterprise RAG Platform"
 sidebar_label: "Enterprise RAG Platform"
 sidebar_position: 238
+description: "Enterprise RAG Platform: Capstone projects prove you can build complete AI systems. From prediction APIs to enterprise RAG platforms, these projects"
 ---
 
 <!-- improved -->

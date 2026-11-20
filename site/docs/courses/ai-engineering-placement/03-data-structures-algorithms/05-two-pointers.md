@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/05-two-pointers
 title: "Two Pointers"
 sidebar_label: "Two Pointers"
 sidebar_position: 42
+description: "The two-pointer technique is a powerful pattern for solving array and linked list problems efficiently. By using two indices that move intelligently, you"
 ---
 
 <!-- improved -->

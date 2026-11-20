@@ -4,6 +4,7 @@ slug: /ai-powered-learning/ch07-speed-reading-summarization
 title: "Chapter 7: Speed Reading & Summarization"
 sidebar_label: "Chapter 7: Speed Reading & Summarization"
 sidebar_position: 7
+description: "Reading is the slowest part of studying, and re-reading is the most wasteful part of the week. This chapter wires AI into the entire reading workflow —"
 ---
 
 # Chapter 7: Speed Reading & Summarization

@@ -1,3 +1,7 @@
+---
+description: "This course provides a comprehensive study of cloud computing, covering foundational concepts through advanced architectural patterns across the three"
+---
+
 # Cloud Computing — Comprehensive Course Textbook
 
 **Course Code:** CLOUD-401

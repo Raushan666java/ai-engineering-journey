@@ -1,3 +1,7 @@
+---
+description: "A dense 70B transformer activates every parameter for every token. A 671B MoE activates only 37B per token and beats it on every benchmark. Sparsity is"
+---
+
 # Mixture of Experts (MoE)
 
 > A dense 70B transformer activates every parameter for every token. A 671B MoE activates only 37B per token and beats it on every benchmark. Sparsity is the most important scaling idea of the decade.

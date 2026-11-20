@@ -4,6 +4,7 @@ slug: /oop-cpp/10-stl-algorithms
 title: "Chapter 10: STL Algorithms — Master the C++ Standard Template Library"
 sidebar_label: "Chapter 10: STL Algorithms — Master the C++ Standard Template Library"
 sidebar_position: 10
+description: "STL algorithms operate on iterator ranges rather than containers directly. This decoupling means a single algorithm works across ector, list, deque"
 ---
 
 # Chapter 10: STL Algorithms — Master the C++ Standard Template Library

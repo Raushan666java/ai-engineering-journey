@@ -1,3 +1,7 @@
+---
+description: "After five chapters of preparation, the Gita now teaches the inner art itself. Chapter 5 ended with a promise — the sage sits, the breath is leveled, the"
+---
+
 # Chapter 6: Dhyana Yoga — The Art of Meditation
 
 > "The mind is a lamp; meditation is the windless place. Nothing needs to be added to the flame — only the wind must leave."

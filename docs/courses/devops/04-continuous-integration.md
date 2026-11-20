@@ -1,3 +1,7 @@
+---
+description: "Integration tests (15-20%): Test interactions between components — database queries, API endpoints, service-to-service communication. Verify real behavior"
+---
+
 # Chapter 4: Continuous Integration
 
 > **Prev:** [CI/CD](./04-cicd.md)

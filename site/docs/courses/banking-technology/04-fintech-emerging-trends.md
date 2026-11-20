@@ -4,6 +4,7 @@ slug: /banking-technology/04-fintech-emerging-trends
 title: "Chapter 04: Fintech and Emerging Trends"
 sidebar_label: "Chapter 04: Fintech and Emerging Trends"
 sidebar_position: 4
+description: "The Account Aggregator (AA) framework is a RBI-licensed data sharing system that enables individuals to securely share their financial data across"
 ---
 
 # Chapter 04: Fintech and Emerging Trends

@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: distinguish among abstract syntax trees, postfix notation, and three-address code as intermediate"
+---
+
 # Chapter 6: Intermediate Code Generation
 
 ? Previous: [Chapter 5: Syntax-Directed Translation](05-sdt.md) | **Next:** [Chapter 7: Type Checking](07-type-checking.md)

@@ -4,6 +4,7 @@ slug: /algorithms/04-sorting-linear
 title: "Chapter 4: Linear-Time Sorting"
 sidebar_label: "Chapter 4: Linear-Time Sorting"
 sidebar_position: 4
+description: "Chapter 3: Comparison-Based Sorting — The Ω(n log n) lower bound for comparison sorts | Next: Chapter 5: Divide and Conquer — Beyond sorting: applying"
 ---
 
 # Chapter 4: Linear-Time Sorting

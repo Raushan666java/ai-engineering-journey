@@ -1,3 +1,7 @@
+---
+description: "You don't need to understand transformer internals to build agents, but you need to understand these specific mechanics or you'll fight the framework"
+---
+
 ## Chapter 2: How LLMs Actually Work (Just Enough to Build Agents)
 
 You don't need to understand transformer internals to build agents, but you need to understand these specific mechanics or you'll fight the framework instead of using it.

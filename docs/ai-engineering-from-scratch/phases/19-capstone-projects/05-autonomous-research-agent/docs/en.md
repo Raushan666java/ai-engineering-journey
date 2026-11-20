@@ -1,3 +1,7 @@
+---
+description: "Sakana's AI-Scientist-v2 published full papers. Agent Laboratory ran the experiments. Allen AI shared traces. The 2026 shape is plan-execute-verify tree"
+---
+
 # Capstone 05 — Autonomous Research Agent (AI-Scientist Class)
 
 > Sakana's AI-Scientist-v2 published full papers. Agent Laboratory ran the experiments. Allen AI shared traces. The 2026 shape is plan-execute-verify tree search over experiments, budgeted cost, sandboxed code execution, a vision-feedback LaTeX writer, and an automated NeurIPS-style reviewer ensemble. The capstone is to build one, run it end to end within \$30 per paper, and survive the sandbox-escape red team that Sakana documented.

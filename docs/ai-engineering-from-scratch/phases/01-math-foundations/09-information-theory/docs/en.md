@@ -1,3 +1,7 @@
+---
+description: "You call CrossEntropyLoss() in every classification model you train. You see 'perplexity' in every language model paper. You read about KL divergence in"
+---
+
 # Information Theory
 
 > Information theory measures surprise. Loss functions are built on it.

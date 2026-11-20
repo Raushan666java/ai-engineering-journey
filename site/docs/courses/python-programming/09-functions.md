@@ -4,6 +4,7 @@ slug: /python-programming/09-functions
 title: "Chapter 9: Functions"
 sidebar_label: "Chapter 9: Functions"
 sidebar_position: 9
+description: "One-Sentence Takeaway: Use args for variable positional args, *kwargs for keyword args, and None for mutable defaults. Warning: Mutable default arguments"
 ---
 
 # Chapter 9: Functions

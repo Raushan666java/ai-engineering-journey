@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/17-ai-security-guardrails/08-data-leakage-pii
 title: "Data Leakage & PII Detection"
 sidebar_label: "Data Leakage & PII Detection"
 sidebar_position: 223
+description: "Every AI system that processes user data is a target. Data leakage exposes personally identifiable information (PII), proprietary training data, and"
 ---
 
 <!-- improved -->

@@ -1,3 +1,7 @@
+---
+description: "CNN Fundamentals: Deep learning powers modern AI breakthroughs. PyTorch is the framework of choice for researchers and production engineers alike. This"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 ---

@@ -1,3 +1,7 @@
+---
+description: "Multi-file TypeScript skeleton for the dashboard layer of the code migration agent capstone. The agent (Python) runs in a sandbox; this server renders"
+---
+
 # Code migration agent dashboard (TypeScript skeleton)
 
 Multi-file TypeScript skeleton for the dashboard layer of the code migration

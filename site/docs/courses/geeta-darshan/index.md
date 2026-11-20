@@ -4,6 +4,7 @@ slug: /geeta-darshan
 title: "गीता दर्शन: ओशो की दृष्टि में भगवद्गीता (Geeta Darshan — Osho's Bhagavad Gita)"
 sidebar_label: "गीता दर्शन: ओशो की दृष्टि में भगवद्गीता (Geeta Darshan — Osho's Bhagavad Gita)"
 sidebar_position: 1
+description: "'मैंने गीता पर प्रवचन दिए — गीता दर्शन — क्योंकि यह दुनिया की सबसे क्रांतिकारी किताबों में से एक है। लेकिन याद रखो: मैं कोई भक्त नहीं हूँ, कोई पंडित नहीं"
 ---
 
 # गीता दर्शन: ओशो की दृष्टि में भगवद्गीता (Geeta Darshan — Osho's Bhagavad Gita)

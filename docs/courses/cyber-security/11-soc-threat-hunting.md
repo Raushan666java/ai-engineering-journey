@@ -1,3 +1,7 @@
+---
+description: "Prereq: Chapters 1-3 (Security Fundamentals, Cryptography, Network Security) Target Audience: SOC analysts, threat hunters, blue team members, security"
+---
+
 # Chapter 11: SOC Operations & Threat Hunting
 
 > **Prereq:** Chapters 1-3 (Security Fundamentals, Cryptography, Network Security)

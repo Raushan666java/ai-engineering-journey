@@ -1,3 +1,7 @@
+---
+description: "Attention is the core computation in every transformer model. It lets each token attend to every other token in the sequence. This quadratic O(n²) cost"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Attention & KV Cache Optimization

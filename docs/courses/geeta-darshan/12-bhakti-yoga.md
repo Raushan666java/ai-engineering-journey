@@ -1,3 +1,7 @@
+---
+description: "'Bhakti koi dharam nahin hai — bhakti prem hai. Aur prem sabse chhota raasta hai kyunki woh man ko bypass kar deta hai. Jnani ko vivek ke hazaaron chalne"
+---
+
 # अध्याय १२: भक्ति योग — Prem sabse chhota raasta hai
 
 > **"Bhakti koi dharam nahin hai — bhakti prem hai. Aur prem sabse chhota raasta hai kyunki woh man ko bypass kar deta hai. Jnani ko vivek ke hazaaron chalne padte hain; bhakta ko bas ek chhaang bharne ki zaroorat hoti hai. Lekin yaad rakhna: prem ko dhyan banna hai, sentimentality nahin."**

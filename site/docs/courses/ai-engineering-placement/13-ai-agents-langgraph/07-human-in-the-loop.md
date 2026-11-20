@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/13-ai-agents-langgraph/07-human-in-the-loop
 title: "Human-in-the-Loop"
 sidebar_label: "Human-in-the-Loop"
 sidebar_position: 182
+description: "Human-in-the-Loop: AI agents autonomously use tools to complete tasks. LangGraph builds stateful, multi-step agent workflows. This module covers agent"
 ---
 
 <!-- improved -->

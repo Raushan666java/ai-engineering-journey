@@ -1,3 +1,7 @@
+---
+description: "Lesson 16 stood up the OAuth 2.1 state machine in memory. By 2026, every MCP server you ship to a real org sits behind production auth: client enrollment"
+---
+
 # MCP Auth in Production — Enrollment, JWKS Refresh, Audience-Pinned Tokens
 
 > Lesson 16 stood up the OAuth 2.1 state machine in memory. By 2026, every MCP server you ship to a real org sits behind production auth: client enrollment that scales to an unbounded client population (Client ID Metadata Documents first, dynamic client registration as a backwards-compatible fallback), authorization-server metadata discovery (RFC 8414 *or* OpenID Connect Discovery), JWKS cache refresh that does not break a 3 a.m. token validation, and audience-pinned tokens that refuse cross-resource replay. This lesson models the full surface with three roles — an authorization server, a resource server (the MCP server), and a client — so you can trace every hop from discovery to a validated tool call.

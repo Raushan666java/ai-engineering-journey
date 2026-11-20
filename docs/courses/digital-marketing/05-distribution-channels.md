@@ -1,3 +1,7 @@
+---
+description: "The important asymmetry: owned and earned compound, paid does not. A paid channel stops the day the budget stops. This is not an argument against paid"
+---
+
 # Chapter 5 — Distribution Channels
 
 ## Learning Objectives

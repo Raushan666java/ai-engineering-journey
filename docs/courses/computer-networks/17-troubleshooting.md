@@ -1,3 +1,7 @@
+---
+description: "Network troubleshooting mirrors medical diagnosis. A doctor does not prescribe treatment without examination; a network engineer does not change"
+---
+
 # Chapter 17: Network Troubleshooting
 
 ## Learning Objectives

@@ -1,3 +1,7 @@
+---
+description: "Exam Tip: In Spotting Error questions, check if the voice is appropriate for the context. If the doer of the action is unclear or unimportant, passive"
+---
+
 # Chapter 2: Grammar Essentials
 
 ## Learning Objectives

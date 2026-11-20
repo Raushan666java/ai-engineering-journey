@@ -1,3 +1,7 @@
+---
+description: "Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. It is the foundation"
+---
+
 # Chapter 3: Version Control
 
 > **Prev:** [Advanced Git](./02-git.md)

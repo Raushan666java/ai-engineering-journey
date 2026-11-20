@@ -1,3 +1,7 @@
+---
+description: "NER found 'Paris.' Entity linking decides: Paris, France? Paris Hilton? Paris, Texas? Paris (the Trojan prince)? Without linking, your knowledge graph"
+---
+
 # Entity Linking & Disambiguation
 
 > NER found "Paris." Entity linking decides: Paris, France? Paris Hilton? Paris, Texas? Paris (the Trojan prince)? Without linking, your knowledge graph stays ambiguous.

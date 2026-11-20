@@ -1,3 +1,7 @@
+---
+description: "DevOps is a cultural and technical movement that bridges the gap between development (Dev) and operations (Ops). It emphasises automation, measurement"
+---
+
 # DevOps and CI/CD
 
 ## Learning Objectives

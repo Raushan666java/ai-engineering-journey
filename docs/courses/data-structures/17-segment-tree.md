@@ -1,3 +1,7 @@
+---
+description: "Chapter 8: Binary Trees — Tree concepts, recursion, array-based tree storage | Next: Chapter 18: Union-Find (Disjoint Set Union) — From range queries to"
+---
+
 # Chapter 17: Segment Tree
 
 > **Prerequisites:** [Chapter 8: Binary Trees](./08-binary-trees.md) — Tree concepts, recursion, array-based tree storage | **Next:** [Chapter 18: Union-Find (Disjoint Set Union)](./18-union-find.md) — From range queries to connectivity

@@ -4,6 +4,7 @@ slug: /java/52-docker
 title: "Docker & Containerization"
 sidebar_label: "Docker & Containerization"
 sidebar_position: 52
+description: "Spring Boot's spring-boot-maven-plugin can produce a 'layered' JAR that separates dependencies, framework classes, and application classes into distinct"
 ---
 
 # Docker & Containerization

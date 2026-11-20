@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/05-fastapi-backend/05-authentication-and-authz
 title: "Authentication and Authorization — JWT, OAuth2, and RBAC"
 sidebar_label: "Authentication and Authorization — JWT, OAuth2, and RBAC"
 sidebar_position: 73
+description: "Authentication and Authorization — JWT, OAuth2, and RBAC: FastAPI is the modern Python framework for building AI APIs. Its async support, automatic"
 ---
 
 <!-- improved -->

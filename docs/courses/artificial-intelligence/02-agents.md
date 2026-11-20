@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: A thermostat and a self-driving car are both agents → but worlds apart in complexity. The thermostat perceives temperature (sensor)"
+---
+
 # Chapter 2: Intelligent Agents
 
 **Previous:** [Chapter 1: Introduction to AI](01-introduction.md) | **Next:** [Chapter 3: Solving Problems by Searching](03-search.md)

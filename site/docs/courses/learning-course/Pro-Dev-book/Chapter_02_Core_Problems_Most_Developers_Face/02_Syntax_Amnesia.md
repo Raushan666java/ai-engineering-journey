@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_02_Core_Problems_Most_Developers_Fac
 title: "🧠 Syntax Amnesia"
 sidebar_label: "🧠 Syntax Amnesia"
 sidebar_position: 2
+description: "Because autocomplete tools (like Copilot and Intellisense) now handle up to 90% of our keystrokes, the human brain has adapted. It has shifted from"
 ---
 # 🧠 Syntax Amnesia
 

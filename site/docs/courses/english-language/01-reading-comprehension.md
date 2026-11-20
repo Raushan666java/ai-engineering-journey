@@ -4,6 +4,7 @@ slug: /english-language/01-reading-comprehension
 title: "Chapter 1: Reading Comprehension"
 sidebar_label: "Chapter 1: Reading Comprehension"
 sidebar_position: 1
+description: "Reading Comprehension (RC) is the single highest-weightage topic in IBPS SO IT Officer Prelims, accounting for 8–10 questions out of 25 English Language"
 ---
 
 # Chapter 1: Reading Comprehension

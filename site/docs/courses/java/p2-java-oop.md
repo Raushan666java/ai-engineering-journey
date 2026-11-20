@@ -4,6 +4,7 @@ slug: /java/p2-java-oop
 title: "Object-Oriented Programming in Java"
 sidebar_label: "Object-Oriented Programming in Java"
 sidebar_position: 77
+description: "Java is an object-oriented language: every piece of data except primitive types belongs to a class, and every class can produce objects (instances). A"
 ---
 
 # Object-Oriented Programming in Java

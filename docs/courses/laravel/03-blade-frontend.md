@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: The $loop->parent property is invaluable when rendering nested collections — it lets you access the outer loop's iteration count from within an"
+---
+
 # Chapter 3: Blade Templating, Components & Frontend
 > **Previous:** [Architecture & Routing](./02-architecture-routing) | **Next:** [Eloquent ORM, Database & Migrations](./04-eloquent-database)
 

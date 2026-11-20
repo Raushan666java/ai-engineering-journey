@@ -1,3 +1,7 @@
+---
+description: "Git is the industry-standard version control system. Understanding Git fundamentals — init, add, commit, branching — is essential for every software"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Git Basics

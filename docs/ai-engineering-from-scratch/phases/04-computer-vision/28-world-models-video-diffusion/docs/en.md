@@ -1,3 +1,7 @@
+---
+description: "Video generation and world modelling converged in 2026. A model that can generate a coherent minute of video has, in some sense, learned how the world"
+---
+
 # World Models & Video Diffusion
 
 > A video model that predicts the next seconds of a scene is a world simulator. Condition that prediction on actions and you have a learned game engine.

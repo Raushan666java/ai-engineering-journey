@@ -1,3 +1,7 @@
+---
+description: "The trap: a technical writer produces excellent informational content and then wonders why nobody hires them. Informational readers are not buyers yet. The"
+---
+
 # Chapter 6 — Content Engine and SEO
 
 ## Learning Objectives

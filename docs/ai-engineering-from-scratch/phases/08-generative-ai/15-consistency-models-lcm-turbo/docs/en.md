@@ -1,3 +1,7 @@
+---
+description: "The dominant cost of diffusion is not the model size -- it is the number of sequential forward passes. Consistency models collapse 50 steps into 1-4 by"
+---
+
 # Consistency Models -- LCM, SDXL Turbo, Rectified Flow
 
 > The dominant cost of diffusion is not the model size -- it is the number of sequential forward passes. Consistency models collapse 50 steps into 1-4 by learning a direct mapping from noise to data along the probability flow ODE. Every fast image generator shipping in 2026 uses one of three recipes: consistency distillation, adversarial distillation, or rectified flow straightening.

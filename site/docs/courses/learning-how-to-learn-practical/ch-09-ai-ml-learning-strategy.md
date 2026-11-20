@@ -4,6 +4,7 @@ slug: /learning-how-to-learn-practical/ch-09-ai-ml-learning-strategy
 title: "Chapter 9: Mastering Hard Subjects"
 sidebar_label: "Chapter 9: Mastering Hard Subjects"
 sidebar_position: 10
+description: "Any hard subject — whether it's backpropagation, constitutional law, or organic chemistry — is not one skill but a stack of interconnected concepts"
 ---
 
 # Chapter 9: Mastering Hard Subjects

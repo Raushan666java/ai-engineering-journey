@@ -4,6 +4,7 @@ slug: /bhagavad-gita/17-shraddhatraya-yoga
 title: "Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature"
 sidebar_label: "Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature"
 sidebar_position: 17
+description: "Arjuna has just been told, at the end of chapter sixteen, that scripture is the authority for action. Now he asks the question that follows inevitably"
 ---
 
 # Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature

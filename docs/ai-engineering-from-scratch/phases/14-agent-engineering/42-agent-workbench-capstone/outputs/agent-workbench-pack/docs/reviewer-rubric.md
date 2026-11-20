@@ -1,3 +1,7 @@
+---
+description: "Total >= 7 with no zeros: pass. Total 5-6: soft fail. Below 5 or any zero: hard fail."
+---
+
 # Reviewer Rubric
 
 Five dimensions, scored 0 to 2.

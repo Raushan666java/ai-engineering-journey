@@ -1,3 +1,7 @@
+---
+description: "A number system defines how numbers are represented using a set of symbols (digits). The four primary number systems relevant to computer organisation are:"
+---
+
 # Number Systems & Boolean Algebra
 
 ## Learning Objectives

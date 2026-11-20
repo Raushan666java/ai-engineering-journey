@@ -4,6 +4,7 @@ slug: /digital-marketing/05-distribution-channels
 title: "Chapter 5 — Distribution Channels"
 sidebar_label: "Chapter 5 — Distribution Channels"
 sidebar_position: 5
+description: "The important asymmetry: owned and earned compound, paid does not. A paid channel stops the day the budget stops. This is not an argument against paid"
 ---
 
 # Chapter 5 — Distribution Channels

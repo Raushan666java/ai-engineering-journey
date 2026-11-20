@@ -1,3 +1,7 @@
+---
+description: "Learning is the bottleneck of every career, and AI has changed the game. This course is the end-to-end playbook for using AI — ChatGPT, Claude, Gemini"
+---
+
 # AI-Powered Learning — Learn Anything Fast with AI
 
 ## Course Overview

@@ -4,6 +4,7 @@ slug: /algorithms/18-advanced
 title: "Chapter 18: Advanced Topics"
 sidebar_label: "Chapter 18: Advanced Topics"
 sidebar_position: 18
+description: "Real-world analogy: A librarian managing a million-book collection does not rearrange every shelf when a new book arrives. Instead, she keeps a"
 ---
 
 # Chapter 18: Advanced Topics

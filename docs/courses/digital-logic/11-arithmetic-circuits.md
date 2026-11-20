@@ -1,3 +1,7 @@
+---
+description: "SRT division (named for Sweeney, Robertson, Tocher) uses a redundant quotient digit set {-1, 0, +1} and a radix higher than 2, enabling faster division"
+---
+
 # Chapter 11: Arithmetic Circuits
 
 > **Prereq:** Chapter 5 (Combinational Circuits) ? adders and ALUs provide the foundation for multiplication and division.

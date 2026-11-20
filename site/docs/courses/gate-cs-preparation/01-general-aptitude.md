@@ -1,9 +1,10 @@
 ---
 id: 01-general-aptitude
 slug: /gate-cs-preparation/01-general-aptitude
-title: "01 General Aptitude"
-sidebar_label: "01 General Aptitude"
+title: "01-general-aptitude"
+sidebar_label: "01-general-aptitude"
 sidebar_position: 1
+description: "General Aptitude is a compulsory section in GATE CS, carrying 15 marks (15% of the total 100 marks). It consists of:"
 ---
 
 ﻿# General Aptitude for GATE CS
@@ -87,7 +88,6 @@ General Aptitude is a compulsory section in GATE CS, carrying **15 marks** (15% 
 
 ### 1.1 Number Systems
 
-
 **Q1: What are the key properties of prime numbers relevant to GATE?**
 
 **Answer:** A prime number is a natural number greater than 1 that has exactly two distinct positive divisors: 1 and itself.
@@ -149,7 +149,6 @@ Verification: 93 ÷ 6 = 15 remainder 3 ✓, 93 ÷ 9 = 10 remainder 3 ✓, 93 ÷ 
 
 ### 1.2 Percentages
 
-
 **Q5: A student's marks increased from 320 to 384. What is the percentage increase?**
 
 **Answer:** Percentage change = `(Change / Original) × 100%`
@@ -192,7 +191,6 @@ Alternative: P × (1 + r/100)^n = 50,000 × (1.05)² = 50,000 × 1.1025 = 55,125
 
 ### 1.3 Profit and Loss
 
-
 **Q9: A shopkeeper sells an item at a 20% profit. If the cost price is ₹250, find the selling price.**
 
 **Solution:**
@@ -223,7 +221,6 @@ Actual profit % = (20 / 80) × 100% = 25%
 
 ### 1.4 Simple and Compound Interest
 
-
 **Q12: A sum of ₹5000 is invested at 8% simple interest per annum. Find the amount after 3 years.**
 
 **Solution:**
@@ -251,7 +248,6 @@ P = 25 / 0.0025 = ₹10,000
 ---
 
 ### 1.5 Time, Speed, and Distance
-
 
 **Q15: A train 150 m long passes a platform 250 m long in 20 seconds. Find the speed of the train.**
 
@@ -297,7 +293,6 @@ Speed of stream = (6 - 4) / 2 = 1 km/h
 
 ### 1.6 Time and Work
 
-
 **Q19: A can complete a work in 10 days and B in 15 days. How many days will they take together?**
 
 **Solution:**
@@ -331,7 +326,6 @@ B's total days = 48/5 = 9.6 days
 
 ### 1.7 Pipes and Cisterns
 
-
 **Q22: Pipe A fills a tank in 8 hours, Pipe B in 12 hours. Pipe C empties it in 24 hours. If all are opened together, how long to fill the tank?**
 
 **Solution:**
@@ -354,7 +348,6 @@ Time for B alone = (7/12) / (1/30) = (7/12) × 30 = 17.5 minutes
 ---
 
 ### 1.8 Ratio and Proportion
-
 
 **Q24: If A : B = 2 : 3 and B : C = 5 : 7, find A : C.**
 
@@ -388,7 +381,6 @@ Total = 2x + 3x + 5x = 10x = 10 × 150 = ₹1500
 ---
 
 ### 1.9 Mixtures and Alligations
-
 
 **Q27: In what ratio must rice at ₹50/kg be mixed with rice at ₹70/kg to get a mixture worth ₹62/kg?**
 
@@ -429,7 +421,6 @@ Milk = 5 × 4 = 20 liters
 
 ### 1.10 Averages
 
-
 **Q30: The average of 5 numbers is 27. If one number is removed, the average becomes 24. Find the removed number.**
 
 **Solution:**
@@ -460,18 +451,17 @@ Sum of last 6 = 6 × 53 = 318
 
 ### 1.11 Permutations and Combinations
 
-
 **Q33: How many 3-digit numbers can be formed from digits 1, 2, 3, 4, 5 without repetition?**
 
 **Solution:**
-Number of ways = âÂÂ�µP₃ = 5! / (5-3)! = 5 × 4 × 3 = 60
+Number of ways = Ã¢ÂµPâ‚ƒ = 5! / (5-3)! = 5 Ã— 4 Ã— 3 = 60
 
 ---
 
 **Q34: In how many ways can a committee of 3 be chosen from 7 people?**
 
 **Solution:**
-Number of ways = âÂÂ�·C₃ = 7! / (3! × 4!) = (7 × 6 × 5) / (3 × 2 × 1) = 35
+Number of ways = Ã¢Â·Câ‚ƒ = 7! / (3! Ã— 4!) = (7 Ã— 6 Ã— 5) / (3 Ã— 2 Ã— 1) = 35
 
 ---
 
@@ -489,7 +479,7 @@ Number of distinct words = 6! / (3! × 2!) = 720 / (6 × 2) = 60
 **Solution:**
 First arrange the 4 boys: 4! = 24 ways
 This creates 5 gaps (before, between, after boys)
-Choose 3 gaps for girls: âÂÂ�µC₃ = 10
+Choose 3 gaps for girls: Ã¢ÂµCâ‚ƒ = 10
 Arrange girls in those gaps: 3! = 6
 Total = 24 × 10 × 6 = 1440 ways
 
@@ -497,13 +487,12 @@ Total = 24 × 10 × 6 = 1440 ways
 
 ### 1.12 Probability
 
-
 **Q37: A bag contains 5 red and 3 green balls. Two balls are drawn at random. Find the probability that both are red.**
 
 **Solution:**
 Total balls = 8
-Ways to choose 2 balls: âÂÂ�¸C₂ = 28
-Ways to choose 2 red balls: âÂÂ�µC₂ = 10
+Ways to choose 2 balls: Ã¢Â¸Câ‚‚ = 28
+Ways to choose 2 red balls: Ã¢ÂµCâ‚‚ = 10
 Probability = 10/28 = 5/14
 
 ---
@@ -521,9 +510,9 @@ Probability = 6/36 = 1/6
 
 **Solution:**
 P(X ≥ 3) = P(3) + P(4) + P(5)
-P(3) = âÂÂ�µC₃ × (1/2)âÂÂ�µ = 10/32
-P(4) = âÂÂ�µC₄ × (1/2)âÂÂ�µ = 5/32
-P(5) = âÂÂ�µC₅ × (1/2)âÂÂ�µ = 1/32
+P(3) = Ã¢ÂÂµCÃ¢â€šÆ’ Ãƒâ€” (1/2)Ã¢Âµ = 10/32
+P(4) = Ã¢ÂÂµCÃ¢â€šâ€ž Ãƒâ€” (1/2)Ã¢Âµ = 5/32
+P(5) = Ã¢ÂÂµCÃ¢â€šâ€¦ Ãƒâ€” (1/2)Ã¢Âµ = 1/32
 Total = 16/32 = 1/2
 
 ---
@@ -540,7 +529,6 @@ P = (0.8 × 0.4) + (0.2 × 0.6) = 0.32 + 0.12 = 0.44
 ---
 
 ### 1.13 Data Interpretation
-
 
 **Q41: Study the table and answer the question.**
 
@@ -620,7 +608,6 @@ Average growth rate = (27,500/200,000) × 100% = 13.75% per year
 
 ### Quantitative Aptitude → Practice Problems
 
-
 **Practice 1:** Find the greatest 4-digit number divisible by 12, 18, and 27.
 
 **Answer:** 9720
@@ -666,7 +653,6 @@ Average growth rate = (27,500/200,000) × 100% = 13.75% per year
 ## Section 2: Logical Reasoning
 
 ### 2.1 Blood Relations
-
 
 **Q45: A is the brother of B. B is the daughter of C. D is the father of C. How is A related to D?**
 
@@ -715,7 +701,6 @@ So G is **great-grandfather** of F (or F is great-grandchild of G).
 
 ### 2.2 Direction Sense
 
-
 **Q49: A man walks 5 km East, turns right and walks 4 km, turns right and walks 10 km, turns left and walks 4 km. How far is he from the starting point?**
 
 **Solution:**
@@ -753,7 +738,6 @@ Since X is talking to Y, X faces Y, so X is facing **South**.
 ---
 
 ### 2.3 Syllogisms (Venn Diagram Method)
-
 
 **Q52: Determine validity using Venn diagrams:**
 
@@ -794,7 +778,6 @@ Draw a Venn diagram where: Animals (outermost circle) contains Mammals (inner ci
 ---
 
 ### 2.4 Seating Arrangements
-
 
 **Q55: Six people A, B, C, D, E, F sit in a row facing North.**
 
@@ -915,10 +898,10 @@ E opposite F: (1,5), (2,6→no 2 is A), (3,7), (4,8→no)
 So E,F at (1,5) or (3,7) or (5,1) or (7,3)
 
 Case 1: E=1, F=5. Remaining: 6,7 for C, D.
-C third left of D: D=6, C=3 (no, G). D=7, C=4 (no, H). âœ—
+C third left of D: D=6, C=3 (no, G). D=7, C=4 (no, H). ✗
 
 Case 2: E=5, F=1. Remaining: 6,7 for C, D.
-D=6, third left = 3 (no, G). D=7, third left = 4 (no, H). âœ—
+D=6, third left = 3 (no, G). D=7, third left = 4 (no, H). ✗
 
 Case 3: E=7, F=3 (no, G).
 
@@ -945,7 +928,6 @@ The method to solve circular arrangements:
 ---
 
 ### 2.5 Coding-Decoding
-
 
 **Q57: In a certain code, HOUSE is written as 8-15-21-19-5. How is FLOWER written?**
 
@@ -999,7 +981,6 @@ The code for "dark" is **1**.
 
 ### 2.6 Analogies
 
-
 **Q60: Doctor : Patient :: Teacher : ?**
 
 **Answer:** Student
@@ -1025,7 +1006,6 @@ The code for "dark" is **1**.
 ---
 
 ### 2.7 Statement-Conclusion
-
 
 **Q63: Statement: All roses are flowers. Some flowers are red.**
 
@@ -1056,7 +1036,6 @@ Which conclusion(s) follow?
 ---
 
 ### 2.8 Statement-Assumption
-
 
 **Q65: Statement: "If you want to succeed in the competitive exam, join ABC Coaching Center." → An advertisement.**
 
@@ -1090,7 +1069,6 @@ Which are valid assumptions?
 
 ### Logical Reasoning → Practice Problems
 
-
 **Practice 11:** A is the father of B. B is the sister of C. D is the mother of C. E is the brother of D. How is A related to E?
 
 **Answer:** Brother-in-law
@@ -1120,7 +1098,6 @@ Which are valid assumptions?
 ## Section 3: Verbal Ability
 
 ### 3.1 Vocabulary → Synonyms and Antonyms
-
 
 **Q67: Find the synonym of "UBIQUITOUS".**
 
@@ -1172,7 +1149,6 @@ Which are valid assumptions?
 
 ### 3.2 Word Groups / One-word Substitutions
 
-
 **Q73: One who is a specialist in heart diseases is called a ___.**
 
 **Answer:** Cardiologist
@@ -1210,7 +1186,6 @@ Which are valid assumptions?
 
 ### 3.3 Grammar → Subject-Verb Agreement
 
-
 **Q76: Choose the correct option: "Neither the teacher nor the students ___ (is/are) present."**
 
 **Answer:** are
@@ -1247,7 +1222,6 @@ If the members act individually: "The committee have disagreed on several points
 
 ### 3.4 Grammar → Tenses
 
-
 **Q80: "She ___ (work) here since 2015." Fill with correct tense.**
 
 **Answer:** has been working / has worked
@@ -1274,7 +1248,6 @@ If the members act individually: "The committee have disagreed on several points
 
 ### 3.5 Grammar → Articles
 
-
 **Q83: Fill the blanks: "___ elephant is ___ largest land animal."**
 
 **Answer:** The, the
@@ -1287,7 +1260,7 @@ If the members act individually: "The committee have disagreed on several points
 
 **Answer:** a
 
-**Rule:** "University" begins with a consonant sound /juËÂÂ�/, so we use "a" not "an". The article depends on sound, not spelling.
+**Rule:** "University" begins with a consonant sound /juː/, so we use "a" not "an". The article depends on sound, not spelling.
 
 ---
 
@@ -1300,7 +1273,6 @@ If the members act individually: "The committee have disagreed on several points
 ---
 
 ### 3.6 Reading Comprehension
-
 
 **Q86: Read the passage and answer the questions.**
 
@@ -1334,7 +1306,6 @@ If the members act individually: "The committee have disagreed on several points
 
 ### 3.7 Sentence Completion
 
-
 **Q88: The professor's lecture was so ___ that most students struggled to follow the thread of his argument.**
 
 Options: a) Lucid b) Obscure c) Succinct d) Verbose
@@ -1366,7 +1337,6 @@ Options: a) Penchant b) Aversion c) Disdain d) Indifference
 ---
 
 ### 3.8 Para-jumbles
-
 
 **Q91: Arrange the following sentences into a coherent paragraph:**
 
@@ -1421,7 +1391,6 @@ D continues with another example (mass conservation).
 
 ### 3.9 Critical Reasoning
 
-
 **Q94: All oranges are fruits. All fruits grow on plants. Therefore, all oranges grow on plants. This is an example of:**
 
 **Answer:** Deductive reasoning
@@ -1446,7 +1415,6 @@ D continues with another example (mass conservation).
 
 ### Verbal Ability → Practice Problems
 
-
 **Practice 17:** Synonym of "PERFIDIOUS" → Answer: Treacherous
 
 **Practice 18:** Antonym of "BENEVOLENT" → Answer: Malevolent
@@ -1470,7 +1438,6 @@ D continues with another example (mass conservation).
 ## Section 4: Spatial and Analytical Reasoning
 
 ### 4.1 Visual Reasoning
-
 
 **Q97: What comes next in the sequence?**
 
@@ -1525,7 +1492,6 @@ Total triangles = 4 + 2 + 1 = 7
 
 ### 4.2 Cube and Dice Problems
 
-
 **Q100: A cube is painted on all faces and cut into 125 smaller cubes of equal size. How many smaller cubes have exactly 2 faces painted?**
 
 **Solution:**
@@ -1578,7 +1544,6 @@ Standard dice: opposite of 3 is 4. So the answer is **4**.
 
 ### 4.3 Mirror Images
 
-
 **Q103: If the time on a clock shows 3:45, what will it look like in a mirror?**
 
 **Answer:** If the clock shows 3:45, the mirror image will show 8:15 (approximately).
@@ -1597,16 +1562,15 @@ A → A (symmetrical vertically)
 T → T (flipped horizontally → T stays same)
 E → (flipped horizontally → reverse E)
 
-The mirror image would read as: ðÂÂ�ž—Â�TΛ⅃ (the actual reversed visual representation).
+The mirror image would read as: 𝞔TΛ⅃ (the actual reversed visual representation).
 
 For exam purposes: The letters that look the same in a vertical mirror (left-right inversion) are: A, H, I, M, O, T, U, V, W, X, Y. Others are reversed.
 
-So GATE → ðÂÂ�ž—Â�TΛ⅃ (reading right to left from original).
+So GATE → ðž”TΛ⅃ (reading right to left from original).
 
 ---
 
 ### 4.4 Paper Folding
-
 
 **Q105: A square paper is folded in half, then in half again (quarter). A hole is punched through all layers at a specific location. How many holes are in the unfolded paper?**
 
@@ -1632,7 +1596,6 @@ Where will the holes appear?
 ---
 
 ### 4.5 Pattern Recognition
-
 
 **Q107: Find the next term: 1, 4, 9, 16, 25, ?**
 
@@ -1669,7 +1632,6 @@ Or: n(n+1): 1×2, 2×3, 3×4, 4×5, 5×6, 6×7 = 42
 ---
 
 ### Spatial & Analytical Reasoning → Practice Problems
-
 
 **Practice 26:** A 3 × 3 × 3 cube is painted red and cut into unit cubes. How many cubes have exactly 1 face painted?
 
@@ -1734,7 +1696,6 @@ Or: n(n+1): 1×2, 2×3, 3×4, 4×5, 5×6, 6×7 = 42
 
 ### Quantitative Aptitude
 
-
 | Concept | Formula |
 |---------|---------|
 | Percentage change | `(New - Old) / Old × 100%` |
@@ -1746,12 +1707,11 @@ Or: n(n+1): 1×2, 2×3, 3×4, 4×5, 5×6, 6×7 = 42
 | Average speed (round trip) | `2ab / (a + b)` |
 | Work formula | `Work = Rate × Time` |
 | LCM × HCF | `a × b = LCM(a,b) × HCF(a,b)` |
-| Combinations | `âÂÂ�¿Cᵣ = n! / (r! × (n-r)!)` |
-| Permutations | `âÂÂ�¿Pᵣ = n! / (n-r)!` |
+| Combinations | `Ã¢Â¿Cáµ£ = n! / (r! Ã— (n-r)!)` |
+| Permutations | `Ã¢Â¿Páµ£ = n! / (n-r)!` |
 | Probability | `P(E) = Favorable / Total` |
 
 ### Logical Reasoning
-
 
 | Concept | Method |
 |---------|--------|
@@ -1764,7 +1724,6 @@ Or: n(n+1): 1×2, 2×3, 3×4, 4×5, 5×6, 6×7 = 42
 
 ### Verbal Ability
 
-
 | Concept | Tip |
 |---------|-----|
 | Synonyms/Antonyms | Learn word roots, prefixes, suffixes |
@@ -1774,7 +1733,6 @@ Or: n(n+1): 1×2, 2×3, 3×4, 4×5, 5×6, 6×7 = 42
 | Reading comprehension | Read questions first, then skim passage |
 
 ### Spatial Reasoning
-
 
 | Cube Type | Zero Faces | One Face | Two Faces | Three Faces |
 |-----------|-----------|----------|-----------|-------------|
@@ -1790,11 +1748,9 @@ Or: n(n+1): 1×2, 2×3, 3×4, 4×5, 5×6, 6×7 = 42
 
 ### Quantitative Aptitude (20 Problems)
 
-
 **Cross-Reference:** R.S. Aggarwal → Quantitative Aptitude, Chapters: Time & Work (Ch. 15), Probability (Ch. 31), Profit & Loss (Ch. 10), Number Systems (Ch. 1-2), Pipes & Cisterns (Ch. 16), Permutations (Ch. 30), Ratio (Ch. 8), Averages (Ch. 6), Interest (Ch. 11-12), Speed/Distance (Ch. 17), Mixture (Ch. 20), Set Theory (Ch. 13), Data Interpretation (Ch. 35-38). Also see Arun Sharma → Quantitative Aptitude, Chapters 7-14.
 
 ### PYQ-1 (GATE 2019) → Time & Work
-
 
 A can complete a work in 12 days, B in 18 days. They work together for 4 days, then A leaves. How many more days will B take to finish the remaining work?
 
@@ -1814,23 +1770,21 @@ Time for B alone = (4/9) / (1/18) = (4/9) × 18 = 8 days
 
 ### PYQ-2 (GATE 2020) → Probability
 
-
 A bag contains 4 red, 5 green, and 6 blue balls. Three balls are drawn at random. What is the probability that all three are of different colors?
 
 **Solution:**
 
 Total balls = 4 + 5 + 6 = 15
 
-Total ways to pick 3 balls = ¹âÂÂ�µC₃ = (15×14×13)/(3×2×1) = 455
+Total ways to pick 3 balls = Ã‚Â¹Ã¢ÂµCâ‚ƒ = (15Ã—14Ã—13)/(3Ã—2Ã—1) = 455
 
-Favorable ways = âÂÂ�´Câ‚ÂÂ� × âÂÂ�µCâ‚ÂÂ� × âÂÂ�¶Câ‚ÂÂ� = 4 × 5 × 6 = 120
+Favorable ways = Ã¢ÂÂ´CÃ¢â€šÂ Ãƒâ€” Ã¢ÂÂµCÃ¢â€šÂ Ãƒâ€” Ã¢ÂÂ¶CÃ¢â€šÂ = 4 × 5 × 6 = 120
 
 Probability = 120/455 = 24/91
 
 **Answer: 24/91**
 
 ### PYQ-3 (GATE 2021) → Profit & Loss
-
 
 A shopkeeper marks goods 30% above the cost price and gives a 10% discount on the marked price. Find his profit percentage.
 
@@ -1852,21 +1806,19 @@ Profit % = (17/100) × 100% = 17%
 
 ### PYQ-4 (GATE 2022) → Number Systems
 
-
-Find the remainder when 2âÂÂ�¸âÂÂ�° is divided by 17.
+Find the remainder when 2Ã¢ÂÂ¸Ã¢Â° is divided by 17.
 
 **Solution:**
 
 By Fermat's Little Theorem: a^(p-1) ≡ 1 (mod p) when p is prime and gcd(a,p)=1
 
-2¹âÂÂ�¶ ≡ 1 (mod 17)
+2Ã‚Â¹Ã¢Â¶ â‰¡ 1 (mod 17)
 
-2âÂÂ�¸âÂÂ�° = 2^(16×5) = (2¹âÂÂ�¶)âÂÂ�µ ≡ 1âÂÂ�µ ≡ 1 (mod 17)
+2Ã¢ÂÂ¸Ã¢ÂÂ° = 2^(16Ãƒâ€”5) = (2Ã‚Â¹Ã¢ÂÂ¶)Ã¢ÂÂµ Ã¢â€°Â¡ 1Ã¢Âµ â‰¡ 1 (mod 17)
 
 **Answer: 1**
 
 ### PYQ-5 (GATE 2019) → Pipes & Cisterns
-
 
 Two pipes A and B fill a tank in 15 and 20 hours respectively. A third pipe C empties the tank in 30 hours. All three are opened together for 5 hours, then C is closed. How many more hours are needed to fill the tank completely?
 
@@ -1892,7 +1844,6 @@ Time needed = (7/12) / (7/60) = (7/12) × (60/7) = 5 hours
 
 ### PYQ-6 (GATE 2023) → Permutations
 
-
 How many 4-digit numbers greater than 5000 can be formed using the digits 3, 5, 6, 7, 8 without repetition?
 
 **Solution:**
@@ -1901,14 +1852,13 @@ For the number to be > 5000, the thousands digit must be ≥ 5.
 
 Available digits for thousands place: {5, 6, 7, 8} = 4 choices
 
-Remaining 3 positions must be filled with remaining 4 digits: âÂÂ�´P₃ = 4!/(4-3)! = 24 ways
+Remaining 3 positions must be filled with remaining 4 digits: Ã¢Â´Pâ‚ƒ = 4!/(4-3)! = 24 ways
 
 Total = 4 × 24 = 96
 
 **Answer: 96**
 
 ### PYQ-7 (GATE 2024) → Ratio & Proportion
-
 
 The ratio of the ages of A and B is 3:5. After 6 years, the ratio becomes 2:3. Find A's present age.
 
@@ -1930,7 +1880,6 @@ A's present age = 3 × 6 = 18 years
 
 ### PYQ-8 (GATE 2020) → Averages
 
-
 The average weight of 8 people increases by 2.5 kg when a new person replaces one weighing 65 kg. Find the weight of the new person.
 
 **Solution:**
@@ -1944,7 +1893,6 @@ New person's weight = 65 + 20 = 85 kg
 **Answer: 85 kg**
 
 ### PYQ-9 (GATE 2022) → Simple Interest
-
 
 A sum of money doubles itself in 5 years at simple interest. In how many years will it become 4 times at the same rate?
 
@@ -1963,7 +1911,6 @@ T = (3P × 100) / (P × 20) = 15 years
 **Answer: 15 years**
 
 ### PYQ-10 (GATE 2021) → Time, Speed & Distance
-
 
 A train passes a standing man in 12 seconds and a 240-meter-long platform in 36 seconds. Find the length and speed of the train.
 
@@ -1991,7 +1938,6 @@ L = 12 × 10 = 120 m
 
 ### PYQ-11 (GATE 2023) → Mixtures & Alligations
 
-
 A 20-liter mixture contains milk and water in the ratio 3:2. How much milk should be added to make the ratio 4:1?
 
 **Solution:**
@@ -2012,7 +1958,6 @@ x = 20 L
 
 ### PYQ-12 (GATE 2019) → Set Theory
 
-
 In a class, 60% of students like Cricket, 50% like Football, and 30% like both. What percentage of students like at least one sport?
 
 **Solution:**
@@ -2024,7 +1969,6 @@ n(C ∪ F) = n(C) + n(F) - n(C ∩ F)
 **Answer: 80%**
 
 ### PYQ-13 (GATE 2024) → Probability
-
 
 A fair die is rolled twice. What is the probability that the sum of the two numbers obtained is divisible by 3?
 
@@ -2050,7 +1994,6 @@ Probability = 12/36 = 1/3
 
 ### PYQ-14 (GATE 2025) → Percentages
 
-
 In an examination, a student scores 35% of the maximum marks and fails by 15 marks. Another student scores 45% and gets 25 marks more than the passing marks. Find the maximum marks and the passing marks.
 
 **Solution:**
@@ -2068,7 +2011,6 @@ From first equation: 0.35 × 400 = P - 15 → 140 = P - 15 → P = 155
 **Answer: Maximum marks = 400, Passing marks = 155**
 
 ### PYQ-15 (GATE 2025) → Time & Work
-
 
 20 men can complete a work in 15 days. After working for 5 days, 5 more men join them. How many total days are needed to complete the work?
 
@@ -2089,7 +2031,6 @@ Total days = 5 + 8 = 13 days
 **Answer: 13 days**
 
 ### PYQ-16 (GATE 2020) → Number Systems
-
 
 What is the smallest 4-digit number that is divisible by 6, 8, and 15?
 
@@ -2115,7 +2056,6 @@ Next multiple: 9 × 120 = 1080
 
 ### PYQ-17 (GATE 2021) → Permutations
 
-
 In how many ways can the letters of the word "MISSISSIPPI" be arranged?
 
 **Solution:**
@@ -2136,7 +2076,6 @@ Number of distinct arrangements = 11! / (4! × 4! × 2! × 1!)
 
 ### PYQ-18 (GATE 2023) → Data Interpretation
 
-
 A company's revenue (in ₹crore) for 2019-2022: 2019=200, 2020=250, 2021=300, 2022=360. Find the Compound Annual Growth Rate (CAGR) from 2019 to 2022.
 
 **Solution:**
@@ -2155,7 +2094,6 @@ CAGR = (End Value / Start Value)^(1/n) - 1
 
 ### PYQ-19 (GATE 2024) → Averages
 
-
 The average of 5 numbers is 24. If one number is excluded, the average of the remaining 4 numbers becomes 20. Find the excluded number.
 
 **Solution:**
@@ -2169,7 +2107,6 @@ Excluded number = 120 - 80 = 40
 **Answer: 40**
 
 ### PYQ-20 (GATE 2025) → Profit & Loss
-
 
 A fruit vendor sells oranges at ₹120 per dozen and gains 20%. How many oranges did he buy for ₹100?
 
@@ -2187,11 +2124,9 @@ For ₹100: Number of oranges = 100 / (25/3) = 100 × 3/25 = 12
 
 ### Logical Reasoning (15 Problems)
 
-
 **Cross-Reference:** R.S. Aggarwal → Logical Reasoning, Chapters: Blood Relations (Ch. 4), Direction Sense (Ch. 5), Syllogisms (Ch. 6), Coding-Decoding (Ch. 2), Seating Arrangements (Ch. 8-9), Analogies (Ch. 1). See also Arun Sharma → Logical Reasoning, Chapters 1-6.
 
 ### PYQ-21 (GATE 2019) → Blood Relations
-
 
 A is the mother of B. B is the sister of C. D is the son of C. E is the brother of D. How is A related to E?
 
@@ -2207,7 +2142,6 @@ A is E's **grandmother**.
 **Answer: Grandmother**
 
 ### PYQ-22 (GATE 2020) → Direction Sense
-
 
 A person walks 10 m towards East, then turns right and walks 15 m, then turns left and walks 20 m, then turns left and walks 15 m. How far is he from the starting point and in which direction?
 
@@ -2231,7 +2165,6 @@ Direction: East
 
 ### PYQ-23 (GATE 2021) → Syllogisms
 
-
 Statements:
 1. All squares are rectangles.
 2. All rectangles are polygons.
@@ -2253,7 +2186,6 @@ II. Some polygons are squares: TRUE (since all squares are polygons, there exist
 **Answer: Both I and II follow**
 
 ### PYQ-24 (GATE 2022) → Coding-Decoding
-
 
 In a certain code, "CRICKET" is coded as "DSJDLFU". How is "FOOTBALL" coded?
 
@@ -2285,7 +2217,6 @@ F → G, O → P, O → P, T → U, B → C, A → B, L → M, L → M
 
 ### PYQ-25 (GATE 2023) → Seating Arrangement (Linear)
 
-
 Five friends P, Q, R, S, T sit in a row facing North. Q sits to the immediate left of R. S sits between P and T. T sits at one of the extreme ends. P is not adjacent to Q. Find the arrangement.
 
 **Solution:**
@@ -2316,7 +2247,6 @@ Final arrangement (left to right): Q, R, P, S, T
 
 ### PYQ-26 (GATE 2019) → Statement-Conclusion
 
-
 Statement: Some birds are flying creatures. All flying creatures have wings.
 
 Conclusion I: All birds have wings.
@@ -2334,7 +2264,6 @@ II. Some flying creatures are birds: Follows. Since some birds are flying creatu
 **Answer: Only II follows**
 
 ### PYQ-27 (GATE 2024) → Analogies
-
 
 Select the pair that has the same relationship as "Gravity : Pull"
 
@@ -2364,7 +2293,6 @@ D) Heat is opposite of cold → antonym
 
 ### PYQ-28 (GATE 2021) → Direction Sense
 
-
 A man starts from his house and walks 6 km towards South. He turns right and walks 4 km. Then he turns right again and walks 12 km. Then he turns left and walks 4 km. How far is he from his house?
 
 **Solution:**
@@ -2385,7 +2313,6 @@ Distance from (0,0): √((-8)² + 6²) = √(64 + 36) = √100 = 10 km
 
 ### PYQ-29 (GATE 2025) → Blood Relations
 
-
 A + B means A is the father of B. A - B means A is the mother of B. A × B means A is the brother of B. A ÷ B means A is the sister of B.
 
 In the expression P + Q × R - S, how is P related to S?
@@ -2405,7 +2332,6 @@ P is grandparent of S (specifically, P is S's **maternal grandfather**).
 **Answer: Maternal grandfather**
 
 ### PYQ-30 (GATE 2020) → Seating Arrangement (Circular)
-
 
 Six persons A, B, C, D, E, F sit around a circular table facing the center. A sits second to the right of B. C sits between D and E. F is not adjacent to B. If D is opposite to A, find the arrangement (clockwise starting from A).
 
@@ -2449,7 +2375,7 @@ If C at 3, E at 2:
 
 Positions: 1:A, 2:E, 3:C, 4:D, 5:B, 6:F
 
-F not adjacent to B: B at 5, adjacent are 4(D) and 6(F). F at 6 → adjacent! âœ—
+F not adjacent to B: B at 5, adjacent are 4(D) and 6(F). F at 6 → adjacent! ✗
 
 If C at 5 (but 5 is B).
 
@@ -2478,7 +2404,6 @@ Clockwise from A (position 3): A, E(4), C(5), D(6), B(1), F(2)
 **Answer: A, E, C, D, B, F (clockwise)**
 
 ### PYQ-31 (GATE 2024) → Coding-Decoding
-
 
 If 682 = "gate exam ready", 285 = "exam is tough", 861 = "gate is open", find the code for "open".
 
@@ -2591,7 +2516,6 @@ Then: open = 1 (from 861: gate(6), is(8), open(1)).
 
 ### PYQ-32 (GATE 2022) → Syllogisms
 
-
 Statements:
 1. No stone is metal.
 2. Some metals are gold.
@@ -2608,12 +2532,11 @@ I. No gold is stone: Does NOT follow. Gold is a subset of metals (some metals ar
 
 If some metals are gold, then gold ⊆ metal. No stones = metals, so no stones = gold. So no gold is stone. ✓
 
-II. Some stones are gold: Does NOT follow as established above. âœ—
+II. Some stones are gold: Does NOT follow as established above. ✗
 
 **Answer: Only I follows**
 
 ### PYQ-33 (GATE 2025) → Analogies
-
 
 Tree : Forest :: ___ : ___
 
@@ -2647,7 +2570,6 @@ The best analogy is Star : Galaxy (individual constituent of a collection).
 
 ### PYQ-34 (GATE 2023) → Statement-Assumption
 
-
 Statement: "The government has decided to make toilet building a priority in rural areas."
 
 Assumptions:
@@ -2665,7 +2587,6 @@ II. Implicit. The purpose of building toilets is to improve sanitation. The gove
 **Answer: Both I and II are implicit**
 
 ### PYQ-35 (GATE 2019) → Circular Arrangement
-
 
 Seven people A, B, C, D, E, F, G sit around a circular table. C sits second to the right of A. B sits third to the left of D. E sits between F and G. A is adjacent to G. If D sits opposite C, find the positions.
 
@@ -2743,7 +2664,7 @@ So: 1:D, 2:A, 3:?, 4:C, 5:B, 6:?, 7:?
 
 A adjacent to G: G at 1 or 3. Position 1 is D. So G at 3.
 
-E between F and G: G at 3. Adjacent to G: 2(A), 4(C). Both taken. âœ—
+E between F and G: G at 3. Adjacent to G: 2(A), 4(C). Both taken. ✗
 
 Try D at 7:
 A at 2, C at 4, D at 7.
@@ -2764,7 +2685,7 @@ OK let's go with D at 7, B at 4:
 
 A adjacent to G → G at 2 or 7(no). G at 2.
 
-E between F and G: G at 2. Adjacent: 1(A), 3(C). Both taken. âœ—
+E between F and G: G at 2. Adjacent: 1(A), 3(C). Both taken. ✗
 
 This is very constrained. The problem may have been designed with a specific interpretation of "opposite" in a 7-circle. In many GATE problems, "opposite" in an odd-circle means directly across with equal number of persons on each side.
 
@@ -2776,11 +2697,9 @@ The method: Fix one person, place relative positions, then check constraints.
 
 ### Verbal Ability (10 Problems)
 
-
 **Cross-Reference:** R.S. Aggarwal → Verbal Reasoning, Chapters: Synonyms/Antonyms (Ch. 3), Sentence Completion (Ch. 7-8), Para-jumbles (Ch. 11), Reading Comprehension (Ch. 12), Grammar (Ch. 15-16). Also see Arun Sharma → Verbal Ability, Chapters 1-5.
 
 ### PYQ-36 (GATE 2020) → Synonyms
-
 
 Choose the synonym of "PERSPICACIOUS".
 
@@ -2810,7 +2729,6 @@ D) Careless → opposite
 
 ### PYQ-37 (GATE 2021) → Antonyms
 
-
 Choose the antonym of "LACONIC".
 
 **Options:**
@@ -2839,7 +2757,6 @@ D) Silent → related but not an antonym
 
 ### PYQ-38 (GATE 2022) → Sentence Completion
 
-
 Despite the ___ evidence, the jury remained ___ of the defendant's guilt.
 
 **Options:**
@@ -2856,7 +2773,7 @@ D) Sparse, unsure
 
 The word "despite" indicates a contrast. The first blank should describe strong evidence, and the second blank should describe the jury's continued doubt despite that evidence.
 
-A) "Convincing evidence, convinced" → no contrast (they agree) âœ—
+A) "Convincing evidence, convinced" → no contrast (they agree) ✗
 
 B) "Overwhelming evidence, unconvinced" → contrast ✓ (despite strong evidence, still unconvinced)
 
@@ -2867,7 +2784,6 @@ D) "Sparse evidence, unsure" → no contrast (sparse evidence logically leads to
 **Answer: B) Overwhelming, unconvinced**
 
 ### PYQ-39 (GATE 2023) → Para-jumbles
-
 
 Arrange the following sentences into a coherent paragraph:
 
@@ -2887,7 +2803,6 @@ D summarizes the revolutionary nature of the shift.
 
 ### PYQ-40 (GATE 2019) → Subject-Verb Agreement
 
-
 Choose the correct option:
 
 "Either the manager or his deputies ___ (is/are) going to attend the conference."
@@ -2903,7 +2818,6 @@ Therefore: **are**
 **Answer: are**
 
 ### PYQ-41 (GATE 2024) → Reading Comprehension
-
 
 Passage: "Machine learning models are only as good as the data they are trained on. Biased training data leads to biased models, which can perpetuate and amplify existing societal inequalities. This has been demonstrated in hiring algorithms, facial recognition systems, and predictive policing tools. Addressing this requires not just technical solutions but also diverse teams, ethical guidelines, and regulatory oversight."
 
@@ -2935,7 +2849,6 @@ D) Contradicts the passage, which says "not just technical solutions."
 
 ### PYQ-42 (GATE 2020) → One-Word Substitution
 
-
 What is the one-word substitute for "a person who is motivated by a desire to help others without personal gain"?
 
 **Options:**
@@ -2961,7 +2874,6 @@ D) Hedonist → one who pursues pleasure as the highest good
 **Answer: A) Altruist**
 
 ### PYQ-43 (GATE 2025) → Critical Reasoning
-
 
 Argument: "All successful startups in the past decade have used cloud computing. Therefore, any new startup must use cloud computing to be successful."
 
@@ -2991,7 +2903,6 @@ C) Appeal to popularity → "everyone did it, so you must too" → the argument 
 
 ### PYQ-44 (GATE 2022) → Tenses
 
-
 Fill in the blank with the correct tense:
 
 "By the time the CEO arrives, the team ___ (complete) the presentation."
@@ -3015,7 +2926,6 @@ D) had completed
 **Answer: C) will have completed**
 
 ### PYQ-45 (GATE 2021) → Sentence Completion
-
 
 The professor's remarks were so ___ that even his colleagues found them hard to decipher.
 
@@ -3045,7 +2955,6 @@ D) Superficial → shallow (not related to clarity/difficulty)
 
 ### PYQ-46 (GATE 2025) → Idioms
 
-
 Choose the correct meaning of the idiom "To burn the midnight oil."
 
 **Options:**
@@ -3065,7 +2974,6 @@ D) To spend money recklessly
 **Answer: B) To work or study late into the night**
 
 ### PYQ-47 (GATE 2023) → Grammar → Prepositions
-
 
 Fill in the blank: "She is proficient ___ multiple programming languages."
 
@@ -3089,7 +2997,6 @@ The correct preposition with "proficient" is "in."
 
 ### PYQ-48 (GATE 2019) → Reading Comprehension (Short)
 
-
 Passage: "Economics is not a science of wealth but a science of human welfare. It studies how people make choices under conditions of scarcity. Every choice involves a trade-off → choosing one thing means giving up another. The value of the next best alternative foregone is called opportunity cost."
 
 What is opportunity cost according to the passage?
@@ -3101,7 +3008,6 @@ The passage explicitly defines it: "The value of the next best alternative foreg
 **Answer: The value of the next best alternative that is given up when a choice is made.**
 
 ### PYQ-49 (GATE 2024) → Error Detection
-
 
 Identify the error in the sentence:
 
@@ -3129,7 +3035,6 @@ Also, "their" with "each" can be debated, but in modern usage, "their" with "eac
 
 ### PYQ-50 (GATE 2025) → Para-jumbles
 
-
 A. This process is called photosynthesis.
 
 B. Plants absorb sunlight, water, and carbon dioxide.
@@ -3152,11 +3057,9 @@ A names the process.
 
 ### Spatial / Analytical Reasoning (5 Problems)
 
-
 **Cross-Reference:** R.S. Aggarwal → Analytical Reasoning, Chapters: Dice & Cubes (Ch. 10), Mirror Images (Ch. 11-12), Paper Folding (Ch. 13), Pattern Recognition (Ch. 14-15). Also see Arun Sharma → Logical Reasoning, Chapter 7 (Spatial).
 
 ### PYQ-51 (GATE 2019) → Cube Painting
-
 
 A 4 × 4 × 4 cube is painted entirely red on all six faces and then cut into 64 unit cubes. How many unit cubes have exactly one face painted?
 
@@ -3177,7 +3080,6 @@ Formula verification: 6(n-2)² = 6(2)² = 24 ✓
 **Answer: 24 cubes**
 
 ### PYQ-52 (GATE 2020) → Pattern Recognition
-
 
 Find the next term in the series: 3, 12, 27, 48, 75, ?
 
@@ -3201,7 +3103,6 @@ Next term = 3 × 6² = 3 × 36 = 108
 
 ### PYQ-53 (GATE 2022) → Mirror Image
 
-
 If the time on an analog clock shows 7:20, what approximate time will be seen in a mirror placed vertically?
 
 **Solution:**
@@ -3215,7 +3116,6 @@ Verification: In a mirror, the hour hand between 7 and 8 appears between 4 and 5
 **Answer: 4:40**
 
 ### PYQ-54 (GATE 2023) → Dice
-
 
 Two positions of the same dice are shown:
 
@@ -3414,7 +3314,6 @@ In many dice, 3 is opposite to 5. Let me go with that.
 
 ### PYQ-55 (GATE 2024) → Paper Folding / Spatial Visualization
 
-
 A rectangular sheet of paper is folded as follows:
 1. Fold the bottom edge to the top edge (fold in half horizontally).
 2. Fold the left edge to the right edge (fold in half vertically).
@@ -3447,7 +3346,6 @@ These form a symmetric pattern in a 2×2 grid.
 
 ### 1. R.S. Aggarwal → Quantitative Aptitude for Competitive Examinations
 
-
 | Chapter | Pages | Topics Covered | GATE Relevance |
 |---------|-------|----------------|----------------|
 | 1-2 | 1-48 | Number System, HCF & LCM | PYQ-4, PYQ-16 |
@@ -3464,7 +3362,6 @@ These form a symmetric pattern in a 2×2 grid.
 | 35-38 | 649-730 | Data Interpretation / Charts | PYQ-18 |
 
 ### 2. R.S. Aggarwal → A Modern Approach to Verbal & Non-Verbal Reasoning
-
 
 | Chapter | Pages | Topics Covered | GATE Relevance |
 |---------|-------|----------------|----------------|
@@ -3483,7 +3380,6 @@ These form a symmetric pattern in a 2×2 grid.
 
 ### 3. Arun Sharma → How to Prepare for Quantitative Aptitude
 
-
 | Chapter | Pages | Topics |
 |---------|-------|--------|
 | 1-4 | 1-100 | Numbers, LCM/HCF, Simplifications |
@@ -3495,7 +3391,6 @@ These form a symmetric pattern in a 2×2 grid.
 
 ### 4. Arun Sharma → How to Prepare for Verbal Ability & Reading Comprehension
 
-
 | Chapter | Pages | Topics |
 |---------|-------|--------|
 | 1-2 | 1-80 | Vocabulary, Synonyms/Antonyms |
@@ -3504,7 +3399,6 @@ These form a symmetric pattern in a 2×2 grid.
 | 7-8 | 261-360 | Reading Comprehension, Critical Reasoning |
 
 ### 5. Indiabix (Online Resource)
-
 
 **URL:** https://www.indiabix.com
 
@@ -3515,7 +3409,6 @@ These form a symmetric pattern in a 2×2 grid.
 
 ### 6. GATE Previous Year Papers (Compilations)
 
-
 | Publisher | Description | Best For |
 |-----------|-------------|----------|
 | GATE Previous Year Solved Papers (G.K. Publications) | 30+ years of GATE papers with detailed solutions | Understanding question patterns, difficulty trends |
@@ -3523,7 +3416,6 @@ These form a symmetric pattern in a 2×2 grid.
 | Ace Engineering Academy GATE | Topic-wise previous year questions with analysis | Targeted practice by weak areas |
 
 ### 7. Aptitude Test (Online Resource)
-
 
 **URL:** https://www.aptitude-test.com
 
@@ -3535,7 +3427,6 @@ These form a symmetric pattern in a 2×2 grid.
 
 ### 8. Competitive Exam Apps (Mobile Resources)
 
-
 | App | Features | Platform |
 |-----|----------|----------|
 | GradeUp (BYJU'S Exam Prep) | Topic-wise quizzes, daily targets, GATE-specific content | Android / iOS |
@@ -3543,7 +3434,6 @@ These form a symmetric pattern in a 2×2 grid.
 | Adda247 | Video solutions, topic-wise practice, GATE aptitude focus | Android / iOS |
 
 ### Topic-wise Book Page Cross-Reference Matrix
-
 
 | GATE Topic | R.S. Aggarwal (Quant) | R.S. Aggarwal (Reasoning) | Arun Sharma (Quant) |
 |------------|----------------------|--------------------------|---------------------|
@@ -3588,7 +3478,6 @@ This section provides 50 additional PYQs spanning GATE 2010-2018, covering 20 Qu
 
 ### Quantitative Aptitude (Q51–Q70)
 
-
 **Q51. [GATE 2010]**
 A shopkeeper allows a discount of 10% on the marked price of an item but still makes a profit of 20%. If the marked price is ₹500, what is the cost price?
 
@@ -3624,20 +3513,20 @@ Speed = 400 / 24 = 50/3 m/s = (50/3) × (18/5) = 60 km/h.
 ---
 
 **Q54. [GATE 2012]**
-If logâ‚ÂÂ�₀ 2 = 0.3010, what is the value of logâ‚ÂÂ�₀ 5?
+If log₁₀ 2 = 0.3010, what is the value of log₁₀ 5?
 
 **Answer:**
-logâ‚ÂÂ�₀ 5 = logâ‚ÂÂ�₀ (10/2) = logâ‚ÂÂ�₀ 10 − logâ‚ÂÂ�₀ 2 = 1 − 0.3010 = 0.6990.
+log₁₀ 5 = log₁₀ (10/2) = log₁₀ 10 − log₁₀ 2 = 1 − 0.3010 = 0.6990.
 
 **Answer: 0.6990**
 
 ---
 
 **Q55. [GATE 2012]**
-What is the unit digit of 7³âÂÂ�µ?
+What is the unit digit of 7Ã‚Â³Ã¢Âµ?
 
 **Answer:**
-Cyclicity of 7: 7¹→7, 7²→9, 7³→3, 7âÂÂ�´→1, then repeats every 4.
+Cyclicity of 7: 7Ã‚Â¹â†’7, 7Ã‚Â²â†’9, 7Ã‚Â³â†’3, 7Ã¢Â´→1, then repeats every 4.
 35 ÷ 4 = 8 remainder 3. So unit digit = 7³ = 343 → unit digit 3.
 
 **Answer: 3**
@@ -3782,11 +3671,11 @@ A's income = 3 × 10000 = ₹30,000.
 ---
 
 **Q67. [GATE 2017]**
-What is the remainder when 2²âÂÂ�° is divided by 5?
+What is the remainder when 2Ã‚Â²Ã¢Â° is divided by 5?
 
 **Answer:**
-Cyclicity of 2âÂÂ�¿ mod 5: 2¹→2, 2²→4, 2³→3, 2âÂÂ�´→1 (repeats every 4).
-20 ÷ 4 = 5, remainder 0. So 2²âÂÂ�° ≡ 2âÂÂ�´ ≡ 1 (mod 5).
+Cyclicity of 2Ã¢ÂÂ¿ mod 5: 2Ã‚Â¹â†’2, 2Ã‚Â²â†’4, 2Ã‚Â³â†’3, 2Ã¢Â´→1 (repeats every 4).
+20 ÃƒÂ· 4 = 5, remainder 0. So 2Ã‚Â²Ã¢ÂÂ° Ã¢â€°Â¡ 2Ã¢Â´ â‰¡ 1 (mod 5).
 
 **Answer: 1**
 
@@ -3813,7 +3702,7 @@ Find the value of 0.̅6 + 0.̅7̅3 in fractional form.
 0.̅6 = 6/9 = 2/3.
 0.̅7̅3 = 73/99.
 Sum = 2/3 + 73/99 = 66/99 + 73/99 = 139/99.
-Simplify: 139/99 = 1 + 40/99 = 1âÂÂ�´âÂÂ�°̅/₉₉.
+Simplify: 139/99 = 1 + 40/99 = 1Ã¢ÂÂ´Ã¢Â°Ì…/â‚‰â‚‰.
 
 **Answer: 139/99**
 
@@ -3835,7 +3724,6 @@ Bring terms: 7x/10 − 9x/10 = −9 − 3 → −2x/10 = −12 → 2x/10 = 12 �
 ---
 
 ### Logical Reasoning (Q71–Q85)
-
 
 **Q71. [GATE 2010]**
 If CLOCK is coded as 36153 and WATCH is coded as 52148, how is CLOTH coded?
@@ -4057,7 +3945,7 @@ So next term = M10R.
 How many squares are there in a 4×4 grid?
 
 **Answer:**
-Number of squares in an n×n grid = Σᵢ₌â‚ÂÂ�âÂÂ�¿ i² = 1² + 2² + 3² + 4² = 1 + 4 + 9 + 16 = 30.
+Number of squares in an nÃƒâ€”n grid = ÃŽÂ£Ã¡ÂµÂ¢Ã¢â€šÅ’Ã¢â€šÂÃ¢Â¿ iÂ² = 1Â² + 2Â² + 3Â² + 4Â² = 1 + 4 + 9 + 16 = 30.
 
 **Answer: 30**
 
@@ -4075,7 +3963,6 @@ Angle between hands = |97.5° − 90°| = 7.5°.
 ---
 
 ### Verbal Ability (Q86–Q95)
-
 
 **Q86. [GATE 2010]**
 Choose the synonym of "Benevolent":
@@ -4204,7 +4091,6 @@ So: 2, 1, 3, 4.
 
 ### Spatial Ability (Q96–Q100)
 
-
 **Q96. [GATE 2011]**
 A cube is painted red on all faces and then cut into 64 smaller cubes of equal size. How many small cubes have no painted face?
 
@@ -4261,7 +4147,6 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 ---
 
 ### 20 Common GATE Traps in Aptitude
-
 
 #### Trap 1: Profit/Loss Base Confusion
 **Trap:** Calculating profit percentage on Selling Price instead of Cost Price.
@@ -4343,7 +4228,7 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 
 #### Trap 18: Permutation vs Combination
 **Trap:** Using permutation when order doesn't matter.
-**Example:** Selecting 3 students from 10. Wrong: ¹âÂÂ�°P₃ = 720. **Correct:** ¹âÂÂ�°C₃ = 120.
+**Example:** Selecting 3 students from 10. Wrong: Ã‚Â¹Ã¢ÂÂ°PÃ¢â€šÆ’ = 720. **Correct:** Ã‚Â¹Ã¢Â°Câ‚ƒ = 120.
 **Rule:** Permutation → arrangement (order matters). Combination → selection (order doesn't).
 
 #### Trap 19: Data Interpretation → Axis Scale
@@ -4357,7 +4242,6 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 ---
 
 ### Shortcut Techniques by Topic
-
 
 #### Number System
 - **Unit Digit Cyclicity:** Every digit has a cycle of length 1, 2, or 4 for its powers.
@@ -4403,7 +4287,7 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 
 #### Mixtures & Alligations
 - **Alligation Rule:** (Cheaper quantity) / (Dearer quantity) = (Mean Price − Cheaper) / (Dearer − Mean).
-- **Replacement formula:** After n replacements of V units from a mixture of M total volume, original content remaining = M × [(M−V)/M]âÂÂ�¿.
+- **Replacement formula:** After n replacements of V units from a mixture of M total volume, original content remaining = M Ãƒâ€” [(MÃ¢Ë†â€™V)/M]Ã¢Â¿.
 
 #### Probability
 - **P(A∪B) = P(A) + P(B) − P(A∩B)**
@@ -4413,14 +4297,14 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 - **"At least one":** Use complement: 1 − P(none).
 
 #### Permutations & Combinations
-- **âÂÂ�¿Pᵣ = n!/(n−r)!** (arrangement)
-- **âÂÂ�¿Cᵣ = n!/[r!(n−r)!]** (selection)
-- **âÂÂ�¿Cₓ = âÂÂ�¿Cₙ₋ₓ**
-- **âÂÂ�¿C₀ + âÂÂ�¿Câ‚ÂÂ� + ... + âÂÂ�¿Cₙ = 2âÂÂ�¿**
+- **Ã¢Â¿Páµ£ = n!/(nâˆ’r)!** (arrangement)
+- **Ã¢Â¿Cáµ£ = n!/[r!(nâˆ’r)!]** (selection)
+- **Ã¢ÂÂ¿CÃ¢â€šâ€œ = Ã¢Â¿Câ‚™â‚‹â‚“**
+- **Ã¢ÂÂ¿CÃ¢â€šâ‚¬ + Ã¢ÂÂ¿CÃ¢â€šÂ + ... + Ã¢ÂÂ¿CÃ¢â€šâ„¢ = 2Ã¢Â¿**
 - **Circular permutations:** (n−1)! for unlabeled. For clockwise distinct: n!.
 
 #### Averages
-- **Weighted average:** (wâ‚ÂÂ�xâ‚ÂÂ� + w₂x₂ + ...)/(wâ‚ÂÂ� + w₂ + ...)
+- **Weighted average:** (w₁x₁ + w₂x₂ + ...)/(w₁ + w₂ + ...)
 - **If a number x is added to a group of n numbers with average A, new average = (nA + x)/(n+1).**
 - **Age problems:** If average age of a group increases by d when a person of age x joins, new member's age = old average + d(n+1).
 
@@ -4428,12 +4312,11 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 - **Percentage change between two periods = (New − Old)/Old × 100.**
 - **Ratio comparison:** Cross-multiply to compare ratios quickly.
 - **Approximation:** When options are far apart (GATE often), approximate to save time.
-- **Compound growth:** Final = Initial × (1 + r)âÂÂ�¿. Use log or approximation for n.
+- **Compound growth:** Final = Initial Ãƒâ€” (1 + r)Ã¢Â¿. Use log or approximation for n.
 
 ---
 
 ### Complete Formula Reference Table
-
 
 | Topic | Formula | Notes |
 |-------|---------|-------|
@@ -4460,19 +4343,19 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 | | Efficiency ratio = 1/time ratio | Inverse proportion |
 | **Speed & Distance** | Speed = Distance/Time | S-D-T triangle |
 | | Avg speed = Total D / Total T | Not arithmetic mean |
-| | Relative speed (toward) = vâ‚ÂÂ� + v₂ | Opposite direction |
-| | Relative speed (same) = |vâ‚ÂÂ� − v₂| | Same direction |
+| | Relative speed (toward) = v₁ + v₂ | Opposite direction |
+| | Relative speed (same) = |v₁ − v₂| | Same direction |
 | | m/s → km/h: multiply by 18/5 | |
 | | km/h → m/s: multiply by 5/18 | |
 | **Pipes** | A+B fill = ab/(a+b) | A fills in a min, B in b min |
 | | Net rate = fill rates − empty rates | Empty pipe = negative |
-| **Alligation** | (Qtyâ‚ÂÂ�)/(Qty₂) = (P₂ − M)/(M − Pâ‚ÂÂ�) | Cross rule for mixtures |
-| **Permutations** | âÂÂ�¿Pᵣ = n!/(n−r)! | Arrangement, order matters |
+| **Alligation** | (Qty₁)/(Qty₂) = (P₂ − M)/(M − P₁) | Cross rule for mixtures |
+| **Permutations** | Ã¢Â¿Páµ£ = n!/(nâˆ’r)! | Arrangement, order matters |
 | | n! = n(n−1)(n−2)...1 | Factorial |
 | | Circular = (n−1)! | Circular arrangement |
-| **Combinations** | âÂÂ�¿Cᵣ = n!/[r!(n−r)!] | Selection, order irrelevant |
-| | âÂÂ�¿Cᵣ = âÂÂ�¿Cₙ₋ᵣ | Symmetry property |
-| | âÂÂ�¿C₀ + âÂÂ�¿Câ‚ÂÂ� + ... + âÂÂ�¿Cₙ = 2âÂÂ�¿ | Total subsets |
+| **Combinations** | Ã¢Â¿Cáµ£ = n!/[r!(nâˆ’r)!] | Selection, order irrelevant |
+| | Ã¢ÂÂ¿CÃ¡ÂµÂ£ = Ã¢Â¿Câ‚™â‚‹áµ£ | Symmetry property |
+| | Ã¢ÂÂ¿CÃ¢â€šâ‚¬ + Ã¢ÂÂ¿CÃ¢â€šÂ + ... + Ã¢ÂÂ¿CÃ¢â€šâ„¢ = 2Ã¢Â¿ | Total subsets |
 | **Probability** | P(E) = n(E)/n(S) | Classical definition |
 | | P(not E) = 1 − P(E) | Complement |
 | | P(A∪B) = P(A)+P(B)−P(A∩B) | Union |
@@ -4484,9 +4367,9 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 | | New avg = (nA + x)/(n+1) | Adding one element |
 | **Logarithms** | log(ab) = log a + log b | Product rule |
 | | log(a/b) = log a − log b | Quotient rule |
-| | log(aâÂÂ�¿) = n log a | Power rule |
-| | logâ‚ÂÂ� a = 1 | Identity |
-| | logâ‚ÂÂ� 1 = 0 | Zero log |
+| | log(aÃ¢Â¿) = n log a | Power rule |
+| | logₐ a = 1 | Identity |
+| | logₐ 1 = 0 | Zero log |
 | **Number System** | Sum of first n naturals = n(n+1)/2 | |
 | | Sum of first n squares = n(n+1)(2n+1)/6 | |
 | | Sum of first n cubes = [n(n+1)/2]² | |
@@ -4508,7 +4391,6 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 ---
 
 ### Time Management Strategy
-
 
 | Section | Number of Qs | Suggested Time (min) | Time per Q (min) |
 |---------|:------------:|:--------------------:|:-----------------:|
@@ -4639,7 +4521,7 @@ class GATEAptitudeScoreCalculator {
 Unattempted: ${this.unattempted} / ${totalQ}
 Total Score: ${score} / ${this.total1MarkQuestions + this.total2MarkQuestions * 2} max
 Accuracy: ${accuracy}%
-${score >= 10 ? '✅ Excellent score range' : score >= 5 ? '⚠ï¸Â� Average — review weak areas' : 'âÂ�Œ Needs significant improvement'}
+${score >= 10 ? '✅ Excellent score range' : score >= 5 ? '⚠️ Average — review weak areas' : '❌ Needs significant improvement'}
 `;
   }
 }
@@ -4702,5 +4584,5 @@ console.log(calc.getReport());
 <details>
 <summary><strong>Exercise 5:</strong> Profit & Loss</summary>
 <p>A shopkeeper sells an item at a 20% profit. If he had bought it at 10% less and sold it at 30% profit, he would have made ₹45 more. Find the cost price.</p>
-<p><strong>Solution:</strong> Let CP = x. SP1 = 1.2x. New CP = 0.9x, SP2 = 0.9x × 1.3 = 1.17x. Profit1 = 0.2x, Profit2 = 0.27x. Difference = 0.07x = 45. So x = 45/0.07 = ₹642.86.</p>
+<p><strong>Solution:</strong> Let CP = x. SP1 = 1.2x. New CP = 0.9x, SP2 = 0.9x × 1.3 = 1.17x. Profit1 = 0.2x, Profit2 = 0.27x. Difference = 0.07x = 45. So x = 45/0.07 = â‚¹642.86.</p>
 </details>

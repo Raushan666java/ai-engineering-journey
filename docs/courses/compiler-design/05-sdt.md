@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: define syntax-directed definitions (SDDs) for S-attributed and L-attributed grammars; construct"
+---
+
 # Chapter 5: Syntax-Directed Translation
 
 **? Previous:** [Chapter 4: Bottom-Up Parsing](04-parsing-bottomup.md) | **Next:** [Chapter 6: Intermediate Code Generation](06-intermediate-code.md)

@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_03_The_Skill_Pyramid/03_Escaping_The
 title: "🚀 Escaping The Bottom Tier"
 sidebar_label: "🚀 Escaping The Bottom Tier"
 sidebar_position: 3
+description: "Many developers spend 5 to 10 years in the industry and remain 'Junior' in how they think. They may have Senior titles, but they operate entirely at Level"
 ---
 # 🚀 Escaping The Bottom Tier
 

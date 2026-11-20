@@ -1,3 +1,7 @@
+---
+description: "The non-interactive npm start path asserts that the eval reports `passed=3 failed=0` and that the scripted run converges to an all-done plan. Any drift"
+---
+
 # Capstone 19/01 — Terminal-Native Coding Agent (TypeScript)
 
 Multi-file TypeScript harness for the plan/act/observe loop described in

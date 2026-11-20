@@ -1,3 +1,7 @@
+---
+description: "Sentiment sounds simple. A reviewer said they liked or did not like something. Label the sentence. The reason it became the canonical NLP task is that"
+---
+
 # Sentiment Analysis
 
 > The canonical NLP task. Most of what you need to know about classical text classification shows up here.

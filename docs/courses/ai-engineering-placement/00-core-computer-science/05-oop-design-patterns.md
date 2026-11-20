@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to apply SOLID principles to build extensible ML pipelines, select the right GoF pattern for. common AI engineering"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # OOP and Design Patterns for AI Engineers

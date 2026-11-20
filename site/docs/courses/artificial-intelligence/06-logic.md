@@ -4,6 +4,7 @@ slug: /artificial-intelligence/06-logic
 title: "Chapter 6: Logical Agents and Propositional Logic"
 sidebar_label: "Chapter 6: Logical Agents and Propositional Logic"
 sidebar_position: 11
+description: "Imagine a courtroom. The prosecution presents evidence (facts), and the judge applies legal statutes (rules) to reach a verdict (conclusion). The process"
 ---
 
 # Chapter 6: Logical Agents and Propositional Logic

@@ -1,3 +1,7 @@
+---
+description: "Cloud compute services provide resizable, on-demand virtual machine (VM) instances. These services form the fundamental 'Infrastructure as a Service'"
+---
+
 # Chapter 3: Cloud Compute Services
 
 > **Previous:** [Chapter 2: Virtualization](./02-virtualization.md) | **Next:** [Chapter 4: Cloud Storage Services](./04-cloud-storage.md)

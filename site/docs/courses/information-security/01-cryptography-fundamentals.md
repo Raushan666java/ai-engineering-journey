@@ -4,6 +4,7 @@ slug: /information-security/01-cryptography-fundamentals
 title: "Chapter 1: Cryptography Fundamentals"
 sidebar_label: "Chapter 1: Cryptography Fundamentals"
 sidebar_position: 1
+description: "Exam Weightage: 4–6 Qs in IBPS SO IT Officer Mains (Professional Knowledge — Cryptography section) Key Topics: Symmetric vs Asymmetric, DES, AES, RSA"
 ---
 
 # Chapter 1: Cryptography Fundamentals

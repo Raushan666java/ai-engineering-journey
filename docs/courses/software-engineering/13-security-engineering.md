@@ -1,3 +1,7 @@
+---
+description: "The Open Web Application Security Project publishes the Top 10 Web Application Security Risks. Below is the full 2025 edition with explanations and code"
+---
+
 # Security Engineering
 
 ## Learning Objectives

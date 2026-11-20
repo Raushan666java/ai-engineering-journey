@@ -4,6 +4,7 @@ slug: /oop-cpp/05-polymorphism
 title: "Chapter 5: Polymorphism"
 sidebar_label: "Chapter 5: Polymorphism"
 sidebar_position: 5
+description: "You have a universal remote with a single 'Play' button. Point it at a DVD Player, and it starts spinning the disc. Point it at a Streaming Stick, and it"
 ---
 
 # Chapter 5: Polymorphism

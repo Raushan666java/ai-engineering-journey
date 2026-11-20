@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/09-deep-learning-pytorch/10-deployment-best-prac
 title: "Deployment Best Practices — A/B Testing, Monitoring, Model Versioning, Rollback"
 sidebar_label: "Deployment Best Practices — A/B Testing, Monitoring, Model Versioning, Rollback"
 sidebar_position: 135
+description: "Deployment Best Practices — A/B Testing, Monitoring, Model Versioning, Rollback: Deep learning powers modern AI breakthroughs. PyTorch is the framework of"
 ---
 
 <!-- improved -->

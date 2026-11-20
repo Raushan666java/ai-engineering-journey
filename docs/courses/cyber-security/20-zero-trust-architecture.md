@@ -1,3 +1,7 @@
+---
+description: "For decades, enterprise security followed the castle-and-moat model. A hardened perimeter (firewalls, VPNs, IDS/IPS) protected internal resources, while"
+---
+
 # Chapter 20: Zero Trust & Enterprise Security Architecture
 
 ## Learning Objectives

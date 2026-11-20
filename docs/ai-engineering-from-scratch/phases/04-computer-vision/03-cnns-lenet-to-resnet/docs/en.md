@@ -1,3 +1,7 @@
+---
+description: "In 2011, the best ImageNet classifier scored around 74% top-5 accuracy. In 2012 AlexNet scored 85%. In 2015 ResNet scored 96%. No new data. No new GPU"
+---
+
 # CNNs — LeNet to ResNet
 
 > Every major CNN of the last thirty years is the same conv–nonlinearity–downsample recipe with one new idea bolted on. Learn the ideas in order.

@@ -4,6 +4,7 @@ slug: /java/p1-java-syntax
 title: "Java Syntax & Fundamentals"
 sidebar_label: "Java Syntax & Fundamentals"
 sidebar_position: 76
+description: "Java was created by James Gosling, Mike Sheridan, and Patrick Naughton at Sun Microsystems in the early 1990s. The project, initially called Oak, was"
 ---
 
 # Java Syntax & Fundamentals

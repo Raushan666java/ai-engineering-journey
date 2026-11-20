@@ -1,3 +1,7 @@
+---
+description: "Attention — A weighted sum over values, where the weights come from a compatibility score between a query and a set of keys. That's it. Everything else is"
+---
+
 # AI Glossary
 
 [Home](index.md) · [About](about.md) · [Catalog](catalog.md) · [Roadmap](roadmap.md) · [Contact](contact.md)

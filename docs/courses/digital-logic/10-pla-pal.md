@@ -1,3 +1,7 @@
+---
+description: "Limitation: A PROM uses a full decoder ? it allocates one word line for every minterm, even for don't-care conditions. A 16-input function needs 2?6 ="
+---
+
 # Chapter 10: Programmable Logic ? PLA and PAL
 
 > **Prereq:** Chapter 4 (Karnaugh Maps) and Chapter 5 (Combinational Circuits) ? programmable logic implements sum-of-products expressions.

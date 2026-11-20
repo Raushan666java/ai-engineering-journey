@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_15_The_Art_Of_Reusable_Components/04
 title: "⚛️ React & Inertia Translation"
 sidebar_label: "⚛️ React & Inertia Translation"
 sidebar_position: 4
+description: "While Laravel Blade Components provide elite encapsulation on the server, the modern SaaS industry is rapidly moving toward Single Page Applications"
 ---
 # ⚛️ React & Inertia Translation
 

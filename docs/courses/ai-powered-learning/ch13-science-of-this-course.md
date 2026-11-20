@@ -1,3 +1,7 @@
+---
+description: "Every course claims to be 'scientifically designed'. This one shows you the receipts. This chapter opens the black box: the instructional-design"
+---
+
 # Chapter 13: The Science of This Course
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

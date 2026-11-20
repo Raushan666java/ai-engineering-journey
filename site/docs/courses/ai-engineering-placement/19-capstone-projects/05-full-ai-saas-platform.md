@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/19-capstone-projects/05-full-ai-saas-platform
 title: "Full AI SaaS Platform"
 sidebar_label: "Full AI SaaS Platform"
 sidebar_position: 240
+description: "Full AI SaaS Platform: Capstone projects prove you can build complete AI systems. From prediction APIs to enterprise RAG platforms, these projects"
 ---
 
 <!-- improved -->

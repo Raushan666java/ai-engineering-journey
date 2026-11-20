@@ -1,3 +1,7 @@
+---
+description: "Remember: PUT replaces the entire resource — missing fields are set to null. PATCH only applies partial modifications. Use PUT sparingly; PATCH is almost"
+---
+
 # Chapter 7: API Development & Integration
 > **Previous:** [Queues, Jobs, Notifications & Mail](./06-queues-notifications) | **Next:** [Broadcasting, Events & Real-Time Features](./08-broadcasting-realtime)
 

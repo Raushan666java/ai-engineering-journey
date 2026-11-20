@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/27-ai-infrastructure/visual-notes
 title: "Visual Notes — Keeping Inference Fast and Cheap"
 sidebar_label: "Visual Notes"
 sidebar_position: 333
+description: "One-line answer for interviews: 'Hardware, scheduling, serving and optimization work together to keep inference fast and cheap.'"
 ---
 
 # Visual Notes — Keeping Inference Fast and Cheap

@@ -1,3 +1,7 @@
+---
+description: "'Krishna tumhe koi nayi shiksha nahin de raha. Woh to tumhare saamne ek aaina rakh raha hai. Aaina kya batata hai? Yah ki devta aur danav — dono tumhare"
+---
+
 # अध्याय १६: दैवासुर सम्पद्विभाग योग — "Do prakar ke log nahin, do pravruttiyan hain"
 
 > **"Krishna tumhe koi nayi shiksha nahin de raha. Woh to tumhare saamne ek aaina rakh raha hai. Aaina kya batata hai? Yah ki devta aur danav — dono tumhare andar maujood hain. Ab sawaal yeh hai ki tum kaunsa chehra palat ke dekhte ho."**

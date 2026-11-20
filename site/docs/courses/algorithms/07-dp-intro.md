@@ -4,6 +4,7 @@ slug: /algorithms/07-dp-intro
 title: "Chapter 7: Dynamic Programming — Foundations"
 sidebar_label: "Chapter 7: Dynamic Programming — Foundations"
 sidebar_position: 7
+description: "Chapter 6: Greedy Algorithms — Understanding when local choices aren't enough | Next: Chapter 8: Dynamic Programming — Knapsack Problems — Classic DP"
 ---
 
 # Chapter 7: Dynamic Programming — Foundations

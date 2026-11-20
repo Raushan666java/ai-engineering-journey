@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/11-ai-testing-evaluation
 title: "Chapter 11 — AI Testing, Evaluation & Quality"
 sidebar_label: "Chapter 11 — AI Testing, Evaluation & Quality"
 sidebar_position: 12
+description: "Build a systematic testing and evaluation framework for AI agents and RAG pipelines. Move from 'it works on my machine' to quantitative quality gates."
 ---
 
 # Chapter 11 — AI Testing, Evaluation & Quality

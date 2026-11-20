@@ -4,6 +4,7 @@ slug: /algorithms/17-randomized
 title: "Chapter 17: Randomized Algorithms"
 sidebar_label: "Chapter 17: Randomized Algorithms"
 sidebar_position: 17
+description: "Chapter 16: Approximation Algorithms — Algorithm design for hard problems | Next: Chapter 18: Advanced Topics — From randomized methods to online and"
 ---
 
 # Chapter 17: Randomized Algorithms

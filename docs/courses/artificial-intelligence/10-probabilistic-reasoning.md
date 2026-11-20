@@ -1,3 +1,7 @@
+---
+description: "By the conclusion of this chapter, the student will be able to: (1) construct Bayesian networks to model probabilistic relationships from domain"
+---
+
 # Chapter 10: Probabilistic Reasoning
 
 **Previous:** [Chapter 9: Reasoning Under Uncertainty](09-uncertainty.md) | **Next:** [Chapter 11: Reinforcement Learning](11-reinforcement-learning.md)

@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy — Chess Grandmaster Thinking: Imagine you are playing a game of chess against a grandmaster. You are not just planning your own attack"
+---
+
 # Chapter 4: Adversarial Search and Games
 
 **Previous:** [Chapter 3: Informed Search and Heuristics](03-informed-search.md) | **Next:** [Chapter 5: Constraint Satisfaction Problems](05-csp.md)

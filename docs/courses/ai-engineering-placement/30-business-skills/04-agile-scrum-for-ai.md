@@ -1,3 +1,7 @@
+---
+description: "AI engineering teams face a unique challenge. They must deliver production systems while exploring unknown solution spaces. Standard Scrum assumes"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Agile & Scrum for AI Teams

@@ -1,3 +1,7 @@
+---
+description: "AI systems behave differently in production than in training. A model that scores 98% accuracy on a held-out test set can fail in the real world"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # 03 — Experiment Design & Metrics for AI

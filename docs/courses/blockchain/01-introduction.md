@@ -1,3 +1,7 @@
+---
+description: "A blockchain is a distributed, immutable ledger that records transactions across a network of computers. Unlike traditional databases managed by a central"
+---
+
 # Chapter 1: Introduction to Blockchain
 
 > **Previous:** None (First Chapter) | **Next:** [Chapter 2: Cryptography for Blockchain](./02-cryptography.md)

@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/02_AI_Learning_Basics/AI_Powered_Memory title: '🧠 AI-Powered Memory - 5x Better Retention' sidebar_label: '🧠 AI-Powered Memory"
+---
+
 ﻿---
 slug: /learning-course/02_AI_Learning_Basics/AI_Powered_Memory
 title: "🧠 AI-Powered Memory - 5x Better Retention"

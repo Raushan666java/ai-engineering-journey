@@ -1,3 +1,7 @@
+---
+description: "The model deployment landscape in 2026 offers four dominant open-source stacks: vLLM, SGLang, Ollama, and Hugging Face TGI. Each was built with different"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # 08 — Deployment Stack Comparison: vLLM vs SGLang vs Ollama vs TGI

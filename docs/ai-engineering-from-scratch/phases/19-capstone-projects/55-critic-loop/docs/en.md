@@ -1,3 +1,7 @@
+---
+description: "A critic that returns 'looks good' the first time is broken. A critic that always returns 'needs work' is broken. The interesting critic is the one that"
+---
+
 # Critic Loop
 
 > A critic that returns "looks good" the first time is broken. A critic that always returns "needs work" is broken. The interesting critic is the one that converges, and you have to engineer convergence.

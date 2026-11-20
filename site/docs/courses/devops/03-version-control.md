@@ -4,6 +4,7 @@ slug: /devops/03-version-control
 title: "Chapter 3: Version Control"
 sidebar_label: "Chapter 3: Version Control"
 sidebar_position: 5
+description: "Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. It is the foundation"
 ---
 
 # Chapter 3: Version Control

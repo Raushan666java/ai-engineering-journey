@@ -1,3 +1,7 @@
+---
+description: "Context-free grammars provide a generative description of languages. They are the basis for describing the syntax of most programming languages and are"
+---
+
 # Chapter 6: Context-Free Grammars
 
 > **Previous:** [Properties of Regular Languages](./05-regular-languages.md) | **Next:** [Pushdown Automata](./07-pda.md)

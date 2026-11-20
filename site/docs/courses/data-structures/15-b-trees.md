@@ -4,6 +4,7 @@ slug: /data-structures/15-b-trees
 title: "Chapter 15: B-Trees and B+ Trees"
 sidebar_label: "Chapter 15: B-Trees and B+ Trees"
 sidebar_position: 15
+description: "One-Sentence Takeaway: B-trees achieve extremely shallow trees by using multi-way nodes that match disk block sizes, making them ideal for database"
 ---
 
 # Chapter 15: B-Trees and B+ Trees

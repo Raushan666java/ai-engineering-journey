@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_01_What_Is_A_Pro_Developer/03_Making
 title: "⚖️ Making Correct Trade-Offs"
 sidebar_label: "⚖️ Making Correct Trade-Offs"
 sidebar_position: 3
+description: "Software architecture is not about finding the 'perfect' solution; it is about choosing the least bad set of compromises for your current situation. Every"
 ---
 # ⚖️ Making Correct Trade-Offs
 

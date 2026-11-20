@@ -1,3 +1,7 @@
+---
+description: "Logs — Discrete, timestamped records of events. Provide detailed context for specific occurrences. High cardinality but high storage cost. Best for"
+---
+
 # Chapter 13: Observability
 
 > **Previous:** [Monitoring and Logging](./12-monitoring-logging.md) | **Next:** [DevSecOps](./14-devsecops.md)

@@ -4,6 +4,7 @@ slug: /bhagavad-gita/02-sankhya-yoga
 title: "Chapter 2: Sankhya Yoga — The Wisdom of the Seer"
 sidebar_label: "Chapter 2: Sankhya Yoga — The Wisdom of the Seer"
 sidebar_position: 2
+description: "Arjuna sits on the floor of the chariot, weaponless, tearful, finished. And Krishna — the friend, the charioteer, the whole of the Gita in human form —"
 ---
 
 # Chapter 2: Sankhya Yoga — The Wisdom of the Seer

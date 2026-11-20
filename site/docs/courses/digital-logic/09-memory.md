@@ -4,6 +4,7 @@ slug: /digital-logic/09-memory
 title: "Chapter 9: Semiconductor Memory"
 sidebar_label: "Chapter 9: Semiconductor Memory"
 sidebar_position: 9
+description: "Chapter 9: Semiconductor Memory: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = [] private"
 ---
 
 # Chapter 9: Semiconductor Memory

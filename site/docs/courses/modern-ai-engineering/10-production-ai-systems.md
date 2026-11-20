@@ -4,6 +4,7 @@ slug: /modern-ai-engineering/10-production-ai-systems
 title: "Chapter 10: Production AI Systems"
 sidebar_label: "Chapter 10: Production AI Systems"
 sidebar_position: 10
+description: "Bridge the gap between prototype and production. Master deployment strategies, caching, rate limiting, cost management, load balancing, A/B testing"
 ---
 
 # Chapter 10: Production AI Systems

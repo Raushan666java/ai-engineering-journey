@@ -4,6 +4,7 @@ slug: /digital-marketing/08-email-lifecycle-and-crm
 title: "Chapter 8 — Email, Lifecycle and CRM"
 sidebar_label: "Chapter 8 — Email, Lifecycle and CRM"
 sidebar_position: 8
+description: "Email is the only channel where you own the relationship. A social following is rented: the platform decides who sees your post. A search ranking is"
 ---
 
 # Chapter 8 — Email, Lifecycle and CRM

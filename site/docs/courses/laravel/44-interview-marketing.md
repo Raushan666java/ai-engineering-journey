@@ -4,6 +4,7 @@ slug: /laravel/44-interview-marketing
 title: "Chapter 44: Marketing & Advertising → Interview Q&A"
 sidebar_label: "Chapter 44: Marketing & Advertising → Interview Q&A"
 sidebar_position: 44
+description: "A campaign management system is built around five interconnected components. Campaigns are the top-level containers that define the objective (brand"
 ---
 
 # Chapter 44: Marketing & Advertising → Interview Q&A

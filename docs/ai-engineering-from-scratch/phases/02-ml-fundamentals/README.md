@@ -1,3 +1,7 @@
+---
+description: "Classical machine learning — still the backbone of most production AI."
+---
+
 # Phase 2: ML Fundamentals
 
 > Classical machine learning — still the backbone of most production AI.

@@ -4,6 +4,7 @@ slug: /java/08-gradle
 title: "Gradle Deep Dive"
 sidebar_label: "Gradle Deep Dive"
 sidebar_position: 8
+description: "Gradle is the de facto build tool for modern Java and Kotlin projects. Unlike Maven's rigid XML-driven lifecycle, Gradle combines a flexible, programmable"
 ---
 
 # Gradle Deep Dive

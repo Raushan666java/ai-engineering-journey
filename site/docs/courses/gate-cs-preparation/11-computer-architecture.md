@@ -1,9 +1,10 @@
 ---
 id: 11-computer-architecture
 slug: /gate-cs-preparation/11-computer-architecture
-title: "11 Computer Architecture"
-sidebar_label: "11 Computer Architecture"
+title: "11-computer-architecture"
+sidebar_label: "11-computer-architecture"
 sidebar_position: 11
+description: "The von Neumann architecture (stored-program concept) uses a single shared memory for both instructions and data."
 ---
 
 ﻿# Chapter 11: Computer Organization & Architecture
@@ -88,7 +89,6 @@ flowchart LR
 
 ### 1.1 von Neumann Architecture
 
-
 The von Neumann architecture (stored-program concept) uses a single shared memory for both instructions and data.
 
 **Key characteristics:**
@@ -107,12 +107,11 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 ```
 
 **Execution cycle (Fetch-Decode-Execute):**
-1. **Fetch:** PC → MAR → memory → MDR → IR, PC â†Â� PC + 1
+1. **Fetch:** PC → MAR → memory → MDR → IR, PC ← PC + 1
 2. **Decode:** Control unit decodes instruction in IR
 3. **Execute:** ALU performs operation, results written back
 
 ### 1.2 Harvard Architecture
-
 
 - Separate instruction memory and data memory
 - Allows simultaneous fetch and data access
@@ -120,7 +119,6 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 - Pipelining benefits from Harvard: instruction fetch and data access don't conflict
 
 ### 1.3 CPU Register Set
-
 
 | Register | Size | Purpose |
 |----------|------|---------|
@@ -139,7 +137,6 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 
 ### 1.4 Bus Architecture
 
-
 **Single Bus Architecture:**
 - All components share one bus
 - Arbitration needed for bus access
@@ -156,7 +153,6 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 
 ### 1.5 Word Length & Addressing
 
-
 - Word length: natural data size of the processor (n bits → ALU, registers, buses all n-bit)
 - Byte addressable: each byte has a unique address
 - Word alignment: word addresses are multiples of word-size-in-bytes
@@ -166,7 +162,6 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 ## 2. Instruction Set Architecture
 
 ### 2.1 RISC vs CISC
-
 
 | Feature | RISC | CISC |
 |---------|------|------|
@@ -188,7 +183,6 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 
 ### 2.2 Addressing Modes
 
-
 | Addressing Mode | Effective Address | Example (MIPS-like) | Use Case |
 |-----------------|-------------------|---------------------|----------|
 | Immediate | Operand = instruction field | `ADD R1, #5` | Constants |
@@ -198,33 +192,31 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 | Base-displacement | EA = base + offset | `LW R1, 4(R2)` | Stack/struct access |
 | Indexed | EA = base + index | `LW R1, array(R2)` | Array access |
 | PC-relative | EA = PC + offset | `BEQ R1, R2, label` | Branches |
-| Autoincrement | EA = R; R â†Â� R + 1 | `LW R1, (R2)+` | String ops |
-| Autodecrement | R â†Â� R − 1; EA = R | `LW R1, −(R2)` | Stack push |
+| Autoincrement | EA = R; R ← R + 1 | `LW R1, (R2)+` | String ops |
+| Autodecrement | R ← R − 1; EA = R | `LW R1, −(R2)` | Stack push |
 | Scaled indexed | EA = base + (index × scale) | `LW R1, arr(R2×4)` | Word arrays |
 
 **GATE tip:** Always check the direction of autoincrement (post-increment) vs autodecrement (pre-decrement).
 
 ### 2.3 Instruction Formats
 
-
 **Zero-address (Stack machine):**
 - `ADD` → pops two values from stack, pushes result
 - Stack top is always the implied operand
 
 **One-address (Accumulator machine):**
-- `ADD X` → ACC â†Â� ACC + M[X]
+- `ADD X` → ACC ← ACC + M[X]
 - Second operand is always accumulator
 
 **Two-address (CISC):**
-- `ADD R1, R2` → R1 â†Â� R1 + R2 (destructive)
-- `MOV R1, R2` → R1 â†Â� R2
+- `ADD R1, R2` → R1 ← R1 + R2 (destructive)
+- `MOV R1, R2` → R1 ← R2
 
 **Three-address (RISC):**
-- `ADD R1, R2, R3` → R1 â†Â� R2 + R3 (non-destructive)
+- `ADD R1, R2, R3` → R1 ← R2 + R3 (non-destructive)
 - Maximum flexibility, longer instruction length
 
 ### 2.4 Endianness
-
 
 **Big Endian:** Most significant byte at lowest address (IBM, network byte order)
 ```
@@ -242,7 +234,6 @@ Value:    0x78 0x56 0x34 0x12
 
 ### 2.5 Condition Codes / Flags
 
-
 | Flag | Meaning | Set When |
 |------|---------|----------|
 | Z (Zero) | Result = 0 | ALU output = 0 |
@@ -256,15 +247,13 @@ Value:    0x78 0x56 0x34 0x12
 
 ### 3.1 Number Bases
 
-
 **Conversions:**
 - Decimal → Binary: repeated division by 2
 - Binary → Hex: group 4 bits from binary point
 - Hex → Binary: expand each hex digit to 4 bits
-- Octal â†—� Binary: group 3 bits
+- Octal ↔ Binary: group 3 bits
 
 ### 3.2 Signed Integer Representations
-
 
 **Signed Magnitude:**
 - MSB = sign (0=+ve, 1=−ve), remaining bits = magnitude
@@ -296,13 +285,11 @@ Value:    0x78 0x56 0x34 0x12
 
 ### 3.3 Fixed-Point Representation
 
-
 - Qm.n format: m integer bits, n fractional bits
 - Value = (integer part) + (fractional part) × 2^(−n)
 - Example: Q4.4 → range 0 to 15.9375, precision 1/16
 
 ### 3.4 IEEE 754 Floating-Point Standard
-
 
 #### Single Precision (32-bit)
 
@@ -369,7 +356,6 @@ Where:
 
 ### 3.5 Floating-Point Arithmetic
 
-
 **Addition/Subtraction:**
 1. Align exponents (smaller exponent → larger)
 2. Add/subtract mantissas
@@ -387,7 +373,6 @@ Where:
 
 ### 4.1 Basic Adders
 
-
 **Half Adder:**
 - S = A ⊕ B, C = A · B
 
@@ -397,13 +382,11 @@ Where:
 
 ### 4.2 Ripple-Carry Adder (RCA)
 
-
 - n full adders cascaded: Cout of stage i → Cin of stage i+1
 - Delay = n × t_FA (where t_FA = delay of one full adder)
 - Simple but slow for large n
 
 ### 4.3 Carry Lookahead Adder (CLA)
-
 
 **Key insight:** Generate (G) and Propagate (P) signals:
 
@@ -423,14 +406,12 @@ C_4 = G_3 + P_3·G_2 + P_3·P_2·G_1 + P_3·P_2·P_1·G_0 + P_3·P_2·P_1·P_0·
 
 ### 4.4 Carry-Save Adder (CSA)
 
-
 - Used in multi-operand addition (summing 3+ numbers)
 - Saves carry outputs rather than propagating them
 - Input: 3 numbers → output: sum vector + carry vector
 - Final stage uses a CLA to combine sum and carry vectors
 
 ### 4.5 Booth's Algorithm (Signed Multiplication)
-
 
 **Encoding (Booth recoding) for multiplier bits:**
 - 00 → 0 (no operation)
@@ -457,7 +438,6 @@ for i = 0 to n−1:
 
 ### 4.6 Restoring Division
 
-
 **Algorithm (n-bit dividend / n-bit divisor → n-bit quotient):**
 ```
 remainder = dividend
@@ -476,7 +456,6 @@ for i = 0 to n−1:
 **Problem:** worst-case 2n operations per division
 
 ### 4.7 Non-Restoring Division
-
 
 **Optimization:** eliminate the restore step
 ```
@@ -498,7 +477,6 @@ if remainder < 0:
 
 ### 4.8 Fast Multiplication (Array Multiplier)
 
-
 - Uses array of AND gates + adders (Carry Save + CLA)
 - Wallace tree: reduces partial products in parallel using CSAs
 - Time: O(log n) vs O(n) for shift-and-add
@@ -508,7 +486,6 @@ if remainder < 0:
 ## 5. Control Unit
 
 ### 5.1 Hardwired Control
-
 
 - Control signals generated by combinational logic (gate-level circuits)
 - Inputs: opcode + status flags + clock
@@ -525,7 +502,6 @@ if remainder < 0:
 **Disadvantages:** Inflexible, hard to modify, complex for large ISAs
 
 ### 5.2 Microprogrammed Control
-
 
 - Control signals stored in Control Memory (ROM) as microinstructions
 - Sequencer (micro-PC) steps through microcode
@@ -555,7 +531,6 @@ if remainder < 0:
 
 ### 5.3 Microinstruction Sequencing
 
-
 **Next-address generation methods:**
 1. **Next sequential** (micro-PC + 1) → implicit
 2. **Branch** → conditional/unconditional jump in microcode
@@ -568,7 +543,6 @@ if remainder < 0:
 - Mapping enable
 
 ### 5.4 Hardwired vs Microprogrammed Comparison
-
 
 | Aspect | Hardwired | Microprogrammed |
 |--------|-----------|-----------------|
@@ -585,7 +559,6 @@ if remainder < 0:
 ## 6. Pipelining
 
 ### 6.1 Basic 5-Stage RISC Pipeline
-
 
 Typical RISC pipeline stages:
 ```
@@ -604,7 +577,6 @@ IF → ID → EX → MEM → WB
 **Pipeline speedup = Number of stages (under ideal conditions)**
 
 ### 6.2 Pipeline Hazards
-
 
 #### Structural Hazard
 - Required hardware resource is busy
@@ -655,7 +627,6 @@ SUB R4, R1, R5    // R4 = R1 − R5 → RAW with ADD
 
 ### 6.3 Pipeline Timing Diagrams (GATE Favorite)
 
-
 **Example: Detecting hazards and inserting stalls**
 
 ```
@@ -669,7 +640,6 @@ SW R3, 0(R5)                IF           ID    EX    MEM   WB
 
 ### 6.4 Pipeline Speedup Formula
 
-
 ```
 Speedup = CPI_unpipelined / CPI_pipelined
         = (1 + Stall_cycles_per_inst) / (1 + Stall_cycles_per_inst)
@@ -682,7 +652,6 @@ Actual Speedup = n / (1 + n × (stall_frequency × stall_cycles))
 **GATE tip:** When pipelines are given with branch penalties and data hazard stalls, compute effective CPI = 1 + stall_rate × stall_cycles.
 
 ### 6.5 Branch Prediction
-
 
 **1-bit predictor:**
 - Predict same as last outcome
@@ -703,7 +672,6 @@ Actual Speedup = n / (1 + n × (stall_frequency × stall_cycles))
 
 ### 6.6 Pipeline Depth & Superpipeline
 
-
 - Deeper pipeline → more stages → higher clock frequency → higher throughput
 - Problem: more stages = more hazards = higher penalty per mis-prediction
 
@@ -715,7 +683,6 @@ Actual Speedup = n / (1 + n × (stall_frequency × stall_cycles))
 
 ### 6.7 Superscalar Processors
 
-
 - Multiple instructions issued per cycle (2-way, 3-way, 4-way, ...)
 - Out-of-order execution: dynamic scheduling to avoid hazards
 - Tomasulo's algorithm: register renaming, reservation stations, common data bus
@@ -725,7 +692,6 @@ Actual Speedup = n / (1 + n × (stall_frequency × stall_cycles))
 ## 7. Memory Hierarchy
 
 ### 7.1 Memory Hierarchy Pyramid
-
 
 ```
       Registers (1 cycle, ~1 KB)
@@ -742,7 +708,6 @@ Actual Speedup = n / (1 + n × (stall_frequency × stall_cycles))
 - Spatial locality: nearby data will be accessed soon
 
 ### 7.2 Cache Organization
-
 
 #### Cache Parameters
 
@@ -808,7 +773,6 @@ Miss penalty = Time to fetch block from lower level
 
 ### 7.3 Replacement Policies
 
-
 | Policy | Description | Pros/Cons |
 |--------|-------------|-----------|
 | LRU (Least Recently Used) | Replace the block used farthest in past | Best hit rate, expensive to implement |
@@ -818,7 +782,6 @@ Miss penalty = Time to fetch block from lower level
 | Pseudo-LRU (PLRU) | Approximate LRU with binary tree | Good hit rate, lower cost than LRU |
 
 ### 7.4 Write Policies
-
 
 | Policy | Write Hit | Write Miss |
 |--------|-----------|------------|
@@ -830,7 +793,6 @@ Miss penalty = Time to fetch block from lower level
 - Write-through + No-write-allocate (simpler, ensures consistency)
 
 ### 7.5 Main Memory (DRAM/SRAM)
-
 
 | Property | SRAM | DRAM |
 |----------|------|------|
@@ -854,7 +816,6 @@ Miss penalty = Time to fetch block from lower level
 **GATE tip:** Interleaving reduces the effective memory access time for sequential access patterns. For k banks, the time to access k consecutive words is T + (k−1) × t, where T is first-word access time and t is per-word access time.
 
 ### 7.6 Virtual Memory
-
 
 **Key concepts:**
 - Virtual address (VA) → Physical address (PA) translation
@@ -892,7 +853,6 @@ EAT = TLB_hit_rate × (TLB_hit_time + cache_access_time)
 
 ### 7.7 Cache Performance Equations (Reference Table)
 
-
 | Formula | Expression |
 |---------|------------|
 | AMAT (single-level) | Hit time + Miss rate × Miss penalty |
@@ -908,7 +868,6 @@ EAT = TLB_hit_rate × (TLB_hit_time + cache_access_time)
 
 ### 8.1 Programmed I/O
 
-
 - CPU executes I/O instructions (IN/OUT or memory-mapped I/O)
 - CPU busy-waits for I/O device ready: polls status register in a loop
 - **Problem:** CPU wastefully spins while waiting (100% CPU utilization for I/O wait)
@@ -921,7 +880,6 @@ data = read(data_register);
 ```
 
 ### 8.2 Interrupt-Driven I/O
-
 
 - Device interrupts CPU when ready
 - CPU saves context → ISR → restore context → continue
@@ -941,7 +899,6 @@ data = read(data_register);
 
 ### 8.3 Vectored vs Non-Vectored Interrupts
 
-
 | Aspect | Vectored | Non-Vectored (Polled) |
 |--------|----------|----------------------|
 | ISR address | Device supplies vector → address directly | CPU must poll all devices to find requester |
@@ -954,7 +911,6 @@ data = read(data_register);
 **Priority interrupts:** Daisy chain, independent IRQ lines, or programmable interrupt controller (PIC → e.g., Intel 8259A).
 
 ### 8.4 DMA (Direct Memory Access)
-
 
 - DMA controller transfers data directly between I/O device and memory
 - CPU initiates transfer (device, memory address, byte count)
@@ -974,7 +930,6 @@ data = read(data_register);
 
 ### 8.5 I/O Comparison
 
-
 | Method | CPU Involvement | Transfer Unit | Best For |
 |--------|----------------|---------------|----------|
 | Programmed I/O | 100% polling | Byte/Word | Simple, rare transfers |
@@ -987,7 +942,6 @@ data = read(data_register);
 
 ### 9.1 Flynn's Taxonomy
 
-
 | Category | Instruction Streams | Data Streams | Examples |
 |----------|-------------------|-------------|----------|
 | SISD | 1 | 1 | Standard uniprocessor |
@@ -997,7 +951,6 @@ data = read(data_register);
 
 ### 9.2 SIMD
 
-
 - Single instruction, multiple data streams
 - Same operation applied to multiple data elements simultaneously
 - Types:
@@ -1006,7 +959,6 @@ data = read(data_register);
   - **SIMD extensions:** MMX, SSE, AVX (x86); NEON (ARM)
 
 ### 9.3 MIMD
-
 
 - Multiple processors executing different instructions on different data
 - Two categories:
@@ -1022,7 +974,6 @@ data = read(data_register);
 - Communication via message passing (MPI, OpenMP)
 
 ### 9.4 Cache Coherence
-
 
 **The coherence problem:** Multiple caches may hold copies of same memory block; writes to one must be visible to all.
 
@@ -1051,7 +1002,6 @@ data = read(data_register);
 
 ### 9.5 Amdahl's Law
 
-
 ```
 Speedup = 1 / ((1 − P) + P/S)
 
@@ -1066,7 +1016,6 @@ S = speedup of the parallel portion
 
 ### 9.6 Gustafson's Law (Scaled Speedup)
 
-
 ```
 Scaled speedup = S + P × (1 − S)
 ```
@@ -1078,7 +1027,6 @@ Assumes problem size grows with the number of processors, making Amdahl's Law ov
 ## 10. Formula Reference Tables
 
 ### 10.1 Performance Metrics
-
 
 | Metric | Formula |
 |--------|---------|
@@ -1094,7 +1042,6 @@ Assumes problem size grows with the number of processors, making Amdahl's Law ov
 
 ### 10.2 Pipeline Performance
 
-
 | Metric | Formula |
 |--------|---------|
 | Ideal speedup | = k (number of pipeline stages) |
@@ -1105,7 +1052,6 @@ Assumes problem size grows with the number of processors, making Amdahl's Law ov
 | Pipeline efficiency | = Speedup / k × 100% |
 
 ### 10.3 Cache Parameters
-
 
 | Parameter | Formula |
 |-----------|---------|
@@ -1120,7 +1066,6 @@ Assumes problem size grows with the number of processors, making Amdahl's Law ov
 
 ### 10.4 IEEE 754 Quick Reference
 
-
 | Quantity | Single (32-bit) | Double (64-bit) |
 |----------|----------------|-----------------|
 | Format | (−1)^S × 1.M × 2^(E−127) | (−1)^S × 1.M × 2^(E−1023) |
@@ -1133,7 +1078,6 @@ Assumes problem size grows with the number of processors, making Amdahl's Law ov
 | Machine epsilon | 2^(−23) ≈ 1.19×10^(−7) | 2^(−52) ≈ 2.22×10^(−16) |
 
 ### 10.5 Memory Organization
-
 
 | Metric | Formula |
 |--------|---------|
@@ -1149,7 +1093,6 @@ Assumes problem size grows with the number of processors, making Amdahl's Law ov
 
 ### C1: IEEE 754 Single Precision [GATE 2010, 2 marks]
 
-
 **Q:** The decimal value 0.75 is to be represented in IEEE 754 single precision format. What are the exponent and mantissa?
 
 **A:**
@@ -1163,7 +1106,6 @@ Mantissa = 100...0 (23 bits, leading 1 implicit)
 
 ### C2: Cache Miss Rate [GATE 2010, 2 marks]
 
-
 **Q:** A computer system has a 4 KB direct-mapped cache with 64-byte blocks. The main memory size is 256 KB. How many bits are in the tag, index, and offset fields?
 
 **A:**
@@ -1175,7 +1117,6 @@ Tag = 18 − 6 − 6 = 6 bits
 **Answer:** Tag = 6, Index = 6, Offset = 6
 
 ### C3: Pipeline Speedup [GATE 2010, 2 marks]
-
 
 **Q:** A 5-stage pipelined processor has stages: IF, ID, EX, MEM, WB. Branch instructions cause a 2-cycle stall. If 20% of instructions are branches, what is the average CPI?
 
@@ -1189,7 +1130,6 @@ Average CPI = 1 + 0.20 × 2 = 1.40
 
 ### C4: 2's Complement [GATE 2011, 1 mark]
 
-
 **Q:** The smallest integer that can be represented with 8-bit 2's complement representation is?
 
 **A:**
@@ -1201,7 +1141,6 @@ Smallest = −128
 
 ### C5: Addressing Modes [GATE 2011, 1 mark]
 
-
 **Q:** Which addressing mode is used to access the stack?
 
 **A:** Autodecrement for push, Autoincrement for pop. The effective address is the stack pointer (SP). This is **Register Indirect with Autoincrement/Autodecrement**.
@@ -1209,7 +1148,6 @@ Smallest = −128
 **Answer:** Register Indirect with Autodecrement/Autoincrement (Stack addressing mode)
 
 ### C6: Cache Mapping [GATE 2011, 2 marks]
-
 
 **Q:** A 2-way set-associative cache has 4 blocks (0–3). The memory block sequence accessed is: 0, 4, 0, 4, 8, 0, 4, 8. Using LRU replacement, find the number of misses.
 
@@ -1242,7 +1180,6 @@ Total misses = 6
 
 ### C7: Booth's Algorithm [GATE 2011, 2 marks]
 
-
 **Q:** Booth's algorithm for multiplication of signed 2's complement numbers uses bit-pair recoding. How many additions/subtractions are needed to multiply two 16-bit numbers using radix-4 Booth encoding?
 
 **A:**
@@ -1252,7 +1189,6 @@ Maximum: each group generates one of (−2, −1, 0, +1, +2) operations → at m
 **Answer:** 8 (or n/2 for radix-4)
 
 ### C8: Microprogrammed Control [GATE 2012, 1 mark]
-
 
 **Q:** Which of the following is NOT true about microprogrammed control unit?
 (A) Faster than hardwired control
@@ -1266,7 +1202,6 @@ Maximum: each group generates one of (−2, −1, 0, +1, +2) operations → at m
 
 ### C9: MESI Protocol [GATE 2012, 2 marks]
 
-
 **Q:** In the MESI cache coherence protocol, a cache block in the "Shared" state becomes "Invalid" when:
 
 **A:** A write hit or snooped write miss from another processor invalidates the Shared block.
@@ -1274,7 +1209,6 @@ Maximum: each group generates one of (−2, −1, 0, +1, +2) operations → at m
 **Answer:** When another processor writes to that memory location (bus invalidate is snooped)
 
 ### C10: Pipelining Hazard Detection [GATE 2012, 2 marks]
-
 
 **Q:** Consider the following sequence of instructions:
 ```
@@ -1295,7 +1229,6 @@ Number of RAW hazards = 2
 
 ### C11: DMA Transfer [GATE 2013, 2 marks]
 
-
 **Q:** A DMA controller transfers 16-bit words at a rate of 1 word per cycle. The bus clock is 50 MHz. The DMA is used to transfer a 64 KB block. How long does the transfer take?
 
 **A:**
@@ -1309,7 +1242,6 @@ Alternatively: 64 KB = 32768 words × 20 ns/word = 655.36 μs
 
 ### C12: IEEE 754 Doubles [GATE 2013, 2 marks]
 
-
 **Q:** What is the value of 2^(−1022) in IEEE 754 double precision?
 
 **A:** This is the smallest positive normalized number.
@@ -1320,7 +1252,6 @@ Value = 1.0 × 2^(1−1023) = 2^(−1022)
 **Answer:** 2^(−1022) (the minimum positive normalized double)
 
 ### C13: Effective Access Time [GATE 2013, 2 marks]
-
 
 **Q:** A system has L1 cache with hit time = 2 cycles, miss rate = 10%. L2 cache hit time = 10 cycles, miss rate = 5%. Main memory access time = 100 cycles. Find the average memory access time.
 
@@ -1337,7 +1268,6 @@ AMAT = 2 + 0.10 × 15 = 2 + 1.5 = 3.5 cycles
 
 ### C14: Control Hazard / Delayed Branch [GATE 2014, 1 mark]
 
-
 **Q:** In a 5-stage pipelined processor, a branch instruction resolves in the MEM stage. If delayed branch with 1 delay slot is used, the branch penalty is:
 
 **A:**
@@ -1350,7 +1280,6 @@ With 1 delay slot: penalty = 1 cycle (still 1 wasted cycle after the delay slot)
 **Answer:** 1 cycle
 
 ### C15: Instruction Format [GATE 2014, 2 marks]
-
 
 **Q:** A processor has 64 registers, uses 16-bit instructions. It has two instruction formats: Format A has 4-bit opcode, two register operands. Format B has 4-bit opcode, one register operand, and an 8-bit immediate. How many instructions of each format are possible?
 
@@ -1369,7 +1298,6 @@ With 6-bit immediate: Format B: 4+6+6 = 16 → 16 instruction types also
 
 ### C16: Restoring Division [GATE 2014, 2 marks]
 
-
 **Q:** The number of addition operations needed in the worst case to divide an n-bit number by an n-bit number using restoring division is:
 
 **A:**
@@ -1381,7 +1309,6 @@ Each iteration: subtract → test negative → add back → shift
 
 ### C17: Virtual Memory [GATE 2014, 2 marks]
 
-
 **Q:** A 32-bit virtual address, 4 KB page size, 4-byte page table entry. How much memory does the page table consume?
 
 **A:**
@@ -1391,7 +1318,6 @@ Page table size = 2^20 × 4 bytes = 4 MB
 **Answer:** 4 MB
 
 ### C18: Pipeline CPI Calculation [GATE 2015, 2 marks]
-
 
 **Q:** A 5-stage pipeline has the following instruction mix: ALU 40% (1 cycle), Load 20% (2 cycles with RAW stall), Store 15% (1 cycle), Branch 25% (3 cycles penalty). Find the average CPI.
 
@@ -1408,7 +1334,6 @@ Average CPI = 0.40×1 + 0.20×2 + 0.15×1 + 0.25×4
 **Answer:** 1.95
 
 ### C19: Direct-Mapped Cache Analysis [GATE 2015, 2 marks]
-
 
 **Q:** For a direct-mapped cache with 8 blocks, block size = 16 bytes. Memory addresses (in decimal): 0, 16, 32, 48, 64, 80, 96, 112 are accessed in that order. Find the number of cache misses.
 
@@ -1428,7 +1353,6 @@ All are compulsory misses → 8 misses
 
 ### C20: Floating Point Addition [GATE 2015, 2 marks]
 
-
 **Q:** Add the IEEE 754 single precision numbers: A = 0x3F800000 (1.0) and B = 0x40000000 (2.0). What is the result?
 
 **A:**
@@ -1446,7 +1370,6 @@ Result: 0 10000000 10000000000000000000000 = 0x40400000
 
 ### C21: Carry Lookahead Adder [GATE 2015, 2 marks]
 
-
 **Q:** In a 16-bit carry lookahead adder using 4-bit CLA blocks, the number of generate (G) and propagate (P) signals at the block level is:
 
 **A:**
@@ -1458,7 +1381,6 @@ But the top-level lookahead needs the combined G and P from each 4-bit block →
 **Answer:** 4 block-generate and 4 block-propagate signals
 
 ### C22: Memory Interleaving [GATE 2015, 2 marks]
-
 
 **Q:** A memory system has 4-way interleaving. The time to access the first word is 100 ns and subsequent words take 10 ns each. What is the time to read 8 consecutive words?
 
@@ -1590,7 +1512,6 @@ Let me just give a clear answer.
 
 ### C23: Addressing Modes Identification [GATE 2015, 1 mark]
 
-
 **Q:** Identify the addressing mode: `ADD R1, (R2)` where R2 contains the address of the operand.
 
 **A:** Register indirect addressing mode. The operand is at the memory address stored in R2.
@@ -1598,7 +1519,6 @@ Let me just give a clear answer.
 **Answer:** Register Indirect
 
 ### C24: Page Table Size [GATE 2016, 2 marks]
-
 
 **Q:** A computer has 32-bit virtual addresses, 4 KB pages, and 4-byte PTEs. How much memory does a single-level page table occupy?
 
@@ -1609,7 +1529,6 @@ Page table size = 2^20 × 4 bytes = 4 MB
 **Answer:** 4 MB
 
 ### C25: Two-Level Page Table [GATE 2016, 2 marks]
-
 
 **Q:** For the same system (32-bit VA, 4 KB pages, 4-byte PTEs) using a 2-level page table, find the page table size if the first level has 2^10 entries.
 
@@ -1626,7 +1545,6 @@ Total (only one second-level table in use) = 4 KB + 4 KB = 8 KB
 **Answer:** Worst case: ~4 MB; best case: 8 KB
 
 ### C26: TLB Performance [GATE 2016, 2 marks]
-
 
 **Q:** TLB hit rate = 95%, TLB access time = 10 ns, memory access time = 100 ns. TLB miss causes a page table walk costing 200 ns (includes memory access). Find the effective memory access time.
 
@@ -1645,7 +1563,6 @@ EAT = 0.95 × (10 + 100) + 0.05 × (10 + 200 + 100)
 
 ### C27: Hardwired vs Microprogrammed [GATE 2016, 1 mark]
 
-
 **Q:** Which control unit design is faster?
 
 **A:** Hardwired control unit is faster because control signals are generated directly by combinational logic without the latency of control memory access.
@@ -1653,7 +1570,6 @@ EAT = 0.95 × (10 + 100) + 0.05 × (10 + 200 + 100)
 **Answer:** Hardwired
 
 ### C28: Branch Prediction → 2-bit Saturating Counter [GATE 2017, 2 marks]
-
 
 **Q:** A 2-bit saturating counter is used for branch prediction. The actual branch outcomes for a specific branch are: T, T, T, NT, NT, T, NT, T. Assume the initial state is "Weakly Taken." Find the number of mispredictions.
 
@@ -1678,7 +1594,6 @@ Mispredictions: 4
 
 ### C29: Flynn's Taxonomy [GATE 2017, 1 mark]
 
-
 **Q:** A vector processor belongs to which category of Flynn's taxonomy?
 
 **A:** Vector processors execute one instruction on multiple data elements → SIMD (Single Instruction, Multiple Data).
@@ -1687,7 +1602,6 @@ Mispredictions: 4
 
 ### C30: Write Policy [GATE 2017, 1 mark]
 
-
 **Q:** In a write-back cache, a dirty block is evicted. What happens?
 
 **A:** The dirty block's contents are written back to the main memory (or next level cache) before the new block is loaded.
@@ -1695,7 +1609,6 @@ Mispredictions: 4
 **Answer:** The evicted dirty block is written back to memory
 
 ### C31: Cache Miss Rate Calculation [GATE 2017, 2 marks]
-
 
 **Q:** A program has L1 cache miss rate of 5% and L2 cache miss rate of 20%. L1 hit = 2 cycles, L2 hit = 12 cycles, memory = 100 cycles. Find the average memory access time.
 
@@ -1709,7 +1622,6 @@ AMAT = 2 + 0.05 × 32 = 2 + 1.6 = 3.6 cycles
 
 ### C32: Booth's Algorithm Steps [GATE 2018, 2 marks]
 
-
 **Q:** How many addition/subtraction operations are required to multiply two 8-bit numbers using Booth's algorithm (basic radix-2)?
 
 **A:**
@@ -1721,7 +1633,6 @@ Maximum: 8 operations (+, −, or 0)
 
 ### C33: Delayed Branch [GATE 2018, 1 mark]
 
-
 **Q:** A processor uses delayed branching with 2 delay slots. The compiler can always fill both slots with useful instructions. What is the effective branch penalty?
 
 **A:**
@@ -1732,7 +1643,6 @@ Effective penalty = 0 cycles.
 
 ### C34: ALU Control Signals [GATE 2018, 2 marks]
 
-
 **Q:** An ALU takes two n-bit inputs and produces an n-bit output and four flags (Z, C, V, N). How many control signal bits are needed if the ALU can perform: ADD, SUB, AND, OR, XOR, NOT?
 
 **A:**
@@ -1741,7 +1651,6 @@ Effective penalty = 0 cycles.
 **Answer:** 3 bits
 
 ### C35: IEEE 754 Denormalized [GATE 2018, 2 marks]
-
 
 **Q:** In IEEE 754 single precision, what is the smallest positive denormalized number?
 
@@ -1754,7 +1663,6 @@ Smallest denormalized: 0.00...01 × 2^(−126) where fraction is 22 zeros then 1
 **Answer:** 2^(−149)
 
 ### C36: Pipeline Hazards [GATE 2019, 2 marks]
-
 
 **Q:** Identify all data hazards in the following instruction sequence:
 ```
@@ -1776,7 +1684,6 @@ RAW hazards: I1→I2, I1→I4, I2→I3 = 3 RAW hazards
 
 ### C37: Amdahl's Law [GATE 2019, 2 marks]
 
-
 **Q:** A program spends 70% of its time in a function that can be parallelized. What is the maximum speedup achievable with 8 processors?
 
 **A:**
@@ -1790,7 +1697,6 @@ Speedup = 1 / ((1 − 0.70) + 0.70/8)
 
 ### C38: Cache Associativity [GATE 2019, 2 marks]
 
-
 **Q:** A 64 KB cache with 64-byte blocks uses 4-way set associativity. How many sets does the cache have?
 
 **A:**
@@ -1801,7 +1707,6 @@ Number of sets = 1024 / 4 = 256
 **Answer:** 256 sets
 
 ### C39: Memory Address Mapping [GATE 2019, 2 marks]
-
 
 **Q:** For a fully associative cache with 16 blocks, block size = 32 bytes. How many bits of tag are needed for a 32-bit physical address?
 
@@ -1814,7 +1719,6 @@ Tag = 32 − 5 = 27 bits
 
 ### C40: Branch Target Buffer [GATE 2020, 1 mark]
 
-
 **Q:** The Branch Target Buffer (BTB) is accessed in which pipeline stage?
 
 **A:** The BTB is accessed in the Instruction Fetch (IF) stage to predict the target address before the instruction is decoded.
@@ -1822,7 +1726,6 @@ Tag = 32 − 5 = 27 bits
 **Answer:** Instruction Fetch (IF) stage
 
 ### C41: CPI with Cache Misses [GATE 2020, 2 marks]
-
 
 **Q:** A processor has base CPI of 1.0 (all cache hits). L1 miss rate = 8%, miss penalty = 20 cycles. What is the effective CPI?
 
@@ -1834,7 +1737,6 @@ Effective CPI = 1.0 + 1.6 = 2.6
 
 ### C42: Signed Number Representation [GATE 2020, 1 mark]
 
-
 **Q:** What is the range of numbers representable in 8-bit signed magnitude?
 
 **A:**
@@ -1844,7 +1746,6 @@ Range: −(2^7 − 1) to +(2^7 − 1) = −127 to +127
 **Answer:** −127 to +127
 
 ### C43: Microinstruction Sequencing [GATE 2020, 2 marks]
-
 
 **Q:** In a microprogrammed control unit, the next microinstruction address is determined by:
 
@@ -1857,7 +1758,6 @@ Range: −(2^7 − 1) to +(2^7 − 1) = −127 to +127
 **Answer:** The address is determined by branch condition logic, next-address field, and opcode mapping
 
 ### C44: MESI States [GATE 2021, 2 marks]
-
 
 **Q:** In the MESI protocol, when a processor reads a cache block that is in the "Modified" state in another processor's cache, what happens?
 
@@ -1875,7 +1775,6 @@ The requesting processor:
 
 ### C45: Interrupt Priority [GATE 2021, 1 mark]
 
-
 **Q:** In a daisy-chain interrupt priority scheme, which device has the highest priority?
 
 **A:** The device closest to the CPU in the daisy chain has the highest priority.
@@ -1884,7 +1783,6 @@ The requesting processor:
 
 ### C46: Harvard Architecture [GATE 2021, 1 mark]
 
-
 **Q:** Why do most modern processors use a modified Harvard architecture?
 
 **A:** Modified Harvard uses separate L1 caches for instructions and data (Harvard) and unified lower-level caches (von Neumann). This enables simultaneous instruction fetch and data access at L1, while maintaining unified memory at higher levels for flexibility.
@@ -1892,7 +1790,6 @@ The requesting processor:
 **Answer:** Separate L1 I-cache and D-cache allows simultaneous fetch + data access; unified lower levels simplify programming
 
 ### C47: Cache Write Policies [GATE 2022, 2 marks]
-
 
 **Q:** A write-back, write-allocate cache has a dirty block at address A. The processor reads address B which maps to the same cache set. The cache evicts the dirty block. What happens?
 
@@ -1904,7 +1801,6 @@ The requesting processor:
 **Answer:** Dirty block is written back, new block is loaded
 
 ### C48: IEEE 754 Addition [GATE 2022, 2 marks]
-
 
 **Q:** Add the following IEEE 754 single precision numbers and give the result in hex:
 A = 0x3F800001, B = 0x3F800002
@@ -1941,7 +1837,6 @@ Let me keep it simpler: the result is 0x40000001 (approximately 2.000000238)
 
 ### C49: TLB Reach [GATE 2022, 2 marks]
 
-
 **Q:** A TLB has 64 entries and the page size is 4 KB. What is the TLB reach?
 
 **A:**
@@ -1951,7 +1846,6 @@ TLB reach = Number of TLB entries × Page size
 **Answer:** 256 KB
 
 ### C50: CPI with Branch Prediction [GATE 2023, 2 marks]
-
 
 **Q:** A pipeline has a branch misprediction penalty of 4 cycles. The branch predictor has 92% accuracy. 25% of all instructions are branches. What is the effective CPI (ideal CPI = 1)?
 
@@ -1964,7 +1858,6 @@ Effective CPI = 1 + 0.08 = 1.08
 **Answer:** 1.08
 
 ### C51: LRU Cache Blocks [GATE 2023, 2 marks]
-
 
 **Q:** A 2-way associative cache with 4 blocks (LRU replacement) has the access sequence: 0, 1, 2, 3, 0, 1, 4, 0. How many misses?
 
@@ -1988,7 +1881,6 @@ Total misses = 5
 
 ### C52: DMA Cycle Stealing [GATE 2023, 2 marks]
 
-
 **Q:** A DMA controller uses cycle stealing to transfer data. The bus clock is 100 MHz. Each DMA transfer takes 1 bus cycle. The DMA transfers data at 4 MB/s. What fraction of bus cycles does the DMA use?
 
 **A:**
@@ -2009,7 +1901,6 @@ Assuming 1 byte/cycle:
 
 ### C53: Non-Restoring Division [GATE 2023, 2 marks]
 
-
 **Q:** In non-restoring division of 8-bit numbers, what is the maximum number of addition/subtraction operations needed?
 
 **A:**
@@ -2022,7 +1913,6 @@ Maximum = 8 + 1 = 9 operations
 **Answer:** 9 (8 iterations + at most 1 correction)
 
 ### C54: Instruction Pipelining → Load-Use [GATE 2024, 2 marks]
-
 
 **Q:** For the instruction sequence below, how many stalls are needed (full forwarding available)?
 ```
@@ -2045,7 +1935,6 @@ Total: 1 stall
 
 ### C55: Cache Miss Penalty Calculation [GATE 2024, 2 marks]
 
-
 **Q:** A memory system has L1 cache (hit time 1 ns, miss rate 10%), L2 cache (hit time 5 ns, miss rate 5%), and main memory (access time 50 ns). Find the AMAT.
 
 **A:**
@@ -2058,7 +1947,6 @@ AMAT = 1 + 0.10 × 7.5 = 1 + 0.75 = 1.75 ns
 
 ### C56: Floating Point Precision [GATE 2024, 1 mark]
 
-
 **Q:** How many decimal digits of precision does IEEE 754 single precision provide?
 
 **A:**
@@ -2070,7 +1958,6 @@ Approximately 7 decimal digits of precision.
 
 ### C57: Cache Block Offset [GATE 2024, 1 mark]
 
-
 **Q:** A cache block size is 128 bytes. How many bits are needed for the block offset?
 
 **A:**
@@ -2079,7 +1966,6 @@ Block offset = log2(128) = 7 bits
 **Answer:** 7 bits
 
 ### C58: Write-Through Cache Traffic [GATE 2025, 2 marks]
-
 
 **Q:** A write-through cache handles 30% write instructions. For each write miss, a block is fetched (no write-allocate). The miss rate for reads is 5%. Block size is 64 bytes. Find the average data traffic per instruction (in bytes).
 
@@ -2104,7 +1990,6 @@ Total traffic: 2.24 + 2.28 + 0.06 = 4.58 bytes/instruction
 
 ### C59: Superscalar CPI [GATE 2025, 2 marks]
 
-
 **Q:** A 2-way superscalar processor can issue up to 2 instructions per cycle. The program has a mix of 40% ALU, 20% load, 10% store, 30% branch. Loads have 1 stall cycle. Branches have a 2-cycle penalty with 90% accuracy. Find the effective CPI.
 
 **A:**
@@ -2123,7 +2008,6 @@ CPI = 0.5 + 0.20 + 0.06 = 0.76
 
 ### C60: Set Associative Tag Comparison [GATE 2025, 2 marks]
 
-
 **Q:** For a 4-way set associative cache with 32-bit addresses, 16 KB cache size, 32-byte block size. How many comparators are needed?
 
 **A:**
@@ -2137,7 +2021,6 @@ Number of comparators = Associativity = 4
 ## 12. Summary & Quick Revision
 
 ### 12.1 Must-Know Numbers
-
 
 | Fact | Value |
 |------|-------|
@@ -2154,7 +2037,6 @@ Number of comparators = Associativity = 4
 
 ### 12.2 Common Pitfalls
 
-
 1. **IEEE 754:** Don't forget the implicit leading 1 in normalized numbers
 2. **Endianness:** Memory diagrams → always draw address order
 3. **Cache index vs tag:** Index = log2(Sets), NOT log2(Blocks) in set-associative
@@ -2167,7 +2049,6 @@ Number of comparators = Associativity = 4
 10. **MESI:** Modified = dirty + exclusive; Exclusive = clean + exclusive; Shared = clean + shared
 
 ### 12.3 GATE Problem-Solving Strategy
-
 
 1. **Read carefully:** Note all given parameters (address bits, cache sizes, clock rates)
 2. **Draw diagrams:** Especially for pipeline timing and cache state transitions
@@ -2459,7 +2340,7 @@ console.log(pipeline.getStats());
 <details>
 <summary><strong>Exercise 5:</strong> Booth's Algorithm</summary>
 <p>Multiply 6 (multiplicand) × -3 (multiplier) using Booth's algorithm with 4-bit representation.</p>
-<p><strong>Solution:</strong> 6=0110, -3=1101. Booth: Initialize A=0, Q=1101, Q₋â‚Â�=0. Steps: (10): A=A-Q=0110... Wait let me retrace. 4-bit: 6=0110, -3=1101(2's). A=0000, Q=1101, Q-1=0, M=0110. Cycles: 0: Q₀Q₋â‚Â�=10 → A=A-M=1010. 1: shift ASR: 1101 0110 1. Q₀Q₋â‚Â�=01 → A=A+M=0011. 2: shift: 0001 1011 0. Q₀Q₋â‚Â�=10 → A=A-M=1011. 3: shift: 1101 1101 1. Q₀Q₋â‚Â�=11 → no op. Shift: 1110 1110 1. Result in A:Q = 11101110 = -18 (correct: 6×-3=-18).</p>
+<p><strong>Solution:</strong> 6=0110, -3=1101. Booth: Initialize A=0, Q=1101, Q₋₁=0. Steps: (10): A=A-Q=0110... Wait let me retrace. 4-bit: 6=0110, -3=1101(2's). A=0000, Q=1101, Q-1=0, M=0110. Cycles: 0: Q₀Q₋₁=10 → A=A-M=1010. 1: shift ASR: 1101 0110 1. Q₀Q₋₁=01 → A=A+M=0011. 2: shift: 0001 1011 0. Q₀Q₋₁=10 → A=A-M=1011. 3: shift: 1101 1101 1. Q₀Q₋₁=11 → no op. Shift: 1110 1110 1. Result in A:Q = 11101110 = -18 (correct: 6×-3=-18).</p>
 </details>
 
 ---

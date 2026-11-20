@@ -4,6 +4,7 @@ slug: /java/60-interview-microservices
 title: "Chapter 60: Microservices Interview Q&A (Part A → Q1–Q8)"
 sidebar_label: "Chapter 60: Microservices Interview Q&A (Part A → Q1–Q8)"
 sidebar_position: 68
+description: "Chapter 60: Microservices Interview Q&A (Part A → Q1–Q8): Pro Tip: In interviews, always start with the 'why' before the 'how.' Explaining the reasoning"
 ---
 
 # Chapter 60: Microservices Interview Q&A (Part A → Q1–Q8)

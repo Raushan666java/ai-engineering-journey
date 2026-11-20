@@ -1,3 +1,7 @@
+---
+description: "You open a paper on Fourier transforms and there is i everywhere. You look at transformer positional encodings and see sin and cos at different"
+---
+
 # Complex Numbers for AI
 
 > The square root of -1 is not imaginary. It is the key to rotations, frequencies, and half of signal processing.

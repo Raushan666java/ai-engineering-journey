@@ -1,3 +1,7 @@
+---
+description: "You build a transformer. The forward pass looks clean. You run it and get: RuntimeError: mat1 and mat2 shapes cannot be multiplied (32x768 and 512x768)"
+---
+
 # Tensor Operations
 
 > Tensors are the common language between data and deep learning. Every image, every sentence, every gradient flows through them.

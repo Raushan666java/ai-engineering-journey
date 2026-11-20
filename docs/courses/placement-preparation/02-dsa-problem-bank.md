@@ -1,3 +1,7 @@
+---
+description: "125 curated problems — Arrays, Strings, Linked Lists, Trees, Dynamic Programming, Graphs, Stack/Queue/Heap, Searching & Sorting, Miscellaneous, Low-Level"
+---
+
 # DSA Coding Problem Bank for Placement Interviews
 
 > **Previous:** [Chapter 1: Resume Building, LinkedIn & Aptitude](./01-resume-aptitude.md) | **Next:** [Chapter 3: SQL Problem Bank](./03-sql-problem-bank.md)

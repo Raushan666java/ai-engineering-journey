@@ -4,6 +4,7 @@ slug: /engineering-mathematics/04-differential-equations
 title: "Chapter 4: Differential Equations"
 sidebar_label: "Chapter 4: Differential Equations"
 sidebar_position: 4
+description: "An ordinary differential equation (ODE) involves derivatives of a function of one variable. A partial differential equation (PDE) involves partial"
 ---
 
 # Chapter 4: Differential Equations

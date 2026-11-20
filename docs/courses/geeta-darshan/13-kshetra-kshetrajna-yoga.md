@@ -1,3 +1,7 @@
+---
+description: "'Tum jab kehte ho 'main krodhit hoon', to ek cheez hai krodh, aur ek hai wo jo krodh ko jaan raha hai. Yahi do cheezein hain — kshetra aur kshetrajna. Aur"
+---
+
 # अध्याय १३: क्षेत्र क्षेत्रज्ञ विभाग योग — "Khet alag, jaanne wala alag — sakshi wahi hai"
 
 > **"Tum jab kehte ho 'main krodhit hoon', to ek cheez hai krodh, aur ek hai wo jo krodh ko jaan raha hai. Yahi do cheezein hain — kshetra aur kshetrajna. Aur is fark ko dekh lena hi sakshibhav hai. Puri Gita isi ek fark ke chaaro taraf ghoomti hai."**

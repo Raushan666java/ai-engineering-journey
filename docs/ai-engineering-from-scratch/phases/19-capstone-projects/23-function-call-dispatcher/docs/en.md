@@ -1,3 +1,7 @@
+---
+description: "Between the harness loop (lesson twenty) and the tool registry (lesson twenty-one). The transport (lesson twenty-two) feeds the loop. The loop hands a"
+---
+
 # Function Call Dispatcher
 
 > The dispatcher is where the harness pays for every promise the schema made. Timeouts, retries, dedupe, error mapping. All on one seam.

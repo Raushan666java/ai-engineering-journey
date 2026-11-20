@@ -4,6 +4,7 @@ slug: /laravel/42-interview-logistics
 title: "Chapter 42: Logistics & Supply Chain → Interview Q&A"
 sidebar_label: "Chapter 42: Logistics & Supply Chain → Interview Q&A"
 sidebar_position: 42
+description: "This chapter covers common interview questions for Laravel developer roles at logistics, supply chain, and freight technology companies. Questions span"
 ---
 
 # Chapter 42: Logistics & Supply Chain → Interview Q&A

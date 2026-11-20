@@ -1,3 +1,7 @@
+---
+description: "Encoders understand. Decoders generate. Put them back together and you get a model built for input → output tasks: translate, summarize, rewrite"
+---
+
 # T5, BART — Encoder-Decoder Models
 
 > Encoders understand. Decoders generate. Put them back together and you get a model built for input → output tasks: translate, summarize, rewrite, transcribe.

@@ -4,6 +4,7 @@ slug: /laravel/28-finance
 title: "Chapter 28: Finance & FinTech Agents"
 sidebar_label: "Chapter 28: Finance & FinTech Agents"
 sidebar_position: 28
+description: "A[Transaction] --> B[Fraud Detection Agent] C -->|No| D[Process Payment] C -->|Yes| E[Hold for Review] A --> F[Transaction Monitor] I[New Customer] -->"
 ---
 
 # Chapter 28: Finance & FinTech Agents

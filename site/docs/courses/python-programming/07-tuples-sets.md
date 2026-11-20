@@ -4,6 +4,7 @@ slug: /python-programming/07-tuples-sets
 title: "Chapter 7: Tuples and Sets"
 sidebar_label: "Chapter 7: Tuples and Sets"
 sidebar_position: 7
+description: "One-Sentence Takeaway: Tuples are immutable sequences created with commas -- use them for fixed data and dict keys. Pro Tip: Use tuples as dictionary keys"
 ---
 
 # Chapter 7: Tuples and Sets

@@ -1,3 +1,7 @@
+---
+description: "Configuration management (CM) is the practice of systematically managing and maintaining the state of systems and software in a consistent, desired state"
+---
+
 # Chapter 8: Configuration Management
 
 > **Prev:** [Kubernetes](./07-kubernetes.md)

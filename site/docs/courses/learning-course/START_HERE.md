@@ -1,3 +1,7 @@
+---
+description: "Traditional Learning: Human-only methods, slow feedback, generic content AI-Enhanced Learning: AI partnership, instant feedback, personalized content"
+---
+
 ﻿---
 slug: /learning-course/START_HERE
 title: "🤖 AI-Enhanced Learning Course - START HERE"

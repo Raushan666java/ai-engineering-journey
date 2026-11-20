@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/04-ml-foundations-inter
 title: "ML Foundations Interview"
 sidebar_label: "ML Foundations Interview"
 sidebar_position: 254
+description: "ML Foundations Interview: Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews"
 ---
 
 <!-- improved -->

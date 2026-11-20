@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/11-llms-prompt-engineering/01-foundation-models-
 title: "Foundation Models Overview"
 sidebar_label: "Foundation Models Overview"
 sidebar_position: 148
+description: "Foundation models like GPT-4o, Claude, and Gemini have fundamentally changed what AI can do — from writing production code to reasoning across massive"
 ---
 
 <!-- improved -->

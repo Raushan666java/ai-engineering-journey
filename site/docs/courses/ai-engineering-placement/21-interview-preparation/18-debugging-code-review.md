@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/18-debugging-code-revie
 title: "Debugging and Code Review"
 sidebar_label: "Debugging and Code Review"
 sidebar_position: 268
+description: "After this chapter you will be able to identify common bugs in TypeScript and Python code under time pressure, systematically approach debugging without a"
 ---
 
 <!-- improved -->

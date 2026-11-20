@@ -4,6 +4,7 @@ slug: /artificial-intelligence/14-robotics
 title: "Chapter 14: Robotics"
 sidebar_label: "Chapter 14: Robotics"
 sidebar_position: 22
+description: "By the conclusion of this chapter, the student will be able to: (1) describe the hardware components of a robotic system; (2) implement Monte Carlo"
 ---
 
 # Chapter 14: Robotics

@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to solve percentages, profit-loss, simple and compound interest, ratio-proportion, time-work, time-speed-distance"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Quantitative Aptitude for Campus Placements

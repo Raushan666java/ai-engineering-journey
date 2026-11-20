@@ -1,3 +1,7 @@
+---
+description: "Solidity is a high-level, object-oriented language for writing smart contracts. It compiles to EVM bytecode. It is influenced by C++ (syntax), Python"
+---
+
 # Chapter 6: Smart Contract Development
 
 > **Previous:** [Chapter 5: Ethereum and Smart Contracts](./05-ethereum.md) | **Next:** [Chapter 7: Decentralized Applications (dApps)](./07-dapps.md)

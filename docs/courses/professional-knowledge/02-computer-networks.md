@@ -1,3 +1,7 @@
+---
+description: "Step 1: Client sends SYN with initial sequence number (ISN) Step 2: Server responds with SYN+ACK (own ISN + client ISN+1) Step 3: Client sends ACK"
+---
+
 # Chapter 2: Computer Networks — Exam Quick Revision
 
 ## Learning Objectives

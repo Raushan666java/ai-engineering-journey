@@ -1,3 +1,7 @@
+---
+description: "Two requests with the same system prompt recompute every KV entry for those shared tokens. A chat session sends the same conversation prefix over and"
+---
+
 # Prefix Caching and RadixAttention
 
 > Two requests with the same system prompt recompute every KV entry for those shared tokens. A chat session sends the same conversation prefix over and over. Production inference servers spend 30-60% of prefill compute on KV entries they already computed moments ago. Prefix caching eliminates this waste by storing KV cache entries indexed by the token sequence that produced them. A radix tree (PATRICIA trie) is the data structure that makes lookups fast, splits cheap, and eviction precise. SGLang calls it RadixAttention; vLLM calls it automatic prefix caching. Both solve the same problem: don't compute what you already have.

@@ -1,3 +1,7 @@
+---
+description: "Chapter 37: Enterprise Capstone → Multi-Agent Platform: One-Sentence Takeaway: Theory is the foundation — master it before moving to examples and"
+---
+
 # Chapter 37: Enterprise Capstone → Multi-Agent Platform
 
 > **Previous:** [Manufacturing & Industrial — AI-Powered Factory Agents](./36-manufacturing.md) | **Next:** [Laravel General Interview Q&A](./38-interview-general.md)

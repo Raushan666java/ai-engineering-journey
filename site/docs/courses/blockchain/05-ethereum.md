@@ -4,6 +4,7 @@ slug: /blockchain/05-ethereum
 title: "Chapter 5: Ethereum and Smart Contracts"
 sidebar_label: "Chapter 5: Ethereum and Smart Contracts"
 sidebar_position: 5
+description: "Unlike Bitcoin, Ethereum uses an Account-based model (similar to a bank account). The 'Global State' of Ethereum is a mapping of addresses to account"
 ---
 
 # Chapter 5: Ethereum and Smart Contracts

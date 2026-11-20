@@ -4,6 +4,7 @@ slug: /oop-cpp/16-design-patterns
 title: "Chapter 16: Design Patterns → The Gang of Four"
 sidebar_label: "Chapter 16: Design Patterns → The Gang of Four"
 sidebar_position: 16
+description: "Real-World Analogy: A country has one president. The constitution ensures only one person holds that office at any time, and every citizen can access the"
 ---
 
 # Chapter 16: Design Patterns → The Gang of Four

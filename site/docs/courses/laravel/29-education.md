@@ -4,6 +4,7 @@ slug: /laravel/29-education
 title: "Chapter 29: Education & EdTech"
 sidebar_label: "Chapter 29: Education & EdTech"
 sidebar_position: 29
+description: "Every EdTech application begins with the core domain models. Students enroll in courses, complete assessments, and receive grades. We build these models"
 ---
 
 # Chapter 29: Education & EdTech

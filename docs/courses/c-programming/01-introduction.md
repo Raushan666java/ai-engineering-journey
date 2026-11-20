@@ -1,3 +1,7 @@
+---
+description: "C was developed between 1969 and 1973 by Dennis Ritchie at Bell Telephone Laboratories. It evolved from an earlier language called B (created by Ken"
+---
+
 # Chapter 1: Introduction to C
 
 > **Next:** [Variables and Data Types](./02-variables-datatypes.md)

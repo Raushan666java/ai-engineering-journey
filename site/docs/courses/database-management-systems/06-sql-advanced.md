@@ -4,6 +4,7 @@ slug: /database-management-systems/06-sql-advanced
 title: "Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables"
 sidebar_label: "Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables"
 sidebar_position: 6
+description: "A subquery (inner query / nested query) is a query embedded inside another query (outer query). Subqueries can return scalar values, single rows, tables"
 ---
 
 # Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables

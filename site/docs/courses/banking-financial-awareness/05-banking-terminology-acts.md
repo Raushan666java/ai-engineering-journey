@@ -4,6 +4,7 @@ slug: /banking-financial-awareness/05-banking-terminology-acts
 title: "Chapter 5: Banking Terminology & Acts"
 sidebar_label: "Chapter 5: Banking Terminology & Acts"
 sidebar_position: 5
+description: "Consolidate and amend the law relating to foreign exchange to facilitate external trade and payments, promote the orderly development of the foreign"
 ---
 
 # Chapter 5: Banking Terminology & Acts

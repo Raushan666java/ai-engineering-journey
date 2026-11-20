@@ -1,3 +1,7 @@
+---
+description: "You will spend more time in the terminal than in any editor. Training runs, GPU monitoring, log tailing, remote SSH sessions, environment management"
+---
+
 # Terminal & Shell
 
 > The terminal is where AI engineers live. Get comfortable here.

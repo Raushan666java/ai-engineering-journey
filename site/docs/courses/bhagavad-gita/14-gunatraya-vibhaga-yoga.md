@@ -4,6 +4,7 @@ slug: /bhagavad-gita/14-gunatraya-vibhaga-yoga
 title: "Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather"
 sidebar_label: "Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather"
 sidebar_position: 14
+description: "The battlefield has become a classroom. In the thirteenth chapter Krishna gave Arjuna the map of the field, kshetra, and its knower, kshetrajna. Now he"
 ---
 
 # Chapter 14: Gunatraya Vibhaga Yoga — You Are the Sky, the Gunas Are the Weather

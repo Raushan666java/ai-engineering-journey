@@ -1,3 +1,7 @@
+---
+description: "Exam: IBPS Specialist Officer (SO) — IT Officer Scale 1 Total Questions: 175 | Duration: 120 minutes | Max Marks: 175 Negative Marking: 0.25 per wrong"
+---
+
 # IBPS SO IT Officer Scale 1 — Full-Length Mock Test
 
 > **Exam:** IBPS Specialist Officer (SO) — IT Officer Scale 1  

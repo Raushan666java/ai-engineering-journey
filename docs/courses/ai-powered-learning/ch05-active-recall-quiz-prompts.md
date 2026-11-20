@@ -1,3 +1,7 @@
+---
+description: "Reading notes feels productive but stores very little in long-term memory. The science-backed alternative is active recall: forcing your brain to pull"
+---
+
 # Chapter 5: Active Recall & Quiz Prompts
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

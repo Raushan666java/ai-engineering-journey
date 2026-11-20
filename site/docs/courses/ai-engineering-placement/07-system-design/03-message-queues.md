@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design/03-message-queues
 title: "Message Queues — RabbitMQ, Kafka, and Event-Driven Architecture"
 sidebar_label: "Message Queues — RabbitMQ, Kafka, and Event-Driven Architecture"
 sidebar_position: 98
+description: "Message Queues — RabbitMQ, Kafka, and Event-Driven Architecture: System design interviews test your ability to architect large-scale systems. Caching"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /discrete-mathematics/06-recurrence
 title: "Chapter 6: Recurrence Relations"
 sidebar_label: "Chapter 6: Recurrence Relations"
 sidebar_position: 6
+description: 'A recurrence relation for a sequence ${a_n}$ is an equation relating $a_n$ to one or more preceding terms $a_{n-1}, a_{n-2}, ldots, a_{n-k}$ for $n'
 ---
 
 # Chapter 6: Recurrence Relations

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/10-nlp-transformers/05-transformer-architecture
 title: "Transformer Architecture — Encoder-Decoder, Positional Encoding, Layer Norm"
 sidebar_label: "Transformer Architecture — Encoder-Decoder, Positional Encoding, Layer Norm"
 sidebar_position: 142
+description: "Transformer Architecture — Encoder-Decoder, Positional Encoding, Layer Norm: Natural language processing is how machines understand human text"
 ---
 
 <!-- improved -->

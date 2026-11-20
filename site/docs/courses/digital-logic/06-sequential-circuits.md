@@ -4,6 +4,7 @@ slug: /digital-logic/06-sequential-circuits
 title: "Chapter 6: Sequential Circuits"
 sidebar_label: "Chapter 6: Sequential Circuits"
 sidebar_position: 6
+description: "A sequential circuit differs from a combinational circuit in one critical respect: its output depends on both the present inputs and the past history of"
 ---
 
 # Chapter 6: Sequential Circuits

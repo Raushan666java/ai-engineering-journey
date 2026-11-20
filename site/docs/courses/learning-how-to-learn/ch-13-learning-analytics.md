@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/ch-13-learning-analytics
 title: "Chapter 13: Learning Analytics & Self-Measurement"
 sidebar_label: "Chapter 13: Learning Analytics & Self-Measurement"
 sidebar_position: 14
+description: "This chapter teaches you how to measure your learning systematically. You'll build a learning analytics dashboard, track key metrics (velocity, retention"
 ---
 
 # Chapter 13: Learning Analytics & Self-Measurement

@@ -1,3 +1,7 @@
+---
+description: "API Deployment — Docker, CI/CD, and Production Readiness: FastAPI is the modern Python framework for building AI APIs. Its async support, automatic"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # API Deployment — Docker, CI/CD, and Production Readiness

@@ -1,3 +1,7 @@
+---
+description: "Infinite retries. An LLM call returns a malformed response. The agent retries. The LLM returns the same malformed response. This repeats until the token"
+---
+
 # Chapter 7: Loop Safety
 
 > **Previous:** [Production Loops](./ch06-production-loops.md) | **Next:** [Multi-Agent Loops](./ch08-multi-agent-loops.md)

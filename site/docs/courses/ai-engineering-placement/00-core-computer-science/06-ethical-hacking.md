@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/00-core-computer-science/06-ethical-hacking
 title: "Ethical Hacking & Security Case Studies (India & Global)"
 sidebar_label: "Ethical Hacking & Security Case Studies (India & Global)"
 sidebar_position: 7
+description: "After this chapter you will be able to explain who real attackers are (nation-states, crime syndicates, insiders), describe how telecom networks get"
 ---
 
 <!-- improved -->

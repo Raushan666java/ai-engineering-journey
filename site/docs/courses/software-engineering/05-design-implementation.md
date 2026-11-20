@@ -4,6 +4,7 @@ slug: /software-engineering/05-design-implementation
 title: "Design and Implementation"
 sidebar_label: "Design and Implementation"
 sidebar_position: 5
+description: "Design principles are established guidelines that, when followed, produce designs that are maintainable, understandable, and adaptable. They represent"
 ---
 
 # Design and Implementation

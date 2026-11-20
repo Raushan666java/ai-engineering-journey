@@ -4,6 +4,7 @@ slug: /compiler-design/10-optimization
 title: "Chapter 10: Code Optimization"
 sidebar_label: "Chapter 10: Code Optimization"
 sidebar_position: 10
+description: "After completing this chapter, students will be able to: distinguish machine-independent from machine-dependent optimizations; apply peephole optimization"
 ---
 
 # Chapter 10: Code Optimization

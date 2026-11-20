@@ -1,3 +1,7 @@
+---
+description: "A regular expression is a algebraic notation for describing a pattern → a set of strings. Regular expressions are used extensively in text processing"
+---
+
 # Chapter 4: Regular Expressions
 
 > **Previous:** [Nondeterministic Finite Automata](./03-nfa.md) | **Next:** [Properties of Regular Languages](./05-regular-languages.md)

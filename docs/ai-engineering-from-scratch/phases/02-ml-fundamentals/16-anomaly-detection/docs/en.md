@@ -1,3 +1,7 @@
+---
+description: "A credit card is used in New York at 2pm, then in Tokyo at 2:05pm. A factory sensor reads 150 degrees when the normal range is 80-120. A server sends"
+---
+
 # Anomaly Detection
 
 > Normal is easy to define. Abnormal is whatever doesn't fit.

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/20-portfolio-branding/03-technical-blogging
 title: "Technical Blogging"
 sidebar_label: "Technical Blogging"
 sidebar_position: 245
+description: "Technical blogging is one of the most effective ways to build your professional brand. Choose a platform that aligns with your goals — Dev.to for"
 ---
 
 <!-- improved -->

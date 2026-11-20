@@ -1,3 +1,7 @@
+---
+description: "Understand embeddings, vector search, chunking strategies, and RAG architecture well enough to defend every design decision in a technical interview"
+---
+
 # Phase 2 — LLM Fundamentals + RAG Theory
 
 **Duration:** Weeks 4-5, ~25 hours

@@ -1,3 +1,7 @@
+---
+description: "Chapter 60: Microservices Interview Q&A (Part A → Q1–Q8): Pro Tip: In interviews, always start with the 'why' before the 'how.' Explaining the reasoning"
+---
+
 # Chapter 60: Microservices Interview Q&A (Part A → Q1–Q8)
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)

@@ -1,3 +1,7 @@
+---
+description: "Throughout this chapter, we will build TaskFlow, a full-stack task management application. TaskFlow allows users to create projects, add tasks, assign"
+---
+
 # Chapter 18: Building a Full-Stack Application
 
 > **Previous:** [17-performance](./17-performance.md)

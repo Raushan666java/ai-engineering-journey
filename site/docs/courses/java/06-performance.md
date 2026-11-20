@@ -4,6 +4,7 @@ slug: /java/06-performance
 title: "Performance Tuning & Profiling"
 sidebar_label: "Performance Tuning & Profiling"
 sidebar_position: 6
+description: "Performance is a feature. In production Java applications, performance problems manifest as high latency, low throughput, excessive CPU, memory leaks, and"
 ---
 
 # Performance Tuning & Profiling

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/09-deep-learning-pytorch/03-pytorch-nn-module
 title: "PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init"
 sidebar_label: "PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init"
 sidebar_position: 128
+description: "PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init: Deep learning powers modern AI breakthroughs. PyTorch is the framework of choice"
 ---
 
 <!-- improved -->

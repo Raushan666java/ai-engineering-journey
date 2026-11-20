@@ -4,6 +4,7 @@ slug: /ai-powered-learning/ch06-code-dsa-with-ai
 title: "Chapter 6: Code & DSA with AI"
 sidebar_label: "Chapter 6: Code & DSA with AI"
 sidebar_position: 6
+description: "Watching DSA videos creates an illusion of competence; writing code under pressure creates skill. This chapter turns ChatGPT, Claude, or Gemini into a"
 ---
 
 # Chapter 6: Code & DSA with AI

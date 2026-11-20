@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/07-day-by-day-plan
 title: "Day-by-Day Plan: 12 Weeks"
 sidebar_label: "Day-by-Day Plan: 12 Weeks"
 sidebar_position: 8
+description: "A structured 12-week plan to build job-ready AI agent engineering skills. Each week targets a specific phase with daily topics, actions, and done"
 ---
 
 # Day-by-Day Plan: 12 Weeks

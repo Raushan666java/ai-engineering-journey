@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_05_Proper_AI_Usage/01_AI_As_A_Multip
 title: "🤖 AI As a Multiplier"
 sidebar_label: "🤖 AI As a Multiplier"
 sidebar_position: 1
+description: "Artificial Intelligence tools like GitHub Copilot, ChatGPT, and Claude are essentially cognitive multipliers. They do not possess fundamental intelligence"
 ---
 # 🤖 AI As a Multiplier
 

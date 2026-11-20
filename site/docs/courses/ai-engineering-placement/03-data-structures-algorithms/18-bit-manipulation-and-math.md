@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/18-bit-manipulatio
 title: "Bit Manipulation and Math"
 sidebar_label: "Bit Manipulation and Math"
 sidebar_position: 55
+description: "Bit manipulation uses individual bits for efficient computation. It is essential for low-level optimization, cryptography, and solving problems that"
 ---
 
 <!-- improved -->

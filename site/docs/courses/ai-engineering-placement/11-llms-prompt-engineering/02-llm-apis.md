@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/11-llms-prompt-engineering/02-llm-apis
 title: "LLM APIs"
 sidebar_label: "LLM APIs"
 sidebar_position: 149
+description: "LLM APIs: Large language models are transforming every industry. Understanding how to prompt, evaluate, and optimize LLMs is a critical skill for AI"
 ---
 
 <!-- improved -->

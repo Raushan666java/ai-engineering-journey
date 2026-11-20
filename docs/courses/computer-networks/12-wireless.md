@@ -1,3 +1,7 @@
+---
+description: "Hidden Terminal Still Colliding: Even with RTS/CTS, if two hidden stations transmit RTS simultaneously, both RTS frames collide at the AP. Both time out"
+---
+
 # Chapter 12: Wireless Networks (Extended)
 
 ## Learning Objectives

@@ -1,3 +1,7 @@
+---
+description: "Imagine you are packing a suitcase for a trip. You have limited space, and you want to carry the most valuable combination of items. One natural approach"
+---
+
 # Chapter 6: Greedy Algorithms
 
 > **Prerequisites:** [Chapter 5: Divide and Conquer](./05-divide-conquer.md) — Recursive problem decomposition | **Next:** [Chapter 7: Dynamic Programming — Foundations](./07-dp-intro.md) — When greedy fails, DP takes over

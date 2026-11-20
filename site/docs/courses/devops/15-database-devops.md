@@ -4,6 +4,7 @@ slug: /devops/15-database-devops
 title: "Chapter 15: Database DevOps"
 sidebar_label: "Chapter 15: Database DevOps"
 sidebar_position: 24
+description: "Database as Code applies version control, CI/CD, and automation principles to database schemas. Historically, database changes were manual, scripted by"
 ---
 
 # Chapter 15: Database DevOps

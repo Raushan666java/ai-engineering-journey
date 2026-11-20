@@ -4,6 +4,7 @@ slug: /system-design/13-lld-concurrency
 title: "Chapter 13: Low-Level Design: Concurrency and Threading"
 sidebar_label: "Chapter 13: Low-Level Design: Concurrency and Threading"
 sidebar_position: 13
+description: "A race condition occurs when the behavior of a program depends on the interleaving of operations across multiple threads. The classic example is a"
 ---
 
 # Chapter 13: Low-Level Design: Concurrency and Threading

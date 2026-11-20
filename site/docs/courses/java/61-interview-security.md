@@ -4,6 +4,7 @@ slug: /java/61-interview-security
 title: "Security Interview Q&A"
 sidebar_label: "Security Interview Q&A"
 sidebar_position: 69
+description: "This chapter covers essential security concepts every Java and Spring Boot developer should master for technical interviews. From foundational"
 ---
 
 # Security Interview Q&A

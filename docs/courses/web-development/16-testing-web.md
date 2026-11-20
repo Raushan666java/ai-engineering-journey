@@ -1,3 +1,7 @@
+---
+description: "Testing implementation details (component state, internal methods, class names) creates brittle tests that break on refactoring. Test behavior, not"
+---
+
 # Chapter 16: Testing
 
 > **Previous:** [15-nextjs](./15-nextjs.md) | **Next:** [17-performance](./17-performance.md)

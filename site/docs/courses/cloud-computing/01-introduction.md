@@ -4,6 +4,7 @@ slug: /cloud-computing/01-introduction
 title: "Chapter 1: Introduction to Cloud Computing"
 sidebar_label: "Chapter 1: Introduction to Cloud Computing"
 sidebar_position: 1
+description: "The National Institute of Standards and Technology (NIST) Special Publication 800-145 defines cloud computing as 'a model for enabling ubiquitous"
 ---
 
 # Chapter 1: Introduction to Cloud Computing

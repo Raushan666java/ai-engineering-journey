@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/15-dynamic-program
 title: "Dynamic Programming 1D"
 sidebar_label: "Dynamic Programming 1D"
 sidebar_position: 52
+description: "Binary search is one of the most important algorithms, reducing search time from O(n) to O(log n). Understanding its variants — finding boundaries"
 ---
 
 <!-- improved -->

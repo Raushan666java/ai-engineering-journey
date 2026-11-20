@@ -4,6 +4,7 @@ slug: /data-structures/11-graphs
 title: "Chapter 11: Graphs"
 sidebar_label: "Chapter 11: Graphs"
 sidebar_position: 11
+description: "Real-World Analogy: Imagine a city's road map. Each intersection is a vertex (node), and each road connecting two intersections is an edge. Now picture"
 ---
 
 # Chapter 11: Graphs

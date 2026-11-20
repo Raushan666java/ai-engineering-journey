@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design
 title: "07 — System Design"
 sidebar_label: "07 — System Design"
 sidebar_position: 110
+description: "Design interviews end to end: caching, queues, CAP, sharding, and five worked designs from URL shortener to ChatGPT."
 ---
 
 # 07 — System Design

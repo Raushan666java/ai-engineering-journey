@@ -4,6 +4,7 @@ slug: /data-analysis-interpretation/01-advanced-data-interpretation
 title: "Chapter 1: Advanced Data Interpretation"
 sidebar_label: "Chapter 1: Advanced Data Interpretation"
 sidebar_position: 1
+description: "Data Interpretation questions test your ability to extract meaning from numerical data presented in various visual formats. A systematic approach is"
 ---
 
 # Chapter 1: Advanced Data Interpretation

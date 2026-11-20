@@ -1,3 +1,7 @@
+---
+description: "The chariot stands still between two armies, and Krishna, having spoken of the divine and the perishable in the fifteenth chapter, now does something"
+---
+
 # Chapter 16: Daivasura Sampad Yoga — Your nature is not a verdict; it is a mirror you can turn
 
 > "Do not ask whether you are divine or demonic. Ask what you are feeding — because that is what you will become."

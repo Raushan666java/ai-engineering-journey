@@ -1,3 +1,7 @@
+---
+description: "Number Systems(5), Percentages(5), Profit/Loss(5), SI/CI(5), Ratio(5), Time-Speed-Distance(5), Time-Work(5), Averages(5), Permutation-Combination(5)"
+---
+
 # Aptitude Test Preparation for IT Companies &amp; PSUs
 
 ## Learning Objectives

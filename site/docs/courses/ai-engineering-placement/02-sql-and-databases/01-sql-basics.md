@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/02-sql-and-databases/01-sql-basics
 title: "SQL Basics — SELECT, WHERE, ORDER BY, DML"
 sidebar_label: "SQL Basics — SELECT, WHERE, ORDER BY, DML"
 sidebar_position: 26
+description: "SQL Basics — SELECT, WHERE, ORDER BY, DML: Data is the fuel of AI. SQL and database design skills let you query, transform, and store the data that powers"
 ---
 
 <!-- improved -->

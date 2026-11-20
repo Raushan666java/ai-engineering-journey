@@ -1,3 +1,7 @@
+---
+description: "Run the same /signup validation task through a prompt-only pipeline and a workbench-guided pipeline against the same sample app, then emit a before/after"
+---
+
 # Mission - The Workbench on a Real Repo
 
 ## Goal

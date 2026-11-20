@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming/03-strings-and-formatting
 title: "Strings & Formatting — Methods, Slicing, F-Strings, and Regex"
 sidebar_label: "Strings & Formatting — Methods, Slicing, F-Strings, and Regex"
 sidebar_position: 12
+description: "Strings & Formatting — Methods, Slicing, F-Strings, and Regex: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and"
 ---
 
 <!-- improved -->

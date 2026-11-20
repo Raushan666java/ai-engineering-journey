@@ -1,3 +1,7 @@
+---
+description: "Chapter 35: Legal & Compliance Agents: One-Sentence Takeaway: Theory is the foundation — master it before moving to examples and exercises. One-Sentence"
+---
+
 # Chapter 35: Legal & Compliance Agents
 
 > **Previous:** [Real Estate & Property — AI-Powered Real Estate Agents](./34-real-estate.md) | **Next:** [Manufacturing & Industrial — AI-Powered Factory Agents](./36-manufacturing.md)

@@ -4,6 +4,7 @@ slug: /cloud-computing/06-cloud-networking
 title: "Chapter 6: Cloud Networking"
 sidebar_label: "Chapter 6: Cloud Networking"
 sidebar_position: 6
+description: "A[Cloud Networking] --> B[VPC and Subnets] A --> C[Security: SGs + NACLs] A --> E[Hybrid Connectivity] B --> F[Route Tables + IGW + NAT] C --> G[Tiered"
 ---
 
 # Chapter 6: Cloud Networking

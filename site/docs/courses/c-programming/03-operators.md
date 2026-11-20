@@ -4,6 +4,7 @@ slug: /c-programming/03-operators
 title: "Chapter 3: Operators in C --- In-Depth Reference"
 sidebar_label: "Chapter 3: Operators in C --- In-Depth Reference"
 sidebar_position: 3
+description: "Think of arithmetic operators like a cash register. You put in two numbers (operands), press an operation button (operator), and the register displays a"
 ---
 
 # Chapter 3: Operators in C --- In-Depth Reference

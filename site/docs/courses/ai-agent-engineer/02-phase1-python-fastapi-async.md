@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/02-phase1-python-fastapi-async
 title: "Phase 1 — Python + FastAPI + AsyncIO"
 sidebar_label: "Phase 1 — Python + FastAPI + AsyncIO"
 sidebar_position: 3
+description: "Write production Python with type hints, build FastAPI endpoints with proper DI and validation, understand asyncIO well enough to explain it in an"
 ---
 
 # Phase 1 — Python + FastAPI + AsyncIO

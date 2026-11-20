@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/16-mlops-production/05-model-serving
 title: "Model Serving"
 sidebar_label: "Model Serving"
 sidebar_position: 210
+description: "Model Serving: MLOps bridges the gap between experiment and production. Experiment tracking, CI/CD, model serving, and drift monitoring keep AI systems"
 ---
 
 <!-- improved -->

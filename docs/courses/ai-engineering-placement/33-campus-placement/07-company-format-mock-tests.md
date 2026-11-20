@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to run full-length mock tests that exactly mirror the TCS NQT, Infosys SP, Wipro NLTH, Capgemini, Accenture, and"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Company-Format Mock Tests

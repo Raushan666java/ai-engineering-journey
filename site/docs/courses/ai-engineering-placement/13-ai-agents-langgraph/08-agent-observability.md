@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/13-ai-agents-langgraph/08-agent-observability
 title: "Agent Observability"
 sidebar_label: "Agent Observability"
 sidebar_position: 183
+description: "Agent Observability: AI agents autonomously use tools to complete tasks. LangGraph builds stateful, multi-step agent workflows. This module covers agent"
 ---
 
 <!-- improved -->

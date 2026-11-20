@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/10-aptitude-master-plan
 title: "Universal Aptitude Master Plan — Crack Any Company's Aptitude Round"
 sidebar_label: "Universal Aptitude Master Plan — Crack Any Company's Aptitude Round"
 sidebar_position: 371
+description: "This plan is company-neutral. It builds a complete aptitude skill set (Quant + Logical + Verbal) that clears the aptitude gate at ANY company: TCS NQT"
 ---
 
 <!-- improved -->

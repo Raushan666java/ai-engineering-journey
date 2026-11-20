@@ -1,3 +1,7 @@
+---
+description: "Real-world analogy: A library catalog system. Each book gets assigned a shelf number by the librarian (hash function). When you want a book, you compute"
+---
+
 # Chapter 7: Hash Tables
 
 > **Previous:** [Chapter 6: Queues](./06-queues.md) | **Next:** [Binary Trees](./08-binary-trees.md)

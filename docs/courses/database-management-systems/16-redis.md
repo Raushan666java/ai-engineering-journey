@@ -1,3 +1,7 @@
+---
+description: "Analogy: Redis is like a mechanical keyboard for data access. A mechanical keyboard registers every keystroke instantly with zero lag because the switch"
+---
+
 # Chapter 16: Redis → In-Memory Data Store
 
 > **Prev:** [Chapter 15 → MongoDB](15-mongodb.md) | **Next:** [Chapter 17 → Distributed DB](17-distributed-db.md)

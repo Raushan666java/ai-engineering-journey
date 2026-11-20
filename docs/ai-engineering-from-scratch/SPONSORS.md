@@ -1,3 +1,7 @@
+---
+description: "Sponsorships fund the time it takes to ship lessons, keep the site running, and reply to the issue queue. Cash only. Credits-in-kind, equity, or 'we'll"
+---
+
 # Sponsorship
 
 `ai-engineering-from-scratch` is a free, MIT-licensed curriculum. 428 lessons across 20

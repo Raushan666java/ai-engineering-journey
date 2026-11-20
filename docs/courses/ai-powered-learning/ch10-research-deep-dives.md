@@ -1,3 +1,7 @@
+---
+description: "Research is the skill that separates students who wait for tutorials from people who learn anything. This chapter turns AI into a research engine"
+---
+
 # Chapter 10: Research & Deep Dives with AI
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

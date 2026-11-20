@@ -4,6 +4,7 @@ slug: /artificial-intelligence/15-ethics-ai
 title: "Chapter 15: Ethics of Artificial Intelligence"
 sidebar_label: "Chapter 15: Ethics of Artificial Intelligence"
 sidebar_position: 23
+description: "By the conclusion of this chapter, the student will be able to: (1) identify sources of bias in AI systems; (2) apply interpretability techniques to"
 ---
 
 # Chapter 15: Ethics of Artificial Intelligence

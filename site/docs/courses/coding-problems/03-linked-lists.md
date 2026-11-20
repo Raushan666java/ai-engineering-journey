@@ -4,6 +4,7 @@ slug: /coding-problems/03-linked-lists
 title: "Chapter 03: Linked Lists"
 sidebar_label: "Chapter 03: Linked Lists"
 sidebar_position: 3
+description: "Linked lists test your understanding of pointer manipulation, memory management, and recursive thinking. They are deceptively simple but require careful"
 ---
 
 # Chapter 03: Linked Lists

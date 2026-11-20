@@ -1,3 +1,7 @@
+---
+description: "Competitive programming at the highest level demands mastery of advanced data structures and algorithms. These patterns appear in Codeforces Div1/2"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Advanced Algorithm Patterns for CP

@@ -4,6 +4,7 @@ slug: /big-data/02-hadoop
 title: "Chapter 2: Hadoop ? HDFS, MapReduce & YARN"
 sidebar_label: "Chapter 2: Hadoop ? HDFS, MapReduce & YARN"
 sidebar_position: 2
+description: "Namenode (NN): The single master. Stores the filesystem tree and metadata for all files and directories (inode ? block list mapping). Acts as the"
 ---
 
 # Chapter 2: Hadoop ? HDFS, MapReduce & YARN

@@ -1,3 +1,7 @@
+---
+description: "The OODA loop (Observe, Orient, Decide, Act) was developed by military strategist John Boyd for fighter pilots who needed to make life-or-death decisions"
+---
+
 # Chapter 1: Your Learning OS
 
 > ⏱ **2 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**

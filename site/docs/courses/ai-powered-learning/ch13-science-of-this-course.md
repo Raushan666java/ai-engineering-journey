@@ -4,6 +4,7 @@ slug: /ai-powered-learning/ch13-science-of-this-course
 title: "Chapter 13: The Science of This Course"
 sidebar_label: "Chapter 13: The Science of This Course"
 sidebar_position: 13
+description: "Every course claims to be 'scientifically designed'. This one shows you the receipts. This chapter opens the black box: the instructional-design"
 ---
 
 # Chapter 13: The Science of This Course

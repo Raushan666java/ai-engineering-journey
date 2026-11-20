@@ -1,3 +1,7 @@
+---
+description: "Building an AI roadmap is different from building a traditional software roadmap. Model uncertainty, data dependencies, and shifting research make AI"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Building AI Roadmaps

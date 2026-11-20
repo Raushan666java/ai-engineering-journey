@@ -1,3 +1,7 @@
+---
+description: "Chapter 13: Digital-to-Analog and Analog-to-Digital Converters: interface Task { id: string; name: string; status: string; data: unknown } private tasks"
+---
+
 # Chapter 13: Digital-to-Analog and Analog-to-Digital Converters
 
 > **Prereq:** Chapters 1?12 (digital logic fundamentals) ? DACs and ADCs bridge the digital and analog domains.

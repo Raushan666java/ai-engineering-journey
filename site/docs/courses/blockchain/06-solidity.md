@@ -4,6 +4,7 @@ slug: /blockchain/06-solidity
 title: "Chapter 6: Smart Contract Development"
 sidebar_label: "Chapter 6: Smart Contract Development"
 sidebar_position: 6
+description: "Solidity is a high-level, object-oriented language for writing smart contracts. It compiles to EVM bytecode. It is influenced by C++ (syntax), Python"
 ---
 
 # Chapter 6: Smart Contract Development

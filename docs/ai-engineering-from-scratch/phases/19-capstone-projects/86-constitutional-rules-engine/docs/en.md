@@ -1,3 +1,7 @@
+---
+description: "Classifiers cover the recognizable failures. Rules engines cover the contractual ones. A team writing a coding assistant wants a constraint like 'every"
+---
+
 # Capstone 86 — Constitutional Rules Engine
 
 > A rule is a name, a predicate, and an explanation. Anything missing one of those three is a vibe, not a rule.

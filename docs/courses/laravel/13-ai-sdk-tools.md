@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: Tools bridge the gap between language models and external systems by letting agents call your code through a typed schema interface"
+---
+
 # Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools
 > **Previous:** [Laravel AI SDK -- Agents, Prompting & Structured Output](./12-ai-sdk-agents) | **Next:** [Laravel AI SDK -- Images, Audio, Transcriptions & Embeddings](./14-ai-sdk-media)
 

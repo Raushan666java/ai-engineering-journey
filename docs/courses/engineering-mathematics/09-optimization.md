@@ -1,3 +1,7 @@
+---
+description: "Interior Point Methods: Follow the central path through the interior of the feasible region. Polynomial-time ($O(n^{3.5}L)$). Often faster than simplex"
+---
+
 # Chapter 9: Optimization
 
 > **Previous:** [Chapter 8: Integral Transforms](08-integral-transforms.md) | **Next:** [Chapter 10: Vector Calculus & Applications](10-vector-calculus.md)

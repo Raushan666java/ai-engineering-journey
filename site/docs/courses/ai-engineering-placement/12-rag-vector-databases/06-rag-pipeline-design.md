@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/06-rag-pipeline-design
 title: "RAG Pipeline Design"
 sidebar_label: "RAG Pipeline Design"
 sidebar_position: 163
+description: "RAG Pipeline Design: Retrieval-Augmented Generation lets LLMs answer questions about your private data. Vector databases store embeddings for semantic"
 ---
 
 <!-- improved -->

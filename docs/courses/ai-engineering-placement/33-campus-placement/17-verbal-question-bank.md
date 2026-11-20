@@ -1,3 +1,7 @@
+---
+description: "Rule: 30-60 seconds per question. Answers with explanations at the bottom. Covers all 10 sections from verbal-all-sections.md. Difficulty tags: (E) Easy"
+---
+
 <!-- improved -->
 # Verbal Ability — 100 Question Drill Bank (Any Company)
 

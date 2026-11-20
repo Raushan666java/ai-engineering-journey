@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to design class hierarchies for common interview problems, apply SOLID principles to object-oriented design, handle"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Low-Level and OOD Design

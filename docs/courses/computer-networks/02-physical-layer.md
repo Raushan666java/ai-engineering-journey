@@ -1,3 +1,7 @@
+---
+description: "Real-world analogy: An analog signal is like a dimmer switch — infinitely variable brightness. A digital signal is like a light switch — only ON (1) or"
+---
+
 # Chapter 2: The Physical Layer
 
 > **Prerequisites:** [Chapter 1: Introduction](./01-introduction.md) — Network models and layering | **Next:** [Chapter 3: Data Link Layer](./03-datalink-layer.md) — From bits to frames

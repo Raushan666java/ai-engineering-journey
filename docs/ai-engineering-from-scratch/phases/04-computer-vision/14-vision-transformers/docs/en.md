@@ -1,3 +1,7 @@
+---
+description: "For a decade, convolution was synonymous with computer vision. CNNs had strong inductive biases — locality, translation equivariance — that nobody thought"
+---
+
 # Vision Transformers (ViT)
 
 > Cut the image into patches, treat each patch as a word, run a standard transformer. Don't look back.

@@ -4,6 +4,7 @@ slug: /devops/06-docker-compose
 title: "Chapter 6: Docker Compose"
 sidebar_label: "Chapter 6: Docker Compose"
 sidebar_position: 10
+description: "Docker Compose applications often have complex inter-service dependencies. The following tool visualizes and validates the service dependency graph"
 ---
 
 # Chapter 6: Docker Compose

@@ -1,3 +1,7 @@
+---
+description: "Chapter 15: Advanced Topics in Digital Logic: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = []"
+---
+
 # Chapter 15: Advanced Topics in Digital Logic
 
 > **Prereq:** All previous chapters ? this capstone chapter surveys advanced and emerging topics.

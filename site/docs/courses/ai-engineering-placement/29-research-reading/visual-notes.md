@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/29-research-reading/visual-notes
 title: "Visual Notes — From Paper to Lasting Understanding"
 sidebar_label: "Visual Notes"
 sidebar_position: 344
+description: "Visual Notes — From Paper to Lasting Understanding: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and"
 ---
 
 # Visual Notes — From Paper to Lasting Understanding

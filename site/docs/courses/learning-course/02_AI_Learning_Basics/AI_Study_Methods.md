@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/02_AI_Learning_Basics/AI_Study_Methods title: '📚 AI-Enhanced Study Methods' sidebar_label: '📚 AI-Enhanced Study Methods'"
+---
+
 ﻿---
 slug: /learning-course/02_AI_Learning_Basics/AI_Study_Methods
 title: "📚 AI-Enhanced Study Methods"

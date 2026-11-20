@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. In distributed systems, services communicate either"
+---
+
 # Chapter 7: Message Queues and Event-Driven Architecture
 > **Previous:** [06 Distributed Consistency](./06-distributed-consistency.md) | **Next:** [08 Microservices Apis](./08-microservices-apis.md)
 

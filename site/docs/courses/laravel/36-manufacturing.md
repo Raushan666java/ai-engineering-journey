@@ -4,6 +4,7 @@ slug: /laravel/36-manufacturing
 title: "Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents"
 sidebar_label: "Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents"
 sidebar_position: 36
+description: "Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents: One-Sentence Takeaway: Theory is the foundation — master it before moving to examples"
 ---
 
 # Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents

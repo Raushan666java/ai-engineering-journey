@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/29-research-reading/04-reproducing-papers
 title: "Reproducing & Implementing Papers"
 sidebar_label: "Reproducing & Implementing Papers"
 sidebar_position: 342
+description: "Reproducing a research paper is the single best way to understand it deeply. You move from passive reading to active implementation. You discover details"
 ---
 
 <!-- improved -->

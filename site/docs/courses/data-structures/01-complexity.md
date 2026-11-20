@@ -4,6 +4,7 @@ slug: /data-structures/01-complexity
 title: "Chapter 1: Complexity Analysis"
 sidebar_label: "Chapter 1: Complexity Analysis"
 sidebar_position: 1
+description: "Real-World Analogy: Imagine you are building a contact-list app for a phone with 1 million users. When a user searches for a contact, using an ArrayList"
 ---
 
 # Chapter 1: Complexity Analysis

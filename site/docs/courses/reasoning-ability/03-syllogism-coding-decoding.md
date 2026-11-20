@@ -4,6 +4,7 @@ slug: /reasoning-ability/03-syllogism-coding-decoding
 title: "Syllogism and Coding-Decoding"
 sidebar_label: "Syllogism and Coding-Decoding"
 sidebar_position: 3
+description: "Syllogism questions carry approximately 4–5 questions in the IBPS SO Reasoning Ability section. Coding-decoding carries another 3–4 questions. Combined"
 ---
 
 # Syllogism and Coding-Decoding

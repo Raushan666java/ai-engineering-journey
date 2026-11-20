@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/11-crewai-multi-agent
 title: "CrewAI: Multi-Agent Orchestration"
 sidebar_label: "CrewAI: Multi-Agent Orchestration"
 sidebar_position: 282
+description: "CrewAI is a multi-agent orchestration framework for Python. It lets you define AI agents with specific roles, assign them tasks, and manage their"
 ---
 
 <!-- improved -->

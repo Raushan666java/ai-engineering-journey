@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/01-dsa-patterns-mastery
 title: "DSA Patterns Mastery"
 sidebar_label: "DSA Patterns Mastery"
 sidebar_position: 251
+description: "DSA Patterns Mastery: Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews"
 ---
 
 <!-- improved -->

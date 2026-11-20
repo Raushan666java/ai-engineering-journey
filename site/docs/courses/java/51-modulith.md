@@ -4,6 +4,7 @@ slug: /java/51-modulith
 title: "Spring Modulith"
 sidebar_label: "Spring Modulith"
 sidebar_position: 51
+description: "Spring Modulith helps architects and developers structure Spring Boot applications as modular monoliths → a middle ground between traditional monoliths"
 ---
 
 # Spring Modulith

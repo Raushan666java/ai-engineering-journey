@@ -4,6 +4,7 @@ slug: /computer-architecture/04-pipelining-hazards
 title: "Pipelining and Hazards"
 sidebar_label: "Pipelining and Hazards"
 sidebar_position: 4
+description: "Pipelining is a technique where multiple instructions are overlapped in execution. Each instruction passes through stages, and different instructions"
 ---
 
 # Pipelining and Hazards

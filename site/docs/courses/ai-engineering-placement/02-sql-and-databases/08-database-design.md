@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/02-sql-and-databases/08-database-design
 title: "Database Design — Normalization, ERD, Keys, Constraints, Schema Design"
 sidebar_label: "Database Design — Normalization, ERD, Keys, Constraints, Schema Design"
 sidebar_position: 33
+description: "Database Design — Normalization, ERD, Keys, Constraints, Schema Design: Data is the fuel of AI. SQL and database design skills let you query, transform"
 ---
 
 <!-- improved -->

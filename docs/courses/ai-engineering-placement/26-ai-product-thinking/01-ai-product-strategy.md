@@ -1,3 +1,7 @@
+---
+description: "AI Product Strategy is the discipline of deciding which AI problems to solve, how to solve them, and in what order. It bridges the gap between business"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # 01 — AI Product Strategy

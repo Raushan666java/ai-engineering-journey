@@ -1,3 +1,7 @@
+---
+description: "Let me recalculate: 32 - 7 - 4 = 21. Hmm, the options don't match. Let me suppose block size is 4 words = 16 bytes, so offset = 4 bits. Index = log₂(128)"
+---
+
 # Memory Hierarchy
 
 ## Learning Objectives

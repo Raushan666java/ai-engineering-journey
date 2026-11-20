@@ -4,6 +4,7 @@ slug: /database-management-systems/07-normalization
 title: "Chapter 7: Normalization in Database Management Systems"
 sidebar_label: "Chapter 7: Normalization in Database Management Systems"
 sidebar_position: 7
+description: "One-Sentence Takeaway: Normalization systematically removes data redundancy by decomposing tables through 1NF -> 2NF -> 3NF -> BCNF — think of it as 'each"
 ---
 
 # Chapter 7: Normalization in Database Management Systems

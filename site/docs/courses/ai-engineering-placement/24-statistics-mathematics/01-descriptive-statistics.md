@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/24-statistics-mathematics/01-descriptive-statist
 title: "Chapter 01: Descriptive Statistics"
 sidebar_label: "Chapter 01: Descriptive Statistics"
 sidebar_position: 299
+description: "Descriptive statistics summarize and describe the main features of a dataset. As an AI engineer, you will use these measures daily to understand your data"
 ---
 
 <!-- improved -->

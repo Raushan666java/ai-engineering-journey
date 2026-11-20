@@ -4,6 +4,7 @@ slug: /general-aptitude/01-quantitative-aptitude
 title: "Chapter 1: Quantitative Aptitude"
 sidebar_label: "Chapter 1: Quantitative Aptitude"
 sidebar_position: 1
+description: 'Dishonest Shopkeeper: If a shopkeeper sells at CP but uses false weight: $ text{Profit %} = frac{ text{Error}}{ text{True Value} - text{Error}} times'
 ---
 
 # Chapter 1: Quantitative Aptitude

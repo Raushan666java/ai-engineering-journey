@@ -4,6 +4,7 @@ slug: /artificial-intelligence/09-uncertainty
 title: "Chapter 9: Reasoning Under Uncertainty"
 sidebar_label: "Chapter 9: Reasoning Under Uncertainty"
 sidebar_position: 17
+description: "By the conclusion of this chapter, the student will be able to: (1) apply probability theory to represent uncertain knowledge; (2) construct and query"
 ---
 
 # Chapter 9: Reasoning Under Uncertainty

@@ -1,3 +1,7 @@
+---
+description: "This mock simulates the Infosys (InfyTQ / System Engineer) cognitive test. Rule: 60-90 seconds per question. Answers at the bottom - no peeking. Each"
+---
+
 <!-- improved -->
 ﻿# Infosys Mock Test - Full Pattern Simulation (50 Questions)
 

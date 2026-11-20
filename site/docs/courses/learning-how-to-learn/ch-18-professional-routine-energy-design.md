@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/ch-18-professional-routine-energy-design
 title: "Chapter 18: Professional Routine & Energy Design"
 sidebar_label: "Chapter 18: Professional Routine & Energy Design"
 sidebar_position: 19
+description: "Chapter 6: Procrastination, Habits & Deep Work — Deep-work blocks and habit systems are the raw materials this chapter schedules. Also see: Chapter 17"
 ---
 
 # Chapter 18: Professional Routine & Energy Design

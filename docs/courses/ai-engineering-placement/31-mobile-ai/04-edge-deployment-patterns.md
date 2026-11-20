@@ -1,3 +1,7 @@
+---
+description: "Edge deployment is the practice of running AI models directly on mobile phones, IoT devices, embedded systems, and browsers instead of sending data to"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Edge Deployment Patterns

@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/ch-07-dsa-coding-interview
 title: "Chapter 7: DSA & Coding Interview Prep"
 sidebar_label: "Chapter 7: DSA & Coding Interview Prep"
 sidebar_position: 8
+description: "Apply every learning technique from Chapters 1–6 specifically to DSA and coding interview preparation. Bridge the gap between knowing a concept and"
 ---
 
 # Chapter 7: DSA & Coding Interview Prep

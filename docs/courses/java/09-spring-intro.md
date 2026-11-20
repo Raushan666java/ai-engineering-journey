@@ -1,3 +1,7 @@
+---
+description: "Spring began in 2004 as a response to the complexity of Enterprise JavaBeans (EJB) 2.x. Rod Johnson's book 'Expert One-on-One J2EE Design and Development'"
+---
+
 # Introduction to Spring & Spring Boot
 
 > **Previous:** [Gradle Deep Dive](./08-gradle.md) | **Next:** [Dependency Injection & IoC Container](./10-di-container.md)

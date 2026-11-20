@@ -1,3 +1,7 @@
+---
+description: "You can compute derivatives of simple functions. But a neural network is not a simple function. It is hundreds of functions composed together: matrix"
+---
+
 # Chain Rule & Automatic Differentiation
 
 > The chain rule is the engine behind every neural network that learns.

@@ -1,3 +1,7 @@
+---
+description: "PyTorch Tensors — Tensors, Autograd, Device Management, Broadcasting: Deep learning powers modern AI breakthroughs. PyTorch is the framework of choice for"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # PyTorch Tensors — Tensors, Autograd, Device Management, Broadcasting

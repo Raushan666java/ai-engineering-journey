@@ -1,3 +1,7 @@
+---
+description: "A language model never sees text. It sees integers. The map from a string to a list of integers and back is the tokenizer. Get this layer wrong and every"
+---
+
 # BPE Tokenizer From Scratch
 
 > Bytes in, ids out, ids back to the same bytes. Build the tokenizer that every modern text model still starts from.

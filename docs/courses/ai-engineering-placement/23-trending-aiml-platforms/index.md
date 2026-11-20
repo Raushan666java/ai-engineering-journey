@@ -1,3 +1,7 @@
+---
+description: "Frontier LLM providers, agent platforms and dev toolkits compared on cost, limits and fit — updated as they ship."
+---
+
 # 23 — Trending AI/ML Platforms & Tools (2026)
 
 ## Overview

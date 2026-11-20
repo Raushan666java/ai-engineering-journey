@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design/09-monitoring-and-observability
 title: "Monitoring & Observability — Metrics, Logging, Tracing, SLIs"
 sidebar_label: "Monitoring & Observability — Metrics, Logging, Tracing, SLIs"
 sidebar_position: 104
+description: "Monitoring & Observability — Metrics, Logging, Tracing, SLIs: System design interviews test your ability to architect large-scale systems. Caching, load"
 ---
 
 <!-- improved -->

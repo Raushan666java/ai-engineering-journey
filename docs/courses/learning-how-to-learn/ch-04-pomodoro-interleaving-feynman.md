@@ -1,3 +1,7 @@
+---
+description: "In Chapter 3 you learned active recall and spaced repetition — how to pull information out of your brain and when to do it. This chapter gives you three"
+---
+
 # Chapter 4: Pomodoro, Interleaving & the Feynman Technique
 
 > **Prerequisites:** [Chapter 3: Active Recall & Spaced Repetition](./ch-03-active-recall-spaced-repetition.md) — Retrieval practice and spaced repetition systems.

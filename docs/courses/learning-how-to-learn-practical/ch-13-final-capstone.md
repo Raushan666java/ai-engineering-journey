@@ -1,3 +1,7 @@
+---
+description: "Each chapter so far taught you a standalone technique. But techniques don't work in isolation — they work as a system. Active recall without a study plan"
+---
+
 # Chapter 13: Final Capstone — Design Your Learning System
 
 > ⏱ **3 hours total** · 🎯 **Advanced** · 📋 **Requires: All chapters 1-12**

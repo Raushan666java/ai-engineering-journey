@@ -1,3 +1,7 @@
+---
+description: "Classification says 'this image is a dog.' Detection says 'there is a dog at pixels (112, 40, 280, 210), there is a cat at (400, 180, 560, 310), and"
+---
+
 # Object Detection — YOLO from Scratch
 
 > Detection is classification plus regression, run at every position in a feature map, then cleaned up with non-maximum suppression.

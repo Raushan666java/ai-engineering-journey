@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: model the target machine for code generation; compute basic blocks and construct flow graphs"
+---
+
 # Chapter 9: Code Generation
 
 ? Previous: [Chapter 8: Runtime Environment](08-runtime-env.md) | **Next:** [Chapter 10: Code Optimization](10-optimization.md)

@@ -1,3 +1,7 @@
+---
+description: 'The dual of a Boolean expression replaces $+$ with $ cdot$, $ cdot$ with $+$, $0$ with description:$, and description:$ with $0$. The dual of every Boolean identity is also'
+---
+
 # Chapter 12: Boolean Algebra
 
 > **Previous:** [Chapter 11: Algebraic Structures](./11-algebra.md) | **Next:** [Chapter 13: Probability](./13-probability.md)

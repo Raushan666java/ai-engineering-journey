@@ -1,3 +1,7 @@
+---
+description: "Spring Boot default (enabled) → causes the anti-pattern:: Pro Tip: In interviews, always start with the 'why' before the 'how.' Explaining the reasoning"
+---
+
 ![Database Sharding - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/59-interview-databases-c.png)
 
 ## Chapter at a Glance

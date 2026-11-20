@@ -1,3 +1,7 @@
+---
+description: "Descriptive statistics summarize and describe the main features of a dataset. As an AI engineer, you will use these measures daily to understand your data"
+---
+
 <!-- improved -->
 # Chapter 01: Descriptive Statistics
 

@@ -4,6 +4,7 @@ slug: /artificial-intelligence/05-game-playing
 title: "Chapter 5: Game Playing and Adversarial Search"
 sidebar_label: "Chapter 5: Game Playing and Adversarial Search"
 sidebar_position: 9
+description: "By the conclusion of this chapter, the student will be able to: (1) formulate game problems as game trees with utility functions; (2) implement the"
 ---
 
 # Chapter 5: Game Playing and Adversarial Search

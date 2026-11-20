@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/06-docker-kubernetes-cloud/11-serverless-lambda
 title: "Serverless & AWS Lambda — Event-Driven ML Inference"
 sidebar_label: "Serverless & AWS Lambda — Event-Driven ML Inference"
 sidebar_position: 91
+description: "Serverless computing lets you run code without managing servers. AWS Lambda, Azure Functions, and Google Cloud Functions execute code in response to"
 ---
 
 <!-- improved -->

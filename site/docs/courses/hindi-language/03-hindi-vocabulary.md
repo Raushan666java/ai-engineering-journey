@@ -4,6 +4,7 @@ slug: /hindi-language/03-hindi-vocabulary
 title: "Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)"
 sidebar_label: "Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)"
 sidebar_position: 3
+description: "Hindi vocabulary draws from four main sources: Sanskrit (tatsam), modified Sanskrit (tadbhav), indigenous (deshaj), and foreign (videshi) origins"
 ---
 
 # Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)

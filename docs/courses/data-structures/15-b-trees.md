@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: B-trees achieve extremely shallow trees by using multi-way nodes that match disk block sizes, making them ideal for database"
+---
+
 # Chapter 15: B-Trees and B+ Trees
 
 **Prev:** [Chapter 14: Red-Black Trees](14-red-black.md) | **Next:** [Chapter 16: Trie (Prefix Tree)](16-trie.md)

@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'Providers grant API access, frameworks orchestrate agents, and ecosystems of tools surround each model.'"
+---
+
 # Visual Notes — Choosing Your AI Stack
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

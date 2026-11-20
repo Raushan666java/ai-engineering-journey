@@ -4,6 +4,7 @@ slug: /java/37-event-driven-saga
 title: "Event-Driven Architecture & SAGA"
 sidebar_label: "Event-Driven Architecture & SAGA"
 sidebar_position: 37
+description: "A domain event is an immutable record of something that happened in the domain that domain experts care about. It represents a fact — not a command"
 ---
 
 # Event-Driven Architecture & SAGA

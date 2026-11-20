@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/06-docker-kubernetes-cloud/09-azure-and-gcp-basi
 title: "Azure and GCP Basics — Cloud Providers Comparison"
 sidebar_label: "Azure and GCP Basics — Cloud Providers Comparison"
 sidebar_position: 89
+description: "Azure and GCP Basics — Cloud Providers Comparison: Containers and cloud platforms are where AI models live in production. Docker packages your model"
 ---
 
 <!-- improved -->

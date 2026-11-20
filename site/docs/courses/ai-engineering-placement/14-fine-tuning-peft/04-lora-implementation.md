@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/14-fine-tuning-peft/04-lora-implementation
 title: "LoRA Implementation"
 sidebar_label: "LoRA Implementation"
 sidebar_position: 191
+description: "LoRA Implementation: Fine-tuning adapts foundation models to your specific domain. LoRA, QLoRA, and DPO make this affordable. This module covers when to"
 ---
 
 <!-- improved -->

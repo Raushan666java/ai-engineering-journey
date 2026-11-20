@@ -1,3 +1,7 @@
+---
+description: "A campaign management system is built around five interconnected components. Campaigns are the top-level containers that define the objective (brand"
+---
+
 # Chapter 44: Marketing & Advertising → Interview Q&A
 
 > **Previous:** [HR & Recruitment — Interview Q&A](./43-interview-hr.md) | **Next:** [Customer Service & Support — Interview Q&A](./45-interview-customer-service.md)

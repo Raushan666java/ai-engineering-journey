@@ -1,3 +1,7 @@
+---
+description: "Many AI systems involve randomness that evolves over time. Not static randomness -- structured, sequential randomness where each step depends on what came"
+---
+
 # Stochastic Processes
 
 > Randomness with structure. The math behind random walks, Markov chains, and diffusion models.

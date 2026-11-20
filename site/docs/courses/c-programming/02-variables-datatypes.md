@@ -4,6 +4,7 @@ slug: /c-programming/02-variables-datatypes
 title: "Chapter 2: Variables and Data Types"
 sidebar_label: "Chapter 2: Variables and Data Types"
 sidebar_position: 2
+description: "A variable is a named storage location in memory that holds a value of a specific type. Think of it as a labeled box on a shelf — the label is the"
 ---
 
 # Chapter 2: Variables and Data Types

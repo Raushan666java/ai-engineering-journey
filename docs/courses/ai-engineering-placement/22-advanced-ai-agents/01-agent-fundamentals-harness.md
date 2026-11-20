@@ -1,3 +1,7 @@
+---
+description: "Agent Fundamentals & Harness Engineering: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Agent Fundamentals & Harness Engineering

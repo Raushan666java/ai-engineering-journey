@@ -4,6 +4,7 @@ slug: /artificial-intelligence/17-modern-ai
 title: "Chapter 17: Modern Artificial Intelligence"
 sidebar_label: "Chapter 17: Modern Artificial Intelligence"
 sidebar_position: 25
+description: "By the conclusion of this chapter, the student will be able to: (1) describe the transformer architecture and its significance; (2) explain foundation"
 ---
 
 # Chapter 17: Modern Artificial Intelligence

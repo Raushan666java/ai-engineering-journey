@@ -4,6 +4,7 @@ slug: /geeta-darshan/08-akshara-brahma-yoga
 title: "अध्याय ८: अक्षर ब्रह्म योग — Maut ka sawaal nahin, jeevan ka pal hai"
 sidebar_label: "अध्याय ८: अक्षर ब्रह्म योग — Maut ka sawaal nahin, jeevan ka pal hai"
 sidebar_position: 9
+description: "'Tum maut ke liye taiyaari karte ho — yeh sabse badi bhool hai. Antim khayaal koi taiyaari ka natija nahin hai; woh tumhare poore jeevan ka hisaab hai"
 ---
 
 # अध्याय ८: अक्षर ब्रह्म योग — Maut ka sawaal nahin, jeevan ka pal hai

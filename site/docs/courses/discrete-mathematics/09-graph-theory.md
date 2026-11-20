@@ -4,6 +4,7 @@ slug: /discrete-mathematics/09-graph-theory
 title: "Chapter 9: Graph Theory"
 sidebar_label: "Chapter 9: Graph Theory"
 sidebar_position: 9
+description: 'A graph $G = (V, E)$ consists of a set $V$ of vertices (or nodes) and a set $E$ of edges connecting pairs of vertices. An edge ${u, v}$ connects'
 ---
 
 # Chapter 9: Graph Theory

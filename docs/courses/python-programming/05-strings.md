@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Triple-quoted strings also preserve indentation. Use inspect.cleandoc() to clean up indented docstrings. Triple-quoted strings preserve line"
+---
+
 # Chapter 5: Strings
 
 

@@ -4,6 +4,7 @@ slug: /applied-ai/04-generative-ai
 title: "Chapter 4: Generative AI"
 sidebar_label: "Chapter 4: Generative AI"
 sidebar_position: 4
+description: "Real-World Analogy: Imagine a master artist who has studied 100,000 paintings — landscapes, portraits, abstracts. After years of training, she can paint a"
 ---
 
 # Chapter 4: Generative AI

@@ -1,3 +1,7 @@
+---
+description: 'Theorem 14.2 (Division algorithm). For integers $a$ and $m > 0$, there exist unique integers $q$ (quotient) and $r$ (remainder) such that: $a = q cdot m'
+---
+
 # Chapter 14: Number Theory
 
 > **Previous:** [Chapter 13: Probability](./13-probability.md) | **Next:** [Chapter 15: Applications](./15-applications.md)

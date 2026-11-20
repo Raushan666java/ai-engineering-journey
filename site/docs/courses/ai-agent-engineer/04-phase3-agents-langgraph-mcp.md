@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/04-phase3-agents-langgraph-mcp
 title: "Phase 3 — AI Agents: LangGraph, CrewAI, MCP"
 sidebar_label: "Phase 3 — AI Agents: LangGraph, CrewAI, MCP"
 sidebar_position: 5
+description: "Build agent state machines with LangGraph, multi-agent crews with CrewAI, and MCP clients that connect LLMs to tools. Rebuild your Purvanchal Flow Studio"
 ---
 
 # Phase 3 — AI Agents: LangGraph, CrewAI, MCP

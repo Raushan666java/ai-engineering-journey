@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_07_Fixing_Syntax_Forgetting/03_Build
 title: "📚 Building The Muscle Memory"
 sidebar_label: "📚 Building The Muscle Memory"
 sidebar_position: 3
+description: "When an expert chess player looks at a board mid-game, they do not see 32 individual pieces located on 64 separate squares. Their brains have learned to"
 ---
 # 📚 Building The Muscle Memory
 

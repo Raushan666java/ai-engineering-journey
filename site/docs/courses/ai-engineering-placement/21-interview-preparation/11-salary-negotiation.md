@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/11-salary-negotiation
 title: "Salary Negotiation"
 sidebar_label: "Salary Negotiation"
 sidebar_position: 261
+description: "Salary Negotiation: Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews prepare"
 ---
 
 <!-- improved -->

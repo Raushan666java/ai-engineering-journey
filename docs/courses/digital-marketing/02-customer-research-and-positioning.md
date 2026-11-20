@@ -1,3 +1,7 @@
+---
+description: "An ideal customer profile is often written as 'SMB owners, 25–45, India'. That describes nobody in particular and cannot be acted on, because every"
+---
+
 # Chapter 2 — Customer Research and Positioning
 
 ## Learning Objectives

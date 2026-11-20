@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/11-llms-prompt-engineering/05-structured-output
 title: "Structured Output"
 sidebar_label: "Structured Output"
 sidebar_position: 152
+description: "Structured Output: Large language models are transforming every industry. Understanding how to prompt, evaluate, and optimize LLMs is a critical skill for"
 ---
 
 <!-- improved -->

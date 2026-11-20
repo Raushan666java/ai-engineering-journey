@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/ch-16-self-assessment-strategy
 title: "Chapter 16: Self-Assessment & Structured Preparation Strategy"
 sidebar_label: "Chapter 16: Self-Assessment & Structured Preparation Strategy"
 sidebar_position: 17
+description: "A complete system for self-assessment, gap analysis, strategy creation, progress tracking, and structured preparation — so you always know where you"
 ---
 
 # Chapter 16: Self-Assessment & Structured Preparation Strategy

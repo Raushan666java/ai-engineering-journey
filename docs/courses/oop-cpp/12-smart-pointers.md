@@ -1,3 +1,7 @@
+---
+description: "unique_ptr<T> is a move-only smart pointer that owns a dynamically allocated T exclusively. When the unique_ptr goes out of scope, the owned object is"
+---
+
 # Chapter 12: Smart Pointers
 
 > **Previous:** [11-file-io](./11-file-io.md) | **Next:** [13-move-semantics](./13-move-semantics.md)

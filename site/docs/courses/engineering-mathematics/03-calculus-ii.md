@@ -4,6 +4,7 @@ slug: /engineering-mathematics/03-calculus-ii
 title: "Chapter 3: Multivariable Calculus"
 sidebar_label: "Chapter 3: Multivariable Calculus"
 sidebar_position: 3
+description: 'Geometric Interpretation: $ frac{ partial f}{ partial x}(a,b)$ is the slope of the tangent line to the curve obtained by intersecting $z = f(x,y)$ with'
 ---
 
 # Chapter 3: Multivariable Calculus

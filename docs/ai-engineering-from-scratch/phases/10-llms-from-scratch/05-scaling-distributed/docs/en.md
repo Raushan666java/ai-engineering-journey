@@ -1,3 +1,7 @@
+---
+description: "Your 124M model trained on one GPU. Now try 7 billion parameters. The model doesn't fit in memory. The data takes weeks on a single machine. Distributed"
+---
+
 # Scaling: Distributed Training, FSDP, DeepSpeed
 
 > Your 124M model trained on one GPU. Now try 7 billion parameters. The model doesn't fit in memory. The data takes weeks on a single machine. Distributed training isn't optional at scale. It's the only path forward.

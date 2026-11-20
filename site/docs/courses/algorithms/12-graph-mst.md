@@ -4,6 +4,7 @@ slug: /algorithms/12-graph-mst
 title: "Chapter 12: Minimum Spanning Trees"
 sidebar_label: "Chapter 12: Minimum Spanning Trees"
 sidebar_position: 12
+description: "Imagine you are a telecom engineer tasked with connecting 15 cities with fiber-optic cable. Each pair of cities has a quoted cost for digging trenches and"
 ---
 
 # Chapter 12: Minimum Spanning Trees

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design/02-microservices-architecture
 title: "Microservices Architecture — Design, Communication, and Patterns"
 sidebar_label: "Microservices Architecture — Design, Communication, and Patterns"
 sidebar_position: 97
+description: "Microservices Architecture — Design, Communication, and Patterns: System design interviews test your ability to architect large-scale systems. Caching"
 ---
 
 <!-- improved -->

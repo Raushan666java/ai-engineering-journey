@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/27-ai-infrastructure/09-speculative-decoding
 title: "Speculative Decoding"
 sidebar_label: "Speculative Decoding"
 sidebar_position: 331
+description: "Large language models generate one token at a time. Each step requires a full forward pass through billions of parameters. This sequential bottleneck"
 ---
 
 <!-- improved -->

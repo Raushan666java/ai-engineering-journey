@@ -1,3 +1,7 @@
+---
+description: "Contest practice for product-company tests: number theory, dynamic programming, graphs and speed under a 90-minute clock."
+---
+
 # 32 — Competitive Programming
 
 ## Overview

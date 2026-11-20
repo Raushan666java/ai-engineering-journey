@@ -1,3 +1,7 @@
+---
+description: "A[Deadlock Concept] --> B[Necessary Conditions] B --> C[Resource-Allocation Graphs] C --> E[Avoidance: Banker's Algorithm] C --> F[Detection: Wait-for"
+---
+
 # Chapter 7: Deadlocks
 
 **<< [Semaphores and Monitors](./06-semaphores-monitors.md)** | [**Next: Memory Management**](./08-memory-management.md) >>

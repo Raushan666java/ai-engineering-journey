@@ -1,3 +1,7 @@
+---
+description: "Array problems are the backbone of coding interviews. Mastering array manipulation, traversal, and optimization techniques is essential for every software"
+---
+
 # Chapter 01: Arrays
 
 > Array problems are the backbone of coding interviews. Mastering array manipulation, traversal, and optimization techniques is essential for every software engineer.

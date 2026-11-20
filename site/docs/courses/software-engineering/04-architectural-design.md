@@ -4,6 +4,7 @@ slug: /software-engineering/04-architectural-design
 title: "Architectural Design"
 sidebar_label: "Architectural Design"
 sidebar_position: 4
+description: "✅ After completing this chapter, the student will be able to: - Explain the role of architectural design in software engineering and its impact on quality"
 ---
 
 # Architectural Design

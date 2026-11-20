@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/22-mock-infosys
 title: "Infosys Mock Test - Full Pattern Simulation (50 Questions)"
 sidebar_label: "Infosys Mock Test - Full Pattern Simulation (50 Questions)"
 sidebar_position: 383
+description: "This mock simulates the Infosys (InfyTQ / System Engineer) cognitive test. Rule: 60-90 seconds per question. Answers at the bottom - no peeking. Each"
 ---
 
 <!-- improved -->

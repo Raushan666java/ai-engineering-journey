@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/README
 title: "🚀 Complete Guide to Becoming a Pro Software Developer"
 sidebar_label: "🚀 Complete Guide to Becoming a Pro Software Developer"
 sidebar_position: 1
+description: "Welcome to the fully structured, professional Master Guide for serious software development. Every fundamental concept is organized neatly into chapter"
 ---
 # 🚀 Complete Guide to Becoming a Pro Software Developer
 

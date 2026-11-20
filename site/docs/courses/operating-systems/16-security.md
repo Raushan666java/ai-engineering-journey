@@ -4,6 +4,7 @@ slug: /operating-systems/16-security
 title: "Chapter 16: Security"
 sidebar_label: "Chapter 16: Security"
 sidebar_position: 16
+description: "A[Security Goals: CIA] --> B[Authentication Methods] B --> C[Access Control Models] C --> D[Buffer Overflow & Malware] D --> E[Cryptography Basics] E -->"
 ---
 
 # Chapter 16: Security

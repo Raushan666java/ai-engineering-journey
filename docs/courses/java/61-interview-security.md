@@ -1,3 +1,7 @@
+---
+description: "This chapter covers essential security concepts every Java and Spring Boot developer should master for technical interviews. From foundational"
+---
+
 # Security Interview Q&A
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md) | **Next:** [Testing Interview Q&amp;A](./62-interview-testing.md)

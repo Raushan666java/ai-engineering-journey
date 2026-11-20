@@ -4,6 +4,7 @@ slug: /system-design/05-partitioning-sharding
 title: "Chapter 5: Data Partitioning and Sharding"
 sidebar_label: "Chapter 5: Data Partitioning and Sharding"
 sidebar_position: 5
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Partitioning is the process of splitting a large dataset"
 ---
 
 # Chapter 5: Data Partitioning and Sharding

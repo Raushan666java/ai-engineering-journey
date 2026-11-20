@@ -4,6 +4,7 @@ slug: /software-engineering/15-metrics
 title: "Software Metrics and Measurement"
 sidebar_label: "Software Metrics and Measurement"
 sidebar_position: 15
+description: "Outcomes: Windows 7 had 50% fewer crashes than Windows Vista, achieved through data-driven quality gates that blocked components from shipping unless they"
 ---
 
 # Software Metrics and Measurement

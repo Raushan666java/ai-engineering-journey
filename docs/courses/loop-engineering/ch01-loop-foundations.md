@@ -1,3 +1,7 @@
+---
+description: "All intelligent behavior — biological, mechanical, or artificial — emerges from loops. A thermostat loops over temperature readings and adjusts a heater"
+---
+
 # Chapter 1: Loop Foundations
 
 > **Last Updated:** June 2026 | **Estimated Reading Time:** 75 minutes

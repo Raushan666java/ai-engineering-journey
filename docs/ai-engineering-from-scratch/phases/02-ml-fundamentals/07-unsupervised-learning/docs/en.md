@@ -1,3 +1,7 @@
+---
+description: "Every ML lesson so far has assumed labeled data: 'here is an input, here is the correct output.' In the real world, labels are expensive. A hospital has"
+---
+
 # Unsupervised Learning
 
 > No labels, no teacher. The algorithm finds structure on its own.

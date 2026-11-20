@@ -1,3 +1,7 @@
+---
+description: "Given a prompt trace and deployment constraints, recommend the optimal prefix caching strategy and estimate throughput improvement."
+---
+
 # Skill: Prefix Cache Tuner
 
 Given a prompt trace and deployment constraints, recommend the optimal prefix caching strategy and estimate throughput improvement.

@@ -4,6 +4,7 @@ slug: /artificial-intelligence/01-introduction
 title: "Chapter 1: Introduction to Artificial Intelligence"
 sidebar_label: "Chapter 1: Introduction to Artificial Intelligence"
 sidebar_position: 1
+description: "Real-World Analogy: AI is the new electricity. Just as electricity in the late 19th century transformed every industry — lighting, manufacturing"
 ---
 
 # Chapter 1: Introduction to Artificial Intelligence

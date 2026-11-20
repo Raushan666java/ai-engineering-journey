@@ -4,6 +4,7 @@ slug: /applied-ai/03-opencv
 title: "Chapter 3: OpenCV & Computer Vision"
 sidebar_label: "Chapter 3: OpenCV & Computer Vision"
 sidebar_position: 3
+description: "Real-World Analogy: Imagine describing a photograph to someone born blind — you would have to translate every visual detail into a grid of numbers. 'At"
 ---
 
 # Chapter 3: OpenCV & Computer Vision

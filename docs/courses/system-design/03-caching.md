@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Caching works because of locality of reference — the"
+---
+
 # Chapter 3: Caching Strategies and Patterns
 > **Previous:** [02 Scalability Load Balancing](./02-scalability-load-balancing.md) | **Next:** [04 Database Foundations](./04-database-foundations.md)
 

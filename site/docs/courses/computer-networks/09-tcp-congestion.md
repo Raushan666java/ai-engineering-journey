@@ -4,6 +4,7 @@ slug: /computer-networks/09-tcp-congestion
 title: "Chapter 9: TCP Congestion Control"
 sidebar_label: "Chapter 9: TCP Congestion Control"
 sidebar_position: 9
+description: "Flow control prevents a fast sender from overwhelming a slow receiver. The receiver advertises its available buffer space (rwnd, advertised window), and"
 ---
 
 # Chapter 9: TCP Congestion Control

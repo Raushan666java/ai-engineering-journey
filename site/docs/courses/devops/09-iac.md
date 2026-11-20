@@ -4,6 +4,7 @@ slug: /devops/09-iac
 title: "Chapter 9: Terraform & Infrastructure as Code"
 sidebar_label: "Chapter 9: Terraform & Infrastructure as Code"
 sidebar_position: 17
+description: "Infrastructure drift — when actual infrastructure state diverges from declared configuration — is a leading cause of configuration drift incidents. The"
 ---
 
 # Chapter 9: Terraform & Infrastructure as Code

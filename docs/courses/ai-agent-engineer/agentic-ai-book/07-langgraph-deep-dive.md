@@ -1,3 +1,7 @@
+---
+description: "LangGraph formalizes your loop as a state graph: nodes are functions (including LLM calls), edges define what runs next, and a shared state object flows"
+---
+
 # Part III — Frameworks
 
 ## Chapter 7: LangGraph Deep Dive

@@ -4,6 +4,7 @@ slug: /devops/03-build-tools
 title: "Chapter 3: Build Tools"
 sidebar_label: "Chapter 3: Build Tools"
 sidebar_position: 4
+description: "Tracking build artifact sizes over time prevents bloat and enforces performance budgets. The following tool analyzes bundles, tracks historical sizes, and"
 ---
 
 # Chapter 3: Build Tools

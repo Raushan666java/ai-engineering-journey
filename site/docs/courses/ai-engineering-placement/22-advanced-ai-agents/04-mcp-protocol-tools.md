@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/04-mcp-protocol-tools
 title: "MCP Protocol & Tools"
 sidebar_label: "MCP Protocol & Tools"
 sidebar_position: 275
+description: "MCP Protocol & Tools: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module covers"
 ---
 
 <!-- improved -->

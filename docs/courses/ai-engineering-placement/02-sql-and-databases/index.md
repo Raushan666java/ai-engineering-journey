@@ -1,3 +1,7 @@
+---
+description: "SQL that survives the interview: joins, CTEs, window functions, indexing and transactions, with PostgreSQL and MySQL internals."
+---
+
 # 02 — SQL & Databases
 
 > **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)

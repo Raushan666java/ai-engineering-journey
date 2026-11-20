@@ -1,9 +1,10 @@
 ---
 id: 04-digital-logic
 slug: /gate-cs-preparation/04-digital-logic
-title: "04 Digital Logic"
-sidebar_label: "04 Digital Logic"
+title: "04-digital-logic"
+sidebar_label: "04-digital-logic"
 sidebar_position: 4
+description: "GATE CS Weightage: 5–8 marks (2–3 questions on average). High-scoring topic with predictable problem patterns."
 ---
 
 ﻿# Chapter 04: Digital Logic
@@ -88,7 +89,6 @@ flowchart LR
 
 ### 1.1 Number Base Conversions
 
-
 **Common bases in GATE:**
 
 | Base | System | Digits |
@@ -102,7 +102,7 @@ flowchart LR
 
 **Decimal to Binary (repeated division):**
 ```
-Example: 42â‚ÂÂ�₀ to binary
+Example: 42₁₀ to binary
 42 ÷ 2 = 21 R 0  (LSB)
 21 ÷ 2 = 10 R 1
 10 ÷ 2 =  5 R 0
@@ -110,7 +110,7 @@ Example: 42â‚ÂÂ�₀ to binary
  2 ÷ 2 =  1 R 0
  1 ÷ 2 =  0 R 1  (MSB)
 
-42â‚ÂÂ�₀ = 101010₂
+42₁₀ = 101010₂
 ```
 
 **Binary to Hexadecimal (grouping method):**
@@ -118,7 +118,7 @@ Example: 42â‚ÂÂ�₀ to binary
 Example: 1101011011₂ to hex
 Group right-to-left by 4: 0011 0101 1011
                         3    5    B
-1101011011₂ = 35Bâ‚ÂÂ�₆
+1101011011₂ = 35B₁₆
 ```
 
 **Binary to Octal (grouping method):**
@@ -131,16 +131,15 @@ Group right-to-left by 3: 001 101 011 011
 
 **Fractional part conversion:**
 ```
-Example: 0.625â‚ÂÂ�₀ to binary
+Example: 0.625₁₀ to binary
 0.625 × 2 = 1.250 → 1
 0.250 × 2 = 0.500 → 0
 0.500 × 2 = 1.000 → 1
 
-0.625â‚ÂÂ�₀ = 0.101₂
+0.625₁₀ = 0.101₂
 ```
 
 ### 1.2 Complements
-
 
 **1's complement:** Invert all bits (0→1, 1→0).
 
@@ -150,7 +149,7 @@ Example: 0.625â‚ÂÂ�₀ to binary
 Example: 8-bit representation of -42
 +42 = 00101010
 1's complement: 11010101
-2's complement: 11010110  â†Â� -42 in 2's complement
+2's complement: 11010110  ← -42 in 2's complement
 ```
 
 **Sign extension:** For signed numbers, extend the sign bit (MSB) to maintain value.
@@ -164,14 +163,13 @@ Example: 8-bit representation of -42
 
 | Representation | Range |
 |---------------|-------|
-| Sign-magnitude | -(2âÂÂ�¿âÂÂ�»¹−1) to +(2âÂÂ�¿âÂÂ�»¹−1) |
-| 1's complement | -(2âÂÂ�¿âÂÂ�»¹−1) to +(2âÂÂ�¿âÂÂ�»¹−1) |
-| 2's complement | -2âÂÂ�¿âÂÂ�»¹ to +(2âÂÂ�¿âÂÂ�»¹−1) |
+| Sign-magnitude | -(2Ã¢ÂÂ¿Ã¢ÂÂ»Ã‚Â¹Ã¢Ë†â€™1) to +(2Ã¢ÂÂ¿Ã¢Â»Â¹âˆ’1) |
+| 1's complement | -(2Ã¢ÂÂ¿Ã¢ÂÂ»Ã‚Â¹Ã¢Ë†â€™1) to +(2Ã¢ÂÂ¿Ã¢Â»Â¹âˆ’1) |
+| 2's complement | -2Ã¢ÂÂ¿Ã¢ÂÂ»Ã‚Â¹ to +(2Ã¢ÂÂ¿Ã¢Â»Â¹âˆ’1) |
 
 **Key observation:** 2's complement has asymmetric range. For 4 bits: -8 to +7. There is no +8 in 4-bit 2's complement.
 
 ### 1.3 Boolean Algebra
-
 
 **Basic postulates (Huntington's):**
 
@@ -201,7 +199,6 @@ Complement:   a + a' = 1,  a · a' = 0
 
 ### 1.4 Standard Forms
 
-
 **Minterm (Standard SOP):** Product term where every variable appears once (complemented or uncomplemented). Each minterm = 1 for exactly one input combination.
 
 **Maxterm (Standard POS):** Sum term where every variable appears once. Each maxterm = 0 for exactly one input combination.
@@ -211,14 +208,14 @@ Example: For 3 variables A, B, C:
 
 Minterms:
 m₀ = A'B'C'  (ABC = 000)
-mâ‚ÂÂ� = A'B'C   (ABC = 001)
+m₁ = A'B'C   (ABC = 001)
 m₂ = A'BC'   (ABC = 010)
 ...
 m₇ = ABC     (ABC = 111)
 
 Maxterms:
 M₀ = A + B + C    (ABC = 000)
-Mâ‚ÂÂ� = A + B + C'   (ABC = 001)
+M₁ = A + B + C'   (ABC = 001)
 ...
 M₇ = A' + B' + C' (ABC = 111)
 
@@ -235,8 +232,7 @@ POS: F = (A+B+C)(A+B'+C)(A'+B+C)(A'+B'+C')
 
 ### 1.5 GATE Practice Problems → Number Systems & Boolean Algebra
 
-
-**Problem 1:** Convert (0.375)â‚ÂÂ�₀ to binary.
+**Problem 1:** Convert (0.375)₁₀ to binary.
 ```
 (A) 0.011   (B) 0.101   (C) 0.110   (D) 0.0011
 ```
@@ -281,7 +277,7 @@ F = A'C + AC' + B'C
 (C) There is one more positive number than negative
 (D) Zero has two representations
 ```
-*Solution:* In n-bit 2's complement, the range is -2âÂÂ�¿âÂÂ�»¹ to +(2âÂÂ�¿âÂÂ�»¹−1). So there is one extra negative number. Answer: (B)
+*Solution:* In n-bit 2's complement, the range is -2Ã¢ÂÂ¿Ã¢ÂÂ»Ã‚Â¹ to +(2Ã¢ÂÂ¿Ã¢Â»Â¹âˆ’1). So there is one extra negative number. Answer: (B)
 
 **Problem 5:** (GATE 2023) The Boolean expression (A + B')(A' + C)(B + C') simplifies to:
 ```
@@ -312,7 +308,7 @@ Answer: (C)
 657₈ = 110 101 111₂ = 110101111₂
 Group by 4: 0001 1010 1111
            1    A    F
-Answer: 1AFâ‚ÂÂ�₆ → (A)
+Answer: 1AF₁₆ → (A)
 ```
 
 **Problem 7:** (GATE 2021) The minimum number of NAND gates required to implement F = A + AB' + A'BC is:
@@ -345,7 +341,6 @@ Answer: (C)
 ## 2. Logic Gates & Combinational Circuits
 
 ### 2.1 Basic Logic Gates → Truth Tables
-
 
 **AND gate:** Output = 1 only when ALL inputs are 1.
 ```
@@ -410,7 +405,6 @@ Answer: (C)
 
 ### 2.2 Universal Gates
 
-
 **NAND as universal gate:**
 
 ```
@@ -455,7 +449,6 @@ AND:      AB = (A' NOR B')' = (A NOR A) NOR (B NOR B)
 ```
 
 ### 2.3 Adders
-
 
 **Half Adder:** Adds 2 bits. Outputs Sum (S) and Carry (C).
 
@@ -540,26 +533,25 @@ Define:
   Propagate:  Pᵢ = Aᵢ ⊕ Bᵢ
 
 Carry equations:
-  Câ‚ÂÂ� = G₀ + P₀·C₀
-  C₂ = Gâ‚ÂÂ� + Pâ‚ÂÂ�·G₀ + Pâ‚ÂÂ�·P₀·C₀
-  C₃ = G₂ + P₂·Gâ‚ÂÂ� + P₂·Pâ‚ÂÂ�·G₀ + P₂·Pâ‚ÂÂ�·P₀·C₀
+  C₁ = G₀ + P₀·C₀
+  CÃ¢â€šâ€š = GÃ¢â€šÂ + PÃ¢â€šÂÃ‚Â·GÃ¢â€šâ‚¬ + PÃ¢â€šÂ·P₀·C₀
+  CÃ¢â€šÆ’ = GÃ¢â€šâ€š + PÃ¢â€šâ€šÃ‚Â·GÃ¢â€šÂ + PÃ¢â€šâ€šÃ‚Â·PÃ¢â€šÂÃ‚Â·GÃ¢â€šâ‚¬ + PÃ¢â€šâ€šÃ‚Â·PÃ¢â€šÂ·P₀·C₀
 
 Sum:  Sᵢ = Pᵢ ⊕ Cᵢ
 ```
 
 ### 2.4 Multiplexers (MUX)
 
-
-A multiplexer selects one of 2âÂÂ�¿ input lines using n select lines.
+A multiplexer selects one of 2Ã¢Â¿ input lines using n select lines.
 
 **2:1 MUX:**
 ```
 S | Y
 --|----
 0 | I₀
-1 | Iâ‚ÂÂ�
+1 | I₁
 
-Y = S'·I₀ + S·Iâ‚ÂÂ�
+Y = S'·I₀ + S·I₁
 ```
 
 **ASCII circuit → 2:1 MUX:**
@@ -567,49 +559,48 @@ Y = S'·I₀ + S·Iâ‚ÂÂ�
 I₀ -----+
          \
          / 2:1 MUX
-Iâ‚ÂÂ� ----+ \       |
+I₁ ----+ \       |
        | /-------|--- Y
        |/
        |
 S -----+
 ```
 
-**4:1 MUX:** Uses 2 select lines (Sâ‚ÂÂ�, S₀).
+**4:1 MUX:** Uses 2 select lines (S₁, S₀).
 ```
-Y = Sâ‚ÂÂ�'·S₀'·I₀ + Sâ‚ÂÂ�'·S₀·Iâ‚ÂÂ� + Sâ‚ÂÂ�·S₀'·I₂ + Sâ‚ÂÂ�·S₀·I₃
+Y = SÃ¢â€šÂ'Ã‚Â·SÃ¢â€šâ‚¬'Ã‚Â·IÃ¢â€šâ‚¬ + SÃ¢â€šÂ'Ã‚Â·SÃ¢â€šâ‚¬Ã‚Â·IÃ¢â€šÂ + SÃ¢â€šÂÃ‚Â·SÃ¢â€šâ‚¬'Ã‚Â·IÃ¢â€šâ€š + SÃ¢â€šÂ·S₀·I₃
 ```
 
 **Implementing Boolean functions using MUX:**
 
-To implement an n-variable function using a 2âÂÂ�¿:1 MUX, connect the variables to select lines and constants/variables to inputs.
+To implement an n-variable function using a 2Ã¢Â¿:1 MUX, connect the variables to select lines and constants/variables to inputs.
 
 ```
 Example: F(A,B,C) = Σm(1,3,5,6) using 8:1 MUX
 
-Select S₂=A, Sâ‚ÂÂ�=B, S₀=C
-I₀=0, Iâ‚ÂÂ�=1, I₂=0, I₃=1, I₄=0, I₅=1, I₆=1, I₇=0
+Select S₂=A, S₁=B, S₀=C
+I₀=0, I₁=1, I₂=0, I₃=1, I₄=0, I₅=1, I₆=1, I₇=0
 ```
 
-To implement an n-variable function using a 2âÂÂ�¿âÂÂ�»¹:1 MUX, use n-1 variables as selects and the remaining variable (or its complement) as inputs.
+To implement an n-variable function using a 2Ã¢ÂÂ¿Ã¢Â»Â¹:1 MUX, use n-1 variables as selects and the remaining variable (or its complement) as inputs.
 
 ```
 Example: F(A,B,C) = Σm(1,3,5,6) using 4:1 MUX
 
-Select Sâ‚ÂÂ�=A, S₀=B
+Select S₁=A, S₀=B
 I₀ = C          (for AB=00, F=C → rows 1,3 → C=1)
-Iâ‚ÂÂ� = 0          (for AB=01, C doesn't matter but check: A'BC=010→0)
+I₁ = 0          (for AB=01, C doesn't matter but check: A'BC=010→0)
 I₂ = C'         (for AB=10, F=C' → row 6: 110→1, C'=1)  
 I₃ = C          (for AB=11, F=C → row 7 doesn't exist... check carefully)
 ```
 
 ### 2.5 Demultiplexers (DEMUX)
 
-
-A demultiplexer routes one input to one of 2âÂÂ�¿ outputs based on n select lines.
+A demultiplexer routes one input to one of 2Ã¢Â¿ outputs based on n select lines.
 
 **1:4 DEMUX truth table:**
 ```
-Sâ‚ÂÂ� S₀ | Y₃ Y₂ Yâ‚ÂÂ� Y₀
+S₁ S₀ | Y₃ Y₂ Y₁ Y₀
 ------+-------------
 0  0  | 0   0  0  I
 0  1  | 0   0  I  0
@@ -619,11 +610,10 @@ Sâ‚ÂÂ� S₀ | Y₃ Y₂ Yâ‚ÂÂ� Y₀
 
 ### 2.6 Encoders
 
-
 **Priority Encoder (4:2):** Outputs the binary code of the highest-priority active input.
 
 ```
- I₃ I₂ Iâ‚ÂÂ� I₀ | Oâ‚ÂÂ� O₀ | V (Valid)
+ I₃ I₂ I₁ I₀ | O₁ O₀ | V (Valid)
 -------------+------+---------
  0  0  0  0  | 0  0  | 0
  0  0  0  1  | 0  0  | 1
@@ -636,12 +626,11 @@ Sâ‚ÂÂ� S₀ | Y₃ Y₂ Yâ‚ÂÂ� Y₀
 
 ### 2.7 Decoders
 
-
-An n-to-2âÂÂ�¿ decoder activates exactly one of 2âÂÂ�¿ outputs based on the n-bit input.
+An n-to-2Ã¢ÂÂ¿ decoder activates exactly one of 2Ã¢Â¿ outputs based on the n-bit input.
 
 **3:8 Decoder → truth table:**
 ```
- A₂ Aâ‚ÂÂ� A₀ | Y₇ Y₆ Y₅ Y₄ Y₃ Y₂ Yâ‚ÂÂ� Y₀
+ A₂ A₁ A₀ | Y₇ Y₆ Y₅ Y₄ Y₃ Y₂ Y₁ Y₀
 ----------+-------------------------
  0  0  0  | 0  0  0  0  0  0  0  1
  0  0  1  | 0  0  0  0  0  0  1  0
@@ -654,7 +643,6 @@ An n-to-2âÂÂ�¿ decoder activates exactly one of 2âÂÂ�¿ outputs based
 ```
 
 ### 2.8 Comparators
-
 
 **1-bit Magnitude Comparator:**
 
@@ -674,7 +662,6 @@ A<B = A'·B
 **n-bit comparator:** Compare MSB first. If MSB equal, compare next bit.
 
 ### 2.9 Karnaugh Maps (K-Maps)
-
 
 **2-variable K-map:**
 ```
@@ -801,7 +788,6 @@ Groups can span both planes (eliminating A) if the same rectangle of 1s appears 
 
 ### 2.10 Quine-McCluskey Algorithm
 
-
 Systematic tabular method for minimizing Boolean functions (handles >5 variables where K-maps fail).
 
 **Steps:**
@@ -850,7 +836,6 @@ Prime implicants: A'C' (0-0-), B'C'D (000- if uncombined)... etc.
 
 ### 2.11 ALU Concepts
 
-
 **Arithmetic Logic Unit (ALU):** Combinational circuit that performs arithmetic and logic operations.
 
 **Basic 1-bit ALU with 3 control lines (M, S1, S0):**
@@ -873,7 +858,6 @@ Function table:
 ```
 
 ### 2.12 GATE Practice Problems → Combinational Circuits
-
 
 **Problem 8:** (GATE 2023) How many 4:1 multiplexers are needed to implement an 8:1 multiplexer?
 ```
@@ -937,7 +921,7 @@ When A=1: F = B + C
 
 Need one 2:1 MUX for F = A'·(BC) + A·(B+C)
 Input I₀ = BC (needs another 2:1 MUX with B select)
-Input Iâ‚ÂÂ� = B + C (needs another 2:1 MUX with B select)
+Input I₁ = B + C (needs another 2:1 MUX with B select)
 
 So minimum 3 MUXes: 1 for BC, 1 for B+C, 1 to select between them.
 Answer: (C) 3
@@ -959,7 +943,6 @@ Answer: (A) 135 ns
 ## 3. Sequential Circuits
 
 ### 3.1 Latches
-
 
 Sequential elements store state. Latches are level-sensitive.
 
@@ -1028,7 +1011,6 @@ Q(t+1) = T·Q(t)' + T'·Q(t) = T ⊕ Q(t)
 
 ### 3.2 Flip-Flops
 
-
 Flip-flops are edge-triggered (respond only at clock edge).
 
 **Positive edge-triggered D flip-flop:** Q captures D on rising clock edge.
@@ -1090,7 +1072,6 @@ Flip-flops are edge-triggered (respond only at clock edge).
 
 ### 3.3 Registers
 
-
 **Shift Register:** Series of flip-flops connected in cascade. Data shifts right (or left) on each clock cycle.
 
 **4-bit SISO (Serial-In Serial-Out) shift register:**
@@ -1114,7 +1095,7 @@ Each bit stored in a D flip-flop with clock enable.
 **Universal Shift Register (74LS194):** Can shift left, shift right, parallel load, hold.
 
 ```
-Mode Control Sâ‚ÂÂ� S₀:
+Mode Control S₁ S₀:
   0 0 → Hold (no change)
   0 1 → Shift Right
   1 0 → Shift Left
@@ -1122,7 +1103,6 @@ Mode Control Sâ‚ÂÂ� S₀:
 ```
 
 ### 3.4 Counters
-
 
 **Ripple (Asynchronous) Counter:** Each flip-flop output clocks the next stage.
 
@@ -1206,7 +1186,6 @@ Mod = 2n (where n = number of flip-flops)
 
 ### 3.5 State Machines
 
-
 **Finite State Machine (FSM):**
 
 **Moore Machine:** Output depends only on current state.
@@ -1258,7 +1237,6 @@ Step 4: States in same final partition block are equivalent
 
 ### 3.6 Timing Analysis
 
-
 **Setup time (t_su):** Time data must be stable BEFORE clock edge.
 
 **Hold time (t_h):** Time data must be stable AFTER clock edge.
@@ -1276,7 +1254,6 @@ where t_combo = worst-case combinational logic delay
 **Solution to race-around:** Master-slave configuration or edge-triggering.
 
 ### 3.7 GATE Practice Problems → Sequential Circuits
-
 
 **Problem 13:** (GATE 2023) For a JK flip-flop, if J=1, K=1, and Q(t)=0, what is Q(t+1)?
 ```
@@ -1339,7 +1316,7 @@ Answer: (C) 13ns
 (A) 0   (B) 8   (C) 12   (D) 16
 ```
 *Solution:*
-4-bit Johnson counter has 2n = 8 used states out of 2âÂÂ�´ = 16 possible.
+4-bit Johnson counter has 2n = 8 used states out of 2Ã¢Â´ = 16 possible.
 Unused = 16 - 8 = 8 states.
 Answer: (B) 8
 
@@ -1364,7 +1341,6 @@ Note: A Moore machine would need 5 states (one extra state for output=1).
 ## 4. Memory & Programmable Logic
 
 ### 4.1 Memory Classification
-
 
 ```
                                Memory
@@ -1400,7 +1376,7 @@ Note: A Moore machine would need 5 states (one extra state for output=1).
 
 **Memory organization:**
 ```
-Memory size = 2âÂÂ�¿ × m bits
+Memory size = 2Ã¢Â¿ Ã— m bits
 where n = address line count
       m = word size (data line count)
 
@@ -1418,7 +1394,6 @@ Example: 4K × 8 memory = 4096 words × 8 bits = 32,768 bits
 
 ### 4.2 Chip Select and Memory Decoding
 
-
 **Memory chip select logic:**
 ```
 For a 64K memory system with four 16K × 8 chips:
@@ -1429,13 +1404,12 @@ Chip 2: A15 A14 = 1 0 → addresses 8000H - BFFFH
 Chip 3: A15 A14 = 1 1 → addresses C000H - FFFFH
 
 CS₀ = A15' · A14'
-CSâ‚ÂÂ� = A15' · A14
+CSÃ¢â€šÂ = A15' · A14
 CS₂ = A15 · A14'
 CS₃ = A15 · A14
 ```
 
 ### 4.3 Programmable Logic Devices
-
 
 **PLA (Programmable Logic Array):**
 - Programmable AND array + Programmable OR array
@@ -1449,7 +1423,7 @@ CS₃ = A15 · A14
                  AND Array (programmable)
               +---+---+---+---+
               |   |   |   |   |
-Inputs >------| x | x |   |   |--- Pâ‚ÂÂ�
+Inputs >------| x | x |   |   |--- P₁
               |   |   |   |   |
               |   |   | x |   |--- P₂
               |   |   |   |   |
@@ -1497,17 +1471,16 @@ IOB = Input/Output Block
 SW  = Switch Matrix (programmable interconnect)
 ```
 
-**Look-Up Table (LUT):** Basic building block in FPGA. An n-input LUT acts as an n-input function generator (essentially a 2âÂÂ�¿:1 MUX implementing a truth table).
+**Look-Up Table (LUT):** Basic building block in FPGA. An n-input LUT acts as an n-input function generator (essentially a 2Ã¢Â¿:1 MUX implementing a truth table).
 
 ### 4.4 GATE Practice Problems → Memory & Programmable Logic
-
 
 **Problem 21:** A memory system has 16 address lines and 8 data lines. What is its capacity?
 ```
 (A) 16 KB   (B) 32 KB   (C) 64 KB   (D) 128 KB
 ```
 *Solution:*
-2¹âÂÂ�¶ = 65536 = 64K words
+2Ã‚Â¹Ã¢Â¶ = 65536 = 64K words
 Each word = 8 bits = 1 byte
 Capacity = 64 KB. Answer: (C) 64 KB
 
@@ -1547,14 +1520,13 @@ Answer: (B) 16
 ```
 (A) 4   (B) 8   (C) 16   (D) 32
 ```
-*Solution:* A 4-input LUT implements any 4-variable function. It stores the truth table, which has 2âÂÂ�´ = 16 entries. Each entry is 1 bit. So 16 memory cells. Answer: (C) 16
+*Solution:* A 4-input LUT implements any 4-variable function. It stores the truth table, which has 2Ã¢Â´ = 16 entries. Each entry is 1 bit. So 16 memory cells. Answer: (C) 16
 
 ---
 
 ## 5. Quick Reference Tables
 
 ### Boolean Algebra Laws
-
 
 | Law | AND Form | OR Form |
 |-----|----------|---------|
@@ -1570,7 +1542,6 @@ Answer: (B) 16
 
 ### Flip-Flop Characteristic Equations
 
-
 | FF | Q(t+1) |
 |----|--------|
 | SR | S + R'·Q |
@@ -1580,20 +1551,18 @@ Answer: (B) 16
 
 ### Counter Modulus
 
-
 | Type | n-bit Modulus |
 |------|--------------|
-| Ripple/Sync Binary | 2âÂÂ�¿ |
+| Ripple/Sync Binary | 2Ã¢Â¿ |
 | Ring | n |
 | Johnson | 2n |
 | Decade (BCD) | 10 |
 
 ### Important GATE Formulas
 
-
 | Concept | Formula |
 |---------|---------|
-| Gray code to binary | Bᵢ = Gᵢ ⊕ Bᵢ₊â‚ÂÂ� (MSB same) |
+| Gray code to binary | Bᵢ = Gᵢ ⊕ Bᵢ₊₁ (MSB same) |
 | Excess-3 code | XS-3 = BCD + 0011 |
 | Hamming distance | Number of differing bits |
 | Parity generation | Even parity = ⊕ of all bits |
@@ -1645,9 +1614,9 @@ Answer: (B) 16
 
 4. **Race-around:** JK flip-flop with J=K=1 and excessive clock width. Fix: master-slave or edge-triggering.
 
-5. **MUX as universal logic:** A 2âÂÂ�¿:1 MUX can implement any n-variable function with no extra gates.
+5. **MUX as universal logic:** A 2Ã¢Â¿:1 MUX can implement any n-variable function with no extra gates.
 
-6. **Decoder + OR:** An n-to-2âÂÂ�¿ decoder + OR gate can implement any sum-of-minterms (functions of n variables).
+6. **Decoder + OR:** An n-to-2Ã¢Â¿ decoder + OR gate can implement any sum-of-minterms (functions of n variables).
 
 7. **Memory:** Address lines = log₂(words). Data lines = word size. Chip select decodes top address bits.
 
@@ -1662,7 +1631,6 @@ Answer: (B) 16
 ## Previous Year Questions (GATE 2019-2025)
 
 ### Category A: Number Systems & Boolean Algebra (10 Problems)
-
 
 **Problem 26 (GATE 2024):** The Boolean expression F = (A + B)(A + C)(B + C) simplifies to:
 ```
@@ -1685,13 +1653,13 @@ Then: (A + BC)(B + C) = AB + AC + BC + BC = AB + AC + BC
 Answer: (A) AB + BC + CA
 ```
 
-**Problem 27 (GATE 2023):** The number of 1s in the binary representation of (A2)â‚ÂÂ�₆ is:
+**Problem 27 (GATE 2023):** The number of 1s in the binary representation of (A2)₁₆ is:
 ```
 (A) 3   (B) 4   (C) 5   (D) 6
 ```
 **Solution:**
 ```
-A2â‚ÂÂ�₆ = 1010 0010₂
+A2₁₆ = 1010 0010₂
 Number of 1s: positions 7, 1 → 2 ones.
 Wait: A = 1010 (two 1s), 2 = 0010 (one 1). Total = 3.
 
@@ -1724,15 +1692,15 @@ Answer: (A) AB + A'C
 
 **Problem 30 (GATE 2021):** The 16-bit 2's complement of -200 expressed in hex is:
 ```
-(A) FF38â‚ÂÂ�₆   (B) FF39â‚ÂÂ�₆   (C) FF37â‚ÂÂ�₆   (D) FF3Câ‚ÂÂ�₆
+(A) FF38₁₆   (B) FF39₁₆   (C) FF37₁₆   (D) FF3C₁₆
 ```
 **Solution:**
 ```
-+200 = 0000 0000 1100 1000₂ = 00C8â‚ÂÂ�₆
-1's complement: FFFF - 00C8 = FF37â‚ÂÂ�₆
-2's complement: FF37 + 1 = FF38â‚ÂÂ�₆
++200 = 0000 0000 1100 1000₂ = 00C8₁₆
+1's complement: FFFF - 00C8 = FF37₁₆
+2's complement: FF37 + 1 = FF38₁₆
 
-Answer: (A) FF38â‚ÂÂ�₆
+Answer: (A) FF38₁₆
 ```
 
 **Problem 31 (GATE 2025):** How many Boolean functions of 3 variables exist?
@@ -1742,7 +1710,7 @@ Answer: (A) FF38â‚ÂÂ�₆
 **Solution:**
 ```
 Truth table has 2³ = 8 rows. Each row has 2 possible values (0 or 1).
-Total distinct functions = 2âÂÂ�¸ = 256.
+Total distinct functions = 2Ã¢Â¸ = 256.
 
 Answer: (D) 256
 ```
@@ -1753,11 +1721,11 @@ Answer: (D) 256
 ```
 **Solution:**
 ```
-Gᵢ = Bᵢ ⊕ Bᵢ₊â‚ÂÂ� (MSB same: G₄ = B₄ = 1)
+Gᵢ = Bᵢ ⊕ Bᵢ₊₁ (MSB same: G₄ = B₄ = 1)
 G₃ = B₄⊕B₃ = 1⊕0 = 1
 G₂ = B₃⊕B₂ = 0⊕1 = 1
-Gâ‚ÂÂ� = B₂⊕Bâ‚ÂÂ� = 1⊕0 = 1
-G₀ = Bâ‚ÂÂ�⊕B₀ = 0⊕1 = 1
+G₁ = B₂⊕B₁ = 1⊕0 = 1
+G₀ = B₁⊕B₀ = 0⊕1 = 1
 Gray = 11111
 
 Answer: (A) 11111
@@ -1805,7 +1773,6 @@ Answer: (D) 0111
 
 ### Category B: Combinational Circuits (12 Problems)
 
-
 **Problem 36 (GATE 2025):** Minimum NAND gates for a half adder (S, C) is:
 ```
 (A) 3   (B) 4   (C) 5   (D) 6
@@ -1826,17 +1793,17 @@ So S from G4 (4 NANDs) and C from G5 (sharing G1). Total = 5 NAND gates.
 Answer: (C) 5
 ```
 
-**Problem 37 (GATE 2024):** 4:1 MUX with Sâ‚ÂÂ�,S₀; inputs I₀=0, Iâ‚ÂÂ�=1, I₂=1, I₃=C gives:
+**Problem 37 (GATE 2024):** 4:1 MUX with S₁,S₀; inputs I₀=0, I₁=1, I₂=1, I₃=C gives:
 ```
-(A) Sâ‚ÂÂ� + S₀ + C    (B) Sâ‚ÂÂ�'S₀ + Sâ‚ÂÂ�S₀' + Sâ‚ÂÂ�S₀C    (C) Sâ‚ÂÂ�'S₀'Sâ‚ÂÂ�S₀' + Sâ‚ÂÂ�S₀C    (D) Sâ‚ÂÂ�'S₀'Sâ‚ÂÂ�S₀ + C
+(A) S₁ + S₀ + C    (B) S₁'S₀ + S₁S₀' + S₁S₀C    (C) S₁'S₀'S₁S₀' + S₁S₀C    (D) S₁'S₀'S₁S₀ + C
 ```
 **Solution:**
 ```
-Y = Sâ‚ÂÂ�'S₀'I₀ + Sâ‚ÂÂ�'S₀Iâ‚ÂÂ� + Sâ‚ÂÂ�S₀'I₂ + Sâ‚ÂÂ�S₀I₃
-  = 0 + Sâ‚ÂÂ�'S₀·1 + Sâ‚ÂÂ�S₀'·1 + Sâ‚ÂÂ�S₀·C
-  = Sâ‚ÂÂ�'S₀ + Sâ‚ÂÂ�S₀' + Sâ‚ÂÂ�S₀·C
+Y = S₁'S₀'I₀ + S₁'S₀I₁ + S₁S₀'I₂ + S₁S₀I₃
+  = 0 + S₁'S₀·1 + S₁S₀'·1 + S₁S₀·C
+  = S₁'S₀ + S₁S₀' + S₁S₀·C
 
-Answer: (B) Sâ‚ÂÂ�'S₀ + Sâ‚ÂÂ�S₀' + Sâ‚ÂÂ�S₀·C
+Answer: (B) S₁'S₀ + S₁S₀' + S₁S₀·C
 ```
 
 **Problem 38 (GATE 2023):** A 3:8 decoder (active-high outputs) implements F = Σm(1,2,5,7) using:
@@ -1847,24 +1814,24 @@ Answer: (B) Sâ‚ÂÂ�'S₀ + Sâ‚ÂÂ�S₀' + Sâ‚ÂÂ�S₀·C
 **Solution:**
 ```
 Decoder outputs Yᵢ = 1 when input = i.
-F = Yâ‚ÂÂ� + Y₂ + Y₅ + Y₇ → needs 4-input OR gate.
+F = Y₁ + Y₂ + Y₅ + Y₇ → needs 4-input OR gate.
 
 Answer: (A) Decoder + 4-input OR
 ```
 
-**Problem 39 (GATE 2025):** 2-bit comparator A=Aâ‚ÂÂ�A₀, B=Bâ‚ÂÂ�B₀. Expression for A > B is:
+**Problem 39 (GATE 2025):** 2-bit comparator A=A₁A₀, B=B₁B₀. Expression for A > B is:
 ```
-(A) Aâ‚ÂÂ�Bâ‚ÂÂ�' + (Aâ‚ÂÂ�⊕Bâ‚ÂÂ�)'A₀B₀'    (B) Aâ‚ÂÂ�Bâ‚ÂÂ�' + A₀B₀'
-(C) (Aâ‚ÂÂ�⊕Bâ‚ÂÂ�)A₀B₀'              (D) Aâ‚ÂÂ�Bâ‚ÂÂ� + (Aâ‚ÂÂ�⊕Bâ‚ÂÂ�)'A₀B₀'
+(A) A₁B₁' + (A₁⊕B₁)'A₀B₀'    (B) A₁B₁' + A₀B₀'
+(C) (A₁⊕B₁)A₀B₀'              (D) A₁B₁ + (A₁⊕B₁)'A₀B₀'
 ```
 **Solution:**
 ```
 A > B when: (MSB of A > MSB of B) OR (MSBs equal AND LSB of A > LSB of B).
-Aâ‚ÂÂ�Bâ‚ÂÂ�' = Aâ‚ÂÂ�=1, Bâ‚ÂÂ�=0 → MSB of A > MSB of B.
-(Aâ‚ÂÂ�⊕Bâ‚ÂÂ�)' = XNOR = 1 when Aâ‚ÂÂ�=Bâ‚ÂÂ�.
+A₁B₁' = A₁=1, B₁=0 → MSB of A > MSB of B.
+(A₁⊕B₁)' = XNOR = 1 when A₁=B₁.
 A₀B₀' = LSB of A > LSB of B.
 
-Answer: (A) Aâ‚ÂÂ�Bâ‚ÂÂ�' + (Aâ‚ÂÂ�⊕Bâ‚ÂÂ�)'A₀B₀'
+Answer: (A) A₁B₁' + (A₁⊕B₁)'A₀B₀'
 ```
 
 **Problem 40 (GATE 2021):** 16-bit CLA using 4-bit blocks vs 16-bit ripple carry adder. The CLA is approximately:
@@ -1901,7 +1868,7 @@ Answer: (B) 8
 **Solution:**
 ```
 I₃=1 → highest priority active. Output = binary of 3 = 11.
-Note that Iâ‚ÂÂ�=1 too, but I₃ has higher priority.
+Note that I₁=1 too, but I₃ has higher priority.
 
 Answer: (D) 11
 ```
@@ -1936,27 +1903,27 @@ Total = 4 + 1 = 5 MUXes.
 Answer: (B) 5
 ```
 
-**Problem 45 (GATE 2021):** 1-bit ALU (M, Sâ‚ÂÂ�, S₀) performs ADD when:
+**Problem 45 (GATE 2021):** 1-bit ALU (M, S₁, S₀) performs ADD when:
 ```
-(A) M=0, Sâ‚ÂÂ�=0, S₀=0    (B) M=0, Sâ‚ÂÂ�=1, S₀=0
-(C) M=1, Sâ‚ÂÂ�=0, S₀=0    (D) M=1, Sâ‚ÂÂ�=1, S₀=1
+(A) M=0, S₁=0, S₀=0    (B) M=0, S₁=1, S₀=0
+(C) M=1, S₁=0, S₀=0    (D) M=1, S₁=1, S₀=1
 ```
 **Solution:**
 ```
 M=1 → arithmetic operations (M=0 → logic).
-A+B corresponds to Sâ‚ÂÂ�=0, S₀=0 in most ALU designs.
+A+B corresponds to S₁=0, S₀=0 in most ALU designs.
 
-Answer: (C) M=1, Sâ‚ÂÂ�=0, S₀=0
+Answer: (C) M=1, S₁=0, S₀=0
 ```
 
-**Problem 46 (GATE 2020):** 1:4 DEMUX with Sâ‚ÂÂ�S₀=10, input D. Active output:
+**Problem 46 (GATE 2020):** 1:4 DEMUX with S₁S₀=10, input D. Active output:
 ```
-(A) Y₀   (B) Yâ‚ÂÂ�   (C) Y₂   (D) Y₃
+(A) Y₀   (B) Y₁   (C) Y₂   (D) Y₃
 ```
 **Solution:**
 ```
-1:4 DEMUX: Sâ‚ÂÂ�S₀ selects which output receives D.
-Sâ‚ÂÂ�S₀ = 10₂ = 2 → Y₂ = D, all others = 0.
+1:4 DEMUX: S₁S₀ selects which output receives D.
+S₁S₀ = 10₂ = 2 → Y₂ = D, all others = 0.
 
 Answer: (C) Y₂
 ```
@@ -1967,9 +1934,9 @@ Answer: (C) Y₂
 ```
 **Solution:**
 ```
-First HA: Sâ‚ÂÂ� = A⊕B, Câ‚ÂÂ� = AB
-Second HA: S₂ = Sâ‚ÂÂ�⊕Cin = A⊕B⊕Cin (Sum), C₂ = Sâ‚ÂÂ�·Cin
-OR: Cout = Câ‚ÂÂ� + C₂ = AB + (A⊕B)·Cin = AB + ACin + BCin
+First HA: S₁ = A⊕B, C₁ = AB
+Second HA: SÃ¢â€šâ€š = SÃ¢â€šÂÃ¢Å â€¢Cin = AÃ¢Å â€¢BÃ¢Å â€¢Cin (Sum), CÃ¢â€šâ€š = SÃ¢â€šÂ·Cin
+OR: Cout = C₁ + C₂ = AB + (A⊕B)·Cin = AB + ACin + BCin
 This is the standard full adder implementation.
 
 Answer: (A) Full adder
@@ -1978,7 +1945,6 @@ Answer: (A) Full adder
 ---
 
 ### Category C: Sequential Circuits (15 Problems)
-
 
 **Problem 48 (GATE 2025):** D flip-flop (negative edge-triggered) with D = Q'. Output frequency relative to clock is:
 ```
@@ -1995,17 +1961,17 @@ Answer: (B) Half
 
 **Problem 49 (GATE 2024):** 4-bit synchronous counter using T FFs. T₂ (bit 2) is:
 ```
-(A) 1    (B) Q₀    (C) Q₀·Qâ‚ÂÂ�    (D) Q₀·Qâ‚ÂÂ�·Q₂
+(A) 1    (B) QÃ¢â€šâ‚¬    (C) QÃ¢â€šâ‚¬Ã‚Â·QÃ¢â€šÂ    (D) QÃ¢â€šâ‚¬Ã‚Â·QÃ¢â€šÂ·Q₂
 ```
 **Solution:**
 ```
 Synchronous counter toggle conditions:
 T₀ = 1 (always toggle)
-Tâ‚ÂÂ� = Q₀ (toggle every 2 counts)
-T₂ = Q₀·Qâ‚ÂÂ� (toggle every 4 counts)
-T₃ = Q₀·Qâ‚ÂÂ�·Q₂ (toggle every 8 counts)
+T₁ = Q₀ (toggle every 2 counts)
+T₂ = Q₀·Q₁ (toggle every 4 counts)
+TÃ¢â€šÆ’ = QÃ¢â€šâ‚¬Ã‚Â·QÃ¢â€šÂ·Q₂ (toggle every 8 counts)
 
-Answer: (C) Q₀·Qâ‚ÂÂ�
+Answer: (C) Q₀·Q₁
 ```
 
 **Problem 50 (GATE 2023):** Minimum states for "110" sequence detector (Moore):
@@ -2101,17 +2067,17 @@ Answer: (C) 00111
 
 **Problem 57 (GATE 2021):** 3-bit synchronous counter MSB FF (Q₂) JK inputs:
 ```
-(A) J₂=K₂=Qâ‚ÂÂ�·Q₀    (B) J₂=Qâ‚ÂÂ�·Q₀, K₂=0
-(C) J₂=K₂=Qâ‚ÂÂ�⊕Q₀    (D) J₂=1, K₂=Qâ‚ÂÂ�·Q₀
+(A) JÃ¢â€šâ€š=KÃ¢â€šâ€š=QÃ¢â€šÂÃ‚Â·QÃ¢â€šâ‚¬    (B) JÃ¢â€šâ€š=QÃ¢â€šÂ·Q₀, K₂=0
+(C) JÃ¢â€šâ€š=KÃ¢â€šâ€š=QÃ¢â€šÂÃ¢Å â€¢QÃ¢â€šâ‚¬    (D) JÃ¢â€šâ€š=1, KÃ¢â€šâ€š=QÃ¢â€šÂ·Q₀
 ```
 **Solution:**
 ```
-Q₂ toggles when Qâ‚ÂÂ�=Q₀=1 (count reaches 3 or 7).
-T₂ = Qâ‚ÂÂ�·Q₀. For JK, toggle mode requires J=K=1.
+Q₂ toggles when Q₁=Q₀=1 (count reaches 3 or 7).
+TÃ¢â€šâ€š = QÃ¢â€šÂ·Q₀. For JK, toggle mode requires J=K=1.
 When T₂=1: J₂=K₂=1. When T₂=0: J₂=K₂=0.
-So J₂=K₂=Qâ‚ÂÂ�·Q₀.
+So JÃ¢â€šâ€š=KÃ¢â€šâ€š=QÃ¢â€šÂ·Q₀.
 
-Answer: (A) J₂=K₂=Qâ‚ÂÂ�·Q₀
+Answer: (A) JÃ¢â€šâ€š=KÃ¢â€šâ€š=QÃ¢â€šÂ·Q₀
 ```
 
 **Problem 58 (GATE 2020):** 5-bit ripple counter, each TFF t_cq=8ns. Max frequency:
@@ -2121,7 +2087,7 @@ Answer: (A) J₂=K₂=Qâ‚ÂÂ�·Q₀
 **Solution:**
 ```
 Ripple: worst case delay = n × t_cq = 5 × 8ns = 40ns.
-f_max = 1/40ns = 25 × 10âÂÂ�¶ Hz = 25 MHz.
+f_max = 1/40ns = 25 Ãƒâ€” 10Ã¢Â¶ Hz = 25 MHz.
 
 Answer: (A) 25 MHz
 ```
@@ -2136,7 +2102,7 @@ LSB first: send bit 0 (1), bit 1 (0), bit 2 (1), bit 3 (1).
 After 4 clocks, register contains the 4 bits in order received.
 Actually: bit 0 enters Q₃ first, shifts right.
 Wait → in a standard right-shift SIPO, the first bit received appears at Q₀.
-CLK 1: Q₃Q₂Qâ‚ÂÂ�Q₀ = 0001  (input 1, LSB)
+CLK 1: Q₃Q₂Q₁Q₀ = 0001  (input 1, LSB)
 CLK 2: 0011  (input 1, bit 1)
 CLK 3: 0110  (input 0, bit 2)
 CLK 4: 1101  (input 1, MSB)
@@ -2145,7 +2111,7 @@ Parallel output after 4 clocks: 1101 (MSB at Q₃).
 Answer: (B) 1101
 ```
 
-**Problem 60 (GATE 2024):** FSM with S₀→Sâ‚ÂÂ�→S₂→S₃→S₀ unconditionally is:
+**Problem 60 (GATE 2024):** FSM with S₀→S₁→S₂→S₃→S₀ unconditionally is:
 ```
 (A) Ring counter   (B) Johnson counter   (C) Mod-4 counter   (D) Sequence detector
 ```
@@ -2178,7 +2144,7 @@ Answer: (B) J=D, K=D'
 **Solution:**
 ```
 T_min = t_cq + t_combo + t_su = 4 + 7 + 3 = 14 ns
-f_max = 1/(14 × 10âÂÂ�»âÂÂ�¹) = 71.43 MHz
+f_max = 1/(14 Ãƒâ€” 10Ã¢ÂÂ»Ã¢Â¹) = 71.43 MHz
 
 Answer: (A) 71.4 MHz
 ```
@@ -2197,7 +2163,6 @@ Answer: (C) 0, Toggle
 ---
 
 ### Category D: Karnaugh Maps (8 Problems)
-
 
 **Problem 64 (GATE 2025):** Minimal SOP for F = Σm(0,2,5,7,8,10,13,15):
 ```
@@ -2443,7 +2408,6 @@ Answer: (A) C' + AB
 
 ### Category E: Memory & Programmable Logic (5 Problems)
 
-
 **Problem 71 (GATE 2025):** A memory chip has 12 address lines and 8 data lines. Two such chips are used with one chip providing the upper byte. Total capacity:
 ```
 (A) 8 KB   (B) 4 KB   (C) 16 KB   (D) 32 KB
@@ -2489,7 +2453,7 @@ Answer: (B) 16
 ```
 **Solution:**
 ```
-5-input LUT stores truth table with 2âÂÂ�µ = 32 entries, each 1 bit.
+5-input LUT stores truth table with 2Ã¢Âµ = 32 entries, each 1 bit.
 So 32 memory cells per LUT.
 
 Answer: (D) 32
@@ -2509,7 +2473,6 @@ Answer: (B) DRAM
 ---
 
 ### Answer Key → Previous Year Questions (Problems 26-75)
-
 
 | Problem | Year | Answer | Topic |
 |---------|------|--------|-------|
@@ -2572,7 +2535,6 @@ This section extends the PYQ bank with 50 problems from **GATE 2010-2018**, orga
 
 ### Category A: Number Systems & Boolean Algebra (10 Problems)
 
-
 **Q51 (GATE 2018):** The Boolean expression for the output of a 2-input NAND gate is:
 ```
 (A) (AB)'    (B) A' + B'    (C) Both A and B    (D) A'B'
@@ -2587,14 +2549,14 @@ Answer: (C) Both A and B
 
 **Q52 (GATE 2017):** The hexadecimal representation of (657)₈ is:
 ```
-(A) 1AFâ‚ÂÂ�₆    (B) 1BFâ‚ÂÂ�₆    (C) 1CFâ‚ÂÂ�₆    (D) 1DFâ‚ÂÂ�₆
+(A) 1AF₁₆    (B) 1BF₁₆    (C) 1CF₁₆    (D) 1DF₁₆
 ```
 **Solution:**
 ```
-657₈ = 6×8² + 5×8¹ + 7×8âÂÂ�° = 384 + 40 + 7 = 431â‚ÂÂ�₀
-431 ÷ 16 = 26 R 15 (F); 26 ÷ 16 = 1 R 10 (A); 1 ÷ 16 = 0 R 1 → 1AFâ‚ÂÂ�₆
+657₈ = 6×8² + 5×8¹ + 7×8⁰ = 384 + 40 + 7 = 431₁₀
+431 ÷ 16 = 26 R 15 (F); 26 ÷ 16 = 1 R 10 (A); 1 ÷ 16 = 0 R 1 → 1AF₁₆
 
-Answer: (A) 1AFâ‚ÂÂ�₆
+Answer: (A) 1AF₁₆
 ```
 
 **Q53 (GATE 2016):** The minimized SOP for F(A,B,C) = Σm(0,2,3,7) is:
@@ -2648,8 +2610,8 @@ Answer: (B) 3
 ```
 **Solution:**
 ```
-Truth table has 2âÂÂ�´ = 16 rows. Each row independently 0 or 1.
-Total functions = 2¹âÂÂ�¶ = 65536.
+Truth table has 2Ã¢Â´ = 16 rows. Each row independently 0 or 1.
+Total functions = 2Ã‚Â¹Ã¢Â¶ = 65536.
 
 Answer: (D) 65536
 ```
@@ -2692,7 +2654,7 @@ This is SOP form: the dual of POS (A+B)(A+C)(B+C) is SOP AB + AC + BC.
 Answer: (A) AB + AC + BC
 ```
 
-**Q60 (GATE 2010):** The 8-bit 2's complement representation of -55â‚ÂÂ�₀ is:
+**Q60 (GATE 2010):** The 8-bit 2's complement representation of -55₁₀ is:
 ```
 (A) 11001001    (B) 11001000    (C) 10111001    (D) 00110111
 ```
@@ -2707,7 +2669,6 @@ Answer: (A) 11001001
 
 ### Category B: Combinational Circuits (12 Problems)
 
-
 **Q61 (GATE 2018):** Minimum AND-OR gates for a full adder sum output is:
 ```
 (A) 2 AND, 1 OR    (B) 2 AND, 2 OR    (C) 3 AND, 1 OR    (D) 4 AND, 2 OR
@@ -2721,18 +2682,18 @@ Each AND has 3 inputs. 4 AND + 1 OR in two-level AND-OR form.
 Answer: (C) 4 AND, 1 OR
 ```
 
-**Q62 (GATE 2017):** A 4:1 MUX with select lines Sâ‚ÂÂ�,S₀ has inputs I₀=V, Iâ‚ÂÂ�=V', I₂=0, I₃=1. The output function is:
+**Q62 (GATE 2017):** A 4:1 MUX with select lines S₁,S₀ has inputs I₀=V, I₁=V', I₂=0, I₃=1. The output function is:
 ```
-(A) Sâ‚ÂÂ�'S₀'V + Sâ‚ÂÂ�'S₀V'    (B) Sâ‚ÂÂ�S₀'V + Sâ‚ÂÂ�'S₀V' + Sâ‚ÂÂ�S₀
-(C) Sâ‚ÂÂ�'S₀'V + Sâ‚ÂÂ�'S₀V' + Sâ‚ÂÂ�S₀    (D) Sâ‚ÂÂ�S₀
+(A) S₁'S₀'V + S₁'S₀V'    (B) S₁S₀'V + S₁'S₀V' + S₁S₀
+(C) S₁'S₀'V + S₁'S₀V' + S₁S₀    (D) S₁S₀
 ```
 **Solution:**
 ```
-Y = Sâ‚ÂÂ�'S₀'·V + Sâ‚ÂÂ�'S₀·V' + Sâ‚ÂÂ�S₀'·0 + Sâ‚ÂÂ�S₀·1
-= Sâ‚ÂÂ�'S₀'V + Sâ‚ÂÂ�'S₀V' + Sâ‚ÂÂ�S₀
-= Sâ‚ÂÂ�'S₀'V + Sâ‚ÂÂ�'S₀V' + Sâ‚ÂÂ�S₀
+Y = S₁'S₀'·V + S₁'S₀·V' + S₁S₀'·0 + S₁S₀·1
+= S₁'S₀'V + S₁'S₀V' + S₁S₀
+= S₁'S₀'V + S₁'S₀V' + S₁S₀
 
-Answer: (C) Sâ‚ÂÂ�'S₀'V + Sâ‚ÂÂ�'S₀V' + Sâ‚ÂÂ�S₀
+Answer: (C) S₁'S₀'V + S₁'S₀V' + S₁S₀
 ```
 
 **Q63 (GATE 2016):** A 3:8 decoder with active-high outputs implements F = Σm(2,4,6,7). The minimum gate needed is:
@@ -2760,31 +2721,31 @@ Final carry = carry1 + carry2 = AB + (A⊕B)Cᵢ → needs OR gate.
 Answer: (B) 2
 ```
 
-**Q65 (GATE 2014):** An 8:1 MUX with S₂,Sâ‚ÂÂ�,S₀ and inputs I₀...I₇. To implement F = Σm(1,3,5,7) with D as MSB select, the inputs are:
+**Q65 (GATE 2014):** An 8:1 MUX with S₂,S₁,S₀ and inputs I₀...I₇. To implement F = Σm(1,3,5,7) with D as MSB select, the inputs are:
 ```
-(A) I₀=I₂=I₄=I₆=0, Iâ‚ÂÂ�=I₃=I₅=I₇=1    (B) I₀=I₂=I₄=I₆=1, Iâ‚ÂÂ�=I₃=I₅=I₇=0
-(C) I₀=Iâ‚ÂÂ�=I₂=I₃=0, I₄=I₅=I₆=I₇=1    (D) I₀=Iâ‚ÂÂ�=I₂=I₃=1, I₄=I₅=I₆=I₇=0
+(A) I₀=I₂=I₄=I₆=0, I₁=I₃=I₅=I₇=1    (B) I₀=I₂=I₄=I₆=1, I₁=I₃=I₅=I₇=0
+(C) I₀=I₁=I₂=I₃=0, I₄=I₅=I₆=I₇=1    (D) I₀=I₁=I₂=I₃=1, I₄=I₅=I₆=I₇=0
 ```
 **Solution:**
 ```
-F = Σm(1,3,5,7) means F=1 when LSB=1 (odd minterms only, assuming A₂Aâ‚ÂÂ�A₀).
+F = Σm(1,3,5,7) means F=1 when LSB=1 (odd minterms only, assuming A₂A₁A₀).
 With S₀ connected to LSB: any input odd index → 1, even → 0.
-Odd inputs Iâ‚ÂÂ�,I₃,I₅,I₇ = 1, even inputs I₀,I₂,I₄,I₆ = 0.
+Odd inputs I₁,I₃,I₅,I₇ = 1, even inputs I₀,I₂,I₄,I₆ = 0.
 
-Answer: (A) I₀=I₂=I₄=I₆=0, Iâ‚ÂÂ�=I₃=I₅=I₇=1
+Answer: (A) I₀=I₂=I₄=I₆=0, I₁=I₃=I₅=I₇=1
 ```
 
-**Q66 (GATE 2013):** A 2-bit comparator compares A=Aâ‚ÂÂ�A₀ and B=Bâ‚ÂÂ�B₀. The A = B output:
+**Q66 (GATE 2013):** A 2-bit comparator compares A=A₁A₀ and B=B₁B₀. The A = B output:
 ```
-(A) (Aâ‚ÂÂ�⊕Bâ‚ÂÂ�)' + (A₀⊕B₀)'    (B) (Aâ‚ÂÂ�⊕Bâ‚ÂÂ�)'·(A₀⊕B₀)'
-(C) (Aâ‚ÂÂ�⊕Bâ‚ÂÂ�)·(A₀⊕B₀)        (D) (Aâ‚ÂÂ�⊕Bâ‚ÂÂ�) + (A₀⊕B₀)'
+(A) (AÃ¢â€šÂÃ¢Å â€¢BÃ¢â€šÂ)' + (AÃ¢â€šâ‚¬Ã¢Å â€¢BÃ¢â€šâ‚¬)'    (B) (AÃ¢â€šÂÃ¢Å â€¢BÃ¢â€šÂ)'·(A₀⊕B₀)'
+(C) (A₁⊕B₁)·(A₀⊕B₀)        (D) (A₁⊕B₁) + (A₀⊕B₀)'
 ```
 **Solution:**
 ```
-A = B iff Aâ‚ÂÂ�=Bâ‚ÂÂ� AND A₀=B₀. Equality per bit: (Aᵢ⊕Bᵢ)' = 1 when Aᵢ=Bᵢ.
-A = B = (Aâ‚ÂÂ�⊕Bâ‚ÂÂ�)' · (A₀⊕B₀)'.
+A = B iff A₁=B₁ AND A₀=B₀. Equality per bit: (Aᵢ⊕Bᵢ)' = 1 when Aᵢ=Bᵢ.
+A = B = (AÃ¢â€šÂÃ¢Å â€¢BÃ¢â€šÂ)' · (A₀⊕B₀)'.
 
-Answer: (B) (Aâ‚ÂÂ�⊕Bâ‚ÂÂ�)'·(A₀⊕B₀)'
+Answer: (B) (AÃ¢â€šÂÃ¢Å â€¢BÃ¢â€šÂ)'·(A₀⊕B₀)'
 ```
 
 **Q67 (GATE 2012):** The propagation delay of a 4-bit ripple carry adder. Each FA has sum delay 3 units and carry delay 2 units. Total worst-case delay:
@@ -2801,13 +2762,13 @@ Worst case: carry propagates through all 4 stages.
 Total = 2 + 2 + 2 + 3 = 9... Wait, standard: T_delay = (n-1)×T_carry + T_sum.
 Here n=4, T_carry=2, T_sum=3: (4-1)×2 + 3 = 6+3 = 9.
 But 9 is not an option. Let me reconsider: a full adder takes carry-in and produces carry-out in T_carry. 
-The first FA (LSB) needs its inputs (A₀,B₀,C₀) and produces Câ‚ÂÂ� in 2 units.
+The first FA (LSB) needs its inputs (A₀,B₀,C₀) and produces C₁ in 2 units.
 Each subsequent FA produces carry-in 2 units after previous carry is stable.
 The MSB FA gets C₃ after the first 3 stages have propagated: 3×2=6 units.
 Then sum output of MSB takes 3 units: total 9.
 Since 9 not an option, perhaps T_sum includes carry-to-sum delay after final carry. 
 Let's say first FA sum is available after 3 units for LSB.
-For the MSB sum, we need Cᵢ₋â‚ÂÂ� to be valid. That happens after (n-1)×T_carry.
+For the MSB sum, we need CÃ¡ÂµÂ¢Ã¢â€šâ€¹Ã¢â€šÂ to be valid. That happens after (n-1)×T_carry.
 Then MSB sum delay = (n-1)×T_carry + T_sum = 3×2+3 = 9.
 Closest option: (C) 11 if we count that each stage sum is T_sum=3 but carry to next is T_carry=2.
 Actually some textbooks count: first sum = 3, then each stage adds 2 for carry, last sum adds 3 = 3+2×3 = 9.
@@ -2848,30 +2809,30 @@ Answer: (A) A ⊕ B ⊕ Cᵢ
 
 **Q70 (GATE 2018):** A 4-bit priority encoder (D₃ highest priority). When D₂=1, D₃=0, the outputs are:
 ```
-(A) Aâ‚ÂÂ�=1, A₀=0, V=1    (B) Aâ‚ÂÂ�=0, A₀=1, V=1
-(C) Aâ‚ÂÂ�=1, A₀=1, V=1    (D) Aâ‚ÂÂ�=0, A₀=1, V=0
+(A) A₁=1, A₀=0, V=1    (B) A₁=0, A₀=1, V=1
+(C) A₁=1, A₀=1, V=1    (D) A₁=0, A₀=1, V=0
 ```
 **Solution:**
 ```
-4-bit priority encoder: D₃ highest, D₂ next, Dâ‚ÂÂ�, D₀ lowest.
-D₃=0, D₂=1 → D₂ has highest active input. D₂ encodes to 10₂ (Aâ‚ÂÂ�=1, A₀=0).
+4-bit priority encoder: D₃ highest, D₂ next, D₁, D₀ lowest.
+D₃=0, D₂=1 → D₂ has highest active input. D₂ encodes to 10₂ (A₁=1, A₀=0).
 V=1 (valid output, at least one input active).
 
-Answer: (A) Aâ‚ÂÂ�=1, A₀=0, V=1
+Answer: (A) A₁=1, A₀=0, V=1
 ```
 
 **Q71 (GATE 2017):** A 4-bit carry look-ahead adder uses generate Gᵢ = AᵢBᵢ and propagate Pᵢ = Aᵢ⊕Bᵢ. The carry C₂ is:
 ```
-(A) Gâ‚ÂÂ� + Pâ‚ÂÂ�G₀ + Pâ‚ÂÂ�P₀C₀    (B) Gâ‚ÂÂ� + Pâ‚ÂÂ�G₀
-(C) Gâ‚ÂÂ�G₀ + Pâ‚ÂÂ�P₀C₀         (D) Gâ‚ÂÂ� + Pâ‚ÂÂ�(P₀ + C₀)
+(A) G₁ + P₁G₀ + P₁P₀C₀    (B) G₁ + P₁G₀
+(C) G₁G₀ + P₁P₀C₀         (D) G₁ + P₁(P₀ + C₀)
 ```
 **Solution:**
 ```
-CLA carry recurrence: Cᵢ₊â‚ÂÂ� = Gᵢ + PᵢCᵢ.
-Câ‚ÂÂ� = G₀ + P₀C₀
-C₂ = Gâ‚ÂÂ� + Pâ‚ÂÂ�Câ‚ÂÂ� = Gâ‚ÂÂ� + Pâ‚ÂÂ�(G₀ + P₀C₀) = Gâ‚ÂÂ� + Pâ‚ÂÂ�G₀ + Pâ‚ÂÂ�P₀C₀
+CLA carry recurrence: Cᵢ₊₁ = Gᵢ + PᵢCᵢ.
+C₁ = G₀ + P₀C₀
+C₂ = G₁ + P₁C₁ = G₁ + P₁(G₀ + P₀C₀) = G₁ + P₁G₀ + P₁P₀C₀
 
-Answer: (A) Gâ‚ÂÂ� + Pâ‚ÂÂ�G₀ + Pâ‚ÂÂ�P₀C₀
+Answer: (A) G₁ + P₁G₀ + P₁P₀C₀
 ```
 
 **Q72 (GATE 2016):** How many 8:1 MUX ICs are needed to build a 64:1 MUX?
@@ -2890,7 +2851,6 @@ Answer: (C) 9
 ---
 
 ### Category C: Sequential Circuits (15 Problems)
-
 
 **Q73 (GATE 2018):** A JK flip-flop in toggle mode has J=K=1. Clock frequency 10 MHz. Output frequency:
 ```
@@ -2929,39 +2889,39 @@ Then S=0,R=0: hold state → Q stays 1 (latches previous value).
 Answer: (B) 1
 ```
 
-**Q76 (GATE 2015):** A 3-bit synchronous counter using D flip-flops. The next state logic: D₂=Q₂⊕Qâ‚ÂÂ�, Dâ‚ÂÂ�=Qâ‚ÂÂ�⊕Q₀, D₀=Q₀'. The count sequence (starting 000) is:
+**Q76 (GATE 2015):** A 3-bit synchronous counter using D flip-flops. The next state logic: D₂=Q₂⊕Q₁, D₁=Q₁⊕Q₀, D₀=Q₀'. The count sequence (starting 000) is:
 ```
 (A) 0→1→2→3→4→5→6→7→0    (B) 0→1→3→2→6→7→5→4→0
 (C) 0→7→1→6→2→5→3→4→0    (D) 0→3→5→7→1→2→4→6→0
 ```
 **Solution:**
 ```
-Start 000: D₂=0⊕0=0, Dâ‚ÂÂ�=0⊕0=0, D₀=0'=1 → next=001
-001: D₂=0⊕0=0, Dâ‚ÂÂ�=0⊕1=1, D₀=1'=0 → next=010
-010: D₂=0⊕1=1, Dâ‚ÂÂ�=1⊕0=1, D₀=0'=1 → next=101
+Start 000: D₂=0⊕0=0, D₁=0⊕0=0, D₀=0'=1 → next=001
+001: D₂=0⊕0=0, D₁=0⊕1=1, D₀=1'=0 → next=010
+010: D₂=0⊕1=1, D₁=1⊕0=1, D₀=0'=1 → next=101
 011... wait let me trace more carefully.
-Q₂Qâ‚ÂÂ�Q₀ = 000: D₂=0⊕0=0, Dâ‚ÂÂ�=0⊕0=0, D₀=1 → 001
-Q₂Qâ‚ÂÂ�Q₀ = 001: D₂=0⊕0=0, Dâ‚ÂÂ�=0⊕1=1, D₀=0 → 010
-Q₂Qâ‚ÂÂ�Q₀ = 010: D₂=0⊕1=1, Dâ‚ÂÂ�=1⊕0=1, D₀=1 → 110... no wait, 1 1 0... D₂=1, Dâ‚ÂÂ�=1, D₀=1 → 111? No D₀=Q₀'=0'=1. So D₂=1, Dâ‚ÂÂ�=1, D₀=1 → 111.
-Q₂Qâ‚ÂÂ�Q₀=111: D₂=1⊕1=0, Dâ‚ÂÂ�=1⊕1=0, D₀=1'=0 → 000
-Q₂Qâ‚ÂÂ�Q₀=110: D₂=1⊕1=0, Dâ‚ÂÂ�=1⊕0=1, D₀=0'=1 → 011... wait 0 1 1... yes 011.
+Q₂Q₁Q₀ = 000: D₂=0⊕0=0, D₁=0⊕0=0, D₀=1 → 001
+Q₂Q₁Q₀ = 001: D₂=0⊕0=0, D₁=0⊕1=1, D₀=0 → 010
+Q₂Q₁Q₀ = 010: D₂=0⊕1=1, D₁=1⊕0=1, D₀=1 → 110... no wait, 1 1 0... D₂=1, D₁=1, D₀=1 → 111? No D₀=Q₀'=0'=1. So D₂=1, D₁=1, D₀=1 → 111.
+Q₂Q₁Q₀=111: D₂=1⊕1=0, D₁=1⊕1=0, D₀=1'=0 → 000
+Q₂Q₁Q₀=110: D₂=1⊕1=0, D₁=1⊕0=1, D₀=0'=1 → 011... wait 0 1 1... yes 011.
 Hmm this is getting messy with tracing. Let me be systematic:
-State Q₂Qâ‚ÂÂ�Q₀: D₂=Q₂⊕Qâ‚ÂÂ�, Dâ‚ÂÂ�=Qâ‚ÂÂ�⊕Q₀, D₀=Q₀'
-000 → D₂=0,Dâ‚ÂÂ�=0,D₀=1 → 001
-001 → D₂=0,Dâ‚ÂÂ�=1,D₀=0 → 010
-010 → D₂=1,Dâ‚ÂÂ�=1,D₀=1 → 111
-111 → D₂=0,Dâ‚ÂÂ�=0,D₀=0 → 000
+State Q₂Q₁Q₀: D₂=Q₂⊕Q₁, D₁=Q₁⊕Q₀, D₀=Q₀'
+000 → D₂=0,D₁=0,D₀=1 → 001
+001 → D₂=0,D₁=1,D₀=0 → 010
+010 → D₂=1,D₁=1,D₀=1 → 111
+111 → D₂=0,D₁=0,D₀=0 → 000
 So 000→001→010→111→000. This doesn't match any option.
 
-Let me re-examine: D₂=Q₂⊕Qâ‚ÂÂ�, Dâ‚ÂÂ�=Qâ‚ÂÂ�⊕Q₀, D₀=Q₀'
-001 → D₂=0⊕0=0, Dâ‚ÂÂ�=0⊕1=1, D₀=0 → 010
-010 → D₂=0⊕1=1, Dâ‚ÂÂ�=1⊕0=1, D₀=1 → 111
-111 → D₂=1⊕1=0, Dâ‚ÂÂ�=1⊕1=0, D₀=0 → 000
+Let me re-examine: D₂=Q₂⊕Q₁, D₁=Q₁⊕Q₀, D₀=Q₀'
+001 → D₂=0⊕0=0, D₁=0⊕1=1, D₀=0 → 010
+010 → D₂=0⊕1=1, D₁=1⊕0=1, D₀=1 → 111
+111 → D₂=1⊕1=0, D₁=1⊕1=0, D₀=0 → 000
 000 → 001 → 010 → 111 → 000 (4-state cycle). Not matching options... Let me try other states:
-011 → D₂=0⊕1=1, Dâ‚ÂÂ�=1⊕1=0, D₀=0 → 101... no wait D₀=Q₀'=1'=0. 1 0 0? No D₂=1, Dâ‚ÂÂ�=0, D₀=0 → 100.
-100 → D₂=1⊕0=1, Dâ‚ÂÂ�=0⊕0=0, D₀=1 → 101
-101 → D₂=1⊕0=1... wait Q₂=1,Qâ‚ÂÂ�=0: D₂=1⊕0=1. Dâ‚ÂÂ�=0⊕1=1. D₀=1'=0. → 110
-110 → D₂=1⊕1=0, Dâ‚ÂÂ�=1⊕0=1, D₀=0'=1 → 011
+011 → D₂=0⊕1=1, D₁=1⊕1=0, D₀=0 → 101... no wait D₀=Q₀'=1'=0. 1 0 0? No D₂=1, D₁=0, D₀=0 → 100.
+100 → D₂=1⊕0=1, D₁=0⊕0=0, D₀=1 → 101
+101 → D₂=1⊕0=1... wait Q₂=1,Q₁=0: D₂=1⊕0=1. D₁=0⊕1=1. D₀=1'=0. → 110
+110 → D₂=1⊕1=0, D₁=1⊕0=1, D₀=0'=1 → 011
 So 011→100→101→110→011 (another 4-state cycle).
 So this counter has two 4-state cycles, not 8 states. That's a valid counter behavior.
 
@@ -3032,7 +2992,7 @@ Answer: (A) Q=1, Q'=1 (invalid)
 **
 Solution:**
 ```
-n flip-flops encode 2âÂÂ�¿ states. 2³ = 8 states exactly. Minimum = 3.
+n flip-flops encode 2Ã¢Â¿ states. 2Â³ = 8 states exactly. Minimum = 3.
 
 Answer: (B) 3
 ```
@@ -3044,7 +3004,7 @@ Answer: (B) 3
 **Solution:**
 ```
 Ripple counter: each stage divides by 2.
-Clock → Q₀ ÷2 → Qâ‚ÂÂ� ÷2 → Q₂ ÷2.
+Clock â†’ QÃ¢â€šâ‚¬ ÃƒÂ·2 â†’ QÃ¢â€šÂ ÷2 → Q₂ ÷2.
 Frequency at Q₂ = 4 kHz / 8 = 500 Hz.
 
 Answer: (A) 500 Hz
@@ -3056,8 +3016,8 @@ Answer: (A) 500 Hz
 ```
 **Solution:**
 ```
-Mod-12 counter: counts 0 to 11 (12 states). Need n FFs where 2âÂÂ�¿ ≥ 12.
-n=4 → 2âÂÂ�´=16 ≥ 12. n=3 → 2³=8 &lt; 12. Minimum = 4.
+Mod-12 counter: counts 0 to 11 (12 states). Need n FFs where 2Ã¢Â¿ â‰¥ 12.
+n=4 â†’ 2Ã¢Â´=16 â‰¥ 12. n=3 → 2³=8 &lt; 12. Minimum = 4.
 
 Answer: (B) 4
 ```
@@ -3090,15 +3050,15 @@ Master-slave JK eliminates race-around. Edge-triggered avoids it entirely.
 Answer: (B) JK flip-flop with level-triggered clock
 ```
 
-**Q86 (GATE 2011):** Two D flip-flops connected: Dâ‚ÂÂ�=Qâ‚ÂÂ�⊕Q₂, D₂=Qâ‚ÂÂ�'+Q₂'. Initial state 00. After 2 clocks:
+**Q86 (GATE 2011):** Two D flip-flops connected: D₁=Q₁⊕Q₂, D₂=Q₁'+Q₂'. Initial state 00. After 2 clocks:
 ```
 (A) 11    (B) 00    (C) 01    (D) 10
 ```
 **Solution:**
 ```
-State 00: Dâ‚ÂÂ�=0⊕0=0, D₂=0'+0'=1+1=1 → next=01
-State 01: Dâ‚ÂÂ�=0⊕1=1, D₂=0'+1'=1+0=1 → next=11
-After 2 clocks: Qâ‚ÂÂ�Q₂=11.
+State 00: D₁=0⊕0=0, D₂=0'+0'=1+1=1 → next=01
+State 01: D₁=0⊕1=1, D₂=0'+1'=1+0=1 → next=11
+After 2 clocks: Q₁Q₂=11.
 
 Answer: (A) 11
 ```
@@ -3120,7 +3080,6 @@ Answer: (A) 33.33 MHz
 ---
 
 ### Category D: Karnaugh Maps (8 Problems)
-
 
 **Q88 (GATE 2018):** The minimized SOP for F(A,B,C,D) = Σm(0,1,3,4,5,7,12,13,15) is:
 ```
@@ -3308,14 +3267,13 @@ Answer: (A) A'
 
 ### Category E: Memory & Programmable Logic (5 Problems)
 
-
 **Q96 (GATE 2018):** A RAM chip with 15 address lines and 4 data lines has capacity:
 ```
 (A) 32 KB    (B) 64 KB    (C) 128 KB    (D) 16 KB
 ```
 **Solution:**
 ```
-2¹âÂÂ�µ = 32768 words. Each word = 4 bits. Capacity = 32768 × 4 bits.
+2Ã‚Â¹Ã¢Âµ = 32768 words. Each word = 4 bits. Capacity = 32768 Ã— 4 bits.
 = 131072 bits = 16384 bytes = 16 KB.
 
 Answer: (D) 16 KB
@@ -3376,7 +3334,6 @@ Answer: (B) DRAM
 
 ### 15 Common Traps in GATE Digital Logic
 
-
 **Trap 1: Race Condition in JK Flip-Flop**
 - **Setup:** Level-triggered JK with J=K=1 and clock=1.
 - **Error:** Assuming output toggles once per clock cycle.
@@ -3386,7 +3343,7 @@ Answer: (B) DRAM
 **Trap 2: K-map Grouping Must Be Power of 2**
 - **Error:** Grouping 3, 5, or 6 adjacent cells.
 - **Reality:** Groups must be 1, 2, 4, 8, or 16 cells. A group of 3 is illegal → split into overlapping pairs.
-- **GATE fix:** Always verify group size = 2âÂÂ�¿. Overlapping groups are allowed (redundancy OK).
+- **GATE fix:** Always verify group size = 2Ã¢Â¿. Overlapping groups are allowed (redundancy OK).
 
 **Trap 3: Don't-Care Handling → Using or Not Using**
 - **Error:** Assuming don't-cares must be covered.
@@ -3395,18 +3352,18 @@ Answer: (B) DRAM
 
 **Trap 4: MUX Implementation → Select Lines Order**
 - **Error:** Connecting variables to select lines in wrong order.
-- **Reality:** MUX select lines map to specific positions in the minterm index. Swapping Sâ‚ÂÂ�,S₀ changes the function.
+- **Reality:** MUX select lines map to specific positions in the minterm index. Swapping S₁,S₀ changes the function.
 - **GATE fix:** Draw the MUX with labeled select lines and write the minterm index explicitly.
 
 **Trap 5: Binary to Gray Code → MSB Handling**
 - **Error:** Applying XOR rule to MSB.
-- **Reality:** MSB of Gray = MSB of binary unchanged. XOR is only for lower bits: Gᵢ = Bᵢ ⊕ Bᵢ₊â‚ÂÂ�.
+- **Reality:** MSB of Gray = MSB of binary unchanged. XOR is only for lower bits: Gᵢ = Bᵢ ⊕ Bᵢ₊₁.
 - **GATE fix:** MSB stays same. No XOR on the highest bit.
 
 **Trap 6: 2's Complement Overflow Detection**
 - **Error:** Using carry-out alone to detect overflow.
 - **Reality:** Overflow = Carry_into_sign_bit ⊕ Carry_out_of_sign_bit. Both positive summing to negative (or vice versa) = overflow.
-- **GATE fix:** Always check sign of both operands and result. V = Cₙ ⊕ Cₙ₋â‚ÂÂ�.
+- **GATE fix:** Always check sign of both operands and result. V = Cₙ ⊕ Cₙ₋₁.
 
 **Trap 7: Ring vs Johnson Counter Modulus**
 - **Error:** Assuming both have mod-n.
@@ -3415,8 +3372,8 @@ Answer: (B) DRAM
 
 **Trap 8: Ripple Counter Frequency Division**
 - **Error:** Each stage divides clock by 2^n.
-- **Reality:** n-bit ripple counter = divide by 2âÂÂ�¿. Q₀ = f/2, Qâ‚ÂÂ� = f/4, Q₂ = f/8.
-- **GATE fix:** Output at MSB = clock_freq / 2âÂÂ�¿.
+- **Reality:** n-bit ripple counter = divide by 2ⁿ. Q₀ = f/2, Q₁ = f/4, Q₂ = f/8.
+- **GATE fix:** Output at MSB = clock_freq / 2Ã¢Â¿.
 
 **Trap 9: POS vs SOP Minimization**
 - **Error:** Minimizing POS the same way as SOP.
@@ -3456,7 +3413,6 @@ Answer: (B) DRAM
 ---
 
 ### Boolean Simplification Shortcuts (Quine-McCluskey Quick Reference)
-
 
 **Consensus Theorem:**
 ```
@@ -3509,7 +3465,6 @@ Tabular format for PI generation:
 
 ### K-Map Grouping Patterns for 3/4/5 Variables
 
-
 **3-Variable K-Map (A, B, C):**
 ```
        BC
@@ -3558,8 +3513,7 @@ BC   00 01 11 10               BC   00 01 11 10
 
 ### Flip-Flop Excitation Table (Quick Reference)
 
-
-| Present Q | Next QâÂÂ�º | S | R | J | K | D | T |
+| Present Q | Next QÃ¢Âº | S | R | J | K | D | T |
 |-----------|---------|---|---|---|---|---|---|
 | 0 | 0 | 0 | X | 0 | X | 0 | 0 |
 | 0 | 1 | 1 | 0 | 1 | X | 1 | 1 |
@@ -3568,10 +3522,10 @@ BC   00 01 11 10               BC   00 01 11 10
 
 **Characteristic Equations:**
 ```
-SR latch:       QâÂÂ�º = S + R'Q    (SR = 0 constraint)
-JK flip-flop:   QâÂÂ�º = JQ' + K'Q
-D flip-flop:    QâÂÂ�º = D
-T flip-flop:    QâÂÂ�º = T ⊕ Q
+SR latch:       QÃ¢Âº = S + R'Q    (SR = 0 constraint)
+JK flip-flop:   QÃ¢Âº = JQ' + K'Q
+D flip-flop:    QÃ¢Âº = D
+T flip-flop:    QÃ¢Âº = T âŠ• Q
 ```
 
 **Flip-Flop Conversion Guide:**
@@ -3586,11 +3540,10 @@ D → T:    D = T ⊕ Q
 
 ### Counter Design Procedure (Step-by-Step)
 
-
 **Step 1: Determine Flip-Flop Count**
 ```
-n FFs → mod up to 2âÂÂ�¿. For mod-M: 2âÂÂ�¿âÂÂ�»¹ < M ≤ 2âÂÂ�¿.
-E.g., mod-10 (BCD): n=4 because 2³=8 < 10 ≤ 16=2âÂÂ�´.
+n FFs â†’ mod up to 2Ã¢ÂÂ¿. For mod-M: 2Ã¢ÂÂ¿Ã¢ÂÂ»Ã‚Â¹ < M Ã¢â€°Â¤ 2Ã¢Â¿.
+E.g., mod-10 (BCD): n=4 because 2Ã‚Â³=8 < 10 Ã¢â€°Â¤ 16=2Ã¢Â´.
 ```
 
 **Step 2: Select FF Type**
@@ -3609,12 +3562,12 @@ E.g., BCD counter: 0000→0001→0010→...→1001→0000.
 **Step 4: Derive Excitation Inputs**
 ```
 For each FF, use excitation table to find required inputs.
-E.g., Q=0→QâÂÂ�º=1, JK FF: J=1, K=X.
+E.g., Q=0â†’QÃ¢Âº=1, JK FF: J=1, K=X.
 ```
 
 **Step 5: Minimize Logic**
 ```
-Use K-maps on excitation inputs (J₀,K₀,Jâ‚ÂÂ�,Kâ‚ÂÂ�,...).
+Use K-maps on excitation inputs (J₀,K₀,J₁,K₁,...).
 Results give minimal combinational logic for each FF input.
 ```
 
@@ -3628,26 +3581,25 @@ For ripple: clock source connects to FF0 only.
 **Synchronous Binary Counter Pattern (JK):**
 ```
 J₀ = K₀ = 1
-Jâ‚ÂÂ� = Kâ‚ÂÂ� = Q₀
-J₂ = K₂ = Q₀Qâ‚ÂÂ�
-J₃ = K₃ = Q₀Qâ‚ÂÂ�Q₂
-General: Jₙ = Kₙ = Q₀Qâ‚ÂÂ�Q₂...Qₙ₋â‚ÂÂ�
+J₁ = K₁ = Q₀
+J₂ = K₂ = Q₀Q₁
+J₃ = K₃ = Q₀Q₁Q₂
+General: Jₙ = Kₙ = Q₀Q₁Q₂...Qₙ₋₁
 ```
 
 ---
 
 ### State Machine Design Pattern Templates
 
-
 **Mealy Machine Template:**
 ```
 Input:  X (1-bit serial)
 Output: Z (1-bit)
-States: S₀, Sâ‚ÂÂ�, S₂, ... (encode sequence prefixes)
+States: S₀, S₁, S₂, ... (encode sequence prefixes)
 
 State | Next State (X=0) | Next State (X=1) | Output Z
-S₀    | S₀               | Sâ‚ÂÂ�               | 0
-Sâ‚ÂÂ�    | S₂               | S₀               | 0
+S₀    | S₀               | S₁               | 0
+S₁    | S₂               | S₀               | 0
 S₂    | S₀               | S₃               | 0
 S₃    | S₃               | S₀               | 1   (on last bit match)
 ```
@@ -3655,8 +3607,8 @@ S₃    | S₃               | S₀               | 1   (on last bit match)
 **Moore Machine Template (same sequence):**
 ```
 State | Output | Next (X=0) | Next (X=1)
-S₀    | 0      | S₀         | Sâ‚ÂÂ�
-Sâ‚ÂÂ�    | 0      | S₂         | S₀
+S₀    | 0      | S₀         | S₁
+S₁    | 0      | S₂         | S₀
 S₂    | 0      | S₀         | S₃
 S₃    | 1      | S₃         | S₀
 ```
@@ -3664,10 +3616,10 @@ S₃    | 1      | S₃         | S₀
 **Sequence Detector State Assignment (Mealy, overlapping):**
 ```
 For "1011":
-S₀: "" (no match)         → Sâ‚ÂÂ� on '1'
-Sâ‚ÂÂ�: "1"                   → S₂ on '0' (got "10")
+S₀: "" (no match)         → S₁ on '1'
+S₁: "1"                   → S₂ on '0' (got "10")
 S₂: "10"                  → S₃ on '1' (got "101")
-S₃: "101" (detect on 1)   → Sâ‚ÂÂ� on '1' (overlap: last "1" starts new match)
+S₃: "101" (detect on 1)   → S₁ on '1' (overlap: last "1" starts new match)
 ```
 
 **State Reduction Checklist:**
@@ -3681,7 +3633,6 @@ S₃: "101" (detect on 1)   → Sâ‚ÂÂ� on '1' (overlap: last "1" starts n
 ---
 
 ### Signal Timing Analysis Tips
-
 
 **Critical Path Formula:**
 ```
@@ -3727,7 +3678,6 @@ Cycle time: minimum time between two consecutive memory operations
 ---
 
 ### Standard Textbooks
-
 
 **1. Digital Logic and Computer Design → M. Morris Mano**
 
@@ -3775,7 +3725,6 @@ Theoretical treatment. For GATE: only needed for state minimization and equivale
 
 ### GATE-Specific Resources
 
-
 | Resource | Type | Best For |
 |----------|------|----------|
 | GATE Previous Year Papers (2010-2025) | PYQs | Pattern recognition, difficulty calibration |
@@ -3785,7 +3734,6 @@ Theoretical treatment. For GATE: only needed for state minimization and equivale
 | GATE Overflow | Forum | Doubt resolution, PYQ discussions |
 
 ### Chapter-to-Topic Mapping for GATE
-
 
 | GATE Topic | Mano Ch. (D&CD) | Mano & Ciletti Ch. | Practice Priority |
 |------------|-----------------|-------------------|-------------------|
@@ -3798,7 +3746,6 @@ Theoretical treatment. For GATE: only needed for state minimization and equivale
 | Memory & PLD | 7 | 7 | Medium (1 Q/year) |
 
 ### Weight-Based Study Plan
-
 
 | Topic | Weight | Recommended Hours | Primary Resource |
 |-------|--------|-------------------|-----------------|
@@ -3813,14 +3760,12 @@ Theoretical treatment. For GATE: only needed for state minimization and equivale
 
 ### Quick Links
 
-
 - **NPTEL Digital Circuits:** https://nptel.ac.in/courses/108105113
 - **GATE Overflow:** https://gateoverflow.in (searchable PYQ database)
 - **GeeksforGeeks Digital Logic:** https://www.geeksforgeeks.org/digital-electronics-logic-design-tutorials/
 - **Practice Platform:** https://practice.geeksforgeeks.org/topics/digital-electronics-and-logic-design
 
 ### Final Advice
-
 
 1. **Solve PYQs first:** Before touching theory, solve all GATE Digital Logic problems from the last 5 years to understand the pattern.
 2. **Timing is key:** In GATE, clock period, propagation delay, and setup/hold time problems are consistently asked. Master the formula: T_clk = t_cq + t_combo + t_su.

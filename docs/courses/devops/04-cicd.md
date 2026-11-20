@@ -1,3 +1,7 @@
+---
+description: "Rollback by redeployment: Deploy the previous known-good artifact. Rollback by revert: Revert the git commit and deploy. Rollback by feature flag: Toggle"
+---
+
 # Chapter 4: CI/CD
 
 > **Prev:** [Build Tools](./03-build-tools.md)

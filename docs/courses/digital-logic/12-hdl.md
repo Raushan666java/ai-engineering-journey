@@ -1,3 +1,7 @@
+---
+description: "Chapter 12: Hardware Description Languages: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = [] private"
+---
+
 # Chapter 12: Hardware Description Languages
 
 > **Prereq:** Chapters 1?11 (digital logic fundamentals) ? HDLs describe the circuits designed in previous chapters.

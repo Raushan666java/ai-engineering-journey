@@ -4,6 +4,7 @@ slug: /compiler-design/07-type-checking
 title: "Chapter 7: Type Checking"
 sidebar_label: "Chapter 7: Type Checking"
 sidebar_position: 7
+description: "After completing this chapter, students will be able to: define type systems and type expressions; distinguish structural from name type equivalence"
 ---
 
 # Chapter 7: Type Checking

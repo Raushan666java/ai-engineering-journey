@@ -4,6 +4,7 @@ slug: /system-design/15-cdn-dns-edge
 title: "Chapter 15: CDN, DNS, and Edge Computing"
 sidebar_label: "Chapter 15: CDN, DNS, and Edge Computing"
 sidebar_position: 15
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. The Domain Name System (DNS) is a hierarchical, distributed"
 ---
 
 # Chapter 15: CDN, DNS, and Edge Computing

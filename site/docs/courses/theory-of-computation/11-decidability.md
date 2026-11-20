@@ -4,6 +4,7 @@ slug: /theory-of-computation/11-decidability
 title: "Chapter 11: Decidability"
 sidebar_label: "Chapter 11: Decidability"
 sidebar_position: 11
+description: "A problem (language) is decidable if there exists an algorithm (Turing machine that always halts) that correctly answers yes/no for every instance"
 ---
 
 # Chapter 11: Decidability

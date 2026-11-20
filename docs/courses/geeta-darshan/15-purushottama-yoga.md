@@ -1,3 +1,7 @@
+---
+description: "'Sansara ka ped ulta hai — jad upar hai, aur shakhaayen neeche latakti hain. Yehi ped tumhara jeevan hai. Aur is ped ko kaatne ke liye ek hi kulhaari"
+---
+
 # अध्याय १५: पुरुषोत्तम योग — "Sansara ka ped — kaato isko kulhaari se"
 
 > **"Sansara ka ped ulta hai — jad upar hai, aur shakhaayen neeche latakti hain. Yehi ped tumhara jeevan hai. Aur is ped ko kaatne ke liye ek hi kulhaari kaafi hai — jagrukta. Kulhaari jitni tez, ped utna jaldi girta hai."**

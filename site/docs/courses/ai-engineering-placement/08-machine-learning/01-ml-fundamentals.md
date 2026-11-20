@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/08-machine-learning/01-ml-fundamentals
 title: "ML Fundamentals — Supervised, Unsupervised, Bias-Variance"
 sidebar_label: "ML Fundamentals — Supervised, Unsupervised, Bias-Variance"
 sidebar_position: 112
+description: "Machine learning fundamentals are the bedrock of every AI engineering role — from building recommendation systems to training production classifiers"
 ---
 
 <!-- improved -->

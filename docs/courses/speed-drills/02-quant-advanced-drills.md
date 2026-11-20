@@ -1,3 +1,7 @@
+---
+description: "Master data interpretation, number series, quadratic equations, and simplification under timed conditions. These drills bridge basic arithmetic and"
+---
+
 # Quant Advanced Speed Drills
 
 > Master data interpretation, number series, quadratic equations, and simplification under timed conditions. These drills bridge basic arithmetic and full-length test performance.

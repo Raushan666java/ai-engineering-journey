@@ -1,3 +1,7 @@
+---
+description: "Intuition: Kadane's algorithm realizes that a subarray ending at index i is either just nums[i] (start new) or extends the previous subarray. We track the"
+---
+
 # Chapter 2: Coding Problem Solving
 
 ## Learning Objectives

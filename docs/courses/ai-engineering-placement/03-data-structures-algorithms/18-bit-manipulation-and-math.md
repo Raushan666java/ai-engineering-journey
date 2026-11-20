@@ -1,3 +1,7 @@
+---
+description: "Bit manipulation uses individual bits for efficient computation. It is essential for low-level optimization, cryptography, and solving problems that"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Bit Manipulation and Math

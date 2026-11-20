@@ -1,3 +1,7 @@
+---
+description: "AI engineers must present their work to diverse audiences. You may demo a new model to product managers, explain an ML pipeline to executives, or present"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Presentation Skills for AI Engineers

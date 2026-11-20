@@ -1,3 +1,7 @@
+---
+description: "Setting: A panel of 4 members — Chairman (Senior Director), Two Technical Experts, HR Representative. Candidate: Rahul, B.Tech CSE, 2022 graduate, GATE"
+---
+
 # Chapter 8: Mock Interview Scenarios
 
 ## Learning Objectives

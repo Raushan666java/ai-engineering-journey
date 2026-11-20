@@ -1,3 +1,7 @@
+---
+description: "A chain-of-thought agent emits tokens and lets the loop guess where the tool call ends. A plan-and-execute agent emits a structured plan first, then"
+---
+
 # Plan-Execute Control Flow
 
 > A plan that cannot survive a failure is a script. A script that can replan is an agent. Build the replanner first.

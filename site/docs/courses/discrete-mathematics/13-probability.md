@@ -4,6 +4,7 @@ slug: /discrete-mathematics/13-probability
 title: "Chapter 13: Probability"
 sidebar_label: "Chapter 13: Probability"
 sidebar_position: 13
+description: "One-Sentence Takeaway: The sample space contains all possible outcomes; events are subsets, and for equally likely outcomes, probability is the size ratio."
 ---
 
 # Chapter 13: Probability

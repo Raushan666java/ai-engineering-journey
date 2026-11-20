@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: explain the shift-reduce parsing paradigm and the concept of a handle; construct LR(0) items and"
+---
+
 # Chapter 4: Bottom-Up Parsing
 
 **? Previous:** [Chapter 3: Top-Down Parsing](03-parsing-topdown.md) | **Next:** [Chapter 5: Syntax-Directed Translation](05-sdt.md)

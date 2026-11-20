@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: explain the architecture of just-in-time compilers including tiered compilation and"
+---
+
 # Chapter 15: Advanced Topics in Compilation
 
 ? Previous: [Chapter 14: Register Allocation](14-register-allocation.md) | **Next:** [Index](index.md)

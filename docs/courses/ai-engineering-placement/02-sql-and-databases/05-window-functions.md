@@ -1,3 +1,7 @@
+---
+description: "Window Functions — ROW_NUMBER, RANK, LAG, LEAD, NTILE, Frames: Data is the fuel of AI. SQL and database design skills let you query, transform, and store"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Window Functions — ROW_NUMBER, RANK, LAG, LEAD, NTILE, Frames

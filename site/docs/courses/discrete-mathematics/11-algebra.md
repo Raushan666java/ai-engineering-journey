@@ -4,6 +4,7 @@ slug: /discrete-mathematics/11-algebra
 title: "Chapter 11: Algebraic Structures"
 sidebar_label: "Chapter 11: Algebraic Structures"
 sidebar_position: 11
+description: "One-Sentence Takeaway: A group is a set with an associative operation that has an identity and inverses; groups are the central objects of algebraic study."
 ---
 
 # Chapter 11: Algebraic Structures

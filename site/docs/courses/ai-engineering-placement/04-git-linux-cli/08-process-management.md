@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/04-git-linux-cli/08-process-management
 title: "Process Management — Monitoring, Signals, Resource Control"
 sidebar_label: "Process Management — Monitoring, Signals, Resource Control"
 sidebar_position: 65
+description: "Process management is essential for AI engineers who run resource-intensive training jobs, manage model serving, and monitor system health. Understanding"
 ---
 
 <!-- improved -->

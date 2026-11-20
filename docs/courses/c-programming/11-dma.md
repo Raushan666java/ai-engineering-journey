@@ -1,3 +1,7 @@
+---
+description: "A library has fixed shelves built into the walls. Before the library opens, the architect decides exactly how many shelves are needed, where they go, and"
+---
+
 # Chapter 11: Dynamic Memory Allocation
 
 > **Previous:** [Structures and Unions](./10-structures-unions.md) | **Next:** [File Handling](./12-file-handling.md)

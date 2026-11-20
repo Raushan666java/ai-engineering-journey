@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/00-core-computer-science/01-computer-networks
 title: "Computer Networks for AI Engineers"
 sidebar_label: "Computer Networks for AI Engineers"
 sidebar_position: 2
+description: "After this chapter you will be able to explain the TCP/IP stack from an API designer's perspective, choose between HTTP/2 and gRPC for model serving"
 ---
 
 <!-- improved -->

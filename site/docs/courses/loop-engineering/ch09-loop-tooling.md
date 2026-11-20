@@ -4,6 +4,7 @@ slug: /loop-engineering/ch09-loop-tooling
 title: "Chapter 9: Loop Tooling"
 sidebar_label: "Chapter 9: Loop Tooling"
 sidebar_position: 9
+description: "Production agent loops require more than correct logic — they need tooling that makes them reliable, observable, and safe. This chapter introduces five"
 ---
 
 # Chapter 9: Loop Tooling

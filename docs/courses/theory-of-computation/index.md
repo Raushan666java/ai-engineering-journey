@@ -1,3 +1,7 @@
+---
+description: "The Theory of Computation is the branch of computer science that deals with what problems can be solved by computational means and how efficiently they"
+---
+
 # Theory of Computation — Complete Course Textbook
 
 ## Course Overview

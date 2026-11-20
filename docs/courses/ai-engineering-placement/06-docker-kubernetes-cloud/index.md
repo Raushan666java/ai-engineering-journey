@@ -1,3 +1,7 @@
+---
+description: "Containers to clusters: Dockerfile discipline, Kubernetes objects, and deploying to AWS, GCP or Azure without surprises."
+---
+
 # 06 — Docker, Kubernetes & Cloud
 
 ## Overview

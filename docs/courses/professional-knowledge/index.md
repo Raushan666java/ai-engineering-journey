@@ -1,3 +1,7 @@
+---
+description: "Exam Weightage: ~60 Questions in Mains PK section (decisive paper) Weightage Insight: DBMS and Computer Networks are the highest-weightage areas —"
+---
+
 ﻿# Professional Knowledge Recap — IBPS SO IT Officer Mains
 
 > **Exam Weightage:** ~60 Questions in Mains PK section (decisive paper)

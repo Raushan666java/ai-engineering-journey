@@ -1,3 +1,7 @@
+---
+description: "The STAR method is the gold standard for answering behavioral interview questions. It provides a structured narrative that demonstrates your skills"
+---
+
 # Chapter 5: Behavioral and HR Interview
 
 ## Learning Objectives

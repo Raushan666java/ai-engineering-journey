@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/13-graphs-shortest
 title: "Graphs Shortest Path"
 sidebar_label: "Graphs Shortest Path"
 sidebar_position: 50
+description: "Backtracking systematically explores all possible solutions by building candidates incrementally and abandoning invalid ones. It is essential for"
 ---
 
 <!-- improved -->

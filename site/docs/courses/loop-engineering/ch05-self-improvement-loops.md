@@ -4,6 +4,7 @@ slug: /loop-engineering/ch05-self-improvement-loops
 title: "Chapter 5: Self-Improvement Loops"
 sidebar_label: "Chapter 5: Self-Improvement Loops"
 sidebar_position: 5
+description: "Constitutional AI (CAI) replaces expensive human feedback with a written constitution: a set of natural-language principles the model uses to critique and"
 ---
 
 # Chapter 5: Self-Improvement Loops

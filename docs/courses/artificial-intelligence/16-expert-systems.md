@@ -1,3 +1,7 @@
+---
+description: "By the conclusion of this chapter, the student will be able to: (1) describe the architecture of rule-based expert systems; (2) explain the reasoning"
+---
+
 # Chapter 16: Expert Systems
 
 **Previous:** [Chapter 15: Ethics of AI](15-ethics-ai.md) | **Next:** [Chapter 17: Modern Artificial Intelligence](17-modern-ai.md)

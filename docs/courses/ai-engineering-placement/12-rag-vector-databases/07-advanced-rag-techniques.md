@@ -1,3 +1,7 @@
+---
+description: "Advanced RAG Techniques: Retrieval-Augmented Generation lets LLMs answer questions about your private data. Vector databases store embeddings for semantic"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Advanced RAG Techniques

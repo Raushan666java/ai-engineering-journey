@@ -1,3 +1,7 @@
+---
+description: "Comparing: x = {3, 5} and y = {5, 7} Both have 5 in common. But x also has 3 (&lt; 5, 7) while y also has 7 (&gt; 3, 5). Since 3 &lt; 5 and 5 = 5 and 5"
+---
+
 # Chapter 5: Quadratic Equations & Simplification — Quadratic Comparison, Approximation, BODMAS
 
 ## Learning Objectives

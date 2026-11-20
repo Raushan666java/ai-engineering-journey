@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming/02-control-flow
 title: "Control Flow — Conditionals, Loops, and Iteration"
 sidebar_label: "Control Flow — Conditionals, Loops, and Iteration"
 sidebar_position: 11
+description: "Control Flow — Conditionals, Loops, and Iteration: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and libraries is"
 ---
 
 <!-- improved -->

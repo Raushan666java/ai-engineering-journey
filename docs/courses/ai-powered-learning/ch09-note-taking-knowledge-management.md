@@ -1,3 +1,7 @@
+---
+description: "Most students take notes they never read again. This chapter fixes that with a second brain: a local vault of Markdown notes that AI structures, links"
+---
+
 # Chapter 9: AI Note-Taking & Knowledge Management
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

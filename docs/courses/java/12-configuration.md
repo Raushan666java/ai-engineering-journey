@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Always externalize environment-specific configuration. Database URLs, credentials, and API keys should never be hardcoded — use environment"
+---
+
 # Application Properties & Configuration
 
 > **Previous:** [Auto-Configuration & Starters](./11-auto-configuration.md) | **Next:** [Actuator, DevTools & Monitoring](./13-actuator-devtools.md)

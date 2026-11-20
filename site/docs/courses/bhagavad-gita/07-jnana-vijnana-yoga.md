@@ -4,6 +4,7 @@ slug: /bhagavad-gita/07-jnana-vijnana-yoga
 title: "Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing"
 sidebar_label: "Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing"
 sidebar_position: 7
+description: "The war is about to begin, and yet the real battle has moved inside. Krishna has spent six chapters clearing the ground: act without attachment, meditate"
 ---
 
 # Chapter 7: Jnana-Vijnana Yoga — Knowing and Realizing

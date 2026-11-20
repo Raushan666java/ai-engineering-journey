@@ -1,3 +1,7 @@
+---
+description: "Speech, vision and documents: Whisper pipelines, OCR extraction, image models and multimodal retrieval."
+---
+
 # 18 — Multimodal AI & Voice
 
 ## Overview

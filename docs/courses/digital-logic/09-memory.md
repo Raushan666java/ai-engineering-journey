@@ -1,3 +1,7 @@
+---
+description: "Chapter 9: Semiconductor Memory: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = [] private"
+---
+
 # Chapter 9: Semiconductor Memory
 
 > **Prereq:** Chapter 8 (Registers and Counters) ? registers are the fastest, smallest memory elements; this chapter extends storage to arrays of cells.

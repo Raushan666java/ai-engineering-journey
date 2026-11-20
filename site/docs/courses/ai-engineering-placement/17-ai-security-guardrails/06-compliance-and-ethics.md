@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/17-ai-security-guardrails/06-compliance-and-ethi
 title: "Compliance and Ethics"
 sidebar_label: "Compliance and Ethics"
 sidebar_position: 221
+description: "Compliance and Ethics: AI systems face unique security threats. Prompt injection, data leakage, and content abuse require specialized defenses. This"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/09-behavioral-star-inte
 title: "Behavioral STAR Interview"
 sidebar_label: "Behavioral STAR Interview"
 sidebar_position: 259
+description: "Behavioral STAR Interview: Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews"
 ---
 
 <!-- improved -->

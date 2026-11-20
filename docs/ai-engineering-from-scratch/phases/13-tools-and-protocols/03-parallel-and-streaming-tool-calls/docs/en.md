@@ -1,3 +1,7 @@
+---
+description: "Three independent weather lookups serialized is three round trips. Run them in parallel and total time collapses to the slowest single call. Every"
+---
+
 # Parallel Tool Calls and Streaming with Tools
 
 > Three independent weather lookups serialized is three round trips. Run them in parallel and total time collapses to the slowest single call. Every frontier provider now emits multiple tool calls in a single turn. The payoff is real; the plumbing is subtle. This lesson walks both halves: the parallel fan-out and the streamed-argument reassembly, with emphasis on the id-correlation trap.

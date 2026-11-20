@@ -1,3 +1,7 @@
+---
+description: "Branching strategies like GitFlow and trunk-based development enable teams to work in parallel without conflicts. Understanding when to create branches"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Git Branching

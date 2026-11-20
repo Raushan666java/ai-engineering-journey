@@ -1,3 +1,7 @@
+---
+description: "Decorators & Generators — Higher-Order Functions, yield, itertools: Python is the lingua franca of AI engineering. Mastering its syntax, data structures"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Decorators & Generators — Higher-Order Functions, yield, itertools

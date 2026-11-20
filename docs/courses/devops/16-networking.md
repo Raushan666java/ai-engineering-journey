@@ -1,3 +1,7 @@
+---
+description: "A service mesh manages inter-service communication in a microservice architecture. It adds observability, traffic management, and security without"
+---
+
 # Chapter 16: Container Networking
 
 > **Previous:** [Database DevOps](./15-database-devops.md) | **Next:** [SRE Principles](./17-sre.md)

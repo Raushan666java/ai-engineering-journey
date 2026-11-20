@@ -1,3 +1,7 @@
+---
+description: "The propose-then-commit pattern is the foundational HITL building block. Instead of allowing an agent to execute actions autonomously, the agent first"
+---
+
 # Chapter 3: Human-in-the-Loop
 
 > **Previous:** [Agent Loop Architecture](./ch02-agent-loop-architecture.md) | **Next:** [Feedback Loops](./ch04-feedback-loops.md)

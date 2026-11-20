@@ -1,3 +1,7 @@
+---
+description: "Backtracking systematically explores all possible solutions by building candidates incrementally and abandoning invalid ones. It is essential for"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Graphs Shortest Path

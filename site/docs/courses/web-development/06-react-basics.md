@@ -4,6 +4,7 @@ slug: /web-development/06-react-basics
 title: "Chapter 6 → React Basics"
 sidebar_label: "Chapter 6 → React Basics"
 sidebar_position: 6
+description: "Chapter 6 → React Basics: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = [] private maxConcurrency"
 ---
 
 # Chapter 6 → React Basics

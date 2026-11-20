@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Partitioning is the process of splitting a large dataset"
+---
+
 # Chapter 5: Data Partitioning and Sharding
 > **Previous:** [04 Database Foundations](./04-database-foundations.md) | **Next:** [06 Distributed Consistency](./06-distributed-consistency.md)
 

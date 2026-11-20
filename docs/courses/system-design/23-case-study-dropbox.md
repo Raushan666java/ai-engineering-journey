@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Dropbox serves over 700 million users storing more than 500"
+---
+
 # Chapter 23: Case Study — Dropbox and File Storage
 > **Previous:** [22 Case Study Twitter](./22-case-study-twitter.md) | **Next:** [24 Interview Preparation](./24-interview-preparation.md)
 

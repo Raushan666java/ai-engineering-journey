@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/13-ai-agents-langgraph/06-multi-agent-systems
 title: "Multi-Agent Systems"
 sidebar_label: "Multi-Agent Systems"
 sidebar_position: 181
+description: "Multi-Agent Systems: AI agents autonomously use tools to complete tasks. LangGraph builds stateful, multi-step agent workflows. This module covers agent"
 ---
 
 <!-- improved -->

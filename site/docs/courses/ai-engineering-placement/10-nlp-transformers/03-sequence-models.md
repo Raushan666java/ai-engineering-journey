@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/10-nlp-transformers/03-sequence-models
 title: "Sequence Models — RNN, LSTM, GRU, Bidirectional, Encoder-Decoder"
 sidebar_label: "Sequence Models — RNN, LSTM, GRU, Bidirectional, Encoder-Decoder"
 sidebar_position: 140
+description: "Sequence Models — RNN, LSTM, GRU, Bidirectional, Encoder-Decoder: Natural language processing is how machines understand human text. Transformers"
 ---
 
 <!-- improved -->

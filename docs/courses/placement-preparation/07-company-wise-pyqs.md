@@ -1,3 +1,7 @@
+---
+description: "Comprehensive compilation of actual coding problems, behavioral questions, and system design problems asked by top companies during campus placements"
+---
+
 # 07 → Company-Wise Previous Year Questions
 
 > **Previous:** [06 → HR Interview, GD & Soft Skills](06-hr-gd-soft-skills.md)  

@@ -1,3 +1,7 @@
+---
+description: "Prove everything you learned. Build portfolio-grade systems."
+---
+
 # Phase 19: Capstone Projects
 
 > Prove everything you learned. Build portfolio-grade systems.

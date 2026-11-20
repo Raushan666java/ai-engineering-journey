@@ -1,3 +1,7 @@
+---
+description: "Understanding the logical order of SQL statement execution is critical for writing correct queries:"
+---
+
 # Chapter 4: Database and SQL Interview
 
 ## Learning Objectives

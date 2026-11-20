@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming/11-numpy-fundamentals
 title: "NumPy Fundamentals — Arrays, Broadcasting, Linear Algebra"
 sidebar_label: "NumPy Fundamentals — Arrays, Broadcasting, Linear Algebra"
 sidebar_position: 20
+description: "NumPy Fundamentals — Arrays, Broadcasting, Linear Algebra: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and"
 ---
 
 <!-- improved -->

@@ -1,3 +1,7 @@
+---
+description: "Arjuna is confused, and his confusion is beautiful. Just moments ago, Krishna praised action; now he speaks of renunciation. Two opposites, and Arjuna has"
+---
+
 # Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action
 
 > "The renunciation you really need is not of action — it is of the claim. The world keeps flowing; only the clutching can stop."

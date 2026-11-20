@@ -4,6 +4,7 @@ slug: /oop-cpp/04-inheritance
 title: "Chapter 4: Inheritance"
 sidebar_label: "Chapter 4: Inheritance"
 sidebar_position: 4
+description: "Inheritance lets a derived class reuse and extend a base class's interface and implementation, forming an is-a relationship that models real-world"
 ---
 
 # Chapter 4: Inheritance

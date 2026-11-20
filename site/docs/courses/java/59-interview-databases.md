@@ -4,6 +4,7 @@ slug: /java/59-interview-databases
 title: "Chapter 59: Database Interview Q&A for Java & Spring Boot Developers"
 sidebar_label: "Chapter 59: Database Interview Q&A for Java & Spring Boot Developers"
 sidebar_position: 63
+description: "Chapter 59: Database Interview Q&A for Java & Spring Boot Developers: 25+ questions covering JDBC, JPA, Hibernate, transactions, locking, indexing, NoSQL"
 ---
 
 # Chapter 59: Database Interview Q&A for Java & Spring Boot Developers

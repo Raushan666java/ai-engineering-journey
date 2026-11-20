@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/09-deep-learning-pytorch/06-transfer-learning
 title: "Transfer Learning — Feature Extraction, Fine-Tuning, Model Hub, Domain Adaptation"
 sidebar_label: "Transfer Learning — Feature Extraction, Fine-Tuning, Model Hub, Domain Adaptation"
 sidebar_position: 131
+description: "Transfer Learning — Feature Extraction, Fine-Tuning, Model Hub, Domain Adaptation: Deep learning powers modern AI breakthroughs. PyTorch is the framework"
 ---
 
 <!-- improved -->

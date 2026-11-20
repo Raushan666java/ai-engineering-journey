@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/19-capstone-projects/01-house-price-prediction-a
 title: "House Price Prediction API"
 sidebar_label: "House Price Prediction API"
 sidebar_position: 236
+description: 'RMSE punishes large errors because it squares them before averaging. MAE does not. If a $50k miss is ten times worse than a $5k miss, optimise RMSE. If'
 ---
 
 <!-- improved -->

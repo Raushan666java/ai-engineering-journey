@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/14-deployment-architecture
 title: "14-deployment-architecture"
 sidebar_label: "14-deployment-architecture"
 sidebar_position: 15
+description: "For anything beyond a toy demo, move the LangGraph checkpointer from SQLite to Postgres (langgraph-checkpoint-postgres) so multiple API workers/processes"
 ---
 
 ## Chapter 14: Deployment Architecture

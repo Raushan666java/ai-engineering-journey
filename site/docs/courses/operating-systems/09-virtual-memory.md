@@ -4,6 +4,7 @@ slug: /operating-systems/09-virtual-memory
 title: "Chapter 9: Virtual Memory"
 sidebar_label: "Chapter 9: Virtual Memory"
 sidebar_position: 9
+description: "A[Virtual Memory Concept] --> B[Demand Paging] B --> C[Page Fault Handling] D --> E[Page Replacement Algorithms] E --> F[Frame Allocation] G --> H[Working"
 ---
 
 # Chapter 9: Virtual Memory

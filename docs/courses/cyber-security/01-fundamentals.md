@@ -1,3 +1,7 @@
+---
+description: "Prereq: None — this chapter introduces core security concepts. Target Audience: Beginners to intermediate; SOC analysts, penetration testers, developers"
+---
+
 # Chapter 1: Security Fundamentals
 
 > **Prereq:** None — this chapter introduces core security concepts.

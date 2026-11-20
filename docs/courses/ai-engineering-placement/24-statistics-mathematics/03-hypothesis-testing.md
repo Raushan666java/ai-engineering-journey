@@ -1,3 +1,7 @@
+---
+description: "Hypothesis testing is a statistical framework for making data-driven decisions under uncertainty, answering questions like 'Is this new ML model truly"
+---
+
 <!-- improved -->
 # Chapter 03: Hypothesis Testing
 

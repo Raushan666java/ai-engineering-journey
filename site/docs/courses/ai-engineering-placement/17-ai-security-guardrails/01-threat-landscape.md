@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/17-ai-security-guardrails/01-threat-landscape
 title: "Threat Landscape"
 sidebar_label: "Threat Landscape"
 sidebar_position: 216
+description: "Threat Landscape: AI systems face unique security threats. Prompt injection, data leakage, and content abuse require specialized defenses. This module"
 ---
 
 <!-- improved -->

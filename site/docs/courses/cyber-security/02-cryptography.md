@@ -4,6 +4,7 @@ slug: /cyber-security/02-cryptography
 title: "Chapter 2: Cryptography"
 sidebar_label: "Chapter 2: Cryptography"
 sidebar_position: 2
+description: "Analogy: A lockbox with a single key. Alice puts a message in the box, locks it with key K, and sends the box to Bob. Bob uses the same key K to open it"
 ---
 
 # Chapter 2: Cryptography

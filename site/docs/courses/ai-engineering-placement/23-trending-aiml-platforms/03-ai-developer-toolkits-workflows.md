@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/23-trending-aiml-platforms/03-ai-developer-toolk
 title: "AI Developer Toolkits & Workflows"
 sidebar_label: "AI Developer Toolkits & Workflows"
 sidebar_position: 291
+description: "AI Developer Toolkits & Workflows: The AI landscape evolves fast. New LLM providers, agent platforms, and developer toolkits emerge monthly. This module"
 ---
 
 <!-- improved -->

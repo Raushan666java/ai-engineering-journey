@@ -1,3 +1,7 @@
+---
+description: "Imagine you are a telecom engineer tasked with connecting 15 cities with fiber-optic cable. Each pair of cities has a quoted cost for digging trenches and"
+---
+
 # Chapter 12: Minimum Spanning Trees
 
 > **Prerequisites:** [Chapter 11: Graph Shortest Paths](./11-graph-shortest.md) — Graph algorithms, priority queues, relaxation | **Next:** [Chapter 13: Network Flow](./13-graph-flow.md) — From tree structures to flow networks

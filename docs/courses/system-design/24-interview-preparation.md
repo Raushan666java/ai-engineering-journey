@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. A system design interview typically lasts 45-60 minutes. The"
+---
+
 # Chapter 24: System Design Interview Preparation
 > **Previous:** [23 Case Study Dropbox](./23-case-study-dropbox.md) | **Next:** None
 

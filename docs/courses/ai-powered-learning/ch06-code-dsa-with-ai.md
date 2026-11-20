@@ -1,3 +1,7 @@
+---
+description: "Watching DSA videos creates an illusion of competence; writing code under pressure creates skill. This chapter turns ChatGPT, Claude, or Gemini into a"
+---
+
 # Chapter 6: Code & DSA with AI
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

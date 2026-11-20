@@ -1,3 +1,7 @@
+---
+description: "In static batching every sequence in the batch waits for the longest sequence to finish. A 5-token prompt sits idle while a 2048-token prompt generates"
+---
+
 # Continuous Batching -- vLLM, Sarathi, Iteration-Level Scheduling
 
 > In static batching every sequence in the batch waits for the longest sequence to finish. A 5-token prompt sits idle while a 2048-token prompt generates its last word. Continuous batching adds and removes sequences one iteration at a time, letting the GPU fill every spare slot. vLLM's PagedAttention and Sarathi's chunked prefill are the two production implementations that together serve most LLM inference traffic in 2026.

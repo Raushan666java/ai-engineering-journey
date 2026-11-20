@@ -4,6 +4,7 @@ slug: /system-design/18-case-studies-classic
 title: "Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin"
 sidebar_label: "Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin"
 sidebar_position: 18
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Every system design begins with precise functional and"
 ---
 
 # Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin

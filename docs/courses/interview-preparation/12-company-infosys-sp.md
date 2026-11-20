@@ -1,3 +1,7 @@
+---
+description: "Why XOR works: a ^ a = 0 and a ^ 0 = a. Since we XOR every number 1..n and every element in the array, the missing number appears once while all others"
+---
+
 # Chapter 12: Infosys SP & DSE — Company-Specific Question Bank
 
 ## Learning Objectives

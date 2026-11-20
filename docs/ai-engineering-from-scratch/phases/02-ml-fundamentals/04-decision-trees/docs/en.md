@@ -1,3 +1,7 @@
+---
+description: "You have tabular data. Rows are samples, columns are features, and there is a target column you want to predict. You could throw a neural network at it"
+---
+
 # Decision Trees and Random Forests
 
 > A decision tree is just a flowchart. But a forest of them is one of the most powerful tools in ML.

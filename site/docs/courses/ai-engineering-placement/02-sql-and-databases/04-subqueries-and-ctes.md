@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/02-sql-and-databases/04-subqueries-and-ctes
 title: "Subqueries & CTEs — Correlated, WITH, Recursive"
 sidebar_label: "Subqueries & CTEs — Correlated, WITH, Recursive"
 sidebar_position: 29
+description: "Subqueries & CTEs — Correlated, WITH, Recursive: Data is the fuel of AI. SQL and database design skills let you query, transform, and store the data that"
 ---
 
 <!-- improved -->

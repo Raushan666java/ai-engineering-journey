@@ -1,3 +1,7 @@
+---
+description: "Exact-match and F1 miss semantic equivalence. Human review does not scale. LLM-as-judge is the production answer — with enough calibration to trust the"
+---
+
 # LLM Evaluation — RAGAS, DeepEval, G-Eval
 
 > Exact-match and F1 miss semantic equivalence. Human review does not scale. LLM-as-judge is the production answer — with enough calibration to trust the number.

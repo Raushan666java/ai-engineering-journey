@@ -1,3 +1,7 @@
+---
+description: "Discrete mathematics is the study of mathematical structures that are fundamentally discrete (countable, distinct, separable) rather than continuous. It"
+---
+
 # Discrete Mathematics for Computer Science
 
 > A rigorous foundation in the mathematical structures and techniques underpinning computation, algorithms, and formal reasoning.

@@ -1,3 +1,7 @@
+---
+description: "A production vision system is a chain of models and rules stitched with data contracts. The pieces are already in this phase; the capstone wires them"
+---
+
 # Build a Complete Vision Pipeline — Capstone
 
 > A production vision system is a chain of models and rules stitched with data contracts. The pieces are already in this phase; the capstone wires them together end-to-end.

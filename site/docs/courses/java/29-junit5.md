@@ -4,6 +4,7 @@ slug: /java/29-junit5
 title: "JUnit 5 Deep Dive"
 sidebar_label: "JUnit 5 Deep Dive"
 sidebar_position: 29
+description: "JUnit 5 is a complete rewrite of the most widely used testing framework in the Java ecosystem. Unlike JUnit 4, which was a single monolithic library"
 ---
 
 # JUnit 5 Deep Dive

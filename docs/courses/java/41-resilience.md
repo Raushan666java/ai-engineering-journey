@@ -1,3 +1,7 @@
+---
+description: "Resilience4j is a lightweight, easy-to-use fault tolerance library inspired by Netflix Hystrix. It provides modules for circuit breaking, retry, rate"
+---
+
 # Resilience & Circuit Breakers (Resilience4j)
 > **Previous:** [API Gateway](40-gateway.md) | **Next:** [Configuration and Cloud Config](42-config.md)
 

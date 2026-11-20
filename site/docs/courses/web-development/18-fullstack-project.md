@@ -4,6 +4,7 @@ slug: /web-development/18-fullstack-project
 title: "Chapter 18: Building a Full-Stack Application"
 sidebar_label: "Chapter 18: Building a Full-Stack Application"
 sidebar_position: 18
+description: "Throughout this chapter, we will build TaskFlow, a full-stack task management application. TaskFlow allows users to create projects, add tasks, assign"
 ---
 
 # Chapter 18: Building a Full-Stack Application

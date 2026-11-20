@@ -1,3 +1,7 @@
+---
+description: "Explanation: The repo rate is the rate at which RBI lends to commercial banks. As of late 2025, the repo rate stands at 6.50%. It was last changed in"
+---
+
 # RBI Grade B Phase 1 — Full-Length Mock Test
 
 > **Exam:** Reserve Bank of India Grade B (Phase 1)  

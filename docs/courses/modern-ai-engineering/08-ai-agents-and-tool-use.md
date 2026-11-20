@@ -1,3 +1,7 @@
+---
+description: "By the end of this chapter, you will be able to: - Define the core components of an AI agent: planning, memory, tool use, and self-reflection - Implement"
+---
+
 # Chapter 8: AI Agents and Tool Use
 
 > **Learning Objectives**

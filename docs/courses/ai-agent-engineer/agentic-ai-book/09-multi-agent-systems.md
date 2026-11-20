@@ -1,3 +1,7 @@
+---
+description: "Default assumption: you don't need multi-agent. A single well-designed agent with good tools, clear prompting, and a solid loop handles most real tasks"
+---
+
 ## Chapter 9: Multi-Agent Systems
 
 ### 9.1 When You Actually Need This (And When You Don't)

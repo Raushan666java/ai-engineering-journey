@@ -1,3 +1,7 @@
+---
+description: "You do not need to study harder; you need a machine that turns any topic into a day-by-day plan. This chapter gives you the master template that converts"
+---
+
 # Chapter 3: The Learn-Anything Blueprint
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

@@ -4,6 +4,7 @@ slug: /database-management-systems/11-recovery
 title: "Chapter 11: Recovery System"
 sidebar_label: "Chapter 11: Recovery System"
 sidebar_position: 11
+description: "Database systems face various failure scenarios. Each requires a different recovery strategy. Understanding failure classification is the first step in"
 ---
 
 # Chapter 11: Recovery System

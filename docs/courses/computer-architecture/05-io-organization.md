@@ -1,3 +1,7 @@
+---
+description: "Memory-mapped I/O: I/O registers are assigned addresses in the memory address space. CPU uses LOAD/STORE instructions. Easier to program but consumes"
+---
+
 # I/O Organization
 
 ## Learning Objectives

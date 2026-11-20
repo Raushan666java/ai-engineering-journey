@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/11-llms-prompt-engineering/visual-notes
 title: "Visual Notes — The LLM Interaction Loop"
 sidebar_label: "Visual Notes"
 sidebar_position: 157
+description: "One-line answer for interviews: 'System prompt sets the role, user input asks, the model generates — then tools and iteration sharpen the answer.'"
 ---
 
 # Visual Notes — The LLM Interaction Loop

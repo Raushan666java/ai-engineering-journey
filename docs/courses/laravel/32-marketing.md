@@ -1,3 +1,7 @@
+---
+description: "Chapter 32: Marketing & Advertising Agents: One-Sentence Takeaway: Theory is the foundation — master it before moving to examples and exercises"
+---
+
 # Chapter 32: Marketing & Advertising Agents
 
 > **Previous:** [HR & Recruitment — AI-Powered Talent Agents](./31-hr-recruitment.md) | **Next:** [Customer Service & Support Agents](./33-customer-service.md)

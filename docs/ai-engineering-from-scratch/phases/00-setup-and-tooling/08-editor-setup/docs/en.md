@@ -1,3 +1,7 @@
+---
+description: "You'll spend thousands of hours inside your editor writing Python, running notebooks, debugging training loops, and SSH-ing into GPU boxes. A"
+---
+
 # Editor Setup
 
 > Your editor is your co-pilot. Configure it once so it stays out of your way and starts pulling its weight.

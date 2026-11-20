@@ -1,3 +1,7 @@
+---
+description: "Calculus provides the mathematical framework for optimizing machine learning models through gradient-based learning. Every time you train a neural"
+---
+
 <!-- improved -->
 # Chapter 06: Calculus for ML
 

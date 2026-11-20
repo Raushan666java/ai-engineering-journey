@@ -1,3 +1,7 @@
+---
+description: "Chapter 7 → React Advanced: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = [] private maxConcurrency"
+---
+
 # Chapter 7 → React Advanced
 
 > **Previous:** [06-react-basics](./06-react-basics.md) | **Next:** [08-node-express](./08-node-express.md)

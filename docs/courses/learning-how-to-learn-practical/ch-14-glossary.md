@@ -1,3 +1,7 @@
+---
+description: "Active Recall — A learning technique where you actively retrieve information from memory rather than passively re-reading it. The single most effective"
+---
+
 # Master Glossary
 
 > **400+ terms** defined across all 13 chapters. Use this as a quick reference while studying.

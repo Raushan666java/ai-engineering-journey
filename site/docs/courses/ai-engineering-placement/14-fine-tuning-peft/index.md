@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/14-fine-tuning-peft
 title: "14 — Fine-Tuning & PEFT"
 sidebar_label: "14 — Fine-Tuning & PEFT"
 sidebar_position: 196
+description: "When prompting is not enough: LoRA, QLoRA, dataset curation and evaluation for domain-specific models."
 ---
 
 # 14 — Fine-Tuning & PEFT

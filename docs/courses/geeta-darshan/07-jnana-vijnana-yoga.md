@@ -1,3 +1,7 @@
+---
+description: "'Maya koi jadoo nahin hai, maya ek bhool hai — apne hi hone ki bhool. Tum us aadmi ki tarah ho jo suraj ko dekhte hue keh raha hai ki andhera hai. Duniya"
+---
+
 # अध्याय ७: ज्ञान विज्ञान योग — Maya koi illusion nahin, bhool hai
 
 > **"Maya koi jadoo nahin hai, maya ek bhool hai — apne hi hone ki bhool. Tum us aadmi ki tarah ho jo suraj ko dekhte hue keh raha hai ki andhera hai. Duniya bahar utni hi sach hai jitna tumhara andar ka aina — magar jis din tum apne aap ko aine mein dekhte ho, maya paani ki tarah peeche reh jaati hai."**

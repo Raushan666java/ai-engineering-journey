@@ -1,3 +1,7 @@
+---
+description: "Exam Weightage: 4–5 Qs in IBPS SO IT Officer Mains (Firewalls, IDS/IPS, VPN, SSL/TLS, Secure Protocols) Key Topics: Firewall types, IDS/IPS, VPN (IPSec"
+---
+
 # Chapter 2: Network Security
 
 > **Exam Weightage:** 4–5 Qs in IBPS SO IT Officer Mains (Firewalls, IDS/IPS, VPN, SSL/TLS, Secure Protocols)

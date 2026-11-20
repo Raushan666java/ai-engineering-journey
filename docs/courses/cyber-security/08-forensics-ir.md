@@ -1,3 +1,7 @@
+---
+description: "Digital forensics is the application of computer science and investigative procedures to examine digital evidence in a manner that is legally admissible"
+---
+
 # Chapter 8: Forensics & Incident Response 
 
 > **Prereq:** Chapter 7 (Cloud & Mobile) → modern forensics must account for cloud and mobile evidence sources.

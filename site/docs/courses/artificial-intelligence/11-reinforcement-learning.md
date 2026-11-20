@@ -4,6 +4,7 @@ slug: /artificial-intelligence/11-reinforcement-learning
 title: "Chapter 11: Reinforcement Learning"
 sidebar_label: "Chapter 11: Reinforcement Learning"
 sidebar_position: 19
+description: "Imagine training a puppy. When it sits on command, you give it a treat. When it chews your shoe, you scold it. The puppy doesn't know the 'right' thing to"
 ---
 
 # Chapter 11: Reinforcement Learning

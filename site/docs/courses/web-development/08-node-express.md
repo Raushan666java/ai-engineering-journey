@@ -4,6 +4,7 @@ slug: /web-development/08-node-express
 title: "Chapter 8 → Node.js and Express"
 sidebar_label: "Chapter 8 → Node.js and Express"
 sidebar_position: 8
+description: "Node.js is a JavaScript runtime built on Chrome's V8 engine. It provides an event-driven, non-blocking I/O model that makes it efficient for"
 ---
 
 # Chapter 8 → Node.js and Express

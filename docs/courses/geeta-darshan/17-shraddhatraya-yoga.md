@@ -1,3 +1,7 @@
+---
+description: "'Shraddha koi dogma nahin hai jo tumhe bahar se pakad kar diya gaya ho. Shraddha tumhare andar ki gahri hoti parat hai — us parat ka naam hi shraddha hai"
+---
+
 # अध्याय १७: श्रद्धात्रय विभाग योग — "Shraddha belief nahin, trust hai"
 
 > **"Shraddha koi dogma nahin hai jo tumhe bahar se pakad kar diya gaya ho. Shraddha tumhare andar ki gahri hoti parat hai — us parat ka naam hi shraddha hai. Aur jo kuch tum khaate ho, sunte ho, sochte ho — woh usi parat mein jaa kar milta hai. Isliye dekho: tum apne andar kya daal rahe ho."**

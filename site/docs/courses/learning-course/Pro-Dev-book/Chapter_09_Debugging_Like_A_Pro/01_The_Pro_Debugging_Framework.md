@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_09_Debugging_Like_A_Pro/01_The_Pro_D
 title: "🛠️ The Pro Debugging Framework"
 sidebar_label: "🛠️ The Pro Debugging Framework"
 sidebar_position: 1
+description: "A junior developer sees a red 'Whoops, looks like something went wrong' error screen in Laravel and their mind immediately goes into a state of panic or"
 ---
 # 🛠️ The Pro Debugging Framework
 

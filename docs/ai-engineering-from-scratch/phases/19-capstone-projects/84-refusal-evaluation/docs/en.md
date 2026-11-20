@@ -1,3 +1,7 @@
+---
+description: "A safety pass on an assistant goes wrong in two opposite ways. The model refuses things it should answer (over-refusal), and the model answers things it"
+---
+
 # Capstone 84 — Refusal Evaluation
 
 > Helpfulness on benign prompts and refusal on harmful prompts are two metrics, not one. Measure both.

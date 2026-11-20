@@ -4,6 +4,7 @@ slug: /laravel/34-real-estate
 title: "Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents"
 sidebar_label: "Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents"
 sidebar_position: 34
+description: "Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents: One-Sentence Takeaway: Theory is the foundation — master it before moving to examples"
 ---
 
 # Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents

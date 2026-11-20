@@ -4,6 +4,7 @@ slug: /cloud-computing/05-cloud-database
 title: "Chapter 5: Cloud Database Services"
 sidebar_label: "Chapter 5: Cloud Database Services"
 sidebar_position: 5
+description: "A[Database Landscape] --> B[Relational RDS] A --> D[Cache ElastiCache] A --> E[Warehouse Redshift] B --> F[Deployment: Multi-AZ + Read Replicas] C -->"
 ---
 
 # Chapter 5: Cloud Database Services

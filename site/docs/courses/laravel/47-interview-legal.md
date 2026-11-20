@@ -4,6 +4,7 @@ slug: /laravel/47-interview-legal
 title: "Chapter 47: Legal & Compliance Interview Q&A"
 sidebar_label: "Chapter 47: Legal & Compliance Interview Q&A"
 sidebar_position: 47
+description: "A: The core entities are clients (individuals or organizations receiving legal services), matters (specific engagements or files opened for a client)"
 ---
 
 # Chapter 47: Legal & Compliance Interview Q&A

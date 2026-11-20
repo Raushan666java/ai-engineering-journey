@@ -1,3 +1,7 @@
+---
+description: "Five stages. The seed is a list of three hypotheses. The scheduler runs six experiments across them with three parallel slots. The bus reports one or more"
+---
+
 # End-to-End Research Demo
 
 > A demo is the place where every contract you wrote earlier has to compose. If any one of them leaks, the demo is the lesson that catches it.

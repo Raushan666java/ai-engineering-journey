@@ -4,6 +4,7 @@ slug: /devops/04-cicd
 title: "Chapter 4: CI/CD"
 sidebar_label: "Chapter 4: CI/CD"
 sidebar_position: 6
+description: "Rollback by redeployment: Deploy the previous known-good artifact. Rollback by revert: Revert the git commit and deploy. Rollback by feature flag: Toggle"
 ---
 
 # Chapter 4: CI/CD

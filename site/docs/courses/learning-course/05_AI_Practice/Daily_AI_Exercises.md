@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/05_AI_Practice/Daily_AI_Exercises title: '🤖 Daily AI Exercises - 21-Day AI Learning Program' sidebar_label: '🤖 Daily AI Exercises"
+---
+
 ﻿---
 slug: /learning-course/05_AI_Practice/Daily_AI_Exercises
 title: "🤖 Daily AI Exercises - 21-Day AI Learning Program"

@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/ch-17-study-protocols
 title: "Chapter 17: Study Protocols & Brain Hacks"
 sidebar_label: "Chapter 17: Study Protocols & Brain Hacks"
 sidebar_position: 18
+description: "Chapter 16: Self-Assessment & Structured Preparation Strategy — Knowing where you stand before optimizing how you learn. Also see: Chapter 4: Pomodoro"
 ---
 
 # Chapter 17: Study Protocols & Brain Hacks

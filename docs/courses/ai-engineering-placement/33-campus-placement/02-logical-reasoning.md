@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to solve number and letter series, coding-decoding, blood relations, syllogisms, seating arrangements, puzzles"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Logical Reasoning for Campus Placements

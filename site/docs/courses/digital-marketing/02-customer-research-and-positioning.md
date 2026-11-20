@@ -4,6 +4,7 @@ slug: /digital-marketing/02-customer-research-and-positioning
 title: "Chapter 2 — Customer Research and Positioning"
 sidebar_label: "Chapter 2 — Customer Research and Positioning"
 sidebar_position: 2
+description: "An ideal customer profile is often written as 'SMB owners, 25–45, India'. That describes nobody in particular and cannot be acted on, because every"
 ---
 
 # Chapter 2 — Customer Research and Positioning

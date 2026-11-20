@@ -1,3 +1,7 @@
+---
+description: "Reality: LLMs predict the next token based on statistical patterns in training data. They have no understanding, no beliefs, no world model (that we can"
+---
+
 # AI Myths Busted
 
 Common misconceptions about AI, ML, and deep learning. Each one explained with what's actually going on.

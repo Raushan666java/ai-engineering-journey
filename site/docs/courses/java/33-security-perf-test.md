@@ -4,6 +4,7 @@ slug: /java/33-security-perf-test
 title: "Security Testing & Performance Testing"
 sidebar_label: "Security Testing & Performance Testing"
 sidebar_position: 33
+description: "Spring Security provides a set of testing annotations that simulate authenticated requests without starting a full OAuth2 provider or setting up a real"
 ---
 
 # Security Testing & Performance Testing

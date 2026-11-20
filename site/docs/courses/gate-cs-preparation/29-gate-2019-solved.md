@@ -1,9 +1,10 @@
 ---
 id: 29-gate-2019-solved
 slug: /gate-cs-preparation/29-gate-2019-solved
-title: "29 Gate 2019 Solved"
-sidebar_label: "29 Gate 2019 Solved"
+title: "29-gate-2019-solved"
+sidebar_label: "29-gate-2019-solved"
 sidebar_position: 26
+description: "If 1/4 of a number is 15, what is 3/4 of the same number?"
 ---
 
 ﻿# GATE CS 2019 Solved Paper
@@ -55,7 +56,6 @@ sidebar_position: 26
 ## Section A: General Aptitude (15 marks)
 
 ### Q1 [1 Mark] — Numerical Ability
-
 If 1/4 of a number is 15, what is 3/4 of the same number?
 
 (A) 35  
@@ -74,7 +74,6 @@ If 1/4 of a number is 15, what is 3/4 of the same number?
 </details>
 
 ### Q2 [1 Mark] — Numerical Ability
-
 The LCM of 12 and 18 is:
 
 (A) 24  
@@ -101,7 +100,6 @@ console.log(lcm(12, 18)); // 36
 </details>
 
 ### Q3 [1 Mark] — Verbal Ability
-
 Select the antonym of "AMELIORATE":
 
 (A) Improve  
@@ -120,7 +118,6 @@ Select the antonym of "AMELIORATE":
 </details>
 
 ### Q4 [1 Mark] — Logical Reasoning
-
 Find the next number: 1, 4, 9, 16, 25, ?
 
 (A) 30  
@@ -139,7 +136,6 @@ These are perfect squares: 1², 2², 3², 4², 5², next is 6² = 36.
 </details>
 
 ### Q5 [1 Mark] — Numerical Ability
-
 A man spends 60% of his income and saves the rest. If his income increases by 20% and spending increases by 10%, the percentage increase in savings is:
 
 (A) 25%  
@@ -171,7 +167,6 @@ console.log(savingsIncrease(60, 60, 20, 10)); // 35%
 </details>
 
 ### Q6 [2 Marks] — Numerical Ability
-
 The difference between compound interest and simple interest on ₹5000 at 10% for 2 years is:
 
 (A) ₹50  
@@ -201,7 +196,6 @@ console.log(ciSiDifference(5000, 10, 2)); // 50
 </details>
 
 ### Q7 [2 Marks] — Data Interpretation
-
 The average of 5 numbers is 20. If one number is removed, the average becomes 18. The removed number is:
 
 (A) 24  
@@ -220,7 +214,6 @@ Sum of 5 = 100. Sum of 4 = 72. Removed = 100 - 72 = 28.
 </details>
 
 ### Q8 [2 Marks] — Logical Reasoning
-
 A is the father of B, B is the mother of C, C is the brother of D. How is A related to D?
 
 (A) Grandfather  
@@ -239,7 +232,6 @@ A → B (father), B → C (mother), C and D are siblings. So A is D's grandfathe
 </details>
 
 ### Q9 [2 Marks] — Numerical Ability
-
 A man can row 10 km/h in still water. The stream flows at 4 km/h. He rows 14 km downstream and returns. Total time taken is:
 
 (A) 4 hrs  
@@ -273,7 +265,6 @@ Let me adjust: Distance = 24 km.
 </details>
 
 ### Q10 [2 Marks] — Verbal Ability
-
 Fill in the blank: "The committee ________ divided on this issue."
 
 (A) is  
@@ -295,8 +286,7 @@ Fill in the blank: "The committee ________ divided on this issue."
 
 ## Section B: Technical (85 marks)
 
-### Q1 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q1 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 The rank of the identity matrix I₃ is:
 
 (A) 0  
@@ -314,8 +304,7 @@ Identity matrix I₃ has full rank = 3 (all rows/columns linearly independent).
 
 </details>
 
-### Q2 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q2 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 The derivative of f(x) = ln(x) is:
 
 (A) 1  
@@ -333,8 +322,7 @@ d/dx ln(x) = 1/x for x > 0.
 
 </details>
 
-### Q3 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Easy
-
+### Q3 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Easy
 The minimum number of queues required to implement a stack is:
 
 (A) 1  
@@ -365,8 +353,7 @@ class StackUsingQueues<T> {
 
 </details>
 
-### Q4 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Easy
-
+### Q4 [1 Mark] — 📂 Operating Systems | 🏷️ Easy
 Which scheduling algorithm minimizes the average waiting time?
 
 (A) FCFS  
@@ -384,8 +371,7 @@ SJF (Shortest Job First) is provably optimal for minimizing average waiting time
 
 </details>
 
-### Q5 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Easy
-
+### Q5 [1 Mark] — 📂 Computer Networks | 🏷️ Easy
 A modem is used to connect:
 
 (A) Computer to telephone line  
@@ -403,8 +389,7 @@ Modem (Modulator-Demodulator) converts digital signals to analog for transmissio
 
 </details>
 
-### Q6 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Easy
-
+### Q6 [1 Mark] — 📂 Database Management Systems | 🏷️ Easy
 The number of attributes in a relation is called:
 
 (A) Degree  
@@ -422,8 +407,7 @@ Degree = number of attributes (columns). Cardinality = number of tuples (rows).
 
 </details>
 
-### Q7 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Easy
-
+### Q7 [1 Mark] — 📂 Theory of Computation | 🏷️ Easy
 The set of all strings ending with '00' is represented by:
 
 (A) (0+1)*00  
@@ -441,8 +425,7 @@ The set of all strings ending with '00' is represented by:
 
 </details>
 
-### Q8 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Easy
-
+### Q8 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Easy
 Which bus is used to carry data between CPU and memory?
 
 (A) Address bus  
@@ -460,8 +443,7 @@ The data bus carries data between CPU, memory, and I/O devices. The address bus 
 
 </details>
 
-### Q9 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Easy
-
+### Q9 [1 Mark] — 📂 Compiler Design | 🏷️ Easy
 Which of the following is not a SDT (Syntax-Directed Translation) scheme attribute?
 
 (A) Synthesized  
@@ -479,8 +461,7 @@ SDT attributes are synthesized, inherited, and L-attributed. "Derived" is not a 
 
 </details>
 
-### Q10 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Easy
-
+### Q10 [1 Mark] — 📂 Digital Logic | 🏷️ Easy
 The 2's complement of 5 (binary 0101) is:
 
 (A) 1010  
@@ -505,8 +486,7 @@ console.log(twosComplement(4, 5)); // 1011
 
 </details>
 
-### Q11 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q11 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 Which of the following is an application of the stack?
 
 (A) Expression evaluation  
@@ -524,8 +504,7 @@ Stacks are used in expression evaluation (infix to postfix conversion, postfix e
 
 </details>
 
-### Q12 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q12 [1 Mark] — 📂 Operating Systems | 🏷️ Medium
 The time required to create a new process is called:
 
 (A) Dispatch latency  
@@ -543,8 +522,7 @@ Process creation time is the overhead of creating a new process (PCB allocation,
 
 </details>
 
-### Q13 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
-
+### Q13 [1 Mark] — 📂 Computer Networks | 🏷️ Medium
 In TCP, the connection establishment requires:
 
 (A) 2-way handshake  
@@ -569,8 +547,7 @@ sequenceDiagram
 
 </details>
 
-### Q14 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q14 [1 Mark] — 📂 Database Management Systems | 🏷️ Medium
 Which SQL command is used to remove all rows from a table without removing the table structure?
 
 (A) DROP  
@@ -588,8 +565,7 @@ TRUNCATE removes all rows quickly without table structure removal. DELETE remove
 
 </details>
 
-### Q15 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
-
+### Q15 [1 Mark] — 📂 Theory of Computation | 🏷️ Medium
 Which of the following is NOT a valid string for the regular expression a*b*?
 
 (A) ε  
@@ -607,8 +583,7 @@ a*b* means all a's followed by all b's. "ba" has b before a, so it's not accepte
 
 </details>
 
-### Q16 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q16 [1 Mark] — 📂 Compiler Design | 🏷️ Medium
 The first step in compilation is:
 
 (A) Syntax analysis  
@@ -626,8 +601,7 @@ Lexical analysis (scanning) is the first phase, reading source code and producin
 
 </details>
 
-### Q17 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Medium
-
+### Q17 [1 Mark] — 📂 Digital Logic | 🏷️ Medium
 The number of entries in the truth table of a 4-input AND gate is:
 
 (A) 4  
@@ -641,12 +615,11 @@ The number of entries in the truth table of a 4-input AND gate is:
 **Answer:** (C) 16
 
 **Explanation:**
-A truth table for n inputs has 2âÂ�¿ entries. For 4 inputs: 2âÂ�´ = 16.
+A truth table for n inputs has 2ⁿ entries. For 4 inputs: 2⁴ = 16.
 
 </details>
 
-### Q18 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q18 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Medium
 Which of the following is a volatile memory?
 
 (A) ROM  
@@ -664,8 +637,7 @@ RAM (Random Access Memory) is volatile (data lost on power off). ROM, Flash, and
 
 </details>
 
-### Q19 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q19 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 Which of the following is a dynamic programming problem?
 
 (A) Bellman-Ford algorithm  
@@ -683,9 +655,8 @@ Bellman-Ford uses dynamic programming (relaxation across all edges iteratively).
 
 </details>
 
-### Q20 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
-If f(x) = 2x + 3, what is fâÂ�»¹(x)?
+### Q20 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Medium
+If f(x) = 2x + 3, what is f⁻¹(x)?
 
 (A) (x-3)/2  
 (B) (x+3)/2  
@@ -698,12 +669,11 @@ If f(x) = 2x + 3, what is fâÂ�»¹(x)?
 **Answer:** (A) (x-3)/2
 
 **Explanation:**
-y = 2x + 3 → x = 2y + 3 → y = (x-3)/2. So fâÂ�»¹(x) = (x-3)/2.
+y = 2x + 3 → x = 2y + 3 → y = (x-3)/2. So f⁻¹(x) = (x-3)/2.
 
 </details>
 
-### Q21 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
+### Q21 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Medium
 A fair coin is tossed 4 times. The probability of getting exactly 2 heads is:
 
 (A) 1/8  
@@ -717,12 +687,11 @@ A fair coin is tossed 4 times. The probability of getting exactly 2 heads is:
 **Answer:** (B) 3/8
 
 **Explanation:**
-P(2 heads in 4 tosses) = C(4,2) × (1/2)âÂ�´ = 6 × 1/16 = 6/16 = 3/8.
+P(2 heads in 4 tosses) = C(4,2) × (1/2)⁴ = 6 × 1/16 = 6/16 = 3/8.
 
 </details>
 
-### Q22 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q22 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 Which of the following is used to detect cycles in a directed graph?
 
 (A) BFS  
@@ -761,8 +730,7 @@ function hasCycle(graph: Map<number, number[]>): boolean {
 
 </details>
 
-### Q23 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q23 [2 Marks] — 📂 Operating Systems | 🏷️ Medium
 Which of the following is a page replacement algorithm that uses a reference bit?
 
 (A) FIFO  
@@ -780,8 +748,7 @@ The Clock algorithm (Second Chance) uses a reference bit to give pages a second 
 
 </details>
 
-### Q24 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q24 [2 Marks] — 📂 Database Management Systems | 🏷️ Medium
 Which of the following is true about a superkey?
 
 (A) It must be minimal  
@@ -799,8 +766,7 @@ A superkey is a set of attributes that uniquely identifies each tuple. It need n
 
 </details>
 
-### Q25 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
-
+### Q25 [2 Marks] — 📂 Computer Networks | 🏷️ Medium
 The number of layers in the TCP/IP model is:
 
 (A) 4  
@@ -818,8 +784,7 @@ TCP/IP model has 4 layers: Network Interface, Internet, Transport, Application.
 
 </details>
 
-### Q26 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q26 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 The worst-case complexity of Merge Sort is:
 
 (A) O(n)  
@@ -837,8 +802,7 @@ Merge Sort guarantees O(n log n) time complexity in all cases (best, average, wo
 
 </details>
 
-### Q27 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q27 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 A semaphore is initialized to 5. After 3 wait() and 1 signal() operations, its value is:
 
 (A) 1  
@@ -856,8 +820,7 @@ S = 5 - 3 + 1 = 3.
 
 </details>
 
-### Q28 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q28 [2 Marks] — 📂 Compiler Design | 🏷️ Medium
 Given the grammar: E → E + T | T, T → T * F | F, F → (E) | id. Which is true?
 
 (A) Left-recursive, unambiguous  
@@ -875,8 +838,7 @@ E → E + T is left-recursive (E appears on the left of the production). The gra
 
 </details>
 
-### Q29 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q29 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Medium
 Which of the following architectures uses a single memory space for both data and instructions?
 
 (A) Harvard  
@@ -894,8 +856,7 @@ Von Neumann architecture uses a single memory space for both instructions and da
 
 </details>
 
-### Q30 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
-
+### Q30 [2 Marks] — 📂 Theory of Computation | 🏷️ Medium
 The set of all CFLs is closed under:
 
 (A) Intersection  
@@ -913,8 +874,7 @@ CFLs are closed under union, concatenation, Kleene star, substitution, and homom
 
 </details>
 
-### Q31 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q31 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 Consider R(A,B,C,D) with FDs: A→B, B→C, C→D. Which of the following is a candidate key?
 
 (A) A  
@@ -928,15 +888,14 @@ Consider R(A,B,C,D) with FDs: A→B, B→C, C→D. Which of the following is a c
 **Answer:** (A) A
 
 **Explanation:**
-AâÂ�º = {A,B,C,D} → A determines all attributes. A is a candidate key.
-BâÂ�º = {B,C,D} → no A. Not key.
-CâÂ�º = {C,D} → no A,B. Not key.
-DâÂ�º = {D} → not key.
+A⁺ = {A,B,C,D} → A determines all attributes. A is a candidate key.
+B⁺ = {B,C,D} → no A. Not key.
+C⁺ = {C,D} → no A,B. Not key.
+D⁺ = {D} → not key.
 
 </details>
 
-### Q32 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q32 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 A binary tree has 20 leaves. The number of nodes with exactly 2 children is:
 
 (A) 19  
@@ -958,8 +917,7 @@ Let me assume "full binary tree" is implied. Answer = 19.
 
 </details>
 
-### Q33 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q33 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 Which of the following IP addresses is a loopback address?
 
 (A) 10.0.0.1  
@@ -977,8 +935,7 @@ Which of the following IP addresses is a loopback address?
 
 </details>
 
-### Q34 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q34 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 Which of the following is NOT a valid state in a process life cycle?
 
 (A) New  
@@ -996,8 +953,7 @@ The classic 5-state model: New, Ready, Running, Waiting (Blocked), Terminated. "
 
 </details>
 
-### Q35 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q35 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 The number of bits in the IEEE 754 double-precision exponent is:
 
 (A) 8  
@@ -1015,8 +971,7 @@ IEEE 754 double precision: 1 sign bit, 11 exponent bits, 52 mantissa bits. Singl
 
 </details>
 
-### Q36 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
-
+### Q36 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
 The number of 4-digit numbers that can be formed using digits 0,1,2,3,4,5 without repetition is:
 
 (A) 120  
@@ -1045,8 +1000,7 @@ console.log(fourDigitNumbers([0,1,2,3,4,5])); // 300
 
 </details>
 
-### Q37 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q37 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 A complete binary tree with n nodes has height (root at height 0):
 
 (A) ⌊log₂(n)⌋  
@@ -1071,8 +1025,7 @@ console.log(completeTreeHeight(7)); // 2, complete tree of 7 nodes has height 2
 
 </details>
 
-### Q38 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q38 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 Which of the following statements are true?
 
 (A) Every regular language is context-free  
@@ -1090,8 +1043,7 @@ Regular ⊂ CFL ⊂ CSL ⊂ Recursive ⊂ RE. So every regular language is conte
 
 </details>
 
-### Q39 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q39 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 Which of the following ensures that if a foreign key references a primary key, the referenced tuple must exist?
 
 (A) Entity integrity  
@@ -1109,8 +1061,7 @@ Referential integrity ensures that a foreign key value must match an existing pr
 
 </details>
 
-### Q40 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q40 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 Which layer of the TCP/IP model corresponds to the Session and Presentation layers of OSI?
 
 (A) Application  
@@ -1128,8 +1079,7 @@ In TCP/IP, the Application layer combines the functions of OSI's Application, Pr
 
 </details>
 
-### Q41 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q41 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The number of edges in a complete bipartite graph K₃,₄ is:
 
 (A) 7  
@@ -1147,8 +1097,7 @@ K_{m,n} has m×n edges. K₃,₄ = 3 × 4 = 12.
 
 </details>
 
-### Q42 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q42 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 Given page references: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 with 4 frames using FIFO, page faults are:
 
 (A) 8  
@@ -1215,8 +1164,7 @@ Yes, 10 faults. With options A:8, B:9, C:10, D:11, the answer is C:10.
 
 </details>
 
-### Q43 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q43 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 A DMA controller transfers data at 8 MB/s. How long to transfer 64 KB?
 
 (A) 4 ms  
@@ -1242,8 +1190,7 @@ console.log(dmaTime(8, 64)); // ~7.8 ms
 
 </details>
 
-### Q44 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q44 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 Which of the following is true about AVL trees?
 
 (A) Height difference between left and right subtrees ≤ 1  
@@ -1261,8 +1208,7 @@ AVL trees maintain the balance factor (height difference) of at most 1 for every
 
 </details>
 
-### Q45 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
-
+### Q45 [2 Marks] — 📂 Compiler Design | 🏷️ Hard
 Which optimization technique replaces a computation with a previously computed result?
 
 (A) Constant folding  
@@ -1290,8 +1236,7 @@ CSE identifies expressions that are computed multiple times with the same operan
 
 </details>
 
-### Q46 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q46 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 Which of the following problems for CFGs is decidable?
 
 (A) Equivalence  
@@ -1309,8 +1254,7 @@ CFG emptiness is decidable (check if start symbol generates any terminal string)
 
 </details>
 
-### Q47 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
-
+### Q47 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
 If A = [[2, 1], [1, 2]], the eigen values are:
 
 (A) 1, 2  
@@ -1337,8 +1281,7 @@ console.log(eigenValues2x2(2, 1, 1, 2)); // [3, 1]
 
 </details>
 
-### Q48 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q48 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 A max-heap is built from the array: [5, 3, 8, 1, 9]. The heap after build is:
 
 (A) [9, 5, 8, 1, 3]  
@@ -1355,13 +1298,12 @@ A max-heap is built from the array: [5, 3, 8, 1, 9]. The heap after build is:
 Building max-heap from [5,3,8,1,9]:
 Start from last non-leaf index=1 (value 3).
 Heapify from index 1: 3<9 → swap → [5,9,8,1,3].
-Heapify from index 0: 5<9 (swap 0â†—�1) → [9,5,8,1,3].
+Heapify from index 0: 5<9 (swap 0↔1) → [9,5,8,1,3].
 Result: [9,5,8,1,3].
 
 </details>
 
-### Q49 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q49 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 The thread that shares the same address space with its parent is called:
 
 (A) Kernel thread  
@@ -1379,8 +1321,7 @@ User threads share the same address space and are managed without kernel involve
 
 </details>
 
-### Q50 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q50 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 In SQL, the constraint that ensures values in a column are unique is:
 
 (A) PRIMARY KEY  
@@ -1398,8 +1339,7 @@ UNIQUE constraint ensures all values in a column are distinct. PRIMARY KEY is al
 
 </details>
 
-### Q51 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q51 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 Which of the following is a connection-oriented protocol?
 
 (A) UDP  
@@ -1417,8 +1357,7 @@ TCP is connection-oriented (requires connection establishment before data transf
 
 </details>
 
-### Q52 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q52 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 A register that holds the instruction being executed is:
 
 (A) MAR  
@@ -1436,8 +1375,7 @@ IR (Instruction Register) holds the currently executing instruction. MAR holds m
 
 </details>
 
-### Q53 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q53 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 A Turing machine can be described as:
 
 (A) 7-tuple  
@@ -1471,8 +1409,7 @@ Total: 65 questions ✓
 
 </details>
 
-### Q54 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q54 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The depth of a node in a tree is measured from:
 
 (A) Node to root  
@@ -1490,8 +1427,7 @@ Depth of a node = number of edges from root to the node. Height = number of edge
 
 </details>
 
-### Q55 [2 Marks] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Hard
-
+### Q55 [2 Marks] — 📂 Digital Logic | 🏷️ Hard
 A 4-bit synchronous counter uses how many flip-flops?
 
 (A) 2  
@@ -1580,16 +1516,13 @@ pie title "Difficulty Distribution - GATE CS 2019"
 
 ### Paper Analysis
 
-
 GATE 2019 Computer Science paper comprised 65 questions across two sections: General Aptitude (10 questions, 15 marks) and Technical (55 questions, 85 marks). The total marks were 100. This was the first year GATE introduced the "multiple correct answer" MSQ format for CS, with 8 MSQs appearing in the Technical section. The paper had a balanced subject distribution with no single subject dominating — Data Structures & Algorithms carried approximately 15 marks, followed by Operating Systems and DBMS at 10-11 marks each. A notable aspect was the increased emphasis on Computer Networks (9 marks), with questions covering a wider range of topics than previous years. The GA section included a data sufficiency question that required identifying whether given statements were adequate to answer a posed problem.
 
 ### Difficulty Trends
 
-
 GATE 2019 had a difficulty distribution of approximately 30% Easy, 52% Medium, and 18% Hard, making it one of the more moderate papers of the late 2010s. Data Structures questions were of medium difficulty — an AVL tree insertion question and a max-heap construction problem tested standard knowledge. Operating Systems had a tougher question on semaphore implementation that required understanding of wait() and signal() ordering nuances. Computer Networks introduced a question on TCP handshake sequence numbers that required detailed understanding of the SYN and ACK bit patterns. Theory of Computation had a challenging question on CFL closure properties. Aptitude was slightly more demanding than 2018, with a data interpretation question involving multiple tables. The average score of top 100 examinees was approximately 68/100.
 
 ### Key Concepts Tested
-
 
 | Subject | Key Concepts |
 |---------|-------------|
@@ -1819,14 +1752,13 @@ Test your understanding of GATE 2019 concepts with these 5 questions.
 
 ### Answer Key
 
-
 | Q | Answer | Explanation |
 |---|--------|-------------|
 | 1 | b | IEEE 754 double-precision: 1 sign bit, 11 exponent bits (biased by 1023), 52 significand bits. With the hidden (implied) 1-bit, total precision is 53 bits. Single-precision: 1+8+23. |
 | 2 | a | SQL standards allow multiple NULL values in a UNIQUE column (except in some DBMS implementations like MS SQL Server where only one NULL is allowed). The other statements are correct. |
-| 3 | c | CFLs are closed under union (if Lâ‚Â� and L₂ are CFL, then Lâ‚Â�∪L₂ is CFL). They are NOT closed under intersection, complementation, or set difference. |
+| 3 | c | CFLs are closed under union (if L₁ and L₂ are CFL, then L₁∪L₂ is CFL). They are NOT closed under intersection, complementation, or set difference. |
 | 4 | b | In non-preemptive SJF, starvation occurs when a continuous stream of short-duration jobs arrives, preventing long-duration jobs from ever executing. Option b describes this scenario. Priority aging helps preemptive priority scheduling. |
-| 5 | a | From F: AB → C, C → D (so AB → D via transitivity), D → A (redundant given AB). AB determines all attributes: ABâÂ�º = ABCD. Checking C: C → D → A but cannot get B. Checking D: D → A but cannot get B or C. So only AB is a candidate key. |
+| 5 | a | From F: AB → C, C → D (so AB → D via transitivity), D → A (redundant given AB). AB determines all attributes: AB⁺ = ABCD. Checking C: C → D → A but cannot get B. Checking D: D → A but cannot get B or C. So only AB is a candidate key. |
 
 ## Exercises
 

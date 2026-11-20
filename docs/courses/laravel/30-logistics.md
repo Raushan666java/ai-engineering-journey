@@ -1,3 +1,7 @@
+---
+description: "Every logistics system rests on a core set of interconnected data models. These models represent the physical and digital flow of goods: where inventory"
+---
+
 # Chapter 30: Logistics & Supply Chain Agents
 
 > **Previous:** [Education](./29-education.md) | **Next:** [HR Recruitment](./31-hr-recruitment.md)

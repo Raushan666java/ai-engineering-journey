@@ -1,3 +1,7 @@
+---
+description: "The projection layer aligns one image vector with one caption vector. A real vision-language decoder needs every text token to attend to every patch"
+---
+
 # Cross-Attention Fusion
 
 > The projection layer aligns one image vector with one caption vector. A real vision-language decoder needs every text token to attend to every patch token, so the model can ground each word in a region. Cross-attention is how that grounding happens. The text queries; the vision keys and values answer. This lesson builds the cross-attention block, the causal text self-attention, and the mask shapes that keep both legal.

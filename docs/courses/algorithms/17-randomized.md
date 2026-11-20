@@ -1,3 +1,7 @@
+---
+description: "Chapter 16: Approximation Algorithms — Algorithm design for hard problems | Next: Chapter 18: Advanced Topics — From randomized methods to online and"
+---
+
 # Chapter 17: Randomized Algorithms
 
 > **Prerequisites:** [Chapter 16: Approximation Algorithms](./16-approximation.md) — Algorithm design for hard problems | **Next:** [Chapter 18: Advanced Topics](./18-advanced.md) — From randomized methods to online and streaming algorithms

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/27-ai-infrastructure/07-knowledge-distillation
 title: "Knowledge Distillation"
 sidebar_label: "Knowledge Distillation"
 sidebar_position: 329
+description: "Knowledge distillation transfers knowledge from a large teacher model to a small student model. The student learns to mimic the teacher's behavior. This"
 ---
 
 <!-- improved -->

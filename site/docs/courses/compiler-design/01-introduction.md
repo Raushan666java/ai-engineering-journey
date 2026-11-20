@@ -4,6 +4,7 @@ slug: /compiler-design/01-introduction
 title: "Chapter 1: Introduction to Compiler Design"
 sidebar_label: "Chapter 1: Introduction to Compiler Design"
 sidebar_position: 1
+description: "After completing this chapter, students will be able to: describe the analysis-synthesis model of compilation; enumerate and explain the principal phases"
 ---
 
 # Chapter 1: Introduction to Compiler Design

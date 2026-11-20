@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/16-logical-question-bank
 title: "Logical Reasoning — 100 Question Drill Bank (Any Company)"
 sidebar_label: "Logical Reasoning — 100 Question Drill Bank (Any Company)"
 sidebar_position: 377
+description: "Rule: 45-75 seconds per question. Answers with explanations at the bottom. Covers all 12 types from logical-all-types.md. Difficulty tags: (E) Easy, (M)"
 ---
 
 <!-- improved -->

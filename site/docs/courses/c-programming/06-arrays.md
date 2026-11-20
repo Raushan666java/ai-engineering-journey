@@ -4,6 +4,7 @@ slug: /c-programming/06-arrays
 title: "Chapter 6: Arrays"
 sidebar_label: "Chapter 6: Arrays"
 sidebar_position: 6
+description: "Real-world analogy: A hotel with numbered rooms on a single hallway. Room 101 (index 0), Room 102 (index 1), etc. Each room holds one guest (value). The"
 ---
 
 # Chapter 6: Arrays

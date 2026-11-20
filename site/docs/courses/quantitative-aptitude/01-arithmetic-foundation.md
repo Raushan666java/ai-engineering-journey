@@ -4,6 +4,7 @@ slug: /quantitative-aptitude/01-arithmetic-foundation
 title: "Chapter 1: Arithmetic Foundation — Percentage, Profit & Loss, Simple/Compound Interest, Ratio & Proportion, Averages"
 sidebar_label: "Chapter 1: Arithmetic Foundation — Percentage, Profit & Loss, Simple/Compound Interest, Ratio & Proportion, Averages"
 sidebar_position: 1
+description: "Question: In an examination, 65% of the candidates passed in Mathematics, 55% passed in English, and 35% passed in both subjects. If 2500 candidates"
 ---
 
 # Chapter 1: Arithmetic Foundation — Percentage, Profit & Loss, Simple/Compound Interest, Ratio & Proportion, Averages

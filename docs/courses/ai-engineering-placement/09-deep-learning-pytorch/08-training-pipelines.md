@@ -1,3 +1,7 @@
+---
+description: "Training Pipelines — DataLoader, Transforms, Optimizers, Schedulers, Checkpointing: Deep learning powers modern AI breakthroughs. PyTorch is the framework"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Training Pipelines — DataLoader, Transforms, Optimizers, Schedulers, Checkpointing

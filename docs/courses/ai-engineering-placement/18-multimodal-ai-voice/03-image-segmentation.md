@@ -1,3 +1,7 @@
+---
+description: "Image Segmentation: AI is moving beyond text. Computer vision, speech recognition, and multimodal models process images, audio, and video. This module"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Image Segmentation

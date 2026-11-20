@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. The CAP theorem, formalized by Seth Gilbert and Nancy Lynch"
+---
+
 # Chapter 6: CAP Theorem and Distributed Consistency
 > **Previous:** [05 Partitioning Sharding](./05-partitioning-sharding.md) | **Next:** [07 Message Queues](./07-message-queues.md)
 

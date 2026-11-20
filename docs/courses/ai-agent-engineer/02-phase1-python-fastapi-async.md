@@ -1,3 +1,7 @@
+---
+description: "Write production Python with type hints, build FastAPI endpoints with proper DI and validation, understand asyncIO well enough to explain it in an"
+---
+
 # Phase 1 — Python + FastAPI + AsyncIO
 
 **Duration:** Weeks 2-3, ~30 hours

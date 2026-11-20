@@ -1,3 +1,7 @@
+---
+description: "Non-determinism (Chapter 2.3) means an agent that worked correctly on your test run might behave differently on the next one, or after you tweak a prompt"
+---
+
 ## Chapter 13: Evaluation — How to Know Your Agent Actually Works
 
 ### 13.1 Why "It Worked When I Tried It" Isn't Enough

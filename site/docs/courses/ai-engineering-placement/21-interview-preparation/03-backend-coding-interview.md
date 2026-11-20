@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/03-backend-coding-inter
 title: "Backend Coding Interview"
 sidebar_label: "Backend Coding Interview"
 sidebar_position: 253
+description: "Backend Coding Interview: Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews"
 ---
 
 <!-- improved -->

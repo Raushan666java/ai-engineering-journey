@@ -4,6 +4,7 @@ slug: /c-programming/13-preprocessor
 title: "Chapter 13: The Preprocessor"
 sidebar_label: "Chapter 13: The Preprocessor"
 sidebar_position: 13
+description: "The preprocessor runs as the first stage of compilation. It processes directives — lines beginning with # — before the compiler sees the code. It is a"
 ---
 
 # Chapter 13: The Preprocessor

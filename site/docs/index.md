@@ -3,6 +3,7 @@ slug: /course-overview
 title: "Backend + AI Engineer - Complete Placement Course"
 sidebar_label: "Course Overview"
 sidebar_position: 1
+description: "Backend + AI Engineer - Complete Placement Course: This is a single, unified placement course for software developers targeting Backend + AI Engineer"
 ---
 
 # Backend + AI Engineer — Complete Placement Course

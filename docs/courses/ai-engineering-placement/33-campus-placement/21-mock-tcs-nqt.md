@@ -1,3 +1,7 @@
+---
+description: "This mock simulates the TCS NQT aptitude section exactly: 24 quantitative, 15 logical, 15 verbal. Rule: 60-90 seconds per question. Answers at the bottom"
+---
+
 <!-- improved -->
 ﻿# TCS NQT Mock Test - Full Pattern Simulation (54 Questions)
 

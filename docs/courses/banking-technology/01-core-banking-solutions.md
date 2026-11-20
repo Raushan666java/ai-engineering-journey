@@ -1,3 +1,7 @@
+---
+description: "Core Banking Solution (CBS) is the centralized software platform that enables customers to operate their accounts from any branch of the bank, regardless"
+---
+
 # Chapter 01: Core Banking Solutions (CBS)
 
 ## Learning Objectives

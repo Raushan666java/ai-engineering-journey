@@ -1,3 +1,7 @@
+---
+description: "Gradle is the de facto build tool for modern Java and Kotlin projects. Unlike Maven's rigid XML-driven lifecycle, Gradle combines a flexible, programmable"
+---
+
 # Gradle Deep Dive
 
 > **Previous:** [Maven Deep Dive](./07-maven.md) | **Next:** [Spring Framework Introduction](./09-spring-intro.md)

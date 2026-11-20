@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/24-statistics-mathematics/05-linear-algebra-esse
 title: "Chapter 05: Linear Algebra Essentials"
 sidebar_label: "Chapter 05: Linear Algebra Essentials"
 sidebar_position: 303
+description: "Linear algebra is the mathematical language of modern machine learning and AI. Every neural network layer is a matrix multiplication, word embeddings are"
 ---
 
 <!-- improved -->

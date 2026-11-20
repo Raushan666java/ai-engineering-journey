@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/16-mlops-production/03-data-versioning
 title: "Data Versioning"
 sidebar_label: "Data Versioning"
 sidebar_position: 208
+description: "Data Versioning: MLOps bridges the gap between experiment and production. Experiment tracking, CI/CD, model serving, and drift monitoring keep AI systems"
 ---
 
 <!-- improved -->

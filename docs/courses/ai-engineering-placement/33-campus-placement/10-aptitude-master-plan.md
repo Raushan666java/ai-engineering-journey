@@ -1,3 +1,7 @@
+---
+description: "This plan is company-neutral. It builds a complete aptitude skill set (Quant + Logical + Verbal) that clears the aptitude gate at ANY company: TCS NQT"
+---
+
 <!-- improved -->
 # Universal Aptitude Master Plan — Crack Any Company's Aptitude Round
 

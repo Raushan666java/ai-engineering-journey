@@ -4,6 +4,7 @@ slug: /artificial-intelligence/06-knowledge-representation
 title: "Chapter 6: Knowledge Representation"
 sidebar_label: "Chapter 6: Knowledge Representation"
 sidebar_position: 10
+description: "By the conclusion of this chapter, the student will be able to: (1) explain the role of ontology in knowledge representation; (2) distinguish"
 ---
 
 # Chapter 6: Knowledge Representation

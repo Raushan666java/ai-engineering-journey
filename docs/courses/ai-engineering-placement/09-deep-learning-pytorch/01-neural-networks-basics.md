@@ -1,3 +1,7 @@
+---
+description: "Neural networks are the engine behind every modern AI system — from GPT-4's language generation to self-driving car vision. This chapter builds your"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Neural Networks Basics — Perceptron, Activation Functions, Backpropagation

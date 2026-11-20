@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_13_Project_Management/06_Designing_W
 title: "🎨 Designing With Project Management"
 sidebar_label: "🎨 Designing With Project Management"
 sidebar_position: 6
+description: "If you open your IDE, create a Dashboard.jsx file, and start randomly typing Tailwind classes to figure out what the dashboard should look like, you have"
 ---
 # 🎨 Designing With Project Management
 

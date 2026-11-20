@@ -1,3 +1,7 @@
+---
+description: "A planner that asks one model one time gets one hypothesis. That is fine for a worked example. For a research loop it is the wrong shape. The loop wants a"
+---
+
 # Hypothesis Generator
 
 > A research agent that asks the same question twice is wasting tokens. The trick is forcing each draft to land somewhere new.

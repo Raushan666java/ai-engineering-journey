@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/ch-14-social-learning-communities
 title: "Chapter 14: Social Learning & Communities"
 sidebar_label: "Chapter 14: Social Learning & Communities"
 sidebar_position: 15
+description: "Learning alone is limited. Learning with others compounds. This chapter covers how to leverage social dynamics — accountability groups, online"
 ---
 
 # Chapter 14: Social Learning & Communities

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/17-ai-security-guardrails/07-jailbreaks-red-team
 title: "Jailbreaks & Red Teaming"
 sidebar_label: "Jailbreaks & Red Teaming"
 sidebar_position: 222
+description: "Large Language Models are remarkably capable — and remarkably vulnerable. Attackers continuously develop jailbreak techniques that bypass safety"
 ---
 
 <!-- improved -->

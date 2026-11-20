@@ -3,6 +3,7 @@ slug: /learning-course/01_AI_Setup/AI_Tools_Configuration
 title: "🤖 AI Tools Configuration - 10 Minutes"
 sidebar_label: "🤖 AI Tools Configuration - 10 Minutes"
 sidebar_position: 2
+description: "Configure AI tools for 5x faster learning in 10 minutes."
 ---
 # 🤖 AI Tools Configuration - 10 Minutes
 

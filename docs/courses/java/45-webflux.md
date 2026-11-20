@@ -1,3 +1,7 @@
+---
+description: "Spring WebFlux is the reactive-stack web framework introduced in Spring 5, built on Project Reactor. It runs on Netty (default), Undertow, or Servlet 3.1+"
+---
+
 # Chapter 45: Spring WebFlux
 
 > **Previous:** [Project Reactor &amp; Reactive Streams](./44-reactor.md) | **Next:** [R2DBC &amp; Reactive Data Access](./46-r2dbc.md)

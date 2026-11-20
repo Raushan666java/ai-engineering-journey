@@ -4,6 +4,7 @@ slug: /coding-problems/05-trees
 title: "Chapter 05: Trees"
 sidebar_label: "Chapter 05: Trees"
 sidebar_position: 5
+description: "Tree problems are among the most common interview topics. They test your understanding of recursion, BFS/DFS traversal, and data structure design"
 ---
 
 # Chapter 05: Trees

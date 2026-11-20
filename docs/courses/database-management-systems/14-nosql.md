@@ -1,3 +1,7 @@
+---
+description: "NoSQL (Not Only SQL) refers to a class of database management systems that do not follow the relational model. They are designed for horizontal scaling"
+---
+
 # Chapter 14: NoSQL Databases
 
 > **Prev:** [Chapter 13—Query Processing](13-query-processing.md) | **Next:** [Chapter 15—MongoDB](15-mongodb.md)

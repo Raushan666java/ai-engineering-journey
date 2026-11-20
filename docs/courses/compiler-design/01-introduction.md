@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: describe the analysis-synthesis model of compilation; enumerate and explain the principal phases"
+---
+
 # Chapter 1: Introduction to Compiler Design
 
 **? Prerequisite:** None | **Next:** [Chapter 2: Lexical Analysis](02-lexical.md)

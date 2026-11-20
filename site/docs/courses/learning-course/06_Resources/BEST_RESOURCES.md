@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/06_06_Resources/BEST_RESOURCES title: '📚 Best Learning Resources' sidebar_label: '📚 Best Learning Resources'"
+---
+
 ﻿---
 slug: /learning-course/06_06_Resources/BEST_RESOURCES
 title: "📚 Best Learning Resources"

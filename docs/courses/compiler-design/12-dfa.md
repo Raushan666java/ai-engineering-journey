@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: formulate data-flow equations for reaching definitions, live variables, and available"
+---
+
 # Chapter 12: Data-Flow Analysis
 
 ? Previous: [Chapter 11: Control-Flow Analysis](11-cfa.md) | **Next:** [Chapter 13: Loop Optimization](13-loop-optimization.md)

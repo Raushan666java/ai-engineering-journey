@@ -1,3 +1,7 @@
+---
+description: "Kurukshetra ka maidan. Dono senayen aamne-saamne. Shankh baj chuke hain, dhanush uth chuke hain — aur phir achanak Arjuna ke haath se GANDEEV gir jata"
+---
+
 # अध्याय १: विषाद योग — Crisis hi darwaza hai
 
 > **"Jab tak tum tuto nahin, tab tak tum banna shuru nahin hote. Vishad koi bimari nahin hai — vishad to prarambh hai."**

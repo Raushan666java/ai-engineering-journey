@@ -4,6 +4,7 @@ slug: /system-design/19-case-study-whatsapp
 title: "Chapter 19: Case Study — WhatsApp and Real-Time Messaging"
 sidebar_label: "Chapter 19: Case Study — WhatsApp and Real-Time Messaging"
 sidebar_position: 19
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. WhatsApp processes over 100 billion messages daily across 2"
 ---
 
 # Chapter 19: Case Study — WhatsApp and Real-Time Messaging

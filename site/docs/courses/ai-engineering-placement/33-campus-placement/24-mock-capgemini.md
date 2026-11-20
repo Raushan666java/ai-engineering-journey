@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/24-mock-capgemini
 title: "Capgemini Mock Test — Full Pattern Simulation (42 Questions)"
 sidebar_label: "Capgemini Mock Test — Full Pattern Simulation (42 Questions)"
 sidebar_position: 385
+description: "Simulates the Capgemini aptitude section: 18 quant, 12 logical, 12 verbal. Capgemini is arithmetic-heavy — profit/loss, SI/CI and mixtures appear every"
 ---
 
 <!-- improved -->

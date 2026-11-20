@@ -1,3 +1,7 @@
+---
+description: "Spring GraphQL: C) The one with best operational characteristics. Production choices should prioritize observability, maintainability, and operability."
+---
+
 # Spring GraphQL
 
 > **Previous:** [Spring AI](./47-spring-ai.md) | **Next:** [Spring Batch](./49-batch.md)

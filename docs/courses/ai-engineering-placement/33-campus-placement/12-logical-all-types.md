@@ -1,3 +1,7 @@
+---
+description: "Complete theory for every reasoning type asked in ANY company aptitude round. Each type: method → key insight → 3-5 worked examples → common trap. Then"
+---
+
 <!-- improved -->
 # Logical Reasoning — All Types Master Reference
 

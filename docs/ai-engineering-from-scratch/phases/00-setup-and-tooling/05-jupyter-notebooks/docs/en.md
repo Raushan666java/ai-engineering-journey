@@ -1,3 +1,7 @@
+---
+description: "Every AI paper, tutorial, and Kaggle competition uses Jupyter notebooks. They let you run code in pieces, see outputs inline, mix code with explanations"
+---
+
 # Jupyter Notebooks
 
 > Notebooks are the lab bench of AI engineering. You prototype here, then move what works into production.

@@ -1,3 +1,7 @@
+---
+description: "IntersectionObserver asynchronously observes visibility changes of elements relative to a parent or the viewport → essential for lazy loading, infinite"
+---
+
 # Chapter 4 → JavaScript and the DOM
 
 > **Previous:** [03-js-basics](./03-js-basics.md) | **Next:** [05-es6-plus](./05-es6-plus.md)

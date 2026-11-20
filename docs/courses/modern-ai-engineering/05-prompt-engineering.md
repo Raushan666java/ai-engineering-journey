@@ -1,3 +1,7 @@
+---
+description: "By the end of this chapter, you will be able to: - Design effective prompts using clarity, specificity, role assignment, and output formatting principles"
+---
+
 # Chapter 5: Prompt Engineering
 
 > **Learning Objectives**

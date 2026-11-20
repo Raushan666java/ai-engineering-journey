@@ -1,3 +1,7 @@
+---
+description: "A[Storage Taxonomy] --> B[Object Storage] B --> E[Versioning and Lifecycle] C --> F[Performance Tiers] D --> G[Shared Access Protocols] E --> H[CDN and"
+---
+
 # Chapter 4: Cloud Storage Services
 
 > **Previous:** [Chapter 3: Cloud Compute Services](./03-cloud-compute.md) | **Next:** [Chapter 5: Cloud Database Services](./05-cloud-database.md)

@@ -4,6 +4,7 @@ slug: /devops/10-monitoring
 title: "Chapter 10: Site Reliability Engineering (SRE) and Monitoring"
 sidebar_label: "Chapter 10: Site Reliability Engineering (SRE) and Monitoring"
 sidebar_position: 19
+description: "SRE is a discipline that incorporates aspects of software engineering and applies them to infrastructure and operations problems. The main goals are to"
 ---
 
 # Chapter 10: Site Reliability Engineering (SRE) and Monitoring

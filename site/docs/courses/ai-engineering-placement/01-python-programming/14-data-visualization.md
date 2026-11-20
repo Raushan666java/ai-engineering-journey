@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming/14-data-visualization
 title: "Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards"
 sidebar_label: "Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards"
 sidebar_position: 23
+description: "Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and"
 ---
 
 <!-- improved -->

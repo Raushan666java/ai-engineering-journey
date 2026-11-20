@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/29-research-reading
 title: "29 — Research Reading & AI Literature"
 sidebar_label: "29 — Research Reading & AI Literature"
 sidebar_position: 343
+description: "Read papers without drowning: how to skim, what to extract, and how to turn a paper into a working prototype."
 ---
 
 # 29 — Research Reading & AI Literature

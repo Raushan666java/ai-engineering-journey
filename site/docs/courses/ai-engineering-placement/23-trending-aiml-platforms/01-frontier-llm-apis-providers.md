@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/23-trending-aiml-platforms/01-frontier-llm-apis-
 title: "Frontier LLM APIs & Providers"
 sidebar_label: "Frontier LLM APIs & Providers"
 sidebar_position: 289
+description: "Frontier LLM APIs & Providers: The AI landscape evolves fast. New LLM providers, agent platforms, and developer toolkits emerge monthly. This module"
 ---
 
 <!-- improved -->

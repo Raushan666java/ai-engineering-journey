@@ -3,6 +3,7 @@ slug: /learning-course/06_AI_Templates/Progress_Dashboards
 title: "📊 Learning Metrics Dashboard"
 sidebar_label: "📊 Learning Metrics Dashboard"
 sidebar_position: 3
+description: "📊 Learning Metrics Dashboard — learning course"
 ---
 # 📊 Learning Metrics Dashboard
 

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/visual-notes
 title: "Visual Notes — The Interview Funnel"
 sidebar_label: "Visual Notes"
 sidebar_position: 271
+description: "Visual Notes — The Interview Funnel: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before"
 ---
 
 # Visual Notes — The Interview Funnel

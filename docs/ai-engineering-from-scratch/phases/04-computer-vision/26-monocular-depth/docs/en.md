@@ -1,3 +1,7 @@
+---
+description: "A depth map is a single-channel image where each pixel is a distance from the camera. Predicting it from one RGB frame used to be impossible without"
+---
+
 # Monocular Depth & Geometry Estimation
 
 > A depth map is a single-channel image where each pixel is a distance from the camera. Predicting it from one RGB frame used to be impossible without stereo or LiDAR. In 2026 a frozen ViT encoder plus a lightweight head gets within a few percent of ground truth.

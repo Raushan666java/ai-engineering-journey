@@ -1,3 +1,7 @@
+---
+description: "Agent engineering: tool loops, state machines, LangGraph graphs, MCP servers and human-in-the-loop checkpoints."
+---
+
 # 13 — AI Agents & LangGraph
 
 ## Overview

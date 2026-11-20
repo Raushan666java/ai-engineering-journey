@@ -4,6 +4,7 @@ slug: /artificial-intelligence/08-uncertainty
 title: "Chapter 8: Uncertainty and Probabilistic Reasoning"
 sidebar_label: "Chapter 8: Uncertainty and Probabilistic Reasoning"
 sidebar_position: 15
+description: "Imagine planning a picnic. The weather forecast says '70% chance of rain.' You cannot know for certain whether it will rain, but you must decide: bring an"
 ---
 
 # Chapter 8: Uncertainty and Probabilistic Reasoning

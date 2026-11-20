@@ -4,6 +4,7 @@ slug: /computer-networks/13-sockets
 title: "Chapter 13: Socket Programming → Complete Reference"
 sidebar_label: "Chapter 13: Socket Programming → Complete Reference"
 sidebar_position: 13
+description: "A socket is a software abstraction representing one endpoint of a two-way communication channel. The socket API (Berkeley sockets, 1983) provides system"
 ---
 
 # Chapter 13: Socket Programming → Complete Reference

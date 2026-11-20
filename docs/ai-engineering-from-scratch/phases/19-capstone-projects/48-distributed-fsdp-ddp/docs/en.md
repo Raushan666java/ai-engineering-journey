@@ -1,3 +1,7 @@
+---
+description: "Multi-rank training is two collectives and one rule. Broadcast the parameters at startup, average the gradients after backward, never let the ranks"
+---
+
 # Distributed Data Parallel and FSDP from Scratch
 
 > Multi-rank training is two collectives and one rule. Broadcast the parameters at startup, average the gradients after backward, never let the ranks disagree about what step they are on.

@@ -1,3 +1,7 @@
+---
+description: "Understanding why you procrastinate — and what to do about it — is the single highest-leverage skill in learning. 20 Q&As · Practical frameworks grounded"
+---
+
 # Chapter 6: Procrastination, Habits & Deep Work
 
 > **Prerequisites:** [Chapter 5: Memory Systems & Mnemonics](./ch-05-memory-systems.md) — Memory techniques for encoding and retrieval.

@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_03_The_Skill_Pyramid/01_The_Hierarch
 title: "🔺 The Hierarchy of Expertise"
 sidebar_label: "🔺 The Hierarchy of Expertise"
 sidebar_position: 1
+description: "To increase your value in the marketplace—whether you want a promotion, a higher freelance rate, or to land a role at a top-tier tech company—you must"
 ---
 # 🔺 The Hierarchy of Expertise
 

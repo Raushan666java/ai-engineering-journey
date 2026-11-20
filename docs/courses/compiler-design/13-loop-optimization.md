@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: identify loop-invariant expressions using reaching-definitions information; perform"
+---
+
 # Chapter 13: Loop Optimization
 
 ? Previous: [Chapter 12: Data-Flow Analysis](12-dfa.md) | **Next:** [Chapter 14: Register Allocation](14-register-allocation.md)

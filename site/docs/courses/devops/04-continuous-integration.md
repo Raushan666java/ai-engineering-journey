@@ -4,6 +4,7 @@ slug: /devops/04-continuous-integration
 title: "Chapter 4: Continuous Integration"
 sidebar_label: "Chapter 4: Continuous Integration"
 sidebar_position: 7
+description: "Integration tests (15-20%): Test interactions between components — database queries, API endpoints, service-to-service communication. Verify real behavior"
 ---
 
 # Chapter 4: Continuous Integration

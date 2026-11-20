@@ -1,3 +1,7 @@
+---
+description: "Phase 10: LLMs from Scratch"
+---
+
 # Phase 10: LLMs from Scratch
 
 > Build, train, and understand large language models.

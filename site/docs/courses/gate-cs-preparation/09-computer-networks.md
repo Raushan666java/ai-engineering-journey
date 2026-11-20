@@ -1,12 +1,13 @@
 ---
 id: 09-computer-networks
 slug: /gate-cs-preparation/09-computer-networks
-title: "09 Computer Networks"
-sidebar_label: "09 Computer Networks"
+title: "09-computer-networks"
+sidebar_label: "09-computer-networks"
 sidebar_position: 9
+description: "﻿# Chapter 9: Computer Networks —” GATE CS Comprehensive Guide"
 ---
 
-﻿﻿# Chapter 9: Computer Networks ——Â� GATE CS Comprehensive Guide
+﻿# Chapter 9: Computer Networks —” GATE CS Comprehensive Guide
 
 ---
 
@@ -93,19 +94,17 @@ flowchart LR
 
 ### OSI Model (7 Layers)
 
-
 | Layer | Function | PDU | Devices |
 |-------|----------|-----|---------|
-| 7 ——Â� Application | User interface, email, file transfer | Data | Gateway |
-| 6 ——Â� Presentation | Encryption, compression, translation | Data | Gateway |
-| 5 ——Â� Session | Session management, synchronization | Data | Gateway |
-| 4 ——Â� Transport | End-to-end reliability, flow control | Segment | Gateway |
-| 3 ——Â� Network | Logical addressing, routing | Packet | Router |
-| 2 ——Â� Data Link | Framing, error control, MAC addressing | Frame | Switch, Bridge |
-| 1 ——Â� Physical | Bit transmission, signals, media | Bits | Hub, Repeater |
+| 7 —” Application | User interface, email, file transfer | Data | Gateway |
+| 6 —” Presentation | Encryption, compression, translation | Data | Gateway |
+| 5 —” Session | Session management, synchronization | Data | Gateway |
+| 4 —” Transport | End-to-end reliability, flow control | Segment | Gateway |
+| 3 —” Network | Logical addressing, routing | Packet | Router |
+| 2 —” Data Link | Framing, error control, MAC addressing | Frame | Switch, Bridge |
+| 1 —” Physical | Bit transmission, signals, media | Bits | Hub, Repeater |
 
 ### TCP/IP Model (4 Layers)
-
 
 | Layer | Equivalent OSI Layers | Protocols |
 |-------|----------------------|-----------|
@@ -116,13 +115,11 @@ flowchart LR
 
 ### Key Difference
 
-
 - OSI is conceptual (protocol independent); TCP/IP is practical (protocol dependent).
 - OSI separates Presentation and Session; TCP/IP merges them into Application.
 - OSI has strict layering; TCP/IP allows protocol flexibility.
 
 ### Mnemonic For OSI Layers: **A-P-S-T-N-D-P** → All People Seem To Need Data Processing
-
 
 ---
 
@@ -130,13 +127,11 @@ flowchart LR
 
 ### Signals
 
-
-- **Analog Signal:** Continuous wave (sine wave) ——Â� `s(t) = A sin(2ÃÂ�€ft + ÃÂ�†)`
+- **Analog Signal:** Continuous wave (sine wave) â€”â€ `s(t) = A sin(2Ãâ‚¬ft + Ã†)`
 - **Digital Signal:** Discrete values (0/1)
 - **Bandwidth (BW):** `BW = f_max - f_min` (Hz)
 
 ### Nyquist Theorem (Noiseless Channel)
-
 
 Maximum data rate = `2 × BW × log_2(L)` bits/sec
 
@@ -146,7 +141,6 @@ Where `L` = number of signal levels.
 
 ### Shannon Theorem (Noisy Channel)
 
-
 Maximum data rate = `BW × log_2(1 + SNR)` bits/sec
 
 Where `SNR = Signal Power / Noise Power`, expressed in dB as: `SNR_dB = 10 log_10(SNR)`
@@ -154,7 +148,6 @@ Where `SNR = Signal Power / Noise Power`, expressed in dB as: `SNR_dB = 10 log_1
 > **GATE Insight:** Shannon gives the absolute upper bound. Nyquist gives the limit for a given encoding. **If both are given, pick the minimum.**
 
 ### Transmission Media
-
 
 | Media | Type | BW | Distance | Use |
 |-------|------|-----|----------|-----|
@@ -165,7 +158,6 @@ Where `SNR = Signal Power / Noise Power`, expressed in dB as: `SNR_dB = 10 log_1
 
 ### Switching
 
-
 | Aspect | Circuit Switching | Packet Switching |
 |--------|------------------|------------------|
 | Path | Dedicated | Shared |
@@ -175,7 +167,6 @@ Where `SNR = Signal Power / Noise Power`, expressed in dB as: `SNR_dB = 10 log_1
 | Example | Telephone | Internet |
 
 ### Store-and-Forward Delay Formula
-
 
 Total Delay = `T_tx + T_prop + T_queue + T_processing`
 
@@ -189,13 +180,11 @@ Total Delay = `T_tx + T_prop + T_queue + T_processing`
 
 ### Framing
 
-
 Methods: Character count, Flag bytes with byte stuffing, Start/end flags with bit stuffing.
 
 **Bit Stuffing:** After 5 consecutive 1s, insert a 0. Flag pattern = `01111110`.
 
 ### Error Detection
-
 
 #### Parity Bit
 
@@ -227,8 +216,7 @@ Common CRC Generators:
 
 Used in IP, TCP, UDP. One's complement sum of 16-bit words.
 
-### Error Correction ——Â� Hamming Code
-
+### Error Correction —” Hamming Code
 
 **GATE FAVORITE:** Hamming code questions appear frequently.
 
@@ -241,7 +229,6 @@ Used in IP, TCP, UDP. One's complement sum of 16-bit words.
 **Syndrome:** XOR of all parity bits and their covered bits → gives the bit position in error (0 = no error).
 
 ### Flow Control Protocols
-
 
 #### Stop-and-Wait ARQ
 
@@ -266,7 +253,6 @@ Where `N = minimum(WS, 1 + 2a)` for the sender window.
 **Sequence Number Bits:** Need at least `n` bits such that the window wraps correctly.
 
 ### MAC Sublayer
-
 
 #### ALOHA
 
@@ -305,7 +291,6 @@ Where `N = minimum(WS, 1 + 2a)` for the sender window.
 
 ### Bridges and Switches
 
-
 - **Bridge:** 2 ports, connects segments, uses MAC table
 - **Switch:** Multi-port bridge, full-duplex, microsegmentation
 - **Learning:** Learns source MAC → port mapping
@@ -318,7 +303,6 @@ Where `N = minimum(WS, 1 + 2a)` for the sender window.
 
 ### IPv4 Addressing
 
-
 - **32-bit address** (4 octets). `2^32 ≈ 4.3 billion` addresses.
 - **Dotted Decimal:** `192.168.1.1`
 
@@ -329,8 +313,8 @@ Where `N = minimum(WS, 1 + 2a)` for the sender window.
 | A | 0 | 1.0.0.0 —“ 126.255.255.255 | /8 | 126 | 2^24 - 2 |
 | B | 10 | 128.0.0.0 —“ 191.255.255.255 | /16 | 2^14 | 2^16 - 2 |
 | C | 110 | 192.0.0.0 —“ 223.255.255.255 | /24 | 2^21 | 2^8 - 2 |
-| D | 1110 | 224.0.0.0 —“ 239.255.255.255 | Multicast | ——Â� | ——Â� |
-| E | 1111 | 240.0.0.0 —“ 255.255.255.255 | Reserved | ——Â� | ——Â� |
+| D | 1110 | 224.0.0.0 —“ 239.255.255.255 | Multicast | —” | —” |
+| E | 1111 | 240.0.0.0 —“ 255.255.255.255 | Reserved | —” | —” |
 
 **Loopback:** 127.0.0.0/8 (used for local testing)
 
@@ -340,7 +324,6 @@ Where `N = minimum(WS, 1 + 2a)` for the sender window.
 - 192.168.0.0/16
 
 ### Subnetting
-
 
 **GATE FAVORITE:** Subnetting appears in virtually every GATE paper.
 
@@ -365,13 +348,11 @@ Where `N = minimum(WS, 1 + 2a)` for the sender window.
 
 ### CIDR (Classless Inter-Domain Routing)
 
-
 - Notation: `IP/prefix_length`
 - Route aggregation / supernetting: combine consecutive networks.
 - **Longest Prefix Match:** Forwarding decision uses the most specific matching prefix.
 
 ### IPv6
-
 
 - **128-bit address:** 8 groups of 4 hex digits.
 - `2001:0db8:0000:0000:0000:ff00:0042:8329`
@@ -382,13 +363,11 @@ Where `N = minimum(WS, 1 + 2a)` for the sender window.
 
 ### Network Address Translation (NAT)
 
-
 - Maps private IP + port → public IP + port.
 - **Types:** Static, Dynamic, PAT (Port Address Translation).
 - Conserves IPv4 addresses; breaks end-to-end connectivity.
 
 ### Routing Algorithms
-
 
 #### Dijkstra's Algorithm (Link State)
 
@@ -407,7 +386,6 @@ Where `N = minimum(WS, 1 + 2a)` for the sender window.
 
 ### Routing Protocols
 
-
 | Protocol | Type | Metric | Algorithm | Scope |
 |----------|------|--------|-----------|-------|
 | RIP | Distance Vector | Hops (max 15) | Bellman-Ford | IGP (Intra-AS) |
@@ -418,14 +396,12 @@ Where `N = minimum(WS, 1 + 2a)` for the sender window.
 
 ### ARP and RARP
 
-
 | Protocol | Operation |
 |----------|-----------|
 | **ARP** | Given IP → find MAC (broadcast request, unicast reply) |
 | **RARP** | Given MAC → find IP (used in diskless workstations; replaced by DHCP/BOOTP) |
 
 ### ICMP
-
 
 - Error reporting: Destination unreachable, Time exceeded (TTL=0), Parameter problem.
 - Query: Echo request/reply (ping), Timestamp, Router solicitation/advertisement.
@@ -435,7 +411,6 @@ Where `N = minimum(WS, 1 + 2a)` for the sender window.
 ## 5. Transport Layer
 
 ### TCP Header
-
 
 ```
  0                   1                   2                   3
@@ -458,15 +433,14 @@ Where `N = minimum(WS, 1 + 2a)` for the sender window.
 - Source Port (16 bits), Dest Port (16 bits)
 - Sequence Number (32 bits)
 - Acknowledgment Number (32 bits)
-- Data Offset (4 bits) ——Â� header length in 32-bit words
+- Data Offset (4 bits) —” header length in 32-bit words
 - Flags (9 bits): NS, CWR, ECE, URG, ACK, PSH, RST, SYN, FIN
-- Window Size (16 bits) ——Â� flow control
-- Checksum (16 bits) ——Â� covers header + data + pseudo-header
+- Window Size (16 bits) —” flow control
+- Checksum (16 bits) —” covers header + data + pseudo-header
 - Urgent Pointer (16 bits)
 - Options (variable)
 
 ### TCP Connection Management
-
 
 #### 3-Way Handshake (Connection Establishment)
 
@@ -498,19 +472,16 @@ Client                     Server
 
 ### UDP Header
 
-
 - Source Port (16), Dest Port (16), Length (16), Checksum (16)
 - **Total:** 8 bytes
 - Connectionless, unreliable, no flow/congestion control.
 
 ### TCP Flow Control
 
-
-- **Sliding Window** ——Â� receiver advertises `rwnd` (receiver window).
-- **Window Scaling** ——Â� allows windows > 64 KB (RFC 1323).
+- **Sliding Window** —” receiver advertises `rwnd` (receiver window).
+- **Window Scaling** —” allows windows > 64 KB (RFC 1323).
 
 ### TCP Congestion Control
-
 
 **GATE FAVORITE:** TCP congestion control variants and window evolution.
 
@@ -537,7 +508,6 @@ Client                     Server
 
 ### TCP Timers
 
-
 | Timer | Purpose |
 |-------|---------|
 | Retransmission Timer (RTO) | Timeout for lost segment |
@@ -556,14 +526,12 @@ Client                     Server
 
 ### DNS (Domain Name System)
 
-
 - **Hierarchical:** Root → TLD (.com, .org) → Authoritative
 - **Record Types:** A (IPv4), AAAA (IPv6), CNAME (alias), MX (mail), NS (nameserver), PTR (reverse)
 - **Iterative vs Recursive Resolution**
 - **Port:** UDP 53 (queries), TCP 53 (zone transfers)
 
 ### HTTP/HTTPS
-
 
 | Version | Features |
 |---------|----------|
@@ -577,23 +545,20 @@ Client                     Server
 
 ### Email Protocols
 
-
 | Protocol | Function | Port |
 |----------|----------|------|
 | SMTP | Send mail | 25 (default), 587 (submission) |
 | POP3 | Retrieve mail (download & delete) | 110 |
 | IMAP | Retrieve mail (server-based, folders) | 143 |
-| MIME | Attachments, non-ASCII content | ——Â� |
+| MIME | Attachments, non-ASCII content | —” |
 
 ### FTP (File Transfer Protocol)
-
 
 - **Port 21:** Control connection
 - **Port 20:** Data connection (active mode)
 - Passive mode uses random high port for data.
 
 ### DHCP (Dynamic Host Configuration Protocol)
-
 
 - Port: UDP 67 (server), UDP 68 (client)
 - **DORA:** Discover → Offer → Request → Acknowledge
@@ -605,7 +570,6 @@ Client                     Server
 
 ### Authentication
 
-
 | Method | Description |
 |--------|-------------|
 | Password-based | Something you know |
@@ -615,7 +579,6 @@ Client                     Server
 
 ### Encryption
 
-
 | Type | Key | Speed | Use |
 |------|-----|-------|-----|
 | Symmetric (AES, DES) | Single shared key | Fast | Bulk encryption |
@@ -623,13 +586,11 @@ Client                     Server
 
 ### Digital Signatures
 
-
 - Sender signs hash of message with private key.
 - Receiver verifies with sender's public key.
 - Provides: Authentication, Non-repudiation, Integrity.
 
 ### Firewall
-
 
 - **Packet Filter:** Checks headers (IP, port)
 - **Stateful:** Tracks connection state
@@ -640,7 +601,6 @@ Client                     Server
 ## 8. Formula Reference Tables
 
 ### Performance Formulas
-
 
 | Quantity | Formula |
 |----------|---------|
@@ -655,7 +615,6 @@ Client                     Server
 
 ### Error Detection Formulas
 
-
 | Method | Redundancy | Detection Capability |
 |--------|-----------|---------------------|
 | Parity | 1 bit | Odd number of errors only |
@@ -663,7 +622,6 @@ Client                     Server
 | CRC-r | r bits | All burst ≤ r, all odd errors, single-bit |
 
 ### Hamming Code Formulas
-
 
 | Data Bits (m) | Parity Bits (r) | Total Bits (n) |
 |---------------|-----------------|----------------|
@@ -676,7 +634,6 @@ Client                     Server
 Constraint: `2^r ≥ m + r + 1`
 
 ### Well-Known Port Numbers
-
 
 | Port | Protocol | Transport |
 |------|----------|-----------|
@@ -697,7 +654,6 @@ Constraint: `2^r ≥ m + r + 1`
 
 ### TCP Flags (Mnemonic: **URGENT PUSH RST SYN FIN**)
 
-
 | Flag | Meaning |
 |------|---------|
 | URG | Urgent pointer field is valid |
@@ -711,8 +667,7 @@ Constraint: `2^r ≥ m + r + 1`
 
 ## 9. GATE Previous Year Questions (2010—“2025)
 
-### N1: CRC Calculation [GATE 2010, 1 Mark ——Â� Data Link Layer]
-
+### N1: CRC Calculation [GATE 2010, 1 Mark —” Data Link Layer]
 
 **Q:** A 4-bit message `1011` is to be transmitted. CRC polynomial is `x^2 + x + 1` (binary 111). What is the transmitted message?
 
@@ -740,8 +695,7 @@ Remainder = 010. Transmitted = `1011 010`
 
 ---
 
-### N2: Hamming Code [GATE 2010, 2 Marks ——Â� Data Link Layer]
-
+### N2: Hamming Code [GATE 2010, 2 Marks —” Data Link Layer]
 
 **Q:** For a 4-bit data `d3 d2 d1 d0` = `1010`, find the 7-bit Hamming code with even parity. Parity bits at positions 1, 2, 4.
 
@@ -757,8 +711,7 @@ Final codeword: `p1 p2 d1 p4 d2 d3 d4` = `0 1 0 0 1 0 1` = **0100101**
 
 ---
 
-### N3: Stop-and-Wait Efficiency [GATE 2011, 2 Marks ——Â� Data Link Layer]
-
+### N3: Stop-and-Wait Efficiency [GATE 2011, 2 Marks —” Data Link Layer]
 
 **Q:** Consider a 100 Mbps link. Distance = 2000 km, propagation speed = 2 × 10^8 m/s. Frame size = 1000 bytes. What is the efficiency?
 
@@ -770,8 +723,7 @@ Final codeword: `p1 p2 d1 p4 d2 d3 d4` = `0 1 0 0 1 0 1` = **0100101**
 
 ---
 
-### N4: Subnetting [GATE 2011, 2 Marks ——Â� Network Layer]
-
+### N4: Subnetting [GATE 2011, 2 Marks —” Network Layer]
 
 **Q:** An organization is granted the block 130.56.0.0/16. The administrator wants to create 1024 subnets. Find the subnet mask and the number of hosts per subnet.
 
@@ -784,8 +736,7 @@ Final codeword: `p1 p2 d1 p4 d2 d3 d4` = `0 1 0 0 1 0 1` = **0100101**
 
 ---
 
-### N5: TCP Sequence Number [GATE 2012, 1 Mark ——Â� Transport Layer]
-
+### N5: TCP Sequence Number [GATE 2012, 1 Mark —” Transport Layer]
 
 **Q:** In TCP, the sequence number of the first segment is 1500. The segment carries 200 bytes of data. What is the acknowledgment number the receiver sends back?
 
@@ -793,8 +744,7 @@ Final codeword: `p1 p2 d1 p4 d2 d3 d4` = `0 1 0 0 1 0 1` = **0100101**
 
 ---
 
-### N6: CSMA/CD Minimum Frame Size [GATE 2012, 2 Marks ——Â� MAC Layer]
-
+### N6: CSMA/CD Minimum Frame Size [GATE 2012, 2 Marks —” MAC Layer]
 
 **Q:** A 10 Mbps CSMA/CD network has a maximum distance of 2 km and propagation speed of 2 × 10^8 m/s. What is the minimum frame size?
 
@@ -807,8 +757,7 @@ Final codeword: `p1 p2 d1 p4 d2 d3 d4` = `0 1 0 0 1 0 1` = **0100101**
 
 ---
 
-### N7: RIP Hop Count [GATE 2012, 1 Mark ——Â� Network Layer]
-
+### N7: RIP Hop Count [GATE 2012, 1 Mark —” Network Layer]
 
 **Q:** What is the maximum number of hops allowed in RIP?
 
@@ -816,19 +765,17 @@ Final codeword: `p1 p2 d1 p4 d2 d3 d4` = `0 1 0 0 1 0 1` = **0100101**
 
 ---
 
-### N8: Classful Addressing [GATE 2012, 1 Mark ——Â� Network Layer]
-
+### N8: Classful Addressing [GATE 2012, 1 Mark —” Network Layer]
 
 **Q:** Which of the following IP addresses is not a valid Class B address?
 
 A) 128.0.0.1  B) 172.16.0.1  C) 191.1.2.3  D) 192.168.0.1
 
-**A:** **D** ——Â� 192 starts with bits `110`, which is Class C. Class B ranges 128.0.0.0 to 191.255.255.255.
+**A:** **D** —” 192 starts with bits `110`, which is Class C. Class B ranges 128.0.0.0 to 191.255.255.255.
 
 ---
 
-### N9: CRC Generator [GATE 2013, 2 Marks ——Â� Data Link Layer]
-
+### N9: CRC Generator [GATE 2013, 2 Marks —” Data Link Layer]
 
 **Q:** Which generator polynomial can detect all odd number of errors?
 
@@ -836,8 +783,7 @@ A) 128.0.0.1  B) 172.16.0.1  C) 191.1.2.3  D) 192.168.0.1
 
 ---
 
-### N10: Sliding Window [GATE 2014, 2 Marks ——Â� Data Link Layer]
-
+### N10: Sliding Window [GATE 2014, 2 Marks —” Data Link Layer]
 
 **Q:** In a sliding window ARQ scheme, the sender window size is 4 and sequence numbers are 3 bits. If Go-Back-N is used, what is the efficiency if T_tx = 1 ms and T_prop = 2 ms?
 
@@ -849,8 +795,7 @@ A) 128.0.0.1  B) 172.16.0.1  C) 191.1.2.3  D) 192.168.0.1
 
 ---
 
-### N11: IPv4 Header Length [GATE 2014, 1 Mark ——Â� Network Layer]
-
+### N11: IPv4 Header Length [GATE 2014, 1 Mark —” Network Layer]
 
 **Q:** The Internet header length field in IPv4 is 4 bits. What is the maximum header size in bytes?
 
@@ -858,8 +803,7 @@ A) 128.0.0.1  B) 172.16.0.1  C) 191.1.2.3  D) 192.168.0.1
 
 ---
 
-### N12: TCP Slow Start [GATE 2014, 2 Marks ——Â� Transport Layer]
-
+### N12: TCP Slow Start [GATE 2014, 2 Marks —” Transport Layer]
 
 **Q:** TCP connection starts with cwnd = 1 MSS. ssthresh = 8 MSS. RTT = 10 ms. How many RTTs until cwnd reaches 12 MSS? Assume no losses.
 
@@ -876,8 +820,7 @@ A) 128.0.0.1  B) 172.16.0.1  C) 191.1.2.3  D) 192.168.0.1
 
 ---
 
-### N13: Dijkstra's Algorithm [GATE 2014, 2 Marks ——Â� Network Layer]
-
+### N13: Dijkstra's Algorithm [GATE 2014, 2 Marks —” Network Layer]
 
 **Q:** Given a network with 5 nodes. Node A has direct links to B (cost 4), C (cost 2). B to D (cost 5), C to D (cost 1), D to E (cost 3). Find shortest path from A to E using Dijkstra's algorithm.
 
@@ -892,8 +835,7 @@ A) 128.0.0.1  B) 172.16.0.1  C) 191.1.2.3  D) 192.168.0.1
 
 ---
 
-### N14: ARP Protocol Operation [GATE 2015, 1 Mark ——Â� Network Layer]
-
+### N14: ARP Protocol Operation [GATE 2015, 1 Mark —” Network Layer]
 
 **Q:** What protocol does a host use to find the MAC address corresponding to an IP address?
 
@@ -901,8 +843,7 @@ A) 128.0.0.1  B) 172.16.0.1  C) 191.1.2.3  D) 192.168.0.1
 
 ---
 
-### N15: Selective Repeat Window [GATE 2015, 2 Marks ——Â� Data Link Layer]
-
+### N15: Selective Repeat Window [GATE 2015, 2 Marks —” Data Link Layer]
 
 **Q:** In Selective Repeat, if sequence number field is n bits, what is the maximum sender window size?
 
@@ -910,8 +851,7 @@ A) 128.0.0.1  B) 172.16.0.1  C) 191.1.2.3  D) 192.168.0.1
 
 ---
 
-### N16: Pure ALOHA Throughput [GATE 2015, 1 Mark ——Â� MAC Layer]
-
+### N16: Pure ALOHA Throughput [GATE 2015, 1 Mark —” MAC Layer]
 
 **Q:** In Pure ALOHA, the maximum throughput (S) occurs at what value of G?
 
@@ -919,8 +859,7 @@ A) 128.0.0.1  B) 172.16.0.1  C) 191.1.2.3  D) 192.168.0.1
 
 ---
 
-### N17: CIDR Aggregation [GATE 2016, 2 Marks ——Â� Network Layer]
-
+### N17: CIDR Aggregation [GATE 2016, 2 Marks —” Network Layer]
 
 **Q:** Three networks: 192.168.1.0/24, 192.168.2.0/24, 192.168.3.0/24. Aggregate them.
 
@@ -933,8 +872,7 @@ So: 192.168.0.0/22 (8 bits from first 2 octets + 6 bits = 22)
 
 ---
 
-### N18: Ethernet Frame Format [GATE 2016, 1 Mark ——Â� Data Link Layer]
-
+### N18: Ethernet Frame Format [GATE 2016, 1 Mark —” Data Link Layer]
 
 **Q:** The minimum Ethernet frame size is 64 bytes. If the header is 18 bytes (6+6+2+4), what is the minimum payload?
 
@@ -942,8 +880,7 @@ So: 192.168.0.0/22 (8 bits from first 2 octets + 6 bits = 22)
 
 ---
 
-### N19: TCP Tahoe vs Reno [GATE 2016, 2 Marks ——Â� Transport Layer]
-
+### N19: TCP Tahoe vs Reno [GATE 2016, 2 Marks —” Transport Layer]
 
 **Q:** In TCP Reno, when 3 duplicate ACKs are received, what happens to cwnd and ssthresh?
 
@@ -953,8 +890,7 @@ So: 192.168.0.0/22 (8 bits from first 2 octets + 6 bits = 22)
 
 ---
 
-### N20: Subnet Mask Calculation [GATE 2016, 1 Mark ——Â� Network Layer]
-
+### N20: Subnet Mask Calculation [GATE 2016, 1 Mark —” Network Layer]
 
 **Q:** What is the subnet mask for a /20 network?
 
@@ -962,8 +898,7 @@ So: 192.168.0.0/22 (8 bits from first 2 octets + 6 bits = 22)
 
 ---
 
-### N21: Hamming Distance [GATE 2017, 1 Mark ——Â� Data Link Layer]
-
+### N21: Hamming Distance [GATE 2017, 1 Mark —” Data Link Layer]
 
 **Q:** A code has minimum Hamming distance 5. What is the maximum number of errors it can correct?
 
@@ -971,8 +906,7 @@ So: 192.168.0.0/22 (8 bits from first 2 octets + 6 bits = 22)
 
 ---
 
-### N22: IP Fragmentation [GATE 2017, 2 Marks ——Â� Network Layer]
-
+### N22: IP Fragmentation [GATE 2017, 2 Marks —” Network Layer]
 
 **Q:** An IP datagram of 4000 bytes (20 byte header + 3980 data) arrives at a router with MTU 1500 bytes. How many fragments?
 
@@ -985,8 +919,7 @@ Fragment 3: data bytes 2960-3979 (only 1020 bytes)
 
 ---
 
-### N23: CSMA/CD Persistence [GATE 2017, 1 Mark ——Â� MAC Layer]
-
+### N23: CSMA/CD Persistence [GATE 2017, 1 Mark —” MAC Layer]
 
 **Q:** In which persistence mode does the station transmit immediately if the channel is idle?
 
@@ -994,8 +927,7 @@ Fragment 3: data bytes 2960-3979 (only 1020 bytes)
 
 ---
 
-### N24: UDP Checksum [GATE 2017, 1 Mark ——Â� Transport Layer]
-
+### N24: UDP Checksum [GATE 2017, 1 Mark —” Transport Layer]
 
 **Q:** UDP checksum covers UDP header, data, and a pseudo-header. What fields are in the pseudo-header?
 
@@ -1003,8 +935,7 @@ Fragment 3: data bytes 2960-3979 (only 1020 bytes)
 
 ---
 
-### N25: Distance Vector Routing [GATE 2018, 2 Marks ——Â� Network Layer]
-
+### N25: Distance Vector Routing [GATE 2018, 2 Marks —” Network Layer]
 
 **Q:** In distance vector routing, node A has: A→B=2, A→C=3. B reports distances: B→C=1, B→D=5. C reports: C→D=1. What is the new shortest distance from A to D?
 
@@ -1016,8 +947,7 @@ Fragment 3: data bytes 2960-3979 (only 1020 bytes)
 
 ---
 
-### N26: TCP Sequence Number Wrap [GATE 2018, 1 Mark ——Â� Transport Layer]
-
+### N26: TCP Sequence Number Wrap [GATE 2018, 1 Mark —” Transport Layer]
 
 **Q:** Bandwidth = 1 Gbps. How long before TCP sequence number space (2^32) wraps around?
 
@@ -1027,8 +957,7 @@ Time = 2^32 bytes / (10^9 / 8 bytes/sec) = 2^32 × 8 / 10^9
 
 ---
 
-### N27: Slotted ALOHA Efficiency [GATE 2018, 1 Mark ——Â� MAC Layer]
-
+### N27: Slotted ALOHA Efficiency [GATE 2018, 1 Mark —” MAC Layer]
 
 **Q:** In slotted ALOHA, what is the fraction of slots wasted due to collisions when G = 1?
 
@@ -1040,8 +969,7 @@ Collisions = 1 - 0.368 - 0.368 = **0.264**
 
 ---
 
-### N28: RIP Update Timer [GATE 2019, 1 Mark ——Â� Network Layer]
-
+### N28: RIP Update Timer [GATE 2019, 1 Mark —” Network Layer]
 
 **Q:** What timer in RIP is used to trigger periodic routing updates?
 
@@ -1049,8 +977,7 @@ Collisions = 1 - 0.368 - 0.368 = **0.264**
 
 ---
 
-### N29: Hosts per Subnet [GATE 2019, 2 Marks ——Â� Network Layer]
-
+### N29: Hosts per Subnet [GATE 2019, 2 Marks —” Network Layer]
 
 **Q:** A network has subnet mask 255.255.255.224 and IP 200.10.20.130. What is the subnet address and the number of usable hosts?
 
@@ -1062,8 +989,7 @@ Collisions = 1 - 0.368 - 0.368 = **0.264**
 
 ---
 
-### N30: Go-Back-N Window [GATE 2019, 2 Marks ——Â� Data Link Layer]
-
+### N30: Go-Back-N Window [GATE 2019, 2 Marks —” Data Link Layer]
 
 **Q:** In Go-Back-N with n-bit sequence number, maximum sender window size is:
 
@@ -1071,8 +997,7 @@ Collisions = 1 - 0.368 - 0.368 = **0.264**
 
 ---
 
-### N31: Hamming Code: Single Error Correction [GATE 2020, 2 Marks ——Â� Data Link Layer]
-
+### N31: Hamming Code: Single Error Correction [GATE 2020, 2 Marks —” Data Link Layer]
 
 **Q:** The codeword `0110010` (7-bit Hamming) is received. Which bit is in error? Parity at positions 1, 2, 4.
 
@@ -1089,8 +1014,7 @@ Received: 0      1      1      0      0      1      0
 
 ---
 
-### N32: OSPF Protocol Type [GATE 2020, 1 Mark ——Â� Network Layer]
-
+### N32: OSPF Protocol Type [GATE 2020, 1 Mark —” Network Layer]
 
 **Q:** OSPF runs directly over which protocol/layer?
 
@@ -1098,19 +1022,17 @@ Received: 0      1      1      0      0      1      0
 
 ---
 
-### N33: NAT and Private Addresses [GATE 2020, 1 Mark ——Â� Network Layer]
-
+### N33: NAT and Private Addresses [GATE 2020, 1 Mark —” Network Layer]
 
 **Q:** Which of the following is a private IP address?
 
 A) 12.0.0.1  B) 168.192.0.1  C) 172.32.0.1  D) 192.168.0.1
 
-**A:** **D** ——Â� 192.168.0.0/16 is the private Class C range.
+**A:** **D** —” 192.168.0.0/16 is the private Class C range.
 
 ---
 
-### N34: TCP Congestion Window Graph [GATE 2020, 2 Marks ——Â� Transport Layer]
-
+### N34: TCP Congestion Window Graph [GATE 2020, 2 Marks —” Transport Layer]
 
 **Q:** Given TCP Reno behavior: cwnd = 10 MSS at time t, then at t+1RTT cwnd = 11, at t+2RTT cwnd = 12. At t+3RTT, a triple duplicate ACK occurs. What is cwnd after recovery?
 
@@ -1120,19 +1042,17 @@ A) 12.0.0.1  B) 168.192.0.1  C) 172.32.0.1  D) 192.168.0.1
 
 ---
 
-### N35: IPv6 Header Simplification [GATE 2020, 1 Mark ——Â� Network Layer]
-
+### N35: IPv6 Header Simplification [GATE 2020, 1 Mark —” Network Layer]
 
 **Q:** Which field is NOT present in the IPv6 header but was in IPv4?
 
 A) Version  B) Source Address  C) Header Checksum  D) Next Header
 
-**A:** **C ——Â� Header Checksum** is removed in IPv6 since upper layers handle checksums and link-layer CRC is sufficient.
+**A:** **C —” Header Checksum** is removed in IPv6 since upper layers handle checksums and link-layer CRC is sufficient.
 
 ---
 
-### N36: CRC: Error Pattern Detection [GATE 2021, 2 Marks ——Â� Data Link Layer]
-
+### N36: CRC: Error Pattern Detection [GATE 2021, 2 Marks —” Data Link Layer]
 
 **Q:** A CRC with generator G detects all burst errors of length:
 
@@ -1140,8 +1060,7 @@ A) Version  B) Source Address  C) Header Checksum  D) Next Header
 
 ---
 
-### N37: IP Header: TTL Field [GATE 2021, 1 Mark ——Â� Network Layer]
-
+### N37: IP Header: TTL Field [GATE 2021, 1 Mark —” Network Layer]
 
 **Q:** In IPv4, what happens when TTL reaches 0?
 
@@ -1149,8 +1068,7 @@ A) Version  B) Source Address  C) Header Checksum  D) Next Header
 
 ---
 
-### N38: Diameter of Network: CSMA/CD [GATE 2021, 2 Marks ——Â� MAC Layer]
-
+### N38: Diameter of Network: CSMA/CD [GATE 2021, 2 Marks —” MAC Layer]
 
 **Q:** A CSMA/CD network with bandwidth 100 Mbps requires minimum frame size of 512 bits. Propagation speed = 2 × 10^8 m/s. What is the maximum network length?
 
@@ -1164,8 +1082,7 @@ A) Version  B) Source Address  C) Header Checksum  D) Next Header
 
 ---
 
-### N39: Count to Infinity [GATE 2021, 1 Mark ——Â� Network Layer]
-
+### N39: Count to Infinity [GATE 2021, 1 Mark —” Network Layer]
 
 **Q:** In distance vector routing, what technique prevents the count-to-infinity problem?
 
@@ -1173,8 +1090,7 @@ A) Version  B) Source Address  C) Header Checksum  D) Next Header
 
 ---
 
-### N40: TCP 3-Way Handshake Sequence [GATE 2022, 2 Marks ——Â� Transport Layer]
-
+### N40: TCP 3-Way Handshake Sequence [GATE 2022, 2 Marks —” Transport Layer]
 
 **Q:** During TCP connection setup, host A sends SYN with seq=a. Host B responds. What are the seq and ack fields in B's SYN+ACK segment?
 
@@ -1185,19 +1101,17 @@ A) Version  B) Source Address  C) Header Checksum  D) Next Header
 
 ---
 
-### N41: ICMP Protocol [GATE 2022, 1 Mark ——Â� Network Layer]
-
+### N41: ICMP Protocol [GATE 2022, 1 Mark —” Network Layer]
 
 **Q:** ICMP is used for which of the following?
 
 A) Error reporting  B) Routing  C) Addressing  D) Encryption
 
-**A:** **A ——Â� Error reporting** (and diagnostic functions like ping).
+**A:** **A —” Error reporting** (and diagnostic functions like ping).
 
 ---
 
-### N42: Fragmentation Offset [GATE 2022, 1 Mark ——Â� Network Layer]
-
+### N42: Fragmentation Offset [GATE 2022, 1 Mark —” Network Layer]
 
 **Q:** In IP fragmentation, the offset field is in units of:
 
@@ -1205,17 +1119,15 @@ A) Error reporting  B) Routing  C) Addressing  D) Encryption
 
 ---
 
-### N43: SYN Flood Attack [GATE 2022, 1 Mark ——Â� Security]
-
+### N43: SYN Flood Attack [GATE 2022, 1 Mark —” Security]
 
 **Q:** In a SYN flood attack, what resource is exhausted on the server?
 
-**A:** The **TCP connection queue** / **half-open connection backlog** ——Â� server allocates memory for incomplete connections waiting for the final ACK.
+**A:** The **TCP connection queue** / **half-open connection backlog** —” server allocates memory for incomplete connections waiting for the final ACK.
 
 ---
 
-### N44: Link State vs Distance Vector [GATE 2023, 2 Marks ——Â� Network Layer]
-
+### N44: Link State vs Distance Vector [GATE 2023, 2 Marks —” Network Layer]
 
 **Q:** Which of the following is true about OSPF compared to RIP?
 
@@ -1224,12 +1136,11 @@ B) OSPF converges faster than RIP
 C) OSPF uses Bellman-Ford, RIP uses Dijkstra
 D) OSPF has a hop limit of 15
 
-**A:** **B** ——Â� OSPF (link state) converges faster than RIP (distance vector). OSPF uses Dijkstra, not hop count as primary metric.
+**A:** **B** —” OSPF (link state) converges faster than RIP (distance vector). OSPF uses Dijkstra, not hop count as primary metric.
 
 ---
 
-### N45: SMTP Protocol [GATE 2023, 1 Mark ——Â� Application Layer]
-
+### N45: SMTP Protocol [GATE 2023, 1 Mark —” Application Layer]
 
 **Q:** SMTP is used to:
 
@@ -1238,12 +1149,11 @@ B) Transfer email between servers
 C) Browse web pages
 D) Transfer files
 
-**A:** **B** ——Â� SMTP transfers email between mail servers (MTA). POP3/IMAP retrieve email to client.
+**A:** **B** —” SMTP transfers email between mail servers (MTA). POP3/IMAP retrieve email to client.
 
 ---
 
-### N46: Maximum Subnets from Class C [GATE 2023, 2 Marks ——Â� Network Layer]
-
+### N46: Maximum Subnets from Class C [GATE 2023, 2 Marks —” Network Layer]
 
 **Q:** A Class C network is subnetted with /28 mask. How many subnets and hosts per subnet?
 
@@ -1254,8 +1164,7 @@ D) Transfer files
 
 ---
 
-### N47: TCP Fast Retransmit [GATE 2023, 1 Mark ——Â� Transport Layer]
-
+### N47: TCP Fast Retransmit [GATE 2023, 1 Mark —” Transport Layer]
 
 **Q:** How many duplicate ACKs trigger fast retransmit in TCP?
 
@@ -1263,8 +1172,7 @@ D) Transfer files
 
 ---
 
-### N48: Ethernet Frame: Minimum Size Rationale [GATE 2024, 2 Marks ——Â� MAC Layer]
-
+### N48: Ethernet Frame: Minimum Size Rationale [GATE 2024, 2 Marks —” MAC Layer]
 
 **Q:** Why does Ethernet enforce a minimum frame size of 64 bytes (512 bits at 10 Mbps)?
 
@@ -1272,8 +1180,7 @@ D) Transfer files
 
 ---
 
-### N49: Subnetting: Last Address [GATE 2024, 2 Marks ——Â� Network Layer]
-
+### N49: Subnetting: Last Address [GATE 2024, 2 Marks —” Network Layer]
 
 **Q:** Given IP 192.168.1.50/27, what is the broadcast address and the last usable host address in that subnet?
 
@@ -1286,8 +1193,7 @@ D) Transfer files
 
 ---
 
-### N50: TCP AIMD Behavior [GATE 2024, 2 Marks ——Â� Transport Layer]
-
+### N50: TCP AIMD Behavior [GATE 2024, 2 Marks —” Transport Layer]
 
 **Q:** TCP Reno connection has cwnd = 16 MSS at time t. A timeout occurs at t+1 RTT. Trace cwnd for next 5 RTTs.
 
@@ -1303,8 +1209,7 @@ Formula: Slow Start (×2 per RTT) until ssthresh, then Additive Increase (+1 per
 
 ---
 
-### N51: Distance Vector: New Route [GATE 2024, 1 Mark ——Â� Network Layer]
-
+### N51: Distance Vector: New Route [GATE 2024, 1 Mark —” Network Layer]
 
 **Q:** Router R1 has distance to Z = 5. Neighbor R2 advertises cost to Z = 3. The link between R1 and R2 costs 1. What is R1's new distance to Z?
 
@@ -1314,8 +1219,7 @@ Since 4 &lt; 5, R1 updates to **4**.
 
 ---
 
-### N52: CRC Detection Guarantee [GATE 2025, 2 Marks ——Â� Data Link Layer]
-
+### N52: CRC Detection Guarantee [GATE 2025, 2 Marks —” Data Link Layer]
 
 **Q:** A CRC uses generator x^3 + x + 1. What is the longest burst error guaranteed to be detected?
 
@@ -1323,8 +1227,7 @@ Since 4 &lt; 5, R1 updates to **4**.
 
 ---
 
-### N53: IPv4 vs IPv6: Fragmentation [GATE 2025, 1 Mark ——Â� Network Layer]
-
+### N53: IPv4 vs IPv6: Fragmentation [GATE 2025, 1 Mark —” Network Layer]
 
 **Q:** In IPv6, which device performs fragmentation?
 
@@ -1332,8 +1235,7 @@ Since 4 &lt; 5, R1 updates to **4**.
 
 ---
 
-### N54: DNS Resolution: Recursive Query [GATE 2025, 1 Mark ——Â� Application Layer]
-
+### N54: DNS Resolution: Recursive Query [GATE 2025, 1 Mark —” Application Layer]
 
 **Q:** In recursive DNS resolution, who is responsible for resolving the entire query?
 
@@ -1341,8 +1243,7 @@ Since 4 &lt; 5, R1 updates to **4**.
 
 ---
 
-### N55: TCP Segment: Maximum Payload [GATE 2025, 2 Marks ——Â� Transport Layer]
-
+### N55: TCP Segment: Maximum Payload [GATE 2025, 2 Marks —” Transport Layer]
 
 **Q:** Assuming no options, what is the maximum payload a TCP segment can carry?
 
@@ -1354,8 +1255,7 @@ Since 4 &lt; 5, R1 updates to **4**.
 
 ---
 
-### N56: Stop-and-Wait ARQ: Sequence Number Bits [GATE 2025, 1 Mark ——Â� Data Link Layer]
-
+### N56: Stop-and-Wait ARQ: Sequence Number Bits [GATE 2025, 1 Mark —” Data Link Layer]
 
 **Q:** How many sequence number bits are needed for Stop-and-Wait ARQ?
 
@@ -1363,8 +1263,7 @@ Since 4 &lt; 5, R1 updates to **4**.
 
 ---
 
-### N57: OSPF Area Border Router [GATE 2025, 1 Mark ——Â� Network Layer]
-
+### N57: OSPF Area Border Router [GATE 2025, 1 Mark —” Network Layer]
 
 **Q:** What is a router called that connects one OSPF area to another?
 
@@ -1372,8 +1271,7 @@ Since 4 &lt; 5, R1 updates to **4**.
 
 ---
 
-### N58: TTL in IP Header [GATE 2025, 1 Mark ——Â� Network Layer]
-
+### N58: TTL in IP Header [GATE 2025, 1 Mark —” Network Layer]
 
 **Q:** A packet is sent from A to B with TTL = 4. The path has 6 routers. What happens?
 
@@ -1381,8 +1279,7 @@ Since 4 &lt; 5, R1 updates to **4**.
 
 ---
 
-### N59: Bellman-Ford Convergence [GATE 2025, 2 Marks ——Â� Network Layer]
-
+### N59: Bellman-Ford Convergence [GATE 2025, 2 Marks —” Network Layer]
 
 **Q:** In a network of 7 routers using distance vector routing, what is the maximum number of iterations needed for Bellman-Ford to converge to shortest paths (assuming no topology changes during convergence)?
 
@@ -1390,8 +1287,7 @@ Since 4 &lt; 5, R1 updates to **4**.
 
 ---
 
-### N60: Ethernet: Backoff After Collision [GATE 2025, 1 Mark ——Â� MAC Layer]
-
+### N60: Ethernet: Backoff After Collision [GATE 2025, 1 Mark —” MAC Layer]
 
 **Q:** In Ethernet CSMA/CD, after the 4th collision for a frame, what is the range of the random backoff?
 
@@ -1405,19 +1301,17 @@ Since 4 &lt; 5, R1 updates to **4**.
 
 ### OSI Layer Functions (Mnemonic: **A-P-S-T-N-D-P**)
 
-
 | Layer | Key Functions | PDU | Addressing |
 |-------|--------------|-----|------------|
-| Application | User services, HTTP, DNS, FTP | Data | ——Â� |
-| Presentation | Encryption, compression | Data | ——Â� |
-| Session | Session management, sync | Data | ——Â� |
+| Application | User services, HTTP, DNS, FTP | Data | —” |
+| Presentation | Encryption, compression | Data | —” |
+| Session | Session management, sync | Data | —” |
 | Transport | End-to-end, reliability, flow | Segment | Port (16-bit) |
 | Network | Routing, logical addressing | Packet | IP (32/128-bit) |
 | Data Link | Framing, error control, MAC | Frame | MAC (48-bit) |
-| Physical | Bits, signals, encoding | Bits | ——Â� |
+| Physical | Bits, signals, encoding | Bits | —” |
 
 ### Key GATE Formulas at a Glance
-
 
 | Concept | Formula |
 |---------|---------|
@@ -1435,7 +1329,6 @@ Since 4 &lt; 5, R1 updates to **4**.
 
 ### GATE Exam Strategy for CN
 
-
 1. **Subnetting (2-6 marks):** Master binary conversion. Practice finding network/broadcast/first/last addresses quickly.
 2. **CRC (2-4 marks):** Binary division with XOR. Know common generators.
 3. **Hamming Code (2-4 marks):** Parity bit positions are powers of 2. Practice syndrome calculation.
@@ -1445,7 +1338,6 @@ Since 4 &lt; 5, R1 updates to **4**.
 7. **Routing Protocols (2-4 marks):** RIP (DV, hop count), OSPF (LS, cost), BGP (path vector, policy).
 
 ### Recommended Problem-Solving Order
-
 
 1. Subnetting / CIDR questions (quick wins)
 2. Efficiency & throughput calculations (formula-based)
@@ -1653,4 +1545,4 @@ for (const s of subnets) {
 
 *End of Chapter 9 —" Computer Networks. Extended with summary, TypeScript implementations, quiz, and exercises.*
 
-> **End of Chapter 9 ——Â� Computer Networks.** Covers all GATE topics from Physical to Application layer with 60 solved PYQs (2010—“2025) and formula reference tables.
+> **End of Chapter 9 â€”â€ Computer Networks.** Covers all GATE topics from Physical to Application layer with 60 solved PYQs (2010—“2025) and formula reference tables.

@@ -1,3 +1,7 @@
+---
+description: "Fill specific gaps between your Laravel/Node experience and what Python agent engineering demands. These are topics you've touched but haven't"
+---
+
 # Phase 0 — Compressed Backend Hardening
 
 **Duration:** Week 1, ~12-15 hours

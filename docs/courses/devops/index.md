@@ -1,3 +1,7 @@
+---
+description: "This comprehensive textbook covers the full spectrum of DevOps engineering, from foundational principles through advanced site reliability engineering"
+---
+
 # DevOps Engineering — Complete University Textbook
 
 ## Course Description

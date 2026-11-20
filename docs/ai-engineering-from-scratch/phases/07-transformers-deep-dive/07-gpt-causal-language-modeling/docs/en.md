@@ -1,3 +1,7 @@
+---
+description: "A language model answers one question: given the first t-1 tokens, what is the probability distribution over token t? Train on that signal — next-token"
+---
+
 # GPT — Causal Language Modeling
 
 > BERT sees both sides. GPT sees only the past. The triangle mask is the most consequential single line of code in modern AI.

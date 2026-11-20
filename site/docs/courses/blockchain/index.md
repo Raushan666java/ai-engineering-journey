@@ -1,3 +1,7 @@
+---
+description: "This course provides a rigorous, university-level treatment of blockchain technology, from its mathematical and cryptographic foundations to the"
+---
+
 ﻿---
 id: index
 slug: /blockchain

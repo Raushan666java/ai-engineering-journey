@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/16-mlops-production/01-experiment-tracking
 title: "Experiment Tracking"
 sidebar_label: "Experiment Tracking"
 sidebar_position: 206
+description: "Experiment Tracking: MLOps bridges the gap between experiment and production. Experiment tracking, CI/CD, model serving, and drift monitoring keep AI"
 ---
 
 <!-- improved -->

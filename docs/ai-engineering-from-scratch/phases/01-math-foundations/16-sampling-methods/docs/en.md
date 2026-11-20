@@ -1,3 +1,7 @@
+---
+description: "A language model finishes processing your prompt and produces a vector of 50,000 logits. One for every token in its vocabulary. Now it has to pick one"
+---
+
 # Sampling Methods
 
 > Sampling is how AI explores the space of possibilities.

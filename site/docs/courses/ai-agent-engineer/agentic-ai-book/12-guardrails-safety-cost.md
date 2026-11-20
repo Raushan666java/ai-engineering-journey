@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/12-guardrails-safety-cost
 title: "12-guardrails-safety-cost"
 sidebar_label: "12-guardrails-safety-cost"
 sidebar_position: 13
+description: "Never let model output directly execute anything dangerous without a validation layer in between. The model's job is to decide what should happen; your"
 ---
 
 ## Chapter 12: Guardrails, Safety, and Cost Control

@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'I solve problems by pattern-matching the structure — what to store, in what, and at what cost.'"
+---
+
 # Visual Notes — Data Structures & Algorithms
 
 > One diagram, the full picture. Glance at this before reading the chapters and again before interviews.

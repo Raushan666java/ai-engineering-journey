@@ -1,3 +1,7 @@
+---
+description: "By the conclusion of this chapter, the student will be able to: (1) explain the role of ontology in knowledge representation; (2) distinguish"
+---
+
 # Chapter 6: Knowledge Representation
 
 **Previous:** [Chapter 6: Logical Agents and Propositional Logic](06-logic.md) | **Next:** [Chapter 7: First-Order Logic and Inference](07-fol.md)

@@ -1,3 +1,7 @@
+---
+description: "Security is not a feature — it is a property of the entire system. In any non-trivial application you must answer two questions about every request: who"
+---
+
 # Authentication & Authorization
 > **Previous:** [Transactions](24-transactions.md) | **Next:** [JWT, OAuth2 & OIDC](26-jwt-oauth2.md)
 

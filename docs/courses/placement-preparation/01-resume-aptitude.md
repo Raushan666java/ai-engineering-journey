@@ -1,3 +1,7 @@
+---
+description: "A[Resume Building] --> B[LinkedIn Profile] B --> C[Aptitude Practice] C --> D[Cover Letter Writing] E --> F[ATS Optimization] F --> G[Ready for"
+---
+
 # Resume Building, LinkedIn Optimization & Aptitude Crash Course
 
 > **Previous:** None (First Chapter) | **Next:** [Chapter 2: DSA Coding Problem Bank](./02-dsa-problem-bank.md)

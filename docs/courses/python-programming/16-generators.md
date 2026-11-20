@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: Generators produce sequences lazily with yield — each call advances to the next yield. Remember: Generators are single-use — once"
+---
+
 # Chapter 16: Generators and itertools
 
 

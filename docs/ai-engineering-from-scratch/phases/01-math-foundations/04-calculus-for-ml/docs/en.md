@@ -1,3 +1,7 @@
+---
+description: "You have a neural network with millions of weights. Each weight is a knob. You need to figure out which direction to turn every single knob to make the"
+---
+
 # Calculus for Machine Learning
 
 > Derivatives tell you which way is downhill. That is all a neural network needs to learn.

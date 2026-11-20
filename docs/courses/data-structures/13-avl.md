@@ -1,3 +1,7 @@
+---
+description: "Imagine a self-balancing scale — a platform that automatically levels itself no matter how you distribute the weight. If you load one side too heavily, a"
+---
+
 # Chapter 13: AVL Trees
 
 **Prev:** [Chapter 12: Graph Traversals](12-graph-traversals.md) | **Next:** [Chapter 14: Red-Black Trees](14-red-black.md)

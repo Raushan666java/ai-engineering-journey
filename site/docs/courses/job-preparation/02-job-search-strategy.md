@@ -4,6 +4,7 @@ slug: /job-preparation/02-job-search-strategy
 title: "Job Search Strategy for Indian IT Professionals"
 sidebar_label: "Job Search Strategy for Indian IT Professionals"
 sidebar_position: 2
+description: "This means relying solely on job portals will limit you to only 40% of available opportunities. A comprehensive strategy must include networking"
 ---
 
 # Job Search Strategy for Indian IT Professionals

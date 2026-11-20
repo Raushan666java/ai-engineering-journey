@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/19-capstone-projects
 title: "19 — Capstone Projects"
 sidebar_label: "19 — Capstone Projects"
 sidebar_position: 241
+description: "Four end-to-end builds with real evaluation: price prediction API, RAG service, agent workflow and a live deployment."
 ---
 
 # 19 — Capstone Projects

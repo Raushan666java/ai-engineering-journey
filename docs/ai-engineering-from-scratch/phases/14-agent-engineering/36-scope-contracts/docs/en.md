@@ -1,3 +1,7 @@
+---
+description: "The model does not know where the work ends. A scope contract is a per-task file that says where the work begins, where it ends, and how to roll back if"
+---
+
 # Scope Contracts and Task Boundaries
 
 > The model does not know where the work ends. A scope contract is a per-task file that says where the work begins, where it ends, and how to roll back if it spills. The contract turns "stay in scope" from a wish into a check.

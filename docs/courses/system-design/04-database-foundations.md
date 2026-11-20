@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. The B-Tree is the most widely used data structure for"
+---
+
 # Chapter 4: Database Foundations: Replication and Indexing
 > **Previous:** [03 Caching](./03-caching.md) | **Next:** [05 Partitioning Sharding](./05-partitioning-sharding.md)
 

@@ -1,3 +1,7 @@
+---
+description: "The Inversion of Control (IoC) container is Spring's beating heart. Every Spring application â€” no matter how small â€” starts by bootstrapping an"
+---
+
 # Dependency Injection & IoC Container
 
 > **Previous:** [Introduction to Spring & Spring Boot](./09-spring-intro.md) | **Next:** [Auto-Configuration & Starters](./11-auto-configuration.md)

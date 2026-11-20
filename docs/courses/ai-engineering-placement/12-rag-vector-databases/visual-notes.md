@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'Query → embed → retrieve from vector store → rerank → generate grounded in retrieved context.'"
+---
+
 # Visual Notes — Retrieval-Augmented Generation
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

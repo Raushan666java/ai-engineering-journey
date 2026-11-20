@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/ch-05-memory-systems
 title: "Chapter 5: Memory Systems & Mnemonics"
 sidebar_label: "Chapter 5: Memory Systems & Mnemonics"
 sidebar_position: 6
+description: "Transform your memory from a sieve to a steel trap. This chapter teaches you the ancient art of memory palaces, the science of encoding specificity, and"
 ---
 
 # Chapter 5: Memory Systems & Mnemonics

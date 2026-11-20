@@ -1,3 +1,7 @@
+---
+description: "That's it. That's the entire mechanism. Every framework — LangChain, LangGraph, CrewAI — is a wrapper around exactly this four-step exchange, repeated in"
+---
+
 # Part II — Building Blocks
 
 ## Chapter 4: Tool Calling From First Principles

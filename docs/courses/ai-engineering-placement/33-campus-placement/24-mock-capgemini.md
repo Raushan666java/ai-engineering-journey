@@ -1,3 +1,7 @@
+---
+description: "Simulates the Capgemini aptitude section: 18 quant, 12 logical, 12 verbal. Capgemini is arithmetic-heavy — profit/loss, SI/CI and mixtures appear every"
+---
+
 <!-- improved -->
 # Capgemini Mock Test — Full Pattern Simulation (42 Questions)
 

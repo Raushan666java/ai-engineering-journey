@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/13-ai-agents-langgraph/01-introduction-to-ai-age
 title: "Introduction to AI Agents"
 sidebar_label: "Introduction to AI Agents"
 sidebar_position: 176
+description: "Introduction to AI Agents: AI agents autonomously use tools to complete tasks. LangGraph builds stateful, multi-step agent workflows. This module covers"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /computer-architecture/02-cpu-organization
 title: "CPU Organization"
 sidebar_label: "CPU Organization"
 sidebar_position: 2
+description: "Solution: Hardwired control uses sequential logic without ROM access delays, making it faster. Flexibility and modifiability favor microprogrammed control."
 ---
 
 # CPU Organization

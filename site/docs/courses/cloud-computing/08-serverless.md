@@ -4,6 +4,7 @@ slug: /cloud-computing/08-serverless
 title: "Chapter 8: Serverless Computing"
 sidebar_label: "Chapter 8: Serverless Computing"
 sidebar_position: 8
+description: "A[Serverless Foundations] --> B[Lambda Functions] B --> E[Config: Memory, Timeout, Layers] C --> F[S3, SQS, API GW, EventBridge, SNS] D --> G[DynamoDB"
 ---
 
 # Chapter 8: Serverless Computing

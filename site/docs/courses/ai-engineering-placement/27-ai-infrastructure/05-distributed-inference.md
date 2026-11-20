@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/27-ai-infrastructure/05-distributed-inference
 title: "Distributed Inference"
 sidebar_label: "Distributed Inference"
 sidebar_position: 327
+description: "Modern LLMs are too large for a single GPU. Llama 3 405B requires 810 GB in FP16. No single GPU has that much memory. Distributed inference splits the"
 ---
 
 <!-- improved -->

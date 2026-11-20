@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/07-company-format-mock-tests
 title: "Company-Format Mock Tests"
 sidebar_label: "Company-Format Mock Tests"
 sidebar_position: 368
+description: "After this chapter you will be able to run full-length mock tests that exactly mirror the TCS NQT, Infosys SP, Wipro NLTH, Capgemini, Accenture, and"
 ---
 
 <!-- improved -->

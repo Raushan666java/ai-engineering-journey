@@ -1,3 +1,7 @@
+---
+description: "LinkedIn Optimization: Your portfolio is your proof of skills. GitHub profiles, technical blogs, and LinkedIn optimization help you stand out. This module"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # LinkedIn Optimization

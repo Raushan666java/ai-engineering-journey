@@ -4,6 +4,7 @@ slug: /web-development/11-databases-web
 title: "Chapter 11: Databases in Web Applications"
 sidebar_label: "Chapter 11: Databases in Web Applications"
 sidebar_position: 11
+description: "Use prisma.$transaction([]) for operations that must all succeed or all fail — it wraps multiple queries in a database transaction with automatic rollback."
 ---
 
 # Chapter 11: Databases in Web Applications

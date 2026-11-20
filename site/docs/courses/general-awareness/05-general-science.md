@@ -4,6 +4,7 @@ slug: /general-awareness/05-general-science
 title: "Chapter 5: General Science & Technology"
 sidebar_label: "Chapter 5: General Science & Technology"
 sidebar_position: 5
+description: "TB is caused by bacteria (Mycobacterium tuberculosis) and spreads through airborne droplets when infected people cough or sneeze. Malaria (plasmodium via"
 ---
 
 # Chapter 5: General Science & Technology

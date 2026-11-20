@@ -1,3 +1,7 @@
+---
+description: "Bitcoin uses a stack-based, non-Turing complete language called Script. It is intentionally limited to prevent infinite loops (denial of service). There"
+---
+
 # Chapter 4: The Bitcoin Network
 
 > **Previous:** [Chapter 3: Consensus Mechanisms](./03-consensus.md) | **Next:** [Chapter 5: Ethereum and Smart Contracts](./05-ethereum.md)

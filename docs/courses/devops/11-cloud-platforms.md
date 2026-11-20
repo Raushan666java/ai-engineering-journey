@@ -1,3 +1,7 @@
+---
+description: "IAM (Identity and Access Management) — Fine-grained access control with users, groups, roles, policies, and identity federation. Supports SCIM, SAML 2.0"
+---
+
 # Chapter 11: Cloud Platforms
 
 > **Previous:** [SRE and Monitoring](./10-monitoring.md) | **Next:** [Monitoring and Logging](./12-monitoring-logging.md)

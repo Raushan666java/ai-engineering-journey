@@ -4,6 +4,7 @@ slug: /theory-of-computation/14-space-complexity
 title: "Chapter 14: Space Complexity"
 sidebar_label: "Chapter 14: Space Complexity"
 sidebar_position: 14
+description: "The space complexity of a Turing machine is the maximum number of tape cells used on any input of length n. For a multitape TM, the space used is the sum"
 ---
 
 # Chapter 14: Space Complexity

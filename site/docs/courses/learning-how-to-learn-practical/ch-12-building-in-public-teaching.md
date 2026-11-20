@@ -4,6 +4,7 @@ slug: /learning-how-to-learn-practical/ch-12-building-in-public-teaching
 title: "Chapter 12: Building in Public & Teaching"
 sidebar_label: "Chapter 12: Building in Public & Teaching"
 sidebar_position: 13
+description: "Teaching is the highest form of learning. When you prepare to teach, your brain organizes knowledge differently — into clear, structured, explainable"
 ---
 
 # Chapter 12: Building in Public & Teaching

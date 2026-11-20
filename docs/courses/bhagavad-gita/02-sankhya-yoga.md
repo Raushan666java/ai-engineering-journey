@@ -1,3 +1,7 @@
+---
+description: "Arjuna sits on the floor of the chariot, weaponless, tearful, finished. And Krishna — the friend, the charioteer, the whole of the Gita in human form —"
+---
+
 # Chapter 2: Sankhya Yoga — The Wisdom of the Seer
 
 > "Krishna begins where all real teaching begins: not with comfort, but with the truth that you have never died."

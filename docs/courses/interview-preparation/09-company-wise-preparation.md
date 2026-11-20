@@ -1,3 +1,7 @@
+---
+description: "Real Experience: In my TCS interview, they asked me to write a SQL query with INNER JOIN and LEFT JOIN difference. Then they asked about HashMap internal"
+---
+
 # Chapter 9: Company-Wise Preparation Strategy
 
 ## Learning Objectives

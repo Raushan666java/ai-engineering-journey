@@ -1,3 +1,7 @@
+---
+description: "A[Identify Entities] --> B[Define Attributes] B --> C[Specify Relationships] C --> D[Set Cardinality & Participation] E --> F[Map to Relational Schema] F"
+---
+
 # Chapter 2: Entity-Relationship Model
 ```
 > **Previous:** [Chapter 1: Introduction to Database Systems](./01-introduction.md) | **Next:** [Chapter 3: The Relational Model](./03-relational-model.md)

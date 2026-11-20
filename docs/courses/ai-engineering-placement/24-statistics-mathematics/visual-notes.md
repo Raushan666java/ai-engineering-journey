@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'Linear algebra, calculus, probability and statistics support everything you build — one model at a time.'"
+---
+
 # Visual Notes — The Math Under Every Model
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

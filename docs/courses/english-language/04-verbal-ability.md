@@ -1,3 +1,7 @@
+---
+description: "Verbal Ability in government exams is a broad category that tests your command over sentence structure, logical sequencing, and contextual"
+---
+
 # Chapter 4: Verbal Ability
 
 ## Learning Objectives

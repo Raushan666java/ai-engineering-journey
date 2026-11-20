@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/14-fine-tuning-peft/07-dpo-and-preference-tuning
 title: "DPO & Preference Tuning"
 sidebar_label: "DPO & Preference Tuning"
 sidebar_position: 194
+description: "DPO & Preference Tuning: Fine-tuning adapts foundation models to your specific domain. LoRA, QLoRA, and DPO make this affordable. This module covers when"
 ---
 
 <!-- improved -->

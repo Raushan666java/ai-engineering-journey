@@ -1,3 +1,7 @@
+---
+description: "A finite state machine (FSM) is a sequential circuit with a finite number of states that transitions between states based on inputs. FSMs are the"
+---
+
 # Chapter 7: State Machines
 
 > **Prereq:** Chapter 6 (Sequential Circuits) ? flip-flops provide the state memory for state machines.

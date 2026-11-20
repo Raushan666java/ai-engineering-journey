@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/ch-03-active-recall-spaced-repetition
 title: "Chapter 3: Active Recall & Spaced Repetition"
 sidebar_label: "Chapter 3: Active Recall & Spaced Repetition"
 sidebar_position: 4
+description: "Passive review — rereading notes, highlighting, watching videos again — feels productive but produces almost no long-term retention. The science is"
 ---
 
 # Chapter 3: Active Recall & Spaced Repetition

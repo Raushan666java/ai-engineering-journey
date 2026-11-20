@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/00-core-computer-science/03-database-internals
 title: "Database Internals for AI Engineers"
 sidebar_label: "Database Internals for AI Engineers"
 sidebar_position: 4
+description: "After this chapter you will be able to choose between B-tree and LSM-tree storage engines for different AI workloads, design indexes that accelerate"
 ---
 
 <!-- improved -->

@@ -1,3 +1,7 @@
+---
+description: "A/B testing is the gold standard for evaluating changes in products, models, and user experiences using controlled experiments. As an AI engineer, you"
+---
+
 <!-- improved -->
 # Chapter 07: A/B Testing & Experimental Design
 

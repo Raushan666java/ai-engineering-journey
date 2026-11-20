@@ -1,3 +1,7 @@
+---
+description: "The platform enables content teams to author, edit, search, and publish articles at scale with AI assistance. Writers produce drafts, editors refine them"
+---
+
 # Chapter 23: Case Study — AI-Powered Content Platform
 
 > **Previous:** [Case Study E-Commerce](./22-case-study-ecommerce.md) | **Next:** [Capstone](./24-capstone.md)

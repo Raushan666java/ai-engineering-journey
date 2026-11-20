@@ -1,3 +1,7 @@
+---
+description: "Neural nets do not consume raw waveforms well. They consume spectrograms. They consume mel spectrograms even better. Every ASR, TTS, and audio classifier"
+---
+
 # Spectrograms, Mel Scale & Audio Features
 
 > Neural nets do not consume raw waveforms well. They consume spectrograms. They consume mel spectrograms even better. Every ASR, TTS, and audio classifier in 2026 lives or dies by this single preprocessing choice.

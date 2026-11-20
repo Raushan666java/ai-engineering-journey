@@ -1,3 +1,7 @@
+---
+description: "Unlike Bitcoin, Ethereum uses an Account-based model (similar to a bank account). The 'Global State' of Ethereum is a mapping of addresses to account"
+---
+
 # Chapter 5: Ethereum and Smart Contracts
 
 > **Previous:** [Chapter 4: The Bitcoin Network](./04-bitcoin.md) | **Next:** [Chapter 6: Smart Contract Development](./06-solidity.md)

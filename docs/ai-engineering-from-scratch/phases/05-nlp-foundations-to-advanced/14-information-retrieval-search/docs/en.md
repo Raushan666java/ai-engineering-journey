@@ -1,3 +1,7 @@
+---
+description: "The user types 'what happens if someone lies to get money' and expects to find the statute that actually covers that: 'Section 420 IPC.' A keyword search"
+---
+
 # Information Retrieval and Search
 
 > BM25 is precise but brittle. Dense casts a wide net but misses keywords. Hybrid is the 2026 default. Everything else is tuning.

@@ -1,3 +1,7 @@
+---
+description: "slug: /professional-knowledge title: 'Professional Knowledge Recap — IBPS SO IT Officer Mains' sidebar_label: 'Professional Knowledge Recap — IBPS SO IT"
+---
+
 ﻿---
 id: index
 slug: /professional-knowledge

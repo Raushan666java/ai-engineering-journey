@@ -4,6 +4,7 @@ slug: /computer-architecture/01-number-systems
 title: "Number Systems & Boolean Algebra"
 sidebar_label: "Number Systems & Boolean Algebra"
 sidebar_position: 1
+description: "A number system defines how numbers are represented using a set of symbols (digits). The four primary number systems relevant to computer organisation are:"
 ---
 
 # Number Systems & Boolean Algebra

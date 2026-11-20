@@ -1,3 +1,7 @@
+---
+description: "Read papers without drowning: how to skim, what to extract, and how to turn a paper into a working prototype."
+---
+
 # 29 — Research Reading & AI Literature
 
 ## Overview

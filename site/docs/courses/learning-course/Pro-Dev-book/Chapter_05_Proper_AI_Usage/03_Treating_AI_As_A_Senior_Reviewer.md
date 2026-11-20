@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_05_Proper_AI_Usage/03_Treating_AI_As
 title: "🧑‍🏫 Treating AI As A Senior Reviewer"
 sidebar_label: "🧑‍🏫 Treating AI As A Senior Reviewer"
 sidebar_position: 3
+description: "One of the most profound shifts you can make as a developing engineer is to stop treating Large Language Models (LLMs) like Google or StackOverflow, and"
 ---
 # 🧑‍🏫 Treating AI As A Senior Reviewer
 

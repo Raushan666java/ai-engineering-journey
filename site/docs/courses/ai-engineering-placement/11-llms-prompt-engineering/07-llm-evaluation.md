@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/11-llms-prompt-engineering/07-llm-evaluation
 title: "LLM Evaluation"
 sidebar_label: "LLM Evaluation"
 sidebar_position: 154
+description: "LLM Evaluation: Large language models are transforming every industry. Understanding how to prompt, evaluate, and optimize LLMs is a critical skill for AI"
 ---
 
 <!-- improved -->

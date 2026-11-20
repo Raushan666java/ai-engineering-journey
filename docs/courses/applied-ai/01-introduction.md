@@ -1,3 +1,7 @@
+---
+description: "Imagine an invisible chef living in your kitchen. Every morning, this chef learns your breakfast preferences → your ideal coffee strength, how crispy you"
+---
+
 # Chapter 1: Introduction to Applied AI
 
 > **Prerequisite:** None  

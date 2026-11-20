@@ -4,6 +4,7 @@ slug: /theory-of-computation/09-turing
 title: "Chapter 9: Turing Machines"
 sidebar_label: "Chapter 9: Turing Machines"
 sidebar_position: 9
+description: "Alan Turing introduced the Turing machine in 1936 as a model of 'computation by a human clerk.' It is the most powerful model of computation we have →"
 ---
 
 # Chapter 9: Turing Machines

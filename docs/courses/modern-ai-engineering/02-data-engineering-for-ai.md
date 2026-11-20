@@ -1,3 +1,7 @@
+---
+description: "The most widely cited lesson from production AI systems is that data quality matters more than model choice. A 2023 survey of AI practitioners found that"
+---
+
 # Chapter 2: Data Engineering for AI
 
 ## Learning Objectives

@@ -1,3 +1,7 @@
+---
+description: 'Dishonest Shopkeeper: If a shopkeeper sells at CP but uses false weight: $ text{Profit %} = frac{ text{Error}}{ text{True Value} - text{Error}} times'
+---
+
 # Chapter 1: Quantitative Aptitude
 
 > **Previous:** None | **Next:** [Chapter 2: Logical Reasoning](02-logical-reasoning.md)

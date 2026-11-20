@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/17-ai-security-guardrails/03-content-filtering
 title: "Content Filtering"
 sidebar_label: "Content Filtering"
 sidebar_position: 218
+description: "Content Filtering: AI systems face unique security threats. Prompt injection, data leakage, and content abuse require specialized defenses. This module"
 ---
 
 <!-- improved -->

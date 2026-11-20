@@ -1,3 +1,7 @@
+---
+description: "A research loop without a scheduler is a queue with delusions. The scheduler is where the loop decides what to stop exploring, and that decision is the"
+---
+
 # Iteration Scheduler
 
 > A research loop without a scheduler is a queue with delusions. The scheduler is where the loop decides what to stop exploring, and that decision is the whole game.

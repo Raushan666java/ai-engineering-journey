@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/05-fastapi-backend/01-rest-api-fundamentals
 title: "REST API Fundamentals — HTTP, Resources, and Design Principles"
 sidebar_label: "REST API Fundamentals — HTTP, Resources, and Design Principles"
 sidebar_position: 69
+description: "REST APIs are the backbone of every AI engineering system — from serving model predictions to orchestrating multi-service ML pipelines. Whether you're"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/30-business-skills/03-estimation-planning
 title: "03 — Estimation & Planning for AI Engineers"
 sidebar_label: "03 — Estimation & Planning for AI Engineers"
 sidebar_position: 347
+description: "Estimating AI work is harder than estimating traditional software. The reason is fundamental: machine learning is research, not just engineering. You do"
 ---
 
 <!-- improved -->

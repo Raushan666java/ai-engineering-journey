@@ -4,6 +4,7 @@ slug: /web-development/04-js-dom
 title: "Chapter 4 → JavaScript and the DOM"
 sidebar_label: "Chapter 4 → JavaScript and the DOM"
 sidebar_position: 4
+description: "IntersectionObserver asynchronously observes visibility changes of elements relative to a parent or the viewport → essential for lazy loading, infinite"
 ---
 
 # Chapter 4 → JavaScript and the DOM

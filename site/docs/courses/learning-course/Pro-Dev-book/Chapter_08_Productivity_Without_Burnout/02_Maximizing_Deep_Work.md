@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_08_Productivity_Without_Burnout/02_M
 title: "🔇 Maximizing Deep Work"
 sidebar_label: "🔇 Maximizing Deep Work"
 sidebar_position: 2
+description: "'Deep Work,' a term popularized by Cal Newport, refers to professional activities performed in a state of distraction-free concentration that push your"
 ---
 # 🔇 Maximizing Deep Work
 

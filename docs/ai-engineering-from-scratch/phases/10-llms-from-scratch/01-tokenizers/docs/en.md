@@ -1,3 +1,7 @@
+---
+description: "The gap between 'Hello, world!' and [15496, 11, 995, 0] is the tokenizer. Every word, every space, every punctuation mark must be converted into an"
+---
+
 # Tokenizers: BPE, WordPiece, SentencePiece
 
 > Your LLM does not read English. It reads integers. The tokenizer decides whether those integers carry meaning or waste it.

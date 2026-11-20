@@ -1,3 +1,7 @@
+---
+description: "Probability theory quantifies uncertainty and randomness, forming the mathematical foundation for machine learning, Bayesian inference, and"
+---
+
 <!-- improved -->
 # Chapter 02: Probability Basics
 

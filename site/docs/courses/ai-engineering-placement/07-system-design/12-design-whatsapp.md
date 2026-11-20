@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design/12-design-whatsapp
 title: "Design WhatsApp — Real-Time Messaging, Presence, Encryption"
 sidebar_label: "Design WhatsApp — Real-Time Messaging, Presence, Encryption"
 sidebar_position: 107
+description: "Design WhatsApp — Real-Time Messaging, Presence, Encryption: System design interviews test your ability to architect large-scale systems. Caching, load"
 ---
 
 <!-- improved -->

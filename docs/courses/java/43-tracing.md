@@ -1,3 +1,7 @@
+---
+description: "Distributed tracing tracks requests as they flow through multiple microservices. Each request is assigned a traceId that propagates across service"
+---
+
 # Distributed Tracing & Observability
 
 > **Previous:** [Distributed Configuration](./42-config.md) | **Next:** [Project Reactor &amp; Reactive Streams](./44-reactor.md)

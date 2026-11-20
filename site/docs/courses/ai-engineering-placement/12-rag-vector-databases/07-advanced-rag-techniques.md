@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/07-advanced-rag-techniqu
 title: "Advanced RAG Techniques"
 sidebar_label: "Advanced RAG Techniques"
 sidebar_position: 164
+description: "Advanced RAG Techniques: Retrieval-Augmented Generation lets LLMs answer questions about your private data. Vector databases store embeddings for semantic"
 ---
 
 <!-- improved -->

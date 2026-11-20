@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases
 title: "12 — RAG & Vector Databases"
 sidebar_label: "12 — RAG & Vector Databases"
 sidebar_position: 174
+description: "Retrieval that works: chunking, embeddings, hybrid search, reranking, and measuring Recall@k instead of guessing."
 ---
 
 # 12 — RAG & Vector Databases

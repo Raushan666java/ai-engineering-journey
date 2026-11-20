@@ -1,3 +1,7 @@
+---
+description: "Exam Weightage: 25 Questions in IBPS SO Prelims Moderate (Class 8-10 Math level, speed matters) Focus Areas: Arithmetic, Data Interpretation, Number Series"
+---
+
 # Quantitative Aptitude — IBPS SO & Govt Exam Prep
 
 > **Exam Weightage:** 25 Questions in IBPS SO Prelims

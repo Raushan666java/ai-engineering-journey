@@ -1,3 +1,7 @@
+---
+description: "Generated code is right when it passes the tests. The eval harness has to extract code, run it without crashing the host, and tally pass-rates honestly"
+---
+
 # Code Exec Metric
 
 > Generated code is right when it passes the tests. The eval harness has to extract code, run it without crashing the host, and tally pass-rates honestly. This lesson builds that surface.

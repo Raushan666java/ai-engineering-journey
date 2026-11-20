@@ -4,6 +4,7 @@ slug: /bhagavad-gita
 title: "The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan"
 sidebar_label: "The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan"
 sidebar_position: 19
+description: "The Gita is 701 verses, and this course gives you every one of them — complete Devanagari text, IAST transliteration, an original English translation, and"
 ---
 
 # The Complete Bhagavad Gita: All 701 Shlokas with Osho-Style Darshan

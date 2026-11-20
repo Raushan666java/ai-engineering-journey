@@ -1,3 +1,7 @@
+---
+description: "Generate handoff.md and handoff.json from workbench artifacts at session end so the next session is productive in the first minute. Both forms carry the"
+---
+
 # Mission - Multi-Session Handoff
 
 ## Goal

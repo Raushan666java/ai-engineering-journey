@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/AI_ENHANCED_LEARNING title: '🤖 AI-Enhanced Learning System' sidebar_label: '🤖 AI-Enhanced Learning System'"
+---
+
 ﻿---
 slug: /learning-course/AI_ENHANCED_LEARNING
 title: "🤖 AI-Enhanced Learning System"

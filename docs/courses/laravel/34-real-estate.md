@@ -1,3 +1,7 @@
+---
+description: "Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents: One-Sentence Takeaway: Theory is the foundation — master it before moving to examples"
+---
+
 # Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents
 
 > **Previous:** [Customer Service & Support Agents](./33-customer-service.md) | **Next:** [Legal & Compliance Agents](./35-legal.md)

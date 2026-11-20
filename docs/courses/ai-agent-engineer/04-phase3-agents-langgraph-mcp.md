@@ -1,3 +1,7 @@
+---
+description: "Build agent state machines with LangGraph, multi-agent crews with CrewAI, and MCP clients that connect LLMs to tools. Rebuild your Purvanchal Flow Studio"
+---
+
 # Phase 3 — AI Agents: LangGraph, CrewAI, MCP
 
 **Duration:** Weeks 6-8, ~35 hours

@@ -1,3 +1,7 @@
+---
+description: "Foundation models like GPT-4o, Claude, and Gemini have fundamentally changed what AI can do — from writing production code to reasoning across massive"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Foundation Models Overview

@@ -1,3 +1,7 @@
+---
+description: "Every AI-powered learning system from Chapter 1 runs on prompts, and most learners use prompts that are too vague to unlock real depth. This chapter"
+---
+
 # Chapter 2: Prompt Foundations
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

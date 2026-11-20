@@ -4,6 +4,7 @@ slug: /devops/11-cloud-platforms
 title: "Chapter 11: Cloud Platforms"
 sidebar_label: "Chapter 11: Cloud Platforms"
 sidebar_position: 20
+description: "IAM (Identity and Access Management) — Fine-grained access control with users, groups, roles, policies, and identity federation. Supports SCIM, SAML 2.0"
 ---
 
 # Chapter 11: Cloud Platforms

@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/Modules/5_Mindset/README.mdDETAILED_NOTES title: '🎯 Learning Mindset - Detailed Notes' sidebar_label: '🎯 Learning Mindset"
+---
+
 ﻿---
 slug: /learning-course/Modules/5_Mindset/README.mdDETAILED_NOTES
 title: "🎯 Learning Mindset - Detailed Notes"

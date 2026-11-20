@@ -1,3 +1,7 @@
+---
+description: "Answer: Every HTTP request enters via public/index.php, which loads Composer's autoloader and bootstraps the application. The HTTP kernel is resolved from"
+---
+
 # Chapter 38: Laravel General Interview Q&A
 
 > **Previous:** [Enterprise Capstone — Multi-Agent Platform](./37-enterprise-capstone.md) | **Next:** [Healthcare Interview Q&A](./39-interview-healthcare.md)

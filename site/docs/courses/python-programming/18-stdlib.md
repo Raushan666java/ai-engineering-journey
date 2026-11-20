@@ -4,6 +4,7 @@ slug: /python-programming/18-stdlib
 title: "Chapter 18: The Python Standard Library"
 sidebar_label: "Chapter 18: The Python Standard Library"
 sidebar_position: 18
+description: "Build a simple HTTP request logger and inspector using http.server and logging. Create a custom HTTP handler that logs every request's method, path"
 ---
 
 # Chapter 18: The Python Standard Library

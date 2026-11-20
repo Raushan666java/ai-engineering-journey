@@ -1,3 +1,7 @@
+---
+description: "A 96-layer transformer does not fit on one GPU. Even with tensor parallelism, scaling beyond 8 GPUs per node forces cross-node communication that kills"
+---
+
 # Pipeline Parallelism -- GPipe, PipeDream, 1F1B Scheduling
 
 > A 96-layer transformer does not fit on one GPU. Even with tensor parallelism, scaling beyond 8 GPUs per node forces cross-node communication that kills throughput. Pipeline parallelism splits layers across devices: rank 0 holds layers 0-23, rank 1 holds layers 24-47, and so on. The question is how to schedule forward and backward passes across those devices so that (a) GPUs stay busy, (b) gradients are correct, and (c) memory stays flat. GPipe, PipeDream, and 1F1B are the three canonical answers, each trading bubble overhead for memory and throughput in a different way.

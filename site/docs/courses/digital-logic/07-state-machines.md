@@ -4,6 +4,7 @@ slug: /digital-logic/07-state-machines
 title: "Chapter 7: State Machines"
 sidebar_label: "Chapter 7: State Machines"
 sidebar_position: 7
+description: "A finite state machine (FSM) is a sequential circuit with a finite number of states that transitions between states based on inputs. FSMs are the"
 ---
 
 # Chapter 7: State Machines

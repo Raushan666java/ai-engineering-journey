@@ -4,6 +4,7 @@ slug: /system-design/22-case-study-twitter
 title: "Chapter 22: Case Study — Twitter and News Feed"
 sidebar_label: "Chapter 22: Case Study — Twitter and News Feed"
 sidebar_position: 22
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Twitter serves 330+ million monthly active users who"
 ---
 
 # Chapter 22: Case Study — Twitter and News Feed

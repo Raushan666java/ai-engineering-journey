@@ -1,3 +1,7 @@
+---
+description: "Simulates the Wipro National Level Talent Hunt aptitude section: 18 quant, 14 logical, 12 verbal. Some Wipro years include negative marking — if so, skip"
+---
+
 <!-- improved -->
 # Wipro NLTH Mock Test — Full Pattern Simulation (44 Questions)
 

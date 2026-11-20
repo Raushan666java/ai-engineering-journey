@@ -1,23 +1,37 @@
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Brand tokens — shared with the diagram set in static/img/visual/*.svg, so
+     the site and the diagrams finally look like one product. */
+  --brand-ink: #1a1b23;
+  --brand-accent: #4446e8;
+  --brand-cta: #3b3dd6;
+  --brand-tint: #eef0ff;
+  --brand-line: #d0d2e6;
+
+  --ifm-color-primary: #4446e8;
+  --ifm-color-primary-dark: #3a3cd0;
+  --ifm-color-primary-darker: #3436c2;
+  --ifm-color-primary-darkest: #2b2da3;
+  --ifm-color-primary-light: #5b5ded;
+  --ifm-color-primary-lighter: #6a6cf0;
+  --ifm-color-primary-lightest: #8b8dff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8871;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --brand-ink: #0f1016;
+  --brand-accent: #8f91ff;
+  --brand-cta: #4a4cf0;
+  --brand-tint: rgba(68, 70, 232, 0.14);
+  --brand-line: #2a2b36;
+
+  --ifm-color-primary: #8b8dff;
+  --ifm-color-primary-dark: #7a7cf5;
+  --ifm-color-primary-darker: #6f71f2;
+  --ifm-color-primary-darkest: #5a5ce0;
+  --ifm-color-primary-light: #9b9dff;
+  --ifm-color-primary-lighter: #a6a8ff;
+  --ifm-color-primary-lightest: #bfc0ff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -178,4 +192,45 @@
   text-align: center;
   color: var(--ifm-color-emphasis-600);
   margin-bottom: 2rem;
+}
+
+/* ---------------------------------------------------------------------------
+   Navbar: identity CTA
+--------------------------------------------------------------------------- */
+
+.navbar-hire-button {
+  background: var(--brand-cta);
+  color: #fff !important;
+  border-radius: 999px;
+  padding: 0.35rem 0.95rem !important;
+  margin-left: 0.4rem;
+  font-weight: 600;
+  font-size: 0.86rem;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.navbar-hire-button:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+  text-decoration: none;
+}
+
+.navbar-about-link {
+  font-weight: 500;
+}
+
+/* Pagination + TOC accents keep the reading surface calm */
+.pagination-nav__link:hover {
+  border-color: var(--brand-accent);
+}
+
+.table-of-contents__link--active {
+  font-weight: 600;
+}
+
+/* "Last updated" line under each chapter */
+.theme-doc-footer .text--italic,
+.theme-doc-footer time {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.82rem;
 }

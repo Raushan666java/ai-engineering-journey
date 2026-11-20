@@ -1,3 +1,7 @@
+---
+description: "The query the user types is not the query your retriever wants. Rewriting bridges the gap before retrieval, so the index sees something closer to what the"
+---
+
 # Query Rewriting: HyDE, Multi-Query, and Decomposition
 
 > The query the user types is not the query your retriever wants. Rewriting bridges the gap before retrieval, so the index sees something closer to what the answer looks like.

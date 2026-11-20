@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/02-sql-problem-bank
 title: "SQL Problem Bank"
 sidebar_label: "SQL Problem Bank"
 sidebar_position: 252
+description: "SQL Problem Bank: Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews prepare"
 ---
 
 <!-- improved -->

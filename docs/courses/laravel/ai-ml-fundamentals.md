@@ -1,3 +1,7 @@
+---
+description: "Chapter P6: AI/ML Fundamentals & Laravel Integration: One-Sentence Takeaway: Theory is the foundation → master it before moving to examples and exercises"
+---
+
 # Chapter P6: AI/ML Fundamentals & Laravel Integration
 
 ---

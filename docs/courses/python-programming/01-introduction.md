@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: Python was created by Guido van Rossum in 1991; the Zen of Python drives its philosophy of readability and simplicity. Pro Tip: Run"
+---
+
 # Chapter 1: Introduction to Python
 
 ## Learning Objectives

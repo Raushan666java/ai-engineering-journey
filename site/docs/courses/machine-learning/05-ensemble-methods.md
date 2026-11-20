@@ -4,6 +4,7 @@ slug: /machine-learning/05-ensemble-methods
 title: "Chapter 5: Ensemble Methods"
 sidebar_label: "Chapter 5: Ensemble Methods"
 sidebar_position: 5
+description: "Ensemble methods combine multiple machine learning models (base learners) to produce a single, stronger model. The fundamental insight is that the"
 ---
 
 # Chapter 5: Ensemble Methods

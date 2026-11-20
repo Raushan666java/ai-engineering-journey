@@ -1,3 +1,7 @@
+---
+description: "Imagine a row of cinema seats numbered 0 to n-1. Each seat holds exactly one person — just like an array slot holds one element. You can instantly tell"
+---
+
 # Chapter 2: Arrays
 
 > **Previous:** [Chapter 1: Complexity Analysis](./01-complexity.md) | **Next:** [Singly Linked List](./03-singly-linked-list.md)

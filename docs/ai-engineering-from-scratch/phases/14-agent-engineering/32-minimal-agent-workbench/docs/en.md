@@ -1,3 +1,7 @@
+---
+description: "The smallest useful workbench is three files: a root instructions router, a state file, and a task board. Everything else is layered on top. If a repo"
+---
+
 # The Minimal Agent Workbench
 
 > The smallest useful workbench is three files: a root instructions router, a state file, and a task board. Everything else is layered on top. If a repo cannot carry these three, no model will save it.

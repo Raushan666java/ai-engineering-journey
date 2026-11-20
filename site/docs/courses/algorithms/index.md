@@ -1,3 +1,7 @@
+---
+description: "Course Overview: A rigorous treatment of algorithm design, analysis, and correctness. Students will master asymptotic analysis, fundamental data"
+---
+
 ﻿---
 id: index
 slug: /algorithms

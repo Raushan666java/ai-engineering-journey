@@ -1,3 +1,7 @@
+---
+description: "Implement verify(task_id, artifacts) as a pure deterministic function over scope report, rule report, feedback log, and diff, emitting one"
+---
+
 # Mission - Verification Gates
 
 ## Goal

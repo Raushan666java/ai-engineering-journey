@@ -4,6 +4,7 @@ slug: /english-language/03-vocabulary-word-usage
 title: "Chapter 3: Vocabulary & Word Usage"
 sidebar_label: "Chapter 3: Vocabulary & Word Usage"
 sidebar_position: 3
+description: "Vocabulary and word usage accounts for 4–5 questions in IBPS SO IT Officer Prelims. The topic overlaps with Reading Comprehension (vocabulary-in-context"
 ---
 
 # Chapter 3: Vocabulary & Word Usage

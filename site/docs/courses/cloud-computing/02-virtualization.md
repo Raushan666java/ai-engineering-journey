@@ -4,6 +4,7 @@ slug: /cloud-computing/02-virtualization
 title: "Chapter 2: Virtualization"
 sidebar_label: "Chapter 2: Virtualization"
 sidebar_position: 2
+description: "Virtualization is the process of creating a software-based, virtual version of a resource, such as a server, storage device, network, or operating system"
 ---
 
 # Chapter 2: Virtualization

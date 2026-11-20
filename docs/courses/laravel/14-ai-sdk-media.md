@@ -1,3 +1,7 @@
+---
+description: 'The Laravel Ai Image class provides a unified interface for generating images from text prompts. Supported providers include OpenAI (DALL-E 3), Gemini'
+---
+
 # Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings
 > **Previous:** [Laravel AI SDK -- Tools, MCP Tools & Provider Tools](./13-ai-sdk-tools) | **Next:** [Laravel MCP -- Model Context Protocol](./15-mcp)
 

@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/17-glossary-reference
 title: "17-glossary-reference"
 sidebar_label: "17-glossary-reference"
 sidebar_position: 18
+description: "Agentic RAG — Retrieval-augmented generation where the decision to retrieve, what to retrieve, and whether retrieval was sufficient are all dynamic"
 ---
 
 ## Chapter 17: Glossary & Reference

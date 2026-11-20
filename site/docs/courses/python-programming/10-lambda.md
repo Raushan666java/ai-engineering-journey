@@ -4,6 +4,7 @@ slug: /python-programming/10-lambda
 title: "Chapter 10: Lambda and Functional Programming"
 sidebar_label: "Chapter 10: Lambda and Functional Programming"
 sidebar_position: 10
+description: "One-Sentence Takeaway: map() and filter() are lazy; list comprehensions often read better. Remember: List comprehensions are often more readable than"
 ---
 
 # Chapter 10: Lambda and Functional Programming

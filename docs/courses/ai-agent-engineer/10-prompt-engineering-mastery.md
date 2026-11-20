@@ -1,3 +1,7 @@
+---
+description: "Master advanced prompt patterns, structured output design, prompt management at scale, and injection defense. Move beyond copying prompts to designing"
+---
+
 # Chapter 10 — Prompt Engineering Mastery
 
 **Duration:** 2 weeks, ~20 hours

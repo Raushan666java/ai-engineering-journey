@@ -1,3 +1,7 @@
+---
+description: "Advanced Git operations — stash, cherry-pick, bisect, reflog — give you powerful tools for managing complex workflows. These skills are essential for"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Advanced Git

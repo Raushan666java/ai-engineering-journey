@@ -4,6 +4,7 @@ slug: /laravel/10-testing-observability
 title: "Chapter 10: Testing, Debugging & Observability"
 sidebar_label: "Chapter 10: Testing, Debugging & Observability"
 sidebar_position: 10
+description: "Laravel ships with PHPUnit as its default testing framework. PHPUnit's configuration is managed through either phpunit.xml or phpunit.xml.dist at the"
 ---
 
 # Chapter 10: Testing, Debugging & Observability

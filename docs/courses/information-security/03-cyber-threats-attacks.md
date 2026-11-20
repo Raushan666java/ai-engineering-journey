@@ -1,3 +1,7 @@
+---
+description: "Exam Weightage: 4–6 Qs in IBPS SO IT Officer Mains (Common in PK and GK sections) Key Topics: Malware types, DoS/DDoS, SQL Injection, XSS/CSRF, Phishing"
+---
+
 # Chapter 3: Cyber Threats & Attacks
 
 > **Exam Weightage:** 4–6 Qs in IBPS SO IT Officer Mains (Common in PK and GK sections)

@@ -3,6 +3,7 @@ slug: /learning-course/01_AI_Setup/AI_Tools_Setup
 title: "🤖 AI Tools Setup - 30 Minutes"
 sidebar_label: "🤖 AI Tools Setup - 30 Minutes"
 sidebar_position: 3
+description: "Set up essential AI tools for 5x faster learning in 30 minutes."
 ---
 # 🤖 AI Tools Setup - 30 Minutes
 

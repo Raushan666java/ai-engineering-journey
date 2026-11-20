@@ -4,6 +4,7 @@ slug: /compiler-design/08-runtime-env
 title: "Chapter 8: Runtime Environment"
 sidebar_label: "Chapter 8: Runtime Environment"
 sidebar_position: 8
+description: "After completing this chapter, students will be able to: design activation records for procedure invocations; allocate storage on the stack and heap"
 ---
 
 # Chapter 8: Runtime Environment

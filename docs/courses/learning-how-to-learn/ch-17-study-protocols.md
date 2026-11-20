@@ -1,3 +1,7 @@
+---
+description: "Chapter 16: Self-Assessment & Structured Preparation Strategy — Knowing where you stand before optimizing how you learn. Also see: Chapter 4: Pomodoro"
+---
+
 # Chapter 17: Study Protocols & Brain Hacks
 
 > **Prerequisites:** [Chapter 16: Self-Assessment & Structured Preparation Strategy](./ch-16-self-assessment-strategy.md) — Knowing where you stand before optimizing how you learn.

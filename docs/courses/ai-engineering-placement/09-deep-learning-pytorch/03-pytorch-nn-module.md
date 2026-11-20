@@ -1,3 +1,7 @@
+---
+description: "PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init: Deep learning powers modern AI breakthroughs. PyTorch is the framework of choice"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init

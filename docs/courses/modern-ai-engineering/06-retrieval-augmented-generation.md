@@ -1,3 +1,7 @@
+---
+description: "By the end of this chapter, you will be able to: - Design a complete RAG architecture with retriever, augmenter, and generator components - Select"
+---
+
 
 # Chapter 6: Retrieval-Augmented Generation
 

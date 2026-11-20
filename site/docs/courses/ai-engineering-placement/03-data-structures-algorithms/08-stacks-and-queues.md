@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/08-stacks-and-queu
 title: "Stacks and Queues"
 sidebar_label: "Stacks and Queues"
 sidebar_position: 45
+description: "Trees are hierarchical data structures fundamental to representing organized data. Binary trees, BSTs, and balanced trees (AVL, Red-Black) are essential"
 ---
 
 <!-- improved -->

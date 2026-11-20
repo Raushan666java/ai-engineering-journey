@@ -4,6 +4,7 @@ slug: /oop-cpp/11-file-io
 title: "Chapter 11: File I/O"
 sidebar_label: "Chapter 11: File I/O"
 sidebar_position: 11
+description: "File I/O (Input/Output) is the mechanism by which a program reads data from or writes data to files on persistent storage (hard drive, SSD, etc.). Unlike"
 ---
 
 # Chapter 11: File I/O

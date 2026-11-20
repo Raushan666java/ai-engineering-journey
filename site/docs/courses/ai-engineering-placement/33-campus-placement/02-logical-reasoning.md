@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/02-logical-reasoning
 title: "Logical Reasoning for Campus Placements"
 sidebar_label: "Logical Reasoning for Campus Placements"
 sidebar_position: 363
+description: "After this chapter you will be able to solve number and letter series, coding-decoding, blood relations, syllogisms, seating arrangements, puzzles"
 ---
 
 <!-- improved -->

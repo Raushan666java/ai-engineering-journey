@@ -1,3 +1,7 @@
+---
+description: "A computer network is an interconnected collection of autonomous computers that exchange data and share resources. Two computers are said to be"
+---
+
 # Chapter 1: Introduction to Computer Networks
 
 > **Prerequisites:** None | **Next:** [Chapter 2: Physical Layer](./02-physical-layer.md) → From network models to transmission media

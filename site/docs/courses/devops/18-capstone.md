@@ -4,6 +4,7 @@ slug: /devops/18-capstone
 title: "Chapter 18: Capstone Project"
 sidebar_label: "Chapter 18: Capstone Project"
 sidebar_position: 27
+description: "The capstone project is the culminating assessment of DevOps mastery. Unlike individual chapter exercises that focus on isolated skills, the capstone"
 ---
 
 # Chapter 18: Capstone Project

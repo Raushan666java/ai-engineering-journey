@@ -4,6 +4,7 @@ slug: /python-programming/16-generators
 title: "Chapter 16: Generators and itertools"
 sidebar_label: "Chapter 16: Generators and itertools"
 sidebar_position: 16
+description: "One-Sentence Takeaway: Generators produce sequences lazily with yield — each call advances to the next yield. Remember: Generators are single-use — once"
 ---
 
 # Chapter 16: Generators and itertools

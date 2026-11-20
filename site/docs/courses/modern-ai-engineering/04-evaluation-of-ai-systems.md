@@ -4,6 +4,7 @@ slug: /modern-ai-engineering/04-evaluation-of-ai-systems
 title: "Chapter 4: Evaluation of AI Systems"
 sidebar_label: "Chapter 4: Evaluation of AI Systems"
 sidebar_position: 4
+description: "By the end of this chapter, you will be able to: - Explain why evaluating generative AI systems is fundamentally harder than evaluating traditional ML"
 ---
 
 # Chapter 4: Evaluation of AI Systems

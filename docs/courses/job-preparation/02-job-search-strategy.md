@@ -1,3 +1,7 @@
+---
+description: "This means relying solely on job portals will limit you to only 40% of available opportunities. A comprehensive strategy must include networking"
+---
+
 # Job Search Strategy for Indian IT Professionals
 
 ## Learning Objectives

@@ -1,3 +1,7 @@
+---
+description: "A comprehensive course covering the Indian banking system, monetary policy, financial markets, government schemes, budget, and banking regulations —"
+---
+
 ﻿---
 id: index
 slug: /banking-financial-awareness

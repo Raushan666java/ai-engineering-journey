@@ -4,6 +4,7 @@ slug: /laravel/21-system-design-scale
 title: "Chapter 21: System Design: Laravel at Enterprise Scale"
 sidebar_label: "Chapter 21: System Design: Laravel at Enterprise Scale"
 sidebar_position: 21
+description: "At 10 million users, every architectural decision must be based on quantitative estimates, not intuition. Application code writes to primary, reads from"
 ---
 
 # Chapter 21: System Design: Laravel at Enterprise Scale

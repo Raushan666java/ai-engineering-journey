@@ -1,3 +1,7 @@
+---
+description: "OpenAI Agents SDK is a lightweight Python framework for building production-grade AI agents. Released in March 2025, it provides a unified runtime for"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # OpenAI Agents SDK

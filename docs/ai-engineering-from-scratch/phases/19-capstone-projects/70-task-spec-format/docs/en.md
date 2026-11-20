@@ -1,3 +1,7 @@
+---
+description: "An eval harness is only as good as the contract its tasks honour. Freeze the JSONL shape and the metric vocabulary before you write a single scoring"
+---
+
 # Task Spec Format
 
 > An eval harness is only as good as the contract its tasks honour. Freeze the JSONL shape and the metric vocabulary before you write a single scoring function.

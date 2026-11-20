@@ -4,6 +4,7 @@ slug: /java/56-interview-java
 title: "Java Core Interview Q&A"
 sidebar_label: "Java Core Interview Q&A"
 sidebar_position: 56
+description: "This chapter covers 40+ essential Java Core interview questions ranging from OOP fundamentals to advanced concurrency, JVM internals, and Java 8+"
 ---
 
 # Java Core Interview Q&A

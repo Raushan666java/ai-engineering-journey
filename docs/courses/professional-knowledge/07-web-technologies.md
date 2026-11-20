@@ -1,3 +1,7 @@
+---
+description: "Answer: (a) 1-2-1. IDs: #main = 1. Classes/attributes/pseudo-classes: .content, :hover = 2. Elements: div, a = 2? Actually div and a are 2 elements. Wait"
+---
+
 # Chapter 7: Web Technologies — Exam Quick Revision
 
 ## Learning Objectives

@@ -1,3 +1,7 @@
+---
+description: "Matrix problems are common in coding interviews and have direct applications in image processing, neural networks, and scientific computing. Understanding"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Backtracking

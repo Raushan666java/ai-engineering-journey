@@ -4,6 +4,7 @@ slug: /computer-networks/04-mac
 title: "Chapter 4: Medium Access Control (MAC)"
 sidebar_label: "Chapter 4: Medium Access Control (MAC)"
 sidebar_position: 4
+description: "The Medium Access Control (MAC) sublayer is the lower sublayer of the data link layer in the IEEE 802 reference model. It sits directly above the physical"
 ---
 
 # Chapter 4: Medium Access Control (MAC)

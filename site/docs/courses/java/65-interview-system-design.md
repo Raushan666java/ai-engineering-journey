@@ -4,6 +4,7 @@ slug: /java/65-interview-system-design
 title: "65. System Design → Interview Q&A"
 sidebar_label: "65. System Design → Interview Q&A"
 sidebar_position: 73
+description: "This chapter covers system design concepts essential for senior Java backend interviews: designing scalable, reliable, and maintainable distributed"
 ---
 
 # 65. System Design → Interview Q&A

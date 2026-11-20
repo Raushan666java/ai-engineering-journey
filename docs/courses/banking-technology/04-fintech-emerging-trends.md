@@ -1,3 +1,7 @@
+---
+description: "The Account Aggregator (AA) framework is a RBI-licensed data sharing system that enables individuals to securely share their financial data across"
+---
+
 # Chapter 04: Fintech and Emerging Trends
 
 ## Learning Objectives

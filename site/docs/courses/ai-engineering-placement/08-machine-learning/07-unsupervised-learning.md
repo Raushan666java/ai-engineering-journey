@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/08-machine-learning/07-unsupervised-learning
 title: "Unsupervised Learning — K-Means, DBSCAN, Hierarchical, Gaussian Mixtures"
 sidebar_label: "Unsupervised Learning — K-Means, DBSCAN, Hierarchical, Gaussian Mixtures"
 sidebar_position: 118
+description: "Unsupervised Learning — K-Means, DBSCAN, Hierarchical, Gaussian Mixtures: Machine learning is the core of AI engineering. From linear regression to"
 ---
 
 <!-- improved -->

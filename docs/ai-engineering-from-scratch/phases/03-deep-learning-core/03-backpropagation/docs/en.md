@@ -1,3 +1,7 @@
+---
+description: "Your network has a single hidden layer with 768 inputs and 3072 outputs. That's 2,359,296 weights. It made a wrong prediction. Which weights caused the"
+---
+
 # Backpropagation from Scratch
 
 > Backpropagation is the algorithm that makes learning possible. Without it, neural networks are just expensive random number generators.

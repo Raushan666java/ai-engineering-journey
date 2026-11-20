@@ -1,3 +1,7 @@
+---
+description: "In a microservices architecture, services need to find each other at runtime. Service discovery solves the problem of locating service instances whose"
+---
+
 # Service Discovery & Load Balancing
 > **Previous:** [Microservices Principles](38-microservices-principles.md) | **Next:** [API Gateway](40-gateway.md)
 

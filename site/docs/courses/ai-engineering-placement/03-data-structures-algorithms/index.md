@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms
 title: "03 — Data Structures & Algorithms"
 sidebar_label: "03 — Data Structures & Algorithms"
 sidebar_position: 56
+description: "The DSA patterns that recur in interviews — arrays, graphs, dynamic programming, heaps — with complexity analysis and practice problems."
 ---
 
 # 03 — Data Structures & Algorithms

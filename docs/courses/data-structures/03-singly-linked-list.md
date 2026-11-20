@@ -1,3 +1,7 @@
+---
+description: "Imagine a train. Each car carries cargo (data) and is coupled to the next car via a single coupler (pointer). The engine is the head. To add a new car at"
+---
+
 # Chapter 3: Singly Linked List
 
 > **Previous:** [Chapter 2: Arrays](./02-arrays.md) | **Next:** [Doubly Linked List](./04-doubly-linked-list.md)

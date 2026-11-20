@@ -1,3 +1,7 @@
+---
+description: "slug: /vigyan-bhairav-tantra title: 'विज्ञान भैरव तंत्र: ओशो की ११२ ध्यान विधियाँ (The Book of Secrets)' sidebar_label: 'विज्ञान भैरव तंत्र: ओशो की ११२"
+---
+
 ﻿---
 id: index
 slug: /vigyan-bhairav-tantra

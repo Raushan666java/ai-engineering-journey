@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/14-fine-tuning-peft/03-lora-theory
 title: "LoRA Theory"
 sidebar_label: "LoRA Theory"
 sidebar_position: 190
+description: "LoRA Theory: Fine-tuning adapts foundation models to your specific domain. LoRA, QLoRA, and DPO make this affordable. This module covers when to"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /java/14-logging-error-i18n
 title: "Logging, Error Handling & Internationalization"
 sidebar_label: "Logging, Error Handling & Internationalization"
 sidebar_position: 14
+description: "Pro Tip: Use parametrized logging (log.info('user {} logged in', userId)) instead of string concatenation — SLF4J evaluates the template only if the log"
 ---
 
 # Logging, Error Handling & Internationalization

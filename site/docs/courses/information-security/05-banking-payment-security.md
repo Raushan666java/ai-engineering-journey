@@ -4,6 +4,7 @@ slug: /information-security/05-banking-payment-security
 title: "Chapter 5: Banking & Payment Security"
 sidebar_label: "Chapter 5: Banking & Payment Security"
 sidebar_position: 5
+description: "Exam Weightage: 4–6 Qs in IBPS SO IT Officer Mains (Banking technology, digital payment security, RBI guidelines) Key Topics: RBI cybersecurity"
 ---
 
 # Chapter 5: Banking & Payment Security

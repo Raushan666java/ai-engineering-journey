@@ -4,6 +4,7 @@ slug: /speed-drills/01-quant-arithmetic-drills
 title: "Quant Arithmetic Speed Drills"
 sidebar_label: "Quant Arithmetic Speed Drills"
 sidebar_position: 1
+description: "Build lightning-fast mental calculation skills through timed practice across addition, subtraction, multiplication, division, percentages, fractions"
 ---
 
 # Quant Arithmetic Speed Drills

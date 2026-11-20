@@ -4,6 +4,7 @@ slug: /software-engineering/14-formal-methods
 title: "Formal Methods"
 sidebar_label: "Formal Methods"
 sidebar_position: 14
+description: "Formal methods are mathematically based techniques for the specification, development, and verification of software systems. They provide a rigorous"
 ---
 
 # Formal Methods

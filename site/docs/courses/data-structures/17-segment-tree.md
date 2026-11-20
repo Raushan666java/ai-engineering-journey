@@ -4,6 +4,7 @@ slug: /data-structures/17-segment-tree
 title: "Chapter 17: Segment Tree"
 sidebar_label: "Chapter 17: Segment Tree"
 sidebar_position: 17
+description: "Chapter 8: Binary Trees — Tree concepts, recursion, array-based tree storage | Next: Chapter 18: Union-Find (Disjoint Set Union) — From range queries to"
 ---
 
 # Chapter 17: Segment Tree

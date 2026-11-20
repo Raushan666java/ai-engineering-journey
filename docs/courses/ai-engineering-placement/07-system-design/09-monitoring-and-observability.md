@@ -1,3 +1,7 @@
+---
+description: "Monitoring & Observability — Metrics, Logging, Tracing, SLIs: System design interviews test your ability to architect large-scale systems. Caching, load"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Monitoring & Observability — Metrics, Logging, Tracing, SLIs

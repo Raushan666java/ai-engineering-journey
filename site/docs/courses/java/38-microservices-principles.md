@@ -4,6 +4,7 @@ slug: /java/38-microservices-principles
 title: "Microservices Architecture Principles"
 sidebar_label: "Microservices Architecture Principles"
 sidebar_position: 38
+description: "Domain-Driven Design (DDD), introduced by Eric Evans, provides a framework for modeling complex business domains. The central concept is the bounded"
 ---
 
 # Microservices Architecture Principles

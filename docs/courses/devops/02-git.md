@@ -1,3 +1,7 @@
+---
+description: "Blob: Stores file content. Named by SHA-1 of the content. Does not store the filename — that's in the tree. Two files with identical content share the"
+---
+
 # Chapter 2: Advanced Git
 
 > **Prev:** [Introduction](./01-introduction.md) | **Prev Section:** [Linux Basics](./02-linux-basics.md)

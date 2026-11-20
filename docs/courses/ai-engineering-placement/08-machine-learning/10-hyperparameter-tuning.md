@@ -1,3 +1,7 @@
+---
+description: "Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna: Machine learning is the core of AI engineering. From linear regression to"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna

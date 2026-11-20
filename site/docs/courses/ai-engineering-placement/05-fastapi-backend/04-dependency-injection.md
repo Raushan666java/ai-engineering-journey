@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/05-fastapi-backend/04-dependency-injection
 title: "Dependency Injection — Reusable Components and FastAPI DI System"
 sidebar_label: "Dependency Injection — Reusable Components and FastAPI DI System"
 sidebar_position: 72
+description: "Dependency Injection — Reusable Components and FastAPI DI System: FastAPI is the modern Python framework for building AI APIs. Its async support"
 ---
 
 <!-- improved -->

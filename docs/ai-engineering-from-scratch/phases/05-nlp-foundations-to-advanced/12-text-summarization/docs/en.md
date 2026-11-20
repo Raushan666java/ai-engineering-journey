@@ -1,3 +1,7 @@
+---
+description: "A 2,000-word news article lands in your feed. You need 120 words that capture it. You can either pick the three most important sentences from the article"
+---
+
 # Text Summarization
 
 > Extractive systems tell you what the document said. Abstractive systems tell you what the author meant. Different tasks, different pitfalls.

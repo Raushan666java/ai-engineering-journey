@@ -1,3 +1,7 @@
+---
+description: "Deploy. Push a new model version or agent configuration to a serving infrastructure. Tag the deployment with a version, timestamp, and rollback metadata"
+---
+
 # Chapter 6: Production Loops
 
 ## Learning Objectives

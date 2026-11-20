@@ -1,3 +1,7 @@
+---
+description: "Microsoft GraphRAG is a graph-based retrieval-augmented generation system developed by Microsoft Research. It transforms unstructured text into a"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Microsoft GraphRAG

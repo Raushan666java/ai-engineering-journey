@@ -1,3 +1,7 @@
+---
+description: "The failure mode is predictable and common: spending ₹50,000 to discover that a landing page converts at 0.2%, when ten manual conversations would have"
+---
+
 # Chapter 7 — Paid Ads and Unit Economics
 
 ## Learning Objectives

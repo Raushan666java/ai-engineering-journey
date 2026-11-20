@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming/13-pandas-advanced
 title: "Pandas Advanced — Pivot Tables, Multi-Index, Window Functions, Performance"
 sidebar_label: "Pandas Advanced — Pivot Tables, Multi-Index, Window Functions, Performance"
 sidebar_position: 22
+description: "Pandas Advanced — Pivot Tables, Multi-Index, Window Functions, Performance: Python is the lingua franca of AI engineering. Mastering its syntax, data"
 ---
 
 <!-- improved -->

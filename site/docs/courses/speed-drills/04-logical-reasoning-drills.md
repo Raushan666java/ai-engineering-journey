@@ -4,6 +4,7 @@ slug: /speed-drills/04-logical-reasoning-drills
 title: "Logical Reasoning Speed Drills"
 sidebar_label: "Logical Reasoning Speed Drills"
 sidebar_position: 4
+description: "Let's solve: B is third from left. A is immediate left of B. So A is second from left. Positions: 1:_, 2:A, 3:B, 4:_, 5:_. D is second to the right of E"
 ---
 
 # Logical Reasoning Speed Drills

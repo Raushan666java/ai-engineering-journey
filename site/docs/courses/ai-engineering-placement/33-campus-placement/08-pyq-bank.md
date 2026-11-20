@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/08-pyq-bank
 title: "PYQ Bank (Service Companies)"
 sidebar_label: "PYQ Bank (Service Companies)"
 sidebar_position: 369
+description: "After this chapter you will be able to solve 20 previous-year questions from TCS, Infosys, Wipro, Capgemini, Accenture, and Cognizant with full solutions"
 ---
 
 <!-- improved -->

@@ -1,3 +1,7 @@
+---
+description: "Word tokenizers choke on unseen words. Character tokenizers blow up sequence length. Subword tokenizers split the difference. Every modern LLM ships on"
+---
+
 # Subword Tokenization — BPE, WordPiece, Unigram, SentencePiece
 
 > Word tokenizers choke on unseen words. Character tokenizers blow up sequence length. Subword tokenizers split the difference. Every modern LLM ships on one.

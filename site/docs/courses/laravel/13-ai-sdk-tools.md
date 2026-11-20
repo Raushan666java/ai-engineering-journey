@@ -4,6 +4,7 @@ slug: /laravel/13-ai-sdk-tools
 title: "Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools"
 sidebar_label: "Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools"
 sidebar_position: 13
+description: "One-Sentence Takeaway: Tools bridge the gap between language models and external systems by letting agents call your code through a typed schema interface"
 ---
 
 # Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/04-git-linux-cli/01-git-basics
 title: "Git Basics"
 sidebar_label: "Git Basics"
 sidebar_position: 58
+description: "Git is the industry-standard version control system. Understanding Git fundamentals — init, add, commit, branching — is essential for every software"
 ---
 
 <!-- improved -->

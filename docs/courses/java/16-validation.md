@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Always use DTOs for your API layer. Exposing JPA entities directly creates tight coupling between your database schema and your API contract"
+---
+
 # Request Validation, Error Handling & Binding
 
 > **Previous:** [REST API Development](./15-rest-api.md) | **Next:** [OpenAPI & API Documentation](./17-openapi.md)

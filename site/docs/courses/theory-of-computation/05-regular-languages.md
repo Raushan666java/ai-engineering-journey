@@ -4,6 +4,7 @@ slug: /theory-of-computation/05-regular-languages
 title: "Chapter 5: Properties of Regular Languages"
 sidebar_label: "Chapter 5: Properties of Regular Languages"
 sidebar_position: 5
+description: "The pumping lemma is a powerful tool for proving that certain languages are not regular. It captures a fundamental property: any sufficiently long string"
 ---
 
 # Chapter 5: Properties of Regular Languages

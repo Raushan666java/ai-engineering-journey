@@ -1,3 +1,7 @@
+---
+description: "First, there was a parallel line of research that factorized the co-occurrence matrix directly (LSA, HAL) rather than doing online skip-gram updates. Was"
+---
+
 # GloVe, FastText, and Subword Embeddings
 
 > Word2Vec trained one embedding per word. GloVe factorized the co-occurrence matrix. FastText embedded the pieces. BPE bridged to transformers.

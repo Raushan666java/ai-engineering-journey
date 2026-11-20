@@ -4,6 +4,7 @@ slug: /bhagavad-gita/08-akshara-brahma-yoga
 title: "Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute"
 sidebar_label: "Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute"
 sidebar_position: 8
+description: "'Death is not the end of life; it is the truth of life surfacing. The question is not whether you will die — it is which thought you will be wearing when"
 ---
 
 # Chapter 8: Akshara Brahma Yoga — The Imperishable Absolute

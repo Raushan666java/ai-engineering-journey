@@ -4,6 +4,7 @@ slug: /banking-financial-awareness/02-banking-system-regulations
 title: "Chapter 2: Banking System & Regulations"
 sidebar_label: "Chapter 2: Banking System & Regulations"
 sidebar_position: 2
+description: "Banks where the Government of India holds majority stake (≥51%). PSBs are covered under the Banking Companies (Acquisition and Transfer of Undertakings)"
 ---
 
 # Chapter 2: Banking System & Regulations

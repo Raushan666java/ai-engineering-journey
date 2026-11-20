@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/12-parent-child-multi-ve
 title: "Parent-Child & Multi-Vector Retrieval"
 sidebar_label: "Parent-Child & Multi-Vector Retrieval"
 sidebar_position: 169
+description: "Standard RAG retrieves a single chunk per embedding. But what if the best retrieval unit is smaller than the best context unit for the LLM? Parent-child"
 ---
 
 <!-- improved -->

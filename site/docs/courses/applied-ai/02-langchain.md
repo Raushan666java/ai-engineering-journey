@@ -4,6 +4,7 @@ slug: /applied-ai/02-langchain
 title: "Chapter 2: LangChain & LLM Orchestration"
 sidebar_label: "Chapter 2: LangChain & LLM Orchestration"
 sidebar_position: 2
+description: "Imagine a car factory. Raw materials (steel, rubber, glass) enter at one end. Each station → welding, painting, assembly → adds value and passes the work"
 ---
 
 # Chapter 2: LangChain & LLM Orchestration

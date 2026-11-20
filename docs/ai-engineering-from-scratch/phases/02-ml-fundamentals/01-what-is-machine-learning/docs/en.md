@@ -1,3 +1,7 @@
+---
+description: "You want to build a spam filter. The traditional approach: sit down and write hundreds of rules. 'If the email contains 'FREE MONEY', mark it spam. If it"
+---
+
 # What Is Machine Learning
 
 > Machine learning is teaching computers to find patterns in data instead of writing rules by hand.

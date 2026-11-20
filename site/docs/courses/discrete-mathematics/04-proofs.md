@@ -4,6 +4,7 @@ slug: /discrete-mathematics/04-proofs
 title: "Chapter 4: Proof Techniques"
 sidebar_label: "Chapter 4: Proof Techniques"
 sidebar_position: 4
+description: 'The contrapositive of $P implies Q$ is $ neg Q implies neg P$. Since they are logically equivalent, proving the contrapositive proves the original'
 ---
 
 # Chapter 4: Proof Techniques

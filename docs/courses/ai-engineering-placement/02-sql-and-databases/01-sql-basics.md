@@ -1,3 +1,7 @@
+---
+description: "SQL Basics — SELECT, WHERE, ORDER BY, DML: Data is the fuel of AI. SQL and database design skills let you query, transform, and store the data that powers"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # SQL Basics — SELECT, WHERE, ORDER BY, DML

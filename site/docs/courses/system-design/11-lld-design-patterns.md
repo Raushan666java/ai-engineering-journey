@@ -4,6 +4,7 @@ slug: /system-design/11-lld-design-patterns
 title: "Chapter 11: Low-Level Design: Design Patterns"
 sidebar_label: "Chapter 11: Low-Level Design: Design Patterns"
 sidebar_position: 11
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Design patterns are reusable, battle-tested solutions to"
 ---
 
 # Chapter 11: Low-Level Design: Design Patterns

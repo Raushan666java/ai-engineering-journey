@@ -1,3 +1,7 @@
+---
+description: "This is a living document. If you have interview experiences to share, corrections to suggest, or additional topics to cover, please submit a pull request"
+---
+
 ﻿---
 id: index
 slug: /interview-preparation

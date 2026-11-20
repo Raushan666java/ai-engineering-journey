@@ -1,3 +1,7 @@
+---
+description: "'Avatar koi kahani nahin hai, avatar ek law hai — jise tum har roz apne andar ghatate dekho. Krishna ka janm puraane itihaas mein hua, magar tumhari"
+---
+
 # अध्याय ४: ज्ञान कर्म संन्यास योग — Avatar koi aur nahin, tumhara jagruti ka pal hai
 
 > **"Avatar koi kahani nahin hai, avatar ek law hai — jise tum har roz apne andar ghatate dekho. Krishna ka janm puraane itihaas mein hua, magar tumhari jagruti aaj, isi pal ho sakti hai. Yada yada ka matlab hai — jab bhi tum dharm se girte ho, chetna khud uthti hai."**

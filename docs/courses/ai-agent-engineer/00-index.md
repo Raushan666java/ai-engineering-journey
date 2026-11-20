@@ -1,3 +1,7 @@
+---
+description: "Modern AI Engineering — Covers Genkit, LangGraph, LlamaIndex, MCP, and production AI deployment. Complete that first for foundational AI engineering"
+---
+
 # Laravel Backend Developer → AI Agent Engineer
 
 > **Prerequisite:** [Modern AI Engineering](../modern-ai-engineering/index.md) — Covers Genkit, LangGraph, LlamaIndex, MCP, and production AI deployment. Complete that first for foundational AI engineering skills before diving into this agent-focused curriculum.

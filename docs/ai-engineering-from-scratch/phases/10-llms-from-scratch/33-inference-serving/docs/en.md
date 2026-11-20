@@ -1,3 +1,7 @@
+---
+description: "A trained LLM is not a product. It is a lump of weights on a disk. Inference serving is the layer that turns those weights into a reliable, low-latency"
+---
+
 ﻿# Inference Serving -- TensorRT-LLM, Triton Inference Server
 
 > A trained LLM is not a product. It is a lump of weights on a disk. Inference serving is the layer that turns those weights into a reliable, low-latency API.

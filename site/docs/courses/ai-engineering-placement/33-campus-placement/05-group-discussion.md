@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/05-group-discussion
 title: "Group Discussion & Extempore for Campus Placements"
 sidebar_label: "Group Discussion & Extempore for Campus Placements"
 sidebar_position: 366
+description: "After this chapter you will be able to lead and participate in group discussions using structured frameworks, score well on the four GD criteria (content"
 ---
 
 <!-- improved -->

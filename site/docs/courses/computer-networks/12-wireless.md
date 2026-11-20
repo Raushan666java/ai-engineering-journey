@@ -4,6 +4,7 @@ slug: /computer-networks/12-wireless
 title: "Chapter 12: Wireless Networks (Extended)"
 sidebar_label: "Chapter 12: Wireless Networks (Extended)"
 sidebar_position: 12
+description: "Hidden Terminal Still Colliding: Even with RTS/CTS, if two hidden stations transmit RTS simultaneously, both RTS frames collide at the AP. Both time out"
 ---
 
 # Chapter 12: Wireless Networks (Extended)

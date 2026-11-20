@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/10-hybrid-search-and-rer
 title: "Hybrid Search and Reranking"
 sidebar_label: "Hybrid Search and Reranking"
 sidebar_position: 167
+description: "Hybrid Search and Reranking: Retrieval-Augmented Generation lets LLMs answer questions about your private data. Vector databases store embeddings for"
 ---
 
 <!-- improved -->

@@ -1,3 +1,7 @@
+---
+description: "Functional: Real-time driver tracking, ride booking, fare calculation, driver-rider matching, trip history."
+---
+
 # Chapter 3: System Design Interview
 
 ## Learning Objectives

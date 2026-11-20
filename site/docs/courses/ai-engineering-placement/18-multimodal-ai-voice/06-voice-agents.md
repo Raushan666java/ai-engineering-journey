@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/18-multimodal-ai-voice/06-voice-agents
 title: "Voice Agents"
 sidebar_label: "Voice Agents"
 sidebar_position: 233
+description: "Voice Agents: AI is moving beyond text. Computer vision, speech recognition, and multimodal models process images, audio, and video. This module covers"
 ---
 
 <!-- improved -->

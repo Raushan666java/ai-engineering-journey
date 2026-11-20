@@ -4,6 +4,7 @@ slug: /c-programming/16-stacks-queues
 title: "Chapter 16: Stacks and Queues"
 sidebar_label: "Chapter 16: Stacks and Queues"
 sidebar_position: 16
+description: "You cannot pull a plate from the middle or bottom without first removing everything above it. This is the Last-In, First-Out (LIFO) principle → the last"
 ---
 
 # Chapter 16: Stacks and Queues

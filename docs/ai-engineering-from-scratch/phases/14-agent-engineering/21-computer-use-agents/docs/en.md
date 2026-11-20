@@ -1,3 +1,7 @@
+---
+description: "Three production computer-use models in 2026. All three are vision-based. All three treat screenshots, DOM text, and tool outputs as untrusted input. Only"
+---
+
 # Computer Use: Claude, OpenAI CUA, Gemini
 
 > Three production computer-use models in 2026. All three are vision-based. All three treat screenshots, DOM text, and tool outputs as untrusted input. Only direct user instructions count as permission. Per-step safety services are the norm.

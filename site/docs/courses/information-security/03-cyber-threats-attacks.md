@@ -4,6 +4,7 @@ slug: /information-security/03-cyber-threats-attacks
 title: "Chapter 3: Cyber Threats & Attacks"
 sidebar_label: "Chapter 3: Cyber Threats & Attacks"
 sidebar_position: 3
+description: "Exam Weightage: 4–6 Qs in IBPS SO IT Officer Mains (Common in PK and GK sections) Key Topics: Malware types, DoS/DDoS, SQL Injection, XSS/CSRF, Phishing"
 ---
 
 # Chapter 3: Cyber Threats & Attacks

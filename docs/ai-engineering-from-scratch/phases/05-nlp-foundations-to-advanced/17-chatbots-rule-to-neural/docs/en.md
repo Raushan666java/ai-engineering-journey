@@ -1,3 +1,7 @@
+---
+description: "ELIZA replied with pattern matches. DialogFlow mapped intents. GPT answered from weights. Claude runs tools and verifies. Each era solved the previous"
+---
+
 # Chatbots — Rule-Based to Neural to LLM Agents
 
 > ELIZA replied with pattern matches. DialogFlow mapped intents. GPT answered from weights. Claude runs tools and verifies. Each era solved the previous one's worst failure.

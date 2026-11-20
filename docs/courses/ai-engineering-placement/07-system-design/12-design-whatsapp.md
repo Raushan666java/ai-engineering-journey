@@ -1,3 +1,7 @@
+---
+description: "Design WhatsApp — Real-Time Messaging, Presence, Encryption: System design interviews test your ability to architect large-scale systems. Caching, load"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Design WhatsApp — Real-Time Messaging, Presence, Encryption

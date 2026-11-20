@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: You manage a hospital with 50 nurses, 3 shifts per day, 7 days per week. Each nurse has preferred shifts, qualification requirements"
+---
+
 # Chapter 5: Constraint Satisfaction Problems
 
 > **Previous:** [Chapter 4: CSP](04-csp.md) | **Next:** [Chapter 5: Game Playing and Adversarial Search](05-game-playing.md)

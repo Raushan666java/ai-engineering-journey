@@ -1,3 +1,7 @@
+---
+description: "Classification maps a variable-length sequence to a single label. Translation maps a variable-length sequence to another variable-length sequence. The"
+---
+
 # Sequence-to-Sequence Models
 
 > Two RNNs pretending to be a translator. The bottleneck they hit is the reason attention exists.

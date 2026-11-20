@@ -1,3 +1,7 @@
+---
+description: "Git internals, branching and recovery, plus the Linux and shell commands you need when a server breaks at 2am."
+---
+
 # 04 — Git, Linux & CLI
 
 > **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)

@@ -1,3 +1,7 @@
+---
+description: "slug: /artificial-intelligence title: 'Artificial Intelligence — Complete University Textbook' sidebar_label: 'Artificial Intelligence — Complete"
+---
+
 ﻿---
 id: index
 slug: /artificial-intelligence

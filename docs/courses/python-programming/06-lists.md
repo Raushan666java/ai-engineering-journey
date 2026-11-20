@@ -1,3 +1,7 @@
+---
+description: "Implement a sparse matrix as a list of lists, but optimise it using a dictionary mapping (row, col) indices to values (default 0). Support addition of two"
+---
+
 # Chapter 6: Lists
 
 

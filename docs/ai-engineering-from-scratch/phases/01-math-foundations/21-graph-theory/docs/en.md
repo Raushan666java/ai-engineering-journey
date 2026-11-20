@@ -1,3 +1,7 @@
+---
+description: "Social networks, molecules, knowledge bases, citation networks, road maps -- all are graphs. Traditional ML treats data as flat tables. Each row is"
+---
+
 # Graph Theory for Machine Learning
 
 > Graphs are the data structure of relationships. If your data has connections, you need graph theory.

@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/ch-15-exam-cracking-mastery
 title: "Chapter 15: Exam Cracking Mastery — Universal Strategy for Any Exam"
 sidebar_label: "Chapter 15: Exam Cracking Mastery — Universal Strategy for Any Exam"
 sidebar_position: 16
+description: "A universal framework to crack any competitive exam — GATE, IBPS SO, NIC Scientist, SBI PO, RBI Grade B, SSC CGL, UPSC, campus placements, coding"
 ---
 
 # Chapter 15: Exam Cracking Mastery — Universal Strategy for Any Exam

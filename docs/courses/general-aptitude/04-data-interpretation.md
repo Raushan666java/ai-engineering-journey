@@ -1,3 +1,7 @@
+---
+description: "Example Caselet: 'In a company of 500 employees, 60% are male. Among the male employees, 40% work in IT, 30% in Finance, and the rest in HR. Among female"
+---
+
 # Chapter 4: Data Interpretation
 
 > **Previous:** [Chapter 3: Verbal Ability](03-verbal-ability.md) | **Next:** [Chapter 5: Non-Verbal Reasoning](05-non-verbal-reasoning.md)

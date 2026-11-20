@@ -1,3 +1,7 @@
+---
+description: "Naive Bayes is a family of probabilistic classifiers based on Bayes theorem with a strong independence assumption between features. Despite its"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications

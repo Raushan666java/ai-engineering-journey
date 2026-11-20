@@ -1,3 +1,7 @@
+---
+description: "LangGraph is the 2026 reference for low-level stateful orchestration. Agent is a state machine; nodes are functions; edges are transitions; state is"
+---
+
 # LangGraph: Stateful Graphs and Durable Execution
 
 > LangGraph is the 2026 reference for low-level stateful orchestration. Agent is a state machine; nodes are functions; edges are transitions; state is immutable and checkpointed after every step. Resume from any failure exactly where it left off.

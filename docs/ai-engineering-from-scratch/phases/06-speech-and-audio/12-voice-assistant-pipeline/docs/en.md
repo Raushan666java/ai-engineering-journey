@@ -1,3 +1,7 @@
+---
+description: "Everything from lessons 01-11, stitched together. Build a voice assistant that listens, reasons, and talks back. In 2026 that is a solved engineering"
+---
+
 # Build a Voice Assistant Pipeline — The Phase 6 Capstone
 
 > Everything from lessons 01-11, stitched together. Build a voice assistant that listens, reasons, and talks back. In 2026 that is a solved engineering problem, not a research problem — but the integration details decide whether it ships.

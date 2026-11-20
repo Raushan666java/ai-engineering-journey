@@ -4,6 +4,7 @@ slug: /database-management-systems/03-relational-model
 title: "Chapter 3: The Relational Model"
 sidebar_label: "Chapter 3: The Relational Model"
 sidebar_position: 3
+description: "One-Sentence Takeaway: The relational model, rooted in set theory and predicate logic, represents all data as simple relations and provides a small set of"
 ---
 
 # Chapter 3: The Relational Model

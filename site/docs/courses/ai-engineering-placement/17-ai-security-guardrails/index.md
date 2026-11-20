@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/17-ai-security-guardrails
 title: "17 — AI Security & Guardrails"
 sidebar_label: "17 — AI Security & Guardrails"
 sidebar_position: 226
+description: "Prompt injection, data exfiltration and unsafe tool calls — plus guardrails enforced in code rather than in prompts."
 ---
 
 # 17 — AI Security & Guardrails

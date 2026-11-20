@@ -1,3 +1,7 @@
+---
+description: "The one with the biggest margin. The margin is the distance between the decision boundary and the nearest data points on each side. A wider margin means"
+---
+
 # Support Vector Machines
 
 > Find the widest street between two classes. That is the entire idea.

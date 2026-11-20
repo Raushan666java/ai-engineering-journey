@@ -1,3 +1,7 @@
+---
+description: "Turn work into offers: a GitHub that reads well, a resume that survives screening, and a demo that answers questions."
+---
+
 # 20 — Portfolio & Personal Branding
 
 ## Overview

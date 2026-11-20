@@ -4,6 +4,7 @@ slug: /laravel/03-blade-frontend
 title: "Chapter 3: Blade Templating, Components & Frontend"
 sidebar_label: "Chapter 3: Blade Templating, Components & Frontend"
 sidebar_position: 3
+description: "Pro Tip: The $loop->parent property is invaluable when rendering nested collections — it lets you access the outer loop's iteration count from within an"
 ---
 
 # Chapter 3: Blade Templating, Components & Frontend

@@ -4,6 +4,7 @@ slug: /laravel/05-auth-security
 title: "Chapter 5: Authentication, Authorization & Security"
 sidebar_label: "Chapter 5: Authentication, Authorization & Security"
 sidebar_position: 5
+description: "The Bootcamp is not a starter kit but an interactive tutorial that walks through building a full application from scratch. It demonstrates the same app"
 ---
 
 # Chapter 5: Authentication, Authorization & Security

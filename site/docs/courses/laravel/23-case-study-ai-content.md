@@ -4,6 +4,7 @@ slug: /laravel/23-case-study-ai-content
 title: "Chapter 23: Case Study — AI-Powered Content Platform"
 sidebar_label: "Chapter 23: Case Study — AI-Powered Content Platform"
 sidebar_position: 23
+description: "The platform enables content teams to author, edit, search, and publish articles at scale with AI assistance. Writers produce drafts, editors refine them"
 ---
 
 # Chapter 23: Case Study — AI-Powered Content Platform

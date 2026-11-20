@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/14-fine-tuning-peft/visual-notes
 title: "Visual Notes — Choosing How to Adapt a Model"
 sidebar_label: "Visual Notes"
 sidebar_position: 197
+description: "One-line answer for interviews: 'Full fine-tuning changes every weight; LoRA/QLoRA nudges low-rank adapters — pick by data, cost and quality needs.'"
 ---
 
 # Visual Notes — Choosing How to Adapt a Model

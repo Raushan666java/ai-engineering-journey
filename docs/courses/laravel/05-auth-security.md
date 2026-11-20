@@ -1,3 +1,7 @@
+---
+description: "The Bootcamp is not a starter kit but an interactive tutorial that walks through building a full application from scratch. It demonstrates the same app"
+---
+
 # Chapter 5: Authentication, Authorization & Security
 > **Previous:** [Eloquent ORM, Database & Migrations](./04-eloquent-database) | **Next:** [Queues, Jobs, Notifications & Mail](./06-queues-notifications)
 

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design/01-scalability-fundamentals
 title: "Scalability Fundamentals — Vertical, Horizontal, and Beyond"
 sidebar_label: "Scalability Fundamentals — Vertical, Horizontal, and Beyond"
 sidebar_position: 96
+description: "Scalability Fundamentals — Vertical, Horizontal, and Beyond: System design interviews test your ability to architect large-scale systems. Caching, load"
 ---
 
 <!-- improved -->

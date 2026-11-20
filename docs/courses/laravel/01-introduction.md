@@ -1,3 +1,7 @@
+---
+description: "Laravel is an open-source PHP web framework created by Taylor Otwell in June 2011. Otwell, a web developer from Arkansas, had been building applications"
+---
+
 # Chapter 1: Introduction to Laravel 13
 
 **Next:** [Architecture, Routing, Middleware & Controllers](./02-architecture-routing.md)

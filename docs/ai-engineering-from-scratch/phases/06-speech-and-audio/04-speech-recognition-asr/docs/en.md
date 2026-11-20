@@ -1,3 +1,7 @@
+---
+description: "Speech recognition is audio classification at every timestep, glued together by a sequence model that knows English and silence. CTC, RNN-T, and attention"
+---
+
 # Speech Recognition (ASR) — CTC, RNN-T, Attention
 
 > Speech recognition is audio classification at every timestep, glued together by a sequence model that knows English and silence. CTC, RNN-T, and attention are the three ways to do it. Pick one and understand why.

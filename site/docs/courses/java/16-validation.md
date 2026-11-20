@@ -4,6 +4,7 @@ slug: /java/16-validation
 title: "Request Validation, Error Handling & Binding"
 sidebar_label: "Request Validation, Error Handling & Binding"
 sidebar_position: 16
+description: "Pro Tip: Always use DTOs for your API layer. Exposing JPA entities directly creates tight coupling between your database schema and your API contract"
 ---
 
 # Request Validation, Error Handling & Binding

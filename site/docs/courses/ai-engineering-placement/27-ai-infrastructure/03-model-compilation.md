@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/27-ai-infrastructure/03-model-compilation
 title: "03 — Model Compilation & Optimization"
 sidebar_label: "03 — Model Compilation & Optimization"
 sidebar_position: 325
+description: "Model compilation converts trained neural networks into optimized executables for specific hardware. Instead of interpreting a model graph at runtime"
 ---
 
 <!-- improved -->

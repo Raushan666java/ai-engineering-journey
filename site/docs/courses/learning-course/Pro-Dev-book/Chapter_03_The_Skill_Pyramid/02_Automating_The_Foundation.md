@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_03_The_Skill_Pyramid/02_Automating_T
 title: "🤖 Automating The Foundation"
 sidebar_label: "🤖 Automating The Foundation"
 sidebar_position: 2
+description: "To continuously operate at the top tiers of the Skill Pyramid (Architecture and Debugging), you must minimize the mental effort required to perform tasks"
 ---
 # 🤖 Automating The Foundation
 

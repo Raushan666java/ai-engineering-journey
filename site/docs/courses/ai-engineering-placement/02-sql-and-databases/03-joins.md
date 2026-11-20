@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/02-sql-and-databases/03-joins
 title: "Joins — INNER, LEFT, RIGHT, FULL, CROSS, Self-Joins"
 sidebar_label: "Joins — INNER, LEFT, RIGHT, FULL, CROSS, Self-Joins"
 sidebar_position: 28
+description: "Joins — INNER, LEFT, RIGHT, FULL, CROSS, Self-Joins: Data is the fuel of AI. SQL and database design skills let you query, transform, and store the data"
 ---
 
 <!-- improved -->

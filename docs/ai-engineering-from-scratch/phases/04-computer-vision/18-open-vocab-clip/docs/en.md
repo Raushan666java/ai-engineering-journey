@@ -1,3 +1,7 @@
+---
+description: "Train an image encoder and a text encoder together so that matching (image, caption) pairs land at the same point in a shared space. That is the whole"
+---
+
 # Open-Vocabulary Vision — CLIP
 
 > Train an image encoder and a text encoder together so that matching (image, caption) pairs land at the same point in a shared space. That is the whole trick.

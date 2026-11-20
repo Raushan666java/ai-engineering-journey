@@ -1,3 +1,7 @@
+---
+description: "You need to classify text. Emails into spam or not-spam. Customer reviews into positive or negative. Support tickets into categories. You have thousands"
+---
+
 # Naive Bayes
 
 > The "naive" assumption is wrong, and it works anyway. That's the beauty of it.

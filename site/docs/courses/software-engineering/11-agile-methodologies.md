@@ -4,6 +4,7 @@ slug: /software-engineering/11-agile-methodologies
 title: "Agile Methodologies"
 sidebar_label: "Agile Methodologies"
 sidebar_position: 11
+description: "We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value: Individuals and"
 ---
 
 # Agile Methodologies

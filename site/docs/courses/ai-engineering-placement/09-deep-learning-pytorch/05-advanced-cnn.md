@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/09-deep-learning-pytorch/05-advanced-cnn
 title: "Advanced CNN Architectures"
 sidebar_label: "Advanced CNN Architectures"
 sidebar_position: 130
+description: "Advanced CNN Architectures: Deep learning powers modern AI breakthroughs. PyTorch is the framework of choice for researchers and production engineers"
 ---
 
 <!-- improved -->

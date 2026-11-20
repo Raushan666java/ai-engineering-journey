@@ -1,3 +1,7 @@
+---
+description: "stdio works locally and nowhere else. Streamable HTTP (2025-03-26) is the remote standard. The old HTTP+SSE transport is deprecated and being removed in"
+---
+
 # MCP Transports — stdio vs Streamable HTTP vs SSE Migration
 
 > stdio works locally and nowhere else. Streamable HTTP (2025-03-26) is the remote standard. The old HTTP+SSE transport is deprecated and being removed in mid-2026. Picking the wrong transport costs a migration; picking the right one buys a remote-hostable MCP server with session continuity and DNS-rebinding protection.

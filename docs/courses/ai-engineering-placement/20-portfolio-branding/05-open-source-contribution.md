@@ -1,3 +1,7 @@
+---
+description: "Open Source Contribution: Your portfolio is your proof of skills. GitHub profiles, technical blogs, and LinkedIn optimization help you stand out. This"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Open Source Contribution

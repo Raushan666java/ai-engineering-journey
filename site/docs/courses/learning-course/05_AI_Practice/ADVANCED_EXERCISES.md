@@ -3,6 +3,7 @@ slug: /learning-course/05_AI_Practice/ADVANCED_EXERCISES
 title: "🔥 Advanced Learning Exercises"
 sidebar_label: "🔥 Advanced Learning Exercises"
 sidebar_position: 1
+description: "🔥 Advanced Learning Exercises — learning course"
 ---
 # 🔥 Advanced Learning Exercises
 

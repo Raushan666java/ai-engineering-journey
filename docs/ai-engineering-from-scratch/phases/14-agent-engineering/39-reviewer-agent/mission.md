@@ -1,3 +1,7 @@
+---
+description: "Build a reviewer loop that reads the builder's artifacts read-only and emits a review_report.json scored across five dimensions, totalling out of 10, with"
+---
+
 # Mission - Reviewer Agent: Separate Builder from Marker
 
 ## Goal

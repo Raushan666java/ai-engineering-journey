@@ -1,3 +1,7 @@
+---
+description: "Transfer Learning — Feature Extraction, Fine-Tuning, Model Hub, Domain Adaptation: Deep learning powers modern AI breakthroughs. PyTorch is the framework"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Transfer Learning — Feature Extraction, Fine-Tuning, Model Hub, Domain Adaptation

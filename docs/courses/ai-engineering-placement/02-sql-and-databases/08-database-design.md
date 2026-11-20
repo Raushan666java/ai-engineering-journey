@@ -1,3 +1,7 @@
+---
+description: "Database Design — Normalization, ERD, Keys, Constraints, Schema Design: Data is the fuel of AI. SQL and database design skills let you query, transform"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Database Design — Normalization, ERD, Keys, Constraints, Schema Design

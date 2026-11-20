@@ -1,3 +1,7 @@
+---
+description: "Adapt MLOps practices for the unique challenges of AI engineering. Master experiment tracking, prompt management, CI/CD pipelines, data and model"
+---
+
 # Chapter 11: MLOps for AI Engineering
 
 > **Adapt MLOps practices for the unique challenges of AI engineering. Master experiment tracking, prompt management, CI/CD pipelines, data and model versioning, drift monitoring, testing strategies, and incident response playbooks — all with TypeScript.**

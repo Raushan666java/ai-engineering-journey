@@ -1,3 +1,7 @@
+---
+description: "A pointer is a variable that stores the memory address of another variable. Instead of holding a value directly, it holds the location where a value lives."
+---
+
 # Chapter 9: Pointers
 
 > **Previous:** [Functions](./08-functions.md) | **Next:** [Structures and Unions](./10-structures-unions.md)

@@ -1,3 +1,7 @@
+---
+description: "A[Cloud Security Foundations] --> B[Shared Responsibility Model] A --> C[Identity and Access Management] A --> E[Network Security] A --> F[Monitoring and"
+---
+
 # Chapter 7: Cloud Security
 
 > **Previous:** [Chapter 6: Cloud Networking](./06-cloud-networking.md) | **Next:** [Chapter 8: Serverless Computing](./08-serverless.md)

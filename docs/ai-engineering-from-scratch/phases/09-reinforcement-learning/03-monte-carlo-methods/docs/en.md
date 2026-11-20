@@ -1,3 +1,7 @@
+---
+description: "Dynamic programming needs a model. Monte Carlo needs nothing but episodes. Run the policy, watch the returns, average them. The simplest idea in RL — and"
+---
+
 # Monte Carlo Methods — Learning from Complete Episodes
 
 > Dynamic programming needs a model. Monte Carlo needs nothing but episodes. Run the policy, watch the returns, average them. The simplest idea in RL — and the one that unlocks everything downstream.

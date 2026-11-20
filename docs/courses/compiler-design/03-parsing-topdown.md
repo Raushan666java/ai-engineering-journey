@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: define context-free grammars and use them to describe programming-language syntax; construct"
+---
+
 # Chapter 3: Top-Down Parsing
 
 **? Previous:** [Chapter 2: Lexical Analysis](02-lexical.md) | **Next:** [Chapter 4: Bottom-Up Parsing](04-parsing-bottomup.md)

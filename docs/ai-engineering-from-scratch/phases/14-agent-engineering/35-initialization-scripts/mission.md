@@ -1,3 +1,7 @@
+---
+description: "Build init_agent.py that probes runtime, dependencies, test command, env vars, and state freshness, then writes init_report.json and halts the session"
+---
+
 # Mission - Initialization Scripts for Agents
 
 ## Goal

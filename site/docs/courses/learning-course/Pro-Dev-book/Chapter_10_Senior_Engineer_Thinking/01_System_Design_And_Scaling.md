@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_10_Senior_Engineer_Thinking/01_Syste
 title: "🏛️ System Design and Scaling"
 sidebar_label: "🏛️ System Design and Scaling"
 sidebar_position: 1
+description: "To cross the threshold into true Senior-level engineering, you must step away from syntax and begin thinking in systems. You are no longer writing"
 ---
 # 🏛️ System Design and Scaling
 

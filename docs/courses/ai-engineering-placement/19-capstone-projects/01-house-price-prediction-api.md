@@ -1,3 +1,7 @@
+---
+description: 'RMSE punishes large errors because it squares them before averaging. MAE does not. If a $50k miss is ten times worse than a $5k miss, optimise RMSE. If'
+---
+
 <!-- improved -->
 <!-- Classification: TUTORIAL - teaches building a complete ML API from scratch -->
 # House Price Prediction API

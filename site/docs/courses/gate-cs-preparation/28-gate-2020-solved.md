@@ -1,9 +1,10 @@
 ---
 id: 28-gate-2020-solved
 slug: /gate-cs-preparation/28-gate-2020-solved
-title: "28 Gate 2020 Solved"
-sidebar_label: "28 Gate 2020 Solved"
+title: "28-gate-2020-solved"
+sidebar_label: "28-gate-2020-solved"
 sidebar_position: 25
+description: "The ratio of ages of A and B is 3:4. After 5 years, ratio becomes 4:5. What is A's present age?"
 ---
 
 ﻿# GATE CS 2020 Solved Paper
@@ -55,7 +56,6 @@ sidebar_position: 25
 ## Section A: General Aptitude (15 marks)
 
 ### Q1 [1 Mark] — Numerical Ability
-
 The ratio of ages of A and B is 3:4. After 5 years, ratio becomes 4:5. What is A's present age?
 
 (A) 10  
@@ -83,7 +83,6 @@ console.log(findAge([3, 4], [4, 5], 5)); // 15
 </details>
 
 ### Q2 [1 Mark] — Numerical Ability
-
 A number when divided by 7 leaves remainder 4. What is the remainder when twice the number is divided by 7?
 
 (A) 1  
@@ -109,7 +108,6 @@ console.log(doubleRemainder(7, 4)); // 1
 </details>
 
 ### Q3 [1 Mark] — Verbal Ability
-
 Choose the synonym of "BENEVOLENT":
 
 (A) Malevolent  
@@ -128,7 +126,6 @@ Choose the synonym of "BENEVOLENT":
 </details>
 
 ### Q4 [1 Mark] — Logical Reasoning
-
 Which number replaces the question mark? 5, 9, 17, 33, ?
 
 (A) 55  
@@ -143,7 +140,7 @@ Which number replaces the question mark? 5, 9, 17, 33, ?
 
 **Explanation:**
 Pattern: 5→9 (+4), 9→17 (+8), 17→33 (+16), 33→? (+32). Next = 33+32 = 65.
-Alternatively: each term = 2âÂ�¿âÂ�º¹ + 1: 2²+1=5, 2³+1=9, 2âÂ�´+1=17, 2âÂ�µ+1=33, 2âÂ�¶+1=65.
+Alternatively: each term = 2ⁿ⁺¹ + 1: 2²+1=5, 2³+1=9, 2⁴+1=17, 2⁵+1=33, 2⁶+1=65.
 
 ```typescript
 function sequenceTerm(n: number): number {
@@ -155,7 +152,6 @@ console.log(sequenceTerm(5)); // 65
 </details>
 
 ### Q5 [1 Mark] — Numerical Ability
-
 If the price of sugar increases by 25%, by what percent must consumption be reduced to keep expenditure the same?
 
 (A) 10%  
@@ -182,7 +178,6 @@ console.log(consumptionReduction(25)); // 20%
 </details>
 
 ### Q6 [2 Marks] — Numerical Ability
-
 A train running at 54 km/h crosses a pole in 12 seconds. The length of the train is:
 
 (A) 150 m  
@@ -209,7 +204,6 @@ console.log(trainLength(54, 12)); // 180
 </details>
 
 ### Q7 [2 Marks] — Data Interpretation
-
 Find the mean of: 12, 15, 18, 21, 24.
 
 (A) 15  
@@ -228,7 +222,6 @@ Sum = 12+15+18+21+24 = 90. Count = 5. Mean = 90/5 = 18.
 </details>
 
 ### Q8 [2 Marks] — Logical Reasoning
-
 In a code language, WATER is coded as XBUFST. How is FIRE coded?
 
 (A) GJSF  
@@ -254,7 +247,6 @@ console.log(shiftCode('FIRE')); // GJSF
 </details>
 
 ### Q9 [2 Marks] — Numerical Ability
-
 How many 4-letter words can be formed from the letters of "GATE" without repetition?
 
 (A) 12  
@@ -280,7 +272,6 @@ console.log(factorial(4)); // 24
 </details>
 
 ### Q10 [2 Marks] — Verbal Ability
-
 Choose the correct form: "Neither the students nor the teacher _____ present."
 
 (A) is  
@@ -302,8 +293,7 @@ With "neither...nor", the verb agrees with the nearer subject. "Teacher" (singul
 
 ## Section B: Technical (85 marks)
 
-### Q1 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q1 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 If A is a square matrix, then (A + Aᵀ) is:
 
 (A) Skew-symmetric  
@@ -321,8 +311,7 @@ Let B = A + Aᵀ. Then Bᵀ = (A+Aᵀ)ᵀ = Aᵀ + A = B. So B is symmetric.
 
 </details>
 
-### Q2 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q2 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 P(A) = 0.4, P(B) = 0.3, P(A∩B) = 0.1. P(A∪B) =
 
 (A) 0.5  
@@ -340,8 +329,7 @@ P(A∪B) = P(A) + P(B) - P(A∩B) = 0.4 + 0.3 - 0.1 = 0.6.
 
 </details>
 
-### Q3 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Easy
-
+### Q3 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Easy
 The best case for Insertion Sort occurs when the array is:
 
 (A) Reverse sorted  
@@ -370,8 +358,7 @@ function insertionSort(arr: number[]): number[] {
 
 </details>
 
-### Q4 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Easy
-
+### Q4 [1 Mark] — 📂 Operating Systems | 🏷️ Easy
 A deadlock will occur if all four necessary conditions hold simultaneously. Which of the following is NOT one of them?
 
 (A) Mutual Exclusion  
@@ -389,8 +376,7 @@ The necessary conditions are: Mutual Exclusion, Hold and Wait, No Preemption, Ci
 
 </details>
 
-### Q5 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Easy
-
+### Q5 [1 Mark] — 📂 Computer Networks | 🏷️ Easy
 The device that amplifies signals in a network is called:
 
 (A) Switch  
@@ -408,8 +394,7 @@ A repeater amplifies and regenerates signals to extend the transmission distance
 
 </details>
 
-### Q6 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Easy
-
+### Q6 [1 Mark] — 📂 Database Management Systems | 🏷️ Easy
 Which of these is a tuple in a relational database?
 
 (A) A column  
@@ -427,8 +412,7 @@ In relational model, a tuple corresponds to a row, an attribute corresponds to a
 
 </details>
 
-### Q7 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Easy
-
+### Q7 [1 Mark] — 📂 Theory of Computation | 🏷️ Easy
 Which of the following is NOT a valid DFA state?
 
 (A) Start state  
@@ -446,8 +430,7 @@ DFA states include start, accepting, and dead states. "Push state" is a concept 
 
 </details>
 
-### Q8 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Easy
-
+### Q8 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Easy
 Which of the following is a combinational circuit?
 
 (A) Flip-flop  
@@ -465,8 +448,7 @@ Multiplexer is a combinational circuit (output depends only on current inputs). 
 
 </details>
 
-### Q9 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Easy
-
+### Q9 [1 Mark] — 📂 Compiler Design | 🏷️ Easy
 Which of the following is an intermediate code representation?
 
 (A) Token  
@@ -484,8 +466,7 @@ Three-Address Code (TAC) is a common intermediate representation. Tokens are fro
 
 </details>
 
-### Q10 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Easy
-
+### Q10 [1 Mark] — 📂 Digital Logic | 🏷️ Easy
 How many bits does a 7-segment display need to show decimal digits 0-9?
 
 (A) 4  
@@ -503,8 +484,7 @@ How many bits does a 7-segment display need to show decimal digits 0-9?
 
 </details>
 
-### Q11 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q11 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 Which data structure is used for BFS?
 
 (A) Stack  
@@ -522,8 +502,7 @@ BFS uses a queue for level-order traversal. DFS uses a stack.
 
 </details>
 
-### Q12 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q12 [1 Mark] — 📂 Operating Systems | 🏷️ Medium
 A critical section problem's solution must satisfy:
 
 (A) Mutual exclusion only  
@@ -541,8 +520,7 @@ Three requirements: Mutual Exclusion (only one process in CS), Progress (if no o
 
 </details>
 
-### Q13 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
-
+### Q13 [1 Mark] — 📂 Computer Networks | 🏷️ Medium
 Which of these uses the Go-Back-N protocol?
 
 (A) TCP  
@@ -560,8 +538,7 @@ TCP uses a variant of Go-Back-N (or Selective Repeat) for reliable data transfer
 
 </details>
 
-### Q14 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q14 [1 Mark] — 📂 Database Management Systems | 🏷️ Medium
 A lossless join decomposition ensures:
 
 (A) No data is lost when joining tables  
@@ -579,8 +556,7 @@ Lossless join decomposition guarantees that joining the decomposed relations yie
 
 </details>
 
-### Q15 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
-
+### Q15 [1 Mark] — 📂 Theory of Computation | 🏷️ Medium
 The PDA transition δ(q, a, Z) = (p, γ) means:
 
 (A) Read a, pop Z, push γ, move to p  
@@ -598,8 +574,7 @@ Standard PDA transition: δ(q, input, stack_top) = (new_state, new_stack_content
 
 </details>
 
-### Q16 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q16 [1 Mark] — 📂 Compiler Design | 🏷️ Medium
 Which parsing method is also called predictive parsing?
 
 (A) LR(1)  
@@ -617,8 +592,7 @@ LL(1) is called predictive parsing because it predicts the production to use bas
 
 </details>
 
-### Q17 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Medium
-
+### Q17 [1 Mark] — 📂 Digital Logic | 🏷️ Medium
 A 3-to-8 decoder has how many outputs?
 
 (A) 3  
@@ -636,8 +610,7 @@ A 3-to-8 decoder has 3 input lines and 2³ = 8 output lines.
 
 </details>
 
-### Q18 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q18 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Medium
 In a pipelined processor, the stage that fetches instructions is:
 
 (A) EX  
@@ -655,8 +628,7 @@ Classic 5-stage pipeline: IF (Instruction Fetch), ID (Instruction Decode), EX (E
 
 </details>
 
-### Q19 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q19 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 Which of the following has the lowest time complexity for searching in a sorted array?
 
 (A) Linear Search  
@@ -674,8 +646,7 @@ Binary search has O(log n) time. Interpolation has O(log log n) average but O(n)
 
 </details>
 
-### Q20 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
+### Q20 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Medium
 What is the number of ways to choose 2 out of 5 students?
 
 (A) 5  
@@ -702,8 +673,7 @@ console.log(comb(5, 2)); // 10
 
 </details>
 
-### Q21 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
+### Q21 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Medium
 Value of lim_{x→0} (eˣ - 1 - x)/x² is:
 
 (A) 0  
@@ -728,8 +698,7 @@ function limitExp(): number {
 
 </details>
 
-### Q22 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q22 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 A stack is implemented with an array of size 5. If the stack is empty and we push 1, 2, 3, 4, 5, then pop twice, the top element is:
 
 (A) 1  
@@ -761,8 +730,7 @@ console.log(s.top()); // 3
 
 </details>
 
-### Q23 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q23 [2 Marks] — 📂 Operating Systems | 🏷️ Medium
 A system has 3 processes and 4 instances of a resource. Each process needs at most 2 instances. Can deadlock occur?
 
 (A) Yes  
@@ -782,8 +750,7 @@ Actually, more precisely: if each process requires 2 max, deadlock occurs only i
 
 </details>
 
-### Q24 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q24 [2 Marks] — 📂 Database Management Systems | 🏷️ Medium
 Which of the following is true about a primary key?
 
 (A) Unique but can be NULL  
@@ -801,8 +768,7 @@ Primary key is unique and NOT NULL. It uniquely identifies each row in a table.
 
 </details>
 
-### Q25 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
-
+### Q25 [2 Marks] — 📂 Computer Networks | 🏷️ Medium
 The maximum throughput of pure ALOHA is:
 
 (A) 18.4%  
@@ -828,8 +794,7 @@ console.log(alohaThroughput(false)); // 0.184
 
 </details>
 
-### Q26 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q26 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 In a max-heap of n elements, the minimum element can be found in:
 
 (A) O(1)  
@@ -847,8 +812,7 @@ In a max-heap, the minimum element is always in a leaf node. With approximately 
 
 </details>
 
-### Q27 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q27 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 Which of the following is NOT a valid page size in Linux/x86?
 
 (A) 4 KB  
@@ -868,8 +832,7 @@ The question is tricky. Standard page size is 4 KB. Huge pages support 2 MB on x
 
 </details>
 
-### Q28 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q28 [2 Marks] — 📂 Compiler Design | 🏷️ Medium
 A variable is live if:
 
 (A) It is declared  
@@ -887,8 +850,7 @@ A variable is live at a program point if its value will be referenced (used) in 
 
 </details>
 
-### Q29 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q29 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Medium
 The sum of two binary numbers 1011 and 1101 is:
 
 (A) 10101  
@@ -920,8 +882,7 @@ console.log(sum.toString(2)); // 11000
 
 </details>
 
-### Q30 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
-
+### Q30 [2 Marks] — 📂 Theory of Computation | 🏷️ Medium
 The complement of a CFL is:
 
 (A) Always a CFL  
@@ -939,8 +900,7 @@ CFLs are not closed under complementation. The complement of a CFL may not be a 
 
 </details>
 
-### Q31 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q31 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 Which schedule is allowed in conflict serializability?
 
 (A) T1:R(A), T2:W(A), T1:W(A), T2:R(A)  
@@ -966,14 +926,13 @@ So (B) is conflict serializable.
 
 </details>
 
-### Q32 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q32 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 Consider the function: f(n) = 3n² + 2n + 1. Which of the following is true?
 
 (A) f(n) = O(n)  
 (B) f(n) = O(n²)  
 (C) f(n) = O(log n)  
-(D) f(n) = O(2âÂ�¿)
+(D) f(n) = O(2ⁿ)
 
 <details>
 <summary>Show Answer</summary>
@@ -985,8 +944,7 @@ f(n) = 3n² + 2n + 1. The dominant term is n². So f(n) = Θ(n²). Therefore f(n
 
 </details>
 
-### Q33 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q33 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 The subnet mask 255.255.255.0 corresponds to:
 
 (A) /16  
@@ -1004,8 +962,7 @@ The subnet mask 255.255.255.0 corresponds to:
 
 </details>
 
-### Q34 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q34 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 Given 3 processes with burst times: P1=4, P2=8, P3=3 (all arrive at 0). Using Round Robin with time quantum 3, the average waiting time is:
 
 (A) 3.66  
@@ -1097,8 +1054,7 @@ So P1=6, P2=4, P3=2, quantum=3 works.
 
 </details>
 
-### Q35 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q35 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 If the CPI of a processor is 2 and clock rate is 2 GHz, the MIPS rating is:
 
 (A) 500  
@@ -1123,8 +1079,7 @@ console.log(mipsRate(2, 2)); // 1000
 
 </details>
 
-### Q36 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
-
+### Q36 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
 The variance of the random variable X with PDF f(x) = 2x for 0<x<1 is:
 
 (A) 1/18  
@@ -1139,7 +1094,7 @@ The variance of the random variable X with PDF f(x) = 2x for 0<x<1 is:
 
 **Explanation:**
 E[X] = ∫₀¹ x·2x dx = ∫₀¹ 2x² dx = [2x³/3]₀¹ = 2/3.
-E[X²] = ∫₀¹ x²·2x dx = ∫₀¹ 2x³ dx = [2xâÂ�´/4]₀¹ = 1/2.
+E[X²] = ∫₀¹ x²·2x dx = ∫₀¹ 2x³ dx = [2x⁴/4]₀¹ = 1/2.
 Var(X) = E[X²] - (E[X])² = 1/2 - 4/9 = 9/18 - 8/18 = 1/18.
 
 ```typescript
@@ -1152,8 +1107,7 @@ console.log(variancePDF()); // 0.0555... = 1/18
 
 </details>
 
-### Q37 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q37 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 Greedy algorithms are optimal for which of the following?
 
 (A) Fractional Knapsack  
@@ -1171,8 +1125,7 @@ Greedy (by value/weight ratio) is optimal for Fractional Knapsack. 0/1 Knapsack 
 
 </details>
 
-### Q38 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q38 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 Which of the following is NOT a decidable problem?
 
 (A) Membership in regular languages  
@@ -1190,8 +1143,7 @@ TM equivalence is undecidable. Membership and emptiness for regular languages an
 
 </details>
 
-### Q39 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q39 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 Which of the following is NOT a property of the relational model?
 
 (A) Atomic attributes  
@@ -1209,8 +1161,7 @@ The relational model requires each relation to be a set of tuples (no duplicates
 
 </details>
 
-### Q40 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q40 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 Which of the following is true about persistent HTTP connections?
 
 (A) Multiple objects can be sent over a single TCP connection  
@@ -1228,8 +1179,7 @@ Persistent HTTP keeps the TCP connection open for multiple requests/responses, r
 
 </details>
 
-### Q41 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q41 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 Which of the following is the postfix form of (a+b)*c-(d/e)?
 
 (A) ab+c*de/-  
@@ -1264,8 +1214,7 @@ function evalPostfix(expr: string): number {
 
 </details>
 
-### Q42 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q42 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 Suppose the memory access time is 100 ns and page fault overhead is 5 ms. If the effective access time is 150 ns, the page fault rate is:
 
 (A) 0.001%  
@@ -1279,13 +1228,12 @@ Suppose the memory access time is 100 ns and page fault overhead is 5 ms. If the
 **Answer:** (A) 0.001%
 
 **Explanation:**
-EAT = (1-p) × 100 + p × 5×10âÂ�¶ = 100 + p×5×10âÂ�¶.
-150 = 100 + p×5×10âÂ�¶ → p = 50/5×10âÂ�¶ = 10âÂ�»âÂ�µ = 0.001%.
+EAT = (1-p) × 100 + p × 5×10⁶ = 100 + p×5×10⁶.
+150 = 100 + p×5×10⁶ → p = 50/5×10⁶ = 10⁻⁵ = 0.001%.
 
 </details>
 
-### Q43 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q43 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 A direct-mapped cache has 64 blocks with 16 bytes per block. The cache size is:
 
 (A) 512 bytes  
@@ -1310,8 +1258,7 @@ console.log(cacheSize(64, 16)); // 1024 bytes
 
 </details>
 
-### Q44 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q44 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 A circular queue is implemented using an array of size 5. The front is at index 2 and rear is at index 4. How many elements are in the queue?
 
 (A) 1  
@@ -1343,8 +1290,7 @@ console.log(circularQueueSize(2, 4, 5)); // 3
 
 </details>
 
-### Q45 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
-
+### Q45 [2 Marks] — 📂 Compiler Design | 🏷️ Hard
 The grammar S → aS | ε is:
 
 (A) Right-linear  
@@ -1362,8 +1308,7 @@ S → aS | ε is a right-linear grammar (non-terminal at the right end). Right-l
 
 </details>
 
-### Q46 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q46 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 A language accepted by a TM that halts on all inputs is:
 
 (A) Recursive  
@@ -1381,8 +1326,7 @@ A TM that halts on all inputs (always either accepts or rejects) decides a recur
 
 </details>
 
-### Q47 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
-
+### Q47 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
 Eigen vectors corresponding to distinct eigen values of a real symmetric matrix are:
 
 (A) Orthogonal  
@@ -1400,8 +1344,7 @@ Eigenvectors corresponding to distinct eigenvalues of a real symmetric matrix ar
 
 </details>
 
-### Q48 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q48 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The number of binary strings of length 8 with exactly 4 ones is:
 
 (A) 56  
@@ -1428,8 +1371,7 @@ console.log(comb(8, 4)); // 70
 
 </details>
 
-### Q49 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q49 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 Which of the following is used for inter-process communication in UNIX?
 
 (A) Pipes  
@@ -1447,8 +1389,7 @@ UNIX supports multiple IPC mechanisms: pipes, FIFOs, shared memory, message queu
 
 </details>
 
-### Q50 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q50 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 Which is true about the outer join?
 
 (A) It only returns matching rows  
@@ -1466,8 +1407,7 @@ Outer join (LEFT, RIGHT, FULL) returns all rows from one or both tables, filling
 
 </details>
 
-### Q51 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q51 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 Which protocol is used to map IP addresses to physical addresses?
 
 (A) DNS  
@@ -1485,8 +1425,7 @@ ARP (Address Resolution Protocol) resolves IP addresses to MAC (physical) addres
 
 </details>
 
-### Q52 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q52 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 The instruction that reads data from memory into a register is:
 
 (A) STORE  
@@ -1504,8 +1443,7 @@ LOAD transfers data from memory to a register. STORE transfers from register to 
 
 </details>
 
-### Q53 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q53 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 CFL is closed under:
 
 (A) Union  
@@ -1523,8 +1461,7 @@ CFLs are closed under union, concatenation, Kleene star, and substitution. They 
 
 </details>
 
-### Q54 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q54 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 Which of the following is used in Huffman coding to build the optimal prefix code tree?
 
 (A) Min-heap  
@@ -1552,8 +1489,7 @@ class HuffmanNode {
 
 </details>
 
-### Q55 [2 Marks] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Hard
-
+### Q55 [2 Marks] — 📂 Digital Logic | 🏷️ Hard
 A master-slave flip-flop is used to avoid:
 
 (A) Propagation delay  
@@ -1642,16 +1578,13 @@ pie title "Difficulty Distribution - GATE CS 2020"
 
 ### Paper Analysis
 
-
 GATE 2020 Computer Science paper followed the established format of 65 questions (10 GA + 55 Technical) worth a total of 100 marks. The paper was notable for having the highest number of NAT questions up to that point — 18 NATs compared to 15 in 2019 — signaling the exam's increasing emphasis on numerical precision. The MSQ count remained at 8. Subject-wise, Operating Systems and Computer Networks each received 12 marks, the highest weightage in the Technical section. A distinctive feature was the inclusion of multi-subject integrated questions — one notable question combined probability with algorithms (expected value of hash table operations). The GA section included a new "caselet" format where multiple questions were based on a single paragraph of data, testing sustained reasoning.
 
 ### Difficulty Trends
 
-
 GATE 2020 had a difficulty distribution of approximately 28% Easy, 50% Medium, and 22% Hard. The paper was considered comparable to 2019 in overall difficulty but with more tricky conceptual traps. Data Structures & Algorithms questions were moderate — a stack-based postfix evaluation question had many failing due to not accounting for multi-digit numbers. Operating Systems had a subtle question on critical section requirements that tested the nuance of Peterson's solution. Computer Networks introduced a question on ALOHA that required understanding of the throughput formula in a new context (non-standard frame sizes). DBMS featured a question on join ordering that required cost-based optimization understanding. Aptitude questions on data interpretation were time-consuming but accurate if read carefully.
 
 ### Key Concepts Tested
-
 
 | Subject | Key Concepts |
 |---------|-------------|
@@ -1853,7 +1786,6 @@ Test your understanding of GATE 2020 concepts with these 5 questions.
 
 ### Answer Key
 
-
 | Q | Answer | Explanation |
 |---|--------|-------------|
 | 1 | b | Maximum throughput for slotted ALOHA occurs at G = 1, giving S = 1 × e^(-1) = 1/e ≈ 0.368. For pure ALOHA, max throughput is 0.184 (half). |
@@ -1872,4 +1804,4 @@ Test your understanding of GATE 2020 concepts with these 5 questions.
 
 4. **Postfix Evaluation with Stack**: Evaluate the postfix expression: 15 7 3 - / 5 2 * + 8 - using a stack. Show the stack contents after each operation. Then write a TypeScript function that evaluates arbitrary postfix expressions (handling multi-digit numbers and detecting division by zero). Test it on the given expression.
 
-5. **DFA Equivalence**: Prove that two DFAs that accept the same language L are equivalent. Given DFAâ‚Â�: states {A, B, C}, alphabet {0, 1}, transitions: δ(A,0)=B, δ(A,1)=A, δ(B,0)=C, δ(B,1)=A, δ(C,0)=C, δ(C,1)=C, start=A, final={A}. DFA₂: states {P, Q}, alphabet {0,1}, transitions: δ(P,0)=Q, δ(P,1)=P, δ(Q,0)=Q, δ(Q,1)=Q, start=P, final={P}. Use the table-filling algorithm to verify equivalence and find the minimal DFA.
+5. **DFA Equivalence**: Prove that two DFAs that accept the same language L are equivalent. Given DFA₁: states {A, B, C}, alphabet {0, 1}, transitions: δ(A,0)=B, δ(A,1)=A, δ(B,0)=C, δ(B,1)=A, δ(C,0)=C, δ(C,1)=C, start=A, final={A}. DFA₂: states {P, Q}, alphabet {0,1}, transitions: δ(P,0)=Q, δ(P,1)=P, δ(Q,0)=Q, δ(Q,1)=Q, start=P, final={P}. Use the table-filling algorithm to verify equivalence and find the minimal DFA.

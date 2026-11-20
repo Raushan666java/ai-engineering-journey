@@ -1,3 +1,7 @@
+---
+description: "Prereq: Chapters 10 (Pentesting), 11 (SOC Threat Hunting), 12 (Malware Analysis) Target Audience: Red team operators, penetration testers, adversary"
+---
+
 # Chapter 13: Advanced Red Team Operations & C2 Frameworks
 
 > **Prereq:** Chapters 10 (Pentesting), 11 (SOC Threat Hunting), 12 (Malware Analysis)

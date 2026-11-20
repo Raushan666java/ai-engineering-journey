@@ -1,3 +1,7 @@
+---
+description: "A linked list is a sequence of nodes where each node contains data and a pointer to the next node. The structure is self-referential — it contains a"
+---
+
 # Chapter 15: Linked Lists
 
 > **Previous:** [Recursion](./14-recursion.md) | **Next:** [Stacks and Queues](./16-stacks-queues.md)

@@ -1,3 +1,7 @@
+---
+description: "Phase 16: Multi-Agent & Swarms"
+---
+
 # Phase 16: Multi-Agent & Swarms
 
 > Coordination, emergence, and collective intelligence.

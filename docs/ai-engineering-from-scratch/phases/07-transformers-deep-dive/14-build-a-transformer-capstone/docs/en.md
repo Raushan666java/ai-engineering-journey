@@ -1,3 +1,7 @@
+---
+description: "You've read every paper. You've implemented attention, multi-head splits, positional encodings, encoder and decoder blocks, BERT and GPT losses, MoE, KV"
+---
+
 # Build a Transformer from Scratch — The Capstone
 
 > Thirteen lessons. One model. No shortcuts.

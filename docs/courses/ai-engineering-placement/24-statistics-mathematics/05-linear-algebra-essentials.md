@@ -1,3 +1,7 @@
+---
+description: "Linear algebra is the mathematical language of modern machine learning and AI. Every neural network layer is a matrix multiplication, word embeddings are"
+---
+
 <!-- improved -->
 # Chapter 05: Linear Algebra Essentials
 

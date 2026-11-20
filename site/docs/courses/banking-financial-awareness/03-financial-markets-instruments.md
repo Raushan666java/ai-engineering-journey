@@ -4,6 +4,7 @@ slug: /banking-financial-awareness/03-financial-markets-instruments
 title: "Chapter 3: Financial Markets & Instruments"
 sidebar_label: "Chapter 3: Financial Markets & Instruments"
 sidebar_position: 3
+description: "Top Asset Management Companies (AMCs): SBI Mutual Fund, ICICI Prudential Mutual Fund, HDFC Mutual Fund, Nippon India Mutual Fund, Kotak Mahindra Mutual"
 ---
 
 # Chapter 3: Financial Markets & Instruments

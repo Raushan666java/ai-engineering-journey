@@ -4,6 +4,7 @@ slug: /java/39-discovery
 title: "Service Discovery & Load Balancing"
 sidebar_label: "Service Discovery & Load Balancing"
 sidebar_position: 39
+description: "In a microservices architecture, services need to find each other at runtime. Service discovery solves the problem of locating service instances whose"
 ---
 
 # Service Discovery & Load Balancing

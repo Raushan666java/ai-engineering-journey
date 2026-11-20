@@ -1,3 +1,7 @@
+---
+description: "A full marketing course written for people who can build things but cannot yet get paid for them: developers selling contract work, engineers launching a"
+---
+
 # Complete Digital Marketing for Technical Founders
 
 A full marketing course written for people who can build things but cannot yet

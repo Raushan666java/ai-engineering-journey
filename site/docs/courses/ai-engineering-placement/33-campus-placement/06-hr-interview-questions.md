@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/06-hr-interview-questions
 title: "HR Interview Questions Bank"
 sidebar_label: "HR Interview Questions Bank"
 sidebar_position: 367
+description: "After this chapter you will be able to answer the 60+ most common HR interview questions using the STAR framework, handle the introduction and career"
 ---
 
 <!-- improved -->

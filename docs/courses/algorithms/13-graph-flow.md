@@ -1,3 +1,7 @@
+---
+description: "Chapter 12: Minimum Spanning Trees — Graph theory, cuts, and greedy algorithms | Next: Chapter 14: String Algorithms — From flow optimization to pattern"
+---
+
 # Chapter 13: Network Flow
 
 > **Prerequisites:** [Chapter 12: Minimum Spanning Trees](./12-graph-mst.md) — Graph theory, cuts, and greedy algorithms | **Next:** [Chapter 14: String Algorithms](./14-string-algorithms.md) — From flow optimization to pattern matching

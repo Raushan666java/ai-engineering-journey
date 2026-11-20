@@ -1,3 +1,7 @@
+---
+description: "A[Race Conditions] --> B[Critical Section Problem] B --> C[Peterson's Solution] C --> D[Hardware Synchronization] E --> F[Semaphores & Monitors] F -->"
+---
+
 # Chapter 5: Process Synchronization
 
 **<< [Threads](./04-threads.md)** | [**Next: Semaphores and Monitors**](./06-semaphores-monitors.md) >>

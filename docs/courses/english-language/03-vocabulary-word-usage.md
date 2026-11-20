@@ -1,3 +1,7 @@
+---
+description: "Vocabulary and word usage accounts for 4–5 questions in IBPS SO IT Officer Prelims. The topic overlaps with Reading Comprehension (vocabulary-in-context"
+---
+
 # Chapter 3: Vocabulary & Word Usage
 
 ## Learning Objectives

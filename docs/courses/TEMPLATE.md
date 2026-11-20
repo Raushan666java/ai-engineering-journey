@@ -1,3 +1,7 @@
+---
+description: "Progressive build-up of concepts. Each section introduces ONE new idea, explains it thoroughly, then connects it to previously learned material."
+---
+
 # Textbook Template
 
 Every chapter across all courses follows this exact university textbook format:

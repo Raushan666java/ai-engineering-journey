@@ -1,3 +1,7 @@
+---
+description: "When HR designs the blank form (the struct definition), they decide what slots exist but fill in no values. When they fill out a specific employee's form"
+---
+
 # Chapter 10: Structures and Unions
 
 > **Previous:** [Pointers](./09-pointers.md) | **Next:** [Dynamic Memory Allocation](./11-dma.md)

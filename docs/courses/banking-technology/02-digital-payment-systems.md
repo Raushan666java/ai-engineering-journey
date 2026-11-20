@@ -1,3 +1,7 @@
+---
+description: "India's digital payment ecosystem has undergone a paradigm shift since 2016, driven by the Unified Payments Interface (UPI), regulatory support from RBI"
+---
+
 # Chapter 02: Digital Payment Systems
 
 ## Learning Objectives

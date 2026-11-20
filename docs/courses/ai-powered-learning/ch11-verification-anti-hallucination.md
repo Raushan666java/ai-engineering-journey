@@ -1,3 +1,7 @@
+---
+description: "When you learn fast with AI, the biggest risk is not speed — it is wrongness. A language model does not know anything; it predicts the next most plausible"
+---
+
 # Chapter 11: Verification & Anti-Hallucination
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

@@ -1,3 +1,7 @@
+---
+description: "A Group Discussion (GD) is a structured conversation where 8-15 participants discuss a given topic for 15-30 minutes. It tests your communication skills"
+---
+
 # Group Discussion and Case Study Interview Preparation
 
 ## Learning Objectives

@@ -1,3 +1,7 @@
+---
+description: "A model reads a sentence in one language and produces a sentence in another. Length varies. Word order varies. Some source words map to multiple target"
+---
+
 # Machine Translation
 
 > Translation is the task that paid for NLP research for thirty years and keeps paying now.

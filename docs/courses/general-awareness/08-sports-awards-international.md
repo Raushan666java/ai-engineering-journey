@@ -1,3 +1,7 @@
+---
+description: "Sweden formally joined NATO on 7 March 2024, becoming the 32nd member. Finland had joined earlier in 2023. Both countries ended their long-standing"
+---
+
 # Chapter 8: Sports, Awards & International Organizations
 
 ## Learning Objectives

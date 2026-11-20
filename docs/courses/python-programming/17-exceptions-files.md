@@ -1,3 +1,7 @@
+---
+description: "Assertions can be disabled with -O (optimize) flag: python -O script.py. Do not use assertions for input validation in production code → use proper error"
+---
+
 # Chapter 17: Exceptions and File I/O
 
 

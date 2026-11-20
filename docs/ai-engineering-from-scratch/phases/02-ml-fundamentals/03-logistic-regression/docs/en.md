@@ -1,3 +1,7 @@
+---
+description: "You want to predict whether a tumor is malignant or benign given its size. You try linear regression. It outputs numbers like 0.3 or 1.7 or -0.5. What do"
+---
+
 # Logistic Regression
 
 > Logistic regression bends a straight line into an S-curve to answer yes-or-no questions with probabilities.

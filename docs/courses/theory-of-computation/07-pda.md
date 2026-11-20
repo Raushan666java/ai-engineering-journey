@@ -1,3 +1,7 @@
+---
+description: "A pushdown automaton (PDA) extends an NFA with a stack → an unbounded memory that can store and retrieve information in last-in-first-out (LIFO) order"
+---
+
 # Chapter 7: Pushdown Automata
 
 > **Previous:** [Context-Free Grammars](./06-cfg.md) | **Next:** [Properties of Context-Free Languages](./08-cfl.md)

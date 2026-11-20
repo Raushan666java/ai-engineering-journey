@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to design a monetized learning challenge with a fixed reward pool, build a three-entity model (Course Operator, Fund"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Challenge Economics & Reward Systems

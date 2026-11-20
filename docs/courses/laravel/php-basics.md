@@ -1,3 +1,7 @@
+---
+description: "Chapter 0: PHP Foundations for Laravel: One-Sentence Takeaway: Theory is the foundation → master it before moving to examples and exercises. One-Sentence"
+---
+
 # Chapter 0: PHP Foundations for Laravel
 
 ---

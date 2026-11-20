@@ -4,6 +4,7 @@ slug: /ai-powered-learning/ch05-active-recall-quiz-prompts
 title: "Chapter 5: Active Recall & Quiz Prompts"
 sidebar_label: "Chapter 5: Active Recall & Quiz Prompts"
 sidebar_position: 5
+description: "Reading notes feels productive but stores very little in long-term memory. The science-backed alternative is active recall: forcing your brain to pull"
 ---
 
 # Chapter 5: Active Recall & Quiz Prompts

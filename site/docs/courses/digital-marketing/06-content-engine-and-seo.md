@@ -4,6 +4,7 @@ slug: /digital-marketing/06-content-engine-and-seo
 title: "Chapter 6 — Content Engine and SEO"
 sidebar_label: "Chapter 6 — Content Engine and SEO"
 sidebar_position: 6
+description: "The trap: a technical writer produces excellent informational content and then wonders why nobody hires them. Informational readers are not buyers yet. The"
 ---
 
 # Chapter 6 — Content Engine and SEO

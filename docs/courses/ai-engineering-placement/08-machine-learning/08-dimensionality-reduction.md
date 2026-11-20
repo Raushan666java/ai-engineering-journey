@@ -1,3 +1,7 @@
+---
+description: "Dimensionality Reduction — PCA, t-SNE, UMAP, LDA: Machine learning is the core of AI engineering. From linear regression to ensemble methods"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Dimensionality Reduction — PCA, t-SNE, UMAP, LDA

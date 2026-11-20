@@ -1,3 +1,7 @@
+---
+description: "Inequalities contribute approximately 4–5 questions in the IBPS SO Reasoning Ability section. Data sufficiency contributes another 4–5 questions"
+---
+
 # Inequalities and Data Sufficiency
 
 ## Learning Objectives

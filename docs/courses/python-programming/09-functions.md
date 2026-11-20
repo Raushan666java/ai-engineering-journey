@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: Use args for variable positional args, *kwargs for keyword args, and None for mutable defaults. Warning: Mutable default arguments"
+---
+
 # Chapter 9: Functions
 
 

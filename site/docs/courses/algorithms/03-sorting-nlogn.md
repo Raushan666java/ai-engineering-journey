@@ -4,6 +4,7 @@ slug: /algorithms/03-sorting-nlogn
 title: "Chapter 3: Comparison-Based Sorting"
 sidebar_label: "Chapter 3: Comparison-Based Sorting"
 sidebar_position: 3
+description: 'Chapter 1: Fundamentals of Algorithm Analysis — Asymptotic notation and recurrence analysis | Next: Chapter 4: Linear-Time Sorting — Breaking the ('
 ---
 
 # Chapter 3: Comparison-Based Sorting

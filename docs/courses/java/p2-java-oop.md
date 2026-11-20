@@ -1,3 +1,7 @@
+---
+description: "Java is an object-oriented language: every piece of data except primitive types belongs to a class, and every class can produce objects (instances). A"
+---
+
 # Object-Oriented Programming in Java
 
 ## Learning Objectives

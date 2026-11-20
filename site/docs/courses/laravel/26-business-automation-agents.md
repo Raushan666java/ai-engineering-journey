@@ -4,6 +4,7 @@ slug: /laravel/26-business-automation-agents
 title: "Chapter 26: Business Automation Agents"
 sidebar_label: "Chapter 26: Business Automation Agents"
 sidebar_position: 26
+description: "Business automation replaces manual, repetitive processes with software that executes without human intervention. Traditional automation handles"
 ---
 
 # Chapter 26: Business Automation Agents

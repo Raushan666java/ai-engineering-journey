@@ -1,3 +1,7 @@
+---
+description: "Instructions written as prose are wishes. Instructions written as constraints are tests. The workbench turns each rule into something an agent can check"
+---
+
 # Agent Instructions as Executable Constraints
 
 > Instructions written as prose are wishes. Instructions written as constraints are tests. The workbench turns each rule into something an agent can check at runtime and a reviewer can verify after the fact.

@@ -4,6 +4,7 @@ slug: /system-design/16-api-gateways-cqrs
 title: "Chapter 16: API Gateways, CQRS, and Event Sourcing"
 sidebar_label: "Chapter 16: API Gateways, CQRS, and Event Sourcing"
 sidebar_position: 16
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. A load balancer (e.g., Nginx, HAProxy, AWS ELB) distributes"
 ---
 
 # Chapter 16: API Gateways, CQRS, and Event Sourcing

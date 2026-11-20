@@ -4,6 +4,7 @@ slug: /machine-learning/03-logistic-regression
 title: "Chapter 3: Logistic Regression"
 sidebar_label: "Chapter 3: Logistic Regression"
 sidebar_position: 3
+description: "Logistic Regression solves these problems by passing the linear output through a non-linear squashing function (sigmoid) and using a convex loss"
 ---
 
 # Chapter 3: Logistic Regression

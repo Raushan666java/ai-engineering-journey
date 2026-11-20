@@ -1,3 +1,7 @@
+---
+description: "Any exam syllabus is not a list of topics to memorize — it's a graph of interconnected concepts. Learn them in dependency order. A good study plan maps"
+---
+
 # Chapter 8: Study Plan for Any Exam
 
 > ⏱ **2.5 hours total** · 🎯 **Intermediate** · 📋 **Recommended: Ch 1 (Goal Setting), Ch 2 (Sprint Planning)**

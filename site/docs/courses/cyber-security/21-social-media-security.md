@@ -4,6 +4,7 @@ slug: /cyber-security/21-social-media-security
 title: "Chapter 21: Social Media Security & Account Takeover Prevention"
 sidebar_label: "Chapter 21: Social Media Security & Account Takeover Prevention"
 sidebar_position: 20
+description: "Prereq: Chapters 1-2 (Fundamentals, Cryptography) — authentication concepts, encryption, MFA Target Audience: All users, security-conscious individuals"
 ---
 
 # Chapter 21: Social Media Security & Account Takeover Prevention

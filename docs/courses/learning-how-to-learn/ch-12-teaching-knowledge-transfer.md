@@ -1,3 +1,7 @@
+---
+description: "Teaching is the master key to learning. Every time you explain a concept to someone else — a peer, a rubber duck, a blog audience, a rubber duck — you"
+---
+
 # Chapter 12: Teaching & Knowledge Transfer
 
 > **Prerequisites:** [Chapter 2: Practice, Mindset & Performance](./ch-02-practice-mindset.md), [Chapter 4: Pomodoro, Interleaving & Feynman](./ch-04-pomodoro-interleaving-feynman.md)

@@ -1,3 +1,7 @@
+---
+description: "A predicate $P(x)$ is a statement whose truth depends on the value of the variable $x$. The domain of $x$ is the set of values it may take. Once $x$ is"
+---
+
 # Chapter 3: Predicates and Quantifiers
 
 > **Previous:** [Chapter 2: Logic](02-logic.md) | **Next:** [Chapter 4: Proof Techniques](04-proofs.md)

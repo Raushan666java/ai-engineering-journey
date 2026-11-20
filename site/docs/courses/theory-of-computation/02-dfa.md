@@ -4,6 +4,7 @@ slug: /theory-of-computation/02-dfa
 title: "Chapter 2: Deterministic Finite Automata"
 sidebar_label: "Chapter 2: Deterministic Finite Automata"
 sidebar_position: 2
+description: "The minimized DFA has the fewest possible states. Two states are distinguishable if there exists a string that leads from one to accept and the other to"
 ---
 
 # Chapter 2: Deterministic Finite Automata

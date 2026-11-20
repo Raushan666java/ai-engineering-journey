@@ -4,6 +4,7 @@ slug: /learning-how-to-learn-practical/ch-14-glossary
 title: "Master Glossary"
 sidebar_label: "Master Glossary"
 sidebar_position: 15
+description: "Active Recall — A learning technique where you actively retrieve information from memory rather than passively re-reading it. The single most effective"
 ---
 
 # Master Glossary

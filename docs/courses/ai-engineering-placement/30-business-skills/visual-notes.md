@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'Clear communication, stakeholder management, prioritisation and strategy grow from one trunk.'"
+---
+
 # Visual Notes — Communication and Strategy Tree
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

@@ -4,6 +4,7 @@ slug: /cyber-security/08-forensics-ir
 title: "Chapter 8: Forensics & Incident Response"
 sidebar_label: "Chapter 8: Forensics & Incident Response"
 sidebar_position: 7
+description: "Digital forensics is the application of computer science and investigative procedures to examine digital evidence in a manner that is legally admissible"
 ---
 
 # Chapter 8: Forensics & Incident Response 

@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: Imagine a city's road map. Each intersection is a vertex (node), and each road connecting two intersections is an edge. Now picture"
+---
+
 # Chapter 11: Graphs
 
 **Prev:** [Chapter 10: Heaps](10-heaps.md) | **Next:** [Chapter 12: Graph Traversals](12-graph-traversals.md)

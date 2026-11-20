@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/11-llms-prompt-engineering/06-context-management
 title: "Context Management"
 sidebar_label: "Context Management"
 sidebar_position: 153
+description: "Context Management: Large language models are transforming every industry. Understanding how to prompt, evaluate, and optimize LLMs is a critical skill"
 ---
 
 <!-- improved -->

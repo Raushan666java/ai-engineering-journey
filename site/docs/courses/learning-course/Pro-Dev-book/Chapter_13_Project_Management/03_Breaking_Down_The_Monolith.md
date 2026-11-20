@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_13_Project_Management/03_Breaking_Do
 title: "🪓 Breaking Down The Monolith"
 sidebar_label: "🪓 Breaking Down The Monolith"
 sidebar_position: 3
+description: "Because the task is a 'Monolith'—a massive, unbroken chunk of work—your brain cannot process the starting point. This leads directly to procrastination"
 ---
 # 🪓 Breaking Down The Monolith
 

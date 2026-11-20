@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/08-machine-learning/08-dimensionality-reduction
 title: "Dimensionality Reduction — PCA, t-SNE, UMAP, LDA"
 sidebar_label: "Dimensionality Reduction — PCA, t-SNE, UMAP, LDA"
 sidebar_position: 119
+description: "Dimensionality Reduction — PCA, t-SNE, UMAP, LDA: Machine learning is the core of AI engineering. From linear regression to ensemble methods"
 ---
 
 <!-- improved -->

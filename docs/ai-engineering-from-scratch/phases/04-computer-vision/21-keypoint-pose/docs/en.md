@@ -1,3 +1,7 @@
+---
+description: "Keypoint tasks hide under many names: human pose (17 body joints), face landmarks (68 or 478 points), hand (21 points), animal pose, robotic object pose"
+---
+
 # Keypoint Detection & Pose Estimation
 
 > A pose is a set of ordered keypoints. A keypoint detector is a heatmap regressor. Everything else is bookkeeping.

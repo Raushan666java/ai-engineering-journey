@@ -1,3 +1,7 @@
+---
+description: "Network security encompasses the policies and mechanisms that protect the confidentiality, integrity, and availability of data in transit. Threats are"
+---
+
 # Chapter 11: Network Security
 
 ## Learning Objectives

@@ -1,3 +1,7 @@
+---
+description: "Simple Linear Regression models the relationship between a single predictor variable $x$ and a continuous response variable $y$. The model assumes a"
+---
+
 # Chapter 2: Linear Regression
 
 > **Previous:** [Introduction](./01-introduction.md) | **Next:** [Logistic Regression](./03-logistic-regression.md)

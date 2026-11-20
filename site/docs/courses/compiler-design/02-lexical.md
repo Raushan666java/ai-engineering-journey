@@ -4,6 +4,7 @@ slug: /compiler-design/02-lexical
 title: "Chapter 2: Lexical Analysis"
 sidebar_label: "Chapter 2: Lexical Analysis"
 sidebar_position: 2
+description: "After completing this chapter, students will be able to: define tokens, lexemes, and patterns; design input buffering schemes; specify tokens using"
 ---
 
 # Chapter 2: Lexical Analysis

@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_15_The_Art_Of_Reusable_Components/02
 title: "🔪 Laravel Blade Components"
 sidebar_label: "🔪 Laravel Blade Components"
 sidebar_position: 2
+description: "To write elite-level, enterprise Laravel applications, you must organize your component architecture cleanly. Do not dump every component into the root"
 ---
 # 🔪 Laravel Blade Components
 

@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Use @ExceptionHandler in a @ControllerAdvice to return consistent error responses across all endpoints — never let the container generate the"
+---
+
 # REST API Development with Spring MVC
 
 > **Previous:** [Logging, Error Handling & i18n](./14-logging-error-i18n.md) | **Next:** [Request Validation & Error Handling](./16-validation.md)

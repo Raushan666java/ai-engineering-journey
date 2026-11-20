@@ -1,3 +1,7 @@
+---
+description: "Kubernetes Scaling — HPA, Autoscaling, and Cluster Management: Containers and cloud platforms are where AI models live in production. Docker packages your"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Kubernetes Scaling — HPA, Autoscaling, and Cluster Management

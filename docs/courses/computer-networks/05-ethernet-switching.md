@@ -1,3 +1,7 @@
+---
+description: "The Ethernet frame is the fundamental unit of data transfer on Ethernet networks. Its format has remained remarkably stable since the DIX 2.0 standard"
+---
+
 # Chapter 5: Ethernet Switching
 
 > **Prerequisites:** [Chapter 4: Medium Access Control](./04-mac.md) → MAC protocols and CSMA/CD | **Next:** [Chapter 6: Network Layer](./06-network-layer.md) → From switching to IP routing

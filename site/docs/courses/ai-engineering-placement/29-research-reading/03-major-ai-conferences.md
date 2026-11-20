@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/29-research-reading/03-major-ai-conferences
 title: "Major AI Conferences"
 sidebar_label: "Major AI Conferences"
 sidebar_position: 341
+description: "AI conferences are where the field's most important research is published and debated. They define the state of the art, set research agendas, and connect"
 ---
 
 <!-- improved -->

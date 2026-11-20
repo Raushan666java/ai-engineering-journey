@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/02-context-engineering
 title: "Context Engineering"
 sidebar_label: "Context Engineering"
 sidebar_position: 273
+description: "Context Engineering: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module covers"
 ---
 
 <!-- improved -->

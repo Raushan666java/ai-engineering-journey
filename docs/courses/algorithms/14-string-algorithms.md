@@ -1,3 +1,7 @@
+---
+description: "Chapter 13: Network Flow — Algorithm design techniques, complexity analysis | Next: Chapter 15: NP-Completeness — From efficient algorithms to hardness"
+---
+
 # Chapter 14: String Algorithms
 
 > **Prerequisites:** [Chapter 13: Network Flow](./13-graph-flow.md) — Algorithm design techniques, complexity analysis | **Next:** [Chapter 15: NP-Completeness](./15-np-completeness.md) — From efficient algorithms to hardness theory

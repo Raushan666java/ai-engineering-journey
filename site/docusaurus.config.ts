@@ -62,6 +62,11 @@ const config: Config = {
           routeBasePath: '/',
           remarkPlugins: [require('remark-math')],
           rehypePlugins: [require('rehype-katex')],
+          // Trust signal on a 1,400-page study site: a reader can see when a
+          // chapter was last touched, and "Edit this page" invites corrections.
+          showLastUpdateTime: true,
+          editUrl:
+            'https://github.com/Raushan666java/ai-engineering-journey/tree/main/site/docs/',
           ...(docsInclude ? {include: docsInclude} : {}),
         },
         blog: false,
@@ -76,7 +81,12 @@ const config: Config = {
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css',
       type: 'text/css',
-      integrity: 'sha384-MGSJqY4DN3IeBT2FaTa1bQ8GhO6H3l5a3cS2D/2Q3Y2S2Q3Y2S2Q3Y2S2Q3Y2S2',
+      // A wrong hash here is not cosmetic: the browser refuses to APPLY a
+      // stylesheet whose integrity check fails, so every formula renders as
+      // unstyled HTML. The previous value was a fabricated repeating pattern
+      // (63 chars, sha384 needs 64) and blocked KaTeX site-wide.
+      // To refresh: download the file, SHA-384 it, base64 it, prefix "sha384-".
+      integrity: 'sha384-1vdNCNel6Tx/NQa8IR1mGOGKsbGreCkOPfbtPPnUURJ5Tu2PRVfQ/7KLZC+Pi1p1',
       crossorigin: 'anonymous',
     },
   ],
@@ -96,6 +106,25 @@ const config: Config = {
   ],
 
   themeConfig: {
+    // Default social card for every page that does not override it. Without
+    // this, twitter:card=summary_large_image ships with no og:image and every
+    // shared link renders as a blank grey box.
+    image: 'img/social-card.png',
+    metadata: [
+      {name: 'author', content: 'Raushan Kumar'},
+      {
+        name: 'description',
+        content:
+          'AI engineering and placement course by Raushan Kumar: 59 courses, 1,400+ chapters on Python, SQL, ML, RAG, LLM applications and system design.',
+      },
+      {name: 'theme-color', content: '#1a1b23'},
+      {property: 'og:type', content: 'website'},
+      {property: 'og:site_name', content: 'AI Engineering Journey'},
+    ],
+    colorMode: {
+      defaultMode: 'light',
+      respectPrefersColorScheme: true,
+    },
     mermaid: {
       theme: {light: 'default', dark: 'dark'},
     },
@@ -129,6 +158,18 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
+        {
+          to: '/about',
+          label: 'About',
+          position: 'right',
+          className: 'navbar-about-link',
+        },
+        {
+          to: '/about#contact',
+          label: 'Hire me',
+          position: 'right',
+          className: 'navbar-hire-button',
+        },
       ],
     },
     footer: {
@@ -144,6 +185,14 @@ const config: Config = {
           ],
         },
         {
+          title: 'About',
+          items: [
+            {label: 'About Raushan', to: '/about'},
+            {label: 'Contact', to: '/about#contact'},
+            {label: 'All courses', to: '/courses'},
+          ],
+        },
+        {
           title: 'Community',
           items: [
             {label: 'GitHub', href: 'https://github.com/Raushan666java/ai-engineering-journey'},
@@ -151,7 +200,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright ${new Date().getFullYear()} AI Engineering Journey. Built with Docusaurus.`,
+      copyright: `Copyright ${new Date().getFullYear()} Raushan Kumar. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

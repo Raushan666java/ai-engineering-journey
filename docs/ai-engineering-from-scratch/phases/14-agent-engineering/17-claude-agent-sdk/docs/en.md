@@ -1,3 +1,7 @@
+---
+description: "The Claude Agent SDK is the library form of the Claude Code harness. Built-in tools, subagents for context isolation, hooks, W3C trace propagation"
+---
+
 # Claude Agent SDK: Subagents and Session Store
 
 > The Claude Agent SDK is the library form of the Claude Code harness. Built-in tools, subagents for context isolation, hooks, W3C trace propagation, session store parity. Claude Managed Agents is the hosted alternative for long-running async work.

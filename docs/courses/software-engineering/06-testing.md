@@ -1,3 +1,7 @@
+---
+description: "Verification and validation (V&V) are the two principal approaches to establishing that a software system meets its specification and satisfies"
+---
+
 # Software Testing
 
 ## Learning Objectives

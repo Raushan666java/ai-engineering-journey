@@ -4,6 +4,7 @@ slug: /digital-marketing/03-offer-design-and-pricing
 title: "Chapter 3 — Offer Design and Pricing"
 sidebar_label: "Chapter 3 — Offer Design and Pricing"
 sidebar_position: 3
+description: "The missing component in most freelance offers is the guarantee, followed closely by scope. Both omissions come from the same instinct, which is to avoid"
 ---
 
 # Chapter 3 — Offer Design and Pricing

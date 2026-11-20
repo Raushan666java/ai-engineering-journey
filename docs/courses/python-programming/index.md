@@ -1,3 +1,7 @@
+---
+description: "This textbook provides a rigorous, systematic introduction to the Python programming language. It assumes no prior programming experience but progresses"
+---
+
 # Python Programming — A Comprehensive University Textbook
 
 ## Course Description

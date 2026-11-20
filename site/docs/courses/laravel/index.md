@@ -1,3 +1,7 @@
+---
+description: "This comprehensive textbook covers Laravel 13, PHP's premier full-stack web framework, through the lens of modern AI-powered development. Students will"
+---
+
 ﻿---
 id: index
 slug: /laravel

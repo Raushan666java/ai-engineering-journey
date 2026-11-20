@@ -1,3 +1,7 @@
+---
+description: "The NTM's nondeterministic branches correspond to trying all possible certificates simultaneously. If any branch accepts, the NTM accepts — which means a"
+---
+
 # Chapter 13: Time Complexity and NP-Completeness
 
 > **Previous:** [Reducibility](./12-reducibility.md) | **Next:** [Space Complexity](./14-space-complexity.md)

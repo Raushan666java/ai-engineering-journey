@@ -1,3 +1,7 @@
+---
+description: "As the number of features (dimensions) increases, the volume of the feature space grows exponentially. For a dataset with uniform distribution in $d$"
+---
+
 # Chapter 9: Dimensionality Reduction
 
 > **Previous:** [Unsupervised Learning](./08-unsupervised-learning.md) | **Next:** [Model Evaluation](./10-model-evaluation.md)

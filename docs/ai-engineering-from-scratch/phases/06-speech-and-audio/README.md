@@ -1,3 +1,7 @@
+---
+description: "The other half of human communication. Hear, understand, speak."
+---
+
 # Phase 6: Speech & Audio
 
 > The other half of human communication. Hear, understand, speak.

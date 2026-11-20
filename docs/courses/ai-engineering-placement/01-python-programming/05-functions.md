@@ -1,3 +1,7 @@
+---
+description: "Functions — Parameters, Scope, Lambdas, and Advanced Patterns: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Functions — Parameters, Scope, Lambdas, and Advanced Patterns

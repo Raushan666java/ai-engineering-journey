@@ -4,6 +4,7 @@ slug: /loop-engineering/ch10-capstone
 title: "Chapter 10: Capstone — Build a Production-Grade Coding Agent"
 sidebar_label: "Chapter 10: Capstone — Build a Production-Grade Coding Agent"
 sidebar_position: 10
+description: "Plan phase. The LLM receives the current state (conversation history + tool results) and decides what to do next. It outputs a structured plan: either a"
 ---
 
 # Chapter 10: Capstone — Build a Production-Grade Coding Agent

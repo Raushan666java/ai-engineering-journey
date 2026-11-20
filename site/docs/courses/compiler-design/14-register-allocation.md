@@ -4,6 +4,7 @@ slug: /compiler-design/14-register-allocation
 title: "Chapter 14: Register Allocation"
 sidebar_label: "Chapter 14: Register Allocation"
 sidebar_position: 14
+description: "After completing this chapter, students will be able to: construct live ranges from live-variable analysis; build interference graphs and compute register"
 ---
 
 # Chapter 14: Register Allocation

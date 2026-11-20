@@ -1,3 +1,7 @@
+---
+description: "This textbook provides a rigorous, university-level introduction to the fundamental concepts, algorithms, and mathematical frameworks of machine learning"
+---
+
 ﻿---
 id: index
 slug: /machine-learning

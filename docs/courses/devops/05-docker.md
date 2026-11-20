@@ -1,3 +1,7 @@
+---
+description: "Multi-stage builds reduce final image size by separating build and runtime dependencies. The following tool analyzes Dockerfiles and recommends optimal"
+---
+
 # Chapter 5: Docker
 
 > **Prev:** [Containerization](./05-containerization.md)

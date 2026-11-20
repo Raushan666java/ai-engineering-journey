@@ -1,3 +1,7 @@
+---
+description: "A register is an array of bistable elements sharing a common clock. While Chapter 6 introduced basic registers, this section covers advanced register"
+---
+
 # Chapter 8: Registers and Counters
 
 > **Prereq:** Chapters 6?7 (Sequential Circuits, State Machines) ? registers and counters are specialised sequential structures.

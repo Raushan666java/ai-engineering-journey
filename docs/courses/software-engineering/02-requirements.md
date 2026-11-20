@@ -1,3 +1,7 @@
+---
+description: "✅ After completing this chapter, the student will be able to: - Classify requirements as functional, non-functional, and domain requirements - Apply"
+---
+
 # Requirements Engineering
 
 ## Learning Objectives

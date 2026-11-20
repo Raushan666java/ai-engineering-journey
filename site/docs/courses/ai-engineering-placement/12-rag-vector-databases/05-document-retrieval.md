@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/05-document-retrieval
 title: "Document Retrieval"
 sidebar_label: "Document Retrieval"
 sidebar_position: 162
+description: "Document Retrieval: Retrieval-Augmented Generation lets LLMs answer questions about your private data. Vector databases store embeddings for semantic"
 ---
 
 <!-- improved -->

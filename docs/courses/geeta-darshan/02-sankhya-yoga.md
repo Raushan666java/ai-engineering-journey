@@ -1,3 +1,7 @@
+---
+description: "Adhyay 1 khatam hua — Arjuna ro chuka hai, usne dhanush giraya hai, aur usne kah diya hai: 'Main nahin ladunga.' Adhyay 2 ki shuruaat yahin se hoti hai —"
+---
+
 # अध्याय २: सांख्य योग — Jagrukta hi asli gyan hai
 
 > **"Krishna tumhe karm ka gyan nahin de rahe — woh tumhe karm ke andar dekhne wali jagrukta de rahe hain. Gyan matlab kitaabein nahin; gyan matlab aankhein."**

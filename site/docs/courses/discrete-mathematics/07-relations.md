@@ -4,6 +4,7 @@ slug: /discrete-mathematics/07-relations
 title: "Chapter 7: Relations"
 sidebar_label: "Chapter 7: Relations"
 sidebar_position: 7
+description: 'A binary relation $R$ from set $A$ to set $B$ is a subset of $A times B$. When $A = B$, we say $R$ is a relation on $A$. We write $a R b$ to mean $(a, b)'
 ---
 
 # Chapter 7: Relations

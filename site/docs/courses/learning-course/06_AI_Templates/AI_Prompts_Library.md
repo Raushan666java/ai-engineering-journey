@@ -3,6 +3,7 @@ slug: /learning-course/06_AI_Templates/AI_Prompts_Library
 title: "🤖 AI Prompts Library - Ready-to-Use Templates"
 sidebar_label: "🤖 AI Prompts Library - Ready-to-Use Templates"
 sidebar_position: 1
+description: "Remember: Great prompts = Great AI responses = Accelerated learning"
 ---
 # 🤖 AI Prompts Library - Ready-to-Use Templates
 

@@ -1,3 +1,7 @@
+---
+description: "A[Containerization] --> B[Docker Images] A --> C[Container Registries ECR] D --> F[EKS / Kubernetes] F --> H[Pods, Services, Deployments] H -->"
+---
+
 # Chapter 9: Containerization and Orchestration
 
 > **Previous:** [Chapter 8: Serverless Computing](./08-serverless.md) | **Next:** [Chapter 10: Cloud Architecture Design](./10-architecture.md)

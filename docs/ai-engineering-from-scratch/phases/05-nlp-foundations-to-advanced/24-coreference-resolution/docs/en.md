@@ -1,3 +1,7 @@
+---
+description: "'She called him. He did not answer. The doctor was at lunch.' Three references to two people and nobody is named. Coreference resolution figures out who"
+---
+
 # Coreference Resolution
 
 > "She called him. He did not answer. The doctor was at lunch." Three references to two people and nobody is named. Coreference resolution figures out who is who.

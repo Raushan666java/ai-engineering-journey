@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_16_Capstone_Project_Jira_Clone/02_Da
 title: "🗄️ MySQL Database Schema Design"
 sidebar_label: "🗄️ MySQL Database Schema Design"
 sidebar_position: 2
+description: "The database is the absolute source of truth. If the schema is designed flawlessly, the backend controllers become incredibly thin and simple. Since we"
 ---
 # 🗄️ MySQL Database Schema Design
 

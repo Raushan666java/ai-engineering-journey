@@ -4,6 +4,7 @@ slug: /operating-systems/10-file-systems
 title: "Chapter 10: File Systems"
 sidebar_label: "Chapter 10: File Systems"
 sidebar_position: 10
+description: "A file is a named collection of related information recorded on secondary storage. Files are the primary abstraction the OS provides for persistent data"
 ---
 
 # Chapter 10: File Systems

@@ -1,3 +1,7 @@
+---
+description: "Chapter 10: Dynamic Programming — Trees & Grids — Recursive problem-solving on graph structures | Next: Chapter 12: Minimum Spanning Trees — From shortest"
+---
+
 # Chapter 11: Graph Shortest Paths
 
 > **Prerequisites:** [Chapter 10: Dynamic Programming — Trees & Grids](./10-dp-trees-grids.md) — Recursive problem-solving on graph structures | **Next:** [Chapter 12: Minimum Spanning Trees](./12-graph-mst.md) — From shortest paths to minimum-cost spanning trees

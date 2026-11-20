@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming/01-python-basics
 title: "Python Basics — Variables, Data Types, Operators"
 sidebar_label: "Python Basics — Variables, Data Types, Operators"
 sidebar_position: 10
+description: "Python Basics — Variables, Data Types, Operators: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and libraries is"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /big-data/04-spark-mllib
 title: "Chapter 4: Spark MLlib"
 sidebar_label: "Chapter 4: Spark MLlib"
 sidebar_position: 4
+description: "Pro Tip: For high-cardinality categorical features (millions of unique users), use FeatureHasher instead of OneHotEncoder. FeatureHasher doesn't need to"
 ---
 
 # Chapter 4: Spark MLlib

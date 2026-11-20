@@ -4,6 +4,7 @@ slug: /job-preparation/01-resume-cover-letter
 title: "Resume and Cover Letter Mastery for Indian IT Jobs"
 sidebar_label: "Resume and Cover Letter Mastery for Indian IT Jobs"
 sidebar_position: 1
+description: "Applicant Tracking Systems (ATS) are software tools used by 90%+ of Indian IT companies to filter resumes before they reach human reviewers. Understanding"
 ---
 
 # Resume and Cover Letter Mastery for Indian IT Jobs

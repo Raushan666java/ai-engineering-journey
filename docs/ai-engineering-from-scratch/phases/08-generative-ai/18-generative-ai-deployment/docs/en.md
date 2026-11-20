@@ -1,3 +1,7 @@
+---
+description: "A model that runs on your dev GPU is a prototype. A model that runs on someone else's CPU, browser, or phone is a product. Deployment is where the math"
+---
+
 # Generative AI Deployment — ONNX, TensorRT, CoreML, WebGPU
 
 > A model that runs on your dev GPU is a prototype. A model that runs on someone else's CPU, browser, or phone is a product. Deployment is where the math hits the hardware scheduler.

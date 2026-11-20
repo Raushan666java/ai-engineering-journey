@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming/07-file-io-and-exceptions
 title: "File I/O & Exceptions — Reading, Writing, Error Handling"
 sidebar_label: "File I/O & Exceptions — Reading, Writing, Error Handling"
 sidebar_position: 16
+description: "File I/O & Exceptions — Reading, Writing, Error Handling: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and"
 ---
 
 <!-- improved -->

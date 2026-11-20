@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming/04-collections
 title: "Collections — Lists, Tuples, Sets, and Dictionaries"
 sidebar_label: "Collections — Lists, Tuples, Sets, and Dictionaries"
 sidebar_position: 13
+description: "Collections — Lists, Tuples, Sets, and Dictionaries: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and libraries"
 ---
 
 <!-- improved -->

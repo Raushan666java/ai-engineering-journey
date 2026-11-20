@@ -1,3 +1,7 @@
+---
+description: "Basic RAG retrieves the top-k most similar chunks. That works for simple questions. It falls apart for multi-hop reasoning, ambiguous queries, and large"
+---
+
 # Advanced RAG (Chunking, Reranking, Hybrid Search)
 
 > Basic RAG retrieves the top-k most similar chunks. That works for simple questions. It falls apart for multi-hop reasoning, ambiguous queries, and large corpora. Advanced RAG is the difference between a demo that works on 10 documents and a system that works on 10 million.

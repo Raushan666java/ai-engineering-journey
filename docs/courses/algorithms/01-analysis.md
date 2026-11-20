@@ -1,3 +1,7 @@
+---
+description: "Imagine choosing a route to work. Walking works for 1 block (linear in distance) but fails at 10 miles. A bicycle handles neighborhood errands, but a car"
+---
+
 # Chapter 1: Fundamentals of Algorithm Analysis
 
 > **Prerequisites:** None | **Next:** [Chapter 2: Searching](./02-searching.md) — From measuring efficiency to finding elements

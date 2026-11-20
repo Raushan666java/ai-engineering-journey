@@ -1,3 +1,7 @@
+---
+description: "Azure and GCP Basics — Cloud Providers Comparison: Containers and cloud platforms are where AI models live in production. Docker packages your model"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Azure and GCP Basics — Cloud Providers Comparison

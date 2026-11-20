@@ -4,6 +4,7 @@ slug: /speed-drills/02-quant-advanced-drills
 title: "Quant Advanced Speed Drills"
 sidebar_label: "Quant Advanced Speed Drills"
 sidebar_position: 2
+description: "Master data interpretation, number series, quadratic equations, and simplification under timed conditions. These drills bridge basic arithmetic and"
 ---
 
 # Quant Advanced Speed Drills

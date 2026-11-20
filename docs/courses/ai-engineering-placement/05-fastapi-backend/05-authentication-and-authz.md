@@ -1,3 +1,7 @@
+---
+description: "Authentication and Authorization — JWT, OAuth2, and RBAC: FastAPI is the modern Python framework for building AI APIs. Its async support, automatic"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Authentication and Authorization — JWT, OAuth2, and RBAC

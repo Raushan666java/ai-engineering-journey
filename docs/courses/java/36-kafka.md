@@ -1,3 +1,7 @@
+---
+description: "Apache Kafka is a distributed event streaming platform. Unlike RabbitMQ (a message broker), Kafka is an append-only log that stores events durably and"
+---
+
 # Apache Kafka
 > **Previous:** [RabbitMQ](35-rabbitmq.md) | **Next:** [Event-Driven Architecture and Saga Pattern](37-event-driven-saga.md)
 

@@ -4,6 +4,7 @@ slug: /digital-logic/12-hdl
 title: "Chapter 12: Hardware Description Languages"
 sidebar_label: "Chapter 12: Hardware Description Languages"
 sidebar_position: 12
+description: "Chapter 12: Hardware Description Languages: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = [] private"
 ---
 
 # Chapter 12: Hardware Description Languages

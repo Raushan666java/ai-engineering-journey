@@ -1,3 +1,7 @@
+---
+description: "Twenty phases stack on top of each other. Math is the floor. Agents and production are the roof. Skip ahead if you already know the lower layers, but"
+---
+
 # Roadmap / Prerequisites
 
 [Home](index.md) · [About](about.md) · [Catalog](catalog.md) · [Glossary](glossary.md) · [Contact](contact.md)

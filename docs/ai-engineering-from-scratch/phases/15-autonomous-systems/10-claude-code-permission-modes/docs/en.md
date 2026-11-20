@@ -1,3 +1,7 @@
+---
+description: "Claude Code exposes seven permission modes. 'plan' asks before every action, 'default' asks only for risky ones, 'acceptEdits' auto-approves file writes"
+---
+
 # Claude Code as an Autonomous Agent: Permission Modes and Auto Mode
 
 > Claude Code exposes seven permission modes. "plan" asks before every action, "default" asks only for risky ones, "acceptEdits" auto-approves file writes but still confirms shell execution, and "bypassPermissions" approves everything. Auto Mode (March 24, 2026) replaces per-action approval with a two-stage parallel safety classifier: a single-token fast check runs on every action; flagged actions kick off a chain-of-thought deep review. Action budgets are enforced via `max_turns` and `max_budget_usd`. Auto Mode shipped as a research preview — Anthropic has stated explicitly that the classifier is not sufficient alone.

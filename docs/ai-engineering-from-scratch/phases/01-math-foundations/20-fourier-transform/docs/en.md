@@ -1,3 +1,7 @@
+---
+description: "An audio recording is a sequence of pressure measurements over time. A stock price is a sequence of values over days. An image is a grid of pixel"
+---
+
 # The Fourier Transform
 
 > Every signal is a sum of sine waves. The Fourier transform tells you which ones.

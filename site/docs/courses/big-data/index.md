@@ -1,3 +1,7 @@
+---
+description: "This course covers distributed data processing at scale. From Hadoop's HDFS and MapReduce through Apache Spark's RDDs, DataFrames, Structured Streaming"
+---
+
 ﻿---
 id: index
 slug: /big-data

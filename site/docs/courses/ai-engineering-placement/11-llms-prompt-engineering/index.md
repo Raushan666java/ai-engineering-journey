@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/11-llms-prompt-engineering
 title: "11 — LLMs & Prompt Engineering"
 sidebar_label: "11 — LLMs & Prompt Engineering"
 sidebar_position: 156
+description: "How LLMs actually behave: context windows, sampling, structured output, prompt patterns and their failure modes."
 ---
 
 # 11 — LLMs & Prompt Engineering

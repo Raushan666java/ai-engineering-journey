@@ -1,3 +1,7 @@
+---
+description: "By the conclusion of this chapter, the student will be able to: (1) describe the transformer architecture and its significance; (2) explain foundation"
+---
+
 # Chapter 17: Modern Artificial Intelligence
 
 **Previous:** [Chapter 16: Expert Systems](16-expert-systems.md) | **Next:** [Chapter 18: Applications of AI](18-ai-applications.md)

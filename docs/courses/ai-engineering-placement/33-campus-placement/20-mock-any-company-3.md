@@ -1,3 +1,7 @@
+---
+description: "Company-neutral aptitude simulation, hard difficulty: 18 quant, 15 logical, 12 verbal. Time: 60 minutes. This mock is tougher than real tests — score 75%+"
+---
+
 <!-- improved -->
 # Mock Test — Any Company #3 (Hard Generic Pattern, 45 Questions)
 

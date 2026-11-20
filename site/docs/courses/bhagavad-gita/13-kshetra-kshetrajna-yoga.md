@@ -4,6 +4,7 @@ slug: /bhagavad-gita/13-kshetra-kshetrajna-yoga
 title: "Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower"
 sidebar_label: "Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower"
 sidebar_position: 13
+description: "Arjuna has heard about the manifest and the unmanifest, about devotion and action, about the cosmic form of the divine. Now he asks the sharpest question"
 ---
 
 # Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower

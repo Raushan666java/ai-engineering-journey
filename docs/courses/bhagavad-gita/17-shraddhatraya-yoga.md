@@ -1,3 +1,7 @@
+---
+description: "Arjuna has just been told, at the end of chapter sixteen, that scripture is the authority for action. Now he asks the question that follows inevitably"
+---
+
 # Chapter 17: Shraddhatraya Yoga — You are made of what you trust, and your trust is born of your own nature
 
 > "Your faith is not only in your temple. It is in your belly, your tongue, your work, your gifts. Show me those, and I will show you who you are."

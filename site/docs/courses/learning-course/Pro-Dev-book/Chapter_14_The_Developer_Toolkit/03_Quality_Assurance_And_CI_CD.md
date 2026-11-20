@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_14_The_Developer_Toolkit/03_Quality_
 title: "🛡️ Quality Assurance & CI/CD"
 sidebar_label: "🛡️ Quality Assurance & CI/CD"
 sidebar_position: 3
+description: "The defining characteristic of amateur code is fear. The developer is terrified to hit the 'Deploy' button on a Friday because they have no idea if the"
 ---
 # 🛡️ Quality Assurance & CI/CD
 

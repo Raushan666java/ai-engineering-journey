@@ -1,3 +1,7 @@
+---
+description: "Edge AI frameworks bridge the gap between training powerful deep learning models and deploying them on resource-constrained devices. Unlike cloud AI, edge"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # 03 — Edge AI Frameworks

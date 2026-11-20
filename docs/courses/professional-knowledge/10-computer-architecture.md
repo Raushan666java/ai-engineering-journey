@@ -1,3 +1,7 @@
+---
+description: "Answer: (b) 18. Blocks = 64 KB / 64 B = 1024. Sets = 1024 / 16 = 64. Set index bits = 6 (2^6 = 64). Offset bits = 6 (64 = 2^6). Tag bits = 32 − 6 − 6 ="
+---
+
 # Chapter 10: Computer Architecture — Exam Quick Revision
 
 ## Learning Objectives

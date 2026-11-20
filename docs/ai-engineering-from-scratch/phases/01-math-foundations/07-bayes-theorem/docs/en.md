@@ -1,3 +1,7 @@
+---
+description: "Most people say 99%. The real answer depends on how rare the disease is. If 1 in 10,000 people have it, a positive result only gives you about a 1% chance"
+---
+
 # Bayes' Theorem
 
 > Probability is about what you expect. Bayes' theorem is about what you learn.

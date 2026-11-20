@@ -4,6 +4,7 @@ slug: /laravel/16-search-rag
 title: "Chapter 16: Semantic Search, Vector Search & RAG with pgvector"
 sidebar_label: "Chapter 16: Semantic Search, Vector Search & RAG with pgvector"
 sidebar_position: 16
+description: "Composite full-text indexes improve performance on multi-column searches. In MySQL, you can also add a FULLTEXT index on a generated column that"
 ---
 
 # Chapter 16: Semantic Search, Vector Search & RAG with pgvector

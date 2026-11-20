@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/32-competitive-programming/visual-notes
 title: "Visual Notes — Training That Crushes Interviews"
 sidebar_label: "Visual Notes"
 sidebar_position: 361
+description: "Visual Notes — Training That Crushes Interviews: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again"
 ---
 
 # Visual Notes — Training That Crushes Interviews

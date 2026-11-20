@@ -1,3 +1,7 @@
+---
+description: "In a DFA, for each state and symbol there is exactly one next state. In an NFA (nondeterministic finite automaton), from a given state and symbol, there"
+---
+
 # Chapter 3: Nondeterministic Finite Automata
 
 > **Previous:** [Deterministic Finite Automata](./02-dfa.md) | **Next:** [Regular Expressions](./04-regex.md)

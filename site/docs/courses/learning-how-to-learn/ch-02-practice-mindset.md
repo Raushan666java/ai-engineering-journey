@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/ch-02-practice-mindset
 title: "Chapter 2: Practice, Mindset & Performance"
 sidebar_label: "Chapter 2: Practice, Mindset & Performance"
 sidebar_position: 3
+description: "Learning isn't just about technique — it's about what you believe, how you practice, and how you take care of your brain. This chapter tears down the"
 ---
 
 # Chapter 2: Practice, Mindset & Performance

@@ -4,6 +4,7 @@ slug: /c-programming/10-structures-unions
 title: "Chapter 10: Structures and Unions"
 sidebar_label: "Chapter 10: Structures and Unions"
 sidebar_position: 10
+description: "When HR designs the blank form (the struct definition), they decide what slots exist but fill in no values. When they fill out a specific employee's form"
 ---
 
 # Chapter 10: Structures and Unions

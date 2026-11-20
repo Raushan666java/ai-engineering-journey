@@ -1,3 +1,7 @@
+---
+description: 'Account has description:000. Two ATMs process Account has \$1000. Two ATMs process \$200 withdrawal simultaneously. Both read \$1000. Both compute new balance = \$800. Both write \$800. Result: \$20000 withdrawal simultaneously. Both read description:000. Both compute new balance = $800. Both write $800. Result: Account has \$1000. Two ATMs process \$200 withdrawal simultaneously. Both read \$1000. Both compute new balance = \$800. Both write \$800. Result: \$20000'
+---
+
 # Chapter 10: Concurrency Control
 
 

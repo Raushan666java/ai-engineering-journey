@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: Imagine a ticket counter at a cinema. Customers join the line at the rear and are served from the front. The first person to arrive"
+---
+
 # Chapter 6: Queues
 
 > **Previous:** [Chapter 5: Stacks](./05-stacks.md) | **Next:** [Hash Tables](./07-hash-tables.md)

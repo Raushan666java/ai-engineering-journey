@@ -1,3 +1,7 @@
+---
+description: "Kubernetes resource quotas prevent resource starvation across namespaces. The following implementation calculates optimal resource allocations and"
+---
+
 # Chapter 8: Advanced Kubernetes
 
 > **Prev:** [Configuration Management](./08-configuration-management.md)

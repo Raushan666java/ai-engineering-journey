@@ -1,3 +1,7 @@
+---
+description: "Basic set operations include union (?), intersection (n), difference (-), and complement (?). The power set of A, written ??(A) or 2^A, is the set of all"
+---
+
 # Chapter 1: Introduction to the Theory of Computation
 
 > **Previous:** None | **Next:** [Deterministic Finite Automata](./02-dfa.md)

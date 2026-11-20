@@ -1,3 +1,7 @@
+---
+description: "Enterprises cannot let every dev install random MCP servers. A gateway centralizes auth, RBAC, audit, rate limiting, caching, and tool-poisoning"
+---
+
 # MCP Gateways and Registries — Enterprise Control Planes
 
 > Enterprises cannot let every dev install random MCP servers. A gateway centralizes auth, RBAC, audit, rate limiting, caching, and tool-poisoning detection, then exposes the merged tool surface as a single MCP endpoint. The Official MCP Registry (Anthropic + GitHub + PulseMCP + Microsoft, namespace-verified) is the canonical upstream. This lesson names where a gateway fits, walks a minimal implementation, and surveys the 2026 vendor landscape.

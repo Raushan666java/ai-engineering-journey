@@ -1,3 +1,7 @@
+---
+description: "50 curated SQL problems organized by category. Each problem includes the question, schema, sample data, tested SQL solution, expected output, and"
+---
+
 # SQL Problem Bank
 `n> **Previous:** [Chapter 2: DSA Problem Bank](./02-dsa-problem-bank.md) | **Next:** [Chapter 4: Company-Specific Preparation](./04-company-specific.md) → Placement Interview Preparation
 

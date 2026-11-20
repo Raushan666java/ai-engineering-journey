@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/26-ai-product-thinking/04-ai-product-metrics
 title: "04 — AI Product Metrics & KPIs"
 sidebar_label: "04 — AI Product Metrics & KPIs"
 sidebar_position: 319
+description: "AI teams often ship models with 99% accuracy that users abandon. High model performance does not guarantee product success. This chapter teaches you to"
 ---
 
 <!-- improved -->

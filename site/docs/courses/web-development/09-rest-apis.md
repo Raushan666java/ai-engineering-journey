@@ -4,6 +4,7 @@ slug: /web-development/09-rest-apis
 title: "Chapter 9: REST APIs and API Design"
 sidebar_label: "Chapter 9: REST APIs and API Design"
 sidebar_position: 9
+description: "REST (Representational State Transfer) is an architectural style for designing networked applications. RESTful APIs are built around resources, which are"
 ---
 
 # Chapter 9: REST APIs and API Design

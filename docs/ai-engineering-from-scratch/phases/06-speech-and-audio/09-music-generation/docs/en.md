@@ -1,3 +1,7 @@
+---
+description: "2026 music generation: Suno v5 and Udio v4 dominate commercial; MusicGen, Stable Audio Open, and ACE-Step lead open-source. The technical problem is"
+---
+
 # Music Generation — MusicGen, Stable Audio, Suno, and the Licensing Earthquake
 
 > 2026 music generation: Suno v5 and Udio v4 dominate commercial; MusicGen, Stable Audio Open, and ACE-Step lead open-source. The technical problem is mostly solved. The legal problem (Warner Music \$500M settlement, UMG settlement) reshaped the field in 2025-2026.

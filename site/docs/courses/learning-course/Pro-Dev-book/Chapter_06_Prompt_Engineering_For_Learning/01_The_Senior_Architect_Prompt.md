@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_06_Prompt_Engineering_For_Learning/0
 title: "🗣️ The Senior Architect Prompt"
 sidebar_label: "🗣️ The Senior Architect Prompt"
 sidebar_position: 1
+description: "When developers interact with AI, their output is a direct reflection of their prompting precision. A junior developer uses AI as a code-generating"
 ---
 # 🗣️ The Senior Architect Prompt
 

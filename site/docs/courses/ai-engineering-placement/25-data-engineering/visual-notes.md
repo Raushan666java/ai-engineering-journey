@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/25-data-engineering/visual-notes
 title: "Visual Notes — The Data Pipeline"
 sidebar_label: "Visual Notes"
 sidebar_position: 315
+description: "Visual Notes — The Data Pipeline: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before"
 ---
 
 # Visual Notes — The Data Pipeline

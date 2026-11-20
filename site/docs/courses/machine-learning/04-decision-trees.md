@@ -4,6 +4,7 @@ slug: /machine-learning/04-decision-trees
 title: "Chapter 4: Decision Trees"
 sidebar_label: "Chapter 4: Decision Trees"
 sidebar_position: 4
+description: "A Decision Tree is a flowchart-like structure used for both classification and regression. Each internal node represents a 'test' on an attribute (e.g"
 ---
 
 # Chapter 4: Decision Trees

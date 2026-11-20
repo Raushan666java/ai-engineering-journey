@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_13_Project_Management/02_The_Scope_C
 title: "🗡️ The Scope Creep Killer"
 sidebar_label: "🗡️ The Scope Creep Killer"
 sidebar_position: 2
+description: "You have likely experienced this scenario: You begin a side project or a freelance contract that is supposed to take two weeks. Three months later, the"
 ---
 # 🗡️ The Scope Creep Killer
 

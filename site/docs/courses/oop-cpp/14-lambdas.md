@@ -4,6 +4,7 @@ slug: /oop-cpp/14-lambdas
 title: "Chapter 14: Lambdas (Deep Dive)"
 sidebar_label: "Chapter 14: Lambdas (Deep Dive)"
 sidebar_position: 14
+description: "Think of a lambda like leaving a sticky note instruction for a colleague. The sticky note says what to do, what supplies you've attached, and what result"
 ---
 
 # Chapter 14: Lambdas (Deep Dive)

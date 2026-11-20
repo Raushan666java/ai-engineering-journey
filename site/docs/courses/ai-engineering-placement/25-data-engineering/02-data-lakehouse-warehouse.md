@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/25-data-engineering/02-data-lakehouse-warehouse
 title: "02 — Data Lakehouse & Warehouse"
 sidebar_label: "02 — Data Lakehouse & Warehouse"
 sidebar_position: 310
+description: "Choosing the right storage architecture is one of the most consequential decisions an AI engineer makes. Data lakes store raw data in native formats"
 ---
 
 <!-- improved -->

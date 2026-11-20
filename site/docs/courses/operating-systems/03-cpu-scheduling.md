@@ -4,6 +4,7 @@ slug: /operating-systems/03-cpu-scheduling
 title: "Chapter 3: CPU Scheduling"
 sidebar_label: "Chapter 3: CPU Scheduling"
 sidebar_position: 3
+description: "Imagine you are the sole cashier at a busy supermarket. There is one checkout counter (the CPU) and a line of customers (processes). Each customer has a"
 ---
 
 # Chapter 3: CPU Scheduling

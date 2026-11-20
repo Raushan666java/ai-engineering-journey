@@ -1,3 +1,7 @@
+---
+description: "Keywords: Include keywords from the job description naturally in your resume. Common keywords for AI/backend roles: Python, distributed systems, REST"
+---
+
 <!-- improved -->
 ﻿<!-- Clear Language: Keep sentences under 50 words -->
 # Resume & Portfolio Review

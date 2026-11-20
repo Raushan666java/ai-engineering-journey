@@ -1,3 +1,7 @@
+---
+description: "Feature engineering accounts for 60-80% of the work in production ML systems, yet most teams build the same features repeatedly with inconsistent"
+---
+
 <!-- improved -->
 # 05 — Feature Stores
 

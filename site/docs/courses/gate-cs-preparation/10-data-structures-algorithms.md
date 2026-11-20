@@ -1,9 +1,10 @@
 ---
 id: 10-data-structures-algorithms
 slug: /gate-cs-preparation/10-data-structures-algorithms
-title: "10 Data Structures Algorithms"
-sidebar_label: "10 Data Structures Algorithms"
+title: "10-data-structures-algorithms"
+sidebar_label: "10-data-structures-algorithms"
 sidebar_position: 10
+description: "Properties: - Transitive: f(n) = O(g(n)) and g(n) = O(h(n)) ⇒ f(n) = O(h(n)) - Reflexive: f(n) = O(f(n)) - Symmetric for Θ only: f(n) = Θ(g(n))"
 ---
 
 ﻿# Chapter 10: Data Structures & Algorithms → GATE CS Preparation
@@ -89,27 +90,25 @@ flowchart LR
 
 ### 1.1 Asymptotic Notations
 
-
 | Notation | Definition | Intuition |
 |----------|-----------|-----------|
 | **O(g(n))** | { f(n) \| ∃ c > 0, n₀ > 0 such that 0 ≤ f(n) ≤ c·g(n) ∀ n ≥ n₀ } | Upper bound |
 | **Ω(g(n))** | { f(n) \| ∃ c > 0, n₀ > 0 such that 0 ≤ c·g(n) ≤ f(n) ∀ n ≥ n₀ } | Lower bound |
-| **Θ(g(n))** | { f(n) \| ∃ câ‚ÂÂ�, c₂ > 0, n₀ > 0 such that câ‚ÂÂ�·g(n) ≤ f(n) ≤ c₂·g(n) ∀ n ≥ n₀ } | Tight bound |
+| **ÃŽËœ(g(n))** | { f(n) \| Ã¢Ë†Æ’ cÃ¢â€šÂ, cÃ¢â€šâ€š > 0, nÃ¢â€šâ‚¬ > 0 such that cÃ¢â€šÂ·g(n) ≤ f(n) ≤ c₂·g(n) ∀ n ≥ n₀ } | Tight bound |
 | **o(g(n))** | { f(n) \| ∀ c > 0, ∃ n₀ > 0 such that 0 ≤ f(n) &lt; c·g(n) ∀ n ≥ n₀ } | Loose upper |
-| **ÃÂ�‰(g(n))** | { f(n) \| ∀ c > 0, ∃ n₀ > 0 such that 0 ≤ c·g(n) &lt; f(n) ∀ n ≥ n₀ } | Loose lower |
+| **Ã‰(g(n))** | { f(n) \| âˆ€ c > 0, âˆƒ nâ‚€ > 0 such that 0 â‰¤ cÂ·g(n) &lt; f(n) âˆ€ n â‰¥ nâ‚€ } | Loose lower |
 
 **Properties:**
 - Transitive: f(n) = O(g(n)) and g(n) = O(h(n)) ⇒ f(n) = O(h(n))
 - Reflexive: f(n) = O(f(n))
-- Symmetric for Θ only: f(n) = Θ(g(n)) â‡—� g(n) = Θ(f(n))
-- Addition: fâ‚ÂÂ�(n) + f₂(n) = O(max(fâ‚ÂÂ�(n), f₂(n)))
-- Multiplication: fâ‚ÂÂ�(n) · f₂(n) = O(fâ‚ÂÂ�(n) · f₂(n))
+- Symmetric for Θ only: f(n) = Θ(g(n)) ⇔ g(n) = Θ(f(n))
+- Addition: f₁(n) + f₂(n) = O(max(f₁(n), f₂(n)))
+- Multiplication: fÃ¢â€šÂ(n) Ã‚Â· fÃ¢â€šâ€š(n) = O(fÃ¢â€šÂ(n) · f₂(n))
 
 **Common Functions (ordered by growth rate):**
-O(1) &lt; O(log log n) < O(log n) < O((log n)²) < O(√n) < O(n) < O(n log n) < O(n²) < O(n³) < O(2âÂÂ�¿) < O(n!) < O(nâÂÂ�¿)
+O(1) &lt; O(log log n) < O(log n) < O((log n)Ã‚Â²) < O(Ã¢Ë†Å¡n) < O(n) < O(n log n) < O(nÃ‚Â²) < O(nÃ‚Â³) < O(2Ã¢ÂÂ¿) < O(n!) < O(nÃ¢Â¿)
 
 ### 1.2 Recurrence Relations
-
 
 **Substitution Method:** Guess the form, prove by induction.
 
@@ -129,7 +128,7 @@ O(1) &lt; O(log log n) < O(log n) < O((log n)²) < O(√n) < O(n) < O(n log n) <
 |------------|-----------|------------|
 | T(n) = T(n−1) + 1 | n! | Θ(n) |
 | T(n) = T(n−1) + n | Selection sort | Θ(n²) |
-| T(n) = 2T(n−1) + 1 | Tower of Hanoi | Θ(2âÂÂ�¿) |
+| T(n) = 2T(nÃ¢Ë†â€™1) + 1 | Tower of Hanoi | ÃŽËœ(2Ã¢Â¿) |
 | T(n) = T(n/2) + 1 | Binary search | Θ(log n) |
 | T(n) = T(n/2) + n | → | Θ(n) |
 | T(n) = 2T(n/2) + n | Merge sort | Θ(n log n) |
@@ -138,7 +137,6 @@ O(1) &lt; O(log log n) < O(log n) < O((log n)²) < O(√n) < O(n) < O(n log n) <
 | T(n) = 7T(n/2) + n² | Strassen's MM | Θ(n^{log₂7}) ≈ Θ(n^{2.81}) |
 
 ### 1.3 Amortized Analysis
-
 
 **Aggregate Method:** Compute total cost of n operations, divide by n.
 
@@ -157,16 +155,14 @@ O(1) &lt; O(log log n) < O(log n) < O((log n)²) < O(√n) < O(n) < O(n log n) <
 
 ### 2.1 Representation in Memory
 
-
 **Row-major order (C/C++):** Address(A[i][j]) = Base + (i × n + j) × size
 
 **Column-major order (Fortran):** Address(A[i][j]) = Base + (j × m + i) × size
 
-**For n-dimensional array A[dâ‚ÂÂ�][d₂]...[dₙ]:**
+**For n-dimensional array A[d₁][d₂]...[dₙ]:**
 - Address = Base + Σ_{k=1}^{n} (iₖ × Π_{t=k+1}^{n} dₜ) × size
 
 ### 2.2 Sparse Matrices
-
 
 **Definition:** Matrix with mostly zero entries (nnz &lt;< m × n).
 
@@ -192,7 +188,6 @@ row_ptr   = [0, 2, 3, 5]
 
 ### 2.3 GATE-Related Array Formulas
 
-
 **2D array A[m][n] stored row-major:**
 - A[i][j] = Base + (i × n + j) × element_size
 
@@ -209,7 +204,6 @@ row_ptr   = [0, 2, 3, 5]
 
 ### 3.1 Types
 
-
 | Type | Node Structure | Memory | Traversal |
 |------|---------------|--------|-----------|
 | Singly | data + next | O(n) | Forward only |
@@ -220,7 +214,6 @@ row_ptr   = [0, 2, 3, 5]
 
 ### 3.2 Operations Complexity
 
-
 | Operation | Singly | Doubly | Circular |
 |-----------|--------|--------|----------|
 | Insert at head | O(1) | O(1) | O(1) |
@@ -230,7 +223,6 @@ row_ptr   = [0, 2, 3, 5]
 | Search | O(n) | O(n) | O(n) |
 
 ### 3.3 Floyd's Cycle Detection (Tortoise & Hare)
-
 
 ```
 function hasCycle(head):
@@ -255,7 +247,6 @@ function hasCycle(head):
 
 ### 4.1 Stack Operations
 
-
 | Operation | Array | Linked List |
 |-----------|-------|-------------|
 | push(x) | O(1) (amortized) | O(1) |
@@ -264,7 +255,6 @@ function hasCycle(head):
 | isEmpty() | O(1) | O(1) |
 
 ### 4.2 Queue Operations
-
 
 | Operation | Array (Circular) | Linked List |
 |-----------|------------------|-------------|
@@ -277,7 +267,6 @@ function hasCycle(head):
 **Two-stack queue:** enqueue = push to s1; dequeue = if s2 empty, pop all s1→s2, then pop s2.
 
 ### 4.3 Applications
-
 
 **Parenthesis Matching:**
 ```
@@ -304,7 +293,6 @@ return pop()
 
 ### 4.4 Expression Conversion Summary
 
-
 | Expression | Order | Example |
 |------------|-------|---------|
 | Infix | operand operator operand | A + B × C |
@@ -319,11 +307,10 @@ return pop()
 
 ### 5.1 Binary Tree Terminologies
 
-
 | Property | Formula |
 |----------|---------|
-| Max nodes at level i | 2âÂÂ�± |
-| Max nodes in tree of height h | 2ʰâÂÂ�º¹ − 1 |
+| Max nodes at level i | 2Ã¢Â± |
+| Max nodes in tree of height h | 2ÃŠÂ°Ã¢ÂºÂ¹ âˆ’ 1 |
 | Min height for n nodes | ⌈log₂(n+1)⌉ − 1 |
 | For n nodes, leaf count L | L = I + 1 (I = internal nodes with degree 2) |
 | Full binary tree | Every node has 0 or 2 children |
@@ -331,7 +318,6 @@ return pop()
 | Perfect binary tree | All levels completely full |
 
 ### 5.2 Binary Tree Traversals
-
 
 | Traversal | Order | Use Case |
 |-----------|-------|----------|
@@ -361,7 +347,6 @@ function morrisInorder(root):
 
 ### 5.3 Binary Search Tree
 
-
 **Operations and complexity (average / worst):**
 
 | Operation | Average | Worst (skewed) |
@@ -379,7 +364,6 @@ function morrisInorder(root):
 **Inorder successor:** min of right subtree
 
 ### 5.4 Important Tree Problems
-
 
 **Diameter of a Binary Tree:** Longest path between any two nodes (may not pass through root).
 
@@ -410,14 +394,12 @@ function lca(root, p, q):
 
 ### 5.5 Threaded Binary Tree
 
-
 **One-way threading:** Right null pointers point to inorder successor.
 **Two-way threading:** Left null pointers point to inorder predecessor.
 
 **Advantage:** Traversal without stack or recursion (O(1) space).
 
 ### 5.6 Expression Trees
-
 
 - Leaf nodes = operands
 - Internal nodes = operators
@@ -426,7 +408,6 @@ function lca(root, p, q):
 - Postorder = postfix expression
 
 ### 5.7 AVL Trees
-
 
 **Balance Factor:** bf(node) = height(left) − height(right) ∈ {−1, 0, 1}
 
@@ -445,7 +426,6 @@ function lca(root, p, q):
 
 ### 5.8 B-Trees and B+ Trees
 
-
 **B-Tree of order m:**
 - Root: 1 to 2m keys
 - Internal nodes: m to 2m keys (except root)
@@ -459,7 +439,6 @@ function lca(root, p, q):
 - Better cache performance, efficient range queries (leaf linked list)
 
 ### 5.9 Red-Black Trees
-
 
 **Properties:**
 1. Every node is red or black
@@ -478,7 +457,6 @@ function lca(root, p, q):
 
 ### 5.10 Tries
 
-
 **Trie (Prefix Tree):**
 - n-ary tree for string storage/retrieval
 - Insert: O(|s|) where |s| = string length
@@ -494,7 +472,6 @@ function lca(root, p, q):
 
 ### 6.1 Binary Heap
 
-
 | Property | Min-Heap | Max-Heap |
 |----------|----------|----------|
 | Root | Minimum element | Maximum element |
@@ -505,7 +482,6 @@ function lca(root, p, q):
 | A[parent] ≥ A[child] | No | Yes |
 
 ### 6.2 Operations
-
 
 | Operation | Complexity | Description |
 |-----------|------------|-------------|
@@ -519,7 +495,6 @@ function lca(root, p, q):
 **Build heap proof:** Sum of heights of nodes = n − (number of leaves at levels except last) = O(n)
 
 ### 6.3 Heap Sort
-
 
 ```
 function heapSort(arr):
@@ -537,7 +512,6 @@ function heapSort(arr):
 
 ### 6.4 Priority Queue
 
-
 | Implementation | insert | extractMin | decreaseKey | Union |
 |----------------|--------|------------|-------------|-------|
 | Binary Heap | O(log n) | O(log n) | O(log n) | O(n) |
@@ -550,7 +524,6 @@ function heapSort(arr):
 
 ### 7.1 Representations
 
-
 | Representation | Space | Edge Check | Neighbors | Add Edge |
 |----------------|-------|------------|-----------|----------|
 | Adjacency Matrix | O(V²) | O(1) | O(V) | O(1) |
@@ -562,7 +535,6 @@ function heapSort(arr):
 - Sparse graph (E &lt;< V²) → Adjacency List
 
 ### 7.2 BFS (Breadth-First Search)
-
 
 ```
 function bfs(start):
@@ -583,7 +555,6 @@ function bfs(start):
 - Uses queue
 
 ### 7.3 DFS (Depth-First Search)
-
 
 ```
 function dfs(start):
@@ -614,7 +585,6 @@ function dfs(start):
 
 ### 7.4 Topological Sort
 
-
 **Definition:** Linear ordering of DAG vertices such that for every edge u→v, u appears before v.
 
 **Kahn's algorithm (BFS-based):**
@@ -636,7 +606,6 @@ function topologicalSort(graph):
 **Complexity:** O(V + E)
 
 ### 7.5 Minimum Spanning Tree
-
 
 **Definition:** Subset of edges connecting all vertices with minimum total weight.
 
@@ -674,7 +643,6 @@ function kruskal(edges, V):
 ```
 
 ### 7.6 Shortest Path Algorithms
-
 
 | Algorithm | Type | Complexity | Limitation |
 |-----------|------|------------|------------|
@@ -715,7 +683,6 @@ function bellmanFord(edges, V, start):
 
 ### 7.7 Strongly Connected Components
 
-
 **Kosaraju's Algorithm:**
 1. Perform DFS on original graph, record finish times
 2. Compute transpose (reverse all edges)
@@ -729,7 +696,6 @@ function bellmanFord(edges, V, start):
 **Applications:** Condensation graphs, 2-SAT, dependency analysis.
 
 ### 7.8 Union-Find (Disjoint Set Union)
-
 
 ```
 class UnionFind:
@@ -758,7 +724,6 @@ class UnionFind:
 
 ### 8.1 Comparison Sorts → Complexity Summary
 
-
 | Algorithm | Best | Average | Worst | Space | Stable | In-place | Adaptive |
 |-----------|------|---------|-------|-------|--------|----------|----------|
 | Bubble | O(n) | O(n²) | O(n²) | O(1) | Yes | Yes | Yes |
@@ -773,7 +738,6 @@ class UnionFind:
 **Comparison-based sort lower bound:** Ω(n log n) → proven by decision tree with n! leaves.
 
 ### 8.2 Quick Sort Details
-
 
 ```
 function quickSort(arr, low, high):
@@ -808,7 +772,6 @@ function partition(arr, low, high):
 
 ### 8.3 Merge Sort Details
 
-
 ```
 function mergeSort(arr, left, right):
     if left < right:
@@ -821,7 +784,6 @@ function mergeSort(arr, left, right):
 **In-place merge:** O(n log n) with O(1) space possible but more complex.
 
 ### 8.4 Non-Comparison Sorts
-
 
 | Algorithm | Type | Complexity | Space | Stable | Constraint |
 |-----------|------|------------|-------|--------|------------|
@@ -841,7 +803,6 @@ function mergeSort(arr, left, right):
 
 ### 8.5 Stability and In-Place Properties
 
-
 | Sorting | Stable? | In-Place? | GATE Trap |
 |---------|---------|-----------|-----------|
 | Bubble | Yes | Yes | → |
@@ -859,13 +820,11 @@ function mergeSort(arr, left, right):
 
 ### 9.1 Linear Search
 
-
 - Complexity: O(n)
 - Space: O(1)
 - Works on unsorted data
 
 ### 9.2 Binary Search
-
 
 ```
 function binarySearch(arr, target):
@@ -884,7 +843,6 @@ function binarySearch(arr, target):
 
 ### 9.3 Interpolation Search
 
-
 ```
 function interpolationSearch(arr, target):
     left = 0; right = len(arr)-1
@@ -902,7 +860,6 @@ function interpolationSearch(arr, target):
 
 ### 9.4 Ternary Search
 
-
 - Divide array into 3 parts, compare target with two midpoints
 - Complexity: O(log₃ n) → same as binary search asymptotically (worse constant)
 - Used for unimodal functions (finding maximum/minimum of a bitonic sequence)
@@ -913,7 +870,6 @@ function interpolationSearch(arr, target):
 
 ### 10.1 Hash Functions
 
-
 Good hash function properties: deterministic, uniform distribution, fast computation.
 
 **Common hash functions:**
@@ -922,7 +878,6 @@ Good hash function properties: deterministic, uniform distribution, fast computa
 - Universal hashing: h(k) = ((a·k + b) mod p) mod m
 
 ### 10.2 Collision Resolution
-
 
 **Chaining:**
 - Each slot holds linked list of keys
@@ -938,13 +893,12 @@ Good hash function properties: deterministic, uniform distribution, fast computa
 | Probing | Sequence | Primary Clustering | Secondary Clustering |
 |---------|----------|-------------------|---------------------|
 | Linear | h(k,i) = (h′(k) + i) mod m | Yes | N/A |
-| Quadratic | h(k,i) = (h′(k) + câ‚ÂÂ�i + c₂i²) mod m | No | Yes |
-| Double | h(k,i) = (hâ‚ÂÂ�(k) + i·h₂(k)) mod m | No | No |
+| Quadratic | h(k,i) = (h′(k) + c₁i + c₂i²) mod m | No | Yes |
+| Double | h(k,i) = (hÃ¢â€šÂ(k) + i·h₂(k)) mod m | No | No |
 
 **Linear probing average search time:** ½(1 + 1/(1−α)) for successful, ½(1 + 1/(1−α)²) for unsuccessful.
 
 ### 10.3 Rehashing
-
 
 When load factor exceeds threshold (typically 0.75):
 1. Allocate new table (usually 2× size)
@@ -953,7 +907,6 @@ When load factor exceeds threshold (typically 0.75):
 - Complexity: O(n) per rehash, amortized O(1) per insertion
 
 ### 10.4 Perfect Hashing
-
 
 - No collisions (static key set)
 - Two-level scheme: first hash maps to slot, second-level per-slot hash is perfect
@@ -964,7 +917,6 @@ When load factor exceeds threshold (typically 0.75):
 ## 11. GATE Previous Year Questions (PYQs)
 
 ### Arrays
-
 
 **A1** [GATE 2015, 1 mark, Arrays] An array A[10][20] is stored in row-major order. Base address = 100, element size = 2 bytes. Address of A[5][10] is:
 
@@ -979,7 +931,6 @@ When load factor exceeds threshold (typically 0.75):
 **Answer:** C. For 1-indexed: i(i−1)/2 + j. For 0-indexed: i(i+1)/2 + j.
 
 ### Linked Lists
-
 
 **A3** [GATE 2016, 2 marks, Linked Lists] What is the worst-case time for inserting an element at the tail of a singly linked list with a head pointer?
 
@@ -1000,7 +951,6 @@ When load factor exceeds threshold (typically 0.75):
 **Answer:** A. Copy next node's data to Q, then delete next node.
 
 ### Stacks & Queues
-
 
 **A6** [GATE 2016, 2 marks, Stacks] A stack is implemented with an array of size N. What is the worst-case time for N push operations?
 
@@ -1027,7 +977,6 @@ When load factor exceeds threshold (typically 0.75):
 **Answer:** B. Stack: push 2, push 3, push 4 → pop 4, pop 3 → 3×4=12 push → pop 12, pop 2 → 2+12=14 push → push 5 → pop 5, pop 14 → 14−5=9.
 
 ### Trees
-
 
 **A10** [GATE 2015, 1 mark, Trees] Number of structurally different binary trees with 3 nodes:
 
@@ -1080,7 +1029,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Heaps
 
-
 **A18** [GATE 2015, 2 marks, Heaps] In a min-heap with n elements, the 7th smallest element can be found in:
 
 - (A) O(1) (B) O(log n) (C) O(n) (D) O(n log n)
@@ -1100,7 +1048,6 @@ When load factor exceeds threshold (typically 0.75):
 **Answer:** B. Heap sort is in-place but not stable.
 
 ### Graphs
-
 
 **A21** [GATE 2015, 2 marks, BFS/DFS] BFS of an undirected graph with V vertices and E edges has complexity:
 
@@ -1154,7 +1101,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Sorting
 
-
 **A29** [GATE 2015, 1 mark, Sorting] Which sorting algorithm has best-case O(n)?
 
 - (A) Merge sort (B) Heap sort (C) Quick sort (D) Insertion sort
@@ -1200,7 +1146,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Searching & Hashing
 
-
 **A36** [GATE 2015, 2 marks, Binary Search] Binary search on a sorted array of n elements. Worst case comparisons:
 
 - (A) n (B) log n (C) n/2 (D) n²
@@ -1227,16 +1172,15 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Complexity Analysis
 
-
 **A40** [GATE 2015, 2 marks, Recurrence] T(n) = 2T(n/2) + n. T(1) = 1. T(n) = ?
 
 - (A) Θ(n) (B) Θ(n log n) (C) Θ(n²) (D) Θ(log n)
 
-**Answer:** B. Master theorem case 2: a=2, b=2, log_b a = 1, f(n)=n = n¹·logâÂÂ�° n → T(n) = Θ(n log n).
+**Answer:** B. Master theorem case 2: a=2, b=2, log_b a = 1, f(n)=n = nÃ‚Â¹Ã‚Â·logÃ¢Â° n → T(n) = Θ(n log n).
 
 **A41** [GATE 2016, 1 mark, Recurrence] T(n) = T(n−1) + n. T(1) = 1. T(n) = ?
 
-- (A) Θ(n) (B) Θ(n²) (C) Θ(n log n) (D) Θ(2âÂÂ�¿)
+- (A) ÃŽËœ(n) (B) ÃŽËœ(nÃ‚Â²) (C) ÃŽËœ(n log n) (D) ÃŽËœ(2Ã¢Â¿)
 
 **Answer:** B. Summation: 1 + 2 + 3 + ... + n = n(n+1)/2 = Θ(n²).
 
@@ -1267,7 +1211,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Mixed
 
-
 **A46** [GATE 2022, 2 marks, Trees] A strictly binary tree (every node has 0 or 2 children) with n leaves has how many internal nodes?
 
 - (A) n−1 (B) n (C) n+1 (D) 2n
@@ -1286,7 +1229,7 @@ When load factor exceeds threshold (typically 0.75):
 
 **Answer:** C. Merge sort requires O(n) auxiliary space. All others are in-place.
 
-**A49** [GATE 2024, 2 marks, Hashing] A hash table of size 10 uses double hashing: hâ‚ÂÂ�(k) = k mod 10, h₂(k) = 7 − (k mod 7). Insert keys 89, 18, 49, 58, 79. After all insertions, what is the load factor?
+**A49** [GATE 2024, 2 marks, Hashing] A hash table of size 10 uses double hashing: h₁(k) = k mod 10, h₂(k) = 7 − (k mod 7). Insert keys 89, 18, 49, 58, 79. After all insertions, what is the load factor?
 
 - (A) 0.3 (B) 0.5 (C) 0.7 (D) 0.9
 
@@ -1296,7 +1239,7 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) Θ(log n) (B) Θ(log² n) (C) Θ(√n) (D) Θ(log n·log log n)
 
-**Answer:** B. Let n = 2áµÂÂ�. T(2áµÂÂ�) = 2T(2^{m/2}) + m. S(m) = T(2áµÂÂ�). S(m) = 2S(m/2) + m → Θ(m log m) = Θ(log n·log log n). Wait: Master theorem: a=2, b=2, S(m) = 2S(m/2) + m → Case 2: Θ(m log m) = Θ(log n·log log n).
+**Answer:** B. Let n = 2ᵐ. T(2ᵐ) = 2T(2^{m/2}) + m. S(m) = T(2ᵐ). S(m) = 2S(m/2) + m → Θ(m log m) = Θ(log n·log log n). Wait: Master theorem: a=2, b=2, S(m) = 2S(m/2) + m → Case 2: Θ(m log m) = Θ(log n·log log n).
 
 **A51** [GATE 2025, 2 marks, Graph] Which graph algorithm uses a stack as its primary data structure?
 
@@ -1328,7 +1271,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Trap 1: Complexity of Recursive Functions
 
-
 **Common errors:**
 - Applying Master theorem incorrectly (wrong a, b values)
 - Forgetting that T(n) = T(n−1) + ... is NOT Master theorem solvable
@@ -1339,12 +1281,11 @@ When load factor exceeds threshold (typically 0.75):
 |------------|------|---------|
 | T(n) = 2T(n/2) + n | Think O(n) | O(n log n) → Master case 2 |
 | T(n) = T(n/2) + n | Think O(log n) | O(n) → Master case 3 |
-| T(n) = 2T(√n) + log n | Try n directly | Let n=2áµÂÂ�, get Θ(log n·log log n) |
+| T(n) = 2T(√n) + log n | Try n directly | Let n=2ᵐ, get Θ(log n·log log n) |
 | T(n) = 3T(n/3) + n/2 | Think O(n) | O(n log n) → Master case 2 |
 | T(n) = T(n−1) + 1/n | Think O(n) | O(log n) → Harmonic series |
 
 ### Trap 2: BST Deletion
-
 
 - **Two-child deletion:** Replace with inorder successor (or predecessor). Do NOT replace with just any child.
 - **Inorder successor:** Minimum of right subtree (leftmost node).
@@ -1352,7 +1293,6 @@ When load factor exceeds threshold (typically 0.75):
 - **Complexity:** O(h) where h = height.
 
 ### Trap 3: Graph Algorithm Correctness
-
 
 | Algorithm | Fails When | Why |
 |-----------|-----------|-----|
@@ -1364,7 +1304,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Trap 4: Hash Table Probing Sequences
 
-
 - **Linear probing:** Primary clustering → long runs of occupied slots
 - **Quadratic probing:** Secondary clustering → keys with same initial hash follow same probe sequence
 - **Double hashing:** Best → two independent hash functions
@@ -1373,7 +1312,6 @@ When load factor exceeds threshold (typically 0.75):
 **Common question pattern:** "Key x cannot be inserted due to infinite loop" → check if probe sequence covers all slots (depends on m being prime for quadratic probing).
 
 ### Trap 5: Sorting Stability and In-Place
-
 
 | Statement | Truth | Reason |
 |-----------|-------|--------|
@@ -1386,7 +1324,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Trap 6: MST Edge Weights
 
-
 - **Unique MST:** If all edge weights are distinct → MST is unique
 - **Non-unique MST:** If edges have equal weights → multiple MSTs possible
 - **Lightest edge:** Not necessarily in every MST (if it creates a cycle with lighter alternatives)
@@ -1394,9 +1331,8 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Trap 7: Asymptotic Growth Subtleties
 
-
 - n^{log n} vs 2^{√n}: Take log of both: (log n)² vs √n·log 2. Since (log n)² = o(√n), we get n^{log n} = o(2^{√n})
-- (log n)^{log n} vs n/log n: Take log: log log n · log n vs log n − log log n. First = Θ(log n·log log n), second = Θ(log n). So (log n)^{log n} = ÃÂ�‰(n/log n)
+- (log n)^{log n} vs n/log n: Take log: log log n Ã‚Â· log n vs log n Ã¢Ë†â€™ log log n. First = ÃŽËœ(log nÃ‚Â·log log n), second = ÃŽËœ(log n). So (log n)^{log n} = Ã‰(n/log n)
 - log(n!) = Θ(n log n) via Stirling's approximation
 - n^{1/n} → 1 as n → ∞
 
@@ -1406,14 +1342,13 @@ When load factor exceeds threshold (typically 0.75):
 
 ### 13.1 Common Algorithm Complexities
 
-
 | Algorithm | Time | Space |
 |-----------|------|-------|
 | Binary Search | O(log n) | O(1) |
 | Quick Select (avg) | O(n) | O(1) |
 | Median of Medians | O(n) | O(log n) |
-| Tower of Hanoi | O(2âÂÂ�¿) | O(n) |
-| Fibonacci (naive) | O(ÃÂ�†âÂÂ�¿) | O(n) |
+| Tower of Hanoi | O(2Ã¢Â¿) | O(n) |
+| Fibonacci (naive) | O(Ãâ€ Ã¢Â¿) | O(n) |
 | Fibonacci (DP) | O(n) | O(1) |
 | Matrix Multiplication (naive) | O(n³) | O(n²) |
 | Strassen's MM | O(n^{2.81}) | O(n²) |
@@ -1430,7 +1365,6 @@ When load factor exceeds threshold (typically 0.75):
 | BFS/DFS | O(V+E) | O(V) |
 
 ### 13.2 Data Structure Complexities
-
 
 | Data Structure | Access | Search | Insert | Delete | Space |
 |----------------|--------|--------|--------|--------|-------|
@@ -1457,7 +1391,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### 14.1 Master Theorem → Detailed Cases
 
-
 Given T(n) = a·T(n/b) + f(n), compare f(n) with n^{log_b a}:
 
 **Case 1 (Leaf-heavy):** f(n) = O(n^{log_b a − ε})
@@ -1475,20 +1408,17 @@ Given T(n) = a·T(n/b) + f(n), compare f(n) with n^{log_b a}:
 
 ### 14.2 Extended Master Theorem
 
-
 For T(n) = Σ_{i=1}^{k} a_i·T(n/b_i) + f(n):
 - Find p such that Σ a_i / b_i^p = 1
-- T(n) = Θ(n^p·(1 + ∫â‚ÂÂ�âÂÂ�¿ f(u)/u^{p+1} du))
+- T(n) = ÃŽËœ(n^pÃ‚Â·(1 + Ã¢Ë†Â«Ã¢â€šÂÃ¢Â¿ f(u)/u^{p+1} du))
 
 ### 14.3 Akra-Bazzi Method
 
-
 For T(n) = Σ a_i·T(b_i·n + h_i(n)) + g(n):
 1. Find p: Σ a_i·b_i^p = 1
-2. T(n) = Θ(n^p·(1 + ∫â‚ÂÂ�âÂÂ�¿ g(u)/u^{p+1} du))
+2. T(n) = ÃŽËœ(n^pÃ‚Â·(1 + Ã¢Ë†Â«Ã¢â€šÂÃ¢Â¿ g(u)/u^{p+1} du))
 
 ### 14.4 Special Recurrences
-
 
 | Recurrence | Method | Result |
 |------------|--------|--------|
@@ -1496,7 +1426,7 @@ For T(n) = Σ a_i·T(b_i·n + h_i(n)) + g(n):
 | T(n) = T(n−1) + 1 | Unrolling | Θ(n) |
 | T(n) = T(n−1) + log n | Unrolling | Θ(n log n) |
 | T(n) = T(n−2) + 1 | Unrolling | Θ(n) |
-| T(n) = 2T(n−1) + 1 | Unrolling | Θ(2âÂÂ�¿) |
+| T(n) = 2T(nÃ¢Ë†â€™1) + 1 | Unrolling | ÃŽËœ(2Ã¢Â¿) |
 | T(n) = T(√n) + 1 | Change var | Θ(log log n) |
 | T(n) = 2T(√n) + log n | Change var | Θ(log n·log log n) |
 | T(n) = T(n/2) + T(n/2) + 1 | Master | Θ(n) |
@@ -1505,11 +1435,10 @@ For T(n) = Σ a_i·T(b_i·n + h_i(n)) + g(n):
 
 ### 14.5 Generating Functions for Recurrences
 
-
 Fibonacci: F(n) = F(n−1) + F(n−2)
 - Characteristic: x² − x − 1 = 0
-- Roots: ÃÂ�† = (1 + √5)/2, ÃÂ�ˆ = (1 − √5)/2
-- Closed form: F(n) = (ÃÂ�†âÂÂ�¿ − ÃÂ�ˆâÂÂ�¿)/√5 → exponential growth O(ÃÂ�†âÂÂ�¿)
+- Roots: Ãâ€  = (1 + Ã¢Ë†Å¡5)/2, Ãˆ = (1 âˆ’ âˆš5)/2
+- Closed form: F(n) = (Ãâ€ Ã¢ÂÂ¿ Ã¢Ë†â€™ ÃË†Ã¢ÂÂ¿)/Ã¢Ë†Å¡5 â†’ exponential growth O(Ãâ€ Ã¢Â¿)
 
 ---
 

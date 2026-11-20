@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming/06-modules-and-packages
 title: "Modules & Packages — Import System, Namespaces, and Packaging"
 sidebar_label: "Modules & Packages — Import System, Namespaces, and Packaging"
 sidebar_position: 15
+description: "Modules & Packages — Import System, Namespaces, and Packaging: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and"
 ---
 
 <!-- improved -->

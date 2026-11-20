@@ -1,3 +1,7 @@
+---
+description: "Your ability to focus is not constant throughout the day. Trying to do deep work in a low-energy window is like trying to run a marathon after a 20-hour"
+---
+
 # Chapter 3: Daily Workflow & Energy Management
 
 > ⏱ **2 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**

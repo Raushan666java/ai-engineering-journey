@@ -1,3 +1,7 @@
+---
+description: "Spring Security provides a set of testing annotations that simulate authenticated requests without starting a full OAuth2 provider or setting up a real"
+---
+
 # Security Testing & Performance Testing
 > **Previous:** [Testcontainers](32-testcontainers.md) | **Next:** [Async and Events](34-async-events.md)
 

@@ -1,3 +1,7 @@
+---
+description: "Imagine a set of Russian nesting dolls. You open the largest doll, and inside is a smaller doll. You open that one, and inside is an even smaller doll"
+---
+
 # Chapter 14: Recursion
 
 > **Previous:** [The Preprocessor](./13-preprocessor.md) | **Next:** [Linked Lists](./15-linked-lists.md)

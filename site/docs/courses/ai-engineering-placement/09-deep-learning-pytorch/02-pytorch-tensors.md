@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/09-deep-learning-pytorch/02-pytorch-tensors
 title: "PyTorch Tensors — Tensors, Autograd, Device Management, Broadcasting"
 sidebar_label: "PyTorch Tensors — Tensors, Autograd, Device Management, Broadcasting"
 sidebar_position: 127
+description: "PyTorch Tensors — Tensors, Autograd, Device Management, Broadcasting: Deep learning powers modern AI breakthroughs. PyTorch is the framework of choice for"
 ---
 
 <!-- improved -->

@@ -1,3 +1,7 @@
+---
+description: "Python Basics — Variables, Data Types, Operators: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and libraries is"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Python Basics — Variables, Data Types, Operators

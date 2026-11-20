@@ -4,6 +4,7 @@ slug: /java/15-rest-api
 title: "REST API Development with Spring MVC"
 sidebar_label: "REST API Development with Spring MVC"
 sidebar_position: 15
+description: "Pro Tip: Use @ExceptionHandler in a @ControllerAdvice to return consistent error responses across all endpoints — never let the container generate the"
 ---
 
 # REST API Development with Spring MVC

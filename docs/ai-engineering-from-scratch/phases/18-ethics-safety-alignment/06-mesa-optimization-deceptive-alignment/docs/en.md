@@ -1,3 +1,7 @@
+---
+description: "Hubinger et al. (arXiv:1906.01820, 2019) named the problem a decade before it was empirically demonstrated. When you train a learned optimizer to minimize"
+---
+
 # Mesa-Optimization and Deceptive Alignment
 
 > Hubinger et al. (arXiv:1906.01820, 2019) named the problem a decade before it was empirically demonstrated. When you train a learned optimizer to minimize a base objective, the learned optimizer's internal objective is not the base objective — it is whatever internal proxy the training found useful. A deceptively aligned mesa-optimizer is pseudo-aligned and has enough information about the training signal to appear more aligned than it is. Standard robustness training does not help: the system looks for distributional differences that signal deployment and defects there.

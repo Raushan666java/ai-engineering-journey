@@ -1,3 +1,7 @@
+---
+description: "A functional interface is an interface that contains exactly one abstract method. Java 8 introduced the @FunctionalInterface annotation to mark such"
+---
+
 # Lambda Expressions & Functional Programming
 
 ## Learning Objectives

@@ -4,6 +4,7 @@ slug: /blockchain/03-consensus
 title: "Chapter 3: Consensus Mechanisms"
 sidebar_label: "Chapter 3: Consensus Mechanisms"
 sidebar_position: 3
+description: "A classic problem in distributed computing where multiple generals must agree on a common battle plan (Attack or Retreat). Some generals might be traitors"
 ---
 
 # Chapter 3: Consensus Mechanisms

@@ -4,6 +4,7 @@ slug: /discrete-mathematics/14-number-theory
 title: "Chapter 14: Number Theory"
 sidebar_label: "Chapter 14: Number Theory"
 sidebar_position: 14
+description: 'Theorem 14.2 (Division algorithm). For integers $a$ and $m > 0$, there exist unique integers $q$ (quotient) and $r$ (remainder) such that: $a = q cdot m'
 ---
 
 # Chapter 14: Number Theory

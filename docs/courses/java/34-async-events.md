@@ -1,3 +1,7 @@
+---
+description: "Most Spring beans execute synchronously by default. When a method does I/O, calls a remote API, or performs a CPU-intensive computation, the caller's"
+---
+
 # Async Processing & Spring Events
 > **Previous:** [Security and Performance Testing](33-security-perf-test.md) | **Next:** [RabbitMQ](35-rabbitmq.md)
 

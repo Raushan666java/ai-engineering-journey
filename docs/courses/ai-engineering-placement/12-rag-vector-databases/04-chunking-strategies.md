@@ -1,3 +1,7 @@
+---
+description: "Understanding chunking strategies is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Chunking Strategies

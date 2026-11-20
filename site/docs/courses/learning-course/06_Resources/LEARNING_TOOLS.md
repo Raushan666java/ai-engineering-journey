@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/06_06_Resources/LEARNING_TOOLS title: '🛠️ Complete Learning Tools Arsenal' sidebar_label: '🛠️ Complete Learning Tools Arsenal'"
+---
+
 ﻿---
 slug: /learning-course/06_06_Resources/LEARNING_TOOLS
 title: "🛠️ Complete Learning Tools Arsenal"

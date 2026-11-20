@@ -1,3 +1,7 @@
+---
+description: "Wireless communications, Internet of Things (IoT) devices, and embedded systems form the backbone of modern connected infrastructure. From smart homes and"
+---
+
 # Chapter 14: Wireless, IoT & Embedded Security
 
 ---

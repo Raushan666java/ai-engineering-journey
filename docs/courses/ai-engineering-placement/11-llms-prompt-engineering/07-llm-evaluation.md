@@ -1,3 +1,7 @@
+---
+description: "LLM Evaluation: Large language models are transforming every industry. Understanding how to prompt, evaluate, and optimize LLMs is a critical skill for AI"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # LLM Evaluation

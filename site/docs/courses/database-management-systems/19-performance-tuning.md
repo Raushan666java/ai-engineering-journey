@@ -4,6 +4,7 @@ slug: /database-management-systems/19-performance-tuning
 title: "Chapter 19: Performance Tuning"
 sidebar_label: "Chapter 19: Performance Tuning"
 sidebar_position: 19
+description: "EXPLAIN is like a car's OBD-II diagnostic scanner. The mechanic connects the scanner, runs the engine, and reads the diagnostic trouble codes: 'Cylinder 3"
 ---
 
 # Chapter 19: Performance Tuning

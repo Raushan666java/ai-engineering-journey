@@ -1,3 +1,7 @@
+---
+description: "Mock interviews, company-specific bars, salary negotiation and the behavioural answers that decide senior-level loops."
+---
+
 # 21 — Interview Preparation
 
 ## Overview

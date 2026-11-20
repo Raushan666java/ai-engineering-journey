@@ -4,6 +4,7 @@ slug: /professional-knowledge/08-cloud-computing
 title: "Chapter 8: Cloud Computing — Exam Quick Revision"
 sidebar_label: "Chapter 8: Cloud Computing — Exam Quick Revision"
 sidebar_position: 8
+description: "Answer: (c) Availability + Partition Tolerance. Since partitions are inevitable in distributed systems (P is mandatory), you choose between CP and AP"
 ---
 
 # Chapter 8: Cloud Computing — Exam Quick Revision

@@ -4,6 +4,7 @@ slug: /bhagavad-gita/12-bhakti-yoga
 title: "Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home"
 sidebar_label: "Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home"
 sidebar_position: 12
+description: "The battlefield has gone quiet. Krishna has spoken eleven chapters of fire: about duty, about the deathless Self, about the vision of cosmic form that"
 ---
 
 # Chapter 12: Bhakti Yoga — Love Is the Shortest Way Home

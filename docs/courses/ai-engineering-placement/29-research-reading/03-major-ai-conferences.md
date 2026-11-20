@@ -1,3 +1,7 @@
+---
+description: "AI conferences are where the field's most important research is published and debated. They define the state of the art, set research agendas, and connect"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Major AI Conferences

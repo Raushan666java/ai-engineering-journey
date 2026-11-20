@@ -1,3 +1,7 @@
+---
+description: "Imagine a bakery that makes three types of cookies: chocolate chip, gingerbread, and sugar. Without a cookie cutter, the baker hand-shapes each cookie"
+---
+
 # Chapter 7: Templates
 
 > **Previous:** [06-operator-overloading](./06-operator-overloading.md) | **Next:** [08-exceptions](./08-exceptions.md)

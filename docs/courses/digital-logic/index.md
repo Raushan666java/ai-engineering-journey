@@ -1,3 +1,7 @@
+---
+description: "This textbook presents a comprehensive treatment of digital logic design, progressing from fundamental number systems through advanced topics like HDL"
+---
+
 # Digital Logic — Course Overview
 
 ## Course Description

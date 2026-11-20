@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/28-mock-deloitte
 title: "Deloitte Mock Test — Full Pattern Simulation (44 Questions)"
 sidebar_label: "Deloitte Mock Test — Full Pattern Simulation (44 Questions)"
 sidebar_position: 389
+description: "Simulates Deloitte's reasoning-heavy aptitude section: 14 quant, 15 logical, 15 verbal. Deloitte weighs reasoning and verbal heavily — quant is moderate"
 ---
 
 <!-- improved -->

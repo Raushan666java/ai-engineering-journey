@@ -4,6 +4,7 @@ slug: /general-awareness/03-indian-history
 title: "Chapter 3: Indian History & Culture"
 sidebar_label: "Chapter 3: Indian History & Culture"
 sidebar_position: 3
+description: "Causes: Political (Doctrine of Lapse, annexation of Awadh), Economic (heavy taxation, drain of wealth), Social (interference in caste/religion), Military"
 ---
 
 # Chapter 3: Indian History & Culture

@@ -1,3 +1,7 @@
+---
+description: "Boolean algebra, introduced by George Boole in 1854 and adapted by Claude Shannon in 1938 for switching circuit analysis, is a mathematical system defined"
+---
+
 # Chapter 2: Boolean Algebra
 
 > **Prereq:** Chapter 1 (Number Systems) ? binary values 0/1 are the domain of Boolean algebra.

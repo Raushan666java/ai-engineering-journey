@@ -4,6 +4,7 @@ slug: /learning-how-to-learn-practical/ch-01-your-learning-os
 title: "Chapter 1: Your Learning OS"
 sidebar_label: "Chapter 1: Your Learning OS"
 sidebar_position: 2
+description: "The OODA loop (Observe, Orient, Decide, Act) was developed by military strategist John Boyd for fighter pilots who needed to make life-or-death decisions"
 ---
 
 # Chapter 1: Your Learning OS

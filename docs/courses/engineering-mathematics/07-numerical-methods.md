@@ -1,3 +1,7 @@
+---
+description: 'Machine Epsilon ($ epsilon$): The smallest number such that description: + epsilon > 1$ in machine arithmetic. For IEEE double precision, $ epsilon approx 2.22'
+---
+
 # Chapter 7: Numerical Methods
 
 > **Previous:** [Chapter 6: Probability & Statistics](06-probability-statistics.md) | **Next:** [Chapter 8: Integral Transforms](08-integral-transforms.md)

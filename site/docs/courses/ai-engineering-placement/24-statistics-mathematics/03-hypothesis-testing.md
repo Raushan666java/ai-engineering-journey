@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/24-statistics-mathematics/03-hypothesis-testing
 title: "Chapter 03: Hypothesis Testing"
 sidebar_label: "Chapter 03: Hypothesis Testing"
 sidebar_position: 301
+description: "Hypothesis testing is a statistical framework for making data-driven decisions under uncertainty, answering questions like 'Is this new ML model truly"
 ---
 
 <!-- improved -->

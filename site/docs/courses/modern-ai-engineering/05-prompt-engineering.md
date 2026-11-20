@@ -4,6 +4,7 @@ slug: /modern-ai-engineering/05-prompt-engineering
 title: "Chapter 5: Prompt Engineering"
 sidebar_label: "Chapter 5: Prompt Engineering"
 sidebar_position: 5
+description: "By the end of this chapter, you will be able to: - Design effective prompts using clarity, specificity, role assignment, and output formatting principles"
 ---
 
 # Chapter 5: Prompt Engineering

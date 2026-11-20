@@ -1,3 +1,7 @@
+---
+description: "RNNs process sequences one token at a time. By the time you reach token 50, the information from token 1 has been squeezed through 50 compression steps"
+---
+
 # Self-Attention from Scratch
 
 > Attention is a lookup table where every word asks "who matters to me?" - and learns the answer.

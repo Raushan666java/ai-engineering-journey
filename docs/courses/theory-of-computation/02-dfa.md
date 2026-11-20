@@ -1,3 +1,7 @@
+---
+description: "The minimized DFA has the fewest possible states. Two states are distinguishable if there exists a string that leads from one to accept and the other to"
+---
+
 # Chapter 2: Deterministic Finite Automata
 
 > **Previous:** [Introduction](./01-introduction.md) | **Next:** [Nondeterministic Finite Automata](./03-nfa.md)

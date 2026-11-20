@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/14-graphs-topologi
 title: "Graphs Topological Sort"
 sidebar_label: "Graphs Topological Sort"
 sidebar_position: 51
+description: "Greedy algorithms make locally optimal choices at each step, hoping to find a global optimum. They are simpler and faster than DP but only work when the"
 ---
 
 <!-- improved -->

@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Always start tuning with a clear goal — minimize pause time (G1/ZGC) or maximize throughput (Parallel). Guessing GC flags without metrics is"
+---
+
 # JVM Architecture & Memory Management
 
 > **Previous:** None (First Chapter) | **Next:** [Concurrency & Threading](./02-concurrency.md)

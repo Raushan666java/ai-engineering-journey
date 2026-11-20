@@ -1,3 +1,7 @@
+---
+description: "Spring Boot's spring-boot-maven-plugin can produce a 'layered' JAR that separates dependencies, framework classes, and application classes into distinct"
+---
+
 # Docker & Containerization
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)

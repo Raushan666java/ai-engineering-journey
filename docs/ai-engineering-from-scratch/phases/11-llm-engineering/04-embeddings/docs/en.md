@@ -1,3 +1,7 @@
+---
+description: "Text is discrete. Math is continuous. Every time you ask an LLM to find 'similar' documents, compare meanings, or search beyond keywords, you're relying"
+---
+
 # Embeddings & Vector Representations
 
 > Text is discrete. Math is continuous. Every time you ask an LLM to find "similar" documents, compare meanings, or search beyond keywords, you're relying on a bridge between these two worlds. That bridge is an embedding. If you don't understand embeddings, you don't understand modern AI. You just use it.

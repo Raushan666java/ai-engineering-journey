@@ -1,3 +1,7 @@
+---
+description: "Chapter 6: Greedy Algorithms — Understanding when local choices aren't enough | Next: Chapter 8: Dynamic Programming — Knapsack Problems — Classic DP"
+---
+
 # Chapter 7: Dynamic Programming — Foundations
 
 > **Prerequisites:** [Chapter 6: Greedy Algorithms](./06-greedy.md) — Understanding when local choices aren't enough | **Next:** [Chapter 8: Dynamic Programming — Knapsack Problems](./08-dp-knapsack.md) — Classic DP patterns for resource allocation

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/14-fine-tuning-peft/01-when-to-fine-tune
 title: "When to Fine-Tune"
 sidebar_label: "When to Fine-Tune"
 sidebar_position: 188
+description: "When to Fine-Tune: Fine-tuning adapts foundation models to your specific domain. LoRA, QLoRA, and DPO make this affordable. This module covers when to"
 ---
 
 <!-- improved -->

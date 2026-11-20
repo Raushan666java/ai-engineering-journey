@@ -1,3 +1,7 @@
+---
+description: "Ask an LLM for JSON. Get JSON most of the time. In production, 'most' is the problem. Constrained decoding turns 'most' into 'always' by editing the"
+---
+
 # Structured Outputs & Constrained Decoding
 
 > Ask an LLM for JSON. Get JSON most of the time. In production, "most" is the problem. Constrained decoding turns "most" into "always" by editing the logits before sampling.

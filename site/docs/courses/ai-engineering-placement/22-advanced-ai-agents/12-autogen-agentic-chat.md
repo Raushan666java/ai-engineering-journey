@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/12-autogen-agentic-chat
 title: "AutoGen: Multi-Agent Conversations"
 sidebar_label: "AutoGen: Multi-Agent Conversations"
 sidebar_position: 283
+description: "AutoGen is a multi-agent conversation framework from Microsoft Research. It enables LLM agents to communicate, collaborate, and solve complex tasks"
 ---
 
 <!-- improved -->

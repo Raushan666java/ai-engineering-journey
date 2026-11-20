@@ -1,3 +1,7 @@
+---
+description: "Significance: If BQP ? NP, then quantum computers can efficiently solve problems whose solutions cannot even be verified classically — a profound"
+---
+
 # Chapter 15: Advanced Complexity Topics
 
 > **Previous:** [Space Complexity](./14-space-complexity.md) | **Next:** [Applications of Automata Theory](./16-applications.md)

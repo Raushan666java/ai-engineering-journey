@@ -4,6 +4,7 @@ slug: /data-structures/05-stacks
 title: "Chapter 5: Stacks"
 sidebar_label: "Chapter 5: Stacks"
 sidebar_position: 5
+description: "Real-world analogy: Imagine a stack of plates in a cafeteria. You place clean plates on top (push), and when someone needs a plate, they take the topmost"
 ---
 
 # Chapter 5: Stacks

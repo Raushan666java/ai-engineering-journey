@@ -1,3 +1,7 @@
+---
+description: "A structured 12-week plan to build job-ready AI agent engineering skills. Each week targets a specific phase with daily topics, actions, and done"
+---
+
 # Day-by-Day Plan: 12 Weeks
 
 > **Purpose:** A structured 12-week plan to build job-ready AI agent engineering skills. Each week targets a specific phase with daily topics, actions, and done conditions.

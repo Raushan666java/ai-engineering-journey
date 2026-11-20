@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/06-phase5-portfolio-positioning
 title: "Phase 5 — Portfolio + Market Positioning"
 sidebar_label: "Phase 5 — Portfolio + Market Positioning"
 sidebar_position: 7
+description: "Weeks 11-12, ~15 hours + ongoing applications Package your projects into something a recruiter understands in 60 seconds. Rewrite profiles. Start applying."
 ---
 
 # Phase 5 — Portfolio + Market Positioning

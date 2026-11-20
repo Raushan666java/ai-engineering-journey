@@ -1,3 +1,7 @@
+---
+description: "Model pruning removes redundant parameters from neural networks. Modern LLMs have billions of parameters. Many contribute little to output quality"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Model Pruning

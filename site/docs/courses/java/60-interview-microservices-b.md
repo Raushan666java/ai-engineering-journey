@@ -4,6 +4,7 @@ slug: /java/60-interview-microservices-b
 title: "── Multi-stage Dockerfile for a Spring Boot microservice ──"
 sidebar_label: "── Multi-stage Dockerfile for a Spring Boot microservice ──"
 sidebar_position: 65
+description: "── Multi-stage Dockerfile for a Spring Boot microservice ──: Pro Tip: In interviews, always start with the 'why' before the 'how.' Explaining the"
 ---
 
 ![Kubernetes Microservices Deployment - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices-b.png)

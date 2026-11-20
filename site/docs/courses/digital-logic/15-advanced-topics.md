@@ -4,6 +4,7 @@ slug: /digital-logic/15-advanced-topics
 title: "Chapter 15: Advanced Topics in Digital Logic"
 sidebar_label: "Chapter 15: Advanced Topics in Digital Logic"
 sidebar_position: 15
+description: "Chapter 15: Advanced Topics in Digital Logic: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = []"
 ---
 
 # Chapter 15: Advanced Topics in Digital Logic

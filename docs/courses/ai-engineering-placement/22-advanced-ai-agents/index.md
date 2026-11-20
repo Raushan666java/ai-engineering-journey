@@ -1,3 +1,7 @@
+---
+description: "Multi-agent systems, memory architectures, context engineering and cost control for agents at production scale."
+---
+
 # 22 — Advanced AI Agents
 
 ## Overview

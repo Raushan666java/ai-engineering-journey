@@ -1,3 +1,7 @@
+---
+description: "The capstone project integrates every topic covered in this course into a single, coherent development exercise. Students will specify, design, implement"
+---
+
 # Capstone: Building a Complete Software System
 
 ## Learning Objectives

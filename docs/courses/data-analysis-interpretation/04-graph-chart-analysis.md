@@ -1,3 +1,7 @@
+---
+description: "A radar chart displays multivariate data on axes starting from the same point. Each axis represents a variable, and values are plotted along each axis"
+---
+
 # Chapter 4: Graph and Chart Analysis
 
 ## Learning Objectives

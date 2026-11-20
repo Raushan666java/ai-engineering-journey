@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/06-docker-kubernetes-cloud/05-kubernetes-config
 title: "Kubernetes Configuration — ConfigMaps, Secrets, and Helm"
 sidebar_label: "Kubernetes Configuration — ConfigMaps, Secrets, and Helm"
 sidebar_position: 85
+description: "Kubernetes Configuration — ConfigMaps, Secrets, and Helm: Containers and cloud platforms are where AI models live in production. Docker packages your"
 ---
 
 <!-- improved -->

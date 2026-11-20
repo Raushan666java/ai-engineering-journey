@@ -1,3 +1,7 @@
+---
+description: "The transformer architecture, introduced in the 2017 paper 'Attention Is All You Need,' is the foundation upon which all modern foundation models are"
+---
+
 # Chapter 3: Understanding Foundation Models
 
 ## Learning Objectives

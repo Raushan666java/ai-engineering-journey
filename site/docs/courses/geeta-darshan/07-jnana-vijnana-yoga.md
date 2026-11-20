@@ -4,6 +4,7 @@ slug: /geeta-darshan/07-jnana-vijnana-yoga
 title: "अध्याय ७: ज्ञान विज्ञान योग — Maya koi illusion nahin, bhool hai"
 sidebar_label: "अध्याय ७: ज्ञान विज्ञान योग — Maya koi illusion nahin, bhool hai"
 sidebar_position: 8
+description: "'Maya koi jadoo nahin hai, maya ek bhool hai — apne hi hone ki bhool. Tum us aadmi ki tarah ho jo suraj ko dekhte hue keh raha hai ki andhera hai. Duniya"
 ---
 
 # अध्याय ७: ज्ञान विज्ञान योग — Maya koi illusion nahin, bhool hai

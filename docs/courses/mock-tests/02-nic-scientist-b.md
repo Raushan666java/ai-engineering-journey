@@ -1,3 +1,7 @@
+---
+description: "Topic Weightage: Data Structures (10), Algorithms (8), Operating Systems (8), DBMS (8), Computer Networks (7), Software Engineering (5), Computer"
+---
+
 # NIC Scientist B — Full-Length Mock Test
 
 > **Exam:** National Informatics Centre (NIC) Scientist B  

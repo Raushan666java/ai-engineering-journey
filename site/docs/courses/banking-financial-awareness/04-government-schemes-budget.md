@@ -4,6 +4,7 @@ slug: /banking-financial-awareness/04-government-schemes-budget
 title: "Chapter 4: Government Schemes & Union Budget"
 sidebar_label: "Chapter 4: Government Schemes & Union Budget"
 sidebar_position: 4
+description: "Achievements: Over 50 crore accounts opened (as of 2025). Phase I (2014-15): Household coverage. Phase II (2015-onwards): Overdraft facility, insurance"
 ---
 
 # Chapter 4: Government Schemes & Union Budget

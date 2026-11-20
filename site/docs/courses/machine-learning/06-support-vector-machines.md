@@ -4,6 +4,7 @@ slug: /machine-learning/06-support-vector-machines
 title: "Chapter 6: Support Vector Machines"
 sidebar_label: "Chapter 6: Support Vector Machines"
 sidebar_position: 6
+description: "A Support Vector Machine (SVM) is a discriminative classifier that finds an optimal hyperplane to separate classes. While many hyperplanes can separate"
 ---
 
 # Chapter 6: Support Vector Machines

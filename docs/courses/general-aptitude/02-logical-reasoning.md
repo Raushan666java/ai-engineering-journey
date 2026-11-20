@@ -1,3 +1,7 @@
+---
+description: "Conclusion I: The overlap between Rich and Doctor may or may not exist. Not necessarily true. Conclusion II: If Some educated are rich, it doesn't mean"
+---
+
 # Chapter 2: Logical Reasoning
 
 > **Previous:** [Chapter 1: Quantitative Aptitude](01-quantitative-aptitude.md) | **Next:** [Chapter 3: Verbal Ability](03-verbal-ability.md)

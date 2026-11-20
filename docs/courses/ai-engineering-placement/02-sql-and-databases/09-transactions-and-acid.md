@@ -1,3 +1,7 @@
+---
+description: "Transactions & ACID — BEGIN, COMMIT, ROLLBACK, Isolation Levels, Locks: Data is the fuel of AI. SQL and database design skills let you query, transform"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Transactions & ACID — BEGIN, COMMIT, ROLLBACK, Isolation Levels, Locks

@@ -4,6 +4,7 @@ slug: /data-structures/10-heaps
 title: "Chapter 10: Heaps"
 sidebar_label: "Chapter 10: Heaps"
 sidebar_position: 10
+description: "Real-World Analogy (Hospital ER Triage): In a hospital emergency room, patients arrive with different severity levels. A heart attack patient needs"
 ---
 
 # Chapter 10: Heaps

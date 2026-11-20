@@ -4,6 +4,7 @@ slug: /database-management-systems/04-sql-basics
 title: "Chapter 4: SQL Basics"
 sidebar_label: "Chapter 4: SQL Basics"
 sidebar_position: 4
+description: "One-Sentence Takeaway: SQL is the universal declarative language for relational databases -- master DDL for structure, DML for data, and constraints for"
 ---
 
 # Chapter 4: SQL Basics

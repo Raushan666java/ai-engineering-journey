@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/24-statistics-mathematics/08-statistics-for-ml-p
 title: "Chapter 08: Statistics for ML — Practical"
 sidebar_label: "Chapter 08: Statistics for ML — Practical"
 sidebar_position: 306
+description: "This capstone chapter brings together all statistical concepts from previous chapters into a practical ML pipeline. You will learn how to profile"
 ---
 
 <!-- improved -->

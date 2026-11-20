@@ -1,3 +1,7 @@
+---
+description: "Query Rewriting & Decomposition for RAG: Retrieval-Augmented Generation lets LLMs answer questions about your private data. Vector databases store"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Query Rewriting & Decomposition for RAG

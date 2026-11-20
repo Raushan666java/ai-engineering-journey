@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Always use PreparedStatement over Statement to prevent SQL injection. The parameterized query approach ensures user input is never interpreted as"
+---
+
 > **Previous:** [File Handling](./18-file-handling.md) | **Next:** [JPA/Hibernate](./20-jpa-hibernate.md)
 
 # JDBC, Connection Pooling & JOOQ

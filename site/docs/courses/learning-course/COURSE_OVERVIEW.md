@@ -1,3 +1,7 @@
+---
+description: 'slug: /learning-course/COURSE_OVERVIEW title: ''🎓 Complete ''Learning How to Learn '' Course - Enhanced Edition'' sidebar_label: ''🎓 Complete ''Learning How'
+---
+
 ﻿---
 slug: /learning-course/COURSE_OVERVIEW
 title: "🎓 Complete \"Learning How to Learn\" Course - Enhanced Edition"

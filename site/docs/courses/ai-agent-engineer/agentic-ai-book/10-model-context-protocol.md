@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/10-model-context-protocol
 title: "10-model-context-protocol"
 sidebar_label: "10-model-context-protocol"
 sidebar_position: 11
+description: "Before MCP: every agent framework had its own bespoke way of defining and wiring up tools. If you built a tool for LangChain, it didn't work with AutoGen"
 ---
 
 ## Chapter 10: Model Context Protocol (MCP)

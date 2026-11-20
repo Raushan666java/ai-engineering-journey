@@ -1,3 +1,7 @@
+---
+description: "Statement: 'The government should invest more in renewable energy.' Assumption: 'Renewable energy currently receives insufficient investment.' (If current"
+---
+
 # Chapter 6: Advanced Reasoning
 
 > **Previous:** [Chapter 5: Non-Verbal Reasoning](05-non-verbal-reasoning.md) | **Next:** [Course Index](index.md)

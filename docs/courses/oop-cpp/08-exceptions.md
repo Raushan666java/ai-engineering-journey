@@ -1,3 +1,7 @@
+---
+description: "Before C++ exceptions, error handling relied on return codes, sentinel values, and the global errno variable. This approach is still common in C code and"
+---
+
 # Chapter 8: Exception Handling
 
 > **Previous:** [07-templates](./07-templates.md) | **Next:** [09-stl-containers](./09-stl-containers.md)

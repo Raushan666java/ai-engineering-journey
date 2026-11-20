@@ -1,3 +1,7 @@
+---
+description: "Large Language Models are remarkably capable — and remarkably vulnerable. Attackers continuously develop jailbreak techniques that bypass safety"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Jailbreaks & Red Teaming

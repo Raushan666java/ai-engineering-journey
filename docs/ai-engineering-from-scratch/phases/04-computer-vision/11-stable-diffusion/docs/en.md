@@ -1,3 +1,7 @@
+---
+description: "Stable Diffusion is a DDPM that runs in the latent space of a pretrained VAE, conditioned on text via cross-attention, sampled with a fast deterministic"
+---
+
 # Stable Diffusion — Architecture & Fine-Tuning
 
 > Stable Diffusion is a DDPM that runs in the latent space of a pretrained VAE, conditioned on text via cross-attention, sampled with a fast deterministic ODE solver, and steered by classifier-free guidance.

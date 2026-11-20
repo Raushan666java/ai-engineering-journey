@@ -1,3 +1,7 @@
+---
+description: "Transformer Architecture — Encoder-Decoder, Positional Encoding, Layer Norm: Natural language processing is how machines understand human text"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Transformer Architecture — Encoder-Decoder, Positional Encoding, Layer Norm

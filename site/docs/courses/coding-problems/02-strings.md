@@ -4,6 +4,7 @@ slug: /coding-problems/02-strings
 title: "Chapter 02: Strings"
 sidebar_label: "Chapter 02: Strings"
 sidebar_position: 2
+description: "String problems test your ability to work with character arrays, pattern matching, and text manipulation. They are among the most common problems in"
 ---
 
 # Chapter 02: Strings

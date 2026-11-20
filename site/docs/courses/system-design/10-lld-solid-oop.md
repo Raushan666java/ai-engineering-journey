@@ -4,6 +4,7 @@ slug: /system-design/10-lld-solid-oop
 title: "Chapter 10: Low-Level Design: SOLID Principles and OOP"
 sidebar_label: "Chapter 10: Low-Level Design: SOLID Principles and OOP"
 sidebar_position: 10
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Object-Oriented Programming (OOP) rests on four pillars"
 ---
 
 # Chapter 10: Low-Level Design: SOLID Principles and OOP

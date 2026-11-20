@@ -1,3 +1,7 @@
+---
+description: "Observability (Micrometer, Prometheus, Grafana): C) The one with best operational characteristics. Production choices should prioritize observability"
+---
+
 # Observability (Micrometer, Prometheus, Grafana)
 
 > **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)

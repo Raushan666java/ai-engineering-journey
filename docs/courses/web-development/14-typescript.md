@@ -1,3 +1,7 @@
+---
+description: "Use satisfies operator (TS 4.9+) to check that a value matches a type without changing its inferred type: const palette = { red: [255,0,0] } satisfies"
+---
+
 # Chapter 14: TypeScript
 
 > **Previous:** [13-security](./13-security.md) | **Next:** [15-nextjs](./15-nextjs.md)

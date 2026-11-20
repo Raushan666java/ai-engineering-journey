@@ -4,6 +4,7 @@ slug: /geeta-darshan/09-rajavidya-rajaguhya-yoga
 title: "अध्याय ९: राजविद्या राजगुह्य योग — Prem hi sabse bada raaz hai"
 sidebar_label: "अध्याय ९: राजविद्या राजगुह्य योग — Prem hi sabse bada raaz hai"
 sidebar_position: 10
+description: "'Prem sabse chhota raasta hai, magar sabse gehra khaai us par hai. Jo prem ko chunta hai, woh risk chunta hai — apna poora ego, apni saari pehchaan, sab"
 ---
 
 # अध्याय ९: राजविद्या राजगुह्य योग — Prem hi sabse bada raaz hai

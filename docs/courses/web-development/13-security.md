@@ -1,3 +1,7 @@
+---
+description: "Helmet is a security headers collection, not a comprehensive security solution. It sets 15+ HTTP headers with sensible defaults but does not prevent SQL"
+---
+
 # Chapter 13: Web Security
 
 > **Previous:** [12-deployment](./12-deployment.md) | **Next:** [14-typescript](./14-typescript.md)

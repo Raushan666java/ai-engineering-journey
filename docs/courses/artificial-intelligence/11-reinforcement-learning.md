@@ -1,3 +1,7 @@
+---
+description: "Imagine training a puppy. When it sits on command, you give it a treat. When it chews your shoe, you scold it. The puppy doesn't know the 'right' thing to"
+---
+
 # Chapter 11: Reinforcement Learning
 
 **Previous:** [Chapter 10: Probabilistic Reasoning Over Time](10-probabilistic-reasoning.md) | **Next:** [Chapter 12: Natural Language Processing](12-nlp.md)

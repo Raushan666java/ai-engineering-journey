@@ -1,3 +1,7 @@
+---
+description: "Use prisma.$transaction([]) for operations that must all succeed or all fail — it wraps multiple queries in a database transaction with automatic rollback."
+---
+
 # Chapter 11: Databases in Web Applications
 
 > **Previous:** [10-auth](./10-auth.md) | **Next:** [12-deployment](./12-deployment.md)

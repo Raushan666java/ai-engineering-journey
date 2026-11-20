@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/20-portfolio-branding/06-portfolio-website
 title: "Portfolio Website"
 sidebar_label: "Portfolio Website"
 sidebar_position: 248
+description: "Portfolio Website: Your portfolio is your proof of skills. GitHub profiles, technical blogs, and LinkedIn optimization help you stand out. This module"
 ---
 
 <!-- improved -->

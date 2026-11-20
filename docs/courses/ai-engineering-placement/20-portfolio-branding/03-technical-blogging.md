@@ -1,3 +1,7 @@
+---
+description: "Technical blogging is one of the most effective ways to build your professional brand. Choose a platform that aligns with your goals — Dev.to for"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Technical Blogging

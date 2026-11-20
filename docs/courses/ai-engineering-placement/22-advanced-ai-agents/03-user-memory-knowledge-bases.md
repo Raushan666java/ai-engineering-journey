@@ -1,3 +1,7 @@
+---
+description: "User Memory & Knowledge Bases: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # User Memory & Knowledge Bases

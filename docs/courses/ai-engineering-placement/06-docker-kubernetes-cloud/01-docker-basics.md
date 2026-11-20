@@ -1,3 +1,7 @@
+---
+description: "Docker is the standard for packaging and deploying AI applications — from training environments with GPU passthrough to production inference services at"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Docker Basics — Containers, Images, and Docker Engine

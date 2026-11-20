@@ -4,6 +4,7 @@ slug: /geeta-darshan/16-daivasura-sampad-yoga
 title: "अध्याय १६: दैवासुर सम्पद्विभाग योग — \"Do prakar ke log nahin, do pravruttiyan hain\""
 sidebar_label: "अध्याय १६: दैवासुर सम्पद्विभाग योग — \"Do prakar ke log nahin, do pravruttiyan hain\""
 sidebar_position: 17
+description: "'Krishna tumhe koi nayi shiksha nahin de raha. Woh to tumhare saamne ek aaina rakh raha hai. Aaina kya batata hai? Yah ki devta aur danav — dono tumhare"
 ---
 
 # अध्याय १६: दैवासुर सम्पद्विभाग योग — "Do prakar ke log nahin, do pravruttiyan hain"

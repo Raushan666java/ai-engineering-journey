@@ -4,6 +4,7 @@ slug: /bhagavad-gita/09-rajavidya-rajaguhya-yoga
 title: "Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret"
 sidebar_label: "Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret"
 sidebar_position: 9
+description: "Krishna now speaks the most intimate chapter of the Gita. He calls it the kingly science and the kingly secret — the greatest of secrets — and he speaks"
 ---
 
 # Chapter 9: Raja Vidya Raja Guhya Yoga — The Royal Secret

@@ -4,6 +4,7 @@ slug: /software-engineering/10-configuration-management
 title: "Configuration Management"
 sidebar_label: "Configuration Management"
 sidebar_position: 10
+description: "Software Configuration Management (SCM) is the discipline of controlling the evolution of software systems throughout their lifecycle. It answers the"
 ---
 
 # Configuration Management

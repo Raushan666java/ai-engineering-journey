@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_09_Debugging_Like_A_Pro/03_Binary_Se
 title: "🔪 Binary Search The System"
 sidebar_label: "🔪 Binary Search The System"
 sidebar_position: 3
+description: "When you have successfully isolated and reproduced a bug, you are staring at a massive, interconnected system consisting of a database, a backend"
 ---
 # 🔪 Binary Search The System
 

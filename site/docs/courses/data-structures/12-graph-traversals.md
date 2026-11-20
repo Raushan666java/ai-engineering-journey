@@ -4,6 +4,7 @@ slug: /data-structures/12-graph-traversals
 title: "Chapter 12: Graph Traversals"
 sidebar_label: "Chapter 12: Graph Traversals"
 sidebar_position: 12
+description: "Graph traversals power: web crawling (Google discovers pages level by level), social recommendations (LinkedIn 'people you may know' uses BFS for"
 ---
 
 # Chapter 12: Graph Traversals

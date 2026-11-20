@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/14-graphrag
 title: "Microsoft GraphRAG"
 sidebar_label: "Microsoft GraphRAG"
 sidebar_position: 171
+description: "Microsoft GraphRAG is a graph-based retrieval-augmented generation system developed by Microsoft Research. It transforms unstructured text into a"
 ---
 
 <!-- improved -->

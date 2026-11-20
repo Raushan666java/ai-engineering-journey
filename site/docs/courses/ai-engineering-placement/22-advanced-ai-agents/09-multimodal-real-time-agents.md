@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/09-multimodal-real-time-ag
 title: "Multimodal & Real-Time Agents"
 sidebar_label: "Multimodal & Real-Time Agents"
 sidebar_position: 280
+description: "Multimodal & Real-Time Agents: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module"
 ---
 
 <!-- improved -->

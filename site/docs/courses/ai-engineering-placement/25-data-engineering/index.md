@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/25-data-engineering
 title: "25 — Data Engineering for AI Engineers"
 sidebar_label: "25 — Data Engineering for AI Engineers"
 sidebar_position: 314
+description: "Pipelines that hold up: ETL versus ELT, Spark, dbt, streaming and lakehouse patterns for AI workloads."
 ---
 
 # 25 — Data Engineering for AI Engineers

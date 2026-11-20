@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/23-trending-aiml-platforms/06-model-selection-ev
 title: "Model Selection & Evaluation"
 sidebar_label: "Model Selection & Evaluation"
 sidebar_position: 294
+description: "With hundreds of LLMs available from providers like DeepSeek, OpenAI, Anthropic, Google, Mistral, and the open-source community, choosing the wrong model"
 ---
 
 <!-- improved -->

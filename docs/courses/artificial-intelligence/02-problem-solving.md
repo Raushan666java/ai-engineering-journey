@@ -1,3 +1,7 @@
+---
+description: "By the conclusion of this chapter, the student will be able to: (1) formulate a problem as a state-space search; (2) implement and analyze uninformed"
+---
+
 # Chapter 2: Problem-Solving by Search
 
 **Previous:** [Chapter 1: Introduction to AI](01-introduction.md) | **Next:** [Chapter 3: Informed Search and Heuristics](03-informed-search.md)

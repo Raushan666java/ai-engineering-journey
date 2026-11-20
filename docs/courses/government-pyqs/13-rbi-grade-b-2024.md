@@ -1,3 +1,7 @@
+---
+description: "Explanation: The RBI kept the repo rate unchanged at 6.50% in the December 2023 Monetary Policy Committee (MPC) meeting, maintaining the pause after a"
+---
+
 # RBI Grade B Phase 1 2024 — Solved Paper
 
 > Reserve Bank of India Grade B Officer Phase 1 Exam 2024 — fully solved with current affairs focus, detailed reasoning, and quant solutions.

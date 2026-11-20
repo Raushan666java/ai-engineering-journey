@@ -1,3 +1,7 @@
+---
+description: "Weeks 11-12, ~15 hours + ongoing applications Package your projects into something a recruiter understands in 60 seconds. Rewrite profiles. Start applying."
+---
+
 # Phase 5 — Portfolio + Market Positioning
 
 **Duration:** Weeks 11-12, ~15 hours + ongoing applications

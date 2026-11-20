@@ -4,6 +4,7 @@ slug: /laravel/25-multi-agent-systems
 title: "Chapter 25: Multi-Agent Systems & Orchestration with Laravel"
 sidebar_label: "Chapter 25: Multi-Agent Systems & Orchestration with Laravel"
 sidebar_position: 25
+description: "Single-agent systems handle one task per invocation. A multi-agent system introduces a supervisor that accepts a high-level goal, decomposes it into"
 ---
 
 # Chapter 25: Multi-Agent Systems & Orchestration with Laravel

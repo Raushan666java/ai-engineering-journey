@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/COURSE_INDEX title: '📚 Complete Course Index - AI-Enhanced Learning System' sidebar_label: '📚 Complete Course Index - AI-Enhanced"
+---
+
 ﻿---
 slug: /learning-course/COURSE_INDEX
 title: "📚 Complete Course Index - AI-Enhanced Learning System"

@@ -1,3 +1,7 @@
+---
+description: "A diffusion model learns to denoise. Train it to remove a tiny bit of noise from a noisy image, repeat that backwards a thousand times, and you have an"
+---
+
 # Image Generation — Diffusion Models
 
 > A diffusion model learns to denoise. Train it to remove a tiny bit of noise from a noisy image, repeat that backwards a thousand times, and you have an image generator.

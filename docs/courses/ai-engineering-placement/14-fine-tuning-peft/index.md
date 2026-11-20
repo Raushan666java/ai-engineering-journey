@@ -1,3 +1,7 @@
+---
+description: "When prompting is not enough: LoRA, QLoRA, dataset curation and evaluation for domain-specific models."
+---
+
 # 14 — Fine-Tuning & PEFT
 
 ## Overview

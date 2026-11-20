@@ -1,3 +1,7 @@
+---
+description: "Every framework sells the same demo (research agent builds a report) and hides the same bug (state schema fights with the orchestration layer). Pick the"
+---
+
 # Agent Framework Tradeoffs — LangGraph vs CrewAI vs AutoGen vs Agno
 
 > Every framework sells the same demo (research agent builds a report) and hides the same bug (state schema fights with the orchestration layer). Pick the framework whose abstractions match the shape of your problem; everything else is glue you write twice.

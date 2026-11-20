@@ -4,6 +4,7 @@ slug: /engineering-mathematics/07-numerical-methods
 title: "Chapter 7: Numerical Methods"
 sidebar_label: "Chapter 7: Numerical Methods"
 sidebar_position: 7
+description: 'Machine Epsilon ($ epsilon$): The smallest number such that description: + epsilon > 1$ in machine arithmetic. For IEEE double precision, $ epsilon approx 2.22'
 ---
 
 # Chapter 7: Numerical Methods

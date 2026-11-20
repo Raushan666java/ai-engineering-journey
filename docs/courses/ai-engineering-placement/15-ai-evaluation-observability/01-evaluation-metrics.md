@@ -1,3 +1,7 @@
+---
+description: "Evaluation Metrics: You cannot improve what you cannot measure. Evaluation metrics, LLM-as-judge, and observability tools help you monitor and improve AI"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Evaluation Metrics

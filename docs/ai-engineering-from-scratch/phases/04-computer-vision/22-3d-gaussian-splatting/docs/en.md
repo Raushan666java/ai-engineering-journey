@@ -1,3 +1,7 @@
+---
+description: "A scene is a cloud of millions of 3D Gaussians. Each one has a position, orientation, scale, opacity, and a colour that depends on viewing direction"
+---
+
 # 3D Gaussian Splatting from Scratch
 
 > A scene is a cloud of millions of 3D Gaussians. Each one has a position, orientation, scale, opacity, and a colour that depends on viewing direction. Rasterise them, backprop through the rasterisation, done.

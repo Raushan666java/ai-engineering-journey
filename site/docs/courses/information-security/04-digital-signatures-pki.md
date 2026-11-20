@@ -4,6 +4,7 @@ slug: /information-security/04-digital-signatures-pki
 title: "Chapter 4: Digital Signatures & PKI"
 sidebar_label: "Chapter 4: Digital Signatures & PKI"
 sidebar_position: 4
+description: "Exam Weightage: 3–5 Qs in IBPS SO IT Officer Mains (Digital signatures, certificates, authentication protocols) Key Topics: Digital signature process, PKI"
 ---
 
 # Chapter 4: Digital Signatures & PKI

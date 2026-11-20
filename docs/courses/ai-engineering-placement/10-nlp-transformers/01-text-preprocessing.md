@@ -1,3 +1,7 @@
+---
+description: "Text preprocessing is the critical first step in every NLP pipeline — before a transformer can understand language, raw text must be tokenized"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Text Preprocessing — Tokenization, Stemming, Lemmatization, TF-IDF

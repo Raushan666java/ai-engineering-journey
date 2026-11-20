@@ -4,6 +4,7 @@ slug: /compiler-design/09-code-gen
 title: "Chapter 9: Code Generation"
 sidebar_label: "Chapter 9: Code Generation"
 sidebar_position: 9
+description: "After completing this chapter, students will be able to: model the target machine for code generation; compute basic blocks and construct flow graphs"
 ---
 
 # Chapter 9: Code Generation

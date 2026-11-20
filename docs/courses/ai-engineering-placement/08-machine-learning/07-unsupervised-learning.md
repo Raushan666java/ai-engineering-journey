@@ -1,3 +1,7 @@
+---
+description: "Unsupervised Learning — K-Means, DBSCAN, Hierarchical, Gaussian Mixtures: Machine learning is the core of AI engineering. From linear regression to"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Unsupervised Learning — K-Means, DBSCAN, Hierarchical, Gaussian Mixtures

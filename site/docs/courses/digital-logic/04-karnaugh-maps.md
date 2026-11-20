@@ -4,6 +4,7 @@ slug: /digital-logic/04-karnaugh-maps
 title: "Chapter 4: Karnaugh Maps"
 sidebar_label: "Chapter 4: Karnaugh Maps"
 sidebar_position: 4
+description: "The Karnaugh map (K-map) is a graphical tool for minimising Boolean functions. It arranges truth table entries in a grid where adjacent cells differ in"
 ---
 
 # Chapter 4: Karnaugh Maps

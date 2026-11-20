@@ -1,3 +1,7 @@
+---
+description: "OOP in Python — Classes, Inheritance, Polymorphism, Dunder Methods: Python is the lingua franca of AI engineering. Mastering its syntax, data structures"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # OOP in Python — Classes, Inheritance, Polymorphism, Dunder Methods

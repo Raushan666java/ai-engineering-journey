@@ -1,3 +1,7 @@
+---
+description: "Do both. Apply for full-time roles while building your Upwork profile. Use freelance projects as interview proof. Once you land a full-time role, keep 1-2"
+---
+
 # Job Search Playbook: AI Agent Engineer
 
 > A step-by-step system for finding, applying to, and landing AI Agent Engineer roles — full-time in Dubai, remote globally, and freelance on Upwork.

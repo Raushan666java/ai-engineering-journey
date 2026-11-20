@@ -1,3 +1,7 @@
+---
+description: "TypeScript half of the capstone. Python side ships the agent loop and dispatcher; YAML side ships the Actions workflow. This project is the GitHub App"
+---
+
 # Lesson 16 - GitHub Issue-to-PR Agent (TypeScript webhook receiver)
 
 TypeScript half of the capstone. Python side ships the agent loop and

@@ -1,3 +1,7 @@
+---
+description: "Advanced Agent Patterns: AI agents autonomously use tools to complete tasks. LangGraph builds stateful, multi-step agent workflows. This module covers"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Advanced Agent Patterns

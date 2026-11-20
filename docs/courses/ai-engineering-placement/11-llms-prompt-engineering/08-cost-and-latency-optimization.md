@@ -1,3 +1,7 @@
+---
+description: "Cost & Latency Optimization: Large language models are transforming every industry. Understanding how to prompt, evaluate, and optimize LLMs is a critical"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Cost & Latency Optimization

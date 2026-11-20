@@ -1,3 +1,7 @@
+---
+description: "You trained two models. Model A scores 0.87 on your test set. Model B scores 0.89. You deploy Model B. Three weeks later, production metrics are worse"
+---
+
 # Statistics for Machine Learning
 
 > Statistics is how you know if your model actually works or just got lucky.

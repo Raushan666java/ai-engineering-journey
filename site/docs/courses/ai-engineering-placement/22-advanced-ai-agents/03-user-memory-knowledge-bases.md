@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/03-user-memory-knowledge-b
 title: "User Memory & Knowledge Bases"
 sidebar_label: "User Memory & Knowledge Bases"
 sidebar_position: 274
+description: "User Memory & Knowledge Bases: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module"
 ---
 
 <!-- improved -->

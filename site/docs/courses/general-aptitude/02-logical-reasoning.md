@@ -4,6 +4,7 @@ slug: /general-aptitude/02-logical-reasoning
 title: "Chapter 2: Logical Reasoning"
 sidebar_label: "Chapter 2: Logical Reasoning"
 sidebar_position: 2
+description: "Conclusion I: The overlap between Rich and Doctor may or may not exist. Not necessarily true. Conclusion II: If Some educated are rich, it doesn't mean"
 ---
 
 # Chapter 2: Logical Reasoning

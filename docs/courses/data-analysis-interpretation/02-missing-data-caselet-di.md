@@ -1,3 +1,7 @@
+---
+description: "Missing Data Interpretation involves tables where some values are deliberately left blank. These blanks must be filled using relationships provided in the"
+---
+
 # Chapter 2: Missing Data and Caselet DI
 
 ## Learning Objectives

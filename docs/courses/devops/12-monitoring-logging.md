@@ -1,3 +1,7 @@
+---
+description: "Monitoring is the systematic collection, analysis, and visualization of system data to understand behavior, detect anomalies, and support decision making"
+---
+
 # Chapter 12: Monitoring and Logging
 
 > **Previous:** [Cloud Platforms](./11-cloud-platforms.md) | **Next:** [Observability](./13-observability.md)

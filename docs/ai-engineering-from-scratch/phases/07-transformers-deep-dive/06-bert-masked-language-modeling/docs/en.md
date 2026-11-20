@@ -1,3 +1,7 @@
+---
+description: "In 2018 every NLP task — sentiment, NER, QA, entailment — trained its own model from scratch on its own labeled data. There was no pre-trained 'understand"
+---
+
 # BERT — Masked Language Modeling
 
 > GPT predicts the next word. BERT predicts a missing word. One sentence of difference — and half a decade of everything embedding-shaped.

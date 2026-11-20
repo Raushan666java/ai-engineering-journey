@@ -1,3 +1,7 @@
+---
+description: "A coding agent that runs unattended for forty turns is not a chat loop. It is a state machine whose nodes the operator can intercept and whose edges the"
+---
+
 # Agent Harness Loop Contract
 
 > The harness is the agent. The model is a coprocessor. This lesson freezes the loop contract you can wire any model into.

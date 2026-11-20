@@ -4,6 +4,7 @@ slug: /database-management-systems/16-redis
 title: "Chapter 16: Redis → In-Memory Data Store"
 sidebar_label: "Chapter 16: Redis → In-Memory Data Store"
 sidebar_position: 16
+description: "Analogy: Redis is like a mechanical keyboard for data access. A mechanical keyboard registers every keystroke instantly with zero lag because the switch"
 ---
 
 # Chapter 16: Redis → In-Memory Data Store

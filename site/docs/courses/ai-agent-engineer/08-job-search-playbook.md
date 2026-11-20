@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/08-job-search-playbook
 title: "Job Search Playbook: AI Agent Engineer"
 sidebar_label: "Job Search Playbook: AI Agent Engineer"
 sidebar_position: 9
+description: "Do both. Apply for full-time roles while building your Upwork profile. Use freelance projects as interview proof. Once you land a full-time role, keep 1-2"
 ---
 
 # Job Search Playbook: AI Agent Engineer

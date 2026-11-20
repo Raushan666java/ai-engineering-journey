@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/02-embedding-models
 title: "Embedding Models"
 sidebar_label: "Embedding Models"
 sidebar_position: 159
+description: "Embedding Models: Retrieval-Augmented Generation lets LLMs answer questions about your private data. Vector databases store embeddings for semantic"
 ---
 
 <!-- improved -->

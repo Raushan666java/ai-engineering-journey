@@ -1,3 +1,7 @@
+---
+description: "SHA-256 (Secure Hash Algorithm 256-bit) is the primary hash function used in Bitcoin and many other blockchains. It belongs to the SHA-2 family and"
+---
+
 # Chapter 2: Cryptography for Blockchain
 
 > **Previous:** [Chapter 1: Introduction to Blockchain](./01-introduction.md) | **Next:** [Chapter 3: Consensus Mechanisms](./03-consensus.md)

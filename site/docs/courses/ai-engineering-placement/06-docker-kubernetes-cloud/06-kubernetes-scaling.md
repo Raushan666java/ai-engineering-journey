@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/06-docker-kubernetes-cloud/06-kubernetes-scaling
 title: "Kubernetes Scaling — HPA, Autoscaling, and Cluster Management"
 sidebar_label: "Kubernetes Scaling — HPA, Autoscaling, and Cluster Management"
 sidebar_position: 86
+description: "Kubernetes Scaling — HPA, Autoscaling, and Cluster Management: Containers and cloud platforms are where AI models live in production. Docker packages your"
 ---
 
 <!-- improved -->

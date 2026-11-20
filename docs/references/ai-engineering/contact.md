@@ -1,3 +1,7 @@
+---
+description: "Raushan Kumar — transitioning Laravel developer → AI Automation Engineer. This site adapts the above curriculum alongside 30+ original CS/AI courses."
+---
+
 # Contact & Get Involved
 
 [Home](index.md) · [About](about.md) · [Catalog](catalog.md) · [Roadmap](roadmap.md) · [Glossary](glossary.md)

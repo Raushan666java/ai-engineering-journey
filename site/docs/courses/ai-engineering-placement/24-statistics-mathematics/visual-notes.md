@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/24-statistics-mathematics/visual-notes
 title: "Visual Notes — The Math Under Every Model"
 sidebar_label: "Visual Notes"
 sidebar_position: 308
+description: "One-line answer for interviews: 'Linear algebra, calculus, probability and statistics support everything you build — one model at a time.'"
 ---
 
 # Visual Notes — The Math Under Every Model

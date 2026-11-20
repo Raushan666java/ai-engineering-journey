@@ -4,6 +4,7 @@ slug: /bhagavad-gita/06-dhyana-yoga
 title: "Chapter 6: Dhyana Yoga — The Art of Meditation"
 sidebar_label: "Chapter 6: Dhyana Yoga — The Art of Meditation"
 sidebar_position: 6
+description: "After five chapters of preparation, the Gita now teaches the inner art itself. Chapter 5 ended with a promise — the sage sits, the breath is leveled, the"
 ---
 
 # Chapter 6: Dhyana Yoga — The Art of Meditation

@@ -1,3 +1,7 @@
+---
+description: "Greedy algorithms make locally optimal choices at each step, hoping to find a global optimum. They are simpler and faster than DP but only work when the"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Graphs Topological Sort

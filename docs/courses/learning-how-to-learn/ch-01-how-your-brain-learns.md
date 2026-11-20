@@ -1,3 +1,7 @@
+---
+description: "This chapter covers the brain's two learning modes — focused and diffuse — and how switching between them accelerates understanding. You'll learn about"
+---
+
 # Chapter 1: How Your Brain Learns
 
 > **Prerequisites:** None

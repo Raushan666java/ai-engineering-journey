@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design/13-design-notification-system
 title: "Design Notification System — Push, Real-Time, Delivery Guarantees"
 sidebar_label: "Design Notification System — Push, Real-Time, Delivery Guarantees"
 sidebar_position: 108
+description: "Notification systems deliver timely information to users across mobile, web, and email. Designing a reliable notification system at scale requires"
 ---
 
 <!-- improved -->

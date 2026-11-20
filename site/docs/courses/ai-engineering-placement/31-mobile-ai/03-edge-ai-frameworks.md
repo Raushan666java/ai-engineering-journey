@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/31-mobile-ai/03-edge-ai-frameworks
 title: "03 — Edge AI Frameworks"
 sidebar_label: "03 — Edge AI Frameworks"
 sidebar_position: 353
+description: "Edge AI frameworks bridge the gap between training powerful deep learning models and deploying them on resource-constrained devices. Unlike cloud AI, edge"
 ---
 
 <!-- improved -->

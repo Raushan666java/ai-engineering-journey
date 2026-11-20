@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/00-core-computer-science
 title: "Core Computer Science for AI Engineers"
 sidebar_label: "Core Computer Science for AI Engineers"
 sidebar_position: 8
+description: "Operating systems, networks, database internals and architecture questions asked in every backend interview, with worked answers and diagrams."
 ---
 
 # Core Computer Science for AI Engineers

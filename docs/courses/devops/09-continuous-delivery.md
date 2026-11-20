@@ -1,3 +1,7 @@
+---
+description: "Advantages: Instant switch, immediate rollback (switch back), full environment separation. Disadvantages: Double infrastructure cost, database"
+---
+
 # Chapter 9: Continuous Delivery
 
 > **Prev:** [Advanced Kubernetes](./08-k8s-advanced.md)

@@ -1,3 +1,7 @@
+---
+description: "Naive RAG (what most tutorials teach, and likely what your current ChromaDB setup does): always retrieve top-K chunks for every query, stuff them into the"
+---
+
 ## Chapter 8: Agentic RAG
 
 ### 8.1 Naive RAG vs. Agentic RAG

@@ -4,6 +4,7 @@ slug: /theory-of-computation/10-turing-extensions
 title: "Chapter 10: Turing Machine Extensions and the Church-Turing Thesis"
 sidebar_label: "Chapter 10: Turing Machine Extensions and the Church-Turing Thesis"
 sidebar_position: 10
+description: "A language L is recursively enumerable (RE) if there exists a Turing machine M such that L(M) = L. This means M halts in the accept state for every w ∈ L"
 ---
 
 # Chapter 10: Turing Machine Extensions and the Church-Turing Thesis

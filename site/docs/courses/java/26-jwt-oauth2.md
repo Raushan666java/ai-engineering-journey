@@ -4,6 +4,7 @@ slug: /java/26-jwt-oauth2
 title: "JWT, OAuth2 & OIDC"
 sidebar_label: "JWT, OAuth2 & OIDC"
 sidebar_position: 26
+description: "Modern applications rarely authenticate against a single database. Users log in via Google, GitHub, or corporate identity providers. APIs authenticate via"
 ---
 
 # JWT, OAuth2 & OIDC

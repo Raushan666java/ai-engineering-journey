@@ -4,6 +4,7 @@ slug: /hindi-language/02-hindi-comprehension
 title: "Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)"
 sidebar_label: "Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)"
 sidebar_position: 2
+description: "अपठित गद्यांश एक ऐसा गद्यांश होता है जिसे छात्र ने पहले कभी नहीं पढ़ा होता। सरकारी परीक्षाओं में हिंदी खंड में 2–3 अपठित गद्यांश दिए जाते हैं, जिन पर"
 ---
 
 # Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)

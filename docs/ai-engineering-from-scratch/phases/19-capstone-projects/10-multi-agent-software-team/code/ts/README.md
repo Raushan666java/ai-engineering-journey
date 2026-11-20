@@ -1,3 +1,7 @@
+---
+description: "Multi-file TypeScript skeleton for the multi-agent software team capstone. Planner, coder, and reviewer agents share a workspace and rotate through a"
+---
+
 # Multi-agent software team (TypeScript skeleton)
 
 Multi-file TypeScript skeleton for the multi-agent software team capstone.

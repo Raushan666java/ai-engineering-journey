@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/06-docker-kubernetes-cloud/04-kubernetes-basics
 title: "Kubernetes Basics — Pods, Services, and Deployments"
 sidebar_label: "Kubernetes Basics — Pods, Services, and Deployments"
 sidebar_position: 84
+description: "Kubernetes Basics — Pods, Services, and Deployments: Containers and cloud platforms are where AI models live in production. Docker packages your model"
 ---
 
 <!-- improved -->

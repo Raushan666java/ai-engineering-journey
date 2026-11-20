@@ -4,6 +4,7 @@ slug: /cloud-computing/07-cloud-security
 title: "Chapter 7: Cloud Security"
 sidebar_label: "Chapter 7: Cloud Security"
 sidebar_position: 7
+description: "A[Cloud Security Foundations] --> B[Shared Responsibility Model] A --> C[Identity and Access Management] A --> E[Network Security] A --> F[Monitoring and"
 ---
 
 # Chapter 7: Cloud Security

@@ -4,6 +4,7 @@ slug: /learning-how-to-learn-practical/ch-13-final-capstone
 title: "Chapter 13: Final Capstone — Design Your Learning System"
 sidebar_label: "Chapter 13: Final Capstone — Design Your Learning System"
 sidebar_position: 14
+description: "Each chapter so far taught you a standalone technique. But techniques don't work in isolation — they work as a system. Active recall without a study plan"
 ---
 
 # Chapter 13: Final Capstone — Design Your Learning System

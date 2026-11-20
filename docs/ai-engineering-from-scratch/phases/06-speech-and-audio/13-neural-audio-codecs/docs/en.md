@@ -1,3 +1,7 @@
+---
+description: "2026 audio generation is almost all tokens. EnCodec, SNAC, Mimi, and DAC turn continuous waveforms into discrete sequences that a transformer can predict"
+---
+
 # Neural Audio Codecs — EnCodec, SNAC, Mimi, DAC and the Semantic-Acoustic Split
 
 > 2026 audio generation is almost all tokens. EnCodec, SNAC, Mimi, and DAC turn continuous waveforms into discrete sequences that a transformer can predict. The semantic-vs-acoustic token split — first-codebook as semantic, rest as acoustic — is the most important architectural shift since the Transformer for audio.

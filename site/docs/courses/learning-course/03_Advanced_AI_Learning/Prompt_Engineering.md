@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/03_Advanced_AI_Learning/Prompt_Engineering title: '🎯 Prompt Engineering - Master AI Interactions' sidebar_label: '🎯 Prompt"
+---
+
 ﻿---
 slug: /learning-course/03_Advanced_AI_Learning/Prompt_Engineering
 title: "🎯 Prompt Engineering - Master AI Interactions"

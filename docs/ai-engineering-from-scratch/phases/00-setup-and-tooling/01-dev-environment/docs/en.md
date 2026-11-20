@@ -1,3 +1,7 @@
+---
+description: "You're about to learn AI engineering across 200+ lessons using Python, TypeScript, Rust, and Julia. If your environment is broken, every single lesson"
+---
+
 # Dev Environment
 
 > Your tools shape your thinking. Set them up once, set them up right.

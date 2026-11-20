@@ -1,3 +1,7 @@
+---
+description: "By the conclusion of this chapter, the student will be able to: (1) identify sources of bias in AI systems; (2) apply interpretability techniques to"
+---
+
 # Chapter 15: Ethics of Artificial Intelligence
 
 **Previous:** [Chapter 14: Robotics](14-robotics.md) | **Next:** [Chapter 16: Expert Systems](16-expert-systems.md)

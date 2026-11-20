@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: A child learning to recognize animals does not need an explicit rulebook. Instead, the child is shown examples — 'this furry animal"
+---
+
 # Chapter 9: Machine Learning: Learning from Examples
 
 **Previous:** [Chapter 9: Reasoning Under Uncertainty](09-uncertainty.md) | **Next:** [Chapter 10: Probabilistic Reasoning](10-probabilistic-reasoning.md)

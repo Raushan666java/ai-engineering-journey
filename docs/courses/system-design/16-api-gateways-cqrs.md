@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. A load balancer (e.g., Nginx, HAProxy, AWS ELB) distributes"
+---
+
 # Chapter 16: API Gateways, CQRS, and Event Sourcing
 > **Previous:** [15 Cdn Dns Edge](./15-cdn-dns-edge.md) | **Next:** [17 Observability Resiliency](./17-observability-resiliency.md)
 

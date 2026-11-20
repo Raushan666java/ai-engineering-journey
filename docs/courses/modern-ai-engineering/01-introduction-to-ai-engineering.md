@@ -1,3 +1,7 @@
+---
+description: "AI engineering is the discipline of building production-ready applications powered by foundation models. It sits at the intersection of machine learning"
+---
+
 # Chapter 1: Introduction to AI Engineering
 
 ## Learning Objectives

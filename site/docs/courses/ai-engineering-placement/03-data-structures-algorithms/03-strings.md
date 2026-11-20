@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/03-strings
 title: "Strings"
 sidebar_label: "Strings"
 sidebar_position: 40
+description: "Strings are sequences of characters with unique operations. Many interview problems involve string manipulation, pattern matching, and anagram/subsequence"
 ---
 
 <!-- improved -->

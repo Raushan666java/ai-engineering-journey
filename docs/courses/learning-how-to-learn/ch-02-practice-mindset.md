@@ -1,3 +1,7 @@
+---
+description: "Learning isn't just about technique — it's about what you believe, how you practice, and how you take care of your brain. This chapter tears down the"
+---
+
 # Chapter 2: Practice, Mindset & Performance
 
 > **Prerequisites:** [Chapter 1: How Your Brain Learns](./ch-01-how-your-brain-learns.md) — Understanding focused vs. diffuse modes and chunking.

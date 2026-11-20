@@ -4,6 +4,7 @@ slug: /java/49-batch
 title: "Spring Batch"
 sidebar_label: "Spring Batch"
 sidebar_position: 49
+description: "Spring Batch provides a comprehensive framework for batch processing with reusable processing components, transaction management, and chunk-oriented"
 ---
 
 # Spring Batch

@@ -4,6 +4,7 @@ slug: /geeta-darshan/14-gunatraya-vibhaga-yoga
 title: "अध्याय १४: गुणत्रय विभाग योग — \"Teen gunas — tumhari psychology ka map\""
 sidebar_label: "अध्याय १४: गुणत्रय विभाग योग — \"Teen gunas — tumhari psychology ka map\""
 sidebar_position: 15
+description: "'Sattva, rajas, tamas — yeh teen gunas tumhari psychology ka map hain. Is map ko samajh lo, to tum samajh jaoge ki tumhara man kab roshni ka hai, kab aag"
 ---
 
 # अध्याय १४: गुणत्रय विभाग योग — "Teen gunas — tumhari psychology ka map"

@@ -1,3 +1,7 @@
+---
+description: "Think of arithmetic operators like a cash register. You put in two numbers (operands), press an operation button (operator), and the register displays a"
+---
+
 # Chapter 3: Operators in C --- In-Depth Reference
 
 > **Previous:** [Introduction to C](./01-introduction.md) | **Next:** [Control Flow](./04-control-flow.md)

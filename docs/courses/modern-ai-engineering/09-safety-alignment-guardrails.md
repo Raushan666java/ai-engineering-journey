@@ -1,3 +1,7 @@
+---
+description: "By the end of this chapter, you will be able to: - Identify the major types of harm in AI systems and their root causes - Conduct red teaming exercises"
+---
+
 # Chapter 9: Safety, Alignment, and Guardrails
 
 > **Learning Objectives**

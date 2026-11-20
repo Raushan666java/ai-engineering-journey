@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'Find the problem → define success → prototype → evaluate → ship → learn from users → iterate.'"
+---
+
 # Visual Notes — From Model to Product
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

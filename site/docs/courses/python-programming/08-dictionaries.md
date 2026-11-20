@@ -4,6 +4,7 @@ slug: /python-programming/08-dictionaries
 title: "Chapter 8: Dictionaries"
 sidebar_label: "Chapter 8: Dictionaries"
 sidebar_position: 8
+description: "Python dictionaries use a hash table with open addressing. Keys are hashed, and the hash determines the slot. On collision, Python probes the next"
 ---
 
 # Chapter 8: Dictionaries

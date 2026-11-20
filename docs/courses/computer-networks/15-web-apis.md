@@ -1,3 +1,7 @@
+---
+description: "Representational State Transfer (REST) is an architectural style for designing networked applications introduced by Roy Fielding in his 2000 PhD"
+---
+
 # Chapter 15: Web APIs and Application Protocols
 
 ## Learning Objectives

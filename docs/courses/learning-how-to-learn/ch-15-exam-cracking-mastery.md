@@ -1,3 +1,7 @@
+---
+description: "A universal framework to crack any competitive exam — GATE, IBPS SO, NIC Scientist, SBI PO, RBI Grade B, SSC CGL, UPSC, campus placements, coding"
+---
+
 # Chapter 15: Exam Cracking Mastery — Universal Strategy for Any Exam
 
 > **Prerequisites:** [Chapter 3: Active Recall & Spaced Repetition](./ch-03-active-recall-spaced-repetition.md) — Core memory techniques.

@@ -4,6 +4,7 @@ slug: /web-development/14-typescript
 title: "Chapter 14: TypeScript"
 sidebar_label: "Chapter 14: TypeScript"
 sidebar_position: 14
+description: "Use satisfies operator (TS 4.9+) to check that a value matches a type without changing its inferred type: const palette = { red: [255,0,0] } satisfies"
 ---
 
 # Chapter 14: TypeScript

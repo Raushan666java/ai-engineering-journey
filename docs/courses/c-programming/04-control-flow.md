@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: Decision-making in C is like a traffic light controller at a busy intersection. The controller evaluates conditions (is it red? green?"
+---
+
 # Chapter 4: Control Flow
 
 > **Previous:** [Operators](./03-operators.md) | **Next:** [Loops](./05-loops.md)

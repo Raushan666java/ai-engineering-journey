@@ -4,6 +4,7 @@ slug: /algorithms/09-dp-sequences
 title: "Chapter 9: Dynamic Programming — Sequences"
 sidebar_label: "Chapter 9: Dynamic Programming — Sequences"
 sidebar_position: 9
+description: "Chapter 8: Dynamic Programming — Knapsack Problems — 2D DP tables, recurrence design | Next: Chapter 10: Dynamic Programming — Trees & Grids — DP on"
 ---
 
 # Chapter 9: Dynamic Programming — Sequences

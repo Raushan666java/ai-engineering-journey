@@ -4,6 +4,7 @@ slug: /theory-of-computation/04-regex
 title: "Chapter 4: Regular Expressions"
 sidebar_label: "Chapter 4: Regular Expressions"
 sidebar_position: 4
+description: "A regular expression is a algebraic notation for describing a pattern → a set of strings. Regular expressions are used extensively in text processing"
 ---
 
 # Chapter 4: Regular Expressions

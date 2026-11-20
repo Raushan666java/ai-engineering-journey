@@ -4,6 +4,7 @@ slug: /banking-financial-awareness/01-rbi-monetary-policy
 title: "Chapter 1: RBI & Monetary Policy"
 sidebar_label: "Chapter 1: RBI & Monetary Policy"
 sidebar_position: 1
+description: "The Reserve Bank of India (RBI) was established on April 1, 1935, under the Reserve Bank of India Act, 1934. It was originally constituted as a private"
 ---
 
 # Chapter 1: RBI & Monetary Policy

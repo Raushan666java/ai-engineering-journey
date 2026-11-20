@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/13-openai-agents-sdk
 title: "OpenAI Agents SDK"
 sidebar_label: "OpenAI Agents SDK"
 sidebar_position: 284
+description: "OpenAI Agents SDK is a lightweight Python framework for building production-grade AI agents. Released in March 2025, it provides a unified runtime for"
 ---
 
 <!-- improved -->

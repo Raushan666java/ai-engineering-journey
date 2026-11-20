@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/IMPLEMENTATION_GUIDE title: '🚀 Implementation Guide - AI-Enhanced Learning System' sidebar_label: '🚀 Implementation Guide"
+---
+
 ﻿---
 slug: /learning-course/IMPLEMENTATION_GUIDE
 title: "🚀 Implementation Guide - AI-Enhanced Learning System"

@@ -1,3 +1,7 @@
+---
+description: "Real-world analogy: A librarian managing a million-book collection does not rearrange every shelf when a new book arrives. Instead, she keeps a"
+---
+
 # Chapter 18: Advanced Topics
 
 > **Prerequisites:** [Chapter 17: Randomized Algorithms](./17-randomized.md) — Probabilistic analysis and algorithm design | **Next:** Course Complete

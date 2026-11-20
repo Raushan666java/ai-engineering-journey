@@ -1,9 +1,10 @@
 ---
 id: 08-database-management-systems
 slug: /gate-cs-preparation/08-database-management-systems
-title: "08 Database Management Systems"
-sidebar_label: "08 Database Management Systems"
+title: "08-database-management-systems"
+sidebar_label: "08-database-management-systems"
 sidebar_position: 8
+description: "GATE CS Weightage: 8–12 marks (3–5 questions). Consistent high-weight subject with predictable patterns in normalization, SQL, relational"
 ---
 
 ﻿# Chapter 08: Database Management Systems
@@ -97,7 +98,6 @@ flowchart LR
 
 ### Normal Form Summary
 
-
 | Normal Form | Condition | Violation Fix |
 |-------------|-----------|---------------|
 | **1NF** | Atomic domains; no multi-valued attributes | Decompose non-atomic columns |
@@ -109,7 +109,6 @@ flowchart LR
 
 ### ACID Properties
 
-
 | Property | Meaning | Enforced By |
 |----------|---------|-------------|
 | **Atomicity** | Transaction executes completely or not at all | Recovery manager (undo log) |
@@ -119,7 +118,6 @@ flowchart LR
 
 ### SQL Isolation Levels
 
-
 | Level | Dirty Read | Non-Repeatable Read | Phantom Read | Implementation |
 |-------|------------|---------------------|--------------|----------------|
 | READ UNCOMMITTED | Possible | Possible | Possible | No locking |
@@ -128,7 +126,6 @@ flowchart LR
 | SERIALIZABLE | Prevented | Prevented | Prevented | Range locks / predicate locking |
 
 ### B+ Tree Parameters
-
 
 | Parameter | Description | Formula / Notes |
 |-----------|-------------|-----------------|
@@ -145,7 +142,6 @@ flowchart LR
 
 ### 1.1 Basic Constructs
 
-
 | Construct | Symbol | Description |
 |-----------|--------|-------------|
 | Entity Set | Rectangle | Collection of similar entities |
@@ -159,26 +155,22 @@ flowchart LR
 
 ### 1.2 Cardinality Constraints
 
-
 - **1:1** → One entity A associated with exactly one B and vice versa
 - **1:N** → One A associated with many B; each B with one A
 - **M:N** → Many A associated with many B
 
 ### 1.3 Participation Constraints
 
-
 - **Total (double line):** Every entity in set participates in relationship
 - **Partial (single line):** Some entities may not participate
 
 ### 1.4 Weak Entity
-
 
 - Entity that cannot exist without a **strong (identifying) entity**
 - Identified by **partial key** + **identifying relationship** (double diamond)
 - Owner entity set and weak entity set must have **total participation**
 
 ### 1.5 Generalization / Specialization
-
 
 - **Generalization:** Bottom-up → combining entities into higher-level entity
 - **Specialization:** Top-down → subdividing entity into sub-entities
@@ -189,7 +181,6 @@ flowchart LR
   - **Partial:** Some superclass entities may not be in any subclass (single line)
 
 ### 1.6 ER-to-Relational Mapping Steps
-
 
 1. Each strong entity → relation (key becomes PK)
 2. Each weak entity → relation (PK = partial key + owner PK)
@@ -205,7 +196,6 @@ flowchart LR
 
 ### 2.1 Schema Concepts
 
-
 - **Relation:** Table with rows (tuples) and columns (attributes)
 - **Degree:** Number of attributes
 - **Cardinality:** Number of tuples
@@ -217,7 +207,6 @@ flowchart LR
 - **Referential Integrity:** FK must be NULL or match a PK in referenced relation
 
 ### 2.2 Relational Algebra Operations
-
 
 #### Basic Operations
 
@@ -239,7 +228,7 @@ flowchart LR
 | Natural Join | R ⋈ S | Equi join on common attributes (removes duplicate columns) |
 | Left Outer Join | R ⟕ S | Natural join + unmatched left tuples padded with NULL |
 | Right Outer Join | R ⟖ S | Natural join + unmatched right tuples padded with NULL |
-| Full Outer Join | R âŸ— S | Natural join + all unmatched tuples padded with NULL |
+| Full Outer Join | R ⟗ S | Natural join + all unmatched tuples padded with NULL |
 
 #### Division Operation
 
@@ -254,14 +243,12 @@ Output: A values that appear in R paired with every B in S
 
 ### 2.3 Tuple Relational Calculus
 
-
 - **Declarative:** `{ t | condition(t) }`
 - t is a tuple variable; condition specifies constraints
 - Uses existential (∃) and universal (∀) quantifiers
 - **Safe expression:** Results must be finite (domain-restricted)
 
 ### 2.4 Domain Relational Calculus
-
 
 - **Declarative:** `{ <a1, a2, ..., an> | condition(a1, ..., an) }`
 - Variables range over domains (not tuples)
@@ -272,7 +259,6 @@ Output: A values that appear in R paired with every B in S
 ## 3. SQL (Structured Query Language)
 
 ### 3.1 DDL (Data Definition Language)
-
 
 ```sql
 CREATE TABLE Employee (
@@ -289,7 +275,6 @@ CREATE INDEX idx_dept ON Employee(dept);
 ```
 
 ### 3.2 DML (Data Manipulation Language)
-
 
 ```sql
 -- Insert
@@ -312,7 +297,6 @@ ORDER BY avg_sal DESC;
 
 ### 3.3 Nested Queries
 
-
 ```sql
 -- IN subquery
 SELECT ename FROM Employee
@@ -332,7 +316,6 @@ SELECT ename, (SELECT AVG(salary) FROM Employee) AS overall_avg FROM Employee;
 
 ### 3.4 Correlated Subqueries
 
-
 Inner query references outer query variable. Executed once per outer row.
 
 **Example:** Find employees earning more than department average:
@@ -344,7 +327,6 @@ WHERE e.salary > (SELECT AVG(salary) FROM Employee
 ```
 
 ### 3.5 Aggregation & GROUP BY
-
 
 | Function | Description |
 |----------|-------------|
@@ -358,7 +340,6 @@ WHERE e.salary > (SELECT AVG(salary) FROM Employee
 
 ### 3.6 Views
 
-
 ```sql
 CREATE VIEW DeptAvgSalary AS
 SELECT dept, AVG(salary) AS avg_salary
@@ -370,7 +351,6 @@ GROUP BY dept;
 - **Materialized views:** Physically stored; refreshed periodically
 
 ### 3.7 Triggers
-
 
 ```sql
 CREATE TRIGGER salary_check BEFORE INSERT ON Employee
@@ -385,7 +365,6 @@ SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Negative salary';
 
 ### 3.8 Assertions
 
-
 ```sql
 CREATE ASSERTION salary_constraint CHECK (
     NOT EXISTS (SELECT 1 FROM Employee WHERE salary < 10000)
@@ -395,7 +374,6 @@ CREATE ASSERTION salary_constraint CHECK (
 Assertions are schema-level constraints checked on every modification. Most DBMS implement them through triggers.
 
 ### 3.9 DCL (Data Control Language)
-
 
 ```sql
 GRANT SELECT, INSERT ON Employee TO user1 WITH GRANT OPTION;
@@ -407,7 +385,6 @@ REVOKE SELECT ON Employee FROM user1 CASCADE;
 ## 4. Normalization
 
 ### 4.1 Functional Dependencies
-
 
 **Definition:** A → B means each value of A determines exactly one value of B.
 
@@ -429,8 +406,7 @@ REVOKE SELECT ON Employee FROM user1 CASCADE;
 
 ### 4.2 Attribute Closure Computation
 
-
-Given FD set F, find closure of attribute set X (XâÂÂ�º):
+Given FD set F, find closure of attribute set X (XÃ¢Âº):
 
 ```
 Algorithm:
@@ -445,15 +421,13 @@ Algorithm:
 
 ### 4.3 Candidate Key Computation
 
-
-- A candidate key is a minimal superkey: XâÂÂ�º = all attributes, and no proper subset has closure = all attributes.
+- A candidate key is a minimal superkey: XÃ¢Âº = all attributes, and no proper subset has closure = all attributes.
 - **Steps:**
   1. Compute closure of attribute subsets starting from smallest size
   2. First set whose closure = all attributes is a candidate key
 - **GATE shortcut:** Attributes that appear only on LHS of FDs (and never on RHS) must be part of EVERY candidate key.
 
 ### 4.4 Canonical Cover
-
 
 Minimal equivalent set of FDs with:
 1. **No extraneous attributes** in LHS or RHS
@@ -469,20 +443,17 @@ Algorithm:
 
 ### 4.5 Lossless Decomposition
 
-
 Decomposition of R into R1, R2 is **lossless** if:
 - `R1 ∩ R2 → R1` or `R1 ∩ R2 → R2` (i.e., common attributes form a superkey in at least one)
 - Or for decomposition into multiple relations: natural join of all decomposed relations yields original R without spurious tuples
 
 ### 4.6 Dependency Preservation
 
-
 Decomposition preserves dependencies if the union of FDs projected on each decomposed relation implies the original FD set.
 
-**Algorithm:** For each FD X → Y in F, check if `XâÂÂ�º` w.r.t. projected FDs contains Y. If all FDs are preserved, the decomposition is dependency-preserving.
+**Algorithm:** For each FD X â†’ Y in F, check if `XÃ¢Âº` w.r.t. projected FDs contains Y. If all FDs are preserved, the decomposition is dependency-preserving.
 
 ### 4.7 Normal Forms in Detail
-
 
 #### 1NF
 - Every attribute contains **atomic (indivisible)** values
@@ -522,7 +493,6 @@ Decomposition preserves dependencies if the union of FDs projected on each decom
 
 ### 5.1 Transaction States
 
-
 ```
 Active → Partially Committed → Committed
    ↓                                  ↑
@@ -531,13 +501,11 @@ Failed → Aborted
 
 ### 5.2 Schedules
 
-
 - **Serial schedule:** Transactions execute one after another (no interleaving)
 - **Serializable schedule:** Equivalent to some serial schedule
 - **Non-serializable schedule:** May lead to inconsistency
 
 ### 5.3 Conflict Serializability
-
 
 **Conflict:** Two operations on same data item where at least one is write.
 - **Read-Write (RW):** Unrepeatable read
@@ -556,7 +524,6 @@ Failed → Aborted
 
 ### 5.4 View Serializability
 
-
 Schedule S1 is **view equivalent** to S2 if:
 1. Same initial reads: If Ti reads initial value of A in S1, same in S2
 2. Same read-from: If Ti reads A written by Tj in S1, same in S2
@@ -567,7 +534,6 @@ Schedule S1 is **view equivalent** to S2 if:
 - Some view-serializable schedules are **not** conflict-serializable (e.g., with blind writes)
 
 ### 5.5 Concurrency Control Protocols
-
 
 #### Lock-Based (2PL)
 
@@ -607,7 +573,6 @@ Each transaction gets a unique timestamp (TS). Each data item stores:
 
 ### 5.6 Deadlock Handling
 
-
 | Strategy | Method | Pros | Cons |
 |----------|--------|------|------|
 | Prevention | Wait-Die (older waits for younger) | No deadlock | May abort unnecessarily |
@@ -620,7 +585,6 @@ Each transaction gets a unique timestamp (TS). Each data item stores:
 
 ### 6.1 Storage Types
 
-
 | Storage | Volatility | Speed | Contents |
 |---------|------------|-------|----------|
 | Main Memory | Volatile | Fast | Current data |
@@ -628,7 +592,6 @@ Each transaction gets a unique timestamp (TS). Each data item stores:
 | Flash/SSD | Non-volatile | Medium | Persistent |
 
 ### 6.2 Log-Based Recovery
-
 
 **Log entry types:**
 - `<Ti START>` → Transaction begins
@@ -641,7 +604,6 @@ Each transaction gets a unique timestamp (TS). Each data item stores:
 
 ### 6.3 Deferred Update (No-Undo/Redo)
 
-
 - Writes deferred until commit point
 - No undo needed (transaction that didn't commit wrote nothing)
 - Only redo for committed transactions
@@ -649,20 +611,17 @@ Each transaction gets a unique timestamp (TS). Each data item stores:
 
 ### 6.4 Immediate Update (Undo/Redo)
 
-
 - Writes can happen before commit
 - Both undo and redo may be needed
 - **Log:** `<Ti START>`, `<Ti, X, V1, V2>` (old + new), `<Ti COMMIT>`
 
 ### 6.5 Checkpointing
 
-
 - Periodically write all dirty buffers to disk
 - Reduces recovery time: only need to process logs after checkpoint
 - **Fuzzy checkpoint:** Allow updates during checkpoint (more practical)
 
 ### 6.6 ARIES Recovery Algorithm
-
 
 **ARIES = Algorithm for Recovery and Isolation Exploiting Semantics**
 
@@ -682,7 +641,6 @@ Three phases:
 ## 7. File Organization & Indexing
 
 ### 7.1 B/B+ Trees
-
 
 #### B-Tree
 - Internal nodes store keys + pointers to children
@@ -710,7 +668,6 @@ Three phases:
 
 ### 7.2 Indexing Techniques
 
-
 | Index Type | Description | Best For |
 |------------|-------------|----------|
 | Primary (Clustering) | Order of data file matches index order | Range queries on ordering attribute |
@@ -721,7 +678,6 @@ Three phases:
 | Non-clustered | Index contains pointers to data rows | Secondary attribute lookups |
 
 ### 7.3 Hashing
-
 
 #### Static Hashing
 - **Bucket:** Unit of storage (1 block)
@@ -745,7 +701,6 @@ Three phases:
 
 ### 7.3 Indexing vs Hashing Comparison
 
-
 | Aspect | B+ Tree | Hashing |
 |--------|---------|---------|
 | Range queries | Efficient (linked leaves) | Not supported |
@@ -759,7 +714,6 @@ Three phases:
 ## 8. GATE Previous Year Questions
 
 ### D1. [GATE 2025, 2M, ER Model]
-
 Consider a weak entity set W with partial key A, owned by strong entity set S with key B. Which of the following is the primary key of the relation mapping W?
 
 (a) A
@@ -773,7 +727,6 @@ Consider a weak entity set W with partial key A, owned by strong entity set S wi
 ---
 
 ### D2. [GATE 2025, 1M, SQL]
-
 What is the output of:
 ```sql
 SELECT COUNT(NULL) FROM Employee;
@@ -791,7 +744,6 @@ SELECT COUNT(NULL) FROM Employee;
 ---
 
 ### D3. [GATE 2025, 2M, B+ Tree]
-
 A B+ tree of order p (maximum pointers per node) has 500,000 keys. The tree height is 3. What is the smallest possible value of p?
 
 (a) 75
@@ -810,7 +762,6 @@ Solving: p = 80 gives enough capacity.
 ---
 
 ### D4. [GATE 2024, 2M, Relational Algebra]
-
 Consider R(A, B, C, D) with FDs: A → B, BC → D. Which of the following is a candidate key?
 
 (a) A
@@ -820,15 +771,14 @@ Consider R(A, B, C, D) with FDs: A → B, BC → D. Which of the following is a 
 
 **Answer:** (b) AC
 **Explanation:**
-AâÂÂ�º = {A, B} → not all attributes
-ACâÂÂ�º = {A, C, B, D} = all attributes. AC is minimal.
-BCâÂÂ�º = {B, C, D} → A missing
+AÃ¢Âº = {A, B} → not all attributes
+ACÃ¢Âº = {A, C, B, D} = all attributes. AC is minimal.
+BCÃ¢Âº = {B, C, D} → A missing
 ABC is a superkey but not minimal.
 
 ---
 
 ### D5. [GATE 2024, 1M, SQL]
-
 ```sql
 SELECT dept_id, AVG(salary)
 FROM instructor
@@ -848,7 +798,6 @@ What does this query return?
 ---
 
 ### D6. [GATE 2024, 2M, Normalization]
-
 R(A, B, C, D, E) with FDs: AB → C, C → D, D → E. Which normal form is this relation in?
 
 (a) 1NF only
@@ -857,7 +806,7 @@ R(A, B, C, D, E) with FDs: AB → C, C → D, D → E. Which normal form is this
 (d) BCNF
 
 **Answer:** (a) 1NF only
-**Explanation:** CK = AB (ABâÂÂ�º = {A,B,C,D,E}). Partial dependencies: C → D (C is part of CK? No, C is non-prime). Wait → AB → C, C → D, D → E. Since C, D, E depend on proper subset of CK? No proper subset: AâÂÂ�º = {A}, BâÂÂ�º = {B}. No partial dependency because no non-prime depends on subset of CK. So it's in 2NF.
+**Explanation:** CK = AB (ABÃ¢ÂÂº = {A,B,C,D,E}). Partial dependencies: C â†’ D (C is part of CK? No, C is non-prime). Wait â†’ AB â†’ C, C â†’ D, D â†’ E. Since C, D, E depend on proper subset of CK? No proper subset: AÃ¢ÂÂº = {A}, BÃ¢Âº = {B}. No partial dependency because no non-prime depends on subset of CK. So it's in 2NF.
 For 3NF: C → D → C is not a superkey, D is non-prime. This violates 3NF.
 So it's in 2NF. Answer is 2NF only.
 
@@ -866,7 +815,6 @@ So it's in 2NF. Answer is 2NF only.
 ---
 
 ### D7. [GATE 2024, 2M, Transaction]
-
 Schedule S: r1(A), w2(A), r1(B), w2(B), r1(C), w2(C). Is this schedule conflict serializable?
 
 (a) Yes, equivalent to T1, T2
@@ -884,7 +832,6 @@ Precedence graph: T2 → T1 only. Acyclic, so conflict serializable as T2, T1.
 ---
 
 ### D8. [GATE 2023, 2M, Candidate Keys]
-
 R(A, B, C, D, E, F) with FDs: AB → C, BC → D, D → E, E → F. What are the candidate keys?
 
 (a) AB only
@@ -894,15 +841,14 @@ R(A, B, C, D, E, F) with FDs: AB → C, BC → D, D → E, E → F. What are the
 
 **Answer:** (a) AB only
 **Explanation:**
-ABâÂÂ�º = {A,B,C,D,E,F} = all attributes. Minimal?
-AâÂÂ�º = {A}, BâÂÂ�º = {B}. Neither gives all. So AB is CK.
-Check BCâÂÂ�º = {B,C,D,E,F} → A missing. Not a CK.
+ABÃ¢Âº = {A,B,C,D,E,F} = all attributes. Minimal?
+AÃ¢ÂÂº = {A}, BÃ¢Âº = {B}. Neither gives all. So AB is CK.
+Check BCÃ¢Âº = {B,C,D,E,F} → A missing. Not a CK.
 AB is the only candidate key.
 
 ---
 
 ### D9. [GATE 2023, 1M, SQL]
-
 Which SQL clause is used to filter groups formed by GROUP BY?
 
 (a) WHERE
@@ -916,7 +862,6 @@ Which SQL clause is used to filter groups formed by GROUP BY?
 ---
 
 ### D10. [GATE 2023, 2M, Normalization]
-
 R(A, B, C, D) with FDs: A → B, B → C, C → D. Decompose into R1(A, B, C) and R2(C, D). Which of the following is true?
 
 (a) Lossless and dependency-preserving
@@ -932,7 +877,6 @@ Dependency-preserving: A → B (in R1), B → C (derived from A → B and B → 
 ---
 
 ### D11. [GATE 2023, 2M, Serializability]
-
 Schedule S: r1(X), r2(X), w1(Y), w2(Y), r1(Z), w2(Z). Is this view serializable?
 
 (a) Yes, conflict serializable too
@@ -950,7 +894,6 @@ Graph: T1 → T2 only. Acyclic. Conflict serializable (T1, T2). Therefore view s
 ---
 
 ### D12. [GATE 2023, 2M, SQL]
-
 ```sql
 SELECT DISTINCT e.ename
 FROM emp e
@@ -975,7 +918,6 @@ What does this query return?
 ---
 
 ### D13. [GATE 2022, 2M, BCNF]
-
 R(A, B, C, D, E) with FDs: A → B, BC → E, C → D. Is R in BCNF?
 
 (a) Yes
@@ -984,9 +926,9 @@ R(A, B, C, D, E) with FDs: A → B, BC → E, C → D. Is R in BCNF?
 (d) No, because C → D violates
 
 **Answer:** (d) No, because C → D violates
-**Explanation:** CK = AC (AâÂÂ�º = {A,B}, CâÂÂ�º = {C,D}, ACâÂÂ�º = all).
+**Explanation:** CK = AC (AÃ¢ÂÂº = {A,B}, CÃ¢ÂÂº = {C,D}, ACÃ¢Âº = all).
 Check each FD:
-A → B: A is not superkey → violates BCNF? Wait, AC is CK. Is A a superkey? AâÂÂ�º = {A,B} ≠ all. So A is NOT a superkey. A → B violates BCNF.
+A â†’ B: A is not superkey â†’ violates BCNF? Wait, AC is CK. Is A a superkey? AÃ¢Âº = {A,B} â‰  all. So A is NOT a superkey. A → B violates BCNF.
 Actually all three FDs violate BCNF since none have superkey on LHS.
 But the violation question: which FD violates? All do. The answer choices only flag C → D as an option.
 
@@ -995,7 +937,6 @@ But the violation question: which FD violates? All do. The answer choices only f
 ---
 
 ### D14. [GATE 2022, 1M, Relational Algebra]
-
 Which operation in relational algebra eliminates duplicate tuples?
 
 (a) SELECT
@@ -1004,12 +945,11 @@ Which operation in relational algebra eliminates duplicate tuples?
 (d) CROSS PRODUCT
 
 **Answer:** (b) PROJECT
-**Explanation:** Project (ÃÂ�€) eliminates duplicate tuples by default. SELECT (ÃÂ�ƒ) does not eliminate duplicates. JOIN and CROSS PRODUCT don't eliminate duplicates either.
+**Explanation:** Project (π) eliminates duplicate tuples by default. SELECT (σ) does not eliminate duplicates. JOIN and CROSS PRODUCT don't eliminate duplicates either.
 
 ---
 
 ### D15. [GATE 2022, 2M, SQL]
-
 ```sql
 SELECT name FROM student
 WHERE marks > (SELECT AVG(marks) FROM student);
@@ -1027,7 +967,6 @@ What type of subquery is this?
 ---
 
 ### D16. [GATE 2022, 2M, Transaction]
-
 Schedule S: w1(A), w1(B), w2(A), r2(C), w2(B). Which of the following is true?
 
 (a) Conflict serializable
@@ -1045,7 +984,6 @@ Graph: T1 → T2 only. Acyclic. Conflict serializable as T1, T2.
 ---
 
 ### D17. [GATE 2021, 2M, B+ Tree]
-
 A B+ tree of order d (max keys per node = 2d) has height h (leaf level = h). What is the maximum number of keys stored?
 
 (a) (2d + 1)^h
@@ -1059,7 +997,6 @@ A B+ tree of order d (max keys per node = 2d) has height h (leaf level = h). Wha
 ---
 
 ### D18. [GATE 2021, 2M, Normalization]
-
 R(A, B, C, D, E, F) with FDs: A → B, BC → D, D → EF. Which normal form?
 
 (a) 1NF
@@ -1068,7 +1005,7 @@ R(A, B, C, D, E, F) with FDs: A → B, BC → D, D → EF. Which normal form?
 (d) BCNF
 
 **Answer:** (b) 2NF
-**Explanation:** CK = AC (AâÂÂ�º = {A,B}, CâÂÂ�º = {C}, ACâÂÂ�º = {A,B,C,D,E,F}).
+**Explanation:** CK = AC (AÃ¢ÂÂº = {A,B}, CÃ¢ÂÂº = {C}, ACÃ¢Âº = {A,B,C,D,E,F}).
 Partial dependencies: A → B → A is part of CK, B is non-prime. So partial dependency exists. Not in 2NF.
 Wait → A is a proper subset of CK = {A,C}. So A → B is a partial dependency. So R is in 1NF only.
 
@@ -1077,7 +1014,6 @@ Wait → A is a proper subset of CK = {A,C}. So A → B is a partial dependency.
 ---
 
 ### D19. [GATE 2021, 1M, SQL]
-
 Which of the following integrity constraints is checked LAST during a SQL UPDATE?
 
 (a) NOT NULL
@@ -1091,7 +1027,6 @@ Which of the following integrity constraints is checked LAST during a SQL UPDATE
 ---
 
 ### D20. [GATE 2021, 2M, Transaction]
-
 Consider the schedule: r1(A), r2(B), w2(A), w1(B). Is the schedule conflict serializable?
 
 (a) Yes
@@ -1109,7 +1044,6 @@ Graph: T1 → T2 and T2 → T1. Cycle! Not conflict serializable.
 ---
 
 ### D21. [GATE 2021, 2M, SQL]
-
 ```sql
 SELECT S.name
 FROM Student S
@@ -1136,7 +1070,6 @@ What does the query return?
 ---
 
 ### D22. [GATE 2020, 2M, Canonical Cover]
-
 R(A, B, C) with FDs: A → BC, B → C, A → B, AB → C. What is the canonical cover?
 
 (a) {A → B, B → C}
@@ -1154,7 +1087,6 @@ Remaining: {A → B, B → C}. This is the canonical cover.
 ---
 
 ### D23. [GATE 2020, 1M, SQL]
-
 What is the result of:
 ```sql
 SELECT COUNT(*) FROM (
@@ -1172,7 +1104,6 @@ SELECT COUNT(*) FROM (
 ---
 
 ### D24. [GATE 2020, 2M, Transaction]
-
 Schedule: r1(X), r2(Y), r1(Y), w2(X), w1(Y), w1(X). Is this conflict serializable?
 
 (a) Yes
@@ -1196,7 +1127,6 @@ So we have: T1 → T2 and T2 → T1. Cycle. Not conflict serializable.
 ---
 
 ### D25. [GATE 2020, 2M, SQL]
-
 ```sql
 SELECT e1.name
 FROM emp e1
@@ -1219,8 +1149,7 @@ This is an example of:
 ---
 
 ### D26. [GATE 2019, 2M, FD Closure]
-
-R(A, B, C, D, E) with FDs: A → B, B → C, C → D, D → E. What is AâÂÂ�º?
+R(A, B, C, D, E) with FDs: A â†’ B, B â†’ C, C â†’ D, D â†’ E. What is AÃ¢Âº?
 
 (a) {A, B}
 (b) {A, B, C}
@@ -1229,16 +1158,15 @@ R(A, B, C, D, E) with FDs: A → B, B → C, C → D, D → E. What is AâÂÂ�
 
 **Answer:** (d) {A, B, C, D, E}
 **Explanation:**
-Start: AâÂÂ�º = {A}
-A → B: AâÂÂ�º = {A, B}
-B → C: B ⊆ AâÂÂ�º, so AâÂÂ�º = {A, B, C}
-C → D: C ⊆ AâÂÂ�º, so AâÂÂ�º = {A, B, C, D}
-D → E: D ⊆ AâÂÂ�º, so AâÂÂ�º = {A, B, C, D, E}
+Start: AÃ¢Âº = {A}
+A â†’ B: AÃ¢Âº = {A, B}
+B â†’ C: B Ã¢Å â€  AÃ¢ÂÂº, so AÃ¢Âº = {A, B, C}
+C â†’ D: C Ã¢Å â€  AÃ¢ÂÂº, so AÃ¢Âº = {A, B, C, D}
+D â†’ E: D Ã¢Å â€  AÃ¢ÂÂº, so AÃ¢Âº = {A, B, C, D, E}
 
 ---
 
 ### D27. [GATE 2019, 1M, SQL]
-
 What does the SQL operator IS NULL check for?
 
 (a) Whether value is zero
@@ -1252,7 +1180,6 @@ What does the SQL operator IS NULL check for?
 ---
 
 ### D28. [GATE 2019, 2M, Transaction]
-
 Schedule S: w1(A), w1(B), r2(A), w2(B), w1(C), r2(C). Is this conflict serializable?
 
 (a) Yes
@@ -1273,7 +1200,6 @@ All edges T1 → T2. No cycle. Conflict serializable as T1, T2.
 ---
 
 ### D29. [GATE 2019, 2M, Normalization]
-
 R(A, B, C, D, E, F) with FDs: A → B, CD → E, B → D, E → F. What is the candidate key?
 
 (a) A
@@ -1283,14 +1209,13 @@ R(A, B, C, D, E, F) with FDs: A → B, CD → E, B → D, E → F. What is the c
 
 **Answer:** (b) AC
 **Explanation:**
-AâÂÂ�º = {A, B, D} → missing C, E, F
-CâÂÂ�º = {C} → missing
-ACâÂÂ�º = {A, C, B, D, E, F} = all attributes. Minimal? Check AâÂÂ�º (no), CâÂÂ�º (no). So AC is CK.
+AÃ¢Âº = {A, B, D} → missing C, E, F
+CÃ¢Âº = {C} → missing
+ACÃ¢ÂÂº = {A, C, B, D, E, F} = all attributes. Minimal? Check AÃ¢ÂÂº (no), CÃ¢Âº (no). So AC is CK.
 
 ---
 
 ### D30. [GATE 2018, 2M, B+ Tree]
-
 A B+ tree index with order p (max keys per internal node = p-1, max pointers = p) is built on a key attribute. If the tree height is 3 (root at level 0, leaves at level 2) and there are 10,000 keys, what is minimum p?
 
 (a) 20
@@ -1341,7 +1266,6 @@ So with p = 24, 4 levels, min keys = 3456 × 12 = 41472 ≥ 10000. So answer = 2
 ---
 
 ### D31. [GATE 2018, 2M, SQL]
-
 ```sql
 SELECT dept_name, COUNT(DISTINCT instructor_id)
 FROM teaches NATURAL JOIN instructor
@@ -1361,7 +1285,6 @@ What does this return?
 ---
 
 ### D32. [GATE 2018, 1M, ACID]
-
 Which ACID property ensures that concurrent execution of transactions results in a state equivalent to some serial execution?
 
 (a) Atomicity
@@ -1375,7 +1298,6 @@ Which ACID property ensures that concurrent execution of transactions results in
 ---
 
 ### D33. [GATE 2018, 2M, Transaction]
-
 Schedule S: r1(P), w2(Q), r3(R), w1(P), r2(R), w3(Q). Which is true?
 
 (a) Conflict serializable
@@ -1396,7 +1318,6 @@ Only edge: T2 → T3. No cycle. Conflict serializable (order: T1, T2, T3 or T2, 
 ---
 
 ### D34. [GATE 2017, 2M, Candidate Keys]
-
 R(A, B, C, D, E, F, G) with FDs: A → B, B → C, C → D, D → E, E → F, F → G. Find candidate keys.
 
 (a) A only
@@ -1406,13 +1327,12 @@ R(A, B, C, D, E, F, G) with FDs: A → B, B → C, C → D, D → E, E → F, F 
 
 **Answer:** (a) A only
 **Explanation:**
-AâÂÂ�º = {A, B, C, D, E, F, G} = all attributes. A is a minimal superkey.
-Check if any other: BâÂÂ�º = {B, C, D, E, F, G} → A missing. So A is the only CK.
+AÃ¢Âº = {A, B, C, D, E, F, G} = all attributes. A is a minimal superkey.
+Check if any other: BÃ¢Âº = {B, C, D, E, F, G} → A missing. So A is the only CK.
 
 ---
 
 ### D35. [GATE 2017, 1M, SQL]
-
 What is the difference between DELETE and TRUNCATE in SQL?
 
 (a) DELETE is DDL, TRUNCATE is DML
@@ -1426,7 +1346,6 @@ What is the difference between DELETE and TRUNCATE in SQL?
 ---
 
 ### D36. [GATE 2017, 2M, Transaction]
-
 Which of the following is TRUE about Two-Phase Locking (2PL)?
 
 (a) Guarantees conflict serializability
@@ -1440,7 +1359,6 @@ Which of the following is TRUE about Two-Phase Locking (2PL)?
 ---
 
 ### D37. [GATE 2016, 2M, Lossless Decomposition]
-
 R(A, B, C, D, E) with FDs: A → B, BC → D, D → E. Decompose into R1(A, B), R2(A, C, D, E). Is this lossless?
 
 (a) Yes
@@ -1451,12 +1369,11 @@ R(A, B, C, D, E) with FDs: A → B, BC → D, D → E. Decompose into R1(A, B), 
 **Answer:** (a) Yes
 **Explanation:**
 R1 ∩ R2 = {A}. Check if A is a superkey in either:
-AâÂÂ�º = {A, B}. In R1: {A, B} → A is key of R1. So A → R1. Lossless.
+AÃ¢Âº = {A, B}. In R1: {A, B} → A is key of R1. So A → R1. Lossless.
 
 ---
 
 ### D38. [GATE 2016, 1M, SQL Triggers]
-
 Which of the following events can activate a trigger in SQL?
 
 (a) INSERT only
@@ -1470,7 +1387,6 @@ Which of the following events can activate a trigger in SQL?
 ---
 
 ### D39. [GATE 2016, 2M, Recovery]
-
 In the ARIES recovery algorithm, what is the purpose of the Analysis phase?
 
 (a) Apply all committed transactions
@@ -1486,7 +1402,6 @@ In the ARIES recovery algorithm, what is the purpose of the Analysis phase?
 ---
 
 ### D40. [GATE 2016, 2M, Relational Algebra]
-
 Consider two relations R(A, B) and S(B, C). Which relational algebra expression is equivalent to R ⋈ S?
 
 (a) pi_{A,B,C}(sigma_{R.B = S.B}(R × S))
@@ -1500,7 +1415,6 @@ Consider two relations R(A, B) and S(B, C). Which relational algebra expression 
 ---
 
 ### D41. [GATE 2015, 2M, Normal Forms]
-
 R(A, B, C, D) with FDs: AB → C, C → D, D → A. In which normal form?
 
 (a) BCNF
@@ -1510,20 +1424,20 @@ R(A, B, C, D) with FDs: AB → C, C → D, D → A. In which normal form?
 
 **Answer:** (a) BCNF
 **Explanation:**
-Find CKs: ABâÂÂ�º = {A,B,C,D}. Also DâÂÂ�º = {A,D} → not all. CâÂÂ�º = {C,D,A} → CâÂÂ�º = {A,C,D} → B missing. 
-Actually: C → D, D → A. So CâÂÂ�º = {C, D, A}. Not all. But CD → A (trivial). 
+Find CKs: ABÃ¢ÂÂº = {A,B,C,D}. Also DÃ¢ÂÂº = {A,D} â†’ not all. CÃ¢ÂÂº = {C,D,A} â†’ CÃ¢Âº = {A,C,D} → B missing. 
+Actually: C â†’ D, D â†’ A. So CÃ¢Âº = {C, D, A}. Not all. But CD → A (trivial). 
 Let me be more careful:
 D → A, so every CK must include B since B only appears on LHS.
-Check if D is in CK? DâÂÂ�º = {D, A}. Not all.
-Check CD: CDâÂÂ�º = {C, D, A}. Still not all.
-Check BD: BDâÂÂ�º = {B, D, A, C} = all. So BD is a CK.
-Also BC: BCâÂÂ�º = {B, C, D, A} = all.
-Also AB: ABâÂÂ�º = {A, B, C, D} = all.
+Check if D is in CK? DÃ¢Âº = {D, A}. Not all.
+Check CD: CDÃ¢Âº = {C, D, A}. Still not all.
+Check BD: BDÃ¢Âº = {B, D, A, C} = all. So BD is a CK.
+Also BC: BCÃ¢Âº = {B, C, D, A} = all.
+Also AB: ABÃ¢Âº = {A, B, C, D} = all.
 So CKs are AB, BC, BD.
 
 Check BCNF:
 AB → C: AB is superkey ✓
-C → D: C is NOT a superkey (CâÂÂ�º = {C, D, A}). Violates BCNF.
+C â†’ D: C is NOT a superkey (CÃ¢Âº = {C, D, A}). Violates BCNF.
 So R is NOT in BCNF.
 
 Check 3NF: C → D. C not a superkey. Is D non-prime? D is non-prime (not part of any CK? Wait, D is part of CKs BD. So D is prime!). Since D is prime, C → D is allowed in 3NF even though C is not a superkey.
@@ -1535,7 +1449,6 @@ So R is in 3NF but not BCNF.
 ---
 
 ### D42. [GATE 2015, 1M, Hashing]
-
 In extendible hashing, when a bucket overflows and its local depth equals global depth:
 
 (a) Only the bucket splits
@@ -1549,7 +1462,6 @@ In extendible hashing, when a bucket overflows and its local depth equals global
 ---
 
 ### D43. [GATE 2015, 2M, Serializability]
-
 Schedule S: r1(A), w2(B), w1(C), r3(B), r1(B), w3(C). Is this conflict serializable?
 
 (a) Yes
@@ -1570,7 +1482,6 @@ Edges: T2 → T3, T2 → T1, T1 → T3. No cycle. Conflict serializable (T2, T1,
 ---
 
 ### D44. [GATE 2014, 2M, Division]
-
 Consider R(A, B) and S(B) where S contains {b1, b2}. Which of the following correctly represents R ÷ S?
 
 (a) {a | exists b1,b2 in R with B = b1 and B = b2}
@@ -1584,7 +1495,6 @@ Consider R(A, B) and S(B) where S contains {b1, b2}. Which of the following corr
 ---
 
 ### D45. [GATE 2014, 2M, B+ Tree]
-
 A B+ tree of order p (max keys) is used for indexing. Each node is one disk block (size 1024 bytes). Key = 12 bytes, pointer = 8 bytes. Max order p is:
 
 (a) 50
@@ -1604,7 +1514,6 @@ Order = 51 (maximum pointers per node).
 ---
 
 ### D46. [GATE 2014, 1M, SQL]
-
 ```sql
 SELECT *
 FROM R NATURAL LEFT OUTER JOIN S
@@ -1623,7 +1532,6 @@ What is wrong with this query?
 ---
 
 ### D47. [GATE 2014, 2M, Transaction]
-
 Consider schedule S: r1(A), r2(B), r1(C), w1(A), w2(B), r2(C), w1(C), w2(C). Which of the following is true?
 
 (a) S is conflict serializable as T1, T2
@@ -1645,7 +1553,6 @@ Edges: T2 → T1 and T1 → T2. Cycle! Not conflict serializable.
 ---
 
 ### D48. [GATE 2013, 2M, ER Model]
-
 Which of the following is NOT a valid reason to use weak entity sets?
 
 (a) To avoid NULL values in FK
@@ -1659,7 +1566,6 @@ Which of the following is NOT a valid reason to use weak entity sets?
 ---
 
 ### D49. [GATE 2013, 2M, Functional Dependencies]
-
 R(A, B, C, D, E, F) with FDs: A → B, BC → D, D → E, E → F. How many candidate keys?
 
 (a) 1
@@ -1670,13 +1576,12 @@ R(A, B, C, D, E, F) with FDs: A → B, BC → D, D → E, E → F. How many cand
 **Answer:** (a) 1
 **Explanation:**
 Attributes on LHS only: A, C. These must be in every CK.
-ACâÂÂ�º = {A, C, B, D, E, F} = all attributes. AC is a CK.
+ACÃ¢Âº = {A, C, B, D, E, F} = all attributes. AC is a CK.
 Check if any other: A alone → no (C missing). C alone → no (A missing). So only one CK = AC.
 
 ---
 
 ### D50. [GATE 2013, 2M, 2PL]
-
 A schedule follows 2PL. Which of the following is guaranteed?
 
 (a) Deadlock-free
@@ -1690,7 +1595,6 @@ A schedule follows 2PL. Which of the following is guaranteed?
 ---
 
 ### D51. [GATE 2012, 2M, SQL]
-
 ```sql
 SELECT S.name
 FROM Student S
@@ -1717,7 +1621,6 @@ What does this return? (MINUS = set difference)
 ---
 
 ### D52. [GATE 2012, 2M, Canonical Cover]
-
 R(A, B, C) with FDs: A → BC, AB → C, B → C. Find canonical cover.
 
 (a) {A → B, B → C, A → C}
@@ -1735,7 +1638,6 @@ Final: {A → B, B → C}
 ---
 
 ### D53. [GATE 2012, 2M, B-Tree]
-
 A B-tree of order 5 (max 4 keys, 5 children) initially empty. Insert: 1, 2, 3, 4, 5. What is the root key after all insertions?
 
 (a) 2
@@ -1752,7 +1654,6 @@ Root key = 3.
 ---
 
 ### D54. [GATE 2011, 2M, Relational Algebra]
-
 R(A, B) and S(B, C). Which expression gives all tuples in R that have a matching tuple in S?
 
 (a) R ⋈ S
@@ -1781,7 +1682,6 @@ So (a) and (c) are correct. If the answer is (d) All of these, the interpretatio
 ---
 
 ### D55. [GATE 2011, 2M, Normalization]
-
 R(A, B, C, D, E) with FDs: A → B, B → C, C → D, D → E. Decompose into R1(A, B) and R2(A, C, D, E). Is it dependency-preserving?
 
 (a) Yes
@@ -1798,7 +1698,6 @@ B → C: B no longer exists as a non-key in any relation. B → C is not project
 ---
 
 ### D56. [GATE 2010, 2M, ER-to-Relational]
-
 ER diagram has entities E1, E2 with M:N relationship R. What is the minimum number of tables needed?
 
 (a) 1
@@ -1812,7 +1711,6 @@ ER diagram has entities E1, E2 with M:N relationship R. What is the minimum numb
 ---
 
 ### D57. [GATE 2010, 1M, SQL]
-
 Which of the following is NOT a valid SQL data type?
 
 (a) VARCHAR
@@ -1826,7 +1724,6 @@ Which of the following is NOT a valid SQL data type?
 ---
 
 ### D58. [GATE 2010, 2M, Locking]
-
 Consider a table with 100 rows. T1 reads 50 rows, T2 reads all rows. What's the minimum locks held simultaneously under 2PL?
 
 (a) 50 shared, 100 shared
@@ -1840,7 +1737,6 @@ Consider a table with 100 rows. T1 reads 50 rows, T2 reads all rows. What's the 
 ---
 
 ### D59. [GATE 2025, 2M, SQL]
-
 Consider Employee(eid, ename, dept, salary). Which query finds departments where every employee earns more than 50000?
 
 ```sql
@@ -1861,7 +1757,6 @@ Is this correct?
 ---
 
 ### D60. [GATE 2024, 2M, B+ Tree Order]
-
 A B+ tree index has block size 2048 bytes. Key = 16 bytes, pointer = 8 bytes, block header = 40 bytes. What is the maximum order (max pointers per internal node)?
 
 **Answer:** p = 85
@@ -1893,7 +1788,6 @@ So p = 84.
 ---
 
 ### D61. [GATE 2023, 2M, 3NF Decomposition]
-
 R(A, B, C, D) with FDs: AB → C, C → D, D → A. Decompose into BCNF. Which decomposition(s) is/are dependency-preserving?
 
 (a) R1(A, C, D), R2(B, C)
@@ -1903,14 +1797,14 @@ R(A, B, C, D) with FDs: AB → C, C → D, D → A. Decompose into BCNF. Which d
 
 **Answer:** (b) R1(A, B, C), R2(C, D)
 **Explanation:**
-Find CKs: ABâÂÂ�º = {A,B,C,D}. DâÂÂ�º = {D,A}. CâÂÂ�º = {C,D,A} → B missing. BCâÂÂ�º = {B,C,D,A} = all.
+Find CKs: ABÃ¢ÂÂº = {A,B,C,D}. DÃ¢ÂÂº = {D,A}. CÃ¢ÂÂº = {C,D,A} â†’ B missing. BCÃ¢Âº = {B,C,D,A} = all.
 CKs: AB and BC.
 C → D violates BCNF (C is not superkey). Decompose: R1(A,B,C), R2(C,D).
 Check lossless: C is common, C → D holds in R2. ✓
 Check dependency-preserving:
 R1: AB → C holds. D → A? A is in R1 but D is not. Projected FDs on R1: AB → C.
 R2: C → D holds.
-D → A: checked by combining? In R1, AB → C, and from C → D (R2), we get AB → D. But D → A needs to hold. Since C → D and AB → C, we have AB → D. But D → A: DâÂÂ�º w.r.t. projected FDs = {D} in R2. So D → A is NOT preserved.
+D â†’ A: checked by combining? In R1, AB â†’ C, and from C â†’ D (R2), we get AB â†’ D. But D â†’ A needs to hold. Since C â†’ D and AB â†’ C, we have AB â†’ D. But D â†’ A: DÃ¢Âº w.r.t. projected FDs = {D} in R2. So D → A is NOT preserved.
 Hmm, so this is not dependency-preserving.
 
 Actually option (a): R1(A, C, D) with FDs C → D, D → A. R2(B, C) with no non-trivial FDs.
@@ -1925,7 +1819,6 @@ But among the options, (b) is the best/correct BCNF decomposition. GATE answer w
 ---
 
 ### D62. [GATE 2022, 2M, SQL Aggregation]
-
 ```sql
 SELECT dept, COUNT(*) AS cnt
 FROM instructor
@@ -1946,7 +1839,6 @@ The alias `cnt` is used in HAVING. Is this valid SQL?
 ---
 
 ### D63. [GATE 2021, 2M, View Serializability]
-
 Schedule S: r1(A), w2(A), r2(B), w1(B). Which is TRUE?
 
 (a) Conflict serializable
@@ -1974,7 +1866,6 @@ So view serializable but not conflict serializable.
 ---
 
 ### D64. [GATE 2020, 2M, Dependency Preservation]
-
 R(A, B, C, D) with FDs: A → B, A → C, C → D. Decompose into R1(A, B, C) and R2(C, D). Is this dependency-preserving?
 
 (a) Yes
@@ -1991,7 +1882,6 @@ All FDs: A → B (R1), A → C (R1), C → D (R2). All preserved. ✓
 ---
 
 ### D65. [GATE 2019, 2M, Relational Algebra Equivalence]
-
 Which of the following is NOT equivalent to sigma_{c1 ∧ c2}(R)?
 
 (a) sigma_{c1}(sigma_{c2}(R))
@@ -2003,12 +1893,11 @@ Which of the following is NOT equivalent to sigma_{c1 ∧ c2}(R)?
 **Explanation:** sigma_{c1 ∧ c2}(R) selects tuples satisfying BOTH conditions.
 (a) and (b) are equivalent by cascading select.
 (c) Intersection of sigma_{c1}(R) and sigma_{c2}(R) gives tuples in both = satisfying both. ✓
-(d) Union gives tuples satisfying at least one condition. âœ— (gives more tuples).
+(d) Union gives tuples satisfying at least one condition. ✗ (gives more tuples).
 
 ---
 
 ### D66. [GATE 2018, 2M, MVCC]
-
 In Multiversion Concurrency Control, a read operation:
 
 (a) Always reads the latest committed version
@@ -2022,7 +1911,6 @@ In Multiversion Concurrency Control, a read operation:
 ---
 
 ### D67. [GATE 2017, 2M, B+ Tree Deletion]
-
 A B+ tree of order d (max keys = 2d) has root with 5 keys after deletions. The root needs to merge with siblings. What condition triggers merging?
 
 (a) Root has &lt; 2 keys
@@ -2036,7 +1924,6 @@ A B+ tree of order d (max keys = 2d) has root with 5 keys after deletions. The r
 ---
 
 ### D68. [GATE 2017, 1M, Relational Calculus]
-
 Which of the following is a safe expression in tuple relational calculus?
 
 (a) {t | ¬(t ∈ R)}
@@ -2050,7 +1937,6 @@ Which of the following is a safe expression in tuple relational calculus?
 ---
 
 ### D69. [GATE 2018, 1M, File Organization]
-
 A clustered index on a non-key attribute means:
 
 (a) Data file is sorted by that attribute
@@ -2064,7 +1950,6 @@ A clustered index on a non-key attribute means:
 ---
 
 ### D70. [GATE 2016, 2M, SQL]
-
 ```sql
 SELECT dept_name, AVG(salary) AS avg_sal
 FROM instructor
@@ -2085,7 +1970,6 @@ What does this return?
 ---
 
 ### D71. [GATE 2015, 2M, Candidate Keys]
-
 R(A, B, C, D, E, F) with FDs: AB → C, C → D, D → E, E → F, F → A. Find candidate keys.
 
 (a) AB, BC, CD, DE, EF
@@ -2099,9 +1983,9 @@ Note: B only appears on LHS (in AB, BC). So B must be in every CK... no, actuall
 Closing loops: A → ... → A. F → A → ... → A.? Actually F → A, A → ... → F. So A and F are in a cycle.
 All attributes are in a cycle: A → B? No. AB → C, C → D, D → E, E → F, F → A.
 B is on LHS only. So B must be in every CK.
-ABâÂÂ�º: {A,B} → C → D → E → F → A = all. CK = AB.
-BCâÂÂ�º: {B,C} → D → E → F → A → ... → B = all. CK = BC.
-CDâÂÂ�º: {C,D} → E → F → A → ... → ... wait, A with what? We need to derive B. CDâÂÂ�º = {C,D,E,F,A} → B missing. CD is NOT a CK since B is missing.
+ABÃ¢Âº: {A,B} → C → D → E → F → A = all. CK = AB.
+BCÃ¢Âº: {B,C} → D → E → F → A → ... → B = all. CK = BC.
+CDÃ¢ÂÂº: {C,D} â†’ E â†’ F â†’ A â†’ ... â†’ ... wait, A with what? We need to derive B. CDÃ¢Âº = {C,D,E,F,A} → B missing. CD is NOT a CK since B is missing.
 Hmm. Let me recheck: From the FDs, the only way to get B is if B is already in the set. B only appears on LHS, not RHS.
 Wait: F → A. Does A give us B? AB → C, but we need B. A alone doesn't give B.
 So B is never on RHS. B must be in every CK.
@@ -2113,7 +1997,6 @@ GATE 2015 answer was (a) AB, BC.
 ---
 
 ### D72. [GATE 2014, 2M, Transaction Isolation]
-
 Which isolation level allows phantom reads?
 
 (a) READ UNCOMMITTED and READ COMMITTED
@@ -2131,7 +2014,6 @@ Which isolation level allows phantom reads?
 ---
 
 ### D73. [GATE 2013, 1M, ACID]
-
 Which property ensures that either all operations of a transaction complete or none do?
 
 (a) Atomicity
@@ -2145,7 +2027,6 @@ Which property ensures that either all operations of a transaction complete or n
 ---
 
 ### D74. [GATE 2012, 2M, Conflict Serializability]
-
 Schedule S: r1(A), r2(A), w1(B), w2(B), r1(C), r2(C). Is this conflict serializable?
 
 (a) Yes, T1 → T2
@@ -2168,7 +2049,6 @@ Wait that IS acyclic. So it IS conflict serializable as T1, T2.
 ---
 
 ### D75. [GATE 2011, 1M, SQL]
-
 Which of the following is not a DDL command?
 
 (a) CREATE
@@ -2312,7 +2192,7 @@ flowchart LR
     A --> F[Transactions]
     A --> G[Indexing]
     B --> B1[Entities, Relationships, Attributes]
-    C --> C1[Relational Algebra: Ã�ƒ, Ã�€, ⋈, ÷]
+    C --> C1[Relational Algebra: σ, π, ⋈, ÷]
     D --> D1[DDL, DML, Nested Queries]
     E --> E1[FDs, Candidate Keys, BCNF, 3NF]
     F --> F1[ACID, Serializability, 2PL]

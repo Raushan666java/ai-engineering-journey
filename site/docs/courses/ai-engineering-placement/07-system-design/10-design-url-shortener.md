@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design/10-design-url-shortener
 title: "Design URL Shortener — Hashing, Redirects, Analytics"
 sidebar_label: "Design URL Shortener — Hashing, Redirects, Analytics"
 sidebar_position: 105
+description: "Design URL Shortener — Hashing, Redirects, Analytics: System design interviews test your ability to architect large-scale systems. Caching, load"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/15-ai-evaluation-observability/02-llm-as-judge
 title: "LLM-as-Judge"
 sidebar_label: "LLM-as-Judge"
 sidebar_position: 199
+description: "LLM-as-Judge: You cannot improve what you cannot measure. Evaluation metrics, LLM-as-judge, and observability tools help you monitor and improve AI"
 ---
 
 <!-- improved -->

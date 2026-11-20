@@ -1,3 +1,7 @@
+---
+description: "Pipelines that hold up: ETL versus ELT, Spark, dbt, streaming and lakehouse patterns for AI workloads."
+---
+
 # 25 — Data Engineering for AI Engineers
 
 ## Module Overview

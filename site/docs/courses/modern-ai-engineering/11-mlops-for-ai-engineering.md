@@ -4,6 +4,7 @@ slug: /modern-ai-engineering/11-mlops-for-ai-engineering
 title: "Chapter 11: MLOps for AI Engineering"
 sidebar_label: "Chapter 11: MLOps for AI Engineering"
 sidebar_position: 11
+description: "Adapt MLOps practices for the unique challenges of AI engineering. Master experiment tracking, prompt management, CI/CD pipelines, data and model"
 ---
 
 # Chapter 11: MLOps for AI Engineering

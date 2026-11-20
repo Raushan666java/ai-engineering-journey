@@ -4,6 +4,7 @@ slug: /laravel/02-architecture-routing
 title: "Chapter 2: Architecture, Routing, Middleware & Controllers"
 sidebar_label: "Chapter 2: Architecture, Routing, Middleware & Controllers"
 sidebar_position: 2
+description: "Step 1 → public/index.php: This single entry point (configured in Nginx or Apache) records the start time, loads Composer's autoloader, bootstraps the"
 ---
 
 # Chapter 2: Architecture, Routing, Middleware & Controllers

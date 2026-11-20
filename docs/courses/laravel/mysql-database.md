@@ -1,3 +1,7 @@
+---
+description: "MySQL & Database Design: One-Sentence Takeaway: Theory is the foundation → master it before moving to examples and exercises. One-Sentence Takeaway"
+---
+
 # MySQL & Database Design
 
 ---

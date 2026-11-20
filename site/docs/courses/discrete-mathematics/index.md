@@ -1,3 +1,7 @@
+---
+description: "Discrete mathematics is the study of mathematical structures that are fundamentally discrete (countable, distinct, separable) rather than continuous. It"
+---
+
 ﻿---
 id: index
 slug: /discrete-mathematics

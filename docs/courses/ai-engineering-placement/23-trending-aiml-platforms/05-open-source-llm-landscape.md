@@ -1,3 +1,7 @@
+---
+description: "The open-source LLM landscape has transformed dramatically. By mid-2026, open-weight models rival or surpass proprietary alternatives on key benchmarks —"
+---
+
 <!-- improved -->
 # 23.05 — Open Source LLM Landscape
 

@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: requests makes HTTP calls simple; use Session for connection reuse across requests. Remember: Always handle HTTP errors — check"
+---
+
 # Chapter 19: APIs and Testing
 
 

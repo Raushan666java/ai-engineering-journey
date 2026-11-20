@@ -1,3 +1,7 @@
+---
+description: "Reading is the slowest part of studying, and re-reading is the most wasteful part of the week. This chapter wires AI into the entire reading workflow —"
+---
+
 # Chapter 7: Speed Reading & Summarization
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

@@ -4,6 +4,7 @@ slug: /java/66-interview-behavioral
 title: "66. Behavioral Interview — Q&A"
 sidebar_label: "66. Behavioral Interview — Q&A"
 sidebar_position: 74
+description: "This chapter covers behavioral interview preparation for Java backend engineers. It includes the STAR method, common behavioral questions with structured"
 ---
 
 # 66. Behavioral Interview — Q&A

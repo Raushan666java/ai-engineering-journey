@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will have a structured practice plan covering all major DSA patterns, know which problems to solve for each company, and be able to"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # DSA Problem Bank: 100+ Curated Problems

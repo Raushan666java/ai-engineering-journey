@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/06-docker-kubernetes-cloud/visual-notes
 title: "Visual Notes — Container-to-Cloud Deployment Stack"
 sidebar_label: "Visual Notes"
 sidebar_position: 95
+description: "One-line answer for interviews: 'My image is built once, versioned in a registry, and orchestrated by Kubernetes regardless of which cloud runs it.'"
 ---
 
 # Visual Notes — Container-to-Cloud Deployment Stack

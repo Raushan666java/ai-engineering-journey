@@ -4,6 +4,7 @@ slug: /system-design/02-scalability-load-balancing
 title: "Chapter 2: Scalability and Load Balancing"
 sidebar_label: "Chapter 2: Scalability and Load Balancing"
 sidebar_position: 2
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Vertical scaling adds resources to a single machine: more"
 ---
 
 # Chapter 2: Scalability and Load Balancing

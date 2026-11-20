@@ -1,3 +1,7 @@
+---
+description: "A camera produces a 2D image. A LIDAR produces a set of 3D points with no ordering. A structure-from-motion pipeline produces a sparse cloud of 3D"
+---
+
 # 3D Vision — Point Clouds & NeRFs
 
 > 3D vision comes in two flavours. Point clouds are the sensor's raw output. NeRFs are the learned volumetric field. Both answer "what is where in space."

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/16-mlops-production/07-cost-management
 title: "Cost Management"
 sidebar_label: "Cost Management"
 sidebar_position: 212
+description: "Cost Management: MLOps bridges the gap between experiment and production. Experiment tracking, CI/CD, model serving, and drift monitoring keep AI systems"
 ---
 
 <!-- improved -->

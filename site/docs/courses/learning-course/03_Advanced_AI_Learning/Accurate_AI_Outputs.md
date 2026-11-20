@@ -3,6 +3,7 @@ slug: /learning-course/03_Advanced_AI_Learning/Accurate_AI_Outputs
 title: "🎯 Getting Accurate AI Outputs - Master Guide"
 sidebar_label: "🎯 Getting Accurate AI Outputs - Master Guide"
 sidebar_position: 1
+description: "Remember: Accuracy is not about perfect AI - it's about precise prompts that consistently deliver exactly what you need for effective learning."
 ---
 # 🎯 Getting Accurate AI Outputs - Master Guide
 

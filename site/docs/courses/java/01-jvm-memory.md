@@ -4,6 +4,7 @@ slug: /java/01-jvm-memory
 title: "JVM Architecture & Memory Management"
 sidebar_label: "JVM Architecture & Memory Management"
 sidebar_position: 1
+description: "Pro Tip: Always start tuning with a clear goal — minimize pause time (G1/ZGC) or maximize throughput (Parallel). Guessing GC flags without metrics is"
 ---
 
 # JVM Architecture & Memory Management

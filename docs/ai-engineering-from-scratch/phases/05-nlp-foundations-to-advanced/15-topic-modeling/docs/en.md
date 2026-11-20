@@ -1,3 +1,7 @@
+---
+description: "LDA: documents are mixtures of topics, topics are distributions over words. BERTopic: documents cluster in embedding space, clusters are topics. Same"
+---
+
 # Topic Modeling — LDA and BERTopic
 
 > LDA: documents are mixtures of topics, topics are distributions over words. BERTopic: documents cluster in embedding space, clusters are topics. Same goal, different decompositions.

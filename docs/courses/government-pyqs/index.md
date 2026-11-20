@@ -1,3 +1,7 @@
+---
+description: "Your ultimate resource for cracking the IBPS Specialist Officer (IT) examination. This guide covers exam pattern, topic-wise weightage, cutoff trends"
+---
+
 # IBPS SO IT Officer Scale 1 — Complete Preparation Guide
 
 > Your ultimate resource for cracking the IBPS Specialist Officer (IT) examination. This guide covers exam pattern, topic-wise weightage, cutoff trends, preparation strategy, and a comprehensive study plan.

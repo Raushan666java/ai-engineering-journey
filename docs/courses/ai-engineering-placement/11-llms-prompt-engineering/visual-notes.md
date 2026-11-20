@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'System prompt sets the role, user input asks, the model generates — then tools and iteration sharpen the answer.'"
+---
+
 # Visual Notes — The LLM Interaction Loop
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

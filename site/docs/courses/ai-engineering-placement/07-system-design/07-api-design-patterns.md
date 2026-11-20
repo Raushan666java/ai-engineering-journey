@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design/07-api-design-patterns
 title: "API Design Patterns — REST, GraphQL, gRPC, Webhooks"
 sidebar_label: "API Design Patterns — REST, GraphQL, gRPC, Webhooks"
 sidebar_position: 102
+description: "API Design Patterns — REST, GraphQL, gRPC, Webhooks: System design interviews test your ability to architect large-scale systems. Caching, load balancing"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /system-design/12-lld-component-design
 title: "Chapter 12: Low-Level Design: Component and Class Design"
 sidebar_label: "Chapter 12: Low-Level Design: Component and Class Design"
 sidebar_position: 12
+description: "Class Notation: A class is drawn as a rectangle divided into three compartments: the top holds the class name (bold, centered), the middle lists"
 ---
 
 # Chapter 12: Low-Level Design: Component and Class Design

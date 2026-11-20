@@ -1,3 +1,7 @@
+---
+description: "A month later, someone retrains the model and gets different results. The median was computed on the full dataset including test data (data leakage). The"
+---
+
 # ML Pipelines
 
 > A model is not a product. A pipeline is. The pipeline is everything from raw data to deployed prediction, and every step must be reproducible.

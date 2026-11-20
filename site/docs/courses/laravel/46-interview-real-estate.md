@@ -4,6 +4,7 @@ slug: /laravel/46-interview-real-estate
 title: "Chapter 46: Real Estate & Property Interview Q&A"
 sidebar_label: "Chapter 46: Real Estate & Property Interview Q&A"
 sidebar_position: 46
+description: "Common interview questions for Laravel developer roles in real estate technology (PropTech), property management SaaS, and real estate platform companies"
 ---
 
 # Chapter 46: Real Estate & Property Interview Q&A

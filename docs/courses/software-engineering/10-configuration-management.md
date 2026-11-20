@@ -1,3 +1,7 @@
+---
+description: "Software Configuration Management (SCM) is the discipline of controlling the evolution of software systems throughout their lifecycle. It answers the"
+---
+
 # Configuration Management
 
 ## Learning Objectives

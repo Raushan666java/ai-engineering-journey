@@ -4,6 +4,7 @@ slug: /discrete-mathematics/03-predicates
 title: "Chapter 3: Predicates and Quantifiers"
 sidebar_label: "Chapter 3: Predicates and Quantifiers"
 sidebar_position: 3
+description: "A predicate $P(x)$ is a statement whose truth depends on the value of the variable $x$. The domain of $x$ is the set of values it may take. Once $x$ is"
 ---
 
 # Chapter 3: Predicates and Quantifiers

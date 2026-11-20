@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to design a production recommendation system from data ingestion to serving, architect a model serving platform with"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # ML System Design: Recommendation Systems and Model Serving

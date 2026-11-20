@@ -4,6 +4,7 @@ slug: /laravel/09-container-packages
 title: "Chapter 9: Service Container, Facades & Package Development"
 sidebar_label: "Chapter 9: Service Container, Facades & Package Development"
 sidebar_position: 9
+description: "One-Sentence Takeaway: The service container manages class dependencies and performs automatic resolution, serving as the foundation of Laravel's IoC"
 ---
 
 # Chapter 9: Service Container, Facades & Package Development

@@ -4,6 +4,7 @@ slug: /java/55-observability
 title: "Observability (Micrometer, Prometheus, Grafana)"
 sidebar_label: "Observability (Micrometer, Prometheus, Grafana)"
 sidebar_position: 55
+description: "Observability (Micrometer, Prometheus, Grafana): C) The one with best operational characteristics. Production choices should prioritize observability"
 ---
 
 # Observability (Micrometer, Prometheus, Grafana)

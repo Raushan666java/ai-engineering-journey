@@ -1,3 +1,7 @@
+---
+description: "TF-IDF knows dog and puppy are different words. It does not know they mean nearly the same thing. A classifier trained on dog cannot generalize to a"
+---
+
 # Word Embeddings — Word2Vec from Scratch
 
 > A word is the company it keeps. Train a shallow net on that idea and geometry falls out.

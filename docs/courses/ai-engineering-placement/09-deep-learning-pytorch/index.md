@@ -1,3 +1,7 @@
+---
+description: "Neural networks from tensors up: backpropagation, CNNs, RNNs, training loops and debugging in PyTorch."
+---
+
 # 09 — Deep Learning with PyTorch
 
 ## Overview

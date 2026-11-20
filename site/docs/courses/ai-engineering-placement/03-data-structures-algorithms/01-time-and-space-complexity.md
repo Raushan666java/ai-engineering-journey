@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/01-time-and-space-
 title: "Time and Space Complexity"
 sidebar_label: "Time and Space Complexity"
 sidebar_position: 38
+description: "Understanding time and space complexity is the foundation of every technical interview and the first step toward building efficient AI systems. When an ML"
 ---
 
 <!-- improved -->

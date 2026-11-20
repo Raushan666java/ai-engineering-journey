@@ -1,3 +1,7 @@
+---
+description: "Imagine you are building the file system on your computer. Every folder can contain files or subfolders — but each folder has exactly one parent (except"
+---
+
 # Chapter 8: Binary Trees
 
 > **Previous:** [Chapter 7: Hash Tables](./07-hash-tables.md) | **Next:** [Binary Search Trees](./09-bst.md)

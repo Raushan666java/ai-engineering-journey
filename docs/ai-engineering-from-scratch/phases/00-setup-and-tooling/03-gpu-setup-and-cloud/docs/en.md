@@ -1,3 +1,7 @@
+---
+description: "Most lessons in phases 1-3 run fine on CPU. But once you start training CNNs, transformers, or LLMs (phases 4+), you need GPU acceleration. A training run"
+---
+
 # GPU Setup & Cloud
 
 > Training on CPU is fine for learning. Training for real needs a GPU.

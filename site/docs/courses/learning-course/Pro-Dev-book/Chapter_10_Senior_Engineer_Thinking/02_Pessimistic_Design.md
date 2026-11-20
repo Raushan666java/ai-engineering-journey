@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_10_Senior_Engineer_Thinking/02_Pessi
 title: "🌧️ Pessimistic Design"
 sidebar_label: "🌧️ Pessimistic Design"
 sidebar_position: 2
+description: "Junior developers program for the 'Happy Path.' They write logic that assumes the user behaves perfectly, the specific data requested always exists, the"
 ---
 # 🌧️ Pessimistic Design
 

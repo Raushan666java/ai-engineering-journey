@@ -1,3 +1,7 @@
+---
+description: "How LLMs actually behave: context windows, sampling, structured output, prompt patterns and their failure modes."
+---
+
 # 11 — LLMs & Prompt Engineering
 
 ## Overview

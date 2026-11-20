@@ -4,6 +4,7 @@ slug: /big-data/01-introduction
 title: "Chapter 1: Introduction to Big Data"
 sidebar_label: "Chapter 1: Introduction to Big Data"
 sidebar_position: 1
+description: "Volume ? The quantity of data. A single dataset can be terabytes or petabytes. At this scale, moving data to the compute engine is impossible; compute"
 ---
 
 # Chapter 1: Introduction to Big Data

@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_06_Prompt_Engineering_For_Learning/0
 title: "❓ The Socratic Dialogue Prompting"
 sidebar_label: "❓ The Socratic Dialogue Prompting"
 sidebar_position: 3
+description: "When you encounter code you do not understand, or when you are stuck on a deeply confusing architectural bug, you should use Socratic prompting to force"
 ---
 # ❓ The Socratic Dialogue Prompting
 

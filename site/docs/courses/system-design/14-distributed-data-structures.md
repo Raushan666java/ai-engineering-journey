@@ -4,6 +4,7 @@ slug: /system-design/14-distributed-data-structures
 title: "Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond"
 sidebar_label: "Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond"
 sidebar_position: 14
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Consistent hashing maps keys to nodes in a hash ring (range"
 ---
 
 # Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond

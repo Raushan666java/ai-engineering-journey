@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/02-sql-and-databases/06-set-operations
 title: "Set Operations — UNION, INTERSECT, EXCEPT, UNION ALL"
 sidebar_label: "Set Operations — UNION, INTERSECT, EXCEPT, UNION ALL"
 sidebar_position: 31
+description: "Set Operations — UNION, INTERSECT, EXCEPT, UNION ALL: Data is the fuel of AI. SQL and database design skills let you query, transform, and store the data"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /professional-knowledge/04-data-structures
 title: "Chapter 4: Data Structures — Exam Quick Revision"
 sidebar_label: "Chapter 4: Data Structures — Exam Quick Revision"
 sidebar_position: 4
+description: "Answer: (b) Merge sort. Worst-case comparisons = n log n − n + 1 ≈ n log n. Quick sort worst case is O(n^2). Lower bound for comparison-based sorting is"
 ---
 
 # Chapter 4: Data Structures — Exam Quick Revision

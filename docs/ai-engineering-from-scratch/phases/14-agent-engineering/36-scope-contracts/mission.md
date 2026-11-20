@@ -1,3 +1,7 @@
+---
+description: "Write a per-task scope_contract.json and a glob-aware checker that compares the agent's diff against the contract and flags any forbidden or off-scope"
+---
+
 # Mission - Scope Contracts and Task Boundaries
 
 ## Goal

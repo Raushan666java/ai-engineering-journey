@@ -4,6 +4,7 @@ slug: /cyber-security/17-ai-security-adversarial-ml
 title: "Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes"
 sidebar_label: "Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes"
 sidebar_position: 16
+description: "Prereq: Chapters 5 (Web Security), 3 (Network Security); familiarity with basic ML concepts (features, classification, loss functions). Target Audience"
 ---
 
 # Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes

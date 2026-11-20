@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/29-research-reading/02-keeping-up-with-ai
 title: "Keeping Up with AI Research"
 sidebar_label: "Keeping Up with AI Research"
 sidebar_position: 340
+description: "AI research moves fast. Over 10,000 papers are published monthly on arXiv alone. New models, datasets, and techniques emerge weekly. Keeping up is not"
 ---
 
 <!-- improved -->

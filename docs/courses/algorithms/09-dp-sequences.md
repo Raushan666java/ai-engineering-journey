@@ -1,3 +1,7 @@
+---
+description: "Chapter 8: Dynamic Programming — Knapsack Problems — 2D DP tables, recurrence design | Next: Chapter 10: Dynamic Programming — Trees & Grids — DP on"
+---
+
 # Chapter 9: Dynamic Programming — Sequences
 
 > **Prerequisites:** [Chapter 8: Dynamic Programming — Knapsack Problems](./08-dp-knapsack.md) — 2D DP tables, recurrence design | **Next:** [Chapter 10: Dynamic Programming — Trees & Grids](./10-dp-trees-grids.md) — DP on non-linear structures

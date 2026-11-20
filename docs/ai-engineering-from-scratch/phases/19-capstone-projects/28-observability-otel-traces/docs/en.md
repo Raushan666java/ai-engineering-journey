@@ -1,3 +1,7 @@
+---
+description: "An agent harness without observability is a black box that costs money. This lesson hand-rolls a span builder that emits records compliant with the"
+---
+
 # Capstone Lesson 28: Observability with OTel GenAI Spans and Prometheus Metrics
 
 > An agent harness without observability is a black box that costs money. This lesson hand-rolls a span builder that emits records compliant with the OpenTelemetry GenAI semantic conventions, writes them to a JSON-Lines file one span per line, and exposes counters and histograms in Prometheus text format. The whole thing is stdlib Python and runs offline.

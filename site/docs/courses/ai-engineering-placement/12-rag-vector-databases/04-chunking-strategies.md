@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/04-chunking-strategies
 title: "Chunking Strategies"
 sidebar_label: "Chunking Strategies"
 sidebar_position: 161
+description: "Understanding chunking strategies is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework"
 ---
 
 <!-- improved -->

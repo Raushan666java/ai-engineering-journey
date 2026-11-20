@@ -4,6 +4,7 @@ slug: /algorithms/15-np-completeness
 title: "Chapter 15: NP-Completeness"
 sidebar_label: "Chapter 15: NP-Completeness"
 sidebar_position: 15
+description: "Chapter 14: String Algorithms — Understanding of polynomial-time algorithms | Next: Chapter 16: Approximation Algorithms — Coping with NP-hardness via"
 ---
 
 # Chapter 15: NP-Completeness

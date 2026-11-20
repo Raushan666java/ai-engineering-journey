@@ -1,3 +1,7 @@
+---
+description: "A complete aptitude training course covering quantitative ability, logical reasoning, verbal ability, and data interpretation — from foundational concepts"
+---
+
 # General Aptitude
 
 > A complete aptitude training course covering quantitative ability, logical reasoning, verbal ability, and data interpretation — from foundational concepts to advanced problem-solving for competitive exams, campus placements, and interviews.

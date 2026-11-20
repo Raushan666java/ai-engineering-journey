@@ -1,3 +1,7 @@
+---
+description: "JDBC (Java Database Connectivity) is inherently blocking. Every ResultSet.next(), PreparedStatement.executeQuery(), and Connection.commit() blocks the"
+---
+
 # Chapter 46: R2DBC & Reactive Data Access
 
 > **Previous:** [Spring WebFlux](./45-webflux.md) | **Next:** [Spring AI](./47-spring-ai.md)

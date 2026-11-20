@@ -4,6 +4,7 @@ slug: /cyber-security/18-privacy-osint
 title: "Chapter 18: Digital Privacy, Anonymity & OSINT"
 sidebar_label: "Chapter 18: Digital Privacy, Anonymity & OSINT"
 sidebar_position: 17
+description: "Prereq: Chapters 3 (Network Security), 5 (Web Security), 2 (Cryptography); familiarity with TCP/IP, HTTP, DNS, and basic encryption concepts. Target"
 ---
 
 # Chapter 18: Digital Privacy, Anonymity & OSINT

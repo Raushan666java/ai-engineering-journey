@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to handle sentence correction, reading comprehension, para jumbles, cloze tests, and vocabulary questions in the"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Verbal Ability & English for Campus Placements

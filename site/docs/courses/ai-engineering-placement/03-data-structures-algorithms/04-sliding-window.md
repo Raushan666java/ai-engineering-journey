@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/04-sliding-window
 title: "Sliding Window"
 sidebar_label: "Sliding Window"
 sidebar_position: 41
+description: "Linked lists form the backbone of many advanced data structures like stacks, queues, and graphs. Mastering pointer manipulation and linked list algorithms"
 ---
 
 <!-- improved -->

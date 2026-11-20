@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: File is simplest for development, Redis is the production workhorse with tag support, and DynamoDB offers managed serverless"
+---
+
 # Chapter 11: Caching, Performance & Octane
 > **Previous:** [Testing, Debugging & Observability](./10-testing-observability) | **Next:** [Laravel AI SDK -- Agents, Prompting & Structured Output](./12-ai-sdk-agents)
 

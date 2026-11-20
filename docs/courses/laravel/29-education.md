@@ -1,3 +1,7 @@
+---
+description: "Every EdTech application begins with the core domain models. Students enroll in courses, complete assessments, and receive grades. We build these models"
+---
+
 # Chapter 29: Education & EdTech
 
 > **Previous:** [Finance](./28-finance.md) | **Next:** [Logistics](./30-logistics.md)

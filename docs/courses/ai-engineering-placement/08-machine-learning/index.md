@@ -1,3 +1,7 @@
+---
+description: "Classical ML you can defend: regression, trees, ensembles and honest evaluation. The maths interviewers actually probe."
+---
+
 # 08 — Machine Learning
 
 ## Overview

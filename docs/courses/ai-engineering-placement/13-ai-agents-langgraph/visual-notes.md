@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'LLM decides → a tool executes → the result is observed → the loop repeats until the task is done.'"
+---
+
 # Visual Notes — The Agent Loop
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

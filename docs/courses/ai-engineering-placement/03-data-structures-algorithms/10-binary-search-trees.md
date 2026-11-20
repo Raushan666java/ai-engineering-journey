@@ -1,3 +1,7 @@
+---
+description: "Tries (prefix trees) are specialized trees for efficient string operations. They provide O(m) lookup where m is the key length, making them ideal for"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Binary Search Trees

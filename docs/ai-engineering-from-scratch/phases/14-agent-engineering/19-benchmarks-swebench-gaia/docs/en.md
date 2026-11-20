@@ -1,3 +1,7 @@
+---
+description: "Three benchmarks anchor agent evaluation in 2026. SWE-bench tests code patching. GAIA tests generalist tool use. AgentBench tests multi-environment"
+---
+
 # Benchmarks: SWE-bench, GAIA, AgentBench
 
 > Three benchmarks anchor agent evaluation in 2026. SWE-bench tests code patching. GAIA tests generalist tool use. AgentBench tests multi-environment reasoning. Know their composition, their contamination story, and what they do not measure.

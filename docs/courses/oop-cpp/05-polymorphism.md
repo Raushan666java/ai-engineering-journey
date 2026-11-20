@@ -1,3 +1,7 @@
+---
+description: "You have a universal remote with a single 'Play' button. Point it at a DVD Player, and it starts spinning the disc. Point it at a Streaming Stick, and it"
+---
+
 # Chapter 5: Polymorphism
 
 > **Previous:** [Inheritance](./04-inheritance.md) | **Next:** [Operator Overloading](./06-operator-overloading.md)

@@ -1,3 +1,7 @@
+---
+description: "You have data ordered by time. Daily sales, hourly temperature, per-minute CPU usage, weekly stock prices. You want to predict the next value, the next"
+---
+
 # Time Series Fundamentals
 
 > Past performance does predict future results -- if you check for stationarity first.

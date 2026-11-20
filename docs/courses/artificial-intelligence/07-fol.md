@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy (Contract Law): Propositional Logic is like a checklist of facts — 'It is raining,' 'The contract was signed.' But contracts are far"
+---
+
 # Chapter 7: First-Order Logic and Inference
 
 **Previous:** [Chapter 6: Knowledge Representation](06-knowledge-representation.md) | **Next:** [Chapter 7: Logical Reasoning and Inference](07-logical-reasoning.md)

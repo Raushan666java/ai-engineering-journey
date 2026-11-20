@@ -4,6 +4,7 @@ slug: /java/12-configuration
 title: "Application Properties & Configuration"
 sidebar_label: "Application Properties & Configuration"
 sidebar_position: 12
+description: "Pro Tip: Always externalize environment-specific configuration. Database URLs, credentials, and API keys should never be hardcoded — use environment"
 ---
 
 # Application Properties & Configuration

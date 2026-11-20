@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/10-nlp-transformers/02-word-embeddings
 title: "Word Embeddings — Word2Vec, GloVe, FastText, Subword Tokenization"
 sidebar_label: "Word Embeddings — Word2Vec, GloVe, FastText, Subword Tokenization"
 sidebar_position: 139
+description: "Word Embeddings — Word2Vec, GloVe, FastText, Subword Tokenization: Natural language processing is how machines understand human text. Transformers"
 ---
 
 <!-- improved -->

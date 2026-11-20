@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/24-statistics-mathematics/04-correlation-regress
 title: "Chapter 04: Correlation & Regression Analysis"
 sidebar_label: "Chapter 04: Correlation & Regression Analysis"
 sidebar_position: 302
+description: "Correlation and regression analysis form the statistical backbone for understanding relationships between variables in AI and machine learning"
 ---
 
 <!-- improved -->

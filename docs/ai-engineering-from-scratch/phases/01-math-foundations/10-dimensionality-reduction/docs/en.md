@@ -1,3 +1,7 @@
+---
+description: "You have a dataset with 784 features per sample. Maybe it is pixel values of handwritten digits. Maybe it is gene expression levels. Maybe it is user"
+---
+
 # Dimensionality Reduction
 
 > High-dimensional data has structure. You find it by looking from the right angle.

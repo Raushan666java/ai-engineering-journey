@@ -1,3 +1,7 @@
+---
+description: "Build production Python APIs: FastAPI routing, Pydantic validation, dependency injection, async I/O, auth and testing."
+---
+
 # 05 — FastAPI & Backend Engineering
 
 > **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)

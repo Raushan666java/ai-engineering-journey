@@ -1,3 +1,7 @@
+---
+description: "A model that does well on a task you cannot define is a model that does well by accident. The harness is the task definition, the metric, the runner, and"
+---
+
 # Language Model Evaluation Harness
 
 > A model that does well on a task you cannot define is a model that does well by accident. The harness is the task definition, the metric, the runner, and the leaderboard, in one short, swappable shape.

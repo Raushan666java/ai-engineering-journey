@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_13_Project_Management/01_Agile_For_S
 title: "📋 Agile For Solo Developers"
 sidebar_label: "📋 Agile For Solo Developers"
 sidebar_position: 1
+description: "Many developers believe that 'Project Management' is something only Product Managers or Scrum Masters do at large corporations. They think that because"
 ---
 # 📋 Agile For Solo Developers
 

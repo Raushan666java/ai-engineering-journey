@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/27-mock-zoho
 title: "Zoho Mock Test — Full Pattern Simulation (40 Questions)"
 sidebar_label: "Zoho Mock Test — Full Pattern Simulation (40 Questions)"
 sidebar_position: 388
+description: "Simulates Zoho's harder aptitude section: 15 quant, 15 logical, 10 verbal. Zoho is the hardest of the mid-size companies — no partial marks, 80%+ is the"
 ---
 
 <!-- improved -->

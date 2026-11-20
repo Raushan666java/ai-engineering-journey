@@ -1,3 +1,7 @@
+---
+description: "Memorize these cold. Recite them from memory before every drill session. Each rule saves 30-60 seconds in the real test — that is the difference between"
+---
+
 <!-- improved -->
 # Speed Tricks Cheatsheet — 40 Instant-Recognition Rules
 

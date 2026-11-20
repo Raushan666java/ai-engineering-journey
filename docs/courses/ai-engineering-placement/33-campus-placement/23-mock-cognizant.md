@@ -1,3 +1,7 @@
+---
+description: "Simulates the Cognizant GenC aptitude section: 16 quant, 12 logical, 12 verbal. Cognizant is competitive on speed — target 75%+ and 60 seconds/question"
+---
+
 <!-- improved -->
 # Cognizant GenC Mock Test — Full Pattern Simulation (40 Questions)
 

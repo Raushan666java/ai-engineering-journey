@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy (Hospital ER Triage): In a hospital emergency room, patients arrive with different severity levels. A heart attack patient needs"
+---
+
 # Chapter 10: Heaps
 
 > **Previous:** [Chapter 9: Binary Search Trees](./09-bst.md) | **Next:** [Graphs](./11-graphs.md)

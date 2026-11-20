@@ -1,3 +1,7 @@
+---
+description: "NumPy Fundamentals — Arrays, Broadcasting, Linear Algebra: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # NumPy Fundamentals — Arrays, Broadcasting, Linear Algebra

@@ -1,3 +1,7 @@
+---
+description: "This chapter covers the essential tools and DevOps practices every Java backend developer needs to know: build tools, containers, orchestration, CI/CD"
+---
+
 # 63. Tools & DevOps — Interview Q&A
 
 > **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)

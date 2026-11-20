@@ -4,6 +4,7 @@ slug: /devops/14-devsecops
 title: "Chapter 14: DevSecOps"
 sidebar_label: "Chapter 14: DevSecOps"
 sidebar_position: 23
+description: "Shift-left security integrates security practices earlier in the software development lifecycle. Traditional security performed a penetration test shortly"
 ---
 
 # Chapter 14: DevSecOps

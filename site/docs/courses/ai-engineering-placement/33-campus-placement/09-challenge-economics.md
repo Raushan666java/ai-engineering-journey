@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/09-challenge-economics
 title: "Challenge Economics & Reward Systems"
 sidebar_label: "Challenge Economics & Reward Systems"
 sidebar_position: 370
+description: "After this chapter you will be able to design a monetized learning challenge with a fixed reward pool, build a three-entity model (Course Operator, Fund"
 ---
 
 <!-- improved -->

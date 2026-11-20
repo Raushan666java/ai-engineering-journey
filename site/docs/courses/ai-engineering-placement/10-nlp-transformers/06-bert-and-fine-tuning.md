@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/10-nlp-transformers/06-bert-and-fine-tuning
 title: "BERT & Fine-Tuning — Masked LM, NSP, GLUE, Model Variants"
 sidebar_label: "BERT & Fine-Tuning — Masked LM, NSP, GLUE, Model Variants"
 sidebar_position: 143
+description: "BERT & Fine-Tuning — Masked LM, NSP, GLUE, Model Variants: Natural language processing is how machines understand human text. Transformers revolutionized"
 ---
 
 <!-- improved -->

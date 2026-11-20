@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/02-sql-and-databases/02-aggregate-functions
 title: "Aggregate Functions — COUNT, SUM, AVG, GROUP BY, HAVING"
 sidebar_label: "Aggregate Functions — COUNT, SUM, AVG, GROUP BY, HAVING"
 sidebar_position: 27
+description: "Aggregate Functions — COUNT, SUM, AVG, GROUP BY, HAVING: Data is the fuel of AI. SQL and database design skills let you query, transform, and store the"
 ---
 
 <!-- improved -->

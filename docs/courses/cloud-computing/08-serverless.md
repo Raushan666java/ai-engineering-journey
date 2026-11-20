@@ -1,3 +1,7 @@
+---
+description: "A[Serverless Foundations] --> B[Lambda Functions] B --> E[Config: Memory, Timeout, Layers] C --> F[S3, SQS, API GW, EventBridge, SNS] D --> G[DynamoDB"
+---
+
 # Chapter 8: Serverless Computing
 
 > **Previous:** [Chapter 7: Cloud Security](./07-cloud-security.md) | **Next:** [Chapter 9: Containerization](./09-containerization.md)

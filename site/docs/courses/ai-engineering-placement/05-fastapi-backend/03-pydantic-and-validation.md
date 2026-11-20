@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/05-fastapi-backend/03-pydantic-and-validation
 title: "Pydantic and Validation — Data Modeling and Schema Management"
 sidebar_label: "Pydantic and Validation — Data Modeling and Schema Management"
 sidebar_position: 71
+description: "Pydantic and Validation — Data Modeling and Schema Management: FastAPI is the modern Python framework for building AI APIs. Its async support, automatic"
 ---
 
 <!-- improved -->

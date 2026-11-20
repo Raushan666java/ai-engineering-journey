@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/09-production-rag-system
 title: "Production RAG Systems"
 sidebar_label: "Production RAG Systems"
 sidebar_position: 166
+description: "Production RAG Systems: Retrieval-Augmented Generation lets LLMs answer questions about your private data. Vector databases store embeddings for semantic"
 ---
 
 <!-- improved -->

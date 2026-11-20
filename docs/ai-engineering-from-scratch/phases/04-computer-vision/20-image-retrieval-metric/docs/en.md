@@ -1,3 +1,7 @@
+---
+description: "A retrieval system ranks candidates by a distance in embedding space. Metric learning is the discipline of shaping that space so the distances mean what"
+---
+
 # Image Retrieval & Metric Learning
 
 > A retrieval system ranks candidates by a distance in embedding space. Metric learning is the discipline of shaping that space so the distances mean what you want.

@@ -1,3 +1,7 @@
+---
+description: 'Gradient of Scalar Field: $ nabla f = left langle frac{ partial f}{ partial x}, frac{ partial f}{ partial y}, frac{ partial f}{ partial z}'
+---
+
 # Chapter 10: Vector Calculus & Applications
 
 > **Previous:** [Chapter 9: Optimization](09-optimization.md) | **Next:** None (final chapter)

@@ -4,6 +4,7 @@ slug: /blockchain/01-introduction
 title: "Chapter 1: Introduction to Blockchain"
 sidebar_label: "Chapter 1: Introduction to Blockchain"
 sidebar_position: 1
+description: "A blockchain is a distributed, immutable ledger that records transactions across a network of computers. Unlike traditional databases managed by a central"
 ---
 
 # Chapter 1: Introduction to Blockchain

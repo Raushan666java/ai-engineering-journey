@@ -1,3 +1,7 @@
+---
+description: "Security in Spring is layered. Authentication answers 'who are you?'; authorization answers 'what are you allowed to do?'; CORS controls 'where can"
+---
+
 # Method Security, CORS & CSRF
 > **Previous:** [JWT, OAuth2 & OIDC](26-jwt-oauth2.md) | **Next:** [Keycloak](28-keycloak.md)
 

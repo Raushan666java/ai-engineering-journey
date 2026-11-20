@@ -1,3 +1,7 @@
+---
+description: "Krishna has stopped arguing about whether Arjuna should fight. Now he opens the deepest door: what is action, really? He tells Arjuna that this yoga is"
+---
+
 # Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom
 
 > "You are not asked to leave action behind. You are asked to light a fire inside action — the fire of knowledge."

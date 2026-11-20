@@ -1,3 +1,7 @@
+---
+description: "Volume ? The quantity of data. A single dataset can be terabytes or petabytes. At this scale, moving data to the compute engine is impossible; compute"
+---
+
 # Chapter 1: Introduction to Big Data
 
 > **Previous:** None (First Chapter) | **Next:** [Chapter 2: Hadoop ? HDFS, MapReduce & YARN](./02-hadoop.md)

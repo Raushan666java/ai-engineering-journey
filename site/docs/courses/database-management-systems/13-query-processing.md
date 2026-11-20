@@ -4,6 +4,7 @@ slug: /database-management-systems/13-query-processing
 title: "Chapter 13: Query Processing and Optimization"
 sidebar_label: "Chapter 13: Query Processing and Optimization"
 sidebar_position: 13
+description: "One-Sentence Takeaway: The SQL query lifecycle runs through four stages -- parsing, optimization, execution, and result delivery -- each adding its own"
 ---
 
 # Chapter 13: Query Processing and Optimization

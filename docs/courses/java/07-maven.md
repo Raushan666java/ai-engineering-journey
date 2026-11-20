@@ -1,3 +1,7 @@
+---
+description: "Maven is the de facto standard build tool for Java enterprise development. It provides declarative build configuration, transitive dependency management"
+---
+
 # Maven Deep Dive
 
 > **Previous:** [Performance Tuning & Profiling](./06-performance.md) | **Next:** [Gradle Deep Dive](./08-gradle.md)

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/14-fine-tuning-peft/02-full-fine-tuning
 title: "Full Fine-Tuning"
 sidebar_label: "Full Fine-Tuning"
 sidebar_position: 189
+description: "Full Fine-Tuning: Fine-tuning adapts foundation models to your specific domain. LoRA, QLoRA, and DPO make this affordable. This module covers when to"
 ---
 
 <!-- improved -->

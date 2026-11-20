@@ -1,3 +1,7 @@
+---
+description: "Python dictionaries use a hash table with open addressing. Keys are hashed, and the hash determines the slot. On collision, Python probes the next"
+---
+
 # Chapter 8: Dictionaries
 
 

@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/ch-01-how-your-brain-learns
 title: "Chapter 1: How Your Brain Learns"
 sidebar_label: "Chapter 1: How Your Brain Learns"
 sidebar_position: 2
+description: "This chapter covers the brain's two learning modes — focused and diffuse — and how switching between them accelerates understanding. You'll learn about"
 ---
 
 # Chapter 1: How Your Brain Learns

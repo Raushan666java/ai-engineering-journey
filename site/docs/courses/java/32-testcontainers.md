@@ -4,6 +4,7 @@ slug: /java/32-testcontainers
 title: "Testcontainers & Integration Testing"
 sidebar_label: "Testcontainers & Integration Testing"
 sidebar_position: 32
+description: "Testcontainers is a Java library that wraps Docker containers inside your test lifecycle. Instead of mocking a database or running a heavy local install"
 ---
 
 # Testcontainers & Integration Testing

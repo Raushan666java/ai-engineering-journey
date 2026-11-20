@@ -4,6 +4,7 @@ slug: /java/27-method-cors-csrf
 title: "Method Security, CORS & CSRF"
 sidebar_label: "Method Security, CORS & CSRF"
 sidebar_position: 27
+description: "Security in Spring is layered. Authentication answers 'who are you?'; authorization answers 'what are you allowed to do?'; CORS controls 'where can"
 ---
 
 # Method Security, CORS & CSRF

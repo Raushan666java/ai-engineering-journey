@@ -1,3 +1,7 @@
+---
+description: "National Informatics Centre (NIC) Scientist B recruitment exam — fully solved with explanations, TypeScript code, Mermaid diagrams, and topic-wise"
+---
+
 # NIC Scientist B 2024 — Solved Paper
 
 > National Informatics Centre (NIC) Scientist B recruitment exam — fully solved with explanations, TypeScript code, Mermaid diagrams, and topic-wise analysis.

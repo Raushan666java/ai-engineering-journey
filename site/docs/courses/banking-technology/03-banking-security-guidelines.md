@@ -4,6 +4,7 @@ slug: /banking-technology/03-banking-security-guidelines
 title: "Chapter 03: Banking Security Guidelines"
 sidebar_label: "Chapter 03: Banking Security Guidelines"
 sidebar_position: 3
+description: "RBI's first comprehensive cybersecurity circular (RBI/2015-16/425 DBR.CIT.No.19/31.02.003/2015-16) mandated baseline requirements for all scheduled"
 ---
 
 # Chapter 03: Banking Security Guidelines

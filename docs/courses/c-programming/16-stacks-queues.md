@@ -1,3 +1,7 @@
+---
+description: "You cannot pull a plate from the middle or bottom without first removing everything above it. This is the Last-In, First-Out (LIFO) principle → the last"
+---
+
 # Chapter 16: Stacks and Queues
 
 > **Previous:** [Linked Lists](./15-linked-lists.md) | **Next:** [The C Standard Library](./17-standard-library.md)

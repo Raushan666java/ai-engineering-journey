@@ -1,3 +1,7 @@
+---
+description: "B --> B1[Include: Role + Skills + Value Prop] C --> C1[3-5 paragraphs: Story, skills, impact] D --> D1[Same as resume + media attachments] E --> E1[50+"
+---
+
 # Chapter 7: Resume, LinkedIn, and Portfolio Optimization
 
 ## Learning Objectives

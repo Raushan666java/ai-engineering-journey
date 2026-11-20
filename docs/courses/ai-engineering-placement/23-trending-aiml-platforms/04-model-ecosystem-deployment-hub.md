@@ -1,3 +1,7 @@
+---
+description: "Model Ecosystem — Deployment, Hub & Fine-Tuning: The AI landscape evolves fast. New LLM providers, agent platforms, and developer toolkits emerge monthly"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Model Ecosystem — Deployment, Hub & Fine-Tuning

@@ -1,3 +1,7 @@
+---
+description: "Four orchestration patterns recur across 2026 frameworks: supervisor-worker, swarm / peer-to-peer, hierarchical, debate. Anthropic's guidance: 'It's about"
+---
+
 # Orchestration Patterns: Supervisor, Swarm, Hierarchical
 
 > Four orchestration patterns recur across 2026 frameworks: supervisor-worker, swarm / peer-to-peer, hierarchical, debate. Anthropic's guidance: "It's about building the right system for your needs." Start simple; add topology only when a single agent plus five workflow patterns is insufficient.

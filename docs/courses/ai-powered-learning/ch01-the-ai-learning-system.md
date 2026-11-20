@@ -1,3 +1,7 @@
+---
+description: "You work a 10-to-6 job, you spend about four hours a day commuting, and you are preparing for software and AI engineering placements. This chapter builds"
+---
+
 # Chapter 1: The AI Learning System
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

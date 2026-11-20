@@ -1,3 +1,7 @@
+---
+description: "Building a voice-controlled system means stitching ASR, NLU, function calling, safety verification, and TTS into one reliable pipeline where every stage"
+---
+
 # Voice-Controlled Automation Agent -- Speech-to-Command Pipeline
 
 > Building a voice-controlled system means stitching ASR, NLU, function calling, safety verification, and TTS into one reliable pipeline where every stage has failure modes that crash the experience if ignored.

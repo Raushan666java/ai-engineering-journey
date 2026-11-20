@@ -1,3 +1,7 @@
+---
+description: "This chapter covers the most important design patterns for Java backend development: creational, structural, behavioral, enterprise integration"
+---
+
 # 64. Design Patterns → Interview Q&A
 
 > **Previous:** [Tools &amp; DevOps Interview Q&amp;A](./63-interview-tools.md) | **Next:** [System Design Interview Q&amp;A](./65-interview-system-design.md)

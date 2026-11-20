@@ -1,3 +1,7 @@
+---
+description: "A[Transaction] --> B[Fraud Detection Agent] C -->|No| D[Process Payment] C -->|Yes| E[Hold for Review] A --> F[Transaction Monitor] I[New Customer] -->"
+---
+
 # Chapter 28: Finance & FinTech Agents
 
 > **Previous:** [Healthcare](./27-healthcare.md) | **Next:** [Education](./29-education.md)

@@ -4,6 +4,7 @@ slug: /theory-of-computation/12-reducibility
 title: "Chapter 12: Reducibility and Advanced Undecidability"
 sidebar_label: "Chapter 12: Reducibility and Advanced Undecidability"
 sidebar_position: 12
+description: "Proof sketch: Assume P doesn't contain the empty language (if it does, we can work with the complement). Let L∅ be a TM with empty language. Since P is"
 ---
 
 # Chapter 12: Reducibility and Advanced Undecidability

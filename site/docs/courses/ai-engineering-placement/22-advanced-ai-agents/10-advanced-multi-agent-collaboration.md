@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/10-advanced-multi-agent-co
 title: "Advanced Multi-Agent Collaboration"
 sidebar_label: "Advanced Multi-Agent Collaboration"
 sidebar_position: 281
+description: "Advanced Multi-Agent Collaboration: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module"
 ---
 
 <!-- improved -->

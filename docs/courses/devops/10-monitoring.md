@@ -1,3 +1,7 @@
+---
+description: "SRE is a discipline that incorporates aspects of software engineering and applies them to infrastructure and operations problems. The main goals are to"
+---
+
 # Chapter 10: Site Reliability Engineering (SRE) and Monitoring
 
 > **Previous:** [Configuration Management](./10-configuration-mgmt.md) | **Next:** [Cloud Platforms](./11-cloud-platforms.md)

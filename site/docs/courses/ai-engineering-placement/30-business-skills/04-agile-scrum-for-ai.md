@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/30-business-skills/04-agile-scrum-for-ai
 title: "Agile & Scrum for AI Teams"
 sidebar_label: "Agile & Scrum for AI Teams"
 sidebar_position: 348
+description: "AI engineering teams face a unique challenge. They must deliver production systems while exploring unknown solution spaces. Standard Scrum assumes"
 ---
 
 <!-- improved -->

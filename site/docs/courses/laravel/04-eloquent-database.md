@@ -4,6 +4,7 @@ slug: /laravel/04-eloquent-database
 title: "Chapter 4: Eloquent ORM, Database & Migrations"
 sidebar_label: "Chapter 4: Eloquent ORM, Database & Migrations"
 sidebar_position: 4
+description: "One-Sentence Takeaway: Laravel's database layer provides version-controlled migrations, expressive schema definitions, and a powerful ORM for data"
 ---
 
 # Chapter 4: Eloquent ORM, Database & Migrations

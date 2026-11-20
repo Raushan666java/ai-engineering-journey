@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: Spark's master/worker architecture runs a driver that schedules parallel tasks on distributed executors, with resource allocation"
+---
+
 # Chapter 3: Apache Spark Basics
 
 > **Previous:** [Chapter 2: Hadoop ? HDFS, MapReduce & YARN](./02-hadoop.md) | **Next:** [Chapter 4: Spark MLlib](./04-spark-mllib.md)

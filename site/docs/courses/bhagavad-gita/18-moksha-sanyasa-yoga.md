@@ -4,6 +4,7 @@ slug: /bhagavad-gita/18-moksha-sanyasa-yoga
 title: "Chapter 18: Moksha Sanyasa Yoga — Drop the doer, keep the work, and freedom finds you"
 sidebar_label: "Chapter 18: Moksha Sanyasa Yoga — Drop the doer, keep the work, and freedom finds you"
 sidebar_position: 18
+description: "Seventeen chapters have been spoken. The bow has been strung, the question asked, the mirror held, the faith classified — and now, in the eighteenth"
 ---
 
 # Chapter 18: Moksha Sanyasa Yoga — Drop the doer, keep the work, and freedom finds you

@@ -1,3 +1,7 @@
+---
+description: "Content Filtering: AI systems face unique security threats. Prompt injection, data leakage, and content abuse require specialized defenses. This module"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Content Filtering

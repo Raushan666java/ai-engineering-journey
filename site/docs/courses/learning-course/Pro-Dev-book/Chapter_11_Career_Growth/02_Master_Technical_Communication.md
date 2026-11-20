@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_11_Career_Growth/02_Master_Technical
 title: "🗣️ Master Technical Communication"
 sidebar_label: "🗣️ Master Technical Communication"
 sidebar_position: 2
+description: "You can be a Level 1 Systems Architect, but if you cannot effectively explain to a non-technical CEO why a feature will take two weeks to build safely"
 ---
 # 🗣️ Master Technical Communication
 

@@ -4,6 +4,7 @@ slug: /database-management-systems/01-introduction
 title: "Chapter 1: Introduction to Database Management Systems"
 sidebar_label: "Chapter 1: Introduction to Database Management Systems"
 sidebar_position: 1
+description: "Imagine a public library with 100,000 books but no catalog system. To find a specific book, a visitor must walk every aisle scanning shelves. If a book is"
 ---
 
 # Chapter 1: Introduction to Database Management Systems

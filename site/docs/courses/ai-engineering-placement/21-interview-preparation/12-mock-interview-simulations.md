@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/12-mock-interview-simul
 title: "Mock Interview Simulations"
 sidebar_label: "Mock Interview Simulations"
 sidebar_position: 262
+description: "Mock Interview Simulations: Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews"
 ---
 
 <!-- improved -->

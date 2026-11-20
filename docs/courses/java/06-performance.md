@@ -1,3 +1,7 @@
+---
+description: "Performance is a feature. In production Java applications, performance problems manifest as high latency, low throughput, excessive CPU, memory leaks, and"
+---
+
 # Performance Tuning & Profiling
 
 > **Previous:** [Functional Programming in Practice](./05-functional-deep.md) | **Next:** [Maven Deep Dive](./07-maven.md)

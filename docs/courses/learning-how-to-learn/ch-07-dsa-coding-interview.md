@@ -1,3 +1,7 @@
+---
+description: "Apply every learning technique from Chapters 1–6 specifically to DSA and coding interview preparation. Bridge the gap between knowing a concept and"
+---
+
 # Chapter 7: DSA & Coding Interview Prep
 
 

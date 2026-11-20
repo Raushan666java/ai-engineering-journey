@@ -1,3 +1,7 @@
+---
+description: "This chapter covers common interview questions for Laravel developer roles at logistics, supply chain, and freight technology companies. Questions span"
+---
+
 # Chapter 42: Logistics & Supply Chain → Interview Q&A
 
 > **Previous:** [Interview Q&A — Education & EdTech](./41-interview-education.md) | **Next:** [HR & Recruitment — Interview Q&A](./43-interview-hr.md)

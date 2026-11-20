@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: The if __name__ == '__main__' guard lets a file serve both as module and script. Warning: Avoid from module import * — it pollutes"
+---
+
 # Chapter 11: Modules and Packages
 
 

@@ -1,3 +1,7 @@
+---
+description: "A single attention layer is a feature extractor, not a model. One matmul per layer is not enough capacity for language. You need depth — and depth breaks"
+---
+
 # The Full Transformer — Encoder + Decoder
 
 > Attention is the star. Everything else — residuals, normalization, feed-forward, cross-attention — is the scaffolding that lets you stack it deep.

@@ -4,6 +4,7 @@ slug: /general-aptitude/04-data-interpretation
 title: "Chapter 4: Data Interpretation"
 sidebar_label: "Chapter 4: Data Interpretation"
 sidebar_position: 4
+description: "Example Caselet: 'In a company of 500 employees, 60% are male. Among the male employees, 40% work in IT, 30% in Finance, and the rest in HR. Among female"
 ---
 
 # Chapter 4: Data Interpretation

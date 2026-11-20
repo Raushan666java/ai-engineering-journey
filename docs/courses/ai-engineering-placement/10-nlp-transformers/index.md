@@ -1,3 +1,7 @@
+---
+description: "Attention, tokenisation, embeddings and transformer fine-tuning — the internals behind every LLM you will use."
+---
+
 # 10 — NLP & Transformers
 
 ## Overview

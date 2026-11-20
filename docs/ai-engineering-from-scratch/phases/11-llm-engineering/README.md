@@ -1,3 +1,7 @@
+---
+description: "Phase 11: LLM Engineering"
+---
+
 # Phase 11: LLM Engineering
 
 > Put LLMs to work in production applications.

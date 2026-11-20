@@ -4,6 +4,7 @@ slug: /modern-ai-engineering/03-understanding-foundation-models
 title: "Chapter 3: Understanding Foundation Models"
 sidebar_label: "Chapter 3: Understanding Foundation Models"
 sidebar_position: 3
+description: "The transformer architecture, introduced in the 2017 paper 'Attention Is All You Need,' is the foundation upon which all modern foundation models are"
 ---
 
 # Chapter 3: Understanding Foundation Models

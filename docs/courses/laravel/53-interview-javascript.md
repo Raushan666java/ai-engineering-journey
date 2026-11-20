@@ -1,3 +1,7 @@
+---
+description: "JavaScript is the language of the web browser and an essential skill for any full-stack Laravel developer. This chapter covers core language fundamentals"
+---
+
 # Chapter 53: JavaScript Interview Q&A
 
 > **Previous:** [CSS Interview Q&A](./52-interview-css.md) | **Next:** [AI/ML Interview Q&A](./54-interview-ai-ml.md)

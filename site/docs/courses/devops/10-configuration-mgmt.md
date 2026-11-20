@@ -4,6 +4,7 @@ slug: /devops/10-configuration-mgmt
 title: "Chapter 10: Advanced Configuration Management"
 sidebar_label: "Chapter 10: Advanced Configuration Management"
 sidebar_position: 18
+description: "What this demonstrates: Programmatic Terraform plan parsing enables automated risk classification, destructive change detection, and integration with"
 ---
 
 # Chapter 10: Advanced Configuration Management

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/05-coding-agents
 title: "Coding Agents"
 sidebar_label: "Coding Agents"
 sidebar_position: 276
+description: "Coding Agents: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module covers cutting-edge"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /engineering-mathematics/09-optimization
 title: "Chapter 9: Optimization"
 sidebar_label: "Chapter 9: Optimization"
 sidebar_position: 9
+description: "Interior Point Methods: Follow the central path through the interior of the feasible region. Polynomial-time ($O(n^{3.5}L)$). Often faster than simplex"
 ---
 
 # Chapter 9: Optimization

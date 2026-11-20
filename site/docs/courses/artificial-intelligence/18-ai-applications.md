@@ -4,6 +4,7 @@ slug: /artificial-intelligence/18-ai-applications
 title: "Chapter 18: Applications of Artificial Intelligence"
 sidebar_label: "Chapter 18: Applications of Artificial Intelligence"
 sidebar_position: 26
+description: "By the conclusion of this chapter, the student will be able to: (1) describe major AI application domains spanning healthcare, finance, transportation"
 ---
 
 # Chapter 18: Applications of Artificial Intelligence

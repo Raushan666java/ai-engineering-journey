@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/27-ai-infrastructure/04-inference-serving
 title: "AI Inference Serving"
 sidebar_label: "AI Inference Serving"
 sidebar_position: 326
+description: "AI inference serving is the production deployment of trained models. It takes a model checkpoint and turns it into an API endpoint that handles concurrent"
 ---
 
 <!-- improved -->

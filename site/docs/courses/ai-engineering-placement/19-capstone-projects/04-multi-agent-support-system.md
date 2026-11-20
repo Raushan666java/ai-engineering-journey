@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/19-capstone-projects/04-multi-agent-support-syst
 title: "Multi-Agent Support System"
 sidebar_label: "Multi-Agent Support System"
 sidebar_position: 239
+description: "Multi-Agent Support System: Capstone projects prove you can build complete AI systems. From prediction APIs to enterprise RAG platforms, these projects"
 ---
 
 <!-- improved -->

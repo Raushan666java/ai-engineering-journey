@@ -1,3 +1,7 @@
+---
+description: "Attention is permutation-invariant. 'The cat sat on the mat' and 'mat the on sat cat the' produce the same output without positional signal. Three"
+---
+
 # Positional Encoding — Sinusoidal, RoPE, ALiBi
 
 > Attention is permutation-invariant. "The cat sat on the mat" and "mat the on sat cat the" produce the same output without positional signal. Three algorithms fix it — each with a different bet on what "position" means.

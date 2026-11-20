@@ -1,3 +1,7 @@
+---
+description: "Dynamic programming is RL with cheating. You already know the transition and reward functions; you just iterate the Bellman equation until V or π stops"
+---
+
 # Dynamic Programming — Policy Iteration & Value Iteration
 
 > Dynamic programming is RL with cheating. You already know the transition and reward functions; you just iterate the Bellman equation until `V` or `π` stops moving. It is the benchmark every sampling-based method tries to approach.

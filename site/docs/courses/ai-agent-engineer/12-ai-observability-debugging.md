@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/12-ai-observability-debugging
 title: "Chapter 12 — AI Observability & Debugging"
 sidebar_label: "Chapter 12 — AI Observability & Debugging"
 sidebar_position: 13
+description: "Build comprehensive observability for your AI systems — tracing every agent step, tracking costs, monitoring quality metrics, and debugging production"
 ---
 
 # Chapter 12 — AI Observability & Debugging

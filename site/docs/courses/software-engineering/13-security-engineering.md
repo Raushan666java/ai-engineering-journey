@@ -4,6 +4,7 @@ slug: /software-engineering/13-security-engineering
 title: "Security Engineering"
 sidebar_label: "Security Engineering"
 sidebar_position: 13
+description: "The Open Web Application Security Project publishes the Top 10 Web Application Security Risks. Below is the full 2025 edition with explanations and code"
 ---
 
 # Security Engineering

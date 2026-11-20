@@ -1,3 +1,7 @@
+---
+description: "Most generators stir z into every layer at the same time. StyleGAN split it apart: first map z to an intermediate w, then inject w at every resolution"
+---
+
 # StyleGAN
 
 > Most generators stir `z` into every layer at the same time. StyleGAN split it apart: first map `z` to an intermediate `w`, then *inject* `w` at every resolution level through AdaIN. That single change untangled the latent space and made photorealistic faces a solved problem for seven years running.

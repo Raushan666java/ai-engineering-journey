@@ -1,3 +1,7 @@
+---
+description: "Lesson 01 promised that lemmatization needs a part-of-speech tag. Without knowing running is a verb, a lemmatizer cannot reduce it to run. Without knowing"
+---
+
 # POS Tagging and Syntactic Parsing
 
 > Grammar was unfashionable for a while. Then every LLM pipeline needed to validate structured extraction, and it came back.

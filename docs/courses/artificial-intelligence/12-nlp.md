@@ -1,3 +1,7 @@
+---
+description: "By the conclusion of this chapter, the student will be able to: (1) define language models and evaluate them using perplexity; (2) implement n-gram models"
+---
+
 # Chapter 12: Natural Language Processing
 
 **Previous:** [Chapter 11: Reinforcement Learning](11-reinforcement-learning.md) | **Next:** [Chapter 13: Computer Vision](13-computer-vision.md)

@@ -1,3 +1,7 @@
+---
+description: "This course is MIT licensed. You're free to fork it and adapt it for your needs. Here's how to do it well."
+---
+
 # Forking Guide
 
 This course is MIT licensed. You're free to fork it and adapt it for your needs. Here's how to do it well.

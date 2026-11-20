@@ -4,6 +4,7 @@ slug: /python-programming/15-decorators
 title: "Chapter 15: Decorators"
 sidebar_label: "Chapter 15: Decorators"
 sidebar_position: 15
+description: "Build a @rate_limit(calls, period) decorator that limits a function to calls invocations per period seconds. Use a lock or queue to handle concurrency in"
 ---
 
 # Chapter 15: Decorators

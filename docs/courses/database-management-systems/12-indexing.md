@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: A book's index. Without an index, finding 'database indexing' in a 1000-page book means reading every page (full scan). With the index"
+---
+
 # Chapter 12: Indexing
 
 > **Prev:** [Chapter 11: Recovery System](11-recovery.md) | **Next:** [Chapter 13: Query Processing](13-query-processing.md)

@@ -1,6 +1,10 @@
+---
+description: "34 modules from core CS to production LLM systems: Python, SQL, ML, RAG, agents and interview prep, with 357 chapters, quizzes and exercises."
+---
+
 # Backend + AI Engineer — Complete Placement Course
 
-> **Zero to job-ready in 12 months. 33 subjects, 299+ sub-chapters, 3,253+ interview Q&A. All in browser localStorage — zero backend.**
+> **34 modules · 357 chapters · 290 interview questions in this course, 4,700+ across the site. Every chapter ships with a quiz and exercises. Progress tracking runs in browser localStorage — no backend.**
 
 ![Build Status](https://img.shields.io/badge/status-in--progress-yellow)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -12,11 +16,11 @@ This is a **single, unified placement course** for software developers targeting
 
 | Feature | Detail |
 |---------|--------|
-| **Subjects** | 33 broad subject areas (Core CS → Competitive Programming) |
-| **Sub-chapters** | 299+ focused topic files, each 400+ lines |
-| **Interview Q&A** | 3,253+ questions with expandable answers — click to reveal |
-| **Chapter Quizzes** | 5 MCQ per sub-chapter = 1,495+ total questions |
-| **Exercises** | 5 hands-on per sub-chapter = 1,290+ exercises |
+| **Subjects** | 34 broad subject areas (Core CS → Competitive Programming) |
+| **Chapters** | 357 focused topic files, most 400+ lines |
+| **Interview Q&A** | 290 here, 4,700+ site-wide, with expandable answers — click to reveal |
+| **Chapter Quizzes** | 5 multiple-choice questions per chapter |
+| **Exercises** | 5 hands-on tasks per chapter |
 | **Capstone Projects** | 5 production-grade projects, from beginner to SaaS |
 | **Progress Tracking** | All in browser localStorage — theory, Q&A, exercises, streak |
 | **Study Mode** | Review Mode, spaced repetition, bookmarks, daily goals |

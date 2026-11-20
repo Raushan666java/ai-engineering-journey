@@ -4,6 +4,7 @@ slug: /python-programming/03-control-flow
 title: "Chapter 3: Control Flow"
 sidebar_label: "Chapter 3: Control Flow"
 sidebar_position: 3
+description: "Remember: Every if can stand alone -- elif and else are optional. An if with no else simply does nothing when false. Add an else clause for the"
 ---
 
 # Chapter 3: Control Flow

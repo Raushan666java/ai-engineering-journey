@@ -4,6 +4,7 @@ slug: /devops/16-networking
 title: "Chapter 16: Container Networking"
 sidebar_label: "Chapter 16: Container Networking"
 sidebar_position: 25
+description: "A service mesh manages inter-service communication in a microservice architecture. It adds observability, traffic management, and security without"
 ---
 
 # Chapter 16: Container Networking

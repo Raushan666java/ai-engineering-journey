@@ -4,6 +4,7 @@ slug: /mock-tests/03-sbi-po-prelims
 title: "SBI PO Prelims — Full-Length Mock Test"
 sidebar_label: "SBI PO Prelims — Full-Length Mock Test"
 sidebar_position: 3
+description: "Exam: State Bank of India Probationary Officer (SBI PO) Prelims Total Questions: 100 | Duration: 60 minutes | Max Marks: 100 Negative Marking: 0.25 per"
 ---
 
 # SBI PO Prelims — Full-Length Mock Test

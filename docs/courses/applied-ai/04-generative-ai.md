@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: Imagine a master artist who has studied 100,000 paintings — landscapes, portraits, abstracts. After years of training, she can paint a"
+---
+
 # Chapter 4: Generative AI
 
 > **Prerequisite:** [03 - OpenCV & Computer Vision](./03-opencv.md)  

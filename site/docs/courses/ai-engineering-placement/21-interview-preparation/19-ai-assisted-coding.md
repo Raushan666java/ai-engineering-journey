@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/19-ai-assisted-coding
 title: "AI-Assisted Coding Interviews"
 sidebar_label: "AI-Assisted Coding Interviews"
 sidebar_position: 269
+description: "After this chapter you will be able to strategically use LLMs during coding interviews, craft effective prompts for problem solving, avoid common pitfalls"
 ---
 
 <!-- improved -->

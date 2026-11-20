@@ -1,3 +1,7 @@
+---
+description: "This course offers a rigorous, university-level introduction to the foundational principles and modern practice of Artificial Intelligence. Beginning with"
+---
+
 # Artificial Intelligence — Complete University Textbook
 
 ## Course Description

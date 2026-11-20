@@ -1,3 +1,7 @@
+---
+description: "Python for interviews: data structures, generators, decorators, concurrency and typing, plus the numpy and pandas you actually use."
+---
+
 # 01 — Python for AI
 
 > **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)

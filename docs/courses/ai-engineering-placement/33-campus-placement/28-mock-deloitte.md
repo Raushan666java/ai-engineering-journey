@@ -1,3 +1,7 @@
+---
+description: "Simulates Deloitte's reasoning-heavy aptitude section: 14 quant, 15 logical, 15 verbal. Deloitte weighs reasoning and verbal heavily — quant is moderate"
+---
+
 <!-- improved -->
 # Deloitte Mock Test — Full Pattern Simulation (44 Questions)
 

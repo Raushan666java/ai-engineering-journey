@@ -1,3 +1,7 @@
+---
+description: "By the conclusion of this chapter, the student will be able to: (1) formulate planning problems in STRIPS and ADL; (2) implement forward and backward"
+---
+
 # Chapter 8: Planning
 
 **Previous:** [Chapter 8: Uncertainty and Probabilistic Reasoning](08-uncertainty.md) | **Next:** [Chapter 9: Reasoning Under Uncertainty](09-uncertainty.md)

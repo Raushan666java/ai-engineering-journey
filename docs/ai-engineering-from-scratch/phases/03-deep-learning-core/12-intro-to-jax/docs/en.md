@@ -1,3 +1,7 @@
+---
+description: "But PyTorch has a constraint baked into its DNA: it traces operations eagerly, one at a time, in Python. Every tensor + tensor is a separate kernel"
+---
+
 # Introduction to JAX
 
 > PyTorch mutates tensors. TensorFlow builds graphs. JAX compiles pure functions. That last one changes how you think about deep learning.

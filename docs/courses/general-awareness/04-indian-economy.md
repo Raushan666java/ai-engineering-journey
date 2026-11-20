@@ -1,3 +1,7 @@
+---
+description: "Reserve Bank of India (RBI) was established on 1 April 1935 under the RBI Act, 1934. Nationalised in 1949. It is the central bank of India and the"
+---
+
 # Chapter 4: Indian Economy & Planning
 
 ## Learning Objectives

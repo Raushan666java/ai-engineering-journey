@@ -4,6 +4,7 @@ slug: /digital-logic/01-introduction
 title: "Chapter 1: Introduction to Digital Logic"
 sidebar_label: "Chapter 1: Introduction to Digital Logic"
 sidebar_position: 1
+description: "An analog signal is continuous in both time and amplitude. It can take any value within a range. A digital signal is discrete ? it takes only a finite set"
 ---
 
 # Chapter 1: Introduction to Digital Logic

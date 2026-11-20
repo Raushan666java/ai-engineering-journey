@@ -1,9 +1,10 @@
 ---
 id: 26-gate-2022-solved
 slug: /gate-cs-preparation/26-gate-2022-solved
-title: "26 Gate 2022 Solved"
-sidebar_label: "26 Gate 2022 Solved"
+title: "26-gate-2022-solved"
+sidebar_label: "26-gate-2022-solved"
 sidebar_position: 23
+description: "The sum of two numbers is 60 and their product is 900. Find the larger number."
 ---
 
 ﻿# GATE CS 2022 Solved Paper
@@ -56,7 +57,6 @@ sidebar_position: 23
 ## Section A: General Aptitude (15 marks)
 
 ### Q1 [1 Mark] — Numerical Ability
-
 The sum of two numbers is 60 and their product is 900. Find the larger number.
 
 (A) 25  
@@ -75,7 +75,6 @@ Let numbers be x and (60-x). x(60-x) = 900 → 60x - x² = 900 → x² - 60x + 9
 </details>
 
 ### Q2 [1 Mark] — Numerical Ability
-
 If log₂(x) + log₂(8) = 5, what is x?
 
 (A) 2  
@@ -94,7 +93,6 @@ log₂(x) + 3 = 5 → log₂(x) = 2 → x = 2² = 4.
 </details>
 
 ### Q3 [1 Mark] — Verbal Ability
-
 Choose the correct spelling: ________
 
 (A) Ocassion  
@@ -113,7 +111,6 @@ Choose the correct spelling: ________
 </details>
 
 ### Q4 [1 Mark] — Logical Reasoning
-
 If in a certain code, 245 means "eat good food", 456 means "food is good", and 258 means "eat food daily", what is the code for "is"?
 
 (A) 2  
@@ -132,7 +129,6 @@ From 245 (eat good food) and 456 (food is good): common = "good food" → digits
 </details>
 
 ### Q5 [1 Mark] — Numerical Ability
-
 A seller marks an item 40% above cost and offers 30% discount. The profit/loss percentage is:
 
 (A) 2% profit  
@@ -160,7 +156,6 @@ console.log(profitPercent(40, 30)); // -2%
 </details>
 
 ### Q6 [2 Marks] — Numerical Ability
-
 A pipe can fill a tank in 12 hours. Due to a leak, it takes 20 hours. How long for the leak alone to empty the full tank?
 
 (A) 20 hr  
@@ -188,7 +183,6 @@ console.log(leakTime(12, 20)); // 30
 </details>
 
 ### Q7 [2 Marks] — Data Interpretation
-
 A batsman scores: 30, 45, 60, 0, 120, 75. What is his average?
 
 (A) 50  
@@ -207,7 +201,6 @@ Sum = 30+45+60+0+120+75 = 330. Count = 6. Average = 330/6 = 55.
 </details>
 
 ### Q8 [2 Marks] — Logical Reasoning
-
 How many 3-digit numbers are divisible by 7?
 
 (A) 126  
@@ -239,7 +232,6 @@ console.log(countMultiples(7, 3)); // 128
 </details>
 
 ### Q9 [2 Marks] — Numerical Ability
-
 A sum becomes ₹1210 in 2 years at 10% compound interest. The principal is:
 
 (A) ₹900  
@@ -265,7 +257,6 @@ console.log(ciPrincipal(1210, 10, 2)); // 1000
 </details>
 
 ### Q10 [2 Marks] — Verbal Ability
-
 Choose the word that best fits: "The researcher's ______ findings challenged established theories."
 
 (A) Plausible  
@@ -287,8 +278,7 @@ Choose the word that best fits: "The researcher's ______ findings challenged est
 
 ## Section B: Technical (85 marks)
 
-### Q1 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q1 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 The value of |A| where A = [[2, 3], [4, 5]] is:
 
 (A) -2  
@@ -313,8 +303,7 @@ console.log(det2x2(2, 3, 4, 5)); // -2
 
 </details>
 
-### Q2 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q2 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 If f(x) = e^(2x), what is f'(x)?
 
 (A) e^(2x)  
@@ -332,8 +321,7 @@ By chain rule: d/dx e^(2x) = e^(2x) × d/dx(2x) = 2e^(2x).
 
 </details>
 
-### Q3 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Easy
-
+### Q3 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Easy
 Which of the following access an element in constant time?
 
 (A) Linked List  
@@ -351,8 +339,7 @@ Arrays provide O(1) random access via index. Linked lists require O(n) traversal
 
 </details>
 
-### Q4 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Easy
-
+### Q4 [1 Mark] — 📂 Operating Systems | 🏷️ Easy
 Which of the following is NOT a CPU scheduling algorithm?
 
 (A) FCFS  
@@ -370,8 +357,7 @@ FIFO (First In First Out) is a data structure concept. The scheduling algorithms
 
 </details>
 
-### Q5 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Easy
-
+### Q5 [1 Mark] — 📂 Computer Networks | 🏷️ Easy
 Which device connects two different networks?
 
 (A) Hub  
@@ -389,8 +375,7 @@ A router connects different networks and routes packets between them using IP ad
 
 </details>
 
-### Q6 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Easy
-
+### Q6 [1 Mark] — 📂 Database Management Systems | 🏷️ Easy
 Which of the following is a logical data model?
 
 (A) Hierarchical  
@@ -408,8 +393,7 @@ Hierarchical, network, and relational are all types of logical data models. The 
 
 </details>
 
-### Q7 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Easy
-
+### Q7 [1 Mark] — 📂 Theory of Computation | 🏷️ Easy
 The empty language ∅ is accepted by:
 
 (A) A DFA with no final states  
@@ -427,8 +411,7 @@ A DFA with no accepting states accepts exactly the empty language. An NFA must a
 
 </details>
 
-### Q8 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Easy
-
+### Q8 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Easy
 Which of the following is a CISC architecture?
 
 (A) ARM  
@@ -446,8 +429,7 @@ x86 is CISC (Complex Instruction Set Computer). ARM, RISC-V, and MIPS are RISC a
 
 </details>
 
-### Q9 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Easy
-
+### Q9 [1 Mark] — 📂 Compiler Design | 🏷️ Easy
 Which parsing technique is most suitable for operator precedence parsing?
 
 (A) Top-down  
@@ -465,8 +447,7 @@ Operator precedence parsing is a bottom-up parsing technique that uses precedenc
 
 </details>
 
-### Q10 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Easy
-
+### Q10 [1 Mark] — 📂 Digital Logic | 🏷️ Easy
 Which flip-flop has no undefined state?
 
 (A) SR  
@@ -484,8 +465,7 @@ JK flip-flop eliminates the undefined state of SR flip-flop (when both inputs ar
 
 </details>
 
-### Q11 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q11 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 The minimum number of stacks required to implement a queue is:
 
 (A) 1  
@@ -517,8 +497,7 @@ class QueueUsingStacks<T> {
 
 </details>
 
-### Q12 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q12 [1 Mark] — 📂 Operating Systems | 🏷️ Medium
 The number of processes in the "Running" state on a single-core CPU is:
 
 (A) 0  
@@ -536,8 +515,7 @@ On a single-core CPU, at most one process can be in the Running state at any ins
 
 </details>
 
-### Q13 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
-
+### Q13 [1 Mark] — 📂 Computer Networks | 🏷️ Medium
 Which of the following is NOT a classful IP address class?
 
 (A) Class A  
@@ -555,8 +533,7 @@ Classful addressing has Classes A, B, C (unicast), D (multicast), and E (reserve
 
 </details>
 
-### Q14 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q14 [1 Mark] — 📂 Database Management Systems | 🏷️ Medium
 Which SQL clause is used to sort results?
 
 (A) GROUP BY  
@@ -574,8 +551,7 @@ ORDER BY sorts results in ascending (ASC) or descending (DESC) order.
 
 </details>
 
-### Q15 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
-
+### Q15 [1 Mark] — 📂 Theory of Computation | 🏷️ Medium
 A Pushdown Automaton (PDA) can recognize:
 
 (A) Regular languages only  
@@ -593,8 +569,7 @@ PDAs accept exactly the class of context-free languages. DFAs accept regular lan
 
 </details>
 
-### Q16 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q16 [1 Mark] — 📂 Compiler Design | 🏷️ Medium
 Which of the following is not a phase in the compilation process?
 
 (A) Lexical analysis  
@@ -612,8 +587,7 @@ Linking is a post-compilation step that combines object files. The compilation p
 
 </details>
 
-### Q17 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Medium
-
+### Q17 [1 Mark] — 📂 Digital Logic | 🏷️ Medium
 Minimum number of NAND gates needed to realize a NOT gate is:
 
 (A) 1  
@@ -638,8 +612,7 @@ console.log(notUsingNand(0), notUsingNand(1)); // 1, 0
 
 </details>
 
-### Q18 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q18 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Medium
 Which of the following is used for signed integer representation in most modern computers?
 
 (A) Sign-Magnitude  
@@ -657,8 +630,7 @@ Two's complement is the most widely used signed integer representation. It simpl
 
 </details>
 
-### Q19 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q19 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 Which of the following is NOT a balanced binary search tree?
 
 (A) AVL Tree  
@@ -676,8 +648,7 @@ Basic BST is not self-balancing (can become skewed). AVL, Red-Black, and Splay t
 
 </details>
 
-### Q20 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
+### Q20 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Medium
 The probability of getting at most 1 head in 3 coin tosses is:
 
 (A) 1/8  
@@ -703,14 +674,13 @@ console.log(atMostOneHead(3)); // 0.5
 
 </details>
 
-### Q21 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
+### Q21 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Medium
 The solution to the recurrence T(n) = T(n-1) + 3n, T(1) = 1 is:
 
 (A) O(n)  
 (B) O(n²)  
 (C) O(n log n)  
-(D) O(3âÂ�¿)
+(D) O(3ⁿ)
 
 <details>
 <summary>Show Answer</summary>
@@ -730,8 +700,7 @@ console.log(t(10)); // 1 + 3*(2+3+...+10) = 1 + 3*54 = 163
 
 </details>
 
-### Q22 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q22 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 Which of the following is true about Dijkstra's shortest path algorithm?
 
 (A) Works with negative edge weights  
@@ -771,8 +740,7 @@ function dijkstra(graph: number[][], src: number): number[] {
 
 </details>
 
-### Q23 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q23 [2 Marks] — 📂 Operating Systems | 🏷️ Medium
 The fact that a page is referenced again soon after the first reference is called:
 
 (A) Locality of reference  
@@ -790,8 +758,7 @@ Locality of reference (spatial and temporal) describes the tendency of programs 
 
 </details>
 
-### Q24 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q24 [2 Marks] — 📂 Database Management Systems | 🏷️ Medium
 Which of the following is an example of a DML statement in SQL?
 
 (A) CREATE  
@@ -809,8 +776,7 @@ SELECT is a DML (Data Manipulation Language) statement. CREATE and ALTER are DDL
 
 </details>
 
-### Q25 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
-
+### Q25 [2 Marks] — 📂 Computer Networks | 🏷️ Medium
 In a network with bandwidth 1 MHz and SNR 1023, what is the channel capacity?
 
 (A) 1 Mbps  
@@ -824,7 +790,7 @@ In a network with bandwidth 1 MHz and SNR 1023, what is the channel capacity?
 **Answer:** (C) 10 Mbps
 
 **Explanation:**
-C = B × log₂(1 + SNR) = 10âÂ�¶ × log₂(1024) = 10âÂ�¶ × 10 = 10 Mbps.
+C = B × log₂(1 + SNR) = 10⁶ × log₂(1024) = 10⁶ × 10 = 10 Mbps.
 
 ```typescript
 function channelCapacity(mhz: number, snr: number): number {
@@ -835,8 +801,7 @@ console.log(channelCapacity(1, 1023) / 1e6); // 10 Mbps
 
 </details>
 
-### Q26 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q26 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 Which of the following is the fastest sorting algorithm in the average case?
 
 (A) Bubble Sort  
@@ -854,8 +819,7 @@ Quick Sort has Θ(n log n) average-case time complexity, which is the fastest am
 
 </details>
 
-### Q27 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q27 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 A hard disk with 5000 cylinders, 8 heads, and 64 sectors/track has a capacity of:
 
 (A) 5000 × 8 × 64 bytes  
@@ -874,8 +838,7 @@ Capacity = Cylinders × Heads × Sectors/track × 512 = 5000 × 8 × 64 × 512 b
 
 </details>
 
-### Q28 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q28 [2 Marks] — 📂 Compiler Design | 🏷️ Medium
 Given grammar: E → E + T | T, T → id. The number of parse trees for id + id + id is:
 
 (A) 1  
@@ -907,8 +870,7 @@ graph TD
 
 </details>
 
-### Q29 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q29 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Medium
 In a 5-stage pipeline, what is the speedup compared to a non-pipelined processor (ideal, no hazards)?
 
 (A) 2  
@@ -926,8 +888,7 @@ In the ideal case with no hazards and balanced stages, a 5-stage pipeline achiev
 
 </details>
 
-### Q30 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
-
+### Q30 [2 Marks] — 📂 Theory of Computation | 🏷️ Medium
 The regular expression (0+1)* represents:
 
 (A) Empty string only  
@@ -945,8 +906,7 @@ The regular expression (0+1)* represents:
 
 </details>
 
-### Q31 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q31 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 A relation R(A,B,C,D) with FDs: AB→C, C→D, D→A. Which is a candidate key?
 
 (A) AB only  
@@ -960,16 +920,15 @@ A relation R(A,B,C,D) with FDs: AB→C, C→D, D→A. Which is a candidate key?
 **Answer:** (C) AB, C, and D
 
 **Explanation:**
-ABâÂ�º = {A,B,C,D} → AB is CK.
-CâÂ�º = {C,D,A,B} → C is CK.
-DâÂ�º = {D,A,B,C} → D is CK.
-BCâÂ�º = {B,C,D,A} → BC is also CK!
+AB⁺ = {A,B,C,D} → AB is CK.
+C⁺ = {C,D,A,B} → C is CK.
+D⁺ = {D,A,B,C} → D is CK.
+BC⁺ = {B,C,D,A} → BC is also CK!
 So candidate keys: AB, C, D, and BC.
 
 </details>
 
-### Q32 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q32 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The number of leaf nodes in a full binary tree with n internal nodes is:
 
 (A) n - 1  
@@ -994,8 +953,7 @@ console.log(fullBinaryLeaves(10)); // 11
 
 </details>
 
-### Q33 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q33 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 The IP address 127.0.0.1 is known as:
 
 (A) Network address  
@@ -1013,8 +971,7 @@ The IP address 127.0.0.1 is known as:
 
 </details>
 
-### Q34 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q34 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 Consider the following: Process P1 has 3 instances of R1 and 2 instances of R2. P2 has 2 R1 and 3 R2. Total resources: R1=6, R2=6. Is this system in a safe state?
 
 (A) Yes  
@@ -1045,8 +1002,7 @@ So with those numbers it's safe. Answer: Yes.
 
 </details>
 
-### Q35 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q35 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 Which of the following instructions causes a pipeline flush on a branch misprediction?
 
 (A) ADD  
@@ -1064,8 +1020,7 @@ Branch instructions (like BEQ) cause control hazards. A mispredicted branch flus
 
 </details>
 
-### Q36 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
-
+### Q36 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
 A fair die is rolled twice. The probability that the sum of the two outcomes is 7 is:
 
 (A) 1/6  
@@ -1096,8 +1051,7 @@ console.log(probSum(6, 7)); // 1/6
 
 </details>
 
-### Q37 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q37 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The postfix expression 5 3 + 8 2 - * evaluates to:
 
 (A) 24  
@@ -1123,9 +1077,8 @@ So the answer is (D) 48. Let me fix.
 
 </details>
 
-### Q38 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
-The language L = {0âÂ�¿1âÂ�¿ | n ≥ 1} is generated by which CFG?
+### Q38 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
+The language L = {0ⁿ1ⁿ | n ≥ 1} is generated by which CFG?
 
 (A) S → 0S1 | 01  
 (B) S → 0S1 | ε  
@@ -1138,12 +1091,11 @@ The language L = {0âÂ�¿1âÂ�¿ | n ≥ 1} is generated by which CFG?
 **Answer:** (A) S → 0S1 | 01
 
 **Explanation:**
-S → 0S1 | 01 generates {0âÂ�¿1âÂ�¿ | n ≥ 1}. Each application adds one 0 and one 1. S → ε would include n=0. S → 0S | 1S generates all strings.
+S → 0S1 | 01 generates {0ⁿ1ⁿ | n ≥ 1}. Each application adds one 0 and one 1. S → ε would include n=0. S → 0S | 1S generates all strings.
 
 </details>
 
-### Q39 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q39 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 Which of the following is correct about view serializability?
 
 (A) Every conflict serializable schedule is view serializable  
@@ -1161,8 +1113,7 @@ Conflict serializability implies view serializability, but not vice versa. View 
 
 </details>
 
-### Q40 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q40 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 The TTL field in an IPv4 header is used to:
 
 (A) Set packet priority  
@@ -1180,8 +1131,7 @@ TTL (Time To Live) is decremented by each router. When it reaches 0, the packet 
 
 </details>
 
-### Q41 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q41 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 Which of the following is NOT a property of a B-tree of order m?
 
 (A) Every node has at most m children  
@@ -1201,8 +1151,7 @@ Actually, for a non-empty B-tree, the root has at least 2 children only when it 
 
 </details>
 
-### Q42 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q42 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 In which of the following disk scheduling algorithms does the disk arm move only in one direction until the end?
 
 (A) SCAN  
@@ -1232,8 +1181,7 @@ graph LR
 
 </details>
 
-### Q43 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q43 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 The number of bits required to represent a 4-digit BCD number in binary is:
 
 (A) 4  
@@ -1277,8 +1225,7 @@ Then answer = (C) 14.
 
 </details>
 
-### Q44 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q44 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The number of comparisons required to search for an element in a sorted array of size n using binary search (worst case) is:
 
 (A) n  
@@ -1309,8 +1256,7 @@ function binarySearch(arr: number[], target: number): number {
 
 </details>
 
-### Q45 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
-
+### Q45 [2 Marks] — 📂 Compiler Design | 🏷️ Hard
 The output of a parser is:
 
 (A) Token stream  
@@ -1328,8 +1274,7 @@ The parser (syntax analyzer) takes a token stream and outputs a parse tree (or d
 
 </details>
 
-### Q46 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q46 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 A TM that writes some symbol in every step and always moves right is equivalent to:
 
 (A) A DFA  
@@ -1347,8 +1292,7 @@ If the TM always moves right, it cannot reuse previously written information. Ea
 
 </details>
 
-### Q47 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
-
+### Q47 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
 The number of edges in a complete graph K₇ is:
 
 (A) 7  
@@ -1373,8 +1317,7 @@ console.log(completeGraphEdges(7)); // 21
 
 </details>
 
-### Q48 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q48 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 Which of the following is a stable sorting algorithm?
 
 (A) Quick Sort  
@@ -1408,8 +1351,7 @@ function mergeSortStable<T>(arr: T[], compare: (a: T, b: T) => number): T[] {
 
 </details>
 
-### Q49 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q49 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 Fragmentation in paging is called:
 
 (A) External fragmentation  
@@ -1427,46 +1369,43 @@ Paging causes internal fragmentation (wasted space within the last page). Extern
 
 </details>
 
-### Q50 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q50 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 In the relational model, the operation that selects certain columns from a table is:
 
-(A) SELECT (Ã�ƒ)  
-(B) PROJECT (Ã�€)  
-(C) JOIN (â¨Â�)  
-(D) RENAME (Ã�Â�)
+(A) SELECT (σ)  
+(B) PROJECT (π)  
+(C) JOIN (⨝)  
+(D) RENAME (ρ)
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (B) PROJECT (Ã�€)
+**Answer:** (B) PROJECT (π)
 
 **Explanation:**
-PROJECT (Ã�€) selects columns (attributes). SELECT (Ã�ƒ) selects rows (tuples).
+PROJECT (π) selects columns (attributes). SELECT (σ) selects rows (tuples).
 
 </details>
 
-### Q51 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q51 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 The maximum number of IP addresses in a Class A network is:
 
-(A) 2âÂ�¸ - 2  
-(B) 2¹âÂ�¶ - 2  
-(C) 2²âÂ�´ - 2  
+(A) 2⁸ - 2  
+(B) 2¹⁶ - 2  
+(C) 2²⁴ - 2  
 (D) 2³² - 2
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (C) 2²âÂ�´ - 2
+**Answer:** (C) 2²⁴ - 2
 
 **Explanation:**
-Class A: 8 bits network, 24 bits host. Hosts = 2²âÂ�´ - 2 = 16,777,214 (network and broadcast reserved).
+Class A: 8 bits network, 24 bits host. Hosts = 2²⁴ - 2 = 16,777,214 (network and broadcast reserved).
 
 </details>
 
-### Q52 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q52 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 Which cache write policy writes data to both cache and main memory simultaneously?
 
 (A) Write-through  
@@ -1484,8 +1423,7 @@ Write-through updates both cache and main memory on every write. Write-back upda
 
 </details>
 
-### Q53 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q53 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 Which of the following is true for a deterministic context-free language?
 
 (A) Accepted by a deterministic PDA  
@@ -1503,14 +1441,13 @@ A deterministic CFL is exactly the class of languages accepted by deterministic 
 
 </details>
 
-### Q54 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q54 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The time complexity of multiplying two n×n matrices using the standard algorithm is:
 
 (A) O(n)  
 (B) O(n²)  
 (C) O(n³)  
-(D) O(nâÂ�´)
+(D) O(n⁴)
 
 <details>
 <summary>Show Answer</summary>
@@ -1534,8 +1471,7 @@ function multiplyMatrix(A: number[][], B: number[][]): number[][] {
 
 </details>
 
-### Q55 [2 Marks] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Hard
-
+### Q55 [2 Marks] — 📂 Digital Logic | 🏷️ Hard
 A circuit that converts binary to Gray code uses:
 
 (A) AND gates only  
@@ -1549,7 +1485,7 @@ A circuit that converts binary to Gray code uses:
 **Answer:** (C) XOR gates
 
 **Explanation:**
-Binary to Gray code: the MSB is the same, and for each subsequent bit: Gᵢ = Bᵢ ⊕ Bᵢ₊â‚Â�.
+Binary to Gray code: the MSB is the same, and for each subsequent bit: Gᵢ = Bᵢ ⊕ Bᵢ₊₁.
 
 ```typescript
 function binaryToGray(binary: number): number {
@@ -1636,16 +1572,13 @@ pie title "Difficulty Distribution - GATE CS 2022"
 
 ### Paper Analysis
 
-
 GATE 2022 Computer Science paper featured a balanced distribution of 65 questions (100 marks total) with 10 GA questions (15 marks) and 55 Technical questions (85 marks). The exam continued the trend of including MSQs and NATs alongside traditional MCQs. A total of 12 MSQs appeared, testing students' ability to identify multiple correct options — these were particularly challenging as partial marking was not applied. The paper had strong representation from Data Structures & Algorithms (16 marks) and Operating Systems (13 marks), followed by DBMS and Computer Networks at 10 marks each. The GA section included a logic puzzle that required combinatorial reasoning, marking a departure from standard aptitude fare.
 
 ### Difficulty Trends
 
-
 GATE 2022 was widely regarded as one of the more challenging papers of the past decade, with an estimated difficulty split of 25% Easy, 42% Medium, and 33% Hard. The high proportion of hard questions was attributed to multi-concept integration — many problems required combining topics from two subjects (e.g., probability with algorithms). Numerical Answer Type questions were particularly demanding, with many requiring multi-step calculations. The average score for top examinees was lower compared to 2021, suggesting effective normalization. Computer Architecture had a notoriously difficult NAT on cache write policies that involved trace-driven analysis. Aptitude remained relatively easier, providing a much-needed scoring opportunity.
 
 ### Key Concepts Tested
-
 
 | Subject | Key Concepts |
 |---------|-------------|
@@ -1850,7 +1783,6 @@ Test your understanding of GATE 2022 paper concepts with these 5 questions.
 - d) 0111 → 0110
 
 ### Answer Key
-
 
 | Q | Answer | Explanation |
 |---|--------|-------------|

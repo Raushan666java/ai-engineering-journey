@@ -4,6 +4,7 @@ slug: /system-design/23-case-study-dropbox
 title: "Chapter 23: Case Study — Dropbox and File Storage"
 sidebar_label: "Chapter 23: Case Study — Dropbox and File Storage"
 sidebar_position: 23
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Dropbox serves over 700 million users storing more than 500"
 ---
 
 # Chapter 23: Case Study — Dropbox and File Storage

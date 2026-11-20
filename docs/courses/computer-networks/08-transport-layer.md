@@ -1,3 +1,7 @@
+---
+description: "The transport layer provides logical communication between application processes running on different hosts. The network layer provides host-to-host"
+---
+
 # Chapter 8: The Transport Layer
 
 > **Prerequisites:** [Chapter 7: Routing](./07-routing.md) — Path selection between hosts | **Next:** [Chapter 9: TCP Congestion Control](./09-tcp-congestion.md) — From basic TCP to congestion management

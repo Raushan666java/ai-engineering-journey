@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/17-ai-security-guardrails/10-alignment-constitut
 title: "AI Alignment & Constitutional AI"
 sidebar_label: "AI Alignment & Constitutional AI"
 sidebar_position: 225
+description: "AI alignment is the field of ensuring AI systems do what humans want. As models become more capable, alignment becomes harder and more urgent. An"
 ---
 
 <!-- improved -->

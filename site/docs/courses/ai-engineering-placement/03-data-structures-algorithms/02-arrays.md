@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/02-arrays
 title: "Arrays"
 sidebar_label: "Arrays"
 sidebar_position: 39
+description: "Arrays are the most fundamental data structure, providing O(1) random access. Understanding array operations, their memory layout, and common patterns"
 ---
 
 <!-- improved -->

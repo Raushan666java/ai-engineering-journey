@@ -1,3 +1,7 @@
+---
+description: "A capable model is not enough. Reliable agents need a workbench: instructions, state, scope, feedback, verification, review, and handoff. Strip those away"
+---
+
 # Agent Workbench Engineering: Why Capable Models Still Fail
 
 > A capable model is not enough. Reliable agents need a workbench: instructions, state, scope, feedback, verification, review, and handoff. Strip those away and even a frontier model produces work that is unsafe to ship.

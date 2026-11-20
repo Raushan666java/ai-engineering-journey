@@ -4,6 +4,7 @@ slug: /laravel/08-broadcasting-realtime
 title: "Chapter 8: Broadcasting, Events & Real-Time Features"
 sidebar_label: "Chapter 8: Broadcasting, Events & Real-Time Features"
 sidebar_position: 8
+description: "One-Sentence Takeaway: Reverb is a first-party Laravel WebSocket server that scales horizontally with Redis, eliminating the need for third-party services"
 ---
 
 # Chapter 8: Broadcasting, Events & Real-Time Features

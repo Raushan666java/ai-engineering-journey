@@ -4,6 +4,7 @@ slug: /java/34-async-events
 title: "Async Processing & Spring Events"
 sidebar_label: "Async Processing & Spring Events"
 sidebar_position: 34
+description: "Most Spring beans execute synchronously by default. When a method does I/O, calls a remote API, or performs a CPU-intensive computation, the caller's"
 ---
 
 # Async Processing & Spring Events

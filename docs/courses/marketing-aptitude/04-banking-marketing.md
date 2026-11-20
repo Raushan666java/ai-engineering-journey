@@ -1,3 +1,7 @@
+---
+description: "Banking marketing applies marketing principles to financial services. Unlike product marketing, banking marketing must address the unique characteristics"
+---
+
 # Chapter 4: Marketing in Banking Sector
 
 ## Learning Objectives

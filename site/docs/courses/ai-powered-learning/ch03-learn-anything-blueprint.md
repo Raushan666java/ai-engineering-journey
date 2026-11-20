@@ -4,6 +4,7 @@ slug: /ai-powered-learning/ch03-learn-anything-blueprint
 title: "Chapter 3: The Learn-Anything Blueprint"
 sidebar_label: "Chapter 3: The Learn-Anything Blueprint"
 sidebar_position: 3
+description: "You do not need to study harder; you need a machine that turns any topic into a day-by-day plan. This chapter gives you the master template that converts"
 ---
 
 # Chapter 3: The Learn-Anything Blueprint

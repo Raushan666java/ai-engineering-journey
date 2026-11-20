@@ -1,3 +1,7 @@
+---
+description: "TypeScript half of the capstone. The Python side (code/main.py) owns the multi-vector index and temporal grounding. This project ships the dashboard half"
+---
+
 # Lesson 12 - Video Understanding Pipeline (TypeScript UI)
 
 TypeScript half of the capstone. The Python side (`code/main.py`) owns the

@@ -1,3 +1,7 @@
+---
+description: "A: The core entities are clients (individuals or organizations receiving legal services), matters (specific engagements or files opened for a client)"
+---
+
 # Chapter 47: Legal & Compliance Interview Q&A
 
 > **Previous:** [Real Estate & Property Interview Q&A](./46-interview-real-estate.md) | **Next:** [Manufacturing Interview Q&A](./48-interview-manufacturing.md)

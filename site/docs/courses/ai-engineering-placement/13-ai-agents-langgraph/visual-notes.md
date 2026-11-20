@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/13-ai-agents-langgraph/visual-notes
 title: "Visual Notes — The Agent Loop"
 sidebar_label: "Visual Notes"
 sidebar_position: 187
+description: "One-line answer for interviews: 'LLM decides → a tool executes → the result is observed → the loop repeats until the task is done.'"
 ---
 
 # Visual Notes — The Agent Loop

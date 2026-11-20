@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_15_The_Art_Of_Reusable_Components/01
 title: "🧩 Thinking In Components"
 sidebar_label: "🧩 Thinking In Components"
 sidebar_position: 1
+description: "When junior developers build their first web application, they typically open a file, write <form>, and manually type out every single <label>, <input>"
 ---
 # 🧩 Thinking In Components
 

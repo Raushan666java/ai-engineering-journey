@@ -1,3 +1,7 @@
+---
+description: "Set 7 (Synonyms): 1-A, 2-C, 3-B, 4-D, 5-A, 6-C, 7-B, 8-D, 9-A, 10-C Set 8 (Antonyms): 1-B, 2-A, 3-D, 4-C, 5-B, 6-A, 7-D, 8-C, 9-B, 10-A Set 9 (Mixed)"
+---
+
 # Verbal Ability Speed Drills
 
 > Master synonyms, antonyms, sentence completion, error spotting, para jumbles, cloze tests, and reading comprehension through timed, structured practice.

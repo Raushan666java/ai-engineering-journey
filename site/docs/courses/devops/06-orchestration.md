@@ -4,6 +4,7 @@ slug: /devops/06-orchestration
 title: "Chapter 6: Orchestration"
 sidebar_label: "Chapter 6: Orchestration"
 sidebar_position: 11
+description: "Choosing the right orchestration platform depends on team maturity, scale, and cloud strategy. The following tool compares orchestration platforms across"
 ---
 
 # Chapter 6: Orchestration

@@ -1,3 +1,7 @@
+---
+description: "Active recall is the single most effective learning technique known to cognitive science. When you force your brain to retrieve information — rather than"
+---
+
 # Chapter 4: Active Recall & Spaced Repetition
 
 > ⏱ **2.5 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**

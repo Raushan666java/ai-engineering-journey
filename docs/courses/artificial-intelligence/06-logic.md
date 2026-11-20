@@ -1,3 +1,7 @@
+---
+description: "Imagine a courtroom. The prosecution presents evidence (facts), and the judge applies legal statutes (rules) to reach a verdict (conclusion). The process"
+---
+
 # Chapter 6: Logical Agents and Propositional Logic
 
 **Previous:** [Chapter 5: Constraint Satisfaction Problems](05-csp.md) | **Next:** [Chapter 7: First-Order Logic and Inference](07-fol.md)

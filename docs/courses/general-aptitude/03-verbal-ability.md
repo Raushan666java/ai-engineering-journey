@@ -1,3 +1,7 @@
+---
+description: "Arrange: P: However, this trend is slowly changing. Q: Traditionally, engineering was considered a male-dominated field. R: More women are now pursuing"
+---
+
 # Chapter 3: Verbal Ability
 
 > **Previous:** [Chapter 2: Logical Reasoning](02-logical-reasoning.md) | **Next:** [Chapter 4: Data Interpretation](04-data-interpretation.md)

@@ -4,6 +4,7 @@ slug: /data-structures/06-queues
 title: "Chapter 6: Queues"
 sidebar_label: "Chapter 6: Queues"
 sidebar_position: 6
+description: "Real-World Analogy: Imagine a ticket counter at a cinema. Customers join the line at the rear and are served from the front. The first person to arrive"
 ---
 
 # Chapter 6: Queues

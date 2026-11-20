@@ -1,3 +1,7 @@
+---
+description: "Collections — Lists, Tuples, Sets, and Dictionaries: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and libraries"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Collections — Lists, Tuples, Sets, and Dictionaries

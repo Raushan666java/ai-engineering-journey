@@ -1,3 +1,7 @@
+---
+description: "Most bad marketing copy answers them out of order. It starts with the mechanism ('an AI-powered retrieval-augmented generation pipeline') because that is"
+---
+
 # Chapter 4 — Messaging and Brand
 
 ## Learning Objectives

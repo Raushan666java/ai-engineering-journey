@@ -1,3 +1,7 @@
+---
+description: "A fully connected layer on a 224x224 RGB image would need 224 224 3 = 150,528 input weights per neuron. A single hidden layer with 1,000 units is already"
+---
+
 # Convolutions from Scratch
 
 > A convolution is a tiny dense layer you slide across an image, sharing the same weights at every location.

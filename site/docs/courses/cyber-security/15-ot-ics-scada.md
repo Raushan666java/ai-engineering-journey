@@ -4,6 +4,7 @@ slug: /cyber-security/15-ot-ics-scada
 title: "Chapter 15: OT/ICS & SCADA Security"
 sidebar_label: "Chapter 15: OT/ICS & SCADA Security"
 sidebar_position: 14
+description: "Operational Technology (OT) refers to hardware and software that detects or causes a change in physical processes through direct monitoring and control of"
 ---
 
 # Chapter 15: OT/ICS & SCADA Security

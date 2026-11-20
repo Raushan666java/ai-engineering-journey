@@ -4,6 +4,7 @@ slug: /laravel/01-introduction
 title: "Chapter 1: Introduction to Laravel 13"
 sidebar_label: "Chapter 1: Introduction to Laravel 13"
 sidebar_position: 1
+description: "Laravel is an open-source PHP web framework created by Taylor Otwell in June 2011. Otwell, a web developer from Arkansas, had been building applications"
 ---
 
 # Chapter 1: Introduction to Laravel 13

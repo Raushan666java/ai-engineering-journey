@@ -1,3 +1,7 @@
+---
+description: "Your ultimate resource for cracking the IBPS Specialist Officer (IT) examination. This guide covers exam pattern, topic-wise weightage, cutoff trends"
+---
+
 ﻿---
 id: index
 slug: /government-pyqs

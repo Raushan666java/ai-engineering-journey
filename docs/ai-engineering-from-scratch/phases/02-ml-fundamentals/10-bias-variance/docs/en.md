@@ -1,3 +1,7 @@
+---
+description: "If your model is too simple (linear regression on a curved dataset), it will consistently miss the true pattern. That is bias. If your model is too"
+---
+
 # Bias-Variance Tradeoff
 
 > Every model error comes from one of three sources: bias, variance, or noise. You can only control the first two.

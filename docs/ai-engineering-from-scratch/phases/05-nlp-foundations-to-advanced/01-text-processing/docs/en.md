@@ -1,3 +1,7 @@
+---
+description: "Every NLP system opens with the same three questions. Where does a word start. What is the root of the word. How do we treat 'run', 'running', 'ran' as"
+---
+
 # Text Processing — Tokenization, Stemming, Lemmatization
 
 > Language is continuous. Models are discrete. Preprocessing is the bridge.

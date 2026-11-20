@@ -4,6 +4,7 @@ slug: /operating-systems/13-io-systems
 title: "Chapter 13: I/O Systems"
 sidebar_label: "Chapter 13: I/O Systems"
 sidebar_position: 13
+description: "A[I/O Hardware Basics] --> B[Ports / Buses / Controllers] B --> C[I/O Control Methods] G --> H[I/O Software Layers] H --> I[Buffering & Caching & Spooling]"
 ---
 
 # Chapter 13: I/O Systems

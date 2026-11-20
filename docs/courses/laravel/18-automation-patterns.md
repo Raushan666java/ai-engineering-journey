@@ -1,3 +1,7 @@
+---
+description: "Laravel's event system is the backbone of decoupled automation. An event is a simple data class that describes something that happened. A listener reacts"
+---
+
 # Chapter 18: Automation Patterns & Workflows
 
 > **Previous:** [Laravel Boost](./17-boost.md) | **Next:** [Architecture Patterns](./19-architecture-patterns.md)

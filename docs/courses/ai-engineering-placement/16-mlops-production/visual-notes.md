@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'Code → build → test → package → deploy → serve → monitor, with a rollback path at every gate.'"
+---
+
 # Visual Notes — AI Delivery Pipeline
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

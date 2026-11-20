@@ -4,6 +4,7 @@ slug: /computer-networks/19-keystroke-to-response
 title: "Chapter 19: From Keystroke to Response — How the OS and Network Work Together"
 sidebar_label: "Chapter 19: From Keystroke to Response"
 sidebar_position: 19
+description: "GFG/Javatpoint Depth — Processes vs threads, the syscall boundary, file descriptors, sockets, the three-way handshake, DNS, routing, accept/fork, latency"
 ---
 
 # Chapter 19: From Keystroke to Response — How the OS and Network Work Together

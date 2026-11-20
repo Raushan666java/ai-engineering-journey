@@ -1,3 +1,7 @@
+---
+description: "A[Architecture Design] --> B[Well-Architected Framework] A --> C[Migration Strategies] A --> D[Disaster Recovery] A --> E[Fault Tolerance + HA] A -->"
+---
+
 # Chapter 10: Cloud Architecture Design Patterns
 
 > **Previous:** [Chapter 9: Containerization](./09-containerization.md)

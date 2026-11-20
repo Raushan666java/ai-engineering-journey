@@ -1,3 +1,7 @@
+---
+description: "Modules & Packages — Import System, Namespaces, and Packaging: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Modules & Packages — Import System, Namespaces, and Packaging

@@ -1,3 +1,7 @@
+---
+description: "The Medium Access Control (MAC) sublayer is the lower sublayer of the data link layer in the IEEE 802 reference model. It sits directly above the physical"
+---
+
 # Chapter 4: Medium Access Control (MAC)
 
 > **Prerequisites:** [Chapter 3: Data Link Layer](./03-datalink-layer.md) — Framing and error control | **Next:** [Chapter 5: Ethernet & Switching](./05-ethernet-switching.md) — From MAC protocols to switched networks

@@ -1,3 +1,7 @@
+---
+description: "File upload systems are fundamental to modern applications — profile pictures, documents, videos, and ML datasets. A well-designed system handles large"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Design File Upload System — Direct Upload, Presigned URLs, CDN

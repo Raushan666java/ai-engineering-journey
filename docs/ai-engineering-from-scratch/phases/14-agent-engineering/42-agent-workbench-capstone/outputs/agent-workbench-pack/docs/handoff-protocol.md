@@ -1,3 +1,7 @@
+---
+description: "The packet ships as both handoff.md (humans) and handoff.json (next agent). Missing fields halt the session-end hook."
+---
+
 # Handoff Protocol
 
 Every session ends with a handoff packet containing:

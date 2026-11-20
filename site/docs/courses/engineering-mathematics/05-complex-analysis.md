@@ -4,6 +4,7 @@ slug: /engineering-mathematics/05-complex-analysis
 title: "Chapter 5: Complex Analysis"
 sidebar_label: "Chapter 5: Complex Analysis"
 sidebar_position: 5
+description: 'Complex Conjugate: $ overline{z} = x - iy$. Properties: $ overline{z_1 + z_2} = overline{z_1} + overline{z_2}$, $ overline{z_1 z_2} ='
 ---
 
 # Chapter 5: Complex Analysis

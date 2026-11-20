@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/20-portfolio-branding/02-repository-structure
 title: "Repository Structure"
 sidebar_label: "Repository Structure"
 sidebar_position: 244
+description: "Repository Structure: Your portfolio is your proof of skills. GitHub profiles, technical blogs, and LinkedIn optimization help you stand out. This module"
 ---
 
 <!-- improved -->

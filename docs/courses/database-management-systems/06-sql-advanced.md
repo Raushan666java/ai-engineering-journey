@@ -1,3 +1,7 @@
+---
+description: "A subquery (inner query / nested query) is a query embedded inside another query (outer query). Subqueries can return scalar values, single rows, tables"
+---
+
 # Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables
 
 > **Previous:** [Chapter 5: SQL Joins and Subqueries](./05-sql-joins.md) | **Next:** [Chapter 7: Normalization](./07-normalization.md)

@@ -4,6 +4,7 @@ slug: /database-management-systems/05-sql-joins
 title: "Chapter 5: SQL Joins and Subqueries"
 sidebar_label: "Chapter 5: SQL Joins and Subqueries"
 sidebar_position: 5
+description: "One-Sentence Takeaway: Joins are the heart of relational querying → mastering INNER, OUTER, SELF, NATURAL, SEMI, ANTI, and subqueries lets you combine any"
 ---
 
 # Chapter 5: SQL Joins and Subqueries

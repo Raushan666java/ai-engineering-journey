@@ -1,3 +1,7 @@
+---
+description: "Lesson 09 ended on a measured failure. A GRU encoder-decoder trained on a toy copy task goes from 89% accuracy at length 5 to near-chance at length 80"
+---
+
 # Attention Mechanism — The Breakthrough
 
 > The decoder stops squinting at a compressed summary and starts looking at the whole source. Everything after this is attention plus engineering.

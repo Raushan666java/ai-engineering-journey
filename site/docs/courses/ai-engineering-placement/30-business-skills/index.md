@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/30-business-skills
 title: "30 — Business Skills for AI Engineers"
 sidebar_label: "30 — Business Skills for AI Engineers"
 sidebar_position: 349
+description: "Communicate like an engineer who gets promoted: written updates, estimates, trade-off documents and stakeholder trust."
 ---
 
 # 30 — Business Skills for AI Engineers

@@ -4,6 +4,7 @@ slug: /learning-how-to-learn-practical/ch-11-tracking-course-correction
 title: "Chapter 11: Tracking & Course Correction"
 sidebar_label: "Chapter 11: Tracking & Course Correction"
 sidebar_position: 12
+description: "The North Star Metric: Pick ONE metric that correlates most strongly with your goal. For interview prep: 'mock interview score improvement.' For learning"
 ---
 
 # Chapter 11: Tracking & Course Correction

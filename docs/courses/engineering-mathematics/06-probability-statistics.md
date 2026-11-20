@@ -1,3 +1,7 @@
+---
+description: 'Type I Error: Reject $H_0$ when it''s true (probability = $ alpha$ ? significance level). Type II Error: Fail to reject $H_0$ when it''s false (probability'
+---
+
 # Chapter 6: Probability & Statistics
 
 > **Previous:** [Chapter 5: Complex Analysis](05-complex-analysis.md) | **Next:** [Chapter 7: Numerical Methods](07-numerical-methods.md)

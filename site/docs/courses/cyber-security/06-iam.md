@@ -4,6 +4,7 @@ slug: /cyber-security/06-iam
 title: "Chapter 6: Identity & Access Management"
 sidebar_label: "Chapter 6: Identity & Access Management"
 sidebar_position: 6
+description: "Real-World Analogy: An airport security checkpoint. Your passport is your Identity. The officer verifying your face matches the photo is Authentication"
 ---
 
 # Chapter 6: Identity & Access Management

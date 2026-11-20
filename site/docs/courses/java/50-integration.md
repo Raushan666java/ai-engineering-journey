@@ -4,6 +4,7 @@ slug: /java/50-integration
 title: "Spring Integration"
 sidebar_label: "Spring Integration"
 sidebar_position: 50
+description: "Spring Integration implements the Enterprise Integration Patterns, providing a lightweight message-based framework for integrating systems."
 ---
 
 # Spring Integration

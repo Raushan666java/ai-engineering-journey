@@ -1,3 +1,7 @@
+---
+description: "Ensemble methods combine multiple machine learning models (base learners) to produce a single, stronger model. The fundamental insight is that the"
+---
+
 # Chapter 5: Ensemble Methods
 
 > **Previous:** [Decision Trees](./04-decision-trees.md) | **Next:** [Support Vector Machines](./06-support-vector-machines.md)

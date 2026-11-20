@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: identify basic blocks from intermediate-code sequences; construct flow graphs and edge types"
+---
+
 # Chapter 11: Control-Flow Analysis
 
 ? Previous: [Chapter 10: Code Optimization](10-optimization.md) | **Next:** [Chapter 12: Data-Flow Analysis](12-dfa.md)

@@ -1,3 +1,7 @@
+---
+description: "Concurrency is one of the most challenging topics in Java. This chapter covers the entire concurrency landscape — from the low-level Thread API and"
+---
+
 # Multithreading & Concurrency
 
 > **Previous:** [JVM Architecture & Memory Management](./01-jvm-memory.md) | **Next:** [NIO & Networking](./03-nio-networking.md)

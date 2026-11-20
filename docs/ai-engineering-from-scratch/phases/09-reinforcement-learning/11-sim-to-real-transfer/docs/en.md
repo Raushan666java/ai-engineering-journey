@@ -1,3 +1,7 @@
+---
+description: "A policy trained in a simulator that fails on hardware is a policy that memorized the simulator. Domain randomization, domain adaptation, and system"
+---
+
 # Sim-to-Real Transfer
 
 > A policy trained in a simulator that fails on hardware is a policy that memorized the simulator. Domain randomization, domain adaptation, and system identification are the three tools to make learned controllers cross the reality gap.

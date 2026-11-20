@@ -1,3 +1,7 @@
+---
+description: "A coding agent in 2026 has more registered tools than the model can fit in a single context window. A non-trivial harness will register two hundred tools"
+---
+
 # Tool Registry with Schema Validation
 
 > A tool the agent cannot validate is a tool the agent cannot call. Build the registry and the schema checker before you build the tools.

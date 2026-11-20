@@ -1,3 +1,7 @@
+---
+description: "The policy is enforced by the verification gate. The override path is signed and audited; agents cannot self-override."
+---
+
 # Reliability Policy
 
 The workbench absorbs the five industry-recurring failure modes:

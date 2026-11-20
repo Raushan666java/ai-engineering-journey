@@ -1,3 +1,7 @@
+---
+description: "Tracking build artifact sizes over time prevents bloat and enforces performance budgets. The following tool analyzes bundles, tracks historical sizes, and"
+---
+
 # Chapter 3: Build Tools
 
 > **Prev:** [Version Control](./03-version-control.md)

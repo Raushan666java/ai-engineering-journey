@@ -4,6 +4,7 @@ slug: /software-engineering/01-process-models
 title: "Software Process Models"
 sidebar_label: "Software Process Models"
 sidebar_position: 1
+description: "✅ After completing this chapter, the student will be able to: - Differentiate between a software process and a process model - Describe the activities"
 ---
 
 # Software Process Models

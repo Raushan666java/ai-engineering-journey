@@ -4,6 +4,7 @@ slug: /c-programming/15-linked-lists
 title: "Chapter 15: Linked Lists"
 sidebar_label: "Chapter 15: Linked Lists"
 sidebar_position: 15
+description: "A linked list is a sequence of nodes where each node contains data and a pointer to the next node. The structure is self-referential — it contains a"
 ---
 
 # Chapter 15: Linked Lists

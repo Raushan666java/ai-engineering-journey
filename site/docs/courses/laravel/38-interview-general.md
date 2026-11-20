@@ -4,6 +4,7 @@ slug: /laravel/38-interview-general
 title: "Chapter 38: Laravel General Interview Q&A"
 sidebar_label: "Chapter 38: Laravel General Interview Q&A"
 sidebar_position: 38
+description: "Answer: Every HTTP request enters via public/index.php, which loads Composer's autoloader and bootstraps the application. The HTTP kernel is resolved from"
 ---
 
 # Chapter 38: Laravel General Interview Q&A

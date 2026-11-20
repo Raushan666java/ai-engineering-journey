@@ -4,6 +4,7 @@ slug: /oop-cpp/07-templates
 title: "Chapter 7: Templates"
 sidebar_label: "Chapter 7: Templates"
 sidebar_position: 7
+description: "Imagine a bakery that makes three types of cookies: chocolate chip, gingerbread, and sugar. Without a cookie cutter, the baker hand-shapes each cookie"
 ---
 
 # Chapter 7: Templates

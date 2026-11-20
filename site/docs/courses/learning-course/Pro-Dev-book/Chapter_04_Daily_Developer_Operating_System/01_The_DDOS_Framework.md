@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_04_Daily_Developer_Operating_System/
 title: "⚙️ The DDOS Framework"
 sidebar_label: "⚙️ The DDOS Framework"
 sidebar_position: 1
+description: "Many developers rely on bursts of extreme motivation. They will ignore a side project for three weeks, suddenly feel a surge of inspiration at 11:00 PM on"
 ---
 # ⚙️ The DDOS Framework
 

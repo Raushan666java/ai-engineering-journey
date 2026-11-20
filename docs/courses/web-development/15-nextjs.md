@@ -1,3 +1,7 @@
+---
+description: "A) SSR (Server-Side Rendering) generates HTML for every request. ISR (Incremental Static Regeneration) pre-builds static pages and revalidates them after"
+---
+
 # Chapter 15: Next.js
 
 > **Previous:** [14-typescript](./14-typescript.md) | **Next:** [16-testing-web](./16-testing-web.md)

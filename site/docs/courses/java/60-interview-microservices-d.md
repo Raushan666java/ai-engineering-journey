@@ -4,6 +4,7 @@ slug: /java/60-interview-microservices-d
 title: "── Istio DestinationRule (circuit breaker at mesh level) ──"
 sidebar_label: "── Istio DestinationRule (circuit breaker at mesh level) ──"
 sidebar_position: 67
+description: "── Istio DestinationRule (circuit breaker at mesh level) ──: Pro Tip: In interviews, always start with the 'why' before the 'how.' Explaining the"
 ---
 
 ![Microservices Advanced Topics - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices-d.png)

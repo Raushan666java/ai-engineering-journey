@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/07-langgraph-deep-dive
 title: "Part III — Frameworks"
 sidebar_label: "Part III — Frameworks"
 sidebar_position: 8
+description: "LangGraph formalizes your loop as a state graph: nodes are functions (including LLM calls), edges define what runs next, and a shared state object flows"
 ---
 
 # Part III — Frameworks

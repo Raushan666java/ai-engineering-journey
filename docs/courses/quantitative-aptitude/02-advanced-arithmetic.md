@@ -1,3 +1,7 @@
+---
+description: "Question: A can do a piece of work in 12 days. B can do the same work in 18 days. A and B work together for 4 days, then A leaves. How many more days will"
+---
+
 # Chapter 2: Advanced Arithmetic — Time & Work, Time-Speed-Distance, Mixtures & Alligations, Partnership, Ages
 
 ## Learning Objectives

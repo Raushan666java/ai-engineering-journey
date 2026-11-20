@@ -1,3 +1,7 @@
+---
+description: "Reproducing a research paper is the single best way to understand it deeply. You move from passive reading to active implementation. You discover details"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Reproducing & Implementing Papers

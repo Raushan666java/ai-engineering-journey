@@ -4,6 +4,7 @@ slug: /database-management-systems/14-nosql
 title: "Chapter 14: NoSQL Databases"
 sidebar_label: "Chapter 14: NoSQL Databases"
 sidebar_position: 14
+description: "NoSQL (Not Only SQL) refers to a class of database management systems that do not follow the relational model. They are designed for horizontal scaling"
 ---
 
 # Chapter 14: NoSQL Databases

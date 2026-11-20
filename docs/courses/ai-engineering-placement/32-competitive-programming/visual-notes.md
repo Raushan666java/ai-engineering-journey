@@ -1,3 +1,7 @@
+---
+description: "Visual Notes — Training That Crushes Interviews: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again"
+---
+
 # Visual Notes — Training That Crushes Interviews
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

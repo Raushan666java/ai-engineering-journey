@@ -4,6 +4,7 @@ slug: /computer-networks/07-routing
 title: "Chapter 7: Routing"
 sidebar_label: "Chapter 7: Routing"
 sidebar_position: 7
+description: "A GPS navigation app computes the best route from source to destination. The app considers road segments (links), intersections (routers), traffic"
 ---
 
 # Chapter 7: Routing

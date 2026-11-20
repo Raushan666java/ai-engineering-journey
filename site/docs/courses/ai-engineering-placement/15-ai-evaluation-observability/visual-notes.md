@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/15-ai-evaluation-observability/visual-notes
 title: "Visual Notes — Evaluation and Observability in One View"
 sidebar_label: "Visual Notes"
 sidebar_position: 205
+description: "One-line answer for interviews: 'Offline metrics validate before launch; online metrics, tracing and cost watch it in production.'"
 ---
 
 # Visual Notes — Evaluation and Observability in One View

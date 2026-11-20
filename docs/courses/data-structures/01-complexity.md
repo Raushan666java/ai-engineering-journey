@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: Imagine you are building a contact-list app for a phone with 1 million users. When a user searches for a contact, using an ArrayList"
+---
+
 # Chapter 1: Complexity Analysis
 
 ## Learning Objectives

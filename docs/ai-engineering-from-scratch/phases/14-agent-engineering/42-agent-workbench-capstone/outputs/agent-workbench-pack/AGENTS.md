@@ -1,3 +1,7 @@
+---
+description: "Verification command: see acceptance_criteria in the active task on the board."
+---
+
 # AGENTS.md
 
 You are working inside a repository that runs with an agent workbench.

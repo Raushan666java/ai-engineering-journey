@@ -1,3 +1,7 @@
+---
+description: "Exam Weightage: 25 Questions in IBPS SO Prelims, critical time-management section Moderate to High (puzzles consume most time) Focus Areas: Puzzles"
+---
+
 ﻿---
 id: index
 slug: /reasoning-ability

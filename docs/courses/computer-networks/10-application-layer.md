@@ -1,3 +1,7 @@
+---
+description: "The application layer is Layer 7 of the OSI model and the top of the TCP/IP model. It provides network services directly to end-user applications. Two"
+---
+
 # Chapter 10: The Application Layer → Complete Reference
 
 > **GFG/Javatpoint Depth → Comprehensive Coverage of Application Layer Protocols, Architectures, Implementations, and Interview Corner**

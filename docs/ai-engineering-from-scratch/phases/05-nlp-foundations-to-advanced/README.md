@@ -1,3 +1,7 @@
+---
+description: "Language is the interface to intelligence. Master every layer."
+---
+
 # Phase 5: NLP — Foundations to Advanced
 
 > Language is the interface to intelligence. Master every layer.

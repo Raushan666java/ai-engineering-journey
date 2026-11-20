@@ -1,3 +1,7 @@
+---
+description: "A vision encoder converts an image into tokens. An MLP projector maps those tokens into the LLM's embedding space. A language model does the rest. That"
+---
+
 # Vision-Language Models — The ViT-MLP-LLM Pattern
 
 > A vision encoder converts an image into tokens. An MLP projector maps those tokens into the LLM's embedding space. A language model does the rest. That pattern — ViT-MLP-LLM — is every production VLM in 2026.

@@ -1,3 +1,7 @@
+---
+description: "In a chat app, your system prompt sets tone and persona. In an agent, the system prompt is closer to onboarding documentation for a new employee: what"
+---
+
 ## Chapter 3: Prompting for Agents vs. Prompting for Chat
 
 ### 3.1 The System Prompt Is Now an Operating Manual

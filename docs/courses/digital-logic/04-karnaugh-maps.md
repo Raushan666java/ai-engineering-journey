@@ -1,3 +1,7 @@
+---
+description: "The Karnaugh map (K-map) is a graphical tool for minimising Boolean functions. It arranges truth table entries in a grid where adjacent cells differ in"
+---
+
 # Chapter 4: Karnaugh Maps
 
 > **Prereq:** Chapter 2 (Boolean Algebra) ? K-maps provide a graphical alternative to algebraic minimisation.

@@ -1,3 +1,7 @@
+---
+description: "Data Sufficiency (DS) questions test your ability to determine whether the information provided is adequate to answer a given question —ithout actually"
+---
+
 # Chapter 3: Data Sufficiency
 
 ## Learning Objectives

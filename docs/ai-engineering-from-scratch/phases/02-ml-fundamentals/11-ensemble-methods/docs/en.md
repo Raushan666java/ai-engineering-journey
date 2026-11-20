@@ -1,3 +1,7 @@
+---
+description: "A single decision tree is fast to train and easy to interpret, but it overfits. A single linear model underfits on complex boundaries. You could spend"
+---
+
 # Ensemble Methods
 
 > A group of weak learners, combined correctly, becomes a strong learner. This is not a metaphor. It is a theorem.

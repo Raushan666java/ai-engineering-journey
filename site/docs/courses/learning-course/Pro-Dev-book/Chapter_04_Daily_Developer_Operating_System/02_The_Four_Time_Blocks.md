@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_04_Daily_Developer_Operating_System/
 title: "⏳ The Four Time Blocks"
 sidebar_label: "⏳ The Four Time Blocks"
 sidebar_position: 2
+description: "When you sit down for your primary coding session (ideally 90 to 120 minutes of uninterrupted Deep Work), you must execute the four blocks of the Daily"
 ---
 # ⏳ The Four Time Blocks
 

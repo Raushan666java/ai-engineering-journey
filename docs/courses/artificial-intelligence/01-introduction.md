@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: AI is the new electricity. Just as electricity in the late 19th century transformed every industry — lighting, manufacturing"
+---
+
 # Chapter 1: Introduction to Artificial Intelligence
 
 **Previous:** — | **Next:** [Chapter 2: Intelligent Agents](02-agents.md)

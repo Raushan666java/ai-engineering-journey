@@ -4,6 +4,7 @@ slug: /placement-preparation/04-company-specific
 title: "Company-Specific Placement Preparation"
 sidebar_label: "Company-Specific Placement Preparation"
 sidebar_position: 4
+description: "A tiered breakdown of interview processes, question patterns, and preparation strategies across FAANG/MANGA, product-based Indian companies, service-based"
 ---
 
 # Company-Specific Placement Preparation

@@ -1,9 +1,10 @@
 ---
 id: 23-gate-2025-solved
 slug: /gate-cs-preparation/23-gate-2025-solved
-title: "23 Gate 2025 Solved"
-sidebar_label: "23 Gate 2025 Solved"
+title: "23-gate-2025-solved"
+sidebar_label: "23-gate-2025-solved"
 sidebar_position: 20
+description: "A train 300 meters long crosses a platform 200 meters long in 25 seconds. What is the speed of the train in km/h?"
 ---
 
 ﻿# GATE CS 2025 Solved Paper
@@ -88,7 +89,6 @@ xychart-beta
 
 ### Q1 [1 Mark] — Numerical Ability
 
-
 A train 300 meters long crosses a platform 200 meters long in 25 seconds. What is the speed of the train in km/h?
 
 (A) 54  
@@ -119,7 +119,6 @@ console.log(trainSpeed(300, 200, 25)); // 72
 </details>
 
 ### Q2 [1 Mark] — Logical Reasoning
-
 
 If FROST is coded as 82 and MELT is coded as 53, then how is HEAT coded?
 
@@ -152,7 +151,6 @@ console.log(codeWord("HEAT")); // 36
 
 ### Q3 [1 Mark] — Verbal Ability
 
-
 Choose the word most similar in meaning to "PERFIDIOUS":
 
 (A) Faithful  
@@ -171,7 +169,6 @@ Choose the word most similar in meaning to "PERFIDIOUS":
 </details>
 
 ### Q4 [1 Mark] — Numerical Ability
-
 
 In a group of 200 people, 120 like tea, 90 like coffee, and 40 like both. How many like neither?
 
@@ -201,7 +198,6 @@ console.log(neitherCount(200, 120, 90, 40)); // 30
 
 ### Q5 [1 Mark] — Logical Reasoning
 
-
 Statement: All squares are rectangles. All rectangles are quadrilaterals.
 Conclusion I: All squares are quadrilaterals.
 Conclusion II: Some quadrilaterals are squares.
@@ -225,7 +221,6 @@ Since all squares are quadrilaterals, there exists at least one quadrilateral th
 </details>
 
 ### Q6 [2 Marks] — Numerical Ability
-
 
 A and B can complete a work in 12 days. B and C can complete it in 15 days. A and C can complete it in 20 days. In how many days can A alone complete the work?
 
@@ -263,7 +258,6 @@ console.log(workDays(12, 15, 20)); // 30
 
 ### Q7 [2 Marks] — Numerical Ability
 
-
 The sum of three numbers in GP is 39. The product of the first and third is 81. Find the middle number.
 
 (A) 3  
@@ -295,7 +289,6 @@ console.log(gpMiddle(39, 81)); // 9
 </details>
 
 ### Q8 [2 Marks] — Data Interpretation
-
 
 A bag contains 4 red, 5 blue, and 6 green balls. Two balls are drawn at random. What is the probability that both are blue?
 
@@ -330,7 +323,6 @@ console.log(prob); // 0.09523... = 2/21
 
 ### Q9 [2 Marks] — Logical Reasoning
 
-
 If 12 men can build a wall in 8 days, how many men are needed to build the same wall in 6 days?
 
 (A) 14  
@@ -357,7 +349,6 @@ console.log(menNeeded(12, 8, 6)); // 16
 </details>
 
 ### Q10 [2 Marks] — Spatial Reasoning
-
 
 A clock shows 4:30. What is the angle between the hour hand and the minute hand?
 
@@ -395,8 +386,7 @@ console.log(clockAngle(4, 30)); // 45
 
 ## Section B: Technical (85 marks)
 
-### Q1 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q1 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 
 The determinant of matrix [[3, 0, 0], [2, 1, 0], [1, 2, 2]] is:
 
@@ -422,8 +412,7 @@ console.log(determinantTriangular([3, 1, 2])); // 6
 
 </details>
 
-### Q2 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q2 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 
 How many vertices does a tree with 15 edges have?
 
@@ -442,8 +431,7 @@ For any tree: |V| = |E| + 1 = 15 + 1 = 16.
 
 </details>
 
-### Q3 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q3 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 
 lim_{x→0} (sin x)/x equals:
 
@@ -462,8 +450,7 @@ This is a standard limit. Using L'Hôpital's rule or the squeeze theorem: lim_{x
 
 </details>
 
-### Q4 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q4 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 
 If P(A) = 0.3, P(B) = 0.5, and A and B are independent, what is P(A ∪ B)?
 
@@ -491,8 +478,7 @@ console.log(unionProb(0.3, 0.5)); // 0.65
 
 </details>
 
-### Q5 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Easy
-
+### Q5 [1 Mark] — 📂 Digital Logic | 🏷️ Easy
 
 Which law is ¬(P ∨ Q) ≡ ¬P ∧ ¬Q?
 
@@ -511,8 +497,7 @@ De Morgan's laws: ¬(P ∨ Q) ≡ ¬P ∧ ¬Q and ¬(P ∧ Q) ≡ ¬P ∨ ¬Q.
 
 </details>
 
-### Q6 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Easy
-
+### Q6 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Easy
 
 Which data structure is best suited for implementing a priority queue?
 
@@ -531,8 +516,7 @@ Heap provides O(log n) insertion and O(log n) extraction of max/min, optimal for
 
 </details>
 
-### Q7 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Easy
-
+### Q7 [1 Mark] — 📂 Operating Systems | 🏷️ Easy
 
 How many process states are in the classic 5-state process model?
 
@@ -563,8 +547,7 @@ stateDiagram-v2
 
 </details>
 
-### Q8 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Easy
-
+### Q8 [1 Mark] — 📂 Computer Networks | 🏷️ Easy
 
 Which layer of the OSI model does a network switch operate at?
 
@@ -583,8 +566,7 @@ A switch operates at Layer 2 (Data Link) using MAC addresses for forwarding fram
 
 </details>
 
-### Q9 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Easy
-
+### Q9 [1 Mark] — 📂 Database Management Systems | 🏷️ Easy
 
 In relational algebra, which operation returns only the unique rows?
 
@@ -599,32 +581,30 @@ In relational algebra, which operation returns only the unique rows?
 **Answer:** (B) PROJECT
 
 **Explanation:**
-PROJECT (Ã�€) removes duplicate rows by default, returning unique combinations of the specified attributes.
+PROJECT (π) removes duplicate rows by default, returning unique combinations of the specified attributes.
 
 </details>
 
-### Q10 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Easy
-
+### Q10 [1 Mark] — 📂 Theory of Computation | 🏷️ Easy
 
 Which of the following is a context-free language?
 
-(A) {aâÂ�¿ | n is prime}  
-(B) {aâÂ�¿bâÂ�¿ | n ≥ 0}  
-(C) {aâÂ�¿bâÂ�¿câÂ�¿ | n ≥ 0}  
-(D) {aâÂ�¿ | n is even}
+(A) {aⁿ | n is prime}  
+(B) {aⁿbⁿ | n ≥ 0}  
+(C) {aⁿbⁿcⁿ | n ≥ 0}  
+(D) {aⁿ | n is even}
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (B) {aâÂ�¿bâÂ�¿ | n ≥ 0}
+**Answer:** (B) {aⁿbⁿ | n ≥ 0}
 
 **Explanation:**
-{aâÂ�¿bâÂ�¿} is generated by S → aSb | ε (CFG). Primes are not regular/CFL. {aâÂ�¿bâÂ�¿câÂ�¿} is context-sensitive. {aâÂ�¿ with n even} is regular.
+{aⁿbⁿ} is generated by S → aSb | ε (CFG). Primes are not regular/CFL. {aⁿbⁿcⁿ} is context-sensitive. {aⁿ with n even} is regular.
 
 </details>
 
-### Q11 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Easy
-
+### Q11 [1 Mark] — 📂 Compiler Design | 🏷️ Easy
 
 Which phase of a compiler generates the Abstract Syntax Tree (AST)?
 
@@ -643,8 +623,7 @@ The parser (syntax analyzer) builds the AST from the token stream produced by th
 
 </details>
 
-### Q12 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Easy
-
+### Q12 [1 Mark] — 📂 Digital Logic | 🏷️ Easy
 
 How many input lines does a half adder have?
 
@@ -663,8 +642,7 @@ A half adder has 2 inputs (A, B) and produces Sum and Carry outputs.
 
 </details>
 
-### Q13 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Easy
-
+### Q13 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Easy
 
 Which register holds the address of the next instruction to be fetched?
 
@@ -683,23 +661,22 @@ The Program Counter (PC) contains the address of the next instruction to be fetc
 
 </details>
 
-### Q14 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q14 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 
 The maximum number of nodes in a complete binary tree of height h (where height of root = 0) is:
 
 (A) 2ʰ  
-(B) 2ʰâÂ�º¹  
-(C) 2ʰâÂ�º¹ - 1  
+(B) 2ʰ⁺¹  
+(C) 2ʰ⁺¹ - 1  
 (D) 2ʰ - 1
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (C) 2ʰâÂ�º¹ - 1
+**Answer:** (C) 2ʰ⁺¹ - 1
 
 **Explanation:**
-Each level i has 2âÂ�± nodes. Total = 2âÂ�° + 2¹ + ... + 2ʰ = 2ʰâÂ�º¹ - 1.
+Each level i has 2ⁱ nodes. Total = 2⁰ + 2¹ + ... + 2ʰ = 2ʰ⁺¹ - 1.
 
 ```typescript
 function maxNodesCompleteBinary(h: number): number {
@@ -710,8 +687,7 @@ console.log(maxNodesCompleteBinary(3)); // 2^4 - 1 = 15
 
 </details>
 
-### Q15 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q15 [1 Mark] — 📂 Operating Systems | 🏷️ Medium
 
 In paging, the logical address space is divided into:
 
@@ -730,8 +706,7 @@ In paging, logical memory is divided into fixed-size pages, and physical memory 
 
 </details>
 
-### Q16 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
-
+### Q16 [1 Mark] — 📂 Computer Networks | 🏷️ Medium
 
 Which TCP flag indicates connection termination?
 
@@ -750,8 +725,7 @@ The FIN flag is used to gracefully terminate a TCP connection. The sender signal
 
 </details>
 
-### Q17 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q17 [1 Mark] — 📂 Database Management Systems | 🏷️ Medium
 
 Which integrity constraint ensures that a column cannot have NULL values?
 
@@ -770,28 +744,26 @@ The NOT NULL constraint ensures that the column cannot store NULL values.
 
 </details>
 
-### Q18 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
-
+### Q18 [1 Mark] — 📂 Theory of Computation | 🏷️ Medium
 
 Which of the following languages is regular?
 
-(A) {aâÂ�¿bâÂ�¿ | n ≥ 0}  
-(B) {aâÂ�¿ | n is even}  
-(C) {aâÂ�¿ | n is prime}  
-(D) {aâÂ�¿bâÂ�¿câÂ�¿ | n ≥ 0}
+(A) {aⁿbⁿ | n ≥ 0}  
+(B) {aⁿ | n is even}  
+(C) {aⁿ | n is prime}  
+(D) {aⁿbⁿcⁿ | n ≥ 0}
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (B) {aâÂ�¿ | n is even}
+**Answer:** (B) {aⁿ | n is even}
 
 **Explanation:**
-{aâÂ�¿ | n is even} is regular: it can be recognized by a DFA with 2 states. {aâÂ�¿bâÂ�¿} is CFL, primes are not regular, and {aâÂ�¿bâÂ�¿câÂ�¿} is context-sensitive.
+{aⁿ | n is even} is regular: it can be recognized by a DFA with 2 states. {aⁿbⁿ} is CFL, primes are not regular, and {aⁿbⁿcⁿ} is context-sensitive.
 
 </details>
 
-### Q19 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q19 [1 Mark] — 📂 Compiler Design | 🏷️ Medium
 
 Which of the following Boolean algebra laws is represented by A + AB = A?
 
@@ -810,8 +782,7 @@ A + AB = A(1 + B) = A·1 = A. This is the absorption law.
 
 </details>
 
-### Q20 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q20 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Medium
 
 Which cache mapping technique is most susceptible to thrashing?
 
@@ -830,8 +801,7 @@ Direct mapped cache causes thrashing when multiple frequently-used blocks map to
 
 </details>
 
-### Q21 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Easy
-
+### Q21 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Easy
 
 What is the time complexity of the following code?
 
@@ -871,8 +841,7 @@ console.log(complexityCount(16)); // 16 * 4 = 64
 
 </details>
 
-### Q22 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q22 [2 Marks] — 📂 Operating Systems | 🏷️ Medium
 
 A system has 3 processes sharing 2 resources R1 and R2. Each process needs at most 2 units of R1 and 1 unit of R2. There are 6 units of R1 and 3 units of R2 available. Which statement is true?
 
@@ -891,8 +860,7 @@ Maximum need per process: R1=2, R2=1. Total max R1 needed = 3×2=6, exactly matc
 
 </details>
 
-### Q23 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
-
+### Q23 [2 Marks] — 📂 Computer Networks | 🏷️ Medium
 
 In Go-Back-N ARQ with window size 4, if frame 3 is lost, how many frames are retransmitted when the sender receives a timeout for frame 3?
 
@@ -918,8 +886,7 @@ console.log(goBackNRetransmit(3, 4)); // 4
 
 </details>
 
-### Q24 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q24 [2 Marks] — 📂 Database Management Systems | 🏷️ Medium
 
 Consider the relational schema R(A, B, C, D) with functional dependencies: A → BC, BC → D, D → A. Which sets form candidate keys?
 
@@ -934,9 +901,9 @@ Consider the relational schema R(A, B, C, D) with functional dependencies: A →
 **Answer:** (B) {A}, {BC}, {D}
 
 **Explanation:**
-AâÂ�º = {A,B,C,D} → A is CK.
-BCâÂ�º = {B,C,D,A} → BC is CK.
-DâÂ�º = {D,A,B,C} → D is CK.
+A⁺ = {A,B,C,D} → A is CK.
+BC⁺ = {B,C,D,A} → BC is CK.
+D⁺ = {D,A,B,C} → D is CK.
 All three are candidate keys.
 
 ```mermaid
@@ -956,8 +923,7 @@ graph TD
 
 </details>
 
-### Q25 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
-
+### Q25 [2 Marks] — 📂 Theory of Computation | 🏷️ Medium
 
 Which of the following problems is decidable?
 
@@ -976,8 +942,7 @@ CFG emptiness (whether a CFG generates any strings) is decidable. The halting pr
 
 </details>
 
-### Q26 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q26 [2 Marks] — 📂 Compiler Design | 🏷️ Medium
 
 LALR(1) parsers are constructed by:
 
@@ -996,8 +961,7 @@ LALR(1) parsers merge states of LR(1) items that have the same core (same LR(0) 
 
 </details>
 
-### Q27 [2 Marks] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Medium
-
+### Q27 [2 Marks] — 📂 Digital Logic | 🏷️ Medium
 
 A 4-to-1 multiplexer has how many select lines?
 
@@ -1016,8 +980,7 @@ Number of select lines = log₂(4) = 2. With 2 select lines, we can choose one o
 
 </details>
 
-### Q28 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q28 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Medium
 
 What is a data hazard in a pipelined processor?
 
@@ -1036,8 +999,7 @@ Data hazards (RAW hazards) occur when an instruction requires the result of a pr
 
 </details>
 
-### Q29 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q29 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 
 Which sorting algorithm is NOT stable?
 
@@ -1064,8 +1026,7 @@ console.log("QuickSort is not stable; MergeSort is stable");
 
 </details>
 
-### Q30 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q30 [2 Marks] — 📂 Operating Systems | 🏷️ Medium
 
 Banker's algorithm is used for:
 
@@ -1084,8 +1045,7 @@ Banker's algorithm checks for safe states by simulating resource allocation, mak
 
 </details>
 
-### Q31 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q31 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 
 If the bandwidth of a channel is 4 kHz and the SNR is 1023, what is the maximum data rate according to Shannon's theorem?
 
@@ -1114,8 +1074,7 @@ console.log(shannonCapacity(4000, 1023)); // 40000 bps = 40 kbps
 
 </details>
 
-### Q32 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q32 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 
 Consider the schedule S: W1(A), R2(A), W2(B), R1(B), C1, C2. Is S conflict serializable?
 
@@ -1176,8 +1135,7 @@ class ScheduleConflict {
 
 </details>
 
-### Q33 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q33 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 
 Context-free languages are closed under all EXCEPT:
 
@@ -1196,8 +1154,7 @@ CFLs are closed under union, concatenation, and Kleene star. They are NOT closed
 
 </details>
 
-### Q34 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q34 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 
 A full binary tree has 11 internal nodes. How many leaf nodes does it have?
 
@@ -1224,8 +1181,7 @@ console.log(fullBinaryLeaves(11)); // 12
 
 </details>
 
-### Q35 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q35 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 
 Given disk requests: 20, 10, 60, 85, 90, 120, 150, 180. Head starts at 50. Using SCAN algorithm (moving towards 0 first), the total head movement is:
 
@@ -1267,8 +1223,7 @@ console.log(scanHeadMovement(50, [20,10,60,85,90,120,150,180], 'down')); // 210
 
 </details>
 
-### Q36 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
+### Q36 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Medium
 
 If A is a 3×3 matrix with eigenvalues 1, -1, and 2, what is the determinant of A³?
 
@@ -1296,8 +1251,7 @@ console.log(detOfCube([1, -1, 2])); // -8
 
 </details>
 
-### Q37 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
+### Q37 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Medium
 
 How many integers between 1 and 1000 are divisible by 2 or 5?
 
@@ -1329,8 +1283,7 @@ console.log(divisibleBy2or5(1000)); // 600
 
 </details>
 
-### Q38 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
+### Q38 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Medium
 
 A 2×2 matrix has trace 5 and determinant 6. Its eigenvalues are:
 
@@ -1345,8 +1298,8 @@ A 2×2 matrix has trace 5 and determinant 6. Its eigenvalues are:
 **Answer:** (B) 2, 3
 
 **Explanation:**
-For a 2×2 matrix: trace = λâ‚Â� + λ₂ = 5, determinant = λâ‚Â�·λ₂ = 6.
-Solving: λâ‚Â�, λ₂ are roots of λ² - 5λ + 6 = 0 → (λ-2)(λ-3) = 0 → λ = 2, 3.
+For a 2Ã—2 matrix: trace = Î»â‚ + Î»â‚‚ = 5, determinant = Î»â‚·λ₂ = 6.
+Solving: λ₁, λ₂ are roots of λ² - 5λ + 6 = 0 → (λ-2)(λ-3) = 0 → λ = 2, 3.
 
 ```typescript
 function eigenvalues(trace: number, det: number): number[] {
@@ -1359,8 +1312,7 @@ console.log(eigenvalues(5, 6)); // [3, 2]
 
 </details>
 
-### Q39 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q39 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Easy
 
 X follows Binomial(n=10, p=0.5). What is P(X = 5)?
 
@@ -1375,7 +1327,7 @@ X follows Binomial(n=10, p=0.5). What is P(X = 5)?
 **Answer:** (A) 63/256
 
 **Explanation:**
-P(X=5) = C(10,5) × (0.5)âÂ�µ × (0.5)âÂ�µ = 252 × (1/2)¹âÂ�° = 252/1024 = 63/256.
+P(X=5) = C(10,5) × (0.5)⁵ × (0.5)⁵ = 252 × (1/2)¹⁰ = 252/1024 = 63/256.
 
 ```typescript
 function binomialProb(n: number, k: number, p: number): number {
@@ -1391,8 +1343,7 @@ console.log(binomialProb(10, 5, 0.5)); // 0.24609375 = 63/256
 
 </details>
 
-### Q40 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
+### Q40 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Medium
 
 The recurrence T(n) = 2T(n/2) + n solves to:
 
@@ -1421,8 +1372,7 @@ console.log(t(16)); // demonstrates O(n log n)
 
 </details>
 
-### Q41 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q41 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 
 What is the minimum number of nodes in a complete binary tree of height 3 (height of root = 0)?
 
@@ -1449,8 +1399,7 @@ console.log(minNodesCompleteTree(3)); // 8
 
 </details>
 
-### Q42 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q42 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Medium
 
 Consider the following instructions:
 1. ADD R1, R2, R3  (R1 = R2 + R3)
@@ -1474,26 +1423,25 @@ ADD writes to R1 in WB (stage 5). SUB reads R1 in ID (stage 2 of SUB). With forw
 ```mermaid
 gantt
     title Pipeline Hazard Diagram
-    dateFormat  YYYY-MM-DD
-    axisFormat  %d
+    dateFormat  X
+    axisFormat %s
     section ADD R1
-    IF  : a1, 2026-01-01, 1d
-    ID  : a2, 2026-01-02, 1d
-    EX  : a3, 2026-01-03, 1d
-    MEM : a4, 2026-01-04, 1d
-    WB  : a5, 2026-01-05, 1d
+    IF : a1, 0, 1s
+    ID : a2, 1s, 1s
+    EX : a3, 2s, 1s
+    MEM : a4, 3s, 1s
+    WB : a5, 4s, 1s
     section SUB R4
-    IF  : b1, 2026-01-03, 1d
-    ID  : b2, 2026-01-04, 1d
-    EX  : b3, 2026-01-05, 1d
-    MEM : b4, 2026-01-06, 1d
-    WB  : b5, 2026-01-07, 1d
+    IF : b1, 2s, 1s
+    ID : b2, 3s, 1s
+    EX : b3, 4s, 1s
+    MEM : b4, 5s, 1s
+    WB : b5, 6s, 1s
 ```
 
 </details>
 
-### Q43 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q43 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 
 In CSMA/CD, what is the minimum frame size for a network with maximum propagation delay of 25 μs and data rate of 100 Mbps?
 
@@ -1509,7 +1457,7 @@ In CSMA/CD, what is the minimum frame size for a network with maximum propagatio
 
 **Explanation:**
 Minimum frame size = 2 × T_prop × Data rate
-= 2 × 25 × 10âÂ�»âÂ�¶ × 100 × 10âÂ�¶
+= 2 × 25 × 10⁻⁶ × 100 × 10⁶
 = 2 × 25 × 100 = 5000 bits
 = 5000/8 = 625 bytes.
 
@@ -1523,8 +1471,7 @@ console.log(minFrameSize(25, 100)); // 625 bytes
 
 </details>
 
-### Q44 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q44 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 
 Which normal form requires that every non-prime attribute be fully functionally dependent on every candidate key?
 
@@ -1543,8 +1490,7 @@ Which normal form requires that every non-prime attribute be fully functionally 
 
 </details>
 
-### Q45 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q45 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 
 Which of the following is the correct recurrence for the worst-case time complexity of QuickSort?
 
@@ -1571,8 +1517,7 @@ console.log(quicksortWorstCase(10)); // 55 steps
 
 </details>
 
-### Q46 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q46 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 
 A system has a virtual address of 32 bits, page size of 4 KB, and Page Table Entry (PTE) size of 4 bytes. How many pages does the page table require (assuming single-level paging)?
 
@@ -1588,14 +1533,14 @@ A system has a virtual address of 32 bits, page size of 4 KB, and Page Table Ent
 
 **Explanation:**
 Page size = 4 KB = 2¹² bytes → offset = 12 bits.
-Number of pages = 2³² / 2¹² = 2²âÂ�° pages.
-Page table size = 2²âÂ�° × 4 bytes = 4 MB.
+Number of pages = 2³² / 2¹² = 2²⁰ pages.
+Page table size = 2²⁰ × 4 bytes = 4 MB.
 Number of pages for page table = 4 MB / 4 KB = 1024 pages.
-Wait, let me recalculate. 2²âÂ�° × 4 = 4,194,304 bytes = 4 MB. 4 MB / 4 KB = 1024 pages.
+Wait, let me recalculate. 2²⁰ × 4 = 4,194,304 bytes = 4 MB. 4 MB / 4 KB = 1024 pages.
 
-Hmm, but that gives 1024. Let me check what the actual answer should be based on typical GATE questions. The page table has 2²âÂ�° entries × 4 bytes = 4 MB. Each page is 4 KB. So 4 MB / 4 KB = 1024 pages.
+Hmm, but that gives 1024. Let me check what the actual answer should be based on typical GATE questions. The page table has 2²⁰ entries × 4 bytes = 4 MB. Each page is 4 KB. So 4 MB / 4 KB = 1024 pages.
 
-But wait - the question might be interpreted differently. Let me re-examine. The page table size is 2²âÂ�° entries × 4 bytes = 4,194,304 bytes. Number of page table pages = 4,194,304 / 4096 = 1024.
+But wait - the question might be interpreted differently. Let me re-examine. The page table size is 2²⁰ entries × 4 bytes = 4,194,304 bytes. Number of page table pages = 4,194,304 / 4096 = 1024.
 
 Actually, the answer would be 1024. But let me re-check the options. Options include 1024, 2048, 4096, 8192. So 1024 = (A). But wait, this is already in the question with options. Let me make sure my calculation is correct.
 
@@ -1613,8 +1558,7 @@ Actually, wait - the original question text I wrote doesn't have A/B/C/D labels.
 
 </details>
 
-### Q47 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q47 [2 Marks] — 📂 Compiler Design | 🏷️ Medium
 
 What is the output of a shift-reduce parser for the input string id + id * id, given the grammar E → E + T | T, T → T * F | F, F → id?
 
@@ -1633,8 +1577,7 @@ A shift-reduce parser identifies handles (substrings matching production RHS) an
 
 </details>
 
-### Q48 [2 Marks] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Medium
-
+### Q48 [2 Marks] — 📂 Digital Logic | 🏷️ Medium
 
 A Boolean function F(A, B, C) = Σm(0, 2, 4, 6). The minimal sum-of-products expression is:
 
@@ -1668,8 +1611,7 @@ console.log(evaluateF(0,0,0), evaluateF(0,1,0)); // 1, 1
 
 </details>
 
-### Q49 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q49 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 
 The IEEE 754 single-precision representation of the number -13.75 is:
 
@@ -1704,8 +1646,7 @@ console.log(floatToHex(-13.75)); // 0xC15C0000
 
 </details>
 
-### Q50 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q50 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 
 Which DFS-based classification identifies edges that form a cycle in an undirected graph?
 
@@ -1757,8 +1698,7 @@ console.log(g.hasCycle()); // true
 
 </details>
 
-### Q51 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q51 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 
 Consider the following page reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. Using FIFO with 3 frames, how many page faults occur?
 
@@ -1806,8 +1746,7 @@ console.log(fifoPageFaults([1,2,3,4,1,2,5,1,2,3,4,5], 3)); // 9
 
 </details>
 
-### Q52 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q52 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 
 What is the network address for IP 192.168.10.130 with subnet mask 255.255.255.128?
 
@@ -1839,8 +1778,7 @@ console.log(networkAddress('192.168.10.130', '255.255.255.128')); // 192.168.10.
 
 </details>
 
-### Q53 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q53 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 
 Which of the following is NOT a property of a candidate key?
 
@@ -1859,8 +1797,7 @@ Candidate keys must be unique, minimal, and can determine all attributes. They C
 
 </details>
 
-### Q54 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q54 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 
 What is the language accepted by a Deterministic Finite Automaton (DFA) with exactly one accepting state that is also the start state, over alphabet {0,1}?
 
@@ -1883,8 +1820,7 @@ Let me rephrase: A DFA where the start state is the only final state. If all tra
 
 </details>
 
-### Q55 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q55 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 
 Which data structure is most efficient for implementing a disjoint-set (union-find) data structure with path compression and union by rank?
 
@@ -1928,8 +1864,7 @@ console.log(ds.find(0) === ds.find(3)); // true (connected)
 
 </details>
 
-### Q56 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
-
+### Q56 [2 Marks] — 📂 Compiler Design | 🏷️ Hard
 
 Which of the following is NOT a type of intermediate code representation used in compilers?
 
@@ -1948,8 +1883,7 @@ Token stream is produced by the lexical analyzer before syntax analysis. TAC, SS
 
 </details>
 
-### Q57 [2 Marks] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Hard
-
+### Q57 [2 Marks] — 📂 Digital Logic | 🏷️ Hard
 
 A 16:1 multiplexer can be implemented using 4:1 multiplexers. How many 4:1 multiplexers are needed?
 
@@ -1972,8 +1906,7 @@ Total = 4 + 1 = 5 MUXes.
 
 </details>
 
-### Q58 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q58 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 
 In a 4-way set associative cache with 16 KB total cache size and 32-byte blocks, how many sets are there?
 
@@ -2003,10 +1936,9 @@ console.log(cacheSets(16 * 1024, 32, 4)); // 128
 
 </details>
 
-### Q59 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
+### Q59 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
 
-
-What is the coefficient of x³ in the expansion of (x + 1)âÂ�·?
+What is the coefficient of x³ in the expansion of (x + 1)⁷?
 
 (A) 21  
 (B) 35  
@@ -2019,7 +1951,7 @@ What is the coefficient of x³ in the expansion of (x + 1)âÂ�·?
 **Answer:** (B) 35
 
 **Explanation:**
-(x + 1)âÂ�· = Σ C(7, k) x^k 1^{7-k}.
+(x + 1)⁷ = Σ C(7, k) x^k 1^{7-k}.
 Coefficient of x³ = C(7, 3) = 7!/(3!4!) = 35.
 
 ```typescript
@@ -2034,14 +1966,13 @@ console.log(nCr(7, 3)); // 35
 
 </details>
 
-### Q60 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q60 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 
 Consider a function g(n) = O(f(n)). If T(n) = T(n-1) + g(n), then T(n) is:
 
 (A) O(n) if g(n) = O(1)  
 (B) O(n²) if g(n) = O(n)  
-(C) O(2âÂ�¿) if g(n) = O(1)  
+(C) O(2ⁿ) if g(n) = O(1)  
 (D) O(n log n) if g(n) = O(log n)
 
 <details>
@@ -2074,8 +2005,7 @@ console.log(recurrenceSum(10, 'linear')); // 55 = O(n²)
 
 </details>
 
-### Q61 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q61 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 
 Which CPU scheduling algorithm minimizes the average waiting time?
 
@@ -2107,8 +2037,7 @@ console.log(sjfWaitingTime([6, 8, 7, 3])); // Average waiting time
 
 </details>
 
-### Q62 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q62 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 
 Which TCP congestion control mechanism is characterized by increasing the congestion window by 1 MSS per RTT until a loss is detected?
 
@@ -2136,8 +2065,7 @@ graph LR
 
 </details>
 
-### Q63 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q63 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 
 In a B+ tree index of order 5 (maximum children = 5), what is the minimum number of keys in each internal node (except root)?
 
@@ -2164,8 +2092,7 @@ console.log(bplusMinKeys(5)); // 2
 
 </details>
 
-### Q64 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q64 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 
 Which of the following best describes the Chomsky hierarchy?
 
@@ -2184,8 +2111,7 @@ Chomsky hierarchy: Type-3 (Regular) ⊂ Type-2 (CFL) ⊂ Type-1 (CSL) ⊂ Type-0
 
 </details>
 
-### Q65 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
-
+### Q65 [2 Marks] — 📂 Compiler Design | 🏷️ Hard
 
 Which of the following code optimization techniques is applicable to loop-invariant code?
 
@@ -2306,16 +2232,13 @@ pie title "Difficulty Distribution - GATE CS 2025"
 
 ### Paper Analysis
 
-
 GATE 2025 Computer Science paper maintained the established pattern of balanced coverage across core subjects. The paper comprised 65 questions: 10 General Aptitude (GA) and 55 Technical. The total marks were 100, with GA contributing 15 marks and Technical contributing 85 marks. Multiple Choice Questions (MCQs), Multiple Select Questions (MSQs), and Numerical Answer Type (NAT) questions were present in the ratio 40:10:15 approximately. Negative marking applied only to MCQs (1/3 mark deducted for wrong answers). The paper tested both conceptual understanding and computational ability, with a slight tilt toward application-based problem solving.
 
 ### Difficulty Trends
 
-
 Compared to GATE 2024, the 2025 paper was marginally more difficult. Data Structures & Algorithms saw the toughest questions — two NAT problems on graph algorithms and BST manipulation had less than 18% correct response rates. Operating Systems questions on file systems and deadlock detection were moderate. Theory of Computation maintained traditional difficulty with regular pumping lemma and TM construction problems. Overall, the paper's difficulty distribution was approximately 30% Easy, 45% Medium, and 25% Hard — consistent with the trend of increasing analytical depth in recent years. The GA section was slightly easier than 2024, with verbal ability questions being straightforward.
 
 ### Key Concepts Tested
-
 
 | Subject | Key Concepts |
 |---------|-------------|
@@ -2510,7 +2433,6 @@ Test your understanding of GATE 2025 concepts with these 5 multiple-choice quest
 - d) Both a and b are correct
 
 ### Answer Key
-
 
 | Q | Answer | Explanation |
 |---|--------|-------------|

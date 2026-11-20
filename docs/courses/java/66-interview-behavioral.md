@@ -1,3 +1,7 @@
+---
+description: "This chapter covers behavioral interview preparation for Java backend engineers. It includes the STAR method, common behavioral questions with structured"
+---
+
 # 66. Behavioral Interview — Q&A
 
 > **Previous:** [System Design Interview Q&amp;A](./65-interview-system-design.md) | **Next:** (End of Series)

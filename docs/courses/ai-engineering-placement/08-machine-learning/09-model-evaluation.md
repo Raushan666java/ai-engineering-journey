@@ -1,3 +1,7 @@
+---
+description: "Model Evaluation — Cross-Validation, ROC-AUC, Confusion Matrix, Metrics: Machine learning is the core of AI engineering. From linear regression to"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Model Evaluation — Cross-Validation, ROC-AUC, Confusion Matrix, Metrics

@@ -1,3 +1,7 @@
+---
+description: "Remote MCP servers need authorization, not just authentication. The 2025-11-25 spec aligns with OAuth 2.1 + PKCE + resource indicators (RFC 8707) +"
+---
+
 # MCP Security II — OAuth 2.1, Resource Indicators, Incremental Scopes
 
 > Remote MCP servers need authorization, not just authentication. The 2025-11-25 spec aligns with OAuth 2.1 + PKCE + resource indicators (RFC 8707) + protected-resource metadata (RFC 9728). SEP-835 adds incremental scope consent with step-up authorization on 403 WWW-Authenticate. This lesson implements the step-up flow as a state machine so you can see every hop.

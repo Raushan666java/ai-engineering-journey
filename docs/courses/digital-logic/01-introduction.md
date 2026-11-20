@@ -1,3 +1,7 @@
+---
+description: "An analog signal is continuous in both time and amplitude. It can take any value within a range. A digital signal is discrete ? it takes only a finite set"
+---
+
 # Chapter 1: Introduction to Digital Logic
 
 > **Prereq:** Basic arithmetic (decimal operations).

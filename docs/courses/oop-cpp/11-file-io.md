@@ -1,3 +1,7 @@
+---
+description: "File I/O (Input/Output) is the mechanism by which a program reads data from or writes data to files on persistent storage (hard drive, SSD, etc.). Unlike"
+---
+
 # Chapter 11: File I/O
 
 > **Previous:** [10-stl-algorithms](./10-stl-algorithms.md) | **Next:** [12-smart-pointers](./12-smart-pointers.md)

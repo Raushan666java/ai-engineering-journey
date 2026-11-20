@@ -1,3 +1,7 @@
+---
+description: "PHI fields are encrypted at the Laravel layer using accessor mutators so the database stores only ciphertext. Controllers enforce authorization via Gates"
+---
+
 # Chapter 39: Healthcare Interview Q&A
 
 > **Previous:** [Laravel General Interview Q&A](./38-interview-general.md) | **Next:** [Finance & FinTech Interview Q&A](./40-interview-finance.md)

@@ -1,3 +1,7 @@
+---
+description: "A for loop is like running laps around a track: you know exactly how many laps you need to run before you start. The coach says 'run 5 laps' — you"
+---
+
 # Chapter 5: Loops (Comprehensive)
 
 > **Previous:** [Control Flow](./04-control-flow.md) | **Next:** [Arrays](./06-arrays.md)

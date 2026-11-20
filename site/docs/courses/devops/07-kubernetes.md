@@ -4,6 +4,7 @@ slug: /devops/07-kubernetes
 title: "Chapter 7: Kubernetes"
 sidebar_label: "Chapter 7: Kubernetes"
 sidebar_position: 13
+description: "Understanding pod scheduling decisions helps debug placement issues and optimize cluster utilization. The following simulator models the Kubernetes"
 ---
 
 # Chapter 7: Kubernetes

@@ -1,3 +1,7 @@
+---
+description: "Standard attention materializes an NxN matrix in HBM before it computes a single softmax. At 128k tokens that matrix alone is 32 GiB per head"
+---
+
 # FlashAttention Deep Dive -- FA1, FA2, FA3, Memory & Speed
 
 > Standard attention materializes an NxN matrix in HBM before it computes a single softmax. At 128k tokens that matrix alone is 32 GiB per head. FlashAttention (Dao et al., NeurIPS 2022) rearranged the computation so the NxN matrix never leaves the chip. FA2 cut non-matmul overhead by 2x. FA3 uses H100 warp specialization to overlap IO and compute. The three papers together are the single most impactful memory-system optimization in the Transformer toolkit.

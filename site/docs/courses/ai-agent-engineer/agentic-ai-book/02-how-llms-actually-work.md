@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/02-how-llms-actually-work
 title: "02-how-llms-actually-work"
 sidebar_label: "02-how-llms-actually-work"
 sidebar_position: 3
+description: "You don't need to understand transformer internals to build agents, but you need to understand these specific mechanics or you'll fight the framework"
 ---
 
 ## Chapter 2: How LLMs Actually Work (Just Enough to Build Agents)

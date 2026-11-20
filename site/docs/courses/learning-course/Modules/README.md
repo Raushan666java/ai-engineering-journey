@@ -3,6 +3,7 @@ slug: /learning-course/Modules/README
 title: "📚 Learning Modules - Enhanced with AI Integration"
 sidebar_label: "📚 Learning Modules - Enhanced with AI Integration"
 sidebar_position: 1
+description: "These modules provide deep-dive content that complements the main AI-enhanced learning course. Each module includes both traditional learning science and"
 ---
 # 📚 Learning Modules - Enhanced with AI Integration
 

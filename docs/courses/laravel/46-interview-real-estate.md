@@ -1,3 +1,7 @@
+---
+description: "Common interview questions for Laravel developer roles in real estate technology (PropTech), property management SaaS, and real estate platform companies"
+---
+
 # Chapter 46: Real Estate & Property Interview Q&A
 
 > **Previous:** [Customer Service & Support — Interview Q&A](./45-interview-customer-service.md) | **Next:** [Legal & Compliance Interview Q&A](./47-interview-legal.md)

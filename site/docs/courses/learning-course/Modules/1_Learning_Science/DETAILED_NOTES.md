@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/Modules/1_Learning_Science/README.mdDETAILED_NOTES title: '🧠 Learning Science - Detailed Notes' sidebar_label: '🧠 Learning"
+---
+
 ﻿---
 slug: /learning-course/Modules/1_Learning_Science/README.mdDETAILED_NOTES
 title: "🧠 Learning Science - Detailed Notes"

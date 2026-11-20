@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/18-multimodal-ai-voice/02-object-detection
 title: "Object Detection"
 sidebar_label: "Object Detection"
 sidebar_position: 229
+description: "Object Detection: AI is moving beyond text. Computer vision, speech recognition, and multimodal models process images, audio, and video. This module"
 ---
 
 <!-- improved -->

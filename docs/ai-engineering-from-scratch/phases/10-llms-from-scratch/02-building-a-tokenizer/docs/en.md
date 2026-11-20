@@ -1,3 +1,7 @@
+---
+description: "Not because BPE is wrong -- because the implementation is incomplete. A production tokenizer handles raw bytes in any encoding, normalizes Unicode before"
+---
+
 # Building a Tokenizer from Scratch
 
 > Lesson 01 gave you a toy. This lesson gives you a weapon.

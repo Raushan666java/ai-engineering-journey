@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/08-agentic-rag
 title: "08-agentic-rag"
 sidebar_label: "08-agentic-rag"
 sidebar_position: 9
+description: "Naive RAG (what most tutorials teach, and likely what your current ChromaDB setup does): always retrieve top-K chunks for every query, stuff them into the"
 ---
 
 ## Chapter 8: Agentic RAG

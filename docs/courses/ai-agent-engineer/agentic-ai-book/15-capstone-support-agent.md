@@ -1,3 +1,7 @@
+---
+description: "This chapter walks through building the ApexERP Support Agent end to end, combining every concept from the book into one real system. Treat this as your"
+---
+
 # Part V — Applied
 
 ## Chapter 15: Capstone — Building a Production Support Agent

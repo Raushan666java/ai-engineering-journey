@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Vertical scaling adds resources to a single machine: more"
+---
+
 # Chapter 2: Scalability and Load Balancing
 > **Previous:** [01 Introduction](./01-introduction.md) | **Next:** [03 Caching](./03-caching.md)
 

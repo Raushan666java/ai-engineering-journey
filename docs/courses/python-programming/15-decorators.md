@@ -1,3 +1,7 @@
+---
+description: "Build a @rate_limit(calls, period) decorator that limits a function to calls invocations per period seconds. Use a lock or queue to handle concurrency in"
+---
+
 # Chapter 15: Decorators
 
 

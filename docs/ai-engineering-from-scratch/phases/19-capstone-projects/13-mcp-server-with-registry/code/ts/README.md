@@ -1,3 +1,7 @@
+---
+description: "TypeScript half of the capstone. The Python side (code/main.py) ships the registry and policy gate; this project is the MCP transport: hand-rolled"
+---
+
 # Lesson 13 - Internal MCP Server (TypeScript)
 
 TypeScript half of the capstone. The Python side (`code/main.py`) ships the

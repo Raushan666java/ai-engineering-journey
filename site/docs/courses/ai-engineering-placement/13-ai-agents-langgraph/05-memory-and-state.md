@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/13-ai-agents-langgraph/05-memory-and-state
 title: "Memory and State"
 sidebar_label: "Memory and State"
 sidebar_position: 180
+description: "Memory and State: AI agents autonomously use tools to complete tasks. LangGraph builds stateful, multi-step agent workflows. This module covers agent"
 ---
 
 <!-- improved -->

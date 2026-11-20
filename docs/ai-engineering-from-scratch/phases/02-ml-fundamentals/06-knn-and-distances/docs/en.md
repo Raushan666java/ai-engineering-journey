@@ -1,3 +1,7 @@
+---
+description: "You have a dataset. A new data point arrives. You need to classify it or predict its value. Instead of learning parameters from the data (like linear"
+---
+
 # K-Nearest Neighbors and Distances
 
 > Store everything. Predict by looking at your neighbors. The simplest algorithm that actually works.

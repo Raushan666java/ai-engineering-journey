@@ -4,6 +4,7 @@ slug: /laravel/ai-ml-fundamentals
 title: "Chapter P6: AI/ML Fundamentals & Laravel Integration"
 sidebar_label: "Chapter P6: AI/ML Fundamentals & Laravel Integration"
 sidebar_position: 55
+description: "Chapter P6: AI/ML Fundamentals & Laravel Integration: One-Sentence Takeaway: Theory is the foundation → master it before moving to examples and exercises"
 ---
 
 # Chapter P6: AI/ML Fundamentals & Laravel Integration

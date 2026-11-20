@@ -1,3 +1,7 @@
+---
+description: "Maybe. Maybe not. If 95% of your data belongs to one class, a model that always predicts that class gets 95% accuracy while being completely useless. If"
+---
+
 # Model Evaluation
 
 > A model is only as good as the way you measure it.

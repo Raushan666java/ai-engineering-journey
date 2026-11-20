@@ -1,3 +1,7 @@
+---
+description: "Telling a model what to do is prompting. Showing it how to think is engineering. The gap between 78% and 91% accuracy on the same model, same task, same"
+---
+
 # Few-Shot, Chain-of-Thought, Tree-of-Thought
 
 > Telling a model what to do is prompting. Showing it how to think is engineering. The gap between 78% and 91% accuracy on the same model, same task, same data is not a better model. It is a better reasoning strategy.

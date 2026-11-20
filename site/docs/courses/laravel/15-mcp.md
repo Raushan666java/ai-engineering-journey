@@ -4,6 +4,7 @@ slug: /laravel/15-mcp
 title: "Chapter 15: Laravel MCP → Model Context Protocol"
 sidebar_label: "Chapter 15: Laravel MCP → Model Context Protocol"
 sidebar_position: 15
+description: "The Model Context Protocol (MCP) is an open standard published by Anthropic that defines how AI clients communicate with servers that provide context"
 ---
 
 # Chapter 15: Laravel MCP → Model Context Protocol

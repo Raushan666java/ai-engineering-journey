@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/agentic-ai-book/05-the-agent-loop-react
 title: "05-the-agent-loop-react"
 sidebar_label: "05-the-agent-loop-react"
 sidebar_position: 6
+description: "ReAct (Reason + Act) is the foundational pattern: the model alternates between reasoning (thinking about what to do) and acting (calling a tool)"
 ---
 
 ## Chapter 5: The Agent Loop (ReAct) — Hand-Built

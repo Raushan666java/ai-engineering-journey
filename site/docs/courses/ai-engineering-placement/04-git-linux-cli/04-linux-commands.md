@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/04-git-linux-cli/04-linux-commands
 title: "Linux Commands"
 sidebar_label: "Linux Commands"
 sidebar_position: 61
+description: "Linux command line skills are essential for AI engineers who work with remote servers, GPU clusters, and deployment pipelines. Mastering file operations"
 ---
 
 <!-- improved -->

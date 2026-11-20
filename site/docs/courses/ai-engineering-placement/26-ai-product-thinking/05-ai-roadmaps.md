@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/26-ai-product-thinking/05-ai-roadmaps
 title: "Building AI Roadmaps"
 sidebar_label: "Building AI Roadmaps"
 sidebar_position: 320
+description: "Building an AI roadmap is different from building a traditional software roadmap. Model uncertainty, data dependencies, and shifting research make AI"
 ---
 
 <!-- improved -->

@@ -1,3 +1,7 @@
+---
+description: "Imagine an office with 10 workers sharing one desk. Each worker has their own notebook (stack) and pen (registers), but they share the same desk"
+---
+
 # Chapter 4: Threads
 
 **<< [CPU Scheduling](./03-cpu-scheduling.md)** | [**Next: Process Synchronization**](./05-synchronization.md) >>

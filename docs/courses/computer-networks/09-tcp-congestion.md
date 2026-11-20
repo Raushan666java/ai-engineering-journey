@@ -1,3 +1,7 @@
+---
+description: "Flow control prevents a fast sender from overwhelming a slow receiver. The receiver advertises its available buffer space (rwnd, advertised window), and"
+---
+
 # Chapter 9: TCP Congestion Control
 
 > **Prerequisites:** [Chapter 8: Transport Layer](./08-transport-layer.md) — TCP basics and connection management | **Next:** [Chapter 10: Application Layer](./10-application-layer.md) — From transport to user-facing protocols

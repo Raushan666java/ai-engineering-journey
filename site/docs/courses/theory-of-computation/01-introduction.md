@@ -4,6 +4,7 @@ slug: /theory-of-computation/01-introduction
 title: "Chapter 1: Introduction to the Theory of Computation"
 sidebar_label: "Chapter 1: Introduction to the Theory of Computation"
 sidebar_position: 1
+description: "Basic set operations include union (?), intersection (n), difference (-), and complement (?). The power set of A, written ??(A) or 2^A, is the set of all"
 ---
 
 # Chapter 1: Introduction to the Theory of Computation

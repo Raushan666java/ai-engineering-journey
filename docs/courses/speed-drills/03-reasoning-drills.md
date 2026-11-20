@@ -1,3 +1,7 @@
+---
+description: "Sharpen your analytical reasoning through timed practice in coding-decoding, blood relations, direction sense, syllogisms, inequalities, and series"
+---
+
 # Reasoning Speed Drills
 
 > Sharpen your analytical reasoning through timed practice in coding-decoding, blood relations, direction sense, syllogisms, inequalities, and series completion.

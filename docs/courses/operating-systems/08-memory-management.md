@@ -1,3 +1,7 @@
+---
+description: "A[Address Binding] --> B[Logical vs Physical Addresses] B --> C[MMU & Relocation] C --> D[Contiguous Allocation] D --> E[Fixed Partitioning] D -->"
+---
+
 # Chapter 8: Memory Management
 
 **<< [Deadlocks](./07-deadlocks.md)** | [**Next: Virtual Memory**](./09-virtual-memory.md) >>

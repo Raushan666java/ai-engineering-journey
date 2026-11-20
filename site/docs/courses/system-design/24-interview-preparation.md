@@ -4,6 +4,7 @@ slug: /system-design/24-interview-preparation
 title: "Chapter 24: System Design Interview Preparation"
 sidebar_label: "Chapter 24: System Design Interview Preparation"
 sidebar_position: 24
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. A system design interview typically lasts 45-60 minutes. The"
 ---
 
 # Chapter 24: System Design Interview Preparation

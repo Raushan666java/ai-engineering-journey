@@ -1,3 +1,7 @@
+---
+description: 'Formal ($ epsilon$-$ delta$) Definition: $ lim_{x to a} f(x) = L$ if for every $ epsilon > 0$, there exists $ delta > 0$ such that $0 &lt; |x - a| <'
+---
+
 # Chapter 2: Single Variable Calculus
 
 > **Previous:** [Chapter 1: Linear Algebra](01-linear-algebra.md) | **Next:** [Chapter 3: Multivariable Calculus](03-calculus-ii.md)

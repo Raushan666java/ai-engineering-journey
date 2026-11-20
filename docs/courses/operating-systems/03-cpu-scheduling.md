@@ -1,3 +1,7 @@
+---
+description: "Imagine you are the sole cashier at a busy supermarket. There is one checkout counter (the CPU) and a line of customers (processes). Each customer has a"
+---
+
 # Chapter 3: CPU Scheduling
 
 **<< [Processes](./02-processes.md)** | [**Next: Threads**](./04-threads.md) >>

@@ -4,6 +4,7 @@ slug: /software-engineering/12-devops-cicd
 title: "DevOps and CI/CD"
 sidebar_label: "DevOps and CI/CD"
 sidebar_position: 12
+description: "DevOps is a cultural and technical movement that bridges the gap between development (Dev) and operations (Ops). It emphasises automation, measurement"
 ---
 
 # DevOps and CI/CD

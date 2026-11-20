@@ -4,6 +4,7 @@ slug: /oop-cpp/12-smart-pointers
 title: "Chapter 12: Smart Pointers"
 sidebar_label: "Chapter 12: Smart Pointers"
 sidebar_position: 12
+description: "unique_ptr<T> is a move-only smart pointer that owns a dynamically allocated T exclusively. When the unique_ptr goes out of scope, the owned object is"
 ---
 
 # Chapter 12: Smart Pointers

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/08-machine-learning
 title: "08 — Machine Learning"
 sidebar_label: "08 — Machine Learning"
 sidebar_position: 124
+description: "Classical ML you can defend: regression, trees, ensembles and honest evaluation. The maths interviewers actually probe."
 ---
 
 # 08 — Machine Learning

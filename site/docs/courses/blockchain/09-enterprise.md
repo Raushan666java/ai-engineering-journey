@@ -4,6 +4,7 @@ slug: /blockchain/09-enterprise
 title: "Chapter 9: Enterprise Blockchain"
 sidebar_label: "Chapter 9: Enterprise Blockchain"
 sidebar_position: 9
+description: "One-Sentence Takeaway: Enterprise blockchains trade open, permissionless participation for privacy, throughput, and finality — making them suitable for"
 ---
 
 # Chapter 9: Enterprise Blockchain

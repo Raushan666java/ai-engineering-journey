@@ -4,6 +4,7 @@ slug: /information-security/02-network-security
 title: "Chapter 2: Network Security"
 sidebar_label: "Chapter 2: Network Security"
 sidebar_position: 2
+description: "Exam Weightage: 4–5 Qs in IBPS SO IT Officer Mains (Firewalls, IDS/IPS, VPN, SSL/TLS, Secure Protocols) Key Topics: Firewall types, IDS/IPS, VPN (IPSec"
 ---
 
 # Chapter 2: Network Security

@@ -1,3 +1,7 @@
+---
+description: "Formal methods are mathematically based techniques for the specification, development, and verification of software systems. They provide a rigorous"
+---
+
 # Formal Methods
 
 ## Learning Objectives

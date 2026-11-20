@@ -1,3 +1,7 @@
+---
+description: "'Apple sued Google over its iPhone search deal in the US.' Five entities: Apple (ORG), Google (ORG), iPhone (PRODUCT), search deal (maybe), US (GPE). A"
+---
+
 # Named Entity Recognition
 
 > Pull the names out. Sounds easy until you deal with ambiguous boundaries, nested entities, and domain jargon.

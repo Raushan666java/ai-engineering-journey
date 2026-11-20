@@ -4,6 +4,7 @@ slug: /oop-cpp/08-exceptions
 title: "Chapter 8: Exception Handling"
 sidebar_label: "Chapter 8: Exception Handling"
 sidebar_position: 8
+description: "Before C++ exceptions, error handling relied on return codes, sentinel values, and the global errno variable. This approach is still common in C code and"
 ---
 
 # Chapter 8: Exception Handling

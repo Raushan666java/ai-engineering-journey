@@ -1,3 +1,7 @@
+---
+description: "AI Engineering from Scratch is a free, open-source curriculum that builds every core AI algorithm by hand. 503 lessons across 20 phases, from linear"
+---
+
 # About AI Engineering from Scratch
 
 [Home](index.md) · [Catalog](catalog.md) · [Roadmap](roadmap.md) · [Glossary](glossary.md) · [Contact](contact.md)

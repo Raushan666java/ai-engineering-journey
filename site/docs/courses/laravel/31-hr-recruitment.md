@@ -4,6 +4,7 @@ slug: /laravel/31-hr-recruitment
 title: "Chapter 31: HR & Recruitment — AI-Powered Talent Agents"
 sidebar_label: "Chapter 31: HR & Recruitment — AI-Powered Talent Agents"
 sidebar_position: 31
+description: "Chapter 31: HR & Recruitment — AI-Powered Talent Agents: One-Sentence Takeaway: Theory is the foundation → master it before moving to examples and"
 ---
 
 # Chapter 31: HR & Recruitment — AI-Powered Talent Agents

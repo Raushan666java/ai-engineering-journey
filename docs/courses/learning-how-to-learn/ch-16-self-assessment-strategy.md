@@ -1,3 +1,7 @@
+---
+description: "A complete system for self-assessment, gap analysis, strategy creation, progress tracking, and structured preparation — so you always know where you"
+---
+
 # Chapter 16: Self-Assessment & Structured Preparation Strategy
 
 > **Prerequisites:** [Chapter 15: Exam Cracking Mastery](./ch-15-exam-cracking-mastery.md) — Universal exam strategy framework.

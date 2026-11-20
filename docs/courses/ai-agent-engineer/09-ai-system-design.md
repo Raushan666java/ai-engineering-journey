@@ -1,3 +1,7 @@
+---
+description: "Architect production AI systems — RAG pipelines, agent infrastructures, and cost-optimized serving stacks. Make design decisions you can defend in a"
+---
+
 # Chapter 9 — AI System Design & Architecture
 
 **Duration:** 2 weeks, ~25 hours

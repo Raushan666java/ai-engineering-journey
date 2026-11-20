@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_08_Productivity_Without_Burnout/01_T
 title: "🔋 The Rule of 3"
 sidebar_label: "🔋 The Rule of 3"
 sidebar_position: 1
+description: "The image of the 'hustler' developer—someone who works 14-hour days, constantly context-switches between Slack and their IDE, and ships 15 features a"
 ---
 # 🔋 The Rule of 3
 

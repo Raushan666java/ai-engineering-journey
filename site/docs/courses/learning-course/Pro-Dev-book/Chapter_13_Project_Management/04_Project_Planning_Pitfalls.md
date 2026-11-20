@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_13_Project_Management/04_Project_Pla
 title: "📉 Project Planning Pitfalls"
 sidebar_label: "📉 Project Planning Pitfalls"
 sidebar_position: 4
+description: "Most software projects do not fail because the developers forgot how to write a for loop, or because the framework had a bug in it. Projects fail before a"
 ---
 # 📉 Project Planning Pitfalls
 

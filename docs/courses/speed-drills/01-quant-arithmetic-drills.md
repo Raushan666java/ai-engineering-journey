@@ -1,3 +1,7 @@
+---
+description: "Build lightning-fast mental calculation skills through timed practice across addition, subtraction, multiplication, division, percentages, fractions"
+---
+
 # Quant Arithmetic Speed Drills
 
 > Build lightning-fast mental calculation skills through timed practice across addition, subtraction, multiplication, division, percentages, fractions, squares, cubes, roots, and approximation.

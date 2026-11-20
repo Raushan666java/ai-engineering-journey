@@ -4,6 +4,7 @@ slug: /speed-drills/03-reasoning-drills
 title: "Reasoning Speed Drills"
 sidebar_label: "Reasoning Speed Drills"
 sidebar_position: 3
+description: "Sharpen your analytical reasoning through timed practice in coding-decoding, blood relations, direction sense, syllogisms, inequalities, and series"
 ---
 
 # Reasoning Speed Drills

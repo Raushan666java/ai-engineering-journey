@@ -1,3 +1,7 @@
+---
+description: "A hands-on guide for developers with an API/backend background (Laravel, FastAPI, RAG, n8n, MCP) Part II — Building Blocks"
+---
+
 # Agentic AI — The Complete Book
 ### From First Principles to Production Multi-Agent Systems
 *A hands-on guide for developers with an API/backend background (Laravel, FastAPI, RAG, n8n, MCP)*

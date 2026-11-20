@@ -1,3 +1,7 @@
+---
+description: "SSH (Secure Shell) is the standard protocol for secure remote access to servers, containers, and cloud instances. AI engineers use SSH daily to access"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # SSH & Remote Access — Secure Shell, Key Management, Tunneling

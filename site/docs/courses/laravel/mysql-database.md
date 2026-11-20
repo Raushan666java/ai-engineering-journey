@@ -4,6 +4,7 @@ slug: /laravel/mysql-database
 title: "MySQL & Database Design"
 sidebar_label: "MySQL & Database Design"
 sidebar_position: 60
+description: "MySQL & Database Design: One-Sentence Takeaway: Theory is the foundation → master it before moving to examples and exercises. One-Sentence Takeaway"
 ---
 
 # MySQL & Database Design

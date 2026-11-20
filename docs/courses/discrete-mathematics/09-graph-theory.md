@@ -1,3 +1,7 @@
+---
+description: 'A graph $G = (V, E)$ consists of a set $V$ of vertices (or nodes) and a set $E$ of edges connecting pairs of vertices. An edge ${u, v}$ connects'
+---
+
 # Chapter 9: Graph Theory
 
 > **Previous:** [Chapter 8: Functions](./08-functions.md) | **Next:** [Chapter 10: Trees](./10-trees.md)

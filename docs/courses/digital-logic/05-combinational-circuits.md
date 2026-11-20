@@ -1,3 +1,7 @@
+---
+description: "A combinational circuit is a digital circuit whose output depends only on the present combination of inputs ? it has no memory, no feedback path, and no"
+---
+
 # Chapter 5: Combinational Circuits
 
 > **Prereq:** Chapter 4 (Karnaugh Maps) ? minimised expressions are the building blocks for efficient combinational circuits.

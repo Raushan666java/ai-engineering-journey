@@ -1,3 +1,7 @@
+---
+description: "Virtualization is the process of creating a software-based, virtual version of a resource, such as a server, storage device, network, or operating system"
+---
+
 # Chapter 2: Virtualization
 
 > **Previous:** [Chapter 1: Introduction to Cloud Computing](./01-introduction.md) | **Next:** [Chapter 3: Cloud Compute Services](./03-cloud-compute.md)

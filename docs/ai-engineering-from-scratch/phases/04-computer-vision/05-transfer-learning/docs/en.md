@@ -1,3 +1,7 @@
+---
+description: "Somebody else spent a million GPU hours teaching a network what edges, textures, and object parts look like. You should borrow those features before"
+---
+
 # Transfer Learning & Fine-Tuning
 
 > Somebody else spent a million GPU hours teaching a network what edges, textures, and object parts look like. You should borrow those features before training your own.

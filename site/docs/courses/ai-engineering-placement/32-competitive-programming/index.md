@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/32-competitive-programming
 title: "32 — Competitive Programming"
 sidebar_label: "32 — Competitive Programming"
 sidebar_position: 360
+description: "Contest practice for product-company tests: number theory, dynamic programming, graphs and speed under a 90-minute clock."
 ---
 
 # 32 — Competitive Programming

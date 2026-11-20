@@ -1,3 +1,7 @@
+---
+description: "The network layer provides host-to-host communication across multiple links. Its primary services include logical addressing, routing, fragmentation, and"
+---
+
 # Chapter 6: The Network Layer
 
 > **Prerequisites:** [Chapter 5: Ethernet Switching](./05-ethernet-switching.md) — L2 forwarding and VLANs | **Next:** [Chapter 7: Routing](./07-routing.md) — IP forwarding to path selection

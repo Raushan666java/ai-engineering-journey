@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/15-ai-evaluation-observability/05-tracing-and-mo
 title: "Tracing & Monitoring"
 sidebar_label: "Tracing & Monitoring"
 sidebar_position: 202
+description: "Tracing & Monitoring: You cannot improve what you cannot measure. Evaluation metrics, LLM-as-judge, and observability tools help you monitor and improve"
 ---
 
 <!-- improved -->

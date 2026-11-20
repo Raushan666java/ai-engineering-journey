@@ -4,6 +4,7 @@ slug: /software-engineering/16-capstone
 title: "Capstone: Building a Complete Software System"
 sidebar_label: "Capstone: Building a Complete Software System"
 sidebar_position: 16
+description: "The capstone project integrates every topic covered in this course into a single, coherent development exercise. Students will specify, design, implement"
 ---
 
 # Capstone: Building a Complete Software System

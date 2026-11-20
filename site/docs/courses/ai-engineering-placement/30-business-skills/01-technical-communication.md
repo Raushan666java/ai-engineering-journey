@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/30-business-skills/01-technical-communication
 title: "01 — Technical Communication"
 sidebar_label: "01 — Technical Communication"
 sidebar_position: 345
+description: "Technical communication is the single most underrated skill in engineering. A brilliant design that nobody understands is useless. An average design with"
 ---
 
 <!-- improved -->

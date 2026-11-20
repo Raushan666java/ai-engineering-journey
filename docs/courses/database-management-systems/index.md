@@ -1,3 +1,7 @@
+---
+description: "This textbook provides a comprehensive introduction to Database Management Systems (DBMS), covering the fundamental concepts, design methodologies, query"
+---
+
 # Database Management Systems — Complete Textbook
 
 ## Course Overview

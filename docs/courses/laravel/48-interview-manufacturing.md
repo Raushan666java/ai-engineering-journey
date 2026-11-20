@@ -1,3 +1,7 @@
+---
+description: "The six core entities are Equipment, ProductionOrder, QualityCheck, MaintenanceLog, InventoryItem, and IoTReading. Equipment is the central entity → each"
+---
+
 # Chapter 48: Manufacturing Interview Q&A
 
 > **Previous:** [Legal & Compliance Interview Q&A](./47-interview-legal.md) | **Next:** [PHP Interview Q&A](./49-interview-php.md)

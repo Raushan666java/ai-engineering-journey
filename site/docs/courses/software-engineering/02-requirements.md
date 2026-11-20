@@ -4,6 +4,7 @@ slug: /software-engineering/02-requirements
 title: "Requirements Engineering"
 sidebar_label: "Requirements Engineering"
 sidebar_position: 2
+description: "✅ After completing this chapter, the student will be able to: - Classify requirements as functional, non-functional, and domain requirements - Apply"
 ---
 
 # Requirements Engineering

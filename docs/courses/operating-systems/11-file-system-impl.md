@@ -1,3 +1,7 @@
+---
+description: "A[File System Layers] --> B[On-Disk Structures] B --> C[Directory Implementation] C --> D[Allocation Methods] D --> E[Contiguous / Linked / Indexed] E -->"
+---
+
 # Chapter 11: File System Implementation
 
 **<< [File Systems](./10-file-systems.md)** | [**Next: Secondary Storage**](./12-secondary-storage.md) >>

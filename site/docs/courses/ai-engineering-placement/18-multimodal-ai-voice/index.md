@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/18-multimodal-ai-voice
 title: "18 — Multimodal AI & Voice"
 sidebar_label: "18 — Multimodal AI & Voice"
 sidebar_position: 234
+description: "Speech, vision and documents: Whisper pipelines, OCR extraction, image models and multimodal retrieval."
 ---
 
 # 18 — Multimodal AI & Voice

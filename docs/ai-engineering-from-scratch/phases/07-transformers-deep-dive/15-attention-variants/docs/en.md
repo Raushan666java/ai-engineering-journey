@@ -1,3 +1,7 @@
+---
+description: "Full attention costs O(N²) memory and O(N²) compute in sequence length. For a 128K-context Llama 3 70B that is 16 billion attention entries per layer"
+---
+
 # Attention Variants — Sliding Window, Sparse, Differential
 
 > Full attention is a circle. Every token sees every token, and memory pays the price. Four variants bend the shape of the circle and recover half the cost.

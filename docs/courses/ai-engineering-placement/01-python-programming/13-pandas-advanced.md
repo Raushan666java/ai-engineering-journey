@@ -1,3 +1,7 @@
+---
+description: "Pandas Advanced — Pivot Tables, Multi-Index, Window Functions, Performance: Python is the lingua franca of AI engineering. Mastering its syntax, data"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Pandas Advanced — Pivot Tables, Multi-Index, Window Functions, Performance

@@ -1,3 +1,7 @@
+---
+description: "Answer: (c) Path coverage. It requires every possible execution path to be tested, which subsumes all other coverage criteria (though often impractical"
+---
+
 # Chapter 6: Software Engineering — Exam Quick Revision
 
 ## Learning Objectives

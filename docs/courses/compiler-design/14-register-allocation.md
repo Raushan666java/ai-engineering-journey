@@ -1,3 +1,7 @@
+---
+description: "After completing this chapter, students will be able to: construct live ranges from live-variable analysis; build interference graphs and compute register"
+---
+
 # Chapter 14: Register Allocation
 
 ? Previous: [Chapter 13: Loop Optimization](13-loop-optimization.md) | **Next:** [Chapter 15: Advanced Topics](15-advanced.md)

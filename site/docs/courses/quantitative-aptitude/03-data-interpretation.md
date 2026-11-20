@@ -4,6 +4,7 @@ slug: /quantitative-aptitude/03-data-interpretation
 title: "Chapter 3: Data Interpretation — Table DI, Bar/Line Charts, Pie Charts, Caselets, Mixed Graphs"
 sidebar_label: "Chapter 3: Data Interpretation — Table DI, Bar/Line Charts, Pie Charts, Caselets, Mixed Graphs"
 sidebar_position: 3
+description: "Data Interpretation (DI) is a major component of IBPS SO Quantitative Aptitude. In IBPS SO Prelims, 5–10 questions come from DI. The data is presented in"
 ---
 
 # Chapter 3: Data Interpretation — Table DI, Bar/Line Charts, Pie Charts, Caselets, Mixed Graphs

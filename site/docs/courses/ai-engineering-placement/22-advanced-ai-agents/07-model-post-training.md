@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents/07-model-post-training
 title: "Model Post-Training for Agents"
 sidebar_label: "Model Post-Training for Agents"
 sidebar_position: 278
+description: "Model Post-Training for Agents: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module"
 ---
 
 <!-- improved -->

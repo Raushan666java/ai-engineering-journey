@@ -1,3 +1,7 @@
+---
+description: "Imagine you walk into a party with 100 people you've never met. You want to know: are these two people in the same social circle? Each time someone"
+---
+
 # Chapter 18: Union-Find (Disjoint Set Union)
 
 **Prev:** [Chapter 17: Segment Tree and Fenwick Tree](17-segment-tree.md) | **Next:** None

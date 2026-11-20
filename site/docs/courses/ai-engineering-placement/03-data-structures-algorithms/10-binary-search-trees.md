@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/10-binary-search-t
 title: "Binary Search Trees"
 sidebar_label: "Binary Search Trees"
 sidebar_position: 47
+description: "Tries (prefix trees) are specialized trees for efficient string operations. They provide O(m) lookup where m is the key length, making them ideal for"
 ---
 
 <!-- improved -->

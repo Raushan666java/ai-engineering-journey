@@ -1,3 +1,7 @@
+---
+description: "These questions are generally less time-consuming than puzzles and can be solved quickly with systematic techniques. They test the candidate's ability to"
+---
+
 # Logical Reasoning and Input-Output
 
 ## Learning Objectives

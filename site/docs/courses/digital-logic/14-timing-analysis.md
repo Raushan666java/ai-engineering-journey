@@ -4,6 +4,7 @@ slug: /digital-logic/14-timing-analysis
 title: "Chapter 14: Timing Analysis"
 sidebar_label: "Chapter 14: Timing Analysis"
 sidebar_position: 14
+description: "Chapter 14: Timing Analysis: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = [] private maxConcurrency"
 ---
 
 # Chapter 14: Timing Analysis

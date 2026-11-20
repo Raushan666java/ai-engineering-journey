@@ -4,6 +4,7 @@ slug: /computer-networks/17-troubleshooting
 title: "Chapter 17: Network Troubleshooting"
 sidebar_label: "Chapter 17: Network Troubleshooting"
 sidebar_position: 17
+description: "Network troubleshooting mirrors medical diagnosis. A doctor does not prescribe treatment without examination; a network engineer does not change"
 ---
 
 # Chapter 17: Network Troubleshooting

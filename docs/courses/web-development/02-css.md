@@ -1,3 +1,7 @@
+---
+description: "By default, width and height apply only to the content box. Setting box-sizing: border-box includes padding and border in the specified dimensions, which"
+---
+
 # Chapter 2 → CSS3
 
 > **Previous:** [01-html](./01-html.md) | **Next:** [03-js-basics](./03-js-basics.md)

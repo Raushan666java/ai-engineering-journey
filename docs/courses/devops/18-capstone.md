@@ -1,3 +1,7 @@
+---
+description: "The capstone project is the culminating assessment of DevOps mastery. Unlike individual chapter exercises that focus on isolated skills, the capstone"
+---
+
 # Chapter 18: Capstone Project
 
 > **Previous:** [SRE Principles](./17-sre.md)

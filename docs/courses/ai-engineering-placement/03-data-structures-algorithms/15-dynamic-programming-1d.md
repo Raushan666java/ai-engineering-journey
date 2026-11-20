@@ -1,3 +1,7 @@
+---
+description: "Binary search is one of the most important algorithms, reducing search time from O(n) to O(log n). Understanding its variants — finding boundaries"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Dynamic Programming 1D

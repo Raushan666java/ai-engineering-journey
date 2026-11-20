@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. A service registry is a database of available service"
+---
+
 # Chapter 9: Distributed Coordination and Service Discovery
 > **Previous:** [08 Microservices Apis](./08-microservices-apis.md) | **Next:** [10 Lld Solid Oop](./10-lld-solid-oop.md)
 

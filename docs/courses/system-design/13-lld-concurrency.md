@@ -1,3 +1,7 @@
+---
+description: "A race condition occurs when the behavior of a program depends on the interleaving of operations across multiple threads. The classic example is a"
+---
+
 # Chapter 13: Low-Level Design: Concurrency and Threading
 > **Previous:** [12 Lld Component Design](./12-lld-component-design.md) | **Next:** [14 Distributed Data Structures](./14-distributed-data-structures.md)
 

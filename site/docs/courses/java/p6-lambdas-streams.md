@@ -4,6 +4,7 @@ slug: /java/p6-lambdas-streams
 title: "Lambda Expressions & Functional Programming"
 sidebar_label: "Lambda Expressions & Functional Programming"
 sidebar_position: 81
+description: "A functional interface is an interface that contains exactly one abstract method. Java 8 introduced the @FunctionalInterface annotation to mark such"
 ---
 
 # Lambda Expressions & Functional Programming

@@ -1,3 +1,7 @@
+---
+description: "Chunking decides what your retriever can ever surface. Get the boundaries wrong and no embedding model, no reranker, no LLM can repair the damage"
+---
+
 # Chunking Strategies, Compared
 
 > Chunking decides what your retriever can ever surface. Get the boundaries wrong and no embedding model, no reranker, no LLM can repair the damage downstream.

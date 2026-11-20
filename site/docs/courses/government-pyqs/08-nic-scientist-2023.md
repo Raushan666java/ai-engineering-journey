@@ -4,6 +4,7 @@ slug: /government-pyqs/08-nic-scientist-2023
 title: "NIC Scientist B 2023 — Solved Paper"
 sidebar_label: "NIC Scientist B 2023 — Solved Paper"
 sidebar_position: 8
+description: "Explanation: Recursion inherently uses a stack (call stack) to store function call information, return addresses, and local variables. Each recursive call"
 ---
 
 # NIC Scientist B 2023 — Solved Paper

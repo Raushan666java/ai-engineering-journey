@@ -1,3 +1,7 @@
+---
+description: "Modern software development relies on an intricate web of dependencies, build tools, CI/CD pipelines, package registries, and distribution mechanisms"
+---
+
 # Chapter 16: Supply Chain & CI/CD Pipeline Security
 
 ---

@@ -1,3 +1,7 @@
+---
+description: "Chapter 5 — ES6+ JavaScript: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = [] private maxConcurrency"
+---
+
 # Chapter 5 — ES6+ JavaScript
 
 > **Previous:** [04-js-dom](./04-js-dom.md) | **Next:** [06-react-basics](./06-react-basics.md)

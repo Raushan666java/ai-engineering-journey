@@ -1,3 +1,7 @@
+---
+description: "Prove the system works: golden sets, LLM-as-judge calibration, tracing, and catching regressions in CI."
+---
+
 # 15 — AI Evaluation & Observability
 
 ## Overview

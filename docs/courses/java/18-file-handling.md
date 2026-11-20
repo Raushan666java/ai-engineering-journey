@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Always validate file types by reading the first bytes (magic numbers) rather than relying on file extensions → attackers can easily rename a"
+---
+
 > **Previous:** [OpenAPI](./17-openapi.md) | **Next:** [JDBC/JOOQ](./19-jdbc-jooq.md)
 
 # File Upload, Download & Streaming

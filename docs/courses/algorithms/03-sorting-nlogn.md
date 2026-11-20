@@ -1,3 +1,7 @@
+---
+description: 'Chapter 1: Fundamentals of Algorithm Analysis — Asymptotic notation and recurrence analysis | Next: Chapter 4: Linear-Time Sorting — Breaking the ('
+---
+
 # Chapter 3: Comparison-Based Sorting
 
 > **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) — Asymptotic notation and recurrence analysis | **Next:** [Chapter 4: Linear-Time Sorting](./04-sorting-linear.md) — Breaking the \( \Omega(n \log n) \) barrier

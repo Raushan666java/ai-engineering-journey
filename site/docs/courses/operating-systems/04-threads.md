@@ -4,6 +4,7 @@ slug: /operating-systems/04-threads
 title: "Chapter 4: Threads"
 sidebar_label: "Chapter 4: Threads"
 sidebar_position: 4
+description: "Imagine an office with 10 workers sharing one desk. Each worker has their own notebook (stack) and pen (registers), but they share the same desk"
 ---
 
 # Chapter 4: Threads

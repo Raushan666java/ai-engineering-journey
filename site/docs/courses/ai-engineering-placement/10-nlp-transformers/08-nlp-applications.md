@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/10-nlp-transformers/08-nlp-applications
 title: "NLP Applications — Text Classification, NER, QA, Summarization, Translation"
 sidebar_label: "NLP Applications — Text Classification, NER, QA, Summarization, Translation"
 sidebar_position: 145
+description: "NLP Applications — Text Classification, NER, QA, Summarization, Translation: Natural language processing is how machines understand human text"
 ---
 
 <!-- improved -->

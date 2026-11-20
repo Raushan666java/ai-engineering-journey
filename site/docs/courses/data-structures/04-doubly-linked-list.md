@@ -4,6 +4,7 @@ slug: /data-structures/04-doubly-linked-list
 title: "Chapter 4: Doubly Linked List and Circular Linked List"
 sidebar_label: "Chapter 4: Doubly Linked List and Circular Linked List"
 sidebar_position: 4
+description: "Imagine you are listening to a playlist on your music app. You tap Next to skip forward and Previous to go back to the song you just heard. A singly"
 ---
 
 # Chapter 4: Doubly Linked List and Circular Linked List

@@ -1,3 +1,7 @@
+---
+description: "BERT & Fine-Tuning — Masked LM, NSP, GLUE, Model Variants: Natural language processing is how machines understand human text. Transformers revolutionized"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # BERT & Fine-Tuning — Masked LM, NSP, GLUE, Model Variants

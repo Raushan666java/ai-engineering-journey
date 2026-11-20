@@ -4,6 +4,7 @@ slug: /big-data/03-spark-basics
 title: "Chapter 3: Apache Spark Basics"
 sidebar_label: "Chapter 3: Apache Spark Basics"
 sidebar_position: 3
+description: "One-Sentence Takeaway: Spark's master/worker architecture runs a driver that schedules parallel tasks on distributed executors, with resource allocation"
 ---
 
 # Chapter 3: Apache Spark Basics

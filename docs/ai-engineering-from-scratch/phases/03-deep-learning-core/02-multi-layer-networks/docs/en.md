@@ -1,3 +1,7 @@
+---
+description: "A single neuron is a line drawer. That's it. One straight line through your data. Every real problem in AI -- image recognition, language understanding"
+---
+
 # Multi-Layer Networks and Forward Pass
 
 > One neuron draws a line. Stack them, and you can draw anything.

@@ -4,6 +4,7 @@ slug: /python-programming/20-numpy-pandas
 title: "Chapter 20: NumPy and pandas"
 sidebar_label: "Chapter 20: NumPy and pandas"
 sidebar_position: 20
+description: "One-Sentence Takeaway: Boolean indexing and fancy indexing select rows/columns based on conditions or index arrays. Remember: Vectorised NumPy operations"
 ---
 
 # Chapter 20: NumPy and pandas

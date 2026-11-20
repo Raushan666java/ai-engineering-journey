@@ -1,3 +1,7 @@
+---
+description: "Frontier LLM APIs & Providers: The AI landscape evolves fast. New LLM providers, agent platforms, and developer toolkits emerge monthly. This module"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Frontier LLM APIs & Providers

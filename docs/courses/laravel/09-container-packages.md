@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: The service container manages class dependencies and performs automatic resolution, serving as the foundation of Laravel's IoC"
+---
+
 # Chapter 9: Service Container, Facades & Package Development
 > **Previous:** [Broadcasting, Events & Real-Time Features](./08-broadcasting-realtime) | **Next:** [Testing, Debugging & Observability](./10-testing-observability)
 

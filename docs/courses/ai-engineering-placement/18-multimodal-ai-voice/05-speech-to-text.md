@@ -1,3 +1,7 @@
+---
+description: "Speech-to-Text: AI is moving beyond text. Computer vision, speech recognition, and multimodal models process images, audio, and video. This module covers"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Speech-to-Text

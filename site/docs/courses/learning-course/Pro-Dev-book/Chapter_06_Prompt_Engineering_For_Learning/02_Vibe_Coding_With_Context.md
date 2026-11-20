@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_06_Prompt_Engineering_For_Learning/0
 title: "🧠 Vibe-Coding With Context"
 sidebar_label: "🧠 Vibe-Coding With Context"
 sidebar_position: 2
+description: "'Vibe-Coding' is a modern paradigm enabled by tools like GitHub Copilot. It is the act of writing human-readable intent (comments) and allowing the AI to"
 ---
 # 🧠 Vibe-Coding With Context
 

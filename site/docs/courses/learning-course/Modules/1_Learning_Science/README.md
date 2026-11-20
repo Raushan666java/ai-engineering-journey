@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/Modules/1_Learning_Science/README.mdREADME title: '🔬 Module 1: Learning Science' sidebar_label: '🔬 Module 1: Learning Science'"
+---
+
 ﻿---
 slug: /learning-course/Modules/1_Learning_Science/README.mdREADME
 title: "🔬 Module 1: Learning Science"

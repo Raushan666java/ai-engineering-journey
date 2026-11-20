@@ -1,3 +1,7 @@
+---
+description: "You install PyTorch 2.4 for a fine-tuning project. Next week, a different project needs PyTorch 2.1 because its CUDA build is pinned. You upgrade"
+---
+
 # Python Environments
 
 > Dependency hell is real. Virtual environments are the cure.

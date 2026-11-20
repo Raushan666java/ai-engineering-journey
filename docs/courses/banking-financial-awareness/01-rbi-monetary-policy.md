@@ -1,3 +1,7 @@
+---
+description: "The Reserve Bank of India (RBI) was established on April 1, 1935, under the Reserve Bank of India Act, 1934. It was originally constituted as a private"
+---
+
 # Chapter 1: RBI & Monetary Policy
 
 ## Learning Objectives

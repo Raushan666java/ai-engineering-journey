@@ -1,3 +1,7 @@
+---
+description: "A firewall is a network security device that monitors and controls incoming and outgoing traffic based on predetermined security rules. It acts as a"
+---
+
 # Chapter 3: Network Security
 
 > **Prereq:** Chapter 2 (Cryptography) → TLS, IPsec, and WPA2 rely on cryptographic algorithms.

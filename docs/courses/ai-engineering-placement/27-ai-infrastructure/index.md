@@ -1,3 +1,7 @@
+---
+description: "GPUs, vLLM, quantization and serving economics — how inference actually gets fast and cheap."
+---
+
 # 27 — AI Infrastructure & Optimization
 
 ## Overview

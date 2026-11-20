@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_01_What_Is_A_Pro_Developer/01_The_My
 title: "🌟 The Myth of the 10x Developer"
 sidebar_label: "🌟 The Myth of the 10x Developer"
 sidebar_position: 1
+description: "This mythical creature is often depicted as a lone wolf—a highly caffeinated coder who locks themselves in a dark room, furiously typing at 150 words per"
 ---
 # 🌟 The Myth of the 10x Developer
 

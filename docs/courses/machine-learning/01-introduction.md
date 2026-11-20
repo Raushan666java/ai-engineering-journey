@@ -1,3 +1,7 @@
+---
+description: "Machine learning is a subset of artificial intelligence that provides systems the ability to automatically learn and improve from experience without being"
+---
+
 # Chapter 1: Introduction to Machine Learning
 
 > **Previous:** None | **Next:** [Linear Regression](./02-linear-regression.md)

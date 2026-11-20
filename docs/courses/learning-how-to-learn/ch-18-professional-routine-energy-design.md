@@ -1,3 +1,7 @@
+---
+description: "Chapter 6: Procrastination, Habits & Deep Work — Deep-work blocks and habit systems are the raw materials this chapter schedules. Also see: Chapter 17"
+---
+
 # Chapter 18: Professional Routine & Energy Design
 
 > **Prerequisites:** [Chapter 6: Procrastination, Habits & Deep Work](./ch-06-procrastination-habits-deep-work.md) — Deep-work blocks and habit systems are the raw materials this chapter schedules.

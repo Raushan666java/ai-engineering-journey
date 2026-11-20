@@ -1,3 +1,7 @@
+---
+description: "Build a complete AI-powered customer support platform that integrates every concept from the course: data ingestion, RAG, agent orchestration, safety"
+---
+
 # Chapter 12: Capstone — AI Customer Support Platform
 
 > **Build a complete AI-powered customer support platform that integrates every concept from the course: data ingestion, RAG, agent orchestration, safety guardrails, evaluation, production deployment, monitoring, and A/B testing — all with production-grade TypeScript.**

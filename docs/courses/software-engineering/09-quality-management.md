@@ -1,3 +1,7 @@
+---
+description: "Software quality is the degree to which a software product satisfies stated and implied needs. Quality is not merely the absence of defects — it"
+---
+
 # Software Quality Management
 
 ## Learning Objectives

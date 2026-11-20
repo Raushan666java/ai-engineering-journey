@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/30-business-skills/visual-notes
 title: "Visual Notes — Communication and Strategy Tree"
 sidebar_label: "Visual Notes"
 sidebar_position: 350
+description: "One-line answer for interviews: 'Clear communication, stakeholder management, prioritisation and strategy grow from one trunk.'"
 ---
 
 # Visual Notes — Communication and Strategy Tree

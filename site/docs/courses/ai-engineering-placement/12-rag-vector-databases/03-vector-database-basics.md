@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/03-vector-database-basic
 title: "Vector Database Basics"
 sidebar_label: "Vector Database Basics"
 sidebar_position: 160
+description: "Vector Database Basics: Retrieval-Augmented Generation lets LLMs answer questions about your private data. Vector databases store embeddings for semantic"
 ---
 
 <!-- improved -->

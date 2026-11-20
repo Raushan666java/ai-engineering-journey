@@ -4,6 +4,7 @@ slug: /system-design/21-case-study-uber
 title: "Chapter 21: Case Study — Uber and Location-Based Services"
 sidebar_label: "Chapter 21: Case Study — Uber and Location-Based Services"
 sidebar_position: 21
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Uber connects riders with drivers in real time across 70+"
 ---
 
 # Chapter 21: Case Study — Uber and Location-Based Services

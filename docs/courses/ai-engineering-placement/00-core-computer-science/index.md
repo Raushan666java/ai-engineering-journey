@@ -1,3 +1,7 @@
+---
+description: "Operating systems, networks, database internals and architecture questions asked in every backend interview, with worked answers and diagrams."
+---
+
 # Core Computer Science for AI Engineers
 
 > **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)

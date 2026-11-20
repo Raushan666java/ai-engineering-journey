@@ -1,3 +1,7 @@
+---
+description: "Author JSON Schemas for agent_state.json and task_board.json, build a StateManager that loads, validates, mutates, and writes atomically, and prove the"
+---
+
 # Mission - Repo Memory and Durable State
 
 ## Goal

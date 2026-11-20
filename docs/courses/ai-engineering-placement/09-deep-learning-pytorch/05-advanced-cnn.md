@@ -1,3 +1,7 @@
+---
+description: "Advanced CNN Architectures: Deep learning powers modern AI breakthroughs. PyTorch is the framework of choice for researchers and production engineers"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Advanced CNN Architectures

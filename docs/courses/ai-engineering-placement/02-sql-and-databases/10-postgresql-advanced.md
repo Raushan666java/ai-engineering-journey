@@ -1,3 +1,7 @@
+---
+description: "PostgreSQL Advanced — JSONB, Full-Text Search, Partitioning, Extensions, PL/pgSQL: Data is the fuel of AI. SQL and database design skills let you query"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # PostgreSQL Advanced — JSONB, Full-Text Search, Partitioning, Extensions, PL/pgSQL

@@ -1,3 +1,7 @@
+---
+description: "For a service business — contract work, consulting, a productised retainer — there is no launch. There is a steady pipeline, and the work is the channel"
+---
+
 # Chapter 11 — Launch and Go-to-Market
 
 ## Learning Objectives

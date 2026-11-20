@@ -1,3 +1,7 @@
+---
+description: "You read about PCA and see 'find the eigenvectors of the covariance matrix.' You read about model stability and see 'check if all eigenvalues have"
+---
+
 # Matrix Transformations
 
 > A matrix is a machine that reshapes space. Learn what it does to every point, and you understand the whole transformation.

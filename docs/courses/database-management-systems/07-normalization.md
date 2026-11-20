@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: Normalization systematically removes data redundancy by decomposing tables through 1NF -> 2NF -> 3NF -> BCNF — think of it as 'each"
+---
+
 # Chapter 7: Normalization in Database Management Systems
 
 > **Previous:** [Chapter 6: Advanced SQL](./06-sql-advanced.md) | **Next:** [Chapter 8: Higher Normal Forms and Denormalization](./08-higher-nf.md)

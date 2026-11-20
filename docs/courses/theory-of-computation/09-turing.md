@@ -1,3 +1,7 @@
+---
+description: "Alan Turing introduced the Turing machine in 1936 as a model of 'computation by a human clerk.' It is the most powerful model of computation we have →"
+---
+
 # Chapter 9: Turing Machines
 
 > **Previous:** [Properties of Context-Free Languages](./08-cfl.md) | **Next:** [Turing Machine Extensions](./10-turing-extensions.md)

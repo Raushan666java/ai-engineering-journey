@@ -1,3 +1,7 @@
+---
+description: "You have a 1000x2000 matrix. Maybe it is user-movie ratings. Maybe it is a document-term frequency table. Maybe it is the pixel values of an image. You"
+---
+
 # Singular Value Decomposition
 
 > SVD is the Swiss Army knife of linear algebra. Every matrix has one. Every data scientist needs one.

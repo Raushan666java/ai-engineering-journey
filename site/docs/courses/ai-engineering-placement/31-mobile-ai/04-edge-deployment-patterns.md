@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/31-mobile-ai/04-edge-deployment-patterns
 title: "Edge Deployment Patterns"
 sidebar_label: "Edge Deployment Patterns"
 sidebar_position: 354
+description: "Edge deployment is the practice of running AI models directly on mobile phones, IoT devices, embedded systems, and browsers instead of sending data to"
 ---
 
 <!-- improved -->

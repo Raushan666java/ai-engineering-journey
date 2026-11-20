@@ -1,3 +1,7 @@
+---
+description: 'Let $y = f(x) + epsilon$ where $ epsilon sim mathcal{N}(0, sigma^2)$ is irreducible noise. Let $ hat{f}(x)$ be our model''s prediction at a fixed point'
+---
+
 # Chapter 10: Model Selection and Evaluation
 
 > **Previous:** [Dimensionality Reduction](./09-dimensionality-reduction.md) | **Next:** None (Last Chapter)

@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/05-phase4-production-hardening
 title: "Phase 4 — Production Hardening"
 sidebar_label: "Phase 4 — Production Hardening"
 sidebar_position: 6
+description: "Move your RAG demo's document ingestion from BackgroundTasks to RQ. Verify that killing the worker mid-job and restarting resumes processing (or at least"
 ---
 
 # Phase 4 — Production Hardening

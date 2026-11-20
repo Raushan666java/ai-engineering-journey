@@ -4,6 +4,7 @@ slug: /java/63-interview-tools
 title: "63. Tools & DevOps — Interview Q&A"
 sidebar_label: "63. Tools & DevOps — Interview Q&A"
 sidebar_position: 71
+description: "This chapter covers the essential tools and DevOps practices every Java backend developer needs to know: build tools, containers, orchestration, CI/CD"
 ---
 
 # 63. Tools & DevOps — Interview Q&A

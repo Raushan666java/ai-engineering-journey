@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/18-multimodal-ai-voice/04-ocr-and-document-ai
 title: "OCR & Document AI"
 sidebar_label: "OCR & Document AI"
 sidebar_position: 231
+description: "OCR & Document AI: AI is moving beyond text. Computer vision, speech recognition, and multimodal models process images, audio, and video. This module"
 ---
 
 <!-- improved -->

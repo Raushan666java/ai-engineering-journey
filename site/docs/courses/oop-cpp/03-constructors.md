@@ -4,6 +4,7 @@ slug: /oop-cpp/03-constructors
 title: "Chapter 3: Constructors and Destructors"
 sidebar_label: "Chapter 3: Constructors and Destructors"
 sidebar_position: 3
+description: "Constructor = Birth / Initialisation Ritual. When a baby is born, a birth certificate is filled out (name, date, place). This is the constructor — it"
 ---
 
 # Chapter 3: Constructors and Destructors

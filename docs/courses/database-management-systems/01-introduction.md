@@ -1,3 +1,7 @@
+---
+description: "Imagine a public library with 100,000 books but no catalog system. To find a specific book, a visitor must walk every aisle scanning shelves. If a book is"
+---
+
 # Chapter 1: Introduction to Database Management Systems
 
 ## Learning Objectives

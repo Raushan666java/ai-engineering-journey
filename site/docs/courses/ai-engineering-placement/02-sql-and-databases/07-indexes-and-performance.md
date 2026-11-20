@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/02-sql-and-databases/07-indexes-and-performance
 title: "Indexes & Performance — B-Tree, Hash, Composite, EXPLAIN ANALYZE, Query Planning"
 sidebar_label: "Indexes & Performance — B-Tree, Hash, Composite, EXPLAIN ANALYZE, Query Planning"
 sidebar_position: 32
+description: "Indexes & Performance — B-Tree, Hash, Composite, EXPLAIN ANALYZE, Query Planning: Data is the fuel of AI. SQL and database design skills let you query"
 ---
 
 <!-- improved -->

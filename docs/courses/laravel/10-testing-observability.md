@@ -1,3 +1,7 @@
+---
+description: "Laravel ships with PHPUnit as its default testing framework. PHPUnit's configuration is managed through either phpunit.xml or phpunit.xml.dist at the"
+---
+
 # Chapter 10: Testing, Debugging & Observability
 > **Previous:** [Service Container, Facades & Package Development](./09-container-packages) | **Next:** [Caching, Performance & Octane](./11-caching-performance)
 

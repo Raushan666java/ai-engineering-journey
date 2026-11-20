@@ -4,6 +4,7 @@ slug: /laravel/12-ai-sdk-agents
 title: "Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output"
 sidebar_label: "Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output"
 sidebar_position: 12
+description: "One-Sentence Takeaway: The laravel/ai package provides a unified, provider-agnostic interface for interacting with 14+ AI providers through a single"
 ---
 
 # Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output

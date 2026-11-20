@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/05-deep-learning-interv
 title: "Deep Learning Interview"
 sidebar_label: "Deep Learning Interview"
 sidebar_position: 255
+description: "Deep Learning Interview: Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews"
 ---
 
 <!-- improved -->

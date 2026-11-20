@@ -4,6 +4,7 @@ slug: /ai-powered-learning/ch04-concept-mastery
 title: "Chapter 4: Concept Mastery with AI"
 sidebar_label: "Chapter 4: Concept Mastery with AI"
 sidebar_position: 4
+description: "Knowing a topic's name is not the same as mastering the concept behind it. This chapter is a toolkit of AI-driven drills that push a concept from 'I have"
 ---
 
 # Chapter 4: Concept Mastery with AI

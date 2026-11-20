@@ -4,6 +4,7 @@ slug: /laravel/45-interview-customer-service
 title: "Chapter 45: Customer Service & Support → Interview Q&A"
 sidebar_label: "Chapter 45: Customer Service & Support → Interview Q&A"
 sidebar_position: 45
+description: "A modern ticketing system centers on the ticket lifecycle: intake (web form, email, chat, social, phone), triage (classification, prioritization"
 ---
 
 # Chapter 45: Customer Service & Support → Interview Q&A

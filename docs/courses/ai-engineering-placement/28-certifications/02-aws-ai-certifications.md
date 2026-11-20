@@ -1,3 +1,7 @@
+---
+description: "AWS offers the most comprehensive cloud AI certification portfolio in the industry. As of 2026, the certification track includes three AI-specific"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # AWS AI Certifications — Complete Guide

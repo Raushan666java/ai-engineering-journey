@@ -1,3 +1,7 @@
+---
+description: "AI inference serving is the production deployment of trained models. It takes a model checkpoint and turns it into an API endpoint that handles concurrent"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # AI Inference Serving

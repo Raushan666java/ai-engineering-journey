@@ -4,6 +4,7 @@ slug: /hindi-language/04-hindi-writing
 title: "Chapter 4: हिंदी लेखन (Hindi Writing)"
 sidebar_label: "Chapter 4: हिंदी लेखन (Hindi Writing)"
 sidebar_position: 4
+description: "भूमिका: डिजिटल इंडिया भारत सरकार का एक महत्वाकांक्षी कार्यक्रम है जिसका उद्देश्य देश को डिजिटल रूप से सशक्त बनाना है। 2015 में शुरू की गई इस योजना ने भारत"
 ---
 
 # Chapter 4: हिंदी लेखन (Hindi Writing)

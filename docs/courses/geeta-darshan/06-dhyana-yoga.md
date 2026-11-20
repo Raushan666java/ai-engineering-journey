@@ -1,3 +1,7 @@
+---
+description: "'Man ko harao mat — dekho. Yeh sabse gehri galatfahmi hai ki dhyan ka matlab mann ko dabana hai. Krishna kehti hain — chanchala mann ko haara nahin jaata"
+---
+
 # अध्याय ६: ध्यान योग — Man ko harao mat, dekho
 
 > **"Man ko harao mat — dekho. Yeh sabse gehri galatfahmi hai ki dhyan ka matlab mann ko dabana hai. Krishna kehti hain — chanchala mann ko haara nahin jaata, samjha jaata hai. Aur samajhne ka ek hi rasta hai — dekhte rehna, bina jaane-haye ke."**

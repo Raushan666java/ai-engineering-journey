@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_05_Proper_AI_Usage/02_The_Toxic_Loop
 title: "🩸 The Toxic Loop Vs. The Growth Loop"
 sidebar_label: "🩸 The Toxic Loop Vs. The Growth Loop"
 sidebar_position: 2
+description: "Every day, across thousands of micro-decisions, you are choosing between two distinct paths when interacting with Artificial Intelligence in your IDE. One"
 ---
 # 🩸 The Toxic Loop Vs. The Growth Loop
 

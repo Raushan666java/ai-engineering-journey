@@ -4,6 +4,7 @@ slug: /english-language/05-descriptive-english
 title: "Chapter 5: Descriptive English"
 sidebar_label: "Chapter 5: Descriptive English"
 sidebar_position: 5
+description: "Unlike the objective Prelims paper, the Mains examination in IBPS SO, SBI PO, RBI Grade B, and other government exams includes a Descriptive English"
 ---
 
 # Chapter 5: Descriptive English

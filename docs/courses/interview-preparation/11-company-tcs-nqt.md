@@ -1,3 +1,7 @@
+---
+description: "Problem: Given an array of size n, find the element that appears more than n/2 times. Assume the array is non-empty and the majority element always exists."
+---
+
 # Chapter 11: TCS NQT & Digital — Company-Specific Question Bank
 
 ## Learning Objectives

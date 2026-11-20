@@ -1,3 +1,7 @@
+---
+description: "Indexes & Performance — B-Tree, Hash, Composite, EXPLAIN ANALYZE, Query Planning: Data is the fuel of AI. SQL and database design skills let you query"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Indexes & Performance — B-Tree, Hash, Composite, EXPLAIN ANALYZE, Query Planning

@@ -1,3 +1,7 @@
+---
+description: "If the call ends without all three, it did not fail politely; it failed expensively, because you will spend the next three weeks following up on a"
+---
+
 # Chapter 10 — Sales Conversations
 
 ## Learning Objectives

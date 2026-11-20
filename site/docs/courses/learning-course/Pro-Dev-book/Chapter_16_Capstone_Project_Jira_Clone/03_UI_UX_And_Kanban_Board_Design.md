@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_16_Capstone_Project_Jira_Clone/03_UI
 title: "🖱️ UI/UX & jQuery Kanban Architecture"
 sidebar_label: "🖱️ UI/UX & jQuery Kanban Architecture"
 sidebar_position: 3
+description: "Because we are building this personal tool without a heavy framework like React or Vue, we will use precise HTML5 data attributes, vanilla CSS"
 ---
 # 🖱️ UI/UX & jQuery Kanban Architecture
 

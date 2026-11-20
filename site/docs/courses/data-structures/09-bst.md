@@ -4,6 +4,7 @@ slug: /data-structures/09-bst
 title: "Chapter 9: Binary Search Trees"
 sidebar_label: "Chapter 9: Binary Search Trees"
 sidebar_position: 9
+description: "Imagine you have a printed English dictionary with 100,000 words. You want to find the word 'Binary.' You do not flip page by page from the start — that"
 ---
 
 # Chapter 9: Binary Search Trees

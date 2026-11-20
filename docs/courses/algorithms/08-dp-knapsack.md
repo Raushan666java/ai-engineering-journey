@@ -1,3 +1,7 @@
+---
+description: "Chapter 7: Dynamic Programming — Foundations — DP properties, recurrence design, tabulation | Next: Chapter 9: Dynamic Programming — Sequences — From"
+---
+
 # Chapter 8: Dynamic Programming — Knapsack Problems
 
 > **Prerequisites:** [Chapter 7: Dynamic Programming — Foundations](./07-dp-intro.md) — DP properties, recurrence design, tabulation | **Next:** [Chapter 9: Dynamic Programming — Sequences](./09-dp-sequences.md) — From resource allocation to string and sequence patterns

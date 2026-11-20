@@ -1,3 +1,7 @@
+---
+description: "Target: Campus placements → IT/Engineering students Covers: HR interview questions & answers, Group Discussion strategies, communication skills"
+---
+
 # HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide
 
 > **Previous:** [05 → Placement Season Strategy](05-placement-strategy.md)  

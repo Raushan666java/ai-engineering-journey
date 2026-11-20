@@ -4,6 +4,7 @@ slug: /interview-preparation/09-company-wise-preparation
 title: "Chapter 9: Company-Wise Preparation Strategy"
 sidebar_label: "Chapter 9: Company-Wise Preparation Strategy"
 sidebar_position: 9
+description: "Real Experience: In my TCS interview, they asked me to write a SQL query with INNER JOIN and LEFT JOIN difference. Then they asked about HashMap internal"
 ---
 
 # Chapter 9: Company-Wise Preparation Strategy

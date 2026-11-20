@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/09-deep-learning-pytorch/08-training-pipelines
 title: "Training Pipelines — DataLoader, Transforms, Optimizers, Schedulers, Checkpointing"
 sidebar_label: "Training Pipelines — DataLoader, Transforms, Optimizers, Schedulers, Checkpointing"
 sidebar_position: 133
+description: "Training Pipelines — DataLoader, Transforms, Optimizers, Schedulers, Checkpointing: Deep learning powers modern AI breakthroughs. PyTorch is the framework"
 ---
 
 <!-- improved -->

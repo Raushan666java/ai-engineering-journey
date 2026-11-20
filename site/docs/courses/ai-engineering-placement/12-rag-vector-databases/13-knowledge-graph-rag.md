@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/12-rag-vector-databases/13-knowledge-graph-rag
 title: "Knowledge Graph RAG"
 sidebar_label: "Knowledge Graph RAG"
 sidebar_position: 170
+description: "Knowledge Graph RAG (KG-RAG) augments traditional vector retrieval with structured knowledge from knowledge graphs. Vector databases capture semantic"
 ---
 
 <!-- improved -->

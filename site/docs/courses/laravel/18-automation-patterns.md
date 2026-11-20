@@ -4,6 +4,7 @@ slug: /laravel/18-automation-patterns
 title: "Chapter 18: Automation Patterns & Workflows"
 sidebar_label: "Chapter 18: Automation Patterns & Workflows"
 sidebar_position: 18
+description: "Laravel's event system is the backbone of decoupled automation. An event is a simple data class that describes something that happened. A listener reacts"
 ---
 
 # Chapter 18: Automation Patterns & Workflows

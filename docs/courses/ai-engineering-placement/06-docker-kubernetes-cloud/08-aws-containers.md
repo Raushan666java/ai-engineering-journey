@@ -1,3 +1,7 @@
+---
+description: "AWS Containers — ECS, ECR, and EKS: Containers and cloud platforms are where AI models live in production. Docker packages your model, Kubernetes"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # AWS Containers — ECS, ECR, and EKS

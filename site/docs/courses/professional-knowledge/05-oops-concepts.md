@@ -4,6 +4,7 @@ slug: /professional-knowledge/05-oops-concepts
 title: "Chapter 5: Object-Oriented Programming Concepts — Exam Quick Revision"
 sidebar_label: "Chapter 5: Object-Oriented Programming Concepts — Exam Quick Revision"
 sidebar_position: 5
+description: "PYQ 2025: What is the output? Base b = new Derived(); b.display(); where Base has public void display() { System.out.println('Base'); } and Derived"
 ---
 
 # Chapter 5: Object-Oriented Programming Concepts — Exam Quick Revision

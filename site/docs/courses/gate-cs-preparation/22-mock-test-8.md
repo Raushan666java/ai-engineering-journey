@@ -1,9 +1,10 @@
 ---
 id: 22-mock-test-8
 slug: /gate-cs-preparation/22-mock-test-8
-title: "22 Mock Test 8"
-sidebar_label: "22 Mock Test 8"
+title: "22-mock-test-8"
+sidebar_label: "22-mock-test-8"
 sidebar_position: 19
+description: "Total Marks: 100 Duration: 3 Hours Reading Time: 10 minutes"
 ---
 
 ﻿# GATE CS Mock Test 8 — Full-Length Practice Paper (Hardest Edition)
@@ -228,7 +229,7 @@ Which conclusion(s) follow(s)?
 
 ## Section B: Engineering Mathematics (Questions 16–25)
 
-**Q16 (1 Mark):** If A = [[1, 2, 3], [0, 1, 4], [0, 0, 1]], then AâÂ�»¹ equals:
+**Q16 (1 Mark):** If A = [[1, 2, 3], [0, 1, 4], [0, 0, 1]], then A⁻¹ equals:
 
 (A) [[1, −2, 5], [0, 1, −4], [0, 0, 1]]
 (B) [[1, 2, −5], [0, 1, 4], [0, 0, 1]]
@@ -258,9 +259,9 @@ Which conclusion(s) follow(s)?
 **Q19 (1 Mark):** The chromatic polynomial of a complete graph K₄ is:
 
 (A) k(k−1)(k−2)(k−3)
-(B) kâÂ�´ − 6k³ + 11k² − 6k
+(B) k⁴ − 6k³ + 11k² − 6k
 (C) k(k−1)(k−2)(k−3)(k−4)
-(D) k(k−1)âÂ�´
+(D) k(k−1)⁴
 
 ---
 
@@ -300,7 +301,7 @@ Which conclusion(s) follow(s)?
 
 ---
 
-**Q24 (2 Marks):** The number of solutions to the equation xâ‚Â� + x₂ + x₃ + x₄ = 15, where each xᵢ is a non-negative integer and xâ‚Â� ≥ 2, x₂ ≥ 3, is:
+**Q24 (2 Marks):** The number of solutions to the equation x₁ + x₂ + x₃ + x₄ = 15, where each xᵢ is a non-negative integer and x₁ ≥ 2, x₂ ≥ 3, is:
 
 (A) 220
 (B) 286
@@ -365,7 +366,7 @@ Which conclusion(s) follow(s)?
 
 ---
 
-**Q31 (1 Mark) [TOC]:** L = {aâÂ�¿báµÂ�câÂ�¿dáµÂ� | n, m ≥ 0}. Which of the following is true about L?
+**Q31 (1 Mark) [TOC]:** L = {aⁿbᵐcⁿdᵐ | n, m ≥ 0}. Which of the following is true about L?
 
 (A) L is regular
 (B) L is context-free but not regular
@@ -564,7 +565,7 @@ Using preemptive Shortest Remaining Time First (SRTF) scheduling, the average tu
 
 ---
 
-**Q51 (2 Marks) [CN]:** A 10 Mbps Ethernet link connects two nodes that are 5 km apart. The propagation speed is 2 × 10âÂ�¸ m/s. The minimum frame size required for CSMA/CD to work is:
+**Q51 (2 Marks) [CN]:** A 10 Mbps Ethernet link connects two nodes that are 5 km apart. The propagation speed is 2 × 10⁸ m/s. The minimum frame size required for CSMA/CD to work is:
 
 (A) 250 bits
 (B) 500 bits
@@ -573,7 +574,7 @@ Using preemptive Shortest Remaining Time First (SRTF) scheduling, the average tu
 
 ---
 
-**Q52 (2 Marks) [TOC]:** The language L = {ww | w ∈ {a, b}âÂ�º} is:
+**Q52 (2 Marks) [TOC]:** The language L = {ww | w ∈ {a, b}⁺} is:
 
 (A) Context-free
 (B) Context-sensitive but not context-free
@@ -591,7 +592,7 @@ Using preemptive Shortest Remaining Time First (SRTF) scheduling, the average tu
 
 ---
 
-**Q54 (2 Marks) [DL]:** A sequential circuit has two JK flip-flops with Jâ‚Â� = Q₂, Kâ‚Â� = Q̅₂, J₂ = Q̅â‚Â�, K₂ = Qâ‚Â�. If the initial state is Qâ‚Â�Q₂ = 00, the next state after two clock cycles is:
+**Q54 (2 Marks) [DL]:** A sequential circuit has two JK flip-flops with J₁ = Q₂, K₁ = Q̅₂, J₂ = Q̅₁, K₂ = Q₁. If the initial state is Q₁Q₂ = 00, the next state after two clock cycles is:
 
 (A) 00
 (B) 01
@@ -659,11 +660,11 @@ So next difference = 6² = 36. Next term = 56 + 36 = 92.
 
 **Q15 (2 Marks) [GA]:** Rate A = 1/20, B = 1/30, C = −1/15 per min. Net with all three: 1/20 + 1/30 − 1/15 = (3+2−4)/60 = 1/60. In 10 min: 10/60 = 1/6 filled. Remaining: 5/6. Rate A+B = 1/20 + 1/30 = 1/12. Time = (5/6)/(1/12) = 10 min. Total = 20 min. Option D.
 
-**Q16 (1 Mark) [Math]:** A is upper triangular with 1s on diagonal. Let AâÂ�»¹ = [[1,a,b],[0,1,c],[0,0,1]]. Solve AAâÂ�»¹ = I: row1×col2: 1·a + 2·1 + 3·0 = a+2 = 0 → a = −2. Row1×col3: 1·b + 2·c + 3·1 = b+2c+3 = 0. Row2×col3: 0·b + 1·c + 4·1 = c+4 = 0 → c = −4. Then b = −2(−4)−3 = 5. AâÂ�»¹ = [[1,−2,5],[0,1,−4],[0,0,1]]. Option A.
+**Q16 (1 Mark) [Math]:** A is upper triangular with 1s on diagonal. Let A⁻¹ = [[1,a,b],[0,1,c],[0,0,1]]. Solve AA⁻¹ = I: row1×col2: 1·a + 2·1 + 3·0 = a+2 = 0 → a = −2. Row1×col3: 1·b + 2·c + 3·1 = b+2c+3 = 0. Row2×col3: 0·b + 1·c + 4·1 = c+4 = 0 → c = −4. Then b = −2(−4)−3 = 5. A⁻¹ = [[1,−2,5],[0,1,−4],[0,0,1]]. Option A.
 
-**Q17 (1 Mark) [Math]:** Σ_{n=0}^{∞} (n+1)xâÂ�¿ = 1/(1−x)². Verified by differentiating Σ xâÂ�¿ = 1/(1−x). Option B.
+**Q17 (1 Mark) [Math]:** Σ_{n=0}^{∞} (n+1)xⁿ = 1/(1−x)². Verified by differentiating Σ xⁿ = 1/(1−x). Option B.
 
-**Q18 (1 Mark) [Math]:** Taylor series: tan x = x + x³/3 + 2xâÂ�µ/15 + O(xâÂ�·), sin x = x − x³/6 + xâÂ�µ/120 + O(xâÂ�·). tan x − x = x³/3 + O(xâÂ�µ). x − sin x = x³/6 + O(xâÂ�µ). Limit = (x³/3)/(x³/6) = 2. Option C.
+**Q18 (1 Mark) [Math]:** Taylor series: tan x = x + x³/3 + 2x⁵/15 + O(x⁷), sin x = x − x³/6 + x⁵/120 + O(x⁷). tan x − x = x³/3 + O(x⁵). x − sin x = x³/6 + O(x⁵). Limit = (x³/3)/(x³/6) = 2. Option C.
 
 **Q19 (1 Mark) [Math]:** For complete graph K₄, all 4 vertices are mutually adjacent. Chromatic polynomial: P(K₄,k) = k(k−1)(k−2)(k−3). Option A.
 
@@ -673,9 +674,9 @@ So next difference = 6² = 36. Next term = 56 + 36 = 92.
 
 **Q22 (2 Marks) [Math]:** C₃ has 3 vertices and 3 edges. Subgraphs that are trees: single vertex (3), single edge (3), path of length 2 (3). Total = 9. Option C.
 
-**Q23 (2 Marks) [Math]:** E[X] = ∫₀¹ x·3x² dx = 3∫₀¹ x³ dx = 3/4. E[X²] = ∫₀¹ x²·3x² dx = 3∫₀¹ xâÂ�´ dx = 3/5. Var = E[X²] − (E[X])² = 3/5 − 9/16 = (48−45)/80 = 3/80. Option B.
+**Q23 (2 Marks) [Math]:** E[X] = ∫₀¹ x·3x² dx = 3∫₀¹ x³ dx = 3/4. E[X²] = ∫₀¹ x²·3x² dx = 3∫₀¹ x⁴ dx = 3/5. Var = E[X²] − (E[X])² = 3/5 − 9/16 = (48−45)/80 = 3/80. Option B.
 
-**Q24 (2 Marks) [Math]:** Let yâ‚Â� = xâ‚Â�−2 ≥ 0, y₂ = x₂−3 ≥ 0. Equation: yâ‚Â�+y₂+x₃+x₄ = 15−2−3 = 10. Non-negative solutions: C(10+4−1, 4−1) = C(13,3) = 286. Option B.
+**Q24 (2 Marks) [Math]:** Let y₁ = x₁−2 ≥ 0, y₂ = x₂−3 ≥ 0. Equation: y₁+y₂+x₃+x₄ = 15−2−3 = 10. Non-negative solutions: C(10+4−1, 4−1) = C(13,3) = 286. Option B.
 
 **Q25 (2 Marks) [Math]:** Reflexive: a+2a = 3a divisible by 3 ✓. Symmetric: aRb → a+2b ≡ 0 (mod 3) → a ≡ b (mod 3) → b+2a ≡ b+2b = 3b ≡ 0 ✓. Transitive: aRb, bRc → a≡b≡c (mod 3) → aRc ✓. Equivalence relation. Option C.
 
@@ -689,7 +690,7 @@ So next difference = 6² = 36. Next term = 56 + 36 = 92.
 
 **Q30 (1 Mark) [CN]:** AAAA record maps domain name to IPv6 address. A is IPv4, CNAME is alias, MX is mail. Option C.
 
-**Q31 (1 Mark) [TOC]:** L = {aâÂ�¿báµÂ�câÂ�¿dáµÂ�} requires matching aâ†—�c and bâ†—�d simultaneously. A PDA can track one count (stack) but not two independent pairs. An LBA can handle it. L is context-sensitive but not context-free. Option C.
+**Q31 (1 Mark) [TOC]:** L = {aⁿbᵐcⁿdᵐ} requires matching a↔c and b↔d simultaneously. A PDA can track one count (stack) but not two independent pairs. An LBA can handle it. L is context-sensitive but not context-free. Option C.
 
 **Q32 (1 Mark) [CD]:** Compilation phases: lexical, syntax, semantic, intermediate code generation, code optimization, code generation. Symbol table management is cross-cutting (not a separate phase). Linker resolution happens after compilation. The question asks for what is NOT a compilation phase — both symbol table management and linker resolution are not phases, but linker resolution is the more definitive answer as it is external to the compiler. Option D.
 
@@ -716,9 +717,9 @@ Group minterm 0 (A̅B̅C̅) and all A=1 cells. Result: A + B̅C̅ = B̅C̅ + A. 
 
 **Q40 (1 Mark) [TOC]:** The language {⟨M⟩ | M halts on all inputs} = the complement of the halting problem, which is not recursively enumerable. It is co-RE but not RE. Option A.
 
-**Q41 (1 Mark) [CD]:** Grammar S → aS | Sb | ab generates strings by prepending a's and appending b's starting from 'ab'. The language = {aâÂ�¿báµÂ� | n,m ≥ 1} = all strings with at least one a followed by at least one b. Option C.
+**Q41 (1 Mark) [CD]:** Grammar S → aS | Sb | ab generates strings by prepending a's and appending b's starting from 'ab'. The language = {aⁿbᵐ | n,m ≥ 1} = all strings with at least one a followed by at least one b. Option C.
 
-**Q42 (1 Mark) [DL]:** 3-bit ripple counter: worst-case propagation = 3 × 10 ns = 30 ns. Max frequency = 1/(30×10âÂ�»âÂ�¹) = 33.33 MHz. Option A.
+**Q42 (1 Mark) [DL]:** 3-bit ripple counter: worst-case propagation = 3 × 10 ns = 30 ns. Max frequency = 1/(30×10⁻⁹) = 33.33 MHz. Option A.
 
 **Q43 (1 Mark) [COA]:** IEEE 754 single-precision: value 0.0 is represented with biased exponent = 0 (all exponent bits 0) and significand = 0. Option A.
 
@@ -736,15 +737,15 @@ Group minterm 0 (A̅B̅C̅) and all A=1 cells. Result: A + B̅C̅ = B̅C̅ + A. 
 t=0: P1 runs. t=2: P1(7), P2(4)→P2 runs. t=3: P1(7), P2(3), P3(9)→P2 continues. t=5: P1(7), P2(1), P3(9), P4(3)→P2 continues. t=6: P2 finishes. P1(7), P3(9), P4(3)→P4 runs. t=9: P4 finishes. P1(7), P3(9)→P1 runs. t=16: P1 finishes. P3(9)→runs. t=25: P3 finishes.
 Turnaround: P1=16, P2=4, P3=22, P4=4. Avg = 46/4 = 11.5. Option B.
 
-**Q50 (2 Marks) [DBMS]:** FDs: AB→C, C→D, D→B, D→E. Compute closures: AâÂ�º=A, ABâÂ�º=ABCDE, ADâÂ�º=ABCDE. Candidate keys: AB and AD. Among options, AB is a candidate key. Option B.
+**Q50 (2 Marks) [DBMS]:** FDs: AB→C, C→D, D→B, D→E. Compute closures: A⁺=A, AB⁺=ABCDE, AD⁺=ABCDE. Candidate keys: AB and AD. Among options, AB is a candidate key. Option B.
 
-**Q51 (2 Marks) [CN]:** CSMA/CD minimum frame = 2 × propagation delay × bandwidth. Distance = 5 km = 5000 m. Speed = 2×10âÂ�¸ m/s. Propagation delay (one-way) = 5000/(2×10âÂ�¸) = 25 μs. RTT = 50 μs. Min frame = 50×10âÂ�»âÂ�¶ × 10×10âÂ�¶ = 500 bits. Option B.
+**Q51 (2 Marks) [CN]:** CSMA/CD minimum frame = 2 × propagation delay × bandwidth. Distance = 5 km = 5000 m. Speed = 2×10⁸ m/s. Propagation delay (one-way) = 5000/(2×10⁸) = 25 μs. RTT = 50 μs. Min frame = 50×10⁻⁶ × 10×10⁶ = 500 bits. Option B.
 
-**Q52 (2 Marks) [TOC]:** L = {ww | w ∈ {a,b}âÂ�º}. Not regular (requires pumping for ww). Not context-free (PDA cannot compare first half with second half without a marker — proven by pumping lemma for CFLs). It is context-sensitive (LBA can recognize by marking midpoint and comparing). Option B.
+**Q52 (2 Marks) [TOC]:** L = {ww | w ∈ {a,b}⁺}. Not regular (requires pumping for ww). Not context-free (PDA cannot compare first half with second half without a marker — proven by pumping lemma for CFLs). It is context-sensitive (LBA can recognize by marking midpoint and comparing). Option B.
 
 **Q53 (2 Marks) [CD]:** Grammar: S → aAb | bBA, A → aS | b, B → bS | a. Try derivation for aaabbb: S → aAb → a(aS)b → aa(aAb)b → aaa(b)b = aaabbb. Verified: the string is generated. Option A.
 
-**Q54 (2 Marks) [DL]:** Initial Qâ‚Â�Q₂=00. After clock 1: Jâ‚Â�=Q₂=0, Kâ‚Â�=Q̅₂=1 → Qâ‚Â�=0. J₂=Q̅â‚Â�=1, K₂=Qâ‚Â�=0 → Q₂=1. State: 01. After clock 2: Jâ‚Â�=Q₂=1, Kâ‚Â�=Q̅₂=0 → Qâ‚Â�=1. J₂=Q̅â‚Â�=1, K₂=Qâ‚Â�=0 → Q₂=1. State: 11. Option D.
+**Q54 (2 Marks) [DL]:** Initial Q₁Q₂=00. After clock 1: J₁=Q₂=0, K₁=Q̅₂=1 → Q₁=0. J₂=Q̅₁=1, K₂=Q₁=0 → Q₂=1. State: 01. After clock 2: J₁=Q₂=1, K₁=Q̅₂=0 → Q₁=1. J₂=Q̅₁=1, K₂=Q₁=0 → Q₂=1. State: 11. Option D.
 
 **Q55 (2 Marks) [COA]:** Base CPI = 1.5. 40% branches × 10% misprediction rate = 4% of all instructions mispredicted. Each misprediction costs 3 cycles. Extra CPI = 0.04 × 3 = 0.12. Effective CPI = 1.5 + 0.12 = 1.62. Option A.
 

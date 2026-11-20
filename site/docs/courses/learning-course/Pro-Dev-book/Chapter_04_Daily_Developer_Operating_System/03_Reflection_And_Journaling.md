@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_04_Daily_Developer_Operating_System/
 title: "📓 Reflection & Journaling"
 sidebar_label: "📓 Reflection & Journaling"
 sidebar_position: 3
+description: "Software engineering is one of the few professions where the landscape changes radically every 6 to 12 months. Frameworks update, new design patterns"
 ---
 # 📓 Reflection & Journaling
 

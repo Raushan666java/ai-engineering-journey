@@ -1,3 +1,7 @@
+---
+description: "Software evolution is the continuous process of adapting a software system after its initial deployment. Unlike hardware, software does not wear out in a"
+---
+
 # Software Evolution
 
 ## Learning Objectives

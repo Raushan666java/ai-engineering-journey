@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/03-verbal-ability
 title: "Verbal Ability & English for Campus Placements"
 sidebar_label: "Verbal Ability & English for Campus Placements"
 sidebar_position: 364
+description: "After this chapter you will be able to handle sentence correction, reading comprehension, para jumbles, cloze tests, and vocabulary questions in the"
 ---
 
 <!-- improved -->

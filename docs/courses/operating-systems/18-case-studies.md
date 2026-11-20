@@ -1,3 +1,7 @@
+---
+description: "A[Windows NT] --> B[Linux Kernel] D --> G[RTOS: FreeRTOS / VxWorks] G --> H[Minix & seL4 Microkernels] H --> I[OS Comparison Tables] I --> J[Interview"
+---
+
 # Chapter 18: Case Studies in Operating Systems
 
 **<< [Virtualization and Cloud Computing](./17-virtualization.md)**

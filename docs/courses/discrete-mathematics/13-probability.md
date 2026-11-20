@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: The sample space contains all possible outcomes; events are subsets, and for equally likely outcomes, probability is the size ratio."
+---
+
 # Chapter 13: Probability
 
 > **Previous:** [Chapter 12: Boolean Algebra](./12-boolean.md) | **Next:** [Chapter 14: Number Theory](./14-number-theory.md)

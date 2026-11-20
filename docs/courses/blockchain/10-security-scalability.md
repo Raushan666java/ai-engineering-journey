@@ -1,3 +1,7 @@
+---
+description: "Public blockchains face the 'Trilemma': they can only optimize two out of three: Decentralization, Security, Scalability. Most chains struggle with"
+---
+
 # Chapter 10: Security and Scalability
 
 > **Previous:** [Chapter 9: Enterprise Blockchain](./09-enterprise.md) | **Next:** [Chapter 1: Introduction to Blockchain](./01-introduction.md)

@@ -4,6 +4,7 @@ slug: /learning-how-to-learn-practical/ch-07-dsa-practice-system
 title: "Chapter 7: Practice System for Mastery"
 sidebar_label: "Chapter 7: Practice System for Mastery"
 sidebar_position: 8
+description: "const intervals = [1, 3, 7, 30] // days const nextInterval = intervals[Math.min(problem.reviewsCompleted - 1, intervals.length - 1)] problem.nextReview ="
 ---
 
 # Chapter 7: Practice System for Mastery

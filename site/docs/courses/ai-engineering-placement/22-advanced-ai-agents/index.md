@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/22-advanced-ai-agents
 title: "22 — Advanced AI Agents"
 sidebar_label: "22 — Advanced AI Agents"
 sidebar_position: 287
+description: "Multi-agent systems, memory architectures, context engineering and cost control for agents at production scale."
 ---
 
 # 22 — Advanced AI Agents

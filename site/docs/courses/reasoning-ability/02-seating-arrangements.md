@@ -4,6 +4,7 @@ slug: /reasoning-ability/02-seating-arrangements
 title: "Seating Arrangements — Circular, Linear, and Double Row"
 sidebar_label: "Seating Arrangements — Circular, Linear, and Double Row"
 sidebar_position: 2
+description: "Seating arrangement questions appear in almost every IBPS SO IT Officer Prelims paper. They carry approximately 4–6 questions out of the 25 Reasoning"
 ---
 
 # Seating Arrangements — Circular, Linear, and Double Row

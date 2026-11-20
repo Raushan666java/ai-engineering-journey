@@ -1,3 +1,7 @@
+---
+description: "Ship models, not notebooks: experiment tracking, model registries, serving, drift monitoring and rollback."
+---
+
 # 16 — MLOps & Production AI
 
 ## Overview

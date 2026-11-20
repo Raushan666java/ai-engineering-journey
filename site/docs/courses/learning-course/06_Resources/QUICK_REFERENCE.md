@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/06_06_Resources/QUICK_REFERENCE title: '⚡ Quick Reference Guide' sidebar_label: '⚡ Quick Reference Guide'"
+---
+
 ﻿---
 slug: /learning-course/06_06_Resources/QUICK_REFERENCE
 title: "⚡ Quick Reference Guide"

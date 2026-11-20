@@ -1,3 +1,7 @@
+---
+description: "Always validate environment variables at startup with a Zod schema. A startup failure is far easier to debug than a mysterious runtime crash from a"
+---
+
 # Chapter 12: Deployment and DevOps
 
 > **Previous:** [11-databases-web](./11-databases-web.md) | **Next:** [13-security](./13-security.md)

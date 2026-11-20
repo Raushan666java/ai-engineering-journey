@@ -1,3 +1,7 @@
+---
+description: "Imagine a car factory assembly line. Multiple car models → sedans, SUVs, trucks → move through the same line simultaneously. Each vehicle is at a"
+---
+
 # Chapter 2: Processes
 
 **<< [Introduction to Operating Systems](./01-introduction.md)** | [**Next: CPU Scheduling**](./03-cpu-scheduling.md) >>

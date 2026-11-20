@@ -1,3 +1,7 @@
+---
+description: "The U-Net is not the secret of diffusion. Replace it with a transformer, swap the noise schedule for a straight-line flow, and suddenly you have SD3"
+---
+
 # Diffusion Transformers & Rectified Flow
 
 > The U-Net is not the secret of diffusion. Replace it with a transformer, swap the noise schedule for a straight-line flow, and suddenly you have SD3, FLUX, and every 2026 text-to-image model.

@@ -1,3 +1,7 @@
+---
+description: "Inputs are not the only attack surface. A model that passed every input check can still produce an output that leaks PII, repeats slurs from its training"
+---
+
 # Capstone 85 — Content Classifier Integration
 
 > Classifiers on the output side answer a different question than rules on the input side. Both need a policy router.

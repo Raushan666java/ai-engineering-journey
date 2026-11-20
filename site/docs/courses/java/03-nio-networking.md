@@ -4,6 +4,7 @@ slug: /java/03-nio-networking
 title: "Java NIO & Networking"
 sidebar_label: "Java NIO & Networking"
 sidebar_position: 3
+description: "Pro Tip: For most web applications, the Java HTTP Client (Java 11+) is sufficient. Drop down to raw NIO with Selectors only when you need custom protocol"
 ---
 
 # Java NIO & Networking

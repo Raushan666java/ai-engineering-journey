@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/01-quantitative-aptitude
 title: "Quantitative Aptitude for Campus Placements"
 sidebar_label: "Quantitative Aptitude for Campus Placements"
 sidebar_position: 362
+description: "After this chapter you will be able to solve percentages, profit-loss, simple and compound interest, ratio-proportion, time-work, time-speed-distance"
 ---
 
 <!-- improved -->

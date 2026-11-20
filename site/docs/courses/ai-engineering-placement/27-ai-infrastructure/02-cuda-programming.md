@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/27-ai-infrastructure/02-cuda-programming
 title: "CUDA Programming for AI"
 sidebar_label: "CUDA Programming for AI"
 sidebar_position: 324
+description: "CUDA (Compute Unified Device Architecture) is NVIDIA's parallel computing platform that enables direct GPU programming. Every AI framework — PyTorch"
 ---
 
 <!-- improved -->

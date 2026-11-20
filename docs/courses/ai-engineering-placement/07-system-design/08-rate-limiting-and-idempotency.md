@@ -1,3 +1,7 @@
+---
+description: "Rate Limiting & Idempotency — Algorithms, Distributed Strategies: System design interviews test your ability to architect large-scale systems. Caching"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Rate Limiting & Idempotency — Algorithms, Distributed Strategies

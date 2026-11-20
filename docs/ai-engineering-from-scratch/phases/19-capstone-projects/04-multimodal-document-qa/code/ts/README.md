@@ -1,3 +1,7 @@
+---
+description: "Viewer skeleton that returns a page image URL plus a JSON list of cited bounding boxes for a document. The HTML response inlines a small canvas-overlay"
+---
+
 # Capstone 04 - Multimodal Document QA (TypeScript)
 
 Viewer skeleton that returns a page image URL plus a JSON list of cited bounding

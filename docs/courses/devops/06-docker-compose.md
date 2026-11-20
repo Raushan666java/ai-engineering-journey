@@ -1,3 +1,7 @@
+---
+description: "Docker Compose applications often have complex inter-service dependencies. The following tool visualizes and validates the service dependency graph"
+---
+
 # Chapter 6: Docker Compose
 
 > **Prev:** [Docker](./05-docker.md)

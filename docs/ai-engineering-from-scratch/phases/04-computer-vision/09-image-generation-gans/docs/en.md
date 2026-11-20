@@ -1,3 +1,7 @@
+---
+description: "Classification teaches a network to map images to labels. Generation inverts the problem: sample new images that look like they came from the same"
+---
+
 # Image Generation — GANs
 
 > A GAN is two neural networks in a fixed game. One draws, one critiques. They get better together until the drawings fool the critic.

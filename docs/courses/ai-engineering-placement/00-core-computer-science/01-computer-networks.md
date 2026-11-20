@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to explain the TCP/IP stack from an API designer's perspective, choose between HTTP/2 and gRPC for model serving"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Computer Networks for AI Engineers

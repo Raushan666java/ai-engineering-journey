@@ -4,6 +4,7 @@ slug: /computer-networks/08-transport-layer
 title: "Chapter 8: The Transport Layer"
 sidebar_label: "Chapter 8: The Transport Layer"
 sidebar_position: 8
+description: "The transport layer provides logical communication between application processes running on different hosts. The network layer provides host-to-host"
 ---
 
 # Chapter 8: The Transport Layer

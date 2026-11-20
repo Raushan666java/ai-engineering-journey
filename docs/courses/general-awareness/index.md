@@ -1,3 +1,7 @@
+---
+description: "Exam Weightage: 25–40 Qs in IBPS SO Prelims/Mains, 35 Qs in SBI PO, 40 Qs in RBI Grade B Phase 1, 25 Qs in NIC Scientist & Insurance Exams Moderate"
+---
+
 # General Awareness & Current Affairs
 
 > **Exam Weightage:** 25–40 Qs in IBPS SO Prelims/Mains, 35 Qs in SBI PO, 40 Qs in RBI Grade B Phase 1, 25 Qs in NIC Scientist & Insurance Exams

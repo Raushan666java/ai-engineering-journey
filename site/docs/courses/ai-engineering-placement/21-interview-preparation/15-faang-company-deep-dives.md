@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/21-interview-preparation/15-faang-company-deep-d
 title: "FAANG Company Deep-Dives and Leadership Principles"
 sidebar_label: "FAANG Company Deep-Dives and Leadership Principles"
 sidebar_position: 265
+description: "After this chapter you will be able to tailor your interview preparation to each FAANG company specific process, map your stories to Amazon Leadership"
 ---
 
 <!-- improved -->

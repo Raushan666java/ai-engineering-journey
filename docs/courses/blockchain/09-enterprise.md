@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: Enterprise blockchains trade open, permissionless participation for privacy, throughput, and finality — making them suitable for"
+---
+
 # Chapter 9: Enterprise Blockchain
 
 > **Previous:** [Chapter 8: Decentralized Finance (DeFi)](./08-defi.md) | **Next:** [Chapter 10: Security and Scalability](./10-security-scalability.md)

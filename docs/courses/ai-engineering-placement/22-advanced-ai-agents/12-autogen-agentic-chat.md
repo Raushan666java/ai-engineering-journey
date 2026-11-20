@@ -1,3 +1,7 @@
+---
+description: "AutoGen is a multi-agent conversation framework from Microsoft Research. It enables LLM agents to communicate, collaborate, and solve complex tasks"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # AutoGen: Multi-Agent Conversations

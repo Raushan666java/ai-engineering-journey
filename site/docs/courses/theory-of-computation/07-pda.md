@@ -4,6 +4,7 @@ slug: /theory-of-computation/07-pda
 title: "Chapter 7: Pushdown Automata"
 sidebar_label: "Chapter 7: Pushdown Automata"
 sidebar_position: 7
+description: "A pushdown automaton (PDA) extends an NFA with a stack → an unbounded memory that can store and retrieve information in last-in-first-out (LIFO) order"
 ---
 
 # Chapter 7: Pushdown Automata

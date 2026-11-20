@@ -3,6 +3,7 @@ slug: /learning-course/Pro-Dev-book/Chapter_10_Senior_Engineer_Thinking/03_The_R
 title: "📖 The Readability Mandate"
 sidebar_label: "📖 The Readability Mandate"
 sidebar_position: 3
+description: "One of the great ego-traps in software engineering occurs during the transition from Junior to Mid-Level. You discover powerful, 'clever' language"
 ---
 # 📖 The Readability Mandate
 

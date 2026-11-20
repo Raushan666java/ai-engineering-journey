@@ -4,6 +4,7 @@ slug: /web-development/03-js-basics
 title: "Chapter 3 → JavaScript Basics"
 sidebar_label: "Chapter 3 → JavaScript Basics"
 sidebar_position: 3
+description: "Chapter 3 → JavaScript Basics: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = [] private"
 ---
 
 # Chapter 3 → JavaScript Basics

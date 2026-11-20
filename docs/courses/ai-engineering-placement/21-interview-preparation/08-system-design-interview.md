@@ -1,3 +1,7 @@
+---
+description: "System Design Interview: Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # System Design Interview

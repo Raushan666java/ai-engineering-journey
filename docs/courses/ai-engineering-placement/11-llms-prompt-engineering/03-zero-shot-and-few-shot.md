@@ -1,3 +1,7 @@
+---
+description: "Zero-Shot & Few-Shot Prompting: Large language models are transforming every industry. Understanding how to prompt, evaluate, and optimize LLMs is a"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Zero-Shot & Few-Shot Prompting

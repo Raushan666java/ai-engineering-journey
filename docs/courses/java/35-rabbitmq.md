@@ -1,3 +1,7 @@
+---
+description: "A message queue (e.g., ActiveMQ, SQS) stores messages in named queues; producers send directly to a queue. An AMQP message broker adds an exchange layer —"
+---
+
 # RabbitMQ
 > **Previous:** [Async and Events](34-async-events.md) | **Next:** [Kafka](36-kafka.md)
 

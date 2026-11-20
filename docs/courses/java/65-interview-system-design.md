@@ -1,3 +1,7 @@
+---
+description: "This chapter covers system design concepts essential for senior Java backend interviews: designing scalable, reliable, and maintainable distributed"
+---
+
 # 65. System Design → Interview Q&A
 
 > **Previous:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md) | **Next:** [Behavioral Interview Q&amp;A](./66-interview-behavioral.md)

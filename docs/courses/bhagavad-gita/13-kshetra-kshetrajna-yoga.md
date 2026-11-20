@@ -1,3 +1,7 @@
+---
+description: "Arjuna has heard about the manifest and the unmanifest, about devotion and action, about the cosmic form of the divine. Now he asks the sharpest question"
+---
+
 # Chapter 13: Kshetra Kshetrajna Yoga — The Field and the Knower
 
 > "You are not the field of your life — not its soil, not its crops, not its storms. You are the one who sees the field. And you have never left home."

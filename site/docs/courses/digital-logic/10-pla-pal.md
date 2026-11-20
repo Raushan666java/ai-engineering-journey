@@ -4,6 +4,7 @@ slug: /digital-logic/10-pla-pal
 title: "Chapter 10: Programmable Logic ? PLA and PAL"
 sidebar_label: "Chapter 10: Programmable Logic ? PLA and PAL"
 sidebar_position: 10
+description: "Limitation: A PROM uses a full decoder ? it allocates one word line for every minterm, even for don't-care conditions. A 16-input function needs 2?6 ="
 ---
 
 # Chapter 10: Programmable Logic ? PLA and PAL

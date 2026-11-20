@@ -4,6 +4,7 @@ slug: /computer-networks/10-application-layer
 title: "Chapter 10: The Application Layer → Complete Reference"
 sidebar_label: "Chapter 10: The Application Layer → Complete Reference"
 sidebar_position: 10
+description: "The application layer is Layer 7 of the OSI model and the top of the TCP/IP model. It provides network services directly to end-user applications. Two"
 ---
 
 # Chapter 10: The Application Layer → Complete Reference

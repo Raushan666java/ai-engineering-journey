@@ -4,6 +4,7 @@ slug: /web-development/15-nextjs
 title: "Chapter 15: Next.js"
 sidebar_label: "Chapter 15: Next.js"
 sidebar_position: 15
+description: "A) SSR (Server-Side Rendering) generates HTML for every request. ISR (Incremental Static Regeneration) pre-builds static pages and revalidates them after"
 ---
 
 # Chapter 15: Next.js

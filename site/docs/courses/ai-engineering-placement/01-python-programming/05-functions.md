@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/01-python-programming/05-functions
 title: "Functions — Parameters, Scope, Lambdas, and Advanced Patterns"
 sidebar_label: "Functions — Parameters, Scope, Lambdas, and Advanced Patterns"
 sidebar_position: 14
+description: "Functions — Parameters, Scope, Lambdas, and Advanced Patterns: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and"
 ---
 
 <!-- improved -->

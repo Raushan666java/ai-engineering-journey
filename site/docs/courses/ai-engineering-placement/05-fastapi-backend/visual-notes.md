@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/05-fastapi-backend/visual-notes
 title: "Visual Notes — FastAPI Backend"
 sidebar_label: "Visual Notes"
 sidebar_position: 80
+description: "One-line answer for interviews: 'FastAPI validates every request with Pydantic, runs route logic through dependency injection, and reads/writes via"
 ---
 
 # Visual Notes — FastAPI Backend

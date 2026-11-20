@@ -4,6 +4,7 @@ slug: /laravel/48-interview-manufacturing
 title: "Chapter 48: Manufacturing Interview Q&A"
 sidebar_label: "Chapter 48: Manufacturing Interview Q&A"
 sidebar_position: 48
+description: "The six core entities are Equipment, ProductionOrder, QualityCheck, MaintenanceLog, InventoryItem, and IoTReading. Equipment is the central entity → each"
 ---
 
 # Chapter 48: Manufacturing Interview Q&A

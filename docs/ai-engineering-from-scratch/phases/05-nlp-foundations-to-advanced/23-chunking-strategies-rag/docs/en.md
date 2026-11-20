@@ -1,3 +1,7 @@
+---
+description: "Chunking configuration influences retrieval quality as much as the choice of embedding model (Vectara NAACL 2025). Get chunking wrong and no amount of"
+---
+
 # Chunking Strategies for RAG
 
 > Chunking configuration influences retrieval quality as much as the choice of embedding model (Vectara NAACL 2025). Get chunking wrong and no amount of reranking saves you.

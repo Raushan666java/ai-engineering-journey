@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/20-portfolio-branding/visual-notes
 title: "Visual Notes — Your Personal Brand Trunk"
 sidebar_label: "Visual Notes"
 sidebar_position: 250
+description: "One-line answer for interviews: 'GitHub, resume, LinkedIn, a blog and shipped projects all grow from one personal brand trunk.'"
 ---
 
 # Visual Notes — Your Personal Brand Trunk

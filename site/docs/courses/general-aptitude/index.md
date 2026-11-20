@@ -1,3 +1,7 @@
+---
+description: "A complete aptitude training course covering quantitative ability, logical reasoning, verbal ability, and data interpretation — from foundational concepts"
+---
+
 ﻿---
 id: index
 slug: /general-aptitude

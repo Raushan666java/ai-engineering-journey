@@ -4,6 +4,7 @@ slug: /interview-preparation/04-database-sql-interview
 title: "Chapter 4: Database and SQL Interview"
 sidebar_label: "Chapter 4: Database and SQL Interview"
 sidebar_position: 4
+description: "Understanding the logical order of SQL statement execution is critical for writing correct queries:"
 ---
 
 # Chapter 4: Database and SQL Interview

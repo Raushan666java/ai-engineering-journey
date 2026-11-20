@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/11-heaps-and-tries
 title: "Heaps and Tries"
 sidebar_label: "Heaps and Tries"
 sidebar_position: 48
+description: "Graphs model relationships between entities — social networks, dependencies, maps, and neural network architectures. Understanding graph traversal"
 ---
 
 <!-- improved -->

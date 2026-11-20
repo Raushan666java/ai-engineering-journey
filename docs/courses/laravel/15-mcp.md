@@ -1,3 +1,7 @@
+---
+description: "The Model Context Protocol (MCP) is an open standard published by Anthropic that defines how AI clients communicate with servers that provide context"
+---
+
 # Chapter 15: Laravel MCP → Model Context Protocol
 > **Previous:** [Laravel AI SDK -- Images, Audio, Transcriptions & Embeddings](./14-ai-sdk-media) | **Next:** [Semantic Search, Vector Search & RAG with pgvector](./16-search-rag)
 

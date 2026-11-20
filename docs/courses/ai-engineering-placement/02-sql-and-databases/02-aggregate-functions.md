@@ -1,3 +1,7 @@
+---
+description: "Aggregate Functions — COUNT, SUM, AVG, GROUP BY, HAVING: Data is the fuel of AI. SQL and database design skills let you query, transform, and store the"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Aggregate Functions — COUNT, SUM, AVG, GROUP BY, HAVING

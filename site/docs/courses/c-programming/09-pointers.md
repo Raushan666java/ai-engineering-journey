@@ -4,6 +4,7 @@ slug: /c-programming/09-pointers
 title: "Chapter 9: Pointers"
 sidebar_label: "Chapter 9: Pointers"
 sidebar_position: 9
+description: "A pointer is a variable that stores the memory address of another variable. Instead of holding a value directly, it holds the location where a value lives."
 ---
 
 # Chapter 9: Pointers

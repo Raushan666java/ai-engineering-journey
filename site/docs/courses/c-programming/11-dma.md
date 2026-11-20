@@ -4,6 +4,7 @@ slug: /c-programming/11-dma
 title: "Chapter 11: Dynamic Memory Allocation"
 sidebar_label: "Chapter 11: Dynamic Memory Allocation"
 sidebar_position: 11
+description: "A library has fixed shelves built into the walls. Before the library opens, the architect decides exactly how many shelves are needed, where they go, and"
 ---
 
 # Chapter 11: Dynamic Memory Allocation

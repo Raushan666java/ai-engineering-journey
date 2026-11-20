@@ -4,6 +4,7 @@ slug: /java/43-tracing
 title: "Distributed Tracing & Observability"
 sidebar_label: "Distributed Tracing & Observability"
 sidebar_position: 43
+description: "Distributed tracing tracks requests as they flow through multiple microservices. Each request is assigned a traceId that propagates across service"
 ---
 
 # Distributed Tracing & Observability

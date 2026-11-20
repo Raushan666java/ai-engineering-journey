@@ -4,6 +4,7 @@ slug: /learning-how-to-learn/archive-complete-reference
 title: "Learning How to Learn"
 sidebar_label: "Learning How to Learn"
 sidebar_position: 1
+description: "Universal meta-skill → accelerate learning across all 27 courses in this repository. Every technique is demonstrated with worked examples from actual"
 ---
 
 # Learning How to Learn

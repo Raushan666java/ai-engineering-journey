@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. The Domain Name System (DNS) is a hierarchical, distributed"
+---
+
 # Chapter 15: CDN, DNS, and Edge Computing
 > **Previous:** [14 Distributed Data Structures](./14-distributed-data-structures.md) | **Next:** [16 Api Gateways Cqrs](./16-api-gateways-cqrs.md)
 

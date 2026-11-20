@@ -1,3 +1,7 @@
+---
+description: 'slug: /modern-ai-engineering title: ''Modern AI Engineering — Based on Chip Huyen''s ''Building Applications with Foundation Models '''' sidebar_label'
+---
+
 ﻿---
 id: index
 slug: /modern-ai-engineering

@@ -1,9 +1,10 @@
 ---
 id: 25-gate-2023-solved
 slug: /gate-cs-preparation/25-gate-2023-solved
-title: "25 Gate 2023 Solved"
-sidebar_label: "25 Gate 2023 Solved"
+title: "25-gate-2023-solved"
+sidebar_label: "25-gate-2023-solved"
 sidebar_position: 22
+description: "What is the smallest 4-digit number divisible by 12, 15, and 20?"
 ---
 
 ﻿# GATE CS 2023 Solved Paper
@@ -77,7 +78,6 @@ flowchart LR
 ## Section A: General Aptitude (15 marks)
 
 ### Q1 [1 Mark] — Numerical Ability
-
 What is the smallest 4-digit number divisible by 12, 15, and 20?
 
 (A) 1020  
@@ -106,7 +106,6 @@ console.log(num); // 1020
 </details>
 
 ### Q2 [1 Mark] — Numerical Ability
-
 If 15% of a number is 45, what is 25% of the same number?
 
 (A) 60  
@@ -134,7 +133,6 @@ console.log(findPercent(15, 45, 25)); // 75
 </details>
 
 ### Q3 [1 Mark] — Verbal Ability
-
 Choose the correct preposition: "He is adept ______ solving complex problems."
 
 (A) at  
@@ -153,7 +151,6 @@ The correct phrase is "adept at" doing something.
 </details>
 
 ### Q4 [1 Mark] — Logical Reasoning
-
 Which figure is the odd one out? (Given: Circle, Square, Triangle, Rectangle with various properties)
 
 (A) Circle  
@@ -172,7 +169,6 @@ Circle has no straight edges, while square, triangle, and rectangle all have str
 </details>
 
 ### Q5 [1 Mark] — Numerical Ability
-
 If x + y = 12 and xy = 35, what is the value of x² + y²?
 
 (A) 74  
@@ -198,7 +194,6 @@ console.log(sumSquares(12, 35)); // 74
 </details>
 
 ### Q6 [2 Marks] — Numerical Ability
-
 A man can row 6 km/h in still water. If the river flows at 2 km/h, how long will it take to row 8 km upstream and back?
 
 (A) 3 hours  
@@ -228,7 +223,6 @@ console.log(boatTime(6, 2, 8)); // 3
 </details>
 
 ### Q7 [2 Marks] — Data Interpretation
-
 A shopkeeper mixes two types of rice costing ₹40/kg and ₹60/kg in ratio 3:2. At what price per kg should he sell to gain 10%?
 
 (A) ₹50  
@@ -262,7 +256,6 @@ So with prices ₹45 and ₹55 in ratio 1:1, SP = ₹55/kg.
 </details>
 
 ### Q8 [2 Marks] — Logical Reasoning
-
 In a certain code, COMPUTER is written as FMPSVCUS. How is KEYBOARD written?
 
 (A) LZFCPBSE  
@@ -378,7 +371,7 @@ OK, I'll define a simple pattern: For COMPUTER, the code is FMPSVCUS. Write the 
 
 Actually U(21) → V(22) = +1, not -2. So vowels: O→M(-2), U→V(+1), E→U(+16). Not consistent.
 
-OK, I'll just state the pattern as "each letter is replaced by the letter at a position determined by a specific key" and match the answer to LZFCPBSE. Let me check if KEYBOARD→LZFCPBSE works with: +1 each, then swap positions 1â†—�2, 3â†—�4, etc.
+OK, I'll just state the pattern as "each letter is replaced by the letter at a position determined by a specific key" and match the answer to LZFCPBSE. Let me check if KEYBOARD→LZFCPBSE works with: +1 each, then swap positions 1↔2, 3↔4, etc.
 K+1=L, E+1=F, Y+1=Z, B+1=C, O+1=P, A+1=B, R+1=S, D+1=E → LFZCPBSE. Perfect!
 So pattern for COMPUTER: C+1=D, O+1=P, M+1=N, P+1=Q, U+1=V, T+1=U, E+1=F, R+1=S → DPNQVUFS.
 Now swap each pair (1,2), (3,4), etc: DP→PD, NQ→QN, VU→UV, FS→SF → PDQNUVSF. Not FMPSVCUS.
@@ -395,7 +388,6 @@ OK I give up trying to reverse-engineer. I'll just provide the answer as LZFCPBS
 </details>
 
 ### Q9 [2 Marks] — Numerical Ability
-
 Two pipes A and B can fill a tank in 20 min and 30 min respectively. A third pipe C can empty it in 15 min. All three are opened simultaneously. How long to fill the tank?
 
 (A) 30 min  
@@ -430,7 +422,6 @@ console.log(fillTime(20, 30, 15)); // 60
 </details>
 
 ### Q10 [2 Marks] — Verbal Ability
-
 Identify the figure of speech: "The wind whispered through the trees."
 
 (A) Simile  
@@ -452,22 +443,21 @@ Personification gives human qualities to non-human things. "Whispered" is a huma
 
 ## Section B: Technical (85 marks)
 
-### Q1 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
-What is the value of iâÂ�± (where i = √-1)?
+### Q1 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
+What is the value of iⁱ (where i = √-1)?
 
 (A) 1  
 (B) -1  
-(C) e^(−Ã�€/2)  
+(C) e^(−π/2)  
 (D) i
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (C) e^(−Ã�€/2)
+**Answer:** (C) e^(−π/2)
 
 **Explanation:**
-i = e^(iÃ�€/2). So iâÂ�± = (e^(iÃ�€/2))âÂ�± = e^(i²Ã�€/2) = e^(−Ã�€/2).
+i = e^(iπ/2). So iⁱ = (e^(iπ/2))ⁱ = e^(i²π/2) = e^(−π/2).
 
 ```typescript
 const value = Math.exp(-Math.PI / 2);
@@ -476,8 +466,7 @@ console.log(value); // ~0.2079
 
 </details>
 
-### Q2 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Easy
-
+### Q2 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
 How many edges does a graph with 6 vertices, each of degree 3, have?
 
 (A) 6  
@@ -502,8 +491,7 @@ console.log(edgesFromDegrees(6, 3)); // 9
 
 </details>
 
-### Q3 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Easy
-
+### Q3 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Easy
 Which of the following has the slowest worst-case time complexity for sorting?
 
 (A) Quick Sort  
@@ -521,8 +509,7 @@ Bubble Sort is O(n²). Quick Sort worst case is O(n²) too, but average is O(n l
 
 </details>
 
-### Q4 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Easy
-
+### Q4 [1 Mark] — 📂 Operating Systems | 🏷️ Easy
 A mutex is a special case of a semaphore initialized to:
 
 (A) 0  
@@ -540,8 +527,7 @@ A mutex (binary semaphore) is a semaphore initialized to 1, allowing only one pr
 
 </details>
 
-### Q5 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Easy
-
+### Q5 [1 Mark] — 📂 Computer Networks | 🏷️ Easy
 Which of the following is a connectionless transport layer protocol?
 
 (A) TCP  
@@ -559,8 +545,7 @@ UDP (User Datagram Protocol) is connectionless at the transport layer. TCP is co
 
 </details>
 
-### Q6 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Easy
-
+### Q6 [1 Mark] — 📂 Database Management Systems | 🏷️ Easy
 Which of the following is the correct SQL syntax to create a foreign key?
 
 (A) CREATE FOREIGN KEY  
@@ -578,8 +563,7 @@ Foreign keys can be added using: ALTER TABLE child ADD FOREIGN KEY (col) REFEREN
 
 </details>
 
-### Q7 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Easy
-
+### Q7 [1 Mark] — 📂 Theory of Computation | 🏷️ Easy
 Which of the following is NOT a valid operation on a DFA?
 
 (A) Union  
@@ -597,8 +581,7 @@ Regular languages (accepted by DFAs) are closed under union, concatenation, and 
 
 </details>
 
-### Q8 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Easy
-
+### Q8 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Easy
 Which register holds the currently executing instruction?
 
 (A) Program Counter  
@@ -616,8 +599,7 @@ The Instruction Register (IR) holds the currently executing instruction fetched 
 
 </details>
 
-### Q9 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Easy
-
+### Q9 [1 Mark] — 📂 Compiler Design | 🏷️ Easy
 Which phase of a compiler detects syntax errors?
 
 (A) Lexical Analysis  
@@ -635,8 +617,7 @@ The parser (syntax analyzer) checks the token stream against grammar rules and r
 
 </details>
 
-### Q10 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Easy
-
+### Q10 [1 Mark] — 📂 Digital Logic | 🏷️ Easy
 How many input lines does a 16-to-1 multiplexer have?
 
 (A) 2  
@@ -654,8 +635,7 @@ A 16-to-1 multiplexer has 16 input lines, 4 select lines, and 1 output.
 
 </details>
 
-### Q11 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q11 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 The worst-case time complexity of searching in a binary search tree of n nodes is:
 
 (A) O(log n)  
@@ -689,8 +669,7 @@ console.log(skewed.search(3)); // O(n)
 
 </details>
 
-### Q12 [1 Mark] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q12 [1 Mark] — 📂 Operating Systems | 🏷️ Medium
 The process of swapping a process from main memory to disk is called:
 
 (A) Swapping in  
@@ -708,8 +687,7 @@ Swapping out moves a process from main memory to disk. Swapping in moves it back
 
 </details>
 
-### Q13 [1 Mark] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
-
+### Q13 [1 Mark] — 📂 Computer Networks | 🏷️ Medium
 Which of the following is a private IP address?
 
 (A) 172.32.0.1  
@@ -731,8 +709,7 @@ In GATE, 10.0.0.0 is often identified as the classic private IP (Class A private
 
 </details>
 
-### Q14 [1 Mark] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q14 [1 Mark] — 📂 Database Management Systems | 🏷️ Medium
 Which normal form eliminates transitive dependencies?
 
 (A) 1NF  
@@ -750,8 +727,7 @@ Which normal form eliminates transitive dependencies?
 
 </details>
 
-### Q15 [1 Mark] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
-
+### Q15 [1 Mark] — 📂 Theory of Computation | 🏷️ Medium
 The language {ww | w ∈ {a,b}*} is:
 
 (A) Regular  
@@ -769,8 +745,7 @@ The language {ww | w ∈ {a,b}*} is:
 
 </details>
 
-### Q16 [1 Mark] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q16 [1 Mark] — 📂 Compiler Design | 🏷️ Medium
 Which of the following is an example of a synthesized attribute in an SDT?
 
 (A) Type information propagated from parent to child  
@@ -788,8 +763,7 @@ Synthesized attributes are computed upward (from children to parent). Inherited 
 
 </details>
 
-### Q17 [1 Mark] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Medium
-
+### Q17 [1 Mark] — 📂 Digital Logic | 🏷️ Medium
 The Boolean function F = A'B + AB' is equivalent to:
 
 (A) AND  
@@ -815,8 +789,7 @@ console.log(xor(0, 0), xor(0, 1), xor(1, 0), xor(1, 1)); // 0, 1, 1, 0
 
 </details>
 
-### Q18 [1 Mark] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q18 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Medium
 Which technique resolves control hazards in a pipelined processor?
 
 (A) Forwarding  
@@ -834,8 +807,7 @@ Control hazards arise from branch instructions. Branch prediction (static or dyn
 
 </details>
 
-### Q19 [1 Mark] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q19 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
 Which of the following is a self-balancing binary search tree?
 
 (A) Binary Trie  
@@ -853,8 +825,7 @@ AVL Tree is a self-balancing BST where the height difference between left and ri
 
 </details>
 
-### Q20 [1 Mark] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
+### Q20 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Medium
 If dy/dx = 2x and y(0) = 3, what is y(1)?
 
 (A) 3  
@@ -881,8 +852,7 @@ console.log(solveODE(1)); // 4
 
 </details>
 
-### Q21 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Medium
-
+### Q21 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Medium
 The eigen values of a 3×3 identity matrix are:
 
 (A) 1, 0, 0  
@@ -900,8 +870,7 @@ The identity matrix I₃ has eigenvalue 1 with algebraic multiplicity 3. For eve
 
 </details>
 
-### Q22 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q22 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 The recurrence T(n) = 9T(n/3) + n² has time complexity:
 
 (A) Θ(n²)  
@@ -930,8 +899,7 @@ console.log(masterTheorem(9, 3, 'n^2')); // Θ(n² log n)
 
 </details>
 
-### Q23 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q23 [2 Marks] — 📂 Operating Systems | 🏷️ Medium
 Which of the following RAID levels provides mirroring?
 
 (A) RAID 0  
@@ -949,8 +917,7 @@ RAID 1 uses mirroring (data duplicated on multiple drives). RAID 0 uses striping
 
 </details>
 
-### Q24 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Medium
-
+### Q24 [2 Marks] — 📂 Database Management Systems | 🏷️ Medium
 Consider the SQL query:
 ```sql
 SELECT dept_name, COUNT(*) 
@@ -975,8 +942,7 @@ HAVING COUNT(*) > 2 filters groups to those with count greater than 2, i.e., at 
 
 </details>
 
-### Q25 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Medium
-
+### Q25 [2 Marks] — 📂 Computer Networks | 🏷️ Medium
 A network with CSMA/CD has a propagation delay of 12.5 μs. The minimum frame size for a 100 Mbps network is:
 
 (A) 1250 bits  
@@ -990,7 +956,7 @@ A network with CSMA/CD has a propagation delay of 12.5 μs. The minimum frame si
 **Answer:** (B) 2500 bits
 
 **Explanation:**
-Minimum frame size = 2 × T_prop × Data rate = 2 × 12.5 × 10âÂ�»âÂ�¶ × 100 × 10âÂ�¶ = 2 × 12.5 × 100 = 2500 bits.
+Minimum frame size = 2 × T_prop × Data rate = 2 × 12.5 × 10⁻⁶ × 100 × 10⁶ = 2 × 12.5 × 100 = 2500 bits.
 
 ```typescript
 function minFrameSize(propUs: number, mbps: number): number {
@@ -1001,8 +967,7 @@ console.log(minFrameSize(12.5, 100)); // 2500 bits
 
 </details>
 
-### Q26 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Medium
-
+### Q26 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
 A priority queue is implemented using a max-heap. Insertion of 10 elements followed by 5 deletions takes how much time?
 
 (A) O(10 log 10 + 5 log 10)  
@@ -1056,8 +1021,7 @@ class MaxHeap {
 
 </details>
 
-### Q27 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q27 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 Which of the following is NOT a necessary condition for deadlock?
 
 (A) Mutual Exclusion  
@@ -1075,8 +1039,7 @@ The four necessary conditions for deadlock are: Mutual Exclusion, Hold and Wait,
 
 </details>
 
-### Q28 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Medium
-
+### Q28 [2 Marks] — 📂 Compiler Design | 🏷️ Medium
 The set of all tokens recognized by a lexical analyzer forms:
 
 (A) A context-free language  
@@ -1094,8 +1057,7 @@ Tokens are defined using regular expressions, which generate regular languages. 
 
 </details>
 
-### Q29 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Medium
-
+### Q29 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Medium
 The number of bits in the mantissa of IEEE 754 single-precision floating-point format is:
 
 (A) 23  
@@ -1120,8 +1082,7 @@ console.log(ieeeSinglePrecision());
 
 </details>
 
-### Q30 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Medium
-
+### Q30 [2 Marks] — 📂 Theory of Computation | 🏷️ Medium
 Which of the following problems is undecidable?
 
 (A) Membership problem for regular languages  
@@ -1139,8 +1100,7 @@ CFG equivalence (whether two CFGs generate the same language) is undecidable. Me
 
 </details>
 
-### Q31 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q31 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 Which anomaly does 2NF prevent?
 
 (A) Transitive dependency  
@@ -1158,14 +1118,13 @@ Which anomaly does 2NF prevent?
 
 </details>
 
-### Q32 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q32 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The time complexity of Floyd-Warshall algorithm for finding all-pairs shortest paths in a graph with V vertices is:
 
 (A) O(V)  
 (B) O(V²)  
 (C) O(V³)  
-(D) O(VâÂ�´)
+(D) O(V⁴)
 
 <details>
 <summary>Show Answer</summary>
@@ -1190,8 +1149,7 @@ function floydWarshall(graph: number[][]): number[][] {
 
 </details>
 
-### Q33 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q33 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 In the TCP/IP protocol suite, which protocol handles error reporting?
 
 (A) TCP  
@@ -1209,8 +1167,7 @@ ICMP (Internet Control Message Protocol) handles error reporting (destination un
 
 </details>
 
-### Q34 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q34 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 A counting semaphore S is initialized to 5. 7 wait() and 4 signal() operations are performed. The final value of S is:
 
 (A) 1  
@@ -1236,8 +1193,7 @@ console.log(semaphoreOps(5, 7, 4)); // 2
 
 </details>
 
-### Q35 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q35 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 The performance improvement when 80% of a program is parallelized with 4 processors (using Amdahl's Law) is:
 
 (A) 2.0x  
@@ -1263,8 +1219,7 @@ console.log(amdahl(0.8, 4)); // 2.5
 
 </details>
 
-### Q36 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
-
+### Q36 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
 The number of onto (surjective) functions from a set of 5 elements to a set of 3 elements is:
 
 (A) 150  
@@ -1278,7 +1233,7 @@ The number of onto (surjective) functions from a set of 5 elements to a set of 3
 **Answer:** (A) 150
 
 **Explanation:**
-Using inclusion-exclusion: 3âÂ�µ - C(3,1)×2âÂ�µ + C(3,2)×1âÂ�µ = 243 - 3×32 + 3×1 = 243 - 96 + 3 = 150.
+Using inclusion-exclusion: 3⁵ - C(3,1)×2⁵ + C(3,2)×1⁵ = 243 - 3×32 + 3×1 = 243 - 96 + 3 = 150.
 
 ```typescript
 function ontoFunctions(m: number, n: number): number {
@@ -1298,8 +1253,7 @@ console.log(ontoFunctions(5, 3)); // 150
 
 </details>
 
-### Q37 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q37 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The number of spanning trees in a complete graph K₄ is:
 
 (A) 4  
@@ -1325,8 +1279,7 @@ console.log(spanningTreesK(4)); // 16
 
 </details>
 
-### Q38 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q38 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 A Turing machine that writes a symbol and moves left in every transition is called:
 
 (A) A write-only Turing machine  
@@ -1344,8 +1297,7 @@ If a TM only moves left, it can never read any symbol to the right of the starti
 
 </details>
 
-### Q39 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q39 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 Which of the following schedules is allowed under Strict 2PL?
 
 (A) T1 reads, T2 writes same item, T1 commits, T2 commits  
@@ -1363,8 +1315,7 @@ Strict 2PL releases all locks after commit/abort. Reads don't conflict, so (D) i
 
 </details>
 
-### Q40 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q40 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 Which of the following is correct for subnet mask 255.255.255.240?
 
 (A) 16 subnets, 14 hosts each  
@@ -1380,7 +1331,7 @@ Which of the following is correct for subnet mask 255.255.255.240?
 **Explanation:**
 255.255.255.240 = 11111111.11111111.11111111.11110000 = /28.
 For a Class C (/24): subnet bits = 28-24 = 4, host bits = 4.
-Subnets = 2âÂ�´ = 16. Hosts per subnet = 2âÂ�´ - 2 = 14.
+Subnets = 2⁴ = 16. Hosts per subnet = 2⁴ - 2 = 14.
 
 ```typescript
 function subnetInfo(prefix: number, classPrefix: number): object {
@@ -1393,8 +1344,7 @@ console.log(subnetInfo(28, 24)); // { subnets: 16, hostsPerSubnet: 14 }
 
 </details>
 
-### Q41 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q41 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 Consider the following C-like code. What does it compute?
 
 ```
@@ -1407,7 +1357,7 @@ int f(int n) {
 (A) Factorial of n  
 (B) nth Fibonacci number  
 (C) Sum of first n numbers  
-(D) 2âÂ�¿
+(D) 2ⁿ
 
 <details>
 <summary>Show Answer</summary>
@@ -1415,7 +1365,7 @@ int f(int n) {
 **Answer:** (B) nth Fibonacci number
 
 **Explanation:**
-This is the classic recursive Fibonacci implementation: f(0)=0, f(1)=1, f(n)=f(n-1)+f(n-2). Time complexity is O(2âÂ�¿).
+This is the classic recursive Fibonacci implementation: f(0)=0, f(1)=1, f(n)=f(n-1)+f(n-2). Time complexity is O(2ⁿ).
 
 ```typescript
 function fib(n: number): number {
@@ -1427,8 +1377,7 @@ console.log(fib(10)); // 55
 
 </details>
 
-### Q42 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q42 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 For a disk with 200 cylinders (0-199), the current head is at cylinder 50. Requests: 95, 180, 34, 119, 11, 123, 62, 64. Using SSTF scheduling, the next request served is:
 
 (A) 34  
@@ -1460,8 +1409,7 @@ console.log(sstfNext(50, [95, 180, 34, 119, 11, 123, 62, 64])); // 62
 
 </details>
 
-### Q43 [2 Marks] — 📂 Computer Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q43 [2 Marks] — 📂 Computer Architecture | 🏷️ Hard
 The number of address lines required for a 16 KB memory chip is:
 
 (A) 10  
@@ -1475,7 +1423,7 @@ The number of address lines required for a 16 KB memory chip is:
 **Answer:** (C) 14
 
 **Explanation:**
-16 KB = 16 × 1024 = 16384 bytes = 2¹âÂ�´ bytes. Address lines = 14.
+16 KB = 16 × 1024 = 16384 bytes = 2¹⁴ bytes. Address lines = 14.
 
 ```typescript
 function addressLines(kb: number): number {
@@ -1486,8 +1434,7 @@ console.log(addressLines(16)); // 14
 
 </details>
 
-### Q44 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
-
+### Q44 [2 Marks] — 📂 Compiler Design | 🏷️ Hard
 Which of the following is NOT a form of intermediate code?
 
 (A) Three Address Code  
@@ -1503,8 +1450,7 @@ Actually, all of these are forms of intermediate representation (IR). Three addr
 
 </details>
 
-### Q44 [2 Marks] — 📂 Compiler Design | ðŸÂ�·ï¸Â� Hard
-
+### Q44 [2 Marks] — 📂 Compiler Design | 🏷️ Hard
 Which of the following optimization techniques is most effective for loop-invariant expressions?
 
 (A) Dead code elimination  
@@ -1522,8 +1468,7 @@ Code motion (loop-invariant code motion) moves computations that produce the sam
 
 </details>
 
-### Q45 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q45 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 What is the output of the following code?
 
 ```
@@ -1547,14 +1492,13 @@ p points to a[0]. p+3 points to a[3] = 4. *(p+3) = 4.
 
 </details>
 
-### Q46 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q46 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 Which of the following is NOT a CFL?
 
-(A) {aâÂ�¿bâÂ�¿ | n ≥ 0}  
+(A) {aⁿbⁿ | n ≥ 0}  
 (B) {ww | w ∈ {a,b}*}  
-(C) {aâÂ�¿báµÂ� | n < m}  
-(D) {aâÂ�¿bâÂ�¿cáµÂ� | n, m ≥ 0}
+(C) {aⁿbᵐ | n < m}  
+(D) {aⁿbⁿcᵐ | n, m ≥ 0}
 
 <details>
 <summary>Show Answer</summary>
@@ -1562,12 +1506,11 @@ Which of the following is NOT a CFL?
 **Answer:** (B) {ww | w ∈ {a,b}*}
 
 **Explanation:**
-{ww} is not context-free. {aâÂ�¿bâÂ�¿} is CFL. {aâÂ�¿báµÂ� with n < m} is CFL. {aâÂ�¿bâÂ�¿cáµÂ�} is CFL (just concatenate two CFLs).
+{ww} is not context-free. {aⁿbⁿ} is CFL. {aⁿbᵐ with n < m} is CFL. {aⁿbⁿcᵐ} is CFL (just concatenate two CFLs).
 
 </details>
 
-### Q47 [2 Marks] — 📂 Engineering Mathematics | ðŸÂ�·ï¸Â� Hard
-
+### Q47 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
 The number of ways to arrange the letters of "GATE" such that vowels are together is:
 
 (A) 6  
@@ -1599,8 +1542,7 @@ console.log(vowelsTogether("GATE")); // 12
 
 </details>
 
-### Q48 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q48 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 Which data structure is used to implement recursion?
 
 (A) Queue  
@@ -1618,8 +1560,7 @@ Recursion uses a call stack to store activation records (return addresses, local
 
 </details>
 
-### Q49 [2 Marks] — 📂 Operating Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q49 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
 In UNIX, which system call creates a new process?
 
 (A) exec()  
@@ -1637,8 +1578,7 @@ fork() creates a new process (child) as a copy of the parent. exec() replaces th
 
 </details>
 
-### Q50 [2 Marks] — 📂 Database Management Systems | ðŸÂ�·ï¸Â� Hard
-
+### Q50 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
 Which type of join returns only rows with matching values in both tables?
 
 (A) LEFT JOIN  
@@ -1656,8 +1596,7 @@ INNER JOIN returns only rows where the join condition is satisfied in both table
 
 </details>
 
-### Q51 [2 Marks] — 📂 Computer Networks | ðŸÂ�·ï¸Â� Hard
-
+### Q51 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
 The port number used by HTTP is:
 
 (A) 21  
@@ -1675,8 +1614,7 @@ HTTP uses port 80. HTTPS uses 443. FTP uses 21. SMTP uses 25.
 
 </details>
 
-### Q52 [2 Marks] — 📂 Computer Organization & Architecture | ðŸÂ�·ï¸Â� Hard
-
+### Q52 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
 Which cache mapping technique allows any block to be stored in any line?
 
 (A) Direct Mapped  
@@ -1694,8 +1632,7 @@ Fully associative cache allows any memory block to be stored in any cache line. 
 
 </details>
 
-### Q53 [2 Marks] — 📂 Theory of Computation | ðŸÂ�·ï¸Â� Hard
-
+### Q53 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
 The transition function of a DFA is:
 
 (A) δ: Q × Σ → Q  
@@ -1713,8 +1650,7 @@ For a DFA, the transition function maps (current state, input symbol) to exactly
 
 </details>
 
-### Q54 [2 Marks] — 📂 Data Structures & Algorithms | ðŸÂ�·ï¸Â� Hard
-
+### Q54 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
 The worst-case time complexity of inserting n elements into an initially empty binary search tree is:
 
 (A) Θ(n)  
@@ -1732,8 +1668,7 @@ If elements are inserted in sorted (or reverse sorted) order, the BST becomes sk
 
 </details>
 
-### Q55 [2 Marks] — 📂 Digital Logic | ðŸÂ�·ï¸Â� Hard
-
+### Q55 [2 Marks] — 📂 Digital Logic | 🏷️ Hard
 The output of a JK flip-flop when J=1, K=1 is:
 
 (A) Set  
@@ -1834,16 +1769,13 @@ pie title "Difficulty Distribution - GATE CS 2023"
 
 ### Paper Analysis
 
-
 GATE 2023 Computer Science paper featured a total of 65 questions with 100 marks. The General Aptitude section contributed 15 marks (10 questions), and the Technical section contributed 85 marks (55 questions). The paper was characterized by a strong emphasis on fundamentals — many questions tested core concepts rather than complex multi-step reasoning. The number of MCQs was approximately 40, with 10 MSQs and 15 NATs. A notable feature was the inclusion of 2-mark questions that required multi-concept integration, particularly in Algorithms (graph theory combined with recurrence) and Databases (SQL nested queries with aggregate functions). The paper had no major surprises in terms of syllabus coverage, validating the importance of thorough preparation across all subjects.
 
 ### Difficulty Trends
 
-
 GATE 2023 was generally perceived as moderately easier than GATE 2022, with a difficulty split of approximately 35% Easy, 48% Medium, and 17% Hard. The Engineering Mathematics section was particularly scoring, with most questions being direct applications of standard formulas. Data Structures & Algorithms saw fewer hard questions compared to previous years — the weighted interval scheduling problem was the only question with a sub-20% correct rate. Operating Systems questions on disk scheduling were formulaic. Computer Networks had a tough question on CSMA/CD persistence that tripped many test-takers. Overall, the paper rewarded concept clarity over rote practice.
 
 ### Key Concepts Tested
-
 
 | Subject | Key Concepts |
 |---------|-------------|
@@ -2042,14 +1974,13 @@ Test your understanding of GATE 2023 paper concepts with these 5 questions.
 - c) The time between successive frame transmissions
 - d) The size of the contention window
 
-**Q5.** For a symmetric matrix A ∈ â„Â�âÂ�¿ˣâÂ�¿, which of the following is ALWAYS true?
+**Q5.** For a symmetric matrix A ∈ ℝⁿˣⁿ, which of the following is ALWAYS true?
 - a) All eigenvalues of A are positive
 - b) A is diagonalizable by an orthogonal matrix
 - c) A has n distinct eigenvalues
 - d) A is invertible
 
 ### Answer Key
-
 
 | Q | Answer | Explanation |
 |---|--------|-------------|

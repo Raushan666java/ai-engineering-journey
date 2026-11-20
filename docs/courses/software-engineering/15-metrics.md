@@ -1,3 +1,7 @@
+---
+description: "Outcomes: Windows 7 had 50% fewer crashes than Windows Vista, achieved through data-driven quality gates that blocked components from shipping unless they"
+---
+
 # Software Metrics and Measurement
 
 ## Learning Objectives

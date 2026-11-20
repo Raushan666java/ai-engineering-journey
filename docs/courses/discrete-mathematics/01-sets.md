@@ -1,3 +1,7 @@
+---
+description: 'A set is an unordered collection of distinct objects, called its elements or members. If $x$ is an element of the set $S$, we write $x in S$. If $x$ is'
+---
+
 # Chapter 1: Sets
 
 > **Previous:** None | **Next:** [Chapter 2: Logic](02-logic.md)

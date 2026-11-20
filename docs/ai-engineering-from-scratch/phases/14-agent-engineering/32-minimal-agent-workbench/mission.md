@@ -1,3 +1,7 @@
+---
+description: "Lay down the three-file minimum workbench (router, state, task board) into a fresh workdir/ and prove a single agent turn can read state, pull a task"
+---
+
 # Mission - The Minimal Agent Workbench
 
 ## Goal

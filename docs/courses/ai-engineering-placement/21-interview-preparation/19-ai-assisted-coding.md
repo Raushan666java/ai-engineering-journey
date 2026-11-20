@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to strategically use LLMs during coding interviews, craft effective prompts for problem solving, avoid common pitfalls"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # AI-Assisted Coding Interviews

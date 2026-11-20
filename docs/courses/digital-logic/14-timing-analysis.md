@@ -1,3 +1,7 @@
+---
+description: "Chapter 14: Timing Analysis: interface Task { id: string; name: string; status: string; data: unknown } private tasks: Task[] = [] private maxConcurrency"
+---
+
 # Chapter 14: Timing Analysis
 
 > **Prereq:** Chapter 6 (Sequential Circuits) ? flip-flop timing parameters are the foundation of static timing analysis.

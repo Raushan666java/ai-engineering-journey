@@ -4,6 +4,7 @@ slug: /theory-of-computation/13-time-complexity
 title: "Chapter 13: Time Complexity and NP-Completeness"
 sidebar_label: "Chapter 13: Time Complexity and NP-Completeness"
 sidebar_position: 13
+description: "The NTM's nondeterministic branches correspond to trying all possible certificates simultaneously. If any branch accepts, the NTM accepts — which means a"
 ---
 
 # Chapter 13: Time Complexity and NP-Completeness

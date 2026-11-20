@@ -4,6 +4,7 @@ slug: /reasoning-ability/06-logical-reasoning-input-output
 title: "Logical Reasoning and Input-Output"
 sidebar_label: "Logical Reasoning and Input-Output"
 sidebar_position: 6
+description: "These questions are generally less time-consuming than puzzles and can be solved quickly with systematic techniques. They test the candidate's ability to"
 ---
 
 # Logical Reasoning and Input-Output

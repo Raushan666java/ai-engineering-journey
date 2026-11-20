@@ -1,3 +1,7 @@
+---
+description: "The messages list in the loop from Chapter 5 grows every iteration. For a long-running agent (many tool calls, or a long conversation), this causes two"
+---
+
 ## Chapter 6: Memory — Short-Term, Long-Term, and Working Memory
 
 ### 6.1 Three Kinds of Memory, Three Different Jobs

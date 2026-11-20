@@ -1,3 +1,7 @@
+---
+description: "OCR is a three-stage pipeline — detect text boxes, recognise the characters, then lay them out. Every modern OCR system reorders these stages or merges"
+---
+
 # OCR & Document Understanding
 
 > OCR is a three-stage pipeline — detect text boxes, recognise the characters, then lay them out. Every modern OCR system reorders these stages or merges them.

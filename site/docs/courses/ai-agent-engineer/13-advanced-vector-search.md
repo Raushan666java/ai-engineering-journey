@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/13-advanced-vector-search
 title: "Chapter 13 — Advanced Vector Search & RAG"
 sidebar_label: "Chapter 13 — Advanced Vector Search & RAG"
 sidebar_position: 14
+description: "Master advanced retrieval — hybrid search, multi-vector retrieval, re-ranking architectures, and production-scale vector database tuning. Move beyond"
 ---
 
 # Chapter 13 — Advanced Vector Search & RAG

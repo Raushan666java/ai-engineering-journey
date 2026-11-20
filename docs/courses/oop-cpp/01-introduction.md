@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: OOP is a programming paradigm that organises code around objects→bundles of data (attributes) and behaviour (methods)→rather than"
+---
+
 # Chapter 1: Introduction to Object-Oriented Programming
 
 > **Previous:** None | **Next:** [Classes and Objects](./02-classes-objects.md)

@@ -1,3 +1,7 @@
+---
+description: "Every AI system that processes user data is a target. Data leakage exposes personally identifiable information (PII), proprietary training data, and"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Data Leakage & PII Detection

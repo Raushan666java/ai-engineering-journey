@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/04-git-linux-cli
 title: "04 — Git, Linux & CLI"
 sidebar_label: "04 — Git, Linux & CLI"
 sidebar_position: 67
+description: "Git internals, branching and recovery, plus the Linux and shell commands you need when a server breaks at 2am."
 ---
 
 # 04 — Git, Linux & CLI

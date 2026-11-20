@@ -1,3 +1,7 @@
+---
+description: "You built a single agent in Phase 14. It works. It can read files, run commands, call APIs, and reason about results. Then you point it at a real"
+---
+
 # Why Multi-Agent?
 
 > One agent hits a wall. The smart move is not a bigger agent - it is more agents.

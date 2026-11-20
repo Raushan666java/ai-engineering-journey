@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/14-fine-tuning-peft/06-instruction-tuning
 title: "Instruction Tuning"
 sidebar_label: "Instruction Tuning"
 sidebar_position: 193
+description: "Instruction Tuning: Fine-tuning adapts foundation models to your specific domain. LoRA, QLoRA, and DPO make this affordable. This module covers when to"
 ---
 
 <!-- improved -->

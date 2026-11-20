@@ -4,6 +4,7 @@ slug: /artificial-intelligence/13-computer-vision
 title: "Chapter 13: Computer Vision"
 sidebar_label: "Chapter 13: Computer Vision"
 sidebar_position: 21
+description: "When you look at a photograph, your brain performs an extraordinary sequence of operations in milliseconds: your retinas capture photons, the optic nerve"
 ---
 
 # Chapter 13: Computer Vision

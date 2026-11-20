@@ -1,3 +1,7 @@
+---
+description: "Humans cannot write a reward function for 'good assistant response,' but they can compare two responses and pick the better one. Fit a reward model to"
+---
+
 # Reward Modeling & RLHF
 
 > Humans cannot write a reward function for "good assistant response," but they can compare two responses and pick the better one. Fit a reward model to those comparisons, then RL the language model against it. Christiano 2017. InstructGPT 2022. The recipe that turned GPT-3 into ChatGPT. In 2026 it is mostly being replaced by DPO — but the mental model stays.

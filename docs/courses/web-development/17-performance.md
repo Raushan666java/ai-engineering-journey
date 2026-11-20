@@ -1,3 +1,7 @@
+---
+description: "Use npx web-vitals in your app to track real Core Web Vitals from actual users — Lighthouse gives lab data but real-user metrics reveal the true"
+---
+
 # Chapter 17: Performance Optimization
 
 > **Previous:** [16-testing-web](./16-testing-web.md) | **Next:** [18-fullstack-project](./18-fullstack-project.md)

@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Consistent hashing maps keys to nodes in a hash ring (range"
+---
+
 # Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond
 > **Previous:** [13 Lld Concurrency](./13-lld-concurrency.md) | **Next:** [15 Cdn Dns Edge](./15-cdn-dns-edge.md)
 

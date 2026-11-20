@@ -4,6 +4,7 @@ slug: /engineering-mathematics/08-integral-transforms
 title: "Chapter 8: Integral Transforms"
 sidebar_label: "Chapter 8: Integral Transforms"
 sidebar_position: 8
+description: '$a_0 = frac{1}{T} int_0^T f(t) ,dt$ $a_n = frac{2}{T} int_0^T f(t) cos left( frac{2 pi nt}{T} right) dt$ $b_n = frac{2}{T} int_0^T f(t)'
 ---
 
 # Chapter 8: Integral Transforms

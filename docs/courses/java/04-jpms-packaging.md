@@ -1,3 +1,7 @@
+---
+description: "Java's module system→formally Java Platform Module System (JPMS)→was introduced in Java 9 as part of Project Jigsaw. It is the largest structural change"
+---
+
 # Java Modules (JPMS) & Packaging
 
 > **Previous:** [Java NIO & Networking](./03-nio-networking.md) | **Next:** [Functional Programming in Practice](./05-functional-deep.md)

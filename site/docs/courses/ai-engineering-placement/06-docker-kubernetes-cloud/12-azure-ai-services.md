@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/06-docker-kubernetes-cloud/12-azure-ai-services
 title: "Azure AI Services — Cognitive Services, Azure ML, OpenAI Service"
 sidebar_label: "Azure AI Services — Cognitive Services, Azure ML, OpenAI Service"
 sidebar_position: 92
+description: "Azure AI Services is Microsoft's comprehensive cloud AI platform. It spans pre-built cognitive APIs, custom ML with Azure Machine Learning, and large"
 ---
 
 <!-- improved -->

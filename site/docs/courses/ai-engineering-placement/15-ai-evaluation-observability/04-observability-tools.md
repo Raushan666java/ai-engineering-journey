@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/15-ai-evaluation-observability/04-observability-
 title: "Observability Tools"
 sidebar_label: "Observability Tools"
 sidebar_position: 201
+description: "Observability Tools: You cannot improve what you cannot measure. Evaluation metrics, LLM-as-judge, and observability tools help you monitor and improve AI"
 ---
 
 <!-- improved -->

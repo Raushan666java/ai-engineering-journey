@@ -4,6 +4,7 @@ slug: /c-programming/14-recursion
 title: "Chapter 14: Recursion"
 sidebar_label: "Chapter 14: Recursion"
 sidebar_position: 14
+description: "Imagine a set of Russian nesting dolls. You open the largest doll, and inside is a smaller doll. You open that one, and inside is an even smaller doll"
 ---
 
 # Chapter 14: Recursion

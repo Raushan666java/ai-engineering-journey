@@ -4,6 +4,7 @@ slug: /blockchain/04-bitcoin
 title: "Chapter 4: The Bitcoin Network"
 sidebar_label: "Chapter 4: The Bitcoin Network"
 sidebar_position: 4
+description: "Bitcoin uses a stack-based, non-Turing complete language called Script. It is intentionally limited to prevent infinite loops (denial of service). There"
 ---
 
 # Chapter 4: The Bitcoin Network

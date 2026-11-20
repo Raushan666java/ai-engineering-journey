@@ -1,3 +1,7 @@
+---
+description: "RNN and LSTM — RNN, LSTM, GRU, Bidirectional RNNs, Seq2Seq, Teacher Forcing: Deep learning powers modern AI breakthroughs. PyTorch is the framework of"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # RNN and LSTM — RNN, LSTM, GRU, Bidirectional RNNs, Seq2Seq, Teacher Forcing

@@ -1,3 +1,7 @@
+---
+description: "Graph problems are among the most challenging interview topics. They test your ability to model relationships, understand traversal strategies, and apply"
+---
+
 # Chapter 06: Graphs
 
 > Graph problems are among the most challenging interview topics. They test your ability to model relationships, understand traversal strategies, and apply advanced algorithms like topological sort, Dijkstra, and Union-Find.

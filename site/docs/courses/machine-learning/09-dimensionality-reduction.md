@@ -4,6 +4,7 @@ slug: /machine-learning/09-dimensionality-reduction
 title: "Chapter 9: Dimensionality Reduction"
 sidebar_label: "Chapter 9: Dimensionality Reduction"
 sidebar_position: 9
+description: "As the number of features (dimensions) increases, the volume of the feature space grows exponentially. For a dataset with uniform distribution in $d$"
 ---
 
 # Chapter 9: Dimensionality Reduction

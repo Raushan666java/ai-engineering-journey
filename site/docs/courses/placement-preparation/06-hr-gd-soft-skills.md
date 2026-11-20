@@ -4,6 +4,7 @@ slug: /placement-preparation/06-hr-gd-soft-skills
 title: "HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide"
 sidebar_label: "HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide"
 sidebar_position: 6
+description: "Target: Campus placements → IT/Engineering students Covers: HR interview questions & answers, Group Discussion strategies, communication skills"
 ---
 
 # HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide

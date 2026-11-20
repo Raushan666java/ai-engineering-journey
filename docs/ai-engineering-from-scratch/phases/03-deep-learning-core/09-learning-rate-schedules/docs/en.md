@@ -1,3 +1,7 @@
+---
+description: "The learning rate is the single most important hyperparameter. Not the architecture. Not the dataset size. Not the activation function. The learning rate"
+---
+
 # Learning Rate Schedules and Warmup
 
 > The learning rate is the single most important hyperparameter. Not the architecture. Not the dataset size. Not the activation function. The learning rate. If you tune nothing else, tune this.

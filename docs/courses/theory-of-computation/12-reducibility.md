@@ -1,3 +1,7 @@
+---
+description: "Proof sketch: Assume P doesn't contain the empty language (if it does, we can work with the complement). Let L∅ be a TM with empty language. Since P is"
+---
+
 # Chapter 12: Reducibility and Advanced Undecidability
 
 > **Previous:** [Decidability](./11-decidability.md) | **Next:** [Time Complexity](./13-time-complexity.md)

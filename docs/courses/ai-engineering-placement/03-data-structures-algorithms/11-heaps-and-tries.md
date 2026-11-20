@@ -1,3 +1,7 @@
+---
+description: "Graphs model relationships between entities — social networks, dependencies, maps, and neural network architectures. Understanding graph traversal"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Heaps and Tries

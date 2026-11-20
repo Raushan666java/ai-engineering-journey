@@ -4,6 +4,7 @@ slug: /java/09-spring-intro
 title: "Introduction to Spring & Spring Boot"
 sidebar_label: "Introduction to Spring & Spring Boot"
 sidebar_position: 9
+description: "Spring began in 2004 as a response to the complexity of Enterprise JavaBeans (EJB) 2.x. Rod Johnson's book 'Expert One-on-One J2EE Design and Development'"
 ---
 
 # Introduction to Spring & Spring Boot

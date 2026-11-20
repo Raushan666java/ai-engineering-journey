@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/13-ai-agents-langgraph/02-agent-architectures
 title: "Agent Architectures"
 sidebar_label: "Agent Architectures"
 sidebar_position: 177
+description: "Agent Architectures: AI agents autonomously use tools to complete tasks. LangGraph builds stateful, multi-step agent workflows. This module covers agent"
 ---
 
 <!-- improved -->

@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'Full fine-tuning changes every weight; LoRA/QLoRA nudges low-rank adapters — pick by data, cost and quality needs.'"
+---
+
 # Visual Notes — Choosing How to Adapt a Model
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

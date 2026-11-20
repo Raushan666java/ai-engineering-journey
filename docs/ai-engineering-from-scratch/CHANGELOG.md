@@ -1,3 +1,7 @@
+---
+description: "Format loosely follows Keep a Changelog. Each entry names the phase, lesson, and what changed, so learners can jump straight to the delta."
+---
+
 # Changelog
 
 What's new in the curriculum. Most recent first.

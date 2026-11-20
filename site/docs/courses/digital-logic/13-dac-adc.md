@@ -4,6 +4,7 @@ slug: /digital-logic/13-dac-adc
 title: "Chapter 13: Digital-to-Analog and Analog-to-Digital Converters"
 sidebar_label: "Chapter 13: Digital-to-Analog and Analog-to-Digital Converters"
 sidebar_position: 13
+description: "Chapter 13: Digital-to-Analog and Analog-to-Digital Converters: interface Task { id: string; name: string; status: string; data: unknown } private tasks"
 ---
 
 # Chapter 13: Digital-to-Analog and Analog-to-Digital Converters

@@ -4,6 +4,7 @@ slug: /devops/02-linux-basics
 title: "Chapter 2: Linux Basics for DevOps"
 sidebar_label: "Chapter 2: Linux Basics for DevOps"
 sidebar_position: 3
+description: "Understanding this hierarchy is crucial for DevOps work because logs live in /var/log, configs in /etc, and executables in /usr/bin. When writing"
 ---
 
 # Chapter 2: Linux Basics for DevOps

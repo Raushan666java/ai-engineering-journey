@@ -1,3 +1,7 @@
+---
+description: "Java was created by James Gosling, Mike Sheridan, and Patrick Naughton at Sun Microsystems in the early 1990s. The project, initially called Oak, was"
+---
+
 # Java Syntax & Fundamentals
 
 ## Learning Objectives

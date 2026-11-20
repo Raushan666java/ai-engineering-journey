@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/17-ai-security-guardrails/05-secret-and-key-mana
 title: "Secret and Key Management"
 sidebar_label: "Secret and Key Management"
 sidebar_position: 220
+description: "Secret and Key Management: AI systems face unique security threats. Prompt injection, data leakage, and content abuse require specialized defenses. This"
 ---
 
 <!-- improved -->

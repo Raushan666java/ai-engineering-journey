@@ -4,6 +4,7 @@ slug: /java/24-transactions
 title: "Transaction Management"
 sidebar_label: "Transaction Management"
 sidebar_position: 24
+description: "Transactions are the bedrock of reliable data processing. A transaction groups multiple operations into a single unit of work that either succeeds"
 ---
 
 # Transaction Management

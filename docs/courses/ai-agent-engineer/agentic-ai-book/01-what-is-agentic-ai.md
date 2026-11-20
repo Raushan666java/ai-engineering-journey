@@ -1,3 +1,7 @@
+---
+description: "An agent is a system where a language model doesn't just produce text — it decides what to do, does it using tools, looks at what happened, and decides"
+---
+
 # Part I — Foundations
 
 ## Chapter 1: What Is Agentic AI, Really

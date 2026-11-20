@@ -4,6 +4,7 @@ slug: /placement-preparation/05-placement-strategy
 title: "05 → Placement Season Strategy"
 sidebar_label: "05 → Placement Season Strategy"
 sidebar_position: 5
+description: "Placement season in Indian engineering colleges follows a predictable cycle tied to the academic calendar. For most colleges (IITs, NITs, IIITs, top"
 ---
 
 # 05 → Placement Season Strategy

@@ -4,6 +4,7 @@ slug: /discrete-mathematics/15-applications
 title: "Chapter 15: Applications of Discrete Mathematics"
 sidebar_label: "Chapter 15: Applications of Discrete Mathematics"
 sidebar_position: 15
+description: "Theorem 15.2 (Hall's Marriage Theorem). In a bipartite graph $(X, Y)$, there exists a matching covering all vertices of $X$ if and only if for every"
 ---
 
 # Chapter 15: Applications of Discrete Mathematics

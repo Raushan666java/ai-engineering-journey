@@ -4,6 +4,7 @@ slug: /mock-tests/05-ssc-cgl-tier1
 title: "SSC CGL Tier 1 — Full-Length Mock Test"
 sidebar_label: "SSC CGL Tier 1 — Full-Length Mock Test"
 sidebar_position: 5
+description: "Exam: Staff Selection Commission — Combined Graduate Level (SSC CGL) Tier 1 Total Questions: 100 | Duration: 60 minutes | Max Marks: 200 Negative Marking"
 ---
 
 # SSC CGL Tier 1 — Full-Length Mock Test

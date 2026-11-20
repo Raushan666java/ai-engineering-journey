@@ -1,3 +1,7 @@
+---
+description: "Semantic segmentation gives you one mask per class. Instance segmentation gives you one mask per object, even when two objects share a class. Counting"
+---
+
 # Instance Segmentation — Mask R-CNN
 
 > Add a tiny mask branch to a Faster R-CNN detector and you have instance segmentation. The hard part is RoIAlign, and it is harder than it looks.

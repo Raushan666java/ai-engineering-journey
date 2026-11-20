@@ -1,3 +1,7 @@
+---
+description: "One-Sentence Takeaway: Operator overloading extends C++ expression syntax to user-defined types while preserving the language's fixed precedence"
+---
+
 # Chapter 6: Operator Overloading
 
 > **Previous:** [Polymorphism](./05-polymorphism.md) | **Next:** [Templates](./07-templates.md)

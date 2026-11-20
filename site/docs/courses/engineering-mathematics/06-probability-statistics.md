@@ -4,6 +4,7 @@ slug: /engineering-mathematics/06-probability-statistics
 title: "Chapter 6: Probability & Statistics"
 sidebar_label: "Chapter 6: Probability & Statistics"
 sidebar_position: 6
+description: 'Type I Error: Reject $H_0$ when it''s true (probability = $ alpha$ ? significance level). Type II Error: Fail to reject $H_0$ when it''s false (probability'
 ---
 
 # Chapter 6: Probability & Statistics

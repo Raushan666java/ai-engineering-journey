@@ -1,3 +1,7 @@
+---
+description: "HTML5 introduced a set of landmark elements that replace the generic <div>-based document structure. These elements convey meaning about the content they"
+---
+
 # Chapter 1 → HTML5
 
 > **Next:** [02-css](./02-css.md)

@@ -1,3 +1,7 @@
+---
+description: "Fine-tuning adapts a pre-trained LLM to a specific domain, task, or behaviour by continuing training on curated data. In 2026, the fine-tuning ecosystem"
+---
+
 <!-- improved -->
 # Fine-Tuning Platforms & Tools
 

@@ -1,3 +1,7 @@
+---
+description: "Resume ATS Analyzer: Capstone projects prove you can build complete AI systems. From prediction APIs to enterprise RAG platforms, these projects"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Resume ATS Analyzer

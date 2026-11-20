@@ -1,3 +1,7 @@
+---
+description: "Model Post-Training for Agents: Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Model Post-Training for Agents

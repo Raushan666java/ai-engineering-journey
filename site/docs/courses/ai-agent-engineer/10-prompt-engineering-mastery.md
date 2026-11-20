@@ -4,6 +4,7 @@ slug: /ai-agent-engineer/10-prompt-engineering-mastery
 title: "Chapter 10 — Prompt Engineering Mastery"
 sidebar_label: "Chapter 10 — Prompt Engineering Mastery"
 sidebar_position: 11
+description: "Master advanced prompt patterns, structured output design, prompt management at scale, and injection defense. Move beyond copying prompts to designing"
 ---
 
 # Chapter 10 — Prompt Engineering Mastery

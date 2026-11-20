@@ -1,3 +1,7 @@
+---
+description: "CrewAI is a multi-agent orchestration framework for Python. It lets you define AI agents with specific roles, assign them tasks, and manage their"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # CrewAI: Multi-Agent Orchestration

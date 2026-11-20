@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Use parametrized logging (log.info('user {} logged in', userId)) instead of string concatenation — SLF4J evaluates the template only if the log"
+---
+
 # Logging, Error Handling & Internationalization
 
 > **Previous:** [Actuator, DevTools & Monitoring](./13-actuator-devtools.md) | **Next:** [REST API Development](./15-rest-api.md)

@@ -1,3 +1,7 @@
+---
+description: "Complete theory for every verbal section asked in ANY company aptitude round. Each section: rules → key insight → 3-5 worked examples → common trap. Then"
+---
+
 <!-- improved -->
 # Verbal Ability — All Sections Master Reference
 

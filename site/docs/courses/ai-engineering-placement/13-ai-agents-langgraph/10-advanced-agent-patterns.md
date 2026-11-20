@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/13-ai-agents-langgraph/10-advanced-agent-pattern
 title: "Advanced Agent Patterns"
 sidebar_label: "Advanced Agent Patterns"
 sidebar_position: 185
+description: "Advanced Agent Patterns: AI agents autonomously use tools to complete tasks. LangGraph builds stateful, multi-step agent workflows. This module covers"
 ---
 
 <!-- improved -->

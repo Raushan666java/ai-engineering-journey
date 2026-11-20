@@ -1,3 +1,7 @@
+---
+description: "The marketing environment consists of all actors and forces outside marketing that affect the marketing management's ability to build and maintain"
+---
+
 # Chapter 1: Marketing Concepts
 
 ## Learning Objectives

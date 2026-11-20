@@ -1,3 +1,7 @@
+---
+description: "Namenode (NN): The single master. Stores the filesystem tree and metadata for all files and directories (inode ? block list mapping). Acts as the"
+---
+
 # Chapter 2: Hadoop ? HDFS, MapReduce & YARN
 
 > **Previous:** [Chapter 1: Introduction to Big Data](./01-introduction.md) | **Next:** [Chapter 3: Apache Spark Basics](./03-spark-basics.md)

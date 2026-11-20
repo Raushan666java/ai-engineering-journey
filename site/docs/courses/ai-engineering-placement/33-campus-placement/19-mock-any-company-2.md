@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/19-mock-any-company-2
 title: "Mock Test — Any Company #2 (Generic Pattern, 40 Questions)"
 sidebar_label: "Mock Test — Any Company #2 (Generic Pattern, 40 Questions)"
 sidebar_position: 380
+description: "Company-neutral aptitude simulation: 16 quant, 12 logical, 12 verbal. Time: 60 minutes. Rule: 60-90 seconds per question. Answers at the bottom — no"
 ---
 
 <!-- improved -->

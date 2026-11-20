@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/23-trending-aiml-platforms/02-agent-platforms-ha
 title: "Agent Platforms — Harness & Orchestration"
 sidebar_label: "Agent Platforms — Harness & Orchestration"
 sidebar_position: 290
+description: "Agent Platforms — Harness & Orchestration: The AI landscape evolves fast. New LLM providers, agent platforms, and developer toolkits emerge monthly. This"
 ---
 
 <!-- improved -->

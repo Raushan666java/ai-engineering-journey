@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/28-certifications/visual-notes
 title: "Visual Notes — Mapping Certs to Direction"
 sidebar_label: "Visual Notes"
 sidebar_position: 338
+description: "Visual Notes — Mapping Certs to Direction: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again"
 ---
 
 # Visual Notes — Mapping Certs to Direction

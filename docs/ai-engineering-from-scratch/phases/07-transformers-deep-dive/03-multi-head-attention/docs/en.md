@@ -1,3 +1,7 @@
+---
+description: "A single self-attention head computes one attention matrix. That matrix captures one kind of relationship — usually the one that minimizes loss on"
+---
+
 # Multi-Head Attention
 
 > One attention head learns one relation at a time. Eight heads learn eight. Heads are free. Take more of them.

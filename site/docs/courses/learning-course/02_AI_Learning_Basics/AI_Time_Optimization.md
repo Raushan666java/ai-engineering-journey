@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/02_AI_Learning_Basics/AI_Time_Optimization title: '⏰ AI-Optimized Time Management' sidebar_label: '⏰ AI-Optimized Time Management'"
+---
+
 ﻿---
 slug: /learning-course/02_AI_Learning_Basics/AI_Time_Optimization
 title: "⏰ AI-Optimized Time Management"

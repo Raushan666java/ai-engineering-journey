@@ -4,6 +4,7 @@ slug: /laravel/39-interview-healthcare
 title: "Chapter 39: Healthcare Interview Q&A"
 sidebar_label: "Chapter 39: Healthcare Interview Q&A"
 sidebar_position: 39
+description: "PHI fields are encrypted at the Laravel layer using accessor mutators so the database stores only ciphertext. Controllers enforce authorization via Gates"
 ---
 
 # Chapter 39: Healthcare Interview Q&A

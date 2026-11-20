@@ -1,3 +1,7 @@
+---
+description: "Phase 13: Tools & Protocols"
+---
+
 # Phase 13: Tools & Protocols
 
 > The interfaces between AI and the real world.

@@ -4,6 +4,7 @@ slug: /loop-engineering/ch02-agent-loop-architecture
 title: "Chapter 2: Agent Loop Architecture"
 sidebar_label: "Chapter 2: Agent Loop Architecture"
 sidebar_position: 2
+description: "Chapter 1 taught you that every agent is a feedback loop. But what kind of loop? The ReAct pattern (Thought → Action → Observation) is the most famous"
 ---
 
 # Chapter 2: Agent Loop Architecture

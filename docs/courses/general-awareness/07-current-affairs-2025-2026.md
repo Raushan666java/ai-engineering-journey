@@ -1,3 +1,7 @@
+---
+description: "The Union Budget is presented on 1 February every year (changed from the traditional 28 February by the Modi government in 2017). The 2025-26 budget was"
+---
+
 # Chapter 7: Current Affairs 2025–2026
 
 ## Learning Objectives

@@ -1,3 +1,7 @@
+---
+description: "A pretrained diffusion model generates anything you describe in text. A personalized one generates your cat, in your living room, wearing a top hat, at"
+---
+
 # Personalization — DreamBooth, Textual Inversion, LoRA
 
 > A pretrained diffusion model generates anything you describe in text. A personalized one generates *your cat, in your living room, wearing a top hat, at any angle.* The problem isn't teaching the model photography — it's teaching it one specific subject without forgetting everything it already knows.

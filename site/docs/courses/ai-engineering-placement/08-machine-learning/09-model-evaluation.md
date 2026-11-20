@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/08-machine-learning/09-model-evaluation
 title: "Model Evaluation — Cross-Validation, ROC-AUC, Confusion Matrix, Metrics"
 sidebar_label: "Model Evaluation — Cross-Validation, ROC-AUC, Confusion Matrix, Metrics"
 sidebar_position: 120
+description: "Model Evaluation — Cross-Validation, ROC-AUC, Confusion Matrix, Metrics: Machine learning is the core of AI engineering. From linear regression to"
 ---
 
 <!-- improved -->

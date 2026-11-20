@@ -1,3 +1,7 @@
+---
+description: "ASR asks 'what did they say?' Speaker recognition asks 'who said it?' The math looks the same — embeddings plus cosine — but every production decision"
+---
+
 # Speaker Recognition & Verification
 
 > ASR asks "what did they say?" Speaker recognition asks "who said it?" The math looks the same — embeddings plus cosine — but every production decision hinges on a single EER number.

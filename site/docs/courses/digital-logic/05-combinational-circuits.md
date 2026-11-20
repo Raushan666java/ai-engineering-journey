@@ -4,6 +4,7 @@ slug: /digital-logic/05-combinational-circuits
 title: "Chapter 5: Combinational Circuits"
 sidebar_label: "Chapter 5: Combinational Circuits"
 sidebar_position: 5
+description: "A combinational circuit is a digital circuit whose output depends only on the present combination of inputs ? it has no memory, no feedback path, and no"
 ---
 
 # Chapter 5: Combinational Circuits

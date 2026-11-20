@@ -1,3 +1,7 @@
+---
+description: "The 2023 SAM was a visual-prompt-only model: you click a point or draw a box and it returns a mask. For 'give me all the oranges in this photo' you needed"
+---
+
 # SAM 3 & Open-Vocabulary Segmentation
 
 > Give a model a text prompt and an image and get masks for every matching object. SAM 3 made that a single forward pass.

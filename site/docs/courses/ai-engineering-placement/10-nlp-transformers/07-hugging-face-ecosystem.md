@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/10-nlp-transformers/07-hugging-face-ecosystem
 title: "Hugging Face Ecosystem — Transformers, Pipelines, Datasets, Tokenizers"
 sidebar_label: "Hugging Face Ecosystem — Transformers, Pipelines, Datasets, Tokenizers"
 sidebar_position: 144
+description: "Hugging Face Ecosystem — Transformers, Pipelines, Datasets, Tokenizers: Natural language processing is how machines understand human text. Transformers"
 ---
 
 <!-- improved -->

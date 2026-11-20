@@ -1,3 +1,7 @@
+---
+description: "Labels are the bottleneck of supervised vision. Self-supervised pretraining removes them: learn visual features from 100M unlabelled images, fine-tune on"
+---
+
 # Self-Supervised Vision — SimCLR, DINO, MAE
 
 > Labels are the bottleneck of supervised vision. Self-supervised pretraining removes them: learn visual features from 100M unlabelled images, fine-tune on 10k labelled ones.

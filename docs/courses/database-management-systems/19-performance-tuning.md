@@ -1,3 +1,7 @@
+---
+description: "EXPLAIN is like a car's OBD-II diagnostic scanner. The mechanic connects the scanner, runs the engine, and reads the diagnostic trouble codes: 'Cylinder 3"
+---
+
 # Chapter 19: Performance Tuning
 
 > **Prev:** [Chapter 18: Database Security](18-security.md) | **Next:** *(Last Chapter)*

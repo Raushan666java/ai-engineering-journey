@@ -1,3 +1,7 @@
+---
+description: "Database with SQLAlchemy — ORM, Migrations, and Repository Pattern: FastAPI is the modern Python framework for building AI APIs. Its async support"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Database with SQLAlchemy — ORM, Migrations, and Repository Pattern

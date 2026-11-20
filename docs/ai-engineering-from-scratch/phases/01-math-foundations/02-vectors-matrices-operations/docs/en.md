@@ -1,3 +1,7 @@
+---
+description: "That @ is matrix multiplication. The weights are a matrix. The input is a vector. If you do not know what those operations do, this line is magic. If you"
+---
+
 # Vectors, Matrices & Operations
 
 > Every neural network is just matrix multiplication with extra steps.

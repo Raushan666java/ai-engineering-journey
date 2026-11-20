@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/09-deep-learning-pytorch/09-model-deployment
 title: "Model Deployment — TorchScript, ONNX, TorchServe, Quantization, Pruning"
 sidebar_label: "Model Deployment — TorchScript, ONNX, TorchServe, Quantization, Pruning"
 sidebar_position: 134
+description: "Model Deployment — TorchScript, ONNX, TorchServe, Quantization, Pruning: Deep learning powers modern AI breakthroughs. PyTorch is the framework of choice"
 ---
 
 <!-- improved -->

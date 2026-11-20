@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/13-ai-agents-langgraph/03-langgraph-basics
 title: "LangGraph Basics"
 sidebar_label: "LangGraph Basics"
 sidebar_position: 178
+description: "LangGraph Basics: AI agents autonomously use tools to complete tasks. LangGraph builds stateful, multi-step agent workflows. This module covers agent"
 ---
 
 <!-- improved -->

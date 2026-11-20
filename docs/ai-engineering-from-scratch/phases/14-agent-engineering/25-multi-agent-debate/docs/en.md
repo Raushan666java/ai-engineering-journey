@@ -1,3 +1,7 @@
+---
+description: "Du et al. (ICML 2024, 'Society of Minds') run N model instances that independently propose answers, then iteratively critique each other over R rounds to"
+---
+
 # Multi-Agent Debate and Collaboration
 
 > Du et al. (ICML 2024, "Society of Minds") run N model instances that independently propose answers, then iteratively critique each other over R rounds to converge. Improves factuality, rule-following, reasoning. Sparse topology beats full mesh on token cost.

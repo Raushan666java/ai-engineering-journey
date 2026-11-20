@@ -4,6 +4,7 @@ slug: /digital-marketing/11-launch-and-go-to-market
 title: "Chapter 11 — Launch and Go-to-Market"
 sidebar_label: "Chapter 11 — Launch and Go-to-Market"
 sidebar_position: 11
+description: "For a service business — contract work, consulting, a productised retainer — there is no launch. There is a steady pipeline, and the work is the channel"
 ---
 
 # Chapter 11 — Launch and Go-to-Market

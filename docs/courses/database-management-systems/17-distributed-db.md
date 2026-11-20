@@ -1,3 +1,7 @@
+---
+description: "Imagine a retail chain with stores in New York, London, and Tokyo. Each store has its own local inventory database containing products specific to that"
+---
+
 # Chapter 17: Distributed Database Systems
 
 > **Prev:** [Chapter 16 → Redis](16-redis.md) | **Next:** [Chapter 18 → Security](18-security.md)

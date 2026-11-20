@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to answer the 60+ most common HR interview questions using the STAR framework, handle the introduction and career"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # HR Interview Questions Bank

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/04-git-linux-cli/03-git-workflow
 title: "Advanced Git"
 sidebar_label: "Advanced Git"
 sidebar_position: 60
+description: "Advanced Git operations — stash, cherry-pick, bisect, reflog — give you powerful tools for managing complex workflows. These skills are essential for"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/17-ai-security-guardrails/04-guardrails-framewor
 title: "Guardrails Frameworks"
 sidebar_label: "Guardrails Frameworks"
 sidebar_position: 219
+description: "Guardrails Frameworks: AI systems face unique security threats. Prompt injection, data leakage, and content abuse require specialized defenses. This"
 ---
 
 <!-- improved -->

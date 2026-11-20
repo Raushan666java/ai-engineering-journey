@@ -4,6 +4,7 @@ slug: /devops/09-continuous-delivery
 title: "Chapter 9: Continuous Delivery"
 sidebar_label: "Chapter 9: Continuous Delivery"
 sidebar_position: 16
+description: "Advantages: Instant switch, immediate rollback (switch back), full environment separation. Disadvantages: Double infrastructure cost, database"
 ---
 
 # Chapter 9: Continuous Delivery

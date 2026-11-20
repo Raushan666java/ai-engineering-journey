@@ -4,6 +4,7 @@ slug: /java/62-interview-testing
 title: "Testing Interview Q&A"
 sidebar_label: "Testing Interview Q&A"
 sidebar_position: 70
+description: "This chapter covers everything you need to know about testing Java and Spring Boot applications for technical interviews. From the testing pyramid and"
 ---
 
 # Testing Interview Q&A

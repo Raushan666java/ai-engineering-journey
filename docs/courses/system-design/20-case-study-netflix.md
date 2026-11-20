@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Netflix streams over 100 million hours of content daily"
+---
+
 # Chapter 20: Case Study — Netflix and Video Streaming
 > **Previous:** [19 Case Study Whatsapp](./19-case-study-whatsapp.md) | **Next:** [21 Case Study Uber](./21-case-study-uber.md)
 

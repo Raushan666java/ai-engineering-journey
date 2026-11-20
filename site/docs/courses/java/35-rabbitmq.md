@@ -4,6 +4,7 @@ slug: /java/35-rabbitmq
 title: "RabbitMQ"
 sidebar_label: "RabbitMQ"
 sidebar_position: 35
+description: "A message queue (e.g., ActiveMQ, SQS) stores messages in named queues; producers send directly to a queue. An AMQP message broker adds an exchange layer —"
 ---
 
 # RabbitMQ

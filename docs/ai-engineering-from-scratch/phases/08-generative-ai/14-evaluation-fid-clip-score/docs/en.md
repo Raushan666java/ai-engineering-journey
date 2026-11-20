@@ -1,3 +1,7 @@
+---
+description: "Every generative model leaderboard cites FID, CLIP score, and a win rate from a human-preference arena. Each number has a failure mode a determined"
+---
+
 # Evaluation — FID, CLIP Score, Human Preference
 
 > Every generative model leaderboard cites FID, CLIP score, and a win rate from a human-preference arena. Each number has a failure mode a determined researcher can game. If you do not know the failure modes, you cannot tell a real improvement from a gaming run.

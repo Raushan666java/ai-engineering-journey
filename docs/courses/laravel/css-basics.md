@@ -1,3 +1,7 @@
+---
+description: "The cascade resolves conflicts by: (1) origin and importance, (2) specificity, (3) order. Inheritance passes certain property values from parent to child"
+---
+
 # CSS Fundamentals
 
 ## Learning Objectives

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design/05-database-scaling
 title: "Database Scaling — Replication, Sharding, and Indexing"
 sidebar_label: "Database Scaling — Replication, Sharding, and Indexing"
 sidebar_position: 100
+description: "Database Scaling — Replication, Sharding, and Indexing: System design interviews test your ability to architect large-scale systems. Caching, load"
 ---
 
 <!-- improved -->

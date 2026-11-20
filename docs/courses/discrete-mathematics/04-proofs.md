@@ -1,3 +1,7 @@
+---
+description: 'The contrapositive of $P implies Q$ is $ neg Q implies neg P$. Since they are logically equivalent, proving the contrapositive proves the original'
+---
+
 # Chapter 4: Proof Techniques
 
 > **Previous:** [Chapter 3: Predicates and Quantifiers](03-predicates.md) | **Next:** [Chapter 5: Combinatorics](05-combinatorics.md)

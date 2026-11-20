@@ -4,6 +4,7 @@ slug: /algorithms/06-greedy
 title: "Chapter 6: Greedy Algorithms"
 sidebar_label: "Chapter 6: Greedy Algorithms"
 sidebar_position: 6
+description: "Imagine you are packing a suitcase for a trip. You have limited space, and you want to carry the most valuable combination of items. One natural approach"
 ---
 
 # Chapter 6: Greedy Algorithms

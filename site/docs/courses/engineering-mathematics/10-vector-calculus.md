@@ -4,6 +4,7 @@ slug: /engineering-mathematics/10-vector-calculus
 title: "Chapter 10: Vector Calculus & Applications"
 sidebar_label: "Chapter 10: Vector Calculus & Applications"
 sidebar_position: 10
+description: 'Gradient of Scalar Field: $ nabla f = left langle frac{ partial f}{ partial x}, frac{ partial f}{ partial y}, frac{ partial f}{ partial z}'
 ---
 
 # Chapter 10: Vector Calculus & Applications

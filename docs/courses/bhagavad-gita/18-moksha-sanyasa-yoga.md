@@ -1,3 +1,7 @@
+---
+description: "Seventeen chapters have been spoken. The bow has been strung, the question asked, the mirror held, the faith classified — and now, in the eighteenth"
+---
+
 # Chapter 18: Moksha Sanyasa Yoga — Drop the doer, keep the work, and freedom finds you
 
 > "The Gita does not end with a theory. It ends with a bow: do your duty, drop your doer, and let the whole move through you."

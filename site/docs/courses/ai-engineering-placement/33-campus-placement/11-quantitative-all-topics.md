@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/33-campus-placement/11-quantitative-all-topics
 title: "Quantitative Aptitude — All Topics Master Reference"
 sidebar_label: "Quantitative Aptitude — All Topics Master Reference"
 sidebar_position: 372
+description: "Complete theory for every quant topic asked in ANY company aptitude round. Each topic: formula box → key insight → 3-5 worked examples → common trap"
 ---
 
 <!-- improved -->

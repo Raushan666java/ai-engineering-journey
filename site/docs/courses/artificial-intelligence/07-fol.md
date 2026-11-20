@@ -4,6 +4,7 @@ slug: /artificial-intelligence/07-fol
 title: "Chapter 7: First-Order Logic and Inference"
 sidebar_label: "Chapter 7: First-Order Logic and Inference"
 sidebar_position: 12
+description: "Real-World Analogy (Contract Law): Propositional Logic is like a checklist of facts — 'It is raining,' 'The contract was signed.' But contracts are far"
 ---
 
 # Chapter 7: First-Order Logic and Inference

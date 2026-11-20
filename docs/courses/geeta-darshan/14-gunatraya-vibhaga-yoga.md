@@ -1,3 +1,7 @@
+---
+description: "'Sattva, rajas, tamas — yeh teen gunas tumhari psychology ka map hain. Is map ko samajh lo, to tum samajh jaoge ki tumhara man kab roshni ka hai, kab aag"
+---
+
 # अध्याय १४: गुणत्रय विभाग योग — "Teen gunas — tumhari psychology ka map"
 
 > **"Sattva, rajas, tamas — yeh teen gunas tumhari psychology ka map hain. Is map ko samajh lo, to tum samajh jaoge ki tumhara man kab roshni ka hai, kab aag ka, kab andhera ka. Aur in teeno ko witness karna hi gunatita hona hai."**

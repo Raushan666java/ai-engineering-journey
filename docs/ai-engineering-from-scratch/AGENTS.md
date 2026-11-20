@@ -1,3 +1,7 @@
+---
+description: "435 lessons. 20 phases. Every algorithm built from raw math before a single framework gets imported. You write backprop, the tokenizer, the attention"
+---
+
 # AGENTS.md
 
 Operating manual for contributors and AI agents touching this repo. Read it before opening a PR.

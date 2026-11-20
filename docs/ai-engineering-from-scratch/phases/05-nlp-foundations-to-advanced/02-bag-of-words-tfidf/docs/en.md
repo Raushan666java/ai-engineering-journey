@@ -1,3 +1,7 @@
+---
+description: "Every NLP pipeline has to answer the same question. How do we turn a variable-length stream of tokens into a fixed-size vector that a classifier can"
+---
+
 # Bag of Words, TF-IDF, and Text Representation
 
 > Count first, think later. TF-IDF still beats embeddings on well-defined tasks in 2026.

@@ -4,6 +4,7 @@ slug: /mock-tests/06-gate-cs-mock
 title: "GATE CS — Full-Length Mock Test"
 sidebar_label: "GATE CS — Full-Length Mock Test"
 sidebar_position: 6
+description: "Exam: Graduate Aptitude Test in Engineering — Computer Science (GATE CS) Total Questions: 65 | Duration: 180 minutes | Max Marks: 100 Negative Marking"
 ---
 
 # GATE CS — Full-Length Mock Test

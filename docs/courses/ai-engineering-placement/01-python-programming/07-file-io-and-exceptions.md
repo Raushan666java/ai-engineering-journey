@@ -1,3 +1,7 @@
+---
+description: "File I/O & Exceptions — Reading, Writing, Error Handling: Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # File I/O & Exceptions — Reading, Writing, Error Handling

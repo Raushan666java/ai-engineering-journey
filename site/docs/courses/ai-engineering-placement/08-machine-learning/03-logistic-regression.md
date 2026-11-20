@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/08-machine-learning/03-logistic-regression
 title: "Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass"
 sidebar_label: "Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass"
 sidebar_position: 114
+description: "Logistic Regression - Sigmoid, Cross-Entropy, Multiclass: Machine learning is the core of AI engineering. From linear regression to ensemble methods"
 ---
 
 <!-- improved -->

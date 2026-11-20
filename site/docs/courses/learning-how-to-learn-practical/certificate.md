@@ -4,6 +4,7 @@ slug: /learning-how-to-learn-practical/certificate
 title: "Certificate of Completion"
 sidebar_label: "Certificate of Completion"
 sidebar_position: 1
+description: "energy management, SQ3R, deliberate practice, spiral learning, interview preparation,<br> progress tracking, teaching techniques, and integrated learning"
 ---
 
 # Certificate of Completion

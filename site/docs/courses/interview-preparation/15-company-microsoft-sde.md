@@ -4,6 +4,7 @@ slug: /interview-preparation/15-company-microsoft-sde
 title: "Chapter 15: Microsoft SDE — Company-Specific Question Bank"
 sidebar_label: "Chapter 15: Microsoft SDE — Company-Specific Question Bank"
 sidebar_position: 15
+description: "Why this works: The LCA is the first node where p and q are found in different subtrees (or one is the node itself). The recursion propagates found nodes"
 ---
 
 # Chapter 15: Microsoft SDE — Company-Specific Question Bank

@@ -4,6 +4,7 @@ slug: /operating-systems/18-case-studies
 title: "Chapter 18: Case Studies in Operating Systems"
 sidebar_label: "Chapter 18: Case Studies in Operating Systems"
 sidebar_position: 18
+description: "A[Windows NT] --> B[Linux Kernel] D --> G[RTOS: FreeRTOS / VxWorks] G --> H[Minix & seL4 Microkernels] H --> I[OS Comparison Tables] I --> J[Interview"
 ---
 
 # Chapter 18: Case Studies in Operating Systems

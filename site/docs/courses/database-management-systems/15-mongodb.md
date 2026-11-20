@@ -4,6 +4,7 @@ slug: /database-management-systems/15-mongodb
 title: "Chapter 15: MongoDB"
 sidebar_label: "Chapter 15: MongoDB"
 sidebar_position: 15
+description: "MongoDB is a document-oriented NoSQL database released in 2009 by MongoDB Inc. (originally 10gen). It stores data as BSON (Binary JSON) documents in"
 ---
 
 # Chapter 15: MongoDB

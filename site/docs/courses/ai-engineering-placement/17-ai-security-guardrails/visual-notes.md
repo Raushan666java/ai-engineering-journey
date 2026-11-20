@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/17-ai-security-guardrails/visual-notes
 title: "Visual Notes — Defense-in-Depth for AI"
 sidebar_label: "Visual Notes"
 sidebar_position: 227
+description: "One-line answer for interviews: 'Filter inputs → defend against injection → validate outputs → strip PII → log everything for audit.'"
 ---
 
 # Visual Notes — Defense-in-Depth for AI

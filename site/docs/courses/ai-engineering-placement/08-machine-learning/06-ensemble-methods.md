@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/08-machine-learning/06-ensemble-methods
 title: "Ensemble Methods — Boosting, AdaBoost, Gradient Boosting, XGBoost"
 sidebar_label: "Ensemble Methods — Boosting, AdaBoost, Gradient Boosting, XGBoost"
 sidebar_position: 117
+description: "Ensemble Methods — Boosting, AdaBoost, Gradient Boosting, XGBoost: Machine learning is the core of AI engineering. From linear regression to ensemble"
 ---
 
 <!-- improved -->

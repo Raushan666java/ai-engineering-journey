@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/07-system-design/11-design-chatgpt
 title: "Design ChatGPT — Streaming, Context Window, Prompt Caching"
 sidebar_label: "Design ChatGPT — Streaming, Context Window, Prompt Caching"
 sidebar_position: 106
+description: "Design ChatGPT — Streaming, Context Window, Prompt Caching: System design interviews test your ability to architect large-scale systems. Caching, load"
 ---
 
 <!-- improved -->

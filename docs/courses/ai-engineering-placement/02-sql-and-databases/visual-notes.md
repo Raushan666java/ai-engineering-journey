@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'SQL reads in logical order — not written order — and every performance question starts with the execution plan.'"
+---
+
 # Visual Notes — SQL & Databases
 
 > One diagram, the full picture. Glance at this before reading the chapters and again before interviews.

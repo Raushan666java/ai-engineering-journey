@@ -1,3 +1,7 @@
+---
+description: "NLP Applications — Text Classification, NER, QA, Summarization, Translation: Natural language processing is how machines understand human text"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # NLP Applications — Text Classification, NER, QA, Summarization, Translation

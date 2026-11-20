@@ -1,3 +1,7 @@
+---
+description: "Feature engineering transforms raw data into representations that improve machine learning model performance. It is often the difference between a good"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Feature Engineering — Imputation, Encoding, Scaling, Feature Construction, Feature Selection

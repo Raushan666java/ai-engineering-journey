@@ -3,6 +3,7 @@ slug: /learning-course/01_AI_Setup/AI_Learning_Apps
 title: "📱 AI-Integrated Learning Apps - 10 Minutes"
 sidebar_label: "📱 AI-Integrated Learning Apps - 10 Minutes"
 sidebar_position: 1
+description: "📱 AI-Integrated Learning Apps - 10 Minutes — learning course"
 ---
 # 📱 AI-Integrated Learning Apps - 10 Minutes
 

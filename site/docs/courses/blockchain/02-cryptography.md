@@ -4,6 +4,7 @@ slug: /blockchain/02-cryptography
 title: "Chapter 2: Cryptography for Blockchain"
 sidebar_label: "Chapter 2: Cryptography for Blockchain"
 sidebar_position: 2
+description: "SHA-256 (Secure Hash Algorithm 256-bit) is the primary hash function used in Bitcoin and many other blockchains. It belongs to the SHA-2 family and"
 ---
 
 # Chapter 2: Cryptography for Blockchain

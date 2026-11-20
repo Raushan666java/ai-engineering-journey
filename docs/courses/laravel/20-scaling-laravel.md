@@ -1,3 +1,7 @@
+---
+description: "Horizontal scaling adds more application servers rather than making a single server larger. Laravel applications must be designed as stateless"
+---
+
 # Chapter 20: Scaling Laravel
 
 ---

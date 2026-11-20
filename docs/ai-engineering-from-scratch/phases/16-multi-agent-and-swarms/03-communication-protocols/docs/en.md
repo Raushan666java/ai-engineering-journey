@@ -1,3 +1,7 @@
+---
+description: "You split your system into multiple agents. A researcher, a coder, a reviewer. They're great at their individual jobs. But now you need them to actually"
+---
+
 # Communication Protocols
 
 > Agents that can't speak the same language aren't a team. They're strangers shouting into the void.

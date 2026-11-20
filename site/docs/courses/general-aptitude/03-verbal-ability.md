@@ -4,6 +4,7 @@ slug: /general-aptitude/03-verbal-ability
 title: "Chapter 3: Verbal Ability"
 sidebar_label: "Chapter 3: Verbal Ability"
 sidebar_position: 3
+description: "Arrange: P: However, this trend is slowly changing. Q: Traditionally, engineering was considered a male-dominated field. R: More women are now pursuing"
 ---
 
 # Chapter 3: Verbal Ability

@@ -4,6 +4,7 @@ slug: /bhagavad-gita/05-karma-sanyasa-yoga
 title: "Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action"
 sidebar_label: "Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action"
 sidebar_position: 5
+description: "Arjuna is confused, and his confusion is beautiful. Just moments ago, Krishna praised action; now he speaks of renunciation. Two opposites, and Arjuna has"
 ---
 
 # Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action

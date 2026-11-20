@@ -1,3 +1,7 @@
+---
+description: "A transaction is a logical unit of work that accesses and possibly modifies the database. It is a sequence of operations (reads and writes) that forms a"
+---
+
 # Chapter 9: Transactions
 
 > **Previous:** [Chapter 8: Higher Normal Forms and Denormalization](./08-higher-nf.md) | **Next:** [Chapter 10: Concurrency Control](./10-concurrency.md)

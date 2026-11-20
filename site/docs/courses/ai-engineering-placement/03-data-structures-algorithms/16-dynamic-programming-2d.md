@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/03-data-structures-algorithms/16-dynamic-program
 title: "Dynamic Programming 2D"
 sidebar_label: "Dynamic Programming 2D"
 sidebar_position: 53
+description: "Sliding window is a powerful technique for solving subarray/substring problems in O(n) time. It maintains a window over the data and slides it to find"
 ---
 
 <!-- improved -->

@@ -4,6 +4,7 @@ slug: /java/02-concurrency
 title: "Multithreading & Concurrency"
 sidebar_label: "Multithreading & Concurrency"
 sidebar_position: 2
+description: "Concurrency is one of the most challenging topics in Java. This chapter covers the entire concurrency landscape — from the low-level Thread API and"
 ---
 
 # Multithreading & Concurrency

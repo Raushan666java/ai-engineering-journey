@@ -4,6 +4,7 @@ slug: /java/p4-exceptions-io
 title: "Exception Handling & I/O"
 sidebar_label: "Exception Handling & I/O"
 sidebar_position: 79
+description: "Write a program that reads two integers from the user and divides them. Handle ArithmeticException, InputMismatchException, and any other checked"
 ---
 
 # Exception Handling & I/O

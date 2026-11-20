@@ -1,3 +1,7 @@
+---
+description: "After this chapter you will be able to describe the exact selection process of TCS (NQT), Infosys (SP), Wipro (NLTH), Capgemini, Accenture, and Cognizant"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Company Test Patterns (TCS, Infosys, Wipro, Capgemini, Accenture, Cognizant)

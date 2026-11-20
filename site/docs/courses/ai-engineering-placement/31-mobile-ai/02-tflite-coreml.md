@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/31-mobile-ai/02-tflite-coreml
 title: "02 — TensorFlow Lite & CoreML"
 sidebar_label: "02 — TensorFlow Lite & CoreML"
 sidebar_position: 352
+description: "Mobile AI is transforming how users interact with intelligent applications. Running models on-device eliminates latency, preserves privacy, and enables"
 ---
 
 <!-- improved -->

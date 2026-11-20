@@ -4,6 +4,7 @@ slug: /modern-ai-engineering/07-fine-tuning
 title: "Chapter 7: Fine-Tuning"
 sidebar_label: "Chapter 7: Fine-Tuning"
 sidebar_position: 7
+description: "By the end of this chapter, you will be able to: - Decide when fine-tuning is appropriate versus prompting or RAG - Differentiate full fine-tuning from"
 ---
 
 # Chapter 7: Fine-Tuning

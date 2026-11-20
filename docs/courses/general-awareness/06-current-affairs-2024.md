@@ -1,3 +1,7 @@
+---
+description: "India defeated South Africa in the final at Bridgetown, Barbados on 29 June 2024 to win the ICC T20 World Cup after 11 years (since 2013 Champions"
+---
+
 # Chapter 6: Current Affairs 2024
 
 ## Learning Objectives

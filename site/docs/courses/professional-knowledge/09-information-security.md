@@ -4,6 +4,7 @@ slug: /professional-knowledge/09-information-security
 title: "Chapter 9: Information Security — Exam Quick Revision"
 sidebar_label: "Chapter 9: Information Security — Exam Quick Revision"
 sidebar_position: 9
+description: "Answer: (a) A1 — Broken Access Control. This moved to the top spot in 2021, covering issues like privilege escalation, missing access controls, and path"
 ---
 
 # Chapter 9: Information Security — Exam Quick Revision

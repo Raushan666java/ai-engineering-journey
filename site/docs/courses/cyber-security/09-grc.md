@@ -4,6 +4,7 @@ slug: /cyber-security/09-grc
 title: "Chapter 9: Governance, Risk & Compliance (GRC)"
 sidebar_label: "Chapter 9: Governance, Risk & Compliance (GRC)"
 sidebar_position: 8
+description: "Prereq: Chapter 8 (Forensics & IR) → incident findings feed into risk assessments and compliance reporting. Reading Time: 4–5 hours | Level"
 ---
 
 # Chapter 9: Governance, Risk & Compliance (GRC)

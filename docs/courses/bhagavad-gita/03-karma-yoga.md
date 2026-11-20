@@ -1,3 +1,7 @@
+---
+description: "Chapter 2 ended with the portrait of the sthitaprajna, the man of steady wisdom. Arjuna has heard the whole theory of the immortal self and the even mind"
+---
+
 # Chapter 3: Karma Yoga — Action Without Attachment
 
 > "The world is bound by action, except when action is performed as sacrifice."

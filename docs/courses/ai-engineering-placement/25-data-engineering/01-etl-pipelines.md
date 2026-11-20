@@ -1,3 +1,7 @@
+---
+description: "ETL (Extract, Transform, Load) is the process of moving data from source systems to a target database or data warehouse. Every AI engineer must understand"
+---
+
 <!-- improved -->
 # 01 — ETL & Data Pipelines
 

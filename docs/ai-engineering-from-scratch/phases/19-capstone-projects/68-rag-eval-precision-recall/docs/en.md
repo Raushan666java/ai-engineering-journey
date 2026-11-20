@@ -1,3 +1,7 @@
+---
+description: "If you cannot grade your retrieval and your answer at the same time, you cannot ship the system. The two are not the same metric and the same prompt fails"
+---
+
 # RAG Evaluation: Precision, Recall, MRR, nDCG, Faithfulness, Answer Relevance
 
 > If you cannot grade your retrieval and your answer at the same time, you cannot ship the system. The two are not the same metric and the same prompt fails on different axes.

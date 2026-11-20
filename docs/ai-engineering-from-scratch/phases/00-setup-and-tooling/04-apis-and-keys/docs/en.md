@@ -1,3 +1,7 @@
+---
+description: "Starting from Phase 11, you'll call LLM APIs (Anthropic, OpenAI, Google). In Phase 13-16 you'll build agents that use these APIs in loops. You need to"
+---
+
 # APIs & Keys
 
 > Every AI API works the same way: send a request, get a response. The details change, the pattern doesn't.

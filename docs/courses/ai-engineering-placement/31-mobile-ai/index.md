@@ -1,3 +1,7 @@
+---
+description: "On-device and mobile AI: prompting from React Native, small models, latency and privacy constraints."
+---
+
 # 31 — Mobile AI & Edge Deployment
 
 ## Overview

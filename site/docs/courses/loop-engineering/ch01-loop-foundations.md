@@ -4,6 +4,7 @@ slug: /loop-engineering/ch01-loop-foundations
 title: "Chapter 1: Loop Foundations"
 sidebar_label: "Chapter 1: Loop Foundations"
 sidebar_position: 1
+description: "All intelligent behavior — biological, mechanical, or artificial — emerges from loops. A thermostat loops over temperature readings and adjusts a heater"
 ---
 
 # Chapter 1: Loop Foundations

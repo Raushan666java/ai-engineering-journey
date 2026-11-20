@@ -1,3 +1,7 @@
+---
+description: "You trained a model on your laptop with PyTorch 2.3, CUDA 12.4, and Python 3.12. Your colleague has PyTorch 2.1, CUDA 11.8, and Python 3.10. Your model"
+---
+
 # Docker for AI
 
 > Containers make "works on my machine" a thing of the past.

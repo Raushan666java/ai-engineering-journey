@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/06-docker-kubernetes-cloud/10-ci-cd-pipelines
 title: "CI/CD Pipelines — Continuous Integration and Delivery"
 sidebar_label: "CI/CD Pipelines — Continuous Integration and Delivery"
 sidebar_position: 90
+description: "CI/CD Pipelines — Continuous Integration and Delivery: Containers and cloud platforms are where AI models live in production. Docker packages your model"
 ---
 
 <!-- improved -->

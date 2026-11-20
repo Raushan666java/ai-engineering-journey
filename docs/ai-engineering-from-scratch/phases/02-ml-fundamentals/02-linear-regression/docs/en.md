@@ -1,3 +1,7 @@
+---
+description: "You have data: house sizes and their sale prices. You want to predict the price of a new house given its size. You could eyeball it on a scatter plot, but"
+---
+
 # Linear Regression
 
 > Linear regression draws the best straight line through your data. It is the "hello world" of machine learning.

@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/31-mobile-ai
 title: "31 — Mobile AI & Edge Deployment"
 sidebar_label: "31 — Mobile AI & Edge Deployment"
 sidebar_position: 355
+description: "On-device and mobile AI: prompting from React Native, small models, latency and privacy constraints."
 ---
 
 # 31 — Mobile AI & Edge Deployment

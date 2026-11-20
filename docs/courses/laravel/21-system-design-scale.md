@@ -1,3 +1,7 @@
+---
+description: "At 10 million users, every architectural decision must be based on quantitative estimates, not intuition. Application code writes to primary, reads from"
+---
+
 # Chapter 21: System Design: Laravel at Enterprise Scale
 
 > **Previous:** [Scaling Laravel](./20-scaling-laravel.md) | **Next:** [Case Study E-Commerce](./22-case-study-ecommerce.md)

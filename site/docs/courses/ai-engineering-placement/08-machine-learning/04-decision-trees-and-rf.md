@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/08-machine-learning/04-decision-trees-and-rf
 title: "Decision Trees & Random Forest — Entropy, Gini, Bagging"
 sidebar_label: "Decision Trees & Random Forest — Entropy, Gini, Bagging"
 sidebar_position: 115
+description: "Decision Trees & Random Forest — Entropy, Gini, Bagging: Machine learning is the core of AI engineering. From linear regression to ensemble methods"
 ---
 
 <!-- improved -->

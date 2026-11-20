@@ -1,3 +1,7 @@
+---
+description: "Real-World Analogy: Imagine describing a photograph to someone born blind — you would have to translate every visual detail into a grid of numbers. 'At"
+---
+
 # Chapter 3: OpenCV & Computer Vision
 
 > **Prerequisite:** [02 - LangChain & LLM Orchestration](./02-langchain.md)  

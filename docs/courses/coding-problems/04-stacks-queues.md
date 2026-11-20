@@ -1,3 +1,7 @@
+---
+description: "Stacks and queues are fundamental linear data structures that enforce specific ordering rules — LIFO for stacks and FIFO for queues. They power everything"
+---
+
 # Chapter 04: Stacks & Queues
 
 > Stacks and queues are fundamental linear data structures that enforce specific ordering rules — LIFO for stacks and FIFO for queues. They power everything from expression evaluation to breadth-first search.

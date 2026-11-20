@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/20-portfolio-branding/01-github-profile-optimiza
 title: "GitHub Profile Optimization"
 sidebar_label: "GitHub Profile Optimization"
 sidebar_position: 243
+description: "GitHub Profile Optimization: Your portfolio is your proof of skills. GitHub profiles, technical blogs, and LinkedIn optimization help you stand out. This"
 ---
 
 <!-- improved -->

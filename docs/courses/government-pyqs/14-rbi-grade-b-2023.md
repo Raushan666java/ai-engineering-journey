@@ -1,3 +1,7 @@
+---
+description: "Explanation: NMP (launched in 2021) aims to monetise underutilized central government infrastructure assets across sectors like roads, railways, power"
+---
+
 # RBI Grade B Phase 1 2023 — Solved Paper
 
 > Reserve Bank of India Grade B Officer Phase 1 Exam 2023 — comprehensive solved paper with current affairs, reasoning diagrams, and quant analysis.

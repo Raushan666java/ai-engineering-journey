@@ -4,6 +4,7 @@ slug: /ai-powered-learning/ch09-note-taking-knowledge-management
 title: "Chapter 9: AI Note-Taking & Knowledge Management"
 sidebar_label: "Chapter 9: AI Note-Taking & Knowledge Management"
 sidebar_position: 9
+description: "Most students take notes they never read again. This chapter fixes that with a second brain: a local vault of Markdown notes that AI structures, links"
 ---
 
 # Chapter 9: AI Note-Taking & Knowledge Management

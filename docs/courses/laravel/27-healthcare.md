@@ -1,3 +1,7 @@
+---
+description: "Healthcare applications operate under strict regulatory requirements. The Health Insurance Portability and Accountability Act (HIPAA) mandates three core"
+---
+
 # Chapter 27: Healthcare AI Agents
 
 > **Previous:** [Business Automation Agents](./26-business-automation-agents.md) | **Next:** [Finance](./28-finance.md)

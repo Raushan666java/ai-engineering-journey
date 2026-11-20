@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/08-machine-learning/11-naive-bayes
 title: "Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications"
 sidebar_label: "Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications"
 sidebar_position: 122
+description: "Naive Bayes is a family of probabilistic classifiers based on Bayes theorem with a strong independence assumption between features. Despite its"
 ---
 
 <!-- improved -->

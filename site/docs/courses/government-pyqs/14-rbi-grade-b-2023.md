@@ -4,6 +4,7 @@ slug: /government-pyqs/14-rbi-grade-b-2023
 title: "RBI Grade B Phase 1 2023 — Solved Paper"
 sidebar_label: "RBI Grade B Phase 1 2023 — Solved Paper"
 sidebar_position: 14
+description: "Explanation: NMP (launched in 2021) aims to monetise underutilized central government infrastructure assets across sectors like roads, railways, power"
 ---
 
 # RBI Grade B Phase 1 2023 — Solved Paper

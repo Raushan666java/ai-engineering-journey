@@ -1,3 +1,7 @@
+---
+description: "SRE (Site Reliability Engineering) originates from Google, formalized by Ben Treynor Sloss in 2003. While DevOps is a cultural movement emphasizing"
+---
+
 # Chapter 17: SRE Principles
 
 > **Previous:** [Container Networking](./16-networking.md) | **Next:** [Capstone Project](./18-capstone.md)

@@ -1,3 +1,7 @@
+---
+description: "Deep work is professional activity performed in a state of distraction-free concentration that pushes your cognitive capabilities to their limit. Shallow"
+---
+
 # Chapter 5: Deep Work & Focus
 
 > ⏱ **2 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**

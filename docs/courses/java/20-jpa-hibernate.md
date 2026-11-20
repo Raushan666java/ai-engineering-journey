@@ -1,3 +1,7 @@
+---
+description: "JPA (Jakarta Persistence API) is the standard Java specification for object-relational mapping. Hibernate is the most popular implementation. Entities are"
+---
+
 > **Previous:** [JDBC/JOOQ](./19-jdbc-jooq.md) | **Next:** [Spring Data JPA](./21-spring-data-jpa.md)
 
 # JPA & Hibernate Deep Dive

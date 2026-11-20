@@ -1,3 +1,7 @@
+---
+description: "Pipelining is a technique where multiple instructions are overlapped in execution. Each instruction passes through stages, and different instructions"
+---
+
 # Pipelining and Hazards
 
 ## Learning Objectives

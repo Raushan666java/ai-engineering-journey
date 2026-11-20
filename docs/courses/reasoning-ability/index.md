@@ -1,3 +1,7 @@
+---
+description: "Exam Weightage: 25 Questions in IBPS SO Prelims, critical time-management section Moderate to High (puzzles consume most time) Focus Areas: Puzzles"
+---
+
 # Reasoning Ability — IBPS SO & Govt Exam Prep
 
 > **Exam Weightage:** 25 Questions in IBPS SO Prelims, critical time-management section

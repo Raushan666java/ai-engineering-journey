@@ -4,6 +4,7 @@ slug: /job-preparation/05-offer-negotiation-career-growth
 title: "Offer Negotiation and Career Growth Planning"
 sidebar_label: "Offer Negotiation and Career Growth Planning"
 sidebar_position: 5
+description: "Note: HRA exemption reduces tax. If you live in a metro and pay rent of Rs. 15,000/month, your HRA exemption = min(actual HRA received, actual rent paid"
 ---
 
 # Offer Negotiation and Career Growth Planning

@@ -1,3 +1,7 @@
+---
+description: "Turn prose instructions into machine-checkable rules across five categories and emit a rule report a reviewer can score."
+---
+
 # Mission - Agent Instructions as Executable Constraints
 
 ## Goal

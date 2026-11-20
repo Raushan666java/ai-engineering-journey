@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'GitHub, resume, LinkedIn, a blog and shipped projects all grow from one personal brand trunk.'"
+---
+
 # Visual Notes — Your Personal Brand Trunk
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

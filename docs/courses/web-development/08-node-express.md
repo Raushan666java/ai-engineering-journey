@@ -1,3 +1,7 @@
+---
+description: "Node.js is a JavaScript runtime built on Chrome's V8 engine. It provides an event-driven, non-blocking I/O model that makes it efficient for"
+---
+
 # Chapter 8 → Node.js and Express
 
 > **Previous:** [07-react-advanced](./07-react-advanced.md) | **Next:** [09-rest-apis](./09-rest-apis.md)

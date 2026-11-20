@@ -1,3 +1,7 @@
+---
+description: "With hundreds of LLMs available from providers like DeepSeek, OpenAI, Anthropic, Google, Mistral, and the open-source community, choosing the wrong model"
+---
+
 <!-- improved -->
 # Model Selection & Evaluation
 

@@ -1,3 +1,7 @@
+---
+description: "AI products fail when users do not trust them or cannot understand them. Great UX bridges the gap between model capability and human expectation. This"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # User Experience for AI

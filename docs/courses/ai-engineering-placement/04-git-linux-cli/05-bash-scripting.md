@@ -1,3 +1,7 @@
+---
+description: "CLI productivity tools — aliases, tmux, history expansion, tab completion — dramatically speed up your workflow. AI engineers who master the command line"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # CLI Productivity

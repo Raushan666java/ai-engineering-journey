@@ -1,3 +1,7 @@
+---
+description: "Azure AI Services is Microsoft's comprehensive cloud AI platform. It spans pre-built cognitive APIs, custom ML with Azure Machine Learning, and large"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Azure AI Services — Cognitive Services, Azure ML, OpenAI Service

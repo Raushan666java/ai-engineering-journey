@@ -1,3 +1,7 @@
+---
+description: "Concurrency is the ability of a program to make progress on more than one task at the same time. The tasks may not execute simultaneously → they just need"
+---
+
 # Chapter 15: Concurrency
 
 > **Previous:** [14-lambdas](./14-lambdas.md) | **Next:** [16-design-patterns](./16-design-patterns.md)

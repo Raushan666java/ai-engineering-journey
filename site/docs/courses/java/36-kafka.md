@@ -4,6 +4,7 @@ slug: /java/36-kafka
 title: "Apache Kafka"
 sidebar_label: "Apache Kafka"
 sidebar_position: 36
+description: "Apache Kafka is a distributed event streaming platform. Unlike RabbitMQ (a message broker), Kafka is an append-only log that stores events durably and"
 ---
 
 # Apache Kafka

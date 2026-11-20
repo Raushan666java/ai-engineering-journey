@@ -1,3 +1,7 @@
+---
+description: "Exam: Staff Selection Commission — Combined Graduate Level (SSC CGL) Tier 1 Total Questions: 100 | Duration: 60 minutes | Max Marks: 200 Negative Marking"
+---
+
 # SSC CGL Tier 1 — Full-Length Mock Test
 
 > **Exam:** Staff Selection Commission — Combined Graduate Level (SSC CGL) Tier 1  

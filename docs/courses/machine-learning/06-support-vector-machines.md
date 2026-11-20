@@ -1,3 +1,7 @@
+---
+description: "A Support Vector Machine (SVM) is a discriminative classifier that finds an optimal hyperplane to separate classes. While many hyperplanes can separate"
+---
+
 # Chapter 6: Support Vector Machines
 
 > **Previous:** [Ensemble Methods](./05-ensemble-methods.md) | **Next:** [Neural Networks](./07-neural-networks.md)

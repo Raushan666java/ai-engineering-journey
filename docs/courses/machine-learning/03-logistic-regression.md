@@ -1,3 +1,7 @@
+---
+description: "Logistic Regression solves these problems by passing the linear output through a non-linear squashing function (sigmoid) and using a convex loss"
+---
+
 # Chapter 3: Logistic Regression
 
 > **Previous:** [Linear Regression](./02-linear-regression.md) | **Next:** [Decision Trees](./04-decision-trees.md)

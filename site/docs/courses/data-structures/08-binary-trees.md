@@ -4,6 +4,7 @@ slug: /data-structures/08-binary-trees
 title: "Chapter 8: Binary Trees"
 sidebar_label: "Chapter 8: Binary Trees"
 sidebar_position: 8
+description: "Imagine you are building the file system on your computer. Every folder can contain files or subfolders — but each folder has exactly one parent (except"
 ---
 
 # Chapter 8: Binary Trees

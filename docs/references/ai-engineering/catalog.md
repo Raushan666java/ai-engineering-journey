@@ -1,3 +1,7 @@
+---
+description: "Every lesson across all 20 phases. For the interactive searchable version, visit aiengineeringfromscratch.com/catalog.html."
+---
+
 # Lesson Catalog
 
 [Home](index.md) · [About](about.md) · [Roadmap](roadmap.md) · [Glossary](glossary.md) · [Contact](contact.md)

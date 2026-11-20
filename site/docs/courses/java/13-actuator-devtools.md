@@ -4,6 +4,7 @@ slug: /java/13-actuator-devtools
 title: "Actuator, DevTools & Monitoring"
 sidebar_label: "Actuator, DevTools & Monitoring"
 sidebar_position: 13
+description: "Warning: Never expose sensitive actuator endpoints (/env, /configprops, /dump) in production without authentication. Use Spring Security or management"
 ---
 
 # Actuator, DevTools & Monitoring

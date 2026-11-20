@@ -4,6 +4,7 @@ slug: /cyber-security/13-red-team-c2
 title: "Chapter 13: Advanced Red Team Operations & C2 Frameworks"
 sidebar_label: "Chapter 13: Advanced Red Team Operations & C2 Frameworks"
 sidebar_position: 12
+description: "Prereq: Chapters 10 (Pentesting), 11 (SOC Threat Hunting), 12 (Malware Analysis) Target Audience: Red team operators, penetration testers, adversary"
 ---
 
 # Chapter 13: Advanced Red Team Operations & C2 Frameworks

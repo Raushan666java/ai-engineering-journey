@@ -4,6 +4,7 @@ slug: /laravel/24-capstone
 title: "Chapter 24: Capstone Project — AI-Powered Team Collaboration SaaS"
 sidebar_label: "Chapter 24: Capstone Project — AI-Powered Team Collaboration SaaS"
 sidebar_position: 24
+description: "A[Part A: Architecture] --> B[Part B: Data Model] B --> C[Part C: AI Agents] C --> D[Part D: MCP Servers] D --> E[Part E: Search & RAG] E --> F[Part F"
 ---
 
 # Chapter 24: Capstone Project — AI-Powered Team Collaboration SaaS

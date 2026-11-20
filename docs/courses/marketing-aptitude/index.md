@@ -1,3 +1,7 @@
+---
+description: "A comprehensive guide to marketing concepts, sales & distribution, brand management, digital marketing, and banking marketing for competitive exams (IBPS"
+---
+
 # Marketing Aptitude — Complete Course
 
 > A comprehensive guide to marketing concepts, sales & distribution, brand management, digital marketing, and banking marketing for competitive exams (IBPS SO, SBI PO, RBI Grade B, NABARD).

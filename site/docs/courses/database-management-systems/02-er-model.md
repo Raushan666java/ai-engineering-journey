@@ -4,6 +4,7 @@ slug: /database-management-systems/02-er-model
 title: "Chapter 2: Entity-Relationship Model"
 sidebar_label: "Chapter 2: Entity-Relationship Model"
 sidebar_position: 2
+description: "A[Identify Entities] --> B[Define Attributes] B --> C[Specify Relationships] C --> D[Set Cardinality & Participation] E --> F[Map to Relational Schema] F"
 ---
 
 # Chapter 2: Entity-Relationship Model

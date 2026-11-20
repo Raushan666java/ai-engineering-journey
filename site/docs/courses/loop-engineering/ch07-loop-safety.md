@@ -4,6 +4,7 @@ slug: /loop-engineering/ch07-loop-safety
 title: "Chapter 7: Loop Safety"
 sidebar_label: "Chapter 7: Loop Safety"
 sidebar_position: 7
+description: "Infinite retries. An LLM call returns a malformed response. The agent retries. The LLM returns the same malformed response. This repeats until the token"
 ---
 
 # Chapter 7: Loop Safety

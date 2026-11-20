@@ -1,3 +1,7 @@
+---
+description: "REST APIs are the backbone of every AI engineering system — from serving model predictions to orchestrating multi-service ML pipelines. Whether you're"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # REST API Fundamentals — HTTP, Resources, and Design Principles

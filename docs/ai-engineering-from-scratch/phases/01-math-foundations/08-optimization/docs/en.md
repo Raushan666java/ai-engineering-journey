@@ -1,3 +1,7 @@
+---
+description: "You have a loss function. It tells you how wrong your model is. You have gradients. They tell you which direction makes the loss worse. Now you need a"
+---
+
 # Optimization
 
 > Training a neural network is nothing more than finding the bottom of a valley.

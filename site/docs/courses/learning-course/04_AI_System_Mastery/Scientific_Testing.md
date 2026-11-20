@@ -3,6 +3,7 @@ slug: /learning-course/04_AI_System_Mastery/Scientific_Testing
 title: "🧪 Testing Learning Techniques - Scientific Validation"
 sidebar_label: "🧪 Testing Learning Techniques - Scientific Validation"
 sidebar_position: 3
+description: "Test ability to apply knowledge in new contexts Method: Present novel problems requiring learned concepts Measurement: Success rate in unfamiliar"
 ---
 # 🧪 Testing Learning Techniques - Scientific Validation
 

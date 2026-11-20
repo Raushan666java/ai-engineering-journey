@@ -1,3 +1,7 @@
+---
+description: "Scope an AI feature like a product owner: cost per request, latency budgets, failure modes and what to cut."
+---
+
 # 26 — AI Product Thinking
 
 ## Overview

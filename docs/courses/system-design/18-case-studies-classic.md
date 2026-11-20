@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. Every system design begins with precise functional and"
+---
+
 # Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin
 > **Previous:** [17 Observability Resiliency](./17-observability-resiliency.md) | **Next:** [19 Case Study Whatsapp](./19-case-study-whatsapp.md)
 

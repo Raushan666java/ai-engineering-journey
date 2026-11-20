@@ -1,3 +1,7 @@
+---
+description: "Pro Tip: Master this concept thoroughly ? it appears in nearly every system design interview. WhatsApp processes over 100 billion messages daily across 2"
+---
+
 # Chapter 19: Case Study — WhatsApp and Real-Time Messaging
 > **Previous:** [18 Case Studies Classic](./18-case-studies-classic.md) | **Next:** [20 Case Study Netflix](./20-case-study-netflix.md)
 

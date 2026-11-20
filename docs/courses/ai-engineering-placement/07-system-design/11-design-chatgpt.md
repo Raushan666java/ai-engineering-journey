@@ -1,3 +1,7 @@
+---
+description: "Design ChatGPT — Streaming, Context Window, Prompt Caching: System design interviews test your ability to architect large-scale systems. Caching, load"
+---
+
 <!-- improved -->
 <!-- Clear Language: Keep sentences under 50 words -->
 # Design ChatGPT — Streaming, Context Window, Prompt Caching

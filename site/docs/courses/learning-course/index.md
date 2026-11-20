@@ -4,6 +4,7 @@ slug: /learning-course
 title: "Learning Course - AI-Enhanced Learning System"
 sidebar_label: "Learning Course"
 sidebar_position: 1
+description: "Mission: Learn to learn 3x-5x faster with an AI partnership model — instant feedback, personalized content, and a complete AI-enhanced learning system."
 ---
 # Learning Course - AI-Enhanced Learning System
 

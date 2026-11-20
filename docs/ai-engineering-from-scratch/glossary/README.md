@@ -1,3 +1,7 @@
+---
+description: "Glossary"
+---
+
 # Glossary
 
 Two resources to cut through the noise:

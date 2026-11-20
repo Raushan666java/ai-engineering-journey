@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/18-multimodal-ai-voice/01-computer-vision-basics
 title: "Computer Vision Basics"
 sidebar_label: "Computer Vision Basics"
 sidebar_position: 228
+description: "Computer Vision Basics: AI is moving beyond text. Computer vision, speech recognition, and multimodal models process images, audio, and video. This module"
 ---
 
 <!-- improved -->

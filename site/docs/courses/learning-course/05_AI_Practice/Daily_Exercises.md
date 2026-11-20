@@ -1,3 +1,7 @@
+---
+description: "slug: /learning-course/05_AI_Practice/Daily_Exercises title: '🏃 Daily Exercises - 21-Day Program' sidebar_label: '🏃 Daily Exercises - 21-Day Program'"
+---
+
 ﻿---
 slug: /learning-course/05_AI_Practice/Daily_Exercises
 title: "🏃 Daily Exercises - 21-Day Program"

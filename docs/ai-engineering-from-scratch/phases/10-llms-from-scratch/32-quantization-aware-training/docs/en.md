@@ -1,3 +1,7 @@
+---
+description: "PTQ rounds weights after training and hopes for the best. QAT inserts fake quantization into the forward pass so the model learns to place weights where"
+---
+
 # Quantization-Aware Training for LLMs -- LLM-QAT, Fake Quant, STE
 
 > PTQ rounds weights after training and hopes for the best. QAT inserts fake quantization into the forward pass so the model learns to place weights where rounding errors are small. For INT4 and below, QAT is the difference between a model that degrades and one that works.

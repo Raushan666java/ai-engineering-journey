@@ -1,3 +1,7 @@
+---
+description: "Visual Notes — AI on Constrained Devices: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before"
+---
+
 # Visual Notes — AI on Constrained Devices
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

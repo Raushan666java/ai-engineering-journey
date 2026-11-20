@@ -4,6 +4,7 @@ slug: /ai-engineering-placement/10-nlp-transformers/01-text-preprocessing
 title: "Text Preprocessing — Tokenization, Stemming, Lemmatization, TF-IDF"
 sidebar_label: "Text Preprocessing — Tokenization, Stemming, Lemmatization, TF-IDF"
 sidebar_position: 138
+description: "Text preprocessing is the critical first step in every NLP pipeline — before a transformer can understand language, raw text must be tokenized"
 ---
 
 <!-- improved -->

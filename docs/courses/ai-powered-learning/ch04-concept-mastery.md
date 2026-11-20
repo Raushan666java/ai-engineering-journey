@@ -1,3 +1,7 @@
+---
+description: "Knowing a topic's name is not the same as mastering the concept behind it. This chapter is a toolkit of AI-driven drills that push a concept from 'I have"
+---
+
 # Chapter 4: Concept Mastery with AI
 
 > **Last Updated:** August 2026 | **Estimated Reading Time:** 60–75 minutes

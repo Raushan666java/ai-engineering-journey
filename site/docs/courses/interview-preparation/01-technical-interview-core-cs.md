@@ -4,6 +4,7 @@ slug: /interview-preparation/01-technical-interview-core-cs
 title: "Chapter 1: Technical Interview — Core Computer Science Subjects"
 sidebar_label: "Chapter 1: Technical Interview — Core Computer Science Subjects"
 sidebar_position: 1
+description: "Example violation: Table(StudentID, CourseID, StudentName, Instructor) — StudentName depends only on StudentID, not on the composite key (StudentID"
 ---
 
 # Chapter 1: Technical Interview — Core Computer Science Subjects

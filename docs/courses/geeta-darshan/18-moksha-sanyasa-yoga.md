@@ -1,3 +1,7 @@
+---
+description: "'Krishna ne 17 adhyay bol kar diye. Ab aakhri adhyay mein woh sab kuch kah raha hai jo kahna baaqi tha. Aur Osho kahte hain: Gita ka asli antim shabd"
+---
+
 # अध्याय १८: मोक्ष संन्यास योग — "Gita ka antim shabd — Gita ko bhi chhod do"
 
 > **"Krishna ne 17 adhyay bol kar diye. Ab aakhri adhyay mein woh sab kuch kah raha hai jo kahna baaqi tha. Aur Osho kahte hain: Gita ka asli antim shabd 'moksha' nahin — woh shabd hai 'ab jao'. Jao aur yeh sab bhool kar jiyo. Kitab wahan khatam hoti hai jahan tumhari yaatra shuru hoti hai."**

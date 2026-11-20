@@ -1,3 +1,7 @@
+---
+description: "Chapter 31: HR & Recruitment — AI-Powered Talent Agents: One-Sentence Takeaway: Theory is the foundation → master it before moving to examples and"
+---
+
 # Chapter 31: HR & Recruitment — AI-Powered Talent Agents
 
 > **Previous:** [Logistics & Supply Chain Agents](./30-logistics.md) | **Next:** [Marketing & Advertising Agents](./32-marketing.md)

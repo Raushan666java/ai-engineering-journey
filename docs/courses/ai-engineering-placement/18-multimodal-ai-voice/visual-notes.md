@@ -1,3 +1,7 @@
+---
+description: "One-line answer for interviews: 'Audio and vision are encoded, fused in the LLM, and answers come back through text or voice.'"
+---
+
 # Visual Notes — Multimodal Input to Voice Output
 
 > One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.

@@ -4,6 +4,7 @@ slug: /laravel/17-boost
 title: "Chapter 17: Laravel Boost — AI-Assisted Development"
 sidebar_label: "Chapter 17: Laravel Boost — AI-Assisted Development"
 sidebar_position: 17
+description: "Laravel Boost is a package that acts as a bridge between AI coding agents and your Laravel application. When an AI agent writes Laravel code without"
 ---
 
 # Chapter 17: Laravel Boost — AI-Assisted Development

@@ -1,3 +1,7 @@
+---
+description: "This textbook provides a rigorous, bottom-up exploration of modern operating systems — the software layer that mediates between hardware and applications"
+---
+
 # Operating Systems — A Comprehensive Textbook
 
 ## Course Description

@@ -4,6 +4,7 @@ slug: /english-language/02-grammar-essentials
 title: "Chapter 2: Grammar Essentials"
 sidebar_label: "Chapter 2: Grammar Essentials"
 sidebar_position: 2
+description: "Exam Tip: In Spotting Error questions, check if the voice is appropriate for the context. If the doer of the action is unclear or unimportant, passive"
 ---
 
 # Chapter 2: Grammar Essentials

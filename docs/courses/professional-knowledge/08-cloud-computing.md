@@ -1,3 +1,7 @@
+---
+description: "Answer: (c) Availability + Partition Tolerance. Since partitions are inevitable in distributed systems (P is mandatory), you choose between CP and AP"
+---
+
 # Chapter 8: Cloud Computing — Exam Quick Revision
 
 ## Learning Objectives

@@ -113,7 +113,7 @@ Netflix interviews are less structured than other FAANGs. They assess judgment, 
 Amazon interviews are the most structured. Each interviewer has an LP assignment. Strategy:
 - Prepare 2 stories per LP (32 total). Each story demonstrates 2-3 LPs
 - Use STAR format. Interviewers are trained to look for these elements
-- Quantify: improved by X%, saved $Y, reduced time by Z%
+- Quantify: improved by X%, saved \$Y, reduced time by Z%
 - Own mistakes: answer honestly what went wrong
 - Bar Raiser interview is most important. Prepare strong stories for Ownership, Insist on the Highest Standards, Deliver Results
 

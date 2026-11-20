@@ -1006,7 +1006,7 @@ The phenomenon that **once an AI system solves a problem, society no longer cons
 
 3. **Linear regression from scratch:** Implement linear regression (as shown in the chapter) in Python, C++, or Java to predict house prices given the number of bedrooms and square footage. Use the following training data:
 
-| Bedrooms | Sq Ft | Price ($) |
+| Bedrooms | Sq Ft | Price (\$) |
 |----------|-------|-----------|
 | 2 | 800 | 150,000 |
 | 3 | 1200 | 200,000 |

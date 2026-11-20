@@ -1632,7 +1632,7 @@ Even at startups, base salary is negotiable:
 1. **Know your BATNA** → What is your next-best option? Use competing offers.
 2. **Delay salary conversations** → Let them want you first.
 3. **Total comp frame** → Talk about total package, not just base salary.
-4. **Be specific** → "I would like to see $X base" is better than "more."
+4. **Be specific** → "I would like to see \$X base" is better than "more."
 5. **Don't lie** → About existing offers or current compensation.
 
 #### Sample Negotiation Script

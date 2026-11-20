@@ -502,11 +502,11 @@ state evidence, suggest specific fixes.
 <details class="tp-qa-card" data-qid="m21-s18-q5">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q5: Spot the issue in <code>SELECT * FROM orders WHERE user_id = ${userId}</code> and explain the fix.
+    Q5: Spot the issue in `SELECT * FROM orders WHERE user_id = ${userId}` and explain the fix.
   </summary>
   <div class="tp-qa-answer">
     <p>String-interpolating <code>userId</code> into SQL creates an injection vulnerability: input like <code>1; DROP TABLE orders; --</code> executes arbitrary SQL. The chapter's Review 3 flags this as the top security finding.</p>
-    <p>Fix with parameterized queries: <code>db.query('SELECT * FROM orders WHERE user_id = \$1', [userId])</code>. Parameterized statements separate data from structure, so input can never be parsed as SQL. The same review checklist catches unsanitized user input and hardcoded secrets as adjacent findings.</p>
+    <p>Fix with parameterized queries: `db.query('SELECT * FROM orders WHERE user_id = $1', [userId])`. Parameterized statements separate data from structure, so input can never be parsed as SQL. The same review checklist catches unsanitized user input and hardcoded secrets as adjacent findings.</p>
     <p><strong>Interview follow-up</strong>: Does escaping quotes fully protect against SQL injection? Why not?</p>
   </div>
   <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>

@@ -39,7 +39,7 @@ The second level is the domain of the technical firefighter. You have a deep und
     *   *Fixing Leakages:* Patching memory leaks in long-running console commands. 
     *   *Race Conditions:* Realizing that two users are claiming the exact same booking slot, and implementing Pessimistic Locking (`lockForUpdate()`) to fix the concurrency issue.
 *   **Focus:** Systematic breakdown of failing systems. Reading complex stack traces without fear and tracing errors down to the framework's core library.
-*   **Value to Business:** High. When the production server goes down and the company is losing $5,000 every minute, you are the person they call.
+*   **Value to Business:** High. When the production server goes down and the company is losing \$5,000 every minute, you are the person they call.
 
 ---
 

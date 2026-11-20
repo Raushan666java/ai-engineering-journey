@@ -73,7 +73,7 @@ sidebar_position: 1
 - **Instructor:** Jonathan Levi
 - **Content:** Speed reading, memory techniques
 - **Practical:** Hands-on exercises
-- **Price:** $50-100 (frequent sales)
+- **Price:** \$50-100 (frequent sales)
 
 **"Memory Mastery" - Skillshare**
 - **Focus:** Memory palace, mnemonics
@@ -104,7 +104,7 @@ sidebar_position: 1
 - **Best for:** Memory researchers, advanced users
 
 ### Focus & Productivity
-**Forest (Paid - $2-4)**
+**Forest (Paid - \$2-4)**
 - **Concept:** Plant virtual trees during focus sessions
 - **Features:** Pomodoro timer, progress tracking
 - **Motivation:** Gamification, environmental cause
@@ -120,7 +120,7 @@ sidebar_position: 1
 - **Function:** Automatic time tracking
 - **Features:** Detailed reports, goal setting
 - **Insight:** Where time actually goes
-- **Premium:** $12/month for advanced features
+- **Premium:** \$12/month for advanced features
 
 ### Note-Taking & Organization
 **Obsidian (Free)**
@@ -291,19 +291,19 @@ sidebar_position: 1
 - **Purpose:** Focus enhancement
 - **Options:** Over-ear, in-ear
 - **Features:** Active noise cancellation
-- **Investment:** $100-300 for quality
+- **Investment:** \$100-300 for quality
 
 **Blue Light Glasses**
 - **Purpose:** Reduce eye strain
 - **Benefit:** Better sleep quality
 - **Use:** Evening screen time
-- **Cost:** $20-50
+- **Cost:** \$20-50
 
 **Standing Desk Converter**
 - **Health:** Reduce sitting time
 - **Focus:** Movement aids concentration
 - **Options:** Adjustable height converters
-- **Price:** $100-400
+- **Price:** \$100-400
 
 ## Creating Your Learning Resource Library
 
@@ -351,8 +351,8 @@ Learning 06_Resources/
 - Library books
 
 **Low-Cost Resources (20%):**
-- Apps ($1-10)
-- Ebooks ($10-30)
+- Apps (\$1-10)
+- Ebooks (\$10-30)
 - Online courses on sale
 
 **Premium Resources (10%):**

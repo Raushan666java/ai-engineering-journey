@@ -1065,7 +1065,7 @@ def concat_join(n):
   </summary>
   <div class="tp-qa-answer">
     <p>The <strong>Z-algorithm</strong> computes a Z-array where Z[i] is the length of the longest substring starting at position i that matches the prefix of the string.</p>
-    <p><strong>For pattern matching</strong>: Concatenate pattern + "$" + text, then compute the Z-array. Any Z[i] == len(pattern) indicates a match at position i - len(pattern) - 1.</p>
+    <p><strong>For pattern matching</strong>: Concatenate pattern + "&#36;" + text, then compute the Z-array. Any Z[i] == len(pattern) indicates a match at position i - len(pattern) - 1.</p>
     <pre><code>def z_algorithm(s):
     n = len(s)
     z = [0] * n

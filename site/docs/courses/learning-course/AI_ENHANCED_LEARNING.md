@@ -101,19 +101,19 @@ Result: Detailed narrative linking quicksort to cooking processes
 - Citation tracking
 
 #### Premium AI Tools
-**ChatGPT Plus ($20/month):**
+**ChatGPT Plus (\$20/month):**
 - GPT-4 access
 - Plugin ecosystem
 - Advanced reasoning
 - Code interpreter
 
-**Claude Pro ($20/month):**
+**Claude Pro (\$20/month):**
 - Higher usage limits
 - Priority access
 - Advanced features
 - Better performance
 
-**GitHub Copilot ($10/month):**
+**GitHub Copilot (\$10/month):**
 - Code completion
 - Function generation
 - Test creation

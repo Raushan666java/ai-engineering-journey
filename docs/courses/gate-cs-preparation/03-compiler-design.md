@@ -1498,7 +1498,7 @@ B → bB | ε
 
 A) `{b, $}`   B) `{$}`   C) `{b}`   D) `{a, b, $}`
 
-**Solution:** FIRST(S)={a,b,ε}. From S→AB: FIRST(B)={b,ε} goes to FOLLOW(A) so FOLLOW(A)={b,$}. From S→AB: anything after B? Nothing follows B in this production, so FOLLOW(S)={$} propagates. Since B is at the end of S→AB, FOLLOW(B)=FOLLOW(S)={$}. Also B→bB, so FOLLOW(B) includes FIRST of what follows B in the RHS —” nothing follows the second B. So FOLLOW(B)={$}. **Answer: B.**
+**Solution:** FIRST(S)={a,b,ε}. From S→AB: FIRST(B)={b,ε} goes to FOLLOW(A) so FOLLOW(A)={b,\$}. From S→AB: anything after B? Nothing follows B in this production, so FOLLOW(S)={\$} propagates. Since B is at the end of S→AB, FOLLOW(B)=FOLLOW(S)={\$}. Also B→bB, so FOLLOW(B) includes FIRST of what follows B in the RHS —” nothing follows the second B. So FOLLOW(B)={\$}. **Answer: B.**
 
 ---
 
@@ -3389,7 +3389,7 @@ console.log(parser.printTable());
 <details>
 <summary><strong>Exercise 1:</strong> FIRST and FOLLOW computation</summary>
 <p>Grammar: S → aABe, A → b | ε, B → cd | ε. Compute FIRST and FOLLOW for all non-terminals.</p>
-<p><strong>Solution:</strong> FIRST(S)={a}, FIRST(A)={b,ε}, FIRST(B)={c,ε}. FOLLOW(S)={$}, FOLLOW(A)=FIRST(B)∪FOLLOW(S)={c,$}, FOLLOW(B)={e}∪FOLLOW(S)={e,$}. Since B→ε, FOLLOW(A) also includes {e}. So FOLLOW(A)={c,e,$}.</p>
+<p><strong>Solution:</strong> FIRST(S)={a}, FIRST(A)={b,ε}, FIRST(B)={c,ε}. FOLLOW(S)={\$}, FOLLOW(A)=FIRST(B)∪FOLLOW(S)={c,\$}, FOLLOW(B)={e}∪FOLLOW(S)={e,\$}. Since B→ε, FOLLOW(A) also includes {e}. So FOLLOW(A)={c,e,\$}.</p>
 </details>
 
 <details>

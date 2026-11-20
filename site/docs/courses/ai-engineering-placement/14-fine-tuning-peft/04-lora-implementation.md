@@ -567,7 +567,7 @@ inserting LoRA layers, and ensuring gradients only flow through adapter paramete
   <div class="tp-qa-answer">
 <p>Target modules specify which layers in the model get LoRA adapters. To find available module names in a HuggingFace model: (1) <code>model.named_modules()</code> lists all modules — look for.
 attention projection layers (q_proj, k_proj, v_proj, o_proj), feed-forward layers (gate_proj, up_proj, down_proj), and linear layers; (2) common patterns — Llama models use "q_proj",.
-"k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj". Mistral uses the same names. GPT-2 uses "c_attn", "c_proj"; (3) module name patterns can be specified as regex via <code>target_modules</code> — <code>r".*\.(q_proj|v_proj)$"</code> targets only query and.
+"k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj". Mistral uses the same names. GPT-2 uses "c_attn", "c_proj"; (3) module name patterns can be specified as regex via <code>target_modules</code> — `r".*\.(q_proj|v_proj)$"` targets only query and.
 value projections. Selection guidelines: (1) always include v_proj (value projection) — it captures the most task-specific information; (2) include q_proj for.
 tasks requiring modified attention patterns; (3) include o_proj for output quality improvement; (4) include feed-forward layers for knowledge-intensive tasks. Most implementations default to ["q_proj",.
 "v_proj"] as the starting point and add more modules if the task requires more capacity.</p>

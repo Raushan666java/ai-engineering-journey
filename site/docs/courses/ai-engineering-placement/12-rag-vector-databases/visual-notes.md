@@ -13,18 +13,18 @@ description: "One-line answer for interviews: 'Query → embed → retrieve from
 
 ![Retrieval-Augmented Generation](/img/visual/12-rag-vector-databases.svg)
 
-# What the diagram shows
+## What the diagram shows
 
 1. **Query** — The user question is embedded into the same vector space as the corpus.
 1. **Retrieve** — A vector database returns top-k candidates by similarity; reranking tightens precision.
 1. **Generate** — The LLM composes an answer using the retrieved passages, reducing hallucination and grounding the response.
 
-# Why this matters for placement
+## Why this matters for placement
 
 - RAG is the default production pattern for grounded answers — be ready to draw it at whiteboard speed.
 - Know when vector search alone fails: out-of-vocabulary, synonyms, hybrid search fixes.
 
-# Quick revision
+## Quick revision
 
 - Index once (offline), query many (online): the classic asymmetry.
 - Similarity: cosine on normalised embeddings; distance metrics matter at scale.
@@ -32,7 +32,7 @@ description: "One-line answer for interviews: 'Query → embed → retrieve from
 - Hybrid search (BM25 + vector) beats pure vector for lexical precision.
 - Rerankers are cross-encoders: exact but slower — a two-stage pipeline is the norm.
 
-# Related chapters
+## Related chapters
 
 - [Introduction to RAG](01-introduction-to-rag.md)
 - [Embedding models](02-embedding-models.md)

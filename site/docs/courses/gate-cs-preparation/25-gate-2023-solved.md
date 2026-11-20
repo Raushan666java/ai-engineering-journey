@@ -1,13 +1,11 @@
 ---
 id: 25-gate-2023-solved
 slug: /gate-cs-preparation/25-gate-2023-solved
-title: "25-gate-2023-solved"
-sidebar_label: "25-gate-2023-solved"
+title: "GATE CS 2023 Solved Paper"
+sidebar_label: "GATE CS 2023 Solved Paper"
 sidebar_position: 22
 description: "What is the smallest 4-digit number divisible by 12, 15, and 20?"
 ---
-
-﻿# GATE CS 2023 Solved Paper
 
 ## Chapter at a Glance
 

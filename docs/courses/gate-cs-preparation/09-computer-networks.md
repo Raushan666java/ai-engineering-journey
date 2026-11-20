@@ -1,9 +1,6 @@
 ---
 description: "﻿# Chapter 9: Computer Networks —” GATE CS Comprehensive Guide"
 ---
-
-﻿# Chapter 9: Computer Networks —” GATE CS Comprehensive Guide
-
 ---
 
 

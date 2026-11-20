@@ -13,18 +13,18 @@ description: "Visual Notes — Transformer Anatomy: One diagram, the full pictur
 
 ![Transformer Anatomy](/img/visual/10-nlp-transformers.svg)
 
-# What the diagram shows
+## What the diagram shows
 
 1. **Input** — Text is tokenised, embedded, and given positional information so order is preserved.
 1. **Attention** — Self-attention lets every token attend to every token; multi-head attention learns different relationships.
 1. **Output** — Feed-forward layers refine, then an output head maps to the next-token distribution (or a classification label).
 
-# Why this matters for placement
+## Why this matters for placement
 
 - The transformer is the single most asked architecture of the decade — know the flow, not just the name.
 - Explaining how attention differs from RNN recurrence is a guaranteed warm-up question.
 
-# Quick revision
+## Quick revision
 
 - "Attention is all you need": no recurrence, parallelised, long range captured.
 - Self-attention = Query × Key -> scores -> softmax -> weighted Value sum.
@@ -32,7 +32,7 @@ description: "Visual Notes — Transformer Anatomy: One diagram, the full pictur
 - Multi-head attention: parallel projections each specialise in one relationship type.
 - Transformers are architecture; BERT (encoder) vs GPT (decoder) vs T5 (encoder-decoder).
 
-# Related chapters
+## Related chapters
 
 - [Attention mechanism](04-attention-mechanism.md)
 - [Transformer architecture](05-transformer-architecture.md)

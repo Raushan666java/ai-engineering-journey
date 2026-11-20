@@ -1,13 +1,11 @@
 ---
 id: ch-08-gate-theory-prep
 slug: /learning-how-to-learn/ch-08-gate-theory-prep
-title: "ch-08-gate-theory-prep"
-sidebar_label: "ch-08-gate-theory-prep"
+title: "GATE & Theory Exam Prep"
+sidebar_label: "GATE & Theory Exam Prep"
 sidebar_position: 9
 description: "Theory exams — especially competitive ones like GATE CS — demand a different approach than coding interviews. You need to balance conceptual depth"
 ---
-
-﻿# Chapter 8: GATE & Theory Exam Prep
 
 > **Prerequisites:** [Chapter 7: DSA & Coding Interview Prep](./ch-07-dsa-coding-interview.md) — Domain-specific DSA interview strategies.
 > **Next:** [Chapter 9: Framework & Language Learning](./ch-09-framework-language-learning.md) — A repeatable blueprint for learning any technology.

@@ -1,14 +1,11 @@
 ---
 id: 21-mock-test-7
 slug: /gate-cs-preparation/21-mock-test-7
-title: "21-mock-test-7"
-sidebar_label: "21-mock-test-7"
+title: "GATE CS Mock Test 7 — Full-Length Practice Paper"
+sidebar_label: "GATE CS Mock Test 7 — Full-Length Practice Paper"
 sidebar_position: 18
 description: "Total Marks: 100 Duration: 3 Hours Reading Time: 10 minutes"
 ---
-
-﻿# GATE CS Mock Test 7 → Full-Length Practice Paper
-
 
 ## Chapter at a Glance
 

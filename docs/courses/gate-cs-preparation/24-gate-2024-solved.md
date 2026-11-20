@@ -1,9 +1,6 @@
 ---
 description: "A person buys 20 articles for ₹10 each and sells 15 of them at ₹12 each. The remaining 5 are sold at a loss of 10%. What is the overall profit"
 ---
-
-﻿# GATE CS 2024 Solved Paper
-
 ## Chapter at a Glance
 
 | Aspect | Details |

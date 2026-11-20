@@ -8,18 +8,18 @@ description: "One-line answer for interviews: 'System prompt sets the role, user
 
 ![The LLM Interaction Loop](/img/visual/11-llms-prompt-engineering.svg)
 
-# What the diagram shows
+## What the diagram shows
 
 1. **Setup** — A system prompt defines role and constraints; the user prompt carries the actual request.
 1. **Generation** — The model autoregressively produces tokens given the assembled context.
 1. **Iteration** — Tool calls, retrieval or self-critique feed results back into the context until the answer is strong enough.
 
-# Why this matters for placement
+## Why this matters for placement
 
 - Prompting is now a core LLM engineer skill — grounded few-shot beats vague instructions every time.
 - Explaining the difference between prompting (no training) and fine-tuning (training) is a favorite trick question.
 
-# Quick revision
+## Quick revision
 
 - Zero-shot vs few-shot vs chain-of-thought — know when each earns its cost.
 - Temperature trades creativity for determinism; top-p collapses the candidate set.
@@ -27,7 +27,7 @@ description: "One-line answer for interviews: 'System prompt sets the role, user
 - Cost scales with input + output tokens and context length — compress context.
 - Evaluation: ground truth + LLM-as-judge + human review, not vibes.
 
-# Related chapters
+## Related chapters
 
 - [LLM APIs](02-llm-apis.md)
 - [Zero-shot and few-shot](03-zero-shot-and-few-shot.md)

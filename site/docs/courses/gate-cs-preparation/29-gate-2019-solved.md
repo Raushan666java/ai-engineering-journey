@@ -1,13 +1,11 @@
 ---
 id: 29-gate-2019-solved
 slug: /gate-cs-preparation/29-gate-2019-solved
-title: "29-gate-2019-solved"
-sidebar_label: "29-gate-2019-solved"
+title: "GATE CS 2019 Solved Paper"
+sidebar_label: "GATE CS 2019 Solved Paper"
 sidebar_position: 26
 description: "If 1/4 of a number is 15, what is 3/4 of the same number?"
 ---
-
-﻿# GATE CS 2019 Solved Paper
 
 ## Chapter at a Glance
 

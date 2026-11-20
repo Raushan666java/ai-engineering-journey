@@ -1,13 +1,11 @@
 ---
 id: 04-digital-logic
 slug: /gate-cs-preparation/04-digital-logic
-title: "04-digital-logic"
-sidebar_label: "04-digital-logic"
+title: "Digital Logic"
+sidebar_label: "Digital Logic"
 sidebar_position: 4
 description: "GATE CS Weightage: 5–8 marks (2–3 questions on average). High-scoring topic with predictable problem patterns."
 ---
-
-﻿# Chapter 04: Digital Logic
 
 **GATE CS Weightage:** 5–8 marks (2–3 questions on average). High-scoring topic with predictable problem patterns.
 

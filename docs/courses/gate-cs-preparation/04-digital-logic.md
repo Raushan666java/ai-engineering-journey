@@ -1,9 +1,6 @@
 ---
 description: "GATE CS Weightage: 5–8 marks (2–3 questions on average). High-scoring topic with predictable problem patterns."
 ---
-
-﻿# Chapter 04: Digital Logic
-
 **GATE CS Weightage:** 5–8 marks (2–3 questions on average). High-scoring topic with predictable problem patterns.
 
 

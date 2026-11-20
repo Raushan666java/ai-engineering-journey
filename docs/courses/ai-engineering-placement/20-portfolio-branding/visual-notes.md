@@ -8,18 +8,18 @@ description: "One-line answer for interviews: 'GitHub, resume, LinkedIn, a blog 
 
 ![Your Personal Brand Trunk](/img/visual/20-portfolio-branding.svg)
 
-# What the diagram shows
+## What the diagram shows
 
 1. **Core** — Define who you are and the story you tell recruiters — the trunk.
 1. **Channels** — GitHub shows code, resume summarises, LinkedIn networks, a blog teaches, projects prove.
 1. **Feedback** — Each channel feeds traffic and credibility back to the trunk.
 
-# Why this matters for placement
+## Why this matters for placement
 
 - Recruiters screen your GitHub and LinkedIn before your resume reaches a human.
 - Consistent, opinionated, readable code reads more senior than buzzwords.
 
-# Quick revision
+## Quick revision
 
 - GitHub: clean READMEs, small focused repos, a visible streak of contributions.
 - Resume: one page, quantified impact, keywords from the job description.
@@ -27,7 +27,7 @@ description: "One-line answer for interviews: 'GitHub, resume, LinkedIn, a blog 
 - A technical blog doubles as proof of communication — a senior skill.
 - Quality over volume: 2 polished projects beat 10 half-built ones.
 
-# Related chapters
+## Related chapters
 
 - [GitHub profile optimization](01-github-profile-optimization.md)
 - [Technical blogging](03-technical-blogging.md)

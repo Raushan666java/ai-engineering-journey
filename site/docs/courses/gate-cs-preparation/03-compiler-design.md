@@ -1,14 +1,11 @@
 ---
 id: 03-compiler-design
 slug: /gate-cs-preparation/03-compiler-design
-title: "03-compiler-design"
-sidebar_label: "03-compiler-design"
+title: "Compiler Design — GATE CS Preparation"
+sidebar_label: "Compiler Design — GATE CS Preparation"
 sidebar_position: 3
-description: "﻿# Compiler Design —” GATE CS Preparation"
+description: "Compiler design for GATE CS: phases of compilation, lexical analysis, grammar classification, parsing (LL, LR, LALR), syntax-directed translation and code optimisation."
 ---
-
-﻿# Compiler Design —” GATE CS Preparation
-
 
 ## Chapter at a Glance
 

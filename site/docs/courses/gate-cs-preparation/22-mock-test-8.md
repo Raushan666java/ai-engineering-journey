@@ -1,14 +1,11 @@
 ---
 id: 22-mock-test-8
 slug: /gate-cs-preparation/22-mock-test-8
-title: "22-mock-test-8"
-sidebar_label: "22-mock-test-8"
+title: "GATE CS Mock Test 8 — Full-Length Practice Paper (Hardest Edition)"
+sidebar_label: "GATE CS Mock Test 8 — Full-Length Practice Paper (Hardest Edition)"
 sidebar_position: 19
 description: "Total Marks: 100 Duration: 3 Hours Reading Time: 10 minutes"
 ---
-
-﻿# GATE CS Mock Test 8 — Full-Length Practice Paper (Hardest Edition)
-
 
 ## Chapter at a Glance
 

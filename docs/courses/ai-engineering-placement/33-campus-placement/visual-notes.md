@@ -8,18 +8,18 @@ description: "Visual Notes — The Campus Placement Journey: One diagram, the fu
 
 ![The Campus Placement Journey](/img/visual/33-campus-placement.svg)
 
-# What the diagram shows
+## What the diagram shows
 
 1. **Gate 1** — Aptitude, logical reasoning and verbal ability filter the pool first.
 1. **Gate 2** — Coding and company-specific tests separate the technical candidates.
 1. **Gate 3** — Group discussion, HR and technical interviews convert to an offer.
 
-# Why this matters for placement
+## Why this matters for placement
 
 - Understand the structure so you allocate prep to the bottlenecks, not just favourites.
 - Service companies weight aptitude and GD heavily; product companies weight coding — plan per target.
 
-# Quick revision
+## Quick revision
 
 - Know the test pattern per company before you apply; PYQs are your best predictor.
 - Aptitude: speed + accuracy; timed drills beat passive reading.
@@ -27,7 +27,7 @@ description: "Visual Notes — The Campus Placement Journey: One diagram, the fu
 - GD and HR rounds reward clarity and structure, not jargon.
 - Backup offers in hand give you negotiating power on the job you want.
 
-# Related chapters
+## Related chapters
 
 - [Quantitative aptitude](01-quantitative-aptitude.md)
 - [Logical reasoning](02-logical-reasoning.md)

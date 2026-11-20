@@ -1,10 +1,6 @@
 ---
 description: "Graduate Aptitude Test in Engineering (GATE) is a national-level examination conducted jointly by the Indian Institute of Science (IISc) and seven Indian"
 ---
-
-﻿# GATE CS Exam Strategy → Complete Preparation Guide
-
-
 ## Chapter at a Glance
 
 | Aspect | Details |

@@ -1,14 +1,11 @@
 ---
 id: 05-gate-strategy
 slug: /gate-cs-preparation/05-gate-strategy
-title: "05-gate-strategy"
-sidebar_label: "05-gate-strategy"
+title: "GATE CS Exam Strategy — Complete Preparation Guide"
+sidebar_label: "GATE CS Exam Strategy — Complete Preparation Guide"
 sidebar_position: 5
 description: "Graduate Aptitude Test in Engineering (GATE) is a national-level examination conducted jointly by the Indian Institute of Science (IISc) and seven Indian"
 ---
-
-﻿# GATE CS Exam Strategy → Complete Preparation Guide
-
 
 ## Chapter at a Glance
 

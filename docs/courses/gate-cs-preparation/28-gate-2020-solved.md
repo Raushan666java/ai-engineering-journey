@@ -1,9 +1,6 @@
 ---
 description: "The ratio of ages of A and B is 3:4. After 5 years, ratio becomes 4:5. What is A's present age?"
 ---
-
-﻿# GATE CS 2020 Solved Paper
-
 ## Chapter at a Glance
 
 | Aspect | Details |

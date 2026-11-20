@@ -1,9 +1,6 @@
 ---
 description: "Key tip: Memory management + CPU scheduling alone account for ~50% of OS marks."
 ---
-
-﻿# Operating Systems → GATE CS Complete Guide
-
 > Also known as: OS, System Software, Kernel internals
 > GATE weightage: 8–12 marks (approx 10–14% of CS paper)
 

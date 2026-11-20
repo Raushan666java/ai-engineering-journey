@@ -1,14 +1,11 @@
 ---
 id: 15-mock-test-1
 slug: /gate-cs-preparation/15-mock-test-1
-title: "15-mock-test-1"
-sidebar_label: "15 Mock Test 1"
+title: "GATE CS Mock Test 1 — Full-Length Practice Paper"
+sidebar_label: "GATE CS Mock Test 1 — Full-Length Practice Paper"
 sidebar_position: 12
-description: "﻿ï»¿# GATE CS Mock Test 1 -> Full-Length Practice Paper"
+description: "GATE CS mock test 1: a full-length paper in exam order, with an answer key and worked solutions for every question."
 ---
-
-﻿# GATE CS Mock Test 1 -> Full-Length Practice Paper
-
 
 ## Chapter at a Glance
 

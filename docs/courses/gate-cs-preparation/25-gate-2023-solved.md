@@ -1,9 +1,6 @@
 ---
 description: "What is the smallest 4-digit number divisible by 12, 15, and 20?"
 ---
-
-﻿# GATE CS 2023 Solved Paper
-
 ## Chapter at a Glance
 
 | Aspect | Details |

@@ -1,13 +1,11 @@
 ---
 id: 08-database-management-systems
 slug: /gate-cs-preparation/08-database-management-systems
-title: "08-database-management-systems"
-sidebar_label: "08-database-management-systems"
+title: "Database Management Systems"
+sidebar_label: "Database Management Systems"
 sidebar_position: 8
 description: "GATE CS Weightage: 8–12 marks (3–5 questions). Consistent high-weight subject with predictable patterns in normalization, SQL, relational"
 ---
-
-﻿# Chapter 08: Database Management Systems
 
 **GATE CS Weightage:** 8–12 marks (3–5 questions). Consistent high-weight subject with predictable patterns in normalization, SQL, relational algebra, transactions, and B+ trees.
 

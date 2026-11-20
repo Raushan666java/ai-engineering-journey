@@ -1,9 +1,6 @@
 ---
 description: "﻿# GATE CS 2016 Solved Paper"
 ---
-
-﻿# GATE CS 2016 Solved Paper
-
 ## Chapter at a Glance
 
 | Aspect | Details |

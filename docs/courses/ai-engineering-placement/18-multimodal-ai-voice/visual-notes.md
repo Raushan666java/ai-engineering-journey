@@ -8,18 +8,18 @@ description: "One-line answer for interviews: 'Audio and vision are encoded, fus
 
 ![Multimodal Input to Voice Output](/img/visual/18-multimodal-ai-voice.svg)
 
-# What the diagram shows
+## What the diagram shows
 
 1. **Input** — ASR turns speech into text; vision encoders turn images/video into embeddings.
 1. **Fusion** — The LLM ingests text + image embeddings together for cross-modal reasoning.
 1. **Output** — TTS speaks the answer; the same stack serves image captions, voice agents, and document AI.
 
-# Why this matters for placement
+## Why this matters for placement
 
 - Voice agents and document AI are booming product categories — a multimodal mental model pays off.
 - Explaining the pipeline (not a single model) shows you think systems-first.
 
-# Quick revision
+## Quick revision
 
 - ASR: Whisper-style, output text for downstream NLP; transcription ≠ understanding.
 - Vision: encode images to embeddings, align with text in a joint space.
@@ -27,7 +27,7 @@ description: "One-line answer for interviews: 'Audio and vision are encoded, fus
 - OCR drops into the RAG ingest path to make documents searchable.
 - Fusing modalities late (separate encoders) is cheaper and modular.
 
-# Related chapters
+## Related chapters
 
 - [Computer vision basics](01-computer-vision-basics.md)
 - [OCR and document AI](04-ocr-and-document-ai.md)

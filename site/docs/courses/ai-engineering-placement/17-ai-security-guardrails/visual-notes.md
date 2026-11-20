@@ -13,18 +13,18 @@ description: "One-line answer for interviews: 'Filter inputs → defend against 
 
 ![Defense-in-Depth for AI](/img/visual/17-ai-security-guardrails.svg)
 
-# What the diagram shows
+## What the diagram shows
 
 1. **Inbound** — Input filtering and prompt-injection defense catch hostile prompts before the model sees them.
 1. **Model** — Guardrails constrain behaviour; output validation rejects bad or unsafe generations.
 1. **Outbound** — PII protection scrubs sensitive data, and audit logging records every action.
 
-# Why this matters for placement
+## Why this matters for placement
 
 - Security and compliance are now first-class AI interview topics — prompt injection is the new SQL injection.
 - Showing a layered (defense-in-depth) posture beats listing a single tool.
 
-# Quick revision
+## Quick revision
 
 - Prompt injection ≠ SQL/command injection: it is malicious instructions inside otherwise benign input.
 - Layered defense: input filtering, output validation, allowlists, human review.
@@ -32,7 +32,7 @@ description: "One-line answer for interviews: 'Filter inputs → defend against 
 - Rate limits and budgets contain blast radius of abuse.
 - Get consent, document retention, minimise PII — compliance by design.
 
-# Related chapters
+## Related chapters
 
 - [Prompt injection defense](02-prompt-injection-defense.md)
 - [Content filtering](03-content-filtering.md)

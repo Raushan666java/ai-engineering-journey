@@ -1,9 +1,6 @@
 ---
 description: "Mission: Crack Indian government IT/CS officer exams with a structured, subject-wise preparation system. Primary Target: IBPS SO IT Officer Scale I"
 ---
-
-﻿# Government Exams — Complete Preparation Hub
-
 > **Mission:** Crack Indian government IT/CS officer exams with a structured, subject-wise preparation system.
 >
 > **Primary Target:** IBPS SO IT Officer Scale I (Prelims: ~~, Mains: ~~)

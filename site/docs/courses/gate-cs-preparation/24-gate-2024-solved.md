@@ -1,13 +1,11 @@
 ---
 id: 24-gate-2024-solved
 slug: /gate-cs-preparation/24-gate-2024-solved
-title: "24-gate-2024-solved"
-sidebar_label: "24-gate-2024-solved"
+title: "GATE CS 2024 Solved Paper"
+sidebar_label: "GATE CS 2024 Solved Paper"
 sidebar_position: 21
 description: "A person buys 20 articles for ₹10 each and sells 15 of them at ₹12 each. The remaining 5 are sold at a loss of 10%. What is the overall profit"
 ---
-
-﻿# GATE CS 2024 Solved Paper
 
 ## Chapter at a Glance
 

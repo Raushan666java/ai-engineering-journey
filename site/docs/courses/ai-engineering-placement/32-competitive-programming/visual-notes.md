@@ -13,18 +13,18 @@ description: "Visual Notes — Training That Crushes Interviews: One diagram, th
 
 ![Training That Crushes Interviews](/img/visual/32-competitive-programming.svg)
 
-# What the diagram shows
+## What the diagram shows
 
 1. **Patterns** — Recognise common problem patterns (sliding window, graphs, DP) fast.
 1. **Speed** — Level-up typing and reasoning speed under time pressure.
 1. **Review** — Debrief every contest/round to compound learning.
 
-# Why this matters for placement
+## Why this matters for placement
 
 - Pattern recognition converts unknown problems into known ones — the core CP skill.
 - Consistency over intensity: consistent review compounds faster than cramming.
 
-# Quick revision
+## Quick revision
 
 - Build a card-index of patterns mapped to their triggers.
 - Practice under a clock; interview success is partly a speed skill.
@@ -32,7 +32,7 @@ description: "Visual Notes — Training That Crushes Interviews: One diagram, th
 - Priority: correctness -> complexity -> style, in that order during a round.
 - Spaced review (SM-2) prevents forgetting the patterns you cannot develop.
 
-# Related chapters
+## Related chapters
 
 - [CP strategy](01-cp-strategy.md)
 - [Advanced algorithms](02-advanced-algorithms.md)

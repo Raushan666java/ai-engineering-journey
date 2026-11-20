@@ -1,9 +1,6 @@
 ---
 description: "If 7x + 3y = 31 and 3x + 7y = 29, what is x + y?"
 ---
-
-﻿# GATE CS 2018 Solved Paper
-
 ## Chapter at a Glance
 
 | Aspect | Details |

@@ -1,10 +1,6 @@
 ---
 description: "General Aptitude is a compulsory section in GATE CS, carrying 15 marks (15% of the total 100 marks). It consists of:"
 ---
-
-﻿# General Aptitude for GATE CS
-
-
 ## Chapter at a Glance
 
 | Aspect | Details |

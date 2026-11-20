@@ -1,10 +1,6 @@
 ---
 description: "The von Neumann architecture (stored-program concept) uses a single shared memory for both instructions and data."
 ---
-
-﻿# Chapter 11: Computer Organization & Architecture
-
-
 ## Chapter at a Glance
 
 | Aspect | Details |

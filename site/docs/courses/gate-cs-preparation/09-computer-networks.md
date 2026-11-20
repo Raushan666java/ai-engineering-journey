@@ -1,13 +1,11 @@
 ---
 id: 09-computer-networks
 slug: /gate-cs-preparation/09-computer-networks
-title: "09-computer-networks"
-sidebar_label: "09-computer-networks"
+title: "Computer Networks — GATE CS Comprehensive Guide"
+sidebar_label: "Computer Networks — GATE CS Comprehensive Guide"
 sidebar_position: 9
-description: "﻿# Chapter 9: Computer Networks —” GATE CS Comprehensive Guide"
+description: "Computer networks for GATE CS: layered models, framing and switching, IPv4/IPv6 addressing and subnetting, routing algorithms, TCP congestion control and applied network security."
 ---
-
-﻿# Chapter 9: Computer Networks —” GATE CS Comprehensive Guide
 
 ---
 

@@ -1,13 +1,11 @@
 ---
 id: 07-operating-systems
 slug: /gate-cs-preparation/07-operating-systems
-title: "07-operating-systems"
-sidebar_label: "07-operating-systems"
+title: "Operating Systems — GATE CS Complete Guide"
+sidebar_label: "Operating Systems — GATE CS Complete Guide"
 sidebar_position: 7
 description: "Key tip: Memory management + CPU scheduling alone account for ~50% of OS marks."
 ---
-
-﻿# Operating Systems → GATE CS Complete Guide
 
 > Also known as: OS, System Software, Kernel internals
 > GATE weightage: 8–12 marks (approx 10–14% of CS paper)

@@ -8,18 +8,18 @@ description: "Visual Notes — Multi-Agent Orchestration: One diagram, the full 
 
 ![Multi-Agent Orchestration](/img/visual/22-advanced-ai-agents.svg)
 
-# What the diagram shows
+## What the diagram shows
 
 1. **Orchestrator** — A planner decomposes the task and assigns subtasks to specialists.
 1. **Specialists** — Researcher, coder and reviewer agents each own one capability, using tools and shared memory.
 1. **Governance** — A tool registry, shared memory and guardrails keep the swarm safe and consistent.
 
-# Why this matters for placement
+## Why this matters for placement
 
 - Agent orchestration is the cutting edge of hiring for 2026 — leading edge questions land here.
 - Being fluent across harness vs framework (MCP, CrewAI, AutoGen, OpenAI Agents SDK) shows depth.
 
-# Quick revision
+## Quick revision
 
 - Prefer a single agent with tools over orchestration unless tasks truly parallelise.
 - MCP standardises how agents reach external tools/data.
@@ -27,7 +27,7 @@ description: "Visual Notes — Multi-Agent Orchestration: One diagram, the full 
 - Guardrails: budgets, allowlists and human-in-the-loop gates scale to teams.
 - Evaluate the whole loop (task completion), not just single LLM outputs.
 
-# Related chapters
+## Related chapters
 
 - [Context engineering](02-context-engineering.md)
 - [MCP protocol tools](04-mcp-protocol-tools.md)

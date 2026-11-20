@@ -3,10 +3,6 @@ title: "15-mock-test-1"
 sidebar_label: "15-mock-test-1"
 description: "﻿ï»¿# GATE CS Mock Test 1 -> Full-Length Practice Paper"
 ---
-
-﻿# GATE CS Mock Test 1 -> Full-Length Practice Paper
-
-
 ## Chapter at a Glance
 
 | Aspect | Details |

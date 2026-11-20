@@ -8,18 +8,18 @@ description: "Visual Notes — The Data Pipeline: One diagram, the full picture.
 
 ![The Data Pipeline](/img/visual/25-data-engineering.svg)
 
-# What the diagram shows
+## What the diagram shows
 
 1. **Ingest** — Pull from sources (databases, streams, files) in batch or real-time.
 1. **Process** — Clean, transform and enrich with Spark or streaming engines.
 1. **Serve** — Store in a warehouse/lakehouse and feature store, then serve models and BI.
 
-# Why this matters for placement
+## Why this matters for placement
 
 - AI models are only as good as their data plumbing — data engineering questions are common.
 - Batch-vs-streaming trade-offs and the feature store are classic focuses.
 
-# Quick revision
+## Quick revision
 
 - ETL vs ELT: transform before vs after loading into the warehouse.
 - Lakehouse = one place for structured + unstructured, cheaper than warehouse.
@@ -27,7 +27,7 @@ description: "Visual Notes — The Data Pipeline: One diagram, the full picture.
 - Feature store: compute once, share across training and serving — avoids train/serve skew.
 - De-dup and backfill idempotence keep pipelines correct under retries.
 
-# Related chapters
+## Related chapters
 
 - [ETL pipelines](01-etl-pipelines.md)
 - [Data lakehouse warehouse](02-data-lakehouse-warehouse.md)

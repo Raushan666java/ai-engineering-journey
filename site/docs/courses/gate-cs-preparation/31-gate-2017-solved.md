@@ -1,13 +1,11 @@
 ---
 id: 31-gate-2017-solved
 slug: /gate-cs-preparation/31-gate-2017-solved
-title: "31-gate-2017-solved"
-sidebar_label: "31-gate-2017-solved"
+title: "GATE CS 2017 Solved Paper"
+sidebar_label: "GATE CS 2017 Solved Paper"
 sidebar_position: 28
-description: "﻿# GATE CS 2017 Solved Paper"
+description: "GATE CS 2017 solved paper: every question with the official answer and a worked explanation, grouped by subject so weak areas are easy to find."
 ---
-
-﻿# GATE CS 2017 Solved Paper
 
 ## Chapter at a Glance
 

@@ -1,9 +1,6 @@
 ---
 description: "If 1/4 of a number is 15, what is 3/4 of the same number?"
 ---
-
-﻿# GATE CS 2019 Solved Paper
-
 ## Chapter at a Glance
 
 | Aspect | Details |

@@ -1,13 +1,11 @@
 ---
 id: 05-mixed-data-interpretation
 slug: /data-analysis-interpretation/05-mixed-data-interpretation
-title: "05-mixed-data-interpretation"
-sidebar_label: "05-mixed-data-interpretation"
+title: "Mixed Data Interpretation"
+sidebar_label: "Mixed Data Interpretation"
 sidebar_position: 5
 description: "By the end of this chapter, you will be able to: - Solve complex DI sets combining multiple data formats (table + bar + pie in one question set) - Answer"
 ---
-
-﻿# Chapter 5: Mixed Data Interpretation
 
 ## Learning Objectives
 

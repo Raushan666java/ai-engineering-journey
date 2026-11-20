@@ -1,14 +1,11 @@
 ---
 id: 01-general-aptitude
 slug: /gate-cs-preparation/01-general-aptitude
-title: "01-general-aptitude"
-sidebar_label: "01-general-aptitude"
+title: "General Aptitude for GATE CS"
+sidebar_label: "General Aptitude for GATE CS"
 sidebar_position: 1
 description: "General Aptitude is a compulsory section in GATE CS, carrying 15 marks (15% of the total 100 marks). It consists of:"
 ---
-
-﻿# General Aptitude for GATE CS
-
 
 ## Chapter at a Glance
 

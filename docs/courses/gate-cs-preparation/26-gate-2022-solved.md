@@ -1,9 +1,6 @@
 ---
 description: "The sum of two numbers is 60 and their product is 900. Find the larger number."
 ---
-
-﻿# GATE CS 2022 Solved Paper
-
 ## Chapter at a Glance
 
 | Aspect | Details |

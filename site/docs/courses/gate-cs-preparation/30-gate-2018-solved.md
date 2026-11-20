@@ -1,13 +1,11 @@
 ---
 id: 30-gate-2018-solved
 slug: /gate-cs-preparation/30-gate-2018-solved
-title: "30-gate-2018-solved"
-sidebar_label: "30-gate-2018-solved"
+title: "GATE CS 2018 Solved Paper"
+sidebar_label: "GATE CS 2018 Solved Paper"
 sidebar_position: 27
 description: "If 7x + 3y = 31 and 3x + 7y = 29, what is x + y?"
 ---
-
-﻿# GATE CS 2018 Solved Paper
 
 ## Chapter at a Glance
 

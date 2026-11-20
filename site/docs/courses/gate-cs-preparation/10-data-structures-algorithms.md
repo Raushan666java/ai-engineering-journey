@@ -1,13 +1,11 @@
 ---
 id: 10-data-structures-algorithms
 slug: /gate-cs-preparation/10-data-structures-algorithms
-title: "10-data-structures-algorithms"
-sidebar_label: "10-data-structures-algorithms"
+title: "Data Structures & Algorithms — GATE CS Preparation"
+sidebar_label: "Data Structures & Algorithms — GATE CS Preparation"
 sidebar_position: 10
 description: "Properties: - Transitive: f(n) = O(g(n)) and g(n) = O(h(n)) ⇒ f(n) = O(h(n)) - Reflexive: f(n) = O(f(n)) - Symmetric for Θ only: f(n) = Θ(g(n))"
 ---
-
-﻿# Chapter 10: Data Structures & Algorithms → GATE CS Preparation
 
 ---
 

@@ -1,9 +1,6 @@
 ---
 description: "A car travels 60 km at 40 km/h and returns at 60 km/h. Average speed for the round trip is:"
 ---
-
-﻿# GATE CS 2021 Solved Paper
-
 ## Chapter at a Glance
 
 | Aspect | Details |

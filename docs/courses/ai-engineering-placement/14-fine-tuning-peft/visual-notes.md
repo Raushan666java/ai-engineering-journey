@@ -8,18 +8,18 @@ description: "One-line answer for interviews: 'Full fine-tuning changes every we
 
 ![Choosing How to Adapt a Model](/img/visual/14-fine-tuning-peft.svg)
 
-# What the diagram shows
+## What the diagram shows
 
 1. **Full fine-tuning** — All weights update. Maximum quality, expensive, needs the most data and GPU memory.
 1. **LoRA** — Low-rank adapters freeze the base and train a small delta — cheap, modular, ~full-fine-tune quality.
 1. **QLoRA** — Quantises the base weights so you can fine-tune huge models on one GPU; adapters still train in precision.
 
-# Why this matters for placement
+## Why this matters for placement
 
 - The "when to fine-tune vs prompt vs RAG" decision is a flagship LLM engineering question.
 - Quoting parameter counts (LoRA ~0.1–1% of base) and VRAM wins you instant credit.
 
-# Quick revision
+## Quick revision
 
 - Fine-tune only when behaviour must change; RAG/prompt for facts and recent info.
 - Full FT = all weights; LoRA = low-rank ∆; QLoRA = quantised base + LoRA.
@@ -27,7 +27,7 @@ description: "One-line answer for interviews: 'Full fine-tuning changes every we
 - Data quality beats data quantity; dedupe and de-contaminate eval sets.
 - Always hold out a test set the base model must not memorise.
 
-# Related chapters
+## Related chapters
 
 - [When to fine-tune](01-when-to-fine-tune.md)
 - [LoRA theory](03-lora-theory.md)

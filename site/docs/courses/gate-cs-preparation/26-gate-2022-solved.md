@@ -1,13 +1,11 @@
 ---
 id: 26-gate-2022-solved
 slug: /gate-cs-preparation/26-gate-2022-solved
-title: "26-gate-2022-solved"
-sidebar_label: "26-gate-2022-solved"
+title: "GATE CS 2022 Solved Paper"
+sidebar_label: "GATE CS 2022 Solved Paper"
 sidebar_position: 23
 description: "The sum of two numbers is 60 and their product is 900. Find the larger number."
 ---
-
-﻿# GATE CS 2022 Solved Paper
 
 ## Chapter at a Glance
 

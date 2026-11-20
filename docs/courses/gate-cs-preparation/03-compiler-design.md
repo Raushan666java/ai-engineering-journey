@@ -1,10 +1,6 @@
 ---
 description: "﻿# Compiler Design —” GATE CS Preparation"
 ---
-
-﻿# Compiler Design —” GATE CS Preparation
-
-
 ## Chapter at a Glance
 
 | Aspect | Details |

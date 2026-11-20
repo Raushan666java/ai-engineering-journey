@@ -1,10 +1,6 @@
 ---
 description: "Typical weight: 10–15 marks (~8–10% of total). Questions span all 4 units below, with heavy emphasis on closure properties, pumping lemma"
 ---
-
-﻿# Theory of Computation → GATE CS
-
-
 ## Chapter at a Glance
 
 | Aspect | Details |

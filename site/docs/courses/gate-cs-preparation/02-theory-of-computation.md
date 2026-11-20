@@ -1,14 +1,11 @@
 ---
 id: 02-theory-of-computation
 slug: /gate-cs-preparation/02-theory-of-computation
-title: "02-theory-of-computation"
-sidebar_label: "02-theory-of-computation"
+title: "Theory of Computation — GATE CS"
+sidebar_label: "Theory of Computation — GATE CS"
 sidebar_position: 2
 description: "Typical weight: 10–15 marks (~8–10% of total). Questions span all 4 units below, with heavy emphasis on closure properties, pumping lemma"
 ---
-
-﻿# Theory of Computation → GATE CS
-
 
 ## Chapter at a Glance
 

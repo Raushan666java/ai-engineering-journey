@@ -1,10 +1,6 @@
 ---
 description: "Total Marks: 100 Duration: 3 Hours Reading Time: 10 minutes"
 ---
-
-﻿# GATE CS Mock Test 8 — Full-Length Practice Paper (Hardest Edition)
-
-
 ## Chapter at a Glance
 
 | Aspect | Details |

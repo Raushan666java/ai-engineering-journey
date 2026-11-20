@@ -1,9 +1,6 @@
 ---
 description: "GATE CS Weightage: 8–12 marks (3–5 questions). Consistent high-weight subject with predictable patterns in normalization, SQL, relational"
 ---
-
-﻿# Chapter 08: Database Management Systems
-
 **GATE CS Weightage:** 8–12 marks (3–5 questions). Consistent high-weight subject with predictable patterns in normalization, SQL, relational algebra, transactions, and B+ trees.
 
 

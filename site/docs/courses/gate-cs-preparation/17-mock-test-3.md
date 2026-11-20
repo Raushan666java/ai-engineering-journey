@@ -1,14 +1,11 @@
 ---
 id: 17-mock-test-3
 slug: /gate-cs-preparation/17-mock-test-3
-title: "17-mock-test-3"
-sidebar_label: "17 Mock Test 3"
+title: "GATE CS Mock Test 3 — Full-Length Practice Paper"
+sidebar_label: "GATE CS Mock Test 3 — Full-Length Practice Paper"
 sidebar_position: 14
 description: "Total Marks: 100 Duration: 3 Hours Reading Time: 10 minutes"
 ---
-
-﻿# GATE CS Mock Test 3 → Full-Length Practice Paper
-
 
 ## Chapter at a Glance
 

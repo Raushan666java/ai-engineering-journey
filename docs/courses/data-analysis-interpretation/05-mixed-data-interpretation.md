@@ -1,10 +1,6 @@
 ---
 description: "By the end of this chapter, you will be able to: - Solve complex DI sets combining multiple data formats (table + bar + pie in one question set) - Answer"
 ---
-
-
-﻿# Chapter 5: Mixed Data Interpretation
-
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:

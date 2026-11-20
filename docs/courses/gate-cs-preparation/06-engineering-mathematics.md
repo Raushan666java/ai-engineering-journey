@@ -1,9 +1,6 @@
 ---
 description: "Goal: Rapid revision of formulas + GATE-style solved problems. Assumes you have foundational knowledge from Discrete Math & ML courses."
 ---
-
-﻿# Engineering Mathematics → GATE CS Refresher
-
 **Goal:** Rapid revision of formulas + GATE-style solved problems. Assumes you have foundational knowledge from Discrete Math & ML courses.
 
 **Covers:** Linear Algebra, Calculus, Probability & Statistics, Discrete Math Refresher, Numerical Methods.

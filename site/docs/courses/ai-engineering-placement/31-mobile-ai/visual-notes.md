@@ -13,18 +13,18 @@ description: "Visual Notes — AI on Constrained Devices: One diagram, the full 
 
 ![AI on Constrained Devices](/img/visual/31-mobile-ai.svg)
 
-# What the diagram shows
+## What the diagram shows
 
 1. **Optimise** — Quantisation (ONNX, TFLite, CoreML) shrinks models to fit device memory and power.
 1. **Run** — On-device inference keeps privacy and cuts latency on the phone/edge.
 1. **Fallback** — Cloud handles the heavy, rare, or latency-tolerant cases; edge handles the steady state.
 
-# Why this matters for placement
+## Why this matters for placement
 
 - On-device AI is a fast-growing niche; edge-vs-cloud split is a favourite architecture question.
 - Naming trade-offs (privacy vs memory vs latency) marks real mobile-AI depth.
 
-# Quick revision
+## Quick revision
 
 - Quantisation (INT8) cuts size/latency at a small accuracy cost — the #1 edge trick.
 - ONNX Runtime is the portability layer; TFLite/CoreML bake to the platform.
@@ -32,7 +32,7 @@ description: "Visual Notes — AI on Constrained Devices: One diagram, the full 
 - Watch inference latency, model load time, and on-device memory.
 - Offline capability is the UX win: no network, still intelligent.
 
-# Related chapters
+## Related chapters
 
 - [ONNX Runtime mobile](01-onnx-runtime-mobile.md)
 - [TFLite CoreML](02-tflite-coreml.md)

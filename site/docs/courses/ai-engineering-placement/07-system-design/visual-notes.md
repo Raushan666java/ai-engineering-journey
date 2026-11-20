@@ -13,18 +13,18 @@ description: "One-line answer for interviews: 'Clients hit a load balancer → g
 
 ![One Request, the Full Ride](/img/visual/07-system-design.svg)
 
-# What the diagram shows
+## What the diagram shows
 
 1. **Edge** — A load balancer terminates TLS and spreads traffic; an API gateway enforces auth, rate limits and routing.
 1. **Fast path** — A cache (Redis) serves hot data before the slow source is ever touched, cooling tail latency.
 1. **Core** — Services own one bounded domain; the database stores truth; a message queue and workers decouple bursts from the hot path.
 
-# Why this matters for placement
+## Why this matters for placement
 
 - Every system-design round rewards a disciplined skeleton: edge -> cache -> service -> data -> async tail.
 - Naming one company-specific insertion (search, payments, analytics) on this skeleton reads as senior level.
 
-# Quick revision
+## Quick revision
 
 - CAP: choose consistency or availability during partitions; usually eventual consistency + retries.
 - Cache strategies: cache-aside, write-through, write-back — know trade-offs cold.
@@ -32,7 +32,7 @@ description: "One-line answer for interviews: 'Clients hit a load balancer → g
 - Database scaling: read replicas -> sharding -> partitioning; indexes come first.
 - Idempotency keys on POST + retry with backoff is the "production instinct" signal.
 
-# Related chapters
+## Related chapters
 
 - [Scalability fundamentals](01-scalability-fundamentals.md)
 - [Message queues](03-message-queues.md)

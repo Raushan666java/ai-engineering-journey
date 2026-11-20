@@ -1,13 +1,11 @@
 ---
 id: 06-engineering-mathematics
 slug: /gate-cs-preparation/06-engineering-mathematics
-title: "06-engineering-mathematics"
-sidebar_label: "06-engineering-mathematics"
+title: "Engineering Mathematics — GATE CS Refresher"
+sidebar_label: "Engineering Mathematics — GATE CS Refresher"
 sidebar_position: 6
 description: "Goal: Rapid revision of formulas + GATE-style solved problems. Assumes you have foundational knowledge from Discrete Math & ML courses."
 ---
-
-﻿# Engineering Mathematics → GATE CS Refresher
 
 **Goal:** Rapid revision of formulas + GATE-style solved problems. Assumes you have foundational knowledge from Discrete Math & ML courses.
 

@@ -1,14 +1,11 @@
 ---
 id: 20-mock-test-6
 slug: /gate-cs-preparation/20-mock-test-6
-title: "20-mock-test-6"
-sidebar_label: "20-mock-test-6"
+title: "GATE CS Mock Test 6 — Full-Length Practice Paper"
+sidebar_label: "GATE CS Mock Test 6 — Full-Length Practice Paper"
 sidebar_position: 17
 description: "Total Marks: 100 Duration: 3 Hours Reading Time: 10 minutes"
 ---
-
-﻿# GATE CS Mock Test 6 → Full-Length Practice Paper
-
 
 ## Chapter at a Glance
 

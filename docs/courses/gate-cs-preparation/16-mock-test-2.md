@@ -3,10 +3,6 @@ title: "16-mock-test-2"
 sidebar_label: "16-mock-test-2"
 description: "Total Marks: 100 Duration: 3 Hours Reading Time: 10 minutes"
 ---
-
-﻿# GATE CS Mock Test 2 → Full-Length Practice Paper
-
-
 ## Chapter at a Glance
 
 | Aspect | Details |

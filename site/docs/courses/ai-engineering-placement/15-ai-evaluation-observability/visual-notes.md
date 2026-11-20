@@ -13,18 +13,18 @@ description: "One-line answer for interviews: 'Offline metrics validate before l
 
 ![Evaluation and Observability in One View](/img/visual/15-ai-evaluation-observability.svg)
 
-# What the diagram shows
+## What the diagram shows
 
 1. **Offline** — Golden datasets and LLM-as-judge score quality before anything ships.
 1. **Online** — Latency, error rate, drift and user feedback track live behaviour.
 1. **Trace & cost** — Every request is traced across steps; token and dollar costs are accounted per feature.
 
-# Why this matters for placement
+## Why this matters for placement
 
 - "How do you measure an LLM app?" — having offline + online + cost answers it completely.
 - The ability to build eval harnesses is a differentiator recruiters actively screen for.
 
-# Quick revision
+## Quick revision
 
 - Offline first: regression suites catch silent quality drops before users do.
 - LLM-as-judge: prompt a strong model to score outputs; validate the judge against humans.
@@ -32,7 +32,7 @@ description: "One-line answer for interviews: 'Offline metrics validate before l
 - Monitor drift, latency percentiles, error budgets — not just averages.
 - Cost per request is an evaluation axis, not an afterthought.
 
-# Related chapters
+## Related chapters
 
 - [Evaluation metrics](01-evaluation-metrics.md)
 - [LLM as judge](02-llm-as-judge.md)

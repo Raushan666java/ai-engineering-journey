@@ -1,14 +1,11 @@
 ---
 id: 11-computer-architecture
 slug: /gate-cs-preparation/11-computer-architecture
-title: "11-computer-architecture"
-sidebar_label: "11-computer-architecture"
+title: "Computer Organization & Architecture"
+sidebar_label: "Computer Organization & Architecture"
 sidebar_position: 11
 description: "The von Neumann architecture (stored-program concept) uses a single shared memory for both instructions and data."
 ---
-
-﻿# Chapter 11: Computer Organization & Architecture
-
 
 ## Chapter at a Glance
 

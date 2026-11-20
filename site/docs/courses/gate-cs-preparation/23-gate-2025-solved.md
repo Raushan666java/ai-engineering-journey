@@ -1,13 +1,11 @@
 ---
 id: 23-gate-2025-solved
 slug: /gate-cs-preparation/23-gate-2025-solved
-title: "23-gate-2025-solved"
-sidebar_label: "23-gate-2025-solved"
+title: "GATE CS 2025 Solved Paper"
+sidebar_label: "GATE CS 2025 Solved Paper"
 sidebar_position: 20
 description: "A train 300 meters long crosses a platform 200 meters long in 25 seconds. What is the speed of the train in km/h?"
 ---
-
-﻿# GATE CS 2025 Solved Paper
 
 ## Chapter at a Glance
 

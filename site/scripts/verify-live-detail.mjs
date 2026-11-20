@@ -61,7 +61,9 @@ checks.push([
   brokenLandings.length ? `404: ${brokenLandings.join(', ')}` : `${landings.length} of ${landings.length} live`,
 ]);
 const ml = landingResults[0];
-const mlChapterLinks = (ml.text.match(/href="\/ai-engineering-journey\/machine-learning\/[a-z0-9-]+\/"/g) || []).length;
+// Chapter links carry no trailing slash because `trailingSlash` is unset, so
+// match either shape; GitHub Pages redirects the bare path to the directory.
+const mlChapterLinks = (ml.text.match(/href="\/ai-engineering-journey\/machine-learning\/[a-z0-9-]+\/?"/g) || []).length;
 checks.push(['a landing page links to its chapters', mlChapterLinks >= 8, `${mlChapterLinks} chapter links`]);
 
 // Count how many single-segment course routes the sitemap publishes. Before the

@@ -352,3 +352,140 @@ preference relaxed around it, and a chunk with nothing staged is skipped because
 `git diff --cached --quiet` says it is already on the branch.
 
 All six chunks pushed: `origin/gh-pages` = `629f086542`.
+
+## Fourth pass: what the first green build then reported
+
+`onBrokenLinks: 'throw'` had been switched on for the third-pass build and it
+failed that build, which is the point — 59 links on `/course-overview` went
+nowhere and the page had been shipping them. This pass starts from the first
+build that threw and works down its list.
+
+### Thirty-two pages published their own YAML as body text
+
+`docs/courses/learning-course` came from a bad import. Each affected file had a
+frontmatter block whose only key was `description:`, whose value was scraped from
+the first line of the original file — which happened to be the YAML — and the
+original block was then dumped into the article body:
+
+```yaml
+---
+description: "slug: /learning-course/02_AI_Learning_Basics/Learning_Science
+              title: 'Learning Science - Day 1' sidebar_label: '...'"
+---
+
+<mojibake BOM>---
+slug: /learning-course/02_AI_Learning_Basics/Learning_Science
+title: "Learning Science - Day 1"
+sidebar_label: "Learning Science - Day 1"
+sidebar_position: 5
+---
+# Learning Science - Day 1
+```
+
+A reader got two horizontal rules and a paragraph of YAML before the article.
+The page had no real title, so the tab, the sidebar entry and the social card
+fell back to a guess. Its slug and sidebar position sat in the body where
+nothing reads them, so the URL came from the file path. And the description in
+search results was the string `slug: /learning-course/...`.
+
+Each page now has one frontmatter block rebuilt from the embedded one, a
+description derived from the page's own goal paragraph, and a body that starts
+where the article starts. The duplicate H1 goes too, since the title already
+renders as the page heading. Both trees were written, because a routine body
+sync from `docs/` would otherwise restore the YAML.
+
+Scripts: `fix-embedded-frontmatter.mjs`, `embedded-frontmatter-report.mjs`.
+
+### The catalogue page was still the Material for MkDocs one
+
+`docs/index.md` — the sidebar's first entry, at `/course-overview` — was the
+MkDocs page it started life as. Its CSS classes (`home-hero`, `hero-btn`,
+`course-chaps`, `cta-row`) do not exist in this theme, so nothing was styled.
+Its icon syntax (`:fontawesome-solid-brain:{ .lg .middle }`) and `grid cards`
+directive are MkDocs-only and rendered as literal text. All 59 catalogue links
+pointed at `/courses/<slug>/`, which stopped existing when the landing pages
+moved. It linked to `/roadmap/`, `/trending/`, `/projects/`, `/resume/` and four
+`ai-engineering-from-scratch/phases/...` pages, none of which exist. And it
+advertised "52+ Courses", "1,900+ Lessons", "170K+ Lines" and "700+ Problems"
+against a measured 60 courses and 1,282 teaching chapters.
+
+The page is now generated from the same two data files the React pages read —
+`courses.ts` for names and areas, `chapter-counts.ts` for measured sizes — and
+both trees get the same body, so a sync between them is a no-op. Links are
+site-absolute, and `onBrokenLinks: 'throw'` means a catalogue entry that stops
+resolving fails the build instead of shipping a 404.
+
+Script: `gen-course-overview.mjs`.
+
+### One link, repeated 1,423 times: the `/about` anchor
+
+The navbar's `Hire me` button, the footer's `Contact` item and the homepage's
+closing call to action all point at `/about#contact`. Because the footer is on
+every page, the build reported that one link as a broken anchor **1,426 times**.
+
+The anchor was not missing — the rendered HTML has `<section id="contact">`.
+Docusaurus collects anchors from markdown headings automatically; a React page
+in `src/pages` has to declare its own with `useBrokenLinks().collectAnchor()`.
+A target page that collected no anchors is treated as broken, so every link into
+`/about` was flagged. The damage is not the noise: 1,423 false positives hide
+the real ones.
+
+`about.tsx` now registers `contact`, and the remaining four turned out to be
+genuine: `learning-how-to-learn/ch-16` has a "what to do next" table linking to
+`#q261`, `#q267`, `#q273` and `#q278`, but its headings slugify to
+`q261-how-do-i-conduct-a-comprehensive-self-assessment` and friends. The links
+now use the slugs the page actually emits, read out of the built HTML rather
+than guessed.
+
+Build 12 reports **0 broken links and 0 broken anchors**.
+
+### A dollar sign in prose is a math delimiter
+
+KaTeX warnings had been explained away as currency false positives. They are
+not: `FOLLOW(S)={$}` in a compiler-design drill opens a math span that never
+closes, so the rest of the paragraph is swallowed; `A$AP Rocky` in a
+computer-vision chapter does the same. `$API_KEY`, `${VAR}`, `$?` and
+`${{ secrets.X }}` behaved identically.
+
+`escape-drill-dollars.mjs` escapes a bare dollar as `\$` — but only on pages
+that contain no mathematics at all, where no `$` can be a delimiter by
+definition. Pages that contain math are listed and left alone, because choosing
+which dollar is a delimiter needs eyes and a wrong guess breaks a working
+formula. 55 pages, 96 dollars. The pass skips code fences, indented code blocks
+and inline code, because a `\$` shown verbatim in a code sample is a new bug.
+
+Three spots needed judgement rather than the mechanical pass:
+`18-debugging-code-review` and `04-lora-implementation` had dollars inside
+`<code>` elements and now use backtick spans, where a `$` is unambiguous;
+`03-strings` quotes the character itself and uses `&#36;`. Two files were
+reverted after review — `java/58-interview-rest-api` and
+`job-preparation/03-aptitude-test-preparation` keep their dollars inside
+indented code blocks, where the escape would be visible to the reader.
+
+### Two files that exist for the author were published
+
+`ai-engineering-placement/PLAN.md` is a syllabus expansion plan and
+`courses/TEMPLATE.md` is the chapter template. Both are marked `draft: true`,
+which the production build skips.
+
+### The URL space is now single-shaped
+
+After the landing-page fix, 89 URLs were still published under `/courses/...`,
+derived from the file path because those docs declared no `slug:`. Same content
+reachable at two shapes is duplicate content for a crawler and an inconsistent
+URL space for a reader. 1,417 of 1,419 docs now carry an explicit slug;
+`route-collisions.mjs` checks that no route and no explicit id is declared twice,
+and reports zero of either.
+
+### What the fourth-pass build reports
+
+```
+build 12        exit 0, 1,422 pages, search index 20.6 MB (3 groups)
+broken links    0        (onBrokenLinks: 'throw')
+broken anchors  0        (was 1,426)
+KaTeX warnings  5 unknownSymbol, 6 commentAtEnd   (was ~28)
+```
+
+The remaining KaTeX warnings are `\%` and currency amounts that sat next to real
+math, plus one `<p>` whose dollars are inside an HTML block on a page that does
+contain math. They are cosmetic: the page renders.

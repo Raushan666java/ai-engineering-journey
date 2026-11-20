@@ -132,14 +132,26 @@ if ($SingleCommit) {
   foreach ($pack in $packs) {
     $n++
     $total = $packs.Count
-    Write-Output "      chunk $n/$total : $($pack -join ', ')"
     git add -A -- $pack
+    git diff --cached --quiet
+    if ($LASTEXITCODE -eq 0) {
+      Write-Output "      chunk $n/$total : already on the branch, skipping"
+      continue
+    }
+    Write-Output "      chunk $n/$total : $($pack -join ', ')"
     git @identity commit -m "$Message [chunk $n/$total]" | Select-Object -Last 1
+    # git writes its progress to stderr, and $ErrorActionPreference='Stop' would
+    # treat that as a terminating error even when the push worked. Judge the
+    # push by its exit code instead.
+    $ErrorActionPreference = 'Continue'
     $pushOut = git push origin gh-pages 2>&1
-    if ($LASTEXITCODE -ne 0) {
-      Write-Output ($pushOut | Select-Object -Last 4)
+    $pushCode = $LASTEXITCODE
+    $ErrorActionPreference = 'Stop'
+    if ($pushCode -ne 0) {
+      Write-Output ($pushOut | Select-Object -Last 6)
       throw "push failed on chunk $n/$total"
     }
+    Write-Output "      chunk $n/$total : pushed"
   }
 }
 

@@ -94,6 +94,16 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        // showLastUpdateTime puts the date under each chapter, but it does not
+        // reach sitemap.xml: the sitemap plugin emits <lastmod> only from this
+        // option, and it defaults to null. Without it every one of the 1,424
+        // URLs ships with no lastmod and crawlers have no reason to revisit a
+        // page that actually changed.
+        sitemap: {
+          lastmod: 'date',
+          changefreq: null,
+          priority: null,
+        },
       } satisfies Preset.Options,
     ],
   ],

@@ -44,6 +44,34 @@ const overview = fs.readFileSync(path.join('build', 'course-overview', 'index.ht
 ok('catalogue states 1,282 chapters', /1,282 chapters/.test(overview), 'measured');
 ok('catalogue has no MkDocs syntax', !/:octicons-|:fontawesome-|grid cards/.test(overview), 'converted');
 
+// Every page carries a title and a description. Both are written by React
+// Helmet with `data-rh="true"` ahead of the attribute, which is why a strict
+// `<title>` / `<meta name=...>` pattern finds nothing and reports "none".
+{
+  let pages = 0;
+  const noTitle = [];
+  const noDesc = [];
+  const walk = (dir) => {
+    for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walk(full);
+      else if (entry.name === 'index.html') {
+        pages++;
+        const html = fs.readFileSync(full, 'utf8');
+        const rel = full.split(path.sep).join('/').replace(/^build\//, '').replace(/\/index\.html$/, '');
+        const title = /<title[^>]*>([\s\S]*?)<\/title>/.exec(html);
+        if (!title || title[1].trim() === '') noTitle.push(rel);
+        const tag = /<meta[^>]*name=["']description["'][^>]*>/i.exec(html);
+        const content = tag ? /content=["']([^"']*)["']/i.exec(tag[0]) : null;
+        if (!content || content[1].trim() === '') noDesc.push(rel);
+      }
+    }
+  };
+  walk('build');
+  ok('every page has a <title>', noTitle.length === 0, `${pages - noTitle.length}/${pages}`);
+  ok('every page has a meta description', noDesc.length === 0, `${pages - noDesc.length}/${pages}`);
+}
+
 let failed = 0;
 for (const [name, pass, detail] of checks) {
   if (!pass) failed++;

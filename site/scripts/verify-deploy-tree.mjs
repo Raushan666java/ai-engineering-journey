@@ -40,7 +40,9 @@ const sets = fs.readFileSync(path.join(WT, 'discrete-mathematics/01-sets/index.h
 console.log(`katex spans (discrete-mathematics/01-sets): ${(sets.match(/class="katex"/g) || []).length}`);
 
 const page = fs.readFileSync(path.join(WT, 'ai-agent-engineer/agentic-ai-book/13-evaluation/index.html'), 'utf8');
-const title = /<title>([^<]*)<\/title>/.exec(page);
+// React Helmet emits `<title data-rh="true">`, so the plain `<title>` pattern
+// reports "no title" for every page on the site.
+const title = /<title[^>]*>([^<]*)<\/title>/.exec(page);
 const h1s = page.match(/<h1[\s>]/g) || [];
 console.log(`\nagentic-ai-book/13-evaluation`);
 console.log(`  title tag: ${title ? title[1] : '(none)'}`);

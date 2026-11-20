@@ -1,4 +1,5 @@
 ---
+draft: true
 description: "Modules 00–25 cover Core CS through Data Engineering. See index.md."
 ---
 

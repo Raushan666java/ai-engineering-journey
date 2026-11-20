@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /learning-how-to-learn
 title: "Learning How to Learn"
 description: "Master the universal meta-skill: accelerate learning across every course in this repository. 18 chapters · 340 Q&As · 18 self-assessment quizzes · Mermaid"
 ---

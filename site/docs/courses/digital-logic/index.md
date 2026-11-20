@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /digital-logic
 title: "Digital Logic — Course Overview"
 description: "This textbook presents a comprehensive treatment of digital logic design, progressing from fundamental number systems through advanced topics like HDL"
 ---

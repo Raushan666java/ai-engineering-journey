@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /general-awareness
 title: "General Awareness & Current Affairs"
 description: "Exam Weightage: 25–40 Qs in IBPS SO Prelims/Mains, 35 Qs in SBI PO, 40 Qs in RBI Grade B Phase 1, 25 Qs in NIC Scientist & Insurance Exams Moderate"
 ---

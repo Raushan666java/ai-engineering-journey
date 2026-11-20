@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /loop-engineering
 title: "Loop Engineering — Build Production-Grade AI Agent Loops"
 description: "AI agents are rapidly evolving from single-shot chatbots to autonomous systems that plan, act, observe, and loop. The loop is the fundamental abstraction"
 ---

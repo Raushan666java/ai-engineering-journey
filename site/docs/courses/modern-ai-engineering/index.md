@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /modern-ai-engineering
 title: "Modern AI Engineering — Based on Chip Huyen's \"Building Applications with Foundation Models\""
 description: "A comprehensive course based on Chip Huyen's definitive guide to building AI applications with foundation models. Covers data engineering, model"
 ---

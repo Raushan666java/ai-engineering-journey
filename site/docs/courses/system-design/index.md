@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /system-design
 title: "System Design — Complete University Textbook"
 description: "System Design is the discipline of defining the architecture, components, modules, interfaces, and data for large-scale distributed systems. This course"
 ---

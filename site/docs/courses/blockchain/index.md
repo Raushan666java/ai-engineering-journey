@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /blockchain
 title: "Blockchain Technology — Complete University Textbook"
 description: "This course provides a rigorous, university-level treatment of blockchain technology, from its mathematical and cryptographic foundations to the"
 ---

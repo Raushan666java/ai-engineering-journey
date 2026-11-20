@@ -11,6 +11,14 @@ description: "Complete theory for every verbal section asked in ANY company apti
 
 ---
 
+## Learning Objectives
+
+- Apply the high-frequency grammar rules that account for most error-spotting questions.
+- Choose a synonym or antonym by meaning, not by how familiar the word looks.
+- Rebuild a para jumble from its opening sentence and its connectors.
+- Answer reading-comprehension questions from the passage, not from prior knowledge.
+- Recognise the idioms that are asked repeatedly and their figurative meanings.
+
 ## Section 1 — Grammar Rules (High-Frequency)
 
 ### Rule Box
@@ -313,3 +321,69 @@ Opener: no pronoun references back
 Connectors: however=contrast, therefore=result
 Idioms: always figurative meaning
 ```
+
+## Summary
+
+Ten sections, one habit each. Grammar questions are decided by a small set of rules - subject-verb agreement with intervening phrases, pronoun reference, comparison completeness, and tense consistency - so learn the rules rather than the sentences. Vocabulary and synonym questions reward knowing the word's register, not just its dictionary gloss. Para jumbles are solved by finding the opener (no pronoun referring back) and the connectors (however, therefore). Reading comprehension is a search task: the answer is in the passage, and an option that needs outside knowledge is a distractor.
+
+## Practical Takeaways
+
+- In error spotting, first ignore the phrase between the subject and its verb, then check agreement.
+- "One of my friends is" - plural noun, singular verb. This shape is asked constantly.
+- Double comparatives ("more better") and double negatives are always wrong.
+- i before e except after c.
+- In para jumbles, the sentence with no backward reference is the opener.
+- For idioms, the figurative meaning is the answer; the literal reading is the trap.
+
+## Chapter Quiz
+
+Five questions, six minutes.
+
+1. Find the error: "One of my friend is coming to the interview."
+   - a) One of
+   - b) my friend
+   - c) is coming
+   - d) no error
+
+2. Choose the word closest in meaning to **ubiquitous**:
+   - a) Rare
+   - b) Present everywhere
+   - c) Temporary
+   - d) Ambiguous
+
+3. Which spelling is correct?
+   - a) Acommodate
+   - b) Accomodate
+   - c) Accommodate
+   - d) Acomodate
+
+4. "To bite the bullet" means:
+   - a) To speak rudely
+   - b) To endure a painful situation bravely
+   - c) To waste an opportunity
+   - d) To eat quickly
+
+5. In a para jumble, the sentence most likely to open the paragraph is the one that:
+   - a) Contains "however"
+   - b) Contains a pronoun referring to a previous noun
+   - c) Introduces the subject with no backward reference
+   - d) Is the longest
+
+<details>
+<summary>Answers</summary>
+
+1. **(b)** — "One of" takes a plural noun: "one of my friends".
+2. **(b)** — Ubiquitous means present everywhere.
+3. **(c)** — Accommodate: double c, double m.
+4. **(b)** — The idiom means enduring something painful with resolve.
+5. **(c)** — An opener cannot refer backwards; connectors and pronouns mark later sentences.
+
+</details>
+
+## Exercises
+
+1. Take twenty error-spotting sentences and label each error with the rule it breaks. If a sentence has no label, you have not found the error.
+2. Write ten words you did not know from the drill bank, with a sentence of your own for each.
+3. Rebuild three para jumbles by first marking which sentences cannot be first, and why.
+4. Do one reading-comprehension passage and, for every wrong option you were tempted by, write which line of the passage refutes it.
+5. Recite the ten most-asked idioms from memory, then check.

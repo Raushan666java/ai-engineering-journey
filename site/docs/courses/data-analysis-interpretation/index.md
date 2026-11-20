@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /data-analysis-interpretation
 title: "Data Analysis & Interpretation"
 description: "This course covers 5 comprehensive chapters that build from fundamental tabular data interpretation through advanced mixed-data problem solving. Each"
 ---

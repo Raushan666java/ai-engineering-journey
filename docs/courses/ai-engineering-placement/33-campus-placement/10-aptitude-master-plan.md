@@ -15,6 +15,16 @@ description: "This plan is company-neutral. It builds a complete aptitude skill 
 
 ---
 
+## Learning Objectives
+
+By the end of this plan you should be able to:
+
+- Place your current preparation on the skill pyramid and name the layer you are actually stuck in, instead of "I am weak at aptitude".
+- Run a 28-day schedule that covers quant, logical and verbal without deciding topic order every morning.
+- Keep an error log that turns a wrong answer into a named cause, so the same mistake does not survive two mocks.
+- Pick the next mock by company cut-off rather than by whatever looks interesting.
+- Say what "ready" means for a specific company, in numbers, before you sit its test.
+
 ## How This Package Is Organized
 
 | Layer | Files | Purpose |
@@ -195,3 +205,68 @@ Repeating questions without understanding the failure wastes time.
 - You score 75%+ on any company mock, first attempt.
 - You complete 30 mixed questions in 25 minutes with 80%+ accuracy.
 - You know which 3 topics are your weak spots and have a written fix for each.
+
+## Summary
+
+This module is one 28-day plan, not a pile of tips. Work moves in a fixed order: formula recall first, then accuracy under no clock, then speed under a clock, then company-specific mocks. The error log is the engine - every wrong answer gets a cause, and the next day starts with the two or three causes that repeat. Cut-off tables in this chapter are approximate by design; the company portal is the only authority on its own band.
+
+## Practical Takeaways
+
+- Do not study a topic you have not first tested. Take a 20-question mixed set, log the failures, then study only what failed.
+- Recite the formula cards out loud before each session. Recall that takes effort is the recall that sticks.
+- One mock per week for the first two weeks, two per week after that. More than that and you are practising the test, not the skill.
+- Keep the error log on paper you can see, not in a file you have to open.
+- Trust the cut-off table only until you have the company's own notification in hand.
+
+## Chapter Quiz
+
+Five questions. Answer from memory.
+
+1. You score 14/30 on a mixed set. What is the correct next action?
+   - a) Re-read all three theory chapters cover to cover
+   - b) Log the 16 failures by cause, then study the two causes that repeat most
+   - c) Take another mixed set to see if it was a bad day
+   - d) Start company-specific mocks immediately
+
+2. In the four-week schedule, what changes in weeks 3 and 4?
+   - a) The plan drops verbal entirely
+   - b) Daily time doubles
+   - c) Work shifts to speed under a clock plus company mocks
+   - d) Theory is re-read from the start
+
+3. The cut-off benchmarks in this chapter should be treated as…
+   - a) Guaranteed pass marks
+   - b) Approximate, and verified against each company's own notification
+   - c) The same for every company
+   - d) Irrelevant once you finish the syllabus
+
+4. A topic feels weak but your error log shows only two mistakes in it across three mocks. What does the log imply?
+   - a) The topic is your biggest risk and needs a week
+   - b) The feeling is the bigger problem than the topic; keep it in rotation and do not rebuild it
+   - c) Stop logging that topic
+   - d) Take a full mock on that topic alone
+
+5. "Ready" for a specific company means…
+   - a) You have finished every chapter in this module
+   - b) You scored above that company's approximate cut-off on a full-length timed paper, twice
+   - c) You feel confident
+   - d) You have memorised the cut-off table
+
+<details>
+<summary>Answers</summary>
+
+1. **(b)** — 14/30 is a measurement, not a verdict. The log converts 16 failures into a small number of named causes; studying those is the only part that changes the next score.
+2. **(c)** — Weeks 1-2 build the skill, weeks 3-4 buy speed and company familiarity.
+3. **(b)** — They are planning targets. Any table of cut-offs drifts every cycle.
+4. **(b)** — Feelings and evidence disagree; the log is the evidence. Rotate the topic, do not rebuild it.
+5. **(b)** — Two timed full-length papers above the band, not one lucky run.
+
+</details>
+
+## Exercises
+
+1. Take a 20-question mixed set today, cold, no notes. Score it and write the count.
+2. Build the error log this week from that set: one line per wrong answer, with a cause from a fixed list you invent (formula forgotten, misread, guessed, ran out of time).
+3. List the three companies you will actually apply to, and copy their current cut-off from the company's own page next to each name.
+4. Schedule 28 days on a calendar. Write the topic for each day, not "aptitude".
+5. At the end of week 1, re-take an equivalent 20-question set and compare both the score and the causes. If the causes are the same, the plan is not being followed.

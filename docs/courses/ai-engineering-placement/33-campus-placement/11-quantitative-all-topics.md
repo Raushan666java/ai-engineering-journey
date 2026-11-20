@@ -11,6 +11,14 @@ description: "Complete theory for every quant topic asked in ANY company aptitud
 
 ---
 
+## Learning Objectives
+
+- Recite the formula box for all sixteen quant topics without looking.
+- Choose the shortcut a question is built for, and say why it is faster than the long method.
+- Name the standard trap attached to each topic before answering.
+- Convert a word problem into one equation, not three.
+- Decide within fifteen seconds whether a question is worth attempting under time pressure.
+
 ## Topic 1 — Percentages
 
 ### Formula Box
@@ -516,3 +524,69 @@ P(A or B) = P(A)+P(B)-P(both)         |  At least one = 1 - P(none)
 LCM x HCF = product                   |  Cyclicity for remainders
 Clock relative speed 5.5°/min         |  Odd days for calendars
 ```
+
+## Summary
+
+Sixteen topics, one formula box each. Percentages and ratios are the base layer: profit/loss, interest, mixtures and partnership are all expressed through them, so an hour spent on percentages pays back in four other topics. Speed-distance and time-work are the same rate equation read in different directions. Permutations and combinations differ only in whether order matters, and probability is counting done carefully. The traps are consistent: successive percentage changes do not add, average speed is not the average of speeds, and "at least one" is always computed as one minus none.
+
+## Practical Takeaways
+
+- Never add successive percentages - use `a + b + ab/100`.
+- Work and pipes are one equation: rates add, and a pipe that empties is a negative rate.
+- Average speed over equal distances is the harmonic mean, never the arithmetic mean.
+- For "at least one", compute `1 - P(none)`.
+- Alligation gives the mixing ratio directly: `(mean - cheaper) : (dearer - mean)`.
+- If a question needs more than two lines of algebra, there is a shortcut you have not recalled yet.
+
+## Chapter Quiz
+
+Five questions, no calculator, six minutes.
+
+1. A price rises 20% and then falls 20%. The net change is:
+   - a) 0%
+   - b) +4%
+   - c) −4%
+   - d) −2%
+
+2. Twelve men finish a job in 8 days. How long do 8 men take, at the same rate?
+   - a) 10 days
+   - b) 12 days
+   - c) 14 days
+   - d) 16 days
+
+3. Simple interest on ₹5,000 at 8% per annum for 3 years is:
+   - a) ₹1,000
+   - b) ₹1,200
+   - c) ₹1,400
+   - d) ₹1,500
+
+4. Two varieties costing ₹30/kg and ₹45/kg are mixed to sell at ₹35/kg. The mixing ratio is:
+   - a) 1 : 2
+   - b) 2 : 1
+   - c) 3 : 1
+   - d) 1 : 3
+
+5. A sum doubles in 8 years at simple interest. The rate per annum is:
+   - a) 8%
+   - b) 10%
+   - c) 12.5%
+   - d) 15%
+
+<details>
+<summary>Answers</summary>
+
+1. **(c)** — `20 + (−20) + (20 × −20)/100 = −4%`. The two changes are taken on different bases, which is exactly the trap.
+2. **(b)** — Work is constant: `12 × 8 = 8 × d`, so `d = 12` days.
+3. **(b)** — `SI = 5000 × 8 × 3 / 100 = 1200`.
+4. **(b)** — Alligation: `(45 − 35) : (35 − 30) = 10 : 5 = 2 : 1`.
+5. **(c)** — Doubling means interest equals the principal: `100 = r × 8`, so `r = 12.5%`.
+
+</details>
+
+## Exercises
+
+1. Write all sixteen formula boxes from memory on one sheet. Anything you cannot reproduce is tomorrow's first task.
+2. Take ten consecutive questions from one topic only and time them. Record minutes per question, not just the score.
+3. For any question you got wrong, write the trap name (successive change, base change, equal-distance average, order-matters) next to it.
+4. Solve five mixture questions with alligation only, no equations, then check with equations.
+5. Take one "at least one" probability question and solve it twice: directly, and as `1 − P(none)`. Confirm both agree.

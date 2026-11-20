@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /python-programming
 title: "Python Programming — A Comprehensive University Textbook"
 description: "This textbook provides a rigorous, systematic introduction to the Python programming language. It assumes no prior programming experience but progresses"
 ---

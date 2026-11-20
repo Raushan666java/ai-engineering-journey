@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /job-preparation
 title: "Job Preparation — Complete Guide for Indian IT Freshers & Experienced Professionals"
 description: "The Indian job market in 2026 presents a unique dual-track opportunity for IT professionals. On one side, the private sector continues to expand with"
 ---

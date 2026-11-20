@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /cloud-computing
 title: "Cloud Computing — Comprehensive Course Textbook"
 description: "This course provides a comprehensive study of cloud computing, covering foundational concepts through advanced architectural patterns across the three"
 ---

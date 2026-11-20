@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /hindi-language
 title: "हिंदी भाषा पाठ्यक्रम (Hindi Language Course)"
 description: "एक संपूर्ण हिंदी भाषा पाठ्यक्रम जो व्याकरण, समझ, शब्दावली, लेखन और अनुवाद को कवर करता है — सरकारी परीक्षाओं और दैनिक उपयोग के लिए। A comprehensive Hindi"
 ---

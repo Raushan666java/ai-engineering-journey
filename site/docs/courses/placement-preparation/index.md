@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /placement-preparation
 title: "Placement Preparation"
 description: "This course bridges the gap between theoretical knowledge and placement success. It covers every stage of the placement process — from resume building and"
 ---

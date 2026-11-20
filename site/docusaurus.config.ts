@@ -34,8 +34,14 @@ const config: Config = {
   organizationName: 'Raushan666java',
   projectName: 'ai-engineering-journey',
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  // A deploy is only worth trusting if a broken internal link fails the build
+  // instead of shipping a 404. Flipped from 'warn' after the first green deploy;
+  // every route is now resolved (269 unique internal links, 0 broken) and the
+  // build refuses to produce a broken tree.
+  onBrokenLinks: 'throw',
+  // Still 'warn' for anchors: headings are edited often, and a stale #anchor is
+  // a scroll miss, not a dead page.
+  onBrokenAnchors: 'warn',
 
   // A full build renders 1,419 documents through a 309 MB server bundle. Webpack
   // holds that module graph in the JS heap, so by the time static generation
@@ -67,6 +73,11 @@ const config: Config = {
     // Without it every fence stays a Prism code block and no component is ever
     // rendered, which is why all 2,988 diagrams showed up as literal source.
     mermaid: true,
+    // `onBrokenMarkdownLinks` at the top level is deprecated in v4; it belongs
+    // here. Same severity intent as onBrokenLinks: fail rather than ship.
+    hooks: {
+      onBrokenMarkdownLinks: 'throw',
+    },
   },
 
   i18n: {

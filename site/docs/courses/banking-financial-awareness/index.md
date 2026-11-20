@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /banking-financial-awareness
 title: "Banking & Financial Awareness"
 description: "A comprehensive course covering the Indian banking system, monetary policy, financial markets, government schemes, budget, and banking regulations —"
 ---

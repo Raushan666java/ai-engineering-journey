@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /english-language
 title: "English Language — IBPS SO & Govt Exam Prep"
 description: "Exam Weightage: 25 Questions in IBPS SO Prelims, 25 Qs in SBI/SO, Descriptive in Mains Moderate (Class 10-12 English level) Focus Areas: Reading"
 ---

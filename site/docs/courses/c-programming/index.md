@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /c-programming
 title: "C Programming — Complete University Textbook"
 description: "This course provides an exhaustive treatment of the C programming language as defined by the C11 standard (ISO/IEC 9899:2011). Students progress from"
 ---

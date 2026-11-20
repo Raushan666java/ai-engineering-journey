@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /interview-preparation
 title: "Interview Preparation Module"
 description: "This is a living document. If you have interview experiences to share, corrections to suggest, or additional topics to cover, please submit a pull request"
 ---

@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /engineering-mathematics
 title: "Engineering Mathematics"
 description: "A comprehensive foundation in engineering mathematics from basic calculus through advanced topics, with rigorous theory, worked examples, and real-world"
 ---

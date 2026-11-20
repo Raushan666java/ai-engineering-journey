@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /operating-systems
 title: "Operating Systems — A Comprehensive Textbook"
 description: "This textbook provides a rigorous, bottom-up exploration of modern operating systems — the software layer that mediates between hardware and applications"
 ---

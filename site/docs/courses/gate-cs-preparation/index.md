@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /gate-cs-preparation
 title: "index"
 description: "This course covers the complete GATE Computer Science syllabus — General Aptitude, Engineering Mathematics, Operating Systems, DBMS, Computer Networks"
 ---

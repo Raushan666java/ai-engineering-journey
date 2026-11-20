@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /machine-learning
 title: "Machine Learning — Complete University Textbook"
 description: "This textbook provides a rigorous, university-level introduction to the fundamental concepts, algorithms, and mathematical frameworks of machine learning"
 ---

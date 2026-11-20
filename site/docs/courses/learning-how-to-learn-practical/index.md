@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /learning-how-to-learn-practical
 title: "Learning How to Learn (Practical Edition)"
 description: "Learning systems for any goal. Plain-language walkthroughs for everyone, TypeScript examples for engineers. Designed for SSC, UPSC, GATE, FAANG, language"
 ---

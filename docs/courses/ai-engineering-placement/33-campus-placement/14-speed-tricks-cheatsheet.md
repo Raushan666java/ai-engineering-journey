@@ -9,6 +9,14 @@ description: "Memorize these cold. Recite them from memory before every drill se
 > Each rule saves 30-60 seconds in the real test — that is the difference between
 > "attempted 60%" and "attempted 95%".
 
+## Learning Objectives
+
+- Recall all forty speed rules without notes.
+- Match a question to its rule in under five seconds.
+- Use a rule only where it is valid, and fall back to the long method when it is not.
+- Convert units (km/h to m/s, minutes to hours) without hesitating.
+- Decide to skip a question that has no rule and would cost more than ninety seconds.
+
 ## Percentages & Profit/Loss (1-8)
 
 1. **Net percentage change**: a% then b% = `a + b + ab/100` (with signs). +20% then −20% = **−4%**.
@@ -96,3 +104,69 @@ description: "Memorize these cold. Recite them from memory before every drill se
 | P&C/Probability | 30, 31, 32, 33 |
 | Number System/Series | 34, 35, 36, 37 |
 | Clocks/Calendar/Geo | 38, 39, 40 |
+
+## Summary
+
+Forty rules, grouped by topic. Their value is recall speed: each one removes a line of algebra from a question you already know how to solve, so the gain is time, not understanding. The risky ones are conditional - successive percentage change needs signed values, relative speed needs the same direction check, and alligation needs a common unit. Used correctly, they convert a sixty-question paper from "attempted 60%" to "attempted 95%"; used on the wrong shape, they produce confident wrong answers.
+
+## Practical Takeaways
+
+- `a` then `b` percent is `a + b + ab/100`, with signs.
+- `36 km/h = 10 m/s`. Halve-and-add for km/h to m/s: multiply by 5/18.
+- Two people working together: `1/a + 1/b`, then invert. Never average the days.
+- Alligation ratio: `(dearer − mean) : (mean − cheaper)`.
+- Clock angle at `h:m` is `|30h − 5.5m|`.
+- If no rule applies within five seconds, skip. A skipped question costs nothing; a half-solved one costs ninety seconds.
+
+## Chapter Quiz
+
+Five questions, four minutes. Use the rules, not full algebra.
+
+1. A value increases by 10% twice. The total increase is:
+   - a) 20%
+   - b) 21%
+   - c) 22%
+   - d) 19%
+
+2. A 120 m train at 36 km/h passes a pole in:
+   - a) 8 s
+   - b) 10 s
+   - c) 12 s
+   - d) 15 s
+
+3. A finishes a job in 10 days and B in 15 days. Working together they take:
+   - a) 5 days
+   - b) 6 days
+   - c) 7 days
+   - d) 12.5 days
+
+4. LCM of two numbers is 12 and HCF is 2. If one number is 4, the other is:
+   - a) 3
+   - b) 6
+   - c) 8
+   - d) 24
+
+5. The angle between the hands of a clock at 3:30 is:
+   - a) 75°
+   - b) 80°
+   - c) 85°
+   - d) 90°
+
+<details>
+<summary>Answers</summary>
+
+1. **(b)** — `10 + 10 + (10 × 10)/100 = 21%`.
+2. **(c)** — 36 km/h = 10 m/s, so `120 / 10 = 12` s.
+3. **(b)** — `1/10 + 1/15 = 1/6`, so 6 days.
+4. **(b)** — `LCM × HCF = 12 × 2 = 24`, and `4 × other = 24`, so 6.
+5. **(a)** — `|30 × 3 − 5.5 × 30| = |90 − 165| = 75°`.
+
+</details>
+
+## Exercises
+
+1. Recite all forty rules in eight minutes, aloud, from memory. Note where you stall.
+2. Take one question per rule group and solve it with the rule only; then verify with the long method.
+3. Time yourself on twenty questions you have already solved. Speed on known questions is the only honest speed measure.
+4. Write the three rules you misapplied most often, with the condition that makes them valid.
+5. Sit one full paper applying the "skip after five seconds" rule strictly, and compare the attempted count to your previous attempt.

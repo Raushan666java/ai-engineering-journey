@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /algorithms
 title: "CS 310: Design and Analysis of Algorithms"
 description: "Course Overview: A rigorous treatment of algorithm design, analysis, and correctness. Students will master asymptotic analysis, fundamental data"
 ---

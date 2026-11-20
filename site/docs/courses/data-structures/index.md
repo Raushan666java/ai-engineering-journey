@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /data-structures
 title: "Data Structures — Complete Course"
 description: "A rigorous treatment of data structures: the fundamental building blocks of efficient computation. This course covers the design, analysis, and"
 ---

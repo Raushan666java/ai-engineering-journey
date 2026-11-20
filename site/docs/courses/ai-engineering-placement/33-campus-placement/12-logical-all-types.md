@@ -16,6 +16,14 @@ description: "Complete theory for every reasoning type asked in ANY company apti
 
 ---
 
+## Learning Objectives
+
+- Identify the reasoning type from the question stem in under ten seconds.
+- Apply the standard method for each of the twelve types instead of improvising.
+- Separate what a statement guarantees from what it merely allows.
+- Draw the diagram before answering any seating, direction or blood-relation question.
+- Recognise when a question cannot be answered from the data given, and say why.
+
 ## Type 1 — Number & Letter Series
 
 ### Method
@@ -360,3 +368,69 @@ Data sufficiency: equations vs unknowns
 Conclusions: extreme words (all/always) = usually wrong
 Figures: one transform per element, continue both
 ```
+
+## Summary
+
+Twelve reasoning types, each with one method. Series and analogies are pattern recognition - find the rule on the first three terms before looking at the options. Syllogisms are set containment: a conclusion follows only if every arrangement satisfying the premises also satisfies it. Coding-decoding and blood relations are translation exercises, and translation is done on paper. Seating and direction questions are decided by the diagram, never by memory of the sentences. Data sufficiency asks whether the information is enough, not what the answer is - so never solve further than necessary.
+
+## Practical Takeaways
+
+- Draw first. A seating or direction question answered without a sketch is a guess with formatting.
+- In syllogisms, a conclusion using "some" cannot follow from premises that never connect the two terms.
+- Extreme words in a conclusion or assumption - all, always, never, only - are usually wrong.
+- For data sufficiency, stop the moment both statements together are enough; do not compute the number.
+- In input-output and series questions, apply one transformation per step, then confirm it on the next step.
+- Blood relations: convert every phrase into a family tree before answering.
+
+## Chapter Quiz
+
+Five questions, eight minutes.
+
+1. Premises: All roses are flowers. Some flowers fade quickly. Which conclusion follows?
+   - a) Some roses fade quickly
+   - b) All roses fade quickly
+   - c) No rose fades quickly
+   - d) None of these necessarily follows
+
+2. In a code, PEN is written as RGP. How is CAP written?
+   - a) ECR
+   - b) DBR
+   - c) FDS
+   - d) BDP
+
+3. Ravi said, "She is the daughter of my grandfather's only son." How is she related to Ravi?
+   - a) Cousin
+   - b) Aunt
+   - c) Sister
+   - d) Niece
+
+4. Series: 2, 6, 12, 20, 30, ?
+   - a) 36
+   - b) 40
+   - c) 42
+   - d) 44
+
+5. A man walks 5 km north, turns right and walks 3 km, then turns right and walks 5 km. How far is he from the start?
+   - a) 3 km east
+   - b) 3 km west
+   - c) 5 km north
+   - d) 8 km east
+
+<details>
+<summary>Answers</summary>
+
+1. **(d)** — "Some flowers" need not include any rose. The two statements never connect roses to fading, so nothing follows.
+2. **(a)** — Each letter moves two forward: P→R, E→G, N→P, so C→E, A→C, P→R.
+3. **(c)** — Grandfather's only son is Ravi's father; his daughter is Ravi's sister.
+4. **(c)** — Differences are 4, 6, 8, 10, so the next difference is 12; 30 + 12 = 42. Equivalently `n(n+1)`.
+5. **(a)** — North 5 then south 5 cancels; the only surviving displacement is 3 km east.
+
+</details>
+
+## Exercises
+
+1. Draw the family tree for ten blood-relation questions from the drill bank before answering any of them.
+2. Take five syllogisms and, for each, try to draw a case where the premises hold but the conclusion fails. That attempt is the answer.
+3. Write the transformation rule for five number series, then verify each rule predicts the term after the last one given.
+4. Do ten seating-arrangement questions using a grid on paper. Note how many you would have got wrong without the grid.
+5. Take three data-sufficiency questions and time how long you spend computing an answer you did not need.

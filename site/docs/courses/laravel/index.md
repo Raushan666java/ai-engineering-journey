@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /laravel
 title: "Laravel 13 with AI & Automation → Complete University Textbook"
 description: "This comprehensive textbook covers Laravel 13, PHP's premier full-stack web framework, through the lens of modern AI-powered development. Students will"
 ---

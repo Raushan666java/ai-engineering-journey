@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /mock-tests
 title: "Government Exam Mock Tests — Complete Practice Suite"
 description: "A comprehensive collection of full-length mock tests for India's top government recruitment examinations. Each test is designed to mirror the actual exam"
 ---

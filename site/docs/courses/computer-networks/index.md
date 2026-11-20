@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /computer-networks
 title: "Computer Networks — Complete Course Textbook"
 description: "This course provides a comprehensive study of computer networking from the physical layer through the application layer. Students examine protocol"
 ---

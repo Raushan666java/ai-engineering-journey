@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /general-aptitude
 title: "General Aptitude"
 description: "A complete aptitude training course covering quantitative ability, logical reasoning, verbal ability, and data interpretation — from foundational concepts"
 ---

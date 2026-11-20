@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /database-management-systems
 title: "Database Management Systems — Complete Textbook"
 description: "This textbook provides a comprehensive introduction to Database Management Systems (DBMS), covering the fundamental concepts, design methodologies, query"
 ---

@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /devops
 title: "DevOps Engineering — Complete University Textbook"
 description: "This comprehensive textbook covers the full spectrum of DevOps engineering, from foundational principles through advanced site reliability engineering"
 ---

@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /artificial-intelligence
 title: "Artificial Intelligence — Complete University Textbook"
 description: "This course offers a rigorous, university-level introduction to the foundational principles and modern practice of Artificial Intelligence. Beginning with"
 ---

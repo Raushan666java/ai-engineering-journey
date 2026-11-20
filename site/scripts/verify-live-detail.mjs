@@ -71,6 +71,32 @@ const singleSegment = [...sitemap.text.matchAll(/<loc>([^<]+)<\/loc>/g)]
   .filter((u) => u.split('/').filter(Boolean).length === 1);
 checks.push(['sitemap publishes the course landing pages', singleSegment.length >= 60, `${singleSegment.length} single-segment urls`]);
 
+// The catalogue page was still the Material for MkDocs one: unstyled classes,
+// MkDocs-only icon syntax, and every card pointing at /courses/<slug>/. It is
+// now generated from the two data files the React pages read.
+const overview = await get(`${BASE}/course-overview`);
+checks.push([
+  'course overview is the generated catalogue',
+  overview.status === 200 && /1,28\d chapters/.test(overview.text) && !/:octicons-|:fontawesome-/.test(overview.text),
+  `${overview.status}, ${/:octicons-|:fontawesome-/.test(overview.text) ? 'MkDocs icon syntax still present' : 'no MkDocs syntax'}`,
+]);
+
+// Thirty-two learning-course pages used to render a frontmatter block in the
+// middle of the article, so the page body contained the literal string
+// `slug: /learning-course/...` and had no real title.
+const lc = await get(`${BASE}/learning-course/02_AI_Learning_Basics/Learning_Science`);
+const lcBody = lc.text.slice(lc.text.indexOf('<article') === -1 ? 0 : lc.text.indexOf('<article'));
+checks.push([
+  'learning-course page no longer renders raw YAML',
+  lc.status === 200 && !/slug:\s*\/learning-course/.test(lcBody),
+  `${lc.status}, ${/slug:\s*\/learning-course/.test(lcBody) ? 'YAML still rendered' : 'clean body'}`,
+]);
+
+// PLAN.md and TEMPLATE.md exist for the author, not the reader. They are now
+// `draft: true`, so the production build skips them entirely.
+const plan = await get(`${BASE}/courses/ai-engineering-placement/PLAN`);
+checks.push(['author-only drafts are not published', plan.status === 404, `PLAN.md -> ${plan.status}`]);
+
 let failed = 0;
 for (const [name, ok, detail] of checks) {
   if (!ok) failed++;

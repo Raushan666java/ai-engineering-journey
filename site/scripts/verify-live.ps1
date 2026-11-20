@@ -9,7 +9,7 @@
 # Usage: powershell -File scripts/verify-live.ps1
 #
 # Pages caches for ~2 minutes after a push, so a failure on the first run is
-# not proof of a bad deploy — re-run once before investigating.
+# not proof of a bad deploy - re-run once before investigating.
 
 $ErrorActionPreference = 'Continue'
 $base = 'https://raushan666java.github.io/ai-engineering-journey'

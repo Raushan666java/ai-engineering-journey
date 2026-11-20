@@ -2,6 +2,7 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import {courses} from '../data/courses';
+import {courseSizes, corpusSize} from '../data/chapter-counts';
 import {profile, proof} from '../data/profile';
 import styles from './index.module.css';
 
@@ -74,9 +75,9 @@ function Hero() {
         </p>
         <h1 className={styles.heroTitle}>AI Engineering Journey</h1>
         <p className={styles.heroSubtitle}>
-          {courses.length} courses and 1,400+ chapters on the path from backend
-          developer to AI engineer. Written while learning the material, published
-          as I go.
+          {corpusSize.chapters.toLocaleString('en-US')} chapters across{' '}
+          {courses.length} courses, on the path from backend developer to AI
+          engineer. Written while learning the material, published as I go.
         </p>
         <div className={styles.heroActions}>
           <Link className={styles.primaryCta} to="/ai-engineering-placement">
@@ -104,6 +105,22 @@ function ProofStrip() {
         </div>
       ))}
     </div>
+  );
+}
+
+/**
+ * Scale line. The "1,400+ chapters" claim counted index and navigation pages;
+ * this is the measured count of teaching chapters, generated from the tree.
+ */
+function Corpus() {
+  const millions = (corpusSize.words / 1_000_000).toFixed(1);
+  return (
+    <p className={styles.corpus}>
+      <strong>{corpusSize.chapters.toLocaleString('en-US')}</strong> chapters ·{' '}
+      <strong>{corpusSize.courses}</strong> courses ·{' '}
+      <strong>{millions}M</strong> words written and maintained here — every page
+      readable without an account.
+    </p>
   );
 }
 
@@ -141,13 +158,19 @@ function Featured() {
         </p>
       </div>
       <div className={styles.featuredGrid}>
-        {featured.map((course) => (
-          <Link key={course.slug} to={`/${course.slug}`} className={styles.featuredCard}>
-            <span className={styles.featuredName}>{course.name}</span>
-            <span className={styles.featuredBlurb}>{course.blurb}</span>
-            <span className={styles.featuredArrow}>→</span>
-          </Link>
-        ))}
+        {featured.map((course) => {
+          const size = courseSizes[course.slug];
+          return (
+            <Link key={course.slug} to={`/${course.slug}`} className={styles.featuredCard}>
+              <span className={styles.featuredName}>{course.name}</span>
+              <span className={styles.featuredBlurb}>{course.blurb}</span>
+              {size ? (
+                <span className={styles.featuredMeta}>{size.chapters} chapters</span>
+              ) : null}
+              <span className={styles.featuredArrow}>→</span>
+            </Link>
+          );
+        })}
       </div>
     </section>
   );
@@ -173,11 +196,12 @@ function HireBand() {
 export default function Home(): React.JSX.Element {
   return (
     <Layout
-      title="AI Engineering Journey — 1,400+ chapters on backend + AI engineering"
-      description={`${profile.name}: ${courses.length} courses and 1,400+ chapters covering Python, SQL, machine learning, RAG, LLM applications, agents and system design.`}>
+      title={`AI Engineering Journey — ${corpusSize.chapters.toLocaleString('en-US')} chapters on backend + AI engineering`}
+      description={`${profile.name}: ${corpusSize.courses} courses and ${corpusSize.chapters.toLocaleString('en-US')} chapters covering Python, SQL, machine learning, RAG, LLM applications, agents and system design.`}>
       <Hero />
       <main className={styles.main}>
         <ProofStrip />
+        <Corpus />
         <StartHere />
         <Featured />
       </main>

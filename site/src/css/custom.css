@@ -234,3 +234,213 @@
   color: var(--ifm-color-emphasis-600);
   font-size: 0.82rem;
 }
+
+/* ---------------------------------------------------------------------------
+   Reading surface
+
+   The median chapter here is ~6,800 words, and a 6,800-word page is read, not
+   skimmed: line length, table density and code contrast decide whether it is
+   tolerable at chapter 5 of 9. These rules are deliberately conservative —
+   type size, measure, table rhythm, sticky headings — and add no new fonts.
+--------------------------------------------------------------------------- */
+
+:root {
+  --ifm-font-size-base: 16.5px;
+  --ifm-line-height-base: 1.72;
+  --ifm-heading-font-weight: 650;
+  --ifm-h1-font-size: 2.15rem;
+  --ifm-h2-font-size: 1.5rem;
+  --ifm-h3-font-size: 1.2rem;
+  --mono: ui-monospace, SFMono-Regular, 'Cascadia Code', Consolas, monospace;
+}
+
+[data-theme='dark'] {
+  --ifm-background-color: #0d0e13;
+  --ifm-background-surface-color: #14151c;
+}
+
+/* Long-form text: kill widows and rivers without changing the layout. */
+.markdown p,
+.markdown li {
+  text-wrap: pretty;
+}
+
+.markdown > p,
+.markdown > ul,
+.markdown > ol {
+  max-width: 76ch;
+}
+
+.markdown h1:first-child {
+  letter-spacing: -0.015em;
+}
+
+/* Tables carry a lot of this site's teaching value: 900+ of them. */
+.markdown table {
+  display: table;
+  width: 100%;
+  font-size: 0.92em;
+  border-collapse: collapse;
+}
+
+.markdown table thead th {
+  background: var(--ifm-color-emphasis-100);
+  position: sticky;
+  top: 0;
+  text-align: left;
+  font-weight: 650;
+}
+
+.markdown table td,
+.markdown table th {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  vertical-align: top;
+}
+
+.markdown table tr:nth-child(2n) {
+  background: var(--ifm-color-emphasis-0);
+}
+
+/* Very wide tables scroll instead of forcing the page sideways — but only on
+   small screens, where a reflowed table is better than a 3-column squeeze. */
+@media (max-width: 996px) {
+  .markdown table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* Code: the corpus is TypeScript/Python-heavy, and code is read as much as prose. */
+.markdown code,
+.markdown pre,
+.theme-code-block {
+  font-family: var(--mono);
+  font-variant-ligatures: none;
+}
+
+.markdown :not(pre) > code {
+  padding: 0.12em 0.36em;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.theme-code-block {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+/* Admonitions: one accent edge instead of a fully tinted box. */
+.theme-admonition {
+  border-left-width: 3px;
+  border-radius: 6px;
+}
+
+/* Heading anchors are useful on 6,000-word pages; show them on hover/focus. */
+.markdown h2 .hash-link,
+.markdown h3 .hash-link,
+.markdown h4 .hash-link {
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+
+.markdown h2:hover .hash-link,
+.markdown h3:hover .hash-link,
+.markdown h4:hover .hash-link,
+.markdown .hash-link:focus-visible {
+  opacity: 0.6;
+}
+
+/* Right-hand TOC: 20+ entries per chapter is normal here. */
+.table-of-contents {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  padding-left: 0;
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.table-of-contents__link {
+  padding: 0.1rem 0 0.1rem 0.7rem;
+}
+
+.theme-doc-toc-desktop {
+  max-height: calc(100vh - var(--ifm-navbar-height) - 2rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+/* Keyboard users get a visible ring everywhere. */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--brand-accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* Printing a chapter is a normal study move; drop the chrome. */
+@media print {
+  .navbar,
+  .theme-doc-sidebar-container,
+  .theme-doc-toc-desktop,
+  .theme-doc-footer,
+  .pagination-nav {
+    display: none !important;
+  }
+
+  .markdown {
+    font-size: 11pt;
+  }
+
+  .markdown a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 8pt;
+    color: #555;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Course index: a name alone does not tell you whether a course is a weekend
+   read or a semester. Name left, measured chapter count right.
+--------------------------------------------------------------------------- */
+
+.course-card {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.course-card-name {
+  font-weight: 550;
+}
+
+.course-card-meta {
+  font-size: 0.74rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.course-category-count {
+  font-size: 0.68em;
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-700);
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 999px;
+  padding: 0.1em 0.55em;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+  font-variant-numeric: tabular-nums;
+}

@@ -310,3 +310,28 @@
 [data-theme='dark'] .hireCta {
   background: var(--brand-accent);
 }
+
+/* Scale line under the proof strip: measured from the tree, not estimated. */
+.corpus {
+  margin: 0 auto 3.5rem;
+  max-width: 44rem;
+  text-align: center;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.corpus strong {
+  color: var(--ifm-font-color-base);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Chapter count on a featured card. */
+.featuredMeta {
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--ifm-color-emphasis-600);
+}
+

@@ -1,248 +1,163 @@
 ---
 slug: /course-overview
-title: "AI Engineering Journey"
+title: "Course Overview"
 sidebar_label: "Course Overview"
 sidebar_position: 1
-description: "Explore a comprehensive AI Engineering curriculum with 1,900+ lessons. Master Machine Learning, LLMs, AI Agents, System Design, and Full-Stack Development through hands-on, production-ready projects."
+description: "60 courses and 1,282 chapters on backend engineering, machine learning and LLM applications, grouped by area with the size of each course."
 ---
 
-<div class="home-hero">
+# Course Overview
 
-<p class="hero-kicker">FREE CODING CURRICULUM · 2026</p>
+60 courses, **1,282 chapters**, 9.5 million words. Every
+course below is written as teaching material: learning objectives, worked
+examples, a summary, practical takeaways, a chapter quiz and exercises.
 
-# AI Engineering Journey
+Sizes on this page are measured from the source tree, not typed by hand. The
+same numbers drive the [course list](/courses) and the homepage.
 
-<p class="hero-tagline">Master Artificial Intelligence from the ground up. 1,900+ in-depth lessons spanning Machine Learning, LLMs, Autonomous Agents, Full-Stack Development, and core CS fundamentals. Building production-grade AI in public.</p>
+## Where to start
 
-<div class="hero-stats">
-  <span class="hero-stat"><strong>52+</strong> Courses</span>
-  <span class="hero-stat"><strong>1,900+</strong> Lessons</span>
-  <span class="hero-stat"><strong>170K+</strong> Lines</span>
-  <span class="hero-stat"><strong>700+</strong> Problems</span>
-</div>
+- **Placement track (backend + AI):** [AI Engineering Placement](/ai-engineering-placement/) - 323 chapters across 34 modules, from Python and SQL to RAG, agents and system design. It is the point of the site.
+- **Building with LLMs:** [AI Agent Engineer](/ai-agent-engineer/) for the Laravel-backend-to-AI-agent path, then [Modern AI Engineering](/modern-ai-engineering/).
+- **Interview fundamentals:** [Data Structures](/data-structures/) and [Algorithms](/algorithms/), then [System Design](/system-design/).
+- **Machine learning from first principles:** [Machine Learning](/machine-learning/).
+- **Government exams:** [GATE CS Preparation](/gate-cs-preparation/) and the [Government Exams](/government-exams/) hub.
 
-<div class="hero-ctas">
-  <a href="#course-catalog" class="hero-btn hero-btn-primary">Browse Courses</a>
-  <a href="courses/modern-ai-engineering/" class="hero-btn hero-btn-secondary">Start with AI</a>
-  <a href="about/" class="hero-btn hero-btn-ghost">About Me</a>
-</div>
+## The catalogue
 
-</div>
+### Core
 
-<div class="hero-subsection">
+The placement track: backend + AI, module by module, with interview practice.
 
-Ready to dive in? <a href="?q=" onclick="document.querySelector('.md-search__input').focus();return false;">Search the catalog</a> · <a href="roadmap/">View the learning roadmap</a> · <a href="trending/">Discover trending topics</a>
+| Course | Size |
+|---|---|
+| [AI Engineering Placement](/ai-engineering-placement/) | 323 chapters |
 
-</div>
+### AI/ML
 
----
+Machine learning, applied AI, LLM application engineering and agents.
 
-## AI Engineering Path
+| Course | Size |
+|---|---|
+| [Machine Learning](/machine-learning/) | 10 chapters |
+| [Modern AI Engineering](/modern-ai-engineering/) | 12 chapters |
+| [Applied AI](/applied-ai/) | 4 chapters |
+| [Artificial Intelligence](/artificial-intelligence/) | 26 chapters |
+| [AI Agent Engineer](/ai-agent-engineer/) | 32 chapters |
+| [Big Data](/big-data/) | 5 chapters |
+| [Data Analysis & Interpretation](/data-analysis-interpretation/) | 5 chapters |
+| [Learning Course](/learning-course/) | 88 chapters |
 
-<p class="section-intro">Follow a structured learning progression, build functional systems as you learn, and graduate with a robust, evidence-backed portfolio.</p>
+### CS Core
 
-<div class="grid cards" markdown>
+The subjects an interview and an exam both assume you know.
 
--   :fontawesome-solid-brain:{ .lg .middle } __Foundations (Phases 0–3)__
+| Course | Size |
+|---|---|
+| [Data Structures](/data-structures/) | 18 chapters |
+| [Algorithms](/algorithms/) | 18 chapters |
+| [System Design](/system-design/) | 24 chapters |
+| [Database Management Systems](/database-management-systems/) | 19 chapters |
+| [Computer Networks](/computer-networks/) | 19 chapters |
+| [Operating Systems](/operating-systems/) | 18 chapters |
+| [Computer Architecture](/computer-architecture/) | 5 chapters |
+| [Compiler Design](/compiler-design/) | 15 chapters |
+| [Theory of Computation](/theory-of-computation/) | 16 chapters |
+| [Discrete Mathematics](/discrete-mathematics/) | 15 chapters |
+| [Digital Logic](/digital-logic/) | 15 chapters |
 
-    ---
+### Programming
 
-    Master the prerequisites. Build strong mathematical foundations, grasp core Machine Learning concepts, and construct deep learning architectures from first principles.
+Languages and the frameworks built on them.
 
-    [:octicons-arrow-right-24: Start Here](ai-engineering-from-scratch/phases/00-setup-and-tooling/)
+| Course | Size |
+|---|---|
+| [Python Programming](/python-programming/) | 21 chapters |
+| [Java](/java/) | 80 chapters |
+| [C Programming](/c-programming/) | 18 chapters |
+| [C++ (OOP)](/oop-cpp/) | 16 chapters |
+| [Laravel](/laravel/) | 60 chapters |
+| [Software Engineering](/software-engineering/) | 16 chapters |
+| [Web Development](/web-development/) | 18 chapters |
 
--   :fontawesome-solid-eye:{ .lg .middle } __Vision & Language (Phases 4–5)__
+### DevOps
 
-    ---
+Deployment, containers, and running things in production.
 
-    Process visual and textual data at scale. Progress from traditional CNNs to Vision Transformers, and master NLP from basic bag-of-words to modern transformer architectures.
+| Course | Size |
+|---|---|
+| [Cloud Computing](/cloud-computing/) | 10 chapters |
+| [DevOps](/devops/) | 27 chapters |
 
-    [:octicons-arrow-right-24: Explore](ai-engineering-from-scratch/phases/04-computer-vision/)
+### Security
 
--   :fontawesome-solid-microchip:{ .lg .middle } __Transformers & LLMs (Phases 6–10)__
+Application security, information security, and distributed ledgers.
 
-    ---
+| Course | Size |
+|---|---|
+| [Cyber Security](/cyber-security/) | 21 chapters |
+| [Information Security](/information-security/) | 5 chapters |
+| [Blockchain](/blockchain/) | 10 chapters |
 
-    Unlock the power of Generative AI. Dive deep into attention mechanisms, Reinforcement Learning, and engineer Large Language Models entirely from scratch.
+### Aptitude
 
-    [:octicons-arrow-right-24: LLMs From Scratch](ai-engineering-from-scratch/phases/10-llms-from-scratch/)
+Quant, reasoning, verbal and the banking-specific subjects.
 
--   :fontawesome-solid-robot:{ .lg .middle } __Agents & Production (Phases 11–20)__
+| Course | Size |
+|---|---|
+| [Engineering Mathematics](/engineering-mathematics/) | 10 chapters |
+| [Quantitative Aptitude](/quantitative-aptitude/) | 6 chapters |
+| [Reasoning Ability](/reasoning-ability/) | 6 chapters |
+| [General Aptitude](/general-aptitude/) | 6 chapters |
+| [English Language](/english-language/) | 5 chapters |
+| [Hindi Language](/hindi-language/) | 5 chapters |
+| [Marketing Aptitude](/marketing-aptitude/) | 4 chapters |
+| [Banking Financial Awareness](/banking-financial-awareness/) | 5 chapters |
+| [Banking Technology](/banking-technology/) | 4 chapters |
+| [General Awareness](/general-awareness/) | 8 chapters |
 
-    ---
+### Placement
 
-    Deploy autonomous systems to production. Master LLMOps, multimodal AI integrations, MCP/A2A protocols, and build highly capable, safety-aligned agentic workflows.
+Mock tests, drills, question banks, and company-specific preparation.
 
-    [:octicons-arrow-right-24: Agent Engineering](ai-engineering-from-scratch/phases/14-agent-engineering/)
+| Course | Size |
+|---|---|
+| [Professional Knowledge](/professional-knowledge/) | 10 chapters |
+| [Interview Preparation](/interview-preparation/) | 17 chapters |
+| [Job Preparation](/job-preparation/) | 6 chapters |
+| [Placement Preparation](/placement-preparation/) | 7 chapters |
+| [Mock Tests](/mock-tests/) | 6 chapters |
+| [Coding Problems](/coding-problems/) | 9 chapters |
+| [Speed Drills](/speed-drills/) | 5 chapters |
+| [Government Exams](/government-exams/) | - |
+| [Government PYQs](/government-pyqs/) | 14 chapters |
+| [GATE CS Preparation](/gate-cs-preparation/) | 29 chapters |
 
-</div>
+### Marketing
 
----
+Digital marketing for people who ship the product themselves.
 
-<h2 id="course-catalog">Complete Course Catalog</h2>
+| Course | Size |
+|---|---|
+| [Digital Marketing](/digital-marketing/) | 12 chapters |
 
-<p class="section-subtitle">A meticulously organized, searchable library spanning software engineering, core computer science, AI, and cloud infrastructure. Designed for active learning with practical exercises, architectural diagrams, and production-focused examples.</p>
+### Meta
 
-### Languages & Frameworks
+How to learn: methods, tools, and a practical system for doing it.
 
-<div class="course-grid" data-category="languages" markdown>
-
--   <span class="course-icon">⚙️</span> __[C Programming](courses/c-programming/)__ <span class="course-chaps">18 ch</span>
--   <span class="course-icon">🧩</span> __[OOP C++](courses/oop-cpp/)__ <span class="course-chaps">16 ch</span>
--   <span class="course-icon">🐍</span> __[Python Programming](courses/python-programming/)__ <span class="course-chaps">21 ch</span>
--   <span class="course-icon">🌍</span> __[Web Development](courses/web-development/)__ <span class="course-chaps">18 ch</span>
--   <span class="course-icon">⚡</span> __[Laravel](courses/laravel/)__ <span class="course-chaps">60 ch</span>
--   <span class="course-icon">☕</span> __[Java & Spring Boot](courses/java/)__ <span class="course-chaps">66 ch</span>
-
-</div>
-
-### Computer Science Core
-
-<div class="course-grid" data-category="cs-core" markdown>
-
--   <span class="course-icon">∑</span> __[Discrete Mathematics](courses/discrete-mathematics/)__ <span class="course-chaps">15 ch</span>
--   <span class="course-icon">🔲</span> __[Digital Logic](courses/digital-logic/)__ <span class="course-chaps">15 ch</span>
--   <span class="course-icon">🗃️</span> __[Data Structures](courses/data-structures/)__ <span class="course-chaps">18 ch</span>
--   <span class="course-icon">⚡</span> __[Algorithms](courses/algorithms/)__ <span class="course-chaps">18 ch</span>
--   <span class="course-icon">💻</span> __[Operating Systems](courses/operating-systems/)__ <span class="course-chaps">18 ch</span>
--   <span class="course-icon">🗄️</span> __[DBMS](courses/database-management-systems/)__ <span class="course-chaps">19 ch</span>
--   <span class="course-icon">🌐</span> __[Computer Networks](courses/computer-networks/)__ <span class="course-chaps">18 ch</span>
--   <span class="course-icon">⚛️</span> __[Theory of Computation](courses/theory-of-computation/)__ <span class="course-chaps">15 ch</span>
--   <span class="course-icon">🔄</span> __[Compiler Design](courses/compiler-design/)__ <span class="course-chaps">15 ch</span>
--   <span class="course-icon">📋</span> __[Software Engineering](courses/software-engineering/)__ <span class="course-chaps">16 ch</span>
-
-</div>
-
-### AI & Machine Learning
-
-<div class="course-grid" data-category="ai-ml" markdown>
-
--   <span class="course-icon">⚡</span> __[Modern AI Engineering](courses/modern-ai-engineering/)__ <span class="course-chaps">12 ch</span>
--   <span class="course-icon">🤖</span> __[Artificial Intelligence](courses/artificial-intelligence/)__ <span class="course-chaps">18 ch</span>
--   <span class="course-icon">📊</span> __[Machine Learning](courses/machine-learning/)__ <span class="course-chaps">10 ch</span>
--   <span class="course-icon">🧠</span> __[Applied AI](courses/applied-ai/)__ <span class="course-chaps">4 ch</span>
--   <span class="course-icon">🤖</span> __[AI Agent Engineer](courses/ai-agent-engineer/)__ <span class="course-chaps">14 ch</span>
--   <span class="course-icon">🏗️</span> __[System Design](courses/system-design/)__ <span class="course-chaps">24 ch</span>
-
-</div>
-
-### Infrastructure & Security
-
-<div class="course-grid" data-category="infra" markdown>
-
--   <span class="course-icon">☁️</span> __[Cloud Computing](courses/cloud-computing/)__ <span class="course-chaps">10 ch</span>
--   <span class="course-icon">🔧</span> __[DevOps](courses/devops/)__ <span class="course-chaps">27 ch</span>
--   <span class="course-icon">🔒</span> __[Cyber Security](courses/cyber-security/)__ <span class="course-chaps">21 ch</span>
--   <span class="course-icon">⛓️</span> __[Blockchain](courses/blockchain/)__ <span class="course-chaps">10 ch</span>
--   <span class="course-icon">📊</span> __[Big Data](courses/big-data/)__ <span class="course-chaps">5 ch</span>
-
-</div>
-
-### Practice & Drills
-
-<div class="course-grid" data-category="practice" markdown>
-
--   <span class="course-icon">💻</span> __[Coding Problems Bank](courses/coding-problems/)__ <span class="course-chaps">220 Problems</span>
--   <span class="course-icon">📋</span> __[Mock Tests](courses/mock-tests/)__ <span class="course-chaps">6 Exams</span>
--   <span class="course-icon">⚡</span> __[Speed Drills](courses/speed-drills/)__ <span class="course-chaps">255 Sets</span>
--   <span class="course-icon">📄</span> __[Government PYQs](courses/government-pyqs/)__ <span class="course-chaps">14 Years</span>
-
-</div>
-
-### Philosophy & Spirituality
-
-<div class="course-grid" data-category="practice" markdown>
-
--   <span class="course-icon">🕉️</span> __[Vigyan Bhairav Tantra (Osho)](courses/vigyan-bhairav-tantra/)__ <span class="course-chaps">18 Ch</span>
-
-</div>
-
-### Career & Exam Prep
-
-<div class="course-grid" data-category="career" markdown>
-
--   <span class="course-icon">🎯</span> __[GATE CS Preparation](courses/gate-cs-preparation/)__ <span class="course-chaps">32 Ch</span>
--   <span class="course-icon">💼</span> __[Placement Preparation](courses/placement-preparation/)__ <span class="course-chaps">7 Ch</span>
--   <span class="course-icon">🎓</span> __[Backend + AI Placement](courses/ai-engineering-placement/)__ <span class="course-chaps">21 Subjects · 193 Ch</span>
--   <span class="course-icon">🧠</span> __[Learning How to Learn](courses/learning-how-to-learn/)__ <span class="course-chaps">15 Ch</span>
--   <span class="course-icon">🎯</span> __[Learning How to Learn (Practical)](courses/learning-how-to-learn-practical/)__ <span class="course-chaps">12 Ch · Any Goal</span>
--   <span class="course-icon">📋</span> __[Government Exams Hub](courses/government-exams/)__ <span class="course-chaps">21 Subjects</span>
--   <span class="course-icon">🔢</span> __[Quantitative Aptitude](courses/quantitative-aptitude/)__ <span class="course-chaps">7 Ch</span>
--   <span class="course-icon">🧩</span> __[Reasoning Ability](courses/reasoning-ability/)__ <span class="course-chaps">7 Ch</span>
--   <span class="course-icon">📝</span> __[English Language](courses/english-language/)__ <span class="course-chaps">6 Ch</span>
--   <span class="course-icon">🌍</span> __[General Awareness](courses/general-awareness/)__ <span class="course-chaps">8 Ch</span>
--   <span class="course-icon">🏦</span> __[Banking Awareness](courses/banking-financial-awareness/)__ <span class="course-chaps">6 Ch</span>
--   <span class="course-icon">🔤</span> __[Hindi Language](courses/hindi-language/)__ <span class="course-chaps">6 Ch</span>
--   <span class="course-icon">📊</span> __[Marketing Aptitude](courses/marketing-aptitude/)__ <span class="course-chaps">5 Ch</span>
--   <span class="course-icon">📈</span> __[Data Analysis & DI](courses/data-analysis-interpretation/)__ <span class="course-chaps">6 Ch</span>
--   <span class="course-icon">💾</span> __[Professional Knowledge](courses/professional-knowledge/)__ <span class="course-chaps">11 Ch</span>
--   <span class="course-icon">🖥️</span> __[Computer Architecture](courses/computer-architecture/)__ <span class="course-chaps">6 Ch</span>
--   <span class="course-icon">🔐</span> __[Information Security](courses/information-security/)__ <span class="course-chaps">6 Ch</span>
--   <span class="course-icon">🏧</span> __[Banking Technology](courses/banking-technology/)__ <span class="course-chaps">5 Ch</span>
--   <span class="course-icon">🎤</span> __[Interview Preparation](courses/interview-preparation/)__ <span class="course-chaps">17 Ch</span>
--   <span class="course-icon">💼</span> __[Job Preparation](courses/job-preparation/)__ <span class="course-chaps">7 Ch</span>
--   <span class="course-icon">🧭</span> __[Complete Roadmap](roadmap/)__ <span class="course-chaps">All Paths</span>
-
-</div>
+| Course | Size |
+|---|---|
+| [Loop Engineering](/loop-engineering/) | 10 chapters |
+| [Learning How to Learn](/learning-how-to-learn/) | 19 chapters |
+| [Learning How to Learn (Practical)](/learning-how-to-learn-practical/) | 15 chapters |
+| [AI-Powered Learning](/ai-powered-learning/) | 13 chapters |
+| [Vigyan Bhairav Tantra](/vigyan-bhairav-tantra/) | 26 chapters |
+| [Geeta Darshan](/geeta-darshan/) | 18 chapters |
+| [The Complete Bhagavad Gita](/bhagavad-gita/) | 18 chapters |
 
 ---
 
-## Projects & Tools
+## About this site
 
-<div class="grid cards" markdown>
-
--   :fontawesome-solid-server:{ .lg .middle } __ChromaDB Memory Server__
-
-    ---
-
-    Persistent memory layer for AI agents featuring semantic caching, hybrid search, and automatic embedding management. <br><small>**Tech Stack:** Python, FastAPI, ChromaDB, Docker</small>
-
--   :fontawesome-solid-wifi:{ .lg .middle } __WhatsApp AI Agents__
-
-    ---
-
-    Multi-agent WhatsApp automation ecosystem for streamlining business workflows, lead capture, and appointment booking. <br><small>**Tech Stack:** Node.js, WhatsApp Cloud API, LangChain, OpenAI</small>
-
--   :fontawesome-solid-building:{ .lg .middle } __Multi-Tenant ERP__
-
-    ---
-
-    Scalable ERP architecture featuring strict tenant isolation, role-based access control (RBAC), and a dynamic reporting engine. <br><small>**Tech Stack:** Laravel, Vue.js, PostgreSQL, Redis</small>
-
--   :fontawesome-solid-video:{ .lg .middle } __Automated Media Pipeline__
-
-    ---
-
-    AI-driven media processing pipeline orchestrating transcription, semantic summarization, and automated publishing. <br><small>**Tech Stack:** Python, FFmpeg, Whisper, AWS S3</small>
-
-</div>
-
-<div style="text-align:center;margin:1rem 0;">
-  <a href="projects/" class="hero-btn hero-btn-primary">View All Projects</a>
-</div>
-
----
-
-## Why This Site Exists
-
-I'm **Raushan Kumar**, a seasoned Full-Stack Developer leveraging my software engineering background to build robust, scalable AI systems. Based in Patna, Bihar, I run [ApexPillar Technologies](https://apexpillar.tech) and architect production-grade AI solutions.
-
-This repository is my living portfolio and technical brain trust:
-
-1. **Radical Transparency:** Over 1,900+ public lessons and technical deep-dives act as a public accountability mechanism. It's a testament to continuous learning and execution.
-2. **Technical Proof of Work:** As I pursue AI Automation Engineer roles (targeting Dubai/Remote for July 2026), this site serves as verifiable evidence of my capabilities. 
-
-Every algorithm detailed here is implemented from scratch. Every project is deployed to production. Every architectural decision and technical challenge is rigorously documented.
-
----
-
-<div style="text-align:center; margin-bottom: 2rem;">
-  <p style="font-size: 1.1rem; color: var(--md-default-fg-color--light);">Ready to collaborate or want to learn more about my technical journey?</p>
-</div>
-
-<div class="cta-row">
-  <a href="about/" class="cta-primary">👤 About Me</a>
-  <a href="resume/" class="cta-primary">📄 View Resume</a>
-  <a href="https://github.com/Raushan666java" class="cta-secondary">💻 GitHub</a>
-  <a href="https://linkedin.com/in/raushan-kumar-477465250" class="cta-secondary">💼 LinkedIn</a>
-</div>
+It is a public record of what I am learning, kept in the open so the work can be
+checked rather than claimed. [More about me](/about/).

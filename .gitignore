@@ -1,7 +1,7 @@
 site/node_modules/
 site/build/
 site/.docusaurus/
-site/scripts/
+site/*.log
 .venv/
 __pycache__/
 *.pyc

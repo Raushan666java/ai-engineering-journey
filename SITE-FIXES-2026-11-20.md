@@ -251,3 +251,104 @@ now strips fences before counting.
 section and 188 no exercises section, against the house rule of objectives,
 theory, examples, summary, takeaways, quiz and exercises. 64 chapters are under
 600 words.
+
+
+---
+
+## Third pass: the defects the deploy exposed
+
+Once the site actually deployed, the checks that had been impossible became
+possible. Three of them failed, and one of those was the largest usability bug
+the site had.
+
+### Fifty-three of sixty course landing pages were 404
+
+`docs/courses/<course>/index.md` is the course landing page. Six of those files
+declare `slug: /<course>` and were published at `/<course>/`. The other
+fifty-three declared no slug, so the docs plugin - which runs with
+`routeBasePath: '/'` - published them at `/courses/<course>/`.
+
+Everything that links to a course links to `/<course>/`: the navbar, the footer,
+the custom 404 page, `/about`, `/courses`, and every card on the homepage. So
+fifty-three course cards led to a 404, and because the footer is on every page,
+the same three targets appeared as broken links site-wide.
+
+Chapters were always fine: each declares its own slug (`slug:
+/machine-learning/01-introduction`). Only the landing pages were split in two.
+
+Fix: give the fifty-three the same explicit slug the other six always had.
+One rule now holds everywhere:
+
+    /<course>/            course landing page
+    /<course>/<chapter>/  a chapter
+
+Nothing linked to the old `/courses/<course>/` form, so nothing was orphaned.
+This is also what made `onBrokenLinks: 'throw'` possible - the build can now
+refuse to ship a broken tree, because there are no broken links left to ship.
+
+### Thirty-one pages were titled by their filename
+
+`01-general-aptitude`, `15-mock-test-1`, `ch-08-gate-theory-prep`, and two
+module indexes titled with the literal string `index`. Cause: a UTF-8 BOM
+written into the body by an earlier import survived a CP1252 round-trip as the
+text `i>>?` sitting immediately before the heading marker:
+
+    i>>?# General Aptitude for GATE CS
+
+That is not a heading to the markdown parser. The page therefore had no H1, the
+line rendered as a paragraph starting with a literal `#`, and Docusaurus fell
+back to the filename for both the tab title and the sidebar entry. Stripping the
+prefix restores the H1, which becomes the title; the heading line is then
+removed, because the title already renders as the page H1.
+
+Five of the same pages carried a mangled heading in `description:` - the string
+search results and social cards display - such as `i>>?# GATE CS Mock Test 1 ->
+Full-Length Practice Paper`. Those are now sentences.
+
+### Fifty-six visual-notes pages had five H1s each
+
+The generated `visual-notes.md` files used `#` for every section, so a revision
+page rendered five H1s and a flat table of contents. The first heading is the
+title (Docusaurus renders it from frontmatter), so the rest are sections and are
+now `##`.
+
+### The sitemap had no lastmod
+
+`showLastUpdateTime: true` puts a date under each chapter. It does not reach
+`sitemap.xml`: the sitemap plugin emits `<lastmod>` only from its own `lastmod`
+option, which defaults to `null`. All 1,424 URLs shipped with no lastmod, so a
+crawler had no reason to revisit a page that had actually changed. Now
+`lastmod: 'date'`.
+
+### Module 33 had no house sections
+
+The house rule is objectives, theory, examples, summary, takeaways, quiz,
+exercises. `33-campus-placement` had the theory - sixteen quant topics with
+formula boxes, twelve reasoning types, ten verbal sections, forty speed rules -
+and none of the scaffolding. Its five teaching chapters now carry all five
+missing sections, with quiz answers behind a `<details>` block so the page does
+not spoil itself.
+
+Its fourteen mock papers and question banks are exempt by design: the paper is
+the quiz. `scripts/rule-gaps.mjs` now recognises a drill paper by shape (30+
+numbered questions plus an `Answer Key` heading) rather than counting it as
+missing work. Reported placement-course gap: 21 chapters to 16, of which 15 are
+drill papers.
+
+### The homepage advertised a number it could not back up
+
+The proof strip said "1,400+ chapters" next to honest metrics (Recall@4 0.93,
+MRR 0.89, 37x cost reduction). The corpus is 1,282 teaching chapters. The strip
+now reads the count from generated `chapter-counts.ts`, so the figure cannot
+drift from the tree.
+
+### The chunked deploy aborted after chunk 1
+
+`deploy-gh-pages.ps1` runs with `$ErrorActionPreference = 'Stop'`. Git writes
+its progress to stderr, PowerShell turns stderr from a native command into a
+terminating `NativeCommandError`, and the script died after the first chunk even
+when the push had succeeded. The push is now judged by `$LASTEXITCODE` with the
+preference relaxed around it, and a chunk with nothing staged is skipped because
+`git diff --cached --quiet` says it is already on the branch.
+
+All six chunks pushed: `origin/gh-pages` = `629f086542`.

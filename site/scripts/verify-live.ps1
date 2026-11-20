@@ -18,9 +18,9 @@ $fail = 0
 function Check {
   param([string]$Name, [string]$Url, [string]$Expect)
 
+  $ok = $true
   try {
     $r = Invoke-WebRequest -Uri $Url -UseBasicParsing -TimeoutSec 45
-    $ok = $true
     $detail = "HTTP $($r.StatusCode), $([math]::Round($r.RawContentLength/1KB,1)) KB"
     if ($Expect -and $r.Content -notmatch $Expect) {
       $ok = $false
@@ -34,15 +34,16 @@ function Check {
   $mark = if ($ok) { 'PASS' } else { 'FAIL' }
   if (-not $ok) { $script:fail++ }
   Write-Output ("{0}  {1,-34} {2}" -f $mark, $Name, $detail)
-  return $r
+  # Never return the response object: Invoke-WebRequest output is huge and
+  # prints the whole body into the transcript.
 }
 
 Write-Output "== pages =="
-$home = Check 'home' "$base/" 'Raushan Kumar'
+Check 'home' "$base/" 'Raushan Kumar'
 Check 'digital-marketing (was 404)' "$base/digital-marketing/" 'Digital Marketing'
 Check 'about' "$base/about/" 'Raushan'
 Check 'placement hub' "$base/ai-engineering-placement/" 'placement'
-Check 'katex page' "$base/ai-engineering-placement/08-machine-learning/11-naive-bayes/" 'class="katex"'
+Check 'katex page' "$base/discrete-mathematics/01-sets/" 'class="katex"'
 
 Write-Output ""
 Write-Output "== assets =="

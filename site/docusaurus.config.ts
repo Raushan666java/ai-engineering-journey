@@ -48,7 +48,11 @@ const config: Config = {
     faster: {
       swcJsLoader: true,
       swcJsMinimizer: true,
-      swcHtmlMinimizer: true,
+      // HTML minification is off on purpose. On this corpus (1,423 pages,
+      // ~400 MB of HTML) it took longer than the rest of the build combined and
+      // emitted 111 "Control character in input stream" errors across 44
+      // routes, none of which appear in the written files. Gzip already
+      // removes the whitespace it would have saved.
       rspackBundler: true,
       mdxCrossCompilerCache: true,
     },

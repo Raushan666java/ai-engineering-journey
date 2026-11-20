@@ -1,25 +1,20 @@
 ---
 id: 15-capstone-support-agent
 slug: /ai-agent-engineer/agentic-ai-book/15-capstone-support-agent
-title: "Part V — Applied"
-sidebar_label: "Part V — Applied"
+title: "Capstone — Building a Production Support Agent"
+sidebar_label: "Capstone — Building a Production Support Agent"
 sidebar_position: 16
 description: "This chapter walks through building the ApexERP Support Agent end to end, combining every concept from the book into one real system. Treat this as your"
 ---
-
-# Part V — Applied
-
-## Chapter 15: Capstone — Building a Production Support Agent
-
 This chapter walks through building the **ApexERP Support Agent** end to end, combining every concept from the book into one real system. Treat this as your reference build.
 
-### 15.1 The Spec
+## 15.1 The Spec
 
 **Goal:** An agent that handles incoming customer support queries for an ApexERP client — triaging the query, answering from docs/knowledge base when possible, checking real order/billing data when needed, and drafting (never auto-sending) any customer-facing message for human approval.
 
 **Explicitly out of scope (know your boundaries):** the agent never directly modifies payment records, never sends a customer communication without approval, and hands off to a human immediately for anything involving anger/escalation keywords or amounts above a threshold.
 
-### 15.2 Architecture
+## 15.2 Architecture
 
 ```
 Customer query
@@ -48,7 +43,7 @@ Agent     Agent          Agent        (escalation queue)
       Send via Laravel API
 ```
 
-### 15.3 Tools Needed
+## 15.3 Tools Needed
 
 | Tool | Backing system | Used by |
 |---|---|---|
@@ -60,7 +55,7 @@ Agent     Agent          Agent        (escalation queue)
 | `draft_customer_message` | LLM call, no external effect | All agents |
 | `escalate_to_human` | Writes to a queue/DB table | Supervisor |
 
-### 15.4 Build Order (Map to Chapters)
+## 15.4 Build Order (Map to Chapters)
 
 1. **Chapter 4-5**: Build each specialist as a standalone hand-rolled ReAct loop first, test independently.
 2. **Chapter 7**: Port each specialist to a LangGraph subgraph with checkpointing.
@@ -72,7 +67,7 @@ Agent     Agent          Agent        (escalation queue)
 8. **Chapter 13**: Build a 20-case test set covering all three categories + escalation triggers, run it before every deploy.
 9. **Chapter 14**: Deploy on your Hetzner VPS behind FastAPI, expose to n8n as an HTTP node for triggering from existing workflows (e.g., new-ticket-created webhook).
 
-### 15.5 What "Done" Looks Like
+## 15.5 What "Done" Looks Like
 
 A working system where: a real (or realistic test) support query comes in, gets correctly routed to the right specialist, retrieves accurate information (with self-correction if the first retrieval attempt is weak), drafts a response, and stops for human approval before anything reaches the customer — all logged, all testable, all deployed and callable from your existing n8n infrastructure.
 

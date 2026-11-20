@@ -1,18 +1,13 @@
 ---
 description: "An agent is a system where a language model doesn't just produce text — it decides what to do, does it using tools, looks at what happened, and decides"
 ---
-
-# Part I — Foundations
-
-## Chapter 1: What Is Agentic AI, Really
-
-### 1.1 The One-Sentence Definition
+## 1.1 The One-Sentence Definition
 
 An **agent** is a system where a language model doesn't just produce text — it decides what to *do*, does it using tools, looks at what happened, and decides what to do next, in a loop, until a goal is reached or it gives up.
 
 That's the whole concept. Everything else in this book — LangGraph, MCP, multi-agent orchestration — is infrastructure built around that one loop.
 
-### 1.2 Why This Matters Now
+## 1.2 Why This Matters Now
 
 For years, "using an LLM" meant: send a prompt, get text back, done. That's a **function**: `f(prompt) -> text`. It's stateless, single-shot, and the model has no way to affect the world beyond the words it outputs.
 
@@ -20,7 +15,7 @@ An agent turns the LLM into the **decision-making core of a program that can act
 
 This is the shift from "LLM as autocomplete" to "LLM as the reasoning engine of a piece of software."
 
-### 1.3 The Four Components
+## 1.3 The Four Components
 
 Every agentic system, no matter how fancy the framework, is built from four pieces:
 
@@ -38,7 +33,7 @@ What the agent remembers:
 **4. Control Flow / Orchestration (the loop)**
 The logic that decides: after the model responds, do we call a tool? Do we ask the model again? Do we stop? This is what frameworks like LangGraph formalize as a "graph," but at its core it's just a loop with an if-statement.
 
-### 1.4 A Spectrum, Not a Binary
+## 1.4 A Spectrum, Not a Binary
 
 "Agentic" isn't on/off — it's a spectrum of autonomy:
 
@@ -58,7 +53,7 @@ Fixed pipeline          Tool-augmented        ReAct loop           Planning agen
 
 A huge number of "agent" projects fail not because the model is bad, but because someone built a 5-agent multi-agent system for a task that a single well-designed tool-augmented call would have handled better, cheaper, and more predictably. Default to the *least* autonomous design that solves the problem. Add autonomy only when the task genuinely has unpredictable branching that a fixed pipeline can't handle.
 
-### 1.5 Your Existing Work, Reframed
+## 1.5 Your Existing Work, Reframed
 
 You already have the ingredients:
 
@@ -71,7 +66,7 @@ You already have the ingredients:
 
 What you're missing is the **loop** — the part where the model itself decides, dynamically, which tool to call and when, rather than you hardcoding the sequence in n8n. That's what the rest of this book builds, step by step.
 
-### 1.6 Common Failure Modes (Know These Before You Build)
+## 1.6 Common Failure Modes (Know These Before You Build)
 
 - **Infinite loops** — the agent keeps calling tools without ever deciding it's done. Always cap iterations.
 - **Hallucinated tool calls** — the model invents a tool that doesn't exist, or passes malformed arguments. Validate everything before executing.

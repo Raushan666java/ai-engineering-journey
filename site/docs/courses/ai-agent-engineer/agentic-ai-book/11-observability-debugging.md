@@ -1,23 +1,18 @@
 ---
 id: 11-observability-debugging
 slug: /ai-agent-engineer/agentic-ai-book/11-observability-debugging
-title: "Part IV — Production"
-sidebar_label: "Part IV — Production"
+title: "Observability & Debugging Agents"
+sidebar_label: "Observability & Debugging Agents"
 sidebar_position: 12
 description: "A traditional bug: you can step through deterministic code and know exactly why line 47 produced the wrong output. An agent bug: the model made a"
 ---
-
-# Part IV — Production
-
-## Chapter 11: Observability & Debugging Agents
-
-### 11.1 Why This Is Harder Than Debugging Normal Code
+## 11.1 Why This Is Harder Than Debugging Normal Code
 
 A traditional bug: you can step through deterministic code and know exactly why line 47 produced the wrong output. An agent bug: the model made a *reasoning decision* that led to a wrong tool call — the "why" lives inside a non-deterministic model's output, not in code you wrote. You can't set a breakpoint inside an LLM's reasoning.
 
 The fix isn't debugging harder — it's **logging everything so you can reconstruct what happened after the fact.**
 
-### 11.2 What to Log, At Minimum
+## 11.2 What to Log, At Minimum
 
 For every agent run, persist:
 - The full input (user query, initial state)
@@ -52,12 +47,12 @@ def logged_tool_executor(name, input_data, trace_id):
     return result
 ```
 
-### 11.3 Tools for This
+## 11.3 Tools for This
 
 - **LangSmith** (LangChain's tracing product) — plugs directly into LangGraph, gives you a visual trace of every node, tool call, and LLM call per run with minimal setup. Good starting point.
 - **Roll-your-own** — a `agent_logs` table in Postgres (you already run this kind of infra) is entirely sufficient for a single-team production system, and gives you full control to build custom dashboards (e.g., "which tool fails most often," "average iterations per task type").
 
-### 11.4 The Debugging Workflow in Practice
+## 11.4 The Debugging Workflow in Practice
 
 When an agent produces a wrong result: pull the full trace by `trace_id`, read through the sequence of LLM reasoning + tool calls in order, and find the exact turn where it went wrong — usually one of: (a) a bad tool description caused a wrong tool choice, (b) a tool returned malformed/misleading data the model reasonably-but-wrongly trusted, or (c) the system prompt didn't cover this edge case. The fix is almost always a prompt or tool-description change, not a "logic bug" in the traditional sense.
 

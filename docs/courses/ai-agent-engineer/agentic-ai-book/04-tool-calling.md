@@ -1,12 +1,7 @@
 ---
 description: "That's it. That's the entire mechanism. Every framework — LangChain, LangGraph, CrewAI — is a wrapper around exactly this four-step exchange, repeated in"
 ---
-
-# Part II — Building Blocks
-
-## Chapter 4: Tool Calling From First Principles
-
-### 4.1 The Anatomy of a Tool Call
+## 4.1 The Anatomy of a Tool Call
 
 Every tool-calling API (Anthropic, OpenAI, etc.) follows the same basic shape:
 
@@ -86,7 +81,7 @@ print(follow_up.content[0].text)  # the model's final natural-language answer
 
 That's it. That's the entire mechanism. Every framework — LangChain, LangGraph, CrewAI — is a wrapper around exactly this four-step exchange, repeated in a loop.
 
-### 4.2 Multiple Tools, Model Chooses
+## 4.2 Multiple Tools, Model Chooses
 
 Add more tools to the `tools` list, and the model picks which one(s) to call based on the descriptions. It can even request multiple tool calls in a single turn if the task needs it (e.g., "check the weather AND check my calendar").
 
@@ -98,7 +93,7 @@ tools = [
 ]
 ```
 
-### 4.3 Parameter Validation — Don't Trust the Model Blindly
+## 4.3 Parameter Validation — Don't Trust the Model Blindly
 
 The model can and will occasionally produce malformed or nonsensical tool inputs (wrong types, missing required fields, out-of-range values). Always validate before executing:
 
@@ -113,7 +108,7 @@ def execute_tool(name, input_data):
 
 Feeding a clear error back (rather than crashing) lets the model self-correct on the next turn — this is a core agentic reliability pattern, not an edge case.
 
-### 4.4 Milestone Project for This Chapter
+## 4.4 Milestone Project for This Chapter
 
 Build a single-tool weather+advice agent exactly as shown above, but print out every raw API response so you can literally watch the tool_use block appear, get executed, and get fed back. Do this before moving to Chapter 5 — seeing the raw JSON exchange is what makes the loop concept concrete instead of abstract.
 

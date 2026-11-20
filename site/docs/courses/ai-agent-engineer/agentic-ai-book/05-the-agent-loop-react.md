@@ -1,19 +1,17 @@
 ---
 id: 05-the-agent-loop-react
 slug: /ai-agent-engineer/agentic-ai-book/05-the-agent-loop-react
-title: "05-the-agent-loop-react"
-sidebar_label: "05-the-agent-loop-react"
+title: "The Agent Loop (ReAct) — Hand-Built"
+sidebar_label: "The Agent Loop (ReAct) — Hand-Built"
 sidebar_position: 6
 description: "ReAct (Reason + Act) is the foundational pattern: the model alternates between reasoning (thinking about what to do) and acting (calling a tool)"
 ---
 
-## Chapter 5: The Agent Loop (ReAct) — Hand-Built
-
-### 5.1 Why "ReAct"
+## 5.1 Why "ReAct"
 
 ReAct (Reason + Act) is the foundational pattern: the model alternates between **reasoning** (thinking about what to do) and **acting** (calling a tool), observing the result, and reasoning again — until it decides it has enough to answer.
 
-### 5.2 The Loop, In Full
+## 5.2 The Loop, In Full
 
 ```python
 import anthropic
@@ -67,11 +65,11 @@ Walk through what this does, line by line, until it's fully intuitive:
 
 This ~30-line function *is* an agent. Everything LangGraph gives you later is convenience on top of this exact shape.
 
-### 5.3 Multi-Tool Reasoning Chains
+## 5.3 Multi-Tool Reasoning Chains
 
 With 3-4 tools available, the model will naturally chain calls across iterations of this loop: e.g., "check order status" → sees it's overdue → "get customer contact" → "send notification." You don't program this sequence — it emerges from the model reasoning about the goal at each iteration, given what it's learned from previous tool results.
 
-### 5.4 Error Handling in the Loop
+## 5.4 Error Handling in the Loop
 
 Two categories of failure, handled differently:
 
@@ -111,7 +109,7 @@ def run_agent_with_repeat_guard(user_message, tools, tool_executor, max_iteratio
     return "Max iterations reached."
 ```
 
-### 5.5 Milestone Project for This Chapter
+## 5.5 Milestone Project for This Chapter
 
 Build the ApexERP-style agent: 3-4 tools (`query_order`, `calculate_days_overdue`, `send_notification`, `search_docs`), and give it the task: *"Check if order #4521 is overdue and notify the customer if so."* Watch it autonomously chain 2-3 tool calls to complete the task, entirely in your own ~150-line loop, no framework.
 

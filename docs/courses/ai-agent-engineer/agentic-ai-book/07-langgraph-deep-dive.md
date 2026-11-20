@@ -1,12 +1,7 @@
 ---
 description: "LangGraph formalizes your loop as a state graph: nodes are functions (including LLM calls), edges define what runs next, and a shared state object flows"
 ---
-
-# Part III — Frameworks
-
-## Chapter 7: LangGraph Deep Dive
-
-### 7.1 Why LangGraph Instead of Raw Loops
+## 7.1 Why LangGraph Instead of Raw Loops
 
 Your Chapter 5 loop works great for linear ReAct. But real agents need:
 - Branching logic (different paths depending on what happened)
@@ -16,7 +11,7 @@ Your Chapter 5 loop works great for linear ReAct. But real agents need:
 
 LangGraph formalizes your loop as a **state graph**: nodes are functions (including LLM calls), edges define what runs next, and a shared **state** object flows through the whole graph — replacing your `messages` list with something more structured and inspectable.
 
-### 7.2 Core Concepts
+## 7.2 Core Concepts
 
 **State** — a typed structure (usually a `TypedDict` or Pydantic model) that flows through every node:
 
@@ -73,7 +68,7 @@ result = app.invoke({"messages": [{"role": "user", "content": "Check order 4521"
 
 Notice: this is *the exact same loop* from Chapter 5, just expressed as a graph instead of a `for` loop. The value isn't different behavior — it's that the structure is now explicit, inspectable, and composable.
 
-### 7.3 Checkpointing — Pause and Resume
+## 7.3 Checkpointing — Pause and Resume
 
 This is LangGraph's biggest practical win over a hand-rolled loop: built-in state persistence.
 
@@ -93,7 +88,7 @@ result2 = app.invoke({"messages": [{"role": "user", "content": "And notify them"
 
 This is directly relevant to anything you deploy on your Hetzner VPS: a support agent conversation can span hours, survive a server restart, and pick up exactly where it left off.
 
-### 7.4 Human-in-the-Loop
+## 7.4 Human-in-the-Loop
 
 For anything touching money, production data, or irreversible actions (a very real concern for ApexERP-style agents), you interrupt the graph before a risky node and wait for explicit approval:
 
@@ -110,11 +105,11 @@ result = app.invoke(None, config=config)  # resumes from where it paused
 
 This single pattern is what makes agentic systems safe to put in front of real customers/production data — never let an agent take an irreversible action without this kind of checkpoint, at least initially, until you've built enough evaluation confidence (Chapter 13) to trust it unsupervised for that action type.
 
-### 7.5 Subgraphs — The Bridge to Multi-Agent
+## 7.5 Subgraphs — The Bridge to Multi-Agent
 
 A compiled graph can itself be used as a node inside a bigger graph. This is how LangGraph does multi-agent systems (Chapter 9) — each "agent" is just a subgraph, and a parent graph routes between them.
 
-### 7.6 Milestone Project for This Chapter
+## 7.6 Milestone Project for This Chapter
 
 Rebuild your Chapter 5 ApexERP agent in LangGraph with: (1) SQLite checkpointing so a conversation survives a script restart, and (2) an `interrupt_before` on the notification-sending node, requiring manual approval (simulate this with an `input()` prompt for now) before the agent actually "sends" anything.
 

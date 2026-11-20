@@ -1,21 +1,19 @@
 ---
 id: 08-agentic-rag
 slug: /ai-agent-engineer/agentic-ai-book/08-agentic-rag
-title: "08-agentic-rag"
-sidebar_label: "08-agentic-rag"
+title: "Agentic RAG"
+sidebar_label: "Agentic RAG"
 sidebar_position: 9
 description: "Naive RAG (what most tutorials teach, and likely what your current ChromaDB setup does): always retrieve top-K chunks for every query, stuff them into the"
 ---
 
-## Chapter 8: Agentic RAG
-
-### 8.1 Naive RAG vs. Agentic RAG
+## 8.1 Naive RAG vs. Agentic RAG
 
 **Naive RAG** (what most tutorials teach, and likely what your current ChromaDB setup does): always retrieve top-K chunks for every query, stuff them into the prompt, generate an answer. Fixed pipeline, no decision-making.
 
 **Agentic RAG**: the model decides *whether* to retrieve at all, *what* to search for (possibly rewriting the query), *evaluates* whether what came back is actually useful, and *iterates* if not — all as tool-calling decisions inside the ReAct loop from Chapter 5.
 
-### 8.2 Retrieval as a Tool, Not a Pipeline Step
+## 8.2 Retrieval as a Tool, Not a Pipeline Step
 
 ```python
 tools = [
@@ -37,7 +35,7 @@ def search_knowledge_base(query):
 
 Because it's a tool, the model can skip it entirely for questions that don't need it ("hi, how are you") — something a fixed always-retrieve pipeline can't do without extra hardcoded logic.
 
-### 8.3 Query Rewriting
+## 8.3 Query Rewriting
 
 Users' raw questions are often bad search queries. An agentic pattern: have the model rewrite the query *before* searching, as an explicit reasoning step:
 
@@ -48,7 +46,7 @@ Rewritten query for search: "product malfunction after software update troublesh
 
 You can do this with a lightweight, cheap LLM call, or just prompt the main agent to always reformulate before calling `search_knowledge_base`.
 
-### 8.4 Self-Correction Loop (Grade the Retrieval)
+## 8.4 Self-Correction Loop (Grade the Retrieval)
 
 The real power of agentic RAG: the agent evaluates whether the retrieved chunks actually answer the question, and re-searches if not.
 
@@ -79,7 +77,7 @@ def route_after_grading(state):
     return "rewrite_query"
 ```
 
-### 8.5 Multi-Source Retrieval
+## 8.5 Multi-Source Retrieval
 
 Real systems rarely have just one knowledge source. Give the agent multiple retrieval tools and let it choose:
 
@@ -93,7 +91,7 @@ tools = [
 
 This is exactly the shape of an ApexERP support agent: it must pick the right *kind* of lookup, not just search one blob of text.
 
-### 8.6 Milestone Project for This Chapter
+## 8.6 Milestone Project for This Chapter
 
 Upgrade your existing ChromaDB/FastAPI memory server: add a grading step and a rewrite-and-retry loop (max 3 attempts) as a small LangGraph graph. Test it with a deliberately vague/bad query and confirm the agent rewrites and retries rather than returning a weak answer immediately.
 

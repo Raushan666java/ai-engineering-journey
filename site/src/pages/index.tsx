@@ -100,7 +100,13 @@ function ProofStrip() {
     <div className={styles.proofStrip}>
       {proof.map((item) => (
         <div key={item.label} className={styles.proofItem}>
-          <span className={styles.proofValue}>{item.value}</span>
+          <span className={styles.proofValue}>
+            {/* The chapter count is measured from the tree, not typed here: the
+                old "1,400+" counted index and navigation pages. */}
+            {item.label === 'chapters'
+              ? corpusSize.chapters.toLocaleString('en-US')
+              : item.value}
+          </span>
           <span className={styles.proofLabel}>{item.label}</span>
         </div>
       ))}

@@ -39,7 +39,8 @@ export const proof = [
     detail: 'Per-conversation LLM spend, state machine rewrite',
   },
   {
-    value: '1,400+',
+    // Filled at render time from the measured corpus size (see ProofStrip).
+    value: '',
     label: 'chapters',
     detail: 'Written while learning, published here',
   },

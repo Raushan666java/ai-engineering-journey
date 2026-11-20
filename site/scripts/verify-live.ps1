@@ -44,6 +44,11 @@ Check 'digital-marketing (was 404)' "$base/digital-marketing/" 'Digital Marketin
 Check 'about' "$base/about/" 'Raushan'
 Check 'placement hub' "$base/ai-engineering-placement/" 'placement'
 Check 'katex page' "$base/discrete-mathematics/01-sets/" 'class="katex"'
+# The top of the content hierarchy. Both were broken at different times: the
+# landing pages lived at /courses/<course>/ while every link said /<course>/, and
+# the catalogue was a Material for MkDocs page sitting at /course-overview.
+Check 'course landing page' "$base/machine-learning/" 'Machine Learning'
+Check 'course catalogue' "$base/course-overview" 'chapters'
 
 Write-Output ""
 Write-Output "== assets =="

@@ -48,6 +48,29 @@ checks.push(['sitemap carries lastmod', lastmod > 0, `${lastmod} of ${urls} urls
 const home = await get(`${BASE}/`);
 checks.push(['homepage states the measured chapter count', /1,272|1,28\d/.test(home.text), 'looking for 1,2xx chapters']);
 
+// The site-wide bug: fifty-three course landing pages were published at
+// /courses/<course>/ while every card, the navbar and the footer linked to
+// /<course>/. Spot-check three of them from different points in the alphabet,
+// and assert the landing page actually lists its chapters.
+const landings = ['machine-learning', 'python-programming', 'theory-of-computation'];
+const landingResults = await Promise.all(landings.map((c) => get(`${BASE}/${c}/`)));
+const brokenLandings = landings.filter((c, i) => landingResults[i].status !== 200);
+checks.push([
+  'course landing pages resolve',
+  brokenLandings.length === 0,
+  brokenLandings.length ? `404: ${brokenLandings.join(', ')}` : `${landings.length} of ${landings.length} live`,
+]);
+const ml = landingResults[0];
+const mlChapterLinks = (ml.text.match(/href="\/ai-engineering-journey\/machine-learning\/[a-z0-9-]+\/"/g) || []).length;
+checks.push(['a landing page links to its chapters', mlChapterLinks >= 8, `${mlChapterLinks} chapter links`]);
+
+// Count how many single-segment course routes the sitemap publishes. Before the
+// fix this was 12 (pages only); with the landing pages it should exceed 60.
+const singleSegment = [...sitemap.text.matchAll(/<loc>([^<]+)<\/loc>/g)]
+  .map((m) => m[1].replace(`${BASE}/`, ''))
+  .filter((u) => u.split('/').filter(Boolean).length === 1);
+checks.push(['sitemap publishes the course landing pages', singleSegment.length >= 60, `${singleSegment.length} single-segment urls`]);
+
 let failed = 0;
 for (const [name, ok, detail] of checks) {
   if (!ok) failed++;

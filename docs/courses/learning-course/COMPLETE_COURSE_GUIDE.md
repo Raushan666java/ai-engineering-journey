@@ -1,14 +1,11 @@
 ---
-description: "slug: /learning-course/COMPLETE_COURSE_GUIDE title: '🎓 Complete AI-Enhanced Learning Course - Master Guide' sidebar_label: '🎓 Complete AI-Enhanced"
----
-
-﻿---
-slug: /learning-course/COMPLETE_COURSE_GUIDE
+id: "COMPLETE_COURSE_GUIDE"
+slug: "/learning-course/COMPLETE_COURSE_GUIDE"
 title: "🎓 Complete AI-Enhanced Learning Course - Master Guide"
 sidebar_label: "🎓 Complete AI-Enhanced Learning Course - Master Guide"
 sidebar_position: 2
+description: "Provide insights and tomorrow's optimization plan.\""
 ---
-# Complete AI-Enhanced Learning Course - Master Guide
 
 ## Course Structure Overview
 

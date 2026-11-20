@@ -1,14 +1,11 @@
 ---
-description: "slug: /learning-course/Modules/3_Study_Methods/README.mdDETAILED_NOTES title: '📚 Study Methods - Detailed Notes' sidebar_label: '📚 Study Methods"
----
-
-﻿---
-slug: /learning-course/Modules/3_Study_Methods/README.mdDETAILED_NOTES
+id: "DETAILED_NOTES"
+slug: "/learning-course/Modules/3_Study_Methods/README.mdDETAILED_NOTES"
 title: "📚 Study Methods - Detailed Notes"
 sidebar_label: "📚 Study Methods - Detailed Notes"
 sidebar_position: 1
+description: "Binary Search is like finding a word in a dictionary."
 ---
-# 📚 Study Methods - Detailed Notes
 
 ## Active Learning Strategies
 

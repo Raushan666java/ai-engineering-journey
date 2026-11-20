@@ -1,14 +1,11 @@
 ---
-description: "slug: /learning-course/COURSE_INDEX title: '📚 Complete Course Index - AI-Enhanced Learning System' sidebar_label: '📚 Complete Course Index - AI-Enhanced"
----
-
-﻿---
-slug: /learning-course/COURSE_INDEX
+id: "COURSE_INDEX"
+slug: "/learning-course/COURSE_INDEX"
 title: "📚 Complete Course Index - AI-Enhanced Learning System"
 sidebar_label: "📚 Complete Course Index - AI-Enhanced Learning System"
 sidebar_position: 3
+description: "AIENHANCEDLEARNING.md - Complete AI integration guide"
 ---
-# Complete Course Index - AI-Enhanced Learning System
 
 ## Quick Navigation
 

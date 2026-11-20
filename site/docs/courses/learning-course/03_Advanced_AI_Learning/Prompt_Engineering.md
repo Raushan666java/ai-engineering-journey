@@ -1,14 +1,11 @@
 ---
-description: "slug: /learning-course/03_Advanced_AI_Learning/Prompt_Engineering title: '🎯 Prompt Engineering - Master AI Interactions' sidebar_label: '🎯 Prompt"
----
-
-﻿---
-slug: /learning-course/03_Advanced_AI_Learning/Prompt_Engineering
+id: "Prompt_Engineering"
+slug: "/learning-course/03_Advanced_AI_Learning/Prompt_Engineering"
 title: "🎯 Prompt Engineering - Master AI Interactions"
 sidebar_label: "🎯 Prompt Engineering - Master AI Interactions"
 sidebar_position: 3
+description: "Master AI prompt engineering for 10x better learning responses in 1 hour."
 ---
-# 🎯 Prompt Engineering - Master AI Interactions
 
 ## 🚀 Goal
 Master AI prompt engineering for 10x better learning responses in 1 hour.

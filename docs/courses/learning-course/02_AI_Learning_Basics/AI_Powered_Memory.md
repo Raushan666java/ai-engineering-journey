@@ -1,14 +1,11 @@
 ---
-description: "slug: /learning-course/02_AI_Learning_Basics/AI_Powered_Memory title: '🧠 AI-Powered Memory - 5x Better Retention' sidebar_label: '🧠 AI-Powered Memory"
----
-
-﻿---
-slug: /learning-course/02_AI_Learning_Basics/AI_Powered_Memory
+id: "AI_Powered_Memory"
+slug: "/learning-course/02_AI_Learning_Basics/AI_Powered_Memory"
 title: "🧠 AI-Powered Memory - 5x Better Retention"
 sidebar_label: "🧠 AI-Powered Memory - 5x Better Retention"
 sidebar_position: 2
+description: "Use AI to enhance memory formation and retention by 500%."
 ---
-# 🧠 AI-Powered Memory - 5x Better Retention
 
 ## 🎯 Goal
 Use AI to enhance memory formation and retention by 500%.

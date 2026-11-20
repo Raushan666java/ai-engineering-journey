@@ -1,14 +1,11 @@
 ---
-description: "slug: /learning-course/03_Advanced_AI_Learning/AI_Learning_Techniques title: '⚡ AI Fast Learning System - Complete Guide' sidebar_label: '⚡ AI Fast"
----
-
-﻿---
-slug: /learning-course/03_Advanced_AI_Learning/AI_Learning_Techniques
+id: "AI_Learning_Techniques"
+slug: "/learning-course/03_Advanced_AI_Learning/AI_Learning_Techniques"
 title: "⚡ AI Fast Learning System - Complete Guide"
 sidebar_label: "⚡ AI Fast Learning System - Complete Guide"
 sidebar_position: 2
+description: "Standard Feynman: Explain → Identify gaps → Simplify → Repeat"
 ---
-# AI Fast Learning System - Complete Guide
 
 ## The AI Learning Revolution
 

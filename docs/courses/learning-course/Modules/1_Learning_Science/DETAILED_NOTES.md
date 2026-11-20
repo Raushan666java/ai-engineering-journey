@@ -1,14 +1,10 @@
 ---
-description: "slug: /learning-course/Modules/1_Learning_Science/README.mdDETAILED_NOTES title: '🧠 Learning Science - Detailed Notes' sidebar_label: '🧠 Learning"
----
-
-﻿---
-slug: /learning-course/Modules/1_Learning_Science/README.mdDETAILED_NOTES
+id: "DETAILED_NOTES"
+slug: "/learning-course/Modules/1_Learning_Science/README.mdDETAILED_NOTES"
 title: "🧠 Learning Science - Detailed Notes"
 sidebar_label: "🧠 Learning Science - Detailed Notes"
 sidebar_position: 1
 ---
-# 🧠 Learning Science - Detailed Notes
 
 ## The Neuroscience of Learning
 

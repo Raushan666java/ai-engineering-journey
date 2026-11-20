@@ -1,14 +1,11 @@
 ---
-description: "slug: /learning-course/02_AI_Learning_Basics/AI_Study_Methods title: '📚 AI-Enhanced Study Methods' sidebar_label: '📚 AI-Enhanced Study Methods'"
----
-
-﻿---
-slug: /learning-course/02_AI_Learning_Basics/AI_Study_Methods
+id: "AI_Study_Methods"
+slug: "/learning-course/02_AI_Learning_Basics/AI_Study_Methods"
 title: "📚 AI-Enhanced Study Methods"
 sidebar_label: "📚 AI-Enhanced Study Methods"
 sidebar_position: 3
+description: "Master AI-powered active learning techniques for 3x faster comprehension."
 ---
-# 📚 AI-Enhanced Study Methods
 
 ## 🎯 Goal
 Master AI-powered active learning techniques for 3x faster comprehension.

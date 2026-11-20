@@ -1,14 +1,12 @@
 ---
-description: "slug: /learning-course/PROFESSIONAL_LEARNING_SYSTEM title: '🚀 The Working Professional's Learning System' sidebar_label: '🚀 The Working Professional's"
----
-
-﻿---
-slug: /learning-course/PROFESSIONAL_LEARNING_SYSTEM
+id: "PROFESSIONAL_LEARNING_SYSTEM"
+slug: "/learning-course/PROFESSIONAL_LEARNING_SYSTEM"
 title: "🚀 The Working Professional's Learning System"
 sidebar_label: "🚀 The Working Professional's Learning System"
 sidebar_position: 7
+description: "Include time estimates and success criteria for each phase.\""
 ---
-# The Working Professional's Learning System
+
 *A Complete Guide to Learn New Technologies Efficiently While Working*
 
 ---
@@ -983,4 +981,3 @@ Your learning system should be:
 
 *Last Updated: August 2025*
 *Version: 1.0 - Professional Learning System Guide*
-

@@ -1,14 +1,10 @@
 ---
-description: "slug: /learning-course/AI_ENHANCED_LEARNING title: '🤖 AI-Enhanced Learning System' sidebar_label: '🤖 AI-Enhanced Learning System'"
----
-
-﻿---
-slug: /learning-course/AI_ENHANCED_LEARNING
+id: "AI_ENHANCED_LEARNING"
+slug: "/learning-course/AI_ENHANCED_LEARNING"
 title: "🤖 AI-Enhanced Learning System"
 sidebar_label: "🤖 AI-Enhanced Learning System"
 sidebar_position: 1
 ---
-# AI-Enhanced Learning System
 
 ## AI Tools Integration for Accelerated Learning
 

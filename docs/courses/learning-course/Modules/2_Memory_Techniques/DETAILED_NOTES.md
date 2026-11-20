@@ -1,14 +1,11 @@
 ---
-description: "slug: /learning-course/Modules/2_Memory_Techniques/README.mdDETAILED_NOTES title: '🧠 Memory Techniques - Detailed Notes' sidebar_label: '🧠 Memory"
----
-
-﻿---
-slug: /learning-course/Modules/2_Memory_Techniques/README.mdDETAILED_NOTES
+id: "DETAILED_NOTES"
+slug: "/learning-course/Modules/2_Memory_Techniques/README.mdDETAILED_NOTES"
 title: "🧠 Memory Techniques - Detailed Notes"
 sidebar_label: "🧠 Memory Techniques - Detailed Notes"
 sidebar_position: 1
+description: "Binary search has time complexity of {{c1::O(log n)}} for {{c2::sorted}} arrays."
 ---
-# 🧠 Memory Techniques - Detailed Notes
 
 ## Spaced Repetition System (SRS)
 

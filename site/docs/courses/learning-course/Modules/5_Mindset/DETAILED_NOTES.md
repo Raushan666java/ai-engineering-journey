@@ -1,14 +1,10 @@
 ---
-description: "slug: /learning-course/Modules/5_Mindset/README.mdDETAILED_NOTES title: '🎯 Learning Mindset - Detailed Notes' sidebar_label: '🎯 Learning Mindset"
----
-
-﻿---
-slug: /learning-course/Modules/5_Mindset/README.mdDETAILED_NOTES
+id: "DETAILED_NOTES"
+slug: "/learning-course/Modules/5_Mindset/README.mdDETAILED_NOTES"
 title: "🎯 Learning Mindset - Detailed Notes"
 sidebar_label: "🎯 Learning Mindset - Detailed Notes"
 sidebar_position: 1
 ---
-# 🎯 Learning Mindset - Detailed Notes
 
 ## Growth vs Fixed Mindset (Carol Dweck's Research)
 

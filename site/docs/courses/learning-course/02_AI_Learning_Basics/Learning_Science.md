@@ -1,14 +1,11 @@
 ---
-description: "slug: /learning-course/02_AI_Learning_Basics/Learning_Science title: '🧠 Learning Science - Day 1' sidebar_label: '🧠 Learning Science - Day 1'"
----
-
-﻿---
-slug: /learning-course/02_AI_Learning_Basics/Learning_Science
+id: "Learning_Science"
+slug: "/learning-course/02_AI_Learning_Basics/Learning_Science"
 title: "🧠 Learning Science - Day 1"
 sidebar_label: "🧠 Learning Science - Day 1"
 sidebar_position: 5
+description: "Understand how your brain learns to optimize study effectiveness by 200%."
 ---
-# 🧠 Learning Science - Day 1
 
 ## 🎯 Goal
 Understand how your brain learns to optimize study effectiveness by 200%.

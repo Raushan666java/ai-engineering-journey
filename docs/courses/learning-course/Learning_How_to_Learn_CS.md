@@ -1,14 +1,11 @@
 ---
-description: "slug: /learning-course/Learning_How_to_Learn_CS title: 'Learning How to Learn — Computer Science (Single Page) 🔧' sidebar_label: 'Learning How to Learn —"
----
-
-﻿---
-slug: /learning-course/Learning_How_to_Learn_CS
+id: "Learning_How_to_Learn_CS"
+slug: "/learning-course/Learning_How_to_Learn_CS"
 title: "Learning How to Learn — Computer Science (Single Page) 🔧"
 sidebar_label: "Learning How to Learn — Computer Science (Single Page) 🔧"
 sidebar_position: 6
+description: "A compact, repeatable cycle you can apply to every topic or project. Use these stages intentionally and measure progress at each step."
 ---
-# Learning How to Learn — Computer Science (Single Page) 🔧
 
 **Purpose:** A focused, actionable one-page course to become a highly effective Computer Science student — better grades, stronger projects, faster mastery of concepts, and interview-readiness.
 

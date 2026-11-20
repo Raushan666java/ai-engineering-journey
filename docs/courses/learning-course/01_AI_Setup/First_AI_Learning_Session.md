@@ -1,14 +1,11 @@
 ---
-description: "slug: /learning-course/01_AI_Setup/First_AI_Learning_Session title: '🚀 First AI Learning Session - 10 Minutes' sidebar_label: '🚀 First AI Learning"
----
-
-﻿---
-slug: /learning-course/01_AI_Setup/First_AI_Learning_Session
+id: "First_AI_Learning_Session"
+slug: "/learning-course/01_AI_Setup/First_AI_Learning_Session"
 title: "🚀 First AI Learning Session - 10 Minutes"
 sidebar_label: "🚀 First AI Learning Session - 10 Minutes"
 sidebar_position: 4
+description: "Experience 3x faster learning with AI in your first session."
 ---
-# 🚀 First AI Learning Session - 10 Minutes
 
 ## 🎯 Goal
 Experience 3x faster learning with AI in your first session.

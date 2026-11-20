@@ -1,14 +1,10 @@
 ---
-description: 'slug: /learning-course/COURSE_OVERVIEW title: ''🎓 Complete ''Learning How to Learn '' Course - Enhanced Edition'' sidebar_label: ''🎓 Complete ''Learning How'
----
-
-﻿---
-slug: /learning-course/COURSE_OVERVIEW
-title: "🎓 Complete \"Learning How to Learn\" Course - Enhanced Edition"
-sidebar_label: "🎓 Complete \"Learning How to Learn\" Course - Enhanced Edition"
+id: "COURSE_OVERVIEW"
+slug: "/learning-course/COURSE_OVERVIEW"
+title: "🎓 Complete \\\"Learning How to Learn\\\" Course - Enhanced Edition"
+sidebar_label: "🎓 Complete \\\"Learning How to Learn\\\" Course - Enhanced Edition"
 sidebar_position: 4
 ---
-# Complete "Learning How to Learn" Course - Enhanced Edition
 
 ## What You Get
 

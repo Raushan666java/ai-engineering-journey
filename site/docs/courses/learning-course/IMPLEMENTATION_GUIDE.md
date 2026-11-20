@@ -1,14 +1,11 @@
 ---
-description: "slug: /learning-course/IMPLEMENTATION_GUIDE title: '🚀 Implementation Guide - AI-Enhanced Learning System' sidebar_label: '🚀 Implementation Guide"
----
-
-﻿---
-slug: /learning-course/IMPLEMENTATION_GUIDE
+id: "IMPLEMENTATION_GUIDE"
+slug: "/learning-course/IMPLEMENTATION_GUIDE"
 title: "🚀 Implementation Guide - AI-Enhanced Learning System"
 sidebar_label: "🚀 Implementation Guide - AI-Enhanced Learning System"
 sidebar_position: 5
+description: "learning program. Help me understand concepts, generate practice"
 ---
-# Implementation Guide - AI-Enhanced Learning System
 
 ## Quick Start (30 Minutes Setup)
 

@@ -1,14 +1,10 @@
 ---
-description: "slug: /learning-course/01_AI_Setup/Learning_Apps_Install title: '📱 Learning Apps Installation - 15 Minutes' sidebar_label: '📱 Learning Apps Installation"
----
-
-﻿---
-slug: /learning-course/01_AI_Setup/Learning_Apps_Install
+id: "Learning_Apps_Install"
+slug: "/learning-course/01_AI_Setup/Learning_Apps_Install"
 title: "📱 Learning Apps Installation - 15 Minutes"
 sidebar_label: "📱 Learning Apps Installation - 15 Minutes"
 sidebar_position: 5
 ---
-# 📱 Learning Apps Installation - 15 Minutes
 
 ## 🎯 Essential Learning Stack
 

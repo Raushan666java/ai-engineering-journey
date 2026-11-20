@@ -1,14 +1,10 @@
 ---
-description: "slug: /learning-course/06_06_Resources/BEST_RESOURCES title: '📚 Best Learning Resources' sidebar_label: '📚 Best Learning Resources'"
----
-
-﻿---
-slug: /learning-course/06_06_Resources/BEST_RESOURCES
+id: "BEST_RESOURCES"
+slug: "/learning-course/06_06_Resources/BEST_RESOURCES"
 title: "📚 Best Learning Resources"
 sidebar_label: "📚 Best Learning Resources"
 sidebar_position: 1
 ---
-# 📚 Best Learning Resources
 
 ## Essential Books
 

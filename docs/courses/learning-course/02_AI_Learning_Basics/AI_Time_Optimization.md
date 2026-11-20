@@ -1,14 +1,11 @@
 ---
-description: "slug: /learning-course/02_AI_Learning_Basics/AI_Time_Optimization title: '⏰ AI-Optimized Time Management' sidebar_label: '⏰ AI-Optimized Time Management'"
----
-
-﻿---
-slug: /learning-course/02_AI_Learning_Basics/AI_Time_Optimization
+id: "AI_Time_Optimization"
+slug: "/learning-course/02_AI_Learning_Basics/AI_Time_Optimization"
 title: "⏰ AI-Optimized Time Management"
 sidebar_label: "⏰ AI-Optimized Time Management"
 sidebar_position: 4
+description: "Use AI to optimize your time and energy for 4x productivity improvement."
 ---
-# ⏰ AI-Optimized Time Management
 
 ## 🎯 Goal
 Use AI to optimize your time and energy for 4x productivity improvement.

@@ -1,14 +1,10 @@
 ---
-description: "slug: /learning-course/README title: '🤖 AI-Enhanced Learning Course' sidebar_label: '🤖 AI-Enhanced Learning Course'"
----
-
-﻿---
-slug: /learning-course/README
+id: "README"
+slug: "/learning-course/README"
 title: "🤖 AI-Enhanced Learning Course"
 sidebar_label: "🤖 AI-Enhanced Learning Course"
 sidebar_position: 8
 ---
-# AI-Enhanced Learning Course
 
 ## Course Navigation
 

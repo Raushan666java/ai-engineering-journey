@@ -1,14 +1,11 @@
 ---
-description: "Traditional Learning: Human-only methods, slow feedback, generic content AI-Enhanced Learning: AI partnership, instant feedback, personalized content"
----
-
-﻿---
-slug: /learning-course/START_HERE
+id: "START_HERE"
+slug: "/learning-course/START_HERE"
 title: "🤖 AI-Enhanced Learning Course - START HERE"
 sidebar_label: "🤖 AI-Enhanced Learning Course - START HERE"
 sidebar_position: 9
+description: "Traditional Learning: Human-only methods, slow feedback, generic content AI-Enhanced Learning: AI partnership, instant feedback, personalized content"
 ---
-# AI-Enhanced Learning Course - START HERE
 
 ## For AI-First Learners
 

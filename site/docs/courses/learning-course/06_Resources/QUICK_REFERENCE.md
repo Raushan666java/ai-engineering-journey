@@ -1,14 +1,10 @@
 ---
-description: "slug: /learning-course/06_06_Resources/QUICK_REFERENCE title: '⚡ Quick Reference Guide' sidebar_label: '⚡ Quick Reference Guide'"
----
-
-﻿---
-slug: /learning-course/06_06_Resources/QUICK_REFERENCE
+id: "QUICK_REFERENCE"
+slug: "/learning-course/06_06_Resources/QUICK_REFERENCE"
 title: "⚡ Quick Reference Guide"
 sidebar_label: "⚡ Quick Reference Guide"
 sidebar_position: 3
 ---
-# ⚡ Quick Reference Guide
 
 ## Learning Techniques Cheat Sheet
 

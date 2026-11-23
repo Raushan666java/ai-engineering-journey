@@ -1,0 +1,50 @@
+{
+  "id": "/ai-engineering-journey/",
+  "name": "AI Engineering Journey",
+  "short_name": "AI Journey",
+  "description": "1,282 chapters on Python, SQL, machine learning, RAG, LLM systems and placement preparation.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/ai-engineering-journey/",
+  "scope": "/ai-engineering-journey/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#4446e8",
+  "categories": ["education", "productivity", "books"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Course catalogue",
+      "short_name": "Courses",
+      "url": "/ai-engineering-journey/course-overview",
+      "icons": [{"src": "icons/icon-192.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Placement course",
+      "short_name": "Placement",
+      "url": "/ai-engineering-journey/ai-engineering-placement",
+      "icons": [{"src": "icons/icon-192.png", "sizes": "192x192"}]
+    }
+  ]
+}

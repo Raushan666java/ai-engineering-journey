@@ -17,6 +17,10 @@ const docsInclude = buildOnly
   ? [`courses/${buildOnly}/**/*.{md,mdx}`, 'index.md']
   : undefined;
 
+// Used by the head tags below. Kept as a literal alongside `baseUrl` so the
+// links match what the build actually emits.
+const BASE = '/ai-engineering-journey/';
+
 const config: Config = {
   title: 'AI Engineering Journey',
   tagline: 'Complete Learning Path - Backend + AI Engineer',
@@ -29,7 +33,28 @@ const config: Config = {
   themes: ['@docusaurus/theme-mermaid'],
 
   url: 'https://raushan666java.github.io',
-  baseUrl: '/ai-engineering-journey/',
+  baseUrl: BASE,
+
+  // Installable web app: the manifest, its icons and the service worker in
+  // static/sw.js (registered by src/clientModules/register-sw.js) are what make
+  // Chrome offer "Add to Home screen" and what let an opened chapter be read
+  // again without a connection.
+  headTags: [
+    {tagName: 'link', attributes: {rel: 'manifest', href: `${BASE}manifest.json`}},
+    {
+      tagName: 'link',
+      attributes: {rel: 'apple-touch-icon', sizes: '180x180', href: `${BASE}icons/apple-touch-icon.png`},
+    },
+    {tagName: 'meta', attributes: {name: 'mobile-web-app-capable', content: 'yes'}},
+    {tagName: 'meta', attributes: {name: 'apple-mobile-web-app-capable', content: 'yes'}},
+    {tagName: 'meta', attributes: {name: 'apple-mobile-web-app-title', content: 'AI Journey'}},
+    {
+      tagName: 'meta',
+      attributes: {name: 'apple-mobile-web-app-status-bar-style', content: 'default'},
+    },
+  ],
+
+  clientModules: [require.resolve('./src/clientModules/register-sw.js')],
 
   organizationName: 'Raushan666java',
   projectName: 'ai-engineering-journey',

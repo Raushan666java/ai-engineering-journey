@@ -489,3 +489,80 @@ KaTeX warnings  5 unknownSymbol, 6 commentAtEnd   (was ~28)
 The remaining KaTeX warnings are `\%` and currency amounts that sat next to real
 math, plus one `<p>` whose dollars are inside an HTML block on a page that does
 contain math. They are cosmetic: the page renders.
+
+## Fifth pass (23 Nov): the site as an installable app, and content for a real client
+
+The site is now a PWA — installable from Chrome, no address bar, reads offline —
+and it publishes a content API at `/content/` that a native client reads instead
+of the HTML.
+
+### Installability, without a second codebase
+
+Docusaurus already navigates client-side, so the site was app-shaped. The delta
+was installability and offline:
+
+```
+static/manifest.json        name, icons, start_url inside scope, standalone
+static/icons/               192, 512, maskable 512, 180 apple, 1024
+static/sw.js                cache-on-read, not cache-on-install
+static/offline.html         what is and is not stored, plus a way back
+src/clientModules/register-sw.js
+```
+
+Nothing is precached except the shell. The corpus is 613 MB (446 MB HTML at
+321 KB/page, 146 MB JS, 20 MB index); an install that pulled it would be worse
+than a website. Pages are cached as they are read, keyed with the trailing slash
+so `/a/b` and `/a/b/` do not become two entries, and 404s are never cached.
+
+`onClientEntry` is **not** dispatched by Docusaurus 3.10 — `ClientLifecyclesDispatcher`
+dispatches only `onRouteUpdate` and `onRouteDidUpdate`. Registration therefore
+runs at module scope, guarded by `NODE_ENV === 'production'`.
+
+### The content API
+
+```
+/content/manifest.json    495 KB   59 courses, 1,282 chapters: title, minutes, quiz
+/content/search.json      567 KB   11,247 terms -> chapter numbers, sorted
+/content/ch/<id>.json      70 MB   one chapter's markdown, median 52 KB
+```
+
+A per-course bundle was tried first and rejected: `ai-engineering-placement` is
+18 MB and Android reads AsyncStorage through a ~2 MB SQLite cursor window, so the
+largest course would have failed to cache on the only platform that matters.
+
+### Quiz extraction earned its own pass
+
+1,240 questions exist in 252 chapters. The first parser matched `**Answer: B**`
+positionally and produced keys for 11 chapters; it was wrong often enough to be
+dangerous, because the review deck is built from exactly this field. The corpus
+turned out to use five shapes:
+
+```
+// correct: C
+**Answer: B**
+Correct answer: B
+- B) ... <-- Correct
+<details><summary>Answer</summary>  **B) ...**
+### Answer Key   1. C   2. B
+```
+
+Keys are now attached to their own question, with a numbered table only as a
+fallback. Result: **608 of 1,240** questions carry a readable key, and the 417
+"B" answers were checked against their sources — `Salt Typhoon`, LSM-tree
+sequential writes, INT8 memory bandwidth — so the skew is the content's, not the
+parser's.
+
+### `verify-content-api.mjs`
+
+19 assertions over the generated tree: every manifest id has a body file, no body
+file is orphaned, every search posting points at a real chapter, the terms are
+sorted (the app binary-searches them), both indexes are under their size caps, and
+`rag` / `sql` / `gradient` each return chapters.
+
+### Why the app is a separate repository
+
+`study_apps` holds the Expo client; the content stays here, generated from
+`docs/courses` by `scripts/build-content-api.mjs --write`, which `npm run build`
+now runs first. `site/static/content/` is gitignored — 71 MB regenerated on every
+deploy — and is served from the `gh-pages` branch like the rest of the build.
+

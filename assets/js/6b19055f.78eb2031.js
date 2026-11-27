@@ -15,7 +15,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// CONCATENATED MODULE: ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-29-research-reading-04-reproducing-papers-md-6b1.json
-var site_docs_courses_ai_engineering_placement_29_research_reading_04_reproducing_papers_md_6b1_namespaceObject = JSON.parse('{"id":"courses/ai-engineering-placement/research-reading/04-reproducing-papers","title":"Reproducing & Implementing Papers","description":"Reproducing a research paper is the single best way to understand it deeply. You move from passive reading to active implementation. You discover details","source":"@site/docs/courses/ai-engineering-placement/29-research-reading/04-reproducing-papers.md","sourceDirName":"courses/ai-engineering-placement/29-research-reading","slug":"/ai-engineering-placement/29-research-reading/04-reproducing-papers","permalink":"/ai-engineering-journey/ai-engineering-placement/29-research-reading/04-reproducing-papers","draft":false,"unlisted":false,"editUrl":"https://github.com/Raushan666java/ai-engineering-journey/tree/main/site/docs/docs/courses/ai-engineering-placement/29-research-reading/04-reproducing-papers.md","tags":[],"version":"current","lastUpdatedAt":1795765910000,"sidebarPosition":342,"frontMatter":{"id":"04-reproducing-papers","slug":"/ai-engineering-placement/29-research-reading/04-reproducing-papers","title":"Reproducing & Implementing Papers","sidebar_label":"Reproducing & Implementing Papers","sidebar_position":342,"description":"Reproducing a research paper is the single best way to understand it deeply. You move from passive reading to active implementation. You discover details"},"sidebar":"placementSidebar","previous":{"title":"Major AI Conferences","permalink":"/ai-engineering-journey/ai-engineering-placement/29-research-reading/03-major-ai-conferences"},"next":{"title":"Visual Notes","permalink":"/ai-engineering-journey/ai-engineering-placement/29-research-reading/visual-notes"}}')
+var site_docs_courses_ai_engineering_placement_29_research_reading_04_reproducing_papers_md_6b1_namespaceObject = JSON.parse('{"id":"courses/ai-engineering-placement/research-reading/04-reproducing-papers","title":"Reproducing & Implementing Papers","description":"Reproducing a research paper is the single best way to understand it deeply. You move from passive reading to active implementation. You discover details","source":"@site/docs/courses/ai-engineering-placement/29-research-reading/04-reproducing-papers.md","sourceDirName":"courses/ai-engineering-placement/29-research-reading","slug":"/ai-engineering-placement/29-research-reading/04-reproducing-papers","permalink":"/ai-engineering-journey/ai-engineering-placement/29-research-reading/04-reproducing-papers","draft":false,"unlisted":false,"editUrl":"https://github.com/Raushan666java/ai-engineering-journey/tree/main/site/docs/docs/courses/ai-engineering-placement/29-research-reading/04-reproducing-papers.md","tags":[],"version":"current","lastUpdatedAt":1795774037000,"sidebarPosition":342,"frontMatter":{"id":"04-reproducing-papers","slug":"/ai-engineering-placement/29-research-reading/04-reproducing-papers","title":"Reproducing & Implementing Papers","sidebar_label":"Reproducing & Implementing Papers","sidebar_position":342,"description":"Reproducing a research paper is the single best way to understand it deeply. You move from passive reading to active implementation. You discover details"},"sidebar":"placementSidebar","previous":{"title":"Major AI Conferences","permalink":"/ai-engineering-journey/ai-engineering-placement/29-research-reading/03-major-ai-conferences"},"next":{"title":"Visual Notes","permalink":"/ai-engineering-journey/ai-engineering-placement/29-research-reading/visual-notes"}}')
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	sidebar_position: 342,
 	description: 'Reproducing a research paper is the single best way to understand it deeply. You move from passive reading to active implementation. You discover details'
 };
-const contentTitle = undefined;
+const contentTitle = 'Reproducing & Implementing Papers';
 
 const assets = {
 
@@ -40,10 +40,6 @@ const assets = {
 
 
 const toc = [{
-  "value": "description: &quot;Reproducing a research paper is the single best way to understand it deeply. You move from passive reading to active implementation. You discover details&quot;",
-  "id": "description-reproducing-a-research-paper-is-the-single-best-way-to-understand-it-deeply-you-move-from-passive-reading-to-active-implementation-you-discover-details",
-  "level": 2
-}, {
   "value": "Learning Objectives",
   "id": "learning-objectives",
   "level": 2
@@ -371,6 +367,7 @@ function _createMdxContent(props) {
     h2: "h2",
     h3: "h3",
     h4: "h4",
+    header: "header",
     hr: "hr",
     li: "li",
     mermaid: "mermaid",
@@ -391,12 +388,11 @@ function _createMdxContent(props) {
     ...props.components
   };
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: [(0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "description-reproducing-a-research-paper-is-the-single-best-way-to-understand-it-deeply-you-move-from-passive-reading-to-active-implementation-you-discover-details",
-      children: "description: \"Reproducing a research paper is the single best way to understand it deeply. You move from passive reading to active implementation. You discover details\""
-    }), "\n", (0,jsx_runtime.jsx)(_components.h1, {
-      id: "reproducing--implementing-papers",
-      children: "Reproducing & Implementing Papers"
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "reproducing--implementing-papers",
+        children: "Reproducing & Implementing Papers"
+      })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "learning-objectives",
       children: "Learning Objectives"

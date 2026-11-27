@@ -1088,7 +1088,7 @@ and batch independent requests. Track usage with a CostAnalyzer to identify the 
   <div class="tp-qa-answer">
 <p>Exact-match caching stores responses keyed by the exact message content, model, and parameters — it returns a cached response only when the exact same query is repeated. Semantic caching uses embeddings to find similar queries — it returns a cached.
 response when a query's embedding is within a similarity threshold (e.g.,.
-cosine similarity > 0.95) of a previously cached query. Use exact-match for deterministic queries (temperature=0) where identical inputs produce identical outputs. Use semantic caching for.
+cosine similarity > 0.95) of a previously cached query. Use exact-match for deterministic queries (temperature=0) where identical inputs produce identical outputs. Use semantic caching for
 user-facing applications where paraphrased questions should reuse cached answers. A layered cache combining both provides optimal coverage.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1103,7 +1103,7 @@ user-facing applications where paraphrased questions should reuse cached answers
   <div class="tp-qa-answer">
 <p>Speculative decoding uses a fast draft model to generate K candidate tokens in parallel, then the target model verifies them in a single forward pass. Because the draft model is much faster (e.g.,.
 a small 100M parameter model) and the target model can verify multiple tokens at once, the effective latency per token decreases significantly. The key insight is that verification is cheaper than generation: verifying 5 draft tokens in one forward pass.
-costs similar to generating 1 token. Output quality is preserved because the target model rejects any incorrect draft tokens and.
+costs similar to generating 1 token. Output quality is preserved because the target model rejects any incorrect draft tokens and
 regenerates them. This technique is most effective when the draft and target models have high agreement.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1117,8 +1117,8 @@ regenerates them. This technique is most effective when the draft and target mod
   </summary>
   <div class="tp-qa-answer">
 <p>Implement a UsageTracker that records every API call with model, input tokens, output tokens, timestamp, and user/feature attribution. Set up a BudgetAlertSystem with thresholds at 50%,.
-75%, 90%, and 100% of the monthly budget. Each threshold triggers an alert (Slack, email, or PagerDuty) only once. The system checks utilization on every request and.
-projects monthly spend based on daily burn rate. Use a sliding window to smooth out spikes. For example, if the monthly budget is \$500 and.
+75%, 90%, and 100% of the monthly budget. Each threshold triggers an alert (Slack, email, or PagerDuty) only once. The system checks utilization on every request and
+projects monthly spend based on daily burn rate. Use a sliding window to smooth out spikes. For example, if the monthly budget is \$500 and
 daily spend averages \$20, an alert fires at \$250 (50%), \$375 (75%), and \$450 (90%).</p>
     <pre><code>alert_system = BudgetAlertSystem(thresholds=[0.5, 0.75, 0.9, 1.0])
 alerts = alert_system.check_budget(tracker)</code></pre>
@@ -1134,7 +1134,7 @@ alerts = alert_system.check_budget(tracker)</code></pre>
   </summary>
   <div class="tp-qa-answer">
 <p>Key strategies include: setting max_tokens to a tight upper bound, using stop sequences to end generation early, instructing the model to be concise in the system prompt,.
-trimming responses programmatically to a maximum number of sentences, and extracting only the relevant portion of structured outputs (e.g., JSON fields). For.
+trimming responses programmatically to a maximum number of sentences, and extracting only the relevant portion of structured outputs (e.g., JSON fields). For
 example, a system prompt like "Respond in 2 sentences or fewer" can cut output tokens by 60-70% for Q&A tasks. Post-generation trimming can enforce hard limits:</p>
     <pre><code>def trim_response(response, max_sentences=2):
     sentences = response.split(".")
@@ -1164,10 +1164,10 @@ amortizes prompt prefix tokens (system instructions), and can improve throughput
     Q7: What is the cost impact of long system prompts and how do you optimize them?
   </summary>
   <div class="tp-qa-answer">
-<p>Long system prompts are a hidden cost driver because they're sent on every API call. If a system prompt is 1000 tokens and.
+<p>Long system prompts are a hidden cost driver because they're sent on every API call. If a system prompt is 1000 tokens and
 you make 100,000 calls per month, that's 100M input tokens just for system instructions. Optimize by: removing redundant or duplicated instructions,.
-compressing whitespace, using concise language, extracting common instructions into a shared prefix, and splitting rarely used instructions into separate templates. A PromptTemplateOptimizer can identify common prefixes across templates. For.
-example, compressing "You are an expert assistant. You must follow these rules: 1. Be concise. 2. Be accurate." to "Be concise and.
+compressing whitespace, using concise language, extracting common instructions into a shared prefix, and splitting rarely used instructions into separate templates. A PromptTemplateOptimizer can identify common prefixes across templates. For
+example, compressing "You are an expert assistant. You must follow these rules: 1. Be concise. 2. Be accurate." to "Be concise and
 accurate." saves ~60% of instruction tokens.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1182,7 +1182,7 @@ accurate." saves ~60% of instruction tokens.</p>
   <div class="tp-qa-answer">
 <p>Create an AttributionTracker that associates each API request with a user_id, feature name, and team. Record the attribution alongside the token usage in the UsageTracker. Build a reporting layer that aggregates costs by feature,.
 user, and team using per-request entries. This enables chargeback models where each team pays for their LLM usage. Key metrics to expose: cost per feature per day,.
-top 10 users by spend, and cost per successful query. Store attributions in a time-series database for trend analysis. A typical enterprise deployment might track 20+ features and.
+top 10 users by spend, and cost per successful query. Store attributions in a time-series database for trend analysis. A typical enterprise deployment might track 20+ features and
 surface costs in a monthly dashboard.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1196,8 +1196,8 @@ surface costs in a monthly dashboard.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>Implement a ModelRouter that classifies each request by task complexity (simple, medium, complex) and latency budget. Route simple tasks (e.g., classification,.
-entity extraction) to cheap models like gpt-4o-mini or claude-3-haiku. Route complex tasks (e.g., code generation, multi-step reasoning) to powerful models like gpt-4o or.
-claude-3-5-sonnet. Measure accuracy on a validation set to calibrate the routing rules. A typical distribution is 70% simple, 20% medium, 10% complex — resulting in ~60% cost reduction compared to using a single large model for.
+entity extraction) to cheap models like gpt-4o-mini or claude-3-haiku. Route complex tasks (e.g., code generation, multi-step reasoning) to powerful models like gpt-4o or
+claude-3-5-sonnet. Measure accuracy on a validation set to calibrate the routing rules. A typical distribution is 70% simple, 20% medium, 10% complex — resulting in ~60% cost reduction compared to using a single large model for
 everything. Monitor and adjust routing thresholds based on real-time quality metrics.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1211,7 +1211,7 @@ everything. Monitor and adjust routing thresholds based on real-time quality met
   </summary>
   <div class="tp-qa-answer">
 <p>TTFT measures the delay from submitting a request to receiving the first output token — it includes network latency, prompt processing,.
-and initial model computation. TPS measures generation throughput after the first token. For user experience, TTFT is more critical because users perceive waiting before they see any response. Streaming reduces perceived latency by lowering TTFT — the user sees tokens appear incrementally rather than waiting for.
+and initial model computation. TPS measures generation throughput after the first token. For user experience, TTFT is more critical because users perceive waiting before they see any response. Streaming reduces perceived latency by lowering TTFT — the user sees tokens appear incrementally rather than waiting for
 the full response. A target TTFT under 500ms is good for interactive applications. Optimize TTFT through model selection (smaller models), prompt caching (reduce prompt processing),.
 and geographic proximity to the API endpoint.</p>
   </div>

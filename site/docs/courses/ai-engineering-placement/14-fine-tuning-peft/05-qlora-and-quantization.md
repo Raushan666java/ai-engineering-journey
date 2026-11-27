@@ -568,7 +568,7 @@ for r in mem_comp.compare():
 
 QLoRA combines 4-bit NormalFloat (NF4) quantization of the base model with LoRA adapters trained in FP16. This reduces the base model memory from 56 GB (FP16 7B) to ~3.5 GB (4-bit NF4) — a 16— reduction. Double quantization further saves ~0.5 GB by quantizing the quantization constants themselves (e.g.,.
 quantizing FP32 scales with FP8). Block-wise quantization (e.g., blocks of 64 weights per scale) maintains quality by adapting quantization granularity. Paged optimizers use CPU RAM to store optimizer states when GPU memory is exhausted,.
-swapping pages as needed. QLoRA enables fine-tuning 65B models on a single 48GB GPU, or 7B models on a 6GB GPU. The quality gap between QLoRA and.
+swapping pages as needed. QLoRA enables fine-tuning 65B models on a single 48GB GPU, or 7B models on a 6GB GPU. The quality gap between QLoRA and
 full fine-tuning is typically <1% on standard benchmarks.
 
 ## Practical Takeaways
@@ -592,8 +592,8 @@ full fine-tuning is typically <1% on standard benchmarks.
 <p>Model quantization reduces the precision of model weights and activations from 32-bit floating point (fp32) or 16-bit (fp16/bf16) to lower precision formats like 8-bit (INT8),.
 4-bit (NF4, INT4), or even 2-bit. This reduces memory usage and can accelerate inference. For a 7B parameter model: fp32 = 28GB,.
 fp16 = 14GB, 8-bit = 7GB, 4-bit = 3.5GB. Quantization works by mapping the range of original values to a smaller set of discrete levels. The trade-off is reduced precision — some information is lost,.
-which may slightly degrade model quality. However, modern quantization methods (NF4, GPTQ, AWQ) minimize quality loss by using non-uniform quantization that allocates more levels to the value ranges where most weights fall (near zero for.
-neural networks). Quantization is essential for deploying large models on limited hardware — a 70B model requires 140GB in fp16 but.
+which may slightly degrade model quality. However, modern quantization methods (NF4, GPTQ, AWQ) minimize quality loss by using non-uniform quantization that allocates more levels to the value ranges where most weights fall (near zero for
+neural networks). Quantization is essential for deploying large models on limited hardware — a 70B model requires 140GB in fp16 but
 only 35GB in 4-bit, fitting on a single A100-80GB. QLoRA combines 4-bit quantization of the base model with LoRA adapters in higher precision,.
 enabling fine-tuning of large models on consumer GPUs.</p>
   </div>
@@ -608,7 +608,7 @@ enabling fine-tuning of large models on consumer GPUs.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>NF4 (NormalFloat4) is a 4-bit quantization data type optimized for neural network weights, introduced in the QLoRA paper. It uses the fact that pre-trained neural network weights follow a zero-centered normal distribution. NF4 creates quantization levels that are unevenly spaced.
-— more levels near zero (where most weights are concentrated) and.
+— more levels near zero (where most weights are concentrated) and
 fewer at the extremes. This non-uniform allocation provides better precision for the most common weight values compared to uniform 4-bit quantization. The process: (1) normalize weights to the range [-1,.
 1] using the absolute maximum value; (2) map each weight to the nearest of 16 quantization levels (2^4 = 16 levels) that follow the normal distribution's quantiles;.
 (3) store the 4-bit index for each weight; (4) during dequantization, look up the corresponding float value for each index. Compared to INT4 (uniform 4-bit),.
@@ -627,7 +627,7 @@ NF4 preserves more information for normally distributed weights. In practice, NF
 <p>QLoRA (Quantized LoRA) combines 4-bit quantization of the base model with LoRA adapters. Implementation with bitsandbytes: (1) load the base model in 4-bit — <code>AutoModelForCausalLM.from_pretrained(model_id,.
 load_in_4bit=True, bnb_4bit_compute_dtype=torch.bfloat16, bnb_4bit_quant_type="nf4", bnb_4bit_use_double_quant=True, device_map="auto")</code>; (2) the <code>bnb_4bit_quant_type="nf4"</code> uses NormalFloat4; <code>bnb_4bit_use_double_quant=True</code> enables double quantization (quantizes the quantization constants themselves for additional savings);.
 (3) apply LoRA — <code>model = get_peft_model(model, lora_config)</code> — the LoRA adapters are added in bf16/fp32 precision while the base model stays in 4-bit;.
-(4) forward pass — during training, input tensors go through the 4-bit base model (dequantized on-the-fly to the compute dtype for.
+(4) forward pass — during training, input tensors go through the 4-bit base model (dequantized on-the-fly to the compute dtype for
 matrix multiplication) and the bf16 LoRA adapter; (5) backward pass — gradients flow through the LoRA adapter (bf16) and are passed through the 4-bit base model (the 4-bit weights themselves are not updated,.
 only the LoRA parameters). QLoRA reduces memory by 4x for the base model (14GB → 3.5GB for 7B model), enabling fine-tuning of 7B models on a single RTX 3090 (24GB) and.
 33B models on a single A100 (80GB).</p>
@@ -645,8 +645,8 @@ only the LoRA parameters). QLoRA reduces memory by 4x for the base model (14GB �
 <p>Double quantization (DQ) quantizes the quantization constants themselves, saving additional memory. In standard 4-bit quantization, each block of weights (typically 64 or.
 128 weights) has a quantization constant (fp32, 4 bytes). For a 7B model with block size 64: 7B/64 — 4 bytes ≈ 438MB of constants. Double quantization reduces this by quantizing the constants to 8-bit: 7B/64 — 1 byte ≈ 109MB,.
 saving ~329MB. The process: (1) quantize weights to 4-bit using per-block quantization constants; (2) collect all quantization constants; (3) quantize the constants themselves to 8-bit using a second-level quantization constant (per 256 constants). Dequantization: restore the 8-bit constants to fp32,.
-then use them to dequantize the 4-bit weights. The additional quality loss from double quantization is negligible (<0.1% perplexity increase) because the quantization constants vary slowly and.
-can be stored at lower precision. QLoRA enables DQ with the flag <code>bnb_4bit_use_double_quant=True</code>. Combined with NF4, DQ reduces the total memory for.
+then use them to dequantize the 4-bit weights. The additional quality loss from double quantization is negligible (<0.1% perplexity increase) because the quantization constants vary slowly and
+can be stored at lower precision. QLoRA enables DQ with the flag <code>bnb_4bit_use_double_quant=True</code>. Combined with NF4, DQ reduces the total memory for
 base model weights by ~3MB per 1B parameters, which is modest but free — no quality cost for the memory savings.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -660,11 +660,11 @@ base model weights by ~3MB per 1B parameters, which is modest but free — no qu
   </summary>
   <div class="tp-qa-answer">
 <p>A paged optimizer (introduced in QLoRA) uses CPU RAM as swap space for GPU optimizer states when GPU memory is full,.
-preventing out-of-memory (OOM) errors during training. The optimizer states (momentum, variance) for AdamW require 2— the model size in fp32 — for.
-a 7B model: 7B — 4 bytes — 2 = 56GB, far exceeding GPU memory. With LoRA, only LoRA parameters need optimizer states (~8M — 4 — 2 = 64MB for.
+preventing out-of-memory (OOM) errors during training. The optimizer states (momentum, variance) for AdamW require 2— the model size in fp32 — for
+a 7B model: 7B — 4 bytes — 2 = 56GB, far exceeding GPU memory. With LoRA, only LoRA parameters need optimizer states (~8M — 4 — 2 = 64MB for
 r=8 on Q+V), so paging isn't needed for LoRA alone. However, for full fine-tuning or when using large gradient accumulation, the paged optimizer moves infrequently accessed optimizer state pages to CPU RAM,.
-freeing GPU memory for activations and gradients. Implementation: bitsandbytes provides <code>bnb.optim.Adam8bit</code> (8-bit optimizer states) and <code>bnb.optim.AdamW</code> with page-based memory management. Paged optimizers trade GPU memory for.
-some performance overhead (CPU↔GPU transfer latency). They're most useful when training close to GPU memory limits — the optimizer pages out state during forward/backward and.
+freeing GPU memory for activations and gradients. Implementation: bitsandbytes provides <code>bnb.optim.Adam8bit</code> (8-bit optimizer states) and <code>bnb.optim.AdamW</code> with page-based memory management. Paged optimizers trade GPU memory for
+some performance overhead (CPU↔GPU transfer latency). They're most useful when training close to GPU memory limits — the optimizer pages out state during forward/backward and
 pages it back during the optimizer step.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -677,12 +677,12 @@ pages it back during the optimizer step.</p>
     Q6: How do you choose between quantization precisions?
   </summary>
   <div class="tp-qa-answer">
-<p>Precision selection depends on the trade-off between memory and quality: (1) fp32 (32-bit) — highest quality, rarely used for inference due to 2x memory vs fp16. Used internally for.
+<p>Precision selection depends on the trade-off between memory and quality: (1) fp32 (32-bit) — highest quality, rarely used for inference due to 2x memory vs fp16. Used internally for
 optimizer states during training; (2) fp16/bf16 (16-bit) — standard for training and inference. Bf16 is preferred over fp16 because it has the same exponent range as fp32 (no overflow/underflow issues). Memory: 2 bytes per parameter;.
 (3) INT8 (8-bit) — 2x memory reduction vs fp16. ~0.5-1% quality loss for most models. Good for deployment on limited hardware still requiring high quality;.
 (4) NF4 (4-bit) — 4x memory reduction vs fp16. <1% quality loss for most models. Best memory-quality trade-off for LLMs. Enables fitting 70B models on a single A100;.
 (5) INT4/FP4 (4-bit uniform) — similar memory savings as NF4 but with ~2-3% more quality loss for normally distributed weights; (6) 2-bit (2-bit) — 8x memory reduction vs fp16. Significant quality loss (~5-10%),.
-experimental. Selection rule: use NF4 for deployment when GPU memory is constrained, bf16 when memory is sufficient, and reserve fp32 only for.
+experimental. Selection rule: use NF4 for deployment when GPU memory is constrained, bf16 when memory is sufficient, and reserve fp32 only for
 optimizer states. For fine-tuning, use QLoRA (4-bit base + bf16 adapters) when GPU memory is limited, standard LoRA (bf16 base) otherwise.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -698,9 +698,9 @@ optimizer states. For fine-tuning, use QLoRA (4-bit base + bf16 adapters) when G
 <p>Setting up QLoRA training: (1) Install — <code>pip install bitsandbytes peft transformers accelerate datasets</code>. Ensure CUDA toolkit matches the bitsandbytes version;.
 (2) Load 4-bit model — use <code>AutoModelForCausalLM.from_pretrained</code> with <code>load_in_4bit=True</code>, <code>bnb_4bit_quant_type="nf4"</code>, <code>bnb_4bit_use_double_quant=True</code>, <code>bnb_4bit_compute_dtype=torch.bfloat16</code>, <code>device_map="auto"</code>. The compute dtype determines the precision of matrix multiplications during the forward pass;.
 (3) Configure LoRA — standard <code>LoraConfig</code> with r=8-16, target_modules, lora_dropout; (4) Apply LoRA — <code>get_peft_model(model, config)</code> — LoRA adapters are in bf16 while base model stays in 4-bit;.
-(5) Configure training — use <code>TrainingArguments</code> with <code>fp16=True</code> or <code>bf16=True</code>. Higher learning rate is often needed for QLoRA (2e-4 to 5e-4 vs 1e-4 for.
+(5) Configure training — use <code>TrainingArguments</code> with <code>fp16=True</code> or <code>bf16=True</code>. Higher learning rate is often needed for QLoRA (2e-4 to 5e-4 vs 1e-4 for
 full LoRA) because the base model is lower precision; (6) Train — <code>trainer.train()</code>. Memory usage: ~5-6GB base model (7B in 4-bit) + ~2-4GB LoRA activations + ~2GB optimizer states for.
-LoRA parameters = ~10-12GB total, fitting comfortably on a 24GB RTX 3090. QLoRA achieves ~95% of full LoRA quality while using 3-4x less GPU memory for.
+LoRA parameters = ~10-12GB total, fitting comfortably on a 24GB RTX 3090. QLoRA achieves ~95% of full LoRA quality while using 3-4x less GPU memory for
 the base model.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -734,7 +734,7 @@ NF4 with double quantization is the recommended default for deployment — it pr
 then save the merged model. The merged model can be re-quantized to 4-bit using GPTQ or AWQ for inference (these methods provide faster inference than bitsandbytes 4-bit);.
 (2) Use vLLM — vLLM supports AWQ and GPTQ quantization formats for efficient serving. Convert the model to AWQ format (<code>autoawq</code> library): <code>from awq import AutoAWQForCausalLM;.
 model = AutoAWQForCausalLM.from_pretrained(merged_model_path); model.quantize(tokenizer, quant_config={ "zero_point": True, "q_group_size": 128, "w_bit": 4, "version": "GEMM" }); model.save_quantized("awq-model")</code>; (3) Deploy with vLLM — <code>vllm serve awq-model --quantization awq --dtype auto --max-model-len 4096</code>;.
-(4) For TGI (Text Generation Inference) — convert to GPTQ format using AutoGPTQ, then deploy with TGI's GPTQ support. Production serving of 4-bit models achieves similar throughput to fp16 models (the dequantization overhead is small compared to attention compute) while.
+(4) For TGI (Text Generation Inference) — convert to GPTQ format using AutoGPTQ, then deploy with TGI's GPTQ support. Production serving of 4-bit models achieves similar throughput to fp16 models (the dequantization overhead is small compared to attention compute) while
 using 4x less memory — meaning you can serve 4x more models on the same GPU.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -749,10 +749,10 @@ using 4x less memory — meaning you can serve 4x more models on the same GPU.</
   <div class="tp-qa-answer">
 <p>Gradient computation with quantized models uses the Straight-Through Estimator (STE) — during the backward pass, gradients are computed as if the quantization function was the identity function. This is necessary because quantization is non-differentiable (the rounding operation has zero gradient everywhere). The STE approximation: in the forward pass,.
 weights are quantized (e.g., fp16 → NF4), and the result is dequantized back to the compute dtype. In the backward pass,.
-gradients flow through the dequantized weights as if they were the original unquantized weights. For QLoRA specifically: (1) the base model is stored in 4-bit (NF4) and.
-frozen — no gradients flow to base model weights; (2) during the forward pass, 4-bit weights are dequantized to the compute dtype (bf16) for.
+gradients flow through the dequantized weights as if they were the original unquantized weights. For QLoRA specifically: (1) the base model is stored in 4-bit (NF4) and
+frozen — no gradients flow to base model weights; (2) during the forward pass, 4-bit weights are dequantized to the compute dtype (bf16) for
 matrix multiplication; (3) gradients only flow through the LoRA adapter parameters (which are in bf16), not through the base model weights;.
-(4) the 4-bit base weights remain unchanged during training. This means QLoRA training memory depends primarily on LoRA parameter count and.
+(4) the 4-bit base weights remain unchanged during training. This means QLoRA training memory depends primarily on LoRA parameter count and
 batch size, not on the base model size. The key insight: because gradients don't need to be stored for the base model (it's frozen),.
 quantization doesn't affect gradient computation at all — the 4-bit base model is just a very compact storage format.</p>
   </div>

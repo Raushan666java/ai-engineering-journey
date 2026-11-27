@@ -628,8 +628,8 @@ print(agent_efficiency(wa, mock_llm, "Quick test"))
 ## Summary
 
 AI agents are autonomous systems that combine LLM reasoning with tool use to accomplish complex tasks. Core components include the LLM brain (reasoning engine),.
-tools (external capabilities), memory (short-term and long-term), and an orchestration loop. Key agent paradigms include ReAct (interleaved reasoning and acting), Plan-and-Execute (separate planning and.
-execution), and Reflexion (self-evaluation and retry). A basic ReAct agent can be implemented with a tool registry, structured action parsing, and.
+tools (external capabilities), memory (short-term and long-term), and an orchestration loop. Key agent paradigms include ReAct (interleaved reasoning and acting), Plan-and-Execute (separate planning and
+execution), and Reflexion (self-evaluation and retry). A basic ReAct agent can be implemented with a tool registry, structured action parsing, and
 a reasoning loop. Agent evaluation measures success rate, average steps, latency, and cost per task.
 
 ## Practical Takeaways
@@ -711,8 +711,8 @@ while ReAct is more flexible but can produce longer reasoning chains.</p>
     Q5: What is the Reflexion paradigm and when should you use it?
   </summary>
   <div class="tp-qa-answer">
-<p>Reflexion adds a self-evaluation step where the agent critiques its own output and retries if the quality is insufficient. The cycle is: execute → evaluate → reflect → retry (up to N times). Use it when output quality is critical and.
-you can define an evaluation function — for example, code generation where the agent writes code, runs tests, detects failures, and.
+<p>Reflexion adds a self-evaluation step where the agent critiques its own output and retries if the quality is insufficient. The cycle is: execute → evaluate → reflect → retry (up to N times). Use it when output quality is critical and
+you can define an evaluation function — for example, code generation where the agent writes code, runs tests, detects failures, and
 fixes bugs. A Reflexion agent might achieve 90%+ success on coding tasks where a single-pass agent achieves 60-70%. The cost is 2-5x more LLM calls per task,.
 so it's not suitable for latency-sensitive applications. Implementation typically uses a boolean evaluator (pass/fail) or a numeric scorer (0-1) with a threshold.</p>
   </div>
@@ -744,7 +744,7 @@ so invest in clear, specific documentation of what each tool does and when to us
 <p>The three most important agent metrics are: (1) Success rate — the percentage of tasks completed correctly on a held-out test set;.
 this is the primary metric that determines whether the agent works at all. (2) Average steps per task — measures efficiency;.
 an agent that takes 15 steps when 3 would suffice is wasting tokens and time. (3) Cost per task — tracks total LLM tokens consumed plus tool API costs. Secondary metrics include latency (end-to-end time),.
-robustness (performance across varied inputs), and hallucination rate (how often the agent fabricates tool outputs). A good evaluation harness runs at least 50-100 test cases and.
+robustness (performance across varied inputs), and hallucination rate (how often the agent fabricates tool outputs). A good evaluation harness runs at least 50-100 test cases and
 reports all metrics with confidence intervals.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

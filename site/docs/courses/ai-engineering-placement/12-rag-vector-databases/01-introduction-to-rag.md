@@ -47,7 +47,7 @@ flowchart LR
 
 ## Introduction
 
-Retrieval-Augmented Generation (RAG) is the most practical technique for making LLMs useful with private, domain-specific, or up-to-date knowledge. Instead of retraining a model on new data — expensive and.
+Retrieval-Augmented Generation (RAG) is the most practical technique for making LLMs useful with private, domain-specific, or up-to-date knowledge. Instead of retraining a model on new data — expensive and
 slow — RAG retrieves relevant documents at query time and grounds the LLM's response in that context. This chapter covers the full RAG paradigm: why it works,.
 its core components, how it compares to fine-tuning, and how to evaluate output quality.
 
@@ -629,9 +629,9 @@ hallucination reduction, and private data access. Evaluating RAG quality require
     Q1: What are the three main steps of a RAG pipeline and how do they interact?
   </summary>
   <div class="tp-qa-answer">
-<p>RAG follows a three-step flow: Retrieve, Augment, Generate. First, the retriever searches a knowledge base for documents or chunks relevant to the user's query using either sparse (BM25) or.
+<p>RAG follows a three-step flow: Retrieve, Augment, Generate. First, the retriever searches a knowledge base for documents or chunks relevant to the user's query using either sparse (BM25) or
 dense (embedding similarity) methods. Second, the augmenter inserts the retrieved context into the LLM prompt alongside a grounding instruction. Third, the generator.
-(an LLM) produces a response strictly based on the provided context. The interaction is sequential — poor retrieval directly degrades augmentation and.
+(an LLM) produces a response strictly based on the provided context. The interaction is sequential — poor retrieval directly degrades augmentation and
 generation quality. This design grounds the LLM's output in external knowledge, reducing hallucination by 40-80% compared to zero-shot generation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -644,9 +644,9 @@ generation quality. This design grounds the LLM's output in external knowledge, 
     Q2: How does RAG compare to fine-tuning for incorporating new knowledge into an LLM?
   </summary>
   <div class="tp-qa-answer">
-<p>RAG provides real-time knowledge updates by retrieving from an external index at query time — you can add new documents and.
+<p>RAG provides real-time knowledge updates by retrieving from an external index at query time — you can add new documents and
 immediately make them accessible. Fine-tuning requires collecting labeled data, retraining the model (hours to days), and redeploying. RAG also offers better data privacy since private documents remain in the index rather than being memorized in model weights. Fine-tuning is better when you need the model to learn new behavioral patterns,.
-writing styles, or domain-specific formats that retrieval cannot inject. Many production systems combine both: RAG for factual grounding and fine-tuning for.
+writing styles, or domain-specific formats that retrieval cannot inject. Many production systems combine both: RAG for factual grounding and fine-tuning for
 behavior alignment.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -674,7 +674,7 @@ latency, and cost. The retriever is often the most impactful — improving retri
   </summary>
   <div class="tp-qa-answer">
 <p>RAG addresses knowledge cutoff (by retrieving up-to-date documents), hallucination (by grounding responses in retrieved evidence), private data access (by indexing proprietary documents),.
-and domain specificity (by retrieving from domain-specific knowledge bases). Limitations that RAG does NOT solve: the generator can still misinterpret or.
+and domain specificity (by retrieving from domain-specific knowledge bases). Limitations that RAG does NOT solve: the generator can still misinterpret or
 ignore retrieved context, the retrieval itself can fail (returning irrelevant chunks), and latency increases due to the extra retrieval step. RAG also does not improve the model's reasoning capability — it only provides better information. Combining RAG with chain-of-thought prompting can partially address the reasoning gap.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -688,8 +688,8 @@ ignore retrieved context, the retrieval itself can fail (returning irrelevant ch
   </summary>
   <div class="tp-qa-answer">
 <p>RAG evaluation requires specialized metrics: Faithfulness (are claims in the response supported by retrieved context?), Answer Relevance (does the response address the query?),.
-Context Precision (are the retrieved chunks relevant?), and Context Recall (are all necessary chunks retrieved?). These four metrics form the RAGAS framework. For.
-retrieval specifically, measure precision@k, recall@k, MRR, and NDCG against a relevance-annotated test set. A weighted composite score (e.g., 0.3 faithfulness + 0.3 relevance + 0.2 context precision + 0.2 context recall) gives a single RAG quality score for.
+Context Precision (are the retrieved chunks relevant?), and Context Recall (are all necessary chunks retrieved?). These four metrics form the RAGAS framework. For
+retrieval specifically, measure precision@k, recall@k, MRR, and NDCG against a relevance-annotated test set. A weighted composite score (e.g., 0.3 faithfulness + 0.3 relevance + 0.2 context precision + 0.2 context recall) gives a single RAG quality score for
 regression tracking.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -718,7 +718,7 @@ like finding "Python 3.12" when "programming language" is the semantic match. Hy
   </summary>
   <div class="tp-qa-answer">
 <p>Use explicit grounding instructions like "Answer ONLY based on the provided context. If the context lacks information, say you don't know." Position the context before the query (prepend) — studies show LLMs use prepended context more effectively than appended. Use numbered chunk references [1],.
-[2] and instruct the model to cite sources. The sandwich strategy (context, then question, then reminder to use context) reinforces the grounding instruction. For.
+[2] and instruct the model to cite sources. The sandwich strategy (context, then question, then reminder to use context) reinforces the grounding instruction. For
 strict tasks, use citation-style augmentation:</p>
     <pre><code>def augment(self, ctx):
     context = "\n\n".join([f"[{i+1}] {c.text}" for i, c in enumerate(ctx.chunks)])
@@ -735,8 +735,8 @@ strict tasks, use citation-style augmentation:</p>
   </summary>
   <div class="tp-qa-answer">
 <p>Top-k selection involves a trade-off: too few chunks (k=1-2) may miss critical information (low recall), while too many (k=10-15) can exceed the LLM's context window,.
-dilute relevance, and increase cost. Start with k=5 as a default, then tune based on chunk size and task complexity. For.
-chunk sizes of 200-500 tokens, k=3-5 typically balances recall and precision. Evaluate recall@k on a validation set to determine the minimum k that captures all relevant information. Use dynamic selection: retrieve more candidates initially (k=10) but.
+dilute relevance, and increase cost. Start with k=5 as a default, then tune based on chunk size and task complexity. For
+chunk sizes of 200-500 tokens, k=3-5 typically balances recall and precision. Evaluate recall@k on a validation set to determine the minimum k that captures all relevant information. Use dynamic selection: retrieve more candidates initially (k=10) but
 select only the top-k by relevance score that fit within your token budget.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -749,8 +749,8 @@ select only the top-k by relevance score that fit within your token budget.</p>
     Q9: What is the role of the augmenter in RAG and how does prompt engineering apply?
   </summary>
   <div class="tp-qa-answer">
-<p>The augmenter transforms retrieved chunks into a structured prompt that the LLM can consume effectively. Key prompt engineering decisions include: clear separation between context and.
-query (using "Context:" and "Question:" labels), explicit grounding instructions ("Answer only from context"), formatting chunks with source numbers for citation, and.
+<p>The augmenter transforms retrieved chunks into a structured prompt that the LLM can consume effectively. Key prompt engineering decisions include: clear separation between context and
+query (using "Context:" and "Question:" labels), explicit grounding instructions ("Answer only from context"), formatting chunks with source numbers for citation, and
 handling edge cases like empty context or contradictory information. The augmentation prompt is often the most iterated-on component in production RAG systems — small wording changes can significantly affect faithfulness. A well-designed augmenter reduces hallucination by 30-50% compared to naive concatenation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -763,9 +763,9 @@ handling edge cases like empty context or contradictory information. The augment
     Q10: How does RAG help with private or enterprise data that an LLM has never seen?
   </summary>
   <div class="tp-qa-answer">
-<p>RAG allows an LLM to answer questions about private data by indexing that data into a vector database at the enterprise's infrastructure. The data never enters the LLM's training set or.
+<p>RAG allows an LLM to answer questions about private data by indexing that data into a vector database at the enterprise's infrastructure. The data never enters the LLM's training set or
 model weights — it is only injected into the context window at query time. This provides data privacy and access control: you can restrict which documents each user can retrieve via metadata filters. It also enables real-time updates — new internal documents,.
-customer records, or product specs are immediately available after indexing without any model retraining. This makes RAG the standard architecture for.
+customer records, or product specs are immediately available after indexing without any model retraining. This makes RAG the standard architecture for
 enterprise knowledge bases, internal documentation Q&A, and customer support systems.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

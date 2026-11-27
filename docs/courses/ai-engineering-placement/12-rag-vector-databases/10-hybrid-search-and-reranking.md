@@ -750,8 +750,8 @@ print("Hybrid + reranking evaluation ready")
 ## Summary
 
 Hybrid search and reranking form the backbone of production-grade retrieval systems. Hybrid search combines sparse (BM25) and dense (embedding) signals through score normalization (min-max,.
-z-score, quantile) and fusion strategies (RRF, weighted, Borda count, rank-based). Reranking refines top candidates using cross-encoders for accurate query-document scoring, ColBERT-style late interaction for.
-efficient token-level matching, and LLM-based approaches (pointwise, pairwise, listwise). Production optimization includes caching reranker scores, pruning low-scoring candidates, and allocating latency budgets across stages. The combination of hybrid retrieval and.
+z-score, quantile) and fusion strategies (RRF, weighted, Borda count, rank-based). Reranking refines top candidates using cross-encoders for accurate query-document scoring, ColBERT-style late interaction for
+efficient token-level matching, and LLM-based approaches (pointwise, pairwise, listwise). Production optimization includes caching reranker scores, pruning low-scoring candidates, and allocating latency budgets across stages. The combination of hybrid retrieval and
 cross-encoder reranking typically yields 10-20% improvement in NDCG and MRR over single-method approaches.
 
 ## Practical Takeaways
@@ -771,7 +771,7 @@ cross-encoder reranking typically yields 10-20% improvement in NDCG and MRR over
 <summary><strong>1.</strong> What is hybrid search and why is it important in modern RAG systems?</summary>
 Hybrid search combines two complementary retrieval strategies: keyword-based (sparse) search and semantic (dense) vector search. Keyword search excels at exact phrase matching,.
 handling rare terms, and retrieving results based on lexical overlap — for example, finding a specific product code "MB-203X" that a vector.
-search might miss. Dense vector search captures semantic meaning and handles synonyms well, so a query like "cheap laptops" retrieves documents mentioning "affordable notebooks." Hybrid search merges both result sets using techniques like reciprocal rank fusion (RRF) or.
+search might miss. Dense vector search captures semantic meaning and handles synonyms well, so a query like "cheap laptops" retrieves documents mentioning "affordable notebooks." Hybrid search merges both result sets using techniques like reciprocal rank fusion (RRF) or
 weighted scoring, producing robust results that outperform either method alone, especially in domains with technical jargon or mixed-length queries.
 </details>
 
@@ -787,22 +787,22 @@ is robust to score distribution differences between systems, and works well even
 <summary><strong>3.</strong> What is the difference between bi-encoders and cross-encoders for reranking?</summary>
 Bi-encoders independently encode the query and each document into fixed vectors, then compute similarity with a dot product or cosine distance. This allows pre-computing document embeddings offline,.
 making bi-encoders extremely fast at retrieval time — they can search millions of documents in milliseconds using Approximate Nearest Neighbor (ANN) indexes. Cross-encoders jointly encode the query-document pair through a transformer,.
-producing a single relevance score. They are much slower (O(n) forward passes for n documents) but significantly more accurate because the model can attend to interactions between query and.
+producing a single relevance score. They are much slower (O(n) forward passes for n documents) but significantly more accurate because the model can attend to interactions between query and
 document tokens. In production, cross-encoders are typically used as a second-stage reranker over the top 20–100 candidates retrieved by a bi-encoder,.
 trading recall for precision.
 </details>
 
 <details data-qid="rag10-q4">
 <summary><strong>4.</strong> How do you implement a two-stage retrieval pipeline with reranking?</summary>
-A two-stage pipeline separates the retrieval and reranking concerns. Stage 1 uses a fast bi-encoder (dense or sparse) to retrieve a broad candidate set — typically top-100 or.
-top-200 documents — from the full corpus. Stage 2 applies a more expensive but accurate cross-encoder model to rerank these candidates. The cross-encoder scores each query-document pair and.
+A two-stage pipeline separates the retrieval and reranking concerns. Stage 1 uses a fast bi-encoder (dense or sparse) to retrieve a broad candidate set — typically top-100 or
+top-200 documents — from the full corpus. Stage 2 applies a more expensive but accurate cross-encoder model to rerank these candidates. The cross-encoder scores each query-document pair and
 returns a refined top-k (e.g., top-5). Implementation-wise, you might use Cohere's `embed-english-v3.0` as the bi-encoder and a fine-tuned `cross-encoder/ms-marco-MiniLM-L-6-v2` as the reranker. This architecture keeps sub-200ms total latency while improving nDCG@10 by 10–20% compared to bi-encoder-only retrieval,.
 especially on ambiguous or multi-faceted queries.
 </details>
 
 <details data-qid="rag10-q5">
 <summary><strong>5.</strong> What is ColBERT and how does it improve over traditional bi-encoders?</summary>
-ColBERT (Contextualized Late Interaction over BERT) is a retrieval model that combines the efficiency of bi-encoders with the interaction richness of cross-encoders. It encodes the query and.
+ColBERT (Contextualized Late Interaction over BERT) is a retrieval model that combines the efficiency of bi-encoders with the interaction richness of cross-encoders. It encodes the query and
 document independently into sets of token-level embeddings. At scoring time, it uses a MaxSim operation: for each query token embedding, it finds the maximum cosine similarity against any document token embedding,.
 then sums these maxima to produce a relevance score. This late interaction allows ColBERT to model fine-grained term matching — such as "bank" matching "river bank" vs "savings bank" — without the quadratic cost of full cross-encoder interaction. ColBERTv2 achieves BM25-level latency with near-cross-encoder accuracy,.
 making it a popular choice for production reranking tiers.
@@ -812,7 +812,7 @@ making it a popular choice for production reranking tiers.
 <summary><strong>6.</strong> When would you choose sparse retrieval (BM25) over dense retrieval as your primary method?</summary>
 Sparse retrieval is preferable in domains where exact term matching is critical, such as legal document search, medical coding, or product catalog lookup with SKU codes. BM25 naturally handles rare terms,.
 out-of-vocabulary words, and multi-word phrases without any training data. It also performs well on short queries and when the document vocabulary has low overlap with the training distribution of dense models. .
-BM25 indexes are cheap to build and update, requiring no GPU or embedding API calls. In many production systems, BM25 serves as the primary retriever for.
+BM25 indexes are cheap to build and update, requiring no GPU or embedding API calls. In many production systems, BM25 serves as the primary retriever for
 exact-match use cases while a dense model runs in parallel or as a fallback for semantic queries.
 </details>
 
@@ -820,14 +820,14 @@ exact-match use cases while a dense model runs in parallel or as a fallback for 
 <summary><strong>7.</strong> How do you evaluate the quality of a hybrid search system?</summary>
 Evaluation of hybrid search combines both retrieval and downstream task metrics. For retrieval standalone, use precision@k, recall@k, mean average precision (MAP),.
 and nDCG@k comparing against a human-annotated relevance judgment set. For downstream quality, measure end-to-end RAG metrics like answer faithfulness, answer relevance,.
-and context precision using frameworks like RAGAS or TruLens. A critical A/B test compares the hybrid system against each individual method: measure whether hybrid improves recall@20 (typically 5–15% lift) and.
+and context precision using frameworks like RAGAS or TruLens. A critical A/B test compares the hybrid system against each individual method: measure whether hybrid improves recall@20 (typically 5–15% lift) and
 whether the reranker further improves precision@5. Always include latency and cost benchmarks, since cross-encoder reranking adds 50–200ms per query and increases compute cost proportionally.
 </details>
 
 <details data-qid="rag10-q8">
 <summary><strong>8.</strong> Explain query rewriting and how it interacts with hybrid search.</summary>
-Query rewriting transforms a user's raw query into one or more variants that are more likely to match relevant documents. Common strategies include expansion (adding synonyms or.
-related terms), decomposition (splitting compound queries), and spelling correction. In a hybrid search setting, rewritten queries are sent to both the sparse and.
+Query rewriting transforms a user's raw query into one or more variants that are more likely to match relevant documents. Common strategies include expansion (adding synonyms or
+related terms), decomposition (splitting compound queries), and spelling correction. In a hybrid search setting, rewritten queries are sent to both the sparse and
 dense retrieval paths. For example, the query "fast cheap laptop for coding" might be rewritten to "(fast OR powerful OR high-performance) cheap (laptop OR notebook) for.
 (coding OR programming OR development)" for the BM25 path, while the dense path gets the original and rewritten forms as separate embedding lookups. The results are merged via RRF,.
 which helps compensate for the vocabulary mismatch between how users phrase queries and how documents are written.
@@ -838,7 +838,7 @@ which helps compensate for the vocabulary mismatch between how users phrase quer
 The trade-off is managed through a tiered architecture. Tier 1 uses lightweight sparse retrieval (BM25 over an inverted index) with sub-10ms latency. Tier 2 adds dense vector.
 retrieval using an ANN index (HNSW or IVF) with 20–50ms latency. Tier 3 applies a cross-encoder reranker over the top 50 candidates at 100–200ms. The system can dynamically decide which tiers to invoke based on query complexity: simple lookups skip to tier 1 only,.
 ambiguous queries go through all three tiers, and the system assigns a confidence score to decide whether reranking adds value. A timeout budget (e.g.,.
-500ms total) prevents any single tier from blocking the response. This cascading approach delivers sub-100ms responses for 70% of queries while reserving full accuracy for.
+500ms total) prevents any single tier from blocking the response. This cascading approach delivers sub-100ms responses for 70% of queries while reserving full accuracy for
 the hard cases.
 </details>
 
@@ -847,8 +847,8 @@ the hard cases.
 A typical architecture begins with an API gateway that receives user queries and routes them to a query processing service. This service performs query rewriting,.
 then fans out to two retrieval backends: an Elasticsearch cluster for BM25 sparse search and a Pinecone/Qdrant cluster for dense vector.
 search. Both backends return their top-100 results, which are merged by a fusion service running RRF. The top-30 fused results are sent to a cross-encoder reranker (deployed on GPU instances with ONNX Runtime or.
-TensorRT for low latency). The final top-5 results, along with the reranker scores and retrieved chunks, are passed to the LLM for.
-answer generation. All services are containerized and orchestrated via Kubernetes with horizontal pod autoscaling based on QPS, and each tier has its own circuit breaker and.
+TensorRT for low latency). The final top-5 results, along with the reranker scores and retrieved chunks, are passed to the LLM for
+answer generation. All services are containerized and orchestrated via Kubernetes with horizontal pod autoscaling based on QPS, and each tier has its own circuit breaker and
 cache layer.
 </details>
 

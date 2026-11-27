@@ -1020,9 +1020,9 @@ The Hub uses Git Large File Storage (LFS) for model weights (typically 100MB-10G
 
 ## Summary
 
-The Hugging Face ecosystem provides a unified interface for thousands of pre-trained models. The Transformers library offers AutoModel, AutoTokenizer, and pipeline APIs that abstract away model-specific details. Pipelines provide one-line inference for.
+The Hugging Face ecosystem provides a unified interface for thousands of pre-trained models. The Transformers library offers AutoModel, AutoTokenizer, and pipeline APIs that abstract away model-specific details. Pipelines provide one-line inference for
 common tasks like sentiment analysis, text generation, and summarization. The Datasets library handles loading, processing, and caching of large-scale datasets with memory-mapped storage. The Tokenizers library implements fast tokenization in Rust with Python bindings,.
-supporting BPE, WordPiece, and Unigram algorithms. The Model Hub hosts over 100,000 models with versioning and metadata. The Trainer API simplifies fine-tuning with built-in support for.
+supporting BPE, WordPiece, and Unigram algorithms. The Model Hub hosts over 100,000 models with versioning and metadata. The Trainer API simplifies fine-tuning with built-in support for
 distributed training, mixed precision, and metrics logging.
 
 ## Practical Takeaways
@@ -1045,8 +1045,8 @@ distributed training, mixed precision, and metrics logging.
   </summary>
   <div class="tp-qa-answer">
 <p>The pipeline API provides a high-level abstraction for inference. A single `pipeline("sentiment-analysis")("I love this!")` handles loading the correct model, tokenizer, preprocessing,.
-inference, and output formatting. Supported tasks include: text-classification (sentiment), token-classification (NER), question-answering, summarization, translation, text-generation, fill-mask, zero-shot-classification, feature-extraction, audio-classification, and image-classification. The pipeline automatically selects the default model for.
-each task (e.g., distilbert-base-uncased-finetuned-sst-2-english for sentiment). You can override the model with `pipeline("text-classification", model="my-model")`. It also handles batching, device placement, and.
+inference, and output formatting. Supported tasks include: text-classification (sentiment), token-classification (NER), question-answering, summarization, translation, text-generation, fill-mask, zero-shot-classification, feature-extraction, audio-classification, and image-classification. The pipeline automatically selects the default model for
+each task (e.g., distilbert-base-uncased-finetuned-sst-2-english for sentiment). You can override the model with `pipeline("text-classification", model="my-model")`. It also handles batching, device placement, and
 output aggregation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1061,7 +1061,7 @@ output aggregation.</p>
   <div class="tp-qa-answer">
 <p>The datasets library uses Apache Arrow as its data backend, which provides memory-mapped columnar storage. Datasets can be loaded in streaming mode (`load_dataset(...,.
 streaming=True)`), which fetches data on-the-fly without downloading the entire dataset. Arrow's zero-copy reads mean you can access random rows without loading the full dataset into memory. The library also supports: (1) Columnar operations — add/remove/rename columns without loading all data..
-(2) Shuffling with a buffer (not loading all data). (3) Multi-processing for.
+(2) Shuffling with a buffer (not loading all data). (3) Multi-processing for
 map operations across CPU cores. (4) Efficient serialization (parquet format) for fast save/load. Datasets up to 1TB can be processed on a machine with 16GB RAM using streaming.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1075,8 +1075,8 @@ map operations across CPU cores. (4) Efficient serialization (parquet format) fo
   </summary>
   <div class="tp-qa-answer">
 <p>Steps: (1) Initialize a BPE tokenizer: `tokenizer = Tokenizer(BPE(unk_token="[UNK]"))`. (2) Set pre-tokenizer: `tokenizer.pre_tokenizer = ByteLevel()` or `Whitespace()`. (3) Add special tokens: `tokenizer.add_special_tokens(["[CLS]",.
-"[SEP]", "[PAD]", "[MASK]"])`. (4) Train on files: `tokenizer.train(["file1.txt", "file2.txt"], vocab_size=30000, min_frequency=2)`. (5) Configure post-processing: add [CLS] at start and [SEP] at end. (6) Wrap with `PreTrainedTokenizerFast` for.
-use with transformers. The Rust backend processes text at 1M+ tokens/second. After training, save the tokenizer as a JSON file for.
+"[SEP]", "[PAD]", "[MASK]"])`. (4) Train on files: `tokenizer.train(["file1.txt", "file2.txt"], vocab_size=30000, min_frequency=2)`. (5) Configure post-processing: add [CLS] at start and [SEP] at end. (6) Wrap with `PreTrainedTokenizerFast` for
+use with transformers. The Rust backend processes text at 1M+ tokens/second. After training, save the tokenizer as a JSON file for
 sharing.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1090,8 +1090,8 @@ sharing.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>The Trainer takes: (1) `model` — a transformers model with a loss computation method. (2) `args` (TrainingArguments) — hyperparameters including output_dir,.
-num_train_epochs, per_device_train_batch_size, learning_rate, warmup_steps, gradient_accumulation_steps, fp16, save_steps, eval_steps, logging_steps, report_to (wandb/tensorboard). (3) `train_dataset` and `eval_dataset` — datasets with the `__getitem__` interface returning dicts. (4) `tokenizer` — for.
-padding and truncation during data collation. (5) `data_collator` — function that collates batch samples. (6) `compute_metrics` — function for computing metrics during evaluation. (7) `callbacks` — for.
+num_train_epochs, per_device_train_batch_size, learning_rate, warmup_steps, gradient_accumulation_steps, fp16, save_steps, eval_steps, logging_steps, report_to (wandb/tensorboard). (3) `train_dataset` and `eval_dataset` — datasets with the `__getitem__` interface returning dicts. (4) `tokenizer` — for
+padding and truncation during data collation. (5) `data_collator` — function that collates batch samples. (6) `compute_metrics` — function for computing metrics during evaluation. (7) `callbacks` — for
 custom behavior (early stopping, learning rate logging). The Trainer automatically handles device placement, gradient clipping, and checkpointing.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1104,7 +1104,7 @@ custom behavior (early stopping, learning rate logging). The Trainer automatical
     Q5: How do you share a custom model on the Hugging Face Hub?
   </summary>
   <div class="tp-qa-answer">
-<p>Steps: (1) Create a Hugging Face account and generate an access token (Settings → Access Tokens). (2) Create a model repository: `repo = huggingface_hub.create_repo("my-model")`. (3) Save model and.
+<p>Steps: (1) Create a Hugging Face account and generate an access token (Settings → Access Tokens). (2) Create a model repository: `repo = huggingface_hub.create_repo("my-model")`. (3) Save model and
 tokenizer locally: `model.save_pretrained("./my-model")` and `tokenizer.save_pretrained("./my-model")`. (4) Upload: `model.push_to_hub("my-model", token="hf_xxx")` and `tokenizer.push_to_hub("my-model")`. (5) Write a model card (README.md) with description, intended uses,.
 training details, and evaluation results. (6) For larger models (>5GB), the Hub uses Git LFS automatically. Once uploaded, others can load it: `AutoModel.from_pretrained("your-username/my-model")`.</p>
   </div>
@@ -1178,8 +1178,8 @@ padding="max_length", truncation=True, max_length=512)`. (4) Apply to dataset: `
   <div class="tp-qa-answer">
 <p>Model cards are README.md files displayed on each model's Hub page. They provide essential information: (1) Model description — architecture, size,.
 training data. (2) Intended uses and limitations — what the model is good for and where it may fail. (3) Training details — hyperparameters,.
-compute resources, training time. (4) Evaluation results — benchmarks and metrics with comparison to baselines. (5) Bias and fairness evaluations — testing for.
-demographic biases. (6) How to use — code examples. (7) Citation information. Model cards are critical for reproducibility, transparency, and responsible AI. Many organizations require model cards for.
+compute resources, training time. (4) Evaluation results — benchmarks and metrics with comparison to baselines. (5) Bias and fairness evaluations — testing for
+demographic biases. (6) How to use — code examples. (7) Citation information. Model cards are critical for reproducibility, transparency, and responsible AI. Many organizations require model cards for
 regulatory compliance. The Hub renders them as rich documentation with tables, images, and interactive widgets.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

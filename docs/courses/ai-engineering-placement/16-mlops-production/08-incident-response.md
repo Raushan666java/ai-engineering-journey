@@ -812,7 +812,7 @@ class IncidentManager {
     Q3: What should a model degradation runbook include?
   </summary>
   <div class="tp-qa-answer">
-<p>Steps: (1) Acknowledge and assess severity, (2) Check drift dashboard for recent changes, (3) Compare current vs reference feature distributions, (4) Check for.
+<p>Steps: (1) Acknowledge and assess severity, (2) Check drift dashboard for recent changes, (3) Compare current vs reference feature distributions, (4) Check for
 recent deployment or data pipeline changes, (5) If drift confirmed, rollback model to previous version, (6) Verify rollback effectiveness with metric comparison,.
 (7) Create Jira ticket for root cause investigation.</p>
   </div>
@@ -891,7 +891,7 @@ root cause, impact assessment, action items, what went well, what went wrong. Ac
   </summary>
   <div class="tp-qa-answer">
 <p>Strategies: (1) Use threshold + duration: alert only if threshold exceeded for N consecutive windows, (2) Severity-based routing: critical alerts page immediately,.
-warnings go to Slack, (3) Deduplicate related alerts into a single incident, (4) Regularly review and retire noisy alerts, (5) Implement maintenance windows for.
+warnings go to Slack, (3) Deduplicate related alerts into a single incident, (4) Regularly review and retire noisy alerts, (5) Implement maintenance windows for
 known issues, (6) Track alert-to-incident ratio — aim for >20%. </p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -905,7 +905,7 @@ known issues, (6) Track alert-to-incident ratio — aim for >20%. </p>
   </summary>
   <div class="tp-qa-answer">
 <p>Include: (1) Detailed timeline with detection, response, and resolution times, (2) Root cause analysis (e.g., data drift, pipeline failure, model bug),.
-(3) Impact assessment (users affected, financial impact), (4) What went well and what went wrong, (5) Specific, measurable action items with owners and.
+(3) Impact assessment (users affected, financial impact), (4) What went well and what went wrong, (5) Specific, measurable action items with owners and
 deadlines, (6) Changes to monitoring, runbooks, or architecture to prevent recurrence.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

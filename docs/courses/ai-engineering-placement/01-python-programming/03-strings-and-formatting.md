@@ -568,7 +568,7 @@ list, tuple). The step can also be negative for reversed traversal: <code>s[::-1
 
 <details class="tp-qa-card" data-qid="p02-s03-q6">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q6: Explain the split and join methods in detail.</summary>
-<div class="tp-qa-answer"><p><code>split(sep, maxsplit)</code> divides a string into a list at each occurrence of sep. Without arguments, splits on any whitespace and.
+<div class="tp-qa-answer"><p><code>split(sep, maxsplit)</code> divides a string into a list at each occurrence of sep. Without arguments, splits on any whitespace and
 strips empty strings. <code>rsplit()</code> works from the right. <code>join(iterable)</code> is the inverse — concatenates an iterable of strings with the separator.
 string. They form the primary pattern for string tokenization/assembly in Python.</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
@@ -583,7 +583,7 @@ string. They form the primary pattern for string tokenization/assembly in Python
 <details class="tp-qa-card" data-qid="p02-s03-q8">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q8: Why is string concatenation with + inefficient in loops?</summary>
 <div class="tp-qa-answer"><p>Strings are immutable, so each <code>+=</code> creates a new string and copies both parts. This results in O(n²) time and.
-O(n²) memory allocation. Using <code>"".join(list)</code> precomputes the total size, allocates once, and copies each string exactly once — O(n) time. For.
+O(n²) memory allocation. Using <code>"".join(list)</code> precomputes the total size, allocates once, and copies each string exactly once — O(n) time. For
 very large strings, StringIO or building a list then joining is preferred.</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>

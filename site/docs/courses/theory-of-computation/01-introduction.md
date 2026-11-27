@@ -667,7 +667,7 @@ class LanguageTypeChecker {
     return true;
   }
 
-  // Infer the strictest type this grammar belongs to.
+  // Infer the strictest type this grammar belongs to
   inferType(): LanguageType {
     if (this.isRegular()) return 3;
     if (this.isContextFree()) return 2;

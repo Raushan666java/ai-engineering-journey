@@ -598,7 +598,7 @@ print(f"Spike anomaly: {detector.is_anomaly('latency', 500)}")
 ## Summary
 
 Agent observability is essential for debugging, monitoring, and improving agent systems. Structured logging captures thoughts, actions, observations, and errors at each step. Distributed tracing provides end-to-end visibility across agent workflows with span hierarchies. Performance metrics (latency,.
-token usage, tool calls, steps per task) and quality metrics (success rate, hallucination scores, user ratings) enable quantitative assessment. Step replay and.
+token usage, tool calls, steps per task) and quality metrics (success rate, hallucination scores, user ratings) enable quantitative assessment. Step replay and
 reasoning visualization tools help debug agent decision-making. Alerting rules and anomaly detection catch failures and performance degradation in real-time.
 
 ## Practical Takeaways
@@ -622,9 +622,9 @@ reasoning visualization tools help debug agent decision-making. Alerting rules a
   <div class="tp-qa-answer">
 <p>The three pillars of observability are logging, metrics, and tracing. For agent systems: (1) Logging — records every agent action, LLM call,.
 tool execution, and state transition with timestamps, providing a detailed audit trail for debugging and compliance; (2) Metrics — numeric measurements like success rate,.
-latency percentiles (p50, p95, p99), token usage, tool call counts, and cost per request, tracked over time for performance monitoring and.
+latency percentiles (p50, p95, p99), token usage, tool call counts, and cost per request, tracked over time for performance monitoring and
 trend analysis; (3) Tracing — captures the full execution path of a single request across all components (LLM, tools, state manager,.
-memory), showing the causal chain of events and enabling root cause analysis when something fails. A complete observability implementation combines all three — logs for.
+memory), showing the causal chain of events and enabling root cause analysis when something fails. A complete observability implementation combines all three — logs for
 detailed investigation, metrics for alerting and dashboards, and traces for understanding complex multi-step workflows. OpenTelemetry is the standard framework for instrumenting all three pillars consistently.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -656,9 +656,9 @@ latency optimization, and debugging of model behavior issues.</p>
   <div class="tp-qa-answer">
 <p>Key agent performance metrics fall into categories. Task metrics: success rate (percentage of tasks completed without errors), completion rate (percentage that reached a final answer vs. max iterations),.
 average steps per task. Latency metrics: total response time (user-facing), p50/p95/p99 latency for end-to-end requests, time per step, time per tool call. Quality metrics: LLM-as-judge score,.
-user feedback score (rating or thumbs up/down), hallucination rate, policy violation rate. Cost metrics: cost per request, cost per task, cost breakdown by LLM model and.
+user feedback score (rating or thumbs up/down), hallucination rate, policy violation rate. Cost metrics: cost per request, cost per task, cost breakdown by LLM model and
 tool usage. Resource metrics: context window utilization percentage, memory retrieval latency, cache hit rate. Sprint metrics: trend over time imp. Metrics are emitted to a time-series database (Prometheus,.
-CloudWatch) and displayed on dashboards. Alert thresholds are set per metric — for example, alert if p95 latency exceeds 10 seconds or.
+CloudWatch) and displayed on dashboards. Alert thresholds are set per metric — for example, alert if p95 latency exceeds 10 seconds or
 success rate drops below 95%.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -691,7 +691,7 @@ HTTP calls and manual instrumentation for custom operations. For agents, create 
 success rate %, average latency, active users, total cost today; (2) Latency breakdown — p50/p95/p99 latency chart, latency by step type (LLM call,.
 tool execution, total), slowest requests table; (3) Error tracking — error rate over time, top error types (timeout, rate limit, invalid tool args,.
 policy violation), error by component; (4) Tool usage — tool call volume, tool latency, tool error rate, most-used tools ranking; (5) Cost analysis — cost per request,.
-cost by model, cost by tool, daily/weekly cost trends; (6) Quality — average user feedback score, LLM-as-judge score trend, policy violation rate. Each section has time-range controls and.
+cost by model, cost by tool, daily/weekly cost trends; (6) Quality — average user feedback score, LLM-as-judge score trend, policy violation rate. Each section has time-range controls and
 drill-down capability. The dashboard uses a time-series database (Prometheus, Grafana, Datadog, CloudWatch) and refreshes automatically in production. Alert rules are configured per metric threshold with notification channels.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -707,7 +707,7 @@ drill-down capability. The dashboard uses a time-series database (Prometheus, Gr
 <p>Debugging agent reasoning chains requires tools that visualize the step-by-step decision process. A debugger shows: (1) the full conversation log — every user message,.
 agent thought, tool call, and tool result; (2) the state at each step — what data was available, what changed after the step;.
 (3) the decision points — why the agent chose one tool over another, what conditional edge was taken and why; (4) timing — how long each step took;.
-(5) cost — tokens consumed per step. Implementation: store the full execution trace in a structured format (JSON or database), then build a UI that renders it as an interactive timeline. Each step is clickable for.
+(5) cost — tokens consumed per step. Implementation: store the full execution trace in a structured format (JSON or database), then build a UI that renders it as an interactive timeline. Each step is clickable for
 details. The debugger supports: replay (re-execute from any step with modified inputs), branching (fork execution at a point to try different decisions),.
 and comparison (side-by-side view of two runs with different prompts/models). LangGraph's built-in visualization (draw_mermaid_png) shows the graph topology, while execution traces show the actual path taken.</p>
   </div>
@@ -742,7 +742,7 @@ deduplication, escalation if not acknowledged within SLA, and auto-resolve when 
 trace ID, session ID, user ID, event type (llm_call, tool_call, state_change, error), event data (model, tool name, duration, tokens), and metadata (version,.
 environment). Logs are indexed by trace ID for correlating related events and by timestamp for time-range queries. A log query interface supports: full-text search across all log fields,.
 filtering by event type, user, or session, aggregation (count of errors by type over time), and drill-down from dashboard to specific logs. Retention policies keep detailed logs for.
-30 days and aggregated summaries for longer. Structured logging (using JSON format) is critical for machine parsing — unstructured text logs make automated analysis impossible. Log volume can be high for.
+30 days and aggregated summaries for longer. Structured logging (using JSON format) is critical for machine parsing — unstructured text logs make automated analysis impossible. Log volume can be high for
 agent systems, so sampling (log 1 in N requests for high-volume endpoints) may be needed for cost management.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -758,7 +758,7 @@ agent systems, so sampling (log 1 in N requests for high-volume endpoints) may b
 <p>Cost tracking measures and attributes the cost of each agent interaction. Key cost components: LLM API costs (input tokens + output tokens * model-specific rates),.
 tool execution costs (API calls to external services, database queries), infrastructure costs (compute, memory, storage for the agent service). Implementation: an agent cost tracker intercepts each LLM call,.
 calculates prompt and completion tokens, and computes cost using a tiered rate table (different rates for GPT-4, GPT-3.5, Claude, etc.). Costs are logged per request with breakdown by component. Daily/weekly/monthly aggregation shows cost trends. Cost attribution by user,.
-session, task type, or model enables chargebacks and optimization. Alerting on cost anomalies (sudden spikes) prevents budget overruns. Cost data is displayed on the monitoring dashboard alongside performance data. For.
+session, task type, or model enables chargebacks and optimization. Alerting on cost anomalies (sudden spikes) prevents budget overruns. Cost data is displayed on the monitoring dashboard alongside performance data. For
 production systems, cost-aware routing can automatically use cheaper models for simple tasks.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -776,7 +776,7 @@ with each step's duration as a bar; (2) Step detail panel — clicking a step sh
 the response received, tool arguments and results, state changes; (3) State inspector — shows the full state at each step (messages,.
 variables, tool outputs), with diff highlighting showing what changed from the previous step; (4) Search — search across all traces by user query,.
 tool name, error type, or date range; (5) Replay — rerun the trace from any step with modified inputs or prompts to debug;.
-(6) Export — export the trace as JSON for sharing or regression testing. The debug viewer connects to the log storage backend and.
+(6) Export — export the trace as JSON for sharing or regression testing. The debug viewer connects to the log storage backend and
 transforms execution logs into an interactive visualization. This tool is essential for development debugging and production incident investigation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

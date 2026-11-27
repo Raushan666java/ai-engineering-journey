@@ -452,7 +452,7 @@ Best,
 ## Summary
 
 LinkedIn is the most important professional social network for engineers. An optimized headline with target keywords makes you discoverable in recruiter searches. Experience descriptions using the STAR method with quantified metrics demonstrate impact. Regular posting — tutorials,.
-insights, and stories — builds thought leadership. Strategic networking with personalized outreach grows your professional community. Recommendations provide powerful social proof. For.
+insights, and stories — builds thought leadership. Strategic networking with personalized outreach grows your professional community. Recommendations provide powerful social proof. For
 active job seekers, Open to Work settings, saved searches, and recruiter outreach tools streamline the process. A well-maintained LinkedIn profile generates inbound opportunities constantly.
 
 ## Practical Takeaways
@@ -572,10 +572,10 @@ active job seekers, Open to Work settings, saved searches, and recruiter outreac
     Q1: How do recruiters search for candidates on LinkedIn and how can you optimize your profile for discovery?
   </summary>
   <div class="tp-qa-answer">
-<p>Recruiters use LinkedIn Recruiter with boolean search queries combining role titles, skills, and location. Your headline is the most searchable field — include your target role title and.
-key skills separated by pipes: "AI Engineer | NLP & Computer Vision | PyTorch | AWS." Recruiters also search within the About section and.
+<p>Recruiters use LinkedIn Recruiter with boolean search queries combining role titles, skills, and location. Your headline is the most searchable field — include your target role title and
+key skills separated by pipes: "AI Engineer | NLP & Computer Vision | PyTorch | AWS." Recruiters also search within the About section and
 experience descriptions, so include relevant keywords naturally. The Skills section is searchable — list 50 skills and endorse others to receive endorsements back. All-Star profile status improves search ranking. Recruiter searches prioritize: headline (most weight),.
-current position, skills, About section, and past positions (least weight). A profile that hasn't been updated in 6+ months is deprioritized. Optimizing for.
+current position, skills, About section, and past positions (least weight). A profile that hasn't been updated in 6+ months is deprioritized. Optimizing for
 these factors can increase recruiter outreach by 3-5—.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -607,7 +607,7 @@ percentages, and time savings wherever possible. If exact metrics aren't availab
 <p>High-engagement content types for engineers: (1) Tutorial snippets — "How I built a RAG system in Python (20 lines of code)" with a code screenshot. Short,.
 valuable, and immediately useful. (2) Project showcases — screenshots/GIFs of your project with key metrics: "Built a real-time voice agent — 800ms end-to-end latency,.
 92% task completion rate." (3) Industry insights — your take on new AI developments: "GPT-4o analysis — the 3 biggest implications for.
-AI engineering." (4) Lessons learned — "5 mistakes I made building my first LLM app" — authentic content resonates more than perfect success stories. (5) Questions to the community — "How do you handle hallucinations in production? I'm trying approach X — what works for.
+AI engineering." (4) Lessons learned — "5 mistakes I made building my first LLM app" — authentic content resonates more than perfect success stories. (5) Questions to the community — "How do you handle hallucinations in production? I'm trying approach X — what works for
 you?" Questions drive comments, which boost reach. (6) Reposts with your take — share someone else's content with 2-3 sentences of your analysis. Aim for.
 2-3 posts per week with an 80/20 value-to-promotion ratio.</p>
   </div>
@@ -621,11 +621,11 @@ you?" Questions drive comments, which boost reach. (6) Reposts with your take �
     Q4: How do you grow your LinkedIn network strategically for job opportunities?
   </summary>
   <div class="tp-qa-answer">
-<p>Strategic networking: (1) Connect with intent — send a personalized message: "Hi [Name], I really enjoyed your post about [topic]. I'm an AI engineer specializing in [field] and.
+<p>Strategic networking: (1) Connect with intent — send a personalized message: "Hi [Name], I really enjoyed your post about [topic]. I'm an AI engineer specializing in [field] and
 would love to connect and learn from your experience." (2) Target profile — engineers at target companies, industry thought leaders, recruiters in AI/ML,.
 alumni from your university, people who share content you engage with. (3) Daily habit — connect with 5-10 relevant people per day with personalized messages. (4) Engage first — comment on someone's post meaningfully,.
 then connect. This doubles acceptance rate. (5) Quality over quantity — 500 relevant connections (peers, recruiters, industry leaders) is worth more than 5000 random connections. (6) Follow up — when someone accepts,.
-send a thank-you message and engage with their content. (7) Track — use LinkedIn's "My Network" page to see who's growing fastest and.
+send a thank-you message and engage with their content. (7) Track — use LinkedIn's "My Network" page to see who's growing fastest and
 learn from their approach.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -639,9 +639,9 @@ learn from their approach.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>Open to Work settings: (1) Recruiters only — select "Recruiters only" visibility (not "All LinkedIn members"). Your current employer won't see the #OpenToWork frame on your profile photo. (2) Target preferences — set specific job titles (AI Engineer,.
-ML Engineer), locations (Remote, San Francisco, New York), and job types (Full-time, Contract). (3) Saved searches — create 3-5 saved searches for.
+ML Engineer), locations (Remote, San Francisco, New York), and job types (Full-time, Contract). (3) Saved searches — create 3-5 saved searches for
 your target roles with daily alerts. (4) Profile optimization — your headline and about section should reflect your target role, not your current role. (5) Passive signal — even without Open to Work,.
-an optimized profile with regular activity generates inbound recruiter messages. (6) Privacy considerations — if you're concerned, check LinkedIn's privacy settings to ensure your activity is not broadcast to your network. (7) Timing — most recruiters are most active Tuesday-Thursday. Schedule profile updates and.
+an optimized profile with regular activity generates inbound recruiter messages. (6) Privacy considerations — if you're concerned, check LinkedIn's privacy settings to ensure your activity is not broadcast to your network. (7) Timing — most recruiters are most active Tuesday-Thursday. Schedule profile updates and
 applications accordingly.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -655,8 +655,8 @@ applications accordingly.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>Recommendation strategy: (1) Choose the right people — former managers (most weight), peers who worked closely with you, clients or cross-functional partners. (2) Make it easy — provide 3-5 bullet points they can build on: "I'd appreciate if you could highlight my work on [project],.
-especially how I [action] to achieve [result]." (3) Write for them first — give recommendations to 2-3 people first; most will reciprocate. (4) Timing — ask within 2 weeks of a successful project or.
-positive feedback. The memory is fresh. (5) Follow up — if no response in 1 week, send a gentle reminder. (6) Reciprocity circle — form a group with 3-5 peers and.
+especially how I [action] to achieve [result]." (3) Write for them first — give recommendations to 2-3 people first; most will reciprocate. (4) Timing — ask within 2 weeks of a successful project or
+positive feedback. The memory is fresh. (5) Follow up — if no response in 1 week, send a gentle reminder. (6) Reciprocity circle — form a group with 3-5 peers and
 agree to write recommendations for each other. (7) Quality control — a recommendation that mentions specific projects and metrics is 10— more valuable than a generic "great engineer." Aim for.
 3-5 recommendations total: one from a manager, one from a peer, and one from a client or cross-functional partner.</p>
   </div>
@@ -688,8 +688,8 @@ image, carousel, video) and measure engagement. (7) Weekly review — spend 15 m
   <div class="tp-qa-answer">
 <p>An About section should be 3-5 paragraphs: (1) Hook (first 2 lines visible without clicking "see more") — "I build AI systems that process millions of requests per day. Currently working on RAG-powered enterprise search at Company X." This is the most important part — if the hook doesn't engage,.
 they won't click "see more." (2) What you do — 2-3 sentences on your role and the problems you solve: "I specialize in building production LLM applications — from RAG pipelines to multi-agent systems." (3) Key achievements — 3-5 bullet.
-points with quantified results: "Reduced LLM inference costs by 60% through prompt caching and.
-model quantization." (4) What you're looking for — "I'm currently exploring opportunities in AI engineering roles focused on NLP and retrieval systems." (5) Call to action — "Always happy to connect with fellow AI engineers. DM me if you're working on something interesting!" Avoid generic phrases. Include relevant keywords for.
+points with quantified results: "Reduced LLM inference costs by 60% through prompt caching and
+model quantization." (4) What you're looking for — "I'm currently exploring opportunities in AI engineering roles focused on NLP and retrieval systems." (5) Call to action — "Always happy to connect with fellow AI engineers. DM me if you're working on something interesting!" Avoid generic phrases. Include relevant keywords for
 search throughout.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -702,11 +702,11 @@ search throughout.</p>
     Q9: How do you handle a layoff or career gap on LinkedIn professionally?
   </summary>
   <div class="tp-qa-answer">
-<p>Handling career transitions: (1) Be honest but positive — if laid off, update your headline: "AI Engineer | Open to opportunities" and.
-mention in the About section: "Recently concluded my role at Company X due to organizational restructuring. Taking this time to upskill and.
-explore exciting new opportunities." (2) Stay active — post about what you're learning, projects you're building, or interesting problems you're solving. This signals initiative. (3) Volunteer or.
+<p>Handling career transitions: (1) Be honest but positive — if laid off, update your headline: "AI Engineer | Open to opportunities" and
+mention in the About section: "Recently concluded my role at Company X due to organizational restructuring. Taking this time to upskill and
+explore exciting new opportunities." (2) Stay active — post about what you're learning, projects you're building, or interesting problems you're solving. This signals initiative. (3) Volunteer or
 project work — if between jobs, list notable projects or volunteer work as a position with type "Self-employed" or "Freelance." (4) Skills assessment — take LinkedIn skill assessments to display verified badges (Python,.
-Machine Learning, AWS). (5) Recommendations — ask for recommendations from your previous role while it's still fresh. (6) Gap framing — never lie about dates. A 3-6 month gap is common and.
+Machine Learning, AWS). (5) Recommendations — ask for recommendations from your previous role while it's still fresh. (6) Gap framing — never lie about dates. A 3-6 month gap is common and
 acceptable if you frame it positively: "I used this time to complete the AWS ML Speciality certification and build an open-source RAG framework that gained 500+ stars on GitHub."</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -719,7 +719,7 @@ acceptable if you frame it positively: "I used this time to complete the AWS ML 
     Q10: How do you use LinkedIn's Creator Mode to build thought leadership?
   </summary>
   <div class="tp-qa-answer">
-<p>Creator Mode optimization: (1) Turn on Creator Mode in Settings → Data Privacy → Creator Mode. This prioritizes content over the activity feed (removing the "Recent Activity" section) and.
+<p>Creator Mode optimization: (1) Turn on Creator Mode in Settings → Data Privacy → Creator Mode. This prioritizes content over the activity feed (removing the "Recent Activity" section) and
 adds a "Connect" button instead of "Follow." (2) Topics — add 3-5 topics you create content about (AI Engineering, Machine Learning,.
 Python, RAG, Career Development). (3) Newsletter — LinkedIn's newsletter feature allows subscribers to receive your posts via email. Announce your newsletter in posts to grow subscribers. (4) Content cadence — post 2-3x per week consistently. Use a mix: 1 tutorial/insight,.
 1 question/discussion, 1 thought leadership. (5) Engagement strategy — respond to every comment within 24 hours. LinkedIn's algorithm prioritizes posts with active discussions. (6) Hashtags — use 3-5 relevant hashtags per post (e.g.,.

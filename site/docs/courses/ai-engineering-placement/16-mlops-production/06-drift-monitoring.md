@@ -744,7 +744,7 @@ class DriftMonitor {
     Q1: What is the difference between data drift and concept drift?
   </summary>
   <div class="tp-qa-answer">
-<p>Data drift (covariate shift) is when the distribution of input features P(X) changes — e.g., customers become younger over time. Concept drift is when the relationship between inputs and.
+<p>Data drift (covariate shift) is when the distribution of input features P(X) changes — e.g., customers become younger over time. Concept drift is when the relationship between inputs and
 targets P(Y|X) changes — e.g., the same features now predict different outcomes. Data drift often leads to concept drift, but they can occur independently.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -808,8 +808,8 @@ N consecutive windows, (3) PSI > 0.25 on key features, (4) Concept drift detecte
     Q6: What is prediction drift and why does it matter?
   </summary>
   <div class="tp-qa-answer">
-<p>Prediction drift is a change in the distribution of model outputs P(Y_hat). It can result from data drift (different inputs produce different outputs) or.
-concept drift (same inputs map to different targets). Monitoring prediction drift provides a holistic view of model behavior change and is often the easiest drift signal to detect and.
+<p>Prediction drift is a change in the distribution of model outputs P(Y_hat). It can result from data drift (different inputs produce different outputs) or
+concept drift (same inputs map to different targets). Monitoring prediction drift provides a holistic view of model behavior change and is often the easiest drift signal to detect and
 act upon.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

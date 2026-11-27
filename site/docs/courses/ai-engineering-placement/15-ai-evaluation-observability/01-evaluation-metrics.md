@@ -417,7 +417,7 @@ their limitations. ROUGE and BLEU correlate weakly with human judgment. F1 is pr
     Q1: How do you choose between accuracy and F1 score for classification tasks?
   </summary>
   <div class="tp-qa-answer">
-<p>Accuracy measures the proportion of correct predictions out of total predictions, while F1 is the harmonic mean of precision and recall. For.
+<p>Accuracy measures the proportion of correct predictions out of total predictions, while F1 is the harmonic mean of precision and recall. For
 balanced datasets, accuracy is straightforward and interpretable. For imbalanced datasets (e.g., 99% legitimate transactions), accuracy is misleading because always predicting the majority class yields 99% accuracy. F1 score,.
 especially macro or weighted F1, provides a better measure by considering both false positives and false negatives. A good rule of thumb: if your minority class is below 20% of the data,.
 prefer macro F1 over accuracy.</p>
@@ -433,7 +433,7 @@ prefer macro F1 over accuracy.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>MAE (Mean Absolute Error) measures the average absolute difference between predictions and actual values, giving equal weight to all errors. RMSE (Root Mean Squared Error) squares the errors before averaging,.
-which penalizes large errors more heavily. Use MAE when you want a metric in the same units as the target and.
+which penalizes large errors more heavily. Use MAE when you want a metric in the same units as the target and
 when all error magnitudes are equally important. Use RMSE when large errors are disproportionately harmful (e.g., a house price prediction off by \$100K is not just twice as bad as one off by \$50K — it could mean a completely wrong market segment).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -446,8 +446,8 @@ when all error magnitudes are equally important. Use RMSE when large errors are 
     Q3: Why is ROUGE-N considered limited for summarization evaluation?
   </summary>
   <div class="tp-qa-answer">
-<p>ROUGE-N measures n-gram overlap between a generated summary and reference summaries. Its main limitation is that it penalizes valid paraphrases — a summary that uses synonyms or.
-restructures sentences to convey the same meaning receives a lower score despite being equally good. For example, "The cat sat on the mat" vs. "A cat was sitting on the rug" has low ROUGE-1 overlap even though both convey the.
+<p>ROUGE-N measures n-gram overlap between a generated summary and reference summaries. Its main limitation is that it penalizes valid paraphrases — a summary that uses synonyms or
+restructures sentences to convey the same meaning receives a lower score despite being equally good. For example, "The cat sat on the mat" vs. "A cat was sitting on the rug" has low ROUGE-1 overlap even though both convey the
 same information. This weak correlation with human judgment means ROUGE should always be supplemented with semantic metrics like BERTScore or.
 LLM-based evaluation.</p>
   </div>
@@ -461,8 +461,8 @@ LLM-based evaluation.</p>
     Q4: How do you measure hallucination rate in LLM outputs?
   </summary>
   <div class="tp-qa-answer">
-<p>Hallucination rate measures the proportion of generated claims that are not supported by the provided context or factual knowledge. The standard approach involves: (1) Extracting atomic claims from the LLM output using an NLI model or.
-another LLM. (2) Checking each claim against a trusted knowledge base using semantic entailment. (3) Computing the hallucination rate as the fraction of unsupported claims. A production-grade implementation uses retrieval-augmented generation (RAG) context as the ground truth and.
+<p>Hallucination rate measures the proportion of generated claims that are not supported by the provided context or factual knowledge. The standard approach involves: (1) Extracting atomic claims from the LLM output using an NLI model or
+another LLM. (2) Checking each claim against a trusted knowledge base using semantic entailment. (3) Computing the hallucination rate as the fraction of unsupported claims. A production-grade implementation uses retrieval-augmented generation (RAG) context as the ground truth and
 flags any claim that cannot be entailed from the retrieved documents. Modern tools like NLI-based fact-checking models can automate this at scale.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -476,8 +476,8 @@ flags any claim that cannot be entailed from the retrieved documents. Modern too
   </summary>
   <div class="tp-qa-answer">
 <p>Calibration measures whether a model's confidence estimates match its actual accuracy. For example, if a model predicts 100 samples with 90% confidence,.
-roughly 90 should be correct. ECE is computed by: (1) Binning predictions by confidence intervals (e.g., 10 bins from [0,0.1] to [0.9,1.0]). (2) For.
-each bin, calculating the difference between average confidence and actual accuracy. (3) Weighting each bin's difference by the fraction of samples in that bin. A perfectly calibrated model has ECE = 0. Modern LLMs tend to be overconfident (high confidence but.
+roughly 90 should be correct. ECE is computed by: (1) Binning predictions by confidence intervals (e.g., 10 bins from [0,0.1] to [0.9,1.0]). (2) For
+each bin, calculating the difference between average confidence and actual accuracy. (3) Weighting each bin's difference by the fraction of samples in that bin. A perfectly calibrated model has ECE = 0. Modern LLMs tend to be overconfident (high confidence but
 lower accuracy), making calibration measurement essential before production deployment.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -507,7 +507,7 @@ report multiple metrics and inspect residual plots to understand how outliers af
   <div class="tp-qa-answer">
 <p>Perplexity measures how well a language model predicts a sequence: it is the exponentiated average negative log-likelihood per token. Lower perplexity means the model is more confident in its predictions. Mathematically,.
 perplexity = exp(-1/N * Σ ln P(token_i | context)). It is useful for comparing models on the same test corpus because it directly reflects the model's ability to predict the next token. However,.
-perplexity has limitations: it does not correlate perfectly with human judgment, it is sensitive to tokenization, and it cannot measure factual accuracy or.
+perplexity has limitations: it does not correlate perfectly with human judgment, it is sensitive to tokenization, and it cannot measure factual accuracy or
 coherence directly. A strong LLM typically achieves perplexity below 20 on standard benchmarks.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -521,7 +521,7 @@ coherence directly. A strong LLM typically achieves perplexity below 20 on stand
   </summary>
   <div class="tp-qa-answer">
 <p>When costs differ, you should not use the default 0.5 threshold. Instead: (1) Define a cost matrix: cost(FP) and cost(FN). (2) Compute the cost ratio = cost(FP) / cost(FN). (3) Find the optimal threshold where the benefit of reducing one error.
-type outweighs the cost of increasing the other. A practical approach is to plot precision-recall or ROC curves, then choose the threshold that minimizes total cost on a validation set. For.
+type outweighs the cost of increasing the other. A practical approach is to plot precision-recall or ROC curves, then choose the threshold that minimizes total cost on a validation set. For
 example, in medical diagnosis, false negatives (missing a disease) may cost 10x more than false positives, so a threshold of 0.3 might be optimal instead of 0.5.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -536,7 +536,7 @@ example, in medical diagnosis, false negatives (missing a disease) may cost 10x 
   <div class="tp-qa-answer">
 <p>AUC-ROC (Area Under the Receiver Operating Characteristic curve) measures the model's ability to distinguish between positive and negative classes across all possible thresholds. An AUC of 0.5 means random chance,.
 while 1.0 means perfect separation. Its main limitation is that it considers both false positive and true positive rates equally across all thresholds,.
-which may not reflect real-world operating conditions. AUC-ROC can be overly optimistic for highly imbalanced datasets because the false positive rate is dominated by the majority class. For.
+which may not reflect real-world operating conditions. AUC-ROC can be overly optimistic for highly imbalanced datasets because the false positive rate is dominated by the majority class. For
 imbalanced problems, precision-recall AUC (AUPRC) is often preferred as it focuses on the positive class.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

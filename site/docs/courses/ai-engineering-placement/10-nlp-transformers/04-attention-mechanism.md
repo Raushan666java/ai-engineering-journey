@@ -560,7 +560,7 @@ capturing different relationship types. Causal masking prevents positions from a
   <div class="tp-qa-answer">
 <p>Plain seq2seq models compress the entire input sequence into a single fixed-size context vector (the encoder's final hidden state). For long sequences,.
 this creates an information bottleneck — the decoder cannot access details about earlier input tokens. Attention solves this by giving the decoder access to all encoder hidden states,.
-weighted by relevance. The decoder computes a context vector at each step as a weighted sum of encoder states, where weights indicate which input tokens are most important for.
+weighted by relevance. The decoder computes a context vector at each step as a weighted sum of encoder states, where weights indicate which input tokens are most important for
 generating the next output token. This allows the model to effectively "look back" at any part of the input, dramatically improving performance on long sequences.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -575,7 +575,7 @@ generating the next output token. This allows the model to effectively "look bac
   <div class="tp-qa-answer">
 <p>Bahdanau attention (2014) uses additive scoring: e_{tj} = v^T tanh(W1*h_j + W2*s_{t-1}). It has more parameters and is computed as a learned alignment model. The context vector.
 is used when computing the current decoder hidden state. Luong attention (2015) offers three simpler scoring variants: dot (s_t^T * h_j),.
-general (s_t^T * Wa * h_j), and concat (v^T tanh(Wa*[s_t; h_j])). Luong's context vector is computed after the decoder hidden state and.
+general (s_t^T * Wa * h_j), and concat (v^T tanh(Wa*[s_t; h_j])). Luong's context vector is computed after the decoder hidden state and
 combined as h~_t = tanh(W_c[s_t; c_t]). Luong also introduced local attention (window around predicted position). Bahdanau is more expressive but slower;.
 Luong is simpler and faster, making it more practical for production.</p>
   </div>
@@ -604,7 +604,7 @@ sqrt(d_k)≈22.6. Without scaling, the variance is 512 and softmax becomes near-
     Q4: How does multi-head attention work?
   </summary>
   <div class="tp-qa-answer">
-<p>Multi-head attention runs h parallel attention heads (typically h=8-16). Each head projects the input using learned weight matrices W_q, W_k, W_v and.
+<p>Multi-head attention runs h parallel attention heads (typically h=8-16). Each head projects the input using learned weight matrices W_q, W_k, W_v and
 computes scaled dot-product attention independently. The per-head dimension is d_k = d_model / h (e.g., d_model=512, h=8 → d_k=64). After computing each head's output (size n x d_k),.
 they are concatenated along the feature dimension to form an n x d_model matrix, then projected through W_O (d_model x d_model). Each head can learn different attention patterns: position-based,.
 syntactic, semantic. Multi-head attention with h=8 gives the model 8x the representational capacity of single-head attention with the same parameter cost.</p>
@@ -635,7 +635,7 @@ the model must not be able to see token t+1 (which would be cheating). Without c
   <div class="tp-qa-answer">
 <p>In self-attention, each input token is projected into three vectors: Query (Q), Key (K), and Value (V). The analogy comes from information retrieval: Query is what you are looking for,.
 Key is what each item is labeled with, and Value is the actual content of each item. Attention computes how well each Query matches each Key (via dot product),.
-then weights the Values by these match scores. For a sequence of n tokens, Q, K, V are each n x d_k matrices. The attention output for.
+then weights the Values by these match scores. For a sequence of n tokens, Q, K, V are each n x d_k matrices. The attention output for
 position i is a weighted sum of all V vectors, where the weight on V_j is proportional to exp(Q_i · K_j / sqrt(d_k)). This allows each position to aggregate information from all other positions.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -648,9 +648,9 @@ position i is a weighted sum of all V vectors, where the weight on V_j is propor
     Q7: What is local attention and when would you use it?
   </summary>
   <div class="tp-qa-answer">
-<p>Local attention (Luong et al., 2015) restricts attention to a window around a predicted alignment position p_t, rather than attending to all encoder states. For.
+<p>Local attention (Luong et al., 2015) restricts attention to a window around a predicted alignment position p_t, rather than attending to all encoder states. For
 each decoder timestep t, the model predicts an aligned position p_t = S * sigmoid(v_p^T tanh(W_p * s_t)), where S is the source length. Attention is computed only within window [p_t - D,.
-p_t + D] (D=10 is typical), with Gaussian weighting to favor positions near p_t. This reduces computation from O(T) to O(2D) where T is the full sequence length. Use local attention for.
+p_t + D] (D=10 is typical), with Gaussian weighting to favor positions near p_t. This reduces computation from O(T) to O(2D) where T is the full sequence length. Use local attention for
 very long sequences (documents, audio) where global attention is computationally prohibitive. The trade-off is potentially missing long-range dependencies beyond the window.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -663,7 +663,7 @@ very long sequences (documents, audio) where global attention is computationally
     Q8: How do you visualize attention and what can you learn?
   </summary>
   <div class="tp-qa-answer">
-<p>Attention is visualized as a heatmap: rows = target positions, columns = source positions, cell intensity = attention weight (0-1). For.
+<p>Attention is visualized as a heatmap: rows = target positions, columns = source positions, cell intensity = attention weight (0-1). For
 machine translation, an ideal alignment looks near-diagonal (monotonic language pairs). You can learn: (1) Is the model attending to relevant source words? (e.g.,.
 when translating the French word "maison", does it attend to "house"?). (2) Is there attention to NULL or irrelevant words? (attention noise). (3) What relationships do different heads capture? (BERT's heads show syntactic,.
 positional, and semantic patterns). (4) For long sequences, does attention spread out or concentrate? Concentrated attention on a few tokens suggests the model is using precise alignment. Tools like BertViz and.
@@ -679,7 +679,7 @@ Tensor2Tensor provide interactive visualization.</p>
     Q9: What is the time and memory complexity of self-attention?
   </summary>
   <div class="tp-qa-answer">
-<p>The time complexity of standard self-attention is O(n^2 * d_k) where n is the sequence length and d_k is the key dimension. The quadratic term n^2 comes from computing all pairwise dot products (n queries — n keys). Memory complexity is also O(n^2) for.
+<p>The time complexity of standard self-attention is O(n^2 * d_k) where n is the sequence length and d_k is the key dimension. The quadratic term n^2 comes from computing all pairwise dot products (n queries — n keys). Memory complexity is also O(n^2) for
 the attention matrix. For n=512 (standard BERT), this is manageable (262K entries). For n=8192 (long document), it becomes 67M entries — prohibitive. Sparsity approaches exist: (1) Sparse attention (fixed patterns) reduces to O(n * sqrt(n)). (2) Linformer projects keys/values to.
 O(n*k) with k << n. (3) Reformer uses locality-sensitive hashing for.
 O(n log n). (4) Longformer uses sliding window attention. Transformers with 512-1024 token limits use full self-attention; longer sequences require sparse variants.</p>
@@ -694,9 +694,9 @@ O(n log n). (4) Longformer uses sliding window attention. Transformers with 512-
     Q10: How does attention help with long-range dependencies in sequences?
   </summary>
   <div class="tp-qa-answer">
-<p>RNNs process sequences left-to-right, with information flowing through a chain of hidden states. For dependencies 50+ tokens apart, the signal degrades due to gradient issues. Attention creates a direct connection between any two positions regardless of distance. The attention weight between position i and.
+<p>RNNs process sequences left-to-right, with information flowing through a chain of hidden states. For dependencies 50+ tokens apart, the signal degrades due to gradient issues. Attention creates a direct connection between any two positions regardless of distance. The attention weight between position i and
 j is computed directly from their representations, with O(1) path length. This means the model can learn "The man who lived next door... he" — the pronoun "he" can directly attend to "man" even if they are 100 tokens apart. In RNNs,.
-this requires the hidden state to carry information through 100 steps. Empirical results show attention-based models significantly outperform RNNs on tasks requiring long-range dependencies like coreference resolution and.
+this requires the hidden state to carry information through 100 steps. Empirical results show attention-based models significantly outperform RNNs on tasks requiring long-range dependencies like coreference resolution and
 document-level sentiment.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

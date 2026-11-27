@@ -875,7 +875,7 @@ especially for popular or common inputs.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>Consistent hashing assigns users to model versions deterministically based on a hash of their user ID. The same user always gets the same model version,.
-providing a consistent experience. The hash space is divided into buckets proportional to the traffic split (e.g., 90% for control, 10% for.
+providing a consistent experience. The hash space is divided into buckets proportional to the traffic split (e.g., 90% for control, 10% for
 treatment). This enables fair A/B testing without session inconsistency.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -937,7 +937,7 @@ maximum prevents runaway scaling.</p>
     Q9: How do you handle model versioning in serving?
   </summary>
   <div class="tp-qa-answer">
-<p>Load all active model versions into memory at startup. Use a ModelRouter with traffic percentage configuration per version. The router selects the version based on random weighted selection or.
+<p>Load all active model versions into memory at startup. Use a ModelRouter with traffic percentage configuration per version. The router selects the version based on random weighted selection or
 consistent hashing by user ID. Shadow traffic sends copies of requests to new versions for evaluation without affecting responses. Canary routing exposes new versions to increasing traffic.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

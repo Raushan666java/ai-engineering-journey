@@ -890,7 +890,7 @@ legal) run first. Log all guardrail decisions for audit. Use async processing fo
   </summary>
   <div class="tp-qa-answer">
 <p>A context window guardrail ensures the total prompt (system prompt + retrieved documents + conversation history + user input) fits within the LLM's token limit. It estimates token usage,.
-trims or truncates documents by relevance, and rejects requests that exceed the limit even after trimming. This prevents truncation errors and.
+trims or truncates documents by relevance, and rejects requests that exceed the limit even after trimming. This prevents truncation errors and
 ensures consistent model behavior.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -903,7 +903,7 @@ ensures consistent model behavior.</p>
     Q8: How do you test guardrails before deployment?
   </summary>
   <div class="tp-qa-answer">
-<p>Build a test suite with categories: benign (should pass), harmful (should block), edge cases (long input, special chars, encoded content). Use automated red teaming to generate attack variations. Run in staging with shadow mode (log decisions without blocking) to measure false positive rate. Compare guardrail decisions against human review for.
+<p>Build a test suite with categories: benign (should pass), harmful (should block), edge cases (long input, special chars, encoded content). Use automated red teaming to generate attack variations. Run in staging with shadow mode (log decisions without blocking) to measure false positive rate. Compare guardrail decisions against human review for
 a sample of traffic.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -929,7 +929,7 @@ a sample of traffic.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>Agent guardrails must also monitor: (1) Tool/function calls — block dangerous operations, (2) Output that could trigger unintended side effects (e.g.,.
-sending emails, deleting data), (3) Multi-step reasoning — ensure the agent doesn't chain harmless steps into harmful outcomes, (4) Permission boundaries — verify the agent only accesses authorized tools and.
+sending emails, deleting data), (3) Multi-step reasoning — ensure the agent doesn't chain harmless steps into harmful outcomes, (4) Permission boundaries — verify the agent only accesses authorized tools and
 data.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

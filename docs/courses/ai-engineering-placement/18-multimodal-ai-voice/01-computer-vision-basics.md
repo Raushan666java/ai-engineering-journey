@@ -724,7 +724,7 @@ replace classifier head, train only the head. (2) Fine-tuning — unfreeze some 
     Q3: What is the difference between convolution and pooling?
   </summary>
   <div class="tp-qa-answer">
-<p>Convolution applies learnable filters to extract features (edges, textures, patterns) — it's a learnable operation. Pooling reduces spatial dimensions by taking the maximum or.
+<p>Convolution applies learnable filters to extract features (edges, textures, patterns) — it's a learnable operation. Pooling reduces spatial dimensions by taking the maximum or
 average value in a window — it's a fixed operation that provides translation invariance and reduces computation. Convolution preserves spatial info;.
 pooling discards some to focus on the most salient features.</p>
   </div>
@@ -753,7 +753,7 @@ INT8 precision reduces memory and latency, (6) Image size — smaller input reso
   </summary>
   <div class="tp-qa-answer">
 <p>Three approaches: (1) Vision encoder + LLM decoder — encode image features and feed to LLM as part of prompt (Flamingo,.
-LLaVA), (2) Image captioning — caption first, then use text in LLM pipeline, (3) Embedding alignment — CLIP-style models project images and.
+LLaVA), (2) Image captioning — caption first, then use text in LLM pipeline, (3) Embedding alignment — CLIP-style models project images and
 text into shared embedding space for retrieval and similarity.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

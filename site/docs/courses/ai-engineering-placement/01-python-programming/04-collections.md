@@ -481,7 +481,7 @@ ange(len(lst)) |
 <details class="tp-qa-card" data-qid="p02-s04-q1">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q1: What is the difference between a list and a tuple?</summary>
 <div class="tp-qa-answer"><p>Lists are mutable (can be modified), tuples are immutable (cannot change after creation). Tuples are slightly faster, use less memory,.
-and can be used as dictionary keys (if all elements are hashable). Lists have over-allocation for growing, while tuples have exact size. Use tuples for.
+and can be used as dictionary keys (if all elements are hashable). Lists have over-allocation for growing, while tuples have exact size. Use tuples for
 fixed records and lists for dynamic sequences.</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
@@ -501,7 +501,7 @@ exceeds 2/3. Dictionary keys must be hashable (immutable). Memory overhead is si
 
 <details class="tp-qa-card" data-qid="p02-s04-q4">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q4: What is the difference between a set and a frozenset?</summary>
-<div class="tp-qa-answer"><p>set is mutable — can add, remove, discard, pop elements. frozenset is immutable and hashable, so it can be used as a dictionary key or.
+<div class="tp-qa-answer"><p>set is mutable — can add, remove, discard, pop elements. frozenset is immutable and hashable, so it can be used as a dictionary key or
 element of another set. Both have O(1) membership testing and support standard set operations (union, intersection, etc.). Use frozenset when you need an immutable,.
 hashable collection of unique items.</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
@@ -516,15 +516,15 @@ list (default []), set (default set()). Use it for grouping items, counting, or 
 
 <details class="tp-qa-card" data-qid="p02-s04-q6">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q6: How do you remove duplicates from a list while preserving order?</summary>
-<div class="tp-qa-answer"><p>Use a loop with a set to track seen items: <code>seen = set(); [x for x in items if not (x in seen or.
-seen.add(x))]</code>. In Python 3.7+, dict preserves insertion order so <code>list(dict.fromkeys(items))</code> also works. Using set alone loses order. For unhashable types, use a list for.
+<div class="tp-qa-answer"><p>Use a loop with a set to track seen items: <code>seen = set(); [x for x in items if not (x in seen or
+seen.add(x))]</code>. In Python 3.7+, dict preserves insertion order so <code>list(dict.fromkeys(items))</code> also works. Using set alone loses order. For unhashable types, use a list for
 tracking (O(n²) but necessary).</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="p02-s04-q7">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q7: What is the difference between shallow copy and deep copy?</summary>
-<div class="tp-qa-answer"><p>Shallow copy creates a new collection but inserts references to the same nested objects. Changes to nested objects affect both. Deep copy (copy.deepcopy) recursively creates independent copies of all nested objects. Use shallow copy for.
+<div class="tp-qa-answer"><p>Shallow copy creates a new collection but inserts references to the same nested objects. Changes to nested objects affect both. Deep copy (copy.deepcopy) recursively creates independent copies of all nested objects. Use shallow copy for
 flat structures and deep copy for nested structures where full independence is needed. Deep copy is slower and may fail with circular references.</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
@@ -532,7 +532,7 @@ flat structures and deep copy for nested structures where full independence is n
 <details class="tp-qa-card" data-qid="p02-s04-q8">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q8: When would you use a list vs a set?</summary>
 <div class="tp-qa-answer"><p>Use a list when you need ordered elements, allow duplicates, require index-based access, or need to modify the sequence. Use a set when you need fast membership testing (O(1) vs O(n)),.
-uniqueness constraints, or set operations (union, intersection). Sets are also useful for deduplication. For iteration, lists preserve order, sets do not (insertion order in 3.7+ is insertion order but.
+uniqueness constraints, or set operations (union, intersection). Sets are also useful for deduplication. For iteration, lists preserve order, sets do not (insertion order in 3.7+ is insertion order but
 not sortable without sorted()).</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>

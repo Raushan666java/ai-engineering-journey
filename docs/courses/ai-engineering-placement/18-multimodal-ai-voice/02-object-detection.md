@@ -836,7 +836,7 @@ class DetectionPipeline:
 ## Summary
 
 Object detection is a foundational computer vision task that combines classification with localization. Two-stage detectors (R-CNN family) offer high accuracy by first proposing regions then classifying them,.
-while one-stage detectors (YOLO, SSD) prioritize speed by predicting all boxes in a single pass. Anchor boxes, IoU matching, and NMS are core mechanisms shared across architectures. Evaluation relies on mAP across IoU thresholds and.
+while one-stage detectors (YOLO, SSD) prioritize speed by predicting all boxes in a single pass. Anchor boxes, IoU matching, and NMS are core mechanisms shared across architectures. Evaluation relies on mAP across IoU thresholds and
 object scales. Deployment optimization through ONNX, TensorRT, and quantization enables real-time inference on edge devices.
 
 ## Practical Takeaways
@@ -888,7 +888,7 @@ DIoU-NMS considers both IoU and center distance, and Adaptive NMS adjusts the th
     Q3: What are anchor boxes and how are they designed for a specific dataset?
   </summary>
   <div class="tp-qa-answer">
-<p>Anchor boxes are pre-defined bounding boxes of various scales and aspect ratios placed at each grid cell. The network predicts offsets to adjust these anchors rather than predicting absolute coordinates. To design anchors for.
+<p>Anchor boxes are pre-defined bounding boxes of various scales and aspect ratios placed at each grid cell. The network predicts offsets to adjust these anchors rather than predicting absolute coordinates. To design anchors for
 a dataset: (1) Run k-means clustering on all ground truth box dimensions (width, height) in the training set. (2) Choose k cluster centers as the anchor.
 dimensions — typically 3-9 anchors depending on the feature map. (3) Align anchor scales with the feature map's receptive field. (4) Use anchors at multiple scales across feature pyramid levels. YOLOv5 uses 9 anchors from k-means clustering: 3 scales — 3 aspect ratios (e.g.,.
 (10,13), (16,30), (33,23), (30,61), (62,45), (59,119), (116,90), (156,198), (373,326)).</p>
@@ -904,7 +904,7 @@ dimensions — typically 3-9 anchors depending on the feature map. (3) Align anc
   </summary>
   <div class="tp-qa-answer">
 <p>COCO mAP is computed by: (1) For each class, compute the precision-recall curve by ranking detections by confidence and computing precision/recall at each rank. (2) Average Precision (AP) is the area under the precision-recall curve,.
-using 101-point interpolation. (3) This AP is computed at 10 IoU thresholds from 0.50 to 0.95 in steps of 0.05. (4) The final AP (called AP@[.5:.95]) is the mean across all 10 IoU thresholds and.
+using 101-point interpolation. (3) This AP is computed at 10 IoU thresholds from 0.50 to 0.95 in steps of 0.05. (4) The final AP (called AP@[.5:.95]) is the mean across all 10 IoU thresholds and
 all 80 COCO classes. This strict evaluation penalizes detectors that only perform well at low IoU thresholds. COCO also reports AP@0.5 (standard PASCAL VOC metric) and.
 AP@0.75 (stricter), plus AP_S, AP_M, AP_L for small, medium, and large objects separately.</p>
   </div>
@@ -919,8 +919,8 @@ AP@0.75 (stricter), plus AP_S, AP_M, AP_L for small, medium, and large objects s
   </summary>
   <div class="tp-qa-answer">
 <p>FPN addresses the problem that objects appear at different scales. Standard CNNs lose spatial resolution in deeper layers, making it hard to detect small objects. FPN creates a feature pyramid with strong semantic features at all scales by: (1) Bottom-up.
-pathway — standard CNN forward pass produces feature maps at multiple scales. (2) Top-down pathway — upsampling higher-level features to match lower-level resolution. (3) Lateral connections — adding 1—1 convolutions to merge bottom-up and.
-top-down features at each level. The result is a set of feature maps (P2, P3, P4, P5) where each level has both high resolution (for.
+pathway — standard CNN forward pass produces feature maps at multiple scales. (2) Top-down pathway — upsampling higher-level features to match lower-level resolution. (3) Lateral connections — adding 1—1 convolutions to merge bottom-up and
+top-down features at each level. The result is a set of feature maps (P2, P3, P4, P5) where each level has both high resolution (for
 small objects) and strong semantics (for accurate classification). Each level is assigned to detect objects of a specific size range.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -934,9 +934,9 @@ small objects) and strong semantics (for accurate classification). Each level is
   </summary>
   <div class="tp-qa-answer">
 <p>YOLO loss has four components: (1) Coordinate loss — MSE between predicted and ground truth box center (x, y) and dimensions (w,.
-h). This is weighted higher (λ_coord = 5) to emphasize accurate localization. (2) Object confidence loss — MSE for cells containing objects. (3) No-object confidence loss — MSE for.
+h). This is weighted higher (λ_coord = 5) to emphasize accurate localization. (2) Object confidence loss — MSE for cells containing objects. (3) No-object confidence loss — MSE for
 empty cells, weighted lower (λ_noobj = 0.5) since most cells don't contain objects. (4) Classification loss — cross-entropy for class predictions. The total loss is the sum: L = λ_coord * L_coord + L_obj + λ_noobj * L_noobj + L_cls..
-The weighting ensures the model prioritizes getting box coordinates right and.
+The weighting ensures the model prioritizes getting box coordinates right and
 balancing the extreme class imbalance between object-containing and empty cells.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -965,7 +965,7 @@ Apple Core ML. (6) Monitoring — track inference latency, throughput, and per-c
   </summary>
   <div class="tp-qa-answer">
 <p>One-stage detectors face extreme class imbalance because the grid generates thousands of anchor boxes, most of which are background (negative examples). Standard cross-entropy loss is dominated by easy negative examples. Focal loss reshapes the loss to down-weight well-classified examples: FL(p_t) = -(1 - p_t)^γ * log(p_t). With γ = 2,.
-an example classified with p_t = 0.9 contributes 100— less loss than one with p_t = 0.5. This forces the model to focus on the rare hard examples (mostly objects). RetinaNet showed that focal loss allows one-stage detectors to match the accuracy of two-stage detectors for.
+an example classified with p_t = 0.9 contributes 100— less loss than one with p_t = 0.5. This forces the model to focus on the rare hard examples (mostly objects). RetinaNet showed that focal loss allows one-stage detectors to match the accuracy of two-stage detectors for
 the first time, achieving COCO AP of 39.1 with ResNet-101-FPN backbone.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -978,9 +978,9 @@ the first time, achieving COCO AP of 39.1 with ResNet-101-FPN backbone.</p>
     Q9: What techniques improve detection of small objects in images?
   </summary>
   <div class="tp-qa-answer">
-<p>Small object detection (objects under 32—32 pixels) is challenging because they have few pixels and limited feature information. Techniques: (1) Feature Pyramid Networks (FPN) — uses high-resolution feature maps for.
+<p>Small object detection (objects under 32—32 pixels) is challenging because they have few pixels and limited feature information. Techniques: (1) Feature Pyramid Networks (FPN) — uses high-resolution feature maps for
 small object detection. (2) Image pyramids — test at multiple resolutions; small objects become larger at higher resolution. (3) Copy-paste augmentation — paste small object instances onto other images during training. (4) Mosaic augmentation — combine 4 images into one,.
-increasing small object density. (5) Attention mechanisms — transformer-based detectors (DETR, Deformable DETR) handle scale variation better. (6) Avoiding aggressive downsampling — use stride-1 convolutions in early layers to preserve spatial resolution for.
+increasing small object density. (5) Attention mechanisms — transformer-based detectors (DETR, Deformable DETR) handle scale variation better. (6) Avoiding aggressive downsampling — use stride-1 convolutions in early layers to preserve spatial resolution for
 small objects.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

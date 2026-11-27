@@ -649,7 +649,7 @@ escalation (agent asks for help when uncertain), and feedback collection (human 
   <div class="tp-qa-answer">
 <p>An approval workflow in LangGraph uses interrupt nodes that pause graph execution before a high-stakes action. The pattern: (1) the agent proposes an action (e.g.,.
 "send email to user@example.com with subject 'Invoice'") and stores it in the state; (2) an interrupt node pauses execution and returns the proposed action to the caller;.
-(3) the caller (the application layer) presents the action to a human via a UI notification, email, or dashboard; (4) the human reviews and.
+(3) the caller (the application layer) presents the action to a human via a UI notification, email, or dashboard; (4) the human reviews and
 responds (approve, reject, or modify); (5) the caller calls <code>resume()</code> with the human's decision; (6) the graph continues — if approved,.
 the action executes; if rejected, the agent must find an alternative. The interrupt node captures all context needed for the human to make an informed decision,.
 including the reasoning behind the proposed action. Timeout handling is also important — if the human doesn't respond within a configurable period,.
@@ -666,10 +666,10 @@ a fallback action (like auto-reject) is triggered.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>Escalation paths define what an agent should do when it cannot handle a request — due to low confidence, missing capabilities,.
-or policy violations. The path specifies a hierarchy of fallback options: first, try a different approach or tool; second, ask for.
+or policy violations. The path specifies a hierarchy of fallback options: first, try a different approach or tool; second, ask for
 clarification from the user; third, escalate to a more capable agent; fourth, escalate to a human operator with full context. Design principles: (1) detect escalation triggers proactively — monitor.
 confidence scores, request complexity, and policy checks; (2) pass full context with the escalation — the human operator should see the conversation history,.
-what the agent tried, and why it's escalating; (3) close the loop — after the human resolves the escalation, the agent should learn from the resolution. A <code>PolicyEnforcer</code> checks actions against defined policies and.
+what the agent tried, and why it's escalating; (3) close the loop — after the human resolves the escalation, the agent should learn from the resolution. A <code>PolicyEnforcer</code> checks actions against defined policies and
 automatically escalates policy violations. Escalation timers ensure the human operator responds within SLA — if not, the escalation goes to the next tier.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -684,9 +684,9 @@ automatically escalates policy violations. Escalation timers ensure the human op
   <div class="tp-qa-answer">
 <p>Human feedback collection captures user reactions to agent actions — thumbs up/down, ratings (1-5 stars), explicit corrections, or free-text comments. Feedback is collected after each agent action (tool call,.
 response, decision) and stored with the execution context (user query, agent's reasoning, action taken, outcome). Usage patterns: (1) online learning — the agent adjusts its behavior.
-in real-time based on feedback (e.g., "never use email for this user" becomes a memory); (2) offline training — collected feedback is used to fine-tune the underlying model or.
+in real-time based on feedback (e.g., "never use email for this user" becomes a memory); (2) offline training — collected feedback is used to fine-tune the underlying model or
 optimize prompts; (3) dashboard monitoring — feedback trends show which actions or topics need improvement. Implementation includes a <code>FeedbackCollector</code> that attaches to the agent output stream,.
-stores feedback in a database with the execution trace ID, and provides APIs for analysis. Explicit feedback is more valuable but.
+stores feedback in a database with the execution trace ID, and provides APIs for analysis. Explicit feedback is more valuable but
 harder to get — design feedback collection to be minimal-friction (single click, inline).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -719,7 +719,7 @@ and you can resume any thread at any time. This pattern is essential for long-ru
 <p>A policy enforcer validates every agent action against a set of predefined rules before execution, blocking or flagging violations. Policies are defined as a set of rules with: (1) conditions — what triggers the rule (e.g.,.
 action type equals "send_email" AND recipient domain is external); (2) action — what to do when triggered (block, flag for review,.
 require escalation); (3) severity — low (log), medium (flag), high (block). The enforcer sits between the agent's decision and the tool execution — it checks each proposed action,.
-evaluates all rules, and returns a verdict (allow, deny, flag). Implementation uses a rules engine where each rule is a function that receives the proposed action and.
+evaluates all rules, and returns a verdict (allow, deny, flag). Implementation uses a rules engine where each rule is a function that receives the proposed action and
 context, returning a policy verdict. Policies are loaded from configuration, enabling changes without code deployment. Critical for production agents that interact with external systems — prevents data leaks,.
 unauthorized actions, and policy violations.</p>
   </div>
@@ -737,7 +737,7 @@ unauthorized actions, and policy violations.</p>
 actions above the threshold proceed automatically, below require human approval; (2) action categorization — low-risk actions (search, read) are fully automatic,.
 medium-risk (create draft) are auto-approved but flagged, high-risk (send, delete) require explicit approval; (3) learning from past approvals — if the human has approved similar actions multiple times,.
 the agent gains permission to auto-approve within those patterns; (4) batch approvals — show multiple pending actions in a single dashboard view rather than one-by-one notifications;.
-(5) progressive autonomy — as the agent builds a track record of correct decisions, its autonomy level increases. The autonomy level is tracked per-agent and.
+(5) progressive autonomy — as the agent builds a track record of correct decisions, its autonomy level increases. The autonomy level is tracked per-agent and
 per-task-type, providing granular control. Monitoring tracks intervention rate over time — decreasing trend indicates the agent is improving.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -754,7 +754,7 @@ per-task-type, providing granular control. Monitoring tracks intervention rate o
 (2) the human provides feedback (approve, correct, rate) which is stored with the action; (3) a feedback processor analyzes patterns — if the agent consistently makes the same type of error,.
 it generates a correction rule (e.g., "when user asks for X, always use tool Y instead of Z"); (4) correction rules are stored in a rule library that the agent checks before executing actions;.
 (5) the agent also updates its long-term memory with user preferences inferred from feedback (e.g., "user prefers concise responses"). Implementation uses a <code>FeedbackProcessor</code> that runs on a schedule,.
-analyzes unprocessed feedback batches, and generates rule updates. This pattern enables continuous improvement without model retraining — the agent gets smarter with every human interaction by building a personalized knowledge base for.
+analyzes unprocessed feedback batches, and generates rule updates. This pattern enables continuous improvement without model retraining — the agent gets smarter with every human interaction by building a personalized knowledge base for
 each user.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -771,7 +771,7 @@ each user.</p>
 deny, flag, or escalate; (2) matched rules — which rules triggered and their severity; (3) explanation — human-readable reason for the decision;.
 (4) suggested actions — for deny/flag verdicts, suggestions for how to modify the action to be compliant. The verdict is generated by a <code>PolicyEngine</code> that iterates through all active rules,.
 evaluates each against the proposed action, and applies the highest-severity result (deny overrides flag, flag overrides allow). The verdict is returned to the agent,.
-which must handle it appropriately — if denied, the agent must modify its plan; if flagged, it continues but the action is logged for.
+which must handle it appropriately — if denied, the agent must modify its plan; if flagged, it continues but the action is logged for
 review; if escalated, it triggers the escalation path. Verdict metadata is logged for audit trails and policy effectiveness analysis.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -788,7 +788,7 @@ review; if escalated, it triggers the escalation path. Verdict metadata is logge
 Level 1 (Assisted) — low-risk actions auto-approved, high-risk requires approval; Level 2 (Semi-autonomous) — most actions auto-approved, only novel or high-risk actions need approval;.
 Level 3 (Conditionally autonomous) — the agent operates independently within defined boundaries, escalating only when out of scope; Level 4 (Fully autonomous) — no human involvement,.
 the agent handles everything autonomously. Each level has different requirements for logging, monitoring, and fallback procedures. The level can be set per user,.
-per task type, or per domain — a research agent might have Level 3 for search tasks but Level 1 for.
+per task type, or per domain — a research agent might have Level 3 for search tasks but Level 1 for
 write tasks. Autonomous levels are stored in user configuration and reviewed periodically based on agent performance metrics (error rate, feedback score,.
 escalation frequency).</p>
   </div>

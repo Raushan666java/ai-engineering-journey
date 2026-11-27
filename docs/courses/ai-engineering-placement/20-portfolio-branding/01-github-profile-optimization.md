@@ -481,8 +481,8 @@ class GitHubNetworker:
 
 ## Summary
 
-Your GitHub profile is your developer resume. A well-crafted profile README, curated pinned repos, and a consistent contribution graph create a strong first impression. Badges and.
-stats widgets add visual polish. Maintaining a consistent brand across platforms builds recognition. Active engagement through starring, following, and contributing grows your network organically. The key is consistency — daily small contributions compound into a professional profile that attracts recruiters and.
+Your GitHub profile is your developer resume. A well-crafted profile README, curated pinned repos, and a consistent contribution graph create a strong first impression. Badges and
+stats widgets add visual polish. Maintaining a consistent brand across platforms builds recognition. Active engagement through starring, following, and contributing grows your network organically. The key is consistency — daily small contributions compound into a professional profile that attracts recruiters and
 collaborators.
 
 ## Practical Takeaways
@@ -602,8 +602,8 @@ collaborators.
     Q1: How do recruiters evaluate a GitHub profile during technical screening?
   </summary>
   <div class="tp-qa-answer">
-<p>Recruiters and hiring managers typically scan a GitHub profile in 30-60 seconds. They look at: (1) Profile README — does it clearly communicate who you are and.
-what you build? (2) Pinned repositories — are the 6 pinned repos diverse and high-quality? (3) Contribution graph — is it consistently green (daily commits over months) or.
+<p>Recruiters and hiring managers typically scan a GitHub profile in 30-60 seconds. They look at: (1) Profile README — does it clearly communicate who you are and
+what you build? (2) Pinned repositories — are the 6 pinned repos diverse and high-quality? (3) Contribution graph — is it consistently green (daily commits over months) or
 sparse? (4) Code quality in top repos — clean code, tests, documentation, CI badges. (5) Open source contributions — stars, forks,.
 PRs to other projects. (6) Bio and links — does it link to LinkedIn, portfolio, and resume? A strong profile signals engineering professionalism: consistent activity,.
 well-maintained repos, and clear communication. A stale or empty profile raises red flags about the candidate's passion for engineering.</p>
@@ -635,8 +635,8 @@ bullet points, and emojis sparingly. The goal is to give a complete picture of w
   </summary>
   <div class="tp-qa-answer">
 <p>Maintaining a daily contribution streak requires strategy: (1) Commit small fixes — a documentation typo, a README improvement, or a single test counts as a contribution. (2) Automate where possible — scheduled GitHub Actions that update data files (e.g.,.
-pulling latest blog posts, updating Wakatime stats). (3) Break large features into small commits — instead of one large commit, commit working increments daily. (4) Use the "git commit --allow-empty" trick sparingly — it creates a commit but.
-doesn't add value; use it only when you have no other options. (5) Contribute to open source — fixing a typo in someone else's docs counts and.
+pulling latest blog posts, updating Wakatime stats). (3) Break large features into small commits — instead of one large commit, commit working increments daily. (4) Use the "git commit --allow-empty" trick sparingly — it creates a commit but
+doesn't add value; use it only when you have no other options. (5) Contribute to open source — fixing a typo in someone else's docs counts and
 builds your network. (6) Plan for weekends and vacations — pre-commit or schedule commits using cron + GitHub API. The streak itself isn't the goal — the habit of daily coding practice is what matters.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -668,7 +668,7 @@ CI badge, tests, and a demo (if applicable). A pinned repo without a README or t
 <p>GitHub Actions demonstrate DevOps maturity: (1) CI workflows — set up automated testing (pytest), linting (ruff), and type checking (mypy) on every PR. (2) Coverage reporting — add Codecov or.
 Coveralls integration with a badge in the README. (3) Scheduled workflows — a weekly workflow that updates your profile README with latest blog posts or.
 Wakatime stats. (4) Deployment — CD workflow that deploys to cloud (AWS/GCP/Azure) on push to main. (5) Multi-platform testing — test on Ubuntu,.
-Windows, and macOS with matrix builds. (6) Docker build — automatic build and push to Docker Hub or GitHub Container Registry. Each workflow file in `.github/workflows/` should have a clear purpose and.
+Windows, and macOS with matrix builds. (6) Docker build — automatic build and push to Docker Hub or GitHub Container Registry. Each workflow file in `.github/workflows/` should have a clear purpose and
 be well-commented. Having 3-5 active workflows across your repos signals that you understand production software engineering beyond just writing code.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -700,8 +700,8 @@ jobs:
           git commit -m "docs: auto-update profile README"
           git push</code></pre>
 <p>An auto-updating profile README uses a scheduled GitHub Action to run a script that fetches dynamic data (latest blog posts, Wakatime stats,.
-GitHub stats, recent activity) and regenerates the README. The script can be a JavaScript/Python file that: (1) Fetches posts from Dev.to or.
-your blog RSS feed. (2) Gets Wakatime coding stats via API. (3) Retrieves latest GitHub activity via GraphQL API. (4) Assembles the README from templates. The action commits and.
+GitHub stats, recent activity) and regenerates the README. The script can be a JavaScript/Python file that: (1) Fetches posts from Dev.to or
+your blog RSS feed. (2) Gets Wakatime coding stats via API. (3) Retrieves latest GitHub activity via GraphQL API. (4) Assembles the README from templates. The action commits and
 pushes changes automatically. This keeps your profile fresh without manual updates.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -731,7 +731,7 @@ audit: visit all your profiles side-by-side and check for inconsistencies in nam
   <div class="tp-qa-answer">
 <p>GitHub Sponsors can be used on your profile even if you don't expect significant donations: (1) Enable Sponsors — link a Stripe account or.
 PayPal. (2) Add the sponsor button to your profile README: `[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-pink)](https://github.com/sponsors/yourname)`. (3) Use sponsor tiers — "Coffee" (\$3/mo), "Supporter" (\$10/mo), "Champion" (\$50/mo) with tier-specific perks (early access,.
-feature requests, name in README). (4) Even if you don't earn from it, the sponsor button signals you understand the open source economy and.
+feature requests, name in README). (4) Even if you don't earn from it, the sponsor button signals you understand the open source economy and
 value community support. (5) For active projects, consider GitHub Sponsors for sustainable maintenance. Many engineers use sponsors to fund their open source work,.
 which looks great on a resume as it demonstrates community building and project leadership.</p>
   </div>
@@ -748,8 +748,8 @@ which looks great on a resume as it demonstrates community building and project 
 <p>Organization strategy: (1) Monorepo — use a single repo with subdirectories for small projects if you want to demonstrate consistent coding style across projects. Example structure: `portfolio/{project1,.
 project2, project3}/`. Best for showcasing breadth with consistent tooling. (2) Multi-repo — separate repos for each project, each with its own README,.
 CI/CD, and documentation. Best for depth — each repo can be a self-contained showcase. (3) Template approach — create a project template repo with your standard setup (Docker,.
-CI, linting, testing configs) and use it as a starting point for all projects. This demonstrates software engineering best practices. (4) Recommendation — use multi-repo for.
-significant projects (each with 500+ commits) and a monorepo for smaller utilities and experiments. The pinned repos on your profile should link to individual repos for.
+CI, linting, testing configs) and use it as a starting point for all projects. This demonstrates software engineering best practices. (4) Recommendation — use multi-repo for
+significant projects (each with 500+ commits) and a monorepo for smaller utilities and experiments. The pinned repos on your profile should link to individual repos for
 maximum impact.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -762,8 +762,8 @@ maximum impact.</p>
     Q10: How do you measure the impact of your GitHub profile optimization?
   </summary>
   <div class="tp-qa-answer">
-<p>Track these metrics before and after optimization: (1) Profile views — GitHub's traffic analytics shows unique visitors and views over 14 days. Expect 50-200 views/week for.
-an active profile. (2) Follower growth — track followers gained per month after optimization. (3) Repo stars — monitor stars on pinned repos. A good README can increase stars by 2-5—. (4) Contribution graph consistency — percentage of days with commits. Target >70% for.
+<p>Track these metrics before and after optimization: (1) Profile views — GitHub's traffic analytics shows unique visitors and views over 14 days. Expect 50-200 views/week for
+an active profile. (2) Follower growth — track followers gained per month after optimization. (3) Repo stars — monitor stars on pinned repos. A good README can increase stars by 2-5—. (4) Contribution graph consistency — percentage of days with commits. Target >70% for
 a strong signal. (5) Recruiter outreach — track inbound messages mentioning your GitHub. This is the most important metric. (6) Profile README engagement — if you have a visitor.
 counter badge, track daily visitors. (7) Connection requests — from people who mention "saw your GitHub profile." Aim for a 20% increase in profile views and.
 2-3— increase in relevant recruiter messages within 3 months of optimization.</p>

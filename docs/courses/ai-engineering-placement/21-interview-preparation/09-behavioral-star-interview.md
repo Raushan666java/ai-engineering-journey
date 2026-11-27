@@ -634,7 +634,7 @@ I built a feature that needed significant rework because I hadn't thought throug
       <li><strong>Describe how you resolved it</strong>: Data, pilot, compromise, or deferring to their decision</li>
       <li><strong>End with respect</strong>: Even if you disagreed, you supported the final decision (disagree and commit)</li>
     </ol>
-<p><strong>Example</strong>: "My manager wanted to use MongoDB for a new service. I advocated for PostgreSQL because our team knew it well and.
+<p><strong>Example</strong>: "My manager wanted to use MongoDB for a new service. I advocated for PostgreSQL because our team knew it well and
 we needed ACID transactions. We agreed to a 3-day prototype. PostgreSQL was 2x faster for our workloads. My manager agreed to go with PostgreSQL. I respected that he was open to evidence."</p>
     <p>Avoid: "I was right and they were wrong." Show mutual respect and a data-driven resolution.</p>
   </div>

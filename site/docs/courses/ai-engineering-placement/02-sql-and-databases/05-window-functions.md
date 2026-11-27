@@ -538,7 +538,7 @@ ORDER BY. Examples: ROW_NUMBER, RANK, SUM() OVER().</p></div><button class="tp-q
 </details>
 <details class="tp-qa-card" data-qid="sql-s05-q2">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q2: ROW_NUMBER vs RANK vs DENSE_RANK?</summary>
-<div class="tp-qa-answer"><p>ROW_NUMBER assigns a unique sequential number within each partition (ties broken arbitrarily). RANK assigns the same number to ties, then skips the next numbers. DENSE_RANK assigns the same number to ties without skipping. Example for.
+<div class="tp-qa-answer"><p>ROW_NUMBER assigns a unique sequential number within each partition (ties broken arbitrarily). RANK assigns the same number to ties, then skips the next numbers. DENSE_RANK assigns the same number to ties without skipping. Example for
 values 95, 95, 90: ROW_NUMBER = 1,2,3; RANK = 1,1,3; DENSE_RANK = 1,1,2.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s05-q3">
@@ -548,12 +548,12 @@ values 95, 95, 90: ROW_NUMBER = 1,2,3; RANK = 1,1,3; DENSE_RANK = 1,1,2.</p></di
 </details>
 <details class="tp-qa-card" data-qid="sql-s05-q4">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q4: LAG vs LEAD?</summary>
-<div class="tp-qa-answer"><p>LAG accesses a row before the current row (offset positive = previous). LEAD accesses a row after the current row (offset positive = next). Both take an offset parameter (default 1) and.
+<div class="tp-qa-answer"><p>LAG accesses a row before the current row (offset positive = previous). LEAD accesses a row after the current row (offset positive = next). Both take an offset parameter (default 1) and
 an optional default value for when no row exists. Used for period-over-period comparisons.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s05-q5">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q5: ROWS vs RANGE vs GROUPS?</summary>
-<div class="tp-qa-answer"><p>ROWS is physical: it counts actual rows. RANGE is logical: it includes all rows whose ORDER BY value is within the specified range (handles ties by including all peers). GROUPS is similar to RANGE but.
+<div class="tp-qa-answer"><p>ROWS is physical: it counts actual rows. RANGE is logical: it includes all rows whose ORDER BY value is within the specified range (handles ties by including all peers). GROUPS is similar to RANGE but
 counts groups of ties. ROWS is most common; RANGE is used for date/time windows.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s05-q6">

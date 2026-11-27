@@ -13,8 +13,8 @@ description: "After this chapter you will be able to apply SOLID principles to b
 
 ## Learning Objectives
 
-After this chapter you will be able to apply SOLID principles to build extensible ML pipelines, select the right GoF pattern for.
-common AI engineering problems (multiple LLM providers, caching, rate limiting), design clean interfaces that decouple model serving from business logic, distinguish between composition and.
+After this chapter you will be able to apply SOLID principles to build extensible ML pipelines, select the right GoF pattern for
+common AI engineering problems (multiple LLM providers, caching, rate limiting), design clean interfaces that decouple model serving from business logic, distinguish between composition and
 inheritance, and refactor monolithic code into maintainable, testable modules.
 
 ## Introduction

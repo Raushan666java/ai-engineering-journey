@@ -64,7 +64,7 @@ flowchart LR
 
 ## 5.1 Opposite-Direction Pointers
 
-The opposite-direction (or converging) two-pointer technique places one pointer at the start and the other at the end of an array. The pointers move toward each other until they meet. This pattern works best on sorted arrays or.
+The opposite-direction (or converging) two-pointer technique places one pointer at the start and the other at the end of an array. The pointers move toward each other until they meet. This pattern works best on sorted arrays or
 when the problem involves finding a pair of elements that satisfy a condition.
 
 ### Pair Sum in a Sorted Array
@@ -202,7 +202,7 @@ a.next = b; b.next = c; c.next = d; d.next = b  # cycle back to b
 print(has_cycle(a))  # True
 ```
 
-**How it works:** If there is no cycle, the fast pointer reaches the end (null). If there is a cycle, the fast pointer eventually laps the slow pointer and.
+**How it works:** If there is no cycle, the fast pointer reaches the end (null). If there is a cycle, the fast pointer eventually laps the slow pointer and
 they meet. The proof relies on modular arithmetic: after k steps, the distance between them modulo the cycle length shrinks by 1 each step.
 
 ## Overview
@@ -627,7 +627,7 @@ console.log(threeSum([-1, 0, 1, 2, -1, -4]));
 <details class="tp-qa-card">
   <summary><strong>Q1: When should I use two pointers over a hash map?</strong></summary>
 Use two pointers when the array is sorted or can be sorted, and when O(1) space is required. Use a hash map when the array is unsorted and.
-O(n) space is acceptable. Two pointers are more memory-efficient but require ordering. Hash maps work on any input but use extra memory. If the problem asks for.
+O(n) space is acceptable. Two pointers are more memory-efficient but require ordering. Hash maps work on any input but use extra memory. If the problem asks for
 indices (not values), a hash map is preferred on unsorted data since sorting changes indices.
 </details>
 
@@ -654,7 +654,7 @@ meaning a = kc - b. Starting from head (distance 0) and from meeting point, they
 
 <details class="tp-qa-card">
   <summary><strong>Q5: What is the space complexity advantage of two pointers?</strong></summary>
-Two pointers use O(1) extra space — just a few integer variables tracking array indices or node references. This is significantly better than hash-map-based approaches that may use O(n) space. For.
+Two pointers use O(1) extra space — just a few integer variables tracking array indices or node references. This is significantly better than hash-map-based approaches that may use O(n) space. For
 large datasets (millions of elements), the constant memory footprint makes two-pointer solutions more scalable and cache-friendly. Some interviewers explicitly ask for.
 O(1) space, making two pointers the only viable approach.
 </details>
@@ -662,14 +662,14 @@ O(1) space, making two pointers the only viable approach.
 <details class="tp-qa-card">
   <summary><strong>Q6: How do I handle the container with most water problem?</strong></summary>
 Use opposite-direction pointers. Start left = 0, right = n-1. At each step, compute area = min(height[left], height[right]) * (right - left). Track the maximum. Move the pointer pointing to the shorter line inward. Reason: the width always decreases,.
-so the only way to increase area is to find a taller line. Moving the taller pointer inward reduces both width and.
+so the only way to increase area is to find a taller line. Moving the taller pointer inward reduces both width and
 height (or keeps height same), so it can never improve the area. Moving the shorter pointer might find a taller line,.
 potentially increasing area despite narrower width.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q7: Can I use two pointers on an unsorted array?</strong></summary>
-Yes, but only for certain patterns. Same-direction (write-read) works on any array since it only reads forward. Fast-slow works on linked lists regardless of ordering. Opposite-direction typically requires sorted data because the comparison logic depends on knowing whether the sum is too large or.
+Yes, but only for certain patterns. Same-direction (write-read) works on any array since it only reads forward. Fast-slow works on linked lists regardless of ordering. Opposite-direction typically requires sorted data because the comparison logic depends on knowing whether the sum is too large or
 too small. For unsorted arrays, sort first (O(n log n)) then apply two-pointer, or use a hash map instead. Trapping rain water uses opposite-direction on unsorted data,.
 but compares heights, not values against a target.
 </details>
@@ -677,36 +677,36 @@ but compares heights, not values against a target.
 <details class="tp-qa-card">
   <summary><strong>Q8: How is the three-pointer (Dutch flag) technique different?</strong></summary>
 Standard two pointers create two regions (processed left, processed right). Three pointers create three regions: low (0s), mid (1s), high (2s). The mid pointer scans unknown territory. When it sees a 0,.
-it swaps with the low region boundary and advances both low and mid. When it sees a 2, it swaps with the high region boundary and.
+it swaps with the low region boundary and advances both low and mid. When it sees a 2, it swaps with the high region boundary and
 decrements high. When it sees a 1, it just advances. This classifies each element in O(n) with a single pass and.
 O(1) space.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q9: What is the sliding window relationship to two pointers?</strong></summary>
-Sliding window uses two same-direction pointers (left and right) to define a subarray window. As the right pointer expands the window and.
+Sliding window uses two same-direction pointers (left and right) to define a subarray window. As the right pointer expands the window and
 the left pointer contracts it, both advance monotonically. The key difference: in two-pointer problems, each pointer moves in response to a condition comparing values at both positions. In sliding window,.
-pointers respond to a constraint on the window's contents (e.g., sum, character set). Sliding window is a specialization of the same-direction pattern for.
+pointers respond to a constraint on the window's contents (e.g., sum, character set). Sliding window is a specialization of the same-direction pattern for
 contiguous subarray problems.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q10: How do I choose the right two-pointer variant?</strong></summary>
 Answer these questions: (1) Is the data sorted? If yes, consider opposite-direction. (2) Is it an in-place modification? Use same-direction with a write pointer. (3) Is it a linked list? Use fast-slow. (4) Is it a subarray with a constraint?.
-Use sliding window (same-direction). (5) Do you need all pairs / triplets? Sort-first then nested opposite-direction. (6) Do you need O(1) space? Two pointers is often the only option. The decision tree maps cleanly to the problem's constraints and.
+Use sliding window (same-direction). (5) Do you need all pairs / triplets? Sort-first then nested opposite-direction. (6) Do you need O(1) space? Two pointers is often the only option. The decision tree maps cleanly to the problem's constraints and
 data structure.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q11: What edge cases commonly break two-pointer solutions?</strong></summary>
-(1) Empty arrays or single-element arrays — check early. (2) Arrays with all identical elements — duplicate skipping logic fails if not careful. (3) Target sum requiring the same element twice — ensure left != right. (4) Integer overflow for.
-large sums or areas — use 64-bit intermediates. (5) Off-by-one in pointer movement conditions — test with exactly one matching pair. (6) Three-sum where all triplets are valid — skipping duplicates is critical for.
+(1) Empty arrays or single-element arrays — check early. (2) Arrays with all identical elements — duplicate skipping logic fails if not careful. (3) Target sum requiring the same element twice — ensure left != right. (4) Integer overflow for
+large sums or areas — use 64-bit intermediates. (5) Off-by-one in pointer movement conditions — test with exactly one matching pair. (6) Three-sum where all triplets are valid — skipping duplicates is critical for
 performance. (7) Linked lists with odd/even length parity — the fast pointer may be null at different points.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q12: How do I solve trapping rain water optimally?</strong></summary>
-Use the dual-running-maximum approach with opposite-direction pointers. Maintain leftMax and rightMax as you move inward. At each step, process the smaller of height[left] and.
+Use the dual-running-maximum approach with opposite-direction pointers. Maintain leftMax and rightMax as you move inward. At each step, process the smaller of height[left] and
 height[right]. If the current height is less than its side's max, it traps that difference in water. Otherwise, update the max. This works because the water trapped at any position is determined by the lower of the two maximums on either side. The two-pointer approach achieves O(n) time and.
 O(1) space, which is optimal since you must at least scan the entire array.
 </details>

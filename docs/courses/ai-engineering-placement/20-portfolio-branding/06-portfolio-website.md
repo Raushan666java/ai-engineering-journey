@@ -550,7 +550,7 @@ class CustomDomain:
 A personal portfolio website is the central hub of your professional brand. Choose a stack that matches your technical comfort — static site generators like Hugo or.
 Astro work well for most engineers. Showcase projects with clear descriptions, tech stacks, and links to GitHub/demos. Integrate a contact form (Formspree or.
 Web3Forms) and privacy-friendly analytics (Plausible). Optimize for SEO with proper meta tags, structured data, and a sitemap. Deploy on GitHub Pages,.
-Netlify, or Vercel with a custom domain. Your portfolio site is a living document — update it as you build new projects and.
+Netlify, or Vercel with a custom domain. Your portfolio site is a living document — update it as you build new projects and
 skills.
 
 ## Practical Takeaways
@@ -674,7 +674,7 @@ skills.
 Download Resume). (2) Projects — 4-6 project cards with: screenshot/GIF, description (2-3 sentences), tech stack badges, key achievement metric, GitHub link,.
 and live demo link (if applicable). (3) About — longer bio, skills overview (use progress bars or tag clouds), timeline of experience,.
 and downloadable resume. (4) Contact — contact form (Formspree or Web3Forms), social links (GitHub, LinkedIn, Twitter), and email. Optional: (5) Blog — showcase your technical writing. (6) Experience — work history timeline with key achievements. Keep navigation simple — no.
-more than 5 items in the main menu. Each page should have a specific goal and.
+more than 5 items in the main menu. Each page should have a specific goal and
 guide the visitor toward the next action. A well-structured portfolio clearly communicates who you are, what you've built, and how to contact you.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -688,9 +688,9 @@ guide the visitor toward the next action. A well-structured portfolio clearly co
   </summary>
   <div class="tp-qa-answer">
 <p>Effective project card design: (1) Visual — a screenshot, GIF, or diagram of the project in action. Animated GIFs showing the project workflow perform 3— better than static images. (2) Title — clear,.
-descriptive name. (3) Description — 1-2 sentences on what it does and why it matters. Focus on the problem solved, not just the technology used. (4) Tech stack — badges or.
+descriptive name. (3) Description — 1-2 sentences on what it does and why it matters. Focus on the problem solved, not just the technology used. (4) Tech stack — badges or
 tags listing key technologies. Use shields.io for consistent badge styling. (5) Key metric — the single most impressive result: "Reduced API latency by 40%," "Serves 10K+ daily requests," "98% accuracy on benchmark X." (6) Links — GitHub repo + live.
-demo (if deployed). A project without a GitHub link loses credibility. (7) Consistency — all cards should have the same layout and.
+demo (if deployed). A project without a GitHub link loses credibility. (7) Consistency — all cards should have the same layout and
 visual style. Visitors should be able to scan all projects in under 30 seconds. A project card should clearly answer: what is it,.
 what tech does it use, what did it achieve, and where can I see the code?</p>
   </div>
@@ -704,8 +704,8 @@ what tech does it use, what did it achieve, and where can I see the code?</p>
     Q3: How do you choose between Astro, Hugo, Next.js, and Jekyll for your portfolio?
   </summary>
   <div class="tp-qa-answer">
-<p>Framework comparison: (1) Astro — modern, fastest static site generator, supports multiple UI frameworks (React, Vue, Svelte) with "islands" architecture. Best for.
-most engineers: excellent DX, great performance, easy to learn. Ships zero JavaScript by default. (2) Hugo — fastest build times, good for.
+<p>Framework comparison: (1) Astro — modern, fastest static site generator, supports multiple UI frameworks (React, Vue, Svelte) with "islands" architecture. Best for
+most engineers: excellent DX, great performance, easy to learn. Ships zero JavaScript by default. (2) Hugo — fastest build times, good for
 large blogs with hundreds of pages. Go-based templating has a steeper learning curve. (3) Next.js — most flexible, full React framework with SSR,.
 ISR, and API routes. Best if you want dynamic features (blog with CMS, authentication). Overkill for a simple portfolio. (4) Jekyll — native GitHub Pages support,.
 easy setup for beginners. Limited flexibility compared to modern alternatives. (5) Recommendation — Astro for most engineers (fast, modern, great docs),.
@@ -739,9 +739,9 @@ HTTPS, with and without www. The entire setup takes 30 minutes.</p>
     Q5: How do you optimize a portfolio website for Core Web Vitals and SEO?
   </summary>
   <div class="tp-qa-answer">
-<p>Performance optimization: (1) Images — use WebP format, lazy loading (`loading="lazy"` on img tags), responsive sizes with srcset, and optimize screenshot sizes (max 1200px width). (2) CSS/JS — minify and.
-bundle. Use Astro's built-in optimization or tools like esbuild. Inline critical CSS and defer non-critical. (3) Fonts — subset fonts to include only characters you need. Use `font-display: swap` to prevent layout shift. (4) Caching — set Cache-Control headers for.
-static assets (1 year for hashed files). (5) Lighthouse — target scores: Performance >90, Accessibility >95, Best Practices >90, SEO 100. Run Lighthouse CI in your deployment pipeline. SEO essentials: unique title and.
+<p>Performance optimization: (1) Images — use WebP format, lazy loading (`loading="lazy"` on img tags), responsive sizes with srcset, and optimize screenshot sizes (max 1200px width). (2) CSS/JS — minify and
+bundle. Use Astro's built-in optimization or tools like esbuild. Inline critical CSS and defer non-critical. (3) Fonts — subset fonts to include only characters you need. Use `font-display: swap` to prevent layout shift. (4) Caching — set Cache-Control headers for
+static assets (1 year for hashed files). (5) Lighthouse — target scores: Performance >90, Accessibility >95, Best Practices >90, SEO 100. Run Lighthouse CI in your deployment pipeline. SEO essentials: unique title and
 meta description per page, proper heading hierarchy (h1 → h2 → h3), alt text on all images, semantic HTML (article, nav,.
 main), sitemap.xml, robots.txt, and JSON-LD structured data (Person schema). Every page should pass W3C HTML validation.</p>
   </div>
@@ -756,7 +756,7 @@ main), sitemap.xml, robots.txt, and JSON-LD structured data (Person schema). Eve
   </summary>
   <div class="tp-qa-answer">
 <p>Contact form solutions for static sites: (1) Formspree — free for 50 submissions/month. Add `action="https://formspree.io/f/your-id"` to your form. No backend needed. Includes honeypot spam protection. (2) Web3Forms — 250 submissions/month free. Works with any static site. Add `action="https://api.web3forms.com/submit"` with your access key. (3) Netlify Forms — if hosted on Netlify,.
-built-in form handling. Add `netlify` attribute to your form tag. Submissions appear in Netlify dashboard. (4) Getform — supports file uploads and.
+built-in form handling. Add `netlify` attribute to your form tag. Submissions appear in Netlify dashboard. (4) Getform — supports file uploads and
 email notifications. (5) Custom backend — if you want full control, create a simple serverless function (Vercel Serverless, Cloudflare Workers, AWS Lambda) that sends emails via SendGrid or.
 Resend. Implementation steps: name and email fields, message textarea, submit button with loading state, success/error messages, and CAPTCHA (hCaptcha or Turnstile) to prevent spam. Always test the full flow before going live.</p>
   </div>
@@ -774,7 +774,7 @@ Resend. Implementation steps: name and email fields, message textarea, submit bu
 bounce rate, traffic sources, top pages, countries, devices. (2) Umami — open source, self-hosted (one Docker command), 100% data ownership. (3) Google Analytics — free,.
 most powerful, but slows down page load (15KB+ script), requires cookie banner for GDPR compliance. Not recommended for simple portfolios. (4) Simple Analytics — even simpler than Plausible,.
 EU-hosted. Key metrics to track: total visitors, which projects get the most views, traffic sources (are recruiters finding you through LinkedIn,.
-GitHub, or Google?), and pages per session (are visitors exploring multiple projects?). Review analytics monthly. A portfolio with 50-200 unique visitors per month is healthy for.
+GitHub, or Google?), and pages per session (are visitors exploring multiple projects?). Review analytics monthly. A portfolio with 50-200 unique visitors per month is healthy for
 an early-career engineer. Use insights to improve underperforming project pages (better screenshots, clearer descriptions).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -804,11 +804,11 @@ SEO. (7) Consistency — aim for 1-2 posts per month. Batch write draft content 
     Q9: How do you measure the effectiveness of your portfolio website?
   </summary>
   <div class="tp-qa-answer">
-<p>Portfolio effectiveness metrics: (1) Bounce rate — percentage of visitors who leave without navigating to another page. Target <60%. High bounce rate suggests unclear navigation or.
-slow loading. (2) Project page views — which projects get the most interest? This tells you what resonates with your audience. (3) Click-through rate on links — do visitors click GitHub or.
+<p>Portfolio effectiveness metrics: (1) Bounce rate — percentage of visitors who leave without navigating to another page. Target <60%. High bounce rate suggests unclear navigation or
+slow loading. (2) Project page views — which projects get the most interest? This tells you what resonates with your audience. (3) Click-through rate on links — do visitors click GitHub or
 live demo links? If not, improve project card descriptions or add more visible buttons. (4) Contact form submissions — your most important conversion metric. Track form completions per month. (5) Resume downloads — if you offer a downloadable resume,.
-track how many times it's accessed. (6) LinkedIn and GitHub referral traffic — check analytics to see if your portfolio is driving traffic to your other professional profiles. (7) Time on page — are visitors actually reading your content or.
-quickly leaving? Average >60 seconds on project pages is good. (8) Qualitative — do recruiters mention your portfolio in interviews or.
+track how many times it's accessed. (6) LinkedIn and GitHub referral traffic — check analytics to see if your portfolio is driving traffic to your other professional profiles. (7) Time on page — are visitors actually reading your content or
+quickly leaving? Average >60 seconds on project pages is good. (8) Qualitative — do recruiters mention your portfolio in interviews or
 messages? Set monthly goals: increase unique visitors by 20%, achieve 2+ contact form submissions per month, and maintain >90 Lighthouse performance score.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -824,8 +824,8 @@ messages? Set monthly goals: increase unique visitors by 20%, achieve 2+ contact
 <p>Low-maintenance portfolio strategy: (1) Automate updates — use GitHub Actions to: refresh project README stats daily, pull latest blog posts from your RSS feed,.
 update Wakatime coding stats weekly. (2) Quarterly review — calendar reminder every 3 months to: add new projects, archive outdated ones,.
 update skills and tech stack, verify all external links work, check analytics for trends. (3) Template approach — store project data in a JSON/YAML file that the site reads at build time. Add a new project by adding one entry to the data file,.
-not by creating HTML. (4) SEO maintenance — keep SSL certificate auto-renewing, update sitemap on new content, check Google Search Console monthly for.
-crawl errors. (5) Dependency updates — use Dependabot or Renovate to auto-update framework and plugin dependencies. (6) Broken link checker — run a monthly GitHub Action that checks all external links and.
+not by creating HTML. (4) SEO maintenance — keep SSL certificate auto-renewing, update sitemap on new content, check Google Search Console monthly for
+crawl errors. (5) Dependency updates — use Dependabot or Renovate to auto-update framework and plugin dependencies. (6) Broken link checker — run a monthly GitHub Action that checks all external links and
 reports broken ones. (7) The goal is a site that requires less than 1 hour per month of maintenance while staying current. An outdated portfolio (last project from 2 years ago) is worse than no portfolio — it signals stagnation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

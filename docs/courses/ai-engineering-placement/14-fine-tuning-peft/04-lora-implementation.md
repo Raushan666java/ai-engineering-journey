@@ -520,9 +520,9 @@ print(f"Inference optimizer ready")
 
 ## Summary
 
-Implementing LoRA with the PEFT library requires configuring LoraConfig with rank (r=8), alpha (lora_alpha=16), target modules (typically q_proj and v_proj), and.
+Implementing LoRA with the PEFT library requires configuring LoraConfig with rank (r=8), alpha (lora_alpha=16), target modules (typically q_proj and v_proj), and
 dropout (0.05-0.1). The `get_peft_model` function wraps the base model, freezing all original weights and injecting trainable LoRA layers. Target module selection impacts expressiveness: q_proj+v_proj (most common),.
-adding k_proj+o_proj (knowledge tasks), or including FFN modules (full adaptation). Adapter management supports saving/loading adapter weights independently — enabling a single base model to host multiple task-specific adapters. For.
+adding k_proj+o_proj (knowledge tasks), or including FFN modules (full adaptation). Adapter management supports saving/loading adapter weights independently — enabling a single base model to host multiple task-specific adapters. For
 deployment, merging LoRA weights into the base model (W = W₀ + BA·α/r) eliminates any inference overhead. A merged model has the same latency as the original model while incorporating task-specific adaptations.
 
 ## Practical Takeaways
@@ -546,7 +546,7 @@ deployment, merging LoRA weights into the base model (W = W₀ + BA·α/r) elimi
 <p>Implementing LoRA with the PEFT library involves: (1) load the base model from HuggingFace — <code>AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.bfloat16, device_map="auto")</code>; (2) create a LoRA configuration (<code>LoraConfig</code>) specifying: r (rank,.
 e.g., 8), lora_alpha (scaling, e.g., 16), target_modules (which layers to apply LoRA to, e.g., ["q_proj", "v_proj"]), lora_dropout (dropout probability, e.g., 0.05),.
 bias="none", task_type="CAUSAL_LM"; (3) wrap the model: <code>model = get_peft_model(model, lora_config)</code> — this replaces the target modules with LoRA layers and freezes all base model parameters;.
-(4) verify trainable parameters: <code>model.print_trainable_parameters()</code> shows the count and percentage of trainable parameters; (5) train using the standard HuggingFace Trainer or.
+(4) verify trainable parameters: <code>model.print_trainable_parameters()</code> shows the count and percentage of trainable parameters; (5) train using the standard HuggingFace Trainer or
 custom training loop — only LoRA parameters have gradients; (6) save: <code>model.save_pretrained("lora-adapter")</code> saves only the small adapter weights (usually 5-50MB). The PEFT library handles all the complexity of freezing base weights,.
 inserting LoRA layers, and ensuring gradients only flow through adapter parameters.</p>
   </div>
@@ -560,10 +560,10 @@ inserting LoRA layers, and ensuring gradients only flow through adapter paramete
     Q2: How do you select and configure target modules for LoRA?
   </summary>
   <div class="tp-qa-answer">
-<p>Target modules specify which layers in the model get LoRA adapters. To find available module names in a HuggingFace model: (1) <code>model.named_modules()</code> lists all modules — look for.
+<p>Target modules specify which layers in the model get LoRA adapters. To find available module names in a HuggingFace model: (1) <code>model.named_modules()</code> lists all modules — look for
 attention projection layers (q_proj, k_proj, v_proj, o_proj), feed-forward layers (gate_proj, up_proj, down_proj), and linear layers; (2) common patterns — Llama models use "q_proj",.
-"k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj". Mistral uses the same names. GPT-2 uses "c_attn", "c_proj"; (3) module name patterns can be specified as regex via <code>target_modules</code> — `r".*\.(q_proj|v_proj)$"` targets only query and.
-value projections. Selection guidelines: (1) always include v_proj (value projection) — it captures the most task-specific information; (2) include q_proj for.
+"k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj". Mistral uses the same names. GPT-2 uses "c_attn", "c_proj"; (3) module name patterns can be specified as regex via <code>target_modules</code> — `r".*\.(q_proj|v_proj)$"` targets only query and
+value projections. Selection guidelines: (1) always include v_proj (value projection) — it captures the most task-specific information; (2) include q_proj for
 tasks requiring modified attention patterns; (3) include o_proj for output quality improvement; (4) include feed-forward layers for knowledge-intensive tasks. Most implementations default to ["q_proj",.
 "v_proj"] as the starting point and add more modules if the task requires more capacity.</p>
   </div>
@@ -596,8 +596,8 @@ TensorFlow/JAX models, similar layer wrapping is needed.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>Merging LoRA weights into the base model eliminates the separate LoRA computation during inference. Process: (1) load the base model — <code>AutoModelForCausalLM.from_pretrained(model_id)</code>;.
-(2) load the LoRA adapter — <code>PeftModel.from_pretrained(base_model, "lora-adapter-path")</code>; (3) merge — <code>merged_model = peft_model.merge_and_unload()</code> — this adds the LoRA weights into the base model's weight matrices and.
-removes the LoRA layers, returning a standard model with updated weights; (4) save the merged model — <code>merged_model.save_pretrained("merged-model")</code> creates a standard model directory with the same architecture as the base but.
+(2) load the LoRA adapter — <code>PeftModel.from_pretrained(base_model, "lora-adapter-path")</code>; (3) merge — <code>merged_model = peft_model.merge_and_unload()</code> — this adds the LoRA weights into the base model's weight matrices and
+removes the LoRA layers, returning a standard model with updated weights; (4) save the merged model — <code>merged_model.save_pretrained("merged-model")</code> creates a standard model directory with the same architecture as the base but
 with fine-tuned weights. Benefits of merging: eliminates LoRA inference overhead (faster, uses less memory), the merged model uses standard inference pipeline (no PEFT dependency at inference time),.
 and the model size returns to the original size (no additional adapter storage). The merged model is identical in architecture to the original base model,.
 making it compatible with any standard inference framework (vLLM, TGI, ONNX). The unmerge operation restores the LoRA adapter state from the base model if you need to switch between different adapters.</p>
@@ -613,11 +613,11 @@ making it compatible with any standard inference framework (vLLM, TGI, ONNX). Th
   </summary>
   <div class="tp-qa-answer">
 <p>Multiple LoRA adapters enable a single base model to serve multiple fine-tuned configurations. Implementation: (1) train multiple LoRA adapters from the same base model,.
-each for a different task or domain; (2) save each adapter separately (each is 5-50MB); (3) at inference time, load the base model once and.
-dynamically switch adapters via the PEFT library: <code>PeftModel.from_pretrained(base_model, "adapterA")</code> for task A, <code>peft_model.load_adapter("adapterB", adapter_name="b")</code> for task B, <code>peft_model.set_adapter("b")</code> to switch; (4) for.
+each for a different task or domain; (2) save each adapter separately (each is 5-50MB); (3) at inference time, load the base model once and
+dynamically switch adapters via the PEFT library: <code>PeftModel.from_pretrained(base_model, "adapterA")</code> for task A, <code>peft_model.load_adapter("adapterB", adapter_name="b")</code> for task B, <code>peft_model.set_adapter("b")</code> to switch; (4) for
 merged inference, unmerge the current adapter, load the new one, and merge. This is memory-efficient: a single 7B base model (~14GB in fp16) with 10 adapters uses ~14GB + 10—50MB ≈ 14.5GB total,.
 vs. 140GB for 10 fully fine-tuned models. Adapter routing — decide which adapter to use based on the input task. Routing can be: rule-based (keyword matching),.
-classifier-based (a small model predicts the task), or embedding-based (similarity search in task embedding space). This pattern is widely used for.
+classifier-based (a small model predicts the task), or embedding-based (similarity search in task embedding space). This pattern is widely used for
 multi-tenant SaaS applications where different customers need different model behaviors.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -649,8 +649,8 @@ loss curves in the console output or WandB/TensorBoard integration.</p>
 <p>LoRA dropout randomly zeros out elements of the LoRA output during training, acting as a regularizer. Implementation: (1) dropout is applied to the output of the LoRA matrix A (before matrix B) — specifically,.
 after computing A(x), dropout is applied; (2) the dropout probability is set in <code>LoraConfig(lora_dropout=0.05)</code> — common values are 0.0 (no dropout),.
 0.05 (light regularization), 0.1 (strong regularization); (3) during inference, dropout is automatically disabled (PyTorch eval mode). When to use: (1) use dropout when the dataset is small (<1000 examples) to prevent overfitting;.
-(2) use dropout with higher rank (r=32+) where there are more parameters to regularize; (3) no dropout needed for large datasets (>5000 examples) or.
-low rank (r<8). The tradeoff: dropout adds regularization (reduces overfitting) but slows convergence (needs more training steps). The default lora_dropout=0.05 works well for.
+(2) use dropout with higher rank (r=32+) where there are more parameters to regularize; (3) no dropout needed for large datasets (>5000 examples) or
+low rank (r<8). The tradeoff: dropout adds regularization (reduces overfitting) but slows convergence (needs more training steps). The default lora_dropout=0.05 works well for
 most cases. Dropout is applied per training step, so the randomness encourages the adapter to learn robust features that work even when some activation paths are disabled.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -664,7 +664,7 @@ most cases. Dropout is applied per training step, so the randomness encourages t
   </summary>
   <div class="tp-qa-answer">
 <p>Verifying LoRA application: (1) Check trainable parameters — <code>model.print_trainable_parameters()</code> shows the number and percentage of trainable parameters. For a 7B model with r=8 on Q+V,.
-expect ~4M trainable parameters (0.06% of total). If it shows billions of trainable parameters, the base model wasn't frozen correctly; (2) Inspect parameter names — <code>for.
+expect ~4M trainable parameters (0.06% of total). If it shows billions of trainable parameters, the base model wasn't frozen correctly; (2) Inspect parameter names — <code>for
 name, param in model.named_parameters(): if param.requires_grad: print(name)</code> — LoRA parameters have names like "base_model.model.model.layers.0.self_attn.q_proj.lora_A.weight" and "lora_B.weight". Only these should have requires_grad=True;.
 (3) Verify base model frozen — <code>for name, param in model.named_parameters(): if "lora" not in name and param.requires_grad: print(f"UNEXPECTED: {name}")</code> — should print nothing;.
 (4) Forward pass test — run the model on a test input before and after training; output should change (trained adapter should modify behavior);.
@@ -681,11 +681,11 @@ the merge happened or the base model wasn't properly frozen.</p>
     Q9: How do you convert between LoRA adapter formats?
   </summary>
   <div class="tp-qa-answer">
-<p>LoRA adapter formats vary across frameworks. Standard HuggingFace PEFT format saves adapter_config.json (configuration) and adapter_model.safetensors (weights). Conversion scenarios: (1) PEFT to Unsloth — Unsloth uses an optimized LoRA format for.
-faster training. Convert by loading with Unsloth's <code>FastLanguageModel.from_pretrained</code> with the PEFT adapter; (2) PEFT to Axolotl — Axolotl uses its own YAML config format with adapter paths. Either point Axolotl to the PEFT adapter directory or.
-convert using Axolotl's conversion script; (3) PEFT to Diffusers (for SD models) — LoRA for diffusion models uses a different PEFT format but.
-the same underlying technique. Use <code>peft_to_diffusers</code> conversion; (4) Custom format — manually extract <code>state_dict</code> keys starting with "lora_" and save as a PyTorch checkpoint: <code>torch.save({k: v for.
-k, v in model.state_dict().items() if "lora_" in k}, "custom_lora.pt")</code>. Most frameworks support the standard HuggingFace PEFT format, making cross-framework adapter sharing straightforward. The key files are adapter_config.json (metadata) and.
+<p>LoRA adapter formats vary across frameworks. Standard HuggingFace PEFT format saves adapter_config.json (configuration) and adapter_model.safetensors (weights). Conversion scenarios: (1) PEFT to Unsloth — Unsloth uses an optimized LoRA format for
+faster training. Convert by loading with Unsloth's <code>FastLanguageModel.from_pretrained</code> with the PEFT adapter; (2) PEFT to Axolotl — Axolotl uses its own YAML config format with adapter paths. Either point Axolotl to the PEFT adapter directory or
+convert using Axolotl's conversion script; (3) PEFT to Diffusers (for SD models) — LoRA for diffusion models uses a different PEFT format but
+the same underlying technique. Use <code>peft_to_diffusers</code> conversion; (4) Custom format — manually extract <code>state_dict</code> keys starting with "lora_" and save as a PyTorch checkpoint: <code>torch.save({k: v for
+k, v in model.state_dict().items() if "lora_" in k}, "custom_lora.pt")</code>. Most frameworks support the standard HuggingFace PEFT format, making cross-framework adapter sharing straightforward. The key files are adapter_config.json (metadata) and
 adapter_model.safetensors (weights). Validate converted adapters with a forward pass test.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

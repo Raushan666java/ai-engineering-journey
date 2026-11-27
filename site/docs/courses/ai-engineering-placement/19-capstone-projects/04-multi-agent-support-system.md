@@ -751,7 +751,7 @@ class SupportAnalytics:
 
 ## Summary
 
-The Multi-Agent Support System implements a production-grade customer service architecture. A router agent classifies user intent and dispatches to specialized agents for.
+The Multi-Agent Support System implements a production-grade customer service architecture. A router agent classifies user intent and dispatches to specialized agents for
 orders, refunds, FAQs, and technical support. Each agent has access to domain-specific tools for actions like order lookup and refund processing. Shared conversation memory enables context retention across agent handoffs. Intelligent escalation triggers human agent involvement based on confidence,.
 sentiment, and business rules. Analytics track resolution rates, CSAT scores, and agent performance, enabling continuous improvement.
 
@@ -774,9 +774,9 @@ sentiment, and business rules. Analytics track resolution rates, CSAT scores, an
     Q1: How do you design a router agent that classifies user intent accurately?
   </summary>
   <div class="tp-qa-answer">
-<p>The router agent is the entry point that classifies user intent and dispatches to specialized agents. Design approaches: (1) LLM-based classification — prompt the LLM with possible intents and.
+<p>The router agent is the entry point that classifies user intent and dispatches to specialized agents. Design approaches: (1) LLM-based classification — prompt the LLM with possible intents and
 examples: "Classify the user's intent into one of: order_status, refund_request, faq, technical_support, or out_of_scope. User message: {message}". (2) Few-shot examples — include 2-3 examples per intent in the prompt. (3) Confidence threshold — if the LLM's confidence is below 0.7,.
-ask a clarifying question rather than routing incorrectly. (4) Fallback — if routing fails after 2 attempts, route to a generalist agent or.
+ask a clarifying question rather than routing incorrectly. (4) Fallback — if routing fails after 2 attempts, route to a generalist agent or
 human. (5) Performance monitoring — track routing accuracy (did the specialist agent successfully handle the request?) and update the prompt when misrouting patterns emerge. A well-tuned router achieves 90-95% accuracy on known intents.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -792,7 +792,7 @@ human. (5) Performance monitoring — track routing accuracy (did the specialist
 <p>Specialized agents handle specific domains with dedicated tools and knowledge. Each agent has: (1) Domain-specific system prompt — "You are an order support agent. You can look up orders,.
 check shipping status, and process cancellations. Always confirm the order ID before making changes." (2) Tool registry — a set of functions the agent can call: `lookupOrder(orderId)`,.
 `checkShippingStatus(orderId)`, `cancelOrder(orderId)`, each defined with parameters, return types, and descriptions for the LLM to understand when to use them. (3) Tool call format — the LLM responds with a special token indicating a tool call,.
-the system executes the tool, and the result is fed back to the LLM. (4) Access control — tools are registered only for.
+the system executes the tool, and the result is fed back to the LLM. (4) Access control — tools are registered only for
 agents that should use them (refund tools only available to RefundAgent). (5) Error handling — if a tool fails, the agent should explain the error.
 to the user and suggest alternatives.</p>
   </div>
@@ -807,8 +807,8 @@ to the user and suggest alternatives.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>Context preservation during handoffs: (1) Shared context object — an `AgentContext` that follows the conversation through all agents, containing `{user_id, collected_data: {order_id: "12345",.
-reason: "wrong size"}, conversation_history: [...], current_agent: "order_agent"}`. (2) Summary generation — when handing off, the current agent generates a concise summary: "User requested order cancellation for.
-order 12345. Refund amount \$49.99. Transferring to refund agent." (3) Context is passed to the next agent's system prompt — the next agent sees the full context and.
+reason: "wrong size"}, conversation_history: [...], current_agent: "order_agent"}`. (2) Summary generation — when handing off, the current agent generates a concise summary: "User requested order cancellation for
+order 12345. Refund amount \$49.99. Transferring to refund agent." (3) Context is passed to the next agent's system prompt — the next agent sees the full context and
 can continue without asking for information again. (4) History truncation — for long conversations, summarize early parts and keep only the last 5-10 turns verbatim. (5) Redis persistence — store context in Redis with the session ID as key,.
 allowing recovery if an agent instance crashes during handoff.</p>
   </div>
@@ -839,9 +839,9 @@ and suggested next action. Target: 80%+ containment rate (resolved without human
     Q5: How do you handle out-of-scope questions that no agent can answer?
   </summary>
   <div class="tp-qa-answer">
-<p>Out-of-scope handling strategy: (1) Graceful decline — "I specialize in order support. I can help with orders, shipping, and returns. Let me transfer you to someone who can help with that." (2) Escalation — route to human agent with the.
+<p>Out-of-scope handling strategy: (1) Graceful decline — "I specialize in order support. I can help with orders, shipping, and returns. Let me transfer you to someone who can help with that." (2) Escalation — route to human agent with the
 out-of-scope question noted. (3) Knowledge base expansion logging — log out-of-scope questions to identify gaps. If the same topic appears frequently,.
-consider adding a new specialized agent. (4) LLM general knowledge — for harmless out-of-scope questions (e.g., "What's the weather?"), the agent can use the LLM's general knowledge but.
+consider adding a new specialized agent. (4) LLM general knowledge — for harmless out-of-scope questions (e.g., "What's the weather?"), the agent can use the LLM's general knowledge but
 clearly label the response: "Based on my general knowledge... for accurate support on this topic, please contact our team." (5) Never fabricate policies — if the user asks about a policy the agent doesn't know,.
 never make up an answer. Always defer to documentation or human agents. Policy hallucination is a compliance risk.</p>
   </div>
@@ -855,11 +855,11 @@ never make up an answer. Always defer to documentation or human agents. Policy h
     Q6: How do you test multi-agent systems before production deployment?
   </summary>
   <div class="tp-qa-answer">
-<p>Testing strategy: (1) Unit tests — test each agent's intent classification and response generation with predefined inputs. Mock the LLM and.
-tool calls. (2) Integration tests — test the routing logic with all agents and tools connected. Verify correct agent selection for.
+<p>Testing strategy: (1) Unit tests — test each agent's intent classification and response generation with predefined inputs. Mock the LLM and
+tool calls. (2) Integration tests — test the routing logic with all agents and tools connected. Verify correct agent selection for
 each intent. (3) Scenario tests — create full conversation scripts (20-50 scenarios) covering: happy path, edge cases (ambiguous input, missing information),.
-escalations, error recoveries, and multi-turn flows. (4) Regression test suite — maintain a set of 50+ test conversations that must all pass before deployment. Automate in CI. (5) A/B testing in production — deploy new agent versions to 5% of traffic and.
-compare resolution rate, CSAT, and average turns. (6) Human evaluation — manually review 5-10% of conversations for response quality, safety, and.
+escalations, error recoveries, and multi-turn flows. (4) Regression test suite — maintain a set of 50+ test conversations that must all pass before deployment. Automate in CI. (5) A/B testing in production — deploy new agent versions to 5% of traffic and
+compare resolution rate, CSAT, and average turns. (6) Human evaluation — manually review 5-10% of conversations for response quality, safety, and
 appropriateness. (7) Performance testing — simulate 100+ concurrent conversations to verify latency and throughput targets.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -875,7 +875,7 @@ appropriateness. (7) Performance testing — simulate 100+ concurrent conversati
 <p>LLM-backend integration via tool-calling: (1) Define tools as typed functions: `async function lookupOrder(orderId: string): Promise<Order>` with description, parameters schema, and return type. (2) Register tools with the agent: each agent has a `ToolRegistry` containing the tools it can use. (3).
 The LLM decides which tool to call based on user intent — it outputs a structured tool call: `{tool: "lookupOrder",.
 params: {orderId: "12345"}}`. (4) The system executes the tool, catches errors, and feeds the result back to the LLM. (5) Authentication — pass the user's auth token through the agent context;.
-tools verify authorization before executing. (6) Rate limiting — throttle tool calls to backend systems to prevent overload (max 5 tool calls per conversation turn). (7) Idempotency — critical for.
+tools verify authorization before executing. (6) Rate limiting — throttle tool calls to backend systems to prevent overload (max 5 tool calls per conversation turn). (7) Idempotency — critical for
 mutation tools (refund, cancel): include an idempotency key to prevent duplicate processing. (8) Error handling — if the backend is down,.
 return a graceful error and offer alternatives.</p>
   </div>
@@ -892,8 +892,8 @@ return a graceful error and offer alternatives.</p>
 <p>Analytics implementation: (1) Event logging — log every significant event: intent classification, agent dispatch, tool calls, handoffs, escalations, CSAT ratings. Include timestamps,.
 agent name, and latency. (2) Real-time dashboards — Grafana dashboards showing: resolution rate over time (target >80%), average turns per conversation,.
 average handle time, agent usage distribution (which agent handles the most conversations), escalation rate, CSAT trend. (3) Per-agent metrics — track each agent's resolution rate,.
-average confidence, average turns, and common failure modes. (4) Conversation replay — store full conversation logs with a replay tool for.
-debugging and quality analysis. (5) A/B test analysis — compare metrics between agent versions to determine statistical significance of improvements. (6) Alerting — alert when resolution rate drops below 70% or.
+average confidence, average turns, and common failure modes. (4) Conversation replay — store full conversation logs with a replay tool for
+debugging and quality analysis. (5) A/B test analysis — compare metrics between agent versions to determine statistical significance of improvements. (6) Alerting — alert when resolution rate drops below 70% or
 average CSAT drops below 4.0. (7) Weekly reports — auto-generated summary of trends, top issues, and improvement recommendations.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -940,7 +940,7 @@ class ToolRegistry {
 }</code></pre>
 <p>The ToolRegistry centralizes tool management for agents. Each tool defines: name (unique identifier), description (for LLM to decide when to call it),.
 parameters (JSON Schema for validation), and execute function. The registry provides: (1) Tool definitions for LLM system prompts in JSON format. (2) Centralized execution with error.
-handling, logging, and rate limiting. (3) Authorization checks before tool execution. (4) Metrics collection (call count, latency, error rate per tool). (5) Idempotency support for.
+handling, logging, and rate limiting. (3) Authorization checks before tool execution. (4) Metrics collection (call count, latency, error rate per tool). (5) Idempotency support for
 mutation tools. Each agent has its own registry instance with only the tools it needs, preventing an order agent from accidentally calling refund tools. Tools can call external APIs,.
 databases, or even other agents in a controlled manner.</p>
   </div>

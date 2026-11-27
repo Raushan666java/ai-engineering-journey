@@ -736,9 +736,9 @@ print(f"Batch results: {[x['tool'] for x in r]}")
 
 ## Summary
 
-Tool use and function calling are fundamental capabilities that enable LLM agents to interact with external systems. OpenAI's function calling API uses JSON Schema for.
+Tool use and function calling are fundamental capabilities that enable LLM agents to interact with external systems. OpenAI's function calling API uses JSON Schema for
 tool definitions, with the model deciding when to call tools and what arguments to pass. Anthropic's tool use follows a similar pattern. Well-designed tool schemas include clear descriptions,.
-proper typing, and validation rules. Tool execution requires argument validation, error handling with retry logic, and recovery strategies. Dynamic tool registries enable automatic discovery and.
+proper typing, and validation rules. Tool execution requires argument validation, error handling with retry logic, and recovery strategies. Dynamic tool registries enable automatic discovery and
 version management. Tool selection can be LLM-driven or rule-based, and multiple tools can be executed in parallel for efficiency.
 
 ## Practical Takeaways
@@ -761,9 +761,9 @@ version management. Tool selection can be LLM-driven or rule-based, and multiple
   </summary>
   <div class="tp-qa-answer">
 <p>OpenAI's function calling API lets you define tools as JSON Schema objects passed in the <code>tools</code> parameter of a chat completion request. Each tool has a name,.
-description, and parameters schema. When the model determines that a tool should be called, it returns a <code>tool_calls</code> response containing the tool name and.
+description, and parameters schema. When the model determines that a tool should be called, it returns a <code>tool_calls</code> response containing the tool name and
 a JSON string of arguments — it does not execute the tool itself. Your code must parse this response, execute the function with the provided arguments,.
-and send the result back as a <code>tool</code> role message. The model then uses the tool result to generate its final response. This pattern supports parallel tool calls (multiple tools in one response) and.
+and send the result back as a <code>tool</code> role message. The model then uses the tool result to generate its final response. This pattern supports parallel tool calls (multiple tools in one response) and
 works with both GPT-4 and GPT-3.5 models. The descriptions and parameter schemas significantly influence how accurately the model selects and populates tools.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -779,7 +779,7 @@ works with both GPT-4 and GPT-3.5 models. The descriptions and parameter schemas
 <p>JSON Schema is the standard format used by OpenAI and Anthropic to define tool parameters. A schema declares each parameter's type (string,.
 integer, number, boolean, array, object), description, whether it's required, and constraints like enum values or min/max. For example, a search tool might define <code>query</code> as a required string and.
 <code>limit</code> as an optional integer with minimum 1 and maximum 100. The schema is crucial because: (1) the LLM reads descriptions to understand.
-what each parameter means; (2) type constraints help the LLM generate valid arguments; and (3) your code should validate received arguments against the schema before executing the tool. Well-designed schemas with clear descriptions significantly improve tool call accuracy. Build parameter schemas programmatically using builder classes for.
+what each parameter means; (2) type constraints help the LLM generate valid arguments; and (3) your code should validate received arguments against the schema before executing the tool. Well-designed schemas with clear descriptions significantly improve tool call accuracy. Build parameter schemas programmatically using builder classes for
 type safety and reusability.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -808,11 +808,11 @@ or provide values of the wrong type — you should never trust LLM-generated arg
     Q4: What is a tool registry and why use one?
   </summary>
   <div class="tp-qa-answer">
-<p>A tool registry is a centralized repository that manages tool definitions and their execution. It stores tools by name, provides methods for.
-registration, lookup, and execution, and can organize tools by category. Using a registry provides: (1) a single source of truth for.
-all available tools; (2) consistent schema generation for different LLM providers (OpenAI, Anthropic); (3) automatic discovery of tools from modules or.
-classes; (4) search and filtering by category or keyword; and (5) versioning support for backward-compatible updates. The registry's <code>get_descriptions()</code> method produces the formatted tool list for.
-the LLM prompt. A dynamic registry with auto-discovery reduces maintenance burden when adding new tools — just create the function and.
+<p>A tool registry is a centralized repository that manages tool definitions and their execution. It stores tools by name, provides methods for
+registration, lookup, and execution, and can organize tools by category. Using a registry provides: (1) a single source of truth for
+all available tools; (2) consistent schema generation for different LLM providers (OpenAI, Anthropic); (3) automatic discovery of tools from modules or
+classes; (4) search and filtering by category or keyword; and (5) versioning support for backward-compatible updates. The registry's <code>get_descriptions()</code> method produces the formatted tool list for
+the LLM prompt. A dynamic registry with auto-discovery reduces maintenance burden when adding new tools — just create the function and
 the registry finds it.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -855,9 +855,9 @@ allowing the same tool registry to work with both providers.</p>
     Q7: What is parallel tool execution and when should you use it?
   </summary>
   <div class="tp-qa-answer">
-<p>Parallel tool execution runs multiple independent tool calls simultaneously using a thread pool, reducing total latency from the sum of all tool latencies to the maximum single tool latency. Use it when tools are independent (no tool's output is needed by another) and.
+<p>Parallel tool execution runs multiple independent tool calls simultaneously using a thread pool, reducing total latency from the sum of all tool latencies to the maximum single tool latency. Use it when tools are independent (no tool's output is needed by another) and
 the system has capacity for concurrent execution. For example, searching the web, checking the weather, and looking up a database record can all run in parallel. Implementation uses <code>ThreadPoolExecutor</code> to submit all tool calls at once,.
-then collects results via <code>as_completed()</code> or <code>gather()</code>. Batch execution extends this by grouping tool calls into batches of a configurable size. Parallel execution is most impactful when tools have high latency (>500ms) — for.
+then collects results via <code>as_completed()</code> or <code>gather()</code>. Batch execution extends this by grouping tool calls into batches of a configurable size. Parallel execution is most impactful when tools have high latency (>500ms) — for
 fast tools, the overhead of thread management may outweigh the benefit.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -872,7 +872,7 @@ fast tools, the overhead of thread management may outweigh the benefit.</p>
   <div class="tp-qa-answer">
 <p>Type-safe tool definitions use Python type hints and dataclasses to automatically generate JSON Schema from function signatures. A decorator or base class introspects the function's parameter types using <code>typing.get_type_hints()</code> and.
 <code>inspect.signature()</code>, then maps Python types to JSON Schema types: <code>str → string</code>, <code>int → integer</code>, <code>float → number</code>, <code>bool → boolean</code>,.
-<code>List[str] → array</code>. Parameters without defaults become required fields. The generated schema is cached for performance. This approach eliminates manual schema writing — you just annotate your Python function with types and.
+<code>List[str] → array</code>. Parameters without defaults become required fields. The generated schema is cached for performance. This approach eliminates manual schema writing — you just annotate your Python function with types and
 a docstring, and the schema is derived automatically. Type-safe tools reduce bugs from schema mismatches and make the codebase more maintainable as tool schemas stay in sync with their implementations.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -900,10 +900,10 @@ you might route 10% of traffic to a new tool version (canary) and 90% to the sta
     Q10: How does LLM-based tool selection work?
   </summary>
   <div class="tp-qa-answer">
-<p>LLM-based tool selection uses the language model itself to decide which tools are relevant for a given task. The approach feeds the task description and.
-a list of all available tools (with names and descriptions) to the LLM, asking it to select the top-k most relevant tools. The LLM analyzes the task semantics and.
-matches them to tool descriptions — for example, given "search for AI news and compute statistics", it selects "web_search" and "calculator". This is more flexible than rule-based selection (keyword matching) because it understands context and.
-synonyms. Alternative approaches include rule-based selection (faster, deterministic) and hybrid approaches that combine both. LLM-based selection adds one extra LLM call per task but.
+<p>LLM-based tool selection uses the language model itself to decide which tools are relevant for a given task. The approach feeds the task description and
+a list of all available tools (with names and descriptions) to the LLM, asking it to select the top-k most relevant tools. The LLM analyzes the task semantics and
+matches them to tool descriptions — for example, given "search for AI news and compute statistics", it selects "web_search" and "calculator". This is more flexible than rule-based selection (keyword matching) because it understands context and
+synonyms. Alternative approaches include rule-based selection (faster, deterministic) and hybrid approaches that combine both. LLM-based selection adds one extra LLM call per task but
 enables the agent to dynamically adapt its toolset to each query.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

@@ -714,7 +714,7 @@ you must implement both `__hash__` and `__eq__` consistently (equal objects must
 <details class="tp-qa-card">
   <summary><strong>Q3: How do you handle collisions in a hash map?</summary>
 Two main strategies: (1) Separate chaining — each bucket stores a linked list of entries. Insertions append to the list. Lookups traverse the list. (2) Open addressing — on collision,.
-probe subsequent buckets linearly, quadratically, or via double hashing. Python uses open addressing with pseudo-random probing. Chaining is simpler and tolerant of high load factors. Open addressing is more cache-friendly and.
+probe subsequent buckets linearly, quadratically, or via double hashing. Python uses open addressing with pseudo-random probing. Chaining is simpler and tolerant of high load factors. Open addressing is more cache-friendly and
 uses memory more efficiently at low load factors.
 </details>
 
@@ -727,9 +727,9 @@ every prefix sum could be distinct. This is optimal because subarray problems in
 
 <details class="tp-qa-card">
   <summary><strong>Q5: When would you use a set instead of a list for membership testing?</summary>
-Always prefer a set when you only need to check membership and the collection is large. Set membership is O(1) average while list membership is O(n). For.
+Always prefer a set when you only need to check membership and the collection is large. Set membership is O(1) average while list membership is O(n). For
 small collections (less than ~20 elements), the overhead of hashing may make lists competitive. Use a set when: checking if duplicates exist,.
-computing intersections/unions, or performing many membership tests. Use a list when: order matters, you need indexing by position, or you have very few elements and.
+computing intersections/unions, or performing many membership tests. Use a list when: order matters, you need indexing by position, or you have very few elements and
 no duplicate checking.
 </details>
 
@@ -743,8 +743,8 @@ while the linked list maintains the recency order without shifting elements. Thi
 
 <details class="tp-qa-card">
   <summary><strong>Q7: Explain the group anagrams problem and its optimal solution.</summary>
-Group anagrams categorizes strings by their sorted character order. Two approaches: (1) Sort each string (O(k log k) per string) and.
-use the sorted version as the hash key. (2) Count characters into a 26-element tuple (O(k) per string) for the key. The second approach is optimal when strings can be very long. Both achieve O(n * k) or.
+Group anagrams categorizes strings by their sorted character order. Two approaches: (1) Sort each string (O(k log k) per string) and
+use the sorted version as the hash key. (2) Count characters into a 26-element tuple (O(k) per string) for the key. The second approach is optimal when strings can be very long. Both achieve O(n * k) or
 better. The hash map groups strings with identical keys into lists. Counting sort is faster when the alphabet is fixed (26 lowercase letters),.
 making the total complexity O(n * k + n * 26).
 </details>
@@ -753,7 +753,7 @@ making the total complexity O(n * k + n * 26).
   <summary><strong>Q8: What is the difference between defaultdict and regular dict?</summary>
 `defaultdict` from collections provides a default value for missing keys. When you access a key that doesn't exist, `defaultdict` calls the factory function (e.g.,.
 `int`, `list`, `set`) to create and return a default value. This eliminates boilerplate `if key not in dict` checks. `defaultdict(int)` initializes missing keys to 0,.
-perfect for counting. `defaultdict(list)` initializes to an empty list, ideal for grouping. Regular dict raises a KeyError on missing key access. `defaultdict` is slightly slower for.
+perfect for counting. `defaultdict(list)` initializes to an empty list, ideal for grouping. Regular dict raises a KeyError on missing key access. `defaultdict` is slightly slower for
 existing keys due to the factory function overhead.
 </details>
 
@@ -767,14 +767,14 @@ ensuring each element is visited at most twice (once as a potential start, once 
 <details class="tp-qa-card">
   <summary><strong>Q10: What is the tradeoff between hash maps and balanced BSTs?</summary>
 Hash maps offer O(1) average vs O(log n) for BSTs on basic operations. But BSTs offer: (1) Ordered iteration without sorting. (2) Range queries (find all keys between X and.
-Y) in O(k + log n). (3) Consistent O(log n) worst-case (with tree balancing) vs O(n) worst-case for hash maps under collision. (4) More memory efficient for.
+Y) in O(k + log n). (3) Consistent O(log n) worst-case (with tree balancing) vs O(n) worst-case for hash maps under collision. (4) More memory efficient for
 sparse data. Choose a hash map when you need simple key-value lookups and order doesn't matter. Choose a BST (TreeMap) when you need sorted data,.
 range queries, or predictable performance.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q11: How does Python's Counter work internally?</summary>
-`Counter` is a subclass of `dict` designed for counting hashable objects. It inherits all dict properties (O(1) avg lookup, hash-based keys) and.
+`Counter` is a subclass of `dict` designed for counting hashable objects. It inherits all dict properties (O(1) avg lookup, hash-based keys) and
 adds counting-specific methods: `most_common(n)` returns the n most frequent elements using `heapq.nlargest` on the items; `elements()` returns an iterator over elements repeating each as many times as its count;.
 `subtract()` decrements counts; arithmetic operators (`+`, `-`, `&`, `|`) merge counters. The underlying storage is a regular dict mapping elements to integer counts. `Counter.most_common()` sorts by count internally,.
 so it's O(n log n) for the full result, O(n log m) for the top m.

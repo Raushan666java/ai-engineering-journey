@@ -996,7 +996,7 @@ and the right to an explanation of automated decisions.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>Three primary metrics: (1) Demographic parity — prediction rates are equal across groups, (2) Equal opportunity — true positive rates are equal across groups,.
-(3) Predictive parity — precision is equal across groups. There's a fundamental trade-off (Impossibility Theorem): you cannot simultaneously satisfy all three unless base rates are equal or.
+(3) Predictive parity — precision is equal across groups. There's a fundamental trade-off (Impossibility Theorem): you cannot simultaneously satisfy all three unless base rates are equal or
 predictions are perfect.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1009,8 +1009,8 @@ predictions are perfect.</p>
     Q4: How does SHAP explain model predictions?
   </summary>
   <div class="tp-qa-answer">
-<p>SHAP (SHapley Additive exPlanations) uses cooperative game theory to assign each feature an importance value for a particular prediction. It computes the average marginal contribution of each feature across all possible feature subsets. The sum of SHAP values plus the.
-baseline prediction equals the model's output. This provides both global and.
+<p>SHAP (SHapley Additive exPlanations) uses cooperative game theory to assign each feature an importance value for a particular prediction. It computes the average marginal contribution of each feature across all possible feature subsets. The sum of SHAP values plus the
+baseline prediction equals the model's output. This provides both global and
 local interpretability.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1050,7 +1050,7 @@ CSV) upon request.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>Demographic parity requires P(Y_hat=1 | group A) = P(Y_hat=1 | group B) — equal prediction rates regardless of actual outcomes. Equal opportunity requires P(Y_hat=1 | Y=1,.
-group A) = P(Y_hat=1 | Y=1, group B) — equal true positive rates. Demographic parity can force equal outcomes, while equal opportunity focuses on equal accuracy for.
+group A) = P(Y_hat=1 | Y=1, group B) — equal true positive rates. Demographic parity can force equal outcomes, while equal opportunity focuses on equal accuracy for
 positive cases.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1063,7 +1063,7 @@ positive cases.</p>
     Q8: How do you handle the right to explanation under GDPR?
   </summary>
   <div class="tp-qa-answer">
-<p>Provide meaningful information about the logic behind automated decisions: (1) Feature importance — which features most influenced the decision, (2) Counterfactual explanation — what would need to change for.
+<p>Provide meaningful information about the logic behind automated decisions: (1) Feature importance — which features most influenced the decision, (2) Counterfactual explanation — what would need to change for
 a different outcome, (3) Confidence/uncertainty of the prediction, (4) Model limitations and accuracy metrics, (5) The ability to request human review of the decision.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1076,7 +1076,7 @@ a different outcome, (3) Confidence/uncertainty of the prediction, (4) Model lim
     Q9: What should an AI ethics review board evaluate?
   </summary>
   <div class="tp-qa-answer">
-<p>Review boards evaluate: (1) Fairness — bias assessment across demographics, (2) Transparency — explainability and documentation, (3) Accountability — clear ownership and.
+<p>Review boards evaluate: (1) Fairness — bias assessment across demographics, (2) Transparency — explainability and documentation, (3) Accountability — clear ownership and
 oversight, (4) Privacy — data handling and consent, (5) Safety — robustness and guardrails, (6) Human autonomy — appropriate human oversight,.
 (7) Beneficence — positive social impact, (8) Risk assessment — classification per EU AI Act.</p>
   </div>
@@ -1090,7 +1090,7 @@ oversight, (4) Privacy — data handling and consent, (5) Safety — robustness 
     Q10: How do you implement data anonymization for AI training?
   </summary>
   <div class="tp-qa-answer">
-<p>Techniques: (1) k-anonymity — each record is indistinguishable from at least k-1 others on quasi-identifiers, (2) Differential privacy — add calibrated noise to gradients or.
+<p>Techniques: (1) k-anonymity — each record is indistinguishable from at least k-1 others on quasi-identifiers, (2) Differential privacy — add calibrated noise to gradients or
 outputs (epsilon parameter controls privacy-accuracy trade-off), (3) Generalization — replace exact values with ranges (age 35 → 30-40), (4) Suppression — remove identifying fields entirely,.
 (5) Synthetic data — generate artificial data with similar statistical properties.</p>
   </div>

@@ -888,8 +888,8 @@ print(f"Top users: {allocator.top_users()}")
 
 ## Summary
 
-Production RAG systems require robust architecture with service-oriented design, comprehensive monitoring, fault tolerance, and scale management. Key considerations include: async pipelines for.
-non-blocking query processing, API authentication with JWT and rate limiting, structured logging and metrics collection for observability, circuit breakers and fallback chains for.
+Production RAG systems require robust architecture with service-oriented design, comprehensive monitoring, fault tolerance, and scale management. Key considerations include: async pipelines for
+non-blocking query processing, API authentication with JWT and rate limiting, structured logging and metrics collection for observability, circuit breakers and fallback chains for
 resilience, incremental indexing with scheduled refreshes for data freshness, and multi-layer caching with auto-scaling for cost-effective scaling.
 
 ## Practical Takeaways
@@ -909,22 +909,22 @@ resilience, incremental indexing with scheduled refreshes for data freshness, an
 <summary><strong>1.</strong> How do you decide between synchronous and asynchronous RAG pipelines in production?</summary>
 The choice depends on latency requirements and workload predictability. Synchronous pipelines work well for real-time chat applications where users expect sub-second responses — the request flows directly through retrieval,.
 generation, and response. Asynchronous pipelines suit batch processing jobs like document summarization or report generation where throughput matters more than latency. In practice,.
-production systems often use a hybrid: synchronous for interactive queries with a timeout fallback, and an async queue (e.g., RabbitMQ, Redis Streams) for.
+production systems often use a hybrid: synchronous for interactive queries with a timeout fallback, and an async queue (e.g., RabbitMQ, Redis Streams) for
 heavy or parallel workloads. The async path also simplifies retry logic and backpressure handling when the LLM or vector DB is under load.
 </details>
 
 <details data-qid="rag09-q2">
 <summary><strong>2.</strong> What metrics do you monitor in a production RAG system, and why?</summary>
-Key metrics fall into three categories: retrieval quality, generation quality, and operational health. For retrieval, track recall@k, mean reciprocal rank, and.
+Key metrics fall into three categories: retrieval quality, generation quality, and operational health. For retrieval, track recall@k, mean reciprocal rank, and
 latency p50/p99 of vector searches. For generation, monitor faithfulness (whether the response stays grounded in retrieved context), relevance, and hallucination rate via LLM-as-judge evaluations. On the ops side,.
-track QPS, error rates, memory usage, and embedding cache hit ratios. A sudden drop in recall or a spike in generation latency often signals a data drift or.
+track QPS, error rates, memory usage, and embedding cache hit ratios. A sudden drop in recall or a spike in generation latency often signals a data drift or
 infrastructure issue that needs immediate investigation.
 </details>
 
 <details data-qid="rag09-q3">
 <summary><strong>3.</strong> How do you handle real-time updates to your knowledge base without rebuilding indexes?</summary>
-Most production systems use a two-tier strategy: incremental indexing for new documents and periodic full re-indexing for consistency. When a document is added or.
-updated, the system computes its embedding and upserts it into the vector index (e.g., using the `upsert` endpoint in Pinecone or.
+Most production systems use a two-tier strategy: incremental indexing for new documents and periodic full re-indexing for consistency. When a document is added or
+updated, the system computes its embedding and upserts it into the vector index (e.g., using the `upsert` endpoint in Pinecone or
 the `merge` operation in Qdrant). A metadata field like `last_updated` helps the retriever filter stale documents. For deletions, a tombstone list combined with a nightly compaction job removes orphaned vectors. This approach keeps the index fresh within seconds while avoiding costly full rebuilds.
 </details>
 
@@ -940,16 +940,16 @@ allowing a probe request to test recovery. This pattern is essential for maintai
 <summary><strong>5.</strong> How do you implement caching strategies to reduce latency and cost in RAG?</summary>
 Caching can be applied at multiple layers: embedding cache, retrieved document cache, and LLM response cache. An embedding cache stores computed embeddings keyed by document hash,.
 avoiding redundant API calls to the embedding model. A document cache (e.g., Redis) stores the top-k retrieved chunks keyed by query hash,.
-so identical or near-identical queries skip retrieval entirely. An LLM response cache stores full prompt-response pairs, typically with a TTL and.
-semantic similarity matching (e.g., cosine similarity > 0.95). The most impactful strategy is usually embedding caching because it reduces both latency and.
+so identical or near-identical queries skip retrieval entirely. An LLM response cache stores full prompt-response pairs, typically with a TTL and
+semantic similarity matching (e.g., cosine similarity > 0.95). The most impactful strategy is usually embedding caching because it reduces both latency and
 embedding API costs without affecting generation quality.
 </details>
 
 <details data-qid="rag09-q6">
 <summary><strong>6.</strong> How do you implement canary deployments for a RAG system?</summary>
 A canary deployment routes a small percentage of production traffic (e.g., 5%) to a new model version or retrieval pipeline while the rest uses the stable version. The canary must be evaluated on both quality metrics (faithfulness,.
-relevance via LLM-as-judge) and operational metrics (latency p99, error rate, cost per query). If the canary performs within acceptable thresholds for.
-a observation period (typically 1-24 hours based on traffic volume), traffic is gradually increased to 25%, 50%, then 100%. This approach catches regressions before they affect all users — for.
+relevance via LLM-as-judge) and operational metrics (latency p99, error rate, cost per query). If the canary performs within acceptable thresholds for
+a observation period (typically 1-24 hours based on traffic volume), traffic is gradually increased to 25%, 50%, then 100%. This approach catches regressions before they affect all users — for
 example, a new embedding model that accidentally reduces recall on technical queries would be caught during the 5% phase and rolled back without a full outage.
 </details>
 
@@ -965,29 +965,29 @@ rate limit headroom and alert when usage exceeds 80% of the quota.
 <details data-qid="rag09-q8">
 <summary><strong>8.</strong> How do you ensure data privacy and compliance in production RAG deployments?</summary>
 Data privacy in RAG systems requires controls at every pipeline stage. At ingestion, documents should be classified for sensitivity (PII, confidential,.
-public) and stored with access control labels. The vector index must enforce tenant isolation — either through separate indexes per tenant or.
-through metadata-based filtering that restricts results to the authenticated user's scope. The LLM provider agreement must include a data processing addendum (DPA) that guarantees no training on customer data. For.
-highly sensitive data, deploy a self-hosted LLM (e.g., Llama 3 via vLLM) so documents never leave the VPC. Audit logging should record every retrieval and.
+public) and stored with access control labels. The vector index must enforce tenant isolation — either through separate indexes per tenant or
+through metadata-based filtering that restricts results to the authenticated user's scope. The LLM provider agreement must include a data processing addendum (DPA) that guarantees no training on customer data. For
+highly sensitive data, deploy a self-hosted LLM (e.g., Llama 3 via vLLM) so documents never leave the VPC. Audit logging should record every retrieval and
 generation event for compliance review, and a data retention policy must define how long query logs and cached responses are kept.
 </details>
 
 <details data-qid="rag09-q9">
 <summary><strong>9.</strong> Describe how you would set up CI/CD for a RAG pipeline with continuous evaluation.</summary>
-A RAG CI/CD pipeline integrates both code changes and data changes. On every push, a build step runs unit tests for.
+A RAG CI/CD pipeline integrates both code changes and data changes. On every push, a build step runs unit tests for
 the retriever and generator components, then deploys a preview environment with a snapshot of the evaluation dataset. The pipeline runs a benchmark suite: recall@k against a golden query set,.
 faithfulness scores from an LLM judge, and latency benchmarks. If all quality gates pass (e.g., recall > 0.85, faithfulness > 0.9,.
 p99 latency < 500ms), the changes are promoted to staging. A shadow deployment in production runs the new pipeline in parallel with the old one,.
-comparing outputs without serving them to users. After 24 hours of shadow evaluation, a final human review approves or rejects the rollout. This process catches both code bugs and.
+comparing outputs without serving them to users. After 24 hours of shadow evaluation, a final human review approves or rejects the rollout. This process catches both code bugs and
 data drift before they reach end users.
 </details>
 
 <details data-qid="rag09-q10">
 <summary><strong>10.</strong> What are the most common failure modes in production RAG systems and how do you mitigate them?</summary>
-The most common failures are hallucination from missing context, retrieval of irrelevant chunks, and LLM rejection due to safety filters. For.
-missing context, implement a fallback response like "I don't have enough information to answer that" rather than letting the LLM guess. For.
-irrelevant retrieval, add a relevance threshold filter that discards chunks below a cosine similarity of 0.7, paired with a query rewriting step that reformulates ambiguous queries. For.
-safety filter rejections, log the rejection reason and return a user-friendly message while tracking the trigger patterns to improve the prompt or.
-safety configuration. Additional mitigations include monotonic retries for transient failures, load shedding under high traffic, and automated rollback triggers that activate when any quality metric drops below its baseline for.
+The most common failures are hallucination from missing context, retrieval of irrelevant chunks, and LLM rejection due to safety filters. For
+missing context, implement a fallback response like "I don't have enough information to answer that" rather than letting the LLM guess. For
+irrelevant retrieval, add a relevance threshold filter that discards chunks below a cosine similarity of 0.7, paired with a query rewriting step that reformulates ambiguous queries. For
+safety filter rejections, log the rejection reason and return a user-friendly message while tracking the trigger patterns to improve the prompt or
+safety configuration. Additional mitigations include monotonic retries for transient failures, load shedding under high traffic, and automated rollback triggers that activate when any quality metric drops below its baseline for
 two consecutive evaluation windows.
 </details>
 

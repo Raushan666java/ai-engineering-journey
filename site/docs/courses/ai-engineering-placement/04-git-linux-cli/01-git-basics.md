@@ -478,7 +478,7 @@ git commit -m "chore(deps): upgrade axios to 1.6.0"
     Q1: What is the difference between git reset --soft, --mixed, and --hard?
   </summary>
   <div class="tp-qa-answer">
-<p><strong>--soft</strong> moves HEAD but keeps changes staged. <strong>--mixed</strong> (default) moves HEAD and unstages changes but keeps them in the working directory. <strong>--hard</strong> moves HEAD and.
+<p><strong>--soft</strong> moves HEAD but keeps changes staged. <strong>--mixed</strong> (default) moves HEAD and unstages changes but keeps them in the working directory. <strong>--hard</strong> moves HEAD and
 discards all changes permanently. Use --soft for amending commits, --mixed for reorganizing, and --hard only when you're certain you want to discard changes.</p><pre><code># Soft: keeps changes staged
 git reset --soft HEAD~1
 

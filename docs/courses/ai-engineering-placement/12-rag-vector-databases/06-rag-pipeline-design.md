@@ -879,9 +879,9 @@ and re-query triggering when retrieval scores are low. Production pipelines inco
     Q2: What augmentation strategies (context position) work best for different types of LLMs?
   </summary>
   <div class="tp-qa-answer">
-<p>Prepending context before the question works best for most instruction-tuned LLMs (GPT-4o, Claude, Llama 3) because these models are trained to follow instructions at the start of the prompt. The sandwich strategy (context → question → "remember to use context") reinforces grounding for.
-models that exhibit recency bias. For models with strong instruction-following (GPT-4o), simple prepend with a clear instruction suffices. For smaller or.
-less capable models, use the sandwich strategy with explicit repetition. For code-generation LLMs, append context after the query to match their training data format. The key is to test your specific model — the optimal position can vary by model family and.
+<p>Prepending context before the question works best for most instruction-tuned LLMs (GPT-4o, Claude, Llama 3) because these models are trained to follow instructions at the start of the prompt. The sandwich strategy (context → question → "remember to use context") reinforces grounding for
+models that exhibit recency bias. For models with strong instruction-following (GPT-4o), simple prepend with a clear instruction suffices. For smaller or
+less capable models, use the sandwich strategy with explicit repetition. For code-generation LLMs, append context after the query to match their training data format. The key is to test your specific model — the optimal position can vary by model family and
 task type.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -894,7 +894,7 @@ task type.</p>
     Q3: How do you handle multi-turn conversations in RAG (follow-up questions)?
   </summary>
   <div class="tp-qa-answer">
-<p>Multi-turn RAG requires a ConversationManager that stores query-response history with a conversation_id. For follow-up questions, retrieve from the same knowledge base but.
+<p>Multi-turn RAG requires a ConversationManager that stores query-response history with a conversation_id. For follow-up questions, retrieve from the same knowledge base but
 also inject conversation history into the prompt context. Key design decisions: how much history to include (last N turns or up to M tokens),.
 whether to re-retrieve for each turn, and how to disambiguate pronouns (e.g., "What about its cost?" needs context from the previous turn). Implement a QueryProcessor.
 that rewrites short queries by prepending context from the last user message:</p>
@@ -929,7 +929,7 @@ retrieval for knowledge base improvement.</p>
   <div class="tp-qa-answer">
 <p>Wrap each pipeline stage with timing instrumentation that records duration, success/failure, and output metadata. Use an ObservableRAGPipeline that extends the base pipeline with a PipelineMetrics collector. Track: retrieval latency,.
 augmentation latency, generation latency, number of chunks retrieved, total token count, and error count. Export these metrics via structured logging (JSON lines) to a monitoring system (Datadog,.
-Grafana, CloudWatch). Key dashboards: p50/p95/p99 latency by stage, error rate by stage, chunk count distribution, and daily cost. Set alerts when p95 latency exceeds 2x the baseline or.
+Grafana, CloudWatch). Key dashboards: p50/p95/p99 latency by stage, error rate by stage, chunk count distribution, and daily cost. Set alerts when p95 latency exceeds 2x the baseline or
 error rate exceeds 1%.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -958,7 +958,7 @@ prunes near-duplicates (cosine similarity > 0.9), and stops when the token budge
   </summary>
   <div class="tp-qa-answer">
 <p>Implement a ValidatedGenerator that wraps the base generator with a validation function. Validate that the response is not empty, does not contain obvious hallucinations (claims not in context),.
-and meets length requirements. If validation fails, retry with an augmented prompt that includes the validation error message. Set a maximum retry count (2-3). For.
+and meets length requirements. If validation fails, retry with an augmented prompt that includes the validation error message. Set a maximum retry count (2-3). For
 structure-sensitive tasks (JSON, code), validate the output format and request regeneration if invalid. For example:</p>
     <pre><code>def validate_response(response):
     if len(response) &lt; 10: return False, "Response too short"
@@ -977,7 +977,7 @@ structure-sensitive tasks (JSON, code), validate the output format and request r
   </summary>
   <div class="tp-qa-answer">
 <p>Design an IngestionPipeline with batch processing: load documents in batches (100-1000), chunk them, generate embeddings (batched for efficiency), and insert into the vector.
-store. Track progress with counters for documents, chunks, and errors. Handle failures gracefully — log errors for individual documents but continue processing the batch. For.
+store. Track progress with counters for documents, chunks, and errors. Handle failures gracefully — log errors for individual documents but continue processing the batch. For
 very large corpora (millions of documents), use a distributed processing framework (Apache Spark, Ray) with parallel workers. Implement checkpointing so ingestion can resume from failure. After initial ingestion,.
 support incremental updates — index only new or modified documents since the last sync timestamp.</p>
   </div>
@@ -992,8 +992,8 @@ support incremental updates — index only new or modified documents since the l
   </summary>
   <div class="tp-qa-answer">
 <p>Four common styles: Strict ("Answer ONLY from context. Say you don't know if insufficient.") for factual Q&A where hallucination is unacceptable. Moderate ("Base answer on context,.
-supplement with knowledge if needed.") for customer support where some flexibility helps. Citation ("Cite sources using [1], [2] matching context numbers.") for.
-research and legal where source attribution is required. Creative ("Use context as inspiration, don't contradict it.") for content generation where creativity is valued. Choose strict for.
+supplement with knowledge if needed.") for customer support where some flexibility helps. Citation ("Cite sources using [1], [2] matching context numbers.") for
+research and legal where source attribution is required. Creative ("Use context as inspiration, don't contradict it.") for content generation where creativity is valued. Choose strict for
 high-stakes domains (medical, legal, financial), citation for academic/research use cases, and moderate for general-purpose chatbots where a helpful tone matters more than strict grounding.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

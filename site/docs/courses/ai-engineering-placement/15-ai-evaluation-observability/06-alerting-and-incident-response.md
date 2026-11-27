@@ -709,7 +709,7 @@ print(f"Action item report: {ait.report()}")
 ## Summary
 
 Alerting and incident response for AI systems requires a structured approach: define alert rules with appropriate severity (critical/high/medium/low) and cooldown periods to prevent alert fatigue. Drift alerts detect data distribution shifts (PSI > 0.5),.
-model accuracy degradation (drop > 5%), and concept drift. Performance alerts trigger on P95 latency, error rate, throughput, and cost thresholds. Incident response follows severity-based runbooks with clear escalation paths. Rollback procedures include canary deployments (start with 5% traffic) and.
+model accuracy degradation (drop > 5%), and concept drift. Performance alerts trigger on P95 latency, error rate, throughput, and cost thresholds. Incident response follows severity-based runbooks with clear escalation paths. Rollback procedures include canary deployments (start with 5% traffic) and
 automated rollback when health checks fail. Postmortems create a blameless culture focused on learning — documenting timelines, root causes, action items with owners,.
 and tracking completion rates.
 
@@ -735,7 +735,7 @@ and tracking completion rates.
 <p>Effective alert rules follow the "keep signals high, noise low" principle. Key practices: (1) Use cooldown periods — after an alert fires,.
 wait at least 5 minutes before firing again for the same condition. (2) Require sustained violation — alert only when the condition persists for.
 N consecutive evaluation windows (e.g., P95 > 2s for 5 minutes). (3) Set appropriate severity levels — critical for user-facing issues (error.
-rate > 5%), high for degradation (latency > 1s for 10 min), medium for warnings (cost spike), low for informational. (4) Use relative thresholds — "latency is 3— higher than the same time yesterday" is more robust than absolute thresholds. (5) Regularly review and.
+rate > 5%), high for degradation (latency > 1s for 10 min), medium for warnings (cost spike), low for informational. (4) Use relative thresholds — "latency is 3— higher than the same time yesterday" is more robust than absolute thresholds. (5) Regularly review and
 tune alert rules based on false positive rates; retire rules with >90% false positive rate.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -781,8 +781,8 @@ including names and phone numbers. (6) Post-mitigation steps — document what h
   <div class="tp-qa-answer">
 <p>Automated rollback requires: (1) Health check endpoint — returns model status (healthy/unhealthy) with the last successful prediction time and current error.
 rate. (2) Health check criteria — rollback if error rate > 5% sustained for 2 minutes, or latency P95 > 3s for.
-3 minutes, or prediction drift > 2 standard deviations from baseline. (3) Rollback mechanism — the deployment system (Kubernetes, CI/CD pipeline) automatically reverts to the previous stable version. (4) Traffic drain — stop sending new traffic to the bad deployment and.
-let in-flight requests complete. (5) Notification — alert the on-call engineer that an automatic rollback occurred with the reason and metrics. (6) Post-rollback validation — verify the rollback resolved the issue and.
+3 minutes, or prediction drift > 2 standard deviations from baseline. (3) Rollback mechanism — the deployment system (Kubernetes, CI/CD pipeline) automatically reverts to the previous stable version. (4) Traffic drain — stop sending new traffic to the bad deployment and
+let in-flight requests complete. (5) Notification — alert the on-call engineer that an automatic rollback occurred with the reason and metrics. (6) Post-rollback validation — verify the rollback resolved the issue and
 the system is stable.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -844,7 +844,7 @@ communication channels (SEV1 gets company-wide Slack alert, SEV4 gets a Jira tic
 <p>Concept drift in LLM apps occurs when the relationship between input queries and expected outputs changes. Detection approaches: (1) User behavior.
 drift — monitor changes in query patterns, conversation lengths, and topic distributions. (2) LLM provider drift — models get updated without notice,.
 changing output style and quality. (3) Knowledge drift — the underlying facts change (e.g., a company policy update that makes old answers incorrect). (4) Evaluation score drift — LLM-as-Judge scores trending downward over time. Mitigations: (1) Continuous evaluation — run.
-daily evaluation on production samples against golden dataset. (2) Feedback loop analysis — track user satisfaction trends. (3) Scheduled model comparisons — periodically compare current vs. previous model versions. (4) Knowledge base refresh — keep RAG knowledge bases up to.
+daily evaluation on production samples against golden dataset. (2) Feedback loop analysis — track user satisfaction trends. (3) Scheduled model comparisons — periodically compare current vs. previous model versions. (4) Knowledge base refresh — keep RAG knowledge bases up to
 date.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -857,9 +857,9 @@ date.</p>
     Q9: How do you implement a notification strategy that avoids pager fatigue?
   </summary>
   <div class="tp-qa-answer">
-<p>Pager fatigue prevention: (1) Severity-based routing — critical alerts page the on-call engineer, high alerts go to Slack, medium/low become Jira tickets. (2) Alert deduplication — if multiple alerts fire for.
+<p>Pager fatigue prevention: (1) Severity-based routing — critical alerts page the on-call engineer, high alerts go to Slack, medium/low become Jira tickets. (2) Alert deduplication — if multiple alerts fire for
 the same root cause (e.g., "LLM API error" plus "latency spike"), group them into one notification. (3) On-call schedules — rotating shifts with clear handoff procedures. (4) Escalation policies — primary on-call gets first page,.
-secondary if no response in 10 minutes, manager after 20 minutes. (5) Silent hours — suppress non-critical notifications during nights/weekends, but.
+secondary if no response in 10 minutes, manager after 20 minutes. (5) Silent hours — suppress non-critical notifications during nights/weekends, but
 allow critical ones through. (6) Alert fatigue metrics — track notification volume per person per shift and aim for fewer than 5 pages per shift. (7) Regular review — retire alerts with >90% false positive rate.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

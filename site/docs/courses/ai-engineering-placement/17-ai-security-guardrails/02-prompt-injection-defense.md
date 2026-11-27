@@ -851,7 +851,7 @@ a webpage in RAG, or an email in a summarization tool). Indirect injection is ha
     Q7: What PII should you redact from user input before LLM processing?
   </summary>
   <div class="tp-qa-answer">
-<p>Redact: email addresses, phone numbers, Social Security Numbers, credit card numbers, API keys, database connection strings, passwords, and any data your system isn't authorized to process. Use regex patterns or.
+<p>Redact: email addresses, phone numbers, Social Security Numbers, credit card numbers, API keys, database connection strings, passwords, and any data your system isn't authorized to process. Use regex patterns or
 a PII detection library. Consider whether you need to keep certain PII for the use case (e.g., name for customer support).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

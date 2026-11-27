@@ -845,8 +845,8 @@ traffic switches back to Blue. For ML, this requires both environments to serve 
     Q7: What is the difference between shadow and canary deployment?
   </summary>
   <div class="tp-qa-answer">
-<p>Shadow deployment runs the new model alongside production but returns the production model's output to users. The shadow model's predictions are logged for.
-comparison without affecting user experience. Canary deployment actually serves the new model's predictions to a subset of users. Shadow is safer but.
+<p>Shadow deployment runs the new model alongside production but returns the production model's output to users. The shadow model's predictions are logged for
+comparison without affecting user experience. Canary deployment actually serves the new model's predictions to a subset of users. Shadow is safer but
 gives no real user feedback; canary provides real feedback with controlled risk.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -885,7 +885,7 @@ gives no real user feedback; canary provides real feedback with controlled risk.
   </summary>
   <div class="tp-qa-answer">
 <p>Post-deployment validation should check: (1) Model endpoint responds correctly with healthy latency, (2) Prediction distribution matches expected patterns (no empty/null outputs),.
-(3) Error rate within baseline, (4) Data drift metrics compared to training data, (5) Business metrics (e.g., conversion rate if applicable). Run this for.
+(3) Error rate within baseline, (4) Data drift metrics compared to training data, (5) Business metrics (e.g., conversion rate if applicable). Run this for
 a few minutes before fully promoting.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

@@ -605,8 +605,8 @@ class CompositeIndex<T> {
 
 <details class="tp-qa-card" data-qid="sql-s07-q1">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q1: How does a B-tree index work?</summary>
-<div class="tp-qa-answer"><p>A B-tree is a balanced tree data structure where each page contains sorted key values and pointers to child pages. Root and.
-internal pages guide the search to the correct leaf page, which stores key-to-rowid mappings. Lookup is O(log n) — about 3-5 page reads for.
+<div class="tp-qa-answer"><p>A B-tree is a balanced tree data structure where each page contains sorted key values and pointers to child pages. Root and
+internal pages guide the search to the correct leaf page, which stores key-to-rowid mappings. Lookup is O(log n) — about 3-5 page reads for
 millions of rows. B-tree supports equality and range queries.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s07-q2">

@@ -627,10 +627,10 @@ class EmbeddingExplorer {
 
 ## Summary
 
-Word embeddings map discrete tokens into dense vector spaces where semantic relationships correspond to vector arithmetic. Word2Vec uses either continuous bag-of-words (CBOW) or.
-skip-gram architectures with negative sampling to learn embeddings from local context. GloVe combines global matrix factorization with local context windows for.
+Word embeddings map discrete tokens into dense vector spaces where semantic relationships correspond to vector arithmetic. Word2Vec uses either continuous bag-of-words (CBOW) or
+skip-gram architectures with negative sampling to learn embeddings from local context. GloVe combines global matrix factorization with local context windows for
 efficient training. FastText extends Word2Vec by incorporating subword n-gram information, enabling embeddings for out-of-vocabulary words. Subword tokenization methods like BPE and.
-SentencePiece bridge the gap between character-level and word-level representations. Embedding visualization using PCA or t-SNE reveals clustering patterns and analogical relationships. Handling OOV words requires fallback strategies like subword composition or.
+SentencePiece bridge the gap between character-level and word-level representations. Embedding visualization using PCA or t-SNE reveals clustering patterns and analogical relationships. Handling OOV words requires fallback strategies like subword composition or
 random initialization.
 
 ## Practical Takeaways
@@ -653,8 +653,8 @@ random initialization.
   </summary>
   <div class="tp-qa-answer">
 <p>CBOW predicts the target word from surrounding context words by averaging context embeddings. It is faster and works well for frequent words,.
-but treats context as a bag ignoring order. Skip-gram predicts context words from a target word, treating each (target, context) pair as a separate training example. It is slower but.
-captures rare words better because rare words get more training weight during gradient updates. Skip-gram also tends to produce better quality embeddings for.
+but treats context as a bag ignoring order. Skip-gram predicts context words from a target word, treating each (target, context) pair as a separate training example. It is slower but
+captures rare words better because rare words get more training weight during gradient updates. Skip-gram also tends to produce better quality embeddings for
 semantic tasks. Google's published Word2Vec model uses Skip-gram.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -667,7 +667,7 @@ semantic tasks. Google's published Word2Vec model uses Skip-gram.</p>
     Q2: How does negative sampling speed up Word2Vec training?
   </summary>
   <div class="tp-qa-answer">
-<p>Negative sampling replaces the full softmax (which requires computing probabilities over the entire vocabulary, O(V)) with a binary classification task: distinguish the true context word from k randomly sampled negative words. For.
+<p>Negative sampling replaces the full softmax (which requires computing probabilities over the entire vocabulary, O(V)) with a binary classification task: distinguish the true context word from k randomly sampled negative words. For
 each positive (target, context) pair, we draw k negative samples (e.g., k=5 for small datasets, k=20 for large) from a unigram distribution raised to the 3/4 power. Training becomes O(k) instead of O(V),.
 where V is the vocabulary size (typically 50K-1M). Despite the approximation, embeddings retain high quality.</p>
   </div>
@@ -695,7 +695,7 @@ P(solid|ice)/P(solid|steam) is large, while with word gas it is small. GloVe con
     Q4: How does FastText handle out-of-vocabulary words?
   </summary>
   <div class="tp-qa-answer">
-<p>FastText represents each word as a bag of character n-grams (3-6) plus the full word. For an OOV word, it generates the character n-grams and.
+<p>FastText represents each word as a bag of character n-grams (3-6) plus the full word. For an OOV word, it generates the character n-grams and
 sums/averages their embeddings. For example, for the OOV word "unhappiness", FastText produces n-grams like "&lt;un", "unh", "nha", "hap", ..., "ess&gt;", each having a trained embedding. The final embedding is the average of all n-gram vectors. This works because morphological patterns are shared: "un-" prefix appears in many words,.
 and "-ness" suffix appears in many nouns. No OOV is ever truly unknown.</p>
   </div>
@@ -709,7 +709,7 @@ and "-ness" suffix appears in many nouns. No OOV is ever truly unknown.</p>
     Q5: How do you evaluate the quality of word embeddings?
   </summary>
   <div class="tp-qa-answer">
-<p>Three evaluation approaches: (1) Intrinsic evaluation — Word analogy tasks (king:queen :: man:woman) using semantic and syntactic categories. WordSim-353 and SimLex-999 measure correlation with human similarity judgments. (2) Extrinsic evaluation — Use embeddings as features for.
+<p>Three evaluation approaches: (1) Intrinsic evaluation — Word analogy tasks (king:queen :: man:woman) using semantic and syntactic categories. WordSim-353 and SimLex-999 measure correlation with human similarity judgments. (2) Extrinsic evaluation — Use embeddings as features for
 downstream tasks (NER, sentiment, POS tagging) and measure accuracy improvement. (3) Visualization — t-SNE or PCA plots should show semantic clustering (countries,.
 fruits, verbs cluster separately). Analogy accuracy of 75%+ on Google analogy dataset indicates high-quality embeddings, while downstream task improvements of 1-5% F1 are meaningful.</p>
   </div>
@@ -723,7 +723,7 @@ fruits, verbs cluster separately). Analogy accuracy of 75%+ on Google analogy da
     Q6: What is the ideal embedding dimension and how do you choose it?
   </summary>
   <div class="tp-qa-answer">
-<p>There is no universal ideal dimension. Typical ranges: Word2Vec/GloVe: 100-300. FastText: 100-300. BERT: 768 (base), 1024 (large). Rule of thumb: larger dimensions capture more nuanced relationships but.
+<p>There is no universal ideal dimension. Typical ranges: Word2Vec/GloVe: 100-300. FastText: 100-300. BERT: 768 (base), 1024 (large). Rule of thumb: larger dimensions capture more nuanced relationships but
 require more data and risk overfitting. For small corpora (<10M tokens), use 50-100. For large corpora (>100M tokens), use 200-300. Beyond 300,.
 gains diminish. To choose: train embeddings at 50, 100, 200, 300 and evaluate on an intrinsic benchmark. Use the smallest dimension where performance plateaus.</p>
   </div>
@@ -752,7 +752,7 @@ ELMo) address some of these issues.</p>
     Q8: How do you handle polysemy in word embeddings?
   </summary>
   <div class="tp-qa-answer">
-<p>Traditional static embeddings (Word2Vec, GloVe, FastText) give one vector per word, conflating multiple senses. Solutions: (1) Contextual embeddings (BERT, ELMo, GPT) produce different vectors for.
+<p>Traditional static embeddings (Word2Vec, GloVe, FastText) give one vector per word, conflating multiple senses. Solutions: (1) Contextual embeddings (BERT, ELMo, GPT) produce different vectors for
 the same word in different contexts. (2) Sense embeddings — train separate vectors for each sense (e.g., bank_river, bank_financial) using clustering of context windows (Multi-Sense Embeddings,.
 SensEmbed). (3) Adaptive embeddings — learn a weighted combination of sense vectors based on context (MST, MCC). The dominant modern approach is contextual embeddings,.
 which solve polysemy implicitly through the self-attention mechanism.</p>
@@ -767,8 +767,8 @@ which solve polysemy implicitly through the self-attention mechanism.</p>
     Q9: What is the role of subsampling in Word2Vec training?
   </summary>
   <div class="tp-qa-answer">
-<p>Subsampling discards frequent words with probability P(w_i) = 1 - sqrt(t / f(w_i)) where t is a threshold (default 1e-5) and.
-f(w_i) is frequency. Very frequent words ("the", "and", "of") are discarded in 80-99% of occurrences. This speeds training by reducing processed tokens by 2-10x and.
+<p>Subsampling discards frequent words with probability P(w_i) = 1 - sqrt(t / f(w_i)) where t is a threshold (default 1e-5) and
+f(w_i) is frequency. Very frequent words ("the", "and", "of") are discarded in 80-99% of occurrences. This speeds training by reducing processed tokens by 2-10x and
 improves embedding quality because discriminative co-occurrences (between content words) get proportionally more weight. Without subsampling, frequent words dominate updates and rare word representations suffer from insufficient training signal.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -782,8 +782,8 @@ improves embedding quality because discriminative co-occurrences (between conten
   </summary>
   <div class="tp-qa-answer">
 <p>Choose based on your data and task: (1) Word2Vec (Skip-gram) — good general-purpose option. Works best on large corpora (>100M tokens). Fast training with negative sampling. (2) GloVe — better on analogy tasks,.
-useful when you need consistent global statistics. Requires more memory (co-occurrence matrix). Good for medium-sized corpora. (3) FastText — best for.
-morphologically rich languages (German, Turkish, Arabic), for domains with many rare/technical terms, or when OOV handling is critical. Embeddings are larger and.
+useful when you need consistent global statistics. Requires more memory (co-occurrence matrix). Good for medium-sized corpora. (3) FastText — best for
+morphologically rich languages (German, Turkish, Arabic), for domains with many rare/technical terms, or when OOV handling is critical. Embeddings are larger and
 training is slower. For English with ample data, Word2Vec or GloVe work well. For multilingual or specialized domains, use FastText.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

@@ -842,8 +842,8 @@ async function callModel<T = string>(
     Q1: What are foundation models and how do they differ from traditional ML models?
   </summary>
   <div class="tp-qa-answer">
-<p>Foundation models are large neural networks trained on broad data at scale, designed to be adapted to a wide range of downstream tasks. Unlike traditional ML models trained for.
-a single task, foundation models exhibit emergent abilities, in-context learning, and transfer learning. They are built on the transformer architecture and.
+<p>Foundation models are large neural networks trained on broad data at scale, designed to be adapted to a wide range of downstream tasks. Unlike traditional ML models trained for
+a single task, foundation models exhibit emergent abilities, in-context learning, and transfer learning. They are built on the transformer architecture and
 typically contain billions of parameters trained on trillions of tokens.</p>
     <p><strong>Key differences</strong>:</p>
     <ul>

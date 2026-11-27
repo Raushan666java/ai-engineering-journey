@@ -115,7 +115,7 @@ print(f"Base salary range: ${result['low']:,} - ${result['high']:,}")
 print(f"Median: ${result['median']:,}")
 ```
 
-**Company stage matters**: Early-stage startups (<50 employees) pay lower base but offer significant equity upside (4-year vest with 1-year cliff). Mid-stage (\$10M-\$100M funding) balance base and.
+**Company stage matters**: Early-stage startups (<50 employees) pay lower base but offer significant equity upside (4-year vest with 1-year cliff). Mid-stage (\$10M-\$100M funding) balance base and
 equity. Public companies (FAANG, Microsoft) have the highest total comp with liquid RSUs. Late-stage pre-IPO (Stripe, Databricks, OpenAI) offer the highest risk/reward — equity at \$0.01/share could 10x at IPO.
 
 ---
@@ -129,7 +129,7 @@ Understanding how compensation is structured allows you to compare offers that l
 **Annual performance bonus**: Typically 5-25% of base for IC engineers, 15-40% for managers. Paid annually or semi-annually. Tied to individual and company performance. Some companies (Netflix) choose to pay higher base with no bonus instead.
 
 **RSUs (Restricted Stock Units)**: Shares granted as part of compensation. Typical grant: \$100K-\$400K over 4 years. Standard vesting: 25% per year (1-year cliff,.
-then monthly/quarterly). Once vested, shares are yours (subject to tax). For public companies, RSUs are liquid and can be sold immediately. For.
+then monthly/quarterly). Once vested, shares are yours (subject to tax). For public companies, RSUs are liquid and can be sold immediately. For
 private companies, they're illiquid until IPO or acquisition.
 
 **Stock options (ISO/NSO)**: Right to purchase shares at a fixed strike price. Common at startups. If the company's value grows, you profit from the difference. Options are worthless if the company fails. Strike price is typically set at the 409A valuation.
@@ -407,7 +407,7 @@ for k, v in result.items():
 **Other benefits to ask about**: Stock purchase plans (ESPP) at 15% discount (typical max 10-15% of salary), parental leave (12-20 weeks vs minimal), sabbatical (every 4-5 years), professional development budget (\$2K-\$10K/year), gym/wellness stipend, commuter benefits, meal subsidies, and cell phone/internet reimbursement.
 
 **Counteroffers from current employer**: If you receive a counteroffer, evaluate it objectively. 70% of people who accept counteroffers leave within 12 months anyway. The issues that made you look (compensation,.
-growth, culture) often remain unaddressed. If you accept, the relationship changes — you're now "the person who threatened to leave." Take the counteroffer only if you genuinely want to stay and.
+growth, culture) often remain unaddressed. If you accept, the relationship changes — you're now "the person who threatened to leave." Take the counteroffer only if you genuinely want to stay and
 the root issues are fixed.
 
 ---

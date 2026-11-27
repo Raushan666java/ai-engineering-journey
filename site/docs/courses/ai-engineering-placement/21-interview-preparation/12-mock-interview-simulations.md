@@ -462,7 +462,7 @@ print(f"Deployment: {mod_system.deployment_plan['serving_infrastructure']}")
 
 **Common ML design problems**: Search ranking (relevant results), Recommendation system (collaborative filtering), Fraud detection (real-time scoring), Content moderation (toxic comment detection), Autonomous vehicle perception (object detection), Supply chain forecasting (demand prediction), Pricing optimization (dynamic pricing), Customer churn prediction (retention), Personalization (content ranking), Anomaly detection (infrastructure monitoring).
 
-**Key ML knowledge to demonstrate**: Bias-variance tradeoff, regularization techniques, loss functions for different tasks, evaluation metrics and their business alignment, handling missing data and.
+**Key ML knowledge to demonstrate**: Bias-variance tradeoff, regularization techniques, loss functions for different tasks, evaluation metrics and their business alignment, handling missing data and
 outliers, feature engineering and selection, handling class imbalance, understanding of overfitting and how to combat it, model interpretability (SHAP, LIME, feature importance),.
 distributed training (data parallelism, model parallelism), deployment patterns (batch, streaming, real-time), A/B testing and experiment design, MLOps (CI/CD for ML, model registry,.
 feature store).
@@ -976,7 +976,7 @@ this will still pass for inputs up to 10³."</p>
   </summary>
   <div class="tp-qa-answer">
     <p>Not all interviewers are warm and engaging. Some are tired, distracted, or naturally quiet. Here's how to handle it:</p>
-<p><strong>1. Drive the conversation yourself</strong>: If they're not asking questions, fill the gaps. Narrate your entire thought process: "Now I'm going to analyze the time complexity. The outer loop runs N times and.
+<p><strong>1. Drive the conversation yourself</strong>: If they're not asking questions, fill the gaps. Narrate your entire thought process: "Now I'm going to analyze the time complexity. The outer loop runs N times and
 the inner loop runs M times, so overall it's O(N*M). I'm considering whether we can reduce this to O(N+M) using a hash map..."</p>
     <p><strong>2. Ask directive questions</strong>: Instead of open-ended questions, ask specific ones that are easy to answer: "Do you want me to focus on the most scalable solution, or is a simpler solution acceptable here?" "Should I handle the case where the input is empty?"</p>
     <p><strong>3. Check for understanding</strong>: "Does that approach make sense so far?" "Would you like me to go deeper on the caching strategy, or proceed to deployment?"</p>
@@ -1143,7 +1143,7 @@ d) Immediately start the next mock
 
 **Medium** — Create a performance tracking spreadsheet or Python script that records: date, round type, scores (6 categories), strengths, weaknesses, and action items. Complete 5 mock interviews and enter the data. Generate a trend report identifying your top 3 areas for improvement.
 
-**Hard** — Run a complete mock interview loop (4 rounds — DSA, system design, ML deep-dive, behavioral) with a single partner or.
+**Hard** — Run a complete mock interview loop (4 rounds — DSA, system design, ML deep-dive, behavioral) with a single partner or
 across multiple sessions. Each round must be timed strictly. Collect feedback from each interviewer. Write a 500-word self-reflection analyzing patterns across all 4 rounds,.
 identifying systemic weaknesses, and creating a 30-day improvement plan with specific weekly targets.
 

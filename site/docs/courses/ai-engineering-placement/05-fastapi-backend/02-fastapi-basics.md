@@ -600,8 +600,8 @@ Query() for additional validation.</p></div>
 
 <details class="tp-qa-card" data-qid="fastapi-s02-q7">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q7: What is the difference between response_model and return type annotation?</summary>
-<div class="tp-qa-answer"><p>response_model is a decorator parameter that controls the response schema in OpenAPI and performs response filtering (excludes extra fields). The return type annotation is used for.
-editor support and type checking. response_model is more explicit and allows returning different types than the annotation suggests. Preferred to always define response_model for.
+<div class="tp-qa-answer"><p>response_model is a decorator parameter that controls the response schema in OpenAPI and performs response filtering (excludes extra fields). The return type annotation is used for
+editor support and type checking. response_model is more explicit and allows returning different types than the annotation suggests. Preferred to always define response_model for
 public endpoints.</p></div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
@@ -618,7 +618,7 @@ FastAPI expects the body to have nested keys matching the parameter names. You c
 <details class="tp-qa-card" data-qid="fastapi-s02-q9">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q9: How do you run FastAPI in production?</summary>
 <div class="tp-qa-answer"><p>Use a production ASGI server like uvicorn with workers (gunicorn + uvicorn workers on Linux). Disable docs in production by setting docs_url=None,.
-redoc_url=None. Use a reverse proxy (Nginx, Traefik) in front. Set proper CORS origins. Enable logging and error tracking. Use environment variables for.
+redoc_url=None. Use a reverse proxy (Nginx, Traefik) in front. Set proper CORS origins. Enable logging and error tracking. Use environment variables for
 configuration. Consider using Docker for deployment.</p></div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>

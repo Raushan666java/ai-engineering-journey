@@ -45,8 +45,8 @@ flowchart LR
 
 ## Introduction
 
-Machine learning fundamentals are the bedrock of every AI engineering role — from building recommendation systems to training production classifiers. Before you can fine-tune a transformer or.
-deploy an ML model, you must master data preprocessing, bias-variance analysis, train/test splitting, and evaluation metrics. This chapter provides the theoretical and.
+Machine learning fundamentals are the bedrock of every AI engineering role — from building recommendation systems to training production classifiers. Before you can fine-tune a transformer or
+deploy an ML model, you must master data preprocessing, bias-variance analysis, train/test splitting, and evaluation metrics. This chapter provides the theoretical and
 practical foundation that every subsequent module in this course builds upon.
 
 ## Prerequisites

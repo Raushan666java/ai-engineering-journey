@@ -597,7 +597,7 @@ LLM08 Vector/Embedding Weaknesses, LLM09 Misinformation, and LLM10 Unbounded Con
     Q3: How do you threat model an AI system using STRIDE?
   </summary>
   <div class="tp-qa-answer">
-<p>Apply STRIDE categories to AI components: Spoofing — impersonating a user or data source via prompt injection. Tampering — modifying training data or.
+<p>Apply STRIDE categories to AI components: Spoofing — impersonating a user or data source via prompt injection. Tampering — modifying training data or
 model weights. Repudiation — lack of audit trail for model decisions. Information Disclosure — model leaking training data via inference. Denial of Service — computationally expensive inputs causing resource exhaustion. Elevation of Privilege — prompt injection bypassing access controls.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -637,7 +637,7 @@ a webpage or document in RAG), e.g., "The document says 'Ignore all safety rules
     Q6: What is model extraction and how do you prevent it?
   </summary>
   <div class="tp-qa-answer">
-<p>Model extraction is when an adversary queries a model API to build a copy with similar behavior. They collect input-output pairs and.
+<p>Model extraction is when an adversary queries a model API to build a copy with similar behavior. They collect input-output pairs and
 train a shadow model. Prevention: rate limiting, query budget per user, detect outliers/similar queries, add noise to predictions, use differential privacy,.
 and monitor for extraction patterns (information gain metrics).</p>
   </div>

@@ -638,8 +638,8 @@ Beam search with beam size 4-10 is standard for NMT and text generation. Larger 
 
 ## Summary
 
-Sequence models process variable-length input and output sequences using recurrent architectures. The vanilla RNN maintains a hidden state that propagates information through time steps but.
-suffers from vanishing gradients. LSTM introduces gating mechanisms and a cell state to preserve long-term dependencies, becoming the standard for most sequence tasks. GRU simplifies the LSTM with fewer gates while maintaining competitive performance. Bidirectional RNNs capture context from both past and.
+Sequence models process variable-length input and output sequences using recurrent architectures. The vanilla RNN maintains a hidden state that propagates information through time steps but
+suffers from vanishing gradients. LSTM introduces gating mechanisms and a cell state to preserve long-term dependencies, becoming the standard for most sequence tasks. GRU simplifies the LSTM with fewer gates while maintaining competitive performance. Bidirectional RNNs capture context from both past and
 future directions. The encoder-decoder architecture maps variable-length input sequences to output sequences through a fixed-dimensional bottleneck. Teacher forcing accelerates training by feeding ground-truth outputs during decoding,.
 while beam search improves inference by maintaining multiple candidate sequences.
 
@@ -677,7 +677,7 @@ this product decays exponentially with sequence length. For example, with 50 tim
   <div class="tp-qa-answer">
 <p>(1) Forget gate (f_t): sigmoid(W_f * [h_{t-1}, x_t] + b_f). Decides how much of the previous cell state to forget. Values near 0 mean "forget everything," near 1 mean "keep everything." (2) Input gate (i_t): sigmoid(W_i * [h_{t-1},.
 x_t] + b_i). Controls how much of the new candidate cell state to add. (3) Output gate (o_t): sigmoid(W_o * [h_{t-1},.
-x_t] + b_o). Controls how much of the cell state flows to the hidden state. Together, they allow the LSTM to learn long-range dependencies by protecting the cell state from irrelevant inputs and.
+x_t] + b_o). Controls how much of the cell state flows to the hidden state. Together, they allow the LSTM to learn long-range dependencies by protecting the cell state from irrelevant inputs and
 preserving relevant information across many timesteps.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -690,10 +690,10 @@ preserving relevant information across many timesteps.</p>
     Q3: What is the difference between LSTM and GRU?
   </summary>
   <div class="tp-qa-answer">
-<p>GRU simplifies LSTM by (1) merging the cell state and hidden state into a single state vector. (2) Combining forget and.
+<p>GRU simplifies LSTM by (1) merging the cell state and hidden state into a single state vector. (2) Combining forget and
 input gates into a single update gate z_t. (3) Using a reset gate r_t to control how much past information to forget when computing the candidate hidden state. GRU has 3 gates total vs LSTM's 4. LSTM has an output.
 gate that lets the network control how much of the cell state is exposed;.
-GRU exposes the full state without gating. GRU has ~25% fewer parameters, trains faster, and often matches LSTM on smaller datasets. LSTM sometimes performs better on very long sequences or.
+GRU exposes the full state without gating. GRU has ~25% fewer parameters, trains faster, and often matches LSTM on smaller datasets. LSTM sometimes performs better on very long sequences or
 large datasets.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -723,7 +723,7 @@ switch to student forcing. (3) Professor forcing: use adversarial training to ma
   <div class="tp-qa-answer">
 <p>Greedy decoding picks the highest probability token at each step, which can lead to locally optimal but globally suboptimal sequences. Beam search maintains k (beam size) candidate hypotheses simultaneously. At each timestep,.
 it expands all k hypotheses by considering all V tokens, sorts the k*V candidates by cumulative log probability, keeps the top k,.
-and repeats. This explores multiple paths and finds globally better sequences. For machine translation, beam=4 improves BLEU by 1-3 points over greedy. Larger beams (>10) show diminishing returns and.
+and repeats. This explores multiple paths and finds globally better sequences. For machine translation, beam=4 improves BLEU by 1-3 points over greedy. Larger beams (>10) show diminishing returns and
 increase computational cost linearly. Beam search also allows length normalization to avoid bias toward short sequences.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -736,8 +736,8 @@ increase computational cost linearly. Beam search also allows length normalizati
     Q6: What is the role of bidirectional RNNs in NLP?
   </summary>
   <div class="tp-qa-answer">
-<p>Bidirectional RNNs process the sequence in both forward (left to right) and backward (right to left) directions, then concatenate or sum the hidden states at each position. This gives each token access to information from both past and.
-future contexts. For NER, knowing "Washington" was preceded by "George" and followed by "was born" helps classify it as PERSON vs LOCATION. For.
+<p>Bidirectional RNNs process the sequence in both forward (left to right) and backward (right to left) directions, then concatenate or sum the hidden states at each position. This gives each token access to information from both past and
+future contexts. For NER, knowing "Washington" was preceded by "George" and followed by "was born" helps classify it as PERSON vs LOCATION. For
 classification, the final state of a BiLSTM captures the entire sequence in both directions. Standard in NER, POS tagging, relation extraction,.
 and sentence classification. Not suitable for real-time applications (speech recognition, online translation) where future tokens are unavailable.</p>
   </div>
@@ -795,7 +795,7 @@ helping long-range information flow at the start of training. LSTM with forget g
   </summary>
   <div class="tp-qa-answer">
 <p>(1) Many-to-one: processes an input sequence and produces a single output at the end. Used for sentiment classification, document classification. The final hidden state is fed to a classifier. (2) Many-to-many (same length): each input timestep produces an output. Used for.
-POS tagging, NER, frame-by-frame video labeling. (3) Many-to-many (different lengths): encoder-decoder (seq2seq). Encoder reads the entire input sequence to produce a context vector. Decoder generates an output sequence of different length. Used for.
+POS tagging, NER, frame-by-frame video labeling. (3) Many-to-many (different lengths): encoder-decoder (seq2seq). Encoder reads the entire input sequence to produce a context vector. Decoder generates an output sequence of different length. Used for
 machine translation (English 10 words → French 12 words), summarization, speech recognition.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

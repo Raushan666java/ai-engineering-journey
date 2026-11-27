@@ -601,9 +601,9 @@ class DistillationTrainer {
 
 ## Summary
 
-BERT introduced bidirectional pre-training using masked language modeling and next-sentence prediction. The masked LM objective randomly masks tokens and trains the model to predict them from full bidirectional context. Next-sentence prediction learns relationships between sentence pairs for.
-downstream tasks like question answering and natural language inference. Fine-tuning adapts the pre-trained BERT model to specific tasks by adding task-specific heads and.
-training on labeled data. Variants like RoBERTa optimize pre-training with dynamic masking and larger batches, ALBERT reduces parameters through factorized embeddings and.
+BERT introduced bidirectional pre-training using masked language modeling and next-sentence prediction. The masked LM objective randomly masks tokens and trains the model to predict them from full bidirectional context. Next-sentence prediction learns relationships between sentence pairs for
+downstream tasks like question answering and natural language inference. Fine-tuning adapts the pre-trained BERT model to specific tasks by adding task-specific heads and
+training on labeled data. Variants like RoBERTa optimize pre-training with dynamic masking and larger batches, ALBERT reduces parameters through factorized embeddings and
 cross-layer sharing, and DistilBERT uses knowledge distillation for 40% smaller but 95% effective models. The GLUE benchmark provides a standardized evaluation across diverse NLU tasks.
 
 ## Practical Takeaways
@@ -626,8 +626,8 @@ cross-layer sharing, and DistilBERT uses knowledge distillation for 40% smaller 
   </summary>
   <div class="tp-qa-answer">
 <p>BERT masks 15% of tokens in each input sequence. Of these masked tokens: 80% are replaced with the [MASK] token, 10% are replaced with a random token,.
-and 10% are left unchanged. The model must predict the original token at each masked position using the final hidden state at that position. A feed-forward classifier (dense + GELU + LayerNorm + projection to vocab) is applied to the.
-hidden state of each masked position. The loss is cross-entropy between predicted and.
+and 10% are left unchanged. The model must predict the original token at each masked position using the final hidden state at that position. A feed-forward classifier (dense + GELU + LayerNorm + projection to vocab) is applied to the
+hidden state of each masked position. The loss is cross-entropy between predicted and
 original tokens. The 80/10/10 strategy prevents mismatch between pre-training (where [MASK] appears) and fine-tuning (where it never appears). If all masked tokens were [MASK],.
 the model would not learn to handle unmasked text during fine-tuning.</p>
   </div>
@@ -641,9 +641,9 @@ the model would not learn to handle unmasked text during fine-tuning.</p>
     Q2: What is Next Sentence Prediction and why was it removed in RoBERTa?
   </summary>
   <div class="tp-qa-answer">
-<p>NSP is a binary classification task: given two sentences A and B, predict whether B is the actual next sentence after A (50% of pairs) or.
+<p>NSP is a binary classification task: given two sentences A and B, predict whether B is the actual next sentence after A (50% of pairs) or
 a random sentence (50% of pairs). The [CLS] token's hidden state is fed to a binary classifier. NSP was designed to help BERT understand.
-sentence relationships for tasks like QA and NLI. RoBERTa found that NSP is not essential: (1) Training without NSP matched or.
+sentence relationships for tasks like QA and NLI. RoBERTa found that NSP is not essential: (1) Training without NSP matched or
 exceeded BERT on all GLUE tasks. (2) The single-sentence approach (always one contiguous document) performed better. (3) NSP's random negatives are too easy — the model learns topic mismatch rather than discourse coherence. ALBERT replaced NSP with SOP (Sentence Order Prediction),.
 which requires actual discourse understanding.</p>
   </div>
@@ -657,7 +657,7 @@ which requires actual discourse understanding.</p>
     Q3: How do you fine-tune BERT for text classification?
   </summary>
   <div class="tp-qa-answer">
-<p>Steps: (1) Add a classification head: a linear layer that takes the [CLS] token's final hidden state and projects to num_classes. (2) Format input as [CLS] text [SEP] with padding to max_seq_len. (3) Use token_type_ids = 0 for.
+<p>Steps: (1) Add a classification head: a linear layer that takes the [CLS] token's final hidden state and projects to num_classes. (2) Format input as [CLS] text [SEP] with padding to max_seq_len. (3) Use token_type_ids = 0 for
 single sentence, 0/1 for sentence pairs. (4) Initialize BERT with pre-trained weights and the classification head randomly. (5) Fine-tune all parameters end-to-end with learning rate 2e-5 to 5e-5 (AdamW). (6) Use linear warmup (10% of steps) followed by linear decay. (7) Train for.
 2-10 epochs with early stopping based on validation loss. (8) Batch size: 16-32 for BERT-base on a single GPU. The classification head is tiny (num_classes — 768 parameters) compared to BERT's 110M,.
 so fine-tuning is fast (1-2 hours on a single GPU).</p>
@@ -672,8 +672,8 @@ so fine-tuning is fast (1-2 hours on a single GPU).</p>
     Q4: How does BERT handle question answering (SQuAD)?
   </summary>
   <div class="tp-qa-answer">
-<p>For extractive QA (SQuAD), BERT predicts a span in the context that answers the question. The input is [CLS] question [SEP] context [SEP]. Two additional vectors (start and.
-end projection) are learned on top of the hidden states. For each token position i, the start score = S^T * h_i and.
+<p>For extractive QA (SQuAD), BERT predicts a span in the context that answers the question. The input is [CLS] question [SEP] context [SEP]. Two additional vectors (start and
+end projection) are learned on top of the hidden states. For each token position i, the start score = S^T * h_i and
 end score = E^T * h_i, where S and E are learned vectors of size d_model. The answer span is the pair (i,.
 j) with i ≤ j and maximum S^T·h_i + E^T·h_j. Constraints: i must be in the context (not question), and j - i + 1 ≤ max_answer_length (typically 30). BERT-base achieves F1=88.5 on SQuAD 1.1 (EM=81.0). For.
 SQuAD 2.0 with unanswerable questions, a no-answer class is added.</p>
@@ -748,7 +748,7 @@ most improvements come from longer training with more data, not architectural ch
     Q9: How do you handle long sequences (>512 tokens) with BERT?
   </summary>
   <div class="tp-qa-answer">
-<p>BERT's maximum sequence length is 512 tokens (limited by O(n^2) self-attention). Strategies for longer texts: (1) Truncation: keep the first 512 tokens (most important for.
+<p>BERT's maximum sequence length is 512 tokens (limited by O(n^2) self-attention). Strategies for longer texts: (1) Truncation: keep the first 512 tokens (most important for
 classification). (2) Hierarchical: split into 512-token chunks, encode each separately, aggregate with pooling or an additional transformer layer. (3) Longformer/BigBird: replace full attention with sparse attention patterns (sliding window + global tokens). Longformer handles 4096 tokens. (4) Reformer: uses locality-sensitive hashing for.
 O(n log n) attention. (5) Sliding window: use overlapping windows and a secondary model to combine predictions. For most classification tasks,.
 truncating to 512 tokens loses <1% accuracy because important information is typically at the start.</p>
@@ -764,8 +764,8 @@ truncating to 512 tokens loses <1% accuracy because important information is typ
   </summary>
   <div class="tp-qa-answer">
 <p>Recommended: AdamW optimizer (ε=1e-8, β1=0.9, β2=0.999) with learning rate 2e-5 to 5e-5. Use a linear warmup for the first 10% of training steps (increasing LR from 0 to the max),.
-then linear decay to 0. Weight decay: 0.01 (applied to all non-bias and non-norm parameters). The learning rate for fine-tuning is 10-25— lower than pre-training (5e-4) because the pre-trained weights are already near-optimal. Higher LR during fine-tuning can cause catastrophic forgetting. For.
-batch size: 16 or 32 works well. For epochs: 2-10 depending on dataset size (small datasets need more epochs, large datasets need fewer). Use the dev set for.
+then linear decay to 0. Weight decay: 0.01 (applied to all non-bias and non-norm parameters). The learning rate for fine-tuning is 10-25— lower than pre-training (5e-4) because the pre-trained weights are already near-optimal. Higher LR during fine-tuning can cause catastrophic forgetting. For
+batch size: 16 or 32 works well. For epochs: 2-10 depending on dataset size (small datasets need more epochs, large datasets need fewer). Use the dev set for
 early stopping.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

@@ -525,7 +525,7 @@ This analogy helps because math and probability interview, like a delivery syste
 ## Summary
 
 Math and probability are tested directly in ML interviews. Bayes theorem, MLE/MAP, and distributions appear in nearly every loop. Linear algebra (eigenvalues,.
-SVD, PCA) and information theory (entropy, KL divergence) underpin the ML algorithms you will discuss. The core skill is translating an interview problem into a probability or.
+SVD, PCA) and information theory (entropy, KL divergence) underpin the ML algorithms you will discuss. The core skill is translating an interview problem into a probability or
 linear algebra formulation and solving it step by step.
 
 ## Practical Takeaways

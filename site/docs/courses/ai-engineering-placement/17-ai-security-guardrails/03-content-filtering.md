@@ -794,7 +794,7 @@ console.log(filter.filter("Hello world"));
     Q4: How does topic restriction work?
   </summary>
   <div class="tp-qa-answer">
-<p>Topic restriction uses keyword patterns to classify user input into topic categories. An allow list specifies which topics are permitted; a block list specifies forbidden topics. Inputs that don't match any allowed topic are either blocked or.
+<p>Topic restriction uses keyword patterns to classify user input into topic categories. An allow list specifies which topics are permitted; a block list specifies forbidden topics. Inputs that don't match any allowed topic are either blocked or
 handled with a fallback response. This is essential for domain-specific applications (e.g., finance bot shouldn't give medical advice).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

@@ -649,7 +649,7 @@ async function createHPA(name: string, deployment: string, min: number, max: num
     Q2: What is the difference between HPA and Cluster Autoscaler?
   </summary>
   <div class="tp-qa-answer">
-<p>HPA scales Pod replicas up/down based on metrics. Cluster Autoscaler adds/removes worker nodes from the cluster when Pods can't be scheduled or.
+<p>HPA scales Pod replicas up/down based on metrics. Cluster Autoscaler adds/removes worker nodes from the cluster when Pods can't be scheduled or
 nodes are underutilized. HPA operates at the Pod level; Cluster Autoscaler operates at the infrastructure level. They work together: HPA creates more Pods,.
 which may trigger Cluster Autoscaler to add nodes if there's insufficient capacity.</p>
   </div>

@@ -48,7 +48,7 @@ flowchart LR
 ## Introduction
 
 Neural networks are the engine behind every modern AI system — from GPT-4's language generation to self-driving car vision. This chapter builds your understanding from the ground up: starting with the single perceptron,.
-progressing through activation functions and backpropagation, and culminating in a multi-layer perceptron implemented in PyTorch. These fundamentals directly explain why transformers work and.
+progressing through activation functions and backpropagation, and culminating in a multi-layer perceptron implemented in PyTorch. These fundamentals directly explain why transformers work and
 how to debug training failures in production.
 
 ## Prerequisites

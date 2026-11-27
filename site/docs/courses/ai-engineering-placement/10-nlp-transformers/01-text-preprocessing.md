@@ -505,7 +505,7 @@ This helps because raw text is messy and unstructured — preprocessing is like 
 
 ## Summary
 
-Text preprocessing transforms raw text into structured inputs for NLP models. Word tokenization splits text into discrete tokens using whitespace and.
+Text preprocessing transforms raw text into structured inputs for NLP models. Word tokenization splits text into discrete tokens using whitespace and
 punctuation rules. Subword tokenization (BPE, WordPiece, SentencePiece) handles out-of-vocabulary words by decomposing them into frequent subword units. Stemming reduces words to root forms using heuristic rules,.
 while lemmatization uses vocabulary analysis for more accurate normalization. Stop word removal filters frequent but uninformative words, and text normalization handles case,.
 Unicode, and special characters. Vocabulary building constructs a fixed-size mapping from tokens to integer indices. TF-IDF weighting transforms token counts into relevance scores based on corpus frequency.
@@ -529,9 +529,9 @@ Unicode, and special characters. Vocabulary building constructs a fixed-size map
     Q1: What is the difference between stemming and lemmatization?
   </summary>
   <div class="tp-qa-answer">
-<p>Stemming uses heuristic rules to chop affixes (e.g., Porter stemmer reduces "running", "runner", "ran" to "run" but "running" might become "runn"). It is fast but.
-can produce non-dictionary words. Lemmatization uses a vocabulary and morphological analysis to return the dictionary base form (lemma) by considering POS tags. For.
-example, "better" stemmed becomes "bet" (incorrect), but lemmatized to "good" (correct). Lemmatization is slower but produces linguistically valid tokens. Use stemming for.
+<p>Stemming uses heuristic rules to chop affixes (e.g., Porter stemmer reduces "running", "runner", "ran" to "run" but "running" might become "runn"). It is fast but
+can produce non-dictionary words. Lemmatization uses a vocabulary and morphological analysis to return the dictionary base form (lemma) by considering POS tags. For
+example, "better" stemmed becomes "bet" (incorrect), but lemmatized to "good" (correct). Lemmatization is slower but produces linguistically valid tokens. Use stemming for
 search indexing (speed), lemmatization for NLP tasks requiring semantic accuracy.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -544,7 +544,7 @@ search indexing (speed), lemmatization for NLP tasks requiring semantic accuracy
     Q2: How does Byte-Pair Encoding (BPE) work?
   </summary>
   <div class="tp-qa-answer">
-<p>BPE starts with a base vocabulary of individual characters and a special end-of-word token. It iteratively merges the most frequent adjacent pair of tokens in the corpus. For.
+<p>BPE starts with a base vocabulary of individual characters and a special end-of-word token. It iteratively merges the most frequent adjacent pair of tokens in the corpus. For
 example, if "e s" appears 1000 times and "t h" appears 900 times, "es" becomes a new token first. This continues until a target vocabulary size is reached. To encode new text,.
 the learned merge operations are applied greedily. GPT-2 uses BPE with a 50K vocabulary. The key advantage is that any word can be represented as a sequence of subwords,.
 eliminating unknown tokens entirely.</p>
@@ -560,7 +560,7 @@ eliminating unknown tokens entirely.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>SentencePiece is a subword tokenizer that treats the input as a raw Unicode byte sequence without requiring language-specific pre-tokenization (splitting on whitespace). This makes it truly language-agnostic — it works for.
-Chinese, Japanese, and Thai where word boundaries are not marked by spaces. SentencePiece supports both BPE and Unigram algorithms. It uses a lossless encoding scheme and.
+Chinese, Japanese, and Thai where word boundaries are not marked by spaces. SentencePiece supports both BPE and Unigram algorithms. It uses a lossless encoding scheme and
 can reverse tokens to the original text exactly. T5, XLNet, and ALBERT all use SentencePiece. BPE typically requires pre-tokenized input, making it language-dependent.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -573,8 +573,8 @@ can reverse tokens to the original text exactly. T5, XLNet, and ALBERT all use S
     Q4: How do you handle out-of-vocabulary (OOV) words?
   </summary>
   <div class="tp-qa-answer">
-<p>Four common strategies: (1) Replace with a special <unk> token, which loses information. (2) Use subword tokenization (BPE, WordPiece) so OOV words are decomposed into known subwords — the standard approach for.
-transformer models. (3) Character-level fallback: encode the word character-by-character. (4) Use a hash-based embedding (fastText) where OOV words use n-gram embeddings. The best approach depends on the task: subword tokenization is preferred for.
+<p>Four common strategies: (1) Replace with a special <unk> token, which loses information. (2) Use subword tokenization (BPE, WordPiece) so OOV words are decomposed into known subwords — the standard approach for
+transformer models. (3) Character-level fallback: encode the word character-by-character. (4) Use a hash-based embedding (fastText) where OOV words use n-gram embeddings. The best approach depends on the task: subword tokenization is preferred for
 neural models, n-gram fallback for word-level embedding models. BERT's WordPiece covers 99.8% of text in its 30K vocabulary.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -587,7 +587,7 @@ neural models, n-gram fallback for word-level embedding models. BERT's WordPiece
     Q5: Explain TF-IDF and its components.
   </summary>
   <div class="tp-qa-answer">
-<p>TF-IDF = Term Frequency — Inverse Document Frequency. TF = (number of times term t appears in document d) / (total terms in document d). IDF = log(N / df) where N = total documents and.
+<p>TF-IDF = Term Frequency — Inverse Document Frequency. TF = (number of times term t appears in document d) / (total terms in document d). IDF = log(N / df) where N = total documents and
 df = number of documents containing t. Terms that appear frequently in a single document get high TF. Terms that appear in few documents get high IDF. The product downweights common words (high df → low IDF) while upweighting rare,.
 informative words. Smooth IDF variant: log((N+1)/(df+1)) + 1. TF-IDF is used for information retrieval, keyword extraction, and as feature input to ML classifiers.</p>
   </div>
@@ -601,7 +601,7 @@ informative words. Smooth IDF variant: log((N+1)/(df+1)) + 1. TF-IDF is used for
     Q6: When should you skip stop word removal?
   </summary>
   <div class="tp-qa-answer">
-<p>Skip stop word removal when (1) doing sentiment analysis — "not good" loses meaning if "not" is removed, changing negative to neutral. (2) Analyzing style or.
+<p>Skip stop word removal when (1) doing sentiment analysis — "not good" loses meaning if "not" is removed, changing negative to neutral. (2) Analyzing style or
 authorship — function words carry author-specific patterns. (3) Machine translation — stop words are essential for grammatical output. (4) Question answering — question words (what,.
 where, how) are critical. (5) Any task where word order and function words carry meaning. For topic modeling and information retrieval,.
 stop word removal generally improves results by focusing on content words.</p>
@@ -631,8 +631,8 @@ not brute frequency.</p>
     Q8: How do you build a vocabulary for a neural language model?
   </summary>
   <div class="tp-qa-answer">
-<p>Steps: (1) Tokenize the training corpus. (2) Count token frequencies. (3) Sort by frequency descending. (4) Select top-K tokens (typically 30K-100K) or.
-set a minimum frequency threshold (e.g., min 3 occurrences). (5) Add special tokens: <pad> for padding, <unk> for unknown, <bos>/<cls> for.
+<p>Steps: (1) Tokenize the training corpus. (2) Count token frequencies. (3) Sort by frequency descending. (4) Select top-K tokens (typically 30K-100K) or
+set a minimum frequency threshold (e.g., min 3 occurrences). (5) Add special tokens: <pad> for padding, <unk> for unknown, <bos>/<cls> for
 beginning/start, <eos>/<sep> for end/separator, <mask> for masked language modeling. (6) Assign integer IDs. For subword vocabularies, run BPE/WordPiece training on the corpus directly,.
 producing a merged vocabulary automatically.</p>
   </div>
@@ -647,7 +647,7 @@ producing a merged vocabulary automatically.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>Essential steps: (1) Unicode normalization (NFKC) to handle composed/decomposed characters consistently. (2) Lowercasing for case-insensitive tasks (but not for NER where capitalization signals proper nouns). (3) HTML entity decoding (&amp;.
-→ &). (4) URL and email removal or replacement with special tokens. (5) Contraction expansion (don't → do not). (6) Punctuation normalization (smart quotes to straight quotes). (7) Whitespace normalization. (8) Handling emoji (replace with text descriptions or.
+→ &). (4) URL and email removal or replacement with special tokens. (5) Contraction expansion (don't → do not). (6) Punctuation normalization (smart quotes to straight quotes). (7) Whitespace normalization. (8) Handling emoji (replace with text descriptions or
 filter). (9) Language detection for multilingual pipelines. (10) Encoding detection (UTF-8, ISO-8859-1) to prevent mojibake.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -660,8 +660,8 @@ filter). (9) Language detection for multilingual pipelines. (10) Encoding detect
     Q10: How does TF-IDF handle duplicate or near-duplicate documents?
   </summary>
   <div class="tp-qa-answer">
-<p>TF-IDF does not inherently handle duplicates — duplicate documents inflate their terms' document frequency (df), reducing IDF and making terms appear less important. Solutions: (1) Deduplicate the corpus before computing IDF. (2) Use min_df filtering to ignore terms appearing in.
-too many documents. (3) Use sublinear TF scaling (log(1+TF)) to dampen the effect of term repetition within a document. (4) For.
+<p>TF-IDF does not inherently handle duplicates — duplicate documents inflate their terms' document frequency (df), reducing IDF and making terms appear less important. Solutions: (1) Deduplicate the corpus before computing IDF. (2) Use min_df filtering to ignore terms appearing in
+too many documents. (3) Use sublinear TF scaling (log(1+TF)) to dampen the effect of term repetition within a document. (4) For
 near-duplicates (plagiarism, boilerplate), use sentence-level TF-IDF with cosine similarity thresholds to identify and remove near-duplicate content before building the IDF model.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

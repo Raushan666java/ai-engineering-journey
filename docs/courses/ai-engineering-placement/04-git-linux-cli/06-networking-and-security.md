@@ -740,7 +740,7 @@ GitHub Settings → Branches → Add rule:
   </summary>
   <div class="tp-qa-answer">
 <p>1) Store secrets in GitHub Settings → Secrets → Actions. 2) Reference them as <code>${{ secrets.SECRET_NAME }}</code> in workflows. 3) Pass them as environment variables,.
-never echo them directly. 4) GitHub automatically masks secrets in logs if accidentally printed. 5) Avoid script injection by not using secrets in <code>run:</code> echo statements — use <code>env:</code> instead. 6) Use OIDC tokens for.
+never echo them directly. 4) GitHub automatically masks secrets in logs if accidentally printed. 5) Avoid script injection by not using secrets in <code>run:</code> echo statements — use <code>env:</code> instead. 6) Use OIDC tokens for
 cloud credentials instead of long-lived secrets.</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>

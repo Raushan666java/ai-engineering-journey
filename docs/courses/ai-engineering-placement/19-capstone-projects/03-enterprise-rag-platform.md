@@ -786,7 +786,7 @@ class ComplianceManager:
 
 The Enterprise RAG Platform demonstrates production-grade retrieval-augmented generation. Multi-source ingestion handles PDFs, web pages, databases, and APIs. Hybrid search combines vector.
 and keyword retrieval with reciprocal rank fusion for optimal relevance. RBAC enforces document-level permissions with role hierarchies. Analytics track query patterns,.
-latency, and LLM costs. Production features include Redis caching, rate limiting, and compliance with data retention policies. This architecture serves as a template for.
+latency, and LLM costs. Production features include Redis caching, rate limiting, and compliance with data retention policies. This architecture serves as a template for
 building enterprise AI search and Q&A systems.
 
 ## Practical Takeaways
@@ -840,10 +840,10 @@ not just application level, to prevent data leakage through API bugs.</p>
     Q3: What is the optimal chunking strategy for RAG and how do you evaluate it?
   </summary>
   <div class="tp-qa-answer">
-<p>Optimal chunking balances context completeness with precision. Recommended approach: (1) Chunk size — 500-1000 tokens (empirically optimal across domains). Smaller chunks (200-300 tokens) increase recall but.
-may lack context; larger chunks (1500-2000) provide more context but reduce precision. (2) Overlap — 10-20% overlap between chunks prevents information from falling at chunk boundaries. (3) Chunking method — recursive character text splitter (LangChain's `RecursiveCharacterTextSplitter`) respects paragraph and.
-sentence boundaries, producing semantically coherent chunks. (4) Evaluation — create a test set of 100 queries with known answer documents. For.
-each chunking strategy, measure: hit rate (answer found in top-k chunks), MRR (Mean Reciprocal Rank), and answer faithfulness (does the retrieved context support the correct answer?). Test 3-5 chunking configurations and.
+<p>Optimal chunking balances context completeness with precision. Recommended approach: (1) Chunk size — 500-1000 tokens (empirically optimal across domains). Smaller chunks (200-300 tokens) increase recall but
+may lack context; larger chunks (1500-2000) provide more context but reduce precision. (2) Overlap — 10-20% overlap between chunks prevents information from falling at chunk boundaries. (3) Chunking method — recursive character text splitter (LangChain's `RecursiveCharacterTextSplitter`) respects paragraph and
+sentence boundaries, producing semantically coherent chunks. (4) Evaluation — create a test set of 100 queries with known answer documents. For
+each chunking strategy, measure: hit rate (answer found in top-k chunks), MRR (Mean Reciprocal Rank), and answer faithfulness (does the retrieved context support the correct answer?). Test 3-5 chunking configurations and
 pick the best.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -857,10 +857,10 @@ pick the best.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>RAG caching strategies: (1) Query-result cache — cache the final LLM response for exact query matches. Use Redis with TTL (1-24 hours depending on data freshness). Store `{query_hash: {response,.
-context_docs, timestamp}}`. (2) Embedding cache — cache query embeddings so repeated queries skip the embedding model. (3) Document cache — cache retrieved documents for.
-queries that are semantically similar (embedding cosine similarity > 0.95). (4) Prefix cache — for streaming applications, cache the LLM's KV-cache for.
-common prefixes. (5) Invalidation — set TTLs based on document update frequency. For FAQs (static documents), use long TTL (24h+). For.
-dynamic content, short TTL (5-60 min). (6) Expected benefit — a well-configured cache reduces p95 latency by 40-60% and LLM costs by 30-50% for.
+context_docs, timestamp}}`. (2) Embedding cache — cache query embeddings so repeated queries skip the embedding model. (3) Document cache — cache retrieved documents for
+queries that are semantically similar (embedding cosine similarity > 0.95). (4) Prefix cache — for streaming applications, cache the LLM's KV-cache for
+common prefixes. (5) Invalidation — set TTLs based on document update frequency. For FAQs (static documents), use long TTL (24h+). For
+dynamic content, short TTL (5-60 min). (6) Expected benefit — a well-configured cache reduces p95 latency by 40-60% and LLM costs by 30-50% for
 workloads with repeated queries.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -889,8 +889,8 @@ status, update history) in PostgreSQL while embeddings live in the vector store.
     Q6: How do you implement multi-tenant isolation in enterprise RAG?
   </summary>
   <div class="tp-qa-answer">
-<p>Multi-tenant strategies: (1) Collection-per-tenant — each tenant gets a separate vector store collection. Strongest isolation, but more expensive (N collections) and.
-harder to manage. (2) Field-level filtering — single collection with a `tenant_id` metadata field on every chunk. Every query includes `filter: {tenant_id: current_tenant}`. More cost-effective but.
+<p>Multi-tenant strategies: (1) Collection-per-tenant — each tenant gets a separate vector store collection. Strongest isolation, but more expensive (N collections) and
+harder to manage. (2) Field-level filtering — single collection with a `tenant_id` metadata field on every chunk. Every query includes `filter: {tenant_id: current_tenant}`. More cost-effective but
 requires verification that filtering cannot be bypassed. (3) Hybrid — separate collections for production tenants, shared pool for trial/development tenants. (4) Data encryption — encrypt tenant documents at rest with per-tenant encryption keys. (5) Tenant verification — in the middleware layer,.
 verify that the tenant_id in the query matches the authenticated user's tenant. Never trust the client to provide the correct tenant_id. (6) Rate limiting — per-tenant rate limits prevent one tenant's heavy usage from impacting others.</p>
   </div>
@@ -906,8 +906,8 @@ verify that the tenant_id in the query matches the authenticated user's tenant. 
   <div class="tp-qa-answer">
 <p>Structured data in RAG: (1) Textualization — convert database rows to natural language: "Employee John Doe (ID: 1234) joined on 2020-03-15,.
 department Engineering, salary \$120,000." This allows semantic search over structured data. (2) Table-aware chunking — preserve table structure by serializing as Markdown or.
-HTML: `| Name | Department | Salary |\n|------|-----------|--------|`. (3) SQL-based retrieval — use LLM-generated SQL for precise lookups: "What is John's salary?" → `SELECT salary FROM employees WHERE name = 'John Doe'`. (4) Hybrid approach — embed textualized descriptions for.
-semantic search + execute SQL for exact queries. (5) Graph RAG — for highly relational data (org charts, product hierarchies), use knowledge graphs (Neo4j) to enable multi-hop retrieval: "Find all products managed by John's direct reports." The choice depends on query types: use SQL for.
+HTML: `| Name | Department | Salary |\n|------|-----------|--------|`. (3) SQL-based retrieval — use LLM-generated SQL for precise lookups: "What is John's salary?" → `SELECT salary FROM employees WHERE name = 'John Doe'`. (4) Hybrid approach — embed textualized descriptions for
+semantic search + execute SQL for exact queries. (5) Graph RAG — for highly relational data (org charts, product hierarchies), use knowledge graphs (Neo4j) to enable multi-hop retrieval: "Find all products managed by John's direct reports." The choice depends on query types: use SQL for
 precise lookups, vector search for semantic exploration, and graph for relationship queries.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -920,10 +920,10 @@ precise lookups, vector search for semantic exploration, and graph for relations
     Q8: How do you evaluate retrieval quality in a RAG system?
   </summary>
   <div class="tp-qa-answer">
-<p>Retrieval quality metrics: (1) Hit Rate (Recall@k) — percentage of queries where the correct document appears in the top-k retrieved results. Target >80% for.
-k=5. (2) Mean Reciprocal Rank (MRR) — average of 1/rank of the first relevant result. Target >0.7. (3) Normalized Discounted Cumulative Gain (NDCG) — position-aware metric that accounts for.
+<p>Retrieval quality metrics: (1) Hit Rate (Recall@k) — percentage of queries where the correct document appears in the top-k retrieved results. Target >80% for
+k=5. (2) Mean Reciprocal Rank (MRR) — average of 1/rank of the first relevant result. Target >0.7. (3) Normalized Discounted Cumulative Gain (NDCG) — position-aware metric that accounts for
 multiple relevant documents with graded relevance. (4) Context relevance — after retrieval, ask an LLM: "Does the retrieved context contain sufficient information to answer the query?" Score 1-5. (5) Faithfulness — does the LLM answer stay grounded in retrieved context?.
-(6) Evaluation dataset — create 100-200 queries with known relevant documents (can be generated by LLM and.
+(6) Evaluation dataset — create 100-200 queries with known relevant documents (can be generated by LLM and
 validated by humans). (7) A/B test retrieval configurations — compare chunk sizes, embedding models, and search algorithms on the evaluation dataset before changing production.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -938,7 +938,7 @@ validated by humans). (7) A/B test retrieval configurations — compare chunk si
   <div class="tp-qa-answer">
 <p>Multi-source ingestion: (1) Connectors — build adapters for each source: PDF files (PyMuPDF, pdfplumber), web pages (BeautifulSoup, Trafilatura), databases (SQLAlchemy), APIs (httpx,.
 custom connectors), cloud storage (S3, Google Drive). (2) Normalization — convert all documents to a common schema: `{id, title, content, source_type,.
-source_path, created_at, updated_at, metadata}`. (3) Deduplication — compute content hash to avoid re-ingesting identical documents. (4) Chunking — apply consistent chunking across all sources. (5) Embedding — generate embeddings in batches for.
+source_path, created_at, updated_at, metadata}`. (3) Deduplication — compute content hash to avoid re-ingesting identical documents. (4) Chunking — apply consistent chunking across all sources. (5) Embedding — generate embeddings in batches for
 efficiency. (6) Incremental updates — on re-ingestion, only process changed documents using hash comparison. (7) Error handling — log ingestion failures,.
 retry with exponential backoff, and alert on persistent failures. (8) Monitoring — track ingestion throughput (docs/minute), error rate, and time since last successful ingestion per source.</p>
   </div>

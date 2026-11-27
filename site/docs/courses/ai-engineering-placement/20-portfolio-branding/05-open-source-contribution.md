@@ -493,7 +493,7 @@ class OSSJobSearch:
 ## Summary
 
 Open source contribution is one of the most effective ways to grow as an engineer and build your professional brand. Start with "good first issues" in active projects you already use. The fork-branch-PR workflow becomes second nature with practice. Beyond code,.
-contribute docs, tests, reviews, and community support — all count toward your reputation. PR etiquette — clear communication, responsiveness, and gratitude — distinguishes excellent contributors. Consistent engagement can lead to maintainer roles and.
+contribute docs, tests, reviews, and community support — all count toward your reputation. PR etiquette — clear communication, responsiveness, and gratitude — distinguishes excellent contributors. Consistent engagement can lead to maintainer roles and
 job opportunities. Track your contributions and highlight them in your portfolio and resume.
 
 ## Practical Takeaways
@@ -651,7 +651,7 @@ adding error handling, writing unit tests, or improving CLI help output.</p>
 add tests, update docs. Follow the project's coding style (check CONTRIBUTING.md). (5) Commit — use conventional commits: `fix(auth): resolve login error.
 when password contains special characters`. (6) Sync with upstream — before pushing, sync your fork with the original repo: `git remote add upstream git@github.com:original/project.git && git fetch upstream && git rebase upstream/main`. (7) Push — `git push origin fix/issue-123`. (8).
 PR — open a PR against the original repo's main branch. Write a clear description: what the issue is,.
-how you fixed it, and any testing done. (9) Review — respond to reviewer feedback, make changes, push updates. (10) Merge — celebrate! Keep the PR focused on one change — small PRs (<400 lines) get reviewed and.
+how you fixed it, and any testing done. (9) Review — respond to reviewer feedback, make changes, push updates. (10) Merge — celebrate! Keep the PR focused on one change — small PRs (<400 lines) get reviewed and
 merged much faster than large ones.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -668,7 +668,7 @@ merged much faster than large ones.</p>
 not about you. The reviewer is investing time to make the project better. (3) Ask clarifying questions — if you don't understand.
 a suggestion: "Could you elaborate on the concern about thread safety? I want to make sure I address it correctly." (4) Push back when appropriate — if you disagree,.
 explain your reasoning with data: "I considered approach A but chose B because it was 30% faster in benchmarks. However, I see your concern about readability. Would a hybrid approach with clearer comments work?" (5) Make requested changes — address all feedback. If you can't resolve everything,.
-explain why. (6) Re-request review — after updating, comment: "Updated the PR based on feedback. Please take another look." (7) Timeline — respond within 24 hours if possible. Fast iteration signals reliability and.
+explain why. (6) Re-request review — after updating, comment: "Updated the PR based on feedback. Please take another look." (7) Timeline — respond within 24 hours if possible. Fast iteration signals reliability and
 enthusiasm. A PR with positive, collaborative review interactions reflects well on you as a future colleague.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -685,7 +685,7 @@ enthusiasm. A PR with positive, collaborative review interactions reflects well 
 integration tests, and edge case tests. Projects often have lower test coverage than desired. (3) Issue triage — help reproduce bugs,.
 add labels, prioritize issues, and close stale ones. (4) Code review — review other contributors' PRs. Many projects need more reviewers than code writers. (5) Community support — answer questions in issues,.
 Discord, Stack Overflow, or the project's forum. (6) Design — improve project logos, UI mockups, website design, or accessibility. (7) Release management — help with release notes,.
-changelogs, and package publishing. All contributions are tracked on GitHub and count toward your open source reputation. Non-code contributions are especially good for.
+changelogs, and package publishing. All contributions are tracked on GitHub and count toward your open source reputation. Non-code contributions are especially good for
 building familiarity with a project before submitting code PRs.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -699,9 +699,9 @@ building familiarity with a project before submitting code PRs.</p>
   </summary>
   <div class="tp-qa-answer">
 <p>Tips for faster PRs: (1) Small scope — keep changes under 400 lines. Large PRs overwhelm reviewers and sit open longer. (2) Clear description — explain what the PR does,.
-why, and how you tested it. Link to the related issue. (3) Add tests — reviewers approve tested code much faster. Include unit tests for.
+why, and how you tested it. Link to the related issue. (3) Add tests — reviewers approve tested code much faster. Include unit tests for
 new functionality and verify existing tests pass. (4) Follow conventions — match the project's code style, commit message format, and branching strategy. Run their linter before submitting. (5) Self-review — review your own diff before submitting. Catch typos,.
-missing edge cases, and debug comments you left behind. (6) Be responsive — reply to feedback within 24 hours. A PR that goes dark for.
+missing edge cases, and debug comments you left behind. (6) Be responsive — reply to feedback within 24 hours. A PR that goes dark for
 a week may be closed or deprioritized. (7) Proactive rebasing — if merge conflicts arise, rebase immediately. Don't wait for the reviewer to ask. (8) Gentle pings — if no review after 2 weeks,.
 politely bump the thread: "Hi maintainers, just checking if anyone has time to review this PR. Happy to make any changes needed."</p>
   </div>
@@ -717,8 +717,8 @@ politely bump the thread: "Hi maintainers, just checking if anyone has time to r
   <div class="tp-qa-answer">
 <p>Path to maintainership: (1) Consistent contribution — contribute regularly over 3-6 months. Quality matters more than quantity. (2) Demonstrate reliability — respond to feedback promptly,.
 meet deadlines, follow through on commitments. (3) Help others — review PRs, answer questions in issues, triage bugs, help new contributors. This shows community stewardship. (4) Understand.
-the full codebase — not just your area. Be able to discuss architecture decisions across the project. (5) Build trust — maintainers need to trust that you won't break things or.
-disappear. Show good judgment in code and communication. (6) Express interest — let current maintainers know you'd like to take on more responsibility: "I'd love to help maintain the documentation module if that would be helpful." (7) Start with specific responsibilities — "I can handle reviewing docs PRs and.
+the full codebase — not just your area. Be able to discuss architecture decisions across the project. (5) Build trust — maintainers need to trust that you won't break things or
+disappear. Show good judgment in code and communication. (6) Express interest — let current maintainers know you'd like to take on more responsibility: "I'd love to help maintain the documentation module if that would be helpful." (7) Start with specific responsibilities — "I can handle reviewing docs PRs and
 merging them" is more actionable than "I want to be a maintainer." Most open source projects need more maintainers and will welcome reliable contributors.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -750,7 +750,7 @@ not just activity — focus on what your contribution achieved for the project a
 <p>Running your own OSS project: (1) Clear documentation — write CONTRIBUTING.md with: how to set up the dev environment, coding standards,.
 PR workflow, and review process. (2) Issue and PR templates — standardize contribution format. This reduces friction for first-time contributors. (3) CI/CD — automate testing,.
 linting, and coverage. A green CI badge attracts contributors. (4) Responsive maintenance — respond to issues and PRs within a week. Even "Thanks,.
-I'll review this weekend" helps. (5) Community culture — be kind and constructive in reviews. Thank every contributor. A welcoming community is a project's greatest asset. (6) Roadmap — maintain a ROADMAP.md or.
+I'll review this weekend" helps. (5) Community culture — be kind and constructive in reviews. Thank every contributor. A welcoming community is a project's greatest asset. (6) Roadmap — maintain a ROADMAP.md or
 use GitHub Projects to show planned features. This gives contributors direction. (7) Release management — use semantic versioning, maintain a CHANGELOG.md,.
 and make frequent releases. (8) Delegation — add trusted contributors as maintainers when the project grows beyond your capacity. (9) Code of Conduct — add a CODE_OF_CONDUCT.md to ensure a safe,.
 inclusive environment.</p>
@@ -784,8 +784,8 @@ function contributionProfile(events: GitHubEvent[]): Contribution {
   profile.mergeRate = profile.prs &gt; 0 ? profile.merged / profile.prs : 0;
   return profile;
 }</code></pre>
-<p>Tracking contributions: (1) GitHub profile — your contribution graph and repositories tab are the primary showcase. Keep pinned repos updated. (2) Contribution tracker — use the GitHub API or.
-tools like `github-contribution-stats` to build a personal dashboard with: PR count, merge rate, lines contributed, and projects touched. (3) Portfolio page — create a dedicated page listing notable contributions with descriptions and.
+<p>Tracking contributions: (1) GitHub profile — your contribution graph and repositories tab are the primary showcase. Keep pinned repos updated. (2) Contribution tracker — use the GitHub API or
+tools like `github-contribution-stats` to build a personal dashboard with: PR count, merge rate, lines contributed, and projects touched. (3) Portfolio page — create a dedicated page listing notable contributions with descriptions and
 links. (4) Resume section — "Open Source" with 3-5 notable PRs and their impact. (5) LinkedIn — add open source contributions to the "Accomplishments" section. (6) Quarterly review — assess contribution patterns: are you contributing regularly? Are merge rates improving?.
 Are you tackling more complex issues? (7) Goals — set specific targets: "Merge 1 PR per month," "Expand.
 to 3 new projects this quarter," "Become a maintainer of one project within 6 months."</p>

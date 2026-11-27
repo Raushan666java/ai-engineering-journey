@@ -627,7 +627,7 @@ print(f"Alignment scores: {evaluator.evaluate(responses)}")
 
 Direct Preference Optimization (DPO) aligns language models with human preferences without training a separate reward model. The DPO loss is: L = -E[log(σ(β(logπ_w/π_ref_w - logπ_l/π_ref_l)))],.
 where β controls alignment strength (typical values: 0.05-0.3). DPO requires only a policy model and a frozen reference model, compared to RLHF which needs 4 models (policy,.
-reference, reward, critic). Preference pairs consist of prompt + chosen response + rejected response. The beta parameter governs how aggressively the policy diverges from the reference — lower β (<0.1) for.
+reference, reward, critic). Preference pairs consist of prompt + chosen response + rejected response. The beta parameter governs how aggressively the policy diverges from the reference — lower β (<0.1) for
 small datasets, higher β (>0.3) for large datasets. Training with LoRA adapters is common, keeping base models frozen while updating low-rank adapters. Win rate against the base model is the primary evaluation metric,.
 typically measured through pairwise comparisons or LLM-as-judge evaluations.
 
@@ -651,11 +651,11 @@ typically measured through pairwise comparisons or LLM-as-judge evaluations.
   </summary>
   <div class="tp-qa-answer">
 <p>Direct Preference Optimization (DPO) is a training method that aligns language models with human preferences without using reinforcement learning. Unlike RLHF (Reinforcement Learning from Human Feedback),.
-which trains a separate reward model and then uses PPO to optimize the policy, DPO directly optimizes the policy using a closed-form mapping between the reward function and.
+which trains a separate reward model and then uses PPO to optimize the policy, DPO directly optimizes the policy using a closed-form mapping between the reward function and
 the optimal policy. The DPO loss function compares the log-probabilities of chosen vs. rejected responses: <code>L_DPO = -E[log σ(β(log π_θ(y_w|x) - π_ref(y_w|x) - log π_θ(y_l|x) + π_ref(y_l|x)))]</code> where y_w is the preferred response,.
 y_l is the dispreferred response, π_θ is the trained policy, π_ref is the reference policy, β controls how much the policy can deviate from the reference,.
 and σ is the sigmoid function. The loss increases when the model assigns higher probability to rejected responses relative to chosen ones. DPO is simpler,.
-more stable, and faster than RLHF because it avoids training a separate reward model and the complex PPO optimization loop. It achieves comparable or.
+more stable, and faster than RLHF because it avoids training a separate reward model and the complex PPO optimization loop. It achieves comparable or
 better alignment results with significantly less engineering complexity.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -668,11 +668,11 @@ better alignment results with significantly less engineering complexity.</p>
     Q2: How do you implement the DPO loss function?
   </summary>
   <div class="tp-qa-answer">
-<p>The DPO loss function is implemented by: (1) for each pair of (chosen, rejected) responses, compute the log-probabilities of each response under the current policy (π_θ) and.
+<p>The DPO loss function is implemented by: (1) for each pair of (chosen, rejected) responses, compute the log-probabilities of each response under the current policy (π_θ) and
 the reference policy (π_ref, which is frozen at initialization); (2) for each response, the log-probability is the sum of per-token log-probabilities (the model's predicted probability of each target token). Use the model's forward pass with labels to get the per-token log-probs efficiently;.
 (3) compute the implicit reward: <code>reward = β — (log π_θ(y|x) - log π_ref(y|x))</code> for both chosen and rejected responses; (4) the DPO loss per pair is: <code>loss = -log(sigmoid(reward_chosen - reward_rejected))</code>;.
 (5) average the loss over all pairs in the batch. Implementation in PyTorch: <code>def dpo_loss(chosen_logps, rejected_logps, ref_chosen_logps, ref_rejected_logps, beta): chosen_rewards = beta * (chosen_logps - ref_chosen_logps);.
-rejected_rewards = beta * (rejected_logps - ref_rejected_logps); loss = -F.logsigmoid(chosen_rewards - rejected_rewards).mean(); return loss</code>. The beta parameter (typically 0.1-0.5) controls how much the policy can deviate from the reference — higher beta = stronger constraint. The loss gradient pushes the policy to increase probability of chosen responses and.
+rejected_rewards = beta * (rejected_logps - ref_rejected_logps); loss = -F.logsigmoid(chosen_rewards - rejected_rewards).mean(); return loss</code>. The beta parameter (typically 0.1-0.5) controls how much the policy can deviate from the reference — higher beta = stronger constraint. The loss gradient pushes the policy to increase probability of chosen responses and
 decrease probability of rejected responses, balanced by the KL constraint from the reference.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -685,10 +685,10 @@ decrease probability of rejected responses, balanced by the KL constraint from t
     Q3: How do you create and curate preference datasets?
   </summary>
   <div class="tp-qa-answer">
-<p>Preference datasets contain triples of (prompt, chosen_response, rejected_response) where chosen is preferred over rejected. Creation methods: (1) Human annotation — human raters compare two or.
-more responses to the same prompt and select the better one. Use platforms like Scale AI, Surge, or internal raters. Each pair is rated by 3-5 raters for.
-reliability, with inter-rater agreement tracked; (2) AI feedback — use a stronger model (GPT-4, Claude) to compare responses from a weaker model. This is cheaper but.
-may not capture human preferences accurately; (3) Implicit feedback — use production logs: responses that users upvote/thumbs-up become chosen, downvoted/thumbs-down become rejected. This provides real-world preference data but.
+<p>Preference datasets contain triples of (prompt, chosen_response, rejected_response) where chosen is preferred over rejected. Creation methods: (1) Human annotation — human raters compare two or
+more responses to the same prompt and select the better one. Use platforms like Scale AI, Surge, or internal raters. Each pair is rated by 3-5 raters for
+reliability, with inter-rater agreement tracked; (2) AI feedback — use a stronger model (GPT-4, Claude) to compare responses from a weaker model. This is cheaper but
+may not capture human preferences accurately; (3) Implicit feedback — use production logs: responses that users upvote/thumbs-up become chosen, downvoted/thumbs-down become rejected. This provides real-world preference data but
 may be noisy; (4) Public datasets — Anthropic's HH-RLHF (helpful/harmless), OpenAI's WebGPT comparisons, Stanford's SHP (social media preferences). Curation: filter pairs where the chosen response is not clearly better (low annotator.
 agreement), balance for diversity (topic, difficulty, response style), and ensure the rejected response is plausible (not obviously wrong or nonsensical). A good preference dataset has 10K-100K pairs covering diverse scenarios. Data quality is critical — noise in preference labels directly degrades alignment quality.</p>
   </div>
@@ -706,8 +706,8 @@ agreement), balance for diversity (topic, difficulty, response style), and ensur
 (2) uses PPO (Proximal Policy Optimization) to optimize the policy against the reward model; (3) requires maintaining four models: policy, reference,.
 reward, value — requiring significant engineering and compute; (4) more complex training loop with advantage estimation, clipping, and KL penalty. DPO: (1) directly optimizes policy from preference pairs — no reward model needed;.
 (2) simpler training loop — just standard loss minimization on (chosen, rejected) pairs; (3) more stable training — no reward hacking (where the policy exploits reward model weaknesses);.
-(4) faster training — 2-3x faster than PPO because no reward model evaluation and no value function. Empirical results: DPO matches or.
-exceeds PPO on most alignment benchmarks (MT-Bench, Chatbot Arena) while being significantly simpler. DPO's main limitation: it needs on-policy preference data (responses from the current policy) for.
+(4) faster training — 2-3x faster than PPO because no reward model evaluation and no value function. Empirical results: DPO matches or
+exceeds PPO on most alignment benchmarks (MT-Bench, Chatbot Arena) while being significantly simpler. DPO's main limitation: it needs on-policy preference data (responses from the current policy) for
 optimal results, though off-policy data (from a different model) still works well. For most practical alignment tasks, DPO is the recommended approach.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -720,7 +720,7 @@ optimal results, though off-policy data (from a different model) still works wel
     Q5: What is the beta parameter in DPO and how do you tune it?
   </summary>
   <div class="tp-qa-answer">
-<p>The beta (β) parameter in DPO controls the KL divergence constraint — how much the trained policy can deviate from the reference policy. Higher β = stronger constraint = smaller deviation = less alignment but.
+<p>The beta (β) parameter in DPO controls the KL divergence constraint — how much the trained policy can deviate from the reference policy. Higher β = stronger constraint = smaller deviation = less alignment but
 less risk of degeneration. Lower β = weaker constraint = more alignment but risk of overfitting to preference data. Typical values: (1) β=0.1 — aggressive alignment,.
 used when the preference dataset is very high quality and diverse; (2) β=0.3 — recommended default, balances alignment and KL constraint;.
 (3) β=0.5 — conservative alignment, minimizes degeneration risk. Tuning β: (1) train with different β values (0.1, 0.3, 0.5) and evaluate on held-out preference pairs — measure how often the trained model prefers chosen vs rejected responses;.
@@ -738,11 +738,11 @@ clean data can use lower β (more alignment). The reference policy for KL comput
     Q6: How do you implement DPO training with the TRL library?
   </summary>
   <div class="tp-qa-answer">
-<p>DPO training with the TRL (Transformer Reinforcement Learning) library: (1) Install — <code>pip install trl peft transformers datasets accelerate bitsandbytes</code>; (2) Load the base model (SFT model) and.
+<p>DPO training with the TRL (Transformer Reinforcement Learning) library: (1) Install — <code>pip install trl peft transformers datasets accelerate bitsandbytes</code>; (2) Load the base model (SFT model) and
 reference model — typically the same model initially: <code>AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.bfloat16, device_map="auto")</code>. The reference model is loaded separately or <code>DPOTrainer</code> creates it automatically;.
 (3) Prepare preference dataset — HuggingFace dataset with "prompt", "chosen", "rejected" columns. Tokenize each column with the same tokenizer; (4) Configure DPO arguments — <code>DPOConfig(output_dir="./dpo-out",.
 beta=0.1, learning_rate=5e-6 (lower than SFT because alignment is more delicate), per_device_train_batch_size=4, gradient_accumulation_steps=8, num_train_epochs=1, warmup_ratio=0.1, logging_steps=10, save_strategy="epoch", fp16=True, max_length=1024, max_prompt_length=512)</code>; (5) Initialize DPOTrainer — <code>DPOTrainer(model,.
-ref_model, args, train_dataset, tokenizer=tokenizer)</code> — the trainer handles per-token log-probability computation, loss calculation, and gradient updates; (6) Train — <code>trainer.train()</code>. The DPOTrainer handles the complexity of computing log-probabilities for.
+ref_model, args, train_dataset, tokenizer=tokenizer)</code> — the trainer handles per-token log-probability computation, loss calculation, and gradient updates; (6) Train — <code>trainer.train()</code>. The DPOTrainer handles the complexity of computing log-probabilities for
 both chosen and rejected responses under both current and reference policies. Training typically takes 1-2 hours for 10K pairs on a single A100.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -759,7 +759,7 @@ both chosen and rejected responses under both current and reference policies. Tr
 (2) MT-Bench — multi-turn conversation quality judged by GPT-4. DPO typically improves MT-Bench scores by 0.2-0.5 points over the SFT base;.
 (3) AlpacaEval 2.0 — single-turn instruction following with length-controlled win rate against GPT-4. Measures how well the model follows instructions aligned with human preferences;.
 (4) Reward model score — if available, use an independent reward model to score the model's outputs. DPO should increase the reward score vs. the SFT base;.
-(5) Human evaluation — side-by-side comparison of DPO model vs. SFT base by human raters. Measure win rate; (6) Safety evaluation — test with harmful prompts to ensure alignment didn't reduce safety guardrails. Monitor: KL divergence from reference policy (should not exceed 10-15 nats for.
+(5) Human evaluation — side-by-side comparison of DPO model vs. SFT base by human raters. Measure win rate; (6) Safety evaluation — test with harmful prompts to ensure alignment didn't reduce safety guardrails. Monitor: KL divergence from reference policy (should not exceed 10-15 nats for
 stable training), reward accuracy on validation set, and general capability metrics (MMLU) to detect regression. DPO should improve alignment without significantly degrading general capabilities.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -792,12 +792,12 @@ training curves — loss should decrease steadily. If loss oscillates or increas
   </summary>
   <div class="tp-qa-answer">
 <p>Combining DPO with SFT training is the standard two-stage alignment pipeline: Stage 1 — SFT (Supervised Fine-Tuning): (1) train the base model on high-quality (instruction,.
-response) pairs to teach it to follow instructions; (2) use standard cross-entropy loss on chosen responses only; (3) this produces the SFT model that can follow instructions but.
-may not align with nuanced human preferences. Stage 2 — DPO: (1) load the SFT model as both the policy and.
-reference model; (2) train on (prompt, chosen, rejected) triples using DPO loss; (3) this shifts the policy toward preferred responses and.
+response) pairs to teach it to follow instructions; (2) use standard cross-entropy loss on chosen responses only; (3) this produces the SFT model that can follow instructions but
+may not align with nuanced human preferences. Stage 2 — DPO: (1) load the SFT model as both the policy and
+reference model; (2) train on (prompt, chosen, rejected) triples using DPO loss; (3) this shifts the policy toward preferred responses and
 away from dispreferred ones. Benefits: the SFT stage ensures the model can generate coherent responses in the target format, and the DPO stage aligns response quality with human preferences. Without SFT first,.
 DPO may struggle because the model can't generate good enough responses to compare. Combined training: some implementations mix SFT loss and.
-DPO loss in a single stage: <code>L = L_DPO + λ * L_SFT</code> where λ controls the SFT strength (typically 0.1-0.5). The SFT component provides a grounding signal that prevents the model from drifting too far. This combined approach is simpler (one training run) but.
+DPO loss in a single stage: <code>L = L_DPO + λ * L_SFT</code> where λ controls the SFT strength (typically 0.1-0.5). The SFT component provides a grounding signal that prevents the model from drifting too far. This combined approach is simpler (one training run) but
 may not be as effective as the two-stage approach for complex alignment tasks.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -810,7 +810,7 @@ may not be as effective as the two-stage approach for complex alignment tasks.</
     Q10: What are variants of DPO?
   </summary>
   <div class="tp-qa-answer">
-<p>DPO has several variants addressing different limitations: (1) KTO (Kahneman-Tversky Optimization) — uses only one response per prompt (chosen or rejected) instead of pairs. More realistic for.
+<p>DPO has several variants addressing different limitations: (1) KTO (Kahneman-Tversky Optimization) — uses only one response per prompt (chosen or rejected) instead of pairs. More realistic for
 production data where you might only have positive or negative feedback, not both. Loss function uses a reference point based on the average reward;.
 (2) IPO (Identity Preference Optimization) — reformulates DPO as a regression problem, removing the dependency on the sigmoid function. More stable when preference pairs are similar in quality;.
 (3) ORPO (Odds Ratio Preference Optimization) — combines SFT and preference optimization into a single training stage without a reference model. Uses a ratio of odds (probability of chosen vs. rejected) as the training signal. Simpler than DPO because no reference model is needed;.

@@ -839,7 +839,7 @@ class JsonStore {
 <details class="tp-qa-card" data-qid="sql-s10-q1">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q1: JSONB vs JSON data types?</summary>
 <div class="tp-qa-answer"><p>JSON stores text as-is (preserving whitespace, key order, duplicates). JSONB stores a decomposed binary format (no duplicates, sorted keys). JSONB supports indexing (GIN),.
-the @> containment operator, and is faster for querying. JSON preserves original formatting and is slightly faster for input. Use JSONB for.
+the @> containment operator, and is faster for querying. JSON preserves original formatting and is slightly faster for input. Use JSONB for
 querying, JSON for archival.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s10-q2">
@@ -877,7 +877,7 @@ nearest neighbor search, and unnesting complex JSONB or array data. Without LATE
 </details>
 <details class="tp-qa-card" data-qid="sql-s10-q10">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q10: When to use PL/pgSQL vs application code?</summary>
-<div class="tp-qa-answer"><p>Use PL/pgSQL when the logic is tightly coupled to data: complex validation triggers, audit trails, permission checks that must be enforced regardless of application. Use application code for.
+<div class="tp-qa-answer"><p>Use PL/pgSQL when the logic is tightly coupled to data: complex validation triggers, audit trails, permission checks that must be enforced regardless of application. Use application code for
 business logic, complex transformations, and operations needing external services. PL/pgSQL reduces network round-trips but is harder to test and version.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 

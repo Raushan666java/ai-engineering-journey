@@ -784,7 +784,7 @@ rate, latency, user feedback) remain healthy, traffic is gradually increased. If
     Q7: What is prompt drift and how do you detect it?
   </summary>
   <div class="tp-qa-answer">
-<p>Prompt drift occurs when LLM outputs gradually degrade because the base model is updated, the prompt subtly changes over time, or.
+<p>Prompt drift occurs when LLM outputs gradually degrade because the base model is updated, the prompt subtly changes over time, or
 user input distribution shifts. Detect it by tracking evaluation pass rates over time, monitoring output distributions (semantic similarity to golden outputs),.
 and comparing metrics like latency and refusal rates against baselines.</p>
   </div>

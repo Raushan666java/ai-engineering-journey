@@ -613,7 +613,7 @@ loggedAdd(3, 4); // logs: Calling add with [3, 4], Result: 7
 </details>
 <details class="tp-qa-card" data-qid="p02-s09-q2">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q2: How does a closure work?</summary>
-<div class="tp-qa-answer"><p>A closure is a function that retains access to variables from its enclosing scope even after the outer function has returned. Python stores these captured variables in the <code>__closure__</code> attribute (a tuple of cell objects). Closures are the foundation of decorators and.
+<div class="tp-qa-answer"><p>A closure is a function that retains access to variables from its enclosing scope even after the outer function has returned. Python stores these captured variables in the <code>__closure__</code> attribute (a tuple of cell objects). Closures are the foundation of decorators and
 are created whenever a nested function references variables from its containing scope.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="p02-s09-q3">

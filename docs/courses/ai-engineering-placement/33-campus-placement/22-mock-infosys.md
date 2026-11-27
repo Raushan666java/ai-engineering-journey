@@ -3,7 +3,7 @@ description: "This mock simulates the Infosys (InfyTQ / System Engineer) cogniti
 ---
 
 <!-- improved -->
-﻿# Infosys Mock Test - Full Pattern Simulation (50 Questions)
+# Infosys Mock Test - Full Pattern Simulation (50 Questions)
 
 > This mock simulates the Infosys (InfyTQ / System Engineer) cognitive test.
 > Time limits: Quantitative 35 min, Logical Reasoning 25 min, Verbal 15 min. Total: 75 minutes.
@@ -23,6 +23,33 @@ description: "This mock simulates the Infosys (InfyTQ / System Engineer) cogniti
 | Strategy | Answer Easy questions first, skip Hard ones, guess if stuck - never leave blanks |
 
 Suggested time split for quant: Easy 60-75 s, Medium 90-120 s, Hard only if time remains. For verbal, 60 s per question is the budget - do not reread passages more than twice.
+
+## Learning Objectives
+
+- Match the Infosys cognitive split: 20 quant in 35 minutes, 15 logical in 25, 15 verbal in 15.
+- Move fast in the verbal section, which is the tightest in this paper.
+- Handle arithmetic-heavy quant without a calculator.
+- Recognise the recurring Infosys favourites: percentages, work, series, odd one out.
+- Score 17+ in quant, 12+ in logical and 12+ in verbal.
+
+## Attempt Strategy
+
+```mermaid
+flowchart TD
+    START["Start the section"] --> SCAN["First pass: answer the easy questions"]
+    SCAN --> EASY{"Confident within 30 seconds?"}
+    EASY -->|Yes| SOLVE["Solve and move on"]
+    EASY -->|No| FLAG["Flag it, skip"]
+    SOLVE --> MORE{"Time remaining?"}
+    FLAG --> MORE
+    MORE -->|Yes| RETRY["Second pass on flagged questions"]
+    MORE -->|No| SUBMIT["Submit - attempt everything"]
+    RETRY --> SUBMIT
+```
+
+Infosys gives verbal only 15 minutes for 15 questions, which is 60 seconds each — the
+fastest section in the paper. If you arrive late from quant, you lose verbal marks you
+could have taken. Bank the verbal time first.
 
 ## Section 1 - Quantitative Aptitude (20 questions) - 35 minutes
 
@@ -165,3 +192,59 @@ Suggested time split for quant: Easy 60-75 s, Medium 90-120 s, Hard only if time
 | Quant 17+, Logical 12+, Verbal 12+ | Ready | Book the real Infosys test; retake this mock weekly |
 | Any section below par | Focus | Re-drill the corresponding 50-question drill file daily |
 | Overall below 50% | Rebuild | Revise theory files first, then retake this mock |
+
+## Summary
+
+Infosys tests arithmetic fluency more than cleverness. Almost every quant question here
+is a standard type — percentage, work, pipes, ratio, series — solved by a formula you
+already know. The differentiator is speed, and the section that punishes slowness hardest
+is verbal at 60 seconds per question.
+
+The paper rewards candidates who bank easy verbal marks early instead of spending the
+first ten minutes on a single arrangement puzzle.
+
+## Practical Takeaways
+
+- Do the verbal section at a strict 60 seconds per question; it is the tightest budget.
+- Drill arithmetic without a calculator — most time is lost to basic multiplication.
+- Learn the odd-one-out pattern: perfect squares, prime bases, composite bases.
+- Skip any arrangement question that is not resolving within 60 seconds.
+- Score each section against its own cut-off and fix the lowest one first.
+
+## Chapter Quiz
+
+**1.** If 40% of a number is 128, then 75% of the same number is:
+
+(A) 220 (B) 240 (C) 250 (D) 260
+
+**2.** A pipe fills a tank in 16 hours and a leak empties it in 24 hours. With both open, the tank fills in:
+
+(A) 40 hours (B) 48 hours (C) 52 hours (D) 56 hours
+
+**3.** Two numbers are in the ratio 5:7. Subtracting 9 from each gives 4:6. The smaller number is:
+
+(A) 35 (B) 40 (C) 45 (D) 50
+
+**4.** Odd one out: 16, 36, 49, 64, 81
+
+(A) 16 (B) 36 (C) 49 (D) 81
+
+**5.** Fill in the blank: "She is allergic ___ peanuts."
+
+(A) from (B) to (C) with (D) of
+
+### Answers
+
+1. **(B)** — number = 128 / 0.40 = 320; 75% of 320 = 240.
+2. **(B)** — 1/16 − 1/24 = 3/48 − 2/48 = 1/48, so 48 hours.
+3. **(C)** — (5k − 9)/(7k − 9) = 4/6 gives k = 9, so the numbers are 45 and 63.
+4. **(C)** — 49 is 7², the only perfect square with a prime base; the rest are 4², 6², 8², 9².
+5. **(B)** — the fixed preposition is "allergic to".
+
+## Exercises
+
+1. Run verbal in 12 minutes instead of 15 to build a time buffer.
+2. Do 20 arithmetic questions with no calculator and time them.
+3. Write the perfect squares to 20² and cubes to 12³ from memory.
+4. Take five odd-one-out questions and state the rule before choosing.
+5. Re-take the paper and compare the verbal section score specifically.

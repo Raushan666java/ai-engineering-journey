@@ -26,7 +26,38 @@ description: "Simulates the Wipro National Level Talent Hunt aptitude section: 1
 | Passing | 70%+ recommended |
 | Flavor | Arithmetic-heavy: percentages, TSD, time & work; reasoning with puzzles |
 
-## Section 1 — Quantitative Aptitude (18 questions) — 35 minutes
+## Learning Objectives
+
+- Match the Wipro NLTH split: 18 quant in 35 minutes, 14 logical in 25, 12 verbal in 20.
+- Adapt strategy to negative marking, which some Wipro years apply.
+- Handle growth, speed and arrangement questions without a calculator.
+- Draw family trees and rows instead of holding them in memory.
+- Score 33 or more, the comfortable band for NLTH.
+
+## Attempt Strategy
+
+```mermaid
+flowchart TD
+    START["Check the instructions first"] --> NEG{"Negative marking?"}
+    NEG -->|Yes| CARE["Attempt only what you can justify - a wrong answer costs a mark"]
+    NEG -->|No| ALL["Attempt everything - a blank is a guaranteed zero"]
+    CARE --> SCAN["First pass: answer the easy questions"]
+    ALL --> SCAN
+    SCAN --> EASY{"Confident within 30 seconds?"}
+    EASY -->|Yes| SOLVE["Solve and move on"]
+    EASY -->|No| FLAG["Flag it, skip"]
+    SOLVE --> MORE{"Time remaining?"}
+    FLAG --> MORE
+    MORE -->|Yes| RETRY["Second pass on flagged questions"]
+    MORE -->|No| SUBMIT["Submit"]
+    RETRY --> SUBMIT
+```
+
+Read the instruction screen before the first question. Negative marking changes the
+correct strategy completely: with it, a considered 30 answers beat a guessed 44. Many
+candidates lose this paper by applying the wrong guessing policy.
+
+## Section 1 - Quantitative Aptitude (18 questions) - 35 minutes
 
 1. (E) What is 60% of 450?
 2. (E) A shopkeeper buys an item for ₹350 and sells it for ₹420. What is the profit percentage?
@@ -149,3 +180,59 @@ description: "Simulates the Wipro National Level Talent Hunt aptitude section: 1
 | 33+ | Ready | Book the real NLTH; redo this mock weekly |
 | 25-32 | Focus | Re-drill failed sections, 60s/question |
 | <25 | Rebuild | Revise theory files first, retake in 4 days |
+
+## Summary
+
+Wipro's paper is ordinary in content and unusual in policy: negative marking appears in
+some years and not others. That single line of instructions changes whether guessing is
+free or expensive, so it must be read before question one.
+
+The topics are standard — growth, speed, work, arrangement, family relations. The
+differentiator is discipline in the arrangement section, where candidates lose time
+trying to solve in their head.
+
+## Practical Takeaways
+
+- Read the negative-marking instruction before starting; adapt guessing accordingly.
+- Draw every family tree and seating row on paper.
+- Learn the successive-growth formula for population and depreciation problems.
+- Convert km/h to m/s by multiplying by 5/18, and never guess at it.
+- Do verbal first if it is your strongest — Wipro does not force a section order.
+
+## Chapter Quiz
+
+**1.** A town's population grows 5% per year and is now 2,20,500. Two years ago it was:
+
+(A) 1,90,000 (B) 2,00,000 (C) 2,10,000 (D) 2,15,000
+
+**2.** A train 220 m long crosses a pole in 11 seconds. Its speed is:
+
+(A) 68 km/h (B) 70 km/h (C) 72 km/h (D) 75 km/h
+
+**3.** In how many ways can 4 boys and 3 girls sit in a row if the girls always sit together?
+
+(A) 360 (B) 720 (C) 1,440 (D) 5,040
+
+**4.** A is the son of B. B is the sister of C. C is the daughter of D. How is A related to D?
+
+(A) Son (B) Grandson (C) Nephew (D) Brother
+
+**5.** Spot the error: "He has been (A) working in (B) this company (C) since five years (D)."
+
+(A) A (B) B (C) C (D) D
+
+### Answers
+
+1. **(B)** — 220500 / 1.05² = 220500 / 1.1025 = 2,00,000.
+2. **(C)** — 220/11 = 20 m/s, and 20 × 3.6 = 72 km/h.
+3. **(B)** — treat the girls as one block: 5! × 3! = 120 × 6 = 720.
+4. **(B)** — B and C are sisters, so A is D's grandson.
+5. **(D)** — a duration takes "for": "for five years".
+
+## Exercises
+
+1. Attempt the paper twice: once guessing freely, once with a 1/3 penalty, and compare.
+2. Do ten successive-growth problems using P(1 + r/100)ⁿ.
+3. Solve five block-arrangement questions where a group must stay together.
+4. Draw five family trees from written descriptions.
+5. Convert ten speeds between km/h and m/s without hesitation.

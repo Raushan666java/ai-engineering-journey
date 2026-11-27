@@ -24,6 +24,36 @@ description: "Complete theory for every reasoning type asked in ANY company apti
 - Draw the diagram before answering any seating, direction or blood-relation question.
 - Recognise when a question cannot be answered from the data given, and say why.
 
+## The Twelve Types, Grouped
+
+```mermaid
+flowchart LR
+    subgraph Pattern["Pattern recognition"]
+        S["Series"]
+        AN["Analogies"]
+        ODD["Odd one out"]
+        FIG["Figure series"]
+    end
+    subgraph Formal["Formal logic"]
+        SYL["Syllogisms"]
+        SC["Statement and conclusion"]
+        DS["Data sufficiency"]
+    end
+    subgraph Arrange["Arrangement"]
+        SEAT["Seating"]
+        PZ["Puzzles, input-output"]
+        DIR["Direction sense"]
+    end
+    subgraph Relation["Codes and relations"]
+        CODE["Coding-decoding"]
+        BR["Blood relations"]
+    end
+```
+
+Every type in this chapter is the same job in a different costume: find the rule,
+then apply it mechanically. The four groups differ only in where the rule lives —
+in the sequence, in the words, in the positions, or in the mapping.
+
 ## Type 1 — Number & Letter Series
 
 ### Method

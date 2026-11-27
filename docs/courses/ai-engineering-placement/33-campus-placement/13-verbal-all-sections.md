@@ -19,6 +19,27 @@ description: "Complete theory for every verbal section asked in ANY company apti
 - Answer reading-comprehension questions from the passage, not from prior knowledge.
 - Recognise the idioms that are asked repeatedly and their figurative meanings.
 
+## The Ten Sections, Grouped
+
+```mermaid
+flowchart TD
+    ROOT["Verbal ability"] --> G["Grammar"]
+    ROOT --> V["Vocabulary"]
+    ROOT --> C["Comprehension"]
+    G --> G1["Sentence correction"]
+    G --> G2["Fill in the blanks"]
+    G --> G3["Cloze test"]
+    V --> V1["Synonyms and antonyms"]
+    V --> V2["Spelling"]
+    V --> V3["Idioms and phrases"]
+    C --> C1["Reading comprehension"]
+    C --> C2["Para jumbles"]
+```
+
+Grammar is the highest-yield group: it is rule-based, so it is learnable, and it
+appears in every company paper. Vocabulary is the slowest to move — start it early
+and keep it daily rather than cramming.
+
 ## Section 1 — Grammar Rules (High-Frequency)
 
 ### Rule Box

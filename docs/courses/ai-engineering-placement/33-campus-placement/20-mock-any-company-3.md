@@ -9,7 +9,34 @@ description: "Company-neutral aptitude simulation, hard difficulty: 18 quant, 15
 > This mock is tougher than real tests — score 75%+ here and any company round feels easy.
 > Difficulty tags: (M) Medium, (H) Hard, (X) Very hard.
 
-## Section 1 — Quantitative Aptitude (18 questions)
+## Learning Objectives
+
+- Hold accuracy on a paper deliberately harder than the real ones.
+- Recognise when a question is hard by design and should be abandoned immediately.
+- Chain two concepts in one question — percentage into interest, ratio into work.
+- Keep a 60-second average even when the questions resist it.
+- Score 34 or more; a 75%+ here means real company papers will feel comfortable.
+
+## Attempt Strategy
+
+```mermaid
+flowchart TD
+    START["Start the section"] --> SCAN["First pass: answer only what is clearly solvable"]
+    SCAN --> HARD{"Method visible within 20 seconds?"}
+    HARD -->|Yes| SOLVE["Solve and move on"]
+    HARD -->|No| ABANDON["Abandon it - this paper is designed to be abandoned"]
+    SOLVE --> MORE{"Time remaining?"}
+    ABANDON --> MORE
+    MORE -->|Yes| RETRY["Second pass on the abandoned ones"]
+    MORE -->|No| SUBMIT["Submit - no negative marking, so guess the rest"]
+    RETRY --> SUBMIT
+```
+
+This paper is harder than any real campus test on purpose. Its value is calibration at
+the top end: if you can clear this, the actual company paper has slack in it. Do not
+treat a mid-twenties score here as failure — treat it as the real number.
+
+## Section 1 - Quantitative Aptitude (18 questions)
 
 1. (M) A trader mixes two qualities of rice costing ₹24/kg and ₹36/kg in the ratio 3:2 and sells the mixture at ₹32/kg. What is his profit percentage?
 2. (M) The difference between CI and SI on a sum for 2 years at 10% per annum is ₹150. What is the sum?
@@ -132,3 +159,60 @@ description: "Company-neutral aptitude simulation, hard difficulty: 18 quant, 15
 | 34+ | Ready | Real company rounds will feel easy — book your tests |
 | 26-33 | Good | Re-drill failed topics, 60s/question |
 | <26 | Needs work | Full theory revision, retake in 4 days |
+
+## Summary
+
+This is the hardest generic paper in the module, and it is hard in a specific way:
+questions combine two topics, so a single formula is not enough. A percentage question
+becomes an interest question; a ratio becomes a time-and-work question. That is what
+the better company papers actually do.
+
+The correct response is not to work faster but to abandon sooner. At this difficulty,
+the candidate who attempts everything scores lower than the one who solves 30 questions
+carefully and guesses the rest.
+
+## Practical Takeaways
+
+- Set a 20-second rule for spotting a method; if there is none, abandon and move.
+- Practise combined-topic questions, not single-topic drills, in the final week.
+- Guess every remaining question if there is no negative marking — a blank is a guaranteed zero.
+- Judge yourself against 75%, not against 100%, on this paper.
+- Re-read the theory file for any topic that appears twice in your wrong answers.
+
+## Chapter Quiz
+
+**1.** Pipes A and B fill a tank in 30 and 45 minutes. Both run for 10 minutes, then A is closed. B alone finishes the rest in:
+
+(A) 18 min (B) 20 min (C) 22 min (D) 25 min
+
+**2.** A boat runs 36 km downstream in 3 hours and 24 km upstream in 4 hours. Its speed in still water is:
+
+(A) 8 km/h (B) 9 km/h (C) 10 km/h (D) 11 km/h
+
+**3.** Milk at ₹40 per litre is mixed with water in the ratio 4:1. The cost per litre of the mixture is:
+
+(A) ₹30 (B) ₹32 (C) ₹34 (D) ₹36
+
+**4.** A sum becomes 4 times itself in 12 years at simple interest. The annual rate is:
+
+(A) 20% (B) 25% (C) 30% (D) 33%
+
+**5.** Statements: All roses are flowers. No flower is a lily. Which conclusion follows?
+
+(A) Only I: no rose is a lily (B) Only II: some lilies are roses (C) Both (D) Neither
+
+### Answers
+
+1. **(B)** — In 10 minutes both fill 10 × (1/30 + 1/45) = 5/9. Remaining 4/9 at B's rate of 1/45 takes 4/9 × 45 = 20 minutes.
+2. **(B)** — Downstream 12 km/h, upstream 6 km/h, so still water = (12 + 6)/2 = 9 km/h.
+3. **(B)** — 4 parts milk at ₹40 out of 5 parts total: 40 × 4/5 = ₹32.
+4. **(B)** — Interest equals 3× principal over 12 years: 3P = P × R × 12/100, so R = 25%.
+5. **(A)** — Every rose is a flower, and no flower is a lily, so no rose can be a lily. II does not follow.
+
+## Exercises
+
+1. Solve ten combined-topic questions (percentage into interest, ratio into work).
+2. Run the paper with a 20-second abandon rule and record how many you skipped.
+3. Re-attempt only the abandoned questions with no time limit, to see whether they were knowledge gaps or pacing gaps.
+4. Write the two-topic chain for any question that combined concepts, in one line each.
+5. Retake the paper after four days and compare both score and skip count.

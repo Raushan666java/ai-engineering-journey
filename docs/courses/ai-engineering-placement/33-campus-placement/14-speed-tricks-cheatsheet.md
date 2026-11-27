@@ -17,6 +17,22 @@ description: "Memorize these cold. Recite them from memory before every drill se
 - Convert units (km/h to m/s, minutes to hours) without hesitating.
 - Decide to skip a question that has no rule and would cost more than ninety seconds.
 
+## Choosing the Rule
+
+```mermaid
+flowchart TD
+    Q["Read the question"] --> T{"What is asked?"}
+    T -->|Percentage change| R1["a + b + ab/100"]
+    T -->|Successive discount| R2["d1 + d2 - d1d2/100"]
+    T -->|Two rates, same distance| R3["Average speed = 2xy/(x+y)"]
+    T -->|Work together| R4["1/t = 1/a + 1/b"]
+    T -->|Pipe and leak| R5["1/t = 1/fill - 1/leak"]
+    T -->|No matching rule| SKIP["Long method if under 90 s, else skip"]
+```
+
+The rules below are ordered by frequency, not by topic. Rules 1-8 appear in almost
+every paper; rules 34-40 appear rarely but cost nothing to memorise.
+
 ## Percentages & Profit/Loss (1-8)
 
 1. **Net percentage change**: a% then b% = `a + b + ab/100` (with signs). +20% then −20% = **−4%**.

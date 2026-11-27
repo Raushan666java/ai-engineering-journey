@@ -20,7 +20,34 @@ description: "Simulates the Accenture cognitive aptitude section: 15 quant, 15 l
 | Passing | 70%+ recommended |
 | Flavor | Verbal dominates: grammar, RC, para jumbles, vocabulary |
 
-## Section 1 — Quantitative Aptitude (15 questions) — 25 minutes
+## Learning Objectives
+
+- Match the Accenture split: 15 quant, 15 logical, 15 verbal, 25 minutes each.
+- Treat verbal as a full third of the paper rather than an afterthought.
+- Order a para jumble by argument flow, not by guesswork.
+- Use elimination on synonym and idiom questions.
+- Score 34 or more; Accenture rewards balanced accuracy over a strong quant score.
+
+## Attempt Strategy
+
+```mermaid
+flowchart TD
+    START["Start the verbal section first if it is your strength"] --> SCAN["First pass: answer the easy questions"]
+    SCAN --> EASY{"Confident within 30 seconds?"}
+    EASY -->|Yes| SOLVE["Solve and move on"]
+    EASY -->|No| FLAG["Flag it, skip"]
+    SOLVE --> MORE{"Time remaining?"}
+    FLAG --> MORE
+    MORE -->|Yes| RETRY["Second pass on flagged questions"]
+    MORE -->|No| SUBMIT["Submit - attempt everything"]
+    RETRY --> SUBMIT
+```
+
+Accenture weights verbal heavily: a third of the paper, and grammar and comprehension
+carry it. Candidates who treat verbal as filler lose the paper on the section they
+could most easily have prepared.
+
+## Section 1 - Quantitative Aptitude (15 questions) - 25 minutes
 
 1. (E) What is 25% of 480?
 2. (E) A shopkeeper sells an article for ₹690 at a 15% profit. What was the cost price?
@@ -145,3 +172,59 @@ description: "Simulates the Accenture cognitive aptitude section: 15 quant, 15 l
 | 34+ | Ready | Book the real Accenture test; redo this mock weekly |
 | 25-33 | Focus | Re-drill failed sections — verbal matters most at Accenture |
 | <25 | Rebuild | Revise theory files first, retake in 4 days |
+
+## Summary
+
+Accenture is the most balanced paper in this set: 15 questions in each section, 25
+minutes each. There is no section to hide a weakness in, and verbal is worth exactly as
+much as quant.
+
+The verbal section is the most improvable, because grammar rules are finite and para
+jumbles follow argument logic. Candidates who drill verbal for a week gain more marks
+here than candidates who drill quant for a week.
+
+## Practical Takeaways
+
+- Revise the twenty grammar rules — they cover most verbal questions in this paper.
+- In para jumbles, find the opening sentence first, then the consequence.
+- For idioms, eliminate by literal meaning first; the correct answer is rarely literal.
+- Give each section its full 25 minutes; do not borrow time from verbal.
+- Score all three sections separately and fix the lowest.
+
+## Chapter Quiz
+
+**1.** Choose the synonym of "eloquent":
+
+(A) hesitant (B) fluent (C) silent (D) unclear
+
+**2.** Choose the antonym of "shallow":
+
+(A) deep (B) narrow (C) light (D) small
+
+**3.** Order the sentences: (a) The company trained staff on the new tool. (b) Complaints dropped sharply. (c) A bank adopted an AI chatbot. (d) Response time halved.
+
+(A) c, a, d, b (B) c, a, b, d (C) a, c, d, b (D) c, b, d, a
+
+**4.** "A blessing in disguise" means:
+
+(A) a hidden gift (B) an apparent misfortune that turns out well (C) a religious ceremony (D) a lucky charm
+
+**5.** Fill in the blank: "If it ___ tomorrow, we will cancel the picnic."
+
+(A) rains (B) rained (C) will rain (D) would rain
+
+### Answers
+
+1. **(B)** — eloquent means fluent and persuasive in speech.
+2. **(A)** — the opposite of shallow is deep.
+3. **(A)** — adoption (c), training (a), then the measurable effect (d), then the outcome (b).
+4. **(B)** — something that looks bad but proves beneficial.
+5. **(A)** — the first conditional takes the present tense in the if-clause: "if it rains, we will…".
+
+## Exercises
+
+1. Do 20 grammar questions and name the rule each one tests.
+2. Build five para jumbles and identify the opening sentence in each.
+3. Write ten idioms with a sentence for each.
+4. Run the verbal section alone in 20 minutes to build a buffer.
+5. Re-take the paper and compare the verbal score specifically.

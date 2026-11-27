@@ -8,6 +8,33 @@ description: "Rule: 45-75 seconds per question. Answers with explanations at the
 > Rule: 45-75 seconds per question. Answers with explanations at the bottom.
 > Covers all 12 types from `logical-all-types.md`. Difficulty tags: (E) Easy, (M) Medium, (H) Hard.
 
+## Learning Objectives
+
+- Identify which of the twelve reasoning types a question belongs to before solving.
+- Apply the standard method for each type instead of improvising under time pressure.
+- Draw the small diagram — row, floor, direction — whenever positions are involved.
+- Separate what a syllogism *guarantees* from what it merely *allows*.
+- Hold 45-75 seconds per question on a mixed set with no type labels.
+
+## Coverage Map
+
+```mermaid
+flowchart LR
+    BANK["100-question bank"] --> A["Sections 1-3<br/>Series, analogies, odd one out"]
+    BANK --> B["Sections 4-6<br/>Syllogisms, coding, blood relations"]
+    BANK --> C["Sections 7-9<br/>Direction, seating, puzzles"]
+    BANK --> D["Sections 10-12<br/>Data sufficiency, conclusions, figures"]
+    A --> KEY["Answer key and score guide"]
+    B --> KEY
+    C --> KEY
+    D --> KEY
+```
+
+Reasoning is lost on scratch paper, not in your head. If a question has positions,
+draw them; if it has statements, write the conclusion you are testing. Candidates
+who solve seating arrangements mentally get them right in practice and wrong in
+the exam.
+
 ## Section 1 — Number & Letter Series (9 questions)
 
 1. (E) Find the next term: 4, 9, 16, 25, 36, ?
@@ -338,3 +365,59 @@ description: "Rule: 45-75 seconds per question. Answers with explanations at the
 | 75-89 | Good | Re-drill sections below 80% at 45s/question |
 | 60-74 | Needs work | Re-read failed types in `logical-all-types.md` |
 | <60 | Weak | Full theory review — methods must be automatic |
+
+## Summary
+
+All twelve reasoning types reduce to one instruction: find the rule, then apply it
+without creativity. Series hide the rule in the numbers, syllogisms hide it in the
+quantifiers, seating hides it in the constraints. The candidate who invents a method
+mid-exam runs out of time; the candidate who applies a rehearsed method finishes.
+
+The two reliable accuracy killers are drawing nothing (arrangement questions) and
+over-reading (syllogisms, where "some" never means "all").
+
+## Practical Takeaways
+
+- Draw every position-based question, even the easy ones — it costs ten seconds and saves the question.
+- In syllogisms, test the conclusion against a counter-example before accepting it.
+- Learn the letter positions A=1 to Z=26; coding-decoding becomes arithmetic.
+- When stuck past 90 seconds, mark and move — reasoning questions are not ordered by difficulty.
+- Keep a list of the exact type you get wrong, not just "logical reasoning".
+
+## Chapter Quiz
+
+**1.** Find the next term: 3, 7, 15, 31, 63, ?
+
+(A) 125 (B) 126 (C) 127 (D) 128
+
+**2.** If "PLAN" is coded as "QMBO", how is "TRAIN" coded?
+
+(A) USBJO (B) USBJN (C) UTBJO (D) VTBJO
+
+**3.** A is B's brother. C is B's mother. D is A's father. How is D related to C?
+
+(A) Father (B) Brother (C) Husband (D) Son
+
+**4.** Statements: All pens are tools. Some tools are red. Conclusions: I. Some pens are red. II. Some tools are pens. Which follows?
+
+(A) Only I (B) Only II (C) Both (D) Neither
+
+**5.** Five people sit in a row. P is at the extreme left. T is immediately right of P. R is at the extreme right. Q is second to the left of R. Who sits in the middle?
+
+(A) P (B) Q (C) S (D) T
+
+### Answers
+
+1. **(C)** — ×2 + 1 each step: 63 × 2 + 1 = 127.
+2. **(A)** — each letter moves one forward: T→U, R→S, A→B, I→J, N→O.
+3. **(C)** — A and B are siblings, so C (B's mother) and D (A's father) are the parents of the same children: husband and wife.
+4. **(B)** — "Some tools are red" says nothing about pens, so I is not guaranteed. II is the valid conversion of the premise.
+5. **(B)** — P=1, T=2, Q=3, S=4, R=5; the middle seat is Q.
+
+## Exercises
+
+1. Re-solve three seating questions with a drawn row and compare your time to solving them mentally.
+2. Take five syllogisms and write a counter-example for every conclusion you reject.
+3. Write the alphabet with positions 1-26 from memory, then check it.
+4. Pick your two weakest types and do ten questions of each at 45 seconds.
+5. Explain out loud why "some A are B" does not imply "some B are A" is false — then state the rule that does hold.

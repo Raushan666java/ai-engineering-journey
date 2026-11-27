@@ -21,7 +21,34 @@ description: "Simulates the Capgemini aptitude section: 18 quant, 12 logical, 12
 | Passing | 70%+ recommended |
 | Flavor | Profit/loss, SI/CI, mixtures & alligation, number system heavy |
 
-## Section 1 — Quantitative Aptitude (18 questions) — 30 minutes
+## Learning Objectives
+
+- Handle Capgemini's arithmetic-heavy mix: profit/loss, interest, mixtures, ratios.
+- Use the difference-between-CI-and-SI shortcut for two-year problems.
+- Solve alligation questions by the ratio method rather than algebra.
+- Keep grammar accuracy high, since verbal is 12 of 42 questions.
+- Score 32 or more, which is the comfortable band for this paper.
+
+## Attempt Strategy
+
+```mermaid
+flowchart TD
+    START["Start the section"] --> SCAN["First pass: answer the easy questions"]
+    SCAN --> EASY{"Confident within 30 seconds?"}
+    EASY -->|Yes| SOLVE["Solve and move on"]
+    EASY -->|No| FLAG["Flag it, skip"]
+    SOLVE --> MORE{"Time remaining?"}
+    FLAG --> MORE
+    MORE -->|Yes| RETRY["Second pass on flagged questions"]
+    MORE -->|No| SUBMIT["Submit - attempt everything"]
+    RETRY --> SUBMIT
+```
+
+Capgemini leans on commercial arithmetic, so the profit/loss, interest and mixture
+formulas must be automatic. Most of the paper is decided before the first calculation,
+by whether you recognised the type quickly.
+
+## Section 1 - Quantitative Aptitude (18 questions) - 30 minutes
 
 1. (E) What is 45% of 320?
 2. (E) A shopkeeper sells an article for ₹828 at a 15% profit. What was the cost price?
@@ -140,3 +167,59 @@ description: "Simulates the Capgemini aptitude section: 18 quant, 12 logical, 12
 | 32+ | Ready | Book the real Capgemini test; redo this mock weekly |
 | 24-31 | Focus | Re-drill failed sections, 60s/question |
 | <24 | Rebuild | Revise theory files first, retake in 4 days |
+
+## Summary
+
+Capgemini's paper is arithmetic-dense: profit and loss, SI and CI, mixtures and
+alligation appear every year. These topics are formula-driven, which means they are
+the most improvable part of any aptitude paper — no intuition required, only recall
+and one clean calculation.
+
+Alligation is the topic most candidates avoid and the one that pays best, because a
+ratio method solves in twenty seconds what algebra solves in two minutes.
+
+## Practical Takeaways
+
+- Memorise the two-year CI-minus-SI difference: P × r² / 10000.
+- Learn alligation as a ratio, not an equation.
+- Convert "sold at a loss, would have gained if sold for ₹X more" into one equation in CP.
+- Drill the four arithmetic topics until each takes under 60 seconds.
+- Keep verbal at 12/12; it is small but it is guaranteed marks.
+
+## Chapter Quiz
+
+**1.** Compound interest on ₹25,000 at 8% per annum for 2 years, compounded annually:
+
+(A) ₹4,000 (B) ₹4,160 (C) ₹4,200 (D) ₹4,400
+
+**2.** A trader sells an article at a 10% loss. Had he sold it for ₹90 more, he would have gained 5%. The cost price is:
+
+(A) ₹800 (B) ₹900 (C) ₹950 (D) ₹1,000
+
+**3.** Water is mixed with milk costing ₹60 per litre to get a mixture worth ₹50 per litre. The ratio of water to milk is:
+
+(A) 1:4 (B) 1:5 (C) 1:6 (D) 2:5
+
+**4.** The difference between compound and simple interest on ₹10,000 for 2 years at 10% per annum is:
+
+(A) ₹90 (B) ₹100 (C) ₹110 (D) ₹120
+
+**5.** Fill in the blank: "Each of the boys ___ completed the work."
+
+(A) have (B) has (C) have been (D) were
+
+### Answers
+
+1. **(B)** — 25000 × (1.08² − 1) = 25000 × 0.1664 = ₹4,160.
+2. **(B)** — 0.95 CP + 90 = 1.05 CP, so 0.10 CP = 90 and CP = ₹900.
+3. **(B)** — alligation: (60 − 50) : (50 − 0) = 10 : 50 = 1 : 5 water to milk.
+4. **(B)** — P × r²/10000 = 10000 × 100/10000 = ₹100.
+5. **(B)** — "each" is singular, so "has", regardless of "boys".
+
+## Exercises
+
+1. Solve ten alligation questions using only the ratio method.
+2. Do 15 CI-minus-SI questions with the P r²/10000 shortcut.
+3. Convert five "would have gained" questions into a single CP equation.
+4. Time yourself on 18 arithmetic questions; target under 30 minutes.
+5. Re-take the paper and compare the quant section only.

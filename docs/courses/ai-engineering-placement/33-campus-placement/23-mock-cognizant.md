@@ -21,7 +21,34 @@ description: "Simulates the Cognizant GenC aptitude section: 16 quant, 12 logica
 | Passing | Competitive sectional cut-offs; every question attempted |
 | Flavor | Fast arithmetic, data interpretation tables, number series heavy |
 
-## Section 1 — Quantitative Aptitude (16 questions) — 30 minutes
+## Learning Objectives
+
+- Complete 40 questions in 60 minutes at a 60-second average, which is Cognizant's real pace.
+- Convert interest, work and ratio questions into a single equation.
+- Draw rows for every position question rather than computing mentally.
+- Read idioms and grammar questions by rule, not by feel.
+- Score 30 or more, the level Cognizant treats as comfortable.
+
+## Attempt Strategy
+
+```mermaid
+flowchart TD
+    START["Start the section"] --> SCAN["First pass: answer the easy questions"]
+    SCAN --> EASY{"Confident within 30 seconds?"}
+    EASY -->|Yes| SOLVE["Solve and move on"]
+    EASY -->|No| FLAG["Flag it, skip"]
+    SOLVE --> MORE{"Time remaining?"}
+    FLAG --> MORE
+    MORE -->|Yes| RETRY["Second pass on flagged questions"]
+    MORE -->|No| SUBMIT["Submit - attempt everything"]
+    RETRY --> SUBMIT
+```
+
+Cognizant is competitive on speed rather than difficulty. The questions are ordinary;
+the 60-second average is not. Practise this paper with a visible timer, because
+finishing is the skill being tested.
+
+## Section 1 - Quantitative Aptitude (16 questions) - 30 minutes
 
 1. (E) What is 32% of 250?
 2. (E) A shopkeeper buys an article for ₹400 and sells it at a 25% profit. What is the selling price?
@@ -136,3 +163,59 @@ description: "Simulates the Cognizant GenC aptitude section: 16 quant, 12 logica
 | 30+ | Ready | Book the real GenC test; redo this mock weekly |
 | 22-29 | Focus | Re-drill failed sections, 60s/question |
 | <22 | Rebuild | Revise theory files first, retake in 4 days |
+
+## Summary
+
+Cognizant does not test exotic topics. It tests whether you can process 40 ordinary
+questions in 60 minutes without losing accuracy. That makes the paper a pacing drill
+more than a knowledge test.
+
+If your accuracy is high and you did not finish, the fix is decision speed, not more
+theory. If you finished and accuracy is low, the fix is the opposite — slow down on
+setup and speed up on arithmetic.
+
+## Practical Takeaways
+
+- Practise with a countdown timer; this paper is decided by the clock.
+- Memorise the compound-interest shortcut: 2 years at r% gives 2r + r²/100 percent.
+- For rows and positions, compute the other person's position from the left first.
+- Learn the common idiom list; they are free marks and take ten minutes to revise.
+- Track finish time and accuracy separately — they need different remedies.
+
+## Chapter Quiz
+
+**1.** ₹9,000 is invested at 12% simple interest. To earn ₹4,320 as interest, the time needed is:
+
+(A) 3 years (B) 4 years (C) 5 years (D) 6 years
+
+**2.** 15 workers build a wall in 24 days. Workers needed to finish in 18 days:
+
+(A) 18 (B) 20 (C) 22 (D) 24
+
+**3.** In a row of 40 students, Aman is 14th from the left and Bhavna is 18th from the right. Students between them:
+
+(A) 6 (B) 7 (C) 8 (D) 9
+
+**4.** Find the next term: 3, 8, 18, 38, 78, ?
+
+(A) 152 (B) 156 (C) 158 (D) 160
+
+**5.** "To hit the nail on the head" means:
+
+(A) to work as a carpenter (B) to cause damage (C) to be exactly right (D) to act quickly
+
+### Answers
+
+1. **(B)** — 4320 / (9000 × 0.12) = 4320 / 1080 = 4 years.
+2. **(B)** — work is constant: 15 × 24 = 360 worker-days, so 360 / 18 = 20 workers.
+3. **(C)** — Bhavna is 40 − 18 + 1 = 23rd from the left, so 23 − 14 − 1 = 8 between them.
+4. **(C)** — ×2 + 2 each step: 78 × 2 + 2 = 158.
+5. **(C)** — to state something exactly right.
+
+## Exercises
+
+1. Run the paper in 50 minutes to force a faster decision cycle.
+2. Do 20 two-year compound-interest questions using the 2r + r²/100 shortcut.
+3. Practise ten row-position questions, always converting to left-hand positions.
+4. Write ten idioms and their meanings from memory.
+5. Re-take the paper and compare finish time before comparing score.

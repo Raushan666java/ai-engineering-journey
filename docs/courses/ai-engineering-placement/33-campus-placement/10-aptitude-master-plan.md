@@ -60,6 +60,23 @@ Master the layer, and every company's pattern becomes a variation you have alrea
 
 ---
 
+## The Plan at a Glance
+
+```mermaid
+flowchart TD
+    W1["Week 1<br/>Quant foundation"] --> W2["Week 2<br/>Logical + verbal"]
+    W2 --> W3["Week 3<br/>Speed + company mocks"]
+    W3 --> W4["Week 4<br/>Final company push"]
+    W1 -.-> LOG["Error log<br/>after every attempt"]
+    W2 -.-> LOG
+    W3 -.-> LOG
+    W4 -.-> LOG
+    LOG --> CHECK{"Score trend rising?"}
+    CHECK -->|Yes| READY["Book the real test"]
+    CHECK -->|No| DRILL["Re-drill weakest topic<br/>for three days"]
+    DRILL --> W3
+```
+
 ## Week-by-Week Schedule
 
 ### Week 1 — Quant Foundation (Days 1-7)

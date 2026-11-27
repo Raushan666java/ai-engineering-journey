@@ -8,7 +8,7 @@ description: "This mock simulates the TCS NQT aptitude section exactly: 24 quant
 ---
 
 <!-- improved -->
-﻿# TCS NQT Mock Test - Full Pattern Simulation (54 Questions)
+# TCS NQT Mock Test - Full Pattern Simulation (54 Questions)
 
 > This mock simulates the TCS NQT aptitude section exactly: 24 quantitative, 15 logical, 15 verbal.
 > Time limits: Quantitative 40 min, Logical Reasoning 25 min, Verbal 20 min. Total: 85 minutes.
@@ -28,6 +28,34 @@ description: "This mock simulates the TCS NQT aptitude section exactly: 24 quant
 | Strategy | Easy questions first, flag Hard ones, return if time remains |
 
 Suggested time split for quant: aim for 90 seconds per Easy, 120 for Medium, skip Hard until the end.
+
+## Learning Objectives
+
+- Reproduce the real TCS NQT split: 24 quant in 40 minutes, 15 logical in 25, 15 verbal in 20.
+- Clear sectional cut-offs, not just the overall score.
+- Use the absence of negative marking correctly — never leave a question blank.
+- Convert profit/loss, ratio and series questions into one-line setups.
+- Score 20+ in quant, 12+ in logical and 12+ in verbal, which is the pattern cut-off shape.
+
+## Attempt Strategy
+
+```mermaid
+flowchart TD
+    START["Start the section"] --> SCAN["First pass: answer the easy questions"]
+    SCAN --> EASY{"Confident within 30 seconds?"}
+    EASY -->|Yes| SOLVE["Solve and move on"]
+    EASY -->|No| FLAG["Flag it, skip"]
+    SOLVE --> MORE{"Time remaining?"}
+    FLAG --> MORE
+    MORE -->|Yes| RETRY["Second pass on flagged questions"]
+    MORE -->|No| GUESS["Guess every blank - TCS has no negative marking"]
+    RETRY --> GUESS
+    GUESS --> SUBMIT["Submit"]
+```
+
+Sectional cut-offs are the trap in TCS NQT. A strong quant score cannot rescue a weak
+verbal section, so protect every section's minimum before chasing a high total. If one
+section is running long, cut it early rather than sacrificing another.
 
 ## Section 1 - Quantitative Aptitude (24 questions) - 40 minutes
 
@@ -177,3 +205,59 @@ Suggested time split for quant: aim for 90 seconds per Easy, 120 for Medium, ski
 | Quant 20+, Logical 12+, Verbal 12+ | Ready | Book the real TCS NQT; redo this mock weekly |
 | Any section below par | Focus | Re-drill the corresponding 50-question drill file daily |
 | Overall below 50% | Rebuild | Revise theory files first, then retake this mock |
+
+## Summary
+
+TCS NQT is the most predictable paper in this module: fixed split, no negative marking,
+sectional cut-offs. Predictability is an advantage — you can rehearse the exact shape
+of the paper rather than guessing at it.
+
+The two failure modes are both strategic. The first is running long in quant and losing
+verbal to the clock. The second is leaving blanks, which is pure loss when there is no
+penalty for a wrong answer.
+
+## Practical Takeaways
+
+- Attempt every single question; with no negative marking, a blank is strictly worse than a guess.
+- Time each section separately and stop at the boundary, even mid-question.
+- Protect the weakest section first — cut-offs are applied per section.
+- Memorise the 40/25/20 minute split and rehearse it until it feels normal.
+- Re-take this mock weekly; the pattern is stable, so the score should climb steadily.
+
+## Chapter Quiz
+
+**1.** A shopkeeper marks an item 25% above cost and gives a 10% discount. His profit percentage is:
+
+(A) 10% (B) 12% (C) 12.5% (D) 15%
+
+**2.** A car covers a distance at 30 km/h and returns at 20 km/h. Its average speed for the round trip is:
+
+(A) 24 km/h (B) 25 km/h (C) 26 km/h (D) 27 km/h
+
+**3.** The HCF and LCM of two numbers are 12 and 240. If one number is 60, the other is:
+
+(A) 36 (B) 48 (C) 60 (D) 72
+
+**4.** Find the next term: 1, 8, 27, 64, 125, ?
+
+(A) 196 (B) 216 (C) 225 (D) 256
+
+**5.** Spot the error: "The manager (A) with his team (B) are going (C) to the meeting (D)."
+
+(A) A (B) B (C) C (D) D
+
+### Answers
+
+1. **(C)** — 100 → 125 → 112.5, so profit is 12.5%.
+2. **(A)** — 2 × 30 × 20 / (30 + 20) = 1200/50 = 24 km/h. The harmonic mean, not the arithmetic one.
+3. **(B)** — HCF × LCM = product, so 12 × 240 = 2880 and 2880 / 60 = 48.
+4. **(B)** — the terms are 1³, 2³, 3³, 4³, 5³, so the next is 6³ = 216.
+5. **(C)** — the subject is "the manager"; "with his team" is a modifier, so the verb is "is going".
+
+## Exercises
+
+1. Run the full paper with three separate timers, one per section.
+2. Score each section against its own cut-off, not against the total.
+3. Do a second attempt where you must finish quant in 35 minutes, to build slack.
+4. Write down every question you guessed and whether the guess was informed or random.
+5. Re-take weekly and plot the three section scores as three separate lines.

@@ -8,6 +8,32 @@ description: "Rule: 30-60 seconds per question. Answers with explanations at the
 > Rule: 30-60 seconds per question. Answers with explanations at the bottom.
 > Covers all 10 sections from `verbal-all-sections.md`. Difficulty tags: (E) Easy, (M) Medium, (H) Hard.
 
+## Learning Objectives
+
+- Apply the ten high-frequency grammar rules without stopping to reason them out.
+- Choose a word by meaning, not by how familiar it sounds.
+- Spot the single error in a sentence faster than you can rewrite the whole sentence.
+- Order a para jumble by following the argument, not by guessing the first line.
+- Hold 30-60 seconds per question, which is what verbal sections actually allow.
+
+## Coverage Map
+
+```mermaid
+flowchart LR
+    BANK["100-question bank"] --> A["Sections 1-3<br/>Grammar, vocabulary, synonyms"]
+    BANK --> B["Sections 4-6<br/>Spelling, correction, fill in the blanks"]
+    BANK --> C["Sections 7-9<br/>Para jumbles, RC, cloze"]
+    BANK --> D["Section 10<br/>Idioms and phrases"]
+    A --> KEY["Answer key and score guide"]
+    B --> KEY
+    C --> KEY
+    D --> KEY
+```
+
+Verbal is the fastest section to improve and the easiest to lose on speed. Grammar
+rules are finite and testable; vocabulary is open-ended, so it needs daily exposure
+rather than a single revision session.
+
 ## Section 1 — Grammar Rules (10 questions)
 
 1. (E) The committee ___ yet to announce the results. (A) has (B) have (C) are (D) were
@@ -289,3 +315,60 @@ Passage 2: "Online learning has grown ___ (87) in the last decade. Students now 
 | 75-89 | Good | Re-drill sections below 80% at 30s/question |
 | 60-74 | Needs work | Re-read failed sections in `verbal-all-sections.md` |
 | <60 | Weak | Full grammar + vocab revision first |
+
+## Summary
+
+Verbal questions are scored on rules and on reading discipline. Grammar is a closed
+set of maybe twenty rules, and almost every error question tests one of them —
+subject-verb agreement, tense consistency, prepositions, comparatives. Vocabulary
+has no closed set, so it rewards the candidate who read something every day for a
+month, not the one who crammed a word list the night before.
+
+The two recurring traps are subject-verb agreement with interrupting phrases
+("the manager, with his team, **is**") and double comparatives ("more better").
+
+## Practical Takeaways
+
+- Learn the twenty grammar rules cold; they cover most error-spotting questions.
+- In sentence correction, find the verb first, then its real subject.
+- For para jumbles, find the sentence that introduces the topic — it is rarely first in the options by accident.
+- Read the RC questions before the passage so you know what to look for.
+- Add ten new words a day with a sentence you wrote yourself; a list alone does not stick.
+
+## Chapter Quiz
+
+**1.** Choose the synonym of "candid":
+
+(A) secretive (B) frank (C) rude (D) clever
+
+**2.** Choose the antonym of "scarce":
+
+(A) rare (B) plentiful (C) costly (D) hidden
+
+**3.** Fill in the blank: "Neither of the answers ___ correct."
+
+(A) are (B) is (C) were (D) have been
+
+**4.** Spot the error: "He has been (A) working here (B) since five years (C)."
+
+(A) A (B) B (C) C (D) No error
+
+**5.** "To bite the bullet" means:
+
+(A) to eat quickly (B) to endure something painful (C) to act rashly (D) to refuse firmly
+
+### Answers
+
+1. **(B)** — candid means open and honest, i.e. frank. It does not imply rudeness.
+2. **(B)** — scarce means in short supply; its opposite is plentiful.
+3. **(B)** — "neither" is singular, so the verb is "is", even though "answers" is plural.
+4. **(C)** — with a duration you use "for": "for five years". "Since" needs a point in time.
+5. **(B)** — from the battlefield practice of biting a bullet during surgery without anaesthetic.
+
+## Exercises
+
+1. Write all twenty grammar rules from memory, then check which ones you missed.
+2. Take any newspaper editorial and mark every subject-verb pair in the first paragraph.
+3. Build ten para jumbles from a paragraph you write, then solve your own.
+4. Write one sentence each for ten new words — the sentence is the test, not the definition.
+5. Re-attempt every error-spotting question you missed and name the rule each one tested.

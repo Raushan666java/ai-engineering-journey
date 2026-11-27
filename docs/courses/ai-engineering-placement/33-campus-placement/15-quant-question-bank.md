@@ -9,6 +9,31 @@ description: "Rule: 60-90 seconds per question. Write your answer, then check ag
 > Covers all 16 topics from `quant-all-topics.md`. Difficulty tags: (E) Easy, (M) Medium, (H) Hard.
 > Score guide at the bottom. Use with `aptitude-drill.py` for timed random drills.
 
+## Learning Objectives
+
+- Name the governing formula for each of the sixteen quant topics before solving.
+- Classify a disguised question into its topic within ten seconds.
+- Hold 60-90 seconds per question across a mixed set, without topic labels to help you.
+- Record every wrong answer by *cause* — misread, wrong formula, arithmetic slip — not by topic.
+- Reach 75/100 before attempting a full company mock.
+
+## Coverage Map
+
+```mermaid
+flowchart LR
+    BANK["100-question bank"] --> A["Sections 1-4<br/>Percentages, profit, interest, speed"]
+    BANK --> B["Sections 5-8<br/>Work, pipes, ratio, partnership"]
+    BANK --> C["Sections 9-12<br/>Averages, mixtures, ages, P and C"]
+    BANK --> D["Sections 13-16<br/>Probability, series, number system, geometry"]
+    A --> KEY["Answer key and score guide"]
+    B --> KEY
+    C --> KEY
+    D --> KEY
+```
+
+Work the sections in order the first time. After that, drill randomly — the real
+test never tells you which topic a question belongs to.
+
 ## Section 1 — Percentages (7 questions)
 
 1. (E) A number is increased by 25% and then decreased by 25%. What is the net percentage change?
@@ -319,3 +344,60 @@ description: "Rule: 60-90 seconds per question. Write your answer, then check ag
 | 75-89 | Good | Re-drill sections below 80%, re-time at 60s/question |
 | 60-74 | Needs work | Re-read failed topics in `quant-all-topics.md`, 20 problems/day |
 | <60 | Weak | Full theory review first — formulas must be memorized cold |
+
+## Summary
+
+The bank is 100 questions spread evenly over sixteen topics, so a weak topic cannot
+hide behind a strong one. Score by section, not by total: 90 overall with 3/7 on
+pipes is still a fail, because the real paper will find that section.
+
+Two numbers decide your readiness — accuracy above 75%, and average time under 90
+seconds. If accuracy is high but time is over, you know the formulas but have not
+automated them. If time is fine but accuracy is low, you are rushing arithmetic you
+could do correctly.
+
+## Practical Takeaways
+
+- Score each section separately; the lowest section sets your revision priority.
+- Rewrite every missed formula from memory the same day, then again after 48 hours.
+- Time the set even when you feel unready — untimed practice hides the real problem.
+- Keep a single error log; three repeats of the same cause means a system fault, not bad luck.
+- Re-drill only failed sections; re-running all 100 wastes the time you need elsewhere.
+
+## Chapter Quiz
+
+**1.** A number is increased by 20% and then decreased by 20%. The net change is:
+
+(A) 0% (B) −4% (C) +4% (D) −2%
+
+**2.** Two pipes fill a tank in 12 and 18 minutes respectively. Working together they take:
+
+(A) 7.2 min (B) 7.5 min (C) 6 min (D) 9 min
+
+**3.** A sum doubles itself in 8 years at simple interest. The annual rate is:
+
+(A) 10% (B) 12.5% (C) 8% (D) 15%
+
+**4.** A train 150 m long passes a pole in 9 seconds. Its speed is:
+
+(A) 54 km/h (B) 60 km/h (C) 48 km/h (D) 72 km/h
+
+**5.** The average of 10 numbers is 24. One number is removed and the average rises to 25. The removed number is:
+
+(A) 15 (B) 14 (C) 16 (D) 24
+
+### Answers
+
+1. **(B)** — 1.2 × 0.8 = 0.96, so the net change is −4%. Equal up and down percentages never cancel.
+2. **(A)** — 1/12 + 1/18 = 5/36, so 36/5 = 7.2 minutes.
+3. **(B)** — Interest equals the principal in 8 years, so R = 100/8 = 12.5%.
+4. **(B)** — 150/9 = 16.67 m/s, and 16.67 × 3.6 = 60 km/h.
+5. **(A)** — Total 240, remaining total 9 × 25 = 225, so the removed number is 15.
+
+## Exercises
+
+1. Re-time sections 1-4 at 60 seconds per question and compare with your first attempt.
+2. Write the sixteen formulas from memory, then check only the ones you hesitated on.
+3. Build a five-question set from your three weakest sections and solve it in eight minutes.
+4. Explain to someone (or to a blank page) why "increase 20%, decrease 20%" is not zero.
+5. Re-attempt every question you got wrong, three days later, without looking at the key first.

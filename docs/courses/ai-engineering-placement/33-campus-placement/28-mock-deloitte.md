@@ -20,7 +20,34 @@ description: "Simulates Deloitte's reasoning-heavy aptitude section: 14 quant, 1
 | Passing | 70%+ recommended |
 | Flavor | Reasoning-heavy; verbal comprehension counts; data sufficiency frequent |
 
-## Section 1 — Quantitative Aptitude (14 questions) — 30 minutes
+## Learning Objectives
+
+- Match the Deloitte split: 14 quant, 15 logical, 15 verbal, 30 minutes each.
+- Treat reasoning as the highest-weight section, because Deloitte does.
+- Apply statement-conclusion rules without over-reading.
+- Read a passage for what it states, not for what it implies.
+- Score 33 or more with balanced sections.
+
+## Attempt Strategy
+
+```mermaid
+flowchart TD
+    START["Start the section"] --> SCAN["First pass: answer the easy questions"]
+    SCAN --> EASY{"Confident within 30 seconds?"}
+    EASY -->|Yes| SOLVE["Solve and move on"]
+    EASY -->|No| FLAG["Flag it, skip"]
+    SOLVE --> MORE{"Time remaining?"}
+    FLAG --> MORE
+    MORE -->|Yes| RETRY["Second pass on flagged questions"]
+    MORE -->|No| SUBMIT["Submit - attempt everything"]
+    RETRY --> SUBMIT
+```
+
+Deloitte weighs reasoning and verbal more than quant, which is unusual for a campus
+paper. Spending revision time on syllogisms, statement-conclusion and reading
+comprehension returns more marks here than another hour of arithmetic.
+
+## Section 1 - Quantitative Aptitude (14 questions) - 30 minutes
 
 1. (E) What is 35% of 280?
 2. (E) A shopkeeper buys an item for ₹250 and sells at a 20% profit. What is the selling price?
@@ -143,3 +170,59 @@ description: "Simulates Deloitte's reasoning-heavy aptitude section: 14 quant, 1
 | 33+ | Ready | Book the real Deloitte test; redo this mock weekly |
 | 25-32 | Focus | Re-drill failed sections — reasoning + verbal are key |
 | <25 | Rebuild | Revise theory files first, retake in 4 days |
+
+## Summary
+
+Deloitte is reasoning-heavy and verbal-heavy, with quant as the smaller third. That
+distribution rewards a different revision plan from most company papers: syllogisms,
+statement-conclusion and reading comprehension matter more than advanced arithmetic.
+
+The recurring trap is over-reading. A conclusion question asks what is guaranteed by
+the statement, not what is plausible in the real world. Candidates who answer from
+general knowledge rather than from the text lose marks they understood.
+
+## Practical Takeaways
+
+- Revise syllogisms and statement-conclusion before quant for this paper.
+- Answer conclusion questions only from the given statement, never from general knowledge.
+- In reading comprehension, read the questions first so the passage has a purpose.
+- Draw direction-sense paths; do not compute them mentally.
+- Keep quant accurate rather than fast — 14 questions in 30 minutes is generous.
+
+## Chapter Quiz
+
+**1.** Statement: "Drink at least two litres of water daily" is printed on a fitness app. Conclusions: I. Water is essential for health. II. Everyone follows the app's advice.
+
+(A) Only I follows (B) Only II follows (C) Both follow (D) Neither follows
+
+**2.** A man walks 3 km North, then 4 km East, then 3 km South. How far is he from the start?
+
+(A) 4 km East (B) 5 km North-East (C) 3 km East (D) 7 km East
+
+**3.** Statements: All flowers are roses. No rose is a lily. Conclusions: I. No flower is a lily. II. Some lilies are roses.
+
+(A) Only I follows (B) Only II follows (C) Both follow (D) Neither follows
+
+**4.** A passage states that rooftop gardens cool buildings, absorb rainwater and reduce drain load, and that cities offer tax breaks for them. Which is NOT a stated benefit?
+
+(A) cooling buildings (B) absorbing rainwater (C) growing rare flowers (D) reducing drain load
+
+**5.** Fill in the blank: "The committee ___ yet to decide."
+
+(A) is (B) are (C) were (D) have
+
+### Answers
+
+1. **(A)** — the advice implies water matters for health, but says nothing about whether everyone complies.
+2. **(A)** — the 3 km North and 3 km South cancel, leaving 4 km East.
+3. **(A)** — every flower is a rose and no rose is a lily, so no flower is a lily. II does not follow.
+4. **(C)** — growing rare flowers is not mentioned anywhere in the passage.
+5. **(A)** — "committee" is treated as a single body, so the verb is "is".
+
+## Exercises
+
+1. Do ten statement-conclusion questions and write the guaranteed conclusion only.
+2. Draw five direction-sense paths on paper and measure the displacement.
+3. Take two reading-comprehension passages, questions first.
+4. Do ten syllogisms and reject every conclusion that is merely plausible.
+5. Re-take the paper and compare the reasoning section specifically.

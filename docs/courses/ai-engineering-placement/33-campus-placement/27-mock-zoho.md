@@ -21,7 +21,34 @@ description: "Simulates Zoho's harder aptitude section: 15 quant, 15 logical, 10
 | Passing | 80%+ recommended — Zoho is competitive |
 | Flavor | Advanced quant (probability, P&C, geometry), puzzle-heavy reasoning |
 
-## Section 1 — Quantitative Aptitude (15 questions) — 40 minutes
+## Learning Objectives
+
+- Handle Zoho's harder quant and logical sets without partial-credit assumptions.
+- Aim for 80% accuracy, because there is no partial marking to soften errors.
+- Solve data sufficiency by testing each statement alone before combining.
+- Recognise odd-one-out by category, not by surface similarity.
+- Score 32 or more on a paper where 80% is the real target.
+
+## Attempt Strategy
+
+```mermaid
+flowchart TD
+    START["Start the section"] --> SCAN["First pass: answer the easy questions"]
+    SCAN --> EASY{"Confident within 30 seconds?"}
+    EASY -->|Yes| SOLVE["Solve and move on"]
+    EASY -->|No| FLAG["Flag it, skip"]
+    SOLVE --> MORE{"Time remaining?"}
+    FLAG --> MORE
+    MORE -->|Yes| RETRY["Second pass on flagged questions"]
+    MORE -->|No| SUBMIT["Submit - attempt everything"]
+    RETRY --> SUBMIT
+```
+
+Zoho is the hardest of the mid-size company papers, and it gives the most time per
+question — 40 minutes for 15 quant questions. That is deliberate: the questions are
+meant to be solved properly, not rushed. Accuracy beats speed here.
+
+## Section 1 - Quantitative Aptitude (15 questions) - 40 minutes
 
 1. (M) A trader mixes two qualities of rice costing ₹30/kg and ₹50/kg in the ratio 3:2 and sells at ₹44/kg. What is the profit percentage?
 2. (M) The difference between CI and SI on a sum for 2 years at 8% per annum is ₹64. What is the sum?
@@ -135,3 +162,58 @@ description: "Simulates Zoho's harder aptitude section: 15 quant, 15 logical, 10
 | 32+ | Ready | Zoho's real test is within reach — book it |
 | 24-31 | Focus | Re-drill failed sections — aim for 80% accuracy |
 | <24 | Rebuild | Full theory revision, retake in 4 days |
+
+## Summary
+
+Zoho's paper is unusual in giving generous time: 40 minutes for 15 quant questions, and
+35 for 15 logical. That changes the target from speed to accuracy — there is no excuse
+for a careless error, and no partial marking to absorb one.
+
+The reasoning section is where the paper is won. Zoho's puzzles are harder than the
+generic ones, but they yield to systematic constraint-drawing rather than intuition.
+
+## Practical Takeaways
+
+- Use the extra time: verify each answer rather than racing to the next question.
+- In data sufficiency, test statement I alone, then II alone, then together — in that order.
+- Classify odd-one-out by category (living, marine, prime, square) before choosing.
+- Draw the full grid for every arrangement; Zoho's puzzles need all constraints written.
+- Target 80%, not 70%, because there is no partial credit.
+
+## Chapter Quiz
+
+**1.** Odd one out: Elephant, Whale, Giraffe, Camel
+
+(A) Elephant (B) Whale (C) Giraffe (D) Camel
+
+**2.** Find the next term: J, L, O, S, X, ?
+
+(A) Z (B) A (C) C (D) D
+
+**3.** Is x greater than zero? (I) x² = 16 (II) x³ = 64
+
+(A) I alone is sufficient (B) II alone is sufficient (C) Either alone is sufficient (D) Neither is sufficient
+
+**4.** If "MOON" is coded as "NPPO", how is "STAR" coded?
+
+(A) TUBS (B) TUBR (C) SVBT (D) TUAT
+
+**5.** Fill in the blank: "This year's sales are ___ than last year's."
+
+(A) better (B) more better (C) best (D) most better
+
+### Answers
+
+1. **(B)** — the whale is marine; the other three are land mammals.
+2. **(D)** — differences are +2, +3, +4, +5, so the next is +6: X (24) + 6 = 30, which wraps to D.
+3. **(B)** — x² = 16 allows x = −4, so I is insufficient; x³ = 64 forces x = 4, so II alone works.
+4. **(A)** — each letter moves one forward: S→T, T→U, A→B, R→S.
+5. **(A)** — "better" is already comparative; "more better" is a double comparative.
+
+## Exercises
+
+1. Solve five data sufficiency questions using the I, II, together order explicitly.
+2. Do ten odd-one-out questions and write the category rule before answering.
+3. Draw full grids for three Zoho-style puzzles.
+4. Do 15 quant questions with no time limit and verify every answer.
+5. Re-take the paper aiming for 80%, not for completion.

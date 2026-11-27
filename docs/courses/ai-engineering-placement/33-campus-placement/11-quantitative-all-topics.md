@@ -19,6 +19,47 @@ description: "Complete theory for every quant topic asked in ANY company aptitud
 - Convert a word problem into one equation, not three.
 - Decide within fifteen seconds whether a question is worth attempting under time pressure.
 
+## Topic Map — How the Sixteen Topics Connect
+
+```mermaid
+flowchart LR
+    subgraph Core["Commercial maths"]
+        PCT["Percentages"] --> PLD["Profit, loss, discount"]
+        PLD --> INT["SI and CI"]
+        PLD --> MIX["Mixtures and alligation"]
+    end
+    subgraph Rate["Rate problems"]
+        TSD["Time, speed, distance"]
+        TW["Time and work"]
+        PIP["Pipes and cisterns"]
+    end
+    subgraph Count["Counting and chance"]
+        PNC["Permutations and combinations"]
+        PROB["Probability"]
+    end
+    subgraph Sense["Number sense"]
+        AVG["Averages"]
+        RAT["Ratio and proportion"]
+        PART["Partnership"]
+        AGE["Ages"]
+        SER["Number series"]
+        NS["Number system"]
+    end
+    PCT --> AVG
+    AVG --> RAT
+    RAT --> PART
+    RAT --> AGE
+    MIX --> RAT
+    TSD --> TW
+    TW --> PIP
+    PNC --> PROB
+    NS --> SER
+```
+
+Percentages sits underneath almost everything: profit/loss, interest, mixtures and
+averages all restate it. Fix percentages first and five other topics get easier at
+the same time.
+
 ## Topic 1 — Percentages
 
 ### Formula Box

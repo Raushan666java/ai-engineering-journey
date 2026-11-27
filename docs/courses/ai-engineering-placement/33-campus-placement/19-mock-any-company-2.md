@@ -9,7 +9,35 @@ description: "Company-neutral aptitude simulation: 16 quant, 12 logical, 12 verb
 > Rule: 60-90 seconds per question. Answers at the bottom — no peeking.
 > Difficulty tags: (E) Easy, (M) Medium, (H) Hard.
 
-## Section 1 — Quantitative Aptitude (16 questions)
+## Learning Objectives
+
+- Sustain 90 seconds per question across 40 questions in 60 minutes.
+- Protect the section split: 16 quant, 12 logical, 12 verbal, none starved.
+- Recover from a bad start without losing the section.
+- Use elimination on verbal questions where the answer is not obvious.
+- Score 32 or more, which is the level at which company papers start feeling routine.
+
+## Attempt Strategy
+
+```mermaid
+flowchart TD
+    START["Start the section"] --> SCAN["First pass: answer the easy questions"]
+    SCAN --> EASY{"Confident within 30 seconds?"}
+    EASY -->|Yes| SOLVE["Solve and move on"]
+    EASY -->|No| FLAG["Flag it, skip"]
+    SOLVE --> MORE{"Time remaining?"}
+    FLAG --> MORE
+    MORE -->|Yes| RETRY["Second pass on flagged questions"]
+    MORE -->|No| SUBMIT["Submit - attempt everything, there is no negative marking"]
+    RETRY --> SUBMIT
+```
+
+This is the first paper long enough that pacing, not knowledge, decides the score.
+Forty questions at 90 seconds is exactly 60 minutes, so any question that overruns
+must be paid for by another. Decide your section order before you start and do not
+renegotiate it mid-paper.
+
+## Section 1 - Quantitative Aptitude (16 questions)
 
 1. (E) A number is increased by 30% and then decreased by 30%. What is the net percentage change?
 2. (E) If 25% of a number is 60, what is 45% of that number?
@@ -122,3 +150,59 @@ description: "Company-neutral aptitude simulation: 16 quant, 12 logical, 12 verb
 | 32+ | Ready | Try Mock #3 (hard) + company mocks |
 | 24-31 | Good | Re-drill failed topics, 60s/question |
 | <24 | Needs work | Re-read theory, retake in 3 days |
+
+## Summary
+
+The step from 30 to 40 questions is not a 33% increase in difficulty — it is a
+different test. At 30 questions you can absorb one slow question; at 40 you cannot.
+This mock exists to make you feel that limit before a real company does.
+
+A score in the low thirties here usually means accuracy is fine and pacing is the
+issue. Check the timestamps of your wrong answers: if they cluster at the end of a
+section, you ran out of time rather than knowledge.
+
+## Practical Takeaways
+
+- Fix your section order before starting, and hold it.
+- Skip any question that has not yielded a method within 30 seconds.
+- Reserve the final five minutes for flagged questions only, never for new ones.
+- Practise at least one full paper with a visible countdown timer.
+- Compare section scores across attempts; flat totals can hide a section getting worse.
+
+## Chapter Quiz
+
+**1.** If 30% of a number is 135, then 80% of the same number is:
+
+(A) 320 (B) 340 (C) 360 (D) 380
+
+**2.** A and B finish a job together in 12 days. A alone takes 20 days. B alone takes:
+
+(A) 25 days (B) 28 days (C) 30 days (D) 32 days
+
+**3.** Find the next term: 2, 6, 12, 20, 30, ?
+
+(A) 40 (B) 42 (C) 44 (D) 46
+
+**4.** If "CAT" is coded as "DBU", how is "DOG" coded?
+
+(A) EPH (B) EPG (C) EOH (D) FPI
+
+**5.** Fill in the blank: "The number of students ___ increased this year."
+
+(A) have (B) has (C) are (D) were
+
+### Answers
+
+1. **(C)** — number = 135 / 0.30 = 450; 80% of 450 = 360.
+2. **(C)** — 1/12 − 1/20 = 5/60 − 3/60 = 2/60 = 1/30, so 30 days.
+3. **(B)** — differences are 4, 6, 8, 10, so the next is 12: 30 + 12 = 42.
+4. **(A)** — each letter moves one forward: D→E, O→P, G→H.
+5. **(B)** — the subject is "the number", which is singular, not "students".
+
+## Exercises
+
+1. Run the paper with a visible timer and note the minute you finish each section.
+2. Re-solve only the questions you flagged, and time that pass separately.
+3. Take five series questions and write the difference table for each.
+4. Practise ten subject-verb agreement sentences with interrupting phrases.
+5. Retake the paper in 55 minutes to force faster decisions, then in 60 to check accuracy.

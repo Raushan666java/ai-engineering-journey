@@ -1,0 +1,98 @@
+{
+  "id": "00-05-oop-and-design-patterns-for-ai-engineers",
+  "chapter": {
+    "id": "00-05-oop-and-design-patterns-for-ai-engineers",
+    "relPath": "00-core-computer-science/05-oop-design-patterns.md",
+    "moduleId": "00-core-computer-science",
+    "moduleTitle": "Core Computer Science for AI Engineers",
+    "chapterNumber": "05",
+    "title": "OOP and Design Patterns for AI Engineers"
+  },
+  "format": "carousel",
+  "scheduledFor": "2026-11-29T13:30:00.000Z",
+  "status": "queued",
+  "caption": "OOP and Design Patterns for AI Engineers\n\nChapter 05 of 322 · Core Computer Science for AI Engineers\n\nComputer science fundamentals are the bedrock of every AI system. Understanding networks, operating systems, databases, and architecture helps you build reliable, scalable AI services.\n\nInside:\n• After this chapter you will be able to apply SOLID principles to build extensible ML pipelines, select the right GoF pattern for.\n• inheritance, and refactor monolithic code into maintainable, testable modules.\n\nThe whole roadmap is free — every chapter, every project, no signup. Link in bio.\n\n#computerscience #networking #systemdesign #placements #dsa #learntocode #csstudent #aiengineering",
+  "hashtags": [
+    "#computerscience",
+    "#networking",
+    "#systemdesign",
+    "#placements",
+    "#dsa",
+    "#learntocode",
+    "#csstudent",
+    "#aiengineering"
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "label": "MODULE 00 · Core Computer Science for AI Engineers",
+      "title": "OOP and Design Patterns for AI Engineers",
+      "body": "Chapter 05 of 322",
+      "index": 1,
+      "total": 7
+    },
+    {
+      "kind": "list",
+      "label": "WHAT YOU'LL GET",
+      "title": "By the end of this chapter",
+      "body": "• After this chapter you will be able to apply SOLID principles to build extensible ML pipelines, select the right GoF pattern for.\n• inheritance, and refactor monolithic code into maintainable, testable modules.",
+      "index": 2,
+      "total": 7
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 01",
+      "title": "Encapsulation, Inheritance, Polymorphism, Composition",
+      "body": "Encapsulation hides internal state behind a public interface. Inheritance defines an is-a relationship — a Dog is an Animal. Polymorphism allows different types to satisfy the same interface. Composition defines a has-a relationship — a Car has an Engine.",
+      "index": 3,
+      "total": 7
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 02",
+      "title": "SOLID Principles",
+      "body": "Single Responsibility: A class should have one reason to change. An LLMService should not also handle caching, rate limiting, and logging.",
+      "index": 4,
+      "total": 7
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 03",
+      "title": "GoF Patterns for AI Engineering",
+      "body": "Strategy Pattern: Define a family of algorithms, encapsulate each, and make them interchangeable. In AI this means swapping inference backends (OpenAI, Anthropic, local), vector stores (Pinecone, Chroma, Qdrant), or embedding models.",
+      "index": 5,
+      "total": 7
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 04",
+      "title": "Clean Architecture",
+      "body": "Dependency rule: source code dependencies point inwards. Outer layers (frameworks, databases, APIs) depend on inner layers (business logic, entities). Inner layers never depend on outer layers.",
+      "index": 6,
+      "total": 7
+    },
+    {
+      "kind": "cta",
+      "label": "FREE",
+      "title": "322 chapters. No paywall.",
+      "body": "DSA · ML · system design · AI agents\nSave this before your next prep session.\n\nLink in bio — all 322 chapters, free.",
+      "index": 7,
+      "total": 7
+    }
+  ],
+  "reelScript": "# Reel script — OOP and Design Patterns for AI Engineers\nModule: Core Computer Science for AI Engineers (00-core-computer-science)\n\n## HOOK (0–3s, no intro, no \"hey guys\")\n\"OOP and Design Patterns for AI Engineers is chapter 05 of 322. This is the part everyone gets wrong.\"\n\n## BEATS (4–25s)\n1. Say it plainly: After this chapter you will be able to apply SOLID principles to build extensible ML pipelines, select the right GoF pattern for.\n2. Show \"Encapsulation, Inheritance, Polymorphism, Composition\" on screen — Encapsulation hides internal state behind a public interface. Inheritance defines an is-a relationship — a Dog is an Animal. Polymorphism allows different types to satisfy the same interface. Composition defines a has-a relationship — a Car has an Engine.\n3. Show \"SOLID Principles\" on screen — Single Responsibility: A class should have one reason to change. An LLMService should not also handle caching, rate limiting, and logging.\n\n## CTA (26–30s)\n\"The full core computer science for ai engineers module is free — link in bio.\"\n\n## Text on screen\nKeep the chapter title pinned top-left the whole reel. 80% watch muted.\n\n## Hashtags\n#computerscience #networking #systemdesign #placements #dsa #learntocode #csstudent #aiengineering",
+  "images": [
+    "out/00-05-oop-and-design-patterns-for-ai-engineers/slide-01.jpg",
+    "out/00-05-oop-and-design-patterns-for-ai-engineers/slide-02.jpg",
+    "out/00-05-oop-and-design-patterns-for-ai-engineers/slide-03.jpg",
+    "out/00-05-oop-and-design-patterns-for-ai-engineers/slide-04.jpg",
+    "out/00-05-oop-and-design-patterns-for-ai-engineers/slide-05.jpg",
+    "out/00-05-oop-and-design-patterns-for-ai-engineers/slide-06.jpg",
+    "out/00-05-oop-and-design-patterns-for-ai-engineers/slide-07.jpg"
+  ],
+  "igMediaId": null,
+  "publishedAt": null,
+  "error": null,
+  "attempts": 0,
+  "createdAt": "2026-11-27T05:26:54.944Z"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "01-01-python-basics-variables-data-types-operators",
+  "chapter": {
+    "id": "01-01-python-basics-variables-data-types-operators",
+    "relPath": "01-python-programming/01-python-basics.md",
+    "moduleId": "01-python-programming",
+    "moduleTitle": "01 — Python for AI",
+    "chapterNumber": "01",
+    "title": "Python Basics — Variables, Data Types, Operators"
+  },
+  "format": "carousel",
+  "scheduledFor": "2026-11-30T13:30:00.000Z",
+  "status": "queued",
+  "caption": "Python Basics — Variables, Data Types, Operators\n\nChapter 01 of 322 · 01 — Python for AI\n\nPython is the lingua franca of AI engineering. Mastering its syntax, data structures, and libraries is non-negotiable for building ML pipelines, APIs, and automation scripts.\n\nInside:\n• Set up a Python development environment and execute code via REPL and scripts\n• Declare variables and understand Python's dynamic typing and reference semantics\n• Use all primitive data types: int, float, str, bool, bytes, None\n\nThe whole roadmap is free — every chapter, every project, no signup. Link in bio.\n\n#python #pythonprogramming #placements #dsa #learntocode #csstudent #aiengineering",
+  "hashtags": [
+    "#python",
+    "#pythonprogramming",
+    "#placements",
+    "#dsa",
+    "#learntocode",
+    "#csstudent",
+    "#aiengineering"
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "label": "MODULE 01 · 01 — Python for AI",
+      "title": "Python Basics — Variables, Data Types, Operators",
+      "body": "Chapter 01 of 322",
+      "index": 1,
+      "total": 8
+    },
+    {
+      "kind": "list",
+      "label": "WHAT YOU'LL GET",
+      "title": "By the end of this chapter",
+      "body": "• Set up a Python development environment and execute code via REPL and scripts\n• Declare variables and understand Python's dynamic typing and reference semantics\n• Use all primitive data types: int, float, str, bool, bytes, None",
+      "index": 2,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 1.1",
+      "title": "Setting Up Python",
+      "body": "Install, REPL, script mode, IDEs",
+      "index": 3,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 1.2",
+      "title": "Variables and Dynamic Typing",
+      "body": "Assignment, type inference, naming conventions",
+      "index": 4,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 1.3",
+      "title": "Numeric Types",
+      "body": "int, float, complex, arithmetic operators",
+      "index": 5,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 1.4",
+      "title": "Strings",
+      "body": "str, indexing, slicing, methods, f-strings",
+      "index": 6,
+      "total": 8
+    },
+    {
+      "kind": "code",
+      "label": "PYTHON",
+      "title": "The part people actually get stuck on",
+      "body": "",
+      "code": "   x = 5\n   x += 2\n   x *= 3\n   print(x)",
+      "index": 7,
+      "total": 8
+    },
+    {
+      "kind": "cta",
+      "label": "FREE",
+      "title": "322 chapters. No paywall.",
+      "body": "DSA · ML · system design · AI agents\nSave this before your next prep session.\n\nLink in bio — all 322 chapters, free.",
+      "index": 8,
+      "total": 8
+    }
+  ],
+  "reelScript": "# Reel script — Python Basics — Variables, Data Types, Operators\nModule: 01 — Python for AI (01-python-programming)\n\n## HOOK (0–3s, no intro, no \"hey guys\")\n\"Python Basics — Variables, Data Types, Operators is chapter 01 of 322. This is the part everyone gets wrong.\"\n\n## BEATS (4–25s)\n1. Say it plainly: Set up a Python development environment and execute code via REPL and scripts\n2. Show \"Setting Up Python\" on screen — Install, REPL, script mode, IDEs\n3. Show \"Variables and Dynamic Typing\" on screen — Assignment, type inference, naming conventions\n4. Type the snippet live:\n   x = 5\n   x += 2\n   x *= 3\n   print(x)\n\n## CTA (26–30s)\n\"The full 01 — python for ai module is free — link in bio.\"\n\n## Text on screen\nKeep the chapter title pinned top-left the whole reel. 80% watch muted.\n\n## Hashtags\n#python #pythonprogramming #placements #dsa #learntocode #csstudent #aiengineering",
+  "images": [
+    "out/01-01-python-basics-variables-data-types-operators/slide-01.jpg",
+    "out/01-01-python-basics-variables-data-types-operators/slide-02.jpg",
+    "out/01-01-python-basics-variables-data-types-operators/slide-03.jpg",
+    "out/01-01-python-basics-variables-data-types-operators/slide-04.jpg",
+    "out/01-01-python-basics-variables-data-types-operators/slide-05.jpg",
+    "out/01-01-python-basics-variables-data-types-operators/slide-06.jpg",
+    "out/01-01-python-basics-variables-data-types-operators/slide-07.jpg",
+    "out/01-01-python-basics-variables-data-types-operators/slide-08.jpg"
+  ],
+  "igMediaId": null,
+  "publishedAt": null,
+  "error": null,
+  "attempts": 0,
+  "createdAt": "2026-11-27T05:26:54.952Z"
+}

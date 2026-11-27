@@ -1,0 +1,107 @@
+{
+  "id": "01-03-strings-formatting-methods-slicing-f-strings-and-regex",
+  "chapter": {
+    "id": "01-03-strings-formatting-methods-slicing-f-strings-and-regex",
+    "relPath": "01-python-programming/03-strings-and-formatting.md",
+    "moduleId": "01-python-programming",
+    "moduleTitle": "01 — Python for AI",
+    "chapterNumber": "03",
+    "title": "Strings & Formatting — Methods, Slicing, F-Strings, and Regex"
+  },
+  "format": "carousel",
+  "scheduledFor": "2026-12-01T13:30:00.000Z",
+  "status": "queued",
+  "caption": "Strings & Formatting — Methods, Slicing, F-Strings, and Regex\n\nChapter 03 of 322 · 01 — Python for AI\n\nPython is the lingua franca of AI engineering. Mastering its syntax, data structures, and libraries is non-negotiable for building ML pipelines, APIs, and automation scripts.\n\nInside:\n• Manipulate strings using built-in methods for transformation, splitting, and joining\n• Extract substrings with slicing notation and stride patterns\n• Format strings using f-strings, .format(), and % formatting\n\nThe whole roadmap is free — every chapter, every project, no signup. Link in bio.\n\n#python #pythonprogramming #placements #dsa #learntocode #csstudent #aiengineering",
+  "hashtags": [
+    "#python",
+    "#pythonprogramming",
+    "#placements",
+    "#dsa",
+    "#learntocode",
+    "#csstudent",
+    "#aiengineering"
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "label": "MODULE 01 · 01 — Python for AI",
+      "title": "Strings & Formatting — Methods, Slicing, F-Strings, and Regex",
+      "body": "Chapter 03 of 322",
+      "index": 1,
+      "total": 8
+    },
+    {
+      "kind": "list",
+      "label": "WHAT YOU'LL GET",
+      "title": "By the end of this chapter",
+      "body": "• Manipulate strings using built-in methods for transformation, splitting, and joining\n• Extract substrings with slicing notation and stride patterns\n• Format strings using f-strings, .format(), and % formatting",
+      "index": 2,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 3.1",
+      "title": "String Methods",
+      "body": "case conversion, strip, split, join, find, replace",
+      "index": 3,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 3.2",
+      "title": "Slicing",
+      "body": "[start:stop:step], negative indices, reversing",
+      "index": 4,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 3.3",
+      "title": "String Formatting",
+      "body": "f-strings, .format(), % formatting, format specifiers",
+      "index": 5,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 3.4",
+      "title": "Regular Expressions",
+      "body": "re.match, re.search, re.findall, re.sub",
+      "index": 6,
+      "total": 8
+    },
+    {
+      "kind": "code",
+      "label": "PYTHON",
+      "title": "The part people actually get stuck on",
+      "body": "",
+      "code": "print(\"%s is %d years old\" % (\"Alice\", 30))\nprint(\"Pi is approximately %.3f\" % 3.14159)",
+      "index": 7,
+      "total": 8
+    },
+    {
+      "kind": "cta",
+      "label": "FREE",
+      "title": "322 chapters. No paywall.",
+      "body": "DSA · ML · system design · AI agents\nSave this before your next prep session.\n\nLink in bio — all 322 chapters, free.",
+      "index": 8,
+      "total": 8
+    }
+  ],
+  "reelScript": "# Reel script — Strings & Formatting — Methods, Slicing, F-Strings, and Regex\nModule: 01 — Python for AI (01-python-programming)\n\n## HOOK (0–3s, no intro, no \"hey guys\")\n\"Strings & Formatting — Methods, Slicing, F-Strings, and Regex is chapter 03 of 322. This is the part everyone gets wrong.\"\n\n## BEATS (4–25s)\n1. Say it plainly: Manipulate strings using built-in methods for transformation, splitting, and joining\n2. Show \"String Methods\" on screen — case conversion, strip, split, join, find, replace\n3. Show \"Slicing\" on screen — [start:stop:step], negative indices, reversing\n4. Type the snippet live:\nprint(\"%s is %d years old\" % (\"Alice\", 30))\nprint(\"Pi is approximately %.3f\" % 3.14159)\n\n## CTA (26–30s)\n\"The full 01 — python for ai module is free — link in bio.\"\n\n## Text on screen\nKeep the chapter title pinned top-left the whole reel. 80% watch muted.\n\n## Hashtags\n#python #pythonprogramming #placements #dsa #learntocode #csstudent #aiengineering",
+  "images": [
+    "out/01-03-strings-formatting-methods-slicing-f-strings-and-regex/slide-01.jpg",
+    "out/01-03-strings-formatting-methods-slicing-f-strings-and-regex/slide-02.jpg",
+    "out/01-03-strings-formatting-methods-slicing-f-strings-and-regex/slide-03.jpg",
+    "out/01-03-strings-formatting-methods-slicing-f-strings-and-regex/slide-04.jpg",
+    "out/01-03-strings-formatting-methods-slicing-f-strings-and-regex/slide-05.jpg",
+    "out/01-03-strings-formatting-methods-slicing-f-strings-and-regex/slide-06.jpg",
+    "out/01-03-strings-formatting-methods-slicing-f-strings-and-regex/slide-07.jpg",
+    "out/01-03-strings-formatting-methods-slicing-f-strings-and-regex/slide-08.jpg"
+  ],
+  "igMediaId": null,
+  "publishedAt": null,
+  "error": null,
+  "attempts": 0,
+  "createdAt": "2026-11-27T05:29:26.025Z"
+}

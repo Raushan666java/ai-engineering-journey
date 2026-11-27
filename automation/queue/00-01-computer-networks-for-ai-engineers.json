@@ -1,0 +1,99 @@
+{
+  "id": "00-01-computer-networks-for-ai-engineers",
+  "chapter": {
+    "id": "00-01-computer-networks-for-ai-engineers",
+    "relPath": "00-core-computer-science/01-computer-networks.md",
+    "moduleId": "00-core-computer-science",
+    "moduleTitle": "Core Computer Science for AI Engineers",
+    "chapterNumber": "01",
+    "title": "Computer Networks for AI Engineers"
+  },
+  "format": "carousel",
+  "scheduledFor": "2026-11-27T13:30:00.000Z",
+  "status": "queued",
+  "caption": "Computer Networks for AI Engineers\n\nChapter 01 of 322 · Core Computer Science for AI Engineers\n\nComputer networking is the backbone of distributed AI systems. Understanding TCP/IP, DNS, load balancing, and HTTP protocols is essential for building scalable ML pipelines and serving models at scale.\n\nInside:\n• OSI & TCP/IP Models\n• TCP vs UDP\n• HTTP/1.1 vs HTTP/2 vs HTTP/3\n\nThe whole roadmap is free — every chapter, every project, no signup. Link in bio.\n\n#computerscience #networking #systemdesign #placements #dsa #learntocode #csstudent #aiengineering",
+  "hashtags": [
+    "#computerscience",
+    "#networking",
+    "#systemdesign",
+    "#placements",
+    "#dsa",
+    "#learntocode",
+    "#csstudent",
+    "#aiengineering"
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "label": "MODULE 00 · Core Computer Science for AI Engineers",
+      "title": "Computer Networks for AI Engineers",
+      "body": "Chapter 01 of 322",
+      "index": 1,
+      "total": 7
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 01",
+      "title": "OSI & TCP/IP Models",
+      "body": "Every AI system is a distributed system. Understanding the network stack means understanding where latency comes from and how to reduce it.",
+      "index": 2,
+      "total": 7
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 02",
+      "title": "TCP vs UDP",
+      "body": "TCP guarantees delivery with three-way handshake, sequence numbers, ACKs, and retransmission. This matters for reliable API calls. The cost is latency — each connection setup costs one RTT (round-trip time). Connection pooling and keep-alive mitigate this.",
+      "index": 3,
+      "total": 7
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 03",
+      "title": "HTTP/1.1 vs HTTP/2 vs HTTP/3",
+      "body": "HTTP/1.1 serializes requests per connection — head-of-line blocking means one slow response holds up others. HTTP/2 introduces multiplexing over a single TCP stream, but TCP head-of-line persists because a lost packet blocks all streams.",
+      "index": 4,
+      "total": 7
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 04",
+      "title": "DNS Resolution",
+      "body": "DNS translates hostnames to IPs. Recursive resolution walks the hierarchy: root → TLD → authoritative. Each hop adds latency. Caching at every level (browser, OS, local resolver, CDN) is critical.",
+      "index": 5,
+      "total": 7
+    },
+    {
+      "kind": "code",
+      "label": "MERMAID",
+      "title": "The part people actually get stuck on",
+      "body": "",
+      "code": "sequenceDiagram\n    participant C as Client\n    participant LB as Load Balancer\n    participant N1 as Node 1\n    participant N2 as Node 2\n    C->>LB: Request\n    LB->>LB: Hash(request_id) % 2\n    LB->>N1: Forward\n    N1-->>C: Response",
+      "index": 6,
+      "total": 7
+    },
+    {
+      "kind": "cta",
+      "label": "FREE",
+      "title": "322 chapters. No paywall.",
+      "body": "DSA · ML · system design · AI agents\nSave this before your next prep session.\n\nLink in bio — all 322 chapters, free.",
+      "index": 7,
+      "total": 7
+    }
+  ],
+  "reelScript": "# Reel script — Computer Networks for AI Engineers\nModule: Core Computer Science for AI Engineers (00-core-computer-science)\n\n## HOOK (0–3s, no intro, no \"hey guys\")\n\"Computer Networks for AI Engineers is chapter 01 of 322. This is the part everyone gets wrong.\"\n\n## BEATS (4–25s)\n1. Show \"OSI & TCP/IP Models\" on screen — Every AI system is a distributed system. Understanding the network stack means understanding where latency comes from and how to reduce it.\n2. Show \"TCP vs UDP\" on screen — TCP guarantees delivery with three-way handshake, sequence numbers, ACKs, and retransmission. This matters for reliable API calls. The cost is latency — each connection setup costs one RTT (round-trip time). Connection pooling and keep-alive mitigate this.\n3. Type the snippet live:\nsequenceDiagram\n    participant C as Client\n    participant LB as Load Balancer\n    participant N1 as Node 1\n\n## CTA (26–30s)\n\"The full core computer science for ai engineers module is free — link in bio.\"\n\n## Text on screen\nKeep the chapter title pinned top-left the whole reel. 80% watch muted.\n\n## Hashtags\n#computerscience #networking #systemdesign #placements #dsa #learntocode #csstudent #aiengineering",
+  "images": [
+    "out/00-01-computer-networks-for-ai-engineers/slide-01.jpg",
+    "out/00-01-computer-networks-for-ai-engineers/slide-02.jpg",
+    "out/00-01-computer-networks-for-ai-engineers/slide-03.jpg",
+    "out/00-01-computer-networks-for-ai-engineers/slide-04.jpg",
+    "out/00-01-computer-networks-for-ai-engineers/slide-05.jpg",
+    "out/00-01-computer-networks-for-ai-engineers/slide-06.jpg",
+    "out/00-01-computer-networks-for-ai-engineers/slide-07.jpg"
+  ],
+  "igMediaId": null,
+  "publishedAt": null,
+  "error": null,
+  "attempts": 0,
+  "createdAt": "2026-11-27T05:26:54.929Z"
+}

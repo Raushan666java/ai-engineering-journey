@@ -1,0 +1,99 @@
+{
+  "id": "00-06-ethical-hacking-security-case-studies-india-global",
+  "chapter": {
+    "id": "00-06-ethical-hacking-security-case-studies-india-global",
+    "relPath": "00-core-computer-science/06-ethical-hacking.md",
+    "moduleId": "00-core-computer-science",
+    "moduleTitle": "Core Computer Science for AI Engineers",
+    "chapterNumber": "06",
+    "title": "Ethical Hacking & Security Case Studies (India & Global)"
+  },
+  "format": "carousel",
+  "scheduledFor": "2026-11-30T04:00:00.000Z",
+  "status": "queued",
+  "caption": "Ethical Hacking & Security Case Studies (India & Global)\n\nChapter 06 of 322 · Core Computer Science for AI Engineers\n\nHacking is not a movie. It is a trillion-dollar industry run by intelligence agencies, organized crime groups, and a long tail of opportunists.\n\nInside:\n• 1. What Ethical Hacking Actually Is\n• 2. The Attacker Landscape: Who Actually Hacks\n• 3. Global Case Studies (2024–2026)\n\nThe whole roadmap is free — every chapter, every project, no signup. Link in bio.\n\n#computerscience #networking #systemdesign #placements #dsa #learntocode #csstudent #aiengineering",
+  "hashtags": [
+    "#computerscience",
+    "#networking",
+    "#systemdesign",
+    "#placements",
+    "#dsa",
+    "#learntocode",
+    "#csstudent",
+    "#aiengineering"
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "label": "MODULE 00 · Core Computer Science for AI Engineers",
+      "title": "Ethical Hacking & Security Case Studies (India & Global)",
+      "body": "Chapter 06 of 322",
+      "index": 1,
+      "total": 7
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 01",
+      "title": "1. What Ethical Hacking Actually Is",
+      "body": "Ethical hacking is authorized. The boundary is permission, scope, and disclosure — not skill. Three rules separate an ethical tester from a criminal:",
+      "index": 2,
+      "total": 7
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 02",
+      "title": "2. The Attacker Landscape: Who Actually Hacks",
+      "body": "The biggest shift of 2024-2026: state actors and criminals now use the same tooling, and both increasingly weaponize AI — AI-generated phishing, deepfake voice OTP calls, and AI-assisted vulnerability research.",
+      "index": 3,
+      "total": 7
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 03",
+      "title": "3. Global Case Studies (2024–2026)",
+      "body": "#### Case 1: Salt Typhoon — the worst telecom hack in history (2021–present)",
+      "index": 4,
+      "total": 7
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 04",
+      "title": "4. India Case Studies",
+      "body": "#### Case 6: Tata Electronics — Apple & Tesla files leaked (June 2026)",
+      "index": 5,
+      "total": 7
+    },
+    {
+      "kind": "code",
+      "label": "MERMAID",
+      "title": "The part people actually get stuck on",
+      "body": "",
+      "code": "sequenceDiagram\n    participant A as Salt Typhoon\n    participant R as Router (edge)\n    participant T as Telecom Core\n    participant P as Peer Telecom\n    A->>R: Exploit CVE (Smart Install)\n    R-->>A: Add SSH key + hidden user\n    A->>T: Dump configs, sniff RADIUS\n    A->>P: Pivot via trusted peering",
+      "index": 6,
+      "total": 7
+    },
+    {
+      "kind": "cta",
+      "label": "FREE",
+      "title": "322 chapters. No paywall.",
+      "body": "DSA · ML · system design · AI agents\nSave this before your next prep session.\n\nLink in bio — all 322 chapters, free.",
+      "index": 7,
+      "total": 7
+    }
+  ],
+  "reelScript": "# Reel script — Ethical Hacking & Security Case Studies (India & Global)\nModule: Core Computer Science for AI Engineers (00-core-computer-science)\n\n## HOOK (0–3s, no intro, no \"hey guys\")\n\"Ethical Hacking & Security Case Studies (India & Global) is chapter 06 of 322. This is the part everyone gets wrong.\"\n\n## BEATS (4–25s)\n1. Show \"1. What Ethical Hacking Actually Is\" on screen — Ethical hacking is authorized. The boundary is permission, scope, and disclosure — not skill. Three rules separate an ethical tester from a criminal:\n2. Show \"2. The Attacker Landscape: Who Actually Hacks\" on screen — The biggest shift of 2024-2026: state actors and criminals now use the same tooling, and both increasingly weaponize AI — AI-generated phishing, deepfake voice OTP calls, and AI-assisted vulnerability research.\n3. Type the snippet live:\nsequenceDiagram\n    participant A as Salt Typhoon\n    participant R as Router (edge)\n    participant T as Telecom Core\n\n## CTA (26–30s)\n\"The full core computer science for ai engineers module is free — link in bio.\"\n\n## Text on screen\nKeep the chapter title pinned top-left the whole reel. 80% watch muted.\n\n## Hashtags\n#computerscience #networking #systemdesign #placements #dsa #learntocode #csstudent #aiengineering",
+  "images": [
+    "out/00-06-ethical-hacking-security-case-studies-india-global/slide-01.jpg",
+    "out/00-06-ethical-hacking-security-case-studies-india-global/slide-02.jpg",
+    "out/00-06-ethical-hacking-security-case-studies-india-global/slide-03.jpg",
+    "out/00-06-ethical-hacking-security-case-studies-india-global/slide-04.jpg",
+    "out/00-06-ethical-hacking-security-case-studies-india-global/slide-05.jpg",
+    "out/00-06-ethical-hacking-security-case-studies-india-global/slide-06.jpg",
+    "out/00-06-ethical-hacking-security-case-studies-india-global/slide-07.jpg"
+  ],
+  "igMediaId": null,
+  "publishedAt": null,
+  "error": null,
+  "attempts": 0,
+  "createdAt": "2026-11-27T05:26:54.948Z"
+}

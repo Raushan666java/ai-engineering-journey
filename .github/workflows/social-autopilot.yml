@@ -1,0 +1,103 @@
+name: Social autopilot
+
+on:
+  schedule:
+    # 09:15 IST — top up the queue and regenerate slides
+    - cron: "45 3 * * *"
+    # every 3 hours — publish anything that is due
+    - cron: "15 */3 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: What to run
+        type: choice
+        options: [plan, publish, dashboard, insights]
+        default: plan
+
+permissions:
+  contents: write
+
+concurrency:
+  group: social-autopilot
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    if: github.event.schedule == '45 3 * * *' || inputs.mode == 'plan' || inputs.mode == 'dashboard'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Install image renderer
+        run: npm install --no-save sharp --no-audit --no-fund
+
+      - name: Plan next posts
+        run: node automation/src/plan.ts --topup 10
+
+      - name: Render slides
+        run: node automation/src/render.ts
+
+      - name: Build dashboard
+        run: node automation/src/dashboard.ts
+
+      - name: Commit queue
+        run: |
+          git config user.name "social-autopilot"
+          git config user.email "actions@users.noreply.github.com"
+          git add automation/queue
+          git diff --staged --quiet || git commit -m "chore(social): plan next posts"
+          git push
+
+  publish:
+    if: github.event.schedule == '15 */3 * * *' || inputs.mode == 'publish'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Install image renderer
+        run: npm install --no-save sharp --no-audit --no-fund
+
+      - name: Render any missing slides
+        run: node automation/src/render.ts
+
+      - name: Publish due posts
+        env:
+          PUBLISH: "1"
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          SUPABASE_BUCKET: ${{ secrets.SUPABASE_BUCKET }}
+        run: node automation/src/publish.ts --real
+
+      - name: Commit publish ledger
+        run: |
+          git config user.name "social-autopilot"
+          git config user.email "actions@users.noreply.github.com"
+          git add automation/queue
+          git diff --staged --quiet || git commit -m "chore(social): publish due posts"
+          git push
+
+  insights:
+    if: inputs.mode == 'insights'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Pull insights
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: node automation/src/insights.ts

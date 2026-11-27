@@ -1,0 +1,75 @@
+{
+  "brand": {
+    "name": "Raushan Kumar",
+    "handle": "@dev.raushan.87",
+    "tagline": "CS student → AI engineer 🇮🇳",
+    "link": "https://github.com/Raushan666java/learning-playground"
+  },
+  "colors": {
+    "ink": "#1a1b23",
+    "inkSoft": "#4a4b52",
+    "accent": "#4446e8",
+    "tint": "#eef0ff",
+    "line": "#d0d2e6",
+    "muted": "#6a6b78",
+    "faint": "#9a9ba6",
+    "paper": "#ffffff"
+  },
+  "fonts": {
+    "display": "Inter, Segoe UI, Arial, sans-serif",
+    "mono": "JetBrains Mono, Consolas, monospace"
+  },
+  "schedule": {
+    "timezone": "Asia/Kolkata",
+    "slots": ["09:30", "19:00"],
+    "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "startAfterHours": 2
+  },
+  "publishing": {
+    "autoApprove": false,
+    "maxPerRun": 1,
+    "apiVersion": "v21.0"
+  },
+  "content": {
+    "maxSlides": 8,
+    "hashtagsBase": [
+      "#placements",
+      "#dsa",
+      "#learntocode",
+      "#csstudent",
+      "#aiengineering"
+    ],
+    "moduleHashtags": {
+      "00": ["#computerscience", "#networking", "#systemdesign"],
+      "01": ["#python", "#pythonprogramming"],
+      "02": ["#sql", "#databases", "#dataengineering"],
+      "03": ["#dsa", "#datastructures", "#algorithms"],
+      "04": ["#git", "#linux", "#devops"],
+      "05": ["#fastapi", "#backend", "#api"],
+      "06": ["#docker", "#kubernetes", "#cloud"],
+      "07": ["#systemdesign", "#interviewprep"],
+      "08": ["#machinelearning", "#ml"],
+      "09": ["#deeplearning", "#pytorch"],
+      "10": ["#nlp", "#transformers"],
+      "11": ["#llm", "#promptengineering"],
+      "12": ["#rag", "#vectordatabase"],
+      "13": ["#aiagents", "#langgraph"],
+      "14": ["#finetuning", "#llmops"],
+      "15": ["#mlops", "#observability"],
+      "16": ["#mlops", "#production"],
+      "17": ["#aisecurity", "#guardrails"],
+      "18": ["#multimodal", "#voiceai"],
+      "19": ["#projects", "#portfolio"],
+      "20": ["#portfolio", "#personalbranding"],
+      "21": ["#interviewprep", "#placement"],
+      "22": ["#aiagents", "#automation"],
+      "23": ["#aitools", "#genai"],
+      "24": ["#statistics", "#math"],
+      "25": ["#dataengineering", "#etl"],
+      "26": ["#productthinking", "#ai"],
+      "27": ["#gpu", "#aiinfrastructure"],
+      "28": ["#certifications", "#career"],
+      "29": ["#researchpapers", "#machinelearning"]
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "00-02-operating-systems-for-ai-engineers",
+  "chapter": {
+    "id": "00-02-operating-systems-for-ai-engineers",
+    "relPath": "00-core-computer-science/02-operating-systems.md",
+    "moduleId": "00-core-computer-science",
+    "moduleTitle": "Core Computer Science for AI Engineers",
+    "chapterNumber": "02",
+    "title": "Operating Systems for AI Engineers"
+  },
+  "format": "carousel",
+  "scheduledFor": "2026-11-28T04:00:00.000Z",
+  "status": "queued",
+  "caption": "Operating Systems for AI Engineers\n\nChapter 02 of 322 · Core Computer Science for AI Engineers\n\nOperating systems manage hardware resources and provide abstractions for process management, memory, and I/O. Understanding OS concepts is crucial for optimizing AI workloads and managing GPU resources.\n\nInside:\n• Process vs Thread\n• Scheduling\n• Memory Management\n\nThe whole roadmap is free — every chapter, every project, no signup. Link in bio.\n\n#computerscience #networking #systemdesign #placements #dsa #learntocode #csstudent #aiengineering",
+  "hashtags": [
+    "#computerscience",
+    "#networking",
+    "#systemdesign",
+    "#placements",
+    "#dsa",
+    "#learntocode",
+    "#csstudent",
+    "#aiengineering"
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "label": "MODULE 00 · Core Computer Science for AI Engineers",
+      "title": "Operating Systems for AI Engineers",
+      "body": "Chapter 02 of 322",
+      "index": 1,
+      "total": 6
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 01",
+      "title": "Process vs Thread",
+      "body": "A process is an independent execution unit with its own address space, file descriptors, and system state. A thread is a lighter unit within a process — threads share the address space but have their own stack and registers.",
+      "index": 2,
+      "total": 6
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 02",
+      "title": "Scheduling",
+      "body": "The Completely Fair Scheduler (CFS) in Linux gives each runnable thread a proportion of CPU time. It uses a red-black tree of tasks sorted by vruntime (virtual runtime). Lower nice values = higher priority = less vruntime growth.",
+      "index": 3,
+      "total": 6
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 03",
+      "title": "Memory Management",
+      "body": "Virtual memory provides each process with a contiguous address space mapped to physical memory through page tables. The Translation Lookaside Buffer (TLB) caches recent translations. A TLB miss walks the page table in hardware or software.",
+      "index": 4,
+      "total": 6
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 04",
+      "title": "File Systems",
+      "body": "- inode: metadata structure storing permissions, ownership, timestamps, block pointers - ext4: journaling, extent-based allocation, good general-purpose choice - XFS: scalable to large files, parallel allocations, better for concurrent I/O - Page cache:…",
+      "index": 5,
+      "total": 6
+    },
+    {
+      "kind": "cta",
+      "label": "FREE",
+      "title": "322 chapters. No paywall.",
+      "body": "DSA · ML · system design · AI agents\nSave this before your next prep session.\n\nLink in bio — all 322 chapters, free.",
+      "index": 6,
+      "total": 6
+    }
+  ],
+  "reelScript": "# Reel script — Operating Systems for AI Engineers\nModule: Core Computer Science for AI Engineers (00-core-computer-science)\n\n## HOOK (0–3s, no intro, no \"hey guys\")\n\"Operating Systems for AI Engineers is chapter 02 of 322. This is the part everyone gets wrong.\"\n\n## BEATS (4–25s)\n1. Show \"Process vs Thread\" on screen — A process is an independent execution unit with its own address space, file descriptors, and system state. A thread is a lighter unit within a process — threads share the address space but have their own stack and registers.\n2. Show \"Scheduling\" on screen — The Completely Fair Scheduler (CFS) in Linux gives each runnable thread a proportion of CPU time. It uses a red-black tree of tasks sorted by vruntime (virtual runtime). Lower nice values = higher priority = less vruntime growth.\n3. Name the mistake most beginners make here\n4. Show the correct version side by side\n\n## CTA (26–30s)\n\"The full core computer science for ai engineers module is free — link in bio.\"\n\n## Text on screen\nKeep the chapter title pinned top-left the whole reel. 80% watch muted.\n\n## Hashtags\n#computerscience #networking #systemdesign #placements #dsa #learntocode #csstudent #aiengineering",
+  "images": [
+    "out/00-02-operating-systems-for-ai-engineers/slide-01.jpg",
+    "out/00-02-operating-systems-for-ai-engineers/slide-02.jpg",
+    "out/00-02-operating-systems-for-ai-engineers/slide-03.jpg",
+    "out/00-02-operating-systems-for-ai-engineers/slide-04.jpg",
+    "out/00-02-operating-systems-for-ai-engineers/slide-05.jpg",
+    "out/00-02-operating-systems-for-ai-engineers/slide-06.jpg"
+  ],
+  "igMediaId": null,
+  "publishedAt": null,
+  "error": null,
+  "attempts": 0,
+  "createdAt": "2026-11-27T05:26:54.933Z"
+}

@@ -1,0 +1,108 @@
+{
+  "id": "00-03-database-internals-for-ai-engineers",
+  "chapter": {
+    "id": "00-03-database-internals-for-ai-engineers",
+    "relPath": "00-core-computer-science/03-database-internals.md",
+    "moduleId": "00-core-computer-science",
+    "moduleTitle": "Core Computer Science for AI Engineers",
+    "chapterNumber": "03",
+    "title": "Database Internals for AI Engineers"
+  },
+  "format": "carousel",
+  "scheduledFor": "2026-11-28T13:30:00.000Z",
+  "status": "queued",
+  "caption": "Database Internals for AI Engineers\n\nChapter 03 of 322 · Core Computer Science for AI Engineers\n\nComputer science fundamentals are the bedrock of every AI system. Understanding networks, operating systems, databases, and architecture helps you build reliable, scalable AI services.\n\nInside:\n• explain how MVCC enables snapshot isolation for ML training data, reason about replication strategies for high-availability model metadata stores, and understand.\n• the distributed consensus algorithms powering modern data infrastructure.\n\nThe whole roadmap is free — every chapter, every project, no signup. Link in bio.\n\n#computerscience #networking #systemdesign #placements #dsa #learntocode #csstudent #aiengineering",
+  "hashtags": [
+    "#computerscience",
+    "#networking",
+    "#systemdesign",
+    "#placements",
+    "#dsa",
+    "#learntocode",
+    "#csstudent",
+    "#aiengineering"
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "label": "MODULE 00 · Core Computer Science for AI Engineers",
+      "title": "Database Internals for AI Engineers",
+      "body": "Chapter 03 of 322",
+      "index": 1,
+      "total": 8
+    },
+    {
+      "kind": "list",
+      "label": "WHAT YOU'LL GET",
+      "title": "By the end of this chapter",
+      "body": "• explain how MVCC enables snapshot isolation for ML training data, reason about replication strategies for high-availability model metadata stores, and understand.\n• the distributed consensus algorithms powering modern data infrastructure.",
+      "index": 2,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 01",
+      "title": "B-tree vs LSM-tree",
+      "body": "B-trees and LSM-trees are the two dominant storage engine families. B-trees organize data in fixed-size pages with a branching factor proportional to page size. They excel at point reads and small range scans.",
+      "index": 3,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 02",
+      "title": "Indexing",
+      "body": "Primary indexes determine physical row order (clustered) or point to row location (non-clustered). Secondary indexes store the primary key as a pointer. Covering indexes include all columns needed by a query, eliminating the table lookup entirely.",
+      "index": 4,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 03",
+      "title": "Query Planning",
+      "body": "The planner estimates costs for each strategy. Sequential scans read all pages — optimal above 10% row access. Index scans traverse the B-tree to find a start position,. then walk leaf pages.",
+      "index": 5,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "KEY IDEA 04",
+      "title": "Transactions and ACID",
+      "body": "Atomicity ensures all-or-nothing execution via write-ahead logging. Consistency preserves database invariants. Isolation prevents concurrent transaction interference. Durability guarantees committed data survives crashes.",
+      "index": 6,
+      "total": 8
+    },
+    {
+      "kind": "code",
+      "label": "MERMAID",
+      "title": "The part people actually get stuck on",
+      "body": "",
+      "code": "sequenceDiagram\n    participant C as Client\n    participant L as Leader\n    participant F1 as Follower 1\n    participant F2 as Follower 2\n    C->>L: Propose value\n    L->>F1: AppendEntries\n    L->>F2: AppendEntries\n    F1-->>L: ACK",
+      "index": 7,
+      "total": 8
+    },
+    {
+      "kind": "cta",
+      "label": "FREE",
+      "title": "322 chapters. No paywall.",
+      "body": "DSA · ML · system design · AI agents\nSave this before your next prep session.\n\nLink in bio — all 322 chapters, free.",
+      "index": 8,
+      "total": 8
+    }
+  ],
+  "reelScript": "# Reel script — Database Internals for AI Engineers\nModule: Core Computer Science for AI Engineers (00-core-computer-science)\n\n## HOOK (0–3s, no intro, no \"hey guys\")\n\"Database Internals for AI Engineers is chapter 03 of 322. This is the part everyone gets wrong.\"\n\n## BEATS (4–25s)\n1. Say it plainly: explain how MVCC enables snapshot isolation for ML training data, reason about replication strategies for high-availability model metadata stores, and understand.\n2. Show \"B-tree vs LSM-tree\" on screen — B-trees and LSM-trees are the two dominant storage engine families. B-trees organize data in fixed-size pages with a branching factor proportional to page size. They excel at point reads and small range scans.\n3. Show \"Indexing\" on screen — Primary indexes determine physical row order (clustered) or point to row location (non-clustered). Secondary indexes store the primary key as a pointer. Covering indexes include all columns needed by a query, eliminating the table lookup entirely.\n4. Type the snippet live:\nsequenceDiagram\n    participant C as Client\n    participant L as Leader\n    participant F1 as Follower 1\n\n## CTA (26–30s)\n\"The full core computer science for ai engineers module is free — link in bio.\"\n\n## Text on screen\nKeep the chapter title pinned top-left the whole reel. 80% watch muted.\n\n## Hashtags\n#computerscience #networking #systemdesign #placements #dsa #learntocode #csstudent #aiengineering",
+  "images": [
+    "out/00-03-database-internals-for-ai-engineers/slide-01.jpg",
+    "out/00-03-database-internals-for-ai-engineers/slide-02.jpg",
+    "out/00-03-database-internals-for-ai-engineers/slide-03.jpg",
+    "out/00-03-database-internals-for-ai-engineers/slide-04.jpg",
+    "out/00-03-database-internals-for-ai-engineers/slide-05.jpg",
+    "out/00-03-database-internals-for-ai-engineers/slide-06.jpg",
+    "out/00-03-database-internals-for-ai-engineers/slide-07.jpg",
+    "out/00-03-database-internals-for-ai-engineers/slide-08.jpg"
+  ],
+  "igMediaId": null,
+  "publishedAt": null,
+  "error": null,
+  "attempts": 0,
+  "createdAt": "2026-11-27T05:26:54.937Z"
+}

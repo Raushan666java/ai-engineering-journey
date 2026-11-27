@@ -1,0 +1,107 @@
+{
+  "id": "01-04-collections-lists-tuples-sets-and-dictionaries",
+  "chapter": {
+    "id": "01-04-collections-lists-tuples-sets-and-dictionaries",
+    "relPath": "01-python-programming/04-collections.md",
+    "moduleId": "01-python-programming",
+    "moduleTitle": "01 — Python for AI",
+    "chapterNumber": "04",
+    "title": "Collections — Lists, Tuples, Sets, and Dictionaries"
+  },
+  "format": "carousel",
+  "scheduledFor": "2026-12-02T04:00:00.000Z",
+  "status": "queued",
+  "caption": "Collections — Lists, Tuples, Sets, and Dictionaries\n\nChapter 04 of 322 · 01 — Python for AI\n\nPython is the lingua franca of AI engineering. Mastering its syntax, data structures, and libraries is non-negotiable for building ML pipelines, APIs, and automation scripts.\n\nInside:\n• Create, access, and manipulate lists with comprehensive methods\n• Use tuples for immutable sequences and understand their performance benefits\n• Leverage sets for membership testing, deduplication, and set operations\n\nThe whole roadmap is free — every chapter, every project, no signup. Link in bio.\n\n#python #pythonprogramming #placements #dsa #learntocode #csstudent #aiengineering",
+  "hashtags": [
+    "#python",
+    "#pythonprogramming",
+    "#placements",
+    "#dsa",
+    "#learntocode",
+    "#csstudent",
+    "#aiengineering"
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "label": "MODULE 01 · 01 — Python for AI",
+      "title": "Collections — Lists, Tuples, Sets, and Dictionaries",
+      "body": "Chapter 04 of 322",
+      "index": 1,
+      "total": 8
+    },
+    {
+      "kind": "list",
+      "label": "WHAT YOU'LL GET",
+      "title": "By the end of this chapter",
+      "body": "• Create, access, and manipulate lists with comprehensive methods\n• Use tuples for immutable sequences and understand their performance benefits\n• Leverage sets for membership testing, deduplication, and set operations",
+      "index": 2,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 4.1",
+      "title": "Lists",
+      "body": "creation, indexing, methods, sorting, copying",
+      "index": 3,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 4.2",
+      "title": "List Comprehensions",
+      "body": "filtering, transformation, nested comprehensions",
+      "index": 4,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 4.3",
+      "title": "Tuples",
+      "body": "immutability, packing/unpacking, named tuples",
+      "index": 5,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 4.4",
+      "title": "Sets",
+      "body": "hash-based membership, union, intersection, difference",
+      "index": 6,
+      "total": 8
+    },
+    {
+      "kind": "code",
+      "label": "PYTHON",
+      "title": "The part people actually get stuck on",
+      "body": "",
+      "code": "from collections import namedtuple\nPoint = namedtuple(\"Point\", [\"x\", \"y\", \"z\"])\np = Point(1, 2, 3)\nprint(p.x, p.y, p.z)  # 1 2 3\nprint(p[0])            # 1 — indexable like tuple\nx, y, z = p            # unpackable",
+      "index": 7,
+      "total": 8
+    },
+    {
+      "kind": "cta",
+      "label": "FREE",
+      "title": "322 chapters. No paywall.",
+      "body": "DSA · ML · system design · AI agents\nSave this before your next prep session.\n\nLink in bio — all 322 chapters, free.",
+      "index": 8,
+      "total": 8
+    }
+  ],
+  "reelScript": "# Reel script — Collections — Lists, Tuples, Sets, and Dictionaries\nModule: 01 — Python for AI (01-python-programming)\n\n## HOOK (0–3s, no intro, no \"hey guys\")\n\"Collections — Lists, Tuples, Sets, and Dictionaries is chapter 04 of 322. This is the part everyone gets wrong.\"\n\n## BEATS (4–25s)\n1. Say it plainly: Create, access, and manipulate lists with comprehensive methods\n2. Show \"Lists\" on screen — creation, indexing, methods, sorting, copying\n3. Show \"List Comprehensions\" on screen — filtering, transformation, nested comprehensions\n4. Type the snippet live:\nfrom collections import namedtuple\nPoint = namedtuple(\"Point\", [\"x\", \"y\", \"z\"])\np = Point(1, 2, 3)\nprint(p.x, p.y, p.z)  # 1 2 3\n\n## CTA (26–30s)\n\"The full 01 — python for ai module is free — link in bio.\"\n\n## Text on screen\nKeep the chapter title pinned top-left the whole reel. 80% watch muted.\n\n## Hashtags\n#python #pythonprogramming #placements #dsa #learntocode #csstudent #aiengineering",
+  "images": [
+    "out/01-04-collections-lists-tuples-sets-and-dictionaries/slide-01.jpg",
+    "out/01-04-collections-lists-tuples-sets-and-dictionaries/slide-02.jpg",
+    "out/01-04-collections-lists-tuples-sets-and-dictionaries/slide-03.jpg",
+    "out/01-04-collections-lists-tuples-sets-and-dictionaries/slide-04.jpg",
+    "out/01-04-collections-lists-tuples-sets-and-dictionaries/slide-05.jpg",
+    "out/01-04-collections-lists-tuples-sets-and-dictionaries/slide-06.jpg",
+    "out/01-04-collections-lists-tuples-sets-and-dictionaries/slide-07.jpg",
+    "out/01-04-collections-lists-tuples-sets-and-dictionaries/slide-08.jpg"
+  ],
+  "igMediaId": null,
+  "publishedAt": null,
+  "error": null,
+  "attempts": 0,
+  "createdAt": "2026-11-27T05:29:26.029Z"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "01-02-control-flow-conditionals-loops-and-iteration",
+  "chapter": {
+    "id": "01-02-control-flow-conditionals-loops-and-iteration",
+    "relPath": "01-python-programming/02-control-flow.md",
+    "moduleId": "01-python-programming",
+    "moduleTitle": "01 — Python for AI",
+    "chapterNumber": "02",
+    "title": "Control Flow — Conditionals, Loops, and Iteration"
+  },
+  "format": "carousel",
+  "scheduledFor": "2026-12-01T04:00:00.000Z",
+  "status": "queued",
+  "caption": "Control Flow — Conditionals, Loops, and Iteration\n\nChapter 02 of 322 · 01 — Python for AI\n\nPython is the lingua franca of AI engineering. Mastering its syntax, data structures, and libraries is non-negotiable for building ML pipelines, APIs, and automation scripts.\n\nInside:\n• Write conditional branches using if/elif/else with clean logic\n• Use for loops to iterate over sequences, ranges, and enumerations\n• Control loop execution with break, continue, else, and pass\n\nThe whole roadmap is free — every chapter, every project, no signup. Link in bio.\n\n#python #pythonprogramming #placements #dsa #learntocode #csstudent #aiengineering",
+  "hashtags": [
+    "#python",
+    "#pythonprogramming",
+    "#placements",
+    "#dsa",
+    "#learntocode",
+    "#csstudent",
+    "#aiengineering"
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "label": "MODULE 01 · 01 — Python for AI",
+      "title": "Control Flow — Conditionals, Loops, and Iteration",
+      "body": "Chapter 02 of 322",
+      "index": 1,
+      "total": 8
+    },
+    {
+      "kind": "list",
+      "label": "WHAT YOU'LL GET",
+      "title": "By the end of this chapter",
+      "body": "• Write conditional branches using if/elif/else with clean logic\n• Use for loops to iterate over sequences, ranges, and enumerations\n• Control loop execution with break, continue, else, and pass",
+      "index": 2,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 2.1",
+      "title": "Conditional Statements",
+      "body": "if, elif, else, nested conditions, ternary operator",
+      "index": 3,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 2.2",
+      "title": "For Loops",
+      "body": "for item in iterable,",
+      "index": 4,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 2.3",
+      "title": "While Loops",
+      "body": "while condition, infinite loops, sentinel patterns",
+      "index": 5,
+      "total": 8
+    },
+    {
+      "kind": "concept",
+      "label": "SECTION 2.4",
+      "title": "Loop Control",
+      "body": "break, continue, pass, else clauses on loops",
+      "index": 6,
+      "total": 8
+    },
+    {
+      "kind": "code",
+      "label": "PYTHON",
+      "title": "The part people actually get stuck on",
+      "body": "",
+      "code": "for i in range(3):\n    if i == 1:\n        break\nelse:\n    print(\"done\")",
+      "index": 7,
+      "total": 8
+    },
+    {
+      "kind": "cta",
+      "label": "FREE",
+      "title": "322 chapters. No paywall.",
+      "body": "DSA · ML · system design · AI agents\nSave this before your next prep session.\n\nLink in bio — all 322 chapters, free.",
+      "index": 8,
+      "total": 8
+    }
+  ],
+  "reelScript": "# Reel script — Control Flow — Conditionals, Loops, and Iteration\nModule: 01 — Python for AI (01-python-programming)\n\n## HOOK (0–3s, no intro, no \"hey guys\")\n\"Control Flow — Conditionals, Loops, and Iteration is chapter 02 of 322. This is the part everyone gets wrong.\"\n\n## BEATS (4–25s)\n1. Say it plainly: Write conditional branches using if/elif/else with clean logic\n2. Show \"Conditional Statements\" on screen — if, elif, else, nested conditions, ternary operator\n3. Show \"For Loops\" on screen — for item in iterable,\n4. Type the snippet live:\nfor i in range(3):\n    if i == 1:\n        break\nelse:\n\n## CTA (26–30s)\n\"The full 01 — python for ai module is free — link in bio.\"\n\n## Text on screen\nKeep the chapter title pinned top-left the whole reel. 80% watch muted.\n\n## Hashtags\n#python #pythonprogramming #placements #dsa #learntocode #csstudent #aiengineering",
+  "images": [
+    "out/01-02-control-flow-conditionals-loops-and-iteration/slide-01.jpg",
+    "out/01-02-control-flow-conditionals-loops-and-iteration/slide-02.jpg",
+    "out/01-02-control-flow-conditionals-loops-and-iteration/slide-03.jpg",
+    "out/01-02-control-flow-conditionals-loops-and-iteration/slide-04.jpg",
+    "out/01-02-control-flow-conditionals-loops-and-iteration/slide-05.jpg",
+    "out/01-02-control-flow-conditionals-loops-and-iteration/slide-06.jpg",
+    "out/01-02-control-flow-conditionals-loops-and-iteration/slide-07.jpg",
+    "out/01-02-control-flow-conditionals-loops-and-iteration/slide-08.jpg"
+  ],
+  "igMediaId": null,
+  "publishedAt": null,
+  "error": null,
+  "attempts": 0,
+  "createdAt": "2026-11-27T05:29:26.022Z"
+}

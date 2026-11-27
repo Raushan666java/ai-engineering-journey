@@ -1,0 +1,4 @@
+node_modules/
+.phonebridge/
+*.log
+*.png.tmp

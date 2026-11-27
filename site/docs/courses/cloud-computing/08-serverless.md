@@ -821,6 +821,7 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+```
 ## Summary
 
 - Serverless computing provides automatic scaling and pay-per-use pricing with no server management.

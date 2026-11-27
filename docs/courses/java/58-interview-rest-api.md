@@ -3017,6 +3017,7 @@ void testRmmLevel() {
 ```
 
 Most practical APIs target Level 2 (resources + HTTP verbs + status codes). Level 3 (hypermedia) adds discoverability but increases complexity. Don't jump to L3 unless you have hypermedia clients. The model is descriptive, not prescriptive → build at the level that serves your consumers.
+```
 ### Q14: How does REST compare to GraphQL and gRPC?
 
 

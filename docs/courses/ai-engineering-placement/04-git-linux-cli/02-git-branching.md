@@ -240,7 +240,7 @@ edit   = pause to amend commit
 squash = combine with previous commit, keep both messages
 fixup  = combine with previous commit, discard this message
 drop   = remove commit entirely
-```text
+```
 
 Example — squashing fix-up commits:
 
@@ -250,7 +250,7 @@ fixup def5678 Fix typo in login
 fixup ghi9012 Fix validation regex
 pick jkl3456 Add password validation
 pick mno7890 Add remember me checkbox
-```text
+```
 
 This produces 3 clean commits instead of 5 messy ones.
 
@@ -426,7 +426,7 @@ const timeout = 3000;
 =======
 const timeout = 5000;
 >>>>>>> feature/new-timeout
-```text
+```
 
 - `<<<<<<< HEAD` — your current branch's version
 - `=======` — separator

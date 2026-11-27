@@ -867,6 +867,8 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
+
 ## Summary
 
 - Recursive languages are decidable (TM always halts); RE languages are recognizable (TM may loop).

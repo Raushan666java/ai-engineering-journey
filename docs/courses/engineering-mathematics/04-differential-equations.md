@@ -644,6 +644,7 @@ const damped = (?: number, ?: number) => (_t: number, y: number[]): number[] => 
 const { y: dY } = solveODE(damped(0.1, 2), 0, [1, 0], 0.01, 500);
 console.log(`Damped spring at t=5: y=${dY[500][0].toFixed(4)} (amplitude decaying over time)`);
 
+```
 ### TypeScript: Euler's Method for First-Order ODEs
 
 ```typescript

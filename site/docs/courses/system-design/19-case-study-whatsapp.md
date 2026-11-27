@@ -828,6 +828,7 @@ class PresenceTracker {
   }
 }
 
+```
 ### TypeScript: Chat Server, Message Store, and Advanced Presence
 
 ```typescript

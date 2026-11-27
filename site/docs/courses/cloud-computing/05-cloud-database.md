@@ -763,6 +763,7 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+```
 ## Summary
 
 - The CAP theorem forces a choice between consistency and availability during partitions.

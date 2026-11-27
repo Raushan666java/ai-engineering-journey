@@ -268,6 +268,7 @@ Hostel Management Portal | React, Node.js, MongoDB, Docker
 
 ---
 
+```
 ## Section 3: LinkedIn Optimization
 
 ### LinkedIn Profile Checklist

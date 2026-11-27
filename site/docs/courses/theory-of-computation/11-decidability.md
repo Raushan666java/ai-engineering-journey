@@ -704,6 +704,7 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
 ## Summary
 
 - The halting problem (does TM M halt on w?) is undecidable — proved via diagonalization.
@@ -880,5 +881,4 @@ flowchart TD
     E --> H{Is it about<br/>DFA/CFG?}
     H -->|Yes| I["Likely decidable"]
     H -->|No| F
-```
 ```

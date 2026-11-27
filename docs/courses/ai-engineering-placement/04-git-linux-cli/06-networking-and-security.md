@@ -677,7 +677,7 @@ GitHub Settings → Branches → Add rule:
 ✅ Include administrators
 ✅ Allow force pushes: never
 ✅ Allow deletions: never
-```text
+```
 
 **DevOps best practices checklist:**
 

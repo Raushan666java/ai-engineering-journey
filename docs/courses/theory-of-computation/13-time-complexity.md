@@ -768,6 +768,7 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
 ## Summary
 
 - P = problems solvable in polynomial time on a DTM.

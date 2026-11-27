@@ -177,7 +177,7 @@ Comparing offers requires looking beyond the headline number. A \$220K offer at 
 ```text
 Year 1 TC = Base + Sign-on Bonus + Year 1 Bonus (prorated if applicable) + Year 1 RSUs (vested portion)
 Year 2 TC = Base + Bonus + Year 2 RSUs (vested portion)
-```text
+```
 
 Always model out 4 years to account for RSU vesting schedules. A front-loaded offer (large sign-on, big initial RSU cliff) vs a back-loaded one (big refreshers later) changes your effective comp.
 
@@ -285,7 +285,7 @@ I'm very interested in joining [Company] and believe we can find a number that w
 
 Best,
 [Name]
-```text
+```
 
 ---
 

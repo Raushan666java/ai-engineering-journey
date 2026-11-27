@@ -1047,6 +1047,8 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+```
+
 ## Summary
 
 - RDDs are the low-level building block; DataFrames provide a higher-level, optimized API.

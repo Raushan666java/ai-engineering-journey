@@ -867,6 +867,8 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
+
 ## Summary
 
 - The pumping lemma provides a necessary condition for regularity used to prove non-regularity.

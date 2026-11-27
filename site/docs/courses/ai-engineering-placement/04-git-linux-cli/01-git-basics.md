@@ -427,7 +427,7 @@ git commit -m "Update README with auth setup instructions"
 [optional body]
 
 [optional footer]
-```text
+```
 
 ```bash
 git commit -m "feat(auth): add OAuth2 Google login"

@@ -839,6 +839,7 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
 ## Summary
 
 - NFA generalizes DFA by allowing multiple or zero next states per input symbol.

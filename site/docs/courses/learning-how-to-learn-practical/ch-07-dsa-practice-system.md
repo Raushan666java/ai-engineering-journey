@@ -276,6 +276,7 @@ class DSAReviewScheduler {
 }
 ```
 
+```
 ### Example 2: Interview Simulator
 
 ```typescript

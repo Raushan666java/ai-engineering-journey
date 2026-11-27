@@ -267,7 +267,7 @@ Linux file permissions control who can read, write, and execute files.
 │ │   └─────── owner: rwx (read, write, execute)
 │ └─────────── type: - = file, d = directory
 └───────────── special bits
-```text
+```
 
 | Permission | File | Directory |
 |------------|------|-----------|

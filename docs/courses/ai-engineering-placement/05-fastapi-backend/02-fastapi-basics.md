@@ -82,7 +82,7 @@ project/
 │       ├── __init__.py
 │       └── auth.py
 └── requirements.txt
-```text
+```
 
 **Running the server**:
 

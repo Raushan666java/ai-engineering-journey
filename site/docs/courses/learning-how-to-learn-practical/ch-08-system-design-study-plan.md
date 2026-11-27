@@ -300,6 +300,7 @@ class ConsistentHashRing {
 }
 ```
 
+```
 ### Example 2: Load Balancer Strategies
 
 ```typescript

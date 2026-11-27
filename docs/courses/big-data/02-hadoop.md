@@ -807,6 +807,8 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+```
+
 ## Summary
 
 - HDFS provides fault-tolerant distributed storage with block replication, rack awareness, and a single namenode.

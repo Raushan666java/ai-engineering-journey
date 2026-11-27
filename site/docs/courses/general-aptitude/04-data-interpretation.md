@@ -803,6 +803,7 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
 ## Summary
 
 - Tables: read carefully, identify headers, compute percentages correctly

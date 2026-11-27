@@ -478,6 +478,7 @@ console.log(`Simpson ?0? e^(-x?) dx: ${simpson(gaussian, 0, 1, 100).toFixed(6)} 
 console.log(`Boole ?0? e^(-x?) dx: ${boole(gaussian, 0, 1, 100).toFixed(6)} (expected: 0.746824)`);
 console.log(`Gauss-2 ?0? e^(-x?) dx: ${gaussQuad2(gaussian, 0, 1).toFixed(6)} (expected: 0.746824)`);
 
+```
 ### TypeScript: Jacobi Iteration for Linear Systems
 
 ```typescript
@@ -507,6 +508,7 @@ console.log(`Jacobi: x=${sol[0].toFixed(4)}, y=${sol[1].toFixed(4)}, z=${sol[2].
 const verify = A.map((row, i) => row.reduce((s, aij, j) => s + aij * sol[j], 0));
 console.log(`Verify: A?x = [${verify.map(v => v.toFixed(2)).join(", ")}] ? [${b.join(", ")}]`);
 
+```
 ### TypeScript: Cubic Spline Interpolation
 
 ```typescript

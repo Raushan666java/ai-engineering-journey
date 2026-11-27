@@ -332,6 +332,7 @@ const work?Dot = (_t: number): [number, number, number] => [1, 2 * _t, 0];
 const work = lineIntegral(workF, work?, work?Dot, 0, 1, 1000);
 console.log(`Work: ${work.toFixed(4)} (expected: 1.0)`);
 
+```
 ### TypeScript: Surface Integral via Parameterization
 
 ```typescript
@@ -396,6 +397,7 @@ function sphereArea(nu: number = 40, nv: number = 40): number {
 }
 console.log(`Sphere surface area: ${sphereArea(50, 50).toFixed(4)} (expected: ${(4 * Math.PI).toFixed(4)})`);
 
+```
 ### TypeScript: Stokes' Theorem Verification
 
 ```typescript

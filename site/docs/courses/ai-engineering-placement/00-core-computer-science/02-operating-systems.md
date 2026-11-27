@@ -134,7 +134,7 @@ Containers are not lightweight VMs. They use Linux namespaces for isolation and 
 │  │ CFS, memory mgmt, device       │  │
 │  └────────────────────────────────┘  │
 └──────────────────────────────────────┘
-```text
+```
 
 ### Virtualization
 

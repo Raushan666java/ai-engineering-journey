@@ -1946,6 +1946,7 @@ class ReleasePreparer:
 ![PyTorch](https://img.shields.io/badge/pytorch-2.1-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+```
 ## Overview
 
 Reproduction of **"{paper_info['title']}"** ({paper_info['authors']}, {paper_info['year']}).
@@ -2162,6 +2163,7 @@ if __name__ == "__main__":
     prep.verify()
 ```
 
+```
 ## Interview Q&A
 
 ### Question 1 (Google)

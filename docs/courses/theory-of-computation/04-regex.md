@@ -847,6 +847,8 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
+
 ## Summary
 
 - Regular expressions describe languages algebraically using union (+), concatenation, and Kleene star (*).

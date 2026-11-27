@@ -386,11 +386,11 @@ class ImpactStorytelling:
 {tradeoff_text}
 
 ## Key Code
-```python
+```
 {code_snippet}
 ```text
 """
-```text
+```
 
 ## 3.5 Content Promotion
 

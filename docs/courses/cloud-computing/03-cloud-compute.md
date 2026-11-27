@@ -831,6 +831,8 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+```
+
 ## Summary
 
 - Cloud compute provides virtualized hardware (IaaS) through VMs.

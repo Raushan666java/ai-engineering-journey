@@ -334,6 +334,7 @@ interface ReadingStats {
 }
 ```
 
+```
 ### Example 2: Learning Stack Tracker
 
 ```typescript

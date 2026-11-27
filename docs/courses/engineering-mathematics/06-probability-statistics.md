@@ -423,6 +423,7 @@ console.log(`MC p = ${estimatePi(1000000).toFixed(6)} (error: ${Math.abs(estimat
 const pi4 = 4 * monteCarlo(x => 1 / (1 + x * x), 0, 1, 1000000);
 console.log(`MC ? 4/(1+x?) dx = ${pi4.toFixed(6)} (expected: ${Math.PI.toFixed(6)})`);
 
+```
 ### TypeScript: Central Limit Theorem Demonstration
 
 ```typescript
@@ -459,6 +460,7 @@ function chiSquaredNormal(observed: number[], bins: number, ?: number, s: number
   return ??;
 }
 
+```
 ### TypeScript: Bayesian Beta-Bernoulli Updating
 
 ```typescript

@@ -832,6 +832,7 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
 ## Summary
 
 - Mapping reductions are computable functions that preserve language membership.

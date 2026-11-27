@@ -865,6 +865,8 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+```
+
 ## Summary
 
 - Cloud storage is categorized into Object, Block, and File models.

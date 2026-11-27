@@ -912,6 +912,7 @@ console.log("Processed features:", processed.map(r => ({
   scaled: r.scaledFeatures,
 })));
 
+```
 ### TypeScript: Hyperparameter Grid Search & Model Export Validator
 
 ```typescript
@@ -1048,6 +1049,8 @@ async function demo(): Promise&lt;void&gt; {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+```
+
 ## Summary
 
 - MLlib provides a DataFrame-based pipeline API for scalable ML.

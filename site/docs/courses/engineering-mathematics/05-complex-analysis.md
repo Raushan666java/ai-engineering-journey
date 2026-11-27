@@ -583,6 +583,7 @@ function laurentCoeff(
   return sum.div(new Complex(0, 2 * Math.PI));
 }
 
+```
 ### TypeScript: Residue Calculator and Contour Integration
 
 ```typescript

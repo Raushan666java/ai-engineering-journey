@@ -782,7 +782,7 @@ Iterative improvement:
 ### Quick Reference Creation
 
 #### Technology Cheat Sheet Template:
-```markdown
+````markdown
 # [Technology] Quick Reference
 
 ## Essential Concepts
@@ -815,7 +815,7 @@ code here
 3. Practice 3
 
 ## Learn More
-```
+````
 
 ---
 

@@ -850,6 +850,8 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
+
 ## Summary
 
 - PDA = NFA + stack (LIFO memory).

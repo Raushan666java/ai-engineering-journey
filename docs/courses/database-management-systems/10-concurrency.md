@@ -1759,6 +1759,7 @@ class TwoPhaseLock:
 
                     del self.locks[item]
 
+```
 ### 10.4 Deadlock
 
 
@@ -2878,6 +2879,7 @@ Txn C (ts=35): sees X_v3 (value=300)
 
 
 
+```
 #### MVCC Rules
 
 
@@ -3310,6 +3312,7 @@ class MVCC:
 
 
 
+```
 #### Garbage Collection (VACUUM)
 
 
@@ -3894,6 +3897,7 @@ Database (coarsest, lowest concurrency)
 
 
 
+```
 #### Intention Locks
 
 

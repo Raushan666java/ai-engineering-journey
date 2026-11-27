@@ -352,6 +352,7 @@ const rastrigin = (x: Vec) => x.reduce((s, xi) => s + xi ** 2 - 10 * Math.cos(2 
 const psoRast = particleSwarm(rastrigin, 2, [-5.12, 5.12], 40, 200);
 console.log(`PSO Rastrigin: min at (${psoRast.x[0].toFixed(4)}, ${psoRast.x[1].toFixed(4)}), f=${psoRast.fx.toFixed(4)}`);
 
+```
 ### TypeScript Implementation: Simulated Annealing
 
 ```typescript
@@ -383,6 +384,7 @@ console.log(`SA quadratic: min at (${saQuad.x[0].toFixed(4)}, ${saQuad.x[1].toFi
 const saRast = simulatedAnnealing(rastrigin, 2, [-5.12, 5.12], 20000, 100, 0.995);
 console.log(`SA Rastrigin: min at (${saRast.x[0].toFixed(4)}, ${saRast.x[1].toFixed(4)}), f=${saRast.fx.toFixed(4)}`);
 
+```
 ### TypeScript: Constrained Optimization via Penalty Method
 
 ```typescript

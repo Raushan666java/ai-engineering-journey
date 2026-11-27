@@ -925,6 +925,8 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
+
 ## Summary
 
 - Figure series: identify the rule from first 2-3 figures; apply to predict next

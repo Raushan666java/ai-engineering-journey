@@ -781,6 +781,8 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+```
+
 ## Summary
 
 - Big data is defined by volume, velocity, and variety ? traditional tools break at petabyte scale.

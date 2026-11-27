@@ -87,7 +87,7 @@ One customer places many orders.
 Order ────< Contains >──── Product
   1              N
 One order contains many products.
-```text
+```
 
 **Converting ERD to SQL**:
 

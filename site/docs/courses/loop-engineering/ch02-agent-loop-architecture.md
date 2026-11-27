@@ -1391,7 +1391,7 @@ await main();
 
 This section adds production tooling for running agent loops at scale: an `AgentLoopBenchmark` that measures cycles-to-convergence across architectures, a `StatePersistenceManager` with checkpoint/restore for long-running loops, a `MemoryAwareLoop` that prunes old observations under context pressure, a `StreamingObservationProcessor` for real-time feedback ingestion, and a `LoopMetricsCollector` tracking per-cycle resource usage.
 
-```typescript
+````typescript
 // ch02-production-infra.ts
 // bun run ch02-production-infra.ts
 
@@ -1884,7 +1884,7 @@ async function main() {
 }
 
 await main();
-```
+````
 
 **Key concepts demonstrated:**
 - **AgentLoopBenchmark** runs multiple trials across architectures and reports cycles-to-convergence, convergence rate, and average time; enables data-driven architecture selection

@@ -868,6 +868,8 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+```
+
 ## Summary
 
 - VPCs isolate cloud resources within user-defined IP address ranges.

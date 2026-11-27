@@ -896,6 +896,8 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
+
 ## Summary
 
 - Puzzles: organize data systematically; use grids/tables

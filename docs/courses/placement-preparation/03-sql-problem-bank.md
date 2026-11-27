@@ -202,7 +202,7 @@ INSERT INTO student (id, name, subject, marks) VALUES
 
 ## Chapter Roadmap
 
-  mermaid
+```mermaid
 flowchart TD
     A[Setup: Schema and Data] --> B[Basic Queries and Joins]
     B --> C[Aggregation and Subqueries]

@@ -996,6 +996,8 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+```
+
 ## Summary
 
 - Hive provides SQL-on-HDFS but is being replaced by Spark SQL and Presto for most use cases.

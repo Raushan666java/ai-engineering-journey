@@ -3,11 +3,8 @@ description: "A[Identify Entities] --> B[Define Attributes] B --> C[Specify Rela
 ---
 
 # Chapter 2: Entity-Relationship Model
-```
 > **Previous:** [Chapter 1: Introduction to Database Systems](./01-introduction.md) | **Next:** [Chapter 3: The Relational Model](./03-relational-model.md)
-```
 ## Learning Objectives
-```
 - Identify entities, attributes, and relationships in a problem domain
 - Classify attribute types: simple vs. composite, single-valued vs. multi-valued, stored vs. derived
 - Define relationship types, degree, and cardinality constraints
@@ -15,9 +12,7 @@ description: "A[Identify Entities] --> B[Define Attributes] B --> C[Specify Rela
 - Distinguish strong from weak entities
 - Model generalization, specialization, and aggregation hierarchies
 - Translate an ER diagram into a relational schema
-```
 ## Chapter at a Glance
-```
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | **Entities & Attributes** | Real-world objects with descriptive properties | Identify entities first, then their attributes |
@@ -25,9 +20,7 @@ description: "A[Identify Entities] --> B[Define Attributes] B --> C[Specify Rela
 | **Weak Entities** | Depend on owner entity for identity | Common for line items, dependents, seat assignments |
 | **Generalization/Specialization** | Inheritance modeling for entity types | Choose Strategy B (separate tables) for flexibility |
 | **ER-to-Relational Mapping** | Systematic conversion of conceptual to logical schema | Follow the 8 mapping rules in order |
-```
 ## Chapter Roadmap
-```
 ```mermaid
 flowchart LR
     A[Identify Entities] --> B[Define Attributes]
@@ -37,22 +30,15 @@ flowchart LR
     E --> F[Map to Relational Schema]
     F --> G[Implement SQL DDL]
 ```
-```
+
 ## Theory
-```
 > **One-Sentence Takeaway:** The ER model provides a high-level conceptual blueprint → translating real-world requirements into visual diagrams before any SQL is written.
-```
 ![ER Model Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch02-er-model.png)
-```
 ### 2.1 The Entity-Relationship Model
 
-```
 The Entity-Relationship (ER) model, introduced by Peter Chen in 1976, is a conceptual data model that provides a high-level description of a database. It is used primarily in the database design phase to capture user requirements and represent them in a visual, intuitive form before implementation.
-```
 The ER model views the real world as a collection of **entities** (things or objects) and **relationships** (associations among entities).
-```
 #### Real-World Analogy: Blueprint for a House
-```
 | ER Model Element | House Blueprint Analogy |
 |-----------------|------------------------|
 | Entity | A room (kitchen, bedroom) |
@@ -60,11 +46,8 @@ The ER model views the real world as a collection of **entities** (things or obj
 | Relationship | A door connects kitchen to dining room |
 | Cardinality | One kitchen has many cabinets (1:N) |
 | Weak Entity | A window cannot exist without its wall |
-```
 Just as an architect draws a blueprint before construction begins, a database designer creates an ER diagram before writing SQL. The blueprint captures requirements, communicates with stakeholders (contractors = developers), and catches design errors early.
-```
 #### Numbered Steps to Build an ER Model
-```
 1. **Identify entities** → List all noun concepts from requirements (e.g., Student, Course, Professor)
 2. **Identify relationships** → Find verb associations between entities (e.g., Student enrolls in Course)
 3. **Identify cardinality** → Determine 1:1, 1:N, or M:N for each relationship
@@ -75,35 +58,28 @@ Just as an architect draws a blueprint before construction begins, a database de
 8. **Draw ER diagram** → Use rectangles, diamonds, ellipses with standard notation
 9. **Map to relational schema** → Apply systematic conversion rules
 10. **Normalize** → Check for redundancy and apply normal forms if needed
-```
 #### Pseudocode: ER Model Builder
-```
 ```pseudocode
 PROCEDURE BuildERModel(requirements):
     entities = ExtractNouns(requirements)
     relationships = ExtractVerbs(requirements, entities)
-```
     FOR EACH entity IN entities:
         entity.attributes = ExtractProperties(requirements, entity.name)
         entity.key = IdentifyPrimaryKey(entity.attributes)
         entity.isWeak = CheckDependency(entity, entities)
-```
     FOR EACH rel IN relationships:
         rel.entity_types = IdentifyParticipants(rel, entities)
         rel.cardinality = DetermineCardinality(rel, requirements)
         rel.participation = DetermineParticipation(rel, requirements)
         rel.attributes = ExtractRelationshipAttributes(requirements, rel)
-```
     er_diagram = DrawERDiagram(entities, relationships)
     relational_schema = MapERToRelational(er_diagram)
     RETURN relational_schema
 END PROCEDURE
 ```
-```
+
 #### Dry Run: Building ER Model for University System
-```
 **Input Requirements:** "A university has students who enroll in courses. Each course is taught by one professor. Students have IDs, names, and phone numbers. Courses have IDs, titles, and credits. Professors have IDs, names, and departments."
-```
 | Step | Action | Result |
 |------|--------|--------|
 | 1 | Extract entities | STUDENT, COURSE, PROFESSOR |
@@ -116,9 +92,7 @@ END PROCEDURE
 | 8 | Draw diagram | Rectangles -> STUDENT, COURSE, PROFESSOR; Diamonds -> ENROLLS_IN, TEACHES |
 | 9 | Map to schema | STUDENT(name->first+last), phone->separate table, COURSE with FK to PROFESSOR |
 | 10 | Normalize | All tables in 3NF |
-```
 #### C++ Implementation: ER Model Classes
-```
 ```cpp
 #include <iostream>
 #include <vector>
@@ -126,25 +100,20 @@ END PROCEDURE
 #include <string>
 #include <algorithm>
 using namespace std;
-```
 enum class AttrType { SIMPLE, COMPOSITE, MULTI_VALUED, DERIVED, KEY };
 enum class CardType { ONE_TO_ONE, ONE_TO_MANY, MANY_TO_MANY };
 enum class PartType { TOTAL, PARTIAL };
-```
 class Attribute {
 public:
     string name;
     AttrType type;
     vector<Attribute> sub_attributes;
     string derived_expression;
-```
     Attribute(string n, AttrType t = AttrType::SIMPLE)
         : name(n), type(t), derived_expression("") {}
-```
     void addSubAttribute(const Attribute& sub) {
         if (type == AttrType::COMPOSITE) sub_attributes.push_back(sub);
     }
-```
     string typeString() const {
         switch(type) {
             case AttrType::SIMPLE: return "SIMPLE";
@@ -155,7 +124,6 @@ public:
         }
         return "UNKNOWN";
     }
-```
     void print(int indent = 0) const {
         cout << string(indent, ' ') << name << " [" << typeString() << "]";
         if (!derived_expression.empty())
@@ -164,7 +132,6 @@ public:
         for (const auto& sub : sub_attributes) sub.print(indent + 2);
     }
 };
-```
 class Entity {
 public:
     string name;
@@ -172,11 +139,8 @@ public:
     bool is_weak;
     string owner_entity;
     string discriminator;
-```
     Entity(string n, bool weak = false) : name(n), is_weak(weak) {}
-```
     void addAttribute(const Attribute& attr) { attributes.push_back(attr); }
-```
     void print() const {
         cout << (is_weak ? "WEAK ENTITY: " : "ENTITY: ") << name << endl;
         if (is_weak)
@@ -184,7 +148,6 @@ public:
         for (const auto& attr : attributes) attr.print(2);
     }
 };
-```
 class Relationship {
 public:
     string name;
@@ -192,10 +155,8 @@ public:
     CardType cardinality;
     PartType participation;
     vector&lt;Attribute&gt; attributes;
-```
     Relationship(string n, CardType card = CardType::MANY_TO_MANY)
         : name(n), cardinality(card), participation(PartType::PARTIAL) {}
-```
     string cardinalityString() const {
         switch(cardinality) {
             case CardType::ONE_TO_ONE: return "1:1";
@@ -204,7 +165,6 @@ public:
         }
         return "UNKNOWN";
     }
-```
     void print() const {
         cout << "RELATIONSHIP: " << name << " [" << cardinalityString() << "]";
         cout << " (Participation: " << (participation == PartType::TOTAL ? "TOTAL" : "PARTIAL") << ")" << endl;
@@ -214,19 +174,15 @@ public:
         for (const auto& attr : attributes) attr.print(2);
     }
 };
-```
 class ERModel {
 public:
     map&lt;string, Entity&gt; entities;
     vector&lt;Relationship&gt; relationships;
-```
     void addEntity(const Entity& e) { entities[e.name] = e; }
     void addRelationship(const Relationship& r) { relationships.push_back(r); }
 };
-```
 int main() {
     ERModel university;
-```
     Entity student("STUDENT");
     student.addAttribute(Attribute("student_id", AttrType::KEY));
     Attribute name("name", AttrType::COMPOSITE);
@@ -235,67 +191,55 @@ int main() {
     student.addAttribute(name);
     student.addAttribute(Attribute("phone_numbers", AttrType::MULTI_VALUED));
     university.addEntity(student);
-```
     Entity course("COURSE");
     course.addAttribute(Attribute("course_id", AttrType::KEY));
     course.addAttribute(Attribute("title"));
     course.addAttribute(Attribute("credits"));
     university.addEntity(course);
-```
     Relationship enrolls("ENROLLS_IN", CardType::MANY_TO_MANY);
     enrolls.participants = {"STUDENT", "COURSE"};
     enrolls.participation = PartType::TOTAL;
     enrolls.attributes.push_back(Attribute("semester"));
     enrolls.attributes.push_back(Attribute("grade"));
     university.addRelationship(enrolls);
-```
     for (auto& [name, ent] : university.entities) ent.print();
     for (auto& rel : university.relationships) rel.print();
     return 0;
 }
 ```
-```
+
 #### Python Implementation: ER Model Classes and Relational Mapping
-```
 ```python
 from enum import Enum
 from typing import List, Dict, Optional, Tuple
-```
 class AttrType(Enum):
     SIMPLE = "SIMPLE"
     COMPOSITE = "COMPOSITE"
     MULTI_VALUED = "MULTI_VALUED"
     DERIVED = "DERIVED"
     KEY = "KEY"
-```
 class CardType(Enum):
     ONE_TO_ONE = "1:1"
     ONE_TO_MANY = "1:N"
     MANY_TO_MANY = "M:N"
-```
 class PartType(Enum):
     TOTAL = "TOTAL"
     PARTIAL = "PARTIAL"
-```
 class Attribute:
     def __init__(self, name: str, attr_type: AttrType = AttrType.SIMPLE):
         self.name = name
         self.type = attr_type
         self.sub_attributes: List[Attribute] = []
         self.derived_expression: str = ""
-```
     def add_sub_attribute(self, attr: Attribute) -> None:
         if self.type == AttrType.COMPOSITE:
             self.sub_attributes.append(attr)
-```
     def flatten(self) -> List[str]:
         if self.type == AttrType.COMPOSITE:
             return [sub.name.lower() for sub in self.sub_attributes]
         return [self.name.lower()]
-```
     def __repr__(self) -> str:
         return f"Attribute({self.name}, {self.type.value})"
-```
 class Entity:
     def __init__(self, name: str, is_weak: bool = False):
         self.name = name
@@ -303,19 +247,14 @@ class Entity:
         self.is_weak = is_weak
         self.owner_entity: Optional[str] = None
         self.discriminator: Optional[str] = None
-```
     def add_attribute(self, attr: Attribute) -> None:
         self.attributes.append(attr)
-```
     def get_key_attributes(self) -> List[Attribute]:
         return [a for a in self.attributes if a.type == AttrType.KEY]
-```
     def get_multi_valued_attributes(self) -> List[Attribute]:
         return [a for a in self.attributes if a.type == AttrType.MULTI_VALUED]
-```
     def __repr__(self) -> str:
         return f"Entity({self.name}, weak={self.is_weak})"
-```
 class Relationship:
     def __init__(self, name: str, cardinality: CardType = CardType.MANY_TO_MANY):
         self.name = name
@@ -323,46 +262,34 @@ class Relationship:
         self.cardinality = cardinality
         self.participation: PartType = PartType.PARTIAL
         self.attributes: List[Attribute] = []
-```
     def add_attribute(self, attr: Attribute) -> None:
         self.attributes.append(attr)
-```
     def __repr__(self) -> str:
         return f"Relationship({self.name}, {self.cardinality.value})"
-```
 class ERModel:
     def __init__(self):
         self.entities: Dict[str, Entity] = {}
         self.relationships: List[Relationship] = []
-```
     def add_entity(self, entity: Entity) -> None:
         self.entities[entity.name] = entity
-```
     def add_relationship(self, rel: Relationship) -> None:
         self.relationships.append(rel)
-```
     def map_to_relational(self) -> List[str]:
         """Map ER model to relational schema following standard 8 rules."""
         schema: List[str] = []
-```
         for ent in self.entities.values():
             if not ent.is_weak:
                 schema.append(self._create_strong_entity_table(ent))
-```
         for ent in self.entities.values():
             if ent.is_weak:
                 schema.append(self._create_weak_entity_table(ent))
-```
         for rel in self.relationships:
             if rel.cardinality == CardType.MANY_TO_MANY:
                 schema.append(self._create_junction_table(rel))
-```
         for ent in self.entities.values():
             for attr in ent.get_multi_valued_attributes():
                 schema.append(self._create_multi_valued_table(ent, attr))
-```
         return schema
-```
     def _create_strong_entity_table(self, ent: Entity) -> str:
         cols = []
         for attr in ent.attributes:
@@ -374,7 +301,6 @@ class ERModel:
             elif attr.type == AttrType.SIMPLE:
                 cols.append(f"    {attr.name.lower()} VARCHAR(100)")
         return f"CREATE TABLE {ent.name.lower()} (\n" + ",\n".join(cols) + "\n);\n"
-```
     def _create_weak_entity_table(self, ent: Entity) -> str:
         cols = []
         pk_parts = []
@@ -394,7 +320,6 @@ class ERModel:
         pk = ", ".join(pk_parts)
         cols.append(f"    PRIMARY KEY ({pk})")
         return f"CREATE TABLE {ent.name.lower()} (\n" + ",\n".join(cols) + "\n);\n"
-```
     def _create_junction_table(self, rel: Relationship) -> str:
         cols = []
         pk_parts = []
@@ -412,7 +337,6 @@ class ERModel:
         pk = ", ".join(pk_parts)
         cols.append(f"    PRIMARY KEY ({pk})")
         return f"CREATE TABLE {rel.name.lower()} (\n" + ",\n".join(cols) + "\n);\n"
-```
     def _create_multi_valued_table(self, ent: Entity, attr: Attribute) -> str:
         key_attrs = ent.get_key_attributes()
         if not key_attrs:
@@ -423,7 +347,6 @@ class ERModel:
                 f"REFERENCES {ent.name.lower()}({key.name.lower()}),\n"
                 f"    {attr.name.lower()} VARCHAR(50),\n"
                 f"    PRIMARY KEY ({ent.name.lower()}_{key.name.lower()}, {attr.name.lower()})\n);\n")
-```
 def dry_run_mapping():
     steps = [
         ("Step 1: Strong Entities",
@@ -443,7 +366,6 @@ def dry_run_mapping():
         print(f"\n--- {title} ---")
         print(f"Action: {desc}")
         print(f"SQL: {sql}")
-```
 if __name__ == "__main__":
     model = ERModel()
     student = Entity("STUDENT")
@@ -454,25 +376,21 @@ if __name__ == "__main__":
     student.add_attribute(name)
     student.add_attribute(Attribute("phone_numbers", AttrType.MULTI_VALUED))
     model.add_entity(student)
-```
     course = Entity("COURSE")
     course.add_attribute(Attribute("course_id", AttrType.KEY))
     course.add_attribute(Attribute("title"))
     course.add_attribute(Attribute("credits"))
     model.add_entity(course)
-```
     enrolls = Relationship("ENROLLS_IN", CardType.MANY_TO_MANY)
     enrolls.participants = ["STUDENT", "COURSE"]
     enrolls.add_attribute(Attribute("semester"))
     model.add_relationship(enrolls)
-```
     for s in model.map_to_relational():
         print(s)
     dry_run_mapping()
 ```
-```
+
 #### Complexity Analysis
-```
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
 | Entity identification | O(N) for N nouns | O(E) for E entities | Linear scan through requirements text |
@@ -485,11 +403,8 @@ if __name__ == "__main__":
 | Multi-valued attr handling | O(M) for M multi-valued attrs | O(M) tables | Each becomes a separate table |
 | Generalization (Strategy B) | O(S) for S subclasses | O(S+1) tables | Superclass + one per subclass |
 | Total mapping | O(E+W+R+M) | O(T) tables created | All operations linear in input |
-```
 **WHY O(E+W+R+M) is optimal:** Each entity, weak entity, relationship, and multi-valued attribute requires exactly one pass to produce its corresponding table. No sorting, nested loops, or combinatorial explosions. The mapping is inherently linear because the ER diagram is a graph where each node maps to one output artifact.
-```
 #### A&D Table: ER Model Advantages and Disadvantages
-```
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
 | Conceptual clarity | Intuitive visual for non-technical stakeholders | Cluttered with large schemas (50+ entities) |
@@ -500,68 +415,41 @@ if __name__ == "__main__":
 | Extensibility | EER adds generalization/specialization | Composite attributes cause deep nesting |
 | Tool support | Supported by all major DB design tools | No universal diagram interchange standard |
 | Scalability | Works well up to ~100 entity types | Beyond that, diagram becomes unreadable |
-```
 #### Edge Cases in ER Modeling
-```
 **1. Redundant Relationships**
 A redundant relationship can be derived from other relationships.
-```
 Example: A --teaches--> B (Professor teaches Course), B --belongs_to--> C (Course belongs to Department), A --works_in--> D (Professor works in Department) -- REDUNDANT if C=D
-```
 **Detection:** If relationship R can be expressed as composition of other relationships, R is redundant.
-```
 **Solution:** Remove redundant relationships; use views or computed queries.
-```
 **2. Circular Relationships**
 Three or more entities form a cycle of relationships.
-```
 Example: EMPLOYEE --works_in--> DEPARTMENT, DEPARTMENT --manages--> PROJECT, PROJECT --assigned_to--> EMPLOYEE
-```
 **Problem:** Circular FK constraints cause insertion-order deadlocks. Cannot insert into any table first.
-```
 **Solution:** Make at least one FK nullable, or use deferred constraint checking.
-```
 **3. Fan Trap**
 Occurs when a many-to-one relationship fans out to multiple many sides.
-```
 Example: BRANCH --has--> LOAN (1:N), BRANCH --has--> ACCOUNT (1:N)
-```
 **Problem:** Path through BRANCH is ambiguous for "which loan belongs to which account."
-```
 **Solution:** Introduce direct relationship between LOAN and CUSTOMER.
-```
 **4. Chasm Trap**
 Occurs when two many-to-one relationships converge, causing information loss in joins.
-```
 Example: DEPARTMENT --has--> EMPLOYEE (1:N), DEPARTMENT --manages--> PROJECT (1:N)
-```
 **Problem:** A JOIN may lose employees whose department has no projects.
-```
 **Solution:** Use separate queries or UNION.
-```
 **5. Attributes on Relationships**
 Attributes belonging to the association (grade on ENROLLS_IN) may be incorrectly placed on an entity.
-```
 **Detect:** If an attribute describes the association, not the entity, it belongs on the relationship diamond.
-```
 **6. Weak Entity Without Discriminator**
 A weak entity needs a discriminator to distinguish entities within the same owner.
-```
 **Solution:** Every weak entity must have a discriminator. Add ordinal if none exists.
-```
 ### 2.2 Entities and Entity Sets
 
-```
 An **entity** is a distinguishable object that exists in the real world. Each entity has a unique identity. For example, a specific student named "Alice Chen" with student ID "1001" is an entity.
-```
 An **entity set** is a collection of entities that share the same properties. For example, all students form the STUDENT entity set. Entity sets are conventionally named in uppercase singular.
-```
 **Entity vs. Entity Set:**
 - Entity: Alice Chen, student ID 1001 (a specific instance)
 - Entity Set: STUDENT (the collection of all student entities)
-```
 #### Real-World Analogy: Family Tree
-```
 | ER Concept | Family Tree Equivalent |
 |-----------|----------------------|
 | Entity Set | All people in the family |
@@ -570,11 +458,8 @@ An **entity set** is a collection of entities that share the same properties. Fo
 | Key Attribute | Social Security Number uniquely identifies each person |
 | Relationship | "Parent of" connects two people |
 | Weak Entity | A childhood nickname tied to a specific person |
-```
 In a family tree, each person exists independently (strong entity). But a "Family Nickname" (like "Little John" within the Smith family) is a weak entity → it has meaning only within the context of a specific family.
-```
 #### Numbered Steps to Identify Entities
-```
 1. Read the requirements document thoroughly
 2. Underline all nouns (potential entities) and verbs (potential relationships)
 3. Discard nouns that are attributes of other entities (e.g., "color" of a car is an attribute of CAR, not an entity)
@@ -582,9 +467,7 @@ In a family tree, each person exists independently (strong entity). But a "Famil
 5. For remaining nouns, verify they have multiple attributes and a unique identifier
 6. Name entity sets in uppercase singular (STUDENT, not STUDENTS)
 7. Document each entity with a clear definition
-```
 #### Pseudocode: Entity Identification
-```
 ```pseudocode
 PROCEDURE IdentifyEntities(requirements):
     nouns = ExtractNouns(requirements)
@@ -598,33 +481,25 @@ PROCEDURE IdentifyEntities(requirements):
     RETURN candidates
 END PROCEDURE
 ```
-```
+
 ### 2.3 Attributes
 
-```
 Attributes describe the properties of entities. Each entity has a value for each of its attributes.
-```
 **Attribute Classifications:**
-```
 **Simple vs. Composite:**
 - **Simple (Atomic):** Cannot be divided. Example: `student_id`, `age`
 - **Composite:** Can be divided into subparts. Example: `name` can be divided into `first_name`, `middle_initial`, `last_name`; `address` into `street`, `city`, `state`, `zip_code`
-```
 **Single-Valued vs. Multi-Valued:**
 - **Single-Valued:** One value per entity. Example: `student_id` (a student has one ID)
 - **Multi-Valued:** Zero or more values. Example: `phone_numbers` (a student may have multiple phone numbers); `degrees` (a person may have multiple degrees)
-```
 **Stored vs. Derived:**
 - **Stored:** Value is physically stored in the database. Example: `date_of_birth`
 - **Derived:** Value is computed from stored values. Example: `age` is derived from `date_of_birth` and the current date
-```
 **Null Values:** An attribute may take a null value when:
 - The attribute does not apply (e.g., `apartment_number` for a single-family home)
 - The value is unknown (e.g., `salary` has not been entered yet)
 - The value is unknown but exists (e.g., `phone_number` exists but we do not know it)
-```
 #### Attribute Types Comparison
-```
 | Aspect | Simple | Composite | Derived | Multi-Valued | Stored | Key |
 |--------|--------|-----------|---------|-------------|-------|-----|
 | **Definition** | Atomic, indivisible | Composed of sub-attributes | Computed from stored data | Holds multiple values | Physically stored | Uniquely identifies entity |
@@ -637,9 +512,7 @@ Attributes describe the properties of entities. Each entity has a value for each
 | **SQL Mapping** | Column | Multiple columns | Computed column / view | Separate table with FK | Column | PRIMARY KEY |
 | **Query Complexity** | Low | Low | Medium (computation cost) | High (join required) | Low | Very low |
 | **Memory Use** | Fixed per type | Sum of sub-attr sizes | Zero (computed) | Variable, potentially large | Fixed | Fixed |
-```
 #### Real-World Analogy: Student Registration Form
-```
 Consider a university registration form:
 - **Simple:** Student ID (a single, atomic number)
 - **Composite:** Full Name = First Name + Middle Initial + Last Name (can be broken down)
@@ -647,30 +520,22 @@ Consider a university registration form:
 - **Derived:** Age (calculated from Date of Birth and today's date)
 - **Stored:** Date of Birth (physically stored in database)
 - **Key:** Student ID (uniquely identifies each student)
-```
 The form designer decides which fields are composite (they provide sub-boxes for first/last name) and which are simple (single box for ID). They know phone numbers need space for multiple entries. Age is never written on the form → it is computed when needed.
-```
 #### Python Implementation: Attribute Type Validator
-```
 ```python
 from datetime import date
 from typing import Any, List, Set, Optional
-```
 class AttributeValidator:
     """Validates attribute values based on their type classification."""
-```
     @staticmethod
     def validate_simple(value: Any, expected_type: type) -> bool:
         return isinstance(value, expected_type)
-```
     @staticmethod
     def validate_composite(components: dict, required_keys: Set[str]) -> bool:
         return required_keys.issubset(set(components.keys()))
-```
     @staticmethod
     def validate_multi_valued(values: List[Any], min_items: int = 0) -> bool:
         return len(values) >= min_items
-```
     @staticmethod
     def validate_derived(stored_attrs: dict, expression: str) -> Optional[Any]:
         if expression == "age" and "date_of_birth" in stored_attrs:
@@ -680,16 +545,12 @@ class AttributeValidator:
                 (today.month, today.day) < (dob.month, dob.day)
             )
         return None
-```
 class AttributeClassifier:
     """Classifies and validates attribute types for ER modeling."""
-```
     def __init__(self):
         self.attribute_types: dict = {}
-```
     def register(self, name: str, attr_type: str, **metadata) -> None:
         self.attribute_types[name] = {"type": attr_type, **metadata}
-```
     def classify_example(self) -> dict:
         return {
             "student_id": {
@@ -718,8 +579,6 @@ class AttributeClassifier:
                 "null_allowed": True
             }
         }
-```
-```
 def demonstrate_attribute_types():
     print("=== Attribute Types Demonstration ===\n")
     data = {
@@ -728,30 +587,22 @@ def demonstrate_attribute_types():
         "date_of_birth": date(2000, 5, 15),
         "phone_numbers": ["555-0101", "555-0102"],
     }
-```
     validator = AttributeValidator()
-```
     simple_ok = validator.validate_simple(data["student_id"], int)
     print(f"Simple (student_id is int): {simple_ok}")
-```
     composite_ok = validator.validate_composite(
         data["name"], {"first_name", "last_name"}
     )
     print(f"Composite (name has first+last): {composite_ok}")
-```
     mv_ok = validator.validate_multi_valued(data["phone_numbers"])
     print(f"Multi-valued (phone count={len(data['phone_numbers'])}): {mv_ok}")
-```
     age = validator.validate_derived(data, "age")
     print(f"Derived (age from DOB): {age}")
-```
-```
 if __name__ == "__main__":
     demonstrate_attribute_types()
 ```
-```
+
 #### Complexity Analysis for Attributes
-```
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Simple attr validation | O(1) | O(1) | Single type check |
@@ -761,37 +612,24 @@ if __name__ == "__main__":
 | Composite attr flattening | O(K) sub-attributes | O(K) columns | Each sub-attribute becomes a column |
 | Multi-valued attr mapping | O(P+E) entity PK + values | O(E+V) table | New table with entity FK + value |
 | Null value check | O(1) | O(1) | Single comparison |
-```
 **WHY multi-valued attributes require O(P+E):** To map a multi-valued attribute like phone_numbers, we must read the entity's primary key (P) and create a new row for each value (V). The total work is proportional to the number of values. This cannot be O(1) because each value becomes its own row in the separate table.
-```
 ### 2.4 Relationship Types and Relationship Sets
 
-```
 A **relationship** is an association among two or more entities. For example, Alice Chen (a STUDENT entity) takes CS101 (a COURSE entity).
-```
 A **relationship set** is a collection of relationships of the same type. For example, all takes relationships form the TAKES relationship set.
-```
 **Degree of a Relationship:** The number of entity types participating in the relationship.
 - **Unary (degree 1):** Relationship between entities of the same entity set. Example: MARRIED_TO (PERSON married to another PERSON), MANAGES (EMPLOYEE manages another EMPLOYEE)
 - **Binary (degree 2):** Relationship between two entity sets. This is the most common degree.
 - **Ternary (degree 3):** Relationship among three entity sets.
-```
 **Cardinality Constraints:** For binary relationships, the cardinality constraint specifies how many entities from one set can relate to entities in the other set.
-```
 - **One-to-One (1:1):** An entity in A is associated with at most one entity in B, and vice versa. Example: A MANAGER manages at most one DEPARTMENT; a DEPARTMENT has at most one MANAGER.
-```
 - **One-to-Many (1:N):** An entity in A is associated with zero or more entities in B, but an entity in B is associated with at most one entity in A. Example: A DEPARTMENT has many EMPLOYEES, but an EMPLOYEE belongs to at most one DEPARTMENT.
-```
 - **Many-to-One (N:1):** The inverse of 1:N. Multiple entities in A relate to a single entity in B.
-```
 - **Many-to-Many (M:N):** An entity in A is associated with any number of entities in B, and vice versa. Example: A STUDENT can take many COURSEs; a COURSE can be taken by many STUDENTs.
-```
 **Participation Constraints (Total vs. Partial):**
 - **Total Participation:** Every entity in the set must participate in the relationship. Example: Every STUDENT must be enrolled in at least one COURSE.
 - **Partial Participation:** Some entities may not participate. Example: Not every FACULTY member advises a STUDENT.
-```
 #### Relationship Types Comparison
-```
 | Aspect | 1:1 (One-to-One) | 1:N (One-to-Many) | M:N (Many-to-Many) |
 |--------|-----------------|-------------------|-------------------|
 | **Definition** | Each entity on both sides relates to at most one | One side relates to many; other to at most one | Both sides relate to many |
@@ -808,9 +646,7 @@ A **relationship set** is a collection of relationships of the same type. For ex
 | **Participation (typical)** | Often partial on both | Total on many side | Total on both sides |
 | **Mapping Rule** | Add FK + UNIQUE to either | Add FK to many side | New table with composite PK |
 | **Common Pitfall** | Assuming 1:1 when actually 1:N | Missing NOT NULL on FK | Forgetting junction table attributes |
-```
 #### Numbered Steps to Determine Cardinality
-```
 1. **Pick one entity instance** from side A (e.g., one specific DEPARTMENT)
 2. **Ask:** How many B entities can this A relate to? (DEPARTMENT has how many EMPLOYEES?)
 3. **Answer:** Many (more than 1) -> side A is "one" or "many" depending on count
@@ -818,9 +654,7 @@ A **relationship set** is a collection of relationships of the same type. For ex
 5. **Ask:** How many A entities can this B relate to? (EMPLOYEE belongs to how many DEPARTMENTS?)
 6. **Answer:** One (at most 1) -> side B is "one"
 7. **Combine:** A can relate to many B (N), B can relate to at most one A (1) => 1:N from A to B
-```
 #### Pseudocode: Cardinality Determination
-```
 ```pseudocode
 PROCEDURE DetermineCardinality(entityA, entityB, requirements):
     a_to_b_count = CountMaxRelated(entityA, entityB, requirements)
@@ -834,7 +668,6 @@ PROCEDURE DetermineCardinality(entityA, entityB, requirements):
         RETURN "1:N (B to A)"
     ELSE:
         RETURN "M:N"
-```
 FUNCTION CountMaxRelated(entityFrom, entityTo, requirements):
     // Scan requirements for phrases like "each X has many Y" or "each X has one Y"
     IF requirements CONTAINS "many" NEAR entityFrom NEAR entityTo:
@@ -843,11 +676,9 @@ FUNCTION CountMaxRelated(entityFrom, entityTo, requirements):
         RETURN 1
 END FUNCTION
 ```
-```
+
 #### Dry Run: Cardinality Determination for School System
-```
 **Scenario:** A school system where teachers teach classes, and classes have students.
-```
 | Entity Pair | Question | Answer | Cardinality |
 |------------|----------|--------|-------------|
 | TEACHER -> CLASS | How many classes can one teacher teach? | Up to 5 | Many (N) |
@@ -857,28 +688,22 @@ END FUNCTION
 | STUDENT -> CLASS | How many classes can one student take? | Up to 7 | Many (N) |
 | **Result** | CLASS to STUDENT | | **M:N** |
 | TEACHER -> STUDENT | Direct relationship? | Via CLASS only | (Indirect) |
-```
 #### C++ Implementation: Cardinality Checker
-```
 ```cpp
 #include <iostream>
 #include <string>
 #include <vector>
 using namespace std;
-```
 enum class Cardinality { ONE_TO_ONE, ONE_TO_MANY, MANY_TO_MANY };
-```
 struct EntityPair {
     string entityA, entityB;
     int maxAtoB, maxBtoA;
     string description;
-```
     Cardinality determine() const {
         if (maxAtoB &lt;= 1 && maxBtoA <= 1) return Cardinality::ONE_TO_ONE;
         if (maxAtoB > 1 && maxBtoA &lt;= 1) return Cardinality::ONE_TO_MANY;
         return Cardinality::MANY_TO_MANY;
     }
-```
     string toString() const {
         switch(determine()) {
             case Cardinality::ONE_TO_ONE: return "1:1";
@@ -888,14 +713,12 @@ struct EntityPair {
         return "?";
     }
 };
-```
 void analyzeRelationship(const EntityPair& pair) {
     cout &lt;< pair.entityA << " -> " << pair.entityB << ": max=" << pair.maxAtoB << endl;
     cout &lt;< pair.entityB << " -> " << pair.entityA << ": max=" << pair.maxBtoA << endl;
     cout &lt;< "Cardinality: " << pair.toString() << endl;
     cout &lt;< pair.description << endl << endl;
 }
-```
 int main() {
     vector<EntityPair> relationships = {
         {"MANAGER", "DEPARTMENT", 1, 1,
@@ -909,29 +732,24 @@ int main() {
         {"PERSON", "PARENT", 2, 10,
          "A person has up to 2 parents; a parent can have many children."},
     };
-```
     for (const auto& rel : relationships) {
         analyzeRelationship(rel);
     }
     return 0;
 }
 ```
-```
+
 #### Python Implementation: Relationship Set Manager
-```
 ```python
 from enum import Enum
 from typing import List, Dict, Optional, Tuple, Set
-```
 class Cardinality(Enum):
     ONE_TO_ONE = "1:1"
     ONE_TO_MANY = "1:N"
     MANY_TO_MANY = "M:N"
-```
 class Participation(Enum):
     TOTAL = "TOTAL"
     PARTIAL = "PARTIAL"
-```
 class RelationshipSet:
     def __init__(self, name: str):
         self.name = name
@@ -939,14 +757,11 @@ class RelationshipSet:
         self.participations: Dict[str, Participation] = {}
         self.participants: List[str] = []
         self.attributes: List[str] = []
-```
     def set_cardinality(self, card: Cardinality) -> None:
         self.cardinality = card
-```
     def add_participant(self, entity: str, part: Participation) -> None:
         self.participants.append(entity)
         self.participations[entity] = part
-```
     def validate(self) -> Tuple[bool, List[str]]:
         errors = []
         if not self.cardinality:
@@ -954,7 +769,6 @@ class RelationshipSet:
         if len(self.participants) &lt; 2:
             errors.append(f"Relationship {self.name} needs at least 2 participants")
         return (len(errors) == 0, errors)
-```
     def get_mapping_rule(self) -> str:
         if not self.cardinality:
             return "Undefined"
@@ -964,21 +778,15 @@ class RelationshipSet:
             Cardinality.MANY_TO_MANY: "Create a new junction table with composite PK of both FKs",
         }
         return rules[self.cardinality]
-```
     def __repr__(self) -> str:
         parts = ", ".join(self.participants)
         return f"RelationshipSet({self.name}, {self.cardinality.value if self.cardinality else '?'}, [{parts}])"
-```
-```
 class RelationshipAnalyzer:
     """Analyzes and validates relationships in an ER model."""
-```
     def __init__(self):
         self.relationships: List[RelationshipSet] = []
-```
     def add(self, rel: RelationshipSet) -> None:
         self.relationships.append(rel)
-```
     def analyze_all(self) -> None:
         for rel in self.relationships:
             ok, errors = rel.validate()
@@ -989,57 +797,45 @@ class RelationshipAnalyzer:
                 print(f"  Validation Errors: {errors}")
             else:
                 print(f"  Status: VALID")
-```
     def find_redundant(self) -> List[Tuple[str, str]]:
         """Detect potentially redundant relationships by participant overlap."""
         pairs: List[Tuple[Set[str], str]] = []
         for rel in self.relationships:
             pairs.append((set(rel.participants), rel.name))
-```
         redundant = []
         for i, (p1, n1) in enumerate(pairs):
             for j, (p2, n2) in enumerate(pairs):
                 if i < j and p1 == p2:
                     redundant.append((n1, n2))
         return redundant
-```
-```
 def demonstrate_relationship_analysis():
     analyzer = RelationshipAnalyzer()
-```
     mgr_dept = RelationshipSet("MANAGES")
     mgr_dept.set_cardinality(Cardinality.ONE_TO_ONE)
     mgr_dept.add_participant("MANAGER", Participation.PARTIAL)
     mgr_dept.add_participant("DEPARTMENT", Participation.TOTAL)
     analyzer.add(mgr_dept)
-```
     dept_emp = RelationshipSet("EMPLOYS")
     dept_emp.set_cardinality(Cardinality.ONE_TO_MANY)
     dept_emp.add_participant("DEPARTMENT", Participation.TOTAL)
     dept_emp.add_participant("EMPLOYEE", Participation.TOTAL)
     analyzer.add(dept_emp)
-```
     student_course = RelationshipSet("ENROLLS_IN")
     student_course.set_cardinality(Cardinality.MANY_TO_MANY)
     student_course.add_participant("STUDENT", Participation.TOTAL)
     student_course.add_participant("COURSE", Participation.PARTIAL)
     analyzer.add(student_course)
-```
     analyzer.analyze_all()
-```
     redundant = analyzer.find_redundant()
     if redundant:
         print(f"\nPotentially redundant pairs: {redundant}")
     else:
         print("\nNo redundant relationships detected.")
-```
-```
 if __name__ == "__main__":
     demonstrate_relationship_analysis()
 ```
-```
+
 #### A&D Table: Relationship Degree Analysis
-```
 | Aspect | Unary | Binary | Ternary |
 |--------|-------|--------|---------|
 | **Participants** | 1 entity set | 2 entity sets | 3 entity sets |
@@ -1049,22 +845,16 @@ if __name__ == "__main__":
 | **Mapping Complexity** | Self-referencing FK | Standard mapping | Complex decomposition |
 | **Common Abuses** | Overused for hierarchies | None | Often should be 2 binaries |
 | **When to Use** | Hierarchies, peer relationships | Most business rules | Tripartite events (prescriptions, shipments) |
-```
 ### 2.5 Weak Entity Sets
 
-```
 A **weak entity set** is an entity set whose existence depends on another entity set (the **identifying** or **owner** entity set).
-```
 Characteristics:
 - A weak entity does not have a primary key of its own
 - It is identified by combining its **discriminator** (partial key) with the primary key of the identifying entity set
 - The identifying relationship is many-to-one from weak to owner
 - The participation of the weak entity in the identifying relationship is always total
-```
 **Example:** A DEPENDENT entity depends on an EMPLOYEE entity. Two employees might both have a dependent named "John Smith." Dependents are identified by the combination of their name (discriminator) and the employee ID (owner's key).
-```
 #### Weak vs Strong Entity Comparison
-```
 | Aspect | Strong Entity | Weak Entity |
 |--------|--------------|-------------|
 | **Definition** | Exists independently | Depends on owner for existence |
@@ -1082,9 +872,7 @@ Characteristics:
 | **Cascade Effect** | None | Deleting owner deletes all weak entities |
 | **Update Restrictions** | None | Cannot change owner reference easily |
 | **Common Misconception** | Weak entity = no attributes | Weak entity has attributes but no PK |
-```
 #### Real-World Analogy: Invoice System
-```
 | Concept | Analogy |
 |---------|---------|
 | Strong Entity: INVOICE | An invoice document with an invoice number |
@@ -1095,11 +883,8 @@ Characteristics:
 | Identifying Relationship | LINE_ITEM belongs to INVOICE (1:N from INVOICE) |
 | Total Participation | Every line item must be on exactly one invoice |
 | Cascade Delete | If invoice is voided, all its line items are removed |
-```
 Without the invoice, a line item is meaningless. "2 x Laptop at \$999" means nothing if you do not know which invoice it belongs to.
-```
 #### Numbered Steps to Identify and Map Weak Entities
-```
 1. **Check dependency** → Ask: "Can this entity exist without another entity?" If no, it is weak
 2. **Identify owner** → Find the entity on which it depends
 3. **Determine discriminator** → Find the attribute that distinguishes weak entities within one owner (e.g., line_number, dependent_name)
@@ -1110,9 +895,7 @@ Without the invoice, a line item is meaningless. "2 x Laptop at \$999" means not
 8. **Add FK constraint** → owner's PK in weak entity table is also a FK
 9. **Add ON DELETE CASCADE** → Deleting owner cascades to weak entities
 10. **Document** → Note in schema comments that this is a weak entity
-```
 #### Pseudocode: Weak Entity Mapping
-```
 ```pseudocode
 PROCEDURE MapWeakEntity(weakEntity, ownerEntity):
     ownerTable = MapStrongEntity(ownerEntity)
@@ -1130,11 +913,9 @@ PROCEDURE MapWeakEntity(weakEntity, ownerEntity):
     RETURN weakTable
 END PROCEDURE
 ```
-```
+
 #### Dry Run: Mapping Weak Entity DEPENDENT
-```
 **Input:** Weak entity DEPENDENT with discriminator `dependent_name`, owner EMPLOYEE (PK = `emp_id`). Additional attributes: `relationship`, `birth_date`.
-```
 | Step | Action | Result |
 |------|--------|--------|
 | 1 | Create owner table EMPLOYEE | CREATE TABLE employee (emp_id INT PK, name VARCHAR) |
@@ -1144,14 +925,12 @@ END PROCEDURE
 | 5 | Add other attributes | relationship VARCHAR(20), birth_date DATE |
 | 6 | Set composite PK | PRIMARY KEY (emp_id, dependent_name) |
 | 7 | Add cascade delete | Foreign key ON DELETE CASCADE |
-```
 **Final SQL:**
 ```sql
 CREATE TABLE employee (
     emp_id INTEGER PRIMARY KEY,
     name VARCHAR(100) NOT NULL
 );
-```
 CREATE TABLE dependent (
     emp_id INTEGER NOT NULL REFERENCES employee(emp_id) ON DELETE CASCADE,
     dependent_name VARCHAR(100) NOT NULL,
@@ -1160,44 +939,36 @@ CREATE TABLE dependent (
     PRIMARY KEY (emp_id, dependent_name)
 );
 ```
-```
+
 #### C++ Implementation: Weak Entity Mapper
-```
 ```cpp
 #include &lt;iostream&gt;
 #include &lt;string&gt;
 #include &lt;vector&gt;
 using namespace std;
-```
 struct Column {
     string name;
     string type;
     bool isPK;
     bool isFK;
     string references;
-```
     Column(string n, string t, bool pk = false, bool fk = false, string ref = "")
         : name(n), type(t), isPK(pk), isFK(fk), references(ref) {}
 };
-```
 class WeakEntityMapper {
 public:
     static void mapWeakEntity(const string& weakName, const string& ownerName,
                               const string& ownerPK, const string& discriminator,
                               const vector<pair<string, string>>& extraAttrs) {
         vector<Column> columns;
-```
         // Add owner's PK as FK
         columns.push_back(Column(ownerPK, "INTEGER", true, true, ownerName + "(" + ownerPK + ")"));
-```
         // Add discriminator
         columns.push_back(Column(discriminator, "VARCHAR(100)", true, false, ""));
-```
         // Add extra attributes
         for (const auto& [name, type] : extraAttrs) {
             columns.push_back(Column(name, type, false, false, ""));
         }
-```
         // Generate SQL
         cout << "CREATE TABLE " << weakName << " (\n";
         for (const auto& col : columns) {
@@ -1212,39 +983,31 @@ public:
         cout << ");\n";
     }
 };
-```
 int main() {
     cout &lt;< "=== Weak Entity Mapping: DEPENDENT on EMPLOYEE ===\n\n";
-```
     cout << "-- Owner table (created first):\n";
     cout << "CREATE TABLE employee (\n";
     cout << "    emp_id INTEGER PRIMARY KEY,\n";
     cout << "    name VARCHAR(100) NOT NULL\n";
     cout << ");\n\n";
-```
     cout &lt;< "-- Weak entity table:\n";
     WeakEntityMapper::mapWeakEntity("dependent", "employee", "emp_id", "dependent_name",
         {{"relationship", "VARCHAR(20)"}, {"birth_date", "DATE"}});
-```
     return 0;
 }
 ```
-```
+
 #### Python Implementation: Weak Entity Handler
-```
 ```python
 from typing import List, Tuple, Optional
-```
 class WeakEntity:
     def __init__(self, name: str, owner: str, discriminator: str):
         self.name = name
         self.owner = owner
         self.discriminator = discriminator
         self.attributes: List[Tuple[str, str]] = []
-```
     def add_attribute(self, name: str, dtype: str) -> None:
         self.attributes.append((name, dtype))
-```
     def generate_ddl(self, owner_pk: str) -> str:
         lines = [f"CREATE TABLE {self.name.lower()} ("]
         # Owner's PK as FK (part of composite PK)
@@ -1260,7 +1023,6 @@ class WeakEntity:
         lines.append(f"    PRIMARY KEY ({owner_pk}, {self.discriminator.lower()})")
         lines.append(");")
         return "\n".join(lines)
-```
     def validate(self) -> List[str]:
         errors = []
         if not self.owner:
@@ -1268,11 +1030,8 @@ class WeakEntity:
         if not self.discriminator:
             errors.append("Weak entity must have a discriminator")
         return errors
-```
-```
 def demonstrate_weak_entities():
     print("=== Weak Entity Demonstration ===\n")
-```
     # Example 1: Invoice system
     line_item = WeakEntity("LINE_ITEM", "INVOICE", "line_number")
     line_item.add_attribute("product_name", "VARCHAR(100)")
@@ -1280,65 +1039,44 @@ def demonstrate_weak_entities():
     line_item.add_attribute("unit_price", "DECIMAL(10,2)")
     print("--- Invoice Line Items ---")
     print(line_item.generate_ddl("invoice_id"))
-```
     # Example 2: Flight seats
     seat = WeakEntity("SEAT", "FLIGHT", "seat_number")
     seat.add_attribute("class", "VARCHAR(20)")
     seat.add_attribute("is_booked", "BOOLEAN")
     print("\n--- Flight Seats ---")
     print(seat.generate_ddl("flight_id"))
-```
     # Example 3: Exam scores (weak on Student + Course)
     exam = WeakEntity("EXAM_SCORE", "STUDENT", "exam_date")
     exam.add_attribute("course_id", "INTEGER")
     exam.add_attribute("score", "INTEGER")
     print("\n--- Exam Scores ---")
     print(exam.generate_ddl("student_id"))
-```
-```
 if __name__ == "__main__":
     demonstrate_weak_entities()
 ```
-```
+
 #### Edge Cases for Weak Entities
-```
 **1. Multi-level Weak Entity Chain**
 A weak entity that depends on another weak entity.
-```
 Example: SEAT depends on FLIGHT (weak), FLIGHT depends on AIRLINE (strong).
-```
 **Solution:** Cascade the composite key: AIRLINE.code + FLIGHT.date + FLIGHT.number + SEAT.row + SEAT.letter. The FK chain propagates through all levels.
-```
 **2. Weak Entity with No Natural Discriminator**
 When no attribute distinguishes instances within the same owner.
-```
 **Solution:** Add a synthetic discriminator (line_number, sequence_number, ordinal). Always use NOT NULL.
-```
 **3. Weak Entity Shared by Multiple Owners**
 A rare case where a weak entity depends on two strong entities simultaneously.
-```
 **Example:** An EXAM_SCORE depends on both STUDENT and COURSE.
-```
 **Solution:** Composite PK includes both owners' PKs plus the weak entity's discriminator: PRIMARY KEY (student_id, course_id, exam_date).
-```
 **4. Identifying Relationship Deletion**
 What happens when the owner is deleted?
-```
 **SQL Behavior:** ON DELETE CASCADE is standard. ON DELETE RESTRICT prevents deletion if weak entities exist. ON DELETE SET NULL is not meaningful since the FK is part of the PK.
-```
 **5. Weak Entity with Its Own Relationships**
 A weak entity can participate in relationships with other entities.
-```
 **Example:** LINE_ITEM (weak on INVOICE) can have a relationship with PRODUCT.
-```
 **Solution:** The LINE_ITEM table has its composite PK; other tables can reference it with a composite FK.
-```
 ### 2.6 ER Diagram Notation
 
-```
 ER diagrams use standard symbols:
-```
-```
 Rectangles: Entity sets
 Ellipses: Attributes
    - Underlined attribute: Primary key
@@ -1353,11 +1091,7 @@ Lines: Connect entities to relationships
    - No arrow: "ToMany" side
 Double-bordered rectangle: Weak entity set
 Double-bordered diamond: Identifying relationship
-```
-```
 **Diagram Description - University Schema:**
-```
-```
 [STUDENT] ----< TAKES >---- [COURSE]
     |                          |
     |                          |
@@ -1366,13 +1100,11 @@ Double-bordered diamond: Identifying relationship
   (name)                    (title)
     |                          |
 (phone_numbers)            (credits)
-```
 Key:
 - STUDENT is a rectangle with attributes: student_id (PK), name, phone_numbers (multi-valued)
 - COURSE is a rectangle with attributes: course_id (PK), title, credits
 - TAKES is a diamond connecting STUDENT and COURSE
 - M:N relationship (no arrows on lines)
-```
 Below the diagram:
 [EMPLOYEE] ==== MANAGES ---- [DEPARTMENT]
     |        (double line     |
@@ -1380,15 +1112,11 @@ Below the diagram:
   (emp_id)                  (dept_id)
     |
   (name)
-```
 Key:
 - MANAGES is 1:1 (arrow from MANAGES to EMPLOYEE, arrow from MANAGES to DEPARTMENT)
 - Double line: total participation of DEPARTMENT in MANAGES (every department has a manager)
 - Single line: partial participation of EMPLOYEE (not every employee manages a department)
-```
-```
 #### ER Diagram Notation Quick Reference
-```
 | Symbol | Meaning |
 |--------|---------|
 | Rectangle | Strong entity set |
@@ -1404,15 +1132,12 @@ Key:
 | Double line (connecting) | Total participation |
 | Arrow on line | "ToOne" side (single-valued) |
 | No arrow on line | "ToMany" side (multi-valued) |
-```
 #### C++ Implementation: ER Diagram Notation Renderer
-```
 ```cpp
 #include &lt;iostream&gt;
 #include &lt;string&gt;
 #include &lt;vector&gt;
 using namespace std;
-```
 class ERDiagramRenderer {
 public:
     static void renderEntity(const string& name, bool isWeak = false) {
@@ -1420,7 +1145,6 @@ public:
         string borderEnd = isWeak ? "]]" : "]";
         cout << border << name << borderEnd << endl;
     }
-```
     static void renderAttribute(const string& name, const string& type = "simple") {
         if (type == "key") cout &lt;< "(" << name << "*)";
         else if (type == "multi") cout &lt;< "{{" << name << "}}";
@@ -1428,17 +1152,14 @@ public:
         else if (type == "discriminator") cout &lt;< "(" << name << "~)";
         else cout &lt;< "(" << name << ")";
     }
-```
     static void renderRelationship(const string& name, bool isIdentifying = false) {
         string sym = isIdentifying ? "<>" : "<>";
         cout << "---{" << name << "}---";
     }
-```
     static void renderCardinality(const string& from, const string& to,
                                    const string& fromCard, const string& toCard) {
         cout &lt;< from << " --(" << fromCard << ")-- REL --(" << toCard << ")-- " << to << endl;
     }
-```
     static void renderUniversitySchema() {
         cout << "\n=== University ER Diagram (Text) ===\n\n";
         cout << "    [STUDENT] ----< ENROLLS_IN >---- [COURSE]\n";
@@ -1461,10 +1182,8 @@ public:
         cout << "    <> REL <>  = Relationship (M:N here)\n";
     }
 };
-```
 int main() {
     ERDiagramRenderer::renderUniversitySchema();
-```
     cout << "\n=== Simple Rendering ===\n";
     cout << "Entity: ";
     ERDiagramRenderer::renderEntity("STUDENT");
@@ -1477,18 +1196,14 @@ int main() {
     cout << endl << "Derived: ";
     ERDiagramRenderer::renderAttribute("age", "derived");
     cout << endl;
-```
     return 0;
 }
 ```
-```
+
 ### 2.7 Generalization, Specialization, and Aggregation
 
-```
 **Generalization:** The process of defining a more general entity set from lower-level entity sets. Example: PERSON is a generalization of STUDENT and FACULTY. The common attributes (name, address, phone) are moved to PERSON, while specific attributes (GPA for STUDENT, salary for FACULTY) remain in the specialized sets.
-```
 **Specialization:** The inverse → defining sub-groupings within an entity set. Example: From EMPLOYEE, we define subtypes SECRETARY, ENGINEER, and MANAGER, each with additional attributes.
-```
 **Constraints on Specialization/Generalization:**
 - **Disjointness:** Can an entity belong to more than one subclass?
   - **Disjoint (d):** An entity can belong to at most one subclass (e.g., a bank account is either SAVINGS or CHECKING, not both)
@@ -1496,11 +1211,8 @@ int main() {
 - **Completeness:** Must every entity in the superclass belong to a subclass?
   - **Total:** Every superclass entity must be in some subclass (e.g., every ACCOUNT must be SAVINGS or CHECKING)
   - **Partial:** Some superclass entities may not belong to any subclass (e.g., not every PERSON is a STUDENT or FACULTY)
-```
 **Aggregation:** Treating a relationship as an entity for participation in other relationships. Example: PROJECT_WORKS (relationship between EMPLOYEE and PROJECT) might be treated as an entity that participates in a relationship with PAYROLL to track hours.
-```
 #### ER vs EER Comparison
-```
 | Aspect | ER Model | EER Model (Extended ER) |
 |--------|---------|------------------------|
 | **Full Name** | Entity-Relationship | Extended Entity-Relationship |
@@ -1517,9 +1229,7 @@ int main() {
 | **Learning Curve** | Low | Medium |
 | **Expressiveness** | Captures 80% of scenarios | Captures 95% of scenarios |
 | **Diagram Readability** | High | Medium (denser) |
-```
 #### Generalization/Specialization Mapping Strategies Comparison
-```
 | Aspect | Strategy A: Single Table | Strategy B: Separate Tables | Strategy C: Subclass Only |
 |--------|------------------------|----------------------------|--------------------------|
 | **Description** | One table for superclass + all subclasses | Superclass table + subclass tables with FK | Only subclass tables, each with all attributes |
@@ -1534,9 +1244,7 @@ int main() {
 | **Adding New Subclass** | Add columns (ALTER TABLE) | Add new table + FK | Add new table |
 | **Migration Complexity** | High (large table ALTER) | Low (new table only) | Low |
 | **Recommendation** | Small, simple hierarchies | Most cases (flexible + clean) | When queries always need subclass details |
-```
 #### Real-World Analogy: Vehicle Registration System
-```
 | EER Concept | Vehicle Analogy |
 |-------------|----------------|
 | Superclass: VEHICLE | All registered vehicles |
@@ -1548,9 +1256,7 @@ int main() {
 | Total completeness | Every vehicle must be a car, truck, or motorcycle |
 | Partial completeness | Not every person is a student or faculty |
 | Attribute inheritance | All vehicles have VIN, make, model, year (inherited from VEHICLE) |
-```
 #### Numbered Steps for Generalization/Specialization Mapping
-```
 1. **Identify superclass entities** → Find common attributes across similar entities
 2. **Identify subclasses** → Determine distinct categories with specific attributes
 3. **Determine disjointness** → Check if an entity can belong to multiple subclasses
@@ -1561,9 +1267,7 @@ int main() {
 8. **Add discriminator** (disjoint) or boolean flags (overlapping) to superclass
 9. **Enforce constraints** via CHECK (disjoint) or application logic (overlapping)
 10. **Document** mapping decisions and rationale in schema comments
-```
 #### Pseudocode: Generalization Mapping - Strategy B
-```
 ```pseudocode
 PROCEDURE MapGeneralizationStrategyB(superclass, subclasses):
     // Create superclass table
@@ -1584,11 +1288,9 @@ PROCEDURE MapGeneralizationStrategyB(superclass, subclasses):
     RETURN (superTable, [subTables])
 END PROCEDURE
 ```
-```
+
 #### Dry Run: Generalization Mapping for VEHICLE Hierarchy
-```
 **Input:** Superclass VEHICLE (VIN, make, model, year). Subclasses: CAR (num_doors, trunk_capacity), TRUCK (cargo_capacity, num_axles). Disjoint, Total.
-```
 | Step | Action | Result |
 |------|--------|--------|
 | 1 | Create superclass table | CREATE TABLE vehicle (vin VARCHAR(17) PK, make VARCHAR(50), model VARCHAR(50), year INT, vehicle_type VARCHAR(20)) |
@@ -1598,82 +1300,60 @@ END PROCEDURE
 | 5 | Insert a truck | INSERT INTO vehicle VALUES ('3GTP2VE38DG123456', 'Chevrolet', 'Silverado', 2024, 'TRUCK'); INSERT INTO truck VALUES ('3GTP2VE38DG123456', 2000.0, 2) |
 | 6 | Query all vehicles | SELECT * FROM vehicle (returns both rows) |
 | 7 | Query only cars | SELECT v.*, c.* FROM vehicle v JOIN car c ON v.vin = c.vin |
-```
 **Result:** 3 tables, no NULLs, full constraint enforcement via FK + composite queries.
-```
 #### Python Implementation: Generalization Mapper
-```
 ```python
 from typing import List, Dict, Optional, Tuple
 from enum import Enum
-```
 class Disjointness(Enum):
     DISJOINT = "d"
     OVERLAPPING = "o"
-```
 class Completeness(Enum):
     TOTAL = "total"
     PARTIAL = "partial"
-```
-```
 class SuperClass:
     def __init__(self, name: str, pk: str):
         self.name = name
         self.pk = pk
         self.common_attributes: List[Tuple[str, str]] = []
         self.subclasses: List['SubClass'] = []
-```
     def add_attr(self, name: str, dtype: str) -> None:
         self.common_attributes.append((name, dtype))
-```
     def add_subclass(self, sub: 'SubClass') -> None:
         self.subclasses.append(sub)
-```
-```
 class SubClass:
     def __init__(self, name: str, disjointness: Disjointness, completeness: Completeness):
         self.name = name
         self.disjointness = disjointness
         self.completeness = completeness
         self.specific_attributes: List[Tuple[str, str]] = []
-```
     def add_attr(self, name: str, dtype: str) -> None:
         self.specific_attributes.append((name, dtype))
-```
-```
 class GeneralizationMapper:
     """Maps generalization/specialization hierarchies to relational schemas."""
-```
     @staticmethod
     def strategy_a_single_table(superclass: SuperClass) -> str:
         """Strategy A: One table for everything."""
         lines = [f"CREATE TABLE {superclass.name.lower()} ("]
         lines.append(f"    {superclass.pk.lower()} {_find_pk_type(superclass)} PRIMARY KEY,")
-```
         for name, dtype in superclass.common_attributes:
             lines.append(f"    {name.lower()} {dtype},")
-```
         # Discriminator column
         lines.append("    entity_type VARCHAR(20) NOT NULL,")
-```
         # Add all subclass-specific attributes (nullable)
         all_sub_attrs = []
         for sub in superclass.subclasses:
             for name, dtype in sub.specific_attributes:
                 all_sub_attrs.append((f"{sub.name.lower()}_{name.lower()}", dtype))
-```
         for i, (name, dtype) in enumerate(all_sub_attrs):
             comma = "," if i < len(all_sub_attrs) - 1 else ""
             lines.append(f"    {name} {dtype}{comma}")
-```
         lines.append(");")
         return "\n".join(lines)
-```
     @staticmethod
     def strategy_b_separate_tables(superclass: SuperClass) -> List[str]:
         """Strategy B: Superclass table + subclass tables with FK."""
         statements = []
-```
         # Superclass table
         lines = [f"CREATE TABLE {superclass.name.lower()} ("]
         lines.append(f"    {superclass.pk.lower()} {_find_pk_type(superclass)} PRIMARY KEY,")
@@ -1682,7 +1362,6 @@ class GeneralizationMapper:
             lines.append(f"    {name.lower()} {dtype}{comma}")
         lines.append(");")
         statements.append("\n".join(lines))
-```
         # Subclass tables
         for sub in superclass.subclasses:
             lines = [f"CREATE TABLE {sub.name.lower()} ("]
@@ -1693,9 +1372,7 @@ class GeneralizationMapper:
                 lines.append(f"    {name.lower()} {dtype}{comma}")
             lines.append(");")
             statements.append("\n".join(lines))
-```
         return statements
-```
     @staticmethod
     def strategy_c_subclass_only(superclass: SuperClass) -> List[str]:
         """Strategy C: Only subclass tables (each has all attributes)."""
@@ -1711,79 +1388,55 @@ class GeneralizationMapper:
             lines.append(");")
             statements.append("\n".join(lines))
         return statements
-```
-```
 def _find_pk_type(superclass: SuperClass) -> str:
     for name, dtype in superclass.common_attributes:
         if name == superclass.pk:
             return dtype
     return "INTEGER"
-```
-```
 def demonstrate_generalization():
     print("=== Generalization/ Specialization Mapping ===\n")
-```
     # Vehicle hierarchy
     vehicle = SuperClass("VEHICLE", "vin")
     vehicle.add_attr("vin", "VARCHAR(17)")
     vehicle.add_attr("make", "VARCHAR(50)")
     vehicle.add_attr("model", "VARCHAR(50)")
     vehicle.add_attr("year", "INTEGER")
-```
     car = SubClass("CAR", Disjointness.DISJOINT, Completeness.TOTAL)
     car.add_attr("num_doors", "INTEGER")
     car.add_attr("trunk_capacity", "DECIMAL(8,2)")
     vehicle.add_subclass(car)
-```
     truck = SubClass("TRUCK", Disjointness.DISJOINT, Completeness.TOTAL)
     truck.add_attr("cargo_capacity", "DECIMAL(10,2)")
     truck.add_attr("num_axles", "INTEGER")
     vehicle.add_subclass(truck)
-```
     print("--- Strategy A: Single Table ---")
     print(GeneralizationMapper.strategy_a_single_table(vehicle))
-```
     print("\n--- Strategy B: Separate Tables (Recommended) ---")
     for stmt in GeneralizationMapper.strategy_b_separate_tables(vehicle):
         print(stmt)
-```
     print("\n--- Strategy C: Subclass Tables Only ---")
     for stmt in GeneralizationMapper.strategy_c_subclass_only(vehicle):
         print(stmt)
-```
-```
 if __name__ == "__main__":
     demonstrate_generalization()
 ```
-```
+
 ### 2.8 From ER to Relational Mapping
 
-```
 ER diagrams are conceptual → they must be converted to relational schemas for implementation. The mapping rules:
-```
 1. **Strong Entity Sets:** Create a table with all simple attributes. Composite attributes are flattened (each component becomes a column). The primary key becomes the table's primary key.
-```
 2. **Weak Entity Sets:** Create a table with all attributes plus the primary key of the owning entity as a foreign key. The primary key combines the owner's key and the weak entity's discriminator.
-```
 3. **Binary 1:1 Relationships:** Add the primary key of one side as a foreign key in the table for the other side. Include relationship attributes.
-```
 4. **Binary 1:N Relationships:** Add the primary key of the "one" side as a foreign key in the table for the "many" side. Total participation is enforced through NOT NULL.
-```
 5. **Binary M:N Relationships:** Create a new table with the primary keys of both entities as foreign keys. Their combination is the primary key. Include relationship attributes.
-```
 6. **Multi-valued Attributes:** Create a new table with the entity's primary key plus the attribute. The key is the combination of both.
-```
 7. **Generalization/Specialization:** Three strategies:
    - **Strategy A: Single table:** Combine superclass and all subclasses into one table with nullable columns for subclass-specific attributes and a type discriminator column.
    - **Strategy B: Separate tables for each class:** Create a table for the superclass and separate tables for each subclass, linked via foreign keys.
    - **Strategy C: Subclass tables only:** Skip the superclass table; each subclass table contains both specific and inherited attributes.
-```
 #### Complete Dry Run: ER-to-Relational Mapping for University Schema
-```
 **Input ER Diagram:** STUDENT (student_id PK, name {first, last}, phone_numbers M), COURSE (course_id PK, title, credits), ENROLLS_IN (M:N between STUDENT and COURSE, has semester, grade), DEPENDENT (weak on STUDENT, discriminator: dependent_name).
-```
 **Rule-by-Rule Trace:**
-```
 | Rule # | Rule Name | Input Element | Output Table | Key Decision |
 |--------|-----------|--------------|-------------|--------------|
 | 1 | Strong Entity | STUDENT | student(student_id PK, first_name, last_name) | Composite name flattened to 2 columns |
@@ -1794,7 +1447,6 @@ ER diagrams are conceptual → they must be converted to relational schemas for 
 | 5 | M:N Relationship | ENROLLS_IN | enrolls_in(student_id FK, course_id FK, semester, grade) | PK = (student_id, course_id) |
 | 6 | Multi-valued Attr | phone_numbers on STUDENT | student_phone(student_id FK, phone) | PK = (student_id, phone) |
 | 7 | Generalization | (none here) | N/A | Not present in this schema |
-```
 **Final Schema (6 tables):**
 ```sql
 CREATE TABLE student (
@@ -1802,19 +1454,16 @@ CREATE TABLE student (
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL
 );
-```
 CREATE TABLE student_phone (
     student_id INTEGER REFERENCES student(student_id),
     phone VARCHAR(20),
     PRIMARY KEY (student_id, phone)
 );
-```
 CREATE TABLE course (
     course_id VARCHAR(10) PRIMARY KEY,
     title VARCHAR(200) NOT NULL,
     credits INTEGER CHECK (credits > 0)
 );
-```
 CREATE TABLE enrolls_in (
     student_id INTEGER REFERENCES student(student_id),
     course_id VARCHAR(10) REFERENCES course(course_id),
@@ -1822,7 +1471,6 @@ CREATE TABLE enrolls_in (
     grade CHAR(2),
     PRIMARY KEY (student_id, course_id)
 );
-```
 CREATE TABLE dependent (
     student_id INTEGER REFERENCES student(student_id) ON DELETE CASCADE,
     dependent_name VARCHAR(100) NOT NULL,
@@ -1831,9 +1479,8 @@ CREATE TABLE dependent (
     PRIMARY KEY (student_id, dependent_name)
 );
 ```
-```
+
 #### Fan Trap vs Chasm Trap Comparison
-```
 | Aspect | Fan Trap | Chasm Trap |
 |--------|----------|------------|
 | **Definition** | Ambiguity when a "one" entity fans out to multiple "many" entities | Information loss when two "many-to-one" relationships converge |
@@ -1846,84 +1493,54 @@ CREATE TABLE dependent (
 | **Solution** | Add direct relationship between child entities; restructure | Use UNION, separate queries, or restructure schema |
 | **Real-world Example** | Branch --has--> Loan, Branch --has--> Account (which loan belongs to which account?) | Department --has--> Employee, Department --manages--> Project (employees without projects disappear) |
 | **Prevention** | Validate query paths during schema design | Use OUTER JOINs or verify coverage |
-```
 #### Interview Corner
-```
 **Q1: What is the difference between an entity, an attribute, and a relationship?**
-```
 **A:** An **entity** is a real-world object about which we store data (e.g., STUDENT). An **attribute** is a property of an entity (e.g., student_id, name). A **relationship** is an association between entities (e.g., ENROLLS_IN connects STUDENT and COURSE). In SQL terms: entity = table, attribute = column, relationship = foreign key or junction table.
-```
 **Q2: How do you identify a weak entity?**
-```
 **A:** A weak entity is identified by checking if its existence depends on another entity. Key indicators: it has no meaningful primary key of its own, it cannot exist without its owner, and deleting the owner must cascade-delete the weak entity. Example: LINE_ITEM on an INVOICE → the line item has no meaning without the invoice.
-```
 **Q3: What are participation constraints and why do they matter?**
-```
 **A:** Participation constraints define whether every entity in a set must participate in a relationship. **Total participation** (double line in ER) means every entity must be involved (e.g., every student must be enrolled in at least one course). **Partial participation** (single line) means some entities may not participate (e.g., not every professor teaches a course). They matter because they determine whether FK columns should be NOT NULL.
-```
 **Q4: What is the difference between cardinality and multiplicity?**
-```
 **A:** **Cardinality** is an ER modeling concept describing the maximum number of entities on each side of a relationship (1:1, 1:N, M:N). **Multiplicity** is the UML term for the same concept but includes both minimum and maximum constraints (e.g., 0..* or 1..*). In practice, cardinality = maximum side; multiplicity = [min, max] range. Both define relationship structure, but multiplicity is more precise.
-```
 **Q5: Explain the N+1 problem in ER-to-relational mapping.**
-```
 **A:** The N+1 problem occurs when querying a hierarchy (generalization). For N subclass instances, you run 1 query on the superclass + N queries on subclasses (= N+1 total). This is common with Strategy B mapping. Solution: use JOINs (single query) or implement eager loading. The tradeoff is join complexity vs. query count.
-```
 **Q6: When should you use a ternary relationship vs. two binary relationships?**
-```
 **A:** Use a ternary relationship when the relationship among three entities is atomic and cannot be decomposed. For example, a SUPPLIER supplies a PRODUCT to a WAREHOUSE → the supply relationship involves all three simultaneously. Decomposing into SUPPLIER-supplies-PRODUCT and PRODUCT-stored-in-WAREHOUSE loses the constraint that a specific supplier supplies a specific product to a specific warehouse. Use binary when the relationships are independent.
-```
 **Q7: How do you map a unary (recursive) relationship?**
-```
 **A:** For a unary 1:N relationship (e.g., EMPLOYEE manages EMPLOYEE): Add a self-referencing FK column (e.g., manager_id FK to employee(emp_id)). For unary M:N (e.g., TASK depends on TASK): Create a junction table with two FKs referencing the same entity's PK.
-```
 **Q8: What is aggregation in ER modeling?**
-```
 **A:** Aggregation treats a relationship as an entity for participation in another relationship. Example: The WORKS_ON relationship between EMPLOYEE and PROJECT might be treated as an entity that participates in USES relationship with EQUIPMENT. This is needed because standard ER does not allow relationships between relationships.
-```
 #### Applications in Real Systems
-```
 **1. MySQL Workbench ER Tools**
-```
 MySQL Workbench provides a visual ER designer (reverse and forward engineering):
 - **Reverse Engineering:** Existing database -> ER diagram (right-click the EER diagram tab, select "Reverse Engineer")
 - **Forward Engineering:** ER diagram -> SQL DDL (Database menu -> Forward Engineer)
 - **Synchronization:** Compare model with live database and generate ALTER scripts
 - **Features:** Automatic FK creation, relationship line routing, color-coded entities, layer support
-```
 **2. draw.io (diagrams.net)**
-```
 Draw.io is a free, web-based diagramming tool widely used for ER diagrams:
 - **ER Templates:** Entity-Relationship shape library with pre-built Chen and Crow's Foot notations
 - **Export:** PNG, SVG, PDF, or embedded HTML (viewable without draw.io)
 - **Advantages:** Free, collaborative (Google Drive/OneDrive integration), no install needed
 - **Limitations:** Manual layout only, no forward/reverse engineering with live databases
-```
 **3. Lucidchart**
-```
 Lucidchart is a premium diagramming tool with strong database modeling:
 - **ER Shapes:** Dedicated ER shape libraries with multiple notation styles
 - **Database Import:** Import schema from MySQL, PostgreSQL, SQL Server, Oracle → auto-generates ER diagram
 - **Data Linking:** Link shapes to spreadsheet data for attribute documentation
 - **Export:** Visio, PDF, SVG, PNG; integrates with Confluence, Jira, Slack
 - **Collaboration:** Real-time multi-user editing with comments and version history
-```
 **4. pgAdmin4 (PostgreSQL)**
-```
 - ER diagram viewer for existing PostgreSQL databases
 - Reverse engineering from live database
 - Export as image or JSON
 - Limited for initial design (better for documentation of existing schemas)
-```
 **5. DbSchema**
-```
 - Universal database designer supporting 40+ databases
 - HTML5 documentation with interactive diagrams
 - Schema synchronization and version control
 - Data explorer with visual query builder
-```
 **Comparison of Tools:**
-```
 | Tool | Free | Reverse Eng. | Forward Eng. | Collab. | Notations |
 |------|------|-------------|-------------|---------|-----------|
 | MySQL Workbench | Yes | Yes | Yes | No | Chen, Crow's Foot |
@@ -1931,15 +1548,10 @@ Lucidchart is a premium diagramming tool with strong database modeling:
 | Lucidchart | Limited | Yes | No | Yes | Multiple |
 | pgAdmin4 | Yes | Yes | No | No | Automatic layout |
 | DbSchema | Paid | Yes | Yes | No | Multiple |
-```
 ## Examples
-```
 > **One-Sentence Takeaway:** Practicing ER-to-relational mapping with real examples → from strong entities to weak entities to generalization → builds the skill to design any database schema systematically.
-```
 **Example 2.1: Mapping a University ER Diagram to Relations**
-```
 Given the ER diagram described above:
-```
 ```sql
 -- Strong entity: STUDENT
 CREATE TABLE student (
@@ -1947,21 +1559,18 @@ CREATE TABLE student (
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL
 );
-```
 -- Multi-valued attribute: phone_numbers
 CREATE TABLE student_phone (
     student_id INTEGER REFERENCES student(student_id),
     phone VARCHAR(15),
     PRIMARY KEY (student_id, phone)
 );
-```
 -- Strong entity: COURSE
 CREATE TABLE course (
     course_id VARCHAR(10) PRIMARY KEY,
     title VARCHAR(200) NOT NULL,
     credits INTEGER CHECK (credits > 0 AND credits &lt;= 5)
 );
-```
 -- M:N relationship: TAKES
 CREATE TABLE takes (
     student_id INTEGER REFERENCES student(student_id),
@@ -1970,13 +1579,11 @@ CREATE TABLE takes (
     grade CHAR(2),
     PRIMARY KEY (student_id, course_id, semester)
 );
-```
 -- Example of 1:N: DEPARTMENT has many EMPLOYEES
 CREATE TABLE department (
     dept_id INTEGER PRIMARY KEY,
     dept_name VARCHAR(100) NOT NULL
 );
-```
 CREATE TABLE employee (
     emp_id INTEGER PRIMARY KEY,
     emp_name VARCHAR(100) NOT NULL,
@@ -1984,16 +1591,14 @@ CREATE TABLE employee (
 );
 -- The dept_id FK in employee models the "many" side of 1:N
 ```
-```
+
 **Example 2.2: Weak Entity -- Dependents**
-```
 ```sql
 -- Strong entity
 CREATE TABLE employee (
     emp_id INTEGER PRIMARY KEY,
     name VARCHAR(100) NOT NULL
 );
-```
 -- Weak entity: DEPENDENT
 -- Identified by emp_id + dependent_name
 CREATE TABLE dependent (
@@ -2004,9 +1609,8 @@ CREATE TABLE dependent (
     PRIMARY KEY (emp_id, dependent_name)
 );
 ```
-```
+
 **Example 2.3: Generalization/Specialization -- Strategy B**
-```
 ```sql
 -- Superclass table
 CREATE TABLE person (
@@ -2014,30 +1618,26 @@ CREATE TABLE person (
     name VARCHAR(100) NOT NULL,
     address VARCHAR(255)
 );
-```
 -- Subclass tables (1:1 relationship via FK)
 CREATE TABLE student (
     person_id INTEGER PRIMARY KEY REFERENCES person(person_id),
     gpa DECIMAL(3,2),
     major VARCHAR(50)
 );
-```
 CREATE TABLE faculty (
     person_id INTEGER PRIMARY KEY REFERENCES person(person_id),
     salary DECIMAL(10,2),
     department VARCHAR(50)
 );
-```
 -- A person who is both a student and faculty:
 -- INSERT INTO person VALUES (1, 'Dr. Smith', '123 Main St');
 -- INSERT INTO student VALUES (1, 3.8, 'CS');
 -- INSERT INTO faculty VALUES (1, 85000, 'CS');
-```
-```
 > **Warning:** Ternary relationships (degree 3) are often overused → most scenarios modeled with three entities can be expressed as two binary relationships.
 >
 > **Remember:** The ER diagram is a communication tool, not just a design artifact → use consistent notation so all stakeholders interpret it the same way.
 ```
+
 ### 2.13 ER Model Implementation (TypeScript)
 
 The following TypeScript code demonstrates how to programmatically represent and validate an ER model, including entity types, relationships, attributes, and cardinality constraints.
@@ -2362,7 +1962,6 @@ flowchart TD
 ---
 
 ## Pro Tips
-```
 1. **Always start with an ER diagram** before writing a single CREATE TABLE statement → it catches design flaws early and communicates structure to stakeholders.
 2. **Binary relationships cover 90% of real-world cases** → avoid ternary relationships unless all three entity types are genuinely independent; they often hide design problems.
 3. **Be precise with cardinality and participation** → confusing 1:N with M:N or total with partial participation leads to incorrect schemas that are expensive to fix later.
@@ -2371,9 +1970,7 @@ flowchart TD
 6. **Name junction tables descriptively** → use entity_relationship names like `student_course` or `enrolls_in`, not `junction_table`.
 7. **Avoid fan traps by validating query paths** → before finalizing the schema, write sample queries for all common access patterns.
 8. **Document all assumptions** → cardinality decisions are often ambiguous in requirements; document why you chose each one.
-```
 ## One-Sentence Takeaways
-```
 - **2.1:** The ER model is a high-level conceptual tool for capturing user requirements before database implementation.
 - **2.2:** An entity is a distinguishable real-world object; an entity set is a collection of similar entities.
 - **2.3:** Attributes describe entity properties and can be simple/composite, single-valued/multi-valued, or stored/derived.
@@ -2382,11 +1979,8 @@ flowchart TD
 - **2.6:** ER diagrams use standard symbols → rectangles for entities, diamonds for relationships, ellipses for attributes.
 - **2.7:** Generalization creates a superclass from subclasses; specialization creates subclasses from a superclass.
 - **2.8:** ER-to-relational mapping converts conceptual designs into implementable SQL schemas using systematic rules.
-```
 ## Concept Comparison Tables
-```
 ### Core Comparison Table
-```
 | Concept | Definition | Example |
 |---------|-----------|---------|
 | **Strong Entity** | Has its own primary key | STUDENT(student_id) |
@@ -2399,9 +1993,7 @@ flowchart TD
 | **Simple Attribute** | Cannot be divided further | student_id, age |
 | **Composite Attribute** | Can be divided into subparts | name (first, last), address (street, city, zip) |
 | **Derived Attribute** | Computed from stored attributes | age from date_of_birth |
-```
 ### Fan Trap vs Chasm Trap Comparison
-```
 | Aspect | Fan Trap | Chasm Trap |
 |--------|----------|------------|
 | Pattern | One entity has two independent 1:N relationships | Two N:1 relationships converge on one entity |
@@ -2409,9 +2001,7 @@ flowchart TD
 | Symptom | Ambiguous query paths | Missing rows in JOIN results |
 | Root Cause | "One" side fans out to two "many" sides | "Many" sides have no direct relationship |
 | Fix | Direct relationship between child entities | UNION query or schema restructure |
-```
 ### Mapping Rule Quick Reference
-```
 | ER Element | Mapping Action | SQL Construct |
 |-----------|---------------|---------------|
 | Strong Entity | Create table | CREATE TABLE |
@@ -2426,9 +2016,7 @@ flowchart TD
 | M:N Relationship | Junction table | Composite PK of two FKs |
 | Total Participation | NOT NULL constraint | NOT NULL on FK column |
 | Partial Participation | NULL allowed | NULL on FK column |
-```
 ## Cross-Application Matrix
-```
 | ER Concept | Applies To | Why It Matters |
 |-----------|-----------|----------------|
 | **Weak Entities** | Invoicing, flight booking, payroll | Line items, seat assignments, dependents need parent |
@@ -2437,73 +2025,59 @@ flowchart TD
 | **Generalization** | Employee types, account types, media | Models inheritance: savings/checking, full-time/contract |
 | **Multi-valued Attributes** | Phone numbers, skills, tags | Never store as comma-separated strings |
 | **Total Participation** | Mandatory relationships | Ensures data completeness |
-```
 ## Chapter Quiz
-```
 1. A weak entity is identified by:
    a) Its own primary key only
    b) A combination of a discriminator and the owner's primary key
    c) A composite attribute
    d) A derived attribute
-```
 2. In a 1:N relationship between DEPARTMENT and EMPLOYEE:
    a) Each department has many employees, and each employee belongs to many departments
    b) Each department has many employees, and each employee belongs to one department
    c) Each department has one employee, and each employee belongs to one department
    d) Each department has one employee, and each employee belongs to many departments
-```
 3. Which symbol represents a total participation in an ER diagram?
    a) Single line
    b) Double line
    c) Arrow
    d) Dashed line
-```
 4. A ternary relationship involves:
    a) Two entity sets
    b) Three entity sets
    c) Three attributes
    d) Three relationship sets
-```
 5. Which attribute type requires a separate table during ER-to-relational mapping?
    a) Simple attribute
    b) Composite attribute
    c) Multi-valued attribute
    d) Derived attribute
-```
 6. Generalization is the process of:
    a) Creating subclasses from a superclass
    b) Creating a superclass from multiple subclasses
    c) Adding attributes to an entity
    d) Removing redundant relationships
-```
 7. The identifying relationship of a weak entity is always:
    a) Many-to-many
    b) Many-to-one from weak to owner
    c) One-to-one
    d) One-to-many from owner to weak
-```
 8. Which mapping strategy creates nullable columns for subclass-specific attributes?
    a) Strategy A: Single table
    b) Strategy B: Separate tables
    c) Strategy C: Subclass tables only
    d) Strategy D: No mapping needed
-```
 9. A fan trap occurs when:
    a) A weak entity has no discriminator
    b) A "one" entity fans out to multiple "many" entities
    c) Two entities have an M:N relationship
    d) A ternary relationship is used incorrectly
-```
 10. Which tool supports both reverse and forward engineering of ER diagrams?
     a) draw.io
     b) MySQL Workbench
     c) Lucidchart (free version)
     d) Microsoft Word
-```
 **Answers:** 1-b, 2-b, 3-b, 4-b, 5-c, 6-b, 7-b, 8-a, 9-b, 10-b
-```
 ## Summary
-```
 - The ER model is a high-level conceptual data model used for database design.
 - Entities represent objects; attributes describe entity properties; relationships connect entities.
 - Attribute types include simple/composite, single-valued/multi-valued, stored/derived.
@@ -2513,61 +2087,40 @@ flowchart TD
 - Generalization and specialization model inheritance relationships.
 - ER-to-relational mapping translates conceptual designs into implementable table schemas using 7 systematic rules.
 - Tools like MySQL Workbench, draw.io, and Lucidchart support ER diagram creation and schema generation.
-```
 ## Exercises
-```
 ### Basic
-```
 1. For a LIBRARY database, identify at least three entity sets and two relationship sets.
-```
 2. Classify each attribute as simple or composite, single-valued or multi-valued, stored or derived:
    a) `employee_id`
    b) `full_name` (stored as "Smith, John")
    c) `years_of_service` (computed from hire_date)
    d) `phone_numbers`
    e) `address`
-```
 3. What is the difference between a weak entity set and a strong entity set? Give an example of each.
-```
 4. Draw (describe in words) an ER diagram for a HOSPITAL where:
    - DOCTOR treats PATIENT
    - Each DOCTOR has a name and specialty
    - Each PATIENT has a name, date_of_birth, and insurance provider
    - A PATIENT can have multiple DOCTORs and vice versa
-```
 ### Intermediate
-```
 5. For a BILLING system: INVOICE has invoice_id, date, total_amount. LINE_ITEM has description, quantity, unit_price. An INVOICE has many LINE_ITEMs. A LINE_ITEM belongs to exactly one INVOICE. What cardinality is this? Write the CREATE TABLE statements.
-```
 6. Consider a COMPANY database where MANAGER manages DEPARTMENT. Not every employee is a manager. Every department has exactly one manager. One manager manages exactly one department. Identify the cardinality, participation constraints, and write the schema.
-```
 7. Convert the following description into an ER diagram description and mapping:
    - A PROJECT has project_id, name, budget
    - An EMPLOYEE has emp_id, name, title
    - An EMPLOYEE can work on multiple PROJECTs
    - A PROJECT can have multiple EMPLOYEEs
    - Each work relationship has hours_per_week
-```
 ### Advanced
-```
 8. Design a generalization hierarchy for VEHICLES in a rental system. Include CAR, TRUCK, and MOTORCYCLE as subclasses. What attributes go in VEHICLE? Which subclass-specific attributes would each have? Show the mapping SQL using Strategy B.
-```
 9. A university database has the following REQUIREMENT: "A course section must be taught by exactly one instructor. An instructor teaches zero or more sections. A section belongs to exactly one course. A course has zero or more sections." Identify all entity sets, relationship sets, cardinalities, and participation constraints. Write the full SQL schema.
-```
 10. Consider an AIRLINE database with WEAK entities: SEAT depends on FLIGHT. Each flight has a flight_number and date. Each seat has seat_number (1A, 1B, etc.) and class (economy, business, first). Write the SQL schema. How would you handle the case where the same seat number exists on different flights?
-```
 11. Identify the fan trap in this schema: BRANCH has many LOANS. BRANCH has many ACCOUNTS. Explain why querying "which loan belongs to which account" is ambiguous.
-```
 12. For the VEHICLE generalization hierarchy (Exercise 8), write a single query using Strategy B that returns all vehicles with their subclass-specific attributes.
-```
 ## Additional Case Studies
-```
 ### Case Study 1: Online Bookstore ER Model
-```
 **Requirements:** An online bookstore sells books to customers. Each book has ISBN (unique), title, author(s), price, and stock quantity. A customer has customer_id, name, email, and shipping_addresses (multiple). Customers place orders. Each order has order_id, order_date, status, and total_amount. An order contains multiple order_items. Each order_item references a book and has quantity and unit_price. Books are written by authors. An author has author_id, name, and biography. An author can write multiple books; a book can have multiple authors.
-```
 **Step-by-Step ER Modeling:**
-```
 | Step | Action | Result |
 |------|--------|--------|
 | 1 | Identify entities | BOOK, CUSTOMER, ORDER, ORDER_ITEM, AUTHOR |
@@ -2576,9 +2129,7 @@ flowchart TD
 | 4 | Classify attributes | shipping_addresses (multi-valued), total_amount (derived from sum of order_items) |
 | 5 | Identify weak entities | ORDER_ITEM is weak on ORDER (no meaning without which order) |
 | 6 | Identify key attributes | ISBN (BOOK), customer_id (CUSTOMER), order_id (ORDER), author_id (AUTHOR) |
-```
 **ER-to-Relational Mapping:**
-```
 ```sql
 -- Strong entities
 CREATE TABLE book (
@@ -2587,13 +2138,11 @@ CREATE TABLE book (
     price DECIMAL(10,2) NOT NULL,
     stock_quantity INTEGER DEFAULT 0
 );
-```
 CREATE TABLE customer (
     customer_id INTEGER PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     email VARCHAR(150) UNIQUE NOT NULL
 );
-```
 -- Multi-valued attribute: shipping_addresses
 CREATE TABLE customer_address (
     customer_id INTEGER REFERENCES customer(customer_id),
@@ -2601,13 +2150,11 @@ CREATE TABLE customer_address (
     is_primary BOOLEAN DEFAULT FALSE,
     PRIMARY KEY (customer_id, address_line)
 );
-```
 CREATE TABLE author (
     author_id INTEGER PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     biography TEXT
 );
-```
 -- 1:N: CUSTOMER to ORDER
 CREATE TABLE cust_order (
     order_id INTEGER PRIMARY KEY,
@@ -2615,7 +2162,6 @@ CREATE TABLE cust_order (
     order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     status VARCHAR(20) DEFAULT 'pending'
 );
-```
 -- Weak entity: ORDER_ITEM on ORDER
 CREATE TABLE order_item (
     order_id INTEGER NOT NULL REFERENCES cust_order(order_id) ON DELETE CASCADE,
@@ -2625,7 +2171,6 @@ CREATE TABLE order_item (
     unit_price DECIMAL(10,2) NOT NULL,
     PRIMARY KEY (order_id, line_number)
 );
-```
 -- M:N: AUTHOR writes BOOK
 CREATE TABLE written_by (
     author_id INTEGER REFERENCES author(author_id),
@@ -2633,23 +2178,18 @@ CREATE TABLE written_by (
     PRIMARY KEY (author_id, isbn)
 );
 ```
-```
+
 **Complexity Analysis for this Schema:**
 - Tables created: 8 (5 strong entity tables + 1 junction + 1 weak entity + 1 multi-valued attr)
 - FK constraints: 7 (order->customer, order_item->order, order_item->book, written_by->author, written_by->book, customer_address->customer)
 - Maximum join depth: 4 (customer -> order -> order_item -> book -> author)
-```
 ### Case Study 2: Hospital Management System
-```
 **Requirements:** A hospital has doctors, patients, and appointments. Doctors have doctor_id, name, specialization, and phone. Patients have patient_id, name, date_of_birth, and insurance_info (composite: provider, policy_number). Doctors have multiple patients and vice versa (M:N via appointment). Each appointment has appointment_id, date, time, duration, and notes. A nurse assists in appointments. Nurses have nurse_id and name. Each appointment can have zero or more nurses assisting.
-```
 **Entities:** DOCTOR, PATIENT, APPOINTMENT, NURSE
-```
 **Relationships:**
 - DOCTOR conducts APPOINTMENT (1:N)
 - PATIENT attends APPOINTMENT (1:N)
 - APPOINTMENT assisted by NURSE (M:N)
-```
 `sql
 CREATE TABLE doctor (
     doctor_id INTEGER PRIMARY KEY,
@@ -2657,7 +2197,6 @@ CREATE TABLE doctor (
     specialization VARCHAR(100),
     phone VARCHAR(20)
 );
-```
 CREATE TABLE patient (
     patient_id INTEGER PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -2665,7 +2204,6 @@ CREATE TABLE patient (
     insurance_provider VARCHAR(100),
     insurance_policy_no VARCHAR(50)
 );
-```
 CREATE TABLE appointment (
     appointment_id INTEGER PRIMARY KEY,
     doctor_id INTEGER NOT NULL REFERENCES doctor(doctor_id),
@@ -2675,44 +2213,36 @@ CREATE TABLE appointment (
     duration_minutes INTEGER DEFAULT 30,
     notes TEXT
 );
-```
 -- M:N: APPOINTMENT to NURSE
 CREATE TABLE appointment_nurse (
     appointment_id INTEGER REFERENCES appointment(appointment_id),
     nurse_id INTEGER REFERENCES nurse(nurse_id),
     PRIMARY KEY (appointment_id, nurse_id)
 );
-```
 CREATE TABLE nurse (
     nurse_id INTEGER PRIMARY KEY,
     name VARCHAR(100) NOT NULL
 );
 `
-```
 ### Case Study 3: Detecting and Fixing a Fan Trap
-```
 **Problem Scenario:** A bank database has BRANCH in a 1:N relationship with both LOAN and ACCOUNT. A manager wants to know: "For each account, which loan does the account holder have at the same branch?"
-```
 **Flawed Schema:**
 `sql
 CREATE TABLE branch (
     branch_code VARCHAR(10) PRIMARY KEY,
     branch_name VARCHAR(100)
 );
-```
 CREATE TABLE loan (
     loan_id INTEGER PRIMARY KEY,
     branch_code VARCHAR(10) REFERENCES branch(branch_code),
     amount DECIMAL(12,2)
 );
-```
 CREATE TABLE account (
     acc_number INTEGER PRIMARY KEY,
     branch_code VARCHAR(10) REFERENCES branch(branch_code),
     balance DECIMAL(12,2)
 );
 `
-```
 **The Query that Fails:**
 `sql
 SELECT a.acc_number, l.loan_id, a.branch_code
@@ -2721,57 +2251,46 @@ JOIN branch b ON a.branch_code = b.branch_code
 JOIN loan l ON b.branch_code = l.branch_code;
 `
 This produces a Cartesian product between accounts and loans at the same branch. A branch with 3 accounts and 2 loans returns 6 rows, falsely pairing each account with every loan.
-```
 **The Fix:** Add a direct CUSTOMER entity that owns both accounts and loans, or restructure to include a CUSTOMER-ACCOUNT and CUSTOMER-LOAN relationship.
-```
 `sql
 CREATE TABLE customer (
     customer_id INTEGER PRIMARY KEY,
     name VARCHAR(100)
 );
-```
 CREATE TABLE customer_account (
     customer_id INTEGER REFERENCES customer(customer_id),
     acc_number INTEGER REFERENCES account(acc_number),
     PRIMARY KEY (customer_id, acc_number)
 );
-```
 CREATE TABLE customer_loan (
     customer_id INTEGER REFERENCES customer(customer_id),
     loan_id INTEGER REFERENCES loan(loan_id),
     PRIMARY KEY (customer_id, loan_id)
 );
-```
 -- Now query is unambiguous:
 SELECT ca.customer_id, ca.acc_number, cl.loan_id
 FROM customer_account ca
 JOIN customer_loan cl ON ca.customer_id = cl.customer_id;
 `
-```
 ### Case Study 4: Detecting and Fixing a Chasm Trap
-```
 **Problem Scenario:** A university has a DEPARTMENT in a 1:N relationship with both EMPLOYEE and PROJECT. Finding all employees and their project assignments is ambiguous.
-```
 **Flawed Schema:**
 `sql
 CREATE TABLE department (
     dept_id INTEGER PRIMARY KEY,
     dept_name VARCHAR(100)
 );
-```
 CREATE TABLE employee (
     emp_id INTEGER PRIMARY KEY,
     dept_id INTEGER REFERENCES department(dept_id),
     name VARCHAR(100)
 );
-```
 CREATE TABLE project (
     project_id INTEGER PRIMARY KEY,
     dept_id INTEGER REFERENCES department(dept_id),
     title VARCHAR(200)
 );
 `
-```
 **Failed Query:**
 `sql
 SELECT e.name AS employee, p.title AS project
@@ -2779,11 +2298,8 @@ FROM employee e
 JOIN department d ON e.dept_id = d.dept_id
 LEFT JOIN project p ON d.dept_id = p.dept_id;
 `
-```
 This returns each employee repeated for every project in their department. An employee working on no projects still appears but paired with unrelated projects.
-```
 **The Fix:** Add a direct EMPLOYEE-PROJECT relationship table.
-```
 `sql
 CREATE TABLE employee_project (
     emp_id INTEGER REFERENCES employee(emp_id),
@@ -2791,16 +2307,13 @@ CREATE TABLE employee_project (
     hours_per_week DECIMAL(4,1),
     PRIMARY KEY (emp_id, project_id)
 );
-```
 -- Correct query:
 SELECT e.name, p.title, ep.hours_per_week
 FROM employee e
 LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id
 LEFT JOIN project p ON ep.project_id = p.project_id;
 `
-```
 ## Quick Reference (Complete)
-```
 | ER Concept | Notation | SQL Mapping | Min Lines in ER |
 |-----------|----------|-------------|----------------|
 | Strong Entity | Rectangle | CREATE TABLE with PK | Single line |
@@ -2819,5 +2332,3 @@ LEFT JOIN project p ON ep.project_id = p.project_id;
 | Identifying Relationship | Double diamond | FK is part of weak entity PK | Double diamond + double line |
 | Generalization | Triangle with ISA label | Strategy A/B/C (see section 2.7) | Triangle from superclass to subclasses |
 | Aggregation | Dashed rectangle around rel | Decompose into entity + FK | Dashed box around relationship diamond |
-```
-```

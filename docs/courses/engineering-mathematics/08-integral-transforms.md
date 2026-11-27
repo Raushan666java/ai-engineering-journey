@@ -331,6 +331,7 @@ const rectFFT = fft(rect);
 console.log("Rectangular pulse FFT (sinc-like):");
 rectFFT.forEach((z, i) => console.log(`  k=${i}: |F|=${z.mag().toFixed(4)}`));
 
+```
 ### TypeScript: Numerical Laplace Transform
 
 ```typescript

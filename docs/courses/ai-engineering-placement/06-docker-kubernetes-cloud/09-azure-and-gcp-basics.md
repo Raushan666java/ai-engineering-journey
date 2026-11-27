@@ -555,7 +555,7 @@ Organization
 └── Folder (Platform)
     ├── Shared Networking
     └── Shared CI/CD
-```text
+```
 
 ## Serverless Comparison
 

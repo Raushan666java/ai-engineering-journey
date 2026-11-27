@@ -930,6 +930,8 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
+
 ## Summary
 
 - A DFA is a 5-tuple (Q, Σ, δ, q₀, F) with a deterministic transition function.

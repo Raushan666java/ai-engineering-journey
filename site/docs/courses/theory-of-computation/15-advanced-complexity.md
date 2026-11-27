@@ -833,6 +833,7 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
 ## Summary
 
 - Log-space reductions define completeness for L and NL.
@@ -938,5 +939,4 @@ class QBF {
 // QBF Level 1: exists(x) exists(y) (x AND y) - SAT problem (NP)
 // QBF Level 2: exists(x) forall(y) (x OR NOT y) - harder (Sigma_2)
 // QBF with alternating quantifiers belongs to higher levels of PH
-```
 ```

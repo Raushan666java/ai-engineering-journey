@@ -824,6 +824,7 @@ const plan = planner.planServers({
 })
 console.log('Capacity plan:', plan)
 export { InterviewScorer, QuestionBank, CapacityPlanner }
+```
 ## Summary
 
 - The six-phase framework (Requirements ? Estimation ? HLD ? Data Model ? Deep Dive ? Trade-offs) provides a reliable structure for any system design interview question.
@@ -1027,5 +1028,4 @@ Database Scaling Progression:
 
 Consistency Spectrum (strongest to weakest):
    Linearizability ? Sequential ? Causal ? Eventual
-```
 ```

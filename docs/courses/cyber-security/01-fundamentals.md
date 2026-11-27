@@ -3415,6 +3415,7 @@ TIME: 1:30-1:45 — BASIC DEFENSE
    $ wireshark vsftpd-attack.pcap
 5. Filter: ftp or ftp-data → see the exploitation traffic
 
+```
 TIME: 1:45-2:00 — FIRST DETECTION RULE
 ─────────────────────────────────────────────────
 Create a simple detection for this attack:
@@ -3478,6 +3479,7 @@ AI IN CYBERSECURITY — ECOSYSTEM OVERVIEW
                                                         (CNN)   (GAN)
 ```
 
+```
 ### 8.2 AI-Enhanced Defense (Blue Team)
 
 

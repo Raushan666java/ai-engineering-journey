@@ -385,6 +385,7 @@ function calculateErrorFix(errorType: string): string {
   return fixes[errorType.toLowerCase()] ?? 'Review the topic from scratch. Take notes.'
 }
 
+```
 ### Example 2: Weekly Review Engine
 
 ```typescript

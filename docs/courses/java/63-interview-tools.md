@@ -3075,7 +3075,6 @@ For DataGrip/DBeaver, use the same JDBC URL and credentials. For Docker Compose 
 - Document connection parameters in team wiki, not in code
 - Use multiple tabs/sessions for different environments
 - Save frequently-used queries as templates or snippets
-```
 
 ## Concept Comparison Table
 

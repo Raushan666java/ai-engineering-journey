@@ -613,6 +613,7 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
 ## Summary
 
 - Space complexity measures the maximum tape cells used during computation.
@@ -884,5 +885,4 @@ function buildConfigGraph(
 function generateTransitions(state: string, symbol: string): any[] {
   return [{ write: symbol, move: "R", nextState: state }];
 }
-```
 ```

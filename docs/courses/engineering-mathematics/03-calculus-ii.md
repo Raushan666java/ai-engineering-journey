@@ -547,6 +547,7 @@ const gradRosen = (x: Vec): Vec => [
 const rosenResult = gradientDescent(rosenbrock, gradRosen, [0, 0], 0.001, 10000);
 console.log(`Rosenbrock: min at (${rosenResult.x[0].toFixed(4)}, ${rosenResult.x[1].toFixed(4)}), f=${rosenResult.fx.toExponential(3)}`);
 
+```
 ### TypeScript: Double and Triple Integrals via Riemann Sums
 
 ```typescript
@@ -606,6 +607,7 @@ const sphereVol = tripleIntegral(
 );
 console.log(`Sphere volume: ${sphereVol.toFixed(4)} (expected: ${(4 * Math.PI / 3).toFixed(4)})`);
 
+```
 ### TypeScript: Divergence and Curl of a Vector Field
 
 ```typescript

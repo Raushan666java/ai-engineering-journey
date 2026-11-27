@@ -320,6 +320,7 @@ def generate_readme(meta: ProjectMetadata) -> str:
 
 {meta.description}
 
+```
 ## Features
 
 {features_bullets}
@@ -408,6 +409,7 @@ if __name__ == "__main__":
     print(readme)
 ```
 
+```
 ### 1.1.3 Effective Comments and Docstrings
 
 Comments explain *why*, not *what*. Code already shows *what* it does. A good comment explains a non-obvious decision, a performance trade-off, or a business rule.

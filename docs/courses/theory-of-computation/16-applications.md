@@ -983,6 +983,8 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
+
 ## Summary
 
 - Finite automata power lexical analysis, pattern matching, and network intrusion detection.

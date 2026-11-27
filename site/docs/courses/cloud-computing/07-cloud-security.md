@@ -823,6 +823,7 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+```
 ## Summary
 
 - The shared responsibility model defines clear boundaries for provider and customer security obligations.

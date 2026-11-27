@@ -875,6 +875,7 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+```
 ## Summary
 
 - Hypervisors abstract physical hardware into multiple virtual machines with strong isolation.

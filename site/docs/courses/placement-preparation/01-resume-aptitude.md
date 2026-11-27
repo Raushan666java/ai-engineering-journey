@@ -2066,6 +2066,7 @@ Computer Networks, Object-Oriented Programming, Machine Learning, Distributed Sy
 
 ---
 
+```
 ### Template 2: Product-Based Company Resume
 
 
@@ -2200,6 +2201,7 @@ Operating Systems, Cloud Computing, UI/UX Design
 
 ---
 
+```
 ### Template 3: Service-Based Company Resume
 
 
@@ -2330,6 +2332,7 @@ Operating Systems, Software Engineering, Web Technologies, Discrete Mathematics
 
 ---
 
+```
 ### Template 4: Data Science/ML Resume
 
 
@@ -2467,6 +2470,7 @@ Statistics, Linear Algebra, Optimization, Reinforcement Learning, Data Mining, D
 
 ---
 
+```
 ### Template 5: Full-Stack Developer Resume
 
 

@@ -190,7 +190,7 @@ docker history nginx:latest
 
 ```text
 [registry/][user/]repository[:tag]
-```text
+```
 
 Examples: `python:3.11-slim`, `nginx:latest`, `myregistry.com/team/app:v2`
 

@@ -355,6 +355,7 @@ public class EncryptClassFiles {
     }
 }
 
+```
 A practical HotSwapClassLoader that reloads classes when .class files change:
 
 ```java

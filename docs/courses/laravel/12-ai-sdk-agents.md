@@ -166,6 +166,7 @@ class GenerateConceptArt extends Command
         return Command::SUCCESS;
     }
 }
+```
 ### 12.3 Provider Support Matrix
 
 

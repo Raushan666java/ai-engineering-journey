@@ -1618,6 +1618,7 @@ Total = 7 faults.
 
 ---
 
+```
 ### G57: Safe State Check [GATE 2023, 2M, Deadlock]
 
 A system has 5 processes and 3 resource types (A: 10, B: 5, C: 7). At time T0:
@@ -1844,6 +1845,7 @@ Hmm, I had 7 earlier. Let me recalculate. 22/4 = 5.5.
 
 ---
 
+```
 ### G66: TLB and Page Table [GATE 2025, 2M, Memory Management]
 
 TLB hit ratio = 80%. TLB access = 20 ns. Memory access = 100 ns. What is EMAT?

@@ -776,6 +776,7 @@ async function main() {
 }
 main().catch(console.error)
 export { Processor, Task }
+```
 ## Summary
 
 The Theory of Computation provides the mathematical foundations for understanding what computers can and cannot do. Key concepts include:

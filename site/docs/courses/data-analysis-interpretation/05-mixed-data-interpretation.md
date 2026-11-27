@@ -1213,7 +1213,7 @@ The implied order is: T > P > S > Q > R (since S must be below P and above Q bas
 
 ### TypeScript Mixed DI Calculator Utility
 
-`	ypescript
+```typescript
 /** Utility for multi-step mixed DI calculations */
 class MixedDICalculator {
   /** Chain: Total → % Share → Value */

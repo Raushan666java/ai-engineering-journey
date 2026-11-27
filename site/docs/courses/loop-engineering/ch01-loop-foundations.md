@@ -1096,7 +1096,7 @@ main();
 
 This section adds production-grade analysis and filtering tools: a `LoopAnalyzerTool` that computes gain/phase margins from transfer function data, a `SettlingTimeOptimizer` using golden-section search, a `NoiseFilter` combining EMA and median filtering, a `StepResponseAnalyzer` that measures rise time/overshoot/settling time, and a `BodePlotGenerator` that maps frequency response magnitude/phase.
 
-```typescript
+````typescript
 // ch01-advanced-tooling.ts
 // bun run ch01-advanced-tooling.ts
 
@@ -1549,7 +1549,7 @@ function mainAdvancedTools() {
 }
 
 mainAdvancedTools();
-```
+````
 
 **Key concepts demonstrated:**
 - **LoopAnalyzerTool** computes gain margin, phase margin, and stability verdict from frequency-domain data; includes crossover frequency detection

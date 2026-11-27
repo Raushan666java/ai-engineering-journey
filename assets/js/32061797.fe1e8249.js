@@ -1,0 +1,317 @@
+"use strict";
+(self["webpackChunksite"] = self["webpackChunksite"] || []).push([["72547"], {
+8611(__unused_rspack_module, __webpack_exports__, __webpack_require__) {
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  metadata: () => (/* reexport */ site_docs_courses_ai_engineering_placement_00_core_computer_science_visual_notes_md_320_namespaceObject),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  contentTitle: () => (/* binding */ contentTitle),
+  toc: () => (/* binding */ toc),
+  assets: () => (/* binding */ assets)
+});
+
+;// CONCATENATED MODULE: ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-00-core-computer-science-visual-notes-md-320.json
+var site_docs_courses_ai_engineering_placement_00_core_computer_science_visual_notes_md_320_namespaceObject = JSON.parse('{"id":"courses/ai-engineering-placement/core-computer-science/visual-notes","title":"Visual Notes — Core Computer Science","description":"Visual Notes — Core Computer Science: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before","source":"@site/docs/courses/ai-engineering-placement/00-core-computer-science/visual-notes.md","sourceDirName":"courses/ai-engineering-placement/00-core-computer-science","slug":"/ai-engineering-placement/00-core-computer-science/visual-notes","permalink":"/ai-engineering-journey/ai-engineering-placement/00-core-computer-science/visual-notes","draft":false,"unlisted":false,"editUrl":"https://github.com/Raushan666java/ai-engineering-journey/tree/main/site/docs/docs/courses/ai-engineering-placement/00-core-computer-science/visual-notes.md","tags":[],"version":"current","lastUpdatedAt":1795160360000,"sidebarPosition":9,"frontMatter":{"id":"visual-notes","slug":"/ai-engineering-placement/00-core-computer-science/visual-notes","title":"Visual Notes — Core Computer Science","sidebar_label":"Visual Notes","sidebar_position":9,"description":"Visual Notes — Core Computer Science: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before"},"sidebar":"placementSidebar","previous":{"title":"Ethical Hacking & Security Case Studies (India & Global)","permalink":"/ai-engineering-journey/ai-engineering-placement/00-core-computer-science/06-ethical-hacking"},"next":{"title":"Backend + AI Engineer — Complete Placement Course","permalink":"/ai-engineering-journey/ai-engineering-placement"}}')
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// CONCATENATED MODULE: ./docs/courses/ai-engineering-placement/00-core-computer-science/visual-notes.md
+
+
+const frontMatter = {
+	id: 'visual-notes',
+	slug: '/ai-engineering-placement/00-core-computer-science/visual-notes',
+	title: 'Visual Notes — Core Computer Science',
+	sidebar_label: 'Visual Notes',
+	sidebar_position: 9,
+	description: 'Visual Notes — Core Computer Science: One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before'
+};
+const contentTitle = 'Visual Notes — Core Computer Science';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "What the diagram shows",
+  "id": "what-the-diagram-shows",
+  "level": 2
+}, {
+  "value": "Why this matters for placement",
+  "id": "why-this-matters-for-placement",
+  "level": 2
+}, {
+  "value": "Quick revision",
+  "id": "quick-revision",
+  "level": 2
+}, {
+  "value": "Related chapters",
+  "id": "related-chapters",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    strong: "strong",
+    ul: "ul",
+    ...(0,lib/* .useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "visual-notes--core-computer-science",
+        children: "Visual Notes — Core Computer Science"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        alt: "Foundation stack diagram",
+        src: (__webpack_require__(46531)/* ["default"] */.A) + "",
+        width: "1000",
+        height: "600"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "what-the-diagram-shows",
+      children: "What the diagram shows"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The foundation stack is a sandwich: ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "data"
+      }), " at the bottom, ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "compute"
+      }), " in the middle, and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "communication"
+      }), " on top."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Data layer"
+        }), " — how information is structured and stored (databases, caches, message queues) and how it is moved."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Compute layer"
+        }), " — where work happens: CPU, GPU, memory hierarchy, and the operating system that schedules it all."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Communication layer"
+        }), " — networks, APIs, and protocols (TCP/IP, HTTP) that tie machines together."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "All systems"
+        }), " in an AI engineering job are some combination of these three layers talking to each other."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "why-this-matters-for-placement",
+      children: "Why this matters for placement"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Interviewers rarely ask \"what is a B-tree?\" — they ask ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "\"why is this query slow?\""
+        }), " or ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "\"how would you serve this model at 1000 QPS?\""
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Every answer traces back to the three layers: where the data lives, where the compute happens, and how they talk."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-revision",
+      children: "Quick revision"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Big-O"
+        }), " — the cost of an operation as input grows: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "O(1)"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "O(log n)"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "O(n)"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "O(n log n)"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "O(n²)"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Memory hierarchy"
+        }), " — registers → L1/L2/L3 cache → RAM → disk. Each level is ~10× slower than the one above."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Latency numbers"
+        }), " — L1 cache ~1 ns, RAM ~100 ns, SSD ~100 μs, network round trip ~1–100 ms."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Key protocols"
+        }), " — TCP (reliable, ordered), UDP (fast, lossy), HTTP/1.1 vs HTTP/2 vs HTTP/3."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Containers"
+        }), " — cgroups for resource limits, namespaces for isolation. Docker = easier to ship, not a VM."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related-chapters",
+      children: "Related chapters"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/ai-engineering-placement/00-core-computer-science/01-computer-networks",
+          children: "01 — Computer Networks"
+        }), " — the communication layer in depth"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/ai-engineering-placement/00-core-computer-science/02-operating-systems",
+          children: "02 — Operating Systems"
+        }), " — the compute layer in depth"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/ai-engineering-placement/00-core-computer-science/03-database-internals",
+          children: "03 — Database Internals"
+        }), " — the data layer in depth"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "One-line answer for interviews:"
+      }), " ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "\"Everything I build is about moving data to compute efficiently and reliably.\""
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* .useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+},
+46531(__unused_rspack_module, __webpack_exports__, __webpack_require__) {
+__webpack_require__.d(__webpack_exports__, {
+  A: () => (__rspack_default_export)
+});
+/* export default */ const __rspack_default_export = ("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwMCA2MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9Im0wMC1sYXllcnMtdGl0bGUgbTAwLWxheWVycy1kZXNjIj4KICAgICAgPHRpdGxlIGlkPSJtMDAtbGF5ZXJzLXRpdGxlIj5Db3JlIENvbXB1dGVyIFNjaWVuY2UgZm91bmRhdGlvbiBzdGFjazwvdGl0bGU+CiAgICAgIDxkZXNjIGlkPSJtMDAtbGF5ZXJzLWRlc2MiPkxheWVyIHN0YWNrIG9mIHNpeCBDUyBmdW5kYW1lbnRhbHMuIENvbXB1dGVyIGFyY2hpdGVjdHVyZSBhdCB0aGUgYmFzZSwgdGhlbiBvcGVyYXRpbmcgc3lzdGVtcywgY29tcHV0ZXIgbmV0d29ya3MsIGRhdGFiYXNlIGludGVybmFscywgT09QIGFuZCBkZXNpZ24gcGF0dGVybnMsIGFuZCBldGhpY2FsIGhhY2tpbmcgYXQgdGhlIHRvcC4gVGhlIG9wZXJhdGluZyBzeXN0ZW1zIGxheWVyIGlzIHRoZSBmb2NhbCBsYXllci48L2Rlc2M+CgogICAgICA8cmVjdCB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9IiNmZmZmZmYiLz4KCiAgICAgIDwhLS0gRGlyZWN0aW9uIGNvbHVtbiAobGVmdCBtYXJnaW4pIC0tPgogICAgICA8dGV4dCB4PSI2MCIgeT0iNjgiIGZpbGw9IiM0ZjVkNzUiIGZvbnQtc2l6ZT0iOCIgZm9udC1mYW1pbHk9IidHZWlzdCBNb25vJywgbW9ub3NwYWNlIiBsZXR0ZXItc3BhY2luZz0iMC4xOGVtIj5BQlNUUkFDVElPTjwvdGV4dD4KICAgICAgPGxpbmUgeDE9IjgwIiB5MT0iODAiIHgyPSI4MCIgeTI9IjQwMCIgc3Ryb2tlPSJyZ2JhKDI2LDI3LDM1LDAuMzApIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSI3Niw4MCA4NCw4MCA4MCw3MiIgZmlsbD0iIzRmNWQ3NSIvPgogICAgICA8dGV4dCB4PSI2MCIgeT0iNDE2IiBmaWxsPSIjNGY1ZDc1IiBmb250LXNpemU9IjgiIGZvbnQtZmFtaWx5PSInR2Vpc3QgTW9ubycsIG1vbm9zcGFjZSIgbGV0dGVyLXNwYWNpbmc9IjAuMThlbSI+U0lMSUNPTjwvdGV4dD4KCiAgICAgIDwhLS0gU3RhY2sgY29udGFpbmVyIGhhaXJsaW5lcyAtLT4KICAgICAgPGxpbmUgeDE9IjEyMCIgeTE9IjgwIiB4Mj0iOTYwIiB5Mj0iODAiIHN0cm9rZT0icmdiYSgyNiwyNywzNSwwLjEyKSIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgICAgIDxsaW5lIHgxPSIxMjAiIHkxPSI0MDAiIHgyPSI5NjAiIHkyPSI0MDAiIHN0cm9rZT0icmdiYSgyNiwyNywzNSwwLjEyKSIgc3Ryb2tlLXdpZHRoPSIxIi8+CgogICAgICA8IS0tIEw2IOKAlCBFdGhpY2FsIEhhY2tpbmcgKHRvcCkgLS0+CiAgICAgIDxyZWN0IHg9IjEyMCIgeT0iODAiIHdpZHRoPSI4NDAiIGhlaWdodD0iNjQiIGZpbGw9IiNmNWY2ZjgiLz4KICAgICAgPGxpbmUgeDE9IjEyMCIgeTE9IjE0NCIgeDI9Ijk2MCIgeTI9IjE0NCIgc3Ryb2tlPSJyZ2JhKDI2LDI3LDM1LDAuMTIpIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgPHRleHQgeD0iMTQwIiB5PSIxMTYiIGZpbGw9IiM0ZjVkNzUiIGZvbnQtc2l6ZT0iOCIgZm9udC1mYW1pbHk9IidHZWlzdCBNb25vJywgbW9ub3NwYWNlIiBsZXR0ZXItc3BhY2luZz0iMC4xNGVtIj5MNjwvdGV4dD4KICAgICAgPHRleHQgeD0iMjYwIiB5PSIxMTgiIGZpbGw9IiMxYTFiMjMiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiPkV0aGljYWwgaGFja2luZzwvdGV4dD4KICAgICAgPHRleHQgeD0iOTQwIiB5PSIxMTgiIGZpbGw9IiM0ZjVkNzUiIGZvbnQtc2l6ZT0iOCIgZm9udC1mYW1pbHk9IidHZWlzdCBNb25vJywgbW9ub3NwYWNlIiB0ZXh0LWFuY2hvcj0iZW5kIiBsZXR0ZXItc3BhY2luZz0iMC4wOGVtIj5wZW50ZXN0IMK3IE9XQVNQIMK3IGhhcmRlbmluZzwvdGV4dD4KCiAgICAgIDwhLS0gTDUg4oCUIE9PUCAmIGRlc2lnbiBwYXR0ZXJucyAtLT4KICAgICAgPHJlY3QgeD0iMTIwIiB5PSIxNDQiIHdpZHRoPSI4NDAiIGhlaWdodD0iNjQiIGZpbGw9IiNmZmZmZmYiLz4KICAgICAgPGxpbmUgeDE9IjEyMCIgeTE9IjIwOCIgeDI9Ijk2MCIgeTI9IjIwOCIgc3Ryb2tlPSJyZ2JhKDI2LDI3LDM1LDAuMTIpIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgPHRleHQgeD0iMTQwIiB5PSIxODAiIGZpbGw9IiM0ZjVkNzUiIGZvbnQtc2l6ZT0iOCIgZm9udC1mYW1pbHk9IidHZWlzdCBNb25vJywgbW9ub3NwYWNlIiBsZXR0ZXItc3BhY2luZz0iMC4xNGVtIj5MNTwvdGV4dD4KICAgICAgPHRleHQgeD0iMjYwIiB5PSIxODIiIGZpbGw9IiMxYTFiMjMiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiPk9PUCAmYW1wOyBkZXNpZ24gcGF0dGVybnM8L3RleHQ+CiAgICAgIDx0ZXh0IHg9Ijk0MCIgeT0iMTgyIiBmaWxsPSIjNGY1ZDc1IiBmb250LXNpemU9IjgiIGZvbnQtZmFtaWx5PSInR2Vpc3QgTW9ubycsIG1vbm9zcGFjZSIgdGV4dC1hbmNob3I9ImVuZCIgbGV0dGVyLXNwYWNpbmc9IjAuMDhlbSI+U09MSUQgwrcgR29GIMK3IGNyZWF0aW9uYWwgwrcgc3RydWN0dXJhbDwvdGV4dD4KCiAgICAgIDwhLS0gTDQg4oCUIERhdGFiYXNlIGludGVybmFscyAtLT4KICAgICAgPHJlY3QgeD0iMTIwIiB5PSIyMDgiIHdpZHRoPSI4NDAiIGhlaWdodD0iNjQiIGZpbGw9IiNmNWY2ZjgiLz4KICAgICAgPGxpbmUgeDE9IjEyMCIgeTE9IjI3MiIgeDI9Ijk2MCIgeTI9IjI3MiIgc3Ryb2tlPSJyZ2JhKDI2LDI3LDM1LDAuMTIpIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgPHRleHQgeD0iMTQwIiB5PSIyNDQiIGZpbGw9IiM0ZjVkNzUiIGZvbnQtc2l6ZT0iOCIgZm9udC1mYW1pbHk9IidHZWlzdCBNb25vJywgbW9ub3NwYWNlIiBsZXR0ZXItc3BhY2luZz0iMC4xNGVtIj5MNDwvdGV4dD4KICAgICAgPHRleHQgeD0iMjYwIiB5PSIyNDYiIGZpbGw9IiMxYTFiMjMiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiPkRhdGFiYXNlIGludGVybmFsczwvdGV4dD4KICAgICAgPHRleHQgeD0iOTQwIiB5PSIyNDYiIGZpbGw9IiM0ZjVkNzUiIGZvbnQtc2l6ZT0iOCIgZm9udC1mYW1pbHk9IidHZWlzdCBNb25vJywgbW9ub3NwYWNlIiB0ZXh0LWFuY2hvcj0iZW5kIiBsZXR0ZXItc3BhY2luZz0iMC4wOGVtIj5BQ0lEIMK3IEItdHJlZXMgwrcgaW5kZXhlczwvdGV4dD4KCiAgICAgIDwhLS0gTDMg4oCUIENvbXB1dGVyIG5ldHdvcmtzIC0tPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjI3MiIgd2lkdGg9Ijg0MCIgaGVpZ2h0PSI2NCIgZmlsbD0iI2ZmZmZmZiIvPgogICAgICA8bGluZSB4MT0iMTIwIiB5MT0iMzM2IiB4Mj0iOTYwIiB5Mj0iMzM2IiBzdHJva2U9InJnYmEoMjYsMjcsMzUsMC4xMikiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgICA8dGV4dCB4PSIxNDAiIHk9IjMwOCIgZmlsbD0iIzRmNWQ3NSIgZm9udC1zaXplPSI4IiBmb250LWZhbWlseT0iJ0dlaXN0IE1vbm8nLCBtb25vc3BhY2UiIGxldHRlci1zcGFjaW5nPSIwLjE0ZW0iPkwzPC90ZXh0PgogICAgICA8dGV4dCB4PSIyNjAiIHk9IjMxMCIgZmlsbD0iIzFhMWIyMyIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiI+Q29tcHV0ZXIgbmV0d29ya3M8L3RleHQ+CiAgICAgIDx0ZXh0IHg9Ijk0MCIgeT0iMzEwIiBmaWxsPSIjNGY1ZDc1IiBmb250LXNpemU9IjgiIGZvbnQtZmFtaWx5PSInR2Vpc3QgTW9ubycsIG1vbm9zcGFjZSIgdGV4dC1hbmNob3I9ImVuZCIgbGV0dGVyLXNwYWNpbmc9IjAuMDhlbSI+VENQL0lQIMK3IEhUVFAgwrcgRE5TPC90ZXh0PgoKICAgICAgPCEtLSBMMiDigJQgT3BlcmF0aW5nIHN5c3RlbXMgKEZPQ0FMKSAtLT4KICAgICAgPHJlY3QgeD0iMTIwIiB5PSIzMzYiIHdpZHRoPSI4NDAiIGhlaWdodD0iNjQiIGZpbGw9InJnYmEoNDYsMTMzLDg1LDAuMDgpIi8+CiAgICAgIDxyZWN0IHg9IjEyMCIgeT0iMzM2IiB3aWR0aD0iODQwIiBoZWlnaHQ9IjY0IiBmaWxsPSJub25lIiBzdHJva2U9IiMyZTg1NTUiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgICA8dGV4dCB4PSIxNDAiIHk9IjM3MiIgZmlsbD0iIzJlODU1NSIgZm9udC1zaXplPSI4IiBmb250LWZhbWlseT0iJ0dlaXN0IE1vbm8nLCBtb25vc3BhY2UiIGxldHRlci1zcGFjaW5nPSIwLjE0ZW0iIGZvbnQtd2VpZ2h0PSI2MDAiPkwyPC90ZXh0PgogICAgICA8dGV4dCB4PSIyNjAiIHk9IjM3NCIgZmlsbD0iIzFhMWIyMyIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiI+T3BlcmF0aW5nIHN5c3RlbXM8L3RleHQ+CiAgICAgIDx0ZXh0IHg9Ijk0MCIgeT0iMzc0IiBmaWxsPSIjMmU4NTU1IiBmb250LXNpemU9IjgiIGZvbnQtZmFtaWx5PSInR2Vpc3QgTW9ubycsIG1vbm9zcGFjZSIgdGV4dC1hbmNob3I9ImVuZCIgbGV0dGVyLXNwYWNpbmc9IjAuMDhlbSI+cHJvY2Vzc2VzIMK3IHRocmVhZHMgwrcgbWVtb3J5PC90ZXh0PgoKICAgICAgPCEtLSBMMSDigJQgQ29tcHV0ZXIgYXJjaGl0ZWN0dXJlIChiYXNlKSAtLT4KICAgICAgPHJlY3QgeD0iMTIwIiB5PSI0MDAiIHdpZHRoPSI4NDAiIGhlaWdodD0iNjQiIGZpbGw9IiNmNWY2ZjgiLz4KICAgICAgPHRleHQgeD0iMTQwIiB5PSI0MzYiIGZpbGw9IiM0ZjVkNzUiIGZvbnQtc2l6ZT0iOCIgZm9udC1mYW1pbHk9IidHZWlzdCBNb25vJywgbW9ub3NwYWNlIiBsZXR0ZXItc3BhY2luZz0iMC4xNGVtIj5MMTwvdGV4dD4KICAgICAgPHRleHQgeD0iMjYwIiB5PSI0MzgiIGZpbGw9IiMxYTFiMjMiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiPkNvbXB1dGVyIGFyY2hpdGVjdHVyZTwvdGV4dD4KICAgICAgPHRleHQgeD0iOTQwIiB5PSI0MzgiIGZpbGw9IiM0ZjVkNzUiIGZvbnQtc2l6ZT0iOCIgZm9udC1mYW1pbHk9IidHZWlzdCBNb25vJywgbW9ub3NwYWNlIiB0ZXh0LWFuY2hvcj0iZW5kIiBsZXR0ZXItc3BhY2luZz0iMC4wOGVtIj5DUFUgwrcgY2FjaGUgwrcgbWVtb3J5IGhpZXJhcmNoeTwvdGV4dD4KCiAgICAgIDwhLS0gQ2FwdGlvbiAtLT4KICAgICAgPHRleHQgeD0iMTIwIiB5PSI0OTIiIGZpbGw9IiM0ZjVkNzUiIGZvbnQtc2l6ZT0iOCIgZm9udC1mYW1pbHk9IidHZWlzdCBNb25vJywgbW9ub3NwYWNlIiBsZXR0ZXItc3BhY2luZz0iMC4xOGVtIj5GT0NBTCBMQVlFUjwvdGV4dD4KICAgICAgPHRleHQgeD0iMjEyIiB5PSI0OTIiIGZpbGw9IiM0ZjVkNzUiIGZvbnQtc2l6ZT0iOCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zdHlsZT0iaXRhbGljIj5PcGVyYXRpbmcgc3lzdGVtcyBpcyB0aGUgbGF5ZXIgaW50ZXJ2aWV3ZXJzIHByb2JlIGZpcnN0IOKAlCBwcm9jZXNzZXMsIHRocmVhZHMsIGFuZCBtZW1vcnkgYXJlIHRoZSB2b2NhYnVsYXJ5IGV2ZXJ5IEFJIGVuZ2luZWVyIG5lZWRzLjwvdGV4dD4KCiAgICAgIDwhLS0gTGVnZW5kIHN0cmlwIC0tPgogICAgICA8bGluZSB4MT0iMTIwIiB5MT0iNTMyIiB4Mj0iOTYwIiB5Mj0iNTMyIiBzdHJva2U9InJnYmEoMjYsMjcsMzUsMC4xMCkiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgICA8dGV4dCB4PSIxMjAiIHk9IjU1NiIgZmlsbD0iIzRmNWQ3NSIgZm9udC1zaXplPSI4IiBmb250LWZhbWlseT0iJ0dlaXN0IE1vbm8nLCBtb25vc3BhY2UiIGxldHRlci1zcGFjaW5nPSIwLjE0ZW0iPkxFR0VORDwvdGV4dD4KICAgICAgPHJlY3QgeD0iMTk2IiB5PSI1NDgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMiIgcng9IjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJlODU1NSIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgICAgIDx0ZXh0IHg9IjIyMCIgeT0iNTU4IiBmaWxsPSIjNGY1ZDc1IiBmb250LXNpemU9IjgiIGZvbnQtZmFtaWx5PSInR2Vpc3QgTW9ubycsIG1vbm9zcGFjZSIgbGV0dGVyLXNwYWNpbmc9IjAuMDZlbSI+QUNDRU5UID0gRk9DQUwgTEFZRVI8L3RleHQ+CiAgICAgIDxyZWN0IHg9IjM4NCIgeT0iNTQ4IiB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIHJ4PSIyIiBmaWxsPSIjZjVmNmY4Ii8+CiAgICAgIDx0ZXh0IHg9IjQwOCIgeT0iNTU4IiBmaWxsPSIjNGY1ZDc1IiBmb250LXNpemU9IjgiIGZvbnQtZmFtaWx5PSInR2Vpc3QgTW9ubycsIG1vbm9zcGFjZSIgbGV0dGVyLXNwYWNpbmc9IjAuMDZlbSI+U0hBREUgPSBBREpBQ0VOVCBUSUVSPC90ZXh0PgogICAgICA8cmVjdCB4PSI1NjgiIHk9IjU0OCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEyIiByeD0iMiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSJyZ2JhKDI2LDI3LDM1LDAuMTIpIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgPHRleHQgeD0iNTkyIiB5PSI1NTgiIGZpbGw9IiM0ZjVkNzUiIGZvbnQtc2l6ZT0iOCIgZm9udC1mYW1pbHk9IidHZWlzdCBNb25vJywgbW9ub3NwYWNlIiBsZXR0ZXItc3BhY2luZz0iMC4wNmVtIj5QQVBFUiA9IFNUQU5EQVJEIExBWUVSPC90ZXh0PgogICAgPC9zdmc+");
+
+},
+28453(__unused_rspack___webpack_module__, __webpack_exports__, __webpack_require__) {
+__webpack_require__.d(__webpack_exports__, {
+  R: () => (useMDXComponents),
+  x: () => (MDXProvider)
+});
+/* import */ var react__rspack_import_0 = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__rspack_import_0.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__rspack_import_0.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__rspack_import_0.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__rspack_import_0.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+},
+
+}]);

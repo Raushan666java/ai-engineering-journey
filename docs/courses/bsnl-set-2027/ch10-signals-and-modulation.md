@@ -501,50 +501,66 @@ Everything so far is one signal on one channel. Real networks put many signals o
 
 ## Chapter Quiz
 
+
 **Q1.** A 12-bit PCM system samples at 8000 samples/s. The bit rate is:
 
-A. 12 kbps
-B. 64 kbps
-C. 96 kbps
-D. 128 kbps
+A) 12 kbps
 
-**Answer: C.** Rb = 8000 x 12 = 96,000 bit/s = 96 kbps. Option B is the 8-bit case, the most common wrong answer.
+B) 64 kbps
+
+C) 96 kbps
+
+D) 128 kbps
+
+**Answer: C** Rb = 8000 x 12 = 96,000 bit/s = 96 kbps. Option B is the 8-bit case, the most common wrong answer.
 
 **Q2.** An FM signal has a peak deviation of 25 kHz and a modulating frequency of 5 kHz. Its bandwidth by Carson's rule is:
 
-A. 10 kHz
-B. 50 kHz
-C. 60 kHz
-D. 100 kHz
+A) 10 kHz
 
-**Answer: C.** BW = 2(25 + 5) = 60 kHz. Option A is 2fm, option B is 2df alone, option D is 4df.
+B) 50 kHz
+
+C) 60 kHz
+
+D) 100 kHz
+
+**Answer: C** BW = 2(25 + 5) = 60 kHz. Option A is 2fm, option B is 2df alone, option D is 4df.
 
 **Q3.** A 1 MHz channel has an SNR of 20 dB. The Shannon capacity is closest to:
 
-A. 1.0 Mbit/s
-B. 3.3 Mbit/s
-C. 6.7 Mbit/s
-D. 20 Mbit/s
+A) 1.0 Mbit/s
 
-**Answer: C.** 20 dB = 100 linear, so C = 1e6 x log2(101) = 1e6 x 6.66 = 6.66 Mbit/s. Option D treats dB as a linear ratio; B uses log10 instead of log2.
+B) 3.3 Mbit/s
+
+C) 6.7 Mbit/s
+
+D) 20 Mbit/s
+
+**Answer: C** 20 dB = 100 linear, so C = 1e6 x log2(101) = 1e6 x 6.66 = 6.66 Mbit/s. Option D treats dB as a linear ratio; B uses log10 instead of log2.
 
 **Q4.** A 16-QAM system transmits 4800 symbols per second. The bit rate is:
 
-A. 4.8 kbps
-B. 9.6 kbps
-C. 19.2 kbps
-D. 76.8 kbps
+A) 4.8 kbps
 
-**Answer: C.** n = log2(16) = 4, so Rb = 4800 x 4 = 19,200 bit/s. Option A ignores the modulation order.
+B) 9.6 kbps
+
+C) 19.2 kbps
+
+D) 76.8 kbps
+
+**Answer: C** n = log2(16) = 4, so Rb = 4800 x 4 = 19,200 bit/s. Option A ignores the modulation order.
 
 **Q5.** For an AM signal at m = 1, which is correct?
 
-A. Efficiency 50 percent, bandwidth fm
-B. Efficiency 33.3 percent, bandwidth 2fm
-C. Efficiency 66.7 percent, bandwidth 2fm
-D. Carrier power is zero
+A) Efficiency 50 percent, bandwidth fm
 
-**Answer: B.** Efficiency = 1/(2+1) = 33.3 percent and two sidebands at fm each give 2fm. The carrier is never removed in conventional AM; that is DSB-SC.
+B) Efficiency 33.3 percent, bandwidth 2fm
+
+C) Efficiency 66.7 percent, bandwidth 2fm
+
+D) Carrier power is zero
+
+**Answer: B** Efficiency = 1/(2+1) = 33.3 percent and two sidebands at fm each give 2fm. The carrier is never removed in conventional AM; that is DSB-SC.
 
 ## Exercises
 

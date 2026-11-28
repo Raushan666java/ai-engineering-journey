@@ -28,7 +28,7 @@ It is not a GATE CSE course. Roughly 30% of the paper is material you already kn
 | SC qualifying | 35% Part I (14) - 35% Part II (56) - 45% overall (90) |
 | Interview | None |
 
-Full evidence, cutoffs and competition numbers: [`../BSNL-EXAM-ANALYSIS.md`](../BSNL-EXAM-ANALYSIS.md).
+Full evidence, cutoffs and competition numbers: [`BSNL-EXAM-ANALYSIS.md`](../../references/bsnl/BSNL-EXAM-ANALYSIS.md).
 
 ## The mark map - where your 160 technical marks live
 

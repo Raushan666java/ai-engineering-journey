@@ -468,25 +468,67 @@ FTTH, FTTB, FTTC and FTTN differ in where fibre stops and how much copper remain
 
 ## Chapter Quiz
 
+
+
 **Q1.** The GPON downstream line rate is:
-(a) 1.244 Gbps (b) 2.488 Gbps (c) 9.953 Gbps (d) 10.3125 Gbps
-**Answer: (b).** GPON is 2.488 Gbps down and 1.244 Gbps up. Option (c) is XGS-PON, (d) is 10G-EPON.
+
+A) 1.244 Gbps
+
+B) 2.488 Gbps
+
+C) 9.953 Gbps
+
+D) 10.3125 Gbps
+
+**Answer: B** GPON is 2.488 Gbps down and 1.244 Gbps up. Option (c) is XGS-PON, (d) is 10G-EPON.
 
 **Q2.** Upstream transmission on a PON uses:
-(a) Broadcast with address filtering (b) TDMA bursts in granted slots (c) FDM subcarriers (d) CSMA/CD
-**Answer: (b).** Only one ONT may transmit at a time, so the OLT grants slots and ranging aligns the bursts.
+
+A) Broadcast with address filtering
+
+B) TDMA bursts in granted slots
+
+C) FDM subcarriers
+
+D) CSMA/CD
+
+**Answer: B** Only one ONT may transmit at a time, so the OLT grants slots and ranging aligns the bursts.
 
 **Q3.** The ideal loss of a 1:32 splitter is:
-(a) 3.01 dB (b) 15.05 dB (c) 18.06 dB (d) 32 dB
-**Answer: (b).** `10 x log10(32) = 15.05 dB`. Real devices add 1-2 dB of excess loss.
+
+A) 3.01 dB
+
+B) 15.05 dB
+
+C) 18.06 dB
+
+D) 32 dB
+
+**Answer: B** `10 x log10(32) = 15.05 dB`. Real devices add 1-2 dB of excess loss.
 
 **Q4.** XGS-PON provides:
-(a) 2.488/1.244 Gbps (b) 1.25 Gbps symmetric (c) 10 Gbps symmetric (d) 40 Gbps downstream
-**Answer: (c).** XGS-PON (G.9807.1) is 9.953 Gbps in both directions. Option (d) is NG-PON2.
+
+A) 2.488/1.244 Gbps
+
+B) 1.25 Gbps symmetric
+
+C) 10 Gbps symmetric
+
+D) 40 Gbps downstream
+
+**Answer: C** XGS-PON (G.9807.1) is 9.953 Gbps in both directions. Option (d) is NG-PON2.
 
 **Q5.** In FTTC, the fibre terminates:
-(a) Inside the customer's home (b) In the building basement (c) At the street cabinet, with copper to the home (d) At the neighbourhood node, with over 1 km of copper
-**Answer: (c).** FTTC leaves a few hundred metres of copper; FTTB stops at the building and FTTN at a distant node.
+
+A) Inside the customer's home
+
+B) In the building basement
+
+C) At the street cabinet, with copper to the home
+
+D) At the neighbourhood node, with over 1 km of copper
+
+**Answer: C** FTTC leaves a few hundred metres of copper; FTTB stops at the building and FTTN at a distant node.
 
 ## Exercises
 

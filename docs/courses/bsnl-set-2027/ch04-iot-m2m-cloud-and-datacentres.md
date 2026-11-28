@@ -512,33 +512,67 @@ Data centres are specified by tier topology, redundancy notation, power chain, c
 
 ## Chapter Quiz
 
-**Q1.** In the ITU-T Y.2060 IoT reference model, security capabilities are best described as:
-(a) The fourth layer above the application layer
-(b) A cross-cutting capability set spanning all layers
-(c) A function of the gateway only
-(d) Part of the network layer
 
-**Answer: (b).** Y.2060 draws management and security as vertical capabilities across the four horizontal layers, not as a fifth layer.
+
+**Q1.** In the ITU-T Y.2060 IoT reference model, security capabilities are best described as:
+
+A) The fourth layer above the application layer
+
+B) A cross-cutting capability set spanning all layers
+
+C) A function of the gateway only
+
+D) Part of the network layer
+
+**Answer: B** Y.2060 draws management and security as vertical capabilities across the four horizontal layers, not as a fifth layer.
 
 **Q2.** A utility wants deep-indoor smart meters with 12-year battery life, operator-managed coverage and no need for voice or handover. The best fit is:
-(a) LTE-M (b) NB-IoT (c) LoRaWAN (d) Zigbee
 
-**Answer: (b).** NB-IoT is licensed, designed for deep indoor penetration and very low rate, and does not carry the mobility and cost overhead of LTE-M. LoRaWAN would require the utility to build coverage.
+A) LTE-M
+
+B) NB-IoT
+
+C) LoRaWAN
+
+D) Zigbee
+
+**Answer: B** NB-IoT is licensed, designed for deep indoor penetration and very low rate, and does not carry the mobility and cost overhead of LTE-M. LoRaWAN would require the utility to build coverage.
 
 **Q3.** A protocol uses a broker, topic hierarchies and three quality-of-service levels over TCP. It is:
-(a) CoAP (b) MQTT (c) AMQP over UDP (d) Modbus
 
-**Answer: (b).** Broker, topics and QoS 0/1/2 over TCP are the MQTT signature. CoAP is request-response over UDP.
+A) CoAP
+
+B) MQTT
+
+C) AMQP over UDP
+
+D) Modbus
+
+**Answer: B** Broker, topics and QoS 0/1/2 over TCP are the MQTT signature. CoAP is request-response over UDP.
 
 **Q4.** A customer rents virtual machines, installs their own operating system, and manages the database themselves. The service model is:
-(a) SaaS (b) PaaS (c) IaaS (d) FaaS
 
-**Answer: (c).** Managing the OS is the IaaS boundary; in PaaS the provider owns the runtime and OS.
+A) SaaS
+
+B) PaaS
+
+C) IaaS
+
+D) FaaS
+
+**Answer: C** Managing the OS is the IaaS boundary; in PaaS the provider owns the runtime and OS.
 
 **Q5.** A data centre can service any single power or cooling component without interrupting the load, but a second simultaneous failure would cause an outage. It is:
-(a) Tier II (b) Tier III (c) Tier IV (d) Tier I
 
-**Answer: (b).** Concurrent maintainability is Tier III. Fault tolerance against an unplanned failure is the extra requirement for Tier IV.
+A) Tier II
+
+B) Tier III
+
+C) Tier IV
+
+D) Tier I
+
+**Answer: B** Concurrent maintainability is Tier III. Fault tolerance against an unplanned failure is the extra requirement for Tier IV.
 
 ## Exercises
 

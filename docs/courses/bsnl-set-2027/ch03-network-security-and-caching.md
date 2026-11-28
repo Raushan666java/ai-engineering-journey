@@ -407,35 +407,67 @@ Supporting standards an operator is expected to follow in practice: ISO/IEC 2700
 
 ## Chapter Quiz
 
+
+
 **Q1.** Which IPsec protocol provides confidentiality of the payload?
 
-(a) AH (b) ESP (c) IKE (d) GRE
+A) AH
 
-**Answer: (b).** ESP encrypts the payload as well as authenticating it; AH provides integrity and authentication but no encryption.
+B) ESP
+
+C) IKE
+
+D) GRE
+
+**Answer: B** ESP encrypts the payload as well as authenticating it; AH provides integrity and authentication but no encryption.
 
 **Q2.** An IPS differs from an IDS mainly because it:
 
-(a) Uses signatures (b) Is placed inline and can block traffic (c) Only inspects encrypted traffic (d) Replaces the firewall
+A) Uses signatures
 
-**Answer: (b).** An IPS sits in the forwarding path and can drop or reset; an IDS receives a copy of traffic and only alerts.
+B) Is placed inline and can block traffic
+
+C) Only inspects encrypted traffic
+
+D) Replaces the firewall
+
+**Answer: B** An IPS sits in the forwarding path and can drop or reset; an IDS receives a copy of traffic and only alerts.
 
 **Q3.** Which device hides the identity of the backend servers from the client?
 
-(a) Forward proxy (b) Reverse proxy (c) NAT router (d) IDS
+A) Forward proxy
 
-**Answer: (b).** A reverse proxy represents the servers to the world; a forward proxy represents the client.
+B) Reverse proxy
+
+C) NAT router
+
+D) IDS
+
+**Answer: B** A reverse proxy represents the servers to the world; a forward proxy represents the client.
 
 **Q4.** A cache has a 70% hit ratio, hits cost 4 ms and misses cost 50 ms. What is the effective latency?
 
-(a) 17.8 ms (b) 18.4 ms (c) 27 ms (d) 35 ms
+A) 17.8 ms
 
-**Answer: (a).** 0.7 x 4 + 0.3 x 50 = 2.8 + 15 = 17.8 ms.
+B) 18.4 ms
+
+C) 27 ms
+
+D) 35 ms
+
+**Answer: A** 0.7 x 4 + 0.3 x 50 = 2.8 + 15 = 17.8 ms.
 
 **Q5.** Which body is India's national nodal agency for cyber incident response?
 
-(a) TRAI (b) DoT (c) CERT-In (d) MeitY
+A) TRAI
 
-**Answer: (c).** CERT-In coordinates incident response and issues advisories; DoT sets licence conditions and TRAI regulates tariff and QoS.
+B) DoT
+
+C) CERT-In
+
+D) MeitY
+
+**Answer: C** CERT-In coordinates incident response and issues advisories; DoT sets licence conditions and TRAI regulates tariff and QoS.
 
 ## Exercises
 

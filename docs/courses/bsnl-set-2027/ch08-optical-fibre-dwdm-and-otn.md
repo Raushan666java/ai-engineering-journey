@@ -501,7 +501,7 @@ SDH is a synchronous TDM hierarchy anchored at STM-1 = 155.52 Mbps, built from a
 
 ## Practical Takeaways
 
-- Memorise four number sets: 9/125 and 50/125; 0.35 and 0.2 dB/km; 155.52 x {1,4,16,64,256}; 2.488/1.244 for GPON.
+- Memorise four number sets: 9/125 and 50/125; 0.35 and 0.2 dB/km; 155.52 x 1/4/16/64/256; 2.488/1.244 for GPON.
 - Write units at every step. dB adds; dBm does not; dBm - dBm = dB.
 - For any L4 question compute the loss limit **and** the dispersion limit, then take the smaller.
 - 100 GHz = 0.8 nm at 1550 nm; channel count = band width in Hz / spacing, rounded down.
@@ -511,28 +511,67 @@ SDH is a synchronous TDM hierarchy anchored at STM-1 = 155.52 Mbps, built from a
 
 ## Chapter Quiz
 
+
+
 **Q1.** The bit rate of STM-4 is:
-(a) 155.52 Mbps (b) 622.08 Mbps (c) 2488.32 Mbps (d) 9953.28 Mbps
-**Answer: (b).** 4 x 155.52 = 622.08 Mbps. Option (c) is STM-16, (d) is STM-64.
+
+A) 155.52 Mbps
+
+B) 622.08 Mbps
+
+C) 2488.32 Mbps
+
+D) 9953.28 Mbps
+
+**Answer: B** 4 x 155.52 = 622.08 Mbps. Option (c) is STM-16, (d) is STM-64.
 
 **Q2.** Which window has the lowest attenuation in standard single-mode fibre?
-(a) 850 nm (b) 1310 nm (c) 1550 nm (d) 1625 nm
-**Answer: (c).** About 0.2 dB/km at 1550 nm versus 0.35 at 1310 nm. 850 nm is a multimode window with far higher loss.
+
+A) 850 nm
+
+B) 1310 nm
+
+C) 1550 nm
+
+D) 1625 nm
+
+**Answer: C** About 0.2 dB/km at 1550 nm versus 0.35 at 1310 nm. 850 nm is a multimode window with far higher loss.
 
 **Q3.** Which dispersion is eliminated by using single-mode instead of multimode fibre?
-(a) Chromatic (b) Modal (c) Polarisation mode (d) Waveguide
-**Answer: (b).** One mode propagates, so nothing arrives at different times. Chromatic and PMD remain.
+
+A) Chromatic
+
+B) Modal
+
+C) Polarisation mode
+
+D) Waveguide
+
+**Answer: B** One mode propagates, so nothing arrives at different times. Chromatic and PMD remain.
 
 **Q4.** At 1550 nm, a DWDM spacing of 50 GHz corresponds to approximately:
-(a) 0.8 nm (b) 0.4 nm (c) 0.2 nm (d) 1.6 nm
-**Answer: (b).** delta_lambda = lambda^2 x delta_f / c gives 0.4 nm; 100 GHz would be 0.8 nm.
+
+A) 0.8 nm
+
+B) 0.4 nm
+
+C) 0.2 nm
+
+D) 1.6 nm
+
+**Answer: B** delta_lambda = lambda^2 x delta_f / c gives 0.4 nm; 100 GHz would be 0.8 nm.
 
 **Q5.** In SDH, 1+1 protection is characterised by:
-(a) A protection path idle until failure, with APS signalling
-(b) A permanent bridge to both paths, receiver selecting the better signal
-(c) Ring wrapping at the two nodes adjacent to the failure
-(d) Restoration computed by a control plane after the failure
-**Answer: (b).** 1+1 is permanently bridged, hitless and protocol-free. (a) is 1:1, (c) is ring protection, (d) is mesh restoration.
+
+A) A protection path idle until failure, with APS signalling
+
+B) A permanent bridge to both paths, receiver selecting the better signal
+
+C) Ring wrapping at the two nodes adjacent to the failure
+
+D) Restoration computed by a control plane after the failure
+
+**Answer: B** 1+1 is permanently bridged, hitless and protocol-free. (a) is 1:1, (c) is ring protection, (d) is mesh restoration.
 
 ## Exercises
 

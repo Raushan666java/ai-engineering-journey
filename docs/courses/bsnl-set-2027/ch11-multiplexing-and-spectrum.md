@@ -515,25 +515,67 @@ Multiplexing shares a link; multiple access shares a medium among users. FDM div
 
 ## Chapter Quiz
 
+
+
 **Q1.** An E1 frame carries 32 timeslots of 8 bits at 8,000 frames per second. The number of voice channels available is:
-(a) 32 (b) 31 (c) 30 (d) 24
-**Answer: (c).** TS0 carries framing and TS16 carries signalling, leaving 30.
+
+A) 32
+
+B) 31
+
+C) 30
+
+D) 24
+
+**Answer: C** TS0 carries framing and TS16 carries signalling, leaving 30.
 
 **Q2.** At 15 kHz subcarrier spacing with a 4.7 us cyclic prefix, the number of OFDM symbols in a 1 ms subframe is:
-(a) 7 (b) 12 (c) 14 (d) 28
-**Answer: (c).** Total symbol duration is about 71.37 us, and 1,000 / 71.37 = 14.01.
+
+A) 7
+
+B) 12
+
+C) 14
+
+D) 28
+
+**Answer: C** Total symbol duration is about 71.37 us, and 1,000 / 71.37 = 14.01.
 
 **Q3.** WCDMA runs at 3.84 Mcps and carries a 12.2 kbps voice channel. The processing gain is closest to:
-(a) 25 (b) 100 (c) 315 (d) 3,150
-**Answer: (c).** 3.84 x 10^6 / 12,200 = 314.8, which is about 25 dB.
+
+A) 25
+
+B) 100
+
+C) 315
+
+D) 3,150
+
+**Answer: C** 3.84 x 10^6 / 12,200 = 314.8, which is about 25 dB.
 
 **Q4.** Which duplexing scheme allows a base station to estimate the downlink channel from uplink measurements?
-(a) FDD (b) TDD (c) both equally (d) neither
-**Answer: (b).** TDD uses the same frequency in both directions, so the channels are reciprocal. FDD does not.
+
+A) FDD
+
+B) TDD
+
+C) both equally
+
+D) neither
+
+**Answer: B** TDD uses the same frequency in both directions, so the channels are reciprocal. FDD does not.
 
 **Q5.** In India, spectrum licensing and band-plan administration is the responsibility of:
-(a) TRAI (b) the WPC under DoT (c) the ITU (d) the operator's vendor
-**Answer: (b).** TRAI recommends on pricing and policy; the Wireless Planning and Coordination wing administers and licenses.
+
+A) TRAI
+
+B) the WPC under DoT
+
+C) the ITU
+
+D) the operator's vendor
+
+**Answer: B** TRAI recommends on pricing and policy; the Wireless Planning and Coordination wing administers and licenses.
 
 ## Exercises
 

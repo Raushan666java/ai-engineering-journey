@@ -503,25 +503,67 @@ Part I is 40 marks with a 14-mark floor for an SC candidate and about 24 minutes
 
 ## Chapter Quiz
 
+
+
 **Q1.** A price is increased by 25 percent and then reduced by 20 percent. The net change is:
-(a) +5 percent (b) 0 percent (c) -5 percent (d) +45 percent
-**Answer: (b).** 25 - 20 - (25 x 20)/100 = 5 - 5 = 0.
+
+A) +5 percent
+
+B) 0 percent
+
+C) -5 percent
+
+D) +45 percent
+
+**Answer: B** 25 - 20 - (25 x 20)/100 = 5 - 5 = 0.
 
 **Q2.** A does a job in 10 days and B in 15 days. Working together they finish in:
-(a) 5 days (b) 6 days (c) 12.5 days (d) 25 days
-**Answer: (b).** LCM 30 units; rates 3 and 2; 30/5 = 6 days.
+
+A) 5 days
+
+B) 6 days
+
+C) 12.5 days
+
+D) 25 days
+
+**Answer: B** LCM 30 units; rates 3 and 2; 30/5 = 6 days.
 
 **Q3.** The difference between CI and SI on Rs 10,000 at 5 percent for 2 years is:
-(a) Rs 25 (b) Rs 50 (c) Rs 100 (d) Rs 500
-**Answer: (a).** 10,000 x (0.05)^2 = 10,000 x 0.0025 = Rs 25.
+
+A) Rs 25
+
+B) Rs 50
+
+C) Rs 100
+
+D) Rs 500
+
+**Answer: A** 10,000 x (0.05)^2 = 10,000 x 0.0025 = Rs 25.
 
 **Q4.** Two dice are thrown. The probability that the sum is 7 is:
-(a) 1/12 (b) 1/9 (c) 1/6 (d) 1/4
-**Answer: (c).** Six favourable pairs out of 36.
+
+A) 1/12
+
+B) 1/9
+
+C) 1/6
+
+D) 1/4
+
+**Answer: C** Six favourable pairs out of 36.
 
 **Q5.** With 40 questions and 40 marks, a wrong answer costing 0.25, the expected value of a blind guess among four options is:
-(a) -0.25 (b) 0 (c) +0.06 (d) +0.25
-**Answer: (c).** 0.25 x 1 + 0.75 x (-0.25) = +0.0625.
+
+A) -0.25
+
+B) 0
+
+C) +0.06
+
+D) +0.25
+
+**Answer: C** 0.25 x 1 + 0.75 x (-0.25) = +0.0625.
 
 ## Exercises
 

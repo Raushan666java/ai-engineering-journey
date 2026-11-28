@@ -486,25 +486,67 @@ SDN separates the control plane from the data plane and centralises the control 
 
 ## Chapter Quiz
 
+
+
 **Q1.** In an SDN architecture, the component that computes paths and installs forwarding rules is the:
-(a) data plane (b) control plane (c) management plane (d) forwarding table
-**Answer: (b).** Path computation and rule installation are control-plane functions. The forwarding table is the control plane's output, not the decider.
+
+A) data plane
+
+B) control plane
+
+C) management plane
+
+D) forwarding table
+
+**Answer: B** Path computation and rule installation are control-plane functions. The forwarding table is the control plane's output, not the decider.
 
 **Q2.** Which ETSI NFV entity owns the lifecycle of a single VNF instance, including scaling it out?
-(a) NFVO (b) VNFM (c) VIM (d) NFVI
-**Answer: (b).** The VNF Manager handles one VNF's instantiation, scaling and healing. NFVO decides at the service level and the VIM allocates resources.
+
+A) NFVO
+
+B) VNFM
+
+C) VIM
+
+D) NFVI
+
+**Answer: B** The VNF Manager handles one VNF's instantiation, scaling and healing. NFVO decides at the service level and the VIM allocates resources.
 
 **Q3.** A 5G cell of 800 Mbps allocates guaranteed shares of 50 percent and 30 percent to two slices, keeping 20 percent unallocated. Slice 1 peaks at 500 Mbps. Which statement is correct?
-(a) The cell is oversubscribed (b) Slice 1 exceeds its guarantee of 400 Mbps (c) Slice 2 must be shut down (d) The headroom covers slice 1 automatically
-**Answer: (b).** 50 percent of 800 is 400 Mbps, so a 500 Mbps peak breaches slice 1's guarantee even though total demand of 500 plus slice 2's peak may fit in the cell.
+
+A) The cell is oversubscribed
+
+B) Slice 1 exceeds its guarantee of 400 Mbps
+
+C) Slice 2 must be shut down
+
+D) The headroom covers slice 1 automatically
+
+**Answer: B** 50 percent of 800 is 400 Mbps, so a 500 Mbps peak breaches slice 1's guarantee even though total demand of 500 plus slice 2's peak may fit in the cell.
 
 **Q4.** In a permissioned blockchain used for inter-operator settlement, consensus is typically achieved by:
-(a) proof of work (b) proof of stake (c) voting among authorised validators (d) a central bank
-**Answer: (c).** Known participants with accountable identities use voting or PBFT-style protocols; mining is unnecessary and unwanted.
+
+A) proof of work
+
+B) proof of stake
+
+C) voting among authorised validators
+
+D) a central bank
+
+**Answer: C** Known participants with accountable identities use voting or PBFT-style protocols; mining is unnecessary and unwanted.
 
 **Q5.** An operator replaces 30 appliances of 4 cores each with VNFs on 24-core servers, at a 75 percent CPU design limit with N+1 redundancy. The minimum server count is:
-(a) 5 (b) 6 (c) 7 (d) 8
-**Answer: (c).** Required 120 vCPU; 120 / (24 x 0.75) = 120 / 18 = 6.67 -> 7 servers before redundancy, and N+1 would give 8 only if the question asked for spare capacity beyond the design limit. Read carefully: 6.67 rounds to 7, and N+1 is already satisfied because 7 servers carry 168 cores against a 120-core requirement.
+
+A) 5
+
+B) 6
+
+C) 7
+
+D) 8
+
+**Answer: C** Required 120 vCPU; 120 / (24 x 0.75) = 120 / 18 = 6.67 -> 7 servers before redundancy, and N+1 would give 8 only if the question asked for spare capacity beyond the design limit. Read carefully: 6.67 rounds to 7, and N+1 is already satisfied because 7 servers carry 168 cores against a 120-core requirement.
 
 ## Exercises
 

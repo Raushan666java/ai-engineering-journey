@@ -454,35 +454,67 @@ Answer: **a single mini-slot transmission fits inside 1 ms; one HARQ retransmiss
 
 ## Chapter Quiz
 
+
+
 **Q1.** Which EPS element allocates the IP address to the UE and anchors the connection to external packet networks?
 
-A. MME  B. S-GW  C. P-GW  D. PCRF
+A) MME
 
-**Answer: C.** The P-GW is the IP anchor and the gateway to external PDNs. The S-GW is the local mobility anchor, the MME is control plane only, and the PCRF supplies policy rules.
+B) S-GW
+
+C) P-GW
+
+D) PCRF
+
+**Answer: C** The P-GW is the IP anchor and the gateway to external PDNs. The S-GW is the local mobility anchor, the MME is control plane only, and the PCRF supplies policy rules.
 
 **Q2.** LTE uses SC-FDMA in the uplink primarily to:
 
-A. Increase peak spectral efficiency  B. Reduce peak-to-average power ratio and UE power consumption  C. Support 8x8 MIMO  D. Avoid the need for a cyclic prefix
+A) Increase peak spectral efficiency
 
-**Answer: B.** DFT precoding spreads symbols across subcarriers, producing a single-carrier-like low-PAPR signal, which lets the UE amplifier run efficiently. It actually costs some spectral efficiency and scheduling flexibility.
+B) Reduce peak-to-average power ratio and UE power consumption
+
+C) Support 8x8 MIMO
+
+D) Avoid the need for a cyclic prefix
+
+**Answer: B** DFT precoding spreads symbols across subcarriers, producing a single-carrier-like low-PAPR signal, which lets the UE amplifier run efficiently. It actually costs some spectral efficiency and scheduling flexibility.
 
 **Q3.** In 5G NR with 60 kHz subcarrier spacing, the slot duration and slots per 1 ms subframe are:
 
-A. 0.5 ms, 2  B. 0.25 ms, 4  C. 0.125 ms, 8  D. 1 ms, 1
+A) 0.5 ms, 2
 
-**Answer: B.** `mu = 2` for 60 kHz, so slot = 1/2^2 = 0.25 ms and slots per subframe = 4. Option A is 30 kHz, C is 120 kHz.
+B) 0.25 ms, 4
+
+C) 0.125 ms, 8
+
+D) 1 ms, 1
+
+**Answer: B** `mu = 2` for 60 kHz, so slot = 1/2^2 = 0.25 ms and slots per subframe = 4. Option A is 30 kHz, C is 120 kHz.
 
 **Q4.** Which 5G core function is a service registry that lets network functions discover each other?
 
-A. UDM  B. NSSF  C. NRF  D. NEF
+A) UDM
 
-**Answer: C.** The NRF holds NF profiles and handles discovery. UDM is subscription data, NSSF selects slices, NEF exposes capabilities to third parties.
+B) NSSF
+
+C) NRF
+
+D) NEF
+
+**Answer: C** The NRF holds NF profiles and handles discovery. UDM is subscription data, NSSF selects slices, NEF exposes capabilities to third parties.
 
 **Q5.** Network slicing and end-to-end URLLC are available in which deployment?
 
-A. NSA Option 3x only  B. SA Option 2  C. Both equally  D. Only with CS fallback
+A) NSA Option 3x only
 
-**Answer: B.** Slicing needs slice-aware 5GC functions (NSSF, SMF, PCF) and end-to-end QoS; NSA rides on the EPC, which has no slicing. URLLC's 1 ms target also depends on the 5G control plane and core.
+B) SA Option 2
+
+C) Both equally
+
+D) Only with CS fallback
+
+**Answer: B** Slicing needs slice-aware 5GC functions (NSSF, SMF, PCF) and end-to-end QoS; NSA rides on the EPC, which has no slicing. URLLC's 1 ms target also depends on the 5G control plane and core.
 
 ## Exercises
 

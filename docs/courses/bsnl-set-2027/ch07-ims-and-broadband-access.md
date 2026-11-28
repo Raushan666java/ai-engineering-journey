@@ -470,25 +470,67 @@ IMS is the operator-controlled IP multimedia architecture: P-CSCF as the termina
 
 ## Chapter Quiz
 
+
+
 **Q1.** Which IMS element queries the HSS to determine which S-CSCF should serve a registering user?
-(a) P-CSCF (b) I-CSCF (c) MGCF (d) PCRF
-**Answer: (b).** The interrogating CSCF performs the UAR/UAA exchange to select the serving CSCF.
+
+A) P-CSCF
+
+B) I-CSCF
+
+C) MGCF
+
+D) PCRF
+
+**Answer: B** The interrogating CSCF performs the UAR/UAA exchange to select the serving CSCF.
 
 **Q2.** An IMS user is authenticated using a private identity while other parties reach them using a public identity. These are:
-(a) IMPU and IMPI respectively (b) IMPI and IMPU respectively (c) IMPI and IMPI (d) MSISDN and IMEI
-**Answer: (b).** The private identity authenticates; the public identity is the addressable one.
+
+A) IMPU and IMPI respectively
+
+B) IMPI and IMPU respectively
+
+C) IMPI and IMPI
+
+D) MSISDN and IMEI
+
+**Answer: B** The private identity authenticates; the public identity is the addressable one.
 
 **Q3.** ADSL2+ occupies a band of approximately:
-(a) 1.1 MHz (b) 2.2 MHz (c) 17.7 MHz (d) 106 MHz
-**Answer: (b).** 512 subcarriers at 4.3125 kHz spacing gives 2.208 MHz. 1.1 MHz is ADSL, 17.7 MHz is VDSL2 17a, 106 MHz is G.fast.
+
+A) 1.1 MHz
+
+B) 2.2 MHz
+
+C) 17.7 MHz
+
+D) 106 MHz
+
+**Answer: B** 512 subcarriers at 4.3125 kHz spacing gives 2.208 MHz. 1.1 MHz is ADSL, 17.7 MHz is VDSL2 17a, 106 MHz is G.fast.
 
 **Q4.** A 1,500-byte packet is carried over PPPoE with a VLAN-tagged Ethernet frame and FCS. The frame-level efficiency is closest to:
-(a) 93 percent (b) 96 percent (c) 98 percent (d) 99.5 percent
-**Answer: (c).** 1500 / 1530 = 98.0 percent. Including preamble and inter-frame gap it falls to 96.8 percent, which is the trap in option (b).
+
+A) 93 percent
+
+B) 96 percent
+
+C) 98 percent
+
+D) 99.5 percent
+
+**Answer: C** 1500 / 1530 = 98.0 percent. Including preamble and inter-frame gap it falls to 96.8 percent, which is the trap in option (b).
 
 **Q5.** Which FTTx variant keeps the longest copper segment and therefore caps the achievable rate most?
-(a) FTTH (b) FTTB (c) FTTC (d) FTTN
-**Answer: (d).** FTTN terminates at a neighbourhood node, leaving up to a kilometre of copper.
+
+A) FTTH
+
+B) FTTB
+
+C) FTTC
+
+D) FTTN
+
+**Answer: D** FTTN terminates at a neighbourhood node, leaving up to a kilometre of copper.
 
 ## Exercises
 

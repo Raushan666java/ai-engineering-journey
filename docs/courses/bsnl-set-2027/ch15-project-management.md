@@ -536,25 +536,67 @@ The strategic point: this is where a CSE candidate can beat an ECE candidate who
 
 ## Chapter Quiz
 
+
+
 **Q1.** A project has an outlay of Rs 80 lakh and a constant annual inflow of Rs 20 lakh for 6 years. Its payback period is:
-(a) 3 years (b) 4 years (c) 5 years (d) 6 years
-**Answer: (b).** 80/20 = 4 years of inflow to recover the outlay.
+
+A) 3 years
+
+B) 4 years
+
+C) 5 years
+
+D) 6 years
+
+**Answer: B** 80/20 = 4 years of inflow to recover the outlay.
 
 **Q2.** An activity has O = 3, M = 6, P = 15 weeks. Its expected time and standard deviation are:
-(a) 7 and 2 (b) 8 and 2 (c) 7 and 1.5 (d) 6 and 2
-**Answer: (a).** te = (3 + 24 + 15)/6 = 42/6 = 7; sigma = (15 - 3)/6 = 2.
+
+A) 7 and 2
+
+B) 8 and 2
+
+C) 7 and 1.5
+
+D) 6 and 2
+
+**Answer: A** te = (3 + 24 + 15)/6 = 42/6 = 7; sigma = (15 - 3)/6 = 2.
 
 **Q3.** Activity X has ES = 6, EF = 10, LS = 9, LF = 13. Its total float is:
-(a) 0 (b) 3 (c) 4 (d) 7
-**Answer: (b).** TF = LS - ES = 9 - 6 = 3, equivalently LF - EF = 13 - 10 = 3.
+
+A) 0
+
+B) 3
+
+C) 4
+
+D) 7
+
+**Answer: B** TF = LS - ES = 9 - 6 = 3, equivalently LF - EF = 13 - 10 = 3.
 
 **Q4.** An activity has normal time 8 weeks at Rs 40,000 and crash time 4 weeks at Rs 60,000. The cost slope is:
-(a) Rs 2,500/week (b) Rs 5,000/week (c) Rs 10,000/week (d) Rs 20,000/week
-**Answer: (b).** (60,000 - 40,000)/(8 - 4) = 20,000/4 = Rs 5,000 per week.
+
+A) Rs 2,500/week
+
+B) Rs 5,000/week
+
+C) Rs 10,000/week
+
+D) Rs 20,000/week
+
+**Answer: B** (60,000 - 40,000)/(8 - 4) = 20,000/4 = Rs 5,000 per week.
 
 **Q5.** A project reports EV = Rs 50 lakh, PV = Rs 60 lakh, AC = Rs 55 lakh. Which is correct?
-(a) Ahead of schedule, under budget (b) Behind schedule, over budget (c) Behind schedule, under budget (d) Ahead of schedule, over budget
-**Answer: (b).** SV = 50 - 60 = -10 (behind), CV = 50 - 55 = -5 (over budget).
+
+A) Ahead of schedule, under budget
+
+B) Behind schedule, over budget
+
+C) Behind schedule, under budget
+
+D) Ahead of schedule, over budget
+
+**Answer: B** SV = 50 - 60 = -10 (behind), CV = 50 - 55 = -5 (over budget).
 
 ## Exercises
 

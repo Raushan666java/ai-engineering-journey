@@ -478,35 +478,67 @@ A single zero group cannot be compressed, so 2001:db8:0:1:1:1:1:1 stays as writt
 
 ## Chapter Quiz
 
+
+
 **Q1.** Which IPv4 header field prevents a packet circulating forever in a routing loop?
 
-(a) Identification (b) Time To Live (c) Fragment Offset (d) Header Checksum
+A) Identification
 
-**Answer: (b).** TTL is decremented by each router; at zero the packet is dropped and ICMP Time Exceeded is returned.
+B) Time To Live
+
+C) Fragment Offset
+
+D) Header Checksum
+
+**Answer: B** TTL is decremented by each router; at zero the packet is dropped and ICMP Time Exceeded is returned.
 
 **Q2.** How many usable host addresses does a /27 subnet provide?
 
-(a) 30 (b) 32 (c) 62 (d) 14
+A) 30
 
-**Answer: (a).** 32 - 27 = 5 host bits, so 2^5 - 2 = 30. 32 is the block size and 62 belongs to a /26.
+B) 32
+
+C) 62
+
+D) 14
+
+**Answer: A** 32 - 27 = 5 host bits, so 2^5 - 2 = 30. 32 is the block size and 62 belongs to a /26.
 
 **Q3.** Which DHCP message does a client send first?
 
-(a) DHCPOFFER (b) DHCPREQUEST (c) DHCPDISCOVER (d) DHCPACK
+A) DHCPOFFER
 
-**Answer: (c).** The order is Discover, Offer, Request, Ack; the client must speak first because it has no address yet.
+B) DHCPREQUEST
+
+C) DHCPDISCOVER
+
+D) DHCPACK
+
+**Answer: C** The order is Discover, Offer, Request, Ack; the client must speak first because it has no address yet.
 
 **Q4.** A host is configured with 172.20.5.9. This address is:
 
-(a) Public class B (b) Private class B (c) Public class C (d) Link-local
+A) Public class B
 
-**Answer: (b).** The first octet 172 is class B, and 172.16.0.0/12 spans 172.16 through 172.31, so 172.20 is inside the private block.
+B) Private class B
+
+C) Public class C
+
+D) Link-local
+
+**Answer: B** The first octet 172 is class B, and 172.16.0.0/12 spans 172.16 through 172.31, so 172.20 is inside the private block.
 
 **Q5.** Which IPv6 address type does not exist?
 
-(a) Global unicast (b) Link-local (c) Broadcast (d) Multicast
+A) Global unicast
 
-**Answer: (c).** IPv6 removed broadcast; multicast, for example ff02::1 for all nodes on a link, carries its functions.
+B) Link-local
+
+C) Broadcast
+
+D) Multicast
+
+**Answer: C** IPv6 removed broadcast; multicast, for example ff02::1 for all nodes on a link, carries its functions.
 
 ## Exercises
 

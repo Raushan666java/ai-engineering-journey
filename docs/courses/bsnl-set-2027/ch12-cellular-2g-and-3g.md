@@ -451,35 +451,67 @@ Answer: **812.5 kbit/s gross per carrier, 59.2 kbit/s per slot with MCS-9, 236.8
 
 ## Chapter Quiz
 
+
+
 **Q1.** A cellular system has cluster size N = 7 and cell radius 3 km. The reuse distance is:
 
-A. 7.9 km  B. 13.7 km  C. 21 km  D. 9 km
+A) 7.9 km
 
-**Answer: B.** `D = R x sqrt(3N) = 3 x sqrt(21) = 3 x 4.583 = 13.75 km`. Option A is sqrt(7) x 3 (wrong formula), C is N x R, D is 3R.
+B) 13.7 km
+
+C) 21 km
+
+D) 9 km
+
+**Answer: B** `D = R x sqrt(3N) = 3 x sqrt(21) = 3 x 4.583 = 13.75 km`. Option A is sqrt(7) x 3 (wrong formula), C is N x R, D is 3R.
 
 **Q2.** Which GSM element generates the authentication triplets (RAND, SRES, Kc)?
 
-A. HLR  B. VLR  C. AUC  D. EIR
+A) HLR
 
-**Answer: C.** The Authentication Centre holds Ki and produces triplets on request; the VLR stores and uses them, and the HLR is the subscriber profile database.
+B) VLR
+
+C) AUC
+
+D) EIR
+
+**Answer: C** The Authentication Centre holds Ki and produces triplets on request; the VLR stores and uses them, and the HLR is the subscriber profile database.
 
 **Q3.** In UMTS, codes that separate different cells from one another are:
 
-A. OVSF channelisation codes  B. Scrambling codes  C. Walsh codes  D. Gold sequences used as channelisation codes
+A) OVSF channelisation codes
 
-**Answer: B.** Scrambling codes separate cells and users; OVSF channelisation codes separate physical channels inside one cell. (Gold sequences are the family used for scrambling, but the role is what is being asked.)
+B) Scrambling codes
+
+C) Walsh codes
+
+D) Gold sequences used as channelisation codes
+
+**Answer: B** Scrambling codes separate cells and users; OVSF channelisation codes separate physical channels inside one cell. (Gold sequences are the family used for scrambling, but the role is what is being asked.)
 
 **Q4.** A GPRS mobile is attached but has no IP address. What is missing?
 
-A. IMSI  B. PDP context activation  C. Authentication  D. A VLR entry
+A) IMSI
 
-**Answer: B.** Attach gives mobility management and paging reachability; only PDP context activation creates the GTP tunnel and allocates the IP address via the GGSN.
+B) PDP context activation
+
+C) Authentication
+
+D) A VLR entry
+
+**Answer: B** Attach gives mobility management and paging reachability; only PDP context activation creates the GTP tunnel and allocates the IP address via the GGSN.
 
 **Q5.** Soft handover is possible in UMTS mainly because:
 
-A. It uses TDMA with frequency hopping  B. All cells use the same 5 MHz carrier, so the mobile can receive two cells at once  C. The RNC has spare hardware  D. The core network is packet switched
+A) It uses TDMA with frequency hopping
 
-**Answer: B.** A single frequency reuse factor of 1 means neighbouring cells are not distinguished by frequency, so simultaneous links are physically possible and the RNC can combine them. Packet core (D) is unrelated.
+B) All cells use the same 5 MHz carrier, so the mobile can receive two cells at once
+
+C) The RNC has spare hardware
+
+D) The core network is packet switched
+
+**Answer: B** A single frequency reuse factor of 1 means neighbouring cells are not distinguished by frequency, so simultaneous links are physically possible and the RNC can combine them. Packet core (D) is unrelated.
 
 ## Exercises
 

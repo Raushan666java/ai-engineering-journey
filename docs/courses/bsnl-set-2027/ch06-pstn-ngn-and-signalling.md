@@ -578,25 +578,67 @@ SS7 is the control network: MTP1-3 move messages reliably between point codes, S
 
 ## Chapter Quiz
 
+
+
 **Q1.** In an E1 frame, the timeslot reserved for frame alignment is:
-(a) TS0 (b) TS1 (c) TS16 (d) TS31
-**Answer: (a).** TS0 carries the frame alignment signal (and the not-FAS word with alarm and CRC-4 bits). TS16 carries signalling, and TS1-TS15 and TS17-TS31 carry voice.
+
+A) TS0
+
+B) TS1
+
+C) TS16
+
+D) TS31
+
+**Answer: A** TS0 carries the frame alignment signal (and the not-FAS word with alarm and CRC-4 bits). TS16 carries signalling, and TS1-TS15 and TS17-TS31 carry voice.
 
 **Q2.** Point-code based routing of SS7 messages across the signalling network is performed by:
-(a) MTP1 (b) MTP2 (c) MTP3 (d) TCAP
-**Answer: (c).** MTP3 is the signalling network layer: discrimination, distribution and route selection on point code. SCCP adds global title routing above it.
+
+A) MTP1
+
+B) MTP2
+
+C) MTP3
+
+D) TCAP
+
+**Answer: C** MTP3 is the signalling network layer: discrimination, distribution and route selection on point code. SCCP adds global title routing above it.
 
 **Q3.** A SIP UA wants to stop an INVITE for which it has received only 180 Ringing. It sends:
-(a) BYE (b) CANCEL (c) ACK (d) OPTIONS
-**Answer: (b).** CANCEL terminates a pending INVITE transaction before a final response. BYE would be invalid because no dialog is confirmed yet.
+
+A) BYE
+
+B) CANCEL
+
+C) ACK
+
+D) OPTIONS
+
+**Answer: B** CANCEL terminates a pending INVITE transaction before a final response. BYE would be invalid because no dialog is confirmed yet.
 
 **Q4.** A Class 5 exchange is best described as:
-(a) A transit switch with no subscribers (b) A local exchange terminating subscriber lines (c) A signalling transfer point (d) An international gateway
-**Answer: (b).** Class 5 is the end office: line termination, dial tone, metering and local switching. Class 4 is the tandem/trunk switch.
+
+A) A transit switch with no subscribers
+
+B) A local exchange terminating subscriber lines
+
+C) A signalling transfer point
+
+D) An international gateway
+
+**Answer: B** Class 5 is the end office: line termination, dial tone, metering and local switching. Class 4 is the tandem/trunk switch.
 
 **Q5.** In an NGN, the device that converts TDM voice channels into RTP packet streams is the:
-(a) Softswitch (b) Signalling gateway (c) Media gateway (d) Application server
-**Answer: (c).** The media gateway is the bearer interworking function. The softswitch controls it over H.248, and the signalling gateway handles SS7 over IP.
+
+A) Softswitch
+
+B) Signalling gateway
+
+C) Media gateway
+
+D) Application server
+
+**Answer: C** The media gateway is the bearer interworking function. The softswitch controls it over H.248, and the signalling gateway handles SS7 over IP.
 
 ## Exercises
 

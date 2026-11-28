@@ -437,35 +437,67 @@ Both use a token bucket: tokens accrue at the **committed information rate (CIR)
 
 ## Chapter Quiz
 
+
+
 **Q1.** Which protocol is used to exchange routing information between autonomous systems?
 
-(a) OSPF (b) RIP (c) BGP (d) IS-IS
+A) OSPF
 
-**Answer: (c).** BGP is the inter-domain path vector protocol; OSPF and IS-IS are intra-domain and RIP is a small intra-domain distance vector protocol.
+B) RIP
+
+C) BGP
+
+D) IS-IS
+
+**Answer: C** BGP is the inter-domain path vector protocol; OSPF and IS-IS are intra-domain and RIP is a small intra-domain distance vector protocol.
 
 **Q2.** A router has an OSPF route (AD 110) and a static route (AD 1) to the same /24 prefix. Which is installed?
 
-(a) OSPF, because it is dynamic (b) Static, because AD is lower (c) Both, load balanced (d) Neither until a tie-break
+A) OSPF, because it is dynamic
 
-**Answer: (b).** For identical prefixes the lowest administrative distance wins, and 1 is lower than 110.
+B) Static, because AD is lower
+
+C) Both, load balanced
+
+D) Neither until a tie-break
+
+**Answer: B** For identical prefixes the lowest administrative distance wins, and 1 is lower than 110.
 
 **Q3.** With the default reference bandwidth of 100 Mbps, what is the OSPF cost of a 10 Mbps interface?
 
-(a) 1 (b) 10 (c) 100 (d) 1000
+A) 1
 
-**Answer: (b).** Cost = 100 / 10 = 10. A 1 Gbps interface would cost 1 after the minimum-value rule.
+B) 10
+
+C) 100
+
+D) 1000
+
+**Answer: B** Cost = 100 / 10 = 10. A 1 Gbps interface would cost 1 after the minimum-value rule.
 
 **Q4.** Which MPLS operation is performed by a core LSR?
 
-(a) Push (b) Swap (c) Pop (d) Encrypt
+A) Push
 
-**Answer: (b).** The ingress LER pushes, core LSRs swap the incoming label for the outgoing one, and the egress pops.
+B) Swap
+
+C) Pop
+
+D) Encrypt
+
+**Answer: B** The ingress LER pushes, core LSRs swap the incoming label for the outgoing one, and the egress pops.
 
 **Q5.** Which QoS mechanism buffers excess traffic rather than dropping it?
 
-(a) Policing (b) Shaping (c) Tail drop (d) WRED
+A) Policing
 
-**Answer: (b).** Shaping queues the excess and releases it later, adding delay instead of loss; policing drops or remarks immediately.
+B) Shaping
+
+C) Tail drop
+
+D) WRED
+
+**Answer: B** Shaping queues the excess and releases it later, adding delay instead of loss; policing drops or remarks immediately.
 
 ## Exercises
 

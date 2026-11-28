@@ -427,35 +427,67 @@ Answer: **133 Mbit/s single stream, up to about 532 Mbit/s with 4x4.** The 4x fi
 
 ## Chapter Quiz
 
+
+
 **Q1.** An antenna with 15 dBd gain has what gain in dBi?
 
-A. 12.85 dBi  B. 15 dBi  C. 17.15 dBi  D. 45 dBi
+A) 12.85 dBi
 
-**Answer: C.** `dBi = dBd + 2.15 = 17.15`. Option A subtracts instead of adding.
+B) 15 dBi
+
+C) 17.15 dBi
+
+D) 45 dBi
+
+**Answer: C** `dBi = dBd + 2.15 = 17.15`. Option A subtracts instead of adding.
 
 **Q2.** FSPL at 1800 MHz over 10 km is approximately:
 
-A. 97.5 dB  B. 107.5 dB  C. 117.5 dB  D. 127.5 dB
+A) 97.5 dB
 
-**Answer: C.** `32.45 + 20log10(1800) + 20log10(10) = 32.45 + 65.1 + 20 = 117.5 dB`.
+B) 107.5 dB
+
+C) 117.5 dB
+
+D) 127.5 dB
+
+**Answer: C** `32.45 + 20log10(1800) + 20log10(10) = 32.45 + 65.1 + 20 = 117.5 dB`.
 
 **Q3.** Which orbit gives the lowest propagation latency?
 
-A. GEO  B. MEO  C. LEO  D. They are equal because all use radio waves
+A) GEO
 
-**Answer: C.** Latency is distance divided by the speed of light, so the lowest orbit wins: a few ms for LEO against about 119 ms one way for GEO.
+B) MEO
+
+C) LEO
+
+D) They are equal because all use radio waves
+
+**Answer: C** Latency is distance divided by the speed of light, so the lowest orbit wins: a few ms for LEO against about 119 ms one way for GEO.
 
 **Q4.** A dominant line-of-sight path plus scattered multipath produces which fading model?
 
-A. Rayleigh  B. Rician  C. Log-normal shadowing  D. Rain fade
+A) Rayleigh
 
-**Answer: B.** A strong LOS component plus scatter is Rician, described by the K factor. Rayleigh is the no-LOS case; shadowing is a slow large-scale variation.
+B) Rician
+
+C) Log-normal shadowing
+
+D) Rain fade
+
+**Answer: B** A strong LOS component plus scatter is Rician, described by the K factor. Rayleigh is the no-LOS case; shadowing is a slow large-scale variation.
 
 **Q5.** For a dense urban small cell 1 km from a fibre point, with line of sight and a need for several Gbit/s within a week, the best backhaul is:
 
-A. GEO satellite  B. Licensed 7 GHz microwave  C. E-band (71 to 86 GHz)  D. Copper E1 leased lines
+A) GEO satellite
 
-**Answer: C.** E-band gives multi-Gbit/s over 1 to 3 km with light licensing and fast deployment. Satellite has too much latency and too little capacity, 7 GHz is capacity-limited, and E1 lines are obsolete for this rate.
+B) Licensed 7 GHz microwave
+
+C) E-band (71 to 86 GHz)
+
+D) Copper E1 leased lines
+
+**Answer: C** E-band gives multi-Gbit/s over 1 to 3 km with light licensing and fast deployment. Satellite has too much latency and too little capacity, 7 GHz is capacity-limited, and E1 lines are obsolete for this rate.
 
 ## Exercises
 

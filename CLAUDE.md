@@ -71,4 +71,17 @@ Turn the learning-playground repo into a complete, self-contained placement prep
 1. User to run `npx ts-node learning-methods/learning-dashboard.ts` to view stats
 2. User to run `python languages/python/basic.py` to start Python practice
 3. Follow ROADMAP.md week-by-week through the 24 modules using placement/ as the practice hub
-4. User to set up GitHub branch protection (web UI → Settings → Branches → Add rule → main → Require PR + linear history)
+4. User to set up GitHub branch protection (web UI -> Settings -> Branches -> Add rule -> main -> Require PR + linear history)
+
+### BSNL SET 2027 course (`docs/courses/bsnl-set-2027/`)
+- 23 docs: seven orientation files (00-06) plus sixteen teaching chapters (ch01-ch16). The evidence file stays at `docs/references/bsnl/BSNL-EXAM-ANALYSIS.md`.
+- Live in the study app as course id `bsnl-set-2027` (content API rebuilt and pushed to gh-pages). Docusaurus pages appear only after `sync-site.ps1` plus a full build, because `site/docs/courses/` is the deploy source.
+- Quiz shape is a contract with `site/scripts/build-content-api.mjs`: one option per line as `A) text`, key as `**Answer: B** reason`. Inline `(a) x (b) y` or `A. x  B. y` on one line is silently dropped (the extractor needs 2+ options), and that chapter loses its review deck. 16 chapters carry 5 questions each; the orientation docs carry none by design.
+- `build-content-api.mjs` reads `SRC = "../docs/courses"`; every direct subdirectory becomes a course whose title is the directory name.
+
+### Web build of the study app
+- `npm run build:web` in `study_apps` writes `web-build/` (about 2.5 MB, gitignored).
+- `app.json` sets `experiments.baseUrl = "/ai-engineering-journey/app"`. Without it the export asks for `/_expo/...` at the domain root and the page renders blank.
+- Published two ways: `web-build/*` copied into `site/static/app/` (tracked, and copied into `site/build` on every deploy), and pushed straight to `gh-pages` so it goes live without a 20-minute rebuild. Live at `https://raushan666java.github.io/ai-engineering-journey/app/`.
+- Deep links (a refresh on `/app/chapter/xyz`) hit the site 404: Pages has no SPA fallback. In-app navigation works.
+- Browser differences handled in code: `src/alert.ts` (RN Web has no `Alert`), `notify.supported` (notifications are Android-only), backup export downloads and import reads through `fetch`.

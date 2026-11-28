@@ -1,28 +1,28 @@
 ---
-title: "01 — Master Syllabus: Every Topic, Mapped and Rated"
-sidebar_label: "01 · Master Syllabus"
+title: "01 - Master Syllabus: Every Topic, Mapped and Rated"
+sidebar_label: "01 - Master Syllabus"
 description: The complete BSNL SET (Telecom) topic tree, each sub-topic mapped to a chapter, a depth rating (L1 recall to L4 numerical), and the question style the paper uses.
 ---
 
-# 01 — Master Syllabus: Every Topic, Mapped and Rated
+# 01 - Master Syllabus: Every Topic, Mapped and Rated
 
 ## How to read this document
 
 Every sub-topic carries:
 
-- **Depth** — the level you must reach, not the level you must read.
+- **Depth** - the level you must reach, not the level you must read.
   - `L1` = recall a fact or definition
   - `L2` = explain a mechanism or a why
   - `L3` = apply a rule to a scenario
   - `L4` = compute a number
-- **Chapter** — where it is taught.
-- **Ask** — the shape of the question the paper tends to use.
+- **Chapter** - where it is taught.
+- **Ask** - the shape of the question the paper tends to use.
 
 If a topic is marked `L1`, do not spend three days on it. If it is marked `L4`, do not stop at reading.
 
 ---
 
-## Block 1 — IP / Data Networks (15% · 24 marks)
+## Block 1 - IP / Data Networks (15% - 24 marks)
 
 | Sub-topic | Depth | Chapter | Ask |
 |---|---|---|---|
@@ -34,7 +34,7 @@ If a topic is marked `L1`, do not spend three days on it. If it is marked `L4`, 
 | IPv6 header, address types, transition | L2 | ch01 | "Which is not an IPv6 type?" |
 | NAT/PAT, DHCP, DNS, ARP | L2 | ch01 | Function identification |
 | Static vs dynamic routing | L1 | ch02 | Concept |
-| RIP, OSPF, BGP — metrics and scope | L2 | ch02 | "Which protocol is inter-AS?" |
+| RIP, OSPF, BGP - metrics and scope | L2 | ch02 | "Which protocol is inter-AS?" |
 | Switching, MAC learning, VLAN, STP | L2 | ch02 | Loop prevention, VLAN tagging |
 | **MPLS: label stack, LSP, LER/LSR, VPN** | L2 | ch02 | Label operations (push/swap/pop) |
 | QoS: classification, marking, queuing, shaping | L2 | ch02 | "Which mechanism delays excess traffic?" |
@@ -43,7 +43,7 @@ If a topic is marked `L1`, do not spend three days on it. If it is marked `L4`, 
 | VPN, IPsec (AH/ESP), TLS handshake | L2 | ch03 | "Which provides confidentiality?" |
 | Caching, CDN, proxy, load balancer | L2 | ch03 | Purpose identification |
 
-## Block 2 — Emerging Technologies (15% · 24 marks)
+## Block 2 - Emerging Technologies (15% - 24 marks)
 
 | Sub-topic | Depth | Chapter | Ask |
 |---|---|---|---|
@@ -61,7 +61,7 @@ If a topic is marked `L1`, do not spend three days on it. If it is marked `L4`, 
 | Blockchain: blocks, hashing, consensus, smart contracts | L1 | ch05 | Property identification |
 | AI/ML in telecom: predictive maintenance, SON, churn, anomaly | L2 | ch05 | Use-case mapping |
 
-## Block 3 — Wireline Technologies (15% · 24 marks)
+## Block 3 - Wireline Technologies (15% - 24 marks)
 
 | Sub-topic | Depth | Chapter | Ask |
 |---|---|---|---|
@@ -70,7 +70,7 @@ If a topic is marked `L1`, do not spend three days on it. If it is marked `L4`, 
 | NGN architecture, softswitch, media gateway | L2 | ch06 | "What replaced the Class-4/5 switch?" |
 | **SS7 stack: MTP1-3, SCCP, TCAP, ISUP, INAP** | L2 | ch06 | Layer function mapping |
 | **SIP: methods, responses, dialog, SDP** | L2 | ch06 | Method identification (INVITE/BYE/ACK) |
-| Megaco/H.248, MGCP — gateway control | L1 | ch06 | Purpose |
+| Megaco/H.248, MGCP - gateway control | L1 | ch06 | Purpose |
 | Call routing, numbering plan, translations | L2 | ch06 | Routing decision |
 | **IMS: P-CSCF, I-CSCF, S-CSCF, HSS, PCRF** | L2 | ch07 | Element responsibility |
 | IMS registration and session setup flow | L2 | ch07 | Sequence ordering |
@@ -80,7 +80,7 @@ If a topic is marked `L1`, do not spend three days on it. If it is marked `L4`, 
 | Broadband internet, PPPoE, AAA, CPE | L2 | ch07 | Function |
 | FTTx topologies (FTTH/FTTB/FTTC), access vs core | L2 | ch07 | Topology selection |
 
-## Block 4 — Transmission Infrastructure (15% · 24 marks)
+## Block 4 - Transmission Infrastructure (15% - 24 marks)
 
 | Sub-topic | Depth | Chapter | Ask |
 |---|---|---|---|
@@ -98,14 +98,14 @@ If a topic is marked `L1`, do not spend three days on it. If it is marked `L4`, 
 | Transmission media: copper, fibre, microwave, satellite | L1 | ch09 | Media selection |
 | Leased lines, MPLS-TP, backhaul media | L2 | ch09 | Use case |
 
-## Block 5 — Basic Telecommunications (15% · 24 marks)
+## Block 5 - Basic Telecommunications (15% - 24 marks)
 
 | Sub-topic | Depth | Chapter | Ask |
 |---|---|---|---|
 | Signal types, time/frequency domain, bandwidth | L2 | ch10 | Concept |
 | **Sampling theorem, aliasing, quantization, PCM bit rate** | **L4** | ch10 | 6.02n + 1.76 dB, bit rate |
 | SNR, noise figure, Shannon capacity | **L4** | ch10 | Capacity computation |
-| AM, FM — modulation index, bandwidth | **L4** | ch10 | Carson's rule |
+| AM, FM - modulation index, bandwidth | **L4** | ch10 | Carson's rule |
 | **ASK/FSK/PSK/QAM, constellation, bits per symbol** | **L4** | ch10 | Symbol rate vs bit rate |
 | **FDM, TDM, WDM, OFDM** | L2 | ch11 | Comparison, subcarrier orthogonality |
 | Multiple access: FDMA/TDMA/CDMA/OFDMA | L2 | ch11 | Access identification |
@@ -113,7 +113,7 @@ If a topic is marked `L1`, do not spend three days on it. If it is marked `L4`, 
 | Spectrum management: ITU regions, WPC, licensing, band plans | L2 | ch11 | Regulatory body identification |
 | Noise, interference, fading, equalisation | L2 | ch11 | Mitigation matching |
 
-## Block 6 — Wireless Technologies (15% · 24 marks)
+## Block 6 - Wireless Technologies (15% - 24 marks)
 
 | Sub-topic | Depth | Chapter | Ask |
 |---|---|---|---|
@@ -136,7 +136,7 @@ If a topic is marked `L1`, do not spend three days on it. If it is marked `L4`, 
 | Satellite: GEO/MEO/LEO, latency, footprint, VSAT | L2 | ch14 | Orbit comparison |
 | Mobile backhaul: microwave, fibre, E-band, latency | L2 | ch14 | Media choice |
 
-## Block 7 — Project Management (10% · 16 marks)
+## Block 7 - Project Management (10% - 16 marks)
 
 | Sub-topic | Depth | Chapter | Ask |
 |---|---|---|---|
@@ -149,7 +149,7 @@ If a topic is marked `L1`, do not spend three days on it. If it is marked `L4`, 
 | Risk management: identify, assess, mitigate | L2 | ch15 | Response type |
 | Cost control, earned value (awareness) | L2 | ch15 | Concept |
 
-## Part I — Aptitude (40 marks)
+## Part I - Aptitude (40 marks)
 
 | Area | Depth | Chapter | Ask |
 |---|---|---|---|
@@ -177,7 +177,7 @@ If a topic is marked `L1`, do not spend three days on it. If it is marked `L4`, 
 | Aptitude | 7 | 1 | 40 |
 | **Total** | **99** | **16** | **200** |
 
-## Depth budget — how to spend 8 months
+## Depth budget - how to spend 8 months
 
 | Depth | Sub-topics | Study shape | Share of time |
 |---|---|---|---|
@@ -186,11 +186,11 @@ If a topic is marked `L1`, do not spend three days on it. If it is marked `L4`, 
 | L3 | 9 | Practice sets | 15% |
 | **L4** | **23** | **Drill to reflex; timed** | **30%** |
 
-The L4 list is the merit list. If you finish this course having read everything but drilled nothing, expect ~95–105. If you drill the 23 L4 families, expect 120+.
+The L4 list is the merit list. If you finish this course having read everything but drilled nothing, expect ~95-105. If you drill the 23 L4 families, expect 120+.
 
 ## Official sources to verify against
 
 - SET scheme and syllabus PDF: `externalexam.bsnl.co.in/SET_Notification_with_Scheme_and_Syllabus.pdf`
 - JTO notification (for comparison): `externalexam.bsnl.co.in/Examination notification DR JTO(T).pdf`
 
-Weights and block names above are from the 2026 SET notification. **Re-check the 2027 PDF when it drops** — BSNL can adjust weights, and any change reorders your priority list.
+Weights and block names above are from the 2026 SET notification. **Re-check the 2027 PDF when it drops** - BSNL can adjust weights, and any change reorders your priority list.

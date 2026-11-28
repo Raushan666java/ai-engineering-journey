@@ -1,10 +1,10 @@
 ---
-title: "06 — The Pro Execution System"
-sidebar_label: "06 · Execution System"
+title: "06 - The Pro Execution System"
+sidebar_label: "06 - Execution System"
 description: The daily and weekly mechanics that turn the 32-week plan into behaviour: the three-loop engine, teach-back, deliberate practice, interleaving, metrics, energy management and failure recovery.
 ---
 
-# 06 — The Pro Execution System
+# 06 - The Pro Execution System
 
 ## Learning Objectives
 
@@ -24,10 +24,10 @@ Every study session contains three loops. Most candidates only run the first, wh
 
 | Minutes | Loop | Activity |
 |---|---|---|
-| 0–5 | Retrieve | Yesterday's 5 questions, closed book |
-| 5–45 | Learn | Read one section; draw the diagram; say it aloud in your own words |
-| 45–75 | Retrieve | 15 questions on today's section, closed book, timed |
-| 75–90 | Apply | 3 numericals at 60 seconds each; write the steps, not just the answer |
+| 0-5 | Retrieve | Yesterday's 5 questions, closed book |
+| 5-45 | Learn | Read one section; draw the diagram; say it aloud in your own words |
+| 45-75 | Retrieve | 15 questions on today's section, closed book, timed |
+| 75-90 | Apply | 3 numericals at 60 seconds each; write the steps, not just the answer |
 
 **The 45-minute cap on "Learn" is deliberate.** Beyond that, retention per minute collapses. If a section needs more, split it across two days rather than reading for 90 minutes.
 
@@ -57,7 +57,7 @@ The fastest way to find out whether you understand a mechanism is to explain it 
 | Recording | Record a 3-minute voice note on your phone | 3 min |
 | Adversarial | Explain to a friend who asks "why?" three times | 10 min |
 
-**Use teach-back for L2 topics specifically** — IMS registration, MPLS label operations, 5G SA vs NSA, PERT vs CPM, OFDMA vs SC-FDMA. These are the questions where the paper asks "which element does what", and a candidate who can teach the flow answers them in 15 seconds.
+**Use teach-back for L2 topics specifically** - IMS registration, MPLS label operations, 5G SA vs NSA, PERT vs CPM, OFDMA vs SC-FDMA. These are the questions where the paper asks "which element does what", and a candidate who can teach the flow answers them in 15 seconds.
 
 **Test:** if you cannot explain it in 3 minutes without notes, you have a recognition-level familiarity, not knowledge. Schedule a second pass.
 
@@ -113,13 +113,13 @@ Lagging indicators (mock scores) tell you where you were. Leading indicators tel
 
 | Indicator | Type | Weekly target |
 |---|---|---|
-| Hours studied | Leading | 21–24 |
-| Chapters completed with quiz ≥ 80% | Leading | 1–2 |
+| Hours studied | Leading | 21-24 |
+| Chapters completed with quiz >= 80% | Leading | 1-2 |
 | Numerical drills completed | Leading | 60 |
 | Error-log entries classified | Leading | 100% of errors |
 | Flashcards reviewed | Leading | 150 |
 | Blank-page tests passed | Leading | 1 |
-| Aptitude accuracy | Leading | ≥ 80% |
+| Aptitude accuracy | Leading | >= 80% |
 | Sectional set score | Lagging | Rising trend |
 | Mock net score | Lagging | Per gate |
 
@@ -138,12 +138,12 @@ Answer in writing. Vague answers are the failure mode.
 7. What did I skip that I told myself I would do?
 8. Is my sleep at 7+ hours on at least five nights?
 9. What is the single highest-value thing for next week?
-10. Am I on schedule against `02-study-plan-32-weeks.md` — and if not, do I switch variants?
+10. Am I on schedule against `02-study-plan-32-weeks.md` - and if not, do I switch variants?
 
 ## 8. Monthly recalibration (last Sunday of the month, 45 minutes)
 
-1. Recompute the mock trend with `net = a(1.25p − 0.25)`.
-2. Compare block scores against the SC target table in `05-sc-category-playbook.md` §9.
+1. Recompute the mock trend with `net = a(1.25p - 0.25)`.
+2. Compare block scores against the SC target table in `05-sc-category-playbook.md` section 9.
 3. Rebuild two formula sheets from memory; score them honestly.
 4. Reorder the next month's weeks if a block is failing a gate twice.
 5. Check administrative items: certificate status, notification watch, portfolio applications.
@@ -155,8 +155,8 @@ Cognitive performance is a physiological variable, not a virtue.
 
 | Factor | Rule | Why |
 |---|---|---|
-| Sleep | 7–8 h, same wake time daily | Memory consolidation happens in sleep; a short night erases the day's retrieval gains |
-| Exercise | 20–30 min, 4x/week | Best-evidenced cognitive enhancer available for free |
+| Sleep | 7-8 h, same wake time daily | Memory consolidation happens in sleep; a short night erases the day's retrieval gains |
+| Exercise | 20-30 min, 4x/week | Best-evidenced cognitive enhancer available for free |
 | Screens | No scrolling before the first study block | Attention residue costs the first 30 minutes |
 | Caffeine | Not after 2 pm | Sleep quality, not sleep quantity |
 | Study timing | Hardest block at your peak (usually morning) | Numerical drills need the peak, reading does not |
@@ -174,7 +174,7 @@ Cognitive performance is a physiological variable, not a virtue.
 | **Burnout** | Dreading sessions, poor sleep, cynicism | 3-day full stop; then 5 days at half volume; keep the aptitude block only |
 | **Anxiety spiral** | Checking cutoff rumours daily | Ban aggregator sites; one official portal check per week; run one mock to restore agency |
 | **Comparison trap** | Telegram groups making you feel behind | Leave the groups. Your error log is the only benchmark that matters |
-| **Over-reading** | 6 chapters read, 0 quizzes passed | Hard rule: no new chapter until the previous quiz is ≥ 80% |
+| **Over-reading** | 6 chapters read, 0 quizzes passed | Hard rule: no new chapter until the previous quiz is >= 80% |
 | **Certificate complacency** | "I'll do it after the notification" | Do it this week; authorities are slow and the DV date is immovable |
 
 ## 11. The 6-hour weekend deep-dive
@@ -212,7 +212,7 @@ Execution is a system of small, enforced loops: 45 minutes of learning, 30 of re
 - Teach-back for every L2 mechanism; 3 minutes, no notes.
 - Drill L4 families to rung 5 (correct after a 7-day gap).
 - Track leading indicators weekly; change the method when they are green and the score is not.
-- Sleep 7–8 hours. It is part of the syllabus.
+- Sleep 7-8 hours. It is part of the syllabus.
 - Nothing new in the last 14 days.
 
 ## Chapter Quiz

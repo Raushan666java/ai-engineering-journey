@@ -1,6 +1,6 @@
 ---
 title: "15 - Project Management: The Easiest 16 Marks on the Paper"
-sidebar_label: "ch15 · Project Management"
+sidebar_label: "ch15 - Project Management"
 description: "Project lifecycle, selection methods, PERT, CPM, crashing and earned value, drilled to numerical reflex so a CSE graduate can score 13+ of the 16 marks from this chapter alone."
 ---
 

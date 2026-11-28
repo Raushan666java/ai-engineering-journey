@@ -1,10 +1,10 @@
 ---
-title: "05 — The SC Category Playbook"
-sidebar_label: "05 · SC Playbook"
+title: "05 - The SC Category Playbook"
+sidebar_label: "05 - SC Playbook"
 description: What SC status actually changes in BSNL recruitment, the own-merit rule, certificate traps that disqualify more candidates than the exam does, and score targets calibrated for category merit.
 ---
 
-# 05 — The SC Category Playbook
+# 05 - The SC Category Playbook
 
 ## Learning Objectives
 
@@ -34,7 +34,7 @@ Reservation is 15% of vacancies **as per the roster**, not 15% of a round number
 | **SET 2026** | 120 | **18** (14 Telecom + 4 Finance) | 15.0% | Matches the nominal rule |
 | **JTO 2026** | 100 | **12** | 12.0% | Below nominal; OBC-NCL was only 10, so this split is a roster artefact, not a percentage |
 
-**Practical consequence:** for 2027, assume **12–18 SC seats across both streams**, and for the Telecom stream specifically assume **roughly 10–15**. Plan for the lower end.
+**Practical consequence:** for 2027, assume **12-18 SC seats across both streams**, and for the Telecom stream specifically assume **roughly 10-15**. Plan for the lower end.
 
 ### 2.2 Backlog
 
@@ -48,9 +48,9 @@ Unfilled reserved vacancies in central government and central PSU recruitment ar
 | Layer | Number | Ratio |
 |---|---|---|
 | Total candidates who sat SET 2026 | ~14,149 | 118 : 1 overall |
-| SC share of a technical applicant pool (estimate) | ~12–14% | ~1,700–2,000 candidates |
-| **SC seats (Telecom)** | **14** | **~120–140 : 1** |
-| Candidates who actually prepared seriously | maybe 25–30% of the above | **~35–45 : 1** |
+| SC share of a technical applicant pool (estimate) | ~12-14% | ~1,700-2,000 candidates |
+| **SC seats (Telecom)** | **14** | **~120-140 : 1** |
+| Candidates who actually prepared seriously | maybe 25-30% of the above | **~35-45 : 1** |
 
 That last line is the honest one. In a 60%-and-named-branch-filtered exam, the field is thin. **You are not competing with 2,000 people; you are competing with the few hundred who studied.**
 
@@ -71,7 +71,7 @@ But look at what each score actually buys:
 | Score /200 | What it means |
 |---|---|
 | 90 | Qualified. Almost certainly not selected. |
-| 100 | Qualified. Bottom of the realistic SC band (2026 estimate was 85–100 for *qualification-adjacent* estimates; selection sits higher). |
+| 100 | Qualified. Bottom of the realistic SC band (2026 estimate was 85-100 for *qualification-adjacent* estimates; selection sits higher). |
 | **110** | Your **floor**. Competitive in a weak year or a favourable vacancy count. |
 | **120** | Your **target**. Competitive in the realistic scenario. |
 | **135** | Stretch. Safe in a difficult scenario (easy paper, fewer seats, strong field). |
@@ -86,21 +86,21 @@ Central government reservation policy includes a principle that most candidates 
 
 In practice:
 
-1. If your score clears the **unreserved** cutoff, you are placed against a UR seat — and the SC seat you would have occupied stays available for another SC candidate.
+1. If your score clears the **unreserved** cutoff, you are placed against a UR seat - and the SC seat you would have occupied stays available for another SC candidate.
 2. Your selection is therefore **more secure**, because you are no longer dependent on where you rank inside a small SC band.
 3. It also means a strong SC candidate can be selected even in a year where the SC band is unusually crowded.
 
-**Strategic implication: your real target is the UR band (105–120 on 2026-grade difficulty), not the SC band.** Chasing the UR number does two things at once: it makes you selectable under either head, and it removes the risk that a single strong competitor pushes you out of a narrow SC list.
+**Strategic implication: your real target is the UR band (105-120 on 2026-grade difficulty), not the SC band.** Chasing the UR number does two things at once: it makes you selectable under either head, and it removes the risk that a single strong competitor pushes you out of a narrow SC list.
 
 (Authority: DoPT OM No. 36011/1/98-Estt.(Res), 1 July 1998, and subsequent consolidation. Verify the current version applies to BSNL's 2027 notification.)
 
-## 5. The certificate — the biggest disqualification risk in the whole process
+## 5. The certificate - the biggest disqualification risk in the whole process
 
 More eligible SC candidates lose BSNL selections to paperwork than to the exam. There is no appeal that fixes a certificate after the verification date.
 
 ### 5.1 The Central List trap
 
-For **central government and central PSU** recruitment, your caste must appear in the **Central List of Scheduled Castes for the State/UT of your origin** — not merely in a State List.
+For **central government and central PSU** recruitment, your caste must appear in the **Central List of Scheduled Castes for the State/UT of your origin** - not merely in a State List.
 
 There are castes that are SC in a state list but absent from the central list for that state, and vice versa. If yours is one, your certificate is worthless for BSNL no matter how valid it is for state jobs. **Check the central list before you apply, not after you are selected.**
 
@@ -124,7 +124,7 @@ There are castes that are SC in a state list but absent from the central list fo
 | OBC-NCL | Typically annual (not applicable to you) |
 | EWS | Annual (not applicable to you) |
 
-Because SC certificates do not expire, an old one is *usually* acceptable — but an old one issued **before your name was spelled the way it appears on your degree** is a problem. If in doubt, get a fresh one.
+Because SC certificates do not expire, an old one is *usually* acceptable - but an old one issued **before your name was spelled the way it appears on your degree** is a problem. If in doubt, get a fresh one.
 
 ### 5.4 Your document file (build it in week 1, not week 40)
 
@@ -152,7 +152,7 @@ Neither exam limits the number of attempts. You are age-bound, not attempt-bound
 
 - **2027 is not your only shot.** You have roughly nine years of eligibility.
 - That is a reason to build a **durable** preparation (concepts, not memorised papers), not a reason to relax. The 2028 and 2029 cycles will reward the same syllabus.
-- It is also a reason to run parallel tracks (§11) instead of staking everything on 12–18 seats in a single year.
+- It is also a reason to run parallel tracks (section 11) instead of staking everything on 12-18 seats in a single year.
 
 ## 7. Document verification: the stage-by-stage failure map
 
@@ -160,7 +160,7 @@ Neither exam limits the number of attempts. You are age-bound, not attempt-bound
 |---|---|---|
 | Application scrutiny | Category, branch, percentage, age | Wrong branch code; percentage below 60 (SET); category left blank |
 | CBT | Sectional floors | Part I below 14 (SC) |
-| Merit list | Category-wise rank | — |
+| Merit list | Category-wise rank | - |
 | Document verification | Originals vs application data | Certificate not central format; name mismatch; degree not full-time regular |
 | Medical | Fitness standards | Undisclosed condition that fails the standard |
 | Appointment | Police verification, character | Prior record |
@@ -173,10 +173,10 @@ Neither exam limits the number of attempts. You are age-bound, not attempt-bound
 | Name spelling mismatch across documents | Medium | **Fatal** | Align all documents now |
 | Treating 90 as the target | **High** | Severe (missed year) | Target 120, floor 110 |
 | Not knowing the own-merit rule | High | Moderate (unnecessary risk) | Aim at the UR band |
-| Assuming SC seats scale with 15% | High | Moderate (bad planning) | Read the notification table; plan for 12–18 |
+| Assuming SC seats scale with 15% | High | Moderate (bad planning) | Read the notification table; plan for 12-18 |
 | Missing the fee-exemption step | Low | Low (money) | Check the notification; keep the receipt either way |
 | Overlapping PwBD claim without certificate | Low | Severe | Only claim what you can document |
-| Single-track preparation | Medium | Severe | Run the parallel portfolio in §11 |
+| Single-track preparation | Medium | Severe | Run the parallel portfolio in section 11 |
 
 ## 9. Score targets, block by block, for an SC candidate
 
@@ -184,7 +184,7 @@ Target 120. This is the block-level budget that produces it.
 
 | Block | Marks | Minimum | Target | Stretch |
 |---|---|---|---|---|
-| Part I — Aptitude | 40 | 24 | **32** | 36 |
+| Part I - Aptitude | 40 | 24 | **32** | 36 |
 | IP / Data Networks | 24 | 16 | **22** | 24 |
 | Emerging Technologies | 24 | 14 | **20** | 23 |
 | Wireline | 24 | 12 | **17** | 20 |
@@ -192,7 +192,7 @@ Target 120. This is the block-level budget that produces it.
 | Basic Telecom | 24 | 11 | **15** | 19 |
 | Wireless | 24 | 10 | **14** | 18 |
 | Project Management | 16 | 9 | **13** | 15 |
-| **Total** | **200** | **108** | **149 attempted-value** | — |
+| **Total** | **200** | **108** | **149 attempted-value** | - |
 
 Note the last row: the targets sum above 120 deliberately. You will not hit every block target on exam day, and the buffer is what protects a 120. Plan for 149, score 120, sleep well.
 
@@ -222,10 +222,10 @@ Note the last row: the targets sum above 120 deliberately. You will not hit ever
 
 | Time | Action |
 |---|---|
-| T−150 min | Wake, light breakfast, no new material |
-| T−90 | Travel buffer; read the formula sheet once |
-| T−45 | At centre; documents in hand |
-| T−15 | Seated; system check; write nothing yet |
+| T-150 min | Wake, light breakfast, no new material |
+| T-90 | Travel buffer; read the formula sheet once |
+| T-45 | At centre; documents in hand |
+| T-15 | Seated; system check; write nothing yet |
 | T+0 | Read instructions; note the question count and marking |
 | T+2 | Start Part I (aptitude), 36 s per question |
 | T+26 | Start Part II pass 1, harvest the sure shots |
@@ -239,9 +239,9 @@ Note the last row: the targets sum above 120 deliberately. You will not hit ever
 - If shortlisted: freeze all documents in one folder the same day; start the medical checklist.
 - If not: the error log and the mock tracker already tell you which block cost you the year. Start the next cycle from that block, not from chapter one.
 
-## 11. The parallel portfolio (because 12–18 seats is a small number)
+## 11. The parallel portfolio (because 12-18 seats is a small number)
 
-BSNL should be the **primary** track, not the only one. All of the following recruit engineers and follow central reservation policy — verify each notification's branch list and dates:
+BSNL should be the **primary** track, not the only one. All of the following recruit engineers and follow central reservation policy - verify each notification's branch list and dates:
 
 | Track | Fit for CSE | Notes |
 |---|---|---|
@@ -253,7 +253,7 @@ BSNL should be the **primary** track, not the only one. All of the following rec
 | GATE CSE 2028 | Strong | Keeps MTech/IIT and GATE-based PSU doors open |
 | State PSU / state govt IT posts | Medium | State SC lists apply here, not the central list |
 
-**Portfolio rule:** one primary track gets 80% of your hours. The rest are opportunistic — apply, don't study separately.
+**Portfolio rule:** one primary track gets 80% of your hours. The rest are opportunistic - apply, don't study separately.
 
 ## 12. Anti-patterns
 
@@ -271,10 +271,10 @@ SC status buys you a five-year age runway, a lower qualifying floor, 15%-ish of 
 
 ## Practical Takeaways
 
-- Target **120/200**, floor 110, stretch 135 — never plan against 90.
+- Target **120/200**, floor 110, stretch 135 - never plan against 90.
 - Verify your caste against the **Central List** for your state this week.
 - Align name, father's name and DOB across every document now.
-- Assume **12–18 SC seats**; read the 2027 vacancy table when it appears.
+- Assume **12-18 SC seats**; read the 2027 vacancy table when it appears.
 - Aim at the UR band to benefit from the own-merit adjustment.
 - Run a portfolio: BSNL primary, everything else opportunistic.
 - Part I is a disqualification risk, not a formality.
@@ -294,7 +294,7 @@ SC status buys you a five-year age runway, a lower qualifying floor, 15%-ish of 
 **Answer: (c).**
 
 **Q4.** With 120 vacancies and a nominal 15% SC reservation, the realistic SC seat count for planning is:
-(a) exactly 18 every year (b) 12–18, read from the notification (c) 30 (d) 6
+(a) exactly 18 every year (b) 12-18, read from the notification (c) 30 (d) 6
 **Answer: (b).** The 2026 JTO cycle gave 12/100.
 
 **Q5.** The largest procedural risk to an otherwise eligible SC candidate is:
@@ -304,7 +304,7 @@ SC status buys you a five-year age runway, a lower qualifying floor, 15%-ish of 
 ## Exercises
 
 1. Look up the Central List of Scheduled Castes for your state and confirm your caste appears with the exact spelling on your certificate. Write down the source and date.
-2. Lay out every document in §5.4 and list any field that does not match the class 10 certificate. Fix at least one this week.
-3. Using §9, write your own block-level target table and compute the total. If it is below 130, raise the weakest three blocks.
+2. Lay out every document in section 5.4 and list any field that does not match the class 10 certificate. Fix at least one this week.
+3. Using section 9, write your own block-level target table and compute the total. If it is below 130, raise the weakest three blocks.
 4. Read the 2026 SET vacancy table and identify how many SC seats were in the Telecom stream. Now find the equivalent table in the JTO notification and explain why the percentage differs.
-5. Choose two parallel tracks from §11 and note their notification windows. Put both in your calendar.
+5. Choose two parallel tracks from section 11 and note their notification windows. Put both in your calendar.

@@ -1,10 +1,10 @@
 ---
-title: "04 — Mock Blueprint and Score Tracker"
-sidebar_label: "04 · Mock Blueprint"
+title: "04 - Mock Blueprint and Score Tracker"
+sidebar_label: "04 - Mock Blueprint"
 description: How to build realistic full-length mocks from the official weights, and the tracker that turns mock scores into next week's study plan.
 ---
 
-# 04 — Mock Blueprint and Score Tracker
+# 04 - Mock Blueprint and Score Tracker
 
 ## Why a blueprint
 
@@ -18,7 +18,7 @@ Build every full mock to this table. It mirrors the official weights.
 
 | Block | Official weight | Questions in a 200-Q mock |
 |---|---|---|
-| Part I — Aptitude | 20% | **40** |
+| Part I - Aptitude | 20% | **40** |
 | IP / Data Networks | 15% | **24** |
 | Emerging Technologies | 15% | **24** |
 | Wireline Technologies | 15% | **24** |
@@ -32,12 +32,12 @@ Build every full mock to this table. It mirrors the official weights.
 
 | Level | Share | Where to source it |
 |---|---|---|
-| L1 recall | 35% (≈8 per 24-Q block) | Chapter quizzes and terminology sections |
-| L2 understanding | 30% (≈7) | Chapter "Theory" review questions |
-| L3 application | 25% (≈6) | Comparison tables turned into "which of these" items |
-| L4 numerical | 10% (≈3) | Chapter worked examples with changed numbers |
+| L1 recall | 35% (about 8 per 24-Q block) | Chapter quizzes and terminology sections |
+| L2 understanding | 30% (about 7) | Chapter "Theory" review questions |
+| L3 application | 25% (about 6) | Comparison tables turned into "which of these" items |
+| L4 numerical | 10% (about 3) | Chapter worked examples with changed numbers |
 
-If your mock has no L4 numericals, it is easier than the real paper and will flatter you by 10–15 marks.
+If your mock has no L4 numericals, it is easier than the real paper and will flatter you by 10-15 marks.
 
 ### 1.2 Sectional mocks (for gates G1 and G2)
 
@@ -87,12 +87,12 @@ You do not need 40 mocks. You need five well-diagnosed ones plus volume practice
 | 4 | Week 30 | Gate G4 | 125+ |
 | 5 | Week 32 | Rhythm check, exam-morning timing | 120+, calm |
 
-Between mocks, volume comes from **sectional** sets of 20–40 questions, not full papers. Full papers are diagnostics; sectionals are training.
+Between mocks, volume comes from **sectional** sets of 20-40 questions, not full papers. Full papers are diagnostics; sectionals are training.
 
 ## 4. Marking discipline
 
 1. Mark immediately, before you look at any explanation.
-2. Mark **honestly** — a question you "would have got right if you had read it properly" is wrong. It counts as wrong, and its cause is "misread", not "knowledge".
+2. Mark **honestly** - a question you "would have got right if you had read it properly" is wrong. It counts as wrong, and its cause is "misread", not "knowledge".
 3. For every wrong answer, write the cause **before** reading the solution. Your first instinct about why you got it wrong is usually the true one.
 4. Re-solve wrong questions 48 hours later, closed book. If still wrong, it becomes a flashcard (L1) or a formula-sheet line (L4).
 5. Never re-take a mock you have already seen. It measures memory of the mock, not the syllabus.
@@ -103,10 +103,10 @@ Between mocks, volume comes from **sectional** sets of 20–40 questions, not fu
 |---|---|
 | Time | Start at the same clock time as the real exam (morning shift) |
 | Duration | 180 minutes continuous, no pause, no phone |
-| Screen | If your mocks are on paper, do at least two on a screen — the real exam is a CBT |
+| Screen | If your mocks are on paper, do at least two on a screen - the real exam is a CBT |
 | Calculator | Match the exam's on-screen calculator only |
 | Environment | Sit upright at a desk; no music; no snacks |
-| Fatigue | Do not "warm up" with 20 easy questions first — start cold, like the real thing |
+| Fatigue | Do not "warm up" with 20 easy questions first - start cold, like the real thing |
 
 ## Summary
 

@@ -21,22 +21,22 @@ After this chapter you will be able to:
 
 ## Introduction
 
-Project Management is **10% of the paper: 16 of 200 marks**. It is also, by a wide margin, the most arithmetic-dense block per page of syllabus.
+Project Management is **10% of the paper: 16 of 200 marks**, and it is the most arithmetic-dense block per page of syllabus.
 
-That combination is the opportunity. Every other block can ask you something you have never read. This one cannot. The question families are finite, the formulas are short, and the answers are numbers you can verify on paper. A candidate who has never opened a PMBOK can still reach 13 or 14 out of 16 in about twelve hours of work, because the paper asks:
+That combination is the opportunity. Every other block can ask you something you have never read. This one cannot. The question families are finite, the formulas are short, and the answers are numbers you can verify on paper. A candidate who has never opened a PMBOK can still reach 13 or 14 out of 16 in about twelve hours, because the paper asks:
 
 - "What is the expected time of this activity?" - one line of arithmetic.
 - "What is the total float of activity D?" - two passes over a small network.
 - "Which activity should be crashed first?" - one division.
 - "What is the CPI?" - one division.
 
-Compare that with Wireless Technologies, where 24 marks sit behind three months of unfamiliar vocabulary. This is the block where **preparation converts to marks at the highest rate in the entire paper**. For a CSE graduate with no management background, it is the best return on study time available.
+Compare that with Wireless Technologies, where 24 marks sit behind three months of unfamiliar vocabulary. This is the block where **preparation converts to marks at the highest rate in the paper**, and for a CSE graduate with no management background it is the best return on study time available.
 
-Two cautions. First, the block is not only numerical: roughly half is definitional recall (lifecycle phases, chart selection, risk response names, RACI letters). Those are cheap marks and the ones candidates drop, because they read the numericals and skip the vocabulary. Second, the numericals punish half-learned method more than any other topic. A subnetting question with a wrong mask still leaves four plausible options. A CPM question with a wrong backward pass gives a confident wrong number. You must be able to run both passes **without looking at a worked example**. That is the standard this chapter trains to.
+Two cautions. Half the block is definitional recall (lifecycle phases, chart selection, risk response names, RACI letters) - cheap marks, and the ones candidates drop because they read the numericals and skip the vocabulary. And the numericals punish half-learned method harder than any other topic: a subnetting question with a wrong mask still leaves four plausible options, but a CPM question with a wrong backward pass gives a confident wrong number. You must be able to run both passes **without looking at a worked example**. That is the standard this chapter trains to.
 
 ## Prerequisites
 
-- Arithmetic: percentages, ratios, simple and compound interest, and the idea of discounting a future cash flow.
+- Percentages, ratios, simple and compound interest, and the idea of discounting a future cash flow.
 - Ability to read a table and a small directed graph.
 - No prior management study assumed; every term the paper uses is defined here.
 - No calculator in the hall. Every example below uses numbers that stay small. If a calculation needs more than two lines of long division, you have missed a shortcut.
@@ -45,7 +45,7 @@ Two cautions. First, the block is not only numerical: roughly half is definition
 
 | Term | Meaning |
 |---|---|
-| Project | Temporary endeavour with a defined start and end, creating a unique product, service or result |
+| Project | Temporary endeavour with a defined start and end, creating a unique result |
 | Operation | Ongoing, repetitive work that sustains the business |
 | Deliverable | Any measurable, verifiable outcome, document or product |
 | WBS | Work Breakdown Structure: deliverable-oriented hierarchy decomposing scope into work packages |
@@ -57,7 +57,6 @@ Two cautions. First, the block is not only numerical: roughly half is definition
 | Total float | Time an activity can slip without delaying the project finish |
 | Free float | Time an activity can slip without delaying any successor's earliest start |
 | Cost slope | Extra cost per unit of time saved by crashing |
-| Crashing | Shortening duration by adding resources, at extra cost |
 | PV / EV / AC | Planned Value, Earned Value, Actual Cost |
 | CPI / SPI | Cost Performance Index, Schedule Performance Index |
 | BAC / EAC | Budget at Completion, Estimate at Completion |
@@ -67,15 +66,14 @@ Two cautions. First, the block is not only numerical: roughly half is definition
 
 ### 1. Project versus operations
 
-A project has three defining properties: it is **temporary** (it ends), it produces a **unique** output, and it is progressively elaborated. Operations are the opposite on all three.
+A project is **temporary** (it ends), produces a **unique** output, and is progressively elaborated. Operations are the opposite on all three.
 
 | Dimension | Project | Operations |
 |---|---|---|
 | Duration | Temporary, defined end | Ongoing, no end date |
 | Output | Unique product or service | Repetitive, standardised |
 | Success | Scope, time, cost, quality targets met | Efficiency, throughput, cost per unit |
-| Team | Cross-functional, formed then disbanded | Stable, functional |
-| Change | Expected and managed | Minimised |
+| Team | Cross-functional, then disbanded | Stable, functional |
 | Example | Rolling out FTTH in one district | Running the existing broadband helpdesk |
 
 Typical phrasing: "commissioning a new 5G site" is a project; "operating the site's power backup routine" is an operation.
@@ -94,8 +92,8 @@ graph LR
     D --> E
 ```
 
-- **Initiation** - authorise the project. Outputs: project charter, stakeholder register. The charter names the project manager and grants authority.
-- **Planning** - produce the baselines: scope (WBS), schedule, cost. Planning is iterative, not a one-time gate.
+- **Initiation** - authorise the project. Outputs: project charter (which names the manager and grants authority), stakeholder register.
+- **Planning** - produce the baselines: scope (WBS), schedule, cost. Iterative, not a one-time gate.
 - **Execution** - direct and manage the work, acquire and develop the team, manage communications.
 - **Monitoring and Control** - measure against baselines, run integrated change control, approve or reject changes.
 - **Closure** - verify deliverables, obtain formal acceptance, archive, release resources, record lessons learned.
@@ -106,7 +104,7 @@ graph LR
 
 Selection answers one question: with limited money, which candidate projects do we fund? The paper tests arithmetic, not judgement.
 
-**3.1 Payback period.** Time for cumulative cash inflow to recover the outlay. For uneven flows: count full years, then divide the unrecovered amount by the next year's flow.
+**3.1 Payback period.** Time for cumulative inflow to recover the outlay. For uneven flows: count full years, then divide the unrecovered amount by the next year's flow.
 
 **3.2 Net Present Value.** Discount every future flow at the cost of capital, subtract the outlay.
 
@@ -126,11 +124,11 @@ where r1 gives NPV1 > 0 and r2 gives NPV2 < 0.
 
 **3.4 ROI and accounting rate of return.** ROI = (total benefit - total cost)/total cost x 100. Accounting rate of return = average annual profit / average investment x 100. Neither discounts, so both are inferior to NPV for decisions, but both get asked.
 
-**3.5 Profitability index (benefit-cost ratio).** PI = PV of inflows / outlay. Accept if PI > 1. Useful under capital rationing because it ranks by value per rupee invested.
+**3.5 Profitability index.** PI = PV of inflows / outlay. Accept if PI > 1. Useful under capital rationing because it ranks by value per rupee invested.
 
 **3.6 Scoring models.** Non-financial criteria (strategic fit, regulatory compulsion, technical risk, manpower) are scored and combined. **Unweighted**: sum raw scores. **Weighted**: multiply each score by its criterion weight and sum; weights must total 1.0. **Forced ranking / paired comparison**: rank projects against each other when criteria resist scoring.
 
-**3.7 NPV versus IRR conflict.** When projects differ in size or cash-flow timing, the two can rank differently. NPV is theoretically correct: it measures absolute value added and assumes reinvestment at the cost of capital, whereas IRR assumes reinvestment at the IRR itself. A small project can show a spectacular IRR and a tiny NPV; if you can fund only one and the aim is value, fund the large-NPV project.
+**3.7 NPV versus IRR conflict.** When projects differ in size or cash-flow timing the two can rank differently. NPV is theoretically correct: it measures absolute value added and assumes reinvestment at the cost of capital, whereas IRR assumes reinvestment at the IRR itself. A small project can show a spectacular IRR and a tiny NPV; if you can fund only one and the aim is value, fund the large-NPV project.
 
 ### 4. Work Breakdown Structure
 
@@ -140,8 +138,7 @@ A WBS is a **deliverable-oriented** hierarchical decomposition of total scope. R
 - Decompose to **work packages** one person can own and that can be estimated.
 - **8-80 rule** (heuristic): a work package should take more than 8 and less than 80 hours.
 - A WBS is **not** an org chart and **not** a schedule: it answers "what", not "who" or "when".
-- The **WBS dictionary** defines each element: scope, acceptance criteria, owner, cost.
-- Stop decomposing when you can estimate reliably; over-decomposition adds administrative cost.
+- The **WBS dictionary** defines each element: scope, acceptance criteria, owner, cost. Stop decomposing when you can estimate reliably; over-decomposition adds administrative cost.
 
 The **OBS** (organisational breakdown structure) intersected with the WBS gives the responsibility matrix.
 
@@ -184,17 +181,7 @@ graph LR
     N5 -->|"H, 3"| N6
 ```
 
-Paths and lengths for this network, used throughout the chapter:
-
-| Path | Length (weeks) |
-|---|---|
-| 1-2-4-6 (A, C, G) | 4 + 3 + 4 = 11 |
-| 1-2-4-5-6 (A, C, F, H) | 4 + 3 + 2 + 3 = 12 |
-| 1-2-5-6 (A, E, H) | 4 + 6 + 3 = **13** |
-| 1-3-4-6 (B, D, G) | 2 + 5 + 4 = 11 |
-| 1-3-4-5-6 (B, D, F, H) | 2 + 5 + 2 + 3 = 12 |
-
-The **longest** path, 13 weeks, is critical: 1-2-5-6, activities A, E, H.
+Path lengths in this network, used throughout the chapter: 1-2-4-6 = 11, 1-2-4-5-6 = 12, 1-2-5-6 = **13**, 1-3-4-6 = 11, 1-3-4-5-6 = 12. The **longest** path is critical: 1-2-5-6, activities A, E, H.
 
 ### 8. PERT three-point estimation (L4 numerical)
 
@@ -226,7 +213,6 @@ Read the normal table: Z = 0 gives 0.50, 1.0 gives 0.8413, 1.28 gives 0.90, 1.64
 | Time estimates | Three (O, M, P), probabilistic | One, deterministic |
 | Orientation | Event-oriented, AOA tradition | Activity-oriented |
 | Focus | Probability of meeting a date | Time-cost trade-off, crashing |
-| Cost | Not modelled | Explicit normal and crash costs |
 | Use | R&D, first-of-a-kind work | Repetitive, well-understood work |
 
 ### 9. CPM: forward pass, backward pass, float (L4 numerical)
@@ -291,30 +277,24 @@ Minimum possible duration is reached when every critical activity is at its cras
 
 **Identification tools**: brainstorming, Delphi (anonymous expert rounds reaching consensus without confrontation), interviews, checklists, SWOT, assumption analysis, cause-and-effect diagrams.
 
-**Qualitative analysis** ranks risks for attention using a probability-impact matrix (risk score = probability x impact), giving high/medium/low. Fast, subjective, applied to every risk.
-
-**Quantitative analysis** puts numbers on the important ones: EMV = probability x impact (negative for a threat), decision trees, Monte Carlo simulation, sensitivity analysis (tornado diagram).
+**Qualitative analysis** ranks risks for attention using a probability-impact matrix (risk score = probability x impact). Fast, subjective, applied to every risk. **Quantitative analysis** puts numbers on the important ones: EMV = probability x impact, decision trees, Monte Carlo simulation, sensitivity analysis (tornado diagram).
 
 **Negative risk (threat) responses** - learn these four names exactly:
 
 | Strategy | Meaning | Example |
 |---|---|---|
 | Avoid | Change the plan so the risk cannot occur | Use a proven vendor, not the unproven one |
-| Transfer | Shift the financial consequence to a third party | Insurance, fixed-price contract, performance bond |
+| Transfer | Shift the financial consequence to a third party | Insurance, fixed-price contract, bond |
 | Mitigate | Reduce probability or impact | Prototype first, add redundancy, more testing |
 | Accept | Acknowledge and hold a contingency | Active: reserve time or money. Passive: do nothing until it happens |
 
 **Positive risk (opportunity) responses**: exploit, share, enhance, accept.
 
-**Reserves**: the **contingency reserve** covers known unknowns (identified risks) and sits under the project manager's control, inside the cost baseline. The **management reserve** covers unknown unknowns, needs sponsor approval, and sits outside the baseline.
+**Reserves**: the **contingency reserve** covers known unknowns (identified risks), sits under the project manager's control and inside the cost baseline. The **management reserve** covers unknown unknowns, needs sponsor approval, and sits outside the baseline.
 
 ### 13. Cost control and earned value (L4 numerical)
 
-Earned value compares three numbers at a status date:
-
-- **PV** (Planned Value, BCWS) - budgeted cost of work scheduled by now.
-- **EV** (Earned Value, BCWP) - budgeted cost of work actually completed.
-- **AC** (Actual Cost, ACWP) - money actually spent.
+Earned value compares three numbers at a status date: **PV** (Planned Value, BCWS) is the budgeted cost of work scheduled by now; **EV** (Earned Value, BCWP) is the budgeted cost of work actually completed; **AC** (Actual Cost, ACWP) is money actually spent.
 
 ```
 CV = EV - AC        positive = under budget
@@ -333,7 +313,7 @@ TCPI = (BAC - EV) / (BAC - AC)        efficiency needed to finish on budget
 
 ### 14. Quality and communication management (awareness)
 
-**Quality**: **assurance** is process-oriented and preventive (are we working the right way?); **control** is product-oriented and detective (does the output meet specification?). Cost of quality = prevention + appraisal + internal failure + external failure, and external failure is the most expensive because it carries reputation and warranty. Tools: cause-and-effect (Ishikawa/fishbone), Pareto (the vital few, 80/20), check sheet, histogram, control chart (with upper and lower control limits), scatter diagram, flowchart. Improvement runs on **PDCA**: Plan, Do, Check, Act.
+**Quality**: **assurance** is process-oriented and preventive (are we working the right way?); **control** is product-oriented and detective (does the output meet specification?). Cost of quality = prevention + appraisal + internal failure + external failure, and external failure is the most expensive because it carries reputation and warranty. Tools: cause-and-effect (Ishikawa/fishbone), Pareto (the vital few, 80/20), check sheet, histogram, control chart (upper and lower control limits), scatter diagram, flowchart. Improvement runs on **PDCA**: Plan, Do, Check, Act.
 
 **Communication**: the communication management plan defines who needs what, in what format, how often, through which channel. The sender-receiver model is encode -> medium -> decode -> feedback, with noise. **Channels = n(n-1)/2**, so 10 stakeholders give 45 channels - the standard argument for small teams and structured communication.
 
@@ -341,7 +321,7 @@ TCPI = (BAC - EV) / (BAC - AC)        efficiency needed to finish on budget
 
 A BSNL district plans FTTH for 4,000 homes across three towns.
 
-| ID | Work package | Predecessor | Normal weeks | Budget (Rs lakh) |
+| ID | Work package | Pred. | Normal weeks | Budget (Rs lakh) |
 |---|---|---|---|---|
 | A | Survey, route design, BoQ | - | 6 | 20 |
 | B | Procurement: OLT, ONT, splitters, fibre | A | 10 | 180 |
@@ -351,13 +331,11 @@ A BSNL district plans FTTH for 4,000 homes across three towns.
 | F | ONT installation and activation (4,000 homes) | C, E | 8 | 60 |
 | G | Acceptance testing, as-built docs, handover | F | 2 | 15 |
 
-BAC = 20 + 180 + 40 + 120 + 25 + 60 + 15 = **Rs 460 lakh**.
+BAC = 20 + 180 + 40 + 120 + 25 + 60 + 15 = **Rs 460 lakh**. Paths: A-B-D-E-F-G = **41 weeks** (critical); A-B-C-F-G = 30 weeks, so C carries **11 weeks of total float**.
 
-Paths: A-B-D-E-F-G = 6+10+12+3+8+2 = **41 weeks** (critical). A-B-C-F-G = 6+10+4+8+2 = 30 weeks, so C carries **11 weeks of total float**.
+Crash options: a second splicing crew shortens E from 3 to 1 week for Rs 6 lakh (slope Rs 3 lakh/week); an extra trenching contractor shortens D from 12 to 10 weeks for Rs 8 lakh (slope Rs 4 lakh/week). To recover 3 weeks: crash E twice (Rs 6 lakh), then D once (Rs 4 lakh) - total **Rs 10 lakh**, new duration 38 weeks.
 
-Crash options: a second splicing crew shortens E from 3 to 1 week for Rs 6 lakh (slope Rs 3 lakh/week); an extra trenching contractor shortens D from 12 to 10 weeks for Rs 8 lakh (slope Rs 4 lakh/week). To recover 3 weeks: crash E twice (Rs 6 lakh), then D once (Rs 4 lakh) - total **Rs 10 lakh**, new duration 38 weeks. Crashing D first would cost more for the same result.
-
-At week 20: PV = Rs 200 lakh, EV = Rs 180 lakh, AC = Rs 210 lakh. So CPI = 180/210 = 0.857, SPI = 180/200 = 0.90, CV = -30 lakh, SV = -20 lakh, and EAC = 460/0.857 = **Rs 537 lakh**, a Rs 77 lakh overrun. Recovery means compression on the critical path plus a scope review of the ONT count.
+At week 20: PV = Rs 200 lakh, EV = Rs 180 lakh, AC = Rs 210 lakh. So CPI = 0.857, SPI = 0.90, CV = -30 lakh, SV = -20 lakh, and EAC = 460/0.857 = **Rs 537 lakh**, a Rs 77 lakh overrun. Recovery means compression on the critical path plus a scope review of the ONT count.
 
 ## Worked Examples
 
@@ -421,60 +399,28 @@ Probability of finishing within 28 weeks: Z = (28 - 25)/2.79 = 1.08, giving abou
 
 The trap: adding standard deviations (1.67 + 1.00 + 2.00 = 4.67) instead of variances. That overstates sigma and understates the probability.
 
-### Example 6 - CPM forward pass, backward pass, float (L4 numerical)
+### Example 6 - CPM: both passes, float, critical path (L4 numerical)
 
-Using the network in section 7 (duration 13 weeks).
+Using the network in section 7. Forward pass left to right; backward pass right to left from LF(H) = 13.
 
-**Forward pass**
+| Act | Dur | ES | EF | LS | LF | TF | FF |
+|---|---|---|---|---|---|---|---|
+| A | 4 | 0 | 4 | 0 | 4 | 0 | 0 |
+| B | 2 | 0 | 2 | 1 | 3 | 1 | 0 |
+| C | 3 | 4 | 7 | 5 | 8 | 1 | 0 |
+| D | 5 | 2 | 7 | 3 | 8 | 1 | 0 |
+| E | 6 | 4 | 10 | 4 | 10 | 0 | 0 |
+| F | 2 | 7 | 9 | 8 | 10 | 1 | 1 |
+| G | 4 | 7 | 11 | 9 | 13 | 2 | 2 |
+| H | 3 | 10 | 13 | 10 | 13 | 0 | 0 |
 
-| Activity | Pred. | ES | Dur | EF |
-|---|---|---|---|---|
-| A | - | 0 | 4 | 4 |
-| B | - | 0 | 2 | 2 |
-| C | A | 4 | 3 | 7 |
-| D | B | 2 | 5 | 7 |
-| E | A | 4 | 6 | 10 |
-| F | C, D | 7 | 2 | 9 |
-| G | C, D | 7 | 4 | 11 |
-| H | E, F | 10 | 3 | 13 |
+Worked fragments: ES(F) = max(EF of C, EF of D) = max(7, 7) = 7. LF(D) = min(LS of F, LS of G) = min(8, 9) = 8. TF(B) = 1 - 0 = 1, FF(B) = ES(D) - EF(B) = 2 - 2 = 0.
 
-**Backward pass** (start LF(H) = 13)
+**Critical path: A-E-H, 13 weeks** (the three zero-TF activities). Read the B row: TF = 1 but FF = 0. B can slip a week without delaying the project, but any slip immediately delays D, because D's earliest start equals B's earliest finish. That is the distinction the paper tests.
 
-| Activity | Succ. | LF | Dur | LS |
-|---|---|---|---|---|
-| H | - | 13 | 3 | 10 |
-| G | - | 13 | 4 | 9 |
-| F | H | 10 | 2 | 8 |
-| E | H | 10 | 6 | 4 |
-| D | F, G | min(8, 9) = 8 | 5 | 3 |
-| C | F, G | 8 | 3 | 5 |
-| B | D | 3 | 2 | 1 |
-| A | C, E | min(5, 4) = 4 | 4 | 0 |
+Now delay D by 2 weeks. D has TF = 1, so the first week is absorbed; the second pushes the path 1-3-4-5-6 to 2 + 7 + 2 + 3 = 14, longer than A-E-H at 13. **New duration 14 weeks, critical path B-D-F-H.** A delay on a non-critical activity can create a new critical path, which is why the network is recomputed, never patched.
 
-**Float table**
-
-| Activity | ES | EF | LS | LF | TF | FF |
-|---|---|---|---|---|---|---|
-| A | 0 | 4 | 0 | 4 | 0 | 0 |
-| B | 0 | 2 | 1 | 3 | 1 | 0 |
-| C | 4 | 7 | 5 | 8 | 1 | 0 |
-| D | 2 | 7 | 3 | 8 | 1 | 0 |
-| E | 4 | 10 | 4 | 10 | 0 | 0 |
-| F | 7 | 9 | 8 | 10 | 1 | 1 |
-| G | 7 | 11 | 9 | 13 | 2 | 2 |
-| H | 10 | 13 | 10 | 13 | 0 | 0 |
-
-**Critical path: A-E-H, 13 weeks** (the three zero-TF activities).
-
-Read the B row: TF = 1 but FF = 0. B can slip a week without delaying the project, but any slip immediately delays D, because D's earliest start equals B's earliest finish. That is the distinction the paper tests.
-
-### Example 7 - Effect of a delay (L4 numerical)
-
-Activity D is delayed by 2 weeks. D has TF = 1, so the first week is absorbed. The second pushes the path 1-3-4-5-6 to 2 + 7 + 2 + 3 = 14, longer than A-E-H at 13.
-
-**New duration 14 weeks; the critical path shifts to B-D-F-H.** A delay on a non-critical activity can create a new critical path, which is why the network must be recomputed, not patched.
-
-### Example 8 - Crashing with cost slope (L4 numerical)
+### Example 7 - Crashing with cost slope (L4 numerical)
 
 | Activity | Normal | Crash | Normal cost (Rs '000) | Crash cost (Rs '000) | Slope (Rs '000/wk) |
 |---|---|---|---|---|---|
@@ -496,7 +442,7 @@ Normal: paths 1-2-4 = 9, 1-2-3-4 = 7, 1-3-4 = 5. **Critical path A-D, 9 weeks.**
 
 With a penalty of Rs 4 thousand per week, all three crashes pay, because each unit costs at most Rs 3 thousand. With a penalty of Rs 2.5 thousand per week, only the first crash (slope 2.0) pays.
 
-### Example 9 - Earned value (L4 numerical)
+### Example 8 - Earned value (L4 numerical)
 
 BAC = Rs 60 lakh. At the status date PV = 40, EV = 36, AC = 42 (all Rs lakh).
 
@@ -513,7 +459,7 @@ TCPI = (60 - 36) / (60 - 42) = 24 / 18 = 1.33
 
 Interpretation: to finish within the original budget the team must now deliver at **133%** of budgeted efficiency, which is unlikely. Forecast final cost Rs 70 lakh, an overrun of Rs 10 lakh. Had the variance been judged atypical, EAC = 42 + (60 - 36) = Rs 66 lakh - always state which formula you used.
 
-### Example 10 - FTTH district rollout (L4 numerical, composite)
+### Example 9 - FTTH district rollout (L4 numerical, composite)
 
 From section 15: BAC = Rs 460 lakh, critical path 41 weeks, C has TF = 11 weeks.
 
@@ -550,21 +496,20 @@ From section 15: BAC = Rs 460 lakh, critical path 41 weeks, C has TF = 11 weeks.
 | SPI | EV / PV | > 1 good |
 | EAC (typical) | BAC / CPI | Most common in exams |
 | EAC (atypical) | AC + (BAC - EV) | Variance will not recur |
-| ETC | EAC - AC | Remaining cost |
-| VAC | BAC - EAC | Negative = overrun |
+| ETC / VAC | EAC - AC; BAC - EAC | Remaining cost; overrun |
 | TCPI | (BAC - EV)/(BAC - AC) | > 1 means harder than planned |
 | Communication channels | n(n - 1)/2 | n = number of stakeholders |
 
 ## Exam Traps and Common Mistakes
 
-1. **Payback is not discounted.** If a solution discounts the flows, it is computing discounted payback, a different method.
+1. **Payback is not discounted.** If a solution discounts the flows it is computing discounted payback, a different method.
 2. **NPV and IRR can disagree.** "X has the higher IRR but Y has the higher NPV" means Y for value maximisation. Do not default to IRR because it looks more impressive.
 3. **Adding standard deviations on a PERT path.** Variances add; sigmas do not. This single error flips the probability answer by 10 to 20 points.
 4. **Calling the shortest path critical.** The critical path is the **longest** path, because it fixes the earliest possible finish.
 5. **Confusing total float with free float.** TF is measured against the project finish, FF against the immediate successor's earliest start. TF = 1 with FF = 0 is normal.
 6. **Crashing a non-critical activity.** Adding money to an activity with float buys nothing. Confirm the activity is critical before computing its slope.
-7. **Crashing one of two parallel critical paths.** With two critical paths, compressing one leaves the duration unchanged; you must compress both, and the effective slope is the sum.
-8. **Sign confusion in earned value.** Both indices are "earned minus something". Negative means bad in both cases, and a negative SV means late, not overspent.
+7. **Crashing one of two parallel critical paths.** With two critical paths, compressing one leaves the duration unchanged; compress both, and the effective slope is the sum.
+8. **Sign confusion in earned value.** Both indices are "earned minus something", and negative means bad in both cases. A negative SV means late, not overspent.
 9. **Using EAC = BAC/CPI when the variance is one-off.** If the question says "the delay was a one-time permit issue", use AC + (BAC - EV).
 10. **Two accountable people in a RACI row.** Exactly one A per row; R can be many.
 11. **Treating transfer as elimination.** Insurance transfers the financial impact; the event can still occur. Only avoid removes the risk.
@@ -623,25 +568,25 @@ The strategic point: this is where a CSE candidate can beat an ECE candidate who
    *Answer:* Q has the higher IRR, because back-loaded flows inflate it, but P's early flows are worth more when discounted. **NPV decides; choose on NPV.**
 
 4. Build the network for A(-,4), B(A,3), C(A,5), D(B,6), E(C,2), F(D,E,3). Find duration and critical path.
-   *Answer:* A-B-D-F = 4+3+6+3 = 16; A-C-E-F = 4+5+2+3 = 14. **Duration 16, critical path A-B-D-F.**
+   *Answer:* A-B-D-F = 4+3+6+3 = 16; A-C-E-F = 4+5+2+3 = 14. **Duration 16, critical path A-B-D-F**, and C has float 16 - 14 = **2 weeks**.
 
-5. In Exercise 4, what is the total float of C (duration 5)?
-   *Answer:* 16 - 14 = **2 weeks**.
+5. An activity has O = 5, M = 7, P = 21. Find te, variance and sigma, then the probability that a path of three such activities finishes within 39 weeks.
+   *Answer:* te = 9, var = 7.11, sigma = 2.67. Path mean 27, variance 21.33, sigma 4.62. Z = 12/4.62 = 2.6, so probability is **about 0.995**.
 
-6. An activity has O = 5, M = 7, P = 21. Find te, variance and sigma, then the probability that a path of three such activities finishes within 39 weeks.
-   *Answer:* te = 9, var = 7.11, sigma = 2.67. Path mean 27, variance 21.33, sigma 4.62. Z = (39 - 27)/4.62 = 2.6, so probability is **about 0.995**.
-
-7. Critical path is 20 weeks. P (critical) has slope Rs 6,000/week, crashable 2 weeks; Q (critical) has slope Rs 4,000/week, crashable 1 week; R (critical) has slope Rs 9,000/week, crashable 3 weeks. Penalty is Rs 5,000/week. How much should be crashed, and what is the saving?
+6. Critical path is 20 weeks. P (critical) has slope Rs 6,000/week, crashable 2 weeks; Q (critical) has slope Rs 4,000/week, crashable 1 week; R (critical) has slope Rs 9,000/week, crashable 3 weeks. Penalty is Rs 5,000/week. How much should be crashed, and what is the saving?
    *Answer:* crash Q by 1 week (cost Rs 4,000, saves Rs 5,000). Next cheapest is P at Rs 6,000, which exceeds the penalty. So crash **1 week, net saving Rs 1,000**.
 
-8. BAC = Rs 200 lakh. At month 6, PV = 100, EV = 80, AC = 95. Find CV, SV, CPI, SPI, EAC, TCPI.
+7. BAC = Rs 200 lakh. At month 6, PV = 100, EV = 80, AC = 95. Find CV, SV, CPI, SPI, EAC, TCPI.
    *Answer:* CV = -15, SV = -20, CPI = 0.842, SPI = 0.80, EAC = 200/0.842 = **Rs 237.5 lakh**, TCPI = 120/105 = **1.14**.
 
-9. Classify: (i) insurance on equipment in transit, (ii) switching to a vendor with a proven record, (iii) running a pilot before full rollout, (iv) budgeting 10% contingency and proceeding.
+8. Classify: (i) insurance on equipment in transit, (ii) switching to a vendor with a proven record, (iii) running a pilot before full rollout, (iv) budgeting 10% contingency and proceeding.
    *Answer:* (i) transfer, (ii) avoid, (iii) mitigate, (iv) accept (active).
 
-10. A project has 12 stakeholders. How many communication channels exist, and how many more if two join?
-    *Answer:* 12 x 11/2 = 66; with 14 it is 91, an increase of **25 channels**.
+9. A project has 12 stakeholders. How many communication channels exist, and how many more if two join?
+   *Answer:* 12 x 11/2 = 66; with 14 it is 91, an increase of **25 channels**.
+
+10. A milestone chart is requested by a sponsor who wants to track only the six major approvals. What does he lose, and why is a Gantt still needed by the team?
+    *Answer:* He loses activity durations, dependencies and float. The milestone chart reports events only; the team needs the Gantt or network for execution control.
 
 ## Next
 

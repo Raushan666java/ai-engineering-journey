@@ -48,7 +48,6 @@ Nothing here requires electronics, RF design, or cloud certification depth: phys
 | IoT | Interconnection of physical and virtual things over an interoperable ICT infrastructure, per ITU-T Y.2060 | Definition questions; the phrase "physical and virtual" |
 | M2M | Machine-to-machine communication, typically point-to-point, often proprietary, no internet requirement | Compared against IoT |
 | Gateway | Protocol and network translator between a local sensor network and the wide area | Placed at the network edge of the device domain |
-| LPWAN | Low Power Wide Area Network: long range, low rate, multi-year battery | Umbrella for NB-IoT, LTE-M, LoRa, Sigfox |
 | NB-IoT | Narrowband IoT, 3GPP cellular LPWAN, 180 kHz carrier in licensed spectrum | Licensed, operator-managed, deep indoor coverage |
 | LoRa / LoRaWAN | Chirp spread spectrum physical layer / the MAC and network layer on top of it | Unlicensed ISM band, own gateways, Class A/B/C |
 | MQTT | Publish-subscribe messaging over TCP, brokered, OASIS standard | Broker, topic, QoS 0/1/2 |
@@ -140,10 +139,7 @@ Sensor characteristics the paper can ask you to identify:
 
 Actuator families, at awareness level: electromechanical relay (on/off switching of mains loads), solenoid valve (fluid control), stepper and servo motor (positioning), linear actuator (push/pull), piezo actuator (micro-positioning, buzzers), and variable frequency drive (motor speed).
 
-Two practical points that show up as scenario questions:
-
-- **Sampling rate is a design decision, not a maximum.** A temperature sensor sampled at 1 Hz generates 86,400 readings per day per node. That is why gateways aggregate and why LPWAN payloads are tens of bytes, not kilobytes.
-- **Actuation needs a safety default.** If the link dies, does the valve fail open or fail closed? This is the "fail-safe" design question, and it is the reason industrial IoT keeps local control loops rather than closing them through the cloud.
+Two practical points decide many scenario questions. **Sampling rate is a design decision, not a maximum**: a temperature sensor at 1 Hz produces 86,400 readings per day per node, which is why gateways aggregate and LPWAN payloads are tens of bytes. **Actuation needs a safety default**: if the link dies, does the valve fail open or fail closed? That fail-safe question is why industrial IoT keeps local control loops rather than closing them through the cloud.
 
 ### 4. IoT communication models
 
@@ -171,7 +167,6 @@ M2M is the ancestor. It is machine-to-machine telemetry, usually a closed system
 | Intelligence | Centralised in the application | Distributed: edge, fog, cloud, device |
 | Scale | Thousands of devices | Millions to billions |
 | Standards | Vendor and industry specific | Open, layered, ITU-T and IETF driven |
-| Typical era | 1990s-2000s cellular telemetry | 2010s onward, cloud-native |
 | Example | Vending machine reporting stock over GSM | Smart city where the same data feeds traffic, utility and billing systems |
 
 One-line answer for a one-mark question: **M2M is a subset pattern of IoT - a direct, purpose-built machine link - while IoT adds IP, cloud, scale and data sharing.**
@@ -211,15 +206,7 @@ Two facts worth memorising: NB-IoT can be deployed **in-band** (inside an LTE ca
 
 Other names you should recognise without depth: **RFID** (passive tag, reader-powered, identification only), **NFC** (13.56 MHz, centimetre range, payment and pairing), **6LoWPAN** (IPv6 over 802.15.4 with header compression), **Thread** (IPv6 mesh on 802.15.4), **WirelessHART and ISA-100** (industrial sensing).
 
-A useful selection rule for scenario questions:
-
-1. Mains-powered, high bandwidth, local -> Wi-Fi.
-2. Battery, local mesh, home automation -> Zigbee or Z-Wave.
-3. Battery, worn on the body, paired to a phone -> BLE.
-4. Battery, municipal scale, operator-managed, licensed spectrum, deep indoor -> NB-IoT.
-5. Battery, moving asset, needs handover or moderate rate -> LTE-M.
-6. Battery, private network, no operator dependency, very low rate -> LoRaWAN.
-7. Battery, tiny payloads, extremely long range, accept message caps -> Sigfox.
+A useful selection rule: mains power and high rate -> Wi-Fi; battery with local mesh -> Zigbee or Z-Wave; body-worn paired to a phone -> BLE; municipal scale, operator-managed, deep indoor -> NB-IoT; moving asset needing handover -> LTE-M; private network with no operator dependency -> LoRaWAN; tiny payloads at extreme range with message caps -> Sigfox.
 
 ### 7. MQTT and CoAP
 
@@ -231,16 +218,14 @@ These are the two application protocols the syllabus names. They are not competi
 - **QoS 0** - at most once, fire and forget. **QoS 1** - at least once, duplicates possible. **QoS 2** - exactly once, four-way handshake, highest overhead.
 - **Retained message** - the broker stores the last value on a topic and delivers it immediately to new subscribers. This is how a dashboard shows current state without waiting.
 - **Last Will and Testament** - the broker publishes a pre-registered message if the client disconnects abnormally. This is the standard "device offline" alarm.
-- **Keepalive** - periodic ping; a silent client is declared dead after 1.5 times the keepalive interval.
-- Ports: 1883 plain, 8883 over TLS. MQTT-SN adapts it to UDP for constrained networks.
+- **Keepalive** - periodic ping; a silent client is declared dead after 1.5 times the interval. Ports: 1883 plain, 8883 over TLS; MQTT-SN adapts it to UDP for constrained networks.
 
 **CoAP** is request-response over UDP, modelled on REST: GET, POST, PUT, DELETE on a resource URI. It is designed for devices that cannot afford a TCP handshake or a full HTTP stack.
 
 - Messages are **confirmable** (ACK required, retransmitted) or **non-confirmable** (best effort).
 - **Observe** (RFC 7641) lets a client register interest and receive notifications - CoAP's answer to publish-subscribe.
 - **Block-wise transfer** moves large payloads in chunks.
-- Security is **DTLS** over UDP, unlike MQTT's TLS over TCP.
-- Discovery uses `/.well-known/core`.
+- Security is **DTLS** over UDP, unlike MQTT's TLS over TCP; discovery uses `/.well-known/core`.
 
 | Dimension | MQTT | CoAP |
 |---|---|---|
@@ -278,9 +263,7 @@ graph LR
 | Ownership | Customer | Often the operator (telco edge) | Cloud provider or telco |
 | Cost model | Capex on device | Capex plus site opex | Opex, pay per use |
 
-Why edge exists, in one sentence: **physics and bandwidth**. A control loop that must close in 20 ms cannot tolerate a 60 ms round trip to a distant region, and a site generating 2 Gbps of video cannot backhaul all of it. Moving compute to the data removes both problems, at the price of managing distributed infrastructure.
-
-This is also the commercial argument for **MEC** (multi-access edge computing) in 5G: the operator already owns the cell site, the power and the backhaul, so it can host a customer's latency-critical application there.
+Why edge exists, in one sentence: **physics and bandwidth**. A control loop that must close in 20 ms cannot tolerate a 60 ms round trip to a distant region, and a site generating 2 Gbps of video cannot backhaul all of it. This is also the commercial argument for **MEC** (multi-access edge computing) in 5G: the operator already owns the cell site, the power and the backhaul, so it can host a customer's latency-critical application there.
 
 ### 9. Cloud service models
 
@@ -292,11 +275,7 @@ NIST SP 800-145 defines three service models and five essential characteristics 
 | PaaS | Application and data only | Runtime, middleware, OS, infrastructure | Managed database, container platform, message queue for an OSS microservice | "I push code, the platform runs it" |
 | SaaS | Nothing but configuration and its own data | Everything | Hosted CRM, webmail, a billing suite delivered as a service, a contact-centre product | "I log in through a browser" |
 
-Three additions that appear as distractors:
-
-- **FaaS / serverless** - event-triggered functions, a finer-grained PaaS; you manage neither server nor runtime lifetime.
-- **XaaS** - an umbrella term, not a distinct model.
-- **On-premises** - not cloud at all under NIST, because there is no provider-managed pooling; it is sometimes loosely called "private cloud" when virtualised and self-service.
+Three additions appear as distractors: **FaaS / serverless** (event-triggered functions, a finer-grained PaaS), **XaaS** (an umbrella term, not a distinct model), and **on-premises** (not cloud under NIST, because there is no provider-managed pooling, though virtualised self-service on-premises is loosely called private cloud).
 
 ### 10. Deployment models
 
@@ -324,9 +303,7 @@ Virtualisation inserts a layer that multiplexes one physical host into several i
 | Security surface | Smaller; guest cannot reach host OS | Larger; host OS is an attack surface |
 | Exam trap | "Runs on top of Windows" is false for ESXi and KVM | "Runs inside the OS" is the defining feature |
 
-Terminology that earns marks: **full virtualisation** (unmodified guest, binary translation or hardware assist), **paravirtualisation** (modified guest, hypercalls - Xen's classic mode), **hardware-assisted virtualisation** (Intel VT-x, AMD-V), **live migration** (move a running VM between hosts), **snapshot**, **VM sprawl**, **nested virtualisation**.
-
-Why telcos care: NFV (ch05) hosts VNFs as VMs on commercial servers, so the hypervisor is the layer that makes a firewall or an EPC a software image instead of an appliance.
+Terminology that earns marks: **full virtualisation** (unmodified guest, binary translation or hardware assist), **paravirtualisation** (modified guest, hypercalls - Xen's classic mode), **hardware-assisted virtualisation** (Intel VT-x, AMD-V), **live migration** (move a running VM between hosts), **snapshot**, **VM sprawl**, **nested virtualisation**. Telcos care because NFV (ch05) hosts VNFs as VMs on commercial servers: the hypervisor is the layer that turns a firewall or an EPC into a software image.
 
 ### 12. Containers versus virtual machines
 

@@ -12,12 +12,11 @@ After this chapter you will be able to:
 
 1. Describe the PSTN from the subscriber's telephone to the international gateway, naming each element and the interface between them.
 2. Place local, tandem and transit exchanges in the switching hierarchy and state what each one does with a call.
-3. Compute PCM bit rates, E1 frame rates, timeslot counts, payload rates and voice-channel capacity without a calculator taking more than 40 seconds. (L4 numerical)
+3. Compute PCM bit rates, E1 frame rates, timeslot counts, payload rates and voice-channel capacity in under 40 seconds. (L4 numerical)
 4. Explain the four-layer NGN model and why separating call control from bearer transport changed network economics.
 5. Map every SS7 protocol level (MTP1 to MAP) to the function it performs and the node that hosts it.
-6. Read a SIP call flow: identify methods, response classes, transactions, dialogs, and the SDP offer/answer.
-7. Explain Megaco/H.248 and MGCP gateway control, and how a softswitch uses them.
-8. Apply numbering-plan and least-cost-routing logic to a routing decision.
+6. Read a SIP call flow: methods, response classes, transactions, dialogs, and the SDP offer/answer.
+7. Explain gateway control (Megaco/H.248, MGCP) and apply numbering-plan and least-cost-routing logic to a routing decision.
 
 ## Introduction
 
@@ -37,9 +36,8 @@ Notice what is *not* asked: you will not be asked to configure an exchange, dime
 ## Prerequisites
 
 - Basic idea of circuit switching versus packet switching (a path reserved for the whole call versus datagrams routed per packet).
-- Sampling theorem and quantisation from signals and systems: fs > 2 x fmax, and n bits gives 2^n levels.
-- The OSI idea of layering, so that "MTP3 is layer 3" means something.
-- Elementary client-server thinking, which is all SIP really is.
+- Sampling theorem and quantisation: fs > 2 x fmax, and n bits gives 2^n levels.
+- The OSI idea of layering, so that "MTP3 is layer 3" means something, plus elementary client-server thinking, which is all SIP really is.
 - Comfort with powers of two and with unit prefixes: k = 10^3 in transmission, Ki = 2^10 in storage.
 
 ## Key Terminology
@@ -137,10 +135,7 @@ sample interval  = 1/8000 s = 125 us
 bit interval     = 1/64000 s = 15.625 us
 ```
 
-Two consequences that appear as questions:
-
-- 64 kbps is the *channel* rate, not the E1 rate. An E1 is 32 such channels.
-- The 125 us sample interval is also the E1 frame duration, because an E1 frame is exactly one sample of all 32 channels. This is not a coincidence; it is the design.
+Two consequences appear as questions. First, 64 kbps is the *channel* rate, not the E1 rate: an E1 is 32 such channels. Second, the 125 us sample interval is also the E1 frame duration, because an E1 frame is exactly one sample of all 32 channels. That is not a coincidence; it is the design.
 
 For uniform quantisation, signal-to-quantisation-noise ratio is approximately `6.02n + 1.76 dB`, which for n = 8 gives 49.8 dB at full scale. Companding trades that peak figure for a flat ~38 dB across a 40 dB input range, which is why telephony sounds acceptable for both loud and quiet speakers.
 
@@ -181,9 +176,7 @@ Higher-order multiplexing in the plesiochronous digital hierarchy: E2 = 8.448 Mb
 
 ### 5. NGN: the four-layer model
 
-The next generation network is defined by ITU-T as a packet-based network able to provide telecommunication services, including voice, using multiple broadband, QoS-enabled transport technologies, in which service-related functions are independent of the underlying transport technologies.
-
-Read that definition carefully, because three exam answers hide inside it: **packet-based**, **QoS-enabled**, **service independent of transport**.
+The next generation network is defined by ITU-T as a packet-based network able to provide telecommunication services, including voice, using multiple broadband, QoS-enabled transport technologies, in which service-related functions are independent of the underlying transport technologies. Three exam answers hide inside that sentence: **packet-based**, **QoS-enabled**, **service independent of transport**.
 
 The architecture is usually drawn as four horizontal layers:
 

@@ -15,11 +15,9 @@ By the end of this chapter you should be able to:
 3. Name the three noise types, write the thermal noise formula, and compute a cascaded noise figure.
 4. Apply the Nyquist sampling theorem, choose a sampling rate, and predict the alias frequency when it is violated.
 5. Compute PCM bit rate and quantisation SNR using 6.02n + 1.76 dB, and invert the formula for a target SNR.
-6. Compute AM modulation index, sideband power, efficiency and bandwidth.
-7. Apply Carson's rule to FM and explain the bandwidth-for-noise trade.
-8. Convert between bits per symbol and symbol rate for ASK, FSK, BPSK, QPSK and 16/64/256-QAM, and read a constellation.
-9. Use the Shannon-Hartley theorem to find capacity and to judge whether a scheme fits a channel.
-10. Answer the standard BSNL SET question shapes for this block in under 60 seconds each.
+6. Compute AM modulation index, sideband power, efficiency and bandwidth, and apply Carson's rule to FM.
+7. Convert between bits per symbol and symbol rate for ASK, FSK, BPSK, QPSK and 16/64/256-QAM, and read a constellation.
+8. Use the Shannon-Hartley theorem to find capacity and to judge whether a scheme fits a channel.
 
 ## Introduction
 
@@ -27,14 +25,12 @@ Basic Telecommunications carries 15 percent of the BSNL SET paper, which is 24 q
 
 The arithmetic is school level: multiplication, division, logarithms, and about twenty formulas. The difficulty is threefold. First, **formula selection** - the paper mixes similar-looking quantities, so an AM question and an FM question can arrive with the same two numbers and different answers. Second, **unit discipline** - bits per second versus symbols per second, Hz versus kHz, dB versus dBm. Third, **constant recall** - 6.02n + 1.76, 8000 samples/s, 64 kbps, 2.048 Mbps, log2(1000) = 9.97. These turn a two-minute question into a ten-second one.
 
-The marking scheme rewards that discipline. Each question is 1 mark and a wrong answer costs 0.25, so blind guessing on 8 questions has an expected value near zero. The gain comes entirely from converting "I can almost do this" into "I can do this in 40 seconds and I know it is right". That conversion is what this chapter builds.
-
-One structural point: this block supplies the vocabulary that the wireless block assumes. If you cannot move between bit rate, symbol rate and bandwidth here, ch12 and ch13 become memorisation instead of understanding.
+The marking scheme rewards that discipline. Each question is 1 mark and a wrong answer costs 0.25, so blind guessing on 8 questions has an expected value near zero. The gain comes entirely from converting "I can almost do this" into "I can do this in 40 seconds and I know it is right". This block also supplies the vocabulary the wireless block assumes: if you cannot move between bit rate, symbol rate and bandwidth here, ch12 and ch13 become memorisation.
 
 ## Prerequisites
 
 - **Powers of two:** 2^4 = 16, 2^6 = 64, 2^8 = 256, 2^10 = 1024. Needed instantly for QAM.
-- **Logarithms:** log10(2) = 0.301 and log2(x) = 3.32 x log10(x). Useful anchors: log2(100) = 6.64, log2(1000) = 9.97.
+- **Logarithms:** log10(2) = 0.301 and log2(x) = 3.32 x log10(x). Anchors: log2(100) = 6.64, log2(1000) = 9.97.
 - **Sines as building blocks:** you need only that a sum of sinusoids is a signal, and that multiplying two sinusoids gives sum and difference frequencies.
 - **Electrical units:** volt, ampere, watt, ohm, hertz, second, and P = V^2 / R.
 - **Ratio arithmetic:** modulation index, efficiency and roll-off are all plain ratios.
@@ -62,15 +58,13 @@ One structural point: this block supplies the vocabulary that the wireless block
 
 ### 10.1 Analogue and digital signals
 
-An **analogue** signal varies continuously in both amplitude and time: microphone voltage is defined at every instant and takes any value in a range. A **digital** signal takes one of a finite set of values and changes only at defined instants.
+An **analogue** signal varies continuously in both amplitude and time: microphone voltage is defined at every instant and takes any value in a range. A **digital** signal takes one of a finite set of values and changes only at defined instants. A third category, the discrete-time analogue signal, appears in sampling theory - samples discrete in time but still continuous in amplitude - and PCM makes the amplitude discrete as well.
 
-The practical difference matters for three reasons. **Regeneration:** analogue noise accumulates and cannot be removed, whereas a digital signal only needs to be recognised as a 0 or a 1 at each decision instant, so it can be regenerated exactly at every repeater. **Multiplexing and switching:** digitised streams can be time-interleaved and switched by memory, which is far cheaper than handling analogue channels in the frequency domain. **Error control:** digital systems can detect and correct errors with coding; analogue systems cannot.
-
-A third category, the discrete-time analogue signal, appears in sampling theory: samples are discrete in time but still continuous in amplitude. PCM completes the job by making amplitude discrete as well.
+The practical difference matters for three reasons. **Regeneration:** analogue noise accumulates and cannot be removed, whereas a digital signal only needs to be recognised as a 0 or a 1 at each decision instant, so it can be regenerated exactly at every repeater. **Multiplexing and switching:** digitised streams can be time-interleaved and switched by memory, far cheaper than handling analogue channels in the frequency domain. **Error control:** digital systems can detect and correct errors with coding; analogue systems cannot.
 
 ### 10.2 Time domain and frequency domain
 
-The same signal has two equivalent descriptions: amplitude against time, and amplitude against frequency. Neither holds more information, but each answers different questions. The time domain shows what a scope displays and where a pulse edge falls. The frequency domain shows how much spectrum the signal occupies and whether it fits a channel.
+The same signal has two equivalent descriptions: amplitude against time, and amplitude against frequency. Neither holds more information, but each answers different questions. The time domain shows what a scope displays and where a pulse edge falls; the frequency domain shows how much spectrum the signal occupies and whether it fits a channel.
 
 The key intuition is reciprocity: a signal narrow in time is wide in frequency, and vice versa. A very short pulse has a broad spectrum; a pure sine wave lasting forever is a single spectral line of zero width. Practical signals are finite in both, and that width is what bandwidth measures.
 
@@ -82,7 +76,7 @@ Bandwidth has three meanings in telecom, and questions exploit the overlap:
 2. **Channel bandwidth** - the width allocated to one channel, for example 200 kHz per GSM carrier or 20 MHz per LTE carrier.
 3. **Minimum (Nyquist) bandwidth** - the smallest channel that carries a symbol rate Rs without intersymbol interference: Rs in passband, Rs/2 in baseband.
 
-The **spectrum** is the whole picture of what occupies which frequencies, usually a regulatory allocation chart such as 935-960 MHz for GSM downlink in India. Two derived quantities appear constantly. **Spectral efficiency** is bit rate divided by bandwidth in bit/s/Hz - 64-QAM at 30 Mbit/s in 5 MHz is 6 bit/s/Hz (L4 numerical). **Occupied bandwidth** is the width holding 99 percent of the power, which is what regulators actually police.
+The **spectrum** is the whole picture of what occupies which frequencies, usually a regulatory allocation chart such as 935-960 MHz for GSM downlink in India. Two derived quantities appear constantly. **Spectral efficiency** is bit rate divided by bandwidth in bit/s/Hz - 64-QAM at 30 Mbit/s in 5 MHz is 6 bit/s/Hz (L4 numerical). **Occupied bandwidth** is the width holding 99 percent of the power, which is what regulators police.
 
 ### 10.4 Fourier intuition without the maths
 
@@ -91,7 +85,7 @@ You do not need to evaluate an integral. The usable statements are:
 - **Every practical signal is a sum of sinusoids.** A periodic signal is a fundamental plus harmonics: a square wave of frequency f contains f, 3f, 5f, 7f and so on, with falling amplitude.
 - **Sharp edges need high frequencies.** A perfect square wave has infinitely fast transitions and needs infinitely many harmonics. Truncate them and the edges round off - which is why cable length limits rise time.
 - **Multiplication shifts spectrum.** Multiplying a signal by a carrier moves it up to sit around the carrier. This one sentence is the whole principle of modulation, and multiplying cosines at f1 and f2 gives components at f1 + f2 and f1 - f2, which is where AM sidebands come from.
-- **A band-limited signal cannot change instantaneously.** This is the time-domain face of the sampling theorem.
+- **A band-limited signal cannot change instantaneously** - the time-domain face of the sampling theorem.
 
 One consequence to memorise: a baseband signal occupying 0 to fm, multiplied by a carrier at fc, occupies fc - fm to fc + fm. The width doubles from fm to 2fm, and every AM bandwidth result follows from that.
 
@@ -104,9 +98,7 @@ Power ratios multiply along a chain, which is awkward; in dB they add. That is t
 - **dBW (referred to 1 W):** P_dBW = P_dBm - 30
 - **Voltage ratios:** 20 log10(V2 / V1) at equal resistance, because power goes as voltage squared
 
-Anchors to memorise: 2 is 3 dB, 4 is 6 dB, 10 is 10 dB, 100 is 20 dB, 1000 is 30 dB, 0.5 is -3 dB. In absolute terms: 1 mW = 0 dBm, 10 mW = 10 dBm, 1 W = 30 dBm, 10 W = 40 dBm, 1 uW = -30 dBm, 1 pW = -90 dBm.
-
-A receiver sensitivity of -100 dBm is 10^-13 W, which is 0.1 pW. Written in watts that number invites an order-of-magnitude error; in dBm it is easy to add gains and losses along a chain. Practise both directions until the conversion is automatic.
+Anchors to memorise: 2 is 3 dB, 4 is 6 dB, 10 is 10 dB, 100 is 20 dB, 1000 is 30 dB, 0.5 is -3 dB. In absolute terms: 1 mW = 0 dBm, 10 mW = 10 dBm, 1 W = 30 dBm, 10 W = 40 dBm, 1 uW = -30 dBm, 1 pW = -90 dBm. A sensitivity of -100 dBm is 10^-13 W, that is 0.1 pW; in dBm it is easy to add gains and losses along a chain, whereas in watts the same number invites an order-of-magnitude error.
 
 ### 10.6 Noise: thermal, shot and interference (L4 numerical)
 
@@ -116,9 +108,9 @@ A receiver sensitivity of -100 dBm is 10^-13 W, which is 0.1 pW. Written in watt
 
 with k = 1.38 x 10^-23 J/K, T in kelvin and B in Hz. At the reference temperature T0 = 290 K the spectral density kT is about 4 x 10^-21 W/Hz, or -174 dBm/Hz. A 1 MHz channel at 290 K therefore carries about -114 dBm of thermal noise.
 
-**Shot noise** arises where charge crosses a barrier as discrete carriers - a photodiode, a junction, a vacuum tube. Its power is proportional to average current and it is also white. In optical links it is often the dominant limit.
+**Shot noise** arises where charge crosses a barrier as discrete carriers - a photodiode, a junction, a vacuum tube. Its power is proportional to average current and it is also white; in optical links it is often the dominant limit.
 
-**Interference** is not random in origin: it is another signal. Co-channel interference comes from reuse of the same frequency; adjacent-channel interference comes from a neighbour's spectrum spilling over. Interference is why cellular systems plan reuse distance and why filters have roll-off. Unlike thermal noise, it can sometimes be cancelled, scheduled around, or reduced by antenna pattern.
+**Interference** is not random in origin: it is another signal. Co-channel interference comes from reuse of the same frequency; adjacent-channel interference comes from a neighbour's spectrum spilling over. Interference is why cellular systems plan reuse distance and why filters have roll-off, and unlike thermal noise it can sometimes be cancelled, scheduled around, or reduced by antenna pattern.
 
 **Signal-to-noise ratio** is SNR_dB = 10 log10(S/N). **Noise figure** measures SNR degradation with input noise at the reference temperature: F = SNR_in / SNR_out and NF = 10 log10 F. An ideal amplifier has F = 1 (0 dB); a real LNA might be 1 dB, a mixer 10 dB, a lossy cable equal to its loss in dB.
 
@@ -126,7 +118,7 @@ with k = 1.38 x 10^-23 J/K, T in kelvin and B in Hz. At the reference temperatur
 
     F_total = F1 + (F2 - 1)/G1 + (F3 - 1)/(G1 x G2) + ...
 
-The first stage dominates, which explains the front-end design rule: put a low-noise amplifier first, before any lossy element, because later noise contributions are divided by the gain ahead of them.
+The first stage dominates, which explains the front-end rule: put a low-noise amplifier first, before any lossy element, because later noise contributions are divided by the gain ahead of them.
 
 ### 10.7 Sampling theorem and aliasing (L4 numerical)
 
@@ -156,7 +148,7 @@ flowchart LR
     J --> K["Analogue output"]
 ```
 
-The order matters: filter, sample, quantise, encode, line-code. Questions often ask what happens if the filter is omitted (aliasing) or whether the order of sampler and quantiser can be swapped (it cannot - a value must be sampled before it can be quantised).
+The order matters: filter, sample, quantise, encode, line-code. Questions often ask what happens if the filter is omitted (aliasing) or whether sampler and quantiser can be swapped (they cannot - a value must be sampled before it can be quantised).
 
 ### 10.8 Quantisation and quantisation noise (L4 numerical)
 
@@ -168,9 +160,9 @@ For a full-scale sinusoid of amplitude V, signal power is V^2/2 and the ratio wo
 
     SQNR_dB = 6.02 n + 1.76
 
-Read it as: **each bit buys about 6 dB**. Eight bits give 49.9 dB, twelve give 74.0 dB, sixteen give 98.1 dB. This is the most examined formula in the block, and the most often misremembered as 6n. The constant 1.76 comes from the crest factor of a sine wave (10 log10 1.5 = 1.76); a signal with a higher crest factor, such as speech, gets less in practice, which is exactly why companding exists.
+Read it as: **each bit buys about 6 dB**. Eight bits give 49.9 dB, twelve give 74.0 dB, sixteen give 98.1 dB. This is the most examined formula in the block, and the most often misremembered as 6n. The constant 1.76 comes from the crest factor of a sine wave (10 log10 1.5 = 1.76); a signal with a higher crest factor, such as speech, gets less in practice, which is why companding exists.
 
-Quantisation noise is spread roughly uniformly across 0 to fs/2. Sample faster than necessary and the same noise power is spread over a wider band, so the in-band part after the reconstruction filter falls - the mechanism behind oversampling converters.
+Quantisation noise is spread roughly uniformly across 0 to fs/2, so sampling faster spreads the same noise power over a wider band and reduces the in-band part after the reconstruction filter - the mechanism behind oversampling converters.
 
 ### 10.9 PCM bit rate arithmetic (L4 numerical)
 
@@ -199,9 +191,7 @@ Both curves are specified in ITU-T G.711:
 | A-law | Europe, India, most of the world | A = 87.6 | Linear segment for small signals, log above |
 | mu-law | North America, Japan | mu = 255 | Fully logarithmic |
 
-Both run at 8 bits and 8000 samples/s for 64 kbps, and both give roughly 38-40 dB SNR over a wide range, comparable to about 12-bit uniform PCM. The two are not bit-compatible, so a gateway between them must transcode - a real source of delay and cost in international voice.
-
-Anchors for the exam: G.711, 8 kHz x 8 bit = 64 kbps, A-law in India, mu-law in North America.
+Both run at 8 bits and 8000 samples/s for 64 kbps, and both give roughly 38-40 dB SNR over a wide range, comparable to about 12-bit uniform PCM. They are not bit-compatible, so a gateway between them must transcode - a real source of delay and cost in international voice. Anchors for the exam: G.711, 8 kHz x 8 bit = 64 kbps, A-law in India, mu-law in North America.
 
 ### 10.11 Line coding (awareness level)
 
@@ -249,9 +239,7 @@ Frequency modulation varies instantaneous frequency: f(t) = fc + df cos(2 pi fm 
 
 Broadcast FM uses df = 75 kHz and fm up to 15 kHz, so beta = 5 and Carson gives 2(75 + 15) = 180 kHz; the 200 kHz channel spacing leaves room for that plus guard band.
 
-**Why FM resists noise:** the information is in the frequency, so the receiver's limiter discards amplitude noise entirely, and output SNR improves roughly as 3 beta^2 (beta + 1) for high beta. Widening the deviation buys noise immunity at the price of bandwidth - the classic bandwidth-for-SNR trade. AM cannot make that trade because its information is in the amplitude, which is exactly what noise attacks.
-
-FM also has a threshold effect: below roughly 10 dB input CNR the output SNR collapses abruptly, which is why FM links are designed with margin and why cellular systems ultimately chose linear digital modulation.
+**Why FM resists noise:** the information is in the frequency, so the receiver's limiter discards amplitude noise entirely, and output SNR improves roughly as 3 beta^2 (beta + 1) for high beta. Widening the deviation buys noise immunity at the price of bandwidth - the classic bandwidth-for-SNR trade. AM cannot make that trade because its information is in the amplitude, which is exactly what noise attacks. FM also has a threshold effect: below roughly 10 dB input CNR the output SNR collapses abruptly, which is why FM links are designed with margin and why cellular systems ultimately chose linear digital modulation.
 
 ### 10.14 Digital modulation: ASK, FSK, PSK (L4 numerical)
 
@@ -306,7 +294,7 @@ Approximate Eb/N0 for BER = 10^-5, coherent detection, no coding:
 | 64-QAM | 17.5 dB |
 | 256-QAM | about 21.5 dB |
 
-The pattern: BPSK and QPSK are equal, and each fourfold increase in constellation size costs roughly 4 dB. That is why cell edges use QPSK and cell centres use 256-QAM, and why more bits per symbol is never free. The waterfall is steep - a 1 dB improvement can drop BER by an order of magnitude - so link budgets are computed in fractions of a dB. Coding shifts the whole curve left by several dB at the cost of rate.
+The pattern: BPSK and QPSK are equal, and each fourfold increase in constellation size costs roughly 4 dB. That is why cell edges use QPSK and cell centres use 256-QAM, and why more bits per symbol is never free. The waterfall is steep - a 1 dB improvement can drop BER by an order of magnitude - so link budgets are computed in fractions of a dB, and coding shifts the whole curve left by several dB at the cost of rate.
 
 ### 10.17 Shannon-Hartley capacity (L4 numerical)
 
@@ -315,8 +303,6 @@ Shannon's theorem gives the maximum error-free rate over a band-limited AWGN cha
     C = B x log2(1 + S/N)
 
 with C in bit/s, B in Hz and S/N a **linear** power ratio. It is an upper bound: no scheme exceeds it, and turbo and LDPC codes approach it within a fraction of a dB.
-
-Consequences worth carrying into the exam:
 
 - Capacity is **linear in bandwidth** and only **logarithmic in SNR**. Doubling bandwidth doubles capacity; doubling power adds about 1 bit/s/Hz at high SNR.
 - Each 3 dB of extra SNR buys about 1 bit/s/Hz at high SNR - the "3 dB per bit" rule of thumb.
@@ -427,21 +413,7 @@ Everything so far is one signal on one channel. Real networks put many signals o
 
 **Answer.** About 199 Mbit/s; about 69 Mbit/s; no, it exceeds the bound by roughly three times.
 
-### Example 8 - Noise figure cascade
-
-**Problem.** An LNA with 3 dB noise figure and 20 dB gain feeds a mixer with 10 dB noise figure. (a) Overall noise figure? (b) Without the LNA?
-
-**Step 1.** F1 = 10^(3/10) = 1.995 (call it 2.0); G1 = 10^(20/10) = 100; F2 = 10^(10/10) = 10.
-
-**Step 2.** F_total = F1 + (F2 - 1)/G1 = 2.0 + 9/100 = 2.09.
-
-**Step 3.** NF = 10 log10(2.09) = 3.20 dB. The mixer added only 0.2 dB.
-
-**Step 4.** Without the LNA the mixer is the first stage, so NF = 10 dB. The LNA bought 6.8 dB.
-
-**Answer.** 3.2 dB with the LNA, 10 dB without it. This is why the LNA goes first.
-
-### Example 9 - OFDM symbol duration from subcarrier spacing
+### Example 8 - OFDM symbol duration from subcarrier spacing
 
 **Problem.** OFDM with 15 kHz subcarrier spacing, a 4.7 us cyclic prefix, 1200 useful subcarriers and 64-QAM. (a) Useful symbol duration? (b) Total symbol duration? (c) Raw bit rate? (d) Subcarrier slots in 20 MHz?
 

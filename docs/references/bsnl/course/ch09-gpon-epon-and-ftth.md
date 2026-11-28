@@ -308,6 +308,30 @@ BSNL's position is unusual: it has a **large existing copper access network and 
 
 The exam-safe version: **FTTH converts a voice-centric copper network into a broadband-capable one without rebuilding the access ducts, and PON keeps the field passive, which matters where maintenance cost per cabinet is high**. That is the commercial argument, and it does not depend on any statistic.
 
+### 13. Units discipline: dB and dBm in the access budget
+
+The access network uses the same three units as chapter 08, and the same rule: **dB adds, dBm does not**.
+
+- **dBm is an absolute power**: OLT launch power (+3 dBm), ONT sensitivity (-25 dBm), received power at the ONT.
+- **dB is a ratio**: splitter loss, fibre loss, splice loss, connector loss, margin, and the power budget itself.
+- **The budget is a subtraction of two dBm values**, so the answer is in dB: `+3 dBm - (-25 dBm) = 28 dB`.
+- **Along the ODN you add dB**: 16.5 dB splitter + 7.0 dB fibre + 0.4 dB splices + 1.0 dB connectors = 24.9 dB. Then `+3 dBm - 24.9 dB = -21.9 dBm` at the ONT, which beats -25 dBm by 3.1 dB.
+
+| Expression | Meaning | Valid? |
+|---|---|---|
+| dBm + dB = dBm | Launch power minus a loss | Yes |
+| dBm - dBm = dB | Power budget, or margin | Yes |
+| dB + dB = dB | Cascaded losses | Yes |
+| dBm + dBm | Two powers added by their dB values | No - convert to mW first |
+| "28 dBm budget" | A ratio written as a power | No - it is 28 dB |
+
+Two access-specific habits:
+
+1. **Never write the split ratio as a loss.** "1:32" is not 32 dB; it is 15.05 dB of splitting loss plus excess.
+2. **Bandwidth is not a dB quantity.** Per-user rate is Mbps or Gbps, obtained by division, not subtraction. Mixing the two is how candidates produce "38.88 dB per user".
+
+**dBm/Hz** appears in access only for analogue RF video overlay, where noise is specified as a power spectral density in a 1 Hz or 4 MHz reference bandwidth. If a question mentions CNR or noise density for a CATV overlay, that is the unit family in play; for GPON data, you will not need it.
+
 ## Worked Examples
 
 ### Example 1: Splitter loss, single stage and cascaded
